@@ -76,8 +76,8 @@ const themeCollection = testingMode
 
 const themeCollection = testingMode
   ? getThemeCollection().filter((m) =>
-    m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
-  )
+      m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
+    )
   : getThemeCollection();
 // console.log(themeCollection);
 
@@ -150,35 +150,36 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
               : psuedoRegular) {
               const computedStyle =
                 e.tagName.toLowerCase() === "body" ||
-                  e.tagName.toLowerCase() === "html"
+                e.tagName.toLowerCase() === "html"
                   ? e.computedStyleMap()
                   : toStyleMap(window.getComputedStyle(e, psuedoElement));
               const defaultStyle =
                 defaultStylesByTagName[e.tagName.toUpperCase()];
               const classes = e.classList
                 ? e.classList
-                  .toString()
-                  .split(" ")
-                  .filter((c) => c.trim() !== "")
+                    .toString()
+                    .split(" ")
+                    .filter((c) => c.trim() !== "")
                 : [];
               const attributes = e.attributes
                 ? Array.from(e.attributes)
-                  .filter(
-                    (attr) =>
-                      (attr.name.startsWith("data") &&
-                        !attr.name.endsWith("-id")) ||
-                      attr.name === "type",
-                  )
-                  .map((attr) => `${attr.name}="${attr.value}"`)
+                    .filter(
+                      (attr) =>
+                        (attr.name.startsWith("data") &&
+                          !attr.name.endsWith("-id")) ||
+                        attr.name === "type",
+                    )
+                    .map((attr) => `${attr.name}="${attr.value}"`)
                 : [];
               const selectorKey = ["html", "body"].includes(
                 e.tagName.toLowerCase(),
               )
                 ? e.tagName.toLowerCase()
-                : `${e.tagName.toLowerCase()}${classes.length > 0 ? "." + classes.toSorted().join(".") : ""}${attributes.length > 0
-                  ? "[" + attributes.toSorted().join("][") + "]"
-                  : ""
-                }${psuedoElement ?? ""}`;
+                : `${e.tagName.toLowerCase()}${classes.length > 0 ? "." + classes.toSorted().join(".") : ""}${
+                    attributes.length > 0
+                      ? "[" + attributes.toSorted().join("][") + "]"
+                      : ""
+                  }${psuedoElement ?? ""}`;
               for (const [prop, val] of computedStyle) {
                 if (
                   (prop &&
@@ -188,7 +189,7 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
                     !prop.startsWith("--") &&
                     !prop.startsWith("-webkit-") &&
                     /*computedStyle.getPropertyValue(prop)*/ val.toString() !==
-                    (defaultStyle ? defaultStyle[prop] : undefined) &&
+                      (defaultStyle ? defaultStyle[prop] : undefined) &&
                     ![
                       "-electron-corner-smoothing",
                       "anchor-scope",
@@ -260,7 +261,7 @@ function fixCalloutIconColor(results) {
       "background-color"
     ] =
       results[
-      `.callout[data-callout=\"${type}\"] .callout-title .callout-icon`
+        `.callout[data-callout=\"${type}\"] .callout-title .callout-icon`
       ]["color"];
   });
 
@@ -275,7 +276,7 @@ function getCurrentTheme() {
 
 async function ensureLayoutReady(browser) {
   return browser.executeObsidian(async ({ app }) => {
-    await app.workspace.onLayoutReady(() => { });
+    await app.workspace.onLayoutReady(() => {});
   });
 }
 
