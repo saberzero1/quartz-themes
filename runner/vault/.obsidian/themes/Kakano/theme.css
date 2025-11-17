@@ -431,6 +431,12 @@ settings:
     type: info-text
     markdown: true
   -
+    id: theme-setting-wideTables
+    title: 'Wide tables'
+    description: "Allow wide tables to extend left and right beyond the margins for body text."
+    type: class-toggle
+    default: true
+  -
     id: heading-mobile
     title: Mobile
     type: heading
@@ -581,7 +587,10 @@ body {
   --embed-border-right: none;
   --embed-border-top: none;
   --embed-padding: 1em;
-  --file-line-width: calc(1ch * var(--theme-setting-lineWidth));
+
+  /* Using 0.625rem here as approximately 1ch. We can't use ch because we want line width to be constant across font sizes, so it's the same for headings and body text. */
+  --file-line-width: calc(0.625rem * var(--theme-setting-lineWidth));
+
   --file-margins: 0 2em;
   --flair-background: var(--theme-color-base);
   --flair-color: var(--text-on-accent);
@@ -696,6 +705,38 @@ body {
   --theme-padding-blockVertical: 0.75em;
 }
 /* #endregion */
+/* #region   Overrides for colour presets */
+/* Tweak some colours for presets, to improve contrast. Ideally I'd liek to do this for use-selected colours too, but the browser engine doesn't yet support contrast-color() */
+body.css-settings-manager.theme-setting-baseColorPreset-maa {
+  --text-on-accent: black;
+  --nav-item-color-active: black;
+  --icon-color: black;
+  --icon-color-focused: black;
+  --theme-color-controlLightweightActive: black;
+  --theme-color-controlActive: black;
+  --theme-color-controlHover: black;
+  --theme-color-controlTextHover: black;
+  --vault-profile-color-hover: black;
+  --nav-item-color-hover: black;
+  --interactive-accent: var(--theme-color-baseDarkened25);
+  --icon-color-focused: black;
+}
+body.css-settings-manager.theme-dark.theme-setting-baseColorPreset-maa {
+  --icon-color: white;
+}
+body.css-settings-manager.theme-dark.theme-setting-baseColorPreset-mangu {
+  --text-on-accent: white;
+  --nav-item-color-active: white;
+  --icon-color: white;
+  --icon-color-focused: white;
+  --theme-color-controlLightweightActive: white;
+  --theme-color-controlActive: white;
+  --theme-color-controlHover: white;
+  --vault-profile-color-hover: white;
+  --nav-item-color-hover: white;
+  --interactive-accent: var(--theme-color-baseLightened25);
+}
+/* #endregion */
 /* #region   Colors */
 /* #region     Base color */
 body {
@@ -717,28 +758,28 @@ body.css-settings-manager.theme-setting-baseColorPreset-accent {
 }
 body.css-settings-manager.theme-setting-baseColorPreset-whero {
   --base-h: 0;
-  --base-s: 61%;
-  --base-l: 43%;
+  --base-s: 65%;
+  --base-l: 50%;
 }
 body.css-settings-manager.theme-setting-baseColorPreset-karaka {
   --base-h: 30;
-  --base-s: 70%;
+  --base-s: 80%;
   --base-l: 50%;
 }
 body.css-settings-manager.theme-setting-baseColorPreset-koowhai {
   --base-h: 52;
-  --base-s: 60%;
+  --base-s: 70%;
   --base-l: 45%;
 }
 body.css-settings-manager.theme-setting-baseColorPreset-kaakaariki {
-  --base-h: 92;
-  --base-s: 60%;
+  --base-h: 90;
+  --base-s: 65%;
   --base-l: 39%;
 }
 body.css-settings-manager.theme-setting-baseColorPreset-kaarikioorangi {
-  --base-h: 180;
+  --base-h: 175;
   --base-s: 57%;
-  --base-l: 47%;
+  --base-l: 40%;
 }
 body.css-settings-manager.theme-setting-baseColorPreset-kahurangi {
   --base-h: 215;
@@ -747,8 +788,8 @@ body.css-settings-manager.theme-setting-baseColorPreset-kahurangi {
 }
 body.css-settings-manager.theme-setting-baseColorPreset-waiporoporo {
   --base-h: 275;
-  --base-s: 67%;
-  --base-l: 45%;
+  --base-s: 50%;
+  --base-l: 40%;
 }
 body.css-settings-manager.theme-setting-baseColorPreset-maawhero {
   --base-h: 335;
@@ -757,17 +798,17 @@ body.css-settings-manager.theme-setting-baseColorPreset-maawhero {
 }
 body.css-settings-manager.theme-setting-baseColorPreset-mangu {
   --base-h: 240;
-  --base-s: 10%;
-  --base-l: 2%;
+  --base-s: 5%;
+  --base-l: 20%;
 }
 body.css-settings-manager.theme-setting-baseColorPreset-maa {
-  --base-h: 0;
+  --base-h: 50;
   --base-s: 0%;
-  --base-l: 90%;
+  --base-l: 95%;
 }
 body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
   --base-h: 40;
-  --base-s: 2%;
+  --base-s: 5%;
   --base-l: 50%;
 }
 /* #endregion */
@@ -1072,7 +1113,7 @@ body {
   --theme-color-contentItemBgActive: var(--theme-color-base);
   --theme-color-contentItemBgHover: var(--theme-color-lightenTransparent25);
   --theme-color-controlBg: var(--theme-color-baseLightened95);
-  --theme-color-controlBgLowWeight: var(--theme-color-lightenTransparent50);
+  --theme-color-controlLowWeightBg: var(--theme-color-lightenTransparent50);
   --theme-color-controlContentArea: var(--theme-color-base);
   --theme-color-controlContentAreaHover: var(--theme-color-baseLightened80);
   --theme-color-controlUIHover: var(--theme-color-baseLightened60);
@@ -1273,10 +1314,10 @@ body.theme-light.theme-setting-customGradient {
   --search-icon-color: var(--theme-color-base);
   --tag-color: hsl(
     var(--accent-h),
-    calc(var(--accent-s) * 1.2),
-    calc(var(--accent-l))
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.2)
   );
-  --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+  --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
   --tab-background-active: var(--background-primary);
   --tab-background-inactive: var(--theme-color-baseDarkened85);
   --tab-text-color: var(--theme-color-baseTransparent50);
@@ -1319,7 +1360,7 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-contentItemBgActive: var(--theme-color-base);
   --theme-color-contentItemBgHover: rgb(0, 0, 0, 0.1);
   --theme-color-controlBg: var(--theme-color-baseDarkened25);
-  --theme-color-controlBgLowWeight: var(--theme-color-darkenTransparent25);
+  --theme-color-controlLowWeightBg: var(--theme-color-darkenTransparent25);
   --theme-color-controlContentArea: var(--theme-color-baseLightened60);
   --theme-color-controlContentAreaHover: var(--theme-color-baseDarkened80);
   --theme-color-controlUIHover: var(--theme-color-baseDarkened70);
@@ -1359,9 +1400,9 @@ body.theme-light.theme-setting-customGradient {
   );
   --theme-color-tagBgHover: hsl(
     var(--accent-h),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.161),
-    0.1
+    calc(var(--accent-s) * 1.2),
+    calc(var(--accent-l) * 0.8),
+    0.75
   );
   --theme-color-tagBgSidebar: hsl(
     var(--accent-h),
@@ -1371,19 +1412,19 @@ body.theme-light.theme-setting-customGradient {
   );
   --theme-color-tagBgSidebarHover: hsl(
     var(--accent-h),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 0.5),
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 0.8),
     0.5
   );
   --theme-color-tagSidebar: hsl(
     var(--accent-h),
-    calc(var(--accent-s) * 1.2),
-    calc(var(--accent-l) * 1)
+    calc(var(--accent-s) * 1.1),
+    calc(var(--accent-l) * 1.2)
   );
   --theme-color-tagSidebarHover: hsl(
     var(--accent-h),
-    calc(var(--accent-s) * 1.224),
-    calc(var(--accent-l) * 1.15)
+    calc(var(--accent-s) * 1.4),
+    calc(var(--accent-l) * 1.3)
   );
 
   --theme-color-textMeta: var(--theme-color-base);
@@ -2159,6 +2200,13 @@ li.is-collapsed .list-bullet:after,
   right: 0;
 }
 /* #region       Image positioning and styling */
+
+/* We'll sometimes have images inside columns, so we'd like them to fit into the available space. */
+.markdown-source-view.mod-cm6 .cm-content > img,
+.markdown-source-view.mod-cm6 .cm-content .image-embed img,
+.markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
+  max-width: 100%;
+}
 .theme-setting-enableImageAdjustmentWithAltText {
   /* Center images */
   .markdown-source-view.mod-cm6 .cm-content > img[alt~=center],
@@ -2845,6 +2893,11 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
       0.5
   );
 }
+.is-phone .markdown-source-view .cm-contentContainer {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .mobile-navbar {
   background-color: transparent;
   padding-top: 0;
@@ -3309,274 +3362,6 @@ body {
   position: relative;
 }
 /* #endregion */
-
-/* #region   macOS window frame styles */
-body.mod-macos {
-  .workspace-tab-header-new-tab,
-  .workspace-tab-header-tab-list {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-/* #region     "Native frame" style */
-body.mod-macos {
-  &:not(.is-frameless) {
-    &:not(.is-mobile) {
-      .sidebar-toggle-button.mod-left,
-      .sidebar-toggle-button.mod-right {
-        padding: 0;
-        position: absolute;
-      }
-      .mod-sidedock {
-        .workspace-tabs.mod-top-right-space .workspace-tab-header-container-inner {
-          margin-inline-end: 2.5em;
-        }
-      }
-
-      &:not(.is-fullscreen) {
-        .workspace.is-left-sidedock-open {
-          .sidebar-toggle-button.mod-left {
-            top: 0.5em;
-          }
-        }
-        .workspace:not(.is-left-sidedock-open) {
-          .sidebar-toggle-button.mod-left {
-            top: 0.5em;
-          }
-        }
-        .workspace:not(.is-right-sidedock-open) {
-          .sidebar-toggle-button.mod-right {
-            top: 0;
-            right: -0.5em;
-          }
-          .workspace-tab-header-container {
-            padding-inline-end: 1.5em;
-          }
-        }
-        .workspace.is-right-sidedock-open {
-          .sidebar-toggle-button.mod-right {
-            top: 0;
-            right: 0.5em;
-          }
-        }
-      }
-    }
-    &.is-tablet {
-      .sidebar-toggle-button.mod-left,
-      .sidebar-toggle-button.mod-right {
-        padding: 0;
-      }
-      .sidebar-toggle-button.mod-left {
-        top: 0;
-        left: 0;
-      }
-      .sidebar-toggle-button.mod-right {
-        top: 0;
-        right: 0;
-      }
-    }
-  }
-}
-/* #endregion */
-/* #region     "Obsidian frame" style */
-body.mod-macos {
-  &.is-frameless:not(.is-hidden-frameless):not(.is-popout-window) {
-    --titlebar-height: 40px;
-
-    &:not(.is-mobile) {
-      .sidebar-toggle-button.mod-left,
-      .sidebar-toggle-button.mod-right {
-        padding: 0;
-        position: absolute;
-      }
-      .mod-sidedock {
-        .workspace-tabs.mod-top-right-space .workspace-tab-header-container-inner {
-          margin-inline-end: 2.5em;
-        }
-      }
-
-      &:not(.is-fullscreen) {
-        .workspace.is-left-sidedock-open {
-          .sidebar-toggle-button.mod-left {
-            top: 0.5em;
-          }
-        }
-        .workspace:not(.is-left-sidedock-open) {
-          .sidebar-toggle-button.mod-left {
-            top: 0.5em;
-          }
-        }
-        .workspace:not(.is-right-sidedock-open) {
-          .sidebar-toggle-button.mod-right {
-            top: 0;
-            right: -0.5em;
-          }
-          .workspace-tab-header-container {
-            padding-inline-end: 1.5em;
-          }
-        }
-        .workspace.is-right-sidedock-open {
-          .sidebar-toggle-button.mod-right {
-            top: 0;
-            right: 0.5em;
-          }
-        }
-      }
-      &.is-fullscreen {
-        .workspace.is-left-sidedock-open {
-          .sidebar-toggle-button.mod-left {
-            top: 0.5em;
-          }
-        }
-        .workspace:not(.is-left-sidedock-open) {
-          .sidebar-toggle-button.mod-left {
-            top: 0.5em;
-          }
-        }
-        .workspace.is-right-sidedock-open {
-          .sidebar-toggle-button.mod-right {
-            top: 0;
-            right: 0.5em;
-          }
-        }
-        .workspace:not(.is-right-sidedock-open) {
-          .sidebar-toggle-button.mod-right {
-            top: 0;
-            right: -0.5em;
-          }
-          .mod-root .workspace-tab-header-container {
-            padding-inline-end: 1.5em;
-          }
-        }
-        .workspace-ribbon .sidebar-toggle-button.mod-left {
-          left: 0;
-        }
-      }
-    }
-    &.is-tablet {
-      .sidebar-toggle-button.mod-left,
-      .sidebar-toggle-button.mod-right {
-        padding: 0;
-      }
-      .sidebar-toggle-button.mod-left {
-        top: 0;
-        left: 0;
-      }
-      .sidebar-toggle-button.mod-right {
-        top: 0;
-        right: 0;
-      }
-    }
-  }
-}
-/* #endregion */
-/* #region     "Hidden (default)" style. This is the default appearance! */
-/* In this window style we need to make sure buttons don't overlap the window controls. */
-body.mod-macos.is-frameless.is-hidden-frameless:not(.is-popout-window) {
-  .workspace .workspace-tabs.mod-top-left-space .workspace-tab-header-container,
-  .workspace
-    .workspace-tabs.mod-top-right-space
-    .workspace-tab-header-container {
-    padding: 0;
-  }
-
-  /* This element also seems to be a handle for window dragging */
-  .mod-sidedock .workspace-tabs.mod-top .workspace-tab-header-container {
-    margin-top: 0;
-    height: calc(2 * var(--header-height) + 0.5rem);
-    align-items: flex-end;
-  }
-  .mod-sidedock .workspace-tab-header-container-inner {
-    height: var(--header-height);
-  }
-  .sidebar-toggle-button.mod-left,
-  .sidebar-toggle-button.mod-right {
-    padding: 0;
-    position: fixed;
-  }
-
-  &:not(.is-fullscreen) {
-    .workspace-ribbon.mod-left {
-      margin-top: 0;
-      padding-top: var(--header-height);
-    }
-
-    .sidebar-toggle-button.mod-left {
-      top: 0.25rem;
-      left: calc(var(--ribbon-width) + var(--frame-left-space));
-    }
-    .sidebar-toggle-button.mod-right {
-      top: 0.25rem;
-      right: calc(0.25rem + var(--frame-right-space));
-    }
-    .workspace.is-left-sidedock-open {
-      .mod-root .sidebar-toggle-button.mod-left {
-        display: none;
-      }
-    }
-    .workspace:not(.is-left-sidedock-open) {
-      .mod-sidedock .sidebar-toggle-button.mod-left {
-        display: none;
-      }
-    }
-
-    .workspace:not(.is-left-sidedock-open) {
-      .mod-root .workspace-tab-header-container {
-        padding-inline-start: calc(var(--frame-left-space) + 0.75rem);
-      }
-    }
-    .workspace:not(.is-right-sidedock-open) {
-      .mod-root .workspace-tab-header-container {
-        padding-inline-end: calc(var(--frame-right-space) + 1rem);
-      }
-    }
-  }
-  &.is-fullscreen {
-    .sidebar-toggle-button.mod-left {
-      top: 0.25rem;
-      left: 0.25rem;
-    }
-    .sidebar-toggle-button.mod-right {
-      top: 0.25rem;
-      right: 0.25rem;
-    }
-    .workspace:not(.is-right-sidedock-open) {
-      .mod-root .workspace-tab-header-container {
-        padding-inline-end: calc(var(--frame-right-space) + 1.5rem);
-      }
-    }
-  }
-
-  &.is-tablet {
-    .sidebar-toggle-button.mod-left,
-    .sidebar-toggle-button.mod-right {
-      padding: 0;
-    }
-    .sidebar-toggle-button.mod-left {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .sidebar-toggle-button.mod-right {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-    .workspace .mod-root .workspace-tabs .workspace-tab-header-container {
-      padding-inline-start: calc(var(--frame-left-space) + 2rem);
-      padding-inline-end: calc(var(--frame-right-space) + 3rem);
-    }
-  }
-  &.is-phone {
-    .sidebar-toggle-button.mod-left {
-      top: 0;
-      left: 0;
-    }
-  }
-}
-/* #endregion */
-/* #endregion */
 /* #region   Windows window frame styles */
 /* #region     "Obsidian frame" style */
 body.mod-windows {
@@ -3893,11 +3678,6 @@ body.mod-windows {
 
   .workspace-tabs {
     gap: 0;
-  }
-  .workspace-tab-header-container {
-    margin-top: 0;
-  }
-  .workspace-tabs  {
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -3905,11 +3685,27 @@ body.mod-windows {
     padding-bottom: 0;
     margin-bottom: 0;
   }
+
+  .workspace-tab-header-container {
+    height: auto;
+    justify-content: center;
+    margin-top: 0;
+  }
   .workspace-tabs.mod-top > .workspace-tab-header-container {
     margin-top: 0.5em;
   }
+
   .workspace-tab-header-container-inner {
+    background: var(--tab-background-inactive);
+    border-radius: var(--radius-s);
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 0;
     margin: 0 0 0 0;
+    overflow: hidden;
+
+    /* Override scrollbar color, because it forces the scrollbar to appear and we want it invisible here */
+    scrollbar-color: auto;
   }
   .workspace-tab-header-container-inner:has(
       .workspace-tab-header[data-type="markdown"].is-active:last-child
@@ -3921,71 +3717,15 @@ body.mod-windows {
     ) {
     border-bottom-left-radius: 0;
   }
-  .workspace-leaf-content {
-    .view-content {
-      padding: 0.5rem 1rem 0.5rem 1rem;
-    }
-  }
-}
-.mod-left-split {
-  .workspace-leaf-content {
-    .view-content {
-      /* Reduce left padding as the sidebar also provides visual spacing */
-      padding-inline-start: 0.5rem;
-    }
-  }
-}
 
-.mod-left-split .workspace-tab-header-container,
-.mod-right-split .workspace-tab-header-container {
-  justify-content: center;
-}
-.mod-left-split .workspace-tab-header-container-inner,
-.mod-right-split .workspace-tab-header-container-inner {
-  background: var(--tab-background-inactive);
-}
-.mod-left-split .workspace-tab-header-container-inner,
-.mod-right-split .workspace-tab-header-container-inner {
-  border-radius: var(--radius-s);
-  gap: 0;
-  padding: 0;
-}
-.mod-left-split .workspace-tab-header,
-.mod-right-split .workspace-tab-header {
-  border-radius: 0;
-}
-.is-focused
-  .mod-active
-  .workspace-tab-header.is-active
-  .workspace-tab-header-inner-icon {
-  color: var(--text-normal);
-}
-.is-focused
-  .mod-left-split
-  .workspace-tab-header.is-active
-  .workspace-tab-header-inner-icon,
-.is-focused
-  .mod-right-split
-  .workspace-tab-header.is-active
-  .workspace-tab-header-inner-icon {
-  color: var(--icon-color-focused);
-}
-.mod-left-split .workspace-tab-header.has-active-menu,
-.mod-right-split .workspace-tab-header.has-active-menu,
-.mod-left-split .workspace-tab-header.is-active,
-.mod-right-split .workspace-tab-header.is-active {
-  background: var(--theme-color-switcherBgActive);
-}
-.mod-left-split .workspace-tab-header-spacer,
-.mod-right-split .workspace-tab-header-spacer {
-  display: none;
-}
-.mod-left-split .workspace-tab-header-inner,
-.mod-right-split .workspace-tab-header-inner {
-  border-radius: 0;
-}
-/* Markdown tabs in sidebars */
-.mod-sidedock {
+  .workspace-tab-header {
+    background: var(--tab-background-inactive);
+    border-radius: 0;
+  }
+  .workspace-tab-header.has-active-menu,
+  .workspace-tab-header.is-active {
+    background: var(--theme-color-switcherBgActive);
+  }
   .workspace-tab-header[data-type="markdown"] {
     background-color: var(--tab-background-inactive);
     color: var(--tab-text-color-active);
@@ -4003,6 +3743,30 @@ body.mod-windows {
     background-color: var(--tab-background-active);
 
   }
+
+  .workspace-tab-header-inner {
+    border-radius: 0;
+  }
+
+  .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--icon-color-focused);
+    display: block;
+    text-overflow: ellipsis;
+    flex-basis: 25ch;
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+
+  .workspace-tab-header-spacer {
+    display: none;
+  }
+
+
+  .workspace-leaf-content {
+    .view-content {
+      padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+  }
   .workspace-leaf-content[data-type="markdown"],
   .workspace-leaf-content[data-type="webviewer"] {
     padding: 0 1rem;
@@ -4017,12 +3781,38 @@ body.mod-windows {
     }
   }
 }
-.is-focused .mod-sidedock {
-  .workspace-tab-header[data-type="markdown"].is-active {
-    color: var(--tab-text-color-focused-active);
 
+/* Override built-in style for .is-focused */
+.is-focused {
+  .mod-sidedock {
+    .workspace-tab-header.is-active
     .workspace-tab-header-inner-icon {
-      color: var(--tab-text-color-focused-active-current);
+      color: var(--icon-color-focused);
+    }
+    .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+      color: var(--icon-color-focused);
+    }
+    .workspace-tab-header[data-type="markdown"].is-active {
+      color: var(--tab-text-color-focused-active);
+
+      .workspace-tab-header-inner-icon {
+        color: var(--tab-text-color-focused-active-current);
+      }
+    }
+  }
+
+  /* .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
+    color: var(--text-normal);
+  } */
+}
+
+.mod-left-split {
+  .workspace-leaf-content {
+    .view-content {
+      /* Reduce left padding as the sidebar also provides visual spacing */
+      padding-inline-start: 0.5rem;
     }
   }
 }
@@ -4145,6 +3935,391 @@ body.show-ribbon:not(.is-mobile)
   color: var(--empty-pane-color);
 }
 /* #endregion */
+/* #endregion */
+
+/* #region   macOS window frame styles */
+body.mod-macos {
+  .workspace-tab-header-new-tab,
+  .workspace-tab-header-tab-list {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+/* #region     "Native frame" style */
+body.mod-macos {
+  &:not(.is-frameless) {
+    &:not(.is-mobile) {
+      .sidebar-toggle-button.mod-left,
+      .sidebar-toggle-button.mod-right {
+        padding: 0;
+        position: absolute;
+      }
+      .mod-sidedock {
+        .workspace-tabs.mod-top-right-space .workspace-tab-header-container-inner {
+          margin-inline-end: 2.5em;
+        }
+      }
+      .mod-left-split {
+        .workspace-tabs.mod-top > .workspace-tab-header-container {
+            padding-inline-end: 1rem;
+        }
+      }
+      .mod-right-split {
+        .workspace-tabs.mod-top > .workspace-tab-header-container {
+            padding-inline-start: 1rem;
+        }
+      }
+
+      &:not(.is-fullscreen) {
+        .workspace.is-left-sidedock-open {
+          .sidebar-toggle-button.mod-left {
+            top: 0.5em;
+          }
+        }
+        .workspace:not(.is-left-sidedock-open) {
+          .sidebar-toggle-button.mod-left {
+            top: 0.5em;
+          }
+        }
+        .workspace:not(.is-right-sidedock-open) {
+          .sidebar-toggle-button.mod-right {
+            top: 0;
+            right: -0.5em;
+          }
+          .workspace-tab-header-container {
+            padding-inline-end: 1.5em;
+          }
+        }
+        .workspace.is-right-sidedock-open {
+          .sidebar-toggle-button.mod-right {
+            top: 0;
+            right: 0.5em;
+          }
+        }
+      }
+    }
+    &.is-tablet {
+      .sidebar-toggle-button.mod-left,
+      .sidebar-toggle-button.mod-right {
+        padding: 0;
+      }
+      .sidebar-toggle-button.mod-left {
+        top: 0;
+        left: 0;
+      }
+      .sidebar-toggle-button.mod-right {
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+/* #endregion */
+/* #region     "Obsidian frame" style */
+body.mod-macos {
+  &.is-frameless:not(.is-hidden-frameless):not(.is-popout-window) {
+    --titlebar-height: 40px;
+
+    &:not(.is-mobile) {
+      .sidebar-toggle-button.mod-left,
+      .sidebar-toggle-button.mod-right {
+        padding: 0;
+        position: absolute;
+      }
+      .mod-sidedock {
+        .workspace-tabs.mod-top-right-space .workspace-tab-header-container-inner {
+          margin-inline-end: 2.5em;
+        }
+      }
+      .mod-left-split {
+        .workspace-tabs.mod-top > .workspace-tab-header-container {
+            padding-inline-end: 1rem;
+        }
+      }
+      .mod-right-split {
+        .workspace-tabs.mod-top > .workspace-tab-header-container {
+            padding-inline-start: 1rem;
+        }
+      }
+
+      &:not(.is-fullscreen) {
+        .workspace.is-left-sidedock-open {
+          .sidebar-toggle-button.mod-left {
+            top: 0.5em;
+          }
+        }
+        .workspace:not(.is-left-sidedock-open) {
+          .sidebar-toggle-button.mod-left {
+            top: 0.5em;
+          }
+        }
+        .workspace:not(.is-right-sidedock-open) {
+          .sidebar-toggle-button.mod-right {
+            top: 0;
+            right: -0.5em;
+          }
+          .workspace-tab-header-container {
+            padding-inline-end: 1.5em;
+          }
+        }
+        .workspace.is-right-sidedock-open {
+          .sidebar-toggle-button.mod-right {
+            top: 0;
+            right: 0.5em;
+          }
+        }
+      }
+      &.is-fullscreen {
+        .workspace.is-left-sidedock-open {
+          .sidebar-toggle-button.mod-left {
+            top: 0.5em;
+          }
+        }
+        .workspace:not(.is-left-sidedock-open) {
+          .sidebar-toggle-button.mod-left {
+            top: 0.5em;
+          }
+        }
+        .workspace.is-right-sidedock-open {
+          .sidebar-toggle-button.mod-right {
+            top: 0;
+            right: 0.5em;
+          }
+        }
+        .workspace:not(.is-right-sidedock-open) {
+          .sidebar-toggle-button.mod-right {
+            top: 0;
+            right: -0.5em;
+          }
+          .mod-root .workspace-tab-header-container {
+            padding-inline-end: 1.5em;
+          }
+        }
+        .workspace-ribbon .sidebar-toggle-button.mod-left {
+          left: 0;
+        }
+      }
+    }
+    &.is-tablet {
+      .sidebar-toggle-button.mod-left,
+      .sidebar-toggle-button.mod-right {
+        padding: 0;
+      }
+      .sidebar-toggle-button.mod-left {
+        top: 0;
+        left: 0;
+      }
+      .sidebar-toggle-button.mod-right {
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+/* #endregion */
+/* #region     "Hidden (default)" style. This is the default appearance! */
+/* In this window style we need to make sure buttons don't overlap the window controls. */
+body.mod-macos.is-frameless.is-hidden-frameless:not(.is-popout-window) {
+  .workspace .workspace-tabs.mod-top-left-space .workspace-tab-header-container,
+  .workspace
+    .workspace-tabs.mod-top-right-space
+    .workspace-tab-header-container {
+    padding: 0 1rem;
+  }
+
+  /* This element also seems to be a handle for window dragging */
+  .mod-sidedock .workspace-tabs.mod-top .workspace-tab-header-container {
+    margin-top: calc(var(--header-height) + 0.5rem);
+    height: auto;
+    align-items: flex-end;
+  }
+  .mod-sidedock .workspace-tab-header-container-inner {
+    height: auto;
+  }
+  .sidebar-toggle-button.mod-left,
+  .sidebar-toggle-button.mod-right {
+    padding: 0;
+    position: fixed;
+  }
+
+  &:not(.is-fullscreen) {
+    .workspace-ribbon.mod-left {
+      margin-top: 0;
+      padding-top: var(--header-height);
+    }
+
+    .sidebar-toggle-button.mod-left {
+      top: 0.25rem;
+      left: calc(var(--ribbon-width) + var(--frame-left-space));
+    }
+    .sidebar-toggle-button.mod-right {
+      top: 0.25rem;
+      right: calc(0.25rem + var(--frame-right-space));
+    }
+    .workspace.is-left-sidedock-open {
+      .mod-root .sidebar-toggle-button.mod-left {
+        display: none;
+      }
+    }
+    .workspace:not(.is-left-sidedock-open) {
+      .mod-sidedock .sidebar-toggle-button.mod-left {
+        display: none;
+      }
+    }
+
+    .workspace:not(.is-left-sidedock-open) {
+      .mod-root .workspace-tab-header-container {
+        padding-inline-start: calc(var(--frame-left-space) + 0.75rem);
+      }
+    }
+    .workspace:not(.is-right-sidedock-open) {
+      .mod-root .workspace-tab-header-container {
+        padding-inline-end: calc(var(--frame-right-space) + 1rem);
+      }
+    }
+  }
+  &.is-fullscreen {
+    .sidebar-toggle-button.mod-left {
+      top: 0.25rem;
+      left: 0.25rem;
+    }
+    .sidebar-toggle-button.mod-right {
+      top: 0.25rem;
+      right: 0.25rem;
+    }
+    .workspace:not(.is-right-sidedock-open) {
+      .mod-root .workspace-tab-header-container {
+        padding-inline-end: calc(var(--frame-right-space) + 1.5rem);
+      }
+    }
+  }
+
+  &.is-tablet {
+    .sidebar-toggle-button.mod-left,
+    .sidebar-toggle-button.mod-right {
+      padding: 0;
+    }
+    .sidebar-toggle-button.mod-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .sidebar-toggle-button.mod-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .workspace .mod-root .workspace-tabs .workspace-tab-header-container {
+      padding-inline-start: calc(var(--frame-left-space) + 2rem);
+      padding-inline-end: calc(var(--frame-right-space) + 3rem);
+    }
+  }
+  &.is-phone {
+    .sidebar-toggle-button.mod-left {
+      top: 0;
+      left: 0;
+    }
+  }
+}
+/* #endregion */
+/* #endregion */
+
+/* #region   Windows window frame styles */
+/* #region     "Obsidian frame" style */
+body.mod-windows {
+  &.is-frameless:not(.is-hidden-frameless) {
+    /* Override default appearance for .mod-close, as this one simulates a system control. */
+    .titlebar-button.mod-close {
+      border-radius: 0;
+      width: auto;
+    }
+  }
+}
+/* #endregion */
+/* #region     "Hidden (default)" style. This is the default appearance! */
+body.mod-windows {
+  &.is-frameless.is-hidden-frameless:not(.is-popout-window) {
+    /* Override default appearance for .mod-close, as this one simulates a system control. */
+    .titlebar-button.mod-close {
+      border-radius: 0;
+      width: auto;
+    }
+
+    .titlebar-button.mod-logo {
+      /* This is hidden by default. I'm not sure why, as it provides access to the main menu. */
+      display: flex;
+    }
+
+    .workspace-ribbon.side-dock-ribbon.mod-left {
+      margin-top: calc(var(--header-height) + 2em);
+    }
+
+    .sidebar-toggle-button.mod-left {
+      top: 2em;
+    }
+
+    /* &:not(.is-fullscreen) {
+      .sidebar-toggle-button.mod-left {
+        position: absolute;
+      }
+
+      .workspace-ribbon.mod-left {
+        margin-top: 2.5em;
+        padding-top: 0;
+      }
+      .mod-right-split .mod-top .workspace-tab-header-container {
+        position: relative;
+        padding-inline-end: calc(var(--frame-right-space) + 30px);
+
+        .sidebar-toggle-button.mod-right {
+          position: absolute;
+          right: var(--frame-right-space);
+        }
+      }
+
+      .workspace.is-left-sidedock-open {
+        .mod-left-split .workspace-tabs {
+          overflow: visible;
+        }
+        .sidebar-toggle-button.mod-left {
+          left: var(--ribbon-width);
+          top: 0.5em;
+          padding: 0;
+        }
+      }
+      .workspace:not(.is-left-sidedock-open) {
+        .mod-root .workspace-tabs.mod-top {
+          overflow: visible;
+        }
+        .sidebar-toggle-button.mod-left {
+          left: var(--ribbon-width);
+          top: 0.5em;
+          padding: 0;
+        }
+        .mod-root .workspace-tab-header-container {
+          padding-inline-start: calc(var(--icon-size) + 1rem);
+        }
+      }
+      .workspace:not(.is-right-sidedock-open) {
+      }
+      .workspace:not(.is-right-sidedock-open) {
+        .sidebar-toggle-button.mod-right {
+          left: var(--frame-right-space);
+          top: -0.5em;
+          padding: 0;
+        }
+      }
+    } */
+  }
+}
+/* #endregion */
+/* #endregion */
+
+/* #region   Linux window frame styles */
+.mod-linux {
+}
 /* #endregion */
 
 /* #region Shared UI Elements */
@@ -4768,7 +4943,7 @@ button.search-result-file-match-replace-button {
 .query-toolbar .query-toolbar-item.mod-views .text-icon-button {
   border: none;
   box-shadow: var(--theme-shadow-control);
-  background-color: var(--theme-color-controlBgLowWeight);
+  background-color: var(--theme-color-controlLowWeightBg);
   color: var(--theme-color-controlText);
   font-size: var(--font-ui-smaller);
   line-height: var(--line-height-tight);
@@ -4966,6 +5141,8 @@ select,
   box-shadow: var(--theme-shadow-control);
   background-color: var(--theme-color-controlBg);
   color: var(--theme-color-controlText);
+  padding: 0;
+  margin: 0 0.5rem;
 
   & > option {
     color: var(--theme-color-controlText);
@@ -4991,7 +5168,7 @@ select:focus,
 .search-results-info .dropdown {
   border: none;
   box-shadow: var(--theme-shadow-control);
-  background-color: var(--theme-color-controlBgLowWeight);
+  background-color: var(--theme-color-controlLowWeightBg);
 }
 @media (hover: hover) {
   .search-results-info .dropdown:hover {
@@ -5014,7 +5191,7 @@ select:focus,
     letter-spacing: 0.05em;
     margin-inline-start: 0;
     line-height: 1;
-    padding: 0.25em 0.5em;
+    padding: 0.375em 0.75em;
     text-transform: uppercase;
 
 }
@@ -5651,6 +5828,8 @@ body:not(.is-phone) .modal.mod-sync-history {
   display: flex;
   flex-direction: column;
   gap: var(--size-2-1);
+  padding: 0;
+  overflow: hidden;
 }
 .community-item.is-selected {
   background: var(--theme-color-communityItemBgSelected);
@@ -5670,17 +5849,26 @@ body:not(.is-phone) .modal.mod-sync-history {
 .community-item-repo,
 .community-item-downloads,
 .community-item-updated,
+.community-item-desc,
 .community-modal-info-downloads-text,
 .community-modal-info-author,
 .community-modal-info-repo {
   color: var(--text-normal);
+  padding: 0 1rem;
 }
 .community-item-name {
-  font-weight: var(--font-semibold)
+  font-weight: var(--font-semibold);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 .community-item .flair {
   --flair-background: inherit;
   --flair-color: inherit;
+  float: right;
+  margin-right: -0.5rem;
+}
+.community-item-desc {
+  padding-bottom: 1rem;
 }
 .community-item-author,
 .community-item-repo,
@@ -5803,17 +5991,6 @@ body:not(.is-phone) .modal.mod-sync-history {
   max-width: none;
   width: 100%;
 }
-
-.markdown-source-view .cm-contentContainer {
-  padding: 1rem 2rem;
-}
-.mod-sidedock .markdown-source-view .cm-contentContainer {
-  padding: 0 0;
-}
-.is-phone .markdown-source-view .cm-contentContainer {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .markdown-reading-view .mod-footer {
   margin: 1em 0 0 0;
 }
@@ -5821,28 +5998,74 @@ body:not(.is-phone) .modal.mod-sync-history {
   padding: 0;
 }
 
-.markdown-source-view.mod-cm6.is-readable-line-width
-  .cm-sizer
-  .cm-contentContainer,
-.markdown-preview-view.is-readable-line-width
-  .markdown-preview-sizer
-  > div:not(.mod-header):not(.mod-footer):not(.markdown-preview-pusher) {
-  margin: 0 auto;
-  max-width: var(--file-line-width);
+.markdown-source-view .cm-contentContainer {
+  padding: 1rem 2rem;
+}
+
+.mod-sidedock .markdown-source-view .cm-contentContainer {
+  padding: 0 0;
+}
+
+
+
+
+
+
+/* TODO: QA test for this new code */
+
+.markdown-source-view.is-live-preview.mod-cm6.is-readable-line-width .cm-content {
   width: 100%;
+  max-width: 100%;
+
+  > div {
+    /* TODO: need to redefine --file-line-width so it's based on root character width, not base don current font size */
+    margin: 0 auto !important;
+    max-width: var(--file-line-width);
+  }
 }
-.markdown-preview-view.is-readable-line-width
-  .markdown-preview-sizer
-  > div:not(.mod-header):not(.mod-footer):not(.markdown-preview-pusher) {
-  max-width: calc(1ch * var(--theme-setting-lineWidthReadingView));
+.markdown-preview-view .markdown-preview-sizer {
+  > div {
+    margin: 0 auto !important;
+    max-width: var(--file-line-width);
+    padding: 0 2rem;
+
+  }
+  > div.mod-header,
+  > div.mod-footer {
+    margin: 0;
+    max-width: none;
+    padding: 0;
+  }
 }
-.mod-root .markdown-source-view.mod-cm6 .cm-sizer .cm-contentContainer,
-.markdown-preview-view
-  .markdown-preview-sizer
-  > div:not(.mod-header):not(.mod-footer):not(.markdown-preview-pusher) {
-  padding-inline-start: 2rem;
-  padding-inline-end: 2rem;
+
+/* Allow tables to extend into the left and right margins */
+.theme-setting-wideTables {
+  .markdown-source-view.is-live-preview.mod-cm6.is-readable-line-width .cm-content {
+    > .cm-table-widget {
+      max-width: 100%;
+
+      > .table-wrapper {
+        margin: 0 auto;
+      }
+    }
+  }
+  .markdown-preview-view .markdown-preview-sizer {
+    > .el-table {
+      max-width: 100%;
+
+      > table {
+        margin: 0 auto;
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
 .markdown-rendered .mod-header {
   margin-bottom: 3rem;
 }
@@ -6082,6 +6305,24 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
 .is-mobile .document-replace .document-search-close-button {
   top: calc(50% - 0.5em);
 }
+/* Close button on left for macOS */
+.mod-macos .document-search-container {
+  .document-search {
+    .document-search-close-button {
+      order: 0;
+    }
+    .document-search-input {
+      order: 1;
+    }
+    .document-search-buttons {
+      order: 2;
+    }
+  }
+  .document-replace {
+    padding-left: calc(var(--theme-length-closeButtonWidth) + 0.5em);
+  }
+}
+
 /* #endregion */
 /* #endregion */
 
@@ -6332,6 +6573,7 @@ body {
 .bases-header {
   .query-toolbar .query-toolbar-item.mod-views {
     overflow: visible;
+    flex-wrap: wrap;
   }
 }
 .bases-thead {
@@ -6558,8 +6800,11 @@ body {
 /* #endregion */
 /* #region     Bases in a sidebar panel */
 .mod-sidedock .workspace-leaf-content[data-type="bases"] {
+  --bases-cards-group-padding: 0 0;
+
   .bases-view {
     background-color: transparent;
+    font-size: var(--font-ui-small);
   }
   .bases-header {
     background-color: transparent;
@@ -6654,9 +6899,80 @@ body {
 /* #region   Core Plugin: Files */
 
 .workspace-leaf-content[data-type="file-explorer"] {
+  .nav-header {
+    .nav-buttons-container {
+      gap: 0.25em;
+      /* Insert an element to force a line break in the flexbox, separating the first two controls from the others. */
+      .nav-action-button:first-child,
+      .nav-action-button:nth-child(2) {
+        order: 0;
+      }
+      &:after {
+        order: 1;
+        content: "";
+        width: 100%
+      }
+      .nav-action-button {
+        order: 2;
+      }
+    }
+    /* Style first two controls as lightweight buttons */
+    .nav-action-button:first-child,
+    .nav-action-button:nth-child(2) {
+      border: none;
+      box-shadow: var(--theme-shadow-control);
+      background-color: var(--theme-color-controlLowWeightBg);
+      color: var(--theme-color-controlText);
+      font-size: var(--font-ui-smaller);
+      line-height: var(--line-height-tight);
+      min-height: 1.5rem;
+      padding: 0.25em 0.5em;
+      display: flex;
+      gap: 0.5em;
+
+      &:after {
+        content: attr(aria-label);
+      }
+    }
+
+    @media (hover: hover) {
+      .nav-action-button:first-child:hover,
+      .nav-action-button:nth-child(2):hover {
+        border: none;
+        background-color: var(--theme-color-controlBgHover);
+        color: var(--theme-color-controlTextHover);
+
+      }
+      .nav-action-button:first-child.is-active:hover,
+      .nav-action-button:nth-child(2).has-active-menu:hover {
+        border: none;
+        background-color: var(--theme-color-controlBgHover);
+        color: var(--theme-color-controlTextHover);
+
+        .text-button-icon {
+          color: var(--theme-color-controlTextHover);
+        }
+      }
+    }
+  }
 
   .nav-folder-title-content {
     font-weight: var(--font-bold);
+  }
+}
+/* Mobile */
+.workspace-drawer {
+  .workspace-leaf-content[data-type="file-explorer"] {
+    .nav-header {
+      .nav-action-button:first-child,
+      .nav-action-button:nth-child(2) {
+        min-height: 44px;
+        flex-shrink: 0;
+      }
+    }
+    .nav-buttons-container {
+      padding: 0;
+    }
   }
 }
 .mod-sidedock {
@@ -6674,6 +6990,10 @@ body {
     }
   }
 }
+
+
+
+
 
 /* #endregion */
 /* #region   Core Plugin: File Recovery */
@@ -7408,6 +7728,10 @@ body.theme-setting-overrideCalendar {
   }
 
   .mod-sidedock .workspace-leaf-content[data-type="calendar"] {
+    .view-content {
+      background: transparent;
+    }
+
     .container {
       border-radius: var(--radius-m);
       overflow: hidden;
@@ -8850,7 +9174,7 @@ body.theme-setting-overrideMapView {
     & .map-view-graph-controls > .mv-map-control.mv-control-button {
       border: none;
       box-shadow: var(--theme-shadow-control);
-      background-color: var(--theme-color-controlBgLowWeight);
+      background-color: var(--theme-color-controlLowWeightBg);
       color: var(--theme-color-controlText);
       font-size: var(--font-ui-smaller);
       line-height: var(--line-height-tight);

@@ -824,10 +824,11 @@ body.theme-light {
   --hide-separator-yaml: None !important;
   --icon-file: "·" !important;
   --icon-file-indicator: "·" !important;
+  --icon-file-size: 15px !important;
   --icon-settings: none !important;
   --icon-ui-opacity: 0.85px !important;
   --img-align: 0px !important;
-  --inline-code-font-size: calc(17.5px - 1.5 px) --code-size-edit-mode: 13.9px !important;
+  --inline-code-font-size: calc(17.5px - 1.5 px) !important;
   --inline-title-align: justify !important;
   --inline-title-bold: 400px !important;
   --internal-link-border-style: dotted !important;
@@ -1678,10 +1679,11 @@ body.theme-dark {
   --hide-separator-yaml: None;
   --icon-file: "·";
   --icon-file-indicator: "·";
+  --icon-file-size: 15px;
   --icon-settings: none;
   --icon-ui-opacity: 0.85px;
   --img-align: 0px;
-  --inline-code-font-size: calc(17.5px - 1.5 px) --code-size-edit-mode: 13.9px;
+  --inline-code-font-size: calc(17.5px - 1.5 px);
   --inline-title-align: justify;
   --inline-title-bold: 400px;
   --internal-link-border-style: dotted;
@@ -2718,20 +2720,17 @@ body
 }
 body .callout[data-callout="example"] {
   --callout-color: inherit;
-  background-color: light-dark(
-    rgba(120, 82, 238, 0.1),
-    rgba(168, 130, 255, 0.1)
-  );
-  mix-blend-mode: lighten;
-  border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-left-radius: 11.2px;
-  border-top-right-radius: 11.2px;
-  border-bottom-left-radius: 11.2px;
-  border-bottom-right-radius: 11.2px;
-  border-start-start-radius: 11.2px;
-  border-start-end-radius: 11.2px;
-  border-end-start-radius: 11.2px;
-  border-end-end-radius: 11.2px;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="example"]
@@ -2743,25 +2742,25 @@ body
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
-  background-color: rgba(158, 158, 158, 0.1);
-  mix-blend-mode: lighten;
-  border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-left-radius: 11.2px;
-  border-top-right-radius: 11.2px;
-  border-bottom-left-radius: 11.2px;
-  border-bottom-right-radius: 11.2px;
-  border-start-start-radius: 11.2px;
-  border-start-end-radius: 11.2px;
-  border-end-start-radius: 11.2px;
-  border-end-end-radius: 11.2px;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: none;
-  stroke: rgb(158, 158, 158);
+  fill: rgb(0, 0, 0);
+  stroke: none;
 }
 body .math-block > mjx-container.MathJax {
   display: block;
