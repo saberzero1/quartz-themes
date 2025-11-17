@@ -830,6 +830,7 @@
   --callout-note-rgb: 217, 119, 86 !important;
   --callout-success-rgb: 121, 141, 93 !important;
   --callout-warning-rgb: 230, 126, 34 !important;
+  --editor-max-width: 64ch !important;
   --emphasis-color: #ae4e36 !important;
   --emphasis-color-light: #d97756 !important;
   --folder-1-color: #d97756 !important;
@@ -871,9 +872,9 @@
   --highlight-bg-dark-color-rgb: 58, 82, 75 !important;
   --highlight-bg-light-color: #e0f2e9 !important;
   --highlight-bg-rgb: 188, 209, 202 !important;
-  --line-normal: 1.4 !important;
-  --line-relaxed: 1.6 !important;
-  --line-tight: 1.2 !important;
+  --line-normal: 1.7 !important;
+  --line-relaxed: 2 !important;
+  --line-tight: 1.5 !important;
   --link-opacity-hover: 0.18 !important;
   --link-opacity-normal: 0.1 !important;
   --link-opacity-unresolved: 0.05 !important;
@@ -886,6 +887,7 @@
   --r2: 10px !important;
   --r3: 12px !important;
   --r4: 16px !important;
+  --reading-max-width: 64ch !important;
   --s1: 4px !important;
   --s2: 8px !important;
   --s3: 12px !important;
@@ -1731,6 +1733,7 @@
   --callout-note-rgb: 242, 168, 130;
   --callout-success-rgb: 168, 196, 122;
   --callout-warning-rgb: 243, 156, 18;
+  --editor-max-width: 64ch !important;
   --emphasis-color: #e27a5a !important;
   --emphasis-color-light: #f2a882 !important;
   --folder-1-color: #f2a882 !important;
@@ -1772,9 +1775,9 @@
   --highlight-bg-dark-color-rgb: 74, 61, 46 !important;
   --highlight-bg-light-color: #f2a882 !important;
   --highlight-bg-rgb: 74, 61, 46 !important;
-  --line-normal: 1.4 !important;
-  --line-relaxed: 1.6 !important;
-  --line-tight: 1.2 !important;
+  --line-normal: 1.7 !important;
+  --line-relaxed: 2 !important;
+  --line-tight: 1.5 !important;
   --link-opacity-hover: 0.18 !important;
   --link-opacity-normal: 0.1 !important;
   --link-opacity-unresolved: 0.05 !important;
@@ -1787,6 +1790,7 @@
   --r2: 10px !important;
   --r3: 12px !important;
   --r4: 16px !important;
+  --reading-max-width: 64ch !important;
   --s1: 4px !important;
   --s2: 8px !important;
   --s3: 12px !important;

@@ -362,7 +362,7 @@
   --file-header-font-size: 0.8rem !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
-  --file-line-width: 60ch !important;
+  --file-line-width: 37.5rem !important;
   --file-margins: 0 2em !important;
   --flair-background: rgb(38, 102, 192) !important;
   --flair-color: color-mix(in srgb, rgb(38, 102, 192), white 95%) !important;
@@ -1494,7 +1494,6 @@
     color-mix(in srgb, rgb(38, 102, 192), white 40%),
     color-mix(in srgb, rgb(38, 102, 192), black 40%)
   ) !important;
-  --theme-color-controlBgLowWeight: hsl(from white h s l / 0.5) !important;
   --theme-color-controlContentArea: rgb(38, 102, 192) !important;
   --theme-color-controlContentAreaHover: color-mix(
     in srgb,
@@ -1514,6 +1513,7 @@
     rgb(38, 102, 192),
     white 95%
   ) !important;
+  --theme-color-controlLowWeightBg: hsl(from white h s l / 0.5) !important;
   --theme-color-controlSetBg: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -2317,7 +2317,7 @@
   --file-header-font-size: 0.8rem !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
-  --file-line-width: 60ch !important;
+  --file-line-width: 37.5rem !important;
   --file-margins: 0 2em !important;
   --flair-background: rgb(38, 102, 192) !important;
   --flair-color: color-mix(in srgb, rgb(38, 102, 192), white 95%) !important;
@@ -3172,7 +3172,7 @@
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: hsl(258, 105.6%, 66%) !important;
+  --tag-color: rgb(181, 150, 253) !important;
   --tag-color-hover: rgb(166, 139, 249) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -3490,7 +3490,6 @@
     color-mix(in srgb, rgb(38, 102, 192), white 40%),
     color-mix(in srgb, rgb(38, 102, 192), black 40%)
   ) !important;
-  --theme-color-controlBgLowWeight: hsl(from black h s l / 0.25) !important;
   --theme-color-controlContentArea: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -3514,6 +3513,7 @@
     rgb(38, 102, 192),
     white 95%
   ) !important;
+  --theme-color-controlLowWeightBg: hsl(from black h s l / 0.25) !important;
   --theme-color-controlSetBg: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -3794,12 +3794,12 @@
   --theme-color-tableHeaderBg: hsl(
     from rgb(38, 102, 192) h s l / 0.12
   ) !important;
-  --theme-color-tagBgHover: hsl(258, 92%, 77%, 0.1) !important;
+  --theme-color-tagBgHover: hsl(258, 105.6%, 52.8%, 0.75) !important;
   --theme-color-tagBgSidebar: hsl(258, 105.6%, 16.5%, 0.5) !important;
-  --theme-color-tagBgSidebarHover: hsl(258, 89.76%, 33%, 0.5) !important;
-  --theme-color-tagHover: rgb(203, 182, 252) !important;
-  --theme-color-tagSidebar: hsl(258, 105.6%, 66%) !important;
-  --theme-color-tagSidebarHover: hsl(258, 107.712%, 75.9%) !important;
+  --theme-color-tagBgSidebarHover: hsl(258, 97%, 53%, 0.5) !important;
+  --theme-color-tagHover: hsl(258, 92.4%, 85.14%) !important;
+  --theme-color-tagSidebar: rgb(181, 150, 253) !important;
+  --theme-color-tagSidebarHover: hsl(258, 123.2%, 85.8%) !important;
   --theme-color-textMeta: rgb(38, 102, 192) !important;
   --theme-color-textSelected: color-mix(
     in srgb,
@@ -4632,7 +4632,7 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(44, 8, 127), rgb(134, 82, 255));
+    color: light-dark(rgb(44, 8, 127), rgb(181, 151, 253));
   }
 
   ul > li {

@@ -20,8 +20,8 @@ const VERSION = "1.10.3";
 const INSTALLER_VERSION = "1.10.3";
 
 let testingMode = false;
-// testingMode = true;
-const testingTheme = "its";
+testingMode = true;
+const testingTheme = "maple";
 
 const cacheDir = resolve(".obsidian-cache");
 const themeList = readdirSync("./runner/vault/.obsidian/themes").filter(

@@ -185,17 +185,23 @@ audio::-webkit-media-controls-enclosure {
 
 /* Bases */
 body {
-	--i-bases-table-header-font-size: var(--font-smallest);
 	--bases-embed-border-radius: 7px;
 	--bases-table-header-weight: 600;
 	--bases-table-header-color: var(--text-normal);
 	--bases-table-row-background-hover: transparent;
 }
-.workspace-leaf-content[data-type="bases"] .bases-table-header-label {
-	font-size: var(--i-bases-table-header-font-size);
+.bases-table-header-label {
+	font-size: var(--i-bases-table-header-font-size, var(--font-smallest));
+	align-items: center;
+}
+.workspace-leaf-content[data-type="markdown"] .bases-table-header-label {
+	font-size: var(--i-bases-table-header-font-size, 0.875em);
 }
 .workspace-leaf-content[data-type="bases"] .bases-header {
 	background-color: var(--background-primary);
+}
+.mod-sidedock {
+	--bases-table-header-background: var(--background-primary);
 }
 .bases-thead .bases-td {
 	border-bottom: var(--bases-table-row-border-width) solid var(--bases-table-border-color);
@@ -203,14 +209,8 @@ body {
 .i-bases-hide-table-header-icons {
 	--bases-table-header-icon-display: none;
 }
-.i-bases-hide-tab-titlebar:not(.is-mobile) .workspace-leaf-content[data-type="bases"] .view-header,
-.i-bases-hide-add-note-button .query-toolbar .query-toolbar-item.mod-add-note,
-.i-bases-hide-toolbar-labels .query-toolbar .query-toolbar-item:not(.mod-views,.bases-toolbar-result-count) .text-button-label,
-.i-bases-hide-toolbar-icons:not(.is-mobile) .query-toolbar .query-toolbar-item:not(.mod-views,.bases-toolbar-result-count) .text-button-icon {
+.i-bases-hide-tab-titlebar:not(.is-mobile) .workspace-leaf-content[data-type="bases"] .view-header {
 	display: none;
-}
-.i-bases-hide-toolbar-icons:not(.is-mobile) .query-toolbar .query-toolbar-item:not(.mod-views,.bases-toolbar-result-count) .text-button-label {
-	padding-inline-start: 2px;
 }
 .i-bases-highlight-active-row {
 	--bases-table-row-background-hover: hsla(var(--accent-h), var(--i-s), 50%, 0.05);
@@ -236,6 +236,32 @@ body {
 	--blockquote-background-color: transparent;
 }
 
+/* Buttons and dropdowns */
+.theme-light:not(.is-mobile) {
+	--input-shadow: inset 0 0 0 1px var(--color-base-30);
+	--input-shadow-hover: inset 0 0 0 1px var(--i-6);
+	.modal-container :is(button:not(.clickable-icon,.mod-cta), select, .combobox-button, .dropdown) {
+		background-color: var(--i-1);
+		&:hover {
+			background-color: var(--i-2);
+		}
+	}
+}
+.theme-dark:not(.is-mobile) {
+	--input-shadow: inset 0 0 0 1px var(--i-6);
+	--input-shadow-hover: inset 0 0 0 1px var(--i-8);
+	.modal-container :is(button:not(.clickable-icon,.mod-cta), select, .combobox-button, .dropdown) {
+		background-color: var(--i-3);
+		&:hover {
+			background-color: var(--i-5);
+		}
+	}
+}
+button.mod-cta {
+	--input-shadow: none;
+	--input-shadow-hover: none;
+}
+
 /* Callouts */
 body {
 	--callout-border-width: 1px;
@@ -250,6 +276,7 @@ body {
 }
 .callout {
 	background-color: transparent;
+	--bases-table-header-background: var(--background-primary);
 	--bases-table-header-background-hover: var(--i-2);
 	--bases-embed-border-color: var(--bases-table-border-color);
 	--bases-table-border-color: var(--table-border-color);
@@ -908,6 +935,12 @@ body {
 	--h4-size: var(--i-h4-size);
 	--h5-size: var(--i-h5-size);
 	--h6-size: var(--i-h6-size);
+	--h1-letter-spacing: 0;
+	--h2-letter-spacing: 0;
+	--h3-letter-spacing: 0;
+	--h4-letter-spacing: 0;
+	--h5-letter-spacing: 0;
+	--h6-letter-spacing: 0;
 	--h1-line-height: var(--i-h1-line-height);
 	--h2-line-height: var(--i-h2-line-height);
 	--h3-line-height: var(--i-h3-line-height);
@@ -924,15 +957,24 @@ body {
 	--i-h3-line-height: var(--line-height-normal);
 	--i-h4-line-height: var(--line-height-normal);
 	--i-h1-weight: 600;
-}
-.i-headings:not(.modal-container) :is(
-.HyperMD-header-1, .inline-title h1, .HyperMD-list-line .cm-header-1, h1, .markdown-rendered h1,
-.HyperMD-header-2, .inline-title h2, .HyperMD-list-line .cm-header-2, h2, .markdown-rendered h2,
-.HyperMD-header-3, .inline-title h3, .HyperMD-list-line .cm-header-3, h3, .markdown-rendered h3,
-.HyperMD-header-4, .inline-title h4, .HyperMD-list-line .cm-header-4, h4, .markdown-rendered h4,
-.HyperMD-header-5, .inline-title h5, .HyperMD-list-line .cm-header-5, h5, .markdown-rendered h5,
-.HyperMD-header-6, .inline-title h6, .HyperMD-list-line .cm-header-6, h6, .markdown-rendered h6) {
-	letter-spacing: 0;
+	h1, .markdown-rendered h1, .HyperMD-header-1, .inline-title h1, .HyperMD-list-line .cm-header-1 {
+		letter-spacing: var(--h1-letter-spacing);
+	}
+	h2, .markdown-rendered h2, .HyperMD-header-2, .inline-title h2, .HyperMD-list-line .cm-header-2 {
+		letter-spacing: var(--h2-letter-spacing);
+	}
+	h3, .markdown-rendered h3, .HyperMD-header-3, .inline-title h3, .HyperMD-list-line .cm-header-3 {
+		letter-spacing: var(--h3-letter-spacing);
+	}
+	h4, .markdown-rendered h4, .HyperMD-header-4, .inline-title h4, .HyperMD-list-line .cm-header-4 {
+		letter-spacing: var(--h4-letter-spacing);
+	}
+	h5, .markdown-rendered h5, .HyperMD-header-5, .inline-title h5, .HyperMD-list-line .cm-header-5 {
+		letter-spacing: var(--h5-letter-spacing);
+	}
+	h6, .markdown-rendered h6, .HyperMD-header-6, .inline-title h6, .HyperMD-list-line .cm-header-6 {
+		letter-spacing: var(--h6-letter-spacing);
+	}
 }
 
 /* Horizontal rules */
@@ -1475,7 +1517,6 @@ li.is-collapsed .cm-fold-indicator:hover ~ .cm-formatting-list .list-bullet::aft
 	background-color: transparent;
 }
 .internal-query .internal-query-header-icon {
-	color: var(--search-icon-color);
 	margin: 0;
 }
 
@@ -1611,6 +1652,22 @@ body {
 .i-full-width-status-bar:not(.i-border-layout,.i-default-layout,.is-mobile) {
 	--status-bar-border-color: var(--i-layout-border-color);
 }
+.i-full-width-status-bar.i-focus-mode.i-focus-mode-main:not(.i-border-layout,.i-default-layout,.is-mobile,.i-autohide-status-bar,.i-hide-status-bar,.i-focus-mode.i-focus-mode-status-bar,.is-popout-window) {
+	.status-bar {
+		margin: 0 8px 8px;
+		border-radius: 0 0 var(--i-card-radius) var(--i-card-radius);
+		border: 1px solid var(--i-layout-border-color);
+		border-top: 1px solid var(--color-base-30);
+	}
+	.workspace {
+		padding-bottom: 0;
+	}
+	.workspace-tab-container {
+		margin-bottom: 0;
+		border-radius: var(--i-card-radius) var(--i-card-radius) 0 0;
+		border-bottom: 0;
+	}
+}
 
 /* Tables */
 body {
@@ -1649,6 +1706,9 @@ body {
 	--tab-text-color-focused-active: var(--tab-text-color);
 	--tab-container-background: var(--titlebar-background);
 }
+.workspace-tab-header:is(:hover,.is-active) .workspace-tab-header-inner-close-button {
+	color: var(--text-muted);
+}
 .i-default-layout .mod-sidedock .workspace-tab-header.is-active {
 	background-color: var(--i-5);
 }
@@ -1669,6 +1729,9 @@ body {
 .view-header-title-parent {
 	color: var(--text-accent);
 	align-items: center;
+}
+.view-header-title-parent .view-header-breadcrumb:hover {
+	color: var(--text-accent-hover);
 }
 :is(.is-focused,.is-phone) .workspace-leaf.mod-active .view-header-title {
 	font-weight: 500;
@@ -1864,37 +1927,37 @@ body:not(.i-calendar-off) {
 	&.is-mobile #calendar-container .reset-button {
 		display: unset;
 	}
-	&:not(.is-mobile) {
-		#calendar-container .title {
+	&:not(.is-mobile) #calendar-container {
+		.title {
 			font-size: 1.1em;
 			line-height: 1.3;
 		}
-		#calendar-container .arrow {
+		.arrow {
 			width: 20px;
 			height: 20px;
 			border-radius: 4px;
 			transition: background-color 0.1s ease-in, color 0.1s ease-in;
 		}
-		#calendar-container .arrow:hover {
+		.arrow:hover {
 			background-color: var(--background-modifier-hover);
 		}
-		#calendar-container .arrow svg {
+		.arrow svg {
 			height: 12px;
 			width: 12px;
 		}
-		#calendar-container .reset-button {
+		.reset-button {
 			font-size: 0.6em;
 			letter-spacing: 0;
 			margin: 0;
 		}
-		#calendar-container .nav {
+		.nav {
 			padding: 0 0 0 6px;
 		}
-		#calendar-container th {
+		th {
 			letter-spacing: 0;
 			padding: 4px 0;
 		}
-		#calendar-container :is(.day,.week-num) {
+		:is(.day,.week-num) {
 			padding: 4px 0;
 		}
 	}
@@ -4406,23 +4469,6 @@ settings:
 		title: Hide tab titlebar (desktop only)
 		type: class-toggle
 	-
-		id: hide-toolbar-labels-icons
-		title: Hide toolbar labels/icons
-		type: class-select
-		allowEmpty: true
-		default: none
-		options:
-			-
-				label: Hide toolbar labels
-				value: i-bases-hide-toolbar-labels
-			-
-				label: Hide toolbar icons (desktop only)
-				value: i-bases-hide-toolbar-icons
-	-
-		id: i-bases-hide-add-note-button
-		title: Hide '+ New' button
-		type: class-toggle
-	-
 		id: i-bases-hide-table-header-icons
 		title: Hide table header icons
 		type: class-toggle
@@ -4444,7 +4490,7 @@ settings:
 		title: Highlight active row
 		type: class-toggle
 	-
-		id: bases-table-text-size
+		id: bases-table-font-size
 		title: Table body font size
 		type: variable-text
 		default: ''

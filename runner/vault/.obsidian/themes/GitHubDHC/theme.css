@@ -1,3 +1,17 @@
+/*
+================================================================================
+  GitHubDHC Theme - GitHub Dark High Contrast for Obsidian
+
+  Author: Scott Kirvan
+  Based on: GitHub's Primer Design System
+  Source: @primer/primitives - Dark High Contrast theme
+
+  This theme provides an accurate implementation of GitHub's Dark High Contrast
+  color scheme for Obsidian, with support for colorblind variants and the
+  Kanban plugin.
+================================================================================
+*/
+
 /* @settings
 
 name: GitHubDHC theme settings
@@ -163,8 +177,18 @@ settings:
         type: class-toggle
         default: on
 */
+
+/*
+================================================================================
+  BASE OBSIDIAN VARIABLES
+
+  These variables override Obsidian's defaults to match GitHub's design system.
+  They are theme-agnostic and work for both light and dark modes.
+================================================================================
+*/
+
 body {
-    /*───────── Obsidian - provided Variables ──────────*/
+    /*───────── Fonts ──────────*/
     --font-sans: -apple-system BlinkMacSystemFont, 'Segoe UI', 'Noto Sans',
         Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
     --font-mono: 'DM Mono', 'Fira Code', Courier, monospace;
@@ -185,7 +209,7 @@ body {
     --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
     /* Blockquotes */
     --blockquote-border-thickness: .25em;
-    --blockquote-border-color: #7a828e;
+    --blockquote-border-color: var(--color-base-50);
     --blockquote-font-style: normal;
     --blockquote-color: inherit;
     --blockquote-background-color: transparent;
@@ -217,8 +241,8 @@ body {
     --checklist-done-color: var(--text-muted);
     /* Code */
     --code-size: var(--font-smaller);
-    --code-background: #272b33;
-    --code-normal: #f0f3f6;
+    --code-background: var(--color-base-35);
+    --code-normal: var(--color-base-100);
     --code-comment: var(--text-faint);
     --code-function: var(--color-orange);
     --code-important: var(--color-orange);
@@ -343,7 +367,7 @@ body {
     /* View header */
     --header-height: 40px;
     /* Horizontal rules */
-    --hr-color: #7a828e;
+    --hr-color: var(--color-base-50);
     --hr-thickness: .25em;
     /* Icons */
     --icon-size: var(--icon-m);
@@ -616,15 +640,18 @@ body {
     --vault-name-color: var(--text-normal);
     /* Workspace */
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    /* Color mappings ------------------------ */
+
+    /*───────── Color Mappings ──────────*/
+    /* These map Obsidian's color variables to our base color system */
+
     /* Accent HSL values */
     --accent-h: var(--accent-h-theme);
     --accent-s: var(--accent-s-theme);
     --accent-l: var(--accent-l-theme);
     /* Backgrounds */
-    --background-primary: var(--color-base-00-sk);
+    --background-primary: var(--color-base-00);
     --background-primary-alt: var(--color-base-10);
-    --background-secondary: var(--color-base-00-sk);
+    --background-secondary: var(--color-base-00);
     --background-modifier-hover: rgba(var(--rgb-hover), var(--background-modifier-hover-alpha));
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-modifier-border: var(--color-base-30);
@@ -648,53 +675,75 @@ body {
     --text-selection: hsla(var(--color-accent-hsl), 0.2);
     --text-accent: var(--color-accent);
     --text-accent-hover: var(--color-accent-2);
-    --interactive-normal: var(--color-base-00);
-    --interactive-hover: var(--color-base-10);
+    --interactive-normal: var(--color-base-35);       /* Secondary button background (base-35 = #3d444d) */
+    --interactive-hover: var(--color-base-50);        /* Secondary button hover (base-50 = #7a828e) */
     --interactive-accent-hsl: var(--color-accent-hsl);
     --interactive-accent: var(--color-accent-1);
     --interactive-accent-hover: var(--color-accent-2);
 }
+
+/*
+================================================================================
+  DARK THEME - GitHub Dark High Contrast
+
+  Official colors from @primer/primitives/dist/css/functional/themes/dark-high-contrast.css
+
+  Key characteristics:
+  - Darkest background (#010409) for maximum contrast
+  - Pure white text (#ffffff) for readability
+  - Light borders (#b7bdc8) for clear definition
+  - Vibrant accent colors for syntax and UI elements
+================================================================================
+*/
 
 .theme-dark {
     color-scheme: dark;
     --highlight-mix-blend-mode: lighten;
     --mono-rgb-0: 0, 0, 0;
     --mono-rgb-100: 255, 255, 255;
-    --rgb-hover: 177, 186, 196;
-    --color-red-rgb: 248, 81, 73;
-    --color-red: #F47067;
-    --color-green-rgb: 126, 231, 135;
-    --color-green: #7ee787;
-    --color-orange: #FFA657;
-    --color-yellow: #d29922;
-    --color-cyan: #A5D6FF;
-    --color-blue: #6CB6FF;
-    --color-purple: #D2A8FF;
-    --color-pink: #f778ba;
+
+    /* GitHub Dark High Contrast Colors - Official Primer Primitives */
+    /* Source: @primer/primitives/dist/css/functional/themes/dark-high-contrast.css */
+
+    /* Backgrounds */
+    --color-base-00: #010409;        /* bgColor-default - main canvas */
+    --color-base-10: #151b23;        /* bgColor-muted - secondary areas */
+    --color-base-20: #151b23;        /* bgColor-muted variant */
+    --color-base-25: #010409;        /* bgColor-inset - for form fields (same as bgColor-default) */
+    --color-base-30: #b7bdc8;        /* borderColor-default */
+    --color-base-35: #3d444d;        /* bgColor-emphasis */
+    --color-base-40: #b7bdc8;        /* border emphasis */
+    --color-base-50: #7a828e;        /* faint borders/text */
+    --color-base-60: #999;           /* unused - legacy */
+    --color-base-70: #b7bdc8;        /* fgColor-muted */
+    --color-base-100: #ffffff;       /* fgColor-default - pure white for max contrast */
+
+    /* Hover states */
+    --rgb-hover: 183, 189, 200;      /* based on --color-base-30 */
+
+    /* Semantic colors - ANSI terminal colors from GitHub DHC */
+    --color-red-rgb: 255, 148, 146;
+    --color-red: #ff9492;            /* color-ansi-red / fgColor-danger */
+    --color-green-rgb: 43, 216, 83;
+    --color-green: #2bd853;          /* color-ansi-green / fgColor-success */
+    --color-orange: #ffa657;         /* legacy - keeping for compatibility */
+    --color-yellow: #f0b72f;         /* color-ansi-yellow */
+    --color-cyan: #a5d6ff;           /* legacy cyan */
+    --color-blue: #71b7ff;           /* color-ansi-blue */
+    --color-purple: #d2a8ff;         /* legacy purple */
+    --color-pink: #f778ba;           /* legacy pink */
     --color-white: #ffffff;
 
-    --color-base-00-sk: #0a0c10;
-    --color-base-00: #0d1117;
-    --color-base-10: #161b22;
-    --color-base-20: #161b22;
-    --color-base-25: #010409;
-    --color-base-30: #30363d;
-    --color-base-35: #21262d;
-    --color-base-40: #30363d;
-    --color-base-50: #6e7681;
-    --color-base-60: #999;
-    /* Unused */
-    --color-base-70: #8b949e;
-    --color-base-100: #c9d1d9;
-
-    --accent-h-theme: 210;
-    --accent-s-theme: 100%;
-    --accent-l-theme: 72%;
+    /* Accent colors - using neutral grey for high contrast */
+    --accent-h-theme: 220;           /* neutral grey-blue hue */
+    --accent-s-theme: 13%;           /* low saturation for neutral grey */
+    --accent-l-theme: 70%;           /* light grey */
     --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-    --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
-    --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
+    --color-accent: #b7bdc8;         /* borderColor-default - neutral light grey */
+    --color-accent-1: #9ea7b3;       /* slightly darker grey */
+    --color-accent-2: #d1d9e0;       /* lighter grey */
 
+    /* UI Modifiers */
     --background-secondary-alt: var(--color-base-25);
     --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
     --background-modifier-cover: rgba(10, 10, 10, 0.4);
@@ -706,7 +755,8 @@ body {
     --shadow-s: none;
     --shadow-l: none;
 
-    --inline-code-background: rgba(158, 167, 179, .4);
+    /* Code and Headers */
+    --inline-code-background: rgba(158, 167, 179, 0.4);
     --h-color-theme: var(--color-white);
     --h1-color-theme: var(--color-white);
     --h2-color-theme: var(--color-white);
@@ -714,9 +764,29 @@ body {
     --h4-color-theme: var(--color-white);
     --h5-color-theme: var(--color-white);
     --h6-color-theme: var(--color-white);
+
+    /* Buttons - GitHub DHC green primary button */
     --background-modifier-hover-alpha: 0.12;
-    --color-btn-primary-bg: #09b43a;
-    --color-btn-primary-hover-bg: #2ea043;
+    --color-btn-primary-bg: #09b43a;        /* GitHub DHC success/primary button */
+    --color-btn-primary-hover-bg: #0c8e33;  /* GitHub DHC success button hover */
+
+    /* Secondary buttons - Override for dark theme */
+    --interactive-normal: #3d444d;          /* bgColor-neutral-muted - secondary button background */
+    --interactive-hover: #6e7781;           /* Lighter grey for hover - GitHub DHC hover color */
+
+    /* Links - Override to use blue instead of grey accent */
+    --link-color: #71b7ff;                  /* GitHub DHC blue for links */
+    --link-color-hover: #a5d6ff;            /* Lighter blue on hover */
+    --link-external-color: #71b7ff;
+    --link-external-color-hover: #a5d6ff;
+    --link-unresolved-color: #71b7ff;
+    --text-accent: #71b7ff;                 /* Override text-accent for links */
+    --text-accent-hover: #a5d6ff;
+
+    /* Toggle switches - different colors for on/off states */
+    --toggle-background-color-off: var(--interactive-normal);  /* Grey when off */
+    --toggle-background-color: var(--interactive-accent);      /* Blue when on */
+    --toggle-border-color: var(--background-modifier-border);
 
     /* Kanban colors */
     --kanban-background: var(--background-primary);
@@ -727,51 +797,81 @@ body {
     --kanban-options-btn: var(--color-base-30);
 }
 
+/*
+================================================================================
+  MOBILE OVERRIDES - Dark Theme
+
+  Adjustments for mobile devices to improve touch interactions and readability
+================================================================================
+*/
+
 .is-mobile.theme-dark {
-    --color-base-00: #0d1117;
-    --color-base-10: #161b22;
-    --color-base-20: #161b22;
+    --color-base-00: #010409;        /* Match DHC bgColor-default */
+    --color-base-10: #151b23;        /* Match DHC bgColor-muted */
+    --color-base-20: #151b23;        /* Match DHC bgColor-muted */
     --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
     --modal-background: var(--background-secondary);
     --search-result-background: var(--background-secondary);
-    --background-modifier-form-field: var(--background-modifier-border);
+    --background-modifier-form-field: var(--color-base-25);  /* Use base-25 (black) not border color */
     --background-modifier-cover: rgba(0, 0, 0, 0.5);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.15);
     --settings-home-background: var(--background-primary);
 }
+
+/*
+================================================================================
+  LIGHT THEME - GitHub Light Default
+
+  Official colors from @primer/primitives/dist/css/functional/themes/light.css
+
+  Key characteristics:
+  - Clean white background (#ffffff)
+  - Dark text (#1f2328) for readability
+  - Subtle gray borders (#d1d9e0)
+  - Professional, accessible color palette
+================================================================================
+*/
 
 .theme-light {
     color-scheme: light;
     --highlight-mix-blend-mode: darken;
     --mono-rgb-0: 255, 255, 255;
     --mono-rgb-100: 0, 0, 0;
-    --rgb-hover: 208, 215, 222;
-    --color-red-rgb: 228, 55, 75;
-    --color-red: #cf222e;
-    --color-green-rgb: 12, 181, 79;
-    --color-green: #0cb54f;
-    --color-orange: #d96c00;
-    --color-yellow: #BD8E37;
-    --color-cyan: #2db7b5;
-    --color-blue: #086DDD;
-    --color-purple: #876be0;
-    --color-pink: #C32B74;
 
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #f6f8fa;
-    --color-base-20: #f6f8fa;
-    --color-base-25: #f6f8fa;
-    --color-base-30: #d0d7de;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #6e7781;
-    --color-base-60: #707070;
-    /* Unused */
-    --color-base-70: #57606a;
-    --color-base-100: #24292f;
+    /* GitHub Light Default Colors - Official Primer Primitives */
+    /* Source: @primer/primitives/dist/css/functional/themes/light.css */
 
-    --accent-h-theme: 212;
+    /* Backgrounds */
+    --color-base-00: #ffffff;        /* bgColor-default - white canvas */
+    --color-base-05: #fcfcfc;        /* subtle variant */
+    --color-base-10: #f6f8fa;        /* bgColor-muted - light gray */
+    --color-base-20: #f6f8fa;        /* bgColor-muted variant */
+    --color-base-25: #f6f8fa;        /* bgColor-inset - for form fields */
+    --color-base-30: #d1d9e0;        /* borderColor-default */
+    --color-base-35: #afb8c1;        /* border emphasis */
+    --color-base-40: #8c959f;        /* mid-tone gray */
+    --color-base-50: #6e7781;        /* subtle text/borders */
+    --color-base-60: #59636e;        /* bgColor-neutral-emphasis */
+    --color-base-70: #424a53;        /* darker muted text */
+    --color-base-100: #1f2328;       /* fgColor-default - primary text */
+
+    /* Hover states */
+    --rgb-hover: 208, 215, 222;      /* based on --color-base-30 */
+
+    /* Semantic colors - from GitHub Light Default */
+    --color-red-rgb: 207, 34, 46;
+    --color-red: #cf222e;            /* fgColor-danger */
+    --color-green-rgb: 26, 127, 55;
+    --color-green: #1a7f37;          /* fgColor-success */
+    --color-orange: #bc4c00;         /* severe emphasis */
+    --color-yellow: #9a6700;         /* attention emphasis */
+    --color-cyan: #0969da;           /* accent blue */
+    --color-blue: #0969da;           /* fgColor-accent */
+    --color-purple: #8250df;         /* done emphasis */
+    --color-pink: #bf3989;           /* sponsors */
+
+    /* Accent colors - GitHub Light Default blue */
+    --accent-h-theme: 212;           /* blue accent */
     --accent-s-theme: 92%;
     --accent-l-theme: 45%;
     --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
@@ -779,38 +879,75 @@ body {
     --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
     --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
 
+    /* UI Modifiers */
     --background-secondary-alt: var(--color-base-05);
     --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
     --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-    --input-shadow: inset 0 0 0 1px #1b1f2426;
-    --input-shadow-hover: inset 0 0 0 1px #1b1f2426;
+    --input-shadow: inset 0 0 0 1px rgba(27, 31, 36, 0.15);
+    --input-shadow-hover: inset 0 0 0 1px rgba(27, 31, 36, 0.15);
     --shadow-s: none;
     --shadow-l: none;
 
-    --inline-code-background: rgba(158, 167, 179, 0.1);
-    --h-color-theme: var(--text-normal);
-    --h1-color-theme: var(--text-normal);
-    --h2-color-theme: var(--text-normal);
-    --h3-color-theme: var(--text-normal);
-    --h4-color-theme: var(--text-normal);
-    --h5-color-theme: var(--text-normal);
-    --h6-color-theme: var(--text-normal);
-    --background-modifier-hover-alpha: 0.32;
-    --color-btn-primary-bg: #2da44f;
-    --color-btn-primary-hover-bg: #2c964a;
+    /* Code and Headers */
+    --inline-code-background: rgba(175, 184, 193, 0.2);
+    --h-color-theme: var(--color-base-100);
+    --h1-color-theme: var(--color-base-100);
+    --h2-color-theme: var(--color-base-100);
+    --h3-color-theme: var(--color-base-100);
+    --h4-color-theme: var(--color-base-100);
+    --h5-color-theme: var(--color-base-100);
+    --h6-color-theme: var(--color-base-100);
+
+    /* Buttons - GitHub Light Default green primary */
+    --background-modifier-hover-alpha: 0.1;
+    --color-btn-primary-bg: #1f883d;        /* GitHub Light success button */
+    --color-btn-primary-hover-bg: #1a7f37;  /* GitHub Light success hover */
+
+    /* Secondary buttons - Override for light theme */
+    --interactive-normal: #f6f8fa;          /* Light grey secondary button background */
+    --interactive-hover: #d1d9e0;           /* Slightly darker grey for hover */
+
+    /* Links - Override to use blue instead of grey accent */
+    --link-color: #0969da;                  /* GitHub Light blue for links */
+    --link-color-hover: #0550ae;            /* Darker blue on hover */
+    --link-external-color: #0969da;
+    --link-external-color-hover: #0550ae;
+    --link-unresolved-color: #0969da;
+    --text-accent: #0969da;                 /* Override text-accent for links */
+    --text-accent-hover: #0550ae;
+
+    /* Toggle switches - different colors for on/off states */
+    --toggle-background-color-off: var(--interactive-normal);  /* Light grey when off */
+    --toggle-background-color: var(--interactive-accent);      /* Blue when on */
+    --toggle-border-color: var(--background-modifier-border);
 
     /* Kanban colors */
     --kanban-background: var(--background-primary);
     --kanban-lane-background: var(--background-primary-alt);
     --kanban-item-background: var(--background-primary);
     --kanban-lane-border: #d8dee4;
-    --kanban-lane-count: #aeb8c133;
+    --kanban-lane-count: rgba(175, 184, 193, 0.2);
     --kanban-options-btn: var(--background-primary-alt);
 }
 
+/*
+================================================================================
+  COLORBLIND VARIANTS
 
+  Accessible color palettes for users with color vision deficiencies.
+  Based on GitHub's colorblind-friendly themes.
+
+  Variants:
+  - Protanopia & Deuteranopia (red-green colorblindness)
+  - Tritanopia (blue-yellow colorblindness)
+
+  Note: These override the semantic colors while maintaining contrast ratios
+================================================================================
+*/
+
+/* Protanopia & Deuteranopia - Red-Green Colorblindness */
 body.colorblind_protan-deutan.theme-dark {
     --color-red-rgb: 253, 172, 84;
     --color-red: #fdac54;
@@ -833,6 +970,7 @@ body.colorblind_protan-deutan.theme-light {
     --color-btn-primary-hover-bg: #0969da;
 }
 
+/* Tritanopia - Blue-Yellow Colorblindness */
 body.colorblind_tritan.theme-dark {
     --color-green-rgb: 165, 214, 255;
     --color-green: #a5d6ff;
@@ -857,7 +995,19 @@ body.colorblind_tritan.theme-light {
     --color-btn-primary-hover-bg: #0969da;
 }
 
-/* Tables */
+/*
+================================================================================
+  COMPONENT STYLES
+
+  Custom styling for Obsidian components and markdown elements to match
+  GitHub's rendering. Organized by component type.
+================================================================================
+*/
+
+/* ─────────────────────────────────────────────────────────────────────────
+   TABLES
+   ───────────────────────────────────────────────────────────────────────── */
+
 .markdown-rendered td,
 .markdown-rendered th {
     padding: var(--size-2-3) var(--size-4-3);
@@ -871,42 +1021,189 @@ body.colorblind_tritan.theme-light {
     background-color: var(--background-secondary);
 }
 
-/* Buttons */
-button {
+/* ─────────────────────────────────────────────────────────────────────────
+   BUTTONS
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Base styles for all button types */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
     transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--interactive-normal);
+    color: var(--text-normal);
 }
 
-button:hover {
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
     cursor: var(--cursor-link);
+    background-color: var(--interactive-hover);
+    border-color: var(--background-modifier-border-hover);
+    box-shadow: 0 0 0 2px var(--background-modifier-border);
 }
 
-button.mod-cta {
+/* Primary buttons (green) */
+button.mod-cta,
+input[type="submit"].mod-cta {
     background-color: var(--color-btn-primary-bg);
     color: var(--text-on-accent);
+    border: 1px solid var(--color-btn-primary-bg);
 }
 
-button.mod-cta:hover {
+button.mod-cta:hover,
+input[type="submit"].mod-cta:hover {
     background-color: var(--color-btn-primary-hover-bg);
+    border-color: var(--color-btn-primary-hover-bg);
 }
 
-/* Callout */
-body.callout-on {
-    --callout-radius: 0;
-    --callout-border-width: 0;
-    --callout-padding: 0 1em;
+/* Secondary buttons - explicit styling for non-cta buttons */
+button:not(.mod-cta):not(.mod-warning):not(.mod-destructive),
+input[type="button"]:not(.mod-cta),
+input[type="reset"]:not(.mod-cta) {
+    background-color: var(--interactive-normal);
+    color: var(--text-normal);
+    border: 1px solid var(--background-modifier-border);
 }
 
+button:not(.mod-cta):not(.mod-warning):not(.mod-destructive):hover,
+input[type="button"]:not(.mod-cta):hover,
+input[type="reset"]:not(.mod-cta):hover {
+    background-color: var(--interactive-hover);
+    border-color: var(--background-modifier-border-hover);
+    box-shadow: 0 0 0 2px var(--background-modifier-border);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   NAVIGATION ITEMS - Settings sidebar, etc.
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Base styles for navigation items */
+.vertical-tab-nav-item {
+    border-left: 6px solid transparent;  /* Wider blue bar (was 3px, now 6px) */
+    margin-left: 4px;  /* Space before the blue bar */
+    padding-left: 6px;  /* Space after the blue bar (inside the background) */
+    font-weight: var(--font-semibold);  /* Bold text for all nav items */
+    transition: background-color 80ms ease-in-out, border-color 80ms ease-in-out;
+}
+
+/* Selected/active navigation item - blue left border */
+.vertical-tab-nav-item.is-active {
+    border-left-color: var(--text-accent) !important;
+    background-color: var(--interactive-normal) !important;  /* Darker background - same as buttons */
+    color: var(--text-normal) !important;  /* Keep text white */
+}
+
+/* Hover state for navigation items - lighter background */
+.vertical-tab-nav-item:hover {
+    background-color: var(--interactive-hover) !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   TOGGLE SWITCHES - On/Off states
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Toggle switch off state - grey background */
+.checkbox-container {
+    background-color: var(--interactive-normal) !important;
+}
+
+/* Toggle switch on state - blue background */
+.checkbox-container.is-enabled {
+    background-color: #71b7ff !important;  /* GitHub DHC blue - direct color */
+}
+
+/* Alternative approach using the input checked state */
+.checkbox-container:has(input[type="checkbox"]:checked) {
+    background-color: #71b7ff !important;  /* GitHub DHC blue - direct color */
+}
+
+/* Keep the toggle thumb white */
+.checkbox-container::after {
+    background-color: white !important;
+}
+
+/* Light theme - use darker blue for toggles */
+.theme-light .checkbox-container.is-enabled,
+.theme-light .checkbox-container:has(input[type="checkbox"]:checked) {
+    background-color: #0969da !important;  /* GitHub Light blue */
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   CALLOUTS - GitHub-style alerts
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Base callout styling - GitHub style */
+.callout {
+    border: none;  /* No grey border */
+    border-left: 4px solid var(--callout-color);  /* Thick colored left border */
+    background-color: var(--background-primary) !important;
+    padding: 11px 16px;  /* Reduced from 16px to ~11px vertically (30% reduction) */
+    margin: 11px 0;  /* Reduced from 16px to ~11px (30% reduction) */
+    border-radius: 0;  /* No rounded corners - sharp edges */
+}
+
+/* Title and icon use the callout color */
+.callout-title {
+    color: var(--callout-color) !important;
+    font-weight: var(--font-semibold);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;  /* Reduced from 8px to 6px */
+}
+
+.callout-icon {
+    color: var(--callout-color) !important;
+}
+
+/* Content text stays white */
+.callout-content {
+    color: var(--text-normal) !important;
+}
+
+/* Specific callout types with BRIGHT GitHub colors */
+.callout[data-callout="note"],
+.callout[data-callout="info"] {
+    --callout-color: #71b7ff;  /* Bright blue */
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="success"] {
+    --callout-color: #2bd853;  /* Bright green */
+}
+
+.callout[data-callout="important"] {
+    --callout-color: #d2a8ff;  /* Bright purple */
+}
+
+.callout[data-callout="warning"] {
+    --callout-color: #f0b72f;  /* Bright orange/yellow */
+}
+
+.callout[data-callout="caution"],
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+    --callout-color: #ff9492;  /* Bright red */
+}
+
+/* Legacy support for callout-on setting */
 body.callout-on .callout {
-    border-left: 0.25em solid var(--color-base-30);
-    background-color: transparent;
-    color: var(--text-muted);
+    border-left: 4px solid var(--callout-color);
+    background-color: var(--background-primary) !important;
 }
 
 body.callout-on .callout-content p {
     margin: 0.1em 0;
 }
 
-/* Headers */
+/* ─────────────────────────────────────────────────────────────────────────
+   HEADERS
+   ───────────────────────────────────────────────────────────────────────── */
+
 body.headers-one-color {
     --h1-color: var(--h-color-theme);
     --h2-color: var(--h-color-theme);
@@ -916,7 +1213,14 @@ body.headers-one-color {
     --h6-color: var(--h-color-theme);
 }
 
-/* Kanban-common */
+/* ─────────────────────────────────────────────────────────────────────────
+   KANBAN PLUGIN INTEGRATION
+
+   Styles for the Kanban plugin to match GitHub Projects aesthetic.
+   Multiple variants available through Style Settings.
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Common Kanban Styles */
 .kanban-plugin {
     --lane-width: 348px;
 }
@@ -925,13 +1229,13 @@ body.theme-light .kanban-plugin__lane-items>div {
     box-shadow: rgb(140 149 159 / 15%) 0px 3px 6px;
 }
 
-/* Kanban-same-height-cards */
+/* Kanban Variant: Same Height Cards */
 body.kanban-same-height-cards .kanban-plugin__item-content-wrapper,
 body.kanban-same-height-cards .kanban-plugin__item-title-wrapper {
     min-height: 68px;
 }
 
-/* Kanban-full-height-column */
+/* Kanban Variant: Full Height Columns */
 body.kanban-full-height-column button.kanban-plugin__new-item-button {
     align-self: flex-end;
 }
@@ -945,7 +1249,7 @@ body.kanban-full-height-column .kanban-plugin__lane-wrapper {
     min-height: 100%;
 }
 
-/* Kanban-Minimal */
+/* Kanban Variant: Minimal Style */
 body.kanban-on .kanban-plugin {
     background-color: var(--kanban-background);
 }
@@ -1014,8 +1318,7 @@ body.kanban-on .kanban-plugin__item-prefix-button-wrapper input[type=checkbox] {
     filter: none;
 }
 
-/* Kanban-Full */
-/* Main color */
+/* Kanban Variant: Full GitHub Projects Style */
 body.kanban-full .kanban-plugin {
     background-color: var(--kanban-background);
 }
@@ -1175,7 +1478,25 @@ body.kanban-full .kanban-plugin__markdown-preview-view>div>* {
     overflow-x: unset;
 }
 
-/* fix: input borders */
+/* ─────────────────────────────────────────────────────────────────────────
+   FORM ELEMENTS - Inputs, Textareas, Selects
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Base styles for all form inputs */
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+textarea,
+select,
+.dropdown {
+    background-color: var(--background-modifier-form-field);
+    color: var(--text-normal);
+    border: 1px solid var(--background-modifier-border);
+}
+
+/* Input focus states - GitHub style border highlight */
 textarea:active,
 input[type='text']:active,
 input[type='search']:active,
@@ -1202,7 +1523,11 @@ select:focus,
     box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
 }
 
-/* inline code block */
+/* ─────────────────────────────────────────────────────────────────────────
+   CODE BLOCKS - Inline and Fenced
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Inline code styling */
 .markdown-rendered :not(pre)>code {
     background-color: var(--inline-code-background);
     padding: 0.2em 0.4em;
@@ -1211,85 +1536,81 @@ select:focus,
     font-size: 85%;
 }
 
+/* ─────────────────────────────────────────────────────────────────────────
+   MARKDOWN HEADERS - GitHub-style with underlines
+   ───────────────────────────────────────────────────────────────────────── */
+
 h1,
 .cm-header-1 {
     display: block;
     padding-bottom: .3em;
-    border-bottom: 1px solid #7a828e;
-    margin-top: -24px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid var(--color-base-50);
+    margin-top: 24px;
+    margin-bottom: 16px;
 }
 
 h2,
 .cm-header-2 {
-    /* box-sizing: border-box; */
-    /* color: #f0f3f6; - this is the same as the main font color */
     display: block;
     padding-bottom: .3em;
-    border-bottom: 1px solid #7a828e;
-    margin-top: -24px;
-    margin-bottom: 10px;
-    /* margin-block-start: 0.83em; */
-    /* margin-block-end: 0.83em; */
-    /* margin-inline-start: 0px; */
-    /* margin-inline-end: 0px; */
-    /* font-weight: var(600); */
-    /* line-height 1.25; */
+    border-bottom: 1px solid var(--color-base-50);
+    margin-top: 24px;
+    margin-bottom: 16px;
 }
 
 h3,
 .cm-header-3 {
     display: block;
     padding-bottom: .3em;
-    /* border-bottom: 1px solid #7a828e; */
-    margin-top: -24px;
-    margin-bottom: 10px;
+    margin-top: 24px;
+    margin-bottom: 16px;
 }
 
 h4,
 .cm-header-4 {
     display: block;
     padding-bottom: .3em;
-    /* border-bottom: 1px solid #7a828e; */
-    margin-top: -24px;
-    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 h5,
 .cm-header-5 {
     display: block;
     padding-bottom: .3em;
-    /* border-bottom: 1px solid #7a828e; */
-    margin-top: -24px;
-    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 h6,
 .cm-header-6 {
     display: block;
     padding-bottom: .3em;
-    /* border-bottom: 1px solid #7a828e; */
-    margin-top: -24px;
-    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .inline-title {
     display: block;
     padding-bottom: .3em;
-    border-bottom: 1px solid #7a828e;
-    margin-top: -24px;
-    margin-bottom: 8px !important;
+    border-bottom: 1px solid var(--color-base-50);
+    margin-top: 0;
+    margin-bottom: 16px !important;
     margin-right: 0 !important;
     min-width: 0 !important;
-    color: #f0f3f6;
+    color: var(--text-normal);
     font-weight: 600;
     line-height: 1.125;
-    font-size: 14px;
 }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   DOCUMENT CONTAINER - GitHub README-style bordered container
+   ───────────────────────────────────────────────────────────────────────── */
 
 .markdown-preview-sizer,
 .cm-sizer {
-    border: 1px solid #7a828e;
     padding: 32px;
+    max-width: var(--file-line-width);
+    border: 1px solid var(--color-base-50);
     border-radius: 6px;
 }
