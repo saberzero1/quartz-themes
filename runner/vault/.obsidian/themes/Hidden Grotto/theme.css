@@ -1,7 +1,5 @@
-/* V1.4.0*/
-/*Clobbopus*/
-body, 
-body.preset-clobbopus {
+/*==== V 1.5.0 ====*/
+body {
     --accent-h: 16;
     --accent-s: 82%;
     --accent-l: 58%;
@@ -24,11 +22,7 @@ body.preset-clobbopus {
     --text-muted: var(--grotto-night-2);
     --text-faint: var(--grotto-night-3);
     --grotto-background-tertiary: var(--grotto-day-2);
-    --interactive-normal: var(--text-normal);
-    --interactive-hover: var(--text-faint);
-    --text-accent: var(--grotto-accent-1);
     --background-modifier-box-shadow: none;
-    --background-modifier-hover: transparent;
     --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
     --input-shadow: none;
     --input-shadow-hover: none;
@@ -37,8 +31,7 @@ body.preset-clobbopus {
     --pdf-shadow: none;
     --pdf-thumbnail-shadow: none;
 }
-.theme-dark, 
-.is-mobile.theme-dark {
+.theme-dark, .is-mobile.theme-dark {
     --color-accent: var(--grotto-accent-1);
     --background-primary: var(--grotto-night-1);
     --background-primary-alt: var(--background-primary);
@@ -48,11 +41,7 @@ body.preset-clobbopus {
     --text-muted: var(--grotto-day-2);
     --text-faint: var(--grotto-day-3);
     --grotto-background-tertiary: var(--grotto-night-2);
-    --interactive-normal: var(--text-normal);
-    --interactive-hover: var(--text-faint);
-    --text-accent: var(--grotto-accent-1);
     --background-modifier-box-shadow: none;
-    --background-modifier-hover: transparent;
     --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
     --input-shadow: none;
     --input-shadow-hover: none;
@@ -62,208 +51,191 @@ body.preset-clobbopus {
     --pdf-thumbnail-shadow: none;
 }
 body {
-    /*Privacy*/
+    /*==== COMMON ====*/
+    --interactive-normal: var(--text-normal);
+    --interactive-hover: var(--text-faint);
+    --text-accent: var(--grotto-accent-1);
+    --background-modifier-hover: transparent;
+    --background-modifier-border: var(--text-faint);
+    --background-modifier-border-focus: var(--text-normal);
+    /*==== BLUR ====*/
     --grotto-blur: 0px;
     filter: blur(var(--grotto-blur));
+    /*==== REDACT ====*/
     --grotto-redacted: 'Flow Circular';
     --font-interface: var(--font-interface-override);
     --font-text: var(--font-text-override);
     --font-print: var(--font-print-override);
     --font-monospace: var(--font-monospace-override);
-    /*Tags*/
+    /*==== TAGS ====*/
     --grotto-tag-color: var(--background-primary);
     --grotto-tag-background-color: var(--text-normal);
-    --grotto-tag-pointer-events: none;
+    --grotto-tag-border-color: transparent;
+    --grotto-tag-border-width: 1.5px;
+    --grotto-tag-border-radius: 0rem;
     --grotto-tag-size: 0.8rem;
-    --grotto-tag-radius: 0rem;
-    --tag-radius: var(--grotto-tag-radius);
+    --grotto-tag-weight: 500;
+    --grotto-tag-height: 2rem;
+    --grotto-tag-pointer-events: none;
+    --tag-border-width: var(--grotto-tag-border-width);
+    --tag-border-color: var(--grotto-tag-border-color);
+    --tag-radius: var(--grotto-tag-border-radius);
     --tag-size: var(--grotto-tag-size);
     --tag-padding-x: 0.4rem;
-    --tag-padding-y: 0.2rem;
-    /*Text*/
-    --grotto-font-weight: 400;/*Plugin*/
+    --tag-padding-y: 0.1rem;
+    /*==== TEXT ====*/
+    --grotto-font-weight: 400;
     font-weight: var(--grotto-font-weight);
     --text-error: hsl(0, 50%, 50%);
     --text-warning: hsl(20, 50%, 50%);
     --text-success: hsl(100, 50%, 50%);
-    --file-line-width: 700px;/*Plugin*/
-    /*Bold*/
+    /*==== TEXT BOLD ====*/
     --grotto-bold-color: var(--grotto-accent-1);
     --grotto-bold-font-weight: 800;
-    /*Italic*/
+    /*==== TEXT ITALIC ====*/
     --grotto-italic-color: var(--grotto-accent-1);
     --grotto-italic-font-weight: 400;
-    /*Strikethrough*/
+    /*==== TEXT STRIKETHROUGH ====*/
     --grotto-strikethrough-color: var(--text-normal);
-    /*Comment*/
+    /*==== TEXT COMMENTED ====*/
     --grotto-comment-color: var(--grotto-accent-1);
-    /*Links*/
+    /*==== TEXT LINKED ====*/
     --grotto-link-color: var(--grotto-accent-1);
     --grotto-link-weight: 400;
-    --link-external-color: var(--grotto-link-color);
-    /*Headers*/
+    --link-unresolved-color: inherit;
+    /*==== HEADERS ====*/
     --grotto-header-size: 1.5rem;
     --grotto-header-line-height: 2rem;
     --grotto-header-font-weight: 400;
-    --grotto-header-radius: 0rem;
+    --grotto-header-border-radius: 0rem;
     --grotto-header-color-1: var(--text-normal);
-    --grotto-header-background-color-1: var(--grotto-accent-1);
-    --grotto-header-border-color-1: var(--text-normal);
     --grotto-header-color-2: var(--text-normal);
-    --grotto-header-background-color-2: var(--grotto-accent-1);
-    --grotto-header-border-color-2: var(--text-normal);
     --grotto-header-color-3: var(--background-primary);
-    --grotto-header-background-color-3: var(--text-normal);
-    --grotto-header-border-color-3: var(--text-normal);
     --grotto-header-color-4: var(--text-normal);
-    --grotto-header-background-color-4: transparent;
-    --grotto-header-border-color-4: var(--text-normal);
     --grotto-header-color-5: var(--text-normal);
-    --grotto-header-background-color-5: transparent;
-    --grotto-header-border-color-5: var(--grotto-accent-1);
     --grotto-header-color-6: var(--text-normal);
-    --grotto-header-background-color-6: transparent;
+    --grotto-header-border-color-1: var(--text-normal);
+    --grotto-header-border-color-2: var(--text-normal);
+    --grotto-header-border-color-3: var(--text-normal);
+    --grotto-header-border-color-4: var(--text-normal);
+    --grotto-header-border-color-5: var(--grotto-accent-1);
     --grotto-header-border-color-6: transparent;
-    /*Buttons*/
-    --grotto-button-color: var(--text-normal);
+    --grotto-header-border-radius-1: var(--grotto-header-border-radius);
+    --grotto-header-border-radius-2: var(--grotto-header-border-radius);
+    --grotto-header-border-radius-3: var(--grotto-header-border-radius);
+    --grotto-header-border-radius-4: var(--grotto-header-border-radius);
+    --grotto-header-border-radius-5: var(--grotto-header-border-radius);
+    --grotto-header-border-radius-6: var(--grotto-header-border-radius);
+    --grotto-header-background-color-1: var(--grotto-accent-1);
+    --grotto-header-background-color-2: var(--grotto-accent-1);
+    --grotto-header-background-color-3: var(--text-normal);
+    --grotto-header-background-color-4: transparent;
+    --grotto-header-background-color-5: transparent;
+    --grotto-header-background-color-6: transparent;
+    /*==== BUTTONS ====*/
+    --grotto-button-color: var(--grotto-day-1);
     --grotto-button-background-color: var(--grotto-accent-1);
     --grotto-button-border-color: var(--text-normal);
     --grotto-button-radius: 0rem;
-    --grotto-button-error-background: hsl(0, 0%, 16%);
-    --grotto-button-error-background-hover: hsl(0, 0%, 20%);
-    /*Checkboxes*/
+    --grotto-button-error-color: var(--grotto-day-1);
+    --grotto-button-error-background: var(--grotto-night-1);
+    --grotto-button-error-background-hover: var(--text-error);
+    /*==== CHECKBOXES ====*/
     --grotto-checkbox-border-color: var(--text-normal);
     --grotto-checkbox-radius: 0rem;
     --checkbox-marker-color: transparent;
-    /*Lists*/
+    /*==== BLOCKQUOTES ====*/
+    --blockquote-color: var(--text-normal);
+    --blockquote-background-color: var(--background-primary);
+    --blockquote-border-color: var(--text-normal);
+    --blockquote-border-thickness: 2px;
+    /*==== CALLOUTS ====*/
+    --grotto-callout-color: var(--text-normal);
+    --grotto-callout-background-color: var(--background-primary);
+    --grotto-callout-border-color: var(--text-normal);
+    --grotto-callout-radius: 0rem;
+    --grotto-callout-padding: 8px 16px;
+    --grotto-callout-icon: none;
+    --grotto-callout-title-size: var(--grotto-header-size);
+    --callout-default: var(--grotto-callout-color);
+    /*==== LISTS ====*/
+    --indentation-guide-editing-indent: 1.1rem;
     --list-marker-color: var(--text-normal);
     --list-indent: calc(var(--indent-unit) * var(--indent-size));
-    --list-indent-editing: 0.8rem;
-    --list-indent-source: 0;
+    --list-indent-editing: 1rem;
+    --list-indent-source: 0rem;
     --list-bullet-radius: 0rem;
     --list-bullet-size: 0.4rem;
     --list-spacing: 0.08rem;
-    /*Blockquotes*/
-    --blockquote-border-thickness: 2px;
-    --blockquote-color: var(--text-normal);
-    --blockquote-border-color: var(--text-normal);
-    --blockquote-background-color: var(--background-primary);
-    --grotto-blockquote-style: normal;
-    --grotto-blockquote-alignment: start;
-    /*Callouts*/
-    --grotto-callout-color: var(--text-normal);/*Plugin*/
-    --grotto-callout-background-color: var(--background-primary);/*Plugin*/
-    --grotto-callout-border-color: var(--text-normal);/*Plugin*/
-    --grotto-callout-padding: 8px 16px;
-    --grotto-callout-radius: 0rem;
-    --grotto-callout-icon: none;/*Plugin*/
-    --grotto-title-size: 1.5rem;
-    --callout-default: var(--grotto-callout-color);
-    /*Embeds*/
+    /*==== EMBEDS ====*/
     --grotto-embed-color: var(--text-normal);
     --grotto-embed-background-color: var(--background-primary);
-    --grotto-embed-title: block;
     --grotto-embed-link-color: var(--text-normal);
     --grotto-embed-link-color-hover: var(--grotto-accent-1);
     --grotto-embed-link-background-color: var(--grotto-background-tertiary);
+    --grotto-embed-title: block;
     --grotto-embed-radius: 0rem;
     --embed-max-height: 4000px;
     --embed-padding: 8px 16px;
-    /*Codes*/
+    --embed-block-shadow-hover: none;
+    /*==== CODE BLOCKS ====*/
     --grotto-code-color: var(--text-normal);
     --grotto-code-color-hover: var(--grotto-accent-1);
     --grotto-code-background-color: var(--grotto-background-tertiary);
     --grotto-code-border-color: var(--text-normal);
     --grotto-code-radius: 0rem;
     --grotto-code-weight: 800;
+    --code-border-color: var(--text-normal);
     --code-radius: var(--grotto-code-radius);
-    --code-string: hsl(120, 30%, 50%);
+    --code-important: hsl(30, 30%, 60%);
     --code-property: hsl(170, 30%, 50%);
+    --code-keyword: hsl(330, 30%, 70%);
+    --code-function: hsl(50, 30%, 45%);
+    --code-string: hsl(120, 30%, 50%);
     --code-operator: hsl(0, 30%, 60%);
     --code-value: hsl(270, 30%, 70%);
-    --code-function: hsl(50, 30%, 45%);
-    --code-keyword: hsl(330, 30%, 70%);
     --code-tag: hsl(0, 30%, 60%);
-    --code-important: hsl(30, 30%, 60%);
     --code-border-width: 1px;
-    --code-border-color: var(--text-normal);
-    /*Status Bar*/
+    /*==== STATUS BAR ====*/
     --grotto-statusbar-color: var(--background-primary);
+    --grotto-statusbar-color-hover: var(--grotto-accent-1);
     --grotto-statusbar-background-color: var(--text-normal);
     --grotto-statusbar-border-color: var(--background-primary);
-    --grotto-statusbar-radius: 0rem;
-    /*Toggles*/
+    --grotto-statusbar-border-radius: 0rem;
+    /*==== TOGGLE SWITCHES ====*/
     --grotto-toggle-color: var(--grotto-day-1);
-    --grotto-toggle-handle-border-color: var(--grotto-night-0);
     --grotto-toggle-background-color: var(--grotto-day-2);
     --grotto-toggle-background-color-hover: var(--grotto-day-3);
     --grotto-toggle-enabled-background-color: var(--grotto-accent-1);
-    /*Tooltips*/
-    --grotto-tooltip-color: var(--text-normal);
+    --grotto-toggle-handle-border-color: var(--grotto-night-0);
+    /*==== TOOLTIPS ====*/
+    --grotto-tooltip-color: var(--grotto-day-1);
     --grotto-tooltip-background-color: var(--grotto-accent-1);
     --grotto-tooltip-border-color: var(--text-normal);
     --grotto-tooltip-radius: 0rem;
-    /*Tables*/
-    --grotto-table-cell-width: fit-content;/*Plugin*/
-    --grotto-table-border-style: separate;/*Plugin*/
-    --table-background: transparent;/*Plugin*/
+    /*==== TABLES ====*/
+    --grotto-table-color: var(--text-normal);
+    --grotto-table-cell-width: fit-content;
+    --grotto-table-border-style: separate;
+    --table-background: transparent;
+    --table-text-color: var(--text-normal);
     --table-border-width: 1px;
     --table-border-color: var(--text-normal);
     --table-header-background-hover: var(--table-background);
-    --table-text-color: var(--text-normal);
     --table-add-button-border-color: var(--table-border-color);
-    --grotto-table-color: var(--text-normal);
-    /*Progress Bars*/
+    /*==== PROGRESS BAR ====*/
     --grotto-progress-color: var(--grotto-accent-1);
-    --grotto-progress-border-color: var(--background-primary);
     --grotto-progress-background-color: var(--background-primary);
+    --grotto-progress-border-color: var(--background-primary);
     --grotto-progress-radius: 0rem;
-    /*Canvas*/
+    /*==== CANVAS ====*/
     --grotto-canvas-color: var(--text-normal);
     --grotto-canvas-path-color: var(--grotto-accent-1);
     --grotto-canvas-background-color: var(--grotto-accent-1);
     --grotto-canvas-controls-background-color: var(--background-primary);
     --grotto-canvas-controls-border-color: var(--text-normal);
     --grotto-canvas-controls-radius: 0rem;
-    /*Calendar Plugin*/
-    --grotto-calendar-pointer-events: auto;
-    --grotto-calendar-color: var(--grotto-day-1);
-    --grotto-calendar-color-hover: var(--grotto-accent-1);
-    --grotto-calendar-background-color: var(--background-secondary);
-    --grotto-calendar-today-background-color: var(--grotto-day-1);
-    --grotto-calendar-border-color: var(--grotto-accent-1);
-    --grotto-calendar-year-color: var(--grotto-accent-1);
-    --grotto-calendar-dayofweek-color: var(--grotto-night-0);
-    --grotto-calendar-dayofweek-background-color: var(--grotto-accent-1);
-    --grotto-calendar-weekend-border-color: transparent;
-    --grotto-calendar-dayofweek-border-width: 0px;
-    /*Bases*/
-    --grotto-text-icon-color: var(--text-normal);
-    --grotto-text-icon-color-hover: var(--text-normal);
-    --grotto-text-icon-background-color: var(--grotto-accent-1);
-    --grotto-text-icon-border-color-hover: var(--text-normal);
-    --grotto-text-icon-radius: 0rem;
-    --grotto-bases-cards-color: var(--text-normal);
-    --grotto-bases-cards-color-hover: var(--text-normal);
-    --grotto-bases-cards-border-color: var(--text-normal);
-    --grotto-bases-cards-background-color: var(--background-primary);
-    --grotto-bases-cards-background-color-hover: var(--grotto-accent-1);
-    --grotto-bases-radius: 0rem;
-    --bases-table-row-border-width: 0px;
-    --bases-table-column-border-width: 0px;
-    --bases-header-border-width: 1px;
-    --bases-table-border-color: var(--text-normal);
-    --bases-cards-shadow: none;
-    --bases-cards-shadow-hover: none;
-    --bases-table-cell-shadow-active: none;
-    --grotto-bases-cards-label-color: var(--text-normal);
-    --grotto-bases-cards-label-color-hover: var(--text-normal);
-    /*Notices*/
-    --grotto-notice-color: var(--text-normal);
-    --grotto-notice-background-color: var(--grotto-accent-1);
-    --grotto-notice-border-color: var(--text-normal);
-    --grotto-notice-radius: 0rem;
-    /*Graphs*/
+    /*==== GRAPHS ====*/
     --grotto-graph-controls-background-color: var(--background-primary);
     --grotto-graph-controls-border-color: var(--text-normal);
     --grotto-graph-controls-radius: 0rem;
@@ -275,31 +247,76 @@ body {
     --graph-node: var(--grotto-accent-1);
     --graph-node-tag: var(--grotto-night-3);
     --graph-node-attachment: var(--grotto-day-3);
-    /*Suggestions*/
+    /*==== NOTICES ====*/
+    --grotto-notice-color: var(--grotto-day-1);
+    --grotto-notice-background-color: var(--grotto-accent-1);
+    --grotto-notice-border-color: var(--text-normal);
+    --grotto-notice-radius: 0rem;
+    /*==== CALENDAR PLUGIN ====*/
+    --grotto-calendar-pointer-events: auto;
+    --grotto-calendar-color: var(--grotto-day-1);
+    --grotto-calendar-color-hover: var(--grotto-accent-1);
+    --grotto-calendar-background-color: var(--background-secondary);
+    --grotto-calendar-today-color: var(--grotto-day-1);
+    --grotto-calendar-today-background-color: var(--grotto-accent-1);
+    --grotto-calendar-border-color: var(--grotto-day-1);
+    --grotto-calendar-border-width: 1px;
+    --grotto-calendar-year-color: var(--grotto-accent-1);
+    --grotto-calendar-dayofweek-color: var(--background-secondary);
+    --grotto-calendar-dayofweek-background-color: var(--grotto-accent-1);
+    --grotto-calendar-dayofweek-border-width: 1px;
+    --grotto-calendar-weekend-border-color: var(--grotto-day-1);
+    --grotto-calendar-weekend-border-width: 1px;
+    /*==== BASES ====*/
+    --grotto-text-icon-color: var(--text-normal);
+    --grotto-text-icon-color-hover: var(--text-normal);
+    --grotto-text-icon-background-color: var(--grotto-accent-1);
+    --grotto-text-icon-border-color-hover: var(--text-normal);
+    --grotto-text-icon-radius: 0rem;
+    --grotto-bases-cards-color: var(--text-normal);
+    --grotto-bases-cards-color-hover: var(--text-normal);
+    --grotto-bases-cards-border-color: var(--text-normal);
+    --grotto-bases-cards-background-color: var(--background-primary);
+    --grotto-bases-cards-background-color-hover: var(--grotto-accent-1);
+    --grotto-bases-cards-label-color: var(--text-normal);
+    --grotto-bases-cards-label-color-hover: var(--text-normal);
+    --grotto-bases-radius: 0rem;
+    --bases-table-row-border-width: 0px;
+    --bases-table-column-border-width: 0px;
+    --bases-header-border-width: 1px;
+    --bases-table-border-color: var(--text-normal);
+    --bases-cards-shadow: none;
+    --bases-cards-shadow-hover: none;
+    --bases-table-cell-shadow-active: none;
+    --input-placeholder-color: var(--grotto-day-3);
+    /*==== SUGGESTIONS ====*/
     --grotto-suggestion-color: var(--text-normal);
-    --grotto-suggestion-color-hover: var(--text-normal);
+    --grotto-suggestion-color-hover: var(--grotto-day-1);
     --grotto-suggestion-border-color: var(--text-normal);
     --grotto-suggestion-background-color: var(--background-primary);
     --grotto-suggestion-background-color-hover: var(--grotto-accent-1);
     --grotto-suggestion-radius: 0rem;
-    /* Command Prompt */
+    /*==== COMMAND PALETTE ====*/
     --grotto-prompt-color: var(--text-normal);
     --grotto-prompt-color-hover: var(--background-primary);
     --grotto-prompt-background-color: var(--background-primary);
     --grotto-prompt-background-color-hover: var(--text-normal);
-    /*Title Bar*/
+    /*==== TITLE BAR ====*/
     --grotto-titlebar-color: var(--grotto-day-1);
     --grotto-titlebar-background-color: var(--background-secondary);
     --grotto-titlebar-background-color-hover: var(--grotto-accent-1);
-    --tab-curve: 0px;
-    --tab-outline-width: 0px;
-    --tab-radius-active: 0px;
     --grotto-tab-header-icon-color: var(--grotto-day-1);
+    --grotto-tab-header-inactive-background-color: var(--grotto-background-tertiary);
     --grotto-tab-header-border-color: var(--grotto-night-0);
     --grotto-tab-header-border-width: 0px;
     --grotto-split-border-color: var(--background-secondary);
     --grotto-resize-handle-color: var(--grotto-accent-1);
-    /*Clickable Icons*/
+    --tab-curve: 0px;
+    --tab-outline-width: 0px;
+    --tab-radius-active: 0px;
+    --tab-text-color: var(--grotto-day-1);
+    --tab-text-color-focused: var(--grotto-day-1);
+    /*==== CLICKABLE ICONS ====*/
     --grotto-icon-color: var(--text-normal);
     --grotto-icon-color-hover: var(--grotto-accent-1);
     --icon-xs-stroke-width: 1.25px;
@@ -310,59 +327,61 @@ body {
     --icon-color-focused: var(--grotto-accent-1);
     --icon-color-hover: var(--grotto-accent-1);
     --icon-opacity: 1;
-    /*Paragraphs*/
+    /*==== PARAGRAPH ====*/
     --p-spacing: 0rem;
-    /*Dropdowns*/
+    --file-line-width: 700px;
+    /*==== DROPDOWNS ====*/
     --grotto-dropdown-color: var(--text-normal);
     --grotto-dropdown-background-color: var(--grotto-accent-1);
     --grotto-dropdown-border-color: var(--text-normal);
     --grotto-dropdown-radius: 0rem;
-    /*Sliders*/
-    --grotto-slider-border-color: var(--grotto-night-0);
-    --grotto-slider-background-color: var(--grotto-day-1);
-    /*Scrollbars*/
+    /*==== SCROLL BAR ====*/
     --scrollbar-width: 12px;
     --scrollbar-radius: 0px;
     --scrollbar-bg: var(--grotto-accent-1);
     --scrollbar-thumb-bg: var(--grotto-accent-1);
     --scrollbar-active-thumb-bg: var(--grotto-accent-1);
     --scrollbar-border-width: 3px;
-    /*Mobile Quick Actions*/
+    /*==== MOBILE QUICK ACTIONS ====*/
     --grotto-pull-color: var(--text-normal);
     --grotto-pull-border-color: var(--text-normal);
     --grotto-pull-background-color: var(--grotto-accent-1);
     --grotto-pull-radius: 0rem;
-    /*Mobile Navigation Bar*/
+    /*==== MOBILE NAVIGATION BAR ====*/
     --grotto-navbar-color: var(--background-primary);
     --grotto-navbar-background-color: var(--text-normal);
     --grotto-navbar-border-color: var(--background-primary);
     --grotto-navbar-radius: 0rem;
     --grotto-navbar-new-tab: none;
-    /*Mobile Tab Switcher*/
+    /*==== MOBILE TAB SWITCHER ====*/
     --grotto-tab-switcher-color: var(--grotto-day-1);
     --tab-switcher-menubar-background: var(--background-secondary);
     --tab-switcher-background: var(--background-secondary);
     --tab-switcher-preview-radius: 0rem;
     --tab-switcher-preview-background-shadow: none;
     --tab-switcher-preview-shadow: none;
-    /*Mobile Toolbar*/
+    /*==== MOBILE TOOLBAR ====*/
     --grotto-toolbar-rows: 2;
     --grotto-toolbar-color: var(--background-primary);
     --grotto-toolbar-background-color: var(--text-normal);
     --grotto-toolbar-border-color: var(--background-primary);
     --grotto-toolbar-radius: 0rem;
-    /*System Status*/
+    /*==== MOBILE SYSTEM STATUS BAR ====*/
     --grotto-system-status-color: var(--background-primary);
-    /*Radius*/
+    /*==== RADIUS ====*/
     --input-radius: 0px;
     --radius-s: 0px;
     --radius-m: 0px;
     --radius-l: 0px;
     --radius-xl: 0px;
-    /*Selection*/
+    /*==== SELECTION ====*/
     --grotto-selection-color: var(--text-normal);
     --grotto-selection-background-color: var(--background-primary);
-    /*Navigate Files*/
+    /*==== MOBILE DRAWER HEADER ====*/
+    --grotto-mobile-drawer-header-color: var(--grotto-day-1);
+    --grotto-mobile-drawer-header-background-color: var(--background-secondary);
+    --grotto-mobile-drawer-header-active-background-color: var(--grotto-day-1);
+    /*==== FILE NAVIGATION ====*/
     --grotto-nav-tag-color: var(--grotto-night-0);
     --grotto-nav-tag-background-color: var(--grotto-day-1);
     --grotto-nav-radius: 0rem;
@@ -371,32 +390,27 @@ body {
     --grotto-nav-title-color-active: var(--grotto-day-1);
     --grotto-nav-title-background-color-active: var(--grotto-accent-1);
     --grotto-nav-title-border-color: var(--grotto-day-1);
+    --grotto-rename-color: var(--grotto-night-1);
+    --grotto-rename-background-color: var(--grotto-day-1);
     --divider-width: 0px;
     --border-width: 0px;
     --nav-indentation-guide-width: 0px;
+    --nav-tag-color-active: var(--grotto-nav-tag-color);
     --vault-profile-color: var(--grotto-nav-title-color);
-    --grotto-rename-color: var(--grotto-night-1);
-    --grotto-rename-background-color: var(--grotto-day-1);
-    /*Menus*/
+    /*==== MENUS ====*/
     --grotto-menu-color: var(--text-normal);
     --grotto-menu-color-active: var(--text-normal);
     --grotto-menu-background-color: var(--background-primary);
     --grotto-menu-background-color-active: var(--grotto-accent-1);
     --grotto-menu-border-color: var(--text-normal);
-    /*Miscellaneous*/
-    --background-modifier-hover: transparent;
-    --background-modifier-border: var(--text-faint);
-    --background-modifier-border-focus: var(--text-normal);
-    --tab-text-color-focused: var(--grotto-day-1);
-    --tab-text-color: var(--grotto-day-1);
-    /*Search Suggestions*/
+    /*==== SEARCH SUGGESTIONS ====*/
     --grotto-search-suggestion-color: var(--grotto-day-1);
     --grotto-search-suggestion-background-color: var(--background-secondary);
     --grotto-search-suggestion-background-color-hover: var(--grotto-accent-1);
     --grotto-search-suggestion-border-color: var(--grotto-day-1);
     --grotto-search-suggestion-icon-color: var(--grotto-night-2);
     --grotto-search-suggestion-icon-color-hover: var(--grotto-accent-1);
-    /*Settings*/
+    /*==== SETTINGS ====*/
     --grotto-settings-color: var(--grotto-day-1);
     --grotto-settings-color-hover: var(--grotto-accent-1);
     --grotto-settings-color-active: var(--grotto-day-1);
@@ -404,9 +418,9 @@ body {
     --grotto-settings-background-color: var(--grotto-night-0);
     --grotto-settings-background-color-hover: var(--grotto-night-0);
     --grotto-settings-background-color-active: var(--grotto-accent-1);
-    /*Modals*/
+    /*==== MODALS ====*/
     --grotto-modal-border-color: var(--text-normal);
-    /*Properties*/
+    /*==== PROPERTIES ====*/
     --grotto-metadata-radius: 0rem;
     --grotto-metadata-border-color: var(--text-normal);
     --grotto-metadata-background-color: transparent;
@@ -419,12 +433,12 @@ body {
     --metadata-property-box-shadow-focus: none;
     --grotto-properties-color: var(--grotto-day-1);
     --grotto-properties-tag-color: var(--grotto-night-0);
-    /*Mobile Drawer Header*/
-    --grotto-mobile-drawer-header-color: var(--grotto-day-1);
-    --grotto-mobile-drawer-header-background-color: var(--background-secondary);
-    --grotto-mobile-drawer-header-active-background-color: var(--grotto-day-1);
+    /*==== SLIDERS ====*/
+    --grotto-slider-border-color: var(--grotto-night-0);
+    --grotto-slider-background-color: var(--grotto-day-1);
 }
-/*Tags*/
+
+/*==== TAGS ====*/
 a.tag, 
 a.tag:hover, 
 .cm-hashtag, 
@@ -433,217 +447,305 @@ a.tag:hover,
     color: var(--grotto-tag-color);
     background-color: var(--grotto-tag-background-color);
     pointer-events: var(--grotto-tag-pointer-events);
-    line-height: 2rem;
+    font-weight: var(--grotto-tag-weight);
+    line-height: var(--grotto-tag-height);
     caret-color: currentColor;
     vertical-align: middle;
 }
-/*Tags inside Headers*/
-.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag, 
+
+/*==== TAGS INSIDE HEADERS ====*/
 .markdown-rendered h1 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag, 
 .markdown-rendered h2 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag, 
 .markdown-rendered h3 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag, 
 .markdown-rendered h4 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag, 
 .markdown-rendered h5 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-6 .cm-hashtag, 
-.markdown-rendered h6 a.tag {
+.markdown-rendered h6 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag, 
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag, 
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag, 
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag, 
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 .cm-hashtag {
     font-size: 0.8rem !important;
     vertical-align: top;
 }
-/*Bold*/
+
+/*==== ACCENTED TAGS ====*/
+.accented-tag {
+    --grotto-tag-border-color: var(--text-normal);
+    --grotto-tag-color: var(--grotto-day-1);
+    --grotto-tag-background-color: var(--grotto-accent-1);
+}
+
+/*==== TEXT BOLD ====*/
 strong, 
 .cm-strong {
     color: var(--grotto-bold-color);
     font-weight: var(--grotto-bold-font-weight);
     caret-color: currentColor;
 }
-/*Italic*/
+
+/*==== TEXT ITALIC ====*/
 em, 
 .cm-em {
     color: var(--grotto-italic-color);
     font-weight: var(--grotto-italic-font-weight);
     caret-color: currentColor;
 }
-/*Strikethrough*/
+
+/*==== TEXT STRIKETHROUGH ====*/
 del, 
 .cm-strikethrough {
   color: var(--grotto-strikethrough-color);
   caret-color: currentColor;
   opacity: 0.4;
 }
-/*Comment*/
+
+/*==== TEXT COMMENTED ====*/
 .cm-comment {
     color: var(--grotto-comment-color);
     opacity: 0.8;
 }
-/*Links*/
+
+/*==== TEXT LINKED ====*/
 a, 
 .external-link, 
-.cm-s-obsidian span.cm-link, 
-.cm-s-obsidian span.cm-hmd-internal-link, 
-.metadata-property-value .internal-link, 
-.cm-s-obsidian span.cm-formatting-link.cm-url,
 .cm-s-obsidian span.cm-url, 
+.cm-s-obsidian span.cm-link, 
 .markdown-rendered .internal-link, 
-.markdown-source-view.mod-cm6 .cm-link .cm-underline, 
-.markdown-source-view.mod-cm6 .cm-url .cm-underline {
+.metadata-property-value .internal-link, 
+.cm-s-obsidian span.cm-hmd-internal-link, 
+.cm-s-obsidian span.cm-formatting-link.cm-url, 
+.markdown-source-view.mod-cm6 .cm-url .cm-underline, 
+.markdown-source-view.mod-cm6 .cm-link .cm-underline {
     color: var(--grotto-link-color);
     font-weight: var(--grotto-link-weight);
 }
 a:hover, 
 a.mobile-tap, 
-.external-link:hover, 
-.external-link.mobile-tap, 
-.cm-s-obsidian span.cm-link:hover, 
-.cm-s-obsidian span.cm-hmd-internal-link:hover, 
-.metadata-property-value .internal-link:hover, 
-.cm-s-obsidian span.cm-formatting-link.cm-url:hover,
 .cm-s-obsidian span.cm-url:hover, 
+.cm-s-obsidian span.cm-link:hover, 
 .markdown-rendered .internal-link:hover, 
-.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover, 
-.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
+.metadata-property-value .internal-link:hover, 
+.cm-s-obsidian span.cm-hmd-internal-link:hover, 
+.external-link:hover, .external-link.mobile-tap, 
+.cm-s-obsidian span.cm-formatting-link.cm-url:hover, 
+.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover, 
+.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover {
     color: var(--grotto-link-color);
     filter: brightness(102%);
     opacity: 1;
 }
-/*Links inside Headers*/
-.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-underline, 
+
+/*==== LINKS INSIDE HEADERS ====*/
+.markdown-rendered h1 .external-link, 
+.markdown-rendered h2 .external-link, 
+.markdown-rendered h3 .external-link, 
+.markdown-rendered h4 .external-link, 
+.markdown-rendered h5 .external-link, 
+.markdown-rendered h6 .external-link, 
 .markdown-rendered h1 .internal-link, 
-.cm-header.cm-header-1.cm-hmd-internal-link, 
-.cm-header.cm-header-1.cm-hmd-internal-link:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-underline, 
 .markdown-rendered h2 .internal-link, 
-.cm-header.cm-header-2.cm-hmd-internal-link, 
-.cm-header.cm-header-2.cm-hmd-internal-link:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-underline, 
 .markdown-rendered h3 .internal-link, 
-.cm-header.cm-header-3.cm-hmd-internal-link, 
-.cm-header.cm-header-3.cm-hmd-internal-link:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-underline, 
 .markdown-rendered h4 .internal-link, 
-.cm-header.cm-header-4.cm-hmd-internal-link, 
-.cm-header.cm-header-4.cm-hmd-internal-link:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-underline, 
 .markdown-rendered h5 .internal-link, 
-.cm-header.cm-header-5.cm-hmd-internal-link, 
-.cm-header.cm-header-5.cm-hmd-internal-link:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-6 .cm-underline, 
 .markdown-rendered h6 .internal-link, 
-.cm-header.cm-header-6.cm-hmd-internal-link, 
-.cm-header.cm-header-6.cm-hmd-internal-link:hover {
+.cm-header.cm-header-1.cm-hmd-internal-link, 
+.cm-header.cm-header-2.cm-hmd-internal-link, 
+.cm-header.cm-header-3.cm-hmd-internal-link, 
+.cm-header.cm-header-4.cm-hmd-internal-link, 
+.cm-header.cm-header-5.cm-hmd-internal-link, 
+.cm-header.cm-header-6.cm-hmd-internal-link,
+.cm-s-obsidian .cm-line.HyperMD-header-1 span.cm-url, 
+.cm-s-obsidian .cm-line.HyperMD-header-2 span.cm-url, 
+.cm-s-obsidian .cm-line.HyperMD-header-3 span.cm-url, 
+.cm-s-obsidian .cm-line.HyperMD-header-4 span.cm-url, 
+.cm-s-obsidian .cm-line.HyperMD-header-5 span.cm-url, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 span.cm-url, 
+.cm-s-obsidian .cm-line.HyperMD-header-1 span.cm-link, 
+.cm-s-obsidian .cm-line.HyperMD-header-2 span.cm-link, 
+.cm-s-obsidian .cm-line.HyperMD-header-3 span.cm-link, 
+.cm-s-obsidian .cm-line.HyperMD-header-4 span.cm-link, 
+.cm-s-obsidian .cm-line.HyperMD-header-5 span.cm-link, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 span.cm-link, 
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-underline, 
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-underline, 
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-underline, 
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-underline, 
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-underline, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 .cm-underline {
     color: inherit;
 }
-/*Headers*/
+.markdown-rendered h1 .external-link:hover, 
+.markdown-rendered h2 .external-link:hover, 
+.markdown-rendered h3 .external-link:hover, 
+.markdown-rendered h4 .external-link:hover, 
+.markdown-rendered h5 .external-link:hover, 
+.markdown-rendered h6 .external-link:hover, 
+.markdown-rendered h1 .internal-link:hover, 
+.markdown-rendered h2 .internal-link:hover, 
+.markdown-rendered h3 .internal-link:hover, 
+.markdown-rendered h4 .internal-link:hover, 
+.markdown-rendered h5 .internal-link:hover, 
+.markdown-rendered h6 .internal-link:hover, 
+.cm-header.cm-header-1.cm-hmd-internal-link:hover, 
+.cm-header.cm-header-2.cm-hmd-internal-link:hover, 
+.cm-header.cm-header-3.cm-hmd-internal-link:hover, 
+.cm-header.cm-header-4.cm-hmd-internal-link:hover, 
+.cm-header.cm-header-5.cm-hmd-internal-link:hover, 
+.cm-header.cm-header-6.cm-hmd-internal-link:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-link .cm-underline:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-link .cm-underline:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-link .cm-underline:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-link .cm-underline:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-link .cm-underline:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 .cm-link .cm-underline:hover {
+    color: inherit;
+    opacity: 0.5;
+}
+
+/*==== HEADERS ====*/
 .cm-formatting-header {
     color: currentColor;
 }
-.markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1,
-.markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2,
-.markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3, 
-.markdown-rendered h4, .HyperMD-header-4, .cm-s-obsidian .cm-line.HyperMD-header-4, 
-.markdown-rendered h5, .HyperMD-header-5, .cm-s-obsidian .cm-line.HyperMD-header-5, 
-.markdown-rendered h6, .HyperMD-header-6, .cm-s-obsidian .cm-line.HyperMD-header-6 {
+.HyperMD-header-1, 
+.HyperMD-header-2, 
+.HyperMD-header-3, 
+.HyperMD-header-4, 
+.HyperMD-header-5, 
+.HyperMD-header-6, 
+.markdown-rendered h1, 
+.markdown-rendered h2, 
+.markdown-rendered h3, 
+.markdown-rendered h4, 
+.markdown-rendered h5, 
+.markdown-rendered h6, 
+.cm-s-obsidian .cm-line.HyperMD-header-1,
+.cm-s-obsidian .cm-line.HyperMD-header-2,
+.cm-s-obsidian .cm-line.HyperMD-header-3, 
+.cm-s-obsidian .cm-line.HyperMD-header-4, 
+.cm-s-obsidian .cm-line.HyperMD-header-5, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 {
     font-size: var(--grotto-header-size);
-    letter-spacing: 0px;
-    line-height: var(--grotto-header-line-height);
-    width: fit-content;
-    caret-color: currentColor;
     font-weight: var(--grotto-header-font-weight);
-    border-radius: var(--grotto-header-radius);
-    padding: 0px 8px;
+    line-height: var(--grotto-header-line-height);
+    caret-color: currentColor;
+    letter-spacing: 0px;
+    width: fit-content;
 }
-.HyperMD-header-1, .markdown-rendered h1, .cm-s-obsidian .cm-line.HyperMD-header-1 {
+.HyperMD-header-1, 
+.markdown-rendered h1, 
+.cm-s-obsidian .cm-line.HyperMD-header-1 {
     color: var(--grotto-header-color-1);
     background-color: var(--grotto-header-background-color-1);
     border: 2px solid var(--grotto-header-border-color-1);
-    padding: 0px 7px;
+    border-radius: var(--grotto-header-border-radius-1);
     outline: 2px solid var(--background-primary);
     outline-offset: -4px;
+    padding: 0px 7px;
 }
-.markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2 {
+.HyperMD-header-2, 
+.markdown-rendered h2, 
+.cm-s-obsidian .cm-line.HyperMD-header-2 {
     color: var(--grotto-header-color-2);
     background-color: var(--grotto-header-background-color-2);
     border: 2px solid var(--grotto-header-border-color-2);
+    border-radius: var(--grotto-header-border-radius-2);
     padding: 0px 7px;
 }
-.markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3 {
+.HyperMD-header-3, 
+.markdown-rendered h3, 
+.cm-s-obsidian .cm-line.HyperMD-header-3 {
     color: var(--grotto-header-color-3);
     background-color: var(--grotto-header-background-color-3);
     border: 2px solid var(--grotto-header-border-color-3);
+    border-radius: var(--grotto-header-border-radius-3);
     padding: 0px 7px;
 }
-.markdown-rendered h4, .HyperMD-header-4, .cm-s-obsidian .cm-line.HyperMD-header-4 {
+.HyperMD-header-4, 
+.markdown-rendered h4, 
+.cm-s-obsidian .cm-line.HyperMD-header-4 {
     color: var(--grotto-header-color-4);
     background-color: var(--grotto-header-background-color-4);
     border: 2px solid var(--grotto-header-border-color-4);
+    border-radius: var(--grotto-header-border-radius-4);
     padding: 0px 7px;
 }
-.markdown-rendered h5, .HyperMD-header-5, .cm-s-obsidian .cm-line.HyperMD-header-5 {
+.HyperMD-header-5, 
+.markdown-rendered h5, 
+.cm-s-obsidian .cm-line.HyperMD-header-5 {
     color: var(--grotto-header-color-5);
     background-color: var(--grotto-header-background-color-5);
     border: 1px solid transparent;
+    border-radius: var(--grotto-header-border-radius-5);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: var(--grotto-header-border-color-5);
+    padding: 0px 8px;
 }
-.markdown-rendered h6, .HyperMD-header-6, .cm-s-obsidian .cm-line.HyperMD-header-6 {
+.HyperMD-header-6, 
+.markdown-rendered h6, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 {
     color: var(--grotto-header-color-6);
     background-color: var(--grotto-header-background-color-6);
     border: 1px solid var(--grotto-header-border-color-6);
+    border-radius: var(--grotto-header-border-radius-6);
+    padding: 0px 8px;
 }
-/*Embedded Image*/
+
+/*==== EMBEDDED IMAGES ====*/
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: auto;
 }
-/*Buttons*/
+
+/*==== BUTTONS ====*/
 button.mod-cta, 
 button:not(.clickable-icon) {
-  color: var(--grotto-button-color);
-  background-color: var(--grotto-button-background-color);
-  border: 1px solid var(--grotto-button-border-color);
-  border-radius: var(--grotto-button-radius);
-  box-shadow: none;
+    color: var(--grotto-button-color);
+    background-color: var(--grotto-button-background-color);
+    border: 1px solid var(--grotto-button-border-color);
+    border-radius: var(--grotto-button-radius);
+    box-shadow: none;
 }
 button.mod-cta:hover, 
-button:not(.clickable-icon):hover, 
 button.mod-cta.mobile-tap, 
+button:not(.clickable-icon):hover, 
 button:not(.clickable-icon).mobile-tap {
-  color: var(--grotto-button-color);
-  background-color: var(--grotto-button-background-color);
-  border: 1px solid var(--grotto-button-border-color);
-  border-radius: var(--grotto-button-radius);
-  box-shadow: 0px 0px 0px 2px var(--grotto-background-tertiary);
-  outline: 1px solid var(--grotto-button-border-color);
-  outline-offset: 2px;
+    color: var(--grotto-button-color);
+    background-color: var(--grotto-button-background-color);
+    border: 1px solid var(--grotto-button-border-color);
+    border-radius: var(--grotto-button-radius);
+    box-shadow: 0px 0px 0px 2px var(--grotto-background-tertiary);
+    outline: 1px solid var(--grotto-button-border-color);
+    outline-offset: 2px;
 }
-button.mod-destructive, 
 button.mod-warning, 
+button.mod-destructive, 
 .is-mobile button.mod-warning {
-  color: var(--text-error);
+  color: var(--grotto-button-error-color);
   background-color: var(--grotto-button-error-background);
 }
-button.mod-destructive:hover, 
 button.mod-warning:hover, 
 button.mod-warning.mobile-tap, 
+button.mod-destructive:hover, 
 button.mod-destructive.mobile-tap {
-  color: var(--text-error);
+  color: var(--grotto-button-error-color);
   background-color: var(--grotto-button-error-background-hover);
 }
-/*Checkboxes*/
-input[type=checkbox],
-input[type=checkbox]:hover,
-input[type=checkbox]:checked,
+
+/*==== CHECKBOXES ====*/
+input[type=checkbox], 
+input[type=checkbox]:hover, 
+input[type=checkbox]:checked, 
 input[type=checkbox]:checked:hover {
     border: 1px solid var(--grotto-checkbox-border-color);
     border-radius: var(--grotto-checkbox-radius);
 }
-/*Color Swatch*/
+
+/*==== COLOR SWATCHES ====*/
 .is-mobile input[type="color"] {
     width: 44px;
     height: 44px;
@@ -653,9 +755,12 @@ input[type="color"]::-webkit-color-swatch {
 }
 input[type="color"]::-webkit-color-swatch:hover {
     box-shadow: 0px 0px 0px 1px var(--text-normal);
-    opacity: 0.9;
+    opacity: 1;
+    outline: 1px solid var(--text-normal);
+    outline-offset: 3px;
 }
-/*Blockquotes*/
+
+/*==== BLOCKQUOTES ====*/
 .cm-s-obsidian span.cm-quote, 
 .markdown-rendered blockquote {
     caret-color: currentColor;
@@ -672,21 +777,8 @@ input[type="color"]::-webkit-color-swatch:hover {
 .cm-s-obsidian span.cm-quote.cm-comment {
     color: var(--grotto-comment-color);
 }
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote, 
-.markdown-rendered blockquote {
-    font-style: var(--grotto-blockquote-style);
-    justify-self: var(--grotto-blockquote-alignment);
-    text-align: var(--grotto-blockquote-alignment);
-}
-.markdown-rendered blockquote h1, 
-.markdown-rendered blockquote h2, 
-.markdown-rendered blockquote h3, 
-.markdown-rendered blockquote h4, 
-.markdown-rendered blockquote h5, 
-.markdown-rendered blockquote h6 {
-    justify-self: var(--grotto-blockquote-alignment);
-}
-/*Callout*/
+
+/*==== CALLOUTS ====*/
 .callout, 
 .callout:hover {
     color: var(--grotto-callout-color);
@@ -698,7 +790,7 @@ input[type="color"]::-webkit-color-swatch:hover {
 .callout-title {
     color: var(--grotto-callout-color);
     border-bottom: 1px solid var(--grotto-callout-border-color);
-    font-size: var(--grotto-title-size);
+    font-size: var(--grotto-callout-title-size);
     line-height: 2rem;
     gap: 2px;
 }
@@ -708,7 +800,8 @@ input[type="color"]::-webkit-color-swatch:hover {
 .callout-content p {
     margin: 4px;
 }
-/*Embeds*/
+
+/*==== EMBEDS ====*/
 .markdown-embed {
     border: 1px solid var(--grotto-embed-color);
     background-color: var(--grotto-embed-background-color);
@@ -717,7 +810,7 @@ input[type="color"]::-webkit-color-swatch:hover {
 .embed-title {
     display: var(--grotto-embed-title);
     border-bottom: 1px solid var(--grotto-embed-color);
-    font-size: var(--grotto-title-size);
+    font-size: var(--grotto-callout-title-size);
 }
 .markdown-embed-link, 
 .file-embed-link, 
@@ -738,12 +831,13 @@ input[type="color"]::-webkit-color-swatch:hover {
     opacity: 1;
     --background-modifier-hover: var(--grotto-embed-link-background-color);
 }
-/*Codes*/
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock, 
+
+/*==== CODE BLOCKS ====*/
+.markdown-rendered pre, 
 .markdown-rendered code, 
 .cm-s-obsidian span.cm-inline-code, 
-.markdown-rendered pre, 
-.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting), 
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
     color: var(--grotto-code-color);
     background-color: var(--grotto-code-background-color);
     font-size: 0.8rem;
@@ -752,25 +846,26 @@ input[type="color"]::-webkit-color-swatch:hover {
     vertical-align: middle;
     caret-color: currentColor;
 }
-.markdown-source-view.mod-cm6 .code-block-flair,
-.markdown-rendered button.copy-code-button {
+.markdown-rendered button.copy-code-button, 
+.markdown-source-view.mod-cm6 .code-block-flair {
     color: var(--grotto-code-color);
     background-color: var(--grotto-code-background-color);
     border: 0px solid var(--grotto-code-border-color);
     padding: 0.2rem 0.4rem;
 }
-.markdown-source-view.mod-cm6 .code-block-flair:hover, 
-.markdown-rendered button.copy-code-button:hover  {
+.markdown-rendered button.copy-code-button:hover, 
+.markdown-source-view.mod-cm6 .code-block-flair:hover {
     color: var(--grotto-code-color-hover);
     background-color: var(--grotto-code-background-color);
     border: 0px solid var(--grotto-code-border-color);
 }
-/*Status Bar*/
+
+/*==== STATUS BAR ====*/
 .status-bar {
     color: var(--grotto-statusbar-color);
     background-color: var(--grotto-statusbar-background-color);
     border: 1px solid var(--grotto-statusbar-border-color);
-    border-radius: var(--grotto-statusbar-radius);
+    border-radius: var(--grotto-statusbar-border-radius);
     bottom: 4px;
     right: 4px;
 }
@@ -778,9 +873,10 @@ input[type="color"]::-webkit-color-swatch:hover {
     color: var(--grotto-statusbar-color);
 }
 .status-bar-item.mod-clickable:hover {
-    color: var(--grotto-accent-1);
+    color: var(--grotto-statusbar-color-hover);
 }
-/*Toggles*/
+
+/*==== TOGGLE SWITCHES ====*/
 .checkbox-container, 
 .checkbox-container:focus-within {
     background-color: var(--grotto-toggle-background-color);
@@ -797,7 +893,8 @@ input[type="color"]::-webkit-color-swatch:hover {
     background-color: var(--grotto-toggle-color);
     box-shadow: 0px 0px 0px 1px var(--grotto-toggle-handle-border-color);
 }
-/*Tooltip*/
+
+/*==== TOOLTIPS ====*/
 .tooltip {
     color: var(--grotto-tooltip-color);
     background-color: var(--grotto-tooltip-background-color);
@@ -820,7 +917,8 @@ input[type="color"]::-webkit-color-swatch:hover {
     border-top: 5px solid var(--grotto-tooltip-border-color);
     border-radius: 0rem;
 }
-/*Tables*/
+
+/*==== TABLES ====*/
 .markdown-preview-view td,
 .markdown-preview-view th {
     white-space: nowrap !important;
@@ -848,19 +946,21 @@ th,
 }
 .cm-line:has(+ .cm-table-widget), 
 .cm-table-widget + .cm-line {
-    line-height: 2px;
+    line-height: 0px;
 }
-/*Dragging*/
+
+/*==== DRAGGING ====*/
 .drag-ghost {
     color: var(--text-normal);
     background-color: var(--background-primary);
     border: 1px solid var(--text-normal);
     box-shadow: none;
 }
-/*Progress Bars*/
-.notice progress[value]::-webkit-progress-bar,
-.markdown-preview-view progress[value]::-webkit-progress-bar,
-.markdown-rendered progress[value]::-webkit-progress-bar,
+
+/*==== PROGRESS BAR ====*/
+.notice progress[value]::-webkit-progress-bar, 
+.markdown-rendered progress[value]::-webkit-progress-bar, 
+.markdown-preview-view progress[value]::-webkit-progress-bar, 
 .markdown-source-view.is-live-preview progress[value]::-webkit-progress-bar, 
 .theme-light .notice progress[value]::-webkit-progress-bar {
     background-color: var(--grotto-progress-background-color);
@@ -868,9 +968,9 @@ th,
     border-radius: var(--grotto-progress-radius);
     box-shadow: none;
 }
-.notice progress[value]::-webkit-progress-value,
-.markdown-preview-view progress[value]::-webkit-progress-value,
-.markdown-rendered progress[value]::-webkit-progress-value,
+.notice progress[value]::-webkit-progress-value, 
+.markdown-rendered progress[value]::-webkit-progress-value, 
+.markdown-preview-view progress[value]::-webkit-progress-value, 
 .markdown-source-view.is-live-preview progress[value]::-webkit-progress-value {
   background-color: var(--grotto-progress-color);
 }
@@ -879,7 +979,8 @@ th,
     border: 1px solid var(--grotto-progress-border-color);
     border-radius: var(--grotto-progress-radius);
 }
-/* Canvas */
+
+/*====  CANVAS  ====*/
 .canvas-control-group {
     border-radius: var(--grotto-canvas-controls-radius);
     box-shadow: none;
@@ -911,11 +1012,40 @@ th,
     stroke: var(--grotto-canvas-path-color);
     fill: var(--grotto-canvas-path-color);
 }
-/*Calendar Plugin*/
+
+/*==== GRAPHS ====*/
+.graph-view.color-line {
+  color: var(--graph-line);
+  opacity: 0.4;
+}
+.graph-controls, 
+.graph-controls:not(.is-close), 
+.graph-controls.is-close {
+    color: var(--text-normal);
+    background-color: var(--grotto-graph-controls-background-color);
+    border: 1px solid var(--grotto-graph-controls-border-color);
+    border-radius: var(--grotto-graph-controls-radius);
+    box-shadow: none;
+}
+.workspace-split:not(.mod-root) .graph-controls.is-close {
+    color: var(--grotto-graph-sidebar-controls-color);
+    background-color: var(--grotto-graph-sidebar-controls-background-color);
+    border-color: var(--grotto-graph-sidebar-controls-border-color);
+    --grotto-icon-color: var(--grotto-graph-sidebar-controls-color);
+}
+.graph-control-section {
+    border-bottom: 1px solid var(--grotto-graph-controls-border-color);
+}
+.graph-controls input[type='text'] {
+    background-color: var(--grotto-graph-controls-background-color);
+    border: 1px solid var(--grotto-graph-controls-border-color);
+}
+
+/*==== CALENDAR PLUGIN ====*/
 #calendar-container {
     --color-arrow: var(--grotto-calendar-color);
     background-color: var(--grotto-calendar-background-color);
-    border: 1px solid var(--grotto-calendar-border-color);
+    border: var(--grotto-calendar-border-width) solid var(--grotto-calendar-border-color);
     width: 100%;
     padding: 0px;
     --interactive-hover: var(--grotto-calendar-color-hover);
@@ -928,14 +1058,15 @@ th,
     border-radius: 0px;
 }
 #calendar-container .weekend:has(+ .weekend) {
-    border-left: 1px solid var(--grotto-calendar-weekend-border-color);
+    border-left: var(--grotto-calendar-weekend-border-width) solid var(--grotto-calendar-weekend-border-color);
 }
 #calendar-container .day.active {
     color: var(--grotto-calendar-color);
 }
 #calendar-container .today {
-    color: var(--grotto-calendar-background-color);
+    color: var(--grotto-calendar-today-color);
     background-color: var(--grotto-calendar-today-background-color);
+    border: 1px solid var(--grotto-calendar-border-color);
 }
 #calendar-container .month {
     color: var(--grotto-calendar-color);
@@ -953,14 +1084,17 @@ th,
 #calendar-container th.svelte-pcimu8 {
     background-color: var(--grotto-calendar-dayofweek-background-color);
     color: var(--grotto-calendar-dayofweek-color);
-    border-bottom: var(--grotto-calendar-dayofweek-border-width) solid var(--grotto-calendar-weekend-border-color);
+    border-top: 1px solid var(--grotto-calendar-border-color);
+    border-bottom: 1px solid var(--grotto-calendar-border-color);
     min-width: 0px;
 }
-/*Bases*/
+
+/*==== BASES ====*/
 .bases-header {
     background-color: var(--grotto-background-tertiary);
 }
-.text-icon-button, .text-button-icon, 
+.text-icon-button, 
+.text-button-icon, 
 .text-icon-button.has-active-menu .text-button-icon {
     color: var(--grotto-text-icon-color);
     border: 1px solid transparent;
@@ -1114,7 +1248,8 @@ span.value-list-element a.tag {
 .query-toolbar .query-toolbar-item.mod-views .text-icon-button:hover {
   color: var(--grotto-text-icon-color-hover);
 }
-.bases-cards-line input[type='datetime-local'],.bases-cards-line input[type='datetime-local']:hover {
+.bases-cards-line input[type='datetime-local'], 
+.bases-cards-line input[type='datetime-local']:hover {
     background-color: inherit;
     border: none;
 }
@@ -1125,7 +1260,8 @@ span.value-list-element a.tag {
     background-color: var(--background-primary);
     --grotto-icon-color: var(--text-normal);
 }
-.text-icon-button.has-active-menu .text-button-icon, .text-icon-button:hover .text-button-icon {
+.text-icon-button.has-active-menu .text-button-icon, 
+.text-icon-button:hover .text-button-icon {
     color: var(--grotto-text-icon-color-active);
 }
 .formula-editor .cm-content {
@@ -1173,10 +1309,12 @@ span.value-list-element a.tag {
 body:not(.is-phone) .base-toolbar-sort-item {
     --metadata-property-box-shadow: 0px 0px 0px 0px var(--grotto-bases-cards-border-color);
 }
-.bases-toolbar-menu .base-toolbar-sort-item .metadata-property, .bases-toolbar-menu .base-toolbar-groupby-item .metadata-property {
+.bases-toolbar-menu .base-toolbar-sort-item .metadata-property, 
+.bases-toolbar-menu .base-toolbar-groupby-item .metadata-property {
     border: 1px solid var(--grotto-bases-cards-border-color);
 }
-/*Notice*/
+
+/*==== NOTICES ====*/
 .notice, 
 .is-phone .notice {
     color: var(--grotto-notice-color);
@@ -1185,27 +1323,8 @@ body:not(.is-phone) .base-toolbar-sort-item {
     border-radius: var(--grotto-notice-radius);
     box-shadow: none;
 }
-/*Graphs*/
-.graph-view.color-line {
-  color: var(--graph-line);
-  opacity: 0.4;
-}
-.graph-controls, 
-.graph-controls:not(.is-close), 
-.graph-controls.is-close {
-    color: var(--text-normal);
-    background-color: var(--grotto-graph-controls-background-color);
-    border: 1px solid var(--grotto-graph-controls-border-color);
-    border-radius: var(--grotto-graph-controls-radius);
-    box-shadow: none;
-}
-.workspace-split:not(.mod-root) .graph-controls.is-close {
-    color: var(--grotto-graph-sidebar-controls-color);
-    background-color: var(--grotto-graph-sidebar-controls-background-color);
-    border-color: var(--grotto-graph-sidebar-controls-border-color);
-    --grotto-icon-color: var(--grotto-graph-sidebar-controls-color);
-}
-/*Suggestions*/
+
+/*==== SUGGESTIONS ====*/
 .suggestion-container, 
 .is-mobile .suggestion-container {
     background-color: var(--grotto-suggestion-background-color);
@@ -1230,7 +1349,8 @@ body:not(.is-phone) .base-toolbar-sort-item {
 .suggestion-flair .svg-icon {
     color: var(--grotto-suggestion-color);
 }
-/*Command Prompt*/
+
+/*==== COMMAND PALETTE ====*/
 .theme-dark.is-mobile .prompt,
 .theme-light.is-mobile .prompt,
 .prompt {
@@ -1275,40 +1395,8 @@ input.prompt-input:focus-visible,
 .tree-item-self {
     border-radius: 0px;
 }
-/*Mobile Drawer Header*/
-.is-phone .workspace-drawer-header, 
-.is-phone .workspace-drawer-header-info, 
-.is-mobile .workspace-drawer-header-name-text {
-    --grotto-icon-color: var(--grotto-mobile-drawer-header-color);
-    color: var(--grotto-mobile-drawer-header-color);
-    background-color: var(--grotto-mobile-drawer-header-background-color);
-}
-.is-phone .workspace-drawer-active-tab-header {
-    background-color: var(--grotto-mobile-drawer-header-active-background-color);
-}
-.is-phone .workspace-drawer-active-tab-header.mobile-tap {
-    background-color: var(--grotto-mobile-drawer-header-active-background-color);
-}
-.is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
-.is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
-    --divider-width: 0px;
-}
-.workspace-drawer-active-tab-icon, 
-.workspace-drawer-active-tab-title, 
-.clickable-icon.workspace-drawer-active-tab-chevron {
-    color: var(--grotto-mobile-drawer-header-active-color);
-}
-.mod-right-split .markdown-preview-view, 
-.mod-left-split .markdown-preview-view, 
-.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, 
-.mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-}
-.workspace-drawer-active-tab-container {
-    --text-normal: var(--grotto-day-1);
-}
-/*Title Bar*/
+
+/*==== TITLE BAR ====*/
 .titlebar-button {
     height: var(--header-height);
     color: var(--grotto-titlebar-color);
@@ -1392,10 +1480,11 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable,
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
-    background-color: var(--grotto-background-tertiary);
+    --grotto-tab-header-icon-color: var(--text-normal);
+    background-color: var(--grotto-tab-header-inactive-background-color);
     padding-top: 4px;
     border-top: 8px solid var(--background-secondary);
-    border-bottom: 1px solid var(--grotto-tab-header-border-color);
+    border-bottom: 1px solid var(--background-secondary);
     border-left: 1px solid var(--background-secondary);
     border-right: 1px solid var(--background-secondary);
     width: 300px;
@@ -1403,9 +1492,10 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .workspace-tab-header-inner .workspace-tab-header-inner-icon, 
 .workspace-tab-header-tab-list .clickable-icon, 
 .workspace-tab-header-new-tab .clickable-icon {
-    color: var(--grotto-day-1);
+    color: var(--grotto-tab-header-icon-color);
 }
-/*Clickable Icons*/
+
+/*==== CLICKABLE ICONS ====*/
 .clickable-icon, 
 .is-mobile .clickable-icon {
     color: var(--grotto-icon-color);
@@ -1428,11 +1518,13 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     opacity: 1;
     border-radius: 0px;
 }
-/*Paragraphs*/
+
+/*==== PARAGRAPHS ====*/
 .markdown-rendered p {
     padding: 0rem 0rem;
 }
-/*Dropdowns*/
+
+/*==== DROPDOWNS ====*/
 select,
 .combobox-button,
 .dropdown {
@@ -1462,19 +1554,8 @@ select,
     border-radius: var(--grotto-dropdown-radius);
     box-shadow: none;
 }
-/*Sliders*/
-input[type='range'] {
-    border-radius: 0px;
-    background-color: var(--grotto-accent-1);
-}
-input[type='range']::-webkit-slider-thumb,
-input[type='range']::-webkit-slider-thumb:hover,
-input[type='range']::-webkit-slider-thumb:active {
-    background-color: var(--grotto-slider-background-color);
-    border: 1px solid var(--grotto-slider-border-color);
-    box-shadow: none;
-}
-/*Scrollbars*/
+
+/*==== SCROLL BAR ====*/
 .is-android {
   --scrollbar-border-width: 3px;
   --scrollbar-width: 12px;
@@ -1484,7 +1565,8 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     outline: 1px solid var(--text-normal);
     outline-offset: -3px;
 }
-/*Mobile Quick Actions*/
+
+/*==== MOBILE QUICK ACTIONS ====*/
 .pull-action, 
 .pull-down-action, 
 .pull-out-action {
@@ -1501,7 +1583,8 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     color: var(--grotto-pull-color);
     background-color: var(--grotto-pull-background-color);
 }
-/*Mobile Navigation Bar*/
+
+/*==== MOBILE NAVIGATION BAR ====*/
 .mobile-navbar {
     --grotto-icon-color: var(--grotto-navbar-color);
     border-top: 1px solid var(--grotto-navbar-border-color);
@@ -1512,7 +1595,8 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 .mobile-navbar-action-new-tab {
     display: var(--grotto-navbar-new-tab);
 }
-/*Mobile Tab Switcher*/
+
+/*==== MOBILE TAB SWITCHER ====*/
 .mobile-tab-title {
     color: var(--grotto-tab-switcher-color);
 }
@@ -1530,7 +1614,8 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 .mobile-tab.is-active .mobile-tab-preview-embed {
     border: 0px solid var(--grotto-tab-switcher-color);
 }
-/*Mobile Toolbar*/
+
+/*==== MOBILE TOOLBAR ====*/
 .mobile-toolbar {
     border-radius: var(--grotto-toolbar-radius);
     position: sticky;
@@ -1538,7 +1623,7 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     overflow-y: auto;
     margin: 0px 12px 0px 12px;
     padding: 0px;
-    height: calc(var(--grotto-toolbar-rows) * 32px);
+    height: calc(var(--grotto-toolbar-rows) * 33px);
     border: 1px solid var(--grotto-toolbar-border-color);
 }
 .mobile-toolbar::-webkit-scrollbar {
@@ -1564,7 +1649,8 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 .mobile-toolbar-spacer {
     display: none;
 }
-/*Mobile Specific*/
+
+/*==== MOBILE SPECIFIC ====*/
 .is-phone {
     --border-width: 0px;
 }
@@ -1580,14 +1666,48 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     --mobile-sidebar-background: var(--background-secondary);
     --background-modifier-form-field: transparent;
 }
-/*Selection*/
-select,
-select:hover,
-select:focus {
-    color: var(--grotto-selection-color);
-    background-color: var(--grotto-selection-background-color);
+
+/*==== MOBILE DRAWER HEADER ====*/
+.is-phone .workspace-drawer-header, 
+.is-phone .workspace-drawer-header-info, 
+.is-mobile .workspace-drawer-header-name-text {
+    --grotto-icon-color: var(--grotto-mobile-drawer-header-color);
+    color: var(--grotto-mobile-drawer-header-color);
+    background-color: var(--grotto-mobile-drawer-header-background-color);
 }
-/*Navigate Files*/
+.is-phone .workspace-drawer-active-tab-header {
+    background-color: var(--grotto-mobile-drawer-header-active-background-color);
+}
+.is-phone .workspace-drawer-active-tab-header.mobile-tap {
+    background-color: var(--grotto-mobile-drawer-header-active-background-color);
+}
+.is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
+.is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+    --divider-width: 0px;
+}
+.is-phone .workspace-drawer.mod-right {
+    border-left: 1px solid var(--text-normal);
+}
+.is-phone .workspace-drawer.mod-left {
+    border-right: 1px solid var(--text-normal);
+}
+.workspace-drawer-active-tab-icon, 
+.workspace-drawer-active-tab-title, 
+.clickable-icon.workspace-drawer-active-tab-chevron {
+    color: var(--grotto-mobile-drawer-header-active-color);
+}
+.mod-right-split .markdown-preview-view, 
+.mod-left-split .markdown-preview-view, 
+.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, 
+.mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+}
+.workspace-drawer-active-tab-container {
+    --text-normal: var(--grotto-day-1);
+}
+
+/*==== FILE NAVIGATION ====*/
 .nav-file-tag {
     color: var(--grotto-nav-tag-color);
     background-color: var(--grotto-nav-tag-background-color);
@@ -1623,7 +1743,8 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
 .nav-files-container {
     --text-normal: var(--grotto-nav-title-border-color);
 }
-/*Menus*/
+
+/*==== MENUS ====*/
 body:not(.is-phone) .menu {
     border: 0px solid var(--grotto-menu-border-color);
     box-shadow: none;
@@ -1654,7 +1775,8 @@ body:not(.is-phone) .menu-item-title {
 .menu-item.is-warning .menu-item-title:not(.is-disabled) {
     color: var(--text-error);
 }
-/*Phone Menus*/
+
+/*==== PHONE MENUS ====*/
 .is-phone .menu {
     background-color: var(--grotto-menu-background-color);
     border-top: 1px solid var(--grotto-menu-border-color);
@@ -1702,75 +1824,16 @@ hr {
     border-color: var(--text-normal);
     border-width: 1px;
 }
-/*Inputs*/
-input[type=number],
-input[type=number]:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
+
+/*==== SELECTIONS ====*/
+select,
+select:hover,
+select:focus {
+    color: var(--grotto-selection-color);
+    background-color: var(--grotto-selection-background-color);
 }
-input[type=text],
-input[type=text]:hover {
-    color: var(--text-primary);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-.prompt input[type=text],
-.prompt input[type=text]:hover {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input[type=search],
-input[type=search]:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-.global-search-input-container.search-input-container input, 
-.global-search-input-container.search-input-container input:hover {
-    color: var(--grotto-day-1);
-    background-color: var(--background-secondary);
-    border: 1px solid var(--grotto-day-1);
-    caret-color: currentColor;
-}
-.search-result-file-match {
-    background-color: var(--grotto-background-tertiary);
-}
-.search-result-file-matched-text {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-}
-input[type='date'], 
-input[type='date']:hover, 
-input[type='datetime-local'], 
-input[type='datetime-local']:hover, 
-input[type='email'],
-input[type='email']:hover,
-input[type='password'], 
-input[type='password']:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input.metadata-input-text:hover,
-textarea.webviewer-adblock-lists {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-}
-/*Search Suggestion*/
+
+/*==== SEARCH SUGGESTIONS ====*/
 .suggestion-container.mod-property-key .suggestion-item {
     background-color: var(--grotto-accent-1);
     color: var(--text-normal);
@@ -1810,17 +1873,23 @@ textarea.webviewer-adblock-lists {
 .clickable-icon.search-results-result-count:hover {
     color: var(--grotto-search-suggestion-icon-color-hover);
 }
-.search-results-info .dropdown {
-    color: var(--grotto-search-suggestion-color);
-    border: 1px solid var(--text-faint);
-}
+.search-results-info .dropdown, 
 .search-results-info .dropdown:hover {
-    background-color: var(--grotto-night-1);
+    color: var(--grotto-dropdown-color);
+    background-color: var(--grotto-dropdown-background-color);
+    border: 1px solid var(--grotto-dropdown-border-color);
 }
 .tree-item-self:hover .tree-item-flair {
     color: var(--grotto-accent-1);
 }
-/*Community Item*/
+.suggestion-container.mod-search-suggestion {
+    border: none;
+}
+.suggestion-container.mod-search-suggestion .suggestion {
+    border: 1px solid currentColor;
+}
+
+/*==== COMMUNITY ITEMS ====*/
 .community-item {
     border: 1px solid var(--text-normal);
 }
@@ -1836,7 +1905,8 @@ body:not(.is-phone) .community-item.is-selected:hover{
     border: 1px solid var(--text-normal);
     background-color: var(--grotto-accent-1);
 }
-/*Settings*/
+
+/*==== SETTINGS ====*/
 .vertical-tab-nav-item {
     color: var(--grotto-settings-color);
     border: 1px solid transparent;
@@ -1885,7 +1955,13 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
     text-decoration-thickness: 2px;
     text-decoration-color: var(--grotto-accent-1);
 }
-/*Modals*/
+.is-phone .vertical-tab-header-group-title {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--grotto-accent-1);
+}
+
+/*==== MODALS ====*/
 .is-phone .modal-container.mod-dim .modal {
     border: 0px solid transparent;
 }
@@ -1930,7 +2006,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 .is-phone .modal.mod-sidebar-layout .modal-header {
     background-color: var(--background-primary);
 }
-/* View Header */
+
+/*====  VIEW HEADER  ====*/
 .is-mobile .view-actions {
     position: fixed;
     display: flex;
@@ -1971,7 +2048,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 .view-action.clickable-icon.mod-left-split-toggle.mod-tappable {
     display: none;
 }
-/* Rename Bar Customization */
+
+/*====  RENAME BAR  ====*/
 .tree-item-self.is-being-renamed, 
 .tree-item-self.is-being-renamed:focus-within, 
 .tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed {
@@ -1980,7 +2058,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
     border-radius: 0px;
     caret-color: currentColor;
 }
-/* Properties */
+
+/*====  PROPERTIES  ====*/
 body:not(.sidebar-preset) .workspace-leaf-content[data-type='file-properties'] .view-content {
     --grotto-properties-view-color: var(--grotto-day-1);
     --grotto-metadata-border-color: var(--grotto-day-1);
@@ -2099,55 +2178,96 @@ body:not(.is-ios):not(.is-android) .metadata-property-value input[type='datetime
     background-color: var(--grotto-tag-background-color);
     color: var(--grotto-tag-color);
 }
-/*White Sidebars*/
-.sidebar-preset {
-    --background-secondary: var(--background-primary);
-    --grotto-progress-border-color: var(--text-normal);
-    --grotto-progress-background-color: var(--text-normal);
-    --grotto-calendar-color: var(--text-normal);
-    --grotto-calendar-today-background-color: var(--text-normal);
-    --grotto-titlebar-color: var(--text-normal);
-    --grotto-tab-switcher-color: var(--text-normal);/*Needs Verification*/
-    --grotto-nav-tag-color: var(--background-secondary);
-    --grotto-nav-tag-background-color: var(--text-normal);
-    --grotto-nav-title-color: var(--text-normal);
-    --grotto-nav-title-color-active: var(--text-normal);
-    --grotto-nav-title-border-color: var(--text-normal);
-    --tab-text-color-focused: var(--text-normal);
-    --tab-text-color: var(--text-normal);
-    --grotto-search-suggestion-color: var(--text-normal);
-    --grotto-search-suggestion-border-color: var(--text-normal);
-    --grotto-search-suggestion-icon-color: var(--text-normal);
-    --grotto-settings-color: var(--text-normal);
-    --grotto-settings-color-active: var(--text-normal);
-    --grotto-settings-border-color: var(--text-normal);
-    --grotto-settings-background-color: var(--background-primary);
-    --grotto-tab-header-icon-color: var(--text-normal);
-    --grotto-graph-sidebar-controls-color: var(--text-normal);
-    --grotto-graph-sidebar-controls-border-color: var(--text-normal);
-    --grotto-graph-sidebar-controls-background-color: var(--background-secondary);
-    --grotto-mobile-drawer-header-color: var(--text-normal);
-    --grotto-mobile-drawer-header-background-color: var(--background-secondary);
-    --grotto-mobile-drawer-header-active-color: var(--background-secondary);
-    --grotto-mobile-drawer-header-active-background-color: var(--text-normal);
-    --grotto-rename-color: var(--text-normal);
-    --grotto-rename-background-color: var(--background-secondary);
-    --grotto-properties-color: var(--text-normal);
-    --grotto-properties-tag-color: var(--background-secondary);
-    --grotto-tab-header-border-width: 1px;
-    --grotto-split-border-color: var(--text-normal);
-    --grotto-resize-handle-color: var(--text-normal);
+
+/*==== INPUTS ====*/
+input[type=number],
+input[type=number]:hover {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
 }
-/*Alternate Calendar Style*/
-.calendar-preset {
-    --grotto-calendar-border-color: transparent;
-    --grotto-calendar-dayofweek-color: var(--grotto-calendar-color);
-    --grotto-calendar-dayofweek-background-color: transparent;
-    --grotto-calendar-weekend-border-color: var(--grotto-accent-1);
-    --grotto-calendar-dayofweek-border-width: 1px;
+input[type=text],
+input[type=text]:hover {
+    background-color: transparent;
+    border: 1px solid currentColor;
+    caret-color: currentColor;
+    border-radius: 0px;
 }
-/*Presets*/
-/*Absol*/
+.metadata-property-value .multi-select-input {
+    --text-normal: var(--grotto-tag-background-color);
+}
+.prompt input[type=text],
+.prompt input[type=text]:hover {
+    color: var(--background-primary);
+    background-color: var(--text-normal);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+input[type=search],
+input[type=search]:hover {
+    color: var(--text-normal);
+    background-color: transparent;
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+.global-search-input-container.search-input-container input, 
+.global-search-input-container.search-input-container input:hover {
+    color: var(--grotto-search-suggestion-color);
+    background-color: var(--background-secondary);
+    border: 1px solid var(--grotto-search-suggestion-border-color);
+    caret-color: currentColor;
+}
+.search-result-file-match {
+    background-color: var(--grotto-background-tertiary);
+}
+.search-result-file-matched-text {
+    color: var(--text-normal);
+    background-color: var(--grotto-accent-1);
+}
+input[type='date'], 
+input[type='date']:hover, 
+input[type='datetime-local'], 
+input[type='datetime-local']:hover, 
+input[type='email'],
+input[type='email']:hover,
+input[type='password'], 
+input[type='password']:hover {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+input.metadata-input-text:hover,
+textarea.webviewer-adblock-lists {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+}
+
+/*==== SLIDERS ====*/
+input[type='range'] {
+    border-radius: 0px;
+    background-color: var(--grotto-accent-1);
+    border: 1px solid var(--grotto-slider-border-color);
+    height: 4px;
+}
+input[type='range']::-webkit-slider-thumb,
+input[type='range']::-webkit-slider-thumb:hover,
+input[type='range']::-webkit-slider-thumb:active {
+    background-color: var(--grotto-slider-background-color);
+    border: 1px solid var(--grotto-slider-border-color);
+    box-shadow: none;
+}
+
+/*==== PRESETS ====*/
+
+/*==== ABSOL ====*/
 body.preset-absol {
     --accent-h: 200;
     --accent-s: 16%;
@@ -2161,7 +2281,8 @@ body.preset-absol {
     --grotto-night-3: hsl(200, 5%, 32%);
     --grotto-accent-1: hsl(200, 16%, 60%);
 }
-/*Aegislash*/
+
+/*==== AEGISLASH ====*/
 body.preset-aegislash {
     --accent-h: 260;
     --accent-s: 20%;
@@ -2175,7 +2296,8 @@ body.preset-aegislash {
     --grotto-night-3: hsl(260, 10%, 40%);
     --grotto-accent-1: hsl(260, 20%, 60%);
 }
-/*Aggron*/
+
+/*==== AGGRON ====*/
 body.preset-aggron {
     --accent-h: 0;
     --accent-s: 0%;
@@ -2189,63 +2311,38 @@ body.preset-aggron {
     --grotto-night-3: hsl(0, 0%, 50%);
     --grotto-accent-1: hsl(0, 0%, 58%);
 }
-/*Alola*/
-.theme-light.preset-alola {
-    --accent-h: 48;
-    --accent-s: 60%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(0, 0%, 87%);
-    --grotto-day-2: hsl(0, 0%, 80%);
-    --grotto-day-3: hsl(0, 0%, 68%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 30%);
-    --grotto-night-3: hsl(0, 0%, 42%);
-    --grotto-accent-1: hsl(48, 60%, 50%);
+
+/*====  CLOBBOPUS  ====*/
+.preset-clobbopus {
+    --accent-h: 16;
+    --accent-s: 82%;
+    --accent-l: 58%;
+    --grotto-day-1: hsl(33, 33%, 87%);
+    --grotto-day-2: hsl(33, 33%, 78%);
+    --grotto-day-3: hsl(33, 33%, 68%);
+    --grotto-night-0: hsl(240, 18%, 20%);
+    --grotto-night-1: hsl(240, 18%, 25%);
+    --grotto-night-2: hsl(240, 18%, 45%);
+    --grotto-night-3: hsl(240, 18%, 52%);
+    --grotto-accent-1: hsl(16, 82%, 58%);
 }
-.theme-dark.preset-alola, 
-.is-mobile.theme-dark.preset-alola {
-    --accent-h: 48;
-    --accent-s: 40%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(0, 0%, 87%);
-    --grotto-day-2: hsl(0, 0%, 80%);
-    --grotto-day-3: hsl(0, 0%, 68%);
-    --grotto-night-0: hsl(260, 40%, 16%);
-    --grotto-night-1: hsl(260, 40%, 24%);
-    --grotto-night-2: hsl(260, 40%, 32%);
-    --grotto-night-3: hsl(260, 40%, 40%);
-    --grotto-accent-1: hsl(48, 40%, 50%);
-}
-/*Calyrex*/
-.theme-light.preset-calyrex {
+
+/*==== CRYOGONAL ====*/
+body.preset-cryogonal {
     --accent-h: 210;
-    --accent-s: 20%;
+    --accent-s: 50%;
     --accent-l: 60%;
-    --grotto-day-1: hsl(160, 60%, 96%);
-    --grotto-day-2: hsl(160, 60%, 72%);
-    --grotto-day-3: hsl(160, 60%, 60%);
-    --grotto-night-0: hsl(210, 10%, 12%);
-    --grotto-night-1: hsl(210, 10%, 18%);
-    --grotto-night-2: hsl(210, 10%, 36%);
-    --grotto-night-3: hsl(210, 10%, 48%);
-    --grotto-accent-1: hsl(180, 20%, 60%);
+    --grotto-day-1: hsl(40, 0%, 82%);
+    --grotto-day-2: hsl(40, 0%, 76%);
+    --grotto-day-3: hsl(40, 0%, 70%);
+    --grotto-night-0: hsl(210, 10%, 16%);
+    --grotto-night-1: hsl(220, 40%, 32%);
+    --grotto-night-2: hsl(220, 40%, 40%);
+    --grotto-night-3: hsl(220, 40%, 48%);
+    --grotto-accent-1: hsl(210, 50%, 60%);
 }
-.theme-dark.preset-calyrex, 
-.is-mobile.theme-dark.preset-calyrex {
-    --accent-h: 260;
-    --accent-s: 44%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(160, 60%, 96%);
-    --grotto-day-2: hsl(160, 60%, 72%);
-    --grotto-day-3: hsl(160, 60%, 60%);
-    --grotto-night-0: hsl(260, 0%, 12%);
-    --grotto-night-1: hsl(260, 0%, 18%);
-    --grotto-night-2: hsl(260, 0%, 26%);
-    --grotto-night-3: hsl(260, 0%, 36%);
-    --grotto-accent-1: hsl(260, 44%, 50%);
-}
-/* Darkrai */
+
+/*====  DARKRAI  ====*/
 body.preset-darkrai {
     --accent-h: 5;
     --accent-s: 60%;
@@ -2259,8 +2356,24 @@ body.preset-darkrai {
     --grotto-night-3: hsl(0, 0%, 40%);
     --grotto-accent-1: hsl(5, 60%, 50%);
 }
-/*Lucario*/
-body.preset-lucario {
+
+/*==== ICE RIDER CALYREX ====*/
+body.preset-ice-rider-calyrex {
+    --accent-h: 160;
+    --accent-s: 50%;
+    --accent-l: 44%;
+    --grotto-day-1: hsl(200, 20%, 96%);
+    --grotto-day-2: hsl(200, 20%, 72%);
+    --grotto-day-3: hsl(200, 20%, 60%);
+    --grotto-night-0: hsl(210, 10%, 14%);
+    --grotto-night-1: hsl(210, 10%, 20%);
+    --grotto-night-2: hsl(210, 10%, 36%);
+    --grotto-night-3: hsl(210, 10%, 48%);
+    --grotto-accent-1: hsl(160, 50%, 50%);
+}
+
+/*==== MEGA LUCARIO ====*/
+body.preset-mega-lucario {
     --accent-h: 0;
     --accent-s: 60%;
     --accent-l: 60%;
@@ -2273,35 +2386,23 @@ body.preset-lucario {
     --grotto-night-3: hsl(200, 30%, 44%);
     --grotto-accent-1: hsl(0, 60%, 60%);
 }
-/*Meloetta*/
-.theme-light.preset-meloetta {
+
+/*==== MELOETTA ====*/
+.preset-meloetta {
     --accent-h: 160;
     --accent-s: 40%;
     --accent-l: 40%;
-    --grotto-day-1: hsl(120, 50%, 96%);
-    --grotto-day-2: hsl(160, 50%, 80%);
-    --grotto-day-3: hsl(160, 40%, 60%);
+    --grotto-day-1: hsl(110, 40%, 92%);
+    --grotto-day-2: hsl(110, 40%, 80%);
+    --grotto-day-3: hsl(110, 40%, 60%);
     --grotto-night-0: hsl(40, 6%, 12%);
     --grotto-night-1: hsl(40, 6%, 16%);
     --grotto-night-2: hsl(40, 6%, 24%);
-    --grotto-night-3: hsl(40,6%, 32%);
-    --grotto-accent-1: hsl(160, 40%, 40%);
+    --grotto-night-3: hsl(40, 6%, 32%);
+    --grotto-accent-1: hsl(160, 40%, 44%);
 }
-.theme-dark.preset-meloetta, 
-.is-mobile.theme-dark.preset-meloetta {
-    --accent-h: 10;
-    --accent-s: 50%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(10, 10%, 90%);
-    --grotto-day-2: hsl(10, 10%, 72%);
-    --grotto-day-3: hsl(10, 10%, 60%);
-    --grotto-night-0: hsl(40, 6%, 12%);
-    --grotto-night-1: hsl(40, 6%, 16%);
-    --grotto-night-2: hsl(40, 6%, 24%);
-    --grotto-night-3: hsl(40,6%, 32%);
-    --grotto-accent-1: hsl(10, 50%, 50%);
-}
-/*Noivern*/
+
+/*==== NOIVERN ====*/
 body.preset-noivern {
     --accent-h: 160;
     --accent-s: 40%;
@@ -2320,7 +2421,23 @@ body.preset-noivern {
     --text-muted: var(--grotto-night-1);
     --text-faint: var(--grotto-night-2);
 }
-/*Poltchageist*/
+
+/*==== PIROUETTE MELOETTA ====*/
+.preset-pirouette-meloetta {
+    --accent-h: 10;
+    --accent-s: 50%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(10, 10%, 90%);
+    --grotto-day-2: hsl(10, 10%, 82%);
+    --grotto-day-3: hsl(10, 10%, 70%);
+    --grotto-night-0: hsl(40, 6%, 12%);
+    --grotto-night-1: hsl(40, 6%, 16%);
+    --grotto-night-2: hsl(40, 6%, 24%);
+    --grotto-night-3: hsl(40, 6%, 32%);
+    --grotto-accent-1: hsl(10, 50%, 50%);
+}
+
+/*==== POLTCHAGEIST ====*/
 body.preset-poltchageist {
     --accent-h: 114;
     --accent-s: 30%;
@@ -2334,48 +2451,27 @@ body.preset-poltchageist {
     --grotto-night-3: hsl(60, 5%, 32%);
     --grotto-accent-1: hsl(114, 30%, 50%);
 }
-/*Rayquaza*/
-body.preset-rayquaza {
-    --accent-h: 370;
-    --accent-s: 70%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(40, 14%, 82%);
-    --grotto-day-2: hsl(40, 14%, 76%);
-    --grotto-day-3: hsl(40, 14%, 70%);
-    --grotto-night-0: hsl(160, 30%, 16%);
-    --grotto-night-1: hsl(160, 30%, 26%);
-    --grotto-night-2: hsl(160, 30%, 36%);
-    --grotto-night-3: hsl(160, 30%, 44%);
-    --grotto-accent-1: hsl(350, 70%, 60%);
-}
-/*Revavroom*/
-.preset-revavroom {
-    --accent-h: 48;
-    --accent-s: 50%;
+
+/*==== MEGA RAYQUAZA ====*/
+body.preset-mega-rayquaza {
+    --accent-h: 30;
+    --accent-s: 60%;
     --accent-l: 50%;
-    --grotto-day-1: hsl(262, 0%, 80%);
-    --grotto-day-2: hsl(262, 0%, 72%);
-    --grotto-day-3: hsl(262, 0%, 64%);
-    --grotto-night-0: hsl(262, 25%, 14%);
-    --grotto-night-1: hsl(262, 25%, 20%);
-    --grotto-night-2: hsl(262, 25%, 40%);
-    --grotto-night-3: hsl(262, 25%, 52%);
-    --grotto-accent-1: hsl(48, 50%, 50%);
-    --grotto-button-color: var(--grotto-night-1);
-    --grotto-dropdown-color: var(--grotto-night-1);
-    --grotto-suggestion-color-hover: var(--grotto-night-1);
-    --grotto-button-border-color: var(--grotto-night-1);
-    --grotto-notice-color: var(--grotto-night-1);
-    --grotto-notice-border-color: var(--grotto-night-1);
-    --grotto-nav-title-color-active: var(--grotto-night-1);
-    --grotto-settings-color-active: var(--grotto-night-1);
-    --grotto-text-icon-color-hover: var(--grotto-night-1);
+    --grotto-day-1: hsl(160, 0%, 82%);
+    --grotto-day-2: hsl(160, 0%, 76%);
+    --grotto-day-3: hsl(160, 0%, 70%);
+    --grotto-night-0: hsl(160, 20%, 16%);
+    --grotto-night-1: hsl(160, 30%, 24%);
+    --grotto-night-2: hsl(160, 30%, 32%);
+    --grotto-night-3: hsl(160, 30%, 40%);
+    --grotto-accent-1: hsl(30, 60%, 50%);
 }
-/*Scolipede*/
+
+/*==== SCOLIPEDE ====*/
 .preset-scolipede {
     --accent-h: 340;
-    --accent-s: 50%;
-    --accent-l: 40%;
+    --accent-s: 40%;
+    --accent-l: 50%;
     --grotto-day-1: hsl(240, 10%, 84%);
     --grotto-day-2: hsl(240, 10%, 72%);
     --grotto-day-3: hsl(240, 10%, 64%);
@@ -2383,9 +2479,10 @@ body.preset-rayquaza {
     --grotto-night-1: hsl(340, 10%, 18%);
     --grotto-night-2: hsl(340, 10%, 24%);
     --grotto-night-3: hsl(340, 10%, 32%);
-    --grotto-accent-1: hsl(340, 50%, 40%);
+    --grotto-accent-1: hsl(340, 40%, 50%);
 }
-/*Skeledirge*/
+
+/*==== SKELEDIRGE ====*/
 .preset-skeledirge {
     --accent-h: 34;
     --accent-s: 50%;
@@ -2402,7 +2499,8 @@ body.preset-rayquaza {
 .theme-light.preset-skeledirge {
     --text-normal: var(--grotto-night-0);
 }
-/*Swampert*/
+
+/*==== SWAMPERT ====*/
 body.preset-swampert {
     --accent-h: 30;
     --accent-s: 60%;
@@ -2416,30 +2514,8 @@ body.preset-swampert {
     --grotto-night-3: hsl(210, 30%, 44%);
     --grotto-accent-1: hsl(30, 60%, 50%);
 }
-/*Unova*/
-body.preset-unova {
-    --grotto-day-1: hsl(0, 0%, 87%);
-    --grotto-day-2: hsl(0, 0%, 80%);
-    --grotto-day-3: hsl(0, 0%, 68%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 24%);
-    --grotto-night-3: hsl(0, 0%, 32%);
-}
-.theme-light.preset-unova {
-    --accent-h: 24;
-    --accent-s: 60%;
-    --accent-l: 50%;
-    --grotto-accent-1: hsl(24, 60%, 50%);
-}
-.theme-dark.preset-unova, 
-.is-mobile.theme-dark.preset-unova {
-    --accent-h: 200;
-    --accent-s: 60%;
-    --accent-l: 50%;
-    --grotto-accent-1: hsl(200, 60%, 50%);
-}
-/* Ursaluna */
+
+/*====  URSALUNA  ====*/
 .preset-ursaluna {
     --accent-h: 47;
     --accent-s: 20%;
@@ -2453,49 +2529,87 @@ body.preset-unova {
     --grotto-night-3: hsl(20, 40%, 40%);
     --grotto-accent-1: hsl(47, 20%, 50%);
 }
-/*Volcarona*/
+
+/*==== VOLCARONA ====*/
 body.preset-volcarona {
     --accent-h: 27;
     --accent-s: 85%;
     --accent-l: 50%;
     --grotto-day-1: hsl(0, 0%, 90%);
-    --grotto-day-2: hsl(187, 45%, 71%);
-    --grotto-day-3: hsl(187, 45%, 62%);
+    --grotto-day-2: hsl(165, 30%, 78%);
+    --grotto-day-3: hsl(165, 30%, 64%);
     --grotto-night-0: hsl(194, 60%, 18%);
     --grotto-night-1: hsl(194, 60%, 24%);
     --grotto-night-2: hsl(194, 60%, 32%);
     --grotto-night-3: hsl(194, 60%, 40%);
     --grotto-accent-1: hsl(27, 85%, 50%);
 }
-/*Whimsicott*/
+
+/*==== WHIMSICOTT ====*/
 body.preset-whimsicott {
-    --accent-h: 30;
-    --accent-s: 60%;
-    --accent-l: 50%;
+    --accent-h: 120;
+    --accent-s: 40%;
+    --accent-l: 46%;
     --grotto-day-1: hsl(40, 30%, 82%);
     --grotto-day-2: hsl(40, 30%, 76%);
     --grotto-day-3: hsl(40, 30%, 70%);
-    --grotto-night-0: hsl(30, 40%, 24%);
-    --grotto-night-1: hsl(30, 40%, 30%);
-    --grotto-night-2: hsl(30, 40%, 36%);
-    --grotto-night-3: hsl(30, 40%, 42%);
+    --grotto-night-0: hsl(30, 40%, 16%);
+    --grotto-night-1: hsl(30, 40%, 24%);
+    --grotto-night-2: hsl(30, 40%, 32%);
+    --grotto-night-3: hsl(30, 40%, 40%);
     --grotto-accent-1: hsl(120, 40%, 46%);
 }
-/*Zacian*/
-body.preset-zacian {
-    --accent-h: 5;
-    --accent-s: 60%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(30, 14%, 82%);
-    --grotto-day-2: hsl(30, 14%, 76%);
-    --grotto-day-3: hsl(30, 14%, 70%);
-    --grotto-night-0: hsl(200, 10%, 12%);
-    --grotto-night-1: hsl(200, 80%, 32%);
-    --grotto-night-2: hsl(200, 80%, 44%);
-    --grotto-night-3: hsl(200, 80%, 56%);
-    --grotto-accent-1: hsl(5, 60%, 60%);
+
+/*==== ALTERNATE SIDEBAR ====*/
+.sidebar-preset {
+    /*==== FILE NAVIGATION ====*/
+    --grotto-nav-title-color: var(--text-normal);
+    --grotto-nav-title-border-color: var(--text-normal);
+    /*==== CALENDAR PLUGIN ====*/
+    --grotto-calendar-color: var(--text-normal);
+    --grotto-calendar-border-color: var(--text-normal);
+    --grotto-calendar-weekend-border-color: var(--text-normal);
+    /*==== TITLE BAR ====*/
+    --grotto-titlebar-color: var(--text-normal);
+    --grotto-tab-header-icon-color: var(--text-normal);
+    --grotto-tab-header-border-color: var(--grotto-background-tertiary);
+    --grotto-tab-header-inactive-background-color: var(--background-primary);
+    /*==== GRAPHS ====*/
+    --grotto-graph-sidebar-controls-color: var(--text-normal);
+    --grotto-graph-sidebar-controls-border-color: var(--text-normal);
+    /*==== MOBILE TOOLBAR ====*/
+    --grotto-toolbar-color: var(--text-normal);
+    --grotto-toolbar-background-color: var(--background-secondary);
+    --grotto-toolbar-border-color: var(--text-normal);
+    /*==== MOBILE NAVIGATION BAR ====*/
+    --grotto-navbar-color: var(--text-normal);
+    --grotto-navbar-background-color: var(--background-secondary);
+    --grotto-navbar-border-color: var(--text-normal);
+    /*==== SEARCH SUGGESTIONS ====*/
+    --grotto-search-suggestion-color: var(--text-normal);
+    --grotto-search-suggestion-border-color: var(--text-normal);
+    /*==== SETTINGS ====*/
+    --grotto-settings-color: var(--text-normal);
+    --grotto-settings-border-color: var(--text-normal);
+    /*==== STATUS BAR ====*/
+    --grotto-statusbar-color: var(--text-normal);
+    --grotto-statusbar-background-color: var(--grotto-background-tertiary);
+    --grotto-statusbar-border-color: var(--text-normal);
+    /*==== MOBILE DRAWER HEADER ====*/
+    --grotto-mobile-drawer-header-color: var(--text-normal);
+    --grotto-mobile-drawer-header-active-background-color: var(--text-normal);
+    /*==== MOBILE TAB SWITCHER ====*/
+    --grotto-tab-switcher-color: var(--text-normal);
 }
-/* Style Settings Support */
+.theme-light.sidebar-preset {
+    --background-secondary: var(--grotto-background-tertiary);
+}
+.theme-dark.sidebar-preset, 
+.is-mobile.theme-dark.sidebar-preset {
+    --background-secondary: var(--grotto-night-0);
+}
+
+/*====  STYLE SETTINGS PLUGIN  ====*/
 .style-settings-empty {
     background-color: var(--background-primary);
 }
@@ -2509,6 +2623,7 @@ body.preset-zacian {
 .style-settings-heading[data-level="0"] + .style-settings-container {
     padding-left: 16px;
 }
+
 /* @settings
 name: Color Controls
 id: hidden-grotto-style
@@ -2531,20 +2646,20 @@ settings:
                 label: Aggron
                 value: preset-aggron
             -
-                label: Alola
-                value: preset-alola
-            -
-                label: Calyrex
-                value: preset-calyrex
-            -
                 label: Clobbopus
                 value: preset-clobbopus
+            -
+                label: Cryogonal
+                value: preset-cryogonal
             -
                 label: Darkrai
                 value: preset-darkrai
             -
-                label: Lucario
-                value: preset-lucario
+                label: Ice Rider Calyrex
+                value: preset-ice-rider-calyrex
+            -
+                label: Mega Lucario
+                value: preset-mega-lucario
             -
                 label: Meloetta
                 value: preset-meloetta
@@ -2552,14 +2667,14 @@ settings:
                 label: Noivern
                 value: preset-noivern
             -
+                label: Pirouette Meloetta
+                value: preset-pirouette-meloetta
+            -
                 label: Poltchageist
                 value: preset-poltchageist
             -
-                label: Rayquaza
-                value: preset-rayquaza
-            -
-                label: Revavroom
-                value: preset-revavroom
+                label: MegaRayquaza
+                value: preset-mega-rayquaza
             -
                 label: Skeledirge
                 value: preset-skeledirge
@@ -2570,9 +2685,6 @@ settings:
                 label: Swampert
                 value: preset-swampert
             -
-                label: Unova
-                value: preset-unova
-            -
                 label: Ursaluna
                 value: preset-ursaluna
             -
@@ -2581,12 +2693,10 @@ settings:
             -
                 label: Whimsicott
                 value: preset-whimsicott
-            -
-                label: Zacian
-                value: preset-zacian
     -
         id: sidebar-preset
-        title: Sidebar Background
+        title: Sidebar Style
+        description: Enable to use an alternate sidebar style
         type: class-toggle
 */
 /* @settings
@@ -2607,8 +2717,12 @@ settings:
         id: file-line-width
         title: File Line Width
         description: Adjust the width of the viewable lines of text
-        type: variable-text
-        default: 700px
+        type: variable-number-slider
+        format: px
+        default: 700
+        min: 200
+        max: 1000
+        step: 50
 */
 /* @settings
 name: Table Controls
@@ -2702,8 +2816,12 @@ settings:
     -
         id: embed-max-height
         title: Embed Max Height
-        type: variable-text
-        default: 4000px
+        type: variable-number-slider
+        format: px
+        default: 4000
+        min: 400
+        max: 8000
+        step: 100
 */
 /* @settings
 name: Tag Controls
@@ -2723,6 +2841,11 @@ settings:
             -
                 label: Disabled
                 value: none
+    -
+        id: accented-tag
+        title: Tag Style
+        description: Enable to use accented tags
+        type: class-toggle
 */
 /* @settings
 name: Mobile Controls
@@ -2756,9 +2879,18 @@ id: grotto-calendar-plugin-controls
 collapsed: false
 settings:
     -
-        id: calendar-preset
-        title: Alternate Calendar Style
-        type: class-toggle
+        id: grotto-calendar-weekend-border-width
+        title: Calendar Weekend Seprator
+        description: Enable to separate the weekend with a border
+        type: variable-select
+        default: 0px
+        options:
+            -
+                label: Disabled
+                value: 0px
+            -
+                label: Enabled
+                value: 1px
 */
 /* @settings
 name: Privacy Controls
@@ -2767,8 +2899,8 @@ collapsed: false
 settings:
     -
         id: grotto-blur
-        title: Blurred View
-        description: Enable to blur everything from prying eyes (This setting will always be at the BOTTOM of this menu)
+        title: Blur
+        description: Enable to blur everything from prying eyes
         type: variable-select
         default: 0px
         options:
@@ -2779,15 +2911,6 @@ settings:
                 label: Disabled
                 value: 0px
 */
-
-
-
-
-
-
-
-
-
 
 
 

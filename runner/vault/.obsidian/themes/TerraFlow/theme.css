@@ -94,9 +94,11 @@ settings:
     --weight-medium: 500;
     --weight-semibold: 600;
     --weight-bold: 700;
-    --line-tight: 1.2;
-    --line-normal: 1.4;
-    --line-relaxed: 1.6;
+    --line-tight: 1.5;
+    --line-normal: 1.7;
+    --line-relaxed: 2.0;
+    --editor-max-width: 64ch;
+    --reading-max-width: 64ch;
     --folder-opacity: .15;
     --folder-opacity-dark: .12;
     --link-opacity-normal: .1;
@@ -1063,13 +1065,13 @@ settings:
 }
 
 .theme-light.summer-theme {
---background-primary: #fafafa;
---background-primary-rgb: 250, 250, 250;
+--background-primary: #f7f7f7;
+--background-primary-rgb: 247, 247, 247;
 --background-secondary: #f5f5f5;
 --background-secondary-rgb: 245, 245, 245;
 --background-secondary-alt: #f0f0f0;
---text-normal: #3d1a2e;
---text-normal-rgb: 61, 26, 46;
+--text-normal: #191919;
+--text-normal-rgb: 25, 25, 25;
 --text-muted: rgba(61, 26, 46, .7);
 --emphasis-color: #a02659;
 --emphasis-color-light: #d63384;
@@ -1266,6 +1268,14 @@ settings:
 body,
 html {
     transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-source-view.mod-cm6 .cm-line {
+  line-height: var(--line-normal);
+  --file-line-width: 64ch;
+  padding-left: 2px;
+  padding-right: 0px;
 }
 
 /* UI Element Styling */
