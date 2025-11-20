@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @font-face {
   font-family: "its";
   src:
@@ -3156,9 +3156,13 @@ body
   display: inline;
   background-color: rgba(0, 0, 0, 0);
   -webkit-mask-position: inherit;
+  mask-position: inherit;
   -webkit-mask-size: inherit;
+  mask-size: inherit;
   -webkit-mask-repeat: inherit;
+  mask-repeat: inherit;
   -webkit-mask-image: inherit;
+  mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
   color: light-dark(rgb(207, 206, 205), rgb(93, 98, 101));
@@ -3871,3 +3875,4 @@ body
   font-weight: 700;
   text-decoration: none solid rgb(235, 235, 235);
 }
+
