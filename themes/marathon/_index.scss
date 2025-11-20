@@ -1,4 +1,4 @@
-@use "sass:map";
+﻿@use "sass:map";
 @use "../variables.scss" as *;
 
 :root {
@@ -2412,9 +2412,13 @@ body {
     display: inline;
     background-color: rgba(0, 0, 0, 0);
     -webkit-mask-position: inherit;
+    mask-position: inherit;
     -webkit-mask-size: inherit;
+    mask-size: inherit;
     -webkit-mask-repeat: inherit;
+    mask-repeat: inherit;
     -webkit-mask-image: inherit;
+    mask-image: inherit;
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
@@ -3256,11 +3260,13 @@ body {
         );
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
+        mask-image: var(--folder-closed-icon);
       }
       li:has(> .folder-outer.open) > .folder-container:before {
         background: var(--collapse-icon-color, var(--quartz-icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
+        mask-image: var(--folder-open-icon);
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -3306,6 +3312,7 @@ body {
           background: var(--quartz-icon-color);
           mask-image: var(--file-icon);
           -webkit-mask-image: var(--file-icon);
+          mask-image: var(--file-icon);
           margin-inline-end: 0.5rem;
         }
       }
@@ -3321,6 +3328,7 @@ body {
     background: var(--quartz-icon-color) !important;
     mask-image: var(--readermode-icon);
     -webkit-mask-image: var(--readermode-icon);
+    mask-image: var(--readermode-icon);
     width: 24px;
     height: 24px;
   }
@@ -3334,6 +3342,7 @@ body {
     background: var(--quartz-icon-color) !important;
     mask-image: var(--graph-icon);
     -webkit-mask-image: var(--graph-icon);
+    mask-image: var(--graph-icon);
     width: 24px;
     height: 24px;
   }
@@ -3569,6 +3578,7 @@ body {
   button.darkmode {
     mask-image: var(--sun-icon);
     -webkit-mask-image: var(--sun-icon);
+    mask-image: var(--sun-icon);
   }
 }
 
@@ -3576,6 +3586,7 @@ body {
   button.darkmode {
     mask-image: var(--moon-icon);
     -webkit-mask-image: var(--moon-icon);
+    mask-image: var(--moon-icon);
   }
 }
 
@@ -3600,3 +3611,4 @@ body {
     }
   }
 }
+

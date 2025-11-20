@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: "Karla";
   font-style: normal;
   font-weight: 400;
@@ -1439,9 +1439,13 @@ body
   display: inline;
   background-color: rgba(0, 0, 0, 0);
   -webkit-mask-position: inherit;
+  mask-position: inherit;
   -webkit-mask-size: inherit;
+  mask-size: inherit;
   -webkit-mask-repeat: inherit;
+  mask-repeat: inherit;
   -webkit-mask-image: inherit;
+  mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
   color: rgb(92, 92, 92);
@@ -2120,3 +2124,4 @@ body
   font-weight: 400;
   text-decoration: none solid rgb(92, 92, 92);
 }
+

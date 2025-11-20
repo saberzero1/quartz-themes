@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: Hack;
   src:
     url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/fonts/hack-regular.woff2?sha=3114f1256")
@@ -2259,9 +2259,13 @@ body
   display: inline;
   background-color: rgba(0, 0, 0, 0);
   -webkit-mask-position: inherit;
+  mask-position: inherit;
   -webkit-mask-size: inherit;
+  mask-size: inherit;
   -webkit-mask-repeat: inherit;
+  mask-repeat: inherit;
   -webkit-mask-image: inherit;
+  mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
@@ -2951,3 +2955,4 @@ body
   font-weight: 400;
   text-decoration: none solid rgb(179, 179, 179);
 }
+

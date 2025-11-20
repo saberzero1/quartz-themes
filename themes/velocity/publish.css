@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: "Avenir";
   font-style: normal;
   font-weight: 400;
@@ -2967,9 +2967,13 @@ body
   display: inline;
   background-color: rgba(0, 0, 0, 0);
   -webkit-mask-position: inherit;
+  mask-position: inherit;
   -webkit-mask-size: inherit;
+  mask-size: inherit;
   -webkit-mask-repeat: inherit;
+  mask-repeat: inherit;
   -webkit-mask-image: inherit;
+  mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
   color: light-dark(oklch(65% 0.0105 281deg), oklch(58.75% 0.0125 275deg));
@@ -3839,3 +3843,4 @@ body
   font-weight: 600;
   text-decoration: none solid oklab(82.4705% -0.0448075 -0.0843141 / 0.9);
 }
+

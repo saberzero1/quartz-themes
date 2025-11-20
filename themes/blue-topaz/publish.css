@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @font-face {
   font-family: "Lucida Handwriting";
   font-style: italic;
@@ -10383,9 +10383,13 @@ body
   display: inline;
   background-color: rgba(0, 0, 0, 0);
   -webkit-mask-position: inherit;
+  mask-position: inherit;
   -webkit-mask-size: inherit;
+  mask-size: inherit;
   -webkit-mask-repeat: inherit;
+  mask-repeat: inherit;
   -webkit-mask-image: inherit;
+  mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
   color: light-dark(rgb(127, 127, 127), rgb(138, 138, 138));
@@ -11210,3 +11214,4 @@ body
   font-weight: 600;
   text-decoration: none solid color(srgb 0.918792 0.6776 0.691167);
 }
+

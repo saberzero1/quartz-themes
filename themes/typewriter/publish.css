@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: "iA Writer Mono";
   font-style: italic;
   font-display: swap;
@@ -2161,9 +2161,13 @@ body
   display: inline;
   background-color: rgba(0, 0, 0, 0);
   -webkit-mask-position: inherit;
+  mask-position: inherit;
   -webkit-mask-size: inherit;
+  mask-size: inherit;
   -webkit-mask-repeat: inherit;
+  mask-repeat: inherit;
   -webkit-mask-image: inherit;
+  mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
   color: light-dark(rgb(89, 89, 89), rgb(153, 153, 153));
@@ -2774,3 +2778,4 @@ body
   font-weight: 400;
   text-decoration: none solid rgb(153, 153, 153);
 }
+
