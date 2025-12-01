@@ -157,3 +157,8 @@ publish/*
 *.db-wal
 *.sqlite
 *.sqlite3
+
+# Nix
+result
+result-*
+.direnv/
