@@ -28,17 +28,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
         with:
-          node-version: "22"
-          cache: "npm"
-
-      - name: "Install just"
-        run: npm i just-install
+          nix_path: nixpkgs=channel:nixos-unstable
 
       - name: "Install npm dependencies"
-        run: npm ci
+        run: nix develop --command npm ci
 
       - name: "Prepared database"
-        run: npm run db:ingest
+        run: nix develop --command npm run db:ingest

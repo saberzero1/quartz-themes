@@ -18,19 +18,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
         with:
-          node-version: 22
-
-      - name: "Install just"
-        run: npm i just-install
+          nix_path: nixpkgs=channel:nixos-unstable
 
       - name: "Install npm dependencies"
-        run: npm ci
+        run: nix develop --command npm ci
 
       - name: "Check style"
-        run: npm run --silent verify-ci
+        run: nix develop --command npm run --silent verify-ci
 
       - name: "Copy current lists"
         run: |
@@ -39,8 +36,8 @@ jobs:
 
       - name: "Check Quartz Syncer file list"
         run: |
-          npm run --silent json-compile
-          npx prettier quartz-syncer-file-list.json --write
+          nix develop --command npm run --silent json-compile
+          nix develop --command npx prettier quartz-syncer-file-list.json --write
           cmp --silent quartz-syncer-file-list.json quartz-syncer-file-list-old.json && echo "Quartz Syncer file list up to date" && exit 0 || echo "Quartz Syncer file list mismatch" && exit 1
 
       - name: "Check theme list"
