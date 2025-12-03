@@ -27,6 +27,7 @@
           atk
           cups
           dbus
+          dbus.lib
           expat
           libdrm
           libxkbcommon
@@ -44,11 +45,35 @@
           xorg.libXfixes
           xorg.libXrandr
           xorg.libxcb
+          xorg.libXcursor
+          xorg.libXi
+          xorg.libXrender
+          xorg.libXtst
+          xorg.libXScrnSaver
           # GTK for Electron/Chromium-based applications
           gtk3
+          gtk4
           # Additional libraries for Chromium/Electron
           libGL
           udev
+          # Graphics buffer management (required for Chromium)
+          libgbm
+          # Font configuration
+          fontconfig
+          freetype
+          # UUID generation (important for unique user-data-dir)
+          libuuid
+          # System utilities
+          systemd
+          # Wayland support
+          wayland
+          # Additional Electron dependencies
+          libnotify
+          libappindicator-gtk3
+          libdbusmenu
+          # Networking
+          curl
+          wget
         ];
 
         # Use nix-ld to provide dynamic linker for downloaded binaries
