@@ -1,7 +1,7 @@
 :root {
   /* Font settings - Consistent across themes */
   --font-interface-theme: "Segoe UI", Arial, sans-serif;
-  --font-text-theme: "Georgia", Times, serif;
+  --font-text-theme: "Georgia", Times, serif; 
   --font-monospace-theme: "Consolas", "Courier New", monospace;
   --font-text-size: 16px;
   --font-ui-medium: 15px;
@@ -115,11 +115,7 @@
   --bold-modifier: 200;
 
   /* Window frame */
-  --titlebar-background: linear-gradient(
-    to bottom,
-    var(--color-base-05),
-    var(--color-base-00)
-  ); /* Subtle gradient */
+  --titlebar-background: linear-gradient(to bottom, var(--color-base-05), var(--color-base-00)); /* Subtle gradient */
   --titlebar-background-focused: var(--color-base-00);
   --titlebar-text-color: var(--text-normal);
   --titlebar-text-color-focused: var(--text-normal);
@@ -175,11 +171,7 @@
   --blockquote-font-style: italic;
   --blockquote-color: var(--text-normal);
 
-  --callout-background: linear-gradient(
-    to bottom,
-    var(--color-base-05),
-    var(--color-base-00)
-  ); /* Subtle glow */
+  --callout-background: linear-gradient(to bottom, var(--color-base-05), var(--color-base-00)); /* Subtle glow */
   --callout-border-width: var(--border-width);
   --callout-border-opacity: 0.7;
   --callout-padding: var(--size-4-3);
@@ -312,11 +304,7 @@
   --icon-color-hover: var(--text-accent);
   --icon-opacity: 0.8;
   --icon-opacity-hover: 1;
-  --canvas-background: linear-gradient(
-    to bottom,
-    var(--color-base-00),
-    var(--color-base-05)
-  ); /* gradient */
+  --canvas-background: linear-gradient(to bottom, var(--color-base-00), var(--color-base-05)); /* gradient */
   --canvas-dot-pattern: rgba(var(--color-base-30-rgb), 0.3);
 }
 
@@ -327,12 +315,7 @@
   --background-primary-alt: #2a2a2a; /* Slightly lighter gray */
   --background-secondary: #151515; /* Darker gray for contrast */
   --background-secondary-alt: #151515;
-  --background-modifier-hover: rgba(
-    255,
-    255,
-    255,
-    0.05
-  ); /* Subtle hover effect */
+  --background-modifier-hover: rgba(255, 255, 255, 0.05); /* Subtle hover effect */
   --background-modifier-active-hover: rgba(255, 255, 255, 0.1);
   --background-modifier-border: #4a2c2a; /* Dark red-brown border */
   --background-modifier-border-hover: #663b38;
@@ -436,7 +419,7 @@
   --divider-color-hover: #663b38;
 
   /* Fonts */
-  --font-text-theme: "Times New Roman", Times, serif;
+  --font-text-theme: "Times New Roman", Times, serif; 
   --font-interface-theme: "Times New Roman", Times, serif;
   --font-monospace-theme: "Courier New", Courier, monospace;
 }
@@ -451,33 +434,9 @@ a {
 }
 
 /* Headings */
-h1 {
-  color: var(--h1-color);
-  font-size: var(--h1-size);
-  font-weight: var(--h1-weight);
-}
-h2 {
-  color: var(--h2-color);
-  font-size: var(--h2-size);
-  font-weight: var(--h2-weight);
-}
-h3 {
-  color: var(--h3-color);
-  font-size: var(--h3-size);
-  font-weight: var(--h3-weight);
-}
-h4 {
-  color: var(--h4-color);
-  font-size: var(--h4-size);
-  font-weight: var(--h4-weight);
-}
-h5 {
-  color: var(--h5-color);
-  font-size: var(--h5-size);
-  font-weight: var(--h5-weight);
-}
-h6 {
-  color: var(--h6-color);
-  font-size: var(--h6-size);
-  font-weight: var(--h6-weight);
-}
+h1 { color: var(--h1-color); font-size: var(--h1-size); font-weight: var(--h1-weight); }
+h2 { color: var(--h2-color); font-size: var(--h2-size); font-weight: var(--h2-weight); }
+h3 { color: var(--h3-color); font-size: var(--h3-size); font-weight: var(--h3-weight); }
+h4 { color: var(--h4-color); font-size: var(--h4-size); font-weight: var(--h4-weight); }
+h5 { color: var(--h5-color); font-size: var(--h5-size); font-weight: var(--h5-weight); }
+h6 { color: var(--h6-color); font-size: var(--h6-size); font-weight: var(--h6-weight); }

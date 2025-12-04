@@ -1,8 +1,7 @@
 {
-  "name": "Ribbons",
-  "version": "1.0.1",
-  "minAppVersion": "1.8.0",
-  "author": "ddspog",
-  "authorUrl": "https://github.com/ddspog",
-  "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
+	"name": "Ribbons",
+	"version": "1.0.1",
+	"minAppVersion": "1.8.0",
+	"author": "ddspog",
+	"authorUrl": "https://github.com/ddspog"
 }

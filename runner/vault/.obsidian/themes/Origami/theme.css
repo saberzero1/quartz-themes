@@ -2650,10 +2650,10 @@ body {
     --radius-s: 0px !important;
 }
 
-.o-hack-d.workspace-tab-header-container,
-.o-hack-d.workspace-split.mod-vertical .workspace-tab-header-container,
-.o-hack-d.workspace-tabs.mod-top-right-space .workspace-tab-header-container,
-.o-hack-d.workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+.o-hack-d .workspace-tab-header-container,
+.o-hack-d .workspace-split.mod-vertical .workspace-tab-header-container,
+.o-hack-d .workspace-tabs.mod-top-right-space .workspace-tab-header-container,
+.o-hack-d .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
     background: #ffffff !important;
     height: 41px
 }
@@ -2694,6 +2694,20 @@ body {
 
     50% {
         transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pop-out {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
     }
 
     100% {
@@ -4744,6 +4758,10 @@ input[type="checkbox"] {
 /* canvas
 */
 
+.canvas-node-group .canvas-node-container {
+    background-color: var(--background-primary);
+}
+
 .is-focused .canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view {
    transform: none;
 }
@@ -4752,7 +4770,7 @@ input[type="checkbox"] {
 .canvas-node.is-focused .canvas-node-container,
 .canvas-node.is-selected.is-themed .canvas-node-container,
 .canvas-node.is-focused.is-themed .canvas-node-container {
-    animation: 0.5s pop cubic-bezier(0.17, 0.89, 0.32, 1.27);
+    animation: 0.5s pop-out cubic-bezier(0.17, 0.89, 0.32, 1.27);
     border: 1px solid var(--text-normal);
     box-shadow: 0px 20px 40px rgba(
         var(--canvas-color), 0.3),
@@ -4780,8 +4798,8 @@ input[type="checkbox"] {
     content: '';
     width: 100%;
     height: 100%;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-left: 2%;
+    margin-top: 2%;
     border: 4px solid var(--text-normal);
     background: rgb(var(--canvas-color));
     border-radius: 0em;

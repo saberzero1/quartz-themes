@@ -25,23 +25,26 @@
   --color-cyan-rgb: 42, 161, 152;
   --color-green: rgb(133, 153, 0);
   --color-green-rgb: 133, 153, 0;
-  --accent-h: 18;
-  --accent-s: 80%;
-  --accent-l: 44%;
+  --accent-h: 17.5690607735deg;
+  --accent-s: 80.4444444444%;
+  --accent-l: 44.1176470588%;
 }
 
+/* Settings for the Style Settings plugin. Leave in _colors.scss because
+it relies on the $tones and $colors maps. */
 /*! @settings
 name: Solarized Theme Settings
 id: solarized-theme-settings
 settings:
-  - id: colors
-    title: Colors
-    type: heading
-    level: 2
+  - id: disable-active-line-highlight
+    title: Disable active line highlight
+    description: "By default Solarized highlights the active line. This setting lets you disable that behavior."
+    type: class-toggle
+    default: false
   - id: tones
     title: Base Tones
     type: heading
-    level: 3
+    level: 2
     collapsed: true
   - id: base03
     title: base03
@@ -87,7 +90,7 @@ settings:
     description: "NB This does not override Obsidian's built-in accent color (see Appearance > Accent color)"
     title: Accent Colors
     type: heading
-    level: 3
+    level: 2
     collapsed: true
   - id: color-yellow
     title: yellow
@@ -210,7 +213,10 @@ settings:
 
 .theme-dark,
 .theme-light {
+  /* UI elements */
   --interactive-accent: var(--color-accent);
+  --interactive-normal: var(--background-primary-alt);
+  --interactive-hover: var(--background-primary);
   /* Background */
   --background-secondary: var(--background-primary);
   --background-secondary-alt: var(--background-primary-alt);
@@ -359,16 +365,15 @@ settings:
 }
 
 /* Highlight current line */
-.cm-active {
+body:not(.disable-active-line-highlight) .cm-active {
   background: var(--active-bg);
 }
-.cm-active.cm-gutterElement {
+body:not(.disable-active-line-highlight) .cm-active.cm-gutterElement {
   color: var(--color-accent);
 }
 
 /* Hashtags */
-.cm-hashtag.cm-hashtag-begin,
-.cm-hashtag.cm-hashtag-end {
+.cm-hashtag.cm-hashtag-begin, .cm-hashtag.cm-hashtag-end {
   border: unset;
   border-radius: unset;
 }
@@ -407,22 +412,29 @@ settings:
 div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode {
   color: var(--text-on-accent);
 }
-div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode="normal"] {
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=normal] {
   background-color: var(--color-blue);
 }
-div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode="insert"] {
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=insert] {
   background-color: var(--color-green);
 }
-div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode="visual"] {
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=visual] {
   background-color: var(--color-pink);
 }
-div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode="replace"] {
+div.status-bar-item.plugin-obsidian-vimrc-support.vimrc-support-vim-mode[data-vim-mode=replace] {
   background-color: var(--red);
 }
 
 /* Mermaid */
 .mermaid tspan {
   fill: var(--text-on-accent);
+}
+
+/* Buttons */
+@media (hover: hover) {
+  button.mod-cta:hover {
+    color: var(--interactive-accent);
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

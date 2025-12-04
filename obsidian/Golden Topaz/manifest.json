@@ -1,7 +1,6 @@
 {
-  "name": "Golden Topaz",
-  "version": "0.0.0",
-  "minAppVersion": "0.16.0",
-  "author": "Mouth on Cloud",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+    "name": "Golden Topaz",
+    "version": "0.0.0",
+    "minAppVersion": "0.16.0",
+    "author": "Mouth on Cloud"
 }

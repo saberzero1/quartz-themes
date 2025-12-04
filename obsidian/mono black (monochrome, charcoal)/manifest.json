@@ -1,8 +1,7 @@
 {
-  "name": "mono black (monochrome, charcoal)",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "zc",
-  "authorUrl": "https://github.com/ZeChArtiahSaher",
-  "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
+	"name": "mono black (monochrome, charcoal)",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"author": "zc",
+	"authorUrl": "https://github.com/ZeChArtiahSaher"
 }

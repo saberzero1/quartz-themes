@@ -698,12 +698,12 @@ body.theme-light {
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgb(0, 0, 0 0.2) !important;
-  --scrollbar-bg: rgb(0, 0, 0 0.05) !important;
+  --scrollbar-active-thumb-bg: rgb(244, 244, 240) !important;
+  --scrollbar-bg: rgb(0, 0, 0) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: 10px !important;
-  --scrollbar-thumb-bg: rgb(0, 0, 0 0.1) !important;
+  --scrollbar-thumb-bg: rgb(253, 254, 254) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: rgb(84, 81, 81) !important;
   --search-clear-button-size: 13px !important;
@@ -1186,7 +1186,6 @@ body.theme-light {
   --yellow-70: rgb(0, 0, 0) !important;
   --yellow-80: rgb(0, 0, 0) !important;
   --yellow-90: rgb(0, 0, 0) !important;
-  --custom-accent-color: 102, 153, 97 !important;
 }
 
 body.theme-dark {
@@ -1787,12 +1786,12 @@ body.theme-dark {
   --safe-area-inset-left: 0px;
   --safe-area-inset-right: 0px;
   --safe-area-inset-top: 0px;
-  --scrollbar-active-thumb-bg: rgb(255, 255, 255 0.2);
-  --scrollbar-bg: rgb(255, 255, 255 0.05);
+  --scrollbar-active-thumb-bg: rgba(58, 56, 56, 0.5);
+  --scrollbar-bg: rgb(255, 255, 255);
   --scrollbar-border-width: 3px 3px 3px 2px;
   --scrollbar-height: 12px;
   --scrollbar-radius: 10px;
-  --scrollbar-thumb-bg: rgb(255, 255, 255 0.1);
+  --scrollbar-thumb-bg: rgb(38, 38, 37);
   --scrollbar-width: 12px;
   --search-clear-button-color: rgb(199, 197, 194);
   --search-clear-button-size: 13px;
@@ -2275,7 +2274,6 @@ body.theme-dark {
   --yellow-70: rgb(0, 0, 0);
   --yellow-80: rgb(0, 0, 0);
   --yellow-90: rgb(0, 0, 0);
-  --custom-accent-color: 102, 153, 97;
 }
 
 body .markdown-rendered a.external-link {

@@ -1,18 +1,17 @@
 /* ==
 @name             Minimal Dracula
 @namespace        github.com/druxorey/minimal-dracula-for-obsidian
-@version          1.7.1
+@version          1.7.2
 @description      Are you tired of the same boring colors on Obsidian? Then try this modern color style based on the Dracula theme
 @author           Druxorey
 @license          GNU General Public License v3.0
 == */
 
-/* ============================ COLORSCHEME ========================== */
-
 :root {
 	--drx-border-radius: 10px;
 	--drx-border-width: 2px;
 	--drx-shadow-radius: 8px;
+	background-color: #1E1F29;
 }
 
 /* ========================== OBSIDIAN VALUES ======================== */
@@ -56,7 +55,7 @@ body {
 
 	--callout-default: var(--drx-color-callout-comment);
 	--callout-info: var(--drx-color-callout-comment);
-	--callout-todo: var(--drx-color-callout-purple);
+	--callout-todo: white;
 	--callout-important: var(--drx-color-callout-purple);
 	--callout-example: var(--drx-color-callout-pink);
 	--callout-summary: var(--drx-color-callout-cyan);
@@ -223,13 +222,13 @@ body.theme-light {
 	--drx-color-overlay: #ccd0da;
 	--drx-color-highlight: #bcc0cc;
 
-    --drx-color-text: #4C4F69;
-    --drx-color-subtext: #5C5F77;
-    --drx-color-deactivate: #ACB0BE;
+	--drx-color-text: #4C4F69;
+	--drx-color-subtext: #5C5F77;
+	--drx-color-deactivate: #ACB0BE;
 
 	--drx-color-comment: #6270A4;
 
-    --drx-color-accent: #EA76CB;
+	--drx-color-accent: #EA76CB;
 	--drx-color-important: #EE95D7;
 
 	--drx-color-red-1: #f2cdcd;
@@ -371,10 +370,22 @@ a:hover {
 	color: var(--drx-color-important) !important;
 }
 
+/* Explicit H1 font size */
+h1 {
+	font-size: 2em;
+}
+
 /* Rounds the corners of all panels */
 .workspace-tab-container, .prompt {
 	margin: 10px;
 	border-radius: var(--drx-border-radius);
+}
+
+/* Styles header 1 in markdown with a underline */
+.HyperMD-header-1 {
+	border-bottom: 3px solid;
+	border-color: var(--drx-color-accent);
+	padding-bottom: 0.75rem !important;
 }
 
 /* Styles inline code blocks in markdown (text between ``) */
@@ -431,16 +442,19 @@ body:not(.is-mobile) .workspace {
 	padding: 8px;
 }
 
-body:not(.table-width-obsidian-default) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
-body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
-	width: 100% !important;
-}
-
+/* Enables container queries for markdown views */
 .markdown-source-view,
 .markdown-reading-view {
 	container-type: inline-size;
 }
 
+/* Table width adjustments */
+body:not(.table-width-obsidian-default) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
+	width: 100% !important;
+}
+
+/* Custom wide table styling */
 .table-width-customized .markdown-source-view.mod-cm6.is-live-preview .cm-content>.cm-table-widget,
 .table-width-customized .markdown-rendered .markdown-preview-sizer>div:has(>table) {
 	overflow: auto;
@@ -448,37 +462,16 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 	margin-left: calc(200rem - 100%) / -2) !important;
 }
 
-@media (max-width: 900px) {
+/* ============================= CALLOUTS ============================ */
 
-	/* Adjusts the status bar background for dark mode */
-	body.theme-dark {
-		--status-bar-background: red;
-	}
+.theme-dark .callout[data-callout="todo"] {
+	background: var(--drx-color-red-2) !important;
 
-	/* Adjusts the status bar background for light mode */
-	body.theme-light {
-		--status-bar-background: red;
+	a {
+		color: var(--drx-color-text) !important;
 	}
-
-	/* Removes border radius and adjusts margins for small screens */
-	.workspace-split.mod-root .view-content {
-		border-radius: 0px;
-		margin: 0vh 0vw;
-		width: calc(100%);
-	}
-
-	/* Removes padding for the horizontal main container on non-mobile devices */
-	body:not(.is-mobile) .horizontal-main-container {
-		padding-bottom: 0px;
-	}
-
-	/* Removes margins for the workspace on non-mobile devices */
-	body:not(.is-mobile) .workspace {
-		margin: 0px;
-	}
+	--bold-color: var(--drx-color-text);
 }
-
-/* ============================ CALL OUTS ============================ */
 
 .theme-light .cm-callout {
 	border-radius: var(--drx-border-radius);
@@ -486,7 +479,7 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout-title {
-    gap: 10px;
+	gap: 10px;
 	padding: 1rem;
 }
 
@@ -495,7 +488,7 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout-content {
-	background: var(--drx-color-overlay) !important;
+	background: var(--drx-color-base) !important;
 	padding: 1rem;
 }
 
@@ -509,7 +502,16 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout[data-callout="todo"] {
-	background: #BD93F93F !important;
+	background: var(--drx-color-red-2) !important;
+	color: white !important;
+
+	.callout-content {
+		color: var(--drx-color-text) !important;
+	}
+
+	a {
+		color: white !important;
+	}
 }
 
 .theme-light .callout[data-callout="important"] {
@@ -556,6 +558,46 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 	background: #FFB86C3F !important;
 }
 
+.callout[data-callout="example"] {
+	--bold-color: var(--drx-color-pink-2);
+}
+
+.callout[data-callout="summary"] {
+	--bold-color: var(--drx-color-cyan-2);
+}
+
+.callout[data-callout="tip"] {
+	--bold-color: var(--drx-color-cyan-2);
+}
+
+.callout[data-callout="bug"] {
+	--bold-color: var(--drx-color-red-2);
+}
+
+.callout[data-callout="error"] {
+	--bold-color: var(--drx-color-red-2);
+}
+
+.callout[data-callout="fail"] {
+	--bold-color: var(--drx-color-red-2);
+}
+
+.callout[data-callout="quote"] {
+	--bold-color: var(--drx-color-green-2);
+}
+
+.callout[data-callout="success"] {
+	--bold-color: var(--drx-color-green-2);
+}
+
+.callout[data-callout="question"] {
+	--bold-color: var(--drx-color-orange-2);
+}
+
+.callout[data-callout="warning"] {
+	--bold-color: var(--drx-color-orange-2);
+}
+
 /* ============================ PRINTING ============================= */
 
 @media print {
@@ -591,4 +633,34 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 	.theme-light .callout-content {
 		background: #F4F4F6 !important;
 	}
+}
+
+/* ======================== IMAGES AND MEDIA ========================= */
+
+/* Left aligned images based on alt text */
+img[alt*="left"] {
+	float:left;
+	clear:left;
+	margin-right: 2rem;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+/* Right aligned images based on alt text */
+img[alt*="right"] {
+	float:right;
+	clear:right;
+	margin-left: 1rem;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+/* Center aligned images based on alt text */
+img[alt*="center"],img[alt*="centre"] {
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	max-height: 400px;
 }

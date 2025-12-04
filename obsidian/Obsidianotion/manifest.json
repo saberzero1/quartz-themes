@@ -3,6 +3,5 @@
   "version": "1.1.39",
   "minAppVersion": "1.1.37",
   "author": "Diego Eis",
-  "authorUrl": "https://diegoeis.com",
-  "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
+  "authorUrl": "https://diegoeis.com"
 }

@@ -1,8 +1,7 @@
 {
-  "name": "Prime",
-  "version": "1.1.4",
-  "minAppVersion": "1.0.0",
-  "author": "Eda",
-  "authorUrl": "https://rivea0.github.io",
-  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
+	"name": "Prime",
+	"version": "1.1.4",
+	"minAppVersion": "1.0.0",
+	"author": "Eda",
+	"authorUrl": "https://rivea0.github.io"
 }

@@ -256,7 +256,7 @@ body {
   --text-normal: rgb(197, 184, 161);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 45%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));
-  --text-error: #800000;
+  --text-error: rgb(230,60,60);
   --text-error-hover: #990000;
 
   --text-highlight-bg: rgba(255, 177, 80, 0.3);

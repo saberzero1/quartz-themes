@@ -1,7 +1,7 @@
 /*
 
       Theme: Retroma
-    Version: v1.1.6
+    Version: v2.0.0
      Author: emarpiee
 Description: A tribute to the past with an eye toward the future.
 
@@ -198,19 +198,17 @@ body {
 
   /* Blockquote Styling */
   --blockquote-background-color: oklch(
-    from var(--background-secondary) l c h / 50%
+    from var(--background-secondary) l c h / 40%
   );
   --blockquote-border-thickness: var(--size-2-2);
-  --blockquote-border-color: oklch(from var(--base-accent) 50% c h / 50%);
+  --blockquote-border-color: oklch(from var(--base-accent) 50% c h / 75%);
 
   /* Table Styling */
-  --table-selection: var(--text-selection);
-  --table-header-background: oklch(from var(--text-normal) l c h / 10%);
-  --table-header-background-hover: oklch(
-    from var(--table-header-background) l c h / 15% / 50%
-  );
+  --table-header-background: oklch(from var(--accent-1) 50% c h / 30%);
+  --table-data-background: oklch(from var(--base-accent) l c h / 7%);
   --table-border-color: oklch(from var(--table-header-color) 50% c h / 50%);
   --table-border-width: 1px;
+  --table-border-spacing: 2px;
 
   /* Misc */
   --border-width: 1px;
@@ -227,6 +225,8 @@ body {
   --titlebar-background-focused: var(--titlebar-background);
   --slider-track-height: var(--size-2-3);
   --strong-emphasis: var(--italic-color);
+  --menu-background: var(--background-primary);
+  --nav-tag-color: var(--text-muted);
 
   /*** Metadata  ***/
   --metadata-background: oklch(from var(--background-secondary) l c h / 75%);
@@ -302,6 +302,54 @@ body {
 }
 
 /*=============================================
+=               COLOR SCHEMES                 =
+=============================================*/
+/*Reference: https://en.wikipedia.org/wiki/Color_scheme*/
+
+/*Uses hues that are adjacent on the color wheel, typically spaced 30 degrees apart.*/
+.cs-analogous-colors {
+  --rotation-1: 30;
+  --rotation-2: 60;
+}
+
+.cs-analogous-colors-reversed {
+  --rotation-1: 60;
+  --rotation-2: 30;
+}
+
+/*Uses the base hue and the two colors next to its complement (which is at 180 degress). The two supporting colors are 30 degrees away from the exact complementary color.*/
+.cs-split-complementary-colors {
+  --rotation-1: 150;
+  --rotation-2: 210;
+}
+
+.cs-split-complementary-colors-reversed {
+  --rotation-1: 210;
+  --rotation-2: 150;
+}
+
+/*Uses three colors equally spaced on the color wheel (360 / 3 = 120 degrees ).*/
+.cs-triadic-colors {
+  --rotation-1: 120;
+  --rotation-2: 240;
+}
+
+.cs-triadic-colors-reversed {
+  --rotation-1: 240;
+  --rotation-2: 120;
+}
+
+.cs-monochromatic-colors {
+  --rotation-1: 5;
+  --rotation-2: 355;
+}
+
+.cs-monochromatic-colors-reversed {
+  --rotation-1: 355;
+  --rotation-2: 5;
+}
+
+/*=============================================
 =                 LIGHT THEME                 =
 =============================================*/
 
@@ -374,22 +422,14 @@ body {
   --text-selection: oklch(from var(--accent-2) 80% var(--chroma) h / 75%);
   --box-shadow:
     inset -2px -2px oklch(from var(--background-secondary) 50% c h),
-    inset 2px 2px oklch(from var(--background-secondary) 100% c h),
-    inset -2px -2px oklch(from var(--background-secondary) 50% c h),
     inset 2px 2px oklch(from var(--background-secondary) 100% c h);
   --box-shadow-active:
     inset 2px 2px oklch(from var(--background-secondary) 50% c h),
-    inset -2px -2px oklch(from var(--background-secondary) 100% c h),
-    inset 2px 2px oklch(from var(--background-secondary) 50% c h),
-    inset -2px -2px oklch(from var(--background-secondary) 100% c h);
+    inset -1px -1px oklch(from var(--background-secondary) 100% c h);
   --box-shadow-sm:
-    inset -1px -1px oklch(from var(--background-secondary) 50% c h),
-    inset 1px 1px oklch(from var(--background-secondary) 100% c h),
     inset -1px -1px oklch(from var(--background-secondary) 50% c h),
     inset 1px 1px oklch(from var(--background-secondary) 100% c h);
   --box-shadow-active-sm:
-    inset 1px 1px oklch(from var(--background-secondary) 50% c h),
-    inset -1px -1px oklch(from var(--background-secondary) 100% c h),
     inset 1px 1px oklch(from var(--background-secondary) 50% c h),
     inset -1px -1px oklch(from var(--background-secondary) 100% c h);
 
@@ -468,24 +508,16 @@ body {
   --tag-color: oklch(from var(--base-accent) 80% c h / 75%);
   --text-selection: oklch(from var(--accent-2) 45% c h / 75%);
   --box-shadow:
-    inset -2px -2px oklch(from var(--background-secondary) 15% c h),
-    inset 2px 2px oklch(from var(--background-secondary) 50% c h),
-    inset -2px -2px oklch(from var(--background-secondary) 50% c h),
+    inset -2px -2px oklch(from var(--background-secondary) 0% c h),
     inset 2px 2px oklch(from var(--background-secondary) 50% c h);
   --box-shadow-active:
-    inset 2px 2px oklch(from var(--background-secondary) 15% c h),
-    inset -2px -2px oklch(from var(--background-secondary) 50% c h),
-    inset 2px 2px oklch(from var(--background-secondary) 50% c h),
+    inset 2px 2px oklch(from var(--background-secondary) 0% c h),
     inset -2px -2px oklch(from var(--base-accent) 50% c h);
   --box-shadow-sm:
-    inset -1px -1px oklch(from var(--background-secondary) 15% c h),
-    inset 1px 1px oklch(from var(--background-secondary) 50% c h),
-    inset -1px -1px oklch(from var(--background-secondary) 50% c h),
+    inset -1px -1px oklch(from var(--background-secondary) 0% c h),
     inset 1px 1px oklch(from var(--background-secondary) 50% c h);
   --box-shadow-active-sm:
-    inset 1px 1px oklch(from var(--background-secondary) 15% c h),
-    inset -1px -1px oklch(from var(--background-secondary) 50% c h),
-    inset 1px 1px oklch(from var(--background-secondary) 50% c h),
+    inset 1px 1px oklch(from var(--background-secondary) 0% c h),
     inset -1px -1px oklch(from var(--base-accent) 50% c h);
 
   --button-active: oklch(from var(--background-secondary) 25% c h);
@@ -681,9 +713,27 @@ body:not(.is-mobile)
 }
 
 /* --- Bases  ---*/
+.bases-view {
+  scrollbar-gutter: unset;
+}
+
 .bases-header .text-button-label,
 .bases-table-header-label {
   font-weight: var(--font-bold);
+  color: var(--text-normal);
+}
+
+.bases-thead .bases-table-header,
+.bases-table-header-sort {
+  background-color: oklch(from var(--accent-1) 50% c h / 20%);
+}
+
+.bases-table-header-sort {
+  --icon-size: unset;
+}
+
+.is-mobile .bases-table-header-sort {
+    --icon-size: var(--icon-s);
 }
 
 .bases-cards-item {
@@ -692,10 +742,14 @@ body:not(.is-mobile)
   border-radius: var(--window-border-radius);
 }
 
-.base-toolbar-sort-item {
-  padding-inline: var(--size-4-2);
-  margin-inline: var(--size-4-1);
-  border-radius: var(--window-border-radius);
+.bases-toolbar-menu .bases-toolbar-section-header {
+  background-color: oklch(from var(--background-tertiary) l c h / 30%);
+  font-weight: 900;
+}
+
+.bases-toolbar-menu .base-toolbar-sort-item, .bases-toolbar-menu .base-toolbar-groupby-item {
+  border-radius: var(--window-border-radius) !important;
+  padding-right: 4px;
 }
 
 .bases-query-container .filter-expression {
@@ -727,8 +781,6 @@ body:not(.is-mobile)
 
 .bases-toolbar-items .suggestion-group[data-group="views"],
 .bases-toolbar-items .suggestion-group[data-group="properties"] {
-  background-color: var(--background-paper);
-  padding: 4px;
   border-radius: var(--window-border-radius);
   gap: 2px;
 }
@@ -755,8 +807,29 @@ body:not(.is-mobile)
   justify-content: center;
 }
 
+.bases-table-active-cell,
+.bases-table-selection {
+  background-color: oklch(from var(--base-accent) l c h / 10%);
+}
+
 .query-toolbar-menu .query-toolbar-section-header {
   background-color: oklch(from var(--background-primary-alt) l c h);
+}
+
+.is-phone .bases-query-container .filter-lhs-container {
+  width: unset;
+  border: unset;
+}
+
+.conjunction.dropdown {
+  background-color: oklch(from black l c h / 10%) !important;
+  border: 1px solid var(--text-faint);
+}
+
+.markdown-rendered mark {
+  border-radius: var(--window-border-radius);
+  padding-inline: 6px !important;
+  border: 1px groove var(--accent-1);
 }
 
 /*=============================================
@@ -873,14 +946,18 @@ button.mod-warning {
 input:not(
   input[type="checkbox"],
   input[type="range"],
-  .metadata-property input[type="text"],
-  .metadata-property input[type="datetime-local"]
+  :not(
+    .bases-view .metadata-property input[type="text"],
+    .bases-view .metadata-property input[type="datetime-local"]
+  )
 ),
 input[type="search"],
 .setting-item-control select,
 .formula-editor,
-textarea {
-  border: 2px solid oklch(from var(--interactive-accent) l c h / 50%) !important;
+textarea,
+input[type="text"],
+input[type="number"] {
+  border: 2px solid oklch(from var(--text-muted) l c h / 50%) !important;
   background-color: var(--background-paper) !important;
 }
 
@@ -890,6 +967,7 @@ textarea {
 .metadata-property input[type="number"],
 .metadata-property .multi-select-container {
   background-color: unset !important;
+  border: unset !important;
 }
 
 .vertical-tab-nav-item.is-active {
@@ -907,7 +985,7 @@ textarea {
 .nav-files-container > div > .nav-folder {
   margin-block: 6px;
   border-radius: var(--button-border-radius);
-  background-color: oklch(from var(--accent-1) l c h / 15%) !important;
+  background-color: oklch(from var(--background-primary) l c h) !important;
   border: 2px solid oklch(from var(--accent-2) 55% var(--chroma-folder) h / 50%);
   box-shadow: -1px 1px 0px var(--background-tertiary);
 }
@@ -1054,7 +1132,7 @@ textarea {
 }
 
 .metadata-property {
-  box-shadow: 0 0 0 1px oklch(from var(--text-normal) l c h / 30%);
+  box-shadow: 0 0 0 1px oklch(from var(--text-normal) l c h / 30%) !important;
   border-radius: var(--window-border-radius);
 }
 
@@ -1081,6 +1159,7 @@ a.tag {
   --tag-color-hover: var(--tag-color);
   --tag-border-color-hover: var(--tag-border-color);
   --tag-background-hover: oklch(from var(--tag-color) l c h / 30%);
+  font-weight: var(--font-bold);
 }
 
 .cm-hashtag.cm-hashtag-begin,
@@ -1095,43 +1174,36 @@ a.tag:hover,
 .cm-tag-Obsidian,
 .cm-tag-obsidian {
   --tag-color: var(--color-purple) !important;
-  font-weight: var(--font-bold);
 }
 
 .tag[href="#todo"],
 .cm-tag-todo {
   --tag-color: var(--color-blue) !important;
-  font-weight: var(--font-bold);
 }
 
 .tag[href="#work"],
 .cm-tag-work {
   --tag-color: var(--color-orange) !important;
-  font-weight: var(--font-bold);
 }
 
 .tag[href="#home"],
 .cm-tag-home {
   --tag-color: var(--color-indigo) !important;
-  font-weight: var(--font-bold);
 }
 
 .tag[href="#high"],
 .cm-tag-high {
   --tag-color: var(--color-red) !important;
-  font-weight: var(--font-bold);
 }
 
 .tag[href="#low"],
 .cm-tag-low {
   --tag-color: var(--color-green) !important;
-  font-weight: var(--font-bold);
 }
 
 .tag[href="#medium"],
 .cm-tag-medium {
   --tag-color: var(--color-orange) !important;
-  font-weight: var(--font-bold);
 }
 
 .tag[href="#test"],
@@ -1139,7 +1211,6 @@ a.tag:hover,
 .cm-tag-Test,
 .cm-tag-test {
   --tag-color: var(--color-teal) !important;
-  font-weight: var(--font-bold);
 }
 
 .multi-select-pill {
@@ -1190,8 +1261,13 @@ a.tag:hover,
 }
 
 blockquote {
-  padding: 5px;
-  border-radius: var(--window-border-radius);
+  padding: 4px 8px !important;
+  border-radius: var(--window-border-radius) !important;
+  border: 2px groove var(--background-primary-alt);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  border: 1px groove var(--background-primary-alt);
 }
 
 /*** Code  ***/
@@ -1324,8 +1400,11 @@ strong i,
 
 table {
   border-collapse: unset !important;
-  gap: 0 !important;
-  /* border-spacing: 0; */
+  border-spacing: var(--table-border-spacing);
+}
+
+table td {
+  background-color: var(--table-data-background) !important;
 }
 
 tr:first-child th:first-child {
@@ -1350,9 +1429,16 @@ tr:last-child td:last-child {
 .markdown-rendered td,
 .cm-html-embed th,
 .markdown-rendered th {
-  border: var(--table-border-width) solid
-    oklch(from var(--text-normal) l c h / 25%) !important;
-  /* border: unset !important; */
+  border: var(--table-border-width) solid var(--table-border-color) !important;
+}
+
+.disable-table-border {
+  .cm-html-embed td,
+  .markdown-rendered td,
+  .cm-html-embed th,
+  .markdown-rendered th {
+    border: unset !important;
+  }
 }
 
 /* Vim thick cursor */
@@ -1439,7 +1525,6 @@ tr:last-child td:last-child {
 
 .suggestion-container,
 .prompt,
-.popover,
 .modal,
 .menu,
 .is-mobile .prompt .is-phome .menu,
@@ -1449,16 +1534,16 @@ tr:last-child td:last-child {
   box-shadow: 0 0 12px 2px oklch(from black l c h / 40%);
 }
 
+.popover {
+  box-shadow: 0 0 12px 2px oklch(from black l c h / 40%);
+}
+
 .menu-item-desc {
   color: var(--text-muted);
 }
 
 .is-phone .menu-grabber {
   background: var(--background-primary-alt) !important;
-}
-
-.is-phone .menu {
-  margin-bottom: var(--mobile-nav-button-safe-area);
 }
 
 .is-phone .menu-item {
@@ -1488,7 +1573,6 @@ tr:last-child td:last-child {
 }
 
 .menu .menu-scroll {
-  /* background-color: oklch(from var(--background-secondary)); */
   border-radius: var(--window-border-radius);
 }
 
@@ -1506,7 +1590,6 @@ tr:last-child td:last-child {
 
 .popover.hover-popover.is-editing {
   border-radius: var(--window-border-radius);
-  border: var(--border-solid);
 }
 
 .prompt-input-container input:not(input[type="checkbox"], input[type="range"]) {
@@ -1517,6 +1600,10 @@ tr:last-child td:last-child {
   background-color: var(--background-tertiary) !important;
   border: var(--border-ridge) !important;
   box-shadow: 0 0 12px 2px oklch(from black l c h / 40%) !important;
+}
+
+.is-phone .mod-settings.mod-sidebar-layout, .is-phone .modal.mod-lg, .is-phone .modal.mod-sidebar-layout {
+  background-color: var(--background-secondary) !important;
 }
 
 /*=============================================
@@ -1683,11 +1770,7 @@ tr:last-child td:last-child {
   background: oklch(from var(--base-accent) 20% c h / 75%);
 }
 
-.modal.mod-sidebar-layout {
-}
-
 .community-modal-search-results-wrapper {
-  margin: var(--size-4-3) !important;
   padding: var(--size-4-3) !important;
   border-radius: var(--window-border-radius) !important;
   border: unset;
@@ -2308,6 +2391,39 @@ name: Retroma Theme
 id: retroma-obsidian-theme
 settings:
     -
+        id: theme-color-scheme-selection
+        title: Theme Color Scheme Selection
+        type: class-select
+        description: For this to work correctly, you must first reset any modifications previously applied to the Main and Minor Accents within the Color Scheme Tuner (advance).
+        allowEmpty: false
+        default: "Analogous"
+        options:
+            -
+              label: Analogous (Default)
+              value: Analogous
+            -
+              label: Analogous (Reversed)
+              value: cs-analogous-colors-reversed
+            -
+              label: Split Complementary
+              value: cs-split-complementary-colors
+            -
+              label: Split Complementary (Reversed)
+              value: cs-split-complementary-colors-reversed
+            -
+              label: Triadic
+              value: cs-triadic-colors
+            -
+              label: Triadic (Reversed)
+              value: cs-triadic-colors-reversed
+            -
+              label: Monochromatic
+              value: cs-monochromatic-colors
+            -
+              label: Monochromatic (Reversed)
+              value: cs-monochromatic-colors-reversed
+
+    -
         id: theme-variant
         title: Theme Variant Selection
         type: class-select
@@ -2382,15 +2498,17 @@ settings:
         id: rotation-2
         title: Main Accents
         type: variable-number-slider
-        default: 345
+        description: To use the Theme Color Scheme Selection, SPAM CLICK reset button 3 times.
+        default: 330
         min: 0
         max: 360
         step: 1
     - 
         id: rotation-1
         title: Minor Accents 
+        description: To use the Theme Color Scheme Selection, SPAM CLICK reset button 3 times.
         type: variable-number-slider
-        default: 15
+        default: 30
         min: 0
         max: 360
         step: 1
@@ -2620,6 +2738,50 @@ settings:
         opacity: false
         default-light: '#'
         default-dark: '#'
+    -
+        id: table-tuner
+        title:  Table Settings
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: table-border-spacing
+        title: Table Border Spacing
+        type: variable-number-slider
+        format: px
+        default: 2
+        min: 0
+        max: 12
+        step: 1
+    -
+        id: table-header-background
+        title: Table Header Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: table-data-background
+        title: Table Background Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: table-border-color
+        title: Table Border Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: disable-table-border
+        title: Disable Table Border.
+        default: false
+        type: class-toggle
     -
         id: misc
         title:  Miscellaneous

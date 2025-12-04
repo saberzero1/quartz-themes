@@ -1,7 +1,6 @@
 {
-  "name": "Nightingale",
-  "version": "0.1.1",
-  "minAppVersion": "1.0.0",
-  "author": "frank0713",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+    "name": "Nightingale",
+    "version": "0.1.1",
+    "minAppVersion": "1.0.0",
+    "author": "frank0713"
 }
