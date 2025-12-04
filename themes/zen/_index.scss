@@ -306,8 +306,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
@@ -1139,8 +1139,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: #b3b3b3 !important;
@@ -1212,8 +1212,8 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(245, 245, 245, 0.08) !important;
-  --indentation-guide-color-active: rgba(245, 245, 245, 0.08) !important;
+  --indentation-guide-color: rgba(245, 245, 245, 0.1) !important;
+  --indentation-guide-color-active: rgba(245, 245, 245, 0.1) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -1283,7 +1283,7 @@
   --list-indent: 1.5em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgba(245, 245, 245, 0.1) !important;
+  --list-marker-color: rgba(245, 245, 245, 0.25) !important;
   --list-marker-color-collapsed: rgb(166, 139, 249) !important;
   --list-marker-color-hover: #b3b3b3 !important;
   --list-numbered-style: decimal !important;
@@ -1862,7 +1862,7 @@ body {
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background-color: light-dark(rgb(249, 249, 249), rgb(42, 42, 42));
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
@@ -1870,19 +1870,19 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: light-dark(rgb(249, 249, 249), rgb(42, 42, 42));
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: light-dark(rgb(249, 249, 249), rgb(42, 42, 42));
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left: 0.5px solid
+    border-left: 1px solid
       light-dark(rgba(0, 0, 0, 0.01), rgba(255, 255, 255, 0.01));
   }
 
   .page > div#quartz-body div.sidebar.left {
-    border-right: 0.5px solid
+    border-right: 1px solid
       light-dark(rgba(0, 0, 0, 0.01), rgba(255, 255, 255, 0.01));
   }
 
@@ -1895,7 +1895,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1924,7 +1924,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1952,7 +1952,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1980,7 +1980,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2009,7 +2009,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2038,7 +2038,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2067,7 +2067,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2096,7 +2096,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2127,7 +2127,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2155,7 +2155,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2235,7 +2235,7 @@ body {
 
   hr {
     border: 0px light-dark(rgba(28, 28, 28, 0.09), rgba(245, 245, 245, 0.2));
-    border-top: 0.5px solid
+    border-top: 1px solid
       light-dark(rgba(28, 28, 28, 0.09), rgba(245, 245, 245, 0.2));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2269,7 +2269,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2302,7 +2302,7 @@ body {
 
   ul > li::marker {
     background-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border: 0px light-dark(rgb(171, 171, 171), rgba(245, 245, 245, 0.1));
+    border: 0px light-dark(rgb(171, 171, 171), rgba(245, 245, 245, 0.25));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2311,7 +2311,7 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(171, 171, 171), rgba(245, 245, 245, 0.1));
+    color: light-dark(rgb(171, 171, 171), rgba(245, 245, 245, 0.25));
     pointer-events: none;
     transform: none;
     transition: inherit;
@@ -2324,7 +2324,7 @@ body {
 
   ol > li::marker {
     background-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border: 0px light-dark(rgb(171, 171, 171), rgba(245, 245, 245, 0.1));
+    border: 0px light-dark(rgb(171, 171, 171), rgba(245, 245, 245, 0.25));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2333,7 +2333,7 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(171, 171, 171), rgba(245, 245, 245, 0.1));
+    color: light-dark(rgb(171, 171, 171), rgba(245, 245, 245, 0.25));
     pointer-events: none;
     transform: none;
     transition: inherit;
@@ -2460,7 +2460,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2497,7 +2497,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2545,7 +2545,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2680,7 +2680,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2697,7 +2697,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2714,7 +2714,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2731,7 +2731,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2748,7 +2748,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2765,7 +2765,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2783,7 +2783,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3178,7 +3178,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3193,7 +3193,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3214,7 +3214,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3256,7 +3256,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3275,7 +3275,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,

@@ -443,8 +443,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 3px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #555555 !important;
@@ -1239,8 +1239,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 3px;
   --footnote-size: 0.875em;
-  --frame-left-space: 36px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: rgb(94, 99, 110);
   --graph-node: rgb(186, 189, 196);

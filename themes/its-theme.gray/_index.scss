@@ -309,8 +309,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 0 !important;
   --footnote-size: 0.9em !important;
-  --frame-left-space: 40px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgba(163, 188, 218, 0.3) !important;
   --graph-node: #171c22 !important;
@@ -900,6 +900,7 @@
   --kanban-lane-background: #f1f7ff !important;
   --kanban-lane-border: 3px solid #e1e9f6 !important;
   --bg: #e1e9f6 !important;
+  --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #404c62 !important;
   --accent2-lite: #000000 !important;
@@ -936,7 +937,6 @@
   --deep-dark-accent: #171c22 !important;
   --drop-shadow: #d0ddef62 !important;
   --embed-bg: #f1f7ff !important;
-  --embed-border: 2px solid transparent !important;
   --embed-border-bottom-color: transparent !important;
   --embed-border-bottom-color-hover: #e1e9f6 !important;
   --embed-border-color: transparent !important;
@@ -1625,8 +1625,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 0 !important;
   --footnote-size: 0.9em !important;
-  --frame-left-space: 40px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgba(101, 116, 135, 0.27) !important;
   --graph-node: #aab3ca !important;
@@ -2214,6 +2214,7 @@
   --kanban-lane-background: #232831 !important;
   --kanban-lane-border: 3px solid #0e0f15 !important;
   --bg: #252c36 !important;
+  --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #889fc3 !important;
   --accent2-lite: #cde2ff !important;
@@ -2250,7 +2251,6 @@
   --deep-dark-accent: #222731 !important;
   --drop-shadow: #06080c60 !important;
   --embed-bg: #090c0e !important;
-  --embed-border: 2px solid transparent !important;
   --embed-border-bottom-color: transparent !important;
   --embed-border-bottom-color-hover: #0e0f15 !important;
   --embed-border-color: transparent !important;
@@ -2710,7 +2710,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -2741,7 +2741,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -2771,7 +2771,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -2801,7 +2801,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -2832,7 +2832,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -2863,7 +2863,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -2894,7 +2894,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -2925,7 +2925,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -2955,7 +2955,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -2985,7 +2985,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -3097,7 +3097,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -3275,7 +3275,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -3317,7 +3317,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -3367,7 +3367,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -3936,7 +3936,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -3953,7 +3953,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -3976,7 +3976,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -4020,7 +4020,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,
@@ -4041,7 +4041,7 @@ body {
     font-family:
       Inter,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Helvetica,

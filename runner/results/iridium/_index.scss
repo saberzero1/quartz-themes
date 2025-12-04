@@ -306,8 +306,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 81px !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(207, 201, 222) !important;
   --graph-node: rgb(83, 69, 115) !important;
@@ -316,37 +316,37 @@
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: rgb(162, 150, 192) !important;
   --graph-text: #222222 !important;
-  --h1-letter-spacing: -0.015em !important;
+  --h1-letter-spacing: 0 !important;
   --h1-line-height: 1.5 !important;
   --h1-size: 1.5em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 600 !important;
-  --h2-letter-spacing: -0.011em !important;
+  --h2-letter-spacing: 0 !important;
   --h2-line-height: 1.5 !important;
   --h2-size: 1.4em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 600 !important;
-  --h3-letter-spacing: -0.008em !important;
+  --h3-letter-spacing: 0 !important;
   --h3-line-height: 1.5 !important;
   --h3-size: 1.3em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 600 !important;
-  --h4-letter-spacing: -0.005em !important;
+  --h4-letter-spacing: 0 !important;
   --h4-line-height: 1.5 !important;
   --h4-size: 1.2em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 600 !important;
-  --h5-letter-spacing: -0.002em !important;
+  --h5-letter-spacing: 0 !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.1em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 600 !important;
-  --h6-letter-spacing: 0em !important;
+  --h6-letter-spacing: 0 !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
@@ -400,14 +400,8 @@
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #ababab !important;
   --input-radius: 5px !important;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
+  --input-shadow: inset 0 0 0 1px rgb(221, 217, 232) !important;
+  --input-shadow-hover: inset 0 0 0 1px rgb(207, 201, 222) !important;
   --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(103, 44, 242) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -815,6 +809,7 @@
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
   --nn-theme-nav-bg: transparent !important;
   --nn-theme-navitem-selected-bg: rgb(238, 236, 244) !important;
+  --nn-theme-file-selected-bg: rgb(238, 236, 244) !important;
   --i-0: rgb(249, 249, 251) !important;
   --i-1: rgb(247, 245, 249) !important;
   --i-2: rgb(238, 236, 244) !important;
@@ -825,7 +820,6 @@
   --i-7: rgb(205, 198, 221) !important;
   --i-8: rgb(199, 191, 217) !important;
   --i-active-line-color: 258, 88%, 66% !important;
-  --i-bases-table-header-font-size: 0.8em !important;
   --i-blockquote-indent: 0 !important;
   --i-border-radius: 8px !important;
   --i-bullet-color: rgb(138, 92, 245) !important;
@@ -915,7 +909,6 @@
   --i-pattern-width: 10px !important;
   --i-s: 25% !important;
   --i-spacing-below-headings: 0.3rem !important;
-  --nn-theme-file-selected-bg: rgb(238, 236, 244) !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
   --nn-theme-quick-actions-bg: #ffffff !important;
@@ -1133,7 +1126,7 @@
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: rgb(39, 36, 46) !important;
+  --dropdown-background: rgb(29, 27, 34) !important;
   --dropdown-background-blend-mode: hard-light !important;
   --dropdown-background-hover: rgb(49, 45, 57) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
@@ -1158,7 +1151,7 @@
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
-  --flair-background: rgb(39, 36, 46) !important;
+  --flair-background: rgb(29, 27, 34) !important;
   --flair-color: rgb(217, 217, 217) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
@@ -1226,8 +1219,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 81px !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(61, 56, 71) !important;
   --graph-node: rgb(175, 169, 188) !important;
@@ -1236,37 +1229,37 @@
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: rgb(97, 90, 114) !important;
   --graph-text: rgb(217, 217, 217) !important;
-  --h1-letter-spacing: -0.015em !important;
+  --h1-letter-spacing: 0 !important;
   --h1-line-height: 1.5 !important;
   --h1-size: 1.5em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 600 !important;
-  --h2-letter-spacing: -0.011em !important;
+  --h2-letter-spacing: 0 !important;
   --h2-line-height: 1.5 !important;
   --h2-size: 1.4em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 600 !important;
-  --h3-letter-spacing: -0.008em !important;
+  --h3-letter-spacing: 0 !important;
   --h3-line-height: 1.5 !important;
   --h3-size: 1.3em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 600 !important;
-  --h4-letter-spacing: -0.005em !important;
+  --h4-letter-spacing: 0 !important;
   --h4-line-height: 1.5 !important;
   --h4-size: 1.2em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 600 !important;
-  --h5-letter-spacing: -0.002em !important;
+  --h5-letter-spacing: 0 !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.1em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 600 !important;
-  --h6-letter-spacing: 0em !important;
+  --h6-letter-spacing: 0 !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
@@ -1320,19 +1313,13 @@
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgb(102, 102, 102) !important;
   --input-radius: 5px !important;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --input-shadow: inset 0 0 0 1px rgb(51, 47, 60) !important;
+  --input-shadow-hover: inset 0 0 0 1px rgb(61, 56, 71) !important;
   --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(172, 140, 248) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: rgb(49, 45, 57) !important;
-  --interactive-normal: rgb(39, 36, 46) !important;
+  --interactive-normal: rgb(29, 27, 34) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1699,7 +1686,7 @@
   --toggle-s-thumb-height: 15px !important;
   --toggle-s-thumb-width: 15px !important;
   --toggle-s-width: 34px !important;
-  --toggle-thumb-color: white !important;
+  --toggle-thumb-color: rgb(217, 217, 217) !important;
   --toggle-thumb-height: 18px !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
@@ -1733,6 +1720,7 @@
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
   --nn-theme-nav-bg: transparent !important;
   --nn-theme-navitem-selected-bg: rgb(49, 45, 57) !important;
+  --nn-theme-file-selected-bg: rgb(49, 45, 57) !important;
   --i-0: rgb(32, 29, 37) !important;
   --i-1: rgb(34, 31, 40) !important;
   --i-2: rgb(39, 36, 46) !important;
@@ -1743,7 +1731,6 @@
   --i-7: rgb(68, 63, 80) !important;
   --i-8: rgb(73, 67, 86) !important;
   --i-active-line-color: 258, 88%, 66% !important;
-  --i-bases-table-header-font-size: 0.8em !important;
   --i-blockquote-indent: 0 !important;
   --i-border-radius: 8px !important;
   --i-bullet-color: rgb(138, 92, 245) !important;
@@ -1839,7 +1826,6 @@
   --i-pattern-width: 10px !important;
   --i-s: 12% !important;
   --i-spacing-below-headings: 0.3rem !important;
-  --nn-theme-file-selected-bg: rgb(49, 45, 57) !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
   --nn-theme-quick-actions-bg: rgb(29, 27, 34) !important;
@@ -2070,7 +2056,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2099,7 +2085,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2127,7 +2113,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2158,7 +2144,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2187,7 +2173,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2216,7 +2202,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2245,7 +2231,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2274,7 +2260,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2302,7 +2288,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2330,7 +2316,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2443,7 +2429,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2622,7 +2608,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2659,7 +2645,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2710,7 +2696,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2841,7 +2827,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2858,7 +2844,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2875,7 +2861,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2892,7 +2878,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2909,7 +2895,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2926,7 +2912,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2944,7 +2930,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3230,7 +3216,7 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(217, 217, 217);
+    stroke: rgb(179, 179, 179);
   }
 
   .callout[data-callout="bug"] {
@@ -3303,7 +3289,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3318,7 +3304,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3339,7 +3325,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3381,7 +3367,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3400,7 +3386,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,

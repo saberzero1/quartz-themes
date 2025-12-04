@@ -338,8 +338,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
@@ -823,6 +823,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --tooltip-border: black !important;
   --bg-button-light: white !important;
   --bg-button-shadow: gray !important;
   --closebutton: url("data:image/svg+xmlcharset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E") !important;
@@ -833,7 +834,6 @@ body.theme-light {
   --restoredown: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64 64' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='13' y='15' width='34' height='34'/%3e%3cdefs%3e%3cimage id='A' width='34' height='34' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVRYhe2XMQrAMAwDndL/fzmd2uEgxCkINOhmQw6DLFJlwmjOTalF1bjED7SJCIkIuQ/nuynr8qXRZiMRIREhb2q6XfK3c7Zps9lIREhECLtG1SXbtNluREXuyDERIREhESE2Irys6l//EpuN2PAAKfQHSOcj77YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e") !important;
   --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M10.125 12.938H9V5.063h1.125v1.125h1.125v1.125h1.125v1.125H13.5v1.125h-1.125v1.125H11.25v1.125h-1.125v1.125z' fill-rule='nonzero'/%3e%3c/svg%3e") !important;
   --system-status-background: silver !important;
-  --tooltip-border: black !important;
   --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' width='18' height='18' viewBox='0 0 16 16' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M11 9v1H4V9h1V8h1V7h1V6h1v1h1v1h1v1z'/%3e%3c/svg%3e") !important;
 }
 
@@ -1122,8 +1122,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: 36px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: #3f3f3f;
   --graph-node: #b3b3b3;
@@ -1605,6 +1605,7 @@ body.theme-dark {
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
+  --tooltip-border: rgb(128, 128, 128);
   --bg-button-light: rgb(128, 128, 128);
   --bg-button-shadow: black;
   --closebutton: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' width='8' height='7'/%3e%3cdefs%3e%3cimage id='A' width='8' height='7' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVQImW2OQQ4AMAjCqv//MzssM0jGyaQIlCRxVWwJoA0oIVAd33L4EgjTut3wqxiDx65NnZ256QAPcA8KJ2HN6QAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
@@ -1623,7 +1624,6 @@ body.theme-dark {
   --restoredown: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 64 64' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='13' y='15' width='34' height='34'/%3e%3cdefs%3e%3cimage id='A' width='34' height='34' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcUlEQVRYhe2XMQrAMAwDndL/fzmd2uEgxCkINOhmQw6DLFJlwmjOTalF1bjED7SJCIkIuQ/nuynr8qXRZiMRIREhb2q6XfK3c7Zps9lIREhECLtG1SXbtNluREXuyDERIREhESE2Irys6l//EpuN2PAAKfQHSOcj77YAAAAASUVORK5CYII='/%3e%3c/defs%3e%3c/svg%3e");
   --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.063' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVQImV3NqRGAQBAF0SniQBACEkEASMLdABBIQkAgEZvBQ4AYtmXXP8LLEJlPXphaCQeWVsKGtYs/d0TUnCyYc33HmI9O9HnjAUuAVuCj%2bT4gAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
   --system-status-background: rgb(64, 64, 64);
-  --tooltip-border: rgb(128, 128, 128);
   --upicon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='5.063' y='6.75' width='8' height='5'/%3e%3cdefs%3e%3cimage id='A' width='8' height='5' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAPElEQVQImXXNoRHAIBBE0aPzFICgBGRKQ57Av4gImAl59s/sRmzQccUJbkwk6immZaDts9PXQC2/n698AMKrUH0l/8BzAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
 }
 
