@@ -307,8 +307,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #333333 !important;
@@ -814,6 +814,7 @@
     inset 2px 2px #fff !important;
   --background-tertiary: #c0c0c0 !important;
   --window-border: 2px solid #000 !important;
+  --titlebar-text: #ffffff !important;
   --folder-color-1: #965d5d !important;
   --folder-color-10: #8b7e6d !important;
   --folder-color-11: #8d6b83 !important;
@@ -826,7 +827,6 @@
   --folder-color-7: #96707e !important;
   --folder-color-8: #5b8b9e !important;
   --folder-color-9: #6b8c6b !important;
-  --titlebar-text: #ffffff !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1131,8 +1131,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: #b0b0b0 !important;
@@ -1636,6 +1636,7 @@
     inset 2px 2px #666 !important;
   --background-tertiary: #444444 !important;
   --window-border: 2px solid #000 !important;
+  --titlebar-text: #ffffff !important;
   --folder-color-1: #c78080 !important;
   --folder-color-10: #b3a68f !important;
   --folder-color-11: #b38da8 !important;
@@ -1648,7 +1649,6 @@
   --folder-color-7: #c093a6 !important;
   --folder-color-8: #7db3c9 !important;
   --folder-color-9: #8eb98e !important;
-  --titlebar-text: #ffffff !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1876,7 +1876,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1905,7 +1905,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1933,7 +1933,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1961,7 +1961,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1990,7 +1990,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2019,7 +2019,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2048,7 +2048,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2077,7 +2077,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2105,7 +2105,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2133,7 +2133,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2246,7 +2246,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2422,7 +2422,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2459,7 +2459,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2510,7 +2510,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2644,7 +2644,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2661,7 +2661,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2678,7 +2678,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2695,7 +2695,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2712,7 +2712,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2729,7 +2729,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2747,7 +2747,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3142,7 +3142,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3157,7 +3157,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3178,7 +3178,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3223,7 +3223,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3242,7 +3242,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,

@@ -309,8 +309,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 11.2px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
@@ -824,10 +824,11 @@ body.theme-light {
   --hide-separator-yaml: None !important;
   --icon-file: "·" !important;
   --icon-file-indicator: "·" !important;
+  --icon-file-size: 15px !important;
   --icon-settings: none !important;
   --icon-ui-opacity: 0.85px !important;
   --img-align: 0px !important;
-  --inline-code-font-size: calc(17.5px - 1.5 px) --code-size-edit-mode: 13.9px !important;
+  --inline-code-font-size: calc(17.5px - 1.5 px) !important;
   --inline-title-align: justify !important;
   --inline-title-bold: 400px !important;
   --internal-link-border-style: dotted !important;
@@ -1165,8 +1166,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 11.2px;
   --footnote-size: 0.875em;
-  --frame-left-space: 36px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: #3f3f3f;
   --graph-node: #b3b3b3;
@@ -1678,10 +1679,11 @@ body.theme-dark {
   --hide-separator-yaml: None;
   --icon-file: "·";
   --icon-file-indicator: "·";
+  --icon-file-size: 15px;
   --icon-settings: none;
   --icon-ui-opacity: 0.85px;
   --img-align: 0px;
-  --inline-code-font-size: calc(17.5px - 1.5 px) --code-size-edit-mode: 13.9px;
+  --inline-code-font-size: calc(17.5px - 1.5 px);
   --inline-title-align: justify;
   --inline-title-bold: 400px;
   --internal-link-border-style: dotted;
@@ -1727,7 +1729,7 @@ body .markdown-rendered a.external-link {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1754,7 +1756,7 @@ body .markdown-rendered a.internal-link {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1781,7 +1783,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1808,7 +1810,7 @@ body .markdown-rendered p {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1835,7 +1837,7 @@ body strong {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1862,7 +1864,7 @@ body b {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1889,7 +1891,7 @@ body em {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1916,7 +1918,7 @@ body i {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1943,7 +1945,7 @@ body .markdown-rendered mark {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1970,7 +1972,7 @@ body del {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2042,7 +2044,7 @@ body div.multi-select-pill {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2211,7 +2213,7 @@ body .markdown-rendered blockquote {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2246,7 +2248,7 @@ body .site-body-left-column input.search-bar {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2280,7 +2282,7 @@ body .search-results > * {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2340,7 +2342,7 @@ body .published-container .markdown-rendered h1 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2356,7 +2358,7 @@ body .published-container .markdown-rendered h2 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2372,7 +2374,7 @@ body .published-container .markdown-rendered h3 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2388,7 +2390,7 @@ body .published-container .markdown-rendered h4 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2404,7 +2406,7 @@ body .published-container .markdown-rendered h5 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2420,7 +2422,7 @@ body .published-container .markdown-rendered h6 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2771,7 +2773,7 @@ body .math-block > mjx-container.MathJax {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2785,7 +2787,7 @@ body div.math-block > mjx-container.MathJax {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2804,7 +2806,7 @@ body .nav-view-outer .tree-item-self a {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2847,7 +2849,7 @@ body
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2871,7 +2873,7 @@ body
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,

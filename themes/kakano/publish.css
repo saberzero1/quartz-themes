@@ -591,7 +591,7 @@ body.theme-light {
   --file-header-font-size: 0.8rem !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
-  --file-line-width: 60ch !important;
+  --file-line-width: 37.5rem !important;
   --file-margins: 0 2em !important;
   --flair-background: rgb(38, 102, 192) !important;
   --flair-color: color-mix(in srgb, rgb(38, 102, 192), white 95%) !important;
@@ -686,8 +686,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 0.25rem !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: calc(80px - 3em) !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: color-mix(
@@ -1723,7 +1723,6 @@ body.theme-light {
     color-mix(in srgb, rgb(38, 102, 192), white 40%),
     color-mix(in srgb, rgb(38, 102, 192), black 40%)
   ) !important;
-  --theme-color-controlBgLowWeight: hsl(from white h s l / 0.5) !important;
   --theme-color-controlContentArea: rgb(38, 102, 192) !important;
   --theme-color-controlContentAreaHover: color-mix(
     in srgb,
@@ -1743,6 +1742,7 @@ body.theme-light {
     rgb(38, 102, 192),
     white 95%
   ) !important;
+  --theme-color-controlLowWeightBg: hsl(from white h s l / 0.5) !important;
   --theme-color-controlSetBg: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -2503,7 +2503,7 @@ body.theme-dark {
   --file-header-font-size: 0.8rem;
   --file-header-font-weight: 400;
   --file-header-justify: center;
-  --file-line-width: 60ch;
+  --file-line-width: 37.5rem;
   --file-margins: 0 2em;
   --flair-background: rgb(38, 102, 192);
   --flair-color: color-mix(in srgb, rgb(38, 102, 192), white 95%);
@@ -2594,8 +2594,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 0.25rem;
   --footnote-size: 0.875em;
-  --frame-left-space: calc(80px - 3em);
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: #3f3f3f;
   --graph-node: color-mix(
@@ -3212,7 +3212,7 @@ body.theme-dark {
   --tag-border-color: rgba(138, 92, 245, 0.15);
   --tag-border-color-hover: rgba(138, 92, 245, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(258, 105.6%, 66%);
+  --tag-color: rgb(181, 150, 253);
   --tag-color-hover: rgb(166, 139, 249);
   --tag-decoration: none;
   --tag-decoration-hover: none;
@@ -3472,7 +3472,6 @@ body.theme-dark {
     color-mix(in srgb, rgb(38, 102, 192), white 40%),
     color-mix(in srgb, rgb(38, 102, 192), black 40%)
   );
-  --theme-color-controlBgLowWeight: hsl(from black h s l / 0.25);
   --theme-color-controlContentArea: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -3496,6 +3495,7 @@ body.theme-dark {
     rgb(38, 102, 192),
     white 95%
   );
+  --theme-color-controlLowWeightBg: hsl(from black h s l / 0.25);
   --theme-color-controlSetBg: color-mix(in srgb, rgb(38, 102, 192), black 80%);
   --theme-color-controlText: color-mix(in srgb, rgb(38, 102, 192), white 60%);
   --theme-color-controlTextHover: color-mix(
@@ -3702,12 +3702,12 @@ body.theme-dark {
     color-mix(in srgb, rgb(38, 102, 192), black 60%)
   );
   --theme-color-tableHeaderBg: hsl(from rgb(38, 102, 192) h s l / 0.12);
-  --theme-color-tagBgHover: hsl(258, 92%, 77%, 0.1);
+  --theme-color-tagBgHover: hsl(258, 105.6%, 52.8%, 0.75);
   --theme-color-tagBgSidebar: hsl(258, 105.6%, 16.5%, 0.5);
-  --theme-color-tagBgSidebarHover: hsl(258, 89.76%, 33%, 0.5);
-  --theme-color-tagHover: rgb(203, 182, 252);
-  --theme-color-tagSidebar: hsl(258, 105.6%, 66%);
-  --theme-color-tagSidebarHover: hsl(258, 107.712%, 75.9%);
+  --theme-color-tagBgSidebarHover: hsl(258, 97%, 53%, 0.5);
+  --theme-color-tagHover: hsl(258, 92.4%, 85.14%);
+  --theme-color-tagSidebar: rgb(181, 150, 253);
+  --theme-color-tagSidebarHover: hsl(258, 123.2%, 85.8%);
   --theme-color-textMeta: rgb(38, 102, 192);
   --theme-color-textSelected: color-mix(in srgb, rgb(38, 102, 192), black 80%);
   --theme-color-warningBg: color-mix(in srgb, rgb(38, 102, 192), white 95%);
@@ -4144,7 +4144,7 @@ body div.multi-select-pill {
   border-end-end-radius: 22.4px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
-  color: light-dark(rgb(44, 8, 127), rgb(134, 82, 255));
+  color: light-dark(rgb(44, 8, 127), rgb(181, 151, 253));
 }
 body .markdown-rendered ul > li {
   color: light-dark(

@@ -60,9 +60,9 @@
   --bases-group-heading-property-color: oklch(45% 0.0105 281) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
+  --bases-group-heading-property-weight: 425 !important;
   --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
+  --bases-group-heading-value-weight: 625 !important;
   --bases-header-border-width: 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 4px !important;
@@ -94,7 +94,7 @@
     transparent 24px,
     black 24px
   ) !important;
-  --bases-table-header-weight: 400 !important;
+  --bases-table-header-weight: 425 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 0 !important;
   --bases-table-row-height: 32px !important;
@@ -107,10 +107,10 @@
   --blockquote-border-thickness: 0 !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 250 !important;
-  --bold-weight: 650 !important;
+  --bold-weight: 675 !important;
   --border-width: 1px !important;
   --button-radius: 6px !important;
-  --callout-blend-mode: darken !important;
+  --callout-blend-mode: normal !important;
   --callout-border-opacity: 0.15 !important;
   --callout-border-width: 0px !important;
   --callout-bug: 225, 70, 147 !important;
@@ -130,7 +130,7 @@
   --callout-summary: 4, 176, 167 !important;
   --callout-tip: 4, 176, 167 !important;
   --callout-title-padding: 0 0 0 2px !important;
-  --callout-title-weight: 650 !important;
+  --callout-title-weight: 675 !important;
   --callout-todo: 0, 132, 255 !important;
   --callout-warning: 233, 188, 0 !important;
   --canvas-background: oklch(98.8% 0.0015 281) !important;
@@ -257,7 +257,7 @@
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
-  --file-header-font-weight: 400 !important;
+  --file-header-font-weight: 425 !important;
   --file-header-justify: center !important;
   --file-line-width: 43rem !important;
   --file-margins: 28px 5% !important;
@@ -266,12 +266,12 @@
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
-  --font-bold: 700 !important;
+  --font-bold: 725 !important;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
-  --font-extrabold: 800 !important;
+  --font-extrabold: 825 !important;
   --font-extralight: 250 !important;
   --font-interface:
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -284,8 +284,8 @@
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-light: 300 !important;
-  --font-medium: 500 !important;
+  --font-light: 325 !important;
+  --font-medium: 525 !important;
   --font-mermaid:
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
@@ -302,13 +302,13 @@
     "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
-  --font-normal: 400 !important;
+  --font-normal: 425 !important;
   --font-print:
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
-  --font-semibold: 600 !important;
+  --font-semibold: 625 !important;
   --font-small: 0.90625em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
@@ -329,7 +329,7 @@
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
+  --font-weight: 425 !important;
   --footnote-divider-color: oklch(0% 0 0 / 0.06) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
@@ -344,8 +344,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 6px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 220px !important;
   --graph-line: oklch(78.75% 0.0025 281) !important;
   --graph-node: oklch(45% 0.0105 281) !important;
@@ -359,37 +359,37 @@
   --h1-size: 2.125em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
-  --h1-weight: 250 !important;
+  --h1-weight: 300 !important;
   --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
   --h2-size: 1.5625em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 500 !important;
+  --h2-weight: 550 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.4125em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 500 !important;
+  --h3-weight: 550 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.2125em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 575 !important;
+  --h4-weight: 625 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.6 !important;
   --h5-size: 1.0875em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: 650 !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.6 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
-  --h6-weight: 650 !important;
+  --h6-weight: 675 !important;
   --header-height: 52px !important;
   --heading-formatting: oklch(71.5% 0.0105 281) !important;
   --heading-spacing: 2.5rem !important;
@@ -429,11 +429,11 @@
   --inline-title-size: 2.125em !important;
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
-  --inline-title-weight: 250 !important;
+  --inline-title-weight: 300 !important;
   --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
   --input-date-separator: oklch(71.5% 0.0105 281) !important;
-  --input-font-weight: 400 !important;
+  --input-font-weight: 425 !important;
   --input-height: 28px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: oklch(71.5% 0.0105 281) !important;
@@ -495,7 +495,7 @@
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
-  --link-weight: 400 !important;
+  --link-weight: 425 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
@@ -590,8 +590,8 @@
   --nav-heading-color-collapsed: oklch(71.5% 0.0105 281) !important;
   --nav-heading-color-collapsed-hover: oklch(45% 0.0105 281) !important;
   --nav-heading-color-hover: oklch(28.25% 0.0005 281) !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
+  --nav-heading-weight: 525 !important;
+  --nav-heading-weight-hover: 525 !important;
   --nav-indentation-guide-color: oklch(0% 0 0 / 0.05) !important;
   --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: oklch(0% 0 0 / 0.05) !important;
@@ -613,7 +613,7 @@
   --nav-tag-color-active: oklch(45% 0.0105 281) !important;
   --nav-tag-color-hover: oklch(45% 0.0105 281) !important;
   --nav-tag-radius: 6px !important;
-  --nav-tag-weight: 600 !important;
+  --nav-tag-weight: 625 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
@@ -800,7 +800,7 @@
   --table-header-border-width: 1px !important;
   --table-header-color: oklch(28.25% 0.0005 281) !important;
   --table-header-size: 0.8175em !important;
-  --table-header-weight: 650 !important;
+  --table-header-weight: 675 !important;
   --table-line-height: 1.6 !important;
   --table-row-alt-background: oklch(25% 0 0 / 0.0275) !important;
   --table-row-alt-background-hover: oklch(25% 0 0 / 0.0275) !important;
@@ -854,7 +854,7 @@
   --titlebar-height: 30px !important;
   --titlebar-text-color: oklch(0% 0 0 / 0.32) !important;
   --titlebar-text-color-focused: oklch(42% 0.0025 281) !important;
-  --titlebar-text-weight: 700 !important;
+  --titlebar-text-weight: 725 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -871,7 +871,7 @@
   --vault-profile-color-hover: oklch(28.25% 0.0005 281) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
+  --vault-profile-font-weight: 525 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
@@ -895,17 +895,17 @@
     rgb(0, 114, 245),
     transparent 5%
   ) !important;
-  --nav-item-weight-active: 400 !important;
+  --nav-item-weight-active: 425 !important;
   --background-gradient: radial-gradient(
     at 50% calc(50% + 22px),
     oklch(98.8% 0.0015 281) 37.5%,
     oklch(71.5% 0.0105 281) 225%
   ) !important;
-  --tab-font-weight: 400 !important;
+  --tab-font-weight: 425 !important;
   --shadow-xs:
     0 0 0 1px oklch(0% 0 0 / 0.06), 0 3px 6px -2px oklch(0% 0 0 / 0.05) !important;
   --strikethrough-color: oklch(71.5% 0.0105 281) !important;
-  --nav-item-weight: 400 !important;
+  --nav-item-weight: 425 !important;
   --radius-sm: 8px !important;
   --color-base-55: oklch(65% 0.0105 281) !important;
   --setting-item-border-color: oklch(0% 0 0 / 0.092) !important;
@@ -966,16 +966,16 @@
   --fab-color: oklch(45% 0.0105 281) !important;
   --fab-easing-curve: cubic-bezier(0.4375, 0.05, 0.5375, 1) !important;
   --file-margin-y: 28px !important;
-  --font-cta-button: 400 !important;
+  --font-cta-button: 575 !important;
   --font-label:
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-semi-medium: 450 !important;
-  --frame-left-space-override: 80px !important;
-  --frame-right-space-override: 36px !important;
+  --font-semi-medium: 475 !important;
+  --frame-left-space-override: 0 !important;
+  --frame-right-space-override: 132px !important;
   --h1-size-alt: 1.75em !important;
-  --h1-weight-alt: 500 !important;
+  --h1-weight-alt: 550 !important;
   --hotkey-gradient: linear-gradient(
     to top,
     rgb(0, 114, 245) -30%,
@@ -989,7 +989,7 @@
   ) !important;
   --list-bullet-color: oklch(45% 0.0105 281) !important;
   --list-dash-color: oklch(71.5% 0.0105 281) !important;
-  --nav-file-weight: 600 !important;
+  --nav-file-weight: 625 !important;
   --nav-header-bg: oklch(from oklch(71.5% 0.0105 281) l c h / 0.1) !important;
   --nav-text-color: oklch(22.5% 0.0005 281) !important;
   --radius-ml: 12px !important;
@@ -1042,7 +1042,7 @@
     oklch(25% 0 0 / 0.0275)
   ) !important;
   --table-row-bg: oklch(25% 0 0 / 0.0275) !important;
-  --table-text-weight: 400 !important;
+  --table-text-weight: 425 !important;
   --tag-background-image: linear-gradient(
     to top,
     rgba(0, 114, 245, 0.15) -30%,
@@ -1144,9 +1144,9 @@
   --bases-group-heading-property-color: oklch(71.25% 0.00625 275) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 400 !important;
+  --bases-group-heading-property-weight: 425 !important;
   --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 600 !important;
+  --bases-group-heading-value-weight: 625 !important;
   --bases-header-border-width: 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 4px !important;
@@ -1177,7 +1177,7 @@
     transparent 24px,
     black 24px
   ) !important;
-  --bases-table-header-weight: 400 !important;
+  --bases-table-header-weight: 425 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 0 !important;
   --bases-table-row-height: 32px !important;
@@ -1192,10 +1192,10 @@
   --blockquote-border-thickness: 0 !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 250 !important;
-  --bold-weight: 650 !important;
+  --bold-weight: 675 !important;
   --border-width: 1px !important;
   --button-radius: 6px !important;
-  --callout-blend-mode: lighten;
+  --callout-blend-mode: normal;
   --callout-border-opacity: 0.15;
   --callout-border-width: 0px;
   --callout-bug: 245, 141, 179;
@@ -1215,7 +1215,7 @@
   --callout-summary: 89, 208, 196;
   --callout-tip: 89, 208, 196;
   --callout-title-padding: 0 0 0 2px;
-  --callout-title-weight: 650;
+  --callout-title-weight: 675;
   --callout-todo: 40, 165, 238;
   --callout-warning: 224, 218, 113;
   --canvas-background: oklch(24% 0.00375 275) !important;
@@ -1347,7 +1347,7 @@
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
-  --file-header-font-weight: 400 !important;
+  --file-header-font-weight: 425 !important;
   --file-header-justify: center !important;
   --file-line-width: 43rem !important;
   --file-margins: 28px 5% !important;
@@ -1356,12 +1356,12 @@
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
-  --font-bold: 700 !important;
+  --font-bold: 725 !important;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
-  --font-extrabold: 800 !important;
+  --font-extrabold: 825 !important;
   --font-extralight: 250 !important;
   --font-interface:
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -1374,8 +1374,8 @@
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-light: 300 !important;
-  --font-medium: 500 !important;
+  --font-light: 325 !important;
+  --font-medium: 525 !important;
   --font-mermaid:
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
@@ -1392,13 +1392,13 @@
     "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
-  --font-normal: 400 !important;
+  --font-normal: 425 !important;
   --font-print:
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
-  --font-semibold: 600 !important;
+  --font-semibold: 625 !important;
   --font-small: 0.90625em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
@@ -1419,7 +1419,7 @@
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 400 !important;
+  --font-weight: 425 !important;
   --footnote-divider-color: oklch(100% 0.05 283 / 0.0625) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
@@ -1434,8 +1434,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 6px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 220px !important;
   --graph-line: oklch(36.25% 0.00625 275) !important;
   --graph-node: oklch(71.25% 0.00625 275) !important;
@@ -1449,37 +1449,37 @@
   --h1-size: 2.125em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
-  --h1-weight: 250 !important;
+  --h1-weight: 300 !important;
   --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
   --h2-size: 1.5625em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 500 !important;
+  --h2-weight: 550 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.4125em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 500 !important;
+  --h3-weight: 550 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.2125em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 575 !important;
+  --h4-weight: 625 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.6 !important;
   --h5-size: 1.0875em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: 650 !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.6 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
-  --h6-weight: 650 !important;
+  --h6-weight: 675 !important;
   --header-height: 52px !important;
   --heading-formatting: oklch(52.5% 0.0125 275) !important;
   --heading-spacing: 2.5rem !important;
@@ -1523,11 +1523,11 @@
   --inline-title-size: 2.125em !important;
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
-  --inline-title-weight: 250 !important;
+  --inline-title-weight: 300 !important;
   --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
   --input-date-separator: oklch(52.5% 0.0125 275) !important;
-  --input-font-weight: 400 !important;
+  --input-font-weight: 425 !important;
   --input-height: 28px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: oklch(52.5% 0.0125 275) !important;
@@ -1593,7 +1593,7 @@
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
-  --link-weight: 400 !important;
+  --link-weight: 425 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
@@ -1694,8 +1694,8 @@
   --nav-heading-color-collapsed: oklch(52.5% 0.0125 275) !important;
   --nav-heading-color-collapsed-hover: oklch(71.25% 0.00625 275) !important;
   --nav-heading-color-hover: oklch(87.5% 0.00375 275) !important;
-  --nav-heading-weight: 500 !important;
-  --nav-heading-weight-hover: 500 !important;
+  --nav-heading-weight: 525 !important;
+  --nav-heading-weight-hover: 525 !important;
   --nav-indentation-guide-color: oklch(100% 0.05 283 / 0.05) !important;
   --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: oklch(100% 0.05 283 / 0.05) !important;
@@ -1721,7 +1721,7 @@
   --nav-tag-color-active: oklch(71.25% 0.00625 275) !important;
   --nav-tag-color-hover: oklch(71.25% 0.00625 275) !important;
   --nav-tag-radius: 6px !important;
-  --nav-tag-weight: 600 !important;
+  --nav-tag-weight: 625 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
@@ -1907,7 +1907,7 @@
   --table-header-border-width: 1px !important;
   --table-header-color: oklch(87.5% 0.00375 275) !important;
   --table-header-size: 0.8175em !important;
-  --table-header-weight: 650 !important;
+  --table-header-weight: 675 !important;
   --table-line-height: 1.6 !important;
   --table-row-alt-background: oklch(100% 0.075 283 / 0.015) !important;
   --table-row-alt-background-hover: oklch(100% 0.075 283 / 0.015) !important;
@@ -1963,7 +1963,7 @@
   --titlebar-height: 30px !important;
   --titlebar-text-color: oklch(100% 0.02 283 / 0.35) !important;
   --titlebar-text-color-focused: oklch(77.75% 0.00625 275) !important;
-  --titlebar-text-weight: 700 !important;
+  --titlebar-text-weight: 725 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 2px !important;
@@ -1980,7 +1980,7 @@
   --vault-profile-color-hover: oklch(77.75% 0.00625 275) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
-  --vault-profile-font-weight: 500 !important;
+  --vault-profile-font-weight: 525 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
   --xfa-focus-outline: auto !important;
@@ -2000,18 +2000,18 @@
   --color-base-90: oklch(87.5% 0.00375 275) !important;
   --radius-xs: 4px !important;
   --color-accent-3: color-mix(in oklab, rgb(0, 167, 250), #fff 20%) !important;
-  --nav-item-weight-active: 400 !important;
+  --nav-item-weight-active: 425 !important;
   --background-gradient: radial-gradient(
     at 50% calc(50% + 22px),
     oklch(28.75% 0.00625 275) 32%,
     oklch(24% 0.00375 275) 128%
   ) !important;
-  --tab-font-weight: 400 !important;
+  --tab-font-weight: 425 !important;
   --shadow-xs:
     0 -0.25px 0px 1px oklch(100% 0.05 283 / 0.075),
     0 0.75px 7px -2px oklch(from black l c h / 0.375) !important;
   --strikethrough-color: oklch(52.5% 0.0125 275) !important;
-  --nav-item-weight: 400 !important;
+  --nav-item-weight: 425 !important;
   --radius-sm: 8px !important;
   --color-base-55: oklch(58.75% 0.0125 275) !important;
   --setting-item-border-color: oklch(100% 0.05 283 / 0.0625) !important;
@@ -2071,16 +2071,16 @@
   --fab-color: oklch(77.75% 0.00625 275) !important;
   --fab-easing-curve: cubic-bezier(0.4375, 0.05, 0.5375, 1) !important;
   --file-margin-y: 28px !important;
-  --font-cta-button: 400 !important;
+  --font-cta-button: 575 !important;
   --font-label:
     "Inter Variable", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-semi-medium: 450 !important;
-  --frame-left-space-override: 80px !important;
-  --frame-right-space-override: 36px !important;
+  --font-semi-medium: 475 !important;
+  --frame-left-space-override: 0 !important;
+  --frame-right-space-override: 132px !important;
   --h1-size-alt: 1.75em !important;
-  --h1-weight-alt: 500 !important;
+  --h1-weight-alt: 550 !important;
   --hotkey-gradient: linear-gradient(
     to top,
     rgb(0, 167, 250) -10%,
@@ -2094,7 +2094,7 @@
   ) !important;
   --list-bullet-color: oklch(77.75% 0.00625 275) !important;
   --list-dash-color: oklch(100% 0.02 283 / 0.35) !important;
-  --nav-file-weight: 600 !important;
+  --nav-file-weight: 625 !important;
   --nav-header-bg: oklch(100% 0.05 283 / 0.0625) !important;
   --nav-text-color: oklch(87.5% 0.00375 275) !important;
   --radius-ml: 12px !important;
@@ -2143,7 +2143,7 @@
     oklch(from oklch(25.75% 0.005 275) l c h / 0.375) 80%
   ) !important;
   --table-row-bg: oklch(100% 0.075 283 / 0.015) !important;
-  --table-text-weight: 400 !important;
+  --table-text-weight: 425 !important;
   --tag-background-image: linear-gradient(
     to top,
     rgba(0, 167, 250, 0.15) -50%,
@@ -2446,7 +2446,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2455,7 +2455,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2464,7 +2464,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 425;
     outline: inherit;
     text-decoration: underline solid oklab(0.824705 -0.0448075 -0.0843141 / 0.9);
     text-decoration-color: light-dark(
@@ -2492,7 +2492,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2501,7 +2501,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2510,7 +2510,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 425;
     outline: inherit;
     text-decoration: none solid oklab(0.824705 -0.0448075 -0.0843141 / 0.9);
     text-decoration-color: light-dark(
@@ -2537,7 +2537,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2546,7 +2546,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2555,7 +2555,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 425;
     outline: inherit;
     text-decoration: none solid rgba(0, 167, 250, 0.3);
     text-decoration-color: light-dark(
@@ -2579,7 +2579,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2588,7 +2588,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2597,7 +2597,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 425;
     outline: inherit;
     text-decoration: none solid oklch(0.875 0.00375 275);
     text-decoration-color: light-dark(
@@ -2622,7 +2622,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2631,7 +2631,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2640,7 +2640,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 650;
+    font-weight: 675;
     outline: inherit;
     text-decoration: none solid oklch(0.9375 0.00375 275);
     text-decoration-color: light-dark(
@@ -2665,7 +2665,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2674,7 +2674,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2683,7 +2683,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 650;
+    font-weight: 675;
     outline: inherit;
     text-decoration: none solid oklch(0.9375 0.00375 275);
     text-decoration-color: light-dark(
@@ -2708,7 +2708,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2717,7 +2717,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2726,7 +2726,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 650;
+    font-weight: 425;
     outline: inherit;
     text-decoration: none solid oklch(0.7775 0.00625 275);
     text-decoration-color: light-dark(
@@ -2751,7 +2751,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2760,7 +2760,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2769,7 +2769,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 650;
+    font-weight: 425;
     outline: inherit;
     text-decoration: none solid oklch(0.7775 0.00625 275);
     text-decoration-color: light-dark(
@@ -2796,7 +2796,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2805,7 +2805,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2814,7 +2814,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 425;
     outline: inherit;
     text-decoration: none solid oklch(0.875 0.00375 275);
     text-decoration-color: light-dark(
@@ -2838,7 +2838,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2847,7 +2847,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2856,7 +2856,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 425;
     outline: inherit;
     text-decoration: line-through solid oklch(0.525 0.0125 275);
     text-decoration-color: light-dark(
@@ -2963,7 +2963,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -2972,7 +2972,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2981,7 +2981,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 500;
+    font-weight: 525;
     margin-inline-start: 0px;
     border: 1px solid light-dark(rgba(0, 114, 245, 0.1), rgba(0, 167, 250, 0.1));
     border-top-left-radius: 24.5px;
@@ -3171,7 +3171,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3180,7 +3180,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3223,7 +3223,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3232,7 +3232,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3291,7 +3291,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3300,7 +3300,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3309,7 +3309,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 425;
     outline: inherit;
     text-decoration: none solid oklch(0.875 0.00375 275);
     text-decoration-color: light-dark(
@@ -3381,7 +3381,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: light-dark(oklch(0.2825 0.0005 281), oklch(0.875 0.00375 275));
-    font-weight: 400;
+    font-weight: 425;
     background-color: light-dark(oklch(0 0 0 / 0.05), oklch(1 0.05 283 / 0.05));
   }
 
@@ -3437,7 +3437,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3446,7 +3446,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3465,7 +3465,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3474,7 +3474,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3493,7 +3493,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3502,7 +3502,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3521,7 +3521,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3530,7 +3530,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3549,7 +3549,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3558,7 +3558,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3577,7 +3577,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3586,7 +3586,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3606,7 +3606,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3615,7 +3615,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3628,7 +3628,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: 600;
+    font-weight: 625;
   }
 
   ::-webkit-scrollbar {
@@ -3661,7 +3661,7 @@ body {
     border-start-end-radius: 8px;
     border-end-start-radius: 8px;
     border-end-end-radius: 8px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 16px 16px 8px;
   }
 
@@ -3686,7 +3686,7 @@ body {
 
   .callout .callout-title > .callout-title-inner > p {
     color: light-dark(rgb(0, 132, 255), rgb(40, 165, 238));
-    font-weight: 650;
+    font-weight: 675;
   }
 
   .callout > .callout-content {
@@ -3697,7 +3697,7 @@ body {
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 132, 255, 0.15), rgba(40, 165, 238, 0.15));
     border-top-left-radius: 8px;
@@ -3718,7 +3718,7 @@ body {
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(4, 176, 167, 0.15), rgba(89, 208, 196, 0.15));
     border-top-left-radius: 8px;
@@ -3739,7 +3739,7 @@ body {
   .callout[data-callout="info"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 132, 255, 0.15), rgba(40, 165, 238, 0.15));
     border-top-left-radius: 8px;
@@ -3760,7 +3760,7 @@ body {
   .callout[data-callout="todo"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 132, 255, 0.15), rgba(40, 165, 238, 0.15));
     border-top-left-radius: 8px;
@@ -3781,7 +3781,7 @@ body {
   .callout[data-callout="tip"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(4, 176, 167, 0.15), rgba(89, 208, 196, 0.15));
     border-top-left-radius: 8px;
@@ -3802,7 +3802,7 @@ body {
   .callout[data-callout="success"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(9, 180, 29, 0.15), rgba(91, 208, 109, 0.15));
     border-top-left-radius: 8px;
@@ -3823,7 +3823,7 @@ body {
   .callout[data-callout="question"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(255, 143, 0, 0.15), rgba(233, 151, 63, 0.15));
     border-top-left-radius: 8px;
@@ -3844,7 +3844,7 @@ body {
   .callout[data-callout="warning"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(233, 188, 0, 0.15), rgba(224, 218, 113, 0.15));
     border-top-left-radius: 8px;
@@ -3865,7 +3865,7 @@ body {
   .callout[data-callout="danger"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(250, 30, 14, 0.15), rgba(251, 72, 79, 0.15));
     border-top-left-radius: 8px;
@@ -3886,7 +3886,7 @@ body {
   .callout[data-callout="failure"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(250, 30, 14, 0.15), rgba(251, 72, 79, 0.15));
     border-top-left-radius: 8px;
@@ -3907,7 +3907,7 @@ body {
   .callout[data-callout="bug"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(225, 70, 147, 0.15), rgba(245, 141, 179, 0.15));
     border-top-left-radius: 8px;
@@ -3928,7 +3928,7 @@ body {
   .callout[data-callout="example"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(180, 68, 241, 0.15), rgba(194, 126, 233, 0.15));
     border-top-left-radius: 8px;
@@ -3949,7 +3949,7 @@ body {
   .callout[data-callout="quote"] {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(158, 158, 158, 0.15), rgba(150, 150, 160, 0.15));
     border-top-left-radius: 8px;
@@ -3977,7 +3977,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -3986,7 +3986,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4003,7 +4003,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -4012,7 +4012,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4035,7 +4035,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -4044,7 +4044,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4053,7 +4053,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 425;
     text-decoration: none solid oklch(0.7775 0.00625 275);
   }
 
@@ -4088,7 +4088,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -4097,7 +4097,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4106,7 +4106,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 625;
     text-decoration: none solid oklch(0.7775 0.00625 275);
   }
 
@@ -4121,7 +4121,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       "Apple Color Emoji",
@@ -4130,7 +4130,7 @@ body {
       sans-serif,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4139,7 +4139,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 625;
     text-decoration: none solid oklab(0.824705 -0.0448075 -0.0843141 / 0.9);
   }
 

@@ -310,8 +310,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 0 !important;
   --footnote-size: 0.9em !important;
-  --frame-left-space: 40px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #e5e9f3 !important;
   --graph-node: #30353a !important;
@@ -908,6 +908,7 @@ body.theme-light {
   --kanban-lane-background: #f8fbff !important;
   --kanban-lane-border: 3px solid #e1e9f6 !important;
   --bg: #eef3ff !important;
+  --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #d6def3 !important;
   --accent2-lite: #000000 !important;
@@ -944,7 +945,6 @@ body.theme-light {
   --deep-dark-accent: #f8fbff !important;
   --drop-shadow: #d0ddef62 !important;
   --embed-bg: #f8fbff !important;
-  --embed-border: 2px solid transparent !important;
   --embed-border-bottom-color: transparent !important;
   --embed-border-bottom-color-hover: #e1e9f6 !important;
   --embed-border-color: transparent !important;
@@ -1634,8 +1634,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 0;
   --footnote-size: 0.9em;
-  --frame-left-space: 40px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: #363c4950;
   --graph-node: #cfd7dd;
@@ -2229,6 +2229,7 @@ body.theme-dark {
   --kanban-lane-background: #232831;
   --kanban-lane-border: 3px solid #0b0f13;
   --bg: #252c36;
+  --embed-border: 2px solid transparent;
   --accent-text: #dcddde;
   --accent2: #42536e;
   --accent2-lite: #e5ebee;
@@ -2265,7 +2266,6 @@ body.theme-dark {
   --deep-dark-accent: #1a1e24;
   --drop-shadow: #06080c60;
   --embed-bg: #1a1e24;
-  --embed-border: 2px solid transparent;
   --embed-border-bottom-color: transparent;
   --embed-border-bottom-color-hover: #0b0f13;
   --embed-border-color: transparent;
@@ -2659,7 +2659,7 @@ body .markdown-rendered a.external-link {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2688,7 +2688,7 @@ body .markdown-rendered a.internal-link {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2717,7 +2717,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2746,7 +2746,7 @@ body .markdown-rendered p {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2775,7 +2775,7 @@ body strong {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2804,7 +2804,7 @@ body b {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2833,7 +2833,7 @@ body em {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2862,7 +2862,7 @@ body i {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2894,7 +2894,7 @@ body .markdown-rendered mark {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2923,7 +2923,7 @@ body del {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -2997,7 +2997,7 @@ body div.multi-select-pill {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3165,7 +3165,7 @@ body .markdown-rendered blockquote {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3205,7 +3205,7 @@ body .site-body-left-column input.search-bar {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3238,7 +3238,7 @@ body .search-results > * {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3300,7 +3300,7 @@ body .published-container .markdown-rendered h1 {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3318,7 +3318,7 @@ body .published-container .markdown-rendered h2 {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3336,7 +3336,7 @@ body .published-container .markdown-rendered h3 {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3354,7 +3354,7 @@ body .published-container .markdown-rendered h4 {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3372,7 +3372,7 @@ body .published-container .markdown-rendered h5 {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3390,7 +3390,7 @@ body .published-container .markdown-rendered h6 {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3749,7 +3749,7 @@ body .math-block > mjx-container.MathJax {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3765,7 +3765,7 @@ body div.math-block > mjx-container.MathJax {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3786,7 +3786,7 @@ body .nav-view-outer .tree-item-self a {
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3831,7 +3831,7 @@ body
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -3857,7 +3857,7 @@ body
   font-family:
     Inter,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Helvetica,

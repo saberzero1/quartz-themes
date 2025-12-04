@@ -330,17 +330,7 @@ body.theme-light {
       oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
       75% calc(c * 0.4) h
   ) !important;
-  --bases-table-cell-background-selected: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      80% 30% h / 75%
-  ) !important;
+  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
@@ -419,10 +409,10 @@ body.theme-light {
           )
           80% calc(c * 0.4) h
       )
-      l c h / 50%
+      l c h / 40%
   ) !important;
   --blockquote-border-color: oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%
+    from oklch(from rgb(153, 115, 247) l c h) 50% c h / 75%
   ) !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-font-style: normal !important;
@@ -720,8 +710,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
@@ -883,8 +873,14 @@ body.theme-light {
   --menu-backdrop-filter: none !important;
   --menu-background: oklch(
     from
-      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
-      80% calc(c * 0.4) h
+      oklch(
+        from
+          oklch(
+            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+          )
+          l c calc(h + 330)
+      )
+      93% calc(c * 0.4) h
   ) !important;
   --menu-border-color: #d4d4d4 !important;
   --menu-border-width: 1px !important;
@@ -1108,7 +1104,7 @@ body.theme-light {
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #ababab !important;
+  --nav-tag-color: #5c5c5c !important;
   --nav-tag-color-active: #5c5c5c !important;
   --nav-tag-color-hover: #5c5c5c !important;
   --nav-tag-radius: 4px !important;
@@ -1399,7 +1395,17 @@ body.theme-light {
   --table-drag-handle-color: #ababab !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: oklch(from #222222 l c h / 10%) !important;
+  --table-header-background: oklch(
+    from
+      oklch(
+        from
+          oklch(
+            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+          )
+          l c calc(h + 30)
+      )
+      50% c h / 30%
+  ) !important;
   --table-header-border-color: oklch(from #222222 50% c h / 50%) !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #222222 !important;
@@ -1410,17 +1416,7 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: oklch(
-    from
-      oklch(
-        from
-          oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
-          )
-          l c calc(h + 330)
-      )
-      80% 30% h / 75%
-  ) !important;
+  --table-selection: rgba(138, 92, 245, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: rgb(153, 115, 247) !important;
   --table-selection-border-radius: 4px !important;
@@ -1557,9 +1553,6 @@ body.theme-light {
   --h5-color: oklch(from #2196f3 50% 30% h) !important;
   --h6-color: oklch(from #3f51b5 50% 30% h) !important;
   --inline-title-color: oklch(from #d32f2f 50% 30% h) !important;
-  --table-header-background-hover: oklch(
-    from oklch(from #222222 l c h / 10%) l c h / 15% / 50%
-  ) !important;
   --bold-color: oklch(
     from
       oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
@@ -1588,32 +1581,6 @@ body.theme-light {
   --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
   --box-shadow:
-    inset -2px -2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ),
     inset -2px -2px
       oklch(
         from
@@ -1706,33 +1673,7 @@ body.theme-light {
           )
           50% c h
       ),
-    inset -2px -2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset -2px -2px
+    inset -1px -1px
       oklch(
         from
           oklch(
@@ -1771,60 +1712,8 @@ body.theme-light {
               80% calc(c * 0.4) h
           )
           100% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset -1px -1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
       ) !important;
   --box-shadow-sm:
-    inset -1px -1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          50% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              80% calc(c * 0.4) h
-          )
-          100% c h
-      ),
     inset -1px -1px
       oklch(
         from
@@ -1953,6 +1842,10 @@ body.theme-light {
       oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
       calc(50% - 15%) 30% calc(h + 200)
   ) !important;
+  --table-border-spacing: 2px !important;
+  --table-data-background: oklch(
+    from oklch(from rgb(153, 115, 247) l c h) l c h / 7%
+  ) !important;
 }
 
 body.theme-dark {
@@ -2056,10 +1949,7 @@ body.theme-dark {
   --bases-table-cell-background-disabled: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
   );
-  --bases-table-cell-background-selected: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 45% c
-      h / 75%
-  );
+  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1);
   --bases-table-cell-radius-active: 2px;
   --bases-table-cell-radius-focus: 2px;
   --bases-table-cell-shadow-active: 0 0 0 2px
@@ -2107,10 +1997,10 @@ body.theme-dark {
   --bases-toolbar-label-display: block;
   --blockquote-background-color: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h / 50%
+      h / 40%
   );
   --blockquote-border-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%
+    from oklch(from rgb(138, 92, 245) l c h) 50% c h / 75%
   );
   --blockquote-border-thickness: 4px;
   --blockquote-font-style: normal;
@@ -2350,8 +2240,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: 36px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: #3f3f3f;
   --graph-node: #b3b3b3;
@@ -2510,7 +2400,8 @@ body.theme-dark {
   --loading-icon-delay: 400ms;
   --menu-backdrop-filter: none;
   --menu-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
+      calc(c * 0.3) h
   );
   --menu-border-color: #3f3f3f;
   --menu-border-width: 1px;
@@ -2653,7 +2544,7 @@ body.theme-dark {
   --nav-item-size: 13px;
   --nav-item-white-space: pre;
   --nav-tag-background: transparent;
-  --nav-tag-color: #666666;
+  --nav-tag-color: #b3b3b3;
   --nav-tag-color-active: #b3b3b3;
   --nav-tag-color-hover: #b3b3b3;
   --nav-tag-radius: 4px;
@@ -2872,7 +2763,10 @@ body.theme-dark {
   --table-drag-handle-color: #666666;
   --table-drag-handle-color-active: white;
   --table-drop-indicator-half-width: 2px;
-  --table-header-background: oklch(from #dadada l c h / 10%);
+  --table-header-background: oklch(
+    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% c
+      h / 30%
+  );
   --table-header-border-color: oklch(from #dadada 50% c h / 50%);
   --table-header-border-width: 1px;
   --table-header-color: #dadada;
@@ -2883,10 +2777,7 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 45% c
-      h / 75%
-  );
+  --table-selection: rgba(138, 92, 245, 0.1);
   --table-selection-blend-mode: lighten;
   --table-selection-border-color: rgb(138, 92, 245);
   --table-selection-border-radius: 4px;
@@ -2971,9 +2862,6 @@ body.theme-dark {
   --h5-color: oklch(from #2196f3 70% 20% h);
   --h6-color: oklch(from #3f51b5 70% 20% h);
   --inline-title-color: oklch(from #d32f2f 70% 20% h);
-  --table-header-background-hover: oklch(
-    from oklch(from #dadada l c h / 10%) l c h / 15% / 50%
-  );
   --bold-color: oklch(
     from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20% calc(h + 100)
   );
@@ -2994,17 +2882,7 @@ body.theme-dark {
     inset -2px -2px
       oklch(
         from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          15% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset -2px -2px
-      oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          50% c h
+          0% c h
       ),
     inset 2px 2px
       oklch(
@@ -3040,51 +2918,21 @@ body.theme-dark {
     inset 2px 2px
       oklch(
         from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          15% c h
-      ),
-    inset -2px -2px
-      oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset 2px 2px
-      oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          50% c h
+          0% c h
       ),
     inset -2px -2px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h);
   --box-shadow-active-sm:
     inset 1px 1px
       oklch(
         from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          15% c h
-      ),
-    inset -1px -1px
-      oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          50% c h
+          0% c h
       ),
     inset -1px -1px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h);
   --box-shadow-sm:
     inset -1px -1px
       oklch(
         from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          15% c h
-      ),
-    inset 1px 1px
-      oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          50% c h
-      ),
-    inset -1px -1px
-      oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
-          50% c h
+          0% c h
       ),
     inset 1px 1px
       oklch(
@@ -3159,6 +3007,10 @@ body.theme-dark {
   --strong-emphasis: oklch(
     from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20% calc(h + 200)
   );
+  --table-border-spacing: 2px;
+  --table-data-background: oklch(
+    from oklch(from rgb(138, 92, 245) l c h) l c h / 7%
+  );
 }
 
 body .markdown-rendered a.external-link {
@@ -3169,7 +3021,7 @@ body .markdown-rendered a.external-link {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3199,7 +3051,7 @@ body .markdown-rendered a.internal-link {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3232,7 +3084,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3259,7 +3111,7 @@ body .markdown-rendered p {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3286,7 +3138,7 @@ body strong {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3316,7 +3168,7 @@ body b {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3346,7 +3198,7 @@ body em {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3376,7 +3228,7 @@ body i {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3409,7 +3261,7 @@ body .markdown-rendered mark {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3436,7 +3288,7 @@ body del {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3487,12 +3339,12 @@ body .markdown-rendered hr {
   border: 0px
     light-dark(
       oklch(25.1961% 0.0000125861 23.5148deg / 0.25),
-      oklch(88.8303% 0.0000442285 23.594deg / 0.25)
+      oklch(88.8303% 0.000044225 23.6802deg / 0.25)
     );
   border-top: 2px solid
     light-dark(
       oklch(25.1961% 0.0000125861 23.5148deg / 0.25),
-      oklch(88.8303% 0.0000442285 23.594deg / 0.25)
+      oklch(88.8303% 0.000044225 23.6802deg / 0.25)
     );
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3516,7 +3368,7 @@ body div.multi-select-pill {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3701,14 +3553,14 @@ body ul > li.task-list-item[data-task="x"] {
 }
 body .markdown-rendered blockquote {
   background-color: light-dark(
-    oklch(80% 0.0756825 293.56deg / 0.5),
-    oklch(24% 0.0651598 292.488deg / 0.5)
+    oklch(80% 0.0756825 293.56deg / 0.4),
+    oklch(24% 0.0651598 292.488deg / 0.4)
   );
   border-inline-start: inherit;
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3718,9 +3570,9 @@ body .markdown-rendered blockquote {
     "Segoe UI Symbol",
     sans-serif;
   font-style: normal;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-inline-start: 24px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-inline-start: 8px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
@@ -3735,8 +3587,8 @@ body .site-body-left-column input.search-bar {
   );
   border: 2px solid
     light-dark(
-      oklch(65.3757% 0.189206 293.56deg / 0.5),
-      oklch(60.342% 0.217199 292.488deg / 0.5)
+      oklch(47.4759% 0.0000235681 23.6314deg / 0.5),
+      oklch(76.6742% 0.0000382729 23.6907deg / 0.5)
     );
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -3750,7 +3602,7 @@ body .site-body-left-column input.search-bar {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3785,7 +3637,7 @@ body .search-results > * {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3846,7 +3698,7 @@ body .published-container .markdown-rendered h1 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3862,7 +3714,7 @@ body .published-container .markdown-rendered h2 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3878,7 +3730,7 @@ body .published-container .markdown-rendered h3 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3894,7 +3746,7 @@ body .published-container .markdown-rendered h4 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3910,7 +3762,7 @@ body .published-container .markdown-rendered h5 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3926,7 +3778,7 @@ body .published-container .markdown-rendered h6 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -4282,7 +4134,7 @@ body .math-block > mjx-container.MathJax {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -4296,7 +4148,7 @@ body div.math-block > mjx-container.MathJax {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -4315,7 +4167,7 @@ body .nav-view-outer .tree-item-self a {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -4361,7 +4213,7 @@ body
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -4385,7 +4237,7 @@ body
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
