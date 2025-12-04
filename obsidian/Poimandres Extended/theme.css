@@ -1,9 +1,3 @@
-/* Fonts */
-:root {
-  --default-font: '"JetBrains Mono", monospace, "Inter", sans-serif';
-  --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
-}
-
 .theme-dark {
   color-scheme: dark;
   --accent-h: 200;
@@ -22,40 +16,40 @@
   --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
   --terminal_black_x: 48, 51, 64;
   --terminal_black: rgb(var(--terminal_black_x));
-  --fg_x: 166, 172, 205; /* #a6accd */
+  --fg_x: 166, 172, 205;
   --fg: rgb(var(--fg_x));
-  --fg_dark_x: 118, 124, 157; /* #767c9d */
+  --fg_dark_x: 118, 124, 157;
   --fg_dark: rgb(var(--fg_dark_x));
   --bold-color: rgba(var(--blue0_x), 0.65);
 
-  --comment_x: 118, 124, 157; /* #767c9d */
+  --comment_x: 118, 124, 157;
   --comment: rgb(var(--comment_x));
 
-  --blue0_x: 137, 221, 255; /* #89ddff */
+  --blue0_x: 137, 221, 255;
   --blue0: rgb(var(--blue0_x));
-  --blue_x: 173, 215, 255; /* #ADD7FF */
+  --blue_x: 173, 215, 255;
   --blue: rgb(var(--blue_x));
-  --cyan0_x: 137, 221, 255; /* #89ddff */
+  --cyan0_x: 137, 221, 255;
   --cyan0: rgb(var(--cyan0_x));
-  --cyan_x: 173, 215, 255; /* #ADD7FF */
+  --cyan_x: 173, 215, 255;
   --cyan: rgb(var(--cyan_x));
-  --magenta_x: 240, 135, 189; /* #f087bd */
+  --magenta_x: 240, 135, 189;
   --magenta: rgb(var(--magenta_x));
-  --pink_x: 240, 135, 189; /* #f087bd */
+  --pink_x: 240, 135, 189;
   --pink: rgb(var(--pink_x));
-  --orange_x: 255, 250, 194; /* map orange to yellow */
+  --orange_x: 255, 250, 194;
   --orange: rgb(var(--orange_x));
-  --yellow_x: 255, 250, 194; /* #fffac2 */
+  --yellow_x: 255, 250, 194;
   --yellow: rgb(var(--yellow_x));
-  --green0_x: 95, 179, 161; /* #5fb3a1 */
+  --green0_x: 95, 179, 161;
   --green0: rgb(var(--green0_x));
-  --green_x: 93, 228, 199; /* #5DE4c7 */
+  --green_x: 93, 228, 199;
   --green: rgb(var(--green_x));
-  --teal_x: 66, 103, 90; /* #42675A */
+  --teal_x: 66, 103, 90;
   --teal: rgb(var(--teal_x));
-  --red_x: 208, 103, 157; /* #d0679d */
+  --red_x: 208, 103, 157;
   --red: rgb(var(--red_x));
-  --red1_x: 208, 103, 157; /* #d0679d */
+  --red1_x: 208, 103, 157;
   --red1: rgb(var(--red1_x));
   --unknown: #ffffff;
 
@@ -68,51 +62,51 @@
   --accent-s: 100%;
   --accent-l: 50%;
 
-  --bg_dark2_x: 192, 208, 223; /* #c0d0df */
+  --bg_dark2_x: 192, 208, 223;
   --bg_dark2: rgb(var(--bg_dark2_x));
-  --bg_dark_x: 254, 254, 255; /* #FEFEFF */
+  --bg_dark_x: 254, 254, 255;
   --bg_dark: rgb(var(--bg_dark_x));
-  --bg_x: 254, 254, 255; /* #FEFEFF */
+  --bg_x: 254, 254, 255;
   --bg: rgb(var(--bg_x));
-  --bg_highlight_x: 192, 208, 223; /* #c0d0df */
+  --bg_highlight_x: 192, 208, 223;
   --bg_highlight: rgb(var(--bg_highlight_x));
-  --bg_highlight_dark_x: 255, 255, 255; /* white-ish for code bg */
+  --bg_highlight_dark_x: 255, 255, 255;
   --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
-  --terminal_black_x: 59, 62, 72; /* #3b3e48 */
+  --terminal_black_x: 59, 62, 72;
   --terminal_black: rgb(var(--terminal_black_x));
-  --fg_x: 59, 62, 72; /* #3b3e48 */
+  --fg_x: 59, 62, 72;
   --fg: rgb(var(--fg_x));
-  --fg_dark_x: 150, 156, 189; /* #969cbd */
+  --fg_dark_x: 150, 156, 189;
   --fg_dark: rgb(var(--fg_dark_x));
   --bold-color: rgba(var(--green0_x), 0.72);
-  --comment_x: 192, 208, 223; /* #c0d0df */
+  --comment_x: 192, 208, 223;
   --comment: rgb(var(--comment_x));
 
-  --blue0_x: 138, 186, 205; /* #8ABACD */
+  --blue0_x: 138, 186, 205;
   --blue0: rgb(var(--blue0_x));
-  --blue_x: 14, 191, 255; /* #0EBFFF */
+  --blue_x: 14, 191, 255;
   --blue: rgb(var(--blue_x));
-  --cyan0_x: 138, 186, 205; /* #8ABACD */
+  --cyan0_x: 138, 186, 205;
   --cyan0: rgb(var(--cyan0_x));
-  --cyan_x: 14, 191, 255; /* #0EBFFF */
+  --cyan_x: 14, 191, 255;
   --cyan: rgb(var(--cyan_x));
-  --magenta_x: 235, 131, 148; /* #EB8394 */
+  --magenta_x: 235, 131, 148;
   --magenta: rgb(var(--magenta_x));
-  --pink_x: 235, 131, 148; /* #EB8394 */
+  --pink_x: 235, 131, 148;
   --pink: rgb(var(--pink_x));
-  --orange_x: 255, 212, 103; /* #FFD467 */
+  --orange_x: 255, 212, 103;
   --orange: rgb(var(--orange_x));
-  --yellow_x: 255, 212, 103; /* #FFD467 */
+  --yellow_x: 255, 212, 103;
   --yellow: rgb(var(--yellow_x));
-  --green0_x: 98, 170, 155; /* #62AA9B */
+  --green0_x: 98, 170, 155;
   --green0: rgb(var(--green0_x));
-  --green_x: 1, 218, 178; /* #01DAB2 */
+  --green_x: 1, 218, 178;
   --green: rgb(var(--green_x));
-  --teal_x: 98, 170, 155; /* #62AA9B */
+  --teal_x: 98, 170, 155;
   --teal: rgb(var(--teal_x));
-  --red_x: 255, 32, 144; /* #ff2090 */
+  --red_x: 255, 32, 144;
   --red: rgb(var(--red_x));
-  --red1_x: 255, 32, 144; /* #ff2090 */
+  --red1_x: 255, 32, 144;
   --red1: rgb(var(--red1_x));
   --unknown: #000000;
 
@@ -122,24 +116,24 @@
 
 /* Variant: Storm */
 .pm-variant-storm.theme-dark {
-  --bg_dark2_x: 16, 16, 16; /* #101010 */
+  --bg_dark2_x: 16, 16, 16;
   --bg_dark2: rgb(var(--bg_dark2_x));
-  --bg_dark_x: 37, 43, 55; /* #252b37 */
+  --bg_dark_x: 37, 43, 55;
   --bg_dark: rgb(var(--bg_dark_x));
-  --bg_x: 37, 43, 55; /* #252b37 */
+  --bg_x: 37, 43, 55;
   --bg: rgb(var(--bg_x));
-  --bg_highlight_x: 64, 67, 80; /* #404350 */
+  --bg_highlight_x: 64, 67, 80;
   --bg_highlight: rgb(var(--bg_highlight_x));
-  --bg_highlight_dark_x: 16, 16, 16; /* #101010 for code bg */
+  --bg_highlight_dark_x: 16, 16, 16;
   --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
-  --terminal_black_x: 16, 16, 16; /* #101010 */
+  --terminal_black_x: 16, 16, 16;
   --terminal_black: rgb(var(--terminal_black_x));
-  --fg_dark_x: 134, 140, 173; /* #868cad */
+  --fg_dark_x: 134, 140, 173;
   --fg_dark: rgb(var(--fg_dark_x));
   --bold-color: rgba(var(--blue0_x), 0.65);
-  --comment_x: 134, 140, 173; /* #868cad */
+  --comment_x: 134, 140, 173;
   --comment: rgb(var(--comment_x));
-  --code-background: rgba(16, 16, 16, 0.35); /* ~#10101050 */
+  --code-background: rgba(16, 16, 16, 0.35);
 }
 
 .theme-dark,
@@ -462,27 +456,6 @@ body.h6-divider-on
   );
 }
 
-.markdown-rendered h1,
-.markdown-preview-sizer > div > h1,
-.HyperMD-header-1,
-.markdown-rendered h2,
-.markdown-preview-sizer > div > h2,
-.HyperMD-header-2,
-.markdown-rendered h3,
-.markdown-preview-sizer > div > h3,
-.HyperMD-header-3,
-.markdown-rendered h4,
-.markdown-preview-sizer > div > h4,
-.HyperMD-header-4,
-.markdown-rendered h5,
-.markdown-preview-sizer > div > h5,
-.HyperMD-header-5,
-.markdown-rendered h6,
-.markdown-preview-sizer > div > h6,
-.HyperMD-header-6 {
-  font-family: Georgia, "Times New Roman", serif, var(--default-font);
-  font-weight: 700;
-}
 .inline-title {
   font-weight: 700;
 }
@@ -942,24 +915,26 @@ body:not(.disable-alternative-checkboxes)
   text-decoration: line-through solid var(--text-faint) 1px;
 }
 
-/* @settings
+/* Style Settings Plugin */
+/* https://github.com/mgmeyers/obsidian-style-settings */
 
-name: Poimandres Plus
-id: poimandres-plus
+/* @settings
+name: Poimandres Extended
+id: poimandres-extended
 settings:
   - id: section-variant
-    title: Variant
+    title: Variants
     type: heading
     level: 2
   - id: pm-variant-storm
     title: Storm
-    description: More vibrant palette [dark mode only]
+    description: More vibrant palette [dark mode]
     type: class-toggle
     class: pm-variant-storm
     default: false
 
   - id: section-headings
-    title: Headings
+    title: Dividers
     type: heading
     level: 2
   - id: h1-divider-on
@@ -994,7 +969,7 @@ settings:
     default: false
 
   - id: section-selection
-    title: Selection
+    title: Selection color
     type: heading
     level: 2
   - id: text-selection

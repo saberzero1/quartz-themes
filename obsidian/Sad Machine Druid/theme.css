@@ -1,7 +1,6 @@
 /***** TABLE OF CONTENTS *****/
-/* TODO: Reformat entire CSS file as below.
 /* 1. Font
-/* 2. Colours
+/* 2. Colors
 /*     2.1. Dark theme color variables
 /*     2.2. Light theme color variables
 /*     2.3. Dark theme implementation
@@ -17,24 +16,24 @@
 /*     4.4. Tables
 /*     4.5. Popovers
 /*     4.6. Task Lists
-/*     4.7. Blockquotes
+/*     4.7. Block quotes
 /*     4.8. Code
 /*     4.9. Bulleted lists
 /*     4.10. Misc Fixes
-/* 5. Graph view colours
-/* 6. Notion Colour Blocks
+/* 5. Graph view colors
+/* 6. Notion Color Blocks
 /* 7. In-document header (scrolls with the document) [remove for compatibility with Andy's mode]
 /*     7.1. Adjustments for non-in-document headers (graphs, etc)\
 /*     7.2. Active pane border 
 /*     7.3. Misc fixes
 /* 8. Tags
-/*     8.1. Tag custom colours
+/*     8.1. Tag custom colors
 /***** *****/
 
 /* 1. Font */
 body {
   /* font stacks taken directly from Notion */
-  --font-monospace: "Hack", "Hack Nerd Font", "Source Code Pro", monospace;
+  --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
   -webkit-font-smoothing: auto;
   --h1-color: var(--text-title-h1);
   --h2-color: var(--text-title-h2);
@@ -44,7 +43,7 @@ body {
   --h6-color: var(--text-title-h6);
 }
 
-/* 2. Colours */
+/* 2. Colors */
 :root {
   /* 2.1 Dark theme color variables */
   --bg0-dark: #22282c;
@@ -61,7 +60,7 @@ body {
   --bg_yellow: #4a4940;
   --shadow: #00000070;
 
-  --fg-dark: #d3c6aa;
+  --fg-dark: #beb39b;
   --grey0-dark: #7f897d;
   --grey1-dark: #859289;
   --grey2-dark: #9aa79d;
@@ -74,13 +73,13 @@ body {
   --faded-blue: #7fbbb3;
   --faded-purple: #d699b6;
 
-  --dim-red: #da6362;
-  --dim-orange: #c3703d;
-  --dim-yellow: #d6aa41;
-  --dim-green: #3bac68;
+  --dim-red: #925b62;
+  --dim-orange: #b98c70;
+  --dim-yellow: #d3b879;
+  --dim-green: #68925b;
   --dim-aqua: #569d79;
-  --dim-blue: #569bad;
-  --dim-purple: #a47bb8;
+  --dim-blue: #5b928c;
+  --dim-purple: #705b92;
 
   /* 2.2 Light theme color variables */
   --bg0-light: #f0edd8;
@@ -104,20 +103,20 @@ body {
   --fg-light: #5c6a72;
 
   --light-red: #f85552;
-  --light-orange: #f57d26;
-  --light-yellow: #bf983d;
-  --light-green: #899c40;
-  --light-aqua: #569d79;
-  --light-blue: #5a93a2;
-  --light-purple: #b87b9d;
+  --light-orange: #f56126;
+  --light-yellow: #a7a049;
+  --light-green: #99b87b;
+  --light-aqua: #639479;
+  --light-blue: #67a6bd;
+  --light-purple: #a56e8c;
 
-  --light-dim-red: #f1706f;
-  --light-dim-orange: #f39459;
-  --light-dim-yellow: #e4b649;
-  --light-dim-green: #a4bb4a;
-  --light-dim-aqua: #6ec398;
-  --light-dim-blue: #6cb3c6;
-  --light-dim-purple: #e092be;
+  --light-dim-red: #e04340;
+  --light-dim-orange: #e04c18;
+  --light-dim-yellow: #a89f48;
+  --light-dim-green: #829e66;
+  --light-dim-aqua: #689b7f;
+  --light-dim-blue: #64a9c2;
+  --light-dim-purple: #9e6886;
 }
 
 /* 2.3 Dark theme implementation */
@@ -137,7 +136,6 @@ body {
   --text-link: var(--faded-blue);
   --text-a: var(--dim-aqua);
   --text-a-hover: var(--faded-aqua);
-  --text-mark: rgba(215, 153, 33, 0.4); /* light-yellow */
   --pre-code: var(--bg1-dark);
   --text-highlight-bg: var(--bg_green);
   --interactive-accent: var(--dim-aqua);
@@ -168,7 +166,6 @@ body {
   --text-link: var(--light-blue);
   --text-a: var(--light-dim-blue);
   --text-a-hover: var(--light-blue);
-  --text-mark: rgba(215, 153, 33, 0.4); /* light-yellow */
   --pre-code: var(--bg1-light);
   --text-highlight-bg: var(--light-dim-green);
   --interactive-accent: var(--bg5-light);
@@ -403,7 +400,12 @@ img {
 .CodeMirror-linenumber,
 .cm-formatting {
   font-family: var(--font-monospace);
-  font-size: 0.9em;
+  font-size: 0.6em;
+}
+.cm-hashtag {
+  vertical-align: middle;
+  line-height: 1.4em;
+  font-size: 0.7em;
 }
 
 .markdown-preview-section pre code,
@@ -465,13 +467,13 @@ img {
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  width: 1px;
+  width: 2px;
   background-color: var(--dim-aqua);
 }
 
 /* horizontal resize-handle */
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
-  height: 1px;
+  height: 2px;
   background-color: var(--dim-aqua);
 }
 

@@ -46,12 +46,7 @@ body.theme-dark {
   border: none;
   border-bottom: 0.0625rem solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    transparent,
-    var(--color-bossidian-primary),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, transparent, var(--color-bossidian-primary), transparent);
 }
 .cm-line hr::after,
 .markdown-preview-view hr::after {
@@ -120,14 +115,8 @@ pre {
   position: relative;
 }
 
-pre[class*="language-"]::before {
-  font-family:
-    Rubik,
-    Lato,
-    Lucida Grande,
-    Lucida Sans Unicode,
-    Tahoma,
-    Sans-Serif;
+pre[class*=language-]::before {
+  font-family: Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.6rem;
@@ -145,49 +134,49 @@ pre[class*="language-"]::before {
   z-index: 10;
 }
 
-pre[class$="javascript"]::before,
-pre[class$="js"]::before {
+pre[class$=javascript]::before,
+pre[class$=js]::before {
   content: "JavaScript";
 }
 
-pre[class$="typescript"]::before,
-pre[class$="ts"]::before {
+pre[class$=typescript]::before,
+pre[class$=ts]::before {
   content: "typescript";
 }
 
-pre[class$="html"]::before {
+pre[class$=html]::before {
   content: "html";
 }
 
-pre[class$="css"]::before {
+pre[class$=css]::before {
   content: "css";
 }
 
-pre[class$="ejs"]::before {
+pre[class$=ejs]::before {
   content: "ejs";
 }
 
-pre[class$="vue"]::before {
+pre[class$=vue]::before {
   content: "vue";
 }
 
-pre[class$="react"]::before {
+pre[class$=react]::before {
   content: "react";
 }
 
-pre[class$="shell"]::before {
+pre[class$=shell]::before {
   content: "Shell";
 }
 
-pre[class$="powershell"]::before {
+pre[class$=powershell]::before {
   content: "PowerShell";
 }
 
-pre[class$="json"]::before {
+pre[class$=json]::before {
   content: "Json";
 }
 
-pre[class$="python"]::before {
+pre[class$=python]::before {
   content: "python";
 }
 

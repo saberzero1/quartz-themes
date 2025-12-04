@@ -1,7 +1,7 @@
 > This page is to quickly check how all features are rendered.
 
 - Theme author: bladeacer
-- Support the author: Author did not provide funding links in `manifest.json`
+- Support the author: <a href="https://github.com/sponsors/bladeacer" target="_blank" rel="noopener noreferrer">Donate</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flexcyon">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                             |

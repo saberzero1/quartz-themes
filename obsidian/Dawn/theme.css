@@ -67,16 +67,16 @@
 body {
   /* -----------------------------------------------------
 
-    List of variables is placed in body rather than :root so 
-    that we can    combine all property types including colors
-    and sort alphabetically to maximize readability in
-    the compiled app.css file.
+	List of variables is placed in body rather than :root so 
+	that we can	combine all property types including colors
+	and sort alphabetically to maximize readability in
+	the compiled app.css file.
     
   kr:변수 목록은 다음과 같이 본문에 배치됩니다:root so
   색상을 포함한 모든 속성 유형을 결합할 수 있습니다
   가독성을 극대화하기 위해 알파벳 순으로 정렬합니다
   
-    ----------------------------------------------------- */
+	----------------------------------------------------- */
 
   /* Animations */
   --anim-duration-none: 0;
@@ -207,8 +207,7 @@ body {
   --embed-font-style: inherit;
 
   /* Blocks */
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
 
   /* File layout */
@@ -812,12 +811,10 @@ body {
 
   --input-shadow: transparent;
   --input-shadow-hover: transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
 .theme-dark {
@@ -975,19 +972,17 @@ body {
 
   --input-shadow: transparent;
   --input-shadow-hover: transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
 /* -----------------------------------------------------
 
  ✼ Note UI Detail Style ✼
 
-    ----------------------------------------------------- */
+	----------------------------------------------------- */
 
 /*----Startup Progress Bar Screen----*/
 /*Startup Progress Bar Window*/
@@ -1454,7 +1449,7 @@ blockquote {
 
 .callout-icon {
   align-self: baseline;
-  margin-top: var(--scale-dimension-size-0);
+  margin-top : var(--scale-dimension-size-0);
 }
 
 .callout-content > p {
@@ -1581,6 +1576,7 @@ iframe,
 } /*Live Preview Mode*/
 .markdown-source-view .markdown-embed:not(.mod-empty) {
 } /*Live Preview Mode*/
+
 
 .markdown-embed-link {
   border-radius: var(--radius-m);

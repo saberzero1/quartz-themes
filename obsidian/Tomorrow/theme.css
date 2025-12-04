@@ -1,21 +1,21 @@
 .theme-dark {
-  --background-primary: #1d1f21;
-  --background-secondary: #282a2e;
-  --text-normal: #c5c8c6;
-  --text-muted: #969896;
-  --text-selection: #373b41;
+  --background-primary: #1D1F21;
+  --background-secondary: #282A2E;
+  --text-normal: #C5C8C6;
+  --text-muted:  #969896;
+  --text-selection: #373B41;
 
   --code-background: var(--background-secondary);
-  --divider-color: #181a1e;
+  --divider-color: #181A1E;
 
-  --color-red: #cc6666;
-  --color-orange: #de935f;
-  --color-yellow: #f0c674;
-  --color-green: #b5bd68;
-  --color-cyan: #8abeb7;
-  --color-blue: #81a2be;
-  --color-pink: #b294bb;
-  --color-purple: #b777e0;
+  --color-red:    #CC6666;
+  --color-orange: #DE935F;
+  --color-yellow: #F0C674;
+  --color-green:  #B5BD68;
+  --color-cyan:   #8ABEB7;
+  --color-blue:   #81A2BE;
+  --color-pink:   #B294BB;
+  --color-purple: #B777E0;
 
   --titlebar-background: var(--background-primary);
   --titlebar-background-focused: var(--background-secondary);
@@ -25,21 +25,21 @@
 }
 
 .theme-light {
-  --background-primary: #ffffff;
-  --background-secondary: #efefef;
-  --text-normal: #4d4d4c;
-  --text-muted: #8e908c;
+  --background-primary: #FFFFFF;
+  --background-secondary: #EFEFEF;
+  --text-normal: #4D4D4C;
+  --text-muted: #8E908C;
 
-  --divider-color: #cecece;
+  --divider-color: #CECECE;
 
-  --color-red: #c82829;
-  --color-orange: #f5871f;
-  --color-yellow: #eab700;
-  --color-green: #718c00;
-  --color-cyan: #3e999f;
-  --color-blue: #4271ae;
-  --color-pink: #b777e0;
-  --color-purple: #8959a8;
+  --color-red:    #C82829;
+  --color-orange: #F5871F;
+  --color-yellow: #EAB700;
+  --color-green:  #718C00;
+  --color-cyan:   #3E999F;
+  --color-blue:   #4271AE;
+  --color-pink:   #B777E0;
+  --color-purple: #8959A8;
 
   --titlebar-background: var(--background-primary);
   --titlebar-background-focused: var(--background-secondary);
@@ -93,8 +93,10 @@ svg * {
 
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  z-index: var(--layer-status-bar);
-  height: var(--divider-vertical-height);
-  top: var(--header-height);
-  bottom: 0;
+    z-index: var(--layer-status-bar);
+    height: var(--divider-vertical-height);
+    top: var(--header-height);
+    bottom: 0;
 }
+
+

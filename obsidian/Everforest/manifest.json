@@ -1,7 +1,6 @@
 {
-  "name": "Everforest",
-  "version": "0.0.0",
-  "minAppVersion": "0.16.0",
-  "author": "MrGlitchByte",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+    "name": "Everforest",
+    "version": "0.0.0",
+    "minAppVersion": "0.16.0",
+    "author": "MrGlitchByte"
 }

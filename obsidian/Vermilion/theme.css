@@ -1,257 +1,261 @@
 .theme-dark {
-  /* ---------- Custom Variables ---------- */
+	/* ---------- Custom Variables ---------- */
 
-  --color-black: #000000;
-  --color-black-board: #1c1c1c;
-  --color-moon-white: #f4f6f0;
-  --color-crescent-moon: #d8d2c9;
-  --color-havelock-blue: #5590d9;
-  --color-muslim-green: #00ac5a;
+	--color-black: #000000;
+	--color-black-board: #1c1c1c;
+	--color-moon-white: #f4f6f0;
+	--color-crescent-moon: #d8d2c9;
+	--color-havelock-blue: #5590d9;
+	--color-muslim-green: #00ac5a;
 
-  --color-moon-gray: #909090;
-  --color-moon-gray-03: color-mix(
-    in oklab,
-    var(--color-moon-gray) 3%,
-    transparent
-  );
-  --color-moon-gray-06: color-mix(
-    in oklab,
-    var(--color-moon-gray) 6%,
-    transparent
-  );
-  --color-moon-gray-08: color-mix(
-    in oklab,
-    var(--color-moon-gray) 8%,
-    transparent
-  );
-  --color-moon-gray-16: color-mix(
-    in oklab,
-    var(--color-moon-gray) 16%,
-    transparent
-  );
-  --color-moon-gray-60: color-mix(
-    in oklab,
-    var(--color-moon-gray) 60%,
-    transparent
-  );
+	--color-moon-gray: #909090;
+	--color-moon-gray-03: color-mix(
+		in oklab,
+		var(--color-moon-gray) 3%,
+		transparent
+	);
+	--color-moon-gray-06: color-mix(
+		in oklab,
+		var(--color-moon-gray) 6%,
+		transparent
+	);
+	--color-moon-gray-08: color-mix(
+		in oklab,
+		var(--color-moon-gray) 8%,
+		transparent
+	);
+	--color-moon-gray-16: color-mix(
+		in oklab,
+		var(--color-moon-gray) 16%,
+		transparent
+	);
+	--color-moon-gray-60: color-mix(
+		in oklab,
+		var(--color-moon-gray) 60%,
+		transparent
+	);
 
-  --color-vermillion-red: #e34234;
-  --color-vermillion-red-30: color-mix(
-    in oklab,
-    var(--color-vermillion-red) 30%,
-    transparent
-  );
-  --color-vermillion-red-70: color-mix(
-    in oklab,
-    var(--color-vermillion-red) 70%,
-    transparent
-  );
+	--color-vermillion-red: #e34234;
+	--color-vermillion-red-30: color-mix(
+		in oklab,
+		var(--color-vermillion-red) 30%,
+		transparent
+	);
+	--color-vermillion-red-70: color-mix(
+		in oklab,
+		var(--color-vermillion-red) 70%,
+		transparent
+	);
 
-  /* ---------- Obsidian Variables ---------- */
+	/* ---------- Obsidian Variables ---------- */
 
-  --background-primary: var(--color-black-board);
-  --background-primary-alt: var(--color-black-board);
-  --background-secondary: var(--color-black-board);
-  --background-secondary-alt: var(--color-black-board);
-  --file-line-width: 65ch;
-  --nav-item-color-active: var(--color-crescent-moon);
-  --nav-item-background-active: var(--color-moon-gray-06);
-  --tab-text-color-focused-active-current: var(--color-crescent-moon);
-  --tab-background-active: transparent;
-  --divider-color-hover: var(--color-vermillion-red-30);
-  --text-normal: var(--color-moon-gray);
-  --bold-color: var(--color-vermillion-red);
-  --link-color: var(--color-havelock-blue);
-  --link-external-color: var(--color-havelock-blue);
-  --link-unresolved-color: var(--color-havelock-blue);
-  --code-normal: var(--color-crescent-moon);
-  --h1-color: var(--color-moon-white);
-  --h2-color: var(--color-moon-white);
-  --h3-color: var(--color-moon-white);
-  --h4-color: var(--color-moon-white);
-  --h5-color: var(--color-moon-white);
-  --h6-color: var(--color-moon-white);
-  --checkbox-radius: 100px;
-  --checkbox-color: var(--color-muslim-green);
-  --checkbox-marker-color: var(--color-black);
-  --checklist-done-color: var(--color-moon-gray-60);
-  --line-height-normal: 1.6;
-  --tag-color: var(--color-crescent-moon);
-  --tag-background: var(--color-moon-gray-08);
-  --tag-radius: 4px;
-  --blockquote-font-style: italic;
-  --blockquote-background-color: var(--color-moon-gray-03);
+	--background-primary: var(--color-black-board);
+	--background-primary-alt: var(--color-black-board);
+	--background-secondary: var(--color-black-board);
+	--background-secondary-alt: var(--color-black-board);
+	--file-line-width: 65ch;
+	--nav-item-color-active: var(--color-crescent-moon);
+	--nav-item-background-active: var(--color-moon-gray-06);
+	--tab-text-color-focused-active-current: var(--color-crescent-moon);
+	--tab-background-active: transparent;
+	--divider-color-hover: var(--color-vermillion-red-30);
+	--text-normal: var(--color-moon-gray);
+	--bold-color: var(--color-vermillion-red);
+	--link-color: var(--color-havelock-blue);
+	--link-external-color: var(--color-havelock-blue);
+	--link-unresolved-color: var(--color-havelock-blue);
+	--code-normal: var(--color-crescent-moon);
+	--h1-color: var(--color-moon-white);
+	--h2-color: var(--color-moon-white);
+	--h3-color: var(--color-moon-white);
+	--h4-color: var(--color-moon-white);
+	--h5-color: var(--color-moon-white);
+	--h6-color: var(--color-moon-white);
+	--checkbox-radius: 100px;
+	--checkbox-color: var(--color-muslim-green);
+	--checkbox-marker-color: var(--color-black);
+	--checklist-done-color: var(--color-moon-gray-60);
+	--line-height-normal: 1.6;
+	--tag-color: var(--color-crescent-moon);
+	--tag-background: var(--color-moon-gray-08);
+	--tag-radius: 4px;
+	--blockquote-font-style: italic;
+	--blockquote-background-color: var(--color-moon-gray-03);
 
-  /* ---------- System Interface ---------- */
+	/* ---------- System Interface ---------- */
 
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--color-moon-gray-08);
-    border-radius: var(--radius-m);
-  }
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: var(--color-moon-gray-08);
+		border-radius: var(--radius-m);
+	}
 
-  .workspace-tab-header.is-active .workspace-tab-header-inner,
-  .workspace-tab-header.mod-active .workspace-tab-header-inner {
-    background: var(--color-moon-gray-08);
-  }
+	.workspace-tab-header.is-active .workspace-tab-header-inner,
+	.workspace-tab-header.mod-active .workspace-tab-header-inner {
+		background: var(--color-moon-gray-08);
+	}
 
-  .view-header,
-  .view-content {
-    background-color: transparent !important;
-  }
+	.view-header,
+	.view-content {
+		background-color: transparent !important;
+	}
 
-  .workspace-tab-header {
-    box-shadow: none;
-  }
-  .workspace-tab-header::before,
-  .workspace-tab-header::after {
-    display: none;
-  }
+	.workspace-tab-header {
+		box-shadow: none;
+	}
+	.workspace-tab-header::before,
+	.workspace-tab-header::after {
+		display: none;
+	}
 
-  .inline-title {
-    color: var(--color-moon-gray);
-  }
+	.inline-title {
+		color: var(--color-moon-gray);
+	}
 
-  .metadata-container {
-    background: var(--color-moon-gray-03);
-    border-radius: var(--radius-m);
-    padding: 1rem;
-    margin-block: 2rem;
-  }
-  .metadata-properties-heading {
-    display: none;
-  }
+	.metadata-container {
+		background: var(--color-moon-gray-03);
+		border-radius: var(--radius-m);
+		padding: 1rem;
+		margin-block: 2rem;
+	}
+	.metadata-properties-heading {
+		display: none;
+	}
 
-  .pane-empty {
-    font-style: italic;
-  }
+	.pane-empty {
+		font-style: italic;
+	}
 
-  .workspace-drawer-vault-switcher .workspace-drawer-vault-name,
-  .workspace-drawer-vault-switcher .workspace-drawer-vault-switcher-icon,
-  .sidebar-toggle-button .clickable-icon {
-    color: var(--color-vermillion-red-70) !important;
-  }
+	.workspace-drawer-vault-switcher .workspace-drawer-vault-name,
+	.workspace-drawer-vault-switcher .workspace-drawer-vault-switcher-icon,
+	.sidebar-toggle-button .clickable-icon {
+		color: var(--color-vermillion-red-70) !important;
+	}
 
-  .graph-controls.is-close {
-    background-color: transparent;
-  }
+	.graph-controls.is-close {
+		background-color: transparent;
+	}
 
-  /* ---------- Markdown Contents ---------- */
+	/* ---------- Markdown Contents ---------- */
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 800;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 800;
+	}
 
-  h1 {
-    margin-block-start: var(--p-spacing);
-    margin-block-end: 2.4rem;
-  }
+	h1 {
+		margin-block-start: var(--p-spacing);
+		margin-block-end: 2.4rem;
+	}
 
-  h2 {
-    border-bottom: 1px solid;
-    border-bottom-color: var(--color-moon-gray-16);
-    padding-block-end: 0.8rem;
-  }
+	h2 {
+		border-bottom: 1px solid;
+		border-bottom-color: var(--color-moon-gray-16);
+		padding-block-end: 0.8rem;
+	}
 
-  b,
-  strong {
-    font-weight: 400;
-  }
+	b,
+	strong {
+		font-weight: 400;
+	}
 
-  code {
-    font-style: italic;
-  }
+	code {
+		font-style: italic;
+	}
 
-  pre {
-    background: var(--color-moon-gray-06) !important;
-    border-radius: var(--radius-m);
-  }
-  pre code {
-    font-style: normal;
-  }
+	pre {
+		background: var(--color-moon-gray-06) !important;
+		border-radius: var(--radius-m);
+	}
+	pre code {
+		font-style: normal;
+	}
 
-  .token.comment {
-    font-style: italic;
-  }
+	.token.comment {
+		font-style: italic;
+	}
 
-  blockquote {
-    padding-inline-start: 0;
-    border-inline-start: none;
-    padding: 1rem;
-    border-radius: var(--radius-m);
-    color: var(--color-crescent-moon);
-    font-weight: 400;
-  }
+	blockquote {
+		padding-inline-start: 0;
+		border-inline-start: none;
+		padding: 1rem;
+		border-radius: var(--radius-m);
+		color: var(--color-crescent-moon);
+		font-weight: 400;
+	}
 
-  .callout {
-    border-radius: var(--radius-m);
-  }
+	.callout {
+		border-radius: var(--radius-m);
+	}
 
-  .view-content hr {
-    border: none;
-    border-bottom: 3px dotted;
-    border-bottom-color: var(--color-moon-gray-16);
-    margin: 2rem 0;
-  }
+	.view-content hr {
+		border: none;
+		border-bottom: 3px dotted;
+		border-bottom-color: var(--color-moon-gray-16);
+		margin: 2rem 0;
+	}
 
-  mark {
-    background-color: var(--color-vermillion-red-30);
-    color: var(--color-moon-white);
-    padding: 0.1em 0.3em;
-    border-radius: 3px;
-    font-style: italic;
-    font-weight: 400;
-  }
+	mark {
+		background-color: var(--color-vermillion-red-30);
+		color: var(--color-moon-white);
+		padding: 0.1em 0.3em;
+		border-radius: 3px;
+		font-style: italic;
+		font-weight: 400;
+	}
 
-  .mermaid {
-    background: var(--color-moon-gray-03);
-    border-radius: var(--radius-m);
-  }
-  .mermaid > * {
-    transform: scale(0.9);
-    transform-origin: center;
-  }
+	.mermaid {
+		background: var(--color-moon-gray-03);
+		border-radius: var(--radius-m);
+	}
+	.mermaid > * {
+		transform: scale(0.9);
+		transform-origin: center;
+	}
 
-  /* ---------- Plugin: File explorer note count ---------- */
+	/* ---------- Plugin: File explorer note count ---------- */
 
-  .nav-folder-title[data-count]::after {
-    color: var(--color-crescent-moon);
-    font-style: italic;
-    font-weight: 100;
-  }
+	.nav-folder-title[data-count]::after {
+		color: var(--color-crescent-moon);
+		font-style: italic;
+		font-weight: 100;
+	}
 
-  /* ---------- Plugin: Day Planner ---------- */
+	/* ---------- Plugin: Day Planner ---------- */
 
-  .workspace-leaf-content[data-type="planner-timeline"] .view-header,
-  .workspace-leaf-content[data-type="planner-timeline"] .view-content,
-  .workspace-leaf-content[data-type="planner-timeline"] .view-content .scroller,
-  .workspace-leaf-content[data-type="planner-timeline"]
-    .view-content
-    .hours-container,
-  .workspace-leaf-content[data-type="planner-timeline"] .view-content .column {
-    background-color: transparent !important;
-  }
+	.workspace-leaf-content[data-type="planner-timeline"] .view-header,
+	.workspace-leaf-content[data-type="planner-timeline"] .view-content,
+	.workspace-leaf-content[data-type="planner-timeline"]
+		.view-content
+		.scroller,
+	.workspace-leaf-content[data-type="planner-timeline"]
+		.view-content
+		.hours-container,
+	.workspace-leaf-content[data-type="planner-timeline"]
+		.view-content
+		.column {
+		background-color: transparent !important;
+	}
 
-  .workspace-leaf-content[data-type="planner-timeline"] .view-content .needle,
-  .workspace-leaf-content[data-type="planner-timeline"] .view-content .ball {
-    background-color: var(--color-vermillion-red-70) !important;
-  }
+	.workspace-leaf-content[data-type="planner-timeline"] .view-content .needle,
+	.workspace-leaf-content[data-type="planner-timeline"] .view-content .ball {
+		background-color: var(--color-vermillion-red-70) !important;
+	}
 
-  .workspace-leaf-content[data-type="planner-timeline"]
-    .view-content
-    .tasks
-    .content {
-    border: none;
-    background-color: var(--color-moon-gray-08) !important;
-  }
+	.workspace-leaf-content[data-type="planner-timeline"]
+		.view-content
+		.tasks
+		.content {
+		border: none;
+		background-color: var(--color-moon-gray-08) !important;
+	}
 }

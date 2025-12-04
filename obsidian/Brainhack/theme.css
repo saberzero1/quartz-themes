@@ -1,1836 +1,1144 @@
+/*===================================== INFORMATION =================================================
+This theme uses content created by other theme creators.
+Wherever such content is used, their author is attributed.
+If you have any questions or concerns, please contact me on GitHub: https://github.com/Spekulucius */
+
+/*========== STYLE SETTINGS ================*/
 /* @settings
 
-name: Brainhack
-id: a-unique-id
+name: Theme Settings
+id: Brainhack
+description: "Thank you for using my theme. If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3"
 settings:
-    - 
-        id: grayscale-toggle
-        title: Disable Grayscale Images
-        type: class-toggle
     -
-        id: animation-toggle
-        title: Disable Animations
-        type: class-toggle
+        id: Text and Spacing
+        title: Text and Spacing
+        type: heading
+        collapsed: ture
+        level: 2
     -
-        id: accento
-        title: Override Accent Color
-        type: variable-color
-        opacity: false
-        format: hsl-split
-        alt-format:
-            -
-                id: accent-rgb
-                format: rgb
-        default: '#none'
-    - 
-        id: noise-opacity-lm
-        title: Background Noise Opacity (light Mode)
-        description: Change the opacity of the background noise
+        id: custom-font-weight
+        title: Adjust Font Weight
+        description: 
         type: variable-number-slider
-        default: 0.5
-        min: 0
-        max: .5
-        step: .01
+        default: 300
+        min: 100
+        max: 900
+        step: 100
     -
-        id: noise-opacity-dm
-        title: Background Noise Opacity (Dark Mode)
-        description: Change the opacity of the background noise
+        id: custom-letter-spacing
+        title: Adjust Letter Spacing
+        description:
         type: variable-number-slider
+        format: px
         default: 0.1
+        min: -.5
+        max: 1.5
+        step: .1
+    -
+        id: custom-line-height
+        title: Adjust Line Spacing
+        description:
+        type: variable-number-slider
+        format:
+        default: 1.5
+        min: 1.5
+        max: 2.5
+        step: .1
+    -
+        id: Colors
+        title: Colors
+        type: heading
+        collapsed: ture
+        level: 2
+    -
+        id: bgt_s
+        title: Adjust Background Saturation
+        type: variable-number-slider
+        default: 1
         min: 0
-        max: .5
-        step: .01
+        max: 100
+        step: 1
+    - 
+        id: bgt_l
+        title: Adjust Background Brightness
+        type: variable-number-slider
+        default: 0
+        min: -10
+        max: 10
+        step: 1
+    -
+        id: Experimental Settings
+        title: Experimental Settings
+        type: heading
+        collapsed: ture
+        level: 2
+    - 
+        id: cbr
+        title: Custom Workspace Border Radius
+        type: variable-number-slider
+        default: 7
+        min: 0
+        max: 50
+        step: 1
+        format: px
+    -
+        id: status-bar-hover
+        title: Hide Status Bar
+        description: Only show the status bar when hovering over it
+        type: class-toggle
 */
 
-/*STYLE SETTINGS ROUNDED BUTTONS*/
-.pickr .pcr-button::after {
-  border-radius: 100px !important;
-}
-.pickr .pcr-button:before {
-  background: transparent;
-}
-.pickr .pcr-button {
-  border-radius: 100px !important;
-  border: none !important;
+/*////////////////////////////////////////////////////////////////// COLORS ///////////////////////////////////////////////////////////////////////////////*/
+body {
+	--file-line-width:1000px;
+    --canvas-dot-pattern: var(--background-3-1);
+    --colored-accent-4: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+    --radius-m: .6em;
 }
 
-/*GRAYSCALE TOGGLE*/
-.grayscale-toggle img {
-  border-radius: 10px;
-  mix-blend-mode: normal !important;
-  filter: invert(0) grayscale(0%) !important;
+.theme-light, .theme-dark {
+    --colored-accent-i1: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 49%)*-100));
+    --colored-accent-i2: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 20%)*-100));
+    --colored-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --colored-accent-2: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+    --colored-accent-3: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+    --colored-accent-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
+    --shadow-1: hsla(var(--accent-h), var(--accent-s), 5%, .5);
+    --custom-accent-bold: var(--colored-accent-1);
+    
+    --background-secondary: var(--background-2);
+    --canvas-background: var(--background-2);
+    --code-background: var(--background-3);
+
 }
 
-/*ANIMATION TOGGLE*/
-.animation-toggle .cm-s-obsidian span.cm-formatting-highlight,
-.animation-toggle .cm-s-obsidian span.cm-highlight,
-.animation-toggle .markdown-rendered mark {
-  animation: none !important;
-  background: var(--accent-color-light10);
+.theme-light {
+    --background-primary: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .2) + calc(.5% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 5%) + calc(var(--bgt_l, 0) * 1%)));
+
+    --background-1: hsl(var(--accent-h), calc(var(--accent-s) - 20%), 90%, 100%);
+    --background-1_2: rgb(234, 234, 234);
+    --background-1-h: #bdbdbd;
+    --background-1-item: var(--nav-item-color);
+
+    --background-2_h: var(--accent-h);
+    --background-2_s: 10%;
+    --background-2_l: 96%;
+    --background-2: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .1) + calc(1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) + 0%) + calc(var(--bgt_l, 0) * 1%)));
+
+    --background-3: hsl(0, 0%, 93%);
+    --background-3-1: rgb(197, 197, 197);
+    --background-3-2: rgba(197, 197, 197, 0.288);
+    --background-4: white;
+    --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 90%);
+    --background-6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .2);  
+    
+    --highlight-1: rgba(0, 0, 0, 0.056);
+    --highlight-2: rgba(214, 214, 214, 0.308);
+
+    --shadow-2: rgba(0, 0, 0, 0.257);
+    --shadow-3: rgba(0, 0, 0, 0.089);
+    --shadow-4: hsla(var(--background-2_h), calc(calc(var(--accent-s) * .5) + calc(.1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 20%) + calc(var(--bgt_l, 0) * 1%)), .2);
+
+
+    --divider-color: rgba(200, 200, 200, 0.441);
+
+    --color-base-00: var(--background-3);
+    --color-base-50: var(--colored-accent-1) !important;
+    --interactive-accent: var(--colored-accent-1);
+    --icon-color: var(--colored-accent-1);
+    --text-color-inverted: black;
+    --tc: rgb(67, 67, 67);
+    --italic-color: rgb(154, 154, 154);
+    --canvas-background: var(--background-2);
+    --code-background: var(--background-1_2);
 }
 
-.animation-toggle div.HyperMD-header.HyperMD-header-1.cm-line:hover,
-.animation-toggle span.cm-formatting.cm-formatting-quote.cm-hmd-callout,
-.animation-toggle .cm-formatting-header {
-  animation: none !important;
+.theme-dark {
+    --background-1: #171717;
+    --background-1-h: var(--colored-accent-1);
+    --background-1-item: var(--nav-item-color);
+
+    --background-2_h: var(--accent-h);
+    --background-2_s: 0%;
+    --background-2_l: 10%;
+    --background-2: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .01) + calc(.1% * var(--bgt_s, 1))), calc(var(--background-2_l) + calc(var(--bgt_l, 0) * 1%)));
+
+    --background-3: rgb(33, 33, 33);
+    --background-3-1: rgb(70, 70, 70);
+    --background-3-2: rgba(70, 70, 70, 0.27);
+    --background-4: rgb(12, 12, 12);
+    --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 30%);
+    --background-6: hsla(var(--accent-h), calc(var(--accent-s) * .1), var(--accent-l), 0.2);
+
+    --highlight-1: rgba(255, 255, 255, 0.075);
+    --highlight-2: rgba(255, 255, 255, 0.075);
+
+    --shadow-2: hsla(var(--accent-h), calc(var(--accent-s) * 0), calc(var(--accent-l) * .1), .4);
+    --shadow-3: rgba(0, 0, 0, 0.26);
+    --shadow-4: hsla(var(--background-2_h), calc(calc(var(--accent-s) * .5) + calc(.1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 20%) + calc(var(--bgt_l, 0) * 1%)), .5);
+
+    --divider-color: rgba(105, 105, 105, 0.441);
+
+    --color-base-00: var(--background-3);
+    --color-base-50: var(--colored-accent-1) !important;
+    --interactive-accent: var(--colored-accent-1);
+    --text-color-inverted: white;
+    --tc: rgb(174, 174, 174);
+    --italic-color: rgb(97, 97, 97);
 }
 
-.animation-toggle .workspace-tab-header.tappable.is-active {
-  animation: none !important;
-  background: var(--accent-color-light5) !important;
+
+/*////////////////////////////////////////////////////////////////////////////// MAIN BODY - GENERAL CONFIG //////////////////////////////////////////////////////////////////////////////*/
+/*============================= ADJUST SPACING OF MAIN BODY ===================================*/
+body:not(.is-mobile)
+.workspace {
+    background-color: transparent;
+    right: 10px !important;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex: 1 0 0;
+    width: calc(100% - 10px) !important;
+    margin-left: 10px;
+}
+body:not(.is-mobile)
+.horizontal-main-container {
+    padding-bottom: 10px;
+    display: flex;
+    overflow: visible;
+    flex: 1 0 0;
+    background: transparent;
+}
+body:not(.is-mobile):not(.show-ribbon)
+.horizontal-main-container {
+    padding-left: 10px;
 }
 
-.animation-toggle .nav-file-title.is-active {
-  animation: none !important;
-  background: var(--accent-color-light5) !important;
+body:not(.is-mobile):not(.show-ribbon) .workspace:before {
+    width: 100%;
+}
+/*============== Ribbon ===========================*/
+.workspace-ribbon.side-dock-ribbon.mod-left {
+    flex-basis: 44px;
+    background: transparent !important;
+}
+/*==================== REMOVE BORDERS ===============================*/
+.workspace-tab-header-container, .workspace-ribbon.side-dock-ribbon.mod-left {
+    border: none !important;
+}
+.workspace-tab-header-container {
+    background: transparent;
 }
 
-/*KANBAN-SUPPORT*/
-.theme-dark .kanban-plugin__item-title-wrapper {
-  background: rgb(22, 22, 22);
+/*============== ADD NEW BORDERS =====================*/
+.workspace:not(.is-mobile)::before {
+    content: " ";
+    width: 100%;
+    height: calc(100% - 40px);
+    background-color: transparent;
+    border-radius: var(--cbr, 15px);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 0px 1px var(--divider-color), 0 0 5px 1px var(--shadow-4);
+}
+/*adjust borders to align with ribbon animation*/
+body:has(.show-ribbon):not(.is-mobile),:has(.workspace-ribbon.side-dock-ribbon:hover) .workspace::before {
+    width: calc(100% - 44px);
+    transition-duration: .1s;
 }
 
-.theme-light .kanban-plugin__item-title-wrapper {
-  background: white;
+body:has(.show-ribbon):not(.is-mobile),:has(.workspace-ribbon.side-dock-ribbon) .workspace::before {
+    width: calc(100% - 44px);
+    transition: all .5s ease;
 }
 
-/*MACOS*/
-/*MOVE RIGHT COLLAPES BUTTON TO THE FAR RIGHT    and    fix macos right popup windows button alignment*/
-.mod-macos.is-hidden-frameless:not(.is-popout-window)
-  .workspace
-  .workspace-tabs.mod-top-right-space
-  .workspace-tab-header-container {
-  padding-right: 0px !important;
+/*================ ADJUST WORKSPACE BACKGROUND ========================*/
+.titlebar-button-container.mod-right:not(.is-mobile),
+.workspace-split:not(.is-mobile) {
+    background: transparent !important;
 }
 
-/**/
-.mod-macos.is-hidden-frameless:not(.is-popout-window)
-  .sidebar-toggle-button.mod-right {
-  background: transparent;
-  position: relative;
-  --frame-left-space: 0px !important;
-  margin-right: 0px !important;
+/*===== mobile fix */ body.is-mobile .titlebar-button-container.mod-right, body.is-mobile .workspace-split {background: var(--background-4) !important;}
+
+
+.view-header,
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+.empty-state,
+.markdown-rendered,
+.community-modal-details,
+.workspace-tab-container,
+.cm-scroller {
+    background-color: var(--background-2) !important;
 }
+.workspace-tabs:not(.mod-top) {
+    background: var(--background-2);
+}
+
+
+
+/*==================== ADJUST RESIZE HANDLES ====================*/
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle { 
+    height: calc(var(--divider-vertical-height) - var(--header-height)) !important;
+    bottom: 0px !important;
+    border-right-style: dashed;
+}
+
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle { 
+    height: calc(var(--divider-vertical-height) - var(--header-height)) !important;
+    bottom: 0px !important;
+    border-left-style: dashed;
+}
+
+/*=================== workspace rounded corners ===================*/
+body:has(.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed):not(.is-mobile)
+.mod-root {
+    border-bottom-left-radius: var(--cbr, 15px) !important;
+    overflow: hidden;
+}
+body:not(.is-mobile)
+.workspace:not(.is-right-sidedock-open)
+.mod-root {
+    border-bottom-right-radius: var(--cbr, 15px) !important;
+    overflow: hidden;
+}
+body:not(.is-mobile)
+.workspace:not(.is-right-sidedock-open)
+.workspace-split:last-of-type .mod-top-right-space .workspace-tab-container {
+    border-top-right-radius: var(--cbr, 15px);
+}
+body:not(.is-mobile)
+.mod-top-left-space .workspace-tab-container {
+    border-top-left-radius: var(--cbr, 15px) !important;
+}
+body:not(.is-mobile)
+.workspace:not(.is-right-sidedock-open)
+.workspace-tabs.mod-top-right-space:last-of-type .workspace-tab-container {
+    border-top-right-radius: var(--cbr, 15px);
+}
+body:not(.is-mobile)
+.mod-sidedock.mod-right-split{
+    border-bottom-right-radius: var(--cbr, 15px);
+    overflow: hidden !important;
+}
+body:not(.is-mobile)
+.workspace-sidedock-vault-profile {
+    border-bottom-left-radius: var(--cbr, 15px);
+    background: var(--background-3) !important;
+    border-bottom-right-radius: 0px !important;
+}
+body:not(.is-mobile)
+.mod-sidedock.mod-right-split .workspace-tabs.mod-top .workspace-tab-container {
+    border-top-right-radius: var(--cbr, 15px);
+}
+body:not(.is-mobile)
+.mod-sidedock.mod-left-split .workspace-tabs.mod-top .workspace-tab-container {
+    border-top-left-radius: var(--cbr, 15px);
+}
+/*////////////////////////////////////////////////////////////////////////////// MAIN BODY - TAB BAR //////////////////////////////////////////////////////////////////////////////*/
+/*========================= TABS ===========================*/
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container {
+    padding-bottom: 3px;
+}
+.workspace-split.mod-vertical .workspace-tab-header-container-inner { 
+    margin-top: 5px !important;
+    padding-top: 1.5px !important;
+    gap: 2px;
+}
+.workspace .mod-root .workspace-tab-header {
+    box-shadow: none;
+    padding-bottom: 5.5px;
+    background: transparent;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+/*tabs AND buttons height adjustment*/
+.workspace-tab-header.tappable {
+    margin-top: -2px;
+    margin-bottom: -1px;
+}
+/*Tabs text color */
+.mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner-title {
+    color: var(--text-color-inverted) !important;
+}
+.mod-vertical .workspace-tab-header.tappable .workspace-tab-header-inner-title {
+    color: var(--tc) !important;
+}
+/*Tab headers*/
+.mod-vertical .workspace-tabs:not(.mod-stacked) .workspace-tab-header.tappable .workspace-tab-header-inner {
+    border-radius: 7px;
+    position: relative;
+    background-color: var(--background-6);
+    transition: all .5s !important;
+        &:hover {
+        background-color: var(--colored-accent-2) !important;
+        color: var(--colored-accent-i1) !important;
+        }
+}
+.mod-vertical .workspace-tabs:is(.mod-stacked) .workspace-tab-header.tappable .workspace-tab-header-inner {
+    position: relative;
+    transition: all .5s !important;
+        &:hover {
+        background-color: var(--colored-accent-2) !important;
+        color: var(--colored-accent-i1) !important;
+        }
+}
+.mod-vertical .workspace-tabs:is(.mod-stacked) .workspace-tab-header {
+    box-shadow: none !important;
+    transform: scale(1.001);
+}
+
+.mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner {
+    position: relative;
+    background-color: var(--colored-accent-3) !important;
+    border: .05em dashed var(--colored-accent-1);
+    font-weight: 600;
+    transition: all .5s !important;
+    transform: scale(1);
+        &:hover {
+        background-color: var(--colored-accent-2) !important;
+        color: var(--colored-accent-i2) !important;
+    }
+}
+
+.workspace-tab-header-inner-close-button {
+    color: var(--colored-accent-i1) !important;
+    border-radius: 5px;
+    transition: all .2s !important;
+            &:hover {
+        background-color: rgba(255, 255, 255, 0.7) !important;
+        color: var(--colored-accent-i1) !important;
+    }
+}
+
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container {
+    overflow: hidden;
+}
+
+/*Macos sidebar toggle button fix*/
 .sidebar-toggle-button.mod-right {
-  margin-right: 0px;
+    background: transparent !important;
 }
 
-/*INI*/
-body {
-  --radius-s: 10px;
-  --radius-m: 10px;
-  --radius-l: 10px;
-  --input-radius: 10px;
-  --tab-radius-active: 10px;
-  --checkbox-radius: 10px;
-  --toggle-radius: 10px;
-  --toggle-thumb-radius: 10px;
-  --slider-thumb-radius: 10px;
+
+/*win-app-symbols*/
+body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-minimize,
+body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-maximize,
+body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-close {
+    border-radius: 10px;
+    padding: 0px 9px 0px 9px;
+    margin: 0px 5px 0px 5px;
+}
+body > div.titlebar > div > div.titlebar-button-container.mod-right {
+    padding: 5px;
 }
 
-svg * {
-  stroke-linecap: square;
-  stroke-linejoin: miter;
-  rx: 0;
-  ry: 0;
+
+/*////////////////////////////////////////////////////////////////////////////// LEFT WORKSPACE / RIBBON //////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+/*=============== HIDE ATTACHMENT FOLDER: "000_attachments_000" - if used ==================*/
+div[data-path$='000_attachments_000'], 
+div[data-path$='000_attachments_000'] + div.nav-folder-children 
+{
+    display: none;
 }
 
-.menu {
-  padding: var(--size-2-1);
+
+
+/*=========================================== Settings general styling ===================================================*/
+
+/* settings switches background */
+.checkbox-container.is-enabled {
+    background-color: var(--colored-accent-2);
+}
+/* settings switches auto coloring */
+.checkbox-container.is-enabled::after {
+    background-color: var(--colored-accent-i2);
+    transition: .2s;
 }
 
-.menu-item {
-  padding: var(--size-4-1) var(--size-4-2);
+
+
+
+
+
+
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > div.workspace-tab-header.tappable {
+    margin-top: -1px;
 }
 
-.menu-separator {
-  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+
+
+
+
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
 
-/**COLORS*************************************************************************************************************************************/
-/*dark theme colors*/
-.theme-dark {
-  --background-primary: var(--accent-color-bg_d);
-  --background-secondary: #0e0e0e;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================= EDITOR =================================*/
+.callout {
+    color: inherit;
+    margin-bottom: .5em !important;
+    margin-top: .5em !important;
+    border-radius: var(--radius-m);
+    --callout-padding: 0;
+    --callout-title-color: inherit;
+    --callout-title-padding: 4px 10px;
+    --callout-title-size: inherit;
+    --callout-content-radius: 0px;
+    --callout-blend-mode: normal !important;
+    background: var(--background-3);
+    box-shadow: inset 0 0 0 1px var(--background-3-1), 0 0 .5em var(--shadow-3) !important;
+    overflow: hidden !important;
+}
+.callout-content {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+.cm-embed-block:hover {
+    box-shadow: 0 0 rgba(255, 0, 0, 0) !important;
 }
 
-/*light theme colors*/
-.theme-light {
-  --background-primary: var(--accent-color-bg);
-  --background-secondary: rgb(255, 255, 255);
+.cm-embed-block.cm-callout {
+    border-radius: 10px;
+    bottom: 0 !important;
+    overflow: hidden !important;
+}
+.callout-content, .blockquote {
+    overflow: hidden !important;
+}
+.callout-title {
+    color: var(--colored-accent-text-color-inverted);
+    font-size: 1.5em;
+    border-bottom: dashed .1em var(--background-3-1);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
 }
 
-/*UI colors*/
-.theme-light .workspace-leaf-content {
-  background: var(--accent-color-bg);
+.callout-title-inner {
+    font-weight: 700;
 }
 
-.theme-dark .workspace-leaf-content {
-  background: var(--accent-color-bg_d);
+
+.markdown-rendered blockquote,
+.blockquote,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote{
+    border-radius: var(--radius-m);
+    background-color: var(--background-3);
+    border-left: none;
+    padding-left: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em !important;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+.markdown-rendered blockquote:before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
+    z-index: -1;
+    width: 100%;
+    border-radius: var(--radius-m);
+    box-shadow: 0 0 0 .04em var(--background-3-1), 0 0 .5em var(--shadow-3);
 }
 
-/*accent-color-light*/
-.theme-light,
-.theme-dark {
-  --accent-color-hsl: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l))
-  );
-  --color-accent: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l))
-  );
-  --text-accent: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l))
-  );
 
-  --accent-color-light10: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    1
-  );
-  --accent-color-light9: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.9
-  );
-  --accent-color-light8: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.8
-  );
-  --accent-color-light7: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.7
-  );
-  --accent-color-light6: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.6
-  );
-  --accent-color-light5: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.5
-  );
-  --accent-color-light4: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.4
-  );
-  --accent-color-light3: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.3
-  );
-  --accent-color-light2: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.2
-  );
-  --accent-color-light1: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.1
-  );
-  --accent-color-light09: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.09
-  );
-  --accent-color-light08: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.08
-  );
-  --accent-color-light07: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.07
-  );
-  --accent-color-light06: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.06
-  );
-  --accent-color-light05: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.05
-  );
-  --accent-color-light04: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.04
-  );
-  --accent-color-light03: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.03
-  );
-  --accent-color-light02: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.02
-  );
-  --accent-color-light01: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.01
-  );
-
-  --accent-color-bright: hsla(
-    var(--accento-h, var(--accent-h)),
-    calc(1 * var(--accento-s, var(--accent-s))),
-    calc(1 * var(--accento-l, var(--accent-l))),
-    0.1
-  );
-  --accent-color-bright2: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(1 * var(--accento-s, var(--accent-s))),
-    calc(1 * var(--accento-l, var(--accent-l))),
-    0.01
-  );
-  --accent-color-alt: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(1 * var(--accento-s, var(--accent-s))),
-    calc(1.5 * var(--accento-l, var(--accent-l))),
-    1
-  );
-  --accent-color-alt2: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(1 * var(--accento-s), var(--accent-s)),
-    calc(1.7 * var(--accento-l, var(--accent-l))),
-    1
-  );
-
-  --accent-color-bg: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    98%,
-    1
-  );
-  --accent-color-bg2: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    85%,
-    1
-  );
-  --accent-color-bg2c: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accent-s, var(--accent-s)),
-    85%,
-    1
-  );
-  --accent-color-bg_d: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(0.1 * var(--accento-s, var(--accent-s))),
-    10%,
-    1
-  );
-  --accent-color-bg_dc: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(0.1 * var(--accento-s, var(--accent-s))),
-    15%,
-    1
-  );
-
-  --accent-color-h1: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100)
-  );
-  --accent-color-inverse2: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100)
-  );
+.el-blockquote, blockquote {
+    width: 100%;
+    border-radius: var(--radius-m);
+    box-shadow: 0 0 0 .04em var(--background-3-1), 0 0 .5em var(--shadow-3);
 }
 
-/*WORKSPACE*****************************************************************************************************************************************************************************/
-/*ROUNDED WORKSPACE*/
-.theme-light .mod-root .workspace-leaf {
-  background-color: var(--accent-color-bg);
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.callout-content ol {
+    margin-top: 0em;
+    margin-bottom: .5em;
 }
 
-.theme-dark .mod-root .workspace-leaf {
-  background-color: var(--accent-color-bg_d) !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
+
+blockquote > ol>:last-child {
+    padding-bottom: 0em !important;
+    margin-bottom: 0em !important;
+}
+blockquote > ol>:first-child {
+    padding-top: 0em !important;
+    margin-top: 0em !important;
 }
 
-.theme-light .mod-root .workspace-leaf-content:not(.workspace-split) {
-  display: flex;
-  min-width: 100px;
-  max-height: 98%;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.26);
+
+.callout-icon {
+    display: none;
+}
+.markdown-preview-view .callout.is-collapsible:hover {
+    box-shadow: 0 0 0px 2px rgba(115, 115, 115, 0.508);
+}
+.is-live-preview .HyperMD-quote:before {
+    border: 0px solid transparent !important;
 }
 
-.theme-dark .mod-root .workspace-leaf-content:not(.workspace-split) {
-  display: flex;
-  min-width: 100px;
-  max-height: 98%;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.596);
+
+/* Even columns */
+.callout[data-callout="2"] > .callout-title  {
+  /* Removes padding and background colour from the container */
+  justify-content: center;
+}
+.callout[data-callout="2"] > .callout-content {
+  /* Arranges the content in columns */
+  display: grid;
+  /* minmax sets the minimum width of a column. Make the columns 'skinnier' by setting 15rem to a smaller number */
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 10px;
 }
 
-/*RESIZE HANDLE AND MAKE IT INVISIBLE*/
-.workspace-leaf-resize-handle {
-  border-width: 0px !important;
-  width: 10px !important;
-  margin-right: -10px;
-  margin-left: -10px;
-  transition: none !important;
-  opacity: 0 !important;
+
+
+.callout[data-callout="!"] {
+    box-shadow: 0 0 0em .1em var(--colored-accent-1) !important;
 }
 
-/*GRAINY BACKGROUND********************************************************************************************************************************************************************/
-/*LIGHT THEME*/
-.theme-light.is-frameless.is-hidden-frameless .titlebar:before,
-.theme-light div.app-container:before,
-.theme-light .titlebar-button-container:before,
-.theme-light
-  .workspace-split.mod-left-split
-  .workspace-sidedock-vault-profile:before,
-.theme-light .workspace-leaf:before,
-.theme-light
-  div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split
-  > div.workspace-tabs.mod-top.mod-top-right-space
-  > div.workspace-tab-container
-  > div
-  > div:before,
-.theme-light
-  div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split
-  > div.workspace-tabs.mod-top.mod-top-left-space
-  > div.workspace-tab-container
-  > div
-  > div:before {
-  content: "";
-  background-color: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-  opacity: var(--noise-opacity-lm, 0.5);
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none !important;
-}
 
-/*MACOS FIX*/
-.mod-macos.theme-light
-  .workspace-tab-header-container:not(.workspace-split):before {
-  content: "";
-  background-color: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-  opacity: var(--noise-opacity-lm, 0.5);
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none !important;
-}
-
-/*DARK THEME*/
-.theme-dark.is-frameless.is-hidden-frameless .titlebar:before,
-.theme-dark div.app-container:before,
-.theme-dark .titlebar-button-container:before,
-.theme-dark
-  .workspace-split.mod-left-split
-  .workspace-sidedock-vault-profile:before,
-.theme-dark .workspace-leaf:before,
-.theme-dark
-  div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split
-  > div.workspace-tabs.mod-top.mod-top-right-space
-  > div.workspace-tab-container
-  > div
-  > div:before,
-.theme-dark
-  div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split
-  > div.workspace-tabs.mod-top.mod-top-left-space
-  > div.workspace-tab-container
-  > div
-  > div:before {
-  content: "";
-  background-color: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-  opacity: var(--noise-opacity-dm, 0.1);
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none !important;
-}
-
-/*MACOS FIX*/
-.mod-macos.theme-dark
-  .workspace-tab-header-container:not(.workspace-split):before {
-  content: "";
-  background-color: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-  opacity: var(--noise-opacity-dm, 0.1);
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none !important;
-}
-
-/*RIBBON FIX*/
-div.app-container
-  > div.horizontal-main-container
-  > div
-  > div.workspace-ribbon.side-dock-ribbon.mod-left
-  > div.sidebar-toggle-button.mod-left {
-  top: 0px;
-  height: 50px;
-}
-
-div.app-container
-  > div.horizontal-main-container
-  > div
-  > div.workspace-ribbon.side-dock-ribbon.mod-left {
-  margin-top: 60px;
-}
-
-/*HEADINGS**************************************************************************************************************************************/
-
-/*AUTOMATIC ADJUSTIC H1 TEXT COLOR*/
-.HyperMD-header-1,
-.markdown-rendered h1 {
-  color: var(--accent-color-h1);
-}
-
-/*HEADING BACKGROUND*/
-/*reading view*/
-.theme-dark .markdown-rendered h1 {
-  content: "";
-  border-radius: 0.4em;
-  padding-left: 10px !important;
-  background-image:
-    linear-gradient(var(--accent-color-light6), var(--accent-color-light10)),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-}
-
-.theme-light .markdown-rendered h1 {
-  content: "";
-  position: relative;
-  border-radius: 0.4em;
-  padding-left: 10px !important;
-  background-image:
-    linear-gradient(var(--accent-color-light2), var(--accent-color-light6)),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-}
-
-/*HEADING BACKGROUND*/
-/*preview view*/
-.theme-dark div.HyperMD-header.HyperMD-header-1.cm-line {
-  padding-top: 0.1em;
-  padding-bottom: 0.03em;
-  border-radius: 0.4em;
-  margin-bottom: 0.5em !important;
-  content: "";
-  padding-left: 10px !important;
-  background-image:
-    linear-gradient(var(--accent-color-light6), var(--accent-color-light10)),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-  transition: all 1s !important;
-}
-.theme-light div.HyperMD-header.HyperMD-header-1.cm-line {
-  padding-top: 0.1em;
-  padding-bottom: 0.03em;
-  border-radius: 0.4em;
-  margin-bottom: 0.5em !important;
-  content: "";
-  padding-left: 10px !important;
-  background-image:
-    linear-gradient(var(--accent-color-light2), var(--accent-color-light6)),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-  transition: all 1s !important;
-}
-
-/*DYNAMIC HEADING SPACING ADJUST, headings will only leave space if there is no heading above*/
-.el-h1 ~ :not(.el-h1) + .el-h1 {
-  margin-top: 5em;
-}
-
-.el-h2 ~ :not(.el-h1, .el-h2) + .el-h2 {
-  margin-top: 5em !important;
-}
-
-.el-h3 ~ :not(.el-h1, .el-h2, .el-h3) + .el-h3 {
-  margin-top: 5em !important;
-}
-
-.el-h4 ~ :not(.el-h1, .el-h2, .el-h3, .el-h4) + .el-h4 {
-  margin-top: 5em !important;
-}
-
-.el-h5 ~ :not(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5) + .el-h5 {
-  margin-top: 5em !important;
-}
-
-.el-h6 ~ :not(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6) + .el-h6 {
-  margin-top: 5em !important;
-}
-
-/*HEADINGS-uppercase*/
-.cm-header {
-  text-transform: uppercase;
-}
-
-/*HEADINGS-uppercase + increase spacing between header and previous text -> reading view*/
-.markdown-rendered h1,
-.markdown-rendered h2,
-.markdown-rendered h3,
-.markdown-rendered h4,
-.markdown-rendered h5,
-.markdown-rendered h6 {
-  text-transform: uppercase;
-  padding-top: 0.1em;
-}
-
-/*HEADINGS - colors*/
-.HyperMD-header-2 {
-  color: var(--accent-color-light10);
-}
-.HyperMD-header-3 {
-  color: var(--accent-color-light8);
-}
-.HyperMD-header-4 {
-  color: var(--accent-color-light6);
-}
-.HyperMD-header-5 {
-  color: var(--accent-color-light5);
-}
-
-.markdown-rendered h2 {
-  color: var(--accent-color-light10);
-}
-.markdown-rendered h3 {
-  color: var(--accent-color-light8);
-}
-.markdown-rendered h4 {
-  color: var(--accent-color-light6);
-}
-.markdown-rendered h5 {
-  color: var(--accent-color-light5);
-}
-
-/**TEXT*************************************************************************************************************************************/
-.theme-dark {
-  .markdown-preview-view,
-  .view-content > .cm-s-obsidian,
-  .view-content > .markdown-source-view.mod-cm6.is-live-preview > .cm-scroller,
-  body {
-    background-color: rgb(22, 22, 22);
-  }
-}
-
-.theme-light {
-  .markdown-preview-view,
-  .view-content > .cm-s-obsidian,
-  .view-content > .markdown-source-view.mod-cm6.is-live-preview > .cm-scroller,
-  body {
-    background-color: white;
-  }
-}
-
-/*ITALIC TEXT COLOR*/
-i,
-em,
-span.cm-em {
-  color: var(--accent-color-light10);
-}
-
-/*change font*/
-body {
-  --font-text-theme: "Cascadia Mono", Sans-serif;
-}
-
-/*decrease font weight*/
-.markdown-preview-view,
-.view-content > .cm-s-obsidian,
-.view-content > .markdown-source-view.mod-cm6.is-live-preview > .cm-scroller,
-body {
-  font-weight: 300;
-}
-.cm-html-embed th,
-.markdown-rendered th {
-  font-weight: 300;
-}
-table {
-  font-weight: 300;
-}
-.view-content {
-  border: 0px;
-}
-
-/*FOLD INDICATORS************************************************/
-
-/*HEADINGS*/
-.theme-dark .view-content .is-collapsed .list-collapse-indicator svg.svg-icon,
-.theme-dark .view-content .is-collapsed .collapse-indicator svg.svg-icon,
-.theme-dark .view-content .list-collapse-indicator svg.svg-icon,
-.theme-dark .view-content .collapse-indicator svg.svg-icon {
-  color: white !important;
-  filter: drop-shadow(0 0 1px);
-  transition: all 0.2s;
-}
-
-.theme-light .view-content .is-collapsed .list-collapse-indicator svg.svg-icon,
-.theme-light .view-content .is-collapsed .collapse-indicator svg.svg-icon,
-.theme-light .view-content .list-collapse-indicator svg.svg-icon,
-.theme-light .view-content .collapse-indicator svg.svg-icon {
-  color: black;
-  filter: drop-shadow(0 0 1px);
-  transition: all 0.2s;
-}
-
-.view-content .list-collapse-indicator svg.svg-icon,
-.view-content .collapse-indicator svg.svg-icon:hover {
-  filter: drop-shadow(0 0 3px);
-  transition: all 0.2s;
-}
-
-/*COLLAPSIBLE CALLOUT*/
-.theme-dark .callout-fold {
-  height: 0em;
-  color: white;
-  filter: drop-shadow(0 0 1x);
-  transition: all 0.2s;
-}
-
-.theme-light .callout-fold {
-  height: 0em;
-  color: rgb(0, 0, 0);
-  filter: drop-shadow(0 0 1px);
-  transition: all 0.2s;
-}
-
-.callout-fold:hover {
-  filter: drop-shadow(0 0 3px);
-  transition: all 0.2s;
-}
-
-/*BLOCKQUOTES*************************************************************************************/
-/*blockquote border sizing*/
-
-/*preview mode - dark */
-.theme-dark .markdown-rendered blockquote,
-.theme-dark .blockquote,
-.theme-dark .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-  border-radius: 5px;
-  border-color: var(--accent-color-light10) !important;
-  background-color: var(--accent-color-bg_dc);
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  border-left: 10px solid white;
-}
-
-g.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .cm-line {
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-}
-
-/*preview mode - light*/
-.theme-light .markdown-rendered blockquote,
-.theme-light .blockquote,
-.theme-light .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-  border-radius: 5px;
-  border-color: var(--accent-color-light10) !important;
-  background-color: var(--accent-color-bg);
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  border-left: 10px solid white;
-}
-
-/*BLOCKQUOTE PREVIEW VIEW SHADOW*/
-.theme-dark .is-live-preview .HyperMD-quote:before {
-  content: "";
-  box-shadow: 0 0 10px black;
-  z-index: -1;
-  position: absolute;
-  width: 100% !important;
-  left: -8px !important;
-  top: 1px !important;
-  padding-left: 4px;
-  height: 95%;
-}
-
-.theme-light .is-live-preview .HyperMD-quote:before {
-  content: "";
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
-  z-index: -1;
-  position: absolute;
-  width: 100% !important;
-  left: -8px !important;
-  top: 1px !important;
-  padding-left: 4px;
-  height: 95%;
-}
 
 /*BLOCKQUOTE PREVIEW VIEW BORDER FIX*/
 .HyperMD-quote + .HyperMD-quote {
-  border-top-right-radius: 0px !important;
-  border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
 }
-
+.HyperMD-quote:has(+.HyperMD-quote) {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+ul.has-list-bullet * blockquote {
+    margin-top: 0;
+}
+.HyperMD-quote + .HyperMD-quote {
+    &:before {
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important
+    }
+}
 .HyperMD-quote:has(+ .HyperMD-quote) {
-  border-bottom-right-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
+    &:before {
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }    
 }
-
-/*reading mode*/
 .markdown-preview-view blockquote {
-  border-inline-width: 10px;
-  border-radius: 5px;
+   padding: .5em;
 }
-
-/*BLOCKQUOTE COLORS AND SHADOWS*/
-.theme-light blockquote {
-  background-color: var(--accent-color-bg);
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.26));
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote {
+    padding-top: 0em !important;
 }
-
-.theme-dark blockquote {
-  background-color: var(--accent-color-bg_dc);
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.596));
-}
-
-/*fix listed blockquotes in callouts*/
-.callout-content .has-list-bullet blockquote {
-  margin-top: 0px !important;
-}
-
-/*blockquote padding*/
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote,
-.markdown-preview-view blockquote {
-  padding-left: 0.5em;
-  padding-right: 1em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin-top: -0.2em !important;
-}
-
-/*
-DISABLED for now-> NO NECESSITY
-remove spacing between first item in blockquote and following
-.markdown-rendered blockquote > :first-child {
-    margin-bottom: -1em;
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(+ .HyperMD-quote) {
+    padding-bottom: 0em !important;
 }
 
 
-DISABLED -> NO NECESSITY
-add spacing after last item in blockquote -> importand, otherwise adjacent blockquotes will merge
-.markdown-rendered blockquote > :last-child {
-    margin-bottom: 1em;
-}
-*/
-
-/*fix listed blockquotes*/
-.el-ul blockquote {
-  margin-top: 0em;
-}
-.markdown-preview-view blockquote:first-child {
-  margin-top: 2em;
-}
-
-/*fix top blockquotes in callouts*/
-.callout-content > blockquote:first-child {
-  margin-top: 25px !important;
-}
-
-/*TEXT - LITTLE QOL OPTIONS*************************************************************************************/
-/*increase spacing between paragraphs that are following each other - GAMECHANGER - requieres contextual typography plugin*/
 .el-p + .el-p {
-  margin-top: 2em;
+    margin-top: 2em !important;
 }
 
-/*remove space above and below horizontal lines*/
-button.mod-warning {
-  color: black;
-}
-.markdown-preview-view hr {
-  margin-top: 5px;
-  margin-bottom: 5px;
+p:not(:first-child) {
+    margin-top: .5em !important;
+    margin-bottom: .5em !important;
 }
 
-/*readable line width*/
-body {
-  --file-line-width: 750px;
+p + p {
+    margin-top: 1em !important;
 }
 
-/*HIGHLIGHTING*/
-.cm-s-obsidian span.cm-formatting-highlight,
-.cm-s-obsidian span.cm-highlight,
+p + ul {
+    margin-top: 0px !important;
+}
+
+
+p:has(+ ul.has-list-bullet) {
+    margin-bottom: 0px;
+}
+
+
+
+
+li {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+li > blockquote {
+    margin-bottom: 0em !important;
+    margin-top: 0em !important;
+}
+
+li > .callout {
+    margin-bottom: 0em !important;
+    margin-top: 0em !important;
+}
+
+.heading-collapse-indicator.collapse-indicator.collapse-icon:before {
+    margin-left: -5px;
+}
+.HyperMD-header.HyperMD-header.cm-line {
+    padding-bottom: .5em;
+}
+
+
+/*heading mark*/
+.cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+.markdown-rendered h1 {
+    display: inline-block;
+    color: var(--colored-accent-i1);
+    background: var(--colored-accent-2);
+    padding: .1rem .3rem .1rem .3rem;
+        -moz-border-bottom-left-radius: var(--h1-radius);
+        -webkit-border-bottom-left-radius: var(--h1-radius);
+        border-bottom-left-radius: var(--h1-radius);
+        -moz-border-bottom-right-radius: var(--h1-radius);
+        -webkit-border-bottom-right-radius: var(--h1-radius);
+        border-bottom-right-radius: var(--h1-radius);
+        -moz-border-top-right-radius: var(--h1-radius);
+        -webkit-border-top-right-radius: var(--h1-radius);
+        border-top-right-radius: var(--h1-radius);
+        -moz-border-top-left-radius: var(--h1-radius);
+        -webkit-border-top-left-radius: var(--h1-radius);
+        border-top-left-radius: var(--h1-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+    --h1-radius: .3em;
+    box-shadow: 0px 0px 5em var(--colored-accent-4), 0 0 0em .05em var(--colored-accent-1);
+}
+/* heading mark link color correction */
+h1 > a, 
+h2 > a, 
+h3 > a, 
+h4 > a, 
+h5 > a, 
+h6 > a {
+    color: var(--text-color-inverted) !important;
+}
+
+.cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+.markdown-rendered h2 {
+    display: inline-block;
+    translate: -.05em;
+    padding: .1rem .3rem .1rem .3rem;
+    margin-bottom: 0px;
+    border: 2px dashed;
+    font-weight: 600;
+    border-color: var(--colored-accent-3);
+    background-color: var(--colored-accent-4);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: 0px 0px 1em var(--colored-accent-4);
+    --mark-radius: .4em;
+}
+
+.cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+.markdown-rendered h3 {
+    display: inline-block;
+    translate: -.05em;
+    padding: .1rem .3rem .1rem .3rem;
+    margin-bottom: 0px;
+    border: 2px dashed;
+    border-color: var(--colored-accent-4);
+    background-color: var(--colored-accent-5);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: 0px 0px 1em var(--colored-accent-4);
+    --mark-radius: .4em;
+}
+
+/*DYNAMIC HEADING SPACING ADJUST*/
+div.el-h1 {
+    margin-top: var(--dynamic-heading-spacing, 2em);
+}
+
+div.el-h2 {
+    margin-top: var(--dynamic-heading-spacing, 2em) !important;
+}
+
+div.el-h3 {
+    margin-top: var(--dynamic-heading-spacing, 2em) !important;
+}
+
+
+div.el-h1 + div.el-h1 {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h2, div.el-h2 + div.el-h2 {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h3, div.el-h2 + div.el-h3, div.el-h3 + div.el-h3 {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h4, div.el-h2 + div.el-h4, div.el-h3 + div.el-h4, div.el-h4 + div.el-h4  {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h5, div.el-h2 + div.el-h5, div.el-h3 + div.el-h5, div.el-h4 + div.el-h5, div.el-h5 + div.el-h5  {
+    margin-top: 0em !important;
+}
+
+div.el-h1 + div.el-h6, div.el-h2 + div.el-h6, div.el-h3 + div.el-h6, div.el-h4 + div.el-h6, div.el-h5 + div.el-h6, div.el-h6 + div.el-h6  {
+    margin-top: 0em !important;
+}
+
+
+/*==================== HIGHLIGHTING ====================*/
+span.cm-highlight,
 .markdown-rendered mark {
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border-radius: 3px;
-  pointer-events: none;
-  background: linear-gradient(
-    -90deg,
-    var(--accent-color-light3),
-    var(--accent-color-light10),
-    var(--accent-color-light3)
-  );
-  background-size: 200% 200%;
-  animation: animated-mark 5s linear infinite;
-  transition: all 0.2s;
-  color: var(--accent-color-inverse2);
+    background: transparent;
 }
 
-@keyframes animated-mark {
-  0% {
-    background-position: 0% 0%;
-  }
-  40% {
-    filter: drop-shadow(0 0 5px var(--accent-color-light1));
-  }
-  55% {
-    filter: drop-shadow(0 0 5px var(--accent-color-light10));
-  }
-  80% {
-    filter: drop-shadow(0 0 5px var(--accent-color-light10));
-  }
-  90% {
-    filter: drop-shadow(0 0 5px var(--accent-color-light1));
-  }
-  100% {
-    background-position: -200% 0%;
-  }
+
+span.cm-highlight:not(.cm-strong),
+.markdown-rendered mark:not(:has(strong), strong mark) {
+    font-size: .9em;
+    padding: 0rem .2rem 0rem .2rem;
+    margin: .1rem .1rem .1rem .1rem;
+    border: .1rem dashed;
+    border-color: var(--colored-accent-2);
+    background-color: var(--colored-accent-4);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: 0px 0px 1em var(--colored-accent-3);
+    --mark-radius: .4em;
+    color: var(--tc);
 }
 
-/*LISTS**********************************/
-/*increase spacing between list items*/
-ul > li,
-ol > li {
-  margin-bottom: 1em;
-  &:last-child {
-    margin-bottom: unset;
-  }
+
+span.cm-strong:not(.cm-highlight),
+strong:not(:has(mark), mark strong)  {
+    padding: 0rem .2rem 0rem .2rem;
+    font-size: .9em;
+    margin: .1rem .1rem .1rem .1rem;
+    background: var(--colored-accent-4) !important;
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        box-shadow: 0px 0px 0em .08rem var(--colored-accent-2), 0px 0px 3em var(--colored-accent-3);
+    --mark-radius: .4em;
+    color: var(--colored-accent-1);
+    font-weight: 900;
 }
 
-/*increase spacing between list items -> indented lists -> IMPORTANT, OTHERWISE INDENT WILL FAIL*/
-ul ul,
-ol ul,
-ol ol ul,
-ol ul ul,
-ul ol ul,
-ul ul ul {
-  padding-top: 1em;
+
+strong:has(mark)>*, mark:has(strong)>*, span.cm-strong.cm-highlight {
+    font-size: 1.3rem !important;
+    font-variant: small-caps;
+    background: var(--colored-accent-4) !important;
+    padding-left: .2em !important;
+    padding-right: .2em !important;
+    border-radius: .3em;
+    font-weight: 700 !important;
+    box-shadow: 0px 0px .1em var(--colored-accent-1), 0px 0px 1em var(--colored-accent-4);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+    --mark-radius: .4em;
 }
 
-/*more spaces between listed items without breaking listed blockquotes*/
-s.markdown-rendered ul > li,
-.markdown-rendered ol > li {
-  margin-top: 2em;
-}
 
-/*ROUNDED TABLES*/
-/* TABLES: Fix the borders and add a radius variable */
-:root table {
-  --table-border-radius: 8px;
-  border-collapse: separate;
-  border-spacing: 0;
+.cm-formatting.cm-formatting-highlight.cm-highlight {
+    background: none;
+    color: var(--colored-accent-1);
 }
-/* Add the radius */
-th:first-child {
-  border-top-left-radius: var(--table-border-radius);
-}
-th:last-child {
-  border-top-right-radius: var(--table-border-radius);
-}
-tr:last-child td:first-child {
-  border-bottom-left-radius: var(--table-border-radius);
-}
-tr:last-child td:last-child {
-  border-bottom-right-radius: var(--table-border-radius);
-}
-
-/* Redo the borders */
-:root :is(td, th) {
-  border-width: 0 var(--table-border-width) var(--table-border-width) 0;
-}
-
-.cm-html-embed table,
-.markdown-rendered table {
-  margin-top: 15px;
-}
-
-/*SEARCHED TEXT HIGHLIGHTING*/
+/*======== SEARCHED TEXT HIGHLIGHTING =================*/
 .search-result-file-matched-text {
-  background: var(--accent-color-light3);
-  border-radius: 3px;
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border-radius: 3px;
+    background:var(--colored-accent-1);
+    color: var(--colored-accent-i1);
+    border-radius: 3px;
+    padding-left:   2px;
+    padding-right:  2px;
+    padding-top:    0px;
+    padding-bottom: 0px;
+    border-radius: 3px;
 }
 
 .is-flashing {
-  background: var(--accent-color-light3) !important;
-  border-radius: 3px;
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border-radius: 3px;
+    background:var(--colored-accent-1) !important;
+    color: var(--colored-accent-i1);
+    border-radius: 3px;
+    padding-left:   2px;
+    padding-right:  2px;
+    padding-top:    0px;
+    padding-bottom: 0px;
+    border-radius: 3px;
 }
 
-/*adjust latex font size*/
-mjx-math {
-  font-size: 200% !important;
+
+
+/*================== adjust font weight ===============*/
+.markdown-preview-view, .view-content>.cm-s-obsidian, .view-content>.markdown-source-view.mod-cm6.is-live-preview>.cm-scroller, body {
+    font-weight: var(--custom-font-weight, 400);
+    color: var(--tc);
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+.cm-html-embed th, .markdown-rendered th {
+    font-weight: var(--custom-font-weight, 400);
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+table {
+    font-weight: var(--custom-font-weight, 400);
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+.view-content {
+    border: 0px;
+    letter-spacing: var(--custom-letter-spacing, .1px);
+}
+
+body {
+    --bold-modifier: 300;
+    --line-height-normal: var(--custom-line-height, 1.5);
+}
+
+
+
+
+/*disable some elements*/
+.workspace-ribbon.side-dock-ribbon.mod-left::before,
+.workspace-tab-header.tappable:before,
+.workspace-tab-header.tappable:after,
+.workspace-tab-header-inner:after,
+.workspace-tab-header-container:before {
+    display: none !important;
+}
+/*================ EMBEDS =================*/
+img {
+    border-radius: 10px;
+}
+/*================= ROUNDED TABLES =================*/
+/*Credit goes to "FireIsGood": https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551 */
+/* TABLES: Fix the borders and add a radius variable */
+:root table {
+    --table-border-radius: 8px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+/* Add the radius */
+th:first-child {border-top-left-radius: var(--table-border-radius)}
+th:last-child {border-top-right-radius: var(--table-border-radius)}
+tr:last-child td:first-child {border-bottom-left-radius: var(--table-border-radius)}
+tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radius)}
+      
+/* Redo the borders */
+:root :is(td, th) {
+    border-width: 0 var(--table-border-width) var(--table-border-width) 0;
+    border-color: var(--accent-color-light10) !important;
+}
+      
+.cm-html-embed table, .markdown-rendered table {
+    margin-top: 15px;
+}
+/*virtual link styling*/
+.virtual-link-default {
+    filter: brightness(1);
 }
 
 /*increase popup size*/
-.theme-light,
-.theme-dark {
-  --popover-width: 1050px;
-  --popover-height: 1250px;
+.theme-light, .theme-dark {
+    --popover-width: 1050px;
+    --popover-height: 1250px;
 }
 
-/*CHANGE CARET COLOR TO ACCENT COLOR*/
-.cm-line {
-  caret-color: var(--accent-color-light10);
+.markdown-preview-view hr,
+.markdown-source-view hr {
+    border: .1em dashed rgba(128, 128, 128, 0.432) !important;
+    box-shadow: 0px 0px 5em var(--colored-accent-4);
 }
 
-/*ADJUST MARKDOWN SYNTAX COLOR TO ACCENT COLOR - ANIMATION*/
 
-.theme-dark div.HyperMD-header.HyperMD-header-1.cm-line:hover,
-.theme-dark span.cm-formatting.cm-formatting-quote.cm-hmd-callout,
-.theme-dark .cm-formatting-header {
-  font-weight: 900;
-  color: transparent;
-  background: linear-gradient(
-    0deg,
-    var(--accent-color-light10),
-    white,
-    var(--accent-color-light10)
-  );
-  background-size: 100% 200%;
-  background-clip: text;
-  animation: animated-syntax 5s linear infinite;
+.cm-s-obsidian .cm-line.HyperMD-header + .HyperMD-quote.HyperMD-quote-1.cm-line {
+    padding-top: .5em !important;
 }
 
-.theme-light div.HyperMD-header.HyperMD-header-1.cm-line:hover,
-.theme-light span.cm-formatting.cm-formatting-quote.cm-hmd-callout,
-.theme-light .cm-formatting-header {
-  font-weight: 900;
-  color: transparent;
-  background: linear-gradient(
-    0deg,
-    var(--accent-color-alt),
-    black,
-    var(--accent-color-alt)
-  );
-  background-size: 100% 200%;
-  background-clip: text;
-  animation: 5s animated-syntax linear infinite;
-}
-
-@keyframes animated-syntax {
-  0% {
-    background-position: 100% 250%;
-    filter: drop-shadow(0 0 0.1em rgba(255, 255, 255, 0));
-  }
-  10% {
-    background-position: 100% 100%;
-    filter: drop-shadow(0 0 0.5em var(--accent-color-light10));
-  }
-  20% {
-    background-position: 100% 50%;
-    filter: drop-shadow(0 0 0.1em rgba(255, 255, 255, 0.171));
-  }
-
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-/*UI***************************************************************************************************************************************************************************************************************/
-
-/*CORNERS*/
-.modal {
-  border-radius: 15px;
-}
-
-.dropdown {
-  border-radius: 5px;
-  background-color: var(--accent-color-light1);
-}
-
-.dropdown:hover {
-  background-color: var(--accent-color-light5);
-  transition: all 0.2s;
-}
-
-.search-input-container input {
-  border: 1px solid var(--accent-color-light5) !important;
-  border-radius: 10px;
-}
-
-.search-input-container input:hover {
-  transition: all 1s;
-  background: var(--accent-color-light1);
-}
-
-.search-input-container input:focus {
-  transition: all 1s;
-  background: var(--accent-color-light1);
-}
-
-/*UI SLIDERS*/
-input.slider::-webkit-slider-thumb {
-  background: white;
-  border-radius: 100px;
-  box-shadow: inset 0 -1px 3px var(--accent-color-light9);
-}
-
-/*Checkboxes-BUTTONS*/
-.checkbox-container {
-  border-radius: 20px;
-  background-color: var(--accent-color-light2);
-  box-shadow: inset 0 0 4px var(--accent-color-light6);
-}
-
-.checkbox-container:after {
-  border-radius: 20px;
-  background-color: white;
-  box-shadow: inset 0px -2px 5px var(--accent-color-light2);
-  filter: drop-shadow(0 0 1px grey);
-}
-
-.checkbox-container.is-enabled {
-  background-color: var(--accent-color-light5);
-  box-shadow: inset 0 0 4px var(--accent-color-light10);
-}
-
-/*UI-BUTTONS*/
-body:not(.native-scrollbars) .modal-close-button {
-  display: none;
-}
-
-button:not(.clickable-icon) {
-  background-color: var(--accent-color-light01);
-  border-radius: 5px;
-}
-
-button.mod-cta {
-  background-color: var(--accent-color-bg2);
-  box-shadow:
-    inset 0 10px 10px -10px rgba(255, 255, 255, 0.093),
-    inset 0 -10px 10px -10px var(--accent-color-light4);
-  color: black;
-  -webkit-transition: background-color 0.4s ease-out;
-}
-button.mod-cta:hover {
-  background-color: var(--accent-color-light10);
-  color: black;
-}
-
-/*TEXT AND BUTTON SELECTION - HOVER*/
-
-.clickable-icon {
-  border-radius: 20px;
-  transition: all 0.5s;
-}
-
-.clickable-icon:hover {
-  transition: all 0.4s;
-  background-color: var(--accent-color-light6) !important;
-  border-radius: 5px;
-}
-
-.workspace-tab-header.tappable {
-  height: 30px;
-  border-radius: 10px;
-}
-
-.workspace-tab-header-inner {
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-
-.workspace-tab-header-inner:hover {
-  background: var(--accent-color-light4);
-  color: black !important;
-  border-radius: 5px;
-  transition: all 0.5s;
-}
-
-.workspace-tab-header.tappable.is-active {
-  background: linear-gradient(
-    -45deg,
-    var(--accent-color-light1),
-    var(--accent-color-light5),
-    var(--accent-color-light1)
-  );
-  background-size: 200% 200%;
-  animation: mainbar-buttons 5s ease-in-out infinite;
-  border-radius: 10px;
-  transition: all 0.2s;
-}
-
-@keyframes mainbar-buttons {
-  0% {
-    background-position: 100% 100%;
-  }
-  30% {
-    background-position: 100% 100%;
-  }
-  40% {
-    background-position: 50% 50%;
-  }
-  50% {
-    background-position: 0% 0%;
-  }
-  60% {
-    background-position: 50% 50%;
-  }
-  70% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-/*TOOLTIP*/
-.theme-light .tooltip {
-  background-color: var(--accent-color-bg) !important;
-  border-radius: 10px;
-  backdrop-filter: blur(100px);
-  color: black;
-}
-.theme-dark .tooltip {
-  background-color: var(--accent-color-bg_d) !important;
-  border-radius: 10px;
-  backdrop-filter: blur(100px);
-  color: white;
-}
-
-/*POPUP MENUS*/
-.theme-light div.menu {
-  border-radius: 5px;
-  background-color: var(--accent-color-bg) !important;
-}
-.theme-dark div.menu {
-  border-radius: 5px;
-  background-color: var(--accent-color-bg_d) !important;
-}
-
-/*hide scrollbar*/
-::-webkit-scrollbar {
-  display: none;
-}
-
-/*MAKE STATUS BAR TRANSPARENT - BOTTOM RIGHT*/
-.status-bar {
-  background-color: transparent;
-  border: 0px;
-}
-
-/*SETTINGS WINDOWS ANIMATED SELECTORS ON RIGHT SIDE*/
-body:not(.is-phone) .horizontal-tab-nav-item.is-active,
-body:not(.is-phone) .vertical-tab-nav-item.is-active {
-  transition: 0.5s ease-in-out;
-  box-shadow: inset 0 0 5px
-    hsla(var(--accent-h), var(--accent-s), calc(0.7 * var(--accent-l)), 1);
-  color: var(--accent-color-h1);
-  border-radius: 5px;
-  background-color: var(--accent-color-light10);
-}
-
-/*VAULT****************************************************************************************************************************************************************************/
-.theme-light .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  background-color: var(--accent-color-bg) !important;
-  border-top: 10px !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-}
-.theme-dark .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  background-color: var(--accent-color-bg_d) !important;
-  border-top: 10px !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-}
-body:not(.is-mobile)
-  .workspace-split.mod-left-split
-  .workspace-sidedock-vault-profile
-  .workspace-drawer-vault-switcher {
-  border-radius: 5px;
-}
-
-/*NAV FOLDERS***********************************************************************************************************************************************************************/
-/*align new file+folder etc. to the left*/
-.nav-buttons-container {
-  justify-content: left !important;
-}
-
-/*NAV FOLDER FONT STYLE*/
-.theme-light .nav-folder-title-content {
-  color: black;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.theme-dark .nav-folder-title-content {
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.tree-item-self {
-  font-size: 15px;
-}
-
-/*NAV TEXT ANIMATION*/
-
-.theme-dark .nav-file-title.is-active {
-  color: black;
-  font-weight: 900;
-  background: linear-gradient(
-    -90deg,
-    var(--accent-color-light10),
-    rgb(255, 255, 255),
-    var(--accent-color-light10)
-  );
-  background-size: 200% 200%;
-  animation: animated-selection 15s linear infinite;
-}
-
-.theme-light .nav-file-title.is-active {
-  font-weight: 900;
-  background: linear-gradient(
-    -90deg,
-    var(--accent-color-light10),
-    var(--accent-color-light1),
-    var(--accent-color-light10)
-  );
-  background-size: 200% 200%;
-  animation: animated-selection 10s linear infinite;
-}
-
-@keyframes animated-selection {
-  0% {
-    background-position: 0% 0%;
-  }
-  10% {
-    filter: drop-shadow(0 0 5px var(--accent-color-light10));
-  }
-  60% {
-    filter: drop-shadow(0 0 0px var(--accent-color-light10));
-  }
-  100% {
-    background-position: -200% 0%;
-  }
-}
-
-/*RIBBON***********************************************************************************************************************************************************************/
-
-/*Ribbon colors*/
-.theme-light
-  div.app-container
-  > div.horizontal-main-container
-  > div
-  > div.workspace-ribbon.side-dock-ribbon.mod-left {
-  background-color: transparent;
-  border: 0px !important;
-}
-
-.theme-light
-  div.app-container
-  > div.horizontal-main-container
-  > div
-  > div.workspace-ribbon.side-dock-ribbon.mod-left
-  > div.sidebar-toggle-button.mod-left {
-  background-color: var(--accent-color-bg);
-  border: 0px !important;
-}
-
-.theme-dark
-  div.app-container
-  > div.horizontal-main-container
-  > div
-  > div.workspace-ribbon.side-dock-ribbon.mod-left {
-  background-color: transparent;
-  border: 0px !important;
-}
 
-.theme-dark
-  div.app-container
-  > div.horizontal-main-container
-  > div
-  > div.workspace-ribbon.side-dock-ribbon.mod-left
-  > div.sidebar-toggle-button.mod-left {
-  background-color: var(--accent-color-bg_d);
-  border: 0px !important;
-}
-
-/*remove ribbon border line*/
-body
-  > div.app-container
-  > div.horizontal-main-container
-  > div
-  > div.workspace-ribbon.side-dock-ribbon.mod-left:before {
-  display: none;
-}
-
-/*TITLEBAR***************************************************************************************************************************************************************************************************************/
-/*align search. bookmark and file icon (nav folder) to the left*/
-.mod-left-split .workspace-tab-header-container-inner,
-.mod-right-split .workspace-tab-header-container-inner {
-  justify-content: left !important;
-}
-
-/*align top right items so that they dont interfere with ui buttons*/
-.workspace-split.mod-right-split
-  .workspace-tabs
-  .workspace-tab-header-container {
-  padding-right: 120px !important;
-}
-
-.theme-light .workspace-tab-header-container:not(.workspace-split) {
-  align-items: center;
-  position: relative;
-  border: none;
-  height: 50px;
-  background-color: var(--accent-color-bg);
-}
-
-.theme-dark .workspace-tab-header-container:not(.workspace-split) {
-  align-items: center;
-  position: relative;
-  border: none;
-  height: 50px;
-  background-color: var(--accent-color-bg_d);
-}
-
-body.is-frameless.is-hidden-frameless .titlebar {
-  height: 50px;
-}
-
-.theme-light .titlebar-button-container {
-  background-color: var(--accent-color-bg) !important;
-  height: 50px !important;
-}
-
-.theme-dark .titlebar-button-container {
-  background-color: var(--accent-color-bg_d) !important;
-  height: 50px !important;
-}
-
-.titlebar-button-container .mod-minimize,
-.titlebar-button-container .mod-maximize,
-.titlebar-button-container .mod-close:not(.empty-state-action) {
-  width: 30px !important;
-  height: 30px !important;
-  padding: 0px !important;
-  margin-right: 10px !important;
-  margin-top: 10px;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 10px !important;
-}
-
-/*rounded corners for better item hiding when resizing*/
-.workspace-tab-header-container-inner:not(.workspace-split) {
-  justify-content: none !important;
-  align-items: center !important;
-  border-radius: 10px !important;
-  padding: 0px;
-}
-
-/*TAB HEADERS***************************************************************************************************************************/
-/*active tab look*/
-.mod-root:not(.mod-left-split):not(.mod-right-split)
-  .workspace-tabs:not(.mod-stacked)
-  .workspace-tab-header.is-active {
-  flex-grow: 1;
-  background-color: var(--accent-color-light3);
-  margin: 0 2.5px 5px 2.5px;
-  height: 35px;
-  transition:
-    1s,
-    background-color 200ms ease-in-out,
-    max-width 2000ms !important;
-  max-width: var(--tab-max-width);
-  border: 1px solid var(--accent-color-light10);
-  border-radius: 5px;
-  color: black;
-  font-weight: 600 !important;
-  text-align: center !important;
-}
-
-/*inactive tab look*/
-.mod-root:not(.mod-left-split):not(.mod-right-split)
-  .workspace-tabs:not(.mod-stacked)
-  .workspace-tab-header {
-  flex-grow: 0.1;
-  background-color: var(--accent-color-light1);
-  font-weight: 300;
-  position: relative;
-  align-items: center;
-  justify-content: var(--anp-safari-tab-align, center);
-  border-radius: 5px;
-  margin: 0 2.5px 5px 2.5px;
-  height: 35px;
-  transition:
-    1s,
-    background-color 200ms ease-in-out,
-    max-width 2000ms;
-}
-
-/*remove lines beween tabs*/
-.workspace-tab-header-inner:after {
-  display: none;
-}
-
-/*active tab width*/
-.theme-light,
-.theme-dark {
-  --tab-max-width: 35%;
-}
-
-/*tab color active + align title*/
-.theme-light .workspace-tab-header-inner-title:not(.workspace-split) {
-  text-align: center !important;
-  color: var(--accent-color-light9);
-  font-size: 15px;
-}
-
-.theme-dark .workspace-tab-header-inner-title:not(.workspace-split) {
-  text-align: center !important;
-  color: var(--accent-color-light9);
-  font-size: 15px;
-}
-
-.mod-root.workspace-tab-header-inner:not(.workspace-split) {
-  color: black;
-  border-radius: 50px !important;
-}
-
-.mod-root .workspace-tab-header.tappable {
-  padding: 0px !important;
-  overflow: hidden !important;
-}
-
-/*center tab bars*/
-.workspace-tab-header-container-inner:not(.workspace-split) {
-  position: relative;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-/*decrease icon spacing upper right tab bar*/
-.workspace-tab-header-new-tab,
-.workspace-tab-header-tab-list {
-  margin-right: 0px;
-}
-
-/*TAB HEADER REMOVE TWO DOTS ON BOTTOM CORNERS*/
-.workspace-tab-header.is-active::before,
-.workspace-tab-header.is-active::after {
-  display: none;
-}
 
-/*CALLOUTS*********************************************************************************************************************************************************************/
-/*better callouts*/
-.theme-light .callout {
-  --callout-border-width: 0.05rem;
-  --callout-border-opacity: 0.8 !important;
-  border-radius: 8px;
-  border-color: var(--accent-color-light9);
-  background-color: var(
-    --accent-color-light01,
-    var(--callout-background-color, #f5f5f5)
-  );
-  box-shadow: 0 0 5px
-    var(--accent-color-bg2, var(--callout-background-color, #f5f5f5));
-  padding: 1.2em 1.2em 1.2em 1.2em;
-  margin-left: 5px !important;
-  margin-right: 5px !important;
-  margin-bottom: 30px !important;
-  margin-top: 30px !important;
-  .callout-title {
-    margin-top: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0em;
-    margin-left: -0.5em;
-  }
-  .callout-title-inner {
-    font-size: 1.4em;
-    position: relative;
-    top: -0.7em;
-    left: -0.1em;
-    color: var(--callout-title-color, #000000);
-  }
-  .callout-icon {
-    display: none;
-  }
-  .callout-content {
-    overflow: visible;
-    margin: -1.5em -0.5em -1.5em;
-  }
-}
-
-.theme-dark .callout {
-  --callout-border-width: 0.05rem;
-  --callout-border-opacity: 0.8 !important;
-  border-radius: 8px;
-  border-color: var(--accent-color-light9);
-  background-color: var(
-    --accent-color-light01,
-    var(--callout-background-color, #f5f5f5)
-  );
-  box-shadow: 0 0 5px
-    var(--accent-color-bg2, var(--callout-background-color, #f5f5f5));
-  padding: 1.2em 1.2em 1.2em 1.2em;
-  margin-left: 5px !important;
-  margin-right: 5px !important;
-  margin-bottom: 30px !important;
-  margin-top: 30px !important;
-  .callout-title {
-    margin-top: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0em;
-    margin-left: -0.5em;
-  }
-  .callout-title-inner {
-    font-size: 1.4em;
-    position: relative;
-    top: -0.7em;
-    left: -0.1em;
-    color: var(--callout-title-color, white);
-  }
-  .callout-icon {
-    display: none;
-  }
-  .callout-content {
-    margin: -1.5em -0.5em -1.5em;
-  }
-}
-
-/*add a line below the callout heading*/
-div.callout-content:before {
-  content: "";
-  display: block;
-  margin: 0em 0em 0em;
-  border: 1px solid #bfbfbf;
-  border-block-style: dashed;
-  border-radius: 1px;
-  position: relative;
-  top: 8px;
-}
-div.callout-content {
-  overflow: visible;
-}
-
-/*CUSTOM CALLOUT COLORS*/
-.theme-light .callout[data-callout="tip"] {
-  background-color: var(--accent-color-light02);
-  .callout-title-inner {
-    color: var(--callout-title-color-tip, var(--callout-title-color, black));
-  }
-}
-
-.theme-dark .callout[data-callout="tip"] {
-  background-color: var(--accent-color-light02);
-  .callout-title-inner {
-    color: var(--callout-title-color-tip, var(--callout-title-color, white));
-  }
-}
-
-.theme-light .callout[data-callout="danger"] {
-  background-color: var(--accent-color-light05);
-  .callout-title-inner {
-    color: var(--callout-title-color-danger, var(--callout-title-color, black));
-    filter: drop-shadow(0 0 1px var(--accent-color-light1));
-  }
-}
-
-.theme-dark .callout[data-callout="danger"] {
-  background-color: var(--accent-color-light05);
-  .callout-title-inner {
-    color: var(--callout-title-color-danger, var(--callout-title-color, white));
-    filter: drop-shadow(0 0 1px var(--accent-color-light1));
-  }
-}
-
-/*Callout zoom when hover
-.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false]:hover {
-    box-sizing: border-box !important;
-    transform:scale(101%);
-    transition: all 1s;
-}
-
-*/
-
-/*disable callout hover border*/
-.markdown-source-view.mod-cm6 .cm-embed-block:hover {
-  border: 0px solid transparent !important;
-  box-shadow: none !important;
-}
-
-/*EMBEDS********************************************************************************************************************************************************************/
-
-/*1.2.3 - better images*/
-.theme-dark img {
-  border-radius: 10px;
-  mix-blend-mode: screen;
-  filter: invert(1) grayscale(100%);
-}
-
-.theme-light img {
-  border-radius: 10px;
-  filter: grayscale(1);
-}
-
-/*CANVAS********************************************************************************************************************************************************************/
-
-/*NODE BACKGROUND*/
-.theme-light
-  .canvas-wrapper:not(.mod-readonly)
-  .canvas-node-content.markdown-embed
-  > .markdown-embed-content
-  > .markdown-preview-view {
-  background-color: var(--accent-color-bg);
-}
-
-.theme-dark
-  .canvas-wrapper:not(.mod-readonly)
-  .canvas-node-content.markdown-embed
-  > .markdown-embed-content
-  > .markdown-preview-view {
-  background-color: var(--accent-color-bg_d);
-}
-
-/*NODE GROUP BACKGROUND*/
-.theme-light
-  .canvas-wrapper:not(.mod-readonly)
-  .canvas-node:not(.is-editing)
-  .canvas-node-container {
-  background: var(--accent-color-bg) !important;
-}
-
-.theme-dark
-  .canvas-wrapper:not(.mod-readonly)
-  .canvas-node:not(.is-editing)
-  .canvas-node-container {
-  background: var(--accent-color-bg_d) !important;
-}
-
-/*NODE BORDER THICKNESS*/
-.canvas-node-container {
-  border: 0.2em solid;
-}
-
-/*NODE GROUP GRAINY BACKGROUND*/
-.theme-dark
-  .canvas-wrapper:not(.mod-readonly)
-  .canvas-node:not(.is-editing)
-  .canvas-node-container:before {
-  content: "";
-  background-color: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-  opacity: 0.1;
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none !important;
-}
-
-.theme-light
-  .canvas-wrapper:not(.mod-readonly)
-  .canvas-node:not(.is-editing)
-  .canvas-node-container:before {
-  content: "";
-  background-color: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 182px;
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none !important;
-}
-
-/*NODE SHADOWS*/
-.theme-light .canvas-node {
-  border-radius: 10px !important;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.26) !important;
-}
-
-.theme-dark .canvas-node {
-  border-radius: 10px !important;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.748) !important;
-}
 
-/*HIDE ATTACHMENT FOLDER: "000_attachments_000" - if used*/
-div[data-path$="000_attachments_000"],
-div[data-path$="000_attachments_000"] + div.nav-folder-children {
-  display: none;
+/*status bar hider*/
+body.status-bar-hover .status-bar{
+    opacity: 0;
+    transition: all .5s;
+    &:hover {        
+        opacity: 1;
+    }
 }

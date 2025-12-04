@@ -36,8 +36,8 @@
   --blockquote-border: #893cf5;
   --tag-background: #a7b0b3;
   --interactive-accent-rgb: rgb(61, 215, 251);
-  --font-family-editor: "Rubik";
-  --font-family-preview: "Rubik";
+  --font-family-editor: 'Rubik';
+  --font-family-preview: 'Rubik';
   --bg-sub-accent-55: rgba(93, 180, 220, 0.55);
   --bg-sub-accent-55: rgba(93, 180, 220, 0.75);
   --bg-accent-55: rgba(137, 60, 245, 0.55);
@@ -68,10 +68,8 @@ You can customized the theme using the variables below
   /***************************************/
 
   /** Font Customization **/
-  --default-font:
-    "Rubik", "Glow Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    sans-serif;
+  --default-font: 'Rubik', 'Glow Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
 
   --default-font-size: 1.05rem;
 
@@ -79,14 +77,12 @@ You can customized the theme using the variables below
   --body-font-weight: normal;
 
   /** Font family for hash-tags **/
-  --tag-font-family:
-    "OperatorMonoSSmLig-Book", "Glow Sans SC", "华文细黑", "STXihei",
-    "PingFang TC", "微软雅黑体", "Microsoft YaHei New", "微软雅黑",
-    "Microsoft Yahei", "宋体", "SimSun", "Helvetica Neue", "Helvetica", Arial,
-    sans-serif !important;
+  --tag-font-family: 'OperatorMonoSSmLig-Book', 'Glow Sans SC', '华文细黑', 'STXihei', 'PingFang TC',
+    '微软雅黑体', 'Microsoft YaHei New', '微软雅黑', 'Microsoft Yahei', '宋体', 'SimSun',
+    'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
 
   /** Font specially for codes **/
-  --code-mono-font: "Source Code Pro", "OperatorMonoSSmLig-Book";
+  --code-mono-font: 'OperatorMonoSSmLig-Book';
 }
 
 /**-------------------**
@@ -94,8 +90,8 @@ You can customized the theme using the variables below
 **--------------------**/
 
 /* For preview mode */
-a.tag[href*="#todo"],
-a.tag[href*="#待完成"] {
+a.tag[href*='#todo'],
+a.tag[href*='#待完成'] {
   background-color: #be2e5e;
   color: #fff;
 }
@@ -104,20 +100,18 @@ a.tag[href*="#待完成"] {
   color: #ee6a96;
 }
 
-a.tag[href*="#working-draft"],
-a.tag[href*="#进行中"] {
+a.tag[href*='#working-draft'],
+a.tag[href*='#进行中'] {
   background-color: #4d3ca6;
   color: #fff;
 }
 
-.cm-s-obsidian
-  .CodeMirror-line
-  span.cm-tag-working-draft:not(.cm-formatting-hashtag) {
+.cm-s-obsidian .CodeMirror-line span.cm-tag-working-draft:not(.cm-formatting-hashtag) {
   color: #a897ff;
 }
 
-a.tag[href*="#notes"],
-a.tag[href*="#笔记"] {
+a.tag[href*='#notes'],
+a.tag[href*='#笔记'] {
   background-color: #17b978;
   color: #fff;
 }
@@ -126,32 +120,28 @@ a.tag[href*="#笔记"] {
   color: #45e0a2;
 }
 
-a.tag[href*="#knowledge"],
-a.tag[href*="#知识"] {
+a.tag[href*='#knowledge'],
+a.tag[href*='#知识'] {
   background-color: #005792;
   color: #fff;
 }
 
-.cm-s-obsidian
-  .CodeMirror-line
-  span.cm-tag-knowledge:not(.cm-formatting-hashtag) {
+.cm-s-obsidian .CodeMirror-line span.cm-tag-knowledge:not(.cm-formatting-hashtag) {
   color: #6cbdf3;
 }
 
-a.tag[href*="#writing"],
-a.tag[href*="#文章"] {
+a.tag[href*='#writing'],
+a.tag[href*='#文章'] {
   background-color: #f95959;
   color: #fff;
 }
 
-.cm-s-obsidian
-  .CodeMirror-line
-  span.cm-tag-writing:not(.cm-formatting-hashtag) {
+.cm-s-obsidian .CodeMirror-line span.cm-tag-writing:not(.cm-formatting-hashtag) {
   color: #ff7a7a;
 }
 
-a.tag[href*="#ideas"],
-a.tag[href*="#想法"] {
+a.tag[href*='#ideas'],
+a.tag[href*='#想法'] {
   background-color: #ffc93c;
   color: #000;
 }
@@ -267,14 +257,8 @@ a.tag[href*="#想法"] {
   opacity: 1;
 }
 
-.is-focused
-  .mod-active
-  .workspace-tab-header.is-active
-  .workspace-tab-header-inner-icon,
-.is-focused
-  .mod-active
-  .workspace-tab-header.is-active
-  .workspace-tab-header-inner-title {
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
   color: var(--text-accent);
 }
 
@@ -369,7 +353,7 @@ span.cm-formatting-list,
   text-indent: -3em;
 }
 
-.contains-task-list .task-list-item input[type="checkbox"] {
+.contains-task-list .task-list-item input[type='checkbox'] {
   position: absolute;
   top: 4px;
   left: -23px;
@@ -386,7 +370,7 @@ span.cm-formatting-list,
 }
 
 .contains-task-list .task-list-item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 2px;
   left: -25px;
@@ -408,7 +392,7 @@ span.cm-formatting-list,
 }
 
 .contains-task-list .is-checked.task-list-item::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 8px;
   left: -21px;
@@ -425,11 +409,7 @@ span.cm-formatting-list,
   color: var(--interactive-accent) !important;
 }
 
-.markdown-preview-view
-  ul
-  > li.task-list-item.is-checked
-  ul
-  > li:not(.is-checked) {
+.markdown-preview-view ul > li.task-list-item.is-checked ul > li:not(.is-checked) {
   text-decoration: none !important;
   color: var(--text-normal) !important;
 }
@@ -515,7 +495,7 @@ pre.HyperMD-header.HyperMD-header-6:after {
   left: 0;
   bottom: 0;
   width: 6rem;
-  content: "";
+  content: '';
   background: linear-gradient(130deg, #24c6dc, #5433ff 41.07%, #f09 76.05%);
 }
 
@@ -602,7 +582,7 @@ pre.HyperMD-header.HyperMD-header-6:after {
   left: 0;
   bottom: 0;
   width: 6rem;
-  content: "";
+  content: '';
   background: linear-gradient(130deg, #24c6dc, #5433ff 41.07%, #f09 76.05%);
 }
 
@@ -780,11 +760,7 @@ cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline {
 
 .cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
 .internal-link {
-  background-image: linear-gradient(
-    to bottom,
-    var(--bg-accent-75) 0%,
-    var(--bg-accent-75) 100%
-  );
+  background-image: linear-gradient(to bottom, var(--bg-accent-75) 0%, var(--bg-accent-75) 100%);
   transition: background 350ms ease-in-out;
 }
 
@@ -947,7 +923,7 @@ h6 a.tag {
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg:before {
   position: absolute;
-  content: "";
+  content: '';
   top: -59%;
   left: 0;
   width: 100%;
@@ -967,14 +943,8 @@ pre {
   position: relative;
 }
 
-pre[class*="language-"]:before {
-  font-family:
-    Rubik,
-    Lato,
-    Lucida Grande,
-    Lucida Sans Unicode,
-    Tahoma,
-    Sans-Serif;
+pre[class*='language-']:before {
+  font-family: Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.6rem;
@@ -984,7 +954,7 @@ pre[class*="language-"]:before {
   right: 0.3rem;
   padding: 0;
   color: var(--text-accent) !important;
-  content: "";
+  content: '';
   text-transform: uppercase;
   background: rgba(16, 14, 23, 0.86);
   border-radius: 8px;
@@ -992,46 +962,46 @@ pre[class*="language-"]:before {
   z-index: 10;
 }
 
-pre[class$="javascript"]:before,
-pre[class$="js"]:before {
-  content: "JavaScript";
+pre[class$='javascript']:before,
+pre[class$='js']:before {
+  content: 'JavaScript';
 }
 
-pre[class$="typescript"]:before,
-pre[class$="ts"]:before {
-  content: "typescript";
+pre[class$='typescript']:before,
+pre[class$='ts']:before {
+  content: 'typescript';
 }
 
-pre[class$="html"]:before {
-  content: "html";
+pre[class$='html']:before {
+  content: 'html';
 }
 
-pre[class$="css"]:before {
-  content: "css";
+pre[class$='css']:before {
+  content: 'css';
 }
 
-pre[class$="ejs"]:before {
-  content: "ejs";
+pre[class$='ejs']:before {
+  content: 'ejs';
 }
 
-pre[class$="vue"]:before {
-  content: "vue";
+pre[class$='vue']:before {
+  content: 'vue';
 }
 
-pre[class$="react"]:before {
-  content: "react";
+pre[class$='react']:before {
+  content: 'react';
 }
 
-pre[class$="shell"]:before {
-  content: "Shell";
+pre[class$='shell']:before {
+  content: 'Shell';
 }
 
-pre[class$="json"]:before {
-  content: "Json";
+pre[class$='json']:before {
+  content: 'Json';
 }
 
-pre[class$="python"]:before {
-  content: "python";
+pre[class$='python']:before {
+  content: 'python';
 }
 
 /**-------------------**
@@ -1060,39 +1030,27 @@ blockquote {
   border-bottom: transparent;
   border-right: transparent;
   margin-inline-start: 0;
-  background: linear-gradient(
-    135deg,
-    var(--background-primary-alt),
-    var(--background-primary)
-  );
+  background: linear-gradient(135deg, var(--background-primary-alt), var(--background-primary));
 }
 
 .markdown-preview-view blockquote::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -1px;
   height: 2px;
   width: 60%;
-  background: linear-gradient(
-    90deg,
-    var(--bg-accent-55),
-    var(--background-primary)
-  );
+  background: linear-gradient(90deg, var(--bg-accent-55), var(--background-primary));
 }
 
 .markdown-preview-view blockquote::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: -1px;
   height: 2px;
   width: 25%;
-  background: linear-gradient(
-    90deg,
-    var(--bg-accent-55),
-    var(--background-primary)
-  );
+  background: linear-gradient(90deg, var(--bg-accent-55), var(--background-primary));
 }
 
 .markdown-preview-view blockquote p {
@@ -1100,7 +1058,7 @@ blockquote {
 }
 
 .markdown-preview-view blockquote p:first-of-type::before {
-  content: "!!";
+  content: '!!';
   font-style: italic;
   font-weight: 700;
   font-size: 18px;
@@ -1140,12 +1098,12 @@ blockquote {
   color: var(--text-sub-accent);
 }
 
-.markdown-preview-view pre code {
+..markdown-preview-view pre code {
   color: var(--text-normal) !important;
 }
 
-.theme-dark :not(pre) > code[class*="language-"],
-.theme-dark pre[class*="language-"] {
+.theme-dark :not(pre) > code[class*='language-'],
+.theme-dark pre[class*='language-'] {
   background-color: var(--background-secondary);
 }
 
@@ -1230,18 +1188,12 @@ pre::-webkit-scrollbar {
   width: 14px;
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   color: #ccc;
   background: transparent;
   text-shadow: none;
-  font-family:
-    "OperatorMonoSSmLig-Book",
-    PT Mono,
-    Consolas,
-    Monaco,
-    "Andale Mono",
-    "Ubuntu Mono",
+  font-family: 'OperatorMonoSSmLig-Book', PT Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
     monospace !important;
   text-align: left;
   white-space: pre;
@@ -1260,37 +1212,37 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection {
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
   text-shadow: none;
   background-color: #5a5f80;
 }
 
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-code[class*="language-"]::selection,
-code[class*="language-"] ::selection {
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
   text-shadow: none;
   background-color: #5a5f80;
 }
 
 @media print {
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     text-shadow: none;
   }
 }
 
 /* Code blocks */
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
   background: var(--background-secondary);
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*='language-'] {
   padding: 4px 7px;
   border-radius: 0.3em;
   white-space: normal;

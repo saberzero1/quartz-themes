@@ -3,6 +3,5 @@
   "version": "1.0.4",
   "minAppVersion": "1.6.0",
   "author": "LennZone",
-  "authorUrl": "https://github.com/LennZone",
-  "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
+  "authorUrl": "https://github.com/LennZone"
 }

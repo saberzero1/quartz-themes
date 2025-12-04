@@ -1,8 +1,7 @@
 {
-  "name": "NotSwift",
-  "version": "1.2.2",
-  "minAppVersion": "1.0.0",
-  "author": "David Roos",
-  "authorUrl": "https://github.com/davidjroos",
-  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
+	"name": "NotSwift",
+	"version": "1.2.2",
+	"minAppVersion": "1.0.0",
+	"author": "David Roos",
+	"authorUrl": "https://github.com/davidjroos"
 }
