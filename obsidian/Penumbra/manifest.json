@@ -1,8 +1,7 @@
 {
-  "name": "Penumbra",
-  "version": "0.0.1",
-  "minAppVersion": "1.0.0",
-  "author": "Josef Bisits",
-  "authorUrl": "https://jbisits.github.io/",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Penumbra",
+	"version": "0.0.1",
+	"minAppVersion": "1.0.0",
+	"author": "Josef Bisits",
+	"authorUrl": "https://jbisits.github.io/"
 }

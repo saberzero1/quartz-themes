@@ -1,6 +1,6 @@
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <a href="https://github.com/Avesend" target="_blank" rel="noopener noreferrer">Avesend</a>
+- Theme author: <a href="https://github.com/danielkhmara" target="_blank" rel="noopener noreferrer">Daniel Khmara</a>
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/lumines">Install instructions</a>
 

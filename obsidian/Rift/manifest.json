@@ -1,8 +1,7 @@
 {
-  "name": "Rift",
-  "version": "0.0.0",
-  "minAppVersion": "0.16.0",
-  "author": "Noah Boos",
-  "authorUrl": "https://github.com/NoahBoos",
-  "license": { "name": "Other", "spdx_id": "NOASSERTION" }
+    "name": "Rift",
+    "version": "1.1.0",
+    "minAppVersion": "0.16.0",
+    "author": "Noah Boos",
+    "authorUrl": "https://github.com/NoahBoos"
 }

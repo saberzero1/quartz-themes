@@ -1,7 +1,7 @@
 # Ukiyo
 
 - Theme: Ukiyo
-- Author: kinmury
+- Author: Technerium
 
 ## Preview
 

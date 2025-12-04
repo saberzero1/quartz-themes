@@ -1,8 +1,7 @@
 {
-  "name": "Dunite",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "ch0live",
-  "authorUrl": "https://ch0live.github.io/home",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Dunite",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"author": "ch0live",
+	"authorUrl": "https://ch0live.github.io/home"
 }

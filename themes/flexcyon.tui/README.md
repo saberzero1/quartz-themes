@@ -2,6 +2,7 @@
 
 - Theme: flexcyon
 - Author: bladeacer
+- Support the author: <a href="https://github.com/sponsors/bladeacer" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview
 

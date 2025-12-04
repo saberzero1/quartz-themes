@@ -1,11 +1,7 @@
 {
-  "name": "Neon Synthwave",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "Grant Smith",
-  "authorUrl": "https://github.com/grjsmith",
-  "license": {
-    "name": "Creative Commons Zero v1.0 Universal",
-    "spdx_id": "CC0-1.0"
-  }
+	"name": "Neon Synthwave",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"author": "Grant Smith",
+	"authorUrl": "https://github.com/grjsmith"
 }

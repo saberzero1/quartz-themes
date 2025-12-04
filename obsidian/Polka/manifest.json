@@ -1,7 +1,6 @@
 {
-  "name": "Polka",
-  "version": "1.3.9",
-  "minAppVersion": "1.0.0",
-  "author": "callumhackett",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+    "name": "Polka",
+    "version": "1.3.9",
+    "minAppVersion": "1.0.0",
+    "author": "callumhackett"
 }

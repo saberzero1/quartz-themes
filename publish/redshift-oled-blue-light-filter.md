@@ -1,6 +1,6 @@
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <a href="https://obsidian.md" target="_blank" rel="noopener noreferrer">Yazan Abu Queider</a>
+- Theme author: <a href="https://github.com/norderan" target="_blank" rel="noopener noreferrer">Yazan Abu Queider</a>
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/redshift-oled-blue-light-filter">Install instructions</a>
 

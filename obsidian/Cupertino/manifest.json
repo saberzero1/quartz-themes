@@ -1,9 +1,8 @@
 {
   "name": "Cupertino",
-  "version": "1.6.6",
-  "minAppVersion": "1.4.0",
+  "version": "3.0.6",
+  "minAppVersion": "1.8.0",
   "author": "Alexis C",
   "authorUrl": "https://github.com/aaaaalexis",
-  "fundingUrl": "https://www.buymeacoffee.com/sevenaxis",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+  "fundingUrl": "https://www.buymeacoffee.com/sevenaxis"
 }

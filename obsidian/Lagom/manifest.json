@@ -1,7 +1,6 @@
 {
-  "name": "Lagom",
-  "version": "1.7",
-  "minAppVersion": "1.1.8",
-  "author": "Leslyecream",
-  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
+   "name": "Lagom",
+   "version": "1.6.7",
+   "minAppVersion": "1.1.8",
+   "author": "Leslyecream"
 }

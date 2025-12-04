@@ -1,426 +1,666 @@
 /* ==
 @name             Minimal Dracula
 @namespace        github.com/druxorey/minimal-dracula-for-obsidian
-@version          1.3.4
+@version          1.7.2
 @description      Are you tired of the same boring colors on Obsidian? Then try this modern color style based on the Dracula theme
 @author           Druxorey
 @license          GNU General Public License v3.0
 == */
 
 :root {
-  --color-comment: #6272a4;
-
-  --color-red-1: #ff6e6e;
-  --color-red-2: #ff5555;
-  --color-red-3: #e63c3c;
-  --color-orange-1: #ffd185;
-  --color-orange-2: #ffb86c;
-  --color-orange-3: #e69f53;
-  --color-yellow-1: #ffffa5;
-  --color-yellow-2: #f1fa8c;
-  --color-yellow-3: #d8e173;
-  --color-green-1: #69ff94;
-  --color-green-2: #50fa7b;
-  --color-green-3: #37eb62;
-  --color-cyan-1: #a4ffff;
-  --color-cyan-2: #8be9fd;
-  --color-cyan-3: #72d0e4;
-  --color-blue-1: #6dccff;
-  --color-blue-2: #54b3ff;
-  --color-blue-3: #3b9ae6;
-  --color-purple-1: #d6acff;
-  --color-purple-2: #bd93f9;
-  --color-purple-3: #a47ae0;
-  --color-pink-1: #ff92df;
-  --color-pink-2: #ff79c6;
-  --color-pink-3: #e660ad;
-
-  --color-callout-comment: 98, 114, 164;
-  --color-callout-red: 255, 85, 85;
-  --color-callout-orange: 255, 184, 108;
-  --color-callout-yellow: 241, 250, 140;
-  --color-callout-green: 80, 250, 123;
-  --color-callout-cyan: 139, 233, 253;
-  --color-callout-purple: 189, 147, 249;
-  --color-callout-pink: 255, 121, 198;
+	--drx-border-radius: 10px;
+	--drx-border-width: 2px;
+	--drx-shadow-radius: 8px;
+	background-color: #1E1F29;
 }
+
+/* ========================== OBSIDIAN VALUES ======================== */
 
 body {
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-highlight: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) - 20%),
-    calc(var(--accent-l) + 10%)
-  );
+	--h1-weight: 600;
+	--h2-weight: 600;
+	--h3-weight: 600;
+	--h4-weight: 500;
+	--h5-weight: 500;
+	--h6-weight: 500;
 
-  --h1-weight: 600;
-  --h2-weight: 600;
-  --h3-weight: 600;
-  --h4-weight: 500;
-  --h5-weight: 500;
-  --h6-weight: 500;
+	--h1-size: 1.50em;
+	--h2-size: 1.35em;
+	--h3-size: 1.20em;
+	--h4-size: 1.15em;
+	--h5-size: 1.10em;
+	--h6-size: 1.05em;
 
-  --h1-size: 1.5em;
-  --h2-size: 1.35em;
-  --h3-size: 1.2em;
-  --h4-size: 1.15em;
-  --h5-size: 1.1em;
-  --h6-size: 1.05em;
+	--h1-line-height: 1.00em;
+	--h2-line-height: 1.00em;
+	--h3-line-height: 1.00em;
+	--h4-line-height: 1.00em;
+	--h5-line-height: 1.00em;
+	--h6-line-height: 1.00em;
 
-  --h1-line-height: 1em;
-  --h2-line-height: 1em;
-  --h3-line-height: 1em;
-  --h4-line-height: 1em;
-  --h5-line-height: 1em;
-  --h6-line-height: 1em;
+	--checklist-done-decoration: none;
 
-  --code-comment: var(--color-comment);
-  --code-function: var(--color-green-2);
-  --code-important: var(--color-red-2);
-  --code-keyword: var(--color-pink-2);
-  --code-operator: var(--color-red-2);
-  --code-property: var(--color-orange-2);
-  --code-string: var(--color-yellow-2);
-  --code-tag: var(--color-red-2);
-  --code-value: var(--color-purple-2);
+	--link-unresolved-opacity: 0.5;
+	--table-width: 88cqw;
 
-  --tag-color: var(--color-accent);
+	--drx-color-callout-comment: 98, 114, 164;
+	--drx-color-callout-red: 255, 85, 85;
+	--drx-color-callout-orange: 255, 184, 108;
+	--drx-color-callout-yellow: 241, 250, 140;
+	--drx-color-callout-green: 55, 235, 98;
+	--drx-color-callout-blue: 84, 179, 255;
+	--drx-color-callout-cyan: 114, 208, 228;
+	--drx-color-callout-purple: 189, 147, 249;
+	--drx-color-callout-pink: 255, 121, 198;
 
-  --link-color: var(--color-accent);
-  --link-color-hover: var(--color-accent-highlight);
-  --link-external-color: var(--color-accent);
-  --link-external-color-hover: var(--color-accent-highlight);
-  --link-unresolved-color: var(--color-green-2);
-  --link-unresolved-decoration-color: var(--color-red-2);
-  --link-unresolved-opacity: 0.5;
-  --checklist-done-decoration: none;
-
-  --callout-default: var(--color-callout-comment);
-  --callout-info: var(--color-callout-comment);
-  --callout-summary: var(--color-callout-cyan);
-  --callout-tip: var(--color-callout-cyan);
-  --callout-todo: var(--color-callout-comment);
-  --callout-bug: var(--color-callout-red);
-  --callout-error: var(--color-callout-red);
-  --callout-fail: var(--color-callout-red);
-  --callout-example: var(--color-callout-pink);
-  --callout-important: var(--color-callout-purple);
-  --callout-success: var(--color-callout-green);
-  --callout-question: var(--color-callout-yellow);
-  --callout-warning: var(--color-callout-orange);
-  --callout-quote: var(--color-callout-purple);
+	--callout-default: var(--drx-color-callout-comment);
+	--callout-info: var(--drx-color-callout-comment);
+	--callout-todo: white;
+	--callout-important: var(--drx-color-callout-purple);
+	--callout-example: var(--drx-color-callout-pink);
+	--callout-summary: var(--drx-color-callout-cyan);
+	--callout-tip: var(--drx-color-callout-cyan);
+	--callout-bug: var(--drx-color-callout-red);
+	--callout-error: var(--drx-color-callout-red);
+	--callout-fail: var(--drx-color-callout-red);
+	--callout-quote: var(--drx-color-callout-blue);
+	--callout-success: var(--drx-color-callout-green);
+	--callout-question: var(--drx-color-callout-orange);
+	--callout-warning: var(--drx-color-callout-orange);
 }
 
-/* == DARK THEME == */
+/* ============================ DARK THEME =========================== */
 
 body.theme-dark {
-  --color-background-1: #525568;
-  --color-background-2: #44475a;
-  --color-background-3: #353747;
-  --color-background-4: #282a36;
-  --color-background-5: #21222c;
+	--drx-color-base: #1E1F29;
+	--drx-color-surface: #282A36;
+	--drx-color-overlay: #44475A;
+	--drx-color-highlight: #525568;
 
-  --color-shadow-1: #353747;
-  --color-shadow-2: #21222c;
-  --color-shadow-3: #1a1c24;
+	--drx-color-text: #F8F8F2;
+	--drx-color-subtext: #BABCC9;
+	--drx-color-deactivate: #707487;
 
-  --color-foreground-1: #f8f8f2;
-  --color-foreground-2: #d9dadf;
-  --color-foreground-3: #b9bbcb;
+	--drx-color-accent: #BD93F9;
+	--drx-color-important: #D6ACFF;
 
-  color: var(--color-foreground-1);
+	--drx-color-comment: #6270A4;
 
-  --bold-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --text-selection: hsla(var(--accent-h), var(--accent-s), 70%, 0.25);
+	--drx-color-red-1:#FF6E6E;
+	--drx-color-red-2: #FF5555;
+	--drx-color-red-3: #E63C3C;
+	--drx-color-orange-1: #FFD185;
+	--drx-color-orange-2: #FFB86C;
+	--drx-color-orange-3: #E69F53;
+	--drx-color-yellow-1: #FFFFA5;
+	--drx-color-yellow-2: #F1FA8C;
+	--drx-color-yellow-3: #D8E173;
+	--drx-color-green-1: #69FF94;
+	--drx-color-green-2: #50FA7B;
+	--drx-color-green-3: #37EB62; 
+	--drx-color-cyan-1: #A4FFFF;
+	--drx-color-cyan-2: #8BE9FD;
+	--drx-color-cyan-3: #72D0E4;
+	--drx-color-blue-1: #6DCCFF;
+	--drx-color-blue-2: #54B3FF;
+	--drx-color-blue-3: #3B9AE6;
+	--drx-color-purple-1: #D6ACFF;
+	--drx-color-purple-2: #BD93F9;
+	--drx-color-purple-3: #A47AE0;
+	--drx-color-pink-1: #FF92DF;
+	--drx-color-pink-2: #FF79C6;
+	--drx-color-pink-3: #E660AD;
 
-  --color-base-00: var(--color-background-5);
-  --color-base-10: var(--color-background-3);
-  --color-base-20: var(--color-background-5);
-  --color-base-25: var(--color-background-5);
-  --color-base-30: var(--color-background-5);
-  --color-base-35: var(--color-background-2);
-  --color-base-40: var(--color-background-2);
-  --color-base-50: var(--color-background-1);
-  --color-base-60: blue;
-  --color-base-70: var(--color-foreground-3);
-  --color-base-100: var(--color-foreground-2);
+	color: var(--drx-color-text);
+	
+	--bold-color: var(--drx-color-accent);
+	--text-selection: var(--drx-color-overlay);
 
-  --hr-color: var(--color-background-1);
-  --nav-item-background-active: var(--color-accent);
-  --ribbon-background: blue;
-  --status-bar-background: transparent;
-  --table-header-background: var(--color-background-3);
-  --titlebar-background: var(--color-background-5);
+	--color-base-00: var(--drx-color-base);
+	--color-base-10: var(--drx-color-base);
+	--color-base-20: var(--drx-color-base);
+	--color-base-25: var(--drx-color-base);
+	--color-base-30: var(--drx-color-base);
+	--color-base-35: var(--drx-color-overlay);
+	--color-base-40: var(--drx-color-overlay);
+	--color-base-50: var(--drx-color-deactivate);
+	--color-base-60: red;
+	--color-base-70: var(--drx-color-subtext);
+	--color-base-100: var(--drx-color-text);
+
+	--tag-color: var(--drx-color-accent);
+
+	--link-color: var(--drx-color-accent);
+	--link-color-hover: var(--drx-color-important);
+	--link-external-color: var(--drx-color-accent);
+	--link-external-color-hover: var(--drx-color-important);
+	--link-unresolved-color: var(--drx-color-green-2);
+	--link-unresolved-decoration-color: var(--drx-color-red-2);
+
+	--hr-color: var(--drx-color-deactivate);
+	--nav-item-active: var(--drx-color-highlight);
+	--ribbon-background: var(--drx-color-surface);
+	--status-bar-background: var(--drx-color-surface);
+	--table-header-background: var(--drx-color-overlay);
+	--titlebar-background: var(--drx-color-base);
+
+	--code-normal: var(--drx-color-subtext);
+	--code-comment: var(--drx-color-comment);
+	--code-function: var(--drx-color-green-2);
+	--code-important: var(--drx-color-red-2);
+	--code-keyword: var(--drx-color-pink-2);
+	--code-operator: var(--drx-color-red-2);
+	--code-property: var(--drx-color-orange-2);
+	--code-string: var(--drx-color-yellow-2);
+	--code-tag: var(--drx-color-red-2);
+	--code-value: var(--drx-color-purple-2);
 }
 
-body.theme-dark.is-mobile {
-  --color-base-00: var(--color-background-5);
-  --color-base-10: var(--color-background-4);
-  --color-base-20: var(--color-background-3);
-}
-
+/* General application background */
 body.theme-dark {
-  background-color: var(--color-background-5);
+	background-color: var(--drx-color-base);
 }
 
-.theme-dark .workspace-split.mod-root .view-content {
-  background-color: var(--color-background-4);
-  box-shadow: 0 0 10px var(--color-shadow-3);
+/* Vault selection panel */
+.theme-dark .workspace-sidedock-vault-profile {
+	background-color: var(--drx-color-surface) !important;
 }
 
+/* Workspace panels */
+.theme-dark .workspace-leaf-content {
+	background-color: var(--drx-color-surface);
+}
+
+/* Styling for the status bar */
+.theme-dark .status-bar {
+	background-color: var(--drx-color-surface);
+}
+
+/* Navigation headers */
 .theme-dark .nav-header {
-  background-color: var(--color-background-4);
-  box-shadow: 0 0 10px var(--color-shadow-3);
+	background-color: var(--drx-color-base);
 }
 
-.theme-dark .nav-files-container {
-  background-color: var(--color-background-4);
-  box-shadow: 0 0 10px var(--color-shadow-3);
+/* Main text editing panel */
+.theme-dark .workspace-split.mod-root .view-content {
+	background-color: var(--drx-color-surface);
 }
 
-.theme-dark #calendar-container {
-  box-shadow: 0 0 10px var(--color-shadow-3);
-  background-color: var(--color-background-4);
+/* Markdown table body */
+.theme-dark .markdown-rendered tbody tr {
+	background: var(--drx-color-base);
 }
 
-.theme-dark .markdown-rendered thead tr {
-  background: var(--color-background-3);
+/* Fixes the title bar color issue in dark mode */
+.theme-dark .titlebar-button {
+	background-color: var(--drx-color-base);
 }
 
+/* Sets markdown links to cyan color */
+.theme-dark .markdown-source-view .cm-string.cm-url {
+	color: var(--drx-color-cyan-2);
+}
+
+/* Adds custom styling for input fields */
 .theme-dark textarea,
 .theme-dark input.metadata-input-text,
-.theme-dark input[type="date"],
-.theme-dark input[type="datetime-local"],
-.theme-dark input[type="text"],
-.theme-dark input[type="search"],
-.theme-dark input[type="email"],
-.theme-dark input[type="password"],
-.theme-dark input[type="number"] {
-  background-color: var(--color-background-4);
+.theme-dark input[type='date'],
+.theme-dark input[type='datetime-local'],
+.theme-dark input[type='text'],
+.theme-dark input[type='search'],
+.theme-dark input[type='email'],
+.theme-dark input[type='password'],
+.theme-dark input[type='number'] {
+	background-color: var(--drx-color-base);
 }
 
-.theme-dark .markdown-source-view .cm-string.cm-url {
-  color: var(--color-cyan-2);
-  background-color: var(--color-background-4);
-}
-
-/* == LIGHT THEME == */
+/* ============================ LIGHT THEME ========================== */
 
 body.theme-light {
-  --color-background-1: #f3f4f6;
-  --color-background-2: #e8e8ee;
-  --color-background-3: #dcdde5;
-  --color-background-4: #d0d2dc;
-  --color-background-5: #c4c7d4;
+	--drx-color-base: #dce0e8;
+	--drx-color-surface: #eff1f5;
+	--drx-color-overlay: #ccd0da;
+	--drx-color-highlight: #bcc0cc;
 
-  --color-foreground-1: #44475a;
-  --color-foreground-2: #353747;
-  --color-foreground-3: #282a36;
+	--drx-color-text: #4C4F69;
+	--drx-color-subtext: #5C5F77;
+	--drx-color-deactivate: #ACB0BE;
 
-  --color-shadow-1: #dcdde5;
-  --color-shadow-2: #c4c7d4;
-  --color-shadow-3: #b2b5c2;
+	--drx-color-comment: #6270A4;
 
-  color: var(--color-foreground-1);
+	--drx-color-accent: #EA76CB;
+	--drx-color-important: #EE95D7;
 
-  --bold-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --text-selection: hsla(var(--accent-h), var(--accent-s), 70%, 0.25);
+	--drx-color-red-1: #f2cdcd;
+	--drx-color-red-2: #d20f39;
+	--drx-color-red-3: #a30c2b;
+	--drx-color-orange-1: #f5d3ae;
+	--drx-color-orange-2: #e64553;
+	--drx-color-orange-3: #b33a42;
+	--drx-color-yellow-1: #f9e2af;
+	--drx-color-yellow-2: #df8e1d;
+	--drx-color-yellow-3: #b37417;
+	--drx-color-green-1: #d9e0d0;
+	--drx-color-green-2: #40a02b;
+	--drx-color-green-3: #2e7a20;
+	--drx-color-cyan-1: #cdd6f4;
+	--drx-color-cyan-2: #04a5e5;
+	--drx-color-cyan-3: #0378b3;
+	--drx-color-blue-1: #cddbf9;
+	--drx-color-blue-2: #1e66f5;
+	--drx-color-blue-3: #174db3;
+	--drx-color-purple-1: #e8def8;
+	--drx-color-purple-2: #8839ef;
+	--drx-color-purple-3: #662db3;
+	--drx-color-pink-1: #f5c2e7;
+	--drx-color-pink-2: #ea76cb;
+	--drx-color-pink-3: #b35a9d;
 
-  --color-base-00: var(--color-background-3);
-  --color-base-10: var(--color-background-2);
-  --color-base-20: var(--color-background-3);
-  --color-base-25: blue;
-  --color-base-30: var(--color-background-3);
-  --color-base-35: var(--color-background-5);
-  --color-base-40: var(--color-background-5);
-  --color-base-50: var(--color-foreground-1);
-  --color-base-60: green;
-  --color-base-70: var(--color-foreground-1);
-  --color-base-80: blue;
-  --color-base-90: blue;
-  --color-base-100: var(--color-foreground-3);
+	color: var(--drx-color-text);
+	
+	--bold-color: var(--drx-color-accent);
+	--text-selection: var(--drx-color-overlay);
 
-  --hr-color: var(--color-background-3);
-  --nav-item-background-active: var(--color-accent);
-  --ribbon-background: blue;
-  --status-bar-background: transparent;
-  --table-header-background: var(--color-background-3);
-  --titlebar-background: var(--color-background-3);
+	--color-base-00: var(--drx-color-base);
+	--color-base-10: var(--drx-color-base);
+	--color-base-20: var(--drx-color-base);
+	--color-base-25: var(--drx-color-base);
+	--color-base-30: var(--drx-color-base);
+	--color-base-35: var(--drx-color-overlay);
+	--color-base-40: var(--drx-color-overlay);
+	--color-base-50: var(--drx-color-deactivate);
+	--color-base-60: red;
+	--color-base-70: var(--drx-color-subtext);
+	--color-base-100: var(--drx-color-text);
+
+	--tag-color: var(--drx-color-accent);
+
+	--link-color: var(--drx-color-accent);
+	--link-color-hover: var(--drx-color-important);
+	--link-external-color: var(--drx-color-accent);
+	--link-external-color-hover: var(--drx-color-important);
+	--link-unresolved-color: var(--drx-color-green-2);
+	--link-unresolved-decoration-color: var(--drx-color-red-2);
+
+	--hr-color: var(--drx-color-deactivate);
+	--nav-item-active: var(--drx-color-highlight);
+	--ribbon-background: var(--drx-color-surface);
+	--status-bar-background: var(--drx-color-surface);
+	--table-header-background: var(--drx-color-overlay);
+	--titlebar-background: var(--drx-color-base);
+
+	--code-normal: var(--drx-color-subtext);
+	--code-comment: var(--drx-color-comment);
+	--code-function: var(--drx-color-green-2);
+	--code-important: var(--drx-color-red-2);
+	--code-keyword: var(--drx-color-pink-2);
+	--code-operator: var(--drx-color-red-2);
+	--code-property: var(--drx-color-orange-2);
+	--code-string: var(--drx-color-yellow-2);
+	--code-tag: var(--drx-color-red-2);
+	--code-value: var(--drx-color-purple-2);
 }
 
-body.theme-light.is-mobile {
-  --color-base-00: var(--color-background-5);
-  --color-base-10: var(--color-background-4);
-  --color-base-20: var(--color-background-3);
-}
-
+/* General application background */
 body.theme-light {
-  background-color: var(--color-background-3);
+	background-color: var(--drx-color-base);
 }
 
-.theme-light .workspace-split.mod-root .view-content {
-  background-color: var(--color-background-1);
+/* Vault selection panel */
+.theme-light .workspace-sidedock-vault-profile {
+	background-color: var(--drx-color-surface) !important;
 }
 
+/* Workspace panels */
+.theme-light .workspace-leaf-content {
+	background-color: var(--drx-color-surface);
+}
+
+/* Styling for the status bar */
+.theme-light .status-bar {
+	background-color: var(--drx-color-surface);
+}
+
+/* Navigation headers */
 .theme-light .nav-header {
-  background-color: var(--color-background-1);
+	background-color: var(--drx-color-base);
 }
 
-.theme-light .nav-files-container {
-  background-color: var(--color-background-1);
-  box-shadow: 0 0 10px var(--color-shadow-3);
+/* Main text editing panel */
+.theme-light .workspace-split.mod-root .view-content {
+	background-color: var(--drx-color-surface);
 }
 
-.theme-light #calendar-container {
-  box-shadow: 0 0 10px var(--color-shadow-3);
-  background-color: var(--color-background-1);
-}
-
+/* Markdown table body */
 .theme-light .markdown-rendered thead tr {
-  background: var(--color-background-3);
+	background-color: var(--drx-color-surface);
 }
 
+/* Fixes the title bar color issue in light mode */
+.theme-light .workspace-tab-header-container, .titlebar-button {
+	background-color: var(--drx-color-base);
+}
+
+/* Sets markdown links to blue color */
+.theme-light .markdown-source-view .cm-string.cm-url {
+	color: var(--drx-color-blue-2);
+	background-color: var(--drx-color-highlight);
+}
+
+/* Adds custom styling for input fields */
 .theme-light textarea,
 .theme-light input.metadata-input-text,
-.theme-light input[type="date"],
-.theme-light input[type="datetime-local"],
-.theme-light input[type="text"],
-.theme-light input[type="search"],
-.theme-light input[type="email"],
-.theme-light input[type="password"],
-.theme-light input[type="number"] {
-  background-color: var(--color-background-1);
+.theme-light input[type='date'],
+.theme-light input[type='datetime-local'],
+.theme-light input[type='text'],
+.theme-light input[type='search'],
+.theme-light input[type='email'],
+.theme-light input[type='password'],
+.theme-light input[type='number'] {
+	background-color: var(--drx-color-overlay);
 }
 
-.theme-light .markdown-source-view .cm-string.cm-url {
-  color: var(--color-blue-2);
-  background-color: var(--color-background-1);
+/* ========================== GENERAL STYLING ======================== */
+
+a {
+	color: var(--drx-color-accent) !important;
 }
 
-/* == GENERAL CLASSES == */
+a:hover {
+	color: var(--drx-color-important) !important;
+}
 
+/* Explicit H1 font size */
+h1 {
+	font-size: 2em;
+}
+
+/* Rounds the corners of all panels */
+.workspace-tab-container, .prompt {
+	margin: 10px;
+	border-radius: var(--drx-border-radius);
+}
+
+/* Styles header 1 in markdown with a underline */
+.HyperMD-header-1 {
+	border-bottom: 3px solid;
+	border-color: var(--drx-color-accent);
+	padding-bottom: 0.75rem !important;
+}
+
+/* Styles inline code blocks in markdown (text between ``) */
+.cm-s-obsidian span.cm-inline-code  {
+	color: var(--drx-color-subtext);
+}
+
+/* Styles the vault selection area at the bottom-right */
+.workspace-sidedock-vault-profile {
+	width: 94% !important;
+	margin: 10px;
+	border-radius: var(--drx-border-radius);
+	border: none;
+}
+
+/* Styles the status bar at the bottom-right */
+.status-bar {
+	border-radius: var(--drx-border-radius) 0px 0px 0px;
+	border: none;
+}
+
+/* Prevents layout issues when the writing panel is too small */
 .workspace-split.mod-root .view-content {
-  border-radius: 10px;
-  box-shadow: 0 0 10px var(--color-shadow-3);
-  transition:
-    margin 0.25s ease-out,
-    border-radius 0.25s ease-out,
-    width 0.25s ease-out;
+	overflow-y: scroll;
 }
 
+/* Adds rounded corners to navigation headers */
 .nav-header {
-  border-radius: 10px;
+	margin: 10px;
+	border-radius: var(--drx-border-radius);
 }
 
-.nav-files-container {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
+/* Styles the settings modal */
+.modal-container.mod-dim .modal {
+	border-radius: var(--drx-border-radius);
+	box-shadow: none;
 }
 
-.workspace-split.mod-root .view-content {
-  margin: 20px auto;
-  border-radius: 10px;
-  width: calc(100% - 2vw);
-  max-width: 1000px;
-  align-self: center;
-  overflow-y: scroll;
-  transition:
-    margin 0.25s ease-out,
-    border-radius 0.25s ease-out,
-    width 0.25s ease-out;
+/* Background color for the settings modal */
+.modal-bg {
+	background-color: var(--drx-color-highlight);
 }
 
-.nav-header {
-  margin: 10px;
-  border-radius: 10px;
-}
-
-#calendar-container {
-  padding: 1rem;
-  border-radius: 10px;
-}
-
-/* justify in reading mode */
+/* Justifies text in reading mode */
 .markdown-preview-view p {
-  text-align: justify;
-  text-justify: inter-word;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
-/* Main separator */
-
-body:not(.is-mobile) .horizontal-main-container {
-  padding-bottom: 16px;
-}
-
+/* Adds a border to the entire application */
 body:not(.is-mobile) .workspace {
-  margin-right: 16px;
-  margin-left: 16px;
-  position: relative;
-  overflow: visible;
+	position: relative;
+	overflow: visible;
+	padding: 8px;
 }
 
-/* Tables */
-
-body {
-  --table-width: 88cqw;
-}
-
-body:not(.table-width-obsidian-default)
-  .markdown-source-view.mod-cm6
-  .cm-table-widget
-  .table-wrapper,
-body:not(.table-width-obsidian-default)
-  :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview)
-  table {
-  width: 100% !important;
-}
-
+/* Enables container queries for markdown views */
 .markdown-source-view,
 .markdown-reading-view {
-  container-type: inline-size;
+	container-type: inline-size;
 }
 
-.table-width-customized
-  .markdown-source-view.mod-cm6.is-live-preview
-  .cm-content
-  > .cm-table-widget,
-.table-width-customized
-  .markdown-rendered
-  .markdown-preview-sizer
-  > div:has(> table) {
-  overflow: auto;
-  width: 200rem !important;
-  margin-left: calc((200rem - 100%) / -2) !important;
+/* Table width adjustments */
+body:not(.table-width-obsidian-default) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
+	width: 100% !important;
 }
 
-@media (max-width: 900px) {
-  body.theme-dark {
-    --status-bar-background: var(--color-background-3);
-  }
-
-  body.theme-light {
-    --status-bar-background: var(--color-background-3);
-  }
-
-  .workspace-split.mod-root .view-content {
-    border-radius: 0px;
-    margin: 0vh 0vw;
-    width: calc(100%);
-  }
-  body:not(.is-mobile) .horizontal-main-container {
-    padding-bottom: 0px;
-  }
-
-  body:not(.is-mobile) .workspace {
-    margin: 0px;
-  }
+/* Custom wide table styling */
+.table-width-customized .markdown-source-view.mod-cm6.is-live-preview .cm-content>.cm-table-widget,
+.table-width-customized .markdown-rendered .markdown-preview-sizer>div:has(>table) {
+	overflow: auto;
+	width: 200rem !important;
+	margin-left: calc(200rem - 100%) / -2) !important;
 }
+
+/* ============================= CALLOUTS ============================ */
+
+.theme-dark .callout[data-callout="todo"] {
+	background: var(--drx-color-red-2) !important;
+
+	a {
+		color: var(--drx-color-text) !important;
+	}
+	--bold-color: var(--drx-color-text);
+}
+
+.theme-light .cm-callout {
+	border-radius: var(--drx-border-radius);
+	box-shadow: 0 0.25rem 0.5rem var(--drx-color-base);
+}
+
+.theme-light .callout-title {
+	gap: 10px;
+	padding: 1rem;
+}
+
+.theme-light .callout {
+	padding: 0px
+}
+
+.theme-light .callout-content {
+	background: var(--drx-color-base) !important;
+	padding: 1rem;
+}
+
+.theme-light .cm-callout:hover {
+	border-radius: var(--drx-border-radius) !important;
+	box-shadow: 0 0.25rem 0.5rem var(--drx-color-base) !important;
+}
+
+.theme-light .callout {
+	background: #6272A43F !important;
+}
+
+.theme-light .callout[data-callout="todo"] {
+	background: var(--drx-color-red-2) !important;
+	color: white !important;
+
+	.callout-content {
+		color: var(--drx-color-text) !important;
+	}
+
+	a {
+		color: white !important;
+	}
+}
+
+.theme-light .callout[data-callout="important"] {
+	background: #BD93F93F !important;
+}
+
+.theme-light .callout[data-callout="example"] {
+	background: #FF79C63F !important;
+}
+
+.theme-light .callout[data-callout="summary"] {
+	background: #8BE9FD3F !important;
+}
+
+.theme-light .callout[data-callout="tip"] {
+	background: #8BE9FD3F !important;
+}
+
+.theme-light .callout[data-callout="bug"] {
+	background: #FF55553F !important;
+}
+
+.theme-light .callout[data-callout="error"] {
+	background: #FF55553F !important;
+}
+
+.theme-light .callout[data-callout="fail"] {
+	background: #FF55553F !important;
+}
+
+.theme-light .callout[data-callout="quote"] {
+	background: #54B3FF3F !important;
+}
+
+.theme-light .callout[data-callout="success"] {
+	background: #50FA7B3F !important;
+}
+
+.theme-light .callout[data-callout="question"] {
+	background: #FFB86C3F !important;
+}
+
+.theme-light .callout[data-callout="warning"] {
+	background: #FFB86C3F !important;
+}
+
+.callout[data-callout="example"] {
+	--bold-color: var(--drx-color-pink-2);
+}
+
+.callout[data-callout="summary"] {
+	--bold-color: var(--drx-color-cyan-2);
+}
+
+.callout[data-callout="tip"] {
+	--bold-color: var(--drx-color-cyan-2);
+}
+
+.callout[data-callout="bug"] {
+	--bold-color: var(--drx-color-red-2);
+}
+
+.callout[data-callout="error"] {
+	--bold-color: var(--drx-color-red-2);
+}
+
+.callout[data-callout="fail"] {
+	--bold-color: var(--drx-color-red-2);
+}
+
+.callout[data-callout="quote"] {
+	--bold-color: var(--drx-color-green-2);
+}
+
+.callout[data-callout="success"] {
+	--bold-color: var(--drx-color-green-2);
+}
+
+.callout[data-callout="question"] {
+	--bold-color: var(--drx-color-orange-2);
+}
+
+.callout[data-callout="warning"] {
+	--bold-color: var(--drx-color-orange-2);
+}
+
+/* ============================ PRINTING ============================= */
 
 @media print {
-  .theme-light {
-    --blockquote-background-color: red;
-    --code-background: var(--color-background-2);
-    --table-header-background: blue;
-  }
+
+	.internal-embed{
+		margin-left:-30px;
+	}
+
+	body.theme-light {
+		--color-base-10: #E9E9ED;
+		--color-base-20: #F4F4F6;
+	}
+
+	h2, h3, h4, h5, h6 {
+		page-break-after: avoid;
+	}
+
+	pre, blockquote {
+		page-break-inside: avoid;
+	}
+
+	.callout {
+		page-break-inside: avoid;
+	}
+
+	.theme-light .cm-callout {
+		border-radius: 10px !important;
+		border: 2px solid !important;
+		border-color: #C7C8D1 !important;
+		box-shadow: 0 0 8px #DDDDE3 !important;
+	}
+
+	.theme-light .callout-content {
+		background: #F4F4F6 !important;
+	}
+}
+
+/* ======================== IMAGES AND MEDIA ========================= */
+
+/* Left aligned images based on alt text */
+img[alt*="left"] {
+	float:left;
+	clear:left;
+	margin-right: 2rem;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+/* Right aligned images based on alt text */
+img[alt*="right"] {
+	float:right;
+	clear:right;
+	margin-left: 1rem;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+/* Center aligned images based on alt text */
+img[alt*="center"],img[alt*="centre"] {
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	max-height: 400px;
 }

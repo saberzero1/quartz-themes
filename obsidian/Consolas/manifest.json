@@ -1,8 +1,7 @@
 {
-  "name": "Consolas",
-  "version": "1.0.5",
-  "minAppVersion": "1.4.16",
-  "author": "Pinei",
-  "authorUrl": "https://github.com/pinei",
-  "license": { "name": "Apache License 2.0", "spdx_id": "Apache-2.0" }
+	"name": "Consolas",
+	"version": "1.0.6",
+	"minAppVersion": "1.4.16",
+	"author": "Pinei",
+	"authorUrl": "https://github.com/pinei"
 }

@@ -1,7 +1,6 @@
 {
-  "name": "Purple Aurora",
-  "version": "0.0.0",
-  "minAppVersion": "0.16.0",
-  "author": "<Serice",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+    "name": "Purple Aurora",
+    "version": "0.0.0",
+    "minAppVersion": "0.16.0",
+    "author": "<Serice"
 }

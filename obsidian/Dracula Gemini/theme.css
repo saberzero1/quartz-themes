@@ -29,9 +29,7 @@ body {
 }
 
 body.theme-dark {
-  --color-base-00: var(
-    --color-dracula-background
-  ); /* a.k.a. hsl(231, 15%, 18%) */
+  --color-base-00: var(--color-dracula-background); /* a.k.a. hsl(231, 15%, 18%) */
   --color-base-10: hsl(231, 15%, 22%);
   --color-base-20: hsl(231, 15%, 24%);
   --color-base-25: hsl(231, 15%, 27%);
@@ -41,9 +39,7 @@ body.theme-dark {
   --color-base-50: hsl(231, 15%, 50%);
   --color-base-60: hsl(231, 15%, 65%);
   --color-base-70: hsl(231, 15%, 84%);
-  --color-base-100: var(
-    --color-dracula-foreground
-  ); /* a.k.a. hsl(60, 30%, 96%) */
+  --color-base-100: var(--color-dracula-foreground); /* a.k.a. hsl(60, 30%, 96%) */
 
   --text-selection: var(--color-dracula-selection);
 
@@ -52,21 +48,9 @@ body.theme-dark {
 }
 
 body.theme-dark.is-mobile {
-  --color-base-00: hsl(
-    231,
-    15%,
-    12%
-  ); /* 6pp lower than Desktop, default was #000000 */
-  --color-base-10: hsl(
-    231,
-    15%,
-    17%
-  ); /* 5pp lower than Desktop, default was #121212 */
-  --color-base-20: hsl(
-    231,
-    15%,
-    20%
-  ); /* 4pp lower than Desktop, default was #1e1e1e */
+  --color-base-00: hsl(231, 15%, 12%); /* 6pp lower than Desktop, default was #000000 */
+  --color-base-10: hsl(231, 15%, 17%); /* 5pp lower than Desktop, default was #121212 */
+  --color-base-20: hsl(231, 15%, 20%); /* 4pp lower than Desktop, default was #1e1e1e */
 }
 
 /*
@@ -88,9 +72,7 @@ body {
 /* Empty line inside the blockquote */
 .markdown-source-view .HyperMD-quote:has(> .cm-formatting-quote:only-child) {
   height: var(--empty-line-height);
-  line-height: var(
-    --empty-line-height
-  ); /* to vertically align the lonely `>` in the otherwise empty blockquote line */
+  line-height: var(--empty-line-height); /* to vertically align the lonely `>` in the otherwise empty blockquote line */
 }
 
 .markdown-preview-view blockquote {
@@ -128,21 +110,19 @@ body {
 */
 
 body {
-  --code-size: var(
-    --font-small
-  ); /* `small` is a bit bigger than code's default `smaller` */
+  --code-size: var(--font-small); /* `small` is a bit bigger than code's default `smaller` */
 
-  --code-normal: var(--text-muted); /* --text-muted */
-  --code-comment: var(--color-dracula-comment); /* --text-faint */
-  --code-function: var(--color-dracula-green); /* --color-yellow */
-  --code-important: var(--color-dracula-red); /* --color-orange */
-  --code-keyword: var(--color-dracula-pink); /* --color-pink */
-  --code-operator: var(--color-dracula-foreground); /* --color-red */
-  --code-property: var(--color-dracula-orange); /* --color-cyan */
-  --code-punctuation: var(--text-muted); /* --text-muted */
-  --code-string: var(--color-dracula-yellow); /* --color-green */
-  --code-tag: var(--color-dracula-red); /* --color-red */
-  --code-value: var(--color-dracula-purple); /* --color-purple */
+  --code-normal:      var(--text-muted);                /* --text-muted */
+  --code-comment:     var(--color-dracula-comment);     /* --text-faint */
+  --code-function:    var(--color-dracula-green);       /* --color-yellow */
+  --code-important:   var(--color-dracula-red);         /* --color-orange */
+  --code-keyword:     var(--color-dracula-pink);        /* --color-pink */
+  --code-operator:    var(--color-dracula-foreground);  /* --color-red */
+  --code-property:    var(--color-dracula-orange);      /* --color-cyan */
+  --code-punctuation: var(--text-muted);                /* --text-muted */
+  --code-string:      var(--color-dracula-yellow);      /* --color-green */
+  --code-tag:         var(--color-dracula-red);         /* --color-red */
+  --code-value:       var(--color-dracula-purple);      /* --color-purple */
 }
 
 .markdown-source-view .HyperMD-codeblock-begin,
@@ -257,50 +237,26 @@ body {
 
 /* Hanging prefixes (### is outside in the text margin) */
 .markdown-source-view:not(.is-live-preview) .HyperMD-header-1,
-.markdown-source-view.is-live-preview .cm-active.HyperMD-header-1 {
-  text-indent: -0.5184em;
-}
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-1 { text-indent: -0.5184em; }
 .markdown-source-view:not(.is-live-preview) .HyperMD-header-2,
-.markdown-source-view.is-live-preview .cm-active.HyperMD-header-2 {
-  text-indent: -0.9014em;
-}
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-2 { text-indent: -0.9014em; }
 .markdown-source-view:not(.is-live-preview) .HyperMD-header-3,
-.markdown-source-view.is-live-preview .cm-active.HyperMD-header-3 {
-  text-indent: -1.3004em;
-}
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-3 { text-indent: -1.3004em; }
 .markdown-source-view:not(.is-live-preview) .HyperMD-header-4,
-.markdown-source-view.is-live-preview .cm-active.HyperMD-header-4 {
-  text-indent: -1.7116em;
-}
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-4 { text-indent: -1.7116em; }
 .markdown-source-view:not(.is-live-preview) .HyperMD-header-5,
-.markdown-source-view.is-live-preview .cm-active.HyperMD-header-5 {
-  text-indent: -2.1396em;
-}
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-5 { text-indent: -2.1396em; }
 .markdown-source-view:not(.is-live-preview) .HyperMD-header-6,
-.markdown-source-view.is-live-preview .cm-active.HyperMD-header-6 {
-  text-indent: -2.5838em;
-}
+.markdown-source-view.is-live-preview .cm-active.HyperMD-header-6 { text-indent: -2.5838em; }
 
 /* Empty line after headers, to align Preview with Source (sizing looks
    tricky, but it's just to make the padding the same size in pixels) */
-.markdown-preview-view h1 {
-  margin-bottom: calc(var(--empty-line-height) / 2);
-}
-.markdown-preview-view h2 {
-  margin-bottom: calc(var(--empty-line-height) / 1.8);
-}
-.markdown-preview-view h3 {
-  margin-bottom: calc(var(--empty-line-height) / 1.6);
-}
-.markdown-preview-view h4 {
-  margin-bottom: calc(var(--empty-line-height) / 1.4);
-}
-.markdown-preview-view h5 {
-  margin-bottom: calc(var(--empty-line-height) / 1.2);
-}
-.markdown-preview-view h6 {
-  margin-bottom: calc(var(--empty-line-height) / 1);
-}
+.markdown-preview-view h1 { margin-bottom: calc(var(--empty-line-height) / 2); }
+.markdown-preview-view h2 { margin-bottom: calc(var(--empty-line-height) / 1.8); }
+.markdown-preview-view h3 { margin-bottom: calc(var(--empty-line-height) / 1.6); }
+.markdown-preview-view h4 { margin-bottom: calc(var(--empty-line-height) / 1.4); }
+.markdown-preview-view h5 { margin-bottom: calc(var(--empty-line-height) / 1.2); }
+.markdown-preview-view h6 { margin-bottom: calc(var(--empty-line-height) / 1); }
 
 /*
  ********************************************************************************************************************
@@ -338,18 +294,12 @@ body {
   --list-indent-spacing: 0.125em; /* +2px for every space in `    ` */
   --list-ul-bullet-spacing: 0.0805em; /* width of `- ` is 11.42px by default, we make it 14px */
   --list-ol-bullet-width: 1.75em; /* width of `99. ` is 28.16px; we set it to 28px, even for `1. ` */
-  --list-checkbox-margin-left: calc(
-    var(--checkbox-size) * 0.385
-  ); /* match checkbox width to `[x]`; only affects Preview, doesn't affect Source */
-  --list-checkbox-margin-right: calc(
-    var(--checkbox-size) * 0.685
-  ); /* match checkbox width to `[x]`; only affects Preview, doesn't affect Source */
+  --list-checkbox-margin-left: calc(var(--checkbox-size) * 0.385); /* match checkbox width to `[x]`; only affects Preview, doesn't affect Source */
+  --list-checkbox-margin-right: calc(var(--checkbox-size) * 0.685); /* match checkbox width to `[x]`; only affects Preview, doesn't affect Source */
 
   /* Obsidian vars */
   --list-spacing: 0; /* reset vertical padding on list items */
-  --list-indent: calc(
-    1.046875em + 4 * var(--list-indent-spacing)
-  ); /* 16.75px + 8px, the width of 4 spaces */
+  --list-indent: calc(1.046875em + 4 * var(--list-indent-spacing)); /* 16.75px + 8px, the width of 4 spaces */
 }
 
 /* Source UL+OL list items */
@@ -405,12 +355,8 @@ body {
 /* Preview UL-task top-level lists */
 .markdown-preview-view :not(li) > ul.contains-task-list {
   --list-ul-bullet-width: 0.875em; /* 14px, the width of `- `, hopefully; see declaration of --list-ul-bullet-spacing above */
-  --list-checkbox-width: var(--list-checkbox-margin-left) +
-    var(--checkbox-size) + var(--list-checkbox-margin-right);
-  margin-left: calc(
-    var(--list-ul-bullet-width) + var(--list-checkbox-width) -
-      var(--list-indent)
-  );
+  --list-checkbox-width: var(--list-checkbox-margin-left) + var(--checkbox-size) + var(--list-checkbox-margin-right);
+  margin-left: calc(var(--list-ul-bullet-width) + var(--list-checkbox-width) - var(--list-indent));
 }
 
 /* Preview OL top-level lists */
@@ -426,9 +372,7 @@ body {
 
 /* Preview UL task checkbox */
 .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
-  margin-inline-start: calc(
-    -1 * (var(--checkbox-size) + var(--list-checkbox-margin-right))
-  );
+  margin-inline-start: calc(-1 * (var(--checkbox-size) + var(--list-checkbox-margin-right)));
   margin-right: var(--list-checkbox-margin-right);
 }
 
@@ -455,9 +399,7 @@ ol > li.task-list-item[data-task="X"] {
 /* Empty line in Source is a separator, and should look smaller than a line with text */
 .markdown-source-view .cm-line:has(> br:only-child) {
   height: var(--empty-line-height);
-  line-height: var(
-    --empty-line-height
-  ); /* to vertically align the text cursor in the empty line */
+  line-height: var(--empty-line-height); /* to vertically align the text cursor in the empty line */
 }
 
 /* Empty line after paragraphs, to align Preview with Source */
@@ -530,9 +472,7 @@ body {
 }
 
 /* Bottom formatting row */
-.markdown-source-view
-  .cm-line:has(> .cm-hmd-frontmatter)
-  + .cm-line:has(> .cm-hmd-frontmatter.cm-def) {
+.markdown-source-view .cm-line:has(> .cm-hmd-frontmatter) + .cm-line:has(> .cm-hmd-frontmatter.cm-def) {
   border-radius: 0 0 var(--radius-s) var(--radius-s);
 }
 

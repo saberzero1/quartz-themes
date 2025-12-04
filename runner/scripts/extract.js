@@ -16,12 +16,12 @@ import {
   sanitizeFilenamePreservingEmojis as sanitize,
 } from "../../util/util.mjs";
 
-const VERSION = "1.10.3";
-const INSTALLER_VERSION = "1.10.3";
+const VERSION = "1.10.6";
+const INSTALLER_VERSION = "1.10.6";
 
 let testingMode = false;
 testingMode = true;
-const testingTheme = "maple";
+const testingTheme = "z";
 
 const cacheDir = resolve(".obsidian-cache");
 const themeList = readdirSync("./runner/vault/.obsidian/themes").filter(

@@ -1,10 +1,9 @@
 {
   "name": "flexcyon",
-  "repo": "bladeacer/flexcyon",
-  "version": "0.3.0",
+  "version": "1.2.1",
   "minAppVersion": "1.6.3",
   "author": "bladeacer",
   "screenshot": "./docs/dark.png",
-  "modes": ["dark"],
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+  "modes": ["light", "dark"],
+  "fundingUrl": "https://github.com/sponsors/bladeacer"
 }

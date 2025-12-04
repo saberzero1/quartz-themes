@@ -1,142 +1,622 @@
+/* @settings
+name: Theme - Rift
+id: obsidian-theme-rift
+settings:
+    -   id: obsidian-theme-rift-core-config
+        title: Core settings
+        type: heading
+        level: 2
+    -   id: workspace-ribbon-hide
+        title: Hidden ribbon
+        description: If set to true, the ribbon at the left will be hidden, else if set to false, the ribbon at the left will be displayed.
+        type: class-toggle
+
+    -   id: obsidian-theme-rift-hsl
+        title: Accent colour
+        type: heading
+        level: 2
+    -   id: accent-h
+        title: "Hue"
+        type: variable-number-slider
+        default: 160
+        min: 0
+        max: 255
+        step: 1
+    -   id: accent-s
+        title: "Saturation"
+        type: variable-text
+        default: 20%
+    -   id: accent-l
+        title: "Lightness"
+        type: variable-text
+        default: 45%
+
+    -   id: obsidian-theme-rift-typography
+        title: Typography
+        type: heading
+        level: 2
+    -   id: obsidian-theme-rift-heading
+        title: Heading
+        type: heading
+        level: 3
+    -   id: h1-color
+        title: H1
+        description: 'Define the colour used for H1.'
+        type: variable-select
+        default: var(--h1-default)
+        options:
+            - label: Default
+              value: var(--h1-default)
+            - label: Red
+              value: var(--h1-red)
+            - label: Orange
+              value: var(--h1-orange)
+            - label: Yellow
+              value: var(--h1-yellow)
+            - label: Green
+              value: var(--h1-green)
+            - label: Cyan
+              value: var(--h1-cyan)
+            - label: Blue
+              value: var(--h1-blue)
+            - label: Purple
+              value: var(--h1-purple)
+            - label: Pink
+              value: var(--h1-pink)
+    -   id: h2-color
+        title: H2
+        description: 'Define the colour used for H2.'
+        type: variable-select
+        default: var(--h2-default)
+        options:
+            - label: Default
+              value: var(--h2-default)
+            - label: Red
+              value: var(--h2-red)
+            - label: Orange
+              value: var(--h2-orange)
+            - label: Yellow
+              value: var(--h2-yellow)
+            - label: Green
+              value: var(--h2-green)
+            - label: Cyan
+              value: var(--h2-cyan)
+            - label: Blue
+              value: var(--h2-blue)
+            - label: Purple
+              value: var(--h2-purple)
+            - label: Pink
+              value: var(--h2-pink)
+    -   id: h3-color
+        title: H3
+        description: 'Define the colour used for H3.'
+        type: variable-select
+        default: var(--h3-default)
+        options:
+            - label: Default
+              value: var(--h3-default)
+            - label: Red
+              value: var(--h3-red)
+            - label: Orange
+              value: var(--h3-orange)
+            - label: Yellow
+              value: var(--h3-yellow)
+            - label: Green
+              value: var(--h3-green)
+            - label: Cyan
+              value: var(--h3-cyan)
+            - label: Blue
+              value: var(--h3-blue)
+            - label: Purple
+              value: var(--h3-purple)
+            - label: Pink
+              value: var(--h3-pink)
+    -   id: h4-color
+        title: H4
+        description: 'Define the colour used for H4.'
+        type: variable-select
+        default: var(--h4-default)
+        options:
+            - label: Default
+              value: var(--h4-default)
+            - label: Red
+              value: var(--h4-red)
+            - label: Orange
+              value: var(--h4-orange)
+            - label: Yellow
+              value: var(--h4-yellow)
+            - label: Green
+              value: var(--h4-green)
+            - label: Cyan
+              value: var(--h4-cyan)
+            - label: Blue
+              value: var(--h4-blue)
+            - label: Purple
+              value: var(--h4-purple)
+            - label: Pink
+              value: var(--h4-pink)
+    -   id: h5-color
+        title: H5
+        description: 'Define the colour used for H5.'
+        type: variable-select
+        default: var(--h5-default)
+        options:
+            - label: Default
+              value: var(--h5-default)
+            - label: Red
+              value: var(--h5-red)
+            - label: Orange
+              value: var(--h5-orange)
+            - label: Yellow
+              value: var(--h5-yellow)
+            - label: Green
+              value: var(--h5-green)
+            - label: Cyan
+              value: var(--h5-cyan)
+            - label: Blue
+              value: var(--h5-blue)
+            - label: Purple
+              value: var(--h5-purple)
+            - label: Pink
+              value: var(--h5-pink)
+    -   id: h6-color
+        title: H6
+        description: 'Define the colour used for H6.'
+        type: variable-select
+        default: var(--h6-default)
+        options:
+            - label: Default
+              value: var(--h6-default)
+            - label: Red
+              value: var(--h6-red)
+            - label: Orange
+              value: var(--h6-orange)
+            - label: Yellow
+              value: var(--h6-yellow)
+            - label: Green
+              value: var(--h6-green)
+            - label: Cyan
+              value: var(--h6-cyan)
+            - label: Blue
+              value: var(--h6-blue)
+            - label: Purple
+              value: var(--h6-purple)
+            - label: Pink
+              value: var(--h6-pink)
+    -   id: obsidian-theme-rift-regular-text
+        title: 'Regular text'
+        type: heading
+        level: 3
+    -   id: text-accent
+        title: 'Text accent'
+        description: 'Define the colour used for accented text.'
+        type: variable-select
+        default: var(--color-green)
+        options:
+            - label: Red
+              value: var(--color-red)
+            - label: Orange
+              value: var(--color-orange)
+            - label: Yellow
+              value: var(--color-yellow)
+            - label: Green
+              value: var(--color-green)
+            - label: Cyan
+              value: var(--color-cyan)
+            - label: Blue
+              value: var(--color-blue)
+            - label: Purple
+              value: var(--color-purple)
+            - label: Pink
+              value: var(--color-pink)
+    -   id: text-accent-hover
+        title: 'Text accent - Hover'
+        description: 'Define the colour used for accented text when they are hovered.'
+        type: variable-select
+        default: var(--color-green-hover)
+        options:
+            - label: Red
+              value: var(--color-red-hover)
+            - label: Orange
+              value: var(--color-orange-hover)
+            - label: Yellow
+              value: var(--color-yellow-hover)
+            - label: Green
+              value: var(--color-green-hover)
+            - label: Cyan
+              value: var(--color-cyan-hover)
+            - label: Blue
+              value: var(--color-blue-hover)
+            - label: Purple
+              value: var(--color-purple-hover)
+            - label: Pink
+              value: var(--color-pink-hover)
+    -   id: bold-color
+        title: 'Bold colour'
+        description: 'Define the colour used for bold text.'
+        type: variable-select
+        default: var(--color-yellow)
+        options:
+            - label: Red
+              value: var(--color-red)
+            - label: Orange
+              value: var(--color-orange)
+            - label: Yellow
+              value: var(--color-yellow)
+            - label: Green
+              value: var(--color-green)
+            - label: Cyan
+              value: var(--color-cyan)
+            - label: Blue
+              value: var(--color-blue)
+            - label: Purple
+              value: var(--color-purple)
+            - label: Pink
+              value: var(--color-pink)
+    -   id: italic-color
+        title: 'Italic colour'
+        description: 'Define the colour used for italic text.'
+        type: variable-select
+        default: var(--color-orange)
+        options:
+            - label: Red
+              value: var(--color-red)
+            - label: Orange
+              value: var(--color-orange)
+            - label: Yellow
+              value: var(--color-yellow)
+            - label: Green
+              value: var(--color-green)
+            - label: Cyan
+              value: var(--color-cyan)
+            - label: Blue
+              value: var(--color-blue)
+            - label: Purple
+              value: var(--color-purple)
+            - label: Pink
+              value: var(--color-pink)
+*/
+
+:root {
+    --settings-related-modal-width: 80%;
+}
+
 .theme-dark {
-  /********************************************/
-  /* General settings */
-  /********************************************/
-  --background-primary: #1a1b26;
-  --background-secondary: #171722;
-  --titlebar-background: #1a1b26;
-  --titlebar-background-focused: #171722;
+    /**************/
+    /* Background */
+    /**************/
+    --background-primary: #2B2F3A;
+    --background-primary-alt: #303543;
+    --background-secondary: #3A3F4C;
+    --background-secondary-alt: #444B5A;
 
-  --color-accent: #c23ba8;
-  --color-accent-hovered: #cc5fb6;
+    /********/
+    /* Text */
+    /********/
+    --text-normal: #E5E7EB;
+    --text-muted: #9CA3AF;
+    --text-faint: #6B7280;
+    --text-accent: var(--color-green);
+    --text-accent-hover: var(--color-green-hover);
+    --bold-color: var(--color-yellow);
+    --italic-color: var(--color-orange);
 
-  --link-color: var(--color-accent);
-  --link-color-hover: var(--color-accent-hovered);
-  --link-external-color: var(--color-accent);
-  --link-external-color-hover: var(--color-accent-hovered);
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-hovered);
+    /**********/
+    /* Accent */
+    /**********/
+    --accent-h: 160;
+    --accent-s: 20%;
+    --accent-l: 45%;
 
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-hovered);
+    /***********/
+    /* Colours */
+    /***********/
+    --color-red: #C06C6C;
+    --color-red-hover: #E08B8B;
+    --color-red-rgb: 192, 108, 108;
+    --color-red-hover-rgb: 224, 139, 139;
+    --h1-red: #EBDCDC;
+    --h2-red: #D9A9A9;
+    --h3-red: #C58686;
+    --h4-red: #A86868;
+    --h5-red: #8E5050;
+    --h6-red: #693C3C;
 
-  /********************************************/
-  /* Text related - Interface */
-  /********************************************/
-  /*  */
-  --text-muted: #999999;
-  /*  */
-  --text-faint: #999999;
+    --color-orange: #CC946B;
+    --color-orange-hover: #E9B286;
+    --color-orange-rgb: 204, 148, 107;
+    --color-orange-hover-rgb: 233, 178, 134;
+    --h1-orange: #F0E3D7;
+    --h2-orange: #DCB897;
+    --h3-orange: #C99570;
+    --h4-orange: #A87452;
+    --h5-orange: #875C3E;
+    --h6-orange: #644531;
 
-  /********************************************/
-  /* Text related - Non interface*/
-  /********************************************/
-  --text-error: rgb(244, 105, 188);
-  /* Basic text color */
-  --text-normal: #ffffff;
-  /* Bold text color */
-  --bold-color: #ff4fdc;
-  /* Bold text weight */
-  --bold-weight: 700;
-  /* Italic text color */
-  --italic-color: #f93fff;
+    --color-yellow: #D8C080;
+    --color-yellow-hover: #EFDC9E;
+    --color-yellow-rgb: 216, 192, 128;
+    --color-yellow-hover-rgb: 239, 220, 158;
+    --h1-yellow: #F3EED4;
+    --h2-yellow: #E1D08F;
+    --h3-yellow: #CDB45E;
+    --h4-yellow: #AE9542;
+    --h5-yellow: #887337;
+    --h6-yellow: #66572B;
 
-  /********************************************/
-  /* Header related */
-  /********************************************/
-  /* Header related color */
-  --h1-color: #c23ba8;
-  --h2-color: #cb5cb3;
-  --h3-color: #d379be;
-  --h4-color: #da94c9;
-  --h5-color: #e0aed4;
-  --h6-color: #e5c8de;
+    --color-green: #5E9A84;
+    --color-green-hover: #8FC9B0;
+    --color-green-rgb: 94, 154, 132;
+    --color-green-hover-rgb: 143, 201, 176;
+    --h1-green: #DDE8E3;
+    --h2-green: #A7C8B7;
+    --h3-green: #7FAE98;
+    --h4-green: #5C8F77;
+    --h5-green: #476E5D;
+    --h6-green: #345147;
 
-  /********************************************/
-  /* Inline Title related */
-  /* DISCLAIMER
-        You need to enable Inline Title.
-        Follow this path through Obsidian Settings Panel :
-        Settings > Appearance > Show Inline Title.
-    */
-  /********************************************/
-  /* Inline Title color */
-  --inline-title-color: var(--color-accent);
-  /* Inline Title font */
-  /* --inline-title-font: ; */
-  /* Inline Title line height */
-  /* --inline-title-line-height: ; */
-  /* Inline Title size */
-  /* --inline-title-size:    ; */
+    --color-cyan: #5EA8A8;
+    --color-cyan-hover: #87D0D0;
+    --color-cyan-rgb: 94, 168, 168;
+    --color-cyan-hover-rgb: 135, 208, 208;
+    --h1-cyan: #D9ECEC;
+    --h2-cyan: #A7D1D1;
+    --h3-cyan: #7FB7B7;
+    --h4-cyan: #5C9B9B;
+    --h5-cyan: #477979;
+    --h6-cyan: #355E5E;
 
-  /********************************************/
-  /* Code related */
-  /********************************************/
-  --code-background: #000000;
-  --code-normal: #ffffff;
-  --code-comment: #ffffff;
+    --color-blue: #5E89B4;
+    --color-blue-hover: #89B3E0;
+    --color-blue-rgb: 94, 137, 180;
+    --color-blue-hover-rgb: 137, 179, 224;
+    --h1-blue: #DCE5EE;
+    --h2-blue: #A9C0DA;
+    --h3-blue: #7D9EC2;
+    --h4-blue: #5E81A3;
+    --h5-blue: #496783;
+    --h6-blue: #384D66;
 
-  /********************************************/
-  /* Graph View */
-  /********************************************/
-  /* Colour used for the text under each node. */
-  --graph-text: rgb(204, 204, 204);
-  /* Colour used for a file node */
-  --graph-node: var(--color-accent-hovered);
-  /* Colour used for a tag node */
-  --graph-node-tag: #5dc1d2;
-  /* Colour used for an attachment node */
-  --graph-node-attachment: #d669bc;
-  /* Colour used for a node that the file it is pointing to isn't created. */
-  --graph-node-unresolved: #9e8aff;
-  /* Colour used for a connection between two nodes. */
-  --graph-line: #a54aa8;
-  /* Colour used as an outline for the node when it get hovered. */
-  --graph-node-focused: #a54aa8;
+    --color-purple: #8970B0;
+    --color-purple-hover: #B094E3;
+    --color-purple-rgb: 137, 112, 176;
+    --color-purple-hover-rgb: 176, 148, 227;
+    --h1-purple: #E3DDF0;
+    --h2-purple: #BFB0DA;
+    --h3-purple: #9D8BC4;
+    --h4-purple: #7E6BA8;
+    --h5-purple: #615384;
+    --h6-purple: #473D63;
+
+    --color-pink: #B17CA6;
+    --color-pink-hover: #D79DC9;
+    --color-pink-rgb: 177, 124, 166;
+    --color-pink-hover-rgb: 215, 157, 201;
+    --h1-pink: #F0E3EC;
+    --h2-pink: #D6B4D2;
+    --h3-pink: #C18EBE;
+    --h4-pink: #A86EA5;
+    --h5-pink: #845683;
+    --h6-pink: #5F3D5F;
+
+    /**********/
+    /* Titles */
+    /**********/
+    --h1-default: #D3E8E7;
+    --h2-default: #A1C6CF;
+    --h3-default: #8ABCAF;
+    --h4-default: #6AA891;
+    --h5-default: #7E988A;
+    --h6-default: #5C7D6F;
+
+    --h1-color: var(--h1-default);
+    --h2-color: var(--h2-default);
+    --h3-color: var(--h3-default);
+    --h4-color: var(--h4-default);
+    --h5-color: var(--h5-default);
+    --h6-color: var(--h6-default);
 }
 
-/* Light theme will be develop once the base features of it's dark equivalent are developed.  */
-/* Rappel à moi-même : ne pas oublier de changer les possibilites de modes d'affichage (light/dark). */
-/* .theme-light {
-    --background-primary: #c9e6da;
-    --background-secondary: #aecfc1;
-    --titlebar-background: #c9e6da;
-    --titlebar-background-focused: #aecfc1;
+.theme-light {
+    /**************/
+    /* Background */
+    /**************/
+    --background-primary: #E6EBF0;
+    --background-primary-rgb: 230, 235, 240;
+    --background-primary-alt: #D9E0E6;
+    --background-primary-alt-rgb: 217, 224, 230;
+    --background-secondary: #CBD6DD;
+    --background-secondary-rgb: 203, 214, 221;
+    --background-secondary-alt: #B7C2CB;
+    --background-secondary-alt-rgb: 183, 194, 203;
 
-    --link-color: #C04CFD;
-    --link-color-hover: #ae33f0;
-    --link-external-color: #C04CFD;
-    --link-external-color-hover: #ae33f0;
-    --text-accent: #C04CFD;
-    --text-accent-hover: #ae33f0;
+    /******************************/
+    /* Divider & Horizontal rules */
+    /******************************/
+    --divider-color: var(--background-primary-alt);
+    --divider-width: 1px;
+    --hr-color: var(--background-primary-alt);
+    --hr-thickness: 1px;
 
-    --color-accent: #C04CFD;
-    --interactive-accent: #C04CFD;
-    --interactive-accent-hover: #ae33f0;
+    /********/
+    /* Text */
+    /********/
+    --text-normal: #2B2F3A;
+    --text-muted: #4B5563;
+    --text-faint: #6B7280;
+    --text-accent: var(--color-green);
+    --text-accent-hover: var(--color-green-hover);
+    --bold-color: var(--color-yellow);
+    --italic-color: var(--color-orange);
 
-    --text-normal: #000000;
+    /**********/
+    /* Accent */
+    /**********/
+    --accent-h: 160;
+    --accent-s: 20%;
+    --accent-l: 35%;
 
-    --code-background: #000000;
-    --code-normal: white;
+    /**************************************/
+    /* Colours (Regular text and heading) */
+    /**************************************/
+    --color-red: #9A4D4D;
+    --color-red-hover: #C06A6A;
+    --color-red-rgb: 154, 77, 77;
+    --color-red-hover-rgb: 192, 106, 106;
+    --h1-red: #D88282;
+    --h2-red: #C96E6E;
+    --h3-red: #B55A5A;
+    --h4-red: #9E4747;
+    --h5-red: #8C3A3A;
+    --h6-red: #7A2F2F;
 
-    --graph-text: rgb(204, 204, 204);
-    --graph-node: #fcf601;
-    --graph-node-focused: #26798c;
-    --graph-node-unresolved: #9e8aff;
-    --graph-node-attachment: #d669bc;
-    --graph-node-tag: #5dbcd2;
-    --graph-line: #26798c;
-} */
+    --color-orange: #B26B40;
+    --color-orange-hover: #D18A61;
+    --color-orange-rgb: 178, 107, 64;
+    --color-orange-hover-rgb: 209, 138, 97;
+    --h1-orange: #D69673;
+    --h2-orange: #C4855C;
+    --h3-orange: #B0734C;
+    --h4-orange: #9F623D;
+    --h5-orange: #8C512E;
+    --h6-orange: #7A4324;
 
-/* Justifying text */
-/* reading mode */
-.markdown-preview-view p {
-  text-align: justify;
-  text-justify: inter-word;
+    --color-yellow: #A58C54;
+    --color-yellow-hover: #C0A16F;
+    --color-yellow-rgb: 165, 140, 84;
+    --color-yellow-hover-rgb: 192, 161, 111;
+    --h1-yellow: #C9AB6B;
+    --h2-yellow: #B89A5B;
+    --h3-yellow: #A7884A;
+    --h4-yellow: #947739;
+    --h5-yellow: #82682B;
+    --h6-yellow: #6E5820;
+
+    --color-green: #436257;
+    --color-green-hover: #5A8070;
+    --color-green-rgb: 67, 98, 87;
+    --color-green-hover-rgb: 90, 128, 112;
+    --h1-green: #82AF9E;
+    --h2-green: #6D9B8A;
+    --h3-green: #5A8776;
+    --h4-green: #497364;
+    --h5-green: #3A5F51;
+    --h6-green: #2F4D41;
+
+    --color-cyan: #4A8A8A;
+    --color-cyan-hover: #66B0B0;
+    --color-cyan-rgb: 74, 138, 138;
+    --color-cyan-hover-rgb: 102, 176, 176;
+    --h1-cyan: #73B8B8;
+    --h2-cyan: #5FA3A3;
+    --h3-cyan: #4C8F8F;
+    --h4-cyan: #3A7B7B;
+    --h5-cyan: #2E6868;
+    --h6-cyan: #245757;
+
+    --color-blue: #3A4E8C;
+    --color-blue-hover: #5C74B0;
+    --color-blue-rgb: 58, 78, 140;
+    --color-blue-hover-rgb: 92, 116, 176;
+    --h1-blue: #6C8DCE;
+    --h2-blue: #597ABA;
+    --h3-blue: #4867A7;
+    --h4-blue: #395694;
+    --h5-blue: #2E4780;
+    --h6-blue: #243A6B;
+
+    --color-purple: #584A80;
+    --color-purple-hover: #7A66A6;
+    --color-purple-rgb: 88, 74, 128;
+    --color-purple-hover-rgb: 122, 102, 166;
+    --h1-purple: #8879C0;
+    --h2-purple: #7668AC;
+    --h3-purple: #655799;
+    --h4-purple: #564885;
+    --h5-purple: #493A72;
+    --h6-purple: #3C2E5E;
+
+    --color-pink: #8F617F;
+    --color-pink-hover: #B07D9B;
+    --color-pink-rgb: 143, 97, 127;
+    --color-pink-hover-rgb: 176, 125, 155;
+    --h1-pink: #B96F91;
+    --h2-pink: #A76083;
+    --h3-pink: #945274;
+    --h4-pink: #824566;
+    --h5-pink: #703B59;
+    --h6-pink: #60334C;
+
+    /**********/
+    /* Headings */
+    /**********/
+    --h1-default: #4B6C5C;
+    --h2-default: #5E8290;
+    --h3-default: #798782;
+    --h4-default: #8DA89C;
+    --h5-default: #A3B6B4;
+    --h6-default: #5F8F78;
+
+    --h1-color: var(--h1-default);
+    --h2-color: var(--h2-default);
+    --h3-color: var(--h3-default);
+    --h4-color: var(--h4-default);
+    --h5-color: var(--h5-default);
+    --h6-color: var(--h6-default);
 }
 
-/* source view and live preview */
-.markdown-source-view.mod-cm6 .cm-line {
-  text-align: justify;
-  text-justify: inter-word;
+.workspace-ribbon-hide .workspace-ribbon {
+    display: none;
+}
+
+.workspace {
+    > .mod-left-split {
+        min-width: 375px;
+        max-width: 375px;
+    }
+
+    > .mod-right-split {
+        min-width: 375px;
+        max-width: 375px;
+    }
+
+    > .mod-left-split, .mod-right-split {
+        .view-content {
+            padding: 16px;
+        }
+    }
+}
+
+/* Add a width constraint to settings modal. */
+.mod-settings {
+    min-width: var(--settings-related-modal-width);
+}
+
+/* Add a width constraint to community modals (plugins & themes). */
+.mod-community-modal {
+    min-width: var(--settings-related-modal-width);
+}
+
+/* Useful for bypassing "Show inline title" setting sync when using a custom sync service. */
+.inline-title {
+    display: none !important;
+}
+
+/* Useful for bypassing "Properties in document" setting sync when using a custom sync service. */
+.workspace-leaf-content[data-mode="preview"] .mod-header > .metadata-container,
+.workspace-leaf-content[data-mode="source"] .cm-sizer > .metadata-container {
+    display: none !important;
+}
+
+/* Add vertical alignement to Calendar plugin's reset button. */
+#calendar-container .right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Applied to make a note span the full width available. */
+.wide-page, .page-large {
+    --file-line-width: 100%;
 }

@@ -1,8 +1,7 @@
 {
-  "name": "Sea Glass",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "Kyle Stewart",
-  "authorUrl": "https://github.com/KStew1017",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Sea Glass",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"author": "Kyle Stewart",
+	"authorUrl": "https://github.com/KStew1017"
 }

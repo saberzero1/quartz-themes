@@ -619,9 +619,7 @@ button.mod-cta:hover {
 }
 
 /* Activity bar indicators */
-.workspace-leaf-content[data-type="file-explorer"]
-  .nav-folder.mod-root
-  > .nav-folder-title {
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder.mod-root>.nav-folder-title {
   color: #a5b5b5;
 }
 

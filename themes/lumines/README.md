@@ -1,7 +1,7 @@
 # Lumines
 
 - Theme: Lumines
-- Author: <a href="https://github.com/Avesend" target="_blank" rel="noopener noreferrer">Avesend</a>
+- Author: <a href="https://github.com/danielkhmara" target="_blank" rel="noopener noreferrer">Daniel Khmara</a>
 
 ## Preview
 

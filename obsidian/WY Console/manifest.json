@@ -1,8 +1,7 @@
 {
-  "name": "WY Console",
-  "version": "1.0.9",
-  "minAppVersion": "1.0.0",
-  "author": "Satchelmouth",
-  "authorUrl": "https://www.buymeacoffee.com/Satchelmouth",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "WY Console",
+	"version": "1.0.9",
+	"minAppVersion": "1.0.0",
+	"author": "Satchelmouth",
+	"authorUrl": "https://www.buymeacoffee.com/Satchelmouth"
 }

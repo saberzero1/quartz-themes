@@ -3,6 +3,5 @@
   "version": "1.0.2",
   "minAppVersion": "1.0.0",
   "author": "Gixo",
-  "authorUrl": "https://twitter.com/notgixo",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+  "authorUrl": "https://twitter.com/notgixo"
 }

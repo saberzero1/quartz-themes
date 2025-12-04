@@ -1,7 +1,6 @@
 {
-  "name": "Comfort Dark",
-  "author": "Ooopz",
-  "version": "1.4.0",
-  "minAppVersion": "1.0.0",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Comfort Dark",
+	"author": "Ooopz",
+	"version": "1.4.0",
+	"minAppVersion": "1.0.0"
 }

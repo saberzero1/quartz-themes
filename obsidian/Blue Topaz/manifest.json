@@ -1,8 +1,7 @@
 {
-  "name": "Blue Topaz",
-  "version": "2025052001",
-  "minAppVersion": "1.0.0",
-  "author": "WhyI & Pkmer",
-  "authorUrl": "https://github.com/whyt-byte",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+    "name": "Blue Topaz",
+    "version": "2025071401",
+    "minAppVersion": "1.0.0",
+    "author": "WhyI & Pkmer",
+    "authorUrl": "https://github.com/whyt-byte"
 }

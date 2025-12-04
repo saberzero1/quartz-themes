@@ -1,8 +1,7 @@
 {
   "name": "Playground",
-  "version": "0.1.10",
+  "version": "0.1.18",
   "minAppVersion": "1.6.1",
   "author": "Ezben",
-  "authorUrl": "https://www.benjaminezequiel.com/",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+  "authorUrl": "https://www.benjaminezequiel.com/"
 }

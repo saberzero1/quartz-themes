@@ -675,8 +675,10 @@ body {
     --text-selection: hsla(var(--color-accent-hsl), 0.2);
     --text-accent: var(--color-accent);
     --text-accent-hover: var(--color-accent-2);
-    --interactive-normal: var(--color-base-35);       /* Secondary button background (base-35 = #3d444d) */
-    --interactive-hover: var(--color-base-50);        /* Secondary button hover (base-50 = #7a828e) */
+    --interactive-normal: var(--color-base-35);
+    /* Secondary button background (base-35 = #3d444d) */
+    --interactive-hover: var(--color-base-50);
+    /* Secondary button hover (base-50 = #7a828e) */
     --interactive-accent-hsl: var(--color-accent-hsl);
     --interactive-accent: var(--color-accent-1);
     --interactive-accent-hover: var(--color-accent-2);
@@ -706,42 +708,72 @@ body {
     /* Source: @primer/primitives/dist/css/functional/themes/dark-high-contrast.css */
 
     /* Backgrounds */
-    --color-base-00: #010409;        /* bgColor-default - main canvas */
-    --color-base-10: #151b23;        /* bgColor-muted - secondary areas */
-    --color-base-20: #151b23;        /* bgColor-muted variant */
-    --color-base-25: #010409;        /* bgColor-inset - for form fields (same as bgColor-default) */
-    --color-base-30: #b7bdc8;        /* borderColor-default */
-    --color-base-35: #3d444d;        /* bgColor-emphasis */
-    --color-base-40: #b7bdc8;        /* border emphasis */
-    --color-base-50: #7a828e;        /* faint borders/text */
-    --color-base-60: #999;           /* unused - legacy */
-    --color-base-70: #b7bdc8;        /* fgColor-muted */
-    --color-base-100: #ffffff;       /* fgColor-default - pure white for max contrast */
+    --color-base-00: #010409;
+    /* bgColor-default - main canvas */
+    --color-base-10: #151b23;
+    /* bgColor-muted - secondary areas */
+    --color-base-20: #151b23;
+    /* bgColor-muted variant */
+    --color-base-25: #010409;
+    /* bgColor-inset - for form fields (same as bgColor-default) */
+    --color-base-30: #b7bdc8;
+    /* borderColor-default */
+    --color-base-35: #3d444d;
+    /* Code block background - darker like GitHub */
+    --code-background: #161b22;
+    /* Table alternating row background */
+    --table-row-alt-background: #151b23;
+    /* bgColor-emphasis */
+    --color-base-40: #b7bdc8;
+    /* border emphasis */
+    --color-base-50: #7a828e;
+    /* faint borders/text */
+    --color-base-60: #999;
+    /* unused - legacy */
+    --color-base-70: #b7bdc8;
+    /* fgColor-muted */
+    --color-base-100: #ffffff;
+    /* fgColor-default - pure white for max contrast */
 
     /* Hover states */
-    --rgb-hover: 183, 189, 200;      /* based on --color-base-30 */
+    --rgb-hover: 183, 189, 200;
+    /* based on --color-base-30 */
 
     /* Semantic colors - ANSI terminal colors from GitHub DHC */
     --color-red-rgb: 255, 148, 146;
-    --color-red: #ff9492;            /* color-ansi-red / fgColor-danger */
+    --color-red: #ff9492;
+    /* color-ansi-red / fgColor-danger */
     --color-green-rgb: 43, 216, 83;
-    --color-green: #2bd853;          /* color-ansi-green / fgColor-success */
-    --color-orange: #ffa657;         /* legacy - keeping for compatibility */
-    --color-yellow: #f0b72f;         /* color-ansi-yellow */
-    --color-cyan: #a5d6ff;           /* legacy cyan */
-    --color-blue: #71b7ff;           /* color-ansi-blue */
-    --color-purple: #d2a8ff;         /* legacy purple */
-    --color-pink: #f778ba;           /* legacy pink */
+    --color-green: #2bd853;
+    /* color-ansi-green / fgColor-success */
+    --color-orange: #ffa657;
+    /* legacy - keeping for compatibility */
+    --color-yellow: #f0b72f;
+    /* color-ansi-yellow */
+    --color-cyan: #a5d6ff;
+    /* legacy cyan */
+    --color-blue: #71b7ff;
+    /* color-ansi-blue */
+    --color-purple: #d2a8ff;
+    /* legacy purple */
+    --color-pink: #f778ba;
+    /* legacy pink */
     --color-white: #ffffff;
 
     /* Accent colors - using neutral grey for high contrast */
-    --accent-h-theme: 220;           /* neutral grey-blue hue */
-    --accent-s-theme: 13%;           /* low saturation for neutral grey */
-    --accent-l-theme: 70%;           /* light grey */
+    --accent-h-theme: 220;
+    /* neutral grey-blue hue */
+    --accent-s-theme: 13%;
+    /* low saturation for neutral grey */
+    --accent-l-theme: 70%;
+    /* light grey */
     --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-    --color-accent: #b7bdc8;         /* borderColor-default - neutral light grey */
-    --color-accent-1: #9ea7b3;       /* slightly darker grey */
-    --color-accent-2: #d1d9e0;       /* lighter grey */
+    --color-accent: #b7bdc8;
+    /* borderColor-default - neutral light grey */
+    --color-accent-1: #9ea7b3;
+    /* slightly darker grey */
+    --color-accent-2: #d1d9e0;
+    /* lighter grey */
 
     /* UI Modifiers */
     --background-secondary-alt: var(--color-base-25);
@@ -767,25 +799,34 @@ body {
 
     /* Buttons - GitHub DHC green primary button */
     --background-modifier-hover-alpha: 0.12;
-    --color-btn-primary-bg: #09b43a;        /* GitHub DHC success/primary button */
-    --color-btn-primary-hover-bg: #0c8e33;  /* GitHub DHC success button hover */
+    --color-btn-primary-bg: #09b43a;
+    /* GitHub DHC success/primary button */
+    --color-btn-primary-hover-bg: #0c8e33;
+    /* GitHub DHC success button hover */
 
     /* Secondary buttons - Override for dark theme */
-    --interactive-normal: #3d444d;          /* bgColor-neutral-muted - secondary button background */
-    --interactive-hover: #6e7781;           /* Lighter grey for hover - GitHub DHC hover color */
+    --interactive-normal: #3d444d;
+    /* bgColor-neutral-muted - secondary button background */
+    --interactive-hover: #6e7781;
+    /* Lighter grey for hover - GitHub DHC hover color */
 
     /* Links - Override to use blue instead of grey accent */
-    --link-color: #71b7ff;                  /* GitHub DHC blue for links */
-    --link-color-hover: #a5d6ff;            /* Lighter blue on hover */
+    --link-color: #71b7ff;
+    /* GitHub DHC blue for links */
+    --link-color-hover: #a5d6ff;
+    /* Lighter blue on hover */
     --link-external-color: #71b7ff;
     --link-external-color-hover: #a5d6ff;
     --link-unresolved-color: #71b7ff;
-    --text-accent: #71b7ff;                 /* Override text-accent for links */
+    --text-accent: #71b7ff;
+    /* Override text-accent for links */
     --text-accent-hover: #a5d6ff;
 
     /* Toggle switches - different colors for on/off states */
-    --toggle-background-color-off: var(--interactive-normal);  /* Grey when off */
-    --toggle-background-color: var(--interactive-accent);      /* Blue when on */
+    --toggle-background-color-off: var(--interactive-normal);
+    /* Grey when off */
+    --toggle-background-color: var(--interactive-accent);
+    /* Blue when on */
     --toggle-border-color: var(--background-modifier-border);
 
     /* Kanban colors */
@@ -806,13 +847,17 @@ body {
 */
 
 .is-mobile.theme-dark {
-    --color-base-00: #010409;        /* Match DHC bgColor-default */
-    --color-base-10: #151b23;        /* Match DHC bgColor-muted */
-    --color-base-20: #151b23;        /* Match DHC bgColor-muted */
+    --color-base-00: #010409;
+    /* Match DHC bgColor-default */
+    --color-base-10: #151b23;
+    /* Match DHC bgColor-muted */
+    --color-base-20: #151b23;
+    /* Match DHC bgColor-muted */
     --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
     --modal-background: var(--background-secondary);
     --search-result-background: var(--background-secondary);
-    --background-modifier-form-field: var(--color-base-25);  /* Use base-25 (black) not border color */
+    --background-modifier-form-field: var(--color-base-25);
+    /* Use base-25 (black) not border color */
     --background-modifier-cover: rgba(0, 0, 0, 0.5);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.15);
     --settings-home-background: var(--background-primary);
@@ -842,36 +887,58 @@ body {
     /* Source: @primer/primitives/dist/css/functional/themes/light.css */
 
     /* Backgrounds */
-    --color-base-00: #ffffff;        /* bgColor-default - white canvas */
-    --color-base-05: #fcfcfc;        /* subtle variant */
-    --color-base-10: #f6f8fa;        /* bgColor-muted - light gray */
-    --color-base-20: #f6f8fa;        /* bgColor-muted variant */
-    --color-base-25: #f6f8fa;        /* bgColor-inset - for form fields */
-    --color-base-30: #d1d9e0;        /* borderColor-default */
-    --color-base-35: #afb8c1;        /* border emphasis */
-    --color-base-40: #8c959f;        /* mid-tone gray */
-    --color-base-50: #6e7781;        /* subtle text/borders */
-    --color-base-60: #59636e;        /* bgColor-neutral-emphasis */
-    --color-base-70: #424a53;        /* darker muted text */
-    --color-base-100: #1f2328;       /* fgColor-default - primary text */
+    --color-base-00: #ffffff;
+    /* bgColor-default - white canvas */
+    --color-base-05: #fcfcfc;
+    /* subtle variant */
+    --color-base-10: #f6f8fa;
+    /* bgColor-muted - light gray */
+    --color-base-20: #f6f8fa;
+    /* bgColor-muted variant */
+    --color-base-25: #f6f8fa;
+    /* bgColor-inset - for form fields */
+    --color-base-30: #d1d9e0;
+    /* borderColor-default */
+    --color-base-35: #afb8c1;
+    /* border emphasis */
+    --color-base-40: #8c959f;
+    /* mid-tone gray */
+    --color-base-50: #6e7781;
+    /* subtle text/borders */
+    --color-base-60: #59636e;
+    /* bgColor-neutral-emphasis */
+    --color-base-70: #424a53;
+    /* darker muted text */
+    --color-base-100: #1f2328;
+    /* fgColor-default - primary text */
 
     /* Hover states */
-    --rgb-hover: 208, 215, 222;      /* based on --color-base-30 */
+    --rgb-hover: 208, 215, 222;
+    /* based on --color-base-30 */
 
     /* Semantic colors - from GitHub Light Default */
     --color-red-rgb: 207, 34, 46;
-    --color-red: #cf222e;            /* fgColor-danger */
+    --color-red: #cf222e;
+    /* fgColor-danger */
     --color-green-rgb: 26, 127, 55;
-    --color-green: #1a7f37;          /* fgColor-success */
-    --color-orange: #bc4c00;         /* severe emphasis */
-    --color-yellow: #9a6700;         /* attention emphasis */
-    --color-cyan: #0969da;           /* accent blue */
-    --color-blue: #0969da;           /* fgColor-accent */
-    --color-purple: #8250df;         /* done emphasis */
-    --color-pink: #bf3989;           /* sponsors */
+    --color-green: #1a7f37;
+    /* fgColor-success */
+    --color-orange: #bc4c00;
+    /* severe emphasis */
+    --color-yellow: #9a6700;
+    /* attention emphasis */
+    --color-cyan: #0969da;
+    /* accent blue */
+    --color-blue: #0969da;
+    /* fgColor-accent */
+    --color-purple: #8250df;
+    /* done emphasis */
+    --color-pink: #bf3989;
+    /* sponsors */
 
     /* Accent colors - GitHub Light Default blue */
-    --accent-h-theme: 212;           /* blue accent */
+    --accent-h-theme: 212;
+    /* blue accent */
     --accent-s-theme: 92%;
     --accent-l-theme: 45%;
     --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
@@ -902,25 +969,34 @@ body {
 
     /* Buttons - GitHub Light Default green primary */
     --background-modifier-hover-alpha: 0.1;
-    --color-btn-primary-bg: #1f883d;        /* GitHub Light success button */
-    --color-btn-primary-hover-bg: #1a7f37;  /* GitHub Light success hover */
+    --color-btn-primary-bg: #1f883d;
+    /* GitHub Light success button */
+    --color-btn-primary-hover-bg: #1a7f37;
+    /* GitHub Light success hover */
 
     /* Secondary buttons - Override for light theme */
-    --interactive-normal: #f6f8fa;          /* Light grey secondary button background */
-    --interactive-hover: #d1d9e0;           /* Slightly darker grey for hover */
+    --interactive-normal: #f6f8fa;
+    /* Light grey secondary button background */
+    --interactive-hover: #d1d9e0;
+    /* Slightly darker grey for hover */
 
     /* Links - Override to use blue instead of grey accent */
-    --link-color: #0969da;                  /* GitHub Light blue for links */
-    --link-color-hover: #0550ae;            /* Darker blue on hover */
+    --link-color: #0969da;
+    /* GitHub Light blue for links */
+    --link-color-hover: #0550ae;
+    /* Darker blue on hover */
     --link-external-color: #0969da;
     --link-external-color-hover: #0550ae;
     --link-unresolved-color: #0969da;
-    --text-accent: #0969da;                 /* Override text-accent for links */
+    --text-accent: #0969da;
+    /* Override text-accent for links */
     --text-accent-hover: #0550ae;
 
     /* Toggle switches - different colors for on/off states */
-    --toggle-background-color-off: var(--interactive-normal);  /* Light grey when off */
-    --toggle-background-color: var(--interactive-accent);      /* Blue when on */
+    --toggle-background-color-off: var(--interactive-normal);
+    /* Light grey when off */
+    --toggle-background-color: var(--interactive-accent);
+    /* Blue when on */
     --toggle-border-color: var(--background-modifier-border);
 
     /* Kanban colors */
@@ -1017,8 +1093,12 @@ body.colorblind_tritan.theme-light {
     text-align: center;
 }
 
-.markdown-rendered tbody tr:nth-child(2n) {
-    background-color: var(--background-secondary);
+.markdown-rendered tbody tr:nth-child(even) {
+    background-color: var(--table-row-alt-background);
+}
+
+.markdown-rendered tbody tr:nth-child(odd) {
+    background-color: var(--background-primary);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -1083,18 +1163,24 @@ input[type="reset"]:not(.mod-cta):hover {
 
 /* Base styles for navigation items */
 .vertical-tab-nav-item {
-    border-left: 6px solid transparent;  /* Wider blue bar (was 3px, now 6px) */
-    margin-left: 4px;  /* Space before the blue bar */
-    padding-left: 6px;  /* Space after the blue bar (inside the background) */
-    font-weight: var(--font-semibold);  /* Bold text for all nav items */
+    border-left: 6px solid transparent;
+    /* Wider blue bar (was 3px, now 6px) */
+    margin-left: 4px;
+    /* Space before the blue bar */
+    padding-left: 6px;
+    /* Space after the blue bar (inside the background) */
+    font-weight: var(--font-semibold);
+    /* Bold text for all nav items */
     transition: background-color 80ms ease-in-out, border-color 80ms ease-in-out;
 }
 
 /* Selected/active navigation item - blue left border */
 .vertical-tab-nav-item.is-active {
     border-left-color: var(--text-accent) !important;
-    background-color: var(--interactive-normal) !important;  /* Darker background - same as buttons */
-    color: var(--text-normal) !important;  /* Keep text white */
+    background-color: var(--interactive-normal) !important;
+    /* Darker background - same as buttons */
+    color: var(--text-normal) !important;
+    /* Keep text white */
 }
 
 /* Hover state for navigation items - lighter background */
@@ -1113,12 +1199,14 @@ input[type="reset"]:not(.mod-cta):hover {
 
 /* Toggle switch on state - blue background */
 .checkbox-container.is-enabled {
-    background-color: #71b7ff !important;  /* GitHub DHC blue - direct color */
+    background-color: #71b7ff !important;
+    /* GitHub DHC blue - direct color */
 }
 
 /* Alternative approach using the input checked state */
 .checkbox-container:has(input[type="checkbox"]:checked) {
-    background-color: #71b7ff !important;  /* GitHub DHC blue - direct color */
+    background-color: #71b7ff !important;
+    /* GitHub DHC blue - direct color */
 }
 
 /* Keep the toggle thumb white */
@@ -1129,7 +1217,8 @@ input[type="reset"]:not(.mod-cta):hover {
 /* Light theme - use darker blue for toggles */
 .theme-light .checkbox-container.is-enabled,
 .theme-light .checkbox-container:has(input[type="checkbox"]:checked) {
-    background-color: #0969da !important;  /* GitHub Light blue */
+    background-color: #0969da !important;
+    /* GitHub Light blue */
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -1138,12 +1227,17 @@ input[type="reset"]:not(.mod-cta):hover {
 
 /* Base callout styling - GitHub style */
 .callout {
-    border: none;  /* No grey border */
-    border-left: 4px solid var(--callout-color);  /* Thick colored left border */
+    border: none;
+    /* No grey border */
+    border-left: 4px solid var(--callout-color);
+    /* Thick colored left border */
     background-color: var(--background-primary) !important;
-    padding: 11px 16px;  /* Reduced from 16px to ~11px vertically (30% reduction) */
-    margin: 11px 0;  /* Reduced from 16px to ~11px (30% reduction) */
-    border-radius: 0;  /* No rounded corners - sharp edges */
+    padding: 11px 16px;
+    /* Reduced from 16px to ~11px vertically (30% reduction) */
+    margin: 11px 0;
+    /* Reduced from 16px to ~11px (30% reduction) */
+    border-radius: 0;
+    /* No rounded corners - sharp edges */
 }
 
 /* Title and icon use the callout color */
@@ -1153,7 +1247,8 @@ input[type="reset"]:not(.mod-cta):hover {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 6px;  /* Reduced from 8px to 6px */
+    margin-bottom: 6px;
+    /* Reduced from 8px to 6px */
 }
 
 .callout-icon {
@@ -1168,26 +1263,31 @@ input[type="reset"]:not(.mod-cta):hover {
 /* Specific callout types with BRIGHT GitHub colors */
 .callout[data-callout="note"],
 .callout[data-callout="info"] {
-    --callout-color: #71b7ff;  /* Bright blue */
+    --callout-color: #71b7ff;
+    /* Bright blue */
 }
 
 .callout[data-callout="tip"],
 .callout[data-callout="success"] {
-    --callout-color: #2bd853;  /* Bright green */
+    --callout-color: #2bd853;
+    /* Bright green */
 }
 
 .callout[data-callout="important"] {
-    --callout-color: #d2a8ff;  /* Bright purple */
+    --callout-color: #d2a8ff;
+    /* Bright purple */
 }
 
 .callout[data-callout="warning"] {
-    --callout-color: #f0b72f;  /* Bright orange/yellow */
+    --callout-color: #f0b72f;
+    /* Bright orange/yellow */
 }
 
 .callout[data-callout="caution"],
 .callout[data-callout="danger"],
 .callout[data-callout="error"] {
-    --callout-color: #ff9492;  /* Bright red */
+    --callout-color: #ff9492;
+    /* Bright red */
 }
 
 /* Legacy support for callout-on setting */
@@ -1590,6 +1690,77 @@ h6,
     margin-bottom: 16px;
 }
 
+/* Match GitHub spacing for editing mode */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 {
+    margin-top: 16px !important;
+    margin-bottom: 12px !important;
+}
+
+/* Full-width borders for H1/H2 in editing mode */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+    display: block !important;
+    padding-bottom: .3em !important;
+    border-bottom: 1px solid var(--color-base-50) !important;
+}
+
+/* Keep images inline with headings in editing mode */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 {
+    white-space: normal !important;
+}
+
+/* Target all child elements in headers - spans, images, formatting, etc. */
+.markdown-source-view.mod-cm6 .HyperMD-header>*,
+.markdown-source-view.mod-cm6 .HyperMD-header-1>*,
+.markdown-source-view.mod-cm6 .HyperMD-header-2>*,
+.markdown-source-view.mod-cm6 .HyperMD-header-3>*,
+.markdown-source-view.mod-cm6 .HyperMD-header-4>*,
+.markdown-source-view.mod-cm6 .HyperMD-header-5>*,
+.markdown-source-view.mod-cm6 .HyperMD-header-6>* {
+    display: inline !important;
+    vertical-align: middle !important;
+}
+
+/* Specifically target widget buffers in headers */
+.markdown-source-view.mod-cm6 .HyperMD-header img.cm-widgetBuffer,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 img.cm-widgetBuffer,
+.markdown-source-view.mod-cm6 .HyperMD-header-2 img.cm-widgetBuffer,
+.markdown-source-view.mod-cm6 .HyperMD-header-3 img.cm-widgetBuffer,
+.markdown-source-view.mod-cm6 .HyperMD-header-4 img.cm-widgetBuffer,
+.markdown-source-view.mod-cm6 .HyperMD-header-5 img.cm-widgetBuffer,
+.markdown-source-view.mod-cm6 .HyperMD-header-6 img.cm-widgetBuffer {
+    display: inline !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Target the actual images within headers */
+.markdown-source-view.mod-cm6 .HyperMD-header img:not(.cm-widgetBuffer),
+.markdown-source-view.mod-cm6 .HyperMD-header-1 img:not(.cm-widgetBuffer),
+.markdown-source-view.mod-cm6 .HyperMD-header-2 img:not(.cm-widgetBuffer),
+.markdown-source-view.mod-cm6 .HyperMD-header-3 img:not(.cm-widgetBuffer),
+.markdown-source-view.mod-cm6 .HyperMD-header-4 img:not(.cm-widgetBuffer),
+.markdown-source-view.mod-cm6 .HyperMD-header-5 img:not(.cm-widgetBuffer),
+.markdown-source-view.mod-cm6 .HyperMD-header-6 img:not(.cm-widgetBuffer) {
+    display: inline !important;
+    vertical-align: middle !important;
+    max-height: 1.2em !important;
+    margin: 4px 2px 4px 8px !important;
+}
+
 .inline-title {
     display: block;
     padding-bottom: .3em;
@@ -1604,13 +1775,136 @@ h6,
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
-   DOCUMENT CONTAINER - GitHub README-style bordered container
+   LIST SPACING - Ensure proper spacing in both reading and editing modes
    ───────────────────────────────────────────────────────────────────────── */
+
+
+.markdown-preview-view li {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    line-height: var(--line-height-normal);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+    TABLES - GitHub-style alternating row colors
+    ───────────────────────────────────────────────────────────────────────── */
+
+table tbody tr {
+    background-color: var(--background-primary);
+    background-color: var(--color-orange);
+}
+
+/*
+table tbody tr:nth-child(2n) {
+    background-color: var(--table-row-alt-background);
+background-color: var(--color-orange);
+}
+*/
+
+/* Details/Summary elements */
+.markdown-preview-view details {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.markdown-preview-view summary {
+    cursor: pointer;
+    margin-bottom: 8px;
+    font-weight: var(--font-semibold);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   LINKS - All links underlined except in headers
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* All links underlined in reading mode */
+.markdown-rendered a,
+.markdown-preview-view a {
+    text-decoration: underline !important;
+}
+
+/* All links underlined in editing mode */
+.markdown-source-view.mod-cm6 .cm-link,
+.markdown-source-view.mod-cm6 .cm-underline,
+.markdown-source-view.mod-cm6 .cm-url,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link,
+.markdown-source-view.mod-cm6 a {
+    text-decoration: underline !important;
+}
+
+/* Remove underline from links in headers (reading mode) */
+.markdown-rendered h1 a,
+.markdown-rendered h2 a,
+.markdown-rendered h3 a,
+.markdown-rendered h4 a,
+.markdown-rendered h5 a,
+.markdown-rendered h6 a,
+.markdown-preview-view h1 a,
+.markdown-preview-view h2 a,
+.markdown-preview-view h3 a,
+.markdown-preview-view h4 a,
+.markdown-preview-view h5 a,
+.markdown-preview-view h6 a {
+    text-decoration: none !important;
+}
+
+/* Remove underline from links in headers (editing mode) */
+.markdown-source-view.mod-cm6 .HyperMD-header .cm-link,
+.markdown-source-view.mod-cm6 .HyperMD-header .cm-underline,
+.markdown-source-view.mod-cm6 .HyperMD-header .cm-url,
+.markdown-source-view.mod-cm6 .HyperMD-header .cm-hmd-internal-link,
+.markdown-source-view.mod-cm6 .HyperMD-header a {
+    text-decoration: none !important;
+}
+
+/* Images - ensure proper spacing and display */
+.markdown-preview-view img {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Inline images in paragraphs/links - keep inline for badges, etc. */
+.markdown-preview-view p img,
+.markdown-preview-view a img {
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+/* List items containing images - fix layout */
+.markdown-preview-view li>img {
+    display: block;
+    margin: 8px 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+DOCUMENT CONTAINER - Full-width with side margins and border
+───────────────────────────────────────────────────────────────────────── */
+
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 {
+    --file-line-width: 85%;
+}
 
 .markdown-preview-sizer,
 .cm-sizer {
     padding: 32px;
-    max-width: var(--file-line-width);
+    margin-left: 54px;
+    /* ~3/4 inch from left edge */
+    margin-right: 54px;
+    /* ~3/4 inch from right edge */
+    max-width: calc(85% - 108px);
+    /* 85% width minus left/right margins */
     border: 1px solid var(--color-base-50);
     border-radius: 6px;
+}
+
+/* Ensure content fills the container width */
+.cm-content,
+.cm-line {
+    max-width: 100% !important;
+    width: 100%;
 }

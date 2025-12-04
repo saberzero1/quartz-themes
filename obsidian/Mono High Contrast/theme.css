@@ -127,7 +127,7 @@
 
 /* Fonts */
 body {
-  --font-interface: "Fira Code", "FuraMono Nerd Font", monospace;
+  --font-interface: "FuraMono Nerd Font", monospace;
   -webkit-font-smoothing: auto;
 }
 
@@ -334,4 +334,30 @@ button:hover {
 .nav-folder-children .nav-file-title:hover,
 .nav-folder-children .nav-file-title.is-active {
   opacity: 1;
+}
+
+/* Side bar (Search Result) Highlight Fix */
+
+.search-result-file-matched-text {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-highlight) !important;
+}
+
+.search-result-file-match.tappable:hover {
+  background-color: rgba(0,0,0,0.07);
+}
+
+/* Theme search result highlight fix */
+
+.suggestion-highlight {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-highlight) !important;
+}
+
+/* Flashing text highlight fix*/
+
+.is-flashing {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-highlight) !important;
+  border-radius: 0;
 }

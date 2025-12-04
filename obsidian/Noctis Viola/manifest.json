@@ -1,0 +1,9 @@
+{
+  "name": "Noctis Viola",
+  "version": "0.0.1",
+  "minAppVersion": "0.16.0",
+  "description": "A theme for Obsidian based on Noctis Viola VS Code theme.",
+  "author": "konnta0",
+  "authorUrl": "https://github.com/konnta0",
+  "isDesktopOnly": false
+}

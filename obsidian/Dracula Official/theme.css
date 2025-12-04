@@ -1,5 +1,6 @@
 .theme-dark,
-.theme-light {
+.theme-light{
+
   /* Obsidian "Dark" import so light mode looks the same*/
   --color-scheme: dark;
   --highlight-mix-blend-mode: lighten;
@@ -35,43 +36,25 @@
   --color-base-100: #dadada;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) - 3.8%)
-  );
-  --color-accent-2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 3.8%)
-  );
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
   --interactive-normal: var(--color-base-30);
   --interactive-hover: var(--color-base-35);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0,0,0,.15), 0 1px 1.5px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0,0,0,.3), 0 1px 1.5px 0 rgba(0,0,0,.2), 0 1px 2px 0 rgba(0,0,0,.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
   /* Actual Dracula colors*/
   --background-primary: #282a36;
   --background-primary-alt: #44475a;
-  --background-secondary: #20212b;
+  --background-secondary: #20212B;
   --background-secondary-alt: #282a36;
   --text-normal: #f8f8f2;
   --text-on-accent: #282a36;
@@ -81,10 +64,10 @@
   --text-title-h4: #ff5555;
   --text-title-h5: #f1fa8c;
   --text-title-h6: #bd93f4;
-  --canvas-color-1: 255, 85, 85;
+  --canvas-color-1: 255,  85,  85;
   --canvas-color-2: 255, 184, 108;
   --canvas-color-3: 241, 250, 140;
-  --canvas-color-4: 82, 250, 124;
+  --canvas-color-4:  82, 250, 124;
   --canvas-color-5: 139, 233, 253;
   --canvas-color-6: 189, 147, 244;
   --text-link: var(--text-accent);
@@ -102,16 +85,16 @@
   --titlebar-background-focused: var(--titlebar-background);
 
   /* Dracula Code view*/
-  --code-normal: #f8f8f2;
-  --code-background: #20212b;
-  --dracula-foreground: #f8f8f2;
-  --dracula-Comment: #6272a4;
-  --dracula-keyword: #ff79c6;
-  --dracula-definition: #50fa7b;
-  --dracula-variable: #f8f8f2; /*"variable" tags are used everywhere in code, but Dracula usually only uses orange color only for declaration inputs, thus white is less annoying to look at*/
-  --dracula-number: #bd93f9;
-  --dracula-function: #8be9fd;
-  --dracula-string: #f1fa8c;
+  --code-normal: #F8F8F2;
+  --code-background: #20212B;
+  --dracula-foreground: #F8F8F2;
+  --dracula-Comment: #6272A4;
+  --dracula-keyword: #FF79C6;
+  --dracula-definition: #50FA7B;
+  --dracula-variable: #F8F8F2; /*"variable" tags are used everywhere in code, but Dracula usually only uses orange color only for declaration inputs, thus white is less annoying to look at*/
+  --dracula-number: #BD93F9;
+  --dracula-function: #8BE9FD;
+  --dracula-string: #F1FA8C;
 }
 
 /* LINKS & BRACKETS */
@@ -131,6 +114,7 @@
 .external-link {
   color: var(--text-link) !important;
 }
+
 
 /* make external links italics to differentiate */
 
@@ -168,6 +152,7 @@ hr {
   color: var(--text-link);
 }
 
+
 /* NAKED EMBEDS*/
 
 /* But keeping Border and Scroll! */
@@ -183,6 +168,7 @@ hr {
 .markdown-preview-view .markdown-embed-content > :last-child {
   margin-bottom: 0;
 }
+
 
 .markdown-embed-link {
   color: var(--text-a) !important;
@@ -214,6 +200,7 @@ hr {
 }
 
 /* CODEBLOCKS */
+
 
 /* code blocks in preview */
 
@@ -261,7 +248,7 @@ pre code {
   color: var(--dracula-variable);
 }
 
-.cm-hmd-codeblock.cm-operator {
+.cm-hmd-codeblock.cm-operator{
   color: var(--dracula-keyword);
 }
 
@@ -275,6 +262,10 @@ pre code {
 
 .cm-hmd-codeblock.cm-string {
   color: var(--dracula-string);
+}
+
+.cm-hmd-codeblock.cm-comment {
+  color: var(--dracula-Comment);
 }
 
 /* Preview */
@@ -379,7 +370,7 @@ th {
 }
 
 td {
-  border: 1px solid var(--background-primary-alt) !important;
+  border: 1px solid var(--background-primary-alt) !important
 }
 
 thead {
@@ -434,12 +425,11 @@ thead {
 }
 
 button.mod-cta {
-  background-color: var(--interactive-accent);
-  color: var(--text-on-accent);
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
 }
 
-.horizontal-tab-nav-item.is-active,
-.vertical-tab-nav-item.is-active {
+.horizontal-tab-nav-item.is-active, .vertical-tab-nav-item.is-active {
   background-color: var(--interactive-accent);
   color: var(--text-on-accent);
 }
@@ -448,7 +438,7 @@ button.mod-cta {
 
 .side-dock-panels-container {
   background-color: var(--background-secondary-alt) !important;
-  color: var(--background-secondary-alt);
+  color: var(background-secondary-alt);
 }
 
 /* icons at top of panes*/
@@ -478,6 +468,7 @@ button.mod-cta {
   color: #6272a4 !important;
   background-color: var(--background-secondary);
 }
+
 
 .is-translucent .nav-file-title:not(.is-active) {
   background-color: transparent;
@@ -762,17 +753,15 @@ mark {
   user-select: none;
   width: 42px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
-  transition:
-    background 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
-    border 0.15s ease-in-out,
-    opacity 0.15s ease-in-out,
+  transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border 0.15s ease-in-out, opacity 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .checkbox-container.is-enabled {
   background-color: var(--interactive-accent);
 }
+
 
 .markdown-preview-view mark {
   color: var(--text-link);
@@ -820,7 +809,7 @@ ul ul {
 ul ul::before {
   content: "";
   border-left: 1px solid;
-  color: #92cdd6;
+  color: #92CDD6;
   position: absolute;
 }
 
@@ -853,23 +842,23 @@ ol {
 }
 
 .suggestion-highlight {
-  color: var(--interactive-accent) !important;
+  color: var(--interactive-accent)!important;
 }
 
 .is-selected {
-  background-color: var(--blockquote-border) !important;
+  background-color: var(--blockquote-border)!important;
 }
 
-@media print {
+@media print { 
   @page {
     margin: 0mm 0mm 0mm 0mm;
   }
   .print .markdown-preview-view {
-    -webkit-print-color-adjust: exact;
-    background-color: #282a36;
-    color: #f8f8f2;
+      -webkit-print-color-adjust: exact;
+      background-color: #282a36;
+      color: #f8f8f2;
   }
   .markdown-rendered code {
-    color: #bababa !important;
+      color: #BABABA !important;
   }
 }

@@ -1,8 +1,7 @@
 {
-  "name": "LessWrong",
-  "version": "1.0.0",
-  "minAppVersion": "0.16.0",
-  "author": "henry",
-  "authorUrl": "https://x.com/arithmoquine",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
-}
+    "name": "LessWrong",
+    "version": "1.0.0",
+    "minAppVersion": "0.16.0",
+    "author": "henry",
+    "authorUrl": "https://x.com/arithmoquine"
+ }

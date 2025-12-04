@@ -1,8 +1,7 @@
-{
-  "name": "Purple Owl",
-  "version": "1.0.1",
-  "minAppVersion": "0.16.0",
-  "author": "zacharyc",
-  "authorUrl": "https://zacharyc.com",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+{  
+   "name": "Purple Owl",  
+   "version": "1.0.1",  
+   "minAppVersion": "0.16.0",  
+   "author": "zacharyc",  
+   "authorUrl": "https://zacharyc.com"  
 }

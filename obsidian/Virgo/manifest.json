@@ -1,8 +1,7 @@
-{
-  "name": "Virgo",
-  "version": "1.0.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "Jack Liu",
-  "authorUrl": "https://aituyaa.com",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+{  
+   "name": "Virgo",  
+   "version": "1.0.0.0",  
+   "minAppVersion": "1.0.0",  
+   "author": "Jack Liu",  
+   "authorUrl": "https://aituyaa.com"  
 }

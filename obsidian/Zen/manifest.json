@@ -1,8 +1,7 @@
 {
-  "name": "Zen",
-  "version": "3.1.13",
-  "minAppVersion": "1.6.7",
-  "author": "laughmaker",
-  "authorUrl": "https://github.com/laughmaker",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Zen",
+	"version": "7.0.5",
+	"minAppVersion": "1.9.0",
+	"author": "laughmaker",
+	"authorUrl": "https://github.com/laughmaker"
 }

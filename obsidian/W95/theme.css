@@ -414,39 +414,33 @@ settings:
   --color-base-100: #222222;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
+  --color-accent-1: hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075));
+  --color-accent-2: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
   --background-secondary-alt: var(--color-base-05);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12),
+  0 2px 3px 0 rgba(0, 0, 0, .05),
+  0 1px 1.5px 0 rgba(0, 0, 0, .03),
+  0 1px 2px 0 rgba(0, 0, 0, .04),
+  0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17),
+  0 2px 3px 0 rgba(0, 0, 0, .1),
+  0 1px 1.5px 0 rgba(0, 0, 0, .03),
+  0 1px 2px 0 rgba(0, 0, 0, .04),
+  0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028),
+  0px 3.4px 6.7px rgba(0, 0, 0, .042),
+  0px 15px 30px rgba(0, 0, 0, .07);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+  0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  0px 30px 90px rgba(0, 0, 0, 0.2);
 
-  --accent-1: #ffffff;
-  --accent-2: #00ffff;
-  --accent-3: #00ff00;
-  --accent-4: #ffff00;
-  --accent-5: #ff0000;
+  --accent-1: #FFFFFF;
+  --accent-2: #00FFFF;
+  --accent-3: #00FF00;
+  --accent-4: #FFFF00;
+  --accent-5: #FF0000;
   --accent-6: #00007b;
 
   --accent-1-muted: #ff79c6;
@@ -483,10 +477,7 @@ settings:
   --titlebar-background-focused: var(--background-primary);
 
   /* Graph adjustments */
-  --graph-line: var(
-    --background-primary,
-    var(--background-modifier-border-focus)
-  );
+  --graph-line: var(--background-primary, var(--background-modifier-border-focus));
 
   /* UI font colors */
   --h1-color: var(--header-color);
@@ -538,6 +529,7 @@ button.mod-cta:active {
   color: var(--color-base-100);
 }
 
+
 select.dropdown {
   border-radius: 0;
   border: 2px inset var(--color-base-30);
@@ -558,7 +550,7 @@ select.dropdown {
 }
 
 .clickable-icon::before {
-  content: " ";
+  content: ' ';
 }
 
 .side-dock-settings,
@@ -566,8 +558,7 @@ select.dropdown {
   gap: 0;
 }
 
-.workspace-tab-container .view-header {
-}
+.workspace-tab-container .view-header {}
 
 .workspace-tab-container .view-header-title-container {
   height: var(--header-height);
@@ -576,7 +567,7 @@ select.dropdown {
 .mod-right-split .workspace-tab-header-container-inner,
 .mod-left-split .workspace-tab-header-container-inner {
   gap: 0;
-  margin-left: 1rem;
+  margin-left:1rem;
 }
 .mod-right-split .workspace-tab-header,
 .mod-left-split .workspace-tab-header {
@@ -599,7 +590,7 @@ select.dropdown {
 .mod-left-split .workspace-tab-header.is-active {
   border-top: 1px solid var(--tab-outline-color);
   border-left: 1px solid var(--tab-outline-color);
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #FFFFFF;
   border-right: 1px solid var(--color-base-20);
 
   box-shadow: none;
@@ -678,8 +669,7 @@ select.dropdown {
   border: 4px ridge var(--border-highlight);
 }
 
-.nav-action-button:active {
-}
+.nav-action-button:active {}
 
 .nav-header {
   height: var(--header-height);
@@ -742,9 +732,8 @@ select.dropdown {
   background-color: inherit;
 }
 
-.nav-folder.mod-root .nav-folder > .nav-folder-children {
-  border-left: var(--nav-indentation-guide-width) dotted
-    var(--nav-indentation-guide-color);
+.nav-folder.mod-root .nav-folder>.nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) dotted var(--nav-indentation-guide-color);
 }
 
 .modal-close-button {

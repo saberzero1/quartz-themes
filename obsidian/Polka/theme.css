@@ -14,21 +14,11 @@
   --background-l: calc(var(--ss-light-l) * 5 + 50%);
   --background-contrast: calc(var(--ss-light-contrast) * 4.8);
   --background-secondary-s: calc(var(--background-s) * 0.875);
-  --background-secondary-l: calc(
-    var(--background-l) - 2% - var(--background-contrast)
-  );
+  --background-secondary-l: calc(var(--background-l) - 2% - var(--background-contrast));
 
   /* Background Color Definitions */
-  --background-primary: hsl(
-    var(--background-h),
-    var(--background-s),
-    var(--background-l)
-  );
-  --background-secondary: hsl(
-    var(--background-h),
-    var(--background-secondary-s),
-    var(--background-secondary-l)
-  );
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-secondary: hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l));
   --background-dark: rgb(23, 35, 62);
   --background-extra-dark: #000;
   --background-primary-alt: var(--background-secondary);
@@ -38,7 +28,7 @@
   --accent-soft-hsl: var(--background-h), calc(var(--background-s) * 0.5), 15%;
   --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1);
   --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05);
-
+  
   /* Main Accent Colors */
   --accent-h: 0;
   --accent-s: 75%;
@@ -50,11 +40,7 @@
   --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
   --text-selection: var(--accent-on-selection);
   /* default text highlights are accent color with additional saturation and lightness */
-  --ss-light-highlight-bg: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) * 1.1),
-    calc(var(--accent-l) * 1.1 + 10%)
-  );
+  --ss-light-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1 + 10%));
   --text-highlight-bg: var(--ss-light-highlight-bg);
 
   /* Font Colors */
@@ -137,21 +123,11 @@
   --background-l: calc(var(--ss-dark-l) * 5);
   --background-contrast: calc(var(--ss-dark-contrast) * 4.8);
   --background-secondary-s: calc(var(--background-s) * 0.875);
-  --background-secondary-l: calc(
-    var(--background-l) + 2% + var(--background-contrast)
-  );
+  --background-secondary-l: calc(var(--background-l) + 2% + var(--background-contrast));
 
   /* Background Color Definitions */
-  --background-primary: hsl(
-    var(--background-h),
-    var(--background-s),
-    var(--background-l)
-  );
-  --background-secondary: hsl(
-    var(--background-h),
-    var(--background-secondary-s),
-    var(--background-secondary-l)
-  );
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-secondary: hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l));
   --background-dark: rgb(10, 18, 30);
   --background-extra-dark: #000;
   --background-primary-alt: var(--background-dark);
@@ -173,11 +149,7 @@
   --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
   --text-selection: var(--accent-on-selection);
   /* default text highlights are accent color with additional saturation and lightness */
-  --ss-dark-highlight-bg: hsl(
-    var(--accent-h),
-    calc(var(--accent-s) * 1.1),
-    calc(var(--accent-l) * 1.1 + 10%)
-  );
+  --ss-dark-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1 + 10%));
   --text-highlight-bg: var(--ss-dark-highlight-bg);
 
   /* Font Colors */
@@ -229,11 +201,7 @@
   --background-modifier-form-field: var(--background-dark);
   --background-modifier-border: var(--accent-soft-dark);
   --background-modifier-border-hover: var(--accent-soft-dark);
-  --background-modifier-border-focus: hsl(
-    var(--background-h),
-    var(--background-s),
-    calc(var(--background-l) - 4%)
-  );
+  --background-modifier-border-focus: hsl(var(--background-h), var(--background-s), calc(var(--background-l) - 4%));
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
   --search-result-bg-hover: var(--background-modifier-form-field);
@@ -251,19 +219,14 @@
 
 body {
   /* Polka Dots */
-  --polka-dots:
-    radial-gradient(var(--color-accent) 15%, transparent 25%),
-    radial-gradient(var(--color-accent) 17.5%, transparent 25%);
+  --polka-dots: radial-gradient(var(--color-accent) 15%, transparent 25%),
+  radial-gradient(var(--color-accent) 17.5%, transparent 25%);
   --ribbon-border: none;
 
   /* Font Defaults */
-  --font-default:
-    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-default: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-interface-theme: var(--font-default);
-  --font-monospace-default:
-    "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
-    Consolas, "Source Code Pro", monospace;
+  --font-monospace-default: 'iA Writer Mono S', 'IBM Plex Mono', 'Roboto Mono', Menlo, SFMono-Regular, Consolas, 'Source Code Pro', monospace;
   --inline-title-size: 1.625em;
   --h1-size: 1.5em;
   --h2-size: 1.375em;
@@ -290,7 +253,7 @@ body {
   --vault-name-font-weight: bold;
   --table-header-font: var(--font-text);
   --line-height-normal: 1.25em;
-  --list-spacing: calc(var(--line-height-normal) / 5);
+  --list-spacing: calc(var(--line-height-normal)/5);
   --list-indent: 1.25em;
   --hr-thickness: 1px;
 
@@ -322,7 +285,7 @@ body {
   /* Code Blocks */
   --code-background: var(--background-dark) !important;
   --code-normal: hsl(0, 0%, 89%) !important;
-  --code-punctuation: var(--code-normal) !important;
+  --code-punctuation: var(--code-normal) !important;;
   --color-yellow: rgb(230, 205, 90) !important;
   --color-orange: rgb(220, 95, 0) !important;
   --color-pink: rgb(220, 100, 210) !important;
@@ -353,18 +316,16 @@ body {
   --button-shadow: hsl(var(--accent-soft-hsl), 0.6);
 }
 
+
 /* Ribbon */
 .ss-polka-dots {
   --polka-dots: none;
   --ribbon-border: var(--divider-width) solid var(--accent-soft-light);
 }
 
-.workspace-ribbon,
-.side-dock-ribbon {
+.workspace-ribbon, .side-dock-ribbon {
   background-image: var(--polka-dots);
-  background-position:
-    2px 0px,
-    6px 4px;
+  background-position: 2px 0px, 6px 4px;
   background-size: 8px 8px;
   border-right: var(--ribbon-border);
 }
@@ -375,11 +336,7 @@ body {
 }
 
 .side-dock-ribbon-action:hover {
-  background: hsl(
-    var(--background-h),
-    var(--background-secondary-s),
-    calc(var(--background-l) - 5%)
-  );
+  background: hsl(var(--background-h), var(--background-secondary-s), calc(var(--background-l) - 5%));
   border-radius: var(--radius-s);
 }
 
@@ -390,29 +347,21 @@ body {
 }
 
 /* Font Styles */
-h5,
-.markdown-rendered h5,
-.HyperMD-header-5,
-.HyperMD-list-line .cm-header-5 {
+h5, .markdown-rendered h5, .HyperMD-header-5, .HyperMD-list-line .cm-header-5 {
   font-weight: bold;
 }
 
-h6,
-.markdown-rendered h6,
-.HyperMD-header-6,
-.HyperMD-list-line .cm-header-6 {
+h6, .markdown-rendered h6, .HyperMD-header-6, .HyperMD-list-line .cm-header-6 {
   font-weight: normal;
   font-style: italic;
 }
 
-hr,
-.markdown-rendered hr {
+hr, .markdown-rendered hr {
   border-top: var(--hr-color) var(--hr-thickness) dashed;
 }
 
 /* Text Block Spacing */
-.cm-formatting-list,
-input[type="checkbox"] {
+.cm-formatting-list, input[type=checkbox] {
   margin-right: 0.25em;
 }
 
@@ -451,8 +400,7 @@ table {
 }
 
 .HyperMD-codeblock .cm-indent::before {
-  border-right: var(--indentation-guide-width) solid
-    var(--code-indentation-guide-color) !important;
+  border-right: var(--indentation-guide-width) solid var(--code-indentation-guide-color) !important;
 }
 
 .HyperMD-codeblock {
@@ -467,8 +415,7 @@ table {
   padding: 0.75em;
 }
 
-.callout-title,
-.callout-icon .svg-icon {
+.callout-title, .callout-icon .svg-icon {
   font-size: var(--h6-size);
   color: var(--text-normal);
 }
@@ -493,8 +440,7 @@ table {
   --callout-icon: lucide-help-circle;
 }
 
-.callout[data-callout="hint"],
-.callout[data-callout="tip"] {
+.callout[data-callout="hint"], .callout[data-callout="tip"] {
   --callout-icon: lucide-lightbulb;
 }
 
@@ -502,8 +448,7 @@ table {
   --callout-icon: lucide-bookmark;
 }
 
-.callout[data-callout="check"],
-.callout[data-callout="done"] {
+.callout[data-callout="check"], .callout[data-callout="done"] {
   --callout-icon: lucide-check-square;
 }
 
@@ -528,23 +473,17 @@ table {
 }
 
 /* Tags */
-.tag,
-.cm-hashtag {
+.tag, .cm-hashtag {
   line-height: 2em !important;
 }
 
 /* Highlights */
-.suggestion-highlight,
-.markdown-rendered mark,
-.cm-s-obsidian .cm-highlight,
-.cm-formatting-highlight {
+.suggestion-highlight, .markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
   background: var(--text-highlight-bg);
   color: var(--text-highlight-fg) !important;
 }
 
-.markdown-rendered mark,
-.cm-s-obsidian .cm-highlight,
-.cm-formatting-highlight {
+.markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
   background: var(--text-highlight-bg);
   border-radius: 0.5px;
   color: var(--text-highlight-fg) !important;
@@ -563,8 +502,7 @@ table {
   color: var(--text-highlight-fg);
 }
 
-.is-flashing .tag,
-.is-flashing p {
+.is-flashing .tag, .is-flashing p {
   color: var(--text-highlight-fg);
 }
 
@@ -616,31 +554,29 @@ table {
   background-color: var(--background-primary);
 }
 
-select,
-.dropdown,
-select:focus,
+select, .dropdown, select:focus,
 .dropdown:focus {
   box-shadow: 0 0 1px 0px var(--background-modifier-border-focus);
 }
 
 textarea:active,
-input[type="text"]:active,
-input[type="search"]:active,
-input[type="email"]:active,
-input[type="password"]:active,
-input[type="number"]:active,
+input[type='text']:active,
+input[type='search']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='number']:active,
 textarea:focus,
-input[type="text"]:focus,
-input[type="search"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
 textarea:focus-visible,
-input[type="text"]:focus-visible,
-input[type="search"]:focus-visible,
-input[type="email"]:focus-visible,
-input[type="password"]:focus-visible,
-input[type="number"]:focus-visible {
+input[type='text']:focus-visible,
+input[type='search']:focus-visible,
+input[type='email']:focus-visible,
+input[type='password']:focus-visible,
+input[type='number']:focus-visible {
   box-shadow: 0 0 0 0.75px var(--background-modifier-border-focus);
 }
 
@@ -655,8 +591,7 @@ input.document-replace-input.mod-no-match {
   font-weight: normal;
 }
 
-#calendar-container .month,
-#calendar-container .year {
+#calendar-container .month, #calendar-container .year {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -761,16 +696,14 @@ code.language-output {
   margin-bottom: 4em !important;
 }
 
-.run-code-button,
-.clear-button {
+.run-code-button, .clear-button {
   background: transparent !important;
   border: 1px solid var(--code-normal) !important;
   color: var(--code-normal) !important;
   margin: 16px !important;
 }
 
-.run-code-button:hover,
-.clear-button:hover {
+.run-code-button:hover, .clear-button:hover {
   background: var(--code-normal) !important;
   border: 1px solid var(--code-normal) !important;
   color: var(--background-dark) !important;
@@ -782,14 +715,12 @@ body {
   --oz-fta-file-font-size: var(--nav-item-size);
 }
 
-.oz-folder-name.is-root-folder,
-.oz-file-tree-header {
+.oz-folder-name.is-root-folder, .oz-file-tree-header {
   font-size: var(--nav-item-size) !important;
   font-weight: bold;
 }
 
-.oz-folder-block,
-.oz-nav-file-title {
+.oz-folder-block, .oz-nav-file-title {
   padding: 2px 0;
 }
 
@@ -865,7 +796,7 @@ button:not(.clickable-icon):hover {
   transition: 0s;
 }
 
-.kanban-plugin__lane input[type="checkbox"]:checked:after {
+.kanban-plugin__lane input[type=checkbox]:checked:after {
   top: -2px;
   left: -2px;
 }
@@ -915,25 +846,24 @@ button:not(.clickable-icon):hover {
 }
 
 /* Obsidian/Plugin Bugs */
-pre,
-.markdown-rendered pre {
+pre, .markdown-rendered pre {
   color: var(--code-normal);
   font-family: var(--font-monospace);
 }
 
 .dracula-code-colors {
-  --code-background: #282a36 !important;
-  --code-normal: #f8f8f2 !important;
+  --code-background: #282A36 !important;
+  --code-normal: #F8F8F2 !important;
   --code-punctuation: var(--code-normal) !important;
-  --code-comment: #6272a4 !important;
+  --code-comment: #6272A4 !important;
   --code-indentation-guide-color: var(--code-comment) !important;
-  --color-yellow: #f1fa8c !important;
-  --color-orange: #ffb86c !important;
-  --color-pink: #ff79c6 !important;
-  --color-red: #ff5555 !important;
-  --color-cyan: #8be9fd !important;
-  --color-green: #50fa7b !important;
-  --color-purple: #bd93f9 !important;
+  --color-yellow: #F1FA8C !important;
+  --color-orange: #FFB86C !important;
+  --color-pink: #FF79C6 !important;
+  --color-red: #FF5555 !important;
+  --color-cyan: #8BE9FD !important;
+  --color-green: #50FA7B !important;
+  --color-purple: #BD93F9 !important;
 }
 
 .theme-dark.gruvbox-code-colors {
@@ -948,7 +878,7 @@ pre,
   --color-red: #fb4934 !important;
   --color-cyan: #83a598 !important;
   --color-green: #b8bb26 !important;
-  --color-purple: #bd93f9 !important;
+  --color-purple: #BD93F9 !important;
 }
 
 .theme-light.gruvbox-code-colors {
@@ -1055,6 +985,14 @@ pre,
 }
 
 /* Style Settings Plugin */
+/* @settings
+
+name: Polka Light Theme Customization
+id: ss-light-customization
+settings:
+
+*/
+
 /* @settings
 
 name: Polka Theme

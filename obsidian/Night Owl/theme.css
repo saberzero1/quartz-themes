@@ -1,0 +1,548 @@
+/* Night Owl Theme for Obsidian */
+/* Based on Night Owl VSCode theme by Sarah Drasner */
+
+.theme-dark {
+	/* === NIGHT OWL COLOR PALETTE === */
+
+	/* Primary Colors */
+	--night-owl-bg-primary: #011627;
+	--night-owl-bg-secondary: #0b253a;
+	--night-owl-bg-tertiary: #021320;
+	--night-owl-bg-tab-active: #0b2942;
+	--night-owl-bg-tab-inactive: #01111d;
+
+	/* Text Colors */
+	--night-owl-text-primary: #d6deeb;
+	--night-owl-text-secondary: #5f7e97;
+	--night-owl-text-muted: #4b6479;
+	--night-owl-text-accent: #82AAFF;
+	--night-owl-text-bright: #ffffff;
+
+	/* Accent Colors */
+	--night-owl-accent-purple: #c792ea;
+	--night-owl-accent-blue: #82AAFF;
+	--night-owl-accent-cyan: #7fdbca;
+	--night-owl-accent-green: #c5e478;
+	--night-owl-accent-yellow: #ecc48d;
+	--night-owl-accent-orange: #F78C6C;
+	--night-owl-accent-red: #EF5350;
+	--night-owl-accent-pink: #ff5874;
+
+	/* UI Element Colors */
+	--night-owl-border: #122d42;
+	--night-owl-border-secondary: #262A39;
+	--night-owl-selection: #1d3b53;
+	--night-owl-highlight: #5f7e9779;
+	--night-owl-button-bg: #7e57c2cc;
+	--night-owl-button-hover: #7e57c2;
+
+	/* === OBSIDIAN CSS VARIABLES MAPPING === */
+
+	/* Base Colors */
+	--color-base-00: #011627;
+	--color-base-05: #0b253a;
+	--color-base-10: #021320;
+	--color-base-20: #122d42;
+	--color-base-25: #1d3b53;
+	--color-base-30: #262A39;
+	--color-base-35: #2C3043;
+	--color-base-40: #4b6479;
+	--color-base-50: #5f7e97;
+	--color-base-60: #89a4bb;
+	--color-base-70: #d6deeb;
+	--color-base-100: #ffffff;
+
+	/* Accent Colors */
+	--color-accent: #82AAFF;
+	--color-accent-1: #c792ea;
+	--color-accent-2: #7fdbca;
+
+	/* Background Colors */
+	--background-primary: var(--night-owl-bg-primary);
+	--background-primary-alt: var(--night-owl-bg-secondary);
+	--background-secondary: var(--night-owl-bg-tertiary);
+	--background-secondary-alt: var(--night-owl-bg-tab-active);
+	--background-modifier-border: var(--night-owl-border);
+	--background-modifier-border-hover: var(--night-owl-border-secondary);
+	--background-modifier-border-focus: var(--night-owl-accent-blue);
+	--background-modifier-error-rgb: 239, 83, 80;
+	--background-modifier-error: rgba(var(--background-modifier-error-rgb), 0.3);
+	--background-modifier-error-hover: rgba(var(--background-modifier-error-rgb), 0.4);
+	--background-modifier-success-rgb: 197, 228, 120;
+	--background-modifier-success: rgba(var(--background-modifier-success-rgb), 0.3);
+	--background-modifier-message: var(--night-owl-bg-secondary);
+
+	/* Text Colors */
+	--text-normal: var(--night-owl-text-primary);
+	--text-muted: var(--night-owl-text-secondary);
+	--text-faint: var(--night-owl-text-muted);
+	--text-accent: var(--night-owl-accent-blue);
+	--text-accent-hover: var(--night-owl-accent-cyan);
+	--text-on-accent: var(--night-owl-text-bright);
+	--text-error: var(--night-owl-accent-red);
+	--text-warning: #FFCA28;
+	--text-success: var(--night-owl-accent-green);
+
+	/* Interactive Colors */
+	--interactive-normal: var(--night-owl-bg-secondary);
+	--interactive-hover: var(--night-owl-bg-tab-active);
+	--interactive-accent: var(--night-owl-accent-blue);
+	--interactive-accent-hover: var(--night-owl-accent-cyan);
+	--interactive-success: var(--night-owl-accent-green);
+
+	/* Scrollbar */
+	--scrollbar-active-thumb-bg: rgba(8, 77, 129, 0.5);
+	--scrollbar-bg: transparent;
+	--scrollbar-thumb-bg: rgba(8, 77, 129, 0.3);
+
+	/* Borders and Dividers */
+	--divider-color: var(--night-owl-border);
+	--divider-color-hover: var(--night-owl-border-secondary);
+
+	/* Tab Colors */
+	--tab-background-active: var(--night-owl-bg-tab-active);
+	--tab-text-color-active: #d2dee7;
+	--tab-text-color-inactive: var(--night-owl-text-secondary);
+	--tab-outline-color: var(--night-owl-border-secondary);
+
+	/* Button Colors */
+	--button-default-bg: var(--night-owl-button-bg);
+	--button-default-color: var(--night-owl-text-bright);
+	--button-default-border-color: transparent;
+	--button-hover-bg: var(--night-owl-button-hover);
+	--button-active-bg: var(--night-owl-accent-blue);
+
+	/* Input Colors */
+	--input-bg: var(--night-owl-bg-secondary);
+	--input-border-color: var(--night-owl-text-secondary);
+	--input-text-color: var(--night-owl-text-bright);
+	--input-placeholder-color: var(--night-owl-text-secondary);
+
+	/* Selection Colors */
+	--text-selection: var(--night-owl-selection);
+	--text-highlight-bg: var(--night-owl-highlight);
+
+	/* Code Colors */
+	--code-background: var(--night-owl-bg-tertiary);
+	--code-normal: var(--night-owl-text-primary);
+	--code-comment: #637777;
+	--code-function: var(--night-owl-accent-blue);
+	--code-important: var(--night-owl-accent-red);
+	--code-keyword: var(--night-owl-accent-purple);
+	--code-operator: var(--night-owl-accent-cyan);
+	--code-property: var(--night-owl-accent-green);
+	--code-punctuation: var(--night-owl-text-primary);
+	--code-string: var(--night-owl-accent-yellow);
+	--code-tag: #caece6;
+	--code-value: var(--night-owl-accent-orange);
+
+	/* Syntax Highlighting */
+	--syntax-highlighting-keyword: var(--night-owl-accent-purple);
+	--syntax-highlighting-string: var(--night-owl-accent-yellow);
+	--syntax-highlighting-function: var(--night-owl-accent-blue);
+	--syntax-highlighting-comment: #637777;
+	--syntax-highlighting-number: var(--night-owl-accent-orange);
+	--syntax-highlighting-operator: var(--night-owl-accent-cyan);
+	--syntax-highlighting-variable: var(--night-owl-accent-green);
+	--syntax-highlighting-class: #ffcb8b;
+	--syntax-highlighting-constant: var(--night-owl-accent-blue);
+	--syntax-highlighting-tag: #caece6;
+	--syntax-highlighting-attribute: var(--night-owl-accent-green);
+
+	/* Graph Colors */
+	--graph-line: var(--night-owl-border);
+	--graph-node: var(--night-owl-accent-blue);
+	--graph-node-unresolved: var(--night-owl-text-secondary);
+	--graph-node-focused: var(--night-owl-accent-cyan);
+	--graph-node-tag: var(--night-owl-accent-green);
+	--graph-node-attachment: var(--night-owl-accent-orange);
+
+	/* Calendar Colors */
+	--calendar-hover: var(--night-owl-bg-tab-active);
+	--calendar-background-hover: var(--night-owl-bg-secondary);
+	--calendar-week: var(--night-owl-text-secondary);
+	--calendar-today: var(--night-owl-accent-blue);
+
+	/* Tag Colors */
+	--tag-background: var(--night-owl-bg-secondary);
+	--tag-background-hover: var(--night-owl-bg-tab-active);
+	--tag-border: var(--night-owl-border);
+	--tag-color: var(--night-owl-accent-cyan);
+
+	/* Checkbox Colors */
+	--checkbox-color: var(--night-owl-accent-blue);
+	--checkbox-color-hover: var(--night-owl-accent-cyan);
+	--checkbox-border: var(--night-owl-border);
+	--checkbox-border-hover: var(--night-owl-accent-blue);
+
+	/* Progress Bar Colors */
+	--progress-bar-bg: var(--night-owl-bg-secondary);
+	--progress-bar-fill: var(--night-owl-accent-blue);
+
+	/* Modal Colors */
+	--modal-background: var(--night-owl-bg-primary);
+	--modal-border: var(--night-owl-border);
+	--modal-backdrop: rgba(1, 22, 39, 0.8);
+
+	/* Tooltip Colors */
+	--tooltip-bg: var(--night-owl-bg-tertiary);
+	--tooltip-color: var(--night-owl-text-primary);
+	--tooltip-border: var(--night-owl-border);
+
+	/* Menu Colors */
+	--menu-background: var(--night-owl-bg-primary);
+	--menu-border: var(--night-owl-border);
+	--menu-item-background-hover: var(--night-owl-bg-tab-active);
+	--menu-item-background-active: var(--night-owl-selection);
+	--menu-item-color: var(--night-owl-text-primary);
+	--menu-item-color-hover: var(--night-owl-text-bright);
+
+	/* Sidebar Colors */
+	--nav-item-background-hover: var(--night-owl-bg-tab-active);
+	--nav-item-background-active: var(--night-owl-selection);
+	--nav-item-background-selected: var(--night-owl-bg-tab-active);
+	--nav-item-color: var(--night-owl-text-secondary);
+	--nav-item-color-hover: var(--night-owl-text-primary);
+	--nav-item-color-active: var(--night-owl-text-bright);
+	--nav-item-color-selected: var(--night-owl-text-bright);
+	--nav-item-weight-hover: normal;
+	--nav-item-weight-active: normal;
+	--nav-collapse-icon-color: var(--night-owl-text-secondary);
+	--nav-collapse-icon-color-collapsed: var(--night-owl-text-secondary);
+
+	/* Status Bar Colors */
+	--status-bar-background: var(--night-owl-bg-primary);
+	--status-bar-border: var(--night-owl-border-secondary);
+	--status-bar-text: var(--night-owl-text-secondary);
+
+	/* Title Bar Colors */
+	--titlebar-background: var(--night-owl-bg-primary);
+	--titlebar-background-focused: var(--night-owl-bg-primary);
+	--titlebar-border: var(--night-owl-border-secondary);
+	--titlebar-text: #eeefff;
+	--titlebar-text-weight: normal;
+
+	/* Search Colors */
+	--search-result-background: var(--night-owl-bg-secondary);
+	--search-clear-button-color: var(--night-owl-text-secondary);
+	--search-clear-button-color-hover: var(--night-owl-text-primary);
+	--search-icon-color: var(--night-owl-text-secondary);
+	--search-icon-color-active: var(--night-owl-accent-blue);
+	--search-text-clear: var(--night-owl-text-secondary);
+
+	/* File Colors */
+	--file-header-font-weight: 600;
+	--file-line-width: 700px;
+	--file-folding-offset: 24px;
+	--file-margins: 44px;
+
+	/* Vault Colors */
+	--vault-name-font-size: var(--font-ui-small);
+	--vault-name-font-weight: 500;
+	--vault-name-color: var(--night-owl-text-secondary);
+
+	/* Workspace Colors */
+	--workspace-background-translucent: rgba(1, 22, 39, 0.85);
+
+	/* Ribbon Colors */
+	--ribbon-background: var(--night-owl-bg-primary);
+	--ribbon-background-collapsed: var(--night-owl-bg-primary);
+
+	/* Icon Colors */
+	--icon-color: var(--night-owl-text-secondary);
+	--icon-color-hover: var(--night-owl-text-primary);
+	--icon-color-active: var(--night-owl-accent-blue);
+	--icon-color-focused: var(--night-owl-accent-blue);
+
+	/* Indentation Guide Colors */
+	--indentation-guide-color: rgba(94, 129, 206, 0.32);
+	--indentation-guide-color-active: #7E97AC;
+
+	/* Embed Colors */
+	--embed-background: var(--night-owl-bg-secondary);
+	--embed-border-left: 2px solid var(--night-owl-accent-blue);
+	--embed-border-right: none;
+	--embed-border-top: none;
+	--embed-border-bottom: none;
+	--embed-padding: 0 0 0 20px;
+	--embed-font-style: italic;
+
+	/* Blockquote Colors */
+	--blockquote-border: 2px solid var(--night-owl-accent-cyan);
+	--blockquote-background-color: rgba(127, 219, 202, 0.1);
+	--blockquote-font-style: italic;
+	--blockquote-color: var(--night-owl-text-primary);
+
+	/* Table Colors */
+	--table-background: var(--night-owl-bg-primary);
+	--table-border-width: 1px;
+	--table-border-color: var(--night-owl-border);
+	--table-header-background: var(--night-owl-bg-secondary);
+	--table-header-background-hover: var(--night-owl-bg-tab-active);
+	--table-header-border-width: 1px;
+	--table-header-border-color: var(--night-owl-border);
+	--table-header-font: inherit;
+	--table-header-font-size: var(--font-smaller);
+	--table-header-font-weight: 600;
+	--table-header-color: var(--night-owl-text-primary);
+	--table-text-color: var(--night-owl-text-primary);
+	--table-row-background-hover: var(--night-owl-bg-secondary);
+	--table-row-alt-background: rgba(95, 126, 151, 0.05);
+	--table-column-max-width: none;
+	--table-column-alt-background: rgba(95, 126, 151, 0.05);
+
+	/* List Colors */
+	--list-indent: 2em;
+	--list-spacing: 0.075em;
+	--list-marker-color: var(--night-owl-accent-cyan);
+	--list-marker-color-hover: var(--night-owl-accent-blue);
+	--list-marker-color-collapsed: var(--night-owl-text-secondary);
+
+	/* Heading Colors */
+	--h1-color: var(--night-owl-accent-blue);
+	--h2-color: var(--night-owl-accent-cyan);
+	--h3-color: var(--night-owl-accent-green);
+	--h4-color: var(--night-owl-accent-yellow);
+	--h5-color: var(--night-owl-accent-orange);
+	--h6-color: var(--night-owl-accent-purple);
+	--h1-font: inherit;
+	--h2-font: inherit;
+	--h3-font: inherit;
+	--h4-font: inherit;
+	--h5-font: inherit;
+	--h6-font: inherit;
+	--h1-line-height: 1.2;
+	--h2-line-height: 1.2;
+	--h3-line-height: 1.2;
+	--h4-line-height: 1.2;
+	--h5-line-height: 1.2;
+	--h6-line-height: 1.2;
+	--h1-size: 1.875em;
+	--h2-size: 1.5em;
+	--h3-size: 1.25em;
+	--h4-size: 1.125em;
+	--h5-size: 1em;
+	--h6-size: 1em;
+	--h1-style: normal;
+	--h2-style: normal;
+	--h3-style: normal;
+	--h4-style: normal;
+	--h5-style: normal;
+	--h6-style: normal;
+	--h1-variant: normal;
+	--h2-variant: normal;
+	--h3-variant: normal;
+	--h4-variant: normal;
+	--h5-variant: normal;
+	--h6-variant: normal;
+	--h1-weight: 600;
+	--h2-weight: 600;
+	--h3-weight: 600;
+	--h4-weight: 600;
+	--h5-weight: 600;
+	--h6-weight: 600;
+
+	/* Link Colors */
+	--link-color: var(--night-owl-accent-cyan);
+	--link-color-hover: var(--night-owl-accent-blue);
+	--link-external-color: #ff869a;
+	--link-external-color-hover: var(--night-owl-accent-red);
+	--link-unresolved-color: var(--night-owl-text-secondary);
+	--link-unresolved-opacity: 0.7;
+	--link-unresolved-filter: none;
+	--link-unresolved-decoration-color: var(--night-owl-text-secondary);
+
+	/* Bold and Italic */
+	--bold-color: var(--night-owl-accent-green);
+	--bold-weight: 600;
+	--italic-color: var(--night-owl-accent-purple);
+
+	/* Highlight Colors */
+	--highlight-mix-blend-mode: lighten;
+	--highlight-background: rgba(255, 235, 149, 0.4);
+	--highlight-background-hover: rgba(255, 235, 149, 0.6);
+
+	/* Inline Code */
+	--code-size: 0.875em;
+	--code-white-space: pre-wrap;
+
+	/* HR (Horizontal Rule) */
+	--hr-color: var(--night-owl-border);
+	--hr-thickness: 2px;
+
+	/* Radius Variables (keeping original minimal style) */
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
+}
+
+/* === COMPONENT-SPECIFIC STYLING === */
+
+/* Workspace Tabs */
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	display: none;
+}
+
+.workspace-tab-header.is-active {
+	background-color: var(--night-owl-bg-tab-active);
+	color: var(--night-owl-text-primary);
+	border-color: var(--night-owl-border-secondary);
+}
+
+.workspace-tab-header {
+	background-color: var(--night-owl-bg-tab-inactive);
+	color: var(--night-owl-text-secondary);
+	border-color: var(--night-owl-border-secondary);
+}
+
+/* SVG Icons */
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+/* Menu Styling */
+.menu {
+	padding: var(--size-2-1);
+	background-color: var(--night-owl-bg-primary);
+	border: 1px solid var(--night-owl-border);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+	color: var(--night-owl-text-primary);
+}
+
+.menu-item:hover {
+	background-color: var(--night-owl-bg-tab-active);
+	color: var(--night-owl-text-bright);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+	border-color: var(--night-owl-border);
+}
+
+/* Syntax Highlighting for Code Blocks */
+.cm-s-obsidian span.cm-comment {
+	color: #637777;
+	font-style: italic;
+}
+
+.cm-s-obsidian span.cm-string {
+	color: var(--night-owl-accent-yellow);
+}
+
+.cm-s-obsidian span.cm-number {
+	color: var(--night-owl-accent-orange);
+}
+
+.cm-s-obsidian span.cm-keyword {
+	color: var(--night-owl-accent-purple);
+	font-style: italic;
+}
+
+.cm-s-obsidian span.cm-operator {
+	color: var(--night-owl-accent-cyan);
+}
+
+.cm-s-obsidian span.cm-variable {
+	color: var(--night-owl-accent-green);
+}
+
+.cm-s-obsidian span.cm-variable-2 {
+	color: var(--night-owl-accent-blue);
+}
+
+.cm-s-obsidian span.cm-def {
+	color: var(--night-owl-accent-blue);
+	font-style: italic;
+}
+
+.cm-s-obsidian span.cm-bracket {
+	color: var(--night-owl-text-primary);
+}
+
+.cm-s-obsidian span.cm-tag {
+	color: #caece6;
+}
+
+.cm-s-obsidian span.cm-attribute {
+	color: var(--night-owl-accent-green);
+	font-style: italic;
+}
+
+.cm-s-obsidian span.cm-atom {
+	color: var(--night-owl-accent-blue);
+}
+
+.cm-s-obsidian span.cm-quote {
+	color: #697098;
+	font-style: italic;
+}
+
+/* Editor Cursor */
+.cm-cursor {
+	border-left-color: #80a4c2;
+}
+
+/* Selection */
+.cm-s-obsidian .CodeMirror-selected {
+	background: var(--night-owl-selection);
+}
+
+.cm-s-obsidian .CodeMirror-selectedtext {
+	background: transparent;
+}
+
+/* Line Numbers */
+.cm-s-obsidian .CodeMirror-linenumber {
+	color: var(--night-owl-text-muted);
+}
+
+.cm-s-obsidian .CodeMirror-activeline .CodeMirror-linenumber {
+	color: #C5E4FD;
+}
+
+/* Active Line */
+.cm-s-obsidian .CodeMirror-activeline-background {
+	background: rgba(40, 112, 125, 0.16);
+}
+
+/* Search Highlighting */
+.cm-s-obsidian .cm-searching {
+	background-color: var(--night-owl-highlight);
+}
+
+/* Fold Markers */
+.cm-s-obsidian .CodeMirror-foldmarker {
+	color: var(--night-owl-accent-blue);
+	background-color: var(--night-owl-bg-secondary);
+	border: 1px solid var(--night-owl-border);
+}
+
+/* Gutters */
+.cm-s-obsidian .CodeMirror-gutters {
+	background-color: var(--night-owl-bg-primary);
+	border-right: 1px solid var(--night-owl-border);
+}
+
+/* Matching Brackets */
+.cm-s-obsidian .CodeMirror-matchingbracket {
+	background-color: rgba(127, 219, 202, 0.3);
+	color: var(--night-owl-text-bright) !important;
+}
+
+.cm-s-obsidian .CodeMirror-nonmatchingbracket {
+	background-color: rgba(239, 83, 80, 0.3);
+	color: var(--night-owl-text-bright) !important;
+}

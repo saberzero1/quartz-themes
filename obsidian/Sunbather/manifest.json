@@ -1,8 +1,7 @@
 {
-  "name": "Sunbather",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "babidisrc",
-  "authorUrl": "https://github.com/babidisrc",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Sunbather",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"author": "babidisrc",
+	"authorUrl": "https://github.com/babidisrc"
 }

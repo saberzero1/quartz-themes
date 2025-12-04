@@ -98,17 +98,16 @@ body.is-mobile.theme-dark {
   --modal-background: var(--background-primary);
   --text-highlight-bg: var(--text-accent);
   --tag-padding-y: 0.23em;
-  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-4)
-    var(--size-4-5);
-  --lucide-x: url('data:image/svg+xml,utf8,%3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="18"y1="6"x2="6"y2="18"%3E%3C/line%3E%3Clinex1="6"y1="6"x2="18"y2="18"%3E%3C/line%3E%3C/svg%3E');
-  --lucide-minus: url('data:image/svg+xml,utf8,%3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="5"y1="12"x2="19"y2="12"%3E%3C/line%3E%3C/svg%3E');
+  --callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-4) var(--size-4-5);
+  --lucide-x: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+  --lucide-minus: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
+  --lucide-maximize: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 3H5a2 2 0 0 0-2 2v3'%3E%3C/path%3E%3Cpath d='M21 8V5a2 2 0 0 0-2-2h-3'%3E%3C/path%3E%3Cpath d='M3 16v3a2 2 0 0 0 2 2h3'%3E%3C/path%3E%3Cpath d='M16 21h3a2 2 0 0 0 2-2v-3'%3E%3C/path%3E%3C/svg%3E");
+  --lucide-calendar-days: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3Cpath d='M8 14h.01'%3E%3C/path%3E%3Cpath d='M12 14h.01'%3E%3C/path%3E%3Cpath d='M16 14h.01'%3E%3C/path%3E%3Cpath d='M8 18h.01'%3E%3C/path%3E%3Cpath d='M12 18h.01'%3E%3C/path%3E%3Cpath d='M16 18h.01'%3E%3C/path%3E%3C/svg%3E");
 }
 body.theme-dark .markdown-rendered mark,
 body.is-mobile.theme-dark .markdown-rendered mark,
 body.theme-dark .cm-s-obsidian span:is(.cm-formatting-highlight, .cm-highlight),
-body.is-mobile.theme-dark
-  .cm-s-obsidian
-  span:is(.cm-formatting-highlight, .cm-highlight) {
+body.is-mobile.theme-dark .cm-s-obsidian span:is(.cm-formatting-highlight, .cm-highlight) {
   color: var(--text-on-accent);
 }
 body.theme-dark code[class*="language-"],
@@ -287,30 +286,12 @@ body.theme-dark .markdown-preview-section > div > :last-child,
 body.is-mobile.theme-dark .markdown-preview-section > div > :last-child {
   margin-block-end: 0;
 }
-body.theme-dark
-  .markdown-preview-section
-  div:not(:is([class], [style], [id]))
-  > ol:not(:is([class], [style], [id])),
-body.is-mobile.theme-dark
-  .markdown-preview-section
-  div:not(:is([class], [style], [id]))
-  > ol:not(:is([class], [style], [id])),
-body.theme-dark
-  .markdown-preview-section
-  div:not(:is([class], [style], [id]))
-  > .has-list-bullet:not(.contains-task-list),
-body.is-mobile.theme-dark
-  .markdown-preview-section
-  div:not(:is([class], [style], [id]))
-  > .has-list-bullet:not(.contains-task-list),
-body.theme-dark
-  .markdown-preview-section
-  div:not(:is([class], [style], [id]))
-  > .has-list-bullet.contains-task-list,
-body.is-mobile.theme-dark
-  .markdown-preview-section
-  div:not(:is([class], [style], [id]))
-  > .has-list-bullet.contains-task-list {
+body.theme-dark .markdown-preview-section div:not(:is([class], [style], [id])) > ol:not(:is([class], [style], [id])),
+body.is-mobile.theme-dark .markdown-preview-section div:not(:is([class], [style], [id])) > ol:not(:is([class], [style], [id])),
+body.theme-dark .markdown-preview-section div:not(:is([class], [style], [id])) > .has-list-bullet:not(.contains-task-list),
+body.is-mobile.theme-dark .markdown-preview-section div:not(:is([class], [style], [id])) > .has-list-bullet:not(.contains-task-list),
+body.theme-dark .markdown-preview-section div:not(:is([class], [style], [id])) > .has-list-bullet.contains-task-list,
+body.is-mobile.theme-dark .markdown-preview-section div:not(:is([class], [style], [id])) > .has-list-bullet.contains-task-list {
   padding-inline-start: calc((var(--size-4-5) + var(--size-4-6)) / 2);
 }
 body.theme-dark .HyperMD-header .cm-fold-indicator.is-collapsed,
@@ -318,19 +299,11 @@ body.is-mobile.theme-dark .HyperMD-header .cm-fold-indicator.is-collapsed {
   margin-bottom: var(--font-ui-medium);
 }
 body.theme-dark .markdown-source-view.mod-cm6 .HyperMD-codeblock-begin,
-body.is-mobile.theme-dark
-  .markdown-source-view.mod-cm6
-  .HyperMD-codeblock-begin {
+body.is-mobile.theme-dark .markdown-source-view.mod-cm6 .HyperMD-codeblock-begin {
   padding-top: var(--font-ui-medium);
 }
-body.theme-dark
-  .markdown-source-view.mod-cm6
-  .task-list-label
-  .task-list-item-checkbox,
-body.is-mobile.theme-dark
-  .markdown-source-view.mod-cm6
-  .task-list-label
-  .task-list-item-checkbox {
+body.theme-dark .markdown-source-view.mod-cm6 .task-list-label .task-list-item-checkbox,
+body.is-mobile.theme-dark .markdown-source-view.mod-cm6 .task-list-label .task-list-item-checkbox {
   margin: 0 2px 0 0;
 }
 body.theme-dark .workspace-split.mod-left-split,
@@ -338,16 +311,11 @@ body.is-mobile.theme-dark .workspace-split.mod-left-split {
   overflow: hidden;
 }
 body.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button:not(.mod-logo),
-body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
-  .titlebar-button:not(.mod-logo) {
+body.is-mobile.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button:not(.mod-logo) {
   padding: 0 var(--size-4-3);
 }
-body.theme-dark:is(.mod-linux, .mod-windows)
-  .titlebar-button:not(.mod-logo)
-  svg,
-body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
-  .titlebar-button:not(.mod-logo)
-  svg {
+body.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button:not(.mod-logo) svg,
+body.is-mobile.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button:not(.mod-logo) svg {
   -webkit-mask-size: cover;
   background-color: var(--icon-color);
   color: transparent;
@@ -355,57 +323,36 @@ body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
   height: var(--icon-s);
 }
 body.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-minimize svg,
-body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
-  .titlebar-button.mod-minimize
-  svg {
+body.is-mobile.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-minimize svg {
   -webkit-mask-image: var(--lucide-minus);
 }
 body.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-maximize svg,
-body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
-  .titlebar-button.mod-maximize
-  svg {
+body.is-mobile.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-maximize svg {
   -webkit-mask-image: var(--lucide-maximize);
 }
 body.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-close svg,
-body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
-  .titlebar-button.mod-close
-  svg {
+body.is-mobile.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-close svg {
   -webkit-mask-image: var(--lucide-x);
 }
 @media (hover: hover) {
-  body.theme-dark:is(.mod-linux, .mod-windows)
-    .titlebar-button.mod-close:hover
-    svg,
-  body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
-    .titlebar-button.mod-close:hover
-    svg {
+  body.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-close:hover svg,
+  body.is-mobile.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-close:hover svg {
     background-color: var(--text-on-accent);
   }
 }
 body.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-logo,
-body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
-  .titlebar-button.mod-logo {
+body.is-mobile.theme-dark:is(.mod-linux, .mod-windows) .titlebar-button.mod-logo {
   background: var(--color-accent);
   color: var(--text-on-accent);
 }
-body.theme-dark:is(.mod-linux, .mod-windows)
-  .workspace-ribbon.mod-left
-  .sidebar-toggle-button,
-body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
-  .workspace-ribbon.mod-left
-  .sidebar-toggle-button {
+body.theme-dark:is(.mod-linux, .mod-windows) .workspace-ribbon.mod-left .sidebar-toggle-button,
+body.is-mobile.theme-dark:is(.mod-linux, .mod-windows) .workspace-ribbon.mod-left .sidebar-toggle-button {
   background: var(--color-accent);
   border-bottom-right-radius: var(--radius-m);
   --background-modifier-hover: var(--color-accent-1);
 }
-body.theme-dark:is(.mod-linux, .mod-windows)
-  .workspace-ribbon.mod-left
-  .sidebar-toggle-button
-  .clickable-icon,
-body.is-mobile.theme-dark:is(.mod-linux, .mod-windows)
-  .workspace-ribbon.mod-left
-  .sidebar-toggle-button
-  .clickable-icon {
+body.theme-dark:is(.mod-linux, .mod-windows) .workspace-ribbon.mod-left .sidebar-toggle-button .clickable-icon,
+body.is-mobile.theme-dark:is(.mod-linux, .mod-windows) .workspace-ribbon.mod-left .sidebar-toggle-button .clickable-icon {
   color: var(--text-on-accent);
 }
 body.theme-dark .workspace-ribbon.mod-left,
@@ -414,14 +361,8 @@ body.theme-dark .workspace-ribbon.mod-left:before,
 body.is-mobile.theme-dark .workspace-ribbon.mod-left:before {
   border-color: transparent;
 }
-body.theme-dark
-  .workspace-ribbon.mod-left.is-collapsed
-  ~ .mod-root
-  .workspace-leaf-content,
-body.is-mobile.theme-dark
-  .workspace-ribbon.mod-left.is-collapsed
-  ~ .mod-root
-  .workspace-leaf-content {
+body.theme-dark .workspace-ribbon.mod-left.is-collapsed ~ .mod-root .workspace-leaf-content,
+body.is-mobile.theme-dark .workspace-ribbon.mod-left.is-collapsed ~ .mod-root .workspace-leaf-content {
   border-left: var(--tab-outline-width) solid var(--tab-outline-color);
 }
 body.theme-dark .mod-left-split,
@@ -438,14 +379,8 @@ body.is-mobile.theme-dark .mod-left-split .mod-top-left-space .workspace-leaf {
   border-left: var(--tab-outline-width) solid var(--tab-outline-color);
   border-top-left-radius: var(--radius-m);
 }
-body.theme-dark
-  .mod-left-split
-  .mod-top-left-space
-  .workspace-tab-header-container,
-body.is-mobile.theme-dark
-  .mod-left-split
-  .mod-top-left-space
-  .workspace-tab-header-container {
+body.theme-dark .mod-left-split .mod-top-left-space .workspace-tab-header-container,
+body.is-mobile.theme-dark .mod-left-split .mod-top-left-space .workspace-tab-header-container {
   border-color: transparent;
 }
 body.theme-dark .mod-left-split .workspace-tabs ~ .workspace-tabs,
@@ -517,17 +452,9 @@ body.is-mobile.theme-dark .HyperMD-codeblock:not(.HyperMD-codeblock-begin) {
   white-space: pre;
 }
 body.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task],
-body.is-mobile.theme-dark
-  .HyperMD-task-line
-  .task-list-item-checkbox[data-task],
-body.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task]
-  input[type="checkbox"],
-body.is-mobile.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task]
-  input[type="checkbox"] {
+body.is-mobile.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task],
+body.theme-dark .markdown-rendered .task-list-item[data-task] input[type="checkbox"],
+body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task] input[type="checkbox"] {
   border-radius: 100%;
 }
 body.theme-dark .HyperMD-task-line[data-task="x"],
@@ -541,37 +468,17 @@ body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="X"] {
   text-decoration: none !important;
   color: var(--text-muted) !important;
 }
-body.theme-dark
-  .HyperMD-task-line
-  .task-list-item-checkbox[data-task="/"]:checked,
-body.is-mobile.theme-dark
-  .HyperMD-task-line
-  .task-list-item-checkbox[data-task="/"]:checked,
-body.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task="/"]
-  input[type="checkbox"]:checked,
-body.is-mobile.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task="/"]
-  input[type="checkbox"]:checked {
+body.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="/"]:checked,
+body.is-mobile.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="/"]:checked,
+body.theme-dark .markdown-rendered .task-list-item[data-task="/"] input[type="checkbox"]:checked,
+body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="/"] input[type="checkbox"]:checked {
   background-color: transparent;
   overflow: hidden;
 }
-body.theme-dark
-  .HyperMD-task-line
-  .task-list-item-checkbox[data-task="/"]:checked:after,
-body.is-mobile.theme-dark
-  .HyperMD-task-line
-  .task-list-item-checkbox[data-task="/"]:checked:after,
-body.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task="/"]
-  input[type="checkbox"]:checked:after,
-body.is-mobile.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task="/"]
-  input[type="checkbox"]:checked:after {
+body.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="/"]:checked:after,
+body.is-mobile.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="/"]:checked:after,
+body.theme-dark .markdown-rendered .task-list-item[data-task="/"] input[type="checkbox"]:checked:after,
+body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="/"] input[type="checkbox"]:checked:after {
   -webkit-mask-image: none;
   background-color: var(--checkbox-color);
   width: 50%;
@@ -584,38 +491,18 @@ body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="-"] {
   text-decoration-color: var(--text-muted);
   color: var(--text-faint);
 }
-body.theme-dark
-  .HyperMD-task-line
-  .task-list-item-checkbox[data-task="-"]:checked,
-body.is-mobile.theme-dark
-  .HyperMD-task-line
-  .task-list-item-checkbox[data-task="-"]:checked,
-body.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task="-"]
-  input[type="checkbox"]:checked,
-body.is-mobile.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task="-"]
-  input[type="checkbox"]:checked {
+body.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="-"]:checked,
+body.is-mobile.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="-"]:checked,
+body.theme-dark .markdown-rendered .task-list-item[data-task="-"] input[type="checkbox"]:checked,
+body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="-"] input[type="checkbox"]:checked {
   background-color: var(--text-muted);
   -webkit-mask-image: var(--lucide-minus);
   -webkit-mask-size: cover;
 }
-body.theme-dark
-  .HyperMD-task-line
-  .task-list-item-checkbox[data-task="-"]:checked:after,
-body.is-mobile.theme-dark
-  .HyperMD-task-line
-  .task-list-item-checkbox[data-task="-"]:checked:after,
-body.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task="-"]
-  input[type="checkbox"]:checked:after,
-body.is-mobile.theme-dark
-  .markdown-rendered
-  .task-list-item[data-task="-"]
-  input[type="checkbox"]:checked:after {
+body.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="-"]:checked:after,
+body.is-mobile.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="-"]:checked:after,
+body.theme-dark .markdown-rendered .task-list-item[data-task="-"] input[type="checkbox"]:checked:after,
+body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="-"] input[type="checkbox"]:checked:after {
   background: transparent;
 }
 body.theme-dark #calendar-container .arrow,
@@ -647,14 +534,8 @@ body.theme-dark #calendar-container .day.has-note.active .dot.filled,
 body.is-mobile.theme-dark #calendar-container .day.has-note.active .dot.filled {
   fill: var(--text-on-accent);
 }
-body.theme-dark
-  [data-type="full-calendar-view"]
-  .workspace-tab-header-inner-icon
-  svg,
-body.is-mobile.theme-dark
-  [data-type="full-calendar-view"]
-  .workspace-tab-header-inner-icon
-  svg {
+body.theme-dark [data-type="full-calendar-view"] .workspace-tab-header-inner-icon svg,
+body.is-mobile.theme-dark [data-type="full-calendar-view"] .workspace-tab-header-inner-icon svg {
   -webkit-mask-size: cover;
   -webkit-mask-image: var(--lucide-calendar-days);
   background-color: var(--icon-color);
@@ -721,72 +602,31 @@ body.is-mobile.theme-dark .fc .fc-button-primary:active {
 body.theme-dark .fc .fc-button-primary:not(.fc-button-active),
 body.is-mobile.theme-dark .fc .fc-button-primary:not(.fc-button-active) {
   box-shadow: var(--input-shadow);
-  --input-shadow:
-    inset 0 0.5px 0.75px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow: inset 0 0.5px 0.75px 0.5px rgba(255, 255, 255, 0.09),
+          0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
 }
-body.theme-dark
-  .fc
-  .fc-button-primary:not(:disabled):is(.fc-button-active, :active):focus,
-body.is-mobile.theme-dark
-  .fc
-  .fc-button-primary:not(:disabled):is(.fc-button-active, :active):focus {
+body.theme-dark .fc .fc-button-primary:not(:disabled):is(.fc-button-active, :active):focus,
+body.is-mobile.theme-dark .fc .fc-button-primary:not(:disabled):is(.fc-button-active, :active):focus {
   box-shadow: none;
 }
 body.theme-dark [class="modal"] .modal-content > form select#calendar,
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  select#calendar {
+body.is-mobile.theme-dark [class="modal"] .modal-content > form select#calendar {
   padding: 0 0.8em;
 }
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  label:is([for="allDay"], [for="recurring"]),
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  label:is([for="allDay"], [for="recurring"]) {
+body.theme-dark [class="modal"] .modal-content > form label:is([for="allDay"], [for="recurring"]),
+body.is-mobile.theme-dark [class="modal"] .modal-content > form label:is([for="allDay"], [for="recurring"]) {
   margin-right: 3px;
 }
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#allDay, #recurring)[type="checkbox"],
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#allDay, #recurring)[type="checkbox"] {
+body.theme-dark [class="modal"] .modal-content > form :is(#allDay, #recurring)[type="checkbox"],
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#allDay, #recurring)[type="checkbox"] {
   border-radius: 100%;
   top: 1.5px;
 }
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#date, #startDate, #endDate)[type="date"],
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#date, #startDate, #endDate)[type="date"],
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startTime, #endTime)[type="time"],
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startTime, #endTime)[type="time"] {
+body.theme-dark [class="modal"] .modal-content > form :is(#date, #startDate, #endDate)[type="date"],
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#date, #startDate, #endDate)[type="date"],
+body.theme-dark [class="modal"] .modal-content > form :is(#startTime, #endTime)[type="time"],
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#startTime, #endTime)[type="time"] {
   appearance: none;
   -webkit-appearance: none;
   box-sizing: border-box;
@@ -804,110 +644,34 @@ body.is-mobile.theme-dark
   border-radius: var(--input-radius);
   border: 0;
 }
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startTime, #endTime)[type="time"],
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startTime, #endTime)[type="time"] {
+body.theme-dark [class="modal"] .modal-content > form :is(#startTime, #endTime)[type="time"],
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#startTime, #endTime)[type="time"] {
   width: 9em;
 }
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#date, #startDate, #endDate)[type="date"],
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#date, #startDate, #endDate)[type="date"] {
+body.theme-dark [class="modal"] .modal-content > form :is(#date, #startDate, #endDate)[type="date"],
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#date, #startDate, #endDate)[type="date"] {
   width: 9.6em;
 }
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startDate, #endDate)[type="date"],
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startDate, #endDate)[type="date"],
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#date[type="date"]):not(:first-child),
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#date[type="date"]):not(:first-child),
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startTime, #endTime)[type="time"]:not(:first-child),
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startTime, #endTime)[type="time"]:not(:first-child) {
+body.theme-dark [class="modal"] .modal-content > form :is(#startDate, #endDate)[type="date"],
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#startDate, #endDate)[type="date"],
+body.theme-dark [class="modal"] .modal-content > form :is(#date[type="date"]):not(:first-child),
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#date[type="date"]):not(:first-child),
+body.theme-dark [class="modal"] .modal-content > form :is(#startTime, #endTime)[type="time"]:not(:first-child),
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#startTime, #endTime)[type="time"]:not(:first-child) {
   margin-inline-start: 0.6em;
 }
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#date, #startDate, #endDate)[type="date"]:not(:last-child),
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#date, #startDate, #endDate)[type="date"]:not(:last-child),
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startTime, #endTime)[type="time"]:not(:last-child),
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  :is(#startTime, #endTime)[type="time"]:not(:last-child) {
+body.theme-dark [class="modal"] .modal-content > form :is(#date, #startDate, #endDate)[type="date"]:not(:last-child),
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#date, #startDate, #endDate)[type="date"]:not(:last-child),
+body.theme-dark [class="modal"] .modal-content > form :is(#startTime, #endTime)[type="time"]:not(:last-child),
+body.is-mobile.theme-dark [class="modal"] .modal-content > form :is(#startTime, #endTime)[type="time"]:not(:last-child) {
   margin-inline-end: 0.6em;
 }
-body.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  > div
-  > button[style^="margin-left: 0.25rem;"]:first-child,
-body.is-mobile.theme-dark
-  [class="modal"]
-  .modal-content
-  > form
-  > div
-  > button[style^="margin-left: 0.25rem;"]:first-child {
+body.theme-dark [class="modal"] .modal-content > form > div > button[style^="margin-left: 0.25rem;"]:first-child,
+body.is-mobile.theme-dark [class="modal"] .modal-content > form > div > button[style^="margin-left: 0.25rem;"]:first-child {
   margin-left: 0 !important;
 }
-body.theme-dark
-  .is-mobile
-  [class="modal"]
-  .modal-content
-  > div:first-child
-  > p[style="float: right;"],
-body.is-mobile.theme-dark
-  .is-mobile
-  [class="modal"]
-  .modal-content
-  > div:first-child
-  > p[style="float: right;"] {
+body.theme-dark .is-mobile [class="modal"] .modal-content > div:first-child > p[style="float: right;"],
+body.is-mobile.theme-dark .is-mobile [class="modal"] .modal-content > div:first-child > p[style="float: right;"] {
   float: unset !important;
   margin-bottom: 0;
 }

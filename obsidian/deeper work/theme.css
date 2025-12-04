@@ -72,7 +72,7 @@ settings:
 
 :root {
   /* Fonts */
-  --font-monospace: "JetBrains Mono", "Consolas", monospace;
+  --font-monospace: 'JetBrains Mono', 'Consolas', monospace;
 
   /* Colours */
   --color-black: #010409;
@@ -151,7 +151,7 @@ settings:
   --color-pink-1: #ffbedd;
   --color-pink-2: #ff9bce;
   --color-pink-3: #f778ba;
-  --color-pink-4: #fc6dab;
+  --color-pink-4: #FC6DAB;
   --color-pink-5: #bf4b8a;
   --color-pink-6: #9e3670;
   --color-pink-7: #7d2457;
@@ -235,7 +235,7 @@ settings:
 }
 
 /*---------------------------------------
-    Documents: Text Properties
+	Documents: Text Properties
   ---------------------------------------*/
 
 /* Monospace */
@@ -255,7 +255,7 @@ body {
 }
 
 /*---------------------------------------
-    Documents: Text / Headings
+	Documents: Text / Headings
   ---------------------------------------*/
 
 /* Headings */
@@ -355,11 +355,11 @@ hr {
 }
 
 /*---------------------------------------
-    Documents: Math
+	Documents: Math
   ---------------------------------------*/
 
 /* Math */
-mjx-container[jax="CHTML"] {
+mjx-container[jax='CHTML'] {
   text-align: left;
   outline: none;
 }
@@ -377,7 +377,7 @@ mjx-container[jax="CHTML"] {
 .cm-s-obsidian span.hmd-fold-math-placeholder {
   /* fix tag size */
   font-style: normal;
-  font-family: "JetBrains Mono" !important;
+  font-family: 'JetBrains Mono' !important;
 }
 
 .markdown-preview-view code {
@@ -386,17 +386,17 @@ mjx-container[jax="CHTML"] {
 }
 
 /*---------------------------------------
-    Documents: Code
+	Documents: Code
   ---------------------------------------*/
 
 /* Code blocks */
 code {
-  font-family: "JetBrains Mono" !important;
+  font-family: 'JetBrains Mono' !important;
 }
 
 /* Source: https://github.com/AGMStudio/prism-theme-one-dark */
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   text-align: left !important;
   white-space: pre !important;
   word-spacing: normal !important;
@@ -412,7 +412,7 @@ pre[class*="language-"] {
   hyphens: none !important;
 }
 
-pre[class*="language-"] {
+pre[class*='language-'] {
   padding: 1em !important;
   margin: 0.5em 0 !important;
   overflow: auto !important;
@@ -424,11 +424,11 @@ pre[class*="language-"] {
   color: var(--inline-code-color, var(--color-green-3)) !important;
 }
 
-:not(pre) > code {
+:not(pre)>code {
   color: var(--inline-code-color, var(--color-green-3)) !important;
 }
 
-:not(pre) > code[class*="language-"] {
+:not(pre)>code[class*='language-'] {
   padding: 0.1em !important;
   border-radius: 0.3em !important;
   white-space: normal !important;
@@ -515,7 +515,7 @@ pre.line-numbers {
   counter-reset: linenumber !important;
 }
 
-pre.line-numbers > code {
+pre.line-numbers>code {
   position: relative !important;
 }
 
@@ -535,13 +535,13 @@ pre.line-numbers > code {
   user-select: none !important;
 }
 
-.line-numbers-rows > span {
+.line-numbers-rows>span {
   pointer-events: none !important;
   display: block !important;
   counter-increment: linenumber !important;
 }
 
-.line-numbers-rows > span:before {
+.line-numbers-rows>span:before {
   content: counter(linenumber) !important;
   color: var(--syntax-gray-1) !important;
   display: block !important;
@@ -550,14 +550,14 @@ pre.line-numbers > code {
 }
 
 /*---------------------------------------
-    Documents: Callouts / Quotes
+	Documents: Callouts / Quotes
   ---------------------------------------*/
 
 .callout {
   padding-right: 24px;
 }
 
-:not(.is-collapsed) > .callout-title:not(:only-child) {
+:not(.is-collapsed)>.callout-title:not(:only-child) {
   border-bottom: 2px solid rgba(var(--callout-color), 0.3) !important;
   padding-bottom: 0.6rem;
   margin-bottom: 6px;
@@ -589,7 +589,7 @@ body .markdown-preview-view blockquote {
 }
 
 /*---------------------------------------
-    Documents: Tables / Images / Files
+	Documents: Tables / Images / Files
   ---------------------------------------*/
 
 /* Tables */
@@ -620,7 +620,7 @@ th {
 }
 
 /*---------------------------------------
-    Graph
+	Graph
   ---------------------------------------*/
 
 .graph-view.color-fill-attachment {
@@ -632,7 +632,7 @@ th {
 }
 
 /*---------------------------------------
-    Interface Elements
+	Interface Elements
   ---------------------------------------*/
 
 .titlebar {
@@ -675,7 +675,7 @@ th {
   margin: auto 0;
 }
 
-.status-bar-item > * {
+.status-bar-item>* {
   padding-top: var(--bar-vertical-padding) !important;
   padding-bottom: var(--bar-vertical-padding) !important;
 }
@@ -704,11 +704,9 @@ th {
 /* Tab Headers */
 .mod-stacked .workspace-tab-header {
   /* background-color: var(--color-gray-8) !important;
-    box-shadow: rgba(0, 0, 0, 0.1) -20px 0 10px 0 !important; */
-  box-shadow:
-    rgba(0, 0, 0, 0.2) -20px 0 20px 10px,
-    -1px 0 0 0 var(--tab-outline-color),
-    var(--tab-stacked-shadow) !important;
+	box-shadow: rgba(0, 0, 0, 0.1) -20px 0 10px 0 !important; */
+  box-shadow: rgba(0, 0, 0, 0.2) -20px 0 20px 10px,
+    -1px 0 0 0 var(--tab-outline-color), var(--tab-stacked-shadow) !important;
 }
 
 .workspace-tab-header-inner-title {

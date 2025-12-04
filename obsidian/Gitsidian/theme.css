@@ -1,3 +1,5 @@
+
+
 .workspace-split.mod-root .view-content .markdown-preview-view {
   background-color: #fff;
 }
@@ -9,20 +11,13 @@ pre[class*="language-"],
   color: #24292e !important;
 }
 
+
 .markdown-preview-view {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: #24292e;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Helvetica,
-    Arial,
-    sans-serif,
-    Apple Color Emoji,
-    Segoe UI Emoji;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -45,7 +40,7 @@ pre[class*="language-"],
 
 .markdown-preview-view h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: .67em 0;
 }
 
 .markdown-preview-view img {
@@ -54,7 +49,7 @@ pre[class*="language-"],
 
 .markdown-preview-view code,
 .markdown-preview-view pre {
-  font-family: monospace, monospace;
+  font-family: monospace,monospace;
   font-size: 1em;
   color: #24292e;
 }
@@ -62,12 +57,7 @@ pre[class*="language-"],
 .markdown-preview-view p code {
   display: inline-block;
   padding: 3px 5px;
-  font:
-    11px SFMono-Regular,
-    Consolas,
-    Liberation Mono,
-    Menlo,
-    monospace;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -152,6 +142,7 @@ pre[class*="language-"],
 .markdown-preview-view details summary {
   cursor: pointer;
 }
+
 
 .markdown-preview-view h1,
 .markdown-preview-view h2,
@@ -238,12 +229,7 @@ pre[class*="language-"],
 
 .markdown-preview-view code,
 .markdown-preview-view pre {
-  font-family:
-    SFMono-Regular,
-    Consolas,
-    Liberation Mono,
-    Menlo,
-    monospace;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   font-size: 12px;
 }
 
@@ -259,38 +245,38 @@ pre[class*="language-"],
   appearance: none;
 }
 
-.markdown-preview-view :checked + .radio-label {
+.markdown-preview-view :checked+.radio-label {
   position: relative;
   z-index: 1;
   border-color: #0366d6;
 }
 
 .markdown-preview-view .border {
-  border: 1px solid #e1e4e8 !important;
+  border: 1px solid #e1e4e8!important;
 }
 
 .markdown-preview-view .border-0 {
-  border: 0 !important;
+  border: 0!important;
 }
 
 .markdown-preview-view .border-bottom {
-  border-bottom: 1px solid #e1e4e8 !important;
+  border-bottom: 1px solid #e1e4e8!important;
 }
 
 .markdown-preview-view .rounded-1 {
-  border-radius: 3px !important;
+  border-radius: 3px!important;
 }
 
 .markdown-preview-view .bg-white {
-  background-color: #fff !important;
+  background-color: #fff!important;
 }
 
 .markdown-preview-view .bg-gray-light {
-  background-color: #fafbfc !important;
+  background-color: #fafbfc!important;
 }
 
 .markdown-preview-view .text-gray-light {
-  color: #6a737d !important;
+  color: #6a737d!important;
 }
 
 .markdown-preview-view hr {
@@ -300,12 +286,7 @@ pre[class*="language-"],
 .markdown-preview-view kbd {
   display: inline-block;
   padding: 3px 5px;
-  font:
-    11px SFMono-Regular,
-    Consolas,
-    Liberation Mono,
-    Menlo,
-    monospace;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -325,12 +306,12 @@ pre[class*="language-"],
   clear: both;
 }
 
-.markdown-preview-view > :first-child {
-  margin-top: 0 !important;
+.markdown-preview-view>:first-child {
+  margin-top: 0!important;
 }
 
-.markdown-preview-view > :last-child {
-  margin-bottom: 0 !important;
+.markdown-preview-view>:last-child {
+  margin-bottom: 0!important;
 }
 
 .markdown-preview-view a:not([href]) {
@@ -350,7 +331,7 @@ pre[class*="language-"],
 }
 
 .markdown-preview-view hr {
-  height: 0.25em;
+  height: .25em;
   padding: 0;
   margin: 24px 0;
   background-color: #e1e4e8;
@@ -362,7 +343,7 @@ pre[class*="language-"],
   color: #6a737d;
   border: none;
   border-radius: 0px;
-  border-left: 0.25em solid #dfe2e5 !important;
+  border-left: .25em solid #dfe2e5 !important;
 }
 
 .markdown-preview-view blockquote p,
@@ -370,11 +351,11 @@ pre[class*="language-"],
   margin-bottom: 16px !important;
 }
 
-.markdown-preview-view blockquote > :first-child {
+.markdown-preview-view blockquote>:first-child {
   margin-top: 0;
 }
 
-.markdown-preview-view blockquote > :last-child {
+.markdown-preview-view blockquote>:last-child {
   margin-bottom: 0;
 }
 
@@ -396,7 +377,7 @@ pre[class*="language-"],
 
 .markdown-preview-view h1,
 .markdown-preview-view h2 {
-  padding-bottom: 0.3em;
+  padding-bottom: .3em;
   border-bottom: 1px solid #eaecef;
 }
 
@@ -413,11 +394,11 @@ pre[class*="language-"],
 }
 
 .markdown-preview-view h5 {
-  font-size: 0.875em;
+  font-size: .875em;
 }
 
 .markdown-preview-view h6 {
-  font-size: 0.85em;
+  font-size: .85em;
   color: #6a737d;
 }
 
@@ -438,12 +419,12 @@ pre[class*="language-"],
   word-wrap: break-all;
 }
 
-.markdown-preview-view li > p {
+.markdown-preview-view li>p {
   margin-top: 16px;
 }
 
-.markdown-preview-view li + li {
-  margin-top: 0.25em;
+.markdown-preview-view li+li {
+  margin-top: .25em;
 }
 
 .markdown-preview-view dl {
@@ -495,10 +476,10 @@ pre[class*="language-"],
 }
 
 .markdown-preview-view code {
-  padding: 0.2em 0.4em;
+  padding: .2em .4em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(27, 31, 35, 0.05);
+  background-color: rgba(27,31,35,.05);
   border-radius: 3px;
 }
 
@@ -506,7 +487,7 @@ pre[class*="language-"],
   word-wrap: normal;
 }
 
-.markdown-preview-view pre > code {
+.markdown-preview-view pre>code {
   padding: 0;
   margin: 0;
   font-size: 100%;
@@ -545,16 +526,18 @@ pre[class*="language-"],
   border: 0;
 }
 
+
+
 .markdown-preview-view .task-list-item {
   list-style-type: none;
 }
 
-.markdown-preview-view .task-list-item + .task-list-item {
+.markdown-preview-view .task-list-item+.task-list-item {
   margin-top: 3px;
 }
 
 .markdown-preview-view .task-list-item input {
-  margin: 0.08em 0.43em 0.25em 0.15em;
+  margin: .08em .43em .25em .15em;
   vertical-align: top;
 }
 
@@ -562,15 +545,9 @@ pre[class*="language-"],
   text-indent: -1.55em;
 }
 
+
 .markdown-preview-view a.footnote-link {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Helvetica,
-    Arial,
-    sans-serif,
-    Segoe UI Emoji;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;
 }
 
 .markdown-preview-view a.tag {

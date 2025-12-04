@@ -1,112 +1,623 @@
-/* ==== Colors ====*/
-.theme-dark{
-    --background-primary:         #060335;
-    --background-primary-alt:     #242424;
-    --background-secondary:       #191919;
-    --background-secondary-alt:   #3D3D3D;
-    --text-normal:                #faf2d6;
-    --text-faint:                 #c0b0a0;
+/* @settings
+name: Dedication Theme Settings
+id: dedication-theme
+settings:
+  -
+    id: theme-presets
+    title: Theme Presets
+    type: heading
+    level: 1
+    collapsed: false
+  -
+    id: theme-preset
+    title: Theme Preset
+    type: class-select
+    allowEmpty: false
+    default: custom
+    options:
+      -
+        label: Custom
+        value: custom
+      -
+        label: Dark Modern
+        value: theme-preset-dark-modern
+      -
+        label: Dracula
+        value: theme-preset-dracula
+      -
+        label: Nord
+        value: theme-preset-nord
+      -
+        label: Gruvbox
+        value: theme-preset-gruvbox
+      -
+        label: Monokai
+        value: theme-preset-monokai
 
-    /* Heading colors */
-    --text-title-h1:              #cc00c4;
-    --text-title-h2:              #00b7eb;
-    --text-title-h3:              #ff8c00;
-    --text-title-h4:              #0000cc;
-    --text-title-h5:              #cc0000;
-    --text-title-h6:              #cccc00;
+  -
+    id: colors
+    title: Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: dark-colors
+    title: Dark Theme Colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: dark-bg-primary
+    title: Primary Background
+    type: variable-color
+    default: '#060335'
+    format: hex
+  -
+    id: dark-bg-secondary
+    title: Secondary Background
+    type: variable-color
+    default: '#191919'
+    format: hex
+  -
+    id: dark-bg-primary-alt
+    title: Primary Alt Background
+    type: variable-color
+    default: '#242424'
+    format: hex
+  -
+    id: dark-bg-secondary-alt
+    title: Secondary Alt Background
+    type: variable-color
+    default: '#3D3D3D'
+    format: hex
+  -
+    id: dark-text-normal
+    title: Text Color
+    type: variable-color
+    default: '#faf2d6'
+    format: hex
+  -
+    id: dark-text-faint
+    title: Faint Text Color
+    type: variable-color
+    default: '#c0b0a0'
+    format: hex
+  -
+    id: light-colors
+    title: Light Theme Colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: light-bg-primary
+    title: Primary Background
+    type: variable-color
+    default: '#EDEDED'
+    format: hex
+  -
+    id: light-bg-secondary
+    title: Secondary Background
+    type: variable-color
+    default: '#C4C4C4'
+    format: hex
+  -
+    id: light-bg-primary-alt
+    title: Primary Alt Background
+    type: variable-color
+    default: '#d4d4d4'
+    format: hex
+  -
+    id: light-bg-secondary-alt
+    title: Secondary Alt Background
+    type: variable-color
+    default: '#707070'
+    format: hex
+  -
+    id: light-text-normal
+    title: Text Color
+    type: variable-color
+    default: '#1A2023'
+    format: hex
+  -
+    id: light-text-faint
+    title: Faint Text Color
+    type: variable-color
+    default: '#999999'
+    format: hex
+  -
+    id: accent-colors
+    title: Accent Colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: color-accent
+    title: Accent Color
+    type: variable-color
+    default: '#0066cc'
+    format: hex
+  -
+    id: color-accent-hover
+    title: Accent Hover Color
+    type: variable-color
+    default: '#004499'
+    format: hex
+  -
+    id: color-border
+    title: Border Color
+    type: variable-color
+    default: '#00ffff'
+    format: hex
+  -
+    id: adaptive-accent
+    title: Adaptive Accent
+    description: Dynamically adapt accent color for better contrast
+    type: class-toggle
+    default: false
 
-    --text-highlight-bg:          #640211;
-    --text-link:                  #83a598; 
-    --text-a-hover:               #83a598; 
-    --text-accent-hover:          #D49335;
+  -
+    id: heading-colors
+    title: Heading Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: h1-color
+    title: H1 Color
+    type: variable-color
+    default: '#cc00c4'
+    format: hex
+  -
+    id: h2-color
+    title: H2 Color
+    type: variable-color
+    default: '#00b7eb'
+    format: hex
+  -
+    id: h3-color
+    title: H3 Color
+    type: variable-color
+    default: '#ff8c00'
+    format: hex
+  -
+    id: h4-color
+    title: H4 Color
+    type: variable-color
+    default: '#0000cc'
+    format: hex
+  -
+    id: h5-color
+    title: H5 Color
+    type: variable-color
+    default: '#cc0000'
+    format: hex
+  -
+    id: h6-color
+    title: H6 Color
+    type: variable-color
+    default: '#cccc00'
+    format: hex
 
-    /* ^^^ added for hover over bracket internal links */
-    --inline-code:                #8b5cf6;
-    --code-block:                 #83a598; 
-    --text-a:                     rgb(248, 197, 55); 
-    --interactive-accent:         #0066cc;
-    --text-accent:                #00ffff; 
-    --text-on-accent:             #fff;
-    --interactive-accent-rgb:     #f8c537; 
-    --vim-cursor:                 #f8c537;
+  -
+    id: typography
+    title: Typography
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-family
+    title: Font Family
+    type: variable-select
+    default: system-ui
+    options:
+      -
+        label: System UI
+        value: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
+      -
+        label: Roboto
+        value: "Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+      -
+        label: Inter
+        value: "Inter, system-ui, sans-serif"
+      -
+        label: Georgia Serif
+        value: "Georgia, 'Times New Roman', Times, serif"
+      -
+        label: Monospace
+        value: "'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace"
+      -
+        label: Custom
+        value: var(--custom-font-family)
+  -
+    id: custom-font-family
+    title: Custom Font Family
+    type: variable-text
+    default: "Arial, sans-serif"
+  -
+    id: base-font-size
+    title: Base Font Size
+    type: variable-number
+    default: 16
+    format: px
+  -
+    id: line-height
+    title: Line Height
+    type: variable-number
+    default: 1.6
 
-    --pre-code:                   #1e1e1e; 
-    --interactive-before:         #7c6f64;
-    --background-modifier-border: rgb(0, 255, 255);
-    --text-selection:            #0066cc;
+  -
+    id: layout
+    title: Layout
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: sidebar-width
+    title: Sidebar Width
+    type: variable-number
+    default: 300
+    format: px
+  -
+    id: content-max-width
+    title: Content Max Width
+    type: variable-text
+    default: '100%'
+
+  -
+    id: file-explorer
+    title: File Explorer
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: rainbow-folders
+    title: Rainbow Folders
+    type: class-toggle
+    default: true
+  -
+    id: folder-indentation
+    title: Folder Indentation
+    type: variable-number
+    default: 12
+    format: px
+  -
+    id: nav-item-padding
+    title: Item Vertical Padding
+    type: variable-number
+    default: 4
+    format: px
+*/
+
+:root {
+  /* Colors */
+  --color-accent: #0066cc;
+  --color-accent-hover: #004499;
+  --color-border: #00ffff;
+  
+  /* Dark Theme Colors */
+  --dark-bg-primary: #060335;
+  --dark-bg-secondary: #191919;
+  --dark-bg-primary-alt: #242424;
+  --dark-bg-secondary-alt: #3D3D3D;
+  --dark-text: #faf2d6;
+  --dark-text-faint: #c0b0a0;
+  
+  /* Light Theme Colors */
+  --light-bg-primary: #EDEDED;
+  --light-bg-secondary: #C4C4C4;
+  --light-bg-primary-alt: #d4d4d4;
+  --light-bg-secondary-alt: #707070;
+  --light-text: #1A2023;
+  --light-text-faint: #999999;
+  
+  /* Heading Colors */
+  --h1-color: #cc00c4;
+  --h2-color: #00b7eb;
+  --h3-color: #ff8c00;
+  --h4-color: #0000cc;
+  --h5-color: #cc0000;
+  --h6-color: #cccc00;
+  
+  /* Typography */
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --custom-font-family: Arial, sans-serif;
+  --base-font-size: 16px;
+  --line-height: 1.6;
+  
+  /* Layout */
+  --sidebar-width: 300px;
+  --content-max-width: 100%;
+  
+  /* Border Radius */
+  --border-radius-small: 4px;
+  --border-radius-medium: 6px;
+  --border-radius-large: 8px;
+  
+  /* Feature Toggles */
+  --rainbow-folders-enabled: 1;
 }
 
+/* Theme Presets */
+body.theme-preset-dark-modern {
+  --dark-bg-primary: #0f0f23;
+  --dark-bg-secondary: #1a1a2e;
+  --dark-text: #e6e6e6;
+  --h1-color: #ff6bcb;
+  --h2-color: #6bcaff;
+  --h3-color: #6bffb8;
+  --color-accent: #6bffb8;
+  --color-border: #6bcaff;
+}
+
+body.theme-preset-dracula {
+  --dark-bg-primary: #282a36;
+  --dark-bg-secondary: #44475a;
+  --dark-text: #f8f8f2;
+  --h1-color: #ff79c6;
+  --h2-color: #bd93f9;
+  --h3-color: #50fa7b;
+  --h4-color: #f1fa8c;
+  --h5-color: #8be9fd;
+  --h6-color: #ffb86c;
+  --color-accent: #bd93f9;
+  --color-border: #ff79c6;
+}
+
+body.theme-preset-nord {
+  --dark-bg-primary: #2e3440;
+  --dark-bg-secondary: #3b4252;
+  --dark-text: #d8dee9;
+  --h1-color: #88c0d0;
+  --h2-color: #81a1c1;
+  --h3-color: #5e81ac;
+  --h4-color: #bf616a;
+  --h5-color: #d08770;
+  --h6-color: #ebcb8b;
+  --color-accent: #88c0d0;
+  --color-border: #81a1c1;
+}
+
+body.theme-preset-gruvbox {
+  --dark-bg-primary: #282828;
+  --dark-bg-secondary: #3c3836;
+  --dark-text: #ebdbb2;
+  --h1-color: #fb4934;
+  --h2-color: #b8bb26;
+  --h3-color: #fabd2f;
+  --h4-color: #83a598;
+  --h5-color: #d3869b;
+  --h6-color: #8ec07c;
+  --color-accent: #fb4934;
+  --color-border: #b8bb26;
+}
+
+body.theme-preset-monokai {
+  --dark-bg-primary: #272822;
+  --dark-bg-secondary: #3e3d32;
+  --dark-text: #f8f8f2;
+  --h1-color: #f92672;
+  --h2-color: #a6e22e;
+  --h3-color: #fd971f;
+  --h4-color: #66d9ef;
+  --h5-color: #ae81ff;
+  --h6-color: #f8f8f0;
+  --color-accent: #a6e22e;
+  --color-border: #f92672;
+}
+
+/* Adaptive Accent */
+body.adaptive-accent.theme-dark {
+  --color-accent: hsl(210, 100%, 70%);
+  --color-accent-hover: hsl(210, 100%, 60%);
+}
+
+body.adaptive-accent.theme-light {
+  --color-accent: hsl(210, 100%, 30%);
+  --color-accent-hover: hsl(210, 100%, 20%);
+}
+
+/* Font Family Application */
+body[data-font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"] {
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body[data-font-family="Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"] {
+  --font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body[data-font-family="Inter, system-ui, sans-serif"] {
+  --font-family: Inter, system-ui, sans-serif;
+}
+
+body[data-font-family="Georgia, 'Times New Roman', Times, serif"] {
+  --font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body[data-font-family="'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace"] {
+  --font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+body[data-font-family="var(--custom-font-family)"] {
+  --font-family: var(--custom-font-family);
+}
+
+/* Rainbow Folders */
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 2) { --folder-color: rgb(220, 38, 38); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 3) { --folder-color: rgb(234, 88, 12); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 4) { --folder-color: rgb(245, 158, 11); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 5) { --folder-color: rgb(202, 138, 4); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 6) { --folder-color: rgb(21, 128, 61); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 7) { --folder-color: rgb(13, 148, 136); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 8) { --folder-color: rgb(8, 145, 178); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 9) { --folder-color: rgb(29, 78, 216); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 10) { --folder-color: rgb(124, 58, 237); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 11) { --folder-color: rgb(147, 51, 234); }
+body.rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 12) { --folder-color: hsl(330, 100%, 45%); }
+
+body:not(.rainbow-folders) .nav-files-container > div > .nav-folder {
+  --folder-color: var(--text-normal);
+}
+
+.nav-folder-children {
+  margin-left: var(--folder-indentation, 12px);
+}
+
+.nav-folder-title, .nav-file-title {
+  padding-top: var(--nav-item-padding, 4px);
+  padding-bottom: var(--nav-item-padding, 4px);
+}
+
+/* Apply base styles */
+body, .cm-scroller, .markdown-preview-view {
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--line-height);
+}
+
+/* Theme Colors Application */
+.theme-dark {
+  --background-primary: var(--dark-bg-primary);
+  --background-primary-alt: var(--dark-bg-primary-alt);
+  --background-secondary: var(--dark-bg-secondary);
+  --background-secondary-alt: var(--dark-bg-secondary-alt);
+  --text-normal: var(--dark-text);
+  --text-faint: var(--dark-text-faint);
+  --code-background: var(--dark-bg-secondary-alt);
+
+  --text-title-h1: var(--h1-color);
+  --text-title-h2: var(--h2-color);
+  --text-title-h3: var(--h3-color);
+  --text-title-h4: var(--h4-color);
+  --text-title-h5: var(--h5-color);
+  --text-title-h6: var(--h6-color);
+
+  --text-highlight-bg: #640211;
+  --text-link: #83a598;
+  --text-a-hover: #83a598;
+  --text-accent-hover: var(--color-accent-hover);
+
+  --inline-code: #8b5cf6;
+  --code-block: #83a598;
+  --text-a: rgb(248, 197, 55);
+  --interactive-accent: var(--color-accent);
+  --text-accent: #00ffff;
+  --text-on-accent: #fff;
+  --interactive-accent-rgb: #f8c537;
+  --vim-cursor: #f8c537;
+
+  --pre-code: #1e1e1e;
+  --interactive-before: #7c6f64;
+  --background-modifier-border: var(--color-border);
+  --text-selection: var(--interactive-accent);
+}
+
+.theme-light {
+  --background-primary: var(--light-bg-primary);
+  --background-secondary: var(--light-bg-secondary);
+  --background-primary-alt: var(--light-bg-primary-alt);
+  --background-secondary-alt: var(--light-bg-secondary-alt);
+  --text-normal: var(--light-text);
+  --text-faint: var(--light-text-faint);
+  --code-background: var(--light-bg-secondary-alt);
+
+  --text-title-h1: var(--h1-color);
+  --text-title-h2: var(--h2-color);
+  --text-title-h3: var(--h3-color);
+  --text-title-h4: var(--h4-color);
+  --text-title-h5: var(--h5-color);
+  --text-title-h6: var(--h6-color);
+
+  --text-link: #D49335;
+  --text-a-hover: #D49335;
+  --text-accent-hover: var(--color-accent-hover);
+  
+  --inline-code: #458588;
+  --pre-code: #bebebe;
+  --text-highlight-bg: #f0f0f0;
+  --interactive-before: #a89984;
+  --background-modifier-border: var(--color-border);
+  --text-a: #961327;
+  --interactive-accent: var(--color-accent);
+  --text-accent: #00ffff;
+  --interactive-accent-rgb: #961327;
+  --vim-cursor: #961327;
+  --text-selection: var(--interactive-accent);
+  --text-white: #ffffff;
+}
+
+/* Layout */
+.workspace-leaf-content[data-type="file-explorer"] {
+  width: var(--sidebar-width);
+}
+
+.markdown-preview-view {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+/* Apply border radius */
+.cm-editor .cm-line, .markdown-preview-section div, .modal, .prompt, .suggestion-item {
+  border-radius: var(--border-radius-medium);
+}
+
+button, input, select, textarea {
+  border-radius: var(--border-radius-small);
+}
+
+/* Colors */
 .theme-dark .cm-s-obsidian span.obsidian-search-match-highlight {
-color: var(--text-normal);
-background-color: #483699;
-}
-
-.theme-light{
-    --background-primary:         #EDEDED;
-    --background-secondary:       #C4C4C4;
-    /* thick menu border */
-    --background-primary-alt:     #d4d4d4; 
-    --background-secondary-alt:   #707070; 
-    --text-normal:                #1A2023;
-    --text-faint:                 #999999; 
-
-    /* Heading colors */
-    --text-title-h1:              #cc00c4;
-    --text-title-h2:              #00b7eb;
-    --text-title-h3:              #ff8c00;
-    --text-title-h4:              #0000cc;
-    --text-title-h5:              #cc0000;
-    --text-title-h6:              #35af10;
-
-    --text-link:                  #D49335;
-    --text-a-hover:               #D49335;
-    --text-accent-hover:          #D49335;
-    /* ^^^ added for hover over bracket internal links */
-    --inline-code:                #458588;
-
-    --pre-code:                   #bebebe;
-    --text-highlight-bg:          #f0f0f0;
-    --interactive-before:         #a89984;
-    --background-modifier-border: #00ffff;
-    --text-a:                     #961327;
-    --interactive-accent:         #0066cc;
-    --text-accent:                #00ffff;
-    --interactive-accent-rgb:     #961327;
-    --vim-cursor:                 #961327;
-    --text-selection:             #0066cc;
-    --text-white:                 #ffffff;
+  color: var(--text-normal);
+  background-color: #483699;
 }
 
 .theme-light .cm-s-obsidian span.obsidian-search-match-highlight {
-background-color: #808080;
+  background-color: #808080;
 }
-/*==================================== End ====================================*/
 
 /* Font Styling */
-
 :root {
-  --default-font: 'Times New Roman', Times, serif; /* Primary font with fallbacks */
+  --default-font: var(--font-family);
 }
 
-/* Apply font to editor (source and preview modes) and UI */
-body, .cm-scroller, .markdown-preview-view {
-  font-family: var(--default-font) !important; /* Times New Roman with fallbacks */
-}
-
-/*==================================== End ====================================*/
-
-/*==== Checkbox ====*/
-
-/* No Strikethrough */
+/* Checkbox Styling */
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"],
 ul>li.task-list-item[data-task="x"],
 ul>li.task-list-item[data-task="X"] {
-    text-decoration: none;
-    color: var(--interactive-accent);
+  text-decoration: none;
+  color: var(--interactive-accent);
 }
 
-/*==================================== End ====================================*/
+input[type="checkbox"],
+.cm-formatting-task {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid var(--text-faint);
+  padding: 0;
+  vertical-align: middle;
+}
+
+.cm-s-obsidian span.cm-formatting-task {
+  color: transparent;
+  width: 1.25em ;
+  height: 1.25em;
+  display: inline-block;
+}
+
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+input[type="checkbox"]:checked,
+.cm-formatting-task.cm-property {
+  background-color: var(--text-accent-hover);
+  border: 1px solid var(--text-accent-hover);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
 
 /*==== Calender ====*/
 .container#calendar-container .calendar {
@@ -148,7 +659,7 @@ color:var(--text-muted);
 }
 #calendar-container td,
 #calendar-container .day {
-border-radius:0 !important;
+border-radius:0 ;
 }
 #calendar-container .day {
 padding-top:0px;
@@ -165,7 +676,7 @@ outline:2px solid var(--color-cyan);;
 background: var(--background-primary);
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /*==== Blockquote ====*/
 .cm-quote,
@@ -207,7 +718,7 @@ background: var(--background-primary);
     background: rgb(8, 145, 178);
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* File Pane */
 
@@ -378,7 +889,7 @@ body:not(.file-icon-remove) .workspace-leaf-content[data-type="bookmarks"] svg.l
     --folder-color: hsl(330, 100%, 45%); /* Pink */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Header Styling */
 
@@ -401,7 +912,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-1:not(.cm-formatting),
 .markdown-preview-view h1 {
   color: var(--text-title-h1); 
-  text-shadow: 0 0 0.4em var(--text-title-h1);
   border-bottom: 1px dotted var(--text-title-h1); /* Dotted border matches color */
   padding-bottom: 4px; /* Slightly increased for balance */
 }
@@ -409,7 +919,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-2:not(.cm-formatting),
 .markdown-preview-view h2 {
   color: var(--text-title-h2);
-  text-shadow: 0 0 0.4em var(--text-title-h2);
   border-bottom: 1px dotted var(--text-title-h2);
   padding-bottom: 4px;
 }
@@ -417,7 +926,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-3:not(.cm-formatting),
 .markdown-preview-view h3 {
   color: var(--text-title-h3);
-  text-shadow: 0 0 0.4em var(--text-title-h3);
   border-bottom: 1px dotted var(--text-title-h3);
   padding-bottom: 4px;
 }
@@ -425,7 +933,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-4:not(.cm-formatting),
 .markdown-preview-view h4 {
   color: var(--text-title-h4);
-  text-shadow: 0 0 0.4em var(--text-title-h4);
   border-bottom: 1px dotted var(--text-title-h4);
   padding-bottom: 4px;
 }
@@ -433,7 +940,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-5:not(.cm-formatting),
 .markdown-preview-view h5 {
   color: var(--text-title-h5);
-    text-shadow: 0 0 0.4em var(--text-title-h5);
   border-bottom: 1px dotted var(--text-title-h5);
   padding-bottom: 4px;
 }
@@ -441,7 +947,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-6:not(.cm-formatting),
 .markdown-preview-view h6 {
   color: var(--text-title-h6);
-    text-shadow: 0 0 0.4em var(--text-title-h6);
   border-bottom: 1px dotted var(--text-title-h6);
   padding-bottom: 4px;
 }
@@ -530,7 +1035,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 22px;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Setting modal */
 
@@ -608,9 +1113,9 @@ button.mod-cta:hover, button.mod-cta:focus {
   background-color: #05033370;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
-/* status bar */
+/* ====== status bar====== */
 
 body {
     --status-bar-background: transparent;
@@ -632,7 +1137,7 @@ body {
     height: 24px;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Table styles */
 
@@ -661,7 +1166,7 @@ body {
 /* Full-width tables */
 body:not(.table-width-obsidian-default) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
 body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
-  width: 100% !important;
+  width: 100% ;
 }
 
 /* Define HSL components for text-title-h1 to support dynamic background */
@@ -677,7 +1182,7 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
   --text-title-h1-l: 40%;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* divider */
 body {
@@ -691,7 +1196,7 @@ body {
     height: calc(var(--divider-vertical-height) - var(--header-height) - 2px);
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Pendulum Startup Animation */
 body > .progress-bar-container .progress-bar-indicator {
@@ -724,7 +1229,7 @@ body > .progress-bar-container .progress-bar-indicator > * {
     }
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Tooltip Styling */
 .tooltip {
@@ -749,7 +1254,7 @@ body > .progress-bar-container .progress-bar-indicator > * {
   font-weight: 600; /* Slightly bolder for hierarchy */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Title Styling */
 
@@ -773,17 +1278,13 @@ body > .progress-bar-container .progress-bar-indicator > * {
   color: var(--text-normal); /* #1a1a1a for high contrast */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Numbered Lists */
 body {
     --accent: rgb(8, 145, 178);
 }
 
-@font-face {
-    font-family: Times;
-    src: url(data:application/octet-stream;base64,d09GMgABAAAAADbQAA8AAAACGYgAADZyAAIZmQAAAAAAAAAAAAAAAAAAAAAAAAAAHIt0BmAAhSIIDgmcDBEICoeASIXmegE2AiQDkiYLiRYABCAFizAH2SAMgRxbHcdxJ9rZPaoJDGonVLXRO3smfELmNaFzd6NRUROqLyjbdlEi0G2gLyDnLWi48P///5+UdIzhAB2KqPW/egodraGDCI5wdBeOpJzhYg3f3dtxtg8DFNvhypemgW+9P+WMildgmmZ98zpBGyUlJSlcuh6FLvWq1+WtH1pahtaKH+KRyy/+FZZp4gMv9YbxBdWL2ga1QLh28KFMdAxMudBlx+3iJ/1umlNlmlNzK5V+Djzyro8qhZ8Daenlw/5maq1C13ebU0xD6ln+VdfeIpGIcsPOEtu6+a/kacBx/R8m7iahZbExy0M+mxWe//ev+n3OvY8tjl/L1XK1MSCi+QIigJmDyIgY/VU1sE1VSn9pzwGboTbEhuqYePzAnNsQi14Dqb91GmS6tZnIfX5R0DGYZ4RRA7RNOpTQBiPJOEA4SicCehb0REU2nQIP0zGsPdrvon+u0rnocF266FCzbHfgnGDirKFb20xpmn3/4Pn/nff1OyfCBAILI53ohj61bXOpubImhIh1O3bGRB1jUOcrx8qQ/976BVALWGFpcSOAARyM3MLTa+ZyUUEWYcSQ72kJyTZL0iXIh0kaosQtLmoX9XbV15IHzml+sWX1B90ddw2MnGqBMTDvb2nYPGwOqdjJTCWQXZnxePdS8Zlxv+3vROVEhY4QMMt0EjH/E9LNCL1tbouKkJaQwp2Np4empCvxoXl/L09qZU5lDbwRXwjADlS0WgyWnnmt5B+fVe1QR/zXTe/PzuHRCSZy8AwiSJoJ0MJAJIJANP/7aa/0nifJFdnpsCnpMNx1gwNwCFldSfv3vSc5lvR7V8ruutUt+i6l4LRGW2nMBGd4Y6FBwGEdBpIQHgBRAA68vgspAMhSeFuTUmJn9NW3nWQIpDrWfkQswRZDEC2/n93pPZL7CHdOImV3zcyFWdJbUogKo3D2G49QKJQF2sseFUbPyR1Qkjbrl/bhpuZBgA+Ms5n39kuhtz7kmojp6+qEJdDUAuoG1A0nHGD4OHwoa1WFZYvhPRQkKdisGP8UDmr+7JIIo2q2UAOvtmdKodV3it7GS+4gSEs7QwBVOHAMXKm7mTrvFcUOYE0UGrb+b3P1fgwyI6J9CDWG0ANqoE9nSz1tv1z2OI2nj5ppve9b2x2WZhZYiwoRns4hCNwGeL5RNWaOjmq6mEEZEva7XUOAfQKavDHX1kzsfj+tK3+1qUlgZoBoSnNz44CgMdv6170lqMbUZ17I8AWQC+RxC5drOa9f2JYDC2XO+AoTMAu5O3g+dXpdM4wscQgKkuJvF3EFfAULdduBZaiYpKk4Zj8cGLWYyj4czMC3lS7Jqr4YAUJ6POxheHR6mfRju8+dIGIBkkkcUCyuyZNgcPDwjx0+uJsmfdtxxVgjfTU8m5is+dnMhv1tgMAqq3ZzZwnJtlIxC0dEvcyB7WHjre90CvGNrHSM95IJOmSburpJ1+j/Hsi3WrFK9Vp0iTPKtNShckjqUTksw1A5Iv9F5aj4UTkmDagcl0ZUTkgTKielGZVT0oKKwSEEAAgCQ0xMzczTBRQGRyBRaAw25fAEIolMoVrSUp3BZLE5XJ4VPw2EIrFEKpMrlGml1mh1egNFOwdn6uLm4eXjFxAUEk4jomLiEpJS0jKyaU5eQVFJWUVVjWb0j9QsNfIzGE1mimZYTmux8ja7w+lye7w+PwAIAkOgMDgCiUJjsDg8gUgiU6g0OoPJYnO4PL5AKBJLpDK5QqlSa7Q6vcFoMlusNrtDXv88F3AhF3Exl3CpiamZuQUUBkcgUWgMFocnEElkCtU9fxmh/GnEPTQ6g8lic7g8vx7jC4QisUQqkyuUKrVGq9MbrI02tnb2Do5Ozi6ubmAIFAZHIFFoDBaHJxBJZAqVRmcwWWwOl8cXCEViiVQmVyiNTUzNzC0sVWqNVqc3WFnb2NrZOzg6OQsiomJQRA5JLezVNTt9ZWN+klt5xtfrdRMwNXlg2UFjcMDK9SNkAIL/vxZekzjRn9SfEydavSVqPyQf6hM+lIb0tlrkP650NYMY59zI530Bv4Y5BGEloxvpm5BDUilVMkS8MlR8Ui01f3B2oETH0S8fDgED+9MRozFapVpjWztoT06keaYslmfcUS5icYnU67STR411p3nSvBNFR8VF5cUu46vsDENkFN/PySRNX3hsns+f5cnvkpp0gC+S1imJlxMPJa773ocPvosiDXy+nKIvXQ81MFunGo5ToR1+Hv3DvAAEHtLURJ79Y+TmGe7dx0TLPJUveU/69c+ol/++9Elrqd+d9/AC1MmACnMMCIjSXkChXn3AQLqfZurQShyTQ8k5Vp0ax1rWSZRv94VUQzkuHfZ6f9CODuZIUfuENysf0ovVvROylmkccnQy+XQK1+mHDfnakQDZMhPJY+L8C8r3HT6sk074gMdWH4dKHeZ0OcU9SB7jtvsp5Utcvykwzx2euIzp2Lul48WkwkDpqIz4+/m0iKmYK31QInvSX58tCmUOqMhWhXuijdreXDYzhzqpXMJtgjNCOG7RkVhbufas/MuUpcur/HOkadYVQ6JZQWRfI/nUaAEHMhWsl07wuEh4FvEtOu8NSQG3/HmmOFm9ZhQyHz9wx+H1rx7SdImz6gWf0kd/L2issW7HVq9TXriya0nNmxC/S0h0VfIze6aABwKOBjraTv5HCiyqgMWCNveQFpLwVgMBJP210rn8Z6UpjIPEk3kkeYKeL8QQjAin8bLvJUqp7q0glfXVJSoQ61mmfUmW7vxj5mt0O9E88TNcDuNaJhF3Js1fROkdUBdTOuf4lf1MG5LOg0XyTr1d9oEMVO04YF+eBDKBJBEy+PRAR5u0aGTu41Zndo+yEjLP);
-}
 
 ol {
     list-style: none;
@@ -802,7 +1303,6 @@ ol > li:hover {
 ol li:not(.task-list-item)::before {
     content: counter(li) ".";
     color: var(--accent);
-    font-family: Times, serif;
     display: inline-block;
     margin-left: -2.5em;
     margin-right: 0.5em;
@@ -811,7 +1311,7 @@ ol li:not(.task-list-item)::before {
     text-shadow: 0 0 0.3em var(--accent); /* Reduced blur for clarity */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Lists */
 body {
@@ -819,18 +1319,7 @@ body {
     --list-spacing: 0.075em;
     --list-bullet-size: 0.3em;
     --list-bullet-size-alt: calc(var(--list-bullet-size) / 2);
-    --list-marker-color: rgb(8, 145, 178); /**/
-    --list-numbered-style: decimal;
-}
-
-/* Common list bullet styles */
-body:not(.ul-marker-restore) .markdown-rendered .has-list-bullet .list-bullet::after,
-body:not(.ul-marker-restore) .markdown-source-view.mod-cm6 .HyperMD-list-line.cm-line div.cm-fold-indicator~span.cm-formatting .list-bullet::after,
-body:not(.ul-marker-restore) .markdown-source-view.mod-cm6 .HyperMD-list-line.cm-line span.cm-hmd-list-indent~span.cm-formatting .list-bullet::after,
-body:not(.ul-marker-restore) .markdown-source-view.mod-cm6 .HyperMD-list-line.cm-line>span.cm-formatting:first-of-type .list-bullet::after {
-    width: var(--list-bullet-size);
-    height: var(--list-bullet-size);
-    background-color: var(--list-marker-color);
+    --list-marker-color: rgb(8, 145, 178); 
 }
 
 /* Level 1: Circle */
@@ -858,7 +1347,7 @@ body:not(.ul-marker-restore) .markdown-source-view.mod-cm6 .HyperMD-list-line.Hy
     --list-bullet-transform: rotate(45deg);
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* img hover zoom out img*/
 img:hover {
@@ -869,21 +1358,21 @@ img:hover {
   transform: none;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Live Preview Line Numbers */
 
 .theme-dark .markdown-source-view.mod-cm6 .cm-gutters {
-  color: #00ffff !important; /* Matches accent text (#00e6e6) for dark theme */
+  color: #00ffff ; /* Matches accent text (#00e6e6) for dark theme */
   background: var(--background-primary); /* Matches editor background (#1c1c2e) */
 }
 
 .theme-light .markdown-source-view.mod-cm6 .cm-gutters {
-  color: #00ffff !important; /* Matches accent text (#00b7eb) for light theme */
+  color: #00ffff ; /* Matches accent text (#00b7eb) for light theme */
   background: var(--background-primary); /* Matches editor background (#f5f5f5) */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Graph View Styling for Both Themes */
 
@@ -949,7 +1438,7 @@ img:hover {
   background-color: var(--background-primary-alt); /* Matches light theme alt background (#e6e6e6) */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Empty State */
 body {
@@ -997,7 +1486,7 @@ body {
     }
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Editor Styling */
 
@@ -1060,12 +1549,12 @@ body:not(.heading-indicator-off) .markdown-preview-sizer > div > :is(h1, h2, h3,
 }
 
 /* Designated header colors */
-.h1-color-designated { --h1-color: var(--text-title-h1) !important; } /* #e600e6 dark, #cc00c4 light */
-.h2-color-designated { --h2-color: var(--text-title-h2) !important; } /* #00e6e6 dark, #00b7eb light */
-.h3-color-designated { --h3-color: var(--text-title-h3) !important; } /* #ff8c00 dark/light */
-.h4-color-designated { --h4-color: var(--text-title-h4) !important; } /* #3333ff dark, #0000cc light */
-.h5-color-designated { --h5-color: var(--text-title-h5) !important; } /* #e60000 dark, #cc0000 light */
-.h6-color-designated { --h6-color: var(--text-title-h6) !important; } /* #cccc00 dark/light */
+.h1-color-designated { --h1-color: var(--text-title-h1) ; } /* #e600e6 dark, #cc00c4 light */
+.h2-color-designated { --h2-color: var(--text-title-h2) ; } /* #00e6e6 dark, #00b7eb light */
+.h3-color-designated { --h3-color: var(--text-title-h3) ; } /* #ff8c00 dark/light */
+.h4-color-designated { --h4-color: var(--text-title-h4) ; } /* #3333ff dark, #0000cc light */
+.h5-color-designated { --h5-color: var(--text-title-h5) ; } /* #e60000 dark, #cc0000 light */
+.h6-color-designated { --h6-color: var(--text-title-h6) ; } /* #cccc00 dark/light */
 
 /* Collapse indicator SVGs and colors */
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header .collapse-indicator.collapse-icon svg,
@@ -1321,7 +1810,7 @@ body:is(.h2-divider-on, .h3-divider-on, .h4-divider-on, .h5-divider-on, .h6-divi
   .theme-light body.h6-divider-on h6::after { background-image: linear-gradient(to left, var(--text-title-h6) 30%, transparent 70%); }
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Horizontal Rule */
 
@@ -1361,7 +1850,7 @@ body {
   -webkit-mask-repeat: no-repeat;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Links  */
 body {
@@ -1500,7 +1989,7 @@ body {
   font-weight: 600;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Text Emphasis */
 
@@ -1551,7 +2040,7 @@ body {
   background-image: linear-gradient(62deg, var(--text-title-h2) 0%, var(--text-title-h4) 100%); /* Gradient from h2 to h6 colors */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Embedded Images */
 img {
@@ -1569,7 +2058,8 @@ img:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
-/*==================================== End ====================================*/
+
+/*=========================================================================================*/
 
 /* Accessibility Focus Styles */
 a:focus, button:focus, input:focus, textarea:focus {
@@ -1622,4 +2112,10 @@ a:focus, button:focus, input:focus, textarea:focus {
   body.h6-divider-on h6::after { background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%); }
 }
 
-/*==================================== End ====================================*/
+body {
+    /* Callouts */
+    --callout-border-width: 1px;
+    --callout-border-opacity: 1;
+    --callout-padding: 16px 24px 0 24px;
+
+}

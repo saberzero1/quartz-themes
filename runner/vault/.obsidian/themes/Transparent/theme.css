@@ -11,6 +11,7 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 /* ===================== vars ===================== */
 :root {
   --tr: Transparent;
+  
   --set-blur: 80px;
   --mobile-sidebar-min-width: 100vw;
   /* there is background */
@@ -23,6 +24,7 @@ body {
   --divider-width: 0px;
   --divider-color: var(--tr);
   --background-modifier-border: essaopie;
+  --input-border-width: 1px;
 }
 /* ===================== vars ===================== */
 
@@ -33,7 +35,7 @@ body {
 }
 .theme-light {
   --brightness: 1.3;
-  --kolorboku: #1d1d1f; /* texe color readable black */
+  --kolorboku: #1d1d1f; /* text color readable black */
 }
 /* ===================== theme-light ===================== */
 
@@ -47,7 +49,9 @@ body {
 .theme-dark {
   --kolorboku: #e2e0dc; /* text color readable white */
   --brightness: 0.50;
+  --interactive-normal: #00000060;
   --interactive-hover: #00000060;
+
   --input-shadow-hover:
   inset 0 0 0 1px rgba(255, 255, 255, 0.12),
   0 0 4px 1px rgba(255, 255, 255, 0.08);
@@ -284,8 +288,39 @@ input[type="range"]::-webkit-slider-thumb {
 .vertical-tab-header-group-title {
   color: var(--color-accent);
 }
+/* you can find this in canvas for example after hovering over menu on the right */ 
+.tooltip {
+    background-color: var(--tr);
+    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
+.tooltip.mod-left .tooltip-arrow {
+    border-left: 5px solid #00000060;
+}
+.tooltip .tooltip-arrow {
+    border-bottom: 5px solid #00000060;
+}
 
-/* mobile */
+/* bases */
+.bases-table-container {
+    background: #00000060;
+}
+.markdown-source-view.mod-cm6 .cm-scroller {
+    background-color: var(--tr);
+    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
+.popover.hover-popover.is-editing {
+    outline: 0px var(--tr);
+}
+.bases-query-container .filter-row .filter-operator {
+    border-width: 0 0px;
+}
+.bases-query-container .filter-expression {
+    --metadata-property-box-shadow: 0 0 0 0px var(--tr);
+    }
+.popover, .formula-editor .cm-tooltip.cm-tooltip-autocomplete, .suggestion-container {
+    background-color: #00000060;
+    }
+/* ===================== mobile ===================== */
 /* better settings on mobile  */
 .is-phone .vertical-tab-header-group-title, .is-phone .setting-item-heading .setting-item-name {
     color: var(--color-accent);
@@ -347,4 +382,3 @@ input[type='range'] {
 }
 
 */
-

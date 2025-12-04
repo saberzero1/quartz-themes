@@ -1,12 +1,8 @@
 {
-  "name": "Ebullientworks",
-  "version": "1.0.2",
-  "minAppVersion": "0.16.0",
-  "author": "Ebullientworks",
-  "authorUrl": "https://github.com/ebullient",
-  "fundingUrl": "https://www.buymeacoffee.com/ebullient",
-  "license": {
-    "name": "Creative Commons Zero v1.0 Universal",
-    "spdx_id": "CC0-1.0"
-  }
+   "name": "Ebullientworks",
+   "version": "1.1.0",
+   "minAppVersion": "1.9.12",
+   "author": "Ebullientworks",
+   "authorUrl": "https://github.com/ebullient",
+   "fundingUrl": "https://www.buymeacoffee.com/ebullient"
 }

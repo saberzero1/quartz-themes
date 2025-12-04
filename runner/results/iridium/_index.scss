@@ -316,37 +316,37 @@
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: rgb(162, 150, 192) !important;
   --graph-text: #222222 !important;
-  --h1-letter-spacing: 0 !important;
+  --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.5 !important;
   --h1-size: 1.5em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 600 !important;
-  --h2-letter-spacing: 0 !important;
+  --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.5 !important;
   --h2-size: 1.4em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 600 !important;
-  --h3-letter-spacing: 0 !important;
+  --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.5 !important;
   --h3-size: 1.3em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 600 !important;
-  --h4-letter-spacing: 0 !important;
+  --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.5 !important;
   --h4-size: 1.2em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 600 !important;
-  --h5-letter-spacing: 0 !important;
+  --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.1em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 600 !important;
-  --h6-letter-spacing: 0 !important;
+  --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
@@ -400,8 +400,14 @@
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #ababab !important;
   --input-radius: 5px !important;
-  --input-shadow: inset 0 0 0 1px rgb(221, 217, 232) !important;
-  --input-shadow-hover: inset 0 0 0 1px rgb(210, 204, 224) !important;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
   --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(103, 44, 242) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -819,6 +825,7 @@
   --i-7: rgb(205, 198, 221) !important;
   --i-8: rgb(199, 191, 217) !important;
   --i-active-line-color: 258, 88%, 66% !important;
+  --i-bases-table-header-font-size: 0.8em !important;
   --i-blockquote-indent: 0 !important;
   --i-border-radius: 8px !important;
   --i-bullet-color: rgb(138, 92, 245) !important;
@@ -1229,37 +1236,37 @@
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: rgb(97, 90, 114) !important;
   --graph-text: rgb(217, 217, 217) !important;
-  --h1-letter-spacing: 0 !important;
+  --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.5 !important;
   --h1-size: 1.5em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 600 !important;
-  --h2-letter-spacing: 0 !important;
+  --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.5 !important;
   --h2-size: 1.4em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 600 !important;
-  --h3-letter-spacing: 0 !important;
+  --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.5 !important;
   --h3-size: 1.3em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 600 !important;
-  --h4-letter-spacing: 0 !important;
+  --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.5 !important;
   --h4-size: 1.2em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 600 !important;
-  --h5-letter-spacing: 0 !important;
+  --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.1em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 600 !important;
-  --h6-letter-spacing: 0 !important;
+  --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
@@ -1313,8 +1320,14 @@
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgb(102, 102, 102) !important;
   --input-radius: 5px !important;
-  --input-shadow: inset 0 0 0 1px rgb(63, 58, 74) !important;
-  --input-shadow-hover: inset 0 0 0 1px rgb(73, 67, 86) !important;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(172, 140, 248) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -1730,6 +1743,7 @@
   --i-7: rgb(68, 63, 80) !important;
   --i-8: rgb(73, 67, 86) !important;
   --i-active-line-color: 258, 88%, 66% !important;
+  --i-bases-table-header-font-size: 0.8em !important;
   --i-blockquote-indent: 0 !important;
   --i-border-radius: 8px !important;
   --i-bullet-color: rgb(138, 92, 245) !important;
@@ -3216,7 +3230,7 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(179, 179, 179);
+    stroke: rgb(217, 217, 217);
   }
 
   .callout[data-callout="bug"] {

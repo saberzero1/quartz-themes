@@ -1,8 +1,7 @@
 {
-  "name": "Eldritch",
-  "version": "1.0.0",
-  "minAppVersion": "0.16.0",
-  "author": "Eldritch",
-  "authorUrl": "https://github.com/eldritch-theme",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Eldritch",
+	"version": "1.0.0",
+	"minAppVersion": "0.16.0",
+	"author": "Eldritch",
+	"authorUrl": "https://github.com/eldritch-theme"
 }

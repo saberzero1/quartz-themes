@@ -259,6 +259,10 @@
   --font-interface-theme: "Aspekta", sans-serif !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
+  --font-mermaid:
+    "IAWriter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-monospace: "Monaspace", monospace !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -267,13 +271,19 @@
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
+  --font-print: "IAWriter", sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
+  --font-text:
+    "IAWriter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
+  --font-text-theme: "IAWriter", sans-serif !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 16px !important;
@@ -782,10 +792,12 @@
   --h1-color: #000 !important;
   --inline-title-color: #000 !important;
   --vault-name-color: #222222 !important;
+  --h1-font: "Fraunces", sans-serif !important;
+  --inline-title-font: "Fraunces", sans-serif !important;
+  --font-title: "Fraunces", sans-serif !important;
   --status-bar-scroll-padding: 30px !important;
   --vault-name-font-size: 14px !important;
   --vault-name-font-weight: 500 !important;
-  --color-accent-3: hsl(-170, 139.5%, 72.24%) !important;
   --color-accent-rgb: 255, 94, 35 !important;
   --ancestor-editor-color: #222222 !important;
   --aside-background: transparent !important;
@@ -1081,6 +1093,10 @@
   --font-interface-theme: "Aspekta", sans-serif !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
+  --font-mermaid:
+    "IAWriter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-monospace: "Monaspace", monospace !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -1089,13 +1105,19 @@
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
+  --font-print: "IAWriter", sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
+  --font-text:
+    "IAWriter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
+  --font-text-theme: "IAWriter", sans-serif !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 16px !important;
@@ -1602,10 +1624,12 @@
   --h1-color: #dadada !important;
   --inline-title-color: #dadada !important;
   --vault-name-color: #b3b3b3 !important;
+  --h1-font: "Fraunces", sans-serif !important;
+  --inline-title-font: "Fraunces", sans-serif !important;
+  --font-title: "Fraunces", sans-serif !important;
   --status-bar-scroll-padding: 30px !important;
   --vault-name-font-size: 14px !important;
   --vault-name-font-weight: 500 !important;
-  --color-accent-3: hsl(-175, 142.6%, 79.98%) !important;
   --color-accent-rgb: 247, 69, 69 !important;
   --ancestor-editor-color: #b3b3b3 !important;
   --aside-background: transparent !important;
@@ -1869,7 +1893,7 @@ body {
     cursor: pointer;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -1900,7 +1924,7 @@ body {
     cursor: pointer;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -1930,7 +1954,7 @@ body {
     cursor: pointer;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -1960,7 +1984,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -1991,7 +2015,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2022,7 +2046,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2053,7 +2077,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2084,7 +2108,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2117,7 +2141,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2147,7 +2171,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2447,7 +2471,7 @@ body {
     background-color: light-dark(rgb(233, 233, 233), rgb(85, 85, 85));
     border-inline-start: inherit;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2535,7 +2559,7 @@ body {
     cursor: auto;
     filter: none;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2667,27 +2691,14 @@ body {
 
   h1 {
     color: light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
-    font-family:
-      Aspekta,
-      sans-serif,
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Fraunces, sans-serif;
     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px;
   }
 
   h2 {
     color: light-dark(rgb(34, 34, 34), rgb(179, 179, 179));
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2706,7 +2717,7 @@ body {
   h3 {
     color: light-dark(rgb(34, 34, 34), rgb(179, 179, 179));
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2725,7 +2736,7 @@ body {
   h4 {
     color: light-dark(rgb(34, 34, 34), rgb(179, 179, 179));
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2744,7 +2755,7 @@ body {
   h5 {
     color: light-dark(rgb(34, 34, 34), rgb(179, 179, 179));
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2763,7 +2774,7 @@ body {
   h6 {
     color: light-dark(rgb(34, 34, 34), rgb(179, 179, 179));
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -2782,20 +2793,7 @@ body {
   h2.page-title,
   h2.page-title a {
     color: light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
-    font-family:
-      Aspekta,
-      sans-serif,
-      ui-sans-serif,
-      -apple-system,
-      "system-ui",
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Fraunces, sans-serif;
     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px;
   }
 
@@ -3167,7 +3165,7 @@ body {
     white-space-collapse: break-spaces;
     text-wrap-mode: wrap;
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,
@@ -3184,7 +3182,7 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family:
-      Aspekta,
+      IAWriter,
       sans-serif,
       ui-sans-serif,
       -apple-system,

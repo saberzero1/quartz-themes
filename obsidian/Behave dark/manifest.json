@@ -1,8 +1,7 @@
 {
-  "name": "Behave dark",
-  "version": "1.0.4",
-  "minAppVersion": "0.16.0",
-  "author": "Chrismettal",
-  "authorUrl": "https://gitlab.com/chrismettal",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+   "name": "Behave dark",
+   "version": "1.0.4",
+   "minAppVersion": "0.16.0",
+   "author": "Chrismettal",
+   "authorUrl": "https://gitlab.com/chrismettal"
 }

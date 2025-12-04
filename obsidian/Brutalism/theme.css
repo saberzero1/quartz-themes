@@ -29,7 +29,7 @@ body {
   --font-ui-smaller: 13px;
   --font-ui-small: 14px;
   --font-ui-medium: 16px;
-  --font-ui-large: 22px;
+  --font-ui-large: 22px; 
 
   /* UI font colors */
   --h1-color: var(--header-color);
@@ -49,7 +49,7 @@ body {
   --text-faint: #565f8988;
 }
 
-.theme-light {
+.theme-light  {
   --color-base-00: #d5d6db;
   --header-color: #34548a; /* #0f4bef alternative*/
   --bold-color: #5a4a78;
@@ -62,10 +62,9 @@ body {
 .inline-title {
   font-size: calc(26px + (72 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1;
-  font-family:
-    "Archivo", "Archivo SemiBold", system-ui, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: 'Archivo', 'Archivo SemiBold', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background: -webkit-radial-gradient(#bb9af7, #f7768e);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
 }
+

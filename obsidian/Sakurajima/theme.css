@@ -92,9 +92,9 @@ body {
   --ribbon-background: var(--sakurajima-color-black-200);
 
   /* Editor: Blockquote */
-  --blockquote-background-color: var(--sakurajima-color-black-200);
-  --blockquote-border-thickness: 10px;
-  --blockquote-border-color: var(--sakurajima-color-orange-100);
+  --blockquote-background-color: var(--sakurajima-color-light-black-200);
+  --blockquote-border-thickness: 6px;
+  --blockquote-border-color: var(--sakurajima-color-orange-300);
   --blockquote-font-style: bold;
   --blockquote-color: var(--sakurajima-color-white-200);
 }
@@ -121,4 +121,34 @@ svg * {
 
 .menu-separator {
   margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+/* Rounded blockquote borders */
+.markdown-rendered blockquote {
+  border: none;
+  position: relative;
+	padding: 20px 14px;
+	border-radius: 10px;
+	border-left: 8px solid var(--sakurajima-color-orange-200);
+}
+
+.markdown-rendered table {
+	border: 2px solid var(--sakurajima-color-rust-300);
+}
+
+.markdown-rendered table thead,
+.markdown-rendered table tfoot,
+.markdown-rendered table tbody,
+.markdown-rendered table td,
+.markdown-rendered table tr
+{
+	border: 2px solid var(--sakurajima-color-rust-300);
+}
+
+.markdown-rendered table thead {
+	background-color: var(--sakurajima-color-light-black-200);
+}
+
+.markdown-rendered img {
+	border-radius: 8px;
 }

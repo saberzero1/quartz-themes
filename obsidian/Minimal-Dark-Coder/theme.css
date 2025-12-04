@@ -1,27 +1,25 @@
-.theme-dark {
+.theme-dark{
   --background-primary: #181a1b;
   --background-secondary: #181a1b;
   --background-secondary-alt: #181a1b;
 
-  --text-normal: #ccba8d;
-  --text-muted: #ccba8d;
-  --text-faint: #ff1493;
-
-  --text-accent: #32cd32;
-  --text-accent-hover: #ff5c8f;
+  --text-normal: #CCBA8D;
+  --text-muted: #CCBA8D;
+  --text-faint: #FF1493;
+  
+  --text-accent: #32CD32;
+  --text-accent-hover: #FF5C8F;
   --text-selection: #29502e;
   --text-highlight-bg: #29502e;
 }
 
-.mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
-.is-focused
-  .mod-active
-  .workspace-tab-header.is-active
-  .workspace-tab-header-inner-title {
-  color: #ff1493;
+.mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title ,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title{
+    color: #FF1493;
+
 }
 .markdown-preview-view a {
-  color: #32cd32;
+    color: #32CD32;
 }
 
 .cm-header-1,
@@ -37,17 +35,24 @@
 .markdown-preview-view h5,
 .markdown-preview-view h6,
 .graph-view.color-fill,
-.markdown-preview-view a:hover {
-  color: #ffd700;
+.markdown-preview-view a:hover  {
+  color: #FFD700;
 }
+
 
 .workspace-tab-header .workspace-tab-header-inner-title,
 .graph-view.color-fill-unresolved,
 .graph-view.color-arrow {
-  color: #ccba8d;
+  color: #CCBA8D;
 }
 
 .graph-view.color-line {
   opacity: 0.7;
-  color: #2b8b98;
+  color: #2B8B98;
+}
+
+strong,
+.cm-s-obsidian span.cm-formatting-strong,
+.cm-s-obsidian span.cm-strong {
+	color: #9589e1;
 }

@@ -1,11 +1,7 @@
 {
-  "name": "Serif",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "agodlyman",
-  "authorUrl": "https://github.com/GodlyMan-bit",
-  "license": {
-    "name": "Creative Commons Attribution 4.0 International",
-    "spdx_id": "CC-BY-4.0"
-  }
+	"name": "Serif",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"author": "agodlyman",
+	"authorUrl": "https://github.com/GodlyMan-bit"
 }

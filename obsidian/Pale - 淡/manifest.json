@@ -1,9 +1,8 @@
 {
-  "name": "Pale - 淡",
-  "author": "Elhary",
-  "minAppVersion": "0.15.0",
-  "version": "1.3.0",
-  "screenshot": "screenshot.png",
-  "modes": ["dark", "light"],
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
-}
+    "name": "Pale - 淡",
+    "author": "Elhary",
+    "minAppVersion": "0.15.0",
+    "version": "1.3.0",
+    "screenshot": "screenshot.png",
+    "modes": ["dark", "light"]
+  }

@@ -1,7 +1,6 @@
 {
-  "name": "Allium",
-  "version": "2.0.7",
-  "minAppVersion": "1.1.8",
-  "author": "Xainapse",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+   "name": "Allium",
+   "version": "2.0.7",
+   "minAppVersion": "1.1.8",
+   "author": "Xainapse"
 }

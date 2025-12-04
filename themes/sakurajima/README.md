@@ -1,7 +1,7 @@
 # Sakurajima
 
 - Theme: Sakurajima
-- Author: <a href="https://dnfolio.dev" target="_blank" rel="noopener noreferrer">Daiki Nakashima</a>
+- Author: <a href="https://dnfolio.me" target="_blank" rel="noopener noreferrer">Daiki Nakashima</a>
 
 ## Preview
 
