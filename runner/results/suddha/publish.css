@@ -944,7 +944,7 @@ body.theme-light {
   --base-l: 95% !important;
   --base-s: 0% !important;
   --text:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "m1+ 1p" !important;
   --line-width: 800px !important;
   --max-width: 100% !important;
@@ -955,7 +955,7 @@ body.theme-light {
   --background-transparent: rgba(242, 242, 242, 0) !important;
   --background-match-highlight: rgba(143, 119, 197, 0.2) !important;
   --text-editor:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "Helvetica Neue", "m1+ 1p" !important;
   --icon-normal: brightness(100%) !important;
   --accent-h-o: 50 !important;
@@ -1781,7 +1781,7 @@ body.theme-dark {
   --base-l: 95%;
   --base-s: 0%;
   --text:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "m1+ 1p";
   --line-width: 800px;
   --max-width: 100%;
@@ -1792,7 +1792,7 @@ body.theme-dark {
   --background-transparent: rgba(26, 26, 26, 0);
   --background-match-highlight: rgba(143, 119, 197, 0.2);
   --text-editor:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "Helvetica Neue", "m1+ 1p";
   --icon-normal: brightness(100%);
   --accent-h-o: 50;
@@ -2350,7 +2350,7 @@ body .site-body-left-column input.search-bar {
   border-end-end-radius: 4px;
   color: light-dark(rgb(0, 0, 0), rgb(204, 204, 204));
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "m1+ 1p";
 }
 body .search-results {
@@ -2904,7 +2904,7 @@ body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(102, 102, 102), rgb(140, 140, 140));
   cursor: default;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "m1+ 1p";
   font-weight: 300;
   text-decoration: none solid rgb(140, 140, 140);
@@ -2941,7 +2941,7 @@ body
   color: light-dark(rgb(102, 102, 102), rgb(140, 140, 140));
   cursor: default;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "m1+ 1p";
   font-weight: 300;
   text-decoration: none solid rgb(140, 140, 140);
@@ -2956,7 +2956,7 @@ body
   color: light-dark(rgb(102, 102, 102), rgb(140, 140, 140));
   cursor: default;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "m1+ 1p";
   font-weight: 300;
   text-decoration: none solid rgb(140, 140, 140);

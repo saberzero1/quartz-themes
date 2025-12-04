@@ -1478,8 +1478,7 @@ body .site-body-left-column input.search-bar {
   border-end-start-radius: 5px;
   border-end-end-radius: 5px;
   color: rgb(255, 255, 255);
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 body .search-results {
   background-color: rgb(14, 14, 14);
@@ -2020,8 +2019,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
 body .nav-view-outer .tree-item-self a {
   color: rgb(187, 187, 187);
   cursor: default;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(187, 187, 187);
 }
@@ -2053,8 +2051,7 @@ body
   > .tree-item-self {
   color: rgb(187, 187, 187);
   cursor: default;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(187, 187, 187);
 }
@@ -2067,8 +2064,7 @@ body
   > .tree-item-self {
   color: rgb(187, 187, 187);
   cursor: default;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   text-decoration: none solid rgb(187, 187, 187);
 }

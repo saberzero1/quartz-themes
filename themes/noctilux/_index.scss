@@ -1606,8 +1606,7 @@ body {
     border-end-start-radius: 5px;
     border-end-end-radius: 5px;
     color: rgb(255, 255, 255);
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
 
   .search > .search-container > .search-space {
@@ -2263,8 +2262,7 @@ body {
   .explorer .explorer-content ul.explorer-ul li a {
     color: rgb(187, 187, 187);
     cursor: default;
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     text-decoration: none solid rgb(187, 187, 187);
   }
@@ -2295,8 +2293,7 @@ body {
     > .folder-container {
     color: rgb(187, 187, 187);
     cursor: default;
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     text-decoration: none solid rgb(187, 187, 187);
   }
@@ -2304,8 +2301,7 @@ body {
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
     color: rgb(187, 187, 187);
     cursor: default;
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     text-decoration: none solid rgb(187, 187, 187);
   }

@@ -94,7 +94,6 @@
     "postcss-rgba-hex": "^0.3.7",
     "postcss-scss": "^4.0.9",
     "postcss-selector-not": "^8.0.1",
-    "postcss-unprefix": "^2.1.4",
     "ts-node": "^10.9.2"
   },
   "@parcel/transformer-css": {

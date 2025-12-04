@@ -329,7 +329,7 @@ body.theme-light {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
+    system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
@@ -361,7 +361,7 @@ body.theme-light {
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
+    system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
@@ -908,7 +908,7 @@ body.theme-light {
   --file-margins-block: 32px !important;
   --file-margins-inline: 32px !important;
   --font-print-theme:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
+    system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
   --line-width-wide: min(100cqw, 50rem) !important;
   --media-radius: 8px !important;
   --nav-header-align: center !important;
@@ -1209,8 +1209,7 @@ body.theme-dark {
     -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
-  --font-interface-theme:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  --font-interface-theme: system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
@@ -1241,8 +1240,7 @@ body.theme-dark {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
-  --font-text-theme:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  --font-text-theme: system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -1782,8 +1780,7 @@ body.theme-dark {
   --embed-background: #242424;
   --file-margins-block: 32px;
   --file-margins-inline: 32px;
-  --font-print-theme:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  --font-print-theme: system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   --line-width-wide: min(100cqw, 50rem);
   --media-radius: 8px;
   --nav-header-align: center;
