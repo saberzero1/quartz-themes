@@ -6,8 +6,14 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem (system:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = import nixpkgs {
           inherit system;
@@ -81,16 +87,20 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs; [
-            # Node.js and npm
-            nodejs_22
-            # Just command runner
-            just
-            # Git for version control
-            git
-            # Additional development tools
-            python3
-          ] ++ libraries;
+          buildInputs =
+            with pkgs;
+            [
+              # Node.js and npm
+              nodejs_22
+              bun
+              # Just command runner
+              just
+              # Git for version control
+              git
+              # Additional development tools
+              python3
+            ]
+            ++ libraries;
 
           # Environment variables for nix-ld
           NIX_LD_LIBRARY_PATH = nix-ld-libraries;
