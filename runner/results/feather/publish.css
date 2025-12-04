@@ -315,8 +315,7 @@ body.theme-light {
     "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif !important;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
@@ -354,8 +353,7 @@ body.theme-light {
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif !important;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
@@ -890,8 +888,7 @@ body.theme-light {
   --blue: #4da2f8 !important;
   --em-color: #1fcbdc !important;
   --font-editor-theme:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif !important;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --pink: #ff22b1 !important;
   --strong-color: #ff82b2 !important;
   --indigo: #6a84ed !important;
@@ -924,8 +921,7 @@ body.theme-light {
     "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", monospace !important;
   --y:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif !important;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif !important;
   --text-highlight-bg-l: rgba(255, 208, 0, 0.4) !important;
 }
 
@@ -1181,8 +1177,7 @@ body.theme-dark {
     "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
@@ -1220,8 +1215,7 @@ body.theme-dark {
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -1754,8 +1748,7 @@ body.theme-dark {
   --blue: #4da2f8;
   --em-color: #1fcbdc;
   --font-editor-theme:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
   --pink: #ff22b1;
   --strong-color: #ff82b2;
   --indigo: #6a84ed;
@@ -1789,8 +1782,7 @@ body.theme-dark {
     "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", monospace;
   --y:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif;
 }
 
 body .markdown-rendered a.external-link {

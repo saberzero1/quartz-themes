@@ -2249,8 +2249,7 @@ body .site-body-left-column input.search-bar {
   border-end-end-radius: 5px;
   color: light-dark(rgb(38, 38, 38), rgb(214, 212, 212));
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell;
 }
 body .search-results {
   background-color: light-dark(rgb(255, 255, 255), rgb(5, 5, 5));
@@ -2803,8 +2802,7 @@ body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell;
   font-weight: 400;
   text-decoration: none solid rgb(179, 179, 179);
 }
@@ -2837,8 +2835,7 @@ body
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell;
   font-weight: 400;
   text-decoration: none solid rgb(179, 179, 179);
 }
@@ -2852,8 +2849,7 @@ body
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell;
+    system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell;
   font-weight: 400;
   text-decoration: none solid rgb(179, 179, 179);
 }

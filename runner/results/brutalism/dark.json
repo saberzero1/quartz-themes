@@ -19283,7 +19283,7 @@
   "div.inline-title": {
     "animation-duration": "0s",
     "background-clip": "text",
-    "background-image": "-webkit-radial-gradient(center, rgb(187, 154, 247), rgb(247, 118, 142))",
+    "background-image": "radial-gradient(center, rgb(187, 154, 247), rgb(247, 118, 142))",
     "border-block-end-color": "rgb(122, 162, 247)",
     "border-block-start-color": "rgb(122, 162, 247)",
     "border-bottom-color": "rgb(122, 162, 247)",
