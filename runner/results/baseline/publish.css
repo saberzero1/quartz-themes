@@ -1016,8 +1016,6 @@ body.theme-light {
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 32px !important;
   --tag-weight: 500 !important;
-  --translucent-dark-opacity: 50% !important;
-  --translucent-light-opacity: 50% !important;
 }
 
 body.theme-dark {
@@ -1800,7 +1798,7 @@ body.theme-dark {
   --vault-profile-font-size: 13px;
   --vault-profile-font-weight: 500;
   --viewer-container-height: 0;
-  --workspace-background-translucent: rgb(from #262626 r g b / 50%);
+  --workspace-background-translucent: transparent;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --zoom-factor: 1;
@@ -1881,8 +1879,6 @@ body.theme-dark {
     rgba(255, 255, 255, 0.04) 0px 2px 4px -2px;
   --tab-action-width: 32px;
   --tag-weight: 500;
-  --translucent-dark-opacity: 50%;
-  --translucent-light-opacity: 50%;
 }
 
 body .markdown-rendered a.external-link {

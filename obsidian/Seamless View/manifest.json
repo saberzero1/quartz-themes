@@ -1,8 +1,7 @@
 {
-  "name": "Seamless View",
-  "version": "2.0.2",
-  "minAppVersion": "1.6.1",
-  "author": "Gustavo Salgado",
-  "authorUrl": "https://github.com/GustavoSZ124/Obsidian-Theme-Seamless-View",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Seamless View",
+	"version": "2.0.2",
+	"minAppVersion": "1.6.1",
+	"author": "Gustavo Salgado",
+	"authorUrl": "https://github.com/GustavoSZ124/Obsidian-Theme-Seamless-View"
 }

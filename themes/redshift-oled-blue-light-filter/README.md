@@ -1,7 +1,7 @@
-# RedShift: OLED Blue Light Filter
+# RedShift - OLED Blue Light Filter
 
-- Theme: RedShift: OLED Blue Light Filter
-- Author: <a href="https://obsidian.md" target="_blank" rel="noopener noreferrer">Yazan Abu Queider</a>
+- Theme: RedShift - OLED Blue Light Filter
+- Author: <a href="https://github.com/norderan" target="_blank" rel="noopener noreferrer">Yazan Abu Queider</a>
 
 ## Preview
 

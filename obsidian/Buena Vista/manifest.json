@@ -1,8 +1,7 @@
 {
-  "name": "Buena Vista",
-  "version": "1.0.2",
-  "minAppVersion": "1.0.0",
-  "author": "oqipo",
-  "authorUrl": "https://github.com/oqipodev/",
-  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
+	"name": "Buena Vista",
+	"version": "1.0.2",
+	"minAppVersion": "1.0.0",
+	"author": "oqipo",
+	"authorUrl": "https://github.com/oqipodev/"
 }

@@ -25,15 +25,15 @@
   --background-modifier-border-hover: rgba(0, 0, 0, 0.075) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
-  --background-modifier-error: rgb(255, 56, 60) !important;
-  --background-modifier-error-hover: rgb(255, 56, 60) !important;
-  --background-modifier-error-rgb: 255, 56, 60 !important;
+  --background-modifier-error: rgb(254, 112, 112) !important;
+  --background-modifier-error-hover: rgb(254, 112, 112) !important;
+  --background-modifier-error-rgb: 254, 112, 112 !important;
   --background-modifier-form-field: #ffffff !important;
   --background-modifier-form-field-hover: #ffffff !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgb(from #fafafa r g b / 75%) !important;
-  --background-modifier-success: rgb(52, 199, 89) !important;
-  --background-modifier-success-rgb: 52, 199, 89 !important;
+  --background-modifier-success: rgb(74, 213, 95) !important;
+  --background-modifier-success-rgb: 74, 213, 95 !important;
   --background-primary: #ffffff !important;
   --background-primary-alt: #fafafa !important;
   --background-secondary: #f6f6f6 !important;
@@ -105,35 +105,35 @@
   --callout-blend-mode: normal !important;
   --callout-border-opacity: 0.25 !important;
   --callout-border-width: 1px !important;
-  --callout-bug: 255, 56, 60 !important;
+  --callout-bug: 254, 112, 112 !important;
   --callout-content-background: transparent !important;
   --callout-content-padding: 0 !important;
-  --callout-default: 0, 136, 255 !important;
-  --callout-error: 255, 56, 60 !important;
-  --callout-example: 203, 48, 224 !important;
-  --callout-fail: 255, 56, 60 !important;
-  --callout-important: 0, 192, 232 !important;
-  --callout-info: 0, 136, 255 !important;
+  --callout-default: 106, 173, 250 !important;
+  --callout-error: 254, 112, 112 !important;
+  --callout-example: 187, 158, 245 !important;
+  --callout-fail: 254, 112, 112 !important;
+  --callout-important: 56, 219, 214 !important;
+  --callout-info: 106, 173, 250 !important;
   --callout-padding: 16px !important;
-  --callout-question: 255, 141, 40 !important;
+  --callout-question: 242, 154, 100 !important;
   --callout-quote: 158, 158, 158 !important;
   --callout-radius: 8px !important;
-  --callout-success: 52, 199, 89 !important;
-  --callout-summary: 0, 192, 232 !important;
-  --callout-tip: 0, 192, 232 !important;
+  --callout-success: 74, 213, 95 !important;
+  --callout-summary: 56, 219, 214 !important;
+  --callout-tip: 56, 219, 214 !important;
   --callout-title-padding: 0 !important;
   --callout-title-weight: 700 !important;
-  --callout-todo: 0, 136, 255 !important;
-  --callout-warning: 255, 141, 40 !important;
+  --callout-todo: 106, 173, 250 !important;
+  --callout-warning: 242, 154, 100 !important;
   --canvas-background: #ffffff !important;
   --canvas-card-label-color: #ababab !important;
   --canvas-color: 192, 192, 192 !important;
-  --canvas-color-1: 255, 56, 60 !important;
-  --canvas-color-2: 255, 141, 40 !important;
-  --canvas-color-3: 255, 204, 0 !important;
-  --canvas-color-4: 52, 199, 89 !important;
-  --canvas-color-5: 0, 192, 232 !important;
-  --canvas-color-6: 203, 48, 224 !important;
+  --canvas-color-1: 254, 112, 112 !important;
+  --canvas-color-2: 242, 154, 100 !important;
+  --canvas-color-3: 224, 205, 99 !important;
+  --canvas-color-4: 74, 213, 95 !important;
+  --canvas-color-5: 56, 219, 214 !important;
+  --canvas-color-6: 187, 158, 245 !important;
   --canvas-dot-pattern: #e0e0e0 !important;
   --caret-color: #222222 !important;
   --checkbox-border-color: #ababab !important;
@@ -156,7 +156,7 @@
   --code-important: #b76b02 !important;
   --code-keyword: #e45749 !important;
   --code-normal: #383a42 !important;
-  --code-operator: rgb(255, 56, 60) !important;
+  --code-operator: rgb(254, 112, 112) !important;
   --code-property: #62afef !important;
   --code-punctuation: #383a42 !important;
   --code-radius: 8px !important;
@@ -183,22 +183,22 @@
   --color-base-50: #ababab !important;
   --color-base-60: #707070 !important;
   --color-base-70: #5c5c5c !important;
-  --color-blue: rgb(0, 136, 255) !important;
-  --color-blue-rgb: 0, 136, 255 !important;
-  --color-cyan: rgb(0, 192, 232) !important;
-  --color-cyan-rgb: 0, 192, 232 !important;
-  --color-green: rgb(52, 199, 89) !important;
-  --color-green-rgb: 52, 199, 89 !important;
-  --color-orange: rgb(255, 141, 40) !important;
-  --color-orange-rgb: 255, 141, 40 !important;
-  --color-pink: rgb(255, 45, 85) !important;
-  --color-pink-rgb: 255, 45, 85 !important;
-  --color-purple: rgb(203, 48, 224) !important;
-  --color-purple-rgb: 203, 48, 224 !important;
-  --color-red: rgb(255, 56, 60) !important;
-  --color-red-rgb: 255, 56, 60 !important;
-  --color-yellow: rgb(255, 204, 0) !important;
-  --color-yellow-rgb: 255, 204, 0 !important;
+  --color-blue: rgb(106, 173, 250) !important;
+  --color-blue-rgb: 106, 173, 250 !important;
+  --color-cyan: rgb(56, 219, 214) !important;
+  --color-cyan-rgb: 56, 219, 214 !important;
+  --color-green: rgb(74, 213, 95) !important;
+  --color-green-rgb: 74, 213, 95 !important;
+  --color-orange: rgb(242, 154, 100) !important;
+  --color-orange-rgb: 242, 154, 100 !important;
+  --color-pink: rgb(243, 125, 183) !important;
+  --color-pink-rgb: 243, 125, 183 !important;
+  --color-purple: rgb(187, 158, 245) !important;
+  --color-purple-rgb: 187, 158, 245 !important;
+  --color-red: rgb(254, 112, 112) !important;
+  --color-red-rgb: 254, 112, 112 !important;
+  --color-yellow: rgb(224, 205, 99) !important;
+  --color-yellow-rgb: 224, 205, 99 !important;
   --corner-smoothing: 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -314,9 +314,9 @@
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
-  --graph-node-attachment: rgb(255, 204, 0) !important;
+  --graph-node-attachment: rgb(224, 205, 99) !important;
   --graph-node-focused: rgb(138, 92, 245) !important;
-  --graph-node-tag: rgb(52, 199, 89) !important;
+  --graph-node-tag: rgb(74, 213, 95) !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #222222 !important;
   --h1-letter-spacing: -0.015em !important;
@@ -668,14 +668,14 @@
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: rgb(255, 56, 60) !important;
-  --sync-avatar-color-2: rgb(255, 141, 40) !important;
-  --sync-avatar-color-3: rgb(255, 204, 0) !important;
-  --sync-avatar-color-4: rgb(52, 199, 89) !important;
-  --sync-avatar-color-5: rgb(0, 192, 232) !important;
-  --sync-avatar-color-6: rgb(0, 136, 255) !important;
-  --sync-avatar-color-7: rgb(203, 48, 224) !important;
-  --sync-avatar-color-8: rgb(255, 45, 85) !important;
+  --sync-avatar-color-1: rgb(254, 112, 112) !important;
+  --sync-avatar-color-2: rgb(242, 154, 100) !important;
+  --sync-avatar-color-3: rgb(224, 205, 99) !important;
+  --sync-avatar-color-4: rgb(74, 213, 95) !important;
+  --sync-avatar-color-5: rgb(56, 219, 214) !important;
+  --sync-avatar-color-6: rgb(106, 173, 250) !important;
+  --sync-avatar-color-7: rgb(187, 158, 245) !important;
+  --sync-avatar-color-8: rgb(243, 125, 183) !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: #ffffff !important;
   --tab-container-background: #f6f6f6 !important;
@@ -757,7 +757,7 @@
   --tag-size: 0.875em !important;
   --text-accent: rgb(138, 92, 245) !important;
   --text-accent-hover: rgb(166, 139, 249) !important;
-  --text-error: rgb(255, 56, 60) !important;
+  --text-error: rgb(254, 112, 112) !important;
   --text-faint: #ababab !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
@@ -766,8 +766,8 @@
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgba(138, 92, 245, 0.2) !important;
-  --text-success: rgb(52, 199, 89) !important;
-  --text-warning: rgb(255, 141, 40) !important;
+  --text-success: rgb(74, 213, 95) !important;
+  --text-warning: rgb(242, 154, 100) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
   --titlebar-border-color: rgba(0, 0, 0, 0.075) !important;
@@ -859,8 +859,6 @@
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 40px !important;
   --tag-weight: 500 !important;
-  --translucent-dark-opacity: 50% !important;
-  --translucent-light-opacity: 50% !important;
   --anim-motion-cupertino: cubic-bezier(0.32, 0.72, 0, 1.1) !important;
   --blur-l: blur(8px) saturate(1.5) brightness(1.05) !important;
   --blur-m: blur(4px) saturate(1.5) brightness(1.05) !important;
@@ -907,15 +905,15 @@
   --background-modifier-border-hover: rgba(255, 255, 255, 0.15) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
-  --background-modifier-error: rgb(255, 66, 69) !important;
-  --background-modifier-error-hover: rgb(255, 66, 69) !important;
-  --background-modifier-error-rgb: 255, 66, 69 !important;
+  --background-modifier-error: rgb(217, 90, 95) !important;
+  --background-modifier-error-hover: rgb(217, 90, 95) !important;
+  --background-modifier-error-rgb: 217, 90, 95 !important;
   --background-modifier-form-field: #363636 !important;
   --background-modifier-form-field-hover: #363636 !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgb(from #242424 r g b / 75%) !important;
-  --background-modifier-success: rgb(48, 209, 88) !important;
-  --background-modifier-success-rgb: 48, 209, 88 !important;
+  --background-modifier-success: rgb(72, 196, 90) !important;
+  --background-modifier-success-rgb: 72, 196, 90 !important;
   --background-primary: #1e1e1e !important;
   --background-primary-alt: #242424 !important;
   --background-secondary: #262626 !important;
@@ -987,35 +985,35 @@
   --callout-blend-mode: normal;
   --callout-border-opacity: 0.25;
   --callout-border-width: 1px;
-  --callout-bug: 255, 66, 69;
+  --callout-bug: 217, 90, 95;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 0, 145, 255;
-  --callout-error: 255, 66, 69;
-  --callout-example: 107, 52, 242;
-  --callout-fail: 255, 66, 69;
-  --callout-important: 60, 211, 254;
-  --callout-info: 0, 145, 255;
+  --callout-default: 86, 148, 218;
+  --callout-error: 217, 90, 95;
+  --callout-example: 142, 125, 194;
+  --callout-fail: 217, 90, 95;
+  --callout-important: 63, 186, 182;
+  --callout-info: 86, 148, 218;
   --callout-padding: 16px;
-  --callout-question: 255, 146, 48;
+  --callout-question: 219, 134, 80;
   --callout-quote: 158, 158, 158;
   --callout-radius: 8px;
-  --callout-success: 48, 209, 88;
-  --callout-summary: 60, 211, 254;
-  --callout-tip: 60, 211, 254;
+  --callout-success: 72, 196, 90;
+  --callout-summary: 63, 186, 182;
+  --callout-tip: 63, 186, 182;
   --callout-title-padding: 0;
   --callout-title-weight: 700;
-  --callout-todo: 0, 145, 255;
-  --callout-warning: 255, 146, 48;
+  --callout-todo: 86, 148, 218;
+  --callout-warning: 219, 134, 80;
   --canvas-background: #1e1e1e !important;
   --canvas-card-label-color: #666666 !important;
   --canvas-color: 126, 126, 126 !important;
-  --canvas-color-1: 255, 66, 69 !important;
-  --canvas-color-2: 255, 146, 48 !important;
-  --canvas-color-3: 255, 214, 0 !important;
-  --canvas-color-4: 48, 209, 88 !important;
-  --canvas-color-5: 60, 211, 254 !important;
-  --canvas-color-6: 107, 52, 242 !important;
+  --canvas-color-1: 217, 90, 95 !important;
+  --canvas-color-2: 219, 134, 80 !important;
+  --canvas-color-3: 196, 180, 94 !important;
+  --canvas-color-4: 72, 196, 90 !important;
+  --canvas-color-5: 63, 186, 182 !important;
+  --canvas-color-6: 142, 125, 194 !important;
   --canvas-dot-pattern: #363636 !important;
   --caret-color: #dadada !important;
   --checkbox-border-color: #666666 !important;
@@ -1038,7 +1036,7 @@
   --code-important: #d19a66 !important;
   --code-keyword: #e16d76 !important;
   --code-normal: #abb2bf !important;
-  --code-operator: rgb(255, 66, 69) !important;
+  --code-operator: rgb(217, 90, 95) !important;
   --code-property: #62afef !important;
   --code-punctuation: #abb2bf !important;
   --code-radius: 8px !important;
@@ -1065,22 +1063,22 @@
   --color-base-50: #666666 !important;
   --color-base-60: #999999 !important;
   --color-base-70: #b3b3b3 !important;
-  --color-blue: rgb(0, 145, 255) !important;
-  --color-blue-rgb: 0, 145, 255 !important;
-  --color-cyan: rgb(60, 211, 254) !important;
-  --color-cyan-rgb: 60, 211, 254 !important;
-  --color-green: rgb(48, 209, 88) !important;
-  --color-green-rgb: 48, 209, 88 !important;
-  --color-orange: rgb(255, 146, 48) !important;
-  --color-orange-rgb: 255, 146, 48 !important;
-  --color-pink: rgb(255, 55, 95) !important;
-  --color-pink-rgb: 255, 55, 95 !important;
-  --color-purple: rgb(107, 52, 242) !important;
-  --color-purple-rgb: 107, 52, 242 !important;
-  --color-red: rgb(255, 66, 69) !important;
-  --color-red-rgb: 255, 66, 69 !important;
-  --color-yellow: rgb(255, 214, 0) !important;
-  --color-yellow-rgb: 255, 214, 0 !important;
+  --color-blue: rgb(86, 148, 218) !important;
+  --color-blue-rgb: 86, 148, 218 !important;
+  --color-cyan: rgb(63, 186, 182) !important;
+  --color-cyan-rgb: 63, 186, 182 !important;
+  --color-green: rgb(72, 196, 90) !important;
+  --color-green-rgb: 72, 196, 90 !important;
+  --color-orange: rgb(219, 134, 80) !important;
+  --color-orange-rgb: 219, 134, 80 !important;
+  --color-pink: rgb(222, 103, 147) !important;
+  --color-pink-rgb: 222, 103, 147 !important;
+  --color-purple: rgb(142, 125, 194) !important;
+  --color-purple-rgb: 142, 125, 194 !important;
+  --color-red: rgb(217, 90, 95) !important;
+  --color-red-rgb: 217, 90, 95 !important;
+  --color-yellow: rgb(196, 180, 94) !important;
+  --color-yellow-rgb: 196, 180, 94 !important;
   --corner-smoothing: 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -1196,9 +1194,9 @@
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
   --graph-node: #b3b3b3 !important;
-  --graph-node-attachment: rgb(255, 214, 0) !important;
+  --graph-node-attachment: rgb(196, 180, 94) !important;
   --graph-node-focused: rgb(166, 139, 249) !important;
-  --graph-node-tag: rgb(48, 209, 88) !important;
+  --graph-node-tag: rgb(72, 196, 90) !important;
   --graph-node-unresolved: #666666 !important;
   --graph-text: #dadada !important;
   --h1-letter-spacing: -0.015em !important;
@@ -1544,14 +1542,14 @@
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: rgb(255, 66, 69) !important;
-  --sync-avatar-color-2: rgb(255, 146, 48) !important;
-  --sync-avatar-color-3: rgb(255, 214, 0) !important;
-  --sync-avatar-color-4: rgb(48, 209, 88) !important;
-  --sync-avatar-color-5: rgb(60, 211, 254) !important;
-  --sync-avatar-color-6: rgb(0, 145, 255) !important;
-  --sync-avatar-color-7: rgb(107, 52, 242) !important;
-  --sync-avatar-color-8: rgb(255, 55, 95) !important;
+  --sync-avatar-color-1: rgb(217, 90, 95) !important;
+  --sync-avatar-color-2: rgb(219, 134, 80) !important;
+  --sync-avatar-color-3: rgb(196, 180, 94) !important;
+  --sync-avatar-color-4: rgb(72, 196, 90) !important;
+  --sync-avatar-color-5: rgb(63, 186, 182) !important;
+  --sync-avatar-color-6: rgb(86, 148, 218) !important;
+  --sync-avatar-color-7: rgb(142, 125, 194) !important;
+  --sync-avatar-color-8: rgb(222, 103, 147) !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: #1e1e1e !important;
   --tab-container-background: #262626 !important;
@@ -1633,7 +1631,7 @@
   --tag-size: 0.875em !important;
   --text-accent: rgb(166, 139, 249) !important;
   --text-accent-hover: rgb(197, 182, 252) !important;
-  --text-error: rgb(255, 66, 69) !important;
+  --text-error: rgb(217, 90, 95) !important;
   --text-faint: #666666 !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
@@ -1642,8 +1640,8 @@
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgba(138, 92, 245, 0.33) !important;
-  --text-success: rgb(48, 209, 88) !important;
-  --text-warning: rgb(255, 146, 48) !important;
+  --text-success: rgb(72, 196, 90) !important;
+  --text-warning: rgb(219, 134, 80) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
   --titlebar-border-color: rgba(255, 255, 255, 0.15) !important;
@@ -1670,7 +1668,7 @@
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgb(from #262626 r g b / 50%) !important;
+  --workspace-background-translucent: rgb(from #262626 r g b / 90%) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
@@ -1741,8 +1739,6 @@
     rgba(255, 255, 255, 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 40px !important;
   --tag-weight: 500 !important;
-  --translucent-dark-opacity: 50% !important;
-  --translucent-light-opacity: 50% !important;
   --anim-motion-cupertino: cubic-bezier(0.32, 0.72, 0, 1.1) !important;
   --blur-l: blur(8px) saturate(1.5) brightness(1.05) !important;
   --blur-m: blur(4px) saturate(1.5) brightness(1.05) !important;
@@ -2924,7 +2920,7 @@ body {
   .callout {
     --callout-color: inherit;
     border: 1px solid
-      light-dark(rgba(0, 136, 255, 0.25), rgba(0, 145, 255, 0.25));
+      light-dark(rgba(106, 173, 250, 0.25), rgba(86, 148, 218, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2939,7 +2935,7 @@ body {
 
   .callout .callout-title {
     gap: inherit;
-    border: 0px light-dark(rgb(0, 136, 255), rgb(0, 145, 255));
+    border: 0px light-dark(rgb(106, 173, 250), rgb(86, 148, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2958,8 +2954,8 @@ body {
 
   .callout .callout-title > .callout-title-inner > p {
     color: light-dark(
-      color(srgb 0.02 0.473333 0.87),
-      color(srgb 0.128235 0.611569 0.978235)
+      color(srgb 0.373333 0.596667 0.853333),
+      color(srgb 0.414902 0.621569 0.854902)
     );
     font-weight: 700;
   }
@@ -2974,7 +2970,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(0, 136, 255, 0.25), rgba(0, 145, 255, 0.25));
+      light-dark(rgba(106, 173, 250, 0.25), rgba(86, 148, 218, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2987,7 +2983,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(0, 145, 255);
+    stroke: rgb(86, 148, 218);
   }
 
   .callout[data-callout="abstract"] {
@@ -2995,7 +2991,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(0, 192, 232, 0.25), rgba(60, 211, 254, 0.25));
+      light-dark(rgba(56, 219, 214, 0.25), rgba(63, 186, 182, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3008,7 +3004,7 @@ body {
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(60, 211, 254);
+    stroke: rgb(63, 186, 182);
   }
 
   .callout[data-callout="info"] {
@@ -3016,7 +3012,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(0, 136, 255, 0.25), rgba(0, 145, 255, 0.25));
+      light-dark(rgba(106, 173, 250, 0.25), rgba(86, 148, 218, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3029,7 +3025,7 @@ body {
 
   .callout[data-callout="info"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(0, 145, 255);
+    stroke: rgb(86, 148, 218);
   }
 
   .callout[data-callout="todo"] {
@@ -3037,7 +3033,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(0, 136, 255, 0.25), rgba(0, 145, 255, 0.25));
+      light-dark(rgba(106, 173, 250, 0.25), rgba(86, 148, 218, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3050,7 +3046,7 @@ body {
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(0, 145, 255);
+    stroke: rgb(86, 148, 218);
   }
 
   .callout[data-callout="tip"] {
@@ -3058,7 +3054,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(0, 192, 232, 0.25), rgba(60, 211, 254, 0.25));
+      light-dark(rgba(56, 219, 214, 0.25), rgba(63, 186, 182, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3071,7 +3067,7 @@ body {
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(60, 211, 254);
+    stroke: rgb(63, 186, 182);
   }
 
   .callout[data-callout="success"] {
@@ -3079,7 +3075,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(52, 199, 89, 0.25), rgba(48, 209, 88, 0.25));
+      light-dark(rgba(74, 213, 95, 0.25), rgba(72, 196, 90, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3092,7 +3088,7 @@ body {
 
   .callout[data-callout="success"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(48, 209, 88);
+    stroke: rgb(72, 196, 90);
   }
 
   .callout[data-callout="question"] {
@@ -3100,7 +3096,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(255, 141, 40, 0.25), rgba(255, 146, 48, 0.25));
+      light-dark(rgba(242, 154, 100, 0.25), rgba(219, 134, 80, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3113,7 +3109,7 @@ body {
 
   .callout[data-callout="question"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(255, 146, 48);
+    stroke: rgb(219, 134, 80);
   }
 
   .callout[data-callout="warning"] {
@@ -3121,7 +3117,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(255, 141, 40, 0.25), rgba(255, 146, 48, 0.25));
+      light-dark(rgba(242, 154, 100, 0.25), rgba(219, 134, 80, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3134,7 +3130,7 @@ body {
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(255, 146, 48);
+    stroke: rgb(219, 134, 80);
   }
 
   .callout[data-callout="danger"] {
@@ -3142,7 +3138,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(255, 56, 60, 0.25), rgba(255, 66, 69, 0.25));
+      light-dark(rgba(254, 112, 112, 0.25), rgba(217, 90, 95, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3155,7 +3151,7 @@ body {
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(255, 66, 69);
+    stroke: rgb(217, 90, 95);
   }
 
   .callout[data-callout="failure"] {
@@ -3163,7 +3159,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(255, 56, 60, 0.25), rgba(255, 66, 69, 0.25));
+      light-dark(rgba(254, 112, 112, 0.25), rgba(217, 90, 95, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3184,7 +3180,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(255, 56, 60, 0.25), rgba(255, 66, 69, 0.25));
+      light-dark(rgba(254, 112, 112, 0.25), rgba(217, 90, 95, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3197,7 +3193,7 @@ body {
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(255, 66, 69);
+    stroke: rgb(217, 90, 95);
   }
 
   .callout[data-callout="example"] {
@@ -3205,7 +3201,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 1px solid
-      light-dark(rgba(203, 48, 224, 0.25), rgba(107, 52, 242, 0.25));
+      light-dark(rgba(187, 158, 245, 0.25), rgba(142, 125, 194, 0.25));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;

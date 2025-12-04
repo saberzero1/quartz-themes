@@ -1,8 +1,7 @@
 {
-  "name": "Oldsidian Purple",
-  "version": "0.1.8",
-  "minAppVersion": "1.0.0",
-  "author": "@ltctceplrm",
-  "authorUrl": "https://github.com/ltctceplrm",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Oldsidian Purple",
+	"version": "0.2.0",
+	"minAppVersion": "1.0.0",
+	"author": "@ltctceplrm",
+	"authorUrl": "https://github.com/ltctceplrm"
 }

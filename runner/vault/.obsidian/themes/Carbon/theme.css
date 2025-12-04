@@ -67,7 +67,7 @@ body {
 	--font-monospace: "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 	--font-interface: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 	--font-ui-small: 14px;
-	--font-text-size: 16px;
+	--font-text-size: 17px;
 	--line-height-normal: 1.5;
 	--radius-s: 0px;
 	--radius-m: 0px;
@@ -209,8 +209,13 @@ svg * {
 }
 
 .menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+	/* margin: var(--size-2-1) calc(var(--size-2-1) * -1); */
+	margin: 0px;
 	border-bottom: 2px solid var(--background-modifier-active-hover);
+}
+
+.menu-scroll {
+	padding: 0px;
 }
 
 /* TYPOGRAPHY */
@@ -262,7 +267,13 @@ body {
 	color: inherit;
 }
 .inline-title {
-	color: var(--text-accent);
+	color: var(--text-accent) !important;
+}
+.cm-contentContainer > .cm-content > *:not(:has(.is-collapsed)):has(+.HyperMD-header-1) {
+	color: var(--text-accent) !important;
+}
+:is(.HyperMD-header-1,.HyperMD-header-2,.HyperMD-header-3,.HyperMD-header-4,.HyperMD-header-5,.HyperMD-header-6):has(+.HyperMD-header-1,+.HyperMD-header-2,+.HyperMD-header-3,+.HyperMD-header-4,+.HyperMD-header-5,+.HyperMD-header-6) {
+	padding-bottom: 0.5em !important;
 }
 body:not(.show-inline-title) .inline-title:not([data-level]) ~ div > div > .HyperMD-header.HyperMD-header-1:first-of-type > .cm-header.cm-header-1 {
 	color: var(--text-accent);
@@ -296,7 +307,10 @@ body:not(.show-inline-title) .inline-title:not([data-level]) ~ div > div > .Hype
 	font-size: 1.05rem !important;
 }
 .HyperMD-list-line:has(+.HyperMD-list-line) { 
-	padding-bottom: 0.25rem !important; 
+	padding-bottom: 0.5rem !important; 
+}
+.cm-formatting-list-ul, .cm-formatting-list-ol {
+	padding-right: calc(var(--list-padding-inline-start)*0.5);
 }
 .cm-blockid {
 	color: var(--tab-text-color) !important;

@@ -3,6 +3,5 @@
   "version": "2.0.2",
   "minAppVersion": "1.1.0",
   "author": "@bennyxguo",
-  "authorUrl": "https://github.com/bennyxguo",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+  "authorUrl": "https://github.com/bennyxguo"
 }

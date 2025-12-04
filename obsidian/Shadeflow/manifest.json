@@ -1,8 +1,7 @@
 {
-  "name": "Shadeflow",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "Artorias",
-  "authorUrl": "https://artorias305.github.io/",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Shadeflow",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"author": "Artorias",
+	"authorUrl": "https://artorias305.github.io/"
 }

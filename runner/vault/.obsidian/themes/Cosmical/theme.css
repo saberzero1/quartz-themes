@@ -1,0 +1,196 @@
+/* @settings
+
+name: Cosmical
+id: cosmical
+collapsed: false
+settings:
+  -
+    id: Theme-color-settings-heading
+    title: Theme Colors
+    title.es: Colores del Tema
+    type: heading
+    level: 1
+    collapsed: false
+  -
+      id: subtheme
+      title: Subtheme
+      title.es: Subtema
+      description: Choose a color subtheme that affects properties, tags, and accent color
+      description.es: Elige un subtema de color que afecta a las propiedades, etiquetas y color de acento
+      type: class-select
+      allowEmpty: false
+      default: Ocean
+      options:
+        -
+          label: Ocean (default)
+          label.es: Océano (predeterminado)
+          value: subtheme-ocean
+        -
+          label: Forest
+          label.es: Bosque
+          value: subtheme-forest
+        -
+          label: Twilight
+          label.es: Crepúsculo
+          value: subtheme-twilight
+        -
+          label: Sunset
+          label.es: Atardecer
+          value: subtheme-sunset
+        -
+          label: Night
+          label.es: Noche
+          value: subtheme-night
+  -
+      id: colored-headings
+      title: Use subtheme colors for headings
+      title.es: Usar colores de subtema en los encabezados
+      description: Applies subtheme colors to heading levels (h1-h6)
+      description.es: Aplica los colores del subtema a los niveles de encabezados (h1-h6)
+      type: class-toggle
+      default: false
+  -
+    id: Editor-settings-heading
+    title: Editor
+    title.es: Editor
+    type: heading
+    level: 1
+    collapsed: false
+  -
+      id: wider-callouts
+      title: Wider callouts
+      title.es: Callouts más amplios
+      description: Makes callouts wider in the editor
+      description.es: Hace que los callouts sean más amplios en el editor
+      type: class-toggle
+      default: false
+  -
+      id: custom-caret
+      title: Custom caret color
+      title.es: Color personalizado del cursor
+      description: Uses the subtheme color for the text cursor in the editor
+      description.es: Usa el color del subtema para el cursor de texto en el editor
+      type: class-toggle
+      default: false
+  -
+    id: Headers-settings-heading
+    title: Headers
+    title.es: Encabezados
+    type: heading
+    level: 1
+    collapsed: false
+  -
+      id: font-headings
+      title: Headings font family
+      title.es: Fuente para títulos
+      description: "Font family used for note headers: inline-title, h1, h2, h3, h4, h5, h6"
+      description.es: "Fuente usada para los títulos de las notas: título en una línea, h1, h2, h3, h4, h5, h6"
+      type: variable-text
+      default: 'var(--text-font)'
+  -
+      id: headings-underline
+      title: Underline headings
+      title.es: Subrayar encabezados
+      description: Adds underline decoration to all heading levels
+      description.es: Añade subrayado a todos los niveles de encabezados
+      type: class-toggle
+      default: false
+  -
+      id: centered-file-title
+      title: Center file title
+      title.es: Centrar título del archivo
+      description: Centers the inline file title instead of left-aligned
+      description.es: Centra el título del archivo en lugar de alinearlo a la izquierda
+      type: class-toggle
+      default: false
+  -
+      id: hide-file-title
+      title: Hide file title in topbar
+      title.es: Ocultar título de archivo en la barra superior
+      description: Completely hides the file title from the topbar
+      description.es: Oculta completamente el título del archivo de la barra superior
+      type: class-toggle
+      default: false
+  -
+      id: hide-file-title-path
+      title: Hide file path in topbar
+      title.es: Ocultar ruta del archivo en la barra superior
+      description: Hides only the file path (parent folder) from the topbar, keeping the file name visible
+      description.es: Oculta solo la ruta del archivo (carpeta padre) de la barra superior, manteniendo visible el nombre del archivo
+      type: class-toggle
+      default: false
+  -
+    id: Sidebars-settings-heading
+    title: Sidebars
+    title.es: Paneles laterales
+    type: heading
+    level: 1
+    collapsed: false
+  -
+      id: hide-right-sidebar-toggle
+      title: Hide right sidebar toggle button
+      title.es: Ocultar botón de alternar panel lateral derecho
+      description: Hides the right sidebar toggle button
+      description.es: Oculta el botón de alternar del panel lateral derecho
+      type: class-toggle
+      default: false
+  -
+    id: Properties-settings-heading
+    title: Properties settings (Metadata)
+    title.es: Ajustes de propiedades (Metadata)
+    type: heading
+    level: 1
+    collapsed: false
+  -
+      id: metadata-container-alt
+      title: Options for the metadata (properties) container
+      title.es: Estilos para el contenedor de propiedades
+      description: Alternative visual styles for the properties container
+      description.es: Estilos visuales alternativos para el contenedor de propiedades o metadatos
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+        -
+          label: Dashed Separator
+          label.es: Separador de línea discontinua
+          value: metadata-container-alt-separator
+        -
+          label: Outline
+          label.es: Contorno
+          value: metadata-container-alt-outline
+  -
+      id: show-properties-label
+      title: Show "Properties" label
+      title.es: Mostrar la etiqueta "Propiedades"
+      description: Displays the "Properties" header above the properties section
+      description.es: Muestra el encabezado "Propiedades" sobre la sección de propiedades
+      type: class-toggle
+      default: false
+  -
+      id: improve-multilist-ux
+      title: Improve multi-select list UX
+      title.es: Mejorar UX de listas multi-selección
+      description: Hides the remove button on multi-select pills until focused for a cleaner appearance
+      description.es: Oculta el botón de eliminar en las píldoras de multi-selección hasta que se enfoquen para una apariencia más limpia
+      type: class-toggle
+      default: true
+  -
+    id: Plugins-settings-heading
+    title: Community Plugins
+    title.es: Plugins Comunitarios
+    type: heading
+    level: 1
+    collapsed: false
+  -
+      id: colorful-bases
+      title: Colorful Bases tables
+      title.es: Tablas Bases con color
+      description: Applies subtheme colors to Bases plugin tables
+      description.es: Aplica colores del subtema a las tablas del plugin Bases
+      type: class-toggle
+      default: false
+  -
+*/:root{--font-monospace-theme:IOSenda}body,body.theme-dark,body.theme-light{--color-red-rgb:244,114,102;--color-orange-rgb:247,159,105;--color-yellow-rgb:228,220,129;--color-green-rgb:160,223,139;--color-cyan-rgb:132,220,210;--color-blue-rgb:141,158,255;--color-purple-rgb:184,157,231;--color-pink-rgb:223,170,192;--color-red:#f47266;--color-orange:#f79f69;--color-yellow:#d4e481;--color-green:#8bdfae;--color-cyan:#84dcd2;--color-blue:#4958fd;--color-purple:#b89de7;--color-pink:#dfaac0;--icon-color:var(--text-muted);--icon-color-hover:var(--text-normal);--icon-color-active:var(--text-normal);--icon-color-focused:var(--text-normal)}body.theme-dark{--color-base-00:oklch(18% 0 0);--color-base-05:oklch(21% 0 0);--color-base-10:oklch(24% 0 0);--color-base-20:oklch(27% 0 0);--color-base-30:oklch(30% 0 0);--color-base-40:oklch(33% 0 0);--color-base-50:oklch(36% 0 0);--color-base-60:oklch(39% 0 0);--color-base-70:oklch(42% 0 0);--color-base-00:oklch(21% 0 0);--color-base-05:oklch(24% 0 0);--color-base-10:oklch(27% 0 0);--color-base-20:oklch(30% 0 0);--color-base-30:oklch(33% 0 0);--color-base-40:oklch(36% 0 0);--color-base-50:oklch(39% 0 0);--color-base-60:oklch(42% 0 0);--color-base-70:oklch(45% 0 0);--color-base-100:oklch(100% 0 0);--background-primary:var(--color-base-20);--background-primary-alt:var(--color-base-10);--background-secondary:var(--color-base-05);--background-secondary-alt:var(--color-base-10);--text-normal:oklch(100% 0 0);--text-muted:oklch(77.5% 0 0);--text-faint:oklch(55% 0 0);--divider-color:var(--color-base-60);--tab-divider-color:var(--color-base-40);--tab-outline-color:var(--color-base-50);--background-modifier-border:var(--color-base-40);--background-modifier-border-hover:var(--color-base-50);--background-modifier-border-focus:var(--color-base-70);--background-modifier-active-hover:var(--color-base-60);--interactive-normal:var(--color-base-40);--interactive-hover:var(--color-base-50)}body.theme-light{--color-base-00:oklch(100% 0 0);--color-base-05:oklch(97% 0 0);--color-base-10:oklch(94% 0 0);--color-base-20:oklch(91% 0 0);--color-base-30:oklch(88% 0 0);--color-base-40:oklch(85% 0 0);--color-base-50:oklch(82% 0 0);--color-base-60:oklch(78% 0 0);--color-base-70:oklch(73% 0 0);--color-base-100:oklch(0% 0 0);--background-primary:var(--color-base-00);--background-primary-alt:var(--color-base-05);--background-secondary:var(--color-base-10);--background-secondary-alt:var(--color-base-20);--text-normal:oklch(0% 0 0);--text-muted:oklch(27.5% 0 0);--text-faint:oklch(45% 0 0);--divider-color:var(--color-base-50);--tab-divider-color:var(--color-base-30);--tab-outline-color:var(--color-base-40);--background-modifier-border:var(--color-base-30);--background-modifier-border-hover:var(--color-base-40);--background-modifier-border-focus:var(--color-base-60);--background-modifier-active-hover:var(--color-base-50);--interactive-normal:var(--background-secondary);--interactive-hover:var(--background-secondary-alt)}body{--hr-color:var(--divider-color);--titlebar-background-focused:var(--background-primary);--titlebar-background:var(--background-primary);--ribbon-background:var(--background-secondary);--ribbon-background-collapsed:var(--ribbon-background);--status-bar-background:var(--background-secondary);--tab-container-background:var(--background-primary)}body .vertical-tab-nav-item{color:var(--text-muted)}body .horizontal-tab-nav-item.is-active,body .vertical-tab-nav-item.is-active{--interactive-accent:var(--background-modifier-border-focus);--text-on-accent:var(--text-normal)}body .menu{background:var(--background-primary-alt);border:1px solid var(--color-base-30)}body .menu .menu-separator{margin:var(--size-2-1) calc(var(--size-2-1)*-1)}body{--background-modifier-form-field:var(--background-primary)}body .cm-s-obsidian span.cm-inline-code{background-color:var(--background-secondary)}body{--modal-border-color:var(--background-modifier-border);--prompt-border-color:var(--background-modifier-border)}body .prompt{background-color:var(--background-primary)}body .prompt .prompt-input-container .prompt-input{background-color:var(--background-primary);border-bottom:1px solid var(--prompt-border-color)}.workspace-tabs .workspace-leaf{background-color:var(--background-primary)}.workspace-split.mod-sidedock.mod-left-split{--titlebar-background:var(--background-secondary);--titlebar-background-focused:var(--background-secondary)}.workspace-split.mod-sidedock.mod-left-split .workspace-tabs .workspace-leaf{background-color:var(--background-secondary)}.nav-buttons-container{justify-content:left}.hide-right-sidebar-toggle div.sidebar-toggle-button.mod-right{display:none}body{--inline-title-size:1.625rem;--inline-title-weight:700;--inline-title-margin-bottom:1rem;--file-header-justify:left}body.centered-file-title{--file-header-justify:center}.hide-file-title-path .view-header-title-container .view-header-title-parent{display:none}.view-header-title-container .view-header-title-parent{color:var(--text-faint)}.hide-file-title .view-header-title-container .view-header-title,.hide-file-title .view-header-title-container .view-header-title-parent{display:none}.subtheme-ocean,body{--theme-color-1-chroma:0.15;--theme-color-1-hue:262;--theme-color-2-chroma:0.15;--theme-color-2-hue:70}.subtheme-forest{--theme-color-1-chroma:0.14;--theme-color-1-hue:155;--theme-color-2-chroma:0.14;--theme-color-2-hue:40}.subtheme-twilight{--theme-color-1-chroma:0.16;--theme-color-1-hue:285;--theme-color-2-chroma:0.13;--theme-color-2-hue:260}.subtheme-sunset{--theme-color-1-chroma:0.18;--theme-color-1-hue:0;--theme-color-2-chroma:0.16;--theme-color-2-hue:25}.subtheme-night{--theme-color-1-chroma:0.06;--theme-color-1-hue:205;--theme-color-2-chroma:0.18;--theme-color-2-hue:145}.theme-dark{--theme-color-luminosity-normal:0.9;--theme-color-luminosity-alt:0.7;--theme-color-luminosity-high:1;--theme-color-1-normal:oklch(var(--theme-color-luminosity-normal) var(--theme-color-1-chroma) var(--theme-color-1-hue));--theme-color-1-alt:oklch(var(--theme-color-luminosity-alt) var(--theme-color-1-chroma) var(--theme-color-1-hue));--theme-color-1-high:oklch(var(--theme-color-luminosity-high) calc(var(--theme-color-1-chroma) - 0.06) var(--theme-color-1-hue));--theme-color-2-normal:oklch(var(--theme-color-luminosity-normal) var(--theme-color-2-chroma) var(--theme-color-2-hue));--theme-color-2-alt:oklch(var(--theme-color-luminosity-alt) var(--theme-color-2-chroma) var(--theme-color-2-hue));--theme-color-2-high:oklch(var(--theme-color-luminosity-high) calc(var(--theme-color-2-chroma) - 0.06) var(--theme-color-2-hue))}.theme-light{--theme-color-luminosity-normal:0.4;--theme-color-luminosity-alt:0.5;--theme-color-luminosity-high:0.3;--theme-color-1-normal:oklch(var(--theme-color-luminosity-normal) var(--theme-color-1-chroma) var(--theme-color-1-hue));--theme-color-1-alt:oklch(var(--theme-color-luminosity-alt) var(--theme-color-1-chroma) var(--theme-color-1-hue));--theme-color-1-high:oklch(var(--theme-color-luminosity-high) var(--theme-color-1-chroma) var(--theme-color-1-hue));--theme-color-2-normal:oklch(var(--theme-color-luminosity-normal) var(--theme-color-2-chroma) var(--theme-color-2-hue));--theme-color-2-alt:oklch(var(--theme-color-luminosity-alt) var(--theme-color-2-chroma) var(--theme-color-2-hue));--theme-color-2-high:oklch(var(--theme-color-luminosity-high) var(--theme-color-2-chroma) var(--theme-color-2-hue))}.theme-dark,.theme-light{--theme-color-1-transparent:oklch(from var(--theme-color-1-alt) l c h/0.33);--theme-color-2-transparent:oklch(from var(--theme-color-2-alt) l c h/0.33)}body.theme-dark,body.theme-light{--color-accent:var(--theme-color-accent-normal);--interactive-accent:var(--theme-color-2-alt);--interactive-accent-hover:var(--theme-color-2-normal);--text-accent:var(--theme-color-2-normal);--text-accent-hover:var(--theme-color-2-high);--text-selection:var(--theme-color-1-transparent);--text-highlight-bg:var(--theme-color-2-transparent)}body.theme-light{--text-on-accent:var(--color-base-00);--text-on-accent-inverted:var(--color-base-00)}body{--code-background:var(--background-primary-alt);--code-radius:var(--radius-m);--blockquote-border-thickness:0.2em;--blockquote-border-color:var(--theme-color-1-alt)}body.theme-dark{--code-background:var(--color-base-40)}body.theme-light{--code-background:var(--color-base-05)}.HyperMD-quote{--blockquote-style:italic}.math{background-color:var(--code-background);color:var(--code-normal)!important;font-size:calc(var(--code-size) + .2em)}.math-block{border-radius:var(--code-radius)}body{--list-marker-color:var(--text-muted)}.cm-formatting-list{font-size:1rem}body{--table-header-weight:500;--table-border-color:var(--background-modifier-border-focus)}.cm-table-widget{padding-top:0!important}body{--callout-padding:0.75em 1em}.theme-dark.callout{background-color:rgba(var(--callout-color),.075)}.wider-callouts .cm-embed-block.cm-callout{padding-left:-1em!important;translate:-1em;width:calc(var(--file-line-width) + 2em)}body{--font-headings:var(--font-text);--h1-font:var(--font-headings);--h2-font:var(--font-headings);--h3-font:var(--font-headings);--h4-font:var(--font-headings);--h5-font:var(--font-headings);--h6-font:var(--font-headings);--inline-title-font:var(--font-headings)!important}.headings-underline .HyperMD-header-1,.headings-underline .HyperMD-header-2,.headings-underline .HyperMD-header-3,.headings-underline .HyperMD-header-4,.headings-underline h1,.headings-underline h2,.headings-underline h3,.headings-underline h4{text-decoration-color:var(--heading-underline-color);text-decoration-line:underline}.headings-underline .HyperMD-header+*{padding-top:var(--size-2-2)!important}body{--heading-underline-color:var(--color-base-40)}.colored-headings .HyperMD-header-1,.colored-headings .HyperMD-header-2,.colored-headings .HyperMD-header-3,.colored-headings .HyperMD-header-4,.colored-headings .HyperMD-header-5,.colored-headings .HyperMD-header-6,.colored-headings h1,.colored-headings h2,.colored-headings h3,.colored-headings h4,.colored-headings h5,.colored-headings h6{color:var(--theme-color-1-high)}.colored-headings{--inline-title-color:var(--theme-color-1-high);--heading-underline-color:var(--theme-color-1-transparent)}body{--nn-theme-nav-bg:var(--background-secondary);--nn-theme-list-bg:var(--background-secondary);--nn-theme-list-header-bg:var(--background-secondary);--nn-theme-file-tag-bg:var(--tag-background);--nn-theme-file-tag-color:var(--tag-color);--nn-theme-file-selected-bg:var(--background-modifier-border-hover);--nn-theme-file-selected-inactive-bg:var(--background-modifier-border);--nn-theme-file-selected-name-color:var(--text-normal)}body.colored-headings{--nn-theme-file-selected-name-color:var(--theme-color-1-high)}body.is-mobile.theme-light{--nn-theme-mobile-nav-bg:var(--background-primary);--nn-theme-list-bg:var(--background-primary);--nn-theme-list-header-bg:var(--background-primary)}body.is-mobile.theme-dark{--nn-theme-mobile-nav-bg:var(--background-secondary);--nn-theme-list-bg:var(--background-secondary);--nn-theme-list-header-bg:var(--background-secondary)}body{--bases-embed-border-color:var(--divider-color);--bases-embed-border-radius:var(--radius-s);--base-row-even-bg:var(--background-primary);--base-row-odd-bg:var(--background-primary-alt);--base-row-hover-bg:var(--color-base-50);--bases-table-header-color:var(--theme-color-1-alt)}.colorful-bases .bases-table .bases-tbody{--metadata-input-text-color:var(--property-input-color);color:var(--theme-color-2-normal)}.bases-table{--metadata-input-text-color:var(--text-normal)}.bases-table .bases-thead{background-color:var(--background-primary-alt)}.bases-table .bases-tbody .bases-tr{background-color:var(--base-row-odd-bg);color:var(--text-normal)!important}.bases-table .bases-tbody .bases-tr:nth-child(2n){background-color:var(--base-row-even-bg)}.bases-table .bases-tbody .bases-tr:focus,.bases-table .bases-tbody .bases-tr:focus-within,.bases-table .bases-tbody .bases-tr:hover{background-color:var(--base-row-hover-bg)}.header-counters{counter-reset:h2-counter}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) :is(h2,.HyperMD-header-2){counter-increment:h2-counter;counter-reset:h3-counter}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) :is(h3,.HyperMD-header-3){counter-increment:h3-counter;counter-reset:h4-counter}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) :is(h4,.HyperMD-header-4){counter-increment:h4-counter;counter-reset:h5-counter}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) :is(h5,.HyperMD-header-5){counter-increment:h5-counter;counter-reset:h6-counter}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) :is(h6,.HyperMD-header-6){counter-increment:h6-counter}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) h2:before{content:counter(h2-counter) ". "}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) h3:before{content:counter(h2-counter) "." counter(h3-counter) " "}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) h4:before{content:counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) " "}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) h5:before{content:counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) " "}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) h6:before{content:counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter) " "}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) span.cm-header:not(.cm-formatting).cm-header-2:before{content:counter(h2-counter) ". "}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) span.cm-header:not(.cm-formatting).cm-header-3:before{content:counter(h2-counter) "." counter(h3-counter) " "}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) span.cm-header:not(.cm-formatting).cm-header-4:before{content:counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) " "}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) span.cm-header:not(.cm-formatting).cm-header-5:before{content:counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) " "}.header-counters :not(.callout,.HyperMD-codeblock,pre,code,.frontmatter,.cm-hmd-frontmatter) span.cm-header:not(.cm-formatting).cm-header-6:before{content:counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter) " "}.header-counters :is(h2,h3,h4,h5,h6){align-items:center;display:flex;gap:.25em}.header-counters :is(h2,h3,h4,h5,h6) .heading-collapse-indicator{order:-1}.theme-dark,.theme-light{--metadata-gap:0;--metadata-input-font-size:max(var(--font-ui-small),0.9em);--metadata-label-font-size:max(var(--font-ui-small),0.9em);--metadata-label-width:max(22.5%,8rem)}.theme-dark .metadata-add-button,.theme-dark .metadata-property-key .metadata-property-icon,.theme-light .metadata-add-button,.theme-light .metadata-property-key .metadata-property-icon{--icon-size:var(--icon-s)}.theme-dark .metadata-add-button,.theme-light .metadata-add-button{margin-top:.25rem!important}.theme-dark .collapse-indicator,.theme-light .collapse-indicator{--collapse-icon-color-collapsed:var(--property-icon-color);opacity:1}.theme-dark .metadata-properties-title,.theme-light .metadata-properties-title{color:var(--property-icon-color);font-size:max(var(--font-ui-small),.9em);font-weight:400}body{--property-label-color:var(--theme-color-1-normal);--property-input-color:var(--theme-color-2-normal);--property-icon-color:var(--theme-color-1-alt)}body .metadata-property-key .metadata-property-icon{--icon-color:var(--property-icon-color)}body{--metadata-label-text-color:var(--property-label-color);--metadata-input-text-color:var(--property-input-color)}body .metadata-property .metadata-input-number,body .metadata-property .metadata-input-text,body .metadata-property .multi-select-container{color:var(--metadata-input-text-color)}body .metadata-container{--checkbox-color:var(--property-input-color);--link-color:var(--property-input-color);--link-external-color:var(--property-input-color)}body .metadata-add-button{color:var(--property-icon-color);cursor:pointer}body .metadata-add-button:hover{color:var(--property-label-color)}body [data-type=all-properties].is-active .workspace-tab-header-inner,body [data-type=file-properties].is-active .workspace-tab-header-inner{background-color:color-mix(in oklch,var(--property-label-color) 15%,transparent)}body .mod-left-split
+		.workspace-tab-header[data-type=all-properties]
+		.workspace-tab-header-inner-icon{color:var(--property-label-color)}.metadata-properties-heading{display:none}.show-properties-label .metadata-properties-heading{display:inline-block}.metadata-container-alt-separator .metadata-container{border-bottom:2px dashed var(--theme-color-1-transparent);margin-bottom:var(--size-4-2);padding-bottom:var(--size-4-4)}.metadata-container-alt-outline .metadata-container{border:2px solid var(--background-modifier-border);border-radius:var(--radius-l);margin-bottom:var(--size-4-2);padding:var(--size-4-3) var(--size-4-4)}.improve-multilist-ux .multi-select-pill .multi-select-pill-remove-button{visibility:hidden;width:0}.improve-multilist-ux .metadata-property-value:focus .multi-select-pill-remove-button,.improve-multilist-ux .metadata-property-value:focus-within .multi-select-pill-remove-button{visibility:visible;width:auto}body{--tag-color:var(--theme-color-1-normal);--tag-color-hover:var(--theme-color-1-high);--tag-background:color-mix(in oklch,var(--theme-color-1-normal) 15%,transparent);--tag-background-hover:color-mix(in oklch,var(--theme-color-1-normal) 30%,transparent);--graph-node-tag:var(--theme-color-1-normal);--tag-padding-x:0.75em;--tag-padding-y:0.33em;--tag-radius:var(--radius-l)}[data-type=tag].is-active .workspace-tab-header-inner{background-color:var(--tag-background)}[data-type=tag] .workspace-tab-header-inner-icon svg{color:var(--tag-color)!important}body.custom-caret{--caret-color:var(--theme-color-1-normal)}

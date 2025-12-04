@@ -1,7 +1,6 @@
 {
-  "name": "Reverie",
-  "version": "0.0.0",
-  "minAppVersion": "0.16.0",
-  "author": "Santi Younger",
-  "license": { "name": "No License Found", "spdx_id": "No SPDX ID Found" }
+    "name": "Reverie",
+    "version": "0.0.0",
+    "minAppVersion": "0.16.0",
+    "author": "Santi Younger"
 }

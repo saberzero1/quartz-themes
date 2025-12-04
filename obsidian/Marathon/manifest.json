@@ -1,8 +1,7 @@
 {
-  "name": "Marathon",
-  "version": "1.0.0",
-  "minAppVersion": "1.6.1",
-  "author": "Spekulucius",
-  "authorUrl": "https://github.com/Spekulucius",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+	"name": "Marathon",
+	"version": "1.0.2",
+	"minAppVersion": "1.6.1",
+	"author": "Spekulucius",
+	"authorUrl": "https://github.com/Spekulucius"
 }

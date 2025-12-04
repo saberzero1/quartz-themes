@@ -43,20 +43,12 @@ For reference, check the Obsidian style settings repo
   --ap-primary-s: 64%;
   --ap-primary-l: 88%;
   --ap-primary-d: 80%;
-  --ap-primary: hsl(
-    var(--ap-primary-h),
-    var(--ap-primary-s),
-    var(--ap-primary-l)
-  );
+  --ap-primary: hsl(var(--ap-primary-h), var(--ap-primary-s), var(--ap-primary-l));
   --ap-secondary-h: 157;
   --ap-secondary-s: 32%;
   --ap-secondary-l: 58%;
   --ap-secondary-d: 70%;
-  --ap-secondary: hsl(
-    var(--ap-secondary-h),
-    var(--ap-secondary-s),
-    var(--ap-secondary-l)
-  );
+  --ap-secondary: hsl(var(--ap-secondary-h), var(--ap-secondary-s), var(--ap-secondary-l));
   --ap-base1-h: 249;
   --ap-base1-s: 33%;
   --ap-base1-l: 8%;
@@ -67,18 +59,18 @@ For reference, check the Obsidian style settings repo
   --ap-base0-l: 5%;
   --ap-base0-d: 13%;
   --ap-base1: hsl(var(--ap-base1-h), var(--ap-base1-s), var(--ap-base1-l));
-  --ap-red: #e97193;
-  --ap-green: #aac5a0;
-  --ap-blue: #a8c5e6;
-  --ap-purple: #dfa7e7;
+  --ap-red: #E97193;
+  --ap-green: #AAC5A0;
+  --ap-blue: #A8C5E6;
+  --ap-purple: #DFA7E7;
   --ap-aqua: #a8e5e6;
   --ap-yellow: #ece0a8;
-  --ap-orange: #d1a999;
-  --ap-color-strong: #e97193;
-  --ap-color-quote: #e97193;
-  --ap-color-italic: #e97193;
+  --ap-orange: #D1A999;
+  --ap-color-strong: #E97193;
+  --ap-color-quote: #E97193;
+  --ap-color-italic: #E97193;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #eeeeee;
+  --ap-color-tag-text: #EEEEEE;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -90,56 +82,16 @@ For reference, check the Obsidian style settings repo
   --ap-code-orange: var(--ap-orange);
   --ap-color-dp0: hsl(var(--ap-base1-h), var(--ap-base1-s), var(--ap-base1-l));
   --ap-color-dp1: hsl(var(--ap-base0-h), var(--ap-base0-s), var(--ap-base0-l));
-  --ap-color-dp2: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 5%)
-  );
-  --ap-color-dp3: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 10%)
-  );
-  --ap-color-dp4: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 15%)
-  );
-  --ap-color-dp5: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 40%)
-  );
-  --ap-color-dp6: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 50%)
-  );
-  --ap-color-dp7: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 60%)
-  );
-  --ap-color-dp8: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 70%)
-  );
-  --ap-color-dp9: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 80%)
-  );
-  --ap-color-dp10: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 85%)
-  );
-  --ap-color-dp11: hsl(
-    var(--ap-base0-h),
-    var(--ap-base0-s),
-    calc(var(--ap-base0-l) + 90%)
-  );
+  --ap-color-dp2: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 5%));
+  --ap-color-dp3: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 10%));
+  --ap-color-dp4: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 15%));
+  --ap-color-dp5: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 40%));
+  --ap-color-dp6: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 50%));
+  --ap-color-dp7: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 60%));
+  --ap-color-dp8: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 70%));
+  --ap-color-dp9: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 80%));
+  --ap-color-dp10: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 85%));
+  --ap-color-dp11: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 90%));
   --ap-h1: var(--ap-red);
   --ap-h2: var(--ap-purple);
   --ap-h3: var(--ap-blue);
@@ -157,24 +109,12 @@ For reference, check the Obsidian style settings repo
   --ap-size-text-item: 1em;
   --ap-container-padding: 8px;
   --ap-frame-left: 10px;
-  --ap-font-text:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
-  --ap-font-interface:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
-  --ap-font-monospace:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
-  --ap-font-title:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
-  --ap-font-header:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
-  --ap-font-hashtag:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
-    sans-serif;
+  --ap-font-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-interface: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-monospace: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-title: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-header: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-hashtag: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
 }
 
 .theme-dark.a-theme-purple {
@@ -182,7 +122,7 @@ For reference, check the Obsidian style settings repo
   --ap-primary-s: 64%;
   --ap-primary-l: 88%;
   --ap-primary-d: 80%;
-  --ap-primary: #eeeeee;
+  --ap-primary: #EEEEEE;
   --ap-secondary-h: 157;
   --ap-secondary-s: 32%;
   --ap-secondary-l: 58%;
@@ -198,18 +138,18 @@ For reference, check the Obsidian style settings repo
   --ap-base0-l: 5%;
   --ap-base0-d: 13%;
   --ap-base1: #370617;
-  --ap-red: #e97193;
-  --ap-green: #aac5a0;
-  --ap-blue: #a8c5e6;
-  --ap-purple: #dfa7e7;
+  --ap-red: #E97193;
+  --ap-green: #AAC5A0;
+  --ap-blue: #A8C5E6;
+  --ap-purple: #DFA7E7;
   --ap-aqua: #a8e5e6;
   --ap-yellow: #ece0a8;
-  --ap-orange: #d1a999;
-  --ap-color-strong: #e97193;
-  --ap-color-quote: #e97193;
-  --ap-color-italic: #e97193;
+  --ap-orange: #D1A999;
+  --ap-color-strong: #E97193;
+  --ap-color-quote: #E97193;
+  --ap-color-italic: #E97193;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #eeeeee;
+  --ap-color-tag-text: #EEEEEE;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -264,16 +204,8 @@ For reference, check the Obsidian style settings repo
   --color-base-100: var(--ap-color-dp11);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) - 3.8%)
-  );
-  --color-accent-2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 3.8%)
-  );
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
@@ -284,31 +216,17 @@ For reference, check the Obsidian style settings repo
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-d) + 12%)
-  );
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --h1-color: var(--ap-h1);
   --h2-color: var(--ap-h2);
   --h3-color: var(--ap-h3);
@@ -329,24 +247,9 @@ For reference, check the Obsidian style settings repo
   --checkbox-radius: 30%;
   --link-external-decoration: underline;
   --link-decoration: underline;
-  --scrollbar-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-thumb-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-active-thumb-bg: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.4
-  );
+  --scrollbar-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-thumb-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
   --base-h: var(--ap-base0-h);
   --base-s: var(--ap-base0-s);
   --base-l: var(--ap-base0-l);
@@ -396,7 +299,7 @@ For reference, check the Obsidian style settings repo
   --ap-primary-s: 63.9344262295%;
   --ap-primary-l: 88.0392156863%;
   --ap-primary-d: 80%;
-  --ap-primary: #f4d7cd;
+  --ap-primary: #F4D7CD;
   --ap-secondary-h: 157.0588235294deg;
   --ap-secondary-s: 31.7757009346%;
   --ap-secondary-l: 58.0392156863%;
@@ -424,7 +327,7 @@ For reference, check the Obsidian style settings repo
   --ap-color-quote: #f5c2e7;
   --ap-color-italic: #f5c2e7;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #eeeeee;
+  --ap-color-tag-text: #EEEEEE;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -479,16 +382,8 @@ For reference, check the Obsidian style settings repo
   --color-base-100: var(--ap-color-dp11);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) - 3.8%)
-  );
-  --color-accent-2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 3.8%)
-  );
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
@@ -499,31 +394,17 @@ For reference, check the Obsidian style settings repo
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-d) + 12%)
-  );
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --h1-color: var(--ap-h1);
   --h2-color: var(--ap-h2);
   --h3-color: var(--ap-h3);
@@ -544,24 +425,9 @@ For reference, check the Obsidian style settings repo
   --checkbox-radius: 30%;
   --link-external-decoration: underline;
   --link-decoration: underline;
-  --scrollbar-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-thumb-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-active-thumb-bg: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.4
-  );
+  --scrollbar-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-thumb-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
   --base-h: var(--ap-base0-h);
   --base-s: var(--ap-base0-s);
   --base-l: var(--ap-base0-l);
@@ -611,7 +477,7 @@ For reference, check the Obsidian style settings repo
   --ap-primary-s: 63.9344262295%;
   --ap-primary-l: 88.0392156863%;
   --ap-primary-d: 80%;
-  --ap-primary: #f4d7cd;
+  --ap-primary: #F4D7CD;
   --ap-secondary-h: 157.0588235294deg;
   --ap-secondary-s: 31.7757009346%;
   --ap-secondary-l: 58.0392156863%;
@@ -621,12 +487,12 @@ For reference, check the Obsidian style settings repo
   --ap-base0-s: 33.3333333333%;
   --ap-base0-l: 7.6470588235%;
   --ap-base0-d: 20%;
-  --ap-base0: #0f0d1a;
+  --ap-base0: #0F0D1A;
   --ap-base1-h: 250deg;
   --ap-base1-s: 23.0769230769%;
   --ap-base1-l: 5.0980392157%;
   --ap-base1-d: 20%;
-  --ap-base1: #0b0a10;
+  --ap-base1: #0B0A10;
   --ap-red: #f38ba8;
   --ap-green: #a6e3a1;
   --ap-blue: #89b4fa;
@@ -639,7 +505,7 @@ For reference, check the Obsidian style settings repo
   --ap-color-quote: #f5c2e7;
   --ap-color-italic: #f5c2e7;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #eeeeee;
+  --ap-color-tag-text: #EEEEEE;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -649,8 +515,8 @@ For reference, check the Obsidian style settings repo
   --ap-code-aqua: var(--ap-aqua);
   --ap-code-yellow: var(--ap-yellow);
   --ap-code-orange: var(--ap-orange);
-  --ap-color-dp0: #0b0a10;
-  --ap-color-dp1: #0f0d1a;
+  --ap-color-dp0: #0B0A10;
+  --ap-color-dp1: #0F0D1A;
   --ap-color-dp2: hsl(249.2307692308deg, 33.3333333333%, 12.6470588235%);
   --ap-color-dp3: hsl(249.2307692308deg, 33.3333333333%, 17.6470588235%);
   --ap-color-dp4: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
@@ -694,16 +560,8 @@ For reference, check the Obsidian style settings repo
   --color-base-100: var(--ap-color-dp11);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) - 3.8%)
-  );
-  --color-accent-2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 3.8%)
-  );
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
@@ -714,31 +572,17 @@ For reference, check the Obsidian style settings repo
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-d) + 12%)
-  );
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --h1-color: var(--ap-h1);
   --h2-color: var(--ap-h2);
   --h3-color: var(--ap-h3);
@@ -759,24 +603,9 @@ For reference, check the Obsidian style settings repo
   --checkbox-radius: 30%;
   --link-external-decoration: underline;
   --link-decoration: underline;
-  --scrollbar-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-thumb-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-active-thumb-bg: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.4
-  );
+  --scrollbar-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-thumb-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
   --base-h: var(--ap-base0-h);
   --base-s: var(--ap-base0-s);
   --base-l: var(--ap-base0-l);
@@ -836,12 +665,12 @@ For reference, check the Obsidian style settings repo
   --ap-base0-s: 33.3333333333%;
   --ap-base0-l: 7.6470588235%;
   --ap-base0-d: 20%;
-  --ap-base0: #0f0d1a;
+  --ap-base0: #0F0D1A;
   --ap-base1-h: 250deg;
   --ap-base1-s: 23.0769230769%;
   --ap-base1-l: 5.0980392157%;
   --ap-base1-d: 20%;
-  --ap-base1: #0b0a10;
+  --ap-base1: #0B0A10;
   --ap-red: #f38ba8;
   --ap-green: #a6e3a1;
   --ap-blue: #89b4fa;
@@ -854,7 +683,7 @@ For reference, check the Obsidian style settings repo
   --ap-color-quote: #f5c2e7;
   --ap-color-italic: #f5c2e7;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #eeeeee;
+  --ap-color-tag-text: #EEEEEE;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -864,8 +693,8 @@ For reference, check the Obsidian style settings repo
   --ap-code-aqua: var(--ap-aqua);
   --ap-code-yellow: var(--ap-yellow);
   --ap-code-orange: var(--ap-orange);
-  --ap-color-dp0: #0b0a10;
-  --ap-color-dp1: #0f0d1a;
+  --ap-color-dp0: #0B0A10;
+  --ap-color-dp1: #0F0D1A;
   --ap-color-dp2: hsl(249.2307692308deg, 33.3333333333%, 12.6470588235%);
   --ap-color-dp3: hsl(249.2307692308deg, 33.3333333333%, 17.6470588235%);
   --ap-color-dp4: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
@@ -909,16 +738,8 @@ For reference, check the Obsidian style settings repo
   --color-base-100: var(--ap-color-dp11);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) - 3.8%)
-  );
-  --color-accent-2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 3.8%)
-  );
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
@@ -929,31 +750,17 @@ For reference, check the Obsidian style settings repo
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-d) + 12%)
-  );
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --h1-color: var(--ap-h1);
   --h2-color: var(--ap-h2);
   --h3-color: var(--ap-h3);
@@ -974,24 +781,9 @@ For reference, check the Obsidian style settings repo
   --checkbox-radius: 30%;
   --link-external-decoration: underline;
   --link-decoration: underline;
-  --scrollbar-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-thumb-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-active-thumb-bg: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.4
-  );
+  --scrollbar-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-thumb-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
   --base-h: var(--ap-base0-h);
   --base-s: var(--ap-base0-s);
   --base-l: var(--ap-base0-l);
@@ -1044,13 +836,7 @@ For reference, check the Obsidian style settings repo
 .glassMorphism .nav-folder.mod-root,
 .glassMorphism .nav-header .nav-buttons-container,
 .glassMorphism .workspace-split.mod-root .view-content {
-  background: linear-gradient(
-    120deg,
-    var(--ap-color-dp1),
-    var(--ap-color-dp2),
-    70%,
-    var(--ap-color-dp1)
-  );
+  background: linear-gradient(120deg, var(--ap-color-dp1), var(--ap-color-dp2), 70%, var(--ap-color-dp1));
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(15px);
@@ -1142,11 +928,9 @@ For reference, check the Obsidian style settings repo
 .Fade.modal,
 .Fade.snw-ref-title-popover,
 .Fade.menu,
-/*.Fade.popover,*/
+.Fade.popover,
 .Fade.prompt,
-.Fade.workspace-split.mod-vertical.mod-root
-  .workspace-tabs:not(.mod-stacked)
-  .view-content {
+.Fade.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .view-content {
   animation: 0.2s fade cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -1228,8 +1012,8 @@ body:not(.default-font-color) .cm-strong {
 
 /* Completed checkboxes */
 .markdown-preview-view ul > li.task-list-item.is-checked,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X] {
   text-decoration: none;
   color: var(--text-faint);
 }
@@ -1237,9 +1021,7 @@ body:not(.default-font-color) .cm-strong {
 /* Image card */
 img {
   border-radius: var(--ap-radius-l);
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /* ###########################################
@@ -1258,7 +1040,7 @@ Code styling
   color: var(--ap-code-gray-2);
 }
 
-code[class*="language-"],
+code[class*=language-],
 .token.selector,
 .token.tag,
 .token.parameter,
@@ -1381,16 +1163,11 @@ Container styling
 
 .workspace-ribbon.mod-left {
   border-radius: var(--ap-radius-l);
-  margin: calc(var(--header-height) + var(--ap-container-padding))
-    var(--ap-container-padding) var(--ap-container-padding)
-    var(--ap-container-padding);
+  margin: calc(var(--header-height) + var(--ap-container-padding)) var(--ap-container-padding) var(--ap-container-padding) var(--ap-container-padding);
 }
 
 .workspace-ribbon.mod-left:before {
-  width: calc(
-    var(--ribbon-width) + var(--ap-container-padding) +
-      var(--ap-container-padding)
-  );
+  width: calc(var(--ribbon-width) + var(--ap-container-padding) + var(--ap-container-padding));
 }
 
 .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
@@ -1402,17 +1179,11 @@ Container styling
   border-bottom-right-radius: 0px !important;
 }
 
-.workspace-tabs.mod-stacked
-  .workspace-tab-container
-  .workspace-leaf
-  .view-header {
+.workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf .view-header {
   margin: 0px var(--ap-container-padding);
 }
 
-.workspace-tabs.mod-stacked
-  .workspace-tab-container
-  .workspace-leaf
-  .view-content {
+.workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf .view-content {
   border-radius: 0px;
   margin-bottom: 0px;
 }
@@ -1439,9 +1210,7 @@ Container styling
   background-color: None;
 }
 
-.workspace-fake-target-overlay:not(.is-in-sidebar)
-  .workspace-tabs
-  .workspace-leaf,
+.workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf,
 .mod-root .workspace-tabs .workspace-leaf {
   background-color: var(--color-base-20);
   margin: var(--ap-container-padding);
@@ -1554,16 +1323,8 @@ Plugins
   --color-base-100: var(--ap-color-dp11);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) - 3.8%)
-  );
-  --color-accent-2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 3.8%)
-  );
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
@@ -1574,31 +1335,17 @@ Plugins
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-d) + 12%)
-  );
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --h1-color: var(--ap-h1);
   --h2-color: var(--ap-h2);
   --h3-color: var(--ap-h3);
@@ -1619,24 +1366,9 @@ Plugins
   --checkbox-radius: 30%;
   --link-external-decoration: underline;
   --link-decoration: underline;
-  --scrollbar-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-thumb-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-active-thumb-bg: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.4
-  );
+  --scrollbar-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-thumb-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
   --base-h: var(--ap-base0-h);
   --base-s: var(--ap-base0-s);
   --base-l: var(--ap-base0-l);
@@ -1699,16 +1431,8 @@ Plugins
   --color-base-100: var(--ap-color-dp11);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) - 3.8%)
-  );
-  --color-accent-2: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-l) + 3.8%)
-  );
+  --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%));
   --background-modifier-form-field: var(--color-base-25);
   --background-secondary-alt: var(--color-base-30);
   --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.5);
@@ -1719,31 +1443,17 @@ Plugins
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --tag-background: var(--ap-color-tag-background);
   --tag-color: var(--ap-color-tag-text);
   --icon-color-focused: var(--color-accent);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 65%));
   --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 30%));
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-d));
-  --text-accent-hover: hsl(
-    var(--accent-h),
-    var(--accent-s),
-    calc(var(--accent-d) + 12%)
-  );
+  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) + 12%));
   --h1-color: var(--ap-h1);
   --h2-color: var(--ap-h2);
   --h3-color: var(--ap-h3);
@@ -1764,24 +1474,9 @@ Plugins
   --checkbox-radius: 30%;
   --link-external-decoration: underline;
   --link-decoration: underline;
-  --scrollbar-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-thumb-bg: hsla(
-    var(--base-h),
-    var(--base-s),
-    calc(var(--base-l) + 15%),
-    1
-  );
-  --scrollbar-active-thumb-bg: hsla(
-    var(--accent-h),
-    var(--accent-s),
-    var(--accent-l),
-    0.4
-  );
+  --scrollbar-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-thumb-bg: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 15%), 1);
+  --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
   --base-h: var(--ap-base0-h);
   --base-s: var(--ap-base0-s);
   --base-l: var(--ap-base0-l);
@@ -1818,427 +1513,427 @@ Plugins
 name: Apatheia
 id: ap-theme
 settings:
-        -
-                id: ap-radius-s 
-                title: Border radius S 
-                description: variable-number-slider 
-                type: variable-number-slider 
-                default: 4 
-                min: 0 
-                max: 20 
-                step: px 
-                format: px 
-        -
-                id: ap-radius-m 
-                title: Border radius M 
-                description: variable-number-slider 
-                type: variable-number-slider 
-                default: 8 
-                min: 0 
-                max: 20 
-                step: px 
-                format: px 
-        -
-                id: ap-radius-l 
-                title: Border radius L 
-                description: variable-number-slider 
-                type: variable-number-slider 
-                default: 10 
-                min: 0 
-                max: 20 
-                step: px 
-                format: px 
-        -
-                id: a-theme-settings 
-                title: Theme settings 
-                description: Change theme appearance here 
-                type: heading 
-                level: 1 
-                collapsed: true 
-        -
-                id: theme-dark 
-                title: Theme variant 
-                description: Select theme variant 
-                type: class-select 
-                default: a-theme-apatheia 
-                allowEmpty: false 
-                options:
+		-
+				id: ap-radius-s 
+				title: Border radius S 
+				description: variable-number-slider 
+				type: variable-number-slider 
+				default: 4 
+				min: 0 
+				max: 20 
+				step: px 
+				format: px 
+		-
+				id: ap-radius-m 
+				title: Border radius M 
+				description: variable-number-slider 
+				type: variable-number-slider 
+				default: 8 
+				min: 0 
+				max: 20 
+				step: px 
+				format: px 
+		-
+				id: ap-radius-l 
+				title: Border radius L 
+				description: variable-number-slider 
+				type: variable-number-slider 
+				default: 10 
+				min: 0 
+				max: 20 
+				step: px 
+				format: px 
+		-
+				id: a-theme-settings 
+				title: Theme settings 
+				description: Change theme appearance here 
+				type: heading 
+				level: 1 
+				collapsed: true 
+		-
+				id: theme-dark 
+				title: Theme variant 
+				description: Select theme variant 
+				type: class-select 
+				default: a-theme-apatheia 
+				allowEmpty: false 
+				options:
 
-                        -
-                                label: 🗿 Apatheia
-                                value: a-theme-apatheia
+						-
+								label: 🗿 Apatheia
+								value: a-theme-apatheia
 
-                        -
-                                label: 👾 Purple
-                                value: a-theme-purple
+						-
+								label: 👾 Purple
+								value: a-theme-purple
 
-                        -
-                                label: 🌿 Catpuccin Mocha
-                                value: a-catpuccin-mocha
+						-
+								label: 🌿 Catpuccin Mocha
+								value: a-catpuccin-mocha
 
-                        -
-                                label: ☕ Catpuccin Espresso
-                                value: a-catpuccin-espresso
+						-
+								label: ☕ Catpuccin Espresso
+								value: a-catpuccin-espresso
 
-                        -
-                                label: ❄ Winter
-                                value: a-winter
-        -
-                id: a-theme-purple-settings 
-                title: Test theme settings 
-                description: Settings for the test theme 
-                type: heading 
-                level: 2 
-                collapsed: true 
-        -
-                id: a-theme-purple-test 
-                title: Toggle test 
-                description: toggle to test 
-                type: class-toggle 
-        -
-                id: a-effect-settings 
-                title: Effects 
-                description: Add effects 
-                type: heading 
-                level: 1 
-                collapsed: true 
-        -
-                id: glassMorphism 
-                title: Glassmorphism 
-                description: Add glassmorphism to your theme 
-                type: class-toggle 
-        -
-                id: smoothIndent 
-                title: Smooth indent 
-                description: Smooth Indent headers. Vim users may experience weird glitches 
-                type: class-toggle 
-        -
-                id: Fade 
-                title: Fade 
-                description: Fade 
-                type: class-toggle 
-        -
-                id: Hover 
-                title: Hover effect 
-                description: On hover transition on components 
-                type: class-toggle 
-        -
-                id: a-font-settings 
-                title: Fonts 
-                description: Select fonts 
-                type: heading 
-                level: 1 
-                collapsed: true 
-        -
-                id: inline-title-font 
-                title: Title font 
-                description: Change title font 
-                type: variable-select 
-                default: Open Sans 
-                options:
-                        - Alegreya
-                        - Anybody
-                        - Archivo
-                        - Archivo Narrow
-                        - Asap
-                        - Assistant
-                        - Azeret Mono
-                        - Baloo 2
-                        - Besley
-                        - Bitter
-                        - Bodoni Moda
-                        - Cabin
-                        - Cairo
-                        - Cairo Play
-                        - Catamaran
-                        - Cinzel
-                        - Comfortaa
-                        - Crimson Pro
-                        - Domine
-                        - Dosis
-                        - EB Garamond
-                        - Encode Sans
-                        - Epilogue
-                        - Exo 2
-                        - Figtree
-                        - Finlandica
-                        - Heebo
-                        - Inconsolata
-                        - Inter
-                        - Josefin Sans
-                        - Jost
-                        - Jura
-                        - Karla
-                        - Lexend
-                        - Lexend Deca
-                        - Lexend Exa
-                        - Libre Franklin
-                        - Lora
-                        - M PLUS 1
-                        - Manrope
-                        - Maven Pro
-                        - Merriweather Sans
-                        - Montserrat
-                        - Mulish
-                        - MuseoModerno
-                        - Noto Sans Display
-                        - Nunito
-                        - Open Sans
-                        - Oswald
-                        - Outfit
-                        - Overpass
-                        - Podkova
-                        - Public Sans
-                        - Quicksand
-                        - Raleway
-                        - Readex Pro
-                        - Recursive
-                        - Red Hat Display
-                        - Red Hat Text
-                        - Red Rose
-                        - Rosario
-                        - Rubik
-                        - STIX Two Text
-                        - Saira
-                        - Signika
-                        - Signika Negative
-                        - Space Grotesk
-                        - Syne
-                        - Vollkorn
-                        - Work Sans
-                        - Yanone Kaffeesatz
-        -
-                id: font-interface 
-                title: Interface font 
-                description: Change interface font 
-                type: variable-select 
-                default: Open Sans 
-                options:
-                        - Alegreya
-                        - Anybody
-                        - Archivo
-                        - Archivo Narrow
-                        - Asap
-                        - Assistant
-                        - Azeret Mono
-                        - Baloo 2
-                        - Besley
-                        - Bitter
-                        - Bodoni Moda
-                        - Cabin
-                        - Cairo
-                        - Cairo Play
-                        - Catamaran
-                        - Cinzel
-                        - Comfortaa
-                        - Crimson Pro
-                        - Domine
-                        - Dosis
-                        - EB Garamond
-                        - Encode Sans
-                        - Epilogue
-                        - Exo 2
-                        - Figtree
-                        - Finlandica
-                        - Heebo
-                        - Inconsolata
-                        - Inter
-                        - Josefin Sans
-                        - Jost
-                        - Jura
-                        - Karla
-                        - Lexend
-                        - Lexend Deca
-                        - Lexend Exa
-                        - Libre Franklin
-                        - Lora
-                        - M PLUS 1
-                        - Manrope
-                        - Maven Pro
-                        - Merriweather Sans
-                        - Montserrat
-                        - Mulish
-                        - MuseoModerno
-                        - Noto Sans Display
-                        - Nunito
-                        - Open Sans
-                        - Oswald
-                        - Outfit
-                        - Overpass
-                        - Podkova
-                        - Public Sans
-                        - Quicksand
-                        - Raleway
-                        - Readex Pro
-                        - Recursive
-                        - Red Hat Display
-                        - Red Hat Text
-                        - Red Rose
-                        - Rosario
-                        - Rubik
-                        - STIX Two Text
-                        - Saira
-                        - Signika
-                        - Signika Negative
-                        - Space Grotesk
-                        - Syne
-                        - Vollkorn
-                        - Work Sans
-                        - Yanone Kaffeesatz
-        -
-                id: font-text 
-                title: Text font 
-                description: Change text font 
-                type: variable-select 
-                default: Open Sans 
-                options:
-                        - Alegreya
-                        - Anybody
-                        - Archivo
-                        - Archivo Narrow
-                        - Asap
-                        - Assistant
-                        - Azeret Mono
-                        - Baloo 2
-                        - Besley
-                        - Bitter
-                        - Bodoni Moda
-                        - Cabin
-                        - Cairo
-                        - Cairo Play
-                        - Catamaran
-                        - Cinzel
-                        - Comfortaa
-                        - Crimson Pro
-                        - Domine
-                        - Dosis
-                        - EB Garamond
-                        - Encode Sans
-                        - Epilogue
-                        - Exo 2
-                        - Figtree
-                        - Finlandica
-                        - Heebo
-                        - Inconsolata
-                        - Inter
-                        - Josefin Sans
-                        - Jost
-                        - Jura
-                        - Karla
-                        - Lexend
-                        - Lexend Deca
-                        - Lexend Exa
-                        - Libre Franklin
-                        - Lora
-                        - M PLUS 1
-                        - Manrope
-                        - Maven Pro
-                        - Merriweather Sans
-                        - Montserrat
-                        - Mulish
-                        - MuseoModerno
-                        - Noto Sans Display
-                        - Nunito
-                        - Open Sans
-                        - Oswald
-                        - Outfit
-                        - Overpass
-                        - Podkova
-                        - Public Sans
-                        - Quicksand
-                        - Raleway
-                        - Readex Pro
-                        - Recursive
-                        - Red Hat Display
-                        - Red Hat Text
-                        - Red Rose
-                        - Rosario
-                        - Rubik
-                        - STIX Two Text
-                        - Saira
-                        - Signika
-                        - Signika Negative
-                        - Space Grotesk
-                        - Syne
-                        - Vollkorn
-                        - Work Sans
-                        - Yanone Kaffeesatz
-        -
-                id: font-monospace 
-                title: Monospace font 
-                description: Change the monospace font 
-                type: variable-select 
-                default: Source code pro 
-                options:
-                        - Alegreya
-                        - Anybody
-                        - Archivo
-                        - Archivo Narrow
-                        - Asap
-                        - Assistant
-                        - Azeret Mono
-                        - Baloo 2
-                        - Besley
-                        - Bitter
-                        - Bodoni Moda
-                        - Cabin
-                        - Cairo
-                        - Cairo Play
-                        - Catamaran
-                        - Cinzel
-                        - Comfortaa
-                        - Crimson Pro
-                        - Domine
-                        - Dosis
-                        - EB Garamond
-                        - Encode Sans
-                        - Epilogue
-                        - Exo 2
-                        - Figtree
-                        - Finlandica
-                        - Heebo
-                        - Inconsolata
-                        - Inter
-                        - Josefin Sans
-                        - Jost
-                        - Jura
-                        - Karla
-                        - Lexend
-                        - Lexend Deca
-                        - Lexend Exa
-                        - Libre Franklin
-                        - Lora
-                        - M PLUS 1
-                        - Manrope
-                        - Maven Pro
-                        - Merriweather Sans
-                        - Montserrat
-                        - Mulish
-                        - MuseoModerno
-                        - Noto Sans Display
-                        - Nunito
-                        - Open Sans
-                        - Oswald
-                        - Outfit
-                        - Overpass
-                        - Podkova
-                        - Public Sans
-                        - Quicksand
-                        - Raleway
-                        - Readex Pro
-                        - Recursive
-                        - Red Hat Display
-                        - Red Hat Text
-                        - Red Rose
-                        - Rosario
-                        - Rubik
-                        - STIX Two Text
-                        - Saira
-                        - Signika
-                        - Signika Negative
-                        - Space Grotesk
-                        - Syne
-                        - Vollkorn
-                        - Work Sans
-                        - Yanone Kaffeesatz
+						-
+								label: ❄ Winter
+								value: a-winter
+		-
+				id: a-theme-purple-settings 
+				title: Test theme settings 
+				description: Settings for the test theme 
+				type: heading 
+				level: 2 
+				collapsed: true 
+		-
+				id: a-theme-purple-test 
+				title: Toggle test 
+				description: toggle to test 
+				type: class-toggle 
+		-
+				id: a-effect-settings 
+				title: Effects 
+				description: Add effects 
+				type: heading 
+				level: 1 
+				collapsed: true 
+		-
+				id: glassMorphism 
+				title: Glassmorphism 
+				description: Add glassmorphism to your theme 
+				type: class-toggle 
+		-
+				id: smoothIndent 
+				title: Smooth indent 
+				description: Smooth Indent headers. Vim users may experience weird glitches 
+				type: class-toggle 
+		-
+				id: Fade 
+				title: Fade 
+				description: Fade 
+				type: class-toggle 
+		-
+				id: Hover 
+				title: Hover effect 
+				description: On hover transition on components 
+				type: class-toggle 
+		-
+				id: a-font-settings 
+				title: Fonts 
+				description: Select fonts 
+				type: heading 
+				level: 1 
+				collapsed: true 
+		-
+				id: inline-title-font 
+				title: Title font 
+				description: Change title font 
+				type: variable-select 
+				default: Open Sans 
+				options:
+						- Alegreya
+						- Anybody
+						- Archivo
+						- Archivo Narrow
+						- Asap
+						- Assistant
+						- Azeret Mono
+						- Baloo 2
+						- Besley
+						- Bitter
+						- Bodoni Moda
+						- Cabin
+						- Cairo
+						- Cairo Play
+						- Catamaran
+						- Cinzel
+						- Comfortaa
+						- Crimson Pro
+						- Domine
+						- Dosis
+						- EB Garamond
+						- Encode Sans
+						- Epilogue
+						- Exo 2
+						- Figtree
+						- Finlandica
+						- Heebo
+						- Inconsolata
+						- Inter
+						- Josefin Sans
+						- Jost
+						- Jura
+						- Karla
+						- Lexend
+						- Lexend Deca
+						- Lexend Exa
+						- Libre Franklin
+						- Lora
+						- M PLUS 1
+						- Manrope
+						- Maven Pro
+						- Merriweather Sans
+						- Montserrat
+						- Mulish
+						- MuseoModerno
+						- Noto Sans Display
+						- Nunito
+						- Open Sans
+						- Oswald
+						- Outfit
+						- Overpass
+						- Podkova
+						- Public Sans
+						- Quicksand
+						- Raleway
+						- Readex Pro
+						- Recursive
+						- Red Hat Display
+						- Red Hat Text
+						- Red Rose
+						- Rosario
+						- Rubik
+						- STIX Two Text
+						- Saira
+						- Signika
+						- Signika Negative
+						- Space Grotesk
+						- Syne
+						- Vollkorn
+						- Work Sans
+						- Yanone Kaffeesatz
+		-
+				id: font-interface 
+				title: Interface font 
+				description: Change interface font 
+				type: variable-select 
+				default: Open Sans 
+				options:
+						- Alegreya
+						- Anybody
+						- Archivo
+						- Archivo Narrow
+						- Asap
+						- Assistant
+						- Azeret Mono
+						- Baloo 2
+						- Besley
+						- Bitter
+						- Bodoni Moda
+						- Cabin
+						- Cairo
+						- Cairo Play
+						- Catamaran
+						- Cinzel
+						- Comfortaa
+						- Crimson Pro
+						- Domine
+						- Dosis
+						- EB Garamond
+						- Encode Sans
+						- Epilogue
+						- Exo 2
+						- Figtree
+						- Finlandica
+						- Heebo
+						- Inconsolata
+						- Inter
+						- Josefin Sans
+						- Jost
+						- Jura
+						- Karla
+						- Lexend
+						- Lexend Deca
+						- Lexend Exa
+						- Libre Franklin
+						- Lora
+						- M PLUS 1
+						- Manrope
+						- Maven Pro
+						- Merriweather Sans
+						- Montserrat
+						- Mulish
+						- MuseoModerno
+						- Noto Sans Display
+						- Nunito
+						- Open Sans
+						- Oswald
+						- Outfit
+						- Overpass
+						- Podkova
+						- Public Sans
+						- Quicksand
+						- Raleway
+						- Readex Pro
+						- Recursive
+						- Red Hat Display
+						- Red Hat Text
+						- Red Rose
+						- Rosario
+						- Rubik
+						- STIX Two Text
+						- Saira
+						- Signika
+						- Signika Negative
+						- Space Grotesk
+						- Syne
+						- Vollkorn
+						- Work Sans
+						- Yanone Kaffeesatz
+		-
+				id: font-text 
+				title: Text font 
+				description: Change text font 
+				type: variable-select 
+				default: Open Sans 
+				options:
+						- Alegreya
+						- Anybody
+						- Archivo
+						- Archivo Narrow
+						- Asap
+						- Assistant
+						- Azeret Mono
+						- Baloo 2
+						- Besley
+						- Bitter
+						- Bodoni Moda
+						- Cabin
+						- Cairo
+						- Cairo Play
+						- Catamaran
+						- Cinzel
+						- Comfortaa
+						- Crimson Pro
+						- Domine
+						- Dosis
+						- EB Garamond
+						- Encode Sans
+						- Epilogue
+						- Exo 2
+						- Figtree
+						- Finlandica
+						- Heebo
+						- Inconsolata
+						- Inter
+						- Josefin Sans
+						- Jost
+						- Jura
+						- Karla
+						- Lexend
+						- Lexend Deca
+						- Lexend Exa
+						- Libre Franklin
+						- Lora
+						- M PLUS 1
+						- Manrope
+						- Maven Pro
+						- Merriweather Sans
+						- Montserrat
+						- Mulish
+						- MuseoModerno
+						- Noto Sans Display
+						- Nunito
+						- Open Sans
+						- Oswald
+						- Outfit
+						- Overpass
+						- Podkova
+						- Public Sans
+						- Quicksand
+						- Raleway
+						- Readex Pro
+						- Recursive
+						- Red Hat Display
+						- Red Hat Text
+						- Red Rose
+						- Rosario
+						- Rubik
+						- STIX Two Text
+						- Saira
+						- Signika
+						- Signika Negative
+						- Space Grotesk
+						- Syne
+						- Vollkorn
+						- Work Sans
+						- Yanone Kaffeesatz
+		-
+				id: font-monospace 
+				title: Monospace font 
+				description: Change the monospace font 
+				type: variable-select 
+				default: Source code pro 
+				options:
+						- Alegreya
+						- Anybody
+						- Archivo
+						- Archivo Narrow
+						- Asap
+						- Assistant
+						- Azeret Mono
+						- Baloo 2
+						- Besley
+						- Bitter
+						- Bodoni Moda
+						- Cabin
+						- Cairo
+						- Cairo Play
+						- Catamaran
+						- Cinzel
+						- Comfortaa
+						- Crimson Pro
+						- Domine
+						- Dosis
+						- EB Garamond
+						- Encode Sans
+						- Epilogue
+						- Exo 2
+						- Figtree
+						- Finlandica
+						- Heebo
+						- Inconsolata
+						- Inter
+						- Josefin Sans
+						- Jost
+						- Jura
+						- Karla
+						- Lexend
+						- Lexend Deca
+						- Lexend Exa
+						- Libre Franklin
+						- Lora
+						- M PLUS 1
+						- Manrope
+						- Maven Pro
+						- Merriweather Sans
+						- Montserrat
+						- Mulish
+						- MuseoModerno
+						- Noto Sans Display
+						- Nunito
+						- Open Sans
+						- Oswald
+						- Outfit
+						- Overpass
+						- Podkova
+						- Public Sans
+						- Quicksand
+						- Raleway
+						- Readex Pro
+						- Recursive
+						- Red Hat Display
+						- Red Hat Text
+						- Red Rose
+						- Rosario
+						- Rubik
+						- STIX Two Text
+						- Saira
+						- Signika
+						- Signika Negative
+						- Space Grotesk
+						- Syne
+						- Vollkorn
+						- Work Sans
+						- Yanone Kaffeesatz
 */

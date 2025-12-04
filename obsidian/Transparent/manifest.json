@@ -1,8 +1,7 @@
 {
-  "name": "Transparent",
-  "version": "1.2.12",
-  "minAppVersion": "1.0.0",
-  "author": "Oczko24",
-  "authorUrl": "https://github.com/Oczko24",
-  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
+	"name": "Transparent",
+	"version": "1.4.32",
+	"minAppVersion": "1.0.0",
+	"author": "Oczko24",
+	"authorUrl": "https://github.com/Oczko24"
 }

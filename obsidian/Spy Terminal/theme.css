@@ -3,7 +3,7 @@
 /* Use CSS variables for better maintainability */
 :root {
   --font-text-size: 16px;
-  --font-text: "SFMono-Regular", "Roboto Mono", "Ubuntu Mono", monospace;
+  --font-text: 'SFMono-Regular', 'Roboto Mono', 'Ubuntu Mono', monospace;
 }
 
 /* Override general variables under body */
@@ -90,7 +90,7 @@ body {
 }
 
 /* Link glow effect */
-.cm-link,
+.cm-link, 
 .markdown-preview-view a {
   text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
 }

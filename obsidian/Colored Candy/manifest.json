@@ -1,7 +1,6 @@
 {
-  "name": "Colored Candy",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "Erika Gozar",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+    "name": "Colored Candy",
+    "version": "1.0.0",
+    "minAppVersion": "1.0.0",
+    "author": "Erika Gozar"
 }

@@ -1,8 +1,7 @@
 {
-  "name": "Dark Moss",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "author": "sergey",
-  "authorUrl": "https://github.com/sergey900553",
-  "license": { "name": "MIT License", "spdx_id": "MIT" }
+    "name": "Dark Moss",
+    "version": "1.0.0",
+    "minAppVersion": "1.0.0",
+    "author": "sergey",
+    "authorUrl": "https://github.com/sergey900553"  
 }

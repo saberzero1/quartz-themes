@@ -1,6 +1,6 @@
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <a href="https://dnfolio.dev" target="_blank" rel="noopener noreferrer">Daiki Nakashima</a>
+- Theme author: <a href="https://dnfolio.me" target="_blank" rel="noopener noreferrer">Daiki Nakashima</a>
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sakurajima">Install instructions</a>
 

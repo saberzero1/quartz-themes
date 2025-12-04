@@ -66,24 +66,19 @@ Initially, I wanted to adapt the Pie theme, which I often used in Typora, but in
 
 Since version 0.9.2 I am already making independent changes without following the changes in the listed themes. I will indicate changings in the changelog: https://github.com/ryjjin/Obsidian-Dark-Graphite-Pie-theme */
 
+
 /* ======= ## Fonts & Colors ==============*/
 
 body {
   font-size: 1rem;
   color: var(--text-normal-original);
-  font-family:
-    Source Code Pro,
-    Fira Code,
-    monospace;
+  font-family: Source Code Pro, Fira Code, monospace;
   --font-monospace: Source Code Pro, Fira Code, monospace;
   --default-font: Source Code Pro, Fira Code, monospace;
 }
 .CodeMirror pre.CodeMirror-line {
   font-size: 1rem;
-  font-family:
-    Source Code Pro,
-    Fira Code,
-    monospace;
+  font-family: Source Code Pro, Fira Code, monospace;
   color: var(--text-normal-original);
 }
 
@@ -96,7 +91,7 @@ body {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.85);
   --background-nav-alt: rgb(58, 62, 63);
   --background-nav-file-tag: rgb(116, 190, 247);
-  --background-nav-selected: #3e93d8;
+  --background-nav-selected:  #3e93d8;
   --background-nav: rgb(41, 44, 46);
   --text-accent: #3e93d8;
   --text-accent-hover: #2b60af;
@@ -123,10 +118,10 @@ body {
   --accent-strong: #3e93d8;
   --accent-mild: #3e93d8;
   --bw: #ffffff;
-  --graph-circle: #fcf601;
+  --graph-circle:#fcf601;
   --graph-line: #26798c;
   --graph-bg: rgb(22, 22, 22);
-  --graph-text: #cccccc;
+  --graph-text:#cccccc;
   --graphtag: #5dbcd2;
   --graph-attach: #d669bc;
   --graph-unresolved: #9e8aff;
@@ -177,223 +172,243 @@ body {
   --accent-strong: #ff3333;
   --accent-mild: #e0a330;
   --bw: #000000;
-  --graph-circle: #ec0c0c;
+  --graph-circle:#ec0c0c;
   --graph-line: #cccccc;
   --graph-bg: rgb(255, 255, 255);
-  --graph-text: #969696;
+  --graph-text:#969696;
   --graphtag: #b9ec41;
-  --graph-attach: #83d4f4;
+  --graph-attach: #83D4F4;
   --graph-unresolved: rgb(143, 147, 143);
   --checklist-done-decoration: none;
 }
 
+
+
+
 /* ======= ## Inside a note  ==============*/
 
-/* ======= ### Headers ==============*/
+  /* ======= ### Headers ==============*/
 
-/* ------- #### Edit mode --------------*/
+    /* ------- #### Edit mode --------------*/
 
-/* Changing size/color of the header hashtags ## */
-.cm-formatting-header {
-  color: var(--text-faint);
-  font-size: 1rem;
-}
+      /* Changing size/color of the header hashtags ## */
+      .cm-formatting-header {
+        color: var(--text-faint);
+        font-size: 1rem;
+      }
 
-.cm-header.cm-header-1 {
-  font-size: 2rem;
-  line-height: 40px;
-}
+      .cm-header.cm-header-1 {
+        font-size: 2rem;
+        line-height: 40px;
+      }
 
-div.HyperMD-header.HyperMD-header-1.cm-line {
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--text-accent);
-}
+      div.HyperMD-header.HyperMD-header-1.cm-line {
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--text-accent);
+      }
 
-.cm-header.cm-header-2 {
-  font-size: 1.6rem;
-  line-height: 36px;
-}
+      .cm-header.cm-header-2 {
+        font-size: 1.6rem;
+        line-height: 36px;
+      }
 
-div.HyperMD-header.HyperMD-header-2.cm-line {
-  padding-top: 14px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--text-faint);
-}
+      div.HyperMD-header.HyperMD-header-2.cm-line {
+        padding-top: 14px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--text-faint);
+      }
 
-/* ------- #### Reading mode --------------*/
+    /* ------- #### Reading mode --------------*/
 
-.markdown-preview-view h1 {
-  font-size: 2rem;
-  line-height: 40px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--text-accent);
-}
+      .markdown-preview-view h1 {
+        font-size: 2rem;
+        line-height: 40px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--text-accent);
+      }
 
-.markdown-preview-view h2 {
-  font-size: 1.6rem;
-  line-height: 36px;
-  padding-top: 14px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--text-faint);
-}
+      .markdown-preview-view h2 {
+        font-size: 1.6rem;
+        line-height: 36px;
+        padding-top: 14px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--text-faint);
+      }
 
-.markdown-preview-view hr {
-  height: 1px;
-  border: none;
-  background-color: var(--text-accent);
-}
+      .markdown-preview-view hr {
+        height: 1px;
+        border: none;
+        background-color: var(--text-accent);
+      }
 
-/* ------- #### Live Preview --------------*/
 
-/* ======= ### Plain text ==============*/
+    /* ------- #### Live Preview --------------*/
 
-/* ------- #### Edit mode --------------*/
 
-/* ------- #### Reading mode --------------*/
 
-.markdown-preview-view {
-  color: var(--text-normal-original);
-}
+  /* ======= ### Plain text ==============*/
 
-/* ------- #### Live Preview --------------*/
 
-/* ======= ### Tags ==============*/
 
-/* ------- #### Edit mode --------------*/
+    /* ------- #### Edit mode --------------*/
 
-/* ------- #### Reading mode --------------*/
 
-.tag {
-  background-color: var(--text-accent);
-  border: none;
-  color: white !important;
-  font-size: 0.7rem;
-  line-height: 1.6em;
-  padding: 0px 7px 1px 7px;
-  text-align: center;
-  text-decoration: none !important;
-  display: inline-block;
-  margin: 0px 4px;
-  cursor: pointer;
-  border-radius: 14px;
-}
 
-.tag:hover {
-  color: white;
-  background-color: var(--text-accent-hover);
-}
+    /* ------- #### Reading mode --------------*/
 
-.tag[href^="#obsidian"] {
-  background-color: #4d3ca6;
-}
+      .markdown-preview-view {
+        color: var(--text-normal-original);
+      }
 
-.tag[href^="#important"] {
-  background-color: red;
-}
+    /* ------- #### Live Preview --------------*/
 
-.tag[href^="#стартовал_проект"] {
-  background-color: green;
-}
 
-.tag[href^="#высокий_шанс"] {
-  background-color: green;
-}
 
-.tag[href^="#complete"] {
-  background-color: green;
-}
+  /* ======= ### Tags ==============*/
 
-.tag[href^="#ожидание"] {
-  background-color: orange;
-}
-.tag[href^="#идет_конкурс"] {
-  background-color: orange;
-}
 
-.tag[href^="#средний_шанс"] {
-  background-color: orange;
-}
 
-.tag[href^="#inprogress"] {
-  background-color: orange;
-}
+    /* ------- #### Edit mode --------------*/
 
-.tag[href^="#daily_notes"] {
-  background-color: #4d3ca6;
-}
 
-.tag[href^="#tasklist"] {
-  background-color: #4d3ca6;
-}
 
-.tag[href^="#TIER1"] {
-  background-color: red;
-}
+    /* ------- #### Reading mode --------------*/
 
-.tag[href^="#TIER2"] {
-  background-color: orange;
-}
+      .tag {
+        background-color: var(--text-accent);
+        border: none;
+        color: white !important;
+        font-size: 0.7rem;
+        line-height: 1.6em;
+        padding: 0px 7px 1px 7px;
+        text-align: center;
+        text-decoration: none !important;
+        display: inline-block;
+        margin: 0px 4px;
+        cursor: pointer;
+        border-radius: 14px;
+      }
 
-.tag[href^="#TIER3"] {
-  background-color: green;
-}
+      .tag:hover {
+        color: white;
+        background-color: var(--text-accent-hover);
+      }
 
-.tag[href^="#DISQUALIFIED"] {
-  background-color: gray;
-}
+      .tag[href^="#obsidian"] {
+        background-color: #4d3ca6;
+      }
 
-.tag[href^="#проект_не_состоялся"] {
-  background-color: gray;
-}
+      .tag[href^="#important"] {
+        background-color: red;
+      }
 
-.tag[href^="#failed"],
-.tag[href^="#проигран_конкурс"] {
-  background-color: red;
-}
+      .tag[href^="#стартовал_проект"] {
+        background-color: green;
+      }
 
-/* ------- #### Live Preview --------------*/
+      .tag[href^="#высокий_шанс"] {
+        background-color: green;
+      }
 
-/* ======= ### Lists ==============*/
+      .tag[href^="#complete"] {
+        background-color: green;
+      }
 
-/* ------- #### Edit mode --------------*/
+      .tag[href^="#ожидание"] {
+        background-color: orange;
+      }
+      .tag[href^="#идет_конкурс"] {
+        background-color: orange;
+      }
 
-/* Coloring the list bullets/numbers */
-.cm-s-obsidian span.cm-formatting-list {
-  color: var(--text-accent);
-  font-size: 0.85rem;
-  font-weight: 500;
-  font-family: var(--font-monospace);
-}
+      .tag[href^="#средний_шанс"] {
+        background-color: orange;
+      }
 
-/* ------- #### Reading mode --------------*/
+      .tag[href^="#inprogress"] {
+        background-color: orange;
+      }
 
-/* trace indentation lines by death_au */
+      .tag[href^="#daily_notes"] {
+        background-color: #4d3ca6;
+      }
 
-.cm-hmd-list-indent .cm-tab,
-ul ul {
-  position: relative;
-}
+      .tag[href^="#tasklist"] {
+        background-color: #4d3ca6;
+      }
 
-.cm-hmd-list-indent .cm-tab::before,
-ul ul::before {
-  content: "";
-  border-left: 2px solid var(--background-modifier-border); /*rgba(20,122,255,0.3);*/
-  position: absolute;
-}
+      .tag[href^="#TIER1"] {
+        background-color: red;
+      }
 
-.cm-hmd-list-indent .cm-tab::before {
-  left: 0;
-  top: -5px;
-  bottom: -4px;
-}
+      .tag[href^="#TIER2"] {
+        background-color: orange;
+      }
 
-ul ul::before {
-  left: -15px;
-  top: 0;
-  bottom: 0;
-}
+      .tag[href^="#TIER3"] {
+        background-color: green;
+      }
 
-/*TASKLIST in Preview mode: change the color of the "checked" mark via hue-rotate filter;
+      .tag[href^="#DISQUALIFIED"] {
+        background-color: gray;
+      }
+
+      .tag[href^="#проект_не_состоялся"] {
+        background-color: gray;
+      }
+
+      .tag[href^="#failed"], .tag[href^="#проигран_конкурс"] {
+        background-color: red;
+      }
+
+    /* ------- #### Live Preview --------------*/
+
+
+
+  /* ======= ### Lists ==============*/
+
+
+    /* ------- #### Edit mode --------------*/
+
+      /* Coloring the list bullets/numbers */
+      .cm-s-obsidian span.cm-formatting-list {
+        color: var(--text-accent);
+        font-size: 0.85rem;
+        font-weight: 500;
+        font-family: var(--font-monospace);
+      }
+
+
+
+    /* ------- #### Reading mode --------------*/
+
+      /* trace indentation lines by death_au */
+
+      .cm-hmd-list-indent .cm-tab,
+      ul ul {
+        position: relative;
+      }
+
+      .cm-hmd-list-indent .cm-tab::before,
+      ul ul::before {
+        content: "";
+        border-left: 2px solid var(--background-modifier-border);  /*rgba(20,122,255,0.3);*/
+        position: absolute;
+      }
+
+      .cm-hmd-list-indent .cm-tab::before {
+        left: 0;
+        top: -5px;
+        bottom: -4px;
+      }
+
+      ul ul::before {
+        left: -15px;
+        top: 0;
+        bottom: 0;
+      }
+
+      /*TASKLIST in Preview mode: change the color of the "checked" mark via hue-rotate filter;
       *the block has been added, since apparently in the current version of the application, by default such a filter with a different value is enabled for this block, and if the block is not added, the colors indicated in the blocks below are displayed incorrectly
 
       the base color used for the checklist looks like #3E93D8, is equivalent to HSL(207, 66%, 55%)
@@ -404,151 +419,164 @@ ul ul::before {
       -----------------------------------------------------------------------------------
       */
 
-.theme-dark .markdown-preview-view .task-list-item-checkbox {
-  filter: hue-rotate(360deg) brightness(120%) contrast(120%);
-}
+      .theme-dark .markdown-preview-view .task-list-item-checkbox {
+        filter: hue-rotate(360deg) brightness(120%) contrast(120%);
+      }
 
-.theme-light .markdown-preview-view .task-list-item-checkbox {
-  content: "";
-  filter: hue-rotate(130deg) saturate(80%) brightness(90%) contrast(110%);
-}
+      .theme-light .markdown-preview-view .task-list-item-checkbox {
+        content: '';
+        filter: hue-rotate(130deg) saturate(80%) brightness(90%) contrast(110%);
+      }
 
-/*TASKLIST in Preview mode: how to make it not-line-through*/
+      /*TASKLIST in Preview mode: how to make it not-line-through*/
 
-.markdown-preview-view ul > li.task-list-item.is-checked {
-  text-decoration: none;
-  color: #8c8c8c;
-}
+      .markdown-preview-view ul > li.task-list-item.is-checked {
+        text-decoration: none;
+        color: #8c8c8c;
+      }
 
-/* ------- #### Live Preview --------------*/
+    /* ------- #### Live Preview --------------*/
 
-input.task-list-item-checkbox {
-  filter: hue-rotate(130deg) saturate(80%) brightness(90%) contrast(110%);
-}
+    input.task-list-item-checkbox {
+      filter: hue-rotate(130deg) saturate(80%) brightness(90%) contrast(110%);
+    }
+    
+    
+  
+  
+  
+  /* ======= ### Quotes ==============*/
 
-/* ======= ### Quotes ==============*/
 
-/* ------- #### Edit mode --------------*/
 
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-  position: relative;
-  border: none;
-  border-left: 2px solid var(--text-accent);
-  background-color: var(--background-primary-alt);
-  color: #8c8c8c;
-  font-style: normal;
-  text-indent: 0;
-}
+    /* ------- #### Edit mode --------------*/
 
-/* ------- #### Reading mode --------------*/
+      .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+        position: relative;
+        border: none;
+        border-left: 2px solid var(--text-accent);
+        background-color: var(--background-primary-alt);
+        color: #8c8c8c;
+        font-style: normal;
+        text-indent: 0;;
+      }
 
-/* Add quotation character before quote */
-/*--- 引用块 ---*/
+    /* ------- #### Reading mode --------------*/
 
-blockquote {
-  position: relative;
-  border: none;
-  border-left: 2px solid var(--text-accent);
-  color: #8c8c8c;
-  font-style: normal;
-  padding: 1em 1em 1em;
-  margin: 1em 1em 1em;
-  line-height: 1.6;
-  text-indent: 0;
-}
+      /* Add quotation character before quote */
+      /*--- 引用块 ---*/
 
-blockquote blockquote {
-  padding-right: 0;
-}
+      blockquote {
+        position: relative;
+        border: none;
+        border-left: 2px solid var(--text-accent);
+        color: #8c8c8c;
+        font-style: normal;
+        padding: 1em 1em 1em;
+        margin: 1em 1em 1em;
+        line-height: 1.6;
+        text-indent: 0;
+      }
 
-blockquote a {
-  color: var(--text-accent);
-}
+      blockquote blockquote {
+        padding-right: 0;
+      }
+      
+      blockquote a {
+        color: var(--text-accent);
+      }
+      
+      blockquote:before {
+        content: '“';
+        position: relative;
+        left: 0px;
+        top: 0;
+        color: var(--text-accent);
+        font-size: 2rem;
+        font-family: Source Code Pro, monospace;
+        line-height: 1em;
+        font-weight: 700;
+      }
 
-blockquote:before {
-  content: "“";
-  position: relative;
-  left: 0px;
-  top: 0;
-  color: var(--text-accent);
-  font-size: 2rem;
-  font-family:
-    Source Code Pro,
-    monospace;
-  line-height: 1em;
-  font-weight: 700;
-}
+    /* ------- #### Live Preview --------------*/
 
-/* ------- #### Live Preview --------------*/
 
-/* ======= ### Blocks of code ==============*/
 
-/* ------- #### Edit mode --------------*/
+  /* ======= ### Blocks of code ==============*/
 
-/* color of inline code */
-.cm-s-obsidian span.cm-inline-code {
-  color: var(--text-accent);
-  text-align: left;
-}
+    /* ------- #### Edit mode --------------*/
 
-/* ------- #### Reading mode --------------*/
+      /* color of inline code */
+      .cm-s-obsidian span.cm-inline-code {
+        color: var(--text-accent);
+        text-align: left;
+      }
 
-/* color and border of inline code (between the ticks) */
-.cm-s-obsidian
-  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code),
-.markdown-preview-section code {
-  background-color: var(--background-inline-code);
-  border: 0px solid var(--border-inline-code);
-  padding: 4px 4px;
-  font-weight: 600;
-  color: var(--text-accent);
-}
+    /* ------- #### Reading mode --------------*/
 
-/* ------- #### Live Preview --------------*/
+      /* color and border of inline code (between the ticks) */
+      .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code),
+      .markdown-preview-section code {
+        background-color: var(--background-inline-code);
+        border: 0px solid var(--border-inline-code);
+        padding: 4px 4px;
+        font-weight: 600;
+        color: var(--text-accent);
+      }
 
-/*========= remove rounded corners =======*/
+    /* ------- #### Live Preview --------------*/
 
-.workspace-tab-header.is-active {
-  border-radius: 0px;
-}
+      /*========= remove rounded corners =======*/
 
-.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
-.workspace-tab-header.is-before-active .workspace-tab-header-inner {
-  border-radius: 0px;
-}
+      .workspace-tab-header.is-active {
+        border-radius: 0px;
+      }
 
-.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
-.workspace-tab-header.is-after-active .workspace-tab-header-inner {
-  border-bottom-left-radius: 0px;
-}
-.workspace-split.mod-root
-  > .workspace-leaf:first-of-type
-  .workspace-leaf-content,
-.workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
-  border-top-left-radius: 0px;
-}
+      .workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
+      .workspace-tab-header.is-before-active .workspace-tab-header-inner {
+        border-radius: 0px;
+      }
 
-.workspace-split.mod-right-split .workspace-tabs .workspace-leaf {
-  border-top-right-radius: 0px;
-}
+      .workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+      .workspace-tab-header.is-after-active .workspace-tab-header-inner {
+        border-bottom-left-radius: 0px;
+      }
+      .workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
+      .workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
+        border-top-left-radius: 0px;
+      }
 
-/*======= flat status bar ====*/
+      .workspace-split.mod-right-split .workspace-tabs .workspace-leaf {
+        border-top-right-radius: 0px;
+      }
 
-.status-bar {
-  background-color: var(--background-nav);
-  border-top: 0px solid var(--background-modifier-border);
-  color: var(--text-accent);
-}
+      /*======= flat status bar ====*/
 
-/* ======= ### Scroll ==============*/
+      .status-bar {
+        background-color: var(--background-nav);
+        border-top: 0px solid var(--background-modifier-border);
+        color: var(--text-accent);
+      }
 
-/* ------- #### Edit mode --------------*/
+  /* ======= ### Scroll ==============*/
 
-/* ------- #### Reading mode --------------*/
 
-/* ------- #### Live Preview --------------*/
+
+    /* ------- #### Edit mode --------------*/
+
+
+
+    /* ------- #### Reading mode --------------*/
+
+
+
+    /* ------- #### Live Preview --------------*/
+
+
 
 /* ======= ## Local graph ==============*/
+
+
 
 /* ======= ## Global graph  ==============*/
 
@@ -605,12 +633,12 @@ blockquote:before {
 }
 .graph-controls-button.mod-close svg,
 .graph-controls-button.mod-reset svg {
-  width: 12px;
-  height: 12px;
+  width:12px;
+  height:12px;
 }
 .graph-controls-button.mod-open svg {
-  width: 14px;
-  height: 14px;
+  width:14px;
+  height:14px;
 }
 .graph-controls.is-close {
   min-width: inherit;
@@ -619,13 +647,13 @@ blockquote:before {
   padding: 6px 8px 2px 8px;
 }
 .graph-controls.is-close svg {
-  color: var(--text-muted);
+  color:var(--text-muted);
 }
 .collapsible-item-children {
   margin-left: 8px;
 }
-.graph-controls input[type="text"],
-.graph-controls input[type="range"] {
+.graph-controls input[type='text'],
+.graph-controls input[type='range'] {
   width: 100%;
   font-size: 0.65rem;
 }
@@ -669,13 +697,13 @@ blockquote:before {
 .graph-controls .setting-item {
   padding: 0px 0 0px 0;
 }
-.graph-controls input[type="range"] {
+.graph-controls input[type='range'] {
   -webkit-appearance: none;
   background-color: var(--background-modifier-border);
   border-radius: 2px;
   height: 2px;
 }
-.graph-controls input[type="range"]::-webkit-slider-thumb {
+.graph-controls input[type='range']::-webkit-slider-thumb {
   width: 13px;
   height: 9px;
   border-radius: 20%;
@@ -694,19 +722,14 @@ blockquote:before {
   user-select: none;
   width: 26px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
-  transition:
-    background 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
-    border 0.15s ease-in-out,
-    opacity 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border 0.15s ease-in-out, opacity 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 .graph-controls .checkbox-container.is-enabled {
   background-color: var(--interactive-accent);
 }
 .graph-controls .checkbox-container:after {
   pointer-events: none;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   background-color: var(--text-on-accent);
@@ -714,11 +737,7 @@ blockquote:before {
   height: 10px;
   margin: 1px 2px 1px 3px;
   border-radius: 2px;
-  transition:
-    transform 0.15s ease-in-out,
-    width 0.1s ease-in-out,
-    left 0.1s ease-in-out,
-    -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, width 0.1s ease-in-out, left 0.1s ease-in-out, -webkit-transform 0.15s ease-in-out;
   left: -4px;
   transform: translate3d(3px, 0, 0);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
@@ -735,9 +754,7 @@ blockquote:before {
   color: var(--text-accent);
   opacity: 0.3;
   font-size: 0.875rem;
-  font-family:
-    Source Code Pro,
-    monospace;
+  font-family: Source Code Pro, monospace;
 }
 
 .CodeMirror-gutter-elt {
@@ -753,219 +770,215 @@ blockquote:before {
   white-space: nowrap;
 }
 
+
+
 /* ======= ## The area around the note  ==============*/
 
-/* ======= ### App Ribbon ==============*/
+  /* ======= ### App Ribbon ==============*/
 
-.workspace-ribbon {
-  background-color: var(--background-nav-alt);
-}
+    .workspace-ribbon {
+      background-color: var(--background-nav-alt);
+    }
 
-.workspace-ribbon.side-dock-ribbon.mod-left {
-  background-color: var(--background-nav);
-}
+    .workspace-ribbon.side-dock-ribbon.mod-left {
+      background-color: var(--background-nav);
+    }
 
-.workspace-tab-header-container {
-  background-color: var(--background-nav);
-}
+    .workspace-tab-header-container {
+      background-color: var(--background-nav);
+    }
 
-.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
-.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
-.workspace-tab-header.is-before-active .workspace-tab-header-inner,
-.workspace-tab-header.is-after-active .workspace-tab-header-inner {
-  background-color: var(--background-nav);
-}
+    .workspace-tab-container-before.is-before-active .workspace-tab-header-inner, .workspace-tab-container-after.is-after-active .workspace-tab-header-inner, .workspace-tab-header.is-before-active .workspace-tab-header-inner, .workspace-tab-header.is-after-active .workspace-tab-header-inner {
+      background-color: var(--background-nav);
+    }
 
-/* ======= ### File Explorer ==============*/
+  /* ======= ### File Explorer ==============*/
 
-/* The name of the vault */
-.nav-folder.mod-root > .nav-file-title,
-.nav-folder.mod-root > .nav-folder-title {
-  display: none;
-}
+    /* The name of the vault */
+    .nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {
+      display: none;
+    }
 
-.nav-file-tag {
-  background-color: var(--background-nav);
-}
+    .nav-file-tag {
+      background-color: var(--background-nav);
+    }
 
-body.is-grabbing {
-  background-color: var(--background-secondary-alt);
-  color: var(--text-on-accent);
-  font-size: 0.875em;
-}
+    
 
-/* ======= ### Search ==============*/
 
-.workspace-leaf-content[data-type="search"] .search-result-file-matches {
-  color: var(--text-nav);
-  font-size: 0.8rem;
-}
+    body.is-grabbing {
+      background-color: var(--background-secondary-alt);
+      color: var(--text-on-accent);
+      font-size: 0.875em;
+    }
 
-.tree-item-flair {
-  background-color: var(--interactive-accent);
-  color: var(--text-on-accent);
-}
+   
+    
+  /* ======= ### Search ==============*/
 
-.nav-action-button.is-active {
-  background-color: var(--background-nav);
-  color: var(--text-on-accent);
-}
+    .workspace-leaf-content[data-type='search'] .search-result-file-matches {
+      color: var(--text-nav);
+      font-size: 0.8rem;
+    }
 
-.search-input-container input {
-  font-size: 0.8rem;
-  color: var(--text-normal-original);
-}
+    .tree-item-flair {
+      background-color: var(--interactive-accent);
+      color: var(--text-on-accent);
+    }
 
-/* ======= ### Outline ==============*/
+    .nav-action-button.is-active {
+      background-color: var(--background-nav);
+      color: var(--text-on-accent);
+    }
 
-.tree-item-inner {
-  font-size: 0.8rem;
-}
+    .search-input-container input {
+      font-size: 0.8rem;
+      color: var(--text-normal-original);
+    }
 
-/* ======= ### Tag Pane ==============*/
+  /* ======= ### Outline ==============*/
 
-/* ======= ### Quick Switcher ==============*/
+    .tree-item-inner {
+      font-size: 0.8rem;
+    }
 
-.suggestion-item {
-  color: var(--text-faint);
-  font-size: 0.875rem;
-}
+  /* ======= ### Tag Pane ==============*/
 
-.nav-file-title.is-being-dragged,
-.nav-file-title.is-active,
-div.collapsible-item-self.tag-pane-tag.pane-list-item.is-clickable:hover,
-div.tag-pane-tag.pane-clickable-item.pane-list-item:hover,
-div.collapsible-item-self.is-clickable:hover,
-div.tree-item-self.tag-pane-tag.is-clickable:hover,
-div.tree-item-self.is-clickable:hover,
-.suggestion-item.is-selected,
-div.suggestion-note.is-selected,
-body:not(.is-grabbing) .nav-file-title.is-active:hover {
-  background-color: var(--background-nav-selected);
-  color: var(--text-nav-selected);
-}
 
-/* ======= ### Command Palette ==============*/
 
-/* ======= ### Other panes ==============*/
+  /* ======= ### Quick Switcher ==============*/
 
-div.menu {
-  color: var(--text-nav-selected);
-}
+    .suggestion-item {
+      color:var(--text-faint);
+      font-size: 0.875rem;
+    }
 
-div.sidebar-toggle-button {
-  background-color: var(--background-nav);
-  color: var(--text-nav);
-}
+    .nav-file-title.is-being-dragged,
+    .nav-file-title.is-active,
+    div.collapsible-item-self.tag-pane-tag.pane-list-item.is-clickable:hover,
+    div.tag-pane-tag.pane-clickable-item.pane-list-item:hover,
+    div.collapsible-item-self.is-clickable:hover,
+    div.tree-item-self.tag-pane-tag.is-clickable:hover,
+    div.tree-item-self.is-clickable:hover,
+    .suggestion-item.is-selected,
+    div.suggestion-note.is-selected,
+    body:not(.is-grabbing) .nav-file-title.is-active:hover {
+      background-color:var(--background-nav-selected);
+      color:var(--text-nav-selected);
+    }
 
-div.titlebar-button {
-  background-color: var(--background-nav);
-  color: var(--text-nav);
-}
+  /* ======= ### Command Palette ==============*/
 
-textarea,
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
-  color: var(--text-normal-original);
-}
-/* ======= ### Note name ==============*/
 
-.workspace-leaf.mod-active .view-header-title {
-  color: var(--text-normal-original);
-  font-size: 0.95rem;
-}
 
-/* Font adjustments for pane headers */
-.view-header-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-}
+  /* ======= ### Other panes ==============*/
 
-.workspace-leaf.mod-active .view-header {
-  background-color: var(--background-primary-alt);
-  border-bottom: 2px solid var(--interactive-accent);
-}
+    div.menu {
+        color:var(--text-nav-selected);
+    }
 
-/* ======= ## System menu  ==============*/
+    div.sidebar-toggle-button {
+      background-color:var(--background-nav);
+      color:var(--text-nav);
+    }
 
-.vertical-tab-header {
-  background-color: var(--background-nav);
-}
+    div.titlebar-button {
+      background-color:var(--background-nav);
+      color:var(--text-nav);
+    }
 
-.horizontal-tab-nav-item,
-.vertical-tab-nav-item {
-  background-color: var(--background-nav);
-  color: var(--text-muted);
-  padding: 10px 6px 10px 24px;
-  cursor: default;
-  font-size: 16px;
-}
+    textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'] {
+      color: var(--text-normal-original);
+    }
+  /* ======= ### Note name ==============*/
 
-.setting-item-name,
-.modal-title {
-  color: var(--text-muted);
-}
+    .workspace-leaf.mod-active .view-header-title {
+      color: var(--text-normal-original);
+      font-size: 0.95rem;
+    }
 
-.modal {
-  background-color: var(--background-secondary);
-  border: 1px solid var(--background-modifier-box-shadow);
-}
+    /* Font adjustments for pane headers */
+    .view-header-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
 
-.community-plugin-search,
-.community-plugin-search-results {
-  background-color: var(--background-secondary);
-}
+    .workspace-leaf.mod-active .view-header {
+      background-color: var(--background-primary-alt);
+      border-bottom: 2px solid var(--interactive-accent);
+  }
 
-.modal button:not(.mod-cta):not(.mod-warning),
-.modal.mod-settings button:not(.mod-cta):not(.mod-warning),
-.setting-hotkey.mod-empty {
-  background-color: var(--background-modifier-box-shadow);
-  color: var(--text-muted);
-}
+  /* ======= ## System menu  ==============*/
 
-.setting-hotkey {
-  background-color: var(--graph-attach);
-  color: var(--text-normal-original);
-}
+    .vertical-tab-header {
+      background-color: var(--background-nav);
+    }
 
-.community-plugin-item {
-  background-color: var(--background-secondary);
-  color: var(--text-muted);
-}
+    .horizontal-tab-nav-item, .vertical-tab-nav-item {
+      background-color: var(--background-nav);
+      color: var(--text-muted);
+      padding: 10px 6px 10px 24px;
+      cursor: default;
+      font-size: 16px;
+    }
 
-.community-plugin-name {
-  font-weight: bold;
-}
+    .setting-item-name, .modal-title {
+      color: var(--text-muted);
+    }
 
-.community-plugin-info,
-.community-plugin-readme {
-  color: var(--text-muted);
-}
+    .modal {
+      background-color: var(--background-secondary);
+      border: 1px solid var(--background-modifier-box-shadow);
+    }
 
-div.community-modal-info {
-  background-color: var(--background-primary-alt);
-}
+    .community-plugin-search, .community-plugin-search-results {
+      background-color: var(--background-secondary);
+    }
 
-div.community-modal-readme {
-  color: var(--text-normal-original);
-}
+    .modal button:not(.mod-cta):not(.mod-warning), .modal.mod-settings button:not(.mod-cta):not(.mod-warning), .setting-hotkey.mod-empty {
+      background-color: var(--background-modifier-box-shadow);
+      color: var(--text-muted);
+    }
 
-.vertical-tab-content {
-  background-color: var(--background-secondary);
-  color: var(--text-muted);
-}
+    .setting-hotkey {
+      background-color: var(--graph-attach);
+      color: var(--text-normal-original);
+    }
 
-.setting-item-control select {
-  color: var(--text-normal-original);
-}
+    .community-plugin-item {
+      background-color: var(--background-secondary);
+      color: var(--text-muted);
+    }
 
-.community-theme {
-  background-color: var(--background-primary-alt);
-  color: var(--text-muted);
-}
+    .community-plugin-name {
+      font-weight: bold;
+    }
+
+    .community-plugin-info, .community-plugin-readme {
+      color: var(--text-muted);
+    }
+
+    div.community-modal-info {
+      background-color: var(--background-primary-alt);
+    }
+
+    div.community-modal-readme {
+      color: var(--text-normal-original);
+    }
+
+    .vertical-tab-content {
+      background-color: var(--background-secondary);
+      color: var(--text-muted);
+    }
+
+    .setting-item-control select {
+      color: var(--text-normal-original);
+    }
+
+    .community-theme {
+      background-color: var(--background-primary-alt);
+      color: var(--text-muted);
+    }
 
 /* ======= ## Common Plugins  ==============*/
 
@@ -976,5 +989,6 @@ div.community-modal-readme {
 }
 
 foreignObject {
-  color: var(--text-on-accent);
+	color: var(--text-on-accent);
 }
+

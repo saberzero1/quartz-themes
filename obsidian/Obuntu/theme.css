@@ -101,6 +101,7 @@ body {
   color: var(--text-accent);
 }
 
+
 /* change heading size in edit mode */
 /* for better looking after enable Clutter free edit mode */
 .cm-header-1 {
@@ -244,7 +245,7 @@ input[type="checkbox"]:checked {
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23ffffff'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>");
+  background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
 }
 
 .markdown-preview-view .task-list-item-checkbox {
@@ -1258,13 +1259,7 @@ tbody {
 /*======== optionnal mermaid style below ========*/
 
 .label {
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial,
-    Fira Code,
-    consolas,
+  font-family: Segoe UI, "trebuchet ms", verdana, arial, Fira Code, consolas,
     monospace !important;
   color: var(--text-normal) !important;
 }
@@ -1329,11 +1324,7 @@ div.mermaidTooltip {
   text-align: center !important;
   max-width: 200px !important;
   padding: 2px !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
   font-size: 10px !important;
   background: var(--background-secondary) !important;
   border: 1px solid var(--text-faint) !important;
@@ -1445,14 +1436,15 @@ text.actor > tspan {
   stroke: var(--text-accent) !important;
 }
 
+/* fix mermaid node label color */
+.mermaid span.nodeLabel {
+  color: inherit !important;
+}
+
 /** Section styling */
 
 .mermaid-main-font {
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .section {
@@ -1494,11 +1486,7 @@ text.actor > tspan {
   text-anchor: start !important;
   font-size: 9px !important;
   line-height: 14px !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 /* Grid and axis */
@@ -1510,11 +1498,7 @@ text.actor > tspan {
 }
 
 .grid .tick text {
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .grid path {
@@ -1539,11 +1523,7 @@ text.actor > tspan {
 
 .taskText {
   text-anchor: middle !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .taskText:not([font-size]) {
@@ -1554,11 +1534,7 @@ text.actor > tspan {
   fill: var(--text-normal) !important;
   text-anchor: start !important;
   font-size: 9px !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .taskTextOutsideLeft {
@@ -1710,23 +1686,13 @@ text.actor > tspan {
   text-anchor: middle !important;
   font-size: 16px !important;
   fill: var(--text-normal) !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 g.classGroup text {
   fill: var(--text-accent) !important;
   stroke: none !important;
-  font-family:
-    consolas,
-    monospace,
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: consolas, monospace, Segoe UI, "trebuchet ms", verdana, arial !important;
   font-size: 8px !important;
 }
 
@@ -1823,41 +1789,25 @@ g.classGroup line {
 .branch-label {
   fill: var(--text-muted) !important;
   color: var(--text-muted) !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .pieTitleText {
   text-anchor: middle !important;
   font-size: 18px !important;
   fill: var(--text-normal) !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .slice {
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 g.stateGroup text {
   fill: var(--text-accent) !important;
   stroke: none !important;
   font-size: 10px !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 g.stateGroup text {
@@ -1919,11 +1869,7 @@ g.stateGroup line {
   fill: black !important;
   font-size: 10px !important;
   font-weight: bold !important;
-  font-family:
-    Segoe UI,
-    "trebuchet ms",
-    verdana,
-    arial !important;
+  font-family: Segoe UI, "trebuchet ms", verdana, arial !important;
 }
 
 .node circle.state-start {

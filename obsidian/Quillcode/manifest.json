@@ -1,8 +1,7 @@
 {
-  "name": "Quillcode",
-  "version": "1.0.3",
-  "minAppVersion": "1.5.0",
-  "author": "Aayush Patel",
-  "authorUrl": "https://github.com/theaayushpatel",
-  "license": { "name": "GNU General Public License v3.0", "spdx_id": "GPL-3.0" }
+	"name": "Quillcode",
+	"version": "1.3.0",
+	"minAppVersion": "1.5.0",
+	"author": "Aayush Patel",
+	"authorUrl": "github.com/theaayushpatel"
 }
