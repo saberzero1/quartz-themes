@@ -313,7 +313,7 @@ body.theme-light {
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme:
-    -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
+    system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
     Apple Color Emoji, Segoe UI Emoji !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
@@ -1174,7 +1174,7 @@ body.theme-dark {
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
-    -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
+    system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
     Apple Color Emoji, Segoe UI Emoji;
   --font-thin: 100;
   --font-ui-large: 20px;

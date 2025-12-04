@@ -2305,8 +2305,8 @@ body .site-body-left-column input.search-bar {
   border-end-end-radius: 5px;
   color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 body .search-results {
   background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
@@ -2862,8 +2862,8 @@ body .nav-view-outer .tree-item-self a {
   color: light-dark(rgba(55, 53, 47, 0.45), rgba(255, 255, 255, 0.45));
   cursor: default;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   text-decoration: none solid rgba(255, 255, 255, 0.45);
 }
@@ -2899,8 +2899,8 @@ body
   color: light-dark(rgba(55, 53, 47, 0.45), rgba(255, 255, 255, 0.45));
   cursor: default;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   text-decoration: none solid rgba(255, 255, 255, 0.45);
 }
@@ -2914,8 +2914,8 @@ body
   color: light-dark(rgba(55, 53, 47, 0.45), rgba(255, 255, 255, 0.45));
   cursor: default;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   text-decoration: none solid rgba(255, 255, 255, 0.45);
 }
