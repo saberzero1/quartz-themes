@@ -512,8 +512,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: hsl(23025%83%) !important;
   --graph-node: hsl(23025%35%) !important;
@@ -1014,6 +1014,7 @@ body.theme-light {
   --inline-title-font: "Optima", "Recursive S" !important;
   --bold-color: #dc388f !important;
   --italic-color: #dc388f !important;
+  --inline-code-color: #c67e3f !important;
   --radius-xs: 2px !important;
   --text-gray: hsl(23025%44%) !important;
   --font-heading-theme: "Optima", "Recursive S" !important;
@@ -1028,7 +1029,6 @@ body.theme-light {
   --bg5: hsl(23025%88%) !important;
   --embed-border: 4px double hsl(23025%67%) !important;
   --vim-cursor-color: #e6e6e6 !important;
-  --inline-code-color: #c67e3f !important;
   --inactive-pane-opacity: 75% !important;
   --a-row: #00000008 !important;
   --active-line-color: #1396a0 !important;
@@ -1367,8 +1367,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: 36px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: hsl(23015%25%);
   --graph-node: hsl(23015%73%);
@@ -1867,6 +1867,7 @@ body.theme-dark {
   --inline-title-font: "Optima", "Recursive S";
   --bold-color: #ed5aa8;
   --italic-color: #ed5aa8;
+  --inline-code-color: #da975d;
   --radius-xs: 2px;
   --text-gray: hsl(23015%60%);
   --font-heading-theme: "Optima", "Recursive S";
@@ -1881,7 +1882,6 @@ body.theme-dark {
   --bg5: hsl(23015%22%);
   --embed-border: 4px double hsl(23015%40%);
   --vim-cursor-color: #b3b3b3;
-  --inline-code-color: #da975d;
   --inactive-pane-opacity: 75%;
   --a-row: #0003;
   --active-line-color: #18c1cd;
@@ -1928,7 +1928,7 @@ body .markdown-rendered a.external-link {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1956,7 +1956,7 @@ body .markdown-rendered a.internal-link {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1984,7 +1984,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2012,7 +2012,7 @@ body .markdown-rendered p {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2040,7 +2040,7 @@ body strong {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2068,7 +2068,7 @@ body b {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2096,7 +2096,7 @@ body em {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2124,7 +2124,7 @@ body i {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2155,7 +2155,7 @@ body .markdown-rendered mark {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2183,7 +2183,7 @@ body del {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2256,7 +2256,7 @@ body div.multi-select-pill {
     "Recursive S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2427,7 +2427,7 @@ body .markdown-rendered blockquote {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2463,7 +2463,7 @@ body .site-body-left-column input.search-bar {
     "Recursive S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2498,7 +2498,7 @@ body .search-results > * {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2606,8 +2606,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border: 1.5px solid
-    light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
+  border: 1px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2626,7 +2625,7 @@ body .callout[data-callout="note"] {
 body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
   border: 0px light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-  border-bottom: 1.5px solid
+  border-bottom: 1px solid
     light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2661,7 +2660,7 @@ body .callout[data-callout="abstract"] {
     rgba(83, 223, 221, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
+  border: 1px solid
     light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2687,8 +2686,7 @@ body .callout[data-callout="info"] {
     rgba(2, 122, 255, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
-    light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
+  border: 1px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2713,8 +2711,7 @@ body .callout[data-callout="todo"] {
     rgba(2, 122, 255, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
-    light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
+  border: 1px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2739,7 +2736,7 @@ body .callout[data-callout="tip"] {
     rgba(83, 223, 221, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
+  border: 1px solid
     light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2765,8 +2762,7 @@ body .callout[data-callout="success"] {
     rgba(68, 207, 110, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
-    light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
+  border: 1px solid light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2791,7 +2787,7 @@ body .callout[data-callout="question"] {
     rgba(233, 151, 63, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
+  border: 1px solid
     light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2817,7 +2813,7 @@ body .callout[data-callout="warning"] {
     rgba(233, 151, 63, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
+  border: 1px solid
     light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2843,8 +2839,7 @@ body .callout[data-callout="danger"] {
     rgba(251, 70, 76, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
-    light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+  border: 1px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2869,8 +2864,7 @@ body .callout[data-callout="failure"] {
     rgba(251, 70, 76, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
-    light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+  border: 1px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2895,8 +2889,7 @@ body .callout[data-callout="bug"] {
     rgba(251, 70, 76, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
-    light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+  border: 1px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2921,7 +2914,7 @@ body .callout[data-callout="example"] {
     rgba(168, 130, 255, 0.11)
   );
   mix-blend-mode: lighten;
-  border: 1.5px solid
+  border: 1px solid
     light-dark(rgba(120, 82, 238, 0.25), rgba(168, 130, 255, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2944,7 +2937,7 @@ body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(158, 158, 158, 0.11);
   mix-blend-mode: lighten;
-  border: 1.5px solid rgba(158, 158, 158, 0.25);
+  border: 1px solid rgba(158, 158, 158, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2971,7 +2964,7 @@ body .math-block > mjx-container.MathJax {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2986,7 +2979,7 @@ body div.math-block > mjx-container.MathJax {
     "iA Writer Quattro S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3006,7 +2999,7 @@ body .nav-view-outer .tree-item-self a {
     "Recursive S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3053,7 +3046,7 @@ body
     "Recursive S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3078,7 +3071,7 @@ body
     "Recursive S",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,

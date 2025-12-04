@@ -613,8 +613,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 2px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 80px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #ebe5e5 !important;
   --graph-node: #6e6966 !important;
@@ -1458,8 +1458,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 2px;
   --footnote-size: 0.875em;
-  --frame-left-space: 80px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: #282828;
   --graph-node: #959595;
@@ -2012,7 +2012,7 @@ body .markdown-rendered a.external-link {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2040,7 +2040,7 @@ body .markdown-rendered a.internal-link {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2068,7 +2068,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2096,7 +2096,7 @@ body .markdown-rendered p {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2124,7 +2124,7 @@ body strong {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2152,7 +2152,7 @@ body b {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2180,7 +2180,7 @@ body em {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2208,7 +2208,7 @@ body i {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2236,7 +2236,7 @@ body .markdown-rendered mark {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2264,7 +2264,7 @@ body del {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2333,7 +2333,7 @@ body div.multi-select-pill {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2415,7 +2415,7 @@ body .markdown-rendered code {
 }
 body .markdown-rendered pre > code {
   background-color: light-dark(rgb(250, 250, 250), rgb(23, 24, 24));
-  border: 0.5px solid light-dark(rgb(223, 215, 215), rgb(47, 47, 47));
+  border: 1px solid light-dark(rgb(223, 215, 215), rgb(47, 47, 47));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2501,7 +2501,7 @@ body .markdown-rendered blockquote {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2536,7 +2536,7 @@ body .site-body-left-column input.search-bar {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2571,7 +2571,7 @@ body .search-results > * {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -2628,7 +2628,7 @@ body .published-container .markdown-rendered h1 {
   font-family:
     SFProText-Ultralight,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     sans-serif;
   text-shadow: none;
 }
@@ -2637,7 +2637,7 @@ body .published-container .markdown-rendered h2 {
   font-family:
     SFPro-Regular,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     sans-serif;
   text-shadow: none;
 }
@@ -2646,7 +2646,7 @@ body .published-container .markdown-rendered h3 {
   font-family:
     SFPro-Black,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     sans-serif;
   text-shadow: none;
 }
@@ -2655,7 +2655,7 @@ body .published-container .markdown-rendered h4 {
   font-family:
     SFPro-Bold,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     sans-serif;
   text-shadow: none;
 }
@@ -2664,7 +2664,7 @@ body .published-container .markdown-rendered h5 {
   font-family:
     SFPro-Regular,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     sans-serif;
   text-shadow: none;
 }
@@ -2673,7 +2673,7 @@ body .published-container .markdown-rendered h6 {
   font-family:
     SFPro-Regular,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     sans-serif;
   text-shadow: none;
 }
@@ -2700,7 +2700,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border: 0.5px solid rgba(8, 132, 255, 0.5);
+  border: 1px solid rgba(8, 132, 255, 0.5);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -2746,7 +2746,7 @@ body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(250, 250, 250), rgb(40, 40, 40));
   mix-blend-mode: normal;
-  border: 0.5px solid rgba(120, 120, 120, 0.5);
+  border: 1px solid rgba(120, 120, 120, 0.5);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -2768,7 +2768,7 @@ body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(224, 240, 255), rgb(28, 40, 52));
   mix-blend-mode: normal;
-  border: 0.5px solid rgba(8, 132, 255, 0.5);
+  border: 1px solid rgba(8, 132, 255, 0.5);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -2790,7 +2790,7 @@ body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(255, 248, 237), rgb(52, 43, 29));
   mix-blend-mode: normal;
-  border: 0.5px solid rgba(249, 158, 21, 0.5);
+  border: 1px solid rgba(249, 158, 21, 0.5);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -2812,7 +2812,7 @@ body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(249, 239, 254), rgb(46, 37, 52));
   mix-blend-mode: normal;
-  border: 0.5px solid rgba(193, 97, 253, 0.5);
+  border: 1px solid rgba(193, 97, 253, 0.5);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -2834,7 +2834,7 @@ body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(235, 255, 232), rgb(37, 47, 36));
   mix-blend-mode: normal;
-  border: 0.5px solid rgba(101, 199, 86, 0.5);
+  border: 1px solid rgba(101, 199, 86, 0.5);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -2856,7 +2856,7 @@ body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(224, 240, 255), rgb(28, 40, 52));
   mix-blend-mode: normal;
-  border: 0.5px solid rgba(8, 132, 255, 0.5);
+  border: 1px solid rgba(8, 132, 255, 0.5);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -2922,7 +2922,7 @@ body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(255, 233, 234), rgb(50, 32, 34));
   mix-blend-mode: normal;
-  border: 0.5px solid rgba(236, 54, 67, 0.5);
+  border: 1px solid rgba(236, 54, 67, 0.5);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -2966,7 +2966,7 @@ body .callout[data-callout="example"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(249, 239, 254), rgb(46, 37, 52));
   mix-blend-mode: normal;
-  border: 0.5px solid rgba(193, 97, 253, 0.5);
+  border: 1px solid rgba(193, 97, 253, 0.5);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -3016,7 +3016,7 @@ body .math-block > mjx-container.MathJax {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -3031,7 +3031,7 @@ body div.math-block > mjx-container.MathJax {
     SFPro-Regular,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -3050,7 +3050,7 @@ body .nav-view-outer .tree-item-self a {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -3093,7 +3093,7 @@ body
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,
@@ -3117,7 +3117,7 @@ body
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
     Inter,

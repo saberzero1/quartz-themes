@@ -307,8 +307,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: hsl(23025%83%) !important;
   --graph-node: hsl(23025%35%) !important;
@@ -809,6 +809,7 @@
   --inline-title-font: "Optima", "Recursive S" !important;
   --bold-color: #dc388f !important;
   --italic-color: #dc388f !important;
+  --inline-code-color: #c67e3f !important;
   --radius-xs: 2px !important;
   --text-gray: hsl(23025%44%) !important;
   --font-heading-theme: "Optima", "Recursive S" !important;
@@ -823,7 +824,6 @@
   --bg5: hsl(23025%88%) !important;
   --embed-border: 4px double hsl(23025%67%) !important;
   --vim-cursor-color: #e6e6e6 !important;
-  --inline-code-color: #c67e3f !important;
   --inactive-pane-opacity: 75% !important;
   --a-row: #00000008 !important;
   --active-line-color: #1396a0 !important;
@@ -1163,8 +1163,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: hsl(23015%25%) !important;
   --graph-node: hsl(23015%73%) !important;
@@ -1663,6 +1663,7 @@
   --inline-title-font: "Optima", "Recursive S" !important;
   --bold-color: #ed5aa8 !important;
   --italic-color: #ed5aa8 !important;
+  --inline-code-color: #da975d !important;
   --radius-xs: 2px !important;
   --text-gray: hsl(23015%60%) !important;
   --font-heading-theme: "Optima", "Recursive S" !important;
@@ -1677,7 +1678,6 @@
   --bg5: hsl(23015%22%) !important;
   --embed-border: 4px double hsl(23015%40%) !important;
   --vim-cursor-color: #b3b3b3 !important;
-  --inline-code-color: #da975d !important;
   --inactive-pane-opacity: 75% !important;
   --a-row: #0003 !important;
   --active-line-color: #18c1cd !important;
@@ -1996,7 +1996,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2026,7 +2026,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2055,7 +2055,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2084,7 +2084,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2114,7 +2114,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2144,7 +2144,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2174,7 +2174,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2204,7 +2204,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2236,7 +2236,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2265,7 +2265,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2379,7 +2379,7 @@ body {
       "Recursive S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2560,7 +2560,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2598,7 +2598,7 @@ body {
       "Recursive S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2654,7 +2654,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2850,7 +2850,7 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2867,7 +2867,7 @@ body {
   .callout .callout-title {
     gap: inherit;
     border: 0px light-dark(rgb(67, 74, 112), rgb(176, 179, 196));
-    border-bottom: 1.5px solid
+    border-bottom: 1px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2902,7 +2902,7 @@ body {
       rgba(2, 122, 255, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2926,7 +2926,7 @@ body {
       rgba(83, 223, 221, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2950,7 +2950,7 @@ body {
       rgba(2, 122, 255, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2974,7 +2974,7 @@ body {
       rgba(2, 122, 255, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2998,7 +2998,7 @@ body {
       rgba(83, 223, 221, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3022,7 +3022,7 @@ body {
       rgba(68, 207, 110, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3046,7 +3046,7 @@ body {
       rgba(233, 151, 63, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3070,7 +3070,7 @@ body {
       rgba(233, 151, 63, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3094,7 +3094,7 @@ body {
       rgba(251, 70, 76, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3118,7 +3118,7 @@ body {
       rgba(251, 70, 76, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3142,7 +3142,7 @@ body {
       rgba(251, 70, 76, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3166,7 +3166,7 @@ body {
       rgba(168, 130, 255, 0.11)
     );
     mix-blend-mode: lighten;
-    border: 1.5px solid
+    border: 1px solid
       light-dark(rgba(120, 82, 238, 0.25), rgba(168, 130, 255, 0.25));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3187,7 +3187,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(158, 158, 158, 0.11);
     mix-blend-mode: lighten;
-    border: 1.5px solid rgba(158, 158, 158, 0.25);
+    border: 1px solid rgba(158, 158, 158, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3212,7 +3212,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3228,7 +3228,7 @@ body {
       "iA Writer Quattro S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3250,7 +3250,7 @@ body {
       "Recursive S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3296,7 +3296,7 @@ body {
       "Recursive S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -3316,7 +3316,7 @@ body {
       "Recursive S",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,

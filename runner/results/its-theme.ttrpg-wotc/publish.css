@@ -285,8 +285,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 0 !important;
   --footnote-size: 0.9em !important;
-  --frame-left-space: 40px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #c20a0a35 !important;
   --graph-node: #412f2f !important;
@@ -848,6 +848,7 @@ body.theme-light {
   --kanban-lane-background: #f3e6d2 !important;
   --kanban-lane-border: 3px solid #fbb4577e !important;
   --bg: #f6e3cd !important;
+  --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #000000 !important;
   --accent2-lite: #df6262 !important;
@@ -881,7 +882,6 @@ body.theme-light {
   --deep-dark-accent: #2e1010 !important;
   --drop-shadow: #fae0be60 !important;
   --embed-bg: #faf2e9 !important;
-  --embed-border: 2px solid transparent !important;
   --embed-border-bottom-color: transparent !important;
   --embed-border-bottom-color-hover: #fbb4577e !important;
   --embed-border-color: transparent !important;
@@ -1586,8 +1586,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 0;
   --footnote-size: 0.9em;
-  --frame-left-space: 40px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: #7a141466;
   --graph-node: #bccad8;
@@ -2146,6 +2146,7 @@ body.theme-dark {
   --kanban-lane-background: #232831;
   --kanban-lane-border: 3px solid #0000008c;
   --bg: #252c36;
+  --embed-border: 2px solid transparent;
   --accent-text: #dcddde;
   --accent2: #42536e;
   --accent2-lite: #61afef;
@@ -2179,7 +2180,6 @@ body.theme-dark {
   --deep-dark-accent: #3f1010;
   --drop-shadow: #06080c60;
   --embed-bg: #0d1014;
-  --embed-border: 2px solid transparent;
   --embed-border-bottom-color: transparent;
   --embed-border-bottom-color-hover: #0000008c;
   --embed-border-color: transparent;

@@ -451,8 +451,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
   --graph-node: #8d9c8d !important;
@@ -1161,7 +1161,7 @@ body div.multi-select-pill {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1351,7 +1351,7 @@ body .site-body-left-column input.search-bar {
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
   color: rgb(111, 110, 106);
-  font-family: Times;
+  font-family: "Times New Roman";
 }
 body .search-results {
   background-color: rgb(252, 254, 243);
@@ -1793,7 +1793,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
 body .nav-view-outer .tree-item-self a {
   color: rgb(98, 102, 102);
   cursor: default;
-  font-family: Times;
+  font-family: "Times New Roman";
   font-weight: 400;
   text-decoration: none solid rgb(98, 102, 102);
 }
@@ -1825,7 +1825,7 @@ body
   > .tree-item-self {
   color: rgb(98, 102, 102);
   cursor: default;
-  font-family: Times;
+  font-family: "Times New Roman";
   font-weight: 400;
   text-decoration: none solid rgb(98, 102, 102);
 }
@@ -1838,7 +1838,7 @@ body
   > .tree-item-self {
   color: rgb(98, 102, 102);
   cursor: default;
-  font-family: Times;
+  font-family: "Times New Roman";
   font-weight: 400;
   text-decoration: none solid rgb(98, 102, 102);
 }

@@ -433,8 +433,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(172, 176, 190) !important;
   --graph-node: rgb(108, 111, 133) !important;
@@ -1315,8 +1315,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: 36px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: rgb(91, 96, 120);
   --graph-node: rgb(165, 173, 203);
@@ -1895,7 +1895,7 @@ body .markdown-rendered a.external-link {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1930,7 +1930,7 @@ body .markdown-rendered a.internal-link {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1965,7 +1965,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2000,7 +2000,7 @@ body .markdown-rendered p {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2035,7 +2035,7 @@ body strong {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2070,7 +2070,7 @@ body b {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2105,7 +2105,7 @@ body em {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2140,7 +2140,7 @@ body i {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2175,7 +2175,7 @@ body .markdown-rendered mark {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2210,7 +2210,7 @@ body del {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2287,7 +2287,7 @@ body div.multi-select-pill {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2464,7 +2464,7 @@ body .markdown-rendered blockquote {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2507,7 +2507,7 @@ body .site-body-left-column input.search-bar {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2549,7 +2549,7 @@ body .search-results > * {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2614,7 +2614,7 @@ body .published-container .markdown-rendered h1 {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2638,7 +2638,7 @@ body .published-container .markdown-rendered h2 {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2662,7 +2662,7 @@ body .published-container .markdown-rendered h3 {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2686,7 +2686,7 @@ body .published-container .markdown-rendered h4 {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2710,7 +2710,7 @@ body .published-container .markdown-rendered h5 {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2734,7 +2734,7 @@ body .published-container .markdown-rendered h6 {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2768,7 +2768,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border: 0.5px solid
+  border: 1px solid
     light-dark(rgba(30, 102, 245, 0.6), rgba(138, 173, 244, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2821,7 +2821,7 @@ body .callout[data-callout="abstract"] {
     rgba(125, 196, 228, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
+  border: 1px solid
     light-dark(rgba(32, 159, 181, 0.6), rgba(125, 196, 228, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2847,7 +2847,7 @@ body .callout[data-callout="info"] {
     rgba(138, 173, 244, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
+  border: 1px solid
     light-dark(rgba(30, 102, 245, 0.6), rgba(138, 173, 244, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2873,7 +2873,7 @@ body .callout[data-callout="todo"] {
     rgba(138, 173, 244, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
+  border: 1px solid
     light-dark(rgba(30, 102, 245, 0.6), rgba(138, 173, 244, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2899,7 +2899,7 @@ body .callout[data-callout="tip"] {
     rgba(125, 196, 228, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
+  border: 1px solid
     light-dark(rgba(32, 159, 181, 0.6), rgba(125, 196, 228, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2925,8 +2925,7 @@ body .callout[data-callout="success"] {
     rgba(166, 218, 149, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
-    light-dark(rgba(64, 160, 43, 0.6), rgba(166, 218, 149, 0.6));
+  border: 1px solid light-dark(rgba(64, 160, 43, 0.6), rgba(166, 218, 149, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2951,7 +2950,7 @@ body .callout[data-callout="question"] {
     rgba(238, 212, 159, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
+  border: 1px solid
     light-dark(rgba(223, 142, 29, 0.6), rgba(238, 212, 159, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2977,7 +2976,7 @@ body .callout[data-callout="warning"] {
     rgba(245, 169, 127, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
+  border: 1px solid
     light-dark(rgba(254, 100, 11, 0.6), rgba(245, 169, 127, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3003,8 +3002,7 @@ body .callout[data-callout="danger"] {
     rgba(237, 135, 150, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
-    light-dark(rgba(210, 15, 57, 0.6), rgba(237, 135, 150, 0.6));
+  border: 1px solid light-dark(rgba(210, 15, 57, 0.6), rgba(237, 135, 150, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3029,8 +3027,7 @@ body .callout[data-callout="failure"] {
     rgba(237, 135, 150, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
-    light-dark(rgba(210, 15, 57, 0.6), rgba(237, 135, 150, 0.6));
+  border: 1px solid light-dark(rgba(210, 15, 57, 0.6), rgba(237, 135, 150, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3055,8 +3052,7 @@ body .callout[data-callout="bug"] {
     rgba(237, 135, 150, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
-    light-dark(rgba(210, 15, 57, 0.6), rgba(237, 135, 150, 0.6));
+  border: 1px solid light-dark(rgba(210, 15, 57, 0.6), rgba(237, 135, 150, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3081,7 +3077,7 @@ body .callout[data-callout="example"] {
     rgba(198, 160, 246, 0.1)
   );
   mix-blend-mode: lighten;
-  border: 0.5px solid
+  border: 1px solid
     light-dark(rgba(136, 57, 239, 0.6), rgba(198, 160, 246, 0.6));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3104,7 +3100,7 @@ body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(158, 158, 158, 0.1);
   mix-blend-mode: lighten;
-  border: 0.5px solid rgba(158, 158, 158, 0.6);
+  border: 1px solid rgba(158, 158, 158, 0.6);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3138,7 +3134,7 @@ body .math-block > mjx-container.MathJax {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3160,7 +3156,7 @@ body div.math-block > mjx-container.MathJax {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3187,7 +3183,7 @@ body .nav-view-outer .tree-item-self a {
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3239,7 +3235,7 @@ body
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3271,7 +3267,7 @@ body
     sans-serif,
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,

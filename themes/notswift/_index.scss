@@ -303,8 +303,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 2px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 80px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #ebe5e5 !important;
   --graph-node: #6e6966 !important;
@@ -1150,8 +1150,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 2px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 80px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #282828 !important;
   --graph-node: #959595 !important;
@@ -2070,11 +2070,11 @@ body {
   .page > div#quartz-body div.sidebar.right {
     background-color: light-dark(rgb(240, 232, 230), rgb(38, 38, 38));
     color: light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
-    border-left: 0.5px solid light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    border-left: 1px solid light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
   }
 
   .page > div#quartz-body div.sidebar.left {
-    border-right: 0.5px solid light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    border-right: 1px solid light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
   }
 
   a.external,
@@ -2087,7 +2087,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2117,7 +2117,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2146,7 +2146,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2175,7 +2175,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2205,7 +2205,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2235,7 +2235,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2265,7 +2265,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2295,7 +2295,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2324,7 +2324,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2353,7 +2353,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2463,7 +2463,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2554,7 +2554,7 @@ body {
   pre > code,
   pre:has(> code) {
     background-color: light-dark(rgb(250, 250, 250), rgb(23, 24, 24));
-    border: 0.5px solid light-dark(rgb(223, 215, 215), rgb(47, 47, 47));
+    border: 1px solid light-dark(rgb(223, 215, 215), rgb(47, 47, 47));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2642,7 +2642,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2679,7 +2679,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2710,7 +2710,7 @@ body {
   .search > .search-container > .search-space > input {
     background-color: light-dark(rgb(248, 242, 241), rgb(54, 54, 54));
     border: 0px light-dark(rgb(76, 73, 73), rgb(228, 228, 228));
-    border-bottom: 0.5px solid light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
+    border-bottom: 1px solid light-dark(rgb(216, 210, 210), rgb(0, 0, 0));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2731,7 +2731,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -2862,7 +2862,7 @@ body {
     font-family:
       SFProText-Ultralight,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       sans-serif;
     text-shadow: none;
   }
@@ -2872,7 +2872,7 @@ body {
     font-family:
       SFPro-Regular,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       sans-serif;
     text-shadow: none;
   }
@@ -2882,7 +2882,7 @@ body {
     font-family:
       SFPro-Black,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       sans-serif;
     text-shadow: none;
   }
@@ -2892,7 +2892,7 @@ body {
     font-family:
       SFPro-Bold,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       sans-serif;
     text-shadow: none;
   }
@@ -2902,7 +2902,7 @@ body {
     font-family:
       SFPro-Regular,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       sans-serif;
     text-shadow: none;
   }
@@ -2912,7 +2912,7 @@ body {
     font-family:
       SFPro-Regular,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       sans-serif;
     text-shadow: none;
   }
@@ -2923,7 +2923,7 @@ body {
     font-family:
       SFProText-Ultralight,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       sans-serif;
     text-shadow: none;
   }
@@ -2952,7 +2952,7 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border: 0.5px solid rgba(8, 132, 255, 0.5);
+    border: 1px solid rgba(8, 132, 255, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -2998,7 +2998,7 @@ body {
     --callout-color: inherit;
     background-color: light-dark(rgb(224, 240, 255), rgb(28, 40, 52));
     mix-blend-mode: normal;
-    border: 0.5px solid rgba(8, 132, 255, 0.5);
+    border: 1px solid rgba(8, 132, 255, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -3018,7 +3018,7 @@ body {
     --callout-color: inherit;
     background-color: light-dark(rgb(250, 250, 250), rgb(40, 40, 40));
     mix-blend-mode: normal;
-    border: 0.5px solid rgba(120, 120, 120, 0.5);
+    border: 1px solid rgba(120, 120, 120, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -3038,7 +3038,7 @@ body {
     --callout-color: inherit;
     background-color: light-dark(rgb(224, 240, 255), rgb(28, 40, 52));
     mix-blend-mode: normal;
-    border: 0.5px solid rgba(8, 132, 255, 0.5);
+    border: 1px solid rgba(8, 132, 255, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -3058,7 +3058,7 @@ body {
     --callout-color: inherit;
     background-color: light-dark(rgb(255, 248, 237), rgb(52, 43, 29));
     mix-blend-mode: normal;
-    border: 0.5px solid rgba(249, 158, 21, 0.5);
+    border: 1px solid rgba(249, 158, 21, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -3078,7 +3078,7 @@ body {
     --callout-color: inherit;
     background-color: light-dark(rgb(249, 239, 254), rgb(46, 37, 52));
     mix-blend-mode: normal;
-    border: 0.5px solid rgba(193, 97, 253, 0.5);
+    border: 1px solid rgba(193, 97, 253, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -3098,7 +3098,7 @@ body {
     --callout-color: inherit;
     background-color: light-dark(rgb(235, 255, 232), rgb(37, 47, 36));
     mix-blend-mode: normal;
-    border: 0.5px solid rgba(101, 199, 86, 0.5);
+    border: 1px solid rgba(101, 199, 86, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -3118,7 +3118,7 @@ body {
     --callout-color: inherit;
     background-color: light-dark(rgb(224, 240, 255), rgb(28, 40, 52));
     mix-blend-mode: normal;
-    border: 0.5px solid rgba(8, 132, 255, 0.5);
+    border: 1px solid rgba(8, 132, 255, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -3178,7 +3178,7 @@ body {
     --callout-color: inherit;
     background-color: light-dark(rgb(255, 233, 234), rgb(50, 32, 34));
     mix-blend-mode: normal;
-    border: 0.5px solid rgba(236, 54, 67, 0.5);
+    border: 1px solid rgba(236, 54, 67, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -3218,7 +3218,7 @@ body {
     --callout-color: inherit;
     background-color: light-dark(rgb(249, 239, 254), rgb(46, 37, 52));
     mix-blend-mode: normal;
-    border: 0.5px solid rgba(193, 97, 253, 0.5);
+    border: 1px solid rgba(193, 97, 253, 0.5);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -3264,7 +3264,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -3280,7 +3280,7 @@ body {
       SFPro-Regular,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -3301,7 +3301,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -3343,7 +3343,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,
@@ -3362,7 +3362,7 @@ body {
     font-family:
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
       Inter,

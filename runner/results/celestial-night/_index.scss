@@ -308,8 +308,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 20px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3b445d !important;
   --graph-node: #8890a6 !important;
@@ -808,11 +808,11 @@
     "Hatolie", "Bookerly", "Source Han Serif", "Noto Serif JP", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-sans: "Avenir Next" !important;
   --tag-weight: 300 !important;
   --font-headings: "Merienda" !important;
   --callout-title-color: white;
   --font-cursive: "Merienda" !important;
-  --font-sans: "Avenir Next" !important;
   --font-serif: "Bookerly" !important;
   --glow-color: white !important;
   --glow-effect-m:
@@ -1029,7 +1029,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1061,7 +1061,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1092,7 +1092,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1123,7 +1123,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1155,7 +1155,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1187,7 +1187,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1219,7 +1219,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1251,7 +1251,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1282,7 +1282,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1313,7 +1313,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1424,7 +1424,7 @@ body {
       "Avenir Next",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1606,7 +1606,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1644,7 +1644,7 @@ body {
       "Avenir Next",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1698,7 +1698,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -1882,7 +1882,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2233,7 +2233,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2251,7 +2251,7 @@ body {
       "Noto Serif JP",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2273,7 +2273,7 @@ body {
       "Avenir Next",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2316,7 +2316,7 @@ body {
       "Avenir Next",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -2336,7 +2336,7 @@ body {
       "Avenir Next",
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,

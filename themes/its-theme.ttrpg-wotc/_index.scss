@@ -284,8 +284,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 0 !important;
   --footnote-size: 0.9em !important;
-  --frame-left-space: 40px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #c20a0a35 !important;
   --graph-node: #412f2f !important;
@@ -847,6 +847,7 @@
   --kanban-lane-background: #f3e6d2 !important;
   --kanban-lane-border: 3px solid #fbb4577e !important;
   --bg: #f6e3cd !important;
+  --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #000000 !important;
   --accent2-lite: #df6262 !important;
@@ -880,7 +881,6 @@
   --deep-dark-accent: #2e1010 !important;
   --drop-shadow: #fae0be60 !important;
   --embed-bg: #faf2e9 !important;
-  --embed-border: 2px solid transparent !important;
   --embed-border-bottom-color: transparent !important;
   --embed-border-bottom-color-hover: #fbb4577e !important;
   --embed-border-color: transparent !important;
@@ -1586,8 +1586,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 0 !important;
   --footnote-size: 0.9em !important;
-  --frame-left-space: 40px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #7a141466 !important;
   --graph-node: #bccad8 !important;
@@ -2147,6 +2147,7 @@
   --kanban-lane-background: #232831 !important;
   --kanban-lane-border: 3px solid #0000008c !important;
   --bg: #252c36 !important;
+  --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #42536e !important;
   --accent2-lite: #61afef !important;
@@ -2180,7 +2181,6 @@
   --deep-dark-accent: #3f1010 !important;
   --drop-shadow: #06080c60 !important;
   --embed-bg: #0d1014 !important;
-  --embed-border: 2px solid transparent !important;
   --embed-border-bottom-color: transparent !important;
   --embed-border-bottom-color-hover: #0000008c !important;
   --embed-border-color: transparent !important;
