@@ -327,8 +327,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(228, 215, 195) !important;
   --graph-node: rgb(42, 144, 203) !important;
@@ -890,6 +890,7 @@
   ) !important;
   --editor-border-color: rgb(228, 215, 195) !important;
   --color-gray-rgb: 182, 175, 166 !important;
+  --inline-code-color: rgb(217, 116, 109) !important;
   --embed-background: color-mix(
     in srgb,
     rgb(242, 236, 227) 50%,
@@ -956,12 +957,12 @@
     rgb(215, 151, 25) 22%,
     transparent
   ) !important;
-  --inline-code-color: rgb(217, 116, 109) !important;
   --tab-active-shadow:
     inset 0px 1px 0px 0px rgb(255, 255, 255),
     inset 0px -2px 0px 1px rgba(0, 0, 0, 0.09),
     0px 1px 2px -0.1px rgba(0, 0, 0, 0.15) !important;
   --vault-name-color-hover: rgb(101, 81, 52) !important;
+  --search-clear-button-color-hover: rgb(223, 69, 58) !important;
   --file-header-border-color: rgb(228, 215, 195) !important;
   --button-shadow:
     inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2),
@@ -1981,7 +1982,6 @@
   --ribbon-slideout-shadow:
     8px 7px 21px -4px rgba(0, 0, 0, 0.12), 0px 5px 5px -5px rgba(0, 0, 0, 0.15) !important;
   --sched-chbx-color: rgb(182, 174, 165) !important;
-  --search-clear-button-color-hover: rgb(223, 69, 58) !important;
   --search-result-background-hover: color-mix(
     in srgb,
     rgb(252, 250, 248) 50%,
@@ -2498,8 +2498,8 @@
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(59, 48, 38) !important;
   --graph-node: rgb(65, 151, 185) !important;
@@ -3075,6 +3075,7 @@
   ) !important;
   --editor-border-color: rgb(59, 48, 38) !important;
   --color-gray-rgb: 166, 150, 142 !important;
+  --inline-code-color: rgb(247, 104, 94) !important;
   --embed-background: color-mix(
     in srgb,
     rgb(42, 36, 30) 50%,
@@ -3143,12 +3144,12 @@
     rgb(229, 170, 31) 22%,
     transparent
   ) !important;
-  --inline-code-color: rgb(247, 104, 94) !important;
   --tab-active-shadow:
     inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1),
     inset 0px -2px 0px 1px rgba(0, 0, 0, 0.25),
     0px 1px 2px -0.1px rgba(0, 0, 0, 0.47) !important;
   --vault-name-color-hover: rgb(199, 177, 148) !important;
+  --search-clear-button-color-hover: rgb(243, 80, 68) !important;
   --file-header-border-color: rgb(59, 48, 38) !important;
   --button-shadow:
     inset 0px 1px 0px 0px rgba(255, 255, 255, 0.02),
@@ -4213,7 +4214,6 @@
   --ribbon-slideout-shadow:
     8px 7px 21px -4px rgba(0, 0, 0, 0.35), 0px 5px 5px -5px rgba(0, 0, 0, 0.38) !important;
   --sched-chbx-color: rgb(159, 149, 137) !important;
-  --search-clear-button-color-hover: rgb(243, 80, 68) !important;
   --search-result-background-hover: color-mix(
     in srgb,
     rgb(33, 27, 23) 50%,
@@ -4435,7 +4435,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4469,7 +4469,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4502,7 +4502,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4535,7 +4535,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4565,7 +4565,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4595,7 +4595,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4625,7 +4625,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4655,7 +4655,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4684,7 +4684,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4713,7 +4713,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -4824,7 +4824,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5004,7 +5004,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5042,7 +5042,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5098,7 +5098,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5234,7 +5234,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5252,7 +5252,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5270,7 +5270,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5288,7 +5288,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5306,7 +5306,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5324,7 +5324,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5343,7 +5343,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5743,7 +5743,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5759,7 +5759,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5781,7 +5781,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5827,7 +5827,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,
@@ -5847,7 +5847,7 @@ body {
       Inter,
       ui-sans-serif,
       -apple-system,
-      "system-ui",
+      BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
       Roboto,

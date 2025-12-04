@@ -455,8 +455,8 @@ body.theme-light {
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
   --footnote-size: 0.875em !important;
-  --frame-left-space: 36px !important;
-  --frame-right-space: 0px !important;
+  --frame-left-space: 0px !important;
+  --frame-right-space: 81px !important;
   --graph-controls-width: 240px !important;
   --graph-line: rgb(207, 201, 222) !important;
   --graph-node: rgb(83, 69, 115) !important;
@@ -465,37 +465,37 @@ body.theme-light {
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: rgb(162, 150, 192) !important;
   --graph-text: #222222 !important;
-  --h1-letter-spacing: -0.015em !important;
+  --h1-letter-spacing: 0 !important;
   --h1-line-height: 1.5 !important;
   --h1-size: 1.5em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 600 !important;
-  --h2-letter-spacing: -0.011em !important;
+  --h2-letter-spacing: 0 !important;
   --h2-line-height: 1.5 !important;
   --h2-size: 1.4em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 600 !important;
-  --h3-letter-spacing: -0.008em !important;
+  --h3-letter-spacing: 0 !important;
   --h3-line-height: 1.5 !important;
   --h3-size: 1.3em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 600 !important;
-  --h4-letter-spacing: -0.005em !important;
+  --h4-letter-spacing: 0 !important;
   --h4-line-height: 1.5 !important;
   --h4-size: 1.2em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 600 !important;
-  --h5-letter-spacing: -0.002em !important;
+  --h5-letter-spacing: 0 !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.1em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 600 !important;
-  --h6-letter-spacing: 0em !important;
+  --h6-letter-spacing: 0 !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
@@ -549,14 +549,8 @@ body.theme-light {
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #ababab !important;
   --input-radius: 5px !important;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
+  --input-shadow: inset 0 0 0 1px rgb(221, 217, 232) !important;
+  --input-shadow-hover: inset 0 0 0 1px rgb(207, 201, 222) !important;
   --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(103, 44, 242) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -964,6 +958,7 @@ body.theme-light {
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
   --nn-theme-nav-bg: transparent !important;
   --nn-theme-navitem-selected-bg: rgb(238, 236, 244) !important;
+  --nn-theme-file-selected-bg: rgb(238, 236, 244) !important;
   --i-0: rgb(249, 249, 251) !important;
   --i-1: rgb(247, 245, 249) !important;
   --i-2: rgb(238, 236, 244) !important;
@@ -974,7 +969,6 @@ body.theme-light {
   --i-7: rgb(205, 198, 221) !important;
   --i-8: rgb(199, 191, 217) !important;
   --i-active-line-color: 258, 88%, 66% !important;
-  --i-bases-table-header-font-size: 0.8em !important;
   --i-blockquote-indent: 0 !important;
   --i-border-radius: 8px !important;
   --i-bullet-color: rgb(138, 92, 245) !important;
@@ -1064,7 +1058,6 @@ body.theme-light {
   --i-pattern-width: 10px !important;
   --i-s: 25% !important;
   --i-spacing-below-headings: 0.3rem !important;
-  --nn-theme-file-selected-bg: rgb(238, 236, 244) !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
   --nn-theme-quick-actions-bg: #ffffff !important;
@@ -1281,7 +1274,7 @@ body.theme-dark {
   --divider-width-hover: 3px;
   --drag-ghost-background: rgba(0, 0, 0, 0.85);
   --drag-ghost-text-color: #fff;
-  --dropdown-background: rgb(39, 36, 46);
+  --dropdown-background: rgb(29, 27, 34);
   --dropdown-background-blend-mode: hard-light;
   --dropdown-background-hover: rgb(49, 45, 57);
   --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -1306,7 +1299,7 @@ body.theme-dark {
   --file-header-justify: center;
   --file-line-width: 700px;
   --file-margins: 32px;
-  --flair-background: rgb(39, 36, 46);
+  --flair-background: rgb(29, 27, 34);
   --flair-color: rgb(217, 217, 217);
   --focus-ring-color: #0df;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df);
@@ -1374,8 +1367,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: 36px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 81px;
   --graph-controls-width: 240px;
   --graph-line: rgb(61, 56, 71);
   --graph-node: rgb(175, 169, 188);
@@ -1384,37 +1377,37 @@ body.theme-dark {
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: rgb(97, 90, 114);
   --graph-text: rgb(217, 217, 217);
-  --h1-letter-spacing: -0.015em;
+  --h1-letter-spacing: 0;
   --h1-line-height: 1.5;
   --h1-size: 1.5em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 600;
-  --h2-letter-spacing: -0.011em;
+  --h2-letter-spacing: 0;
   --h2-line-height: 1.5;
   --h2-size: 1.4em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-letter-spacing: -0.008em;
+  --h3-letter-spacing: 0;
   --h3-line-height: 1.5;
   --h3-size: 1.3em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-letter-spacing: -0.005em;
+  --h4-letter-spacing: 0;
   --h4-line-height: 1.5;
   --h4-size: 1.2em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-letter-spacing: -0.002em;
+  --h5-letter-spacing: 0;
   --h5-line-height: 1.5;
   --h5-size: 1.1em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-letter-spacing: 0em;
+  --h6-letter-spacing: 0;
   --h6-line-height: 1.5;
   --h6-size: 1em;
   --h6-style: normal;
@@ -1468,19 +1461,13 @@ body.theme-dark {
   --input-padding: 4px 8px;
   --input-placeholder-color: rgb(102, 102, 102);
   --input-radius: 5px;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --input-shadow: inset 0 0 0 1px rgb(51, 47, 60);
+  --input-shadow-hover: inset 0 0 0 1px rgb(61, 56, 71);
   --interactive-accent: rgb(138, 92, 245);
   --interactive-accent-hover: rgb(172, 140, 248);
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: rgb(49, 45, 57);
-  --interactive-normal: rgb(39, 36, 46);
+  --interactive-normal: rgb(29, 27, 34);
   --keyboard-height: 0px;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -1847,7 +1834,7 @@ body.theme-dark {
   --toggle-s-thumb-height: 15px;
   --toggle-s-thumb-width: 15px;
   --toggle-s-width: 34px;
-  --toggle-thumb-color: white;
+  --toggle-thumb-color: rgb(217, 217, 217);
   --toggle-thumb-height: 18px;
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
@@ -1877,6 +1864,7 @@ body.theme-dark {
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245);
   --nn-theme-nav-bg: transparent;
   --nn-theme-navitem-selected-bg: rgb(49, 45, 57);
+  --nn-theme-file-selected-bg: rgb(49, 45, 57);
   --i-0: rgb(32, 29, 37);
   --i-1: rgb(34, 31, 40);
   --i-2: rgb(39, 36, 46);
@@ -1887,7 +1875,6 @@ body.theme-dark {
   --i-7: rgb(68, 63, 80);
   --i-8: rgb(73, 67, 86);
   --i-active-line-color: 258, 88%, 66%;
-  --i-bases-table-header-font-size: 0.8em;
   --i-blockquote-indent: 0;
   --i-border-radius: 8px;
   --i-bullet-color: rgb(138, 92, 245);
@@ -1983,7 +1970,6 @@ body.theme-dark {
   --i-pattern-width: 10px;
   --i-s: 12%;
   --i-spacing-below-headings: 0.3rem;
-  --nn-theme-file-selected-bg: rgb(49, 45, 57);
   --nn-theme-file-tag-border-radius: 4px;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245);
   --nn-theme-quick-actions-bg: rgb(29, 27, 34);
@@ -1997,7 +1983,7 @@ body .markdown-rendered a.external-link {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2024,7 +2010,7 @@ body .markdown-rendered a.internal-link {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2051,7 +2037,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2081,7 +2067,7 @@ body .markdown-rendered p {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2108,7 +2094,7 @@ body strong {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2135,7 +2121,7 @@ body b {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2162,7 +2148,7 @@ body em {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2189,7 +2175,7 @@ body i {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2216,7 +2202,7 @@ body .markdown-rendered mark {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2243,7 +2229,7 @@ body del {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2315,7 +2301,7 @@ body div.multi-select-pill {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2484,7 +2470,7 @@ body .markdown-rendered blockquote {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2519,7 +2505,7 @@ body .site-body-left-column input.search-bar {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2553,7 +2539,7 @@ body .search-results > * {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2610,7 +2596,7 @@ body .published-container .markdown-rendered h1 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2626,7 +2612,7 @@ body .published-container .markdown-rendered h2 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2642,7 +2628,7 @@ body .published-container .markdown-rendered h3 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2658,7 +2644,7 @@ body .published-container .markdown-rendered h4 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2674,7 +2660,7 @@ body .published-container .markdown-rendered h5 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2690,7 +2676,7 @@ body .published-container .markdown-rendered h6 {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2966,7 +2952,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(217, 217, 217);
+  stroke: rgb(179, 179, 179);
 }
 body .callout[data-callout="bug"] {
   --callout-color: inherit;
@@ -3043,7 +3029,7 @@ body .math-block > mjx-container.MathJax {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3057,7 +3043,7 @@ body div.math-block > mjx-container.MathJax {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3076,7 +3062,7 @@ body .nav-view-outer .tree-item-self a {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3119,7 +3105,7 @@ body
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -3143,7 +3129,7 @@ body
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,

@@ -457,8 +457,8 @@ body.theme-dark {
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
-  --frame-left-space: 36px;
-  --frame-right-space: 0px;
+  --frame-left-space: 0px;
+  --frame-right-space: 126px;
   --graph-controls-width: 240px;
   --graph-line: #3f3f3f;
   --graph-node: #d0d0d0;
@@ -997,7 +997,7 @@ body .markdown-rendered a.external-link {
   cursor: pointer;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 400;
   outline: inherit;
@@ -1015,7 +1015,7 @@ body .markdown-rendered a.internal-link {
   cursor: pointer;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 400;
   outline: inherit;
@@ -1033,7 +1033,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   cursor: pointer;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 400;
   outline: inherit;
@@ -1053,7 +1053,7 @@ body .markdown-rendered p {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1078,7 +1078,7 @@ body strong {
   cursor: auto;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 600;
   outline: inherit;
@@ -1096,7 +1096,7 @@ body b {
   cursor: auto;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 600;
   outline: inherit;
@@ -1114,7 +1114,7 @@ body em {
   cursor: auto;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 600;
   outline: inherit;
@@ -1132,7 +1132,7 @@ body i {
   cursor: auto;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 600;
   outline: inherit;
@@ -1150,7 +1150,7 @@ body .markdown-rendered mark {
   cursor: auto;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 400;
   outline: inherit;
@@ -1168,7 +1168,7 @@ body del {
   cursor: auto;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 400;
   outline: inherit;
@@ -1229,7 +1229,7 @@ body div.multi-select-pill {
   display: flex;
   font-family:
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Helvetica,
     Arial,
@@ -1238,7 +1238,7 @@ body div.multi-select-pill {
     "Segoe UI Emoji",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1405,7 +1405,7 @@ body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   border-inline-start: inherit;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-style: normal;
   padding-bottom: 0px;
@@ -1432,7 +1432,7 @@ body .site-body-left-column input.search-bar {
   color: rgb(213, 213, 213);
   font-family:
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Helvetica,
     Arial,
@@ -1441,7 +1441,7 @@ body .site-body-left-column input.search-bar {
     "Segoe UI Emoji",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1473,7 +1473,7 @@ body .search-results > * {
   cursor: auto;
   filter: none;
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   font-weight: 400;
   outline: inherit;
@@ -1521,42 +1521,42 @@ body div.search-results .suggestion-item.is-selected {
 body .published-container .markdown-rendered h1 {
   color: rgb(224, 110, 110);
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
   color: rgb(213, 213, 213);
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
   color: rgb(229, 199, 107);
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
   color: rgb(140, 207, 126);
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
   color: rgb(186, 179, 229);
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
   color: rgb(155, 222, 173);
   font-family:
-    -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
   text-shadow: none;
 }
@@ -1897,7 +1897,7 @@ body .math-block > mjx-container.MathJax {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1911,7 +1911,7 @@ body div.math-block > mjx-container.MathJax {
   font-family:
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1929,7 +1929,7 @@ body .nav-view-outer .tree-item-self a {
   cursor: default;
   font-family:
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Helvetica,
     Arial,
@@ -1938,7 +1938,7 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Emoji",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -1980,7 +1980,7 @@ body
   cursor: default;
   font-family:
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Helvetica,
     Arial,
@@ -1989,7 +1989,7 @@ body
     "Segoe UI Emoji",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
@@ -2012,7 +2012,7 @@ body
   cursor: default;
   font-family:
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     "Segoe UI",
     Helvetica,
     Arial,
@@ -2021,7 +2021,7 @@ body
     "Segoe UI Emoji",
     ui-sans-serif,
     -apple-system,
-    "system-ui",
+    BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
     Roboto,
