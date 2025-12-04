@@ -123,7 +123,7 @@ if not exist "quartz-themes-temp\themes\%THEME%\" (
     exit /b 1
 )
 
-move "quartz-themes-temp\themes\%THEME%\*" "%FINAL_THEME_DIR%" > nul
+move "quartz-themes-temp\themes\%THEME%" "%FINAL_THEME_DIR%" > nul
 if errorlevel 1 (
     echo [ERR] Failed to move theme files to %FINAL_THEME_DIR% >&2
     rmdir /s /q quartz-themes-temp > nul 2>&1
