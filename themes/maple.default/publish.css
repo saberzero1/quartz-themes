@@ -264,7 +264,7 @@ body.theme-light {
   --embed-border-top: 2px solid rgb(210, 201, 188) !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 20px 16px !important;
+  --embed-padding: 16px 20px !important;
   --file-folding-offset: 28px !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
@@ -1228,7 +1228,7 @@ body.theme-dark {
   --embed-border-top: 2px solid rgb(72, 83, 91);
   --embed-canvas-max-height: 400px;
   --embed-max-height: 4000px;
-  --embed-padding: 20px 16px;
+  --embed-padding: 16px 20px;
   --file-folding-offset: 28px;
   --file-header-border: 1px solid transparent;
   --file-header-font:

@@ -885,6 +885,8 @@ body.theme-light {
   --h5-border-color: #35ad76 !important;
   --h6-border-color: #91c1ad !important;
   --r-heading-color: #0e934c !important;
+  --r-heading-font:
+    "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -1166,8 +1168,6 @@ body.theme-light {
   --popover-border: 3px solid #cbe2d5 !important;
   --progress: #79c78e !important;
   --progress-bg: #cbe2d5 !important;
-  --r-heading-font:
-    "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter !important;
   --r-heading-font-weight: 700 !important;
   --r-progress-color: #ac7c10 !important;
   --radius-h: 0 !important;
@@ -2186,6 +2186,8 @@ body.theme-dark {
   --h5-border-color: #1c2f2b;
   --h6-border-color: #0e0f15;
   --r-heading-color: #3eb281;
+  --r-heading-font:
+    "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter;
   --r-heading-text-transform: capitalize;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -2467,8 +2469,6 @@ body.theme-dark {
   --popover-border: 3px solid #0e0f15;
   --progress: #548b67;
   --progress-bg: #1e3831;
-  --r-heading-font:
-    "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter;
   --r-heading-font-weight: 700;
   --r-progress-color: #45b480;
   --radius-h: 0;

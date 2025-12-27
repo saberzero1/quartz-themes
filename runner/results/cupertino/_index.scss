@@ -13,7 +13,7 @@
   --anim-duration-fast: 160ms !important;
   --anim-duration-moderate: 320ms !important;
   --anim-duration-none: 0 !important;
-  --anim-duration-slow: 640ms !important;
+  --anim-duration-slow: 480ms !important;
   --anim-duration-superfast: 80ms !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
@@ -199,7 +199,7 @@
   --color-red-rgb: 255, 56, 60 !important;
   --color-yellow: rgb(255, 204, 0) !important;
   --color-yellow-rgb: 255, 204, 0 !important;
-  --corner-smoothing: 0 !important;
+  --corner-smoothing: system-ui !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -463,7 +463,7 @@
     inset 1px 1px 2px rgba(255, 255, 255, 0.5),
     inset -1px -1px 2px rgba(255, 255, 255, 0.5),
     inset 0 4px 16px rgba(255, 255, 255, 0.025), inset 0 0 1px 1px white,
-    0 0 1px 0 rgba(0, 0, 0, 0.4), 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
+    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: rgba(0, 0, 0, 0.075) !important;
   --metadata-border-radius: 0 !important;
@@ -522,7 +522,7 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: #ababab !important;
+  --nav-collapse-icon-color: rgb(0, 0, 0) !important;
   --nav-collapse-icon-color-collapsed: #ababab !important;
   --nav-heading-color: #222222 !important;
   --nav-heading-color-collapsed: #ababab !important;
@@ -537,11 +537,11 @@
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #5c5c5c !important;
-  --nav-item-color-active: #222222 !important;
+  --nav-item-color: rgb(0, 0, 0) !important;
+  --nav-item-color-active: rgb(0, 0, 0) !important;
   --nav-item-color-highlighted: rgb(138, 92, 245) !important;
-  --nav-item-color-hover: #222222 !important;
-  --nav-item-color-selected: #222222 !important;
+  --nav-item-color-hover: rgb(0, 0, 0) !important;
+  --nav-item-color-selected: rgb(0, 0, 0) !important;
   --nav-item-padding: 8px 8px 8px 24px !important;
   --nav-item-parent-padding: 8px 8px 8px 24px !important;
   --nav-item-size: 13px !important;
@@ -589,7 +589,7 @@
   --popover-width: 450px !important;
   --prompt-border-color: rgba(0, 0, 0, 0.075) !important;
   --prompt-border-width: 1px !important;
-  --prompt-input-height: 56px !important;
+  --prompt-input-height: 64px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
@@ -618,13 +618,13 @@
   --search-icon-size: 18px !important;
   --search-result-background: #ffffff !important;
   --shadow-l:
-    0 0 1px 0 rgba(0, 0, 0, 0.4), inset 0 0 1px 1px white,
-    0 16px 64px 0 rgba(0, 0, 0, 0.15) !important;
+    0 0 1px rgba(0, 0, 0, 0.4), inset 0 0 1px 1px white,
+    0 16px 64px rgba(0, 0, 0, 0.15) !important;
   --shadow-s:
     inset 1px 1px 2px rgba(255, 255, 255, 0.5),
     inset -1px -1px 2px rgba(255, 255, 255, 0.5),
     inset 0 4px 16px rgba(255, 255, 255, 0.025), inset 0 0 1px 1px white,
-    0 0 1px 0 rgba(0, 0, 0, 0.4), 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
+    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -650,10 +650,10 @@
   --slider-s-thumb-size: 15px !important;
   --slider-thumb-border-color: rgba(0, 0, 0, 0.075) !important;
   --slider-thumb-border-width: 0 !important;
-  --slider-thumb-height: 18px !important;
+  --slider-thumb-height: 16px !important;
   --slider-thumb-radius: 18px !important;
-  --slider-thumb-width: 28px !important;
-  --slider-thumb-y: -6px !important;
+  --slider-thumb-width: 20px !important;
+  --slider-thumb-y: -5px !important;
   --slider-track-background: rgba(0, 0, 0, 0.075) !important;
   --slider-track-height: 6px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
@@ -804,21 +804,12 @@
   --color-base-80: #494949 !important;
   --color-base-90: #363636 !important;
   --line-width: 700px !important;
-  --banner-calc-base: 0px !important;
-  --banner-calc-icon: 64px !important;
-  --banner-content-offset: 0px !important;
-  --banner-fade-penalty: 32px !important;
-  --banner-icon-offset: -64px !important;
-  --banner-icon-size: 48px !important;
-  --banner-icon-spacer: 16px !important;
-  --banner-image-actual-height: 320px !important;
+  --banner-fade-height: 80px !important;
+  --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
-  --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
-  --banner-image-radius: 8px !important;
   --banner-mobile-offset: 0px !important;
-  --banner-mobile-spacer: 0px !important;
   --blockquote-size: 16px !important;
   --callout-size: 16px !important;
   --cards-aspect-ratio: auto !important;
@@ -838,7 +829,6 @@
     system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
   --line-width-wide: min(100cqw, 50rem) !important;
   --media-radius: 8px !important;
-  --nav-header-align: center !important;
   --nn-theme-file-border-radius: 12px !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.1) !important;
   --nn-theme-file-tag-color: rgb(138, 92, 245) !important;
@@ -855,28 +845,33 @@
   --nn-theme-navitem-selected-bg: rgba(0, 0, 0, 0.067) !important;
   --nn-theme-navitem-selected-inactive-bg: rgba(0, 0, 0, 0.067) !important;
   --radius-modifier: 1 !important;
+  --setting-group-heading-color: #222222 !important;
+  --setting-group-heading-size: 13px !important;
+  --setting-items-padding: 12px 20px !important;
+  --setting-items-radius: 12px !important;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 40px !important;
   --tag-weight: 500 !important;
+  --text-normal-editor: #363636 !important;
   --translucent-dark-opacity: 50% !important;
   --translucent-light-opacity: 50% !important;
+  --view-top-spacing-markdown: 0px !important;
   --anim-motion-cupertino: cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --blur-l: blur(8px) saturate(1.5) brightness(1.05) !important;
-  --blur-m: blur(4px) saturate(1.5) brightness(1.05) !important;
-  --blur-s: blur(2px) saturate(1.5) brightness(1.05) !important;
-  --liquid-glass-background: rgba(255, 255, 255, 0.5) !important;
+  --blur-background: rgba(255, 255, 255, 0.35) !important;
+  --blur-l: blur(8px) saturate(1.5) brightness(1.025) !important;
+  --blur-m: blur(4px) saturate(1.5) brightness(1.025) !important;
+  --blur-s: blur(2px) saturate(1.5) brightness(1.025) !important;
   --radius-window: 6px !important;
   --shadow-base:
     inset 1px 1px 2px rgba(255, 255, 255, 0.5),
     inset -1px -1px 2px rgba(255, 255, 255, 0.5),
     inset 0 4px 16px rgba(255, 255, 255, 0.025) !important;
-  --shadow-border: 0 0 1px 0 rgba(0, 0, 0, 0.4) !important;
+  --shadow-border: 0 0 1px rgba(0, 0, 0, 0.4) !important;
   --shadow-sidedock:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.5),
-    inset -1px -1px 2px rgba(255, 255, 255, 0.5),
-    inset 0 4px 16px rgba(255, 255, 255, 0.025), inset 0 0 1px 1px white,
-    0 4px 32px 0 rgba(0, 0, 0, 0.075), -32px 0 0 32px #ffffff !important;
+    0 0 1px rgba(0, 0, 0, 0.4), inset 0 0 1px 1px white,
+    0 4px 32px rgba(0, 0, 0, 0.075) !important;
+  --shadow-sidedock-spread: -32px 0 0 32px #ffffff !important;
   --shadow-xs:
     inset 1px 1px 2px rgba(255, 255, 255, 0.5),
     inset -1px -1px 2px rgba(255, 255, 255, 0.5),
@@ -884,7 +879,11 @@
     inset 0 -8px 48px rgba(0, 0, 0, 0.02), 0 0 8px rgba(0, 0, 0, 0.025),
     0 4px 48px rgba(0, 0, 0, 0.15) !important;
   --side-padding: 20px !important;
-  --text-normal-editor: #363636 !important;
+  --sidedock-background: color-mix(
+    in srgb,
+    white 98%,
+    rgb(153, 115, 247)
+  ) !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -895,16 +894,16 @@
   --anim-duration-fast: 160ms !important;
   --anim-duration-moderate: 320ms !important;
   --anim-duration-none: 0 !important;
-  --anim-duration-slow: 640ms !important;
+  --anim-duration-slow: 480ms !important;
   --anim-duration-superfast: 80ms !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
-  --background-modifier-border: rgba(255, 255, 255, 0.15) !important;
+  --background-modifier-border: rgba(255, 255, 255, 0.075) !important;
   --background-modifier-border-focus: rgba(138, 92, 245, 0.5) !important;
-  --background-modifier-border-hover: rgba(255, 255, 255, 0.15) !important;
+  --background-modifier-border-hover: rgba(255, 255, 255, 0.075) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
   --background-modifier-error: rgb(255, 66, 69) !important;
@@ -927,9 +926,9 @@
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
-  --bases-embed-border-color: rgba(255, 255, 255, 0.15) !important;
+  --bases-cards-shadow: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
+  --bases-embed-border-color: rgba(255, 255, 255, 0.075) !important;
   --bases-embed-border-radius: 8px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -943,7 +942,7 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgba(255, 255, 255, 0.15) !important;
+  --bases-table-border-color: rgba(255, 255, 255, 0.075) !important;
   --bases-table-cell-background-active: #1e1e1e !important;
   --bases-table-cell-background-disabled: #242424 !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
@@ -1030,7 +1029,7 @@
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 100vh !important;
   --code-background: #242424 !important;
-  --code-border-color: rgba(255, 255, 255, 0.15) !important;
+  --code-border-color: rgba(255, 255, 255, 0.075) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
   --code-comment: #5c6370 !important;
@@ -1081,14 +1080,14 @@
   --color-red-rgb: 255, 66, 69 !important;
   --color-yellow: rgb(255, 214, 0) !important;
   --color-yellow-rgb: 255, 214, 0 !important;
-  --corner-smoothing: 0 !important;
+  --corner-smoothing: system-ui !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: rgba(255, 255, 255, 0.15) !important;
+  --divider-color: rgba(255, 255, 255, 0.075) !important;
   --divider-color-hover: #666666 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
@@ -1177,7 +1176,7 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgba(255, 255, 255, 0.15) !important;
+  --footnote-divider-color: rgba(255, 255, 255, 0.075) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
@@ -1241,7 +1240,7 @@
   --heading-formatting: #666666 !important;
   --heading-spacing: 2em !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: rgba(255, 255, 255, 0.15) !important;
+  --hr-color: rgba(255, 255, 255, 0.075) !important;
   --hr-thickness: 2px !important;
   --icon-color: rgb(255, 255, 255) !important;
   --icon-color-active: rgb(166, 139, 249) !important;
@@ -1337,20 +1336,20 @@
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: #262626 !important;
-  --menu-border-color: rgba(255, 255, 255, 0.15) !important;
+  --menu-border-color: rgba(255, 255, 255, 0.075) !important;
   --menu-border-width: 1px !important;
   --menu-padding: 4px !important;
   --menu-radius: 12px !important;
   --menu-shadow:
-    0 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.5),
-    0 0 1px 0 rgba(0, 0, 0, 0.4), 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
+    0 0 1px rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.5),
+    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgba(255, 255, 255, 0.15) !important;
+  --metadata-border-color: rgba(255, 255, 255, 0.075) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgba(255, 255, 255, 0.15) !important;
+  --metadata-divider-color: rgba(255, 255, 255, 0.075) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1383,7 +1382,7 @@
   --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgba(138, 92, 245, 0.5) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 12px !important;
   --metadata-property-radius-focus: 12px !important;
@@ -1391,7 +1390,7 @@
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
   --modal-background: rgb(from #242424 r g b / 75%) !important;
-  --modal-border-color: rgba(255, 255, 255, 0.15) !important;
+  --modal-border-color: rgba(255, 255, 255, 0.075) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-height: 85vh !important;
@@ -1402,7 +1401,7 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: #666666 !important;
+  --nav-collapse-icon-color: rgb(255, 255, 255) !important;
   --nav-collapse-icon-color-collapsed: #666666 !important;
   --nav-heading-color: #dadada !important;
   --nav-heading-color-collapsed: #666666 !important;
@@ -1417,11 +1416,11 @@
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #b3b3b3 !important;
-  --nav-item-color-active: #dadada !important;
+  --nav-item-color: rgb(255, 255, 255) !important;
+  --nav-item-color-active: rgb(255, 255, 255) !important;
   --nav-item-color-highlighted: rgb(166, 139, 249) !important;
-  --nav-item-color-hover: #dadada !important;
-  --nav-item-color-selected: #dadada !important;
+  --nav-item-color-hover: rgb(255, 255, 255) !important;
+  --nav-item-color-selected: rgb(255, 255, 255) !important;
   --nav-item-padding: 8px 8px 8px 24px !important;
   --nav-item-parent-padding: 8px 8px 8px 24px !important;
   --nav-item-size: 13px !important;
@@ -1438,15 +1437,15 @@
   --page-margin: 1px auto -8px !important;
   --pdf-background: #1e1e1e !important;
   --pdf-page-background: #1e1e1e !important;
-  --pdf-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
+  --pdf-shadow: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
   --pdf-sidebar-background: #1e1e1e !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgba(255, 255, 255, 0.15) !important;
-  --pill-border-color-hover: rgba(255, 255, 255, 0.15) !important;
+  --pill-border-color: rgba(255, 255, 255, 0.075) !important;
+  --pill-border-color-hover: rgba(255, 255, 255, 0.075) !important;
   --pill-border-width: 1px !important;
   --pill-color: #b3b3b3 !important;
   --pill-color-hover: #dadada !important;
@@ -1465,9 +1464,9 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --prompt-border-color: rgba(255, 255, 255, 0.15) !important;
+  --prompt-border-color: rgba(255, 255, 255, 0.075) !important;
   --prompt-border-width: 1px !important;
-  --prompt-input-height: 56px !important;
+  --prompt-input-height: 64px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
@@ -1496,11 +1495,11 @@
   --search-icon-size: 18px !important;
   --search-result-background: #1e1e1e !important;
   --shadow-l:
-    0 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.5),
-    0 0 1px 0 rgba(0, 0, 0, 0.7), 0 16px 64px 0 rgba(0, 0, 0, 0.3) !important;
+    0 0 1px rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.5),
+    0 0 1px rgba(0, 0, 0, 0.7), 0 16px 64px rgba(0, 0, 0, 0.3) !important;
   --shadow-s:
-    0 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.5),
-    0 0 1px 0 rgba(0, 0, 0, 0.4), 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
+    0 0 1px rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.5),
+    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1524,17 +1523,17 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: rgba(255, 255, 255, 0.15) !important;
+  --slider-thumb-border-color: rgba(255, 255, 255, 0.075) !important;
   --slider-thumb-border-width: 0 !important;
-  --slider-thumb-height: 18px !important;
+  --slider-thumb-height: 16px !important;
   --slider-thumb-radius: 18px !important;
-  --slider-thumb-width: 28px !important;
-  --slider-thumb-y: -6px !important;
-  --slider-track-background: rgba(255, 255, 255, 0.15) !important;
+  --slider-thumb-width: 20px !important;
+  --slider-thumb-y: -5px !important;
+  --slider-track-background: rgba(255, 255, 255, 0.075) !important;
   --slider-track-height: 6px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #262626 !important;
-  --status-bar-border-color: rgba(255, 255, 255, 0.15) !important;
+  --status-bar-border-color: rgba(255, 255, 255, 0.075) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
@@ -1556,10 +1555,10 @@
   --tab-background-active: #1e1e1e !important;
   --tab-container-background: #262626 !important;
   --tab-curve: 12px !important;
-  --tab-divider-color: rgba(255, 255, 255, 0.15) !important;
+  --tab-divider-color: rgba(255, 255, 255, 0.075) !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: rgba(255, 255, 255, 0.15) !important;
+  --tab-outline-color: rgba(255, 255, 255, 0.075) !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 8px !important;
   --tab-radius-active: 8px 8px 0 0 !important;
@@ -1584,10 +1583,10 @@
   --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgba(255, 255, 255, 0.15) !important;
+  --table-add-button-border-color: rgba(255, 255, 255, 0.075) !important;
   --table-add-button-border-width: 0 !important;
   --table-background: transparent !important;
-  --table-border-color: rgba(255, 255, 255, 0.15) !important;
+  --table-border-color: rgba(255, 255, 255, 0.075) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1646,7 +1645,7 @@
   --text-warning: rgb(255, 146, 48) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgba(255, 255, 255, 0.15) !important;
+  --titlebar-border-color: rgba(255, 255, 255, 0.075) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #b3b3b3 !important;
@@ -1680,21 +1679,12 @@
   --color-base-80: #c0c0c0 !important;
   --color-base-90: #cdcdcd !important;
   --line-width: 700px !important;
-  --banner-calc-base: 0px !important;
-  --banner-calc-icon: 64px !important;
-  --banner-content-offset: 0px !important;
-  --banner-fade-penalty: 32px !important;
-  --banner-icon-offset: -64px !important;
-  --banner-icon-size: 48px !important;
-  --banner-icon-spacer: 16px !important;
-  --banner-image-actual-height: 320px !important;
+  --banner-fade-height: 80px !important;
+  --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
-  --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
-  --banner-image-radius: 8px !important;
   --banner-mobile-offset: 0px !important;
-  --banner-mobile-spacer: 0px !important;
   --blockquote-size: 16px !important;
   --callout-size: 16px;
   --cards-aspect-ratio: auto !important;
@@ -1714,7 +1704,6 @@
     system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
   --line-width-wide: min(100cqw, 50rem) !important;
   --media-radius: 8px !important;
-  --nav-header-align: center !important;
   --nn-theme-file-border-radius: 12px !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.1) !important;
   --nn-theme-file-tag-color: rgb(166, 139, 249) !important;
@@ -1736,34 +1725,44 @@
     0.067
   ) !important;
   --radius-modifier: 1 !important;
+  --setting-group-heading-color: #dadada !important;
+  --setting-group-heading-size: 13px !important;
+  --setting-items-padding: 12px 20px !important;
+  --setting-items-radius: 12px !important;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px,
     rgba(255, 255, 255, 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 40px !important;
   --tag-weight: 500 !important;
+  --text-normal-editor: #cdcdcd !important;
   --translucent-dark-opacity: 50% !important;
   --translucent-light-opacity: 50% !important;
+  --view-top-spacing-markdown: 0px !important;
   --anim-motion-cupertino: cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --blur-l: blur(8px) saturate(1.5) brightness(1.05) !important;
-  --blur-m: blur(4px) saturate(1.5) brightness(1.05) !important;
-  --blur-s: blur(2px) saturate(1.5) brightness(1.05) !important;
-  --liquid-glass-background: rgba(255, 255, 255, 0.075) !important;
+  --blur-background: rgba(255, 255, 255, 0.05) !important;
+  --blur-l: blur(8px) saturate(1.5) brightness(1.025) !important;
+  --blur-m: blur(4px) saturate(1.5) brightness(1.025) !important;
+  --blur-s: blur(2px) saturate(1.5) brightness(1.025) !important;
   --radius-window: 6px !important;
   --shadow-base:
     inset 1px 1.5px 1px -1px rgba(255, 255, 255, 0.2),
     inset -1px -1.5px 1px -1px rgba(255, 255, 255, 0.15),
     inset 0 4px 16px rgba(255, 255, 255, 0.025) !important;
-  --shadow-border: 0 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  --shadow-border: 0 0 1px rgba(255, 255, 255, 0.3) !important;
   --shadow-sidedock:
-    0 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.35),
-    0 0 1px 0 rgba(0, 0, 0, 0.4), 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-    -32px 0 0 32px #1e1e1e !important;
+    0 0 1px rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.35),
+    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  --shadow-sidedock-spread: -32px 0 0 32px #1e1e1e !important;
   --shadow-xs:
     inset 1px 1.5px 1px -1px rgba(255, 255, 255, 0.2),
     inset -1px -1.5px 1px -1px rgba(255, 255, 255, 0.15),
     inset 0 4px 16px rgba(255, 255, 255, 0.025) !important;
   --side-padding: 20px !important;
-  --text-normal-editor: #cdcdcd !important;
+  --sidedock-background: color-mix(
+    in srgb,
+    rgb(21, 21, 21) 98%,
+    rgb(138, 92, 245)
+  ) !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1894,7 +1893,7 @@ body {
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
     background-color: light-dark(
       color(srgb 0.991952 0.989026 0.999354),
-      color(srgb 0.126101 0.12251 0.134478)
+      color(srgb 0.0915123 0.0879219 0.0998899)
     );
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
@@ -1902,7 +1901,7 @@ body {
   .page > div#quartz-body div.sidebar.right {
     background-color: light-dark(
       color(srgb 0.991952 0.989026 0.999354),
-      color(srgb 0.126101 0.12251 0.134478)
+      color(srgb 0.0915123 0.0879219 0.0998899)
     );
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-left: 1px solid rgba(0, 0, 0, 0);
@@ -2297,9 +2296,9 @@ body {
   }
 
   hr {
-    border: 0px light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.15));
+    border: 0px light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
     border-top: 2px solid
-      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.15));
+      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2409,7 +2408,7 @@ body {
   code {
     background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
     border: 1px solid
-      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.15));
+      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2430,7 +2429,7 @@ body {
   pre:has(> code) {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid
-      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.15));
+      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2448,7 +2447,7 @@ body {
   pre:has(> code) {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid
-      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.15));
+      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2547,7 +2546,7 @@ body {
   .search > .search-button {
     background-color: light-dark(rgb(255, 255, 255), rgb(54, 54, 54));
     border: 1px solid
-      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.15));
+      light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2581,14 +2580,14 @@ body {
       color(srgb 0.141176 0.141176 0.141176 / 0.75)
     );
     border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px;
-    border-start-start-radius: 28px;
-    border-start-end-radius: 28px;
-    border-end-start-radius: 28px;
-    border-end-end-radius: 28px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
     box-shadow:
       rgba(255, 255, 255, 0.3) 0px 0px 1px 0px,
       rgba(255, 255, 255, 0.5) 0px 0px 1px 0px,
@@ -2645,14 +2644,14 @@ body {
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
     border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px;
-    border-start-start-radius: 28px;
-    border-start-end-radius: 28px;
-    border-end-start-radius: 28px;
-    border-end-end-radius: 28px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
   }
 
   .search
@@ -3312,7 +3311,7 @@ body {
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: light-dark(rgba(0, 0, 0, 0.067), rgba(0, 0, 0, 0.5));
-    border: 0px light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    border: 0px light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3321,7 +3320,7 @@ body {
     border-start-end-radius: 8px;
     border-end-start-radius: 8px;
     border-end-end-radius: 8px;
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;

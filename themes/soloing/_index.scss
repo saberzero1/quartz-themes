@@ -810,7 +810,6 @@
   --file-title-color: #121019 !important;
   --white-smoke: #f5f5f5 !important;
   --highlight-text-color: #121019 !important;
-  --highlight-bg-color: #3fc570 !important;
   --cool-gray: #7c809b !important;
   --mint: #13c4a3 !important;
   --anti-flash-white: #ebebeb !important;
@@ -846,6 +845,7 @@
   --folly-dark: #c7204a !important;
   --french-gray: #d1d2dc !important;
   --gold-light: #e8e08b !important;
+  --highlight-bg-color: #3fc570 !important;
   --light-accent: #3fc570 !important;
   --light-background-primary: #f6f6fc !important;
   --light-background-secondary: #eceff5 !important;
@@ -1671,7 +1671,6 @@
   --file-title-color: #fff8f0 !important;
   --white-smoke: #f5f5f5 !important;
   --highlight-text-color: #121019 !important;
-  --highlight-bg-color: #13c4a3 !important;
   --cool-gray: #7c809b !important;
   --mint: #13c4a3 !important;
   --anti-flash-white: #ebebeb !important;
@@ -1707,6 +1706,7 @@
   --folly-dark: #c7204a !important;
   --french-gray: #d1d2dc !important;
   --gold-light: #e8e08b !important;
+  --highlight-bg-color: #13c4a3 !important;
   --light-accent: #3fc570 !important;
   --light-background-primary: #f6f6fc !important;
   --light-background-secondary: #eceff5 !important;
@@ -2137,7 +2137,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(19, 196, 163);
+    text-decoration: none solid rgb(218, 218, 218);
     text-decoration-color: light-dark(rgb(47, 155, 86), rgb(19, 196, 163));
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2166,7 +2166,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(19, 196, 163);
+    text-decoration: none solid rgb(218, 218, 218);
     text-decoration-color: light-dark(rgb(47, 155, 86), rgb(19, 196, 163));
     text-decoration-line: none;
     text-decoration-style: solid;

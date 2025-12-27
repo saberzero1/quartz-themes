@@ -889,6 +889,7 @@
   --italic-color: oklch(42% 0.0025 281) !important;
   --color-base-80: oklch(42% 0.0025 281) !important;
   --color-base-90: oklch(28.25% 0.0005 281) !important;
+  --radius-sm: 8px !important;
   --radius-xs: 4px !important;
   --color-accent-3: color-mix(
     in oklch,
@@ -906,15 +907,15 @@
     0 0 0 1px oklch(0% 0 0 / 0.06), 0 3px 6px -2px oklch(0% 0 0 / 0.05) !important;
   --strikethrough-color: oklch(71.5% 0.0105 281) !important;
   --nav-item-weight: 425 !important;
-  --radius-sm: 8px !important;
   --color-base-55: oklch(65% 0.0105 281) !important;
   --setting-item-border-color: oklch(0% 0 0 / 0.092) !important;
   --color-highlight: rgb(233, 188, 0) !important;
-  --bases-table-text-size: 0.90625em !important;
   --base-hue: 281 !important;
   --nav-folder-color: oklch(42% 0.0025 281) !important;
   --tag-shadow: inset 0px -1.4px 0px 0px
     oklch(from oklch(100% 0.0005 281) l c h / 0.4) !important;
+  --bases-cards-text-size: 0.90625em !important;
+  --bases-table-text-size: 0.90625em !important;
   --anim-fast-smooth: 140ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-fast-swing: 140ms cubic-bezier(0, 0.55, 0.45, 1) !important;
   --anim-super-smooth: 70ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
@@ -940,7 +941,6 @@
     oklch(55% 0.0105 281)
   ) !important;
   --bases-cards-label-size: 0.75rem !important;
-  --bases-cards-text-size: 0.90625em !important;
   --bases-table-header-color-hover: oklch(42% 0.0025 281) !important;
   --code-background-alt: oklch(
     from oklch(100% 0.0005 281) l c h / 0.8
@@ -1998,6 +1998,7 @@
   --italic-color: oklch(77.75% 0.00625 275) !important;
   --color-base-80: oklch(77.75% 0.00625 275) !important;
   --color-base-90: oklch(87.5% 0.00375 275) !important;
+  --radius-sm: 8px !important;
   --radius-xs: 4px !important;
   --color-accent-3: color-mix(in oklab, rgb(0, 167, 250), #fff 20%) !important;
   --nav-item-weight-active: 425 !important;
@@ -2012,15 +2013,15 @@
     0 0.75px 7px -2px oklch(from black l c h / 0.375) !important;
   --strikethrough-color: oklch(52.5% 0.0125 275) !important;
   --nav-item-weight: 425 !important;
-  --radius-sm: 8px !important;
   --color-base-55: oklch(58.75% 0.0125 275) !important;
   --setting-item-border-color: oklch(100% 0.05 283 / 0.0625) !important;
   --color-highlight: rgb(224, 218, 113) !important;
-  --bases-table-text-size: 0.90625em !important;
   --base-hue: 275 !important;
   --nav-folder-color: oklch(77.75% 0.00625 275) !important;
   --tag-shadow: inset 0px -1.4px 0px 0px
     oklch(from oklch(34.5% 0.00625 275) l c h / 0.5) !important;
+  --bases-cards-text-size: 0.90625em !important;
+  --bases-table-text-size: 0.90625em !important;
   --anim-fast-smooth: 140ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-fast-swing: 140ms cubic-bezier(0, 0.55, 0.45, 1) !important;
   --anim-super-smooth: 70ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
@@ -2047,7 +2048,6 @@
     oklch(64.25% 0.0125 275)
   ) !important;
   --bases-cards-label-size: 0.75rem !important;
-  --bases-cards-text-size: 0.90625em !important;
   --bases-table-header-color-hover: oklch(77.75% 0.00625 275) !important;
   --code-background-alt: oklch(100% 0.05 283 / 0.05) !important;
   --code-special: oklch(87.5% 0.00375 275) !important;

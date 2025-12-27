@@ -974,6 +974,7 @@ body.theme-light {
   --font-weight-medium: 500 !important;
   --leading-relaxed: 1.625 !important;
   --radius-md: 0.375rem !important;
+  --radius-sm: 0.25rem !important;
   --spacing: 0.25rem !important;
   --text-2xl: 2.25rem !important;
   --text-2xl--line-height: 1.33333 !important;
@@ -1821,6 +1822,7 @@ body.theme-dark {
   --font-weight-medium: 500;
   --leading-relaxed: 1.625;
   --radius-md: 0.375rem;
+  --radius-sm: 0.25rem;
   --spacing: 0.25rem;
   --text-2xl: 2.25rem;
   --text-2xl--line-height: 1.33333;

@@ -827,6 +827,7 @@
   --italic-color: rgb(154, 154, 154) !important;
   --background-3-1: rgb(197, 197, 197) !important;
   --background-3-2: rgba(197, 197, 197, 0.288) !important;
+  --background-7: rgb(206, 206, 206) !important;
   --colored-accent-4: rgba(138, 92, 245, 0.1) !important;
   --colored-accent-5: rgba(138, 92, 245, 0.05) !important;
 
@@ -1650,6 +1651,7 @@
   --italic-color: rgb(97, 97, 97) !important;
   --background-3-1: rgb(70, 70, 70) !important;
   --background-3-2: rgba(70, 70, 70, 0.27) !important;
+  --background-7: rgb(46, 46, 46) !important;
   --colored-accent-4: rgba(138, 92, 245, 0.1) !important;
   --colored-accent-5: rgba(138, 92, 245, 0.05) !important;
 
@@ -1957,7 +1959,7 @@ body {
   }
 
   .text-highlight {
-    background-color: rgba(138, 92, 245, 0.1);
+    background-color: light-dark(rgb(206, 206, 206), rgb(46, 46, 46));
     color: light-dark(rgb(67, 67, 67), rgb(174, 174, 174));
     cursor: auto;
     filter: none;
@@ -1973,7 +1975,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(174, 174, 174);
     text-decoration-color: light-dark(rgb(67, 67, 67), rgb(174, 174, 174));
@@ -2501,7 +2503,7 @@ body {
   }
 
   h1 {
-    color: rgb(0, 0, 0);
+    color: light-dark(rgb(67, 67, 67), rgb(174, 174, 174));
     font-family:
       ui-sans-serif,
       -apple-system,
