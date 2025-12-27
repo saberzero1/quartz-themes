@@ -876,6 +876,7 @@ body.theme-light {
   --h5-border-color: #e58000 !important;
   --h6-border-color: #393636 !important;
   --r-heading-color: #002a17 !important;
+  --r-heading-font: "Taroca" !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -1154,7 +1155,6 @@ body.theme-light {
   --popover-border: 3px solid rgba(124, 49, 3, 0.4) !important;
   --progress: #025d4e !important;
   --progress-bg: #d2c4be !important;
-  --r-heading-font: "Taroca" !important;
   --r-heading-font-weight: 100 !important;
   --r-progress-color: #188655 !important;
   --radius-h: 0 !important;
@@ -2164,6 +2164,7 @@ body.theme-dark {
   --h5-border-color: #694b3c;
   --h6-border-color: #2e333d;
   --r-heading-color: #2f8b62;
+  --r-heading-font: "Taroca";
   --r-heading-text-transform: capitalize;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -2441,7 +2442,6 @@ body.theme-dark {
   --popover-border: 3px solid #0b0f13;
   --progress: #3b7b5b;
   --progress-bg: #252c36;
-  --r-heading-font: "Taroca";
   --r-heading-font-weight: 100;
   --r-progress-color: #4dbb84;
   --radius-h: 0;

@@ -1803,7 +1803,7 @@ body em {
     sans-serif;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: light-dark(rgb(45, 46, 52), rgb(255, 255, 255));
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1830,7 +1830,7 @@ body i {
     sans-serif;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: light-dark(rgb(45, 46, 52), rgb(255, 255, 255));
   text-decoration-line: none;
   text-decoration-style: solid;

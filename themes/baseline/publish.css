@@ -162,7 +162,7 @@ body.theme-light {
   --anim-duration-fast: 160ms !important;
   --anim-duration-moderate: 320ms !important;
   --anim-duration-none: 0 !important;
-  --anim-duration-slow: 640ms !important;
+  --anim-duration-slow: 480ms !important;
   --anim-duration-superfast: 80ms !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
@@ -251,7 +251,7 @@ body.theme-light {
   --bold-weight: 700 !important;
   --border-width: 1px !important;
   --button-radius: calc(
-    8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vw *
+    8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh *
       clamp(0, (1 - 1) * 10000 + 1, 1)
   ) !important;
   --callout-blend-mode: normal !important;
@@ -351,7 +351,7 @@ body.theme-light {
   --color-red-rgb: 254, 112, 112 !important;
   --color-yellow: rgb(224, 205, 99) !important;
   --color-yellow-rgb: 224, 205, 99 !important;
-  --corner-smoothing: 0 !important;
+  --corner-smoothing: system-ui !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -665,7 +665,7 @@ body.theme-light {
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 16px !important;
+  --modal-radius: 20px !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
@@ -739,10 +739,10 @@ body.theme-light {
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 16px !important;
+  --radius-l: 20px !important;
   --radius-m: 12px !important;
   --radius-s: 8px !important;
-  --radius-xl: 24px !important;
+  --radius-xl: 28px !important;
   --ribbon-background: transparent !important;
   --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -755,7 +755,7 @@ body.theme-light {
   --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 16px !important;
+  --scrollbar-radius: 20px !important;
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: #5c5c5c !important;
@@ -763,7 +763,7 @@ body.theme-light {
   --search-icon-color: #5c5c5c !important;
   --search-icon-size: 18px !important;
   --search-result-background: #ffffff !important;
-  --shadow-l: 0 14px 62px 0 #00000040 !important;
+  --shadow-l: 0 14px 62px #00000040 !important;
   --shadow-s:
     rgba(0, 0, 0, 0.08) 0px 12px 24px -4px,
     rgba(0, 0, 0, 0.04) 0px 8px 16px -4px !important;
@@ -839,7 +839,7 @@ body.theme-light {
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #f6f6f6 !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 24px !important;
+  --tab-switcher-preview-radius: 28px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
   --tab-text-color: #ababab !important;
@@ -952,21 +952,12 @@ body.theme-light {
   --line-width: 700px !important;
   --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
   --anim-speed-modifier: 1 !important;
-  --banner-calc-base: 0px !important;
-  --banner-calc-icon: 64px !important;
-  --banner-content-offset: 0px !important;
-  --banner-fade-penalty: 32px !important;
-  --banner-icon-offset: -64px !important;
-  --banner-icon-size: 48px !important;
-  --banner-icon-spacer: 16px !important;
-  --banner-image-actual-height: 320px !important;
+  --banner-fade-height: 80px !important;
+  --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
-  --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
-  --banner-image-radius: 8px !important;
   --banner-mobile-offset: 0px !important;
-  --banner-mobile-spacer: 0px !important;
   --blockquote-size: 16px !important;
   --callout-size: 16px !important;
   --cards-aspect-ratio: auto !important;
@@ -994,7 +985,6 @@ body.theme-light {
   --icon-stroke-modifier: 1 !important;
   --line-width-wide: min(100cqw, 50rem) !important;
   --media-radius: 8px !important;
-  --nav-header-align: center !important;
   --nn-theme-file-border-radius: 12px !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.1) !important;
   --nn-theme-file-tag-color: rgb(138, 92, 245) !important;
@@ -1012,12 +1002,18 @@ body.theme-light {
   --nn-theme-navitem-selected-inactive-bg: rgba(0, 0, 0, 0.067) !important;
   --radius-modifier: 1 !important;
   --radius-modifier-check: clamp(0, (1 - 1) * 10000 + 1, 1) !important;
+  --setting-group-heading-color: #ababab !important;
+  --setting-group-heading-size: 13px !important;
+  --setting-items-padding: 16px 16px !important;
+  --setting-items-radius: 12px !important;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 32px !important;
   --tag-weight: 500 !important;
+  --text-normal-editor: #363636 !important;
   --translucent-dark-opacity: 50% !important;
   --translucent-light-opacity: 50% !important;
+  --view-top-spacing-markdown: 0px !important;
 }
 
 body.theme-dark {
@@ -1027,7 +1023,7 @@ body.theme-dark {
   --anim-duration-fast: 160ms;
   --anim-duration-moderate: 320ms;
   --anim-duration-none: 0;
-  --anim-duration-slow: 640ms;
+  --anim-duration-slow: 480ms;
   --anim-duration-superfast: 80ms;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -1116,7 +1112,7 @@ body.theme-dark {
   --bold-weight: 700;
   --border-width: 1px;
   --button-radius: calc(
-    8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vw *
+    8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh *
       clamp(0, (1 - 1) * 10000 + 1, 1)
   );
   --callout-blend-mode: normal;
@@ -1216,7 +1212,7 @@ body.theme-dark {
   --color-red-rgb: 217, 90, 95;
   --color-yellow: rgb(196, 180, 94);
   --color-yellow-rgb: 196, 180, 94;
-  --corner-smoothing: 0;
+  --corner-smoothing: system-ui;
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1530,7 +1526,7 @@ body.theme-dark {
   --modal-max-height: 1000px;
   --modal-max-width: 1100px;
   --modal-max-width-narrow: 800px;
-  --modal-radius: 16px;
+  --modal-radius: 20px;
   --modal-width: 90vw;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -1603,10 +1599,10 @@ body.theme-dark {
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
   --prompt-width: 700px;
-  --radius-l: 16px;
+  --radius-l: 20px;
   --radius-m: 12px;
   --radius-s: 8px;
-  --radius-xl: 24px;
+  --radius-xl: 28px;
   --ribbon-background: transparent;
   --ribbon-background-collapsed: transparent;
   --ribbon-padding: 8px 4px 12px;
@@ -1619,7 +1615,7 @@ body.theme-dark {
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-border-width: 3px 3px 3px 2px;
   --scrollbar-height: 12px;
-  --scrollbar-radius: 16px;
+  --scrollbar-radius: 20px;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --scrollbar-width: 12px;
   --search-clear-button-color: #b3b3b3;
@@ -1627,7 +1623,7 @@ body.theme-dark {
   --search-icon-color: #b3b3b3;
   --search-icon-size: 18px;
   --search-result-background: #1e1e1e;
-  --shadow-l: 0 14px 62px 0 #00000040;
+  --shadow-l: 0 14px 62px #00000040;
   --shadow-s:
     rgba(0, 0, 0, 0.08) 0px 12px 24px -4px,
     rgba(0, 0, 0, 0.04) 0px 8px 16px -4px;
@@ -1703,7 +1699,7 @@ body.theme-dark {
   --tab-stacked-text-writing-mode: vertical-lr;
   --tab-switcher-background: #262626;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
-  --tab-switcher-preview-radius: 24px;
+  --tab-switcher-preview-radius: 28px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245);
   --tab-text-color: #666666;
@@ -1816,21 +1812,12 @@ body.theme-dark {
   --line-width: 700px;
   --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25);
   --anim-speed-modifier: 1;
-  --banner-calc-base: 0px;
-  --banner-calc-icon: 64px;
-  --banner-content-offset: 0px;
-  --banner-fade-penalty: 32px;
-  --banner-icon-offset: -64px;
-  --banner-icon-size: 48px;
-  --banner-icon-spacer: 16px;
-  --banner-image-actual-height: 320px;
+  --banner-fade-height: 80px;
+  --banner-icon-size: 3rem;
   --banner-image-height: 320px;
-  --banner-image-height-s: 240px;
   --banner-image-inset: 8px;
   --banner-image-object-fit: cover;
-  --banner-image-radius: 8px;
   --banner-mobile-offset: 0px;
-  --banner-mobile-spacer: 0px;
   --blockquote-size: 16px;
   --callout-size: 16px;
   --cards-aspect-ratio: auto;
@@ -1858,7 +1845,6 @@ body.theme-dark {
   --icon-stroke-modifier: 1;
   --line-width-wide: min(100cqw, 50rem);
   --media-radius: 8px;
-  --nav-header-align: center;
   --nn-theme-file-border-radius: 12px;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.1);
   --nn-theme-file-tag-color: rgb(166, 139, 249);
@@ -1876,13 +1862,19 @@ body.theme-dark {
   --nn-theme-navitem-selected-inactive-bg: rgba(255, 255, 255, 0.067);
   --radius-modifier: 1;
   --radius-modifier-check: clamp(0, (1 - 1) * 10000 + 1, 1);
+  --setting-group-heading-color: #666666;
+  --setting-group-heading-size: 13px;
+  --setting-items-padding: 16px 16px;
+  --setting-items-radius: 12px;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px,
     rgba(255, 255, 255, 0.04) 0px 2px 4px -2px;
   --tab-action-width: 32px;
   --tag-weight: 500;
+  --text-normal-editor: #cdcdcd;
   --translucent-dark-opacity: 50%;
   --translucent-light-opacity: 50%;
+  --view-top-spacing-markdown: 0px;
 }
 
 body .markdown-rendered a.external-link {
@@ -1971,7 +1963,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
 }
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   cursor: auto;
   filter: none;
   font-family:
@@ -1989,8 +1981,8 @@ body .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(205, 205, 205);
+  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1999,7 +1991,7 @@ body .markdown-rendered p {
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   cursor: auto;
   filter: none;
   font-family:
@@ -2017,8 +2009,8 @@ body strong {
     sans-serif;
   font-weight: 700;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(205, 205, 205);
+  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2027,7 +2019,7 @@ body strong {
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   cursor: auto;
   filter: none;
   font-family:
@@ -2045,8 +2037,8 @@ body b {
     sans-serif;
   font-weight: 700;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(205, 205, 205);
+  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2055,7 +2047,7 @@ body b {
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   cursor: auto;
   filter: none;
   font-family:
@@ -2073,8 +2065,8 @@ body em {
     sans-serif;
   font-weight: 700;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(205, 205, 205);
+  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2083,7 +2075,7 @@ body em {
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   cursor: auto;
   filter: none;
   font-family:
@@ -2101,8 +2093,8 @@ body i {
     sans-serif;
   font-weight: 700;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(205, 205, 205);
+  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2139,7 +2131,7 @@ body .markdown-rendered mark {
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   cursor: auto;
   filter: none;
   font-family:
@@ -2157,8 +2149,8 @@ body del {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: line-through solid rgb(205, 205, 205);
+  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2178,11 +2170,11 @@ body .suggestion-item.is-selected {
   border-start-end-radius: 8px;
   border-end-start-radius: 8px;
   border-end-end-radius: 8px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -2191,7 +2183,7 @@ body div.suggestion-item {
   border-start-end-radius: 8px;
   border-end-start-radius: 8px;
   border-end-end-radius: 8px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
 }
 body .markdown-rendered hr {
   border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
@@ -2244,7 +2236,7 @@ body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
 }
 body .markdown-rendered ul > li {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   text-align: start;
 }
 body .markdown-rendered ul > li::marker {
@@ -2264,7 +2256,7 @@ body .markdown-rendered ul > li::marker {
   transition: inherit;
 }
 body .markdown-rendered ol > li {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
@@ -2438,19 +2430,19 @@ body .site-body-left-column input.search-bar {
 body .search-results {
   background-color: light-dark(rgb(246, 246, 246), rgb(38, 38, 38));
   border: 1px solid light-dark(rgb(212, 212, 212), rgb(63, 63, 63));
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border-start-start-radius: 16px;
-  border-start-end-radius: 16px;
-  border-end-start-radius: 16px;
-  border-end-end-radius: 16px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
+  border-end-start-radius: 20px;
+  border-end-end-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 62px 0px;
 }
 body .search-results > * {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   cursor: auto;
   filter: none;
   font-family:
@@ -2468,8 +2460,8 @@ body .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(205, 205, 205);
+  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2478,20 +2470,20 @@ body .search-results > * {
 }
 body div.search-results {
   border: 1px solid light-dark(rgb(212, 212, 212), rgb(63, 63, 63));
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border-start-start-radius: 16px;
-  border-start-end-radius: 16px;
-  border-end-start-radius: 16px;
-  border-end-end-radius: 16px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
+  border-end-start-radius: 20px;
+  border-end-end-radius: 20px;
 }
 body .search-results .suggestion-item {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
 }
 body div.search-results .suggestion-item {
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -2502,7 +2494,7 @@ body div.search-results .suggestion-item {
   border-end-end-radius: 8px;
 }
 body .search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   font-weight: 400;
   background-color: light-dark(
     rgba(0, 0, 0, 0.067),
@@ -2510,35 +2502,35 @@ body .search-results .suggestion-item.is-selected {
   );
 }
 body div.search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
 }
 body .published-container .markdown-rendered h1 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   font-family: InstrumentSerif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   font-family: InstrumentSerif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   font-family: InstrumentSerif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   font-family: InstrumentSerif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   font-family: InstrumentSerif;
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   font-family: InstrumentSerif;
   text-shadow: none;
 }
@@ -2552,7 +2544,7 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

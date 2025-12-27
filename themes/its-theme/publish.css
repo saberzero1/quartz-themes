@@ -877,6 +877,8 @@ body.theme-light {
   --h5-border-color: #697795 !important;
   --h6-border-color: #a4aec2 !important;
   --r-heading-color: #c14343 !important;
+  --r-heading-font:
+    "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -1156,8 +1158,6 @@ body.theme-light {
   --popover-border: 3px solid #e1e9f6 !important;
   --progress: #912e2e !important;
   --progress-bg: #e1e9f6 !important;
-  --r-heading-font:
-    "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif !important;
   --r-heading-font-weight: 700 !important;
   --r-progress-color: #cd2626 !important;
   --radius-h: 0 !important;
@@ -2169,6 +2169,8 @@ body.theme-dark {
   --h5-border-color: #424c61;
   --h6-border-color: #2e333d;
   --r-heading-color: #c14343;
+  --r-heading-font:
+    "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --r-heading-text-transform: capitalize;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -2448,8 +2450,6 @@ body.theme-dark {
   --popover-border: 3px solid #0b0f13;
   --progress: #863737;
   --progress-bg: #252c36;
-  --r-heading-font:
-    "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --r-heading-font-weight: 700;
   --r-progress-color: #c94d4d;
   --radius-h: 0;

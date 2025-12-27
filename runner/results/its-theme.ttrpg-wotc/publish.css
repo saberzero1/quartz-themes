@@ -842,6 +842,7 @@ body.theme-light {
   --h5-border-color: #697795 !important;
   --h6-border-color: #a4aec2 !important;
   --r-heading-color: #c14343 !important;
+  --r-heading-font: "its-Draconis", "Draconis", Inter !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font: "its-Bookerly", "Bookerly", Inter !important;
   --folder-icon: "" !important;
@@ -1164,7 +1165,6 @@ body.theme-light {
   --popover-border: 3px solid #fbb4577e !important;
   --progress: #c75959 !important;
   --progress-bg: #f6e3cd !important;
-  --r-heading-font: "its-Draconis", "Draconis", Inter !important;
   --r-heading-font-weight: 500 !important;
   --r-progress-color: #a35158 !important;
   --radius-h: 0 !important;
@@ -2140,6 +2140,7 @@ body.theme-dark {
   --h5-border-color: #424c61;
   --h6-border-color: #2e333d;
   --r-heading-color: #c14343;
+  --r-heading-font: "its-Draconis", "Draconis", Inter;
   --r-heading-text-transform: capitalize;
   --r-main-font: "its-Bookerly", "Bookerly", Inter;
   --folder-icon: "";
@@ -2414,7 +2415,6 @@ body.theme-dark {
   --popover-border: 3px solid #0000008c;
   --progress: #863737;
   --progress-bg: #252c36;
-  --r-heading-font: "its-Draconis", "Draconis", Inter;
   --r-heading-font-weight: 500;
   --r-progress-color: #c94d4d;
   --radius-h: 0;

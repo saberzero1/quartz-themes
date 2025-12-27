@@ -183,7 +183,8 @@ body.theme-light {
   --background-modifier-error-rgb: rgb(235, 83, 37) !important;
   --background-modifier-form-field: #faf7ef !important;
   --background-modifier-form-field-hover: #faf7ef !important;
-  --background-modifier-message: color-mix(in hsl, #080808, #797876) !important;
+  --background-modifier-hover: #edebe5 !important;
+  --background-modifier-message: color-mix(in hsl, #edebe5, #dddcd6) !important;
   --background-modifier-success: #689523 !important;
   --background-modifier-success-rgb: rgb(104, 149, 35) !important;
   --background-primary: #faf7ef !important;
@@ -243,6 +244,7 @@ body.theme-light {
   --bases-table-group-background: #edebe5 !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: #faf7ef !important;
+  --bases-table-header-background-hover: #edebe5 !important;
   --bases-table-header-color: color-mix(in hsl, #6f768599, #080808) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -255,6 +257,7 @@ body.theme-light {
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: #faf7ef !important;
+  --bases-table-summary-background-hover: #edebe5 !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
@@ -321,6 +324,7 @@ body.theme-light {
   --code-background: color-mix(in hsl, #faf7ef 70%, #edebe5 30%) !important;
   --code-border-color: color-mix(in hsl, #edebe5, #dddcd6) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: #edebe5 !important;
   --code-comment: #6f768599 !important;
   --code-function: #e8c62a !important;
   --code-important: #eb5325 !important;
@@ -339,7 +343,7 @@ body.theme-light {
   --collapse-icon-color-collapsed: #5770b9 !important;
   --color-accent: rgb(86, 111, 184) !important;
   --color-accent-1: rgb(114, 139, 197) !important;
-  --color-accent-2: hsla(205, 35%, 58%, 0.875) !important;
+  --color-accent-2: hsla(205, 35%, 58%, 88%) !important;
   --color-accent-hsl: 225, 41%, 53% !important;
   --color-base-00: #faf7ef !important;
   --color-base-05: color-mix(in hsl, #faf7ef 70%, #edebe5 30%) !important;
@@ -472,6 +476,7 @@ body.theme-light {
   --footnote-id-color-no-occurrences: #6f768599 !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
+  --footnote-input-background-active: #edebe5 !important;
   --footnote-line-height: 1.4 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -546,7 +551,7 @@ body.theme-light {
   --icon-stroke: 2px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
-  --icon-xs: 14px !important;
+  --icon-xs: 12.25px !important;
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
@@ -657,13 +662,14 @@ body.theme-light {
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
-  --metadata-display-reading: none !important;
+  --metadata-display-reading: block !important;
   --metadata-divider-color: color-mix(in hsl, #edebe5, #dddcd6) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
+  --metadata-input-background-active: #edebe5 !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -674,6 +680,7 @@ body.theme-light {
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-text-color: #080808 !important;
   --metadata-label-background: transparent !important;
+  --metadata-label-background-active: #edebe5 !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -690,6 +697,7 @@ body.theme-light {
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
+  --metadata-property-background-active: #edebe5 !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px
     color-mix(in hsl, #dddcd6, #d3d3ce) !important;
@@ -726,7 +734,8 @@ body.theme-light {
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-hover: transparent !important;
+  --nav-item-background-active: #edebe5 !important;
+  --nav-item-background-hover: #edebe5 !important;
   --nav-item-background-selected: #dddcd6 !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
@@ -1040,11 +1049,29 @@ body.theme-light {
   --bases-border-r: 16px !important;
   --bases-cards-group-padding: 16px !important;
   --bases-no-img-str: "No image path could be found for this file" !important;
-  --cm-font-size: 15.37129px !important;
+  --cm-font-size: 15.37127px !important;
   --cm-panel-bg: color-mix(
     in srgb,
     color-mix(in hsl, #faf7ef 70%, #edebe5 30%) 55%,
     #edebe5 45%
+  ) !important;
+  --color-blue-cyan-mix: color-mix(in hsl, #5c9fe4, #3b9ba1) !important;
+  --color-blue-cyan-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5c9fe4, #3b9ba1) 20%,
+    transparent
+  ) !important;
+  --color-blue-green-mix: color-mix(in hsl, #5c9fe4, #689523) !important;
+  --color-blue-green-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5c9fe4, #689523) 20%,
+    transparent
+  ) !important;
+  --color-blue-orange-mix: color-mix(in hsl, #5c9fe4, #ed8126) !important;
+  --color-blue-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5c9fe4, #ed8126) 20%,
+    transparent
   ) !important;
   --color-blue-pink-mix: color-mix(in hsl, #5c9fe4, #e389ca) !important;
   --color-blue-pink-mix-bg: color-mix(
@@ -1058,10 +1085,34 @@ body.theme-light {
     color-mix(in hsl, #5c9fe4, #6f49ae) 20%,
     transparent
   ) !important;
+  --color-blue-red-mix: color-mix(in hsl, #5c9fe4, #eb5325) !important;
+  --color-blue-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5c9fe4, #eb5325) 20%,
+    transparent
+  ) !important;
+  --color-blue-yellow-mix: color-mix(in hsl, #5c9fe4, #e8c62a) !important;
+  --color-blue-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5c9fe4, #e8c62a) 20%,
+    transparent
+  ) !important;
   --color-cyan-blue-mix: color-mix(in hsl, #3b9ba1, #5c9fe4) !important;
   --color-cyan-blue-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #3b9ba1, #5c9fe4) 20%,
+    transparent
+  ) !important;
+  --color-cyan-green-mix: color-mix(in hsl, #3b9ba1, #689523) !important;
+  --color-cyan-green-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #3b9ba1, #689523) 20%,
+    transparent
+  ) !important;
+  --color-cyan-orange-mix: color-mix(in hsl, #3b9ba1, #ed8126) !important;
+  --color-cyan-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #3b9ba1, #ed8126) 20%,
     transparent
   ) !important;
   --color-cyan-pink-mix: color-mix(in hsl, #3b9ba1, #e389ca) !important;
@@ -1076,6 +1127,18 @@ body.theme-light {
     color-mix(in hsl, #3b9ba1, #6f49ae) 20%,
     transparent
   ) !important;
+  --color-cyan-red-mix: color-mix(in hsl, #3b9ba1, #eb5325) !important;
+  --color-cyan-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #3b9ba1, #eb5325) 20%,
+    transparent
+  ) !important;
+  --color-cyan-yellow-mix: color-mix(in hsl, #3b9ba1, #e8c62a) !important;
+  --color-cyan-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #3b9ba1, #e8c62a) 20%,
+    transparent
+  ) !important;
   --color-green-blue-mix: color-mix(in hsl, #689523, #5c9fe4) !important;
   --color-green-blue-mix-bg: color-mix(
     in hsl,
@@ -1088,6 +1151,12 @@ body.theme-light {
     color-mix(in hsl, #689523, #3b9ba1) 20%,
     transparent
   ) !important;
+  --color-green-orange-mix: color-mix(in hsl, #689523, #ed8126) !important;
+  --color-green-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #689523, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-green-pink-mix: color-mix(in hsl, #689523, #e389ca) !important;
   --color-green-pink-mix-bg: color-mix(
     in hsl,
@@ -1098,6 +1167,18 @@ body.theme-light {
   --color-green-purple-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #689523, #6f49ae) 20%,
+    transparent
+  ) !important;
+  --color-green-red-mix: color-mix(in hsl, #689523, #eb5325) !important;
+  --color-green-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #689523, #eb5325) 20%,
+    transparent
+  ) !important;
+  --color-green-yellow-mix: color-mix(in hsl, #689523, #e8c62a) !important;
+  --color-green-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #689523, #e8c62a) 20%,
     transparent
   ) !important;
   --color-orange-blue-mix: color-mix(in hsl, #ed8126, #5c9fe4) !important;
@@ -1130,16 +1211,100 @@ body.theme-light {
     color-mix(in hsl, #ed8126, #6f49ae) 20%,
     transparent
   ) !important;
+  --color-orange-red-mix: color-mix(in hsl, #ed8126, #eb5325) !important;
+  --color-orange-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #ed8126, #eb5325) 20%,
+    transparent
+  ) !important;
   --color-orange-yellow-mix: color-mix(in hsl, #ed8126, #e8c62a) !important;
   --color-orange-yellow-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #ed8126, #e8c62a) 20%,
     transparent
   ) !important;
+  --color-pink-blue-mix: color-mix(in hsl, #e389ca, #5c9fe4) !important;
+  --color-pink-blue-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #e389ca, #5c9fe4) 20%,
+    transparent
+  ) !important;
+  --color-pink-cyan-mix: color-mix(in hsl, #e389ca, #3b9ba1) !important;
+  --color-pink-cyan-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #e389ca, #3b9ba1) 20%,
+    transparent
+  ) !important;
+  --color-pink-green-mix: color-mix(in hsl, #e389ca, #689523) !important;
+  --color-pink-green-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #e389ca, #689523) 20%,
+    transparent
+  ) !important;
+  --color-pink-orange-mix: color-mix(in hsl, #e389ca, #ed8126) !important;
+  --color-pink-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #e389ca, #ed8126) 20%,
+    transparent
+  ) !important;
+  --color-pink-purple-mix: color-mix(in hsl, #e389ca, #6f49ae) !important;
+  --color-pink-purple-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #e389ca, #6f49ae) 20%,
+    transparent
+  ) !important;
+  --color-pink-red-mix: color-mix(in hsl, #e389ca, #eb5325) !important;
+  --color-pink-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #e389ca, #eb5325) 20%,
+    transparent
+  ) !important;
+  --color-pink-yellow-mix: color-mix(in hsl, #e389ca, #e8c62a) !important;
+  --color-pink-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #e389ca, #e8c62a) 20%,
+    transparent
+  ) !important;
+  --color-purple-blue-mix: color-mix(in hsl, #6f49ae, #5c9fe4) !important;
+  --color-purple-blue-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #6f49ae, #5c9fe4) 20%,
+    transparent
+  ) !important;
+  --color-purple-cyan-mix: color-mix(in hsl, #6f49ae, #3b9ba1) !important;
+  --color-purple-cyan-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #6f49ae, #3b9ba1) 20%,
+    transparent
+  ) !important;
+  --color-purple-green-mix: color-mix(in hsl, #6f49ae, #689523) !important;
+  --color-purple-green-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #6f49ae, #689523) 20%,
+    transparent
+  ) !important;
+  --color-purple-orange-mix: color-mix(in hsl, #6f49ae, #ed8126) !important;
+  --color-purple-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #6f49ae, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-purple-pink-mix: color-mix(in hsl, #6f49ae, #e389ca) !important;
   --color-purple-pink-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #6f49ae, #e389ca) 20%,
+    transparent
+  ) !important;
+  --color-purple-red-mix: color-mix(in hsl, #6f49ae, #eb5325) !important;
+  --color-purple-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #6f49ae, #eb5325) 20%,
+    transparent
+  ) !important;
+  --color-purple-yellow-mix: color-mix(in hsl, #6f49ae, #e8c62a) !important;
+  --color-purple-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #6f49ae, #e8c62a) 20%,
     transparent
   ) !important;
   --color-red-blue-mix: color-mix(in hsl, #eb5325, #5c9fe4) !important;
@@ -1202,6 +1367,12 @@ body.theme-light {
     color-mix(in hsl, #e8c62a, #689523) 20%,
     transparent
   ) !important;
+  --color-yellow-orange-mix: color-mix(in hsl, #e8c62a, #ed8126) !important;
+  --color-yellow-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #e8c62a, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-yellow-pink-mix: color-mix(in hsl, #e8c62a, #e389ca) !important;
   --color-yellow-pink-mix-bg: color-mix(
     in hsl,
@@ -1212,6 +1383,12 @@ body.theme-light {
   --color-yellow-purple-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #e8c62a, #6f49ae) 20%,
+    transparent
+  ) !important;
+  --color-yellow-red-mix: color-mix(in hsl, #e8c62a, #eb5325) !important;
+  --color-yellow-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #e8c62a, #eb5325) 20%,
     transparent
   ) !important;
   --dimmed: 0.55 !important;
@@ -1225,10 +1402,15 @@ body.theme-light {
   --flexcyon-anim-easing: ease-in-out !important;
   --flexcyon-anim-rotate-amount: 50deg !important;
   --flexcyon-anim-slide-amount: 56.63105px !important;
+  --flexcyon-anim-start-opacity: 0.55 !important;
+  --flexcyon-anim-start-scale-amt: 0.33 !important;
+  --flexcyon-ascii-alignment: left !important;
   --flexcyon-ascii-art: " _______________ ___ ____/__ /________ ____________ ______________ __ /_ __ /_ _ _ |/_/ ___/_ / / / __ _ __  _ __/ _ / / __/_ / /__ _ /_/ // /_/ / / / / /_/ /_/ ___//_/|_| ___/ ___, / ____//_/ /_/ /____/  " !important;
   --flexcyon-ascii-checkboxes-font-size: 1.2rem !important;
   --flexcyon-ascii-line-height: 1.5 !important;
   --flexcyon-ascii-max-font-size: 14px !important;
+  --flexcyon-ascii-max-width: 50rem !important;
+  --flexcyon-ascii-scaling-factor: 1 !important;
   --flexcyon-base-01: #faf7ef !important;
   --flexcyon-base-01-02-mix: color-mix(
     in hsl,
@@ -1247,8 +1429,8 @@ body.theme-light {
   --flexcyon-base-grey-mix: color-mix(in hsl, #080808, #797876) !important;
   --flexcyon-base-grey-scroll: #3f495e !important;
   --flexcyon-base-grey-scroll-hover: #5c6782 !important;
-  --flexcyon-base-grey-tab: transparent !important;
-  --flexcyon-base-grey-token: transparent !important;
+  --flexcyon-base-grey-tab: #71777f !important;
+  --flexcyon-base-grey-token: #586582 !important;
   --flexcyon-bases-card-delay-factor: 12.5 !important;
   --flexcyon-bases-card-flex-gorw: 0.55 !important;
   --flexcyon-bases-card-flex-grow: 0.55 !important;
@@ -1259,6 +1441,7 @@ body.theme-light {
   --flexcyon-bases-card-padding-top: 8px !important;
   --flexcyon-bases-padding-horiz: 16px !important;
   --flexcyon-bases-padding-verti: 16px !important;
+  --flexcyon-bases-table-content-alignment: left !important;
   --flexcyon-bases-td-padding-l: 2px !important;
   --flexcyon-bg-image-blend-mode: darken !important;
   --flexcyon-bg-image-blur: 0px !important;
@@ -1291,6 +1474,7 @@ body.theme-light {
   --flexcyon-code-variable: #3b9ba1 !important;
   --flexcyon-codeblock-fmt-ext: lowercase !important;
   --flexcyon-comm-item-opacity: 0.89 !important;
+  --flexcyon-comm-text-padding: 3px 16px !important;
   --flexcyon-contrast-ratio: 1 !important;
   --flexcyon-cursor-duration: 42.5ms !important;
   --flexcyon-cursor-timing-fn: ease-in !important;
@@ -1300,13 +1484,18 @@ body.theme-light {
   --flexcyon-cyan: #3b9ba1 !important;
   --flexcyon-dataview-horizontal-padding: 8px !important;
   --flexcyon-default-ol-style: decimal !important;
-  --flexcyon-editor-bg-color: #edebe5 !important;
+  --flexcyon-editor-bg-color: color-mix(
+    in oklch,
+    color-mix(in hsl, #faf7ef 70%, #edebe5 30%),
+    #edebe5
+  ) !important;
   --flexcyon-editor-bg-color-2: color-mix(in hsl, #edebe5, #dddcd6) !important;
   --flexcyon-editor-bg-rotation: 0deg !important;
   --flexcyon-editor-bg-width: 15px !important;
   --flexcyon-editor-dot-size: 2.5px !important;
   --flexcyon-editor-margin-top: 18px !important;
   --flexcyon-editor-writing-indentation: 16px !important;
+  --flexcyon-exp-dimmed-nav-size: 13.3623px !important;
   --flexcyon-external-link-color: #5c9fe4 !important;
   --flexcyon-external-link-hover: color-mix(
     in hsl shorter hue,
@@ -1337,11 +1526,14 @@ body.theme-light {
   --flexcyon-media-embed-vertical-margin: 8px !important;
   --flexcyon-meta-container-padding-left: 14px !important;
   --flexcyon-modal-bg-url: url("") !important;
+  --flexcyon-modal-dark-intensity: 1 !important;
   --flexcyon-modal-image-blend-mode: lighten !important;
   --flexcyon-modal-image-blur: 0px !important;
   --flexcyon-modal-image-position: center !important;
   --flexcyon-modal-image-repeat: no-repeat !important;
   --flexcyon-modal-image-size: cover !important;
+  --flexcyon-mode-view-header-title-horiz-padding: 12px !important;
+  --flexcyon-mode-view-header-title-verti-padding: 4px !important;
   --flexcyon-new-tab-bg-wrapper: linear-gradient(
     to right,
     #5770b9,
@@ -1369,9 +1561,13 @@ body.theme-light {
   --flexcyon-quote-val: "This is a placeholder quotein the Flexcyon Theme." !important;
   --flexcyon-red-salmon: #eb5325 !important;
   --flexcyon-repl-active-line-str: "-" !important;
+  --flexcyon-repl-active-str-space: 0px !important;
   --flexcyon-saturation-ratio: 1 !important;
   --flexcyon-screen-dimens-padding-l: 16px !important;
+  --flexcyon-search-container-horiz-padding: 16px !important;
+  --flexcyon-search-container-verti-padding: 8px !important;
   --flexcyon-settings-installed-tooltip-left-margin: 1rem !important;
+  --flexcyon-side-toggle-button-no-ribbon: 11px 16px 7px 0px !important;
   --flexcyon-status-hide-hover-duration: 0.35s !important;
   --flexcyon-status-hide-hover-function: ease-out !important;
   --flexcyon-status-hide-until-hover-text: "Show status" !important;
@@ -1405,7 +1601,7 @@ body.theme-light {
   --graph-control-horiz-padding: 12px !important;
   --graph-control-verti-padding: 6px !important;
   --h: tan(atan2(1380px, 1px)) !important;
-  --h_raw: 1380px !important;
+  --h-raw: 1380px !important;
   --img-border-radius: 15px !important;
   --less-letter-spacing: -3px !important;
   --oz-fta-all-panes-active-text-color: #080808 !important;
@@ -1414,9 +1610,19 @@ body.theme-light {
   --oz-fta-folder-font-size: calc(16.1803px - 0.1rem) !important;
   --oz-fta-folder-pane-file-name-color: #080808 !important;
   --oz-fta-folder-panes-file-name-color: #080808 !important;
+  --r-background-color: color-mix(in hsl, #faf7ef 70%, #edebe5 30%) !important;
   --r-heading-color: #080808 !important;
+  --r-heading-font:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --r-heading-margin: 16px 0px !important;
   --r-heading-text-transform: capitalize !important;
+  --r-heading1-size: 1.81803em !important;
+  --r-heading2-size: 1.61803em !important;
+  --r-heading3-size: 1.41803em !important;
+  --r-heading4-size: 1.21803em !important;
+  --r-link-color: hsla(205, 35%, 58%, 88%) !important;
   --r-main-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -1425,7 +1631,7 @@ body.theme-light {
   --radius-x1: 8px !important;
   --upsize: 103% !important;
   --w: tan(atan2(2538px, 1px)) !important;
-  --w_raw: 2538px !important;
+  --w-raw: 2538px !important;
 }
 
 body.theme-dark {
@@ -1459,6 +1665,7 @@ body.theme-dark {
   --background-primary: #191d28;
   --background-primary-alt: #24262c;
   --background-secondary: #14161c;
+  --background-secondary-alt: color-mix(in hsl, #191d28, #24262c);
   --bases-cards-background: #191d28;
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
@@ -1595,7 +1802,7 @@ body.theme-dark {
   --collapse-icon-color-collapsed: rgb(147, 238, 109);
   --color-accent: rgb(112, 233, 73);
   --color-accent-1: rgb(147, 238, 109);
-  --color-accent-2: hsla(85.5, 66%, 65%, 0.875);
+  --color-accent-2: hsla(85.5, 66%, 65%, 88%);
   --color-accent-hsl: 105.5, 77.5%, 59.5%;
   --color-base-00: #14161c;
   --color-base-05: color-mix(in hsl, #14161c, #191d28);
@@ -1803,7 +2010,7 @@ body.theme-dark {
   --icon-stroke: 2px;
   --icon-xl: 32px;
   --icon-xl-stroke-width: 1.25px;
-  --icon-xs: 14px;
+  --icon-xs: 12.25px;
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
@@ -1902,7 +2109,7 @@ body.theme-dark {
   --metadata-border-radius: 0;
   --metadata-border-width: 0;
   --metadata-display-editing: block;
-  --metadata-display-reading: none;
+  --metadata-display-reading: block;
   --metadata-divider-color: color-mix(in hsl, #191d28, #24262c);
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
@@ -1971,7 +2178,7 @@ body.theme-dark {
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12);
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: color-mix(in hsl, #191d28, #24262c);
-  --nav-item-background-hover: transparent;
+  --nav-item-background-hover: color-mix(in hsl, #191d28, #24262c);
   --nav-item-background-selected: #24262c;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
@@ -2247,8 +2454,26 @@ body.theme-dark {
   --bases-border-r: 16px;
   --bases-cards-group-padding: 16px;
   --bases-no-img-str: "No image path could be found for this file";
-  --cm-font-size: 15.37129px;
+  --cm-font-size: 15.37127px;
   --cm-panel-bg: #14161c;
+  --color-blue-cyan-mix: color-mix(in hsl, #5a8fcd, #3cb9c2);
+  --color-blue-cyan-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5a8fcd, #3cb9c2) 20%,
+    transparent
+  );
+  --color-blue-green-mix: color-mix(in hsl, #5a8fcd, #a1c05c);
+  --color-blue-green-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5a8fcd, #a1c05c) 20%,
+    transparent
+  );
+  --color-blue-orange-mix: color-mix(in hsl, #5a8fcd, #cc8449);
+  --color-blue-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5a8fcd, #cc8449) 20%,
+    transparent
+  );
   --color-blue-pink-mix: color-mix(in hsl, #5a8fcd, #d458a3);
   --color-blue-pink-mix-bg: color-mix(
     in hsl,
@@ -2261,10 +2486,34 @@ body.theme-dark {
     color-mix(in hsl, #5a8fcd, #a461c8) 20%,
     transparent
   );
+  --color-blue-red-mix: color-mix(in hsl, #5a8fcd, #c03a47);
+  --color-blue-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5a8fcd, #c03a47) 20%,
+    transparent
+  );
+  --color-blue-yellow-mix: color-mix(in hsl, #5a8fcd, #c29e42);
+  --color-blue-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #5a8fcd, #c29e42) 20%,
+    transparent
+  );
   --color-cyan-blue-mix: color-mix(in hsl, #3cb9c2, #5a8fcd);
   --color-cyan-blue-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #3cb9c2, #5a8fcd) 20%,
+    transparent
+  );
+  --color-cyan-green-mix: color-mix(in hsl, #3cb9c2, #a1c05c);
+  --color-cyan-green-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #3cb9c2, #a1c05c) 20%,
+    transparent
+  );
+  --color-cyan-orange-mix: color-mix(in hsl, #3cb9c2, #cc8449);
+  --color-cyan-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #3cb9c2, #cc8449) 20%,
     transparent
   );
   --color-cyan-pink-mix: color-mix(in hsl, #3cb9c2, #d458a3);
@@ -2279,6 +2528,18 @@ body.theme-dark {
     color-mix(in hsl, #3cb9c2, #a461c8) 20%,
     transparent
   );
+  --color-cyan-red-mix: color-mix(in hsl, #3cb9c2, #c03a47);
+  --color-cyan-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #3cb9c2, #c03a47) 20%,
+    transparent
+  );
+  --color-cyan-yellow-mix: color-mix(in hsl, #3cb9c2, #c29e42);
+  --color-cyan-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #3cb9c2, #c29e42) 20%,
+    transparent
+  );
   --color-green-blue-mix: color-mix(in hsl, #a1c05c, #5a8fcd);
   --color-green-blue-mix-bg: color-mix(
     in hsl,
@@ -2291,6 +2552,12 @@ body.theme-dark {
     color-mix(in hsl, #a1c05c, #3cb9c2) 20%,
     transparent
   );
+  --color-green-orange-mix: color-mix(in hsl, #a1c05c, #cc8449);
+  --color-green-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #a1c05c, #cc8449) 20%,
+    transparent
+  );
   --color-green-pink-mix: color-mix(in hsl, #a1c05c, #d458a3);
   --color-green-pink-mix-bg: color-mix(
     in hsl,
@@ -2301,6 +2568,18 @@ body.theme-dark {
   --color-green-purple-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #a1c05c, #a461c8) 20%,
+    transparent
+  );
+  --color-green-red-mix: color-mix(in hsl, #a1c05c, #c03a47);
+  --color-green-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #a1c05c, #c03a47) 20%,
+    transparent
+  );
+  --color-green-yellow-mix: color-mix(in hsl, #a1c05c, #c29e42);
+  --color-green-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #a1c05c, #c29e42) 20%,
     transparent
   );
   --color-orange-blue-mix: color-mix(in hsl, #cc8449, #5a8fcd);
@@ -2333,16 +2612,100 @@ body.theme-dark {
     color-mix(in hsl, #cc8449, #a461c8) 20%,
     transparent
   );
+  --color-orange-red-mix: color-mix(in hsl, #cc8449, #c03a47);
+  --color-orange-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #cc8449, #c03a47) 20%,
+    transparent
+  );
   --color-orange-yellow-mix: color-mix(in hsl, #cc8449, #c29e42);
   --color-orange-yellow-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #cc8449, #c29e42) 20%,
     transparent
   );
+  --color-pink-blue-mix: color-mix(in hsl, #d458a3, #5a8fcd);
+  --color-pink-blue-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #d458a3, #5a8fcd) 20%,
+    transparent
+  );
+  --color-pink-cyan-mix: color-mix(in hsl, #d458a3, #3cb9c2);
+  --color-pink-cyan-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #d458a3, #3cb9c2) 20%,
+    transparent
+  );
+  --color-pink-green-mix: color-mix(in hsl, #d458a3, #a1c05c);
+  --color-pink-green-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #d458a3, #a1c05c) 20%,
+    transparent
+  );
+  --color-pink-orange-mix: color-mix(in hsl, #d458a3, #cc8449);
+  --color-pink-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #d458a3, #cc8449) 20%,
+    transparent
+  );
+  --color-pink-purple-mix: color-mix(in hsl, #d458a3, #a461c8);
+  --color-pink-purple-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #d458a3, #a461c8) 20%,
+    transparent
+  );
+  --color-pink-red-mix: color-mix(in hsl, #d458a3, #c03a47);
+  --color-pink-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #d458a3, #c03a47) 20%,
+    transparent
+  );
+  --color-pink-yellow-mix: color-mix(in hsl, #d458a3, #c29e42);
+  --color-pink-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #d458a3, #c29e42) 20%,
+    transparent
+  );
+  --color-purple-blue-mix: color-mix(in hsl, #a461c8, #5a8fcd);
+  --color-purple-blue-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #a461c8, #5a8fcd) 20%,
+    transparent
+  );
+  --color-purple-cyan-mix: color-mix(in hsl, #a461c8, #3cb9c2);
+  --color-purple-cyan-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #a461c8, #3cb9c2) 20%,
+    transparent
+  );
+  --color-purple-green-mix: color-mix(in hsl, #a461c8, #a1c05c);
+  --color-purple-green-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #a461c8, #a1c05c) 20%,
+    transparent
+  );
+  --color-purple-orange-mix: color-mix(in hsl, #a461c8, #cc8449);
+  --color-purple-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #a461c8, #cc8449) 20%,
+    transparent
+  );
   --color-purple-pink-mix: color-mix(in hsl, #a461c8, #d458a3);
   --color-purple-pink-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #a461c8, #d458a3) 20%,
+    transparent
+  );
+  --color-purple-red-mix: color-mix(in hsl, #a461c8, #c03a47);
+  --color-purple-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #a461c8, #c03a47) 20%,
+    transparent
+  );
+  --color-purple-yellow-mix: color-mix(in hsl, #a461c8, #c29e42);
+  --color-purple-yellow-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #a461c8, #c29e42) 20%,
     transparent
   );
   --color-red-blue-mix: color-mix(in hsl, #c03a47, #5a8fcd);
@@ -2405,6 +2768,12 @@ body.theme-dark {
     color-mix(in hsl, #c29e42, #a1c05c) 20%,
     transparent
   );
+  --color-yellow-orange-mix: color-mix(in hsl, #c29e42, #cc8449);
+  --color-yellow-orange-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #c29e42, #cc8449) 20%,
+    transparent
+  );
   --color-yellow-pink-mix: color-mix(in hsl, #c29e42, #d458a3);
   --color-yellow-pink-mix-bg: color-mix(
     in hsl,
@@ -2415,6 +2784,12 @@ body.theme-dark {
   --color-yellow-purple-mix-bg: color-mix(
     in hsl,
     color-mix(in hsl, #c29e42, #a461c8) 20%,
+    transparent
+  );
+  --color-yellow-red-mix: color-mix(in hsl, #c29e42, #c03a47);
+  --color-yellow-red-mix-bg: color-mix(
+    in hsl,
+    color-mix(in hsl, #c29e42, #c03a47) 20%,
     transparent
   );
   --dimmed: 0.55;
@@ -2428,10 +2803,15 @@ body.theme-dark {
   --flexcyon-anim-easing: ease-in-out;
   --flexcyon-anim-rotate-amount: 50deg;
   --flexcyon-anim-slide-amount: 56.63105px;
+  --flexcyon-anim-start-opacity: 0.55;
+  --flexcyon-anim-start-scale-amt: 0.33;
+  --flexcyon-ascii-alignment: left;
   --flexcyon-ascii-art: " _______________ ___ ____/__ /________ ____________ ______________ __ /_ __ /_ _ _ |/_/ ___/_ / / / __ _ __  _ __/ _ / / __/_ / /__ _ /_/ // /_/ / / / / /_/ /_/ ___//_/|_| ___/ ___, / ____//_/ /_/ /____/  ";
   --flexcyon-ascii-checkboxes-font-size: 1.2rem;
   --flexcyon-ascii-line-height: 1.5;
   --flexcyon-ascii-max-font-size: 14px;
+  --flexcyon-ascii-max-width: 50rem;
+  --flexcyon-ascii-scaling-factor: 1;
   --flexcyon-base-01: #14161c;
   --flexcyon-base-01-02-mix: color-mix(in hsl, #14161c, #191d28);
   --flexcyon-base-02: #191d28;
@@ -2446,8 +2826,8 @@ body.theme-dark {
   --flexcyon-base-grey-mix: color-mix(in hsl, #d3d5d3, #898c93);
   --flexcyon-base-grey-scroll: #3f495e;
   --flexcyon-base-grey-scroll-hover: #5c6782;
-  --flexcyon-base-grey-tab: transparent;
-  --flexcyon-base-grey-token: transparent;
+  --flexcyon-base-grey-tab: #71777f;
+  --flexcyon-base-grey-token: #586582;
   --flexcyon-bases-card-delay-factor: 12.5;
   --flexcyon-bases-card-flex-gorw: 0.55;
   --flexcyon-bases-card-flex-grow: 0.55;
@@ -2458,6 +2838,7 @@ body.theme-dark {
   --flexcyon-bases-card-padding-top: 8px;
   --flexcyon-bases-padding-horiz: 16px;
   --flexcyon-bases-padding-verti: 16px;
+  --flexcyon-bases-table-content-alignment: left;
   --flexcyon-bases-td-padding-l: 2px;
   --flexcyon-bg-image-blend-mode: darken;
   --flexcyon-bg-image-blur: 0px;
@@ -2490,6 +2871,7 @@ body.theme-dark {
   --flexcyon-code-variable: #3cb9c2;
   --flexcyon-codeblock-fmt-ext: lowercase;
   --flexcyon-comm-item-opacity: 0.89;
+  --flexcyon-comm-text-padding: 3px 16px;
   --flexcyon-contrast-ratio: 1;
   --flexcyon-cursor-duration: 42.5ms;
   --flexcyon-cursor-timing-fn: ease-in;
@@ -2500,9 +2882,9 @@ body.theme-dark {
   --flexcyon-dataview-horizontal-padding: 8px;
   --flexcyon-default-ol-style: decimal;
   --flexcyon-editor-bg-color: color-mix(
-    in hsl,
-    #14161c,
-    color-mix(in hsl, #14161c, #191d28)
+    in oklch,
+    color-mix(in hsl, #14161c, #191d28) 70%,
+    #191d28 30%
   );
   --flexcyon-editor-bg-color-2: color-mix(in hsl, #191d28, #24262c);
   --flexcyon-editor-bg-rotation: 0deg;
@@ -2510,6 +2892,7 @@ body.theme-dark {
   --flexcyon-editor-dot-size: 2.5px;
   --flexcyon-editor-margin-top: 18px;
   --flexcyon-editor-writing-indentation: 16px;
+  --flexcyon-exp-dimmed-nav-size: 13.3623px;
   --flexcyon-external-link-color: #5a8fcd;
   --flexcyon-external-link-hover: color-mix(
     in hsl shorter hue,
@@ -2536,11 +2919,14 @@ body.theme-dark {
   --flexcyon-media-embed-vertical-margin: 8px;
   --flexcyon-meta-container-padding-left: 14px;
   --flexcyon-modal-bg-url: url("");
+  --flexcyon-modal-dark-intensity: 1;
   --flexcyon-modal-image-blend-mode: lighten;
   --flexcyon-modal-image-blur: 0px;
   --flexcyon-modal-image-position: center;
   --flexcyon-modal-image-repeat: no-repeat;
   --flexcyon-modal-image-size: cover;
+  --flexcyon-mode-view-header-title-horiz-padding: 12px;
+  --flexcyon-mode-view-header-title-verti-padding: 4px;
   --flexcyon-new-tab-bg-wrapper: linear-gradient(
     to right,
     rgb(147, 238, 109),
@@ -2568,9 +2954,13 @@ body.theme-dark {
   --flexcyon-quote-val: "This is a placeholder quotein the Flexcyon Theme.";
   --flexcyon-red-salmon: #c03a47;
   --flexcyon-repl-active-line-str: "-";
+  --flexcyon-repl-active-str-space: 0px;
   --flexcyon-saturation-ratio: 1;
   --flexcyon-screen-dimens-padding-l: 16px;
+  --flexcyon-search-container-horiz-padding: 16px;
+  --flexcyon-search-container-verti-padding: 8px;
   --flexcyon-settings-installed-tooltip-left-margin: 1rem;
+  --flexcyon-side-toggle-button-no-ribbon: 11px 16px 7px 0px;
   --flexcyon-status-hide-hover-duration: 0.35s;
   --flexcyon-status-hide-hover-function: ease-out;
   --flexcyon-status-hide-until-hover-text: "Show status";
@@ -2604,7 +2994,7 @@ body.theme-dark {
   --graph-control-horiz-padding: 12px;
   --graph-control-verti-padding: 6px;
   --h: tan(atan2(1380px, 1px));
-  --h_raw: 1380px;
+  --h-raw: 1380px;
   --img-border-radius: 15px;
   --less-letter-spacing: -3px;
   --oz-fta-all-panes-active-text-color: #d3d5d3;
@@ -2613,9 +3003,19 @@ body.theme-dark {
   --oz-fta-folder-font-size: calc(16.1803px - 0.1rem);
   --oz-fta-folder-pane-file-name-color: #d3d5d3;
   --oz-fta-folder-panes-file-name-color: #d3d5d3;
+  --r-background-color: color-mix(in hsl, #14161c, #191d28);
   --r-heading-color: #d3d5d3;
+  --r-heading-font:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --r-heading-margin: 16px 0px;
   --r-heading-text-transform: capitalize;
+  --r-heading1-size: 1.81803em;
+  --r-heading2-size: 1.61803em;
+  --r-heading3-size: 1.41803em;
+  --r-heading4-size: 1.21803em;
+  --r-link-color: hsla(85.5, 66%, 65%, 88%);
   --r-main-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -2624,7 +3024,7 @@ body.theme-dark {
   --radius-x1: 8px;
   --upsize: 103%;
   --w: tan(atan2(2538px, 1px));
-  --w_raw: 2538px;
+  --w-raw: 2538px;
 }
 
 body .markdown-rendered a.external-link {
@@ -2902,7 +3302,7 @@ body del {
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(
-    rgba(0, 0, 0, 0),
+    rgb(237, 235, 229),
     color(srgb 0.118646 0.130793 0.165667)
   );
   border-top-left-radius: 2px;
@@ -3283,7 +3683,7 @@ body .search-results .suggestion-item.is-selected {
   color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   font-weight: 400;
   background-color: light-dark(
-    rgba(0, 0, 0, 0),
+    rgb(237, 235, 229),
     color(srgb 0.118646 0.130793 0.165667)
   );
 }
@@ -3409,8 +3809,7 @@ body .markdown-preview-sizer {
 }
 body .callout[data-callout="note"] {
   --callout-color: inherit;
-  border: 0px solid
-    light-dark(rgba(92, 159, 228, 0.25), rgba(90, 143, 205, 0.25));
+  border: 0px solid light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -3434,7 +3833,7 @@ body .callout[data-callout="note"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 2px 8px;
+  padding: 0px 8px;
 }
 body
   .callout[data-callout="note"]
@@ -3442,7 +3841,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(90, 143, 205);
+  stroke: rgba(111, 118, 133, 0.6);
 }
 body .callout > .callout-title > .callout-title-inner {
   color: rgba(111, 118, 133, 0.6);
@@ -3478,8 +3877,7 @@ body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
   mix-blend-mode: lighten;
-  border: 0px solid
-    light-dark(rgba(92, 159, 228, 0.25), rgba(90, 143, 205, 0.25));
+  border: 0px solid light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -3495,14 +3893,13 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(90, 143, 205);
+  stroke: rgba(111, 118, 133, 0.6);
 }
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
   mix-blend-mode: lighten;
-  border: 0px solid
-    light-dark(rgba(92, 159, 228, 0.25), rgba(90, 143, 205, 0.25));
+  border: 0px solid light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -3518,7 +3915,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(90, 143, 205);
+  stroke: rgba(111, 118, 133, 0.6);
 }
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
@@ -3700,7 +4097,7 @@ body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
   mix-blend-mode: lighten;
-  border: 0px solid rgba(158, 158, 158, 0.25);
+  border: 0px solid light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -3716,7 +4113,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(158, 158, 158);
+  stroke: rgba(111, 118, 133, 0.6);
 }
 body .math-block > mjx-container.MathJax {
   display: block;

@@ -1,3 +1,4 @@
+// let defaultStyles; await sleep(5000).then(() => defaultStyles = getDefaultStyles());
 function getDefaultStyles() {
   const defaultStylesByTagName = {};
   const rootElement = document;

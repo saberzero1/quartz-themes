@@ -20,7 +20,7 @@ const VERSION = "1.10.6";
 const INSTALLER_VERSION = "1.10.6";
 
 let testingMode = false;
-testingMode = true;
+// testingMode = true;
 const testingTheme = "z";
 
 const cacheDir = resolve(".obsidian-cache");

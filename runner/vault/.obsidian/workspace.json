@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "general.md",
+                "file": "specimen.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "general"
+              "title": "specimen"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "general.md",
+                "file": "specimen.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of general"
+              "title": "Outline of specimen"
             }
           },
           {
@@ -208,6 +208,7 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
+    "general.md",
     "theme-checkboxes/special.md",
     "theme-extras/its-theme/callouts/statblocks.md",
     "theme-checkboxes/upper.md",
@@ -223,7 +224,6 @@
     "extras/its-theme/checkboxes.md",
     "extras/its-theme/callouts/callouts.md",
     "callouts.md",
-    "general.md",
     "extras/its-theme/callouts",
     "extras/its-theme",
     "extras",

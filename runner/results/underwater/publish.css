@@ -56,7 +56,7 @@ body.theme-light {
   --background-modifier-error-hover: rgb(215, 130, 126) !important;
   --background-modifier-error-rgb: 215, 130, 126 !important;
   --background-modifier-form-field: #f2e9e1 !important;
-  --background-modifier-form-field-hover: #f2e9e1 !important;
+  --background-modifier-form-field-hover: transparent !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: rgb(86, 148, 159) !important;
@@ -65,7 +65,7 @@ body.theme-light {
   --background-primary-alt: #f2e9e1 !important;
   --background-secondary: rgb(255, 250, 243) !important;
   --background-secondary-alt: #f2e9e1 !important;
-  --bases-cards-background: rgb(255, 250, 243) !important;
+  --bases-cards-background: #faf4ed !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-cover-background: #f2e9e1 !important;
@@ -74,8 +74,8 @@ body.theme-light {
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px rgba(223, 218, 217, 0.6) !important;
   --bases-cards-shadow-hover: 0 0 0 1px rgb(223, 218, 217) !important;
-  --bases-embed-border-color: rgba(223, 218, 217, 0.6) !important;
-  --bases-embed-border-radius: 4px !important;
+  --bases-embed-border-color: rgb(223, 218, 217) !important;
+  --bases-embed-border-radius: 11px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
   --bases-group-heading-property-color: #9893a5 !important;
@@ -84,7 +84,7 @@ body.theme-light {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
+  --bases-header-border-width: 0px !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -96,17 +96,17 @@ body.theme-light {
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px rgba(223, 218, 217, 0.6) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(215, 130, 126) !important;
-  --bases-table-column-border-width: 1px !important;
+  --bases-table-column-border-width: 0px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
+  --bases-table-container-border-radius: 10px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #f2e9e1 !important;
+  --bases-table-group-background: transparent !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: rgb(255, 250, 243) !important;
-  --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --bases-table-header-color: #9893a5 !important;
+  --bases-table-header-background: #f2e9e1 !important;
+  --bases-table-header-background-hover: transparent !important;
+  --bases-table-header-color: #575279 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -115,12 +115,12 @@ body.theme-light {
   ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
+  --bases-table-row-border-width: 0px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: rgb(255, 250, 243) !important;
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
-  --bases-toolbar-label-display: block !important;
+  --bases-toolbar-label-display: none !important;
   --blockquote-background-color: transparent !important;
   --blockquote-border-color: rgb(234, 157, 52) !important;
   --blockquote-border-thickness: 3px !important;
@@ -494,7 +494,7 @@ body.theme-light {
   --list-indent: 2.25em !important;
   --list-indent-editing: 0 !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(180, 99, 122) !important;
+  --list-marker-color: #9893a5 !important;
   --list-marker-color-collapsed: rgb(215, 130, 126) !important;
   --list-marker-color-hover: #9893a5 !important;
   --list-numbered-style: decimal !important;
@@ -958,7 +958,7 @@ body.theme-dark {
   --background-modifier-error-hover: rgb(235, 188, 186);
   --background-modifier-error-rgb: 235, 188, 186;
   --background-modifier-form-field: #26233a;
-  --background-modifier-form-field-hover: #26233a;
+  --background-modifier-form-field-hover: transparent;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: rgb(156, 207, 216);
@@ -967,7 +967,7 @@ body.theme-dark {
   --background-primary-alt: #26233a;
   --background-secondary: rgb(31, 29, 46);
   --background-secondary-alt: #26233a;
-  --bases-cards-background: rgb(31, 29, 46);
+  --bases-cards-background: #191724;
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
   --bases-cards-cover-background: #26233a;
@@ -976,8 +976,8 @@ body.theme-dark {
   --bases-cards-scale: 1;
   --bases-cards-shadow: 0 0 0 1px rgba(64, 61, 82, 0.6);
   --bases-cards-shadow-hover: 0 0 0 1px rgb(64, 61, 82);
-  --bases-embed-border-color: rgba(64, 61, 82, 0.6);
-  --bases-embed-border-radius: 4px;
+  --bases-embed-border-color: rgb(64, 61, 82);
+  --bases-embed-border-radius: 11px;
   --bases-embed-border-width: 0px;
   --bases-filter-menu-width: 520px;
   --bases-group-heading-property-color: #6e6a86;
@@ -986,7 +986,7 @@ body.theme-dark {
   --bases-group-heading-property-weight: 400;
   --bases-group-heading-value-size: 0.875em;
   --bases-group-heading-value-weight: 600;
-  --bases-header-border-width: 0 0 1px 0;
+  --bases-header-border-width: 0px;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
@@ -998,17 +998,17 @@ body.theme-dark {
   --bases-table-cell-radius-focus: 2px;
   --bases-table-cell-shadow-active: 0 0 0 2px rgba(64, 61, 82, 0.6);
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(235, 188, 186);
-  --bases-table-column-border-width: 1px;
+  --bases-table-column-border-width: 0px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
-  --bases-table-container-border-radius: 4px;
+  --bases-table-container-border-radius: 10px;
   --bases-table-container-border-width: 1px;
   --bases-table-font-size: 0.875em;
-  --bases-table-group-background: #26233a;
+  --bases-table-group-background: transparent;
   --bases-table-group-gap: 10px;
-  --bases-table-header-background: rgb(31, 29, 46);
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.067);
-  --bases-table-header-color: #6e6a86;
+  --bases-table-header-background: #26233a;
+  --bases-table-header-background-hover: transparent;
+  --bases-table-header-color: #e0def4;
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -1017,12 +1017,12 @@ body.theme-dark {
   );
   --bases-table-header-weight: 400;
   --bases-table-row-background-hover: transparent;
-  --bases-table-row-border-width: 1px;
+  --bases-table-row-border-width: 0px;
   --bases-table-row-height: 30px;
   --bases-table-summary-background: rgb(31, 29, 46);
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067);
   --bases-toolbar-badge-display: none;
-  --bases-toolbar-label-display: block;
+  --bases-toolbar-label-display: none;
   --blockquote-background-color: transparent;
   --blockquote-border-color: rgb(246, 193, 119);
   --blockquote-border-thickness: 3px;
@@ -1396,7 +1396,7 @@ body.theme-dark {
   --list-indent: 2.25em;
   --list-indent-editing: 0;
   --list-indent-source: 0;
-  --list-marker-color: rgb(235, 111, 146);
+  --list-marker-color: #6e6a86;
   --list-marker-color-collapsed: rgb(235, 188, 186);
   --list-marker-color-hover: #6e6a86;
   --list-numbered-style: decimal;
@@ -2358,8 +2358,8 @@ body .markdown-rendered ul > li {
   text-align: start;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
-  border: 0px light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
+  background-color: light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
+  border: 0px light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -2368,7 +2368,7 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 50%;
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
-  color: light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
+  color: light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
   pointer-events: none;
   transform: none;
   transition: inherit;
@@ -2378,8 +2378,8 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
-  background-color: light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
-  border: 0px light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
+  background-color: light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
+  border: 0px light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -2388,7 +2388,7 @@ body .markdown-rendered ol > li::marker {
   border-start-end-radius: 50%;
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
-  color: light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
+  color: light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
   pointer-events: none;
   transform: none;
   transition: inherit;

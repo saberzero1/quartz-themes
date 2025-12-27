@@ -143,7 +143,7 @@
   --link-unresolved-color: var(--subtle);
 
   /*lists*/
-  --list-marker-color: var(--bold-color);
+  --list-marker-color: var(--text-muted);
   --list-bullet-size: 0.35em;
   --list-indent-editing: var(--list-indent-source);
 
@@ -198,6 +198,7 @@
   --embed-block-shadow-hover: transparent;
   --background-modifier-error: var(--color-red);
   --background-modifier-form-field: var(--overlay);
+  --background-modifier-form-field-hover: transparent;
   --divider-width: 0px;
   --border-width: 1px;
 
@@ -830,7 +831,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 /*Mobile styling*/
 .mobile-navbar, .mobile-toolbar {
   background-color: var(--uw-background);
-  padding-bottom: 10px;
+  padding-bottom: var(--safe-area-inset-bottom);
   padding-top: 0px;
 }
 .is-mobile .workspace-tab-container {
@@ -838,7 +839,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   border-radius: 15px;
 }
 .workspace-tab-header-container {
-  background-color: var(--uw-background);
+  background-color: transparent;
 }
 .is-mobile, .is-tablet { 
   --mobile-sidebar-background: var(--uw-background) !important;
@@ -932,6 +933,7 @@ body:not(.no-justify) .cm-s-obsidian, body:not(.no-justify) .markdown-preview-vi
 }
 .sidebar-toggle-button {
   padding: 4px 10px;
+  margin-top: 3px;
 }
 
 /*popups, window styling*/
@@ -1314,9 +1316,6 @@ body:not(.no-button) button {
 }
 
 /*no-embed  (seameless embeds)*/
-.markdown-embed-link, .file-embed-link { /*Remove embed icon*/
-  display: none;
-}
 .no-embed .markdown-embed {
   --embed-padding: 0px;
   border-inline-start: none;
@@ -1364,6 +1363,7 @@ body:not(.no-activeline) .cm-active.cm-line {
 }}
 .tree-item .is-active {
   color: var(--surface) !important;
+  --icon-color: var(--surface);
 }
 /*File explorer editing content color fix*/
 .tree-item-inner[contenteditable="true"], .tree-item-inner-text[contenteditable="true"] {
@@ -1608,6 +1608,88 @@ body { /*moon*/
   --vault-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjNWY2MzY4Ij48cGF0aCBkPSJtMzUzLTQ4MCA1OS01OXExMi0xMiAxMi0yOHQtMTItMjhxLTEyLTEyLTI4LjUtMTJUMzU1LTU5NWwtODcgODdxLTYgNi04LjUgMTN0LTIuNSAxNXEwIDggMi41IDE1dDguNSAxM2w4NyA4N3ExMiAxMiAyOC41IDEydDI4LjUtMTJxMTItMTIgMTItMjh0LTEyLTI4bC01OS01OVptMjU0IDAtNTkgNTlxLTEyIDEyLTEyIDI4dDEyIDI4cTEyIDEyIDI4LjUgMTJ0MjguNS0xMmw4Ny04N3E2LTYgOC41LTEzdDIuNS0xNXEwLTgtMi41LTE1dC04LjUtMTNsLTg3LTg3cS02LTYtMTMuNS05dC0xNS0zcS03LjUgMC0xNSAzdC0xMy41IDlxLTEyIDEyLTEyIDI4dDEyIDI4bDU5IDU5Wk0yMDAtMTIwcS0zMyAwLTU2LjUtMjMuNVQxMjAtMjAwdi01NjBxMC0zMyAyMy41LTU2LjVUMjAwLTg0MGg1NjBxMzMgMCA1Ni41IDIzLjVUODQwLTc2MHY1NjBxMCAzMy0yMy41IDU2LjVUNzYwLTEyMEgyMDBaIi8+PC9zdmc+");
 }
 
+/*--------------------------------------------- BASES ---------------------------------------------*/
+body:not(.no-bases) .workspace-leaf-content[data-type="bases"], .theme-dark:not(.no-bases), .theme-light:not(.no-bases) {
+    --bases-toolbar-label-display: none;
+    --bases-table-container-border-radius: 10px;
+    --bases-header-border-width: 0px;
+  /*embeds*/
+    --bases-embed-border-radius: calc(var(--bases-table-container-border-radius) + 1px);
+    --bases-embed-border-color: var(--highlight-med);
+  /*cards*/ 
+    --bases-cards-background: var(--base);
+  /*table view*/  
+    --bases-table-group-background: transparent;
+    --bases-table-header-background: var(--overlay);
+    --bases-table-header-color: var(--text-normal);
+    --bases-table-column-border-width: 0px;
+    --bases-table-row-border-width: 0px;
+    --bases-table-row-background-hover: transparent;
+    --bases-table-header-background-hover: transparent;
+    .bases-table-cell {
+      align-items: center;
+    }
+    .bases-thead {
+      text-transform: uppercase;
+      border-radius: var(--bases-table-container-border-radius) var(--bases-table-container-border-radius) 0 0;
+    }
+    .bases-table-cell .multi-select-pill {
+      background-color: var(--overlay);
+      padding: 2px;
+      border-radius: 5px;
+    }
+    .bases-tr:nth-child(even) {
+      background-color: rgba(var(--highlight-med-rgb), 0.2); 
+    }
+  }
+body:not(.no-bases) {
+  .workspace-leaf-content[data-type="bases"] .bases-view {
+    border: 1px solid var(--highlight-med);
+    margin: 0 20px 10px;
+    border-radius: calc(var(--bases-table-container-border-radius) + 1px);
+    display: inline;
+  }
+  /*card view*/
+  .theme-dark {
+    --bases-cards-shadow-hover: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .theme-light {
+    --bases-cards-shadow-hover: rgba(0, 0, 0, 0.05) 0px 3px 5px;
+  }
+  .bases-cards-item {
+    transition: box-shadow 0.3s;
+    border: 1px solid var(--highlight-med);
+    box-shadow: none;
+    padding-bottom: 10px;
+  }
+  .bases-cards-property {
+    display: inline-flex;
+    align-items: center;
+  }
+  .bases-cards-property.mod-title .bases-cards-line {
+    margin-inline: auto;
+    color: var(--inline-title-color);
+  }
+  .bases-cards-line {
+    position:static;
+  }
+  .bases-cards-label {
+    overflow: visible;
+  }
+  /*Grouping*/
+  .bases-view[data-view-type="table"] .bases-group-heading {
+    background-color: var(--base);
+    border: 1px dashed var(--highlight-med);
+    border-width: 1px 0;
+  }
+  .bases-group-heading .bases-group-property {
+    display: none;
+  }
+  /*Remove the scrollbar in bases*/
+  .bases-view::-webkit-scrollbar {
+    display: none;
+  }
+}
 /*========================================= PLUGINS SUPPORT ==============================================*/
 /*MAKE.MD*/
 body {
@@ -1997,12 +2079,9 @@ body:not(.no-cardboard) {
 /*=============================PDF STYLING - WIP =====================================*/
 @media print {
   body {
-    --print-font-size: 0.9em;
     --text-normal: black;
     --bold-weight: 750;
     text-align: justify;
-    font-size: var(--print-font-size) !important;
-    --font-text-size: var(--print-font-size) !important;
     --table-header-background: transparent !important;
     --table-header-color: var(--text-normal) !important;
     --table-row-alt-background: transparent !important;
@@ -2035,20 +2114,19 @@ body:not(.no-cardboard) {
     page-break-after: avoid;
   }
   .callout {
-    border-width: 2px;
-    border-color: rgba(var(--callout-color));
-    background-color: transparent;
+    /* border-width: 2px;
+    border-color: rgba(var(--callout-color)); 
+    background-color: transparent;*/
     page-break-inside: avoid;
-    font-size: var(--print-font-size);
-    --callout-content-padding: 0px var(--size-4-6);
-    padding: 0px;
+    /* --callout-content-padding: 0px var(--size-4-6);
+    padding: 0px; */
   }
-  .callout-title {
+  /* .callout-title {
     padding: 7px 20px;
     border-bottom: 2px rgba(var(--callout-color)) solid;
     text-align: center !important;
     background-color: rgba(var(--callout-color), 0.1);
-  }
+  } */
   .callout-fold.is-collapsed .svg-icon {
     display: none;
   }
@@ -2114,6 +2192,21 @@ body:not(.no-cardboard) {
 /*Allow properties to be visible in reading mode*/
 .visible-properties {
 --metadata-display-reading: block;
+}
+/*Properties styling*/
+body:not(.no-properties) .metadata-container:not(.is-collapsed) {
+  --metadata-background: var(--base);
+  --metadata-border-radius: 10px;
+  --metadata-padding: 25px;
+  --metadata-border-width: 1px;
+  --metadata-border-color: var(--background-modifier-border);
+  --metadata-gap: 10px;
+}
+.theme-dark:not(.no-properties) .metadata-container:not(.is-collapsed) {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.theme-light:not(.no-properties) .metadata-container:not(.is-collapsed) {
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
 }
 
 /* Disable click */
@@ -2425,7 +2518,7 @@ settings:
         id: list-marker-color
         title: List bullets
         type: variable-text
-        default: var(--bold-color)
+        default: var(--text-muted)
     -
         id: text-highlight-bg
         title: Highlight
@@ -2627,6 +2720,11 @@ settings:
         collapsed: true
         level: 1
     -
+        id: no-bases
+        title: Disable styling for Bases
+        type: class-toggle
+        default: false
+    -
         id: no-h5
         title: Disable h5 header centering
         type: class-toggle
@@ -2685,6 +2783,11 @@ settings:
     -
         id: no-pin
         title: Disable smaller pinned tabs
+        type: class-toggle
+        default: false
+    -
+        id: no-properties
+        title: Disable properties styling
         type: class-toggle
         default: false
     -

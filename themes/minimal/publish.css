@@ -201,7 +201,7 @@ body.theme-light {
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.875em !important;
+  --bases-table-font-size: 14px !important;
   --bases-table-group-background: rgb(245, 245, 245) !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: white !important;
@@ -993,7 +993,6 @@ body.theme-light {
   --ax1: rgb(106, 134, 149) !important;
   --ax2: rgb(89, 113, 125) !important;
   --ax3: rgb(124, 149, 162) !important;
-  --bases-table-text-size: 14px !important;
   --calendar-dot-active: hsl(0, -10%, 71%) !important;
   --calendar-dot-today: rgb(106, 134, 149) !important;
   --chart-color-1: #6c99bb !important;
@@ -1055,6 +1054,7 @@ body.theme-light {
   --leaflet-borders: rgba(0, 0, 0, 0.1) !important;
   --leaflet-buttons: white !important;
   --line-number-color-active: hsl(0, -20%, 46%) !important;
+  --map-header-padding: 2px !important;
   --map-max-width: none !important;
   --map-width: auto !important;
   --minimal-tab-text-color: hsl(0, -20%, 46%) !important;
@@ -1150,7 +1150,7 @@ body.theme-dark {
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
-  --bases-table-font-size: 0.875em;
+  --bases-table-font-size: 14px;
   --bases-table-group-background: rgb(33, 33, 33);
   --bases-table-group-gap: 10px;
   --bases-table-header-background: rgb(38, 38, 38);
@@ -1942,7 +1942,6 @@ body.theme-dark {
   --ax1: rgb(136, 158, 170);
   --ax2: rgb(160, 178, 187);
   --ax3: rgb(121, 146, 160);
-  --bases-table-text-size: 14px;
   --calendar-dot-active: hsl(0, -10%, 35%);
   --calendar-dot-today: rgb(136, 158, 170);
   --chart-color-1: #6c99bb;
@@ -2005,6 +2004,7 @@ body.theme-dark {
   --leaflet-borders: rgba(255, 255, 255, 0.1);
   --leaflet-buttons: rgb(33, 33, 33);
   --line-number-color-active: hsl(0, -20%, 60%);
+  --map-header-padding: 2px;
   --map-max-width: none;
   --map-width: auto;
   --minimal-tab-text-color: hsl(0, -20%, 60%);

@@ -19,8 +19,8 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.15) !important;
-  --background-modifier-border: #e0e0e0 !important;
+  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-border: #f2ebe4 !important;
   --background-modifier-border-focus: #bdbdbd !important;
   --background-modifier-border-hover: #d4d4d4 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -28,30 +28,30 @@
   --background-modifier-error: #e93147 !important;
   --background-modifier-error-hover: #e93147 !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: #fcf5e3 !important;
-  --background-modifier-form-field-hover: #fcf5e3 !important;
-  --background-modifier-hover: rgba(0, 0, 0, 0.075) !important;
+  --background-modifier-form-field: #f2ebe4 !important;
+  --background-modifier-form-field-hover: #f2ebe4 !important;
+  --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #08b94e !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
-  --background-primary: #fcf5e3 !important;
-  --background-primary-alt: #ebca97 !important;
-  --background-secondary: #fcf5e3 !important;
-  --background-secondary-alt: #fcf5e3 !important;
-  --bases-cards-background: #fcf5e3 !important;
+  --background-primary: #f2ebe4 !important;
+  --background-primary-alt: #e2d6cd !important;
+  --background-secondary: #e2d6cd !important;
+  --background-secondary-alt: #dcccc0 !important;
+  --bases-cards-background: #f2ebe4 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #ebca97 !important;
+  --bases-cards-cover-background: #e2d6cd !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #e0e0e0 !important;
+  --bases-cards-shadow: 0 0 0 1px #f2ebe4 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #d4d4d4 !important;
-  --bases-embed-border-color: #e0e0e0 !important;
+  --bases-embed-border-color: #f2ebe4 !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #111111 !important;
+  --bases-group-heading-property-color: #2a2119 !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -61,25 +61,25 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #e0e0e0 !important;
-  --bases-table-cell-background-active: #fcf5e3 !important;
-  --bases-table-cell-background-disabled: #ebca97 !important;
+  --bases-table-border-color: #f2ebe4 !important;
+  --bases-table-cell-background-active: #f2ebe4 !important;
+  --bases-table-cell-background-disabled: #e2d6cd !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #bdbdbd !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #b53f2a !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #93684e !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px #93684e !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #ebca97 !important;
+  --bases-table-group-background: #e2d6cd !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #fcf5e3 !important;
-  --bases-table-header-background-hover: rgba(0, 0, 0, 0.075) !important;
-  --bases-table-header-color: #111111 !important;
+  --bases-table-header-background: #f2ebe4 !important;
+  --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
+  --bases-table-header-color: #2a2119 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -90,12 +90,12 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #fcf5e3 !important;
-  --bases-table-summary-background-hover: rgba(0, 0, 0, 0.075) !important;
+  --bases-table-summary-background: #f2ebe4 !important;
+  --bases-table-summary-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: #b53f2a !important;
+  --blockquote-border-color: #93684e !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -125,8 +125,8 @@
   --callout-title-weight: 600 !important;
   --callout-todo: 8, 109, 221 !important;
   --callout-warning: 236, 117, 0 !important;
-  --canvas-background: #fcf5e3 !important;
-  --canvas-card-label-color: #b53f2a !important;
+  --canvas-background: #f2ebe4 !important;
+  --canvas-card-label-color: #93684e !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 233, 49, 71 !important;
   --canvas-color-2: 236, 117, 0 !important;
@@ -134,55 +134,55 @@
   --canvas-color-4: 8, 185, 78 !important;
   --canvas-color-5: 0, 191, 188 !important;
   --canvas-color-6: 120, 82, 238 !important;
-  --canvas-dot-pattern: #e0e0e0 !important;
-  --caret-color: #111111 !important;
-  --checkbox-border-color: #b53f2a !important;
-  --checkbox-border-color-hover: #111111 !important;
-  --checkbox-color: #b53f2a !important;
-  --checkbox-color-hover: #937340 !important;
+  --canvas-dot-pattern: #f2ebe4 !important;
+  --caret-color: #231915 !important;
+  --checkbox-border-color: #93684e !important;
+  --checkbox-border-color-hover: #2a2119 !important;
+  --checkbox-color: #93684e !important;
+  --checkbox-color-hover: #93684e !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #fcf5e3 !important;
+  --checkbox-marker-color: #f2ebe4 !important;
   --checkbox-radius: 4px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #111111 !important;
+  --checklist-done-color: #2a2119 !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: #ebca97 !important;
-  --code-border-color: #e0e0e0 !important;
+  --code-background: #e2d6cd !important;
+  --code-border-color: #f2ebe4 !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgba(0, 0, 0, 0.075) !important;
-  --code-comment: #b53f2a !important;
+  --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
+  --code-comment: #93684e !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
   --code-keyword: #d53984 !important;
-  --code-normal: #111111 !important;
+  --code-normal: #231915 !important;
   --code-operator: #e93147 !important;
   --code-property: #00bfbc !important;
-  --code-punctuation: #111111 !important;
+  --code-punctuation: #2a2119 !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #08b94e !important;
   --code-tag: #e93147 !important;
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #b53f2a !important;
-  --collapse-icon-color-collapsed: #937340 !important;
-  --color-accent: #937340 !important;
-  --color-accent-1: #b53f2a !important;
-  --color-accent-2: #937340 !important;
+  --collapse-icon-color: #93684e !important;
+  --collapse-icon-color-collapsed: #93684e !important;
+  --color-accent: #93684e !important;
+  --color-accent-1: #93684e !important;
+  --color-accent-2: #93684e !important;
   --color-accent-hsl: 258, 88%, 66% !important;
-  --color-base-00: #fcf5e3 !important;
-  --color-base-05: #fcf5e3 !important;
-  --color-base-10: #ebca97 !important;
-  --color-base-100: #111111 !important;
-  --color-base-20: #fcf5e3 !important;
+  --color-base-00: #f2ebe4 !important;
+  --color-base-05: #dcccc0 !important;
+  --color-base-10: #e2d6cd !important;
+  --color-base-100: #231915 !important;
+  --color-base-20: #e2d6cd !important;
   --color-base-25: #e3e3e3 !important;
-  --color-base-30: #e0e0e0 !important;
+  --color-base-30: #f2ebe4 !important;
   --color-base-35: #d4d4d4 !important;
   --color-base-40: #bdbdbd !important;
-  --color-base-50: #b53f2a !important;
+  --color-base-50: #93684e !important;
   --color-base-60: #707070 !important;
-  --color-base-70: #111111 !important;
+  --color-base-70: #2a2119 !important;
   --color-blue: #086ddd !important;
   --color-blue-rgb: 8, 109, 221 !important;
   --color-cyan: #00bfbc !important;
@@ -206,24 +206,24 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: #e0e0e0 !important;
-  --divider-color-hover: #b53f2a !important;
+  --divider-color: #f2ebe4 !important;
+  --divider-color-hover: #93684e !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #fcf5e3 !important;
+  --dropdown-background: #f2ebe4 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #ebca97 !important;
+  --dropdown-background-hover: #e2d6cd !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px #e0e0e0, inset 0 0 0 1px #e0e0e0 !important;
+    0 0 0 1px #f2ebe4, inset 0 0 0 1px #f2ebe4 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid #b53f2a !important;
+  --embed-border-start: 2px solid #93684e !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -231,44 +231,44 @@
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
-  --flair-background: #fcf5e3 !important;
-  --flair-color: #111111 !important;
+  --flair-background: #f2ebe4 !important;
+  --flair-color: #231915 !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default:
-    ui-monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono",
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono",
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
@@ -281,9 +281,9 @@
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -293,15 +293,15 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: #e0e0e0 !important;
+  --footnote-divider-color: #f2ebe4 !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: #111111 !important;
-  --footnote-id-color-no-occurrences: #b53f2a !important;
+  --footnote-id-color: #2a2119 !important;
+  --footnote-id-color-no-occurrences: #93684e !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(0, 0, 0, 0.075) !important;
+  --footnote-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -311,12 +311,12 @@
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #d4d4d4 !important;
-  --graph-node: #111111 !important;
+  --graph-node: #2a2119 !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: #937340 !important;
+  --graph-node-focused: #93684e !important;
   --graph-node-tag: #08b94e !important;
-  --graph-node-unresolved: #b53f2a !important;
-  --graph-text: #111111 !important;
+  --graph-node-unresolved: #93684e !important;
+  --graph-text: #231915 !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.802em !important;
@@ -354,15 +354,15 @@
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: #b53f2a !important;
+  --heading-formatting: #93684e !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: #b53f2a !important;
+  --hr-color: #f2ebe4 !important;
   --hr-thickness: 2px !important;
-  --icon-color: #111111 !important;
-  --icon-color-active: #937340 !important;
-  --icon-color-focused: #111111 !important;
-  --icon-color-hover: #111111 !important;
+  --icon-color: #2a2119 !important;
+  --icon-color-active: #93684e !important;
+  --icon-color-focused: #231915 !important;
+  --icon-color-hover: #2a2119 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -395,11 +395,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #b53f2a !important;
+  --input-date-separator: #93684e !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #b53f2a !important;
+  --input-placeholder-color: #93684e !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -409,11 +409,11 @@
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
-  --interactive-accent: #b53f2a !important;
-  --interactive-accent-hover: #937340 !important;
+  --interactive-accent: #93684e !important;
+  --interactive-accent-hover: #93684e !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: #ebca97 !important;
-  --interactive-normal: #fcf5e3 !important;
+  --interactive-hover: #e2d6cd !important;
+  --interactive-normal: #f2ebe4 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -427,17 +427,17 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #937340 !important;
-  --link-color-hover: #937340 !important;
+  --link-color: #93684e !important;
+  --link-color-hover: #93684e !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #937340 !important;
-  --link-external-color-hover: #937340 !important;
+  --link-external-color: #93684e !important;
+  --link-external-color-hover: #93684e !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #937340 !important;
+  --link-unresolved-color: #93684e !important;
   --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -451,14 +451,14 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #b53f2a !important;
-  --list-marker-color-collapsed: #937340 !important;
-  --list-marker-color-hover: #111111 !important;
+  --list-marker-color: #93684e !important;
+  --list-marker-color-collapsed: #93684e !important;
+  --list-marker-color-hover: #2a2119 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #fcf5e3 !important;
+  --menu-background: #e2d6cd !important;
   --menu-border-color: #d4d4d4 !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
@@ -467,42 +467,42 @@
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #e0e0e0 !important;
+  --metadata-border-color: #f2ebe4 !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #e0e0e0 !important;
+  --metadata-divider-color: #f2ebe4 !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(0, 0, 0, 0.075) !important;
+  --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #111111 !important;
+  --metadata-input-text-color: #231915 !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(0, 0, 0, 0.075) !important;
+  --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #111111 !important;
-  --metadata-label-text-color-hover: #111111 !important;
+  --metadata-label-text-color: #2a2119 !important;
+  --metadata-label-text-color-hover: #2a2119 !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgba(0, 0, 0, 0.075) !important;
+  --metadata-property-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #bdbdbd !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #d4d4d4 !important;
@@ -512,7 +512,7 @@
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #fcf5e3 !important;
+  --modal-background: #f2ebe4 !important;
   --modal-border-color: #bdbdbd !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -524,58 +524,58 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: #b53f2a !important;
-  --nav-collapse-icon-color-collapsed: #b53f2a !important;
-  --nav-heading-color: #111111 !important;
-  --nav-heading-color-collapsed: #b53f2a !important;
-  --nav-heading-color-collapsed-hover: #111111 !important;
-  --nav-heading-color-hover: #111111 !important;
+  --nav-collapse-icon-color: #93684e !important;
+  --nav-collapse-icon-color-collapsed: #93684e !important;
+  --nav-heading-color: #231915 !important;
+  --nav-heading-color-collapsed: #93684e !important;
+  --nav-heading-color-collapsed-hover: #2a2119 !important;
+  --nav-heading-color-hover: #231915 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(0, 0, 0, 0.075) !important;
-  --nav-item-background-hover: rgba(0, 0, 0, 0.075) !important;
+  --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
+  --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #111111 !important;
-  --nav-item-color-active: #111111 !important;
-  --nav-item-color-highlighted: #937340 !important;
-  --nav-item-color-hover: #111111 !important;
-  --nav-item-color-selected: #111111 !important;
+  --nav-item-color: #2a2119 !important;
+  --nav-item-color-active: #231915 !important;
+  --nav-item-color-highlighted: #93684e !important;
+  --nav-item-color-hover: #231915 !important;
+  --nav-item-color-selected: #231915 !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
-  --nav-item-white-space: nowrap !important;
+  --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #b53f2a !important;
-  --nav-tag-color-active: #111111 !important;
-  --nav-tag-color-hover: #111111 !important;
+  --nav-tag-color: #93684e !important;
+  --nav-tag-color-active: #2a2119 !important;
+  --nav-tag-color-hover: #2a2119 !important;
   --nav-tag-radius: 4px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #fcf5e3 !important;
-  --pdf-page-background: #fcf5e3 !important;
+  --pdf-background: #f2ebe4 !important;
+  --pdf-page-background: #f2ebe4 !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: #fcf5e3 !important;
+  --pdf-sidebar-background: #f2ebe4 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: #e0e0e0 !important;
+  --pill-border-color: #f2ebe4 !important;
   --pill-border-color-hover: #d4d4d4 !important;
   --pill-border-width: 1px !important;
-  --pill-color: #111111 !important;
-  --pill-color-hover: #111111 !important;
-  --pill-color-remove: #b53f2a !important;
-  --pill-color-remove-hover: #937340 !important;
+  --pill-color: #2a2119 !important;
+  --pill-color-hover: #231915 !important;
+  --pill-color-remove: #93684e !important;
+  --pill-color-remove-hover: #93684e !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -585,9 +585,9 @@
   --pill-radius: 2em !important;
   --popover-font-size: 16px !important;
   --popover-height: 400px !important;
-  --popover-max-height: 70vh !important;
-  --popover-pdf-height: 800px !important;
-  --popover-pdf-width: 600px !important;
+  --popover-max-height: 95vh !important;
+  --popover-pdf-height: 400px !important;
+  --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
   --prompt-border-color: #bdbdbd !important;
   --prompt-border-width: 1px !important;
@@ -599,8 +599,8 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --ribbon-background: #fcf5e3 !important;
-  --ribbon-background-collapsed: #fcf5e3 !important;
+  --ribbon-background: #e2d6cd !important;
+  --ribbon-background-collapsed: #f2ebe4 !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -614,11 +614,11 @@
   --scrollbar-radius: 12px !important;
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #111111 !important;
+  --search-clear-button-color: #2a2119 !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #111111 !important;
+  --search-icon-color: #2a2119 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #fcf5e3 !important;
+  --search-result-background: #f2ebe4 !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -654,20 +654,20 @@
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #e0e0e0 !important;
+  --slider-track-background: #f2ebe4 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #fcf5e3 !important;
-  --status-bar-border-color: #e0e0e0 !important;
+  --status-bar-background: #e2d6cd !important;
+  --status-bar-border-color: #f2ebe4 !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: #111111 !important;
-  --swatch-height: 24px !important;
+  --status-bar-text-color: #2a2119 !important;
+  --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
-  --swatch-width: 24px !important;
+  --swatch-width: 22px !important;
   --sync-avatar-color-1: #e93147 !important;
   --sync-avatar-color-2: #ec7500 !important;
   --sync-avatar-color-3: #e0ac00 !important;
@@ -677,13 +677,13 @@
   --sync-avatar-color-7: #7852ee !important;
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #fcf5e3 !important;
-  --tab-container-background: #fcf5e3 !important;
+  --tab-background-active: #f2ebe4 !important;
+  --tab-container-background: #e2d6cd !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #d4d4d4 !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: #e0e0e0 !important;
+  --tab-outline-color: #f2ebe4 !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -692,26 +692,26 @@
   --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
-  --tab-stacked-text-align: left !important;
+  --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #fcf5e3 !important;
+  --tab-switcher-background: #e2d6cd !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px #937340 !important;
-  --tab-text-color: #b53f2a !important;
-  --tab-text-color-active: #111111 !important;
-  --tab-text-color-focused: #111111 !important;
-  --tab-text-color-focused-active: #111111 !important;
-  --tab-text-color-focused-active-current: #111111 !important;
-  --tab-text-color-focused-highlighted: #937340 !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px #93684e !important;
+  --tab-text-color: #93684e !important;
+  --tab-text-color-active: #2a2119 !important;
+  --tab-text-color-focused: #2a2119 !important;
+  --tab-text-color-focused-active: #2a2119 !important;
+  --tab-text-color-focused-active-current: #231915 !important;
+  --tab-text-color-focused-highlighted: #93684e !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #e0e0e0 !important;
+  --table-add-button-border-color: #f2ebe4 !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #e0e0e0 !important;
+  --table-border-color: #f2ebe4 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -720,14 +720,14 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: #b53f2a !important;
-  --table-drag-handle-color: #b53f2a !important;
+  --table-drag-handle-background-active: #93684e !important;
+  --table-drag-handle-color: #93684e !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: #e0e0e0 !important;
+  --table-header-border-color: #f2ebe4 !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: #111111 !important;
+  --table-header-color: #231915 !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -737,44 +737,44 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: rgba(138, 92, 245, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: #b53f2a !important;
+  --table-selection-border-color: #93684e !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: #ebca97 !important;
+  --tag-background: rgba(138, 92, 245, 0.1) !important;
   --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: #937340 !important;
-  --tag-color-hover: #937340 !important;
+  --tag-color: #93684e !important;
+  --tag-color-hover: #93684e !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: #937340 !important;
-  --text-accent-hover: #937340 !important;
+  --text-accent: #93684e !important;
+  --text-accent-hover: #93684e !important;
   --text-error: #e93147 !important;
-  --text-faint: #b53f2a !important;
+  --text-faint: #93684e !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #111111 !important;
-  --text-normal: #111111 !important;
+  --text-muted: #2a2119 !important;
+  --text-normal: #231915 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: #b53f2a77 !important;
+  --text-selection: #c6a794 !important;
   --text-success: #08b94e !important;
   --text-warning: #ec7500 !important;
-  --titlebar-background: #fcf5e3 !important;
-  --titlebar-background-focused: #fcf5e3 !important;
-  --titlebar-border-color: #e0e0e0 !important;
+  --titlebar-background: #e2d6cd !important;
+  --titlebar-background-focused: #dcccc0 !important;
+  --titlebar-border-color: #f2ebe4 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #111111 !important;
-  --titlebar-text-color-focused: #111111 !important;
+  --titlebar-text-color: #2a2119 !important;
+  --titlebar-text-color-focused: #231915 !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -788,8 +788,8 @@
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #111111 !important;
-  --vault-profile-color-hover: #111111 !important;
+  --vault-profile-color: #231915 !important;
+  --vault-profile-color-hover: #231915 !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -798,31 +798,11 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: #a27f47 !important;
-  --h2-color: #a27f47 !important;
-  --h3-color: #a27f47 !important;
-  --h4-color: #a27f47 !important;
-  --h5-color: #a27f47 !important;
-  --h6-color: #a27f47 !important;
-  --inline-title-color: #a27f47 !important;
-  --default-font: "Source Code Pro" !important;
-  --vault-name-color: #111111 !important;
-  --embed-border-left: 2px solid #b53f2a !important;
-  --embed-border-right: none !important;
-  --nav-item-children-margin-left: 12px !important;
-  --nav-item-children-padding-left: 4px !important;
-  --status-bar-scroll-padding: 30px !important;
-  --vault-name-font-size: 13px !important;
-  --vault-name-font-weight: 500 !important;
-  --input-disabled-border-color: transparent !important;
-  --input-hover-border-color: black !important;
-  --input-unfocused-border-color: transparent !important;
-  --input-focus-border-color: Highlight !important;
-  --input-focus-outline: 1px solid Canvas !important;
-  --annotation-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
-  --highlight-bg-color: rgb(180, 0, 170) !important;
-  --highlight-selected-bg-color: rgb(0, 100, 0) !important;
-  --link-outline: none !important;
+  --bold-color: #b08c75 !important;
+  --italic-color: #b08c75 !important;
+  --bases-cards-group-padding: 12px !important;
+  --bases-cards-text-size: 0.875em !important;
+  --bases-table-text-size: 0.875em !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -839,8 +819,8 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.15) !important;
-  --background-modifier-border: #212121 !important;
+  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-border: #0f0a07 !important;
   --background-modifier-border-focus: #555555 !important;
   --background-modifier-border-hover: #3f3f3f !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -850,28 +830,28 @@
   --background-modifier-error-rgb: 251, 70, 76 !important;
   --background-modifier-form-field: #2a2a2a !important;
   --background-modifier-form-field-hover: #2a2a2a !important;
-  --background-modifier-hover: rgba(255, 255, 255, 0.075) !important;
+  --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #44cf6e !important;
   --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: #111111 !important;
-  --background-primary-alt: #782b1d52 !important;
-  --background-secondary: #111111 !important;
-  --background-secondary-alt: #212121 !important;
-  --bases-cards-background: #111111 !important;
+  --background-primary: #0f0a07 !important;
+  --background-primary-alt: #242424 !important;
+  --background-secondary: #191510 !important;
+  --background-secondary-alt: #0f0a07 !important;
+  --bases-cards-background: #0f0a07 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #782b1d52 !important;
+  --bases-cards-cover-background: #242424 !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #212121 !important;
+  --bases-cards-shadow: 0 0 0 1px #0f0a07 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f !important;
-  --bases-embed-border-color: #212121 !important;
+  --bases-embed-border-color: #0f0a07 !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #a27f47 !important;
+  --bases-group-heading-property-color: #d8c2b4 !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -881,25 +861,25 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #212121 !important;
-  --bases-table-cell-background-active: #111111 !important;
-  --bases-table-cell-background-disabled: #782b1d52 !important;
+  --bases-table-border-color: #0f0a07 !important;
+  --bases-table-cell-background-active: #0f0a07 !important;
+  --bases-table-cell-background-disabled: #242424 !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #782a1d !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #93684e !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px #93684e !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #782b1d52 !important;
+  --bases-table-group-background: #242424 !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #111111 !important;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.075) !important;
-  --bases-table-header-color: #a27f47 !important;
+  --bases-table-header-background: #0f0a07 !important;
+  --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
+  --bases-table-header-color: #d8c2b4 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -910,12 +890,12 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #111111 !important;
-  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075) !important;
+  --bases-table-summary-background: #0f0a07 !important;
+  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: #782a1d !important;
+  --blockquote-border-color: #93684e !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -945,8 +925,8 @@
   --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
-  --canvas-background: #111111 !important;
-  --canvas-card-label-color: #782a1d !important;
+  --canvas-background: #0f0a07 !important;
+  --canvas-card-label-color: #93684e !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 251, 70, 76 !important;
   --canvas-color-2: 233, 151, 63 !important;
@@ -954,55 +934,55 @@
   --canvas-color-4: 68, 207, 110 !important;
   --canvas-color-5: 83, 223, 221 !important;
   --canvas-color-6: 168, 130, 255 !important;
-  --canvas-dot-pattern: #212121 !important;
-  --caret-color: #ebca97 !important;
-  --checkbox-border-color: #782a1d !important;
-  --checkbox-border-color-hover: #a27f47 !important;
-  --checkbox-color: #782a1d !important;
-  --checkbox-color-hover: #a27f47 !important;
+  --canvas-dot-pattern: #0f0a07 !important;
+  --caret-color: #dfccc3 !important;
+  --checkbox-border-color: #93684e !important;
+  --checkbox-border-color-hover: #d8c2b4 !important;
+  --checkbox-color: #93684e !important;
+  --checkbox-color-hover: #93684e !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #111111 !important;
+  --checkbox-marker-color: #0f0a07 !important;
   --checkbox-radius: 4px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #a27f47 !important;
+  --checklist-done-color: #d8c2b4 !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: #782b1d52 !important;
-  --code-border-color: #212121 !important;
+  --code-background: #242424 !important;
+  --code-border-color: #0f0a07 !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
-  --code-comment: #782a1d !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
+  --code-comment: #93684e !important;
   --code-function: #e0de71 !important;
   --code-important: #e9973f !important;
   --code-keyword: #fa99cd !important;
-  --code-normal: #a27f47 !important;
+  --code-normal: #dfccc3 !important;
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
-  --code-punctuation: #a27f47 !important;
+  --code-punctuation: #d8c2b4 !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #44cf6e !important;
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #782a1d !important;
-  --collapse-icon-color-collapsed: #a27f47 !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: #a27f47 !important;
-  --color-accent-2: #ebca97 !important;
+  --collapse-icon-color: #93684e !important;
+  --collapse-icon-color-collapsed: #93684e !important;
+  --color-accent: #93684e !important;
+  --color-accent-1: #93684e !important;
+  --color-accent-2: #93684e !important;
   --color-accent-hsl: 258, 88%, 66% !important;
-  --color-base-00: #111111 !important;
+  --color-base-00: #0f0a07 !important;
   --color-base-05: #212121 !important;
-  --color-base-10: #782b1d52 !important;
-  --color-base-100: #ebca97 !important;
-  --color-base-20: #111111 !important;
+  --color-base-10: #242424 !important;
+  --color-base-100: #dfccc3 !important;
+  --color-base-20: #191510 !important;
   --color-base-25: #2a2a2a !important;
-  --color-base-30: #212121 !important;
+  --color-base-30: #0f0a07 !important;
   --color-base-35: #3f3f3f !important;
   --color-base-40: #555555 !important;
-  --color-base-50: #782a1d !important;
+  --color-base-50: #93684e !important;
   --color-base-60: #999999 !important;
-  --color-base-70: #a27f47 !important;
+  --color-base-70: #d8c2b4 !important;
   --color-blue: #027aff !important;
   --color-blue-rgb: 2, 122, 255 !important;
   --color-cyan: #53dfdd !important;
@@ -1026,24 +1006,24 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: #212121 !important;
-  --divider-color-hover: #782a1d !important;
+  --divider-color: #0f0a07 !important;
+  --divider-color-hover: #93684e !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #212121 !important;
+  --dropdown-background: #0f0a07 !important;
   --dropdown-background-blend-mode: hard-light !important;
   --dropdown-background-hover: #3f3f3f !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px #212121, inset 0 0 0 1px #212121 !important;
+    0 0 0 1px #0f0a07, inset 0 0 0 1px #0f0a07 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid #782a1d !important;
+  --embed-border-start: 2px solid #93684e !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1051,44 +1031,44 @@
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
-  --flair-background: #212121 !important;
-  --flair-color: #ebca97 !important;
+  --flair-background: #0f0a07 !important;
+  --flair-color: #dfccc3 !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
   --font-default:
-    ui-monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono",
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono",
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
@@ -1101,9 +1081,9 @@
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1113,15 +1093,15 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: #212121 !important;
+  --footnote-divider-color: #0f0a07 !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: #a27f47 !important;
-  --footnote-id-color-no-occurrences: #782a1d !important;
+  --footnote-id-color: #d8c2b4 !important;
+  --footnote-id-color-no-occurrences: #93684e !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(255, 255, 255, 0.075) !important;
+  --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -1131,12 +1111,12 @@
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
-  --graph-node: #a27f47 !important;
+  --graph-node: #d8c2b4 !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: #a27f47 !important;
+  --graph-node-focused: #93684e !important;
   --graph-node-tag: #44cf6e !important;
-  --graph-node-unresolved: #782a1d !important;
-  --graph-text: #ebca97 !important;
+  --graph-node-unresolved: #93684e !important;
+  --graph-text: #dfccc3 !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.802em !important;
@@ -1174,15 +1154,15 @@
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: #782a1d !important;
+  --heading-formatting: #93684e !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: #782a1d !important;
+  --hr-color: #0f0a07 !important;
   --hr-thickness: 2px !important;
-  --icon-color: #a27f47 !important;
-  --icon-color-active: #a27f47 !important;
-  --icon-color-focused: #ebca97 !important;
-  --icon-color-hover: #a27f47 !important;
+  --icon-color: #d8c2b4 !important;
+  --icon-color-active: #93684e !important;
+  --icon-color-focused: #dfccc3 !important;
+  --icon-color-hover: #d8c2b4 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1215,11 +1195,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #782a1d !important;
+  --input-date-separator: #93684e !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #782a1d !important;
+  --input-placeholder-color: #93684e !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -1229,11 +1209,11 @@
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
-  --interactive-accent: #782a1d !important;
-  --interactive-accent-hover: #a27f47 !important;
+  --interactive-accent: #93684e !important;
+  --interactive-accent-hover: #93684e !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: #3f3f3f !important;
-  --interactive-normal: #212121 !important;
+  --interactive-normal: #0f0a07 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1247,17 +1227,17 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #a27f47 !important;
-  --link-color-hover: #ebca97 !important;
+  --link-color: #93684e !important;
+  --link-color-hover: #93684e !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #a27f47 !important;
-  --link-external-color-hover: #ebca97 !important;
+  --link-external-color: #93684e !important;
+  --link-external-color-hover: #93684e !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #a27f47 !important;
+  --link-unresolved-color: #93684e !important;
   --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -1271,14 +1251,14 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #782a1d !important;
-  --list-marker-color-collapsed: #a27f47 !important;
-  --list-marker-color-hover: #a27f47 !important;
+  --list-marker-color: #93684e !important;
+  --list-marker-color-collapsed: #93684e !important;
+  --list-marker-color-hover: #d8c2b4 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #111111 !important;
+  --menu-background: #191510 !important;
   --menu-border-color: #3f3f3f !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
@@ -1287,42 +1267,42 @@
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #212121 !important;
+  --metadata-border-color: #0f0a07 !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #212121 !important;
+  --metadata-divider-color: #0f0a07 !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
+  --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #ebca97 !important;
+  --metadata-input-text-color: #dfccc3 !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(255, 255, 255, 0.075) !important;
+  --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #a27f47 !important;
-  --metadata-label-text-color-hover: #a27f47 !important;
+  --metadata-label-text-color: #d8c2b4 !important;
+  --metadata-label-text-color-hover: #d8c2b4 !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgba(255, 255, 255, 0.075) !important;
+  --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #555555 !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f !important;
@@ -1332,7 +1312,7 @@
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #111111 !important;
+  --modal-background: #0f0a07 !important;
   --modal-border-color: #555555 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -1344,56 +1324,56 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: #782a1d !important;
-  --nav-collapse-icon-color-collapsed: #782a1d !important;
-  --nav-heading-color: #ebca97 !important;
-  --nav-heading-color-collapsed: #782a1d !important;
-  --nav-heading-color-collapsed-hover: #a27f47 !important;
-  --nav-heading-color-hover: #ebca97 !important;
+  --nav-collapse-icon-color: #93684e !important;
+  --nav-collapse-icon-color-collapsed: #93684e !important;
+  --nav-heading-color: #dfccc3 !important;
+  --nav-heading-color-collapsed: #93684e !important;
+  --nav-heading-color-collapsed-hover: #d8c2b4 !important;
+  --nav-heading-color-hover: #dfccc3 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(255, 255, 255, 0.075) !important;
-  --nav-item-background-hover: rgba(255, 255, 255, 0.075) !important;
+  --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #a27f47 !important;
-  --nav-item-color-active: #ebca97 !important;
-  --nav-item-color-highlighted: #ebca97 !important;
-  --nav-item-color-hover: #ebca97 !important;
-  --nav-item-color-selected: #ebca97 !important;
+  --nav-item-color: #d8c2b4 !important;
+  --nav-item-color-active: #dfccc3 !important;
+  --nav-item-color-highlighted: #93684e !important;
+  --nav-item-color-hover: #dfccc3 !important;
+  --nav-item-color-selected: #dfccc3 !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
-  --nav-item-white-space: nowrap !important;
+  --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #782a1d !important;
-  --nav-tag-color-active: #a27f47 !important;
-  --nav-tag-color-hover: #a27f47 !important;
+  --nav-tag-color: #93684e !important;
+  --nav-tag-color-active: #d8c2b4 !important;
+  --nav-tag-color-hover: #d8c2b4 !important;
   --nav-tag-radius: 4px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #111111 !important;
-  --pdf-page-background: #111111 !important;
-  --pdf-shadow: 0 0 0 1px #212121 !important;
-  --pdf-sidebar-background: #111111 !important;
+  --pdf-background: #0f0a07 !important;
+  --pdf-page-background: #0f0a07 !important;
+  --pdf-shadow: 0 0 0 1px #0f0a07 !important;
+  --pdf-sidebar-background: #0f0a07 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #212121 !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #0f0a07 !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: #212121 !important;
+  --pill-border-color: #0f0a07 !important;
   --pill-border-color-hover: #3f3f3f !important;
   --pill-border-width: 1px !important;
-  --pill-color: #a27f47 !important;
-  --pill-color-hover: #ebca97 !important;
-  --pill-color-remove: #782a1d !important;
-  --pill-color-remove-hover: #a27f47 !important;
+  --pill-color: #d8c2b4 !important;
+  --pill-color-hover: #dfccc3 !important;
+  --pill-color-remove: #93684e !important;
+  --pill-color-remove-hover: #93684e !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1403,9 +1383,9 @@
   --pill-radius: 2em !important;
   --popover-font-size: 16px !important;
   --popover-height: 400px !important;
-  --popover-max-height: 70vh !important;
-  --popover-pdf-height: 800px !important;
-  --popover-pdf-width: 600px !important;
+  --popover-max-height: 95vh !important;
+  --popover-pdf-height: 400px !important;
+  --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
   --prompt-border-color: #555555 !important;
   --prompt-border-width: 1px !important;
@@ -1417,8 +1397,8 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --ribbon-background: #111111 !important;
-  --ribbon-background-collapsed: #111111 !important;
+  --ribbon-background: #191510 !important;
+  --ribbon-background-collapsed: #0f0a07 !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1432,11 +1412,11 @@
   --scrollbar-radius: 12px !important;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #a27f47 !important;
+  --search-clear-button-color: #d8c2b4 !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #a27f47 !important;
+  --search-icon-color: #d8c2b4 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #111111 !important;
+  --search-result-background: #0f0a07 !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -1472,20 +1452,20 @@
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #212121 !important;
+  --slider-track-background: #0f0a07 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #111111 !important;
-  --status-bar-border-color: #212121 !important;
+  --status-bar-background: #191510 !important;
+  --status-bar-border-color: #0f0a07 !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: #a27f47 !important;
-  --swatch-height: 24px !important;
+  --status-bar-text-color: #d8c2b4 !important;
+  --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
-  --swatch-width: 24px !important;
+  --swatch-width: 22px !important;
   --sync-avatar-color-1: #fb464c !important;
   --sync-avatar-color-2: #e9973f !important;
   --sync-avatar-color-3: #e0de71 !important;
@@ -1495,13 +1475,13 @@
   --sync-avatar-color-7: #a882ff !important;
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #111111 !important;
-  --tab-container-background: #111111 !important;
+  --tab-background-active: #0f0a07 !important;
+  --tab-container-background: #191510 !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #3f3f3f !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: #212121 !important;
+  --tab-outline-color: #0f0a07 !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -1510,26 +1490,26 @@
   --tab-stacked-header-width: 40px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
-  --tab-stacked-text-align: left !important;
+  --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #111111 !important;
+  --tab-switcher-background: #191510 !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color: #782a1d !important;
-  --tab-text-color-active: #a27f47 !important;
-  --tab-text-color-focused: #a27f47 !important;
-  --tab-text-color-focused-active: #a27f47 !important;
-  --tab-text-color-focused-active-current: #ebca97 !important;
-  --tab-text-color-focused-highlighted: #a27f47 !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px #93684e !important;
+  --tab-text-color: #93684e !important;
+  --tab-text-color-active: #d8c2b4 !important;
+  --tab-text-color-focused: #d8c2b4 !important;
+  --tab-text-color-focused-active: #d8c2b4 !important;
+  --tab-text-color-focused-active-current: #dfccc3 !important;
+  --tab-text-color-focused-highlighted: #93684e !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #212121 !important;
+  --table-add-button-border-color: #0f0a07 !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #212121 !important;
+  --table-border-color: #0f0a07 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1538,14 +1518,14 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: #782a1d !important;
-  --table-drag-handle-color: #782a1d !important;
+  --table-drag-handle-background-active: #93684e !important;
+  --table-drag-handle-color: #93684e !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: #212121 !important;
+  --table-header-border-color: #0f0a07 !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: #ebca97 !important;
+  --table-header-color: #dfccc3 !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -1555,44 +1535,44 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: rgba(138, 92, 245, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: #782a1d !important;
+  --table-selection-border-color: #93684e !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: #782b1d52 !important;
+  --tag-background: rgba(138, 92, 245, 0.1) !important;
   --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: #a27f47 !important;
-  --tag-color-hover: #a27f47 !important;
+  --tag-color: #93684e !important;
+  --tag-color-hover: #93684e !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: #a27f47 !important;
-  --text-accent-hover: #ebca97 !important;
+  --text-accent: #93684e !important;
+  --text-accent-hover: #93684e !important;
   --text-error: #fb464c !important;
-  --text-faint: #782a1d !important;
+  --text-faint: #93684e !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #a27f47 !important;
-  --text-normal: #ebca97 !important;
+  --text-muted: #d8c2b4 !important;
+  --text-normal: #dfccc3 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: #782b1d52 !important;
+  --text-selection: #503a2c !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
-  --titlebar-background: #111111 !important;
-  --titlebar-background-focused: #212121 !important;
-  --titlebar-border-color: #212121 !important;
+  --titlebar-background: #191510 !important;
+  --titlebar-background-focused: #0f0a07 !important;
+  --titlebar-border-color: #0f0a07 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #a27f47 !important;
-  --titlebar-text-color-focused: #ebca97 !important;
+  --titlebar-text-color: #d8c2b4 !important;
+  --titlebar-text-color-focused: #dfccc3 !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -1606,8 +1586,8 @@
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #ebca97 !important;
-  --vault-profile-color-hover: #ebca97 !important;
+  --vault-profile-color: #dfccc3 !important;
+  --vault-profile-color-hover: #dfccc3 !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -1616,31 +1596,11 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: #a27f47 !important;
-  --h2-color: #a27f47 !important;
-  --h3-color: #a27f47 !important;
-  --h4-color: #a27f47 !important;
-  --h5-color: #a27f47 !important;
-  --h6-color: #a27f47 !important;
-  --inline-title-color: #a27f47 !important;
-  --default-font: "Source Code Pro" !important;
-  --vault-name-color: #ebca97 !important;
-  --embed-border-left: 2px solid #782a1d !important;
-  --embed-border-right: none !important;
-  --nav-item-children-margin-left: 12px !important;
-  --nav-item-children-padding-left: 4px !important;
-  --status-bar-scroll-padding: 30px !important;
-  --vault-name-font-size: 13px !important;
-  --vault-name-font-weight: 500 !important;
-  --input-disabled-border-color: transparent !important;
-  --input-hover-border-color: black !important;
-  --input-unfocused-border-color: transparent !important;
-  --input-focus-border-color: Highlight !important;
-  --input-focus-outline: 1px solid Canvas !important;
-  --annotation-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
-  --highlight-bg-color: rgb(180, 0, 170) !important;
-  --highlight-selected-bg-color: rgb(0, 100, 0) !important;
-  --link-outline: none !important;
+  --bold-color: #b08c75 !important;
+  --italic-color: #b08c75 !important;
+  --bases-cards-group-padding: 12px !important;
+  --bases-cards-text-size: 0.875em !important;
+  --bases-table-text-size: 0.875em !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1721,65 +1681,63 @@ body {
   }
 
   div#quartz-root {
-    background-color: light-dark(rgb(252, 245, 227), rgb(17, 17, 17));
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    background-color: light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: light-dark(rgb(252, 245, 227), rgb(17, 17, 17));
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    background-color: light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: light-dark(rgb(252, 245, 227), rgb(17, 17, 17));
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    background-color: light-dark(rgb(226, 214, 205), rgb(25, 21, 16));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
   }
 
   &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: light-dark(rgb(252, 245, 227), rgb(17, 17, 17));
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    background-color: light-dark(rgb(226, 214, 205), rgb(25, 21, 16));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: light-dark(rgb(252, 245, 227), rgb(17, 17, 17));
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
-    border-left: 1px solid light-dark(rgb(224, 224, 224), rgb(33, 33, 33));
+    background-color: light-dark(rgb(226, 214, 205), rgb(25, 21, 16));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
+    border-left: 1px solid light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
   }
 
   .page > div#quartz-body div.sidebar.left {
-    border-right: 1px solid light-dark(rgb(224, 224, 224), rgb(33, 33, 33));
+    border-right: 1px solid light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
   }
 
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(147, 115, 64), rgb(162, 127, 71));
+    color: rgb(147, 104, 78);
     cursor: pointer;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(162, 127, 71);
-    text-decoration-color: light-dark(rgb(147, 115, 64), rgb(162, 127, 71));
+    text-decoration: underline solid rgb(147, 104, 78);
+    text-decoration-color: rgb(147, 104, 78);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1790,27 +1748,25 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(147, 115, 64), rgb(162, 127, 71));
+    color: rgb(147, 104, 78);
     cursor: pointer;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(162, 127, 71);
-    text-decoration-color: light-dark(rgb(147, 115, 64), rgb(162, 127, 71));
+    text-decoration: underline solid rgb(147, 104, 78);
+    text-decoration-color: rgb(147, 104, 78);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1820,22 +1776,20 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(147, 115, 64), rgb(162, 127, 71));
+    color: rgb(147, 104, 78);
     cursor: pointer;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     outline: inherit;
@@ -1850,27 +1804,25 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     cursor: auto;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(235, 202, 151);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    text-decoration: none solid rgb(223, 204, 195);
+    text-decoration-color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1881,27 +1833,25 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: rgb(176, 140, 117);
     cursor: auto;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(235, 202, 151);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    text-decoration: none solid rgb(176, 140, 117);
+    text-decoration-color: rgb(176, 140, 117);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1912,27 +1862,25 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: rgb(176, 140, 117);
     cursor: auto;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(235, 202, 151);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    text-decoration: none solid rgb(176, 140, 117);
+    text-decoration-color: rgb(176, 140, 117);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1943,27 +1891,25 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: rgb(176, 140, 117);
     cursor: auto;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(235, 202, 151);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    text-decoration: none solid rgb(176, 140, 117);
+    text-decoration-color: rgb(176, 140, 117);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1974,27 +1920,25 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: rgb(176, 140, 117);
     cursor: auto;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(235, 202, 151);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    text-decoration: none solid rgb(176, 140, 117);
+    text-decoration-color: rgb(176, 140, 117);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2004,27 +1948,25 @@ body {
 
   .text-highlight {
     background-color: rgba(255, 208, 0, 0.4);
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     cursor: auto;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(235, 202, 151);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    text-decoration: none solid rgb(223, 204, 195);
+    text-decoration-color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2034,27 +1976,25 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     cursor: auto;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: line-through solid rgb(235, 202, 151);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    text-decoration: line-through solid rgb(223, 204, 195);
+    text-decoration-color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2081,8 +2021,8 @@ body {
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: light-dark(
-      rgba(0, 0, 0, 0.075),
-      rgba(255, 255, 255, 0.075)
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
     );
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2092,7 +2032,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
   }
 
   .search
@@ -2108,7 +2048,7 @@ body {
       ~ .result-card:hover
     ) {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    border: 0px light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2117,12 +2057,12 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
   }
 
   hr {
-    border: 0px light-dark(rgb(181, 63, 42), rgb(120, 42, 29));
-    border-top: 2px solid light-dark(rgb(181, 63, 42), rgb(120, 42, 29));
+    border: 0px light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
+    border-top: 2px solid light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2150,21 +2090,19 @@ body {
     > li
     > .match-tag {
     align-items: center;
-    background-color: light-dark(rgb(235, 202, 151), rgba(120, 43, 29, 0.32));
+    background-color: rgba(138, 92, 245, 0.1);
     display: flex;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     margin-inline-start: 0px;
@@ -2180,17 +2118,17 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(147, 115, 64), rgb(162, 127, 71));
+    color: rgb(147, 104, 78);
   }
 
   ul > li {
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     text-align: start;
   }
 
   ul > li::marker {
-    background-color: light-dark(rgb(181, 63, 42), rgb(120, 42, 29));
-    border: 0px light-dark(rgb(181, 63, 42), rgb(120, 42, 29));
+    background-color: rgb(147, 104, 78);
+    border: 0px rgb(147, 104, 78);
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2199,20 +2137,20 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(181, 63, 42), rgb(120, 42, 29));
+    color: rgb(147, 104, 78);
     pointer-events: none;
     transform: none;
     transition: inherit;
   }
 
   ol > li {
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     text-align: start;
   }
 
   ol > li::marker {
-    background-color: light-dark(rgb(181, 63, 42), rgb(120, 42, 29));
-    border: 0px light-dark(rgb(181, 63, 42), rgb(120, 42, 29));
+    background-color: rgb(147, 104, 78);
+    border: 0px rgb(147, 104, 78);
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2221,15 +2159,15 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(181, 63, 42), rgb(120, 42, 29));
+    color: rgb(147, 104, 78);
     pointer-events: none;
     transform: none;
     transition: inherit;
   }
 
   code {
-    background-color: light-dark(rgb(235, 202, 151), rgba(120, 43, 29, 0.32));
-    border: 0px solid light-dark(rgb(224, 224, 224), rgb(33, 33, 33));
+    background-color: light-dark(rgb(226, 214, 205), rgb(36, 36, 36));
+    border: 0px solid light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2238,18 +2176,18 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(rgb(17, 17, 17), rgb(162, 127, 71));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Code", "Roboto Mono",
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
-    padding: 1.4px 3.5px;
+    padding: 2.1px 4.2px;
   }
 
   pre > code,
   pre:has(> code) {
-    background-color: light-dark(rgb(235, 202, 151), rgba(120, 43, 29, 0.32));
-    border: 0px solid light-dark(rgb(224, 224, 224), rgb(33, 33, 33));
+    background-color: light-dark(rgb(226, 214, 205), rgb(36, 36, 36));
+    border: 0px solid light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2258,15 +2196,15 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 12px 16px;
     white-space-collapse: preserve;
     text-wrap-mode: wrap;
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(235, 202, 151), rgba(120, 43, 29, 0.32));
-    border: 0px solid light-dark(rgb(224, 224, 224), rgb(33, 33, 33));
+    background-color: light-dark(rgb(226, 214, 205), rgb(36, 36, 36));
+    border: 0px solid light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2325,27 +2263,25 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(17, 17, 17), rgb(162, 127, 71));
-    text-decoration: line-through solid rgb(162, 127, 71);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(162, 127, 71));
+    color: light-dark(rgb(42, 33, 25), rgb(216, 194, 180));
+    text-decoration: line-through solid rgb(216, 194, 180);
+    text-decoration-color: light-dark(rgb(42, 33, 25), rgb(216, 194, 180));
   }
 
   blockquote {
     background-color: rgba(0, 0, 0, 0);
     border-inline-start: inherit;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-style: normal;
     padding-bottom: 0px;
@@ -2356,13 +2292,13 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(181, 63, 42), rgb(120, 42, 29));
-    text-decoration: none solid rgb(120, 42, 29);
+    color: rgb(147, 104, 78);
+    text-decoration: none solid rgb(147, 104, 78);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(252, 245, 227), rgb(42, 42, 42));
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(33, 33, 33));
+    background-color: light-dark(rgb(242, 235, 228), rgb(42, 42, 42));
+    border: 1px solid light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -2371,25 +2307,23 @@ body {
     border-start-end-radius: 5px;
     border-end-start-radius: 5px;
     border-end-end-radius: 5px;
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
   }
 
   .search > .search-container > .search-space {
-    background-color: light-dark(rgb(252, 245, 227), rgb(17, 17, 17));
+    background-color: light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
     border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -2406,9 +2340,9 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(252, 245, 227), rgb(17, 17, 17));
-    border: 0px light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
-    border-bottom: 1px solid light-dark(rgb(252, 245, 227), rgb(17, 17, 17));
+    background-color: light-dark(rgb(242, 235, 228), rgb(15, 10, 7));
+    border: 0px light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
+    border-bottom: 1px solid light-dark(rgb(226, 214, 205), rgb(25, 21, 16));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2422,27 +2356,25 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     cursor: auto;
     filter: none;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(235, 202, 151);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    text-decoration: none solid rgb(223, 204, 195);
+    text-decoration-color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2468,7 +2400,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
   }
 
   .search
@@ -2477,7 +2409,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    border: 0px light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2506,11 +2438,11 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-weight: 400;
     background-color: light-dark(
-      rgba(0, 0, 0, 0.075),
-      rgba(255, 255, 255, 0.075)
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
     );
   }
 
@@ -2556,139 +2488,125 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
   }
 
   h1 {
-    color: rgb(162, 127, 71);
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     text-shadow: none;
   }
 
   h2 {
-    color: rgb(162, 127, 71);
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     text-shadow: none;
   }
 
   h3 {
-    color: rgb(162, 127, 71);
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     text-shadow: none;
   }
 
   h4 {
-    color: rgb(162, 127, 71);
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     text-shadow: none;
   }
 
   h5 {
-    color: rgb(162, 127, 71);
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     text-shadow: none;
   }
 
   h6 {
-    color: rgb(162, 127, 71);
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     text-shadow: none;
   }
 
   h2.page-title,
   h2.page-title a {
-    color: rgb(162, 127, 71);
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     text-shadow: none;
   }
@@ -2703,7 +2621,7 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    border: 0px light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2997,7 +2915,7 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(162, 127, 71);
+    stroke: rgb(216, 194, 180);
   }
 
   .callout[data-callout="bug"] {
@@ -3045,7 +2963,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(235, 202, 151);
+    stroke: rgb(223, 204, 195);
   }
 
   .callout[data-callout="quote"] {
@@ -3074,35 +2992,31 @@ body {
     white-space-collapse: break-spaces;
     text-wrap-mode: wrap;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
   }
 
   .katex-display > .katex > .katex-html {
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
   }
 
@@ -3111,32 +3025,30 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(17, 17, 17), rgb(162, 127, 71));
+    color: light-dark(rgb(42, 33, 25), rgb(216, 194, 180));
     cursor: default;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(162, 127, 71);
+    text-decoration: none solid rgb(216, 194, 180);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: light-dark(
-      rgba(0, 0, 0, 0.075),
-      rgba(255, 255, 255, 0.075)
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
     );
-    border: 0px light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    border: 0px light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3145,7 +3057,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(rgb(17, 17, 17), rgb(235, 202, 151));
+    color: light-dark(rgb(35, 25, 21), rgb(223, 204, 195));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -3158,45 +3070,41 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(17, 17, 17), rgb(162, 127, 71));
+    color: light-dark(rgb(42, 33, 25), rgb(216, 194, 180));
     cursor: default;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(162, 127, 71);
+    text-decoration: none solid rgb(216, 194, 180);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(17, 17, 17), rgb(162, 127, 71));
+    color: light-dark(rgb(42, 33, 25), rgb(216, 194, 180));
     cursor: default;
     font-family:
-      "Source Code Pro",
-      ui-monospace,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(162, 127, 71);
+    text-decoration: none solid rgb(216, 194, 180);
   }
 
   --current-page-slug: attr(data-slug raw-string);

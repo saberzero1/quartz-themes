@@ -13,7 +13,7 @@
   --anim-duration-fast: 160ms !important;
   --anim-duration-moderate: 320ms !important;
   --anim-duration-none: 0 !important;
-  --anim-duration-slow: 640ms !important;
+  --anim-duration-slow: 480ms !important;
   --anim-duration-superfast: 80ms !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
@@ -102,7 +102,7 @@
   --bold-weight: 700 !important;
   --border-width: 1px !important;
   --button-radius: calc(
-    8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vw *
+    8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh *
       clamp(0, (1 - 1) * 10000 + 1, 1)
   ) !important;
   --callout-blend-mode: normal !important;
@@ -202,7 +202,7 @@
   --color-red-rgb: 254, 112, 112 !important;
   --color-yellow: rgb(224, 205, 99) !important;
   --color-yellow-rgb: 224, 205, 99 !important;
-  --corner-smoothing: 0 !important;
+  --corner-smoothing: system-ui !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -516,7 +516,7 @@
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 16px !important;
+  --modal-radius: 20px !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
@@ -590,10 +590,10 @@
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 16px !important;
+  --radius-l: 20px !important;
   --radius-m: 12px !important;
   --radius-s: 8px !important;
-  --radius-xl: 24px !important;
+  --radius-xl: 28px !important;
   --ribbon-background: transparent !important;
   --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -606,7 +606,7 @@
   --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 16px !important;
+  --scrollbar-radius: 20px !important;
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: #5c5c5c !important;
@@ -614,7 +614,7 @@
   --search-icon-color: #5c5c5c !important;
   --search-icon-size: 18px !important;
   --search-result-background: #ffffff !important;
-  --shadow-l: 0 14px 62px 0 #00000040 !important;
+  --shadow-l: 0 14px 62px #00000040 !important;
   --shadow-s:
     rgba(0, 0, 0, 0.08) 0px 12px 24px -4px,
     rgba(0, 0, 0, 0.04) 0px 8px 16px -4px !important;
@@ -690,7 +690,7 @@
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #f6f6f6 !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 24px !important;
+  --tab-switcher-preview-radius: 28px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
   --tab-text-color: #ababab !important;
@@ -803,21 +803,12 @@
   --line-width: 700px !important;
   --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
   --anim-speed-modifier: 1 !important;
-  --banner-calc-base: 0px !important;
-  --banner-calc-icon: 64px !important;
-  --banner-content-offset: 0px !important;
-  --banner-fade-penalty: 32px !important;
-  --banner-icon-offset: -64px !important;
-  --banner-icon-size: 48px !important;
-  --banner-icon-spacer: 16px !important;
-  --banner-image-actual-height: 320px !important;
+  --banner-fade-height: 80px !important;
+  --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
-  --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
-  --banner-image-radius: 8px !important;
   --banner-mobile-offset: 0px !important;
-  --banner-mobile-spacer: 0px !important;
   --blockquote-size: 16px !important;
   --callout-size: 16px !important;
   --cards-aspect-ratio: auto !important;
@@ -845,7 +836,6 @@
   --icon-stroke-modifier: 1 !important;
   --line-width-wide: min(100cqw, 50rem) !important;
   --media-radius: 8px !important;
-  --nav-header-align: center !important;
   --nn-theme-file-border-radius: 12px !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.1) !important;
   --nn-theme-file-tag-color: rgb(138, 92, 245) !important;
@@ -863,12 +853,18 @@
   --nn-theme-navitem-selected-inactive-bg: rgba(0, 0, 0, 0.067) !important;
   --radius-modifier: 1 !important;
   --radius-modifier-check: clamp(0, (1 - 1) * 10000 + 1, 1) !important;
+  --setting-group-heading-color: #ababab !important;
+  --setting-group-heading-size: 13px !important;
+  --setting-items-padding: 16px 16px !important;
+  --setting-items-radius: 12px !important;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 32px !important;
   --tag-weight: 500 !important;
+  --text-normal-editor: #363636 !important;
   --translucent-dark-opacity: 50% !important;
   --translucent-light-opacity: 50% !important;
+  --view-top-spacing-markdown: 0px !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -879,7 +875,7 @@
   --anim-duration-fast: 160ms !important;
   --anim-duration-moderate: 320ms !important;
   --anim-duration-none: 0 !important;
-  --anim-duration-slow: 640ms !important;
+  --anim-duration-slow: 480ms !important;
   --anim-duration-superfast: 80ms !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
@@ -968,7 +964,7 @@
   --bold-weight: 700 !important;
   --border-width: 1px !important;
   --button-radius: calc(
-    8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vw *
+    8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh *
       clamp(0, (1 - 1) * 10000 + 1, 1)
   ) !important;
   --callout-blend-mode: normal;
@@ -1068,7 +1064,7 @@
   --color-red-rgb: 217, 90, 95 !important;
   --color-yellow: rgb(196, 180, 94) !important;
   --color-yellow-rgb: 196, 180, 94 !important;
-  --corner-smoothing: 0 !important;
+  --corner-smoothing: system-ui !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -1382,7 +1378,7 @@
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 16px !important;
+  --modal-radius: 20px !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
@@ -1455,10 +1451,10 @@
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 16px !important;
+  --radius-l: 20px !important;
   --radius-m: 12px !important;
   --radius-s: 8px !important;
-  --radius-xl: 24px !important;
+  --radius-xl: 28px !important;
   --ribbon-background: transparent !important;
   --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -1471,7 +1467,7 @@
   --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 16px !important;
+  --scrollbar-radius: 20px !important;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: #b3b3b3 !important;
@@ -1479,7 +1475,7 @@
   --search-icon-color: #b3b3b3 !important;
   --search-icon-size: 18px !important;
   --search-result-background: #1e1e1e !important;
-  --shadow-l: 0 14px 62px 0 #00000040 !important;
+  --shadow-l: 0 14px 62px #00000040 !important;
   --shadow-s:
     rgba(0, 0, 0, 0.08) 0px 12px 24px -4px,
     rgba(0, 0, 0, 0.04) 0px 8px 16px -4px !important;
@@ -1555,7 +1551,7 @@
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #262626 !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 24px !important;
+  --tab-switcher-preview-radius: 28px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
   --tab-text-color: #666666 !important;
@@ -1668,21 +1664,12 @@
   --line-width: 700px !important;
   --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
   --anim-speed-modifier: 1 !important;
-  --banner-calc-base: 0px !important;
-  --banner-calc-icon: 64px !important;
-  --banner-content-offset: 0px !important;
-  --banner-fade-penalty: 32px !important;
-  --banner-icon-offset: -64px !important;
-  --banner-icon-size: 48px !important;
-  --banner-icon-spacer: 16px !important;
-  --banner-image-actual-height: 320px !important;
+  --banner-fade-height: 80px !important;
+  --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
-  --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
-  --banner-image-radius: 8px !important;
   --banner-mobile-offset: 0px !important;
-  --banner-mobile-spacer: 0px !important;
   --blockquote-size: 16px !important;
   --callout-size: 16px;
   --cards-aspect-ratio: auto !important;
@@ -1710,7 +1697,6 @@
   --icon-stroke-modifier: 1 !important;
   --line-width-wide: min(100cqw, 50rem) !important;
   --media-radius: 8px !important;
-  --nav-header-align: center !important;
   --nn-theme-file-border-radius: 12px !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.1) !important;
   --nn-theme-file-tag-color: rgb(166, 139, 249) !important;
@@ -1733,13 +1719,19 @@
   ) !important;
   --radius-modifier: 1 !important;
   --radius-modifier-check: clamp(0, (1 - 1) * 10000 + 1, 1) !important;
+  --setting-group-heading-color: #666666 !important;
+  --setting-group-heading-size: 13px !important;
+  --setting-items-padding: 16px 16px !important;
+  --setting-items-radius: 12px !important;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px,
     rgba(255, 255, 255, 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 32px !important;
   --tag-weight: 500 !important;
+  --text-normal-editor: #cdcdcd !important;
   --translucent-dark-opacity: 50% !important;
   --translucent-light-opacity: 50% !important;
+  --view-top-spacing-markdown: 0px !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -2049,7 +2041,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     cursor: auto;
     filter: none;
     font-family:
@@ -2067,8 +2059,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(205, 205, 205);
+    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2079,7 +2071,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     cursor: auto;
     filter: none;
     font-family:
@@ -2097,8 +2089,8 @@ body {
       sans-serif;
     font-weight: 700;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(205, 205, 205);
+    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2109,7 +2101,7 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     cursor: auto;
     filter: none;
     font-family:
@@ -2127,8 +2119,8 @@ body {
       sans-serif;
     font-weight: 700;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(205, 205, 205);
+    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2139,7 +2131,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     cursor: auto;
     filter: none;
     font-family:
@@ -2157,8 +2149,8 @@ body {
       sans-serif;
     font-weight: 700;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(205, 205, 205);
+    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2169,7 +2161,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     cursor: auto;
     filter: none;
     font-family:
@@ -2187,8 +2179,8 @@ body {
       sans-serif;
     font-weight: 700;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(205, 205, 205);
+    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2227,7 +2219,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     cursor: auto;
     filter: none;
     font-family:
@@ -2245,8 +2237,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: line-through solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: line-through solid rgb(205, 205, 205);
+    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2284,7 +2276,7 @@ body {
     border-start-end-radius: 8px;
     border-end-start-radius: 8px;
     border-end-end-radius: 8px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   }
 
   .search
@@ -2300,7 +2292,7 @@ body {
       ~ .result-card:hover
     ) {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2309,7 +2301,7 @@ body {
     border-start-end-radius: 8px;
     border-end-start-radius: 8px;
     border-end-end-radius: 8px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   }
 
   hr {
@@ -2375,7 +2367,7 @@ body {
   }
 
   ul > li {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-align: start;
   }
 
@@ -2397,7 +2389,7 @@ body {
   }
 
   ol > li {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-align: start;
   }
 
@@ -2580,14 +2572,14 @@ body {
   .search > .search-container > .search-space {
     background-color: light-dark(rgb(246, 246, 246), rgb(38, 38, 38));
     border: 1px solid light-dark(rgb(212, 212, 212), rgb(63, 63, 63));
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-start-start-radius: 16px;
-    border-start-end-radius: 16px;
-    border-end-start-radius: 16px;
-    border-end-end-radius: 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 62px 0px;
   }
 
@@ -2608,7 +2600,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     cursor: auto;
     filter: none;
     font-family:
@@ -2626,8 +2618,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(205, 205, 205);
+    text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2638,14 +2630,14 @@ body {
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
     border: 1px solid light-dark(rgb(212, 212, 212), rgb(63, 63, 63));
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-start-start-radius: 16px;
-    border-start-end-radius: 16px;
-    border-end-start-radius: 16px;
-    border-end-end-radius: 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
   }
 
   .search
@@ -2653,7 +2645,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   }
 
   .search
@@ -2662,7 +2654,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2691,7 +2683,7 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     font-weight: 400;
     background-color: light-dark(
       rgba(0, 0, 0, 0.067),
@@ -2741,48 +2733,48 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
   }
 
   h1 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     font-family: InstrumentSerif;
     text-shadow: none;
   }
 
   h2 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     font-family: InstrumentSerif;
     text-shadow: none;
   }
 
   h3 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     font-family: InstrumentSerif;
     text-shadow: none;
   }
 
   h4 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     font-family: InstrumentSerif;
     text-shadow: none;
   }
 
   h5 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     font-family: InstrumentSerif;
     text-shadow: none;
   }
 
   h6 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     font-family: InstrumentSerif;
     text-shadow: none;
   }
 
   h2.page-title,
   h2.page-title a {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     font-family: InstrumentSerif;
     text-shadow: none;
   }
@@ -2797,7 +2789,7 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;

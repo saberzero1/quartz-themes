@@ -132,6 +132,7 @@ body {
     --background-4: white;
     --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 90%);
     --background-6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .2);  
+    --background-7: rgb(206, 206, 206);
     
     --highlight-1: rgba(0, 0, 0, 0.056);
     --highlight-2: rgba(214, 214, 214, 0.308);
@@ -170,6 +171,7 @@ body {
     --background-4: rgb(12, 12, 12);
     --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 30%);
     --background-6: hsla(var(--accent-h), calc(var(--accent-s) * .1), var(--accent-l), 0.2);
+    --background-7: rgb(46, 46, 46);
 
     --highlight-1: rgba(255, 255, 255, 0.075);
     --highlight-2: rgba(255, 255, 255, 0.075);
@@ -799,8 +801,7 @@ li > .callout {
 .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
 .markdown-rendered h1 {
     display: inline-block;
-    color: var(--colored-accent-i1);
-    background: var(--colored-accent-2);
+    background: var(--background-7);
     padding: .1rem .3rem .1rem .3rem;
         -moz-border-bottom-left-radius: var(--h1-radius);
         -webkit-border-bottom-left-radius: var(--h1-radius);
@@ -817,8 +818,7 @@ li > .callout {
         -webkit-box-decoration-break: clone;
         -o-box-decoration-break: clone;
         box-decoration-break: clone;
-    --h1-radius: .3em;
-    box-shadow: 0px 0px 5em var(--colored-accent-4), 0 0 0em .05em var(--colored-accent-1);
+    --h1-radius: .1em;
 }
 /* heading mark link color correction */
 h1 > a, 
@@ -933,14 +933,11 @@ span.cm-highlight,
 }
 
 
-span.cm-highlight:not(.cm-strong),
-.markdown-rendered mark:not(:has(strong), strong mark) {
-    font-size: .9em;
+span.cm-highlight,
+.markdown-rendered mark {
     padding: 0rem .2rem 0rem .2rem;
     margin: .1rem .1rem .1rem .1rem;
-    border: .1rem dashed;
-    border-color: var(--colored-accent-2);
-    background-color: var(--colored-accent-4);
+    background: var(--background-7) !important;
         -moz-border-bottom-left-radius: var(--mark-radius);
         -webkit-border-bottom-left-radius: var(--mark-radius);
         border-bottom-left-radius: var(--mark-radius);
@@ -956,8 +953,8 @@ span.cm-highlight:not(.cm-strong),
         -webkit-box-decoration-break: clone;
         -o-box-decoration-break: clone;
         box-decoration-break: clone;
-        box-shadow: 0px 0px 1em var(--colored-accent-3);
-    --mark-radius: .4em;
+    --mark-radius: .3rem;
+    font-weight: 600;
     color: var(--tc);
 }
 
@@ -965,7 +962,6 @@ span.cm-highlight:not(.cm-strong),
 span.cm-strong:not(.cm-highlight),
 strong:not(:has(mark), mark strong)  {
     padding: 0rem .2rem 0rem .2rem;
-    font-size: .9em;
     margin: .1rem .1rem .1rem .1rem;
     background: var(--colored-accent-4) !important;
         -moz-border-bottom-left-radius: var(--mark-radius);
@@ -983,39 +979,13 @@ strong:not(:has(mark), mark strong)  {
         -webkit-box-decoration-break: clone;
         -o-box-decoration-break: clone;
         box-decoration-break: clone;
-        box-shadow: 0px 0px 0em .08rem var(--colored-accent-2), 0px 0px 3em var(--colored-accent-3);
-    --mark-radius: .4em;
+    --mark-radius: .3rem;
     color: var(--colored-accent-1);
     font-weight: 900;
 }
 
 
-strong:has(mark)>*, mark:has(strong)>*, span.cm-strong.cm-highlight {
-    font-size: 1.3rem !important;
-    font-variant: small-caps;
-    background: var(--colored-accent-4) !important;
-    padding-left: .2em !important;
-    padding-right: .2em !important;
-    border-radius: .3em;
-    font-weight: 700 !important;
-    box-shadow: 0px 0px .1em var(--colored-accent-1), 0px 0px 1em var(--colored-accent-4);
-        -moz-border-bottom-left-radius: var(--mark-radius);
-        -webkit-border-bottom-left-radius: var(--mark-radius);
-        border-bottom-left-radius: var(--mark-radius);
-        -moz-border-bottom-right-radius: var(--mark-radius);
-        -webkit-border-bottom-right-radius: var(--mark-radius);
-        border-bottom-right-radius: var(--mark-radius);
-        -moz-border-top-right-radius: var(--mark-radius);
-        -webkit-border-top-right-radius: var(--mark-radius);
-        border-top-right-radius: var(--mark-radius);
-        -moz-border-top-left-radius: var(--mark-radius);
-        -webkit-border-top-left-radius: var(--mark-radius);
-        border-top-left-radius: var(--mark-radius);
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
-    --mark-radius: .4em;
-}
+
 
 
 .cm-formatting.cm-formatting-highlight.cm-highlight {
