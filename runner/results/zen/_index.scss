@@ -813,7 +813,7 @@
   --active-border-color: rgb(0, 121, 172) !important;
   --app-model-bg-color: rgba(248, 248, 248, 0.8) !important;
   --background-setting: rgba(255, 255, 255) !important;
-  --background-setting-item: rgba(255, 255, 255, 0.3) !important;
+  --background-setting-item: rgba(255, 255, 255, 0.6) !important;
   --block-border-color: rgba(28, 28, 28, 0.25) !important;
   --editor-brightness: 1 !important;
   --floating-toc-background-color: transparent !important;
@@ -1644,7 +1644,7 @@
   --active-border-color: rgba(0, 157, 255, 0.8) !important;
   --app-model-bg-color: rgba(28, 28, 28, 0.8) !important;
   --background-setting: rgba(18, 18, 18) !important;
-  --background-setting-item: rgba(245, 245, 245, 0.08) !important;
+  --background-setting-item: #242424 !important;
   --block-border-color: rgba(245, 245, 245, 0.3) !important;
   --editor-brightness: 1 !important;
   --floating-toc-background-color: transparent !important;
@@ -1857,12 +1857,12 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: light-dark(rgb(249, 249, 249), rgb(42, 42, 42));
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: light-dark(rgb(249, 249, 249), rgb(42, 42, 42));
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 

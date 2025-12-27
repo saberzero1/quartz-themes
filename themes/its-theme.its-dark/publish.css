@@ -881,6 +881,8 @@ body.theme-dark {
   --h5-border-color: #475569;
   --h6-border-color: #04070c;
   --r-heading-color: #aa3333;
+  --r-heading-font:
+    "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --r-heading-text-transform: capitalize;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -1160,8 +1162,6 @@ body.theme-dark {
   --popover-border: 3px solid black;
   --progress: #803232;
   --progress-bg: #1b262f;
-  --r-heading-font:
-    "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --r-heading-font-weight: 700;
   --r-progress-color: #c94d4d;
   --radius-h: 0;

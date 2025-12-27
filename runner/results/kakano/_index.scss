@@ -1270,6 +1270,7 @@
   --embed-border-right: none !important;
   --embed-background: hsl(from rgb(38, 102, 192) h s l / 0.12) !important;
   --tag-weight: 400 !important;
+  --r-background-color: white !important;
   --r-heading-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -1277,6 +1278,11 @@
   ) !important;
   --r-heading-margin: 0.67em 0 0 0 !important;
   --r-heading-text-transform: none !important;
+  --r-heading1-size: 2.5em !important;
+  --r-heading2-size: 1.6em !important;
+  --r-heading3-size: 1.3em !important;
+  --r-heading4-size: 1em !important;
+  --r-link-color: rgb(138, 92, 245) !important;
   --r-main-font:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -1310,7 +1316,6 @@
     rgb(38, 102, 192),
     white 25%
   ) !important;
-  --r-background-color: white !important;
   --r-block-margin: 20px !important;
   --r-code-font:
     ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
@@ -1318,12 +1323,7 @@
   --r-heading-letter-spacing: normal !important;
   --r-heading-line-height: 1.2 !important;
   --r-heading-text-shadow: none !important;
-  --r-heading1-size: 2.5em !important;
   --r-heading1-text-shadow: none !important;
-  --r-heading2-size: 1.6em !important;
-  --r-heading3-size: 1.3em !important;
-  --r-heading4-size: 1em !important;
-  --r-link-color: rgb(138, 92, 245) !important;
   --r-link-color-hover: rgb(166, 139, 249) !important;
   --r-main-color: color-mix(in srgb, rgb(38, 102, 192), black 90%) !important;
   --tab-background-inactive: color-mix(
@@ -3253,6 +3253,11 @@
   --embed-border-right: none !important;
   --embed-background: hsl(from rgb(38, 102, 192) h s l / 0.12) !important;
   --tag-weight: 400 !important;
+  --r-background-color: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 95%
+  ) !important;
   --r-heading-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -3260,6 +3265,11 @@
   ) !important;
   --r-heading-margin: 0.67em 0 0 0 !important;
   --r-heading-text-transform: none !important;
+  --r-heading1-size: 2.5em !important;
+  --r-heading2-size: 1.6em !important;
+  --r-heading3-size: 1.3em !important;
+  --r-heading4-size: 1em !important;
+  --r-link-color: rgb(166, 139, 249) !important;
   --r-main-font:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -3293,11 +3303,6 @@
     rgb(38, 102, 192),
     black 25%
   ) !important;
-  --r-background-color: color-mix(
-    in srgb,
-    rgb(38, 102, 192),
-    black 95%
-  ) !important;
   --r-block-margin: 20px !important;
   --r-code-font:
     ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
@@ -3305,12 +3310,7 @@
   --r-heading-letter-spacing: normal !important;
   --r-heading-line-height: 1.2 !important;
   --r-heading-text-shadow: none !important;
-  --r-heading1-size: 2.5em !important;
   --r-heading1-text-shadow: none !important;
-  --r-heading2-size: 1.6em !important;
-  --r-heading3-size: 1.3em !important;
-  --r-heading4-size: 1em !important;
-  --r-link-color: rgb(166, 139, 249) !important;
   --r-link-color-hover: rgb(197, 182, 252) !important;
   --r-main-color: color-mix(in srgb, rgb(38, 102, 192), white 60%) !important;
   --tab-background-inactive: color-mix(

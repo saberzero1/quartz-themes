@@ -962,7 +962,7 @@ body.theme-light {
   --active-border-color: rgb(0, 121, 172) !important;
   --app-model-bg-color: rgba(248, 248, 248, 0.8) !important;
   --background-setting: rgba(255, 255, 255) !important;
-  --background-setting-item: rgba(255, 255, 255, 0.3) !important;
+  --background-setting-item: rgba(255, 255, 255, 0.6) !important;
   --block-border-color: rgba(28, 28, 28, 0.25) !important;
   --editor-brightness: 1 !important;
   --floating-toc-background-color: transparent !important;
@@ -1792,7 +1792,7 @@ body.theme-dark {
   --active-border-color: rgba(0, 157, 255, 0.8);
   --app-model-bg-color: rgba(28, 28, 28, 0.8);
   --background-setting: rgba(18, 18, 18);
-  --background-setting-item: rgba(245, 245, 245, 0.08);
+  --background-setting-item: #242424;
   --block-border-color: rgba(245, 245, 245, 0.3);
   --editor-brightness: 1;
   --floating-toc-background-color: transparent;

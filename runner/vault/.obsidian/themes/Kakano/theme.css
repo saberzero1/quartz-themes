@@ -3748,14 +3748,15 @@ body.mod-windows {
     border-radius: 0;
   }
 
-  .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  /* TODO: this idea to show the name of the active tab got too messy in practice - is there a better way? */
+  /* .workspace-tab-header.is-active .workspace-tab-header-inner-title {
     color: var(--icon-color-focused);
     display: block;
     text-overflow: ellipsis;
-    flex-basis: 25ch;
+    flex-basis: 8ch;
     flex-grow: 0;
     flex-shrink: 1;
-  }
+  } */
 
   .workspace-tab-header-spacer {
     display: none;

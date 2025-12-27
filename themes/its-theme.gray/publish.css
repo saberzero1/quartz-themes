@@ -892,6 +892,9 @@ body.theme-light {
   --h5-border-color: #404c62 !important;
   --h6-border-color: #171c22 !important;
   --r-heading-color: #6e7a92 !important;
+  --r-heading-font:
+    "Norwester", "Staatliches", "Racing Sans One", "Heavitas",
+    "Playfair Display", serif !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -1173,9 +1176,6 @@ body.theme-light {
   --popover-border: 3px solid #e1e9f6 !important;
   --progress: #aebdd4 !important;
   --progress-bg: #e1e9f6 !important;
-  --r-heading-font:
-    "Norwester", "Staatliches", "Racing Sans One", "Heavitas",
-    "Playfair Display", serif !important;
   --r-heading-font-weight: 100 !important;
   --r-progress-color: #a6aec7 !important;
   --radius-h: 0 !important;
@@ -2204,6 +2204,9 @@ body.theme-dark {
   --h5-border-color: #242b3d;
   --h6-border-color: #11151d;
   --r-heading-color: #9db1ca;
+  --r-heading-font:
+    "Norwester", "Staatliches", "Racing Sans One", "Heavitas",
+    "Playfair Display", serif;
   --r-heading-text-transform: capitalize;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -2484,9 +2487,6 @@ body.theme-dark {
   --popover-border: 3px solid #0e0f15;
   --progress: #515b71;
   --progress-bg: #252c36;
-  --r-heading-font:
-    "Norwester", "Staatliches", "Racing Sans One", "Heavitas",
-    "Playfair Display", serif;
   --r-heading-font-weight: 100;
   --r-progress-color: #8e9ab4;
   --radius-h: 0;

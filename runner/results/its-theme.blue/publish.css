@@ -884,6 +884,8 @@ body.theme-light {
   --h5-border-color: #8897b4 !important;
   --h6-border-color: #a6bbde !important;
   --r-heading-color: #4378c1 !important;
+  --r-heading-font:
+    "Recursive Sans Linear Static Black", "Oleo Script", "Calisto MT" !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -1164,8 +1166,6 @@ body.theme-light {
   --popover-border: 3px solid #dde4ef !important;
   --progress: #64a0db !important;
   --progress-bg: #dde4ef !important;
-  --r-heading-font:
-    "Recursive Sans Linear Static Black", "Oleo Script", "Calisto MT" !important;
   --r-heading-font-weight: 700 !important;
   --r-progress-color: #5174a3 !important;
   --radius-h: 0 !important;
@@ -2176,6 +2176,8 @@ body.theme-dark {
   --h5-border-color: #394d64;
   --h6-border-color: #6d7a9b;
   --r-heading-color: #2b71cd;
+  --r-heading-font:
+    "Recursive Sans Linear Static Black", "Oleo Script", "Calisto MT";
   --r-heading-text-transform: capitalize;
   --r-main-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -2455,8 +2457,6 @@ body.theme-dark {
   --popover-border: 3px solid #0e0f15;
   --progress: #394d64;
   --progress-bg: #252c36;
-  --r-heading-font:
-    "Recursive Sans Linear Static Black", "Oleo Script", "Calisto MT";
   --r-heading-font-weight: 700;
   --r-progress-color: #6ca6e0;
   --radius-h: 0;

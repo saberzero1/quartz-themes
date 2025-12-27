@@ -1499,6 +1499,7 @@ body.theme-light {
   --embed-border-right: none !important;
   --embed-background: hsl(from rgb(38, 102, 192) h s l / 0.12) !important;
   --tag-weight: 400 !important;
+  --r-background-color: white !important;
   --r-heading-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -1506,6 +1507,11 @@ body.theme-light {
   ) !important;
   --r-heading-margin: 0.67em 0 0 0 !important;
   --r-heading-text-transform: none !important;
+  --r-heading1-size: 2.5em !important;
+  --r-heading2-size: 1.6em !important;
+  --r-heading3-size: 1.3em !important;
+  --r-heading4-size: 1em !important;
+  --r-link-color: rgb(138, 92, 245) !important;
   --r-main-font:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -1539,7 +1545,6 @@ body.theme-light {
     rgb(38, 102, 192),
     white 25%
   ) !important;
-  --r-background-color: white !important;
   --r-block-margin: 20px !important;
   --r-code-font:
     ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
@@ -1547,12 +1552,7 @@ body.theme-light {
   --r-heading-letter-spacing: normal !important;
   --r-heading-line-height: 1.2 !important;
   --r-heading-text-shadow: none !important;
-  --r-heading1-size: 2.5em !important;
   --r-heading1-text-shadow: none !important;
-  --r-heading2-size: 1.6em !important;
-  --r-heading3-size: 1.3em !important;
-  --r-heading4-size: 1em !important;
-  --r-link-color: rgb(138, 92, 245) !important;
   --r-link-color-hover: rgb(166, 139, 249) !important;
   --r-main-color: color-mix(in srgb, rgb(38, 102, 192), black 90%) !important;
   --tab-background-inactive: color-mix(
@@ -3285,9 +3285,15 @@ body.theme-dark {
   --embed-border-right: none;
   --embed-background: hsl(from rgb(38, 102, 192) h s l / 0.12);
   --tag-weight: 400;
+  --r-background-color: color-mix(in srgb, rgb(38, 102, 192), black 95%);
   --r-heading-color: color-mix(in srgb, rgb(38, 102, 192), white 60%);
   --r-heading-margin: 0.67em 0 0 0;
   --r-heading-text-transform: none;
+  --r-heading1-size: 2.5em;
+  --r-heading2-size: 1.6em;
+  --r-heading3-size: 1.3em;
+  --r-heading4-size: 1em;
+  --r-link-color: rgb(166, 139, 249);
   --r-main-font:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -3313,7 +3319,6 @@ body.theme-dark {
     rgb(38, 102, 192),
     black 25%
   );
-  --r-background-color: color-mix(in srgb, rgb(38, 102, 192), black 95%);
   --r-block-margin: 20px;
   --r-code-font:
     ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
@@ -3321,12 +3326,7 @@ body.theme-dark {
   --r-heading-letter-spacing: normal;
   --r-heading-line-height: 1.2;
   --r-heading-text-shadow: none;
-  --r-heading1-size: 2.5em;
   --r-heading1-text-shadow: none;
-  --r-heading2-size: 1.6em;
-  --r-heading3-size: 1.3em;
-  --r-heading4-size: 1em;
-  --r-link-color: rgb(166, 139, 249);
   --r-link-color-hover: rgb(197, 182, 252);
   --r-main-color: color-mix(in srgb, rgb(38, 102, 192), white 60%);
   --tab-background-inactive: color-mix(in srgb, rgb(38, 102, 192), black 85%);

@@ -61,7 +61,7 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: oklch(78% 0 0) !important;
+  --bases-table-border-color: oklch(82% 0 0) !important;
   --bases-table-cell-background-active: oklch(100% 0 0) !important;
   --bases-table-cell-background-disabled: oklch(97% 0 0) !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
@@ -79,7 +79,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: oklch(100% 0 0) !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --bases-table-header-color: oklch(0.5 0.15 262) !important;
+  --bases-table-header-color: oklch(0.4 0.15 262) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -114,7 +114,7 @@
   --callout-fail: 244, 114, 102 !important;
   --callout-important: 132, 220, 210 !important;
   --callout-info: 141, 158, 255 !important;
-  --callout-padding: 0.75em 1em !important;
+  --callout-padding: 12px 12px 12px 24px !important;
   --callout-question: 247, 159, 105 !important;
   --callout-quote: 158, 158, 158 !important;
   --callout-radius: 4px !important;
@@ -358,10 +358,10 @@
   --highlight-mix-blend-mode: darken !important;
   --hr-color: oklch(82% 0 0) !important;
   --hr-thickness: 2px !important;
-  --icon-color: oklch(27.5% 0 0) !important;
-  --icon-color-active: oklch(0% 0 0) !important;
+  --icon-color: oklch(45% 0 0) !important;
+  --icon-color-active: oklch(27.5% 0 0) !important;
   --icon-color-focused: oklch(0% 0 0) !important;
-  --icon-color-hover: oklch(0% 0 0) !important;
+  --icon-color-hover: oklch(27.5% 0 0) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -709,7 +709,7 @@
   --table-add-button-border-color: oklch(88% 0 0) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: oklch(78% 0 0) !important;
+  --table-border-color: oklch(82% 0 0) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -723,7 +723,7 @@
   --table-drag-handle-color-active: oklch(100% 0 0) !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: oklch(78% 0 0) !important;
+  --table-header-border-color: oklch(82% 0 0) !important;
   --table-header-border-width: 1px !important;
   --table-header-color: oklch(0% 0 0) !important;
   --table-header-size: 16px !important;
@@ -932,7 +932,7 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: oklch(45% 0 0) !important;
+  --bases-table-border-color: oklch(42% 0 0) !important;
   --bases-table-cell-background-active: oklch(30% 0 0) !important;
   --bases-table-cell-background-disabled: oklch(27% 0 0) !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
@@ -950,7 +950,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: oklch(30% 0 0) !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --bases-table-header-color: oklch(0.7 0.15 262) !important;
+  --bases-table-header-color: oklch(0.9 0.15 262) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -985,7 +985,7 @@
   --callout-fail: 244, 114, 102;
   --callout-important: 132, 220, 210;
   --callout-info: 141, 158, 255;
-  --callout-padding: 0.75em 1em;
+  --callout-padding: 12px 12px 12px 24px;
   --callout-question: 247, 159, 105;
   --callout-quote: 158, 158, 158;
   --callout-radius: 4px;
@@ -997,7 +997,7 @@
   --callout-todo: 141, 158, 255;
   --callout-warning: 247, 159, 105;
   --canvas-background: oklch(30% 0 0) !important;
-  --canvas-card-label-color: oklch(55% 0 0) !important;
+  --canvas-card-label-color: oklch(58% 0 0) !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 244, 114, 102 !important;
   --canvas-color-2: 247, 159, 105 !important;
@@ -1007,7 +1007,7 @@
   --canvas-color-6: 184, 157, 231 !important;
   --canvas-dot-pattern: oklch(33% 0 0) !important;
   --caret-color: oklch(100% 0 0) !important;
-  --checkbox-border-color: oklch(55% 0 0) !important;
+  --checkbox-border-color: oklch(58% 0 0) !important;
   --checkbox-border-color-hover: oklch(77.5% 0 0) !important;
   --checkbox-color: oklch(0.7 0.15 70) !important;
   --checkbox-color-hover: oklch(0.9 0.15 70) !important;
@@ -1022,7 +1022,7 @@
   --code-border-color: oklch(36% 0 0) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: oklch(55% 0 0) !important;
+  --code-comment: oklch(58% 0 0) !important;
   --code-function: #d4e481 !important;
   --code-important: #f79f69 !important;
   --code-keyword: #dfaac0 !important;
@@ -1036,7 +1036,7 @@
   --code-tag: #f47266 !important;
   --code-value: #b89de7 !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: oklch(55% 0 0) !important;
+  --collapse-icon-color: oklch(58% 0 0) !important;
   --collapse-icon-color-collapsed: oklch(0.9 0.15 70) !important;
   --color-accent-1: rgb(166, 139, 249) !important;
   --color-accent-2: rgb(197, 182, 252) !important;
@@ -1168,7 +1168,7 @@
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
   --footnote-id-color: oklch(77.5% 0 0) !important;
-  --footnote-id-color-no-occurrences: oklch(55% 0 0) !important;
+  --footnote-id-color-no-occurrences: oklch(58% 0 0) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
@@ -1185,7 +1185,7 @@
   --graph-node-attachment: #d4e481 !important;
   --graph-node-focused: oklch(0.9 0.15 70) !important;
   --graph-node-tag: oklch(0.9 0.15 262) !important;
-  --graph-node-unresolved: oklch(55% 0 0) !important;
+  --graph-node-unresolved: oklch(58% 0 0) !important;
   --graph-text: oklch(100% 0 0) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
@@ -1224,15 +1224,15 @@
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: oklch(55% 0 0) !important;
+  --heading-formatting: oklch(58% 0 0) !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
   --hr-color: oklch(42% 0 0) !important;
   --hr-thickness: 2px !important;
-  --icon-color: oklch(77.5% 0 0) !important;
-  --icon-color-active: oklch(100% 0 0) !important;
+  --icon-color: oklch(58% 0 0) !important;
+  --icon-color-active: oklch(77.5% 0 0) !important;
   --icon-color-focused: oklch(100% 0 0) !important;
-  --icon-color-hover: oklch(100% 0 0) !important;
+  --icon-color-hover: oklch(77.5% 0 0) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1265,11 +1265,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: oklch(55% 0 0) !important;
+  --input-date-separator: oklch(58% 0 0) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: oklch(55% 0 0) !important;
+  --input-placeholder-color: oklch(58% 0 0) !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -1394,10 +1394,10 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: oklch(55% 0 0) !important;
-  --nav-collapse-icon-color-collapsed: oklch(55% 0 0) !important;
+  --nav-collapse-icon-color: oklch(58% 0 0) !important;
+  --nav-collapse-icon-color-collapsed: oklch(58% 0 0) !important;
   --nav-heading-color: oklch(100% 0 0) !important;
-  --nav-heading-color-collapsed: oklch(55% 0 0) !important;
+  --nav-heading-color-collapsed: oklch(58% 0 0) !important;
   --nav-heading-color-collapsed-hover: oklch(77.5% 0 0) !important;
   --nav-heading-color-hover: oklch(100% 0 0) !important;
   --nav-heading-weight: 500 !important;
@@ -1419,7 +1419,7 @@
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: oklch(55% 0 0) !important;
+  --nav-tag-color: oklch(58% 0 0) !important;
   --nav-tag-color-active: oklch(77.5% 0 0) !important;
   --nav-tag-color-hover: oklch(77.5% 0 0) !important;
   --nav-tag-radius: 4px !important;
@@ -1442,7 +1442,7 @@
   --pill-border-width: 1px !important;
   --pill-color: oklch(77.5% 0 0) !important;
   --pill-color-hover: oklch(100% 0 0) !important;
-  --pill-color-remove: oklch(55% 0 0) !important;
+  --pill-color-remove: oklch(58% 0 0) !important;
   --pill-color-remove-hover: oklch(0.9 0.15 70) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
@@ -1567,7 +1567,7 @@
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-text-color: oklch(55% 0 0) !important;
+  --tab-text-color: oklch(58% 0 0) !important;
   --tab-text-color-active: oklch(77.5% 0 0) !important;
   --tab-text-color-focused: oklch(77.5% 0 0) !important;
   --tab-text-color-focused-active: oklch(77.5% 0 0) !important;
@@ -1578,7 +1578,7 @@
   --table-add-button-border-color: oklch(36% 0 0) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: oklch(45% 0 0) !important;
+  --table-border-color: oklch(42% 0 0) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1588,11 +1588,11 @@
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: oklch(0.7 0.15 70) !important;
-  --table-drag-handle-color: oklch(55% 0 0) !important;
+  --table-drag-handle-color: oklch(58% 0 0) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: oklch(45% 0 0) !important;
+  --table-header-border-color: oklch(42% 0 0) !important;
   --table-header-border-width: 1px !important;
   --table-header-color: oklch(100% 0 0) !important;
   --table-header-size: 16px !important;
@@ -1633,7 +1633,7 @@
   --text-accent: oklch(0.9 0.15 70) !important;
   --text-accent-hover: oklch(1 0.09 70) !important;
   --text-error: #f47266 !important;
-  --text-faint: oklch(55% 0 0) !important;
+  --text-faint: oklch(58% 0 0) !important;
   --text-highlight-bg: oklch(from oklch(0.7 0.15 70) l c h/0.33) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: oklch(77.5% 0 0) !important;
@@ -1716,7 +1716,7 @@
     sans-serif !important;
   --base-row-even-bg: oklch(30% 0 0) !important;
   --base-row-hover-bg: oklch(39% 0 0) !important;
-  --base-row-odd-bg: oklch(27% 0 0) !important;
+  --base-row-odd-bg: oklch(33% 0 0) !important;
   --heading-underline-color: oklch(36% 0 0) !important;
   --nn-theme-file-selected-bg: oklch(39% 0 0) !important;
   --nn-theme-file-selected-inactive-bg: oklch(36% 0 0) !important;
@@ -2543,8 +2543,8 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(oklch(0.45 0 0), oklch(0.55 0 0));
-    text-decoration: none solid oklch(0.55 0 0);
+    color: light-dark(oklch(0.45 0 0), oklch(0.58 0 0));
+    text-decoration: none solid oklch(0.58 0 0);
   }
 
   .search > .search-button {
@@ -2896,7 +2896,7 @@ body {
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
     mix-blend-mode: lighten;
-    padding: 12px 16px;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout .callout-title {
@@ -2930,7 +2930,10 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
-    background-color: rgba(141, 158, 255, 0.1);
+    background-color: light-dark(
+      rgba(141, 158, 255, 0.1),
+      rgba(141, 158, 255, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(141, 158, 255, 0.25);
     border-top-left-radius: 4px;
@@ -2950,7 +2953,10 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
-    background-color: rgba(132, 220, 210, 0.1);
+    background-color: light-dark(
+      rgba(132, 220, 210, 0.1),
+      rgba(132, 220, 210, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(132, 220, 210, 0.25);
     border-top-left-radius: 4px;
@@ -2970,7 +2976,10 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: inherit;
-    background-color: rgba(141, 158, 255, 0.1);
+    background-color: light-dark(
+      rgba(141, 158, 255, 0.1),
+      rgba(141, 158, 255, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(141, 158, 255, 0.25);
     border-top-left-radius: 4px;
@@ -2990,7 +2999,10 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: inherit;
-    background-color: rgba(141, 158, 255, 0.1);
+    background-color: light-dark(
+      rgba(141, 158, 255, 0.1),
+      rgba(141, 158, 255, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(141, 158, 255, 0.25);
     border-top-left-radius: 4px;
@@ -3010,7 +3022,10 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: inherit;
-    background-color: rgba(132, 220, 210, 0.1);
+    background-color: light-dark(
+      rgba(132, 220, 210, 0.1),
+      rgba(132, 220, 210, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(132, 220, 210, 0.25);
     border-top-left-radius: 4px;
@@ -3030,7 +3045,10 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: inherit;
-    background-color: rgba(160, 223, 139, 0.1);
+    background-color: light-dark(
+      rgba(160, 223, 139, 0.1),
+      rgba(160, 223, 139, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(160, 223, 139, 0.25);
     border-top-left-radius: 4px;
@@ -3050,7 +3068,10 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: inherit;
-    background-color: rgba(247, 159, 105, 0.1);
+    background-color: light-dark(
+      rgba(247, 159, 105, 0.1),
+      rgba(247, 159, 105, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(247, 159, 105, 0.25);
     border-top-left-radius: 4px;
@@ -3070,7 +3091,10 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: inherit;
-    background-color: rgba(247, 159, 105, 0.1);
+    background-color: light-dark(
+      rgba(247, 159, 105, 0.1),
+      rgba(247, 159, 105, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(247, 159, 105, 0.25);
     border-top-left-radius: 4px;
@@ -3090,7 +3114,10 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: inherit;
-    background-color: rgba(244, 114, 102, 0.1);
+    background-color: light-dark(
+      rgba(244, 114, 102, 0.1),
+      rgba(244, 114, 102, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(244, 114, 102, 0.25);
     border-top-left-radius: 4px;
@@ -3110,7 +3137,10 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: inherit;
-    background-color: rgba(244, 114, 102, 0.1);
+    background-color: light-dark(
+      rgba(244, 114, 102, 0.1),
+      rgba(244, 114, 102, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(244, 114, 102, 0.25);
     border-top-left-radius: 4px;
@@ -3130,7 +3160,10 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: inherit;
-    background-color: rgba(244, 114, 102, 0.1);
+    background-color: light-dark(
+      rgba(244, 114, 102, 0.1),
+      rgba(244, 114, 102, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(244, 114, 102, 0.25);
     border-top-left-radius: 4px;
@@ -3150,7 +3183,10 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: inherit;
-    background-color: rgba(184, 157, 231, 0.1);
+    background-color: light-dark(
+      rgba(184, 157, 231, 0.1),
+      rgba(184, 157, 231, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(184, 157, 231, 0.25);
     border-top-left-radius: 4px;
@@ -3170,7 +3206,10 @@ body {
 
   .callout[data-callout="quote"] {
     --callout-color: inherit;
-    background-color: rgba(158, 158, 158, 0.1);
+    background-color: light-dark(
+      rgba(158, 158, 158, 0.1),
+      rgba(158, 158, 158, 0.075)
+    );
     mix-blend-mode: lighten;
     border: 0px solid rgba(158, 158, 158, 0.25);
     border-top-left-radius: 4px;

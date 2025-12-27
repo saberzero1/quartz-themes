@@ -29,7 +29,7 @@
   --background-modifier-error-hover: rgb(215, 130, 126) !important;
   --background-modifier-error-rgb: 215, 130, 126 !important;
   --background-modifier-form-field: #f2e9e1 !important;
-  --background-modifier-form-field-hover: #f2e9e1 !important;
+  --background-modifier-form-field-hover: transparent !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: rgb(86, 148, 159) !important;
@@ -38,7 +38,7 @@
   --background-primary-alt: #f2e9e1 !important;
   --background-secondary: rgb(255, 250, 243) !important;
   --background-secondary-alt: #f2e9e1 !important;
-  --bases-cards-background: rgb(255, 250, 243) !important;
+  --bases-cards-background: #faf4ed !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-cover-background: #f2e9e1 !important;
@@ -47,8 +47,8 @@
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px rgba(223, 218, 217, 0.6) !important;
   --bases-cards-shadow-hover: 0 0 0 1px rgb(223, 218, 217) !important;
-  --bases-embed-border-color: rgba(223, 218, 217, 0.6) !important;
-  --bases-embed-border-radius: 4px !important;
+  --bases-embed-border-color: rgb(223, 218, 217) !important;
+  --bases-embed-border-radius: 11px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
   --bases-group-heading-property-color: #9893a5 !important;
@@ -57,7 +57,7 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
+  --bases-header-border-width: 0px !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -69,17 +69,17 @@
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px rgba(223, 218, 217, 0.6) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(215, 130, 126) !important;
-  --bases-table-column-border-width: 1px !important;
+  --bases-table-column-border-width: 0px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
+  --bases-table-container-border-radius: 10px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #f2e9e1 !important;
+  --bases-table-group-background: transparent !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: rgb(255, 250, 243) !important;
-  --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --bases-table-header-color: #9893a5 !important;
+  --bases-table-header-background: #f2e9e1 !important;
+  --bases-table-header-background-hover: transparent !important;
+  --bases-table-header-color: #575279 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -88,12 +88,12 @@
   ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
+  --bases-table-row-border-width: 0px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: rgb(255, 250, 243) !important;
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
-  --bases-toolbar-label-display: block !important;
+  --bases-toolbar-label-display: none !important;
   --blockquote-background-color: transparent !important;
   --blockquote-border-color: rgb(234, 157, 52) !important;
   --blockquote-border-thickness: 3px !important;
@@ -467,7 +467,7 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0 !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(180, 99, 122) !important;
+  --list-marker-color: #9893a5 !important;
   --list-marker-color-collapsed: rgb(215, 130, 126) !important;
   --list-marker-color-hover: #9893a5 !important;
   --list-numbered-style: decimal !important;
@@ -932,7 +932,7 @@
   --background-modifier-error-hover: rgb(235, 188, 186) !important;
   --background-modifier-error-rgb: 235, 188, 186 !important;
   --background-modifier-form-field: #26233a !important;
-  --background-modifier-form-field-hover: #26233a !important;
+  --background-modifier-form-field-hover: transparent !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: rgb(156, 207, 216) !important;
@@ -941,7 +941,7 @@
   --background-primary-alt: #26233a !important;
   --background-secondary: rgb(31, 29, 46) !important;
   --background-secondary-alt: #26233a !important;
-  --bases-cards-background: rgb(31, 29, 46) !important;
+  --bases-cards-background: #191724 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-cover-background: #26233a !important;
@@ -950,8 +950,8 @@
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px rgba(64, 61, 82, 0.6) !important;
   --bases-cards-shadow-hover: 0 0 0 1px rgb(64, 61, 82) !important;
-  --bases-embed-border-color: rgba(64, 61, 82, 0.6) !important;
-  --bases-embed-border-radius: 4px !important;
+  --bases-embed-border-color: rgb(64, 61, 82) !important;
+  --bases-embed-border-radius: 11px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
   --bases-group-heading-property-color: #6e6a86 !important;
@@ -960,7 +960,7 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
+  --bases-header-border-width: 0px !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -972,17 +972,17 @@
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px rgba(64, 61, 82, 0.6) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(235, 188, 186) !important;
-  --bases-table-column-border-width: 1px !important;
+  --bases-table-column-border-width: 0px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
+  --bases-table-container-border-radius: 10px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #26233a !important;
+  --bases-table-group-background: transparent !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: rgb(31, 29, 46) !important;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --bases-table-header-color: #6e6a86 !important;
+  --bases-table-header-background: #26233a !important;
+  --bases-table-header-background-hover: transparent !important;
+  --bases-table-header-color: #e0def4 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -991,12 +991,12 @@
   ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
-  --bases-table-row-border-width: 1px !important;
+  --bases-table-row-border-width: 0px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: rgb(31, 29, 46) !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
-  --bases-toolbar-label-display: block !important;
+  --bases-toolbar-label-display: none !important;
   --blockquote-background-color: transparent !important;
   --blockquote-border-color: rgb(246, 193, 119) !important;
   --blockquote-border-thickness: 3px !important;
@@ -1370,7 +1370,7 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0 !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(235, 111, 146) !important;
+  --list-marker-color: #6e6a86 !important;
   --list-marker-color-collapsed: rgb(235, 188, 186) !important;
   --list-marker-color-hover: #6e6a86 !important;
   --list-numbered-style: decimal !important;
@@ -2487,8 +2487,8 @@ body {
   }
 
   ul > li::marker {
-    background-color: light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
-    border: 0px light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
+    background-color: light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
+    border: 0px light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2497,7 +2497,7 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
+    color: light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
     pointer-events: none;
     transform: none;
     transition: inherit;
@@ -2509,8 +2509,8 @@ body {
   }
 
   ol > li::marker {
-    background-color: light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
-    border: 0px light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
+    background-color: light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
+    border: 0px light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2519,7 +2519,7 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(180, 99, 122), rgb(235, 111, 146));
+    color: light-dark(rgb(152, 147, 165), rgb(110, 106, 134));
     pointer-events: none;
     transform: none;
     transition: inherit;

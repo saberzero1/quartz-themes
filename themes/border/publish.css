@@ -802,7 +802,7 @@ body.theme-light {
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
   --slider-thumb-border-color: rgba(128, 138, 198, 0.25) !important;
-  --slider-thumb-border-width: 1px !important;
+  --slider-thumb-border-width: 0 !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
@@ -1133,7 +1133,7 @@ body.theme-light {
   --shadow-activated-tab-header-light:
     0 -1px 0 0 rgba(255, 255, 255, 0.24), 0 0 0 1px rgba(128, 138, 198, 0.2),
     0 0 4px rgba(128, 138, 198, 0.2), 0px 2px 6px -4px rgba(128, 138, 198, 0.1),
-    inset 0px -1px 0px rgb(238, 240, 251), inset 0 -2px 4px 0 rgb(238, 240, 251) !important;
+    inset 0 -1px 3px 0 rgb(238, 240, 251) !important;
   --table-header-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --table-header-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --table-width: 88cqw !important;
@@ -1843,7 +1843,7 @@ body.theme-dark {
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
   --slider-thumb-border-color: rgba(119, 124, 156, 0.25);
-  --slider-thumb-border-width: 1px;
+  --slider-thumb-border-width: 0;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
@@ -2197,7 +2197,7 @@ body.theme-dark {
   --shadow-activated-tab-header-light:
     0 -1px 0 0 rgba(255, 255, 255, 0.24), 0 0 0 1px rgba(119, 124, 156, 0.2),
     0 0 4px rgba(119, 124, 156, 0.2), 0px 2px 6px -4px rgba(119, 124, 156, 0.1),
-    inset 0px -1px 0px rgb(50, 51, 57), inset 0 -2px 4px 0 rgb(50, 51, 57);
+    inset 0 -1px 3px 0 rgb(50, 51, 57);
   --table-header-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   --table-header-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   --table-width: 88cqw;

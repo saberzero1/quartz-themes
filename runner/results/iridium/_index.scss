@@ -20,7 +20,7 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgb(227, 223, 236) !important;
-  --background-modifier-border: rgb(216, 210, 228) !important;
+  --background-modifier-border: rgb(221, 217, 232) !important;
   --background-modifier-border-focus: rgb(182, 172, 205) !important;
   --background-modifier-border-hover: rgb(207, 201, 222) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -45,9 +45,10 @@
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(216, 210, 228) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(207, 201, 222) !important;
-  --bases-embed-border-color: rgb(216, 210, 228) !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px
+    hsl(from hsl(258 25% calc(100% - 1 * 14%)) h s calc(l - 5 * 1)) !important;
+  --bases-embed-border-color: rgb(0, 0, 0) !important;
   --bases-embed-border-radius: 7px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -61,7 +62,7 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(216, 210, 228) !important;
+  --bases-table-border-color: rgb(0, 0, 0) !important;
   --bases-table-cell-background-active: #ffffff !important;
   --bases-table-cell-background-disabled: rgb(249, 249, 251) !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
@@ -103,7 +104,7 @@
   --border-width: 1px !important;
   --button-radius: 5px !important;
   --callout-blend-mode: darken !important;
-  --callout-border-opacity: 0.45 !important;
+  --callout-border-opacity: 0.25 !important;
   --callout-border-width: 1px !important;
   --callout-bug: 233, 49, 71 !important;
   --callout-content-background: transparent !important;
@@ -148,7 +149,7 @@
   --checklist-done-decoration: none !important;
   --clickable-icon-radius: 4px !important;
   --code-background: transparent !important;
-  --code-border-color: rgb(216, 210, 228) !important;
+  --code-border-color: rgb(0, 0, 0) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgb(238, 236, 244) !important;
   --code-comment: #ababab !important;
@@ -220,10 +221,10 @@
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover: none !important;
-  --embed-border-bottom: 1px solid rgb(216, 210, 228) !important;
-  --embed-border-end: 1px solid rgb(216, 210, 228) !important;
-  --embed-border-start: 1px solid rgb(216, 210, 228) !important;
-  --embed-border-top: 1px solid rgb(216, 210, 228) !important;
+  --embed-border-bottom: 1px solid rgb(0, 0, 0) !important;
+  --embed-border-end: 1px solid rgb(0, 0, 0) !important;
+  --embed-border-start: 1px solid rgb(0, 0, 0) !important;
+  --embed-border-top: 1px solid rgb(0, 0, 0) !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 !important;
@@ -292,7 +293,7 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgb(216, 210, 228) !important;
+  --footnote-divider-color: rgb(221, 217, 232) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
@@ -356,10 +357,10 @@
   --heading-formatting: #ababab !important;
   --heading-spacing: 1.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: rgb(216, 210, 228) !important;
+  --hr-color: rgb(0, 0, 0) !important;
   --hr-thickness: 2px !important;
   --icon-color: #222222 !important;
-  --icon-color-active: rgb(50, 9, 144) !important;
+  --icon-color-active: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
   --icon-color-focused: #222222 !important;
   --icon-color-hover: #222222 !important;
   --icon-l: 18px !important;
@@ -379,8 +380,10 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgb(216, 210, 228) !important;
-  --indentation-guide-color-active: rgb(207, 201, 222) !important;
+  --indentation-guide-color: rgb(0, 0, 0) !important;
+  --indentation-guide-color-active: hsl(
+    from hsl(258 25% calc(100% - 1 * 14%)) h s calc(l - 5 * 1)
+  ) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -420,18 +423,24 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(50, 9, 144) !important;
-  --link-color-hover: rgb(33, 6, 96) !important;
+  --link-color: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
+  --link-color-hover: oklch(
+    from oklch(from rgb(138, 92, 245) 0.45 0.1 h) calc(l - 0.15) c h
+  ) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(50, 9, 144) !important;
-  --link-external-color-hover: rgb(33, 6, 96) !important;
+  --link-external-color: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
+  --link-external-color-hover: oklch(
+    from oklch(from rgb(138, 92, 245) 0.45 0.1 h) calc(l - 0.15) c h
+  ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(50, 9, 144) !important;
-  --link-unresolved-decoration-color: rgba(50, 9, 144, 0.3) !important;
+  --link-unresolved-color: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
+  --link-unresolved-decoration-color: oklch(
+    from oklch(from rgb(138, 92, 245) 0.45 0.1 h) l c h / 0.3
+  ) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -445,7 +454,9 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: rgb(138, 92, 245) !important;
-  --list-marker-color-collapsed: rgb(50, 9, 144) !important;
+  --list-marker-color-collapsed: oklch(
+    from rgb(138, 92, 245) 0.45 0.1 h
+  ) !important;
   --list-marker-color-hover: rgb(103, 44, 242) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -460,12 +471,12 @@
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgb(216, 210, 228) !important;
+  --metadata-border-color: rgb(221, 217, 232) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgb(216, 210, 228) !important;
+  --metadata-divider-color: rgb(221, 217, 232) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -529,12 +540,14 @@
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgb(238, 236, 244) !important;
   --nav-item-background-hover: rgb(238, 236, 244) !important;
-  --nav-item-background-selected: rgb(221, 217, 232) !important;
+  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #222222 !important;
   --nav-item-color-active: #222222 !important;
-  --nav-item-color-highlighted: rgb(50, 9, 144) !important;
+  --nav-item-color-highlighted: oklch(
+    from rgb(138, 92, 245) 0.45 0.1 h
+  ) !important;
   --nav-item-color-hover: #222222 !important;
   --nav-item-color-selected: #222222 !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
@@ -562,13 +575,15 @@
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(216, 210, 228) !important;
+  --pill-border-color: rgb(221, 217, 232) !important;
   --pill-border-color-hover: rgb(207, 201, 222) !important;
   --pill-border-width: 1px !important;
   --pill-color: #5c5c5c !important;
   --pill-color-hover: #222222 !important;
   --pill-color-remove: #ababab !important;
-  --pill-color-remove-hover: rgb(50, 9, 144) !important;
+  --pill-color-remove-hover: oklch(
+    from rgb(138, 92, 245) 0.45 0.1 h
+  ) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -698,13 +713,15 @@
   --tab-text-color-focused: #222222 !important;
   --tab-text-color-focused-active: #222222 !important;
   --tab-text-color-focused-active-current: #222222 !important;
-  --tab-text-color-focused-highlighted: rgb(50, 9, 144) !important;
+  --tab-text-color-focused-highlighted: oklch(
+    from rgb(138, 92, 245) 0.45 0.1 h
+  ) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgb(216, 210, 228) !important;
+  --table-add-button-border-color: rgb(0, 0, 0) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(216, 210, 228) !important;
+  --table-border-color: rgb(0, 0, 0) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -718,7 +735,7 @@
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: rgb(238, 236, 244) !important;
-  --table-header-border-color: rgb(216, 210, 228) !important;
+  --table-header-border-color: rgb(0, 0, 0) !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #222222 !important;
   --table-header-size: 16px !important;
@@ -748,8 +765,10 @@
   --tag-padding-y: 0.25em !important;
   --tag-radius: 4px !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(50, 9, 144) !important;
-  --text-accent-hover: rgb(33, 6, 96) !important;
+  --text-accent: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
+  --text-accent-hover: oklch(
+    from oklch(from rgb(138, 92, 245) 0.45 0.1 h) calc(l - 0.15) c h
+  ) !important;
   --text-error: #e93147 !important;
   --text-faint: #ababab !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
@@ -763,7 +782,7 @@
   --text-warning: #ec7500 !important;
   --titlebar-background: rgb(249, 249, 251) !important;
   --titlebar-background-focused: rgb(249, 249, 251) !important;
-  --titlebar-border-color: rgb(216, 210, 228) !important;
+  --titlebar-border-color: rgb(221, 217, 232) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #5c5c5c !important;
@@ -791,12 +810,20 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: rgb(52, 15, 138) !important;
-  --h2-color: rgb(138, 15, 101) !important;
-  --h3-color: hsl(378, 80%, 30%) !important;
-  --h4-color: hsl(438, 80%, 30%) !important;
-  --h5-color: hsl(498, 80%, 30%) !important;
-  --h6-color: hsl(558, 80%, 30%) !important;
+  --h1-color: oklch(from rgb(138, 92, 245) 48% 50% calc(h + 0)) !important;
+  --h2-color: oklch(
+    from rgb(138, 92, 245) 48% 50% calc(h + 0 + (300 - 0) * 0.2)
+  ) !important;
+  --h3-color: oklch(
+    from rgb(138, 92, 245) 48% 50% calc(h + 0 + (300 - 0) * 0.4)
+  ) !important;
+  --h4-color: oklch(
+    from rgb(138, 92, 245) 48% 50% calc(h + 0 + (300 - 0) * 0.6)
+  ) !important;
+  --h5-color: oklch(
+    from rgb(138, 92, 245) 48% 50% calc(h + 0 + (300 - 0) * 0.8)
+  ) !important;
+  --h6-color: oklch(from rgb(138, 92, 245) 48% 50% calc(h + 300)) !important;
   --table-header-background-hover: rgb(238, 236, 244) !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.2) !important;
   --nn-theme-file-tag-color: #222222 !important;
@@ -819,48 +846,33 @@
   --i-6: rgb(210, 204, 224) !important;
   --i-7: rgb(205, 198, 221) !important;
   --i-8: rgb(199, 191, 217) !important;
-  --i-active-line-color: 258, 88%, 66% !important;
-  --i-blockquote-indent: 0 !important;
+  --i-active-line-color: rgb(138, 92, 245) !important;
+  --i-active-line-highlight: oklch(
+    from rgb(138, 92, 245) 0.65 c h / 0.1
+  ) !important;
+  --i-active-line-highlight-inactive: oklch(
+    from oklch(from rgb(138, 92, 245) 0.65 c h / 0.1) l c h / 0.05
+  ) !important;
   --i-border-radius: 8px !important;
   --i-bullet-color: rgb(138, 92, 245) !important;
-  --i-bullet-color-collapsed: rgb(50, 9, 144) !important;
+  --i-bullet-color-collapsed: oklch(
+    from rgb(138, 92, 245) 0.45 0.1 h
+  ) !important;
   --i-bullet-color-hover: rgb(103, 44, 242) !important;
   --i-card-layout-border: rgb(205, 198, 221) !important;
   --i-card-radius: 8px !important;
-  --i-dk-colored-l: 80% !important;
-  --i-dk-colored-s: 80% !important;
   --i-dk-custom-layout-s: 12% !important;
-  --i-dk-highlighted-a: 25% !important;
-  --i-dk-highlighted-l: 70% !important;
-  --i-dk-highlighted-s: 80% !important;
+  --i-dk-folder-bg-accent: rgb(138, 92, 245) !important;
+  --i-dk-folder-name-accent: rgb(138, 92, 245) !important;
+  --i-dk-h1-h: 0 !important;
+  --i-dk-h6-h: 300 !important;
+  --i-dk-heading-accent: rgb(138, 92, 245) !important;
   --i-dk-layout-border-l: 8% !important;
   --i-dk-layout-l: 8% !important;
-  --i-dk-normal-colored-h1-h: 0 !important;
-  --i-dk-normal-colored-h2-h: 60 !important;
-  --i-dk-normal-colored-h3-h: 120 !important;
-  --i-dk-normal-colored-h4-h: 180 !important;
-  --i-dk-normal-colored-h5-h: 240 !important;
-  --i-dk-normal-colored-h6-h: 300 !important;
-  --i-dk-normal-highlighted-h1-h: 0 !important;
-  --i-dk-normal-highlighted-h2-h: 60 !important;
-  --i-dk-normal-highlighted-h3-h: 120 !important;
-  --i-dk-normal-highlighted-h4-h: 180 !important;
-  --i-dk-normal-highlighted-h5-h: 240 !important;
-  --i-dk-normal-highlighted-h6-h: 300 !important;
-  --i-folder-border-dk-l: 40% !important;
-  --i-folder-border-dk-s: 20% !important;
-  --i-folder-border-lt-l: 75% !important;
-  --i-folder-border-lt-s: 25% !important;
-  --i-folder-dk-a: 20% !important;
-  --i-folder-dk-l: 80% !important;
-  --i-folder-dk-s: 100% !important;
-  --i-folder-lt-a: 7% !important;
-  --i-folder-lt-l: 50% !important;
-  --i-folder-lt-s: 100% !important;
-  --i-folder-name-dk-l: 80% !important;
-  --i-folder-name-dk-s: 80% !important;
-  --i-folder-name-lt-l: 30% !important;
-  --i-folder-name-lt-s: 80% !important;
+  --i-editor-border: rgb(0, 0, 0) !important;
+  --i-editor-border-hover: hsl(
+    from hsl(258 25% calc(100% - 1 * 14%)) h s calc(l - 5 * 1)
+  ) !important;
   --i-h1-line-height: 1.5 !important;
   --i-h1-size: 1.5em !important;
   --i-h1-weight: 600 !important;
@@ -873,7 +885,7 @@
   --i-h5-size: 1.1em !important;
   --i-h6-size: 1em !important;
   --i-hr-style: solid !important;
-  --i-image-border-color: rgb(216, 210, 228) !important;
+  --i-image-border-color: rgb(0, 0, 0) !important;
   --i-image-border-style: solid !important;
   --i-image-border-width: 0 !important;
   --i-image-padding: 0 !important;
@@ -881,26 +893,14 @@
   --i-layout-color: rgb(221, 217, 232) !important;
   --i-link-bg-hover: rgb(238, 236, 244) !important;
   --i-link-decoration-style: solid !important;
-  --i-lt-colored-l: 30% !important;
-  --i-lt-colored-s: 80% !important;
   --i-lt-custom-layout-s: 25% !important;
-  --i-lt-highlighted-a: 22% !important;
-  --i-lt-highlighted-l: 50% !important;
-  --i-lt-highlighted-s: 80% !important;
+  --i-lt-folder-bg-accent: rgb(138, 92, 245) !important;
+  --i-lt-folder-name-accent: rgb(138, 92, 245) !important;
+  --i-lt-h1-h: 0 !important;
+  --i-lt-h6-h: 300 !important;
+  --i-lt-heading-accent: rgb(138, 92, 245) !important;
   --i-lt-layout-border-l: 8% !important;
   --i-lt-layout-l: 12% !important;
-  --i-lt-normal-colored-h1-h: 0 !important;
-  --i-lt-normal-colored-h2-h: 60 !important;
-  --i-lt-normal-colored-h3-h: 120 !important;
-  --i-lt-normal-colored-h4-h: 180 !important;
-  --i-lt-normal-colored-h5-h: 240 !important;
-  --i-lt-normal-colored-h6-h: 300 !important;
-  --i-lt-normal-highlighted-h1-h: 0 !important;
-  --i-lt-normal-highlighted-h2-h: 60 !important;
-  --i-lt-normal-highlighted-h3-h: 120 !important;
-  --i-lt-normal-highlighted-h4-h: 180 !important;
-  --i-lt-normal-highlighted-h5-h: 240 !important;
-  --i-lt-normal-highlighted-h6-h: 300 !important;
   --i-pattern-color: rgb(247, 245, 249) !important;
   --i-pattern-dk-l: 3% !important;
   --i-pattern-height: 10px !important;
@@ -908,6 +908,8 @@
   --i-pattern-lt-l: 3% !important;
   --i-pattern-width: 10px !important;
   --i-s: 25% !important;
+  --i-scrollbar-color: rgb(216, 210, 228) !important;
+  --i-scrollbar-color-active: rgb(205, 198, 221) !important;
   --i-spacing-below-headings: 0.3rem !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
@@ -933,7 +935,7 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgb(53, 49, 63) !important;
-  --background-modifier-border: rgb(56, 52, 66) !important;
+  --background-modifier-border: rgb(51, 47, 60) !important;
   --background-modifier-border-focus: rgb(80, 74, 94) !important;
   --background-modifier-border-hover: rgb(61, 56, 71) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -958,9 +960,10 @@
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(56, 52, 66) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(61, 56, 71) !important;
-  --bases-embed-border-color: rgb(56, 52, 66) !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px
+    hsl(from hsl(258 12% calc(12% + 1 * 11%)) h s calc(l + 4 * 1)) !important;
+  --bases-embed-border-color: rgb(0, 0, 0) !important;
   --bases-embed-border-radius: 7px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -974,7 +977,7 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(56, 52, 66) !important;
+  --bases-table-border-color: rgb(0, 0, 0) !important;
   --bases-table-cell-background-active: rgb(29, 27, 34) !important;
   --bases-table-cell-background-disabled: rgb(34, 31, 40) !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
@@ -1016,7 +1019,7 @@
   --border-width: 1px !important;
   --button-radius: 5px !important;
   --callout-blend-mode: lighten;
-  --callout-border-opacity: 0.45;
+  --callout-border-opacity: 0.25;
   --callout-border-width: 1px;
   --callout-bug: 251, 70, 76;
   --callout-content-background: transparent;
@@ -1061,7 +1064,7 @@
   --checklist-done-decoration: none !important;
   --clickable-icon-radius: 4px !important;
   --code-background: transparent !important;
-  --code-border-color: rgb(56, 52, 66) !important;
+  --code-border-color: rgb(0, 0, 0) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgb(49, 45, 57) !important;
   --code-comment: rgb(102, 102, 102) !important;
@@ -1133,10 +1136,10 @@
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover: none !important;
-  --embed-border-bottom: 1px solid rgb(56, 52, 66) !important;
-  --embed-border-end: 1px solid rgb(56, 52, 66) !important;
-  --embed-border-start: 1px solid rgb(56, 52, 66) !important;
-  --embed-border-top: 1px solid rgb(56, 52, 66) !important;
+  --embed-border-bottom: 1px solid rgb(0, 0, 0) !important;
+  --embed-border-end: 1px solid rgb(0, 0, 0) !important;
+  --embed-border-start: 1px solid rgb(0, 0, 0) !important;
+  --embed-border-top: 1px solid rgb(0, 0, 0) !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 !important;
@@ -1205,7 +1208,7 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgb(56, 52, 66) !important;
+  --footnote-divider-color: rgb(51, 47, 60) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
@@ -1269,10 +1272,10 @@
   --heading-formatting: rgb(102, 102, 102) !important;
   --heading-spacing: 1.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: rgb(56, 52, 66) !important;
+  --hr-color: rgb(0, 0, 0) !important;
   --hr-thickness: 2px !important;
   --icon-color: rgb(217, 217, 217) !important;
-  --icon-color-active: rgb(179, 150, 248) !important;
+  --icon-color-active: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
   --icon-color-focused: rgb(217, 217, 217) !important;
   --icon-color-hover: rgb(217, 217, 217) !important;
   --icon-l: 18px !important;
@@ -1292,8 +1295,10 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgb(56, 52, 66) !important;
-  --indentation-guide-color-active: rgb(61, 56, 71) !important;
+  --indentation-guide-color: rgb(0, 0, 0) !important;
+  --indentation-guide-color-active: hsl(
+    from hsl(258 12% calc(12% + 1 * 11%)) h s calc(l + 4 * 1)
+  ) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -1333,18 +1338,24 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(179, 150, 248) !important;
-  --link-color-hover: rgb(214, 197, 251) !important;
+  --link-color: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
+  --link-color-hover: oklch(
+    from oklch(from rgb(138, 92, 245) 0.8 0.05 h) calc(l + 0.15) c h
+  ) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(179, 150, 248) !important;
-  --link-external-color-hover: rgb(214, 197, 251) !important;
+  --link-external-color: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
+  --link-external-color-hover: oklch(
+    from oklch(from rgb(138, 92, 245) 0.8 0.05 h) calc(l + 0.15) c h
+  ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(179, 150, 248) !important;
-  --link-unresolved-decoration-color: rgba(179, 150, 248, 0.3) !important;
+  --link-unresolved-color: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
+  --link-unresolved-decoration-color: oklch(
+    from oklch(from rgb(138, 92, 245) 0.8 0.05 h) l c h / 0.3
+  ) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1358,7 +1369,9 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: rgb(138, 92, 245) !important;
-  --list-marker-color-collapsed: rgb(179, 150, 248) !important;
+  --list-marker-color-collapsed: oklch(
+    from rgb(138, 92, 245) 0.8 0.05 h
+  ) !important;
   --list-marker-color-hover: rgb(172, 140, 248) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -1373,12 +1386,12 @@
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgb(56, 52, 66) !important;
+  --metadata-border-color: rgb(51, 47, 60) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgb(56, 52, 66) !important;
+  --metadata-divider-color: rgb(51, 47, 60) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1442,12 +1455,14 @@
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgb(49, 45, 57) !important;
   --nav-item-background-hover: rgb(49, 45, 57) !important;
-  --nav-item-background-selected: rgb(53, 49, 63) !important;
+  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgb(217, 217, 217) !important;
   --nav-item-color-active: rgb(217, 217, 217) !important;
-  --nav-item-color-highlighted: rgb(179, 150, 248) !important;
+  --nav-item-color-highlighted: oklch(
+    from rgb(138, 92, 245) 0.8 0.05 h
+  ) !important;
   --nav-item-color-hover: rgb(217, 217, 217) !important;
   --nav-item-color-selected: rgb(217, 217, 217) !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
@@ -1466,20 +1481,22 @@
   --page-margin: 1px auto -8px !important;
   --pdf-background: rgb(29, 27, 34) !important;
   --pdf-page-background: rgb(29, 27, 34) !important;
-  --pdf-shadow: 0 0 0 1px rgb(56, 52, 66) !important;
+  --pdf-shadow: 0 0 0 1px rgb(51, 47, 60) !important;
   --pdf-sidebar-background: rgb(29, 27, 34) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(56, 52, 66) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgb(51, 47, 60) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(56, 52, 66) !important;
+  --pill-border-color: rgb(51, 47, 60) !important;
   --pill-border-color-hover: rgb(61, 56, 71) !important;
   --pill-border-width: 1px !important;
   --pill-color: rgb(179, 179, 179) !important;
   --pill-color-hover: rgb(217, 217, 217) !important;
   --pill-color-remove: rgb(102, 102, 102) !important;
-  --pill-color-remove-hover: rgb(179, 150, 248) !important;
+  --pill-color-remove-hover: oklch(
+    from rgb(138, 92, 245) 0.8 0.05 h
+  ) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1609,13 +1626,15 @@
   --tab-text-color-focused: rgb(217, 217, 217) !important;
   --tab-text-color-focused-active: rgb(217, 217, 217) !important;
   --tab-text-color-focused-active-current: rgb(217, 217, 217) !important;
-  --tab-text-color-focused-highlighted: rgb(179, 150, 248) !important;
+  --tab-text-color-focused-highlighted: oklch(
+    from rgb(138, 92, 245) 0.8 0.05 h
+  ) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgb(56, 52, 66) !important;
+  --table-add-button-border-color: rgb(0, 0, 0) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(56, 52, 66) !important;
+  --table-border-color: rgb(0, 0, 0) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1629,7 +1648,7 @@
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: rgb(39, 36, 46) !important;
-  --table-header-border-color: rgb(56, 52, 66) !important;
+  --table-header-border-color: rgb(0, 0, 0) !important;
   --table-header-border-width: 1px !important;
   --table-header-color: rgb(217, 217, 217) !important;
   --table-header-size: 16px !important;
@@ -1659,8 +1678,10 @@
   --tag-padding-y: 0.25em !important;
   --tag-radius: 4px !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(179, 150, 248) !important;
-  --text-accent-hover: rgb(214, 197, 251) !important;
+  --text-accent: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
+  --text-accent-hover: oklch(
+    from oklch(from rgb(138, 92, 245) 0.8 0.05 h) calc(l + 0.15) c h
+  ) !important;
   --text-error: #fb464c !important;
   --text-faint: rgb(102, 102, 102) !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
@@ -1674,7 +1695,7 @@
   --text-warning: #e9973f !important;
   --titlebar-background: rgb(32, 29, 37) !important;
   --titlebar-background-focused: rgb(32, 29, 37) !important;
-  --titlebar-border-color: rgb(56, 52, 66) !important;
+  --titlebar-border-color: rgb(51, 47, 60) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: rgb(179, 179, 179) !important;
@@ -1702,12 +1723,20 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: rgb(188, 163, 245) !important;
-  --h2-color: rgb(245, 163, 220) !important;
-  --h3-color: hsl(378, 80%, 80%) !important;
-  --h4-color: hsl(438, 80%, 80%) !important;
-  --h5-color: hsl(498, 80%, 80%) !important;
-  --h6-color: hsl(558, 80%, 80%) !important;
+  --h1-color: oklch(from rgb(138, 92, 245) 80% 20% calc(h + 0)) !important;
+  --h2-color: oklch(
+    from rgb(138, 92, 245) 80% 20% calc(h + 0 + (300 - 0) * 0.2)
+  ) !important;
+  --h3-color: oklch(
+    from rgb(138, 92, 245) 80% 20% calc(h + 0 + (300 - 0) * 0.4)
+  ) !important;
+  --h4-color: oklch(
+    from rgb(138, 92, 245) 80% 20% calc(h + 0 + (300 - 0) * 0.6)
+  ) !important;
+  --h5-color: oklch(
+    from rgb(138, 92, 245) 80% 20% calc(h + 0 + (300 - 0) * 0.8)
+  ) !important;
+  --h6-color: oklch(from rgb(138, 92, 245) 80% 20% calc(h + 300)) !important;
   --table-header-background-hover: rgb(39, 36, 46) !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.25) !important;
   --nn-theme-file-tag-color: rgb(217, 217, 217) !important;
@@ -1730,54 +1759,39 @@
   --i-6: rgb(63, 58, 74) !important;
   --i-7: rgb(68, 63, 80) !important;
   --i-8: rgb(73, 67, 86) !important;
-  --i-active-line-color: 258, 88%, 66% !important;
-  --i-blockquote-indent: 0 !important;
+  --i-active-line-color: rgb(138, 92, 245) !important;
+  --i-active-line-highlight: oklch(
+    from rgb(138, 92, 245) 0.65 c h / 0.1
+  ) !important;
+  --i-active-line-highlight-inactive: oklch(
+    from oklch(from rgb(138, 92, 245) 0.65 c h / 0.1) l c h / 0.05
+  ) !important;
   --i-border-radius: 8px !important;
   --i-bullet-color: rgb(138, 92, 245) !important;
-  --i-bullet-color-collapsed: rgb(179, 150, 248) !important;
+  --i-bullet-color-collapsed: oklch(
+    from rgb(138, 92, 245) 0.8 0.05 h
+  ) !important;
   --i-bullet-color-hover: rgb(172, 140, 248) !important;
   --i-card-layout-border: rgb(58, 54, 69) !important;
   --i-card-radius: 8px !important;
   --i-dk-border-l: 11% !important;
-  --i-dk-colored-l: 80% !important;
-  --i-dk-colored-s: 80% !important;
   --i-dk-custom-layout-s: 12% !important;
-  --i-dk-highlighted-a: 25% !important;
-  --i-dk-highlighted-l: 70% !important;
-  --i-dk-highlighted-s: 80% !important;
+  --i-dk-folder-bg-accent: rgb(138, 92, 245) !important;
+  --i-dk-folder-name-accent: rgb(138, 92, 245) !important;
+  --i-dk-h1-h: 0 !important;
+  --i-dk-h6-h: 300 !important;
+  --i-dk-heading-accent: rgb(138, 92, 245) !important;
   --i-dk-l: 12% !important;
   --i-dk-l-multiplier: 1 !important;
   --i-dk-layout-border-l: 8% !important;
   --i-dk-layout-l: 8% !important;
   --i-dk-layout-s: 12% !important;
-  --i-dk-normal-colored-h1-h: 0 !important;
-  --i-dk-normal-colored-h2-h: 60 !important;
-  --i-dk-normal-colored-h3-h: 120 !important;
-  --i-dk-normal-colored-h4-h: 180 !important;
-  --i-dk-normal-colored-h5-h: 240 !important;
-  --i-dk-normal-colored-h6-h: 300 !important;
-  --i-dk-normal-highlighted-h1-h: 0 !important;
-  --i-dk-normal-highlighted-h2-h: 60 !important;
-  --i-dk-normal-highlighted-h3-h: 120 !important;
-  --i-dk-normal-highlighted-h4-h: 180 !important;
-  --i-dk-normal-highlighted-h5-h: 240 !important;
-  --i-dk-normal-highlighted-h6-h: 300 !important;
   --i-dk-s: 12% !important;
   --i-dk-text-l-multiplier: 1 !important;
-  --i-folder-border-dk-l: 40% !important;
-  --i-folder-border-dk-s: 20% !important;
-  --i-folder-border-lt-l: 75% !important;
-  --i-folder-border-lt-s: 25% !important;
-  --i-folder-dk-a: 20% !important;
-  --i-folder-dk-l: 80% !important;
-  --i-folder-dk-s: 100% !important;
-  --i-folder-lt-a: 7% !important;
-  --i-folder-lt-l: 50% !important;
-  --i-folder-lt-s: 100% !important;
-  --i-folder-name-dk-l: 80% !important;
-  --i-folder-name-dk-s: 80% !important;
-  --i-folder-name-lt-l: 30% !important;
-  --i-folder-name-lt-s: 80% !important;
+  --i-editor-border: rgb(0, 0, 0) !important;
+  --i-editor-border-hover: hsl(
+    from hsl(258 12% calc(12% + 1 * 11%)) h s calc(l + 4 * 1)
+  ) !important;
   --i-h1-line-height: 1.5 !important;
   --i-h1-size: 1.5em !important;
   --i-h1-weight: 600 !important;
@@ -1790,7 +1804,7 @@
   --i-h5-size: 1.1em !important;
   --i-h6-size: 1em !important;
   --i-hr-style: solid !important;
-  --i-image-border-color: rgb(56, 52, 66) !important;
+  --i-image-border-color: rgb(0, 0, 0) !important;
   --i-image-border-style: solid !important;
   --i-image-border-width: 0 !important;
   --i-image-padding: 0 !important;
@@ -1798,26 +1812,14 @@
   --i-layout-color: rgb(49, 45, 57) !important;
   --i-link-bg-hover: rgb(49, 45, 57) !important;
   --i-link-decoration-style: solid !important;
-  --i-lt-colored-l: 30% !important;
-  --i-lt-colored-s: 80% !important;
   --i-lt-custom-layout-s: 25% !important;
-  --i-lt-highlighted-a: 22% !important;
-  --i-lt-highlighted-l: 50% !important;
-  --i-lt-highlighted-s: 80% !important;
+  --i-lt-folder-bg-accent: rgb(138, 92, 245) !important;
+  --i-lt-folder-name-accent: rgb(138, 92, 245) !important;
+  --i-lt-h1-h: 0 !important;
+  --i-lt-h6-h: 300 !important;
+  --i-lt-heading-accent: rgb(138, 92, 245) !important;
   --i-lt-layout-border-l: 8% !important;
   --i-lt-layout-l: 12% !important;
-  --i-lt-normal-colored-h1-h: 0 !important;
-  --i-lt-normal-colored-h2-h: 60 !important;
-  --i-lt-normal-colored-h3-h: 120 !important;
-  --i-lt-normal-colored-h4-h: 180 !important;
-  --i-lt-normal-colored-h5-h: 240 !important;
-  --i-lt-normal-colored-h6-h: 300 !important;
-  --i-lt-normal-highlighted-h1-h: 0 !important;
-  --i-lt-normal-highlighted-h2-h: 60 !important;
-  --i-lt-normal-highlighted-h3-h: 120 !important;
-  --i-lt-normal-highlighted-h4-h: 180 !important;
-  --i-lt-normal-highlighted-h5-h: 240 !important;
-  --i-lt-normal-highlighted-h6-h: 300 !important;
   --i-pattern-color: rgb(36, 34, 43) !important;
   --i-pattern-dk-l: 3% !important;
   --i-pattern-height: 10px !important;
@@ -1825,6 +1827,8 @@
   --i-pattern-lt-l: 3% !important;
   --i-pattern-width: 10px !important;
   --i-s: 12% !important;
+  --i-scrollbar-color: rgb(68, 63, 80) !important;
+  --i-scrollbar-color-active: rgb(73, 67, 86) !important;
   --i-spacing-below-headings: 0.3rem !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
@@ -2050,7 +2054,7 @@ body {
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(50, 9, 144), rgb(179, 150, 248));
+    color: light-dark(oklch(0.45 0.1 292.488), oklch(0.8 0.05 292.488));
     cursor: pointer;
     filter: none;
     font-family:
@@ -2067,8 +2071,11 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(179, 150, 248);
-    text-decoration-color: light-dark(rgb(50, 9, 144), rgb(179, 150, 248));
+    text-decoration: underline solid oklch(0.8 0.05 292.488);
+    text-decoration-color: light-dark(
+      oklch(0.45 0.1 292.488),
+      oklch(0.8 0.05 292.488)
+    );
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2079,7 +2086,7 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(50, 9, 144), rgb(179, 150, 248));
+    color: light-dark(oklch(0.45 0.1 292.488), oklch(0.8 0.05 292.488));
     cursor: pointer;
     filter: none;
     font-family:
@@ -2096,8 +2103,11 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(179, 150, 248);
-    text-decoration-color: light-dark(rgb(50, 9, 144), rgb(179, 150, 248));
+    text-decoration: underline solid oklch(0.8 0.05 292.488);
+    text-decoration-color: light-dark(
+      oklch(0.45 0.1 292.488),
+      oklch(0.8 0.05 292.488)
+    );
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2107,7 +2117,7 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(50, 9, 144), rgb(179, 150, 248));
+    color: light-dark(oklch(0.45 0.1 292.488), oklch(0.8 0.05 292.488));
     cursor: pointer;
     filter: none;
     font-family:
@@ -2124,10 +2134,10 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgba(179, 150, 248, 0.3);
+    text-decoration: underline solid oklch(0.8 0.05 292.488 / 0.3);
     text-decoration-color: light-dark(
-      rgba(50, 9, 144, 0.3),
-      rgba(179, 150, 248, 0.3)
+      oklch(0.45 0.1 292.488 / 0.3),
+      oklch(0.8 0.05 292.488 / 0.3)
     );
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2500,7 +2510,7 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(227, 223, 236), rgb(49, 45, 57));
+    background-color: light-dark(rgb(238, 236, 244), rgb(49, 45, 57));
     border: 0px solid light-dark(rgb(216, 210, 228), rgb(56, 52, 66));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2632,7 +2642,7 @@ body {
 
   .search > .search-button {
     background-color: light-dark(rgb(255, 255, 255), rgb(29, 27, 34));
-    border: 1px solid light-dark(rgb(216, 210, 228), rgb(56, 52, 66));
+    border: 1px solid light-dark(rgb(221, 217, 232), rgb(51, 47, 60));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -2823,7 +2833,7 @@ body {
   }
 
   h1 {
-    color: light-dark(rgb(52, 15, 138), rgb(188, 163, 245));
+    color: light-dark(oklch(0.48 0.2 292.488), oklch(0.8 0.08 292.488));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2840,7 +2850,7 @@ body {
   }
 
   h2 {
-    color: light-dark(rgb(138, 15, 101), rgb(245, 163, 220));
+    color: light-dark(oklch(0.48 0.2 352.488), oklch(0.8 0.08 352.488));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2857,7 +2867,7 @@ body {
   }
 
   h3 {
-    color: light-dark(rgb(138, 52, 15), rgb(245, 188, 163));
+    color: light-dark(oklch(0.48 0.2 52.4879), oklch(0.8 0.08 52.4879));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2874,7 +2884,7 @@ body {
   }
 
   h4 {
-    color: light-dark(rgb(101, 138, 15), rgb(220, 245, 163));
+    color: light-dark(oklch(0.48 0.2 112.488), oklch(0.8 0.08 112.488));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2891,7 +2901,7 @@ body {
   }
 
   h5 {
-    color: light-dark(rgb(15, 138, 52), rgb(163, 245, 188));
+    color: light-dark(oklch(0.48 0.2 172.488), oklch(0.8 0.08 172.488));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2908,7 +2918,7 @@ body {
   }
 
   h6 {
-    color: light-dark(rgb(15, 101, 138), rgb(163, 220, 245));
+    color: light-dark(oklch(0.48 0.2 232.488), oklch(0.8 0.08 232.488));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2967,7 +2977,10 @@ body {
   .callout {
     --callout-color: inherit;
     border: 1px solid
-      light-dark(rgba(8, 109, 221, 0.45), rgba(2, 122, 255, 0.45));
+      light-dark(
+        oklch(0.65 0.189734 256.788 / 0.45),
+        oklch(0.7 0.217558 257.504 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3014,7 +3027,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(8, 109, 221, 0.45), rgba(2, 122, 255, 0.45));
+      light-dark(
+        oklch(0.65 0.189734 256.788 / 0.45),
+        oklch(0.7 0.217558 257.504 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3035,7 +3051,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(0, 191, 188, 0.45), rgba(83, 223, 221, 0.45));
+      light-dark(
+        oklch(0.65 0.124631 192.766 / 0.45),
+        oklch(0.7 0.118878 193.753 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3056,7 +3075,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(8, 109, 221, 0.45), rgba(2, 122, 255, 0.45));
+      light-dark(
+        oklch(0.65 0.189734 256.788 / 0.45),
+        oklch(0.7 0.217558 257.504 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3077,7 +3099,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(8, 109, 221, 0.45), rgba(2, 122, 255, 0.45));
+      light-dark(
+        oklch(0.65 0.189734 256.788 / 0.45),
+        oklch(0.7 0.217558 257.504 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3098,7 +3123,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(0, 191, 188, 0.45), rgba(83, 223, 221, 0.45));
+      light-dark(
+        oklch(0.65 0.124631 192.766 / 0.45),
+        oklch(0.7 0.118878 193.753 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3119,7 +3147,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(8, 185, 78, 0.45), rgba(68, 207, 110, 0.45));
+      light-dark(
+        oklch(0.65 0.19456 148.477 / 0.45),
+        oklch(0.7 0.180995 149.613 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3140,7 +3171,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(236, 117, 0, 0.45), rgba(233, 151, 63, 0.45));
+      light-dark(
+        oklch(0.65 0.175848 52.5476 / 0.45),
+        oklch(0.7 0.140751 64.0934 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3161,7 +3195,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(236, 117, 0, 0.45), rgba(233, 151, 63, 0.45));
+      light-dark(
+        oklch(0.65 0.175848 52.5476 / 0.45),
+        oklch(0.7 0.140751 64.0934 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3182,7 +3219,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(233, 49, 71, 0.45), rgba(251, 70, 76, 0.45));
+      light-dark(
+        oklch(0.65 0.216938 20.8401 / 0.45),
+        oklch(0.7 0.216867 23.8101 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3203,7 +3243,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(233, 49, 71, 0.45), rgba(251, 70, 76, 0.45));
+      light-dark(
+        oklch(0.65 0.216938 20.8401 / 0.45),
+        oklch(0.7 0.216867 23.8101 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3224,7 +3267,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(233, 49, 71, 0.45), rgba(251, 70, 76, 0.45));
+      light-dark(
+        oklch(0.65 0.216938 20.8401 / 0.45),
+        oklch(0.7 0.216867 23.8101 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3245,7 +3291,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
     border: 1px solid
-      light-dark(rgba(120, 82, 238, 0.45), rgba(168, 130, 255, 0.45));
+      light-dark(
+        oklch(0.65 0.221853 288.459 / 0.45),
+        oklch(0.7 0.179083 295.408 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3265,7 +3314,11 @@ body {
     --callout-color: inherit;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: lighten;
-    border: 1px solid rgba(158, 158, 158, 0.45);
+    border: 1px solid
+      light-dark(
+        oklch(0.65 0.0000347714 23.8628 / 0.45),
+        oklch(0.7 0.0000347714 23.8628 / 0.35)
+      );
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;

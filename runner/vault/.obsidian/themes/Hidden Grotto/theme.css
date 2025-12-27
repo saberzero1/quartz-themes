@@ -72,7 +72,7 @@ body {
     --grotto-tag-color: var(--background-primary);
     --grotto-tag-background-color: var(--text-normal);
     --grotto-tag-border-color: transparent;
-    --grotto-tag-border-width: 1.5px;
+    --grotto-tag-border-width: 0.1rem;
     --grotto-tag-border-radius: 0rem;
     --grotto-tag-size: 0.8rem;
     --grotto-tag-weight: 500;
@@ -303,6 +303,7 @@ body {
     --grotto-suggestion-background-color: var(--background-primary);
     --grotto-suggestion-background-color-hover: var(--grotto-accent-1);
     --grotto-suggestion-radius: 0rem;
+    --grotto-instruction-color: var(--text-normal);
     /*==== COMMAND PALETTE ====*/
     --grotto-prompt-color: var(--text-normal);
     --grotto-prompt-color-hover: var(--background-primary);
@@ -452,10 +453,10 @@ body {
 }
 
 /*==== TAGS ====*/
-a.tag, 
-a.tag:hover, 
-.cm-hashtag, 
-.cm-hashtag:hover, 
+a.tag,
+a.tag:hover,
+.cm-hashtag,
+.cm-hashtag:hover,
 .cm-s-obsidian span.cm-quote.cm-hashtag {
     color: var(--grotto-tag-color);
     background-color: var(--grotto-tag-background-color);
@@ -467,17 +468,17 @@ a.tag:hover,
 }
 
 /*==== TAGS INSIDE HEADERS ====*/
-.markdown-rendered h1 a.tag, 
-.markdown-rendered h2 a.tag, 
-.markdown-rendered h3 a.tag, 
-.markdown-rendered h4 a.tag, 
-.markdown-rendered h5 a.tag, 
-.markdown-rendered h6 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag, 
-.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag, 
-.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag, 
-.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag, 
-.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag, 
+.markdown-rendered h1 a.tag,
+.markdown-rendered h2 a.tag,
+.markdown-rendered h3 a.tag,
+.markdown-rendered h4 a.tag,
+.markdown-rendered h5 a.tag,
+.markdown-rendered h6 a.tag,
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag,
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag,
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag,
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag,
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag,
 .cm-s-obsidian .cm-line.HyperMD-header-6 .cm-hashtag {
     font-size: var(--grotto-tag-size) !important;
     vertical-align: top;
@@ -496,7 +497,7 @@ a.tag:hover,
 }
 
 /*==== TEXT BOLD ====*/
-strong, 
+strong,
 .cm-strong {
     color: var(--grotto-bold-color);
     font-weight: var(--grotto-bold-font-weight);
@@ -504,7 +505,7 @@ strong,
 }
 
 /*==== TEXT ITALIC ====*/
-em, 
+em,
 .cm-em {
     color: var(--grotto-italic-color);
     font-weight: var(--grotto-italic-font-weight);
@@ -512,7 +513,7 @@ em,
 }
 
 /*==== TEXT STRIKETHROUGH ====*/
-del, 
+del,
 .cm-strikethrough {
   color: var(--grotto-strikethrough-color);
   caret-color: currentColor;
@@ -527,30 +528,30 @@ del,
 }
 
 /*==== TEXT LINKED ====*/
-a, 
-.external-link, 
-.cm-s-obsidian span.cm-url, 
-.cm-s-obsidian span.cm-link, 
-.markdown-rendered .internal-link, 
-.metadata-property-value .internal-link, 
-.cm-s-obsidian span.cm-hmd-internal-link, 
-.cm-s-obsidian span.cm-formatting-link.cm-url, 
-.markdown-source-view.mod-cm6 .cm-url .cm-underline, 
+a,
+.external-link,
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-link,
+.markdown-rendered .internal-link,
+.metadata-property-value .internal-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-formatting-link.cm-url,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline,
 .markdown-source-view.mod-cm6 .cm-link .cm-underline {
     color: var(--grotto-link-color);
     font-weight: var(--grotto-link-weight);
 }
-a:hover, 
-a.mobile-tap, 
-.external-link:hover, 
-.external-link.mobile-tap, 
-.cm-s-obsidian span.cm-url:hover, 
-.cm-s-obsidian span.cm-link:hover, 
-.markdown-rendered .internal-link:hover, 
-.metadata-property-value .internal-link:hover, 
-.cm-s-obsidian span.cm-hmd-internal-link:hover, 
-.cm-s-obsidian span.cm-formatting-link.cm-url:hover, 
-.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover, 
+a:hover,
+a.mobile-tap,
+.external-link:hover,
+.external-link.mobile-tap,
+.cm-s-obsidian span.cm-url:hover,
+.cm-s-obsidian span.cm-link:hover,
+.markdown-rendered .internal-link:hover,
+.metadata-property-value .internal-link:hover,
+.cm-s-obsidian span.cm-hmd-internal-link:hover,
+.cm-s-obsidian span.cm-formatting-link.cm-url:hover,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover,
 .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover {
     color: var(--grotto-link-color);
     filter:brightness(105%);
@@ -558,78 +559,97 @@ a.mobile-tap,
 }
 
 /*==== LINKS INSIDE HEADERS ====*/
-.markdown-rendered .external-link, 
-.markdown-rendered .internal-link, 
-.cm-header.cm-header-1.cm-hmd-internal-link, 
-.cm-header.cm-header-2.cm-hmd-internal-link, 
-.cm-header.cm-header-3.cm-hmd-internal-link, 
-.cm-header.cm-header-4.cm-hmd-internal-link, 
-.cm-header.cm-header-5.cm-hmd-internal-link, 
+.markdown-rendered h1 .external-link,
+.markdown-rendered h2 .external-link,
+.markdown-rendered h3 .external-link,
+.markdown-rendered h4 .external-link,
+.markdown-rendered h5 .external-link,
+.markdown-rendered h6 .external-link,
+.markdown-rendered h1 .internal-link,
+.markdown-rendered h2 .internal-link,
+.markdown-rendered h3 .internal-link,
+.markdown-rendered h4 .internal-link,
+.markdown-rendered h5 .internal-link,
+.markdown-rendered h6 .internal-link,
+.cm-header.cm-header-1.cm-hmd-internal-link,
+.cm-header.cm-header-2.cm-hmd-internal-link,
+.cm-header.cm-header-3.cm-hmd-internal-link,
+.cm-header.cm-header-4.cm-hmd-internal-link,
+.cm-header.cm-header-5.cm-hmd-internal-link,
 .cm-header.cm-header-6.cm-hmd-internal-link,
-.cm-s-obsidian .cm-line.HyperMD-header-1 span.cm-url, 
-.cm-s-obsidian .cm-line.HyperMD-header-2 span.cm-url, 
-.cm-s-obsidian .cm-line.HyperMD-header-3 span.cm-url, 
-.cm-s-obsidian .cm-line.HyperMD-header-4 span.cm-url, 
-.cm-s-obsidian .cm-line.HyperMD-header-5 span.cm-url, 
-.cm-s-obsidian .cm-line.HyperMD-header-6 span.cm-url, 
-.cm-s-obsidian .cm-line.HyperMD-header-1 span.cm-link, 
-.cm-s-obsidian .cm-line.HyperMD-header-2 span.cm-link, 
-.cm-s-obsidian .cm-line.HyperMD-header-3 span.cm-link, 
-.cm-s-obsidian .cm-line.HyperMD-header-4 span.cm-link, 
-.cm-s-obsidian .cm-line.HyperMD-header-5 span.cm-link, 
-.cm-s-obsidian .cm-line.HyperMD-header-6 span.cm-link, 
-.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-underline, 
-.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-underline, 
-.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-underline, 
-.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-underline, 
-.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-underline, 
+.cm-s-obsidian .cm-line.HyperMD-header-1 span.cm-url,
+.cm-s-obsidian .cm-line.HyperMD-header-2 span.cm-url,
+.cm-s-obsidian .cm-line.HyperMD-header-3 span.cm-url,
+.cm-s-obsidian .cm-line.HyperMD-header-4 span.cm-url,
+.cm-s-obsidian .cm-line.HyperMD-header-5 span.cm-url,
+.cm-s-obsidian .cm-line.HyperMD-header-6 span.cm-url,
+.cm-s-obsidian .cm-line.HyperMD-header-1 span.cm-link,
+.cm-s-obsidian .cm-line.HyperMD-header-2 span.cm-link,
+.cm-s-obsidian .cm-line.HyperMD-header-3 span.cm-link,
+.cm-s-obsidian .cm-line.HyperMD-header-4 span.cm-link,
+.cm-s-obsidian .cm-line.HyperMD-header-5 span.cm-link,
+.cm-s-obsidian .cm-line.HyperMD-header-6 span.cm-link,
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-underline,
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-underline,
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-underline,
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-underline,
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-underline,
 .cm-s-obsidian .cm-line.HyperMD-header-6 .cm-underline {
     color: inherit;
 }
-.markdown-rendered .external-link:hover, 
-.markdown-rendered .internal-link:hover, 
-.cm-header.cm-header-1.cm-hmd-internal-link:hover, 
-.cm-header.cm-header-2.cm-hmd-internal-link:hover, 
-.cm-header.cm-header-3.cm-hmd-internal-link:hover, 
-.cm-header.cm-header-4.cm-hmd-internal-link:hover, 
-.cm-header.cm-header-5.cm-hmd-internal-link:hover, 
-.cm-header.cm-header-6.cm-hmd-internal-link:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-link .cm-underline:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-link .cm-underline:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-link .cm-underline:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-link .cm-underline:hover, 
-.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-link .cm-underline:hover, 
+.markdown-rendered h1 .external-link:hover,
+.markdown-rendered h2 .external-link:hover,
+.markdown-rendered h3 .external-link:hover,
+.markdown-rendered h4 .external-link:hover,
+.markdown-rendered h5 .external-link:hover,
+.markdown-rendered h6 .external-link:hover,
+.markdown-rendered h1 .internal-link:hover,
+.markdown-rendered h2 .internal-link:hover,
+.markdown-rendered h3 .internal-link:hover,
+.markdown-rendered h4 .internal-link:hover,
+.markdown-rendered h5 .internal-link:hover,
+.markdown-rendered h6 .internal-link:hover,
+.cm-header.cm-header-1.cm-hmd-internal-link:hover,
+.cm-header.cm-header-2.cm-hmd-internal-link:hover,
+.cm-header.cm-header-3.cm-hmd-internal-link:hover,
+.cm-header.cm-header-4.cm-hmd-internal-link:hover,
+.cm-header.cm-header-5.cm-hmd-internal-link:hover,
+.cm-header.cm-header-6.cm-hmd-internal-link:hover,
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-link .cm-underline:hover,
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-link .cm-underline:hover,
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-link .cm-underline:hover,
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-link .cm-underline:hover,
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-link .cm-underline:hover,
 .cm-s-obsidian .cm-line.HyperMD-header-6 .cm-link .cm-underline:hover {
     color: inherit;
     filter:brightness(105%);
     opacity: 0.8;
 }
+
+/*==== EXTERNAL LINK ICON ====*/
 .external-link {
     background-image: none;
     padding-inline-end: 0rem;
 }
 
 /*==== HEADERS ====*/
-.cm-formatting-header {
-    color: currentColor;
-}
-.HyperMD-header-1, 
-.HyperMD-header-2, 
-.HyperMD-header-3, 
-.HyperMD-header-4, 
-.HyperMD-header-5, 
-.HyperMD-header-6, 
-.markdown-rendered h1, 
-.markdown-rendered h2, 
-.markdown-rendered h3, 
-.markdown-rendered h4, 
-.markdown-rendered h5, 
-.markdown-rendered h6, 
+.HyperMD-header-1,
+.HyperMD-header-2,
+.HyperMD-header-3,
+.HyperMD-header-4,
+.HyperMD-header-5,
+.HyperMD-header-6,
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6,
 .cm-s-obsidian .cm-line.HyperMD-header-1,
 .cm-s-obsidian .cm-line.HyperMD-header-2,
-.cm-s-obsidian .cm-line.HyperMD-header-3, 
-.cm-s-obsidian .cm-line.HyperMD-header-4, 
-.cm-s-obsidian .cm-line.HyperMD-header-5, 
+.cm-s-obsidian .cm-line.HyperMD-header-3,
+.cm-s-obsidian .cm-line.HyperMD-header-4,
+.cm-s-obsidian .cm-line.HyperMD-header-5,
 .cm-s-obsidian .cm-line.HyperMD-header-6 {
     font-weight: var(--grotto-header-font-weight);
     line-height: var(--grotto-header-line-height);
@@ -637,8 +657,15 @@ a.mobile-tap,
     letter-spacing: 0px;
     width: fit-content;
 }
-.HyperMD-header-1, 
-.markdown-rendered h1, 
+
+/*==== HEADER HASHTAG ====*/
+.cm-formatting-header {
+    color: currentColor;
+}
+
+/*==== HEADER 1 ====*/
+.HyperMD-header-1,
+.markdown-rendered h1,
 .cm-s-obsidian .cm-line.HyperMD-header-1 {
     font-size: var(--grotto-header-size-1);
     color: var(--grotto-header-color-1);
@@ -649,8 +676,10 @@ a.mobile-tap,
     outline-offset: -4px;
     padding: 0px 7px;
 }
-.HyperMD-header-2, 
-.markdown-rendered h2, 
+
+/*==== HEADER 2 ====*/
+.HyperMD-header-2,
+.markdown-rendered h2,
 .cm-s-obsidian .cm-line.HyperMD-header-2 {
     font-size: var(--grotto-header-size-2);
     color: var(--grotto-header-color-2);
@@ -659,8 +688,10 @@ a.mobile-tap,
     border-radius: var(--grotto-header-border-radius-2);
     padding: 0px 7px;
 }
-.HyperMD-header-3, 
-.markdown-rendered h3, 
+
+/*==== HEADER 3 ====*/
+.HyperMD-header-3,
+.markdown-rendered h3,
 .cm-s-obsidian .cm-line.HyperMD-header-3 {
     font-size: var(--grotto-header-size-3);
     color: var(--grotto-header-color-3);
@@ -669,8 +700,10 @@ a.mobile-tap,
     border-radius: var(--grotto-header-border-radius-3);
     padding: 0px 7px;
 }
-.HyperMD-header-4, 
-.markdown-rendered h4, 
+
+/*==== HEADER 4 ====*/
+.HyperMD-header-4,
+.markdown-rendered h4,
 .cm-s-obsidian .cm-line.HyperMD-header-4 {
     font-size: var(--grotto-header-size-4);
     color: var(--grotto-header-color-4);
@@ -679,8 +712,10 @@ a.mobile-tap,
     border-radius: var(--grotto-header-border-radius-4);
     padding: 0px 7px;
 }
-.HyperMD-header-5, 
-.markdown-rendered h5, 
+
+/*==== HEADER 5 ====*/
+.HyperMD-header-5,
+.markdown-rendered h5,
 .cm-s-obsidian .cm-line.HyperMD-header-5 {
     font-size: var(--grotto-header-size-5);
     color: var(--grotto-header-color-5);
@@ -692,8 +727,10 @@ a.mobile-tap,
     text-decoration-color: var(--grotto-header-border-color-5);
     padding: 0px 8px;
 }
-.HyperMD-header-6, 
-.markdown-rendered h6, 
+
+/*==== HEADER 6 ====*/
+.HyperMD-header-6,
+.markdown-rendered h6,
 .cm-s-obsidian .cm-line.HyperMD-header-6 {
     font-size: var(--grotto-header-size-6);
     color: var(--grotto-header-color-6);
@@ -712,7 +749,7 @@ img {
 }
 
 /*==== BUTTONS ====*/
-button.mod-cta, 
+button.mod-cta,
 button:not(.clickable-icon) {
     color: var(--grotto-button-color);
     background-color: var(--grotto-button-background-color);
@@ -720,9 +757,9 @@ button:not(.clickable-icon) {
     border-radius: var(--grotto-button-radius);
     box-shadow: none;
 }
-button.mod-cta:hover, 
-button.mod-cta.mobile-tap, 
-button:not(.clickable-icon):hover, 
+button.mod-cta:hover,
+button.mod-cta.mobile-tap,
+button:not(.clickable-icon):hover,
 button:not(.clickable-icon).mobile-tap {
     color: var(--grotto-button-color);
     background-color: var(--grotto-button-background-color);
@@ -732,33 +769,35 @@ button:not(.clickable-icon).mobile-tap {
     outline-offset: 2px;
     box-shadow: none;
 }
-button.mod-warning, 
-button.mod-destructive, 
+
+/*==== WARNING BUTTONS ====*/
+button.mod-warning,
+button.mod-destructive,
 .is-mobile button.mod-warning {
   color: var(--grotto-button-error-color);
   background-color: var(--grotto-button-error-background);
 }
-button.mod-warning:hover, 
-button.mod-warning.mobile-tap, 
-button.mod-destructive:hover, 
+button.mod-warning:hover,
+button.mod-warning.mobile-tap,
+button.mod-destructive:hover,
 button.mod-destructive.mobile-tap {
   color: var(--grotto-button-error-color);
   background-color: var(--grotto-button-error-background-hover);
 }
 
 /*==== CHECKBOXES ====*/
-input[type=checkbox], 
-input[type=checkbox]:hover, 
-input[type=checkbox]:checked, 
+input[type=checkbox],
+input[type=checkbox]:hover,
+input[type=checkbox]:checked,
 input[type=checkbox]:checked:hover {
     border: 1px solid var(--grotto-checkbox-border-color);
     border-radius: var(--grotto-checkbox-radius);
 }
-input[type=checkbox], 
+input[type=checkbox],
 input[type=checkbox]:hover {
     background-color: var(--background-primary);
 }
-input[type=checkbox]:checked, 
+input[type=checkbox]:checked,
 input[type=checkbox]:checked:hover {
     background-color: var(--grotto-accent-1);
 }
@@ -779,7 +818,7 @@ input[type="color"]::-webkit-color-swatch:hover {
 }
 
 /*==== BLOCKQUOTES ====*/
-.cm-s-obsidian span.cm-quote, 
+.cm-s-obsidian span.cm-quote,
 .markdown-rendered blockquote {
     caret-color: currentColor;
 }
@@ -797,7 +836,7 @@ input[type="color"]::-webkit-color-swatch:hover {
 }
 
 /*==== CALLOUTS ====*/
-.callout, 
+.callout,
 .callout:hover {
     color: var(--grotto-callout-color);
     background-color: var(--grotto-callout-background-color);
@@ -830,8 +869,8 @@ input[type="color"]::-webkit-color-swatch:hover {
     border-bottom: 1px solid var(--grotto-embed-color);
     font-size: var(--grotto-callout-title-size);
 }
-.markdown-embed-link, 
-.file-embed-link, 
+.markdown-embed-link,
+.file-embed-link,
 .markdown-source-view.mod-cm6 .edit-block-button {
     color: var(--grotto-embed-link-color);
     background-color: var(--grotto-embed-link-background-color);
@@ -839,8 +878,8 @@ input[type="color"]::-webkit-color-swatch:hover {
     border-radius: 0px;
     opacity: 1;
 }
-.markdown-embed-link:hover, 
-.file-embed-link:hover, 
+.markdown-embed-link:hover,
+.file-embed-link:hover,
 .markdown-source-view.mod-cm6 .edit-block-button:hover {
     color: var(--grotto-embed-link-color-hover);
     background-color: var(--grotto-embed-link-background-color);
@@ -851,10 +890,10 @@ input[type="color"]::-webkit-color-swatch:hover {
 }
 
 /*==== CODE BLOCKS ====*/
-.markdown-rendered pre, 
-.markdown-rendered code, 
-.cm-s-obsidian span.cm-inline-code, 
-.cm-s-obsidian .cm-inline-code:not(.cm-formatting), 
+.markdown-rendered pre,
+.markdown-rendered code,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting),
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
     color: var(--grotto-code-color);
     background-color: var(--grotto-code-background-color);
@@ -864,14 +903,16 @@ input[type="color"]::-webkit-color-swatch:hover {
     vertical-align: middle;
     caret-color: currentColor;
 }
-.markdown-rendered button.copy-code-button, 
+
+/*==== EDIT BUTTONS ====*/
+.markdown-rendered button.copy-code-button,
 .markdown-source-view.mod-cm6 .code-block-flair {
     color: var(--grotto-code-color);
     background-color: var(--grotto-code-background-color);
     border: 0px solid var(--grotto-code-border-color);
     padding: 0.2rem 0.4rem;
 }
-.markdown-rendered button.copy-code-button:hover, 
+.markdown-rendered button.copy-code-button:hover,
 .markdown-source-view.mod-cm6 .code-block-flair:hover {
     color: var(--grotto-code-color-hover);
     background-color: var(--grotto-code-background-color);
@@ -895,18 +936,18 @@ input[type="color"]::-webkit-color-swatch:hover {
 }
 
 /*==== TOGGLE SWITCHES ====*/
-.checkbox-container, 
+.checkbox-container,
 .checkbox-container:focus-within {
     background-color: var(--grotto-toggle-background-color);
 }
 .checkbox-container:hover {
     background-color: var(--grotto-toggle-background-color-hover);
 }
-.checkbox-container.is-enabled, 
+.checkbox-container.is-enabled,
 .checkbox-container.is-enabled:hover {
     background-color: var(--grotto-toggle-enabled-background-color);
 }
-.checkbox-container:before, 
+.checkbox-container:before,
 .checkbox-container:after {
     background-color: var(--grotto-toggle-color);
     box-shadow: 0px 0px 0px 1px var(--grotto-toggle-handle-border-color);
@@ -942,7 +983,7 @@ input[type="color"]::-webkit-color-swatch:hover {
     white-space: nowrap !important;
 }
 th, 
-.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper, 
+.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper,
 .markdown-source-view.mod-cm6 .cm-table-widget .cm-line {
     color: var(--grotto-table-color);
     width: var(--grotto-table-cell-width);
@@ -962,7 +1003,7 @@ th,
 .markdown-rendered table {
     border-collapse: var(--grotto-table-border-style, collapse);
 }
-.cm-line:has(+ .cm-table-widget), 
+.cm-line:has(+ .cm-table-widget),
 .cm-table-widget + .cm-line {
     line-height: 0px;
 }
@@ -976,19 +1017,19 @@ th,
 }
 
 /*==== PROGRESS BAR ====*/
-.notice progress[value]::-webkit-progress-bar, 
-.markdown-rendered progress[value]::-webkit-progress-bar, 
-.markdown-preview-view progress[value]::-webkit-progress-bar, 
-.markdown-source-view.is-live-preview progress[value]::-webkit-progress-bar, 
+.notice progress[value]::-webkit-progress-bar,
+.markdown-rendered progress[value]::-webkit-progress-bar,
+.markdown-preview-view progress[value]::-webkit-progress-bar,
+.markdown-source-view.is-live-preview progress[value]::-webkit-progress-bar,
 .theme-light .notice progress[value]::-webkit-progress-bar {
     background-color: var(--grotto-progress-background-color);
     border: 1px solid var(--grotto-progress-border-color);
     border-radius: var(--grotto-progress-radius);
     box-shadow: none;
 }
-.notice progress[value]::-webkit-progress-value, 
-.markdown-rendered progress[value]::-webkit-progress-value, 
-.markdown-preview-view progress[value]::-webkit-progress-value, 
+.notice progress[value]::-webkit-progress-value,
+.markdown-rendered progress[value]::-webkit-progress-value,
+.markdown-preview-view progress[value]::-webkit-progress-value,
 .markdown-source-view.is-live-preview progress[value]::-webkit-progress-value {
   background-color: var(--grotto-progress-color);
 }
@@ -999,7 +1040,7 @@ th,
 }
 
 /*==== NOTICES ====*/
-.notice, 
+.notice,
 .is-phone .notice {
     color: var(--grotto-notice-color);
     background-color: var(--grotto-notice-background-color);
@@ -1009,14 +1050,14 @@ th,
 }
 
 /*==== SUGGESTIONS ====*/
-.suggestion-container, 
+.suggestion-container,
 .is-mobile .suggestion-container {
     background-color: var(--grotto-suggestion-background-color);
     border: 1px solid var(--grotto-suggestion-border-color);
     border-radius: var(--grotto-suggestion-radius);
     box-shadow: none;
 }
-.suggestion-item, 
+.suggestion-item,
 .is-mobile .suggestion-item {
     color: var(--grotto-suggestion-color);
     background-color: var(--grotto-suggestion-background-color);
@@ -1024,7 +1065,7 @@ th,
     border-radius: var(--grotto-suggestion-radius);
 }
 .suggestion-item.is-selected,
-.suggestion-item.mobile-tap, 
+.suggestion-item.mobile-tap,
 .suggestion-item:hover {
     color: var(--grotto-day-1);
     background-color: var(--grotto-suggestion-background-color-hover);
@@ -1032,11 +1073,11 @@ th,
     border-radius: var(--grotto-suggestion-radius);
     --text-muted: currentColor;
 }
-.suggestion-flair .svg-icon, 
+.suggestion-flair .svg-icon,
 .suggestion-item.mod-complex .suggestion-flair {
     color: currentColor;
 }
-.suggestion-item:hover .suggestion-flair .svg-icon, 
+.suggestion-item:hover .suggestion-flair .svg-icon,
 .suggestion-container.mod-property-key .suggestion-item:hover {
     color: var(--grotto-day-1);
 }
@@ -1052,10 +1093,12 @@ th,
     margin-right: 0px;
     padding-top: 0px;
 }
-.list-item-part.clickable-icon:hover, .list-item-part.clickable-icon:active {
+.list-item-part.clickable-icon:hover,
+.list-item-part.clickable-icon:active {
     color: var(--grotto-suggestion-color);
 }
 .prompt-instructions {
+    color: var(--grotto-instruction-color);
     border-top: 1px solid var(--grotto-suggestion-color);
     background-color: var(--background-secondary);
 }
@@ -1065,8 +1108,8 @@ th,
   color: var(--graph-line);
   opacity: 0.4;
 }
-.graph-controls, 
-.graph-controls:not(.is-close), 
+.graph-controls,
+.graph-controls:not(.is-close),
 .graph-controls.is-close {
     color: var(--text-normal);
     background-color: var(--grotto-graph-controls-background-color);
@@ -1113,12 +1156,12 @@ th,
     border: 1px solid var(--grotto-calendar-border-color);
     border-radius: 0rem;
 }
-#calendar-container .day.svelte-q3wqg9:hover, 
+#calendar-container .day.svelte-q3wqg9:hover,
 #calendar-container .week-num.svelte-egt0yd:hover {
     border: 1px solid var(--grotto-calendar-border-color);
 }
-#calendar-container .today, 
-#calendar-container .day.active:hover, 
+#calendar-container .today,
+#calendar-container .day.active:hover,
 #calendar-container .week-num.active.svelte-egt0yd {
     color: var(--grotto-calendar-today-color);
     background-color: var(--grotto-calendar-today-background-color);
@@ -1333,8 +1376,8 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 }
 
 /*==== MOBILE QUICK ACTIONS ====*/
-.pull-action, 
-.pull-down-action, 
+.pull-action,
+.pull-down-action,
 .pull-out-action {
     color: var(--text-normal);
     background-color: var(--background-primary);
@@ -1343,8 +1386,8 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     padding: 8px;
     width: fit-content;
 }
-.pull-action.mod-activated, 
-.pull-down-action.mod-activated, 
+.pull-action.mod-activated,
+.pull-down-action.mod-activated,
 .pull-out-action.mod-activated {
     color: var(--grotto-pull-color);
     background-color: var(--grotto-pull-background-color);
@@ -1431,16 +1474,16 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     background-color: transparent;
     border-radius: 0px;
 }
-.clickable-icon:hover, 
-.clickable-icon.has-active-menu, 
-.clickable-icon:active, 
-.clickable-icon.is-active, 
-.clickable-icon.is-active:hover, 
-.clickable-icon.mobile-tap, 
-.status-bar-item.plugin-editor-status:hover, 
-.status-bar-item.plugin-sync:hover, 
+.clickable-icon:hover,
+.clickable-icon.has-active-menu,
+.clickable-icon:active,
+.clickable-icon.is-active,
+.clickable-icon.is-active:hover,
+.clickable-icon.mobile-tap,
+.status-bar-item.plugin-editor-status:hover,
+.status-bar-item.plugin-sync:hover,
 .clickable-icon.nav-action-button.mobile-tap,
-.clickable-icon.nav-action-button:hover, 
+.clickable-icon.nav-action-button:hover,
 .clickable-icon.nav-action-button.is-active {
     color: var(--grotto-icon-color-hover);
     background-color: transparent;
@@ -1492,8 +1535,8 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 }
 
 /*==== MOBILE DRAWER HEADER ====*/
-.is-phone .workspace-drawer-header, 
-.is-phone .workspace-drawer-header-info, 
+.is-phone .workspace-drawer-header,
+.is-phone .workspace-drawer-header-info,
 .is-mobile .workspace-drawer-header-name-text {
     --grotto-icon-color: var(--grotto-mobile-drawer-header-color);
     color: var(--grotto-mobile-drawer-header-color);
@@ -1520,14 +1563,14 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 .is-phone .workspace-drawer.mod-left {
     border-right: 1px solid var(--grotto-workspace-drawer-border-color);
 }
-.workspace-drawer-active-tab-icon, 
-.workspace-drawer-active-tab-title, 
+.workspace-drawer-active-tab-icon,
+.workspace-drawer-active-tab-title,
 .clickable-icon.workspace-drawer-active-tab-chevron {
     color: var(--grotto-mobile-drawer-header-active-color);
 }
-.mod-right-split .markdown-preview-view, 
-.mod-left-split .markdown-preview-view, 
-.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, 
+.mod-right-split .markdown-preview-view,
+.mod-left-split .markdown-preview-view,
+.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller,
 .mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
     color: var(--text-normal);
     background-color: var(--background-primary);
@@ -1553,8 +1596,8 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     background-color: var(--grotto-menu-background-color);
     border: 1px solid transparent;
 }
-.is-phone .menu .suggestion-group .suggestion-item:not(.is-label), 
-.is-phone .menu-item .menu-item-icon:not(.is-label), 
+.is-phone .menu .suggestion-group .suggestion-item:not(.is-label),
+.is-phone .menu-item .menu-item-icon:not(.is-label),
 .is-phone .menu-item .menu-item-title:not(.is-label) {
     color: var(--grotto-menu-color);
     background-color: var(--grotto-menu-background-color);
@@ -1563,7 +1606,7 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     --grotto-menu-color: var(--grotto-menu-background-color-active);
     background-color: var(--grotto-menu-background-color);
 }
-.is-phone .menu-item.is-warning .menu-item-icon:not(.is-disabled), 
+.is-phone .menu-item.is-warning .menu-item-icon:not(.is-disabled),
 .is-phone .menu-item.is-warning .menu-item-title:not(.is-disabled) {
     color: var(--text-error);
 }
@@ -1595,7 +1638,7 @@ body:not(.is-phone) .menu-scroll {
     border: 1px solid var(--grotto-menu-border-color);
     padding: 8px;
 }
-body:not(.is-phone) .menu-item-icon, 
+body:not(.is-phone) .menu-item-icon,
 body:not(.is-phone) .menu-item-title {
     color: var(--grotto-menu-color);
     background-color: var(--grotto-menu-background-color);
@@ -1603,7 +1646,7 @@ body:not(.is-phone) .menu-item-title {
 .menu-item.tappable {
     border: 1px solid transparent;
 }
-.menu-item.selected .menu-item-icon, 
+.menu-item.selected .menu-item-icon,
 .menu-item.selected .menu-item-title {
     color: var(--grotto-menu-color-active);
     background-color: var(--grotto-menu-background-color-active);
@@ -1612,7 +1655,7 @@ body:not(.is-phone) .menu-item-title {
     background-color: var(--grotto-menu-background-color-active);
     border: 1px solid var(--grotto-menu-border-color);
 }
-.menu-item.is-warning .menu-item-icon:not(.is-disabled), 
+.menu-item.is-warning .menu-item-icon:not(.is-disabled),
 .menu-item.is-warning .menu-item-title:not(.is-disabled) {
     color: var(--text-error);
 }
@@ -1646,9 +1689,6 @@ input.prompt-input:focus-visible,
 .search-input-clear-button:hover,
 .search-input-clear-button:active {
     color: var(--grotto-accent-1);
-}
-.prompt-instructions {
-    color: var(--grotto-prompt-background-color-hover);
 }
 .is-mobile .prompt {
     border-radius: 0px;
@@ -1782,17 +1822,17 @@ input[type='range']::-webkit-slider-thumb:active {
 /*==== INPUTS ====*/
 input[type=number],
 input[type=text],
-input[type='date'], 
-input[type='datetime-local'], 
+input[type='date'],
+input[type='datetime-local'],
 input[type='email'],
-input[type='password'], 
+input[type='password'],
 input[type=search],
-input[type=number]:hover, 
-input[type=text]:hover, 
-input[type='date']:hover, 
-input[type='datetime-local']:hover, 
+input[type=number]:hover,
+input[type=text]:hover,
+input[type='date']:hover,
+input[type='datetime-local']:hover,
 input[type='email']:hover,
-input[type='password']:hover, 
+input[type='password']:hover,
 input[type=search]:hover {
     color: var(--text-normal);
     background-color: transparent;
@@ -1809,35 +1849,35 @@ input[type=search]:hover {
     border-radius: 0rem;
     box-shadow: none;
 }
-input[type=number]:hover, 
-input[type=text]:hover, 
-input[type=search]:hover, 
-input[type='datetime-local']:hover, 
-input[type='date']:hover, 
-input[type='email']:hover, 
+input[type=number]:hover,
+input[type=text]:hover,
+input[type=search]:hover,
+input[type='datetime-local']:hover,
+input[type='date']:hover,
+input[type='email']:hover,
 input[type='password']:hover {
     outline: 2px solid var(--text-normal);
     outline-offset: -4px;
 }
 
-.nav-header textarea:active, 
-.nav-header .multi-select-container:active, 
-.nav-header input.metadata-input-text:active, 
-.nav-header input[type='date']:active, 
-.nav-header input[type='datetime-local']:active, 
-.nav-header input[type='text']:active, 
-.nav-header input[type='email']:active, 
-.nav-header input[type='password']:active, 
-.nav-header input[type='number']:active, 
-.nav-header textarea:focus, 
-.nav-header .multi-select-container:focus, 
-.nav-header input.metadata-input-text:focus, 
-.nav-header input[type='date']:focus, 
-.nav-header input[type='datetime-local']:focus, 
-.nav-header input[type='text']:focus, 
-.nav-header input[type='email']:focus, 
-.nav-header input[type='password']:focus, 
-.nav-header input[type='number']:focus, 
+.nav-header textarea:active,
+.nav-header .multi-select-container:active,
+.nav-header input.metadata-input-text:active,
+.nav-header input[type='date']:active,
+.nav-header input[type='datetime-local']:active,
+.nav-header input[type='text']:active,
+.nav-header input[type='email']:active,
+.nav-header input[type='password']:active,
+.nav-header input[type='number']:active,
+.nav-header textarea:focus,
+.nav-header .multi-select-container:focus,
+.nav-header input.metadata-input-text:focus,
+.nav-header input[type='date']:focus,
+.nav-header input[type='datetime-local']:focus,
+.nav-header input[type='text']:focus,
+.nav-header input[type='email']:focus,
+.nav-header input[type='password']:focus,
+.nav-header input[type='number']:focus,
 .nav-header input[type='search'] {
     color: var(--grotto-search-suggestion-border-color);
     border: 1px solid var(--grotto-search-suggestion-border-color);
@@ -1852,7 +1892,7 @@ input[type='password']:hover {
     color: var(--grotto-accent-1);
 }
 /*==== GLOBAL SEARCH ====*/
-.global-search-input-container.search-input-container input, 
+.global-search-input-container.search-input-container input,
 .global-search-input-container.search-input-container input:hover {
     color: var(--grotto-search-suggestion-color);
     background-color: var(--background-secondary);
@@ -1899,7 +1939,7 @@ input[type='password']:hover {
 .clickable-icon.search-results-result-count:hover {
     color: var(--grotto-search-suggestion-icon-color-hover);
 }
-.search-results-info .dropdown, 
+.search-results-info .dropdown,
 .search-results-info .dropdown:hover {
     color: var(--grotto-dropdown-color);
     background-color: var(--grotto-dropdown-background-color);
@@ -2051,19 +2091,19 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
 .bases-header {
     background-color: var(--grotto-background-tertiary);
 }
-.text-icon-button, 
-.text-button-icon, 
+.text-icon-button,
+.text-button-icon,
 .text-icon-button.has-active-menu .text-button-icon {
     color: var(--grotto-text-icon-color);
     border: 1px solid transparent;
     border-radius: var(--grotto-text-icon-radius);
 }
-.text-icon-button.is-active:active, 
-.text-icon-button.is-active.has-active-menu, 
-.text-icon-button.is-active, 
-.text-icon-button.mobile-tap, 
-.text-icon-button.has-active-menu, 
-.text-icon-button:hover, 
+.text-icon-button.is-active:active,
+.text-icon-button.is-active.has-active-menu,
+.text-icon-button.is-active,
+.text-icon-button.mobile-tap,
+.text-icon-button.has-active-menu,
+.text-icon-button:hover,
 .text-icon-button.is-active:hover {
     color: var(--grotto-text-icon-color-hover);
     background-color:var(--grotto-text-icon-background-color);
@@ -2185,12 +2225,12 @@ span.value-list-element a.tag {
     border: 1px solid var(--text-normal);
     border-radius: 0rem;
 }
-.filter-statement .metadata-property-value .metadata-input-text, 
-.filter-statement .metadata-property-value .metadata-input-text:hover, 
-.filter-statement .metadata-property-value .metadata-input-text:focus-within, 
-.filter-statement .metadata-property-value .multi-select-container, 
-.filter-statement .metadata-property-value .multi-select-container:hover, 
-.filter-statement .metadata-property-value .multi-select-container:focus-within, 
+.filter-statement .metadata-property-value .metadata-input-text,
+.filter-statement .metadata-property-value .metadata-input-text:hover,
+.filter-statement .metadata-property-value .metadata-input-text:focus-within,
+.filter-statement .metadata-property-value .multi-select-container,
+.filter-statement .metadata-property-value .multi-select-container:hover,
+.filter-statement .metadata-property-value .multi-select-container:focus-within,
 .bases-query-container .filter-rhs-container .metadata-input-longtext {
     background-color: var(--background-primary);
     border-width: 0px;
@@ -2301,8 +2341,8 @@ body:not(.is-phone) .base-toolbar-sort-item {
     border: 1px solid var(--grotto-bases-cards-border-color);
     border-radius: 0rem;
 }
-.is-phone .suggestion-item.bases-toolbar-menu-item.mod-implicit.is-selected, 
-.is-phone .menu .suggestion-group .suggestion-item.mobile-tap:not(.is-disabled), 
+.is-phone .suggestion-item.bases-toolbar-menu-item.mod-implicit.is-selected,
+.is-phone .menu .suggestion-group .suggestion-item.mobile-tap:not(.is-disabled),
 .is-phone .suggestion-item.bases-toolbar-menu-item.mod-formula.is-selected  {
     color: var(--grotto-bases-cards-color-hover);
     background-color: var(--grotto-accent-1);
@@ -2406,8 +2446,8 @@ input.metadata-property-key-input:focus-within {
     width: 100%;
     box-shadow: none;
 }
-.metadata-property[data-property-key="tags"] .multi-select-pill, 
-.metadata-property[data-property-key="tags"] .multi-select-pill:hover, 
+.metadata-property[data-property-key="tags"] .multi-select-pill,
+.metadata-property[data-property-key="tags"] .multi-select-pill:hover,
 .metadata-property-value .multi-select-pill {
     color: var(--grotto-tag-color);
     background-color: var(--grotto-tag-background-color);
@@ -2485,6 +2525,7 @@ textarea.webviewer-adblock-lists {
     --grotto-graph-sidebar-controls-color: var(--grotto-day-1);
     /*==== SEARCH SUGGESTIONS ====*/
     --grotto-search-suggestion-color: var(--grotto-day-1);
+    --grotto-instruction-color: var(--grotto-day-1);
     /*==== SETTINGS ====*/
     --grotto-settings-color: var(--grotto-day-1);
     /*==== STATUS BAR ====*/
@@ -2549,6 +2590,9 @@ settings:
                 label: Aromatisse
                 value: preset-aromatisse
             -
+                label: Calyrex
+                value: preset-calyrex
+            -
                 label: Clobbopus
                 value: preset-clobbopus
             -
@@ -2558,8 +2602,23 @@ settings:
                 label: Darkrai
                 value: preset-darkrai
             -
-                label: Ice Rider Calyrex
-                value: preset-ice-rider-calyrex
+                label: Dewpider
+                value: preset-dewpider
+            -
+                label: Dhelmise
+                value: preset-dhelmise
+            -
+                label: Diancie
+                value: preset-diancie
+            -
+                label: Eldegoss
+                value: preset-eldegoss
+            -
+                label: Gmax Butterfree
+                value: preset-gmax-butterfree
+            -
+                label: Hisuian Typhlosion
+                value: preset-hisuian-typhlosion
             -
                 label: Mareep
                 value: preset-mareep
@@ -2567,17 +2626,8 @@ settings:
                 label: Mega Lucario
                 value: preset-mega-lucario
             -
-                label: Mega Rayquaza
-                value: preset-mega-rayquaza
-            -
                 label: Meloetta
                 value: preset-meloetta
-            -
-                label: Necrozma
-                value: preset-necrozma
-            -
-                label: Noivern
-                value: preset-noivern
             -
                 label: Pirouette Meloetta
                 value: preset-pirouette-meloetta
@@ -2585,26 +2635,20 @@ settings:
                 label: Poltchageist
                 value: preset-poltchageist
             -
-                label: Skeledirge
-                value: preset-skeledirge
-            -
                 label: Scolipede
                 value: preset-scolipede
             -
                 label: Swampert
                 value: preset-swampert
             -
+                label: Tsareena
+                value: preset-tsareena
+            -
                 label: Ursaluna
                 value: preset-ursaluna
             -
                 label: Volcarona
                 value: preset-volcarona
-            -
-                label: Wattrel
-                value: preset-wattrel
-            -
-                label: Whimsicott
-                value: preset-whimsicott
     -
         id: sidebar-preset
         title: Sidebar Style
@@ -2832,7 +2876,7 @@ settings:
 /*==== PRESETS ====*/
 
 /*==== ABSOL ====*/
-body.preset-absol {
+.preset-absol {
     --accent-h: 200;
     --accent-s: 16%;
     --accent-l: 60%;
@@ -2847,7 +2891,7 @@ body.preset-absol {
 }
 
 /*==== AEGISLASH ====*/
-body.preset-aegislash {
+.preset-aegislash {
     --accent-h: 260;
     --accent-s: 20%;
     --accent-l: 60%;
@@ -2862,7 +2906,7 @@ body.preset-aegislash {
 }
 
 /*==== AGGRON ====*/
-body.preset-aggron {
+.preset-aggron {
     --accent-h: 0;
     --accent-s: 0%;
     --accent-l: 58%;
@@ -2890,11 +2934,32 @@ body.preset-aggron {
     --grotto-night-3: hsl(300, 20%, 44%);
     --grotto-accent-1: hsl(0, 50%, 60%);
 }
+.theme-light.preset-aromatisse {
+    --grotto-night-0: hsl(300, 20%, 12%);
+    --grotto-night-1: hsl(300, 20%, 20%);
+    --grotto-night-2: hsl(300, 20%, 32%);
+    --grotto-night-3: hsl(300, 20%, 40%);
+}
+
+/*==== CALYREX ====*/
+.preset-calyrex {
+    --accent-h: 160;
+    --accent-s: 24%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(50, 12%, 86%);
+    --grotto-day-2: hsl(50, 12%, 76%);
+    --grotto-day-3: hsl(50, 12%, 60%);
+    --grotto-night-0: hsl(160, 20%, 12%);
+    --grotto-night-1: hsl(160, 20%, 20%);
+    --grotto-night-2: hsl(160, 20%, 28%);
+    --grotto-night-3: hsl(160, 20%, 36%);
+    --grotto-accent-1: hsl(160, 24%, 50%);
+}
 
 /*====  CLOBBOPUS  ====*/
 .preset-clobbopus {
     --accent-h: 16;
-    --accent-s: 82%;
+    --accent-s: 72%;
     --accent-l: 58%;
     --grotto-day-1: hsl(33, 33%, 87%);
     --grotto-day-2: hsl(33, 33%, 78%);
@@ -2903,11 +2968,11 @@ body.preset-aggron {
     --grotto-night-1: hsl(240, 18%, 25%);
     --grotto-night-2: hsl(240, 18%, 45%);
     --grotto-night-3: hsl(240, 18%, 52%);
-    --grotto-accent-1: hsl(16, 82%, 58%);
+    --grotto-accent-1: hsl(16, 72%, 58%);
 }
 
 /*==== CRYOGONAL ====*/
-body.preset-cryogonal {
+.preset-cryogonal {
     --accent-h: 210;
     --accent-s: 50%;
     --accent-l: 60%;
@@ -2923,11 +2988,17 @@ body.preset-cryogonal {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+.theme-light.preset-cryogonal {
+    --grotto-night-0: hsl(210, 10%, 12%);
+    --grotto-night-1: hsl(220, 30%, 24%);
+    --grotto-night-2: hsl(220, 30%, 36%);
+    --grotto-night-3: hsl(220, 30%, 44%);
+}
 
 /*====  DARKRAI  ====*/
-body.preset-darkrai {
+.preset-darkrai {
     --accent-h: 5;
-    --accent-s: 64%;
+    --accent-s: 50%;
     --accent-l: 50%;
     --grotto-day-1: hsl(212, 0%, 90%);
     --grotto-day-2: hsl(212, 0%, 80%);
@@ -2936,50 +3007,122 @@ body.preset-darkrai {
     --grotto-night-1: hsl(0, 0%, 18%);
     --grotto-night-2: hsl(0, 0%, 32%);
     --grotto-night-3: hsl(0, 0%, 40%);
-    --grotto-accent-1: hsl(5, 64%, 50%);
+    --grotto-accent-1: hsl(5, 50%, 50%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
 
-/*==== ICE RIDER CALYREX ====*/
-body.preset-ice-rider-calyrex {
-    --accent-h: 160;
-    --accent-s: 40%;
+/*==== DEWPIDER ====*/
+body.preset-dewpider {
+    --accent-h: 80;
+    --accent-s: 50%;
+    --accent-l: 44%;
+    --grotto-day-1: hsl(44, 0%, 86%);
+    --grotto-day-2: hsl(44, 0%, 76%);
+    --grotto-day-3: hsl(44, 0%, 56%);
+    --grotto-night-0: hsl(196, 24%, 20%);
+    --grotto-night-1: hsl(196, 24%, 28%);
+    --grotto-night-2: hsl(196, 24%, 36%);
+    --grotto-night-3: hsl(196, 24%, 48%);
+    --grotto-accent-1: hsl(80, 50%, 44%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== DIANCIE ====*/
+.preset-diancie {
+    --accent-h: 320;
+    --accent-s: 20%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(40, 0%, 80%);
+    --grotto-day-2: hsl(40, 0%, 72%);
+    --grotto-day-3: hsl(40, 0%, 64%);
+    --grotto-night-0: hsl(30, 0%, 12%);
+    --grotto-night-1: hsl(30, 0%, 20%);
+    --grotto-night-2: hsl(30, 0%, 28%);
+    --grotto-night-3: hsl(30, 0%, 36%);
+    --grotto-accent-1: hsl(320, 20%, 60%);
+}
+
+/*==== ELDEGOSS ====*/
+body.preset-eldegoss {
+    --accent-h: 44;
+    --accent-s: 56%;
     --accent-l: 50%;
-    --grotto-day-1: hsl(200, 20%, 96%);
-    --grotto-day-2: hsl(200, 20%, 72%);
-    --grotto-day-3: hsl(200, 20%, 60%);
-    --grotto-night-0: hsl(210, 10%, 14%);
-    --grotto-night-1: hsl(210, 10%, 20%);
-    --grotto-night-2: hsl(210, 10%, 36%);
-    --grotto-night-3: hsl(210, 10%, 48%);
-    --grotto-accent-1: hsl(160, 40%, 50%);
+    --grotto-day-1: hsl(44, 40%, 86%);
+    --grotto-day-2: hsl(44, 40%, 76%);
+    --grotto-day-3: hsl(44, 40%, 56%);
+    --grotto-night-0: hsl(86, 40%, 20%);
+    --grotto-night-1: hsl(86, 40%, 28%);
+    --grotto-night-2: hsl(86, 40%, 36%);
+    --grotto-night-3: hsl(86, 40%, 48%);
+    --grotto-accent-1: hsl(44, 56%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== GMAX BUTTERFREE ====*/
+body.preset-gmax-butterfree {
+    --accent-h: 80;
+    --accent-s: 30%;
+    --accent-l: 56%;
+    --grotto-day-1: hsl(80, 30%, 96%);
+    --grotto-day-2: hsl(80, 30%, 86%);
+    --grotto-day-3: hsl(80, 30%, 72%);
+    --grotto-night-0: hsl(180, 30%, 24%);
+    --grotto-night-1: hsl(180, 30%, 32%);
+    --grotto-night-2: hsl(280, 20%, 36%);
+    --grotto-night-3: hsl(180, 30%, 44%);
+    --grotto-accent-1: hsl(80, 30%, 56%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== HISUIAN TYPHLOSION ====*/
+.preset-hisuian-typhlosion {
+    --accent-h: 310;
+    --accent-s: 16%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(40, 16%, 82%);
+    --grotto-day-2: hsl(40, 16%, 76%);
+    --grotto-day-3: hsl(40, 16%, 70%);
+    --grotto-night-0: hsl(240, 16%, 20%);
+    --grotto-night-1: hsl(240, 16%, 28%);
+    --grotto-night-2: hsl(240, 16%, 36%);
+    --grotto-night-3: hsl(240, 16%, 54%);
+    --grotto-accent-1: hsl(310, 16%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
 }
 
 /*==== MAREEP ====*/
-body.preset-mareep {
+.preset-mareep {
     --accent-h: 216;
-    --accent-s: 40%;
+    --accent-s: 30%;
     --accent-l: 48%;
-    --grotto-day-1: hsl(40, 40%, 90%);
-    --grotto-day-2: hsl(40, 40%, 82%);
-    --grotto-day-3: hsl(40, 40%, 70%);
+    --grotto-day-1: hsl(40, 36%, 90%);
+    --grotto-day-2: hsl(40, 36%, 82%);
+    --grotto-day-3: hsl(40, 36%, 70%);
     --grotto-night-0: hsl(200, 0%, 16%);
-    --grotto-night-1: hsl(200, 0%, 20%);
+    --grotto-night-1: hsl(200, 0%, 24%);
     --grotto-night-2: hsl(200, 0%, 32%);
     --grotto-night-3: hsl(200, 0%, 40%);
-    --grotto-accent-1: hsl(216, 40%, 48%);
+    --grotto-accent-1: hsl(216, 30%, 48%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
 
 /*==== MEGA LUCARIO ====*/
-body.preset-mega-lucario {
+.preset-mega-lucario {
     --accent-h: 0;
-    --accent-s: 60%;
-    --accent-l: 60%;
+    --accent-s: 40%;
+    --accent-l: 56%;
     --grotto-day-1: hsl(40, 20%, 86%);
     --grotto-day-2: hsl(40, 20%, 80%);
     --grotto-day-3: hsl(40, 20%, 72%);
@@ -2987,25 +3130,7 @@ body.preset-mega-lucario {
     --grotto-night-1: hsl(200, 30%, 26%);
     --grotto-night-2: hsl(200, 30%, 36%);
     --grotto-night-3: hsl(200, 30%, 44%);
-    --grotto-accent-1: hsl(0, 60%, 60%);
-    /*==== ADJUSTMENTS ====*/
-    --grotto-header-color-1: var(--grotto-day-1);
-    --grotto-header-color-2: var(--grotto-day-1);
-}
-
-/*==== MEGA RAYQUAZA ====*/
-body.preset-mega-rayquaza {
-    --accent-h: 30;
-    --accent-s: 60%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(160, 0%, 82%);
-    --grotto-day-2: hsl(160, 0%, 76%);
-    --grotto-day-3: hsl(160, 0%, 70%);
-    --grotto-night-0: hsl(160, 20%, 16%);
-    --grotto-night-1: hsl(160, 30%, 24%);
-    --grotto-night-2: hsl(160, 30%, 32%);
-    --grotto-night-3: hsl(160, 30%, 40%);
-    --grotto-accent-1: hsl(30, 60%, 50%);
+    --grotto-accent-1: hsl(0, 40%, 56%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
@@ -3015,60 +3140,22 @@ body.preset-mega-rayquaza {
 .preset-meloetta {
     --accent-h: 160;
     --accent-s: 36%;
-    --accent-l: 50%;
+    --accent-l: 56%;
     --grotto-day-1: hsl(80, 40%, 92%);
-    --grotto-day-2: hsl(80, 40%, 80%);
-    --grotto-day-3: hsl(80, 40%, 60%);
+    --grotto-day-2: hsl(80, 40%, 84%);
+    --grotto-day-3: hsl(80, 40%, 72%);
     --grotto-night-0: hsl(40, 6%, 12%);
     --grotto-night-1: hsl(40, 6%, 16%);
     --grotto-night-2: hsl(40, 6%, 24%);
     --grotto-night-3: hsl(40, 6%, 32%);
-    --grotto-accent-1: hsl(160, 36%, 50%);
-}
-
-/*==== NECROZMA ====*/
-.preset-necrozma {
-    --accent-h: 40;
-    --accent-s: 0%;
-    --accent-l: 32%;
-    --grotto-day-1: hsl(40, 20%, 84%);
-    --grotto-day-2: hsl(40, 20%, 80%);
-    --grotto-day-3: hsl(40, 20%, 76%);
-    --grotto-night-0: hsl(200, 0%, 12%);
-    --grotto-night-1: hsl(200, 0%, 16%);
-    --grotto-night-2: hsl(200, 0%, 24%);
-    --grotto-night-3: hsl(200, 0%, 28%);
-    --grotto-accent-1: hsl(40, 0%, 32%);
-    /*==== ADJUSTMENTS ====*/
-    --grotto-header-color-1: var(--grotto-day-1);
-    --grotto-header-color-2: var(--grotto-day-1);
-}
-
-/*==== NOIVERN ====*/
-body.preset-noivern {
-    --accent-h: 160;
-    --accent-s: 40%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(40, 10%, 90%);
-    --grotto-day-2: hsl(40, 10%, 80%);
-    --grotto-day-3: hsl(40, 10%, 72%);
-    --grotto-night-0: hsl(225, 10%, 12%);
-    --grotto-night-1: hsl(288, 26%, 32%);
-    --grotto-night-2: hsl(288, 26%, 40%);
-    --grotto-night-3: hsl(288, 26%, 50%);
-    --grotto-accent-1: hsl(160, 40%, 50%);
-}
-.theme-light.preset-noivern {
-    --text-normal: var(--grotto-night-0);
-    --text-muted: var(--grotto-night-1);
-    --text-faint: var(--grotto-night-2);
+    --grotto-accent-1: hsl(160, 36%, 56%);
 }
 
 /*==== PIROUETTE MELOETTA ====*/
 .preset-pirouette-meloetta {
     --accent-h: 10;
     --accent-s: 50%;
-    --accent-l: 50%;
+    --accent-l: 54%;
     --grotto-day-1: hsl(40, 40%, 90%);
     --grotto-day-2: hsl(40, 40%, 82%);
     --grotto-day-3: hsl(40, 40%, 70%);
@@ -3076,13 +3163,13 @@ body.preset-noivern {
     --grotto-night-1: hsl(40, 16%, 16%);
     --grotto-night-2: hsl(40, 16%, 24%);
     --grotto-night-3: hsl(40, 16%, 32%);
-    --grotto-accent-1: hsl(10, 50%, 50%);
+    --grotto-accent-1: hsl(10, 50%, 54%);
 }
 
 /*==== POLTCHAGEIST ====*/
-body.preset-poltchageist {
+.preset-poltchageist {
     --accent-h: 114;
-    --accent-s: 30%;
+    --accent-s: 24%;
     --accent-l: 50%;
     --grotto-day-1: hsl(30, 20%, 82%);
     --grotto-day-2: hsl(30, 20%, 76%);
@@ -3091,7 +3178,7 @@ body.preset-poltchageist {
     --grotto-night-1: hsl(60, 10%, 14%);
     --grotto-night-2: hsl(60, 5%, 24%);
     --grotto-night-3: hsl(60, 5%, 32%);
-    --grotto-accent-1: hsl(114, 30%, 50%);
+    --grotto-accent-1: hsl(114, 24%, 50%);
 }
 
 /*==== SCOLIPEDE ====*/
@@ -3106,34 +3193,31 @@ body.preset-poltchageist {
     --grotto-night-1: hsl(340, 10%, 18%);
     --grotto-night-2: hsl(340, 10%, 24%);
     --grotto-night-3: hsl(340, 10%, 32%);
-    --grotto-accent-1: hsl(340, 40%, 50%);
+    --grotto-accent-1: hsl(340, 40%, 56%);
+}
+
+/*==== SKIDDO ====*/
+body.preset-skiddo {
+    --accent-h: 145;
+    --accent-s: 64%;
+    --accent-l: 40%;
+    --grotto-day-1: hsl(40, 20%, 96%);
+    --grotto-day-2: hsl(40, 20%, 86%);
+    --grotto-day-3: hsl(40, 20%, 72%);
+    --grotto-night-0: hsl(20, 20%, 20%);
+    --grotto-night-1: hsl(20, 20%, 28%);
+    --grotto-night-2: hsl(20, 20%, 36%);
+    --grotto-night-3: hsl(20, 20%, 48%);
+    --grotto-accent-1: hsl(145, 64%, 40%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
 
-/*==== SKELEDIRGE ====*/
-.preset-skeledirge {
-    --accent-h: 34;
-    --accent-s: 50%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(34, 20%, 84%);
-    --grotto-day-2: hsl(34, 20%, 72%);
-    --grotto-day-3: hsl(34, 20%, 64%);
-    --grotto-night-0: hsl(10, 10%, 16%);
-    --grotto-night-1: hsl(10, 60%, 40%);
-    --grotto-night-2: hsl(10, 60%, 48%);
-    --grotto-night-3: hsl(10, 60%, 56%);
-    --grotto-accent-1: hsl(34, 50%, 50%);
-}
-.theme-light.preset-skeledirge {
-    --text-normal: var(--grotto-night-0);
-}
-
 /*==== SWAMPERT ====*/
-body.preset-swampert {
+.preset-swampert {
     --accent-h: 24;
-    --accent-s: 72%;
+    --accent-s: 64%;
     --accent-l: 56%;
     --grotto-day-1: hsl(40, 14%, 82%);
     --grotto-day-2: hsl(40, 14%, 76%);
@@ -3142,7 +3226,25 @@ body.preset-swampert {
     --grotto-night-1: hsl(210, 30%, 30%);
     --grotto-night-2: hsl(210, 30%, 36%);
     --grotto-night-3: hsl(210, 30%, 44%);
-    --grotto-accent-1: hsl(24, 72%, 56%);
+    --grotto-accent-1: hsl(24, 64%, 56%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== TSAREENA ====*/
+body.preset-tsareena {
+    --accent-h: 100;
+    --accent-s: 36%;
+    --accent-l: 56%;
+    --grotto-day-1: hsl(20, 24%, 92%);
+    --grotto-day-2: hsl(20, 24%, 86%);
+    --grotto-day-3: hsl(20, 24%, 76%);
+    --grotto-night-0: hsl(340, 32%, 30%);
+    --grotto-night-1: hsl(340, 32%, 38%);
+    --grotto-night-2: hsl(340, 32%, 48%);
+    --grotto-night-3: hsl(340, 32%, 64%);
+    --grotto-accent-1: hsl(100, 36%, 56%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
@@ -3151,8 +3253,8 @@ body.preset-swampert {
 /*====  URSALUNA  ====*/
 .preset-ursaluna {
     --accent-h: 40;
-    --accent-s: 60%;
-    --accent-l: 45%;
+    --accent-s: 40%;
+    --accent-l: 50%;
     --grotto-day-1: hsl(20, 10%, 80%);
     --grotto-day-2: hsl(20, 10%, 70%);
     --grotto-day-3: hsl(20, 10%, 64%);
@@ -3160,61 +3262,28 @@ body.preset-swampert {
     --grotto-night-1: hsl(20, 20%, 20%);
     --grotto-night-2: hsl(20, 20%, 32%);
     --grotto-night-3: hsl(20, 20%, 40%);
-    --grotto-accent-1: hsl(40, 60%, 45%);
+    --grotto-accent-1: hsl(40, 40%, 50%);
 }
 
 /*==== VOLCARONA ====*/
 body.preset-volcarona {
-    --accent-h: 27;
-    --accent-s: 85%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(0, 0%, 90%);
-    --grotto-day-2: hsl(165, 30%, 78%);
-    --grotto-day-3: hsl(165, 30%, 64%);
-    --grotto-night-0: hsl(194, 60%, 18%);
-    --grotto-night-1: hsl(194, 60%, 24%);
-    --grotto-night-2: hsl(194, 60%, 32%);
-    --grotto-night-3: hsl(194, 60%, 40%);
-    --grotto-accent-1: hsl(27, 85%, 50%);
+    --accent-h: 20;
+    --accent-s: 64%;
+    --accent-l: 54%;
+    --grotto-day-1: hsl(165, 0%, 96%);
+    --grotto-day-2: hsl(165, 30%, 84%);
+    --grotto-day-3: hsl(165, 30%, 72%);
+    --grotto-night-0: hsl(190, 30%, 24%);
+    --grotto-night-1: hsl(190, 40%, 32%);
+    --grotto-night-2: hsl(190, 50%, 32%);
+    --grotto-night-3: hsl(190, 60%, 40%);
+    --grotto-accent-1: hsl(20, 64%, 56%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
 
-/*==== WATTREL ====*/
-.preset-wattrel {
-    --accent-h: 40;
-    --accent-s: 70%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(40, 0%, 90%);
-    --grotto-day-2: hsl(40, 0%, 76%);
-    --grotto-day-3: hsl(40, 0%, 64%);
-    --grotto-night-0: hsl(200, 0%, 12%);
-    --grotto-night-1: hsl(200, 0%, 24%);
-    --grotto-night-2: hsl(200, 0%, 32%);
-    --grotto-night-3: hsl(200, 0%, 40%);
-    --grotto-accent-1: hsl(40, 70%, 50%);
-}
-.theme-light.preset-wattrel {
-    --grotto-night-1: var(--grotto-night-0);
-}
 
-/*==== WHIMSICOTT ====*/
-body.preset-whimsicott {
-    --accent-h: 120;
-    --accent-s: 40%;
-    --accent-l: 46%;
-    --grotto-day-1: hsl(40, 30%, 82%);
-    --grotto-day-2: hsl(40, 30%, 76%);
-    --grotto-day-3: hsl(40, 30%, 70%);
-    --grotto-night-0: hsl(30, 40%, 16%);
-    --grotto-night-1: hsl(30, 40%, 24%);
-    --grotto-night-2: hsl(30, 40%, 32%);
-    --grotto-night-3: hsl(30, 40%, 40%);
-    --grotto-accent-1: hsl(120, 40%, 46%);
-    /*==== ADJUSTMENTS ====*/
-    --grotto-header-color-1: var(--grotto-day-1);
-    --grotto-header-color-2: var(--grotto-day-1);
-}
+
 
 

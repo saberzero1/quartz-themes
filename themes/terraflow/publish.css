@@ -1023,7 +1023,7 @@ body.theme-light {
   --highlight-bg-dark-color-rgb: 58, 82, 75 !important;
   --highlight-bg-light-color: #e0f2e9 !important;
   --highlight-bg-rgb: 188, 209, 202 !important;
-  --line-normal: 1.7 !important;
+  --line-normal: 1.6 !important;
   --line-relaxed: 2 !important;
   --line-tight: 1.5 !important;
   --link-opacity-hover: 0.18 !important;
@@ -1046,6 +1046,7 @@ body.theme-light {
   --s6: 24px !important;
   --s8: 32px !important;
   --scrollbar-track: rgba(245, 239, 224, 0.2) !important;
+  --setting-items-background: #e6e4da !important;
   --squircle-btn: 40% !important;
   --squircle-main: 60% !important;
   --squircle-soft: 80% !important;
@@ -1924,7 +1925,7 @@ body.theme-dark {
   --highlight-bg-dark-color-rgb: 74, 61, 46;
   --highlight-bg-light-color: #f2a882;
   --highlight-bg-rgb: 74, 61, 46;
-  --line-normal: 1.7;
+  --line-normal: 1.6;
   --line-relaxed: 2;
   --line-tight: 1.5;
   --link-opacity-hover: 0.18;
@@ -1947,6 +1948,7 @@ body.theme-dark {
   --s6: 24px;
   --s8: 32px;
   --scrollbar-track: rgba(40, 37, 32, 0.2);
+  --setting-items-background: #32302a;
   --squircle-btn: 40%;
   --squircle-main: 60%;
   --squircle-soft: 80%;
@@ -2241,30 +2243,30 @@ body del {
 }
 body .suggestion-item.is-selected {
   background-color: light-dark(
-    rgba(0, 0, 0, 0.067),
-    rgba(255, 255, 255, 0.067)
+    rgba(217, 119, 86, 0.15),
+    rgba(240, 145, 111, 0.2)
   );
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-start-start-radius: 16px;
+  border-start-end-radius: 16px;
+  border-end-start-radius: 16px;
+  border-end-end-radius: 16px;
+  color: light-dark(rgb(217, 119, 86), rgb(240, 145, 111));
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
   border: 0px light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-start-start-radius: 16px;
+  border-start-end-radius: 16px;
+  border-end-start-radius: 16px;
+  border-end-end-radius: 16px;
   color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
 }
 body .markdown-rendered hr {
@@ -2358,52 +2360,55 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: light-dark(rgb(245, 239, 224), rgb(58, 56, 50));
-  border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border: 1px solid
+    light-dark(rgba(217, 119, 86, 0.1), rgba(240, 145, 111, 0.15));
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 6px;
+  border-start-end-radius: 6px;
+  border-end-start-radius: 6px;
+  border-end-end-radius: 6px;
   color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
-  padding: 2.1px 4.2px;
+  padding: 2px 6px;
 }
 body .markdown-rendered pre > code {
-  background-color: light-dark(rgb(245, 239, 224), rgb(58, 56, 50));
-  border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  background-color: light-dark(rgb(223, 219, 209), rgb(58, 56, 50));
+  border: 2px solid
+    light-dark(rgba(217, 119, 86, 0.15), rgba(240, 145, 111, 0.3));
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
   overflow-x: auto;
-  padding: 12px 16px;
+  padding: 12px;
   white-space-collapse: preserve;
   text-wrap-mode: wrap;
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  background-color: light-dark(rgb(245, 239, 224), rgb(58, 56, 50));
-  border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  background-color: light-dark(rgb(223, 219, 209), rgb(58, 56, 50));
+  border: 2px solid
+    light-dark(rgba(217, 119, 86, 0.15), rgba(240, 145, 111, 0.3));
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
   overflow-x: auto;
-  padding: 12px 16px;
+  padding: 12px;
   white-space-collapse: preserve;
   text-wrap-mode: wrap;
 }
@@ -2484,14 +2489,14 @@ body .footnote-backref {
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
   border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-start-start-radius: 5px;
-  border-start-end-radius: 5px;
-  border-end-start-radius: 5px;
-  border-end-end-radius: 5px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-start-start-radius: 16px;
+  border-start-end-radius: 16px;
+  border-end-start-radius: 16px;
+  border-end-end-radius: 16px;
   color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
   font-family:
     ui-sans-serif,
@@ -2507,20 +2512,20 @@ body .site-body-left-column input.search-bar {
     sans-serif;
 }
 body .search-results {
-  background-color: light-dark(rgb(238, 236, 226), rgb(40, 37, 32));
-  border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-start-start-radius: 12px;
-  border-start-end-radius: 12px;
-  border-end-start-radius: 12px;
-  border-end-end-radius: 12px;
+  background-color: light-dark(rgb(238, 236, 226), rgb(50, 48, 42));
+  border: 1px solid
+    light-dark(rgba(217, 119, 86, 0.12), rgba(240, 145, 111, 0.2));
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-start-start-radius: 16px;
+  border-start-end-radius: 16px;
+  border-end-start-radius: 16px;
+  border-end-end-radius: 16px;
   box-shadow:
-    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
-    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+    rgba(0, 0, 0, 0.12) 0px 4px 12px 0px,
+    rgba(0, 0, 0, 0.5) 0px 12px 48px 0px;
 }
 body .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -2550,40 +2555,41 @@ body .search-results > * {
   user-select: text;
 }
 body div.search-results {
-  border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-start-start-radius: 12px;
-  border-start-end-radius: 12px;
-  border-end-start-radius: 12px;
-  border-end-end-radius: 12px;
+  border: 1px solid
+    light-dark(rgba(217, 119, 86, 0.12), rgba(240, 145, 111, 0.2));
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-start-start-radius: 16px;
+  border-start-end-radius: 16px;
+  border-end-start-radius: 16px;
+  border-end-end-radius: 16px;
 }
 body .search-results .suggestion-item {
   color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
 }
 body div.search-results .suggestion-item {
   border: 0px light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-start-start-radius: 16px;
+  border-start-end-radius: 16px;
+  border-end-start-radius: 16px;
+  border-end-end-radius: 16px;
 }
 body .search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+  color: light-dark(rgb(217, 119, 86), rgb(240, 145, 111));
   font-weight: 400;
   background-color: light-dark(
-    rgba(0, 0, 0, 0.067),
-    rgba(255, 255, 255, 0.067)
+    rgba(217, 119, 86, 0.15),
+    rgba(240, 145, 111, 0.2)
   );
 }
 body div.search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
+  color: light-dark(rgb(217, 119, 86), rgb(240, 145, 111));
 }
 body .published-container .markdown-rendered h1 {
   color: light-dark(
@@ -2830,12 +2836,12 @@ body
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: light-dark(
-    rgba(106, 151, 187, 0.12),
-    rgba(139, 181, 217, 0.12)
+    rgba(121, 141, 93, 0.12),
+    rgba(168, 196, 122, 0.12)
   );
   mix-blend-mode: lighten;
   border: 0px light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
-  border-left: 3px solid light-dark(rgb(106, 151, 187), rgb(139, 181, 217));
+  border-left: 3px solid light-dark(rgb(121, 141, 93), rgb(168, 196, 122));
   border-top-left-radius: 16px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -2851,17 +2857,17 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: color(srgb 0.755416 0.843973 0.919878);
+  stroke: color(srgb 0.771838 0.84527 0.651201);
 }
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: light-dark(
-    rgba(106, 151, 187, 0.12),
-    rgba(139, 181, 217, 0.12)
+    rgba(121, 141, 93, 0.12),
+    rgba(168, 196, 122, 0.12)
   );
   mix-blend-mode: lighten;
   border: 0px light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
-  border-left: 3px solid light-dark(rgb(106, 151, 187), rgb(139, 181, 217));
+  border-left: 3px solid light-dark(rgb(121, 141, 93), rgb(168, 196, 122));
   border-top-left-radius: 16px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -2877,7 +2883,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: color(srgb 0.755416 0.843973 0.919878);
+  stroke: color(srgb 0.771838 0.84527 0.651201);
 }
 body .callout[data-callout="success"] {
   --callout-color: inherit;
