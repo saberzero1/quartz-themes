@@ -6,7 +6,7 @@ default:
 
 [group('util')]
 format:
-  bun prettier . --write --cache --ignore-path "./.prettiercompileignore"
+  bun prettier . --write --check --cache --ignore-path "./.prettiercompileignore"
 
 alias lint := format
 
@@ -24,7 +24,7 @@ build:
 
 [group('extract')]
 extract: build
-  bun --expose-gc --max-old-space-size=12288 ./runner/scripts/extract.js -- --waitforTimeout=300000
+  node --expose-gc --max-old-space-size=12288 ./runner/scripts/extract.js -- --waitforTimeout=300000
 
 [group('extract')]
 compile:
