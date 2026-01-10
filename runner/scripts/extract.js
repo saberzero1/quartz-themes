@@ -7,7 +7,14 @@ import {
   dark as darkDefaultStyles,
   light as lightDefaultStyles,
 } from "./default-styles.js";
-import { writeFileSync, readFileSync, mkdirSync, readdirSync } from "fs";
+import {
+  writeFileSync,
+  readFileSync,
+  mkdirSync,
+  readdirSync,
+  existsSync,
+} from "fs";
+import { createHash } from "crypto";
 import getManifestCollection from "../../extensions/manifest.mjs";
 import getThemeCollection from "../../extensions/themelist.mjs";
 import {
@@ -79,7 +86,256 @@ const themeCollection = testingMode
       m.name.toLowerCase().startsWith(testingTheme.toLowerCase()),
     )
   : getThemeCollection();
-// console.log(themeCollection);
+
+const HASH_CACHE_FILE = "./runner/results/.theme-hashes.json";
+const EXTRACTION_LOG_FILE = "./runner/results/.extraction-log.json";
+const FORCE_EXTRACTION = process.env.FORCE_EXTRACTION === "true";
+
+function getThemeHash(themeName) {
+  const themePath = `./runner/vault/.obsidian/themes/${themeName}.css`;
+  if (!existsSync(themePath)) {
+    const jsonPath = `./runner/vault/.obsidian/themes/${themeName}.json`;
+    if (existsSync(jsonPath)) {
+      const content = readFileSync(jsonPath, "utf-8");
+      return createHash("md5").update(content).digest("hex");
+    }
+    return null;
+  }
+  const content = readFileSync(themePath, "utf-8");
+  return createHash("md5").update(content).digest("hex");
+}
+
+function loadHashCache() {
+  if (existsSync(HASH_CACHE_FILE)) {
+    try {
+      return JSON.parse(readFileSync(HASH_CACHE_FILE, "utf-8"));
+    } catch {
+      return {};
+    }
+  }
+  return {};
+}
+
+function saveHashCache(cache) {
+  mkdirSync("./runner/results", { recursive: true });
+  writeFileSync(HASH_CACHE_FILE, JSON.stringify(cache, null, 2));
+}
+
+function shouldSkipTheme(themeName, hashCache) {
+  if (FORCE_EXTRACTION) return false;
+
+  const currentHash = getThemeHash(themeName);
+  if (!currentHash) return false;
+
+  const cachedHash = hashCache[themeName];
+  if (cachedHash === currentHash) {
+    const resultDir = `./runner/results/${sanitize(themeName)}`;
+    if (existsSync(resultDir)) {
+      const hasResults =
+        existsSync(`${resultDir}/dark.json`) ||
+        existsSync(`${resultDir}/light.json`);
+      if (hasResults) {
+        console.log(`Skipping ${themeName} (unchanged since last extraction)`);
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+function logExtractionError(themeName, error, context = {}) {
+  const logEntry = {
+    timestamp: new Date().toISOString(),
+    theme: themeName,
+    error: error.message || String(error),
+    stack: error.stack,
+    ...context,
+  };
+
+  let log = [];
+  if (existsSync(EXTRACTION_LOG_FILE)) {
+    try {
+      log = JSON.parse(readFileSync(EXTRACTION_LOG_FILE, "utf-8"));
+    } catch {
+      log = [];
+    }
+  }
+
+  log.push(logEntry);
+  if (log.length > 1000) {
+    log = log.slice(-500);
+  }
+
+  writeFileSync(EXTRACTION_LOG_FILE, JSON.stringify(log, null, 2));
+}
+
+function validateExtractionResult(result, themeName, mode) {
+  const issues = [];
+
+  if (!result || Object.keys(result).length === 0) {
+    issues.push("Empty extraction result");
+  }
+
+  const requiredSelectors = ["html", "body", "p", "h1", "a"];
+  for (const selector of requiredSelectors) {
+    const hasSelector = Object.keys(result).some(
+      (key) =>
+        key === selector ||
+        key.startsWith(`${selector}.`) ||
+        key.startsWith(`${selector}[`),
+    );
+    if (!hasSelector) {
+      issues.push(`Missing expected selector: ${selector}`);
+    }
+  }
+
+  const malformedValues = [];
+  for (const [selector, props] of Object.entries(result)) {
+    if (!props || typeof props !== "object") continue;
+    for (const [prop, value] of Object.entries(props)) {
+      if (typeof value === "string") {
+        if (
+          value.includes("hsl(") &&
+          !value.includes(",") &&
+          !value.includes(" ")
+        ) {
+          malformedValues.push({ selector, prop, value });
+        }
+        if (value === "undefined" || value === "null") {
+          malformedValues.push({ selector, prop, value });
+        }
+      }
+    }
+  }
+
+  if (malformedValues.length > 0) {
+    issues.push(
+      `Found ${malformedValues.length} potentially malformed CSS values`,
+    );
+  }
+
+  if (issues.length > 0) {
+    console.warn(
+      `Validation warnings for ${themeName} (${mode}):`,
+      issues.join(", "),
+    );
+    logExtractionError(themeName, new Error(issues.join("; ")), {
+      mode,
+      type: "validation",
+      malformedCount: malformedValues.length,
+    });
+  }
+
+  return issues.length === 0;
+}
+
+async function extractCssVariables(browser) {
+  return await browser.executeObsidian(async ({ app }) => {
+    await sleep(300);
+
+    const cssVariables = {};
+    const variableReferences = {};
+
+    const rootElement = document.documentElement;
+    const bodyElement = document.body;
+    const rootStyles = window.getComputedStyle(rootElement);
+    const bodyStyles = window.getComputedStyle(bodyElement);
+
+    const allStyleSheets = Array.from(document.styleSheets);
+    const variableDefinitions = new Set();
+
+    for (const sheet of allStyleSheets) {
+      try {
+        const rules = sheet.cssRules || sheet.rules;
+        if (!rules) continue;
+
+        for (const rule of rules) {
+          if (rule.style) {
+            for (let i = 0; i < rule.style.length; i++) {
+              const prop = rule.style[i];
+              if (prop.startsWith("--")) {
+                variableDefinitions.add(prop);
+              }
+              const value = rule.style.getPropertyValue(prop);
+              if (value && value.includes("var(--")) {
+                const matches = value.match(/var\(--[\w-]+/g);
+                if (matches) {
+                  for (const match of matches) {
+                    const varName = match.replace("var(", "");
+                    if (!variableReferences[varName]) {
+                      variableReferences[varName] = [];
+                    }
+                    variableReferences[varName].push(prop);
+                  }
+                }
+              }
+            }
+          }
+        }
+      } catch (e) {
+        continue;
+      }
+    }
+
+    const importantVariables = [
+      "--background-primary",
+      "--background-secondary",
+      "--background-modifier-border",
+      "--text-normal",
+      "--text-muted",
+      "--text-faint",
+      "--text-accent",
+      "--text-accent-hover",
+      "--interactive-accent",
+      "--interactive-accent-hover",
+      "--link-color",
+      "--link-color-hover",
+      "--link-external-color",
+      "--tag-color",
+      "--tag-background",
+      "--callout-color",
+      "--code-background",
+      "--code-normal",
+      "--inline-code-color",
+      "--blockquote-border-color",
+      "--table-border-color",
+      "--table-header-background",
+      "--h1-color",
+      "--h2-color",
+      "--h3-color",
+      "--h4-color",
+      "--h5-color",
+      "--h6-color",
+      "--bold-color",
+      "--italic-color",
+      "--highlight-color",
+    ];
+
+    for (const varName of importantVariables) {
+      let value = rootStyles.getPropertyValue(varName).trim();
+      if (!value) {
+        value = bodyStyles.getPropertyValue(varName).trim();
+      }
+      if (value) {
+        cssVariables[varName] = value;
+      }
+    }
+
+    for (const varName of variableDefinitions) {
+      if (!cssVariables[varName]) {
+        let value = rootStyles.getPropertyValue(varName).trim();
+        if (!value) {
+          value = bodyStyles.getPropertyValue(varName).trim();
+        }
+        if (value && value.length < 200) {
+          cssVariables[varName] = value;
+        }
+      }
+    }
+
+    return { variables: cssVariables, references: variableReferences };
+  });
+}
 
 function printMemoryUsage() {
   const memoryUsageInMB = memoryUsage().heapUsed / 1024 / 1024;
@@ -142,12 +398,36 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
               e.tagName.toLowerCase(),
             )
           ) {
-            const psuedoRegular = [null, "::before", "::after"];
-            const psuedoList = [null, "::before", "::after", "::marker"];
+            const psuedoRegular = [
+              null,
+              "::before",
+              "::after",
+              "::selection",
+              "::first-letter",
+              "::first-line",
+            ];
+            const psuedoList = [
+              null,
+              "::before",
+              "::after",
+              "::marker",
+              "::selection",
+            ];
+            const psuedoInput = [
+              null,
+              "::before",
+              "::after",
+              "::placeholder",
+              "::selection",
+            ];
             const elemList = [];
-            for (const psuedoElement of e.tagName === "LI"
-              ? psuedoList
-              : psuedoRegular) {
+            const pseudoElements =
+              e.tagName === "LI"
+                ? psuedoList
+                : e.tagName === "INPUT" || e.tagName === "TEXTAREA"
+                  ? psuedoInput
+                  : psuedoRegular;
+            for (const psuedoElement of pseudoElements) {
               const computedStyle =
                 e.tagName.toLowerCase() === "body" ||
                 e.tagName.toLowerCase() === "html"
@@ -508,10 +788,11 @@ async function getStylesFromObsidian(
         .then(() => serializeWithStyles(darkDefaultStyles, browser));
       darkResult.extras = { ...darkResult.extras, ...result };
     }
-    // await sleep(500);
-    // await sleep(1);
+    const darkVariables = await ensureLayoutReady(browser).then(() =>
+      extractCssVariables(browser),
+    );
+
     const darkFileName = `./runner/results/${folder}/dark.json`;
-    // Flatten the result object
     let darkResultObject = {};
     for (const [key, value] of Object.entries(darkResult)) {
       if (typeof value === "object") {
@@ -520,7 +801,6 @@ async function getStylesFromObsidian(
         }
       }
     }
-    // Sort the keys alphabetically
     let sortedKeys = Object.keys(darkResultObject).sort();
     let sortedDarkResultObject = {};
     for (const key of sortedKeys) {
@@ -528,11 +808,23 @@ async function getStylesFromObsidian(
     }
     let resultString = JSON.stringify(sortedDarkResultObject, null, 2);
     writeFileSync(darkFileName, resultString);
+    validateExtractionResult(sortedDarkResultObject, theme, "dark");
     console.log(`Dark styles saved to ${darkFileName}`);
-    // unset variables to allow garbage collection
+
+    if (
+      darkVariables &&
+      darkVariables.variables &&
+      Object.keys(darkVariables.variables).length > 0
+    ) {
+      const darkVariablesFileName = `./runner/results/${folder}/dark-variables.json`;
+      writeFileSync(
+        darkVariablesFileName,
+        JSON.stringify(darkVariables, null, 2),
+      );
+      console.log(`Dark CSS variables saved to ${darkVariablesFileName}`);
+    }
+
     printMemoryUsage();
-    // await sleep(500);
-    // await sleep(1);
   }
   if (isLightTheme(theme)) {
     const lightPage = obsidianPage;
@@ -719,11 +1011,11 @@ async function getStylesFromObsidian(
       lightResult.extras = { ...lightResult.extras, ...result };
     }
 
-    // await sleep(500);
-    // await sleep(1);
-    // Save the light result to a file
+    const lightVariables = await ensureLayoutReady(browser).then(() =>
+      extractCssVariables(browser),
+    );
+
     const lightFileName = `./runner/results/${folder}/light.json`;
-    // Flatten the result object
     let lightResultObject = {};
     for (const [key, value] of Object.entries(lightResult)) {
       if (typeof value === "object") {
@@ -732,7 +1024,6 @@ async function getStylesFromObsidian(
         }
       }
     }
-    // Sort the keys alphabetically
     let sortedKeys = Object.keys(lightResultObject).sort();
     let sortedLightResultObject = {};
     for (const key of sortedKeys) {
@@ -740,8 +1031,22 @@ async function getStylesFromObsidian(
     }
     let lightResultString = JSON.stringify(sortedLightResultObject, null, 2);
     writeFileSync(lightFileName, lightResultString);
+    validateExtractionResult(sortedLightResultObject, theme, "light");
     console.log(`Light styles saved to ${lightFileName}`);
-    // unset variables to allow garbage collection
+
+    if (
+      lightVariables &&
+      lightVariables.variables &&
+      Object.keys(lightVariables.variables).length > 0
+    ) {
+      const lightVariablesFileName = `./runner/results/${folder}/light-variables.json`;
+      writeFileSync(
+        lightVariablesFileName,
+        JSON.stringify(lightVariables, null, 2),
+      );
+      console.log(`Light CSS variables saved to ${lightVariablesFileName}`);
+    }
+
     printMemoryUsage();
   }
 }
@@ -811,19 +1116,52 @@ await ensureLayoutReady(browser)
   .then(() => browser.reloadObsidian())
   .then(() => ensureLayoutReady(browser));
 
+const hashCache = loadHashCache();
+let processedCount = 0;
+let skippedCount = 0;
+
 for (const manifest of manifestTargets) {
-  console.log(`Processing target: ${manifest.name}`);
-  const preset = JSON.stringify(manifest.style_settings ?? {});
-  await getStylesFromObsidian(
-    manifest,
-    manifestCollection,
-    preset,
-    darkDefaultStyles,
-    lightDefaultStyles,
-    browser,
-    obsidianPage,
+  const [themeName] = manifest.name.split(".");
+
+  if (shouldSkipTheme(themeName, hashCache)) {
+    skippedCount++;
+    continue;
+  }
+
+  console.log(
+    `Processing target: ${manifest.name} (${processedCount + 1}/${manifestTargets.length - skippedCount})`,
   );
+  const preset = JSON.stringify(manifest.style_settings ?? {});
+
+  try {
+    await getStylesFromObsidian(
+      manifest,
+      manifestCollection,
+      preset,
+      darkDefaultStyles,
+      lightDefaultStyles,
+      browser,
+      obsidianPage,
+    );
+
+    const currentHash = getThemeHash(themeName);
+    if (currentHash) {
+      hashCache[themeName] = currentHash;
+    }
+    processedCount++;
+  } catch (error) {
+    console.error(
+      `Failed to extract styles for ${manifest.name}:`,
+      error.message,
+    );
+    logExtractionError(themeName, error, { manifest: manifest.name });
+  }
 }
+
+saveHashCache(hashCache);
+console.log(
+  `Extraction complete. Processed: ${processedCount}, Skipped: ${skippedCount}`,
+);
 
 enableSnippets([]);
 
