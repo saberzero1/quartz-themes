@@ -2,7 +2,6 @@ import fs from "fs";
 import { cleanup, applyRuleToString, ensureDirectoryExists } from "./util.mjs";
 import { combineThemeVariables, getCombinedThemeVariables, combineIdenticalSelectors, removeEmptyRules, splitCombinedRules } from "./postcss.mjs";
 import { usedRules } from "./../config.mjs";
-import * as prettier from "prettier"
 
 export function extractCSS(cssAtomicString) {
         let extractResult = "";
@@ -54,53 +53,7 @@ export async function writePrettier(file, content, encoding = "utf8", clean = tr
   fs.writeFileSync(file, content, encoding);
 }
 
-/**
- * Formats CSS using Prettier.
- *
- * @param {string} css - The CSS string to format.
- * @return {string} The formatted CSS string.
- * @throws {Error} If Prettier fails to format the CSS.
- */
-export async function prettierCSS(css) {
-  try {
-    return await prettier.format(css, {
-      parser: "css",
-      printWidth: 80,
-      tabWidth: 2,
-      useTabs: false,
-      semi: false,
-      trailingComma: "all",
-      quoteProps: "as-needed",
-    });
-  } catch (error) {
-    console.error("Error formatting CSS with Prettier:", error);
-    return css; // Return unformatted CSS if Prettier fails
-  }
-}
 
-/**
- * Formats SCSS using Prettier.
- *
- * @param {string} scss - The SCSS string to format.
- * @return {string} The formatted SCSS string.
- * @throws {Error} If Prettier fails to format the SCSS.
- */
-export async function prettierSCSS(scss) {
-  try {
-    return await prettier.format(scss, {
-      parser: "scss",
-      printWidth: 80,
-      tabWidth: 2,
-      useTabs: false,
-      semi: false,
-      trailingComma: "all",
-      quoteProps: "as-needed",
-    });
-  } catch (error) {
-    console.error("Error formatting SCSS with Prettier:", error);
-    return scss; // Return unformatted SCSS if Prettier fails
-  }
-}
 
 /**
  * Splits combined CSS rules into individual rules.
