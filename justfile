@@ -1,124 +1,57 @@
-# Change this if you want to use a different folder name or if you have renamed the folder
-quartz-folder-name := 'quartz'
-quartz-path := path_exists(clean(join(justfile_directory(), '..', quartz-folder-name, 'quartz', 'styles')))
-
-error-quartz-not-found := 'Quartz not found. Please make sure you are in the right folder or set the correct folder name in the justfile\n\nQuartz folder is currently set to:'
-quartz-path-example := '\nThe Folder structure should look like this:\n\nsomeFolder/\n  quartz/ (your quartz repository)\n    quartz/\n      styles/\n  quartz-themes/ (this repository)'
-test-theme-path := ''
-
 set quiet
 
 [doc('List all available commands'), private]
 default:
   @just --list
 
-[private]
-alias c := check
-[private]
-alias t := theme
-[private]
-alias u := update
-
-[private]
-verify:
-  prettier . --check --cache
-
-[private]
-verify-ci:
-  prettier . --check --cache --ignore-path "./.prettiercompileignore"
-
-[private]
-build:
-  node convert.js
-
-[private]
-atomize:
-  node convert.js ATOMIZE
-  prettier . --write --cache
-  prettier . --write --cache
-
-[private]
-force-atomize:
-  rm converted_app.css || true
-  rm converted_app_extracted.css || true
-  node convert.js ATOMIZE
-  prettier . --write --cache
-  prettier . --write --cache
-
-[private]
-fonts:
-  node extract-font-list.js
-
-[private]
-clean-fonts:
-  rm -rf obsidian-fonts
-
-[private]
+[group('util')]
 format:
-  prettier . --write --cache --check --ignore-path "./.prettiercompileignore"
-  # prettier . --write --cache --check --ignore-path "./.prettiercompileignore"
+  bun prettier . --write --cache --ignore-path "./.prettiercompileignore"
 
-[private]
-format-all:
-  prettier . --check --cache --write
-  prettier . --check --cache --write
+alias lint := format
 
-[private]
-force-format:
-  prettier . --check --write
-  prettier . --check --write --cache
+[group('util')]
+verify:
+  bun prettier . --check --cache --ignore-path "./.prettiercompileignore"
 
-[private]
-lint: format
+alias verify-ci := verify
+alias check := verify
 
-[private]
-compile-all: build fonts format clean-fonts
+[group('extract')]
+build:
+  tsc -noEmit -skipLibCheck
+  bun esbuild.config.mjs production
 
-[private]
-compile: build format
+[group('extract')]
+extract: build
+  bun --expose-gc --max-old-space-size=12288 ./runner/scripts/extract.js -- --waitforTimeout=300000
 
-[private]
-test-compile:
-  node convert.js
-  prettier . --write --cache --check --ignore-path "./.prettiertestignore"
-  prettier . --write --cache --check --ignore-path "./.prettiertestignore"
+[group('extract')]
+compile:
+  bun ./runner/scripts/compile.js
 
-[private]
-compile-single $theme:
-  node convert.js -- $theme
+[group('extract')]
+convert:
+  bun ./convert.js
 
-json-compile:
-  node main.js
+[group('extract')]
+extract-full: build compile convert format
 
-json-compile-full:
-  node main.js --full
+[group('database')]
+ingest:
+  bun ./runner/scripts/ingest.js
 
-json-compile-full-regenerate:
-  node main.js --full --regenerate-css
+[group('database')]
+prepare:
+  bun ./runner/scripts/prep.js
 
-json-compile-single:
-  node main.js --full --single
+[group('database')]
+drop:
+  rm ./styles.db || true
+  rm ./styles.db-shm || true
+  rm ./styles.db-wal || true
 
-json-compile-single-regenerate:
-  node main.js --full --regenerate-css --single
+[group('database')]
+rebuild: drop ingest
 
-[doc('Update themes')]
-update:
-  git pull
 
-[doc('Check for updates')]
-check:
-  git fetch
-  git status
-
-[doc('Set theme')]
-theme +name:
-  #!/usr/bin/env sh
-  if ! '{{quartz-path}}'; then
-  echo '{{quartz-path}}'
-  echo '{{error-quartz-not-found}}' '{{quartz-folder-name}}'
-  echo '{{quartz-path-example}}'
-  exit 1
-  fi
-  echo 'Setting theme "{{name}}"'
-  node set-theme.js "{{replace(trim(lowercase(name)), ' ', '-')}}" "{{quartz-folder-name}}"
