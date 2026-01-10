@@ -85,29 +85,7 @@ export function getCurrentFolder() {
   return process.cwd()
 }
 
-/**
- * Retrieves the variations of a theme from the themes configuration.
- *
- * @param {string} theme - The name of the theme.
- * @returns {Object[]} An array of variations for the specified theme.
- */
-export function getVariationsFromTheme(theme) {
-  return themes[sanitizeFilenamePreservingEmojis(theme)]["variations"]
-}
 
-/**
- * Retrieves the names of variations for a specified theme.
- *
- * @param {string} theme - The name of the theme.
- * @returns {string[]} An array of variation names for the specified theme.
- */
-export function getVariationNamesFromTheme(theme) {
-  // Get the variations for the specified theme
-  const variations = getVariationsFromTheme(theme)
-
-  // Map the variations to their names
-  return variations.map((variation) => variation.name)
-}
 
 /**
  * Retrieves the value associated with a given key in a dictionary.
@@ -194,21 +172,7 @@ export function clearDirectories(dirPath) {
   }
 }
 
-/**
- * Recursively walks through a directory and yields all file paths.
- * This function uses async iteration to handle large directories efficiently.
- *
- * @param {string} dir - The path of the directory to walk through.
- * @returns {AsyncGenerator<string>} An async generator that yields file paths.
- * @throws {Error} If the directory cannot be accessed or read.
- */
-export async function* walk(dir) {
-    for await (const d of await fs.promises.opendir(dir)) {
-        const entry = path.join(dir, d.name);
-        if (d.isDirectory()) yield* walk(entry);
-        else if (d.isFile()) yield entry;
-    }
-}
+
 
 /**
  * Removes all contents of a specified directory.
@@ -309,28 +273,7 @@ export function replaceInString(source, targetString, replacementString) {
   }
 }
 
-/**
- * Finds all occurrences of a pattern in a file using a specified regex string.
- *
- * @param {string} filePath - The path to the file to search.
- * @param {RegExp} regexString - The regex pattern string to match.
- * @returns {string} An array of strings containing all matches found in the file.
- * @throws {Error} If the file cannot be read or if the regex pattern is invalid.
- */
-export function findAllMatchesInFile(filePath, regexString) {
-  try {
-    // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
 
-    // Use match to find all matches in the file content
-    const matches = fileContent.matchAll(regexString)
-
-    // Return the matches or an empty array if no matches are found
-    return matches !== undefined && matches.length > 0 ? [...matches][0] : []
-  } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
-  }
-}
 
 /**
  * Checks for dark mode
@@ -394,29 +337,7 @@ export function getFonts(theme) {
   return result.length > 0 ? result : defaultFonts
 }
 
-/**
- * Sets specified callouts styling
- *
- * @param {string} theme theme name
- */
-export function setCallout(theme) {
-  const callout =
-    themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"] !== ""
-      ? themes[sanitizeFilenamePreservingEmojis(theme)]["callouts"]
-      : "empty"
 
-  if (callout !== "") {
-    fs.copyFileSync(
-      `./extras/callouts/${callout}.scss`,
-      `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/overrides.scss`,
-    )
-  }
-
-  fs.copyFileSync(
-    `./extras/callouts/default.scss`,
-    `./themes/${sanitizeFilenamePreservingEmojis(theme)}/callouts/default.scss`,
-  )
-}
 
 /**
  * Get the current theme name
@@ -428,32 +349,7 @@ export function getTheme(dict) {
   return sanitizeFilenamePreservingEmojis(getValueFromDictionary(dict, "name"))
 }
 
-/**
- * Fetch CSS rule and replace in the specified file.
- * @param {string} filePath - The path to the file where the rule should be replaced.
- * @param {string} ruleSelector - The CSS selector for the rule to be replaced.
- * @param {string} targetText - The text to be replaced in the file.
- * @param {string} inputCSS - The CSS string containing the rule declarations.
- * @param {string} [ruleToExtract] - Optional specific rule to extract from the CSS.
- * @throws {Error} If the file cannot be read or written.
- */
-export function applyRuleToFile(filePath, ruleSelector, targetText, inputCSS, ruleToExtract = "") {
-  try {
-    // Find the rule declarations for the specified selector
-    const ruleDeclarations =
-      ruleToExtract === ""
-        ? getRuleDeclarations(inputCSS, ruleSelector)
-        : getRuleDeclarations(inputCSS, ruleSelector, ruleToExtract)
-    if (ruleDeclarations) {
-      // Apply the rule declarations to the specified file
-      replaceInFile(filePath, targetText, `${ruleDeclarations}\n\n`)
-    } else {
-      throw new Error(`No declarations found for selector: ${ruleSelector}`)
-    }
-  } catch (error) {
-    throw new Error(`Unable to apply rule to file: ${error.message}`)
-  }
-}
+
 
 /**
  * Fetch CSS rule and replace in the specified file.
@@ -480,19 +376,7 @@ export function applyRuleToString(sourceString, ruleSelector, targetText, inputC
   }
 }
 
-/**
- * Get all occurrences of a CSS rule in a given CSS string.
- *
- * @param {string} inputCSS - The CSS string to search for the rule.
- * @param {string} ruleSelector - The CSS selector for the rule to be extracted.
- * @param {string} [ruleToExtract] - Optional specific rule to extract from the CSS.
- * @returns {string|null} A string containing all declarations for the specified rule selector.
- */
-export function getRuleOccurences(inputCSS, ruleSelector, ruleToExtract = "") {
-  return ruleToExtract === ""
-    ? getRuleDeclarations(inputCSS, ruleSelector)
-    : getRuleDeclarations(inputCSS, ruleSelector, ruleToExtract)
-}
+
 
 /**
  * Get all files under a directory and return them as an array of strings.

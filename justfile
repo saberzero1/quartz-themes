@@ -28,7 +28,7 @@ extract: build
 
 [group('extract')]
 compile:
-  bun ./runner/scripts/compile.js
+  node ./runner/scripts/compile.js
 
 [group('extract')]
 convert:
@@ -39,7 +39,7 @@ extract-full: build compile convert format
 
 [group('database')]
 ingest:
-  bun ./runner/scripts/ingest.js
+  node ./runner/scripts/ingest.js
 
 [group('database')]
 prepare:
