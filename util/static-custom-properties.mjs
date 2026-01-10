@@ -1,5 +1,5 @@
-import colors from "./color-convert.mjs"
 import calc from "postcss-calc"
+import postcssColorConverter from "postcss-color-converter"
 import postcssCustomProperties from "postcss-custom-properties"
 import postcss from "postcss"
 import postcssRelativeColorSyntax from "@csstools/postcss-relative-color-syntax"
@@ -93,7 +93,10 @@ export default function generateStaticCSS(cssString, themeName) {
   //if (skipColors.includes(themeName)) return result
 
   try {
-    cssString = colors(cssString)
+    cssString = postcss()
+      .use(postcssColorConverter({ outputColorFormat: 'hex' }))
+      .process(cssString)
+      .css
   } catch(_e) {
     return result
   }
