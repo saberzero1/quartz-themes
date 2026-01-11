@@ -1,7 +1,6 @@
 {
     "name": "Elegance",
-    "version": "0.1.1",
-    "minAppVersion": "1.0.1",
-    "author": "Victologo",
-    "authorUrl": "https://github.com/Victologo/elegance-theme"
-    }
+    "version": "2.0.0",
+    "minAppVersion": "0.16.0",
+    "author": "Victologo"
+}

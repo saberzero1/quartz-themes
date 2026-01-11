@@ -793,12 +793,6 @@ settings:
     type: class-toggle
     default: false
 
-  - id: floating-mobile-nav
-    title: floating mobile navigation
-    description: make the mobile navigation bar and the toolbar float above the content.
-    type: class-toggle
-    default: false
-
   - id: infobox-callouts-heading
     title: infobox callouts
     type: heading
@@ -1145,6 +1139,7 @@ body:not(.is-mobile) .horizontal-main-container {
   --scrollbar-bg: #ffffff10;
   --code-background: var(--background-default);
   --background-modifier-hover: color-mix(in srgb, var(--background-primary) 70%, white 30%);
+  --tab-background-active: var(--color-accent);
 }
 
 .theme-light {
@@ -1187,6 +1182,7 @@ body:not(.is-mobile) .horizontal-main-container {
   --interactive-accent-hover: #a5aab640;
   --code-background: var(--background-default);
   --background-modifier-hover: color-mix(in srgb, var(--background-primary) 70%, black 30%);
+  --tab-background-active: var(--color-accent);
 }
 
 .theme-light.custom-color-accent-light-toggle {
@@ -1580,7 +1576,7 @@ body:not(.is-mobile) .workspace {
   margin-right: var(--cards-gap);
 }
 
-.workspace-tab-container {
+body:not(.is-phone) .workspace-tab-container {
   position: initial;
   display: block;
   width: 100%;
@@ -1719,6 +1715,7 @@ html body:not(.is-mobile) .mod-root .workspace-tab-header-container-inner {
 
 .toggle-tab-animations .workspace-tab-header {
   max-width: 100%;
+  ;
   display: flex;
   flex-grow: 1;
   border-radius: var(--tab-radius);
@@ -1733,7 +1730,7 @@ html body:not(.is-mobile) .mod-root .workspace-tab-header-container-inner {
   align-items: center;
 }
 
-.toggle-tab-animations .workspace-tab-header.is-active.mod-active {
+body:not(.is-mobile).toggle-tab-animations .workspace-tab-header.is-active.mod-active {
   flex-grow: 2 !important;
   max-width: 250px;
   background-color: var(--color-accent);
@@ -1741,7 +1738,7 @@ html body:not(.is-mobile) .mod-root .workspace-tab-header-container-inner {
   border: none;
 }
 
-.workspace-tab-header.is-active.mod-active {
+body:not(.is-mobile) .workspace-tab-header.is-active.mod-active {
   flex-grow: 2 !important;
   max-width: 250px;
   background-color: var(--color-accent);
@@ -2080,6 +2077,10 @@ body:not(.empty-state-off).is-tablet .empty-state-action:first-child {
   border-radius: var(--modal-radius);
 }
 
+.prompt {
+  background: color-mix(in srgb, var(--prompt-background) var(--blur-translucency-m), transparent);
+}
+
 body:not(.is-phone) {
   --menu-padding: 4px;
 }
@@ -2111,7 +2112,8 @@ body:not(.is-mobile) .menu .menu-separator {
 }
 
 /* Inspired by and adapted from the Cupertino Theme MIT License Copyright (c) 2025 aaaaalexis https://github.com/aaaaalexis/obsidian-cupertino */
-
+/* broken by 1.11.03 update */
+/*
 body:not(.is-phone) .modal.mod-sidebar-layout .installed-plugins-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -2123,7 +2125,7 @@ body.is-tablet .modal.mod-sidebar-layout .installed-plugins-container {
   gap: calc(var(--cards-gap) / 2);
 }
 
-body:not(.is-phone) .modal.mod-sidebar-layout .installed-plugins-container .setting-item {
+body:not(.is-phone) .modal.mod-sidebar-layout .installed-plugins-container .setting-item .setting-items {
   display: flex;
   flex-direction: column;
   border: 0.5px solid var(--background-modifier-border);
@@ -2132,14 +2134,22 @@ body:not(.is-phone) .modal.mod-sidebar-layout .installed-plugins-container .sett
   padding: 16px;
   margin: 0 !important;
 }
-
+*/
 /* ========================================================================== */
 /* --- Mobile and Tablet Specific Styles --- */
 /* ========================================================================== */
 
+.is-mobile.theme-dark,
+.is-mobile.theme-light {
+  --mobile-sidebar-background: var(--background-default);
+}
+
+body.is-tablet .workspace-tab-container {
+  border-radius: var(--mobile-card-radius);
+}
+
 body.is-mobile .workspace-tab-container {
   background-color: var(--card-bg) !important;
-  border-radius: var(--mobile-card-radius);
 }
 
 body.is-mobile .workspace-drawer {
@@ -2150,17 +2160,49 @@ body.is-mobile .workspace-drawer-inner {
   background-color: var(--color-panel);
   border: 1px solid var(--divider-color);
   border-radius: var(--mobile-card-radius);
+}
+
+body.is-tablet .workspace-drawer-inner {
   padding-top: 10px;
+}
+
+.is-phone .modal.mod-settings .vertical-tab-nav-item-chevron,
+.is-phone .modal.mod-settings .vertical-tab-nav-item-title {
+  border-bottom: none;
+}
+
+body.is-mobile .nav-buttons-container {
+  background-color: transparent;
+  border: none;
+}
+
+body.is-mobile .workspace-tab-header {
+  background-color: transparent;
+}
+
+body.is-phone .nav-buttons-container:after {
+  background: linear-gradient(to top, var(--color-panel), transparent);
 }
 
 body.is-mobile .workspace-drawer-active-tab-container {
   background-color: transparent;
 }
 
-body.is-tablet .workspace-drawer:not(.is-pinned) {
-  margin: 59px 16px 10px;
+body.is-tablet .workspace-drawer:not(.is-pinned).mod-left {
+  margin: 40px 16px 0px 9px;
   padding-top: 0px;
   border-radius: var(--card-radius);
+}
+
+body.is-tablet .workspace-drawer:not(.is-pinned).mod-right {
+  margin: 40px 9px 0px 16px;
+  padding-top: 0px;
+  border-radius: var(--card-radius);
+}
+
+
+body.is-tablet .workspace-drawer.is-pinned {
+  margin-top: 20px
 }
 
 body.is-mobile .workspace-sidedock-vault-profile {
@@ -2201,17 +2243,13 @@ body.is-mobile .menu-item {
     overflow-x: hidden !important;
   }
 
-  body.is-mobile .workspace {
-    margin-right: calc(var(--cards-gap) / 2) !important;
-    margin-left: calc(var(--cards-gap) / 2);
-  }
-
-  body.is-mobile.floating-mobile-nav .workspace {
-    padding-bottom: calc(var(--cards-gap) / 2);
-  }
-
   body.is-mobile .workspace-drawer {
-    padding-bottom: calc(var(--cards-gap) / 2);
+    margin-bottom: calc(var(--cards-gap) / 2);
+    margin-top: calc(var(--cards-gap) / 2);
+  }
+
+  body.is-mobile .workspace-drawer.mod-left {
+    margin-left: calc(var(--cards-gap) / 2);
   }
 }
 
@@ -2249,7 +2287,7 @@ body.is-mobile .menu-item {
   }
 
   body.is-mobile .workspace-drawer.is-pinned {
-    padding-bottom: calc(var(--cards-gap) / 2);
+    padding-bottom: calc(var(--cards-gap) * 2);
   }
 
 }
@@ -2275,7 +2313,6 @@ body.obsidian-app.fn-whitespace-stop-collapsing .nav-files-container .collapse-i
 
 body.is-phone .vertical-tab-header .vertical-tab-header-group .vertical-tab-header-group-items {
   border: 1px solid var(--divider-color);
-  border-radius: calc(var(--modal-radius) * 2);
   background-color: var(--background-default);
   overflow: hidden;
 }
@@ -2330,177 +2367,19 @@ body.is-phone .suggestion-container .menu-separator {
   margin: 6px 0px;
 }
 
-/* Floating mobile nav */
-@starting-style {
-
-  body.is-phone.floating-mobile-nav .mobile-navbar,
-  body.is-phone.floating-mobile-nav .mod-root .view-content::before,
-  body.is-phone.floating-mobile-nav .mod-root .workspace-leaf-content .view-actions button:nth-last-child(2) {
-    opacity: 0;
-  }
-}
-
-body.is-mobile .mobile-navbar {
-  padding-bottom: calc(var(--cards-gap) / 2);
-}
-
-body.is-phone.hide-cursor.floating-mobile-nav .mobile-navbar,
-body.is-phone.hide-cursor.floating-mobile-nav .mod-root .view-content::before,
-body.is-phone.hide-cursor.floating-mobile-nav .mod-root .workspace-leaf-content .view-actions button:nth-last-child(2) {
-  opacity: 0;
-}
-
-body.is-mobile.floating-mobile-nav .nav-header {
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-body.is-phone:not(.hide-cursor).floating-mobile-nav .mobile-navbar,
-body.is-phone:not(.hide-cursor).floating-mobile-nav .mod-root .view-content::before,
-body.is-phone:not(.hide-cursor).floating-mobile-nav .mod-root .workspace-leaf-content .view-actions button:nth-last-child(2) {
-  animation: fadeInUpDelay var(--anim-duration-slow);
-}
-
-body.is-mobile.floating-mobile-nav .mobile-navbar {
-  transition: var(--anim-duration-moderate);
-  max-width: calc(100% - 48px - 8px);
-  background-color: transparent;
-  pointer-events: none;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-body.is-mobile.floating-mobile-nav .mobile-navbar-actions,
-body.is-mobile.floating-mobile-nav .workspace-drawer .nav-buttons-container {
-  --icon-size: var(--icon-l);
-  --icon-color: var(--text-normal);
-  gap: 0px;
-  box-shadow: var(--shadow-xs);
-  backdrop-filter: var(--blur-s);
-  background-color: var(--background-primary);
-  justify-content: flex-start;
-  max-width: fit-content;
-  border-radius: calc(var(--default-radius) * 2);
-  padding: var(--size-2-2);
-  pointer-events: auto;
-  overflow: hidden;
-}
-
-body.is-mobile.floating-mobile-nav .mobile-navbar-actions .clickable-icon,
-body.is-mobile.floating-mobile-nav .workspace-drawer .nav-buttons-container .clickable-icon {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-}
-
-body.is-mobile.floating-mobile-nav .mobile-navbar-action,
-body.is-mobile.floating-mobile-nav .nav-action-button {
-  display: flex;
-  justify-content: center;
-  min-width: 0;
-  position: relative;
-}
-
-body.is-mobile.floating-mobile-nav .mobile-navbar,
-body.is-mobile.floating-mobile-nav .workspace-drawer .nav-header {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: var(--layer-status-bar);
-  border: none;
-  margin-bottom: max(var(--safe-area-inset-bottom), 16px);
-  justify-self: center;
-}
-
-body.is-mobile.floating-mobile-nav .workspace-drawer.mod-left.is-pinned .nav-header {
-  justify-self: unset;
-}
-
-body.is-phone.floating-mobile-nav .mobile-navbar-tabs-action {
-  border-width: var(--icon-l-stroke-width);
-  border-radius: 30%;
-  width: calc(var(--icon-size) - 2px);
-  height: calc(var(--icon-size) - 2px);
-  font-weight: var(--font-normal);
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-switcher {
-  justify-content: flex-end;
-  animation: none !important;
-  width: unset;
-  height: unset;
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-switcher[style*="opacity: 1"] {
-  transition-property: transform !important;
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-switcher-scroll {
-  padding-top: 0;
-  height: unset;
-  background: linear-gradient(transparent, var(--background-secondary) 25%) !important;
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-wrapper {
-  z-index: 2;
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-switcher-menubar {
-  background-color: var(--background-secondary);
-  padding: 0 var(--side-padding) max(var(--safe-area-inset-bottom), 16px);
-  border: none;
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-switcher-menu-button {
-  z-index: 2;
-  flex: 1;
-  height: var(--input-height);
-  border-radius: calc(var(--default-radius) * 2);
-  box-shadow: var(--shadow-l);
-  justify-content: center;
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-switcher-menu-spacer .clickable-icon {
-  box-shadow: var(--shadow-l);
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-switcher-menu-spacer:first-child {
-  z-index: 2;
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-switcher-menu-spacer:last-child .clickable-icon {
-  padding-left: var(--side-padding);
-  padding-right: var(--side-padding);
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab-switcher-menu-spacer:last-child .clickable-icon::before {
-  position: fixed;
-  z-index: 1;
-  inset: 0;
-  content: "";
-}
-
-body.is-phone.floating-mobile-nav .mobile-tab .mobile-tab-pin,
-body.is-phone.floating-mobile-nav .mobile-tab .close-button {
-  width: 32px;
-  height: 32px;
-}
-
 /* Floating Mobile Toolbar */
 /* Inspired by and adapted from the Cupertino Theme MIT License Copyright (c) 2025 aaaaalexis https://github.com/aaaaalexis/obsidian-cupertino */
 
-body.floating-mobile-nav .mobile-toolbar-spacer {
+body.is-mobile .mobile-toolbar-spacer {
   display: none;
 }
 
-body.is-mobile.floating-mobile-nav .mobile-toolbar-options-list {
+body.is-mobile .mobile-toolbar-options-list {
   --icon-size: var(--icon-l);
   --icon-color: var(--text-normal);
   gap: 8px;
   box-shadow: var(--shadow-xs) !important;
   backdrop-filter: var(--blur-s);
-  background-color: var(--background-primary);
   justify-content: flex-start;
   max-width: fit-content;
   border-radius: var(--clickable-icon-radius);
@@ -2510,37 +2389,37 @@ body.is-mobile.floating-mobile-nav .mobile-toolbar-options-list {
   transition: var(--anim-duration-moderate);
 }
 
-body.is-mobile.floating-mobile-nav .mobile-toolbar-options-list .clickable-icon {
+body.is-mobile .mobile-toolbar-options-list .clickable-icon {
   width: 48px;
   height: 48px;
   padding: 0;
 }
 
-body.is-mobile.floating-mobile-nav .mobile-toolbar-option {
+body.is-mobile .mobile-toolbar-option {
   --icon-size: var(--icon-l);
   --icon-stroke: var(--icon-l-stroke-width);
   padding: 12px;
 }
 
-body.is-mobile.floating-mobile-nav .mobile-toolbar-options-container {
+body.is-mobile .mobile-toolbar-options-container {
   gap: 8px;
 }
 
-body.is-mobile.floating-mobile-nav .mobile-toolbar {
+body.is-mobile .mobile-toolbar {
   transition: var(--anim-duration-moderate) var(--anim-motion);
   background-color: transparent;
   overflow: visible;
   padding: 0 var(--side-padding) var(--side-padding) !important;
+  box-shadow: none;
 }
 
-body.is-mobile.floating-mobile-nav .mobile-toolbar-options-list {
+body.is-mobile .mobile-toolbar-options-list {
   gap: 4px;
   overflow: scroll;
   border-radius: var(--default-radius);
-  width: calc(100% - 48px - 8px - 48px - 8px);
 }
 
-body.is-tablet.floating-mobile-nav .mobile-toolbar {
+body.is-tablet .mobile-toolbar {
   position: fixed;
   right: 0;
   bottom: max(var(--keyboard-height), 0px);
@@ -2551,7 +2430,11 @@ body.is-tablet.floating-mobile-nav .mobile-toolbar {
   top: calc(100vh - calc(var(--mobile-toolbar-height) * 1.45));
 }
 
-body.is-phone.floating-mobile-nav .mobile-toolbar {
+body.is-tablet .view-actions.mod-raised {
+  background: none;
+}
+
+body.is-phone .mobile-toolbar {
   position: fixed;
   right: 0;
   bottom: var(--keyboard-height);
@@ -2563,32 +2446,22 @@ body.is-phone.floating-mobile-nav .mobile-toolbar {
 }
 
 /********** Mode Switchcer **********/
-body.is-phone.floating-mobile-nav .mod-root .view-header {
+body.is-phone .mod-root .view-header {
   z-index: 3;
 }
 
-body.is-phone.floating-mobile-nav .mod-root .workspace-leaf-content[data-type=markdown] .view-actions button:nth-last-child(2) {
-  --icon-color: var(--text-normal);
-  position: fixed;
-  right: var(--cards-gap);
-  bottom: 0;
-  backdrop-filter: var(--blur-s);
-  margin-bottom: calc(var(--safe-area-inset-bottom) - 8px);
-  border-radius: calc(var(--default-radius) * 2);
-  padding: 12px;
-  width: auto;
-  height: auto;
+body.is-phone .mod-root .workspace-leaf-content[data-type=markdown] .view-actions button:nth-last-child(2) {
   box-shadow: var(--shadow-xs) !important;
   transition: var(--anim-duration-moderate) var(--anim-motion-cupertino), opacity var(--anim-duration-moderate) !important;
   background-color: var(--color-accent);
 }
 
-body.is-phone.mod-toolbar-open.floating-mobile-nav .mod-root .workspace-leaf-content[data-type=markdown] .view-actions button:nth-last-child(2) {
+body.is-phone.mod-toolbar-open .mod-root .workspace-leaf-content[data-type=markdown] .view-actions button:nth-last-child(2) {
   padding: 10px;
   margin-bottom: calc(var(--side-padding) - 12px);
 }
 
-body.is-phone.floating-mobile-nav .mod-root .workspace-leaf-content[data-mode=source] .view-actions button:nth-last-child(2) {
+body.is-phone .mod-root .workspace-leaf-content[data-mode=source] .view-actions button:nth-last-child(2) {
   background-color: var(--interactive-accent) !important;
   box-shadow: var(--shadow-xs) !important;
 }
@@ -3161,24 +3034,6 @@ body .nn-navitem-content {
 
 .nn-file-extension-badge {
   background-color: var(--background-default);
-}
-
-body.is-mobile.floating-mobile-nav .nn-mobile .nn-mobile-toolbar {
-  position: absolute;
-  align-self: center;
-  background-color: var(--background-primary);
-  gap: calc(var(--cards-gap) / 4);
-  z-index: var(--layer-status-bar);
-  margin: 0 auto max(calc(var(--safe-area-inset-bottom) + var(--size-4-2)), 16px);
-  border: 1px solid var(--divider-color);
-  border-radius: calc(var(--default-radius) * 2);
-  box-shadow: var(--shadow-xs);
-  backdrop-filter: var(--blur-s);
-  max-width: fit-content;
-  max-height: fit-content;
-  overflow: hidden;
-  pointer-events: auto;
-  bottom: 0;
 }
 
 .nn-navitem {

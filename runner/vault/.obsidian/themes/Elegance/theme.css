@@ -10,244 +10,208 @@ Elegance theme by:
 
 Aesthetic UI replacement for Obsidian.
 
-Readme: (poner url de mi tema enlace a github)
+ENHANCED VERSION - Compatible con Style Settings plugin
+- Mejoras en notas empotradas (altura ajustable)
+- Optimizaciones de rendimiento
+- Más de 30 opciones configurables
 
 GitHub Repository:
 https://github.com/Victologo/elegance-theme
 
 -----------------------------------------------------------------------------
 
-MIT License
-
-Copyright (c) 2023 Víctor Alonso Arribas
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+MIT License - Copyright (c) 2023 Víctor Alonso Arribas
 
 -----------------------------------------------------------------------------
 
-Thanks to:
-    - Obsidian inspired themes
-        - Dracula for Obsidian (https://github.com/jarodise/Dracula-for-Obsidian.md): base theme used
-        - Bubble Space (https://github.com/Emrie-Candera/Bubble-Space-Theme): structure, code and snippets
-        - Blue Topaz (https://github.com/whyt-byte/Blue-Topaz_Obsidian-css): code and snippets
-        - Minimal theme (https://github.com/kepano/obsidian-minimal): code
-        - Danny Hatcher theme (https://dannyhatcher.gumroad.com/l/Wxkmy): code
-        - Bryan Jenks theme (https://bryanjenkstech.ck.page/d4ec0713d5): code
-        - Other themes
-    - People:
-        - Jose (Snifer@L4b's)
-    - Obsidian community (in general)I. GENERAL
+/* @settings
 
- --------------------------------------------------------------------------- */
+name: 🎨 Elegance Theme
+id: elegance-theme
+settings:
+    -
+        id: elegance-typography-heading
+        title: 📝 Tipografía
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: font-size-normal
+        title: Tamaño de fuente base
+        description: Tamaño del texto principal (el zoom con Ctrl+Scroll funciona de forma nativa)
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 24
+        step: 0.5
+        format: px
+    -
+        id: font-size-code
+        title: Tamaño de código
+        type: variable-number-slider
+        default: 15
+        min: 10
+        max: 20
+        step: 0.5
+        format: px
+    -
+        id: line-height-normal
+        title: Altura de línea
+        description: Espaciado entre líneas (1.5 = 150%)
+        type: variable-number-slider
+        default: 1.5
+        min: 1.2
+        max: 2.5
+        step: 0.1
+    -
+        id: elegance-headers-heading
+        title: 📌 Encabezados
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: font-size-h1
+        title: H1
+        type: variable-number-slider
+        default: 23
+        min: 18
+        max: 36
+        step: 0.5
+        format: px
+    -
+        id: font-size-h2
+        title: H2
+        type: variable-number-slider
+        default: 22
+        min: 17
+        max: 32
+        step: 0.5
+        format: px
+    -
+        id: font-size-h3
+        title: H3
+        type: variable-number-slider
+        default: 21
+        min: 16
+        max: 28
+        step: 0.5
+        format: px
+    -
+        id: font-size-h4
+        title: H4
+        type: variable-number-slider
+        default: 20
+        min: 15
+        max: 26
+        step: 0.5
+        format: px
+    -
+        id: font-size-h5
+        title: H5
+        type: variable-number-slider
+        default: 19
+        min: 14
+        max: 24
+        step: 0.5
+        format: px
+    -
+        id: font-size-h6
+        title: H6
+        type: variable-number-slider
+        default: 18
+        min: 13
+        max: 22
+        step: 0.5
+        format: px
+    -
+        id: elegance-embeds-heading
+        title: 📎 Notas Empotradas
+        type: heading
+        level: 1
+        collapsed: false
+        description: Controla la apariencia y comportamiento de las notas empotradas
+    -
+        id: embed-max-height
+        title: Altura máxima
+        description: Altura máxima en píxeles (0 = sin límite)
+        type: variable-number-slider
+        default: 500
+        min: 0
+        max: 1500
+        step: 50
+        format: px
+    -
+        id: embed-border-radius
+        title: Radio de bordes
+        type: variable-number-slider
+        default: 10
+        min: 0
+        max: 20
+        step: 1
+        format: px
+    -
+        id: embed-padding
+        title: Padding interno
+        type: variable-number-slider
+        default: 16
+        min: 0
+        max: 40
+        step: 2
+        format: px
+    -
+        id: embed-show-shadow
+        title: Mostrar sombra al hacer hover
+        type: class-toggle
+        default: true
+    -
+        id: embed-smooth-scroll
+        title: Scroll suave
+        type: class-toggle
+        default: true
+    -
+        id: elegance-ui-heading
+        title: ⚙️ Interfaz
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: font-size-side-dock
+        title: Tamaño fuente paneles
+        type: variable-number-slider
+        default: 15
+        min: 12
+        max: 20
+        step: 0.5
+        format: px
+    -
+        id: font-size-side-dock-title
+        title: Tamaño títulos paneles
+        type: variable-number-slider
+        default: 16
+        min: 13
+        max: 22
+        step: 0.5
+        format: px
+    -
+        id: font-size-status-bar
+        title: Tamaño barra de estado
+        type: variable-number-slider
+        default: 13.75
+        min: 10
+        max: 18
+        step: 0.25
+        format: px
+    -
+        id: scrollbar-width
+        title: Ancho de scrollbar
+        type: variable-number-slider
+        default: 8
+        min: 4
+        max: 16
+        step: 1
+        format: px
 
-
-/* *==========  Table of Content (TOC) ========== 
-    *I. GENERAL
-    *II. WORKSPACE
-    *III. MARKDOWN
-    *IV. ADDITIONAL SNIPPETS
-    *V. PLUGIN STYLING
-    *Part VI. Other stuff
-*==================================================
-
-
-===================================================
-===================================================
-
-*I. GENERAL VALUES
-    ~ FONTS
-    ~ GENERAL COLOR VALUES
-    ~ ICONS
-*II. WORKSPACE
-    ~ WS A: Panes
-        @ A1 File Explorer
-            # A1.1 Vault Name 
-            # A1.2 File and Folder Name
-        @ A2 Note Pane
-            # A2.1 Note Titlebar
-            # A2.2 Document Search
-            # A2.3 Empty Note Pane
-        @ A5 Outline Pane
-            # A5.1 Relationship Lines
-            # A5.2 Hover Glow
-            # A5.3 Icon Styling
-            # A5.7 Box Styling
-        @ A6 Search, Backlinks and Outgoing Links Pane
-            # A6.1 Search Results
-            # A6.2 Backlinks in Document
-        @ A7 Starred Pane
-        @ A8 Graph Pane 
-                # A8.1 Graph Controls
-                # A8.2 Graph Colors
-                * Arrow
-                * Tag
-                * Attachment
-                * Fill
-                * Unresolved
-                * Circle
-                * Line
-                * Text
-        @ A9 Bookmarks
-    ~ WS B: Window
-        @ B1: Side Dock Ribbon (+ Mobile toolbar)
-            # B1.1 Collapsed
-            # B1.2 Expanded
-            # B1.3 Ribbon Icons
-        @ B2: Title Bar
-        @ B3: Status Bar
-        @ B4: Tabs
-        @ B5: Rendered notes
-        @ B6: Headers
-        @ B7: Transition between notes
-    ~ WS C: Settings
-        @ C1: Settings Modal
-            # C1.1 Header Group
-            # C1.2 Items
-        @ C2: Theme Store
-            # C2.1 Modal
-            # C2.2 Theme Items
-                ! C2.2.1 Text and Border
-                ! C2.2.2 Buttons
-                ! C2.2.3 Hover
-                ! C2.2.4 Selected
-        @ C3: Plugin Store
-            # C3.1 Modal
-            # C3.2 Text
-            # C3.3 Flair
-            # C3.4 Hover
-    ~ WS D: Other Elements
-        @ D1: Buttons
-        @ D2: Scrollbars
-        @ D3: Modals
-        @ D4: Sliders
-        @ D5: Notices
-        @ D6: Toggles
-        @ D7: Tooltips
-        @ D8: Dropdown
-        @ D9: Prompt
-        @ D10: Menu
-        @ D11: Suggestion
-        @ D12: Embedded notes
-        @ D13: Suggestion
-    ~ WS E: Common Values
-* III. MARKDOWN
-    ~ MARKDOWN A: Text Formatting
-        @ A1 Headers
-        @ A2 Bold
-        @ A3 Italics
-        @ A4 Links
-        @ A5 Inline Code
-        @ A6 Highlight
-        @ A7 Footnotes
-        @ A8 Comments
-        @ A9 Tags
-        @ A10 Regular Text
-    ~ MARKDOWN B: Lists
-        @ B1 Bulleted
-        @ B2 Numbered List
-        @ B3 Checklist
-            # B3.1 Reading Mode
-            # B3.2 Source Mode
-    ~ MARKDOWN C: Text Blocks
-        @ C1 Block Quotes
-            # C1.1 Reading
-            # C1.2 Source
-        @ C2 Table
-            # C2.1 Source
-            # C2.2 Reading
-        @ C3 Code Blocks
-    ~ MARKDOWN D: Others
-        @ D1 HR
-        @ D2 HTML Progress Pars
-        @ D3 Cite
-    ~ SPACE B: Workspace
-        @ SPACE B1: Panes
-            # B1.1 File Explorer
-                ! Vault Title
-                ! File and Folder Name
-                !...
-            # B1.2 Note Pane
-                ! Active Note Titlebar
-                ! Metadata Container
-                ! Document Search
-                ! Empty Note
-        @ SPACE B2: Window and Settings
-            # Side Dock Ribbon
-            # Settings Modal
-            # Theme Store Items
-        @ SPACE B3: Settings
-            ! Modal
-            ! Mini Gradient Text
-            ! Store Items
-        @ SPACE B4: Other Elements
-            # Buttons
-            # Scrollbar
-            # Slider
-            # Notice
-            # Toggle
-    ~ SPACE C: Markdown
-        @ SPACE C1: Text Formatting
-            # Basic Markdown
-            # Header Colors
-            # Tags
-        @ SPACE C2: Lists
-            # Bullets/Numbers
-            # Checklist
-        @ SPACE C3: Text Blocks
-            # Blockquote
-            # Table
-        @ SPACE C4: Others
-            # HR
-            # Progress Bars
-            # Cite
-        @ SPACE C5: Themed Loading Page
-    ~ SPACE E: Plugins
-        @ SPACE E1: Admonitions
-        @ SPACE E2: Icon Folder
-        @ SPACE E3: Calendar
-        @ SPACE E4: Day Planner
-        @ SPACE E5: Checklist
-* IV. ADDITIONAL SNIPPETS
-    ~ Snippet - Zoom images
-    ~ Snippet - Image caption / Figure Caption
-    ~ Snippet - Center images + Left or right function
-    ~ Snippet - Cards
-    ~ Snippet - Checboxes (minimal)
-    ~ Snippet - Images
-    ~ Snippet - Popover
-    ~ Snippet - MathJax
-    ~ Snippet - Active Block - Active Line - Guide line in editor
-    ~ Snippet - Metadata Menu
-    ~ Snippet - compact_table_dataview (before: called "Library"
-*V. PLUGIN STYLING
-    ~ Plugin - Banners
-    ~ Plugin - Calendar
-    ~ Plugin - Kanban
-    ~ Plugin - Excalidraw
-    ~ Plugin - File Tree Alternative
-
-*VI. Other stuff
-
-===================================================
-===================================================
-
-
+*/
 
 /* ============== PART I. GENERAL VALUES ============== */
 
@@ -263,7 +227,8 @@ Thanks to:
 
 /* @ FONTS A2: Font Assignments*/
 
-:root{
+:root {
+    /* Tipografía - Configurable con Style Settings */
     --font-size-normal:              16px;
     --font-size-code:                15px;
     --font-size-side-dock:           15px;
@@ -275,6 +240,15 @@ Thanks to:
     --font-size-h4:                  20px;
     --font-size-h5:                  19px;
     --font-size-h6:                  18px;
+    --line-height-normal:            1.5;
+    
+    /* Notas empotradas - Configurable con Style Settings */
+    --embed-max-height:              500px;
+    --embed-border-radius:           10px;
+    --embed-padding:                 16px;
+    
+    /* UI - Configurable con Style Settings */
+    --scrollbar-width:               8px;
 }
 
 
@@ -317,7 +291,7 @@ Thanks to:
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.5);
     --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.22);
-    --external-link: rgb(255, 231, 194);
+    --external-link: rgb(255, 219, 180);
     --pre-code: rgba(255, 255, 255, 0.064);
 
     --quote-bg: rgba(77, 74, 75, 0.7);
@@ -349,7 +323,7 @@ Thanks to:
     --background-modifier-error-hover: rgba(255, 0, 0, 0.616);
     --background-modifier-cover: rgba(0, 0, 0, 0.307);
     --background-accent: rgb(255, 128, 0);
-    --text-accent:rgb(235, 118, 0);
+    --text-accent:rgb(196 98 0);
     --text-accent-hover: rgb(0, 184, 225);
     --text-normal: rgb(6, 6, 6);
     --text-antinormal: white;
@@ -403,6 +377,7 @@ Thanks to:
 .cm-s-obsidian, .mod-single-child .cm-s-obsidian {
     font-family: var(--font-family-editor);
     font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
 }
 
 /* normal text outside of headings and code of preview */
@@ -410,6 +385,7 @@ Thanks to:
 .markdown-preview-view, .mod-single-child .markdown-preview-view {
     font-family: var(--font-family-editor);
     font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
     padding-top: 0px;
     padding-left: 1.27% !important;
     padding-right: 1.27% !important;
@@ -1855,11 +1831,20 @@ select {
 
 /* @ D11: Suggestion Container */
 
-/* @ D12: Embedded notes */
+/* @ D12: Embedded notes - ENHANCED with Style Settings support */
 
+/* Base container styling */
 .markdown-embed {
-margin: 0px;
-padding: 0px;
+    margin: 1em 0;
+    padding: 0px;
+    border: 0px solid transparent;
+    border-left-width: 2.75px;
+    border-right-width: 2.75px;
+    border-bottom-width: 2.75px;
+    border-top-width: 2.75px;
+    border-radius: var(--embed-border-radius);
+    background-color: var(--background-secondary) !important;
+    transition: all 150ms ease-in-out;
 }
 
 .file-embed-title {
@@ -1875,7 +1860,6 @@ padding: 0px;
 }
 
 /* Naked Embeds - Hide name of file */
-
 .markdown-embed-title {
     display: none;
 }
@@ -1889,15 +1873,15 @@ padding: 0px;
 }
 
 /* Better embedded note padding */
-
 .markdown-preview-view .markdown-embed { 
-padding:0; margin:0;
+    padding: 0;
+    margin: 1em 0;
 }
 
 /* Link symbol on the top right corner */
-
 .markdown-embed-link {
-    color: var(--text-faint);}
+    color: var(--text-faint);
+}
 
 .markdown-embed-link:hover {
     color: white;
@@ -1905,34 +1889,102 @@ padding:0; margin:0;
     text-shadow: 0px 0px 10px white;
 }
 
-/* Dimensions and color of the embedded note*/
-
-.markdown-embed {
-    border: 0px solid #f8f8f200;
-    border-left-width: 2.75px ;
-    border-right-width: 2.75px ;
-    border-bottom-width: 2.75px ;
-    border-top-width: 2.75px ;
-    transition: 150ms ease-in-out ;
-    border-radius: 10px ;
-    background-color: var(--background-secondary) !important;
-}
-
+/* Hover effects */
 .markdown-embed:hover {
-    box-shadow: 0 10px 15px rgba(0,0,0,.25),0 5px 5px rgba(0,0,0,.22) !important;
-    transform: translate3d(0px,-3.5px,0px) !important;
-    transition: 150ms ease-in-out !important;
+    transform: translate3d(0px,-3.5px,0px);
+    transition: all 150ms ease-in-out;
     border-color: var(--interactive-accent) !important;
-    border-radius: 10px !important;
 }
+
+/* Shadow effect - controlled by Style Settings toggle */
+body.embed-show-shadow .markdown-embed:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,.25), 0 5px 5px rgba(0,0,0,.22) !important;
+}
+
+/* ============== ALTURA AJUSTABLE DE NOTAS EMPOTRADAS ============== */
+
+/* Internal embed with configurable height */
+.internal-embed {
+    max-height: var(--embed-max-height);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: var(--embed-border-radius);
+}
+
+/* If max-height is set to 0, remove height limit */
+body[style*="--embed-max-height: 0px"] .internal-embed {
+    max-height: none;
+    overflow-y: visible;
+}
+
+/* Smooth scroll - controlled by Style Settings toggle */
+body.embed-smooth-scroll .internal-embed {
+    scroll-behavior: smooth;
+}
+
+/* Content padding */
+.internal-embed .markdown-embed-content {
+    padding: var(--embed-padding);
+    max-height: inherit;
+}
+
+/* Custom scrollbar for embedded notes */
+.internal-embed::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+}
+
+.internal-embed::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.internal-embed::-webkit-scrollbar-thumb {
+    background: var(--background-modifier-border);
+    border-radius: calc(var(--scrollbar-width) / 2);
+    transition: background 150ms ease;
+}
+
+.internal-embed::-webkit-scrollbar-thumb:hover {
+    background: var(--text-faint);
+}
+
+/* Firefox scrollbar */
+.internal-embed {
+    scrollbar-width: thin;
+    scrollbar-color: var(--background-modifier-border) transparent;
+}
+
+/* Image embeds - don't restrict height */
+.internal-embed.image-embed {
+    max-height: none;
+    overflow: visible;
+}
+
+/* Better appearance for links inside embeds */
+.internal-embed a.internal-link {
+    color: var(--text-accent);
+    text-decoration: none;
+}
+
+.internal-embed a.internal-link:hover {
+    color: var(--text-accent-hover);
+    text-decoration: underline;
+}
+
+/* Embedded note title if shown */
+.internal-embed .markdown-embed-title {
+    font-weight: 600;
+    padding: 0.5em var(--embed-padding);
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
 
 
 /* @ D13: Suggestion - obsidian autocomplete for notes */
 
 .suggestion-item.is-selected:hover {
     cursor: pointer ;
-    background-color: var(--text-accent) ;
-    color: black ;
+    background-color: rgb(126 117 106);
+    color: var(--text-normal);
 }
 
 input.prompt-input {    background-color: var(--text-antinormal);
@@ -2313,7 +2365,6 @@ section.footnotes li[data-footnote-id] {
 
     .cm-s-obsidian span.cm-hashtag-begin {
         background-color: var(--background-secondary) !important;
-
     }
     
     /* # A9.2 Preview*/
@@ -2554,6 +2605,27 @@ ol > li::marker, ul > li::marker, .cm-s-obsidian .cm-formatting-list {
 
 ul > li.task-list-item .task-list-item-checkbox {
     margin-left: -20px;
+}
+
+/* Definir la animación */
+@keyframes fadeOpacity {
+    0% {
+        opacity: 0.35;
+    }
+    50% {
+        opacity: 0.70;
+    }
+    100% {
+        opacity: 0.35;
+    }
+}
+
+/* Aplicar al tachado de tareas completadas */
+ul > li.task-list-item[data-task="x"], 
+ul > li.task-list-item[data-task="X"] {
+    text-decoration: line-through rgba(255, 255, 255, 0.7);
+    text-decoration-thickness: 3px; /* Línea más gruesa */
+    animation: fadeOpacity 4s ease-in-out infinite; /* Animación continua */
 }
 
 /* Notation checkboxes */
@@ -2967,6 +3039,12 @@ pre code {
 }
 
 
+/* CSS Snippet para cambiar solo el color de fondo del callout TLDR a azul */
+
+.callout[data-callout="tldr"] {
+    --callout-color: 0, 166, 30; /* Azul RGB */
+}
+
 /* ~~~~~~~~~~~~~~~~~~ AS F: Themed Loading Page  ~~~~~~~~~~~~~~~~~~ */
 
 /* ─────────────── COMMON B6- Themed Loading Pages ────────────────── */
@@ -3090,912 +3168,374 @@ background-color: #262639;
 /* End - Snippet - Image caption / Figure Caption */
 /*-----------------------------------------------*/
 
-/*==============================================*/
-/* Snippet - Center images + Left or right function */
-/*==============================================*/
 
-img {
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    transition: 150ms;
-}
-
-img[alt*="left"], .image-embed[src*="#left"], img[src*="#left"] span.left img {
-    float: left !important;
-    margin-right: 3.5% !important;
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
-}
-
-img[alt*="right"], .image-embed[src*="#right"], img[src*="#right"], span.right img {
-    float: right !important;
-    margin-left: 2.5% !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-}
-
-/*---------------------------------------------------------*/
-/* End - Snippet - Center images + Left or right function */
-/*-------------------------------------------------------*/
-
-
-/*==================*/
+/*==================================*/
 /* Snippet - Cards */
-/*================*/
+/*================================*/
+/*==========================================*/
+/* CARDS UNIVERSALES - Una sola clase      */
+/* Solo usa: cssclass: cards               */
+/*==========================================*/
 
-/* MIT License | Copyright (c) Stephan Ango (@kepano) 
-Cards snippet for Obsidian
-author: @kepano
-Support kepano's work:https://github.com/sponsors/kepano */
-
-:root {
-    --cards-min-width: 174px;
-    --cards-max-width: 1fr;
-    --cards-mobile-width: 150px;
-    --cards-image-height: 400px;
-    --cards-padding: 1.2em;
-    --cards-image-fit: contain;
-    --cards-background: transparent;
-    --cards-border-width: 1px;
-    --cards-min-width: var(--cards-mobile-width);
-}
-
-.cards.markdown-rendered tr {
-    height: auto;
-}
-
-    @media (max-width: 400pt) {
-}
-
-/* Make the grid and basic cards */
-
-.cards.table-100 table.dataview tbody,
-.table-100 .cards table.dataview tbody {
-    padding: 0.25rem 0.75rem;
-}
-
-.cards .el-pre + .el-lang-dataview .table-view-thead {
-    padding-top: 8px;
-}
-
+/* BASE: Grid responsivo SÚPER ESTRECHO */
 .cards table.dataview tbody {
     clear: both;
-    padding: 0.3rem 0;
+    padding: 0.2rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
-    grid-column-gap: 0.65rem;
-    grid-row-gap: 0.65rem;
+    grid-column-gap: 0.25rem;  /* Muy poco espacio entre tarjetas */
+    grid-row-gap: 0.28rem;
+    align-items: start;
+    /* Grid por defecto - libros/series MÁS ESTRECHO */
+    grid-template-columns: repeat(auto-fit, minmax(90px, 115px));
 }
 
+/* TARJETAS BASE - MÁS ESTRECHAS */
 .cards table.dataview > tbody > tr {
-    background-color: var(--background-secondary-alt) ;
-    border: 2px solid var(--text-normal);
+    background-color: var(--background-secondary-alt);
+    border: 1px solid var(--background-modifier-border);
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0 0 calc(var(--cards-padding)/3) 0;
-    border-radius: 6px;
+    padding: 0.25rem;  /* Menos padding para más estrecho */
+    border-radius: 5px;
     overflow: hidden;
-    transition: box-shadow 0.1s linear;
+    transition: box-shadow 0.15s linear;
 }
 
 .cards table.dataview > tbody > tr:hover {
-    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.21) !important;
-    transition: box-shadow 0.15s linear;
-    animation-duration: 3s ;
-    animation-iteration-count: infinite;
-    animation-name: cards_border;
-    color: 
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.13s linear;
+    border: 1.2px solid var(--text-normal);
 }
 
-@keyframes cards_border {
-0% { border: 2.15px solid var(--text-accent);}
-50% { border: 3.15px solid rgb(255, 228, 200);}
-100% {border: 2.15px solid var(--text-accent);}
-}
-
-
-/* Styling elements inside cards */
-
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
-.trim-cols .cards table.dataview tbody > tr > td {
-    white-space: normal;
-}
-
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table > tbody > tr > td,
+/* ELEMENTOS BASE */
 .cards table.dataview tbody > tr > td {
     border-bottom: none;
-    padding: 0px !important;
-    line-height: 1.05;
-    width: calc(100% - var(--cards-padding));
-    margin: 0 auto;
-    overflow: visible !important;
-    max-width: 100%;
-    display: flex; 
-    align-content: space-around;
-    align-items: flex-start;
-    justify-content: space-around;
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
 }
+
+/* Celdas con imágenes - COMPLETAMENTE PEGADAS AL BORDE */
+.cards table.dataview tbody > tr > td:has(img):not(:has([src*="progress-bar"])) {
+    padding: 0 !important; /* COMPLETAMENTE PEGADO AL BORDE */
+    margin: 0 !important;
+    overflow: hidden; /* Para bordes limpios */
+    border-radius: 4px;
+}
+
+/* TÍTULO - Siempre primera celda ULTRA COMPACTO */
+.cards table.dataview tbody > tr > td:first-child {
+    font-weight: var(--bold-weight);
+    min-height: 26px;  /* Más compacto */
+    order: 1;
+    padding: 0 1px;    /* Mínimo padding lateral */
+}
+
+.cards table.dataview tbody > tr > td:first-child a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    line-height: 1.0;  /* Muy compacto */
+    font-size: 1em !important;
+    width: 100%;
+}
+
+.cards table.dataview tbody > tr:has(td:nth-child(5)) td:nth-child(2), .cards table.dataview tbody > tr:has(td:nth-child(4)):has([src*="progress-bar"]) td:nth-child(2) {
+    font-size: 0.9em !important;
+}
+
+/* IMÁGENES - ALTURA UNIFORME + ZOOM FUNCIONAL */
+.cards table.dataview tbody > tr > td img {
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+    width: 100%;
+    height: 140px !important; /* ALTURA FIJA UNIFORME PARA TODO */
+    object-fit: cover;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+    /* ZOOM FUNCIONAL */
+    cursor: zoom-in;
+    transition: 220ms ease-in-out;
+}
+
+/* ZOOM ACTIVO - Funcionalidad completa del zoom */
+.cards table.dataview tbody > tr > td img:active {
+    cursor: zoom-out !important;
+    display: block !important;
+    z-index: 100 !important;
+    position: fixed !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    padding: 31px !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    top: 0 !important;
+    background: var(--background-primary) !important;
+    animation-name: example2 !important;
+    animation-duration: 6.5s !important;
+    animation-iteration-count: infinite !important;
+    border-radius: 0 !important; /* Sin border radius en zoom */
+    box-shadow: none !important; /* Sin sombra en zoom */
+}
+
+/* DETECCIÓN INTELIGENTE: Bibliotecas vs Videojuegos */
+/* - 5+ columnas = biblioteca siempre */
+/* - 4 columnas + barras de progreso = biblioteca */  
+/* - 4 columnas sin barras = videojuegos */
+/* - 3 columnas o menos = videojuegos */
+
+/* FORMATO LIBROS/SERIES - Detección específica */
+.cards table.dataview tbody > tr:has(td:nth-child(5)),
+.cards table.dataview tbody > tr:has(td:nth-child(4)):has([src*="progress-bar"]) {
+    min-height: 270px; /* Más compacto */
+}
+
+/* Título biblioteca */
+.cards table.dataview tbody > tr:has(td:nth-child(5)) td:first-child,
+.cards table.dataview tbody > tr:has(td:nth-child(4)):has([src*="progress-bar"]) td:first-child {
+    min-height: 26px;
+    font-size: 0.85em;
+    padding: 0 1px;
+    order: 1;
+}
+
+/* Autor biblioteca */
+.cards table.dataview tbody > tr:has(td:nth-child(5)) td:nth-child(2),
+.cards table.dataview tbody > tr:has(td:nth-child(4)):has([src*="progress-bar"]) td:nth-child(2) {
+    font-size: 0.77em;  /* Más pequeño */
+    color: var(--text-muted);
+    min-height: 18px;   /* Más compacto */
+    order: 2;
+    padding: 0 2px;     /* Poco padding */
+}
+
+/* IMAGEN BIBLIOTECA - COMPLETAMENTE PEGADA (3ra columna) */
+.cards table.dataview tbody > tr:has(td:nth-child(5)) td:nth-child(3),
+.cards table.dataview tbody > tr:has(td:nth-child(4)):has([src*="progress-bar"]) td:nth-child(3) {
+    order: 3;
+    flex-grow: 1;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+/* Progreso biblioteca - ESPECÍFICO PARA 4 COLUMNAS CON BARRAS */
+.cards table.dataview tbody > tr:has(td:nth-child(4)):has([src*="progress-bar"]) td:has([src*="progress-bar"]) {
+    height: 22px;
+    order: 4;
+    margin: 2px 0;
+    padding: 0 2px !important;
+}
+
+/* Progreso biblioteca para 5 columnas */
+.cards table.dataview tbody > tr:has(td:nth-child(5)) td:nth-child(4) {
+    order: 4;
+    margin: 2px 0; /* Menos margen */
+}
+
+/* Barra de progreso - excepción especial para altura */
+.cards table.dataview tbody > tr td:has([src*="progress-bar"]) img {
+    width: 100%;
+    height: auto !important; /* Excepción para barras de progreso */
+    max-height: 16px; /* Más pequeño */
+    border-radius: 8px;
+}
+
+/* Último campo biblioteca (solo para 5 columnas) - formato/género/rating */
+.cards table.dataview tbody > tr:has(td:nth-child(5)) td:last-child {
+    font-size: 0.8em; /* Muy pequeño para caber */
+    color: var(--text-muted);
+    font-style: italic;
+    order: 5;
+    margin-top: auto;
+    padding: 0 2px;
+}
+
+/* VIDEOJUEGOS - 4 columnas o menos SIN barras de progreso */
+.cards table.dataview tbody > tr:not(:has(td:nth-child(5))):not(:has([src*="progress-bar"])) {
+    min-height: 170px;
+}
+
+/* Grid específico para videojuegos - MÁS ESTRECHO */
+.cards table.dataview:has(tr:not(:has(td:nth-child(5))):not(:has([src*="progress-bar"]))) tbody {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 95px));
+    grid-column-gap: 0.2rem;
+    grid-row-gap: 0.2rem;
+}
+
+/* Título videojuegos */
+.cards table.dataview tbody > tr:not(:has(td:nth-child(5))):not(:has([src*="progress-bar"])) td:first-child {
+    min-height: 26px;
+    font-size: 0.9em;
+    padding: 0 1px;
+}
+
+/* IMAGEN VIDEOJUEGOS - COMPLETAMENTE PEGADA (2da columna) */
+.cards table.dataview tbody > tr:not(:has(td:nth-child(5))):not(:has([src*="progress-bar"])) td:nth-child(2) {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    border-radius: 4px;
+    flex-grow: 1;
+    line-height: 1;
+    font-size: 13px;
+    min-height: 35px;
+}
+
+/* Año videojuegos - MÁS COMPACTO */
+.cards table.dataview tbody > tr:not(:has(td:nth-child(5))) td:nth-child(3) {
+    font-size: 0.8em; /* Más pequeño */
+    color: var(--text-normal);
+    font-weight: 500;
+    order: 3;
+    margin: 1px 0; /* Muy poco margen */
+    min-height: 16px;
+}
+
+/* Rating videojuegos - si existe cuarta columna */
+.cards table.dataview tbody > tr:not(:has(td:nth-child(5))) td:nth-child(4) {
+    font-size: 0.85em; /* Más compacto */
+    color: var(--text-accent);
+    font-weight: bold;
+    order: 4;
+    margin-top: auto;
+    min-height: 18px;
+}
+
+/* Si solo 3 columnas, el año va al fondo */
+.cards table.dataview tbody > tr:not(:has(td:nth-child(5))) td:nth-child(3):last-child {
+    margin-top: auto;
+}
+
+/* RESPONSIVE - ULTRA ESTRECHO EN TODAS LAS PANTALLAS */
+@media (max-width: 768px) {
+    .cards table.dataview tbody {
+        grid-template-columns: repeat(auto-fit, minmax(85px, 1fr)) !important;
+    }
+    
+    /* Videojuegos aún más estrechos en móvil */
+    .cards table.dataview:has(tr:not(:has(td:nth-child(5))):not(:has([src*="progress-bar"]))) tbody {
+        grid-template-columns: repeat(auto-fit, minmax(65px, 1fr)) !important;
+    }
+    
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .cards table.dataview tbody {
+        grid-template-columns: repeat(auto-fit, minmax(88px, 110px));
+    }
+    
+    .cards table.dataview:has(tr:not(:has(td:nth-child(5))):not(:has([src*="progress-bar"]))) tbody {
+        grid-template-columns: repeat(auto-fit, minmax(68px, 88px));
+    }
+}
+
 
 .cards table.dataview tbody > tr > td .el-p {
     display: block;
     width: 100%;
-}
-
-.cards table.dataview tbody > tr > td:first-child {
-    font-weight: var(--bold-weight);
-}
-
-.cards table.dataview tbody > tr > td:first-child a {
-    padding: 0 0 calc(var(--cards-padding)/3);
-    display: block;
-    text-align: center;
-}
-
-.cards table.dataview tbody > tr > td:not(:first-child) {
-    font-size: 90%;
-    color: var(--text-muted);
-}
-
-/* Helpers */
-
-.cards-cover.cards table.dataview tbody > tr > td img {
-    object-fit: cover; }
-
-.cards-16-9.cards table.dataview tbody > tr > td img {
-    aspect-ratio: 16/9; }
-
-.cards-1-1.cards table.dataview tbody > tr > td img {
-    aspect-ratio: 1/1; }
-
-.cards-2-1.cards table.dataview tbody > tr > td img {
-    aspect-ratio: 2/1; }
-
-.cards-2-3.cards table.dataview tbody > tr > td img {
-    aspect-ratio: 2/3; }
-
-.cards-align-bottom.cards table.dataview tbody > tr > td:last-child {
-    align-items: flex-end;
-    flex-grow: 1; }
-
-.cards-cols-1 table.dataview tbody {
-    grid-template-columns: repeat(1, minmax(0, 1fr)); }
-
-.cards-cols-2 table.dataview tbody {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
-@media (min-width: 400pt) {
-    .cards-cols-3 table.dataview tbody {
-        grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-    .cards-cols-4 table.dataview tbody {
-        grid-template-columns: repeat(4, minmax(0, 1fr)); }
-
-    .cards-cols-5 table.dataview tbody {
-        grid-template-columns: repeat(5, minmax(0, 1fr)); }
-
-    .cards-cols-6 table.dataview tbody {
-        grid-template-columns: repeat(6, minmax(0, 1fr)); }
-
-    .cards-cols-7 table.dataview tbody {
-        grid-template-columns: repeat(7, minmax(0, 1fr)); }
-
-    .cards-cols-8 table.dataview tbody {
-        grid-template-columns: repeat(8, minmax(0, 1fr)); } }
-
-
-/* Paragraphs */
-.cards table.dataview tbody > tr > td > *:not(.el-embed-image) {
-    padding: calc(var(--cards-padding)/4) 0;
-    text-align: center;
-}
-
-.cards table.dataview tbody > tr > td:not(:last-child):not(:first-child) > .el-p:not(.el-embed-image) {
-    border-bottom: 1px solid var(--background-modifier-border);
-    width: 100%;
-}
-
-/* Links */
-
-.cards table.dataview tbody > tr > td a {
-    text-decoration: none;
-}
-
-.links-int-on .cards table.dataview tbody > tr > td a {
-    text-decoration: none;
-}
-
-/* Buttons */
-
-.cards table.dataview tbody > tr > td > button {
-    width: 100%;
-    margin: calc(var(--cards-padding)/2) 0;
-}
-
-.cards table.dataview tbody > tr > td:last-child > button {
-    margin-bottom: calc(var(--cards-padding)/6); }
-
-    /* Lists */
-
-.cards table.dataview tbody > tr > td > ul {
-    width: 100%;
-    padding: 0.1em 0 !important;
-    margin: 0 auto !important;
-}
-
-.cards table.dataview tbody > tr > td:not(:last-child) > ul {
-    border-bottom: 1px solid var(--background-modifier-border);
-    border-top: 1px solid var(--background-modifier-border);
-}
-
-/* Images */
-
-.cards table.dataview tbody > tr > td img {
-    width: 100%;
-    object-fit: var(--cards-image-fit);
-}
-
-  /* Sorting */
-
-  .cards.table-100 table.dataview thead > tr,
-  .table-100 .cards table.dataview thead > tr {
-      right: 0.75rem;
-  }
-  
-  .table-100 .cards table.dataview thead:before,
-  .cards.table-100 table.dataview thead:before {
-      margin-right: 0.75rem;
-  }
-  
-  .cards table.dataview thead {
-      user-select: none;
-      width: 180px;
-      display: block;
-      float: right;
-      position: relative;
-      text-align: right;
-      height: 24px;
-      padding-bottom: 4px;
-  }
-  
-  .cards table.dataview thead:before {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: var(--icon-size);
-      background-repeat: no-repeat;
-      cursor: var(--cursor);
-      text-align: right;
-      padding: 4px 10px;
-      margin-bottom: 2px;
-      border-radius: 5px;
-      font-weight: 500;
-      font-size: var(--font-adaptive-small);
-  }
-  
-  .cards table.dataview thead:before {
-      opacity: 0.65;
-      background-position: center center;
-      background-size: var(--icon-size);
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="white" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
-  }
-  
-  .theme-light .cards table.dataview thead:before {
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="black" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
-  }
-  
-  .cards table.dataview thead:hover:before {
-      opacity: 0.9;
-  }
-  
-  .cards table.dataview thead > tr {
-      top: 0;
-      position: absolute;
-      display: none;
-      z-index: 9;
-      border: 1px solid var(--background-modifier-border);
-      background-color: var(--background-secondary);
-      box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
-      padding: 6px;
-      border-radius: 6px;
-      flex-direction: column;
-      margin: 26px 0 0 0;
-      width: 100%; 
-  }
-  
-  .cards table.dataview thead:hover > tr {
-      display: flex; 
-  }
-  
-  .cards table.dataview thead > tr > th {
-      width: 100%;
-      font-weight: 400;
-      color: var(--text-muted);
-      cursor: var(--cursor-link);
-      border: none;
-      background-color: var(--background-secondary); 
-  }
-  
-  .cards table.dataview tbody > tr > td:first-child {
-      font-weight: var(--bold-weight);
-      justify-content: center;
-  }
-  
-  .cards.markdown-preview-view tbody tr:hover {
-      background-color: black;
-  }
-
-/*------------------------*/
-/* End - Snippet - Cards */
-/*----------------------*/
-
-/*======================*/
-/* Snippet - Checboxes */
-/*====================*/
-
-/*
-Minimal theme, by Kepano (https://github.com/kepano)
-https://minimal.guide/Block+types/Checklists
-*/
-
-input[type=checkbox] {
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 50%;
-    border: 1px solid var(--text-faint);
-}
-
-.theme-dark {
-    --red-rgb: 255,85,85;
-    --orange-rgb: 255,184,108;
-    --yellow-rgb: 241,250,140;
-    --green-rgb: 80,250,123;
-    --cyan-rgb: 139,233,253;
-    --blue-rgb: 98,114,164;
-    --purple-rgb: 189,147,249;
-    --pink-rgb: 255,121,198;
-    --red: #ff5555;
-    --orange: #ffb86c;
-    --yellow: #f1fa8c;
-    --green: #50fa7b;
-    --cyan: #8be9fd;
-    --blue: #6495ed;
-    --purple: #bd93f9;
-    --pink: #ff79c6;
-}
-
-.theme-light {
-    --red-rgb: 255,85,85;
-    --orange-rgb: 255,184,108;
-    --yellow-rgb: 241,250,140;
-    --green-rgb: 80,250,123;
-    --cyan-rgb: 139,233,253;
-    --blue-rgb: 98,114,164;
-    --purple-rgb: 189,147,249;
-    --pink-rgb: 255,121,198;
-    --red: #ff5555;
-    --orange: #ffb86c;
-    --yellow: #f1fa8c;
-    --green: #50fa7b;
-    --cyan: #8be9fd;
-    --blue: #6495ed;
-    --purple: #bd93f9;
-    --pink: #ff79c6;
-}
-
-input[type=checkbox]:checked:after {
-    background-color: unset !important;
-}
-
-input[type=checkbox] {
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 50%;
-    border: 1px solid var(--text-faint);
-}
-input[type=checkbox]:focus{
-    outline:0;
-}
-input[type=checkbox]:checked {
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-image: url(data:image/svg+xml;utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>);
-}
-
-.markdown-preview-view .task-list-item-checkbox { margin-left:5px; } 
-.markdown-preview-view .task-list-item { padding-inline-start:0px; }
-
-
-/* Checklists, task lists, checkboxes */
-
-:root {
-    --checkbox-size2:17px;
-    --checkbox-icon:20px;
-    --checkbox-radius:50%;
-    --checkbox-top:2px;
-    --checkbox-left:0px;
-    --checkbox-margin:0px 6px 0px -1.35em; }
-
-.checkbox-square {
-    --checkbox-size2:15px;
-    --checkbox-icon:17px;
-    --checkbox-radius:4px;
-    --checkbox-top:1px;
-    --checkbox-left:0px;
-    --checkbox-margin:0px 8px 0px -1.35em;
-}
-
-input[type=checkbox] {
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: var(--checkbox-radius);
-    border: 1px solid var(--text-faint);
+    margin: 0;
     padding: 0;
-    margin: 0 6px 0 0;
-    width: var(--checkbox-size2);
-    height: var(--checkbox-size2);
+    line-height: 1.1;
 }
 
-ul > li.task-list-item[data-task="x"], ul > li.task-list-item[data-task="X"] {
-    text-decoration: line-through;
-    opacity: 0.8;
+/* ANIMACIÓN PARA ZOOM */
+@keyframes example2 {
+    100% { background-color: var(--background-primary); }
+    50% { background-color: var(--background-secondary); }
+    100% { background-color: var(--background-primary); }
 }
 
-input[type=checkbox]:hover,
-input[type=checkbox]:focus {
-    outline: 0;
-    border-color: var(--text-muted);
-}
-
-.checklist-plugin-main .group .compact > .toggle .checked,
-.is-flashing input[type=checkbox]:checked,
-input[type=checkbox]:checked {
-    background-color: var(--color-green);
-    border: 1px solid var(--background-modifier-accent);
-    background-position: 44% 55%;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>'); }
-
-.markdown-preview-section > .contains-task-list {
-    padding-bottom: 0.5em;
-}
-
-body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]),
-body .markdown-preview-view ul > li.task-list-item.is-checked {
-    color: var(--text-normal);
-    opacity: 0.8;
-}
-
-.markdown-preview-view .task-list-item.is-checked {
-    opacity: 0.8;
-    text-decoration: line-through;
-}
-
-body.minimal-strike-lists .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="x"]),
-body.minimal-strike-lists .markdown-preview-view ul li[data-task="x"].task-list-item.is-checked,
-body.minimal-strike-lists li[data-task="x"].task-list-item.is-checked {
-    color: var(--text-faint);
-}
-
-/* Preview offset */
-
-ul > li.task-list-item .task-list-item-checkbox {
-    margin-left: -1.35em;
-}
-
-/* Editor */
-
-.mod-cm6 .HyperMD-task-line[data-task] .task-list-item-checkbox {
-    margin: -2px 1px 0 -0.6em;
-}
-
-.is-mobile .mod-cm6 .HyperMD-task-line[data-task] .task-list-item-checkbox {
-    margin-left: -0.4em;
-}
-
-.is-mobile .markdown-preview-view input[type=checkbox].task-list-item-checkbox {
-    top: 0.2em;
-}
-
-.task-list-item-checkbox,
-.markdown-preview-view .task-list-item-checkbox {
-    filter: none;
-    width: 1.2em;
-    height: 1.2em;
-    position: relative;
-    top: var(--checkbox-top);
-    left: var(--checkbox-left);
-    line-height: 0;
-}
-
-.markdown-preview-view ul > li.task-list-item {
-    text-indent: 0;
-    line-height: var(--line-height);
-}
-
-.markdown-preview-view .task-list-item {
-    padding-inline-start: 0;
-}
-
-.side-dock-plugin-panel-inner {
-    padding-right: 6px;
-    padding-left: 6px;
-}
-
-/* Toggle switches */
-
-.checkbox-container {
-    background-color: var(--background-secondary);
-    box-shadow: inset 0 0px 1px 0px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgb(114, 114, 114);
-    width: 40px;
-    height: 22px;
-    cursor: var(--cursor);
-}
-
-.checkbox-container.is-enabled {
-    border-color: var(--interactive-accent);
-}
-
-.checkbox-container.is-enabled:after {
-    transform: translate3d(20px, 0, 0);
-}
-
-.checkbox-container:after {
-    background: var(--text-normal);
-    border: none;
-    margin: 1px 0 0 0;
-    height: 18px;
-    width: 18px;
-    border-radius: 26px;
-    transform: translate3d(2px, 0, 0);
-    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
-    transition: all 0.1s linear;
-}
-
-.checkbox-container:hover:after {
-    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.1);
-    transition: all 0.1s linear
- }
-
-/* Checklist icons */
-
-.cm-formatting.cm-formatting-task.cm-property {
-    font-family: var(--font-monospace);
-    font-size: 90%; }
-
-input[data-task=">"]:checked,
-input[data-task="!"]:checked,
-input[data-task="-"]:checked,
-input[data-task="<"]:checked,
-input[data-task="l"]:checked,
-input[data-task="*"]:checked,
-input[data-task="I"]:checked,
-input[data-task="p"]:checked,
-input[data-task="f"]:checked,
-input[data-task="k"]:checked,
-input[data-task="u"]:checked,
-input[data-task="w"]:checked,
-input[data-task="c"]:checked,
-input[data-task="d"]:checked,
-input[data-task="b"]:checked,
-li[data-task=">"] > input:checked,
-li[data-task="!"] > input:checked,
-li[data-task="-"] > input:checked,
-li[data-task="<"] > input:checked,
-li[data-task="l"] > input:checked,
-li[data-task="*"] > input:checked,
-li[data-task="I"] > input:checked,
-li[data-task="p"] > input:checked,
-li[data-task="f"] > input:checked,
-li[data-task="k"] > input:checked,
-li[data-task="u"] > input:checked,
-li[data-task="d"] > input:checked,
-li[data-task="w"] > input:checked,
-li[data-task="c"] > input:checked,
-li[data-task="b"] > input:checked,
-li[data-task=">"] > p > input:checked,
-li[data-task="!"] > p > input:checked,
-li[data-task="-"] > p > input:checked,
-li[data-task="<"] > p > input:checked,
-li[data-task="l"] > p > input:checked,
-li[data-task="*"] > p > input:checked,
-li[data-task="I"] > p > input:checked,
-li[data-task="p"] > p > input:checked,
-li[data-task="f"] > p > input:checked,
-li[data-task="k"] > p > input:checked,
-li[data-task="u"] > p > input:checked,
-li[data-task="d"] > p > input:checked,
-li[data-task="w"] > p > input:checked,
-li[data-task="c"] > p > input:checked,
-li[data-task="b"] > p > input:checked {
-    border: none;
-    border-radius: 0;
-    background-image: none;
-    background-color: currentColor;
-    -webkit-mask-size: var(--checkbox-icon);
-    -webkit-mask-position: 50% 50%;
-}
-
-/* [>] Forwarded */
-
-input[data-task=">"]:checked,
-li[data-task=">"] > input:checked,
-li[data-task=">"] > p > input:checked {
-    color: var(--text-faint);
-    transform: rotate(90deg);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E"); }
-
-/* [<] Schedule */
-
-input[data-task="<"]:checked,
-li[data-task="<"] > input:checked,
-li[data-task="<"] > p > input:checked {
-    color: var(--text-faint);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z' clip-rule='evenodd' /%3E%3C/svg%3E");
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
-
-/* [?] Question */
-
-input[data-task="?"]:checked,
-li[data-task="?"] > input:checked,
-l  i[data-task="?"] > p > input:checked {
-    background-color: var(--color-yellow);
-    border-color: var(--color-yellow);
-    background-position: 50% 50%;
-    background-size: 200% 90%;
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="white" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E'); }
-.theme-dark input[data-task="?"]:checked,
-.theme-dark li[data-task="?"] > input:checked,
-.theme-dark li[data-task="?"] > p > input:checked {
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="black" fill-opacity="0.8" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E'); }
-
-/* [/] Incomplete */
-
-input[data-task="/"]:checked,
-li[data-task="/"] > input:checked,
-li[data-task="/"] > p > input:checked {
-    background-image: none;
-    background-color: transparent;
-    position: relative;
-    overflow: hidden; }
-    input[data-task="/"]:checked:after,
-    li[data-task="/"] > input:checked:after,
-    li[data-task="/"] > p > input:checked:after {
-    content: " ";
+/* ORDENAMIENTO */
+.cards table.dataview thead {
+    user-select: none;
+    width: 180px;
     display: block;
+    float: right;
+    position: relative;
+    text-align: right;
+    height: 24px;
+    padding-bottom: 4px;
+}
+
+.cards table.dataview thead:before {
+    content: '';
     position: absolute;
-    background-color: var(--background-modifier-accent);
-    width: calc(50% - 0.5px);
-    height: 100%; }
-
-/* [!] Important */
-
-input[data-task="!"]:checked,
-li[data-task="!"] > input:checked,
-li[data-task="!"] > p > input:checked {
-    color: var(--orange);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
-
-/* ["] Quote */
-
-input[data-task="""]:checked,
-li[data-task="""] > input:checked,
-li[data-task="""] > p > input:checked,
-input[data-task="\""]:checked,
-li[data-task="\""] > input:checked,
-li[data-task="\""] > p > input:checked {
-    background-position: 50% 50%;
-    background-color: var(--cyan);
-    border-color: var(--cyan);
-    background-size: 75%;
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="white" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E'); }
-.theme-dark input[data-task="""]:checked,
-.theme-dark li[data-task="""] > input:checked,
-.theme-dark li[data-task="""] > p > input:checked,
-.theme-dark input[data-task="\""]:checked,
-.theme-dark li[data-task="\""] > input:checked,
-.theme-dark li[data-task="\""] > p > input:checked {
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="black" fill-opacity="0.7" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E'); }
-
-/* [-] Canceled */
-
-input[data-task="-"]:checked,
-li[data-task="-"] > input:checked,
-li[data-task="-"] > p > input:checked {
-    color: var(--text-faint);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
-
-
-/* [*] Star */
-
-input[data-task="*"]:checked,
-li[data-task="*"] > input:checked,
-li[data-task="*"] > p > input:checked {
-    color: var(--yellow);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
-}
-
-/* [l] Location */
-input[data-task="l"]:checked,
-li[data-task="l"] > input:checked,
-li[data-task="l"] > p > input:checked {
-    color: var(--red);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
-
-/* [i] Info */
-
-input[data-task="i"]:checked,
-li[data-task="i"] > input:checked,
-li[data-task="i"] > p > input:checked {
-    background-color: var(--blue);
-    border-color: var(--blue);
-    background-position: 50%;
-    background-size: 100%;
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="white" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E'); }
-
-.theme-dark input[data-task="i"]:checked,
-.theme-dark li[data-task="i"] > input:checked,
-.theme-dark li[data-task="i"] > p > input:checked {
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="black" fill-opacity="0.8" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E'); }
-
-/* [S] Amount/savings/money */
-
-input[data-task="S"]:checked,
-li[data-task="S"] > input:checked,
-li[data-task="S"] > p > input:checked {
-    border-color: var(--green);
-    background-color: var(--green);
-    background-size: 100%;
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill="white" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E'); }
-
-    .theme-dark input[data-task="S"]:checked,
-.theme-dark li[data-task="S"] > input:checked,
-.theme-dark li[data-task="S"] > p > input:checked {
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill-opacity="0.8" fill="black" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E'); }
-
-/* [I] Idea/lightbulb */
-
-input[data-task="I"]:checked,
-li[data-task="I"] > input:checked,
-li[data-task="I"] > p > input:checked {
-    color: var(--yellow);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E"); }
-
-/* [f] Fire */
-
-input[data-task="f"]:checked,
-li[data-task="f"] > input:checked,
-li[data-task="f"] > p > input:checked {
-    color: var(--red);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
-
-
-/* [k] Key */
-
-input[data-task="k"]:checked,
-li[data-task="k"] > input:checked,
-li[data-task="k"] > p > input:checked {
-    color: var(--yellow);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
-
-/* [u] Up */
-
-input[data-task="u"]:checked,
-li[data-task="u"] > input:checked,
-li[data-task="u"] > p > input:checked {
-    color: var(--green);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
-
-/* [d] Down */
-
-input[data-task="d"]:checked,
-li[data-task="d"] > input:checked,
-li[data-task="d"] > p > input:checked {
-    color: var(--red);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
-
-/* [w] Win */
-
-input[data-task="w"]:checked,
-li[data-task="w"] > input:checked,
-li[data-task="w"] > p > input:checked {
-    color: var(--purple);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E"); }
-
-/* [p] Pros */
-
-input[data-task="p"]:checked,
-li[data-task="p"] > input:checked,
-li[data-task="p"] > p > input:checked {
-    color: var(--green);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E"); }
-
-/* [c] Cons */
-input[data-task="c"]:checked,
-li[data-task="c"] > input:checked,
-li[data-task="c"] > p > input:checked {
-    color: var(--orange);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E"); }
-
-/* [b] Bookmark */
-
-input[data-task="b"]:checked,
-li[data-task="b"] > input:checked,
-li[data-task="b"] > p > input:checked {
-    color: var(--orange);
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E"); }
-
-body:not(.minimal-icons-off) svg.checkbox-glyph {
-    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="black" d="M10.933 13.519l-2.226-2.226l-1.414 1.414l3.774 3.774l5.702-6.84l-1.538-1.282z"/><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 19V5h14l.002 14H5z" fill="currentColor"></path></svg>'); }
-
-.is-mobile .checkbox-container {
-    flex: 1 0 40px;
-    max-width: 40px;
-}
-
-.mod-publish .file-tree-item-checkbox {
-    filter: hue-rotate(0);
-}
-
-div.tree-item-self.bookmark.is-clickable {
-    margin-inline-start: 22px !important;
-}
-
-/* No funciona por jerarquía...*/ 
-.workspace-leaf-content[data-type="bookmarks"] .tree-item {
-margin-inline-start: 12px !important;
-}
-
-.checklist-plugin-main .group .checkbox {
-    border: 1px solid var(--background-modifier-border-hover);
-    min-height: 18px;
-    min-width: 18px;
-    height: 18px;
-    width: 18px; }
-
-checklist-plugin-main .group .checkbox:hover {
-    border: 1px solid var(--background-modifier-border-focus); }
-
-body .kanban-plugin__checkbox-label {
+    right: 0;
+    top: 0;
+    height: var(--icon-size);
+    background-repeat: no-repeat;
+    cursor: var(--cursor);
+    text-align: right;
+    padding: 4px 10px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    font-weight: 500;
     font-size: var(--font-adaptive-small);
-    color: var(--text-muted); }
+    opacity: 0.65;
+    background-position: center center;
+    background-size: var(--icon-size);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="white" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+}
 
+.theme-light .cards table.dataview thead:before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="black" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
+}
 
-/* Checkbox */
+.cards table.dataview thead:hover:before {
+    opacity: 0.9;
+}
 
-.block-language-leaflet .leaflet-control-expandable-list .input-container .input-item > input {
-    appearance: none; }
+.cards table.dataview thead > tr {
+    top: 0;
+    position: absolute;
+    display: none;
+    z-index: 9;
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--background-secondary);
+    box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
+    padding: 6px;
+    border-radius: 6px;
+    flex-direction: column;
+    margin: 26px 0 0 0;
+    width: 100%;
+}
 
-ul.todoist-task-list > li.task-list-item .task-list-item-checkbox {
-    margin: 0; }
+.cards table.dataview thead:hover > tr {
+    display: flex;
+}
 
-.is-live-preview .contains-task-list.todoist-task-list .task-metadata {
-    padding-left: calc(var(--checkbox-size2) + 0.6em); }
-
-body .todoist-p1 > input[type="checkbox"]:hover {
-    opacity: 0.8; }
-
-body .todoist-p2 > input[type="checkbox"] {
-    border: 1px solid var(--yellow); }
-
-body .todoist-p2 > input[type="checkbox"]:hover {
-    opacity: 0.8; }
-
-body .todoist-p3 > input[type="checkbox"] {
-    border: 1px solid var(--blue); }
-
-/*----------------------*/
-/* Snippet - Checboxes */
-/*--------------------*/
-    
+.cards table.dataview thead > tr > th {
+    width: 100%;
+    font-weight: 400;
+    color: var(--text-muted);
+    cursor: var(--cursor-link);
+    border: none;
+    background-color: var(--background-secondary);
+}
+/*==================================*/
+/* Snippet END - CARDS */
+/*================================*/
 
 /*==================================*/
-/* Snippet - Customize tag colours */
+/* Snippet - Customize tag colours - Tag Pills */
 /*================================*/
 
 a.tag[href*='#ToDo'] {
@@ -4009,8 +3549,8 @@ a.tag[href*='#ToDo']:hover {
     font-weight: bold;
 }
 
-span.cm-formatting cm-formatting-hashtag  cm-hashtag cm-hashtag-begin cm-meta cm-tag-ToDo{
-    background-color: rgb(173 0 0) !important;
+span.cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-ToDo {
+    background-color: rgb(173, 0, 0) !important;
     color: white !important;
 }
 
@@ -4031,29 +3571,29 @@ span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-Completed{
 }
 
 a.tag[href*='#InProgress']{
-    background-color: rgb(166 104 0) !important;
+    background-color: rgb(166, 104, 0) !important;
     color: white !important;
 }
 
 a.tag[href*='#InProgress']:hover{
-    color: rgb(166 104 0) !important;
+    color: rgb(166, 104, 0) !important;
     background-color: white !important; 
     font-weight: bold;
 }
 
 a.tag[href*='#regrabar']{
-    background-color: rgb(203 0 0) !important;
+    background-color: rgb(203, 0, 0) !important;
     color: white !important;
 }
 
 a.tag[href*='#regrabar']:hover{
     background-color:  white !important;
-    color: rgb(203 0 0) !important;
+    color: rgb(203, 0, 0) !important;
     font-weight: bold;
 }
 
 span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-regrabar{
-    background-color: rgb(203 0 0) !important;
+    background-color: rgb(203, 0, 0) !important;
     color: white !important;
 }
 
@@ -4064,7 +3604,7 @@ span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-ToDo{
 }
 
 span.cm-hashtag.cm-hashtag-end.cm-meta.cm-tag-InProgress {
-    background-color: rgb(166 104 0);
+    background-color: rgb(166, 104, 0) !important;
     color: white !important;
 }
 
@@ -4182,6 +3722,7 @@ img:not(.emoji) {
     margin-right: auto;
     margin-top: 22px;
     margin-bottom: 25px;
+    justify-self: center;
 }
 
 /* Image hover */
@@ -4200,30 +3741,6 @@ img:not(:hover) {
 /*-------------------------*/
 /* End - Snippet - Images */
 /*-----------------------*/
-
-/*====================*/
-/* Snippet - Popover */
-/*==================*/
-
-.popover {
-    border: 1px solid var(--border-color);
-    background-color: var(--background-secondary);
-}
-
-
-/* Bigger link popup preview */
-
-.popover.hover-popover {
-    transform: scale(0.95); /* makes the content smaller */
-    max-width: 550px;     /* was 400 */
-    min-width: 500px;     /* was 400 */
-    border: 2px solid var(--text-accent);
-    border-radius: 23px;
-}
-
-/*--------------------------*/
-/* End - Snippet - Popover */
-/*------------------------*/
 
 /*====================*/
 /* Snippet - MathJax */
@@ -4311,6 +3828,1029 @@ mjx-math {
 /* End - Snippet - compact_table_dataview */
 /* ---------------------------- */
 
+/* ------------------------------ */
+/* MCL Multi Column CSS - Versión Global (Sin clase .mcl) */
+/* ---------------------------- */
+
+/* === README ===
+	Snippet: MCL Multi Column Global / Modified to work without .mcl class
+	Original Author: Faiz Khuzaimah / twitter: @faizkhuzaimah / github: https://github.com/efemkay
+	Modified to work globally without requiring .mcl class
+*/
+
+body {
+	/* for list column, grid and card */
+	--list-min-width: 200px;
+	--col-rule-color: var(--background-modifier-border);
+	--col-rule-width: 1px;
+	--list-grid-min-width: 250px;
+	--list-grid-wide-min-width: 350px;
+}
+
+.theme-dark {
+	/* --background-mcl-card: hsl(300, 5%, 15%); */
+}
+
+.theme-light {
+	/* --background-mcl-card: hsl(300, 5%, 90%); */
+}
+
+/* === General === */
+
+/* -- Fixed Width definition -- */
+div[data-callout-metadata*="fw"].callout.callout.callout { flex-grow: 0; flex-shrink: 0;}
+div[data-callout-metadata*="fw1"].callout.callout.callout.callout { flex-basis: 100px; width: 100px; }
+div[data-callout-metadata*="fw2"].callout.callout.callout.callout { flex-basis: 200px; width: 200px; }
+div[data-callout-metadata*="fw3"].callout.callout.callout.callout { flex-basis: 300px; width: 300px; }
+div[data-callout-metadata*="fw4"].callout.callout.callout.callout { flex-basis: 400px; width: 400px; }
+div[data-callout-metadata*="fw5"].callout.callout.callout.callout { flex-basis: 500px; width: 500px; }
+div[data-callout-metadata*="fw6"].callout.callout.callout.callout { flex-basis: 600px; width: 600px; }
+div[data-callout-metadata*="fw7"].callout.callout.callout.callout { flex-basis: 700px; width: 700px; }
+div[data-callout-metadata*="fw8"].callout.callout.callout.callout { flex-basis: 800px; width: 800px; }
+div[data-callout-metadata*="fw9"].callout.callout.callout.callout { flex-basis: 900px; width: 900px; }
+div[data-callout-metadata*="pw1"].callout.callout.callout.callout { flex-basis: 10%; width: 10%; }
+div[data-callout-metadata*="pw2"].callout.callout.callout.callout { flex-basis: 18%; width: 18%; }
+div[data-callout-metadata*="pw3"].callout.callout.callout.callout { flex-basis: 28%; width: 28%; }
+div[data-callout-metadata*="pw4"].callout.callout.callout.callout { flex-basis: 38%; width: 38%; }
+div[data-callout-metadata*="pw5"].callout.callout.callout.callout { flex-basis: 48%; width: 48%; }
+div[data-callout-metadata*="pw6"].callout.callout.callout.callout { flex-basis: 58%; width: 58%; }
+div[data-callout-metadata*="pw7"].callout.callout.callout.callout { flex-basis: 68%; width: 68%; }
+div[data-callout-metadata*="pw8"].callout.callout.callout.callout { flex-basis: 78%; width: 78%; }
+div[data-callout-metadata*="pw9"].callout.callout.callout.callout { flex-basis: 88%; width: 88%; }
+
+/* metadata "wide-x" to control subcallout flexible max width */
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="mw0"].callout.callout { flex-basis: 0; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw1"].callout { flex: 1 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw2"].callout { flex: 2 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw3"].callout { flex: 3 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw4"].callout { flex: 4 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw5"].callout { flex: 5 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw6"].callout { flex: 6 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw7"].callout { flex: 7 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw8"].callout { flex: 8 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw9"].callout { flex: 9 0 auto; }
+
+/* === Multi Column Callout (MCC) === */
+
+/* common MCC variables */
+body {
+	--mcc-img-snw-display: none;
+	--callout-min-width: 200px;
+	--callout-nowrap-min-width: 250px;
+	--callout-gap: 1em;
+	--callout-margin: 0px 5px;
+}
+
+[data-callout="multi-column"].callout {
+	--callout-blend-mode: normal;
+}
+
+/* -- Main MCC Code -- */
+
+/* remove callout-title and make callout-content as part of main callout for box formatting */
+div[data-callout="multi-column"].callout > .callout-title { display: none; }
+div[data-callout="multi-column"].callout > .callout-content { display: contents; }
+
+/* make the main callout a flex and remove box formatting */
+div[data-callout="multi-column"].callout {
+	display: flex; 
+	flex-wrap: wrap; 
+	gap: var(--callout-gap); 
+	background: unset; 
+	border: unset; 
+	margin: unset; 
+	padding: unset; 
+	clear: both; 
+	--columns: unset;
+}
+
+/* make the subcallout in flex column to allow growing vertically */
+div[data-callout="multi-column"].callout .callout:not([data-callout="multi-column"]) { 
+	display: flex; 
+	flex-direction: column; 
+}
+
+div[data-callout="multi-column"].callout:not(.is-collapsed) .callout { 
+	margin-inline: var(--callout-margin); 
+	margin-block: var(--callout-margin); 
+}
+
+div[data-callout="multi-column"].callout .callout .callout-content { flex-grow: 1; }
+
+div[data-callout="multi-column"].callout > .callout-content > *:is(div,ul,blockquote,p) { 
+	flex: 1 1 var(--callout-min-width); 
+	margin: 25px 0px;
+}
+
+/* metadata "wide-x" to control subcallout flexible max width */
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="min-0"] { flex-basis: 0; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="wide-2"] { flex-grow: 2; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="wide-3"] { flex-grow: 3; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="wide-4"] { flex-grow: 4; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="wide-5"] { flex-grow: 5; }
+
+@media (min-width: 500px) {
+	div[data-callout="multi-column"].callout > div.callout-content .callout.is-collapsed { 
+		box-shadow: unset; 
+		height: min-content;
+	}
+}
+
+/* -- MCC Variant - Flexible Height for Subcallout / Children -- */
+div[data-callout="multi-column"][data-callout-metadata*="flex-h"].callout { align-items: flex-start; }
+
+/* -- MCC Variation - Fixed Columns -- */
+div[data-callout="multi-column"][data-callout-metadata*="col3"]:not([data-callout-metadata*="icons"]).callout {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* -- MCC Variation - Icons -- */
+div[data-callout="multi-column"][data-callout-metadata*="icons"] {
+	&.callout { justify-content: center; }
+	&.callout .callout { display: flex; flex-direction: row; flex-wrap: wrap; }
+	&.callout.callout .callout-content > p { flex-grow: 1; text-align: center; }
+	
+	/* Options for number of columns */
+	&[data-callout-metadata*="col2"].callout.callout .callout-content > p { flex-basis: 40%; }
+	&[data-callout-metadata*="col3"].callout.callout .callout-content > p { flex-basis: 30%; }
+	&[data-callout-metadata*="col4"].callout.callout .callout-content > p { flex-basis: 22%; }
+	&[data-callout-metadata*="col5"].callout.callout .callout-content > p { flex-basis: 18%; }
+	
+	/* listive theme */
+	&.callout p:first-child { margin-top: revert; }
+}
+
+/* -- MCC Variation - Fixed Width Option -- */
+div[data-callout="multi-column"][data-callout-metadata*="center-fixed"].callout { justify-content: center; }
+div[data-callout="multi-column"][data-callout-metadata*="left-fixed"].callout { justify-content: flex-start; }
+div[data-callout="multi-column"][data-callout-metadata*="right-fixed"].callout { justify-content: flex-end; }
+div[data-callout="multi-column"][data-callout-metadata*="fixed"].callout > .callout-content > *:is(div,ul) { flex-grow: 0; }
+
+/* Callout size for Fixed Width Option */
+div[data-callout="multi-column"][data-callout-metadata*="fixed"][data-callout-metadata*="small"].callout > .callout-content > *:is(div,ul) { 
+	flex-basis: calc( var(--float-small-width) * 0.5 ); 
+}
+div[data-callout="multi-column"][data-callout-metadata*="fixed"][data-callout-metadata*="medium"].callout > .callout-content > *:is(div,ul) { 
+	flex-basis: calc( var(--float-medium-width) * 0.65); 
+}
+div[data-callout="multi-column"][data-callout-metadata*="fixed"][data-callout-metadata*="large"].callout > .callout-content > *:is(div,ul) { 
+	flex-basis: calc( var(--float-large-width) * 0.8); 
+}
+
+/* -- MCC Variation - No Wrap Option -- */
+div[data-callout="multi-column"][data-callout-metadata*="no-wrap"].callout {
+	flex-wrap: nowrap; 
+	overflow-x: scroll;
+	
+	& > .callout-content > *:is(div,ul) { flex-shrink: 0; }
+}
+
+/* No-Wrap Option, Width Options */
+.callout[data-callout="multi-column"][data-callout-metadata*="no-wrap"] .callout[data-callout-metadata*="small"] { flex-basis: 300px; }
+.callout[data-callout="multi-column"][data-callout-metadata*="no-wrap"] .callout[data-callout-metadata*="medium"] { flex-basis: 400px; }
+.callout[data-callout="multi-column"][data-callout-metadata*="no-wrap"] .callout[data-callout-metadata*="large"] { flex-basis: 600px; }
+
+/* Align center for items in callout */
+div[data-callout="multi-column"] .callout[data-callout-metadata*="center"] { text-align: center; }
+
+/* -- Special Adjustment for Community Themes -- */
+div[data-callout="multi-column"].callout > .callout-content { margin-top: unset;}
+div[data-callout="multi-column"].callout:not(.is-collapsed) { box-shadow: unset;}
+
+/* Blue Topaz - remove box shadow from main [!multi-column] */
+body[class*="notebook-liked-markdown-page"].shade-callout-style .callout[data-callout="multi-column"] { 
+	box-shadow: unset !important; 
+}
+
+/* Minimal -  .dataview.list-view-ul width */
+body:not(.table-100):not(.table-max):not(.table-wide) .markdown-preview-view.is-readable-line-width:not(.table-100):not(.table-max):not(.table-wide) div[data-callout="multi-column"].callout .dataview.list-view-ul {
+	width: auto;
+}
+
+/* Minimal -- Callout Outline */
+.callouts-outlined div[data-callout="multi-column"].callout:not(.is-collapsed) .callout:not([data-callout="multi-column"]) {
+	margin-top: 1em;
+}
+
+/* -- Special Adjustment for Plugins / Markdown Elements -- */
+div[data-callout*="multi-column"].callout .callout-content span.image-embed + .snw-reference { 
+	display: var(--mcc-img-snw-display); 
+}
+
+/* === Blank Container "DIV"'s === */
+
+/* "blank-container" - no bg, no border, no title */
+div[data-callout*="blank"].callout {--callout-blend-mode: normal;}
+div[data-callout*="blank"].callout > .callout-title { display: none; }
+div[data-callout*="blank"].callout > .callout-content {display: contents;}
+div[data-callout*="blank"].callout { 
+	border: 0; 
+	padding-top: 0; 
+	padding-inline: 5px; 
+	background: unset; 
+	box-shadow: unset; 
+}
+
+/* -- No Margin -- */
+div[data-callout-metadata*="no-margin"]:is(.cm-callout, .callout.callout, .callout.callout .callout-content) {
+	margin: 0; 
+	padding: 0;
+}
+
+/* -- No Margin for only child -- */
+div[data-callout*="blank"].callout .callout-content > p:only-child {
+	margin-block: 0;
+}
+
+/* -- Special Adjustment for Themes -- */
+div[data-callout*="blank"] .callout-content::before { display: none; }
+
+/* === Text Justify === */
+.text-justify :is(.markdown-preview-view p,.markdown-source-view .cm-line) { 
+	text-align: justify; 
+}
+
+/* === Floating Callout - Base === */
+
+/* variables */
+body {
+	--float-small-width: 300px;
+	--float-medium-width: 400px;
+	--float-large-width: 600px;
+	--float-left-callout-margin: 0 15px 0 0;
+	--float-right-callout-margin: 0 0 0 15px;
+	--float-callout-top-margin: 0em;
+	--float-callout-bottom-margin: 0em;
+	--float-callout-snw-display: none;
+	--float-left-callout-margin-inline: 0 12px;
+	--float-right-callout-margin-inline: 12px 0;
+	--float-snw-display: none;
+}
+
+/* -- Main Code. Use media query so that floats only works when there's enough width */
+@media (min-width: 500px){
+	.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-left"]) { 
+		display: inline; 
+		z-index: 30;
+	}
+	.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-left"]) > div > .callout { 
+		float: left; 
+		z-index: 30; 
+	}
+	.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-left"]) > .edit-block-button { 
+		display: none; 
+	}
+	.markdown-reading-view div[data-callout-metadata*="left"].callout {float: left;}
+
+	.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-right"]) { 
+		display: inline; 
+		z-index: 30;
+	}
+	.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-right"]) > div > .callout { 
+		float: right; 
+		z-index: 30; 
+	}
+	.markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-right"]) > .edit-block-button { 
+		display: none; 
+	}
+	.markdown-reading-view div[data-callout-metadata*="right"].callout {float: right; }
+
+	.markdown-source-view.mod-cm6 .cm-embed-block.cm-callout :is(.callout[data-callout-metadata*="left"], .callout[data-callout-metadata*="right"]) .callout-content > p:last-of-type { 
+		margin-bottom: auto;
+	}
+
+	[data-callout-metadata*="float-right"].cm-embed-block.cm-callout {width: auto !important;}
+
+	/* remove margin from first para in the float callout */
+	.callout:is(div[data-callout-metadata*="left"],div[data-callout-metadata*="right"]) .callout-content > :is(p:first-child,ul:first-child,ol:first-child) {
+		margin-top: 0;
+	}
+
+	/* Adjustable Gap */
+	.markdown-source-view.mod-cm6 .callout:is(div[data-callout-metadata*="left"]),
+	.markdown-source-view.mod-cm6 .callout:is(div[data-callout-metadata*="right"]) {
+		margin-top: calc(1em * var(--line-height-normal) + var(--float-callout-top-margin)); 
+	}
+
+	.markdown-source-view.mod-cm6 .callout:is(div[data-callout-metadata*="left"]),
+	.markdown-reading-view div[data-callout-metadata*="left"].callout {
+		margin-inline: var(--float-left-callout-margin-inline);
+	}
+	.markdown-source-view.mod-cm6 .callout:is(div[data-callout-metadata*="right"]),
+	.markdown-reading-view div[data-callout-metadata*="right"].callout {
+		margin-inline: var(--float-right-callout-margin-inline);
+	}
+}
+
+/* -- FC Size Options -- */
+[data-callout-metadata*="-small"].callout {width: var(--float-small-width);}
+[data-callout-metadata*="-medium"].callout {width: var(--float-medium-width);}
+[data-callout-metadata*="-large"].callout {width: var(--float-large-width);}
+
+/* -- Special Adjustment for Plugins / Markdown Elements -- */
+
+/* Option for Caption */
+div:is([data-callout-metadata*="caption"]).callout > .callout-content > p .image-embed[alt]:not([alt$=".png"], [alt$=".jpg"], [alt$=".jpeg"], [alt$=".tiff"])::after {
+	content: attr(alt); 
+	text-align: center; 
+	display: block; 
+	font-style: italic; 
+	color: var(--text-muted); 
+}
+
+div:is([data-callout-metadata*="caption"]).callout > .callout-content > p img:not(.emoji) { 
+	display: block; 
+	margin-right: auto; 
+	margin-left: auto;
+}
+
+/* Introduce clear to break the float */
+.embedded-backlinks { clear: both; }
+
+/* for SNW plugin */
+div:is([data-callout-metadata*="caption"],[data-callout-metadata*="left"],[data-callout-metadata*="right"]).callout > .callout-content > p .snw-embed-preview { 
+	display: var(--float-callout-snw-display); 
+	width: min-content; 
+	height: min-content; 
+}
+
+div:is([data-callout-metadata*="caption"],[data-callout-metadata*="left"],[data-callout-metadata*="right"]).callout > .callout-content > p .internal-embed.image-embed ~ br {
+	display: none;
+}
+
+/* === List Column ===*/
+
+/* -- List Column/Grid/Card general styling -- */
+
+/* hide tag in rendered view, dim it in edit mode and small size */
+:is(div[class*="mcl"].markdown-rendered, .markdown-rendered) a[href*="#mcl"] {display: none;}
+.cm-s-obsidian .HyperMD-list-line span[class*="mcl"] {
+	background-color: var(--background-primary) !important; 
+	color: var(--text-faint); 
+	font-size: 0.9rem; 
+}
+
+/* -- List Column using YAML cssclass and Markdown Attributes -- */
+
+/* define the column gap and column rule */
+.two-column-list div > ul,   .two-column-list-block,
+.three-column-list div > ul,  .three-column-list-block,
+.four-column-list div > ul,  .four-column-list-block,
+.multi-column-list div > ul,  .multi-column-list-block {
+	column-gap: 3rem; 
+	column-rule: var(--col-rule-width) solid var(--col-rule-color); 
+}
+
+/* define the column count */
+@media (min-width: 500px ){
+	.two-column-list div > ul,   .two-column-list-block {columns: 2; }
+	.three-column-list div > ul,  .three-column-list-block {columns: 3; }
+	.four-column-list div > ul,  .four-column-list-block {columns: 4; }
+}
+
+.multi-column-list div > ul,  .multi-column-list-block { 
+	column-width: var(--list-min-width); 
+}
+
+/* Special adjustment for footnotes */
+.footnotes [class$="-column-list-block"] li:last-of-type br:last-of-type {display: none;}
+
+/* -- List Column Using Tag (using CSS has) -- */
+
+/* set the column rules at ul level and adjust the margin */
+ul:has(> li > [data-heading] > [href*="#mcl/list-column"]),
+ul:has(> li > [href*="#mcl/list-column"]) {
+	margin-top: 0;
+	column-width: var(--list-min-width); 
+	column-gap: 1rem;
+	column-rule: var(--col-rule-width) solid var(--col-rule-color);
+}
+
+/* give some margin for the div, for first ul only */
+div:has(> ul > li > [href*="#mcl/list-column"]),
+div:has(> ul > li > [data-heading] > [href*="#mcl/list-column"]) {
+	margin-top: 0.8em; 
+}
+
+/* readjust [!blank] display contents */
+div[data-callout*="blank"] > .callout-content:has(li [href*="#mcl/list-column"]) {
+	display: block; 
+	margin: 0; 
+	padding: 0; 
+}
+
+/* -- General Adjustment for List Column -- */
+
+/* Adjustment for misaligned bullets */
+ul:has([href="#mcl/list-column"]) li > .list-bullet::after,
+.markdown-preview-view[class*="column-list"] li > .list-bullet::after,
+.tag-mcllist-column ul li > .list-bullet::after,
+ul[class*="column-list"] li > .list-bullet::after {
+	position: relative; 
+}
+
+/* -- Special Adjustment for Plugins for List Column -- */
+div.cc-container:has(li > [href="#mcl/list-column"]) { width: 100%; }
+
+/* === List Grid (using hashtag) === */
+
+/* -- Main Code -- */
+ul:has(> li > [data-heading] > [href*="#mcl/list-grid"]),
+ul:has(> li > [href*="#mcl/list-grid"]),
+div[class*="mcllist-grid"] ul:first-child {
+	display: grid; 
+	grid-template-columns: repeat(auto-fit,minmax(var(--list-grid-min-width),1fr)); 
+}
+
+ul:has(> li > [data-heading] > [href*="#mcl/list-grid-wide"]),
+ul:has(> li > [href*="#mcl/list-grid-wide"]),
+div[class*="mcllist-grid-wide"] ul:first-child {
+	grid-template-columns: repeat(auto-fit,minmax(var(--list-grid-wide-min-width),1fr)); 
+}
+
+ul:has(> li > [data-heading] > [href*="#mcl/list-grid"]) > li:not(:last-of-type),
+ul:has(> li > [href*="#mcl/list-grid"]) > li:not(:last-of-type),
+div[class*="mcllist-grid"] ul:first-child > li:not(:last-of-type) {
+	padding-right: 1.6em; 
+}
+
+ul:has(> li > [data-heading] > [href*="#mcl/list-grid-sm"]),
+ul:has(> li > [href*="#mcl/list-grid-sm"]),
+div[class*="mcllist-grid-sm"] ul:first-child {
+	--list-grid-min-width: 20%; 
+}
+
+/* dashboard style, page level only */
+@media (min-width: 500px) {
+	.two-column-grid-list div > ul { 
+		display: grid; 
+		grid-column-gap:3em; 
+		grid-template-columns:repeat(2,1fr);
+	}
+}
+
+@media (min-width: 600px) {
+	.three-column-grid-list div > ul { 
+		display: grid; 
+		grid-column-gap:3em; 
+		grid-template-columns:repeat(3,1fr);
+	}
+}
+
+/* === List Card (using hashtag) === */
+
+body {
+	--mcl-card-header-border-width: 1px;
+	--mcl-card-bg-color: var(--background-secondary);
+	--mcl-card-gap: 0.2em;
+	--mcl-card-border-width: 1px;
+	--mcl-card-border-color: var(--background-modifier-border);
+}
+
+/* -- Main Code -- */
+
+/* make the list grid, remove some ul padding */
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), [class*="mcllist-card"]) ul:first-child { 
+	display: grid; 
+	grid-template-columns: repeat(auto-fit,minmax(var(--list-grid-min-width),1fr)); 
+	margin-block-start: 0.5em; 
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card-wide"]), [class*="mcllist-card-wide"]) ul:first-child { 
+	grid-template-columns: repeat(auto-fit, minmax(var(--list-grid-wide-min-width),1fr));
+}
+
+/* unindent first level bullet */
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul ul:not(ul ul ul) { 
+	padding-left: 0.1em; 
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul ul:not(ul ul ul) > li { 
+	margin-inline-start: 0; 
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul { 
+	padding-left: 0; 
+}
+
+:is(.is-mobile .markdown-preview-section) :is(div:has([data-heading*="#mcl/list-card"]), .tag-mcllist-card) :is(ol:not(ol ol ol),  ul:not(ul ul ul)) {
+	padding-left: 0;
+}
+
+/* reposition the collapse indicator and hover behaviour */
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li {
+	position: relative;
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li:hover > .collapse-indicator,
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li > ul > li:hover > .collapse-indicator {
+	opacity: 1;
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li > .collapse-indicator,
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li > ul > li > .collapse-indicator {
+	position: absolute; 
+	right: 0.7em; 
+	padding-right: 0;
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul::before {
+	display: none;
+}
+
+/* decorate the first heading for cards */
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [data-heading*="#mcl/list-card"]) .callout-content, .tag-mcllist-card, .tag-mcllist-card .callout-content) > ul > li:not(.is-collapsed) > [data-heading] {
+	border-bottom: var(--mcl-card-header-border-width) solid var(--mcl-card-border-color); 
+	margin-bottom: 0.2em;
+}
+
+/* hide the list bullet for list-card for first and second level */
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > div > div > ul > li > .list-bullet::after,
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > div > div > ul > li > ul > li > .list-bullet::after,
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > ul > li::before,
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > ul > li > ul > li::before,
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > ul > li > .list-bullet::after,
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) > ul > li > ul > li > .list-bullet::after {
+	visibility: hidden;
+}
+
+/* remove the indentation guide */
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul:not(ul ul ul ul)::before {
+	--indentation-guide-width: 0;
+}
+
+.markdown-rendered.show-indentation-guide :is(div:has(> ul [data-heading*="#mcl/list-card"]), .tag-mcllist-card) li > ul::before,
+.markdown-rendered.show-indentation-guide :is(div:has(> ul [data-heading*="#mcl/list-card"]), .tag-mcllist-card) li > ol::before {
+	border-right: 0; 
+	border-left: 0; 
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) li {
+	list-style: none;
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) li li li {
+	list-style: circle;
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) .callout ul:not(ul ul) > li,
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul:not(ul ul) > li {
+	margin-inline: var(--mcl-card-gap); 
+	margin-bottom: calc(var(--mcl-card-gap)*2); 
+	padding: 0.3em 0.5em; 
+	outline: var(--mcl-card-border-width) solid var(--mcl-card-border-color); 
+	border-radius: 0.5em; 
+	background-color: var(--mcl-card-bg-color);
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul:not(ul ul) > li img {
+	width: 100%;
+}
+
+:is(div:has(> ul [data-heading*="#mcl/list-card"]), div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul img {
+	margin: 0; 
+	float: none;
+}
+
+/* -- Special Adjustment for Themes -- */
+
+/* Sanctum */
+.markdown-rendered .tag-mcllist-card ul img[alt*=right] {margin: 0;}
+
+/*-------------------------*/
+/* Start - Snippet - Marks (resaltados) */
+/*-----------------------*/
+/* =================== RESALTADOS PERSONALIZADOS OBSIDIAN 2025 =================== */
+/* Compatible con CodeMirror 6, versiones recientes Y anotaciones de Zotero */
+
+/* Variables de colores */
+:root,
+body,
+.app-container {
+    --zotero-yellow-rgb: 255, 212, 0;
+    --zotero-red-rgb: 255, 102, 102;
+    --zotero-green-rgb: 95, 178, 54;
+    --zotero-blue-rgb: 46, 168, 229;
+    --zotero-purple-rgb: 162, 138, 229;
+    --zotero-magenta-rgb: 229, 110, 238;
+    --zotero-orange-rgb: 241, 152, 55;
+    --zotero-gray-rgb: 170, 170, 170;
+    --fluro-pink-rgb: 255, 0, 255;
+    --fluro-blue-rgb: 0, 255, 255;
+    --zotero-black-light-rgb: 0, 0, 0;
+    --zotero-black-dark-rgb: 255, 255, 255;
+    --text-highlight-rgb: var(--zotero-yellow-rgb);
+}
+
+/* ============ VISTA PREVIA (Reading Mode) - SOLO SIN ESTILOS INLINE ============ */
+.markdown-rendered mark:not([style*="background"]),
+.markdown-preview-view mark:not([style*="background"]),
+.view-content .markdown-rendered mark:not([style*="background"]) {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--text-highlight-rgb), 0.65) 0.5em,
+        rgba(var(--text-highlight-rgb), 0.35) 1.6em,
+        rgba(var(--text-highlight-rgb), 0.35) calc(100% - 1.4em),
+        rgba(var(--text-highlight-rgb), 0.65) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+/* ============ EDITOR (Live Preview - CodeMirror 6) - SOLO SIN ESTILOS INLINE ============ */
+.cm-editor .cm-content mark:not([style*="background"]),
+.markdown-source-view.mod-cm6 .cm-editor .cm-content mark:not([style*="background"]),
+.cm-line mark:not([style*="background"]),
+.HyperMD-highlight:not([style*="background"]),
+.cm-highlight-mark:not([style*="background"]) {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--text-highlight-rgb), 0.65) 0.5em,
+        rgba(var(--text-highlight-rgb), 0.35) 1.6em,
+        rgba(var(--text-highlight-rgb), 0.35) calc(100% - 1.4em),
+        rgba(var(--text-highlight-rgb), 0.65) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-link .cm-underline, .markdown-source-view.mod-cm6 .cm-url .cm-underline {
+    color: var(--external-link);
+    text-decoration-line: var(--link-external-decoration);
+}
+
+/* ============ COMPATIBILIDAD CON VERSIONES ANTERIORES ============ */
+.cm-s-obsidian span.cm-formatting-highlight:not([style*="background"]),
+.cm-s-obsidian span.cm-highlight:not([style*="background"]) {
+    padding: 0.1em 0.4em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--text-highlight-rgb), 0.4) 0.5em,
+        rgba(var(--text-highlight-rgb), 0.25) 1.6em,
+        rgba(var(--text-highlight-rgb), 0.25) calc(100% - 1.4em),
+        rgba(var(--text-highlight-rgb), 0.4) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+}
+
+/* ============ ESTILOS ESPECÍFICOS PARA COLORES HEX DE ZOTERO ============ */
+
+/* Amarillo Zotero (#ffd400) */
+.markdown-rendered mark[style*="#ffd400"],
+.markdown-preview-view mark[style*="#ffd400"],
+.cm-editor mark[style*="#ffd400"],
+.cm-line mark[style*="#ffd400"] {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-yellow-rgb), 0.65) 0.5em,
+        rgba(var(--zotero-yellow-rgb), 0.35) 1.6em,
+        rgba(var(--zotero-yellow-rgb), 0.35) calc(100% - 1.4em),
+        rgba(var(--zotero-yellow-rgb), 0.65) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Rojo Zotero (#ff6666) */
+.markdown-rendered mark[style*="#ff6666"],
+.markdown-preview-view mark[style*="#ff6666"],
+.cm-editor mark[style*="#ff6666"],
+.cm-line mark[style*="#ff6666"] {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-red-rgb), 0.75) 0.5em,
+        rgba(var(--zotero-red-rgb), 0.45) 1.6em,
+        rgba(var(--zotero-red-rgb), 0.45) calc(100% - 1.4em),
+        rgba(var(--zotero-red-rgb), 0.75) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Verde Zotero (#5fb236) */
+.markdown-rendered mark[style*="#5fb236"],
+.markdown-preview-view mark[style*="#5fb236"],
+.cm-editor mark[style*="#5fb236"],
+.cm-line mark[style*="#5fb236"] {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-green-rgb), 0.65) 0.5em,
+        rgba(var(--zotero-green-rgb), 0.35) 1.6em,
+        rgba(var(--zotero-green-rgb), 0.35) calc(100% - 1.4em),
+        rgba(var(--zotero-green-rgb), 0.65) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Azul Zotero (#2ea8e5) */
+.markdown-rendered mark[style*="#2ea8e5"],
+.markdown-preview-view mark[style*="#2ea8e5"],
+.cm-editor mark[style*="#2ea8e5"],
+.cm-line mark[style*="#2ea8e5"] {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-blue-rgb), 0.65) 0.5em,
+        rgba(var(--zotero-blue-rgb), 0.35) 1.6em,
+        rgba(var(--zotero-blue-rgb), 0.35) calc(100% - 1.4em),
+        rgba(var(--zotero-blue-rgb), 0.65) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Púrpura Zotero (#a28ae5) */
+.markdown-rendered mark[style*="#a28ae5"],
+.markdown-preview-view mark[style*="#a28ae5"],
+.cm-editor mark[style*="#a28ae5"],
+.cm-line mark[style*="#a28ae5"] {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-purple-rgb), 0.65) 0.5em,
+        rgba(var(--zotero-purple-rgb), 0.35) 1.6em,
+        rgba(var(--zotero-purple-rgb), 0.35) calc(100% - 1.4em),
+        rgba(var(--zotero-purple-rgb), 0.65) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Magenta Zotero (#e56eee) */
+.markdown-rendered mark[style*="#e56eee"],
+.markdown-preview-view mark[style*="#e56eee"],
+.cm-editor mark[style*="#e56eee"],
+.cm-line mark[style*="#e56eee"] {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-magenta-rgb), 0.65) 0.5em,
+        rgba(var(--zotero-magenta-rgb), 0.35) 1.6em,
+        rgba(var(--zotero-magenta-rgb), 0.35) calc(100% - 1.4em),
+        rgba(var(--zotero-magenta-rgb), 0.65) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Naranja Zotero (#f19837) */
+.markdown-rendered mark[style*="#f19837"],
+.markdown-preview-view mark[style*="#f19837"],
+.cm-editor mark[style*="#f19837"],
+.cm-line mark[style*="#f19837"] {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-orange-rgb), 0.65) 0.5em,
+        rgba(var(--zotero-orange-rgb), 0.35) 1.6em,
+        rgba(var(--zotero-orange-rgb), 0.35) calc(100% - 1.4em),
+        rgba(var(--zotero-orange-rgb), 0.65) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Gris Zotero (#aaaaaa) */
+.markdown-rendered mark[style*="#aaaaaa"],
+.markdown-preview-view mark[style*="#aaaaaa"],
+.cm-editor mark[style*="#aaaaaa"],
+.cm-line mark[style*="#aaaaaa"] {
+    margin: 0px !important;
+    padding: 0.1em 0.4em !important;
+    border-radius: 0.8em 0.3em !important;
+    background: transparent !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-gray-rgb), 0.65) 0.5em,
+        rgba(var(--zotero-gray-rgb), 0.35) 1.6em,
+        rgba(var(--zotero-gray-rgb), 0.35) calc(100% - 1.4em),
+        rgba(var(--zotero-gray-rgb), 0.65) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    -webkit-box-decoration-break: clone !important;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt) !important;
+    color: var(--text-normal) !important;
+}
+
+/* ============ CLASES DE COLORES (para highlights manuales) ============ */
+/* Aplicar a todos los contextos */
+mark.yellow,
+.markdown-rendered mark.yellow,
+.markdown-preview-view mark.yellow,
+.cm-editor mark.yellow,
+.cm-line mark.yellow {
+    --text-highlight-rgb: var(--zotero-yellow-rgb) !important;
+}
+
+mark.red,
+.markdown-rendered mark.red,
+.markdown-preview-view mark.red,
+.cm-editor mark.red,
+.cm-line mark.red {
+    --text-highlight-rgb: var(--zotero-red-rgb) !important;
+}
+
+mark.green,
+.markdown-rendered mark.green,
+.markdown-preview-view mark.green,
+.cm-editor mark.green,
+.cm-line mark.green {
+    --text-highlight-rgb: var(--zotero-green-rgb) !important;
+}
+
+mark.blue,
+.markdown-rendered mark.blue,
+.markdown-preview-view mark.blue,
+.cm-editor mark.blue,
+.cm-line mark.blue {
+    --text-highlight-rgb: var(--zotero-blue-rgb) !important;
+}
+
+mark.purple,
+.markdown-rendered mark.purple,
+.markdown-preview-view mark.purple,
+.cm-editor mark.purple,
+.cm-line mark.purple {
+    --text-highlight-rgb: var(--zotero-purple-rgb) !important;
+}
+
+mark.magenta,
+.markdown-rendered mark.magenta,
+.markdown-preview-view mark.magenta,
+.cm-editor mark.magenta,
+.cm-line mark.magenta {
+    --text-highlight-rgb: var(--zotero-magenta-rgb) !important;
+}
+
+mark.orange,
+.markdown-rendered mark.orange,
+.markdown-preview-view mark.orange,
+.cm-editor mark.orange,
+.cm-line mark.orange {
+    --text-highlight-rgb: var(--zotero-orange-rgb) !important;
+}
+
+mark.grey,
+.markdown-rendered mark.grey,
+.markdown-preview-view mark.grey,
+.cm-editor mark.grey,
+.cm-line mark.grey {
+    --text-highlight-rgb: var(--zotero-gray-rgb) !important;
+}
+
+mark.pink,
+.markdown-rendered mark.pink,
+.markdown-preview-view mark.pink,
+.cm-editor mark.pink,
+.cm-line mark.pink {
+    --text-highlight-rgb: var(--fluro-pink-rgb) !important;
+}
+
+/* ============ RESALTADO NEGRO - MODO CLARO ============ */
+.theme-light mark.black,
+.theme-light .markdown-rendered mark.black,
+.theme-light .markdown-preview-view mark.black,
+.theme-light .cm-editor mark.black,
+.theme-light .cm-line mark.black {
+    --text-highlight-rgb: var(--zotero-black-light-rgb) !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-black-light-rgb), 0.8) 0.5em,
+        rgba(var(--zotero-black-light-rgb), 0.7) 1.6em,
+        rgba(var(--zotero-black-light-rgb), 0.7) calc(100% - 1.4em),
+        rgba(var(--zotero-black-light-rgb), 0.8) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    color: white !important;
+    font-weight: bold !important;
+    -webkit-text-stroke: 0.8px rgb(73, 64, 0) !important;
+    text-shadow: none !important;
+}
+
+/* ============ RESALTADO NEGRO - MODO OSCURO ============ */
+.theme-dark mark.black,
+.theme-dark .markdown-rendered mark.black,
+.theme-dark .markdown-preview-view mark.black,
+.theme-dark .cm-editor mark.black,
+.theme-dark .cm-line mark.black {
+    --text-highlight-rgb: var(--zotero-black-dark-rgb) !important;
+    background-image: linear-gradient(105deg,
+        transparent 0,
+        transparent 0.3em,
+        rgba(var(--zotero-black-dark-rgb), 0.9) 0.5em,
+        rgba(var(--zotero-black-dark-rgb), 0.95) 1.6em,
+        rgba(var(--zotero-black-dark-rgb), 0.95) calc(100% - 1.4em),
+        rgba(var(--zotero-black-dark-rgb), 0.9) calc(100% - 0.5em),
+        transparent calc(100% - 0.3em),
+        transparent 100%) !important;
+    color: black !important;
+    font-weight: 900 !important;
+    -webkit-text-stroke: 0.5px rgb(73, 64, 0) !important;
+    text-shadow: none !important;
+}
+/* ============ ENLACES EXTERNOS EN RESALTADO NEGRO - MODO CLARO ============ */
+.theme-light mark.black .external-link,
+.theme-light .markdown-rendered mark.black .external-link,
+.theme-light .markdown-preview-view mark.black .external-link,
+.theme-light .cm-editor mark.black .external-link,
+.theme-light .cm-line mark.black .external-link {
+    color: #a0ffa0 !important; /* Verde claro más brillante */
+    font-weight: bold;
+}
+
+/* ============ ENLACES DENTRO DE RESALTADOS ============ */
+.theme-dark .markdown-rendered mark .internal-link {
+    font-weight: bold !important;
+}
+
+.theme-light .markdown-rendered mark .internal-link {
+    color: rgb(255, 166, 0) !important;
+    font-weight: bold !important;
+}
+
+/*-------------------------*/
+/* End - Snippet - Marks (resaltados) */
+/*-----------------------*/
+/* ------------------------------ */
+/* MCL Multi Column CSS - Versión Global (Sin clase .mcl) */
+/* ---------------------------- */
 
 /* =========== PART V. PLUGIN STYLING =========== */
 
@@ -4330,6 +4870,11 @@ mjx-math {
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.obsidian-banner-wrapper {
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 /*-------------------------*/
@@ -4604,156 +5149,727 @@ button.kanban-plugin__new-item-button{
 
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~ Part VI. Other stuff  ~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* ·················· No sé función de este código  ·················· */
+/* ============================================================
+   OPTIMIZACIONES FINALES
+   ============================================================ */
 
-/*
-    .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
-        border-bottom: 2px solid var(--background-secondary-alt);
-        background-color: var(--background-secondary);
+/* Mejora el renderizado de fuentes */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Asegurar que el zoom nativo funcione correctamente */
+.markdown-preview-view,
+.markdown-source-view,
+.cm-editor {
+    /* No bloquear eventos de zoom */
+    touch-action: manipulation;
+}
+
+/* No interferir con el zoom nativo de Obsidian */
+.workspace-leaf-content {
+    zoom: initial;
+}
+
+/* Scrollbar global mejorado */
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+    border-radius: calc(var(--scrollbar-width) / 2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-active-thumb-bg);
+}
+
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+}
+
+/* Mejor accesibilidad */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--text-accent);
+    outline-offset: 2px;
+}
+
+/* Respeta las preferencias de movimiento reducido 
+
+/* ============================================================
+   SNIPPETS ADICIONALES INTEGRADOS
+   ============================================================ */
+
+/*==================*/
+/* Snippet - Cards */
+/*================*/
+
+/* MIT License | Copyright (c) Stephan Ango (@kepano) 
+Cards snippet for Obsidian - Modified and integrated
+author: @kepano
+Support: https://github.com/sponsors/kepano */
+
+/* Make the grid and basic cards */
+
+.cards table.dataview tbody {
+    clear: both;
+    padding: 0.3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--cards-min-width, 100px), var(--cards-max-width, 1fr)));
+    grid-column-gap: 0.4rem;
+    grid-row-gap: 0.4rem;
+    align-items: start;
+}
+
+.cards table.dataview > tbody > tr {
+    background-color: var(--background-secondary-alt);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.3rem;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.15s linear;
+    min-height: 325px;
+}
+
+.cards table.dataview > tbody > tr:hover {
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.21) !important;
+    transition: box-shadow 0.15s linear;
+    border: 2px solid var(--text-normal);
+}
+
+/* Styling elements inside cards */
+
+.cards table.dataview tbody > tr > td {
+    border-bottom: none;
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Título - primera celda */
+.cards table.dataview tbody > tr > td:first-child {
+    font-weight: var(--bold-weight);
+    height: 40px;
+    order: 1;
+}
+
+.cards table.dataview tbody > tr > td:first-child a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    line-height: 1.1;
+    width: 100%;
+    font-size: 0.9em;
+    color: var(--text-accent);
+    text-decoration: none;
+}
+
+/* Autor - segunda celda */
+.cards table.dataview tbody > tr > td:nth-child(2) {
+    font-size: 0.95em;
+    color: var(--text-muted);
+    order: 2;
+    margin-bottom: 5px;
+}
+
+.cards table.dataview tbody > tr > td:nth-child(2) .el-p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    line-height: 1;
+    width: 100%;
+    margin: 0;
+}
+
+/* Imagen - tercera celda */
+.cards table.dataview tbody > tr > td:nth-child(3) {
+    height: var(--cards-image-height, 200px);
+    order: 3;
+    flex-grow: 1;
+    margin: 5px 0;
+}
+
+.cards table.dataview tbody > tr > td:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+    object-fit: var(--cards-image-fit, cover);
+    border-radius: 4px;
+}
+
+/* Progreso - cuarta celda */
+.cards table.dataview tbody > tr > td:nth-child(4) {
+    height: 30px;
+    order: 4;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.cards table.dataview tbody > tr > td:nth-child(4) img {
+    width: 100%;
+    height: auto;
+    max-height: 20px;
+    border-radius: 10px;
+}
+
+.cards table.dataview tbody > tr > td:nth-child(4) .el-p {
+    width: 100%;
+    margin: 0;
+}
+
+/* Tipo de libro - quinta celda */
+.cards table.dataview tbody > tr > td:nth-child(5) {
+    font-size: 0.8em;
+    color: var(--text-muted);
+    font-style: italic;
+    order: 5;
+    margin-top: auto;
+}
+
+/* Si hay más de 5 celdas, manejarlas */
+.cards table.dataview tbody > tr > td:nth-child(n+6) {
+    font-size: 0.8em;
+    order: 6;
+}
+
+/* Helpers para diferentes configuraciones de columnas */
+
+.cards-cols-1 table.dataview tbody { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.cards-cols-2 table.dataview tbody { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cards-cols-3 table.dataview tbody { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cards-cols-4 table.dataview tbody { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cards-cols-5 table.dataview tbody { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cards-cols-6 table.dataview tbody { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.cards-cols-7 table.dataview tbody { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.cards-cols-8 table.dataview tbody { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+.cards-cols-9 table.dataview tbody { grid-template-columns: repeat(9, minmax(0, 1fr)); }
+.cards-cols-10 table.dataview tbody { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+
+/* Responsive improvements */
+@media (min-width: 400pt) {
+    .cards table.dataview tbody {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .cards table.dataview tbody {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards table.dataview tbody {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+/* Helpers para aspect ratios */
+
+.cards-cover.cards table.dataview tbody > tr > td img {
+    object-fit: cover; 
+}
+
+.cards-16-9.cards table.dataview tbody > tr > td img {
+    aspect-ratio: 16/9; 
+}
+
+.cards-1-1.cards table.dataview tbody > tr > td img {
+    aspect-ratio: 1/1; 
+}
+
+.cards-2-1.cards table.dataview tbody > tr > td img {
+    aspect-ratio: 2/1; 
+}
+
+.cards-2-3.cards table.dataview tbody > tr > td img {
+    aspect-ratio: 2/3; 
+}
+
+.cards-align-bottom.cards table.dataview tbody > tr > td:last-child {
+    align-items: flex-end;
+    flex-grow: 1; 
+}
+
+/* Links */
+
+.cards table.dataview tbody > tr > td a {
+    text-decoration: none;
+}
+
+.links-int-on .cards table.dataview tbody > tr > td a {
+    text-decoration: none;
+}
+
+/* Buttons */
+
+.cards table.dataview tbody > tr > td > button {
+    width: 100%;
+    margin: 0.2rem 0;
+}
+
+/* Lists */
+
+.cards table.dataview tbody > tr > td > ul {
+    width: 100%;
+    padding: 0.1em 0 !important;
+    margin: 0 auto !important;
+    font-size: 0.8em;
+}
+
+/* Paragraphs */
+.cards table.dataview tbody > tr > td .el-p {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+/* Sorting */
+
+.cards.table-100 table.dataview thead > tr,
+.table-100 .cards table.dataview thead > tr {
+    right: 0.75rem;
+}
+
+.table-100 .cards table.dataview thead:before,
+.cards.table-100 table.dataview thead:before {
+    margin-right: 0.75rem;
+}
+
+.cards table.dataview thead {
+    user-select: none;
+    width: 180px;
+    display: block;
+    float: right;
+    position: relative;
+    text-align: right;
+    height: 24px;
+    padding-bottom: 4px;
+}
+
+.cards table.dataview thead:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: var(--icon-size);
+    background-repeat: no-repeat;
+    cursor: var(--cursor);
+    text-align: right;
+    padding: 4px 10px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.cards table.dataview thead:hover:before {
+    opacity: 0.9;
+}
+
+.cards table.dataview thead > tr {
+    top: 0;
+    position: absolute;
+    display: none;
+    z-index: 9;
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--background-secondary);
+    box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
+    padding: 6px;
+    border-radius: 6px;
+    flex-direction: column;
+    margin: 26px 0 0 0;
+    width: 100%; 
+}
+
+.cards table.dataview thead:hover > tr {
+    display: flex; 
+}
+
+.cards table.dataview thead > tr > th {
+    width: 100%;
+    font-weight: 400;
+    color: var(--text-muted);
+    cursor: var(--cursor-link);
+    border: none;
+    background-color: var(--background-secondary); 
+}
+
+.cards.markdown-preview-view tbody tr:hover {
+    background-color: transparent;
+}
+
+/* ===============================*/
+/* TARJETAS PARA VIDEOJUEGOS    */
+/* ===============================*/
+
+.cards-games table.dataview > tbody > tr {
+    background-color: var(--background-secondary-alt);
+    border: 1px solid var(--background-modifier-border);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.3rem;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.15s linear;
+    min-height: 190px;
+}
+
+.cards-games table.dataview > tbody > tr:hover {
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.21) !important;
+    transition: box-shadow 0.15s linear;
+}
+
+.cards-games table.dataview tbody > tr > td {
+    border-bottom: none;
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.cards-games table.dataview tbody > tr > td:first-child {
+    font-weight: var(--bold-weight);
+    height: 38px;
+    order: 1;
+}
+
+.cards-games table.dataview tbody > tr > td:nth-child(2) {
+    height: 120px;
+    order: 2;
+    flex-grow: 1;
+    margin: 3px 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.cards-games table.dataview tbody > tr > td:nth-child(2) .image-embed img {
+    width: 100%;
+    height: 120px;
+    border-radius: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.cards-games table.dataview tbody > tr > td:nth-child(3) {
+    height: 20px;
+    font-size: 0.9em;
+    color: var(--text-normal);
+    font-weight: 500;
+    order: 3;
+    margin: 2px 0;
+}
+
+.cards-games table.dataview tbody > tr > td:nth-child(4) {
+    height: 25px;
+    font-size: 1.0em;
+    color: var(--text-accent);
+    font-weight: bold;
+    order: 4;
+    margin-top: auto;
+}
+
+.cards-games table.dataview tbody > tr > td:nth-child(3):last-child {
+    margin-top: auto;
+}
+
+.cards-games table.dataview tbody {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-gap: 0.3rem;
+    grid-row-gap: 0.3rem;
+}
+
+@media (min-width: 768px) {
+    .cards-games table.dataview tbody {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards-games table.dataview tbody {
+        grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+    }
+}
+
+/* ===============================*/
+/* TARJETAS HORIZONTALES PELÍCULAS/SERIES */
+/* ===============================*/
+
+.cards-movies table.dataview tbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.4rem;
+    grid-row-gap: 0.4rem;
+    padding: 0.3rem 0;
+}
+
+.cards-movies table.dataview > tbody > tr {
+    background-color: var(--background-secondary-alt);
+    border: 1px solid var(--background-modifier-border);
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "poster title"
+        "poster genre"
+        "poster year"
+        "poster rating";
+    margin: 0;
+    padding: 0.4rem;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.15s linear;
+    min-height: 110px;
+    gap: 0.6rem;
+}
+
+.cards-movies table.dataview > tbody > tr:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    transition: box-shadow 0.15s linear;
+}
+
+.cards-movies table.dataview tbody > tr > td:nth-child(2) {
+    grid-area: poster;
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cards-movies table.dataview tbody > tr > td:nth-child(2) .image-embed img {
+    width: 70px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cards-movies table.dataview tbody > tr > td:first-child {
+    grid-area: title;
+    font-weight: var(--bold-weight);
+    font-size: 1.1em;
+    color: var(--text-accent);
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.cards-movies table.dataview tbody > tr > td:first-child a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-accent);
+}
+
+.cards-movies table.dataview tbody > tr > td:nth-child(3) {
+    grid-area: genre;
+    font-size: 0.9em;
+    color: var(--text-muted);
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.cards-movies table.dataview tbody > tr > td:nth-child(3) .el-p {
+    margin: 0;
+    line-height: 1.1;
+}
+
+.cards-movies table.dataview tbody > tr > td:nth-child(4) {
+    grid-area: year;
+    font-size: 0.9em;
+    color: var(--text-normal);
+    font-weight: 500;
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.cards-movies table.dataview tbody > tr > td:nth-child(5) {
+    grid-area: rating;
+    font-size: 0.95em;
+    color: #f5c518;
+    font-weight: bold;
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .cards-movies table.dataview tbody {
+        grid-template-columns: 1fr;
     }
     
+    .cards-movies table.dataview > tbody > tr {
+        grid-template-columns: 60px 1fr;
+        min-height: 90px;
+    }
     
-*/
-
-
-/*
-.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
-    content: "•";
-    position: absolute;
-    margin-left: -3px;
-    margin-top: -8px !important;
-    font-size: 24px;
-    color: var(--text-muted);
-    visibility: visible !important;
+    .cards-movies table.dataview tbody > tr > td:nth-child(2) .image-embed img {
+        width: 60px;
+        height: 85px;
+    }
 }
-*/
 
-/*
-.workspace-tab-header.is-active {
-    background-color: var(--background-secondary);
+@media (min-width: 1400px) {
+    .cards-movies table.dataview tbody {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/*------------------------*/
+/* End - Snippet - Cards */
+/*----------------------*/
+
+
+/*====================================*/
+/* Snippet - Plugin Quiet Outline    */
+/*==================================*/
+
+button:not(.clickable-icon).n-button {
+    background-color: var(--text-antinormal);
+    box-shadow: var(--input-shadow);
+}
+
+button:not(.clickable-icon).n-button:hover {
+    background-color: var(--text-accent);
+}
+
+.quiet-outline .n-tree .n-tree-node:not(.n-tree-node--disabled).n-tree-node--selectable .n-tree-node-content::before {
+    content: "›";
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-right: 3.75px;
     color: var(--text-accent);
-    transition: transform 100ms ease-out;
-    stroke-width: 4;
+}
 
+.quiet-outline {
+    padding: 1px !important;
+    margin: -10px !important;
+}
 
-/* -------------------- */
-/*     Foldmarker      */
-/* -------------------- */
-/* 
-.CodeMirror-foldmarker {
+.n-base-icon svg {
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.n-tree-node.located p {
     color: var(--text-accent);
-    cursor: pointer;
-    display: inline-block;
-    margin-left: 8px;
-    font-size: large;
-}
-*/
-
-/*  Color of the bullet points and numbers of the lists*/
-
-
-/* Flecha colapsable en modo edición de listas */
-/* 
-.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
-    padding-right: 0em;
-}
-*/
-
-
-/* Cosas que añade david (si están desactivadas no me interesan ahora */
-
-
-/* Elimina lineas laterales del workspace */
-/* 
-.workspace-ribbon {
-    border-right: transparent;
-
 }
 
-
-.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
-    border-right-style: unset;
-
+.n-tree .n-tree-node:hover {
+    border: 1.5px solid var(--text-accent);
 }
 
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-    border-left-style: unset;
-
+.quiet-outline .level-2 .n-tree-node-indent {
+    border-right: 2px solid gray;    
 }
 
-
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
-    border-bottom-style: unset;
-
+.quiet-outline .n-tree-node-indent {
+    flex: 0 0 12px !important;
 }
 
-
-/* -------------------------  */
-/*  Contenedor de metadatos  */
-/* ------------------------ */
-
-/*
-
-.frontmatter-container {
-    border: 1px solid #d9d9d9;
-    font-size: 14px;
-    color: var(--text-muted);
-    margin-top: 10px;
-    padding: 6px 14px;
-    border-radius: 4px;
-    background-color: var(--background-primary-alt);
-    position: relative;
+.n-tree .n-tree-node-content {
+    padding: 0px;
 }
 
-*/
-
-/***************************************/
-/*            Hide side bar            */
-/***************************************/
-
-/*
-
-.workspace-ribbon:not(:hover) .workspace-ribbon-collapse-btn, 
-.workspace-ribbon:not(:hover) .side-dock-actions, 
-.workspace-ribbon:not(:hover) .side-dock-settings {
-    display:none; 
-    transition: all 300ms ease-in-out;
+.quiet-outline .n-tree-node-content:hover {
+    margin: 0 -1.36px;
 }
 
-.workspace-ribbon:not(:hover) {
-    width: 0px;
-    transition: all 300ms ease-in-out;
+/*-------------------------------------------*/
+/* End - Snippet - Plugin Quiet Outline    */
+/*-----------------------------------------*/
+
+
+/*=======================================*/
+/* Snippet - Líneas MathJax Mejoradas   */
+/*=====================================*/
+
+mjx-stretchy-h.mjx-c2192 mjx-ext mjx-c::before {
+    padding: 0.5em 78px 0.082em !important;
+    content: "\2212" !important;
 }
 
-.workspace-split.mod-left-split {margin-left: 0px;
-}
-.workspace-split.mod-right-split {margin-right: 0px;
-}
-*/
-
-
-/* barra vertical que corta el work space arreglada */
-
-/*
-
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle, .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-    height: 95.6%;
-}
-*/
-
-/*
-
-body:not(.pt-disable-animations) .workspace-tab-header,
-body:not(.pt-disable-animations) .view-header,
-body:not(.pt-disable-animations) .nav-file-title:not([data-path="/"]),
-body:not(.pt-disable-animations) .nav-folder-title:not([data-path="/"]) {
-    transition: all ease 90ms;
+mjx-stretchy-h > mjx-ext > mjx-c::before {
+    transform: scalex(17) !important;
 }
 
-*/
+mjx-stretchy-h > * > mjx-c::before {
+    display: inline-block !important;
+    width: initial !important;
+}
+
+/*--------------------------------------*/
+/* End - Snippet - Líneas MathJax     */
+/*------------------------------------*/
+
+
+/*================================*/
+/* Snippet - Kanban Mejorado     */
+/*==============================*/
+
+/* Personalización del texto dentro de las tareas del Kanban */
+
+.kanban-plugin__item p {
+    font-size: 0.9em;
+    padding-left: 0%;
+    padding-right: 0%;
+    line-height: 14pt !important;
+}
+
+/*---------------------------------*/
+/* End - Snippet - Kanban        */
+/*-------------------------------*/
+
+
+/* ============================================================
+   FIN DE SNIPPETS INTEGRADOS
+   ============================================================ */

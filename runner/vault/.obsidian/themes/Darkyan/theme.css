@@ -104,7 +104,8 @@
     color: var(--text-muted);
 }
 
-.ͼo:not(.cm-focused) .cm-fat-cursor {
+.ͼo:not(.cm-focused) .cm-fat-cursor,
+.ͼo:not(.cm-focused) > .cm-scroller > .cm-cursorLayer > .cm-fat-cursor {
     outline: solid 1px var(--text-accent);
 }
 
@@ -128,4 +129,21 @@
 
 .site-footer {
     display: none;
+}
+
+.token.important {
+    color: white;
+}
+
+.node rect {
+    fill: var(--text-normal)!important;
+    stroke: var(--text-selection)!important;
+}
+
+.antidote-green {
+    color: var(--text-accent) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock:not(.HyperMD-list-line) {
+    padding-inline-start: var(--size-2-2);
 }

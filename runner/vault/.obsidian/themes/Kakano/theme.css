@@ -637,9 +637,18 @@ body {
   --radius-m: 0.5rem;
   --radius-l: 0.75rem;
   --radius-xl: 1rem;
+  --raised-background: var(--theme-color-baseLightened80);
   --ribbon-background-collapsed: transparent;
   --ribbon-background: transparent;
   --ribbon-width: 3em;
+  --setting-group-heading-color: var(--text-normal);
+  --setting-group-heading-size: var(--font-ui-medium);
+  --setting-group-heading-weight: var(--font-semibold);
+  --setting-items-background: none;
+  --setting-items-padding: 0;
+  --setting-items-radius: 0;
+  --setting-items-border-width: 0;
+  --setting-items-border-color: var(--background-modifier-border);
   --sidebar-markdown-font-size: calc(
     var(--font-text-size) * var(--theme-value-sidebarFontScalingFactor)
   );
@@ -2899,7 +2908,6 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
 }
 
 .mobile-navbar {
-  background-color: transparent;
   padding-top: 0;
 }
 
@@ -3350,11 +3358,8 @@ body {
   background: var(--theme-gradient-topToBottom);
   padding-bottom: 1.5rem;
   padding: 0 0.5em var(--theme-length-statusBarHeight) 0.5em;
-
-  .workspace-tabs.mod-top {
-    padding-top: 0.5rem;
-  }
 }
+
 .nav-header {
   padding: 0.5rem;
 }
@@ -3468,20 +3473,20 @@ body.mod-windows {
 }
 .workspace-tab-header-container {
   padding: 0;
+
+  .workspace-tab-header {
+    background-color: var(--tab-background-inactive);
+    border-radius: var(--tab-radius-active) var(--tab-radius-active) 0 0;
+
+    &.is-active {
+      box-shadow: var(--theme-shadow-input);
+    }
+  }
 }
 .workspace-tab-header-container-inner {
   gap: 0.25em;
 }
-.workspace-tab-header {
-  background-color: var(--tab-background-inactive);
-  border-radius: var(--tab-radius-active) var(--tab-radius-active) 0 0;
 
-  &.is-active {
-    color: var(--tab-text-color-active);
-    background-color: var(--tab-background-active);
-    box-shadow: var(--theme-shadow-input);
-  }
-}
 .workspace-tab-header-inner {
   padding: 0.5rem;
 }
@@ -3505,6 +3510,33 @@ body.mod-windows {
 
 .is-mobile .mod-root .workspace-tab-header-container {
   min-height: 44px;
+}
+
+.workspace-split.mod-root {
+  .workspace-tabs.mod-top {
+    padding-top: 0.5rem;
+  }
+
+  .workspace-tab-header-container {
+    .workspace-tab-header::before,
+    .workspace-tab-header::after {
+      box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve) * 4) var(--tab-background-inactive);
+    }
+    .workspace-tab-header.is-active::before,
+    .workspace-tab-header.is-active::after {
+      box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve) * 4) var(--tab-background-active);
+    }
+  }
+}
+@media (hover: hover) {
+  .workspace-split.mod-root {
+    .workspace-tab-header-container {
+      .workspace-tab-header:not(.is-active):hover::before,
+      .workspace-tab-header:not(.is-active):hover::after {
+        box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve) * 4) var(--background-modifier-hover);;
+      }
+    }
+  }
 }
 
 .workspace .mod-root {
@@ -3587,34 +3619,40 @@ body.mod-windows {
 /* #endregion */
 /* #region     Tabs with Obsidian navigation or data (as opposed to user content) can have a different inactive color */
 .theme-setting-distinguishNonContentTabs {
-  .workspace-tab-header[data-type="bases"],
-  .workspace-tab-header[data-type="calendar"],
-  .workspace-tab-header[data-type="graph"],
-  .workspace-tab-header[data-type="localgraph"],
-  .workspace-tab-header[data-type="map"],
-  .workspace-tab-header[data-type="webviewer"] {
-      background-color: var(--theme-color-tabNavBg);
 
-      &:before,
-      &:after {
+  .workspace-split.mod-root {
+    & .workspace-tab-header-container {
+      .workspace-tab-header[data-type="bases"],
+      .workspace-tab-header[data-type="calendar"],
+      .workspace-tab-header[data-type="graph"],
+      .workspace-tab-header[data-type="localgraph"],
+      .workspace-tab-header[data-type="map"],
+      .workspace-tab-header[data-type="webviewer"] {
         background-color: var(--theme-color-tabNavBg);
-        box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve)* 4) var(--theme-color-tabNavBg);
-      }
-  }
-  .workspace-split.mod-root .workspace-tab-header[data-type="bases"].is-active,
-  .workspace-split.mod-root .workspace-tab-header[data-type="calendar"].is-active,
-  .workspace-split.mod-root .workspace-tab-header[data-type="graph"].is-active,
-  .workspace-split.mod-root .workspace-tab-header[data-type="localgraph"].is-active,
-  .workspace-split.mod-root .workspace-tab-header[data-type="map"].is-active,
-  .workspace-split.mod-root .workspace-tab-header[data-type="webviewer"].is-active {
-    background-color: var(--theme-color-tabNavActiveBg);
 
-    &:before,
-    &:after {
-      background-color: var(--theme-color-tabNavActiveBg);
-      box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve)* 4) var(--theme-color-tabNavActiveBg);
+        &:before,
+        &:after {
+          box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve)* 4) var(--theme-color-tabNavBg);
+        }
+      }
+
+      .workspace-tab-header[data-type="bases"].is-active,
+      .workspace-tab-header[data-type="calendar"].is-active,
+      .workspace-tab-header[data-type="graph"].is-active,
+      .workspace-tab-header[data-type="localgraph"].is-active,
+      .workspace-tab-header[data-type="map"].is-active,
+      .workspace-tab-header[data-type="webviewer"].is-active {
+        background-color: var(--theme-color-tabNavActiveBg);
+
+        &:before,
+        &:after {
+          box-shadow: inset 0 0 0 var(--tab-outline-width) var(--tab-outline-color), 0 0 0 calc(var(--tab-curve)* 4) var(--theme-color-tabNavActiveBg);
+        }
+      }
     }
   }
+
+
 
   .workspace-leaf-content[data-type="bases"],
   .workspace-leaf-content[data-type="calendar"],
@@ -3690,32 +3728,32 @@ body.mod-windows {
     height: auto;
     justify-content: center;
     margin-top: 0;
+
+    .workspace-tab-header-container-inner {
+      background: var(--tab-background-inactive);
+      border-radius: var(--radius-s);
+      flex-wrap: wrap;
+      gap: 0;
+      padding: 0;
+      margin: 0 0 0 0;
+      overflow: hidden;
+
+      /* Override scrollbar color, because it forces the scrollbar to appear and we want it invisible here */
+      scrollbar-color: auto;
+    }
+    .workspace-tab-header-container-inner:has(
+        .workspace-tab-header[data-type="markdown"].is-active:last-child
+      ) {
+      border-bottom-right-radius: 0;
+    }
+    .workspace-tab-header-container-inner:has(
+        .workspace-tab-header[data-type="markdown"].is-active:first-child
+      ) {
+      border-bottom-left-radius: 0;
+    }
   }
   .workspace-tabs.mod-top > .workspace-tab-header-container {
     margin-top: 0.5em;
-  }
-
-  .workspace-tab-header-container-inner {
-    background: var(--tab-background-inactive);
-    border-radius: var(--radius-s);
-    flex-wrap: wrap;
-    gap: 0;
-    padding: 0;
-    margin: 0 0 0 0;
-    overflow: hidden;
-
-    /* Override scrollbar color, because it forces the scrollbar to appear and we want it invisible here */
-    scrollbar-color: auto;
-  }
-  .workspace-tab-header-container-inner:has(
-      .workspace-tab-header[data-type="markdown"].is-active:last-child
-    ) {
-    border-bottom-right-radius: 0;
-  }
-  .workspace-tab-header-container-inner:has(
-      .workspace-tab-header[data-type="markdown"].is-active:first-child
-    ) {
-    border-bottom-left-radius: 0;
   }
 
   .workspace-tab-header {
@@ -3946,7 +3984,6 @@ body.mod-macos {
     margin: 0;
   }
 }
-
 
 /* #region     "Native frame" style */
 body.mod-macos {
@@ -4345,14 +4382,7 @@ body.mod-windows {
   margin: 0 1rem;
   padding: 0.5em;
 }
-.is-phone .menu {
-  padding: 0.5rem 0.5rem var(--safe-area-inset-bottom) 0.5rem;
-  width: calc(
-    100% - var(--safe-area-inset-left) - var(--safe-area-inset-right) - 2 *
-      var(--theme-spacing-mobileHorizontalSpacing) -
-      max(2 * var(--theme-spacing-mobileHorizontalSpacing), 1rem)
-  );
-}
+
 .menu-item {
   height: 2em;
 }
@@ -4380,6 +4410,30 @@ body.mod-windows {
   }
   .menu-item:hover .menu-item-icon {
     color: var(--nav-item-color-hover);
+  }
+}
+.is-phone {
+  .menu {
+    padding: 0.5rem 0.5rem var(--safe-area-inset-bottom) 0.5rem;
+    width: calc(
+      100% - var(--safe-area-inset-left) - var(--safe-area-inset-right) - 2 *
+        var(--theme-spacing-mobileHorizontalSpacing) -
+        max(2 * var(--theme-spacing-mobileHorizontalSpacing), 1rem)
+    );
+  }
+  .menu .suggestion-group .suggestion-item:not(.is-label),
+  .menu-item:not(.is-label) {
+    background-color: transparent;
+    border-radius: var(--radius-s);
+    overflow: hidden;
+  }
+  .menu-group .menu-item:not(.is-label):after {
+    display: none;
+  }
+
+  .menu-group .menu-item:first-child,
+  .menu-group .menu-item:last-child {
+    border-radius: var(--radius-s);
   }
 }
 /* #endregion */
@@ -5955,9 +6009,21 @@ body:not(.is-phone) .modal.mod-sync-history {
   border-top: none;
   padding: 0;
   margin-bottom: 1.5em;
+}
+.setting-group {
+  .setting-item {
+    /* Also used when editing bookmarks */
+    border-top: none;
 
-  .search-input-container {
-    padding: var(--input-border-width);
+    .search-input-container {
+      padding: var(--input-border-width);
+    }
+  }
+  .setting-items {
+    margin-bottom: 4em;
+  }
+  .setting-group-search {
+    margin-bottom: 4em;
   }
 }
 
@@ -8419,6 +8485,10 @@ body.theme-setting-overrideExcalidraw {
       padding: 0;
     }
   }
+
+  .excalidraw-setting-hr {
+    border: none;
+  }
 }
 /*   #endregion */
 /* #region   Community Plugin: Folder Note */
@@ -8866,6 +8936,14 @@ body.theme-setting-overrideKanban {
       padding: 0;
       justify-content: flex-end;
     }
+  }
+  .kanban-plugin__draggable-setting-container>.kanban-plugin__placeholder,
+  .kanban-plugin__setting-item-wrapper {
+    border: none;
+  }
+  .kanban-plugin__setting-item {
+    background: none;
+    padding: 1em 0 0 0;
   }
 }
 /*   #endregion */
