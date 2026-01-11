@@ -7,3 +7,5 @@ atomic
 runner/vault
 runner/quartz
 .obsidian-cache
+runner/results/**/dark.json
+runner/results/**/light.json

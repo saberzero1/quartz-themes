@@ -27,6 +27,10 @@ extract: build
   node --expose-gc --max-old-space-size=12288 ./runner/scripts/extract.js -- --waitforTimeout=300000
 
 [group('extract')]
+extract-baseline: build
+  FORCE_BASELINE=true node --expose-gc --max-old-space-size=12288 ./runner/scripts/extract.js -- --waitforTimeout=300000
+
+[group('extract')]
 compile:
   node ./runner/scripts/compile.js
 
@@ -43,7 +47,12 @@ ingest:
 
 [group('database')]
 prepare:
-  bun ./runner/scripts/prep.js
+  node ./runner/scripts/prep.js
+
+[group('database')]
+prepare-baseline:
+  FORCE_PREP=true node ./runner/scripts/prep.js
+
 
 [group('database')]
 drop:
