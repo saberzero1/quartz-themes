@@ -146,6 +146,8 @@ replit.nix
 runner/quartz/public
 runner/quartz/quartz/.quartz-cache
 
+runner/results/.extraction-log.json
+
 publish/*
 !publish/*.md
 !publish/publish.css

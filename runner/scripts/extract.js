@@ -28,11 +28,15 @@ const INSTALLER_VERSION = "1.10.6";
 
 let testingMode = false;
 // testingMode = true;
-const testingTheme = "z";
+const testingTheme = "brutalist";
 
 const cacheDir = resolve(".obsidian-cache");
 const themeList = readdirSync("./runner/vault/.obsidian/themes").filter(
-  (file) => file.endsWith(".css") || file.endsWith(".json"),
+  (file) =>
+    (file.endsWith(".css") || file.endsWith(".json")) &&
+    !["obsidian-theme-list.json", "obsidian-theme-list-removed.json"].includes(
+      file,
+    ),
 );
 const pluginList = readdirSync("./runner/vault/.obsidian/plugins").filter(
   (file) =>
@@ -89,20 +93,34 @@ const themeCollection = testingMode
 
 const HASH_CACHE_FILE = "./runner/results/.theme-hashes.json";
 const EXTRACTION_LOG_FILE = "./runner/results/.extraction-log.json";
+const BASELINE_DIR = "./runner/results/_baseline";
 const FORCE_EXTRACTION = process.env.FORCE_EXTRACTION === "true";
+const FORCE_BASELINE = process.env.FORCE_BASELINE === "true";
+const ENABLE_BREAKPOINTS = process.env.ENABLE_BREAKPOINTS === "true";
+const ENABLE_DIFF_TRACKING = process.env.ENABLE_DIFF_TRACKING === "true";
+
+const RESPONSIVE_BREAKPOINTS = [
+  { name: "mobile", width: 375, height: 667 },
+  { name: "tablet", width: 768, height: 1024 },
+  { name: "desktop", width: 1920, height: 1080 },
+];
 
 function getThemeHash(themeName) {
-  const themePath = `./runner/vault/.obsidian/themes/${themeName}.css`;
-  if (!existsSync(themePath)) {
-    const jsonPath = `./runner/vault/.obsidian/themes/${themeName}.json`;
-    if (existsSync(jsonPath)) {
-      const content = readFileSync(jsonPath, "utf-8");
-      return createHash("md5").update(content).digest("hex");
-    }
-    return null;
+  const themeDir = `./runner/vault/.obsidian/themes/${themeName}`;
+  const themeCssPath = `${themeDir}/theme.css`;
+  const legacyCssPath = `${themeDir}/obsidian.css`;
+
+  if (existsSync(themeCssPath)) {
+    const content = readFileSync(themeCssPath, "utf-8");
+    return createHash("md5").update(content).digest("hex");
   }
-  const content = readFileSync(themePath, "utf-8");
-  return createHash("md5").update(content).digest("hex");
+
+  if (existsSync(legacyCssPath)) {
+    const content = readFileSync(legacyCssPath, "utf-8");
+    return createHash("md5").update(content).digest("hex");
+  }
+
+  return null;
 }
 
 function loadHashCache() {
@@ -118,7 +136,13 @@ function loadHashCache() {
 
 function saveHashCache(cache) {
   mkdirSync("./runner/results", { recursive: true });
-  writeFileSync(HASH_CACHE_FILE, JSON.stringify(cache, null, 2));
+  const sortedCache = Object.keys(cache)
+    .sort((a, b) => a.localeCompare(b))
+    .reduce((obj, key) => {
+      obj[key] = cache[key];
+      return obj;
+    }, {});
+  writeFileSync(HASH_CACHE_FILE, JSON.stringify(sortedCache, null, 2));
 }
 
 function shouldSkipTheme(themeName, hashCache) {
@@ -229,112 +253,217 @@ function validateExtractionResult(result, themeName, mode) {
   return issues.length === 0;
 }
 
-async function extractCssVariables(browser) {
-  return await browser.executeObsidian(async ({ app }) => {
-    await sleep(300);
+function loadBaseline(mode) {
+  const baselinePath = `${BASELINE_DIR}/${mode}.json`;
+  if (existsSync(baselinePath)) {
+    try {
+      return JSON.parse(readFileSync(baselinePath, "utf-8"));
+    } catch {
+      return null;
+    }
+  }
+  return null;
+}
 
-    const cssVariables = {};
-    const variableReferences = {};
+function computeDiffFromBaseline(baseline, themeStyles) {
+  if (!baseline) return themeStyles;
 
-    const rootElement = document.documentElement;
-    const bodyElement = document.body;
-    const rootStyles = window.getComputedStyle(rootElement);
-    const bodyStyles = window.getComputedStyle(bodyElement);
+  const diff = {};
 
-    const allStyleSheets = Array.from(document.styleSheets);
-    const variableDefinitions = new Set();
+  for (const [selector, props] of Object.entries(themeStyles)) {
+    const baselineProps = baseline[selector] || {};
+    const changedProps = {};
 
-    for (const sheet of allStyleSheets) {
-      try {
-        const rules = sheet.cssRules || sheet.rules;
-        if (!rules) continue;
+    for (const [prop, value] of Object.entries(props)) {
+      if (baselineProps[prop] !== value) {
+        changedProps[prop] = value;
+      }
+    }
 
-        for (const rule of rules) {
-          if (rule.style) {
-            for (let i = 0; i < rule.style.length; i++) {
-              const prop = rule.style[i];
-              if (prop.startsWith("--")) {
-                variableDefinitions.add(prop);
-              }
-              const value = rule.style.getPropertyValue(prop);
-              if (value && value.includes("var(--")) {
-                const matches = value.match(/var\(--[\w-]+/g);
-                if (matches) {
-                  for (const match of matches) {
-                    const varName = match.replace("var(", "");
-                    if (!variableReferences[varName]) {
-                      variableReferences[varName] = [];
-                    }
-                    variableReferences[varName].push(prop);
-                  }
-                }
-              }
-            }
+    if (Object.keys(changedProps).length > 0) {
+      diff[selector] = changedProps;
+    }
+  }
+
+  return diff;
+}
+
+function baselineExists() {
+  return (
+    existsSync(`${BASELINE_DIR}/dark.json`) &&
+    existsSync(`${BASELINE_DIR}/light.json`)
+  );
+}
+
+async function hoverOverLink(browser) {
+  try {
+    const linkInfo = await browser.executeObsidian(async () => {
+      await sleep(500);
+      const selectors = [
+        ".cm-hmd-internal-link",
+        ".internal-link",
+        "a.internal-link",
+        ".cm-link",
+        ".markdown-preview-view a.internal-link",
+      ];
+      for (const sel of selectors) {
+        const el = document.querySelector(sel);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.width > 0 && rect.height > 0) {
+            return {
+              selector: sel,
+              x: Math.round(rect.left + rect.width / 2),
+              y: Math.round(rect.top + rect.height / 2),
+            };
           }
         }
-      } catch (e) {
-        continue;
       }
+      return null;
+    });
+
+    if (linkInfo) {
+      await browser
+        .action("pointer", { parameters: { pointerType: "mouse" } })
+        .move({ x: linkInfo.x, y: linkInfo.y })
+        .perform();
+      await new Promise((resolve) => setTimeout(resolve, 800));
     }
+  } catch {}
+}
 
-    const importantVariables = [
-      "--background-primary",
-      "--background-secondary",
-      "--background-modifier-border",
-      "--text-normal",
-      "--text-muted",
-      "--text-faint",
-      "--text-accent",
-      "--text-accent-hover",
-      "--interactive-accent",
-      "--interactive-accent-hover",
-      "--link-color",
-      "--link-color-hover",
-      "--link-external-color",
-      "--tag-color",
-      "--tag-background",
-      "--callout-color",
-      "--code-background",
-      "--code-normal",
-      "--inline-code-color",
-      "--blockquote-border-color",
-      "--table-border-color",
-      "--table-header-background",
-      "--h1-color",
-      "--h2-color",
-      "--h3-color",
-      "--h4-color",
-      "--h5-color",
-      "--h6-color",
-      "--bold-color",
-      "--italic-color",
-      "--highlight-color",
-    ];
+async function extractAtBreakpoint(
+  browser,
+  breakpoint,
+  defaultStyles,
+  page,
+  file,
+) {
+  await browser.setWindowSize(breakpoint.width, breakpoint.height);
+  await ensureLayoutReady(browser);
+  return await ensureLayoutReady(browser)
+    .then(() => page.openFile(file))
+    .then(() => page.openFile(file))
+    .then(() => serializeWithStyles(defaultStyles, browser));
+}
 
-    for (const varName of importantVariables) {
-      let value = rootStyles.getPropertyValue(varName).trim();
-      if (!value) {
-        value = bodyStyles.getPropertyValue(varName).trim();
-      }
-      if (value) {
-        cssVariables[varName] = value;
-      }
-    }
+async function extractResponsiveStyles(
+  browser,
+  defaultStyles,
+  page,
+  folder,
+  mode,
+) {
+  if (!ENABLE_BREAKPOINTS) return null;
 
-    for (const varName of variableDefinitions) {
-      if (!cssVariables[varName]) {
-        let value = rootStyles.getPropertyValue(varName).trim();
-        if (!value) {
-          value = bodyStyles.getPropertyValue(varName).trim();
+  const responsiveResults = {};
+
+  for (const breakpoint of RESPONSIVE_BREAKPOINTS) {
+    console.log(`  Extracting ${mode} styles at ${breakpoint.name} breakpoint`);
+    const result = await extractAtBreakpoint(
+      browser,
+      breakpoint,
+      defaultStyles,
+      page,
+      "general.md",
+    );
+    responsiveResults[breakpoint.name] = result;
+  }
+
+  const responsiveFileName = `./runner/results/${folder}/${mode}-responsive.json`;
+  writeFileSync(responsiveFileName, JSON.stringify(responsiveResults, null, 2));
+  console.log(`  Responsive styles saved to ${responsiveFileName}`);
+
+  return responsiveResults;
+}
+
+function computeStyleDiff(oldStyles, newStyles) {
+  const diff = { added: {}, removed: {}, changed: {} };
+
+  const allSelectors = new Set([
+    ...Object.keys(oldStyles || {}),
+    ...Object.keys(newStyles || {}),
+  ]);
+
+  for (const selector of allSelectors) {
+    const oldProps = oldStyles?.[selector];
+    const newProps = newStyles?.[selector];
+
+    if (!oldProps && newProps) {
+      diff.added[selector] = newProps;
+    } else if (oldProps && !newProps) {
+      diff.removed[selector] = oldProps;
+    } else if (oldProps && newProps) {
+      const propChanges = {};
+      const allProps = new Set([
+        ...Object.keys(oldProps),
+        ...Object.keys(newProps),
+      ]);
+
+      for (const prop of allProps) {
+        const oldVal = oldProps[prop];
+        const newVal = newProps[prop];
+
+        if (oldVal !== newVal) {
+          propChanges[prop] = { old: oldVal, new: newVal };
         }
-        if (value && value.length < 200) {
-          cssVariables[varName] = value;
-        }
+      }
+
+      if (Object.keys(propChanges).length > 0) {
+        diff.changed[selector] = propChanges;
       }
     }
+  }
 
-    return { variables: cssVariables, references: variableReferences };
-  });
+  return diff;
+}
+
+function trackExtractionDiff(folder, mode, newStyles) {
+  if (!ENABLE_DIFF_TRACKING) return null;
+
+  const stylesPath = `./runner/results/${folder}/${mode}.json`;
+  const diffPath = `./runner/results/${folder}/${mode}-diff.json`;
+
+  let oldStyles = null;
+  if (existsSync(stylesPath)) {
+    try {
+      oldStyles = JSON.parse(readFileSync(stylesPath, "utf-8"));
+    } catch {
+      oldStyles = null;
+    }
+  }
+
+  if (!oldStyles) {
+    return null;
+  }
+
+  const diff = computeStyleDiff(oldStyles, newStyles);
+
+  const hasChanges =
+    Object.keys(diff.added).length > 0 ||
+    Object.keys(diff.removed).length > 0 ||
+    Object.keys(diff.changed).length > 0;
+
+  if (hasChanges) {
+    const diffRecord = {
+      timestamp: new Date().toISOString(),
+      summary: {
+        selectorsAdded: Object.keys(diff.added).length,
+        selectorsRemoved: Object.keys(diff.removed).length,
+        selectorsChanged: Object.keys(diff.changed).length,
+      },
+      diff,
+    };
+
+    writeFileSync(diffPath, JSON.stringify(diffRecord, null, 2));
+    console.log(
+      `  Diff tracked: +${diffRecord.summary.selectorsAdded} -${diffRecord.summary.selectorsRemoved} ~${diffRecord.summary.selectorsChanged} selectors`,
+    );
+
+    return diffRecord;
+  }
+
+  return null;
 }
 
 function printMemoryUsage() {
@@ -581,6 +710,254 @@ function enableSnippets(snippets) {
   );
 }
 
+async function extractBaselineStyles(
+  darkDefaultStyles,
+  lightDefaultStyles,
+  browser,
+  obsidianPage,
+) {
+  console.log("Extracting baseline styles (no theme applied)...");
+  mkdirSync(BASELINE_DIR, { recursive: true });
+
+  writeFileSync(
+    `./runner/vault/.obsidian/plugins/obsidian-style-settings/data.json`,
+    "{}",
+  );
+  enableSnippets([]);
+
+  await ensureLayoutReady(browser)
+    .then(() => obsidianPage.loadWorkspaceLayout("default"))
+    .then(() => obsidianPage.setTheme(""))
+    .then(() =>
+      browser.executeObsidian(async ({ app }) => {
+        const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
+        if (currentMode !== "dark") {
+          app.commands.executeCommandById("theme:toggle-light-dark");
+        }
+      }),
+    );
+
+  await ensureLayoutReady(browser)
+    .then(() => browser.reloadObsidian())
+    .then(() => ensureLayoutReady(browser));
+
+  let darkResult = {
+    general: {},
+    headings: {},
+    callouts: {},
+    integrations: {},
+    tables: {},
+    media: {},
+    embeds: {},
+    backlinks: {},
+    checkboxes: {},
+  };
+  darkResult.general = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("general.md"))
+    .then(() => obsidianPage.openFile("general.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  darkResult.headings = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("headings.md"))
+    .then(() => obsidianPage.openFile("headings.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  darkResult.callouts = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("callouts.md"))
+    .then(() => obsidianPage.openFile("callouts.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  darkResult.integrations = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("integrations.md"))
+    .then(() => obsidianPage.openFile("integrations.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  darkResult.tables = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("tables.md"))
+    .then(() => obsidianPage.openFile("tables.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  darkResult.media = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("media.md"))
+    .then(() => obsidianPage.openFile("media.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkEmbedsFile = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("embeds.md"))
+    .then(() => obsidianPage.openFile("embeds.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkEmbedsFrontmatter = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-embeds/frontmatter.md"))
+    .then(() => obsidianPage.openFile("theme-embeds/frontmatter.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkEmbedsNoteEmbeds = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-embeds/note-embeds.md"))
+    .then(() => obsidianPage.openFile("theme-embeds/note-embeds.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkEmbedsTooltips = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-embeds/tooltips.md"))
+    .then(() => obsidianPage.openFile("theme-embeds/tooltips.md"))
+    .then(() => hoverOverLink(browser))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  darkResult.embeds = {
+    ...darkEmbedsFile,
+    ...darkEmbedsFrontmatter,
+    ...darkEmbedsNoteEmbeds,
+    ...darkEmbedsTooltips,
+  };
+  darkResult.backlinks = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("backlinks.md"))
+    .then(() => obsidianPage.openFile("backlinks.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkCheckboxesSpecial = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-checkboxes/special.md"))
+    .then(() => obsidianPage.openFile("theme-checkboxes/special.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkCheckboxesLowercase = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-checkboxes/lower.md"))
+    .then(() => obsidianPage.openFile("theme-checkboxes/lower.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkCheckboxesUppercase = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-checkboxes/upper.md"))
+    .then(() => obsidianPage.openFile("theme-checkboxes/upper.md"))
+    .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  darkResult.checkboxes = {
+    ...darkCheckboxesSpecial,
+    ...darkCheckboxesLowercase,
+    ...darkCheckboxesUppercase,
+  };
+
+  let darkResultObject = {};
+  for (const [key, value] of Object.entries(darkResult)) {
+    if (typeof value === "object") {
+      for (const [subKey, subValue] of Object.entries(value)) {
+        darkResultObject[subKey] = subValue;
+      }
+    }
+  }
+  let sortedDarkKeys = Object.keys(darkResultObject).sort();
+  let sortedDarkResult = {};
+  for (const key of sortedDarkKeys) {
+    sortedDarkResult[key] = darkResultObject[key];
+  }
+  writeFileSync(
+    `${BASELINE_DIR}/dark.json`,
+    JSON.stringify(sortedDarkResult, null, 2),
+  );
+  console.log(`Baseline dark styles saved to ${BASELINE_DIR}/dark.json`);
+
+  await ensureLayoutReady(browser)
+    .then(() => obsidianPage.loadWorkspaceLayout("default"))
+    .then(() => obsidianPage.setTheme(""))
+    .then(() =>
+      browser.executeObsidian(async ({ app }) => {
+        const currentMode = app.getTheme() === "obsidian" ? "dark" : "light";
+        if (currentMode !== "light") {
+          app.commands.executeCommandById("theme:toggle-light-dark");
+        }
+      }),
+    );
+
+  await ensureLayoutReady(browser)
+    .then(() => browser.reloadObsidian())
+    .then(() => ensureLayoutReady(browser));
+
+  let lightResult = {
+    general: {},
+    headings: {},
+    callouts: {},
+    integrations: {},
+    tables: {},
+    media: {},
+    embeds: {},
+    backlinks: {},
+    checkboxes: {},
+  };
+  lightResult.general = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("general.md"))
+    .then(() => obsidianPage.openFile("general.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  lightResult.headings = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("headings.md"))
+    .then(() => obsidianPage.openFile("headings.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  lightResult.callouts = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("callouts.md"))
+    .then(() => obsidianPage.openFile("callouts.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  lightResult.integrations = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("integrations.md"))
+    .then(() => obsidianPage.openFile("integrations.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  lightResult.tables = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("tables.md"))
+    .then(() => obsidianPage.openFile("tables.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  lightResult.media = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("media.md"))
+    .then(() => obsidianPage.openFile("media.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightEmbedsFile = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("embeds.md"))
+    .then(() => obsidianPage.openFile("embeds.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightEmbedsFrontmatter = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-embeds/frontmatter.md"))
+    .then(() => obsidianPage.openFile("theme-embeds/frontmatter.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightEmbedsNoteEmbeds = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-embeds/note-embeds.md"))
+    .then(() => obsidianPage.openFile("theme-embeds/note-embeds.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightEmbedsTooltips = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-embeds/tooltips.md"))
+    .then(() => obsidianPage.openFile("theme-embeds/tooltips.md"))
+    .then(() => hoverOverLink(browser))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  lightResult.embeds = {
+    ...lightEmbedsFile,
+    ...lightEmbedsFrontmatter,
+    ...lightEmbedsNoteEmbeds,
+    ...lightEmbedsTooltips,
+  };
+  lightResult.backlinks = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("backlinks.md"))
+    .then(() => obsidianPage.openFile("backlinks.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightCheckboxesSpecial = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-checkboxes/special.md"))
+    .then(() => obsidianPage.openFile("theme-checkboxes/special.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightCheckboxesLowercase = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-checkboxes/lower.md"))
+    .then(() => obsidianPage.openFile("theme-checkboxes/lower.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightCheckboxesUppercase = await ensureLayoutReady(browser)
+    .then(() => obsidianPage.openFile("theme-checkboxes/upper.md"))
+    .then(() => obsidianPage.openFile("theme-checkboxes/upper.md"))
+    .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  lightResult.checkboxes = {
+    ...lightCheckboxesSpecial,
+    ...lightCheckboxesLowercase,
+    ...lightCheckboxesUppercase,
+  };
+
+  let lightResultObject = {};
+  for (const [key, value] of Object.entries(lightResult)) {
+    if (typeof value === "object") {
+      for (const [subKey, subValue] of Object.entries(value)) {
+        lightResultObject[subKey] = subValue;
+      }
+    }
+  }
+  let sortedLightKeys = Object.keys(lightResultObject).sort();
+  let sortedLightResult = {};
+  for (const key of sortedLightKeys) {
+    sortedLightResult[key] = lightResultObject[key];
+  }
+  writeFileSync(
+    `${BASELINE_DIR}/light.json`,
+    JSON.stringify(sortedLightResult, null, 2),
+  );
+  console.log(`Baseline light styles saved to ${BASELINE_DIR}/light.json`);
+
+  printMemoryUsage();
+}
+
 async function getStylesFromObsidian(
   manifest,
   manifestCollection,
@@ -610,6 +987,10 @@ async function getStylesFromObsidian(
     headings: {},
     callouts: {},
     integrations: {},
+    tables: {},
+    media: {},
+    embeds: {},
+    backlinks: {},
     checkboxes: {},
     extras: {},
   };
@@ -618,6 +999,10 @@ async function getStylesFromObsidian(
     headings: {},
     callouts: {},
     integrations: {},
+    tables: {},
+    media: {},
+    embeds: {},
+    backlinks: {},
     checkboxes: {},
     extras: {},
   };
@@ -756,8 +1141,41 @@ async function getStylesFromObsidian(
       .then(() => darkPage.openFile("integrations.md"))
       .then(() => darkPage.openFile("integrations.md"))
       .then(() => serializeWithStyles(darkDefaultStyles, browser));
-    // await sleep(500);
-    // await sleep(1);
+    darkResult.tables = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("tables.md"))
+      .then(() => darkPage.openFile("tables.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    darkResult.media = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("media.md"))
+      .then(() => darkPage.openFile("media.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    const embedsFileEmbeds = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("embeds.md"))
+      .then(() => darkPage.openFile("embeds.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    const embedsFrontmatter = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("theme-embeds/frontmatter.md"))
+      .then(() => darkPage.openFile("theme-embeds/frontmatter.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    const embedsNoteEmbeds = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("theme-embeds/note-embeds.md"))
+      .then(() => darkPage.openFile("theme-embeds/note-embeds.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    const embedsTooltips = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("theme-embeds/tooltips.md"))
+      .then(() => darkPage.openFile("theme-embeds/tooltips.md"))
+      .then(() => hoverOverLink(browser))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    darkResult.embeds = {
+      ...embedsFileEmbeds,
+      ...embedsFrontmatter,
+      ...embedsNoteEmbeds,
+      ...embedsTooltips,
+    };
+    darkResult.backlinks = await ensureLayoutReady(browser)
+      .then(() => darkPage.openFile("backlinks.md"))
+      .then(() => darkPage.openFile("backlinks.md"))
+      .then(() => serializeWithStyles(darkDefaultStyles, browser));
     const checkboxesSpecial = await ensureLayoutReady(browser)
       .then(() => darkPage.openFile("theme-checkboxes/special.md"))
       .then(() => darkPage.openFile("theme-checkboxes/special.md"))
@@ -788,10 +1206,6 @@ async function getStylesFromObsidian(
         .then(() => serializeWithStyles(darkDefaultStyles, browser));
       darkResult.extras = { ...darkResult.extras, ...result };
     }
-    const darkVariables = await ensureLayoutReady(browser).then(() =>
-      extractCssVariables(browser),
-    );
-
     const darkFileName = `./runner/results/${folder}/dark.json`;
     let darkResultObject = {};
     for (const [key, value] of Object.entries(darkResult)) {
@@ -806,23 +1220,46 @@ async function getStylesFromObsidian(
     for (const key of sortedKeys) {
       sortedDarkResultObject[key] = darkResultObject[key];
     }
-    let resultString = JSON.stringify(sortedDarkResultObject, null, 2);
+
+    const darkBaseline = loadBaseline("dark");
+    const darkDiff = computeDiffFromBaseline(
+      darkBaseline,
+      sortedDarkResultObject,
+    );
+    const darkDiffKeys = Object.keys(darkDiff).sort();
+    const sortedDarkDiff = {};
+    for (const key of darkDiffKeys) {
+      sortedDarkDiff[key] = darkDiff[key];
+    }
+
+    trackExtractionDiff(folder, "dark", sortedDarkResultObject);
+    let resultString = JSON.stringify(sortedDarkDiff, null, 2);
     writeFileSync(darkFileName, resultString);
     validateExtractionResult(sortedDarkResultObject, theme, "dark");
-    console.log(`Dark styles saved to ${darkFileName}`);
 
-    if (
-      darkVariables &&
-      darkVariables.variables &&
-      Object.keys(darkVariables.variables).length > 0
-    ) {
-      const darkVariablesFileName = `./runner/results/${folder}/dark-variables.json`;
-      writeFileSync(
-        darkVariablesFileName,
-        JSON.stringify(darkVariables, null, 2),
-      );
-      console.log(`Dark CSS variables saved to ${darkVariablesFileName}`);
-    }
+    const diffStats = {
+      original: Object.keys(sortedDarkResultObject).length,
+      diff: Object.keys(sortedDarkDiff).length,
+      reduction: darkBaseline
+        ? Math.round(
+            (1 -
+              Object.keys(sortedDarkDiff).length /
+                Object.keys(sortedDarkResultObject).length) *
+              100,
+          )
+        : 0,
+    };
+    console.log(
+      `Dark styles saved to ${darkFileName} (${diffStats.diff}/${diffStats.original} selectors, ${diffStats.reduction}% reduction)`,
+    );
+
+    await extractResponsiveStyles(
+      browser,
+      darkDefaultStyles,
+      darkPage,
+      folder,
+      "dark",
+    );
 
     printMemoryUsage();
   }
@@ -977,8 +1414,41 @@ async function getStylesFromObsidian(
       .then(() => lightPage.openFile("integrations.md"))
       .then(() => lightPage.openFile("integrations.md"))
       .then(() => serializeWithStyles(lightDefaultStyles, browser));
-    // await sleep(500);
-    // await sleep(1);
+    lightResult.tables = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("tables.md"))
+      .then(() => lightPage.openFile("tables.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    lightResult.media = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("media.md"))
+      .then(() => lightPage.openFile("media.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    const lightEmbedsFileEmbeds = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("embeds.md"))
+      .then(() => lightPage.openFile("embeds.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    const lightEmbedsFrontmatter = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("theme-embeds/frontmatter.md"))
+      .then(() => lightPage.openFile("theme-embeds/frontmatter.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    const lightEmbedsNoteEmbeds = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("theme-embeds/note-embeds.md"))
+      .then(() => lightPage.openFile("theme-embeds/note-embeds.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    const lightEmbedsTooltips = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("theme-embeds/tooltips.md"))
+      .then(() => lightPage.openFile("theme-embeds/tooltips.md"))
+      .then(() => hoverOverLink(browser))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    lightResult.embeds = {
+      ...lightEmbedsFileEmbeds,
+      ...lightEmbedsFrontmatter,
+      ...lightEmbedsNoteEmbeds,
+      ...lightEmbedsTooltips,
+    };
+    lightResult.backlinks = await ensureLayoutReady(browser)
+      .then(() => lightPage.openFile("backlinks.md"))
+      .then(() => lightPage.openFile("backlinks.md"))
+      .then(() => serializeWithStyles(lightDefaultStyles, browser));
     const checkboxesSpecial = await ensureLayoutReady(browser)
       .then(() => lightPage.openFile("theme-checkboxes/special.md"))
       .then(() => lightPage.openFile("theme-checkboxes/special.md"))
@@ -1011,10 +1481,6 @@ async function getStylesFromObsidian(
       lightResult.extras = { ...lightResult.extras, ...result };
     }
 
-    const lightVariables = await ensureLayoutReady(browser).then(() =>
-      extractCssVariables(browser),
-    );
-
     const lightFileName = `./runner/results/${folder}/light.json`;
     let lightResultObject = {};
     for (const [key, value] of Object.entries(lightResult)) {
@@ -1029,23 +1495,46 @@ async function getStylesFromObsidian(
     for (const key of sortedKeys) {
       sortedLightResultObject[key] = lightResultObject[key];
     }
-    let lightResultString = JSON.stringify(sortedLightResultObject, null, 2);
+
+    const lightBaseline = loadBaseline("light");
+    const lightDiff = computeDiffFromBaseline(
+      lightBaseline,
+      sortedLightResultObject,
+    );
+    const lightDiffKeys = Object.keys(lightDiff).sort();
+    const sortedLightDiff = {};
+    for (const key of lightDiffKeys) {
+      sortedLightDiff[key] = lightDiff[key];
+    }
+
+    trackExtractionDiff(folder, "light", sortedLightResultObject);
+    let lightResultString = JSON.stringify(sortedLightDiff, null, 2);
     writeFileSync(lightFileName, lightResultString);
     validateExtractionResult(sortedLightResultObject, theme, "light");
-    console.log(`Light styles saved to ${lightFileName}`);
 
-    if (
-      lightVariables &&
-      lightVariables.variables &&
-      Object.keys(lightVariables.variables).length > 0
-    ) {
-      const lightVariablesFileName = `./runner/results/${folder}/light-variables.json`;
-      writeFileSync(
-        lightVariablesFileName,
-        JSON.stringify(lightVariables, null, 2),
-      );
-      console.log(`Light CSS variables saved to ${lightVariablesFileName}`);
-    }
+    const lightDiffStats = {
+      original: Object.keys(sortedLightResultObject).length,
+      diff: Object.keys(sortedLightDiff).length,
+      reduction: lightBaseline
+        ? Math.round(
+            (1 -
+              Object.keys(sortedLightDiff).length /
+                Object.keys(sortedLightResultObject).length) *
+              100,
+          )
+        : 0,
+    };
+    console.log(
+      `Light styles saved to ${lightFileName} (${lightDiffStats.diff}/${lightDiffStats.original} selectors, ${lightDiffStats.reduction}% reduction)`,
+    );
+
+    await extractResponsiveStyles(
+      browser,
+      lightDefaultStyles,
+      lightPage,
+      folder,
+      "light",
+    );
 
     printMemoryUsage();
   }
@@ -1116,14 +1605,28 @@ await ensureLayoutReady(browser)
   .then(() => browser.reloadObsidian())
   .then(() => ensureLayoutReady(browser));
 
+if (!baselineExists() || FORCE_BASELINE) {
+  await extractBaselineStyles(
+    darkDefaultStyles,
+    lightDefaultStyles,
+    browser,
+    obsidianPage,
+  );
+} else {
+  console.log("Baseline styles already exist, skipping baseline extraction.");
+}
+
 const hashCache = loadHashCache();
 let processedCount = 0;
 let skippedCount = 0;
 
 for (const manifest of manifestTargets) {
   const [themeName] = manifest.name.split(".");
+  const fullName =
+    manifestCollection.find((m) => sanitize(m.name) === themeName)?.name ??
+    themeName;
 
-  if (shouldSkipTheme(themeName, hashCache)) {
+  if (shouldSkipTheme(fullName, hashCache)) {
     skippedCount++;
     continue;
   }
@@ -1144,9 +1647,10 @@ for (const manifest of manifestTargets) {
       obsidianPage,
     );
 
-    const currentHash = getThemeHash(themeName);
+    const currentHash = getThemeHash(fullName);
     if (currentHash) {
-      hashCache[themeName] = currentHash;
+      hashCache[fullName] = currentHash;
+      saveHashCache(hashCache);
     }
     processedCount++;
   } catch (error) {
@@ -1154,7 +1658,7 @@ for (const manifest of manifestTargets) {
       `Failed to extract styles for ${manifest.name}:`,
       error.message,
     );
-    logExtractionError(themeName, error, { manifest: manifest.name });
+    logExtractionError(fullName, error, { manifest: manifest.name });
   }
 }
 

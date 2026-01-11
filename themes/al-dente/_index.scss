@@ -412,7 +412,6 @@
   --interactive-accent: #08b94e !important;
   --interactive-accent-hover: #08b94e !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-accent-rgb: #08b94e !important;
   --interactive-hover: #fafafa !important;
   --interactive-normal: #ffffff !important;
   --keyboard-height: 0px !important;
@@ -799,6 +798,7 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --interactive-accent-rgb: #08b94e !important;
   --background-nav-alt: #f6f6f4 !important;
   --shadow: 1px 1px 2px #88888888 !important;
   --background-nav: #f6f6f4 !important;
@@ -1075,8 +1075,8 @@ body {
 
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(8, 185, 78);
+    background-color: rgb(196, 205, 142);
+    color: rgb(63, 62, 60);
     cursor: pointer;
     filter: none;
     font-family:
@@ -1101,8 +1101,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(8, 185, 78);
-    text-decoration-color: rgb(8, 185, 78);
+    text-decoration: underline solid rgb(63, 62, 60);
+    text-decoration-color: rgb(63, 62, 60);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1178,27 +1178,19 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(63, 62, 60);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "nunito sans",
-      gotham,
-      metropolis,
-      prologue,
-      manrope,
-      inter,
-      poppins,
+      ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
-      Helvetica,
-      Arial,
-      sans-serif,
+      Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 600;
     outline: inherit;
@@ -1215,27 +1207,19 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(63, 62, 60);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "nunito sans",
-      gotham,
-      metropolis,
-      prologue,
-      manrope,
-      inter,
-      poppins,
+      ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
-      Helvetica,
-      Arial,
-      sans-serif,
+      Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 600;
     outline: inherit;
@@ -1252,29 +1236,21 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(63, 62, 60);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "nunito sans",
-      gotham,
-      metropolis,
-      prologue,
-      manrope,
-      inter,
-      poppins,
+      ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
-      Helvetica,
-      Arial,
-      sans-serif,
+      Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(63, 62, 60);
     text-decoration-color: rgb(63, 62, 60);
@@ -1289,29 +1265,21 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(63, 62, 60);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "nunito sans",
-      gotham,
-      metropolis,
-      prologue,
-      manrope,
-      inter,
-      poppins,
+      ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
-      Helvetica,
-      Arial,
-      sans-serif,
+      Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(63, 62, 60);
     text-decoration-color: rgb(63, 62, 60);
@@ -1323,29 +1291,21 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(242, 230, 209);
+    background-color: rgb(212, 219, 173);
     color: rgb(63, 62, 60);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "nunito sans",
-      gotham,
-      metropolis,
-      prologue,
-      manrope,
-      inter,
-      poppins,
+      ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
-      Helvetica,
-      Arial,
-      sans-serif,
+      Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     outline: inherit;
@@ -1361,27 +1321,19 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(63, 62, 60);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "nunito sans",
-      gotham,
-      metropolis,
-      prologue,
-      manrope,
-      inter,
-      poppins,
+      ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
       Roboto,
-      Helvetica,
-      Arial,
-      sans-serif,
+      Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
     outline: inherit;
@@ -1555,7 +1507,7 @@ body {
   }
 
   code {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(246, 246, 244);
     border: 0px solid rgb(224, 224, 224);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1565,7 +1517,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: rgb(233, 49, 71);
+    color: rgb(63, 62, 60);
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -2133,7 +2085,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -2169,7 +2121,7 @@ body {
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: rgba(8, 109, 221, 0.1);
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2183,13 +2135,13 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(8, 109, 221);
+    stroke: rgb(92, 92, 92);
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
     background-color: rgba(0, 191, 188, 0.1);
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     border: 0px solid rgba(0, 191, 188, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2209,7 +2161,7 @@ body {
   .callout[data-callout="info"] {
     --callout-color: inherit;
     background-color: rgba(8, 109, 221, 0.1);
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2229,7 +2181,7 @@ body {
   .callout[data-callout="todo"] {
     --callout-color: inherit;
     background-color: rgba(8, 109, 221, 0.1);
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2249,7 +2201,7 @@ body {
   .callout[data-callout="tip"] {
     --callout-color: inherit;
     background-color: rgba(0, 191, 188, 0.1);
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     border: 0px solid rgba(0, 191, 188, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2269,7 +2221,7 @@ body {
   .callout[data-callout="success"] {
     --callout-color: inherit;
     background-color: rgba(8, 185, 78, 0.1);
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     border: 0px solid rgba(8, 185, 78, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2289,7 +2241,7 @@ body {
   .callout[data-callout="question"] {
     --callout-color: inherit;
     background-color: rgba(236, 117, 0, 0.1);
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     border: 0px solid rgba(236, 117, 0, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2309,7 +2261,7 @@ body {
   .callout[data-callout="warning"] {
     --callout-color: inherit;
     background-color: rgba(236, 117, 0, 0.1);
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     border: 0px solid rgba(236, 117, 0, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2349,7 +2301,7 @@ body {
   .callout[data-callout="failure"] {
     --callout-color: inherit;
     background-color: rgba(233, 49, 71, 0.1);
-    mix-blend-mode: darken;
+    mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2403,7 +2355,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(63, 62, 60);
+    stroke: rgb(92, 92, 92);
   }
 
   .callout[data-callout="quote"] {
@@ -2424,6 +2376,719 @@ body {
   .callout[data-callout="quote"] .callout-title .callout-icon {
     fill: none;
     stroke: rgb(158, 158, 158);
+  }
+
+  table {
+    background-color: rgb(246, 246, 244);
+    border-collapse: collapse;
+    border-spacing: inherit;
+    color: rgb(63, 62, 60);
+    font-family:
+      "nunito sans",
+      gotham,
+      metropolis,
+      prologue,
+      manrope,
+      inter,
+      poppins,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    table-layout: auto;
+    width: auto;
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 32px 66.2031px 0px;
+    margin-block-end: 0px;
+    margin-block-start: 32px;
+    margin-inline-end: 66.2031px;
+    margin-inline-start: 66.2031px;
+  }
+
+  thead {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  th {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(63, 62, 60);
+    font-weight: 600;
+    text-align: start;
+    vertical-align: top;
+    border: 1px solid rgb(224, 224, 224);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  td {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(63, 62, 60);
+    font-weight: 400;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid rgb(224, 224, 224);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  tr {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: inherit;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: inherit;
+  }
+
+  img {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: fill;
+    border: 0px rgb(63, 62, 60);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  figure {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: start;
+    border: 0px rgb(63, 62, 60);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 40px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  figcaption {
+    color: rgb(63, 62, 60);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: start;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  video {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: contain;
+    border: 0px rgb(63, 62, 60);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  audio {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(63, 62, 60);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  .transclude {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .transclude-inner {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .file-embed {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .frontmatter {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata-properties {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .tooltip {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .popover {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  progress {
+    accent-color: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 6px;
+    border: 0px rgb(63, 62, 60);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="range"] {
+    accent-color: auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px inset rgb(118, 118, 118);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="text"] {
+    background-color: rgb(255, 255, 255);
+    color: rgb(63, 62, 60);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border: 0px solid rgb(224, 224, 224);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    padding: 4px 8px;
+  }
+
+  details {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(63, 62, 60);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  summary {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(63, 62, 60);
+    cursor: auto;
+    font-weight: 400;
+    list-style: inherit;
+    padding: 0px;
+  }
+
+  details[open] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  kbd {
+    background-color: rgb(246, 246, 244);
+    box-shadow: none;
+    color: rgb(63, 62, 60);
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
+    font-size: 14px;
+    border: 0px rgb(63, 62, 60);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    padding: 1.4px 3.5px;
+  }
+
+  dl {
+    margin: 16px 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dt {
+    color: rgb(63, 62, 60);
+    font-weight: 400;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dd {
+    color: rgb(63, 62, 60);
+    margin: 0px 0px 0px 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  sub {
+    color: rgb(63, 62, 60);
+    font-size: 13.3333px;
+    vertical-align: sub;
+  }
+
+  sup {
+    color: rgb(63, 62, 60);
+    font-size: 13.3333px;
+    vertical-align: super;
+  }
+
+  abbr {
+    color: rgb(63, 62, 60);
+    cursor: auto;
+    text-decoration: underline dotted rgb(63, 62, 60);
+    text-decoration-style: dotted;
+  }
+
+  .backlinks {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  li.task-list-item[data-task="-"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task=">"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="/"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="?"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="!"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="*"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="l"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="b"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="i"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="S"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="I"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="p"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="c"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="f"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="k"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="u"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="d"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="w"] {
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: rgb(34, 34, 34);
+  }
+
+  ::selection {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  input::placeholder {
+    color: inherit;
+    opacity: inherit;
+  }
+
+  p::first-letter {
+    color: rgb(63, 62, 60);
+    font-size: 16px;
+    font-weight: inherit;
+    float: inherit;
+  }
+
+  p::first-line {
+    color: rgb(63, 62, 60);
+    font-weight: inherit;
+    text-transform: inherit;
   }
 
   .katex-display > .katex {
