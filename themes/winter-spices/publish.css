@@ -916,7 +916,7 @@ body .markdown-rendered p {
 body strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     ui-sans-serif,
@@ -943,7 +943,7 @@ body strong {
 body b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     ui-sans-serif,
@@ -970,7 +970,7 @@ body b {
 body em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     ui-sans-serif,
@@ -997,7 +997,7 @@ body em {
 body i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     ui-sans-serif,
@@ -1024,7 +1024,7 @@ body i {
 body .markdown-rendered mark {
   background-color: rgba(255, 208, 0, 0.4);
   color: rgb(102, 102, 102);
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     ui-sans-serif,
@@ -1051,7 +1051,7 @@ body .markdown-rendered mark {
 body del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     ui-sans-serif,
@@ -1077,27 +1077,27 @@ body del {
 }
 body .suggestion-item.is-selected {
   background-color: rgba(0, 0, 0, 0.067);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   color: rgb(102, 102, 102);
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
   border: 0px rgb(102, 102, 102);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   color: rgb(102, 102, 102);
 }
 body .markdown-rendered hr {
@@ -1120,7 +1120,7 @@ body .markdown-rendered hr {
 }
 body div.multi-select-pill {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(138, 92, 245, 0.1);
   display: flex;
   font-family:
     ui-sans-serif,
@@ -1192,14 +1192,14 @@ body .markdown-rendered ol > li::marker {
 body .markdown-rendered code {
   background-color: rgba(75, 33, 57, 0.035);
   border: 0px solid rgb(164, 135, 131);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   color: rgb(102, 102, 102);
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -1210,14 +1210,14 @@ body .markdown-rendered code {
 body .markdown-rendered pre > code {
   background-color: rgba(75, 33, 57, 0.035);
   border: 0px solid rgb(164, 135, 131);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   overflow-x: auto;
   padding: 12px 16px;
   white-space-collapse: preserve;
@@ -1227,14 +1227,14 @@ body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   background-color: rgba(75, 33, 57, 0.035);
   border: 0px solid rgb(164, 135, 131);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   overflow-x: auto;
   padding: 12px 16px;
   white-space-collapse: preserve;
@@ -1317,14 +1317,14 @@ body .footnote-backref {
 body .site-body-left-column input.search-bar {
   background-color: rgb(252, 254, 243);
   border: 1px solid rgb(164, 135, 131);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-start-start-radius: 5px;
+  border-start-end-radius: 5px;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
   color: rgb(102, 102, 102);
   font-family:
     ui-sans-serif,
@@ -1342,14 +1342,14 @@ body .site-body-left-column input.search-bar {
 body .search-results {
   background-color: rgb(252, 254, 243);
   border: 1px solid rgb(32, 36, 48);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
   box-shadow:
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
@@ -1384,28 +1384,28 @@ body .search-results > * {
 }
 body div.search-results {
   border: 1px solid rgb(32, 36, 48);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
 }
 body .search-results .suggestion-item {
   color: rgb(102, 102, 102);
 }
 body div.search-results .suggestion-item {
   border: 0px rgb(102, 102, 102);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body .search-results .suggestion-item.is-selected {
   color: rgb(102, 102, 102);
@@ -1469,17 +1469,17 @@ body .markdown-preview-sizer {
 body .callout[data-callout="note"] {
   --callout-color: inherit;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(8, 109, 221, 0.1);
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: inherit;
@@ -1512,17 +1512,17 @@ body .callout > .callout-content {
 }
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 191, 188, 0.1);
   mix-blend-mode: normal;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="abstract"]
@@ -1534,17 +1534,17 @@ body
 }
 body .callout[data-callout="info"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(8, 109, 221, 0.1);
   mix-blend-mode: normal;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="info"]
@@ -1556,17 +1556,17 @@ body
 }
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(8, 109, 221, 0.1);
   mix-blend-mode: normal;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="todo"]
@@ -1578,17 +1578,17 @@ body
 }
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 191, 188, 0.1);
   mix-blend-mode: normal;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="tip"]
@@ -1600,17 +1600,17 @@ body
 }
 body .callout[data-callout="success"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(8, 185, 78, 0.1);
   mix-blend-mode: normal;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="success"]
@@ -1622,17 +1622,17 @@ body
 }
 body .callout[data-callout="question"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(236, 117, 0, 0.1);
   mix-blend-mode: normal;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="question"]
@@ -1644,17 +1644,17 @@ body
 }
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(236, 117, 0, 0.1);
   mix-blend-mode: normal;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="warning"]
@@ -1666,17 +1666,17 @@ body
 }
 body .callout[data-callout="danger"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
+  background-color: rgba(233, 49, 71, 0.1);
+  mix-blend-mode: darken;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="danger"]
@@ -1688,17 +1688,17 @@ body
 }
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(233, 49, 71, 0.1);
   mix-blend-mode: normal;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="failure"]
@@ -1710,17 +1710,17 @@ body
 }
 body .callout[data-callout="bug"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
+  background-color: rgba(233, 49, 71, 0.1);
+  mix-blend-mode: darken;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="bug"]
@@ -1732,17 +1732,17 @@ body
 }
 body .callout[data-callout="example"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
+  background-color: rgba(120, 82, 238, 0.1);
+  mix-blend-mode: darken;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
 }
 body
   .callout[data-callout="example"]
@@ -1754,9 +1754,63 @@ body
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  mix-blend-mode: normal;
+  background-color: rgba(158, 158, 158, 0.1);
+  mix-blend-mode: darken;
   border: 2px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+}
+body
+  .callout[data-callout="quote"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  fill: none;
+  stroke: rgb(158, 158, 158);
+}
+body .markdown-rendered table {
+  background-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: inherit;
+  color: rgb(102, 102, 102);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  table-layout: auto;
+  width: auto;
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body .markdown-rendered thead {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1766,13 +1820,605 @@ body .callout[data-callout="quote"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body
-  .callout[data-callout="quote"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(158, 158, 158);
+body .markdown-rendered tbody {
+  background-color: rgba(0, 0, 0, 0);
+}
+body .markdown-rendered th {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(102, 102, 102);
+  font-weight: 600;
+  text-align: start;
+  vertical-align: top;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body .markdown-rendered td {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body .markdown-rendered tr {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body .markdown-rendered tbody tr:nth-child(even) {
+  background-color: inherit;
+}
+body .markdown-rendered tbody tr:nth-child(odd) {
+  background-color: inherit;
+}
+body .markdown-rendered img {
+  border-radius: inherit;
+  box-shadow: none;
+  filter: none;
+  max-width: 100%;
+  object-fit: fill;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body .markdown-rendered figure {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 40px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 40px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body .markdown-rendered figcaption {
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  text-align: start;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body .markdown-rendered video {
+  border-radius: inherit;
+  box-shadow: none;
+  filter: none;
+  max-width: 100%;
+  object-fit: contain;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body .markdown-rendered audio {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body .internal-embed {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .markdown-embed {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .file-embed {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .frontmatter-container {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .metadata-container {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .metadata-properties {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .tooltip {
+  background-color: inherit;
+  box-shadow: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .popover {
+  background-color: inherit;
+  box-shadow: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body progress {
+  accent-color: auto;
+  background-color: rgba(0, 0, 0, 0);
+  height: 6px;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body input[type="range"] {
+  accent-color: auto;
+  background-color: rgb(255, 255, 255);
+  border: 2px inset rgb(118, 118, 118);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body input[type="text"] {
+  background-color: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 1px solid rgb(224, 224, 224);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-start-start-radius: 5px;
+  border-start-end-radius: 5px;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  padding: 4px 8px;
+}
+body details {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body summary {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
+  cursor: auto;
+  font-weight: 400;
+  list-style: inherit;
+  padding: 0px;
+}
+body details[open] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body kbd {
+  background-color: rgb(250, 250, 250);
+  box-shadow: none;
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+    "Source Code Pro", monospace;
+  font-size: 14px;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  padding: 1.4px 3.5px;
+}
+body dl {
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body dt {
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body dd {
+  color: rgb(34, 34, 34);
+  margin: 0px 0px 0px 40px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body sub {
+  color: rgb(34, 34, 34);
+  font-size: 13.3333px;
+  vertical-align: sub;
+}
+body sup {
+  color: rgb(34, 34, 34);
+  font-size: 13.3333px;
+  vertical-align: super;
+}
+body abbr {
+  color: rgb(34, 34, 34);
+  cursor: auto;
+  text-decoration: underline dotted rgb(34, 34, 34);
+  text-decoration-style: dotted;
+}
+body .backlink-pane {
+  background-color: inherit;
+  color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .backlink-pane .tree-item {
+  background-color: inherit;
+  color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .backlink-pane .tree-item-self {
+  color: inherit;
+  text-decoration: inherit;
+}
+body li.task-list-item[data-task="-"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task=">"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="/"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="?"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="!"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="*"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="l"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="b"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="i"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="S"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="I"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="p"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="c"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="f"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="k"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="u"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="d"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body li.task-list-item[data-task="w"] {
+  color: rgb(34, 34, 34);
+  text-decoration: rgb(34, 34, 34);
+  text-decoration-color: rgb(34, 34, 34);
+}
+body ::selection {
+  background-color: inherit;
+  color: inherit;
+}
+body input::placeholder {
+  color: inherit;
+  opacity: inherit;
+}
+body .markdown-rendered p::first-letter {
+  color: inherit;
+  font-size: 16px;
+  font-weight: inherit;
+  float: inherit;
+}
+body .markdown-rendered p::first-line {
+  color: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
 }
 body .math-block > mjx-container.MathJax {
   display: block;
@@ -1817,16 +2463,16 @@ body .nav-view-outer .tree-item-self a {
   text-decoration: none solid rgb(255, 255, 255);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.067);
   border: 0px rgb(127, 108, 94);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   color: rgb(127, 108, 94);
   cursor: default;
   transition-behavior: normal;

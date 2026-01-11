@@ -423,7 +423,6 @@
   --interactive-accent: rgb(64, 159, 231) !important;
   --interactive-accent-hover: rgb(82, 173, 235) !important;
   --interactive-accent-hsl: 207, 77%, 54% !important;
-  --interactive-accent-rgb: 70, 142, 235 !important;
   --interactive-hover: #e6e6e6 !important;
   --interactive-normal: #efefef !important;
   --keyboard-height: 0px !important;
@@ -740,6 +739,7 @@
   --table-header-border-color: #7d7d7d !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #0e0e0e !important;
+  --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
   --table-row-alt-background: transparent !important;
@@ -809,6 +809,7 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --interactive-accent-rgb: 70, 142, 235 !important;
   --h1-color: rgb(8, 55, 125) !important;
   --h2-color: rgb(0, 79, 168) !important;
   --h3-color: rgb(14, 99, 185) !important;
@@ -1850,7 +1851,6 @@
   --interactive-accent: rgb(45, 130, 205) !important;
   --interactive-accent-hover: rgb(97, 175, 224) !important;
   --interactive-accent-hsl: 208, 64%, 49% !important;
-  --interactive-accent-rgb: 45, 130, 204 !important;
   --interactive-hover: #373737 !important;
   --interactive-normal: #2b2b2b !important;
   --keyboard-height: 0px !important;
@@ -2055,6 +2055,7 @@
   --search-clear-button-size: 13px !important;
   --search-icon-color: #8a8a8a !important;
   --search-icon-size: 18px !important;
+  --search-result-background: #1e1e1e !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -2164,6 +2165,7 @@
   --table-header-border-color: #4a4a4a !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #c6c6c6 !important;
+  --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
   --table-row-alt-background: transparent !important;
@@ -2233,6 +2235,7 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --interactive-accent-rgb: 45, 130, 204 !important;
   --h1-color: rgb(150, 194, 46) !important;
   --h2-color: rgb(76, 177, 72) !important;
   --h3-color: rgb(58, 187, 187) !important;
@@ -8217,7 +8220,7 @@ body {
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: light-dark(rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
     color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
   }
 
@@ -8230,7 +8233,7 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: light-dark(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    background-color: light-dark(rgb(246, 246, 246), rgb(0, 0, 0));
     color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
   }
 
@@ -8393,7 +8396,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(0, 0, 0), rgb(231, 231, 231));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       Bookerly,
@@ -8430,7 +8433,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(0, 0, 0), rgb(231, 231, 231));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       Bookerly,
@@ -8465,9 +8468,9 @@ body {
 
   .page article p > em,
   em {
-    background-color: rgb(245, 84, 84);
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(9, 157, 78), rgb(164, 202, 142));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       Bookerly,
@@ -8487,7 +8490,7 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(164, 202, 142);
     text-decoration-color: light-dark(rgb(9, 157, 78), rgb(164, 202, 142));
@@ -8500,9 +8503,9 @@ body {
 
   .page article p > i,
   i {
-    background-color: rgb(245, 84, 84);
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(9, 157, 78), rgb(164, 202, 142));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       Bookerly,
@@ -8522,7 +8525,7 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(164, 202, 142);
     text-decoration-color: light-dark(rgb(9, 157, 78), rgb(164, 202, 142));
@@ -8539,7 +8542,7 @@ body {
       rgba(136, 132, 58, 0.54)
     );
     color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       Bookerly,
@@ -8573,7 +8576,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       Bookerly,
@@ -8733,7 +8736,7 @@ body {
   }
 
   ul > li::marker {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
     border: 0px light-dark(rgb(127, 127, 127), rgb(121, 121, 121));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -8755,7 +8758,7 @@ body {
   }
 
   ol > li::marker {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
     border: 0px light-dark(rgb(127, 127, 127), rgb(121, 121, 121));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -8951,7 +8954,7 @@ body {
 
   .search > .search-container > .search-space {
     background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
-    border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    border: 1px solid light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -9017,7 +9020,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    border: 1px solid light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -9379,8 +9382,8 @@ body {
     border-start-end-radius: 5px;
     border-end-start-radius: 5px;
     border-end-end-radius: 5px;
-    mix-blend-mode: lighten;
-    padding: 0px;
+    mix-blend-mode: normal;
+    padding: 12px 12px 12px 24px;
   }
 
   .callout .callout-title {
@@ -9418,7 +9421,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-left-color: light-dark(
@@ -9437,7 +9440,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(138, 138, 138);
   }
 
   .callout[data-callout="abstract"] {
@@ -9446,7 +9449,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-left-color: light-dark(
@@ -9474,7 +9477,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-left-color: light-dark(
@@ -9502,7 +9505,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-left-color: light-dark(
@@ -9530,7 +9533,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-left-color: light-dark(
@@ -9558,7 +9561,7 @@ body {
       rgba(8, 185, 78, 0.1),
       rgba(68, 207, 110, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
     border-left-color: light-dark(
@@ -9586,7 +9589,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-left-color: light-dark(
@@ -9614,7 +9617,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-left-color: light-dark(
@@ -9670,7 +9673,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-left-color: light-dark(
@@ -9745,7 +9748,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(198, 198, 198);
+    stroke: rgb(138, 138, 138);
   }
 
   .callout[data-callout="quote"] {
@@ -9767,6 +9770,740 @@ body {
   .callout[data-callout="quote"] .callout-title .callout-icon {
     fill: none;
     stroke: rgb(158, 158, 158);
+  }
+
+  table {
+    background-color: rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+    border-spacing: inherit;
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-family:
+      Bookerly,
+      Inter,
+      "Segoe UI",
+      "霞鹜文楷 GB",
+      "LXGW WenKai",
+      "Microsoft YaHei",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    table-layout: auto;
+    width: auto;
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 20px 0px 0px;
+    margin-block-end: 0px;
+    margin-block-start: 20px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  thead {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  th {
+    background-color: light-dark(
+      rgba(47, 147, 228, 0.1),
+      rgba(45, 130, 205, 0.1)
+    );
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-weight: 600;
+    text-align: start;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(125, 125, 125), rgb(74, 74, 74));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  td {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-weight: 400;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  tr {
+    background-color: light-dark(rgba(255, 255, 255, 0.44), rgba(0, 0, 0, 0.2));
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: inherit;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: inherit;
+  }
+
+  img {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: fill;
+    border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: auto;
+    margin-block-end: auto;
+    margin-block-start: auto;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+  }
+
+  figure {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: start;
+    border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 40px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  figcaption {
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-family:
+      Bookerly,
+      Inter,
+      "Segoe UI",
+      "霞鹜文楷 GB",
+      "LXGW WenKai",
+      "Microsoft YaHei",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: start;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  video {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: contain;
+    border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  audio {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  .transclude {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .transclude-inner {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .file-embed {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .frontmatter {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata-properties {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .tooltip {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .popover {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  progress {
+    accent-color: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 6px;
+    border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="range"] {
+    accent-color: auto;
+    background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="text"] {
+    background-color: light-dark(
+      rgba(255, 255, 255, 0.824),
+      rgba(46, 46, 46, 0.616)
+    );
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-family:
+      Bookerly,
+      Inter,
+      "Segoe UI",
+      "霞鹜文楷 GB",
+      "LXGW WenKai",
+      "Microsoft YaHei",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    border: 1px solid light-dark(rgb(221, 221, 221), rgb(52, 52, 52));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    padding: 4px 8px;
+  }
+
+  details {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  summary {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    cursor: auto;
+    font-weight: 400;
+    list-style: inherit;
+    padding: 0px;
+  }
+
+  details[open] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  kbd {
+    background-color: light-dark(
+      rgba(230, 230, 230, 0.443),
+      rgba(17, 17, 17, 0.55)
+    );
+    box-shadow: none;
+    color: light-dark(rgb(0, 0, 0), rgb(235, 219, 178));
+    font-family:
+      "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", "Source Han Mono",
+      "Microsoft Yahei Mono", "Segoe UI Emoji", "Microsoft YaHei",
+      "Source Code Pro", monospace, ui-monospace, SFMono-Regular,
+      "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
+      Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+    font-size: 14px;
+    border: 0px light-dark(rgb(0, 0, 0), rgb(235, 219, 178));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    padding: 1.4px 3.5px;
+  }
+
+  dl {
+    margin: 16px 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dt {
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-weight: 400;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dd {
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    margin: 0px 0px 0px 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  sub {
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-size: 13.3333px;
+    vertical-align: sub;
+  }
+
+  sup {
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-size: 13.3333px;
+    vertical-align: super;
+  }
+
+  abbr {
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    cursor: auto;
+    text-decoration: underline dotted rgb(198, 198, 198);
+    text-decoration-style: dotted;
+  }
+
+  .backlinks {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  li.task-list-item[data-task="-"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task=">"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="/"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="?"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="!"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="*"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="l"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="b"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="i"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="S"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="I"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="p"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="c"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="f"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="k"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="u"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="d"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="w"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  ::selection {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  input::placeholder {
+    color: inherit;
+    opacity: inherit;
+  }
+
+  p::first-letter {
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-size: 16px;
+    font-weight: inherit;
+    float: inherit;
+  }
+
+  p::first-line {
+    color: light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
+    font-weight: inherit;
+    text-transform: inherit;
   }
 
   .katex-display > .katex {
@@ -9830,7 +10567,10 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
+    );
     border: 0px light-dark(rgb(14, 14, 14), rgb(198, 198, 198));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

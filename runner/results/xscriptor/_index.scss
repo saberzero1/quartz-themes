@@ -19,7 +19,6 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-accent: #ffffff !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
   --background-modifier-border: #dadce0 !important;
   --background-modifier-border-focus: #bdbdbd !important;
@@ -778,6 +777,7 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --background-accent: #ffffff !important;
   --h1-color: #8b0000 !important;
   --h2-color: #b8860b !important;
   --h3-color: #2e8b57 !important;
@@ -791,13 +791,13 @@
   --border-color: #dadce0 !important;
   --line-height: 1.6 !important;
   --tag-text: #1565c0 !important;
+  --callout-note: #f5f5f5 !important;
   --background-primary-rgb: 255, 255, 255 !important;
   --table-row-even: #fafafa !important;
   --table-row-odd: #ffffff !important;
   --background-secondary-rgb: 248, 249, 250 !important;
   --tag-border: #bbdefb !important;
   --border-radius: 8px !important;
-  --callout-note: #f5f5f5 !important;
   --blur-intensity: 20px !important;
   --card-color: #ffffff !important;
   --input-color: #f8f9fa !important;
@@ -840,7 +840,6 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-accent: rgba(10, 10, 10, 0.8) !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
   --background-modifier-border: #404040 !important;
   --background-modifier-border-focus: #555555 !important;
@@ -1597,6 +1596,7 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --background-accent: rgba(10, 10, 10, 0.8) !important;
   --h1-color: #cd919e !important;
   --h2-color: #daa520 !important;
   --h3-color: #8fbc8f !important;
@@ -1610,13 +1610,13 @@
   --border-color: #404040 !important;
   --line-height: 1.6 !important;
   --tag-text: #90caf9 !important;
+  --callout-note: #1f1f1f;
   --background-primary-rgb: 10, 10, 10 !important;
   --table-row-even: #151515 !important;
   --table-row-odd: #0a0a0a !important;
   --background-secondary-rgb: 18, 18, 18 !important;
   --tag-border: #42a5f5 !important;
   --border-radius: 8px !important;
-  --callout-note: #1f1f1f;
   --blur-intensity: 20px !important;
   --card-color: rgba(0, 0, 0, 0.8) !important;
   --input-color: rgba(10, 10, 10, 0.8) !important;
@@ -1851,7 +1851,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 600;
@@ -1869,7 +1869,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 600;
@@ -1887,10 +1887,10 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(139, 69, 19), rgb(139, 227, 235));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(139, 227, 235);
     text-decoration-color: light-dark(rgb(139, 69, 19), rgb(139, 227, 235));
@@ -1905,10 +1905,10 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(139, 69, 19), rgb(139, 227, 235));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(139, 227, 235);
     text-decoration-color: light-dark(rgb(139, 69, 19), rgb(139, 227, 235));
@@ -1922,7 +1922,7 @@ body {
   .text-highlight {
     background-color: light-dark(rgb(255, 245, 157), rgb(74, 74, 26));
     color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
@@ -1939,7 +1939,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
@@ -2230,7 +2230,7 @@ body {
     border-start-end-radius: 16px;
     border-end-start-radius: 16px;
     border-end-end-radius: 16px;
-    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    color: light-dark(rgb(32, 33, 36), rgb(218, 218, 218));
     font-family: "EB Garamond", Georgia, serif;
   }
 
@@ -2466,7 +2466,7 @@ body {
     border-start-end-radius: 10.08px;
     border-end-start-radius: 10.08px;
     border-end-end-radius: 10.08px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 16px;
   }
 
@@ -2502,7 +2502,7 @@ body {
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(245, 245, 245), rgb(31, 31, 31));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(color(srgb 0.677124 0.80915 0.955556 / 0.75), rgb(42, 42, 42));
     border-left-color: light-dark(rgb(117, 117, 117), rgb(158, 158, 158));
@@ -2518,13 +2518,13 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(95, 158, 160);
+    stroke: rgb(208, 208, 208);
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(245, 245, 245), rgb(31, 31, 31));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(color(srgb 0.666667 0.91634 0.912418 / 0.75), rgb(42, 42, 42));
     border-left-color: light-dark(rgb(117, 117, 117), rgb(158, 158, 158));
@@ -2546,7 +2546,7 @@ body {
   .callout[data-callout="info"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(227, 242, 253), rgb(26, 35, 50));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid light-dark(rgb(13, 71, 161), rgb(42, 42, 42));
     border-left-color: light-dark(rgb(33, 150, 243), rgb(100, 181, 246));
     border-top-left-radius: 10.08px;
@@ -2567,7 +2567,7 @@ body {
   .callout[data-callout="todo"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(color(srgb 0.677124 0.80915 0.955556 / 0.75), rgb(42, 42, 42));
     border-top-left-radius: 10.08px;
@@ -2588,7 +2588,7 @@ body {
   .callout[data-callout="tip"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 229, 245), rgb(45, 27, 45));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid light-dark(rgb(106, 27, 154), rgb(42, 42, 42));
     border-left-color: light-dark(rgb(156, 39, 176), rgb(186, 104, 200));
     border-top-left-radius: 10.08px;
@@ -2609,7 +2609,7 @@ body {
   .callout[data-callout="success"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(232, 245, 232), rgb(27, 45, 27));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid light-dark(rgb(46, 125, 50), rgb(42, 42, 42));
     border-left-color: light-dark(rgb(76, 175, 80), rgb(102, 187, 106));
     border-top-left-radius: 10.08px;
@@ -2630,7 +2630,7 @@ body {
   .callout[data-callout="question"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(color(srgb 0.975163 0.819608 0.666667 / 0.75), rgb(42, 42, 42));
     border-top-left-radius: 10.08px;
@@ -2651,7 +2651,7 @@ body {
   .callout[data-callout="warning"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(255, 243, 224), rgb(45, 36, 22));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid light-dark(rgb(230, 81, 0), rgb(42, 42, 42));
     border-left-color: light-dark(rgb(255, 152, 0), rgb(255, 183, 77));
     border-top-left-radius: 10.08px;
@@ -2693,7 +2693,7 @@ body {
   .callout[data-callout="failure"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(color(srgb 0.971242 0.730719 0.759477 / 0.75), rgb(42, 42, 42));
     border-top-left-radius: 10.08px;
@@ -2750,7 +2750,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(255, 255, 255);
+    stroke: rgb(208, 208, 208);
   }
 
   .callout[data-callout="quote"] {
@@ -2772,6 +2772,675 @@ body {
   .callout[data-callout="quote"] .callout-title .callout-icon {
     fill: none;
     stroke: rgb(158, 158, 158);
+  }
+
+  table {
+    background-color: light-dark(rgb(255, 255, 255), rgba(0, 0, 0, 0.8));
+    border-collapse: collapse;
+    border-spacing: inherit;
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-family: "EB Garamond", Georgia, serif;
+    table-layout: auto;
+    width: auto;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(42, 42, 42));
+    border-top-left-radius: 10.08px;
+    border-top-right-radius: 10.08px;
+    border-bottom-left-radius: 10.08px;
+    border-bottom-right-radius: 10.08px;
+    border-start-start-radius: 10.08px;
+    border-start-end-radius: 10.08px;
+    border-end-start-radius: 10.08px;
+    border-end-end-radius: 10.08px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  thead {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(224, 224, 224), rgb(42, 42, 42));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  th {
+    background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.9));
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-weight: 600;
+    text-align: start;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(64, 64, 64));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  td {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-weight: 400;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(42, 42, 42));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  tr {
+    background-color: light-dark(rgb(245, 245, 245), rgb(31, 31, 31));
+    border: 0px light-dark(rgb(224, 224, 224), rgb(42, 42, 42));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: inherit;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: inherit;
+  }
+
+  img {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: fill;
+    border: 0px light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  figure {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: start;
+    border: 0px light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 40px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  figcaption {
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: start;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  video {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: contain;
+    border: 0px light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  audio {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  .transclude {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .transclude-inner {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .file-embed {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .frontmatter {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata-properties {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .tooltip {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .popover {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  progress {
+    accent-color: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 6px;
+    border: 0px light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="range"] {
+    accent-color: auto;
+    background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="text"] {
+    background-color: light-dark(rgb(248, 249, 250), rgba(10, 10, 10, 0.8));
+    color: light-dark(rgb(32, 33, 36), rgb(218, 218, 218));
+    font-family: "EB Garamond", Georgia, serif;
+    border: 1px solid light-dark(rgb(255, 255, 255), rgba(0, 0, 0, 0.8));
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-start-start-radius: 16px;
+    border-start-end-radius: 16px;
+    border-end-start-radius: 16px;
+    border-end-end-radius: 16px;
+    padding: 8px 10.1px;
+  }
+
+  details {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  summary {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    cursor: auto;
+    font-weight: 400;
+    list-style: inherit;
+    padding: 0px;
+  }
+
+  details[open] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  kbd {
+    background-color: light-dark(rgb(248, 249, 250), rgba(15, 15, 15, 0.8));
+    box-shadow: none;
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    border: 0px light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    padding: 1.4px 3.5px;
+  }
+
+  dl {
+    margin: 16px 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dt {
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-weight: 400;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dd {
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    margin: 0px 0px 0px 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  sub {
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-size: 13.3333px;
+    vertical-align: sub;
+  }
+
+  sup {
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-size: 13.3333px;
+    vertical-align: super;
+  }
+
+  abbr {
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    cursor: auto;
+    text-decoration: underline dotted rgb(255, 255, 255);
+    text-decoration-style: dotted;
+  }
+
+  .backlinks {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  li.task-list-item[data-task="-"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task=">"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="/"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="?"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="!"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="*"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="l"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="b"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="i"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="S"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="I"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="p"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="c"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="f"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="k"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="u"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="d"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="w"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  ::selection {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  input::placeholder {
+    color: inherit;
+    opacity: inherit;
+  }
+
+  p::first-letter {
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-size: 16px;
+    font-weight: inherit;
+    float: inherit;
+  }
+
+  p::first-line {
+    color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
+    font-weight: inherit;
+    text-transform: inherit;
   }
 
   .katex-display > .katex {

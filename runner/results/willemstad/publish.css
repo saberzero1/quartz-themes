@@ -12439,6 +12439,7 @@ body.theme-light {
   --callout-success: 8, 185, 78 !important;
   --callout-summary: 0, 191, 188 !important;
   --callout-tip: 0, 191, 188 !important;
+  --callout-title-padding: 0 !important;
   --callout-title-weight: 600 !important;
   --callout-todo: 8, 109, 221 !important;
   --callout-warning: 236, 117, 0 !important;
@@ -13124,6 +13125,7 @@ body.theme-light {
   --text-highlight-bg-active: rgb(0, 0, 0) !important;
   --color-base-15: oklch(0.97 0 0) !important;
   --font-heading: "Manrope", "Inter 4.1", "DM Sans" !important;
+  --font-ui: "Manrope", "Inter 4.1", "DM Sans" !important;
   --color-red-2: oklch(from #e93147 calc(l - 0.1) c calc(h + 4)) !important;
   --font-editor: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --callout-gap: 0.5em !important;
@@ -13137,7 +13139,6 @@ body.theme-light {
   --status-bar-padding: 4px !important;
   --theme-alternative-checkboxes: disable !important;
   --l: clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) !important;
-  --font-ui: "Manrope", "Inter 4.1", "DM Sans" !important;
   --PComm001-col-today: oklch(40.14% 0.0638 202.51deg) !important;
   --PComm001-col-year: oklch(40.14% 0.0638 202.51deg) !important;
   --PComm002-sp-maxheight: 33vh !important;
@@ -13703,6 +13704,7 @@ body.theme-dark {
   --callout-success: 68, 207, 110;
   --callout-summary: 83, 223, 221;
   --callout-tip: 83, 223, 221;
+  --callout-title-padding: 0;
   --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
@@ -14363,6 +14365,7 @@ body.theme-dark {
   --text-highlight-bg-active: rgb(0, 0, 0);
   --color-base-15: oklch(0.18 0 0);
   --font-heading: "Manrope", "Inter 4.1", "DM Sans";
+  --font-ui: "Manrope", "Inter 4.1", "DM Sans";
   --color-red-2: oklch(from #fb464c calc(l - 0.1) c calc(h + 4));
   --font-editor: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --callout-gap: 0.5em;
@@ -14376,7 +14379,6 @@ body.theme-dark {
   --status-bar-padding: 4px;
   --theme-alternative-checkboxes: disable;
   --l: clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975);
-  --font-ui: "Manrope", "Inter 4.1", "DM Sans";
   --PComm001-col-today: oklch(40.14% 0.0638 202.51deg);
   --PComm001-col-year: oklch(40.14% 0.0638 202.51deg);
   --PComm002-sp-maxheight: 33vh;
@@ -14919,7 +14921,7 @@ body .markdown-rendered p {
 body strong {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
@@ -14938,7 +14940,7 @@ body strong {
 body b {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
@@ -14957,7 +14959,7 @@ body b {
 body em {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
@@ -14976,7 +14978,7 @@ body em {
 body i {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
@@ -14994,8 +14996,8 @@ body i {
 }
 body .markdown-rendered mark {
   background-color: rgb(255, 195, 0);
-  color: rgb(0, 0, 0);
-  cursor: auto;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: text;
   filter: none;
   font-family:
     "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
@@ -15004,7 +15006,7 @@ body .markdown-rendered mark {
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(0, 0, 0);
-  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -15014,7 +15016,7 @@ body .markdown-rendered mark {
 body del {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
-  cursor: auto;
+  cursor: text;
   filter: none;
   font-family:
     "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
@@ -15277,7 +15279,7 @@ body .site-body-left-column input.search-bar {
 }
 body .search-results {
   background-color: light-dark(oklch(100% 0 0deg), oklch(13% 0 0deg));
-  border: 0px solid light-dark(oklch(70% 0 0deg), oklch(38% 0 0deg));
+  border: 1px solid light-dark(oklch(70% 0 0deg), oklch(38% 0 0deg));
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;
@@ -15286,7 +15288,10 @@ body .search-results {
   border-start-end-radius: 9px;
   border-end-start-radius: 9px;
   border-end-end-radius: 9px;
-  box-shadow: none;
+  box-shadow:
+    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
+    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
+    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
 }
 body .search-results > * {
   background-color: rgba(0, 0, 0, 0);
@@ -15308,7 +15313,7 @@ body .search-results > * {
   user-select: text;
 }
 body div.search-results {
-  border: 0px solid light-dark(oklch(70% 0 0deg), oklch(38% 0 0deg));
+  border: 1px solid light-dark(oklch(70% 0 0deg), oklch(38% 0 0deg));
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;
@@ -15407,7 +15412,7 @@ body .callout[data-callout="note"] {
   border-end-start-radius: 3px;
   border-end-end-radius: 3px;
   mix-blend-mode: normal;
-  padding: 0px;
+  padding: 12px 12px 12px 24px;
   background-color: rgba(0, 191, 111, 0.125);
 }
 body .callout[data-callout="note"] > .callout-title {
@@ -15462,8 +15467,8 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(83, 223, 221);
 }
 body .callout[data-callout="info"] {
   --callout-color: inherit;
@@ -15531,8 +15536,8 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(83, 223, 221);
 }
 body .callout[data-callout="success"] {
   --callout-color: inherit;
@@ -15554,8 +15559,8 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  fill: rgb(0, 0, 0);
-  stroke: none;
+  fill: none;
+  stroke: rgb(68, 207, 110);
 }
 body .callout[data-callout="question"] {
   --callout-color: inherit;
@@ -15606,7 +15611,7 @@ body
 body .callout[data-callout="danger"] {
   --callout-color: inherit;
   background-color: rgba(241, 0, 34, 0.125);
-  mix-blend-mode: normal;
+  mix-blend-mode: lighten;
   border: 0px solid oklch(60.3065% 0.245145 26.0471deg);
   border-left-color: rgb(241, 0, 34);
   border-top-left-radius: 3px;
@@ -15652,7 +15657,7 @@ body
 body .callout[data-callout="bug"] {
   --callout-color: inherit;
   background-color: rgba(164, 103, 80, 0.125);
-  mix-blend-mode: normal;
+  mix-blend-mode: lighten;
   border: 0px solid oklch(57.4652% 0.0862245 41.3449deg);
   border-left-color: rgb(164, 103, 80);
   border-top-left-radius: 3px;
@@ -15675,7 +15680,7 @@ body
 body .callout[data-callout="example"] {
   --callout-color: inherit;
   background-color: rgba(125, 84, 178, 0.125);
-  mix-blend-mode: normal;
+  mix-blend-mode: lighten;
   border: 0px solid oklch(53.3415% 0.145739 301.819deg);
   border-left-color: rgb(125, 84, 178);
   border-top-left-radius: 3px;
@@ -15698,7 +15703,7 @@ body
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
   background-color: rgba(161, 169, 173, 0.125);
-  mix-blend-mode: normal;
+  mix-blend-mode: lighten;
   border: 0px solid oklch(72.9631% 0.0107511 229.015deg);
   border-left-color: rgb(161, 169, 173);
   border-top-left-radius: 3px;
@@ -15717,6 +15722,644 @@ body
   > svg.svg-icon {
   fill: none;
   stroke: rgb(161, 169, 173);
+}
+body .markdown-rendered table {
+  background-color: rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: inherit;
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
+  font-family:
+    "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+    "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+    "DM Sans", "Inter 4.1", Manrope;
+  table-layout: auto;
+  width: auto;
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 12px 0px;
+  margin-block-end: 12px;
+  margin-block-start: 12px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body .markdown-rendered thead {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body .markdown-rendered tbody {
+  background-color: rgba(0, 0, 0, 0);
+}
+body .markdown-rendered th {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
+  font-weight: 600;
+  text-align: start;
+  vertical-align: top;
+  border: 1px solid light-dark(oklch(80% 0 0deg), oklch(30% 0 0deg));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body .markdown-rendered td {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid light-dark(oklch(80% 0 0deg), oklch(30% 0 0deg));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body .markdown-rendered tr {
+  background-color: light-dark(oklch(95% 0 0deg), oklch(19% 0 0deg));
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body .markdown-rendered tbody tr:nth-child(even) {
+  background-color: inherit;
+}
+body .markdown-rendered tbody tr:nth-child(odd) {
+  background-color: inherit;
+}
+body .markdown-rendered img {
+  border-radius: inherit;
+  box-shadow: none;
+  filter: none;
+  max-width: 100%;
+  object-fit: fill;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body .markdown-rendered figure {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 40px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 40px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body .markdown-rendered figcaption {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  text-align: start;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body .markdown-rendered video {
+  border-radius: inherit;
+  box-shadow: none;
+  filter: none;
+  max-width: 100%;
+  object-fit: contain;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body .markdown-rendered audio {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body .internal-embed {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .markdown-embed {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .file-embed {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .frontmatter-container {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .metadata-container {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .metadata-properties {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+  padding: inherit;
+}
+body .tooltip {
+  background-color: inherit;
+  box-shadow: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .popover {
+  background-color: inherit;
+  box-shadow: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body progress {
+  accent-color: auto;
+  background-color: rgba(0, 0, 0, 0);
+  height: 6px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body input[type="range"] {
+  accent-color: auto;
+  background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body input[type="text"] {
+  background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-start-start-radius: 5px;
+  border-start-end-radius: 5px;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  padding: 4px 8px;
+}
+body details {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body summary {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  font-weight: 400;
+  list-style: inherit;
+  padding: 0px;
+}
+body details[open] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body kbd {
+  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  box-shadow: none;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-family:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+    "Source Code Pro", monospace;
+  font-size: 14px;
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  padding: 1.4px 3.5px;
+}
+body dl {
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body dt {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-weight: 400;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body dd {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  margin: 0px 0px 0px 40px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body sub {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-size: 13.3333px;
+  vertical-align: sub;
+}
+body sup {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  font-size: 13.3333px;
+  vertical-align: super;
+}
+body abbr {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  cursor: auto;
+  text-decoration: underline dotted rgb(218, 218, 218);
+  text-decoration-style: dotted;
+}
+body .backlink-pane {
+  background-color: inherit;
+  color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .backlink-pane .tree-item {
+  background-color: inherit;
+  color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .backlink-pane .tree-item-self {
+  color: inherit;
+  text-decoration: inherit;
+}
+body li.task-list-item[data-task="-"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task=">"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="/"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="?"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="!"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="*"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="l"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="b"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="i"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="S"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="I"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="p"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="c"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="f"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="k"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="u"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="d"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body li.task-list-item[data-task="w"] {
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: rgb(218, 218, 218);
+  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body ::selection {
+  background-color: inherit;
+  color: inherit;
+}
+body input::placeholder {
+  color: inherit;
+  opacity: inherit;
+}
+body .markdown-rendered p::first-letter {
+  color: inherit;
+  font-size: 16px;
+  font-weight: inherit;
+  float: inherit;
+}
+body .markdown-rendered p::first-line {
+  color: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
 }
 body .math-block > mjx-container.MathJax {
   display: block;

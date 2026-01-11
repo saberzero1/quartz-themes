@@ -1,232 +1,394 @@
-/* Blossom Theme for Obsidian */
-    :root {
-        --font-monospace: "Source Code Pro", monospace;
-    }
-    
-    .theme-dark {
-        --background-primary: #10111b;
-        --background-primary-alt: #10111b;
-        --background-secondary: #090a0f;
-        --background-secondary-alt: #090a0f;
-        --text-normal: #f9f7f2;
-        --text-faint: #eeeeee;
-        --text-title-h1: #9200ff;
-        --text-title-h2: #9200ff;
-        --text-title-h3: #9200ff;
-        --text-title-h4: #9200ff;
-        --text-title-h5: #9200ff;
-        --text-title-h6: #9200ff;
-        --text-highlight-bg: #640211;
-        --text-link: #00ff7d;
-        --text-a-hover: #00ff7d;
-        --text-accent-hover: #26b3d2;
-        /* ^^^ added for hover over bracket internal links */
-        --inline-code: #00ff7d;
-        --code-block: #00ff7d;
-        --text-a: #FF058D;
-        --interactive-accent: #FF058D;
-        --text-accent: #FF058D;
-        --text-on-accent: #ffffff;
-        --interactive-accent-rgb: #FF058D;
-        --vim-cursor: #FF058D;
-        /*  --text-mark:                  add text-mark if needed, this should work together with 'mark' */
-        --pre-code: #;
-        --interactive-before: #ea748f;
-        --background-modifier-border: #FF058D;
-        --text-selection: #b80034;
-    }
-    
-    .theme-dark .cm-s-obsidian span.obsidian-search-match-highlight {
-        color: var(--text-normal);
-        background-color: #483699;
-    }
-    
-    .theme-light {
-        --background-primary: #EDEDED;
-        --background-secondary: #C4C4C4;
-        /* thick menu border */
-        --background-primary-alt: #;
-        --background-secondary-alt: #707070;
-        /* ← ↓  corner */
-        --text-normal: #1A2023;
-        --text-faint: #DEDEDE;
-        --text-title-h1: #26b3d2;
-        --text-title-h2: #26b3d2;
-        --text-title-h3: #26b3d2;
-        --text-title-h4: #26b3d2;
-        --text-title-h5: #26b3d2;
-        --text-link: #26b3d2;
-        --text-a-hover: #26b3d2;
-        --text-accent-hover: #26b3d2;
-        /* ^^^ added for hover over bracket internal links */
-        --inline-code: #f46e00;
-        /*  --text-mark:                  add if needed */
-        --pre-code: #bebebe;
-        /*  --text-highlight-bg:          add if needed */
-        --interactive-before: #a89984;
-        --background-modifier-border: #26b3d2;
-        --text-a: #961327;
-        --interactive-accent: #FF058D;
-        --text-accent: #961327;
-        --interactive-accent-rgb: #961327;
-        --vim-cursor: #961327;
-        --text-selection: #EDC180;
-        --text-white: #ffffff;
-    }
-    
-    .nav-file-title,
-    .nav-folder-title {
-        color: var(--text-normal);
-    }
-    
-    .nav-file-title.is-active,
-    .nav-folder-title.is-active,
-    body:not(.is-grabbing) .nav-file-title:hover,
-    body:not(.is-grabbing) .nav-folder-title:hover {
-        background-color: var(--background-modifier-border);
-        color: white;
-    }
-    
-    .cm-s-obsidian span.cm-formatting-link {
-        color: var(--text-normal);
-    }
-    
-    .CodeMirror-guttermarker-subtle {
-        color: var(--text-normal) !important;
-    }
-    
-    button.mod-cta {
-        background-color: var(--interactive-accent);
-        color: var(--text-normal);
-    }
-    
-    .vertical-tab-header-group-title {
-        color: var(--text-white);
-    }
-    
-    .cm-header-1 {
-        font-size: 18px;
-        color: var(--text-title-h1) !important;
-    }
-    
-    .cm-header-2 {
-        font-size: 18px;
-        color: var(--text-title-h2) !important;
-    }
-    
-    .cm-header-3 {
-        font-size: 18px;
-        color: var(--text-title-h3) !important;
-    }
-    
-    .cm-header-4 {
-        font-size: 18px;
-        color: var(--text-title-h4) !important;
-    }
-    
-    .cm-header-5 {
-        font-size: 18px;
-        color: var(--text-title-h5) !important;
-    }
-    
-    .cm-header-6 {
-        font-size: 18px;
-        color: --text-normal;
-        color: var(--text-title-h6) !important;
-    }
-    
-    .markdown-preview-view h1 {
-        font-size: 20px;
-        line-height: 24px;
-        color: var(--text-title-h1) !important;
-    }
-    
-    .markdown-preview-view h2 {
-        font-size: 20px;
-        line-height: 24px;
-        color: var(--text-title-h2) !important;
-    }
-    
-    .markdown-preview-view h3 {
-        font-size: 20px;
-        line-height: 24px;
-        color: var(--text-title-h3) !important;
-    }
-    
-    .markdown-preview-view h4 {
-        font-size: 20px;
-        line-height: 24px;
-        color: var(--text-title-h4) !important;
-    }
-    
-    .markdown-preview-view h5 {
-        font-size: 20px;
-        line-height: 24px;
-        color: var(--text-title-h5) !important;
-    }
-    
-    .markdown-preview-view h6 {
-        font-size: 20px;
-        line-height: 24px;
-        color: --text-normal;
-        color: var(--text-title-h6) !important;
-    }
-    /*-----------------------------------------*/
-    /* End of main theme, extra functionality can be added below */
-    
-    .markdown-source-view {
-        font-family: var(--font-monospace)
-    }
-    
-    .cm-fat-cursor .CodeMirror-cursor {
-        background-color: #FF058D !important;
-        opacity: 80% !important;
-        width: 9px !important;
-        visibility: visible !important
-    }
-    
-    .plugin-tabs .stayopen .view-header {
-        border-bottom: 2px solid var(--interactive-accent)!important;
-    }
-    
-    .plugin-tabs .mod-root.workspace-split.mod-vertical div.workspace-leaf:not(.stayopen)>.workspace-leaf-content>.view-header .view-header-title::before {
-        background-color: transparent!important
-    }
-    
-    .plugin-tabs .mod-root.workspace-split.mod-vertical .workspace-split.mod-vertical>div.workspace-leaf:not(.stayopen),
-    .plugin-tabs .mod-root.workspace-split.mod-vertical>div.workspace-leaf:not(.stayopen) {
-        border-radius: 5px 5px 0px 0px!important;
-    }
-    
-    .plugin-tabs .mod-root.workspace-split.mod-vertical div.workspace-leaf {
-        border-color: var(--background-secondary-alt)!important;
-        border-bottom-width: 0px!important;
-        border-right-width: 0px!important
-    }
-    
-    .theme-light.plugin-tabs .mod-root.workspace-split.mod-vertical div.workspace-leaf {
-        border-color: var(--background-secondary-alt)!important;
-        border-left-width: 3px!important;
-        border-bottom-width: 0px!important;
-        border-right-width: 0px!important
-    }
-    
-    .plugin-tabs .mod-root.workspace-split.mod-vertical>div.workspace-leaf hr.workspace-leaf-resize-handle,
-    .plugin-tabs .mod-root.workspace-split.mod-vertical>.mod-vertical hr.workspace-leaf-resize-handle {
-        display: none;
-    }
-    
-    .plugin-tabs .mod-root.workspace-split.mod-vertical div.workspace-leaf .view-header {
-        border-left-color: transparent!important
-    }
-    
-    .plugin-tabs .workspace-split.mod-root>.workspace-leaf:last-of-type .workspace-leaf-content,
-    .plugin-tabs .workspace-split.mod-root>.workspace-leaf:first-of-type .workspace-leaf-content {
-        border-radius: 0px!important;
-    }
-    
-    .plugin-tabs .theme-dark .mod-root.workspace-split.mod-vertical .workspace-split.mod-vertical>div.workspace-leaf.mod-active,
-    .plugin-tabs .theme-dark .mod-root.workspace-split.mod-vertical>div.workspace-leaf.mod-active {
-        border: 0!important;
-        border-radius: 0px 0px 0px 0px!important;
-    }
+/* ═══════════════════════════════════════════════════════════
+   BLOSSOM THEME v2.0.0
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+	/* TYPOGRAPHY CONFIGURATION */
+	--font-text: "Inter", "Segoe UI", Roboto, Helvetica, sans-serif;
+	--font-headings: "Playfair Display", "Merriweather", "Georgia", serif;
+	--font-monospace: "JetBrains Mono", "Fira Code", monospace;
+
+	/* SPACING & LAYOUT */
+	--line-height-normal: 1.8;
+	--header-line-height: 1.2;
+}
+
+.theme-dark {
+	/* ═══════════════════════════════════════════════════════════
+       THE PALETTE
+       ═══════════════════════════════════════════════════════════ */
+	--blossom-pink: #ff058d;
+	--blossom-purple: #9200ff;
+	--blossom-cyan: #00d4ff;
+	--blossom-mint: #00ff7d;
+	--blossom-yellow: #f5ac00;
+	--blossom-orange: #ff5555;
+	--blossom-salmon: #ea748f;
+
+	/* VARIATIONS */
+	--accent-glow: rgba(255, 5, 141, 0.4);
+	--selection-color: rgba(255, 5, 141, 0.25);
+
+	/* BACKGROUNDS */
+	--background-primary: #13141f;
+	--background-primary-alt: #181924;
+	--background-secondary: #0d0e16;
+	--background-secondary-alt: #0d0e16;
+
+	/* GLASSMORPHISM - SHADOWS ONLY (No Borders) */
+	--glass-bg: rgba(16, 17, 22, 0.85);
+	--glass-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+
+	/* TEXT HIERARCHY */
+	--text-normal: #ececec;
+	--text-muted: #8e8e9e;
+	--text-faint: #5c5c66;
+
+	/* UI ELEMENTS */
+	--interactive-accent: var(--blossom-pink);
+	--interactive-hover: rgba(255, 255, 255, 0.05);
+
+	/* HIDE DEFAULT BORDER VARIABLES */
+	--divider-color: transparent;
+	--divider-width: 0px;
+	--tab-outline-color: transparent;
+	--tab-divider-color: transparent;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   GLOBAL REFINEMENTS
+   ═══════════════════════════════════════════════════════════ */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.02em;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   NO BORDERS - STRICT
+   ═══════════════════════════════════════════════════════════ */
+
+/* 1. Hide the Resize Handles */
+.workspace-leaf-resize-handle {
+	background-color: transparent !important;
+	border: none !important;
+}
+
+.workspace-split.mod-vertical > .workspace-leaf-resize-handle,
+.workspace-split.mod-horizontal > .workspace-leaf-resize-handle {
+	width: 0px !important; /* Make them invisible but still draggable if you hover precisely */
+	background: transparent !important;
+}
+
+/* 2. Remove Sidebar Borders */
+.workspace-ribbon,
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split,
+.workspace-split {
+	border-right: none !important;
+	border-left: none !important;
+	border: none !important;
+}
+
+/* 3. Remove Tab Header & View Header Lines */
+.workspace-tab-header-container,
+.view-header {
+	border-bottom: none !important;
+	box-shadow: none !important;
+}
+
+.view-content {
+	border-top: none !important;
+}
+
+/* 4. Clean Status Bar */
+.status-bar {
+	border-top: none !important;
+	background: transparent !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   EDITORIAL HEADINGS
+   ═══════════════════════════════════════════════════════════ */
+.markdown-preview-view h1,
+.cm-header-1 {
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 1.3;
+	color: var(--blossom-purple) !important;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	letter-spacing: -0.02em;
+}
+
+.markdown-preview-view h2,
+.cm-header-2 {
+	font-size: 1.65em;
+	font-weight: 700;
+	line-height: 1.35;
+	color: var(--blossom-mint) !important;
+	margin-top: 1.4em;
+	margin-bottom: 0.45em;
+	letter-spacing: -0.015em;
+}
+
+.markdown-preview-view h3,
+.cm-header-3 {
+	font-size: 1.4em;
+	font-weight: 600;
+	line-height: 1.4;
+	color: var(--blossom-cyan) !important;
+	margin-top: 1.3em;
+	margin-bottom: 0.4em;
+	letter-spacing: -0.01em;
+}
+
+.markdown-preview-view h4,
+.cm-header-4 {
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 1.45;
+	color: var(--blossom-yellow) !important;
+	margin-top: 1.2em;
+	margin-bottom: 0.35em;
+}
+
+.markdown-preview-view h5,
+.cm-header-5 {
+	font-size: 1.05em;
+	font-weight: 600;
+	line-height: 1.5;
+	color: var(--blossom-orange) !important;
+	margin-top: 1.1em;
+	margin-bottom: 0.3em;
+}
+
+.markdown-preview-view h6,
+.cm-header-6 {
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1.5;
+	color: var(--blossom-salmon) !important;
+	margin-top: 1em;
+	margin-bottom: 0.3em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 0.9em;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   UI & LAYOUT
+   ═══════════════════════════════════════════════════════════ */
+
+/* Modals - Floating Cards */
+.modal {
+	background: var(--glass-bg);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	box-shadow: var(--glass-shadow);
+	border-radius: 20px;
+	border: none !important;
+}
+
+.modal-title {
+	text-align: center;
+	font-family: var(--font-headings);
+	color: var(--blossom-pink);
+	font-size: 1.5em;
+	text-transform: none;
+	border-bottom: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   TEXT EDITOR
+   ═══════════════════════════════════════════════════════════ */
+
+/* Active Line - Gradient Fade Only */
+.cm-active {
+	background: linear-gradient(
+		90deg,
+		rgba(255, 5, 141, 0.08) 0%,
+		transparent 100%
+	);
+	border-left: none !important;
+}
+
+::selection {
+	background: var(--selection-color);
+	color: #fff;
+}
+
+strong {
+	color: var(--blossom-pink);
+	font-weight: 700;
+}
+em {
+	color: var(--blossom-cyan);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   GRAPH VIEW - Colorful Network
+   ═══════════════════════════════════════════════════════════ */
+
+.graph-view.color-fill {
+	color: var(--blossom-pink);
+}
+
+.graph-view.color-line {
+	color: var(--blossom-purple);
+}
+
+.graph-view.color-text {
+	color: var(--text-muted);
+}
+
+.graph-view.color-fill-highlight {
+	color: var(--blossom-cyan);
+}
+
+.graph-view.color-line-highlight {
+	color: var(--blossom-mint);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   LINKS
+   ═══════════════════════════════════════════════════════════ */
+
+a,
+.internal-link {
+	color: var(--blossom-cyan);
+	text-decoration: none !important;
+	background-image: linear-gradient(
+		var(--blossom-purple),
+		var(--blossom-purple)
+	);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 1px;
+	transition: background-size 0.3s, color 0.3s;
+	padding-bottom: 2px;
+}
+
+a:hover,
+.internal-link:hover {
+	color: var(--blossom-pink);
+	background-size: 100% 2px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   COMPONENTS
+   ═══════════════════════════════════════════════════════════ */
+
+/* Blockquotes */
+blockquote {
+	border-left: none !important;
+	background: linear-gradient(
+		90deg,
+		rgba(146, 0, 255, 0.1) 0%,
+		rgba(146, 0, 255, 0.02) 100%
+	);
+	padding: 16px 24px;
+	border-radius: 8px;
+	font-style: italic;
+	color: var(--text-muted);
+	margin-left: 0;
+}
+
+/* Code Blocks */
+.markdown-preview-view pre {
+	background: #08080a;
+	border: none !important;
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.markdown-preview-view code {
+	color: var(--blossom-mint);
+	background: rgba(0, 255, 125, 0.08);
+	border-radius: 6px;
+	padding: 2px 6px;
+	border: none !important;
+	font-size: 0.85em;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CHECKBOXES & BUTTONS
+   ═══════════════════════════════════════════════════════════ */
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 50%;
+	border: none !important;
+	background: rgba(255, 255, 255, 0.1);
+	width: 1.2em;
+	height: 1.2em;
+	position: relative;
+	top: 2px;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+input[type="checkbox"]:checked {
+	background-color: var(--blossom-pink);
+	box-shadow: 0 0 12px var(--accent-glow);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='white' stroke-width='2.5' d='M2.5 7L5.5 10L11.5 4'/%3E%3C/svg%3E");
+}
+
+button.mod-cta {
+	background: var(--blossom-pink);
+	color: white;
+	border-radius: 30px;
+	font-weight: 600;
+	box-shadow: 0 4px 15px rgba(255, 5, 141, 0.25);
+	border: none !important;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button.mod-cta:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(255, 5, 141, 0.4);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FILE EXPLORER (Cleaner)
+   ═══════════════════════════════════════════════════════════ */
+
+.nav-file-title,
+.nav-folder-title {
+	border-radius: 8px;
+	padding: 6px 10px;
+	border: none !important;
+}
+
+.nav-file-title.is-active {
+	background: linear-gradient(
+		90deg,
+		rgba(255, 5, 141, 0.15) 0%,
+		transparent 100%
+	);
+	color: var(--blossom-pink);
+	border: none !important;
+	font-weight: 600;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SCROLLBARS
+   ═══════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	border: none;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}

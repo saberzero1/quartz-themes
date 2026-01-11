@@ -1208,7 +1208,6 @@
   --interactive-accent: #7cafc2 !important;
   --interactive-accent-hover: #86c1b9 !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-accent-rgb: 124, 175, 194 !important;
   --interactive-hover: #383838 !important;
   --interactive-normal: #282828 !important;
   --keyboard-height: 0px !important;
@@ -1593,6 +1592,7 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --interactive-accent-rgb: 124, 175, 194 !important;
   --heading-color: #d8d8d8 !important;
   --inline-title-color: #d8d8d8 !important;
   --background-modifier-form-field-highlighted: #181818 !important;
@@ -1857,7 +1857,7 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(138, 92, 245), rgb(124, 175, 194));
+    color: light-dark(rgb(166, 138, 249), rgb(134, 193, 185));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1874,8 +1874,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(124, 175, 194);
-    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(124, 175, 194));
+    text-decoration: none solid rgb(134, 193, 185);
+    text-decoration-color: light-dark(rgb(166, 138, 249), rgb(134, 193, 185));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1903,7 +1903,10 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(136, 136, 136);
-    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(136, 136, 136));
+    text-decoration-color: light-dark(
+      rgba(138, 92, 245, 0.3),
+      rgb(136, 136, 136)
+    );
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1943,7 +1946,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(171, 70, 66));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -1972,7 +1975,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(171, 70, 66));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2001,7 +2004,7 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(161, 181, 108));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2015,7 +2018,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(161, 181, 108);
     text-decoration-color: light-dark(rgb(34, 34, 34), rgb(161, 181, 108));
@@ -2030,7 +2033,7 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(161, 181, 108));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2044,7 +2047,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(161, 181, 108);
     text-decoration-color: light-dark(rgb(34, 34, 34), rgb(161, 181, 108));
@@ -2058,7 +2061,7 @@ body {
   .text-highlight {
     background-color: rgba(210, 185, 60, 0.25);
     color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2086,7 +2089,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2278,27 +2281,27 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(250, 250, 250), rgb(26, 26, 26));
+    background-color: light-dark(rgb(250, 250, 250), rgb(32, 32, 32));
     border: 0px solid light-dark(rgb(224, 224, 224), rgb(56, 56, 56));
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-start-start-radius: 2px;
-    border-start-end-radius: 2px;
-    border-end-start-radius: 2px;
-    border-end-end-radius: 2px;
-    color: light-dark(rgb(34, 34, 34), rgb(220, 150, 86));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
-    padding: 2px 4px;
+    padding: 2.1px 4.2px;
   }
 
   pre > code,
   pre:has(> code) {
-    background-color: light-dark(rgb(250, 250, 250), rgba(0, 0, 0, 0));
+    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(40, 40, 40));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2437,15 +2440,18 @@ body {
   .search > .search-container > .search-space {
     background-color: light-dark(rgb(255, 255, 255), rgb(24, 24, 24));
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(56, 56, 56));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    box-shadow: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-start-start-radius: 12px;
+    border-start-end-radius: 12px;
+    border-end-start-radius: 12px;
+    border-end-end-radius: 12px;
+    box-shadow:
+      rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
+      rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
+      rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
   }
 
   .search > .search-container > .search-space > input {
@@ -2494,14 +2500,14 @@ body {
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(56, 56, 56));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-start-start-radius: 12px;
+    border-start-end-radius: 12px;
+    border-end-start-radius: 12px;
+    border-end-end-radius: 12px;
   }
 
   .search
@@ -2744,16 +2750,16 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border: 0px light-dark(rgba(8, 109, 221, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    mix-blend-mode: lighten;
+    border: 0px solid light-dark(rgba(8, 109, 221, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    mix-blend-mode: normal;
     padding: 4px 12px;
   }
 
@@ -2788,37 +2794,43 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(0, 0, 0, 0));
-    mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(8, 109, 221, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(8, 109, 221, 0.1),
+      rgba(2, 122, 255, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgba(8, 109, 221, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(129, 162, 190);
+    stroke: rgb(184, 184, 184);
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(0, 0, 0, 0));
-    mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(0, 191, 188, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(0, 191, 188, 0.1),
+      rgba(83, 223, 221, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgba(0, 191, 188, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
@@ -2828,17 +2840,20 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(0, 0, 0, 0));
-    mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(8, 109, 221, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(8, 109, 221, 0.1),
+      rgba(2, 122, 255, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgba(8, 109, 221, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
@@ -2848,17 +2863,20 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(0, 0, 0, 0));
-    mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(8, 109, 221, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(8, 109, 221, 0.1),
+      rgba(2, 122, 255, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgba(8, 109, 221, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
@@ -2868,17 +2886,20 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(0, 0, 0, 0));
-    mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(0, 191, 188, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(0, 191, 188, 0.1),
+      rgba(83, 223, 221, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgba(0, 191, 188, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
@@ -2888,17 +2909,20 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(8, 185, 78, 0.1), rgba(0, 0, 0, 0));
-    mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(8, 185, 78, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(8, 185, 78, 0.1),
+      rgba(68, 207, 110, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgba(8, 185, 78, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
@@ -2908,17 +2932,20 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(0, 0, 0, 0));
-    mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(236, 117, 0, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(236, 117, 0, 0.1),
+      rgba(233, 151, 63, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgba(236, 117, 0, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
@@ -2928,17 +2955,20 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(0, 0, 0, 0));
-    mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(236, 117, 0, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(236, 117, 0, 0.1),
+      rgba(233, 151, 63, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgba(236, 117, 0, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
@@ -2948,17 +2978,20 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(0, 0, 0, 0));
+    background-color: light-dark(
+      rgba(233, 49, 71, 0.1),
+      rgba(251, 70, 76, 0.1)
+    );
     mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(233, 49, 71, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border: 0px solid light-dark(rgba(233, 49, 71, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
@@ -2968,17 +3001,20 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(0, 0, 0, 0));
-    mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(233, 49, 71, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(233, 49, 71, 0.1),
+      rgba(251, 70, 76, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgba(233, 49, 71, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
@@ -2988,17 +3024,20 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(0, 0, 0, 0));
+    background-color: light-dark(
+      rgba(233, 49, 71, 0.1),
+      rgba(251, 70, 76, 0.1)
+    );
     mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(233, 49, 71, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border: 0px solid light-dark(rgba(233, 49, 71, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
@@ -3008,42 +3047,751 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(120, 82, 238, 0.1), rgba(0, 0, 0, 0));
+    background-color: light-dark(
+      rgba(120, 82, 238, 0.1),
+      rgba(168, 130, 255, 0.1)
+    );
     mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(120, 82, 238, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border: 0px solid light-dark(rgba(120, 82, 238, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(216, 216, 216);
+    stroke: rgb(184, 184, 184);
   }
 
   .callout[data-callout="quote"] {
     --callout-color: inherit;
-    background-color: light-dark(rgba(158, 158, 158, 0.1), rgba(0, 0, 0, 0));
+    background-color: rgba(158, 158, 158, 0.1);
     mix-blend-mode: lighten;
-    border: 0px light-dark(rgba(158, 158, 158, 0.25), rgb(216, 216, 216));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border: 0px solid light-dark(rgba(158, 158, 158, 0.25), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
     fill: none;
     stroke: rgb(150, 152, 150);
+  }
+
+  table {
+    background-color: rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+    border-spacing: inherit;
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    table-layout: auto;
+    width: auto;
+    border: 1px solid light-dark(rgb(128, 128, 128), rgb(64, 64, 64));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 223.578px 0px 223.562px;
+    margin-block-end: 0px;
+    margin-block-start: 16px;
+    margin-inline-end: 223.578px;
+    margin-inline-start: 223.562px;
+  }
+
+  thead {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(128, 128, 128), rgb(64, 64, 64));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  th {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    font-weight: 600;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(56, 56, 56));
+    border-bottom: 2px solid light-dark(rgb(224, 224, 224), rgb(72, 72, 72));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  td {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    font-weight: 400;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(48, 48, 48));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  tr {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(128, 128, 128), rgb(64, 64, 64));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: inherit;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: inherit;
+  }
+
+  img {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: fill;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  figure {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: start;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 40px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  figcaption {
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: start;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  video {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: contain;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  audio {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  .transclude {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .transclude-inner {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .file-embed {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .frontmatter {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata-properties {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .tooltip {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .popover {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  progress {
+    accent-color: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 6px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="range"] {
+    accent-color: auto;
+    background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="text"] {
+    background-color: light-dark(rgb(255, 255, 255), rgb(24, 24, 24));
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(56, 56, 56));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    padding: 4px 8px;
+  }
+
+  details {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  summary {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    cursor: auto;
+    font-weight: 400;
+    list-style: inherit;
+    padding: 0px;
+  }
+
+  details[open] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  kbd {
+    background-color: light-dark(rgb(250, 250, 250), rgb(32, 32, 32));
+    box-shadow: none;
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
+    font-size: 14px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    padding: 1.4px 3.5px;
+  }
+
+  dl {
+    margin: 16px 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dt {
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    font-weight: 400;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dd {
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    margin: 0px 0px 0px 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  sub {
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    font-size: 13.3333px;
+    vertical-align: sub;
+  }
+
+  sup {
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    font-size: 13.3333px;
+    vertical-align: super;
+  }
+
+  abbr {
+    color: light-dark(rgb(34, 34, 34), rgb(216, 216, 216));
+    cursor: auto;
+    text-decoration: underline dotted rgb(216, 216, 216);
+    text-decoration-style: dotted;
+  }
+
+  .backlinks {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  li.task-list-item[data-task="-"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task=">"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="/"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="?"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="!"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="*"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="l"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="b"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="i"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="S"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="I"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="p"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="c"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="f"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="k"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="u"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="d"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="w"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  ::selection {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  input::placeholder {
+    color: inherit;
+    opacity: inherit;
+  }
+
+  p::first-letter {
+    color: light-dark(inherit, rgb(216, 216, 216));
+    font-size: 16px;
+    font-weight: inherit;
+    float: inherit;
+  }
+
+  p::first-line {
+    color: light-dark(inherit, rgb(216, 216, 216));
+    font-weight: inherit;
+    text-transform: inherit;
   }
 
   .katex-display > .katex {

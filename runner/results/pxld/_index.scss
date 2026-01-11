@@ -858,6 +858,7 @@
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -884,6 +885,7 @@
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
+  --blockquote-border-color: rgb(138, 92, 245) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -926,6 +928,7 @@
   --caret-color: #f5f7fa !important;
   --checkbox-border-color: #666666 !important;
   --checkbox-border-color-hover: #b3b3b3 !important;
+  --checkbox-color: rgb(138, 92, 245) !important;
   --checkbox-color-hover: rgb(197, 182, 252) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #080808 !important;
@@ -954,6 +957,7 @@
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #666666 !important;
   --collapse-icon-color-collapsed: rgb(197, 182, 252) !important;
+  --color-accent: rgb(138, 92, 245) !important;
   --color-accent-1: rgb(166, 139, 249) !important;
   --color-accent-2: rgb(197, 182, 252) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
@@ -993,6 +997,7 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #363636 !important;
+  --divider-color-hover: rgb(138, 92, 245) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -1008,6 +1013,7 @@
     0 0 0 1px #363636, inset 0 0 0 1px #363636 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
+  --embed-border-start: 2px solid rgb(138, 92, 245) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1187,6 +1193,7 @@
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: #3f3f3f !important;
@@ -1474,6 +1481,7 @@
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
   --tab-text-color: #666666 !important;
   --tab-text-color-active: #b3b3b3 !important;
   --tab-text-color-focused: #b3b3b3 !important;
@@ -1494,6 +1502,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: rgb(138, 92, 245) !important;
   --table-drag-handle-color: #666666 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -1510,6 +1519,7 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: rgba(138, 92, 245, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
+  --table-selection-border-color: rgb(138, 92, 245) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
@@ -1863,7 +1873,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(8, 8, 8), rgb(245, 247, 250));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: pixel_squareregular;
     font-weight: 600;
@@ -1881,7 +1891,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(8, 8, 8), rgb(245, 247, 250));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: pixel_squareregular;
     font-weight: 600;
@@ -1899,7 +1909,7 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(8, 8, 8), rgb(245, 247, 250));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: pixel_squareregular;
     font-weight: 600;
@@ -1917,7 +1927,7 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(8, 8, 8), rgb(245, 247, 250));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: pixel_squareregular;
     font-weight: 600;
@@ -1934,7 +1944,7 @@ body {
   .text-highlight {
     background-color: rgba(255, 208, 0, 0.4);
     color: light-dark(rgb(8, 8, 8), rgb(245, 247, 250));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: pixel_squareregular;
     font-weight: 400;
@@ -1951,7 +1961,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(8, 8, 8), rgb(245, 247, 250));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family: pixel_squareregular;
     font-weight: 400;
@@ -2837,6 +2847,700 @@ body {
   .callout[data-callout="quote"] .callout-title .callout-icon {
     fill: none;
     stroke: rgb(158, 158, 158);
+  }
+
+  table {
+    background-color: rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+    border-spacing: inherit;
+    color: light-dark(rgb(8, 8, 8), rgb(245, 247, 250));
+    font-family: pixel_squareregular;
+    table-layout: auto;
+    width: auto;
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  thead {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  th {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(8, 8, 8), rgb(245, 247, 250));
+    font-weight: 600;
+    text-align: start;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  td {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(8, 8, 8), rgb(245, 247, 250));
+    font-weight: 400;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  tr {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: inherit;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: inherit;
+  }
+
+  img {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: fill;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  figure {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: start;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 40px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  figcaption {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: start;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  video {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: contain;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  audio {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  .transclude {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .transclude-inner {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .file-embed {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .frontmatter {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata-properties {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .tooltip {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .popover {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  progress {
+    accent-color: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 6px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="range"] {
+    accent-color: auto;
+    background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="text"] {
+    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    padding: 4px 8px;
+  }
+
+  details {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  summary {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    cursor: auto;
+    font-weight: 400;
+    list-style: inherit;
+    padding: 0px;
+  }
+
+  details[open] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  kbd {
+    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    box-shadow: none;
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
+    font-size: 14px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    padding: 1.4px 3.5px;
+  }
+
+  dl {
+    margin: 16px 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dt {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-weight: 400;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dd {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    margin: 0px 0px 0px 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  sub {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-size: 13.3333px;
+    vertical-align: sub;
+  }
+
+  sup {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-size: 13.3333px;
+    vertical-align: super;
+  }
+
+  abbr {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    cursor: auto;
+    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration-style: dotted;
+  }
+
+  .backlinks {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  li.task-list-item[data-task="-"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task=">"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="/"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="?"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="!"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="*"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="l"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="b"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="i"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="S"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="I"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="p"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="c"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="f"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="k"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="u"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="d"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="w"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  ::selection {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  input::placeholder {
+    color: inherit;
+    opacity: inherit;
+  }
+
+  p::first-letter {
+    color: inherit;
+    font-size: 16px;
+    font-weight: inherit;
+    float: inherit;
+  }
+
+  p::first-line {
+    color: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
   }
 
   .katex-display > .katex {

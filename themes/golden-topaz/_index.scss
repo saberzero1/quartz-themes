@@ -19,7 +19,6 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-accent: #e6eff4 !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
   --background-modifier-border: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-border-focus: #bdbdbd !important;
@@ -413,7 +412,6 @@
   --interactive-accent: #4c5064 !important;
   --interactive-accent-hover: #e6eff4 !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-accent-rgb: 70, 142, 235 !important;
   --interactive-hover: #e6eff4 !important;
   --interactive-normal: #dddbc7 !important;
   --keyboard-height: 0px !important;
@@ -800,6 +798,8 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --background-accent: #e6eff4 !important;
+  --interactive-accent-rgb: 70, 142, 235 !important;
   --h1-color: #000000 !important;
   --h2-color: #000000 !important;
   --h3-color: #000000 !important;
@@ -957,7 +957,6 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-accent: #786b54 !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
   --background-modifier-border: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-border-focus: #555555 !important;
@@ -1351,7 +1350,6 @@
   --interactive-accent: #007672 !important;
   --interactive-accent-hover: #e1b87f !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-accent-rgb: 45, 135, 211 !important;
   --interactive-hover: #e1b87f !important;
   --interactive-normal: #007672 !important;
   --keyboard-height: 0px !important;
@@ -1736,6 +1734,8 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --background-accent: #786b54 !important;
+  --interactive-accent-rgb: 45, 135, 211 !important;
   --h1-color: #d1ccbd !important;
   --h2-color: #d1ccbd !important;
   --h3-color: #d1ccbd !important;
@@ -2109,7 +2109,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(86, 103, 164), rgb(120, 107, 84));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2138,7 +2138,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(86, 103, 164), rgb(120, 107, 84));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2167,7 +2167,7 @@ body {
   em {
     background-color: rgb(245, 84, 84);
     color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2196,7 +2196,7 @@ body {
   i {
     background-color: rgb(245, 84, 84);
     color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2223,8 +2223,8 @@ body {
 
   .text-highlight {
     background-color: light-dark(rgb(230, 239, 244), rgb(0, 118, 114));
-    color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
-    cursor: auto;
+    color: light-dark(rgb(34, 34, 34), rgb(162, 156, 144));
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2241,7 +2241,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(162, 156, 144);
-    text-decoration-color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(162, 156, 144));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2252,7 +2252,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
       ui-sans-serif,
@@ -2585,7 +2585,7 @@ body {
     border-start-end-radius: 5px;
     border-end-start-radius: 5px;
     border-end-end-radius: 5px;
-    color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
+    color: light-dark(rgb(34, 34, 34), rgb(162, 156, 144));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3261,6 +3261,711 @@ body {
     stroke: rgb(158, 158, 158);
   }
 
+  table {
+    background-color: rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+    border-spacing: inherit;
+    color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    table-layout: auto;
+    width: auto;
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 213.391px 20px;
+    margin-block-end: 20px;
+    margin-block-start: 16px;
+    margin-inline-end: 213.391px;
+    margin-inline-start: 213.391px;
+  }
+
+  thead {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  th {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
+    font-weight: 600;
+    text-align: start;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(76, 80, 100), rgb(192, 192, 192));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  td {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
+    font-weight: 400;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid light-dark(rgb(76, 80, 100), rgb(192, 192, 192));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  tr {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: inherit;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: inherit;
+  }
+
+  img {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: fill;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  figure {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: start;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 40px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  figcaption {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: start;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  video {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: contain;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  audio {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  .transclude {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .transclude-inner {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .file-embed {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .frontmatter {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata-properties {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .tooltip {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .popover {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  progress {
+    accent-color: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 6px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="range"] {
+    accent-color: auto;
+    background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="text"] {
+    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    padding: 4px 8px;
+  }
+
+  details {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  summary {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    cursor: auto;
+    font-weight: 400;
+    list-style: inherit;
+    padding: 0px;
+  }
+
+  details[open] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  kbd {
+    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    box-shadow: none;
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
+    font-size: 14px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    padding: 1.4px 3.5px;
+  }
+
+  dl {
+    margin: 16px 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dt {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-weight: 400;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dd {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    margin: 0px 0px 0px 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  sub {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-size: 13.3333px;
+    vertical-align: sub;
+  }
+
+  sup {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    font-size: 13.3333px;
+    vertical-align: super;
+  }
+
+  abbr {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    cursor: auto;
+    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration-style: dotted;
+  }
+
+  .backlinks {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  li.task-list-item[data-task="-"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task=">"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="/"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="?"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="!"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="*"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="l"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="b"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="i"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="S"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="I"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="p"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="c"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="f"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="k"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="u"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="d"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="w"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  ::selection {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  input::placeholder {
+    color: inherit;
+    opacity: inherit;
+  }
+
+  p::first-letter {
+    color: inherit;
+    font-size: 16px;
+    font-weight: inherit;
+    float: inherit;
+  }
+
+  p::first-line {
+    color: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+  }
+
   .katex-display > .katex {
     display: block;
     text-align: center;
@@ -3324,14 +4029,14 @@ body {
       rgba(255, 255, 255, 0.067)
     );
     border: 1px solid rgba(0, 0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
     color: light-dark(rgb(0, 0, 0), rgb(162, 156, 144));
     cursor: default;
     transition-behavior: normal;
