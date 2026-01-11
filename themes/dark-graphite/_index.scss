@@ -19,7 +19,6 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-accent: rgba(0, 0, 0, 0.08) !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
   --background-modifier-border: #949594 !important;
   --background-modifier-border-focus: #555555 !important;
@@ -413,7 +412,6 @@
   --interactive-accent: rgba(0, 0, 0, 0.1) !important;
   --interactive-accent-hover: rgba(42, 48, 56, 0.5) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-accent-rgb: 72, 54, 153 !important;
   --interactive-hover: rgba(0, 0, 0, 0.05) !important;
   --interactive-normal: #161719 !important;
   --keyboard-height: 0px !important;
@@ -798,6 +796,8 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --background-accent: rgba(0, 0, 0, 0.08) !important;
+  --interactive-accent-rgb: 72, 54, 153 !important;
   --text-error-hover: #990000 !important;
   --background-modifier-form-field-highlighted: #161719 !important;
   --code-block: #949594 !important;
@@ -1068,11 +1068,20 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(213, 213, 213);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
-      "Times New Roman";
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(213, 213, 213);
@@ -1088,11 +1097,20 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(213, 213, 213);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
-      "Times New Roman";
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-weight: 600;
     outline: inherit;
     text-decoration: none solid rgb(213, 213, 213);
@@ -1108,12 +1126,21 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(213, 213, 213);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
-      "Times New Roman";
-    font-weight: 600;
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 500;
     outline: inherit;
     text-decoration: none solid rgb(213, 213, 213);
     text-decoration-color: rgb(213, 213, 213);
@@ -1128,12 +1155,21 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(213, 213, 213);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
-      "Times New Roman";
-    font-weight: 600;
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 500;
     outline: inherit;
     text-decoration: none solid rgb(213, 213, 213);
     text-decoration-color: rgb(213, 213, 213);
@@ -1147,12 +1183,21 @@ body {
   .text-highlight {
     background-color: rgba(42, 48, 56, 0.5);
     color: rgb(213, 213, 213);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
-      "Times New Roman";
-    font-weight: 400;
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 500;
     outline: inherit;
     text-decoration: none solid rgb(213, 213, 213);
     text-decoration-color: rgb(213, 213, 213);
@@ -1166,12 +1211,21 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(213, 213, 213);
-    cursor: auto;
+    cursor: text;
     filter: none;
     font-family:
-      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
-      "Times New Roman";
-    font-weight: 400;
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 500;
     outline: inherit;
     text-decoration: line-through solid rgb(213, 213, 213);
     text-decoration-color: rgb(213, 213, 213);
@@ -1358,7 +1412,7 @@ body {
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
-    padding: 3.24px 6.48px;
+    padding: 2.1px 4.2px;
   }
 
   pre > code,
@@ -1374,7 +1428,7 @@ body {
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
     overflow-x: auto;
-    padding: 0px;
+    padding: 12px 16px;
     white-space-collapse: preserve;
     text-wrap-mode: wrap;
   }
@@ -1728,7 +1782,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -1764,7 +1818,7 @@ body {
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: rgba(2, 122, 255, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1778,13 +1832,13 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(148, 149, 148);
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
     background-color: rgba(83, 223, 221, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1804,7 +1858,7 @@ body {
   .callout[data-callout="info"] {
     --callout-color: inherit;
     background-color: rgba(2, 122, 255, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1824,7 +1878,7 @@ body {
   .callout[data-callout="todo"] {
     --callout-color: inherit;
     background-color: rgba(2, 122, 255, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1844,7 +1898,7 @@ body {
   .callout[data-callout="tip"] {
     --callout-color: inherit;
     background-color: rgba(83, 223, 221, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1864,7 +1918,7 @@ body {
   .callout[data-callout="success"] {
     --callout-color: inherit;
     background-color: rgba(68, 207, 110, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(68, 207, 110, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1884,7 +1938,7 @@ body {
   .callout[data-callout="question"] {
     --callout-color: inherit;
     background-color: rgba(233, 151, 63, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1904,7 +1958,7 @@ body {
   .callout[data-callout="warning"] {
     --callout-color: inherit;
     background-color: rgba(233, 151, 63, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1944,7 +1998,7 @@ body {
   .callout[data-callout="failure"] {
     --callout-color: inherit;
     background-color: rgba(251, 70, 76, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1998,7 +2052,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(213, 213, 213);
+    stroke: rgb(148, 149, 148);
   }
 
   .callout[data-callout="quote"] {
@@ -2019,6 +2073,704 @@ body {
   .callout[data-callout="quote"] .callout-title .callout-icon {
     fill: none;
     stroke: rgb(158, 158, 158);
+  }
+
+  table {
+    background-color: rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+    border-spacing: inherit;
+    color: rgb(213, 213, 213);
+    font-family:
+      "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next",
+      "Times New Roman";
+    table-layout: auto;
+    width: auto;
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  thead {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-bottom: 3px solid rgb(148, 149, 148);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  th {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(213, 213, 213);
+    font-weight: 800;
+    text-align: start;
+    vertical-align: top;
+    border: 1px solid rgb(148, 149, 148);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  td {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(213, 213, 213);
+    font-weight: 500;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid rgb(148, 149, 148);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  tr {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-bottom: 0px rgb(148, 149, 148);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: inherit;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: inherit;
+  }
+
+  img {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: fill;
+    border: 0px rgb(213, 213, 213);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px auto;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+  }
+
+  figure {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: start;
+    border: 0px rgb(213, 213, 213);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 24px 40px;
+    margin-block-end: 24px;
+    margin-block-start: 24px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  figcaption {
+    color: rgb(213, 213, 213);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    text-align: start;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  video {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: contain;
+    border: 0px rgb(213, 213, 213);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  audio {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(213, 213, 213);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  .transclude {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .transclude-inner {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .file-embed {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .frontmatter {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata-properties {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .tooltip {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .popover {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  progress {
+    accent-color: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 6px;
+    border: 0px rgb(213, 213, 213);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="range"] {
+    accent-color: auto;
+    background-color: rgb(59, 59, 59);
+    border: 2px inset rgb(133, 133, 133);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="text"] {
+    background-color: rgb(22, 23, 25);
+    color: rgb(213, 213, 213);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border: 1px solid rgb(148, 149, 148);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    padding: 4px 8px;
+  }
+
+  details {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(213, 213, 213);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  summary {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(213, 213, 213);
+    cursor: auto;
+    font-weight: 400;
+    list-style: inherit;
+    padding: 0px;
+  }
+
+  details[open] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  kbd {
+    background-color: rgba(0, 0, 0, 0.08);
+    box-shadow: none;
+    color: rgb(213, 213, 213);
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
+    font-size: 21px;
+    border: 0px rgb(213, 213, 213);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    padding: 2.1px 5.25px;
+  }
+
+  dl {
+    margin: 24px 0px;
+    margin-block-end: 24px;
+    margin-block-start: 24px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dt {
+    color: rgb(213, 213, 213);
+    font-weight: 400;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dd {
+    color: rgb(213, 213, 213);
+    margin: 0px 0px 0px 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  sub {
+    color: rgb(213, 213, 213);
+    font-size: 16.8px;
+    vertical-align: super;
+  }
+
+  sup {
+    color: rgb(213, 213, 213);
+    font-size: 16.8px;
+    vertical-align: super;
+  }
+
+  abbr {
+    color: rgb(213, 213, 213);
+    cursor: auto;
+    text-decoration: underline dotted rgb(213, 213, 213);
+    text-decoration-style: dotted;
+  }
+
+  .backlinks {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  li.task-list-item[data-task="-"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task=">"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="/"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="?"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="!"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="*"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="l"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="b"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="i"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="S"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="I"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="p"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="c"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="f"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="k"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="u"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="d"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  li.task-list-item[data-task="w"] {
+    color: rgb(218, 218, 218);
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: rgb(218, 218, 218);
+  }
+
+  ::selection {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  input::placeholder {
+    color: inherit;
+    opacity: inherit;
+  }
+
+  p::first-letter {
+    color: rgb(213, 213, 213);
+    font-size: 24px;
+    font-weight: 500;
+    float: inherit;
+  }
+
+  p::first-line {
+    color: rgb(213, 213, 213);
+    font-weight: 500;
+    text-transform: inherit;
   }
 
   .katex-display > .katex {
@@ -2072,14 +2824,14 @@ body {
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: rgba(255, 255, 255, 0.067);
     border: 0px rgb(213, 213, 213);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
     color: rgb(213, 213, 213);
     cursor: default;
     transition-behavior: normal;

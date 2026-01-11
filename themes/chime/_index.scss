@@ -7,9 +7,9 @@
 }
 
 :root:root {
-  --accent-h: 258 !important;
-  --accent-l: 66% !important;
-  --accent-s: 88% !important;
+  --accent-h: 323 !important;
+  --accent-l: 65% !important;
+  --accent-s: 30% !important;
   --anim-duration-fast: 140ms !important;
   --anim-duration-moderate: 300ms !important;
   --anim-duration-none: 0 !important;
@@ -19,39 +19,39 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
-  --background-modifier-border: #e0e0e0 !important;
-  --background-modifier-border-focus: #bdbdbd !important;
-  --background-modifier-border-hover: #d4d4d4 !important;
+  --background-modifier-active-hover: rgba(193, 139, 172, 0.1) !important;
+  --background-modifier-border: #cec2c577 !important;
+  --background-modifier-border-focus: #b6a4b2 !important;
+  --background-modifier-border-hover: #b5a7ac !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
-  --background-modifier-error: #e93147 !important;
-  --background-modifier-error-hover: #e93147 !important;
-  --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: #ffffff !important;
-  --background-modifier-form-field-hover: #ffffff !important;
+  --background-modifier-error: #e17884 !important;
+  --background-modifier-error-hover: #e17884 !important;
+  --background-modifier-error-rgb: 225, 120, 132 !important;
+  --background-modifier-form-field: #f8f3f2 !important;
+  --background-modifier-form-field-hover: #f8f3f2 !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: #08b94e !important;
-  --background-modifier-success-rgb: 8, 185, 78 !important;
-  --background-primary: #ffffff !important;
-  --background-primary-alt: #fafafa !important;
-  --background-secondary: #f6f6f6 !important;
-  --background-secondary-alt: #fcfcfc !important;
-  --bases-cards-background: #ffffff !important;
+  --background-modifier-success: #75c297 !important;
+  --background-modifier-success-rgb: 117, 194, 151 !important;
+  --background-primary: #f8f3f2 !important;
+  --background-primary-alt: #f0e9e4 !important;
+  --background-secondary: #f4ebeb !important;
+  --background-secondary-alt: #faf3f1 !important;
+  --bases-cards-background: #f8f3f2 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #fafafa !important;
+  --bases-cards-cover-background: #f0e9e4 !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #e0e0e0 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #d4d4d4 !important;
-  --bases-embed-border-color: #e0e0e0 !important;
-  --bases-embed-border-radius: 4px !important;
+  --bases-cards-shadow: 0 0 0 1px #cec2c577 !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #b5a7ac !important;
+  --bases-embed-border-color: #cec2c577 !important;
+  --bases-embed-border-radius: 8px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #5c5c5c !important;
+  --bases-group-heading-property-color: #685a68 !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -61,25 +61,25 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #e0e0e0 !important;
-  --bases-table-cell-background-active: #ffffff !important;
-  --bases-table-cell-background-disabled: #fafafa !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-border-color: #cec2c577 !important;
+  --bases-table-cell-background-active: #f8f3f2 !important;
+  --bases-table-cell-background-disabled: #f0e9e4 !important;
+  --bases-table-cell-background-selected: rgba(193, 139, 172, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #bdbdbd !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(153, 115, 247) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #b6a4b2 !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(201, 156, 185) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
+  --bases-table-container-border-radius: 8px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #fafafa !important;
+  --bases-table-group-background: #f0e9e4 !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #ffffff !important;
+  --bases-table-header-background: #f8f3f2 !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --bases-table-header-color: #5c5c5c !important;
+  --bases-table-header-color: #685a68 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -90,13 +90,13 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #ffffff !important;
+  --bases-table-summary-background: #f8f3f2 !important;
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(153, 115, 247) !important;
-  --blockquote-border-thickness: 2px !important;
+  --blockquote-background-color: #faf3f1 !important;
+  --blockquote-border-color: rgb(201, 156, 185) !important;
+  --blockquote-border-thickness: 2.5px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
@@ -105,100 +105,100 @@
   --callout-blend-mode: darken !important;
   --callout-border-opacity: 0.25 !important;
   --callout-border-width: 0px !important;
-  --callout-bug: 233, 49, 71 !important;
+  --callout-bug: 220, 118, 167 !important;
   --callout-content-background: transparent !important;
   --callout-content-padding: 0 !important;
-  --callout-default: 8, 109, 221 !important;
-  --callout-error: 233, 49, 71 !important;
-  --callout-example: 120, 82, 238 !important;
-  --callout-fail: 233, 49, 71 !important;
-  --callout-important: 0, 191, 188 !important;
-  --callout-info: 8, 109, 221 !important;
+  --callout-default: 136, 198, 227 !important;
+  --callout-error: 225, 120, 132 !important;
+  --callout-example: 181, 132, 199 !important;
+  --callout-fail: 225, 120, 132 !important;
+  --callout-important: 111, 210, 194 !important;
+  --callout-info: 136, 198, 227 !important;
   --callout-padding: 12px 12px 12px 24px !important;
-  --callout-question: 236, 117, 0 !important;
+  --callout-question: 241, 144, 112 !important;
   --callout-quote: 158, 158, 158 !important;
-  --callout-radius: 4px !important;
-  --callout-success: 8, 185, 78 !important;
-  --callout-summary: 0, 191, 188 !important;
-  --callout-tip: 0, 191, 188 !important;
+  --callout-radius: 8px !important;
+  --callout-success: 117, 194, 151 !important;
+  --callout-summary: 111, 210, 194 !important;
+  --callout-tip: 111, 210, 194 !important;
   --callout-title-padding: 0 !important;
   --callout-title-weight: 600 !important;
-  --callout-todo: 8, 109, 221 !important;
-  --callout-warning: 236, 117, 0 !important;
-  --canvas-background: #ffffff !important;
-  --canvas-card-label-color: #ababab !important;
+  --callout-todo: 136, 198, 227 !important;
+  --callout-warning: 241, 144, 112 !important;
+  --canvas-background: #f8f3f2 !important;
+  --canvas-card-label-color: #a391a3 !important;
   --canvas-color: 192, 192, 192 !important;
-  --canvas-color-1: 233, 49, 71 !important;
-  --canvas-color-2: 236, 117, 0 !important;
-  --canvas-color-3: 224, 172, 0 !important;
-  --canvas-color-4: 8, 185, 78 !important;
-  --canvas-color-5: 0, 191, 188 !important;
-  --canvas-color-6: 120, 82, 238 !important;
-  --canvas-dot-pattern: #e0e0e0 !important;
-  --caret-color: #222222 !important;
-  --checkbox-border-color: #ababab !important;
-  --checkbox-border-color-hover: #5c5c5c !important;
-  --checkbox-color: rgb(153, 115, 247) !important;
-  --checkbox-color-hover: rgb(166, 139, 249) !important;
+  --canvas-color-1: 225, 120, 132 !important;
+  --canvas-color-2: 241, 144, 112 !important;
+  --canvas-color-3: 255, 168, 46 !important;
+  --canvas-color-4: 117, 194, 151 !important;
+  --canvas-color-5: 111, 210, 194 !important;
+  --canvas-color-6: 181, 132, 199 !important;
+  --canvas-dot-pattern: #cec2c577 !important;
+  --caret-color: #594f67 !important;
+  --checkbox-border-color: #a391a3 !important;
+  --checkbox-border-color-hover: #685a68 !important;
+  --checkbox-color: rgb(201, 156, 185) !important;
+  --checkbox-color-hover: rgb(211, 171, 198) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #ffffff !important;
-  --checkbox-radius: 4px !important;
+  --checkbox-marker-color: #f8f3f2 !important;
+  --checkbox-radius: 8px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #5c5c5c !important;
-  --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
-  --code-background: #fafafa !important;
-  --code-border-color: #e0e0e0 !important;
+  --checklist-done-color: #685a68 !important;
+  --checklist-done-decoration: none !important;
+  --clickable-icon-radius: 8px !important;
+  --code-background: #f0e9e4 !important;
+  --code-border-color: #cec2c577 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
-  --code-comment: #ababab !important;
-  --code-function: #e0ac00 !important;
-  --code-important: #ec7500 !important;
-  --code-keyword: #d53984 !important;
-  --code-normal: #222222 !important;
-  --code-operator: #e93147 !important;
-  --code-property: #00bfbc !important;
-  --code-punctuation: #5c5c5c !important;
-  --code-radius: 4px !important;
+  --code-comment: #a391a3 !important;
+  --code-function: #dcb46f !important;
+  --code-important: #f19070 !important;
+  --code-keyword: #dc76a7 !important;
+  --code-normal: #594f67 !important;
+  --code-operator: #e17884 !important;
+  --code-property: #6fd2c2 !important;
+  --code-punctuation: #685a68 !important;
+  --code-radius: 8px !important;
   --code-size: 0.875em !important;
-  --code-string: #08b94e !important;
-  --code-tag: #e93147 !important;
-  --code-value: #7852ee !important;
+  --code-string: #75c297 !important;
+  --code-tag: #e17884 !important;
+  --code-value: #b584c7 !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #ababab !important;
-  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(153, 115, 247) !important;
-  --color-accent-2: rgb(166, 139, 249) !important;
-  --color-accent-hsl: 258, 88%, 66% !important;
-  --color-base-00: #ffffff !important;
-  --color-base-05: #fcfcfc !important;
-  --color-base-10: #fafafa !important;
-  --color-base-100: #222222 !important;
-  --color-base-20: #f6f6f6 !important;
-  --color-base-25: #e3e3e3 !important;
-  --color-base-30: #e0e0e0 !important;
-  --color-base-35: #d4d4d4 !important;
-  --color-base-40: #bdbdbd !important;
-  --color-base-50: #ababab !important;
-  --color-base-60: #707070 !important;
-  --color-base-70: #5c5c5c !important;
-  --color-blue: #086ddd !important;
-  --color-blue-rgb: 8, 109, 221 !important;
-  --color-cyan: #00bfbc !important;
-  --color-cyan-rgb: 0, 191, 188 !important;
-  --color-green: #08b94e !important;
-  --color-green-rgb: 8, 185, 78 !important;
-  --color-orange: #ec7500 !important;
-  --color-orange-rgb: 236, 117, 0 !important;
-  --color-pink: #d53984 !important;
-  --color-pink-rgb: 213, 57, 132 !important;
-  --color-purple: #7852ee !important;
-  --color-purple-rgb: 120, 82, 238 !important;
-  --color-red: #e93147 !important;
-  --color-red-rgb: 233, 49, 71 !important;
-  --color-yellow: #e0ac00 !important;
-  --color-yellow-rgb: 224, 172, 0 !important;
+  --collapse-icon-color: #a391a3 !important;
+  --collapse-icon-color-collapsed: rgb(193, 139, 172) !important;
+  --color-accent: rgb(193, 139, 172) !important;
+  --color-accent-1: rgb(201, 156, 185) !important;
+  --color-accent-2: rgb(211, 171, 198) !important;
+  --color-accent-hsl: 323, 30%, 65% !important;
+  --color-base-00: #f8f3f2 !important;
+  --color-base-05: #faf3f1 !important;
+  --color-base-10: #f0e9e4 !important;
+  --color-base-100: #594f67 !important;
+  --color-base-20: #f4ebeb !important;
+  --color-base-25: #d9c9ca !important;
+  --color-base-30: #cec2c577 !important;
+  --color-base-35: #b5a7ac !important;
+  --color-base-40: #b6a4b2 !important;
+  --color-base-50: #a391a3 !important;
+  --color-base-60: #867786 !important;
+  --color-base-70: #685a68 !important;
+  --color-blue: #88c6e3 !important;
+  --color-blue-rgb: 136, 198, 227 !important;
+  --color-cyan: #6fd2c2 !important;
+  --color-cyan-rgb: 111, 210, 194 !important;
+  --color-green: #75c297 !important;
+  --color-green-rgb: 117, 194, 151 !important;
+  --color-orange: #f19070 !important;
+  --color-orange-rgb: 241, 144, 112 !important;
+  --color-pink: #dc76a7 !important;
+  --color-pink-rgb: 220, 118, 167 !important;
+  --color-purple: #b584c7 !important;
+  --color-purple-rgb: 181, 132, 199 !important;
+  --color-red: #e17884 !important;
+  --color-red-rgb: 225, 120, 132 !important;
+  --color-yellow: #dcb46f !important;
+  --color-yellow-rgb: 255, 168, 46 !important;
   --corner-smoothing: 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -206,63 +206,51 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: #e0e0e0 !important;
-  --divider-color-hover: rgb(153, 115, 247) !important;
+  --divider-color: #cec2c577 !important;
+  --divider-color-hover: rgb(201, 156, 185) !important;
   --divider-vertical-height: 100% !important;
-  --divider-width: 1px !important;
+  --divider-width: 0px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #ffffff !important;
+  --dropdown-background: #f8f3f2 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #fafafa !important;
+  --dropdown-background-hover: #f0e9e4 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px #e0e0e0, inset 0 0 0 1px #e0e0e0 !important;
+    0 0 0 1px #cec2c577, inset 0 0 0 1px #cec2c577 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(153, 115, 247) !important;
+  --embed-border-start: 2px solid rgb(201, 156, 185) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --file-header-font: "Arima", cursive !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
-  --flair-background: #ffffff !important;
-  --flair-color: #222222 !important;
+  --flair-background: #f8f3f2 !important;
+  --flair-color: #594f67 !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-default: "Arima", cursive !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-interface: "Arima", cursive !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-mermaid: "Arima", cursive !important;
   --font-monospace:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -280,10 +268,7 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-text: "Arima", cursive !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -293,30 +278,30 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: #e0e0e0 !important;
+  --footnote-divider-color: #cec2c577 !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: #5c5c5c !important;
-  --footnote-id-color-no-occurrences: #ababab !important;
+  --footnote-id-color: #685a68 !important;
+  --footnote-id-color-no-occurrences: #a391a3 !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(0, 0, 0, 0.067) !important;
-  --footnote-line-height: 1.5 !important;
+  --footnote-line-height: 1.7 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
+  --footnote-radius: 8px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #d4d4d4 !important;
-  --graph-node: #5c5c5c !important;
-  --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: rgb(138, 92, 245) !important;
-  --graph-node-tag: #08b94e !important;
-  --graph-node-unresolved: #ababab !important;
-  --graph-text: #222222 !important;
+  --graph-line: #b5a7ac !important;
+  --graph-node: #685a68 !important;
+  --graph-node-attachment: #dcb46f !important;
+  --graph-node-focused: rgb(193, 139, 172) !important;
+  --graph-node-tag: #75c297 !important;
+  --graph-node-unresolved: #a391a3 !important;
+  --graph-text: #594f67 !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -342,27 +327,27 @@
   --h4-variant: normal !important;
   --h4-weight: 600 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.5 !important;
+  --h5-line-height: 1.7 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 600 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.5 !important;
+  --h6-line-height: 1.7 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
-  --h6-variant: normal !important;
+  --h6-variant: small-caps !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: #ababab !important;
+  --heading-formatting: #a391a3 !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: #e0e0e0 !important;
+  --hr-color: #cec2c577 !important;
   --hr-thickness: 2px !important;
-  --icon-color: #5c5c5c !important;
-  --icon-color-active: rgb(138, 92, 245) !important;
-  --icon-color-focused: #222222 !important;
-  --icon-color-hover: #5c5c5c !important;
+  --icon-color: #685a68 !important;
+  --icon-color-active: rgb(193, 139, 172) !important;
+  --icon-color-focused: #594f67 !important;
+  --icon-color-hover: #685a68 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -395,11 +380,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #ababab !important;
+  --input-date-separator: #a391a3 !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #ababab !important;
+  --input-placeholder-color: #a391a3 !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -409,11 +394,11 @@
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
-  --interactive-accent: rgb(153, 115, 247) !important;
-  --interactive-accent-hover: rgb(166, 139, 249) !important;
-  --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: #fafafa !important;
-  --interactive-normal: #ffffff !important;
+  --interactive-accent: rgb(201, 156, 185) !important;
+  --interactive-accent-hover: rgb(211, 171, 198) !important;
+  --interactive-accent-hsl: 323, 30%, 65% !important;
+  --interactive-hover: #f0e9e4 !important;
+  --interactive-normal: #f8f3f2 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -425,20 +410,20 @@
   --layer-slides: 45 !important;
   --layer-status-bar: 15 !important;
   --layer-tooltip: 70 !important;
-  --line-height-normal: 1.5 !important;
+  --line-height-normal: 1.7 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(138, 92, 245) !important;
-  --link-color-hover: rgb(166, 139, 249) !important;
-  --link-decoration: underline !important;
+  --link-color: rgb(193, 139, 172) !important;
+  --link-color-hover: rgb(211, 171, 198) !important;
+  --link-decoration: none !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(138, 92, 245) !important;
-  --link-external-color-hover: rgb(166, 139, 249) !important;
-  --link-external-decoration: underline !important;
+  --link-external-color: rgb(193, 139, 172) !important;
+  --link-external-color-hover: rgb(211, 171, 198) !important;
+  --link-external-decoration: none !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(138, 92, 245) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-color: rgb(193, 139, 172) !important;
+  --link-unresolved-decoration-color: rgba(193, 139, 172, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -451,28 +436,28 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #ababab !important;
-  --list-marker-color-collapsed: rgb(138, 92, 245) !important;
-  --list-marker-color-hover: #5c5c5c !important;
+  --list-marker-color: #a391a3 !important;
+  --list-marker-color-collapsed: rgb(193, 139, 172) !important;
+  --list-marker-color-hover: #685a68 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #f6f6f6 !important;
-  --menu-border-color: #d4d4d4 !important;
+  --menu-background: #f4ebeb !important;
+  --menu-border-color: #b5a7ac !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
+  --menu-radius: 10px !important;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #e0e0e0 !important;
+  --metadata-border-color: #cec2c577 !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #e0e0e0 !important;
+  --metadata-divider-color: #cec2c577 !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -480,40 +465,34 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-input-font: "Arima", cursive !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #222222 !important;
+  --metadata-input-text-color: #594f67 !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-label-font: "Arima", cursive !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #5c5c5c !important;
-  --metadata-label-text-color-hover: #5c5c5c !important;
+  --metadata-label-text-color: #685a68 !important;
+  --metadata-label-text-color-hover: #685a68 !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #bdbdbd !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #d4d4d4 !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #b6a4b2 !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #b5a7ac !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #ffffff !important;
-  --modal-border-color: #bdbdbd !important;
+  --modal-background: #f8f3f2 !important;
+  --modal-border-color: #b6a4b2 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-height: 85vh !important;
@@ -524,58 +503,58 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: #ababab !important;
-  --nav-collapse-icon-color-collapsed: #ababab !important;
-  --nav-heading-color: #222222 !important;
-  --nav-heading-color-collapsed: #ababab !important;
-  --nav-heading-color-collapsed-hover: #5c5c5c !important;
-  --nav-heading-color-hover: #222222 !important;
+  --nav-collapse-icon-color: #a391a3 !important;
+  --nav-collapse-icon-color-collapsed: #a391a3 !important;
+  --nav-heading-color: #594f67 !important;
+  --nav-heading-color-collapsed: #a391a3 !important;
+  --nav-heading-color-collapsed-hover: #685a68 !important;
+  --nav-heading-color-hover: #594f67 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: rgba(193, 139, 172, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #5c5c5c !important;
-  --nav-item-color-active: #222222 !important;
-  --nav-item-color-highlighted: rgb(138, 92, 245) !important;
-  --nav-item-color-hover: #222222 !important;
-  --nav-item-color-selected: #222222 !important;
+  --nav-item-color: #685a68 !important;
+  --nav-item-color-active: #594f67 !important;
+  --nav-item-color-highlighted: rgb(193, 139, 172) !important;
+  --nav-item-color-hover: #594f67 !important;
+  --nav-item-color-selected: #594f67 !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #ababab !important;
-  --nav-tag-color-active: #5c5c5c !important;
-  --nav-tag-color-hover: #5c5c5c !important;
-  --nav-tag-radius: 4px !important;
+  --nav-tag-color: #a391a3 !important;
+  --nav-tag-color-active: #685a68 !important;
+  --nav-tag-color-hover: #685a68 !important;
+  --nav-tag-radius: 8px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #ffffff !important;
-  --pdf-page-background: #ffffff !important;
+  --pdf-background: #f8f3f2 !important;
+  --pdf-page-background: #f8f3f2 !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: #ffffff !important;
+  --pdf-sidebar-background: #f8f3f2 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: #e0e0e0 !important;
-  --pill-border-color-hover: #d4d4d4 !important;
+  --pill-border-color: #cec2c577 !important;
+  --pill-border-color-hover: #b5a7ac !important;
   --pill-border-width: 1px !important;
-  --pill-color: #5c5c5c !important;
-  --pill-color-hover: #222222 !important;
-  --pill-color-remove: #ababab !important;
-  --pill-color-remove-hover: rgb(138, 92, 245) !important;
+  --pill-color: #685a68 !important;
+  --pill-color-hover: #594f67 !important;
+  --pill-color-remove: #a391a3 !important;
+  --pill-color-remove-hover: rgb(193, 139, 172) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -589,18 +568,18 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --prompt-border-color: #bdbdbd !important;
+  --prompt-border-color: #b6a4b2 !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
-  --prompt-width: 700px !important;
+  --prompt-width: 450px !important;
   --radius-l: 12px !important;
-  --radius-m: 8px !important;
-  --radius-s: 4px !important;
-  --radius-xl: 16px !important;
-  --ribbon-background: #f6f6f6 !important;
-  --ribbon-background-collapsed: #ffffff !important;
+  --radius-m: 10px !important;
+  --radius-s: 8px !important;
+  --radius-xl: 14px !important;
+  --ribbon-background: #f4ebeb !important;
+  --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -614,11 +593,11 @@
   --scrollbar-radius: 12px !important;
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #5c5c5c !important;
+  --search-clear-button-color: #685a68 !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #5c5c5c !important;
+  --search-icon-color: #685a68 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #ffffff !important;
+  --search-result-background: #f8f3f2 !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
@@ -648,45 +627,45 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #d4d4d4 !important;
+  --slider-thumb-border-color: #b5a7ac !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #e0e0e0 !important;
+  --slider-track-background: #cec2c577 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #f6f6f6 !important;
-  --status-bar-border-color: #e0e0e0 !important;
+  --status-bar-background: #f4ebeb !important;
+  --status-bar-border-color: #cec2c577 !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: #5c5c5c !important;
+  --status-bar-radius: 10px 0 0 0 !important;
+  --status-bar-text-color: #685a68 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: #e93147 !important;
-  --sync-avatar-color-2: #ec7500 !important;
-  --sync-avatar-color-3: #e0ac00 !important;
-  --sync-avatar-color-4: #08b94e !important;
-  --sync-avatar-color-5: #00bfbc !important;
-  --sync-avatar-color-6: #086ddd !important;
-  --sync-avatar-color-7: #7852ee !important;
-  --sync-avatar-color-8: #d53984 !important;
+  --sync-avatar-color-1: #e17884 !important;
+  --sync-avatar-color-2: #f19070 !important;
+  --sync-avatar-color-3: #dcb46f !important;
+  --sync-avatar-color-4: #75c297 !important;
+  --sync-avatar-color-5: #6fd2c2 !important;
+  --sync-avatar-color-6: #88c6e3 !important;
+  --sync-avatar-color-7: #b584c7 !important;
+  --sync-avatar-color-8: #dc76a7 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #ffffff !important;
-  --tab-container-background: #f6f6f6 !important;
-  --tab-curve: 6px !important;
-  --tab-divider-color: #d4d4d4 !important;
-  --tab-font-size: 13px !important;
+  --tab-background-active: #f8f3f2 !important;
+  --tab-container-background: #f4ebeb !important;
+  --tab-curve: 0px !important;
+  --tab-divider-color: transparent !important;
+  --tab-font-size: 0.84em !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: #e0e0e0 !important;
+  --tab-outline-color: #cec2c577 !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
-  --tab-radius-active: 6px 6px 0 0 !important;
+  --tab-radius: 8px !important;
+  --tab-radius-active: 8px !important;
   --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: 40px !important;
@@ -695,86 +674,86 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #f6f6f6 !important;
+  --tab-switcher-background: #f4ebeb !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
+  --tab-switcher-preview-radius: 14px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color: #ababab !important;
-  --tab-text-color-active: #5c5c5c !important;
-  --tab-text-color-focused: #5c5c5c !important;
-  --tab-text-color-focused-active: #5c5c5c !important;
-  --tab-text-color-focused-active-current: #222222 !important;
-  --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
-  --tab-width: 200px !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(193, 139, 172) !important;
+  --tab-text-color: #a391a3 !important;
+  --tab-text-color-active: #685a68 !important;
+  --tab-text-color-focused: #685a68 !important;
+  --tab-text-color-focused-active: #685a68 !important;
+  --tab-text-color-focused-active-current: rgb(211, 171, 198) !important;
+  --tab-text-color-focused-highlighted: rgb(193, 139, 172) !important;
+  --tab-width: 240px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #e0e0e0 !important;
-  --table-add-button-border-width: 1px !important;
+  --table-add-button-border-color: #cec2c577 !important;
+  --table-add-button-border-width: 0px !important;
   --table-background: transparent !important;
-  --table-border-color: #e0e0e0 !important;
-  --table-border-width: 1px !important;
+  --table-border-color: #cec2c577 !important;
+  --table-border-width: 0px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
+  --table-column-first-border-width: 0px !important;
+  --table-column-last-border-width: 0px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(153, 115, 247) !important;
-  --table-drag-handle-color: #ababab !important;
+  --table-drag-handle-background-active: rgb(201, 156, 185) !important;
+  --table-drag-handle-color: #a391a3 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: #e0e0e0 !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: #222222 !important;
+  --table-header-border-color: #cec2c577 !important;
+  --table-header-border-width: 0px !important;
+  --table-header-color: #594f67 !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
+  --table-row-alt-background: #faf3f1 !important;
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-row-last-border-width: 0px !important;
+  --table-selection: rgba(193, 139, 172, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: rgb(153, 115, 247) !important;
+  --table-selection-border-color: rgb(201, 156, 185) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(138, 92, 245, 0.1) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-background: rgba(193, 139, 172, 0.1) !important;
+  --tag-background-hover: rgba(193, 139, 172, 0.2) !important;
+  --tag-border-color: rgba(193, 139, 172, 0.15) !important;
+  --tag-border-color-hover: rgba(193, 139, 172, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(138, 92, 245) !important;
-  --tag-color-hover: rgb(138, 92, 245) !important;
+  --tag-color: rgb(193, 139, 172) !important;
+  --tag-color-hover: rgb(193, 139, 172) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(138, 92, 245) !important;
-  --text-accent-hover: rgb(166, 139, 249) !important;
-  --text-error: #e93147 !important;
-  --text-faint: #ababab !important;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
+  --text-accent: rgb(193, 139, 172) !important;
+  --text-accent-hover: rgb(211, 171, 198) !important;
+  --text-error: #e17884 !important;
+  --text-faint: #a391a3 !important;
+  --text-highlight-bg: hsl(323, 30%, 65%, 0.2) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #5c5c5c !important;
-  --text-normal: #222222 !important;
+  --text-muted: #685a68 !important;
+  --text-normal: #594f67 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(138, 92, 245, 0.2) !important;
-  --text-success: #08b94e !important;
-  --text-warning: #ec7500 !important;
-  --titlebar-background: #f6f6f6 !important;
-  --titlebar-background-focused: #fcfcfc !important;
-  --titlebar-border-color: #e0e0e0 !important;
+  --text-selection: rgba(193, 139, 172, 0.2) !important;
+  --text-success: #75c297 !important;
+  --text-warning: #f19070 !important;
+  --titlebar-background: #f4ebeb !important;
+  --titlebar-background-focused: #faf3f1 !important;
+  --titlebar-border-color: #cec2c577 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #5c5c5c !important;
-  --titlebar-text-color-focused: #222222 !important;
+  --titlebar-text-color: #685a68 !important;
+  --titlebar-text-color-focused: #594f67 !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -788,8 +767,8 @@
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #222222 !important;
-  --vault-profile-color-hover: #222222 !important;
+  --vault-profile-color: #594f67 !important;
+  --vault-profile-color-hover: #594f67 !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -798,6 +777,23 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --h1-color: #594f67 !important;
+  --h2-color: #594f67 !important;
+  --h3-color: #594f67 !important;
+  --h4-color: #594f67 !important;
+  --h5-color: #594f67 !important;
+  --h6-color: #594f67 !important;
+  --inline-title-color: #594f67 !important;
+  --blockquote-color: #594f67 !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 180px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 1.2em !important;
+  --border-radius-average: 11px !important;
+  --line-style: solid !important;
+  --workspace-background: #f4ebeb !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -815,38 +811,38 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
-  --background-modifier-border: #363636 !important;
-  --background-modifier-border-focus: #555555 !important;
-  --background-modifier-border-hover: #3f3f3f !important;
+  --background-modifier-border: #4e4560 !important;
+  --background-modifier-border-focus: rgb(98, 111, 134) !important;
+  --background-modifier-border-hover: #545e76 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
-  --background-modifier-error: #fb464c !important;
-  --background-modifier-error-hover: #fb464c !important;
-  --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: #2a2a2a !important;
-  --background-modifier-form-field-hover: #2a2a2a !important;
+  --background-modifier-error: #e17884 !important;
+  --background-modifier-error-hover: #e17884 !important;
+  --background-modifier-error-rgb: 225, 120, 132 !important;
+  --background-modifier-form-field: #55546e !important;
+  --background-modifier-form-field-hover: #55546e !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
-  --background-modifier-success: #44cf6e !important;
-  --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: #1e1e1e !important;
-  --background-primary-alt: #242424 !important;
-  --background-secondary: #262626 !important;
-  --background-secondary-alt: #363636 !important;
-  --bases-cards-background: #1e1e1e !important;
+  --background-modifier-success: #75c297 !important;
+  --background-modifier-success-rgb: 117, 194, 151 !important;
+  --background-primary: #3b3347 !important;
+  --background-primary-alt: #413b4e !important;
+  --background-secondary: #2f2837 !important;
+  --background-secondary-alt: #2f2837 !important;
+  --bases-cards-background: #3b3347 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #242424 !important;
+  --bases-cards-cover-background: #413b4e !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #363636 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f !important;
-  --bases-embed-border-color: #363636 !important;
-  --bases-embed-border-radius: 4px !important;
+  --bases-cards-shadow: 0 0 0 1px #4e4560 !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #545e76 !important;
+  --bases-embed-border-color: #4e4560 !important;
+  --bases-embed-border-radius: 8px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #b3b3b3 !important;
+  --bases-group-heading-property-color: #7f83a1 !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -856,25 +852,25 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #363636 !important;
-  --bases-table-cell-background-active: #1e1e1e !important;
-  --bases-table-cell-background-disabled: #242424 !important;
+  --bases-table-border-color: #4e4560 !important;
+  --bases-table-cell-background-active: #3b3347 !important;
+  --bases-table-cell-background-disabled: #413b4e !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(98, 111, 134) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
+  --bases-table-container-border-radius: 8px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #242424 !important;
+  --bases-table-group-background: #413b4e !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #1e1e1e !important;
+  --bases-table-header-background: #3b3347 !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --bases-table-header-color: #b3b3b3 !important;
+  --bases-table-header-color: #7f83a1 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -885,13 +881,13 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #1e1e1e !important;
+  --bases-table-summary-background: #3b3347 !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: transparent !important;
+  --blockquote-background-color: #2f2837 !important;
   --blockquote-border-color: rgb(138, 92, 245) !important;
-  --blockquote-border-thickness: 2px !important;
+  --blockquote-border-thickness: 2.5px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
@@ -900,100 +896,100 @@
   --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 251, 70, 76;
+  --callout-bug: 220, 118, 167;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
+  --callout-default: 136, 198, 227;
+  --callout-error: 225, 120, 132;
+  --callout-example: 181, 132, 199;
+  --callout-fail: 225, 120, 132;
+  --callout-important: 111, 210, 194;
+  --callout-info: 136, 198, 227;
   --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
+  --callout-question: 241, 144, 112;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 4px;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
+  --callout-radius: 8px;
+  --callout-success: 117, 194, 151;
+  --callout-summary: 111, 210, 194;
+  --callout-tip: 111, 210, 194;
   --callout-title-padding: 0;
   --callout-title-weight: 600;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
-  --canvas-background: #1e1e1e !important;
-  --canvas-card-label-color: #666666 !important;
+  --callout-todo: 136, 198, 227;
+  --callout-warning: 241, 144, 112;
+  --canvas-background: #3b3347 !important;
+  --canvas-card-label-color: rgb(125, 127, 149) !important;
   --canvas-color: 126, 126, 126 !important;
-  --canvas-color-1: 251, 70, 76 !important;
-  --canvas-color-2: 233, 151, 63 !important;
-  --canvas-color-3: 224, 222, 113 !important;
-  --canvas-color-4: 68, 207, 110 !important;
-  --canvas-color-5: 83, 223, 221 !important;
-  --canvas-color-6: 168, 130, 255 !important;
-  --canvas-dot-pattern: #363636 !important;
-  --caret-color: #dadada !important;
-  --checkbox-border-color: #666666 !important;
-  --checkbox-border-color-hover: #b3b3b3 !important;
+  --canvas-color-1: 225, 120, 132 !important;
+  --canvas-color-2: 241, 144, 112 !important;
+  --canvas-color-3: 255, 168, 46 !important;
+  --canvas-color-4: 117, 194, 151 !important;
+  --canvas-color-5: 111, 210, 194 !important;
+  --canvas-color-6: 181, 132, 199 !important;
+  --canvas-dot-pattern: #4e4560 !important;
+  --caret-color: #a0a7c4 !important;
+  --checkbox-border-color: rgb(125, 127, 149) !important;
+  --checkbox-border-color-hover: #7f83a1 !important;
   --checkbox-color: rgb(138, 92, 245) !important;
   --checkbox-color-hover: rgb(166, 139, 249) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #1e1e1e !important;
-  --checkbox-radius: 4px !important;
+  --checkbox-marker-color: #3b3347 !important;
+  --checkbox-radius: 8px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #b3b3b3 !important;
-  --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
-  --code-background: #242424 !important;
-  --code-border-color: #363636 !important;
+  --checklist-done-color: #7f83a1 !important;
+  --checklist-done-decoration: none !important;
+  --clickable-icon-radius: 8px !important;
+  --code-background: #413b4e !important;
+  --code-border-color: #4e4560 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: #666666 !important;
-  --code-function: #e0de71 !important;
-  --code-important: #e9973f !important;
-  --code-keyword: #fa99cd !important;
-  --code-normal: #dadada !important;
-  --code-operator: #fb464c !important;
-  --code-property: #53dfdd !important;
-  --code-punctuation: #b3b3b3 !important;
-  --code-radius: 4px !important;
+  --code-comment: rgb(125, 127, 149) !important;
+  --code-function: #dcb46f !important;
+  --code-important: #f19070 !important;
+  --code-keyword: #dc76a7 !important;
+  --code-normal: #a0a7c4 !important;
+  --code-operator: #e17884 !important;
+  --code-property: #6fd2c2 !important;
+  --code-punctuation: #7f83a1 !important;
+  --code-radius: 8px !important;
   --code-size: 0.875em !important;
-  --code-string: #44cf6e !important;
-  --code-tag: #fb464c !important;
-  --code-value: #a882ff !important;
+  --code-string: #75c297 !important;
+  --code-tag: #e17884 !important;
+  --code-value: #b584c7 !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #666666 !important;
+  --collapse-icon-color: rgb(125, 127, 149) !important;
   --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
   --color-accent: rgb(138, 92, 245) !important;
   --color-accent-1: rgb(166, 139, 249) !important;
   --color-accent-2: rgb(197, 182, 252) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
-  --color-base-00: #1e1e1e !important;
-  --color-base-05: #212121 !important;
-  --color-base-10: #242424 !important;
-  --color-base-100: #dadada !important;
-  --color-base-20: #262626 !important;
-  --color-base-25: #2a2a2a !important;
-  --color-base-30: #363636 !important;
-  --color-base-35: #3f3f3f !important;
-  --color-base-40: #555555 !important;
-  --color-base-50: #666666 !important;
-  --color-base-60: #999999 !important;
-  --color-base-70: #b3b3b3 !important;
-  --color-blue: #027aff !important;
-  --color-blue-rgb: 2, 122, 255 !important;
-  --color-cyan: #53dfdd !important;
-  --color-cyan-rgb: 83, 223, 221 !important;
-  --color-green: #44cf6e !important;
-  --color-green-rgb: 68, 207, 110 !important;
-  --color-orange: #e9973f !important;
-  --color-orange-rgb: 233, 151, 63 !important;
-  --color-pink: #fa99cd !important;
-  --color-pink-rgb: 250, 153, 205 !important;
-  --color-purple: #a882ff !important;
-  --color-purple-rgb: 168, 130, 255 !important;
-  --color-red: #fb464c !important;
-  --color-red-rgb: 251, 70, 76 !important;
-  --color-yellow: #e0de71 !important;
-  --color-yellow-rgb: 224, 222, 113 !important;
+  --color-base-00: #3b3347 !important;
+  --color-base-05: #2f2837 !important;
+  --color-base-10: #413b4e !important;
+  --color-base-100: #a0a7c4 !important;
+  --color-base-20: #2f2837 !important;
+  --color-base-25: #55546e !important;
+  --color-base-30: #4e4560 !important;
+  --color-base-35: #545e76 !important;
+  --color-base-40: rgb(98, 111, 134) !important;
+  --color-base-50: rgb(125, 127, 149) !important;
+  --color-base-60: rgb(103, 129, 148) !important;
+  --color-base-70: #7f83a1 !important;
+  --color-blue: #88c6e3 !important;
+  --color-blue-rgb: 136, 198, 227 !important;
+  --color-cyan: #6fd2c2 !important;
+  --color-cyan-rgb: 111, 210, 194 !important;
+  --color-green: #75c297 !important;
+  --color-green-rgb: 117, 194, 151 !important;
+  --color-orange: #f19070 !important;
+  --color-orange-rgb: 241, 144, 112 !important;
+  --color-pink: #dc76a7 !important;
+  --color-pink-rgb: 220, 118, 167 !important;
+  --color-purple: #b584c7 !important;
+  --color-purple-rgb: 181, 132, 199 !important;
+  --color-red: #e17884 !important;
+  --color-red-rgb: 225, 120, 132 !important;
+  --color-yellow: #dcb46f !important;
+  --color-yellow-rgb: 255, 168, 46 !important;
   --corner-smoothing: 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -1001,21 +997,21 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: #363636 !important;
+  --divider-color: #4e4560 !important;
   --divider-color-hover: rgb(138, 92, 245) !important;
   --divider-vertical-height: 100% !important;
-  --divider-width: 1px !important;
+  --divider-width: 0px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #363636 !important;
+  --dropdown-background: #4e4560 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #3f3f3f !important;
+  --dropdown-background-hover: #545e76 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px #363636, inset 0 0 0 1px #363636 !important;
+    0 0 0 1px #4e4560, inset 0 0 0 1px #4e4560 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid rgb(138, 92, 245) !important;
@@ -1025,39 +1021,27 @@
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --file-header-font: "Arima", cursive !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
-  --flair-background: #363636 !important;
-  --flair-color: #dadada !important;
+  --flair-background: #4e4560 !important;
+  --flair-color: #a0a7c4 !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-default: "Arima", cursive !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-interface: "Arima", cursive !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-mermaid: "Arima", cursive !important;
   --font-monospace:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1075,10 +1059,7 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-text: "Arima", cursive !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1088,30 +1069,30 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: #363636 !important;
+  --footnote-divider-color: #4e4560 !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: #b3b3b3 !important;
-  --footnote-id-color-no-occurrences: #666666 !important;
+  --footnote-id-color: #7f83a1 !important;
+  --footnote-id-color-no-occurrences: rgb(125, 127, 149) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
-  --footnote-line-height: 1.5 !important;
+  --footnote-line-height: 1.7 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
+  --footnote-radius: 8px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #3f3f3f !important;
-  --graph-node: #b3b3b3 !important;
-  --graph-node-attachment: #e0de71 !important;
+  --graph-line: #545e76 !important;
+  --graph-node: #7f83a1 !important;
+  --graph-node-attachment: #dcb46f !important;
   --graph-node-focused: rgb(166, 139, 249) !important;
-  --graph-node-tag: #44cf6e !important;
-  --graph-node-unresolved: #666666 !important;
-  --graph-text: #dadada !important;
+  --graph-node-tag: #75c297 !important;
+  --graph-node-unresolved: rgb(125, 127, 149) !important;
+  --graph-text: #a0a7c4 !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -1137,27 +1118,27 @@
   --h4-variant: normal !important;
   --h4-weight: 600 !important;
   --h5-letter-spacing: -0.002em !important;
-  --h5-line-height: 1.5 !important;
+  --h5-line-height: 1.7 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 600 !important;
   --h6-letter-spacing: 0em !important;
-  --h6-line-height: 1.5 !important;
+  --h6-line-height: 1.7 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
-  --h6-variant: normal !important;
+  --h6-variant: small-caps !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: #666666 !important;
+  --heading-formatting: rgb(125, 127, 149) !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: #363636 !important;
+  --hr-color: #4e4560 !important;
   --hr-thickness: 2px !important;
-  --icon-color: #b3b3b3 !important;
+  --icon-color: #7f83a1 !important;
   --icon-color-active: rgb(166, 139, 249) !important;
-  --icon-color-focused: #dadada !important;
-  --icon-color-hover: #b3b3b3 !important;
+  --icon-color-focused: #a0a7c4 !important;
+  --icon-color-hover: #7f83a1 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1190,11 +1171,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #666666 !important;
+  --input-date-separator: rgb(125, 127, 149) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #666666 !important;
+  --input-placeholder-color: rgb(125, 127, 149) !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -1207,8 +1188,8 @@
   --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: #3f3f3f !important;
-  --interactive-normal: #363636 !important;
+  --interactive-hover: #545e76 !important;
+  --interactive-normal: #4e4560 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1220,16 +1201,16 @@
   --layer-slides: 45 !important;
   --layer-status-bar: 15 !important;
   --layer-tooltip: 70 !important;
-  --line-height-normal: 1.5 !important;
+  --line-height-normal: 1.7 !important;
   --line-height-tight: 1.3 !important;
   --link-color: rgb(166, 139, 249) !important;
   --link-color-hover: rgb(197, 182, 252) !important;
-  --link-decoration: underline !important;
+  --link-decoration: none !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: rgb(166, 139, 249) !important;
   --link-external-color-hover: rgb(197, 182, 252) !important;
-  --link-external-decoration: underline !important;
+  --link-external-decoration: none !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: rgb(166, 139, 249) !important;
@@ -1246,28 +1227,28 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #666666 !important;
+  --list-marker-color: rgb(125, 127, 149) !important;
   --list-marker-color-collapsed: rgb(166, 139, 249) !important;
-  --list-marker-color-hover: #b3b3b3 !important;
+  --list-marker-color-hover: #7f83a1 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #262626 !important;
-  --menu-border-color: #3f3f3f !important;
+  --menu-background: #2f2837 !important;
+  --menu-border-color: #545e76 !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
-  --menu-radius: 8px !important;
+  --menu-radius: 10px !important;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #363636 !important;
+  --metadata-border-color: #4e4560 !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #363636 !important;
+  --metadata-divider-color: #4e4560 !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1275,40 +1256,34 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-input-font: "Arima", cursive !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #dadada !important;
+  --metadata-input-text-color: #a0a7c4 !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-label-font: "Arima", cursive !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #b3b3b3 !important;
-  --metadata-label-text-color-hover: #b3b3b3 !important;
+  --metadata-label-text-color: #7f83a1 !important;
+  --metadata-label-text-color-hover: #7f83a1 !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #555555 !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(98, 111, 134) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #545e76 !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #1e1e1e !important;
-  --modal-border-color: #555555 !important;
+  --modal-background: #3b3347 !important;
+  --modal-border-color: rgb(98, 111, 134) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-height: 85vh !important;
@@ -1319,12 +1294,12 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: #666666 !important;
-  --nav-collapse-icon-color-collapsed: #666666 !important;
-  --nav-heading-color: #dadada !important;
-  --nav-heading-color-collapsed: #666666 !important;
-  --nav-heading-color-collapsed-hover: #b3b3b3 !important;
-  --nav-heading-color-hover: #dadada !important;
+  --nav-collapse-icon-color: rgb(125, 127, 149) !important;
+  --nav-collapse-icon-color-collapsed: rgb(125, 127, 149) !important;
+  --nav-heading-color: #a0a7c4 !important;
+  --nav-heading-color-collapsed: rgb(125, 127, 149) !important;
+  --nav-heading-color-collapsed-hover: #7f83a1 !important;
+  --nav-heading-color-hover: #a0a7c4 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
@@ -1334,40 +1309,40 @@
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #b3b3b3 !important;
-  --nav-item-color-active: #dadada !important;
+  --nav-item-color: #7f83a1 !important;
+  --nav-item-color-active: #a0a7c4 !important;
   --nav-item-color-highlighted: rgb(166, 139, 249) !important;
-  --nav-item-color-hover: #dadada !important;
-  --nav-item-color-selected: #dadada !important;
+  --nav-item-color-hover: #a0a7c4 !important;
+  --nav-item-color-selected: #a0a7c4 !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #666666 !important;
-  --nav-tag-color-active: #b3b3b3 !important;
-  --nav-tag-color-hover: #b3b3b3 !important;
-  --nav-tag-radius: 4px !important;
+  --nav-tag-color: rgb(125, 127, 149) !important;
+  --nav-tag-color-active: #7f83a1 !important;
+  --nav-tag-color-hover: #7f83a1 !important;
+  --nav-tag-radius: 8px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #1e1e1e !important;
-  --pdf-page-background: #1e1e1e !important;
-  --pdf-shadow: 0 0 0 1px #363636 !important;
-  --pdf-sidebar-background: #1e1e1e !important;
+  --pdf-background: #3b3347 !important;
+  --pdf-page-background: #3b3347 !important;
+  --pdf-shadow: 0 0 0 1px #4e4560 !important;
+  --pdf-sidebar-background: #3b3347 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px #363636 !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #4e4560 !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: #363636 !important;
-  --pill-border-color-hover: #3f3f3f !important;
+  --pill-border-color: #4e4560 !important;
+  --pill-border-color-hover: #545e76 !important;
   --pill-border-width: 1px !important;
-  --pill-color: #b3b3b3 !important;
-  --pill-color-hover: #dadada !important;
-  --pill-color-remove: #666666 !important;
+  --pill-color: #7f83a1 !important;
+  --pill-color-hover: #a0a7c4 !important;
+  --pill-color-remove: rgb(125, 127, 149) !important;
   --pill-color-remove-hover: rgb(166, 139, 249) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
@@ -1382,18 +1357,18 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --prompt-border-color: #555555 !important;
+  --prompt-border-color: rgb(98, 111, 134) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
-  --prompt-width: 700px !important;
+  --prompt-width: 450px !important;
   --radius-l: 12px !important;
-  --radius-m: 8px !important;
-  --radius-s: 4px !important;
-  --radius-xl: 16px !important;
-  --ribbon-background: #262626 !important;
-  --ribbon-background-collapsed: #1e1e1e !important;
+  --radius-m: 10px !important;
+  --radius-s: 8px !important;
+  --radius-xl: 14px !important;
+  --ribbon-background: #2f2837 !important;
+  --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1407,11 +1382,11 @@
   --scrollbar-radius: 12px !important;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #b3b3b3 !important;
+  --search-clear-button-color: #7f83a1 !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #b3b3b3 !important;
+  --search-icon-color: #7f83a1 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #1e1e1e !important;
+  --search-result-background: #3b3347 !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -1441,45 +1416,45 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #3f3f3f !important;
+  --slider-thumb-border-color: #545e76 !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #363636 !important;
+  --slider-track-background: #4e4560 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #262626 !important;
-  --status-bar-border-color: #363636 !important;
+  --status-bar-background: #2f2837 !important;
+  --status-bar-border-color: #4e4560 !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: #b3b3b3 !important;
+  --status-bar-radius: 10px 0 0 0 !important;
+  --status-bar-text-color: #7f83a1 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: #fb464c !important;
-  --sync-avatar-color-2: #e9973f !important;
-  --sync-avatar-color-3: #e0de71 !important;
-  --sync-avatar-color-4: #44cf6e !important;
-  --sync-avatar-color-5: #53dfdd !important;
-  --sync-avatar-color-6: #027aff !important;
-  --sync-avatar-color-7: #a882ff !important;
-  --sync-avatar-color-8: #fa99cd !important;
+  --sync-avatar-color-1: #e17884 !important;
+  --sync-avatar-color-2: #f19070 !important;
+  --sync-avatar-color-3: #dcb46f !important;
+  --sync-avatar-color-4: #75c297 !important;
+  --sync-avatar-color-5: #6fd2c2 !important;
+  --sync-avatar-color-6: #88c6e3 !important;
+  --sync-avatar-color-7: #b584c7 !important;
+  --sync-avatar-color-8: #dc76a7 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #1e1e1e !important;
-  --tab-container-background: #262626 !important;
-  --tab-curve: 6px !important;
-  --tab-divider-color: #3f3f3f !important;
-  --tab-font-size: 13px !important;
+  --tab-background-active: #3b3347 !important;
+  --tab-container-background: #2f2837 !important;
+  --tab-curve: 0px !important;
+  --tab-divider-color: transparent !important;
+  --tab-font-size: 0.84em !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: #363636 !important;
+  --tab-outline-color: #4e4560 !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
-  --tab-radius-active: 6px 6px 0 0 !important;
+  --tab-radius: 8px !important;
+  --tab-radius-active: 8px !important;
   --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: 40px !important;
@@ -1488,46 +1463,46 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #262626 !important;
+  --tab-switcher-background: #2f2837 !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
+  --tab-switcher-preview-radius: 14px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color: #666666 !important;
-  --tab-text-color-active: #b3b3b3 !important;
-  --tab-text-color-focused: #b3b3b3 !important;
-  --tab-text-color-focused-active: #b3b3b3 !important;
-  --tab-text-color-focused-active-current: #dadada !important;
+  --tab-text-color: rgb(125, 127, 149) !important;
+  --tab-text-color-active: #7f83a1 !important;
+  --tab-text-color-focused: #7f83a1 !important;
+  --tab-text-color-focused-active: #7f83a1 !important;
+  --tab-text-color-focused-active-current: rgb(197, 182, 252) !important;
   --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
-  --tab-width: 200px !important;
+  --tab-width: 240px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #363636 !important;
-  --table-add-button-border-width: 1px !important;
+  --table-add-button-border-color: #4e4560 !important;
+  --table-add-button-border-width: 0px !important;
   --table-background: transparent !important;
-  --table-border-color: #363636 !important;
-  --table-border-width: 1px !important;
+  --table-border-color: #4e4560 !important;
+  --table-border-width: 0px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
-  --table-column-first-border-width: 1px !important;
-  --table-column-last-border-width: 1px !important;
+  --table-column-first-border-width: 0px !important;
+  --table-column-last-border-width: 0px !important;
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: rgb(138, 92, 245) !important;
-  --table-drag-handle-color: #666666 !important;
+  --table-drag-handle-color: rgb(125, 127, 149) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: #363636 !important;
-  --table-header-border-width: 1px !important;
-  --table-header-color: #dadada !important;
+  --table-header-border-color: #4e4560 !important;
+  --table-header-border-width: 0px !important;
+  --table-header-color: #a0a7c4 !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
+  --table-row-alt-background: #2f2837 !important;
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
-  --table-row-last-border-width: 1px !important;
+  --table-row-last-border-width: 0px !important;
   --table-selection: rgba(138, 92, 245, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
   --table-selection-border-color: rgb(138, 92, 245) !important;
@@ -1550,24 +1525,24 @@
   --tag-size: 0.875em !important;
   --text-accent: rgb(166, 139, 249) !important;
   --text-accent-hover: rgb(197, 182, 252) !important;
-  --text-error: #fb464c !important;
-  --text-faint: #666666 !important;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
+  --text-error: #e17884 !important;
+  --text-faint: rgb(125, 127, 149) !important;
+  --text-highlight-bg: hsl(258, 88%, 66%, 0.3) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #b3b3b3 !important;
-  --text-normal: #dadada !important;
+  --text-muted: #7f83a1 !important;
+  --text-normal: #a0a7c4 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgba(138, 92, 245, 0.33) !important;
-  --text-success: #44cf6e !important;
-  --text-warning: #e9973f !important;
-  --titlebar-background: #262626 !important;
-  --titlebar-background-focused: #363636 !important;
-  --titlebar-border-color: #363636 !important;
+  --text-success: #75c297 !important;
+  --text-warning: #f19070 !important;
+  --titlebar-background: #2f2837 !important;
+  --titlebar-background-focused: #2f2837 !important;
+  --titlebar-border-color: #4e4560 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #b3b3b3 !important;
-  --titlebar-text-color-focused: #dadada !important;
+  --titlebar-text-color: #7f83a1 !important;
+  --titlebar-text-color-focused: #a0a7c4 !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -1581,8 +1556,8 @@
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #dadada !important;
-  --vault-profile-color-hover: #dadada !important;
+  --vault-profile-color: #a0a7c4 !important;
+  --vault-profile-color-hover: #a0a7c4 !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -1591,6 +1566,23 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --h1-color: #a0a7c4 !important;
+  --h2-color: #a0a7c4 !important;
+  --h3-color: #a0a7c4 !important;
+  --h4-color: #a0a7c4 !important;
+  --h5-color: #a0a7c4 !important;
+  --h6-color: #a0a7c4 !important;
+  --inline-title-color: #a0a7c4 !important;
+  --blockquote-color: #a0a7c4 !important;
+  --cards-image-fit: contain !important;
+  --cards-image-height: 400px !important;
+  --cards-max-width: 1fr !important;
+  --cards-min-width: 180px !important;
+  --cards-mobile-width: 120px !important;
+  --cards-padding: 1.2em !important;
+  --border-radius-average: 11px !important;
+  --line-style: solid !important;
+  --workspace-background: #2f2837 !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1902,8 +1894,8 @@ body {
   }
 
   div#quartz-root {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(248, 243, 242), rgb(59, 51, 71));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
   }
 
   &[data-slug],
@@ -1911,55 +1903,46 @@ body {
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
   }
 
   .page > div#quartz-body div.sidebar {
     background-color: light-dark(rgb(246, 246, 246), rgb(38, 38, 38));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
   }
 
   &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: light-dark(rgb(246, 246, 246), rgb(38, 38, 38));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(244, 235, 235), rgb(47, 40, 55));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: light-dark(rgb(246, 246, 246), rgb(38, 38, 38));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-left: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    background-color: light-dark(rgb(244, 235, 235), rgb(47, 40, 55));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-left: 1px solid
+      light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
   }
 
   .page > div#quartz-body div.sidebar.left {
-    border-right: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border-right: 1px solid
+      light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
   }
 
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    color: light-dark(rgb(193, 139, 172), rgb(166, 138, 249));
     cursor: pointer;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
-    text-decoration-line: underline;
+    text-decoration: none solid rgb(166, 138, 249);
+    text-decoration-color: light-dark(rgb(193, 139, 172), rgb(166, 138, 249));
+    text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
@@ -1969,25 +1952,14 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    color: light-dark(rgb(210, 171, 197), rgb(197, 182, 252));
     cursor: pointer;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    text-decoration: underline solid rgb(197, 182, 252);
+    text-decoration-color: light-dark(rgb(210, 171, 197), rgb(197, 182, 252));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1997,26 +1969,18 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    color: light-dark(rgb(193, 139, 172), rgb(166, 138, 249));
     cursor: pointer;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgba(138, 92, 245, 0.3);
-    text-decoration-color: rgba(138, 92, 245, 0.3);
-    text-decoration-line: underline;
+    text-decoration: none solid rgba(138, 92, 245, 0.3);
+    text-decoration-color: light-dark(
+      rgba(193, 139, 172, 0.3),
+      rgba(138, 92, 245, 0.3)
+    );
+    text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
@@ -2025,25 +1989,14 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     cursor: auto;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(160, 167, 196);
+    text-decoration-color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2054,25 +2007,14 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    cursor: text;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(160, 167, 196);
+    text-decoration-color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2083,25 +2025,14 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    cursor: text;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(160, 167, 196);
+    text-decoration-color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2112,25 +2043,14 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    cursor: text;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-weight: 600;
+    font-family: Arima, cursive;
+    font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(160, 167, 196);
+    text-decoration-color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2141,25 +2061,14 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    cursor: text;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-weight: 600;
+    font-family: Arima, cursive;
+    font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(160, 167, 196);
+    text-decoration-color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2168,26 +2077,18 @@ body {
   }
 
   .text-highlight {
-    background-color: rgba(255, 208, 0, 0.4);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    background-color: light-dark(
+      rgba(193, 139, 172, 0.2),
+      rgba(138, 92, 245, 0.3)
+    );
+    color: light-dark(rgb(89, 79, 103), rgb(255, 255, 255));
+    cursor: text;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(255, 255, 255);
+    text-decoration-color: light-dark(rgb(89, 79, 103), rgb(255, 255, 255));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2197,25 +2098,14 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    cursor: auto;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    cursor: text;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
     outline: inherit;
-    text-decoration: line-through solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: line-through solid rgb(160, 167, 196);
+    text-decoration-color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2245,15 +2135,15 @@ body {
       rgba(0, 0, 0, 0.067),
       rgba(255, 255, 255, 0.067)
     );
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
   }
 
   .search
@@ -2269,21 +2159,22 @@ body {
       ~ .result-card:hover
     ) {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
   }
 
   hr {
-    border: 0px light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-    border-top: 2px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border: 0px light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
+    border-top: 2px solid
+      light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2311,23 +2202,16 @@ body {
     > li
     > .match-tag {
     align-items: center;
-    background-color: rgba(138, 92, 245, 0.1);
+    background-color: light-dark(
+      rgba(193, 139, 172, 0.1),
+      rgba(138, 92, 245, 0.1)
+    );
     display: flex;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
     margin-inline-start: 0px;
-    border: 0px solid rgba(138, 92, 245, 0.15);
+    border: 0px solid
+      light-dark(rgba(193, 139, 172, 0.15), rgba(138, 92, 245, 0.15));
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
@@ -2339,17 +2223,17 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    color: light-dark(rgb(193, 139, 172), rgb(166, 138, 249));
   }
 
   ul > li {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     text-align: start;
   }
 
   ul > li::marker {
-    background-color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
-    border: 0px light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+    background-color: light-dark(rgb(163, 145, 163), rgb(125, 127, 149));
+    border: 0px light-dark(rgb(163, 145, 163), rgb(125, 127, 149));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2358,20 +2242,20 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+    color: light-dark(rgb(163, 145, 163), rgb(125, 127, 149));
     pointer-events: none;
     transform: none;
     transition: inherit;
   }
 
   ol > li {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     text-align: start;
   }
 
   ol > li::marker {
-    background-color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
-    border: 0px light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+    background-color: light-dark(rgb(163, 145, 163), rgb(125, 127, 149));
+    border: 0px light-dark(rgb(163, 145, 163), rgb(125, 127, 149));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2380,24 +2264,24 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+    color: light-dark(rgb(163, 145, 163), rgb(125, 127, 149));
     pointer-events: none;
     transform: none;
     transition: inherit;
   }
 
   code {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
-    border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(240, 233, 228), rgb(65, 59, 78));
+    border: 0px solid light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -2407,16 +2291,16 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
-    border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: light-dark(rgb(240, 233, 228), rgb(65, 59, 78));
+    border: 0px solid light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
     overflow-x: auto;
     padding: 12px 16px;
     white-space-collapse: preserve;
@@ -2424,16 +2308,16 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
-    border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: light-dark(rgb(240, 233, 228), rgb(65, 59, 78));
+    border: 0px solid light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
     overflow-x: auto;
     padding: 12px 16px;
     white-space-collapse: preserve;
@@ -2484,42 +2368,31 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
-    text-decoration: line-through solid rgb(179, 179, 179);
-    text-decoration-color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
+    color: light-dark(rgb(104, 90, 104), rgb(127, 131, 161));
+    text-decoration: none solid rgb(127, 131, 161);
+    text-decoration-color: light-dark(rgb(104, 90, 104), rgb(127, 131, 161));
   }
 
   blockquote {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(rgb(250, 243, 241), rgb(47, 40, 55));
     border-inline-start: inherit;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-style: normal;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    padding-inline-start: 24px;
+    font-family: Arima, cursive;
+    font-style: italic;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-inline-start: 15px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
-    text-decoration: none solid rgb(102, 102, 102);
+    color: light-dark(rgb(163, 145, 163), rgb(125, 127, 149));
+    text-decoration: none solid rgb(125, 127, 149);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    background-color: light-dark(rgb(248, 243, 242), rgb(85, 84, 110));
+    border: 1px solid light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -2528,24 +2401,13 @@ body {
     border-start-end-radius: 5px;
     border-end-start-radius: 5px;
     border-end-end-radius: 5px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
   }
 
   .search > .search-container > .search-space {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
-    border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
+    background-color: light-dark(rgb(248, 243, 242), rgb(59, 51, 71));
+    border: 1px solid light-dark(rgb(182, 164, 178), rgb(98, 111, 134));
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -2561,9 +2423,9 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom: 1px solid light-dark(rgb(246, 246, 246), rgb(38, 38, 38));
+    background-color: light-dark(rgb(248, 243, 242), rgb(59, 51, 71));
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-bottom: 1px solid light-dark(rgb(244, 235, 235), rgb(47, 40, 55));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2577,25 +2439,14 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     cursor: auto;
     filter: none;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(160, 167, 196);
+    text-decoration-color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2605,7 +2456,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
+    border: 1px solid light-dark(rgb(182, 164, 178), rgb(98, 111, 134));
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -2621,7 +2472,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
   }
 
   .search
@@ -2630,15 +2481,15 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .search
@@ -2659,7 +2510,7 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     font-weight: 400;
     background-color: light-dark(
       rgba(0, 0, 0, 0.067),
@@ -2709,126 +2560,49 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
   }
 
   h1 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
     text-shadow: none;
   }
 
   h2 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
     text-shadow: none;
   }
 
   h3 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
     text-shadow: none;
   }
 
   h4 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
     text-shadow: none;
   }
 
   h5 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
     text-shadow: none;
   }
 
   h6 {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
     text-shadow: none;
   }
 
   h2.page-title,
   h2.page-title a {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
     text-shadow: none;
   }
 
@@ -2842,7 +2616,7 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2856,23 +2630,22 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border: 0px solid
-      light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
   .callout .callout-title {
     gap: inherit;
-    border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    border: 0px rgb(136, 198, 227);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2890,7 +2663,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    color: rgb(136, 198, 227);
     font-weight: 600;
   }
 
@@ -2901,305 +2674,257 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
-    mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: rgba(136, 198, 227, 0.17);
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(127, 131, 161);
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(0, 191, 188, 0.1),
-      rgba(83, 223, 221, 0.1)
-    );
-    mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: rgba(111, 210, 194, 0.17);
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(83, 223, 221);
+    stroke: rgb(111, 210, 194);
   }
 
   .callout[data-callout="info"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
-    mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: rgba(136, 198, 227, 0.17);
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(136, 198, 227);
   }
 
   .callout[data-callout="todo"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(8, 109, 221, 0.1),
-      rgba(2, 122, 255, 0.1)
-    );
-    mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: rgba(136, 198, 227, 0.17);
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(136, 198, 227);
   }
 
   .callout[data-callout="tip"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(0, 191, 188, 0.1),
-      rgba(83, 223, 221, 0.1)
-    );
-    mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: rgba(111, 210, 194, 0.17);
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(83, 223, 221);
+    stroke: rgb(111, 210, 194);
   }
 
   .callout[data-callout="success"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(8, 185, 78, 0.1),
-      rgba(68, 207, 110, 0.1)
-    );
-    mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: rgba(117, 194, 151, 0.17);
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(68, 207, 110);
+    stroke: rgb(117, 194, 151);
   }
 
   .callout[data-callout="question"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(236, 117, 0, 0.1),
-      rgba(233, 151, 63, 0.1)
-    );
-    mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: rgba(241, 144, 112, 0.17);
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(233, 151, 63);
+    stroke: rgb(241, 144, 112);
   }
 
   .callout[data-callout="warning"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(236, 117, 0, 0.1),
-      rgba(233, 151, 63, 0.1)
-    );
-    mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: rgba(241, 144, 112, 0.17);
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(233, 151, 63);
+    stroke: rgb(241, 144, 112);
   }
 
   .callout[data-callout="danger"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.1),
-      rgba(251, 70, 76, 0.1)
-    );
+    background-color: rgba(241, 144, 112, 0.17);
     mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(251, 70, 76);
+    stroke: rgb(241, 144, 112);
   }
 
   .callout[data-callout="failure"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.1),
-      rgba(251, 70, 76, 0.1)
-    );
-    mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    background-color: rgba(225, 120, 132, 0.17);
+    mix-blend-mode: normal;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(179, 179, 179);
+    stroke: rgb(127, 131, 161);
   }
 
   .callout[data-callout="bug"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.1),
-      rgba(251, 70, 76, 0.1)
-    );
+    background-color: rgba(220, 118, 167, 0.17);
     mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(251, 70, 76);
+    stroke: rgb(220, 118, 167);
   }
 
   .callout[data-callout="example"] {
     --callout-color: inherit;
-    background-color: light-dark(
-      rgba(120, 82, 238, 0.1),
-      rgba(168, 130, 255, 0.1)
-    );
+    background-color: rgba(181, 132, 199, 0.17);
     mix-blend-mode: lighten;
-    border: 0px solid
-      light-dark(rgba(120, 82, 238, 0.25), rgba(168, 130, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(218, 218, 218);
+    stroke: rgb(127, 131, 161);
   }
 
   .callout[data-callout="quote"] {
     --callout-color: inherit;
-    background-color: rgba(158, 158, 158, 0.1);
+    background-color: rgba(158, 158, 158, 0.17);
     mix-blend-mode: lighten;
-    border: 0px solid rgba(158, 158, 158, 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border: 0px solid light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
@@ -3207,38 +2932,690 @@ body {
     stroke: rgb(158, 158, 158);
   }
 
+  table {
+    background-color: rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+    border-spacing: inherit;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
+    table-layout: auto;
+    width: auto;
+    border: 0px rgb(128, 128, 128);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  thead {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(128, 128, 128);
+    border-bottom: 1px solid light-dark(rgb(210, 171, 197), rgb(197, 182, 252));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  th {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-weight: 600;
+    text-align: start;
+    vertical-align: top;
+    border: 1px solid light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  td {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-weight: 400;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  tr {
+    background-color: light-dark(rgb(250, 243, 241), rgb(47, 40, 55));
+    border: 0px rgb(128, 128, 128);
+    border-bottom: 0px light-dark(rgb(210, 171, 197), rgb(197, 182, 252));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: inherit;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: inherit;
+  }
+
+  img {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: fill;
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    margin: 0px auto;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+  }
+
+  figure {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: start;
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 16px 40px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  figcaption {
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
+    font-size: 16px;
+    font-style: normal;
+    text-align: start;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  video {
+    border-radius: inherit;
+    box-shadow: none;
+    filter: none;
+    max-width: 100%;
+    object-fit: contain;
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  audio {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+  }
+
+  .transclude {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .transclude-inner {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .file-embed {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .frontmatter {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .metadata-properties {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+    padding: inherit;
+  }
+
+  .tooltip {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .popover {
+    background-color: inherit;
+    box-shadow: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  progress {
+    accent-color: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 6px;
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="range"] {
+    accent-color: auto;
+    background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="text"] {
+    background-color: light-dark(rgb(248, 243, 242), rgb(85, 84, 110));
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family: Arima, cursive;
+    border: 1px solid light-dark(rgba(206, 194, 197, 0.467), rgb(78, 69, 96));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+    padding: 4px 8px;
+  }
+
+  details {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  summary {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    cursor: auto;
+    font-weight: 400;
+    list-style: inherit;
+    padding: 0px;
+  }
+
+  details[open] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+  }
+
+  kbd {
+    background-color: light-dark(rgb(240, 233, 228), rgb(65, 59, 78));
+    box-shadow: none;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
+    font-size: 14px;
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    padding: 1.4px 3.5px;
+  }
+
+  dl {
+    margin: 16px 0px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dt {
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-weight: 400;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  dd {
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    margin: 0px 0px 0px 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding: 0px;
+  }
+
+  sub {
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-size: 13.3333px;
+    vertical-align: sub;
+  }
+
+  sup {
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-size: 13.3333px;
+    vertical-align: super;
+  }
+
+  abbr {
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    cursor: auto;
+    text-decoration: underline dotted rgb(160, 167, 196);
+    text-decoration-style: dotted;
+  }
+
+  .backlinks {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .backlinks ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  li.task-list-item[data-task="-"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task=">"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="/"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="?"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="!"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="*"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="l"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="b"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="i"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="S"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="I"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="p"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="c"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="f"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="k"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="u"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="d"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  li.task-list-item[data-task="w"] {
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  }
+
+  ::selection {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  input::placeholder {
+    color: inherit;
+    opacity: inherit;
+  }
+
+  p::first-letter {
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-size: 16px;
+    font-weight: inherit;
+    float: inherit;
+  }
+
+  p::first-line {
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    font-weight: inherit;
+    text-transform: inherit;
+  }
+
   .katex-display > .katex {
     display: block;
     text-align: center;
     white-space-collapse: break-spaces;
     text-wrap-mode: wrap;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
   }
 
   .katex > .katex-html {
@@ -3246,22 +3623,11 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
+    color: light-dark(rgb(104, 90, 104), rgb(127, 131, 161));
     cursor: default;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
-    text-decoration: none solid rgb(179, 179, 179);
+    text-decoration: none solid rgb(127, 131, 161);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -3269,16 +3635,16 @@ body {
       rgba(0, 0, 0, 0.067),
       rgba(255, 255, 255, 0.067)
     );
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    color: light-dark(rgb(89, 79, 103), rgb(160, 167, 196));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -3291,41 +3657,19 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
+    color: light-dark(rgb(104, 90, 104), rgb(127, 131, 161));
     cursor: default;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
-    text-decoration: none solid rgb(179, 179, 179);
+    text-decoration: none solid rgb(127, 131, 161);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
+    color: light-dark(rgb(104, 90, 104), rgb(127, 131, 161));
     cursor: default;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: Arima, cursive;
     font-weight: 400;
-    text-decoration: none solid rgb(179, 179, 179);
+    text-decoration: none solid rgb(127, 131, 161);
   }
 
   --current-page-slug: attr(data-slug raw-string);

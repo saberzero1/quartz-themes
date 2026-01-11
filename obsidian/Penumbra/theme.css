@@ -32,8 +32,8 @@
     --interactive-accent: #F2E6D4;
     --interactive-accent-hover: #FFFDFB;
     --scrollbar-active-thumb-bg: #8F8F8F;
-    --scrollbar-bg: #303338;;
-    --scrollbar-thumb-bg: #303338;;
+    --scrollbar-bg: #303338;
+    --scrollbar-thumb-bg: #303338;
     --panel-border-color: #F2E6D4;
     --gray-1: #8F8F8F;
     --gray-2: #636363;
@@ -406,4 +406,16 @@ pre[class*='language-'] {
 
 .token.entity {
     cursor: help !important;
+}
+
+.cm-fat-cursor .CodeMirror-cursor {
+  background-color: var(--text-faint) !important;
+  opacity: 0.5;
+  width: 5px;
+}
+
+.cm-animate-fat-cursor {
+  background-color: var(--text-faint) !important;
+  opacity: 0.5;
+  width: 5px;
 }

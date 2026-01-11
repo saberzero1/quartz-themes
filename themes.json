@@ -266,7 +266,7 @@
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "atomus": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -381,7 +381,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "ayu-light-mirage": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -472,7 +472,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "big-bold": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["removed", "checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -649,6 +649,28 @@
       "extras": [],
       "fixes": [],
       "fonts": ["archivo"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "brutalist": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {},
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [
+        "ai-writer-duo",
+        "ai-writer-quattro",
+        "ai-writer-mono",
+        "libre-baskerville",
+        "literata",
+        "marcellus",
+        "montserrat",
+        "sen"
+      ],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "buena-vista": {
@@ -851,7 +873,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "chime": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["removed", "checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -870,7 +892,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "christmas": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -1039,7 +1061,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "creature": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -4393,7 +4415,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "midnight": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -4461,7 +4483,7 @@
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "minimal-resources": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -4705,7 +4727,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "nebula": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -4809,6 +4831,19 @@
       "extras": [],
       "fixes": [],
       "fonts": ["cormorant", "manrope"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "nichneumor": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {},
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "nier": {
@@ -5107,7 +5142,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "obsidian_vibrant": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -5389,6 +5424,19 @@
     "overcast": {
       "compatibility": ["checking"],
       "modes": ["dark"],
+      "use_extended_syntax": false,
+      "style_settings": {},
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "oxygen": {
+      "compatibility": ["checking", "collection"],
+      "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "style_settings": {},
       "variations": [],
@@ -5812,6 +5860,19 @@
       "extras": [],
       "fixes": [],
       "fonts": ["ia-writer-mono", "noto-sans-jp"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "quietus": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {},
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "quillcode": {
@@ -6375,7 +6436,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "simple-color": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -6547,7 +6608,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sparkling-wisdom": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -6586,7 +6647,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "spectrum": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -7167,7 +7228,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "venom": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -7336,7 +7397,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "wilcoxone": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["dark"],
       "use_extended_syntax": false,
       "style_settings": {},
@@ -7384,7 +7445,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "wiselight": {
-      "compatibility": ["checking"],
+      "compatibility": ["removed", "checking"],
       "modes": ["light"],
       "use_extended_syntax": false,
       "style_settings": {},

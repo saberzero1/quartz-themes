@@ -1,0 +1,1321 @@
+.theme-light {
+    --color-red-rgb: 233, 49, 71;
+    --color-red: #bf616a;
+    --color-orange-rgb: 236, 117, 0;
+    --color-orange: #d08770;
+    --color-yellow-rgb: 224, 172, 0;
+    --color-yellow: #c4963a;
+    --color-green-rgb: 8, 185, 78;
+    --color-green: #8aa176;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-cyan: #70a9a8;
+    --color-blue-rgb: 8, 109, 221;
+    --color-blue: #81a1c1;
+    --color-purple-rgb: 120, 82, 238;
+    --color-purple: #b48ead;
+    --color-pink-rgb: 213, 57, 132;
+    --color-pink: #b0748f;
+    --color-base-00: #dbd1c6;
+    --color-base-05: #d6ccc1;
+    --color-base-10: #d1c7bd;
+    --color-base-20: #cbc2b8;
+    --color-base-25: #c6bdb3;
+    --color-base-30: #c1b8ae;
+    --color-base-35: #bcb3aa;
+    --color-base-40: #b6aea5;
+    --color-base-50: #98928c;
+    --color-base-60: #64615b;
+    --color-base-70: #54504d;
+    --color-base-100: #252423;
+}
+
+.theme-dark {
+    --color-red-rgb: 233, 49, 71;
+    --color-red: #bf616a;
+    --color-orange-rgb: 236, 117, 0;
+    --color-orange: #d08770;
+    --color-yellow-rgb: 224, 172, 0;
+    --color-yellow: #ebcb8b;
+    --color-green-rgb: 8, 185, 78;
+    --color-green: #a3be8c;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-cyan: #8fbcbb;
+    --color-blue-rgb: 8, 109, 221;
+    --color-blue: #81a1c1;
+    --color-purple-rgb: 120, 82, 238;
+    --color-purple: #b48ead;
+    --color-pink-rgb: 213, 57, 132;
+    --color-pink: #c3afb8;
+    --color-base-00: #1a1b20;
+    --color-base-05: #222329;
+    --color-base-10: #2a2b33;
+    --color-base-20: #31333c;
+    --color-base-25: #393b46;
+    --color-base-30: #41424f;
+    --color-base-35: #494a58;
+    --color-base-40: #505262;
+    --color-base-50: #585a6b;
+    --color-base-60: #848697;
+    --color-base-70: #b1b3c2;
+    --color-base-100: #dddfee;
+}
+
+.theme-dark .mermaid>svg {
+    filter: none !important;
+}
+
+body {
+    /*===font size===*/
+    --font-text-size: 16px !important;
+
+    --h1-size: 2em !important;
+    --h2-size: 1.7em !important;
+    --h3-size: 1.5em !important;
+    --h4-size: 1.3em !important;
+    --h5-size: 1.2em !important;
+    --h6-size: 1.1em !important;
+
+    color-scheme: light dark;
+    --header-height: 40px;
+
+    --gap: 1.5rem;
+    --scroll-button-offset: 25px;
+
+    --header-padding: 5px;
+
+    --light-titlebar-background-focused: #bab2a8;
+    --dark-titlebar-background-focused: #0a0b0d;
+    --light-titlebar-background: #fcf0e4;
+    --dark-titlebar-background: #2a2b33;
+    --titlebar-border-color: transparent;
+
+    --light-background: #dbd1c6;
+    --light-shadow-first: #bab2a8;
+    --light-shadow-second: #fcf0e4;
+    --light-shadow-third: #ede2d6;
+    --light-shadow-fourth: #ccc3b8;
+    --light-shadow-fifth: #FCFCFC;
+
+    --dark-background: #1a1b20;
+    --dark-shadow-first: #0a0b0d;
+    --dark-shadow-second: #2a2b33;
+    --dark-shadow-third: #000000;
+    --dark-shadow-fourth: #6b6c7b;
+
+    --dark-background-flip: #EFF0F6;
+    --dark-shadow-first-flip: #FFFFFF;
+    --dark-shadow-second-flip: #D8DAE3;
+    --dark-shadow-third-flip: #F4F9F4;
+    --dark-shadow-fourth-flip: #C0C1CC;
+
+
+
+    --background: light-dark(var(--light-background), var(--dark-background));
+    --background-top: light-dark(var(--color-base-10), var(--color-base-05));
+    --background-excalidraw: light-dark(var(--light-background), var(--dark-background-flip));
+
+    --floating-background: var(--background);
+
+    --box-shadow: 4px 4px 8px light-dark(var(--light-shadow-first), var(--dark-shadow-first)), -4px -4px 8px light-dark(var(--light-shadow-second), var(--dark-shadow-second));
+    --box-shadow-excalidraw: 4px 4px 8px light-dark(var(--light-shadow-first), var(--dark-shadow-first-flip)), -4px -4px 8px light-dark(var(--light-shadow-second), var(--dark-shadow-second-flip));
+
+    --button-box-shadow: 2px 2px 4px light-dark(var(--light-shadow-first), var(--dark-shadow-first)), -2px -2px 4px light-dark(var(--light-shadow-second), var(--dark-shadow-second));
+    --button-box-shadow-excalidraw: 2px 2px 4px light-dark(var(--light-shadow-first), var(--dark-shadow-first-flip)), -2px -2px 4px light-dark(var(--light-shadow-second), var(--dark-shadow-second-flip));
+
+    --box-shadow-click: -4px -4px 8px light-dark(var(--light-shadow-first), var(--dark-shadow-first)), 4px 4px 8px light-dark(var(--light-shadow-second), var(--dark-shadow-second));
+    --box-shadow-click-excaldraw: -4px -4px 8px light-dark(var(--light-shadow-first), var(--dark-shadow-first-flip)), 4px 4px 8px light-dark(var(--light-shadow-second), var(--dark-shadow-second-flip));
+
+    --button-box-shadow-click: -2px -2px 4px light-dark(var(--light-shadow-first), var(--dark-shadow-first)), 2px 2px 4px light-dark(var(--light-shadow-second), var(--dark-shadow-second));
+    --button-box-shadow-click-excalidraw: -2px -2px 4px light-dark(var(--light-shadow-first), var(--dark-shadow-first-flip)), 2px 2px 4px light-dark(var(--light-shadow-second), var(--dark-shadow-second-flip));
+
+    --text-shadow: -2px -2px 4px light-dark(var(--light-shadow-first), var(--dark-shadow-third)), 2px 2px 4px light-dark(var(--light-shadow-fifth), var(--dark-shadow-fourth));
+
+    --printing-text-shadow: 1px 1px 2px light-dark(var(--light-shadow-first), var(--dark-shadow-third)), -1px -1px 4px light-dark(var(--light-shadow-fifth), var(--dark-shadow-fourth));
+
+    --shell-shadow: -2px -2px 4px light-dark(var(--light-shadow-first), var(--dark-shadow-third)), 2px 2px 4px light-dark(var(--light-shadow-second), var(--dark-shadow-fourth));
+
+    --border-radius: 10px;
+    --border-radius-twice: 10px 10px 0px 0px;
+    --overflow: unset;
+}
+
+/* === setting menu === */
+.view-header {
+    margin: 2px 0 0 0 !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-panels.cm-panels-bottom input[type="text"] {
+    box-shadow: none !important;
+}
+
+.is-focused .workspace-leaf.mod-active .view-header {
+    margin: 5px !important;
+}
+
+.workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header-container {
+    margin: 0 0 10px 0 !important;
+    box-shadow: none !important;
+}
+
+.workspace-split.mod-horizontal .workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container {
+    box-shadow: var(--box-shadow) !important;
+}
+
+.workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container {
+    box-shadow: none !important;
+}
+
+.menu {
+    background-color: var(--background) !important;
+    border-radius: var(--border-radius) !important;
+    border: none !important;
+}
+
+.menu-item:hover {
+    box-shadow: var(--button-box-shadow) !important;
+}
+
+.workspace-tab-header-container {
+    border-bottom: 0px solid var(--background);
+    box-shadow: var(--box-shadow) !important;
+}
+
+.vertical-tab-header {
+    background-color: var(--background-top) !important;
+}
+
+input.metadata-property-key-input:active,
+input.metadata-property-key-input:focus {
+    box-shadow: none !important;
+}
+
+.metadata-property-value .metadata-input-text {
+    box-shadow: none !important;
+}
+
+.excalidraw .Modal .Island {
+    margin: 30px !important;
+    box-shadow: var(--box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.excalidraw .App-menu__left,
+.excalidraw .App-mobile-menu {
+    --button-bg: var(--background) !important;
+}
+
+.excalidraw .buttonList .zIndexButton.active,
+.excalidraw .buttonList button.active,
+.excalidraw .buttonList label.active {
+    background-color: var(--light-shadow-third) !important;
+    border-color: var(--light-shadow-third) !important;
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+.excalidraw .buttonList .zIndexButton:hover,
+.excalidraw .buttonList button:hover,
+.excalidraw .buttonList label:hover {
+    background-color: var(--light-shadow-third) !important;
+    border-color: var(--light-shadow-third) !important;
+}
+
+.excalidraw .selected-shape-actions .buttonList label {
+    box-shadow: var(--button-box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.excalidraw .sidebar__header__buttons {
+    gap: 10px !important;
+}
+
+.workspace .mod-root .workspace-tab-header.tappable.is-active {
+    margin: 7px 3px 0px 3px !important;
+    padding: 5px !important;
+    border-radius: var(--border-radius) !important;
+    box-shadow: var(--box-shadow-click) !important;
+    outline: none !important;
+}
+
+.workspace-tab-header::before {
+    display: none !important;
+}
+
+.workspace-tab-header::after {
+    display: none !important;
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+    text-shadow: var(--printing-text-shadow) !important;
+}
+
+.excalidraw .Modal__content {
+    background-color: var(--background) !important;
+    box-shadow: 8px 8px 16px #0a0b0d6c,
+}
+
+.excalidraw .HelpDialog__btn {
+    --background: var(--background) !important;
+    box-shadow: var(--button-box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.excalidraw .HelpDialog__btn:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+.excalidraw .HelpDialog__key {
+    box-shadow: var(--button-box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+    background-color: var(--background) !important;
+}
+
+.excalidraw .HelpDialog__key:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+.excalidraw-search.document-search-container {
+    box-shadow: var(--box-shadow) !important;
+    border-radius: var(--border-radius) ! important;
+}
+
+.nav-file-title.is-active {
+    box-shadow: var(--box-shadow) !important;
+    text-shadow: var(--printing-text-shadow) !important;
+    background-color: var(--color-base-00) !important;
+}
+
+input.metadata-property-key-input {
+    box-shadow: none !important;
+}
+
+input.prompt-input,
+input.prompt-input:hover,
+input.prompt-input:focus,
+input.prompt-input:focus-visible {
+    box-shadow: none !important;
+}
+
+.prompt {
+    box-shadow: var(--box-shadow) !important;
+    border-radius: var(--border-radius);
+}
+
+.dropdown {
+    box-shadow: var(--box-shadow) !important;
+}
+
+.dropdown:hover {
+    box-shadow: var(--box-shadow-click) !important;
+}
+
+.dropdown:focus {
+    box-shadow: var(--box-shadow-click) !important;
+}
+
+button:not(.clickable-icon) {
+    box-shadow: var(--button-box-shadow) !important;
+}
+
+button:not(.clickable-icon):hover {
+    box-shadow: var(--button-box-shadow-click)important;
+}
+
+.checkbox-container {
+    box-shadow: var(--box-shadow) !important;
+}
+
+.checkbox-container:hover {
+    box-shadow: var(--box-shadow-click) !important;
+}
+
+input[type="color"] {
+    padding: 0 !important;
+    border-radius: 13px !important;
+    box-shadow: var(--box-shadow) !important;
+}
+
+input {
+    box-shadow: var(--box-shadow) !important;
+}
+
+input:focus {
+    box-shadow: var(--box-shadow-click) !important;
+}
+
+.menu-scroll {
+    box-shadow: var(--box-shadow) !important;
+    border-radius: var(--border-radius);
+}
+
+.menu-scroll:hover {
+    box-shadow: var(--box-shadow-click) !important;
+}
+
+.menu-content {
+    border-radius: var(--border-radius);
+}
+
+.modal.mod-sidebar-layout .modal-content {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.suggestion-container {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.modal-container.mod-dim .modal {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+    box-shadow: var(--box-shadow);
+}
+
+.community-item {
+    box-shadow: var(--button-box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.community-item:hover {
+    outline: none !important;
+    box-shadow: var(--box-shadow-click) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+/* === title bar === */
+
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+    background: var(--background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
+    background: var(--background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-click);
+}
+
+.titlebar-button-container.mod-right {
+    top: 5px;
+    right: 5px;
+    border-radius: var(--border-radius);
+}
+
+/* === image, audio, video === */
+.workspace-leaf-content img:not([width]),
+.workspace-leaf-content audio,
+.workspace-leaf-content video {
+    border-radius: var(--border-radius);
+}
+
+/* === click button === */
+
+.sidebar-toggle-button.mod-right .clickable-icon,
+.sidebar-toggle-button.mod-left .clickable-icon,
+.search-input-container.mod-hotkey .clickable-icon,
+.search-input-container.mod-hotkey .clickable-icon:hover,
+.input-right-decorator.clickable-icon {
+    margin: 0px 0px 0px 0px !important;
+    box-shadow: none !important;
+}
+
+.setting-item-control .clickable-icon {
+    margin: 8px 12px 8px 5px !important;
+    box-shadow: var(--button-box-shadow) !important;
+}
+
+.setting-item-control .clickable-icon:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+.graph-controls.is-close .graph-controls-button.mod-open {
+    margin: 6px 4px 6px 4px !important;
+}
+
+.clickable-icon {
+    margin: 2px 4px 2px 4px !important;
+    box-shadow: var(--button-box-shadow);
+}
+
+.clickable-icon:hover {
+    box-shadow: var(--button-box-shadow-click);
+}
+
+/* === excalidraw === */
+
+.excalidraw {
+    background-color: #ffffff00 !important;
+}
+
+.excalidraw.theme--dark {
+    filter: none !important;
+    background-color: #ffffff00 !important;
+}
+
+.excalidraw .App-toolbar-content {
+    gap: 8px !important;
+}
+
+.excalidraw .default-sidebar .sidebar-triggers {
+    gap: 8px !important;
+    padding: 3px !important;
+    border: 0px !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--button-box-shadow) !important;
+}
+
+.excalidraw .sidebar__header__buttons button:hover {
+    background-color: var(--background) !important;
+}
+
+.excalidraw .library-menu-items__no-items__label {
+    color: var(--color-base-50) !important;
+}
+
+.excalidraw .library-menu-browse-button {
+    box-shadow: var(--box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+    background-color: var(--background) !important;
+    color: var(--color-base-50) !important;
+}
+
+.excalidraw .library-menu-browse-button:hover {
+    box-shadow: var(--box-shadow-click) !important;
+}
+
+.excalidraw .sidebar-tab-trigger {
+    box-shadow: none !important;
+    --button-active-bg: var(--background) !important;
+    --button-hover-color: var(--background) !important;
+    --button-hover-border: var(--background) !important;
+}
+
+.excalidraw .sidebar-tab-trigger[data-state=active] {
+    box-shadow: none !important;
+    --button-active-bg: var(--background) !important;
+    --button-hover-bg: var(--background) !important;
+    --button-border: var(--background) !important;
+    --button-bg: var(--background) !important;
+}
+
+.excalidraw .sidebar-tab-trigger:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+    --button-active-bg: var(--background) !important;
+    --button-hover-color: var(--background) !important;
+    --button-hover-border: var(--background) !important;
+}
+
+.excalidraw .layer-ui__search-header .ExcTextField__input {
+    background-color: var(--background) !important;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow) !important;
+}
+
+.excalidraw .ExcTextField__input input {
+    box-shadow: none !important;
+    --csstools-light-dark-toggle--23: var(--color-base-100) !important;
+    --focus-ring-color: var(--color-base-100) !important;
+}
+
+/*=== excalidraw color picker ===*/
+.excalidraw .color-picker-content input[type=color] {
+    filter: none !important;
+}
+
+.excalidraw .color-picker-content input[type=color]:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+.excalidraw .color-picker__button {
+    box-shadow: var(--button-box-shadow-excalidraw) !important;
+}
+
+.excalidraw .color-picker__input-label {
+    box-shadow: none !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.excalidraw .color-picker-input {
+    box-shadow: none !important;
+}
+
+.excalidraw .popover {
+    box-shadow: none !important;
+}
+
+.excalidraw .context-menu {
+    margin: 20px !important;
+    padding: 10px !important;
+    box-shadow: var(--box-shadow) !important;
+    background-color: var(--background) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+
+.excalidraw .context-menu-item {
+    margin: 10px 0px 0px 0px !important;
+    box-shadow: var(--button-box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.excalidraw .context-menu-item:hover {
+    background-color: var(--color-base-50) !important;
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+
+.excalidraw .main-menu-trigger {
+    background-color: var(--background-excalidraw) !important;
+}
+
+.excalidraw .App-menu_top>* {
+    gap: 8px !important;
+}
+
+.excalidraw .sidebar-trigger {
+    background-color: var(--background) !important;
+    box-shadow: var(--button-box-shadow) !important;
+    outline: none !important;
+}
+
+.excalidraw .sidebar-trigger:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+.excalidraw .main-menu-trigger {
+    background-color: var(--background) !important;
+    box-shadow: var(--button-box-shadow) !important;
+}
+
+.excalidraw .mobile-misc-tools-container {
+    padding: 5px 6px 5px 5px !important;
+    gap: 8px !important;
+}
+
+.excalidraw .mobile-misc-tools-container .ToolIcon {
+    box-shadow: none !important;
+}
+
+.excalidraw .mobile-misc-tools-container .ToolIcon:hover {
+    box-shadow: none !important;
+}
+
+.excalidraw .mobile-misc-tools-container .ToolIcon__icon {
+    box-shadow: var(--button-box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.excalidraw .mobile-misc-tools-container .ToolIcon__icon:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+.excalidraw .mobile-misc-tools-container {
+    border: 0px !important;
+    box-shadow: var(--button-box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+    background-color: var(--background) !important;
+}
+
+/*=== excalidraw toolbar ===*/
+
+.excalidraw .dropdown-menu .dropdown-menu-item {
+    color: var(--color-base-100) !important;
+    margin: 10px 0px 10px 0px !important;
+}
+
+
+.excalidraw .App-bottom-bar>.Island {
+    padding: 0px !important;
+    margin: 0px 10px 10px 0px !important;
+}
+
+.excalidraw .tray-zoom {
+    margin: 0px !important;
+}
+
+.excalidraw .Island {
+    margin: 10px !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.excalidraw .dropdown-menu {
+    margin: 40px 0px 0px 0px !important;
+}
+
+.excalidraw .dropdown-menu .dropdown-menu-container {
+    margin: 0px !important;
+    background-color: var(--background) !important;
+}
+
+.excalidraw .dropdown-menu,
+.excalidraw .dropdown-menu .dropdown-menu-item,
+.excalidraw .App-toolbar,
+.excalidraw .ToolIcon {
+    box-shadow: var(--button-box-shadow) !important;
+    background-color: var(--background) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.excalidraw .dropdown-menu-button {
+    --background: var(--background) !important;
+}
+
+.excalidraw .dropdown-menu-button:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+.excalidraw .Stack_horizontal {
+    gap: 10px !important;
+}
+
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-left>* {
+    margin: 30px 0px 0px 0px !important;
+}
+
+.zoom-actions,
+.undo-redo-buttons {
+    padding: 5px !important;
+    margin: 10px 10px 0px 0px !important;
+    box-shadow: var(--button-box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+    background-color: var(--background) !important;
+}
+
+.excalidraw .help-icon {
+    margin: 0px 10px 50px 0px !important;
+    box-shadow: var(--button-box-shadow) !important;
+    border-radius: var(--border-radius) !important;
+    background-color: var(--background) !important;
+}
+
+.excalidraw .help-icon:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+    border-radius: var(--border-radius) !important;
+    background-color: var(--background) !important;
+}
+
+.excalidraw .dropdown-menu .dropdown-menu-item:hover,
+.excalidraw .ToolIcon:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+.excalidraw .dropdown-menu-button:hover {
+    background: none !important;
+}
+
+.excalidraw .ToolIcon_type_button {
+    padding: 5px !important;
+    box-shadow: none !important;
+}
+
+.excalidraw .ToolIcon .ToolIcon__icon,
+.excalidraw .ToolIcon .ToolIcon__icon {
+    background: none !important;
+}
+
+.excalidraw .ToolIcon .ToolIcon__icon:hover,
+.excalidraw .ToolIcon .ToolIcon__icon:hover {
+    background: none !important;
+}
+
+
+
+/*=== excalidraw sidebar trigger ===*/
+
+.excalidraw .mobile-misc-tools-container .default-sidebar-trigger {
+    padding: 5px !important;
+    margin: 0px 7px 0px 3px !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+.excalidraw .mobile-misc-tools-container .default-sidebar-trigger:hover {
+    box-shadow: var(--button-box-shadow-click) !important;
+}
+
+
+.excalidraw .App-toolbar-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+/* === canvas === */
+
+.canvas-control-group,
+.canvas-card-menu,
+.canvas-node {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.canvas-path-label {
+    text-shadow: var(--text-shadow);
+}
+
+.canvas-control-group:hover,
+.canvas-card-menu:hover {
+    box-shadow: var(--button-box-shadow-click);
+}
+
+/* === code block === */
+
+.markdown-source-view.mod-cm6 .code-block-flair {
+    box-shadow: var(--shell-shadow);
+}
+
+.markdown-rendered button.copy-code-button {
+    box-shadow: var(--button-box-shadow);
+}
+
+
+/* === header === */
+
+.align-h1-right h1 {
+    text-align: right !important;
+}
+
+.align-h1-right .HyperMD-header-1 {
+    text-align: right !important;
+}
+
+.align-h1-center h1 {
+    text-align: center !important;
+}
+
+.align-h1-center .HyperMD-header-1 {
+    text-align: center !important;
+}
+
+.align-h1-left h1 {
+    text-align: left !important;
+}
+
+.align-h1-left .HyperMD-header-1 {
+    text-align: left !important;
+}
+
+.align-h2-right h2 {
+    text-align: right !important;
+}
+
+.align-h2-right .HyperMD-header-2 {
+    text-align: right !important;
+}
+
+.align-h2-center h2 {
+    text-align: center !important;
+}
+
+.align-h2-center .HyperMD-header-2 {
+    text-align: center !important;
+}
+
+.align-h2-left h2 {
+    text-align: left !important;
+}
+
+.align-h2-left .HyperMD-header-2 {
+    text-align: left !important;
+}
+
+.align-h3-right h3 {
+    text-align: right !important;
+}
+
+.align-h3-right .HyperMD-header-3 {
+    text-align: right !important;
+}
+
+.align-h3-center h3 {
+    text-align: center !important;
+}
+
+.align-h3-center .HyperMD-header-3 {
+    text-align: center !important;
+}
+
+.align-h3-left h3 {
+    text-align: left !important;
+}
+
+.align-h3-left .HyperMD-header-3 {
+    text-align: left !important;
+}
+
+.align-h4-right h4 {
+    text-align: right !important;
+}
+
+.align-h4-right .HyperMD-header-4 {
+    text-align: right !important;
+}
+
+.align-h4-center h4 {
+    text-align: center !important;
+}
+
+.align-h4-center .HyperMD-header-4 {
+    text-align: center !important;
+}
+
+.align-h4-left h4 {
+    text-align: left !important;
+}
+
+.align-h4-left .HyperMD-header-4 {
+    text-align: left !important;
+}
+
+.align-h5-right h5 {
+    text-align: right !important;
+}
+
+.align-h5-right .HyperMD-header-5 {
+    text-align: right !important;
+}
+
+.align-h5-center h5 {
+    text-align: center !important;
+}
+
+.align-h5-center .HyperMD-header-5 {
+    text-align: center !important;
+}
+
+.align-h5-left h5 {
+    text-align: left !important;
+}
+
+.align-h5-left .HyperMD-header-5 {
+    text-align: left !important;
+}
+
+.align-h6-right h6 {
+    text-align: right !important;
+}
+
+.align-h6-right .HyperMD-header-6 {
+    text-align: right !important;
+}
+
+.align-h6-center h6 {
+    text-align: center !important;
+}
+
+.align-h6-center .HyperMD-header-6 {
+    text-align: center !important;
+}
+
+.align-h6-left h6 {
+    text-align: left !important;
+}
+
+.align-h6-left .HyperMD-header-6 {
+    text-align: left !important;
+}
+
+h1,
+.markdown-rendered h1,
+h1 a,
+.markdown-rendered h1 a,
+h2,
+.markdown-rendered h2,
+h2 a,
+.markdown-rendered h2 a,
+h3,
+.markdown-rendered h3,
+h3 a,
+.markdown-rendered h3 a,
+h4,
+.markdown-rendered h4,
+h4 a,
+.markdown-rendered h4 a,
+h5,
+.markdown-rendered h5,
+h5 a,
+.markdown-rendered h5 a,
+h6,
+.markdown-rendered h6,
+h6 a,
+.markdown-rendered h6 a,
+.markdown-rendered p,
+.markdown-rendered code {
+    text-shadow: var(--text-shadow);
+}
+
+/* === Form === */
+
+.cm-html-embed td,
+.markdown-rendered td,
+.cm-html-embed th,
+.markdown-rendered th {
+    text-shadow: var(--printing-text-shadow) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+    position: relative;
+    text-shadow: var(--text-shadow) !important;
+}
+
+.titlebar-button {
+    border-radius: var(--border-radius);
+}
+
+/* === photo position === */
+
+.markdown-source-view [alt*="right"] {
+    float: right;
+    margin: 10px 10px 10px 20px;
+    border-radius: var(--border-radius);
+}
+
+.markdown-source-view [alt*="center"] {
+    display: block;
+    margin: 10px 20px 10px 20px;
+    border-radius: var(--border-radius);
+}
+
+.markdown-source-view [alt*="left"] {
+    float: left;
+    margin: 10px 20px 10px 10px;
+    border-radius: var(--border-radius);
+}
+
+
+img[alt*="right"] {
+    float: right;
+    margin: 0 0 0 30px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+img[alt*="center"] {
+    display: block;
+    margin: 0 30px 0 30px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+img[alt*="left"] {
+    float: left;
+    margin: 0 30px 0 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+/* === mermaid setiing === */
+
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .node path {
+    fill: light-dark(var(--light-background), var(--dark-background)) !important;
+    stroke: var(--color-base-50) !important;
+    stroke-width: 1px !important;
+}
+
+.mermaid .edgePath path {
+    stroke: var(--color-base-50) !important;
+}
+
+.edgeLabel p {
+    background-color: light-dark(var(--light-background), var(--dark-background)) !important;
+}
+
+.mermaid .label text,
+.mermaid span {
+    fill: light-dark(var(--light-background), var(--dark-background)) !important;
+    color: var(--color-base-100) !important;
+}
+
+.mermaid .flowchart-link {
+    stroke: var(--color-base-100) !important;
+}
+
+.mermaid .edge-thickness-normal {
+    stroke-width: 2px !important;
+}
+
+.mermaid .edge-pattern-solid {
+    stroke-dasharray: 3 !important;
+}
+
+.mermaid .marker path {
+    stroke: var(--color-base-100) !important;
+    fill: var(--color-base-100) !important;
+}
+
+
+/* === Unchange === */
+
+hr:not(.cm-editor hr) {
+    opacity: 0 !important;
+}
+
+.cm-editor img {
+    border-radius: var(--border-radius) !important;
+}
+
+.workspace-ribbon.mod-left:before,
+.side-dock-settings {
+    display: none !important;
+}
+
+.mod-left-split .mod-top-left-space .workspace-tab-header-container,
+.workspace-ribbon.side-dock-ribbon.mod-left,
+.workspace-tab-header-container-inner,
+.workspace-sidedock-vault-profile {
+    border: none !important;
+}
+
+.workspace,
+.workspace-split {
+    background: var(--background) !important;
+}
+
+body:not(.mod-macos) .sidebar-toggle-button.mod-left,
+.workspace-split.mod-vertical.mod-root,
+.mod-left-split .mod-top-left-space .workspace-tab-header-container,
+.workspace-ribbon.side-dock-ribbon.mod-left,
+.workspace-sidedock-vault-profile,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split,
+.mod-left-split .mod-top-left-space .workspace-tab-container .workspace-leaf {
+    background: var(--floating-background) !important;
+    border-radius: var(--border-radius) !important;
+    overflow: hidden !important;
+    box-shadow: var(--box-shadow);
+}
+
+#editingToolbarModalBar,
+.workspace-split.mod-vertical.mod-root .workspace-tabs.mod-top .workspace-tab-header-container,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header-container,
+.view-header,
+.view-content,
+.status-bar {
+    background: var(--floating-background) !important;
+}
+
+/*=== status bar hover position===*/
+.status-bar:hover {
+    box-shadow: var(--box-shadow-click) !important;
+}
+
+.status-bar {
+    background: var(--floating-background) !important;
+    border-radius: var(--border-radius) !important;
+    border-width: 1px;
+}
+
+.mod-fade:not(.mod-at-end):after {
+    background: linear-gradient(to right, transparent, var(--background));
+}
+
+.workspace,
+.workspace-tabs.mod-top.mod-top-left-space,
+.workspace-split {
+    gap: var(--gap);
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split {
+    gap: 0;
+}
+
+.workspace>*,
+.sidebar-toggle-button.mod-left,
+.mod-macos .sidebar-toggle-button.mod-right {
+    margin-block-start: var(--gap);
+}
+
+.workspace-ribbon.mod-left {
+    margin-block-start: calc(var(--header-height) + (var(--gap) * 2));
+}
+
+.horizontal-main-container .mod-right-split .workspace-tabs,
+.mod-right-split .workspace-tabs.mod-active,
+.mod-macos .sidebar-toggle-button.mod-left {
+    margin-block-start: 0;
+}
+
+.workspace-ribbon.mod-left,
+.workspace-sidedock-vault-profile {
+    margin-block-end: var(--gap);
+}
+
+.mod-right-split .mod-top-right-space .workspace-leaf-content .view-content {
+    margin-block-end: 0;
+}
+
+.is-mobile .workspace-drawer.mod-left {
+    margin-block-end: calc(var(--gap) * 2);
+    margin-block-start: calc(4rem - 5px);
+    padding-block-start: calc(var(--gap) * 0.5) !important;
+}
+
+.workspace-ribbon.mod-left,
+.sidebar-toggle-button.mod-left,
+body:not(.show-ribbon) .workspace-split.mod-horizontal.mod-sidedock.mod-left-split,
+body:not(.show-ribbon) .workspace:not(.is-left-sidedock-open) .workspace-split.mod-vertical.mod-root,
+.is-mobile .workspace-split.mod-vertical.mod-root {
+    margin-inline-start: var(--gap);
+}
+
+.mod-macos .sidebar-toggle-button.mod-left {
+    margin-inline-start: 0;
+}
+
+.workspace-split.mod-right-split,
+.mod-macos .sidebar-toggle-button.mod-right,
+.workspace:not(.is-right-sidedock-open) .workspace-split.mod-vertical.mod-root {
+    margin-inline-end: var(--gap);
+}
+
+body:not(.show-ribbon) .workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left {
+    margin: 0 !important;
+}
+
+.workspace-tabs.mod-top:not(.mod-top-right-space) .workspace-tab-header-container,
+.workspace-tabs.mod-top:not(.mod-top-right-space) .workspace-tab-header-container-inner,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header-container,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header-container-inner {
+    padding: 0 !important;
+    padding-inline: calc(1rem / 4) !important;
+    margin: 0 !important;
+}
+
+.workspace-tabs.mod-top .workspace-tab-header-container {
+    padding-inline-start: 0 !important;
+}
+
+.workspace-tabs.mod-top .workspace-tab-header-container-inner,
+.workspace-split.mod-vertical.mod-root .workspace-tab-header-container-inner {
+    padding-inline: 12px !important;
+    margin-block: 0 !important;
+}
+
+.workspace-split.mod-vertical.mod-root,
+.workspace-split.mod-horizontal.mod-sidedock.mod-right-split {
+    height: calc(100% - var(--gap) * 2);
+}
+
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split {
+    height: calc(100% - var(--gap) * 1);
+}
+
+.mod-left-split .mod-top-left-space .workspace-tab-container .workspace-leaf,
+.mod-right-split .mod-top-right-space .workspace-tab-container .workspace-leaf {
+    height: 100%;
+}
+
+.workspace-tab-header-new-tab,
+.sidebar-toggle-button,
+.workspace-tab-header-tab-list {
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+.workspace-tab-header-new-tab span,
+.workspace-tab-header-tab-list span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.workspace-split.mod-vertical.mod-root .workspace-tab-header-container-inner,
+.workspace,
+.workspace-tabs,
+.workspace-tab-container,
+.workspace-leaf,
+.workspace-leaf-content,
+.workspace-ribbon,
+.workspace-split,
+.view-header,
+.view-content {
+    overflow: var(--overflow) !important;
+}
+
+div[class^="div-scrollTo"] {
+    right: var(--gap) !important;
+}
+
+.div-scrollToBottom {
+    bottom: calc(var(--gap) * 4);
+}
+
+.div-scrollToTop {
+    bottom: calc(var(--gap) * 4 + var(--scroll-button-offset));
+}
+
+.div-scrollToCursor {
+    bottom: calc(var(--gap) * 4 + (var(--scroll-button-offset) * 2));
+}
+
+.status-bar {
+    right: calc(var(--gap) * 2) !important;
+    bottom: calc(var(--gap) * 2) !important;
+    box-shadow: var(--box-shadow);
+}
+
+.workspace-tab-header-inner {
+    padding-block: 0 !important;
+    margin-block: var(--header-padding);
+    height: calc(100% - (var(--header-padding) * 2));
+}
+
+.workspace-tab-header-container-inner {
+    padding-inline: var(--header-padding) !important;
+    border-bottom: none !important;
+}
+
+.workspace-tab-header.tappable.is-active {
+    margin-block-start: var(--header-padding);
+
+    .workspace-tab-header.tappable.is-active:not(.workspace-tabs.mod-top .workspace-tab-header.tappable.is-active),
+    .workspace-split.mod-left-split .workspace-tabs.mod-top-left-space .workspace-tab-header-container-inner .is-active {
+        margin-block-start: var(--header-padding);
+        height: calc(100% - (var(--header-padding) * 2));
+    }
+
+    .workspace-split.mod-right-split .workspace-tabs.mod-top-right-space .workspace-tab-header-container .workspace-tab-header-container-inner,
+    .workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header.tappable:not(.is-active) .workspace-tab-header-inner {
+        height: calc(100% - (var(--header-padding) * 1));
+        overflow: var(--overflow);
+    }
+
+    .workspace-tabs.mod-top .workspace-tab-header.tappable.is-active .workspace-tab-header-inner {
+        position: relative;
+        overflow: var(--overflow) !important;
+        isolation: isolate;
+    }
+
+    .workspace-tabs.mod-top .workspace-tab-header.tappable.is-active .workspace-tab-header-inner:before {
+        position: absolute;
+        content: '';
+        background: var(--background);
+        width: calc(100% + 16px);
+        height: 4px;
+        bottom: -12px;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .workspace-split.mod-horizontal.mod-sidedock.mod-left-split .workspace-tab-header-inner:before,
+    .workspace-split.mod-horizontal.mod-sidedock.mod-right-split .workspace-tab-header-inner:before {
+        display: none !important;
+    }
+}
+
+.mod-windows .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-active.mod-top.mod-top-right-space .workspace-tab-header-container {
+    padding-inline-end: calc(var(--size-4-2) + var(--frame-right-space)) !important;
+}

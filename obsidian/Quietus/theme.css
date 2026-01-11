@@ -1,0 +1,286 @@
+body {
+	/* 设置强调色 */
+	--accent-color: #8a5cf5;
+	/* 数字显示为等宽 */
+	font-variant-numeric: tabular-nums;
+}
+
+body.theme-light {
+	/* 设置文字背景高亮色 */
+	--text-highlight-bg: color-mix(
+		in srgb,
+		var(--accent-color) 25%,
+		transparent
+	);
+
+	--link-unresolved-opacity: 1;
+	--link-unresolved-color: var(--accent-color);
+
+	/* 设置行内代码块背景色 */
+	--quietus-inline-code-background: var(--text-highlight-bg);
+
+	--quietus-text-strong-color: #1a1a1a;
+	/* checkbox 勾上后对勾的颜色 */
+	--quietus-checkbox-checked-svg-bg-color: var(--text-normal);
+	/* checkbox 勾上后边框的颜色 */
+	--quietus-checkbox-checked-border-color: var(--checklist-done-color);
+	/* checkbox 勾上后悬停时的边框颜色 */
+	--quietus-checkbox-checked-hover-border-color: var(--checkbox-color-hover);
+}
+
+body.theme-dark {
+	/* 设置文字悬停颜色 */
+	--text-accent-hover: var(--text-normal);
+	/* 设置链接颜色 */
+	--link-color: var(--text-normal);
+	/* 设置外部链接颜色 */
+	--link-external-color: var(--text-normal);
+
+	/* 黑色模式下用更明亮的颜色表示这是无效链接 */
+	--link-unresolved-opacity: 1;
+	--link-unresolved-filter: brightness(120%);
+	--link-unresolved-color: var(--accent-color);
+	/* 选择文本后的颜色 */
+	--text-selection: color-mix(in srgb, var(--text-normal) 10%, transparent);
+
+	/* 设置文字背景高亮色 */
+	--text-highlight-bg: color-mix(
+		in srgb,
+		var(--accent-color) 45%,
+		transparent
+	);
+
+	/* 设置行内代码块背景色 */
+	--quietus-inline-code-background: var(--text-highlight-bg);
+
+	/* checkbox 勾上后对勾的颜色 */
+	--quietus-checkbox-checked-svg-bg-color: var(--text-normal);
+	/* checkbox 勾上后边框的颜色 */
+	--quietus-checkbox-checked-border-color: var(--checklist-done-color);
+	/* checkbox 勾上后悬停时的边框颜色 */
+	--quietus-checkbox-checked-hover-border-color: var(--text-normal);
+}
+
+/*un-wrap codeblock*/
+.HyperMD-codeblock {
+	white-space: nowrap;
+}
+
+/* 设置内部链接样式 */
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline {
+	text-decoration: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline::before {
+	content: "↪ ";
+}
+
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link:hover,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline:hover {
+	text-decoration: none !important;
+	background: linear-gradient(transparent 50%, var(--text-highlight-bg) 50%);
+}
+
+/* 设置外部链接样式 */
+.markdown-source-view.mod-cm6 .cm-url {
+	font-family: var(--font-monospace);
+}
+
+.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
+	color: var(--accent-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-strong {
+	color: var(--accent-color);
+}
+
+/* 设置 checkbox 样式 */
+input[type="checkbox"]:checked {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: var(--quietus-checkbox-checked-border-color);
+}
+
+input[type="checkbox"]:checked::after {
+	background-color: var(--quietus-checkbox-checked-svg-bg-color);
+	-webkit-mask-image: url("data:image/svg+xml; utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='10'><path fill='black' fill-rule='evenodd' d='M10.28.22a.75.75 0 0 1 .073 1.058l-5.5 6.5a.75.75 0 0 1-1.13.02L1.22 5.28a.75.75 0 1 1 1.06-1.06L4.3 6.19l4.95-5.85A.75.75 0 0 1 10.28.22Z'/></svg>");
+	-webkit-mask-size: 65%;
+	-webkit-mask-position: 50% 60%;
+	-webkit-mask-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked:hover {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: var(--quietus-checkbox-checked-hover-border-color);
+}
+
+/* 设置侧边栏 */
+.mod-sidedock.mod-left-split {
+	z-index: var(--layer-sidedock);
+}
+
+body:not(.is-mobile)
+	.workspace-split.mod-left-split
+	.workspace-sidedock-vault-profile {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	flex-direction: column;
+	width: var(--ribbon-width);
+	border-top: none;
+	/* border-right: var(--tab-outline-width) solid var(--tab-outline-color); */
+
+	.workspace-drawer-vault-actions {
+		display: contents;
+	}
+
+	.workspace-drawer-vault-name {
+		display: none;
+	}
+}
+
+/* command + f 搜索匹配关键字高亮样式 */
+.cm-s-obsidian span.obsidian-search-match-highlight {
+	background-color: var(--text-highlight-bg);
+	box-shadow: none;
+	border-radius: 0;
+}
+
+/* 内联代码样式 */
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+	background-color: var(--quietus-inline-code-background);
+}
+
+/* 滚动条样式 */
+* {
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+		border-radius: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var(--scrollbar-thumb-bg);
+		border-radius: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: var(--scrollbar-thumb-bg-hover);
+	}
+
+	&::-webkit-scrollbar-corner {
+		background: transparent;
+	}
+}
+
+/* 标题样式 */
+.cm-s-obsidian {
+	/* 图片样式（限定在 .cm-s-obsidian 内） */
+	/* 提高选择器特异性以覆盖 Obsidian 默认样式 */
+	&.markdown-source-view.mod-cm6 .cm-content > img {
+		margin: auto !important;
+		transition: transform 0.5s ease, box-shadow 0.5s ease;
+		max-width: 100%;
+		max-height: 600px; /* 设置最大高度，宽度会自动等比缩放 */
+		height: auto; /* 保持宽高比 */
+		width: auto; /* 保持宽高比 */
+		object-fit: contain; /* 确保图片完整显示 */
+		&:hover {
+			transform: scale(1.005);
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		}
+	}
+
+	/* 图片嵌入容器居中（如 .internal-embed.media-embed.image-embed） */
+	.internal-embed.media-embed.image-embed {
+		/* display: block; */
+		margin: auto !important;
+		/* 仅作为裁剪容器，不限制内部尺寸和效果 */
+		overflow: hidden;
+		/* 与 .cm-content > img 保持一致的阴影过渡节奏 */
+		transition: box-shadow 0.5s ease;
+
+		/* 当内部图片悬停时，由容器显示阴影，避免被裁剪 */
+		&:has(img:hover) {
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		}
+
+		/* 容器内图片同样保持居中和悬停效果 */
+		img {
+			display: block;
+			margin: auto !important;
+			max-width: 100%;
+			max-height: 600px; /* 设置最大高度，宽度会自动等比缩放 */
+			height: auto; /* 保持宽高比 */
+			width: auto; /* 保持宽高比 */
+			object-fit: contain; /* 确保图片完整显示 */
+			/* 与 .cm-content > img 保持一致的过渡设置 */
+			transition: transform 0.5s ease, box-shadow 0.5s ease;
+			&:hover {
+				transform: scale(1.005);
+			}
+		}
+	}
+
+	/* 通用 before 样式 */
+	:is(
+			h1,
+			.HyperMD-header-1,
+			h2,
+			.HyperMD-header-2,
+			h3:not(.svelte-1vwr9dd),
+			.HyperMD-header-3,
+			h4,
+			.HyperMD-header-4,
+			h5,
+			.HyperMD-header-5,
+			h6,
+			.HyperMD-header-6
+		)::before {
+		font-size: 10px;
+		margin-left: -13px;
+		margin-right: 1px;
+	}
+
+	/* 通过标题前缀来区分标题级别，所以这里统一标题文字大小 */
+	.HyperMD-header {
+		font-size: 24px;
+	}
+
+	/* 设置标题前缀 */
+	:is(h1, .HyperMD-header-1)::before {
+		content: "H1";
+	}
+	:is(h2, .HyperMD-header-2)::before {
+		content: "H2";
+	}
+	:is(h3:not(.svelte-1vwr9dd), .HyperMD-header-3)::before {
+		content: "H3";
+	}
+	:is(h4, .HyperMD-header-4)::before {
+		content: "H4";
+	}
+	:is(h5, .HyperMD-header-5)::before {
+		content: "H5";
+	}
+	:is(h6, .HyperMD-header-6)::before {
+		content: "H6";
+	}
+
+	.HyperMD-header {
+		/* 调整标题的上下间距 */
+		padding-inline-start: 0 !important;
+		padding-top: 5px !important;
+		/* 设置标题底部线条 */
+		border-bottom: dashed 0.5px;
+
+		/* 隐藏折叠指示器 */
+		.cm-fold-indicator {
+			display: none;
+		}
+	}
+}
