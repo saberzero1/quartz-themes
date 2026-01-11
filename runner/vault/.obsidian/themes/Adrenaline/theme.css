@@ -796,7 +796,7 @@ div[data-path$='000_attachments_000'] + div.nav-folder-children
 
 /*////////////////////////////////////////////////////////////////////////////// SETTINGS & BUTTONS //////////////////////////////////////////////////////////////////////////////*/
 /*=========================================== buttons general styling ===================================================*/
-.clickable-icon:not(.input-right-decorator.clickable-icon) {
+.clickable-icon:not(.input-right-decorator.clickable-icon):not(.modal-close-button):not(.graph-controls-button) {
     position: relative;
     --text-color: var(--colored-accent-i1) !important;
     background-color: var(--background-6);
@@ -1343,7 +1343,7 @@ body:not(.tv1) .cm-embed-block.cm-callout:hover {
 body:not(.tv1) .callout-title {
     position: relative;
     color: var(--colored-accent-i1);
-    background: var(--colored-accent-1);
+    background: var(--colored-accent-2);
     border-bottom: 2px solid rgba(0, 0, 0, 0.251);
     border-radius: 5px;
 }
@@ -1442,7 +1442,8 @@ tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radi
 .workspace-tab-header.tappable:before,
 .workspace-tab-header.tappable:after,
 .workspace-tab-header-inner:after,
-.workspace-tab-header-container:before {
+.workspace-tab-header-container:before,
+.graph-color-button-container .mod-cta:before {
     display: none !important;
 }
 
@@ -1470,8 +1471,9 @@ tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radi
 }
 
 
-.modal.mod-publish .mod-cta:before {
-    display: none;
+
+.modal.mod-publish .mod-cta:before, .community-modal-button-container .mod-cta:before{
+    display: none !important;
 }
 /*================= MACOS ==================*/
 body.mod-macos .workspace-tabs.mod-top.mod-top-left-space .workspace-tab-header-container {
