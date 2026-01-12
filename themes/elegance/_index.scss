@@ -166,7 +166,7 @@
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgb(227, 0, 106) !important;
-  --collapse-icon-color-collapsed: rgb(235, 118, 0) !important;
+  --collapse-icon-color-collapsed: rgb(196 98 0) !important;
   --color-accent: rgb(138, 92, 245) !important;
   --color-accent-1: rgb(153, 115, 247) !important;
   --color-accent-2: rgb(166, 139, 249) !important;
@@ -313,7 +313,7 @@
   --graph-line: #d4d4d4 !important;
   --graph-node: rgb(0, 0, 0) !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: rgb(235, 118, 0) !important;
+  --graph-node-focused: rgb(196 98 0) !important;
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: rgb(227, 0, 106) !important;
   --graph-text: rgb(6, 6, 6) !important;
@@ -360,7 +360,7 @@
   --hr-color: rgb(67, 67, 67) !important;
   --hr-thickness: 2px !important;
   --icon-color: rgb(0, 0, 0) !important;
-  --icon-color-active: rgb(235, 118, 0) !important;
+  --icon-color-active: rgb(196 98 0) !important;
   --icon-color-focused: rgb(6, 6, 6) !important;
   --icon-color-hover: rgb(0, 0, 0) !important;
   --icon-l: 18px !important;
@@ -427,17 +427,17 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(235, 118, 0) !important;
+  --link-color: rgb(196 98 0) !important;
   --link-color-hover: rgb(0, 184, 225) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(235, 118, 0) !important;
+  --link-external-color: rgb(196 98 0) !important;
   --link-external-color-hover: rgb(0, 184, 225) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(235, 118, 0) !important;
+  --link-unresolved-color: rgb(196 98 0) !important;
   --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -452,7 +452,7 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: rgb(227, 0, 106) !important;
-  --list-marker-color-collapsed: rgb(235, 118, 0) !important;
+  --list-marker-color-collapsed: rgb(196 98 0) !important;
   --list-marker-color-hover: rgb(0, 0, 0) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -541,7 +541,7 @@
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgb(0, 0, 0) !important;
   --nav-item-color-active: rgb(6, 6, 6) !important;
-  --nav-item-color-highlighted: rgb(235, 118, 0) !important;
+  --nav-item-color-highlighted: rgb(196 98 0) !important;
   --nav-item-color-hover: rgb(6, 6, 6) !important;
   --nav-item-color-selected: rgb(6, 6, 6) !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
@@ -575,7 +575,7 @@
   --pill-color: rgb(0, 0, 0) !important;
   --pill-color-hover: rgb(6, 6, 6) !important;
   --pill-color-remove: rgb(227, 0, 106) !important;
-  --pill-color-remove-hover: rgb(235, 118, 0) !important;
+  --pill-color-remove-hover: rgb(196 98 0) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -705,7 +705,7 @@
   --tab-text-color-focused: rgb(0, 0, 0) !important;
   --tab-text-color-focused-active: rgb(0, 0, 0) !important;
   --tab-text-color-focused-active-current: rgb(6, 6, 6) !important;
-  --tab-text-color-focused-highlighted: rgb(235, 118, 0) !important;
+  --tab-text-color-focused-highlighted: rgb(196 98 0) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: rgb(67, 67, 67) !important;
@@ -747,15 +747,15 @@
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(235, 118, 0) !important;
-  --tag-color-hover: rgb(235, 118, 0) !important;
+  --tag-color: rgb(196 98 0) !important;
+  --tag-color-hover: rgb(196 98 0) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(235, 118, 0) !important;
+  --text-accent: rgb(196 98 0) !important;
   --text-accent-hover: rgb(0, 184, 225) !important;
   --text-error: rgb(255, 0, 55) !important;
   --text-faint: rgb(227, 0, 106) !important;
@@ -802,16 +802,8 @@
   --text-error-hover: rgb(232, 0, 0) !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5) !important;
   --pre-code: rgba(0, 0, 0, 0.044) !important;
-  --green: #50fa7b !important;
-  --orange: #ffb86c !important;
-  --purple: #bd93f9 !important;
-  --red: #ff5555 !important;
-  --yellow: #f1fa8c !important;
   --interactive-success: rgb(25, 115, 0) !important;
   --text-highlight-bg-active: rgba(255, 255, 50, 0.4) !important;
-  --blue: #6495ed !important;
-  --pink: #ff79c6 !important;
-  --cyan: #8be9fd !important;
   --font-size-code: 15px !important;
   --font-size-h1: 23px !important;
   --font-size-h2: 22px !important;
@@ -823,17 +815,15 @@
   --font-size-side-dock: 15px !important;
   --font-size-side-dock-title: 16px !important;
   --font-size-status-bar: 13.75px !important;
-  --cards-background: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 150px !important;
-  --cards-mobile-width: 150px !important;
-  --cards-padding: 1.2em !important;
+  --embed-border-radius: 10px !important;
   --callout-color: rgba(103, 161, 149, 0.459) !important;
-  --red-rgb: 255, 85, 85 !important;
+  --callout-margin: 0px 5px !important;
   --external-link: rgb(96, 123, 4) !important;
-  --checkbox-icon: 20px !important;
+  --callout-gap: 1em !important;
+  --callout-min-width: 200px !important;
+  --col-rule-color: rgb(67, 67, 67) !important;
+  --col-rule-width: 1px !important;
+  --list-min-width: 200px !important;
   --animation: 200ms !important;
   --arrow1: rgba(211, 211, 211, 0.852) !important;
   --bg-blue: rgba(9, 168, 225, 0.45) !important;
@@ -846,30 +836,51 @@
   --bg-orange2: rgba(255, 132, 0, 0.85) !important;
   --bg-purple: rgba(150, 8, 220, 0.4) !important;
   --bg-purple2: rgba(150, 8, 220, 0.8) !important;
-  --blue-rgb: 98, 114, 164 !important;
-  --cards-border-width: 1px !important;
-  --checkbox-left: 0px !important;
-  --checkbox-margin: 0px 6px 0px -1.35em !important;
-  --checkbox-size2: 17px !important;
-  --checkbox-top: 2px !important;
+  --callout-nowrap-min-width: 250px !important;
   --color-pink-list: rgb(255, 192, 227) !important;
   --color-pink-list2: rgb(255, 137, 202) !important;
   --color-pink-list3: rgb(255, 119, 194) !important;
-  --cyan-rgb: 139, 233, 253 !important;
   --fbold: rgb(55, 0, 0) !important;
   --fcolor-header: rgb(0, 0, 0) !important;
   --fitalic: rgb(55, 0, 0) !important;
-  --green-rgb: 80, 250, 123 !important;
-  --orange-rgb: 255, 184, 108 !important;
-  --pink-rgb: 255, 121, 198 !important;
-  --purple-rgb: 189, 147, 249 !important;
+  --float-callout-bottom-margin: 0em !important;
+  --float-callout-snw-display: none !important;
+  --float-callout-top-margin: 0em !important;
+  --float-large-width: 600px !important;
+  --float-left-callout-margin: 0 15px 0 0 !important;
+  --float-left-callout-margin-inline: 0 12px !important;
+  --float-medium-width: 400px !important;
+  --float-right-callout-margin: 0 0 0 15px !important;
+  --float-right-callout-margin-inline: 12px 0 !important;
+  --float-small-width: 300px !important;
+  --float-snw-display: none !important;
+  --fluro-blue-rgb: 0, 255, 255 !important;
+  --fluro-pink-rgb: 255, 0, 255 !important;
+  --list-grid-min-width: 250px !important;
+  --list-grid-wide-min-width: 350px !important;
+  --mcc-img-snw-display: none !important;
+  --mcl-card-bg-color: rgb(247 245 244) !important;
+  --mcl-card-border-color: rgb(67, 67, 67) !important;
+  --mcl-card-border-width: 1px !important;
+  --mcl-card-gap: 0.2em !important;
+  --mcl-card-header-border-width: 1px !important;
   --quote-bg: rgba(164, 164, 160, 0.15) !important;
   --signature: "֎" !important;
   --tab-text-nofocus: rgba(0, 0, 0, 0.6) !important;
   --table-border-radius: 5px !important;
   --text-antinormal: white !important;
+  --text-highlight-rgb: 255, 212, 0 !important;
   --text-muted2: rgb(123, 123, 123) !important;
-  --yellow-rgb: 241, 250, 140 !important;
+  --zotero-black-dark-rgb: 255, 255, 255 !important;
+  --zotero-black-light-rgb: 0, 0, 0 !important;
+  --zotero-blue-rgb: 46, 168, 229 !important;
+  --zotero-gray-rgb: 170, 170, 170 !important;
+  --zotero-green-rgb: 95, 178, 54 !important;
+  --zotero-magenta-rgb: 229, 110, 238 !important;
+  --zotero-orange-rgb: 241, 152, 55 !important;
+  --zotero-purple-rgb: 162, 138, 229 !important;
+  --zotero-red-rgb: 255, 102, 102 !important;
+  --zotero-yellow-rgb: 255, 212, 0 !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1667,16 +1678,8 @@
   --text-error-hover: rgba(255, 0, 0, 0.466) !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5) !important;
   --pre-code: rgba(255, 255, 255, 0.064) !important;
-  --green: #50fa7b !important;
-  --orange: #ffb86c !important;
-  --purple: #bd93f9 !important;
-  --red: #ff5555 !important;
-  --yellow: #f1fa8c !important;
   --interactive-success: rgb(25, 115, 0) !important;
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --blue: #6495ed !important;
-  --pink: #ff79c6 !important;
-  --cyan: #8be9fd !important;
   --font-size-code: 15px !important;
   --font-size-h1: 23px !important;
   --font-size-h2: 22px !important;
@@ -1688,17 +1691,15 @@
   --font-size-side-dock: 15px !important;
   --font-size-side-dock-title: 16px !important;
   --font-size-status-bar: 13.75px !important;
-  --cards-background: transparent !important;
-  --cards-image-fit: contain !important;
-  --cards-image-height: 400px !important;
-  --cards-max-width: 1fr !important;
-  --cards-min-width: 150px !important;
-  --cards-mobile-width: 150px !important;
-  --cards-padding: 1.2em !important;
+  --embed-border-radius: 10px !important;
   --callout-color: rgba(103, 161, 149, 0.459);
-  --red-rgb: 255, 85, 85 !important;
-  --external-link: rgb(255, 231, 194) !important;
-  --checkbox-icon: 20px !important;
+  --callout-margin: 0px 5px;
+  --external-link: rgb(255, 219, 180) !important;
+  --callout-gap: 1em;
+  --callout-min-width: 200px;
+  --col-rule-color: rgb(102, 102, 102) !important;
+  --col-rule-width: 1px !important;
+  --list-min-width: 200px !important;
   --animation: 200ms !important;
   --arrow1: rgba(99, 99, 99, 0.687) !important;
   --bg-blue: rgba(29, 174, 226, 0.4) !important;
@@ -1711,30 +1712,51 @@
   --bg-orange2: rgb(255, 145, 18) !important;
   --bg-purple: rgba(165, 26, 234, 0.4) !important;
   --bg-purple2: rgb(180, 37, 252) !important;
-  --blue-rgb: 98, 114, 164 !important;
-  --cards-border-width: 1px !important;
-  --checkbox-left: 0px !important;
-  --checkbox-margin: 0px 6px 0px -1.35em !important;
-  --checkbox-size2: 17px !important;
-  --checkbox-top: 2px !important;
+  --callout-nowrap-min-width: 250px;
   --color-pink-list: rgb(255, 192, 227) !important;
   --color-pink-list2: rgb(255, 137, 202) !important;
   --color-pink-list3: rgb(255, 119, 194) !important;
-  --cyan-rgb: 139, 233, 253 !important;
   --fbold: rgb(255, 251, 200) !important;
   --fcolor-header: white !important;
   --fitalic: rgb(255, 251, 200) !important;
-  --green-rgb: 80, 250, 123 !important;
-  --orange-rgb: 255, 184, 108 !important;
-  --pink-rgb: 255, 121, 198 !important;
-  --purple-rgb: 189, 147, 249 !important;
+  --float-callout-bottom-margin: 0em !important;
+  --float-callout-snw-display: none !important;
+  --float-callout-top-margin: 0em !important;
+  --float-large-width: 600px !important;
+  --float-left-callout-margin: 0 15px 0 0 !important;
+  --float-left-callout-margin-inline: 0 12px !important;
+  --float-medium-width: 400px !important;
+  --float-right-callout-margin: 0 0 0 15px !important;
+  --float-right-callout-margin-inline: 12px 0 !important;
+  --float-small-width: 300px !important;
+  --float-snw-display: none !important;
+  --fluro-blue-rgb: 0, 255, 255 !important;
+  --fluro-pink-rgb: 255, 0, 255 !important;
+  --list-grid-min-width: 250px !important;
+  --list-grid-wide-min-width: 350px !important;
+  --mcc-img-snw-display: none !important;
+  --mcl-card-bg-color: rgb(39, 38, 47) !important;
+  --mcl-card-border-color: rgb(102, 102, 102) !important;
+  --mcl-card-border-width: 1px !important;
+  --mcl-card-gap: 0.2em !important;
+  --mcl-card-header-border-width: 1px !important;
   --quote-bg: rgba(77, 74, 75, 0.7) !important;
   --signature: "֎" !important;
   --tab-text-nofocus: rgba(255, 255, 255, 0.7) !important;
   --table-border-radius: 5px !important;
   --text-antinormal: black !important;
+  --text-highlight-rgb: 255, 212, 0 !important;
   --text-muted2: rgb(255, 255, 255) !important;
-  --yellow-rgb: 241, 250, 140 !important;
+  --zotero-black-dark-rgb: 255, 255, 255 !important;
+  --zotero-black-light-rgb: 0, 0, 0 !important;
+  --zotero-blue-rgb: 46, 168, 229 !important;
+  --zotero-gray-rgb: 170, 170, 170 !important;
+  --zotero-green-rgb: 95, 178, 54 !important;
+  --zotero-magenta-rgb: 229, 110, 238 !important;
+  --zotero-orange-rgb: 241, 152, 55 !important;
+  --zotero-purple-rgb: 162, 138, 229 !important;
+  --zotero-red-rgb: 255, 102, 102 !important;
+  --zotero-yellow-rgb: 255, 212, 0 !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1807,7 +1829,7 @@ body {
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(96, 123, 4), rgb(255, 231, 194));
+    color: light-dark(rgb(96, 123, 4), rgb(255, 219, 180));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1824,8 +1846,8 @@ body {
       sans-serif;
     font-weight: 500;
     outline: inherit;
-    text-decoration: none solid rgb(255, 231, 194);
-    text-decoration-color: light-dark(rgb(96, 123, 4), rgb(255, 231, 194));
+    text-decoration: none solid rgb(255, 219, 180);
+    text-decoration-color: light-dark(rgb(96, 123, 4), rgb(255, 219, 180));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1836,7 +1858,7 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(235, 118, 0), rgb(248, 173, 93));
+    color: light-dark(rgb(0, 184, 225), rgb(139, 233, 253));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1853,9 +1875,9 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(248, 173, 93);
-    text-decoration-color: light-dark(rgb(235, 118, 0), rgb(248, 173, 93));
-    text-decoration-line: none;
+    text-decoration: underline solid rgb(139, 233, 253);
+    text-decoration-color: light-dark(rgb(0, 184, 225), rgb(139, 233, 253));
+    text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
@@ -1864,7 +1886,7 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(235, 118, 0), rgb(248, 173, 93));
+    color: light-dark(rgb(196, 98, 0), rgb(248, 173, 93));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1882,7 +1904,7 @@ body {
     font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(248, 173, 93);
-    text-decoration-color: light-dark(rgb(235, 118, 0), rgb(248, 173, 93));
+    text-decoration-color: light-dark(rgb(196, 98, 0), rgb(248, 173, 93));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1994,7 +2016,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 650;
+    font-weight: 450;
     outline: inherit;
     text-decoration: none solid rgb(255, 251, 200);
     text-decoration-color: light-dark(rgb(55, 0, 0), rgb(255, 251, 200));
@@ -2023,7 +2045,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 650;
+    font-weight: 450;
     outline: inherit;
     text-decoration: none solid rgb(255, 251, 200);
     text-decoration-color: light-dark(rgb(55, 0, 0), rgb(255, 251, 200));
@@ -2035,11 +2057,8 @@ body {
   }
 
   .text-highlight {
-    background-color: light-dark(
-      rgba(117, 0, 0, 0.294),
-      rgba(255, 255, 0, 0.698)
-    );
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     cursor: text;
     filter: none;
     font-family:
@@ -2054,10 +2073,10 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 450;
     outline: inherit;
-    text-decoration: none solid rgb(0, 0, 0);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-decoration: none solid rgb(255, 255, 255);
+    text-decoration-color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2082,7 +2101,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
+    font-weight: 450;
     outline: inherit;
     text-decoration: line-through solid rgb(255, 255, 255);
     text-decoration-color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
@@ -2206,7 +2225,7 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(235, 118, 0), rgb(248, 173, 93));
+    color: light-dark(rgb(196, 98, 0), rgb(248, 173, 93));
   }
 
   ul > li {
@@ -2354,9 +2373,9 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
-    text-decoration: line-through solid rgb(255, 255, 255);
-    text-decoration-color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
+    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+    text-decoration: line-through 3px solid rgba(255, 255, 255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
   }
 
   blockquote {
@@ -2386,7 +2405,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(235, 118, 0), rgb(248, 173, 93));
+    color: light-dark(rgb(196, 98, 0), rgb(248, 173, 93));
     text-decoration: none solid rgb(248, 173, 93);
   }
 
@@ -2670,7 +2689,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -2709,7 +2728,7 @@ body {
       rgba(8, 109, 221, 0.3),
       rgba(2, 122, 255, 0.3)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -2724,7 +2743,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(255, 255, 255);
   }
 
   .callout[data-callout="abstract"] {
@@ -2733,7 +2752,7 @@ body {
       rgba(0, 191, 188, 0.3),
       rgba(83, 223, 221, 0.3)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -2754,7 +2773,7 @@ body {
   .callout[data-callout="info"] {
     --callout-color: inherit;
     background-color: rgba(0, 184, 212, 0.3);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(0, 184, 212, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2774,7 +2793,7 @@ body {
   .callout[data-callout="todo"] {
     --callout-color: inherit;
     background-color: rgba(0, 184, 212, 0.3);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(0, 184, 212, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2797,7 +2816,7 @@ body {
       rgba(0, 191, 188, 0.3),
       rgba(83, 223, 221, 0.3)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -2821,7 +2840,7 @@ body {
       rgba(8, 185, 78, 0.3),
       rgba(68, 207, 110, 0.3)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
     border-top-left-radius: 4px;
@@ -2845,7 +2864,7 @@ body {
       rgba(236, 117, 0, 0.3),
       rgba(233, 151, 63, 0.3)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
@@ -2869,7 +2888,7 @@ body {
       rgba(236, 117, 0, 0.3),
       rgba(233, 151, 63, 0.3)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
@@ -2917,7 +2936,7 @@ body {
       rgba(233, 49, 71, 0.3),
       rgba(251, 70, 76, 0.3)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 4px;
@@ -2980,7 +2999,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(248, 173, 93);
+    stroke: rgb(255, 255, 255);
   }
 
   .callout[data-callout="quote"] {
@@ -3031,11 +3050,11 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 20px 242.75px;
-    margin-block-end: 20px;
+    margin: 20px 213.844px 0px 213.828px;
+    margin-block-end: 0px;
     margin-block-start: 20px;
-    margin-inline-end: 242.75px;
-    margin-inline-start: 242.75px;
+    margin-inline-end: 213.844px;
+    margin-inline-start: 213.828px;
   }
 
   thead {
@@ -3118,7 +3137,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3127,17 +3146,17 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
+    margin: 22px auto 25px;
+    margin-block-end: 25px;
+    margin-block-start: 22px;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
   }
 
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3155,7 +3174,7 @@ body {
   }
 
   figcaption {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3185,7 +3204,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3203,7 +3222,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3375,7 +3394,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3401,8 +3420,8 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+    color: light-dark(rgb(6, 6, 6), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3415,7 +3434,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border: 1px solid light-dark(rgb(67, 67, 67), rgb(102, 102, 102));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -3429,7 +3448,7 @@ body {
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3448,7 +3467,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -3475,15 +3494,15 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(230, 229, 224), rgb(73, 76, 95));
     box-shadow: none;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
     font-size: 14px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3504,7 +3523,7 @@ body {
   }
 
   dt {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -3514,7 +3533,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3524,21 +3543,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-size: 13.3333px;
-    vertical-align: super;
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
+    font-size: 12px;
+    vertical-align: top;
   }
 
   abbr {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(255, 255, 255);
     text-decoration-style: dotted;
   }
 
@@ -3696,14 +3715,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     font-size: 16px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: light-dark(rgb(6, 6, 6), rgb(255, 255, 255));
     font-weight: inherit;
     text-transform: inherit;
   }

@@ -1778,7 +1778,7 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(171, 171, 171), rgb(128, 128, 128));
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1797,9 +1797,9 @@ body {
       sans-serif;
     font-weight: 700;
     outline: inherit;
-    text-decoration: underline 13% solid rgb(128, 128, 128);
-    text-decoration-color: light-dark(rgb(171, 171, 171), rgb(128, 128, 128));
-    text-decoration-line: underline;
+    text-decoration: none 13% solid rgb(138, 92, 245);
+    text-decoration-color: light-dark(rgb(166, 138, 249), rgb(138, 92, 245));
+    text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
@@ -1948,7 +1948,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(95, 95, 95);
     text-decoration-color: light-dark(rgb(112, 112, 112), rgb(95, 95, 95));
@@ -1979,7 +1979,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(95, 95, 95);
     text-decoration-color: light-dark(rgb(112, 112, 112), rgb(95, 95, 95));
@@ -2674,7 +2674,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(128, 128, 128);
   }
 
   .callout[data-callout="abstract"] {
@@ -2932,7 +2932,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(189, 189, 189);
+    stroke: rgb(128, 128, 128);
   }
 
   .callout[data-callout="quote"] {
@@ -2985,8 +2985,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -3072,7 +3072,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3091,7 +3091,7 @@ body {
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3109,8 +3109,10 @@ body {
   }
 
   figcaption {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     font-family:
+      "Space Grotesk",
+      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3139,7 +3141,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3157,7 +3159,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3329,7 +3331,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3355,9 +3357,11 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     font-family:
+      "Space Grotesk",
+      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3369,7 +3373,8 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border: 0px light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
+    border-bottom: 1px solid light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -3383,7 +3388,7 @@ body {
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3402,7 +3407,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -3429,15 +3434,12 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
-    font-size: 14px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(255, 255, 255);
+    font-family: "Source Code Pro", monospace;
+    font-size: 12px;
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3446,7 +3448,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    padding: 1.4px 3.5px;
+    padding: 0px 4px;
   }
 
   dl {
@@ -3458,7 +3460,7 @@ body {
   }
 
   dt {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -3468,7 +3470,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3478,21 +3480,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(189, 189, 189);
     text-decoration-style: dotted;
   }
 
@@ -3650,14 +3652,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     font-size: 16px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: light-dark(rgb(90, 90, 90), rgb(189, 189, 189));
     font-weight: inherit;
     text-transform: inherit;
   }

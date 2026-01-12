@@ -34,14 +34,14 @@
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #44cf6e !important;
   --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: #1e1e1e !important;
-  --background-primary-alt: #242424 !important;
-  --background-secondary: #262626 !important;
-  --background-secondary-alt: #363636 !important;
-  --bases-cards-background: #1e1e1e !important;
+  --background-primary: #000000 !important;
+  --background-primary-alt: #000000 !important;
+  --background-secondary: #000000 !important;
+  --background-secondary-alt: #000000 !important;
+  --bases-cards-background: #000000 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #242424 !important;
+  --bases-cards-cover-background: #000000 !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
@@ -51,7 +51,7 @@
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #b3b3b3 !important;
+  --bases-group-heading-property-color: #dadada !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -62,24 +62,24 @@
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
   --bases-table-border-color: #363636 !important;
-  --bases-table-cell-background-active: #1e1e1e !important;
-  --bases-table-cell-background-disabled: #242424 !important;
+  --bases-table-cell-background-active: #000000 !important;
+  --bases-table-cell-background-disabled: #000000 !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px #6f6f6f !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #242424 !important;
+  --bases-table-group-background: #000000 !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #1e1e1e !important;
+  --bases-table-header-background: #000000 !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --bases-table-header-color: #b3b3b3 !important;
+  --bases-table-header-color: #dadada !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -90,12 +90,12 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #1e1e1e !important;
+  --bases-table-summary-background: #000000 !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(138, 92, 245) !important;
+  --blockquote-border-color: #6f6f6f !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -125,8 +125,8 @@
   --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
-  --canvas-background: #1e1e1e !important;
-  --canvas-card-label-color: #666666 !important;
+  --canvas-background: #000000 !important;
+  --canvas-card-label-color: #dadada !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 251, 70, 76 !important;
   --canvas-color-2: 233, 151, 63 !important;
@@ -135,38 +135,38 @@
   --canvas-color-5: 83, 223, 221 !important;
   --canvas-color-6: 168, 130, 255 !important;
   --canvas-dot-pattern: #363636 !important;
-  --caret-color: #dadada !important;
-  --checkbox-border-color: #666666 !important;
-  --checkbox-border-color-hover: #b3b3b3 !important;
-  --checkbox-color: rgb(138, 92, 245) !important;
+  --caret-color: #c0c1a1 !important;
+  --checkbox-border-color: #dadada !important;
+  --checkbox-border-color-hover: #dadada !important;
+  --checkbox-color: #6f6f6f !important;
   --checkbox-color-hover: rgb(166, 139, 249) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #1e1e1e !important;
+  --checkbox-marker-color: #000000 !important;
   --checkbox-radius: 4px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #b3b3b3 !important;
+  --checklist-done-color: #dadada !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: #242424 !important;
+  --code-background: #000000 !important;
   --code-border-color: #363636 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: #666666 !important;
+  --code-comment: #dadada !important;
   --code-function: #e0de71 !important;
   --code-important: #e9973f !important;
   --code-keyword: #fa99cd !important;
-  --code-normal: #dadada !important;
+  --code-normal: #fb6666 !important;
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
-  --code-punctuation: #b3b3b3 !important;
+  --code-punctuation: #dadada !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #44cf6e !important;
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #666666 !important;
-  --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
+  --collapse-icon-color: #dadada !important;
+  --collapse-icon-color-collapsed: #ffdf22 !important;
   --color-accent: rgb(138, 92, 245) !important;
   --color-accent-1: rgb(166, 139, 249) !important;
   --color-accent-2: rgb(197, 182, 252) !important;
@@ -207,7 +207,7 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #363636 !important;
-  --divider-color-hover: rgb(138, 92, 245) !important;
+  --divider-color-hover: #6f6f6f !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -223,7 +223,7 @@
     0 0 0 1px #363636, inset 0 0 0 1px #363636 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(138, 92, 245) !important;
+  --embed-border-start: 2px solid #6f6f6f !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -240,7 +240,7 @@
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
   --flair-background: #363636 !important;
-  --flair-color: #dadada !important;
+  --flair-color: #c0c1a1 !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -297,8 +297,8 @@
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: #b3b3b3 !important;
-  --footnote-id-color-no-occurrences: #666666 !important;
+  --footnote-id-color: #dadada !important;
+  --footnote-id-color-no-occurrences: #dadada !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
@@ -311,12 +311,12 @@
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
-  --graph-node: #b3b3b3 !important;
+  --graph-node: #dadada !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: rgb(166, 139, 249) !important;
+  --graph-node-focused: #ffdf22 !important;
   --graph-node-tag: #44cf6e !important;
-  --graph-node-unresolved: #666666 !important;
-  --graph-text: #dadada !important;
+  --graph-node-unresolved: #dadada !important;
+  --graph-text: #c0c1a1 !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -354,15 +354,15 @@
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: #666666 !important;
+  --heading-formatting: #dadada !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
   --hr-color: #363636 !important;
   --hr-thickness: 2px !important;
-  --icon-color: #b3b3b3 !important;
-  --icon-color-active: rgb(166, 139, 249) !important;
-  --icon-color-focused: #dadada !important;
-  --icon-color-hover: #b3b3b3 !important;
+  --icon-color: #dadada !important;
+  --icon-color-active: #ffdf22 !important;
+  --icon-color-focused: #6694e2 !important;
+  --icon-color-hover: #6694e2 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -380,8 +380,8 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --indentation-guide-color-active: rgba(255, 255, 255, 0.3) !important;
+  --indentation-guide-color: #5f6148 !important;
+  --indentation-guide-color-active: #808261 !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -395,11 +395,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #666666 !important;
+  --input-date-separator: #dadada !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #666666 !important;
+  --input-placeholder-color: #dadada !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -409,7 +409,7 @@
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
-  --interactive-accent: rgb(138, 92, 245) !important;
+  --interactive-accent: #6f6f6f !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: #3f3f3f !important;
@@ -427,17 +427,17 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(166, 139, 249) !important;
+  --link-color: #ffdf22 !important;
   --link-color-hover: rgb(197, 182, 252) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(166, 139, 249) !important;
+  --link-external-color: #bbcdff !important;
   --link-external-color-hover: rgb(197, 182, 252) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(166, 139, 249) !important;
+  --link-unresolved-color: #ffdf22 !important;
   --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -451,14 +451,14 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #666666 !important;
-  --list-marker-color-collapsed: rgb(166, 139, 249) !important;
-  --list-marker-color-hover: #b3b3b3 !important;
+  --list-marker-color: #dadada !important;
+  --list-marker-color-collapsed: #ffdf22 !important;
+  --list-marker-color-hover: #dadada !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #262626 !important;
+  --menu-background: #000000 !important;
   --menu-border-color: #3f3f3f !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
@@ -487,7 +487,7 @@
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #dadada !important;
+  --metadata-input-text-color: #c0c1a1 !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
@@ -496,8 +496,8 @@
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #b3b3b3 !important;
-  --metadata-label-text-color-hover: #b3b3b3 !important;
+  --metadata-label-text-color: #dadada !important;
+  --metadata-label-text-color-hover: #dadada !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
@@ -512,7 +512,7 @@
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: #1e1e1e !important;
+  --modal-background: #000000 !important;
   --modal-border-color: #555555 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -524,44 +524,44 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: #666666 !important;
-  --nav-collapse-icon-color-collapsed: #666666 !important;
-  --nav-heading-color: #dadada !important;
-  --nav-heading-color-collapsed: #666666 !important;
-  --nav-heading-color-collapsed-hover: #b3b3b3 !important;
-  --nav-heading-color-hover: #dadada !important;
+  --nav-collapse-icon-color: #dadada !important;
+  --nav-collapse-icon-color-collapsed: #dadada !important;
+  --nav-heading-color: #c0c1a1 !important;
+  --nav-heading-color-collapsed: #dadada !important;
+  --nav-heading-color-collapsed-hover: #dadada !important;
+  --nav-heading-color-hover: #c0c1a1 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
+  --nav-indentation-guide-color: #5f6148 !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
+  --nav-item-background-active: #393939 !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #b3b3b3 !important;
-  --nav-item-color-active: #dadada !important;
-  --nav-item-color-highlighted: rgb(166, 139, 249) !important;
-  --nav-item-color-hover: #dadada !important;
-  --nav-item-color-selected: #dadada !important;
+  --nav-item-color: #dadada !important;
+  --nav-item-color-active: #c0c1a1 !important;
+  --nav-item-color-highlighted: #ffdf22 !important;
+  --nav-item-color-hover: #6694e2 !important;
+  --nav-item-color-selected: #c0c1a1 !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #666666 !important;
-  --nav-tag-color-active: #b3b3b3 !important;
-  --nav-tag-color-hover: #b3b3b3 !important;
+  --nav-tag-color: #dadada !important;
+  --nav-tag-color-active: #dadada !important;
+  --nav-tag-color-hover: #dadada !important;
   --nav-tag-radius: 4px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #1e1e1e !important;
-  --pdf-page-background: #1e1e1e !important;
+  --pdf-background: #000000 !important;
+  --pdf-page-background: #000000 !important;
   --pdf-shadow: 0 0 0 1px #363636 !important;
-  --pdf-sidebar-background: #1e1e1e !important;
+  --pdf-sidebar-background: #000000 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px #363636 !important;
   --pdfViewer-padding-bottom: 0 !important;
@@ -570,10 +570,10 @@
   --pill-border-color: #363636 !important;
   --pill-border-color-hover: #3f3f3f !important;
   --pill-border-width: 1px !important;
-  --pill-color: #b3b3b3 !important;
-  --pill-color-hover: #dadada !important;
-  --pill-color-remove: #666666 !important;
-  --pill-color-remove-hover: rgb(166, 139, 249) !important;
+  --pill-color: #dadada !important;
+  --pill-color-hover: #c0c1a1 !important;
+  --pill-color-remove: #dadada !important;
+  --pill-color-remove-hover: #ffdf22 !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -597,8 +597,8 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --ribbon-background: #262626 !important;
-  --ribbon-background-collapsed: #1e1e1e !important;
+  --ribbon-background: #000000 !important;
+  --ribbon-background-collapsed: #000000 !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -610,13 +610,13 @@
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
+  --scrollbar-thumb-bg: #3f3e3e !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #b3b3b3 !important;
+  --search-clear-button-color: #dadada !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #b3b3b3 !important;
+  --search-icon-color: #dadada !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #1e1e1e !important;
+  --search-result-background: #000000 !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -655,13 +655,13 @@
   --slider-track-background: #363636 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #262626 !important;
+  --status-bar-background: #000000 !important;
   --status-bar-border-color: #363636 !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: #b3b3b3 !important;
+  --status-bar-text-color: #dadada !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
@@ -675,8 +675,8 @@
   --sync-avatar-color-7: #a882ff !important;
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #1e1e1e !important;
-  --tab-container-background: #262626 !important;
+  --tab-background-active: #000000 !important;
+  --tab-container-background: #000000 !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #3f3f3f !important;
   --tab-font-size: 13px !important;
@@ -693,17 +693,17 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #262626 !important;
+  --tab-switcher-background: #000000 !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color: #666666 !important;
-  --tab-text-color-active: #b3b3b3 !important;
-  --tab-text-color-focused: #b3b3b3 !important;
-  --tab-text-color-focused-active: #b3b3b3 !important;
-  --tab-text-color-focused-active-current: #dadada !important;
-  --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
+  --tab-text-color: #dadada !important;
+  --tab-text-color-active: #dadada !important;
+  --tab-text-color-focused: #dadada !important;
+  --tab-text-color-focused-active: #dadada !important;
+  --tab-text-color-focused-active-current: #6694e2 !important;
+  --tab-text-color-focused-highlighted: #ffdf22 !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: #363636 !important;
@@ -718,24 +718,24 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(138, 92, 245) !important;
-  --table-drag-handle-color: #666666 !important;
-  --table-drag-handle-color-active: white !important;
+  --table-drag-handle-background-active: #6f6f6f !important;
+  --table-drag-handle-color: #dadada !important;
+  --table-drag-handle-color-active: #cdcd43 !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: transparent !important;
+  --table-header-background: #2a2a2a !important;
   --table-header-border-color: #363636 !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: #dadada !important;
+  --table-header-color: #c0c1a1 !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
-  --table-row-alt-background: transparent !important;
+  --table-row-alt-background: #141414 !important;
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
   --table-selection: rgba(138, 92, 245, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(138, 92, 245) !important;
+  --table-selection-border-color: #6f6f6f !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
@@ -745,34 +745,34 @@
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(166, 139, 249) !important;
-  --tag-color-hover: rgb(166, 139, 249) !important;
+  --tag-color: #24cf00 !important;
+  --tag-color-hover: #ffdf22 !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(166, 139, 249) !important;
+  --text-accent: #ffdf22 !important;
   --text-accent-hover: rgb(197, 182, 252) !important;
   --text-error: #fb464c !important;
-  --text-faint: #666666 !important;
+  --text-faint: #dadada !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #b3b3b3 !important;
-  --text-normal: #dadada !important;
-  --text-on-accent: white !important;
+  --text-muted: #dadada !important;
+  --text-normal: #c0c1a1 !important;
+  --text-on-accent: #cdcd43 !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(138, 92, 245, 0.33) !important;
+  --text-selection: #678ba6 !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
-  --titlebar-background: #262626 !important;
-  --titlebar-background-focused: #363636 !important;
+  --titlebar-background: #000000 !important;
+  --titlebar-background-focused: #000000 !important;
   --titlebar-border-color: #363636 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #b3b3b3 !important;
-  --titlebar-text-color-focused: #dadada !important;
+  --titlebar-text-color: #dadada !important;
+  --titlebar-text-color-focused: #c0c1a1 !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -786,8 +786,8 @@
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #dadada !important;
-  --vault-profile-color-hover: #dadada !important;
+  --vault-profile-color: #c0c1a1 !important;
+  --vault-profile-color-hover: #c0c1a1 !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -796,6 +796,16 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --h1-color: #6694e2 !important;
+  --h2-color: #77ca61 !important;
+  --h3-color: #e0b73d !important;
+  --h4-color: #da6fd5 !important;
+  --h5-color: #94c0bd !important;
+  --h6-color: #f34545 !important;
+  --inline-title-color: #ffffff !important;
+  --bold-color: #eeeeee !important;
+  --italic-color: #fff6dd !important;
+  --nav-file-tag: #f4ec9e !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -975,34 +985,34 @@ body {
   }
 
   div#quartz-root {
-    background-color: rgb(30, 30, 30);
-    color: rgb(218, 218, 218);
+    background-color: rgb(0, 0, 0);
+    color: rgb(192, 193, 161);
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: rgb(30, 30, 30);
-    color: rgb(218, 218, 218);
+    background-color: rgb(0, 0, 0);
+    color: rgb(192, 193, 161);
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: rgb(38, 38, 38);
-    color: rgb(218, 218, 218);
+    background-color: rgb(0, 0, 0);
+    color: rgb(192, 193, 161);
   }
 
   &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: rgb(38, 38, 38);
-    color: rgb(218, 218, 218);
+    background-color: rgb(0, 0, 0);
+    color: rgb(192, 193, 161);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: rgb(38, 38, 38);
-    color: rgb(218, 218, 218);
+    background-color: rgb(0, 0, 0);
+    color: rgb(192, 193, 161);
     border-left: 1px solid rgb(54, 54, 54);
   }
 
@@ -1013,7 +1023,7 @@ body {
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(166, 138, 249);
+    color: rgb(187, 205, 255);
     cursor: pointer;
     filter: none;
     font-family:
@@ -1030,8 +1040,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
-    text-decoration-color: rgb(166, 138, 249);
+    text-decoration: underline solid rgb(187, 205, 255);
+    text-decoration-color: rgb(187, 205, 255);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1059,7 +1069,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
+    text-decoration: underline solid rgb(197, 182, 252);
     text-decoration-color: rgb(197, 182, 252);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1070,7 +1080,7 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(166, 138, 249);
+    color: rgb(255, 223, 34);
     cursor: pointer;
     filter: none;
     font-family:
@@ -1098,7 +1108,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     cursor: auto;
     filter: none;
     font-family:
@@ -1115,8 +1125,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration: none solid rgb(192, 193, 161);
+    text-decoration-color: rgb(192, 193, 161);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1127,7 +1137,7 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(238, 238, 238);
     cursor: text;
     filter: none;
     font-family:
@@ -1144,8 +1154,8 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration: none solid rgb(238, 238, 238);
+    text-decoration-color: rgb(238, 238, 238);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1156,7 +1166,7 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(238, 238, 238);
     cursor: text;
     filter: none;
     font-family:
@@ -1173,8 +1183,8 @@ body {
       sans-serif;
     font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration: none solid rgb(238, 238, 238);
+    text-decoration-color: rgb(238, 238, 238);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1185,7 +1195,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(255, 246, 221);
     cursor: text;
     filter: none;
     font-family:
@@ -1200,10 +1210,10 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration: none solid rgb(255, 246, 221);
+    text-decoration-color: rgb(255, 246, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1214,7 +1224,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(255, 246, 221);
     cursor: text;
     filter: none;
     font-family:
@@ -1229,10 +1239,10 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration: none solid rgb(255, 246, 221);
+    text-decoration-color: rgb(255, 246, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1242,7 +1252,7 @@ body {
 
   .text-highlight {
     background-color: rgba(255, 208, 0, 0.4);
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     cursor: text;
     filter: none;
     font-family:
@@ -1259,8 +1269,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration: none solid rgb(192, 193, 161);
+    text-decoration-color: rgb(192, 193, 161);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1270,7 +1280,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     cursor: text;
     filter: none;
     font-family:
@@ -1287,8 +1297,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: line-through solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration: line-through solid rgb(192, 193, 161);
+    text-decoration-color: rgb(192, 193, 161);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1323,7 +1333,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
   }
 
   .search
@@ -1339,7 +1349,7 @@ body {
       ~ .result-card:hover
     ) {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -1348,7 +1358,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
   }
 
   hr {
@@ -1409,16 +1419,16 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: rgb(166, 138, 249);
+    color: rgb(36, 207, 0);
   }
 
   ul > li {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     text-align: start;
   }
 
   ul > li::marker {
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(218, 218, 218);
     border: 0px rgb(102, 102, 102);
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -1435,12 +1445,12 @@ body {
   }
 
   ol > li {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     text-align: start;
   }
 
   ol > li::marker {
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(218, 218, 218);
     border: 0px rgb(102, 102, 102);
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -1457,7 +1467,7 @@ body {
   }
 
   code {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(0, 0, 0);
     border: 0px solid rgb(54, 54, 54);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1467,7 +1477,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: rgb(218, 218, 218);
+    color: rgb(251, 102, 102);
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -1477,7 +1487,7 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(0, 0, 0);
     border: 0px solid rgb(54, 54, 54);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1494,7 +1504,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(0, 0, 0);
     border: 0px solid rgb(54, 54, 54);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1555,7 +1565,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(179, 179, 179);
-    text-decoration: line-through solid rgb(179, 179, 179);
+    text-decoration: line-through solid rgb(218, 218, 218);
     text-decoration-color: rgb(179, 179, 179);
   }
 
@@ -1583,8 +1593,8 @@ body {
   }
 
   .data-footnote-backref {
-    color: rgb(102, 102, 102);
-    text-decoration: none solid rgb(102, 102, 102);
+    color: rgb(218, 218, 218);
+    text-decoration: none solid rgb(218, 218, 218);
   }
 
   .search > .search-button {
@@ -1598,7 +1608,7 @@ body {
     border-start-end-radius: 5px;
     border-end-start-radius: 5px;
     border-end-end-radius: 5px;
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1614,7 +1624,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(0, 0, 0);
     border: 1px solid rgb(85, 85, 85);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -1631,9 +1641,9 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: rgb(30, 30, 30);
-    border: 0px rgb(218, 218, 218);
-    border-bottom: 1px solid rgb(38, 38, 38);
+    background-color: rgb(0, 0, 0);
+    border: 0px rgb(192, 193, 161);
+    border-bottom: 1px solid rgb(0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1647,7 +1657,7 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     cursor: auto;
     filter: none;
     font-family:
@@ -1664,8 +1674,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: rgb(218, 218, 218);
+    text-decoration: none solid rgb(192, 193, 161);
+    text-decoration-color: rgb(192, 193, 161);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1691,7 +1701,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
   }
 
   .search
@@ -1700,7 +1710,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -1729,7 +1739,7 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.067);
   }
@@ -1776,11 +1786,11 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
   }
 
   h1 {
-    color: rgb(218, 218, 218);
+    color: rgb(102, 148, 226);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1797,7 +1807,7 @@ body {
   }
 
   h2 {
-    color: rgb(218, 218, 218);
+    color: rgb(119, 202, 97);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1814,7 +1824,7 @@ body {
   }
 
   h3 {
-    color: rgb(218, 218, 218);
+    color: rgb(224, 183, 61);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1831,7 +1841,7 @@ body {
   }
 
   h4 {
-    color: rgb(218, 218, 218);
+    color: rgb(218, 111, 213);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1848,7 +1858,7 @@ body {
   }
 
   h5 {
-    color: rgb(218, 218, 218);
+    color: rgb(148, 192, 189);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1865,7 +1875,7 @@ body {
   }
 
   h6 {
-    color: rgb(218, 218, 218);
+    color: rgb(243, 69, 69);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1883,7 +1893,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: rgb(218, 218, 218);
+    color: rgb(255, 255, 255);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -1909,7 +1919,7 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1932,7 +1942,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -1968,7 +1978,7 @@ body {
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: rgba(2, 122, 255, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1982,13 +1992,13 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(218, 218, 218);
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
     background-color: rgba(83, 223, 221, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2008,7 +2018,7 @@ body {
   .callout[data-callout="info"] {
     --callout-color: inherit;
     background-color: rgba(2, 122, 255, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2028,7 +2038,7 @@ body {
   .callout[data-callout="todo"] {
     --callout-color: inherit;
     background-color: rgba(2, 122, 255, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2048,7 +2058,7 @@ body {
   .callout[data-callout="tip"] {
     --callout-color: inherit;
     background-color: rgba(83, 223, 221, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2068,7 +2078,7 @@ body {
   .callout[data-callout="success"] {
     --callout-color: inherit;
     background-color: rgba(68, 207, 110, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(68, 207, 110, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2088,7 +2098,7 @@ body {
   .callout[data-callout="question"] {
     --callout-color: inherit;
     background-color: rgba(233, 151, 63, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2108,7 +2118,7 @@ body {
   .callout[data-callout="warning"] {
     --callout-color: inherit;
     background-color: rgba(233, 151, 63, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2148,7 +2158,7 @@ body {
   .callout[data-callout="failure"] {
     --callout-color: inherit;
     background-color: rgba(251, 70, 76, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2162,7 +2172,7 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(179, 179, 179);
+    stroke: rgb(218, 218, 218);
   }
 
   .callout[data-callout="bug"] {
@@ -2229,7 +2239,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: collapse;
     border-spacing: inherit;
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2253,8 +2263,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -2279,7 +2289,7 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-weight: 600;
     text-align: start;
     vertical-align: top;
@@ -2297,7 +2307,7 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-weight: 400;
     text-align: center;
     vertical-align: top;
@@ -2314,7 +2324,7 @@ body {
   }
 
   tr {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(42, 42, 42);
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2340,7 +2350,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2359,7 +2369,7 @@ body {
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2377,7 +2387,7 @@ body {
   }
 
   figcaption {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2407,7 +2417,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2425,7 +2435,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2597,7 +2607,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2624,7 +2634,7 @@ body {
 
   input[type="text"] {
     background-color: rgb(42, 42, 42);
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2651,7 +2661,7 @@ body {
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2670,7 +2680,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -2697,15 +2707,15 @@ body {
   }
 
   kbd {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(0, 0, 0);
     box-shadow: none;
-    color: rgb(218, 218, 218);
+    color: rgb(251, 102, 102);
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
     font-size: 14px;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(251, 102, 102);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2726,7 +2736,7 @@ body {
   }
 
   dt {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -2736,7 +2746,7 @@ body {
   }
 
   dd {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -2746,21 +2756,21 @@ body {
   }
 
   sub {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(192, 193, 161);
     text-decoration-style: dotted;
   }
 
@@ -2918,14 +2928,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: rgb(192, 193, 161);
     font-size: 16px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: rgb(192, 193, 161);
     font-weight: inherit;
     text-transform: inherit;
   }
@@ -2984,12 +2994,12 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(179, 179, 179);
+    text-decoration: none solid rgb(218, 218, 218);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(255, 255, 255, 0.067);
-    border: 0px rgb(218, 218, 218);
+    background-color: rgb(57, 57, 57);
+    border: 0px rgb(192, 193, 161);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2998,7 +3008,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: rgb(218, 218, 218);
+    color: rgb(192, 193, 161);
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -3011,7 +3021,7 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: rgb(179, 179, 179);
+    color: rgb(218, 218, 218);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -3026,7 +3036,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(179, 179, 179);
+    text-decoration: none solid rgb(218, 218, 218);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -3045,7 +3055,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(179, 179, 179);
+    text-decoration: none solid rgb(218, 218, 218);
   }
 
   --current-page-slug: attr(data-slug raw-string);

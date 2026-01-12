@@ -2085,8 +2085,8 @@ body {
 
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
-    background-color: rgba(0, 0, 0, 0);
-    color: light-dark(oklch(0.45 0.1 292.488), oklch(0.8 0.05 292.488));
+    background-color: light-dark(rgb(238, 236, 244), rgb(49, 45, 57));
+    color: light-dark(oklch(0.3 0.1 292.488), oklch(0.95 0.05 292.488));
     cursor: pointer;
     filter: none;
     font-family:
@@ -2103,10 +2103,10 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid oklch(0.8 0.05 292.488);
+    text-decoration: underline solid oklch(0.95 0.05 292.488);
     text-decoration-color: light-dark(
-      oklch(0.45 0.1 292.488),
-      oklch(0.8 0.05 292.488)
+      oklch(0.3 0.1 292.488),
+      oklch(0.95 0.05 292.488)
     );
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2250,7 +2250,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(217, 217, 217);
     text-decoration-color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
@@ -2279,7 +2279,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(217, 217, 217);
     text-decoration-color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
@@ -2989,7 +2989,7 @@ body {
     border-start-end-radius: 7px;
     border-end-start-radius: 7px;
     border-end-end-radius: 7px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -3028,7 +3028,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(
         oklch(0.65 0.189734 256.788 / 0.45),
@@ -3046,7 +3046,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(217, 217, 217);
   }
 
   .callout[data-callout="abstract"] {
@@ -3055,7 +3055,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(
         oklch(0.65 0.124631 192.766 / 0.45),
@@ -3082,7 +3082,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(
         oklch(0.65 0.189734 256.788 / 0.45),
@@ -3109,7 +3109,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(
         oklch(0.65 0.189734 256.788 / 0.45),
@@ -3136,7 +3136,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(
         oklch(0.65 0.124631 192.766 / 0.45),
@@ -3163,7 +3163,7 @@ body {
       rgba(8, 185, 78, 0.1),
       rgba(68, 207, 110, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(
         oklch(0.65 0.19456 148.477 / 0.45),
@@ -3190,7 +3190,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(
         oklch(0.65 0.175848 52.5476 / 0.45),
@@ -3217,7 +3217,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(
         oklch(0.65 0.175848 52.5476 / 0.45),
@@ -3271,7 +3271,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px solid
       light-dark(
         oklch(0.65 0.216938 20.8401 / 0.45),
@@ -3485,7 +3485,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px solid light-dark(rgb(216, 210, 228), rgb(56, 52, 66));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3504,7 +3504,7 @@ body {
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3522,7 +3522,7 @@ body {
   }
 
   figcaption {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3552,7 +3552,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3570,7 +3570,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3742,7 +3742,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3768,8 +3768,8 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(255, 255, 255), rgb(29, 27, 34));
+    color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3782,7 +3782,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border: 1px solid light-dark(rgb(221, 217, 232), rgb(51, 47, 60));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -3796,7 +3796,7 @@ body {
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3815,7 +3815,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -3842,15 +3842,15 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
     font-size: 14px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3871,7 +3871,7 @@ body {
   }
 
   dt {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -3881,7 +3881,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3891,21 +3891,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(217, 217, 217);
     text-decoration-style: dotted;
   }
 
@@ -4063,14 +4063,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: light-dark(inherit, rgb(217, 217, 217));
     font-size: 16px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: light-dark(inherit, rgb(217, 217, 217));
     font-weight: inherit;
     text-transform: inherit;
   }

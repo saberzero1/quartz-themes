@@ -2001,9 +2001,9 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(166, 138, 249);
+    text-decoration: underline solid rgb(197, 182, 252);
     text-decoration-color: light-dark(rgb(166, 138, 249), rgb(197, 182, 252));
-    text-decoration-line: none;
+    text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
@@ -2131,7 +2131,7 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(60, 73, 93), rgb(224, 228, 235));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: text;
     filter: none;
     font-family:
@@ -2147,10 +2147,10 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(60, 73, 93), rgb(224, 228, 235));
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2161,7 +2161,7 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(60, 73, 93), rgb(224, 228, 235));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: text;
     filter: none;
     font-family:
@@ -2177,10 +2177,10 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(60, 73, 93), rgb(224, 228, 235));
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2429,7 +2429,7 @@ body {
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
-    padding: 1.44px 3.6px;
+    padding: 2.1px 4.2px;
   }
 
   pre > code,
@@ -2843,7 +2843,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 16px 16px 12px;
   }
 
@@ -2882,7 +2882,7 @@ body {
       rgba(8, 109, 221, 0.18),
       rgba(2, 122, 255, 0.18)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -2906,7 +2906,7 @@ body {
       rgba(0, 191, 188, 0.18),
       rgba(83, 223, 221, 0.18)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -2930,7 +2930,7 @@ body {
       rgba(8, 109, 221, 0.18),
       rgba(2, 122, 255, 0.18)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -2954,7 +2954,7 @@ body {
       rgba(8, 109, 221, 0.18),
       rgba(2, 122, 255, 0.18)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -2978,7 +2978,7 @@ body {
       rgba(0, 191, 188, 0.18),
       rgba(83, 223, 221, 0.18)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -3002,7 +3002,7 @@ body {
       rgba(8, 185, 78, 0.18),
       rgba(68, 207, 110, 0.18)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
     border-top-left-radius: 4px;
@@ -3026,7 +3026,7 @@ body {
       rgba(236, 117, 0, 0.18),
       rgba(233, 151, 63, 0.18)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
@@ -3050,7 +3050,7 @@ body {
       rgba(236, 117, 0, 0.18),
       rgba(233, 151, 63, 0.18)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
@@ -3098,7 +3098,7 @@ body {
       rgba(233, 49, 71, 0.18),
       rgba(251, 70, 76, 0.18)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 4px;
@@ -3161,7 +3161,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(218, 218, 218);
+    stroke: rgb(179, 179, 179);
   }
 
   .callout[data-callout="quote"] {
@@ -3215,8 +3215,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 8px 0px 16px;
-    margin-block-end: 16px;
+    margin: 8px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 8px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -3348,6 +3348,7 @@ body {
   figcaption {
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
+      Inter,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3592,9 +3593,10 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
+    background-color: light-dark(rgb(230, 230, 230), rgb(42, 42, 42));
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
+      Inter,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3606,7 +3608,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border: 1px solid light-dark(rgb(173, 167, 164), rgb(88, 83, 80));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -3666,7 +3668,7 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(250, 250, 250), rgb(26, 26, 26));
     box-shadow: none;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:

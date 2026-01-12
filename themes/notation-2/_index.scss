@@ -1834,10 +1834,10 @@ body {
       Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 500;
     outline: inherit;
-    text-decoration: underline 1px solid rgba(255, 255, 255, 0.14);
+    text-decoration: underline 1px solid rgba(255, 255, 255, 0.55);
     text-decoration-color: light-dark(
-      rgba(55, 53, 47, 0.14),
-      rgba(255, 255, 255, 0.14)
+      rgba(55, 53, 47, 0.55),
+      rgba(255, 255, 255, 0.55)
     );
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1945,7 +1945,7 @@ body {
     font-family:
       system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
       Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgba(255, 255, 255, 0.9);
     text-decoration-color: light-dark(
@@ -1968,7 +1968,7 @@ body {
     font-family:
       system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
       Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgba(255, 255, 255, 0.9);
     text-decoration-color: light-dark(
@@ -2200,7 +2200,7 @@ body {
     border-start-end-radius: 3px;
     border-end-start-radius: 3px;
     border-end-end-radius: 3px;
-    color: rgb(235, 87, 87);
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     font-family: "iA Writer Duospace", Nitti, Menlo, Courier, monospace;
     padding: 2.1px 4.2px;
   }
@@ -2640,7 +2640,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(179, 179, 179);
+    stroke: rgba(255, 255, 255, 0.7);
   }
 
   .callout[data-callout="abstract"] {
@@ -2904,7 +2904,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgba(255, 255, 255, 0.9);
+    stroke: rgba(255, 255, 255, 0.7);
   }
 
   .callout[data-callout="quote"] {
@@ -2947,8 +2947,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -3039,7 +3039,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3048,17 +3048,17 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
+    margin: 32px auto;
+    margin-block-end: 32px;
+    margin-block-start: 32px;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
   }
 
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3076,19 +3076,10 @@ body {
   }
 
   figcaption {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -3106,7 +3097,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3124,7 +3115,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3296,7 +3287,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3322,21 +3313,13 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(255, 255, 255), rgb(33, 32, 30));
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    border: 1px solid
+      light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -3350,7 +3333,7 @@ body {
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3369,7 +3352,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -3396,23 +3379,20 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: rgba(179, 178, 178, 0.14);
     box-shadow: none;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+    font-family: "iA Writer Duospace", Nitti, Menlo, Courier, monospace;
     font-size: 14px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-start-start-radius: 3px;
+    border-start-end-radius: 3px;
+    border-end-start-radius: 3px;
+    border-end-end-radius: 3px;
     padding: 1.4px 3.5px;
   }
 
@@ -3425,7 +3405,7 @@ body {
   }
 
   dt {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -3435,7 +3415,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3445,21 +3425,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgba(255, 255, 255, 0.9);
     text-decoration-style: dotted;
   }
 
@@ -3617,14 +3597,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     font-size: 16px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     font-weight: inherit;
     text-transform: inherit;
   }

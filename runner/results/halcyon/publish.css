@@ -1034,7 +1034,7 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(195, 166, 255);
+  color: color(srgb 0.616565 0.613989 0.897776);
   cursor: pointer;
   filter: none;
   font-family:
@@ -1051,8 +1051,8 @@ body .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(195, 166, 255);
-  text-decoration-color: rgb(195, 166, 255);
+  text-decoration: underline solid color(srgb 0.616565 0.613989 0.897776);
+  text-decoration-color: color(srgb 0.616565 0.613989 0.897776);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1184,7 +1184,7 @@ body em {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(239, 107, 115);
   text-decoration-color: rgb(239, 107, 115);
@@ -1211,7 +1211,7 @@ body i {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(239, 107, 115);
   text-decoration-color: rgb(239, 107, 115);
@@ -1744,7 +1744,7 @@ body .callout[data-callout="note"] {
   border-start-end-radius: 2px;
   border-end-start-radius: 2px;
   border-end-end-radius: 2px;
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   padding: 12px 24px;
   background-color: rgba(112, 153, 219, 0.1);
 }
@@ -1767,7 +1767,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(112, 153, 219);
+  stroke: color(srgb 0.729403 0.762969 0.817656 / 0.8);
 }
 body .callout > .callout-title > .callout-title-inner {
   color: rgb(112, 153, 219);
@@ -1780,7 +1780,7 @@ body .callout > .callout-content {
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(92, 207, 230, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(92, 207, 230, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -1802,7 +1802,7 @@ body
 body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(112, 153, 219, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(112, 153, 219, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -1824,7 +1824,7 @@ body
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(112, 153, 219, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(112, 153, 219, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -1846,7 +1846,7 @@ body
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(92, 207, 230, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(92, 207, 230, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -1868,7 +1868,7 @@ body
 body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(186, 230, 126, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(186, 230, 126, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -1890,7 +1890,7 @@ body
 body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(255, 174, 87, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(255, 174, 87, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -1912,7 +1912,7 @@ body
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(255, 174, 87, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(255, 174, 87, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -1956,7 +1956,7 @@ body
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(239, 107, 115, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(239, 107, 115, 0.25);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -2017,7 +2017,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(255, 204, 102);
+  stroke: rgb(92, 207, 230);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
@@ -2069,8 +2069,8 @@ body .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
+  margin: 16px 0px 0px;
+  margin-block-end: 0px;
   margin-block-start: 16px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
@@ -2148,7 +2148,7 @@ body .markdown-rendered img {
   filter: none;
   max-width: 100%;
   object-fit: fill;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(215, 220, 226);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2166,7 +2166,7 @@ body .markdown-rendered img {
 body .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(215, 220, 226);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2183,7 +2183,7 @@ body .markdown-rendered figure {
   padding: 0px;
 }
 body .markdown-rendered figcaption {
-  color: rgb(218, 218, 218);
+  color: rgb(215, 220, 226);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2212,7 +2212,7 @@ body .markdown-rendered video {
   filter: none;
   max-width: 100%;
   object-fit: contain;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(215, 220, 226);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2229,7 +2229,7 @@ body .markdown-rendered video {
 }
 body .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(215, 220, 226);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2392,7 +2392,7 @@ body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 6px;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(215, 220, 226);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2416,8 +2416,8 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: rgb(42, 42, 42);
-  color: rgb(218, 218, 218);
+  background-color: rgb(47, 59, 84);
+  color: rgb(215, 220, 226);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2430,7 +2430,7 @@ body input[type="text"] {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 1px solid rgb(54, 54, 54);
+  border: 1px solid color(srgb 0.149206 0.186251 0.26452);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -2443,7 +2443,7 @@ body input[type="text"] {
 }
 body details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(215, 220, 226);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2461,7 +2461,7 @@ body details {
 }
 body summary {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+  color: rgb(215, 220, 226);
   cursor: auto;
   font-weight: 400;
   list-style: inherit;
@@ -2486,23 +2486,23 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(23, 28, 40);
   box-shadow: none;
-  color: rgb(218, 218, 218);
+  color: rgb(92, 207, 230);
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
   font-size: 14px;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border: 0px rgb(92, 207, 230);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-start-start-radius: 2px;
+  border-start-end-radius: 2px;
+  border-end-start-radius: 2px;
+  border-end-end-radius: 2px;
   padding: 1.4px 3.5px;
 }
 body dl {
@@ -2513,7 +2513,7 @@ body dl {
   margin-inline-start: 0px;
 }
 body dt {
-  color: rgb(218, 218, 218);
+  color: rgb(215, 220, 226);
   font-weight: 400;
   margin: 0px;
   margin-block-end: 0px;
@@ -2522,7 +2522,7 @@ body dt {
   margin-inline-start: 0px;
 }
 body dd {
-  color: rgb(218, 218, 218);
+  color: rgb(215, 220, 226);
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -2531,19 +2531,19 @@ body dd {
   padding: 0px;
 }
 body sub {
-  color: rgb(218, 218, 218);
+  color: rgb(215, 220, 226);
   font-size: 13.3333px;
   vertical-align: sub;
 }
 body sup {
-  color: rgb(218, 218, 218);
+  color: rgb(215, 220, 226);
   font-size: 13.3333px;
   vertical-align: super;
 }
 body abbr {
-  color: rgb(218, 218, 218);
+  color: rgb(215, 220, 226);
   cursor: auto;
-  text-decoration: underline dotted rgb(218, 218, 218);
+  text-decoration: underline dotted rgb(215, 220, 226);
   text-decoration-style: dotted;
 }
 body .backlink-pane {
@@ -2677,13 +2677,13 @@ body input::placeholder {
   opacity: inherit;
 }
 body .markdown-rendered p::first-letter {
-  color: inherit;
+  color: rgb(215, 220, 226);
   font-size: 16px;
   font-weight: inherit;
   float: inherit;
 }
 body .markdown-rendered p::first-line {
-  color: inherit;
+  color: rgb(215, 220, 226);
   font-weight: inherit;
   text-transform: inherit;
 }

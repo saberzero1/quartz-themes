@@ -770,7 +770,7 @@ body.theme-light {
   --sync-avatar-color-7: #7852ee !important;
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgba(0, 0, 0, 0.08) !important;
+  --tab-background-active: rgb(138, 92, 245) !important;
   --tab-container-background: #9096a4 !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #d4d4d4 !important;
@@ -1678,7 +1678,7 @@ body.theme-dark {
   --sync-avatar-color-7: #a882ff;
   --sync-avatar-color-8: #fa99cd;
   --sync-avatar-color-current-user: transparent;
-  --tab-background-active: rgba(255, 255, 255, 0.1);
+  --tab-background-active: rgb(138, 92, 245);
   --tab-container-background: #000000;
   --tab-curve: 6px;
   --tab-divider-color: #3f3f3f;
@@ -1922,7 +1922,7 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(95, 99, 105), rgb(159, 160, 164));
+  color: light-dark(rgb(166, 138, 249), rgb(197, 182, 252));
   cursor: pointer;
   filter: none;
   font-family:
@@ -1939,8 +1939,8 @@ body .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(159, 160, 164);
-  text-decoration-color: light-dark(rgb(95, 99, 105), rgb(159, 160, 164));
+  text-decoration: underline solid rgb(197, 182, 252);
+  text-decoration-color: light-dark(rgb(166, 138, 249), rgb(197, 182, 252));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2072,7 +2072,7 @@ body em {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -2099,7 +2099,7 @@ body i {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -2432,7 +2432,7 @@ body .site-body-left-column input.search-bar {
     sans-serif;
 }
 body .search-results {
-  background-color: light-dark(rgb(144, 150, 164), rgb(0, 0, 0));
+  background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
   border: 1px solid light-dark(rgba(37, 37, 37, 0.525), rgba(89, 89, 89, 0.518));
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -2638,7 +2638,7 @@ body .callout[data-callout="note"] {
   border-start-end-radius: 16px;
   border-end-start-radius: 16px;
   border-end-end-radius: 16px;
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
 }
@@ -2661,7 +2661,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(2, 122, 255);
+  stroke: rgb(179, 179, 179);
 }
 body .callout > .callout-title > .callout-title-inner {
   color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
@@ -2674,7 +2674,7 @@ body .callout > .callout-content {
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 1px solid
     light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
   border-top-left-radius: 16px;
@@ -2697,7 +2697,7 @@ body
 body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 1px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -2719,7 +2719,7 @@ body
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 1px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -2741,7 +2741,7 @@ body
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 1px solid
     light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
   border-top-left-radius: 16px;
@@ -2764,7 +2764,7 @@ body
 body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(8, 185, 78, 0.1), rgba(68, 207, 110, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 1px solid light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -2786,7 +2786,7 @@ body
 body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 1px solid
     light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
   border-top-left-radius: 16px;
@@ -2809,7 +2809,7 @@ body
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 1px solid
     light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
   border-top-left-radius: 16px;
@@ -2854,7 +2854,7 @@ body
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 1px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -2919,7 +2919,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(218, 218, 218);
+  stroke: rgb(179, 179, 179);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
@@ -2971,8 +2971,8 @@ body .markdown-rendered table {
   border-start-end-radius: 10px;
   border-end-start-radius: 10px;
   border-end-end-radius: 10px;
-  margin: 4px 0px;
-  margin-block-end: 4px;
+  margin: 4px 0px 0px;
+  margin-block-end: 0px;
   margin-block-start: 4px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
@@ -3333,14 +3333,14 @@ body input[type="text"] {
     "Segoe UI Symbol",
     sans-serif;
   border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-start-start-radius: 5px;
-  border-start-end-radius: 5px;
-  border-end-start-radius: 5px;
-  border-end-end-radius: 5px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-start-start-radius: 16px;
+  border-start-end-radius: 16px;
+  border-end-start-radius: 16px;
+  border-end-end-radius: 16px;
   padding: 4px 8px;
 }
 body details {
@@ -3388,15 +3388,15 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(rgb(165, 170, 182), rgb(12, 12, 12));
   box-shadow: none;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgb(238, 238, 238);
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
   font-size: 14px;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(238, 238, 238);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3579,13 +3579,13 @@ body input::placeholder {
   opacity: inherit;
 }
 body .markdown-rendered p::first-letter {
-  color: inherit;
+  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
   font-size: 16px;
   font-weight: inherit;
   float: inherit;
 }
 body .markdown-rendered p::first-line {
-  color: inherit;
+  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
   font-weight: inherit;
   text-transform: inherit;
 }
