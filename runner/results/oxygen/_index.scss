@@ -843,10 +843,6 @@
   --nested-padding: 1.1em !important;
   --active-line-bg: rgba(0, 0, 0, 0.035) !important;
   --font-code: 14.4px !important;
-  --cards-border-width: 1px !important;
-  --checkbox-left: 0px !important;
-  --checkbox-margin: 0px 6px 0px -2em !important;
-  --checkbox-top: 2px !important;
   --bg1: #ffffff !important;
   --bg2: #f7f8fa !important;
   --bg3: rgba(0, 0, 0, 0.12) !important;
@@ -866,6 +862,7 @@
   --top-left-padding-y: 0px !important;
   --tab-switcher-menubar-background: #ffffff !important;
   --line-number-color: #a0aab8 !important;
+  --cards-border-width: 1px !important;
   --adaptive-list-edit-offset: 0.5em !important;
   --ax1: rgb(40, 114, 154) !important;
   --ax2: rgb(31, 90, 122) !important;
@@ -882,6 +879,9 @@
   --chart-color-8: #b05279 !important;
   --chart-max-width: none !important;
   --chart-width: auto !important;
+  --checkbox-left: 0px !important;
+  --checkbox-margin: 0px 6px 0px -2em !important;
+  --checkbox-top: 2px !important;
   --container-chart-max-width: 88% !important;
   --container-chart-width: 40rem !important;
   --container-dataview-table-width: 40rem !important;
@@ -1798,10 +1798,6 @@
   --nested-padding: 1.1em !important;
   --active-line-bg: rgba(255, 255, 255, 0.04) !important;
   --font-code: 14.4px !important;
-  --cards-border-width: 1px !important;
-  --checkbox-left: 0px !important;
-  --checkbox-margin: 0px 6px 0px -2em !important;
-  --checkbox-top: 2px !important;
   --bg1: #1c1d1e !important;
   --bg2: #17191b !important;
   --bg3: rgba(145, 150, 161, 0.12) !important;
@@ -1821,6 +1817,7 @@
   --top-left-padding-y: 0px !important;
   --tab-switcher-menubar-background: #1c1d1e !important;
   --line-number-color: hsl(220, -2%, 40%) !important;
+  --cards-border-width: 1px !important;
   --adaptive-list-edit-offset: 0.5em !important;
   --ax1: rgb(73, 161, 208) !important;
   --ax2: rgb(49, 141, 191) !important;
@@ -1837,6 +1834,9 @@
   --chart-color-8: #b05279 !important;
   --chart-max-width: none !important;
   --chart-width: auto !important;
+  --checkbox-left: 0px !important;
+  --checkbox-margin: 0px 6px 0px -2em !important;
+  --checkbox-top: 2px !important;
   --container-chart-max-width: 88% !important;
   --container-chart-width: 40rem !important;
   --container-dataview-table-width: 40rem !important;

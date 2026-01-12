@@ -846,12 +846,6 @@ body.theme-dark {
   --gray: rgb(90, 93, 117);
   --red-rgb: 218, 1, 77;
   --callout-title-color: oklch(61.5% 0.176 260.58);
-  --blue-rgb: 42, 113, 235;
-  --green-rgb: 78, 205, 43;
-  --orange-rgb: 255, 116, 23;
-  --pink-rgb: 242, 66, 255;
-  --purple-rgb: 45, 36, 141;
-  --yellow-rgb: 242, 208, 3;
   --blue-100: oklch(25.5% 0.091 260.58);
   --blue-200: oklch(35.5% 0.127 260.58);
   --blue-300: oklch(48.5% 0.173 260.58);
@@ -932,7 +926,12 @@ body.theme-dark {
   --yellow-700: oklch(92% 0.128 97.11);
   --yellow-800: oklch(96.5% 0.049 97.11);
   --yellow-900: oklch(98% 0.026 97.11);
+  --blue-rgb: 42, 113, 235;
   --gray-rgb: 90, 93, 117;
+  --green-rgb: 78, 205, 43;
+  --orange-rgb: 255, 116, 23;
+  --purple-rgb: 45, 36, 141;
+  --yellow-rgb: 242, 208, 3;
   --blue-25: oklch(12% 0.038 260.58);
   --blue-75: oklch(18% 0.061 260.58);
   --callout-content: oklch(84.5% 0.06 260.58);
@@ -953,6 +952,7 @@ body.theme-dark {
   --padding-inline-start: 0px;
   --pink-25: oklch(12% 0.05 324.98);
   --pink-75: oklch(18% 0.08 324.98);
+  --pink-rgb: 242, 66, 255;
   --purple-25: oklch(12% 0.047 288);
   --purple-75: oklch(18% 0.075 288);
   --red-25: oklch(12% 0.043 13.65);

@@ -959,6 +959,7 @@ body.theme-light {
   --background-secondary-rgb: 230, 228, 218 !important;
   --text-normal-rgb: 61, 46, 26 !important;
   --folder-text-color: #d97756 !important;
+  --setting-items-background: #e6e4da !important;
   --primary-color: #d97756 !important;
   --folder-color: rgba(217, 119, 86, 0.12) !important;
   --fast: 0.15s ease !important;
@@ -1046,7 +1047,6 @@ body.theme-light {
   --s6: 24px !important;
   --s8: 32px !important;
   --scrollbar-track: rgba(245, 239, 224, 0.2) !important;
-  --setting-items-background: #e6e4da !important;
   --squircle-btn: 40% !important;
   --squircle-main: 60% !important;
   --squircle-soft: 80% !important;
@@ -1861,6 +1861,7 @@ body.theme-dark {
   --background-secondary-rgb: 50, 48, 42;
   --text-normal-rgb: 232, 220, 198;
   --folder-text-color: #f2a882;
+  --setting-items-background: #32302a;
   --primary-color: #f0916f;
   --folder-color: rgba(242, 168, 130, 0.12);
   --fast: 0.15s ease;
@@ -1948,7 +1949,6 @@ body.theme-dark {
   --s6: 24px;
   --s8: 32px;
   --scrollbar-track: rgba(40, 37, 32, 0.2);
-  --setting-items-background: #32302a;
   --squircle-btn: 40%;
   --squircle-main: 60%;
   --squircle-soft: 80%;

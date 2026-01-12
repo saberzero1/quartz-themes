@@ -1784,14 +1784,14 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(75, 27, 41), rgb(200, 188, 172));
+    color: rgb(127, 108, 94);
     cursor: pointer;
     filter: none;
     font-family: manrope, sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(200, 188, 172);
-    text-decoration-color: light-dark(rgb(75, 27, 41), rgb(200, 188, 172));
+    text-decoration: underline solid rgb(127, 108, 94);
+    text-decoration-color: rgb(127, 108, 94);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1876,7 +1876,7 @@ body {
     cursor: text;
     filter: none;
     font-family: manrope, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(200, 188, 172);
     text-decoration-color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
@@ -1894,7 +1894,7 @@ body {
     cursor: text;
     filter: none;
     font-family: manrope, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(200, 188, 172);
     text-decoration-color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
@@ -2482,7 +2482,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -2518,7 +2518,7 @@ body {
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 242, 242), rgb(17, 11, 12));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px dotted rgba(102, 108, 104, 0.314);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2532,13 +2532,13 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(229, 223, 211);
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 242, 242), rgb(17, 11, 12));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px dotted rgba(102, 108, 104, 0.314);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2558,7 +2558,7 @@ body {
   .callout[data-callout="info"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 242, 242), rgb(17, 11, 12));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px dotted rgba(102, 108, 104, 0.314);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2578,7 +2578,7 @@ body {
   .callout[data-callout="todo"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 242, 242), rgb(17, 11, 12));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px dotted rgba(102, 108, 104, 0.314);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2598,7 +2598,7 @@ body {
   .callout[data-callout="tip"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 242, 242), rgb(17, 11, 12));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px dotted rgba(102, 108, 104, 0.314);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2618,7 +2618,7 @@ body {
   .callout[data-callout="success"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 242, 242), rgb(17, 11, 12));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px dotted rgba(102, 108, 104, 0.314);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2638,7 +2638,7 @@ body {
   .callout[data-callout="question"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 242, 242), rgb(17, 11, 12));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px dotted rgba(102, 108, 104, 0.314);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2658,7 +2658,7 @@ body {
   .callout[data-callout="warning"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 242, 242), rgb(17, 11, 12));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px dotted rgba(102, 108, 104, 0.314);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2698,7 +2698,7 @@ body {
   .callout[data-callout="failure"] {
     --callout-color: inherit;
     background-color: light-dark(rgb(243, 242, 242), rgb(17, 11, 12));
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 1px dotted rgba(102, 108, 104, 0.314);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2752,7 +2752,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(79, 77, 74);
+    stroke: rgb(229, 223, 211);
   }
 
   .callout[data-callout="quote"] {
@@ -2792,8 +2792,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -2879,7 +2879,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2898,7 +2898,7 @@ body {
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2907,29 +2907,18 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 40px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin: 14px 40px;
+    margin-block-end: 14px;
+    margin-block-start: 14px;
     margin-inline-end: 40px;
     margin-inline-start: 40px;
     padding: 0px;
   }
 
   figcaption {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-size: 16px;
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
+    font-family: manrope, sans-serif;
+    font-size: 14px;
     font-style: normal;
     text-align: start;
     margin: 0px;
@@ -2946,7 +2935,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2964,7 +2953,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3136,7 +3125,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3162,21 +3151,10 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    background-color: light-dark(rgb(245, 244, 244), rgb(38, 32, 32));
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
+    font-family: manrope, sans-serif;
+    border: 1px solid light-dark(rgb(210, 201, 189), rgb(38, 32, 32));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -3190,7 +3168,7 @@ body {
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3209,7 +3187,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -3236,36 +3214,36 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
-    font-size: 14px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    padding: 1.4px 3.5px;
+    font-size: 12.25px;
+    border: 0px light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 1.225px 3.0625px;
   }
 
   dl {
-    margin: 16px 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin: 14px 0px;
+    margin-block-end: 14px;
+    margin-block-start: 14px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
 
   dt {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -3275,7 +3253,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3285,21 +3263,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-size: 13.3333px;
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
+    font-size: 11.6667px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-size: 13.3333px;
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
+    font-size: 11.6667px;
     vertical-align: super;
   }
 
   abbr {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(200, 188, 172);
     text-decoration-style: dotted;
   }
 
@@ -3457,14 +3435,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
-    font-size: 16px;
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
+    font-size: 14px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: light-dark(rgb(32, 36, 48), rgb(200, 188, 172));
     font-weight: inherit;
     text-transform: inherit;
   }

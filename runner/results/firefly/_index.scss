@@ -1093,15 +1093,15 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(111, 161, 255);
+    color: rgb(197, 182, 252);
     cursor: pointer;
     filter: none;
     font-family: Inter, sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(111, 161, 255);
-    text-decoration-color: rgb(111, 161, 255);
-    text-decoration-line: none;
+    text-decoration: underline solid rgb(197, 182, 252);
+    text-decoration-color: rgb(197, 182, 252);
+    text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
     transition: inherit;
@@ -1156,14 +1156,25 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(235, 239, 247);
+    color: rgb(192, 205, 243);
     cursor: text;
-    filter: drop-shadow(rgb(192, 205, 243) 0px 0px 3px);
-    font-family: Inter, sans-serif;
-    font-weight: 400;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(235, 239, 247);
-    text-decoration-color: rgb(235, 239, 247);
+    text-decoration: none solid rgb(192, 205, 243);
+    text-decoration-color: rgb(192, 205, 243);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1174,14 +1185,25 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(235, 239, 247);
+    color: rgb(192, 205, 243);
     cursor: text;
-    filter: drop-shadow(rgb(192, 205, 243) 0px 0px 3px);
-    font-family: Inter, sans-serif;
-    font-weight: 400;
+    filter: none;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 600;
     outline: inherit;
-    text-decoration: none solid rgb(235, 239, 247);
-    text-decoration-color: rgb(235, 239, 247);
+    text-decoration: none solid rgb(192, 205, 243);
+    text-decoration-color: rgb(192, 205, 243);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -1195,8 +1217,19 @@ body {
     color: rgb(192, 205, 243);
     cursor: text;
     filter: none;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 500;
     outline: inherit;
     text-decoration: none solid rgb(192, 205, 243);
     text-decoration-color: rgb(192, 205, 243);
@@ -1213,8 +1246,19 @@ body {
     color: rgb(192, 205, 243);
     cursor: text;
     filter: none;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 500;
     outline: inherit;
     text-decoration: none solid rgb(192, 205, 243);
     text-decoration-color: rgb(192, 205, 243);
@@ -1230,8 +1274,19 @@ body {
     color: rgb(218, 218, 218);
     cursor: text;
     filter: none;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 500;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
     text-decoration-color: rgb(218, 218, 218);
@@ -1247,8 +1302,19 @@ body {
     color: rgb(192, 205, 243);
     cursor: text;
     filter: none;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 500;
     outline: inherit;
     text-decoration: line-through solid rgb(192, 205, 243);
     text-decoration-color: rgb(192, 205, 243);
@@ -1419,22 +1485,22 @@ body {
   }
 
   code {
-    background-color: rgb(5, 6, 8);
-    border: 0px solid rgb(0, 201, 167);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
-    color: rgb(0, 201, 167);
+    background-color: rgb(36, 36, 36);
+    border: 0px solid rgb(54, 54, 54);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    color: rgb(218, 218, 218);
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
-    padding: 2.8px 10px;
+    padding: 2.1px 4.2px;
   }
 
   pre > code,
@@ -1827,7 +1893,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -1863,7 +1929,7 @@ body {
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: rgba(2, 122, 255, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1877,13 +1943,13 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(173, 185, 219);
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: inherit;
     background-color: rgba(83, 223, 221, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1903,7 +1969,7 @@ body {
   .callout[data-callout="info"] {
     --callout-color: inherit;
     background-color: rgba(2, 122, 255, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1923,7 +1989,7 @@ body {
   .callout[data-callout="todo"] {
     --callout-color: inherit;
     background-color: rgba(2, 122, 255, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(2, 122, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1943,7 +2009,7 @@ body {
   .callout[data-callout="tip"] {
     --callout-color: inherit;
     background-color: rgba(83, 223, 221, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(83, 223, 221, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1963,7 +2029,7 @@ body {
   .callout[data-callout="success"] {
     --callout-color: inherit;
     background-color: rgba(68, 207, 110, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(68, 207, 110, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1983,7 +2049,7 @@ body {
   .callout[data-callout="question"] {
     --callout-color: inherit;
     background-color: rgba(233, 151, 63, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2003,7 +2069,7 @@ body {
   .callout[data-callout="warning"] {
     --callout-color: inherit;
     background-color: rgba(233, 151, 63, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(233, 151, 63, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2043,7 +2109,7 @@ body {
   .callout[data-callout="failure"] {
     --callout-color: inherit;
     background-color: rgba(251, 70, 76, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(251, 70, 76, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2148,8 +2214,8 @@ body {
     border-start-end-radius: 20px;
     border-end-start-radius: 20px;
     border-end-end-radius: 20px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -2235,7 +2301,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 205, 243);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2254,7 +2320,7 @@ body {
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 205, 243);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2272,7 +2338,7 @@ body {
   }
 
   figcaption {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 205, 243);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2302,7 +2368,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 205, 243);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2320,7 +2386,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 205, 243);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2492,7 +2558,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(192, 205, 243);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2532,7 +2598,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid rgb(54, 54, 54);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -2641,21 +2707,21 @@ body {
   }
 
   sub {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 205, 243);
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 205, 243);
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: rgb(218, 218, 218);
+    color: rgb(192, 205, 243);
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(192, 205, 243);
     text-decoration-style: dotted;
   }
 
@@ -2813,15 +2879,15 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: rgb(192, 205, 243);
     font-size: 16px;
-    font-weight: inherit;
+    font-weight: 500;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
-    font-weight: inherit;
+    color: rgb(192, 205, 243);
+    font-weight: 500;
     text-transform: inherit;
   }
 
