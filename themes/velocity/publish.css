@@ -1074,12 +1074,14 @@ body.theme-light {
   --strikethrough-color: oklch(71.5% 0.0105 281) !important;
   --color-base-55: oklch(65% 0.0105 281) !important;
   --setting-item-background: oklch(100% 0 0 / 0.75) !important;
+  --setting-group-heading-weight: 525 !important;
+  --setting-items-background: oklch(99% 0.0005 281) !important;
+  --setting-items-border-width: 0 !important;
   --color-highlight: rgb(229, 169, 37) !important;
   --metadata-label-font-weight: 500 !important;
   --pill-weight: 500 !important;
   --nav-folder-color: oklch(40% 0.0025 281) !important;
   --bases-table-text-size: 0.90625em !important;
-  --setting-items-background: oklch(99% 0.0005 281) !important;
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1) !important;
@@ -1208,8 +1210,6 @@ body.theme-light {
   --radius-prompt: 24px !important;
   --radius-settings: 27px !important;
   --radius-xxl: 21px !important;
-  --setting-group-heading-weight: 525 !important;
-  --setting-items-border-width: 0 !important;
   --settings-background: color-mix(
     in oklab,
     oklch(96.2% 0.0025 281) 70%,
@@ -2193,12 +2193,14 @@ body.theme-dark {
     oklch(23.5% 0.00125 281) 87.5%,
     oklch(27.5% 0.00375 281)
   );
+  --setting-group-heading-weight: 525;
+  --setting-items-background: oklch(23.5% 0.00125 281);
+  --setting-items-border-width: 0;
   --color-highlight: rgb(248, 201, 111);
   --metadata-label-font-weight: 500;
   --pill-weight: 500;
   --nav-folder-color: oklch(77.5% 0.00375 281);
   --bases-table-text-size: 0.90625em;
-  --setting-items-background: oklch(23.5% 0.00125 281);
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1);
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1);
@@ -2360,8 +2362,6 @@ body.theme-dark {
   --radius-prompt: 24px;
   --radius-settings: 27px;
   --radius-xxl: 21px;
-  --setting-group-heading-weight: 525;
-  --setting-items-border-width: 0;
   --settings-background: color-mix(
     in oklab,
     oklch(26.25% 0.00375 281) 70%,

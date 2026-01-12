@@ -1806,9 +1806,9 @@ body .markdown-rendered a.internal-link {
   font-family: Roboto, Assistant, sans-serif;
   font-weight: 300;
   outline: inherit;
-  text-decoration: none solid rgb(166, 138, 249);
+  text-decoration: underline solid rgb(197, 182, 252);
   text-decoration-color: light-dark(rgb(166, 138, 249), rgb(197, 182, 252));
-  text-decoration-line: none;
+  text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
   transition: inherit;
@@ -2333,7 +2333,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(2, 122, 255);
+  stroke: rgb(172, 152, 221);
 }
 body .callout > .callout-title > .callout-title-inner {
   color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
@@ -2616,7 +2616,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(200, 194, 214);
+  stroke: rgb(172, 152, 221);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
@@ -2657,8 +2657,8 @@ body .markdown-rendered table {
   border-start-end-radius: 10px;
   border-end-start-radius: 10px;
   border-end-end-radius: 10px;
-  margin: 16px 0px 20px;
-  margin-block-end: 20px;
+  margin: 16px 0px 0px;
+  margin-block-end: 0px;
   margin-block-start: 16px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
@@ -2736,7 +2736,7 @@ body .markdown-rendered img {
   filter: none;
   max-width: 100%;
   object-fit: fill;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2754,7 +2754,7 @@ body .markdown-rendered img {
 body .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2771,19 +2771,8 @@ body .markdown-rendered figure {
   padding: 0px;
 }
 body .markdown-rendered figcaption {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
+  font-family: Roboto, Assistant, sans-serif;
   font-size: 16px;
   font-style: normal;
   text-align: start;
@@ -2800,7 +2789,7 @@ body .markdown-rendered video {
   filter: none;
   max-width: 100%;
   object-fit: contain;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2817,7 +2806,7 @@ body .markdown-rendered video {
 }
 body .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2980,7 +2969,7 @@ body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 6px;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3004,21 +2993,10 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+  background-color: light-dark(rgb(253, 252, 255), rgb(24, 23, 28));
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
+  font-family: Roboto, Assistant, sans-serif;
+  border: 1px solid light-dark(rgb(223, 218, 236), rgb(80, 74, 94));
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -3031,7 +3009,7 @@ body input[type="text"] {
 }
 body details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3049,9 +3027,9 @@ body details {
 }
 body summary {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   cursor: auto;
-  font-weight: 400;
+  font-weight: 300;
   list-style: inherit;
   padding: 0px;
 }
@@ -3074,15 +3052,15 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(rgb(243, 241, 248), rgb(45, 42, 53));
   box-shadow: none;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
   font-size: 14px;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3101,8 +3079,8 @@ body dl {
   margin-inline-start: 0px;
 }
 body dt {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-weight: 400;
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
+  font-weight: 300;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -3110,7 +3088,7 @@ body dt {
   margin-inline-start: 0px;
 }
 body dd {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -3119,19 +3097,19 @@ body dd {
   padding: 0px;
 }
 body sub {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   font-size: 13.3333px;
   vertical-align: sub;
 }
 body sup {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   font-size: 13.3333px;
   vertical-align: super;
 }
 body abbr {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   cursor: auto;
-  text-decoration: underline dotted rgb(218, 218, 218);
+  text-decoration: underline dotted rgb(200, 194, 214);
   text-decoration-style: dotted;
 }
 body .backlink-pane {
@@ -3265,14 +3243,14 @@ body input::placeholder {
   opacity: inherit;
 }
 body .markdown-rendered p::first-letter {
-  color: inherit;
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
   font-size: 16px;
-  font-weight: inherit;
+  font-weight: 300;
   float: inherit;
 }
 body .markdown-rendered p::first-line {
-  color: inherit;
-  font-weight: inherit;
+  color: light-dark(rgb(75, 73, 80), rgb(200, 194, 214));
+  font-weight: 300;
   text-transform: inherit;
 }
 body .math-block > mjx-container.MathJax {
