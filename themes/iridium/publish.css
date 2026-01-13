@@ -168,7 +168,7 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgb(227, 223, 236) !important;
+  --background-modifier-active-hover: rgb(0, 0, 0) !important;
   --background-modifier-border: rgb(221, 217, 232) !important;
   --background-modifier-border-focus: rgb(182, 172, 205) !important;
   --background-modifier-border-hover: rgb(207, 201, 222) !important;
@@ -179,7 +179,7 @@ body.theme-light {
   --background-modifier-error-rgb: 233, 49, 71 !important;
   --background-modifier-form-field: #ffffff !important;
   --background-modifier-form-field-hover: #ffffff !important;
-  --background-modifier-hover: rgb(238, 236, 244) !important;
+  --background-modifier-hover: rgb(0, 0, 0) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #08b94e !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
@@ -228,7 +228,7 @@ body.theme-light {
   --bases-table-group-background: rgb(249, 249, 251) !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: #ffffff !important;
-  --bases-table-header-background-hover: rgb(238, 236, 244) !important;
+  --bases-table-header-background-hover: rgb(0, 0, 0) !important;
   --bases-table-header-color: #222222 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -241,7 +241,7 @@ body.theme-light {
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: #ffffff !important;
-  --bases-table-summary-background-hover: rgb(238, 236, 244) !important;
+  --bases-table-summary-background-hover: rgb(0, 0, 0) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: rgba(138, 92, 245, 0.1) !important;
@@ -300,7 +300,7 @@ body.theme-light {
   --code-background: transparent !important;
   --code-border-color: rgb(0, 0, 0) !important;
   --code-border-width: 1px !important;
-  --code-bracket-background: rgb(238, 236, 244) !important;
+  --code-bracket-background: rgb(0, 0, 0) !important;
   --code-comment: #ababab !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
@@ -450,7 +450,7 @@ body.theme-light {
   --footnote-id-color-no-occurrences: #ababab !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgb(238, 236, 244) !important;
+  --footnote-input-background-active: rgb(0, 0, 0) !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -631,7 +631,7 @@ body.theme-light {
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgb(238, 236, 244) !important;
+  --metadata-input-background-active: rgb(0, 0, 0) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -642,7 +642,7 @@ body.theme-light {
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-text-color: #222222 !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgb(238, 236, 244) !important;
+  --metadata-label-background-active: rgb(0, 0, 0) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -655,7 +655,7 @@ body.theme-light {
   --metadata-max-width: none !important;
   --metadata-padding: 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgb(238, 236, 244) !important;
+  --metadata-property-background-active: rgb(0, 0, 0) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(182, 172, 205) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(207, 201, 222) !important;
@@ -687,8 +687,8 @@ body.theme-light {
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgb(221, 217, 232) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgb(238, 236, 244) !important;
-  --nav-item-background-hover: rgb(238, 236, 244) !important;
+  --nav-item-background-active: rgb(0, 0, 0) !important;
+  --nav-item-background-hover: rgb(0, 0, 0) !important;
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
@@ -984,8 +984,8 @@ body.theme-light {
   ) !important;
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
   --nn-theme-nav-bg: transparent !important;
-  --nn-theme-navitem-selected-bg: rgb(238, 236, 244) !important;
-  --nn-theme-file-selected-bg: rgb(238, 236, 244) !important;
+  --nn-theme-navitem-selected-bg: rgb(0, 0, 0) !important;
+  --nn-theme-file-selected-bg: rgb(0, 0, 0) !important;
   --i-0: rgb(249, 249, 251) !important;
   --i-1: rgb(247, 245, 249) !important;
   --i-2: rgb(238, 236, 244) !important;
@@ -1050,19 +1050,24 @@ body.theme-light {
   --i-lt-heading-accent: rgb(138, 92, 245) !important;
   --i-lt-layout-border-l: 8% !important;
   --i-lt-layout-l: 12% !important;
-  --i-pattern-color: rgb(247, 245, 249) !important;
+  --i-pattern-color: hsl(from rgb(247, 245, 249) h s 97%) !important;
   --i-pattern-dk-l: 3% !important;
   --i-pattern-height: 10px !important;
   --i-pattern-line-width: 1px !important;
   --i-pattern-lt-l: 3% !important;
   --i-pattern-width: 10px !important;
+  --i-properties-s: 88% !important;
   --i-s: 25% !important;
   --i-scrollbar-color: rgb(216, 210, 228) !important;
   --i-scrollbar-color-active: rgb(205, 198, 221) !important;
+  --i-scrollbar-thumb-size: 5px !important;
+  --i-scrollbar-track-size: 11px !important;
   --i-spacing-below-headings: 0.3rem !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
   --nn-theme-quick-actions-bg: #ffffff !important;
+  --setting-items-background: #ffffff !important;
+  --setting-items-border-width: 1px !important;
   --i-lt-border-l: 14% !important;
   --i-lt-l-multiplier: 1 !important;
   --i-lt-layout-s: 25% !important;
@@ -1082,7 +1087,7 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: rgb(53, 49, 63);
+  --background-modifier-active-hover: rgb(0, 0, 0);
   --background-modifier-border: rgb(51, 47, 60);
   --background-modifier-border-focus: rgb(80, 74, 94);
   --background-modifier-border-hover: rgb(61, 56, 71);
@@ -1093,7 +1098,7 @@ body.theme-dark {
   --background-modifier-error-rgb: 251, 70, 76;
   --background-modifier-form-field: rgb(29, 27, 34);
   --background-modifier-form-field-hover: rgb(29, 27, 34);
-  --background-modifier-hover: rgb(49, 45, 57);
+  --background-modifier-hover: rgb(0, 0, 0);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
@@ -1142,7 +1147,7 @@ body.theme-dark {
   --bases-table-group-background: rgb(34, 31, 40);
   --bases-table-group-gap: 10px;
   --bases-table-header-background: rgb(29, 27, 34);
-  --bases-table-header-background-hover: rgb(49, 45, 57);
+  --bases-table-header-background-hover: rgb(0, 0, 0);
   --bases-table-header-color: rgb(217, 217, 217);
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
@@ -1155,7 +1160,7 @@ body.theme-dark {
   --bases-table-row-border-width: 1px;
   --bases-table-row-height: 30px;
   --bases-table-summary-background: rgb(29, 27, 34);
-  --bases-table-summary-background-hover: rgb(49, 45, 57);
+  --bases-table-summary-background-hover: rgb(0, 0, 0);
   --bases-toolbar-badge-display: none;
   --bases-toolbar-label-display: block;
   --blockquote-background-color: rgba(138, 92, 245, 0.1);
@@ -1214,7 +1219,7 @@ body.theme-dark {
   --code-background: transparent;
   --code-border-color: rgb(0, 0, 0);
   --code-border-width: 1px;
-  --code-bracket-background: rgb(49, 45, 57);
+  --code-bracket-background: rgb(0, 0, 0);
   --code-comment: rgb(102, 102, 102);
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -1364,7 +1369,7 @@ body.theme-dark {
   --footnote-id-color-no-occurrences: rgb(102, 102, 102);
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
-  --footnote-input-background-active: rgb(49, 45, 57);
+  --footnote-input-background-active: rgb(0, 0, 0);
   --footnote-line-height: 1.5;
   --footnote-padding-block: 6px;
   --footnote-padding-inline: 6px;
@@ -1543,7 +1548,7 @@ body.theme-dark {
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: rgb(49, 45, 57);
+  --metadata-input-background-active: rgb(0, 0, 0);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -1554,7 +1559,7 @@ body.theme-dark {
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: rgb(217, 217, 217);
   --metadata-label-background: transparent;
-  --metadata-label-background-active: rgb(49, 45, 57);
+  --metadata-label-background-active: rgb(0, 0, 0);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -1567,7 +1572,7 @@ body.theme-dark {
   --metadata-max-width: none;
   --metadata-padding: 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: rgb(49, 45, 57);
+  --metadata-property-background-active: rgb(0, 0, 0);
   --metadata-property-background-hover: transparent;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(80, 74, 94);
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(61, 56, 71);
@@ -1599,8 +1604,8 @@ body.theme-dark {
   --nav-heading-weight-hover: 500;
   --nav-indentation-guide-color: rgb(53, 49, 63);
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: rgb(49, 45, 57);
-  --nav-item-background-hover: rgb(49, 45, 57);
+  --nav-item-background-active: rgb(0, 0, 0);
+  --nav-item-background-hover: rgb(0, 0, 0);
   --nav-item-background-selected: rgba(138, 92, 245, 0.15);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
@@ -1886,8 +1891,8 @@ body.theme-dark {
   --nn-theme-mobile-toolbar-button-active-icon-color: rgb(138, 92, 245);
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245);
   --nn-theme-nav-bg: transparent;
-  --nn-theme-navitem-selected-bg: rgb(49, 45, 57);
-  --nn-theme-file-selected-bg: rgb(49, 45, 57);
+  --nn-theme-navitem-selected-bg: rgb(0, 0, 0);
+  --nn-theme-file-selected-bg: rgb(0, 0, 0);
   --i-0: rgb(32, 29, 37);
   --i-1: rgb(34, 31, 40);
   --i-2: rgb(39, 36, 46);
@@ -1954,19 +1959,24 @@ body.theme-dark {
   --i-lt-heading-accent: rgb(138, 92, 245);
   --i-lt-layout-border-l: 8%;
   --i-lt-layout-l: 12%;
-  --i-pattern-color: rgb(36, 34, 43);
+  --i-pattern-color: hsl(from rgb(34, 31, 40) h s 15%);
   --i-pattern-dk-l: 3%;
   --i-pattern-height: 10px;
   --i-pattern-line-width: 1px;
   --i-pattern-lt-l: 3%;
   --i-pattern-width: 10px;
+  --i-properties-s: 12%;
   --i-s: 12%;
   --i-scrollbar-color: rgb(68, 63, 80);
   --i-scrollbar-color-active: rgb(73, 67, 86);
+  --i-scrollbar-thumb-size: 5px;
+  --i-scrollbar-track-size: 11px;
   --i-spacing-below-headings: 0.3rem;
   --nn-theme-file-tag-border-radius: 4px;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245);
   --nn-theme-quick-actions-bg: rgb(29, 27, 34);
+  --setting-items-background: rgb(29, 27, 34);
+  --setting-items-border-width: 1px;
 }
 
 body .markdown-rendered a.external-link {
@@ -2249,7 +2259,10 @@ body del {
   user-select: text;
 }
 body .suggestion-item.is-selected {
-  background-color: light-dark(rgb(238, 236, 244), rgb(49, 45, 57));
+  background-color: light-dark(
+    rgba(162, 150, 192, 0.2),
+    rgba(70, 65, 83, 0.55)
+  );
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2586,7 +2599,10 @@ body div.search-results .suggestion-item {
 body .search-results .suggestion-item.is-selected {
   color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
   font-weight: 400;
-  background-color: light-dark(rgb(238, 236, 244), rgb(49, 45, 57));
+  background-color: light-dark(
+    rgba(162, 150, 192, 0.2),
+    rgba(70, 65, 83, 0.55)
+  );
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
@@ -3771,7 +3787,10 @@ body .nav-view-outer .tree-item-self a {
   text-decoration: none solid rgb(217, 217, 217);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: light-dark(rgb(238, 236, 244), rgb(49, 45, 57));
+  background-color: light-dark(
+    rgba(162, 150, 192, 0.2),
+    rgba(70, 65, 83, 0.55)
+  );
   border: 0px light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;

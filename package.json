@@ -49,8 +49,8 @@
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "typescript": "^5.9.2",
-    "wdio-obsidian-reporter": "^2.0.1",
-    "wdio-obsidian-service": "^2.0.1",
+    "wdio-obsidian-reporter": "^2.2.0",
+    "wdio-obsidian-service": "^2.2.0",
     "webdriverio": "^9.18.4"
   },
   "dependencies": {

@@ -51,7 +51,7 @@
   --bases-embed-border-radius: 0 !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #222222 !important;
+  --bases-group-heading-property-color: #222 !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -68,7 +68,7 @@
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #1a3319 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #000000 !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px #000 !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -79,7 +79,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: #c5c5c5 !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --bases-table-header-color: #222222 !important;
+  --bases-table-header-color: #222 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -95,7 +95,7 @@
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: #000000 !important;
+  --blockquote-border-color: #000 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -104,7 +104,7 @@
   --button-radius: 0 !important;
   --callout-blend-mode: darken !important;
   --callout-border-opacity: 0.25 !important;
-  --callout-border-width: 0px !important;
+  --callout-border-width: 1px !important;
   --callout-bug: 233, 49, 71 !important;
   --callout-content-background: transparent !important;
   --callout-content-padding: 0 !important;
@@ -134,17 +134,17 @@
   --canvas-color-4: 8, 185, 78 !important;
   --canvas-color-5: 0, 191, 188 !important;
   --canvas-color-6: 120, 82, 238 !important;
-  --canvas-dot-pattern: rgba(80, 80, 80, 0.3) !important;
-  --caret-color: #000000 !important;
+  --canvas-dot-pattern: color-mix(in srgb, #505050, transparent 70%) !important;
+  --caret-color: #000 !important;
   --checkbox-border-color: #7e7e7e !important;
-  --checkbox-border-color-hover: #222222 !important;
-  --checkbox-color: #000000 !important;
-  --checkbox-color-hover: #000000 !important;
+  --checkbox-border-color-hover: #222 !important;
+  --checkbox-color: #000 !important;
+  --checkbox-color-hover: #000 !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #c5c5c5 !important;
   --checkbox-radius: 0 !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #222222 !important;
+  --checklist-done-color: #222 !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 0 !important;
   --code-background: #b0b0b0 !important;
@@ -155,18 +155,18 @@
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
   --code-keyword: #d53984 !important;
-  --code-normal: #000000 !important;
+  --code-normal: #000 !important;
   --code-operator: #e93147 !important;
   --code-property: #00bfbc !important;
-  --code-punctuation: #222222 !important;
-  --code-radius: 0 !important;
+  --code-punctuation: #222 !important;
+  --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #08b94e !important;
   --code-tag: #e93147 !important;
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #7e7e7e !important;
-  --collapse-icon-color-collapsed: #000000 !important;
+  --collapse-icon-color-collapsed: #000 !important;
   --color-accent: rgb(71, 71, 71) !important;
   --color-accent-1: rgb(77, 77, 77) !important;
   --color-accent-2: rgb(82, 82, 82) !important;
@@ -207,7 +207,7 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: transparent !important;
-  --divider-color-hover: #000000 !important;
+  --divider-color-hover: #000 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -223,7 +223,7 @@
     0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid #000000 !important;
+  --embed-border-start: 2px solid #000 !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -237,7 +237,7 @@
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
   --flair-background: #b0b0b0 !important;
-  --flair-color: #000000 !important;
+  --flair-color: #000 !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -281,7 +281,7 @@
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: #222222 !important;
+  --footnote-id-color: #222 !important;
   --footnote-id-color-no-occurrences: #7e7e7e !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
@@ -294,13 +294,13 @@
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #222222 !important;
-  --graph-node: #000000 !important;
+  --graph-line: #222 !important;
+  --graph-node: #000 !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: #000000 !important;
+  --graph-node-focused: #000 !important;
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: #7e7e7e !important;
-  --graph-text: #000000 !important;
+  --graph-text: #000 !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -343,10 +343,10 @@
   --highlight-mix-blend-mode: darken !important;
   --hr-color: transparent !important;
   --hr-thickness: 2px !important;
-  --icon-color: #000000 !important;
-  --icon-color-active: #000000 !important;
-  --icon-color-focused: #000000 !important;
-  --icon-color-hover: #222222 !important;
+  --icon-color: #000 !important;
+  --icon-color-active: #000 !important;
+  --icon-color-focused: #000 !important;
+  --icon-color-hover: #222 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -364,8 +364,8 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: #000000 !important;
-  --indentation-guide-color-active: #000000 !important;
+  --indentation-guide-color: #000 !important;
+  --indentation-guide-color-active: #000 !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -377,7 +377,7 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
+  --input-border-width: 2px !important;
   --input-border-width-focus: 2px !important;
   --input-date-separator: #7e7e7e !important;
   --input-font-weight: 400 !important;
@@ -393,8 +393,8 @@
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
-  --interactive-accent: #000000 !important;
-  --interactive-accent-hover: #000000 !important;
+  --interactive-accent: #000 !important;
+  --interactive-accent-hover: #000 !important;
   --interactive-accent-hsl: 0, 0%, 28% !important;
   --interactive-hover: #fafafa !important;
   --interactive-normal: #b0b0b0 !important;
@@ -411,17 +411,17 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #000000 !important;
-  --link-color-hover: #000000 !important;
+  --link-color: #000 !important;
+  --link-color-hover: #000 !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #000000 !important;
-  --link-external-color-hover: #000000 !important;
+  --link-external-color: #000 !important;
+  --link-external-color-hover: #000 !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #000000 !important;
+  --link-unresolved-color: #000 !important;
   --link-unresolved-decoration-color: rgba(71, 71, 71, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -435,9 +435,9 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #000000 !important;
-  --list-marker-color-collapsed: #000000 !important;
-  --list-marker-color-hover: #222222 !important;
+  --list-marker-color: #000 !important;
+  --list-marker-color-collapsed: #000 !important;
+  --list-marker-color-hover: #222 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
@@ -468,14 +468,14 @@
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #000000 !important;
+  --metadata-input-text-color: #000 !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: "Sen", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #222222 !important;
-  --metadata-label-text-color-hover: #222222 !important;
+  --metadata-label-text-color: #222 !important;
+  --metadata-label-text-color-hover: #222 !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
@@ -504,32 +504,32 @@
   --mono-rgb-100: 0, 0, 0 !important;
   --nav-collapse-icon-color: #7e7e7e !important;
   --nav-collapse-icon-color-collapsed: #7e7e7e !important;
-  --nav-heading-color: #000000 !important;
+  --nav-heading-color: #000 !important;
   --nav-heading-color-collapsed: #7e7e7e !important;
-  --nav-heading-color-collapsed-hover: #222222 !important;
-  --nav-heading-color-hover: #000000 !important;
+  --nav-heading-color-collapsed-hover: #222 !important;
+  --nav-heading-color-hover: #000 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: #000000 !important;
+  --nav-indentation-guide-color: #000 !important;
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-selected: rgba(71, 71, 71, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #222222 !important;
-  --nav-item-color-active: #000000 !important;
-  --nav-item-color-highlighted: #000000 !important;
-  --nav-item-color-hover: #000000 !important;
-  --nav-item-color-selected: #000000 !important;
+  --nav-item-color: #222 !important;
+  --nav-item-color-active: #000 !important;
+  --nav-item-color-highlighted: #000 !important;
+  --nav-item-color-hover: #000 !important;
+  --nav-item-color-selected: #000 !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: #7e7e7e !important;
-  --nav-tag-color-active: #222222 !important;
-  --nav-tag-color-hover: #222222 !important;
+  --nav-tag-color-active: #222 !important;
+  --nav-tag-color-hover: #222 !important;
   --nav-tag-radius: 0 !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
@@ -550,10 +550,10 @@
   --pill-border-color: transparent !important;
   --pill-border-color-hover: #d4d4d4 !important;
   --pill-border-width: 1px !important;
-  --pill-color: #222222 !important;
-  --pill-color-hover: #000000 !important;
+  --pill-color: #222 !important;
+  --pill-color-hover: #000 !important;
   --pill-color-remove: #7e7e7e !important;
-  --pill-color-remove-hover: #000000 !important;
+  --pill-color-remove-hover: #000 !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -585,16 +585,20 @@
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: #00000033 !important;
+  --scrollbar-active-thumb-bg: color-mix(
+    in srgb,
+    #222,
+    transparent 80%
+  ) !important;
   --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 0 !important;
-  --scrollbar-thumb-bg: #00000026 !important;
+  --scrollbar-radius: 4px !important;
+  --scrollbar-thumb-bg: color-mix(in srgb, #222, transparent 85%) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #222222 !important;
+  --search-clear-button-color: #222 !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #222222 !important;
+  --search-icon-color: #222 !important;
   --search-icon-size: 18px !important;
   --search-result-background: #c5c5c5 !important;
   --shadow-l:
@@ -632,7 +636,7 @@
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #000000 !important;
+  --slider-track-background: #fff !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #b0b0b0 !important;
@@ -641,7 +645,7 @@
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 0 0 0 0 !important;
-  --status-bar-text-color: #222222 !important;
+  --status-bar-text-color: #222 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -679,11 +683,11 @@
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(71, 71, 71) !important;
   --tab-text-color: #7e7e7e !important;
-  --tab-text-color-active: #222222 !important;
-  --tab-text-color-focused: #222222 !important;
-  --tab-text-color-focused-active: #222222 !important;
-  --tab-text-color-focused-active-current: #000000 !important;
-  --tab-text-color-focused-highlighted: #000000 !important;
+  --tab-text-color-active: #222 !important;
+  --tab-text-color-focused: #222 !important;
+  --tab-text-color-focused-active: #222 !important;
+  --tab-text-color-focused-active-current: #000 !important;
+  --tab-text-color-focused-highlighted: #000 !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: transparent !important;
@@ -698,14 +702,14 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: #000000 !important;
+  --table-drag-handle-background-active: #000 !important;
   --table-drag-handle-color: #7e7e7e !important;
-  --table-drag-handle-color-active: #ffffff !important;
+  --table-drag-handle-color-active: #fff !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
   --table-header-border-color: #232323 !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: #000000 !important;
+  --table-header-color: #000 !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -715,33 +719,33 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: rgba(71, 71, 71, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: #000000 !important;
+  --table-selection-border-color: #000 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: #5050501a !important;
+  --tag-background: color-mix(in srgb, #222, transparent 90%) !important;
   --tag-background-hover: #7a9f79 !important;
-  --tag-border-color: #000000 !important;
+  --tag-border-color: #000 !important;
   --tag-border-color-hover: rgba(71, 71, 71, 0.15) !important;
   --tag-border-width: 2px !important;
-  --tag-color: #000000 !important;
-  --tag-color-hover: #000000 !important;
+  --tag-color: #000 !important;
+  --tag-color-hover: #000 !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 0 !important;
   --tag-size: 0.875em !important;
-  --text-accent: #000000 !important;
-  --text-accent-hover: #000000 !important;
+  --text-accent: #000 !important;
+  --text-accent-hover: #000 !important;
   --text-error: #e93147 !important;
   --text-faint: #7e7e7e !important;
   --text-highlight-bg: #94b293 !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #222222 !important;
-  --text-normal: #000000 !important;
-  --text-on-accent: #ffffff !important;
+  --text-muted: #222 !important;
+  --text-normal: #000 !important;
+  --text-on-accent: #fff !important;
   --text-on-accent-inverted: black !important;
   --text-selection: #7a9f79 !important;
   --text-success: #08b94e !important;
@@ -751,8 +755,8 @@
   --titlebar-border-color: transparent !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #222222 !important;
-  --titlebar-text-color-focused: #000000 !important;
+  --titlebar-text-color: #222 !important;
+  --titlebar-text-color-focused: #000 !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -766,8 +770,8 @@
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #000000 !important;
-  --vault-profile-color-hover: #000000 !important;
+  --vault-profile-color: #000 !important;
+  --vault-profile-color-hover: #000 !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -776,89 +780,87 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: #000000 !important;
-  --h2-color: #000000 !important;
-  --h3-color: #000000 !important;
-  --h4-color: #000000 !important;
-  --h5-color: #000000 !important;
-  --h6-color: #000000 !important;
-  --inline-title-color: #000000 !important;
+  --h1-color: #000 !important;
+  --h2-color: #000 !important;
+  --h3-color: #000 !important;
+  --h4-color: #000 !important;
+  --h5-color: #000 !important;
+  --h6-color: #000 !important;
+  --inline-title-color: #000 !important;
   --quote-opening-modifier: #232323 !important;
-  --b-dark-accent: #bfbfbf !important;
-  --b-dark-bg: #3c3c3c !important;
-  --b-dark-border: #c0c0c0 !important;
-  --b-dark-selection: #00526e !important;
-  --b-dark-surface: #323232 !important;
-  --b-dark-text-faint: #6a6a6a !important;
-  --b-dark-text-main: #b3b3b3 !important;
-  --b-dark-text-muted: #b3b3b3 !important;
-  --b-light-accent: #000000 !important;
-  --b-light-bg: #c5c5c5 !important;
-  --b-light-border: #232323 !important;
-  --b-light-selection: #7a9f79 !important;
-  --b-light-surface: #b0b0b0 !important;
-  --b-light-text-faint: #7e7e7e !important;
-  --b-light-text-main: #000000 !important;
-  --b-light-text-muted: #222222 !important;
   --button-bg-dynamic: #d0d0d0 !important;
-  --button-bg-hover-dynamic: #c0c0c0 !important;
-  --button-bg-light-hover-raw: #c0c0c0 !important;
-  --button-bg-light-raw: #d0d0d0 !important;
-  --button-text-dynamic: #000000 !important;
-  --button-text-hover-dynamic: #000000 !important;
-  --calendar-accent-dark: #ff9800 !important;
-  --calendar-accent-light: #e72525af !important;
+  --button-bg-hover-dynamic: silver !important;
+  --button-text-dynamic: #000 !important;
+  --button-text-hover-dynamic: #000 !important;
   --calendar-dot-bg: #e72525 !important;
-  --calendar-header-color: #111111 !important;
+  --calendar-header-color: #111 !important;
   --calendar-today-color: #e72525 !important;
   --callout-abstract: 88, 139, 150 !important;
   --callout-note: 84, 122, 155 !important;
-  --cta-bg-dynamic: #000000 !important;
+  --checkbox-border-width: 1px !important;
+  --cta-bg-dynamic: #000 !important;
   --cta-bg-hover-dynamic: #404040 !important;
-  --cta-hover-dark: #e0e0e0 !important;
-  --cta-hover-light: #404040 !important;
-  --cta-text-dynamic: #ffffff !important;
-  --dark-accent-custom: #bfbfbf !important;
+  --cta-text-dynamic: #fff !important;
+  --dark-accent-custom: #d9d9d9 !important;
+  --dashboard-border-width: 1px !important;
   --dashboard-col-width: 320px !important;
   --dashboard-gap: 20px !important;
+  --db-radius: 0 !important;
   --drag-bg: color-mix(in srgb, #7a9f79, transparent 85%) !important;
   --drag-border: #7a9f79 !important;
+  --drag-border-width: 3px !important;
   --drawer-border: 0px !important;
   --editor-width: 600px !important;
-  --font-colour-dark-grey-33: #333333 !important;
+  --font-colour-dark-grey-33: #333 !important;
   --font-colour-light-grey-70: #707070 !important;
   --font-colour-light-grey-bd: #bdbdbd !important;
   --font-ui: "Sen", sans-serif !important;
   --font-ui-override: "Sen", sans-serif !important;
+  --hairline-width: 1px !important;
+  --inline-title-align: left !important;
   --input-bg-override: #b0b0b0 !important;
   --input-border: #232323 !important;
   --ios-transparency-amount: 15% !important;
-  --light-accent-custom: #000000 !important;
+  --light-accent-custom: #000 !important;
   --markdown-formatting-color: #575757 !important;
   --mobile-active-bg: #7a9f79 !important;
   --mobile-drawer-bg: #b0b0b0 !important;
-  --mobile-drawer-border: #000000 !important;
+  --mobile-drawer-border: #000 !important;
+  --mobile-drawer-border-width: 0px !important;
   --mobile-item-bg: #c5c5c5 !important;
-  --mobile-item-shadow: 0 2px 5px #00000033 !important;
+  --mobile-item-shadow: 0 2px 5px #0003 !important;
+  --mobile-navbar-border-width: 0px !important;
+  --mobile-navbar-radius: 8px !important;
+  --nav-guide-border-width: 1px !important;
   --new-tab-hover-bg: #5050501a !important;
-  --new-tab-hover-text: #000000 !important;
+  --new-tab-hover-text: #000 !important;
+  --panel-border-width: 0px !important;
   --prompt-background: #b0b0b0 !important;
   --prompt-border-radius: 0 !important;
   --scrollbar-track-bg: #c5c5c5 !important;
   --settings-bg-color: #b0b0b0 !important;
-  --settings-border-color: #000000 !important;
+  --settings-border-color: #000 !important;
+  --settings-border-width: 0px !important;
   --settings-icon-fill: #5e2c99 !important;
+  --shadow-checkbox-inset: inset 0 0 0 2px #c5c5c5 !important;
+  --shadow-floating-card: drop-shadow(0 4px 12px #00000040) !important;
+  --shadow-focus-inset: inset 0 0 0 1px #000 !important;
+  --shadow-focus-ring: 0 0 0 2px #000 !important;
+  --shadow-navbar-separator-dark: inset 0 -0.5px 0 0 #ffffff1a !important;
+  --shadow-navbar-separator-light: inset 0 -0.5px 0 0 #0000001a !important;
+  --shadow-none: none !important;
   --suggestion-item-border-radius: 0 !important;
-  --tab-active-bg-sidebar: #ffffff66 !important;
+  --suggestion-radius: 8px !important;
+  --tab-active-bg-sidebar: #fff6 !important;
   --tab-hover-bg-doc: #7a9f79 !important;
-  --tab-hover-bg-ui: #5050501a !important;
-  --tab-hover-text-ui: #000000 !important;
+  --tab-hover-bg-ui: color-mix(in srgb, #222, transparent 90%) !important;
+  --tab-hover-text-ui: #000 !important;
   --text-align-mode: left !important;
   --toggle-track-radius: 0 !important;
-  --vertical-tab-active-color: #000000 !important;
-  --vertical-tab-header-color: #000000 !important;
-  --canvas-color-arrow: #000000 !important;
-  --canvas-color-edge: #000000 !important;
+  --vertical-tab-active-color: #000 !important;
+  --vertical-tab-header-color: #000 !important;
+  --canvas-color-arrow: #000 !important;
+  --canvas-color-edge: #000 !important;
   --canvas-ink-light: #505050 !important;
 
   --quartz-icon-color: currentColor;
@@ -878,7 +880,7 @@
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(191, 191, 191, 0.1) !important;
   --background-modifier-border: #3c3c3c !important;
-  --background-modifier-border-focus: #ffffff !important;
+  --background-modifier-border-focus: #fff !important;
   --background-modifier-border-hover: #3f3f3f !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
@@ -918,14 +920,14 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #c0c0c0 !important;
+  --bases-table-border-color: silver !important;
   --bases-table-cell-background-active: #3c3c3c !important;
   --bases-table-cell-background-disabled: #323232 !important;
   --bases-table-cell-background-selected: rgba(191, 191, 191, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #ffffff !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #bfbfbf !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #fff !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px #d9d9d9 !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -952,7 +954,7 @@
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: #bfbfbf !important;
+  --blockquote-border-color: #d9d9d9 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -961,7 +963,7 @@
   --button-radius: 0 !important;
   --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
-  --callout-border-width: 0px;
+  --callout-border-width: 1px;
   --callout-bug: 251, 70, 76;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
@@ -995,8 +997,8 @@
   --caret-color: #b3b3b3 !important;
   --checkbox-border-color: #6a6a6a !important;
   --checkbox-border-color-hover: #b3b3b3 !important;
-  --checkbox-color: #bfbfbf !important;
-  --checkbox-color-hover: #ffffff !important;
+  --checkbox-color: #d9d9d9 !important;
+  --checkbox-color-hover: #fff !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #3c3c3c !important;
   --checkbox-radius: 0 !important;
@@ -1016,14 +1018,14 @@
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
   --code-punctuation: #b3b3b3 !important;
-  --code-radius: 0 !important;
+  --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #44cf6e !important;
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #6a6a6a !important;
-  --collapse-icon-color-collapsed: #bfbfbf !important;
+  --collapse-icon-color-collapsed: #d9d9d9 !important;
   --color-accent: rgb(191, 191, 191) !important;
   --color-accent-1: rgb(219, 219, 219) !important;
   --color-accent-2: rgb(247, 247, 247) !important;
@@ -1064,7 +1066,7 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #3c3c3c !important;
-  --divider-color-hover: #bfbfbf !important;
+  --divider-color-hover: #d9d9d9 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -1080,7 +1082,7 @@
     0 0 0 1px #3c3c3c, inset 0 0 0 1px #3c3c3c !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid #bfbfbf !important;
+  --embed-border-start: 2px solid #d9d9d9 !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1154,7 +1156,7 @@
   --graph-line: #b3b3b3 !important;
   --graph-node: #b3b3b3 !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: #bfbfbf !important;
+  --graph-node-focused: #d9d9d9 !important;
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: #6a6a6a !important;
   --graph-text: #b3b3b3 !important;
@@ -1201,7 +1203,7 @@
   --hr-color: #3c3c3c !important;
   --hr-thickness: 2px !important;
   --icon-color: #b3b3b3 !important;
-  --icon-color-active: #bfbfbf !important;
+  --icon-color-active: #d9d9d9 !important;
   --icon-color-focused: #b3b3b3 !important;
   --icon-color-hover: #b3b3b3 !important;
   --icon-l: 18px !important;
@@ -1221,8 +1223,8 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: #bfbfbf !important;
-  --indentation-guide-color-active: #bfbfbf !important;
+  --indentation-guide-color: #d9d9d9 !important;
+  --indentation-guide-color-active: #d9d9d9 !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -1234,7 +1236,7 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
+  --input-border-width: 2px !important;
   --input-border-width-focus: 2px !important;
   --input-date-separator: #6a6a6a !important;
   --input-font-weight: 400 !important;
@@ -1250,8 +1252,8 @@
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
-  --interactive-accent: #bfbfbf !important;
-  --interactive-accent-hover: #ffffff !important;
+  --interactive-accent: #d9d9d9 !important;
+  --interactive-accent-hover: #fff !important;
   --interactive-accent-hsl: 0, 0%, 75% !important;
   --interactive-hover: #3f3f3f !important;
   --interactive-normal: #323232 !important;
@@ -1268,17 +1270,17 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #bfbfbf !important;
-  --link-color-hover: #ffffff !important;
+  --link-color: #d9d9d9 !important;
+  --link-color-hover: #fff !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #bfbfbf !important;
-  --link-external-color-hover: #ffffff !important;
+  --link-external-color: #d9d9d9 !important;
+  --link-external-color-hover: #fff !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #bfbfbf !important;
+  --link-unresolved-color: #d9d9d9 !important;
   --link-unresolved-decoration-color: rgba(191, 191, 191, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -1292,8 +1294,8 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #bfbfbf !important;
-  --list-marker-color-collapsed: #bfbfbf !important;
+  --list-marker-color: #d9d9d9 !important;
+  --list-marker-color-collapsed: #d9d9d9 !important;
   --list-marker-color-hover: #b3b3b3 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -1339,7 +1341,7 @@
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #ffffff !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #fff !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
@@ -1367,7 +1369,7 @@
   --nav-heading-color-hover: #b3b3b3 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: #bfbfbf !important;
+  --nav-indentation-guide-color: #d9d9d9 !important;
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
@@ -1376,7 +1378,7 @@
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #b3b3b3 !important;
   --nav-item-color-active: #b3b3b3 !important;
-  --nav-item-color-highlighted: #bfbfbf !important;
+  --nav-item-color-highlighted: #d9d9d9 !important;
   --nav-item-color-hover: #b3b3b3 !important;
   --nav-item-color-selected: #b3b3b3 !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
@@ -1408,7 +1410,7 @@
   --pill-color: #b3b3b3 !important;
   --pill-color-hover: #b3b3b3 !important;
   --pill-color-remove: #6a6a6a !important;
-  --pill-color-remove-hover: #bfbfbf !important;
+  --pill-color-remove-hover: #d9d9d9 !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1440,12 +1442,16 @@
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: #ffffff33 !important;
+  --scrollbar-active-thumb-bg: color-mix(
+    in srgb,
+    #b3b3b3,
+    transparent 80%
+  ) !important;
   --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 0 !important;
-  --scrollbar-thumb-bg: #ffffff26 !important;
+  --scrollbar-radius: 4px !important;
+  --scrollbar-thumb-bg: color-mix(in srgb, #b3b3b3, transparent 85%) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: #b3b3b3 !important;
   --search-clear-button-size: 13px !important;
@@ -1487,7 +1493,7 @@
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: #ffffff !important;
+  --slider-track-background: #fff !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #323232 !important;
@@ -1538,13 +1544,13 @@
   --tab-text-color-focused: #b3b3b3 !important;
   --tab-text-color-focused-active: #b3b3b3 !important;
   --tab-text-color-focused-active-current: #b3b3b3 !important;
-  --tab-text-color-focused-highlighted: #bfbfbf !important;
+  --tab-text-color-focused-highlighted: #d9d9d9 !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: #3c3c3c !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #c0c0c0 !important;
+  --table-border-color: silver !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1553,12 +1559,12 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: #bfbfbf !important;
+  --table-drag-handle-background-active: #d9d9d9 !important;
   --table-drag-handle-color: #6a6a6a !important;
   --table-drag-handle-color-active: #323232 !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: #c0c0c0 !important;
+  --table-header-border-color: silver !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #b3b3b3 !important;
   --table-header-size: 16px !important;
@@ -1570,29 +1576,29 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: rgba(191, 191, 191, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: #bfbfbf !important;
+  --table-selection-border-color: #d9d9d9 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: #bfbfbf1a !important;
+  --tag-background: color-mix(in srgb, #b3b3b3, transparent 90%) !important;
   --tag-background-hover: #00526e !important;
-  --tag-border-color: #bfbfbf !important;
+  --tag-border-color: #d9d9d9 !important;
   --tag-border-color-hover: rgba(191, 191, 191, 0.15) !important;
   --tag-border-width: 2px !important;
-  --tag-color: #bfbfbf !important;
-  --tag-color-hover: #bfbfbf !important;
+  --tag-color: #d9d9d9 !important;
+  --tag-color-hover: #d9d9d9 !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 0 !important;
   --tag-size: 0.875em !important;
-  --text-accent: #bfbfbf !important;
-  --text-accent-hover: #ffffff !important;
+  --text-accent: #d9d9d9 !important;
+  --text-accent-hover: #fff !important;
   --text-error: #fb464c !important;
   --text-faint: #6a6a6a !important;
-  --text-highlight-bg: #0066ff33 !important;
+  --text-highlight-bg: #06f3 !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #b3b3b3 !important;
   --text-normal: #b3b3b3 !important;
@@ -1631,82 +1637,80 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: #bfbfbf !important;
-  --h2-color: #bfbfbf !important;
-  --h3-color: #bfbfbf !important;
-  --h4-color: #bfbfbf !important;
-  --h5-color: #bfbfbf !important;
-  --h6-color: #bfbfbf !important;
-  --inline-title-color: #bfbfbf !important;
-  --quote-opening-modifier: #c0c0c0 !important;
-  --b-dark-accent: #bfbfbf !important;
-  --b-dark-bg: #3c3c3c !important;
-  --b-dark-border: #c0c0c0 !important;
-  --b-dark-selection: #00526e !important;
-  --b-dark-surface: #323232 !important;
-  --b-dark-text-faint: #6a6a6a !important;
-  --b-dark-text-main: #b3b3b3 !important;
-  --b-dark-text-muted: #b3b3b3 !important;
-  --b-light-accent: #000000 !important;
-  --b-light-bg: #c5c5c5 !important;
-  --b-light-border: #232323 !important;
-  --b-light-selection: #7a9f79 !important;
-  --b-light-surface: #b0b0b0 !important;
-  --b-light-text-faint: #7e7e7e !important;
-  --b-light-text-main: #000000 !important;
-  --b-light-text-muted: #222222 !important;
-  --button-bg-dynamic: #000000 !important;
-  --button-bg-hover-dynamic: #222222 !important;
-  --button-bg-light-hover-raw: #c0c0c0 !important;
-  --button-bg-light-raw: #d0d0d0 !important;
+  --h1-color: #d9d9d9 !important;
+  --h2-color: #d9d9d9 !important;
+  --h3-color: #d9d9d9 !important;
+  --h4-color: #d9d9d9 !important;
+  --h5-color: #d9d9d9 !important;
+  --h6-color: #d9d9d9 !important;
+  --inline-title-color: #d9d9d9 !important;
+  --quote-opening-modifier: silver !important;
+  --button-bg-dynamic: #000 !important;
+  --button-bg-hover-dynamic: #222 !important;
   --button-text-dynamic: #b3b3b3 !important;
   --button-text-hover-dynamic: #b3b3b3 !important;
-  --calendar-accent-dark: #ff9800 !important;
-  --calendar-accent-light: #e72525af !important;
   --calendar-dot-bg: #ff9800 !important;
   --calendar-header-color: #d0d0d0 !important;
   --calendar-today-color: #ff9800 !important;
   --callout-abstract: 109, 163, 174;
   --callout-note: 96, 138, 176;
-  --cta-bg-dynamic: #bfbfbf !important;
+  --checkbox-border-width: 1px !important;
+  --cta-bg-dynamic: #d9d9d9 !important;
   --cta-bg-hover-dynamic: #e0e0e0 !important;
-  --cta-hover-dark: #e0e0e0 !important;
-  --cta-hover-light: #404040 !important;
-  --cta-text-dynamic: #000000 !important;
-  --dark-accent-custom: #bfbfbf !important;
+  --cta-text-dynamic: #000 !important;
+  --dark-accent-custom: #d9d9d9 !important;
+  --dashboard-border-width: 1px !important;
   --dashboard-col-width: 320px !important;
   --dashboard-gap: 20px !important;
+  --db-radius: 0 !important;
   --drag-bg: color-mix(in srgb, #00526e, transparent 85%) !important;
   --drag-border: #00526e !important;
+  --drag-border-width: 3px !important;
   --drawer-border: 0px !important;
   --editor-width: 600px !important;
-  --font-colour-dark-grey-33: #333333 !important;
+  --font-colour-dark-grey-33: #333 !important;
   --font-colour-light-grey-70: #707070 !important;
   --font-colour-light-grey-bd: #bdbdbd !important;
   --font-ui: "Sen", sans-serif !important;
   --font-ui-override: "Sen", sans-serif !important;
+  --hairline-width: 1px !important;
+  --inline-title-align: left !important;
   --input-bg-override: #202020 !important;
-  --input-border: #c0c0c0 !important;
+  --input-border: silver !important;
   --ios-transparency-amount: 15% !important;
-  --light-accent-custom: #000000 !important;
-  --markdown-formatting-color: #ffffff !important;
+  --light-accent-custom: #000 !important;
+  --markdown-formatting-color: #fff !important;
   --mobile-active-bg: #00526e !important;
   --mobile-drawer-bg: #3c3c3c !important;
   --mobile-drawer-border: #6a6a6a !important;
+  --mobile-drawer-border-width: 0px !important;
   --mobile-item-bg: #3c3c3c !important;
   --mobile-item-shadow: 0 2px 5px #00000080 !important;
+  --mobile-navbar-border-width: 0px !important;
+  --mobile-navbar-radius: 8px !important;
+  --nav-guide-border-width: 1px !important;
   --new-tab-hover-bg: #bfbfbf26 !important;
-  --new-tab-hover-text: #ffffff !important;
+  --new-tab-hover-text: #fff !important;
+  --panel-border-width: 0px !important;
   --prompt-background: #323232 !important;
   --prompt-border-radius: 0 !important;
   --scrollbar-track-bg: #3c3c3c !important;
   --settings-bg-color: #3c3c3c !important;
   --settings-border-color: #6a6a6a !important;
+  --settings-border-width: 0px !important;
   --settings-icon-fill: #bf9cfe !important;
+  --shadow-checkbox-inset: inset 0 0 0 2px #3c3c3c !important;
+  --shadow-floating-card: drop-shadow(0 4px 12px #00000040) !important;
+  --shadow-focus-inset: inset 0 0 0 1px #b3b3b3 !important;
+  --shadow-focus-ring: 0 0 0 2px #d9d9d9 !important;
+  --shadow-navbar-separator-dark: inset 0 -0.5px 0 0 #ffffff1a !important;
+  --shadow-navbar-separator-light: inset 0 -0.5px 0 0 #0000001a !important;
+  --shadow-none: none !important;
   --suggestion-item-border-radius: 0 !important;
+  --suggestion-radius: 8px !important;
   --tab-active-bg-sidebar: #ffffff0d !important;
   --tab-hover-bg-doc: #00526e !important;
-  --tab-hover-bg-ui: #ffffff1a !important;
+  --tab-hover-bg-ui: color-mix(in srgb, #b3b3b3, transparent 90%) !important;
   --tab-hover-text-ui: #b3b3b3 !important;
   --text-align-mode: left !important;
   --toggle-track-radius: 0 !important;
@@ -1976,14 +1980,14 @@ body {
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     cursor: pointer;
     filter: none;
     font-family: "iA Writer Quattro S", sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(191, 191, 191);
-    text-decoration-color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    text-decoration: underline solid rgb(217, 217, 217);
+    text-decoration-color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2011,7 +2015,7 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     cursor: pointer;
     filter: none;
     font-family: "iA Writer Quattro S", sans-serif;
@@ -2241,14 +2245,14 @@ body {
     > .match-tag {
     align-items: center;
     background-color: light-dark(
-      rgba(80, 80, 80, 0.1),
-      rgba(191, 191, 191, 0.1)
+      color(srgb 0.133333 0.133333 0.133333 / 0.1),
+      color(srgb 0.701961 0.701961 0.701961 / 0.1)
     );
     display: flex;
     font-family: Sen, sans-serif;
     font-weight: 400;
     margin-inline-start: 0px;
-    border: 2px solid light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    border: 2px solid light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
@@ -2260,7 +2264,7 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(51, 51, 51), rgb(191, 191, 191));
+    color: light-dark(rgb(51, 51, 51), rgb(217, 217, 217));
   }
 
   ul > li {
@@ -2269,8 +2273,8 @@ body {
   }
 
   ul > li::marker {
-    background-color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
-    border: 0px light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    background-color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
+    border: 0px light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2279,7 +2283,7 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     pointer-events: none;
     transform: none;
     transition: inherit;
@@ -2291,8 +2295,8 @@ body {
   }
 
   ol > li::marker {
-    background-color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
-    border: 0px light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    background-color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
+    border: 0px light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2301,7 +2305,7 @@ body {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
     border-end-end-radius: 50%;
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     pointer-events: none;
     transform: none;
     transition: inherit;
@@ -2425,7 +2429,7 @@ body {
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(176, 176, 176), rgb(32, 32, 32));
+    background-color: light-dark(rgb(217, 217, 217), rgb(0, 0, 0));
     border: 1px solid light-dark(rgb(35, 35, 35), rgb(192, 192, 192));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -2457,7 +2461,7 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(176, 176, 176), rgb(32, 32, 32));
+    background-color: light-dark(rgb(217, 217, 217), rgb(0, 0, 0));
     border: solid light-dark(rgb(35, 35, 35), rgb(192, 192, 192));
     border-width: 0px 0px 1px;
     border-top-left-radius: 0px;
@@ -2598,44 +2602,44 @@ body {
   }
 
   h1 {
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     font-family: Sen, sans-serif;
     text-shadow: none;
   }
 
   h2 {
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     font-family: Sen, sans-serif;
     text-shadow: none;
   }
 
   h3 {
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     font-family: Sen, sans-serif;
     text-shadow: none;
   }
 
   h4 {
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     font-family: Sen, sans-serif;
     text-shadow: none;
   }
 
   h5 {
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     font-family: Sen, sans-serif;
     text-shadow: none;
   }
 
   h6 {
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     font-family: Sen, sans-serif;
     text-shadow: none;
   }
 
   h2.page-title,
   h2.page-title a {
-    color: light-dark(rgb(0, 0, 0), rgb(191, 191, 191));
+    color: light-dark(rgb(0, 0, 0), rgb(217, 217, 217));
     font-family: Sen, sans-serif;
     text-shadow: none;
   }
@@ -2664,7 +2668,7 @@ body {
 
   .callout {
     --callout-color: inherit;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(84, 122, 155, 0.25), rgba(96, 138, 176, 0.25));
     border-left: 4px solid light-dark(rgb(84, 122, 155), rgb(96, 138, 176));
     border-top-left-radius: 4px;
@@ -2715,7 +2719,7 @@ body {
       rgba(96, 138, 176, 0.15)
     );
     mix-blend-mode: normal;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(84, 122, 155, 0.25), rgba(96, 138, 176, 0.25));
     border-left: 4px solid light-dark(rgb(84, 122, 155), rgb(96, 138, 176));
     border-top-left-radius: 4px;
@@ -2740,7 +2744,7 @@ body {
       rgba(109, 163, 174, 0.15)
     );
     mix-blend-mode: normal;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(88, 139, 150, 0.25), rgba(109, 163, 174, 0.25));
     border-left: 4px solid light-dark(rgb(88, 139, 150), rgb(109, 163, 174));
     border-top-left-radius: 4px;
@@ -2765,7 +2769,7 @@ body {
       rgba(93, 148, 166, 0.15)
     );
     mix-blend-mode: normal;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(74, 130, 148, 0.25), rgba(93, 148, 166, 0.25));
     border-left: 4px solid light-dark(rgb(74, 130, 148), rgb(93, 148, 166));
     border-top-left-radius: 4px;
@@ -2790,7 +2794,7 @@ body {
       rgba(212, 163, 85, 0.15)
     );
     mix-blend-mode: normal;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(191, 140, 59, 0.25), rgba(212, 163, 85, 0.25));
     border-left: 4px solid light-dark(rgb(191, 140, 59), rgb(212, 163, 85));
     border-top-left-radius: 4px;
@@ -2815,7 +2819,7 @@ body {
       rgba(122, 163, 125, 0.15)
     );
     mix-blend-mode: normal;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(99, 138, 102, 0.25), rgba(122, 163, 125, 0.25));
     border-left: 4px solid light-dark(rgb(99, 138, 102), rgb(122, 163, 125));
     border-top-left-radius: 4px;
@@ -2840,7 +2844,7 @@ body {
       rgba(122, 163, 125, 0.15)
     );
     mix-blend-mode: normal;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(99, 138, 102, 0.25), rgba(122, 163, 125, 0.25));
     border-left: 4px solid light-dark(rgb(99, 138, 102), rgb(122, 163, 125));
     border-top-left-radius: 4px;
@@ -2865,7 +2869,7 @@ body {
       rgba(212, 163, 85, 0.15)
     );
     mix-blend-mode: normal;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(191, 140, 59, 0.25), rgba(212, 163, 85, 0.25));
     border-left: 4px solid light-dark(rgb(191, 140, 59), rgb(212, 163, 85));
     border-top-left-radius: 4px;
@@ -2890,7 +2894,7 @@ body {
       rgba(212, 163, 85, 0.15)
     );
     mix-blend-mode: normal;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(191, 140, 59, 0.25), rgba(212, 163, 85, 0.25));
     border-left: 4px solid light-dark(rgb(191, 140, 59), rgb(212, 163, 85));
     border-top-left-radius: 4px;
@@ -2915,7 +2919,7 @@ body {
       rgba(209, 109, 103, 0.15)
     );
     mix-blend-mode: lighten;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(186, 84, 78, 0.25), rgba(209, 109, 103, 0.25));
     border-left: 4px solid light-dark(rgb(186, 84, 78), rgb(209, 109, 103));
     border-top-left-radius: 4px;
@@ -2940,7 +2944,7 @@ body {
       rgba(209, 109, 103, 0.15)
     );
     mix-blend-mode: normal;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(186, 84, 78, 0.25), rgba(209, 109, 103, 0.25));
     border-left: 4px solid light-dark(rgb(186, 84, 78), rgb(209, 109, 103));
     border-top-left-radius: 4px;
@@ -2965,7 +2969,7 @@ body {
       rgba(209, 109, 103, 0.15)
     );
     mix-blend-mode: lighten;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(186, 84, 78, 0.25), rgba(209, 109, 103, 0.25));
     border-left: 4px solid light-dark(rgb(186, 84, 78), rgb(209, 109, 103));
     border-top-left-radius: 4px;
@@ -2990,7 +2994,7 @@ body {
       rgba(166, 117, 176, 0.15)
     );
     mix-blend-mode: lighten;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(143, 94, 153, 0.25), rgba(166, 117, 176, 0.25));
     border-left: 4px solid light-dark(rgb(143, 94, 153), rgb(166, 117, 176));
     border-top-left-radius: 4px;
@@ -3012,7 +3016,7 @@ body {
     --callout-color: inherit;
     background-color: rgba(158, 158, 158, 0.1);
     mix-blend-mode: lighten;
-    border: 0px solid
+    border: 1px solid
       light-dark(rgba(136, 136, 136, 0.25), rgba(119, 119, 119, 0.25));
     border-left: 4px solid light-dark(rgb(136, 136, 136), rgb(119, 119, 119));
     border-top-left-radius: 4px;
@@ -3406,7 +3410,7 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(176, 176, 176), rgb(32, 32, 32));
+    background-color: light-dark(rgb(217, 217, 217), rgb(0, 0, 0));
     color: light-dark(rgb(34, 34, 34), rgb(179, 179, 179));
     font-family: "iA Writer Quattro S", sans-serif;
     border: 1px solid light-dark(rgb(35, 35, 35), rgb(192, 192, 192));

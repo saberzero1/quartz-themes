@@ -1405,7 +1405,7 @@ body.theme-light {
   --flexcyon-anim-start-opacity: 0.55 !important;
   --flexcyon-anim-start-scale-amt: 0.33 !important;
   --flexcyon-ascii-alignment: left !important;
-  --flexcyon-ascii-art: " _______________ ___ ____/__ /________ ____________ ______________ __ /_ __ /_ _ _ |/_/ ___/_ / / / __ _ __  _ __/ _ / / __/_ / /__ _ /_/ // /_/ / / / / /_/ /_/ ___//_/|_| ___/ ___, / ____//_/ /_/ /____/  " !important;
+  --flexcyon-ascii-art: " \7 _______________ \7 ___ ____/__ /________ ____________ ______________ \7 __ /_ __ /_ _ _ |/_/ ___/_ / / / __ _ __  \7 _ __/ _ / / __/_ / /__ _ /_/ // /_/ / / / / \7 /_/ /_/ ___//_/|_| ___/ ___, / ____//_/ /_/ \7 /____/ \7 \7 \7  " !important;
   --flexcyon-ascii-checkboxes-font-size: 1.2rem !important;
   --flexcyon-ascii-line-height: 1.5 !important;
   --flexcyon-ascii-max-font-size: 14px !important;
@@ -1558,7 +1558,7 @@ body.theme-light {
   --flexcyon-quote-credit: "bladeacer" !important;
   --flexcyon-quote-credit-prefix: "-" !important;
   --flexcyon-quote-font-size: 24px !important;
-  --flexcyon-quote-val: "This is a placeholder quotein the Flexcyon Theme." !important;
+  --flexcyon-quote-val: "This is a placeholder quote\7 in the Flexcyon Theme." !important;
   --flexcyon-red-salmon: #eb5325 !important;
   --flexcyon-repl-active-line-str: "-" !important;
   --flexcyon-repl-active-str-space: 0px !important;
@@ -2810,7 +2810,7 @@ body.theme-dark {
   --flexcyon-anim-start-opacity: 0.55;
   --flexcyon-anim-start-scale-amt: 0.33;
   --flexcyon-ascii-alignment: left;
-  --flexcyon-ascii-art: " _______________ ___ ____/__ /________ ____________ ______________ __ /_ __ /_ _ _ |/_/ ___/_ / / / __ _ __  _ __/ _ / / __/_ / /__ _ /_/ // /_/ / / / / /_/ /_/ ___//_/|_| ___/ ___, / ____//_/ /_/ /____/  ";
+  --flexcyon-ascii-art: " \7 _______________ \7 ___ ____/__ /________ ____________ ______________ \7 __ /_ __ /_ _ _ |/_/ ___/_ / / / __ _ __  \7 _ __/ _ / / __/_ / /__ _ /_/ // /_/ / / / / \7 /_/ /_/ ___//_/|_| ___/ ___, / ____//_/ /_/ \7 /____/ \7 \7 \7  ";
   --flexcyon-ascii-checkboxes-font-size: 1.2rem;
   --flexcyon-ascii-line-height: 1.5;
   --flexcyon-ascii-max-font-size: 14px;
@@ -2955,7 +2955,7 @@ body.theme-dark {
   --flexcyon-quote-credit: "bladeacer";
   --flexcyon-quote-credit-prefix: "-";
   --flexcyon-quote-font-size: 24px;
-  --flexcyon-quote-val: "This is a placeholder quotein the Flexcyon Theme.";
+  --flexcyon-quote-val: "This is a placeholder quote\7 in the Flexcyon Theme.";
   --flexcyon-red-salmon: #c03a47;
   --flexcyon-repl-active-line-str: "-";
   --flexcyon-repl-active-str-space: 0px;

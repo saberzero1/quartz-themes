@@ -958,8 +958,8 @@ body.theme-light {
   --heading-opacity: 0.2 !important;
   --background-secondary-rgb: 230, 228, 218 !important;
   --text-normal-rgb: 61, 46, 26 !important;
-  --folder-text-color: #d97756 !important;
   --setting-items-background: #e6e4da !important;
+  --folder-text-color: #d97756 !important;
   --primary-color: #d97756 !important;
   --folder-color: rgba(217, 119, 86, 0.12) !important;
   --fast: 0.15s ease !important;
@@ -1861,8 +1861,8 @@ body.theme-dark {
   --heading-opacity: 0.2;
   --background-secondary-rgb: 50, 48, 42;
   --text-normal-rgb: 232, 220, 198;
-  --folder-text-color: #f2a882;
   --setting-items-background: #32302a;
+  --folder-text-color: #f2a882;
   --primary-color: #f0916f;
   --folder-color: rgba(242, 168, 130, 0.12);
   --fast: 0.15s ease;
