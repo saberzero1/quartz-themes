@@ -1525,6 +1525,8 @@ body.theme-light {
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --r-main-font-size: 42px !important;
+  --setting-items-background: none !important;
+  --setting-items-border-width: 0 !important;
   --r-heading-font-weight: 100 !important;
   --background-input: light-dark(
     hsl(from rgb(38, 102, 192) h s l / 0.12),
@@ -1570,13 +1572,11 @@ body.theme-light {
     white 80%
   ) !important;
   --setting-group-heading-weight: 600 !important;
-  --setting-items-background: none !important;
   --setting-items-border-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
     white 25%
   ) !important;
-  --setting-items-border-width: 0 !important;
   --tab-background-inactive: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -3329,6 +3329,8 @@ body.theme-dark {
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --r-main-font-size: 42px;
+  --setting-items-background: none;
+  --setting-items-border-width: 0;
   --r-heading-font-weight: 100;
   --background-input: light-dark(
     hsl(from rgb(38, 102, 192) h s l / 0.12),
@@ -3362,13 +3364,11 @@ body.theme-dark {
   --r-main-color: color-mix(in srgb, rgb(38, 102, 192), white 60%);
   --raised-background: color-mix(in srgb, rgb(38, 102, 192), white 80%);
   --setting-group-heading-weight: 600;
-  --setting-items-background: none;
   --setting-items-border-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
     black 25%
   );
-  --setting-items-border-width: 0;
   --tab-background-inactive: color-mix(in srgb, rgb(38, 102, 192), black 85%);
   --theme-cardAspectRatio: auto;
   --theme-cardImageFit: contain;

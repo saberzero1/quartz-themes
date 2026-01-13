@@ -1914,7 +1914,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(0, 0, 0);
+  stroke: rgb(164, 177, 205);
 }
 body .callout[data-callout="bug"] {
   --callout-color: inherit;

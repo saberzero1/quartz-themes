@@ -79,7 +79,7 @@ body {
 .theme-light .workspace {
   backdrop-filter: brightness(4) blur(var(--set-blur));
   --icon-color: #000000;
-  --workspace-drawer-background-color: #ffffff;
+  --workspace-drawer-background-color: #00000000;
 }
 .theme-light {
   --brightness: 1.3;
@@ -435,7 +435,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 .is-phone .workspace-drawer {
-    background-color: var(--workspace-drawer-background-color);
+    background-color: #00000000;
     position: fixed;
     z-index: 9999999;
 }
@@ -449,13 +449,8 @@ input[type="range"]::-webkit-slider-thumb {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   background-color: var(--tr);
 }
-.mobile-navbar {
-  padding: var(--size-4-2) max(var(--safe-area-inset-right), var(--size-4-4)) max(var(--size-4-2), var(--safe-area-inset-bottom)) max(var(--safe-area-inset-left), var(--size-4-4));
-  /* position: fixed; - to bedzie dobra podopwiedz na przyszlosc jak bede chciec poprawic nachodzenie workspace-drawer bo aktualnie mi wgl nie wychodzi */
-  bottom: 0;
-  width: 100%;
-  z-index: 1; 
-}
+
+
       .theme-dark .mobile-navbar {
         background-color: #000000; 
         backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
@@ -490,3 +485,26 @@ input[type='range'] {
 }
 
 */
+/* tempomary fixes to new mobile obisian update */
+.is-phone .workspace-drawer {
+    background-color: #00000000;
+    }
+.is-tablet .workspace-drawer {
+    background-color: #00000060;
+    }
+.is-phone .workspace-drawer-tab-options-list {
+    background-color: #000000; /* pure black cuz i have no clue how to apply this */
+  /*  backdrop-filter: blur(10px); it not work idk why*/
+    }
+.is-phone .menu-group .menu-item:not(.is-label):after {
+    background-color: var(--tr);
+}
+.is-phone .mobile-navbar {
+    background-color: #00000060;
+    backdrop-filter: blur(var(--set-blur));
+}
+
+.is-phone .workspace-drawer .nav-buttons-container .nav-action-button {
+    background-color: #00000060;
+    backdrop-filter: blur(10px);
+}

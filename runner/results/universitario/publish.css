@@ -1011,13 +1011,13 @@ body.theme-dark {
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
   --background-primary: rgb(27, 27, 40);
-  --background-primary-alt: #242424;
-  --background-secondary: rgb(55, 41, 76);
+  --background-primary-alt: rgb(53, 37, 55);
+  --background-secondary: rgb(79, 59, 109);
   --background-secondary-alt: #363636;
   --bases-cards-background: rgb(27, 27, 40);
   --bases-cards-border-width: 1px;
   --bases-cards-container-background: transparent;
-  --bases-cards-cover-background: #242424;
+  --bases-cards-cover-background: rgb(53, 37, 55);
   --bases-cards-font-size: 0.875em;
   --bases-cards-line-height: 24px;
   --bases-cards-scale: 1;
@@ -1039,7 +1039,7 @@ body.theme-dark {
   --bases-header-padding-start: 2px;
   --bases-table-border-color: #363636;
   --bases-table-cell-background-active: rgb(27, 27, 40);
-  --bases-table-cell-background-disabled: #242424;
+  --bases-table-cell-background-disabled: rgb(53, 37, 55);
   --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1);
   --bases-table-cell-radius-active: 2px;
   --bases-table-cell-radius-focus: 2px;
@@ -1051,7 +1051,7 @@ body.theme-dark {
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
   --bases-table-font-size: 0.875em;
-  --bases-table-group-background: #242424;
+  --bases-table-group-background: rgb(53, 37, 55);
   --bases-table-group-gap: 10px;
   --bases-table-header-background: rgb(27, 27, 40);
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.075);
@@ -1123,7 +1123,7 @@ body.theme-dark {
   --checklist-done-color: white;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: #242424;
+  --code-background: rgb(53, 37, 55);
   --code-border-color: #363636;
   --code-border-width: 0px;
   --code-bracket-background: rgba(255, 255, 255, 0.075);
@@ -1433,7 +1433,7 @@ body.theme-dark {
   --list-spacing: 0.075em;
   --loading-icon-delay: 400ms;
   --menu-backdrop-filter: none;
-  --menu-background: rgb(55, 41, 76);
+  --menu-background: rgb(79, 59, 109);
   --menu-border-color: #3f3f3f;
   --menu-border-width: 1px;
   --menu-padding: 6px;
@@ -1572,8 +1572,8 @@ body.theme-dark {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: rgb(55, 41, 76);
-  --ribbon-background-collapsed: rgb(55, 41, 76);
+  --ribbon-background: rgb(79, 59, 109);
+  --ribbon-background-collapsed: rgb(79, 59, 109);
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
   --safe-area-inset-bottom: 0px;
@@ -1668,7 +1668,7 @@ body.theme-dark {
   --tab-stacked-text-align: left;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: rgb(55, 41, 76);
+  --tab-switcher-background: rgb(79, 59, 109);
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -1796,7 +1796,7 @@ body.theme-dark {
   --cards-min-width: 180px;
   --cards-mobile-width: 120px;
   --cards-padding: 1.2em;
-  --background-tertiary: rgb(60, 32, 58);
+  --background-tertiary: rgb(27, 14, 26);
   --callout-margin: 0px;
   --callout-title-size: 1.1em;
   --callout-gap: 1em;
@@ -1811,7 +1811,7 @@ body.theme-dark {
     0px 2px 4px rgba(0, 0, 0, 0.05), 0px 4px 8px rgba(0, 0, 0, 0.03),
     0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 12px rgba(0, 0, 0, 0.03),
     0px 2px 16px rgba(0, 0, 0, 0.03), 0px 4px 20px rgba(0, 0, 0, 0.02);
-  --background-primary-alt-1: #242424;
+  --background-primary-alt-1: rgb(53, 37, 55);
 }
 
 body .markdown-rendered a.external-link {
@@ -2198,7 +2198,7 @@ body .markdown-rendered ol > li::marker {
   transition: inherit;
 }
 body .markdown-rendered code {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(rgb(250, 250, 250), rgb(53, 37, 55));
   border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2216,7 +2216,7 @@ body .markdown-rendered code {
   padding: 2.1px 4.2px;
 }
 body .markdown-rendered pre > code {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(rgb(250, 250, 250), rgb(53, 37, 55));
   border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2233,7 +2233,7 @@ body .markdown-rendered pre > code {
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(rgb(250, 250, 250), rgb(53, 37, 55));
   border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2297,7 +2297,7 @@ body ul > li.task-list-item[data-task="x"] {
   text-decoration-color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
 }
 body .markdown-rendered blockquote {
-  background-color: light-dark(rgb(191, 206, 248), rgb(60, 32, 58));
+  background-color: light-dark(rgb(191, 206, 248), rgb(27, 14, 26));
   border-inline-start: inherit;
   font-family:
     ui-sans-serif,
@@ -2945,7 +2945,7 @@ body .markdown-rendered th {
   padding: 0px;
 }
 body .markdown-rendered td {
-  background-color: light-dark(rgb(201, 198, 241), rgb(55, 41, 76));
+  background-color: light-dark(rgb(201, 198, 241), rgb(79, 59, 109));
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-weight: 400;
   text-align: left;
@@ -3323,7 +3323,7 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(rgb(250, 250, 250), rgb(53, 37, 55));
   box-shadow: none;
   color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
   font-family:
@@ -3578,7 +3578,7 @@ body .nav-view-outer .tree-item-self a {
   text-decoration: none solid rgb(186, 186, 186);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: light-dark(rgba(139, 108, 239, 0.2), rgb(55, 41, 76));
+  background-color: light-dark(rgba(139, 108, 239, 0.2), rgb(79, 59, 109));
   border: 0px light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;

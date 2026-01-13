@@ -665,12 +665,17 @@ body {
   background-color: var(--htb-lime);
 }
 
+/* this makes the highlighted icon color black on htb accent */
 .mod-top-left-space .workspace-tab-header.tappable.is-active svg {
   font-weight: 700;
   stroke: black;
   stroke-width: 2;
 }
 
+/* bug fix the cross icon becomes black when sidebar is closed (over ride previous) */
+.workspace-tab-header-inner-close-button svg {
+  stroke: var(--htb-text-color) !important;
+}
 /* layer skip as well  */
 /* radius  */
 body {

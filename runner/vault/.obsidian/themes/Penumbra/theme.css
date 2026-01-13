@@ -26,7 +26,7 @@
     --text-error-hover: #c9626a;
     --text-highlight-bg: #F2E6D4;
     --text-selection: #636363;
-    --text-on-accent: #636363;
+    --text-on-accent: #FFFDFB;
     --interactive-normal: #24272B;
     --interactive-hover: #FFFDFB;
     --interactive-accent: #F2E6D4;
@@ -408,14 +408,16 @@ pre[class*='language-'] {
     cursor: help !important;
 }
 
-.cm-fat-cursor .CodeMirror-cursor {
-  background-color: var(--text-faint) !important;
-  opacity: 0.5;
-  width: 5px;
+/* Cursor color in normal vim mode and opacity */
+.cm-fat-cursor .CodeMirror-cursor, .cm-animate-fat-cursor {
+  width: 0.5em;
+  background: var(--text-on-accent);
+  foreground: var(--interactive-normal);
+  opacity: 60% !important;
 }
 
-.cm-animate-fat-cursor {
-  background-color: var(--text-faint) !important;
-  opacity: 0.5;
-  width: 5px;
-}
+/*an active line highlight in vim normal mode */
+/* .cm-fat-cursor .CodeMirror-activeline .CodeMirror-linebackground{ */
+/*   background-color: var(--background-modifier-form-field) !important; */
+/* } */
+

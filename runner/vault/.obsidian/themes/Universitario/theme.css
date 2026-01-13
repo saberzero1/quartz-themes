@@ -1649,9 +1649,9 @@ body {
     --accent-s: 80%;
     --accent-l: 68%;
     --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 55%));
-    --background-primary-alt: var(--color-base-10);
-    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 45%));
-    --background-tertiary: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 50%));
+    --background-primary-alt: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 50%));
+    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 35%));
+    --background-tertiary: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 60%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-modifier-border: var(--color-base-30);
@@ -2493,6 +2493,10 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     background-color: var(--background-primary);
 }
 
+.theme-dark .modal-sidebar {
+    background-color: var(--background-primary-alt);
+}
+
 .theme-light .modal-sidebar {
     --background-modifier-form-field: var(--background-primary);
     background-color: var(--background-secondary);
@@ -2528,6 +2532,12 @@ body:not(.is-phone) .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
     color: var(--text-muted);
     background-color: var(--background-primary);
+}
+
+.theme-dark:not(.is-phone) .horizontal-tab-nav-item.is-active,
+.theme-dark:not(.is-phone) .vertical-tab-nav-item.is-active {
+    color: var(--text-muted);
+    background-color: var(--background-secondary);
 }
 
 .setting-item {

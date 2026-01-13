@@ -938,8 +938,8 @@ body.theme-light {
   --callout-background-alpha: 20% !important;
   --window-border: 1px solid rgb(176, 176, 176) !important;
   --window-border-color: rgb(176, 176, 176) !important;
-  --strikethrough-line-color: rgb(51, 51, 51) !important;
   --setting-items-background: rgb(255, 255, 255) !important;
+  --strikethrough-line-color: rgb(51, 51, 51) !important;
   --background-primary-alt-hsl: 0, 0%, 96% !important;
   --background-primary-hsl: 0, 0%, 100% !important;
   --background-secondary-hsl: 0, 0%, 93% !important;
@@ -1865,8 +1865,8 @@ body.theme-dark {
   --callout-background-alpha: 20%;
   --window-border: 1px solid rgb(77, 77, 77);
   --window-border-color: rgb(77, 77, 77);
-  --strikethrough-line-color: rgb(219, 219, 219);
   --setting-items-background: rgb(20, 20, 20);
+  --strikethrough-line-color: rgb(219, 219, 219);
   --background-primary-alt-hsl: 0, 0%, 30%;
   --background-primary-hsl: 0, 0%, 18%;
   --background-secondary-hsl: 0, 0%, 12%;

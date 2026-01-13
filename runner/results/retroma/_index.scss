@@ -1270,7 +1270,7 @@
   --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-width: 0px !important;
+  --tag-border-width: 1px !important;
   --tag-color: oklch(
     from oklch(from rgb(153, 115, 247) l c h) 40% c h / 75%
   ) !important;
@@ -2644,7 +2644,7 @@
   --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-width: 0px !important;
+  --tag-border-width: 1px !important;
   --tag-color: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 80% c h / 75%
   ) !important;
@@ -3537,7 +3537,7 @@ body {
       sans-serif;
     font-weight: 400;
     margin-inline-start: 0px;
-    border: 0px solid rgba(138, 92, 245, 0.15);
+    border: 1px solid rgba(138, 92, 245, 0.15);
     border-left: 4px solid
       light-dark(
         oklch(0.4 0.189206 293.56 / 0.75),

@@ -1683,7 +1683,7 @@ body.theme-dark {
   --table-drag-handle-background: transparent;
   --table-drag-handle-background-active: #f2e6d4;
   --table-drag-handle-color: #636363;
-  --table-drag-handle-color-active: #636363;
+  --table-drag-handle-color-active: #fffdfb;
   --table-drop-indicator-half-width: 2px;
   --table-header-background: transparent;
   --table-header-border-color: #636363;
@@ -1724,7 +1724,7 @@ body.theme-dark {
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #8f8f8f;
   --text-normal: #8f8f8f;
-  --text-on-accent: #636363;
+  --text-on-accent: #fffdfb;
   --text-on-accent-inverted: black;
   --text-selection: #636363;
   --text-success: #44cf6e;
