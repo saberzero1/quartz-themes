@@ -2308,7 +2308,7 @@ body {
     cursor: text;
     filter: none;
     font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid color(srgb 0.586288 0.42472 0.96328);
     text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
@@ -2326,7 +2326,7 @@ body {
     cursor: text;
     filter: none;
     font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid color(srgb 0.586288 0.42472 0.96328);
     text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
@@ -2338,8 +2338,8 @@ body {
   }
 
   .text-highlight {
-    background-color: color(srgb 0.54032 0.3608 0.9592 / 0.5);
-    color: light-dark(rgb(17, 17, 17), rgb(255, 255, 255));
+    background-color: rgba(255, 208, 0, 0.4);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: text;
     filter: none;
     font-family:
@@ -2356,8 +2356,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(255, 255, 255);
-    text-decoration-color: light-dark(rgb(17, 17, 17), rgb(255, 255, 255));
+    text-decoration: none solid rgb(218, 218, 218);
+    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2563,22 +2563,22 @@ body {
   }
 
   code {
-    background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
+    background-color: light-dark(rgb(255, 255, 255), rgb(13, 11, 18));
     border: 0px solid color(srgb 0.54032 0.3608 0.9592 / 0.05);
-    border-top-left-radius: 4.8px;
-    border-top-right-radius: 4.8px;
-    border-bottom-left-radius: 4.8px;
-    border-bottom-right-radius: 4.8px;
-    border-start-start-radius: 4.8px;
-    border-start-end-radius: 4.8px;
-    border-end-start-radius: 4.8px;
-    border-end-end-radius: 4.8px;
-    color: rgb(138, 92, 245);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
-    padding: 2.1px 5px;
+    padding: 2.1px 4.2px;
   }
 
   pre > code,
@@ -3047,7 +3047,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -3083,7 +3083,7 @@ body {
   .callout[data-callout="note"] {
     --callout-color: inherit;
     background-color: rgba(150, 100, 250, 0.2);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(150, 100, 250, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3106,7 +3106,7 @@ body {
       rgba(0, 191, 188, 0.2),
       rgba(83, 223, 221, 0.2)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -3127,7 +3127,7 @@ body {
   .callout[data-callout="info"] {
     --callout-color: inherit;
     background-color: rgba(50, 150, 255, 0.2);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(50, 150, 255, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3150,7 +3150,7 @@ body {
       rgba(8, 109, 221, 0.2),
       rgba(2, 122, 255, 0.2)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -3174,7 +3174,7 @@ body {
       rgba(0, 191, 188, 0.2),
       rgba(83, 223, 221, 0.2)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -3195,7 +3195,7 @@ body {
   .callout[data-callout="success"] {
     --callout-color: inherit;
     background-color: rgba(50, 200, 100, 0.2);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(50, 200, 100, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3218,7 +3218,7 @@ body {
       rgba(236, 117, 0, 0.2),
       rgba(233, 151, 63, 0.2)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
@@ -3239,7 +3239,7 @@ body {
   .callout[data-callout="warning"] {
     --callout-color: inherit;
     background-color: rgba(255, 204, 0, 0.2);
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid rgba(255, 204, 0, 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3286,7 +3286,7 @@ body {
       rgba(233, 49, 71, 0.2),
       rgba(251, 70, 76, 0.2)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 4px;
@@ -3345,7 +3345,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(138, 92, 245);
+    stroke: rgb(179, 179, 179);
   }
 
   .callout[data-callout="quote"] {
@@ -3396,8 +3396,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -3780,7 +3780,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border: 1px solid color(srgb 0.54032 0.3608 0.9592 / 0.05);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -3840,7 +3840,7 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(255, 255, 255), rgb(13, 11, 18));
     box-shadow: none;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:

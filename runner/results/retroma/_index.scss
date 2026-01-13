@@ -3147,7 +3147,10 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(oklch(0.35 0.12 293.56), oklch(0.8 0.08 292.488));
+    color: light-dark(
+      oklch(0.5 0.12 293.56 / 0.8),
+      oklch(0.8 0.08 292.488 / 0.8)
+    );
     cursor: pointer;
     filter: none;
     font-family:
@@ -3164,10 +3167,10 @@ body {
       sans-serif;
     font-weight: 700;
     outline: inherit;
-    text-decoration: underline solid oklch(0.8 0.08 292.488);
+    text-decoration: underline solid oklch(0.8 0.08 292.488 / 0.8);
     text-decoration-color: light-dark(
-      oklch(0.35 0.12 293.56),
-      oklch(0.8 0.08 292.488)
+      oklch(0.5 0.12 293.56 / 0.8),
+      oklch(0.8 0.08 292.488 / 0.8)
     );
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -3317,7 +3320,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid oklch(0.8 0.08 132.488);
     text-decoration-color: light-dark(
@@ -3349,7 +3352,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid oklch(0.8 0.08 132.488);
     text-decoration-color: light-dark(
@@ -4112,7 +4115,7 @@ body {
     border-start-end-radius: 12px;
     border-end-start-radius: 12px;
     border-end-end-radius: 12px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -4151,7 +4154,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 4px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 12px;
@@ -4166,7 +4169,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(179, 179, 179);
   }
 
   .callout[data-callout="abstract"] {
@@ -4175,7 +4178,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 4px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 12px;
@@ -4199,7 +4202,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 4px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 12px;
@@ -4223,7 +4226,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 4px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 12px;
@@ -4247,7 +4250,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 4px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 12px;
@@ -4271,7 +4274,7 @@ body {
       rgba(8, 185, 78, 0.1),
       rgba(68, 207, 110, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 4px solid
       light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
     border-top-left-radius: 12px;
@@ -4295,7 +4298,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 4px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 12px;
@@ -4319,7 +4322,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 4px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 12px;
@@ -4481,8 +4484,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -4582,7 +4585,8 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px solid
+      light-dark(oklch(0.6 0.12 263.56), oklch(0.2 0.08 262.488));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4865,7 +4869,10 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
+    background-color: light-dark(
+      oklch(0.98 0.0756825 263.56),
+      oklch(0.32 0.0651598 262.488)
+    );
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
@@ -4879,15 +4886,19 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
+    border: 1px solid
+      light-dark(
+        oklch(0.474759 0.0000235681 23.6314 / 0.5),
+        oklch(0.766742 0.0000382729 23.6907 / 0.5)
+      );
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-start-start-radius: 12px;
+    border-start-end-radius: 12px;
+    border-end-start-radius: 12px;
+    border-end-end-radius: 12px;
     padding: 4px 8px;
   }
 
@@ -4939,7 +4950,10 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(
+      oklch(0.85 0.0756825 293.56 / 0.5),
+      oklch(0.1 0.0651598 292.488 / 0.5)
+    );
     box-shadow: none;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:

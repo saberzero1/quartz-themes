@@ -2641,7 +2641,10 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(26, 121, 255), oklab(0.73772 -0.0264446 -0.141198));
+    color: light-dark(
+      oklch(0.603409 0.216441 258.855 / 0.666667),
+      oklab(0.73772 -0.0264446 -0.141198 / 0.92)
+    );
     cursor: pointer;
     filter: none;
     font-family:
@@ -2670,10 +2673,10 @@ body {
       sans-serif;
     font-weight: 425;
     outline: inherit;
-    text-decoration: none solid oklab(0.73772 -0.0264446 -0.141198);
+    text-decoration: none solid oklab(0.73772 -0.0264446 -0.141198 / 0.92);
     text-decoration-color: light-dark(
-      rgb(26, 121, 255),
-      oklab(0.73772 -0.0264446 -0.141198)
+      oklch(0.603409 0.216441 258.855 / 0.666667),
+      oklab(0.73772 -0.0264446 -0.141198 / 0.92)
     );
     text-decoration-line: none;
     text-decoration-style: solid;
