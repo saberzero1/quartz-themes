@@ -670,31 +670,40 @@ function injectStyleElement(css) {
 }
 
 function ensureModeMatchesTheme(theme) {
-  const isDark = document
-    .querySelector("div.site-body-left-column-site-theme-toggle")
-    .classList.value.includes("is-dark");
-  const bodyElement = document.querySelector("body");
   const toggleElement = document.querySelector(
     "div.site-body-left-column-site-theme-toggle",
   );
+  const bodyElement = document.querySelector("body");
+
+  if (!toggleElement || !bodyElement) return;
+
+  const isDark = toggleElement.classList.contains("is-dark");
   const themeSupportsDark = themeListDark.includes(theme);
   const themeSupportsLight = themeListLight.includes(theme);
+  const supportsBoth = themeSupportsDark && themeSupportsLight;
 
-  if (!isDark && themeSupportsDark) {
-    this.app.setTheme("dark");
+  if (supportsBoth) {
+    toggleElement.style.pointerEvents = "";
+    toggleElement.style.opacity = "";
+  } else {
+    toggleElement.style.pointerEvents = "none";
+    toggleElement.style.opacity = "0.5";
+  }
+
+  if (themeSupportsDark && !themeSupportsLight && !isDark) {
+    if (window.app && window.app.setTheme) {
+      window.app.setTheme("dark");
+    }
     bodyElement.classList.remove("theme-light");
     bodyElement.classList.add("theme-dark");
     toggleElement.classList.add("is-dark");
-  } else if (isDark && !themeSupportsDark) {
-    this.app.setTheme("light");
+  } else if (themeSupportsLight && !themeSupportsDark && isDark) {
+    if (window.app && window.app.setTheme) {
+      window.app.setTheme("light");
+    }
     bodyElement.classList.remove("theme-dark");
     bodyElement.classList.add("theme-light");
     toggleElement.classList.remove("is-dark");
-  } else if (!isDark && !themeSupportsLight) {
-    this.app.setTheme("dark");
-    bodyElement.classList.remove("theme-light");
-    bodyElement.classList.add("theme-dark");
-    toggleElement.classList.add("is-dark");
   }
 }
 
