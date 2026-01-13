@@ -1726,14 +1726,14 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(204, 153, 255);
+  color: light-dark(rgb(153, 194, 255), rgb(204, 153, 255));
   cursor: pointer;
   filter: none;
   font-family: "EB Garamond", Georgia, serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: underline solid rgb(204, 153, 255);
-  text-decoration-color: rgb(204, 153, 255);
+  text-decoration-color: light-dark(rgb(153, 194, 255), rgb(204, 153, 255));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2446,7 +2446,7 @@ body
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
-  mix-blend-mode: normal;
+  mix-blend-mode: lighten;
   border: 1px solid
     light-dark(color(srgb 0.971242 0.730719 0.759477 / 0.75), rgb(42, 42, 42));
   border-top-left-radius: 10.08px;

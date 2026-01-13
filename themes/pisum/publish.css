@@ -848,14 +848,14 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(254, 128, 25);
+  color: rgb(131, 165, 152);
   cursor: pointer;
   filter: none;
   font-family: Avenir, "Avenir Next", sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(254, 128, 25);
-  text-decoration-color: rgb(254, 128, 25);
+  text-decoration: none solid rgb(131, 165, 152);
+  text-decoration-color: rgb(131, 165, 152);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -910,7 +910,18 @@ body strong {
   color: rgb(251, 241, 199);
   cursor: text;
   filter: none;
-  font-family: Avenir, "Avenir Next", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(251, 241, 199);
@@ -926,7 +937,18 @@ body b {
   color: rgb(251, 241, 199);
   cursor: text;
   filter: none;
-  font-family: Avenir, "Avenir Next", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 600;
   outline: inherit;
   text-decoration: none solid rgb(251, 241, 199);
@@ -942,8 +964,19 @@ body em {
   color: rgb(213, 196, 161);
   cursor: text;
   filter: none;
-  font-family: Avenir, "Avenir Next", sans-serif;
-  font-weight: 600;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(213, 196, 161);
   text-decoration-color: rgb(213, 196, 161);
@@ -958,8 +991,19 @@ body i {
   color: rgb(213, 196, 161);
   cursor: text;
   filter: none;
-  font-family: Avenir, "Avenir Next", sans-serif;
-  font-weight: 600;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(213, 196, 161);
   text-decoration-color: rgb(213, 196, 161);
@@ -974,7 +1018,18 @@ body .markdown-rendered mark {
   color: rgb(251, 241, 199);
   cursor: text;
   filter: none;
-  font-family: Avenir, "Avenir Next", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(251, 241, 199);
@@ -990,7 +1045,18 @@ body del {
   color: rgb(251, 241, 199);
   cursor: text;
   filter: none;
-  font-family: Avenir, "Avenir Next", sans-serif;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
   outline: inherit;
   text-decoration: line-through solid rgb(251, 241, 199);
@@ -1131,7 +1197,7 @@ body .markdown-rendered code {
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
-  padding: 2.025px 4.05px;
+  padding: 2.1px 4.2px;
 }
 body .markdown-rendered pre > code {
   background-color: rgb(44, 56, 58);
@@ -1370,7 +1436,7 @@ body .callout[data-callout="note"] {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: rgba(2, 122, 255, 0.1);
 }
@@ -1393,7 +1459,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(2, 122, 255);
+  stroke: rgb(213, 196, 161);
 }
 body .callout > .callout-title > .callout-title-inner {
   color: rgb(2, 122, 255);
@@ -1406,7 +1472,7 @@ body .callout > .callout-content {
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(83, 223, 221, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(83, 223, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1428,7 +1494,7 @@ body
 body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(2, 122, 255, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1450,7 +1516,7 @@ body
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(2, 122, 255, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1472,7 +1538,7 @@ body
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(83, 223, 221, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(83, 223, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1494,7 +1560,7 @@ body
 body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(68, 207, 110, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(68, 207, 110, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1516,7 +1582,7 @@ body
 body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(233, 151, 63, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(233, 151, 63, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1538,7 +1604,7 @@ body
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(233, 151, 63, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(233, 151, 63, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1582,7 +1648,7 @@ body
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(251, 70, 76, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(251, 70, 76, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1643,7 +1709,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(251, 241, 199);
+  stroke: rgb(213, 196, 161);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
@@ -1684,8 +1750,8 @@ body .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
+  margin: 16px 0px 0px;
+  margin-block-end: 0px;
   margin-block-start: 16px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
@@ -1765,7 +1831,7 @@ body .markdown-rendered img {
   filter: none;
   max-width: 100%;
   object-fit: fill;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(251, 241, 199);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1774,16 +1840,16 @@ body .markdown-rendered img {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 0px;
+  margin: 0px auto;
   margin-block-end: 0px;
   margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
 }
 body .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(251, 241, 199);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1800,7 +1866,7 @@ body .markdown-rendered figure {
   padding: 0px;
 }
 body .markdown-rendered figcaption {
-  color: rgb(218, 218, 218);
+  color: rgb(251, 241, 199);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -1829,7 +1895,7 @@ body .markdown-rendered video {
   filter: none;
   max-width: 100%;
   object-fit: contain;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(251, 241, 199);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1846,7 +1912,7 @@ body .markdown-rendered video {
 }
 body .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(251, 241, 199);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2009,7 +2075,7 @@ body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 6px;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(251, 241, 199);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2033,8 +2099,8 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: rgb(42, 42, 42);
-  color: rgb(218, 218, 218);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgb(251, 241, 199);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2047,7 +2113,7 @@ body input[type="text"] {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 1px solid rgb(54, 54, 54);
+  border: 1px solid rgb(242, 229, 188);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -2060,7 +2126,7 @@ body input[type="text"] {
 }
 body details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(251, 241, 199);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2078,7 +2144,7 @@ body details {
 }
 body summary {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
+  color: rgb(251, 241, 199);
   cursor: auto;
   font-weight: 400;
   list-style: inherit;
@@ -2103,15 +2169,15 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(44, 56, 58);
   box-shadow: none;
-  color: rgb(218, 218, 218);
+  color: rgb(251, 241, 199);
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
   font-size: 14px;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(251, 241, 199);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2130,7 +2196,7 @@ body dl {
   margin-inline-start: 0px;
 }
 body dt {
-  color: rgb(218, 218, 218);
+  color: rgb(251, 241, 199);
   font-weight: 400;
   margin: 0px;
   margin-block-end: 0px;
@@ -2139,7 +2205,7 @@ body dt {
   margin-inline-start: 0px;
 }
 body dd {
-  color: rgb(218, 218, 218);
+  color: rgb(251, 241, 199);
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -2148,19 +2214,19 @@ body dd {
   padding: 0px;
 }
 body sub {
-  color: rgb(218, 218, 218);
+  color: rgb(251, 241, 199);
   font-size: 13.3333px;
   vertical-align: sub;
 }
 body sup {
-  color: rgb(218, 218, 218);
+  color: rgb(251, 241, 199);
   font-size: 13.3333px;
   vertical-align: super;
 }
 body abbr {
-  color: rgb(218, 218, 218);
+  color: rgb(251, 241, 199);
   cursor: auto;
-  text-decoration: underline dotted rgb(218, 218, 218);
+  text-decoration: underline dotted rgb(251, 241, 199);
   text-decoration-style: dotted;
 }
 body .backlink-pane {
@@ -2294,13 +2360,13 @@ body input::placeholder {
   opacity: inherit;
 }
 body .markdown-rendered p::first-letter {
-  color: inherit;
+  color: rgb(251, 241, 199);
   font-size: 16px;
   font-weight: inherit;
   float: inherit;
 }
 body .markdown-rendered p::first-line {
-  color: inherit;
+  color: rgb(251, 241, 199);
   font-weight: inherit;
   text-transform: inherit;
 }

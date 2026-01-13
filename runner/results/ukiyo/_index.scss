@@ -1940,14 +1940,14 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(128, 0, 0), rgb(186, 148, 95));
+    color: light-dark(rgb(160, 0, 0), rgb(224, 186, 134));
     cursor: pointer;
-    filter: none;
+    filter: brightness(1.3);
     font-family: "CMU Typewriter Text";
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(186, 148, 95);
-    text-decoration-color: light-dark(rgb(128, 0, 0), rgb(186, 148, 95));
+    text-decoration: underline solid rgb(224, 186, 134);
+    text-decoration-color: light-dark(rgb(160, 0, 0), rgb(224, 186, 134));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2032,7 +2032,7 @@ body {
     cursor: text;
     filter: none;
     font-family: "CMU Typewriter Text";
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(231, 122, 89);
     text-decoration-color: light-dark(rgb(174, 97, 43), rgb(231, 122, 89));
@@ -2050,7 +2050,7 @@ body {
     cursor: text;
     filter: none;
     font-family: "CMU Typewriter Text";
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(231, 122, 89);
     text-decoration-color: light-dark(rgb(174, 97, 43), rgb(231, 122, 89));
@@ -2667,7 +2667,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(178, 166, 153);
   }
 
   .callout[data-callout="abstract"] {
@@ -2936,7 +2936,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(204, 194, 183);
+    stroke: rgb(178, 166, 153);
   }
 
   .callout[data-callout="quote"] {
@@ -2977,11 +2977,11 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 352.719px 16px 352.703px;
-    margin-block-end: 16px;
+    margin: 16px 334.719px 0px 334.703px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
-    margin-inline-end: 352.719px;
-    margin-inline-start: 352.703px;
+    margin-inline-end: 334.719px;
+    margin-inline-start: 334.703px;
   }
 
   thead {
@@ -3066,7 +3066,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3075,17 +3075,17 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
+    margin: auto;
+    margin-block-end: auto;
+    margin-block-start: auto;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
   }
 
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3103,19 +3103,8 @@ body {
   }
 
   figcaption {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    font-family: "CMU Typewriter Text";
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -3133,7 +3122,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3151,7 +3140,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3323,7 +3312,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3349,21 +3338,10 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    background-color: light-dark(rgb(225, 196, 166), rgb(43, 39, 35));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    font-family: "CMU Typewriter Text";
+    border: 1px solid light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -3377,7 +3355,7 @@ body {
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3396,7 +3374,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -3423,15 +3401,12 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(203, 170, 135), rgb(43, 39, 35));
     box-shadow: none;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    font-family: "JetBrains Mono";
     font-size: 14px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3452,7 +3427,7 @@ body {
   }
 
   dt {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -3462,7 +3437,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3472,21 +3447,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(204, 194, 183);
     text-decoration-style: dotted;
   }
 
@@ -3644,14 +3619,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-size: 16px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-weight: inherit;
     text-transform: inherit;
   }

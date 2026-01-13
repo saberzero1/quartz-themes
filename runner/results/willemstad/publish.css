@@ -14851,10 +14851,7 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(
-    oklch(40.14% 0.0638 202.51deg),
-    oklch(70.7% 0.1737 155.3deg)
-  );
+  color: oklch(82.77% 0.1667 79.6deg);
   cursor: pointer;
   filter: none;
   font-family:
@@ -14863,11 +14860,8 @@ body .markdown-rendered a.internal-link {
     "DM Sans", "Inter 4.1", Manrope;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid oklch(70.7% 0.1737 155.3deg);
-  text-decoration-color: light-dark(
-    oklch(40.14% 0.0638 202.51deg),
-    oklch(70.7% 0.1737 155.3deg)
-  );
+  text-decoration: underline solid oklch(82.77% 0.1667 79.6deg);
+  text-decoration-color: oklch(82.77% 0.1667 79.6deg);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -14965,7 +14959,7 @@ body em {
     "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
     "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
     "DM Sans", "Inter 4.1", Manrope;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid oklch(98% 0 0deg);
   text-decoration-color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
@@ -14984,7 +14978,7 @@ body i {
     "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
     "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
     "DM Sans", "Inter 4.1", Manrope;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid oklch(98% 0 0deg);
   text-decoration-color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
@@ -15434,7 +15428,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(0, 191, 111);
+  stroke: oklch(68% 0 0deg);
 }
 body .callout > .callout-title > .callout-title-inner {
   color: light-dark(
@@ -15698,7 +15692,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: oklch(70.7% 0.1737 155.3deg);
+  stroke: oklch(68% 0 0deg);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
@@ -15743,8 +15737,8 @@ body .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 12px 0px;
-  margin-block-end: 12px;
+  margin: 12px 0px 0px;
+  margin-block-end: 0px;
   margin-block-start: 12px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
@@ -15822,15 +15816,15 @@ body .markdown-rendered img {
   filter: none;
   max-width: 100%;
   object-fit: fill;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  border: 0px light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 3px;
+  border-start-end-radius: 3px;
+  border-end-start-radius: 3px;
+  border-end-end-radius: 3px;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -15840,7 +15834,7 @@ body .markdown-rendered img {
 body .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15857,19 +15851,11 @@ body .markdown-rendered figure {
   padding: 0px;
 }
 body .markdown-rendered figcaption {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+    "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+    "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+    "DM Sans", "Inter 4.1", Manrope;
   font-size: 16px;
   font-style: normal;
   text-align: start;
@@ -15886,7 +15872,7 @@ body .markdown-rendered video {
   filter: none;
   max-width: 100%;
   object-fit: contain;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -15903,7 +15889,7 @@ body .markdown-rendered video {
 }
 body .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -16065,8 +16051,8 @@ body .popover {
 body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
-  height: 6px;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  height: 8px;
+  border: 0px light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -16090,34 +16076,26 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: light-dark(oklch(99% 0 0deg), oklch(15% 0 0deg));
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-start-start-radius: 5px;
-  border-start-end-radius: 5px;
-  border-end-start-radius: 5px;
-  border-end-end-radius: 5px;
+    "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+    "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+    "DM Sans", "Inter 4.1", Manrope;
+  border: 0px solid light-dark(oklch(80% 0 0deg), oklch(30% 0 0deg));
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 3px;
+  border-start-end-radius: 3px;
+  border-end-start-radius: 3px;
+  border-end-end-radius: 3px;
   padding: 4px 8px;
 }
 body details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -16135,7 +16113,7 @@ body details {
 }
 body summary {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   cursor: auto;
   font-weight: 400;
   list-style: inherit;
@@ -16160,24 +16138,21 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(oklch(97% 0 0deg), oklch(18% 0 0deg));
   box-shadow: none;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
+  font-family: "DM Mono", "DM Mono";
   font-size: 14px;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
+  border: 0px light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 6px;
+  border-start-end-radius: 6px;
+  border-end-start-radius: 6px;
+  border-end-end-radius: 6px;
+  padding: 2px 3px;
 }
 body dl {
   margin: 16px 0px;
@@ -16187,7 +16162,7 @@ body dl {
   margin-inline-start: 0px;
 }
 body dt {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   font-weight: 400;
   margin: 0px;
   margin-block-end: 0px;
@@ -16196,7 +16171,7 @@ body dt {
   margin-inline-start: 0px;
 }
 body dd {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -16205,19 +16180,19 @@ body dd {
   padding: 0px;
 }
 body sub {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   font-size: 13.3333px;
   vertical-align: sub;
 }
 body sup {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   font-size: 13.3333px;
   vertical-align: super;
 }
 body abbr {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   cursor: auto;
-  text-decoration: underline dotted rgb(218, 218, 218);
+  text-decoration: underline dotted oklch(98% 0 0deg);
   text-decoration-style: dotted;
 }
 body .backlink-pane {
@@ -16351,13 +16326,13 @@ body input::placeholder {
   opacity: inherit;
 }
 body .markdown-rendered p::first-letter {
-  color: inherit;
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   font-size: 16px;
   font-weight: inherit;
   float: inherit;
 }
 body .markdown-rendered p::first-line {
-  color: inherit;
+  color: light-dark(oklch(0% 0 0deg), oklch(98% 0 0deg));
   font-weight: inherit;
   text-transform: inherit;
 }

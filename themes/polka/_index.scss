@@ -1924,7 +1924,7 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(224, 41, 41), rgb(0, 212, 250));
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1938,8 +1938,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(0, 212, 250);
-    text-decoration-color: light-dark(rgb(224, 41, 41), rgb(0, 212, 250));
+    text-decoration: underline solid rgb(250, 247, 245);
+    text-decoration-color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2067,7 +2067,7 @@ body {
       BlinkMacSystemFont,
       "Segoe UI",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(250, 247, 245);
     text-decoration-color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
@@ -2093,7 +2093,7 @@ body {
       BlinkMacSystemFont,
       "Segoe UI",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(250, 247, 245);
     text-decoration-color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
@@ -2789,7 +2789,7 @@ body {
     border-start-end-radius: 2px;
     border-end-start-radius: 2px;
     border-end-end-radius: 2px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px;
   }
 
@@ -2828,7 +2828,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 2px dashed light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2842,7 +2842,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(179, 179, 179);
+    stroke: rgb(250, 247, 245);
   }
 
   .callout[data-callout="abstract"] {
@@ -2851,7 +2851,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 2px dashed light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2874,7 +2874,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 2px dashed light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2897,7 +2897,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 2px dashed light-dark(rgb(0, 130, 235), rgb(0, 130, 255));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2920,7 +2920,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 2px dashed light-dark(rgb(240, 195, 0), rgb(255, 220, 120));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2943,7 +2943,7 @@ body {
       rgba(8, 185, 78, 0.1),
       rgba(68, 207, 110, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 2px dashed light-dark(rgb(0, 180, 0), rgb(0, 190, 0));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2966,7 +2966,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 2px dashed light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2989,7 +2989,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 2px dashed light-dark(rgb(240, 150, 0), rgb(220, 210, 0));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -3035,7 +3035,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 2px dashed light-dark(rgb(235, 0, 0), rgb(250, 30, 0));
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -3143,8 +3143,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -3230,7 +3230,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3249,7 +3249,7 @@ body {
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3267,18 +3267,15 @@ body {
   }
 
   figcaption {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     font-family:
+      "Franklin Gothic Book",
+      Rubik,
+      "Helvetica Neue",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
-      system-ui,
       "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
       sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -3297,7 +3294,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3315,7 +3312,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3487,7 +3484,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3513,35 +3510,33 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgba(46, 31, 31, 0.05), rgb(10, 18, 30));
+    color: light-dark(rgb(34, 34, 34), rgb(250, 247, 245));
     font-family:
+      "Franklin Gothic Book",
+      Rubik,
+      "Helvetica Neue",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
-      system-ui,
       "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
+    border: 1px solid
+      light-dark(rgba(46, 31, 31, 0.1), rgba(210, 214, 223, 0.1));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
     padding: 4px 8px;
   }
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3560,7 +3555,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -3587,23 +3582,22 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(23, 35, 62), rgb(10, 18, 30));
     box-shadow: none;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(227, 227, 227);
     font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+      "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
+      Consolas, "Source Code Pro", monospace;
     font-size: 14px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border: 0px rgb(227, 227, 227);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-start-start-radius: 2px;
+    border-start-end-radius: 2px;
+    border-end-start-radius: 2px;
+    border-end-end-radius: 2px;
     padding: 1.4px 3.5px;
   }
 
@@ -3616,7 +3610,7 @@ body {
   }
 
   dt {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -3626,7 +3620,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3636,21 +3630,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(250, 247, 245);
     text-decoration-style: dotted;
   }
 
@@ -3808,14 +3802,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     font-size: 16px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
     font-weight: inherit;
     text-transform: inherit;
   }

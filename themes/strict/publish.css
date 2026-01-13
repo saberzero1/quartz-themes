@@ -1008,7 +1008,7 @@ body .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(166, 138, 249);
+  text-decoration: underline solid rgb(197, 182, 252);
   text-decoration-color: rgb(197, 182, 252);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1141,7 +1141,7 @@ body em {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
@@ -1168,7 +1168,7 @@ body i {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
@@ -1700,7 +1700,7 @@ body .callout[data-callout="note"] {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: rgba(2, 122, 255, 0.1);
 }
@@ -1723,7 +1723,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(2, 122, 255);
+  stroke: rgb(179, 179, 179);
 }
 body .callout > .callout-title > .callout-title-inner {
   color: rgb(2, 122, 255);
@@ -1736,7 +1736,7 @@ body .callout > .callout-content {
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(83, 223, 221, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(83, 223, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1758,7 +1758,7 @@ body
 body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(2, 122, 255, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1780,7 +1780,7 @@ body
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(2, 122, 255, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1802,7 +1802,7 @@ body
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(83, 223, 221, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(83, 223, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1824,7 +1824,7 @@ body
 body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(68, 207, 110, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(68, 207, 110, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1846,7 +1846,7 @@ body
 body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(233, 151, 63, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(233, 151, 63, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1868,7 +1868,7 @@ body
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(233, 151, 63, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(233, 151, 63, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1912,7 +1912,7 @@ body
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: rgba(251, 70, 76, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(251, 70, 76, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1973,7 +1973,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(218, 218, 218);
+  stroke: rgb(179, 179, 179);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
@@ -2025,8 +2025,8 @@ body .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
+  margin: 16px 0px 0px;
+  margin-block-end: 0px;
   margin-block-start: 16px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
@@ -2121,7 +2121,7 @@ body .markdown-rendered img {
 }
 body .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
-  text-align: start;
+  text-align: justify;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2154,7 +2154,7 @@ body .markdown-rendered figcaption {
     sans-serif;
   font-size: 16px;
   font-style: normal;
-  text-align: start;
+  text-align: justify;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -2372,7 +2372,7 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: rgb(42, 42, 42);
+  background-color: rgb(16, 16, 16);
   color: rgb(218, 218, 218);
   font-family:
     ui-sans-serif,
@@ -2386,7 +2386,7 @@ body input[type="text"] {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 1px solid rgb(54, 54, 54);
+  border: 1px solid rgb(64, 64, 64);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -2442,24 +2442,24 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(0, 0, 0);
   box-shadow: none;
-  color: rgb(218, 218, 218);
+  color: rgb(212, 212, 212);
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
-  font-size: 14px;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
+  font-size: 16px;
+  border: 0px rgb(212, 212, 212);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 1.6px 4px;
 }
 body dl {
   margin: 16px 0px;

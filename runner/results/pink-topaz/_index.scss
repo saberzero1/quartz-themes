@@ -2022,8 +2022,8 @@ body {
 
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
-    background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(152, 0, 0), rgb(255, 204, 188));
+    background-color: light-dark(rgb(255, 222, 206), rgb(243, 155, 160));
+    color: light-dark(rgb(55, 41, 26), rgb(249, 55, 89));
     cursor: pointer;
     filter: none;
     font-family:
@@ -2040,8 +2040,8 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: none solid rgb(255, 204, 188);
-    text-decoration-color: light-dark(rgb(152, 0, 0), rgb(255, 204, 188));
+    text-decoration: none solid rgb(249, 55, 89);
+    text-decoration-color: light-dark(rgb(55, 41, 26), rgb(249, 55, 89));
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -2165,7 +2165,7 @@ body {
 
   .page article p > em,
   em {
-    background-color: rgb(245, 84, 84);
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     cursor: text;
     filter: none;
@@ -2181,7 +2181,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(239, 233, 217);
     text-decoration-color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
@@ -2194,7 +2194,7 @@ body {
 
   .page article p > i,
   i {
-    background-color: rgb(245, 84, 84);
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     cursor: text;
     filter: none;
@@ -2210,7 +2210,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(239, 233, 217);
     text-decoration-color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
@@ -2448,9 +2448,9 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    color: light-dark(rgb(238, 95, 0), rgb(255, 255, 255));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     font-family: Consolas, Monaco, monospace;
-    padding: 2.4px 4.8px;
+    padding: 2.25px 4.5px;
   }
 
   pre > code,
@@ -2911,7 +2911,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -2950,7 +2950,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -2965,7 +2965,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(239, 233, 217);
   }
 
   .callout[data-callout="abstract"] {
@@ -2974,7 +2974,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -2998,7 +2998,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -3022,7 +3022,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -3046,7 +3046,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -3070,7 +3070,7 @@ body {
       rgba(8, 185, 78, 0.1),
       rgba(68, 207, 110, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
     border-top-left-radius: 4px;
@@ -3094,7 +3094,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
@@ -3118,7 +3118,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
@@ -3166,7 +3166,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 4px;
@@ -3280,11 +3280,11 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 213.391px 20px;
-    margin-block-end: 20px;
+    margin: 16px 186.391px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
-    margin-inline-end: 213.391px;
-    margin-inline-start: 213.391px;
+    margin-inline-end: 186.391px;
+    margin-inline-start: 186.391px;
   }
 
   thead {
@@ -3367,7 +3367,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3385,8 +3385,8 @@ body {
 
   figure {
     background-color: rgba(0, 0, 0, 0);
-    text-align: start;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    text-align: justify;
+    border: 0px light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3404,7 +3404,7 @@ body {
   }
 
   figcaption {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3419,7 +3419,7 @@ body {
       sans-serif;
     font-size: 16px;
     font-style: normal;
-    text-align: start;
+    text-align: justify;
     margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3434,7 +3434,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3452,7 +3452,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3624,7 +3624,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3650,8 +3650,8 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(rgb(255, 222, 206), rgb(243, 155, 160));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3664,7 +3664,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
+    border: 1px solid light-dark(rgba(0, 0, 0, 0.1), rgb(25, 25, 25));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -3678,7 +3678,7 @@ body {
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3697,7 +3697,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -3724,15 +3724,15 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(255, 222, 206), rgba(249, 55, 89, 0.05));
     box-shadow: none;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
     font-size: 14px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3753,7 +3753,7 @@ body {
   }
 
   dt {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -3763,7 +3763,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3773,21 +3773,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(239, 233, 217);
     text-decoration-style: dotted;
   }
 
@@ -3945,14 +3945,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     font-size: 16px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: light-dark(rgb(55, 41, 26), rgb(239, 233, 217));
     font-weight: inherit;
     text-transform: inherit;
   }

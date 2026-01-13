@@ -911,7 +911,7 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(242, 119, 122);
+  color: rgb(248, 245, 237);
   cursor: pointer;
   filter: none;
   font-family:
@@ -934,8 +934,8 @@ body .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(242, 119, 122);
-  text-decoration-color: rgb(242, 119, 122);
+  text-decoration: underline solid rgb(248, 245, 237);
+  text-decoration-color: rgb(248, 245, 237);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
