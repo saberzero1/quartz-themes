@@ -11893,7 +11893,7 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(oklch(0.4014 0.0638 202.51), oklch(0.707 0.1737 155.3));
+    color: oklch(0.8277 0.1667 79.6);
     cursor: pointer;
     filter: none;
     font-family:
@@ -11902,11 +11902,8 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid oklch(0.707 0.1737 155.3);
-    text-decoration-color: light-dark(
-      oklch(0.4014 0.0638 202.51),
-      oklch(0.707 0.1737 155.3)
-    );
+    text-decoration: underline solid oklch(0.8277 0.1667 79.6);
+    text-decoration-color: oklch(0.8277 0.1667 79.6);
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: inherit;
@@ -12009,7 +12006,7 @@ body {
       "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
@@ -12030,7 +12027,7 @@ body {
       "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
       "DM Sans", "Inter 4.1", Manrope;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid oklch(0.98 0 0);
     text-decoration-color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
@@ -12671,7 +12668,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(0, 191, 111);
+    stroke: oklch(0.68 0 0);
   }
 
   .callout[data-callout="abstract"] {
@@ -12902,7 +12899,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: oklch(0.707 0.1737 155.3);
+    stroke: oklch(0.68 0 0);
   }
 
   .callout[data-callout="quote"] {
@@ -12946,8 +12943,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 12px 0px;
-    margin-block-end: 12px;
+    margin: 12px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 12px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -13033,15 +13030,15 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border: 0px light-dark(oklch(0 0 0), oklch(0.98 0 0));
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-start-start-radius: 3px;
+    border-start-end-radius: 3px;
+    border-end-start-radius: 3px;
+    border-end-end-radius: 3px;
     margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -13052,7 +13049,7 @@ body {
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(oklch(0 0 0), oklch(0.98 0 0));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -13070,19 +13067,11 @@ body {
   }
 
   figcaption {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -13100,7 +13089,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(oklch(0 0 0), oklch(0.98 0 0));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -13118,7 +13107,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(oklch(0 0 0), oklch(0.98 0 0));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -13289,8 +13278,8 @@ body {
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 6px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    height: 8px;
+    border: 0px light-dark(oklch(0 0 0), oklch(0.98 0 0));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -13316,35 +13305,27 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: light-dark(oklch(0.99 0 0), oklch(0.15 0 0));
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
+    border: 0px solid light-dark(oklch(0.8 0 0), oklch(0.3 0 0));
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-start-start-radius: 3px;
+    border-start-end-radius: 3px;
+    border-end-start-radius: 3px;
+    border-end-end-radius: 3px;
     padding: 4px 8px;
   }
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(oklch(0 0 0), oklch(0.98 0 0));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -13363,7 +13344,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     cursor: auto;
     font-weight: 400;
     list-style: inherit;
@@ -13390,24 +13371,21 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(oklch(0.97 0 0), oklch(0.18 0 0));
     box-shadow: none;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
+    font-family: "DM Mono", "DM Mono";
     font-size: 14px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    padding: 1.4px 3.5px;
+    border: 0px light-dark(oklch(0 0 0), oklch(0.98 0 0));
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-start-start-radius: 6px;
+    border-start-end-radius: 6px;
+    border-end-start-radius: 6px;
+    border-end-end-radius: 6px;
+    padding: 2px 3px;
   }
 
   dl {
@@ -13419,7 +13397,7 @@ body {
   }
 
   dt {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -13429,7 +13407,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -13439,21 +13417,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted oklch(0.98 0 0);
     text-decoration-style: dotted;
   }
 
@@ -13611,14 +13589,14 @@ body {
   }
 
   p::first-letter {
-    color: inherit;
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     font-size: 16px;
     font-weight: inherit;
     float: inherit;
   }
 
   p::first-line {
-    color: inherit;
+    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
     font-weight: inherit;
     text-transform: inherit;
   }

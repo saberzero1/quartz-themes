@@ -925,7 +925,7 @@ body .markdown-rendered a.external-link {
   user-select: text;
 }
 body .markdown-rendered a.internal-link {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(135, 232, 206);
   color: rgb(197, 182, 252);
   cursor: pointer;
   filter: none;
@@ -974,14 +974,14 @@ body .markdown-rendered p {
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: rgb(218, 218, 218);
   cursor: text;
   filter: none;
   font-family: "Fira Code", monospace;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 231, 246);
-  text-decoration-color: rgb(218, 231, 246);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -990,14 +990,14 @@ body strong {
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: rgb(218, 218, 218);
   cursor: text;
   filter: none;
   font-family: "Fira Code", monospace;
   font-weight: 600;
   outline: inherit;
-  text-decoration: none solid rgb(218, 231, 246);
-  text-decoration-color: rgb(218, 231, 246);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1006,14 +1006,14 @@ body b {
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: rgb(218, 218, 218);
   cursor: text;
   filter: none;
   font-family: "Fira Code", monospace;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 231, 246);
-  text-decoration-color: rgb(218, 231, 246);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1022,14 +1022,14 @@ body em {
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: rgb(218, 218, 218);
   cursor: text;
   filter: none;
   font-family: "Fira Code", monospace;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
-  text-decoration: none solid rgb(218, 231, 246);
-  text-decoration-color: rgb(218, 231, 246);
+  text-decoration: none solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1054,14 +1054,14 @@ body .markdown-rendered mark {
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 231, 246);
+  color: rgb(218, 218, 218);
   cursor: text;
   filter: none;
   font-family: "Fira Code", monospace;
   font-weight: 400;
   outline: inherit;
-  text-decoration: line-through solid rgb(218, 231, 246);
-  text-decoration-color: rgb(218, 231, 246);
+  text-decoration: line-through solid rgb(218, 218, 218);
+  text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -1198,7 +1198,7 @@ body .markdown-rendered code {
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
-  padding: 1.89px 3.78px;
+  padding: 2.1px 4.2px;
 }
 body .markdown-rendered pre > code {
   background-color: rgb(36, 36, 36);
@@ -1437,7 +1437,7 @@ body .callout[data-callout="note"] {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: rgba(2, 122, 255, 0.1);
 }
@@ -1460,7 +1460,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(2, 122, 255);
+  stroke: rgb(179, 179, 179);
 }
 body .callout > .callout-title > .callout-title-inner {
   color: rgb(2, 122, 255);
@@ -1473,7 +1473,7 @@ body .callout > .callout-content {
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: rgba(83, 223, 221, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(83, 223, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1495,7 +1495,7 @@ body
 body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: rgba(2, 122, 255, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1517,7 +1517,7 @@ body
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: rgba(2, 122, 255, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(2, 122, 255, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1539,7 +1539,7 @@ body
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: rgba(83, 223, 221, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(83, 223, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1561,7 +1561,7 @@ body
 body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: rgba(68, 207, 110, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(68, 207, 110, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1583,7 +1583,7 @@ body
 body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: rgba(233, 151, 63, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(233, 151, 63, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1605,7 +1605,7 @@ body
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: rgba(233, 151, 63, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid rgba(233, 151, 63, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1710,7 +1710,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(218, 218, 218);
+  stroke: rgb(218, 231, 246);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
@@ -1751,8 +1751,8 @@ body .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
+  margin: 16px 0px 0px;
+  margin-block-end: 0px;
   margin-block-start: 16px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
@@ -1857,28 +1857,17 @@ body .markdown-rendered figure {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 40px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
+  margin: 14.4px 40px;
+  margin-block-end: 14.4px;
+  margin-block-start: 14.4px;
   margin-inline-end: 40px;
   margin-inline-start: 40px;
   padding: 0px;
 }
 body .markdown-rendered figcaption {
   color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-size: 16px;
+  font-family: "Fira Code", monospace;
+  font-size: 14.4px;
   font-style: normal;
   text-align: start;
   margin: 0px;
@@ -1894,7 +1883,7 @@ body .markdown-rendered video {
   filter: none;
   max-width: 100%;
   object-fit: contain;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(218, 231, 246);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2074,7 +2063,7 @@ body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 6px;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(218, 231, 246);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2100,18 +2089,7 @@ body input[type="range"] {
 body input[type="text"] {
   background-color: rgb(42, 42, 42);
   color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "Fira Code", monospace;
   border: 1px solid rgb(54, 54, 54);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -2175,7 +2153,7 @@ body kbd {
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
-  font-size: 14px;
+  font-size: 12.6px;
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2185,12 +2163,12 @@ body kbd {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
+  padding: 1.26px 3.15px;
 }
 body dl {
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
+  margin: 14.4px 0px;
+  margin-block-end: 14.4px;
+  margin-block-start: 14.4px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -2213,19 +2191,19 @@ body dd {
   padding: 0px;
 }
 body sub {
-  color: rgb(218, 218, 218);
-  font-size: 13.3333px;
+  color: rgb(218, 231, 246);
+  font-size: 12px;
   vertical-align: sub;
 }
 body sup {
-  color: rgb(218, 218, 218);
-  font-size: 13.3333px;
+  color: rgb(218, 231, 246);
+  font-size: 12px;
   vertical-align: super;
 }
 body abbr {
-  color: rgb(218, 218, 218);
+  color: rgb(218, 231, 246);
   cursor: auto;
-  text-decoration: underline dotted rgb(218, 218, 218);
+  text-decoration: underline dotted rgb(218, 231, 246);
   text-decoration-style: dotted;
 }
 body .backlink-pane {
@@ -2359,13 +2337,13 @@ body input::placeholder {
   opacity: inherit;
 }
 body .markdown-rendered p::first-letter {
-  color: inherit;
-  font-size: 16px;
+  color: rgb(218, 231, 246);
+  font-size: 14.4px;
   font-weight: inherit;
   float: inherit;
 }
 body .markdown-rendered p::first-line {
-  color: inherit;
+  color: rgb(218, 231, 246);
   font-weight: inherit;
   text-transform: inherit;
 }

@@ -1941,7 +1941,7 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(77, 140, 230), rgb(121, 169, 236));
+  color: light-dark(rgb(32, 112, 223), rgb(175, 203, 244));
   cursor: pointer;
   filter: none;
   font-family:
@@ -1965,8 +1965,8 @@ body .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline 1px solid rgb(121, 169, 236);
-  text-decoration-color: light-dark(rgb(77, 140, 230), rgb(121, 169, 236));
+  text-decoration: underline 1px solid rgb(175, 203, 244);
+  text-decoration-color: light-dark(rgb(32, 112, 223), rgb(175, 203, 244));
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;

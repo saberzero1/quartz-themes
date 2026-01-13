@@ -578,7 +578,7 @@ body.theme-light {
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 2.2em !important;
+  --list-indent: 2em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0.75em !important;
   --list-marker-color: rgb(89, 89, 89) !important;
@@ -812,7 +812,7 @@ body.theme-light {
   --tab-outline-color: rgb(176, 176, 176) !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 4px !important;
-  --tab-radius-active: 6px 6px 0 0 !important;
+  --tab-radius-active: 8px !important;
   --tab-stacked-font-size: 15px !important;
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: 41px !important;
@@ -902,16 +902,16 @@ body.theme-light {
   --titlebar-text-color: rgb(51, 51, 51) !important;
   --titlebar-text-color-focused: rgb(38, 38, 38) !important;
   --titlebar-text-weight: 700 !important;
-  --toggle-border-width: 1px !important;
+  --toggle-border-width: 2px !important;
   --toggle-radius: 4px !important;
-  --toggle-s-border-width: 4px !important;
-  --toggle-s-thumb-height: 14px !important;
-  --toggle-s-thumb-width: 14px !important;
-  --toggle-s-width: 34px !important;
+  --toggle-s-border-width: 1px !important;
+  --toggle-s-thumb-height: 18px !important;
+  --toggle-s-thumb-width: 18px !important;
+  --toggle-s-width: 44px !important;
   --toggle-thumb-color: rgb(255, 255, 255) !important;
-  --toggle-thumb-height: 18px !important;
+  --toggle-thumb-height: 20px !important;
   --toggle-thumb-radius: 3px !important;
-  --toggle-thumb-width: 18px !important;
+  --toggle-thumb-width: 20px !important;
   --toggle-width: 42px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: rgb(38, 38, 38) !important;
@@ -934,10 +934,12 @@ body.theme-light {
   --italic-color: rgb(38, 38, 38) !important;
   --nav-item-children-margin-left: 13px !important;
   --vault-name-font-size: 15px !important;
+  --setting-items-padding: 8px !important;
   --callout-background-alpha: 20% !important;
   --window-border: 1px solid rgb(176, 176, 176) !important;
   --window-border-color: rgb(176, 176, 176) !important;
   --strikethrough-line-color: rgb(51, 51, 51) !important;
+  --setting-items-background: rgb(255, 255, 255) !important;
   --background-primary-alt-hsl: 0, 0%, 96% !important;
   --background-primary-hsl: 0, 0%, 100% !important;
   --background-secondary-hsl: 0, 0%, 93% !important;
@@ -1028,6 +1030,7 @@ body.theme-light {
   --interactive-accent-tint: rgb(190, 175, 248) !important;
   --interactive-accent-tint-hsl: 252, 84%, 83% !important;
   --mark-highlight-base: rgb(250, 227, 174) !important;
+  --nav-header-padding-bottom: 40px !important;
   --scroll-bar-size: 12px !important;
   --scroll-button-background-color: rgb(255, 255, 255) !important;
   --shadow-color-hsl: 0, 0%, 0% !important;
@@ -1504,7 +1507,7 @@ body.theme-dark {
   --list-bullet-radius: 50%;
   --list-bullet-size: 0.3em;
   --list-bullet-transform: none;
-  --list-indent: 2.2em;
+  --list-indent: 2em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0.75em;
   --list-marker-color: rgb(207, 207, 207);
@@ -1736,7 +1739,7 @@ body.theme-dark {
   --tab-outline-color: rgb(77, 77, 77);
   --tab-outline-width: 1px;
   --tab-radius: 4px;
-  --tab-radius-active: 6px 6px 0 0;
+  --tab-radius-active: 8px;
   --tab-stacked-font-size: 15px;
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: 41px;
@@ -1826,16 +1829,16 @@ body.theme-dark {
   --titlebar-text-color: rgb(219, 219, 219);
   --titlebar-text-color-focused: rgb(232, 232, 232);
   --titlebar-text-weight: 700;
-  --toggle-border-width: 1px;
+  --toggle-border-width: 2px;
   --toggle-radius: 4px;
-  --toggle-s-border-width: 4px;
-  --toggle-s-thumb-height: 14px;
-  --toggle-s-thumb-width: 14px;
-  --toggle-s-width: 34px;
+  --toggle-s-border-width: 1px;
+  --toggle-s-thumb-height: 18px;
+  --toggle-s-thumb-width: 18px;
+  --toggle-s-width: 44px;
   --toggle-thumb-color: rgb(232, 232, 232);
-  --toggle-thumb-height: 18px;
+  --toggle-thumb-height: 20px;
   --toggle-thumb-radius: 3px;
-  --toggle-thumb-width: 18px;
+  --toggle-thumb-width: 20px;
   --toggle-width: 42px;
   --vault-profile-actions-display: flex;
   --vault-profile-color: rgb(232, 232, 232);
@@ -1858,10 +1861,12 @@ body.theme-dark {
   --italic-color: rgb(232, 232, 232);
   --nav-item-children-margin-left: 13px;
   --vault-name-font-size: 15px;
+  --setting-items-padding: 8px;
   --callout-background-alpha: 20%;
   --window-border: 1px solid rgb(77, 77, 77);
   --window-border-color: rgb(77, 77, 77);
   --strikethrough-line-color: rgb(219, 219, 219);
+  --setting-items-background: rgb(20, 20, 20);
   --background-primary-alt-hsl: 0, 0%, 30%;
   --background-primary-hsl: 0, 0%, 18%;
   --background-secondary-hsl: 0, 0%, 12%;
@@ -1967,6 +1972,7 @@ body.theme-dark {
   --link-external-color-dt: 267, 52%, 75%;
   --link-internal-color-dt: 267, 52%, 75%;
   --mark-highlight-base: rgb(53, 40, 8);
+  --nav-header-padding-bottom: 40px;
   --scroll-bar-size: 12px;
   --scroll-button-background-color: rgb(46, 46, 46);
   --shadow-color-hsl: 0, 0%, 0%;
@@ -2017,7 +2023,7 @@ body .markdown-rendered a.external-link {
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(132, 90, 231), rgb(188, 158, 224));
+  color: light-dark(rgba(132, 90, 231, 0.6), rgba(188, 158, 224, 0.6));
   cursor: pointer;
   filter: none;
   font-family:
@@ -2035,8 +2041,11 @@ body .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: inherit;
-  text-decoration: underline solid rgb(188, 158, 224);
-  text-decoration-color: light-dark(rgb(132, 90, 231), rgb(188, 158, 224));
+  text-decoration: underline solid rgba(188, 158, 224, 0.6);
+  text-decoration-color: light-dark(
+    rgba(132, 90, 231, 0.6),
+    rgba(188, 158, 224, 0.6)
+  );
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: inherit;
@@ -2176,7 +2185,7 @@ body em {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(232, 232, 232);
   text-decoration-color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
@@ -2204,7 +2213,7 @@ body i {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   outline: inherit;
   text-decoration: none solid rgb(232, 232, 232);
   text-decoration-color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
@@ -2271,7 +2280,7 @@ body del {
   user-select: text;
 }
 body .suggestion-item.is-selected {
-  background-color: light-dark(rgba(231, 226, 253, 0.9), rgba(54, 28, 79, 0.9));
+  background-color: light-dark(rgb(231, 226, 253), rgb(54, 28, 79));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2614,7 +2623,7 @@ body div.search-results .suggestion-item {
 body .search-results .suggestion-item.is-selected {
   color: light-dark(rgb(132, 90, 231), rgb(188, 158, 224));
   font-weight: 400;
-  background-color: light-dark(rgba(231, 226, 253, 0.9), rgba(54, 28, 79, 0.9));
+  background-color: light-dark(rgb(231, 226, 253), rgb(54, 28, 79));
 }
 body div.search-results .suggestion-item.is-selected {
   color: light-dark(rgb(132, 90, 231), rgb(188, 158, 224));
@@ -2753,7 +2762,7 @@ body .callout[data-callout="note"] {
   border-start-end-radius: 8px;
   border-end-start-radius: 8px;
   border-end-end-radius: 8px;
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   padding: 4px;
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
 }
@@ -2776,7 +2785,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(171, 171, 171);
+  stroke: rgb(219, 219, 219);
 }
 body .callout > .callout-title > .callout-title-inner {
   color: light-dark(rgb(120, 120, 120), rgb(171, 171, 171));
@@ -2789,7 +2798,7 @@ body .callout > .callout-content {
 body .callout[data-callout="abstract"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid
     light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
   border-top-left-radius: 8px;
@@ -2812,7 +2821,7 @@ body
 body .callout[data-callout="info"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2834,7 +2843,7 @@ body
 body .callout[data-callout="todo"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2856,7 +2865,7 @@ body
 body .callout[data-callout="tip"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid
     light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
   border-top-left-radius: 8px;
@@ -2879,7 +2888,7 @@ body
 body .callout[data-callout="success"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(8, 185, 78, 0.1), rgba(68, 207, 110, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2901,7 +2910,7 @@ body
 body .callout[data-callout="question"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid
     light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
   border-top-left-radius: 8px;
@@ -2924,7 +2933,7 @@ body
 body .callout[data-callout="warning"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid
     light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
   border-top-left-radius: 8px;
@@ -2969,7 +2978,7 @@ body
 body .callout[data-callout="failure"] {
   --callout-color: inherit;
   background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -3034,7 +3043,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(188, 158, 224);
+  stroke: rgb(219, 219, 219);
 }
 body .callout[data-callout="quote"] {
   --callout-color: inherit;
@@ -3087,8 +3096,8 @@ body .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 8px 0px;
-  margin-block-end: 8px;
+  margin: 8px 0px 0px;
+  margin-block-end: 0px;
   margin-block-start: 8px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
@@ -3166,7 +3175,7 @@ body .markdown-rendered img {
   filter: none;
   max-width: 100%;
   object-fit: fill;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3184,7 +3193,7 @@ body .markdown-rendered img {
 body .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3201,8 +3210,9 @@ body .markdown-rendered figure {
   padding: 0px;
 }
 body .markdown-rendered figcaption {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   font-family:
+    "Source Sans 3",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3230,7 +3240,7 @@ body .markdown-rendered video {
   filter: none;
   max-width: 100%;
   object-fit: contain;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3247,7 +3257,7 @@ body .markdown-rendered video {
 }
 body .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3410,7 +3420,7 @@ body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 6px;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3434,9 +3444,10 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: light-dark(rgb(255, 255, 255), rgb(20, 20, 20));
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   font-family:
+    "Source Sans 3",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3448,20 +3459,20 @@ body input[type="text"] {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-start-start-radius: 5px;
-  border-start-end-radius: 5px;
-  border-end-start-radius: 5px;
-  border-end-end-radius: 5px;
+  border: 1px solid light-dark(rgb(176, 176, 176), rgb(77, 77, 77));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
   padding: 4px 8px;
 }
 body details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3479,7 +3490,7 @@ body details {
 }
 body summary {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   cursor: auto;
   font-weight: 400;
   list-style: inherit;
@@ -3504,15 +3515,15 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(rgb(255, 255, 255), rgb(20, 20, 20));
   box-shadow: none;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   font-family:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-    "Source Code Pro", monospace;
+    "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+    Consolas, "Source Code Pro", monospace;
   font-size: 14px;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 1px solid light-dark(rgb(176, 176, 176), rgb(77, 77, 77));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3521,7 +3532,7 @@ body kbd {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
+  padding: 0px 4px;
 }
 body dl {
   margin: 16px 0px;
@@ -3531,7 +3542,7 @@ body dl {
   margin-inline-start: 0px;
 }
 body dt {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   font-weight: 400;
   margin: 0px;
   margin-block-end: 0px;
@@ -3540,7 +3551,7 @@ body dt {
   margin-inline-start: 0px;
 }
 body dd {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -3549,19 +3560,19 @@ body dd {
   padding: 0px;
 }
 body sub {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   font-size: 13.3333px;
   vertical-align: sub;
 }
 body sup {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   font-size: 13.3333px;
   vertical-align: super;
 }
 body abbr {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   cursor: auto;
-  text-decoration: underline dotted rgb(218, 218, 218);
+  text-decoration: underline dotted rgb(232, 232, 232);
   text-decoration-style: dotted;
 }
 body .backlink-pane {
@@ -3695,13 +3706,13 @@ body input::placeholder {
   opacity: inherit;
 }
 body .markdown-rendered p::first-letter {
-  color: inherit;
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   font-size: 16px;
   font-weight: inherit;
   float: inherit;
 }
 body .markdown-rendered p::first-line {
-  color: inherit;
+  color: light-dark(rgb(38, 38, 38), rgb(232, 232, 232));
   font-weight: inherit;
   text-transform: inherit;
 }

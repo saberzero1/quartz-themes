@@ -1874,7 +1874,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: inherit;
-    text-decoration: underline solid rgb(166, 138, 249);
+    text-decoration: underline solid rgb(197, 182, 252);
     text-decoration-color: light-dark(rgb(166, 138, 249), rgb(197, 182, 252));
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2025,7 +2025,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
     text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -2056,7 +2056,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     outline: inherit;
     text-decoration: none solid rgb(218, 218, 218);
     text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -2792,7 +2792,7 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
@@ -2831,7 +2831,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -2846,7 +2846,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(2, 122, 255);
+    stroke: rgb(179, 179, 179);
   }
 
   .callout[data-callout="abstract"] {
@@ -2855,7 +2855,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -2879,7 +2879,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -2903,7 +2903,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-top-left-radius: 4px;
@@ -2927,7 +2927,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-top-left-radius: 4px;
@@ -2951,7 +2951,7 @@ body {
       rgba(8, 185, 78, 0.1),
       rgba(68, 207, 110, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
     border-top-left-radius: 4px;
@@ -2975,7 +2975,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
@@ -2999,7 +2999,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 4px;
@@ -3047,7 +3047,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 4px;
@@ -3110,7 +3110,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(218, 218, 218);
+    stroke: rgb(179, 179, 179);
   }
 
   .callout[data-callout="quote"] {
@@ -3163,8 +3163,8 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
+    margin: 16px 0px 0px;
+    margin-block-end: 0px;
     margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -3253,14 +3253,14 @@ body {
     max-width: 100%;
     object-fit: fill;
     border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
     margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3291,6 +3291,8 @@ body {
   figcaption {
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
+      "LXGW WenKai GB Screen R",
+      jinkaiFont,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3538,6 +3540,8 @@ body {
     background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
+      "LXGW WenKai GB Screen R",
+      jinkaiFont,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3609,13 +3613,13 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgba(255, 255, 255, 0.467), rgb(36, 36, 36));
     box-shadow: none;
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+      "Code New Roman", romanFont, "LXGW WenKai Mono", ui-monospace,
+      SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
+      "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
     font-size: 14px;
     border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 4px;
