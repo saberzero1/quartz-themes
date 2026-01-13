@@ -863,13 +863,13 @@
   --background-modifier-success: #44cf6e !important;
   --background-modifier-success-rgb: 68, 207, 110 !important;
   --background-primary: rgb(27, 27, 40) !important;
-  --background-primary-alt: #242424 !important;
-  --background-secondary: rgb(55, 41, 76) !important;
+  --background-primary-alt: rgb(53, 37, 55) !important;
+  --background-secondary: rgb(79, 59, 109) !important;
   --background-secondary-alt: #363636 !important;
   --bases-cards-background: rgb(27, 27, 40) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #242424 !important;
+  --bases-cards-cover-background: rgb(53, 37, 55) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
@@ -891,7 +891,7 @@
   --bases-header-padding-start: 2px !important;
   --bases-table-border-color: #363636 !important;
   --bases-table-cell-background-active: rgb(27, 27, 40) !important;
-  --bases-table-cell-background-disabled: #242424 !important;
+  --bases-table-cell-background-disabled: rgb(53, 37, 55) !important;
   --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
@@ -903,7 +903,7 @@
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #242424 !important;
+  --bases-table-group-background: rgb(53, 37, 55) !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: rgb(27, 27, 40) !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.075) !important;
@@ -975,7 +975,7 @@
   --checklist-done-color: white !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: #242424 !important;
+  --code-background: rgb(53, 37, 55) !important;
   --code-border-color: #363636 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
@@ -1286,7 +1286,7 @@
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: rgb(55, 41, 76) !important;
+  --menu-background: rgb(79, 59, 109) !important;
   --menu-border-color: #3f3f3f !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
@@ -1425,8 +1425,8 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --ribbon-background: rgb(55, 41, 76) !important;
-  --ribbon-background-collapsed: rgb(55, 41, 76) !important;
+  --ribbon-background: rgb(79, 59, 109) !important;
+  --ribbon-background-collapsed: rgb(79, 59, 109) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1521,7 +1521,7 @@
   --tab-stacked-text-align: left !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: rgb(55, 41, 76) !important;
+  --tab-switcher-background: rgb(79, 59, 109) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -1649,7 +1649,7 @@
   --cards-min-width: 180px !important;
   --cards-mobile-width: 120px !important;
   --cards-padding: 1.2em !important;
-  --background-tertiary: rgb(60, 32, 58) !important;
+  --background-tertiary: rgb(27, 14, 26) !important;
   --callout-margin: 0px;
   --callout-title-size: 1.1em;
   --callout-gap: 1em;
@@ -1664,7 +1664,7 @@
     0px 2px 4px rgba(0, 0, 0, 0.05), 0px 4px 8px rgba(0, 0, 0, 0.03),
     0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 12px rgba(0, 0, 0, 0.03),
     0px 2px 16px rgba(0, 0, 0, 0.03), 0px 4px 20px rgba(0, 0, 0, 0.02) !important;
-  --background-primary-alt-1: #242424 !important;
+  --background-primary-alt-1: rgb(53, 37, 55) !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -2331,7 +2331,7 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(250, 250, 250), rgb(53, 37, 55));
     border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2351,7 +2351,7 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(250, 250, 250), rgb(53, 37, 55));
     border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2368,7 +2368,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(250, 250, 250), rgb(53, 37, 55));
     border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2434,7 +2434,7 @@ body {
   }
 
   blockquote {
-    background-color: light-dark(rgb(191, 206, 248), rgb(60, 32, 58));
+    background-color: light-dark(rgb(191, 206, 248), rgb(27, 14, 26));
     border-inline-start: inherit;
     font-family:
       ui-sans-serif,
@@ -2507,7 +2507,7 @@ body {
   .search > .search-container > .search-space > input {
     background-color: light-dark(rgb(255, 255, 255), rgb(27, 27, 40));
     border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    border-bottom: 1px solid light-dark(rgb(201, 198, 241), rgb(55, 41, 76));
+    border-bottom: 1px solid light-dark(rgb(201, 198, 241), rgb(79, 59, 109));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3212,7 +3212,7 @@ body {
   }
 
   td {
-    background-color: light-dark(rgb(201, 198, 241), rgb(55, 41, 76));
+    background-color: light-dark(rgb(201, 198, 241), rgb(79, 59, 109));
     color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     font-weight: 400;
     text-align: left;
@@ -3613,7 +3613,7 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(250, 250, 250), rgb(53, 37, 55));
     box-shadow: none;
     color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
     font-family:
@@ -3904,7 +3904,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(rgba(139, 108, 239, 0.2), rgb(55, 41, 76));
+    background-color: light-dark(rgba(139, 108, 239, 0.2), rgb(79, 59, 109));
     border: 0px light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;

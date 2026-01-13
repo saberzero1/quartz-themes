@@ -923,10 +923,10 @@
   --tab-font-weight: 425 !important;
   --strikethrough-color: oklch(71.5% 0.0105 281) !important;
   --color-base-55: oklch(65% 0.0105 281) !important;
-  --setting-item-background: oklch(100% 0 0 / 0.75) !important;
-  --setting-group-heading-weight: 525 !important;
   --setting-items-background: oklch(99% 0.0005 281) !important;
   --setting-items-border-width: 0 !important;
+  --setting-item-background: oklch(100% 0 0 / 0.75) !important;
+  --setting-group-heading-weight: 525 !important;
   --color-highlight: rgb(229, 169, 37) !important;
   --metadata-label-font-weight: 500 !important;
   --pill-weight: 500 !important;
@@ -2071,14 +2071,14 @@
   --tab-font-weight: 425 !important;
   --strikethrough-color: oklch(52.5% 0.0075 281) !important;
   --color-base-55: oklch(57.5% 0.0075 281) !important;
+  --setting-items-background: oklch(23.5% 0.00125 281) !important;
+  --setting-items-border-width: 0 !important;
   --setting-item-background: color-mix(
     in oklab,
     oklch(23.5% 0.00125 281) 87.5%,
     oklch(27.5% 0.00375 281)
   ) !important;
   --setting-group-heading-weight: 525 !important;
-  --setting-items-background: oklch(23.5% 0.00125 281) !important;
-  --setting-items-border-width: 0 !important;
   --color-highlight: rgb(248, 201, 111) !important;
   --metadata-label-font-weight: 500 !important;
   --pill-weight: 500 !important;

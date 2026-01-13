@@ -1015,7 +1015,7 @@ body.theme-light {
   --container-map-max-width: 88% !important;
   --container-map-width: 40rem !important;
   --container-table-margin: calc(
-    max(calc(50% - 40rem / 2), calc(50% - 88% / 2)) - 16px
+    max(calc(50% - 40rem/2), calc(50% - 88%/2)) - 16px
   ) !important;
   --container-table-max-width: 88% !important;
   --container-table-width: calc(40rem + 32px) !important;
@@ -1964,7 +1964,7 @@ body.theme-dark {
   --container-map-max-width: 88%;
   --container-map-width: 40rem;
   --container-table-margin: calc(
-    max(calc(50% - 40rem / 2), calc(50% - 88% / 2)) - 16px
+    max(calc(50% - 40rem/2), calc(50% - 88%/2)) - 16px
   );
   --container-table-max-width: 88%;
   --container-table-width: calc(40rem + 32px);

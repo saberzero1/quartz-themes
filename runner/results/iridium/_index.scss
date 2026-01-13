@@ -19,7 +19,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgb(227, 223, 236) !important;
+  --background-modifier-active-hover: rgb(0, 0, 0) !important;
   --background-modifier-border: rgb(221, 217, 232) !important;
   --background-modifier-border-focus: rgb(182, 172, 205) !important;
   --background-modifier-border-hover: rgb(207, 201, 222) !important;
@@ -30,7 +30,7 @@
   --background-modifier-error-rgb: 233, 49, 71 !important;
   --background-modifier-form-field: #ffffff !important;
   --background-modifier-form-field-hover: #ffffff !important;
-  --background-modifier-hover: rgb(238, 236, 244) !important;
+  --background-modifier-hover: rgb(0, 0, 0) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #08b94e !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
@@ -79,7 +79,7 @@
   --bases-table-group-background: rgb(249, 249, 251) !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: #ffffff !important;
-  --bases-table-header-background-hover: rgb(238, 236, 244) !important;
+  --bases-table-header-background-hover: rgb(0, 0, 0) !important;
   --bases-table-header-color: #222222 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -92,7 +92,7 @@
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: #ffffff !important;
-  --bases-table-summary-background-hover: rgb(238, 236, 244) !important;
+  --bases-table-summary-background-hover: rgb(0, 0, 0) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: rgba(138, 92, 245, 0.1) !important;
@@ -151,7 +151,7 @@
   --code-background: transparent !important;
   --code-border-color: rgb(0, 0, 0) !important;
   --code-border-width: 1px !important;
-  --code-bracket-background: rgb(238, 236, 244) !important;
+  --code-bracket-background: rgb(0, 0, 0) !important;
   --code-comment: #ababab !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
@@ -301,7 +301,7 @@
   --footnote-id-color-no-occurrences: #ababab !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgb(238, 236, 244) !important;
+  --footnote-input-background-active: rgb(0, 0, 0) !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -482,7 +482,7 @@
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgb(238, 236, 244) !important;
+  --metadata-input-background-active: rgb(0, 0, 0) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -493,7 +493,7 @@
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-text-color: #222222 !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgb(238, 236, 244) !important;
+  --metadata-label-background-active: rgb(0, 0, 0) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -506,7 +506,7 @@
   --metadata-max-width: none !important;
   --metadata-padding: 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgb(238, 236, 244) !important;
+  --metadata-property-background-active: rgb(0, 0, 0) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(182, 172, 205) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(207, 201, 222) !important;
@@ -538,8 +538,8 @@
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgb(221, 217, 232) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgb(238, 236, 244) !important;
-  --nav-item-background-hover: rgb(238, 236, 244) !important;
+  --nav-item-background-active: rgb(0, 0, 0) !important;
+  --nav-item-background-hover: rgb(0, 0, 0) !important;
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
@@ -835,8 +835,8 @@
   ) !important;
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
   --nn-theme-nav-bg: transparent !important;
-  --nn-theme-navitem-selected-bg: rgb(238, 236, 244) !important;
-  --nn-theme-file-selected-bg: rgb(238, 236, 244) !important;
+  --nn-theme-navitem-selected-bg: rgb(0, 0, 0) !important;
+  --nn-theme-file-selected-bg: rgb(0, 0, 0) !important;
   --i-0: rgb(249, 249, 251) !important;
   --i-1: rgb(247, 245, 249) !important;
   --i-2: rgb(238, 236, 244) !important;
@@ -901,19 +901,24 @@
   --i-lt-heading-accent: rgb(138, 92, 245) !important;
   --i-lt-layout-border-l: 8% !important;
   --i-lt-layout-l: 12% !important;
-  --i-pattern-color: rgb(247, 245, 249) !important;
+  --i-pattern-color: hsl(from rgb(247, 245, 249) h s 97%) !important;
   --i-pattern-dk-l: 3% !important;
   --i-pattern-height: 10px !important;
   --i-pattern-line-width: 1px !important;
   --i-pattern-lt-l: 3% !important;
   --i-pattern-width: 10px !important;
+  --i-properties-s: 88% !important;
   --i-s: 25% !important;
   --i-scrollbar-color: rgb(216, 210, 228) !important;
   --i-scrollbar-color-active: rgb(205, 198, 221) !important;
+  --i-scrollbar-thumb-size: 5px !important;
+  --i-scrollbar-track-size: 11px !important;
   --i-spacing-below-headings: 0.3rem !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
   --nn-theme-quick-actions-bg: #ffffff !important;
+  --setting-items-background: #ffffff !important;
+  --setting-items-border-width: 1px !important;
   --i-lt-border-l: 14% !important;
   --i-lt-l-multiplier: 1 !important;
   --i-lt-layout-s: 25% !important;
@@ -934,7 +939,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgb(53, 49, 63) !important;
+  --background-modifier-active-hover: rgb(0, 0, 0) !important;
   --background-modifier-border: rgb(51, 47, 60) !important;
   --background-modifier-border-focus: rgb(80, 74, 94) !important;
   --background-modifier-border-hover: rgb(61, 56, 71) !important;
@@ -945,7 +950,7 @@
   --background-modifier-error-rgb: 251, 70, 76 !important;
   --background-modifier-form-field: rgb(29, 27, 34) !important;
   --background-modifier-form-field-hover: rgb(29, 27, 34) !important;
-  --background-modifier-hover: rgb(49, 45, 57) !important;
+  --background-modifier-hover: rgb(0, 0, 0) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #44cf6e !important;
   --background-modifier-success-rgb: 68, 207, 110 !important;
@@ -994,7 +999,7 @@
   --bases-table-group-background: rgb(34, 31, 40) !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: rgb(29, 27, 34) !important;
-  --bases-table-header-background-hover: rgb(49, 45, 57) !important;
+  --bases-table-header-background-hover: rgb(0, 0, 0) !important;
   --bases-table-header-color: rgb(217, 217, 217) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -1007,7 +1012,7 @@
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: rgb(29, 27, 34) !important;
-  --bases-table-summary-background-hover: rgb(49, 45, 57) !important;
+  --bases-table-summary-background-hover: rgb(0, 0, 0) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: rgba(138, 92, 245, 0.1) !important;
@@ -1066,7 +1071,7 @@
   --code-background: transparent !important;
   --code-border-color: rgb(0, 0, 0) !important;
   --code-border-width: 1px !important;
-  --code-bracket-background: rgb(49, 45, 57) !important;
+  --code-bracket-background: rgb(0, 0, 0) !important;
   --code-comment: rgb(102, 102, 102) !important;
   --code-function: #e0de71 !important;
   --code-important: #e9973f !important;
@@ -1216,7 +1221,7 @@
   --footnote-id-color-no-occurrences: rgb(102, 102, 102) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgb(49, 45, 57) !important;
+  --footnote-input-background-active: rgb(0, 0, 0) !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -1397,7 +1402,7 @@
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgb(49, 45, 57) !important;
+  --metadata-input-background-active: rgb(0, 0, 0) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -1408,7 +1413,7 @@
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-text-color: rgb(217, 217, 217) !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgb(49, 45, 57) !important;
+  --metadata-label-background-active: rgb(0, 0, 0) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -1421,7 +1426,7 @@
   --metadata-max-width: none !important;
   --metadata-padding: 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgb(49, 45, 57) !important;
+  --metadata-property-background-active: rgb(0, 0, 0) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(80, 74, 94) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(61, 56, 71) !important;
@@ -1453,8 +1458,8 @@
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgb(53, 49, 63) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgb(49, 45, 57) !important;
-  --nav-item-background-hover: rgb(49, 45, 57) !important;
+  --nav-item-background-active: rgb(0, 0, 0) !important;
+  --nav-item-background-hover: rgb(0, 0, 0) !important;
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
@@ -1748,8 +1753,8 @@
   ) !important;
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
   --nn-theme-nav-bg: transparent !important;
-  --nn-theme-navitem-selected-bg: rgb(49, 45, 57) !important;
-  --nn-theme-file-selected-bg: rgb(49, 45, 57) !important;
+  --nn-theme-navitem-selected-bg: rgb(0, 0, 0) !important;
+  --nn-theme-file-selected-bg: rgb(0, 0, 0) !important;
   --i-0: rgb(32, 29, 37) !important;
   --i-1: rgb(34, 31, 40) !important;
   --i-2: rgb(39, 36, 46) !important;
@@ -1820,19 +1825,24 @@
   --i-lt-heading-accent: rgb(138, 92, 245) !important;
   --i-lt-layout-border-l: 8% !important;
   --i-lt-layout-l: 12% !important;
-  --i-pattern-color: rgb(36, 34, 43) !important;
+  --i-pattern-color: hsl(from rgb(34, 31, 40) h s 15%) !important;
   --i-pattern-dk-l: 3% !important;
   --i-pattern-height: 10px !important;
   --i-pattern-line-width: 1px !important;
   --i-pattern-lt-l: 3% !important;
   --i-pattern-width: 10px !important;
+  --i-properties-s: 12% !important;
   --i-s: 12% !important;
   --i-scrollbar-color: rgb(68, 63, 80) !important;
   --i-scrollbar-color-active: rgb(73, 67, 86) !important;
+  --i-scrollbar-thumb-size: 5px !important;
+  --i-scrollbar-track-size: 11px !important;
   --i-spacing-below-headings: 0.3rem !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
   --nn-theme-quick-actions-bg: rgb(29, 27, 34) !important;
+  --setting-items-background: rgb(29, 27, 34) !important;
+  --setting-items-border-width: 1px !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -2364,7 +2374,10 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: light-dark(rgb(238, 236, 244), rgb(49, 45, 57));
+    background-color: light-dark(
+      rgba(162, 150, 192, 0.2),
+      rgba(70, 65, 83, 0.55)
+    );
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2784,7 +2797,10 @@ body {
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-weight: 400;
-    background-color: light-dark(rgb(238, 236, 244), rgb(49, 45, 57));
+    background-color: light-dark(
+      rgba(162, 150, 192, 0.2),
+      rgba(70, 65, 83, 0.55)
+    );
   }
 
   .search
@@ -4133,7 +4149,10 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(rgb(238, 236, 244), rgb(49, 45, 57));
+    background-color: light-dark(
+      rgba(162, 150, 192, 0.2),
+      rgba(70, 65, 83, 0.55)
+    );
     border: 0px light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
