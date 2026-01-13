@@ -980,8 +980,8 @@ body.theme-light {
   --embed-border-color: #cccccc !important;
   --file-header-color: #000000 !important;
   --embed-font-style: italic !important;
-  --file-header-border-color: #cccccc !important;
   --metadata-label-font-weight: bold !important;
+  --file-header-border-color: #cccccc !important;
   --oreo-background-modifier-border-hover-dark: #666666 !important;
   --oreo-background-modifier-border-hover-light: #cccccc !important;
   --oreo-background-primary-dark: #1a1a1a !important;
@@ -1830,8 +1830,8 @@ body.theme-dark {
   --embed-border-color: #444444;
   --file-header-color: #ffffff;
   --embed-font-style: italic;
-  --file-header-border-color: #444444;
   --metadata-label-font-weight: bold;
+  --file-header-border-color: #444444;
   --oreo-background-modifier-border-hover-dark: #666666;
   --oreo-background-modifier-border-hover-light: #cccccc;
   --oreo-background-primary-dark: #1a1a1a;

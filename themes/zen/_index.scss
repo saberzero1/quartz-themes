@@ -809,6 +809,7 @@
   --base-d: 0% !important;
   --shadow-color: rgba(0, 0, 0, 0.06) !important;
   --text-color: rgb(8, 8, 8) !important;
+  --floating-toc-background-color: transparent !important;
   --editor-bg-color: rgba(255, 255, 255, 0) !important;
   --radius-xxl: 20px !important;
   --active-border-color: rgb(0, 121, 172) !important;
@@ -817,7 +818,6 @@
   --background-setting-item: rgba(255, 255, 255, 0.6) !important;
   --block-border-color: rgba(28, 28, 28, 0.25) !important;
   --editor-brightness: 1 !important;
-  --floating-toc-background-color: transparent !important;
   --glass-bg-color: rgba(248, 248, 248, 0.6) !important;
   --mac-window-opacity: 0 !important;
   --model-bg-color: rgba(248, 248, 248, 0.1) !important;
@@ -1641,6 +1641,7 @@
   --base-d: 0% !important;
   --shadow-color: rgba(245, 245, 245, 0.08) !important;
   --text-color: rgb(240, 240, 240) !important;
+  --floating-toc-background-color: transparent !important;
   --editor-bg-color: rgba(28, 28, 28, 0) !important;
   --radius-xxl: 20px !important;
   --active-border-color: rgba(0, 157, 255, 0.8) !important;
@@ -1649,7 +1650,6 @@
   --background-setting-item: #242424 !important;
   --block-border-color: rgba(245, 245, 245, 0.3) !important;
   --editor-brightness: 1 !important;
-  --floating-toc-background-color: transparent !important;
   --glass-bg-color: rgba(28, 28, 28, 0.7) !important;
   --mac-window-opacity: 0 !important;
   --model-bg-color: rgba(28, 28, 28, 0.1) !important;

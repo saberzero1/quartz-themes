@@ -958,6 +958,7 @@ body.theme-light {
   --base-d: 0% !important;
   --shadow-color: rgba(0, 0, 0, 0.06) !important;
   --text-color: rgb(8, 8, 8) !important;
+  --floating-toc-background-color: transparent !important;
   --editor-bg-color: rgba(255, 255, 255, 0) !important;
   --radius-xxl: 20px !important;
   --active-border-color: rgb(0, 121, 172) !important;
@@ -966,7 +967,6 @@ body.theme-light {
   --background-setting-item: rgba(255, 255, 255, 0.6) !important;
   --block-border-color: rgba(28, 28, 28, 0.25) !important;
   --editor-brightness: 1 !important;
-  --floating-toc-background-color: transparent !important;
   --glass-bg-color: rgba(248, 248, 248, 0.6) !important;
   --mac-window-opacity: 0 !important;
   --model-bg-color: rgba(248, 248, 248, 0.1) !important;
@@ -1789,6 +1789,7 @@ body.theme-dark {
   --base-d: 0%;
   --shadow-color: rgba(245, 245, 245, 0.08);
   --text-color: rgb(240, 240, 240);
+  --floating-toc-background-color: transparent;
   --editor-bg-color: rgba(28, 28, 28, 0);
   --radius-xxl: 20px;
   --active-border-color: rgba(0, 157, 255, 0.8);
@@ -1797,7 +1798,6 @@ body.theme-dark {
   --background-setting-item: #242424;
   --block-border-color: rgba(245, 245, 245, 0.3);
   --editor-brightness: 1;
-  --floating-toc-background-color: transparent;
   --glass-bg-color: rgba(28, 28, 28, 0.7);
   --mac-window-opacity: 0;
   --model-bg-color: rgba(28, 28, 28, 0.1);
