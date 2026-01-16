@@ -2606,7 +2606,6 @@ body
   stroke: rgb(126, 184, 241);
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: light-dark(rgb(5, 133, 168), rgb(126, 184, 241));
   font-weight: 600;
 }
 body .callout > .callout-content {

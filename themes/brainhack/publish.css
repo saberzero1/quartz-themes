@@ -2392,7 +2392,6 @@ body
   stroke: rgb(179, 179, 179);
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: light-dark(rgb(0, 0, 0), rgb(223, 223, 223));
   font-weight: 700;
 }
 body .callout > .callout-content {

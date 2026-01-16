@@ -41,6 +41,9 @@ convert:
 [group('extract')]
 extract-full: build compile convert format
 
+[group('extract')]
+recompile: compile convert format
+
 [group('database')]
 ingest:
   node ./runner/scripts/ingest.js
@@ -52,7 +55,6 @@ prepare:
 [group('database')]
 prepare-baseline:
   FORCE_PREP=true node ./runner/scripts/prep.js
-
 
 [group('database')]
 drop:
