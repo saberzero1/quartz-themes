@@ -1112,8 +1112,8 @@ body {
   }
 
   .text-highlight {
-    background-color: rgb(135, 232, 206);
-    color: rgb(17, 17, 19);
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
     cursor: text;
     filter: none;
     font-family: "Fira Code", monospace;
@@ -1126,6 +1126,16 @@ body {
     text-decoration-thickness: inherit;
     transition: inherit;
     user-select: text;
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
   }
 
   del {
@@ -2697,6 +2707,461 @@ body {
     font-family: "Fira Code", monospace;
     font-weight: 400;
     text-decoration: none solid rgb(179, 179, 179);
+  }
+
+  .toc {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  button.toc-header {
+    background-color: inherit;
+    color: inherit;
+    cursor: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+  }
+
+  button.toc-header h3 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+  }
+
+  ul.toc-content.overflow > li > a {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+  }
+
+  ul.toc-content.overflow > li > a:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .graph {
+    background-color: inherit;
+  }
+
+  .graph > h3 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+  }
+
+  .graph > .graph-outer {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+  }
+
+  .graph > .graph-outer > .global-graph-icon {
+    background-color: inherit;
+    color: inherit;
+    cursor: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+  }
+
+  .graph > .graph-outer > .global-graph-icon:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  .graph > .global-graph-outer {
+    background-color: inherit;
+  }
+
+  .graph > .global-graph-outer > .global-graph-container {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+  }
+
+  .popover > .popover-inner {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    box-shadow: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  footer {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+  }
+
+  footer ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .recent-notes > h3 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+  }
+
+  .recent-notes > ul.recent-ul > li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .recent-notes > ul.recent-ul > li .section > .meta {
+    color: inherit;
+    font-family: inherit;
+  }
+
+  ul.section-ul {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  li.section-li {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+  }
+
+  li.section-li > .section > .desc > h3 > a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  li.section-li > .section .meta {
+    color: inherit;
+    font-family: inherit;
+  }
+
+  .darkmode {
+    background-color: inherit;
+    color: inherit;
+    cursor: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+  }
+
+  .darkmode svg {
+    fill: inherit;
+    stroke: inherit;
+    color: inherit;
+  }
+
+  .breadcrumb-container {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .breadcrumb-element p {
+    color: inherit;
+    font-family: inherit;
+  }
+
+  .navigation-progress {
+    background-color: inherit;
+  }
+
+  .page-header h2.page-title {
+    color: inherit;
+    font-family: inherit;
+    text-shadow: inherit;
+  }
+
+  .transclude ul {
+    padding-left: inherit;
+    color: inherit;
+  }
+
+  .katex-display {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .external-embed.youtube {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+  }
+
+  iframe.pdf {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+  }
+
+  .footnotes {
+    background-color: inherit;
+    border-top: inherit;
+    color: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+  }
+
+  .table-container {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .spacer {
+    background-color: inherit;
+  }
+
+  ul.overflow {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+  }
+
+  ol.overflow {
+    background-color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+  }
+
+  figure[data-rehype-pretty-code-figure] {
+    background-color: rgb(36, 36, 36);
+    border: 0px solid rgb(54, 54, 54);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    margin: 14.4px 0px;
+    margin-block-end: 14.4px;
+    margin-block-start: 14.4px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+  }
+
+  figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+    background-color: rgb(36, 36, 36);
+    color: rgb(218, 218, 218);
+    font-family: monospace;
+    border: 0px solid rgb(54, 54, 54);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    padding: 12px 16px;
+  }
+
+  pre > code > [data-line] {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 0px rgb(218, 218, 218);
+    padding: 0px;
+  }
+
+  pre > code > [data-line][data-highlighted-line] {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgb(218, 218, 218);
+  }
+
+  pre > code [data-highlighted-chars] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  pre:has(> code.mermaid) {
+    background-color: inherit;
+    border: inherit;
+  }
+
+  ul.tags {
+    background-color: inherit;
+    padding: inherit;
+    margin: inherit;
+    margin-block-end: inherit;
+    margin-block-start: inherit;
+    margin-inline-end: inherit;
+    margin-inline-start: inherit;
+  }
+
+  ul.tags > li {
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+    padding: inherit;
+  }
+
+  .page article p > strong {
+    color: inherit;
+    font-weight: inherit;
   }
 
   --current-page-slug: attr(data-slug raw-string);
