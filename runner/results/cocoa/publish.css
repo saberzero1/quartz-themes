@@ -873,6 +873,20 @@ body .markdown-rendered a.internal-link.is-unresolved {
   text-decoration-style: solid;
   user-select: text;
 }
+body .markdown-rendered a.external-link:hover {
+  text-decoration: underline rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(166, 138, 249);
+}
+body .markdown-rendered a.internal-link:hover {
+  text-decoration: underline rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(166, 138, 249);
+}
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(163, 165, 170);

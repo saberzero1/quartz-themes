@@ -1842,6 +1842,20 @@ body .markdown-rendered a.internal-link.is-unresolved {
   text-decoration-style: solid;
   user-select: text;
 }
+body .markdown-rendered a.external-link:hover {
+  text-decoration: underline rgb(166, 138, 249);
+  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+}
+body .markdown-rendered a.internal-link:hover {
+  text-decoration: underline rgb(166, 138, 249);
+  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+}
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(56, 58, 66), rgb(220, 221, 222));

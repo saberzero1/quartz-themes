@@ -865,6 +865,12 @@ body {
   }
 
   blockquote.callout {
+    .callout-title {
+      color: var(--color);
+      .callout-icon {
+        background-color: var(--color);
+      }
+    }
     .callout-title > .callout-title-inner > p {
       color: var(--color);
     }
