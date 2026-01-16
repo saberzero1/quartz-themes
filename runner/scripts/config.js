@@ -265,7 +265,7 @@ const sets = {
       ...defaults.border,
       ...defaults.padding,
     ],
-    titleInner: ["color", "font-weight"],
+    titleInner: [/*"color",*/ "font-weight"],
   },
   background: ["background-color"],
   mermaid: ["stroke", "fill" /*"filter", "font-family", "font-size"*/],
@@ -2142,14 +2142,6 @@ export const config = [
     quartzSelector: ".text-highlight",
     pseudoElement: "",
     properties: ["background-color", "color", ...defaults.border],
-  },
-  // === SELECTION ===
-  {
-    obsidianSelector: `::selection`,
-    publishSelector: `::selection`,
-    quartzSelector: "::selection",
-    pseudoElement: "::selection",
-    properties: ["background-color", "color"],
   },
   // === STRONG TEXT COLOR ===
   {

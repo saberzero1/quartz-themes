@@ -2629,7 +2629,6 @@ body
   stroke: oklch(58% 0 0deg);
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: rgb(141, 158, 255);
   font-weight: 600;
 }
 body .callout > .callout-content {

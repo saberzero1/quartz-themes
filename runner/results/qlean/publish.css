@@ -4923,7 +4923,6 @@ body
   stroke: rgb(115, 115, 115);
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   font-weight: 600;
 }
 body .callout > .callout-content {

@@ -3807,7 +3807,6 @@ body
   stroke: rgba(111, 118, 133, 0.6);
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: rgba(111, 118, 133, 0.6);
   font-weight: 600;
 }
 body .callout > .callout-content {
