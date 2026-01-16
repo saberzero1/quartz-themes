@@ -1737,10 +1737,6 @@ html {
 }
 
 body {
-  div#quartz-body {
-    --quartz-icon-color: inherit;
-  }
-
   div#quartz-root {
     background-color: light-dark(rgb(255, 255, 255), rgba(10, 10, 10, 0.8));
     color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
@@ -1785,13 +1781,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
-    outline: inherit;
     text-decoration: underline solid rgb(204, 153, 255);
     text-decoration-color: rgb(204, 153, 255);
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -1803,13 +1796,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
-    outline: inherit;
     text-decoration: underline solid rgb(204, 153, 255);
     text-decoration-color: light-dark(rgb(153, 194, 255), rgb(204, 153, 255));
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -1820,13 +1810,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
-    outline: inherit;
     text-decoration: underline solid rgba(138, 92, 245, 0.3);
     text-decoration-color: rgba(138, 92, 245, 0.3);
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -1837,13 +1824,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
-    outline: inherit;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
     text-decoration-line: none;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -1855,13 +1839,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 600;
-    outline: inherit;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
     text-decoration-line: none;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -1873,13 +1854,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 600;
-    outline: inherit;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
     text-decoration-line: none;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -1891,13 +1869,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
-    outline: inherit;
     text-decoration: none solid rgb(139, 227, 235);
     text-decoration-color: light-dark(rgb(139, 69, 19), rgb(139, 227, 235));
     text-decoration-line: none;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -1909,13 +1884,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
-    outline: inherit;
     text-decoration: none solid rgb(139, 227, 235);
     text-decoration-color: light-dark(rgb(139, 69, 19), rgb(139, 227, 235));
     text-decoration-line: none;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -1926,13 +1898,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
-    outline: inherit;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
     text-decoration-line: none;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
     border: 0px rgb(0, 0, 0);
     border-top-left-radius: 0px;
@@ -1943,7 +1912,6 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 0px;
   }
 
   del {
@@ -1953,13 +1921,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
-    outline: inherit;
     text-decoration: line-through solid rgb(255, 255, 255);
     text-decoration-color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
     text-decoration-line: line-through;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -2087,7 +2052,6 @@ body {
     color: light-dark(rgb(154, 160, 166), rgb(160, 160, 160));
     pointer-events: none;
     transform: none;
-    transition: inherit;
   }
 
   ol > li {
@@ -2109,7 +2073,6 @@ body {
     color: light-dark(rgb(154, 160, 166), rgb(160, 160, 160));
     pointer-events: none;
     transform: none;
-    transition: inherit;
   }
 
   code {
@@ -2181,13 +2144,11 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: auto;
-    transition: inherit;
     position: static;
     top: auto;
   }
 
   ul > li.task-list-item {
-    list-style: inherit;
     text-align: start;
     display: list-item;
   }
@@ -2200,10 +2161,6 @@ body {
     width: auto;
     display: inline;
     background-color: rgba(0, 0, 0, 0);
-    -webkit-mask-position: inherit;
-    -webkit-mask-size: inherit;
-    -webkit-mask-repeat: inherit;
-    -webkit-mask-image: inherit;
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
@@ -2214,7 +2171,6 @@ body {
 
   blockquote {
     background-color: light-dark(rgba(0, 0, 0, 0), rgba(18, 18, 18, 0.8));
-    border-inline-start: inherit;
     font-family: "EB Garamond", Georgia, serif;
     font-style: normal;
     padding-bottom: 0px;
@@ -2282,13 +2238,10 @@ body {
     filter: none;
     font-family: "EB Garamond", Georgia, serif;
     font-weight: 400;
-    outline: inherit;
     text-decoration: none solid rgb(255, 255, 255);
     text-decoration-color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
     text-decoration-line: none;
     text-decoration-style: solid;
-    text-decoration-thickness: inherit;
-    transition: inherit;
     user-select: text;
   }
 
@@ -2464,7 +2417,6 @@ body {
   }
 
   .callout {
-    --callout-color: inherit;
     border: 1px solid
       light-dark(color(srgb 0.677124 0.80915 0.955556 / 0.75), rgb(42, 42, 42));
     border-left-color: light-dark(rgb(117, 117, 117), rgb(158, 158, 158));
@@ -2481,7 +2433,6 @@ body {
   }
 
   .callout .callout-title {
-    gap: inherit;
     border: 0px light-dark(rgb(8, 109, 221), rgb(95, 158, 160));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2492,11 +2443,6 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
-  }
-
-  .callout .callout-title .callout-icon {
-    fill: inherit;
-    stroke: inherit;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2510,7 +2456,6 @@ body {
   }
 
   .callout[data-callout="note"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(245, 245, 245), rgb(31, 31, 31));
     mix-blend-mode: normal;
     border: 1px solid
@@ -2532,7 +2477,6 @@ body {
   }
 
   .callout[data-callout="abstract"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(245, 245, 245), rgb(31, 31, 31));
     mix-blend-mode: normal;
     border: 1px solid
@@ -2554,7 +2498,6 @@ body {
   }
 
   .callout[data-callout="info"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(227, 242, 253), rgb(26, 35, 50));
     mix-blend-mode: normal;
     border: 1px solid light-dark(rgb(13, 71, 161), rgb(42, 42, 42));
@@ -2575,7 +2518,6 @@ body {
   }
 
   .callout[data-callout="todo"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
     mix-blend-mode: normal;
     border: 1px solid
@@ -2596,7 +2538,6 @@ body {
   }
 
   .callout[data-callout="tip"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(243, 229, 245), rgb(45, 27, 45));
     mix-blend-mode: normal;
     border: 1px solid light-dark(rgb(106, 27, 154), rgb(42, 42, 42));
@@ -2617,7 +2558,6 @@ body {
   }
 
   .callout[data-callout="success"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(232, 245, 232), rgb(27, 45, 27));
     mix-blend-mode: normal;
     border: 1px solid light-dark(rgb(46, 125, 50), rgb(42, 42, 42));
@@ -2638,7 +2578,6 @@ body {
   }
 
   .callout[data-callout="question"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
     mix-blend-mode: normal;
     border: 1px solid
@@ -2659,7 +2598,6 @@ body {
   }
 
   .callout[data-callout="warning"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(255, 243, 224), rgb(45, 36, 22));
     mix-blend-mode: normal;
     border: 1px solid light-dark(rgb(230, 81, 0), rgb(42, 42, 42));
@@ -2680,7 +2618,6 @@ body {
   }
 
   .callout[data-callout="danger"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(255, 235, 238), rgb(45, 27, 27));
     mix-blend-mode: lighten;
     border: 1px solid light-dark(rgb(198, 40, 40), rgb(42, 42, 42));
@@ -2701,7 +2638,6 @@ body {
   }
 
   .callout[data-callout="failure"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
     mix-blend-mode: lighten;
     border: 1px solid
@@ -2722,7 +2658,6 @@ body {
   }
 
   .callout[data-callout="bug"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
     mix-blend-mode: lighten;
     border: 1px solid
@@ -2743,7 +2678,6 @@ body {
   }
 
   .callout[data-callout="example"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
     mix-blend-mode: lighten;
     border: 1px solid
@@ -2764,7 +2698,6 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: inherit;
     background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
     mix-blend-mode: lighten;
     border: 1px solid
@@ -2787,7 +2720,6 @@ body {
   table {
     background-color: light-dark(rgb(255, 255, 255), rgba(0, 0, 0, 0.8));
     border-collapse: collapse;
-    border-spacing: inherit;
     color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
     font-family: "EB Garamond", Georgia, serif;
     table-layout: auto;
@@ -2874,16 +2806,7 @@ body {
     border-end-end-radius: 0px;
   }
 
-  tbody tr:nth-child(even) {
-    background-color: inherit;
-  }
-
-  tbody tr:nth-child(odd) {
-    background-color: inherit;
-  }
-
   img {
-    border-radius: inherit;
     box-shadow: none;
     filter: none;
     max-width: 100%;
@@ -2939,7 +2862,6 @@ body {
   }
 
   video {
-    border-radius: inherit;
     box-shadow: none;
     filter: none;
     max-width: 100%;
@@ -2972,162 +2894,6 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
-  }
-
-  .transclude {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    margin: inherit;
-    margin-block-end: inherit;
-    margin-block-start: inherit;
-    margin-inline-end: inherit;
-    margin-inline-start: inherit;
-    padding: inherit;
-  }
-
-  .transclude-inner {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    margin: inherit;
-    margin-block-end: inherit;
-    margin-block-start: inherit;
-    margin-inline-end: inherit;
-    margin-inline-start: inherit;
-    padding: inherit;
-  }
-
-  .file-embed {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    margin: inherit;
-    margin-block-end: inherit;
-    margin-block-start: inherit;
-    margin-inline-end: inherit;
-    margin-inline-start: inherit;
-    padding: inherit;
-  }
-
-  .frontmatter {
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    margin: inherit;
-    margin-block-end: inherit;
-    margin-block-start: inherit;
-    margin-inline-end: inherit;
-    margin-inline-start: inherit;
-    padding: inherit;
-  }
-
-  .metadata {
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    margin: inherit;
-    margin-block-end: inherit;
-    margin-block-start: inherit;
-    margin-inline-end: inherit;
-    margin-inline-start: inherit;
-    padding: inherit;
-  }
-
-  .metadata-properties {
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    margin: inherit;
-    margin-block-end: inherit;
-    margin-block-start: inherit;
-    margin-inline-end: inherit;
-    margin-inline-start: inherit;
-    padding: inherit;
-  }
-
-  .tooltip {
-    background-color: inherit;
-    box-shadow: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  .popover {
-    background-color: inherit;
-    box-shadow: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
   }
 
   progress {
@@ -3199,7 +2965,6 @@ body {
     color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
     cursor: auto;
     font-weight: 400;
-    list-style: inherit;
     padding: 0px;
   }
 
@@ -3285,41 +3050,6 @@ body {
     cursor: auto;
     text-decoration: underline dotted rgb(255, 255, 255);
     text-decoration-style: dotted;
-  }
-
-  .backlinks {
-    background-color: inherit;
-    color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  .backlinks ul li {
-    background-color: inherit;
-    color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  .backlinks ul li a {
-    color: inherit;
-    text-decoration: inherit;
   }
 
   li.task-list-item[data-task="-"] {
@@ -3430,27 +3160,13 @@ body {
     text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
-  ::selection {
-    background-color: inherit;
-    color: inherit;
-  }
-
-  input::placeholder {
-    color: inherit;
-    opacity: inherit;
-  }
-
   p::first-letter {
     color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
     font-size: 16px;
-    font-weight: inherit;
-    float: inherit;
   }
 
   p::first-line {
     color: light-dark(rgb(32, 33, 36), rgb(255, 255, 255));
-    font-weight: inherit;
-    text-transform: inherit;
   }
 
   .katex-display > .katex {
@@ -3519,368 +3235,6 @@ body {
     text-decoration: none solid rgb(255, 255, 255);
   }
 
-  .toc {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  button.toc-header {
-    background-color: inherit;
-    color: inherit;
-    cursor: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-  }
-
-  button.toc-header h3 {
-    color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-  }
-
-  ul.toc-content.overflow > li > a {
-    color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    text-decoration: inherit;
-  }
-
-  ul.toc-content.overflow > li > a:hover {
-    color: inherit;
-    text-decoration: inherit;
-  }
-
-  .graph {
-    background-color: inherit;
-  }
-
-  .graph > h3 {
-    color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-  }
-
-  .graph > .graph-outer {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-  }
-
-  .graph > .graph-outer > .global-graph-icon {
-    background-color: inherit;
-    color: inherit;
-    cursor: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-  }
-
-  .graph > .graph-outer > .global-graph-icon:hover {
-    background-color: inherit;
-    color: inherit;
-  }
-
-  .graph > .global-graph-outer {
-    background-color: inherit;
-  }
-
-  .graph > .global-graph-outer > .global-graph-container {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-  }
-
-  .popover > .popover-inner {
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    box-shadow: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  footer {
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-  }
-
-  footer ul li a {
-    color: inherit;
-    text-decoration: inherit;
-  }
-
-  .recent-notes > h3 {
-    color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-  }
-
-  .recent-notes > ul.recent-ul > li {
-    background-color: inherit;
-    color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: inherit;
-    text-decoration: inherit;
-  }
-
-  .recent-notes > ul.recent-ul > li .section > .meta {
-    color: inherit;
-    font-family: inherit;
-  }
-
-  ul.section-ul {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  li.section-li {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    margin: inherit;
-    margin-block-end: inherit;
-    margin-block-start: inherit;
-    margin-inline-end: inherit;
-    margin-inline-start: inherit;
-  }
-
-  li.section-li > .section > .desc > h3 > a {
-    color: inherit;
-    text-decoration: inherit;
-  }
-
-  li.section-li > .section .meta {
-    color: inherit;
-    font-family: inherit;
-  }
-
-  .darkmode {
-    background-color: inherit;
-    color: inherit;
-    cursor: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-  }
-
-  .darkmode svg {
-    fill: inherit;
-    stroke: inherit;
-    color: inherit;
-  }
-
-  .breadcrumb-container {
-    background-color: inherit;
-    color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  .breadcrumb-element p {
-    color: inherit;
-    font-family: inherit;
-  }
-
-  .navigation-progress {
-    background-color: inherit;
-  }
-
-  .page-header h2.page-title {
-    color: inherit;
-    font-family: inherit;
-    text-shadow: inherit;
-  }
-
-  .transclude ul {
-    padding-left: inherit;
-    color: inherit;
-  }
-
-  .katex-display {
-    background-color: inherit;
-    color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  .external-embed.youtube {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-  }
-
-  iframe.pdf {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-  }
-
-  .footnotes {
-    background-color: inherit;
-    border-top: inherit;
-    color: inherit;
-    margin: inherit;
-    margin-block-end: inherit;
-    margin-block-start: inherit;
-    margin-inline-end: inherit;
-    margin-inline-start: inherit;
-  }
-
-  .table-container {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  .spacer {
-    background-color: inherit;
-  }
-
-  ul.overflow {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-  }
-
-  ol.overflow {
-    background-color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-  }
-
   figure[data-rehype-pretty-code-figure] {
     background-color: light-dark(rgb(248, 249, 250), rgb(15, 17, 23));
     border: 1px solid light-dark(rgb(222, 226, 230), rgb(42, 47, 58));
@@ -3892,11 +3246,6 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    margin: 16px 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
@@ -3912,13 +3261,11 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    padding: 12px 16px;
   }
 
   pre > code > [data-line] {
     background-color: rgba(0, 0, 0, 0);
     border-left: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    padding: 0px;
   }
 
   pre > code > [data-line][data-highlighted-line] {
@@ -3937,41 +3284,6 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-  }
-
-  pre:has(> code.mermaid) {
-    background-color: inherit;
-    border: inherit;
-  }
-
-  ul.tags {
-    background-color: inherit;
-    padding: inherit;
-    margin: inherit;
-    margin-block-end: inherit;
-    margin-block-start: inherit;
-    margin-inline-end: inherit;
-    margin-inline-start: inherit;
-  }
-
-  ul.tags > li {
-    background-color: inherit;
-    color: inherit;
-    border: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
-    border-end-start-radius: inherit;
-    border-end-end-radius: inherit;
-    padding: inherit;
-  }
-
-  .page article p > strong {
-    color: inherit;
-    font-weight: inherit;
   }
 
   --current-page-slug: attr(data-slug raw-string);
