@@ -4168,46 +4168,46 @@ body {
       color: var(--color);
     }
     &[data-callout] {
-      --color: rgb(var(--callout-info));
+      --color: rgb(var(--callout-info)) !important;
     }
     &[data-callout="note"] {
-      --color: rgb(var(--callout-default));
+      --color: rgb(var(--callout-default)) !important;
     }
     &[data-callout="abstract"] {
-      --color: rgb(var(--callout-summary));
+      --color: rgb(var(--callout-summary)) !important;
     }
     &[data-callout="info"] {
-      --color: rgb(var(--callout-info));
+      --color: rgb(var(--callout-info)) !important;
     }
     &[data-callout="todo"] {
-      --color: rgb(var(--callout-todo));
+      --color: rgb(var(--callout-todo)) !important;
     }
     &[data-callout="tip"] {
-      --color: rgb(var(--callout-tip));
+      --color: rgb(var(--callout-tip)) !important;
     }
     &[data-callout="success"] {
-      --color: rgb(var(--callout-success));
+      --color: rgb(var(--callout-success)) !important;
     }
     &[data-callout="question"] {
-      --color: rgb(var(--callout-question));
+      --color: rgb(var(--callout-question)) !important;
     }
     &[data-callout="warning"] {
-      --color: rgb(var(--callout-warning));
+      --color: rgb(var(--callout-warning)) !important;
     }
     &[data-callout="failure"] {
-      --color: rgb(var(--callout-fail));
+      --color: rgb(var(--callout-fail)) !important;
     }
     &[data-callout="danger"] {
-      --color: rgb(var(--callout-bug));
+      --color: rgb(var(--callout-bug)) !important;
     }
     &[data-callout="bug"] {
-      --color: rgb(var(--callout-bug));
+      --color: rgb(var(--callout-bug)) !important;
     }
     &[data-callout="example"] {
-      --color: rgb(var(--callout-example));
+      --color: rgb(var(--callout-example)) !important;
     }
     &[data-callout="quote"] {
-      --color: rgb(var(--callout-quote));
+      --color: rgb(var(--callout-quote)) !important;
     }
   }
 }
