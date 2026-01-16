@@ -3,6 +3,7 @@ cssclasses:
   - hide-title
   - publish-theme-dark
   - publish-theme-light
+  - no-theme-fetch
 permalink: /
 ---
 
