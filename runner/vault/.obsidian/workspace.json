@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "specimen.md",
+                "file": "callouts.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "specimen"
+              "title": "callouts"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "specimen.md",
+                "file": "callouts.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of specimen"
+              "title": "Outline of callouts"
             }
           },
           {
@@ -208,12 +208,14 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "backlinks.md",
-    "callouts.md",
     "embeds.md",
-    "headings.md",
-    "tables.md",
+    "callouts.md",
     "specimen.md",
+    "media.md",
+    "integrations.md",
+    "headings.md",
+    "backlinks.md",
+    "tables.md",
     "general.md",
     "theme-checkboxes/special.md",
     "theme-extras/its-theme/callouts/statblocks.md",
@@ -240,8 +242,6 @@
     "per-theme/xscriptor.md",
     "per-theme/wyrd.md",
     "per-theme/wy-console.md",
-    "per-theme/wombat.md",
-    "per-theme/wiselight.md",
     "per-theme",
     "folder/collapsed",
     "folder/nested"

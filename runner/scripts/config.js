@@ -368,6 +368,34 @@ export const config = [
     pseudoElement: "",
     properties: sets.text,
   },
+  // link hover states
+  {
+    obsidianSelector: `a.external-link[data-tooltip-position=\"top\"]:hover`,
+    publishSelector: `.markdown-rendered a.external-link:hover`,
+    quartzSelector: "a.external:hover, footer a:hover",
+    pseudoElement: "",
+    properties: [
+      "text-decoration",
+      "text-decoration-color",
+      "text-decoration-line",
+      "text-decoration-style",
+      "color",
+    ],
+  },
+  {
+    obsidianSelector: `a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]:hover`,
+    publishSelector: `.markdown-rendered a.internal-link:hover`,
+    quartzSelector:
+      "a.internal:hover, .breadcrumb-container .breadcrumb-element > a:hover",
+    pseudoElement: "",
+    properties: [
+      "text-decoration",
+      "text-decoration-color",
+      "text-decoration-line",
+      "text-decoration-style",
+      "color",
+    ],
+  },
   // text
   {
     obsidianSelector: `p`,

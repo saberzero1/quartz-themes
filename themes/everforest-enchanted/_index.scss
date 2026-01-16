@@ -1978,6 +1978,24 @@ body {
     user-select: text;
   }
 
+  a.external:hover,
+  footer a:hover {
+    text-decoration: underline rgb(166, 138, 249);
+    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  }
+
+  a.internal:hover,
+  .breadcrumb-container .breadcrumb-element > a:hover {
+    text-decoration: underline rgb(166, 138, 249);
+    text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  }
+
   p {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(92, 106, 114), rgb(211, 198, 170));
@@ -4159,6 +4177,12 @@ body {
   }
 
   blockquote.callout {
+    .callout-title {
+      color: var(--color);
+      .callout-icon {
+        background-color: var(--color);
+      }
+    }
     .callout-title > .callout-title-inner > p {
       color: var(--color);
     }

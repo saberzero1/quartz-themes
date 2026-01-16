@@ -2903,6 +2903,20 @@ body .markdown-rendered a.internal-link.is-unresolved {
   text-decoration-style: solid;
   user-select: text;
 }
+body .markdown-rendered a.external-link:hover {
+  text-decoration: underline rgb(138, 92, 245);
+  text-decoration-color: rgb(138, 92, 245);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(138, 92, 245);
+}
+body .markdown-rendered a.internal-link:hover {
+  text-decoration: underline rgb(138, 92, 245);
+  text-decoration-color: rgb(138, 92, 245);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(138, 92, 245);
+}
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(18, 20, 33);
