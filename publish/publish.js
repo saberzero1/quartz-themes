@@ -1,180 +1,5 @@
 const nonThemePages = ["/", "/index"];
 
-const darkOnlyThemes = [
-  "80s-neon",
-  "absolutegruv",
-  "aged-whisky",
-  "amoled-serenity",
-  "apatheia",
-  "arcane",
-  "atomus",
-  "aura-dark",
-  "aurora",
-  "avatar",
-  "ayu-mirage",
-  "base2tone",
-  "behave-dark",
-  "black",
-  "blackbird",
-  "blossom",
-  "bossidian",
-  "brutalism",
-  "celestial-night",
-  "charcoal",
-  "christmas",
-  "cobalt-peacock",
-  "cocoa",
-  "comfort-color-dark",
-  "comfort-dark",
-  "comfort-smooth",
-  "consolas",
-  "covert",
-  "creature",
-  "cybertron",
-  "cybertron-shifted",
-  "dark-castle",
-  "dark-graphite",
-  "dark-moss",
-  "darkyan",
-  "deep-submerge",
-  "deeper-work",
-  "dekurai",
-  "discordian",
-  "dracula-for-obsidian",
-  "dracula-gemini",
-  "dracula-lyt",
-  "dracula-official",
-  "dracula-plus",
-  "dracula-slim",
-  "dust",
-  "eldritch",
-  "evangelion",
-  "everblush",
-  "evergreen-shadow",
-  "evilred",
-  "faded",
-  "firefly",
-  "flatcap",
-  "focus",
-  "gdct-dark",
-  "githubdhc",
-  "glass-robo",
-  "green-nightmare",
-  "hackthebox",
-  "halcyon",
-  "hipstersmoothie",
-  "hojicha",
-  "hulk",
-  "hydra-pressure",
-  "iceberg",
-  "ion",
-  "its-theme.its-dark",
-  "kurokula",
-  "lemons-theme",
-  "lorens",
-  "lyt-mode",
-  "mammoth",
-  "material-ocean",
-  "matrix",
-  "micro-mike",
-  "midnight",
-  "midnight-fjord",
-  "minimal-dark-coder",
-  "minimal-red",
-  "minimal-resources",
-  "mono-black-monochrome-charcoal",
-  "monokai-ristretto",
-  "muted-blue",
-  "nebula",
-  "neon-synthwave",
-  "nier",
-  "nightingale",
-  "nobb",
-  "noctilux",
-  "noctis",
-  "nostromo",
-  "novadust",
-  "obsidianite",
-  "obsidian_vibrant",
-  "old-world",
-  "oldsidian-purple",
-  "oledblack",
-  "omega",
-  "oscura",
-  "overcast",
-  "panic-mode",
-  "pisum",
-  "playground",
-  "poimandres",
-  "protocolblue",
-  "prussian-blue",
-  "purple-aurora",
-  "purple-owl",
-  "red-shadow",
-  "redshift-oled-blue-light-filter",
-  "rezin",
-  "rift",
-  "rmaki",
-  "rose-pine-moon",
-  "rose-red",
-  "sakurajima",
-  "sanguine",
-  "sea-glass",
-  "seamless-view",
-  "simple-color",
-  "sodalite",
-  "solitude",
-  "space",
-  "spectrum-blue",
-  "spectrumplus",
-  "strict",
-  "synthwave",
-  "synthwave-84",
-  "terminal",
-  "theme-that-shall-not-be-named",
-  "tokyo-night-simple",
-  "tokyo-night-storm",
-  "tomorrow",
-  "tomorrow-night-bright",
-  "trace-labs",
-  "transient",
-  "true-black",
-  "vanilla-amoled",
-  "vanilla-amoled-color",
-  "velvet-moon",
-  "venom",
-  "vibrant",
-  "violet-evening",
-  "wilcoxone",
-  "wombat",
-  "zenburn",
-];
-
-const lightOnlyThemes = [
-  "abate",
-  "agate",
-  "al-dente",
-  "comfort",
-  "dashboard",
-  "dayspring",
-  "gdct",
-  "handwriting-kalam",
-  "ink",
-  "lavender-mist",
-  "mint-breeze",
-  "neuborder",
-  "nordic",
-  "northern-sky",
-  "nota-limonada-light",
-  "obsidian-boom",
-  "parfait",
-  "perso",
-  "sparkling-day",
-  "w95",
-  "winter-spices",
-  "wiselight",
-];
-
 function hasTheme() {
   return !nonThemePages.includes(
     window.location.pathname.startsWith("/")
@@ -188,7 +13,7 @@ function getStylesheetForCurrentPage() {
   const theme = pathname.startsWith("/")
     ? pathname.slice(1).toLowerCase()
     : pathname.toLowerCase();
-  ensureModeMatchesTheme(theme);
+  ensureModeMatchesTheme();
   return `https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@refs/heads/develop/themes/${theme}/publish.css`;
 }
 
@@ -206,18 +31,43 @@ function injectStyleElement(css) {
   }
 }
 
-function ensureModeMatchesTheme(theme) {
+let modeObserver = null;
+
+function applyModeIfNeeded() {
   const toggleElement = document.querySelector(
     "div.site-body-left-column-site-theme-toggle",
   );
   const bodyElement = document.querySelector("body");
+  const previewElement = document.querySelector(".markdown-preview-view");
 
-  if (!toggleElement || !bodyElement) return;
+  console.log("[QuartzThemes] applyModeIfNeeded called", {
+    hasToggle: !!toggleElement,
+    hasBody: !!bodyElement,
+    hasPreview: !!previewElement,
+  });
 
-  const isDark = toggleElement.classList.contains("is-dark");
-  const isDarkOnly = darkOnlyThemes.includes(theme);
-  const isLightOnly = lightOnlyThemes.includes(theme);
+  if (!toggleElement || !bodyElement) return false;
+  if (!previewElement) return false;
+
+  const supportsLight = previewElement.classList.contains(
+    "publish-theme-light",
+  );
+  const supportsDark = previewElement.classList.contains("publish-theme-dark");
+
+  console.log("[QuartzThemes] Theme support detected", {
+    supportsLight,
+    supportsDark,
+    previewClasses: previewElement.className,
+  });
+
+  if (!supportsLight && !supportsDark) return false;
+
+  const isDarkOnly = supportsDark && !supportsLight;
+  const isLightOnly = supportsLight && !supportsDark;
   const isSingleMode = isDarkOnly || isLightOnly;
+
+  const isViewingDark = bodyElement.classList.contains("theme-dark");
+  const isViewingLight = bodyElement.classList.contains("theme-light");
 
   if (isSingleMode) {
     toggleElement.style.pointerEvents = "none";
@@ -227,21 +77,78 @@ function ensureModeMatchesTheme(theme) {
     toggleElement.style.opacity = "";
   }
 
-  if (isDarkOnly && !isDark) {
+  const checkboxContainer = toggleElement.querySelector(".checkbox-container");
+
+  if (isDarkOnly && isViewingLight) {
+    console.log("[QuartzThemes] Switching to dark mode (theme is dark-only)");
     if (window.app && window.app.setTheme) {
       window.app.setTheme("dark");
     }
     bodyElement.classList.remove("theme-light");
     bodyElement.classList.add("theme-dark");
     toggleElement.classList.add("is-dark");
-  } else if (isLightOnly && isDark) {
+    if (checkboxContainer) checkboxContainer.classList.add("is-enabled");
+  } else if (isLightOnly && isViewingDark) {
+    console.log("[QuartzThemes] Switching to light mode (theme is light-only)");
     if (window.app && window.app.setTheme) {
       window.app.setTheme("light");
     }
     bodyElement.classList.remove("theme-dark");
     bodyElement.classList.add("theme-light");
     toggleElement.classList.remove("is-dark");
+    if (checkboxContainer) checkboxContainer.classList.remove("is-enabled");
+  } else {
+    console.log("[QuartzThemes] No mode switch needed", {
+      isDarkOnly,
+      isLightOnly,
+      isViewingDark,
+      isViewingLight,
+    });
   }
+
+  return true;
+}
+
+function ensureModeMatchesTheme() {
+  console.log("[QuartzThemes] ensureModeMatchesTheme called");
+
+  if (applyModeIfNeeded()) {
+    console.log("[QuartzThemes] Mode applied immediately");
+    return;
+  }
+
+  if (modeObserver) {
+    modeObserver.disconnect();
+    console.log("[QuartzThemes] Previous observer disconnected");
+  }
+
+  let container = document.querySelector(".publish-renderer");
+  if (!container) {
+    container = document.body;
+    console.log(
+      "[QuartzThemes] .publish-renderer not found, observing document.body instead",
+    );
+  } else {
+    console.log("[QuartzThemes] Observing .publish-renderer for changes");
+  }
+
+  modeObserver = new MutationObserver((mutations) => {
+    console.log("[QuartzThemes] MutationObserver triggered", {
+      mutationCount: mutations.length,
+    });
+    if (applyModeIfNeeded()) {
+      console.log("[QuartzThemes] Mode applied via observer, disconnecting");
+      modeObserver.disconnect();
+      modeObserver = null;
+    }
+  });
+
+  modeObserver.observe(container, {
+    attributes: true,
+    attributeFilter: ["class"],
+    subtree: true,
+    childList: true,
+  });
 }
 
 async function fetchStylesheet(url) {
