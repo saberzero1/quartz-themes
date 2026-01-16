@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/tu2-atmanand" target="_blank" rel="noopener noreferrer">Atmanand Gauns</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/evilred">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/evilred/README.md">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                  | License                                                                                                                                        |
 | --------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |

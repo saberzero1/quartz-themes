@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/KStew1017" target="_blank" rel="noopener noreferrer">Kyle Stewart</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sea-glass">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sea-glass/README.md">Install instructions</a>
 
 | Name        | Modes                     | Compatibility                                  | License                                                                                                                                          |
 | ----------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

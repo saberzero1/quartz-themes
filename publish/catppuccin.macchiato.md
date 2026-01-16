@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/catppuccin/obsidian" target="_blank" rel="noopener noreferrer">Marshall Beckrich</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/catppuccin.macchiato">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/catppuccin.macchiato/README.md">Install instructions</a>
 
 | Name                   | Modes                     | Compatibility                                                                                     | License                                                                                                                                                     |
 | ---------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |

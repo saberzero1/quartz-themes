@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/SlRvb" target="_blank" rel="noopener noreferrer">SlRvb</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/its-theme.rainbow">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/its-theme.rainbow/README.md">Install instructions</a>
 
 | Name                | Modes                     | Compatibility                                                                                     | License                                                                                                                                                          |
 | ------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |

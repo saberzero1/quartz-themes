@@ -2,7 +2,7 @@
 
 - Theme author: kneecaps & WinnerWind
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/gummy-revived">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/gummy-revived/README.md">Install instructions</a>
 
 | Name            | Modes                     | Compatibility                                                                                     | License                                                                                                                                              |
 | --------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

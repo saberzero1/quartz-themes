@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/LennZone" target="_blank" rel="noopener noreferrer">LennZone</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/enhanced-file-explorer-tree">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/enhanced-file-explorer-tree/README.md">Install instructions</a>
 
 | Name                          | Modes                     | Compatibility                                  | License                                                                                                                                                                        |
 | ----------------------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

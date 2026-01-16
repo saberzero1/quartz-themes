@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/Vlad3Design" target="_blank" rel="noopener noreferrer">Vlad 3Design</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/mushin">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/mushin/README.md">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                                                                     | License                                                                                                                                       |
 | -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |

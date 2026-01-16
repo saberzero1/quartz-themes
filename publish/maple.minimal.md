@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/subframe7536" target="_blank" rel="noopener noreferrer">subframe7536</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/maple.minimal">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/maple.minimal/README.md">Install instructions</a>
 
 | Name            | Modes                     | Compatibility                                                                                     | License                                                                                                                                              |
 | --------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

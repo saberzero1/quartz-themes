@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/vigor-13" target="_blank" rel="noopener noreferrer">vigor-13</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vermilion">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vermilion/README.md">Install instructions</a>
 
 | Name        | Modes                     | Compatibility                                  | License                                                                                                                                          |
 | ----------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

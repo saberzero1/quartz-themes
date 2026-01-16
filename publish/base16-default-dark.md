@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://flowing-abyss.com/" target="_blank" rel="noopener noreferrer">flowing-abyss</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/base16-default-dark">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/base16-default-dark/README.md">Install instructions</a>
 
 | Name                  | Modes                     | Compatibility                                  | License                                                                                                                                                    |
 | --------------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: Erika Gozar
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/colored-candy">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/colored-candy/README.md">Install instructions</a>
 
 | Name            | Modes                     | Compatibility                                                                                     | License                                                                                                                                              |
 | --------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

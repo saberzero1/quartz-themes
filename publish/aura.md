@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/ashwinjadhav818/" target="_blank" rel="noopener noreferrer">Ashwin Jadhav</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/aura">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/aura/README.md">Install instructions</a>
 
 | Name   | Modes                     | Compatibility                                                                             | License                                                                                                                                             |
 | ------ | ------------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

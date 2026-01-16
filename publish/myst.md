@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/mulder3062" target="_blank" rel="noopener noreferrer">mulder3062</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/myst">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/myst/README.md">Install instructions</a>
 
 | Name   | Modes                     | Compatibility                                  | License                                                                                                                                     |
 | ------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |

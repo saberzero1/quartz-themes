@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/velvet-moon">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/velvet-moon/README.md">Install instructions</a>
 
 | Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
 | ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

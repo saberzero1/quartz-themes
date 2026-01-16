@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://vhbelvadi.com" target="_blank" rel="noopener noreferrer">V.H. Belvadi</a>
 - Support the author: <a href="https://vhbelvadi.com/donate" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/carbon">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/carbon/README.md">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                  | License                                                                                                                                               |
 | -------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |

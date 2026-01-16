@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/DKLiberty" target="_blank" rel="noopener noreferrer">@dkliberty</a>
 - Support the author: <a href="https://www.buymeacoffee.com/dkliberty" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/red-shadow">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/red-shadow/README.md">Install instructions</a>
 
 | Name         | Modes                     | Compatibility                                  | License                                                                                                                                           |
 | ------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |

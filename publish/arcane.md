@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/xRyul" target="_blank" rel="noopener noreferrer">xRyul</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/arcane">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/arcane/README.md">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
 | -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |

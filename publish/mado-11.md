@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/hydescarf/Obsidian-Theme-Mado-11" target="_blank" rel="noopener noreferrer">hydescarf</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/mado-11">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/mado-11/README.md">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                                                                     | License                                                                                                                                        |
 | --------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/OmegaCentauri68" target="_blank" rel="noopener noreferrer">OmegaC</a>
 - Support the author: <a href="https://ko-fi.com/omegac" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/omega">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/omega/README.md">Install instructions</a>
 
 | Name    | Modes                     | Compatibility                                  | License                                                                                                                                      |
 | ------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: Learnerfvs
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/wiselight">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/wiselight/README.md">Install instructions</a>
 
 | Name        | Modes                       | Compatibility                                                                               | License                                                                                                                                                                    |
 | ----------- | --------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

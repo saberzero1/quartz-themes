@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://lukasbach.com" target="_blank" rel="noopener noreferrer">Lukas Bach</a>
 - Support the author: <a href="https://github.com/lukasbach/.github/blob/main/funding.md" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/proper-dark">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/proper-dark/README.md">Install instructions</a>
 
 | Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
 | ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
