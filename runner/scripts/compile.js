@@ -477,9 +477,13 @@ ${fontString}
 body {
 `;
 
-  // Add CSS rules from data
   for (const [key, value] of Object.entries(data)) {
-    const values = Object.entries(value)
+    const filteredEntries = Object.entries(value).filter(
+      ([k, v]) =>
+        v !== "inherit" && !v.includes("light-dark(inherit, inherit)"),
+    );
+    if (filteredEntries.length === 0) continue;
+    const values = filteredEntries
       .map(([k, v]) => `${k}: ${v.replaceAll('"??", ', "")};`)
       .join("\n  ");
     resultScss += `
@@ -1006,7 +1010,12 @@ ${
 }`;
 
   for (const [key, value] of Object.entries(dataPublish)) {
-    const values = Object.entries(value)
+    const filteredEntries = Object.entries(value).filter(
+      ([k, v]) =>
+        v !== "inherit" && !v.includes("light-dark(inherit, inherit)"),
+    );
+    if (filteredEntries.length === 0) continue;
+    const values = filteredEntries
       .map(([k, v]) => `${k}: ${v.replaceAll('"??", ', "")};`)
       .join("\n  ");
     resultPublishScss += `

@@ -2106,7 +2106,6 @@ body .markdown-rendered a.external-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: underline solid rgba(235, 188, 186, 0.8);
   text-decoration-color: light-dark(
     rgba(222, 149, 132, 0.8),
@@ -2114,8 +2113,6 @@ body .markdown-rendered a.external-link {
   );
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .markdown-rendered a.internal-link {
@@ -2147,7 +2144,6 @@ body .markdown-rendered a.internal-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none solid rgba(235, 188, 186, 0.9);
   text-decoration-color: light-dark(
     rgba(222, 149, 132, 0.9),
@@ -2155,8 +2151,6 @@ body .markdown-rendered a.internal-link {
   );
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .markdown-rendered a.internal-link.is-unresolved {
@@ -2188,13 +2182,10 @@ body .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none solid rgba(138, 92, 245, 0.3);
   text-decoration-color: rgba(138, 92, 245, 0.3);
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .markdown-rendered p {
@@ -2226,13 +2217,10 @@ body .markdown-rendered p {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none solid rgb(198, 206, 239);
   text-decoration-color: light-dark(rgb(76, 79, 105), rgb(198, 206, 239));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body strong {
@@ -2264,13 +2252,10 @@ body strong {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: inherit;
   text-decoration: none solid rgb(255, 98, 107);
   text-decoration-color: light-dark(rgb(240, 68, 114), rgb(255, 98, 107));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body b {
@@ -2302,13 +2287,10 @@ body b {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: inherit;
   text-decoration: none solid rgb(255, 98, 107);
   text-decoration-color: light-dark(rgb(240, 68, 114), rgb(255, 98, 107));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body em {
@@ -2340,13 +2322,10 @@ body em {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none solid rgb(56, 198, 141);
   text-decoration-color: light-dark(rgb(64, 155, 40), rgb(56, 198, 141));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body i {
@@ -2378,13 +2357,10 @@ body i {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none solid rgb(56, 198, 141);
   text-decoration-color: light-dark(rgb(64, 155, 40), rgb(56, 198, 141));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .markdown-rendered mark {
@@ -2419,13 +2395,10 @@ body .markdown-rendered mark {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none solid rgb(198, 206, 239);
   text-decoration-color: light-dark(rgb(76, 79, 105), rgb(198, 206, 239));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body del {
@@ -2457,13 +2430,10 @@ body del {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: line-through solid rgb(198, 206, 239);
   text-decoration-color: light-dark(rgb(76, 79, 105), rgb(198, 206, 239));
   text-decoration-line: line-through;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .suggestion-item.is-selected {
@@ -2565,7 +2535,6 @@ body .markdown-rendered ul > li::marker {
   color: light-dark(rgb(108, 111, 133), rgb(165, 172, 201));
   pointer-events: none;
   transform: none;
-  transition: inherit;
 }
 body .markdown-rendered ol > li {
   color: light-dark(rgb(76, 79, 105), rgb(198, 206, 239));
@@ -2585,7 +2554,6 @@ body .markdown-rendered ol > li::marker {
   color: light-dark(rgb(108, 111, 133), rgb(165, 172, 201));
   pointer-events: none;
   transform: none;
-  transition: inherit;
 }
 body .markdown-rendered code {
   background-color: light-dark(rgb(243, 236, 243), rgb(38, 42, 58));
@@ -2656,12 +2624,10 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   width: auto;
-  transition: inherit;
   position: static;
   top: auto;
 }
 body ul.contains-task-list > li.task-list-item {
-  list-style: inherit;
   text-align: start;
   display: list-item;
 }
@@ -2676,10 +2642,6 @@ body
   width: auto;
   display: inline;
   background-color: rgba(0, 0, 0, 0);
-  -webkit-mask-position: inherit;
-  -webkit-mask-size: inherit;
-  -webkit-mask-repeat: inherit;
-  -webkit-mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
   color: light-dark(rgb(76, 79, 105), rgb(148, 155, 183));
@@ -2688,7 +2650,6 @@ body ul > li.task-list-item[data-task="x"] {
 }
 body .markdown-rendered blockquote {
   background-color: light-dark(rgba(254, 241, 241, 0.5), rgba(36, 39, 52, 0.5));
-  border-inline-start: inherit;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2793,13 +2754,10 @@ body .search-results > * {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none solid rgb(198, 206, 239);
   text-decoration-color: light-dark(rgb(76, 79, 105), rgb(198, 206, 239));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body div.search-results {
@@ -2940,7 +2898,6 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-self {
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
   margin-inline-start: 12px;
   padding-inline-start: 4px;
-  border-inline-start: inherit;
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
@@ -2956,7 +2913,6 @@ body .markdown-preview-sizer {
   box-shadow: none;
 }
 body .callout[data-callout="note"] {
-  --callout-color: inherit;
   border: 1px solid
     light-dark(rgba(71, 143, 238, 0.4), rgba(147, 183, 245, 0.4));
   border-top-left-radius: 4px;
@@ -2972,7 +2928,6 @@ body .callout[data-callout="note"] {
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
 }
 body .callout[data-callout="note"] > .callout-title {
-  gap: inherit;
   border: 0px light-dark(rgba(71, 143, 238, 0.4), rgba(147, 183, 245, 0.4));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3001,7 +2956,6 @@ body .callout > .callout-content {
   padding: 0px 8px 8px;
 }
 body .callout[data-callout="abstract"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: normal;
   border: 1px solid
@@ -3024,7 +2978,6 @@ body
   stroke: rgb(104, 188, 204);
 }
 body .callout[data-callout="info"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: normal;
   border: 1px solid
@@ -3047,7 +3000,6 @@ body
   stroke: rgb(147, 183, 245);
 }
 body .callout[data-callout="todo"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: normal;
   border: 1px solid
@@ -3070,7 +3022,6 @@ body
   stroke: rgb(147, 183, 245);
 }
 body .callout[data-callout="tip"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: normal;
   border: 1px solid
@@ -3093,7 +3044,6 @@ body
   stroke: rgb(104, 188, 204);
 }
 body .callout[data-callout="success"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: normal;
   border: 1px solid light-dark(rgba(64, 155, 40, 0.4), rgba(56, 198, 141, 0.4));
@@ -3115,7 +3065,6 @@ body
   stroke: rgb(56, 198, 141);
 }
 body .callout[data-callout="question"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: normal;
   border: 1px solid
@@ -3138,7 +3087,6 @@ body
   stroke: rgb(247, 157, 124);
 }
 body .callout[data-callout="warning"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: normal;
   border: 1px solid
@@ -3161,7 +3109,6 @@ body
   stroke: rgb(247, 157, 124);
 }
 body .callout[data-callout="danger"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: lighten;
   border: 1px solid light-dark(rgba(240, 68, 114, 0.4), rgba(255, 98, 107, 0.4));
@@ -3183,7 +3130,6 @@ body
   stroke: rgb(255, 98, 107);
 }
 body .callout[data-callout="failure"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: normal;
   border: 1px solid light-dark(rgba(240, 68, 114, 0.4), rgba(255, 98, 107, 0.4));
@@ -3205,7 +3151,6 @@ body
   stroke: rgb(148, 155, 183);
 }
 body .callout[data-callout="bug"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: lighten;
   border: 1px solid light-dark(rgba(240, 68, 114, 0.4), rgba(255, 98, 107, 0.4));
@@ -3227,7 +3172,6 @@ body
   stroke: rgb(255, 98, 107);
 }
 body .callout[data-callout="example"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: lighten;
   border: 1px solid
@@ -3250,7 +3194,6 @@ body
   stroke: rgb(148, 155, 183);
 }
 body .callout[data-callout="quote"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(243, 236, 243, 0.4), rgba(38, 42, 58, 0.4));
   mix-blend-mode: lighten;
   border: 1px solid rgba(158, 158, 158, 0.4);
@@ -3274,7 +3217,6 @@ body
 body .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: collapse;
-  border-spacing: inherit;
   color: light-dark(rgb(76, 79, 105), rgb(198, 206, 239));
   font-family:
     ui-sans-serif,
@@ -3377,14 +3319,7 @@ body .markdown-rendered tr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered tbody tr:nth-child(even) {
-  background-color: inherit;
-}
-body .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: inherit;
-}
 body .markdown-rendered img {
-  border-radius: inherit;
   box-shadow: none;
   filter: none;
   max-width: 100%;
@@ -3459,7 +3394,6 @@ body .markdown-rendered figcaption {
   padding: 0px;
 }
 body .markdown-rendered video {
-  border-radius: inherit;
   box-shadow: none;
   filter: none;
   max-width: 100%;
@@ -3491,154 +3425,6 @@ body .markdown-rendered audio {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
-}
-body .internal-embed {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .markdown-embed {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .file-embed {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .frontmatter-container {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .metadata-container {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .metadata-properties {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .tooltip {
-  background-color: inherit;
-  box-shadow: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .popover {
-  background-color: inherit;
-  box-shadow: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
 }
 body progress {
   accent-color: auto;
@@ -3727,7 +3513,6 @@ body summary {
   color: light-dark(rgb(76, 79, 105), rgb(198, 206, 239));
   cursor: auto;
   font-weight: 400;
-  list-style: inherit;
   padding: 0px;
 }
 body details[open] {
@@ -3808,38 +3593,6 @@ body abbr {
   cursor: auto;
   text-decoration: underline dotted rgb(198, 206, 239);
   text-decoration-style: dotted;
-}
-body .backlink-pane {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .backlink-pane .tree-item {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .backlink-pane .tree-item-self {
-  color: inherit;
-  text-decoration: inherit;
 }
 body li.task-list-item[data-task="-"] {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -3931,24 +3684,12 @@ body li.task-list-item[data-task="w"] {
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
-body ::selection {
-  background-color: inherit;
-  color: inherit;
-}
-body input::placeholder {
-  color: inherit;
-  opacity: inherit;
-}
 body .markdown-rendered p::first-letter {
   color: light-dark(rgb(76, 79, 105), rgb(198, 206, 239));
   font-size: 16px;
-  font-weight: inherit;
-  float: inherit;
 }
 body .markdown-rendered p::first-line {
   color: light-dark(rgb(76, 79, 105), rgb(198, 206, 239));
-  font-weight: inherit;
-  text-transform: inherit;
 }
 body .math-block > mjx-container.MathJax {
   display: block;
@@ -4095,255 +3836,6 @@ body
   font-weight: 400;
   text-decoration: none solid rgb(148, 155, 183);
 }
-body .outline-view-outer .outline-view {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .outline-view-outer .tree-item-self {
-  background-color: inherit;
-  color: inherit;
-  cursor: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-}
-body .outline-view-outer .tree-item-inner {
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  text-decoration: inherit;
-}
-body .outline-view-outer .tree-item-inner:hover {
-  color: inherit;
-  text-decoration: inherit;
-}
-body .graph-view-container {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .clickable-icon {
-  background-color: inherit;
-  color: inherit;
-  cursor: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .clickable-icon:hover {
-  background-color: inherit;
-  color: inherit;
-}
-body .popover .markdown-preview-view {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  box-shadow: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .site-footer {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .site-footer a {
-  color: inherit;
-  text-decoration: inherit;
-}
-body .nav-header {
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-}
-body .nav-files-container .tree-item {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-}
-body .nav-file-title {
-  color: inherit;
-  text-decoration: inherit;
-}
-body .nav-file-title-content {
-  color: inherit;
-  font-family: inherit;
-}
-body .nav-files-container {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .site-body-left-column-site-theme-toggle {
-  background-color: inherit;
-  color: inherit;
-  cursor: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .site-body-left-column-site-theme-toggle svg {
-  fill: inherit;
-  stroke: inherit;
-  color: inherit;
-}
-body .view-header-breadcrumb {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .view-header-breadcrumb-separator {
-  color: inherit;
-  font-family: inherit;
-}
-body .page-header .page-title {
-  color: inherit;
-  font-family: inherit;
-  text-shadow: inherit;
-}
-body .internal-embed .markdown-embed {
-  padding-left: inherit;
-  color: inherit;
-}
-body .math-block {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .external-embed {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .footnotes {
-  background-color: inherit;
-  border-top: inherit;
-  color: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-}
-body .table-wrapper {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .view-content {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
 body figure[data-rehype-pretty-code-figure] {
   background-color: light-dark(rgb(243, 236, 243), rgb(38, 42, 58));
   border: 0px solid light-dark(rgb(188, 192, 204), rgb(65, 69, 89));
@@ -4355,11 +3847,6 @@ body figure[data-rehype-pretty-code-figure] {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
 }
 body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: light-dark(rgb(243, 236, 243), rgb(38, 42, 58));
@@ -4374,12 +3861,10 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  padding: 12px 16px;
 }
 body pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
   border-left: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  padding: 0px;
 }
 body pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
@@ -4397,33 +3882,6 @@ body pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body pre:has(> code.mermaid) {
-  background-color: inherit;
-  border: inherit;
-}
-body .tag-container {
-  background-color: inherit;
-  padding: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-}
-body .tag {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
 body .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -4436,9 +3894,4 @@ body .search-highlight {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 0px;
-}
-body .markdown-rendered p > strong {
-  color: inherit;
-  font-weight: inherit;
 }

@@ -4383,13 +4383,10 @@ body .markdown-rendered a.external-link {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: underline 1px solid rgb(217, 217, 217);
   text-decoration-color: light-dark(rgb(13, 13, 13), rgb(217, 217, 217));
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .markdown-rendered a.internal-link {
@@ -4401,13 +4398,10 @@ body .markdown-rendered a.internal-link {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: underline 1px solid rgb(217, 217, 217);
   text-decoration-color: light-dark(rgb(13, 13, 13), rgb(217, 217, 217));
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .markdown-rendered a.internal-link.is-unresolved {
@@ -4419,7 +4413,6 @@ body .markdown-rendered a.internal-link.is-unresolved {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: underline 1px dashed rgba(230, 230, 230, 0.9);
   text-decoration-color: light-dark(
     rgba(26, 26, 26, 0.9),
@@ -4427,8 +4420,6 @@ body .markdown-rendered a.internal-link.is-unresolved {
   );
   text-decoration-line: underline;
   text-decoration-style: dashed;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .markdown-rendered p {
@@ -4440,13 +4431,10 @@ body .markdown-rendered p {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none solid rgb(212, 212, 212);
   text-decoration-color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body strong {
@@ -4458,13 +4446,10 @@ body strong {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 900;
-  outline: inherit;
   text-decoration: none 1px solid rgb(245, 245, 245);
   text-decoration-color: light-dark(rgb(23, 23, 23), rgb(245, 245, 245));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body b {
@@ -4476,13 +4461,10 @@ body b {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 900;
-  outline: inherit;
   text-decoration: none 1px solid rgb(245, 245, 245);
   text-decoration-color: light-dark(rgb(23, 23, 23), rgb(245, 245, 245));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body em {
@@ -4494,13 +4476,10 @@ body em {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none 1px solid rgb(212, 212, 212);
   text-decoration-color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body i {
@@ -4512,13 +4491,10 @@ body i {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none 1px solid rgb(212, 212, 212);
   text-decoration-color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .markdown-rendered mark {
@@ -4530,13 +4506,10 @@ body .markdown-rendered mark {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none 2px solid rgb(212, 212, 212);
   text-decoration-color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body del {
@@ -4548,13 +4521,10 @@ body del {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: line-through 2px solid rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
   text-decoration-line: line-through;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body .suggestion-item.is-selected {
@@ -4641,7 +4611,6 @@ body .markdown-rendered ul > li::marker {
   color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
   pointer-events: none;
   transform: none;
-  transition: inherit;
 }
 body .markdown-rendered ol > li {
   color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
@@ -4661,7 +4630,6 @@ body .markdown-rendered ol > li::marker {
   color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
   pointer-events: none;
   transform: none;
-  transition: inherit;
 }
 body .markdown-rendered code {
   background-color: light-dark(rgba(229, 229, 229, 0.5), rgba(38, 38, 38, 0.5));
@@ -4729,12 +4697,10 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   width: auto;
-  transition: inherit;
   position: static;
   top: auto;
 }
 body ul.contains-task-list > li.task-list-item {
-  list-style: inherit;
   text-align: start;
   display: list-item;
 }
@@ -4749,10 +4715,6 @@ body
   width: auto;
   display: inline;
   background-color: rgba(0, 0, 0, 0);
-  -webkit-mask-position: inherit;
-  -webkit-mask-size: inherit;
-  -webkit-mask-repeat: inherit;
-  -webkit-mask-image: inherit;
 }
 body ul > li.task-list-item[data-task="x"] {
   color: rgb(115, 115, 115);
@@ -4764,7 +4726,6 @@ body .markdown-rendered blockquote {
     rgba(10, 10, 10, 0.05),
     rgba(250, 250, 250, 0.05)
   );
-  border-inline-start: inherit;
   font-family:
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
@@ -4820,13 +4781,10 @@ body .search-results > * {
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  outline: inherit;
   text-decoration: none solid rgb(212, 212, 212);
   text-decoration-color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   text-decoration-line: none;
   text-decoration-style: solid;
-  text-decoration-thickness: inherit;
-  transition: inherit;
   user-select: text;
 }
 body div.search-results {
@@ -4913,7 +4871,6 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-self {
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
   margin-inline-start: 12px;
   padding-inline-start: 4px;
-  border-inline-start: inherit;
 }
 body .markdown-preview-sizer {
   background-color: rgba(0, 0, 0, 0);
@@ -4929,7 +4886,6 @@ body .markdown-preview-sizer {
   box-shadow: none;
 }
 body .callout[data-callout="note"] {
-  --callout-color: inherit;
   border: 1px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -4947,7 +4903,6 @@ body .callout[data-callout="note"] {
   );
 }
 body .callout[data-callout="note"] > .callout-title {
-  gap: inherit;
   border: 0px light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -4976,7 +4931,6 @@ body .callout > .callout-content {
   padding: 0px;
 }
 body .callout[data-callout="abstract"] {
-  --callout-color: inherit;
   background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
   mix-blend-mode: normal;
   border: 1px solid
@@ -4999,7 +4953,6 @@ body
   stroke: rgb(212, 212, 212);
 }
 body .callout[data-callout="info"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 0.894118 0.933333 0.992157 / 0.8),
     color(srgb 0.0784314 0.12549 0.192157 / 0.8)
@@ -5024,7 +4977,6 @@ body
   stroke: rgb(212, 212, 212);
 }
 body .callout[data-callout="todo"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 0.894118 0.933333 0.992157 / 0.8),
     color(srgb 0.0784314 0.12549 0.192157 / 0.8)
@@ -5049,7 +5001,6 @@ body
   stroke: rgb(212, 212, 212);
 }
 body .callout[data-callout="tip"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 0.909804 0.972549 0.972549 / 0.8),
     color(srgb 0.117647 0.172549 0.172549 / 0.8)
@@ -5075,7 +5026,6 @@ body
   stroke: rgb(212, 212, 212);
 }
 body .callout[data-callout="success"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 0.909804 0.972549 0.917647 / 0.8),
     color(srgb 0.101961 0.168627 0.117647 / 0.8)
@@ -5100,7 +5050,6 @@ body
   stroke: rgb(212, 212, 212);
 }
 body .callout[data-callout="question"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 1 0.941176 0.898039 / 0.8),
     color(srgb 0.184314 0.141176 0.0980392 / 0.8)
@@ -5126,7 +5075,6 @@ body
   stroke: rgb(212, 212, 212);
 }
 body .callout[data-callout="warning"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 1 0.941176 0.898039 / 0.8),
     color(srgb 0.184314 0.141176 0.0980392 / 0.8)
@@ -5152,7 +5100,6 @@ body
   stroke: rgb(115, 115, 115);
 }
 body .callout[data-callout="danger"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 1 0.909804 0.917647 / 0.8),
     color(srgb 0.196078 0.101961 0.101961 / 0.8)
@@ -5177,7 +5124,6 @@ body
   stroke: rgb(212, 212, 212);
 }
 body .callout[data-callout="failure"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 1 0.909804 0.917647 / 0.8),
     color(srgb 0.196078 0.101961 0.101961 / 0.8)
@@ -5202,7 +5148,6 @@ body
   stroke: rgba(230, 230, 230, 0.8);
 }
 body .callout[data-callout="bug"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 1 0.909804 0.917647 / 0.8),
     color(srgb 0.196078 0.101961 0.101961 / 0.8)
@@ -5227,7 +5172,6 @@ body
   stroke: rgb(212, 212, 212);
 }
 body .callout[data-callout="example"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 0.937255 0.921569 0.996078 / 0.8),
     color(srgb 0.14902 0.12549 0.188235 / 0.8)
@@ -5253,7 +5197,6 @@ body
   stroke: rgb(115, 115, 115);
 }
 body .callout[data-callout="quote"] {
-  --callout-color: inherit;
   background-color: light-dark(
     color(srgb 0.956863 0.956863 0.956863 / 0.8),
     color(srgb 0.141176 0.141176 0.141176 / 0.8)
@@ -5280,7 +5223,6 @@ body
 body .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: collapse;
-  border-spacing: inherit;
   color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   font-family:
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
@@ -5372,14 +5314,7 @@ body .markdown-rendered tr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered tbody tr:nth-child(even) {
-  background-color: inherit;
-}
-body .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: inherit;
-}
 body .markdown-rendered img {
-  border-radius: inherit;
   box-shadow: none;
   filter: none;
   max-width: 100%;
@@ -5434,7 +5369,6 @@ body .markdown-rendered figcaption {
   padding: 0px;
 }
 body .markdown-rendered video {
-  border-radius: inherit;
   box-shadow: none;
   filter: none;
   max-width: 100%;
@@ -5466,154 +5400,6 @@ body .markdown-rendered audio {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
-}
-body .internal-embed {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .markdown-embed {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .file-embed {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .frontmatter-container {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .metadata-container {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .metadata-properties {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-  padding: inherit;
-}
-body .tooltip {
-  background-color: inherit;
-  box-shadow: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .popover {
-  background-color: inherit;
-  box-shadow: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
 }
 body progress {
   accent-color: auto;
@@ -5682,7 +5468,6 @@ body summary {
   color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   cursor: auto;
   font-weight: 400;
-  list-style: inherit;
   padding: 0px;
 }
 body details[open] {
@@ -5760,38 +5545,6 @@ body abbr {
   cursor: auto;
   text-decoration: underline dotted rgb(212, 212, 212);
   text-decoration-style: dotted;
-}
-body .backlink-pane {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .backlink-pane .tree-item {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .backlink-pane .tree-item-self {
-  color: inherit;
-  text-decoration: inherit;
 }
 body li.task-list-item[data-task="-"] {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
@@ -5883,24 +5636,12 @@ body li.task-list-item[data-task="w"] {
   text-decoration: rgb(218, 218, 218);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
 }
-body ::selection {
-  background-color: inherit;
-  color: inherit;
-}
-body input::placeholder {
-  color: inherit;
-  opacity: inherit;
-}
 body .markdown-rendered p::first-letter {
   color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
   font-size: 16px;
-  font-weight: inherit;
-  float: inherit;
 }
 body .markdown-rendered p::first-line {
   color: light-dark(rgb(64, 64, 64), rgb(212, 212, 212));
-  font-weight: inherit;
-  text-transform: inherit;
 }
 body .math-block > mjx-container.MathJax {
   display: block;
@@ -5980,255 +5721,6 @@ body
   font-weight: 400;
   text-decoration: none solid rgb(212, 212, 212);
 }
-body .outline-view-outer .outline-view {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .outline-view-outer .tree-item-self {
-  background-color: inherit;
-  color: inherit;
-  cursor: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-}
-body .outline-view-outer .tree-item-inner {
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  text-decoration: inherit;
-}
-body .outline-view-outer .tree-item-inner:hover {
-  color: inherit;
-  text-decoration: inherit;
-}
-body .graph-view-container {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .clickable-icon {
-  background-color: inherit;
-  color: inherit;
-  cursor: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .clickable-icon:hover {
-  background-color: inherit;
-  color: inherit;
-}
-body .popover .markdown-preview-view {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  box-shadow: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .site-footer {
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .site-footer a {
-  color: inherit;
-  text-decoration: inherit;
-}
-body .nav-header {
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-}
-body .nav-files-container .tree-item {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-}
-body .nav-file-title {
-  color: inherit;
-  text-decoration: inherit;
-}
-body .nav-file-title-content {
-  color: inherit;
-  font-family: inherit;
-}
-body .nav-files-container {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .site-body-left-column-site-theme-toggle {
-  background-color: inherit;
-  color: inherit;
-  cursor: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .site-body-left-column-site-theme-toggle svg {
-  fill: inherit;
-  stroke: inherit;
-  color: inherit;
-}
-body .view-header-breadcrumb {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .view-header-breadcrumb-separator {
-  color: inherit;
-  font-family: inherit;
-}
-body .page-header .page-title {
-  color: inherit;
-  font-family: inherit;
-  text-shadow: inherit;
-}
-body .internal-embed .markdown-embed {
-  padding-left: inherit;
-  color: inherit;
-}
-body .math-block {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .external-embed {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
-body .footnotes {
-  background-color: inherit;
-  border-top: inherit;
-  color: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-}
-body .table-wrapper {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
-body .view-content {
-  background-color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-}
 body figure[data-rehype-pretty-code-figure] {
   background-color: light-dark(rgb(245, 245, 245), rgb(23, 23, 23));
   border: 1px solid light-dark(rgb(212, 212, 212), rgb(64, 64, 64));
@@ -6240,11 +5732,6 @@ body figure[data-rehype-pretty-code-figure] {
   border-start-end-radius: 2px;
   border-end-start-radius: 2px;
   border-end-end-radius: 2px;
-  margin: 32px 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
 }
 body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: light-dark(rgb(245, 245, 245), rgb(23, 23, 23));
@@ -6259,12 +5746,10 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-start-end-radius: 2px;
   border-end-start-radius: 2px;
   border-end-end-radius: 2px;
-  padding: 20px 32px;
 }
 body pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
   border-left: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  padding: 0px;
 }
 body pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
@@ -6282,33 +5767,6 @@ body pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body pre:has(> code.mermaid) {
-  background-color: inherit;
-  border: inherit;
-}
-body .tag-container {
-  background-color: inherit;
-  padding: inherit;
-  margin: inherit;
-  margin-block-end: inherit;
-  margin-block-start: inherit;
-  margin-inline-end: inherit;
-  margin-inline-start: inherit;
-}
-body .tag {
-  background-color: inherit;
-  color: inherit;
-  border: inherit;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
-  border-start-start-radius: inherit;
-  border-start-end-radius: inherit;
-  border-end-start-radius: inherit;
-  border-end-end-radius: inherit;
-  padding: inherit;
-}
 body .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -6321,9 +5779,4 @@ body .search-highlight {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 0px;
-}
-body .markdown-rendered p > strong {
-  color: inherit;
-  font-weight: inherit;
 }

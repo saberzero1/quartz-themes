@@ -1762,7 +1762,7 @@ export const config = [
     publishSelector: `.outline-view-outer .outline-view`,
     quartzSelector: ".toc",
     pseudoElement: "",
-    properties: ["background-color", ...defaults.border, ...defaults.padding],
+    properties: ["background-color", ...defaults.border],
   },
   {
     obsidianSelector: `.outline-view-outer .tree-item-self`,
@@ -1867,7 +1867,6 @@ export const config = [
       "font-family",
       "box-shadow",
       ...defaults.border,
-      ...defaults.padding,
     ],
   },
   // === FOOTER COMPONENT ===
@@ -1903,12 +1902,7 @@ export const config = [
     publishSelector: `.nav-files-container .tree-item`,
     quartzSelector: ".recent-notes > ul.recent-ul > li",
     pseudoElement: "",
-    properties: [
-      "background-color",
-      "color",
-      ...defaults.border,
-      ...defaults.padding,
-    ],
+    properties: ["background-color", "color", ...defaults.border],
   },
   {
     obsidianSelector: `.nav-file-title`,
@@ -1931,14 +1925,14 @@ export const config = [
     publishSelector: `.nav-files-container`,
     quartzSelector: "ul.section-ul",
     pseudoElement: "",
-    properties: ["background-color", ...defaults.border, ...defaults.padding],
+    properties: ["background-color", ...defaults.border],
   },
   {
     obsidianSelector: `.nav-files-container .tree-item`,
     publishSelector: `.nav-files-container .tree-item`,
     quartzSelector: "li.section-li",
     pseudoElement: "",
-    properties: ["background-color", ...defaults.border, ...defaults.margin],
+    properties: ["background-color", ...defaults.border],
   },
   {
     obsidianSelector: `.nav-file-title`,
@@ -1975,12 +1969,7 @@ export const config = [
     publishSelector: `.view-header-breadcrumb`,
     quartzSelector: ".breadcrumb-container",
     pseudoElement: "",
-    properties: [
-      "background-color",
-      "color",
-      ...defaults.border,
-      ...defaults.padding,
-    ],
+    properties: ["background-color", "color", ...defaults.border],
   },
   {
     obsidianSelector: `.view-header-breadcrumb-separator`,
@@ -2026,12 +2015,7 @@ export const config = [
     publishSelector: `.math-block`,
     quartzSelector: ".katex-display",
     pseudoElement: "",
-    properties: [
-      "background-color",
-      "color",
-      ...defaults.border,
-      ...defaults.padding,
-    ],
+    properties: ["background-color", "color", ...defaults.border],
   },
   // === EXTERNAL EMBED (YouTube, PDF) ===
   {
@@ -2060,7 +2044,6 @@ export const config = [
       "border-top-style",
       "border-top-width",
       "color",
-      ...defaults.margin,
     ],
   },
   // === TABLE CONTAINER ===
@@ -2069,7 +2052,7 @@ export const config = [
     publishSelector: `.table-wrapper`,
     quartzSelector: ".table-container",
     pseudoElement: "",
-    properties: ["background-color", ...defaults.border, ...defaults.padding],
+    properties: ["background-color", ...defaults.border],
   },
   // === SPACER ELEMENT ===
   {
@@ -2100,7 +2083,7 @@ export const config = [
     publishSelector: `figure[data-rehype-pretty-code-figure]`,
     quartzSelector: "figure[data-rehype-pretty-code-figure]",
     pseudoElement: "",
-    properties: ["background-color", ...defaults.border, ...defaults.margin],
+    properties: ["background-color", ...defaults.border],
   },
   {
     obsidianSelector: `pre.language-js`,
@@ -2113,7 +2096,6 @@ export const config = [
       "color",
       "font-family",
       ...defaults.border,
-      ...defaults.padding,
     ],
   },
   // === CODE LINE NUMBERS AND HIGHLIGHTING ===
@@ -2127,7 +2109,6 @@ export const config = [
       "border-left-color",
       "border-left-style",
       "border-left-width",
-      ...defaults.padding,
     ],
   },
   {
@@ -2158,19 +2139,14 @@ export const config = [
     publishSelector: `.tag-container`,
     quartzSelector: "ul.tags",
     pseudoElement: "",
-    properties: ["background-color", ...defaults.padding, ...defaults.margin],
+    properties: ["background-color"],
   },
   {
     obsidianSelector: `.tag`,
     publishSelector: `.tag`,
     quartzSelector: "ul.tags > li",
     pseudoElement: "",
-    properties: [
-      "background-color",
-      "color",
-      ...defaults.border,
-      ...defaults.padding,
-    ],
+    properties: ["background-color", "color", ...defaults.border],
   },
   // === TEXT HIGHLIGHT ===
   {
@@ -2178,12 +2154,7 @@ export const config = [
     publishSelector: `.search-highlight`,
     quartzSelector: ".text-highlight",
     pseudoElement: "",
-    properties: [
-      "background-color",
-      "color",
-      ...defaults.border,
-      ...defaults.padding,
-    ],
+    properties: ["background-color", "color", ...defaults.border],
   },
   // === SELECTION ===
   {
