@@ -1,3 +1,8 @@
+---
+cssclasses:
+  - "publish-theme-dark"
+---
+
 > This page is to quickly check how all features are rendered.
 
 - Theme author: <a href="https://github.com/Possibly-Matt/obsidian-aura-theme" target="_blank" rel="noopener noreferrer">ProbablyNot</a>

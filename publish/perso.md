@@ -1,3 +1,8 @@
+---
+cssclasses:
+  - "publish-theme-light"
+---
+
 > This page is to quickly check how all features are rendered.
 
 - Theme author: <a href="https://blog.behrouze.com" target="_blank" rel="noopener noreferrer">Behrouze</a>

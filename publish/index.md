@@ -1,6 +1,8 @@
 ---
 cssclasses:
   - hide-title
+  - publish-theme-dark
+  - publish-theme-light
 permalink: /
 ---
 

@@ -1,3 +1,9 @@
+---
+cssclasses:
+  - "publish-theme-dark"
+  - "publish-theme-light"
+---
+
 > This page is to quickly check how all features are rendered.
 
 - Theme author: <a href="https://docs.dev0.sh" target="_blank" rel="noopener noreferrer">PipeItToDevNull</a>
