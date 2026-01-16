@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/tu2-atmanand" target="_blank" rel="noopener noreferrer">Atmanand Gauns</a>
 - Support the author: <a href="https://buymeacoffee.com/tu2_atmanand" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a> | <a href="https://github.com/sponsors/tu2-atmanand" target="_blank" rel="noopener noreferrer">GitHub Sponsor</a> | <a href="https://paypal.me/tu2atmanand" target="_blank" rel="noopener noreferrer">Paypal</a> | <a href="https://ko-fi.com/atmanandgauns" target="_blank" rel="noopener noreferrer">ko-fi</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-red">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-red/README.md">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                  | License                                                                                                                                                 |
 | ---------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

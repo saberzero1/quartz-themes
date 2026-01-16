@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/LorenzoPegorari" target="_blank" rel="noopener noreferrer">Lorenzo Pegorari</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/simply-colorful">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/simply-colorful/README.md">Install instructions</a>
 
 | Name              | Modes                     | Compatibility                                                                                     | License                                                                                                                                                |
 | ----------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |

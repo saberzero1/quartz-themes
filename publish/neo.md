@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/x0aa7i" target="_blank" rel="noopener noreferrer">ABDO</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/neo">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/neo/README.md">Install instructions</a>
 
 | Name  | Modes                     | Compatibility                                                                                     | License                                                                                                                                    |
 | ----- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://codeberg.org/MalcolmMielle" target="_blank" rel="noopener noreferrer">Malcolm Mielle</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/emerald-echo">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/emerald-echo/README.md">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                  | License                                                                                                                                             |
 | -------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

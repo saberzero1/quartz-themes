@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/ryanjrman" target="_blank" rel="noopener noreferrer">ryanjrman</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/spectrum-blue">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/spectrum-blue/README.md">Install instructions</a>
 
 | Name            | Modes                     | Compatibility                                                                                     | License                                                                                                                                              |
 | --------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

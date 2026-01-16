@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://gitlab.com/chrismettal" target="_blank" rel="noopener noreferrer">Chrismettal</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/behave-dark">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/behave-dark/README.md">Install instructions</a>
 
 | Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
 | ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

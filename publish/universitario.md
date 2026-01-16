@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://linktr.ee/rincontech" target="_blank" rel="noopener noreferrer">Alonso</a>
 - Support the author: <a href="https://tecito.app/alonsoup" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/universitario">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/universitario/README.md">Install instructions</a>
 
 | Name            | Modes                     | Compatibility                                  | License                                                                                                                                                      |
 | --------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |

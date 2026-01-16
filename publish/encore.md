@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://lucaschampagne.dev/" target="_blank" rel="noopener noreferrer">Carbonateb</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/encore">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/encore/README.md">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                                                                     | License                                                                                                                                       |
 | -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |

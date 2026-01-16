@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://insanum.com" target="_blank" rel="noopener noreferrer">insanum</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/obsidian-nord">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/obsidian-nord/README.md">Install instructions</a>
 
 | Name            | Modes                     | Compatibility                                  | License                                                                                                                                              |
 | --------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

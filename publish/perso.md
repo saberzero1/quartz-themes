@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://blog.behrouze.com" target="_blank" rel="noopener noreferrer">Behrouze</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/perso">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/perso/README.md">Install instructions</a>
 
 | Name    | Modes                       | Compatibility                                  | License                                                                                                                                      |
 | ------- | --------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |

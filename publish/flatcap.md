@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://cheycron.com" target="_blank" rel="noopener noreferrer">@cheycron</a>
 - Support the author: <a href="https://buymeacoffee.com/cheycron" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flatcap">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flatcap/README.md">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                  | License                                                                                                                                        |
 | --------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |

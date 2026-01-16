@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/caro401" target="_blank" rel="noopener noreferrer">@caro401</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/royal-velvet">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/royal-velvet/README.md">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                                                                     | License                                                                                                                                             |
 | -------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

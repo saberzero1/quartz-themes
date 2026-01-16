@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/hungsu/" target="_blank" rel="noopener noreferrer">Hung-Su</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/typomagical">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/typomagical/README.md">Install instructions</a>
 
 | Name          | Modes                     | Compatibility                                                                                     | License                                                                                                                                                    |
 | ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |

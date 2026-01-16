@@ -2,7 +2,7 @@
 
 - Theme author: David Troyer
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimalist-studio">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimalist-studio/README.md">Install instructions</a>
 
 | Name                | Modes                     | Compatibility                                                                                     | License                                                                                                                                                  |
 | ------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |

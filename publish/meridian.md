@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/mvahaste" target="_blank" rel="noopener noreferrer">mvahaste</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/meridian">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/meridian/README.md">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                  | License                                                                                                                                         |
 | ---------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |

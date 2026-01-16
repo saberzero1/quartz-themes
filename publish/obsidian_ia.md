@@ -2,7 +2,7 @@
 
 - Theme author: rcvd
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/obsidian_ia">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/obsidian_ia/README.md">Install instructions</a>
 
 | Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
 | ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

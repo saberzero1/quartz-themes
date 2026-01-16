@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/ScottKirvan" target="_blank" rel="noopener noreferrer">Scott Kirvan</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/githubdhc">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/githubdhc/README.md">Install instructions</a>
 
 | Name        | Modes                     | Compatibility                                                                                     | License                                                                                                                                          |
 | ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

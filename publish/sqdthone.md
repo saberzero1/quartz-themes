@@ -2,7 +2,7 @@
 
 - Theme author: <a href="KeithLerner.net" target="_blank" rel="noopener noreferrer">Keith 'Sqdth' Lerner</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sqdthone">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sqdthone/README.md">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                                 |
 | ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
