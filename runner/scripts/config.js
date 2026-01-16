@@ -1637,20 +1637,7 @@ export const config = [
     pseudoElement: "::placeholder",
     properties: ["color", "opacity"],
   },
-  {
-    obsidianSelector: `p::first-letter`,
-    publishSelector: `.markdown-rendered p::first-letter`,
-    quartzSelector: "p::first-letter",
-    pseudoElement: "::first-letter",
-    properties: ["color", "font-size", "font-weight", "float"],
-  },
-  {
-    obsidianSelector: `p::first-line`,
-    publishSelector: `.markdown-rendered p::first-line`,
-    quartzSelector: "p::first-line",
-    pseudoElement: "::first-line",
-    properties: ["color", "font-weight", "text-transform"],
-  },
+
   {
     obsidianSelector: `mjx-container.MathJax`,
     publishSelector: `.math-block > mjx-container.MathJax`,
