@@ -1,3 +1,8 @@
+---
+cssclasses:
+  - "publish-theme-dark"
+---
+
 > This page is to quickly check how all features are rendered.
 
 - Theme author: <a href="https://github.com/tu2-atmanand" target="_blank" rel="noopener noreferrer">Atmanand Gauns</a>

@@ -1,3 +1,8 @@
+---
+cssclasses:
+  - "publish-theme-dark"
+---
+
 > This page is to quickly check how all features are rendered.
 
 - Theme author: <a href="https://nayasinghania.com" target="_blank" rel="noopener noreferrer">Naya Singhania</a>

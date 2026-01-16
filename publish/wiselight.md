@@ -1,3 +1,8 @@
+---
+cssclasses:
+  - "publish-theme-light"
+---
+
 > This page is to quickly check how all features are rendered.
 
 - Theme author: Learnerfvs
