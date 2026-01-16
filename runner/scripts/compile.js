@@ -362,8 +362,7 @@ function generateAndWriteCSS(
   if (Object.keys(bodyVariables.dark).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.dark)) {
       // For Publish: include all variables
-      bodyVarsStringDarkPublish += `  ${key}: ${value};\n`;
-      // bodyVarsStringDarkPublish += `  ${key}: ${value} !important;\n`;
+      bodyVarsStringDarkPublish += `  ${key}: ${value}${key.startsWith("--callout-") ? "" : " !important"};\n`;
 
       // For Quartz: only include --code-* and --graph-* variables
       if (isIncludedVariable(key)) {
@@ -375,7 +374,7 @@ function generateAndWriteCSS(
   if (Object.keys(bodyVariables.light).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.light)) {
       // For Publish: include all variables
-      bodyVarsStringLightPublish += `  ${key}: ${value} !important;\n`;
+      bodyVarsStringLightPublish += `  ${key}: ${value}${key.startsWith("--callout-") ? "" : " !important"};\n`;
 
       // For Quartz: only include --code-* and --graph-* variables
       if (isIncludedVariable(key)) {

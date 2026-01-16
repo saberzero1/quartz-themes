@@ -1,6 +1,12 @@
 const nonThemePages = ["/", "/index"];
 
+function hasNoThemeFetchClass() {
+  const previewElement = document.querySelector(".markdown-preview-view");
+  return previewElement?.classList.contains("no-theme-fetch") ?? false;
+}
+
 function hasTheme() {
+  if (hasNoThemeFetchClass()) return false;
   return !nonThemePages.includes(
     window.location.pathname.startsWith("/")
       ? window.location.pathname.slice(1).toLowerCase()
