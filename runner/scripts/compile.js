@@ -787,27 +787,12 @@ body {
         padding-right: 1.5rem;
       }
 
-      div.sidebar.left,
-      div.sidebar.left:has(.explorer) {
-        padding-left: 1rem;
-        padding-right: 1.5rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-        width: 100%;
-        max-width: 100%;
-      }
       div.sidebar.right,
       footer {
         padding: 0 1.5rem;
       }
       footer {
         min-width: auto;
-      }
-
-      .explorer .explorer-content {
-        width: 100vw;
-        padding-left: 1rem;
-        padding-right: 1rem;
       }
     }
     .page-title {

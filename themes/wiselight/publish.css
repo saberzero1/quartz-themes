@@ -2422,13 +2422,6 @@ body li.task-list-item[data-task="w"] {
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(34, 34, 34);
 }
-body .markdown-rendered p::first-letter {
-  color: rgb(46, 51, 56);
-  font-size: 16px;
-}
-body .markdown-rendered p::first-line {
-  color: rgb(46, 51, 56);
-}
 body .math-block > mjx-container.MathJax {
   display: block;
   text-align: center;
