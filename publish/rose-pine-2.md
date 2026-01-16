@@ -1,3 +1,9 @@
+---
+cssclasses:
+  - "publish-theme-dark"
+  - "publish-theme-light"
+---
+
 > This page is to quickly check how all features are rendered.
 
 - Theme author: <a href="https://github.com/JTrenerry" target="_blank" rel="noopener noreferrer">rose-pine</a>

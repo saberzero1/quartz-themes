@@ -1,5 +1,3 @@
-> This page is to quickly check how all features are rendered.
-
 //QUARTZ_THEMES_LINK
 
 # Markdown Formatting Guide for Obsidian

@@ -75,13 +75,18 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
         : "- Support the author: Author did not provide funding links in `manifest.json`";
 
     const compatibilityArray = themes[themeName.theme]["compatibility"];
+    let cssClassesPublishString = "";
     if (mode === "both") {
       themeListDark.push(themeName.name);
       themeListLight.push(themeName.name);
+      cssClassesPublishString = `  - "publish-theme-dark"
+  - "publish-theme-light"`;
     } else if (mode === "dark") {
       themeListDark.push(themeName.name);
+      cssClassesPublishString = `  - "publish-theme-dark"`;
     } else if (mode === "light") {
       themeListLight.push(themeName.name);
+      cssClassesPublishString = `  - "publish-theme-light"`;
     }
     const license = themes[themeName.theme]["license"]["spdx_id"];
     const licenseString = `<a href="obsidian/${themeName.name}/LICENSE.md"><img src="media/license/${license.toLowerCase()}.svg" alt="${license.toUpperCase()}"/></a>`;
@@ -99,7 +104,14 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
     replaceInFile(
       `./publish/${themeName.theme}.md`,
       "//QUARTZ_THEMES_LINK",
-      `- Theme author: ${authorString}
+      `---
+cssclasses:
+${cssClassesPublishString}
+---
+
+> This page is to quickly check how all features are rendered.
+
+- Theme author: ${authorString}
 ${fundingString}
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.name}/README.md">Install instructions</a>
 

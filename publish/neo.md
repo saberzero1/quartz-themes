@@ -1,3 +1,9 @@
+---
+cssclasses:
+  - "publish-theme-dark"
+  - "publish-theme-light"
+---
+
 > This page is to quickly check how all features are rendered.
 
 - Theme author: <a href="https://github.com/x0aa7i" target="_blank" rel="noopener noreferrer">ABDO</a>

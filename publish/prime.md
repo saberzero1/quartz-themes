@@ -1,3 +1,9 @@
+---
+cssclasses:
+  - "publish-theme-dark"
+  - "publish-theme-light"
+---
+
 > This page is to quickly check how all features are rendered.
 
 - Theme author: <a href="https://rivea0.github.io" target="_blank" rel="noopener noreferrer">Eda</a>
