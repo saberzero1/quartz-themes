@@ -379,7 +379,7 @@ function generateAndWriteCSS(
 
       // For Quartz: only include --code-* and --graph-* variables
       if (isIncludedVariable(key)) {
-        bodyVarsStringLightQuartz += `  ${key}: ${value} !important;\n`;
+        bodyVarsStringLightQuartz += `  ${key}: ${value}${key.startsWith("--callout-") ? "" : " !important"};\n`;
       }
     }
   }

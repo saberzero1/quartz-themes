@@ -102,29 +102,29 @@
   --bold-weight: 600 !important;
   --border-width: 1px !important;
   --button-radius: 5px !important;
-  --callout-blend-mode: darken !important;
-  --callout-border-opacity: 0.25 !important;
-  --callout-border-width: 0px !important;
-  --callout-bug: 255, 85, 64 !important;
-  --callout-content-background: transparent !important;
-  --callout-content-padding: 0 !important;
-  --callout-default: 255, 152, 0 !important;
-  --callout-error: 255, 85, 64 !important;
-  --callout-example: 62, 88, 235 !important;
-  --callout-fail: 255, 85, 64 !important;
-  --callout-important: 255, 152, 0 !important;
-  --callout-info: 42, 167, 238 !important;
-  --callout-padding: 12px 12px 12px 24px !important;
-  --callout-question: 255, 152, 0 !important;
-  --callout-quote: 158, 158, 158 !important;
-  --callout-radius: 0.5em !important;
-  --callout-success: 93, 212, 0 !important;
-  --callout-summary: 15, 200, 186 !important;
-  --callout-tip: 15, 200, 186 !important;
-  --callout-title-padding: 0 !important;
-  --callout-title-weight: 600 !important;
-  --callout-todo: 62, 88, 235 !important;
-  --callout-warning: 255, 152, 0 !important;
+  --callout-blend-mode: darken;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-bug: 255, 85, 64;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-default: 255, 152, 0;
+  --callout-error: 255, 85, 64;
+  --callout-example: 62, 88, 235;
+  --callout-fail: 255, 85, 64;
+  --callout-important: 255, 152, 0;
+  --callout-info: 42, 167, 238;
+  --callout-padding: 12px 12px 12px 24px;
+  --callout-question: 255, 152, 0;
+  --callout-quote: 158, 158, 158;
+  --callout-radius: 0.5em;
+  --callout-success: 93, 212, 0;
+  --callout-summary: 15, 200, 186;
+  --callout-tip: 15, 200, 186;
+  --callout-title-padding: 0;
+  --callout-title-weight: 600;
+  --callout-todo: 62, 88, 235;
+  --callout-warning: 255, 152, 0;
   --canvas-background: #ffffff !important;
   --canvas-card-label-color: #949494 !important;
   --canvas-color: 192, 192, 192 !important;
@@ -801,13 +801,13 @@
   --inline-title-color: #2f2f2f !important;
   --bold-color: #2aa7ee !important;
   --italic-color: #5dd400 !important;
-  --callout-title-color: #2f2f2f !important;
+  --callout-title-color: #2f2f2f;
   --workspace-background: linear-gradient(
     0deg,
     rgb(255, 248, 153),
     rgb(255, 202, 202)
   ) !important;
-  --callout-opacity: 0.22 !important;
+  --callout-opacity: 0.22;
   --folder-description: "Collection" !important;
   --folder-icon: "📁" !important;
   --gradient-1-dark: rgb(55, 41, 15) !important;
