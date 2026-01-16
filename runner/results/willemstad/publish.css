@@ -15386,10 +15386,6 @@ body
   stroke: oklch(68% 0 0deg);
 }
 body .callout > .callout-title > .callout-title-inner {
-  color: light-dark(
-    oklch(55.6959% 0.147665 155.295deg),
-    oklch(80.6959% 0.260586 155.295deg)
-  );
   font-weight: 600;
 }
 body .callout > .callout-content {
