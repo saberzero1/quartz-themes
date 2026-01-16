@@ -3707,3 +3707,350 @@ body
   font-weight: 400;
   text-decoration: none solid rgb(179, 179, 179);
 }
+body .outline-view-outer .outline-view {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .outline-view-outer .tree-item-self {
+  background-color: inherit;
+  color: inherit;
+  cursor: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+body .outline-view-outer .tree-item-inner {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+body .outline-view-outer .tree-item-inner:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+body .graph-view-container {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+}
+body .clickable-icon {
+  background-color: inherit;
+  color: inherit;
+  cursor: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+}
+body .clickable-icon:hover {
+  background-color: inherit;
+  color: inherit;
+}
+body .popover .markdown-preview-view {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  box-shadow: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .site-footer {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+}
+body .site-footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+body .nav-header {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+body .nav-files-container .tree-item {
+  background-color: inherit;
+  color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+}
+body .nav-file-title {
+  color: inherit;
+  text-decoration: inherit;
+}
+body .nav-file-title-content {
+  color: inherit;
+  font-family: inherit;
+}
+body .nav-files-container {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .site-body-left-column-site-theme-toggle {
+  background-color: inherit;
+  color: inherit;
+  cursor: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+}
+body .site-body-left-column-site-theme-toggle svg {
+  fill: inherit;
+  stroke: inherit;
+  color: inherit;
+}
+body .view-header-breadcrumb {
+  background-color: inherit;
+  color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .view-header-breadcrumb-separator {
+  color: inherit;
+  font-family: inherit;
+}
+body .page-header .page-title {
+  color: inherit;
+  font-family: inherit;
+  text-shadow: inherit;
+}
+body .internal-embed .markdown-embed {
+  padding-left: inherit;
+  color: inherit;
+}
+body .math-block {
+  background-color: inherit;
+  color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .external-embed {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+}
+body .footnotes {
+  background-color: inherit;
+  border-top: inherit;
+  color: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+}
+body .table-wrapper {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .view-content {
+  background-color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+}
+body figure[data-rehype-pretty-code-figure] {
+  background-color: light-dark(rgb(185, 166, 147), rgb(26, 26, 26));
+  border: 0px solid rgb(83, 79, 78);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  margin: 16px 0px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+  background-color: light-dark(rgb(185, 166, 147), rgb(26, 26, 26));
+  color: light-dark(rgb(30, 30, 30), rgb(234, 218, 217));
+  font-family: monospace;
+  border: 0px solid rgb(83, 79, 78);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  padding: 12px 16px;
+}
+body pre > code [data-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  padding: 0px;
+}
+body pre > code [data-highlighted-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+}
+body pre > code [data-highlighted-chars] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body pre:has(> code.mermaid) {
+  background-color: inherit;
+  border: inherit;
+}
+body .tag-container {
+  background-color: inherit;
+  padding: inherit;
+  margin: inherit;
+  margin-block-end: inherit;
+  margin-block-start: inherit;
+  margin-inline-end: inherit;
+  margin-inline-start: inherit;
+}
+body .tag {
+  background-color: inherit;
+  color: inherit;
+  border: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-start-radius: inherit;
+  border-end-end-radius: inherit;
+  padding: inherit;
+}
+body .search-highlight {
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  border: 0px rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body .markdown-rendered p > strong {
+  color: inherit;
+  font-weight: inherit;
+}

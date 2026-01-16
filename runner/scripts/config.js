@@ -273,1386 +273,6 @@ const sets = {
   // ... other property groups
 };
 
-const body =
-  "body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container > div > div > div.view-content";
-
-const extractionTargets = {
-  general: {
-    file: "general.md",
-    selectors: [
-      // {
-      //   obsidianSelector: `.quartz-icon-selector`,
-      //   publishSelector: null,
-      //   quartzSelector: "div#quartz-body",
-      //   pseudoElement: "",
-      //   properties: ["--quartz-icon-color"],
-      // },
-      {
-        obsidianSelector: null,
-        publishSelector: null,
-        quartzSelector: "div#quartz-root",
-        pseudoElement: "",
-        properties: ["background-color", "color", "font-family", "font-size"],
-      },
-      // links
-      {
-        obsidianSelector: `a.external-link`,
-        publishSelector: `.markdown-rendered a.external-link`,
-        quartzSelector: "a.external",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `a.internal-link`,
-        publishSelector: `.markdown-rendered a.internal-link`,
-        quartzSelector: "a.internal",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      // text
-      {
-        obsidianSelector: `p`,
-        publishSelector: `.markdown-rendered p`,
-        quartzSelector: "p",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `strong`,
-        publishSelector: `strong`,
-        quartzSelector: ".page article p > strong, strong",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `b`,
-        publishSelector: `b`,
-        quartzSelector: ".page article p > b, b",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `em`,
-        publishSelector: `em`,
-        quartzSelector: ".page article p > em, em",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `i`,
-        publishSelector: `i`,
-        quartzSelector: ".page article p > i, i",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `u`,
-        publishSelector: `u`,
-        quartzSelector: ".page article p > u, u",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `s`,
-        publishSelector: `s`,
-        quartzSelector: ".page article p > s, s",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `strong > em`,
-        publishSelector: `strong > em`,
-        quartzSelector: ".page article p > strong > em, strong > em",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `mark`,
-        publishSelector: `.markdown-rendered mark`,
-        quartzSelector: ".text-highlight",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      // Selected state for search
-      {
-        obsidianSelector: `.suggestion-item.is-selected`,
-        publishSelector: `.suggestion-item.is-selected`,
-        quartzSelector:
-          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))",
-        pseudoElement: "",
-        properties: ["background-color", "border-radius", "color"],
-      },
-      {
-        obsidianSelector: `div.suggestion-item`,
-        publishSelector: `div.suggestion-item`,
-        quartzSelector:
-          ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)",
-        pseudoElement: "",
-        properties: ["background-color", "border-radius", "color"],
-      },
-      {
-        obsidianSelector: `del`,
-        publishSelector: `del`,
-        quartzSelector: "del",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `hr`,
-        publishSelector: `.markdown-rendered hr`,
-        quartzSelector: "hr",
-        pseudoElement: "",
-        properties: [
-          "border",
-          "border-color",
-          "border-style",
-          "border-top",
-          "box-shadow",
-          "margin",
-        ],
-      },
-      // tag pills
-      {
-        obsidianSelector: `div.multi-select-pill`,
-        publishSelector: `div.multi-select-pill`,
-        quartzSelector:
-          "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag",
-        pseudoElement: "",
-        properties: sets.pill,
-      },
-      {
-        obsidianSelector: `div.multi-select-pill > div.multi-select-pill-content`,
-        publishSelector: `div.multi-select-pill > div.multi-select-pill-content`,
-        quartzSelector: "a.internal.tag-link::before",
-        pseudoElement: "",
-        properties: ["color"],
-      },
-      // list items
-      {
-        obsidianSelector: `ul.has-list-bullet > li`,
-        publishSelector: `.markdown-rendered ul > li`,
-        quartzSelector: "ul > li",
-        pseudoElement: "",
-        properties: sets.list,
-      },
-      {
-        obsidianSelector: `ul.has-list-bullet > li > .list-bullet`,
-        publishSelector: `.markdown-rendered ul > li::marker`,
-        quartzSelector: "ul > li::marker",
-        pseudoElement: "::after",
-        properties: [
-          "background-color",
-          "border",
-          "border-color",
-          "border-radius",
-          "color",
-          "content",
-          "pointer-events",
-          "transform",
-          "transition",
-        ],
-      },
-      {
-        obsidianSelector: `ol > li`,
-        publishSelector: `.markdown-rendered ol > li`,
-        quartzSelector: "ol > li",
-        pseudoElement: "",
-        properties: sets.list,
-      },
-      {
-        obsidianSelector: `ol > li`,
-        publishSelector: `.markdown-rendered ol > li::marker`,
-        quartzSelector: "ol > li::marker",
-        pseudoElement: "::marker",
-        properties: ["color"],
-      },
-      // code blocks
-      {
-        obsidianSelector: `p > code`,
-        publishSelector: `.markdown-rendered code`,
-        quartzSelector: "code",
-        pseudoElement: "",
-        properties: [
-          "background-color",
-          "border",
-          "border-color",
-          "border-radius",
-          "color",
-          "font-family",
-          //"font-size",
-          "padding",
-        ],
-      },
-      {
-        obsidianSelector: `pre > code`,
-        publishSelector: `.markdown-rendered pre > code`,
-        quartzSelector: "pre > code",
-        pseudoElement: "",
-        properties: [
-          "background-color",
-          "border",
-          "border-color",
-          "border-radius",
-          "overflow-x",
-          "padding",
-          "white-space",
-        ],
-      },
-      {
-        obsidianSelector: `pre:has(> code)`,
-        publishSelector: `:not(pre) > code[class*="language-"], pre[class*="language-"]`,
-        quartzSelector: "pre:has(> code)",
-        pseudoElement: "",
-        properties: [
-          "background-color",
-          "border",
-          "border-color",
-          "border-radius",
-          "overflow-x",
-          "padding",
-          "white-space",
-        ],
-      },
-      // checkboxes
-      {
-        obsidianSelector: `ul.contains-task-list > li.task-list-item > .task-list-item-checkbox`,
-        publishSelector: `ul.contains-task-list > li.task-list-item > .task-list-item-checkbox`,
-        quartzSelector: "input[type=checkbox]",
-        pseudoElement: "",
-        properties: [
-          "appearance",
-          "border",
-          "border-color",
-          "border-radius",
-          "padding",
-          "margin",
-          "width",
-          "margin-inline-start",
-          "margin-inline-end",
-          "transition",
-          "position",
-          "top",
-        ],
-      },
-      {
-        obsidianSelector: `ul.contains-task-list > li.task-list-item`,
-        publishSelector: `ul.contains-task-list > li.task-list-item`,
-        quartzSelector: "ul > li.task-list-item",
-        pseudoElement: "",
-        properties: ["list-style", "text-align", "display"],
-      },
-      {
-        obsidianSelector: `ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked`,
-        publishSelector: `ul.contains-task-list > li.task-list-item > input[type=checkbox]:checked`,
-        quartzSelector: "input[type=checkbox]:checked:after",
-        pseudoElement: "::after",
-        properties: [
-          "content",
-          "top",
-          "inset-inline-start",
-          "position",
-          "width",
-          "display",
-          "background-color",
-          "-webkit-mask-position",
-          "-webkit-mask-size",
-          "-webkit-mask-repeat",
-          "-webkit-mask-image",
-        ],
-      },
-      {
-        obsidianSelector: `ul > li.task-list-item[data-task="x"]`,
-        publishSelector: `ul > li.task-list-item[data-task="x"]`,
-        quartzSelector: ".page article li:has(>input[type=checkbox]:checked)",
-        pseudoElement: "",
-        properties: ["color", "text-decoration", "text-decoration-color"],
-      },
-      // blockquote
-      {
-        obsidianSelector: `blockquote`,
-        publishSelector: `.markdown-rendered blockquote`,
-        quartzSelector: "blockquote",
-        pseudoElement: "",
-        properties: sets.blockquote,
-      },
-      // footnotes
-      {
-        obsidianSelector: `.footnote-backref`,
-        publishSelector: `.footnote-backref`,
-        quartzSelector: ".data-footnote-backref",
-        pseudoElement: "",
-        properties: ["color", "text-decoration"],
-      },
-      // search
-      {
-        obsidianSelector: `.block-language-dataviewjs input[type="search"]`,
-        publishSelector: `.site-body-left-column input.search-bar`,
-        quartzSelector: ".search > .search-button",
-        pseudoElement: "",
-        properties: [
-          "background-color",
-          "border",
-          "border-color",
-          "border-radius",
-          "color",
-          "font-family",
-          //"font-size",
-          //"padding",
-        ],
-      },
-      {
-        obsidianSelector: `.prompt`,
-        publishSelector: `.search-results`,
-        quartzSelector: ".search > .search-container > .search-space",
-        pseudoElement: "",
-        properties: [
-          "background-color",
-          "border",
-          "border-radius",
-          "box-shadow",
-        ],
-      },
-      {
-        obsidianSelector: `.prompt > .prompt-input-container > input`,
-        publishSelector: null,
-        quartzSelector: ".search > .search-container > .search-space > input",
-        pseudoElement: "",
-        properties: [
-          "background-color",
-          "border",
-          "border-bottom",
-          "border-radius",
-          "box-shadow",
-        ],
-      },
-      {
-        obsidianSelector: `.prompt > .prompt-results`,
-        publishSelector: `.search-results > *`,
-        quartzSelector: ".search > .search-container > .search-space > *",
-        pseudoElement: "",
-        properties: sets.text,
-      },
-      {
-        obsidianSelector: `div.prompt`,
-        publishSelector: `div.search-results`,
-        quartzSelector:
-          ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results",
-        pseudoElement: "",
-        properties: ["border-color"],
-      },
-      {
-        obsidianSelector: `div.prompt .prompt-results .suggestion-item`,
-        publishSelector: `.search-results .suggestion-item`,
-        quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .results-container",
-        pseudoElement: "",
-        properties: ["color"],
-      },
-      {
-        obsidianSelector: `div.prompt div.prompt-results .suggestion-item`,
-        publishSelector: `div.search-results .suggestion-item`,
-        quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .results-container .result-card",
-        pseudoElement: "",
-        properties: ["border-color"],
-      },
-      {
-        obsidianSelector: `div.prompt .prompt-results .suggestion-item.is-selected`,
-        publishSelector: `.search-results .suggestion-item.is-selected`,
-        quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))",
-        pseudoElement: "",
-        properties: ["color", "font-weight", "background-color"],
-      },
-      {
-        obsidianSelector: `div.prompt div.prompt-results .suggestion-item.is-selected`,
-        publishSelector: `div.search-results .suggestion-item.is-selected`,
-        quartzSelector:
-          ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description",
-        pseudoElement: "",
-        properties: ["color"],
-      },
-    ],
-  },
-  headings: {
-    file: "headings.md",
-    selectors: [
-      {
-        obsidianSelector: `h1`,
-        publishSelector: `.published-container .markdown-rendered h1`,
-        quartzSelector: "h1",
-        pseudoElement: "",
-        properties: sets.headings,
-      },
-      {
-        obsidianSelector: `h2`,
-        publishSelector: `.published-container .markdown-rendered h2`,
-        quartzSelector: "h2",
-        pseudoElement: "",
-        properties: sets.headings,
-      },
-      {
-        obsidianSelector: `h3`,
-        publishSelector: `.published-container .markdown-rendered h3`,
-        quartzSelector: "h3",
-        pseudoElement: "",
-        properties: sets.headings,
-      },
-      {
-        obsidianSelector: `h4`,
-        publishSelector: `.published-container .markdown-rendered h4`,
-        quartzSelector: "h4",
-        pseudoElement: "",
-        properties: sets.headings,
-      },
-      {
-        obsidianSelector: `h5`,
-        publishSelector: `.published-container .markdown-rendered h5`,
-        quartzSelector: "h5",
-        pseudoElement: "",
-        properties: sets.headings,
-      },
-      {
-        obsidianSelector: `h6`,
-        publishSelector: `.published-container .markdown-rendered h6`,
-        quartzSelector: "h6",
-        pseudoElement: "",
-        properties: sets.headings,
-      },
-      // outline
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item > .tree-item-self`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item > .tree-item-self`,
-        quartzSelector: "li.depth-0",
-        pseudoElement: "",
-        properties: [/*"font-size", "line-height", */ "font-weight"],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item > .tree-item-children`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item > .tree-item-children`,
-        quartzSelector: "li.depth-0 + li.depth-1",
-        pseudoElement: "",
-        properties: [
-          "margin-inline-start",
-          "padding-inline-start",
-          "border-inline-start",
-        ],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item > .tree-item-self`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item > .tree-item-self`,
-        quartzSelector: "li.depth-1",
-        pseudoElement: "",
-        properties: [/*"font-size", "line-height", */ "font-weight"],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item > .tree-item-children`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item > .tree-item-children`,
-        quartzSelector: "li.depth-1 + li.depth-2",
-        pseudoElement: "",
-        properties: [
-          "margin-inline-start",
-          "padding-inline-start",
-          "border-inline-start",
-        ],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item > .tree-item-self`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-self`,
-        quartzSelector: "li.depth-2",
-        pseudoElement: "",
-        properties: [/*"font-size", "line-height", */ "font-weight"],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item > .tree-item-children`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item .tree-item > .tree-item-children`,
-        quartzSelector: "li.depth-2 + li.depth-3",
-        pseudoElement: "",
-        properties: [
-          "margin-inline-start",
-          "padding-inline-start",
-          "border-inline-start",
-        ],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item > .tree-item-self`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-self`,
-        quartzSelector: "li.depth-3",
-        pseudoElement: "",
-        properties: [/*"font-size", "line-height", */ "font-weight"],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item > .tree-item-children`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item > .tree-item-children`,
-        quartzSelector: "li.depth-3 + li.depth-4",
-        pseudoElement: "",
-        properties: [
-          "margin-inline-start",
-          "padding-inline-start",
-          "border-inline-start",
-        ],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self`,
-        quartzSelector: "li.depth-4",
-        pseudoElement: "",
-        properties: [/*"font-size", "line-height", */ "font-weight"],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children`,
-        quartzSelector: "li.depth-4 + li.depth-5",
-        pseudoElement: "",
-        properties: [
-          "margin-inline-start",
-          "padding-inline-start",
-          "border-inline-start",
-        ],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-self`,
-        quartzSelector: "li.depth-5",
-        pseudoElement: "",
-        properties: [/*"font-size", "line-height", */ "font-weight"],
-      },
-      {
-        obsidianSelector: `.block-language-dataviewjs .view-content .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children`,
-        publishSelector: `.outline-view-outer .outline-view .tree-item .tree-item .tree-item .tree-item .tree-item .tree-item > .tree-item-children`,
-        quartzSelector: "li.depth-5 + li.depth-6",
-        pseudoElement: "",
-        properties: [
-          "margin-inline-start",
-          "padding-inline-start",
-          "border-inline-start",
-        ],
-      },
-      // table
-    ],
-  },
-  callouts: {
-    file: "callouts.md",
-    selectors: [
-      // scrollbars
-      {
-        obsidianSelector: `.markdown-preview-sizer`,
-        publishSelector: `.markdown-preview-sizer`,
-        quartzSelector: "::-webkit-scrollbar",
-        pseudoElement: "::-webkit-scrollbar",
-        properties: ["background-color"],
-      },
-      {
-        obsidianSelector: `.markdown-preview-sizer`,
-        publishSelector: `.markdown-preview-sizer`,
-        quartzSelector: "::-webkit-scrollbar-thumb",
-        pseudoElement: "::-webkit-scrollbar-thumb",
-        properties: [
-          "background-color",
-          "border-radius",
-          "border-width",
-          "border",
-          "border-color",
-          "box-shadow",
-        ],
-      },
-      // note
-      {
-        obsidianSelector: `.callout[data-callout="note"]`,
-        publishSelector: `.callout[data-callout="note"]`,
-        // quartzSelector: ".callout[data-callout]",
-        quartzSelector: ".callout",
-        pseudoElement: "",
-        properties: [
-          "--callout-color",
-          //"--callout-icon",
-          //"background-color",
-          "border-style",
-          //"border-color",
-          "border-width",
-          "border-radius",
-          "mix-blend-mode",
-          "padding",
-        ],
-      },
-      /*
-      {
-        obsidianSelector: `div.callout-title`,
-        publishSelector: `.callout-title`,
-        // quartzSelector: ".callout[data-callout] .callout-title",
-        quartzSelector: ".callout .callout-title",
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `.callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon`,
-        publishSelector: `.callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon`,
-        // quartzSelector: ".callout[data-callout] .callout-title .callout-icon",
-        quartzSelector: ".callout .callout-title .callout-icon",
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="note"] > .callout-title`,
-        publishSelector: `.callout[data-callout="note"] > .callout-title`,
-        // quartzSelector:
-        // ".callout[data-callout] .callout-title > .callout-title-inner > p",
-        quartzSelector: ".callout .callout-title > .callout-title-inner > p",
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="note"] > .callout-content`,
-        publishSelector: `.callout[data-callout="note"] > .callout-content`,
-        // quartzSelector: ".callout[data-callout] > .callout-content",
-        quartzSelector: ".callout > .callout-content",
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // note
-      {
-        obsidianSelector: `.callout[data-callout="note"]`,
-        publishSelector: `.callout[data-callout="note"]`,
-        quartzSelector: `.callout[data-callout="note"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="note"] > .callout-title`,
-        publishSelector: `.callout[data-callout="note"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="note"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-pencil.svg-icon`,
-        publishSelector: `.callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="note"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="note"] > .callout-title`,
-        publishSelector: `.callout[data-callout="note"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="note"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="note"] > .callout-content`,
-        publishSelector: `.callout[data-callout="note"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="note"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // abstract
-      {
-        obsidianSelector: `.callout[data-callout="abstract"]`,
-        publishSelector: `.callout[data-callout="abstract"]`,
-        quartzSelector: `.callout[data-callout="abstract"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="abstract"] > .callout-title`,
-        publishSelector: `.callout[data-callout="abstract"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="abstract"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-clipboard-list.svg-icon`,
-        publishSelector: `.callout[data-callout="abstract"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="abstract"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="abstract"] > .callout-title`,
-        publishSelector: `.callout[data-callout="abstract"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="abstract"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="abstract"] > .callout-content`,
-        publishSelector: `.callout[data-callout="abstract"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="abstract"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // info
-      {
-        obsidianSelector: `.callout[data-callout="info"]`,
-        publishSelector: `.callout[data-callout="info"]`,
-        quartzSelector: `.callout[data-callout="info"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="info"] > .callout-title`,
-        publishSelector: `.callout[data-callout="info"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="info"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-info.svg-icon`,
-        publishSelector: `.callout[data-callout="info"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="info"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="info"] > .callout-title`,
-        publishSelector: `.callout[data-callout="info"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="info"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="info"] > .callout-content`,
-        publishSelector: `.callout[data-callout="info"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="info"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // todo
-      {
-        obsidianSelector: `.callout[data-callout="todo"]`,
-        publishSelector: `.callout[data-callout="todo"]`,
-        quartzSelector: `.callout[data-callout="todo"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="todo"] > .callout-title`,
-        publishSelector: `.callout[data-callout="todo"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="todo"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-check-circle-2.svg-icon`,
-        publishSelector: `.callout[data-callout="todo"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="todo"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="todo"] > .callout-title`,
-        publishSelector: `.callout[data-callout="todo"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="todo"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="todo"] > .callout-content`,
-        publishSelector: `.callout[data-callout="todo"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="todo"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // tip
-      {
-        obsidianSelector: `.callout[data-callout="tip"]`,
-        publishSelector: `.callout[data-callout="tip"]`,
-        quartzSelector: `.callout[data-callout="tip"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="tip"] > .callout-title`,
-        publishSelector: `.callout[data-callout="tip"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="tip"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-flame.svg-icon`,
-        publishSelector: `.callout[data-callout="tip"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="tip"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="tip"] > .callout-title`,
-        publishSelector: `.callout[data-callout="tip"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="tip"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="tip"] > .callout-content`,
-        publishSelector: `.callout[data-callout="tip"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="tip"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // success
-      {
-        obsidianSelector: `.callout[data-callout="success"]`,
-        publishSelector: `.callout[data-callout="success"]`,
-        quartzSelector: `.callout[data-callout="success"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="success"] > .callout-title`,
-        publishSelector: `.callout[data-callout="success"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="success"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-check.svg-icon`,
-        publishSelector: `.callout[data-callout="success"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="success"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="success"] > .callout-title`,
-        publishSelector: `.callout[data-callout="success"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="success"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="success"] > .callout-content`,
-        publishSelector: `.callout[data-callout="success"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="success"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // question
-      {
-        obsidianSelector: `.callout[data-callout="question"]`,
-        publishSelector: `.callout[data-callout="question"]`,
-        quartzSelector: `.callout[data-callout="question"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="question"] > .callout-title`,
-        publishSelector: `.callout[data-callout="question"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="question"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-help-circle.svg-icon`,
-        publishSelector: `.callout[data-callout="question"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="question"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="question"] > .callout-title`,
-        publishSelector: `.callout[data-callout="question"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="question"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="question"] > .callout-content`,
-        publishSelector: `.callout[data-callout="question"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="question"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // warning
-      {
-        obsidianSelector: `.callout[data-callout="warning"]`,
-        publishSelector: `.callout[data-callout="warning"]`,
-        quartzSelector: `.callout[data-callout="warning"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="warning"] > .callout-title`,
-        publishSelector: `.callout[data-callout="warning"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="warning"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-alert-triangle.svg-icon`,
-        publishSelector: `.callout[data-callout="warning"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="warning"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="warning"] > .callout-title`,
-        publishSelector: `.callout[data-callout="warning"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="warning"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="warning"] > .callout-content`,
-        publishSelector: `.callout[data-callout="warning"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="warning"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // danger
-      {
-        obsidianSelector: `.callout[data-callout="danger"]`,
-        publishSelector: `.callout[data-callout="danger"]`,
-        quartzSelector: `.callout[data-callout="danger"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="danger"] > .callout-title`,
-        publishSelector: `.callout[data-callout="danger"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="danger"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-zap.svg-icon`,
-        publishSelector: `.callout[data-callout="danger"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="danger"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="danger"] > .callout-title`,
-        publishSelector: `.callout[data-callout="danger"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="danger"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="danger"] > .callout-content`,
-        publishSelector: `.callout[data-callout="danger"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="danger"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // failure
-      {
-        obsidianSelector: `.callout[data-callout="failure"]`,
-        publishSelector: `.callout[data-callout="failure"]`,
-        quartzSelector: `.callout[data-callout="failure"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="failure"] > .callout-title`,
-        publishSelector: `.callout[data-callout="failure"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="failure"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-x.svg-icon`,
-        publishSelector: `.callout[data-callout="failure"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="failure"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="failure"] > .callout-title`,
-        publishSelector: `.callout[data-callout="failure"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="failure"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="failure"] > .callout-content`,
-        publishSelector: `.callout[data-callout="failure"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="failure"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // bug
-      {
-        obsidianSelector: `.callout[data-callout="bug"]`,
-        publishSelector: `.callout[data-callout="bug"]`,
-        quartzSelector: `.callout[data-callout="bug"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="bug"] > .callout-title`,
-        publishSelector: `.callout[data-callout="bug"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="bug"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-bug.svg-icon`,
-        publishSelector: `.callout[data-callout="bug"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="bug"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="bug"] > .callout-title`,
-        publishSelector: `.callout[data-callout="bug"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="bug"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="bug"] > .callout-content`,
-        publishSelector: `.callout[data-callout="bug"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="bug"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // example
-      {
-        obsidianSelector: `.callout[data-callout="example"]`,
-        publishSelector: `.callout[data-callout="example"]`,
-        quartzSelector: `.callout[data-callout="example"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="example"] > .callout-title`,
-        publishSelector: `.callout[data-callout="example"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="example"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-list.svg-icon`,
-        publishSelector: `.callout[data-callout="example"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="example"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="example"] > .callout-title`,
-        publishSelector: `.callout[data-callout="example"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="example"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="example"] > .callout-content`,
-        publishSelector: `.callout[data-callout="example"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="example"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-      // quote
-      {
-        obsidianSelector: `.callout[data-callout="quote"]`,
-        publishSelector: `.callout[data-callout="quote"]`,
-        quartzSelector: `.callout[data-callout="quote"]`,
-        pseudoElement: "",
-        properties: sets.callouts.container,
-      },
-      /*
-      {
-        obsidianSelector: `.callout[data-callout="quote"] > .callout-title`,
-        publishSelector: `.callout[data-callout="quote"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="quote"] .callout-title`,
-        pseudoElement: "",
-        properties: sets.callouts.title,
-      },
-      */
-      {
-        obsidianSelector: `svg.lucide-quote.svg-icon`,
-        publishSelector: `.callout[data-callout="quote"] > .callout-title > .callout-icon > svg.svg-icon`,
-        quartzSelector: `.callout[data-callout="quote"] .callout-title .callout-icon`,
-        pseudoElement: "",
-        properties: sets.callouts.icon,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="quote"] > .callout-title`,
-        publishSelector: `.callout[data-callout="quote"] > .callout-title`,
-        quartzSelector: `.callout[data-callout="quote"] .callout-title > .callout-title-inner > p`,
-        pseudoElement: "",
-        properties: sets.callouts.titleInner,
-      },
-      {
-        obsidianSelector: `.callout[data-callout="quote"] > .callout-content`,
-        publishSelector: `.callout[data-callout="quote"] > .callout-content`,
-        quartzSelector: `.callout[data-callout="quote"] > .callout-content`,
-        pseudoElement: "",
-        properties: sets.callouts.content,
-      },
-    ],
-  },
-  integrations: {
-    file: "integrations.md",
-    selectors: [
-      // mermaid
-      {
-        obsidianSelector: `.mermaid > svg`,
-        publishSelector: `.mermaid > svg`,
-        quartzSelector: "code.mermaid > svg",
-        pseudoElement: "",
-        properties: sets.mermaid,
-      },
-      // mathjax
-      {
-        obsidianSelector: `.math-block > mjx-container.MathJax`,
-        publishSelector: `.math-block > mjx-container.MathJax`,
-        quartzSelector: ".katex-display > .katex",
-        pseudoElement: "",
-        properties: sets.math,
-      },
-      {
-        obsidianSelector: `.math-block > mjx-container.MathJax`,
-        publishSelector: `div.math-block > mjx-container.MathJax`,
-        quartzSelector: ".katex-display > .katex > .katex-html",
-        pseudoElement: "",
-        properties: ["font-family"],
-      },
-      {
-        obsidianSelector: `.math-inline > mjx-container.MathJax > mjx-math`,
-        publishSelector: `.math-inline > mjx-container.MathJax > mjx-math`,
-        quartzSelector: ".katex > .katex-html",
-        pseudoElement: "",
-        properties: ["font-family"],
-      },
-      // graph
-      // TODO: add Publish selector + colors
-      {
-        obsidianSelector: `span.quartz-graph-target`,
-        publishSelector: null,
-        quartzSelector: "div.graph",
-        pseudoElement: "",
-        properties: [
-          "--quartz-graph-text",
-          "--quartz-graph-line",
-          "--quartz-graph-node",
-          "--quartz-graph-node-unresolved",
-          "--quartz-graph-node-focused",
-          "--quartz-graph-node-tag",
-          "--quartz-graph-node-attachment",
-        ],
-      },
-      // explorer
-      {
-        obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-file-title[data-path="callouts.md"]`,
-        publishSelector: `.nav-view-outer .tree-item-self a`,
-        quartzSelector: ".explorer .explorer-content ul.explorer-ul li a",
-        pseudoElement: "",
-        properties: [
-          "color",
-          "cursor",
-          "font-family",
-          //"font-size",
-          "font-weight",
-          //"line-height",
-          "text-decoration",
-        ],
-      },
-      {
-        // active
-        obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-file-title[data-path="integrations.md"]`,
-        publishSelector: `.nav-view-outer .tree-item-self.mod-active`,
-        quartzSelector:
-          ".explorer .explorer-content ul.explorer-ul li:has(> .active)",
-        pseudoElement: "",
-        properties: ["background-color", "color", "cursor"],
-      },
-      {
-        // closed
-        obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-folder-title[data-path="folder/collapsed"]`,
-        publishSelector: `.nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self`,
-        quartzSelector:
-          ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container",
-        pseudoElement: "",
-        properties: [
-          "color",
-          "cursor",
-          "font-family",
-          //"font-size",
-          "font-weight",
-          //"line-height",
-          "text-decoration",
-        ],
-      },
-      {
-        // open
-        obsidianSelector: `.block-language-dataviewjs .nav-files-container .nav-folder-title[data-path="folder"]`,
-        publishSelector: `.nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self`,
-        quartzSelector:
-          ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container",
-        pseudoElement: "",
-        properties: [
-          "color",
-          "cursor",
-          "font-family",
-          //"font-size",
-          "font-weight",
-          //"line-height",
-          "text-decoration",
-        ],
-      },
-    ],
-  },
-  tables: {
-    file: "tables.md",
-    selectors: [
-      {
-        obsidianSelector: `table`,
-        publishSelector: `.markdown-rendered table`,
-        quartzSelector: "table",
-        pseudoElement: "",
-        properties: sets.table,
-      },
-      {
-        obsidianSelector: `thead`,
-        publishSelector: `.markdown-rendered thead`,
-        quartzSelector: "thead",
-        pseudoElement: "",
-        properties: ["background-color", ...defaults.border],
-      },
-      {
-        obsidianSelector: `th`,
-        publishSelector: `.markdown-rendered th`,
-        quartzSelector: "th",
-        pseudoElement: "",
-        properties: sets.tableHeader,
-      },
-      {
-        obsidianSelector: `td`,
-        publishSelector: `.markdown-rendered td`,
-        quartzSelector: "td",
-        pseudoElement: "",
-        properties: sets.tableCell,
-      },
-      {
-        obsidianSelector: `tr`,
-        publishSelector: `.markdown-rendered tr`,
-        quartzSelector: "tr",
-        pseudoElement: "",
-        properties: ["background-color", ...defaults.border],
-      },
-      {
-        obsidianSelector: `tbody tr:nth-child(even)`,
-        publishSelector: `.markdown-rendered tbody tr:nth-child(even)`,
-        quartzSelector: "tbody tr:nth-child(even)",
-        pseudoElement: "",
-        properties: ["background-color"],
-      },
-    ],
-  },
-  media: {
-    file: "media.md",
-    selectors: [
-      {
-        obsidianSelector: `img`,
-        publishSelector: `.markdown-rendered img`,
-        quartzSelector: "img",
-        pseudoElement: "",
-        properties: sets.image,
-      },
-      {
-        obsidianSelector: `figure`,
-        publishSelector: `.markdown-rendered figure`,
-        quartzSelector: "figure",
-        pseudoElement: "",
-        properties: sets.figure,
-      },
-      {
-        obsidianSelector: `figcaption`,
-        publishSelector: `.markdown-rendered figcaption`,
-        quartzSelector: "figcaption",
-        pseudoElement: "",
-        properties: sets.figcaption,
-      },
-      {
-        obsidianSelector: `details`,
-        publishSelector: `details`,
-        quartzSelector: "details",
-        pseudoElement: "",
-        properties: sets.details,
-      },
-      {
-        obsidianSelector: `summary`,
-        publishSelector: `summary`,
-        quartzSelector: "summary",
-        pseudoElement: "",
-        properties: sets.summary,
-      },
-      {
-        obsidianSelector: `kbd`,
-        publishSelector: `kbd`,
-        quartzSelector: "kbd",
-        pseudoElement: "",
-        properties: sets.kbd,
-      },
-      {
-        obsidianSelector: `progress`,
-        publishSelector: `progress`,
-        quartzSelector: "progress",
-        pseudoElement: "",
-        properties: sets.progress,
-      },
-    ],
-  },
-  embeds: {
-    file: "embeds.md",
-    selectors: [
-      {
-        obsidianSelector: `.internal-embed`,
-        publishSelector: `.internal-embed`,
-        quartzSelector: ".transclude",
-        pseudoElement: "",
-        properties: sets.embed,
-      },
-      {
-        obsidianSelector: `.markdown-embed`,
-        publishSelector: `.markdown-embed`,
-        quartzSelector: ".transclude-inner",
-        pseudoElement: "",
-        properties: sets.embed,
-      },
-      {
-        obsidianSelector: `.frontmatter-container`,
-        publishSelector: `.frontmatter-container`,
-        quartzSelector: ".frontmatter",
-        pseudoElement: "",
-        properties: sets.frontmatter,
-      },
-      {
-        obsidianSelector: `.metadata-container`,
-        publishSelector: `.metadata-container`,
-        quartzSelector: ".metadata",
-        pseudoElement: "",
-        properties: sets.frontmatter,
-      },
-    ],
-  },
-};
-
 export const config = [
   {
     obsidianSelector: `div.quartz-icon-selector`,
@@ -3135,5 +1755,450 @@ export const config = [
       //"line-height",
       "text-decoration",
     ],
+  },
+  // === TABLE OF CONTENTS ===
+  {
+    obsidianSelector: `.outline-view-outer .outline-view`,
+    publishSelector: `.outline-view-outer .outline-view`,
+    quartzSelector: ".toc",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border, ...defaults.padding],
+  },
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-self`,
+    publishSelector: `.outline-view-outer .tree-item-self`,
+    quartzSelector: "button.toc-header",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      "cursor",
+      "font-family",
+      "font-weight",
+    ],
+  },
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-self`,
+    publishSelector: `.outline-view-outer .tree-item-self`,
+    quartzSelector: "button.toc-header h3",
+    pseudoElement: "",
+    properties: ["color", "font-family", "font-weight"],
+  },
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-inner`,
+    publishSelector: `.outline-view-outer .tree-item-inner`,
+    quartzSelector: "ul.toc-content.overflow > li > a",
+    pseudoElement: "",
+    properties: ["color", "font-family", "font-weight", "text-decoration"],
+  },
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-inner:hover`,
+    publishSelector: `.outline-view-outer .tree-item-inner:hover`,
+    quartzSelector: "ul.toc-content.overflow > li > a:hover",
+    pseudoElement: "",
+    properties: ["color", "text-decoration"],
+  },
+  // === GRAPH COMPONENT ===
+  {
+    obsidianSelector: `.graph-view-container`,
+    publishSelector: `.graph-view-container`,
+    quartzSelector: ".graph",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  {
+    obsidianSelector: `.graph-view-container`,
+    publishSelector: `.graph-view-container`,
+    quartzSelector: ".graph > h3",
+    pseudoElement: "",
+    properties: ["color", "font-family", "font-weight"],
+  },
+  {
+    obsidianSelector: `.graph-view-container .graph-controls`,
+    publishSelector: `.graph-view-container`,
+    quartzSelector: ".graph > .graph-outer",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  {
+    obsidianSelector: `.clickable-icon.graph-controls-button`,
+    publishSelector: `.clickable-icon`,
+    quartzSelector: ".graph > .graph-outer > .global-graph-icon",
+    pseudoElement: "",
+    properties: ["background-color", "color", "cursor", ...defaults.border],
+  },
+  {
+    obsidianSelector: `.clickable-icon.graph-controls-button:hover`,
+    publishSelector: `.clickable-icon:hover`,
+    quartzSelector: ".graph > .graph-outer > .global-graph-icon:hover",
+    pseudoElement: "",
+    properties: ["background-color", "color"],
+  },
+  {
+    obsidianSelector: `.graph-view-container`,
+    publishSelector: `.graph-view-container`,
+    quartzSelector: ".graph > .global-graph-outer",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  {
+    obsidianSelector: `.graph-view-container .graph-controls`,
+    publishSelector: `.graph-view-container`,
+    quartzSelector: ".graph > .global-graph-outer > .global-graph-container",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  // === POPOVER COMPONENT ===
+  {
+    obsidianSelector: `.popover.hover-popover`,
+    publishSelector: `.popover`,
+    quartzSelector: ".popover",
+    pseudoElement: "",
+    properties: sets.tooltip,
+  },
+  {
+    obsidianSelector: `.popover.hover-popover .markdown-preview-view`,
+    publishSelector: `.popover .markdown-preview-view`,
+    quartzSelector: ".popover > .popover-inner",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      "font-family",
+      "box-shadow",
+      ...defaults.border,
+      ...defaults.padding,
+    ],
+  },
+  // === FOOTER COMPONENT ===
+  {
+    obsidianSelector: `.status-bar`,
+    publishSelector: `.site-footer`,
+    quartzSelector: "footer",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      "font-family",
+      ...defaults.border,
+    ],
+  },
+  {
+    obsidianSelector: `.status-bar-item`,
+    publishSelector: `.site-footer a`,
+    quartzSelector: "footer ul li a",
+    pseudoElement: "",
+    properties: ["color", "text-decoration"],
+  },
+  // === RECENT NOTES COMPONENT ===
+  {
+    obsidianSelector: `.nav-header`,
+    publishSelector: `.nav-header`,
+    quartzSelector: ".recent-notes > h3",
+    pseudoElement: "",
+    properties: ["color", "font-family", "font-weight"],
+  },
+  {
+    obsidianSelector: `.nav-files-container .tree-item`,
+    publishSelector: `.nav-files-container .tree-item`,
+    quartzSelector: ".recent-notes > ul.recent-ul > li",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      ...defaults.border,
+      ...defaults.padding,
+    ],
+  },
+  {
+    obsidianSelector: `.nav-file-title`,
+    publishSelector: `.nav-file-title`,
+    quartzSelector:
+      ".recent-notes > ul.recent-ul > li .section > .desc > h3 > a",
+    pseudoElement: "",
+    properties: ["color", "text-decoration"],
+  },
+  {
+    obsidianSelector: `.nav-file-title-content`,
+    publishSelector: `.nav-file-title-content`,
+    quartzSelector: ".recent-notes > ul.recent-ul > li .section > .meta",
+    pseudoElement: "",
+    properties: ["color", "font-family"],
+  },
+  // === LIST PAGE COMPONENT ===
+  {
+    obsidianSelector: `.nav-files-container`,
+    publishSelector: `.nav-files-container`,
+    quartzSelector: "ul.section-ul",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border, ...defaults.padding],
+  },
+  {
+    obsidianSelector: `.nav-files-container .tree-item`,
+    publishSelector: `.nav-files-container .tree-item`,
+    quartzSelector: "li.section-li",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border, ...defaults.margin],
+  },
+  {
+    obsidianSelector: `.nav-file-title`,
+    publishSelector: `.nav-file-title`,
+    quartzSelector: "li.section-li > .section > .desc > h3 > a",
+    pseudoElement: "",
+    properties: ["color", "text-decoration"],
+  },
+  {
+    obsidianSelector: `.nav-file-title-content`,
+    publishSelector: `.nav-file-title-content`,
+    quartzSelector: "li.section-li > .section .meta",
+    pseudoElement: "",
+    properties: ["color", "font-family"],
+  },
+  // === DARKMODE BUTTON ===
+  {
+    obsidianSelector: `.clickable-icon`,
+    publishSelector: `.site-body-left-column-site-theme-toggle`,
+    quartzSelector: ".darkmode",
+    pseudoElement: "",
+    properties: ["background-color", "color", "cursor", ...defaults.border],
+  },
+  {
+    obsidianSelector: `.clickable-icon svg`,
+    publishSelector: `.site-body-left-column-site-theme-toggle svg`,
+    quartzSelector: ".darkmode svg",
+    pseudoElement: "",
+    properties: ["fill", "stroke", "color"],
+  },
+  // === BREADCRUMBS COMPONENT ===
+  {
+    obsidianSelector: `.view-header-breadcrumb`,
+    publishSelector: `.view-header-breadcrumb`,
+    quartzSelector: ".breadcrumb-container",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      ...defaults.border,
+      ...defaults.padding,
+    ],
+  },
+  {
+    obsidianSelector: `.view-header-breadcrumb-separator`,
+    publishSelector: `.view-header-breadcrumb-separator`,
+    quartzSelector: ".breadcrumb-element p",
+    pseudoElement: "",
+    properties: ["color", "font-family"],
+  },
+  // === NAVIGATION PROGRESS BAR ===
+  {
+    obsidianSelector: `.status-bar`,
+    publishSelector: null,
+    quartzSelector: ".navigation-progress",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  // === PAGE TITLE ===
+  {
+    obsidianSelector: `.view-header-title`,
+    publishSelector: `.page-header .page-title`,
+    quartzSelector: ".page-header h2.page-title",
+    pseudoElement: "",
+    properties: sets.headings,
+  },
+  // === TRANSCLUDE / EMBED ===
+  {
+    obsidianSelector: `.internal-embed.is-loaded`,
+    publishSelector: `.internal-embed`,
+    quartzSelector: ".transclude",
+    pseudoElement: "",
+    properties: sets.embed,
+  },
+  {
+    obsidianSelector: `.internal-embed.is-loaded .markdown-embed`,
+    publishSelector: `.internal-embed .markdown-embed`,
+    quartzSelector: ".transclude ul",
+    pseudoElement: "",
+    properties: ["padding-left", "color"],
+  },
+  // === KATEX / MATH DISPLAY ===
+  {
+    obsidianSelector: `.math-block`,
+    publishSelector: `.math-block`,
+    quartzSelector: ".katex-display",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      ...defaults.border,
+      ...defaults.padding,
+    ],
+  },
+  // === EXTERNAL EMBED (YouTube, PDF) ===
+  {
+    obsidianSelector: `.external-embed`,
+    publishSelector: `.external-embed`,
+    quartzSelector: ".external-embed.youtube",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  {
+    obsidianSelector: `.external-embed`,
+    publishSelector: `.external-embed`,
+    quartzSelector: "iframe.pdf",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  // === FOOTNOTES SECTION ===
+  {
+    obsidianSelector: `.footnotes`,
+    publishSelector: `.footnotes`,
+    quartzSelector: ".footnotes",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "border-top-color",
+      "border-top-style",
+      "border-top-width",
+      "color",
+      ...defaults.margin,
+    ],
+  },
+  // === TABLE CONTAINER ===
+  {
+    obsidianSelector: `.table-wrapper`,
+    publishSelector: `.table-wrapper`,
+    quartzSelector: ".table-container",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border, ...defaults.padding],
+  },
+  // === SPACER ELEMENT ===
+  {
+    obsidianSelector: `.workspace-leaf-content`,
+    publishSelector: null,
+    quartzSelector: ".spacer",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  // === OVERFLOW LISTS ===
+  {
+    obsidianSelector: `.view-content`,
+    publishSelector: `.view-content`,
+    quartzSelector: "ul.overflow",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  {
+    obsidianSelector: `.view-content`,
+    publishSelector: `.view-content`,
+    quartzSelector: "ol.overflow",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  // === CODE BLOCK WITH TITLE ===
+  {
+    obsidianSelector: `pre.language-js`,
+    publishSelector: `figure[data-rehype-pretty-code-figure]`,
+    quartzSelector: "figure[data-rehype-pretty-code-figure]",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border, ...defaults.margin],
+  },
+  {
+    obsidianSelector: `pre.language-js`,
+    publishSelector: `figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title]`,
+    quartzSelector:
+      "figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title]",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      "font-family",
+      ...defaults.border,
+      ...defaults.padding,
+    ],
+  },
+  // === CODE LINE NUMBERS AND HIGHLIGHTING ===
+  {
+    obsidianSelector: `pre.language-js code span`,
+    publishSelector: `pre > code [data-line]`,
+    quartzSelector: "pre > code > [data-line]",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "border-left-color",
+      "border-left-style",
+      "border-left-width",
+      ...defaults.padding,
+    ],
+  },
+  {
+    obsidianSelector: `pre.language-js code span`,
+    publishSelector: `pre > code [data-highlighted-line]`,
+    quartzSelector: "pre > code > [data-line][data-highlighted-line]",
+    pseudoElement: "",
+    properties: ["background-color", "border-left-color"],
+  },
+  {
+    obsidianSelector: `pre.language-js code span`,
+    publishSelector: `pre > code [data-highlighted-chars]`,
+    quartzSelector: "pre > code [data-highlighted-chars]",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  // === MERMAID DIAGRAMS ===
+  {
+    obsidianSelector: `pre:has(> code.mermaid)`,
+    publishSelector: `pre:has(> code.mermaid)`,
+    quartzSelector: "pre:has(> code.mermaid)",
+    pseudoElement: "",
+    properties: ["background-color", "border"],
+  },
+  // === TAGS LIST ===
+  {
+    obsidianSelector: `.tag-container`,
+    publishSelector: `.tag-container`,
+    quartzSelector: "ul.tags",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.padding, ...defaults.margin],
+  },
+  {
+    obsidianSelector: `.tag`,
+    publishSelector: `.tag`,
+    quartzSelector: "ul.tags > li",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      ...defaults.border,
+      ...defaults.padding,
+    ],
+  },
+  // === TEXT HIGHLIGHT ===
+  {
+    obsidianSelector: `mark.search-result-highlight`,
+    publishSelector: `.search-highlight`,
+    quartzSelector: ".text-highlight",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      ...defaults.border,
+      ...defaults.padding,
+    ],
+  },
+  // === SELECTION ===
+  {
+    obsidianSelector: `::selection`,
+    publishSelector: `::selection`,
+    quartzSelector: "::selection",
+    pseudoElement: "::selection",
+    properties: ["background-color", "color"],
+  },
+  // === STRONG TEXT COLOR ===
+  {
+    obsidianSelector: `article p > strong`,
+    publishSelector: `.markdown-rendered p > strong`,
+    quartzSelector: ".page article p > strong",
+    pseudoElement: "",
+    properties: ["color", "font-weight"],
   },
 ];
