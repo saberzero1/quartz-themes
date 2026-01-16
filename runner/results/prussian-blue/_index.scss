@@ -3174,12 +3174,22 @@ body {
         padding-right: 1.5rem;
       }
 
+      div.sidebar.left,
+      div.sidebar.left:has(.explorer) {
+        padding-left: 1rem 1.5rem 1rem 1rem;
+      }
+
       div.sidebar.right,
       footer {
         padding: 0 1.5rem;
       }
       footer {
         min-width: auto;
+      }
+
+      .explorer .explorer-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
     }
     .page-title {
