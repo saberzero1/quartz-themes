@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://davidvkimball.com" target="_blank" rel="noopener noreferrer">David V. Kimball</a>
 - Support the author: <a href="https://patreon.com/davidvkimball" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/oxygen">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/oxygen/README.md">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                                                                     | License                                                                                                                                       |
 | -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |

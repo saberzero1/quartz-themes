@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/crishood" target="_blank" rel="noopener noreferrer">CrisHood</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/nota-limonada-light">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/nota-limonada-light/README.md">Install instructions</a>
 
 | Name                  | Modes                       | Compatibility                                  | License                                                                                                                                                    |
 | --------------------- | --------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |

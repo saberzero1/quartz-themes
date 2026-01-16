@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://artorias305.github.io/" target="_blank" rel="noopener noreferrer">Artorias</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/shadeflow">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/shadeflow/README.md">Install instructions</a>
 
 | Name        | Modes                     | Compatibility                                  | License                                                                                                                                          |
 | ----------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

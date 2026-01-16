@@ -2,7 +2,7 @@
 
 - Theme author: <a href="ed.toomwn.xyz" target="_blank" rel="noopener noreferrer">EddieTheEd</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/prussian-blue">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/prussian-blue/README.md">Install instructions</a>
 
 | Name            | Modes                     | Compatibility                                  | License                                                                                                                                                                |
 | --------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

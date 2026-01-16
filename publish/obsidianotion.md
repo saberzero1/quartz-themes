@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://diegoeis.com" target="_blank" rel="noopener noreferrer">Diego Eis</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/obsidianotion">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/obsidianotion/README.md">Install instructions</a>
 
 | Name            | Modes                     | Compatibility                                                                                     | License                                                                                                                                                          |
 | --------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |

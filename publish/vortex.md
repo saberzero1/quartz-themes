@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/abhimangs" target="_blank" rel="noopener noreferrer">Abhiman G S</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vortex">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vortex/README.md">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
 | -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |

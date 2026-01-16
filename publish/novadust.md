@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/mmartamg" target="_blank" rel="noopener noreferrer">marta.stl</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/novadust">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/novadust/README.md">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                  | License                                                                                                                                         |
 | ---------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |

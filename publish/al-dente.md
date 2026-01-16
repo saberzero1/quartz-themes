@@ -2,7 +2,7 @@
 
 - Theme author: chad-bennett
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/al-dente">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/al-dente/README.md">Install instructions</a>
 
 | Name       | Modes                       | Compatibility                                  | License                                                                                                                                                 |
 | ---------- | --------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

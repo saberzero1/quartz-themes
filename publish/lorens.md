@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://twitter.com/lorans_othman" target="_blank" rel="noopener noreferrer">Lorens Osman</a>
 - Support the author: <a href="https://www.buymeacoffee.com/lorens" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/lorens">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/lorens/README.md">Install instructions</a>
 
 | Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
 | -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |

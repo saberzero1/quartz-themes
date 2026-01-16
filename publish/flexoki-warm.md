@@ -2,7 +2,7 @@
 
 - Theme author: @ofalvai
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flexoki-warm">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flexoki-warm/README.md">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                                                                     | License                                                                                                                                             |
 | -------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

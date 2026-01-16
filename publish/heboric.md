@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/nhrrs" target="_blank" rel="noopener noreferrer">nhrrs</a>
 - Support the author: <a href="https://buymeacoffee.com/nhrrs" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/heboric">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/heboric/README.md">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                  | License                                                                                                                                                |
 | --------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |

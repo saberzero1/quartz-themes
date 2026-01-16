@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/oqipodev/" target="_blank" rel="noopener noreferrer">oqipo</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/garden-gnome-adwaita-gtk">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/garden-gnome-adwaita-gtk/README.md">Install instructions</a>
 
 | Name                       | Modes                     | Compatibility                                                                                     | License                                                                                                                                                                 |
 | -------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

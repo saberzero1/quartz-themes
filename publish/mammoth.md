@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/wittionary" target="_blank" rel="noopener noreferrer">Witt Allen</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/mammoth">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/mammoth/README.md">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                  | License                                                                                                                                                |
 | --------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |

@@ -2,7 +2,7 @@
 
 - Theme author: jarodise
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dracula-for-obsidian">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dracula-for-obsidian/README.md">Install instructions</a>
 
 | Name                   | Modes                     | Compatibility                                  | License                                                                                                                                                     |
 | ---------------------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/Lucas-Haux" target="_blank" rel="noopener noreferrer">Lucas-Haux</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/nord">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/nord/README.md">Install instructions</a>
 
 | Name   | Modes                     | Compatibility                                                                                     | License                                                                                                                                     |
 | ------ | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |

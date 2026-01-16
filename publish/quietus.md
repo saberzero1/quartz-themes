@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://yuanzhixiang.com" target="_blank" rel="noopener noreferrer">yuanzhixiang</a>
 - Support the author: <a href="https://github.com/sponsors/yuanzhixiang" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/quietus">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/quietus/README.md">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                  | License                                                                                                                                        |
 | --------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://www.github.com/drbap" target="_blank" rel="noopener noreferrer">Bernardo Pires</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/magicuser">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/magicuser/README.md">Install instructions</a>
 
 | Name        | Modes                     | Compatibility                                                                                     | License                                                                                                                                          |
 | ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

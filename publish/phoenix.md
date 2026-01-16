@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/RyzenFromFire" target="_blank" rel="noopener noreferrer">RyzenFromFire</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/phoenix">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/phoenix/README.md">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                  | License                                                                                                                                        |
 | --------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |

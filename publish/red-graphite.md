@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/seanwcom/Red-Graphite-for-Obsidian" target="_blank" rel="noopener noreferrer">Sean Williams</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/red-graphite">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/red-graphite/README.md">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                                                                     | License                                                                                                                                                         |
 | -------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |

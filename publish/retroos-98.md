@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/ThePharaohArt/" target="_blank" rel="noopener noreferrer">ThePharaohArt</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/retroos-98">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/retroos-98/README.md">Install instructions</a>
 
 | Name         | Modes                     | Compatibility                                  | License                                                                                                                                           |
 | ------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |

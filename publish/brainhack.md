@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/Spekulucius" target="_blank" rel="noopener noreferrer">Spekulucius</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/brainhack">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/brainhack/README.md">Install instructions</a>
 
 | Name        | Modes                     | Compatibility                                                                                     | License                                                                                                                                          |
 | ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

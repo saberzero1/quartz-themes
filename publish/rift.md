@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/NoahBoos" target="_blank" rel="noopener noreferrer">Noah Boos</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rift">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rift/README.md">Install instructions</a>
 
 | Name   | Modes                     | Compatibility                                  | License                                                                                                                                                       |
 | ------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/Jawuj" target="_blank" rel="noopener noreferrer">Jawuj</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/blur">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/blur/README.md">Install instructions</a>
 
 | Name   | Modes                     | Compatibility                                                                                     | License                                                                                                                                     |
 | ------ | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |

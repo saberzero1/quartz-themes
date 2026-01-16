@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://taronull.substack.com" target="_blank" rel="noopener noreferrer">Taro</a>
 - Support the author: <a href="https://buymeacoffee.com/taronull" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ayu-light-mirage">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ayu-light-mirage/README.md">Install instructions</a>
 
 | Name               | Modes                     | Compatibility                                                                               | License                                                                                                                                                                           |
 | ------------------ | ------------------------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

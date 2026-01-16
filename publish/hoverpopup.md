@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/COGQOD" target="_blank" rel="noopener noreferrer">COGQOD</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/hoverpopup">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/hoverpopup/README.md">Install instructions</a>
 
 | Name         | Modes                     | Compatibility                                  | License                                                                                                                                           |
 | ------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |

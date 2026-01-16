@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/modigaphemelo" target="_blank" rel="noopener noreferrer">Phemelo Modiga</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dedication-2">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dedication-2/README.md">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                                                                     | License                                                                                                                                             |
 | -------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

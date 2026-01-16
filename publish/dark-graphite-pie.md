@@ -2,7 +2,7 @@
 
 - Theme author: kitchenrunner
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dark-graphite-pie">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dark-graphite-pie/README.md">Install instructions</a>
 
 | Name                | Modes                     | Compatibility                                  | License                                                                                                                                                              |
 | ------------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

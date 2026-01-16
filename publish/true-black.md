@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/kraasch" target="_blank" rel="noopener noreferrer">Alex Kraasch</a>
 - Support the author: <a href="https://ko-fi.com/kraasch" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/true-black">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/true-black/README.md">Install instructions</a>
 
 | Name         | Modes                     | Compatibility                                  | License                                                                                                                                           |
 | ------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |

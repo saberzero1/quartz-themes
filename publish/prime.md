@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://rivea0.github.io" target="_blank" rel="noopener noreferrer">Eda</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/prime">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/prime/README.md">Install instructions</a>
 
 | Name    | Modes                     | Compatibility                                                                                     | License                                                                                                                                              |
 | ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

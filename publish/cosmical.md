@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/M-Torrus" target="_blank" rel="noopener noreferrer">M-Torrus</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/cosmical">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/cosmical/README.md">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                                       |
 | ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |

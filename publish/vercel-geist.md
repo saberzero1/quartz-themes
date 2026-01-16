@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/en3sis" target="_blank" rel="noopener noreferrer">en3sis</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vercel-geist">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vercel-geist/README.md">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                                                                     | License                                                                                                                                             |
 | -------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

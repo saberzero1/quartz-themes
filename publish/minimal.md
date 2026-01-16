@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://twitter.com/kepano" target="_blank" rel="noopener noreferrer">@kepano</a>
 - Support the author: <a href="https://www.buymeacoffee.com/kepano" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal/README.md">Install instructions</a>
 
 | Name      | Modes                     | Compatibility                                                                                     | License                                                                                                                                        |
 | --------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |

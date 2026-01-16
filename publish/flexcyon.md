@@ -2,7 +2,7 @@
 
 - Theme author: bladeacer
 - Support the author: <a href="https://github.com/sponsors/bladeacer" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flexcyon">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flexcyon.tui/README.md">Install instructions</a>
 
 | Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                             |
 | ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

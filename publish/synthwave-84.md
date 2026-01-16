@@ -2,7 +2,7 @@
 
 - Theme author: George Jose
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/synthwave-84">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/synthwave-84/README.md">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                  | License                                                                                                                                             |
 | -------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

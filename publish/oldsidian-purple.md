@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/ltctceplrm" target="_blank" rel="noopener noreferrer">@ltctceplrm</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/oldsidian-purple">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/oldsidian-purple/README.md">Install instructions</a>
 
 | Name               | Modes                     | Compatibility                                  | License                                                                                                                                                 |
 | ------------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

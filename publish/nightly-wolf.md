@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://jotacode.dev/" target="_blank" rel="noopener noreferrer">jotacode</a>
 - Support the author: <a href="https://github.com/sponsors/codejota" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/nightly-wolf">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/nightly-wolf/README.md">Install instructions</a>
 
 | Name           | Modes                     | Compatibility                                  | License                                                                                                                                             |
 | -------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |

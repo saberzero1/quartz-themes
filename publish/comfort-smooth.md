@@ -2,7 +2,7 @@
 
 - Theme author: Spark
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort-smooth">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort-smooth/README.md">Install instructions</a>
 
 | Name             | Modes                     | Compatibility                                  | License                                                                                                                                                                         |
 | ---------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

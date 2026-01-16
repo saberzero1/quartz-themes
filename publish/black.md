@@ -2,7 +2,7 @@
 
 - Theme author: <a href="https://github.com/b3h3m0th" target="_blank" rel="noopener noreferrer">Simon Ostini</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/black">Install instructions</a>
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/black/README.md">Install instructions</a>
 
 | Name    | Modes                     | Compatibility                                  | License                                                                                                                                      |
 | ------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
