@@ -4304,13 +4304,6 @@ body li.task-list-item[data-task="w"] {
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(34, 34, 34);
 }
-body .markdown-rendered p::first-letter {
-  color: rgb(19, 32, 28);
-  font-size: 16px;
-}
-body .markdown-rendered p::first-line {
-  color: rgb(19, 32, 28);
-}
 body .math-block > mjx-container.MathJax {
   display: block;
   text-align: center;

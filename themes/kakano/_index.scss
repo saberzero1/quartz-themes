@@ -6075,23 +6075,6 @@ body {
     text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   }
 
-  p::first-letter {
-    color: light-dark(
-      color(srgb 0.01485 0.039975 0.07515),
-      color(srgb 0.6594 0.7599 0.9006)
-    );
-    font-size: 16px;
-    font-weight: 300;
-  }
-
-  p::first-line {
-    color: light-dark(
-      color(srgb 0.01485 0.039975 0.07515),
-      color(srgb 0.6594 0.7599 0.9006)
-    );
-    font-weight: 300;
-  }
-
   .katex-display > .katex {
     display: block;
     text-align: center;
@@ -6550,24 +6533,12 @@ body {
         padding-right: 1.5rem;
       }
 
-      div.sidebar.left,
-      div.sidebar.left:has(.explorer) {
-        padding: 1rem 1.5rem 1rem 1rem;
-        width: 100%;
-        max-width: 100%;
-      }
       div.sidebar.right,
       footer {
         padding: 0 1.5rem;
       }
       footer {
         min-width: auto;
-      }
-
-      .explorer .explorer-content {
-        width: 100vw;
-        padding-left: 1rem;
-        padding-right: 1rem;
       }
     }
     .page-title {

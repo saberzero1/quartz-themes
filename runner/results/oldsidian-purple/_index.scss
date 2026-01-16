@@ -2662,10 +2662,6 @@ body {
     text-decoration-color: rgb(218, 218, 218);
   }
 
-  p::first-letter {
-    font-size: 16px;
-  }
-
   .katex-display > .katex {
     display: block;
     text-align: center;
@@ -3126,24 +3122,12 @@ body {
         padding-right: 1.5rem;
       }
 
-      div.sidebar.left,
-      div.sidebar.left:has(.explorer) {
-        padding: 1rem 1.5rem 1rem 1rem;
-        width: 100%;
-        max-width: 100%;
-      }
       div.sidebar.right,
       footer {
         padding: 0 1.5rem;
       }
       footer {
         min-width: auto;
-      }
-
-      .explorer .explorer-content {
-        width: 100vw;
-        padding-left: 1rem;
-        padding-right: 1rem;
       }
     }
     .page-title {
