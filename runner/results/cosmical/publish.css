@@ -2648,7 +2648,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: oklch(58% 0 0deg);
+  stroke: light-dark(oklch(45% 0 0deg), oklch(58% 0 0deg));
 }
 body .callout > .callout-title > .callout-title-inner {
   font-weight: 600;
@@ -2871,7 +2871,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: oklch(77.5% 0 0deg);
+  stroke: light-dark(oklch(27.5% 0 0deg), oklch(77.5% 0 0deg));
 }
 body .callout[data-callout="bug"] {
   background-color: light-dark(
@@ -2919,7 +2919,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: oklch(70% 0.15 262deg);
+  stroke: light-dark(oklch(50% 0.15 262deg), oklch(70% 0.15 262deg));
 }
 body .callout[data-callout="quote"] {
   background-color: light-dark(
