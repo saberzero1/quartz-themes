@@ -5393,7 +5393,7 @@ body {
       color(srgb 1 0.909804 0.917647 / 0.8),
       color(srgb 0.196078 0.101961 0.101961 / 0.8)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 2px;
@@ -5439,7 +5439,7 @@ body {
       color(srgb 1 0.909804 0.917647 / 0.8),
       color(srgb 0.196078 0.101961 0.101961 / 0.8)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 2px;
@@ -5462,7 +5462,7 @@ body {
       color(srgb 0.937255 0.921569 0.996078 / 0.8),
       color(srgb 0.14902 0.12549 0.188235 / 0.8)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid
       light-dark(rgba(120, 82, 238, 0.25), rgba(168, 130, 255, 0.25));
     border-top-left-radius: 2px;
@@ -5485,7 +5485,7 @@ body {
       color(srgb 0.956863 0.956863 0.956863 / 0.8),
       color(srgb 0.141176 0.141176 0.141176 / 0.8)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid rgba(158, 158, 158, 0.25);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;

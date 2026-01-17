@@ -2687,7 +2687,7 @@ body {
     border-start-end-radius: 11.2px;
     border-end-start-radius: 11.2px;
     border-end-end-radius: 11.2px;
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     padding: 12px 10px 2px;
   }
 
@@ -2718,7 +2718,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2740,7 +2740,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2762,7 +2762,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2784,7 +2784,7 @@ body {
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2806,7 +2806,7 @@ body {
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2828,7 +2828,7 @@ body {
       rgba(8, 185, 78, 0.1),
       rgba(68, 207, 110, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2850,7 +2850,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2872,7 +2872,7 @@ body {
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2894,7 +2894,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2916,7 +2916,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2938,7 +2938,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2960,7 +2960,7 @@ body {
       rgba(120, 82, 238, 0.1),
       rgba(168, 130, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;
@@ -2979,7 +2979,7 @@ body {
 
   .callout[data-callout="quote"] {
     background-color: rgba(158, 158, 158, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
     border-top-left-radius: 11.2px;
     border-top-right-radius: 11.2px;

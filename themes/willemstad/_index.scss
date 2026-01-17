@@ -12782,7 +12782,7 @@ body {
 
   .callout[data-callout="danger"] {
     background-color: rgba(241, 0, 34, 0.125);
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid oklch(0.603065 0.245145 26.0471);
     border-left-color: rgb(241, 0, 34);
     border-top-left-radius: 3px;
@@ -12822,7 +12822,7 @@ body {
 
   .callout[data-callout="bug"] {
     background-color: rgba(164, 103, 80, 0.125);
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid oklch(0.574652 0.0862245 41.3449);
     border-left-color: rgb(164, 103, 80);
     border-top-left-radius: 3px;
@@ -12842,7 +12842,7 @@ body {
 
   .callout[data-callout="example"] {
     background-color: rgba(125, 84, 178, 0.125);
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid oklch(0.533415 0.145739 301.819);
     border-left-color: rgb(125, 84, 178);
     border-top-left-radius: 3px;
@@ -12862,7 +12862,7 @@ body {
 
   .callout[data-callout="quote"] {
     background-color: rgba(161, 169, 173, 0.125);
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid oklch(0.729631 0.0107511 229.015);
     border-left-color: rgb(161, 169, 173);
     border-top-left-radius: 3px;

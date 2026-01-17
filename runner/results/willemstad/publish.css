@@ -15570,7 +15570,7 @@ body
 }
 body .callout[data-callout="danger"] {
   background-color: rgba(241, 0, 34, 0.125);
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid oklch(60.3065% 0.245145 26.0471deg);
   border-left-color: rgb(241, 0, 34);
   border-top-left-radius: 3px;
@@ -15614,7 +15614,7 @@ body
 }
 body .callout[data-callout="bug"] {
   background-color: rgba(164, 103, 80, 0.125);
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid oklch(57.4652% 0.0862245 41.3449deg);
   border-left-color: rgb(164, 103, 80);
   border-top-left-radius: 3px;
@@ -15636,7 +15636,7 @@ body
 }
 body .callout[data-callout="example"] {
   background-color: rgba(125, 84, 178, 0.125);
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid oklch(53.3415% 0.145739 301.819deg);
   border-left-color: rgb(125, 84, 178);
   border-top-left-radius: 3px;
@@ -15658,7 +15658,7 @@ body
 }
 body .callout[data-callout="quote"] {
   background-color: rgba(161, 169, 173, 0.125);
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid oklch(72.9631% 0.0107511 229.015deg);
   border-left-color: rgb(161, 169, 173);
   border-top-left-radius: 3px;

@@ -2799,7 +2799,7 @@ body {
 
   .callout[data-callout="question"] {
     background-color: light-dark(rgb(212, 227, 255), rgb(53, 72, 99));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 12px;
@@ -2819,7 +2819,7 @@ body {
 
   .callout[data-callout="warning"] {
     background-color: light-dark(rgb(212, 227, 255), rgb(53, 72, 99));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-top-left-radius: 12px;
@@ -2839,7 +2839,7 @@ body {
 
   .callout[data-callout="danger"] {
     background-color: light-dark(rgb(212, 227, 255), rgb(53, 72, 99));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 12px;
@@ -2859,7 +2859,7 @@ body {
 
   .callout[data-callout="failure"] {
     background-color: light-dark(rgb(212, 227, 255), rgb(53, 72, 99));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 12px;
@@ -2879,7 +2879,7 @@ body {
 
   .callout[data-callout="bug"] {
     background-color: light-dark(rgb(212, 227, 255), rgb(53, 72, 99));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-top-left-radius: 12px;
@@ -2899,7 +2899,7 @@ body {
 
   .callout[data-callout="example"] {
     background-color: light-dark(rgb(212, 227, 255), rgb(53, 72, 99));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
       light-dark(rgba(120, 82, 238, 0.25), rgba(168, 130, 255, 0.25));
     border-top-left-radius: 12px;
@@ -2919,7 +2919,7 @@ body {
 
   .callout[data-callout="quote"] {
     background-color: light-dark(rgb(212, 227, 255), rgb(53, 72, 99));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid rgba(158, 158, 158, 0.25);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;

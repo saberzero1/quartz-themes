@@ -2641,7 +2641,7 @@ body .callout[data-callout="note"] {
   border-start-end-radius: 8px;
   border-end-start-radius: 8px;
   border-end-end-radius: 8px;
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   padding: 12px 12px 12px 24px;
   background-color: light-dark(
     rgba(5, 133, 168, 0.1),
@@ -2680,7 +2680,7 @@ body .callout[data-callout="abstract"] {
     rgba(18, 125, 82, 0.1),
     rgba(126, 200, 197, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(18, 125, 82, 0.25), rgba(126, 200, 197, 0.25));
   border-top-left-radius: 8px;
@@ -2705,7 +2705,7 @@ body .callout[data-callout="info"] {
     rgba(5, 133, 168, 0.1),
     rgba(126, 184, 241, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(5, 133, 168, 0.25), rgba(126, 184, 241, 0.25));
   border-top-left-radius: 8px;
@@ -2730,7 +2730,7 @@ body .callout[data-callout="todo"] {
     rgba(5, 133, 168, 0.1),
     rgba(126, 184, 241, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(5, 133, 168, 0.25), rgba(126, 184, 241, 0.25));
   border-top-left-radius: 8px;
@@ -2755,7 +2755,7 @@ body .callout[data-callout="tip"] {
     rgba(18, 125, 82, 0.1),
     rgba(126, 200, 197, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(18, 125, 82, 0.25), rgba(126, 200, 197, 0.25));
   border-top-left-radius: 8px;
@@ -2780,7 +2780,7 @@ body .callout[data-callout="success"] {
     rgba(71, 143, 20, 0.1),
     rgba(147, 200, 156, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(71, 143, 20, 0.25), rgba(147, 200, 156, 0.25));
   border-top-left-radius: 8px;
@@ -2805,7 +2805,7 @@ body .callout[data-callout="question"] {
     rgba(199, 123, 35, 0.1),
     rgba(206, 163, 141, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(199, 123, 35, 0.25), rgba(206, 163, 141, 0.25));
   border-top-left-radius: 8px;
@@ -2830,7 +2830,7 @@ body .callout[data-callout="warning"] {
     rgba(199, 123, 35, 0.1),
     rgba(206, 163, 141, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(199, 123, 35, 0.25), rgba(206, 163, 141, 0.25));
   border-top-left-radius: 8px;
@@ -2855,7 +2855,7 @@ body .callout[data-callout="danger"] {
     rgba(189, 81, 81, 0.1),
     rgba(209, 137, 137, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(189, 81, 81, 0.25), rgba(209, 137, 137, 0.25));
   border-top-left-radius: 8px;
@@ -2880,7 +2880,7 @@ body .callout[data-callout="failure"] {
     rgba(189, 81, 81, 0.1),
     rgba(209, 137, 137, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(189, 81, 81, 0.25), rgba(209, 137, 137, 0.25));
   border-top-left-radius: 8px;
@@ -2905,7 +2905,7 @@ body .callout[data-callout="bug"] {
     rgba(189, 81, 81, 0.1),
     rgba(209, 137, 137, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(189, 81, 81, 0.25), rgba(209, 137, 137, 0.25));
   border-top-left-radius: 8px;
@@ -2930,7 +2930,7 @@ body .callout[data-callout="example"] {
     rgba(114, 98, 147, 0.1),
     rgba(186, 179, 239, 0.1)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid
     light-dark(rgba(114, 98, 147, 0.25), rgba(186, 179, 239, 0.25));
   border-top-left-radius: 8px;
@@ -2952,7 +2952,7 @@ body
 }
 body .callout[data-callout="quote"] {
   background-color: rgba(158, 158, 158, 0.1);
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid rgba(158, 158, 158, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;

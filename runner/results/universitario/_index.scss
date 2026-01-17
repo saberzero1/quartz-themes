@@ -2952,7 +2952,7 @@ body {
       rgba(255, 0, 183, 0.15),
       rgba(255, 128, 183, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 3px solid light-dark(rgba(255, 0, 183, 0), rgba(255, 128, 183, 0));
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -2974,7 +2974,7 @@ body {
       rgba(244, 138, 74, 0.15),
       rgba(244, 138, 74, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 3px solid rgba(244, 138, 74, 0);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -2996,7 +2996,7 @@ body {
       rgba(255, 74, 74, 0.15),
       rgba(255, 74, 74, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 3px solid rgba(255, 74, 74, 0);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -3018,7 +3018,7 @@ body {
       rgba(255, 74, 74, 0.15),
       rgba(255, 74, 74, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 3px solid rgba(255, 74, 74, 0);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -3040,7 +3040,7 @@ body {
       rgba(255, 0, 0, 0.15),
       rgba(252, 95, 142, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 3px solid light-dark(rgba(255, 0, 0, 0), rgba(252, 95, 142, 0));
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -3062,7 +3062,7 @@ body {
       rgba(72, 122, 33, 0.15),
       rgba(184, 148, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 3px solid light-dark(rgba(72, 122, 33, 0), rgba(184, 148, 255, 0));
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -3084,7 +3084,7 @@ body {
       rgba(0, 100, 255, 0.15),
       rgba(184, 148, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 3px solid light-dark(rgba(0, 100, 255, 0), rgba(184, 148, 255, 0));
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;

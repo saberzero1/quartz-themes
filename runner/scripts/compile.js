@@ -212,6 +212,7 @@ function generateAndWriteCSS(
     // "text-color",
     "text-decoration-color",
     "text-emphasis-color",
+    "mix-blend-mode",
   ];
 
   let graphColors = { dark: {}, light: {} };

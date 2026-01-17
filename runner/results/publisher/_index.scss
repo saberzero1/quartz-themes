@@ -2896,7 +2896,7 @@ body {
 
   .callout[data-callout="warning"] {
     background-color: light-dark(rgb(245, 245, 245), rgb(38, 38, 38));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(230, 230, 230), rgb(26, 26, 26));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -2915,7 +2915,7 @@ body {
 
   .callout[data-callout="danger"] {
     background-color: light-dark(rgb(245, 245, 245), rgb(38, 38, 38));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(230, 230, 230), rgb(26, 26, 26));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -2934,7 +2934,7 @@ body {
 
   .callout[data-callout="failure"] {
     background-color: light-dark(rgb(245, 245, 245), rgb(38, 38, 38));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(230, 230, 230), rgb(26, 26, 26));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -2953,7 +2953,7 @@ body {
 
   .callout[data-callout="bug"] {
     background-color: light-dark(rgb(245, 245, 245), rgb(38, 38, 38));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(230, 230, 230), rgb(26, 26, 26));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -2972,7 +2972,7 @@ body {
 
   .callout[data-callout="example"] {
     background-color: light-dark(rgb(245, 245, 245), rgb(38, 38, 38));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(230, 230, 230), rgb(26, 26, 26));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -2991,7 +2991,7 @@ body {
 
   .callout[data-callout="quote"] {
     background-color: light-dark(rgb(245, 245, 245), rgb(38, 38, 38));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(230, 230, 230), rgb(26, 26, 26));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;

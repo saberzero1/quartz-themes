@@ -3036,7 +3036,7 @@ body {
       rgba(255, 94, 35, 0.1),
       rgba(247, 69, 69, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px dashed light-dark(rgb(255, 94, 35), rgb(247, 69, 69));
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -3080,7 +3080,7 @@ body {
       rgba(255, 94, 35, 0.1),
       rgba(247, 69, 69, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px dashed light-dark(rgb(255, 94, 35), rgb(247, 69, 69));
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -3102,7 +3102,7 @@ body {
       rgba(116, 76, 180, 0.1),
       rgba(170, 69, 247, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px dashed light-dark(rgb(116, 76, 180), rgb(170, 69, 247));
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -3121,7 +3121,7 @@ body {
 
   .callout[data-callout="quote"] {
     background-color: rgba(158, 158, 158, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px dashed rgb(158, 158, 158);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
