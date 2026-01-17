@@ -3579,7 +3579,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(oklch(55.75% 0.0105 281deg), oklch(63.75% 0.0075 281deg));
+  stroke: oklch(63.75% 0.0075 281deg);
 }
 body .callout > .callout-title > .callout-title-inner {
   font-weight: 625;
@@ -3607,7 +3607,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(9, 186, 221), rgb(85, 211, 244));
+  stroke: rgb(85, 211, 244);
 }
 body .callout[data-callout="info"] {
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
@@ -3628,7 +3628,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(48, 114, 255), rgb(58, 135, 255));
+  stroke: rgb(58, 135, 255);
 }
 body .callout[data-callout="todo"] {
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
@@ -3649,7 +3649,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(48, 114, 255), rgb(58, 135, 255));
+  stroke: rgb(58, 135, 255);
 }
 body .callout[data-callout="tip"] {
   background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
@@ -3670,7 +3670,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(9, 186, 221), rgb(85, 211, 244));
+  stroke: rgb(85, 211, 244);
 }
 body .callout[data-callout="success"] {
   background-color: light-dark(rgba(8, 185, 78, 0.1), rgba(68, 207, 110, 0.1));
@@ -3691,7 +3691,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(0, 187, 93), rgb(24, 209, 125));
+  stroke: rgb(24, 209, 125);
 }
 body .callout[data-callout="question"] {
   background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
@@ -3712,7 +3712,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(241, 110, 53), rgb(241, 144, 80));
+  stroke: rgb(241, 144, 80);
 }
 body .callout[data-callout="warning"] {
   background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
@@ -3734,7 +3734,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(241, 110, 53), rgb(241, 144, 80));
+  stroke: rgb(241, 144, 80);
 }
 body .callout[data-callout="danger"] {
   background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
@@ -3755,7 +3755,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(233, 49, 58), rgb(255, 76, 82));
+  stroke: rgb(255, 76, 82);
 }
 body .callout[data-callout="failure"] {
   background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
@@ -3776,7 +3776,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(oklch(24% 0.0005 281deg), oklch(93.25% 0 281deg));
+  stroke: oklch(93.25% 0 281deg);
 }
 body .callout[data-callout="bug"] {
   background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
@@ -3798,7 +3798,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(214, 50, 202), rgb(250, 153, 205));
+  stroke: rgb(250, 153, 205);
 }
 body .callout[data-callout="example"] {
   background-color: light-dark(
@@ -3823,7 +3823,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(oklch(55.75% 0.0105 281deg), oklch(63.75% 0.0075 281deg));
+  stroke: oklch(63.75% 0.0075 281deg);
 }
 body .callout[data-callout="quote"] {
   background-color: rgba(158, 158, 158, 0.1);
@@ -3845,7 +3845,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(158, 158, 158), rgb(150, 150, 160));
+  stroke: rgb(150, 150, 160);
 }
 body .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
