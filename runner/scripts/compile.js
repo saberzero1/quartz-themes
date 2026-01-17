@@ -1027,6 +1027,45 @@ ${
   }
 
   resultPublishScss += `
+  .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-default));
+  }
+  .callout[data-callout="abstract"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-summary));
+  }
+  .callout[data-callout="info"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-info));
+  }
+  .callout[data-callout="todo"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-todo));
+  }
+  .callout[data-callout="tip"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-tip));
+  }
+  .callout[data-callout="success"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-success));
+  }
+  .callout[data-callout="question"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-question));
+  }
+  .callout[data-callout="warning"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-warning));
+  }
+  .callout[data-callout="failure"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-fail));
+  }
+  .callout[data-callout="danger"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-bug));
+  }
+  .callout[data-callout="bug"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-bug));
+  }
+  .callout[data-callout="example"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-example));
+  }
+  .callout[data-callout="quote"] > .callout-title > .callout-icon > svg.svg-icon {
+    stroke: rgb(var(--callout-quote));
+  }
 }
 `;
 
