@@ -2771,7 +2771,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(153, 153, 153);
+  stroke: light-dark(rgb(117, 117, 117), rgb(153, 153, 153));
 }
 body .callout > .callout-title > .callout-title-inner {
   font-weight: 600;
@@ -2967,7 +2967,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(209, 209, 209);
+  stroke: light-dark(rgb(15, 15, 15), rgb(209, 209, 209));
 }
 body .callout[data-callout="bug"] {
   background-color: rgba(208, 66, 85, 0.1);
@@ -3009,7 +3009,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(153, 153, 153);
+  stroke: light-dark(rgb(117, 117, 117), rgb(153, 153, 153));
 }
 body .callout[data-callout="quote"] {
   background-color: rgba(158, 158, 158, 0.1);

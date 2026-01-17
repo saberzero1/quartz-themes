@@ -2972,7 +2972,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(213, 196, 161);
+    stroke: light-dark(rgb(80, 73, 69), rgb(213, 196, 161));
   }
 
   .callout[data-callout="abstract"] {
@@ -3181,7 +3181,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(213, 196, 161);
+    stroke: light-dark(rgb(80, 73, 69), rgb(213, 196, 161));
   }
 
   .callout[data-callout="quote"] {

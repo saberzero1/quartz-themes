@@ -2690,7 +2690,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(213, 196, 161);
+  stroke: light-dark(rgb(80, 73, 69), rgb(213, 196, 161));
 }
 body .callout > .callout-title > .callout-title-inner {
   font-weight: 600;
@@ -2928,7 +2928,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: rgb(213, 196, 161);
+  stroke: light-dark(rgb(80, 73, 69), rgb(213, 196, 161));
 }
 body .callout[data-callout="quote"] {
   background-color: rgba(146, 131, 116, 0.2);
