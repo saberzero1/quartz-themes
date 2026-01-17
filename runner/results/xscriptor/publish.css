@@ -2212,14 +2212,6 @@ body .callout[data-callout="note"] > .callout-title {
   border-end-end-radius: 0px;
   padding: 0px;
 }
-body
-  .callout[data-callout="note"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(208, 208, 208);
-}
 body .callout > .callout-title > .callout-title-inner {
   font-weight: 600;
 }
@@ -2242,14 +2234,6 @@ body .callout[data-callout="abstract"] {
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
 }
-body
-  .callout[data-callout="abstract"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(95, 158, 160);
-}
 body .callout[data-callout="info"] {
   background-color: light-dark(rgb(227, 242, 253), rgb(26, 35, 50));
   mix-blend-mode: normal;
@@ -2263,14 +2247,6 @@ body .callout[data-callout="info"] {
   border-start-end-radius: 10.08px;
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
-}
-body
-  .callout[data-callout="info"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(144, 202, 249);
 }
 body .callout[data-callout="todo"] {
   background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
@@ -2286,14 +2262,6 @@ body .callout[data-callout="todo"] {
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
 }
-body
-  .callout[data-callout="todo"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(95, 158, 160);
-}
 body .callout[data-callout="tip"] {
   background-color: light-dark(rgb(243, 229, 245), rgb(45, 27, 45));
   mix-blend-mode: normal;
@@ -2307,14 +2275,6 @@ body .callout[data-callout="tip"] {
   border-start-end-radius: 10.08px;
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
-}
-body
-  .callout[data-callout="tip"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(225, 190, 231);
 }
 body .callout[data-callout="success"] {
   background-color: light-dark(rgb(232, 245, 232), rgb(27, 45, 27));
@@ -2330,14 +2290,6 @@ body .callout[data-callout="success"] {
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
 }
-body
-  .callout[data-callout="success"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(200, 230, 201);
-}
 body .callout[data-callout="question"] {
   background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
   mix-blend-mode: normal;
@@ -2351,14 +2303,6 @@ body .callout[data-callout="question"] {
   border-start-end-radius: 10.08px;
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
-}
-body
-  .callout[data-callout="question"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(205, 133, 63);
 }
 body .callout[data-callout="warning"] {
   background-color: light-dark(rgb(255, 243, 224), rgb(45, 36, 22));
@@ -2374,14 +2318,6 @@ body .callout[data-callout="warning"] {
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
 }
-body
-  .callout[data-callout="warning"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(218, 165, 32);
-}
 body .callout[data-callout="danger"] {
   background-color: light-dark(rgb(255, 235, 238), rgb(45, 27, 27));
   mix-blend-mode: light-dark(darken, lighten);
@@ -2395,14 +2331,6 @@ body .callout[data-callout="danger"] {
   border-start-end-radius: 10.08px;
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
-}
-body
-  .callout[data-callout="danger"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(255, 205, 210);
 }
 body .callout[data-callout="failure"] {
   background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
@@ -2418,14 +2346,6 @@ body .callout[data-callout="failure"] {
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
 }
-body
-  .callout[data-callout="failure"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(208, 208, 208);
-}
 body .callout[data-callout="bug"] {
   background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
   mix-blend-mode: light-dark(darken, lighten);
@@ -2439,14 +2359,6 @@ body .callout[data-callout="bug"] {
   border-start-end-radius: 10.08px;
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
-}
-body
-  .callout[data-callout="bug"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(205, 145, 158);
 }
 body .callout[data-callout="example"] {
   background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
@@ -2462,14 +2374,6 @@ body .callout[data-callout="example"] {
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
 }
-body
-  .callout[data-callout="example"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(208, 208, 208);
-}
 body .callout[data-callout="quote"] {
   background-color: light-dark(rgb(255, 255, 255), rgba(18, 18, 18, 0.7));
   mix-blend-mode: light-dark(darken, lighten);
@@ -2483,14 +2387,6 @@ body .callout[data-callout="quote"] {
   border-start-end-radius: 10.08px;
   border-end-start-radius: 10.08px;
   border-end-end-radius: 10.08px;
-}
-body
-  .callout[data-callout="quote"]
-  > .callout-title
-  > .callout-icon
-  > svg.svg-icon {
-  fill: none;
-  stroke: rgb(158, 158, 158);
 }
 body .markdown-rendered table {
   background-color: light-dark(rgb(255, 255, 255), rgba(0, 0, 0, 0.8));
@@ -3016,4 +2912,95 @@ body .search-highlight {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body
+  .callout[data-callout="note"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-default));
+}
+body
+  .callout[data-callout="abstract"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-summary));
+}
+body
+  .callout[data-callout="info"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-info));
+}
+body
+  .callout[data-callout="todo"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-todo));
+}
+body
+  .callout[data-callout="tip"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-tip));
+}
+body
+  .callout[data-callout="success"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-success));
+}
+body
+  .callout[data-callout="question"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-question));
+}
+body
+  .callout[data-callout="warning"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-warning));
+}
+body
+  .callout[data-callout="failure"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-fail));
+}
+body
+  .callout[data-callout="danger"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-bug));
+}
+body
+  .callout[data-callout="bug"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-bug));
+}
+body
+  .callout[data-callout="example"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-example));
+}
+body
+  .callout[data-callout="quote"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-quote));
 }
