@@ -4316,7 +4316,7 @@ body {
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(235, 83, 37), rgb(192, 58, 71));
+    stroke: rgb(192, 58, 71);
   }
 
   .callout[data-callout="danger"] {
@@ -4354,7 +4354,7 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(87, 112, 185), rgb(148, 238, 111));
+    stroke: rgb(148, 238, 111);
   }
 
   .callout[data-callout="bug"] {
@@ -4392,7 +4392,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(87, 112, 185), rgb(148, 238, 111));
+    stroke: rgb(148, 238, 111);
   }
 
   .callout[data-callout="quote"] {
