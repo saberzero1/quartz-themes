@@ -2833,7 +2833,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(118, 124, 157);
+    stroke: light-dark(rgb(150, 156, 189), rgb(118, 124, 157));
   }
 
   .callout[data-callout="abstract"] {
@@ -2856,7 +2856,7 @@ body {
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(173, 215, 255);
+    stroke: light-dark(rgb(14, 191, 255), rgb(173, 215, 255));
   }
 
   .callout[data-callout="info"] {
@@ -2879,7 +2879,7 @@ body {
 
   .callout[data-callout="info"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(173, 215, 255);
+    stroke: light-dark(rgb(14, 191, 255), rgb(173, 215, 255));
   }
 
   .callout[data-callout="todo"] {
@@ -2902,7 +2902,7 @@ body {
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(173, 215, 255);
+    stroke: light-dark(rgb(14, 191, 255), rgb(173, 215, 255));
   }
 
   .callout[data-callout="tip"] {
@@ -2925,7 +2925,7 @@ body {
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(173, 215, 255);
+    stroke: light-dark(rgb(14, 191, 255), rgb(173, 215, 255));
   }
 
   .callout[data-callout="success"] {
@@ -2948,7 +2948,7 @@ body {
 
   .callout[data-callout="success"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(66, 103, 90);
+    stroke: light-dark(rgb(98, 170, 155), rgb(66, 103, 90));
   }
 
   .callout[data-callout="question"] {
@@ -2971,7 +2971,7 @@ body {
 
   .callout[data-callout="question"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(255, 250, 194);
+    stroke: light-dark(rgb(255, 212, 103), rgb(255, 250, 194));
   }
 
   .callout[data-callout="warning"] {
@@ -2994,7 +2994,7 @@ body {
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(255, 250, 194);
+    stroke: light-dark(rgb(255, 212, 103), rgb(255, 250, 194));
   }
 
   .callout[data-callout="danger"] {
@@ -3017,7 +3017,7 @@ body {
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(208, 103, 157);
+    stroke: light-dark(rgb(255, 32, 144), rgb(208, 103, 157));
   }
 
   .callout[data-callout="failure"] {
@@ -3040,7 +3040,7 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgba(208, 103, 157, 0.8);
+    stroke: light-dark(rgba(255, 32, 144, 0.8), rgba(208, 103, 157, 0.8));
   }
 
   .callout[data-callout="bug"] {
@@ -3063,7 +3063,7 @@ body {
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(208, 103, 157);
+    stroke: light-dark(rgb(255, 32, 144), rgb(208, 103, 157));
   }
 
   .callout[data-callout="example"] {
@@ -3086,7 +3086,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(118, 124, 157);
+    stroke: light-dark(rgb(150, 156, 189), rgb(118, 124, 157));
   }
 
   .callout[data-callout="quote"] {
@@ -3109,7 +3109,7 @@ body {
 
   .callout[data-callout="quote"] .callout-title .callout-icon {
     fill: none;
-    stroke: rgb(118, 124, 157);
+    stroke: light-dark(rgb(150, 156, 189), rgb(118, 124, 157));
   }
 
   table {
