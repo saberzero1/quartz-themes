@@ -1,7 +1,7 @@
 import {
+  getCurrentFolder,
   getValueFromDictionary,
   readJsonFileAsDictionary,
-  getCurrentFolder,
 } from "./util/util.mjs";
 
 export const testMode = false;

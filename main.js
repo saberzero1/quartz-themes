@@ -11,14 +11,16 @@ var m = (s, t) => {
     for (var n in t) c(s, n, { get: t[n], enumerable: !0 });
   },
   u = (s, t, n, i) => {
-    if ((t && typeof t == "object") || typeof t == "function")
-      for (let a of g(t))
+    if ((t && typeof t == "object") || typeof t == "function") {
+      for (let a of g(t)) {
         !r.call(s, a) &&
           a !== n &&
           c(s, a, {
             get: () => t[a],
             enumerable: !(i = p(t, a)) || i.enumerable,
           });
+      }
+    }
     return s;
   };
 var h = (s) => u(c({}, "__esModule", { value: !0 }), s);
@@ -45,8 +47,9 @@ var e = require("obsidian"),
           id: "open-sample-modal-complex",
           name: "Open sample modal (complex)",
           checkCallback: (i) => {
-            if (this.app.workspace.getActiveViewOfType(e.MarkdownView))
+            if (this.app.workspace.getActiveViewOfType(e.MarkdownView)) {
               return (i || new l(this.app).open(), !0);
+            }
           },
         }),
         this.addSettingTab(new d(this.app, this)),

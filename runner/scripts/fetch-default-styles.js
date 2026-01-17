@@ -6,7 +6,7 @@ function getDefaultStyles() {
   const noStyleTags = {
     BASE: true,
     HEAD: true,
-    //HTML: true,
+    // HTML: true,
     LINE: true,
     META: true,
     NOFRAME: true,
@@ -172,7 +172,7 @@ function getDefaultStyles() {
     let element = rootElement.body.appendChild(
       rootElement.createElement(tagName),
     );
-    //let computedStyle = getComputedStyle(element);
+    // let computedStyle = getComputedStyle(element);
     let computedStyle = element.computedStyleMap();
     /*
     for (let i = 0; i < computedStyle.length; i++) {

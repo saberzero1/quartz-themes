@@ -1,20 +1,16 @@
 // import { browser } from "@wdio/globals";
-import { startWdioSession } from "wdio-obsidian-service";
 import { memoryUsage } from "process";
+import { startWdioSession } from "wdio-obsidian-service";
 // import { extractionTargets } from "./config.wip.js";
-import { resolve } from "path";
+import { createHash } from "crypto";
 import {
-  dark as darkDefaultStyles,
-  light as lightDefaultStyles,
-} from "./default-styles.js";
-import {
-  writeFileSync,
-  readFileSync,
+  existsSync,
   mkdirSync,
   readdirSync,
-  existsSync,
+  readFileSync,
+  writeFileSync,
 } from "fs";
-import { createHash } from "crypto";
+import { resolve } from "path";
 import getManifestCollection from "../../extensions/manifest.mjs";
 import getThemeCollection from "../../extensions/themelist.mjs";
 import {
@@ -22,6 +18,10 @@ import {
   isLightTheme,
   sanitizeFilenamePreservingEmojis as sanitize,
 } from "../../util/util.mjs";
+import {
+  dark as darkDefaultStyles,
+  light as lightDefaultStyles,
+} from "./default-styles.js";
 
 const VERSION = "1.10.6";
 const INSTALLER_VERSION = "1.10.6";
@@ -584,7 +584,9 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
                 e.tagName.toLowerCase(),
               )
                 ? e.tagName.toLowerCase()
-                : `${e.tagName.toLowerCase()}${classes.length > 0 ? "." + classes.toSorted().join(".") : ""}${
+                : `${e.tagName.toLowerCase()}${
+                    classes.length > 0 ? "." + classes.toSorted().join(".") : ""
+                  }${
                     attributes.length > 0
                       ? "[" + attributes.toSorted().join("][") + "]"
                       : ""
@@ -979,7 +981,9 @@ async function getStylesFromObsidian(
     preset,
   );
   enableSnippets(manifest.snippets ?? []);
-  const folder = `${sanitize(theme)}${variation ? `.${sanitize(variation)}` : ""}`;
+  const folder = `${sanitize(theme)}${
+    variation ? `.${sanitize(variation)}` : ""
+  }`;
   const extras = manifest.extra_extract_files ?? [];
   mkdirSync(`./runner/results/${folder}`, { recursive: true });
   let lightResult = {
@@ -1632,7 +1636,9 @@ for (const manifest of manifestTargets) {
   }
 
   console.log(
-    `Processing target: ${manifest.name} (${processedCount + 1}/${manifestTargets.length - skippedCount})`,
+    `Processing target: ${manifest.name} (${processedCount + 1}/${
+      manifestTargets.length - skippedCount
+    })`,
   );
   const preset = JSON.stringify(manifest.style_settings ?? {});
 

@@ -1,26 +1,26 @@
-import { readFileSync, writeFileSync, existsSync, rmSync } from "fs";
-import { format } from "../formatter.mjs";
+import { existsSync, readFileSync, rmSync, writeFileSync } from "fs";
 import { getTheme } from "../../util/util.mjs";
-//import { cleanCSS } from "../../util/writer.mjs";
-import { themes } from "../../config.mjs";
-import { splitCombinedRules } from "../../util/postcss.mjs";
-import postcss from "postcss";
-import postcssCssVariables from "postcss-css-variables";
-import calc from "postcss-calc";
-import postcssNesting from "postcss-nesting";
-import postcssCustomProperties from "postcss-custom-properties";
-import postcssRelativeColorSyntax from "@csstools/postcss-relative-color-syntax";
+import { format } from "../formatter.mjs";
+// import { cleanCSS } from "../../util/writer.mjs";
 import postcssColorMixFunction from "@csstools/postcss-color-mix-function";
+import postcssRelativeColorSyntax from "@csstools/postcss-relative-color-syntax";
+import postcss from "postcss";
+import calc from "postcss-calc";
+import postcssColorHsl from "postcss-color-hsl";
+import postcssColorHwb from "postcss-color-hwb";
+import postcssColorRgb from "postcss-color-rgb";
 import postcssCombineDuplicatedSelectors from "postcss-combine-duplicated-selectors";
 import postcssCombineMediaQuery from "postcss-combine-media-query";
-import postcssColorHwb from "postcss-color-hwb";
-import postcssColorHsl from "postcss-color-hsl";
-import postcssColorRgb from "postcss-color-rgb";
+import postcssCssVariables from "postcss-css-variables";
+import postcssCustomProperties from "postcss-custom-properties";
+import postcssNesting from "postcss-nesting";
 import postcssPseudoIs from "postcss-pseudo-is";
-import postcssSelectorNot from "postcss-selector-not";
 import postcssRgbaHex from "postcss-rgba-hex";
+import postcssSelectorNot from "postcss-selector-not";
 import postcssUnprefix from "postcss-unprefix";
 import { parentPort, workerData } from "worker_threads";
+import { themes } from "../../config.mjs";
+import { splitCombinedRules } from "../../util/postcss.mjs";
 
 // This function contains the logic from your original forEach loop
 function processTheme() {
@@ -85,7 +85,9 @@ function processTheme() {
 
     const end = Date.now();
     const timeTaken = ((end - start) / 1000).toFixed(2);
-    const logMessage = `Combining CSS for ${theme} in mode ${mode} took ${index} iterations and ${Math.floor(timeTaken / 60)}m${Math.floor(timeTaken % 60)}s.`;
+    const logMessage = `Combining CSS for ${theme} in mode ${mode} took ${index} iterations and ${Math.floor(
+      timeTaken / 60,
+    )}m${Math.floor(timeTaken % 60)}s.`;
 
     // Send the result back to the main thread
     parentPort.postMessage({ status: "success", message: logMessage });

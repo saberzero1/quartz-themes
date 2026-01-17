@@ -208,7 +208,7 @@ cd ~/Desktop
 You can also create a code block by indenting the text using `Tab` or 4 blank spaces.
 
 ```md
-    cd ~/Desktop
+cd ~/Desktop
 ```
 
 You can add syntax highlighting to a code block, by adding a language code after the first set of backticks.
@@ -267,7 +267,7 @@ If your URL contains blank spaces, you need to escape them by replacing them wit
 You can also escape the URL by wrapping it with angled brackets (`< >`).
 
 ```md
-[My Note](<obsidian://open?vault=MainVault&file=My Note.md>)
+[My Note](obsidian://open?vault=MainVault&file=My Note.md)
 ```
 
 ## External images

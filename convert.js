@@ -1,60 +1,60 @@
+import * as fs from "fs";
+import * as path from "path";
+import { staticMode, testMode, themes, themeToTest } from "./config.mjs";
 import { format } from "./extensions/formatter.mjs";
+import getManifestCollection from "./extensions/manifest.mjs";
+import getThemeCollection from "./extensions/themelist.mjs";
+import updateMiscFiles from "./extensions/update-misc-files.mjs";
+import { inlineScssUseRulesAndClean } from "./util/at-use-embed.mjs";
+import colors from "./util/color-convert.mjs";
 import {
-  splitCombinedRules,
+  extractClassToggleCss,
+  extractStyleSettings,
+  extractStyleSettingsFromFile,
+  replaceVariableValue,
+} from "./util/postcss-style-settings.mjs";
+import {
   combineIdenticalSelectors,
-  removeEmptyRules,
-  getRuleDeclarations,
   getAllDarkThemeRules,
   getAllLightThemeRules,
   getCombinedThemeVariables,
+  getRuleDeclarations,
+  removeEmptyRules,
+  splitCombinedRules,
 } from "./util/postcss.mjs";
-import { inlineScssUseRulesAndClean } from "./util/at-use-embed.mjs";
-import updateMiscFiles from "./extensions/update-misc-files.mjs";
+import { prune } from "./util/prune-unused.mjs";
+import generateStatic from "./util/static-custom-properties.mjs";
 import {
-  readJsonFileAsDictionary,
-  getValueFromDictionary,
-  getCommandLineArgs,
-  getTheme,
-  isDarkTheme,
-  isLightTheme,
-  isFullTheme,
-  getExtras,
-  getFonts,
-  getFilesUnderDirectoryToStringArray,
-  listFoldersInDirectory,
-  clearDirectoryContents,
-  clearDirectories,
-  ensureDirectoryExists,
-  copyFileToDirectory,
-  replaceInFile,
   applyRuleToString,
-  generateFundingLinks,
   cleanRulesAfterRun,
   cleanup,
+  clearDirectories,
+  clearDirectoryContents,
+  copyFileToDirectory,
+  ensureDirectoryExists,
+  generateFundingLinks,
+  getCommandLineArgs,
+  getExtras,
+  getFilesUnderDirectoryToStringArray,
   getFixes,
+  getFonts,
+  getTheme,
+  getValueFromDictionary,
+  isDarkTheme,
+  isFullTheme,
+  isLightTheme,
+  listFoldersInDirectory,
+  readJsonFileAsDictionary,
+  replaceInFile,
   sanitizeFilenamePreservingEmojis as sanitize,
 } from "./util/util.mjs";
 import {
-  extractStyleSettings,
-  extractClassToggleCss,
-  replaceVariableValue,
-  extractStyleSettingsFromFile,
-} from "./util/postcss-style-settings.mjs";
-import { themes, staticMode, themeToTest, testMode } from "./config.mjs";
-import { prune } from "./util/prune-unused.mjs";
-import colors from "./util/color-convert.mjs";
-import {
-  writeIndex,
   cleanCSS,
   extractCSS,
-  writeStyleSettings,
+  writeIndex,
   writePrettier,
+  writeStyleSettings,
 } from "./util/writer.mjs";
-import getManifestCollection from "./extensions/manifest.mjs";
-import getThemeCollection from "./extensions/themelist.mjs";
-import generateStatic from "./util/static-custom-properties.mjs";
-import * as fs from "fs";
-import * as path from "path";
 
 let singleThemeName = "";
 
@@ -158,6 +158,11 @@ themeCollection.forEach((theme) => {
     "%OBSIDIAN_THEME_AUTHOR_DONATE_URL%",
     result,
   );
+});
+themeCollection.forEach((manifest) => {
+  const readmePath = `./themes/${manifest.name}/README.md`;
+  const content = fs.readFileSync(readmePath, "utf8");
+  fs.writeFileSync(readmePath, format(content, "markdown"), "utf8");
 });
 themeCollection.forEach((manifest) => {
   fs.copyFileSync(
