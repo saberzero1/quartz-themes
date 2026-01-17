@@ -4181,11 +4181,6 @@ body {
     border-end-end-radius: 2px;
   }
 
-  .callout[data-callout="note"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
-  }
-
   .callout[data-callout="abstract"] {
     background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
     mix-blend-mode: light-dark(darken, lighten);
@@ -4198,11 +4193,6 @@ body {
     border-start-end-radius: 2px;
     border-end-start-radius: 2px;
     border-end-end-radius: 2px;
-  }
-
-  .callout[data-callout="abstract"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
   }
 
   .callout[data-callout="info"] {
@@ -4219,11 +4209,6 @@ body {
     border-end-end-radius: 2px;
   }
 
-  .callout[data-callout="info"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
-  }
-
   .callout[data-callout="todo"] {
     background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
     mix-blend-mode: light-dark(darken, lighten);
@@ -4236,11 +4221,6 @@ body {
     border-start-end-radius: 2px;
     border-end-start-radius: 2px;
     border-end-end-radius: 2px;
-  }
-
-  .callout[data-callout="todo"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
   }
 
   .callout[data-callout="tip"] {
@@ -4257,11 +4237,6 @@ body {
     border-end-end-radius: 2px;
   }
 
-  .callout[data-callout="tip"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
-  }
-
   .callout[data-callout="success"] {
     background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
     mix-blend-mode: light-dark(darken, lighten);
@@ -4274,11 +4249,6 @@ body {
     border-start-end-radius: 2px;
     border-end-start-radius: 2px;
     border-end-end-radius: 2px;
-  }
-
-  .callout[data-callout="success"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
   }
 
   .callout[data-callout="question"] {
@@ -4295,11 +4265,6 @@ body {
     border-end-end-radius: 2px;
   }
 
-  .callout[data-callout="question"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
-  }
-
   .callout[data-callout="warning"] {
     background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
     mix-blend-mode: light-dark(darken, lighten);
@@ -4312,11 +4277,6 @@ body {
     border-start-end-radius: 2px;
     border-end-start-radius: 2px;
     border-end-end-radius: 2px;
-  }
-
-  .callout[data-callout="warning"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgb(192, 58, 71);
   }
 
   .callout[data-callout="danger"] {
@@ -4333,11 +4293,6 @@ body {
     border-end-end-radius: 2px;
   }
 
-  .callout[data-callout="danger"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
-  }
-
   .callout[data-callout="failure"] {
     background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
     mix-blend-mode: light-dark(darken, lighten);
@@ -4350,11 +4305,6 @@ body {
     border-start-end-radius: 2px;
     border-end-start-radius: 2px;
     border-end-end-radius: 2px;
-  }
-
-  .callout[data-callout="failure"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgb(148, 238, 111);
   }
 
   .callout[data-callout="bug"] {
@@ -4371,11 +4321,6 @@ body {
     border-end-end-radius: 2px;
   }
 
-  .callout[data-callout="bug"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
-  }
-
   .callout[data-callout="example"] {
     background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
     mix-blend-mode: light-dark(darken, lighten);
@@ -4390,11 +4335,6 @@ body {
     border-end-end-radius: 2px;
   }
 
-  .callout[data-callout="example"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgb(148, 238, 111);
-  }
-
   .callout[data-callout="quote"] {
     background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
     mix-blend-mode: light-dark(darken, lighten);
@@ -4407,11 +4347,6 @@ body {
     border-start-end-radius: 2px;
     border-end-start-radius: 2px;
     border-end-end-radius: 2px;
-  }
-
-  .callout[data-callout="quote"] .callout-title .callout-icon {
-    fill: none;
-    stroke: rgba(111, 118, 133, 0.6);
   }
 
   table {
