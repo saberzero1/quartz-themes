@@ -1858,6 +1858,25 @@ body.theme-dark {
   --theme-tint-text: 0 !important;
 }
 
+body {
+  --site-name-color: var(--text-accent);
+  --sidebar-left-background: var(--background-secondary);
+  --sidebar-right-background: var(--background-secondary);
+  --sidebar-left-border-color: var(--background-modifier-border);
+  --sidebar-right-border-color: var(--background-modifier-border);
+  --page-title-color: var(--h1-color, var(--text-normal));
+  --page-title-font: var(--h1-font, var(--font-text-theme));
+  --page-title-weight: var(--h1-weight, var(--font-semibold));
+  --outline-heading-color: var(--text-muted);
+  --outline-heading-color-active: var(--text-accent);
+  --component-title-color: var(--text-muted);
+  --nav-item-color: var(--text-normal);
+  --nav-item-color-hover: var(--text-accent);
+  --nav-item-color-active: var(--text-accent);
+  --nav-parent-item-color: var(--text-normal);
+  --nav-collapse-icon-color: var(--text-muted);
+  --nav-collapse-icon-color-collapsed: var(--text-faint);
+}
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(108, 132, 229), rgb(137, 133, 255));
