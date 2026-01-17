@@ -2643,3 +2643,7 @@ body
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
 }
+body pre > code,
+body .markdown-rendered pre > code {
+  line-height: 1.5;
+}

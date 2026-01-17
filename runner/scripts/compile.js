@@ -1085,6 +1085,11 @@ ${
   .callout[data-callout="quote"] > .callout-title > .callout-icon > svg.svg-icon {
     stroke: rgb(var(--callout-quote));
   }
+
+  pre > code,
+  .markdown-rendered pre > code {
+    line-height: 1.5;
+  }
 }
 `;
 
