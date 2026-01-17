@@ -2983,7 +2983,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(127, 127, 127), rgb(154, 163, 183));
+  stroke: rgb(154, 163, 183);
 }
 body .callout > .callout-title > .callout-title-inner {
   font-weight: 600;
@@ -3011,7 +3011,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+  stroke: rgb(83, 223, 221);
 }
 body .callout[data-callout="info"] {
   background-color: light-dark(rgb(252, 252, 252), rgb(31, 36, 45));
@@ -3074,7 +3074,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+  stroke: rgb(83, 223, 221);
 }
 body .callout[data-callout="success"] {
   background-color: light-dark(rgb(252, 252, 252), rgb(31, 36, 45));
@@ -3095,7 +3095,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
+  stroke: rgb(68, 207, 110);
 }
 body .callout[data-callout="question"] {
   background-color: light-dark(rgb(252, 252, 252), rgb(31, 36, 45));
@@ -3137,7 +3137,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(208, 131, 68), rgb(246, 156, 0));
+  stroke: rgb(246, 156, 0);
 }
 body .callout[data-callout="danger"] {
   background-color: light-dark(rgb(252, 252, 252), rgb(31, 36, 45));
@@ -3179,7 +3179,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(127, 127, 127), rgb(154, 163, 183));
+  stroke: rgb(154, 163, 183);
 }
 body .callout[data-callout="bug"] {
   background-color: light-dark(rgb(252, 252, 252), rgb(31, 36, 45));
@@ -3200,7 +3200,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+  stroke: rgb(251, 70, 76);
 }
 body .callout[data-callout="example"] {
   background-color: light-dark(rgb(252, 252, 252), rgb(31, 36, 45));
@@ -3221,7 +3221,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(127, 127, 127), rgb(154, 163, 183));
+  stroke: rgb(154, 163, 183);
 }
 body .callout[data-callout="quote"] {
   background-color: light-dark(rgb(252, 252, 252), rgb(31, 36, 45));

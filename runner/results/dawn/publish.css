@@ -2773,7 +2773,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(52, 58, 64), rgb(222, 226, 230));
+  stroke: rgb(222, 226, 230);
 }
 body .callout > .callout-title > .callout-title-inner {
   font-weight: 600;
@@ -2801,7 +2801,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  stroke: rgb(255, 255, 255);
 }
 body .callout[data-callout="info"] {
   background-color: light-dark(rgba(3, 105, 224, 0.1), rgba(2, 122, 255, 0.1));
@@ -2822,7 +2822,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(3, 105, 224), rgb(2, 122, 255));
+  stroke: rgb(2, 122, 255);
 }
 body .callout[data-callout="todo"] {
   background-color: light-dark(rgba(3, 105, 224, 0.1), rgba(2, 122, 255, 0.1));
@@ -2843,7 +2843,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(3, 105, 224), rgb(2, 122, 255));
+  stroke: rgb(2, 122, 255);
 }
 body .callout[data-callout="tip"] {
   background-color: light-dark(
@@ -2867,7 +2867,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(40, 173, 202), rgb(83, 223, 221));
+  stroke: rgb(83, 223, 221);
 }
 body .callout[data-callout="success"] {
   background-color: light-dark(rgba(8, 185, 78, 0.1), rgba(105, 219, 124, 0.1));
@@ -2888,7 +2888,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(8, 185, 78), rgb(105, 219, 124));
+  stroke: rgb(105, 219, 124);
 }
 body .callout[data-callout="question"] {
   background-color: light-dark(rgba(245, 162, 0, 0.1), rgba(255, 228, 82, 0.1));
@@ -2909,7 +2909,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(245, 162, 0), rgb(255, 228, 82));
+  stroke: rgb(255, 228, 82);
 }
 body .callout[data-callout="warning"] {
   background-color: light-dark(
@@ -2934,7 +2934,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(253, 126, 20), rgb(255, 154, 103));
+  stroke: rgb(255, 154, 103);
 }
 body .callout[data-callout="danger"] {
   background-color: rgba(250, 82, 82, 0.1);
@@ -2976,7 +2976,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(52, 58, 64), rgb(222, 226, 230));
+  stroke: rgb(222, 226, 230);
 }
 body .callout[data-callout="bug"] {
   background-color: rgba(250, 82, 82, 0.1);
@@ -3022,7 +3022,7 @@ body
   > .callout-icon
   > svg.svg-icon {
   fill: none;
-  stroke: light-dark(rgb(52, 58, 64), rgb(222, 226, 230));
+  stroke: rgb(222, 226, 230);
 }
 body .callout[data-callout="quote"] {
   background-color: rgba(158, 158, 158, 0.1);

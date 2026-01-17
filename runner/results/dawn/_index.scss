@@ -3066,7 +3066,7 @@ body {
 
   .callout[data-callout="note"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(52, 58, 64), rgb(222, 226, 230));
+    stroke: rgb(222, 226, 230);
   }
 
   .callout[data-callout="abstract"] {
@@ -3085,7 +3085,7 @@ body {
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+    stroke: rgb(255, 255, 255);
   }
 
   .callout[data-callout="info"] {
@@ -3107,7 +3107,7 @@ body {
 
   .callout[data-callout="info"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(3, 105, 224), rgb(2, 122, 255));
+    stroke: rgb(2, 122, 255);
   }
 
   .callout[data-callout="todo"] {
@@ -3129,7 +3129,7 @@ body {
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(3, 105, 224), rgb(2, 122, 255));
+    stroke: rgb(2, 122, 255);
   }
 
   .callout[data-callout="tip"] {
@@ -3152,7 +3152,7 @@ body {
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(40, 173, 202), rgb(83, 223, 221));
+    stroke: rgb(83, 223, 221);
   }
 
   .callout[data-callout="success"] {
@@ -3175,7 +3175,7 @@ body {
 
   .callout[data-callout="success"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(8, 185, 78), rgb(105, 219, 124));
+    stroke: rgb(105, 219, 124);
   }
 
   .callout[data-callout="question"] {
@@ -3198,7 +3198,7 @@ body {
 
   .callout[data-callout="question"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(245, 162, 0), rgb(255, 228, 82));
+    stroke: rgb(255, 228, 82);
   }
 
   .callout[data-callout="warning"] {
@@ -3221,7 +3221,7 @@ body {
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(253, 126, 20), rgb(255, 154, 103));
+    stroke: rgb(255, 154, 103);
   }
 
   .callout[data-callout="danger"] {
@@ -3259,7 +3259,7 @@ body {
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(52, 58, 64), rgb(222, 226, 230));
+    stroke: rgb(222, 226, 230);
   }
 
   .callout[data-callout="bug"] {
@@ -3301,7 +3301,7 @@ body {
 
   .callout[data-callout="example"] .callout-title .callout-icon {
     fill: none;
-    stroke: light-dark(rgb(52, 58, 64), rgb(222, 226, 230));
+    stroke: rgb(222, 226, 230);
   }
 
   .callout[data-callout="quote"] {

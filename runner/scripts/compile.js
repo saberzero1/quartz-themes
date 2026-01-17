@@ -212,8 +212,6 @@ function generateAndWriteCSS(
     // "text-color",
     "text-decoration-color",
     "text-emphasis-color",
-    "fill",
-    "stroke",
   ];
 
   let graphColors = { dark: {}, light: {} };
