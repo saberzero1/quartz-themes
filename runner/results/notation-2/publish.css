@@ -1730,6 +1730,25 @@ body.theme-dark {
   --text-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='21' y1='6' x2='3' y2='6'%3E%3C/line%3E%3Cline x1='15' y1='12' x2='3' y2='12'%3E%3C/line%3E%3Cline x1='17' y1='18' x2='3' y2='18'%3E%3C/line%3E%3C/svg%3E") !important;
 }
 
+body {
+  --site-name-color: var(--text-accent);
+  --sidebar-left-background: var(--background-secondary);
+  --sidebar-right-background: var(--background-secondary);
+  --sidebar-left-border-color: var(--background-modifier-border);
+  --sidebar-right-border-color: var(--background-modifier-border);
+  --page-title-color: var(--h1-color, var(--text-normal));
+  --page-title-font: var(--h1-font, var(--font-text-theme));
+  --page-title-weight: var(--h1-weight, var(--font-semibold));
+  --outline-heading-color: var(--text-muted);
+  --outline-heading-color-active: var(--text-accent);
+  --component-title-color: var(--text-muted);
+  --nav-item-color: var(--text-normal);
+  --nav-item-color-hover: var(--text-accent);
+  --nav-item-color-active: var(--text-accent);
+  --nav-parent-item-color: var(--text-normal);
+  --nav-collapse-icon-color: var(--text-muted);
+  --nav-collapse-icon-color-collapsed: var(--text-faint);
+}
 body .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
