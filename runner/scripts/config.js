@@ -1024,7 +1024,7 @@ export const config = [
   },
   {
     obsidianSelector: `.callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon`,
-    publishSelector: `.callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1056,7 +1056,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-pencil.svg-icon`,
-    publishSelector: `.callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1071,7 +1071,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-clipboard-list.svg-icon`,
-    publishSelector: `.callout[data-callout="abstract"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1086,7 +1086,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-info.svg-icon`,
-    publishSelector: `.callout[data-callout="info"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1101,7 +1101,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-check-circle-2.svg-icon`,
-    publishSelector: `.callout[data-callout="todo"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1116,7 +1116,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-flame.svg-icon`,
-    publishSelector: `.callout[data-callout="tip"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1131,7 +1131,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-check.svg-icon`,
-    publishSelector: `.callout[data-callout="success"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1146,7 +1146,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-help-circle.svg-icon`,
-    publishSelector: `.callout[data-callout="question"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1161,7 +1161,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-alert-triangle.svg-icon`,
-    publishSelector: `.callout[data-callout="warning"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1176,7 +1176,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-zap.svg-icon`,
-    publishSelector: `.callout[data-callout="danger"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1191,7 +1191,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-x.svg-icon`,
-    publishSelector: `.callout[data-callout="failure"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1206,7 +1206,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-bug.svg-icon`,
-    publishSelector: `.callout[data-callout="bug"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1221,7 +1221,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-list.svg-icon`,
-    publishSelector: `.callout[data-callout="example"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
@@ -1236,7 +1236,7 @@ export const config = [
   },
   {
     obsidianSelector: `svg.lucide-quote.svg-icon`,
-    publishSelector: `.callout[data-callout="quote"] > .callout-title > .callout-icon > svg.svg-icon`,
+    publishSelector: null,
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
