@@ -3002,7 +3002,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
       light-dark(rgba(228, 55, 75, 0.25), rgba(248, 81, 73, 0.25));
     border-left: 4px solid light-dark(rgb(208, 215, 222), rgb(48, 54, 61));
@@ -3050,7 +3050,7 @@ body {
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
       light-dark(rgba(228, 55, 75, 0.25), rgba(248, 81, 73, 0.25));
     border-left: 4px solid light-dark(rgb(208, 215, 222), rgb(48, 54, 61));
@@ -3074,7 +3074,7 @@ body {
       rgba(120, 82, 238, 0.1),
       rgba(168, 130, 255, 0.1)
     );
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
       light-dark(rgba(120, 82, 238, 0.25), rgba(168, 130, 255, 0.25));
     border-left: 4px solid light-dark(rgb(208, 215, 222), rgb(48, 54, 61));
@@ -3095,7 +3095,7 @@ body {
 
   .callout[data-callout="quote"] {
     background-color: rgba(158, 158, 158, 0.1);
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid rgba(158, 158, 158, 0.25);
     border-left: 4px solid light-dark(rgb(208, 215, 222), rgb(48, 54, 61));
     border-top-left-radius: 4px;

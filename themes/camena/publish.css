@@ -2767,7 +2767,7 @@ body .callout[data-callout="danger"] {
     color(srgb 0.9592 0.410667 0.3608 / 0.1),
     color(srgb 0.9592 0.410667 0.3608 / 0.15)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid color(srgb 0.9592 0.410667 0.3608 / 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2791,7 +2791,7 @@ body .callout[data-callout="failure"] {
     color(srgb 0.9592 0.410667 0.3608 / 0.1),
     color(srgb 0.9592 0.410667 0.3608 / 0.15)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid color(srgb 0.9592 0.410667 0.3608 / 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2815,7 +2815,7 @@ body .callout[data-callout="bug"] {
     color(srgb 0.9592 0.410667 0.3608 / 0.1),
     color(srgb 0.9592 0.410667 0.3608 / 0.15)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid color(srgb 0.9592 0.410667 0.3608 / 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2839,7 +2839,7 @@ body .callout[data-callout="example"] {
     color(srgb 0.66 0.3608 0.9592 / 0.1),
     color(srgb 0.66 0.3608 0.9592 / 0.15)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid color(srgb 0.66 0.3608 0.9592 / 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2863,7 +2863,7 @@ body .callout[data-callout="quote"] {
     color(srgb 0.54032 0.3608 0.9592 / 0.1),
     color(srgb 0.54032 0.3608 0.9592 / 0.15)
   );
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 0px solid color(srgb 0.54032 0.3608 0.9592 / 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;

@@ -2838,7 +2838,7 @@ body
 }
 body .callout[data-callout="danger"] {
   background-color: rgb(241, 129, 150);
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 1px solid rgba(241, 129, 150, 0.64);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2880,7 +2880,7 @@ body
 }
 body .callout[data-callout="bug"] {
   background-color: rgb(241, 201, 129);
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 1px solid rgba(241, 201, 129, 0.64);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2901,7 +2901,7 @@ body
 }
 body .callout[data-callout="example"] {
   background-color: rgb(171, 139, 235);
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 1px solid rgba(171, 139, 235, 0.64);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2922,7 +2922,7 @@ body
 }
 body .callout[data-callout="quote"] {
   background-color: rgb(139, 227, 235);
-  mix-blend-mode: lighten;
+  mix-blend-mode: light-dark(darken, lighten);
   border: 1px solid rgba(139, 227, 235, 0.64);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;

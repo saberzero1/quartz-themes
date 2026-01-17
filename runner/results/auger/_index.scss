@@ -3005,7 +3005,7 @@ body {
 
   .callout[data-callout="danger"] {
     background-color: light-dark(rgb(247, 247, 246), rgb(38, 38, 40));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(229, 228, 227), rgb(58, 58, 60));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3024,7 +3024,7 @@ body {
 
   .callout[data-callout="failure"] {
     background-color: light-dark(rgb(247, 247, 246), rgb(38, 38, 40));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(229, 228, 227), rgb(58, 58, 60));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3043,7 +3043,7 @@ body {
 
   .callout[data-callout="bug"] {
     background-color: light-dark(rgb(247, 247, 246), rgb(38, 38, 40));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(229, 228, 227), rgb(58, 58, 60));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3062,7 +3062,7 @@ body {
 
   .callout[data-callout="example"] {
     background-color: light-dark(rgb(247, 247, 246), rgb(38, 38, 40));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(229, 228, 227), rgb(58, 58, 60));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3081,7 +3081,7 @@ body {
 
   .callout[data-callout="quote"] {
     background-color: light-dark(rgb(247, 247, 246), rgb(38, 38, 40));
-    mix-blend-mode: lighten;
+    mix-blend-mode: light-dark(darken, lighten);
     border: 1px solid light-dark(rgb(229, 228, 227), rgb(58, 58, 60));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
