@@ -1,38 +1,46 @@
+import postcssColorMixFunction from "@csstools/postcss-color-mix-function";
 import {
-  initializeDb,
-  closeDb,
-  preparedStatements,
-  getStyle,
-  getAllVariables,
-} from "./database/driver.js";
-import { config } from "./config.js";
-import {
-  readFileSync,
-  writeFileSync,
-  readdirSync,
   existsSync,
   mkdirSync,
+  readdirSync,
+  readFileSync,
+  writeFileSync,
 } from "fs";
-import getManifestCollection from "../../extensions/manifest.mjs";
-import getThemeCollection from "../../extensions/themelist.mjs";
-import {
-  isDarkTheme,
-  isLightTheme,
-  sanitizeFilenamePreservingEmojis as sanitize,
-  getFonts,
-  getExtras,
-} from "../../util/util.mjs";
-import {
-  dark as defaultDark,
-  light as defaultLight,
-} from "./default-styles.js";
+import { cpus } from "os";
+import { dirname, join } from "path";
+import Piscina from "piscina";
 import postcss from "postcss";
 import calc from "postcss-calc";
-import postcssColorMixFunction from "@csstools/postcss-color-mix-function";
 import postcssColorConverter from "postcss-color-converter";
 import postcssMergeLonghand from "postcss-merge-longhand";
 import postcssScss from "postcss-scss";
 import { compileString } from "sass";
+import { fileURLToPath } from "url";
+import getManifestCollection from "../../extensions/manifest.mjs";
+import getThemeCollection from "../../extensions/themelist.mjs";
+import {
+  getExtras,
+  getFonts,
+  isDarkTheme,
+  isLightTheme,
+  sanitizeFilenamePreservingEmojis as sanitize,
+} from "../../util/util.mjs";
+import { config } from "./config.js";
+import {
+  closeDb,
+  getAllStylesForThemeMode,
+  getAllVariables,
+  getStyle,
+  initializeDb,
+  preparedStatements,
+} from "./database/driver.js";
+import {
+  dark as defaultDark,
+  light as defaultLight,
+} from "./default-styles.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 let themeName;
 let optionSetName = "default";
@@ -42,11 +50,30 @@ initializeDb();
 
 const themeCollection = getThemeCollection();
 
+const neededSelectors = new Set(["body"]);
+config.forEach((mapping) => {
+  if (mapping.obsidianSelector) {
+    neededSelectors.add(mapping.obsidianSelector);
+  }
+});
+
+const fontCache = new Map();
+function getCachedFontString(fontName) {
+  if (fontCache.has(fontName)) {
+    return fontCache.get(fontName);
+  }
+  const fontPath = `./extras/fonts/${fontName}.scss`;
+  const content = existsSync(fontPath) ? readFileSync(fontPath, "utf8") : "";
+  fontCache.set(fontName, content);
+  return content;
+}
+
+const themeDataList = [];
+
 themeCollection.forEach((manifest) => {
   const [name, variation] = manifest.name.split(".");
   themeName = `${sanitize(name)}${variation ? `.${sanitize(variation)}` : ""}`;
 
-  // Create necessary directories
   if (!existsSync(`./runner/results/${themeName}`)) {
     mkdirSync(`./runner/results/${themeName}`);
   }
@@ -63,7 +90,6 @@ themeCollection.forEach((manifest) => {
     writeFileSync(`./extras/themes/${themeName}/publish.css`, "", "utf8");
   }
 
-  // Build mappings for each mode
   const quartzMappings = {};
   const publishMappings = {};
   const bodyVariables = { dark: {}, light: {} };
@@ -75,8 +101,20 @@ themeCollection.forEach((manifest) => {
     if (!quartzMappings[mode]) quartzMappings[mode] = {};
     if (!publishMappings[mode]) publishMappings[mode] = {};
 
-    // Get all CSS variables from body selector
     const isDarkMode = mode === "dark";
+
+    const styleMap = getAllStylesForThemeMode(
+      themeName,
+      optionSetName,
+      isDarkMode,
+      neededSelectors,
+    );
+
+    const getStyleFromMap = (selector, property) => {
+      const key = `${selector}::${property}`;
+      return styleMap.get(key) ?? fallbackStyle(selector, property);
+    };
+
     const vars = getAllVariables(themeName, optionSetName, isDarkMode, "body");
     if (isDarkMode) {
       bodyVariables.dark = vars;
@@ -91,12 +129,7 @@ themeCollection.forEach((manifest) => {
         }
         mapping.properties.forEach((property) => {
           quartzMappings[mode][mapping.quartzSelector][property] =
-            getStyleFromDatabase(
-              // mapping.quartzSelector,
-              mapping.obsidianSelector,
-              property,
-              mapping.obsidianSelector,
-            );
+            getStyleFromMap(mapping.obsidianSelector, property);
         });
       }
       if (mapping.publishSelector) {
@@ -105,12 +138,7 @@ themeCollection.forEach((manifest) => {
         }
         mapping.properties.forEach((property) => {
           publishMappings[mode][mapping.publishSelector][property] =
-            getStyleFromDatabase(
-              // mapping.publishSelector,
-              mapping.obsidianSelector,
-              property,
-              mapping.obsidianSelector,
-            );
+            getStyleFromMap(mapping.obsidianSelector, property);
         });
       }
     });
@@ -118,17 +146,51 @@ themeCollection.forEach((manifest) => {
     console.log(`Finished processing theme: ${themeName} (${mode})`);
   });
 
-  // Generate CSS from mappings
-  generateAndWriteCSS(
+  themeDataList.push({
     manifest,
     themeName,
     quartzMappings,
     publishMappings,
     bodyVariables,
-  );
+  });
 });
 
 closeDb();
+
+const piscina = new Piscina({
+  filename: join(__dirname, "css-worker.js"),
+  maxThreads: Math.min(cpus().length, 8),
+});
+
+console.log(
+  `\nGenerating CSS for ${themeDataList.length} themes using ${piscina.threads} workers...`,
+);
+
+const cssGenerationTasks = themeDataList.map((themeData) => {
+  const { scssContent, publishScssContent } = buildCSSStrings(themeData);
+  return piscina.run({
+    scssContent,
+    publishScssContent,
+    themeName: themeData.themeName,
+  });
+});
+
+Promise.all(cssGenerationTasks)
+  .then((results) => {
+    results.forEach(({ themeName, resultScss, resultPublishCss }) => {
+      const targetFile = `./runner/results/${themeName}/_index.scss`;
+      const targetPublishFile = `./runner/results/${themeName}/publish.css`;
+      writeFileSync(targetFile, resultScss, "utf8");
+      writeFileSync(targetPublishFile, resultPublishCss, "utf8");
+      console.log(`Generated Styles for theme: ${themeName}`);
+    });
+    console.log("\nAll themes compiled successfully.");
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error("Error during CSS generation:", err);
+    process.exit(1);
+  });
 
 // --- Utilities ---
 
@@ -144,7 +206,7 @@ function mergeLonghandProperties(css, syntax = "scss") {
     const processor = postcss()
       .use(postcssMergeLonghand())
       .use(calc({ preserve: false })); // Resolve calc() where possible
-    //.use(postcssColorConverter({ outputColorFormat: "hex" })); // Convert colors to hex
+    // .use(postcssColorConverter({ outputColorFormat: "hex" })); // Convert colors to hex
 
     const result = processor.process(css, postcssOptions).css;
     return result;
@@ -177,20 +239,18 @@ function insertExtras(manifest, themeName) {
   return result;
 }
 
-function generateAndWriteCSS(
-  manifest,
-  themeName,
-  quartzMappings,
-  publishMappings,
-  bodyVariables,
-) {
+function buildCSSStrings(themeData) {
+  const {
+    manifest,
+    themeName,
+    quartzMappings,
+    publishMappings,
+    bodyVariables,
+  } = themeData;
   const darkData = quartzMappings.dark || null;
   const lightData = quartzMappings.light || null;
   const darkPublishData = publishMappings.dark || null;
   const lightPublishData = publishMappings.light || null;
-
-  const targetFile = `./runner/results/${themeName}/_index.scss`;
-  const targetPublishFile = `./runner/results/${themeName}/publish.css`;
 
   const colorTargets = [
     "color",
@@ -247,11 +307,13 @@ function generateAndWriteCSS(
               "background-images",
             ].includes(target)
           ) {
-            data[key][target] =
-              `light-dark(${lightData[key][target]}, ${darkData[key][target]}) !important`;
+            data[key][target] = `light-dark(${lightData[key][target]}, ${
+              darkData[key][target]
+            }) !important`;
           } else {
-            data[key][target] =
-              `light-dark(${lightData[key][target]}, ${darkData[key][target]})`;
+            data[key][target] = `light-dark(${lightData[key][target]}, ${
+              darkData[key][target]
+            })`;
           }
         } else if (target.startsWith("--quartz-graph")) {
           if (Array.isArray(graphMapping[target])) {
@@ -308,8 +370,9 @@ function generateAndWriteCSS(
           if (darkPublishData[key][target] === lightPublishData[key][target]) {
             dataPublish[key][target] = darkPublishData[key][target];
           } else {
-            dataPublish[key][target] =
-              `light-dark(${lightPublishData[key][target]}, ${darkPublishData[key][target]})`;
+            dataPublish[key][target] = `light-dark(${
+              lightPublishData[key][target]
+            }, ${darkPublishData[key][target]})`;
           }
         } else {
           dataPublish[key][target] = darkPublishData[key][target];
@@ -339,17 +402,13 @@ function generateAndWriteCSS(
     }
   }
 
-  // Get fonts
   const fonts =
     manifest.fonts && manifest.fonts.length > 0
       ? manifest.fonts
       : ["avenir", "inter", "source-code-pro"];
   let fontString = "";
   fonts.forEach((font) => {
-    const fontPath = `./extras/fonts/${font}.scss`;
-    if (existsSync(fontPath)) {
-      fontString += readFileSync(fontPath, "utf8");
-    }
+    fontString += getCachedFontString(font);
   });
 
   // Build variable strings from body CSS variables
@@ -363,11 +422,15 @@ function generateAndWriteCSS(
   if (Object.keys(bodyVariables.dark).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.dark)) {
       // For Publish: include all variables
-      bodyVarsStringDarkPublish += `  ${key}: ${value}${key.startsWith("--callout-") ? "" : " !important"};\n`;
+      bodyVarsStringDarkPublish += `  ${key}: ${value}${
+        key.startsWith("--callout-") ? "" : " !important"
+      };\n`;
 
       // For Quartz: only include --code-* and --graph-* variables
       if (isIncludedVariable(key)) {
-        bodyVarsStringDarkQuartz += `  ${key}: ${value}${key.startsWith("--callout-") ? "" : " !important"};\n`;
+        bodyVarsStringDarkQuartz += `  ${key}: ${value}${
+          key.startsWith("--callout-") ? "" : " !important"
+        };\n`;
       }
     }
   }
@@ -375,11 +438,15 @@ function generateAndWriteCSS(
   if (Object.keys(bodyVariables.light).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.light)) {
       // For Publish: include all variables
-      bodyVarsStringLightPublish += `  ${key}: ${value}${key.startsWith("--callout-") ? "" : " !important"};\n`;
+      bodyVarsStringLightPublish += `  ${key}: ${value}${
+        key.startsWith("--callout-") ? "" : " !important"
+      };\n`;
 
       // For Quartz: only include --code-* and --graph-* variables
       if (isIncludedVariable(key)) {
-        bodyVarsStringLightQuartz += `  ${key}: ${value}${key.startsWith("--callout-") ? "" : " !important"};\n`;
+        bodyVarsStringLightQuartz += `  ${key}: ${value}${
+          key.startsWith("--callout-") ? "" : " !important"
+        };\n`;
       }
     }
   }
@@ -421,7 +488,15 @@ ${bodyVarsStringDarkQuartz}
 @use "../variables.scss" as *;
 
 :root {
-  ${lightData && darkData ? "color-scheme: light dark;" : lightData ? "color-scheme: light;" : darkData ? "color-scheme: dark;" : ""}
+  ${
+    lightData && darkData
+      ? "color-scheme: light dark;"
+      : lightData
+        ? "color-scheme: light;"
+        : darkData
+          ? "color-scheme: dark;"
+          : ""
+  }
   font-size: 16px;
 }
 
@@ -1094,22 +1169,7 @@ ${
 }
 `;
 
-  // Compile Publish to CSS
-  try {
-    resultPublishScss = compileString(resultPublishScss).css;
-    // Remove CSS comments
-    resultPublishScss = resultPublishScss.replace(/\/\*[\s\S]*?\*\//g, "");
-  } catch (e) {
-    console.error(`Error compiling Publish CSS for ${themeName}:`, e.message);
-  }
-
-  // Merge longhand properties into shorthand for Publish CSS
-  resultPublishScss = mergeLonghandProperties(resultPublishScss, "css");
-
-  // Write files
-  writeFileSync(targetFile, resultScss, "utf8");
-  writeFileSync(targetPublishFile, resultPublishScss, "utf8");
-  console.log(`Generated Styles for theme: ${themeName}`);
+  return { scssContent: resultScss, publishScssContent: resultPublishScss };
 }
 
 function getStyleFromDatabase(selector, property, fallbackSelector) {

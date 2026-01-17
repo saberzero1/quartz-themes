@@ -40,11 +40,12 @@
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@wdio/cli": "^9.18.4",
-    "baseline-browser-mapping": "^2.9.14",
+    "baseline-browser-mapping": "^2.9.15",
     "css": "^3.0.0",
     "esbuild": "^0.25.8",
     "mocha": "^11.7.1",
     "obsidian": "^1.8.7",
+    "piscina": "^5.1.4",
     "postcss-merge-longhand": "^7.0.5",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",

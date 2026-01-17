@@ -1,12 +1,17 @@
 import Database from "better-sqlite3";
 
-let db = null; // Hold the database connection
+let db = null;
 
 let debug = false;
-// debug = true;
 
-// --- Prepared Statements (will be populated once db is open) ---
 const preparedStatements = {};
+
+const idCache = {
+  themes: new Map(),
+  optionSets: new Map(),
+  selectors: new Map(),
+  properties: new Map(),
+};
 
 const schema = `
 CREATE TABLE IF NOT EXISTS themes (
@@ -215,57 +220,45 @@ function getOrCreateStyle(
   return result ? result.value : null;
 }
 
-/**
- * Gets the ID for a theme by name.
- * @param {string} themeName
- * @returns {number|null} The ID of the theme or null if not found.
- */
 function getThemeId(themeName) {
+  if (idCache.themes.has(themeName)) {
+    return idCache.themes.get(themeName);
+  }
   const row = preparedStatements.getThemeId.get(themeName);
-  if (row) {
-    return row.id;
-  }
-  return null;
+  const id = row ? row.id : null;
+  idCache.themes.set(themeName, id);
+  return id;
 }
 
-/**
- * Gets the ID for an option set.
- * @param {number} themeId
- * @param {string} optionSetName
- * @returns {number|null} The ID of the option set or null if not found.
- */
 function getOptionSetId(themeId, optionSetName) {
+  const key = `${themeId}::${optionSetName}`;
+  if (idCache.optionSets.has(key)) {
+    return idCache.optionSets.get(key);
+  }
   const row = preparedStatements.getOptionSetId.get(themeId, optionSetName);
-  if (row) {
-    return row.id;
-  }
-  return null;
+  const id = row ? row.id : null;
+  idCache.optionSets.set(key, id);
+  return id;
 }
 
-/**
- * Gets the ID for a selector.
- * @param {string} selectorText
- * @returns {number|null} The ID of the selector or null if not found.
- */
 function getSelectorId(selectorText) {
-  const row = preparedStatements.getSelectorId.get(selectorText);
-  if (row) {
-    return row.id;
+  if (idCache.selectors.has(selectorText)) {
+    return idCache.selectors.get(selectorText);
   }
-  return null;
+  const row = preparedStatements.getSelectorId.get(selectorText);
+  const id = row ? row.id : null;
+  idCache.selectors.set(selectorText, id);
+  return id;
 }
 
-/**
- * Gets the ID for a property.
- * @param {string} propertyName
- * @returns {number|null} The ID of the property or null if not found.
- */
 function getPropertyId(propertyName) {
-  const row = preparedStatements.getPropertyId.get(propertyName);
-  if (row) {
-    return row.id;
+  if (idCache.properties.has(propertyName)) {
+    return idCache.properties.get(propertyName);
   }
-  return null;
+  const row = preparedStatements.getPropertyId.get(propertyName);
+  const id = row ? row.id : null;
+  idCache.properties.set(propertyName, id);
+  return id;
 }
 
 /**
@@ -363,11 +356,97 @@ function getAllVariables(themeName, optionSetName, isDarkMode, selector) {
   return variables;
 }
 
+/**
+ * Gets styles for specific selectors in a theme/mode combination.
+ * Returns a Map keyed by "selector::property" for O(1) lookups.
+ * @param {string} themeName
+ * @param {string} optionSetName
+ * @param {boolean} isDarkMode
+ * @param {Set<string>} selectors - Set of selector strings to fetch
+ * @returns {Map<string, string>} Map of "selector::property" -> value
+ */
+function getAllStylesForThemeMode(
+  themeName,
+  optionSetName,
+  isDarkMode,
+  selectors,
+) {
+  const themeId = getThemeId(themeName);
+  const optionSetId = getOptionSetId(themeId, optionSetName);
+
+  if (themeId === null || optionSetId === null) {
+    return new Map();
+  }
+
+  const selectorIds = [];
+  for (const sel of selectors) {
+    const id = getSelectorId(sel);
+    if (id !== null) selectorIds.push(id);
+  }
+
+  if (selectorIds.length === 0) {
+    return new Map();
+  }
+
+  const placeholders = selectorIds.map(() => "?").join(",");
+  const query = `
+    SELECT s.selector_text, p.property_name, sv.value
+    FROM style_values sv
+    JOIN selectors s ON sv.selector_id = s.id
+    JOIN properties p ON sv.property_id = p.id
+    WHERE sv.theme_id = ? 
+      AND sv.option_set_id = ? 
+      AND sv.is_dark_mode = ?
+      AND sv.selector_id IN (${placeholders})
+  `;
+
+  const stmt = db.prepare(query);
+  const results = stmt.all(
+    themeId,
+    optionSetId,
+    isDarkMode ? 1 : 0,
+    ...selectorIds,
+  );
+
+  const styleMap = new Map();
+  for (const row of results) {
+    const key = `${row.selector_text}::${row.property_name}`;
+    styleMap.set(key, row.value);
+  }
+
+  return styleMap;
+}
+
+/**
+ * Preloads all selector and property IDs into memory for fast lookups.
+ * Call once at startup to avoid repeated DB queries.
+ * @returns {{ selectorIds: Map<string, number>, propertyIds: Map<string, number> }}
+ */
+function preloadLookupTables() {
+  const selectorIds = new Map();
+  const propertyIds = new Map();
+
+  const selectors = db.prepare("SELECT id, selector_text FROM selectors").all();
+  for (const row of selectors) {
+    selectorIds.set(row.selector_text, row.id);
+  }
+
+  const properties = db
+    .prepare("SELECT id, property_name FROM properties")
+    .all();
+  for (const row of properties) {
+    propertyIds.set(row.property_name, row.id);
+  }
+
+  return { selectorIds, propertyIds };
+}
+
 export {
-  initializeDb,
   closeDb,
-  // Expose the bulk insert transaction function
-  preparedStatements,
-  getStyle,
+  getAllStylesForThemeMode,
   getAllVariables,
+  getStyle,
+  initializeDb,
+  preloadLookupTables,
+  preparedStatements,
 };

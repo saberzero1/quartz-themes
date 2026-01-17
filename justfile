@@ -6,7 +6,11 @@ default:
 
 [group('util')]
 format:
-  bun prettier . --write --check --cache --ignore-path "./.prettiercompileignore"
+  bun prettier . --write --cache --ignore-path "./.prettiercompileignore"
+
+[group('util')]
+format-non-generated:
+  bun prettier . --write --cache --ignore-path "./.prettiercompileignore" --ignore-path "./.prettiergenignore"
 
 alias lint := format
 
@@ -39,10 +43,10 @@ convert:
   bun ./convert.js
 
 [group('extract')]
-extract-full: build compile convert format
+extract-full: build compile convert format-non-generated
 
 [group('extract')]
-recompile: compile convert format
+recompile: compile convert
 
 [group('database')]
 ingest:

@@ -1,5 +1,5 @@
-import * as path from "path";
 import { readdirSync } from "fs";
+import * as path from "path";
 import {
   obsidianBetaAvailable,
   resolveObsidianVersions,
@@ -50,7 +50,7 @@ export const config = {
   specs: ["./runner/scripts/extract.js"],
 
   // How many instances of Obsidian should be launched in parallel during testing.
-  //maxInstances: Number(process.env["WDIO_MAX_INSTANCES"] || 4),
+  // maxInstances: Number(process.env["WDIO_MAX_INSTANCES"] || 4),
   maxInstances: 1,
 
   capabilities: versions.map(([appVersion, installerVersion]) => ({
@@ -68,7 +68,7 @@ export const config = {
       // `reloadObsidian` to open vaults during the test.
       vault: "./runner/vault",
       copy: true,
-      //execArgv: ["--disable-gpu", "--no-sandbox"],
+      // execArgv: ["--disable-gpu", "--no-sandbox"],
       appArgs: [
         "--disable-lazy-frame-loading",
         "--disable-lazy-image-loading",

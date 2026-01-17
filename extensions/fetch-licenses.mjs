@@ -11,14 +11,14 @@
  * 4. Run the script from your terminal: `node fetch-licenses.js`
  */
 
+import { existsSync, readFileSync } from "fs";
 import fs from "fs/promises";
-import { readFileSync, existsSync } from "fs";
-import { join, dirname } from "path";
-import getManifestCollection from "./manifest.mjs";
+import { dirname, join } from "path";
 import {
-  sanitizeFilenamePreservingEmojis,
   listFoldersInDirectory,
+  sanitizeFilenamePreservingEmojis,
 } from "../util/util.mjs";
+import getManifestCollection from "./manifest.mjs";
 
 const manifestCollection = getManifestCollection();
 const repositories = JSON.parse(
