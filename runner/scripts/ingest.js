@@ -1,10 +1,10 @@
+import { existsSync, readdirSync, readFileSync, statSync } from "fs";
+import { join } from "path";
 import {
-  initializeDb,
   closeDb,
+  initializeDb,
   preparedStatements,
 } from "./database/driver.js";
-import { readdirSync, statSync, readFileSync, existsSync } from "fs";
-import { join } from "path";
 
 const BASELINE_DIR = "./runner/results/_baseline";
 

@@ -15114,11 +15114,11 @@ hr {
 }
 
 .internal-query .internal-query-header-title:before {
-  content: '\"';
+  content: '"';
 }
 
 .internal-query .internal-query-header-title:after {
-  content: '\"';
+  content: '"';
 }
 
 ul ul {

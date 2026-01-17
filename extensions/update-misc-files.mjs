@@ -1,24 +1,24 @@
 import {
-  cpSync,
-  unlinkSync,
   copyFileSync,
+  cpSync,
   existsSync,
   readFileSync,
+  unlinkSync,
   writeFileSync,
 } from "fs";
-import { writePrettier } from "../util/writer.mjs";
+import { themes } from "../config.mjs";
 import {
-  replaceInFile,
+  generateFundingLinks,
+  getFilesUnderDirectoryToStringArray,
+  getTheme,
+  getValueFromDictionary,
   isDarkTheme,
   isFullTheme,
-  getTheme,
-  getFilesUnderDirectoryToStringArray,
   listFoldersInDirectory,
-  getValueFromDictionary,
-  generateFundingLinks,
+  replaceInFile,
   sanitizeFilenamePreservingEmojis as sanitize,
 } from "../util/util.mjs";
-import { themes } from "../config.mjs";
+import { writePrettier } from "../util/writer.mjs";
 import { format } from "./formatter.mjs";
 
 export default function updateMiscFiles(manifestCollection, themeCollection) {
@@ -142,8 +142,9 @@ ${fundingString}
   console.log("Updating Quartz Syncer file list...");
 
   // Prepare Quartz Syncer file list
-  if (existsSync("quartz-syncer-file-list.json"))
+  if (existsSync("quartz-syncer-file-list.json")) {
     unlinkSync("quartz-syncer-file-list.json");
+  }
   if (existsSync("theme-list")) unlinkSync("theme-list");
 
   // Build Quartz Syncer file list as json

@@ -1,19 +1,19 @@
+import { createHash } from "crypto";
 import {
-  readdirSync,
-  statSync,
-  readFileSync,
-  writeFileSync,
   existsSync,
+  readdirSync,
+  readFileSync,
+  statSync,
+  writeFileSync,
 } from "fs";
 import { join } from "path";
-import { createHash } from "crypto";
 import postcss from "postcss";
 import calc from "postcss-calc";
-import w3colorToRgb from "../../lib/w3color.mjs";
 import {
   default as validateColor,
   validateHTMLColorHex,
 } from "../../lib/validate-color.mjs";
+import w3colorToRgb from "../../lib/w3color.mjs";
 
 const HASH_CACHE_FILE = "./runner/results/.prep-hashes.json";
 const FORCE_PREP = process.env.FORCE_PREP === "true";
