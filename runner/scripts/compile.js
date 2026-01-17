@@ -1089,6 +1089,7 @@ ${
   pre > code,
   .markdown-rendered pre > code {
     line-height: 1.5;
+    background-color: transparent;
   }
 }
 `;
