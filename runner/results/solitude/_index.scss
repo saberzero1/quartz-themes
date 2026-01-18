@@ -3034,16 +3034,18 @@ body {
 
       // overflow fix for explorer on mobile
       .explorer {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+
         .explorer-content {
           padding-left: 1rem;
           padding-right: 1rem;
-          overflow-y: unset;
-          .folder-outer > ul {
-            min-height: 0;
-            overflow-y: unset;
-          }
         }
-        overflow-y: auto;
+        * {
+          min-height: 0;
+          touch-action: pan-y;
+          overflow-y: visible;
+        }
       }
     }
     .page-title {
