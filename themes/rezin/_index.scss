@@ -3016,30 +3016,27 @@ body {
       footer {
         min-width: auto;
       }
-      .explorer .explorer-content {
-        width: 100vw;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
 
       // overflow fix for explorer on mobile
-      // .explorer {
-      //   overflow-y: auto;
-      //   -webkit-overflow-scrolling: touch;
-      //
-      //   .explorer-content {
-      //     padding-left: 1rem;
-      //     padding-right: 1rem;
-      //   }
-      //   .folder-outer,
-      //   folder-outer > ul {
-      //     overflow: unset;
-      //   }
-      //   * {
-      //     min-height: 0;
-      //     touch-action: pan-y;
-      //   }
-      // }
+      .explorer {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+
+        .explorer-content {
+          padding-left: 1rem;
+          padding-right: 1rem;
+          & > .explorer-ul {
+            height: 100%;
+          }
+        }
+        // .folder-outer {
+        //   overflow-y: auto;
+        // }
+        * {
+          min-height: 0;
+          touch-action: pan-y;
+        }
+      }
     }
     .page-title {
       display: none;
