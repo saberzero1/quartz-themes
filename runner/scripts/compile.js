@@ -887,8 +887,8 @@ body {
             height: 100%;
           }
         }
-        // .folder-outer,
-        .folder-outer > ul {
+        .folder-outer {
+        // .folder-outer > ul {
           overflow: unset;
         }
         * {
