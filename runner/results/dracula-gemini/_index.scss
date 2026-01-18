@@ -3114,14 +3114,13 @@ body {
             height: 100%;
           }
         }
-        .folder-outer {
-          // .folder-outer > ul {
-          overflow: unset;
+        .folder-outer > ul {
+          overflow-y: visible;
         }
-        * {
-          min-height: 0;
-          touch-action: pan-y;
-        }
+        // * {
+        //   min-height: 0;
+        //   touch-action: pan-y;
+        // }
       }
     }
     .page-title {
