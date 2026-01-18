@@ -3116,6 +3116,9 @@ body {
         .explorer-content {
           padding-left: 1rem;
           padding-right: 1rem;
+        }
+        .folder-outer,
+        .folder-outer > ul {
           overflow: unset;
         }
         * {
