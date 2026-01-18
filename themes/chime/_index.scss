@@ -3701,12 +3701,10 @@ body {
         .explorer-content {
           padding-left: 1rem;
           padding-right: 1rem;
-          & > .explorer-ul {
-            height: 100%;
-          }
         }
-        .folder-outer > ul {
-          overflow-y: auto;
+        .folder-outer,
+        folder-outer > ul {
+          overflow: unset;
         }
         * {
           min-height: 0;
