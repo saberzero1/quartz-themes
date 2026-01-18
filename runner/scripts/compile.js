@@ -886,7 +886,7 @@ body {
         }
         .folder-outer,
         folder-outer > ul {
-          overflow: unset
+          overflow: unset;
         }
         * {
           min-height: 0;
