@@ -3981,9 +3981,10 @@ body {
             height: 100%;
           }
         }
-        // .folder-outer {
-        //   overflow-y: auto;
-        // }
+        .folder-outer,
+        .folder-outer > ul {
+          overflow: auto;
+        }
         * {
           min-height: 0;
           touch-action: pan-y;
