@@ -3738,10 +3738,10 @@ body {
             height: 100%;
           }
         }
-        // .folder-outer,
-        // .folder-outer > ul {
-        //   overflow: unset;
-        // }
+        .folder-outer,
+        .folder-outer > ul {
+          overflow: auto;
+        }
         * {
           min-height: 0;
           touch-action: pan-y;
