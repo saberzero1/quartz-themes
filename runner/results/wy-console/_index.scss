@@ -6020,6 +6020,9 @@ body {
           padding-left: 1rem;
           padding-right: 1rem;
           overflow-y: visible;
+          .folder-outer > ul {
+            overflow-y: visible;
+          }
         }
         overflow-y: visible;
       }
