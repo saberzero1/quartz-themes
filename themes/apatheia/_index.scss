@@ -3283,16 +3283,17 @@ body {
         min-width: auto;
       }
 
+      // overflow fix for explorer on mobile
       .explorer {
         .explorer-content {
           padding-left: 1rem;
           padding-right: 1rem;
-          overflow-y: visible;
+          overflow-y: auto;
           .folder-outer > ul {
-            overflow-y: visible;
+            overflow-y: auto;
           }
         }
-        overflow-y: visible;
+        overflow-y: auto;
       }
     }
     .page-title {
