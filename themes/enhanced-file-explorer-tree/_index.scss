@@ -3952,12 +3952,12 @@ body {
           }
         }
         .folder-outer > ul {
-          overflow-y: visible;
+          overflow-y: auto;
         }
-        // * {
-        //   min-height: 0;
-        //   touch-action: pan-y;
-        // }
+        * {
+          min-height: 0;
+          touch-action: pan-y;
+        }
       }
     }
     .page-title {
