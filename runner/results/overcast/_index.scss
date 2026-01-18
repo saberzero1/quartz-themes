@@ -3071,9 +3071,12 @@ body {
         min-width: auto;
       }
 
-      .explorer .explorer-content {
-        padding-left: 1rem;
-        padding-right: 1rem;
+      .explorer {
+        .explorer-content {
+          padding-left: 1rem;
+          padding-right: 1rem;
+          overflow-y: visible;
+        }
         overflow-y: visible;
       }
     }
