@@ -3708,9 +3708,10 @@ body {
         .explorer-content {
           padding-left: 1rem;
           padding-right: 1rem;
-          overflow-y: auto;
+          overflow-y: unset;
           .folder-outer > ul {
-            overflow-y: auto;
+            min-height: 0;
+            overflow-y: unset;
           }
         }
         overflow-y: auto;
