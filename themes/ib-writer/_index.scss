@@ -3721,9 +3721,9 @@ body {
             height: 100%;
           }
         }
-        .folder-outer,
+        // .folder-outer,
         .folder-outer > ul {
-          overflow: auto;
+          overflow: unset;
         }
         * {
           min-height: 0;
