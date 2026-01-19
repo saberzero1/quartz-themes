@@ -3641,6 +3641,9 @@ body {
             &.open {
               height: 100%;
               overflow: visible;
+              & > .content {
+                width: 100%;
+              }
               * {
                 height: auto;
               }
