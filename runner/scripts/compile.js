@@ -892,6 +892,9 @@ body {
               overflow: hidden;
             }
           }
+          ul {
+            overscroll-behavior: none;
+          }
         }
         // .folder-outer,
         // .folder-outer > ul {
