@@ -893,6 +893,7 @@ body {
         }
         * {
           min-height: 0;
+          max-height: 100%;
           touch-action: pan-y;
         }
       }
