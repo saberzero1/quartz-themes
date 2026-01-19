@@ -3114,11 +3114,11 @@ body {
           overscroll-behavior: contain;
           overflow-y: auto;
           max-height: 100vh;
-          * {
-            overflow: hidden;
-          }
-          .explorer-ul {
+          & > .explorer-ul {
             min-height: 0;
+            * {
+              overflow: hidden;
+            }
           }
           //     // height: 100%;
           //     overflow-y: auto;
