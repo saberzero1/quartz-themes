@@ -3974,12 +3974,18 @@ body {
             display: flex;
             min-height: 0;
             height: 0;
-            visibility: hidden;
+            visibility: visible;
             overflow: visible;
+            * {
+              min-height: 0;
+              height: 0;
+            }
             &.open {
               height: 100%;
-              visibility: visible;
               overflow: visible;
+              * {
+                height: auto;
+              }
             }
           }
         }
