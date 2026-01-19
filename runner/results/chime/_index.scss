@@ -3709,7 +3709,7 @@ body {
             touch-action: pan-y;
             * {
               overflow: hidden;
-              touch-action: none;
+              touch-action: pan-y;
             }
           }
         }
