@@ -902,6 +902,7 @@ body {
             overflow: visible;
             &.open {
               height: 100%;
+              visibility: visible;
               overflow: visible;
             }
           }
