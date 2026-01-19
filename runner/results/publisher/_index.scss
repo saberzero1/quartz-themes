@@ -3926,18 +3926,20 @@ body {
           & > .explorer-ul {
             height: 100%;
             overflow-y: auto;
-            touch-action: pan-y;
-            * {
-              overflow: hidden;
-              touch-action: pan-y;
-            }
+            // touch-action: pan-y;
+            // * {
+            //   overflow: hidden;
+            //   touch-action: pan-y;
+            // }
           }
           .folder-outer {
             display: block;
             height: 0;
             visibility: visible;
+            overflow: hidden;
             &.open {
               height: 100%;
+              overflow: visible;
             }
           }
         }
