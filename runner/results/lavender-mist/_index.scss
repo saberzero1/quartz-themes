@@ -4957,10 +4957,14 @@ body {
         // -webkit-overflow-scrolling: touch;
 
         .explorer-content {
+          contain: layout;
           padding-left: 1rem;
           padding-right: 1rem;
           // height: 100%;
           overflow-y: auto;
+          * {
+            display: flex;
+          }
           & > .explorer-ul {
             height: 100%;
             overflow-y: auto;
