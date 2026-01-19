@@ -4307,6 +4307,15 @@ body {
           //     contain: layout;
           padding-left: 1rem;
           padding-right: 1rem;
+          overscroll-behavior: contain;
+          overflow-y: auto;
+          max-height: 100vh;
+          * {
+            overflow: hidden;
+          }
+          .explorer-ul {
+            min-height: 0;
+          }
           //     // height: 100%;
           //     overflow-y: auto;
           //     & > .explorer-ul {
