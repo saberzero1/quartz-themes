@@ -3945,6 +3945,13 @@ body {
               touch-action: pan-y;
             }
           }
+          .folder-outer {
+            display: block;
+            height: 0;
+            &.open {
+              height: 100%;
+            }
+          }
         }
         // .folder-outer,
         // .folder-outer > ul {
