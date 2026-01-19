@@ -4026,11 +4026,11 @@ body {
             // }
           }
           .folder-outer {
-            display: block;
+            display: flex;
             min-height: 0;
             height: 0;
-            visibility: visible;
-            overflow: hidden;
+            visibility: hidden;
+            overflow: visible;
             &.open {
               height: 100%;
               overflow: visible;
