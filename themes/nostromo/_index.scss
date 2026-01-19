@@ -2694,6 +2694,7 @@ body {
           }
           .folder-outer {
             display: block;
+            min-height: 0;
             height: 0;
             visibility: visible;
             overflow: hidden;
