@@ -4311,12 +4311,11 @@ body {
           & > .explorer-ul {
             height: 100%;
             overflow-y: auto;
+            touch-action: pan-y;
             * {
               overflow: hidden;
+              touch-action: none;
             }
-          }
-          ul {
-            overscroll-behavior: none;
           }
         }
         // .folder-outer,
