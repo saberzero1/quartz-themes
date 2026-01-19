@@ -897,6 +897,7 @@ body {
           .folder-outer {
             display: block;
             height: 0;
+            visibility: visible;
             &.open {
               height: 100%;
             }
