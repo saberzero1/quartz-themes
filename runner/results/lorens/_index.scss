@@ -3346,12 +3346,14 @@ body {
         }
         .folder-outer,
         .folder-outer > ul {
-          overflow-y: auto;
+          overflow: auto;
           max-height: 100%;
         }
         * {
+          box-sizing: border-box;
+          min-width: 0;
           min-height: 0;
-          touch-action: pan-y;
+          flex: 0 0 auto;
         }
       }
     }
