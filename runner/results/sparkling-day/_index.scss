@@ -3149,15 +3149,15 @@ body {
           //     contain: layout;
           padding-left: 1rem;
           padding-right: 1rem;
-          overscroll-behavior: contain;
           overflow-y: auto;
           max-height: 100vh;
           & > .explorer-ul {
             min-height: 0;
-            * {
-              overflow: hidden;
-              min-height: 0;
-            }
+            overscroll-behavior: contain;
+            // * {
+            //   overflow: hidden;
+            //   min-height: 0;
+            // }
           }
           ul {
             overscroll-behavior: auto;
