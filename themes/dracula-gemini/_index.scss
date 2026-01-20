@@ -3102,13 +3102,9 @@ body {
         min-width: auto;
       }
 
-      // // overflow fix for explorer on mobile
+      // overflow fix for explorer on mobile
       .explorer {
-        //   // overflow-y: auto;
-        //   // -webkit-overflow-scrolling: touch;
-        //
         .explorer-content {
-          //     contain: layout;
           padding-left: 1rem;
           padding-right: 1rem;
           overflow-y: auto;
@@ -3116,58 +3112,11 @@ body {
           & > .explorer-ul {
             min-height: 0;
             overscroll-behavior: contain;
-            // * {
-            //   overflow: hidden;
-            //   min-height: 0;
-            // }
           }
           ul {
             overscroll-behavior: auto;
           }
-          //     // height: 100%;
-          //     overflow-y: auto;
-          //     & > .explorer-ul {
-          //       height: 100%;
-          //       overflow-y: auto;
-          //       // touch-action: pan-y;
-          //       // * {
-          //       //   overflow: hidden;
-          //       //   touch-action: pan-y;
-          //       // }
-          //     }
-          //     .folder-outer {
-          //       display: flex;
-          //       min-height: 0;
-          //       height: 0;
-          //       visibility: visible;
-          //       overflow: visible;
-          //       * {
-          //         min-height: 0;
-          //         height: 0;
-          //       }
-          //       &.open {
-          //         height: 100%;
-          //         overflow: visible;
-          //         & > .content {
-          //           width: 100%;
-          //         }
-          //         * {
-          //           height: auto;
-          //         }
-          //       }
-          //     }
         }
-        //   // .folder-outer,
-        //   // .folder-outer > ul {
-        //   //   overflow: auto;
-        //   //   max-height: 100%;
-        //   // }
-        //   // * {
-        //   //   box-sizing: border-box;
-        //   //   min-width: 0;
-        //   //   min-height: 0;
-        //   //   flex: 0 0 auto;
-        //   // }
       }
     }
     .page-title {
