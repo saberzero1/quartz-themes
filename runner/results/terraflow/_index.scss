@@ -909,6 +909,8 @@
   --tab-bg-inactive-hover: rgba(245, 239, 224, 0.25) !important;
   --theme-folder-opacity: 0.12 !important;
   --theme-text-multiplier: 0.85 !important;
+  --transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
+  --transition-ui: 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
   --highlight-bg-rgb: 232, 200, 154 !important;
 
   --quartz-icon-color: currentColor;
@@ -1815,6 +1817,8 @@
   --tab-bg-inactive-hover: rgba(40, 37, 32, 0.25) !important;
   --theme-folder-opacity: 0.12 !important;
   --theme-text-multiplier: 0.85 !important;
+  --transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
+  --transition-ui: 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
 
   --quartz-icon-color: currentColor;
 }

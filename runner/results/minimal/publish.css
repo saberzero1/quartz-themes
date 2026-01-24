@@ -364,7 +364,7 @@ body.theme-light {
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 8px 48px !important;
+  --file-margins: 32px !important;
   --flair-background: white !important;
   --flair-color: rgb(15, 15, 15) !important;
   --focus-ring-color: #0df !important;
@@ -1024,6 +1024,7 @@ body.theme-light {
   --content-margin-start: max(calc(50% - 20rem), 6%) !important;
   --embed-decoration-color: rgb(214, 214, 214) !important;
   --embed-decoration-style: solid !important;
+  --file-margins-y: 8px !important;
   --focus-animation-duration: 0.1s !important;
   --frame-background: rgb(195, 207, 213) !important;
   --frame-background-h: 201 !important;
@@ -1313,7 +1314,7 @@ body.theme-dark {
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 8px 48px !important;
+  --file-margins: 32px !important;
   --flair-background: hsla(0, 0%, 55%, 0.12) !important;
   --flair-color: hsl(0, -10%, 82%) !important;
   --focus-ring-color: #0df !important;
@@ -1973,6 +1974,7 @@ body.theme-dark {
   --content-margin-start: max(calc(50% - 20rem), 6%) !important;
   --embed-decoration-color: rgb(69, 69, 69) !important;
   --embed-decoration-style: solid !important;
+  --file-margins-y: 8px !important;
   --focus-animation-duration: 0.1s !important;
   --frame-background: rgb(74, 94, 104) !important;
   --frame-background-h: 201 !important;

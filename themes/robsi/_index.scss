@@ -19,21 +19,21 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(265, 60%, 50%, 0.12) !important;
-  --background-modifier-border: #e2e8f0 !important;
-  --background-modifier-border-focus: rgb(129, 71, 209) !important;
-  --background-modifier-border-hover: #cbd5e1 !important;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-cover: rgba(248, 250, 252, 0.8) !important;
-  --background-modifier-error: rgb(180, 30, 50) !important;
+  --background-modifier-active-hover: rgb(255, 255, 255) !important;
+  --background-modifier-border: transparent !important;
+  --background-modifier-border-focus: #bdbdbd !important;
+  --background-modifier-border-hover: transparent !important;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
+  --background-modifier-cover: rgba(240, 242, 246, 0.8) !important;
+  --background-modifier-error: rgb(200, 50, 70) !important;
   --background-modifier-error-hover: rgb(200, 50, 70) !important;
-  --background-modifier-error-rgb: 200, 50, 70 !important;
-  --background-modifier-form-field: rgb(240, 242, 246) !important;
-  --background-modifier-form-field-hover: rgb(240, 242, 246) !important;
+  --background-modifier-error-rgb: 233, 49, 71 !important;
+  --background-modifier-form-field: transperent !important;
+  --background-modifier-form-field-hover: transperent !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.7) !important;
   --background-modifier-message: rgba(255, 255, 255, 0.9) !important;
   --background-modifier-success: rgb(20, 140, 80) !important;
-  --background-modifier-success-rgb: 20, 140, 80 !important;
+  --background-modifier-success-rgb: 8, 185, 78 !important;
   --background-primary: #f8fafc !important;
   --background-primary-alt: rgb(248, 250, 252) !important;
   --background-secondary: #f8fafc !important;
@@ -45,13 +45,13 @@
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px #e2e8f0 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #cbd5e1 !important;
-  --bases-embed-border-color: #e2e8f0 !important;
+  --bases-cards-shadow: 0 0 0 1px transparent !important;
+  --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
+  --bases-embed-border-color: transparent !important;
   --bases-embed-border-radius: 6px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #64748b !important;
+  --bases-group-heading-property-color: rgb(75, 85, 95) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -61,13 +61,13 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #e2e8f0 !important;
+  --bases-table-border-color: #e0e0e0 !important;
   --bases-table-cell-background-active: #f8fafc !important;
   --bases-table-cell-background-disabled: rgb(248, 250, 252) !important;
   --bases-table-cell-background-selected: rgba(129, 71, 209, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(129, 71, 209) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #bdbdbd !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(129, 71, 209) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
@@ -79,7 +79,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: #f8fafc !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.7) !important;
-  --bases-table-header-color: #64748b !important;
+  --bases-table-header-color: rgb(75, 85, 95) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -94,7 +94,7 @@
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.7) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: rgb(240, 242, 246) !important;
+  --blockquote-background-color: transparent !important;
   --blockquote-border-color: rgb(129, 71, 209) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
@@ -114,7 +114,7 @@
   --callout-fail: 180, 30, 50;
   --callout-important: 20, 140, 80;
   --callout-info: 30, 70, 160;
-  --callout-padding: 14px;
+  --callout-padding: 16px;
   --callout-question: 180, 120, 0;
   --callout-quote: 75, 85, 95;
   --callout-radius: 8px;
@@ -126,47 +126,47 @@
   --callout-todo: 0, 120, 180;
   --callout-warning: 220, 100, 20;
   --canvas-background: #f8fafc !important;
-  --canvas-card-label-color: #94a3b8 !important;
-  --canvas-color: 255, 255, 255 !important;
-  --canvas-color-1: 200, 50, 70 !important;
-  --canvas-color-2: 220, 100, 20 !important;
-  --canvas-color-3: 180, 120, 0 !important;
-  --canvas-color-4: 20, 140, 80 !important;
-  --canvas-color-5: 0, 120, 180 !important;
-  --canvas-color-6: 160, 30, 140 !important;
+  --canvas-card-label-color: rgb(75, 85, 95) !important;
+  --canvas-color: 192, 192, 192 !important;
+  --canvas-color-1: 233, 49, 71 !important;
+  --canvas-color-2: 236, 117, 0 !important;
+  --canvas-color-3: 224, 172, 0 !important;
+  --canvas-color-4: 8, 185, 78 !important;
+  --canvas-color-5: 0, 191, 188 !important;
+  --canvas-color-6: 120, 82, 238 !important;
   --canvas-dot-pattern: #e0e0e0 !important;
-  --caret-color: #1e252e !important;
-  --checkbox-border-color: #cbd5e1 !important;
-  --checkbox-border-color-hover: rgb(20, 140, 80) !important;
+  --caret-color: rgb(30, 35, 42) !important;
+  --checkbox-border-color: rgb(120, 125, 135) !important;
+  --checkbox-border-color-hover: rgb(120, 125, 135) !important;
   --checkbox-color: rgb(20, 140, 80) !important;
-  --checkbox-color-hover: rgb(30, 70, 160) !important;
+  --checkbox-color-hover: rgb(145, 103, 218) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #f8fafc !important;
   --checkbox-radius: 6px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #64748b !important;
+  --checklist-done-color: rgb(75, 85, 95) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 6px !important;
-  --code-background: rgb(102, 63, 191, 0.05) !important;
-  --code-border-color: #e2e8f0 !important;
+  --code-background: rgb(248, 250, 252) !important;
+  --code-border-color: transparent !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.7) !important;
   --code-comment: rgb(110, 115, 125) !important;
   --code-function: rgb(180, 120, 0) !important;
   --code-important: rgb(220, 100, 20) !important;
   --code-keyword: rgb(160, 30, 140) !important;
-  --code-normal: #64748b !important;
+  --code-normal: rgb(30, 35, 42) !important;
   --code-operator: rgb(200, 50, 70) !important;
   --code-property: rgb(0, 120, 180) !important;
-  --code-punctuation: #64748b !important;
+  --code-punctuation: rgb(75, 85, 95) !important;
   --code-radius: 6px !important;
   --code-size: 0.875em !important;
   --code-string: rgb(20, 140, 80) !important;
   --code-tag: rgb(200, 50, 70) !important;
   --code-value: rgb(160, 30, 140) !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #94a3b8 !important;
-  --collapse-icon-color-collapsed: rgb(102, 63, 191) !important;
+  --collapse-icon-color: rgb(75, 85, 95) !important;
+  --collapse-icon-color-collapsed: rgb(160, 30, 140) !important;
   --color-accent: rgb(129, 71, 209) !important;
   --color-accent-1: rgb(138, 87, 214) !important;
   --color-accent-2: rgb(145, 103, 218) !important;
@@ -184,21 +184,21 @@
   --color-base-60: #707070 !important;
   --color-base-70: #5c5c5c !important;
   --color-blue: rgb(30, 70, 160) !important;
-  --color-blue-rgb: 30, 70, 160 !important;
+  --color-blue-rgb: 8, 109, 221 !important;
   --color-cyan: rgb(0, 120, 180) !important;
-  --color-cyan-rgb: 0, 120, 180 !important;
+  --color-cyan-rgb: 0, 191, 188 !important;
   --color-green: rgb(20, 140, 80) !important;
-  --color-green-rgb: 20, 140, 80 !important;
+  --color-green-rgb: 8, 185, 78 !important;
   --color-orange: rgb(220, 100, 20) !important;
-  --color-orange-rgb: 220, 100, 20 !important;
+  --color-orange-rgb: 236, 117, 0 !important;
   --color-pink: rgb(160, 30, 140) !important;
-  --color-pink-rgb: 160, 30, 140 !important;
+  --color-pink-rgb: 213, 57, 132 !important;
   --color-purple: rgb(160, 30, 140) !important;
-  --color-purple-rgb: 160, 30, 140 !important;
+  --color-purple-rgb: 120, 82, 238 !important;
   --color-red: rgb(200, 50, 70) !important;
-  --color-red-rgb: 200, 50, 70 !important;
+  --color-red-rgb: 233, 49, 71 !important;
   --color-yellow: rgb(180, 120, 0) !important;
-  --color-yellow-rgb: 180, 120, 0 !important;
+  --color-yellow-rgb: 224, 172, 0 !important;
   --corner-smoothing: 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -206,28 +206,28 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: #e2e8f0 !important;
+  --divider-color: transparent !important;
   --divider-color-hover: rgb(129, 71, 209) !important;
-  --divider-vertical-height: 100% !important;
+  --divider-vertical-height: 0% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: rgba(240, 242, 246, 0.3) !important;
+  --dropdown-background: #e2e8f0 !important;
   --dropdown-background-blend-mode: hard-light !important;
   --dropdown-background-hover: #cbd5e1 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px #e2e8f0, inset 0 0 0 1px #e2e8f0 !important;
+    0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid rgb(129, 71, 209) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 1.5rem 1.5rem 0.5rem !important;
+  --embed-padding: 0 0 0 18px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
@@ -238,9 +238,9 @@
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: clamp(5px, 4vw, 20px) !important;
+  --file-margins: clamp(8px, 4vw, 24px) !important;
   --flair-background: #e2e8f0 !important;
-  --flair-color: #1e252e !important;
+  --flair-color: rgb(30, 35, 42) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -293,30 +293,30 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: #e2e8f0 !important;
+  --footnote-divider-color: transparent !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
-  --footnote-gap: 6px !important;
-  --footnote-id-color: #64748b !important;
-  --footnote-id-color-no-occurrences: #94a3b8 !important;
+  --footnote-gap: 8px !important;
+  --footnote-id-color: rgb(75, 85, 95) !important;
+  --footnote-id-color-no-occurrences: rgb(75, 85, 95) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.7) !important;
   --footnote-line-height: 1.6 !important;
-  --footnote-padding-block: 5px !important;
-  --footnote-padding-inline: 5px !important;
+  --footnote-padding-block: 6px !important;
+  --footnote-padding-inline: 6px !important;
   --footnote-radius: 6px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 80px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #cbd5e1 !important;
+  --graph-line: rgb(120, 125, 135) !important;
   --graph-node: rgb(30, 35, 42) !important;
   --graph-node-attachment: rgb(30, 70, 160) !important;
-  --graph-node-focused: rgb(102, 63, 191) !important;
+  --graph-node-focused: rgb(160, 30, 140) !important;
   --graph-node-tag: rgb(220, 100, 20) !important;
-  --graph-node-unresolved: #94a3b8 !important;
-  --graph-text: #1e252e !important;
+  --graph-node-unresolved: rgb(75, 85, 95) !important;
+  --graph-text: rgb(30, 35, 42) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -354,15 +354,15 @@
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: #94a3b8 !important;
+  --heading-formatting: rgb(75, 85, 95) !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: #e2e8f0 !important;
+  --hr-color: transparent !important;
   --hr-thickness: 2px !important;
-  --icon-color: #64748b !important;
-  --icon-color-active: rgb(102, 63, 191) !important;
-  --icon-color-focused: rgb(102, 63, 191) !important;
-  --icon-color-hover: rgb(102, 63, 191) !important;
+  --icon-color: rgb(75, 85, 95) !important;
+  --icon-color-active: rgb(160, 30, 140) !important;
+  --icon-color-focused: rgb(30, 35, 42) !important;
+  --icon-color-hover: rgb(75, 85, 95) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -380,8 +380,8 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgb(120, 125, 135) !important;
-  --indentation-guide-color-active: rgb(120, 125, 135) !important;
+  --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
+  --indentation-guide-color-active: rgba(0, 0, 0, 0.3) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -395,11 +395,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #94a3b8 !important;
+  --input-date-separator: rgb(75, 85, 95) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
-  --input-padding: 6px 8px !important;
-  --input-placeholder-color: #94a3b8 !important;
+  --input-padding: 8px 10px !important;
+  --input-placeholder-color: rgb(75, 85, 95) !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -410,7 +410,7 @@
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
   --interactive-accent: rgb(129, 71, 209) !important;
-  --interactive-accent-hover: rgb(143, 92, 214) !important;
+  --interactive-accent-hover: rgb(145, 103, 218) !important;
   --interactive-accent-hsl: 265, 60%, 55% !important;
   --interactive-hover: #cbd5e1 !important;
   --interactive-normal: #e2e8f0 !important;
@@ -429,16 +429,15 @@
   --line-height-tight: 1.3 !important;
   --link-color: rgb(102, 63, 191) !important;
   --link-color-hover: rgb(0, 120, 180) !important;
-  --link-decoration: underline !important;
-  --link-decoration-hover: underline !important;
+  --link-decoration: none !important;
+  --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: rgb(102, 63, 191) !important;
   --link-external-color-hover: rgb(0, 120, 180) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
-  --link-external-filter: invert(45%) sepia(85%) saturate(2000%)
-    hue-rotate(190deg) brightness(95%) contrast(95%) !important;
-  --link-unresolved-color: rgb(102, 63, 191) !important;
+  --link-external-filter: none !important;
+  --link-unresolved-color: rgb(160, 30, 140) !important;
   --link-unresolved-decoration-color: rgba(129, 71, 209, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -449,30 +448,30 @@
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 1.5em !important;
+  --list-indent: 2em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: rgb(102, 63, 191) !important;
-  --list-marker-color-collapsed: #64748b !important;
+  --list-marker-color-collapsed: rgb(75, 85, 95) !important;
   --list-marker-color-hover: rgb(140, 100, 220) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0 !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: #f8fafc !important;
-  --menu-border-color: #cbd5e1 !important;
+  --menu-border-color: transparent !important;
   --menu-border-width: 1px !important;
-  --menu-padding: 5px !important;
+  --menu-padding: 6px !important;
   --menu-radius: 8px !important;
   --menu-shadow:
     0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: #e2e8f0 !important;
+  --metadata-border-color: transparent !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #e2e8f0 !important;
+  --metadata-divider-color: transparent !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -487,7 +486,7 @@
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #1e252e !important;
+  --metadata-input-text-color: rgb(30, 35, 42) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.7) !important;
   --metadata-label-background-hover: transparent !important;
@@ -496,16 +495,16 @@
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #64748b !important;
-  --metadata-label-text-color-hover: #64748b !important;
+  --metadata-label-text-color: rgb(75, 85, 95) !important;
+  --metadata-label-text-color-hover: rgb(75, 85, 95) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 8px 0 !important;
+  --metadata-padding: 10px 0 !important;
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.7) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(129, 71, 209) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #cbd5e1 !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #bdbdbd !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -513,7 +512,7 @@
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
   --modal-background: #f8fafc !important;
-  --modal-border-color: #e2e8f0 !important;
+  --modal-border-color: #bdbdbd !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-height: 85vh !important;
@@ -524,34 +523,34 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: #94a3b8 !important;
-  --nav-collapse-icon-color-collapsed: #94a3b8 !important;
-  --nav-heading-color: #1e252e !important;
-  --nav-heading-color-collapsed: #94a3b8 !important;
-  --nav-heading-color-collapsed-hover: #64748b !important;
-  --nav-heading-color-hover: #1e252e !important;
+  --nav-collapse-icon-color: rgb(75, 85, 95) !important;
+  --nav-collapse-icon-color-collapsed: rgb(75, 85, 95) !important;
+  --nav-heading-color: rgb(30, 35, 42) !important;
+  --nav-heading-color-collapsed: rgb(75, 85, 95) !important;
+  --nav-heading-color-collapsed-hover: rgb(75, 85, 95) !important;
+  --nav-heading-color-hover: rgb(30, 35, 42) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgb(255, 255, 255) !important;
+  --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgb(0, 120, 180) !important;
-  --nav-item-background-hover: rgba(0, 120, 180, 0.08) !important;
+  --nav-item-background-active: rgba(rgb(255, 255, 255), 0.2) !important;
+  --nav-item-background-hover: rgb(255, 255, 255) !important;
   --nav-item-background-selected: rgba(129, 71, 209, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: #2d3748 !important;
-  --nav-item-color-active: rgb(102, 63, 191) !important;
-  --nav-item-color-highlighted: rgb(102, 63, 191) !important;
-  --nav-item-color-hover: #1a202c !important;
-  --nav-item-color-selected: #1e252e !important;
-  --nav-item-padding: 6px 8px 6px 18px !important;
-  --nav-item-parent-padding: 4px 16px 4px 8px !important;
+  --nav-item-color: rgba(255, 255, 255, 0.9) !important;
+  --nav-item-color-active: rgb(30, 35, 42) !important;
+  --nav-item-color-highlighted: rgb(160, 30, 140) !important;
+  --nav-item-color-hover: rgb(30, 35, 42) !important;
+  --nav-item-color-selected: rgb(30, 35, 42) !important;
+  --nav-item-padding: 4px 8px 4px 18px !important;
+  --nav-item-parent-padding: 4px 8px 4px 18px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #94a3b8 !important;
-  --nav-tag-color-active: #64748b !important;
-  --nav-tag-color-hover: #64748b !important;
+  --nav-tag-color: rgb(75, 85, 95) !important;
+  --nav-tag-color-active: rgb(75, 85, 95) !important;
+  --nav-tag-color-hover: rgb(75, 85, 95) !important;
   --nav-tag-radius: 6px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
@@ -569,13 +568,13 @@
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: #e2e8f0 !important;
-  --pill-border-color-hover: #cbd5e1 !important;
+  --pill-border-color: transparent !important;
+  --pill-border-color-hover: transparent !important;
   --pill-border-width: 1px !important;
-  --pill-color: #64748b !important;
-  --pill-color-hover: #1e252e !important;
-  --pill-color-remove: #94a3b8 !important;
-  --pill-color-remove-hover: rgb(102, 63, 191) !important;
+  --pill-color: rgb(75, 85, 95) !important;
+  --pill-color-hover: rgb(30, 35, 42) !important;
+  --pill-color-remove: rgb(75, 85, 95) !important;
+  --pill-color-remove-hover: rgb(160, 30, 140) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -589,7 +588,7 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 500px !important;
-  --prompt-border-color: #e2e8f0 !important;
+  --prompt-border-color: #bdbdbd !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -601,22 +600,22 @@
   --radius-xl: 16px !important;
   --ribbon-background: #f8fafc !important;
   --ribbon-background-collapsed: #f8fafc !important;
-  --ribbon-padding: 8px 6px 12px !important;
+  --ribbon-padding: 10px 8px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.3) !important;
-  --scrollbar-bg: rgba(0, 0, 0, 0.03) !important;
+  --scrollbar-active-thumb-bg: rgba(75, 85, 95, 0.4) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.15) !important;
-  --scrollbar-width: 3px !important;
-  --search-clear-button-color: #64748b !important;
+  --scrollbar-thumb-bg: rgba(75, 85, 95, 0.2) !important;
+  --scrollbar-width: 10px !important;
+  --search-clear-button-color: rgb(75, 85, 95) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #64748b !important;
+  --search-icon-color: rgb(75, 85, 95) !important;
   --search-icon-size: 18px !important;
   --search-result-background: #f8fafc !important;
   --shadow-l:
@@ -631,13 +630,13 @@
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
   --size-2-2: 4px !important;
-  --size-2-3: 5px !important;
-  --size-4-1: 6px !important;
+  --size-2-3: 6px !important;
+  --size-4-1: 8px !important;
   --size-4-10: 40px !important;
   --size-4-12: 48px !important;
   --size-4-16: 64px !important;
   --size-4-18: 72px !important;
-  --size-4-2: 8px !important;
+  --size-4-2: 10px !important;
   --size-4-3: 12px !important;
   --size-4-4: 14px !important;
   --size-4-5: 16px !important;
@@ -646,22 +645,22 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #cbd5e1 !important;
+  --slider-thumb-border-color: transparent !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: rgb(255, 255, 255) !important;
+  --slider-track-background: transparent !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #f8fafc !important;
-  --status-bar-border-color: #e2e8f0 !important;
+  --status-bar-border-color: transparent !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: #64748b !important;
+  --status-bar-text-color: rgb(75, 85, 95) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -681,9 +680,9 @@
   --tab-divider-color: rgba(200, 205, 210, 0.4) !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 200px !important;
-  --tab-outline-color: rgba(180, 185, 190, 0.6) !important;
-  --tab-outline-width: 2px !important;
-  --tab-radius: 8px !important;
+  --tab-outline-color: transparent !important;
+  --tab-outline-width: 1px !important;
+  --tab-radius: 6px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
   --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
@@ -698,18 +697,18 @@
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(129, 71, 209) !important;
-  --tab-text-color: #94a3b8 !important;
-  --tab-text-color-active: rgb(129, 71, 209) !important;
-  --tab-text-color-focused: #64748b !important;
-  --tab-text-color-focused-active: rgba(129, 71, 209, 0.8) !important;
-  --tab-text-color-focused-active-current: rgb(129, 71, 209) !important;
-  --tab-text-color-focused-highlighted: rgb(102, 63, 191) !important;
+  --tab-text-color: rgb(75, 85, 95) !important;
+  --tab-text-color-active: rgb(75, 85, 95) !important;
+  --tab-text-color-focused: rgb(75, 85, 95) !important;
+  --tab-text-color-focused-active: rgb(75, 85, 95) !important;
+  --tab-text-color-focused-active-current: rgb(30, 35, 42) !important;
+  --tab-text-color-focused-highlighted: rgb(160, 30, 140) !important;
   --tab-width: 120px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: #e2e8f0 !important;
+  --table-add-button-border-color: transparent !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #e2e8f0 !important;
+  --table-border-color: #e0e0e0 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -719,13 +718,13 @@
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: rgb(129, 71, 209) !important;
-  --table-drag-handle-color: #94a3b8 !important;
-  --table-drag-handle-color-active: #ffffff !important;
+  --table-drag-handle-color: rgb(75, 85, 95) !important;
+  --table-drag-handle-color-active: rgb(248, 250, 252) !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: #f8fafc !important;
-  --table-header-border-color: #e2e8f0 !important;
+  --table-header-background: rgb(230, 232, 236) !important;
+  --table-header-border-color: #e0e0e0 !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: #1e252e !important;
+  --table-header-color: rgb(30, 35, 42) !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -740,12 +739,12 @@
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(102, 63, 191, 0.1) !important;
-  --tag-background-hover: rgba(0, 120, 180, 0.1) !important;
+  --tag-background: rgba(160, 30, 140, 0.15) !important;
+  --tag-background-hover: rgba(0, 120, 180, 0.15) !important;
   --tag-border-color: rgba(129, 71, 209, 0.15) !important;
   --tag-border-color-hover: rgba(129, 71, 209, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(102, 63, 191) !important;
+  --tag-color: rgb(160, 30, 140) !important;
   --tag-color-hover: rgb(0, 120, 180) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -753,26 +752,26 @@
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(102, 63, 191) !important;
+  --text-accent: rgb(160, 30, 140) !important;
   --text-accent-hover: rgb(0, 120, 180) !important;
-  --text-error: rgb(200, 50, 70) !important;
-  --text-faint: #94a3b8 !important;
-  --text-highlight-bg: rgba(220, 100, 20, 0.15) !important;
+  --text-error: rgb(180, 30, 50) !important;
+  --text-faint: rgb(75, 85, 95) !important;
+  --text-highlight-bg: rgba(220, 100, 20, 0.25) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #64748b !important;
-  --text-normal: #1e252e !important;
-  --text-on-accent: #ffffff !important;
+  --text-muted: rgb(75, 85, 95) !important;
+  --text-normal: rgb(30, 35, 42) !important;
+  --text-on-accent: rgb(248, 250, 252) !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(102, 63, 191, 0.15) !important;
+  --text-selection: rgba(129, 71, 209, 0.2) !important;
   --text-success: rgb(20, 140, 80) !important;
   --text-warning: rgb(220, 100, 20) !important;
-  --titlebar-background: #f8fafc !important;
-  --titlebar-background-focused: #f8fafc !important;
-  --titlebar-border-color: #e2e8f0 !important;
+  --titlebar-background: transparent !important;
+  --titlebar-background-focused: transparent !important;
+  --titlebar-border-color: transparent !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 40px !important;
-  --titlebar-text-color: #475569 !important;
-  --titlebar-text-color-focused: #1e252e !important;
+  --titlebar-text-color: rgb(75, 85, 95) !important;
+  --titlebar-text-color-focused: rgb(30, 35, 42) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -780,19 +779,19 @@
   --toggle-s-thumb-height: 15px !important;
   --toggle-s-thumb-width: 15px !important;
   --toggle-s-width: 34px !important;
-  --toggle-thumb-color: #f8fafc !important;
+  --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #1e252e !important;
-  --vault-profile-color-hover: #1e252e !important;
+  --vault-profile-color: rgb(30, 35, 42) !important;
+  --vault-profile-color-hover: rgb(30, 35, 42) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: #f8fafc !important;
+  --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
@@ -801,12 +800,11 @@
   --h3-color: rgb(20, 140, 80) !important;
   --h4-color: rgb(0, 120, 180) !important;
   --h5-color: rgb(30, 70, 160) !important;
-  --h6-color: rgb(220, 100, 20) !important;
+  --h6-color: rgb(180, 120, 0) !important;
   --inline-title-color: rgb(200, 50, 70) !important;
-  --text-error-hover: rgb(180, 30, 50) !important;
+  --text-error-hover: rgb(200, 50, 70) !important;
   --background-modifier-form-field-highlighted: rgb(240, 242, 246) !important;
-  --blockquote-color: #64748b !important;
-  --table-header-background-hover: #f1f5f9 !important;
+  --table-header-background-hover: rgb(230, 232, 236) !important;
   --accent-color: rgb(129, 71, 209) !important;
   --bold-color: rgb(0, 120, 180) !important;
   --italic-color: rgb(30, 70, 160) !important;
@@ -826,30 +824,21 @@
   --pink: rgb(200, 30, 140) !important;
   --comment: rgb(120, 125, 135) !important;
   --cyan: rgb(0, 120, 180) !important;
-  --blockquote-border: rgb(0, 120, 180) !important;
-  --blockquote-bg: rgba(0, 120, 180, 0.05) !important;
-  --embed-background: rgb(240, 242, 246) !important;
+  --bullet-new-color: rgb(102, 63, 191) !important;
   --internal-link-color: rgb(20, 140, 80) !important;
   --shadow-m:
     0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12) !important;
-  --table-width: 88cqw !important;
   --background-primary-rgb: 248, 250, 252 !important;
-  --date-background-color: rgba(30, 70, 160, 0.1) !important;
-  --flashing-background: rgba(265, 60%, 55%, 0.3) !important;
-  --mermaid-loopline: rgb(30, 70, 160) !important;
-  --mermaid-note: rgb(25, 55, 100) !important;
   --nav-file-tag: rgba(180, 120, 0, 0.9) !important;
   --magenta: rgb(160, 30, 140) !important;
   --teal: rgb(0, 140, 160) !important;
   --fg: rgb(30, 35, 42) !important;
-  --image-radius: 0px !important;
   --bg: rgb(248, 250, 252) !important;
   --purple-light: rgb(140, 100, 220) !important;
   --background-secondary-rgb: 240, 242, 246 !important;
+  --setting-items-background: transparent !important;
   --tab-background: rgba(240, 242, 246, 0.9) !important;
   --tab-min-width: 40px !important;
-  --link-external-color-rgb: 102, 63, 191 !important;
-  --mermaid-actor: rgb(75, 85, 95) !important;
   --border-radius: 8px !important;
   --bg_dark2: rgb(230, 232, 236) !important;
   --bg_highlight: rgb(255, 255, 255) !important;
@@ -868,7 +857,6 @@
   --blue_x: 30, 70, 160 !important;
   --comment_x: 120, 125, 135 !important;
   --cyan_x: 0, 120, 180 !important;
-  --date-color: rgb(30, 70, 160) !important;
   --fg_dark_x: 75, 85, 95 !important;
   --fg_x: 30, 35, 42 !important;
   --magenta_x: 160, 30, 140 !important;
@@ -881,26 +869,21 @@
     "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace !important;
   --background-modifier: rgba(255, 255, 255, 0.5) !important;
   --background-modifier-hover-rgb: 255, 255, 255 !important;
-  --blockquote-accent: rgb(102, 63, 191) !important;
-  --blockquote-quote-mark: rgba(102, 63, 191, 0.7) !important;
   --code-comment_x: 110, 115, 125 !important;
-  --code-selection-bg: rgba(102, 63, 191, 0.15) !important;
   --folder-note-color: rgb(120, 85, 200) !important;
   --folder-note-color_x: 120, 85, 200 !important;
+  --font-family-heading:
+    "Inter", system-ui, -apple-system, sans-serif !important;
   --font-family-theme: "Inter", system-ui, -apple-system, sans-serif !important;
   --font-size-theme: 16px !important;
   --insertion-color: rgb(220, 100, 20) !important;
   --internal-link-color-hover: rgb(30, 70, 160) !important;
   --line-height-theme: 1.6 !important;
-  --link-external-color-hover-rgb: 0, 120, 180 !important;
   --list-number-color: rgb(160, 30, 140) !important;
   --list-number-color-hover: rgb(180, 60, 200) !important;
   --magent_hsl: 261 65% 50% !important;
   --magenta-light: rgb(180, 60, 200) !important;
-  --magenta-light-rgb: 180, 60, 200 !important;
   --magenta-light_x: 180, 60, 200 !important;
-  --magenta-rgb: 160, 30, 140 !important;
-  --menu-background-rgb: 240, 242, 246 !important;
   --motion-duration-fast: 0.15s !important;
   --motion-duration-medium: 0.25s !important;
   --motion-duration-slow: 0.35s !important;
@@ -912,11 +895,6 @@
   --shadow-xl:
     0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05) !important;
   --tab-background-hover: rgba(248, 250, 252, 0.8) !important;
-  --tab-background-unfocused: rgba(235, 238, 242, 0.7) !important;
-  --tab-container-background-focused: #f8fafc !important;
-  --tab-outline-color-active: rgba(120, 125, 135, 0.8) !important;
-  --text-on-code: #1e252e !important;
-  --titlebar-text-color-inactive: #94a3b8 !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -933,39 +911,39 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(125, 207, 255, 0.12) !important;
-  --background-modifier-border: rgb(25, 25, 25) !important;
-  --background-modifier-border-focus: rgb(128, 208, 255) !important;
-  --background-modifier-border-hover: rgb(18, 18, 18) !important;
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.5) !important;
-  --background-modifier-cover: rgba(2, 2, 2, 0.8) !important;
-  --background-modifier-error: rgb(219, 75, 75) !important;
+  --background-modifier-active-hover: rgb(25, 25, 25) !important;
+  --background-modifier-border: transparent !important;
+  --background-modifier-border-focus: #555555 !important;
+  --background-modifier-border-hover: transparent !important;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
+  --background-modifier-cover: rgba(8, 8, 8, 0.8) !important;
+  --background-modifier-error: rgb(255, 117, 127) !important;
   --background-modifier-error-hover: rgb(255, 117, 127) !important;
-  --background-modifier-error-rgb: 255, 117, 127 !important;
-  --background-modifier-form-field: rgb(8, 8, 8) !important;
-  --background-modifier-form-field-hover: rgb(8, 8, 8) !important;
+  --background-modifier-error-rgb: 251, 70, 76 !important;
+  --background-modifier-form-field: transperent !important;
+  --background-modifier-form-field-hover: transperent !important;
   --background-modifier-hover: rgba(25, 25, 25, 0.7) !important;
   --background-modifier-message: rgba(25, 25, 25, 0.9) !important;
   --background-modifier-success: rgb(158, 206, 106) !important;
-  --background-modifier-success-rgb: 158, 206, 106 !important;
-  --background-primary: transparent !important;
+  --background-modifier-success-rgb: 68, 207, 110 !important;
+  --background-primary: #020202 !important;
   --background-primary-alt: rgb(15, 15, 15) !important;
   --background-secondary: #020202 !important;
   --background-secondary-alt: rgb(8, 8, 8) !important;
-  --bases-cards-background: transparent !important;
+  --bases-cards-background: #020202 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-cover-background: rgb(15, 15, 15) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(25, 25, 25) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(18, 18, 18) !important;
-  --bases-embed-border-color: rgb(25, 25, 25) !important;
+  --bases-cards-shadow: 0 0 0 1px transparent !important;
+  --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
+  --bases-embed-border-color: transparent !important;
   --bases-embed-border-radius: 6px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #888 !important;
+  --bases-group-heading-property-color: rgb(180, 180, 180) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -975,13 +953,13 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(25, 25, 25) !important;
-  --bases-table-cell-background-active: transparent !important;
+  --bases-table-border-color: #363636 !important;
+  --bases-table-cell-background-active: #020202 !important;
   --bases-table-cell-background-disabled: rgb(15, 15, 15) !important;
   --bases-table-cell-background-selected: rgba(128, 208, 255, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(128, 208, 255) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(128, 208, 255) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
@@ -991,9 +969,9 @@
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: rgb(15, 15, 15) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: transparent !important;
+  --bases-table-header-background: #020202 !important;
   --bases-table-header-background-hover: rgba(25, 25, 25, 0.7) !important;
-  --bases-table-header-color: #888 !important;
+  --bases-table-header-color: rgb(180, 180, 180) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -1004,11 +982,11 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: transparent !important;
+  --bases-table-summary-background: #020202 !important;
   --bases-table-summary-background-hover: rgba(25, 25, 25, 0.7) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: rgb(8, 8, 8) !important;
+  --blockquote-background-color: transparent !important;
   --blockquote-border-color: rgb(128, 208, 255) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
@@ -1028,7 +1006,7 @@
   --callout-fail: 219, 75, 75;
   --callout-important: 158, 206, 106;
   --callout-info: 122, 162, 247;
-  --callout-padding: 14px;
+  --callout-padding: 16px;
   --callout-question: 224, 175, 104;
   --callout-quote: 180, 180, 180;
   --callout-radius: 8px;
@@ -1039,30 +1017,30 @@
   --callout-title-weight: 600;
   --callout-todo: 125, 207, 255;
   --callout-warning: 255, 158, 100;
-  --canvas-background: transparent !important;
+  --canvas-background: #020202 !important;
   --canvas-card-label-color: rgb(180, 180, 180) !important;
   --canvas-color: 126, 126, 126 !important;
-  --canvas-color-1: 255, 117, 127 !important;
-  --canvas-color-2: 255, 158, 100 !important;
-  --canvas-color-3: 224, 175, 104 !important;
-  --canvas-color-4: 158, 206, 106 !important;
-  --canvas-color-5: 125, 207, 255 !important;
-  --canvas-color-6: 187, 154, 247 !important;
+  --canvas-color-1: 251, 70, 76 !important;
+  --canvas-color-2: 233, 151, 63 !important;
+  --canvas-color-3: 224, 222, 113 !important;
+  --canvas-color-4: 68, 207, 110 !important;
+  --canvas-color-5: 83, 223, 221 !important;
+  --canvas-color-6: 168, 130, 255 !important;
   --canvas-dot-pattern: #363636 !important;
-  --caret-color: #d0d0d0 !important;
+  --caret-color: rgb(220, 220, 220) !important;
   --checkbox-border-color: rgb(120, 120, 120) !important;
-  --checkbox-border-color-hover: rgb(158, 206, 106) !important;
+  --checkbox-border-color-hover: rgb(120, 120, 120) !important;
   --checkbox-color: rgb(158, 206, 106) !important;
-  --checkbox-color-hover: rgb(122, 162, 247) !important;
+  --checkbox-color-hover: hsl(199, 102%, 86.25%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: transparent !important;
+  --checkbox-marker-color: #020202 !important;
   --checkbox-radius: 6px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #888 !important;
+  --checklist-done-color: rgb(180, 180, 180) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 6px !important;
   --code-background: rgb(187, 154, 247, 0.05) !important;
-  --code-border-color: rgb(25, 25, 25) !important;
+  --code-border-color: transparent !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(25, 25, 25, 0.7) !important;
   --code-comment: rgb(115, 125, 165) !important;
@@ -1072,7 +1050,7 @@
   --code-normal: rgb(180, 180, 180) !important;
   --code-operator: rgb(255, 117, 127) !important;
   --code-property: rgb(125, 207, 255) !important;
-  --code-punctuation: #888 !important;
+  --code-punctuation: rgb(180, 180, 180) !important;
   --code-radius: 6px !important;
   --code-size: 0.875em !important;
   --code-string: rgb(158, 206, 106) !important;
@@ -1098,21 +1076,21 @@
   --color-base-60: #999999 !important;
   --color-base-70: #b3b3b3 !important;
   --color-blue: rgb(122, 162, 247) !important;
-  --color-blue-rgb: 122, 162, 247 !important;
+  --color-blue-rgb: 2, 122, 255 !important;
   --color-cyan: rgb(125, 207, 255) !important;
-  --color-cyan-rgb: 125, 207, 255 !important;
+  --color-cyan-rgb: 83, 223, 221 !important;
   --color-green: rgb(158, 206, 106) !important;
-  --color-green-rgb: 158, 206, 106 !important;
+  --color-green-rgb: 68, 207, 110 !important;
   --color-orange: rgb(255, 158, 100) !important;
-  --color-orange-rgb: 255, 158, 100 !important;
+  --color-orange-rgb: 233, 151, 63 !important;
   --color-pink: rgb(187, 154, 247) !important;
-  --color-pink-rgb: 187, 154, 247 !important;
+  --color-pink-rgb: 250, 153, 205 !important;
   --color-purple: rgb(187, 154, 247) !important;
-  --color-purple-rgb: 187, 154, 247 !important;
+  --color-purple-rgb: 168, 130, 255 !important;
   --color-red: rgb(255, 117, 127) !important;
-  --color-red-rgb: 255, 117, 127 !important;
+  --color-red-rgb: 251, 70, 76 !important;
   --color-yellow: rgb(224, 175, 104) !important;
-  --color-yellow-rgb: 224, 175, 104 !important;
+  --color-yellow-rgb: 224, 222, 113 !important;
   --corner-smoothing: 0 !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -1120,28 +1098,28 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: rgb(25, 25, 25) !important;
+  --divider-color: transparent !important;
   --divider-color-hover: rgb(128, 208, 255) !important;
-  --divider-vertical-height: 100% !important;
+  --divider-vertical-height: 0% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: rgba(8, 8, 8, 0.3) !important;
+  --dropdown-background: rgb(8, 8, 8) !important;
   --dropdown-background-blend-mode: hard-light !important;
   --dropdown-background-hover: rgb(25, 25, 25) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px rgb(25, 25, 25), inset 0 0 0 1px rgb(25, 25, 25) !important;
+    0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid rgb(128, 208, 255) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
-  --embed-padding: 1.5rem 1.5rem 0.5rem !important;
+  --embed-padding: 0 0 0 18px !important;
   --file-folding-offset: 24px !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
@@ -1152,9 +1130,9 @@
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: clamp(5px, 4vw, 20px) !important;
+  --file-margins: clamp(8px, 4vw, 24px) !important;
   --flair-background: rgb(8, 8, 8) !important;
-  --flair-color: #d0d0d0 !important;
+  --flair-color: rgb(220, 220, 220) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -1207,18 +1185,18 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgb(25, 25, 25) !important;
+  --footnote-divider-color: transparent !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
-  --footnote-gap: 6px !important;
-  --footnote-id-color: #888 !important;
+  --footnote-gap: 8px !important;
+  --footnote-id-color: rgb(180, 180, 180) !important;
   --footnote-id-color-no-occurrences: rgb(180, 180, 180) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(25, 25, 25, 0.7) !important;
   --footnote-line-height: 1.6 !important;
-  --footnote-padding-block: 5px !important;
-  --footnote-padding-inline: 5px !important;
+  --footnote-padding-block: 6px !important;
+  --footnote-padding-inline: 6px !important;
   --footnote-radius: 6px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
@@ -1230,7 +1208,7 @@
   --graph-node-focused: rgb(187, 154, 247) !important;
   --graph-node-tag: rgb(255, 158, 100) !important;
   --graph-node-unresolved: rgb(180, 180, 180) !important;
-  --graph-text: #d0d0d0 !important;
+  --graph-text: rgb(220, 220, 220) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -1271,12 +1249,12 @@
   --heading-formatting: rgb(180, 180, 180) !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: rgb(25, 25, 25) !important;
+  --hr-color: transparent !important;
   --hr-thickness: 2px !important;
-  --icon-color: #888 !important;
+  --icon-color: rgb(180, 180, 180) !important;
   --icon-color-active: rgb(187, 154, 247) !important;
-  --icon-color-focused: rgb(187, 154, 247) !important;
-  --icon-color-hover: rgb(187, 154, 247) !important;
+  --icon-color-focused: rgb(220, 220, 220) !important;
+  --icon-color-hover: rgb(180, 180, 180) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1294,8 +1272,8 @@
   --icon-xs-stroke-width: 2px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
-  --indentation-guide-color: rgb(120, 120, 120) !important;
-  --indentation-guide-color-active: rgb(120, 120, 120) !important;
+  --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
+  --indentation-guide-color-active: rgba(255, 255, 255, 0.3) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -1312,7 +1290,7 @@
   --input-date-separator: rgb(180, 180, 180) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
-  --input-padding: 6px 8px !important;
+  --input-padding: 8px 10px !important;
   --input-placeholder-color: rgb(180, 180, 180) !important;
   --input-radius: 5px !important;
   --input-shadow:
@@ -1324,7 +1302,7 @@
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --interactive-accent: rgb(128, 208, 255) !important;
-  --interactive-accent-hover: rgb(153, 218, 255) !important;
+  --interactive-accent-hover: hsl(199, 102%, 86.25%) !important;
   --interactive-accent-hsl: 202, 100%, 75% !important;
   --interactive-hover: rgb(25, 25, 25) !important;
   --interactive-normal: rgb(8, 8, 8) !important;
@@ -1343,15 +1321,14 @@
   --line-height-tight: 1.3 !important;
   --link-color: rgb(187, 154, 247) !important;
   --link-color-hover: rgb(125, 207, 255) !important;
-  --link-decoration: underline !important;
-  --link-decoration-hover: underline !important;
+  --link-decoration: none !important;
+  --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: rgb(187, 154, 247) !important;
   --link-external-color-hover: rgb(125, 207, 255) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
-  --link-external-filter: invert(35%) sepia(28%) saturate(681%)
-    hue-rotate(192deg) brightness(94%) contrast(85%) !important;
+  --link-external-filter: none !important;
   --link-unresolved-color: rgb(187, 154, 247) !important;
   --link-unresolved-decoration-color: rgba(128, 208, 255, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
@@ -1363,30 +1340,30 @@
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 1.5em !important;
+  --list-indent: 2em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: rgb(187, 154, 247) !important;
-  --list-marker-color-collapsed: #888 !important;
+  --list-marker-color-collapsed: rgb(180, 180, 180) !important;
   --list-marker-color-hover: rgb(210, 180, 255) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0 !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: #020202 !important;
-  --menu-border-color: rgb(18, 18, 18) !important;
+  --menu-border-color: transparent !important;
   --menu-border-width: 1px !important;
-  --menu-padding: 5px !important;
+  --menu-padding: 6px !important;
   --menu-radius: 8px !important;
   --menu-shadow:
     0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgb(25, 25, 25) !important;
+  --metadata-border-color: transparent !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgb(25, 25, 25) !important;
+  --metadata-divider-color: transparent !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1401,7 +1378,7 @@
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #d0d0d0 !important;
+  --metadata-input-text-color: rgb(220, 220, 220) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(25, 25, 25, 0.7) !important;
   --metadata-label-background-hover: transparent !important;
@@ -1410,24 +1387,24 @@
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #888 !important;
-  --metadata-label-text-color-hover: #888 !important;
+  --metadata-label-text-color: rgb(180, 180, 180) !important;
+  --metadata-label-text-color-hover: rgb(180, 180, 180) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 8px 0 !important;
+  --metadata-padding: 10px 0 !important;
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(25, 25, 25, 0.7) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(128, 208, 255) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(18, 18, 18) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #555555 !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: transparent !important;
-  --modal-border-color: rgb(25, 25, 25) !important;
+  --modal-background: #020202 !important;
+  --modal-border-color: #555555 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-height: 85vh !important;
@@ -1440,52 +1417,52 @@
   --mono-rgb-100: 255, 255, 255 !important;
   --nav-collapse-icon-color: rgb(180, 180, 180) !important;
   --nav-collapse-icon-color-collapsed: rgb(180, 180, 180) !important;
-  --nav-heading-color: #d0d0d0 !important;
+  --nav-heading-color: rgb(220, 220, 220) !important;
   --nav-heading-color-collapsed: rgb(180, 180, 180) !important;
-  --nav-heading-color-collapsed-hover: #888 !important;
-  --nav-heading-color-hover: #d0d0d0 !important;
+  --nav-heading-color-collapsed-hover: rgb(180, 180, 180) !important;
+  --nav-heading-color-hover: rgb(220, 220, 220) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
-  --nav-indentation-guide-color: rgb(25, 25, 25) !important;
+  --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgb(25, 25, 25) !important;
+  --nav-item-background-active: rgba(rgb(25, 25, 25), 0.2) !important;
   --nav-item-background-hover: rgb(25, 25, 25) !important;
   --nav-item-background-selected: rgba(128, 208, 255, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgba(255, 255, 255, 0.9) !important;
-  --nav-item-color-active: rgb(187, 154, 247) !important;
+  --nav-item-color-active: rgb(220, 220, 220) !important;
   --nav-item-color-highlighted: rgb(187, 154, 247) !important;
   --nav-item-color-hover: rgb(220, 220, 220) !important;
-  --nav-item-color-selected: #d0d0d0 !important;
-  --nav-item-padding: 6px 8px 6px 18px !important;
-  --nav-item-parent-padding: 4px 16px 4px 8px !important;
+  --nav-item-color-selected: rgb(220, 220, 220) !important;
+  --nav-item-padding: 4px 8px 4px 18px !important;
+  --nav-item-parent-padding: 4px 8px 4px 18px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: rgb(180, 180, 180) !important;
-  --nav-tag-color-active: #888 !important;
-  --nav-tag-color-hover: #888 !important;
+  --nav-tag-color-active: rgb(180, 180, 180) !important;
+  --nav-tag-color-hover: rgb(180, 180, 180) !important;
   --nav-tag-radius: 6px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: transparent !important;
-  --pdf-page-background: transparent !important;
-  --pdf-shadow: 0 0 0 1px rgb(25, 25, 25) !important;
-  --pdf-sidebar-background: transparent !important;
+  --pdf-background: #020202 !important;
+  --pdf-page-background: #020202 !important;
+  --pdf-shadow: 0 0 0 1px transparent !important;
+  --pdf-sidebar-background: #020202 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(25, 25, 25) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(25, 25, 25) !important;
-  --pill-border-color-hover: rgb(18, 18, 18) !important;
+  --pill-border-color: transparent !important;
+  --pill-border-color-hover: transparent !important;
   --pill-border-width: 1px !important;
-  --pill-color: #888 !important;
-  --pill-color-hover: #d0d0d0 !important;
+  --pill-color: rgb(180, 180, 180) !important;
+  --pill-color-hover: rgb(220, 220, 220) !important;
   --pill-color-remove: rgb(180, 180, 180) !important;
   --pill-color-remove-hover: rgb(187, 154, 247) !important;
   --pill-decoration: none !important;
@@ -1501,7 +1478,7 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 500px !important;
-  --prompt-border-color: rgb(25, 25, 25) !important;
+  --prompt-border-color: #555555 !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -1512,25 +1489,25 @@
   --radius-s: 6px !important;
   --radius-xl: 16px !important;
   --ribbon-background: #020202 !important;
-  --ribbon-background-collapsed: transparent !important;
-  --ribbon-padding: 8px 6px 12px !important;
+  --ribbon-background-collapsed: #020202 !important;
+  --ribbon-padding: 10px 8px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.3) !important;
-  --scrollbar-bg: rgba(255, 255, 255, 0.03) !important;
+  --scrollbar-active-thumb-bg: rgba(180, 180, 180, 0.4) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: 12px !important;
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.15) !important;
-  --scrollbar-width: 3px !important;
-  --search-clear-button-color: #888 !important;
+  --scrollbar-thumb-bg: rgba(180, 180, 180, 0.2) !important;
+  --scrollbar-width: 10px !important;
+  --search-clear-button-color: rgb(180, 180, 180) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #888 !important;
+  --search-icon-color: rgb(180, 180, 180) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: transparent !important;
+  --search-result-background: #020202 !important;
   --shadow-l:
     0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1) !important;
   --shadow-s:
@@ -1543,13 +1520,13 @@
   --sidebar-tab-text-display: none !important;
   --size-2-1: 2px !important;
   --size-2-2: 4px !important;
-  --size-2-3: 5px !important;
-  --size-4-1: 6px !important;
+  --size-2-3: 6px !important;
+  --size-4-1: 8px !important;
   --size-4-10: 40px !important;
   --size-4-12: 48px !important;
   --size-4-16: 64px !important;
   --size-4-18: 72px !important;
-  --size-4-2: 8px !important;
+  --size-4-2: 10px !important;
   --size-4-3: 12px !important;
   --size-4-4: 14px !important;
   --size-4-5: 16px !important;
@@ -1558,22 +1535,22 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: rgb(18, 18, 18) !important;
+  --slider-thumb-border-color: transparent !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: rgb(25, 25, 25) !important;
+  --slider-track-background: transparent !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #020202 !important;
-  --status-bar-border-color: rgb(25, 25, 25) !important;
+  --status-bar-border-color: transparent !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: #888 !important;
+  --status-bar-text-color: rgb(180, 180, 180) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
@@ -1588,14 +1565,14 @@
   --sync-avatar-color-8: rgb(187, 154, 247) !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: rgba(25, 25, 25, 0.95) !important;
-  --tab-container-background: transparent !important;
+  --tab-container-background: #020202 !important;
   --tab-curve: 6px !important;
   --tab-divider-color: rgba(40, 40, 40, 0.3) !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 200px !important;
-  --tab-outline-color: rgba(60, 60, 60, 0.5) !important;
-  --tab-outline-width: 2px !important;
-  --tab-radius: 8px !important;
+  --tab-outline-color: transparent !important;
+  --tab-outline-width: 1px !important;
+  --tab-radius: 6px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
   --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
@@ -1611,17 +1588,17 @@
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(128, 208, 255) !important;
   --tab-text-color: rgb(180, 180, 180) !important;
-  --tab-text-color-active: rgb(128, 208, 255) !important;
-  --tab-text-color-focused: #888 !important;
-  --tab-text-color-focused-active: rgba(128, 208, 255, 0.8) !important;
-  --tab-text-color-focused-active-current: rgb(128, 208, 255) !important;
+  --tab-text-color-active: rgb(180, 180, 180) !important;
+  --tab-text-color-focused: rgb(180, 180, 180) !important;
+  --tab-text-color-focused-active: rgb(180, 180, 180) !important;
+  --tab-text-color-focused-active-current: rgb(220, 220, 220) !important;
   --tab-text-color-focused-highlighted: rgb(187, 154, 247) !important;
   --tab-width: 120px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgb(25, 25, 25) !important;
+  --table-add-button-border-color: transparent !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(25, 25, 25) !important;
+  --table-border-color: #363636 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1632,12 +1609,12 @@
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: rgb(128, 208, 255) !important;
   --table-drag-handle-color: rgb(180, 180, 180) !important;
-  --table-drag-handle-color-active: #ffffff !important;
+  --table-drag-handle-color-active: rgb(15, 15, 15) !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: rgb(25, 25, 25) !important;
-  --table-header-border-color: rgb(25, 25, 25) !important;
+  --table-header-background: rgb(2, 2, 2) !important;
+  --table-header-border-color: #363636 !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: #d0d0d0 !important;
+  --table-header-color: rgb(220, 220, 220) !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -1667,24 +1644,24 @@
   --tag-size: 0.875em !important;
   --text-accent: rgb(187, 154, 247) !important;
   --text-accent-hover: rgb(125, 207, 255) !important;
-  --text-error: rgb(255, 117, 127) !important;
+  --text-error: rgb(219, 75, 75) !important;
   --text-faint: rgb(180, 180, 180) !important;
   --text-highlight-bg: rgba(255, 158, 100, 0.25) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #888 !important;
-  --text-normal: #d0d0d0 !important;
-  --text-on-accent: #ffffff !important;
+  --text-muted: rgb(180, 180, 180) !important;
+  --text-normal: rgb(220, 220, 220) !important;
+  --text-on-accent: rgb(15, 15, 15) !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(187, 154, 247, 0.15) !important;
+  --text-selection: rgba(128, 208, 255, 0.33) !important;
   --text-success: rgb(158, 206, 106) !important;
   --text-warning: rgb(255, 158, 100) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgb(25, 25, 25) !important;
+  --titlebar-border-color: transparent !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 40px !important;
-  --titlebar-text-color: #e8e8e8 !important;
-  --titlebar-text-color-focused: #ffffff !important;
+  --titlebar-text-color: rgb(180, 180, 180) !important;
+  --titlebar-text-color-focused: rgb(220, 220, 220) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -1692,14 +1669,14 @@
   --toggle-s-thumb-height: 15px !important;
   --toggle-s-thumb-width: 15px !important;
   --toggle-s-width: 34px !important;
-  --toggle-thumb-color: transparent !important;
+  --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #d0d0d0 !important;
-  --vault-profile-color-hover: #d0d0d0 !important;
+  --vault-profile-color: rgb(220, 220, 220) !important;
+  --vault-profile-color-hover: rgb(220, 220, 220) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -1713,12 +1690,11 @@
   --h3-color: rgb(158, 206, 106) !important;
   --h4-color: rgb(125, 207, 255) !important;
   --h5-color: rgb(122, 162, 247) !important;
-  --h6-color: rgb(255, 158, 100) !important;
+  --h6-color: rgb(224, 175, 104) !important;
   --inline-title-color: rgb(255, 117, 127) !important;
-  --text-error-hover: rgb(219, 75, 75) !important;
+  --text-error-hover: rgb(255, 117, 127) !important;
   --background-modifier-form-field-highlighted: rgb(8, 8, 8) !important;
-  --blockquote-color: rgb(180, 180, 180) !important;
-  --table-header-background-hover: rgb(18, 18, 18) !important;
+  --table-header-background-hover: rgb(2, 2, 2) !important;
   --accent-color: rgb(128, 208, 255) !important;
   --bold-color: rgb(125, 207, 255) !important;
   --italic-color: rgb(122, 162, 247) !important;
@@ -1738,32 +1714,22 @@
   --pink: rgb(217, 0, 105) !important;
   --comment: rgb(120, 120, 120) !important;
   --cyan: rgb(125, 207, 255) !important;
-  --blockquote-border: rgb(125, 207, 255) !important;
-  --blockquote-bg: rgba(125, 207, 255, 0.08) !important;
-  --embed-background: rgb(8, 8, 8) !important;
-  --shadow-color: rgba(0, 0, 0, 0.3) !important;
+  --bullet-new-color: rgb(187, 154, 247) !important;
   --internal-link-color: rgb(158, 206, 106) !important;
   --shadow-m:
     0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12) !important;
-  --table-width: 88cqw !important;
   --background-primary-rgb: 15, 15, 15 !important;
-  --date-background-color: rgba(122, 162, 247, 0.15) !important;
-  --flashing-background: rgba(125, 207, 255, 0.2) !important;
-  --mermaid-loopline: rgb(122, 162, 247) !important;
-  --mermaid-note: rgb(61, 89, 161) !important;
   --nav-file-tag: rgba(224, 175, 104, 0.9) !important;
   --bg-primary: #020202 !important;
   --magenta: rgb(187, 154, 247) !important;
   --teal: rgb(26, 188, 156) !important;
   --fg: rgb(220, 220, 220) !important;
-  --image-radius: 0px !important;
   --bg: rgb(15, 15, 15) !important;
   --purple-light: rgb(210, 180, 255) !important;
   --background-secondary-rgb: 8, 8, 8 !important;
+  --setting-items-background: transparent !important;
   --tab-background: rgba(2, 2, 2, 0.9) !important;
   --tab-min-width: 40px !important;
-  --link-external-color-rgb: 187, 154, 247 !important;
-  --mermaid-actor: rgb(180, 180, 180) !important;
   --border-radius: 8px !important;
   --bg_dark2: rgb(2, 2, 2) !important;
   --bg_highlight: rgb(25, 25, 25) !important;
@@ -1782,7 +1748,6 @@
   --blue_x: 122, 162, 247 !important;
   --comment_x: 120, 120, 120 !important;
   --cyan_x: 125, 207, 255 !important;
-  --date-color: rgb(122, 162, 247) !important;
   --fg_dark_x: 180, 180, 180 !important;
   --fg_x: 220, 220, 220 !important;
   --magenta_x: 187, 154, 247 !important;
@@ -1797,27 +1762,24 @@
   --background-modifier-hover-rgb: 25, 25, 25 !important;
   --bg-primary-rgb: 2, 2, 2 !important;
   --bg-secondary-rgb: 8, 8, 8 !important;
-  --blockquote-accent: rgb(187, 154, 247) !important;
-  --blockquote-quote-mark: rgba(187, 154, 247, 0.7) !important;
   --code-comment_x: 115, 125, 165 !important;
-  --code-selection-bg: rgba(125, 207, 255, 0.2) !important;
   --cyan_hsl: 202 100% 75% !important;
-  --folder-note-color: rgb(220, 200, 250) !important;
-  --folder-note-color_x: 220, 200, 250 !important;
+  --folder-note-color: rgb(200, 190, 250) !important;
+  --folder-note-color_x: 200, 190, 250 !important;
+  --font-family-heading:
+    "Inter", system-ui, -apple-system, sans-serif !important;
   --font-family-theme: "Inter", system-ui, -apple-system, sans-serif !important;
   --font-size-theme: 16px !important;
+  --green-dark: rgb(120, 156, 122) !important;
+  --green-dark_x: 120, 156, 122 !important;
   --insertion-color: rgb(255, 158, 100) !important;
   --internal-link-color-hover: rgb(122, 162, 247) !important;
   --line-height-theme: 1.6 !important;
-  --link-external-color-hover-rgb: 125, 207, 255 !important;
   --list-number-color: rgb(187, 154, 247) !important;
   --list-number-color-hover: rgb(210, 190, 255) !important;
   --magent_hsl: 261 85% 79% !important;
   --magenta-light: rgb(210, 190, 255) !important;
-  --magenta-light-rgb: 210, 190, 255 !important;
   --magenta-light_x: 210, 190, 255 !important;
-  --magenta-rgb: 187, 154, 247 !important;
-  --menu-background-rgb: 8, 8, 8 !important;
   --motion-duration-fast: 0.15s !important;
   --motion-duration-medium: 0.25s !important;
   --motion-duration-slow: 0.35s !important;
@@ -1826,14 +1788,11 @@
   --motion-easing-standard: cubic-bezier(0.4, 0, 0.2, 1) !important;
   --pink_hsl: 331 100% 43% !important;
   --purple-light_x: 210, 180, 255 !important;
+  --red-dark: rgb(255, 117, 127) !important;
+  --red-dark_x: 155, 45, 45 !important;
   --shadow-xl:
     0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05) !important;
   --tab-background-hover: rgba(18, 18, 18, 0.8) !important;
-  --tab-background-unfocused: rgba(8, 8, 8, 0.7) !important;
-  --tab-container-background-focused: transparent !important;
-  --tab-outline-color-active: rgba(80, 80, 80, 0.8) !important;
-  --text-on-code: rgb(220, 220, 220) !important;
-  --titlebar-text-color-inactive: #666 !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1920,39 +1879,39 @@ html {
 
 body {
   div#quartz-root {
-    background-color: light-dark(rgb(248, 250, 252), rgb(25, 25, 25));
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    background-color: light-dark(rgb(248, 250, 252), rgb(2, 2, 2));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
   }
 
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
-    background-color: light-dark(rgb(248, 250, 252), rgb(30, 30, 30));
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    background-color: light-dark(rgb(248, 250, 252), rgb(2, 2, 2));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: light-dark(rgb(248, 250, 252), rgba(2, 2, 2, 0.9));
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    background-color: light-dark(rgb(248, 250, 252), rgb(2, 2, 2));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
   }
 
   &[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: light-dark(rgb(248, 250, 252), rgb(38, 38, 38));
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    background-color: light-dark(rgb(248, 250, 252), rgb(2, 2, 2));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: light-dark(rgb(248, 250, 252), rgb(38, 38, 38));
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
-    border-left: 1px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    background-color: light-dark(rgb(248, 250, 252), rgb(2, 2, 2));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
+    border-left: 1px solid rgba(0, 0, 0, 0);
   }
 
   .page > div#quartz-body div.sidebar.left {
-    border-right: 1px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    border-right: 1px solid rgba(0, 0, 0, 0);
   }
 
   a.external,
@@ -2009,7 +1968,7 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(20, 140, 80), rgb(158, 206, 106));
+    color: light-dark(rgb(160, 30, 140), rgb(187, 154, 247));
     cursor: pointer;
     filter: none;
     font-family:
@@ -2025,8 +1984,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(158, 206, 106);
-    text-decoration-color: light-dark(rgb(20, 140, 80), rgb(158, 206, 106));
+    text-decoration: none solid rgb(187, 154, 247);
+    text-decoration-color: light-dark(rgb(160, 30, 140), rgb(187, 154, 247));
     text-decoration-line: none;
     text-decoration-style: solid;
     user-select: text;
@@ -2052,7 +2011,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     cursor: auto;
     filter: none;
     font-family:
@@ -2068,8 +2027,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(208, 208, 208);
-    text-decoration-color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    text-decoration: none solid rgb(220, 220, 220);
+    text-decoration-color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     text-decoration-line: none;
     text-decoration-style: solid;
     user-select: text;
@@ -2197,8 +2156,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 500;
-    text-decoration: none solid rgb(208, 208, 208);
-    text-decoration-color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    text-decoration: none solid rgb(220, 220, 220);
+    text-decoration-color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     text-decoration-line: none;
     text-decoration-style: solid;
     user-select: text;
@@ -2215,7 +2174,7 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(200, 50, 70), rgb(255, 117, 127));
+    color: light-dark(rgb(180, 30, 50), rgb(219, 75, 75));
     cursor: text;
     filter: none;
     font-family:
@@ -2231,8 +2190,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: line-through solid rgb(255, 117, 127);
-    text-decoration-color: light-dark(rgb(200, 50, 70), rgb(255, 117, 127));
+    text-decoration: line-through solid rgb(219, 75, 75);
+    text-decoration-color: light-dark(rgb(180, 30, 50), rgb(219, 75, 75));
     text-decoration-line: line-through;
     text-decoration-style: solid;
     user-select: text;
@@ -2257,8 +2216,8 @@ body {
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: light-dark(
-      rgba(129, 71, 209, 0.1),
-      rgba(128, 208, 255, 0.1)
+      rgba(129, 71, 209, 0.2),
+      rgba(128, 208, 255, 0.2)
     );
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -2268,7 +2227,7 @@ body {
     border-start-end-radius: 8px;
     border-end-start-radius: 8px;
     border-end-end-radius: 8px;
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(129, 71, 209), rgb(128, 208, 255));
   }
 
   .search
@@ -2284,7 +2243,7 @@ body {
       ~ .result-card:hover
     ) {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    border: 0px light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -2293,12 +2252,12 @@ body {
     border-start-end-radius: 6px;
     border-end-start-radius: 6px;
     border-end-end-radius: 6px;
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
   }
 
   hr {
-    border: 0px light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
-    border-top: 2px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    border: 0px rgba(0, 0, 0, 0);
+    border-top: 2px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2327,7 +2286,7 @@ body {
     > .match-tag {
     align-items: center;
     background-color: light-dark(
-      rgba(102, 63, 191, 0.1),
+      rgba(160, 30, 140, 0.15),
       rgba(187, 154, 247, 0.15)
     );
     display: flex;
@@ -2358,11 +2317,11 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(102, 63, 191), rgb(187, 154, 247));
+    color: light-dark(rgb(160, 30, 140), rgb(187, 154, 247));
   }
 
   ul > li {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     text-align: start;
   }
 
@@ -2383,7 +2342,7 @@ body {
   }
 
   ol > li {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     text-align: start;
   }
 
@@ -2404,11 +2363,8 @@ body {
   }
 
   code {
-    background-color: light-dark(
-      rgba(102, 63, 191, 0.05),
-      rgba(187, 154, 247, 0.05)
-    );
-    border: 0px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -2417,7 +2373,7 @@ body {
     border-start-end-radius: 6px;
     border-end-start-radius: 6px;
     border-end-end-radius: 6px;
-    color: light-dark(rgb(100, 116, 139), rgb(180, 180, 180));
+    color: light-dark(rgb(30, 35, 42), rgb(180, 180, 180));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -2427,11 +2383,8 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: light-dark(
-      rgba(102, 63, 191, 0.05),
-      rgba(187, 154, 247, 0.05)
-    );
-    border: 0px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -2447,11 +2400,8 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(
-      rgba(102, 63, 191, 0.05),
-      rgba(187, 154, 247, 0.05)
-    );
-    border: 0px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -2504,13 +2454,13 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: light-dark(rgb(100, 116, 139), rgb(136, 136, 136));
-    text-decoration: line-through solid rgb(136, 136, 136);
-    text-decoration-color: light-dark(rgb(100, 116, 139), rgb(136, 136, 136));
+    color: light-dark(rgb(75, 85, 95), rgb(180, 180, 180));
+    text-decoration: line-through solid rgb(180, 180, 180);
+    text-decoration-color: light-dark(rgb(75, 85, 95), rgb(180, 180, 180));
   }
 
   blockquote {
-    background-color: light-dark(rgb(240, 242, 246), rgb(8, 8, 8));
+    background-color: rgba(0, 0, 0, 0);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2532,23 +2482,22 @@ body {
   }
 
   .data-footnote-backref {
-    color: light-dark(rgb(148, 163, 184), rgb(180, 180, 180));
+    color: light-dark(rgb(75, 85, 95), rgb(180, 180, 180));
     text-decoration: none solid rgb(180, 180, 180);
   }
 
   .search > .search-button {
-    background-color: light-dark(rgb(240, 242, 246), rgb(8, 8, 8));
-    border: 1px solid
-      light-dark(rgba(75, 85, 95, 0.2), rgba(180, 180, 180, 0.2));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2565,10 +2514,10 @@ body {
 
   .search > .search-container > .search-space {
     background-color: light-dark(
-      rgba(248, 250, 252, 0.5),
-      rgba(15, 15, 15, 0.5)
+      rgba(248, 250, 252, 0.25),
+      rgba(15, 15, 15, 0.25)
     );
-    border: 1px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    border: 1px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -2577,29 +2526,29 @@ body {
     border-start-end-radius: 12px;
     border-end-start-radius: 12px;
     border-end-end-radius: 12px;
-    box-shadow:
-      rgba(0, 0, 0, 0.15) 0px 10px 20px 0px,
-      rgba(0, 0, 0, 0.1) 0px 3px 6px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px 0px;
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgba(0, 0, 0, 0), rgba(2, 2, 2, 0.5));
-    border: 0px light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
-    border-bottom: 1px solid light-dark(rgb(248, 250, 252), rgb(2, 2, 2));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    background-color: light-dark(
+      rgba(248, 250, 252, 0.5),
+      rgba(15, 15, 15, 0.5)
+    );
+    border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
     box-shadow: none;
   }
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     cursor: auto;
     filter: none;
     font-family:
@@ -2615,8 +2564,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(208, 208, 208);
-    text-decoration-color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    text-decoration: none solid rgb(220, 220, 220);
+    text-decoration-color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     text-decoration-line: none;
     text-decoration-style: solid;
     user-select: text;
@@ -2624,7 +2573,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border: 1px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    border: 1px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -2640,7 +2589,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
   }
 
   .search
@@ -2649,7 +2598,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border: 0px light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    border: 0px light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -2678,11 +2627,11 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(129, 71, 209), rgb(128, 208, 255));
     font-weight: 400;
     background-color: light-dark(
-      rgba(129, 71, 209, 0.1),
-      rgba(128, 208, 255, 0.1)
+      rgba(129, 71, 209, 0.2),
+      rgba(128, 208, 255, 0.2)
     );
   }
 
@@ -2728,22 +2677,15 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(129, 71, 209), rgb(128, 208, 255));
   }
 
   h1 {
     color: light-dark(rgb(200, 50, 70), rgb(255, 117, 127));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
       Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
+      system-ui,
+      -apple-system,
       sans-serif;
     text-shadow: none;
   }
@@ -2751,16 +2693,9 @@ body {
   h2 {
     color: light-dark(rgb(102, 63, 191), rgb(187, 154, 247));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
       Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
+      system-ui,
+      -apple-system,
       sans-serif;
     text-shadow: none;
   }
@@ -2768,16 +2703,9 @@ body {
   h3 {
     color: light-dark(rgb(20, 140, 80), rgb(158, 206, 106));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
       Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
+      system-ui,
+      -apple-system,
       sans-serif;
     text-shadow: none;
   }
@@ -2785,16 +2713,9 @@ body {
   h4 {
     color: light-dark(rgb(0, 120, 180), rgb(125, 207, 255));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
       Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
+      system-ui,
+      -apple-system,
       sans-serif;
     text-shadow: none;
   }
@@ -2802,33 +2723,19 @@ body {
   h5 {
     color: light-dark(rgb(30, 70, 160), rgb(122, 162, 247));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
       Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
+      system-ui,
+      -apple-system,
       sans-serif;
     text-shadow: none;
   }
 
   h6 {
-    color: light-dark(rgb(220, 100, 20), rgb(255, 158, 100));
+    color: light-dark(rgb(180, 120, 0), rgb(224, 175, 104));
     font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
       Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
+      system-ui,
+      -apple-system,
       sans-serif;
     text-shadow: none;
   }
@@ -2903,18 +2810,18 @@ body {
   }
 
   .callout {
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(30, 70, 160, 0.25), rgba(122, 162, 247, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
     mix-blend-mode: normal;
-    padding: 14px;
+    padding: 16px;
   }
 
   .callout .callout-title {
@@ -2945,16 +2852,16 @@ body {
       rgba(122, 162, 247, 0.1)
     );
     mix-blend-mode: normal;
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(30, 70, 160, 0.25), rgba(122, 162, 247, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="abstract"] {
@@ -2963,16 +2870,16 @@ body {
       rgba(125, 207, 255, 0.1)
     );
     mix-blend-mode: normal;
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(0, 120, 180, 0.25), rgba(125, 207, 255, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="info"] {
@@ -2981,16 +2888,16 @@ body {
       rgba(122, 162, 247, 0.1)
     );
     mix-blend-mode: normal;
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(30, 70, 160, 0.25), rgba(122, 162, 247, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="todo"] {
@@ -2999,16 +2906,16 @@ body {
       rgba(125, 207, 255, 0.1)
     );
     mix-blend-mode: normal;
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(0, 120, 180, 0.25), rgba(125, 207, 255, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="tip"] {
@@ -3017,16 +2924,16 @@ body {
       rgba(125, 207, 255, 0.1)
     );
     mix-blend-mode: normal;
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(0, 120, 180, 0.25), rgba(125, 207, 255, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="success"] {
@@ -3035,16 +2942,16 @@ body {
       rgba(26, 188, 156, 0.1)
     );
     mix-blend-mode: normal;
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(0, 140, 160, 0.25), rgba(26, 188, 156, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="question"] {
@@ -3053,16 +2960,16 @@ body {
       rgba(224, 175, 104, 0.1)
     );
     mix-blend-mode: normal;
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(180, 120, 0, 0.25), rgba(224, 175, 104, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="warning"] {
@@ -3071,16 +2978,16 @@ body {
       rgba(255, 158, 100, 0.1)
     );
     mix-blend-mode: normal;
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(220, 100, 20, 0.25), rgba(255, 158, 100, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="danger"] {
@@ -3089,16 +2996,16 @@ body {
       rgba(219, 75, 75, 0.1)
     );
     mix-blend-mode: light-dark(darken, lighten);
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(180, 30, 50, 0.25), rgba(219, 75, 75, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="failure"] {
@@ -3107,16 +3014,16 @@ body {
       rgba(219, 75, 75, 0.1)
     );
     mix-blend-mode: normal;
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(180, 30, 50, 0.25), rgba(219, 75, 75, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="bug"] {
@@ -3125,16 +3032,16 @@ body {
       rgba(255, 117, 127, 0.1)
     );
     mix-blend-mode: light-dark(darken, lighten);
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(200, 50, 70, 0.25), rgba(255, 117, 127, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="example"] {
@@ -3143,40 +3050,40 @@ body {
       rgba(187, 154, 247, 0.1)
     );
     mix-blend-mode: light-dark(darken, lighten);
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(160, 30, 140, 0.25), rgba(187, 154, 247, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   .callout[data-callout="quote"] {
     background-color: light-dark(
-      rgba(0, 120, 180, 0.05),
-      rgba(125, 207, 255, 0.08)
+      rgba(75, 85, 95, 0.1),
+      rgba(180, 180, 180, 0.1)
     );
     mix-blend-mode: light-dark(darken, lighten);
-    border: 1px solid
+    border: 0px solid
       light-dark(rgba(75, 85, 95, 0.25), rgba(180, 180, 180, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
   }
 
   table {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: collapse;
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3226,11 +3133,11 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-weight: 600;
     text-align: start;
     vertical-align: top;
-    border: 1px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    border: 1px solid light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3244,11 +3151,11 @@ body {
 
   td {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-weight: 400;
     text-align: center;
     vertical-align: top;
-    border: 1px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    border: 1px solid light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3261,7 +3168,7 @@ body {
   }
 
   tr {
-    background-color: light-dark(rgb(248, 250, 252), rgb(25, 25, 25));
+    background-color: light-dark(rgb(230, 232, 236), rgb(2, 2, 2));
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3278,7 +3185,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: fill;
-    border: 0px light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    border: 0px light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3297,7 +3204,7 @@ body {
   figure {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
-    border: 0px light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    border: 0px light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3315,7 +3222,7 @@ body {
   }
 
   figcaption {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3344,7 +3251,7 @@ body {
     filter: none;
     max-width: 100%;
     object-fit: contain;
-    border: 0px light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    border: 0px light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3362,7 +3269,7 @@ body {
 
   audio {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    border: 0px light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3378,7 +3285,7 @@ body {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
     height: 6px;
-    border: 0px light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    border: 0px light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3404,8 +3311,8 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(240, 242, 246), rgb(8, 8, 8));
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3418,21 +3325,21 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
-    padding: 6px 8px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    padding: 6px 10px;
   }
 
   details {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    border: 0px light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3451,7 +3358,7 @@ body {
 
   summary {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     cursor: auto;
     font-weight: 400;
     padding: 0px;
@@ -3477,18 +3384,15 @@ body {
   }
 
   kbd {
-    background-color: light-dark(
-      rgba(102, 63, 191, 0.05),
-      rgba(187, 154, 247, 0.05)
-    );
+    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
     box-shadow: none;
-    color: light-dark(rgb(100, 116, 139), rgb(180, 180, 180));
+    color: light-dark(rgb(30, 35, 42), rgb(180, 180, 180));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
       "Source Code Pro", monospace;
     font-size: 14px;
-    border: 0px light-dark(rgb(100, 116, 139), rgb(180, 180, 180));
+    border: 0px light-dark(rgb(30, 35, 42), rgb(180, 180, 180));
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -3509,7 +3413,7 @@ body {
   }
 
   dt {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-weight: 400;
     margin: 0px;
     margin-block-end: 0px;
@@ -3519,7 +3423,7 @@ body {
   }
 
   dd {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3529,21 +3433,21 @@ body {
   }
 
   sub {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-size: 13.3333px;
     vertical-align: sub;
   }
 
   sup {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-size: 13.3333px;
     vertical-align: super;
   }
 
   abbr {
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     cursor: auto;
-    text-decoration: underline dotted rgb(208, 208, 208);
+    text-decoration: underline dotted rgb(220, 220, 220);
     text-decoration-style: dotted;
   }
 
@@ -3694,7 +3598,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(45, 55, 72), rgba(255, 255, 255, 0.9));
+    color: rgba(255, 255, 255, 0.9);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -3713,30 +3617,34 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(rgb(0, 120, 180), rgb(25, 25, 25));
-    border: 0px light-dark(rgb(102, 63, 191), rgb(187, 154, 247));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    color: light-dark(rgb(102, 63, 191), rgb(187, 154, 247));
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
+    );
+    border: 0px light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
+    border-left: 2px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-start-start-radius: 6px;
+    border-start-end-radius: 6px;
+    border-end-start-radius: 6px;
+    border-end-end-radius: 6px;
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     cursor: default;
-    transition-behavior: normal;
-    transition-delay: 0s;
-    transition-duration: 0.15s;
-    transition-property: background-color;
-    transition-timing-function: ease;
+    transition-behavior: normal, normal;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.1s, 0.1s;
+    transition-property: background-color, border-color;
+    transition-timing-function: ease, ease;
   }
 
   .explorer
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: light-dark(rgb(45, 55, 72), rgba(255, 255, 255, 0.9));
+    color: rgba(255, 255, 255, 0.9);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -3755,7 +3663,7 @@ body {
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(45, 55, 72), rgba(255, 255, 255, 0.9));
+    color: rgba(255, 255, 255, 0.9);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -3774,11 +3682,8 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] {
-    background-color: light-dark(
-      rgba(102, 63, 191, 0.05),
-      rgba(187, 154, 247, 0.05)
-    );
-    border: 0px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -3790,13 +3695,10 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-    background-color: light-dark(
-      rgba(102, 63, 191, 0.05),
-      rgba(187, 154, 247, 0.05)
-    );
-    color: light-dark(rgb(30, 37, 46), rgb(208, 208, 208));
+    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-family: monospace;
-    border: 0px solid light-dark(rgb(226, 232, 240), rgb(25, 25, 25));
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;

@@ -897,6 +897,7 @@
   --kanban-lane-border: 3px solid #e1e9f6 !important;
   --bg: #e1e9f6 !important;
   --embed-border: 2px solid transparent !important;
+  --setting-items-background: transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #aac1d3 !important;
   --accent2-lite: #5599d0 !important;
@@ -1152,6 +1153,7 @@
   --modal-sidebar-background: #f1f5ff !important;
   --nav-item-background-border-color-hover: #c35c5c !important;
   --nav-item-border-width: 0px !important;
+  --navbar-radius: 0 !important;
   --note: #f8fbff !important;
   --note-rgb: 248, 251, 255 !important;
   --note-title-border-color: #c14343 !important;
@@ -1187,14 +1189,14 @@
   --scroll-size: 7px !important;
   --search-border: 2px solid #e1e9f6 !important;
   --search-box-shadow: 2px 2px 0 #e1e9f6 !important;
-  --setting-item-alt-background: transparent !important;
   --setting-item-alt-background-hover: #d0ddef62 !important;
-  --setting-item-background: transparent !important;
   --setting-item-background-hover: rgba(255, 0, 0, 0.212) !important;
   --setting-item-border-color: #ccd6eb !important;
   --setting-item-heading-background: transparent !important;
   --setting-item-heading-border: 2px solid #c14343 !important;
   --setting-item-padding: 10px 15px !important;
+  --setting-items-alt-background: transparent !important;
+  --setting-items-alt-background-hover: #d0ddef62 !important;
   --shadow-ml: 4px 4px 0 #e1e9f6 !important;
   --side-bar: #f8fbff !important;
   --side-bar-bg: #eef3fd !important;
@@ -2197,6 +2199,7 @@
   --kanban-lane-border: 3px solid #0b0f13 !important;
   --bg: #252c36 !important;
   --embed-border: 2px solid transparent !important;
+  --setting-items-background: transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #42536e !important;
   --accent2-lite: #61afef !important;
@@ -2453,6 +2456,7 @@
   --modal-sidebar-background: #0d1014 !important;
   --nav-item-background-border-color-hover: #652121 !important;
   --nav-item-border-width: 0px !important;
+  --navbar-radius: 0 !important;
   --note: #1a1e24 !important;
   --note-rgb: 26, 30, 36 !important;
   --note-title-border-color: #c14343 !important;
@@ -2488,14 +2492,14 @@
   --scroll-size: 7px !important;
   --search-border: 2px solid #0b0f13 !important;
   --search-box-shadow: 2px 2px 0 #0b0f13 !important;
-  --setting-item-alt-background: transparent !important;
   --setting-item-alt-background-hover: #06080c60 !important;
-  --setting-item-background: transparent !important;
   --setting-item-background-hover: rgba(168, 60, 60, 0.4) !important;
   --setting-item-border-color: #283345 !important;
   --setting-item-heading-background: transparent !important;
   --setting-item-heading-border: 2px solid #c14343 !important;
   --setting-item-padding: 10px 15px !important;
+  --setting-items-alt-background: transparent !important;
+  --setting-items-alt-background-hover: #06080c60 !important;
   --shadow-ml: 4px 4px 0 #0b0f13 !important;
   --side-bar: #1a1e24 !important;
   --side-bar-bg: #0b0f13 !important;
