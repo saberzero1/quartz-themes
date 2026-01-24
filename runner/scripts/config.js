@@ -969,28 +969,69 @@ export const config = [
   */
   // table
   // scrollbars
-  // TODO: add ::scrollbar to pseudoElements
+  // Webkit scrollbar - main scrollbar element (width, height, background)
   {
-    obsidianSelector: `div.markdown-preview-section.markdown-preview-sizer`,
-    publishSelector: `.markdown-preview-sizer`,
+    obsidianSelector: `body.styled-scrollbars`,
+    publishSelector: `body.styled-scrollbars`,
     quartzSelector: "::-webkit-scrollbar",
     pseudoElement: "::-webkit-scrollbar",
-    properties: ["background-color"],
+    properties: ["background", "background-color"],
   },
+  // Webkit scrollbar thumb - the draggable part
   {
-    obsidianSelector: `div.markdown-preview-section.markdown-preview-sizer`,
-    publishSelector: `.markdown-preview-sizer`,
+    obsidianSelector: `body.styled-scrollbars`,
+    publishSelector: `body.styled-scrollbars`,
     quartzSelector: "::-webkit-scrollbar-thumb",
     pseudoElement: "::-webkit-scrollbar-thumb",
     properties: [
+      "background",
       "background-color",
-      //"border-radius",
-      //"border-width",
-      //"border",
-      //"border-color",
-      ...defaults.border,
+      ...expansions.borderRadius,
+      ...expansions.borderWidth,
+      ...expansions.borderColor,
+      ...expansions.borderStyle,
       "box-shadow",
     ],
+  },
+  // Webkit scrollbar thumb hover state
+  {
+    obsidianSelector: `body.styled-scrollbars`,
+    publishSelector: `body.styled-scrollbars`,
+    quartzSelector: "::-webkit-scrollbar-thumb:hover",
+    pseudoElement: "::-webkit-scrollbar-thumb:hover",
+    properties: ["background", "background-color"],
+  },
+  // Webkit scrollbar thumb active state
+  {
+    obsidianSelector: `body.styled-scrollbars`,
+    publishSelector: `body.styled-scrollbars`,
+    quartzSelector: "::-webkit-scrollbar-thumb:active",
+    pseudoElement: "::-webkit-scrollbar-thumb:active",
+    properties: ["background", "background-color"],
+  },
+  // Webkit scrollbar track - the background track
+  {
+    obsidianSelector: `body.styled-scrollbars`,
+    publishSelector: `body.styled-scrollbars`,
+    quartzSelector: "::-webkit-scrollbar-track",
+    pseudoElement: "::-webkit-scrollbar-track",
+    properties: ["background", "background-color", ...expansions.borderRadius],
+  },
+  // Webkit scrollbar corner - where horizontal and vertical scrollbars meet
+  {
+    obsidianSelector: `body.styled-scrollbars`,
+    publishSelector: `body.styled-scrollbars`,
+    quartzSelector: "::-webkit-scrollbar-corner",
+    pseudoElement: "::-webkit-scrollbar-corner",
+    properties: ["background", "background-color"],
+  },
+  // Firefox scrollbar properties (on body/html)
+  {
+    obsidianSelector: `body.styled-scrollbars`,
+    publishSelector: `body.styled-scrollbars`,
+    quartzSelector: "body",
+    pseudoElement: "",
+    properties: ["scrollbar-width", "scrollbar-color"],
   },
   // note
   // FIXME: fixed up until here
