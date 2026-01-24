@@ -101,7 +101,7 @@
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 0.5px !important;
-  --button-radius: 30px !important;
+  --button-radius: 26px !important;
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -146,7 +146,7 @@
   --checkbox-size: 16px !important;
   --checklist-done-color: #82868a !important;
   --checklist-done-decoration: none !important;
-  --clickable-icon-radius: 18px !important;
+  --clickable-icon-radius: 26px !important;
   --code-background: #f9f9f9 !important;
   --code-border-color: rgba(200, 200, 200, 0.1) !important;
   --code-border-width: 0px !important;
@@ -213,9 +213,9 @@
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #f5f6f8 !important;
+  --dropdown-background: rgba(150, 150, 150, 0.1) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #fafafa !important;
+  --dropdown-background-hover: rgba(100, 115, 120, 0.1) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
@@ -406,7 +406,7 @@
   --interactive-accent: #67acff !important;
   --interactive-accent-hover: rgb(30, 130, 230) !important;
   --interactive-accent-hsl: 210, 100%, 38% !important;
-  --interactive-hover: #fafafa !important;
+  --interactive-hover: rgba(100, 115, 120, 0.1) !important;
   --interactive-normal: #f5f6f8 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
@@ -514,7 +514,7 @@
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 30px !important;
+  --modal-radius: 26px !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
@@ -529,7 +529,7 @@
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.04) !important;
-  --nav-item-background-hover: rgba(0, 0, 0, 0.04) !important;
+  --nav-item-background-hover: none !important;
   --nav-item-background-selected: rgba(0, 97, 194, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
@@ -589,7 +589,7 @@
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 30px !important;
+  --radius-l: 26px !important;
   --radius-m: 18px !important;
   --radius-s: 10px !important;
   --radius-xl: 16px !important;
@@ -605,7 +605,7 @@
   --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 30px !important;
+  --scrollbar-radius: 26px !important;
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: #3f3f3f !important;
@@ -793,7 +793,9 @@
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
   --accent-color: #0062c1 !important;
+  --setting-items-radius: 26px !important;
   --color-grey: #818893 !important;
+  --selected-item: #c3d8ff !important;
   --div-color: rgba(210, 210, 210, 0.5) !important;
   --text-extreme: #000000 !important;
   --color-red-trans: rgba(255, 83, 131, 0.3) !important;
@@ -807,12 +809,8 @@
   ) !important;
   --properties-background: #f5f6f8 !important;
   --statusbar-glass-bg: color-mix(in srgb, #ffffff 35%, transparent) !important;
-  --statusbar-glass-border: color-mix(
-    in srgb,
-    rgba(200, 200, 200, 0.1) 45%,
-    transparent
-  ) !important;
-  --statusbar-glass-shadow: 0 0 20px rgba(0, 0, 0, 0.15) !important;
+  --statusbar-glass-border: rgba(250, 250, 250, 0.5) !important;
+  --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -846,7 +844,7 @@
   --background-modifier-success-rgb: 68, 207, 110 !important;
   --background-primary: #262626 !important;
   --background-primary-alt: #2f2f2f !important;
-  --background-secondary: #1f1f1f !important;
+  --background-secondary: #1a1a1a !important;
   --background-secondary-alt: #1c1c1c !important;
   --bases-cards-background: #262626 !important;
   --bases-cards-border-width: 1px !important;
@@ -911,7 +909,7 @@
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 0.5px !important;
-  --button-radius: 30px !important;
+  --button-radius: 26px !important;
   --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -956,7 +954,7 @@
   --checkbox-size: 16px !important;
   --checklist-done-color: #8a919b !important;
   --checklist-done-decoration: none !important;
-  --clickable-icon-radius: 18px !important;
+  --clickable-icon-radius: 26px !important;
   --code-background: #3b3b3b !important;
   --code-border-color: rgba(0, 0, 0, 0.2) !important;
   --code-border-width: 0px !important;
@@ -1023,9 +1021,9 @@
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #1f1f1f !important;
+  --dropdown-background: rgba(70, 70, 70, 0.9) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #3f3f3f !important;
+  --dropdown-background-hover: rgba(100, 115, 120, 0.1) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
@@ -1049,7 +1047,7 @@
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
-  --flair-background: #1f1f1f !important;
+  --flair-background: #1a1a1a !important;
   --flair-color: #dadada !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
@@ -1103,7 +1101,7 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: #1f1f1f !important;
+  --footnote-divider-color: #1a1a1a !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
@@ -1216,8 +1214,8 @@
   --interactive-accent: #4d94f7 !important;
   --interactive-accent-hover: rgb(71, 145, 235) !important;
   --interactive-accent-hsl: 213, 100%, 70% !important;
-  --interactive-hover: #3f3f3f !important;
-  --interactive-normal: #1f1f1f !important;
+  --interactive-hover: rgba(100, 115, 120, 0.1) !important;
+  --interactive-normal: #1a1a1a !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1262,7 +1260,7 @@
   --list-spacing: 0em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #1f1f1f !important;
+  --menu-background: #1a1a1a !important;
   --menu-border-color: #3f3f3f !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
@@ -1276,7 +1274,7 @@
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: #1f1f1f !important;
+  --metadata-divider-color: #1a1a1a !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1324,7 +1322,7 @@
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 30px !important;
+  --modal-radius: 26px !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
@@ -1339,7 +1337,7 @@
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.04) !important;
-  --nav-item-background-hover: rgba(255, 255, 255, 0.04) !important;
+  --nav-item-background-hover: none !important;
   --nav-item-background-selected: rgba(102, 171, 255, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
@@ -1397,11 +1395,11 @@
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 30px !important;
+  --radius-l: 26px !important;
   --radius-m: 18px !important;
   --radius-s: 10px !important;
   --radius-xl: 16px !important;
-  --ribbon-background: #1c1c1c !important;
+  --ribbon-background: #1a1a1a !important;
   --ribbon-background-collapsed: #262626 !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
@@ -1413,7 +1411,7 @@
   --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 30px !important;
+  --scrollbar-radius: 26px !important;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: #c0c0c0 !important;
@@ -1459,7 +1457,7 @@
   --slider-track-background: rgba(0, 0, 0, 0.2) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #1f1f1f !important;
+  --status-bar-background: #1a1a1a !important;
   --status-bar-border-color: rgba(0, 0, 0, 0.05) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
@@ -1480,7 +1478,7 @@
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: #262626 !important;
-  --tab-container-background: #1f1f1f !important;
+  --tab-container-background: #1a1a1a !important;
   --tab-curve: 0px !important;
   --tab-divider-color: #3f3f3f !important;
   --tab-font-size: 13px !important;
@@ -1497,7 +1495,7 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #1f1f1f !important;
+  --tab-switcher-background: #1a1a1a !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -1570,8 +1568,8 @@
   --text-selection: rgba(102, 171, 255, 0.33) !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
-  --titlebar-background: #1c1c1c !important;
-  --titlebar-background-focused: #1c1c1c !important;
+  --titlebar-background: #1a1a1a !important;
+  --titlebar-background-focused: #1a1a1a !important;
   --titlebar-border-color: rgba(0, 0, 0, 0.2) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -1601,7 +1599,9 @@
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
   --accent-color: #4d94f7 !important;
+  --setting-items-radius: 26px !important;
   --color-grey: #818893 !important;
+  --selected-item: #286bbd !important;
   --div-color: rgba(70, 70, 70, 0.9) !important;
   --text-extreme: #ffffff !important;
   --color-red-trans: rgba(255, 83, 131, 0.3) !important;
@@ -1615,12 +1615,8 @@
   ) !important;
   --properties-background: rgb(35, 35, 35) !important;
   --statusbar-glass-bg: color-mix(in srgb, #262626 35%, transparent) !important;
-  --statusbar-glass-border: color-mix(
-    in srgb,
-    rgba(0, 0, 0, 0.2) 45%,
-    transparent
-  ) !important;
-  --statusbar-glass-shadow: 0 0 20px rgba(0, 0, 0, 0.15) !important;
+  --statusbar-glass-border: rgba(100, 100, 100, 0.1) !important;
+  --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1664,7 +1660,7 @@ body {
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: light-dark(rgb(245, 246, 248), rgb(28, 28, 28));
+    background-color: light-dark(rgb(245, 246, 248), rgb(26, 26, 26));
     color: light-dark(rgb(45, 46, 52), rgb(218, 218, 218));
   }
 
@@ -1672,12 +1668,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: light-dark(rgb(245, 246, 248), rgb(28, 28, 28));
+    background-color: light-dark(rgb(245, 246, 248), rgb(26, 26, 26));
     color: light-dark(rgb(45, 46, 52), rgb(218, 218, 218));
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: light-dark(rgb(245, 246, 248), rgb(28, 28, 28));
+    background-color: light-dark(rgb(245, 246, 248), rgb(26, 26, 26));
     color: light-dark(rgb(45, 46, 52), rgb(218, 218, 218));
     border-left: 1px solid rgba(0, 0, 0, 0.05);
   }
@@ -1988,14 +1984,14 @@ body {
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: light-dark(rgb(195, 216, 255), rgb(40, 107, 189));
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-start-start-radius: 10px;
-    border-start-end-radius: 10px;
-    border-end-start-radius: 10px;
-    border-end-end-radius: 10px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    border-start-start-radius: 26px;
+    border-start-end-radius: 26px;
+    border-end-start-radius: 26px;
+    border-end-end-radius: 26px;
     color: light-dark(rgb(45, 46, 52), rgb(218, 218, 218));
   }
 
@@ -2069,7 +2065,8 @@ body {
       sans-serif;
     font-weight: 500;
     margin-inline-start: 0px;
-    border: 1px solid light-dark(rgb(30, 125, 88), rgba(102, 171, 255, 0.1));
+    border: 0px solid
+      light-dark(rgba(0, 97, 194, 0.15), rgba(102, 171, 255, 0.15));
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
@@ -2253,14 +2250,14 @@ body {
   .search > .search-button {
     background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
     border: 1px solid light-dark(rgba(200, 200, 200, 0.1), rgba(0, 0, 0, 0.2));
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-start-start-radius: 30px;
-    border-start-end-radius: 30px;
-    border-end-start-radius: 30px;
-    border-end-end-radius: 30px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    border-start-start-radius: 26px;
+    border-start-end-radius: 26px;
+    border-end-start-radius: 26px;
+    border-end-end-radius: 26px;
     color: light-dark(rgb(45, 46, 52), rgb(218, 218, 218));
     font-family:
       ui-sans-serif,
@@ -2282,28 +2279,29 @@ body {
       color(srgb 0.109804 0.109804 0.109804 / 0.95)
     );
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-start-start-radius: 30px;
-    border-start-end-radius: 30px;
-    border-end-start-radius: 30px;
-    border-end-end-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 32px 0px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    border-start-start-radius: 26px;
+    border-start-end-radius: 26px;
+    border-end-start-radius: 26px;
+    border-end-end-radius: 26px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 40px 0px;
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(219, 221, 228), rgb(81, 81, 81));
-    border: 0px light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
-    border-start-start-radius: 18px;
-    border-start-end-radius: 18px;
-    border-end-start-radius: 18px;
-    border-end-end-radius: 18px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border: 0px light-dark(rgb(45, 46, 52), rgb(218, 218, 218));
+    border-bottom: 1px solid light-dark(rgb(245, 246, 248), rgb(26, 26, 26));
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    border-start-start-radius: 26px;
+    border-start-end-radius: 26px;
+    border-end-start-radius: 26px;
+    border-end-end-radius: 26px;
     box-shadow: none;
   }
 
@@ -2335,14 +2333,14 @@ body {
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-start-start-radius: 30px;
-    border-start-end-radius: 30px;
-    border-end-start-radius: 30px;
-    border-end-end-radius: 30px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    border-start-start-radius: 26px;
+    border-start-end-radius: 26px;
+    border-end-start-radius: 26px;
+    border-end-end-radius: 26px;
   }
 
   .search

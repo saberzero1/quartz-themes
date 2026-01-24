@@ -105,33 +105,50 @@ const RESPONSIVE_BREAKPOINTS = [
   { name: "desktop", width: 1920, height: 1080 },
 ];
 
-function getThemeHash(themeName) {
+function getThemeHash(themeName, variationKey, manifest) {
   const themeDir = `./runner/vault/.obsidian/themes/${themeName}`;
   const themeCssPath = `${themeDir}/theme.css`;
   const legacyCssPath = `${themeDir}/obsidian.css`;
 
+  let cssContent = null;
   if (existsSync(themeCssPath)) {
-    const content = readFileSync(themeCssPath, "utf-8");
-    return createHash("md5").update(content).digest("hex");
+    cssContent = readFileSync(themeCssPath, "utf-8");
+  } else if (existsSync(legacyCssPath)) {
+    cssContent = readFileSync(legacyCssPath, "utf-8");
   }
 
-  if (existsSync(legacyCssPath)) {
-    const content = readFileSync(legacyCssPath, "utf-8");
-    return createHash("md5").update(content).digest("hex");
-  }
+  if (!cssContent) return null;
 
-  return null;
+  const isVariation = variationKey !== "_default";
+  const hashInput = isVariation
+    ? cssContent + JSON.stringify(manifest.style_settings ?? {})
+    : cssContent;
+
+  return createHash("md5").update(hashInput).digest("hex");
 }
 
 function loadHashCache() {
   if (existsSync(HASH_CACHE_FILE)) {
     try {
-      return JSON.parse(readFileSync(HASH_CACHE_FILE, "utf-8"));
+      const cache = JSON.parse(readFileSync(HASH_CACHE_FILE, "utf-8"));
+      return migrateHashCache(cache);
     } catch {
       return {};
     }
   }
   return {};
+}
+
+function migrateHashCache(cache) {
+  const firstValue = Object.values(cache)[0];
+  if (typeof firstValue === "string") {
+    const migrated = {};
+    for (const [themeName, hash] of Object.entries(cache)) {
+      migrated[themeName] = { _default: hash };
+    }
+    return migrated;
+  }
+  return cache;
 }
 
 function saveHashCache(cache) {
@@ -145,21 +162,34 @@ function saveHashCache(cache) {
   writeFileSync(HASH_CACHE_FILE, JSON.stringify(sortedCache, null, 2));
 }
 
-function shouldSkipTheme(themeName, hashCache) {
+function shouldSkipTheme(
+  baseThemeName,
+  variationKey,
+  resultFolder,
+  manifest,
+  hashCache,
+) {
   if (FORCE_EXTRACTION) return false;
 
-  const currentHash = getThemeHash(themeName);
+  const currentHash = getThemeHash(baseThemeName, variationKey, manifest);
   if (!currentHash) return false;
 
-  const cachedHash = hashCache[themeName];
+  const themeCache = hashCache[baseThemeName];
+  const cachedHash = themeCache?.[variationKey];
   if (cachedHash === currentHash) {
-    const resultDir = `./runner/results/${sanitize(themeName)}`;
+    const resultDir = `./runner/results/${resultFolder}`;
     if (existsSync(resultDir)) {
       const hasResults =
         existsSync(`${resultDir}/dark.json`) ||
         existsSync(`${resultDir}/light.json`);
       if (hasResults) {
-        console.log(`Skipping ${themeName} (unchanged since last extraction)`);
+        const displayName =
+          variationKey === "_default"
+            ? baseThemeName
+            : `${baseThemeName} (${variationKey})`;
+        console.log(
+          `Skipping ${displayName} (unchanged since last extraction)`,
+        );
         return true;
       }
     }
@@ -1625,12 +1655,16 @@ let processedCount = 0;
 let skippedCount = 0;
 
 for (const manifest of manifestTargets) {
-  const [themeName] = manifest.name.split(".");
+  const [themeName, variation] = manifest.name.split(".");
   const fullName =
     manifestCollection.find((m) => sanitize(m.name) === themeName)?.name ??
     themeName;
+  const variationKey = variation ?? "_default";
+  const resultFolder = `${sanitize(themeName)}${variation ? `.${sanitize(variation)}` : ""}`;
 
-  if (shouldSkipTheme(fullName, hashCache)) {
+  if (
+    shouldSkipTheme(fullName, variationKey, resultFolder, manifest, hashCache)
+  ) {
     skippedCount++;
     continue;
   }
@@ -1653,9 +1687,12 @@ for (const manifest of manifestTargets) {
       obsidianPage,
     );
 
-    const currentHash = getThemeHash(fullName);
+    const currentHash = getThemeHash(fullName, variationKey, manifest);
     if (currentHash) {
-      hashCache[fullName] = currentHash;
+      if (!hashCache[fullName]) {
+        hashCache[fullName] = {};
+      }
+      hashCache[fullName][variationKey] = currentHash;
       saveHashCache(hashCache);
     }
     processedCount++;
@@ -1664,7 +1701,10 @@ for (const manifest of manifestTargets) {
       `Failed to extract styles for ${manifest.name}:`,
       error.message,
     );
-    logExtractionError(fullName, error, { manifest: manifest.name });
+    logExtractionError(fullName, error, {
+      manifest: manifest.name,
+      variation: variationKey,
+    });
   }
 }
 

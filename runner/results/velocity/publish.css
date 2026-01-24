@@ -658,7 +658,7 @@ body.theme-light {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(
-    from rgb(26, 121, 255) l c h / 0.625
+    from color-mix(in oklab, rgb(26, 121, 255), white 7.5%) l c h / 0.7
   ) !important;
   --link-unresolved-decoration-color: rgba(26, 121, 255, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
@@ -677,7 +677,7 @@ body.theme-light {
   --list-marker-color-collapsed: rgb(26, 121, 255) !important;
   --list-marker-color-hover: oklch(46.5% 0.0105 281) !important;
   --list-numbered-style: decimal !important;
-  --list-spacing: 0.15em !important;
+  --list-spacing: 0.125em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: color-mix(
@@ -1074,13 +1074,18 @@ body.theme-light {
   --strikethrough-color: oklch(71.5% 0.0105 281) !important;
   --color-base-55: oklch(65% 0.0105 281) !important;
   --setting-items-background: oklch(99% 0.0005 281) !important;
-  --setting-items-border-width: 0 !important;
-  --setting-item-background: oklch(100% 0 0 / 0.75) !important;
   --setting-group-heading-weight: 525 !important;
+  --setting-items-border-width: 0 !important;
   --color-highlight: rgb(229, 169, 37) !important;
+  --file-margins-y: 28px !important;
   --metadata-label-font-weight: 500 !important;
   --pill-weight: 500 !important;
   --nav-folder-color: oklch(40% 0.0025 281) !important;
+  --settings-background: color-mix(
+    in oklab,
+    oklch(96.2% 0.0025 281) 70%,
+    oklch(92% 0.0025 281)
+  ) !important;
   --bases-table-text-size: 0.90625em !important;
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
@@ -1150,7 +1155,6 @@ body.theme-light {
   --fab-color-active: oklch(30% 0.0005 281) !important;
   --fab-easing-curve: cubic-bezier(0.55, 2, 0.5, 0.97) !important;
   --file-margins-x: 5% !important;
-  --file-margins-y: 28px !important;
   --flair-padding: 3px 1px !important;
   --font-label:
     "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -1185,7 +1189,7 @@ body.theme-light {
     rgb(26, 121, 255),
     white 7.5%
   ) !important;
-  --link-unresolved-lch: 0.625 !important;
+  --link-unresolved-lch: 0.7 !important;
   --list-bullet-color: oklch(46.5% 0.0105 281) !important;
   --list-dash-color: oklch(0% 0 0 / 0.25) !important;
   --math-color: color-mix(
@@ -1210,11 +1214,7 @@ body.theme-light {
   --radius-prompt: 24px !important;
   --radius-settings: 27px !important;
   --radius-xxl: 21px !important;
-  --settings-background: color-mix(
-    in oklab,
-    oklch(96.2% 0.0025 281) 70%,
-    oklch(92% 0.0025 281)
-  ) !important;
+  --setting-item-background: oklch(100% 0 0 / 0.75) !important;
   --shadow-button:
     inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4),
     inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4),
@@ -1258,10 +1258,15 @@ body.theme-light {
     0 0.25px 1.25px 0px oklch(0% 0 0 / 0.25), 0px 0px 24px oklch(5% 0 0 / 0.055) !important;
   --shadow-workspace-multi: 0px 2.5px 10px oklch(5% 0 0 / 0.055) !important;
   --stacked-shadow-color: oklch(5% 0 0 / 0.055) !important;
-  --tab-close-bg: oklch(from oklch(85.75% 0.0025 281) l c h / 0.625) !important;
+  --tab-close-bg: oklch(from oklch(85.75% 0.0025 281) l c h / 0.8) !important;
   --tab-right-fade: linear-gradient(
     to left,
-    oklch(92% 0.0025 281) 75%,
+    oklch(91.5% 0.0035 281) 80%,
+    transparent
+  ) !important;
+  --tab-right-fade-alt: linear-gradient(
+    to left,
+    oklch(93.5% 0 0) 80%,
     transparent
   ) !important;
   --tab-sidebar-bg: oklch(100% 0 0 / 0.95) !important;
@@ -1816,7 +1821,7 @@ body.theme-dark {
   ) !important;
   --list-marker-color-hover: oklch(71.25% 0.00375 281) !important;
   --list-numbered-style: decimal !important;
-  --list-spacing: 0.15em !important;
+  --list-spacing: 0.125em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: color-mix(
@@ -2221,17 +2226,18 @@ body.theme-dark {
   --strikethrough-color: oklch(52.5% 0.0075 281) !important;
   --color-base-55: oklch(57.5% 0.0075 281) !important;
   --setting-items-background: oklch(23.5% 0.00125 281) !important;
-  --setting-items-border-width: 0 !important;
-  --setting-item-background: color-mix(
-    in oklab,
-    oklch(23.5% 0.00125 281) 87.5%,
-    oklch(27.5% 0.00375 281)
-  ) !important;
   --setting-group-heading-weight: 525 !important;
+  --setting-items-border-width: 0 !important;
   --color-highlight: rgb(248, 201, 111) !important;
+  --file-margins-y: 28px !important;
   --metadata-label-font-weight: 500 !important;
   --pill-weight: 500 !important;
   --nav-folder-color: oklch(77.5% 0.00375 281) !important;
+  --settings-background: color-mix(
+    in oklab,
+    oklch(26.25% 0.00375 281) 70%,
+    oklch(27.5% 0.00375 281)
+  ) !important;
   --bases-table-text-size: 0.90625em !important;
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
@@ -2312,7 +2318,6 @@ body.theme-dark {
   --fab-color-active: oklch(85% 0.00375 281) !important;
   --fab-easing-curve: cubic-bezier(0.55, 2, 0.5, 0.97) !important;
   --file-margins-x: 5% !important;
-  --file-margins-y: 28px !important;
   --flair-padding: 3px 1px !important;
   --font-label:
     "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -2399,9 +2404,9 @@ body.theme-dark {
   --radius-prompt: 24px !important;
   --radius-settings: 27px !important;
   --radius-xxl: 21px !important;
-  --settings-background: color-mix(
+  --setting-item-background: color-mix(
     in oklab,
-    oklch(26.25% 0.00375 281) 70%,
+    oklch(23.5% 0.00125 281) 87.5%,
     oklch(27.5% 0.00375 281)
   ) !important;
   --shadow-button:
@@ -2455,12 +2460,15 @@ body.theme-dark {
     0 0 20px oklch(from oklch(23.5% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-workspace-multi: 0 0 0 0.5px oklch(100% 0.075 281 / 0.1) !important;
   --stacked-shadow-color: oklch(0 0 0 / 0.1875) !important;
-  --tab-close-bg: oklch(
-    from oklch(36.25% 0.00375 281) l c h / 0.875
-  ) !important;
+  --tab-close-bg: oklch(38.25% 0.00375 281 / 0.875) !important;
   --tab-right-fade: linear-gradient(
     to left,
-    oklch(31.25% 0.00375 281) 75%,
+    oklch(31.25% 0.00469 281) 80%,
+    transparent
+  ) !important;
+  --tab-right-fade-alt: linear-gradient(
+    to left,
+    oklch(28.5% 0.00375 281) 80%,
     transparent
   ) !important;
   --tab-sidebar-bg: oklch(100% 0.05 281 / 0.0625) !important;
@@ -2625,7 +2633,7 @@ body .markdown-rendered a.internal-link {
 body .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(
-    oklch(60.3409% 0.216441 258.855deg / 0.625),
+    oklch(63.3153% 0.200206 258.856deg / 0.7),
     oklch(73.772% 0.143653 259.392deg / 0.75)
   );
   cursor: pointer;
@@ -3803,9 +3811,9 @@ body .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px 0px;
+  margin: 20px 0px 0px;
   margin-block-end: 0px;
-  margin-block-start: 16px;
+  margin-block-start: 20px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }

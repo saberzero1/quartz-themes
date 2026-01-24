@@ -1906,7 +1906,7 @@ body strong {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none solid rgb(171, 70, 66);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(171, 70, 66));
   text-decoration-line: none;
@@ -1930,7 +1930,7 @@ body b {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none solid rgb(171, 70, 66);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(171, 70, 66));
   text-decoration-line: none;

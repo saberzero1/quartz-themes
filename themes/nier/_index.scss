@@ -361,7 +361,7 @@
   --hr-thickness: 2px !important;
   --icon-color: black !important;
   --icon-color-active: #4a473e !important;
-  --icon-color-focused: #49463d !important;
+  --icon-color-focused: #ddd8c7 !important;
   --icon-color-hover: #696868 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
@@ -700,9 +700,9 @@
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(76, 121, 205) !important;
   --tab-text-color: rgb(81, 86, 99) !important;
   --tab-text-color-active: #696868 !important;
-  --tab-text-color-focused: #696868 !important;
+  --tab-text-color-focused: #ddd8c7 !important;
   --tab-text-color-focused-active: #696868 !important;
-  --tab-text-color-focused-active-current: #49463d !important;
+  --tab-text-color-focused-active-current: #ddd8c7 !important;
   --tab-text-color-focused-highlighted: #4a473e !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
@@ -809,6 +809,7 @@
   --gray-2: #abb2bf !important;
   --aqua: #56b6c2 !important;
   --panel-border-color: #18191e !important;
+  --setting-items-background: #f0ece0 !important;
 
   --quartz-icon-color: currentColor;
 }

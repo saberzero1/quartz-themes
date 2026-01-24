@@ -870,7 +870,7 @@ body.theme-light {
           )
           l c calc(h + 330)
       )
-      93% calc(c * 0.4) h
+      98% calc(c * 0.4) h
   ) !important;
   --menu-border-color: #d4d4d4 !important;
   --menu-border-width: 1px !important;
@@ -1566,6 +1566,7 @@ body.theme-light {
       calc(50% - 15%) 30% calc(h + 200)
   ) !important;
   --button-text: #222222 !important;
+  --setting-items-radius: 12px !important;
   --background-tertiary: oklch(
     from
       oklch(
@@ -1580,6 +1581,17 @@ body.theme-light {
   --color-magenta: oklch(from #e91e63 50% 30% h) !important;
   --color-teal: oklch(from #009688 50% 30% h) !important;
   --img-border-radius: 0px !important;
+  --setting-items-background: oklch(
+    from
+      oklch(
+        from
+          oklch(
+            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+          )
+          l c calc(h + 330)
+      )
+      93% calc(c * 0.4) h
+  ) !important;
   --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
   --box-shadow:
@@ -1747,9 +1759,14 @@ body.theme-light {
       oklch(
         from
           oklch(
-            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+            from
+              oklch(
+                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
+                  h
+              )
+              l c calc(h + 30)
           )
-          80% calc(c * 0.4) h
+          65% calc(c * 0.4) h
       )
       85% c h
   ) !important;
@@ -1789,6 +1806,11 @@ body.theme-light {
   --color-rose: oklch(from #f48fb1 50% 30% h) !important;
   --color-vermillion: oklch(from #ff5722 50% 30% h) !important;
   --color-violet: oklch(from #9c27b0 50% 30% h) !important;
+  --file-header-background-focused: oklch(
+    from
+      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
+      80% calc(c * 0.4) h
+  ) !important;
   --folder-accent-1: oklch(from #d32f2f 50% 30% h) !important;
   --folder-accent-10: oklch(from #8bc34a 50% 30% h) !important;
   --folder-accent-11: oklch(from #009688 50% 30% h) !important;
@@ -1833,12 +1855,22 @@ body.theme-light {
     from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%
   ) !important;
   --lightness: 50% !important;
-  --mobile-nav-button-safe-area: 0px !important;
   --outline-color: oklch(
     from oklch(from rgb(153, 115, 247) l c h) 25% c h
   ) !important;
   --rotation-1: 30 !important;
   --rotation-2: 330 !important;
+  --settings-background: oklch(
+    from
+      oklch(
+        from
+          oklch(
+            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+          )
+          l c calc(h + 330)
+      )
+      98% calc(c * 0.4) h
+  ) !important;
   --strong-emphasis: oklch(
     from
       oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
@@ -2402,7 +2434,7 @@ body.theme-dark {
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
+    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32%
       calc(c * 0.3) h
   ) !important;
   --menu-border-color: #3f3f3f !important;
@@ -2888,6 +2920,10 @@ body.theme-dark {
   --color-magenta: oklch(from #e91e63 70% 20% h) !important;
   --color-teal: oklch(from #009688 70% 20% h) !important;
   --img-border-radius: 0px !important;
+  --setting-items-background: oklch(
+    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
+      calc(c * 0.3) h
+  ) !important;
   --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
   --box-shadow:
@@ -2976,6 +3012,9 @@ body.theme-dark {
   --color-rose: oklch(from #f48fb1 70% 20% h) !important;
   --color-vermillion: oklch(from #ff5722 70% 20% h) !important;
   --color-violet: oklch(from #9c27b0 70% 20% h) !important;
+  --file-header-background-focused: oklch(
+    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+  ) !important;
   --folder-accent-1: oklch(from #d32f2f 70% 20% h) !important;
   --folder-accent-10: oklch(from #8bc34a 70% 20% h) !important;
   --folder-accent-11: oklch(from #009688 70% 20% h) !important;
@@ -3012,12 +3051,15 @@ body.theme-dark {
     from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%
   ) !important;
   --lightness: 70% !important;
-  --mobile-nav-button-safe-area: 0px !important;
   --outline-color: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 25% c h
   ) !important;
   --rotation-1: 30 !important;
   --rotation-2: 330 !important;
+  --settings-background: oklch(
+    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32%
+      calc(c * 0.3) h
+  ) !important;
   --strong-emphasis: oklch(
     from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20% calc(h + 200)
   ) !important;
@@ -4515,7 +4557,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
 }
 body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
-  cursor: pointer;
+  cursor: default;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4546,7 +4588,7 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  cursor: pointer;
+  cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
   transition-duration: 0s;
@@ -4561,7 +4603,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: light-dark(oklch(50% 0.12 64.0404deg), oklch(70% 0.08 64.0404deg));
-  cursor: pointer;
+  cursor: default;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4585,7 +4627,7 @@ body
   > .tree-item
   > .tree-item-self {
   color: light-dark(oklch(50% 0.12 64.0404deg), oklch(70% 0.08 64.0404deg));
-  cursor: pointer;
+  cursor: default;
   font-family:
     ui-sans-serif,
     -apple-system,

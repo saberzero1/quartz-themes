@@ -985,6 +985,8 @@ body.theme-light {
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
   --nn-theme-nav-bg: transparent !important;
   --nn-theme-navitem-selected-bg: rgb(0, 0, 0) !important;
+  --setting-items-padding: 0 0 20px 0 !important;
+  --setting-items-radius: 0 !important;
   --nn-theme-file-selected-bg: rgb(0, 0, 0) !important;
   --i-0: rgb(249, 249, 251) !important;
   --i-1: rgb(247, 245, 249) !important;
@@ -1060,14 +1062,13 @@ body.theme-light {
   --i-s: 25% !important;
   --i-scrollbar-color: rgb(216, 210, 228) !important;
   --i-scrollbar-color-active: rgb(205, 198, 221) !important;
-  --i-scrollbar-thumb-size: 5px !important;
-  --i-scrollbar-track-size: 11px !important;
+  --i-scrollbar-thumb-size: 4px !important;
+  --i-scrollbar-track-size: 9px !important;
   --i-spacing-below-headings: 0.3rem !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
   --nn-theme-quick-actions-bg: #ffffff !important;
   --setting-items-background: #ffffff !important;
-  --setting-items-border-width: 1px !important;
   --i-lt-border-l: 14% !important;
   --i-lt-l-multiplier: 1 !important;
   --i-lt-layout-s: 25% !important;
@@ -1902,6 +1903,8 @@ body.theme-dark {
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
   --nn-theme-nav-bg: transparent !important;
   --nn-theme-navitem-selected-bg: rgb(0, 0, 0) !important;
+  --setting-items-padding: 0 0 20px 0 !important;
+  --setting-items-radius: 0 !important;
   --nn-theme-file-selected-bg: rgb(0, 0, 0) !important;
   --i-0: rgb(32, 29, 37) !important;
   --i-1: rgb(34, 31, 40) !important;
@@ -1983,14 +1986,13 @@ body.theme-dark {
   --i-s: 12% !important;
   --i-scrollbar-color: rgb(68, 63, 80) !important;
   --i-scrollbar-color-active: rgb(73, 67, 86) !important;
-  --i-scrollbar-thumb-size: 5px !important;
-  --i-scrollbar-track-size: 11px !important;
+  --i-scrollbar-thumb-size: 4px !important;
+  --i-scrollbar-track-size: 9px !important;
   --i-spacing-below-headings: 0.3rem !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
   --nn-theme-quick-actions-bg: rgb(29, 27, 34) !important;
   --setting-items-background: rgb(29, 27, 34) !important;
-  --setting-items-border-width: 1px !important;
 }
 
 body {

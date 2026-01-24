@@ -117,9 +117,9 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #e0e0e0 !important;
+  --bases-table-border-color: #007fff38 !important;
   --bases-table-cell-background-active: #e8efff !important;
-  --bases-table-cell-background-disabled: #e1e1e1 !important;
+  --bases-table-cell-background-disabled: transparent !important;
   --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
@@ -131,18 +131,18 @@ body.theme-light {
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #e1e1e1 !important;
+  --bases-table-group-background: #e8efff !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: #e8efff !important;
   --bases-table-header-background-hover: #007fff28 !important;
-  --bases-table-header-color: #353535 !important;
+  --bases-table-header-color: #000 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent 24px,
     black 24px
   ) !important;
-  --bases-table-header-weight: 400 !important;
+  --bases-table-header-weight: 600 !important;
   --bases-table-row-background-hover: #0088ff33 !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
@@ -269,9 +269,9 @@ body.theme-light {
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #d1dfff !important;
+  --dropdown-background: #007fff18 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #007fff28 !important;
+  --dropdown-background-hover: #007fff38 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
@@ -295,7 +295,7 @@ body.theme-light {
   --file-header-justify: left !important;
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
-  --flair-background: #d1dfff !important;
+  --flair-background: #007fff18 !important;
   --flair-color: #000 !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
@@ -468,8 +468,8 @@ body.theme-light {
   --interactive-accent: rgb(155, 130, 242) !important;
   --interactive-accent-hover: rgb(170, 153, 245) !important;
   --interactive-accent-hsl: 254, 80%, 68% !important;
-  --interactive-hover: #007fff28 !important;
-  --interactive-normal: #d1dfff !important;
+  --interactive-hover: #007fff38 !important;
+  --interactive-normal: #007fff18 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -889,8 +889,11 @@ body.theme-light {
   --status-bar-scroll-padding: 30px !important;
   --vault-name-font-size: 14px !important;
   --vault-name-font-weight: 500 !important;
+  --setting-group-heading-color: #0048f1 !important;
+  --setting-group-heading-size: 16px !important;
   --nav-item-weight-active: 600 !important;
   --tab-font-weight: 500 !important;
+  --setting-items-background: #d1dfff !important;
   --cards-th-display: none !important;
   --hidden-text-underline-background-color: #ffff0088 !important;
   --hidden-text-underline-foreground-color: #000 !important;
@@ -941,6 +944,13 @@ body.theme-light {
   --mu-divider-width-value: 1 !important;
   --mu-external-link: #0033ff !important;
   --mu-external-link-hover: #00a3ff !important;
+  --mu-fc-answer-border-color: #bf00ff !important;
+  --mu-fc-bg-color: #007fff20 !important;
+  --mu-fc-fg-color: #000 !important;
+  --mu-fc-height: 400px !important;
+  --mu-fc-height-value: 400 !important;
+  --mu-fc-width: 280px !important;
+  --mu-fc-width-value: 280 !important;
   --mu-file-header-border-color: #007fff20 !important;
   --mu-file-header-border-value: 1 !important;
   --mu-file-header-border-width: 1px !important;
@@ -1175,9 +1185,9 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #363636 !important;
+  --bases-table-border-color: #007fff38 !important;
   --bases-table-cell-background-active: #002248 !important;
-  --bases-table-cell-background-disabled: #212121 !important;
+  --bases-table-cell-background-disabled: transparent !important;
   --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
@@ -1189,18 +1199,18 @@ body.theme-dark {
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #212121 !important;
+  --bases-table-group-background: #002248 !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: #002248 !important;
   --bases-table-header-background-hover: #007fff28 !important;
-  --bases-table-header-color: #b3b3b3 !important;
+  --bases-table-header-color: #dadada !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
     transparent 24px,
     black 24px
   ) !important;
-  --bases-table-header-weight: 400 !important;
+  --bases-table-header-weight: 600 !important;
   --bases-table-row-background-hover: #0088ff33 !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
@@ -1327,9 +1337,9 @@ body.theme-dark {
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: #001122 !important;
+  --dropdown-background: #007fff18 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #007fff28 !important;
+  --dropdown-background-hover: #007fff38 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
@@ -1353,7 +1363,7 @@ body.theme-dark {
   --file-header-justify: left !important;
   --file-line-width: 700px !important;
   --file-margins: 32px !important;
-  --flair-background: #001122 !important;
+  --flair-background: #007fff18 !important;
   --flair-color: #dadada !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
@@ -1526,8 +1536,8 @@ body.theme-dark {
   --interactive-accent: rgb(139, 108, 239) !important;
   --interactive-accent-hover: rgb(170, 153, 245) !important;
   --interactive-accent-hsl: 254, 80%, 68% !important;
-  --interactive-hover: #007fff28 !important;
-  --interactive-normal: #001122 !important;
+  --interactive-hover: #007fff38 !important;
+  --interactive-normal: #007fff18 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1945,8 +1955,11 @@ body.theme-dark {
   --status-bar-scroll-padding: 30px !important;
   --vault-name-font-size: 14px !important;
   --vault-name-font-weight: 500 !important;
+  --setting-group-heading-color: #00a3ff !important;
+  --setting-group-heading-size: 16px !important;
   --nav-item-weight-active: 600 !important;
   --tab-font-weight: 500 !important;
+  --setting-items-background: #001122 !important;
   --cards-th-display: none !important;
   --hidden-text-underline-background-color: #ffff0088 !important;
   --hidden-text-underline-foreground-color: #dadada !important;
@@ -1997,6 +2010,13 @@ body.theme-dark {
   --mu-divider-width-value: 1 !important;
   --mu-external-link: #00a9dd !important;
   --mu-external-link-hover: #00c3ff !important;
+  --mu-fc-answer-border-color: #bf00ff !important;
+  --mu-fc-bg-color: #007fff20 !important;
+  --mu-fc-fg-color: #dadada !important;
+  --mu-fc-height: 400px !important;
+  --mu-fc-height-value: 400 !important;
+  --mu-fc-width: 280px !important;
+  --mu-fc-width-value: 280 !important;
   --mu-file-header-border-color: #007fff20 !important;
   --mu-file-header-border-value: 1 !important;
   --mu-file-header-border-width: 1px !important;
