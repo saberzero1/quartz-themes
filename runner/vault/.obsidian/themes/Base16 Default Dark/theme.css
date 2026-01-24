@@ -327,7 +327,7 @@
 .theme-dark strong,
 .theme-dark .cm-strong {
   color: var(--bold-color);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Bold inside callouts - neutral color */
@@ -1088,7 +1088,9 @@ body {
   padding: 0 !important;
   opacity: 0;
   overflow: hidden;
-  transition: opacity 0.15s ease, max-width 0.15s ease;
+  transition:
+    opacity 0.15s ease,
+    max-width 0.15s ease;
   pointer-events: none;
 }
 
@@ -1147,7 +1149,9 @@ body {
   display: block;
   box-sizing: border-box;
   position: relative;
-  transition: max-height 0.2s ease, padding 0.2s ease;
+  transition:
+    max-height 0.2s ease,
+    padding 0.2s ease;
   max-height: 1.5em;
   padding: 0;
 }
@@ -1175,7 +1179,9 @@ body {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 0.15s ease, max-height 0.15s ease;
+  transition:
+    opacity 0.15s ease,
+    max-height 0.15s ease;
 }
 
 .workspace-leaf-content[data-type='markdown']
@@ -1219,13 +1225,17 @@ body:has(.metadata-menu)
     border: 1px solid var(--background-modifier-border);
     border-radius: 8px;
     cursor: default;
-    transition: background-color 0.1s ease, border-color 0.1s ease;
+    transition:
+      background-color 0.1s ease,
+      border-color 0.1s ease;
     contain: layout style;
 
     .tasks-postpone,
     .tasks-edit,
     .tasks-backlink {
-      transition: opacity 0.1s ease, max-height 0.1s ease;
+      transition:
+        opacity 0.1s ease,
+        max-height 0.1s ease;
     }
 
     &:hover {
@@ -1470,6 +1480,19 @@ body:has(.metadata-menu)
   & :is(.bases-rendered-value, .bases-metadata-value) {
     min-width: fit-content;
     width: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 4px;
+  }
+
+  & .multi-select-pill {
+    flex-shrink: 0;
+    max-width: none !important;
+  }
+
+  & .multi-select-pill-content {
+    text-overflow: clip !important;
+    overflow: visible !important;
   }
 
   &:hover :is(.bases-rendered-value, .bases-metadata-value) {
@@ -1566,14 +1589,17 @@ body:not(.classic-inline-backlinks) .embedded-backlinks .tree-item-inner {
 .prompt-instructions {
   display: none;
 }
-body .another-quick-switcher__status__count-input {
+body .another-quick-switcher__status__count-wrapper {
   top: 1rem;
   right: 1rem;
+}
+body .another-quick-switcher__status__count-input {
   color: var(--text-faint);
 }
+
 .another-quick-switcher__item__title:not(
-    .another-quick-switcher__item__title__header_hit
-  ) {
+  .another-quick-switcher__item__title__header_hit
+) {
   font-weight: normal;
 }
 .another-quick-switcher__item__description.another-quick-switcher__item__description {
@@ -1606,6 +1632,9 @@ body .another-quick-switcher__item {
 }
 body .another-quick-switcher__item__description {
   margin-left: 8px;
+}
+.another-quick-switcher__item__title__header1 {
+  margin-left: 6px;
 }
 
 .prompt,
@@ -1716,7 +1745,9 @@ body .various-complements__suggestion-item {
 /* Sidebar */
 body:not(.show-sidebar-header-buttons) :is(.mod-left-split, .mod-right-split) {
   :is(.workspace-tab-header-container, .workspace-tab-header-container-inner) {
-    transition: opacity 0.15s ease, height 0.15s ease;
+    transition:
+      opacity 0.15s ease,
+      height 0.15s ease;
   }
 
   .workspace-tabs {
@@ -1936,5 +1967,5 @@ mark {
 }
 .workspace-split.mod-root .workspace-tab-header.is-active::before,
 .workspace-split.mod-root .workspace-tab-header.is-active::after {
-  box-shadow: none;
+  box-shadow: none !important;
 }

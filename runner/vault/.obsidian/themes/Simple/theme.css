@@ -7,119 +7,137 @@ Readme:
 https://github.com/diegoeis/simple-obsidian
 ────────────────────────────────────────────────────── */
 
-    /* -
-        id: eis-vintage-color
-        title: Vintage Theme
-        description: If enable, you will have a beauty vintage neutral style
-        type: class-toggle
-        default: true */
 /* @settings
 
 name: Simple visual control settings
 id: custom-diegoeis-simple
 settings:
-    - 
-      id: appearance
-      title: General appearance
-      description: Where you config the interface appearance and other general options
-      type: heading
-      level: 1
-    -
-        id: eis-sidebar-dark
-        title: Dark sidebar
-        description: If enable, the sidebar will be dark, even in light mode.
-        type: class-toggle
-        default: false
-    -
-        id: enable-alternative-checkboxes
-        title: Enable Alternative Checkboxes
-        description: Disable this if you are using your own implementation via a CSS Snippet.
-        default: true
-        type: class-toggle
-    -
-        id: enable-focus-mode
-        title: Enable Focus Mode
-        description: When enabled, tabs will be hidden by default and will appear when you hover over their area.
-        default: false
-        type: class-toggle
-    -
-      id: eis-font-family
-      title: Font size of headings and paragraphs
-      type: heading
-      level: 1
-    - 
-        id: font-default
-        title: Custom Body family
-        description: Font family of body text
-        type: variable-text
-        default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif
-    - 
-        id: eis-font-type
-        title: Choose what type of font you want to use
-        description: These are beautyful fonts to write and read.
-        type: class-select
-        allowEmpty: false
-        default: eis-font-default
-        options:
-          - eis-font-default
-          - eis-font-ibm
-          - eis-font-iawriter-quattro
-
-    -
-      id: eis-font-size
-      title: Font size of headings and paragraphs
-      type: heading
-      level: 1
-    - 
-        id: size-h1
-        title: H1
-        description: Font size of H1
-        type: variable-number
-        default: 1.65
-        format: rem
-    - 
-        id: size-h2
-        title: H2
-        description: Font size of H2
-        type: variable-number
-        default: 1.45
-        format: rem
-    - 
-        id: size-h3
-        title: H3
-        description: Font size of H3
-        type: variable-number
-        default: 1.3
-        format: rem
-    - 
-        id: size-h4
-        title: H4
-        description: Font size of H4
-        type: variable-number
-        default: 1.15
-        format: rem
-    - 
-        id: size-h5
-        title: H5
-        description: Font size of H5
-        type: variable-number
-        default: 1
-        format: rem
-    - 
-        id: size-h6
-        title: H6
-        description: Font size of H6
-        type: variable-number
-        default: .95
-        format: rem
-    - 
-        id: font-paragraph
-        title: Body paragraph
-        description: Font size of body size
-        type: variable-number
-        default: 0.9
-        format: rem
+-
+  id: eis-sidebar-dark
+  title: Dark sidebar
+  description: If enable, the sidebar will be dark, even in light mode.
+  type: class-toggle
+  default: false
+-
+  id: enable-alternative-checkboxes
+  title: Enable Alternative Checkboxes
+  description: Disable this if you are using your own implementation via a CSS Snippet.
+  default: true
+  type: class-toggle
+-
+  id: hide-h1-after-properties
+  title: Hide h1 after properties?
+  description: If checked, the first H1 just before the properties will be hidden. Use with wise. Better use when inline title option in Obsidian is enabled.
+  default: false
+  type: class-toggle
+-
+  id: eis-content-order
+  title: Define the order of elements in content space.
+  description: Here you can define the vertical order position of elements in the editor panel. The default order is Properties, Inline Title (usually the filename), Content, embedded backlinks
+  type: heading
+  level: 1
+- 
+    id: order-inline-title
+    title: Inline Title - Filename
+    description: Inline Title position
+    type: variable-number
+    default: 2
+- 
+    id: order-properties-metadata
+    title: Properties metadata (YAML) position
+    description: Properties metadata panel position
+    type: variable-number
+    default: 1
+- 
+    id: order-content
+    title: Content position
+    description: The order where content will be positioned
+    type: variable-number
+    default: 3
+- 
+    id: order-embedded-backlinks
+    title: Backlinks list position
+    description: The order of backlinks list (normally at the end of editor)
+    type: variable-number
+    default: 4
+-
+  id: eis-font-family
+  title: Font size of headings and paragraphs
+  type: heading
+  level: 1
+- 
+    id: font-default
+    title: Custom Body family
+    description: Font family of body text
+    type: variable-text
+    default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif
+- 
+    id: eis-font-type
+    title: Choose what type of font you want to use
+    description: These are beautyful fonts to write and read.
+    type: class-select
+    allowEmpty: false
+    default: eis-font-default
+    options:
+      - eis-font-default
+      - eis-font-ibm
+      - eis-font-iawriter-quattro
+-
+  id: eis-font-size
+  title: Font size of headings and paragraphs
+  type: heading
+  level: 1
+- 
+    id: size-h1
+    title: H1
+    description: Font size of H1
+    type: variable-number
+    default: 1.65
+    format: rem
+- 
+    id: size-h2
+    title: H2
+    description: Font size of H2
+    type: variable-number
+    default: 1.45
+    format: rem
+- 
+    id: size-h3
+    title: H3
+    description: Font size of H3
+    type: variable-number
+    default: 1.3
+    format: rem
+- 
+    id: size-h4
+    title: H4
+    description: Font size of H4
+    type: variable-number
+    default: 1.15
+    format: rem
+- 
+    id: size-h5
+    title: H5
+    description: Font size of H5
+    type: variable-number
+    default: 1
+    format: rem
+- 
+    id: size-h6
+    title: H6
+    description: Font size of H6
+    type: variable-number
+    default: .95
+    format: rem
+- 
+    id: font-paragraph
+    title: Body paragraph
+    description: Font size of body size
+    type: variable-number
+    default: 0.9
+    format: rem
 */
+
 
 /*** CODE - FIRA CODE ***/
 @font-face { 
@@ -236,6 +254,14 @@ body {
   --tab-radius-active: var(--default-border-radius);
   --tab-font-size: .7rem;
 
+ /***
+  POSITION ORDER ELEMENTS
+ ***/
+ --order-inline-title: 2;
+ --order-properties-metadata: 1;
+ --order-content: 3;
+ --order-embedded-backlinks: 4;
+
 }
 
 body.eis-font-ibm {
@@ -314,7 +340,6 @@ body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-rib
 body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-ribbon.mod-left:not(.is-collapsed):before,
 body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .mod-left-split .workspace-tabs .workspace-leaf {
   background-color: var(--ribbon-bg);
-  border-color: rgba(255, 255, 255, 0.1);
   transition: all linear .1s;
 }
 body.eis-sidebar-dark:not(body.theme-dark) .workspace-ribbon.mod-left.is-collapsed {transition: none;}
@@ -324,21 +349,31 @@ body.eis-sidebar-dark:not(body.theme-dark).is-hidden-frameless:not(.is-popout-wi
   border-bottom-color: var(--divider-color)
 }
 
+body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-container,
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-ribbon.side-dock-ribbon.mod-left,
+body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .workspace-ribbon.mod-left:not(.is-collapsed):before,
+body.eis-sidebar-dark:not(body.theme-dark) .is-left-sidedock-open .mod-left-split .workspace-tabs .workspace-leaf,
+body.eis-sidebar-dark .tree-item-children {
+  border-color: rgba(255, 255, 255, .15);
+}
+
 /** SCROLL BARS **/
-.nav-files-container ::-webkit-scrollbar {
-  width: 9px;
+.nav-files-container {
+  scrollbar-color: #999 transparent;
 }
 
-.nav-files-container ::-webkit-scrollbar-track {
-  background: var(--scrollbar-background);
-}
 
-.nav-files-container ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-color);
-  border-radius: 0;
-  border: 0px;
-}
+/* ─────────────────────────────────────────────────── */
+/* Element ORDER orders
+/* ─────────────────────────────────────────────────── */
+.inline-title:not([data-level]) {order: var(--order-inline-title);}
 
+.markdown-source-view.is-live-preview.show-properties .metadata-container:not(.mod-error) {order: var(--order-properties-metadata);}
+
+.markdown-source-view.mod-cm6 .cm-contentContainer {order: var(--order-content);}
+
+.embedded-backlinks {order: var(--order-embedded-backlinks);}
 
 
 
@@ -486,16 +521,17 @@ body.eis-sidebar-dark:not(body.theme-dark) [data-path="/"].tree-item-self.nav-fo
 /* CONTENT READING PANEL
 /* ─────────────────────────────────────────────────── */
 
+.hide-h1-after-properties .cm-contentContainer .cm-content [contenteditable="false"] + .HyperMD-header.HyperMD-header-1.cm-line {
+  display: none;
+}
 
-/*** 
-  Headings 
-***/
+
 .cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-1.cm-line,
-.markdown-rendered h1 {font-size: var(--size-h1);  font-weight: 600 !important;line-height: 1.2;}
+.markdown-rendered h1 {font-size: var(--size-h1); font-weight: 700 !important; line-height: 1.2;}
 .cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-2.cm-line,
-.markdown-rendered h2 {font-size: var(--size-h2); font-weight: 500 !important;}
+.markdown-rendered h2 {font-size: var(--size-h2);}
 .cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-3.cm-line,
-.markdown-rendered h3 {font-size: var(--size-h3); font-weight: 500 !important;}
+.markdown-rendered h3 {font-size: var(--size-h3);}
 .cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-4.cm-line,
 .markdown-rendered h4 {font-size: var(--size-h4);}
 .cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-5.cm-line,
@@ -539,9 +575,10 @@ body.eis-sidebar-dark:not(body.theme-dark) [data-path="/"].tree-item-self.nav-fo
 .cm-contentContainer .cm-content .HyperMD-header.HyperMD-header-6.cm-line:hover:before {
   --title-height-title-id: 12px;
   position: absolute;
-  top: calc(var(--title-height-title-id)/1.5);
+  bottom: 5px;
   right: 0;
-  top: 50%;
+  z-index: -1;
+  user-select: none;
   transform: translateY(-50%);
   height: var(--title-height-title-id);
   opacity: .3;
@@ -744,13 +781,16 @@ body.eis-sidebar-dark .cm-hmd-frontmatter.cm-string {color: var(--color-base-60)
 /* ─────────────────────────────────────────────────── */
 /* Foscus Mode
 /* ─────────────────────────────────────────────────── */
-
-.enable-focus-mode .mod-root .workspace-tab-header-container {
+/*
+.mod-top-right-space .workspace-tab-header-container:hover {
   background: transparent;
+  width: 100% !important;
+  border: 1px solid red;
   border-bottom-color: transparent;
 }
 
-.enable-focus-mode .mod-root .workspace-tab-header-container::before {
+ .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner {width: 100%;}
+.mod-root .workspace-tab-header-container::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -759,19 +799,20 @@ body.eis-sidebar-dark .cm-hmd-frontmatter.cm-string {color: var(--color-base-60)
   background: rgba(0, 0, 0, 0.1);
   width: 70%;
   height: 5px;
+  z-index: -1;
   border-radius: 10px;
-}
+} 
+.theme-dark .mod-root .workspace-tab-header-container::before {background: rgba(255, 255, 255, 0.05);}
 
-.enable-focus-mode .theme-dark .mod-root .workspace-tab-header-container::before {background: rgba(255, 255, 255, 0.05);}
-
-.enable-focus-mode .mod-root .workspace-tab-header-container:hover::before {display: none;}
-.enable-focus-mode .mod-root .workspace-tab-header-container:hover * {opacity: 1;}
-.enable-focus-mode .mod-root .workspace-tab-header-container:hover {
+.mod-root .workspace-tab-header-container:hover::before {display: none;}
+.mod-root .workspace-tab-header-container:hover .workspace-tab-header-container-inner * {opacity: 1;}
+.mod-root .workspace-tab-header-container .workspace-tab-header-container-inner:hover {
   background: var(--tab-container-background);
+  border: 1px solid red;
   border-bottom-color: var(--tab-outline-color);
 }
 
-.enable-focus-mode .mod-root .workspace-tab-header-container * {opacity: 0;}
+.mod-root .workspace-tab-header-container .workspace-tab-header-container-inner * {opacity: 0;} */
 
 
 /* ─────────────────────────────────────────────────── */

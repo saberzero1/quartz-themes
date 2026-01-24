@@ -666,7 +666,10 @@ body {
 }
 
 /* this makes the highlighted icon color black on htb accent */
-.mod-top-left-space .workspace-tab-header.tappable.is-active svg {
+.mod-left-split
+  .mod-top-left-space
+  .workspace-tab-header.tappable.is-active
+  svg {
   font-weight: 700;
   stroke: black;
   stroke-width: 2;
@@ -791,3 +794,4 @@ body {
 div.workspace-tab-header-inner-close-button svg{
 	stroke:var(--htb-text-color) !important;
 }*/
+

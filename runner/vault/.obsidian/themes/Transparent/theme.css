@@ -11,43 +11,58 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 
 /* @settings
 
-name: Obsidian-Transparent theme configuration
+name: Obsidian-Transparent Theme Configuration
 id: obsidian-transparent
 settings:
     -
-       id: Obsidian-Transparent-information
-       description: " # Information
-
-I update this theme daily so remember about regularly updating this theme to get more features 
-"
-       type: info-text
-       markdown: true
-    - 
+        id: info-section
+        title: "✨ Obsidian-Transparent"
+        description: |
+            I'm actively developing this theme to provide the best transparent experience for Obsidian.
+            
+            **Support the project:**
+            If you find this theme useful, please consider dropping a ⭐ on GitHub. It's a huge motivation for me to keep shipping updates and new features!
+            
+            [View Repository on GitHub](https://github.com/Oczko24/Obsidian-transparent)
+        type: info-text
+        markdown: true
+    -
         id: set-blur
-        title: Blur Intensity
+        title: "🌫️ Blur Intensity"
         type: variable-number-slider
         default: 80
-        description: Adjust with care; lower values may affect visual quality, while significantly higher values can impact performance.
+        description: "Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems."
         min: 10
         max: 100
         step: 1
         format: px
-    - 
+    -
+        id: variant-info
+        title: "Theme Variants Guide"
+        description: |
+            Match the variant with your Obsidian appearance settings:
+            * **Default:** Standard transparency for all-around use.
+            * **AMOLED:** Deep black background. Designed specifically for **Dark** mode.
+            * **Pure White:** Clean aesthetic. Designed specifically for **Light** mode.
+            
+            *AMOLED and Pure White variants are currently in beta. Feedback on GitHub is appreciated!*
+        type: info-text
+        markdown: true
+    -
         id: tr
-        title: Theme variant
-        description: Variations on a theme background take in account that this is not tested. **NOTE** that Amoled works only on dark theme and pure white works only with light theme (you can change it via obsidian settings > appearance)
+        title: "🌀 Select Variant"
         type: variable-select
         allowEmpty: false
         default: transparent
         options:
-            - 
-                label: Default
+            -
+                label: "Default (Transparent)"
                 value: transparent
-            - 
-                label: AMOLED
+            -
+                label: "AMOLED (Dark Mode Only)"
                 value: '#000000'
-            - 
-                label: pure white
+            -
+                label: "Pure White (Light Mode Only)"
                 value: '#ffffff'
 */
 
@@ -70,6 +85,9 @@ body {
   --divider-color: var(--tr);
   --background-modifier-border: var(--tr); /* i dont remember if it will destroy something if i make statement like transparent instead of "transparent" but i think writing transparent is more correct than random letters */
   --input-border-width: 1px;
+
+    
+  --scrollbar-width: 10px;
 }
 /* ===================== vars ===================== */
 
@@ -445,10 +463,24 @@ input[type="range"]::-webkit-slider-thumb {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   border-color: var(--tr);
 }
+
+
+/* github issue #4 fix */
+
+
 .mobile-toolbar {
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+/*  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); 18 jan 2026 fix */
   background-color: var(--tr);
 }
+body.is-mobile .app-container {
+ /*   max-height: 100vh; tempomary fix or so*/
+}
+.is-mobile .mod-raised {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+    }
+
+
+/* github issue #4 fix */
 
 
       .theme-dark .mobile-navbar {
@@ -487,10 +519,10 @@ input[type='range'] {
 */
 /* tempomary fixes to new mobile obisian update */
 .is-phone .workspace-drawer {
-    background-color: #00000000;
+    background-color: #000000;
     }
 .is-tablet .workspace-drawer {
-    background-color: #00000060;
+    background-color: #000000;
     }
 .is-phone .workspace-drawer-tab-options-list {
     background-color: #000000; /* pure black cuz i have no clue how to apply this */
@@ -500,7 +532,7 @@ input[type='range'] {
     background-color: var(--tr);
 }
 .is-phone .mobile-navbar {
-    background-color: #00000060;
+    background-color: #000000;
     backdrop-filter: blur(var(--set-blur));
 }
 
@@ -508,3 +540,49 @@ input[type='range'] {
     background-color: #00000060;
     backdrop-filter: blur(10px);
 }
+/* some fixes to make after leatest update */
+
+.setting-group .setting-items {
+    background-color: var(--tr);
+    }
+.setting-group .setting-group-search {
+    background-color: var(--tr);
+    }
+.setting-item {
+    background-color: var(--tr);
+    }
+
+/* Hide every scrollbar in obsidian based from https://github.com/Lithou/Sandbox/blob/main/.obsidian/snippets/scrollbar.css */
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+::-webkit-scrollbar:hover {
+visibility: initial;
+}
+::-webkit-scrollbar-thumb:hover {
+    visibility: initial;
+}
+/* until there thanks Lithou */
+
+/* fixes */
+/*
+.is-phone .status-bar,
+.workspace-tab-header-container,
+.titlebar {
+  position: relative;
+  z-index: 9999 !important;
+}
+
+.is-phone .is-hidden-nav .mobile-navbar {
+    opacity: 1;
+}
+.is-phone .mobile-navbar {
+    max-width: 100vw;
+    border-radius: 0px;
+    width: 100vw;
+    margin-bottom: 0px;
+    position: relative;
+    }*/

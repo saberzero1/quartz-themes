@@ -9,7 +9,7 @@ GitHub Repository:
 https://github.com/drbap/magicuser-theme-for-obsidian
 
 MIT License
-Copyright (c) 2023-2025 Bernardo Pires (@drbap)
+Copyright (c) 2023-2026 Bernardo Pires (@drbap)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -616,7 +616,7 @@ body {
   --background-primary: var(--mu-background-color-1);
   --background-secondary: var(--mu-background-color-2);
   /* Background Modifiers*/
-  --background-modifier-hover: #007fff28;
+  --background-modifier-hover: #007fff28 !important;
   --background-modifier-active-hover: var(--background-modifier-hover);
   --background-modifier-border: #007fff38;
   --background-modifier-border-hover: #007fff48;
@@ -686,6 +686,15 @@ body {
   --mu-callout-link: 48, 142, 255;
   --mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor"/></svg>';
   --mu-box-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>';
+
+  --mu-fc-bg-color: #007fff20;
+  --mu-fc-fg-color: var(--text-normal);
+  --mu-fc-answer-border-color: #bf00ff;
+  --mu-fc-width-value: 280;
+  --mu-fc-width: calc(var(--mu-fc-width-value)*1px);
+  --mu-fc-height-value: 400;
+  --mu-fc-height: calc(var(--mu-fc-height-value)*1px);
+
   --mu-line-highlight-border: transparent;
   --mu-line-highlight-background: transparent;
 
@@ -851,6 +860,20 @@ body {
 
   --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
+
+  --setting-group-heading-size: var(--font-ui-medium) !important;
+  --interactive-normal: #007fff18 !important;
+  --interactive-hover: #007fff38 !important;
+
+  --bases-table-header-weight: var(--font-semibold);
+  --bases-table-header-color: var(--text-normal);
+  --bases-table-group-background: var(--mu-background-color-1);
+  --bases-table-header-background: var(--mu-background-color-1);
+  --bases-table-cell-background-disabled: transparent;
+  --bases-table-border-color: var(--background-modifier-border);
+
+  --setting-items-background: var(--mu-background-color-2) !important;
+
 }
 
 body::before {
@@ -1042,10 +1065,6 @@ span.is-flashing {
   background-color: var(--nav-item-background-active);
 }
 
-.workspace-tab-header {
-  background-color: var(--background-secondary);
-}
-
 .workspace-tab-header-status-icon.mod-pinned:hover {
   background-color: #00a3ff48 !important;
 }
@@ -1085,14 +1104,12 @@ span.obsidian-search-match-highlight {
 .setting-item {
   display: flex;
   align-items: center;
-  padding: var(--size-4-2) 0;
   border: 0;
   border-bottom: 1px solid var(--mu-menu-separator-color);
 }
 
 .setting-item.setting-item-heading {
   margin-top: var(--size-4-2);
-  border-bottom: 1px solid var(--mu-menu-separator-color);
 }
 
 .installed-plugins-container {
@@ -1103,12 +1120,14 @@ span.obsidian-search-match-highlight {
   caret-color: var(--mu-caret-color) !important;
 }
 
+input[type="number"],
 input[type="text"],
 input[type="search"] {
   background-color: var(--mu-input-bg-color);
   color: var(--mu-caret-color);
 }
 
+input[type="number"]:hover,
 input[type="text"]:hover,
 input[type="search"]:hover {
   background-color: var(--mu-input-bg-color);
@@ -1224,8 +1243,6 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --tab-divider-color: #003364;
   --mu-folder-zoom: 82%;
   --mu-notes-icon-zoom: 72%;
-  --interactive-normal: var(--mu-background-color-2);
-  --interactive-hover: var(--background-modifier-hover);
   --mu-code-attribute: #ffa3a3;
   --mu-input-bg-color: #001836;
   --mu-label-h1: #a35fbf;
@@ -1251,6 +1268,8 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-scrollbar-thumb-bg: #84848422;
   --mu-scrollbar-thumb-bg-hover: #84848433;
   --mu-scrollbar-track-bg-hover: #00000021;
+
+  --setting-group-heading-color: #00a3ff;
 }
 
 /* Dark theme settings */
@@ -1344,8 +1363,6 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-text-selection: #0051f136;
   --mu-suggestion-color: #0072d3;
   --mu-special-folder-color: #000;
-  --interactive-normal: var(--mu-background-color-2);
-  --interactive-hover: var(--background-modifier-hover);
   /* highlight blend mode */
   --highlight-mix-blend-mode: normal;
   --background-primary-alt: #e1e1e1;
@@ -1360,6 +1377,8 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-scrollbar-thumb-bg: #48484822;
   --mu-scrollbar-thumb-bg-hover: #48484833;
   --mu-scrollbar-track-bg-hover: #82828221;
+
+  --setting-group-heading-color: #0048f1;
 }
 
 .theme-light .workspace-tabs .workspace-leaf {
@@ -3411,6 +3430,121 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   display: none;
 }
 
+/* MagicUser flashcards */
+
+.callout[data-callout="fc-group"] {
+  --callout-icon: library-big;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 32px;
+}
+
+.callout[data-callout="fc-group"]>.callout-title {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--text-normal);
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--background-modifier-border);
+  margin-bottom: 24px;
+}
+
+.callout[data-callout="fc-group"]>.callout-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.callout[data-callout="fc-group"] .callout[data-callout="fc"] {
+  margin: 0 !important;
+  flex: 0 0 var(--mu-fc-width);
+}
+
+.callout[data-callout="fc"] {
+  width: 100%;
+  max-width: var(--mu-fc-width);
+  height: var(--mu-fc-height);
+  margin: 24px auto !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  perspective: 1000px;
+  position: relative;
+}
+
+.callout[data-callout="fc"] .callout-title,
+.callout[data-callout="fc"] .callout-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1em;
+  padding: 24px !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.callout[data-callout="fc"][data-callout-metadata="no-animation"] .callout-title,
+.callout[data-callout="fc"][data-callout-metadata="no-animation"] .callout-content,
+.callout[data-callout="fc-group"][data-callout-metadata="no-animation"] .callout[data-callout="fc"] .callout-title,
+.callout[data-callout="fc-group"][data-callout-metadata="no-animation"] .callout-content {
+  transition: none !important;
+}
+
+/* front */
+.callout[data-callout="fc"] .callout-title {
+  z-index: 2;
+  transform: rotateY(0deg);
+  background: var(--mu-fc-bg-color);
+  border: 2px solid var(--mu-fc-bg-color);
+  border-bottom: 4px solid var(--mu-fc-bg-color);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
+  color: var(--mu-fc-fg-color);
+}
+
+/* back */
+.callout[data-callout="fc"] .callout-content {
+  z-index: 1;
+  transform: rotateY(180deg);
+  background-color: var(--background-primary);
+  border: 2px solid var(--mu-fc-answer-border-color);
+  display: block !important;
+  overflow-y: auto !important;
+}
+
+
+.callout[data-callout="fc"]:hover .callout-title {
+  transform: rotateY(180deg);
+}
+
+.callout[data-callout="fc"]:hover .callout-content {
+  transform: rotateY(360deg);
+}
+
+.callout[data-callout="fc"] .callout-content>* {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.callout[data-callout="fc"] .callout-content img,
+.callout[data-callout="fc"] .callout-content .internal-embed {
+  width: 100%;
+  height: auto;
+}
+
+.callout[data-callout="fc"] .callout-icon {
+  display: none;
+}
+
 /* Stacked mode */
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
   background-color: var(--mu-background-color-2);
@@ -5333,9 +5467,9 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 .style-settings-container {
   padding-left: 18px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  padding-top: var(--size-4-2);
+  padding-bottom: var(--size-4-2);
+  margin-bottom: var(--size-4-2);
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-presets"] .style-settings-collapse-indicator::after {
@@ -6796,10 +6930,14 @@ body.mu-hide-tabs-icons .workspace-split.mod-vertical.mod-root .workspace-tab-he
 
 .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
   border-top: var(--mu-default-mode-border-width) solid var(--mu-titlebar-background);
+  background-color: var(--background-secondary);
+
 }
 
 .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
   border-top: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+  background-color: var(--background-primary);
+
 }
 
 /* Tabs -> Square */
@@ -8134,6 +8272,44 @@ button.mod-destructive {
 .markdown-rendered mark,
 span.cm-highlight {
   color: var(--mu-text-highlight-fg) !important;
+}
+
+/* 1.11 specific updates */
+
+.is-mobile.theme-light {
+  --setting-items-background: var(--mu-background-color-1) !important;
+}
+
+.vertical-tab-nav-item-icon svg {
+  color: var(--mu-icon);
+}
+
+.is-mobile.theme-light .setting-group-search,
+.is-mobile.theme-light .setting-group.setting-items {
+  background-color: var(--mu-background-color-1);
+}
+
+.is-mobile.theme-dark .setting-group-search,
+.is-mobile.theme-dark .setting-group.setting-items {
+  background-color: var(--mu-background-color-2);
+}
+
+.style-settings-container .style-settings-container {
+  padding: var(--size-4-2);
+}
+
+.is-mobile .metadata-content {
+  background-color: transparent;
+}
+
+
+.workspace-tab-header-inner .workspace-tab-header-inner-icon {
+  color: var(--mu-icon);
+}
+
+.nav-file-tag {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
 }
 
 /* Style Settings */
@@ -10552,6 +10728,57 @@ settings:
         opacity: false
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
+    -
+        id: magicuser-theme-flashcards
+        title: Flashcard callouts
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: mu-fc-width-value
+        title: Flashcard width
+        description: Adjust the flashcard width.
+        type: variable-number-slider
+        default: 280
+        min: 240
+        max: 500
+        step: 10
+    - 
+        id: mu-fc-height-value
+        title: Flashcard height
+        description: Adjust the flashcard height.
+        type: variable-number-slider
+        default: 400
+        min: 240
+        max: 500
+        step: 10
+    - 
+        id: mu-fc-bg-color
+        title: Front background color (question)
+        type: variable-themed-color
+        description: Select the background color for the front side of the flashcard.
+        format: hex
+        opacity: true
+        default-light: '#007fff20'
+        default-dark: '#007fff20'
+    - 
+        id: mu-fc-fg-color
+        title: Front text color (question)
+        type: variable-themed-color
+        description: Select the color for the front (question) text of the flashcard.
+        format: hex
+        opacity: true
+        default-light: '#000000'
+        default-dark: '#f1f1f1'
+    - 
+        id: mu-fc-answer-border-color
+        title: Back border color (answer)
+        type: variable-themed-color
+        description: Select the border color for the back (answer) of the flashcard.
+        format: hex
+        opacity: true
+        default-light: '#bf00ff'
+        default-dark: '#bf00ff'
     -
         id: magicuser-theme-hide-ui-elements
         title: Hide UI elements

@@ -1,4 +1,4 @@
-/* Maple Theme v1.3.9 For Obsidian */
+/* Maple Theme v1.4.3 For Obsidian */
 /* @settings
 id: maple-basic
 name: Maple Basic
@@ -446,7 +446,7 @@ settings:
       type: variable-text
       title: Setting Panel Header Title
       title.zh: 设置面板标题
-      default: Maple 1.3.9
+      default: Maple 1.4.3
       quotes: true
     - id: modal-setting-header-title-center
       type: class-toggle
@@ -653,12 +653,11 @@ settings:
             value: scrollbar-hover-expand
     - id: scrollbar-movein-animation-enable
       type: class-toggle
-      title: Enable Scrollbar Animation
-      title.zh: 启用滚动条动画
-      description: When disabled, the scrollbar is always visible; when enabled, the
-          scrollbar hides when the mouse moves outside the container
-      description.zh: 禁用时，滚动条始终可见；启用后，当鼠标移出容器时滚动条将隐藏
-      default: true
+      title: Enable Scrollbar Move In/Out Animation
+      title.zh: 启用滚动条移入移出动画
+      description: ❗ This can cause severe lag when typing on some old computers or
+          mobile devices
+      description.zh: ❗ 会导致在某些旧的电脑或者移动设备上输入时严重卡顿
 */
 /* @settings
 id: maple-editor
@@ -1611,6 +1610,13 @@ settings:
       title: Full Width Table
       title.zh: 全宽表格
       default: true
+    - id: table-remove-line-before
+      type: class-toggle
+      title: Remove the Empty Line Before Table
+      title.zh: 移除表格前的空白行
+      description: ❗ Once enabled, the cursor will jump out of the table when moving
+          down into it.
+      description.zh: ❗ 启用后会导致光标往下移动到表格内时直接跳出表格
     - id: table-style
       type: class-select
       title: Table Style
@@ -3073,6 +3079,50 @@ body.app-layout-card:not(.is-mobile) .workspace-split.mod-left-split .workspace-
 }
 body.app-layout-card:not(.is-mobile).labeled-nav .mod-left-split .mod-top .workspace-tab-header-container .workspace-tab-header-container-inner {
   padding-top: 0;
+}
+body.app-layout-card:not(.is-mobile) .mod-settings .modal-content {
+  background-color: var(--bg-surface);
+}
+body.app-layout-card:not(.is-mobile) .mod-settings .modal-content .vertical-tab-header {
+  background-color: transparent;
+}
+body.app-layout-card:not(.is-mobile) .mod-settings .modal-content .vertical-tab-content-container > .vertical-tab-content {
+  background-color: transparent;
+}
+body.app-layout-card:not(.is-mobile) .mod-settings .modal-content .vertical-tab-content-container > .vertical-tab-content :is(.setting-group .setting-items,
+.setting-item:not(.setting-item-heading),
+.setting-group-search) {
+  background-color: var(--bg-editor);
+}
+body.app-layout-card:not(.is-mobile) .mod-settings .modal-content :is(.style-settings-heading[data-level="0"] + .style-settings-container,
+.style-settings-container) {
+  border: none;
+}
+body.app-layout-card:not(.is-mobile) .mod-settings .modal-content :is(.style-settings-heading[data-level="0"] + .style-settings-container,
+.style-settings-container) > .setting-item {
+  padding: var(--size-4-3) var(--size-4-4);
+}
+body.app-layout-card:not(.is-mobile).modal-setting-header.modal-setting-header-search .installed-plugins-container .setting-group-search {
+  padding: 0;
+}
+body.app-layout-card:not(.is-mobile).modal-setting-header.modal-setting-header-search .installed-plugins-container .setting-items {
+  padding-top: var(--size-4-6);
+  border-start-start-radius: var(--setting-items-radius);
+  border-start-end-radius: var(--setting-items-radius);
+}
+body.app-layout-card:not(.is-mobile).modal-setting-header.modal-setting-header-search .setting-group-search {
+  padding: 0 !important;
+}
+body.app-layout-card:not(.is-mobile).modal-setting-header.modal-setting-header-search .setting-group-search + .setting-items {
+  padding-top: var(--size-4-5);
+  border-start-start-radius: var(--setting-items-radius);
+  border-start-end-radius: var(--setting-items-radius);
+}
+body.app-layout-card:not(.is-mobile) .modal-sidebar {
+  background-color: var(--bg-surface);
+}
+body.app-layout-card:not(.is-mobile) .modal-setting-nav-bar {
+  border-color: transparent;
 }
 
 /* #endregion layout */
@@ -4735,6 +4785,9 @@ body:is(:not(.css-settings-manager), .list-enable) .markdown-rendered ol {
 body:is(:not(.css-settings-manager), .list-enable) .markdown-rendered ol > li {
   margin-inline-start: calc(var(--font-text-size) + 0.25rem);
 }
+body:is(:not(.css-settings-manager), .list-enable) .markdown-rendered ol > li.task-list-item > .task-list-item-checkbox {
+  margin-inline-start: calc(var(--size-2-1) * -1);
+}
 body:is(:not(.css-settings-manager), .list-enable) .markdown-rendered ol li > ol {
   padding-left: calc(var(--font-text-size));
 }
@@ -5522,6 +5575,10 @@ body:is(:not(.css-settings-manager), .table-full) :is(.markdown-source-view.mod-
 body:is(:not(.css-settings-manager), .table-full) :is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
 .markdown-rendered table) .table-editor {
   width: 100%;
+}
+
+.table-remove-line-before .cm-line:has(+ .cm-embed-block.cm-table-widget.markdown-rendered) {
+  display: none;
 }
 
 body {
@@ -6819,6 +6876,19 @@ input.metadata-property-key-input,
 /* #endregion property */
 /* #endregion [editor] */
 /* #region [plugins] */
+/* #region excalidraw */
+.excalidraw__embeddable__outer {
+  --embed-background: transparent;
+  --blockquote-background-color: transparent;
+}
+
+.excalidraw-wrapper kbd {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+/* #endregion excalidraw */
 /* #region better-command-palette */
 .better-command-palette {
   --prompt-text: "Better Command Palette";
@@ -6895,6 +6965,11 @@ html[lang=zh] {
   --action-text-command: "命令";
   --action-text-file: "文件";
   --action-text-tag: "标签";
+}
+
+.is-mobile .better-command-palette-title::before {
+  left: 50%;
+  transform: translate(-50%, -25%);
 }
 
 /* #endregion better-command-palette */
@@ -7292,6 +7367,9 @@ body:is(:not(.css-settings-manager), .modal-control-gradient) .checkbox-containe
 body:not(.is-mobile) {
   --slider-track-background: var(--accent-inactive);
 }
+body:not(.is-mobile).modal-slider {
+  --slider-thumb-width: 18px !important;
+}
 body:not(.is-mobile).modal-slider input[type=range]:focus {
   --slider-thumb-ring-factor: 5.2;
 }
@@ -7388,7 +7466,7 @@ body.modal-setting-header:not(.is-mobile) .modal-container .mod-settings {
   container-type: inline-size;
 }
 body.modal-setting-header:not(.is-mobile) .modal-container .mod-settings::before {
-  content: var(--setting-modal-header-title, "Maple 1.3.9");
+  content: var(--setting-modal-header-title, "Maple 1.4.3");
   position: absolute;
   left: var(--size-4-4);
   top: calc(var(--modal-header-height) / 2);
@@ -7529,7 +7607,7 @@ body:not(.is-phone) .modal-container .is-loading {
 }
 body:not(.is-phone) .modal-container :is(.mod-community-plugin, .mod-community-theme) .modal-sidebar .setting-item:first-child {
   max-width: var(--modal-community-sidebar-width);
-  margin-bottom: var(--size-4-1);
+  margin-bottom: var(--size-4-2);
 }
 body:not(.is-phone) .modal-container :is(.mod-community-plugin, .mod-community-theme) .modal-header {
   display: inline-block;
@@ -8402,7 +8480,8 @@ body:is(:not(.css-settings-manager), .explorer-icon) .nav-file-title::before {
   position: absolute;
   opacity: 0.8;
   flex-shrink: 0;
-  translate: calc(var(--size-2-1) - var(--size-4-5)) 12%;
+  translate: calc(var(--size-2-1) - var(--size-4-5)) -50%;
+  top: 50%;
   --file-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z'/><path d='M14 2v4a2 2 0 0 0 2 2h4M10 9H8m8 4H8m8 4H8'/></g></svg>");
   -webkit-mask: var(--file-icon) no-repeat;
   -webkit-mask-size: 100% 100%;
@@ -8563,26 +8642,33 @@ body.is-tablet .modal-container .modal-sidebar:not(:has(+ .community-modal-detai
 /* #region floating button */
 body.is-phone.mobile-floating-button {
   --navbar-bottom-padding: max(var(--safe-area-inset-bottom), 28px);
-  --navbar-side-padding: var(--safe-area-inset-side);
-}
-body.is-phone.mobile-floating-button.is-ios {
-  --navbar-bottom-padding: 28px;
-  --navbar-side-padding: var(--navbar-bottom-padding);
 }
 body.is-phone.mobile-floating-button .mod-root .view-header {
   z-index: 3;
 }
-body.is-phone.mobile-floating-button .mod-root .workspace-leaf-content[data-type=markdown] .view-actions button:nth-last-child(2) {
-  position: fixed;
-  right: var(--navbar-side-padding);
+body.is-phone.mobile-floating-button .mobile-navbar {
   bottom: var(--navbar-bottom-padding);
+  transform: translate(-10%);
+  margin-bottom: 0;
+  padding: var(--size-4-1);
+  max-width: unset;
+  width: 70%;
+}
+body.is-phone.mobile-floating-button .mobile-navbar-action > * {
+  padding: 0;
+}
+body.is-phone.mobile-floating-button:not(.mod-toolbar-open) .mod-root .workspace-leaf-content[data-type=markdown] .view-actions button:nth-last-child(2) {
+  position: fixed;
+  transform: translate(-2vw);
+  bottom: calc(var(--size-4-1) + var(--touch-size-m) + var(--safe-area-inset-top) + var(--navbar-bottom-padding) - 100vh);
   color: var(--text-on-accent);
   background-color: var(--accent-active-bg);
   border-radius: 100%;
-  padding: var(--size-4-3);
-  width: auto;
-  height: auto;
+  width: var(--touch-size-m);
+  height: var(--touch-size-m);
   box-shadow: var(--shadow-s) !important;
+  transition: bottom var(--animation);
+  will-change: bottom;
 }
 
 /* #endregion floating button */
