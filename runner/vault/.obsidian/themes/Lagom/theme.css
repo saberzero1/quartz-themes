@@ -1,14 +1,13 @@
 /* If you really like this theme */
 /* please consider support me */
 /* https://ko-fi.com/leslyecream */
-/* or contribute reporting bugs */
+/* or even better contribute reporting bugs */
 /* code improvements and sharing ideas */
 /* THANK YOU! ᵔᴥᵔ */
 
 
 /* LAGOM SETTINGS */
 body {
-
   /* --interactive-normal: var(--background-modifier-border) !important; */ /* button colors */
   --input-shadow: var(--background-modifier-border) 0 0 0 1px !important;
   --input-shadow-hover: hsla(var(--color-accent-hsl), 0.6) 0 0 0px 1px !important;
@@ -50,6 +49,7 @@ body {
   --separator-icon: "o0o";
   --separator-icon-color: #6C6C6C6B
   --show-explorer-buttons: none;
+  --explorer-bar-position: absolute;
   --icon-settings: none;
   --num-of-notes: none;
   --show-vault-name: none;
@@ -83,11 +83,59 @@ body {
   --filename-line-thickness: 1.8px;
   --filename-separator-style: dotted;
   --input-border-width: 1px;
+  --setting-items-background: none !important;
+
+}
+
+
+/* SAFE PLACE */
+body.is-phone,
+body.is-mobile {
+  --safe-area-inset-top: var(--safe-place-position) !important;
+}
+
+
+/* Snippet by @digirhys to modify corner radius for UI elements as of Obsidian 1.11.4 update */
+:root * {
+  /* Individual tool/option icons in left sidebar (new note, new folder, sort, etc.) */
+  --clickable-icon-radius: 11.5px;
+  /* Mobile bottom navbar (forward/back, search, new tab, etc.) */
+  --navbar-radius 11.5px;
+  /* Dropdown menus & text input fields, selection items in popup menus (i.e. Command Palette items, Quick Switcher items, etc.) */
+  --touch-radius-xxs: 11.5px;
+  --touch-radius-xs: 11.5px;
+  --touch-radius-s: 11.5px;
+  --touch-radius-m: 11.5px;
+  /*--touch-radius-l: 4px;*/
+  --touch-radius-xl: 11.5px;
+  --pill-radius: 11.5px;
+}
+
+/* Corner radius for open note previews in tab select */
+.mobile-tab-preview,
+.mobile-tab-preview-embed,
+.mobile-tab-preview-empty {
+  border-radius: var(--touch-radius-s);
+}
+
+/* Bottom action bar, settings button, close modal button, container for reading view & ellipses menu buttons, sync status icon */
+.mod-raised {
+  background-color: none !important;
+  border-radius: var(--touch-radius-s) !important;
+}
+
+/* Left sidebar, reading view, and ellipses menu */
+.is-phone .view-header .view-action {
+  border-radius: var(--touch-radius-s);
+}
+
+/* Radius for text input fields. For whatever reason, this is the class that changes the input for the Command Palette */
+.is-phone .prompt-input[type=text] {
+  border-radius: var(--touch-radius-s);
 }
 
 
 /* BACKGROUND IMAGE */
-
 .workspace-bg .app-container::before {
   background-image: var(--bg-url);
   opacity: var(--bg-opacity, 0.8);
@@ -105,8 +153,8 @@ body {
   bottom: 0;
 }
 
-/* OBSIDIAN THEME */
 
+/* OBSIDIAN THEME */
 body.theme-dark {
   opacity: var(--theme-dark-opacity); 
 }
@@ -148,7 +196,7 @@ body.theme-light {
 }
 
 
- /* BOTH MODES */
+/* BOTH MODES */
  .markdown-preview-view, .cm-s-obsidian {
   padding-left: var(--padding-default-note-style) !important;
   padding-right: var(--padding-default-note-style) !important;
@@ -161,7 +209,10 @@ body.theme-light {
 /* EDITOR MODE */
 .markdown-preview-view .metadata-add-button {}
 .theme-light, .cm-s-obsidian::not(.theme-dark) {}
-.mod-cm6 .cm-editor {}
+.mod-cm6 .cm-editor {
+  top: -80px !important;
+
+}
 
 .cm-s-obsidian {
   padding: 10px !important;
@@ -184,9 +235,10 @@ body.theme-light {
 
 /* Style page for editor mode */
 .page-style-editor-mode .cm-s-obsidian {
+  position: relative !important;
   padding-left: calc(var(--padding-note-content) - 5%);
   padding-right: calc(var(--padding-note-content) - 5%);
-  margin: 10px 15px 0px 15px !important;
+  margin: 80px 15px 0px 15px !important;
   border-top-left-radius: var(--radius-s);
   border-top-right-radius: var(--radius-s);
   box-shadow: var(--mac-terminal-shadow);
@@ -206,7 +258,10 @@ body.theme-light {
 
 /* Style page for read mode */
 .page-style-read-mode .markdown-preview-view{
-  margin: 10px 15px 0px 15px !important;
+  position: relative !important;
+  padding-top: 5px !important;
+  top: 80px !important;
+  margin: 0px 15px 0px 15px !important;
   border-top-left-radius: var(--radius-s);
   border-top-right-radius: var(--radius-s);
   padding-left: var(--padding-note-content);
@@ -266,7 +321,7 @@ body.theme-light {
 
 /* INLINE TITLE -  MAGAZINE STYLE */ 
 .magazine-style .inline-title {
-  font-family: 'PlayfairDisplay-Regular' !important;
+  font-family: var(--magazine-title-font) !important;
   height: 90vh !important;
   display: flex !important;
   align-items: center; 
@@ -435,7 +490,14 @@ input[type=checkbox]:checked {
 /* CODE BLOCKS */
  /* INLINE CODE - edit view */ 
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
-	font-size: var(--code-size) !important;
+  font-size: var(--code-size) !important;
+}
+
+.cm-inline-code,
+:not(pre) > code {
+  color: var(--background-primary) !important;
+  background-color: var(--text-accent) !important;
+  border-radius: 0px !important;
 }
 
 /* Inline code and code blocks - read mode */
@@ -701,7 +763,10 @@ tr:last-child td:last-child {
 }
 
 .metadata-property-value {}
-.metadata-content {}
+.metadata-content {
+  background: var(--background-primary) !important;
+  border-radius: 0px !important;
+}
 .metadata-property {}
 
 /* HIDE ADD BUTTON */
@@ -962,33 +1027,97 @@ hr {
  */
 
 
-/* COMMANDER - TAB BAR */
+/* COMMANDER ICONS  */
+
 .view-header {
-  position: relative !important;
-  bottom: 0 !important;
-	margin: 0px 0px 0px 11px !important;
+  margin: 0px;
+  padding: 0;
+  left: 38px;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+ /* position: relative !important; */
+}
+
+.view-header .view-actions {
+  box-shadow: none !important;
+  background: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
+  border-radius: 0px !important;
   padding: 0px !important;
 }
 
 
-/* HIDE EXPLORER TOOLBAR */
-.nav-header {
-  display: var(--show-editor-text-bar) !important;
-  border-radius: var(--radius-s);
-  margin: 5px 20px 5px 20px;
-  min-width: 75%;
-  border: 1px solid var(--background-modifier-border);
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important;
+
+/* IMPORTANT - FILE EXPLORER PANEL */
+.workspace-drawer {
+  background: transparent !important;
+  border-radius: 0px !important;
+  width: 100%;
 }
 
-/* HIDE EXPLORER FOLDER ICON */
-.collapse-icon svg.svg-icon {
-  display: none;
+
+/* FILE EXPLORER POP-UP */
+body.is-mobile.popup-explorer .workspace-drawer {}
+
+body.is-mobile.popup-explorer .workspace-drawer-inner {
+  margin: 30px 15px 10px 15px;
+  border-radius: var(--radius-s);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: var(--background-modifier-box-shadow) 0px 0px 2.5px 0px;
+  padding: 10px 3px 5px 3px;
 }
+
+body.is-mobile.popup-explorer .workspace-drawer-backdrop {
+  background: hsla(black, 0.65);
+}
+
+
+/* EXPLORER ICONS */
+.nav-buttons-container .clickable-icon {
+  background: var(--background-primary) !important;
+  color: var(--text-accent) !important;
+  background-color: var(--background-primary) !important;
+}
+
+
+/* EXPLORER ICONS (Background) */
+.is-phone .nav-buttons-container {
+  top: auto !important;
+  box-shadow: none !important;
+  background: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;;
+}
+
+
+/* HIDE EXPLORER TOOLBAR (Sort, New folder) OLD OBSIDIAN */
+.nav-header {
+  display: var(--show-explorer-buttons) !important;
+  border-radius: var(--radius-s);
+  margin: 0px 20px 5px 20px;
+  min-width: 75%;
+  border: 0px solid var(--background-modifier-border);
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important; */
+}
+
+
+/* EXPLORER BAR (SORT, NEW, EXPAND) - POSITION */
+.is-phone {
+  .workspace-drawer .nav-buttons-container {
+    position: var(--explorer-bar-position) !important; /* static */
+  }
+}
+
+
+/* HIDE EXPLORER FOLDER INDICATOR ICON */
+.collapse-icon svg.svg-icon {
+  display: none !important;
+}
+
 
 
 /* SETTINGS */
-/* INTERNAL FRAME - CODE BY @FLOODLIGHT (VELOCITY THEME)::::: */
+/* INTERNAL FRAME - CODE BY @FLOODLIGHT (VELOCITY THEME) */
+
 .mod-settings,
 .mod-narrow,
 .mod-confirmation {
@@ -1078,31 +1207,67 @@ hr {
 }
 
 .vertical-tab-header-group-title {
-  margin: 0px;
+  font-size: var(--h2-size) !important;
   text-align: center;
+  margin: auto auto !important;
 }
 
+
 /* HIDE SETTINGS ICON */
+
 .workspace-drawer-header-icon {
   display: var(--icon-settings);
-  padding: 0px;
-  position: relative;
-  top: 7px;
-  margin: 0px 0px 0px 0px;
+  background: none !important;
+  box-shadow: none !important;
+  background-color: none;
+  border-radius: 0 !important;  
+  /* padding: 0px;
+  margin: 0px 0px 0px 0px; */
 }
+
 
 
 /* HIDE INFO AND NUM_NOTES VAULT */
 .workspace-drawer-header-info {
   display: var(--num-of-notes);
-  margin: 5px auto 0px auto ;
+ /* margin: 0px auto 0px auto ; */
 }
 
 
 /* HIDE VAULT NAME */
 .workspace-drawer-header-switcher {
   display: var(--show-vault-name);
-  font-style: normal;
+}
+
+/* VAULT & SETTINGS - POSITION */
+.is-phone {
+  .workspace-drawer-header {
+    order: var(--vault-settings-position) !important;
+    padding-top: 0;
+    padding-bottom: 15px;
+    padding-inline-start: 20px;
+  }
+  .workspace-drawer-inner {
+    padding-bottom: calc(max(var(--safe-area-inset-bottom), var(--size-4-4)) - var(--keyboard-height)); 
+  }
+}
+
+
+
+/* FILE, SEARCH, BOOKMARK BAR - POSITION */
+
+.is-phone {
+  .workspace-drawer-tab-options {
+    display: var(--files-bookmarks-search-bar) !important;
+    order: var(--files-bookmarks-search-bar-position) !important;
+    padding-bottom: 5px !important;
+  }
+  .workspace-drawer-tab-options-list {
+    padding-top: var(--touch-size-l);
+    padding-bottom: var(--size-4-2);
+    bottom: unset;
+    top: 0;
+  }
 }
 
 
@@ -1110,31 +1275,10 @@ hr {
 .modal-container{}
 
 
-/* IMPORTANT - FILE EXPLORER */
-.workspace-drawer {
-  background: transparent !important;
-  border-radius: 0px !important;
-  width: 100%;
-}
 
 
-/* FILE EXPLORER POP-UP */
-body.is-mobile.popup-explorer .workspace-drawer {}
+/* FILES, BOOKMARKS, SEARCH BAR 
 
-body.is-mobile.popup-explorer .workspace-drawer-inner {
-  margin: 10px 15px 10px 15px;
-  border-radius: var(--radius-s);
-  border: 1px solid var(--background-modifier-border);
-  box-shadow: var(--background-modifier-box-shadow) 0px 0px 2.5px 0px;
-  padding: 0px 3px 5px 3px;
-}
-
-body.is-mobile.popup-explorer .workspace-drawer-backdrop {
-  background: hsla(black, 0.65);
-}
-
-
-/* FILES, BOOKMARKS, SEARCH BAR */
 body.is-mobile .workspace-drawer-active-tab-header {
   display: var(--files-bookmarks-search-bar);
   border-radius: var(--radius-s);
@@ -1142,6 +1286,7 @@ body.is-mobile .workspace-drawer-active-tab-header {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px !important;
   margin: 10px 23px 5px 23px !important; 
 }
+
 
 /* multiline file text */
 .nav-file-title,
@@ -1168,26 +1313,15 @@ body.is-mobile .workspace-drawer-header {
 */
 
 
-/* TOP BUTTONS */
-.view-action {
-  padding: 8px;
-}
-
-.view-header {
-  margin: 0px;
-  padding: 0;
-  left: -8px;
-}
-
-
 /* HIDE SIDEBAR ICON */
 .view-action[aria-label="Expand"] {
-  left: -100px;
+ /* left: 50px; */
   position: absolute;
+  display: none !important;
 }
 
 
-/* EDITOR BAR - TOOLBAR */
+/* EDITOR BAR */
 .mobile-toolbar-options-container {
   border: 1px var(--background-modifier-border) solid; 
   margin-left: 34px;
@@ -1205,15 +1339,17 @@ body.is-mobile .workspace-drawer-header {
 }
 
 .mobile-toolbar {
-	position: absolute !important;
+  display: var(--show-editor-text-bar) !important;
+  position: absolute !important;
 }
 
 
 /* COMMAND PALETTE */
+
 .is-phone .prompt {
-  width: 86%;
-  height: 95%;
-  margin-top: 12px;
+  width: 85%;
+  height: 90% !important;
+  margin-top: -10px !important;
   border-radius: var(--radius-s);
   box-shadow: var(--background-modifier-box-shadow) 0px 0px 2.5px 0px;
 }
@@ -1222,15 +1358,12 @@ body.is-mobile .workspace-drawer-header {
 /* NAVIGATION BAR */
 .mobile-navbar {
   display: var(--hide-navbar);
-  position: fixed !important;
   border: 0.5px solid var(--background-modifier-box-shadow);
   box-shadow: var(--mac-terminal-shadow);
   border-radius: var(--radius-s);
-  width: 75%;
-  padding-bottom: 7px !important;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
-  bottom: 1.8% !important;
+  width: 70%;
+  padding-top: 10px !important;
+
 }
 
 
@@ -1253,7 +1386,8 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 .is-mobile .menu {
   font-size: var(--nav-item-size) !important;
   max-width: 85%;
-  padding: 5px 1px 0px 1px;
+  padding: 1px 1px 1px 1px;
+  bottom: 10px !important;
   border-radius: var(--radius-s) !important;
 }
 
@@ -1626,12 +1760,19 @@ body {
 
 /* @settings
 
-name: Hide elements 
+name: Hide & move elements 
 id: hide-elements
 settings:
-  - 
+  -
+      id: safe-place-position
+      title: Move top buttons
+      description: "Note: Only in case the top buttons cover the phone status bar"
+      type: variable-number
+      default: 35
+      format: px
+  -         
       id: icon-settings
-      title: Show settings
+      title: Show icon settings
       type: variable-select
       default: none
       options:
@@ -1658,7 +1799,7 @@ settings:
       title: Show explorer buttons
 
       type: variable-select
-      default: block
+      default: Hide
       options:
           - 
               label: Hide
@@ -1666,11 +1807,23 @@ settings:
           - 
               label: Show
               value: block
+  -
+      id: explorer-bar-position
+      title: Move explorer buttons
+      type: variable-select
+      default: Up
+      options:
+          - 
+              label: Up
+              value: static
+          - 
+              label: Down
+              value: absolute
   - 
       id: show-editor-text-bar
-      title: Show toolbar
+      title: Show editor bar
       type: variable-select
-      default: unset
+      default: Show
       options:
           - 
               label: Hide
@@ -1680,7 +1833,7 @@ settings:
               value: unset
   - 
       id: hide-navbar
-      title: Hide Navigation bar
+      title: Hide navigation bar
       type: variable-select
       default: block
       options:
@@ -1694,14 +1847,26 @@ settings:
       id: files-bookmarks-search-bar
       title: Show menu files
       type: variable-select
-      default: flex
+      default: Hide
       options:
           - 
               label: Hide
               value: none
           - 
               label: Show
-              value: flex
+              value: block
+  -
+      id: files-bookmarks-search-bar-position
+      title: Move menu files
+      type: variable-select
+      default: Top
+      options:
+          - 
+              label: Up
+              value: 0
+          - 
+              label: Down
+              value: 1
   - 
       id: show-vault-name
       title: Show vault
@@ -1714,7 +1879,19 @@ settings:
           - 
               label: Show
               value: unset
-  - 
+  -
+      id: vault-settings-position
+      title: Move vault and settings
+      type: variable-select
+      default: Up
+      options:
+          - 
+              label: Up
+              value: 0
+          - 
+              label: Down
+              value: 1
+  -
       id: scrollbars
       title: Show scrollbars
       type: variable-select
@@ -1979,7 +2156,12 @@ settings:
       title: Magazine opacity
       type: variable-number
       default: 0.6
-      format: 
+      format:
+  - 
+      id: magazine-title-font
+      title: Magazine font
+      type: variable-text
+      default: ""
   - 
       id: block-title-read-mode
       title: Block Inline Title

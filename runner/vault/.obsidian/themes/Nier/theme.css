@@ -19,6 +19,13 @@
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
+
+  /*laptop color fix for 1.11*/
+  --tab-text-color-focused: var(--background-primary);
+  --icon-color-focused: var(--background-primary);
+  --tab-text-color-focused-active-current: var(--background-primary);
+  --setting-items-background: var(--text-highlight-bg);
+
   --text-accent: #4a473e;
   --text-accent-hover: rgb(180, 7, 7);
   --text-muted: #696868;
@@ -93,6 +100,7 @@
   --interactive-normal: var(--background-primary);
   --interactive-hover: var(----background-modifier-border-hover);
   --modal-background: var(--background-secondary);
+  --setting-items-background: var(--text-highlight-bg);
 }
 .is-tablet.theme-dark .vertical-tab-content {
   background-color: var(--background-primary);
@@ -110,9 +118,9 @@
   --settings-home-background: var(--background-primary);
   --mobile-sidebar-background: var(--background-secondary);
   --background-modifier-message: var(--background-secondary);
+  --setting-items-background: var(--text-highlight-bg);
+  --interactive-normal: var(--background-primary);
 }
-
-
 
 
 
@@ -1016,4 +1024,51 @@ button:not(.clickable-icon) {
 /*fix color mobile-navbar-action-menu */
 .is-phone .menu .suggestion-group .suggestion-item:not(.is-label), .is-phone .menu-item:not(.is-label) {
     background-color: var(--background-primary);
+}
+
+
+/* fix for 1.11 */
+body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon, body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--background-secondary-alt);
+}
+
+body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon, body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--background-secondary);
+}
+
+body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon, body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--background-secondary-alt);
+}
+
+.mod-left-split .workspace-tab-header-container .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon, .mod-right-split .workspace-tab-header-container .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon, .mod-left-split .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon, .mod-right-split .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+   color: var(--background-secondary);
+}
+
+body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon, body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--background-primary);
+}
+
+
+body.is-focused .workspace-tab-header-container .workspace-tab-header.is-active {
+    color: var(--background-secondary);
+}
+
+body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--background-secondary-alt);
+}
+
+
+.is-phone .nav-buttons-container:after {
+    background: transparent;
+}
+.workspace-drawer .workspace-leaf-content:after {
+  background: transparent;
+}
+
+.workspace-drawer .nav-buttons-container:after {
+  background: transparent;
+}
+
+.nav-buttons-container .nav-action-button.is-active {
+   color: var(--background-secondary-alt);
 }

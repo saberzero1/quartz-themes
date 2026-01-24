@@ -98,22 +98,12 @@ body {
 .mod-sidedock .workspace-tab-header-container .workspace-tab-header.is-active {
 	--background-modifier-hover: var(--background-modifier-active-hover);
 }
-.is-mobile {
-	--nav-item-radius: 8px
-}
 .is-mobile.theme-dark {
 	--color-base-00: hsl(var(--accent-h), var(--i-dk-s), var(--i-dk-l));
 	--color-base-10: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 2%));
 	--color-base-20: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 3%));
 	--tag-background: hsla(var(--color-accent-hsl), 0.25);
-	--background-modifier-form-field: var(--i-3);
 	--background-modifier-hover: hsl(var(--accent-h) var(--i-dk-s) calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 17%) / 0.55);
-	--background-modifier-message: var(--i-5);
-	--interactive-normal: var(--i-3);
-	--interactive-hover: var(--i-4);
-}
-body:not(.is-mobile) .workspace {
-	transition: none;
 }
 
 /* Active line highlight */
@@ -364,6 +354,9 @@ body:not(.i-callout-filled, .i-callout-outlined-filled) {
 }
 .theme-dark .canvas-control-item {
 	--interactive-normal: var(--i-1);
+}
+.canvas-node-container {
+	box-shadow: none;
 }
 
 /* Checkboxes */
@@ -637,7 +630,7 @@ body {
 .i-dk-folder-bg-accent {
 	--i-dk-folder-bg-accent: var(--color-accent);
 }
-:is(.theme-light.i-lt-folder-bg, .theme-dark.i-dk-folder-bg) .nav-files-container .nav-folder-title {
+:is(.theme-light.i-lt-folder-bg, .theme-dark.i-dk-folder-bg).is-mobile .nav-files-container .nav-folder-title {
 	--nav-item-margin-bottom: 3px;
 }
 .theme-light.i-lt-folder-bg.i-lt-white-folder-names .nav-files-container .nav-folder-title {
@@ -1088,6 +1081,11 @@ body:not(.i-border-layout, .i-default-layout, .is-mobile) {
 		width: 66px;
 		background-color: var(--background-primary);
 	}
+	&.i-traffic-lights-1-11.mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace-ribbon.mod-left::before {
+		border-radius: 12px;
+		height: 22px;
+		width: 71px;
+	}
 	&.mod-macos.is-hidden-frameless.is-fullscreen .workspace-ribbon.mod-left {
 		margin-top: 2px;
 	}
@@ -1243,30 +1241,6 @@ li.is-collapsed .cm-fold-indicator:hover ~ .cm-formatting-list .list-bullet::aft
 .list-collapse-indicator:hover.is-collapsed ~ .cm-formatting-list .list-bullet::after,
 .cm-fold-indicator:hover.is-collapsed ~ .cm-formatting-list .list-bullet::after {
 	--list-marker-color-collapsed: var(--i-bullet-color-collapsed);
-}
-
-/* Modal */
-body:not(.is-mobile) {
-	--setting-items-background: var(--background-primary);
-	--setting-items-border-width: 1px;
-	.vertical-tab-content {
-		background-color: transparent;
-	}
-	.modal-sidebar {
-		background-color: var(--background-secondary);
-	}
-	.modal.mod-settings:has(.vertical-tab-nav-item-title) {
-		background-color: var(--background-primary-alt);
-		.vertical-tab-header {
-			border-inline-end: 0;
-		}
-		.vertical-tab-content {
-			padding-inline-start: 20px;
-		}
-		.setting-item.setting-item-heading {
-			border: 0;
-		}
-	}
 }
 
 /* Multi-select pills */
@@ -1464,8 +1438,8 @@ body:not(.is-phone) .metadata-container .metadata-property-value .multi-select-p
 
 /* Scrollbars */
 body {
-	--i-scrollbar-track-size: 11px;
-	--i-scrollbar-thumb-size: 5px;
+	--i-scrollbar-track-size: 9px;
+	--i-scrollbar-thumb-size: 4px;
 }
 .theme-light {
 	--i-scrollbar-color: var(--i-5);
@@ -1475,7 +1449,7 @@ body {
 	--i-scrollbar-color: var(--i-7);
 	--i-scrollbar-color-active: var(--i-8);
 }
-.i-scrollbar {
+.i-scrollbar:not(.i-scrollbar-phone-off.is-phone) {
 	::-webkit-scrollbar {
 		width: var(--i-scrollbar-track-size) !important;
 		height: var(--i-scrollbar-track-size) !important;
@@ -1503,8 +1477,8 @@ body {
 		display: none;
 	}
 }
-.i-scrollbar ::-webkit-scrollbar-thumb:hover,
-.i-scrollbar ::-webkit-scrollbar-thumb:active {
+.i-scrollbar:not(.i-scrollbar-phone-off.is-phone) ::-webkit-scrollbar-thumb:hover,
+.i-scrollbar:not(.i-scrollbar-phone-off.is-phone) ::-webkit-scrollbar-thumb:active {
 	background-color: var(--i-scrollbar-color-active) !important;
 }
 
@@ -1716,31 +1690,8 @@ body {
 }
 .is-phone {
 	--file-header-font-size: 12.5px;
-	--file-header-background: var(--background-primary);
-	--file-header-background-focused: var(--background-primary);
-	--view-header-height: 50px;
-	.view-header {
-		gap: 8px;
-		align-items: center;
-		.view-actions {
-			height: var(--touch-size-m);
-		}
-		.view-action {
-			height: var(--touch-size-m);
-			width: var(--touch-size-m);
-		}
-	}
 	.view-header-title {
 		color: var(--text-normal);
-		font-size: 12.5px;
-		font-weight: 500;
-		flex: 0 0 auto;
-	}
-	&.show-inline-title .workspace-leaf-content[data-type="markdown"] .view-header-title-container {
-		display: flex;
-	}
-	.view-header-title-container {
-		gap: 2px;
 	}
 	.view-header-title-parent:not(:empty),
 	.view-header-title {
@@ -2151,16 +2102,8 @@ body:not(.i-vertical-tabs-off) {
 	}
 }
 
-/* 1.11.4 */
-.is-phone {
-	--raised-background: transparent;
-	--raised-blur: none;
-	--raised-shadow: none;
-	--raised-mask-background: none;
-	--raised-mask: none;
-	--raised-mask-composite: unset;
-	--raised-mask-border-width: 0;
-}
+/* 1.11.4+ */
+/* Desktop */
 .mod-macos {
 	--slider-thumb-width: 18px;
 	--toggle-width: 40px;
@@ -2173,153 +2116,298 @@ body:not(.i-vertical-tabs-off) {
 	--toggle-s-thumb-height: 15px;
 	--toggle-s-thumb-width: 15px;
 }
-.is-phone {
-	--navbar-max-width: 100%;
-	--navbar-width: 100%;
-	--navbar-radius: 0;
-	--nav-item-radius: 8px;
-}
-.is-ios.is-phone {
-	--slider-thumb-width: 24px;
-	--toggle-width: 52px;
-	--toggle-radius: 26px;
-	--toggle-thumb-radius: 26px;
-	--toggle-thumb-height: 26px;
-	--toggle-thumb-width: 26px;
-	--toggle-thumb-opacity-active: 1;
-	--toggle-s-width: 34px;
-	--toggle-s-thumb-height: 15px;
-	--toggle-s-thumb-width: 15px;
-	--raised-mask-border-width: 0;
-	&.theme-light,
-	&.theme-dark {
-		--shadow-edges: 0 0 transparent;
+
+/* Settings */
+body:not(.is-mobile) {
+	--setting-items-background: var(--background-primary);
+	--setting-items-padding: 0 0 20px 0;
+	--setting-items-radius: 0;
+	.modal.mod-settings,
+	.modal-sidebar {
+		background-color: var(--background-secondary);
 	}
-	.mod-raised::after {
+	.setting-group {
+		.setting-item-heading {
+			padding-inline: 0;
+		}
+		+ .setting-group {
+			margin-top: 28px;
+		}
+		.setting-item-heading + .setting-items .setting-item:first-child {
+			padding-top: 16px;
+			border-top: 1px solid var(--background-modifier-border);
+		}
+	}
+}
+
+/* Mobile */
+.is-mobile {
+	--nav-item-radius: 8px
+}
+.is-phone {
+	--input-height: 48px;
+	--input-radius: 16px;
+	&.is-ios {
+		--slider-thumb-width: 24px;
+		--toggle-width: 52px;
+		--toggle-radius: 26px;
+		--toggle-thumb-radius: 26px;
+		--toggle-thumb-height: 26px;
+		--toggle-thumb-width: 26px;
+		--toggle-thumb-opacity-active: 1;
+		--toggle-s-width: 34px;
+		--toggle-s-thumb-height: 15px;
+		--toggle-s-thumb-width: 15px;
+	}
+	.mobile-toolbar-options-list::-webkit-scrollbar {
 		display: none;
 	}
-}
-.is-phone .mobile-navbar.mod-raised {
-	background: var(--background-primary);
-}
 
-/* Remove fade effects */
-.is-phone {
-	--view-top-fade-mask: none;
-	--view-bottom-fade-mask: none;
-}
-.is-phone .is-hidden-nav {
-	--view-top-fade-mask: none;
-	--view-bottom-fade-mask: none;
-}
-.is-phone .workspace-drawer .workspace-leaf-content::after,
-.is-phone .workspace-drawer .nav-buttons-container::after,
-.is-phone .modal.mod-settings .modal-header::after {
-	display: none;
-}
-.is-phone .mod-root .workspace-leaf-content[data-type="markdown"] .view-content::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: var(--safe-area-inset-top);
-	background-color: var(--background-primary);
-}
-.is-phone .modal.mod-settings .modal-header {
-	background-color: var(--settings-background);
-}
-
-/* Toolbar */
-.is-phone {
-	--mobile-toolbar-height: var(--touch-size-m, 40px);
-}
-.is-phone .mobile-toolbar {
-	box-shadow: none;
-}
-.is-phone.theme-light .mobile-toolbar {
-	background-color: var(--background-primary);
-}
-.is-phone.theme-dark .mobile-toolbar {
-	background-color: var(--interactive-normal);
-}
-.is-phone .mobile-toolbar-options-container {
-	width: 100%;
-}
-.is-phone .mobile-toolbar-options-list-container,
-.is-phone .mobile-toolbar-options-list {
-	border-radius: 0;
-}
-.is-phone .mobile-toolbar-options-list::-webkit-scrollbar {
-	display: none;
-}
-
-/* Workspace drawer tab options */
-.is-phone .workspace-drawer-tab-options .workspace-tab-header-inner {
-	border-radius: 12px;
-}
-.is-phone .workspace-drawer-tab-select .workspace-tab-header-inner,
-.is-phone .workspace-drawer-tab-options-list {
-	border-radius: 20px;
-}
-.is-phone .workspace-drawer-tab-options-list::-webkit-scrollbar {
-	display: none;
-}
-.is-phone .workspace-drawer-tab-options-list {
-	box-shadow: none;
-	padding: 10px 10px var(--touch-size-l);
-}
-
-/* Menus */
-.is-phone {
+	/* Menus */
 	--menu-padding: 0 12px var(--safe-area-inset-bottom);
-}
-.is-phone .menu-group .menu-item:first-child {
-	border-radius: 16px 16px 0 0;
-}
-.is-phone .menu-group .menu-item:last-child {
-	border-radius: 0 0 16px 16px;
-}
-.is-phone .menu-group .menu-item:only-child {
-	border-radius: 16px;
-}
-.is-phone .menu {
-	border-radius: 24px 24px 0 0;
-}
-.is-phone .menu-grabber {
-	margin-block: 4px;
-}
-.is-phone .menu-separator {
-	margin-block: 6px;
-}
-.is-phone .menu-item {
-	padding: 15px 16px;
-	gap: 12px;
+	.menu-group .menu-item {
+		&:first-child {
+			border-radius: var(--input-radius) var(--input-radius) 0 0;
+		}
+		&:last-child {
+			border-radius: 0 0 var(--input-radius) var(--input-radius);
+		}
+		&:only-child {
+			border-radius: var(--input-radius);
+		}
+	}
+	.menu {
+		border-radius: 24px 24px 0 0;
+	}
+	.menu-grabber {
+		margin-block: 4px;
+	}
+	.menu-separator {
+		margin-block: 6px;
+	}
+	.menu-item {
+		padding: 15px 16px;
+		gap: 12px;
+	}
+
+	/* Prompts */
+	.prompt {
+		border-radius: 24px 24px 0 0;
+		.suggestion-item {
+			padding: max(calc((var(--input-height) - var(--font-ui-medium) * var(--line-height-tight)) / 2), 8px) 16px;
+		}
+	}
+	.prompt-results {
+		padding: 12px;
+	}
+	.prompt-input[type=text] {
+		background-color: var(--background-primary);
+		border-radius: var(--input-radius);
+	}
+	&.theme-light .prompt-input[type=text] {
+		border-color: var(--background-modifier-border-hover);
+	}
+	&.theme-dark .prompt-input[type=text] {
+		border-color: hsl(var(--accent-h), var(--i-dk-s), calc(var(--i-dk-l) + var(--i-dk-l-multiplier) * 16%));
+	}
+	.prompt-results::-webkit-scrollbar {
+		display: none;
+	}
+	.prompt-input-container {
+		width: calc(100% - 24px);
+		margin-bottom: 12px;
+		--raised-background: transparent;
+		--raised-blur: none;
+		--raised-shadow: none;
+		--raised-mask-background: none;
+		--raised-mask: none;
+		--raised-mask-composite: unset;
+		--raised-mask-border-width: 0;
+	}
+	&.is-ios .prompt-input-container {
+		--raised-mask-border-width: 0;
+		.mod-raised::after {
+			display: none;
+		}
+	}
+	&.is-ios:is(.theme-light, .theme-dark) .prompt-input-container {
+		--shadow-edges: 0 0 transparent;
+	}
+
+	/* Settings */
+	--setting-items-radius: 24px;
+	.mod-community-modal {
+		.community-modal-search-results {
+			padding: 12px;
+			gap: 12px;
+		}
+		.community-item {
+			border-radius: 20px;
+		}
+	}
+	.modal {
+		textarea,
+		input[type=text],
+		input[type=search],
+		input[type=email],
+		input[type=password],
+		input[type=number] {
+			--input-border-width: 1px;
+			background-color: var(--background-primary);
+		}
+		.search-input-container::before {
+			inset-inline-start: 14px;
+		}
+		.search-input-container input {
+			padding-inline-start: 44px;
+		}
+		.search-input-clear-button {
+			width: var(--input-height);
+			inset-inline-end: 0;
+		}
+	}
+
+	/* Suggestions */
+	.suggestion-container {
+		border-radius: 20px;
+		::-webkit-scrollbar {
+			display: none;
+		}
+	}
+	.suggestion-item {
+		border-radius: var(--input-radius);
+	}
+
+	/* Workspace drawer tab options */
+	.workspace-drawer-tab-options .workspace-tab-header-inner {
+		border-radius: 12px;
+	}
+	.workspace-drawer-tab-select .workspace-tab-header-inner,
+	.workspace-drawer-tab-options-list {
+		border-radius: 20px;
+	}
+	.workspace-drawer-tab-options-list::-webkit-scrollbar {
+		display: none;
+	}
+	.workspace-drawer-tab-options-list {
+		padding: 10px 10px var(--touch-size-l);
+	}
 }
 
-/* Prompts */
-.is-phone .suggestion-item {
-	border-radius: 16px;
-}
-.is-phone .suggestion-item {
-	padding: max(calc((48px - var(--font-ui-medium) * var(--line-height-tight)) / 2), 8px) 16px;
-}
-.is-phone .prompt {
-	border-radius: 24px 24px 0 0;
-}
-.is-phone .prompt-results {
-	padding: 12px;
-}
-.is-phone .prompt-input-container {
-	width: calc(100% - 24px);
-	margin-bottom: 12px;
-}
-.is-phone .prompt-input[type=text] {
-	background-color: var(--background-primary);
-	border-radius: 16px;
-	border-color: var(--background-modifier-border-hover);
-}
-.is-phone .prompt-results::-webkit-scrollbar {
-	display: none;
+/* Mobile options */
+.is-phone {
+	&.i-pre-1-11-navbar .mobile-navbar,
+	&.i-pre-1-11-tab-titlebar .view-header,
+	&.i-pre-1-11-toolbar .mobile-toolbar {
+		--raised-background: transparent;
+		--raised-blur: none;
+		--raised-shadow: none;
+		--raised-mask-background: none;
+		--raised-mask: none;
+		--raised-mask-composite: unset;
+		--raised-mask-border-width: 0;
+		&.is-ios {
+			--raised-mask-border-width: 0;
+			&.theme-light,
+			&.theme-dark {
+				--shadow-edges: 0 0 transparent;
+			}
+			.mod-raised::after {
+				display: none;
+			}
+		}
+	}
+
+	/* Pre-1.11 navbar */
+	&.i-pre-1-11-navbar {
+		--navbar-max-width: 100%;
+		--navbar-width: 100%;
+		--navbar-radius: 0;
+		.mobile-navbar {
+			--navbar-bottom-offset: max(var(--safe-area-inset-bottom), 0px);
+			background: var(--background-primary);
+		}
+	}
+
+	/* Remove fade effects */
+	&.i-remove-fade-effects {
+		--view-top-fade-mask: none;
+		--view-bottom-fade-mask: none;
+		.is-hidden-nav {
+			--view-top-fade-mask: none;
+			--view-bottom-fade-mask: none;
+		}
+		.workspace-drawer .workspace-leaf-content::after,
+		.workspace-drawer .nav-buttons-container::after,
+		.modal.mod-settings .modal-header::after {
+			display: none;
+		}
+		.modal.mod-settings .modal-header {
+			background-color: var(--settings-background);
+		}
+		.workspace-drawer-tab-options-list {
+			box-shadow: none;
+		}
+	}
+
+	/* Pre-1.11 tab titlebar */
+	&.i-pre-1-11-tab-titlebar {
+		--file-header-background: var(--background-primary);
+		--file-header-background-focused: var(--background-primary);
+		--view-header-height: 50px;
+		.view-header {
+			gap: 8px;
+			align-items: center;
+			.view-actions {
+				height: var(--touch-size-m);
+			}
+			.view-action {
+				height: var(--touch-size-m);
+				width: var(--touch-size-m);
+			}
+		}
+		.view-header-title {
+			font-size: 12.5px;
+			font-weight: 500;
+			flex: 0 0 auto;
+		}
+		.view-header-title-container {
+			gap: 2px;
+		}
+		&.show-inline-title .workspace-leaf-content[data-type=markdown] .view-header-title-container,
+		.view-header-title-parent:not(:empty) {
+			display: flex;
+		}
+		.mod-root .workspace-leaf-content[data-type=markdown] .view-content::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: var(--safe-area-inset-top);
+			background-color: var(--background-primary);
+		}
+	}
+
+	/* Pre-1.11 toolbar */
+	&.i-pre-1-11-toolbar {
+		--mobile-toolbar-height: var(--touch-size-m);
+		.mobile-toolbar {
+			box-shadow: none;
+		}
+		&.theme-light .mobile-toolbar {
+			background-color: var(--background-primary);
+		}
+		&.theme-dark .mobile-toolbar {
+			background-color: var(--interactive-normal);
+		}
+		.mobile-toolbar-options-container {
+			width: 100%;
+		}
+		.mobile-toolbar-options-list-container,
+		.mobile-toolbar-options-list {
+			border-radius: 0;
+		}
+	}
 }
 
 /* @settings
@@ -2365,6 +2453,11 @@ settings:
 		max: 12
 		step: 1
 		format: px
+	-
+		id: i-traffic-lights-1-11
+		title: macOS traffic lights styling for Obsidian installer version 1.11.4+
+		description: Iridium adds a container around the macOS window controls when the card layout and ribbon are enabled. The design of the macOS window controls was changed in Obsidian installer version 1.11.4. If you're using this version or later, you'll need to enable this setting to make the container fit correctly.
+		type: class-toggle
 	-
 		id: light-mode
 		title: Light mode
@@ -4462,6 +4555,28 @@ settings:
 		type: class-toggle
 		default: true
 	-
+		id: mobile
+		title: Mobile
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: i-pre-1-11-navbar
+		title: Use the pre-1.11 navbar
+		type: class-toggle
+	-
+		id: i-pre-1-11-tab-titlebar
+		title: Use the pre-1.11 tab titlebar
+		type: class-toggle
+	-
+		id: i-pre-1-11-toolbar
+		title: Use the pre-1.11 toolbar
+		type: class-toggle
+	-
+		id: i-remove-fade-effects
+		title: Remove fade effects
+		type: class-toggle
+	-
 		id: scrollbars
 		title: Scrollbars
 		type: heading
@@ -4470,6 +4585,10 @@ settings:
 	-
 		id: i-scrollbar
 		title: Custom scrollbars
+		type: class-toggle
+	-
+		id: i-scrollbar-phone-off
+		title: Disable custom scrollbars on phones
 		type: class-toggle
 	-
 		id: i-scrollbar-color
@@ -4495,7 +4614,7 @@ settings:
 		id: i-scrollbar-track-size
 		title: Scrollbar track size (px)
 		type: variable-number-slider
-		default: 11
+		default: 9
 		min: 1
 		max: 12
 		step: 1
@@ -4504,7 +4623,7 @@ settings:
 		id: i-scrollbar-thumb-size
 		title: Scrollbar thumb size (px)
 		type: variable-number-slider
-		default: 5
+		default: 4
 		min: 1
 		max: 12
 		step: 1
