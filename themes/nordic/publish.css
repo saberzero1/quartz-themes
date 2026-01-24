@@ -1704,9 +1704,8 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
   margin-inline-start: 12px;
   padding-inline-start: 4px;
 }
-body .markdown-preview-sizer {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px color(srgb 0.27731 0.3465 0.41569);
+body body.styled-scrollbars {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1715,7 +1714,10 @@ body .markdown-preview-sizer {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+  scrollbar-width: auto;
+  scrollbar-color: auto;
 }
 body .callout[data-callout="note"] {
   border: 1px solid rgba(97, 153, 191, 0.5);

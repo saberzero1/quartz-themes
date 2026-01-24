@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "callouts.md",
+                "file": "general.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "callouts"
+              "title": "general"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "callouts.md",
+                "file": "general.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of callouts"
+              "title": "Outline of general"
             }
           },
           {
@@ -208,8 +208,8 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "embeds.md",
     "callouts.md",
+    "embeds.md",
     "specimen.md",
     "media.md",
     "integrations.md",
