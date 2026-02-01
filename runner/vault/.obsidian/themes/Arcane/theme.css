@@ -391,9 +391,9 @@ pre[class*="language-"] {
 }
 
 /* Allow images to be scaled outside MAX line width */
-/* .internal-embed.media-embed.image-embed.is-loaded {
+.internal-embed.media-embed.image-embed.is-loaded {
     width: fit-content;
-} */
+}
 
 /* Testin TablesWidths */
 /* table>thead>tr>th:nth-child(1),
@@ -410,16 +410,20 @@ table>tbody {
 } */
 
 /* Tables */
-.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent):not(.cm-embed-block.cm-callout):not(.block-language-col) {
+/* .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent):not(.cm-embed-block.cm-callout):not(.block-language-col) {
     width: fit-content;
-}
+} */
 
+/* Make makrdonw table create via | | to be fully visible outside max width line */
+/* .cm-embed-block.cm-table-widget.markdown-rendered {
+    width: fit-content;
+} */
 /* Following is specific for multi column plugin which uses col-md syntax */
-.cm-preview-code-block.cm-embed-block.markdown-rendered .block-language-col {
+/* .cm-preview-code-block.cm-embed-block.markdown-rendered .block-language-col {
     width: var(--file-line-width);
-}
+} */
 
-@media (hover: hover) {
+/* @media (hover: hover) {
     .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent):not(.cm-embed-block.cm-callout):not(.block-language-col):hover {
         overflow: auto;
         width: fit-content;
@@ -429,6 +433,18 @@ table>tbody {
         background-color: var(--background-modifier-hover);
     }
 }
+dataview.table-view-table {
+    th { position: sticky; top: 0; background: var(--background-primary) }
+    tr:hover { background: var(--background-secondary) }
+} */
+
+/* ------------------------------------------ */
+/*               CALLOUT                      */
+/* ------------------------------------------ */
+.callout-title {
+    align-items: unset; /* Make icon and toggle on inside callout align with headings*/
+}
+
 
 /*────────────────────────────────────
               Note Header
