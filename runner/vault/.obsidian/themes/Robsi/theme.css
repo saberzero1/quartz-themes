@@ -1,7 +1,7 @@
 /*
 Robsi Theme - A modern theme for Obsidian.
 By Riffaells - 2026
-Built: 2026-01-23T20:48:13.801766
+Built: 2026-01-26T12:57:05.821883
 Files included: 24
 */
 
@@ -136,7 +136,7 @@ Files included: 24
     /* Modifiers */
     --background-modifier-border: transparent;
     --background-modifier-border-hover: transparent;
-    --background-modifier-form-field: transperent;
+    --background-modifier-form-field: transparent;
     --background-modifier-form-field-highlighted: var(--bg_dark);
     --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
     --background-modifier-cover: rgba(var(--bg_dark_x), 0.8);
@@ -221,7 +221,6 @@ Files included: 24
     --scrollbar-thumb-bg: rgba(var(--text-muted-rgb), 0.2);
     --scrollbar-active-thumb-bg: rgba(var(--text-muted-rgb), 0.4);
 
-    --nav-item-color: rgba(255, 255, 255, 0.9);
     --nav-item-color-hover: var(--fg);
     --nav-item-background-hover: var(--bg_highlight);
     --nav-item-background-active: rgba(var(--bg_highlight), 0.2);
@@ -387,6 +386,24 @@ Files included: 24
     
     /* Workspace */
     --workspace-background-translucent: rgba(2, 2, 2, 0.9);
+
+    /* Blockquote */
+    --blockquote-background-color: rgba(var(--purple_x), 0.12);
+
+    /* Spoiler */
+    --spoiler-background: rgba(var(--bg_highlight_x), 0.3);
+    --spoiler-background-hover: rgba(var(--bg_highlight_x), 0.5);
+    --spoiler-pattern: radial-gradient(circle 1px at 10px 8px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
+        radial-gradient(circle 1px at 30px 2px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
+        radial-gradient(circle 1px at 50px 12px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
+        radial-gradient(circle 1px at 70px 6px, rgba(255, 255, 255, 0.7) 50%, transparent 50%),
+        radial-gradient(circle 1px at 15px 24px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
+        radial-gradient(circle 1px at 38px 28px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
+        radial-gradient(circle 1px at 60px 36px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
+        radial-gradient(circle 1px at 85px 22px, rgba(255, 255, 255, 0.7) 50%, transparent 50%);
+
+    /* Navigation */
+    --nav-item-color: rgba(220, 220, 220, 0.9);
 }
 
 
@@ -525,6 +542,27 @@ Files included: 24
         border-top: 1px solid #e2e8f0;
         color: #64748b;
     }
+
+    /* Blockquote */
+    --blockquote-background-color: rgba(var(--purple_x), 0.08);
+
+    /* Code */
+    --code-background: rgba(var(--purple_x), 0.06);
+
+    /* Spoiler */
+    --spoiler-background: rgba(var(--bg_dark_x), 0.5);
+    --spoiler-background-hover: rgba(var(--bg_dark_x), 0.7);
+    --spoiler-pattern: radial-gradient(circle 1px at 10px 8px, rgba(100, 100, 100, 0.6) 50%, transparent 50%),
+        radial-gradient(circle 1px at 30px 2px, rgba(100, 100, 100, 0.4) 50%, transparent 50%),
+        radial-gradient(circle 1px at 50px 12px, rgba(100, 100, 100, 0.7) 50%, transparent 50%),
+        radial-gradient(circle 1px at 70px 6px, rgba(100, 100, 100, 0.5) 50%, transparent 50%),
+        radial-gradient(circle 1px at 15px 24px, rgba(100, 100, 100, 0.6) 50%, transparent 50%),
+        radial-gradient(circle 1px at 38px 28px, rgba(100, 100, 100, 0.4) 50%, transparent 50%),
+        radial-gradient(circle 1px at 60px 36px, rgba(100, 100, 100, 0.7) 50%, transparent 50%),
+        radial-gradient(circle 1px at 85px 22px, rgba(100, 100, 100, 0.5) 50%, transparent 50%);
+
+    /* Navigation */
+    --nav-item-color: rgba(30, 35, 42, 0.9);
 }
 
 
@@ -708,13 +746,46 @@ Files included: 24
     max-width: var(--tab-max-width);
 }
 
-.workspace-tab-header:hover:not(.is-active) {
-    background: var(--tab-background-hover);
-}
-
 .workspace-tab-header.is-active {
     background: var(--tab-background-active);
     font-weight: 600;
+}
+
+/* Reset box-shadow on active tab pseudo-elements */
+.workspace-split.mod-root .workspace-tab-header-container .workspace-tab-header.is-active::before,
+.workspace-split.mod-root .workspace-tab-header-container .workspace-tab-header.is-active::after {
+    box-shadow: none;
+}
+
+/* Tab header inner styles */
+.workspace .mod-root .workspace-tab-header-inner::after {
+    width: 0;
+}
+
+/* Hover effect on inner element */
+@media (hover: hover) {
+    .workspace-tab-header-container .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+        background-color: var(--background-modifier-hover);
+    }
+}
+
+/* Active and focus styles for inner element */
+.workspace-tab-header.is-active .workspace-tab-header-inner,
+.workspace-tab-header:focus .workspace-tab-header-inner {
+    background-color: var(--background-modifier-hover);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           7. Status Bar                                    */
+/* -------------------------------------------------------------------------- */
+
+.status-bar {
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
+}
+
+.status-bar:hover {
+    opacity: 1;
 }
 
 /* View Header (Breadcrumbs area + Buttons) */
@@ -1089,13 +1160,14 @@ a.internal-link:hover,
 .cm-hmd-internal-link:hover,
 .cm-hmd-internal-link a:hover,
 .internal-link:hover {
-  color: var(--internal-link-color-hover) !important;
+  color: var(--internal-link-color-hover);
   text-decoration: none !important;
 }
 
 /* Helper for data-link-text */
-span.data-link-text > a.cm-underline {
-  color: var(--internal-link-color) !important;
+/* Lower specificity to allow plugin overrides via data-link-type */
+.data-link-text a.cm-underline {
+  color: var(--internal-link-color);
   text-decoration: none !important;
 }
 
@@ -1338,7 +1410,6 @@ input[type="checkbox"] {
 blockquote {
 	border: none;
 	border-left: 2px solid var(--blockquote-border);
-	background: var(--blockquote-bg);
 	border-radius: var(--radius-m);
 	color: var(--blockquote-color);
 	position: relative;
@@ -1451,27 +1522,29 @@ blockquote p {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -2px;
-    opacity: 0.8; /* Keep visible */
+    bottom: 1px;
+    transform: translateY(3px); /* Опускаем линию ниже */
+    line-height: unset !important;
+    opacity: 0.4;
     pointer-events: none;
     border-radius: 10px;
 }
 
 /* Gradients per header level with hierarchical thickness */
 :is(.markdown-preview-view h1, .HyperMD-header-1)::after {
-    height: 3px;
+    height: 5px;
     background: linear-gradient(to right, var(--h1-color) 30%, transparent 70%);
 }
 :is(.markdown-preview-view h2, .HyperMD-header-2)::after {
-    height: 2px;
+    height: 4px;
     background: linear-gradient(to right, var(--h2-color) 30%, transparent 70%);
 }
 :is(.markdown-preview-view h3, .HyperMD-header-3)::after {
-    height: 1px;
+    height: 3px;
     background: linear-gradient(to right, var(--h3-color) 30%, transparent 70%);
 }
 :is(.markdown-preview-view h4, .HyperMD-header-4)::after {
-    height: 1px;
+    height: 2px;
     background: linear-gradient(to right, var(--h4-color) 30%, transparent 70%);
 }
 :is(.markdown-preview-view h5, .HyperMD-header-5)::after {
@@ -1539,6 +1612,11 @@ blockquote p {
 
 /* Tag Pills */
 .multi-select-pill { line-height: normal; }
+
+/* Remove line-height from metadata tags */
+.metadata-property-value[data-property-type="tags"] .multi-select-pill {
+    line-height: unset;
+}
 
 
 /* ================================================= */
@@ -1716,7 +1794,7 @@ ins, .cm-ins {
 
 .spoiler{
     position: relative;
-    background-color: var(--background-modifier) !important;
+    background-color: var(--spoiler-background) !important;
     color: transparent !important;
     border-radius: 4px;
     padding: 2px 6px;
@@ -1734,15 +1812,7 @@ ins, .cm-ins {
     bottom: 0;
     pointer-events: none;
     opacity: 0.9;
-    background-image:
-        radial-gradient(circle 1px at 10px 8px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
-        radial-gradient(circle 1px at 30px 2px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
-        radial-gradient(circle 1px at 50px 12px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
-        radial-gradient(circle 1px at 70px 6px, rgba(255, 255, 255, 0.7) 50%, transparent 50%),
-        radial-gradient(circle 1px at 15px 24px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
-        radial-gradient(circle 1px at 38px 28px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
-        radial-gradient(circle 1px at 60px 36px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
-        radial-gradient(circle 1px at 85px 22px, rgba(255, 255, 255, 0.7) 50%, transparent 50%);
+    background-image: var(--spoiler-pattern);
     background-repeat: repeat;
     animation: snowfall 1.5s linear infinite;
 }
@@ -1758,17 +1828,17 @@ ins, .cm-ins {
 }
 
 .spoiler:hover {
-    background-color: var(--background-modifier-hover) !important;
+    background-color: var(--spoiler-background-hover) !important;
 }
 
 .spoiler.spoiler-revealed {
-    background-color: var(--background-modifier-hover) !important;
+    background-color: var(--spoiler-background-hover) !important;
     color: var(--text-normal) !important;
 }
 
 .cm-spoiler {
     position: relative;
-    background-color: var(--background-modifier-hover) !important;
+    background-color: var(--spoiler-background-hover) !important;
     color: var(--text-normal) !important;
     border-radius: 4px;
     padding: 2px 6px;
@@ -1784,16 +1854,7 @@ ins, .cm-ins {
     bottom: 0;
     pointer-events: none;
     opacity: 0.8;
-    background-image:
-        radial-gradient(circle 1px at 10px 8px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
-        radial-gradient(circle 1px at 30px 2px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
-        radial-gradient(circle 1px at 50px 12px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
-        radial-gradient(circle 1px at 70px 6px, rgba(255, 255, 255, 0.7) 50%, transparent 50%),
-        radial-gradient(circle 1px at 70px 6px, rgba(255, 255, 255, 0.7) 50%, transparent 50%),
-        radial-gradient(circle 1px at 15px 24px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
-        radial-gradient(circle 1px at 38px 28px, rgba(255, 255, 255, 0.6) 50%, transparent 50%),
-        radial-gradient(circle 1px at 60px 36px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
-        radial-gradient(circle 1px at 85px 22px, rgba(255, 255, 255, 0.7) 50%, transparent 50%);
+    background-image: var(--spoiler-pattern);
     background-repeat: repeat;
     background-size: 100px 40px;
     animation: snowfall 1.5s linear infinite;

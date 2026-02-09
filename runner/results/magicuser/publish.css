@@ -982,6 +982,8 @@ body.theme-light {
   --mu-global-font:
     "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace !important;
   --mu-global-font-letter-spacing: normal !important;
+  --mu-global-font-size: 16px !important;
+  --mu-global-font-size-value: 16 !important;
   --mu-global-font-stylistic-set: normal !important;
   --mu-gray-1: #a3a3a3 !important;
   --mu-green-1: #20cf20 !important;
@@ -1035,6 +1037,8 @@ body.theme-light {
   --mu-magenta-1: #f100f1 !important;
   --mu-max-letter-spacing: 2px !important;
   --mu-menu-separator-color: #0072d322 !important;
+  --mu-mobile-side-margins: 16px !important;
+  --mu-mobile-side-margins-value: 16 !important;
   --mu-modal-background: #cfcfcf !important;
   --mu-neon-mode-glow-intensity: 0.5em !important;
   --mu-neon-mode-glow-value: 0.5 !important;
@@ -2048,6 +2052,8 @@ body.theme-dark {
   --mu-global-font:
     "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace !important;
   --mu-global-font-letter-spacing: normal !important;
+  --mu-global-font-size: 16px !important;
+  --mu-global-font-size-value: 16 !important;
   --mu-global-font-stylistic-set: normal !important;
   --mu-gray-1: #a3a3a3 !important;
   --mu-green-1: #20f120 !important;
@@ -2101,6 +2107,8 @@ body.theme-dark {
   --mu-magenta-1: #f100f1 !important;
   --mu-max-letter-spacing: 2px !important;
   --mu-menu-separator-color: #0072d322 !important;
+  --mu-mobile-side-margins: 16px !important;
+  --mu-mobile-side-margins-value: 16 !important;
   --mu-modal-background: #000 !important;
   --mu-neon-mode-glow-intensity: 0.5em !important;
   --mu-neon-mode-glow-value: 0.5 !important;

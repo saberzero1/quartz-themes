@@ -7,8 +7,8 @@
 }
 
 :root:root {
-  --accent-h: 215 !important;
-  --accent-l: 55% !important;
+  --accent-h: 212 !important;
+  --accent-l: 52% !important;
   --accent-s: 100% !important;
   --anim-duration-fast: 150ms !important;
   --anim-duration-moderate: 300ms !important;
@@ -19,7 +19,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(26, 121, 255, 0.1) !important;
+  --background-modifier-active-hover: rgba(10, 124, 255, 0.1) !important;
   --background-modifier-border: oklch(0% 0 0 / 0.0625) !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: oklch(82.5% 0.0025 281) !important;
@@ -68,9 +68,9 @@
   --bases-group-heading-property-color: oklch(46.5% 0.0105 281) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 425 !important;
+  --bases-group-heading-property-weight: 420 !important;
   --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 625 !important;
+  --bases-group-heading-value-weight: 620 !important;
   --bases-header-border-width: 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 0 !important;
@@ -82,13 +82,13 @@
     oklch(99% 0.0005 281),
     oklch(96.2% 0.0025 281)
   ) !important;
-  --bases-table-cell-background-selected: rgba(26, 121, 255, 0.1) !important;
+  --bases-table-cell-background-selected: rgba(10, 124, 255, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2.5px
-    color-mix(in oklch, rgb(26, 121, 255) 50%, transparent 75%) !important;
+    color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px
-    color-mix(in oklab, rgb(26, 121, 255), white 7.5%) !important;
+    color-mix(in oklab, rgb(10, 124, 255), white 7.5%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -106,7 +106,7 @@
     transparent 24px,
     black 24px
   ) !important;
-  --bases-table-header-weight: 500 !important;
+  --bases-table-header-weight: 490 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 0 !important;
   --bases-table-row-height: 32px !important;
@@ -119,31 +119,31 @@
   --blockquote-border-thickness: 0.1875rem !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 250 !important;
-  --bold-weight: 675 !important;
+  --bold-weight: 670 !important;
   --border-width: 1px !important;
-  --button-radius: 7px !important;
+  --button-radius: 8px !important;
   --callout-blend-mode: normal;
-  --callout-border-opacity: 0.2;
+  --callout-border-opacity: 0.2375;
   --callout-border-width: 0px;
   --callout-bug: 214, 50, 202;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 48, 114, 255;
+  --callout-default: 31, 132, 255;
   --callout-error: 233, 49, 58;
   --callout-example: 124, 80, 237;
   --callout-fail: 233, 49, 58;
   --callout-important: 9, 186, 221;
-  --callout-info: 48, 114, 255;
+  --callout-info: 31, 132, 255;
   --callout-padding: 1rem;
   --callout-question: 241, 110, 53;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 9px;
+  --callout-radius: 10px;
   --callout-success: 0, 187, 93;
   --callout-summary: 9, 186, 221;
   --callout-tip: 9, 186, 221;
   --callout-title-padding: 0;
-  --callout-title-weight: 675;
-  --callout-todo: 48, 114, 255;
+  --callout-title-weight: 670;
+  --callout-todo: 31, 132, 255;
   --callout-warning: 229, 169, 37;
   --canvas-background: oklch(99% 0.0005 281) !important;
   --canvas-card-label-color: oklch(71.5% 0.0105 281) !important;
@@ -152,7 +152,7 @@
   --canvas-color-2: 241, 110, 53 !important;
   --canvas-color-3: 229, 169, 37 !important;
   --canvas-color-4: 0, 187, 93 !important;
-  --canvas-color-5: 48, 114, 255 !important;
+  --canvas-color-5: 31, 132, 255 !important;
   --canvas-color-6: 124, 80, 237 !important;
   --canvas-dot-pattern: oklch(85.75% 0.0025 281) !important;
   --caret-color: oklch(30% 0.0005 281) !important;
@@ -160,12 +160,12 @@
   --checkbox-border-color-hover: oklch(46.5% 0.0105 281) !important;
   --checkbox-color: color-mix(
     in oklab,
-    rgb(26, 121, 255),
+    rgb(10, 124, 255),
     white 7.5%
   ) !important;
   --checkbox-color-hover: color-mix(
     in oklch,
-    rgb(26, 121, 255) 80%,
+    rgb(10, 124, 255) 80%,
     transparent 40%
   ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
@@ -174,7 +174,7 @@
   --checkbox-size: 1.125rem !important;
   --checklist-done-color: oklch(71.5% 0.0105 281) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 7px !important;
+  --clickable-icon-radius: 8px !important;
   --code-background: oklch(0% 0 0 / 0.0625) !important;
   --code-border-color: oklch(0% 0 0 / 0.0625) !important;
   --code-border-width: 0 !important;
@@ -187,26 +187,26 @@
   --code-operator: rgb(233, 49, 58) !important;
   --code-property: rgb(9, 186, 221) !important;
   --code-punctuation: oklch(46.5% 0.0105 281) !important;
-  --code-radius: 5px !important;
+  --code-radius: 6px !important;
   --code-size: 0.875em !important;
   --code-string: rgb(0, 187, 93) !important;
   --code-tag: rgb(233, 49, 58) !important;
   --code-value: rgb(124, 80, 237) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: oklch(71.5% 0.0105 281) !important;
-  --collapse-icon-color-collapsed: rgb(26, 121, 255) !important;
-  --color-accent: rgb(26, 121, 255) !important;
+  --collapse-icon-color-collapsed: rgb(10, 124, 255) !important;
+  --color-accent: rgb(10, 124, 255) !important;
   --color-accent-1: color-mix(
     in oklab,
-    rgb(26, 121, 255),
+    rgb(10, 124, 255),
     white 7.5%
   ) !important;
   --color-accent-2: color-mix(
     in oklch,
-    rgb(26, 121, 255) 80%,
+    rgb(10, 124, 255) 80%,
     transparent 40%
   ) !important;
-  --color-accent-hsl: 215, 100%, 55% !important;
+  --color-accent-hsl: 212, 100%, 52% !important;
   --color-base-00: oklch(100% 0.0005 281) !important;
   --color-base-05: oklch(99% 0.0005 281) !important;
   --color-base-10: oklch(96.2% 0.0025 281) !important;
@@ -219,8 +219,8 @@
   --color-base-50: oklch(71.5% 0.0105 281) !important;
   --color-base-60: oklch(55.75% 0.0105 281) !important;
   --color-base-70: oklch(46.5% 0.0105 281) !important;
-  --color-blue: rgb(48, 114, 255) !important;
-  --color-blue-rgb: 48, 114, 255 !important;
+  --color-blue: rgb(31, 132, 255) !important;
+  --color-blue-rgb: 31, 132, 255 !important;
   --color-cyan: rgb(9, 186, 221) !important;
   --color-cyan-rgb: 9, 186, 221 !important;
   --color-green: rgb(0, 187, 93) !important;
@@ -245,7 +245,7 @@
   --divider-color: oklch(0% 0 0 / 0.0625) !important;
   --divider-color-hover: color-mix(
     in oklch,
-    rgb(26, 121, 255) 50%,
+    rgb(10, 124, 255) 50%,
     transparent 75%
   ) !important;
   --divider-vertical-height: 100% !important;
@@ -276,7 +276,7 @@
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
-  --file-header-font-weight: 500 !important;
+  --file-header-font-weight: 490 !important;
   --file-header-justify: center !important;
   --file-line-width: 43.75rem !important;
   --file-margins: 32px !important;
@@ -285,13 +285,13 @@
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
-  --font-bold: 725 !important;
+  --font-bold: 720 !important;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
-  --font-extrabold: 825 !important;
-  --font-extralight: 300 !important;
+  --font-extrabold: 820 !important;
+  --font-extralight: 305 !important;
   --font-interface:
     "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
@@ -303,8 +303,8 @@
     "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-light: 325 !important;
-  --font-medium: 525 !important;
+  --font-light: 320 !important;
+  --font-medium: 520 !important;
   --font-mermaid:
     "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
@@ -321,13 +321,13 @@
     "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
-  --font-normal: 425 !important;
+  --font-normal: 420 !important;
   --font-print:
     "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
-  --font-semibold: 625 !important;
+  --font-semibold: 620 !important;
   --font-small: 0.90625em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
@@ -343,12 +343,12 @@
     "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-thin: 275 !important;
+  --font-thin: 270 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 425 !important;
+  --font-weight: 420 !important;
   --footnote-divider-color: oklch(0% 0 0 / 0.0625) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
@@ -361,7 +361,7 @@
   --footnote-line-height: 1.6 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
-  --footnote-radius: 7px !important;
+  --footnote-radius: 8px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 160px !important;
@@ -378,37 +378,37 @@
   --h1-size: 2em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
-  --h1-weight: 350 !important;
+  --h1-weight: 330 !important;
   --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
   --h2-size: 1.5em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 550 !important;
+  --h2-weight: 570 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.375em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 550 !important;
+  --h3-weight: 570 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.25em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 550 !important;
+  --h4-weight: 570 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.6 !important;
   --h5-size: 1.125em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.6 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
-  --h6-weight: 650 !important;
+  --h6-weight: 670 !important;
   --header-height: 56px !important;
   --heading-formatting: oklch(71.5% 0.0105 281) !important;
   --heading-spacing: 2.5rem !important;
@@ -416,7 +416,7 @@
   --hr-color: oklch(0% 0 0 / 0.092) !important;
   --hr-thickness: 2px !important;
   --icon-color: oklch(55.75% 0.0105 281) !important;
-  --icon-color-active: rgb(26, 121, 255) !important;
+  --icon-color-active: rgb(10, 124, 255) !important;
   --icon-color-focused: oklch(30% 0.0005 281) !important;
   --icon-color-hover: oklch(30% 0.0005 281) !important;
   --icon-l: 18px !important;
@@ -452,28 +452,28 @@
   --inline-title-size: 2em !important;
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
-  --inline-title-weight: 350 !important;
+  --inline-title-weight: 330 !important;
   --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
   --input-date-separator: oklch(71.5% 0.0105 281) !important;
-  --input-font-weight: 425 !important;
+  --input-font-weight: 420 !important;
   --input-height: 28px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: oklch(71.5% 0.0105 281) !important;
-  --input-radius: 7px !important;
+  --input-radius: 8px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
   --interactive-accent: color-mix(
     in oklab,
-    rgb(26, 121, 255),
+    rgb(10, 124, 255),
     white 7.5%
   ) !important;
   --interactive-accent-hover: color-mix(
     in oklch,
-    rgb(26, 121, 255) 80%,
+    rgb(10, 124, 255) 80%,
     transparent 40%
   ) !important;
-  --interactive-accent-hsl: 215, 100%, 55% !important;
+  --interactive-accent-hsl: 212, 100%, 52% !important;
   --interactive-hover: oklch(0% 0 0 / 0.092) !important;
   --interactive-normal: oklch(0% 0 0 / 0.07) !important;
   --keyboard-height: 0px !important;
@@ -489,32 +489,32 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(26, 121, 255) !important;
+  --link-color: rgb(10, 124, 255) !important;
   --link-color-hover: color-mix(
     in oklch,
-    rgb(26, 121, 255) 80%,
+    rgb(10, 124, 255) 80%,
     transparent 40%
   ) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(26, 121, 255) !important;
+  --link-external-color: rgb(10, 124, 255) !important;
   --link-external-color-hover: color-mix(
     in oklch,
-    rgb(26, 121, 255) 80%,
+    rgb(10, 124, 255) 80%,
     transparent 40%
   ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(
-    from color-mix(in oklab, rgb(26, 121, 255), white 7.5%) l c h / 0.7
+    from color-mix(in oklab, rgb(10, 124, 255), white 7.5%) l c h / 0.7
   ) !important;
-  --link-unresolved-decoration-color: rgba(26, 121, 255, 0.3) !important;
+  --link-unresolved-decoration-color: rgba(10, 124, 255, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
-  --link-weight: 425 !important;
+  --link-weight: 420 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
@@ -524,7 +524,7 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: oklch(71.5% 0.0105 281) !important;
-  --list-marker-color-collapsed: rgb(26, 121, 255) !important;
+  --list-marker-color-collapsed: rgb(10, 124, 255) !important;
   --list-marker-color-hover: oklch(46.5% 0.0105 281) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.125em !important;
@@ -538,7 +538,7 @@
   --menu-border-color: oklch(0% 0 0 / 0.1125) !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
-  --menu-radius: 13px !important;
+  --menu-radius: 14px !important;
   --menu-shadow:
     inset 1px 1px 2px 0 oklch(100% 0 0 / 0.75),
     inset -1px -1px 2px 0 oklch(100% 0 0 / 0.75),
@@ -546,7 +546,7 @@
     0px 10px 20px 0px oklch(0% 0 0 / 0.07) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: oklch(0% 0 0 / 0.0625) !important;
-  --metadata-border-radius: 11px !important;
+  --metadata-border-radius: 12px !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
@@ -587,7 +587,7 @@
   --metadata-property-background-active: oklch(0% 0 0 / 0.0625) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2.5px
-    color-mix(in oklch, rgb(26, 121, 255) 50%, transparent 75%) !important;
+    color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(0% 0 0 / 0.0625) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
@@ -603,7 +603,7 @@
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 21px !important;
+  --modal-radius: 22px !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
@@ -613,18 +613,18 @@
   --nav-heading-color-collapsed: oklch(71.5% 0.0105 281) !important;
   --nav-heading-color-collapsed-hover: oklch(46.5% 0.0105 281) !important;
   --nav-heading-color-hover: oklch(30% 0.0005 281) !important;
-  --nav-heading-weight: 525 !important;
-  --nav-heading-weight-hover: 525 !important;
+  --nav-heading-weight: 520 !important;
+  --nav-heading-weight-hover: 520 !important;
   --nav-indentation-guide-color: oklch(0% 0 0 / 0.092) !important;
   --nav-indentation-guide-width: 0 !important;
   --nav-item-background-active: oklch(0% 0 0 / 0.0625) !important;
   --nav-item-background-hover: oklch(0% 0 0 / 0.0625) !important;
-  --nav-item-background-selected: rgba(26, 121, 255, 0.15) !important;
+  --nav-item-background-selected: rgba(10, 124, 255, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(46.5% 0.0105 281) !important;
   --nav-item-color-active: oklch(30% 0.0005 281) !important;
-  --nav-item-color-highlighted: rgb(26, 121, 255) !important;
+  --nav-item-color-highlighted: rgb(10, 124, 255) !important;
   --nav-item-color-hover: oklch(30% 0.0005 281) !important;
   --nav-item-color-selected: oklch(30% 0.0005 281) !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
@@ -635,8 +635,8 @@
   --nav-tag-color: oklch(71.5% 0.0105 281) !important;
   --nav-tag-color-active: oklch(46.5% 0.0105 281) !important;
   --nav-tag-color-hover: oklch(46.5% 0.0105 281) !important;
-  --nav-tag-radius: 7px !important;
-  --nav-tag-weight: 625 !important;
+  --nav-tag-radius: 8px !important;
+  --nav-tag-weight: 620 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
@@ -663,7 +663,7 @@
   --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
-  --pill-radius: 17px !important;
+  --pill-radius: 18px !important;
   --popover-font-size: 16px !important;
   --popover-height: 400px !important;
   --popover-max-height: 95vh !important;
@@ -676,10 +676,10 @@
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 17px !important;
-  --radius-m: 11px !important;
-  --radius-s: 7px !important;
-  --radius-xl: 19px !important;
+  --radius-l: 18px !important;
+  --radius-m: 12px !important;
+  --radius-s: 8px !important;
+  --radius-xl: 20px !important;
   --ribbon-background: transparent !important;
   --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 0px 12px 8px !important;
@@ -692,7 +692,7 @@
   --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 17px !important;
+  --scrollbar-radius: 18px !important;
   --scrollbar-thumb-bg: oklch(0% 0 0 / 0.092) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: oklch(71.5% 0.0105 281) !important;
@@ -747,7 +747,7 @@
   --status-bar-border-width: 0 !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 17px 0 0 17px !important;
+  --status-bar-radius: 18px 0 0 18px !important;
   --status-bar-text-color: oklch(46.5% 0.0105 281) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
@@ -758,7 +758,7 @@
   --sync-avatar-color-3: rgb(229, 169, 37) !important;
   --sync-avatar-color-4: rgb(0, 187, 93) !important;
   --sync-avatar-color-5: rgb(9, 186, 221) !important;
-  --sync-avatar-color-6: rgb(48, 114, 255) !important;
+  --sync-avatar-color-6: rgb(31, 132, 255) !important;
   --sync-avatar-color-7: rgb(124, 80, 237) !important;
   --sync-avatar-color-8: rgb(214, 50, 202) !important;
   --sync-avatar-color-current-user: transparent !important;
@@ -770,27 +770,27 @@
   --tab-max-width: 240px !important;
   --tab-outline-color: oklch(0% 0 0 / 0.0625) !important;
   --tab-outline-width: 0 !important;
-  --tab-radius: 7px !important;
+  --tab-radius: 8px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
   --tab-stacked-font-size: 13px !important;
-  --tab-stacked-font-weight: 525 !important;
+  --tab-stacked-font-weight: 520 !important;
   --tab-stacked-header-width: 56px !important;
-  --tab-stacked-pane-width: 700px !important;
+  --tab-stacked-pane-width: 43.75rem !important;
   --tab-stacked-shadow: -8px 0 8px 0 oklch(5% 0 0 / 0.055) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: oklch(96.2% 0.0025 281) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 19px !important;
+  --tab-switcher-preview-radius: 20px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(26, 121, 255) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(10, 124, 255) !important;
   --tab-text-color: oklch(55.75% 0.0105 281) !important;
   --tab-text-color-active: oklch(24% 0.0005 281) !important;
   --tab-text-color-focused: oklch(55.75% 0.0105 281) !important;
   --tab-text-color-focused-active: oklch(24% 0.0005 281) !important;
   --tab-text-color-focused-active-current: oklch(24% 0.0005 281) !important;
-  --tab-text-color-focused-highlighted: rgb(26, 121, 255) !important;
+  --tab-text-color-focused-highlighted: rgb(10, 124, 255) !important;
   --tab-width: 240px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: oklch(0% 0 0 / 0.0625) !important;
@@ -807,7 +807,7 @@
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: color-mix(
     in oklab,
-    rgb(26, 121, 255),
+    rgb(10, 124, 255),
     white 7.5%
   ) !important;
   --table-drag-handle-color: oklch(71.5% 0.0105 281) !important;
@@ -816,42 +816,42 @@
   --table-header-background: transparent !important;
   --table-header-border-color: oklch(0% 0 0 / 0.092) !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: oklch(65% 0.0105 281) !important;
+  --table-header-color: oklch(55.75% 0.0105 281) !important;
   --table-header-size: 0.90625em !important;
-  --table-header-weight: 525 !important;
+  --table-header-weight: 520 !important;
   --table-line-height: 1.6 !important;
   --table-row-alt-background: oklch(20% 0 0 / 0.0275) !important;
   --table-row-alt-background-hover: oklch(20% 0 0 / 0.0275) !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(26, 121, 255, 0.1) !important;
+  --table-selection: rgba(10, 124, 255, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: color-mix(
     in oklab,
-    rgb(26, 121, 255),
+    rgb(10, 124, 255),
     white 7.5%
   ) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.90625em !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(26, 121, 255, 0.1) !important;
-  --tag-background-hover: rgba(26, 121, 255, 0.2) !important;
-  --tag-border-color: rgba(26, 121, 255, 0.15) !important;
-  --tag-border-color-hover: rgba(26, 121, 255, 0.15) !important;
+  --tag-background: rgba(10, 124, 255, 0.1) !important;
+  --tag-background-hover: rgba(10, 124, 255, 0.2) !important;
+  --tag-border-color: rgba(10, 124, 255, 0.15) !important;
+  --tag-border-color-hover: rgba(10, 124, 255, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(26, 121, 255) !important;
-  --tag-color-hover: rgb(26, 121, 255) !important;
+  --tag-color: rgb(10, 124, 255) !important;
+  --tag-color-hover: rgb(10, 124, 255) !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.6875em !important;
   --tag-padding-y: 0.3125em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.8em !important;
-  --text-accent: rgb(26, 121, 255) !important;
+  --text-accent: rgb(10, 124, 255) !important;
   --text-accent-hover: color-mix(
     in oklch,
-    rgb(26, 121, 255) 80%,
+    rgb(10, 124, 255) 80%,
     transparent 40%
   ) !important;
   --text-error: rgb(233, 49, 58) !important;
@@ -862,7 +862,7 @@
   --text-normal: oklch(30% 0.0005 281) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: oklab(from rgb(26, 121, 255) l a b / 0.15) !important;
+  --text-selection: oklab(from rgb(10, 124, 255) l a b / 0.15) !important;
   --text-success: rgb(0, 187, 93) !important;
   --text-warning: rgb(241, 110, 53) !important;
   --titlebar-background: transparent !important;
@@ -872,7 +872,7 @@
   --titlebar-height: 36px !important;
   --titlebar-text-color: oklch(0% 0 0 / 0.32) !important;
   --titlebar-text-color-focused: oklch(46.5% 0.0105 281) !important;
-  --titlebar-text-weight: 625 !important;
+  --titlebar-text-weight: 620 !important;
   --toggle-border-width: 4px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 4px !important;
@@ -889,47 +889,47 @@
   --vault-profile-color-hover: oklch(46.5% 0.0105 281) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 18px !important;
-  --vault-profile-font-weight: 425 !important;
+  --vault-profile-font-weight: 420 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: oklch(30% 0.0005 281) !important;
+  --h1-color: oklch(24% 0.0005 281) !important;
   --h2-color: oklch(30% 0.0005 281) !important;
   --h3-color: oklch(30% 0.0005 281) !important;
   --h4-color: oklch(30% 0.0005 281) !important;
   --h5-color: oklch(40% 0.0025 281) !important;
   --h6-color: oklch(46.5% 0.0105 281) !important;
-  --inline-title-color: oklch(30% 0.0005 281) !important;
+  --inline-title-color: oklch(24% 0.0005 281) !important;
   --blockquote-color: oklch(46.5% 0.0105 281) !important;
   --bold-color: oklch(24% 0.0005 281) !important;
   --color-base-80: oklch(40% 0.0025 281) !important;
   --color-base-90: oklch(30% 0.0005 281) !important;
   --font-ui-larger: 24px !important;
-  --radius-sm: 9px !important;
+  --radius-sm: 10px !important;
   --setting-group-heading-color: oklch(55.75% 0.0105 281) !important;
   --setting-group-heading-size: 18px !important;
   --setting-items-padding: 16px !important;
-  --setting-items-radius: 15px !important;
-  --tag-weight: 500 !important;
+  --setting-items-radius: 16px !important;
+  --tag-weight: 490 !important;
   --color-accent-3: color-mix(
     in oklch,
-    rgb(26, 121, 255) 50%,
+    rgb(10, 124, 255) 50%,
     transparent 75%
   ) !important;
-  --radius-xs: 5px !important;
+  --radius-xs: 6px !important;
   --prompt-background: oklch(99.5% 0.00125 281 / 0.675) !important;
-  --tab-font-weight: 425 !important;
+  --tab-font-weight: 420 !important;
+  --setting-group-heading-weight: 520 !important;
   --strikethrough-color: oklch(71.5% 0.0105 281) !important;
   --color-base-55: oklch(65% 0.0105 281) !important;
   --setting-items-background: oklch(99% 0.0005 281) !important;
-  --setting-group-heading-weight: 525 !important;
   --setting-items-border-width: 0 !important;
   --color-highlight: rgb(229, 169, 37) !important;
   --file-margins-y: 28px !important;
-  --metadata-label-font-weight: 500 !important;
-  --pill-weight: 500 !important;
+  --metadata-label-font-weight: 490 !important;
+  --pill-weight: 490 !important;
   --nav-folder-color: oklch(40% 0.0025 281) !important;
   --settings-background: color-mix(
     in oklab,
@@ -993,12 +993,12 @@
   --code-special: rgb(233, 49, 58) !important;
   --color-accent-4: color-mix(
     in oklch,
-    oklab(from rgb(26, 121, 255) l a b / 0.15) 40%,
+    oklab(from rgb(10, 124, 255) l a b / 0.15) 40%,
     transparent 60%
   ) !important;
   --color-highlight-rgb: 229, 169, 37 !important;
   --control-icon-background: oklch(99% 0.0005 281) !important;
-  --control-icon-color: oklch(30% 0.0005 281) !important;
+  --control-icon-color: oklch(40% 0.0025 281) !important;
   --control-icon-shadow: 0px 0 12px 0px oklch(5% 0 0 / 0.055) !important;
   --fab-bg: oklch(99% 0.0005 281) !important;
   --fab-color: oklch(55.75% 0.0105 281) !important;
@@ -1010,8 +1010,8 @@
     "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-normal-linux: 500 !important;
-  --font-semi-medium: 500 !important;
+  --font-normal-linux: 490 !important;
+  --font-semi-medium: 490 !important;
   --frame-right-space-override: 164px !important;
   --glass-base:
     inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4),
@@ -1024,8 +1024,8 @@
     inset 1.5px 1.5px 3px 0 oklch(100% 0 0 / 0.4),
     inset -1.5px -1.5px 3px 0 oklch(100% 0 0 / 0.4) !important;
   --h1-size-alt: 1.625em !important;
-  --h1-weight-alt: 625 !important;
-  --highlight-blue-rgb: 48, 114, 255 !important;
+  --h1-weight-alt: 570 !important;
+  --highlight-blue-rgb: 31, 132, 255 !important;
   --highlight-cyan-rgb: 9, 186, 221 !important;
   --highlight-green-rgb: 0, 187, 93 !important;
   --highlight-orange-rgb: 241, 110, 53 !important;
@@ -1036,17 +1036,13 @@
   --icon-stroke-thick: 2.25px !important;
   --link-color-sidebar: color-mix(
     in oklab,
-    rgb(26, 121, 255),
+    rgb(10, 124, 255),
     white 7.5%
   ) !important;
   --link-unresolved-lch: 0.7 !important;
-  --list-bullet-color: oklch(46.5% 0.0105 281) !important;
+  --list-bullet-color: oklch(55.75% 0.0105 281) !important;
   --list-dash-color: oklch(0% 0 0 / 0.25) !important;
-  --math-color: color-mix(
-    in oklab,
-    oklch(30% 0.0005 281),
-    oklch(24% 0.0005 281)
-  ) !important;
+  --math-color: oklch(24% 0.0005 281) !important;
   --metadata-input-padding: 6px 8px !important;
   --modal-community-header-bg: oklch(100% 0 0 / 0.75) !important;
   --modal-community-item-bg: color-mix(
@@ -1060,10 +1056,10 @@
   --nav-text-color: oklch(30% 0.0005 281) !important;
   --paint-description: "The default light color scheme for Velocity. A timeless classic with a mild futuristic touch." !important;
   --paint-image: url(data\:image\/webp\base64\,UklGRpxLAABXRUJQVlA4TJBLAAAv34FAAE1IbBtJkiQoMvc\+lf8OV3b1cw5E9H8ClIUqjgBr8XCrrGa0VXGOzHrlDTRiD6Bcll69GjnsAG4xSV5K5aw4\/MIfnHroQfUTYDJ0N9dXAH4h3d0PyHmeCXBRYFkP1TN7Z9g1VdkVzNWDQzfdW0zNA7wX\+jpalh69uvWhh0\/9fSF5765hQaez38pai3UK6xIyJObyHsdycxAMDPfPRu8sQEziF24aAbLrf\+L2IM8u14mKHnXSBw6enJoFTHjRffKq0apSo1sn\+RQIIOl097dA5nSn52\+wHfbhp3Tzgm\/JmO4MHPgSp3Z30vuJIPiQJ3Q3fePlhCqgqqg\+\/IpQBVRVNcBGwhcXpxMQwierhmwuaLeS5EiS3hIBVn\+pWoAljpUgl901CoX4ySiWEsCJJEmS5LbSSmsJIcTlj\+O7OwQvgAEwAuxIkmQ1GWCAuN8SIf\/tKhPeJ6Bj\+j8BmgIGBrAMDCxr2KMvMxgAQOyRZSmIEIgAICKl9BLYCwICoATQiBh3YLddWYAxliX2MkODgpeFokBEACIgAoFmyAxLEQABNpQF2K4sE\+s1e8iyAIswFBEud8AeRYpAQgBZOzVSEQAOOZ85nwrni52iKFAU3WkhIhARY\/AXMUYpy3rdViwsaWMBIEVEpCmjAWAUkXptxUZLWAARkaWIoESMGJCyPj9WPBaxAYiIhiIq\/2KMGGOURa\+teGAuiBqBkVuUDayJSGmgBJEygDUEq8HT9gtFREoRKdjYEBjAsmiIAMQjvuIRfNwfsQwgikgRoWIZKEARdT8BjN\/bM5YFKJpBBItgWURqaAgrWpalANUAB5ZF0SpEwIF1gpbgBUAjjdVYjdUZ0xWDxkBQFMYAZmoFliJSmC\/MBiJ1YRqgMIDgNL8COUGHnalApEDrYNCbmuJAYL8CKCIR0JUCDhXUBQCZDIxARCBiZCIGkNAoXCqGHYdNK4DgKs0AEXDmeqzYAITYQpxi\+dIQAMKwH\+BAndj\/bQ4bm\+PG5uhfc\+dfCkCmYiJAnXuWiu9WLIBmgABFgCJaBQAMdgAUxRABioBl4BsMABgIIlIEEAFqkQgEOnwDKAJIAYuQq5fttWfO51crvjENLwKUAkC0CoA3EBRvgB0oIlIEHMUtxClu4\/uEOMUJsW4yEOgFgABegCIiRXMTW2yxxYoVp1ix4hTbTQSQIoAIUHS2eZpOKyJFFK2kzhBERAAimM3hsWKAtvyWAQQaEQUAFgAYwAwmAmCdUx2At9cQEQAQAQADkts2giRZ\/\/91kkpVz\+49IiaAqgKoqEFFFVCc6VVODwC1AbWYB\/admvgwgIpt6AMEnDnNQUDAivRafB8COGJRzSdEcQNok\/pCAwejg7ShhpsbR\+wEAyF3xFN6\+wCSlwIlCi6DBv\/jPF\/lKL2nK\+rJkvsB1SFdFt6jE4Wgpj3zXbXiHt\+Jt4BUMLOmOjBcTBJSKQChT6OSXSbGcupIWxgyma0Oo\+D9vKYAUr8Wjt2v3ON45T2tanZ5Pow7vqkKvtDs\/Ruj5mdUpKoBXnHRw0VyQQXiYXRh27ZIciM97x\+RVFVdzS211CLLbbFsDRnkMTMzLzMzHvIe7RkzDc\/ILA\/YI9kyyyB5ZDGTm7GqEiL\+\/70mMyIyMtXb6j3zZNu2atuSZNU21hFmFolLCiT\/CaAwx6RIkFn1wtndQ23bqm3bthVTbWPh3oeZDJwjgI\+F418AM8Ncc7SaQxZsW1ErXYeoMWQzcy9o7Nd\/3rBtOyRJ27Z9P86IzKpsG6Wey7Zt27Zt27Zt27avsa22VcqMOM9jWTKO84zMXDqz5mdEwIJkt20DuRfmoNCmQDy4ffqRJMm1bdu2LBaG5MZ47ypsElKb3FXHm9pl2JtceHffoLeW4R45xkzSURtJkuScG8L\+lz\/GQNu2baj0\/3e7OqTRthJEF9bEGCIVoaA131vv3zHfwGwS0GoiAIDmoVQAuhJWp\/aQCAOUkDNxiO2jZoDAjokwJCijKKSAbKy5HFgDgau1x7viuFrQs1ryOQBt30NAWnm\+Ei2rrcEH8wGYLbSJgZeaUmom\+kCbS49aJTNnYd8aqoi14RNVfwgAMMa4AJuXLhCGwLEw0ChBAtpP81oglsbMLJ6aEIaS0MCInZNFiSiEfS7nsBubcVUCAAHLYUBTkoZ5IQRD7UNQCAAnTcQGpWnm\+h5DYGR9t0fATDRxApm0Lf\+MmUeREyfiiqgQCliCsOUJEOWxMBNubkffMqlJiyW5Jo\/4GjZYlDSlFiwSMeDSLlTOcAvWt64pg27mRktZ1glmrm8QxrTNt9FKm1cgk1outOXbOpQBgGLO9HjltKttexcNAQKsHr8FW5jxAMD6ijMDJZKgP\/BvqrFgOiGsspblSMsqVrCEFRmshlQr61JxMFTP\+aZr21w3gL6t2MBkS\/OhWVJSgJi4gICwsBoa0dSKHUZZj6nixznZIyfblgfAtNRD49JKKWADVRemmoiwchlUYfS\+isLqryWciyMKplhbCTRWSz4ZTiXtOsusSEw74hadFzUpEwACHeq5K000AJIw2QAAZnW2ta5JjBEAQrjCAECYXCPAuNDshKpQTYnMSYOR0\+uE\+m1PJ0xwFKaCeFKnENLFbg8XmBUzMOTHnOYKrkXAlrO5OgqU0rg0qLBv24l8NYHSDq7rZGpeKqdSTMyUWOqjC0NlK\/uDrTABogBxPRjp\+cC6F9fJJwMAYNK8eoCjqYoU6ipgMxZEOEKAELW4meQ72waq0gquVy1imAiLmOE81Unst52bAMxZMwMP8UO6PAAAjCeMaDkboClzfKJ2ZrA11cHUuBJQUKdNjYFTrLeS5wcyLKoSfE9q\+zawY1phdzAgfTPm2\/wyl\/N9ruMaTOSEJ1\/F7fXuK4l0JL\/vPmgfXjfrWD3Z3rYTWMJnCpeSMNXEgaFCFMxbEHCPzLIUwrE7i1qmVAsejTAUg94aU0cyZpK1hxnNzYmrPZkFUCa5ViRZ1FOiJCJQKaXESUbtjQ7br7jHuKETqUaMSYWJzXpoJ08\+m3Zl9u5aTr5lgUOc5NVcyU4yAMYa92SFAUhOhikLQ\/lDacgomiKP8Pxa5UkEAAKEgCKgenIeGGenXXXZqowsALW9s0Ii8rSSZaqEWlgrWeEQAU0KBnvc3Mbcznvo8goeAyAQcN7CoxA1IlNwv52mqwFhnGxg0UlYQnnYft2dEIEgA2oJyBIJCfr97tdS3H2AAGv3EZx7t8cCbHJSwsrrNWtLP7SYMClhxCvcl5ixjzzlAbuHCbfMDdWBAduma9yKkAZQG3Y3N\/Cg3aA9Y0DjANi66pHnn\+2eaDKmmvAdDJzuWrfr3Gt7n1ZvANxy2\+UGfsgjrPE2xnyJLVbITFteC9ZB4iwPqkw\+19pasdUL1WDP6vlZ5zkushtJaWjDo8l8seASOXUuABYQJuSphWoZc7yUtPJACmB7vDnmK1zBldzLpQAs\+J4l6u10wMJ8uZuhhM01Sx3TCQAtUh0oT9iXrbQoLFspQomRwhXJIL\/qfrmTWXZCs1Jl3wCA2o2K6wF7dsAJkxTI9IrOiJ9OIpAIhq7tXr4tLuLk\/CQj\+4W1iwAsc\+rbEcwvSj1s37OXz00dbaABDQDrQXuzE1uWjDna\+NNONiEBATQzlSf4MbtIJC6njwEAhACgKNq7TMTRZDRBKU\/r1LaDJ7iRXa0pZMQTcwp4HlFjkBlNxvN6asHTKxGmUtJoFSkYcERhgXFsO7d\+Eyf5Hl8jcYKCjhVKVCC7vEVDGmBOJM8bVqce5zEylhRdQgMOaBwBLhAuQSjh\+X0uRstqdpGAyg5A\/QusWptRFB1w8gEATcjz24QrO2mrNbBXXeyn3v1GIRcXaINNVhDVOlmcsLvm0W7gBo6TqxYxQgtA63FtalMTyLYNGLLLzQ3u5Rm67ONmBJQCzYKtDAAyx6tkOE9UZD97p1mdm2wdXOVmaqKkceIaNQagi1INiANbRoehOmYAUvqzo1cIE8k5jrBGQsJqDxBWK3HMDl6pWzqJZ9yh\/TxhnBqjwxi7I0dblo1E46J9o7JkHIdpAGBal8XJgAobaWEQGzcjWFvfqIYS2tzAc2gCIQdXLQ\+IAEBm620Lrdz24wAk1mzNBfEwHa7CgBmtQDWjoouwAUUmGnDm0GlzBbqF1ZgyCSZra9PI1AdcmkqisK27qwaQYXYDIw13cik9TDQkOTgIgHicSl3DuDQsFwxwaWYTwWCavvZpXmADZ8h1xhA2fkS1UAvArQWaFOOAYRiADC0gFxvjVLxnZDvcLlDRPbZUdLrbHM\+KQmQOcK6eWXcUC5arhHFDjSWZphZRbrDqrlgGQGSkTSeT0jJlFDcU9SlVg\/8YxwWdCgHGVRy0rCRHdRREvkGxPLjlShjhLNKTMYHamse0SggeoKEKipI3YYxTKxhMmDW3l2AAkS1nPLkoBq7odVdIiR2N05zxKKzCFuKJSKZd\/nNsGd0JZcpJyiqk9RnIUBjjmr5krLDCoILlLd1AYUIx8Pa8fYBNkkaAOdeKGCnTQMwPY8bNcRgI6qxIaqYhrpicvAVLKsedvCOYNslVgiGCSgpWgDFuAHkANHMzshtr4ojgiEC7My4HjFrmXTbX9MUwIiOHmFsMLSvdMQbI2PDVjLhkJhNLHoQBjZvFzJACeRjjNJBbDIisIyp9H8zaJLUd8YV6PFBTjwIFUASvQHHlh6G2jIwDjDObHeb2bBQD1xmZ8dO5dmK7PGwiZEppowzjVGJHQDjZaZloCGQQYmt7\+oFbRK5QIZ69bHeaQGUxntA6TeqZBMnE0ZFsHjctUuIEpzEps7mhIKl6LrJLkzkDUuyqMo4n5gnHODBd3AZrHQlWA8eStpExnRsShTBJ7cXWu0gENADJtZHTasPx9K3f4IJmylmzMAZjAIxoiFDJybC57tWHrch3VGpKLUoZkI50iDQlT\+04lYYYrSu4wJmC8hhWcwlgLcQztKh7HXmbj1Josgs2q6WLCN7pdF31qapK\+KSZKI12wiNNABzGEYELDtHa\/16G4zgAGCzlAFsk1eL6v00lUgdT\+5SMLjXDHamoiBsAMGUVKQGAkM4XwHRWLji24p1oiHGmnS4nMt1JzOrCd0LKTEqfjvqSlUQomN8Oj0bcdQMieBEBL5YqzeRj5bvsARcgRxUhmLluIeoz1jamReFHyXJeGllBpupad\+BYNtRlr3JYAERrnrgtQwp1TICB3qdv3MU8BdSZ9XR150Rt157TSQHjk\/Jxi4IG2aTk3BPRHB8SYICaORqUzyrEHMY5DEYKzMMKO\+IRk9GhQwYURIwxzRaQVuq\+A4vO11haIFMDGmA0HUlntzNczGklLoEFZkIKaCrWUy1HywGALhmLy4R7dm5ogcgakL9\/hMXEGAiHobqVh6ISKZhq3JdG04QunZ7IdnDIOSGr2gEJYpf28owz4gDwDAnJSAaEJfq63E7qqAxIRgTngA11lD3axtNOaXKMsCqjVGRivw3sKac0SzIw48t1uZ12TnAFJ7xfV0ECAkZAgPMit76O2G8RGRlCBDp06GIiDfXxTQvMLEt1JoFIC2mljokwMMy69q0hz3euMO1IW\/U9DZdTiSUNMRVb\+NVc41084z6rh3YuTTGnuSnbDeT4MgCTdYRdSXO20szpJBupU4EG6Vmk1HZwv\+dZDxghkoIZgEt4GT\/mrHOzmT\+yqEBSwABYYpWf52k9KbCmFNLN7innCa5gH\/eoIChJgIUJkSRk13q324\+YOCZgLCElSR1useed5\/QL9oj3vxBJmAwDwrNrePR9H2yGaeo\+gQ4mYdo3spjF55lImssFazrNrnWytK4Mi5Q6TLnchJeaxRBREbQTWFgS9\+1sq8OTOuO5vl1s4KahAAbsV\/dMlE8uEAKBke2wCU07G7NSPdsOEgkLQzIjLBBBQRGTCSJmurIAQEiZkpJZIIwEmaxkQUGlbJIlLKxq\+ssQpTAjTZGFkVBOIpHJjIFEJagUEsiG2y87Utkac1QFIDJaFZ6WNwprSBNEaJZ2QpsNEdN1Q5plSpxV7dNZdda49qoLgNSixlpYIme0y45rS8n22YD43HSjk0kFo2ukztkqEQO6dDVVyBk7LaNB1rJm8HolMS\+0T7z7hIJKEjg993tOSECgjbfC3K3vKcOASABAwEDW3rFdnmonrDRFRcp5xhnnsT3jqs9a0tiJA9sWgQRIL1CEGAHCJCZvP0mQrVzMTq4\+ECvgAx2pGtuDgaadjBfvT9sDmWvdzmqnGRB1YQAuI8uu\+\+Ze1cTJxkDGa7uX4PFYE7jf1QqumEc9Ix7VaDW8UFpbnfEqSuuF6jiIVP9RhdJN0lBdcoGBEEbk1RFcgEwRMAFhQPRoSWW70Srf6Ko1xdxYjV83RdWn0TFJmjjDVempILCwQbwlG8KQNqEeDTC6eukpKwOhsuTj60JECqDDdjuuyM\/Wz1YBgKm9opvMymdrSnir60ylFJtkoi38UdSQTNTCiOXChA92IbJooo\/Y0gbbGWEE8KnMQtvOa5Jx0kjSQyMLXxW\+wBBL9s6uSc8OAwiW5OTIkBGg0FLSSKQat9W3ljxyhbgsmf6qWUbnY0PzCWvufBorkEjk5FRLkA6FACgglnvCDEvGwrDFriIt2n0BqUru2wyFOY\+vEZETEAkf4AhoQUk974qGQUaLnlAEYqUtghkoRNGkkIoqxSsAUPK7QuMGp\/GFNCZR69cQkmif5Ay2Ri7rXDih74M3pKd2o2yXegZ452kenrOkgAO5rXcP\+9h3n7YLj1O6ZgwYALLao0xEvAAEmheZroVPKAqbTXtMRJNwGMI0DhNQhElowKVxaWEu0FBhqKWc9uzr3Onz1K4D0OMXPruYB59907enne29qR3HCjBQFcR5SUIaI9FjKhcgosVPEIlYuAMgiKh1qx\+Bh\/gN72RiMqVxQAqKZBYJMiC7dn2g8zvbg8kMTCCtkIQBSfaS9Wmnj2jySW3bY\+g7737UJwCkXDOv\/0zZuP32Fx3ykAuQFRgAM29cQWNBrXP3r7p7gTCBd7YrLClRnRRAUNGeccb8Q1\/m7qiCnti\+vFuStlAJAyKQLJtIiAF01by187vuk5aNy2RbTMa\/RaCm6gf6g97HnzmLsXPXurdJs4vhFOhOJx64MJlMY9wVy6vY52\+RCk3x2\/b97QkGfLQ1TOqxNaz3nv3ivw8\/d42zIlUvman0OWsACBjBkOo1nhQwFRBa\/88x52QrD78\/d3QnEO04Dz0ezEU88LZx29tl4GjSAidAZvs3WkWDMCALs9BmYz8CgVVKcRcUYi0qWvawL2b1RL80afe\+zkMZF8DkfPXNgPztvuL5uut5HQKnlIoWCUcqkzoAJF4tCIAGYGiB6yUqHk\/bJaXEmYwFLABlpbvyXKzq0CGRawPSwkYhddgsRSsC1QoP2l3tF0jaUVV4GTfj5hucVmo9p19gQFaQxXwKsBHIDS6cjjHMXR1ADIJ2ZmCsQ1wEdJYgqbNUTikHAESnZS3d4MJsIksqn0CkQEBj4oU5bmpbvAhDd944SXnm\/XmoKnazvK13D3n2PZ8AxRm1BikEoM2yCNQpnm0CSTBTh2auKoKVwgByNEQTgIo1jaoMZta4tIXMbzsi7P74VM84d86pve4A9PILXHwebN98\/\/b0zvZ7F9wklHpVo4tJlTzttD8L\+pXZ4Ghmi\/Lw\/HrvhKjM0lIDIw7oMzu\/135sYAIRlFnGR3YG\+VWbWFqhJQQktEISgYTmTXqLHIa0c\/OSvu38CABInWvO61E2br\+dw\+\+PsuAyP7t2\/yZSoeZZx56LmAzKUtnrmOwno4yGYgOxQp5FnAkjxtGIpvpEecJu34qkCUkIYMQ\+vV93tQcARhWRBQXerj5fsnJiy4gKBgmUWVRmCXilbl1msfaa7\+Ou1\+6NbCoVu1kKLCjHflZO31V\/eTKDh3MF8lLzUIIqmvuygRWP26Jv2m3Id1\/na8pkQ7l9wl7WEv9b2miOJQNkMg\/MUF2u9a7ANJQAsqqNjAU0jancAoxFKnc9A0fj0oALZKwpFbI1u4PWcXDVQ7pDE6OjXXceyoNclAeejW3vc51F572X3KLh3\/cbgYL2ckJTQ8bqI1xymzAvfTwzIR6SzUHbEQMA3QyEIMgyziFNyLl46zRWzYa2wLgfzRzvM4sOH6FT6J7XKnazr54B\+dt9xRe\+7rqXl0XHBZEBOH5QFdYUacPYprD0TolfZhIAYElO2\+9s9P9slEgEDKta3KClDeYjLd28BUicnXFNT2SUlburd2d2M5QYbO\+nGmIJnhhNtWgL\/oreuM5MLIiGAVpgWe69cBg2OgAyOjNcH5vjxqYBDE4r9D1\/dlEguRha2y2NM2\+Z76ZMFC2xZADgMIwPIGAKOKhFQNsDHRQA2SxaD94my7OEWtouFVUyG\/fF6Ziw1fo1jjITpHgknGneWvyzaN5c9GTzeloPqWo3W797\+PXsez7NBZLVG0xe6FrWBoJgtUyTeKxagqQYIJoA8aTUbtk\/dYgEkC1JA1MAFhFhicbZIRf8Gd05pzanaje76\/27P7abpXZgfF1LdBLrV9sGEtZD7dfdqd0sIWYWlLTcgoK9Q9fof7onlcjMgFaMCEoWFnmTbt75n93jZCRMQKQVss6fcr736xEomhN7Wd\/mRy4ApFTsZodeD0EbezBmsQp0ETRznhs9ApS26m\/lOBEkj5Iwj9ft3kLJshUrDKRARoQVonltvYTb3LNKFmRApKEy0qjgVeuaus1OT5aEkYJFMlb0QUE\/sb6he7sN477SWWauMcve6hQkFpIOPUR7tC0Kzm\/b1IgxRgOOWKGzddjPoIZBSk0IAAiNqzY2fta7AeAIxqUBICygGIKAEYbCABCmRcwjRbu\/oHpo5w6bjfuq2M323mWWIxtsOCdgdreLBNISu92AxcVFvdJlgGiNVrBFwXnLCQoQBL677lggwOT6RPea3US1F5YWKsZ5YGeoLte6q7uVgmj\+F7VWxxqohDHyMsk96yGr2s06d295\+7q76yIRCOraCivWYZdgkw0HAy1HGCQzICyQmUo3h0asp2ctJMwGEO1T4Rknt7HW3ZwVMlqhmYIt5WzITDivNTbNwTxbHoUxWQ7aDgLs4Vqtg4oyh5xici5qHSpUZGm2svpvZxWGLyclndE4LB8AsfLc1bvgBpBAIhO2xlXMRRX0db6\+AgDQRt94c\+\+rfSbNl3KWm9y5ZxMA4WKbHmcwEIZUCz9zo3uju6Enfez2XuTCgIwNxKbucDYVpsYDCAOrvKG7Ys95zjodIGLOWydSBJkDpxqfCbaisJEyAPCmgVRaDopwtQxljemMa1Xcc8RRKoEgVJIm9qxXwrlY0lGOTdskeLHtNNNC5nBGt3nOTruQD69sr\/IedyaI3ZbZgGy2Hs1sy4d99jnmSGedxCbnI2GuFVBed7eViGWGmtMUDqhxRqxuioQxkIGB7eTyBl36gNT6DWPaoMyVENXWsBAQkYyoYBmrSC9oKLMkLBAVGQNwfppFDYCGbjNcpLjG0Cwkgs91Qxla7NW8fRPLV5f8QsliWIEBHXpHE4nzna1nCe4iptAgDoyDISxtw8xSLYVAKFnMoZyMBdA6nJ\+20VJzbGQcdfBsXm8dO3pxbpmWz48DNzdCB\/AihiGM9ZxXxCm6x\/Li1\/mFGsiN2ZW2QzVdmDtRkdXQADCwWooMELBAgHhjTs0VrGcWN5eFJqVqXPrf7Ti6IEVRFAwwxeJoiSiY6x1cFEwGf4oEpZC0zvzfL219\+NEsonBQvefLjq\/9W\/68s\/lNiY\/0BYQBUWFEDWEoGdS8\/\/rghdnTCYpntPtk1COEVSw6tRuJy5HIQN1rg2gMYYyojxLpzirDjKheWOEAQG9Woln8sleS8xEV3Nwec\+7ec0aLGci7e294Kq7O9qLYaVWJ4cB3NLOLJskCsbItMfsCeGP7KP8DzVgBMtYDniFdXbdWYhpEbbTutxEAsF\/7a\+oSqt7a1Zl9wTZdqyfsqCkIU4xiEJgn27VadHQQevK3Y7ibb\+Ptp57nymgWEtd9O6egmBfN8ffmoD0rI5hUsjCxsi1FMCka5cD2O3vQ729HUlmH14Q8F6m7mpKlMCNiMZTonI5GJIywsKkolW6UjD4TJgjCVEorYPJkA2TB7XCtbGW2xginJkqLTEBHRqfcneA7L6LjNg8QtnmVtfmBkXGTZJxGjFpmn1NbEADGpa1p4Mg2\+gAsuB0\+cjfwzQGyg240PqBxIqdfyHayEeDDCIcBUkNAQ8acBcDFruMsfaZpV8azIUzZ4f10jauFhnjJGvoyWw68buA5rr4xAIHXcxUpDBCYzJf\+LjvvnvwAVAb3kyeFrjlsn5\/hBuy\+SN4cQvOC2rm1F\+I2s1hwBJ9soSqnMPAi1D557j6rVO42EnPsJbCfgM\+c7DTsTKADdC4MrlG13W9TYKcFGllkgcWMZWigYUKBDMY8Ry0YdMAz\/3DYhQ65vfhJyPaLuELOncWC9hRtyyrdJibRS9DLVffevY9iFiPr5srnrMedFzm1m4kthQmSuxkequrjRWJrjG383vN\/\/Tj7v9JawEyOlFVf97\/9X98riRfDYZsIAIpiEg0r3RKHITykDLPZqf46k1bPUAo6Gg0CgDcdUsyJR\/aI2ImQRcHQkGoaMKayiO6JFAKEeBHd2uMEY81ja5XoiES2KhHLsSrrhQK9tn4zDmzsshMbxE1\/e\/ItkGYB7zGRl3zTp22f\/gyAsHFmq3kFb2i0c9vOMDc97kwehsi48r7R98Vd3nEGzsq4I1XdzVm9FNFFxzYbpPYYZHFWZaGIXjQR2WCx\+7wINceMZ9OPC3XMf\/Z6YgPfmVQTsjBtzDmRMgDFipnZvIsNRkbQ9Bw\+8Txkda5JRGnIwi5N5R1fYvYcv8TCTgAzFy87TBqIMsRQdp53\+Ls4PSviXT4sspFiN3xxC9m8Ao4xFdn4qCMjIevmZ7LMGSoZk3nTpSQFiG8eOJ\/dnwhqH9liwcw9zwxwLoJ5xZkxYWYiJoSs7M2oQS8iHJngyHOAgoCC8R9APQWyANADQB9sCsQ0BlPKNGa\/xBzuT9eE0iOUr8Ypya0Xff8IOrkApWaFc4D3OaGFkyIToEAOaHane7r2z05RQEtmQCgrtpKuyCxxRZppROzkdvfNil\/9xxMoIsx6BGd8LIMhzdj85\+i8CCAik9Q5DCaxP29tmIzevetbA3nI6rbPT5zznIODG2R04vPbLnnW7oGOSeGNsxz6uraBEIo0awvmI2ZMTCv55c\+UA7Fbvnft9pdfOEC78fs37HvFWYPtKWdilB45u9cqhIb8qcz\+3I3AuTOOo3QEgjovBDQ4AF5YZgA8KorsOhOKyy4JFQgFUJ9ZhJgY6MLD0gjdtaaAKy\/yScweELwkidm4aQYAI7IJskXktRiW6wEMaotKAyD2eSArZvSrDr3J2qceZyG93FGfIhhuZWYDPeg1\/eHS0WXgLEAk7TGoMiwRdlKA2sQTs\/wboTGRtnw20HlyHwCMq8FQ7VgYkmnqF5IImrRMs4tPjF6gymihS5e5AW4sJiIGGKikJMzCcuuYlCgndsJGKps0ACmcLF1tkcayiqG1mILFsHRZ1hyYpSnGCFR7tYKtWo4xEDWaoShtDcdCyF6qU2ygjKc1qcRTYDREAzA7xChr5lQvAxtqQ2FqMcc4L0haKOYpQwKRM4ISM30\/wQYZKgzMihkjjvEDLuVGwJxxJgob0CLHnBE9dt86OPA2TIjp3qWP7YOYBMCEUienFNlj28yA0jMQZ\/kqO3mIMwjRdzEA89zKaoeJZxUr2\+ARLGQcmNfhvaDHMXRpGIA4sTZJQ7ZtfRwrEBCn\+TaJp9lLHwOZBFAjRS7ZPat97Zm1IxQIqqk9xbYxb7RR177kaU\/JBcHppdJ2ttKQdRuMA9oAniHjUkbsQFTvtWIEnCZJZQA0mmZh4esIQkOcU7OUigg\+1oOesV70NwUBKCg5tcrStitrZrQlDFxBIrGDX\+F\+AKIswPpQK9bfTjGZKxobFGUv3egWO7jmojEviLkE7TCgJZEBAGke6mKYS2QyTd4xc8JILIJrliVhADxOIQNdy8chSROZbbyFN\/Am\/gI3ADAGCEMutSNzXFvr0pabC95icRGZYa4FZe4wLAwFY5hUAkwY0qMDRIbCDGipVkzAeAqI8BBGMSDQigVgwmRgBhfMYlMM1IEM9OgCiSGmQtJzpghbwgxIHnAF0MAyoNDYmFTaiDBgBTMVzCTRt5rPRJIMKkDWFIjlCuNiFBgwI4UkoUkJ45gpqaviTZMzkARD4rhMwFi5VgAzVBrXFIqVZwCYIWk14spqnBUPigHLisIsAjREVE1nZDgRI2CVg\+TAhLFmKOTSeFOmQG\/lbSDvDhWbhsOZuY8xv7nnaUnegoGFPJfnYz77\/P6e7zuSEZDNu7svd382\/7NvTo5MSgBowAjs1vZG74Z\+fc\/PJNgEZiHM0jigMUwFyMBe\+2TvdvuW544dqJBcwid6VvlDvr2LjAQGNMj2S\+1t3oluW4\/0BGwINAZkCIzGCMDMFfbRbt9\+f6fiMwwgkAAIGBMwxsmWMRrz8u57vIX\+mDQMBohBDCAw2irehNz5YOda52l\+YxuiAQRYjw\/3cbXzmP32PiawZlAr83HvZe0BfW7flDCWVgIXIIAlzfyRgEDgA95f7IYgkI8GSMUOioGIOqtyAIyBsc46IGMAGBAMuMQ7WwEQImQCS7GVV1UkIbAnA7BEGEiEoNGMktiRHRskQbCk42DHnNs9Z4bkU0TjZJOAYNYpErntpW9WIgCJzFKZKUkgpgIUSEDBWZl122kiaUoiTWaLpJ17tjtiBgWQLTi9UgvazSqOx9EEEmAyS5oxBosKNuyMLLEjO3ZnPosSkFMCpmOxEp1VxjB5eWJlm2tjYoLtZhUsKjRWxX9JBire9IijQFf7KpcnkZHkMEeBvva2ICYlmyQs6UjBgD0tm2kgxLjCYXKwUjN\/lJB8xC93r3NDoMmSJ2LqzwCulOu0zq6hxgzntM4uo2Hq0Z9tOW8JADb5OtzhNOPUk6IwYECAMLUxeCDqGMByGp\/iooGgjmpAApBMnbaGZeAv99nIaCCY1YDZCA\/CNJIiDGEzH0DNm8LILDA1hDq1kFnCQDNujbMeUCHA4G26mDxM\/aE6idACrKgwF\/tPRDedS9YmjlonHvKCXGTsNXoK4XymIMzsop0NwNW5ZEwOBMA1X1hLuXKcJ76o87ySC7C2FZAtIMWeJh3BsSaEJa08C7DKPPmVeWkmXyysUM\/VzRfQqEFamj7d7J\+F8BeBXdxTZvnZtPVLfcc2rws3zDnbJEPYnvGbgglMg0rNuMI202uZPH0AEiOqCnVXXQMoGTPTiFMJTZ4eADChBJKCsdxAQJJspjxjAvXIVMWZQViYFQw8ioUxCiRl1iNQpdY2U8I9lGymcidpAwV65ABMNDFGMVDDscIGnXQFEBkBMw4BRkNETaHWRhhlXiBom4VVZn0CACPiuAwIbY1mAdEnkOohxe5YM2ST9EUhKyMAQGx1Y\+\/9Zcyv7HlUUiQzSKrqwDVVeN3\+lPdAg7s8X9kxKRAmAVfan\+xzhchv77lHUkKIRMDstT\/d5y7g0HzOc6ZTbiNWM2EysAJsQRixxjDMCvAG\/VLHOjSfc890yhmxmskqWWVIKdkqBQWrjCiAVSJj1nl37\/VWctueKjUIUXGJhEkABGy32Id7Mzb1v\/c8JQjMPCdqz\+y9v\/1pzzqJz9v3NykhiUQwVAEFMBmOZwZVDYQ\/2dcVIr\+9j1ogYEkZ7\+q\+1gvP6H\/tYwMwUOUIGDPDE\+\/qfa0ba2ZTi\+gxmNgqykuGBgCKV7M1L\/g9z3MSBZ0NZjprZ8qwWXk8MZ0tyrbGO7t7DX7ifHdBWZBPEXHJ9o7ePpE7dx7phCkqW0q5cmC7vat3HXhedzlRY0pWZ9jiclaJMwpAZitrM7n1lNkrnSsFz3OXzXCGUIPZjKVZZYQZsEUqWGWylbXTdmJgj12RsBWVjVKOTGQqkm2BQjKUU0Cgs6U6aG\/0BkZ8Zc\/PynSmDORTwQErB9uVd3lWMXfZ\/YQpKptAodxQCYRkU0gYpzMmAgLLNeMTl8w7\+uwTuXPPIxWmyNQbOVipPK\/x3mRwRF\/xjPBEIGPGUQ07yDd4tXtTi3k4sU2mPBjtSX2iAZirTwurQYsWAHVtufE7JANV7bhR062wzVeoq4rxfJw6qmlS5Rt1\/zpHswItWgQCVD1lVU3ulfMa9O75D1b7p3kgFw1MvN3wKCbR\/j\+rmmMBAGepJq\+zTht8XIAaQv5fX2HQdmepleurZpLN4V4DINpiteYVjRBiPo8B0Zp2Gb5YPIgMgHgB9G4hnEbrmMcJUxl2PedBlZPaJUZhfdGcS4c38rtBNOm6IFCfTJER4EW0pQrWJyMyIimMY0BoUup8mqzTxxqRNpcJGGjqWLaCWSa3PmJMOS4z1d5BxmQ1MBhSCBIBzEiyPh3KGSaNCjoMLLGlBGasAHiIQB4VeFNhBkSfLjUtH1zBqv3aFRsAdNLFjEjjqhgEQNZV18xQ3hxGae6wNiBpZZ0\+Fd07AF2nw5R\+6Xq35gTHOmEDlTciSwoYRgnss5zDU\+AygYQCHkQgkKQGHiVn\/5Zl6Q2VFEaWVSbJ0UBpI78bRKOuGzCvq7d7vrD7PWb6b0S82n2f9ys9d\+2YgKnptlU\+a6f\+TB\+b879tZJYJMqbSf9zgUp9P9bmX\/\+7j2IjEDBNg1f6kd5Bf3znTKbYtraWYgm0G17f3uL\+\/7u7ZYm3Latf2yd7n1pc8kaHGBivCtgS9dGeDAWKz1ihnBPTtGvto7w\+c2\/dUtXwI1FwyZqaH\/1mfz\+nX9jGh2jmtgSvtT\/t8uPPbe0qaPGpMFc7aqT\/TM9H\/3DYAE5Ryg\/NJ53vb7R5T07tzSblv575FabQZQdLKLAmCBb23d6f9ho\+twaxATAAlgEghkd\/aByR\+a896tiQMZNOEB\/YM\+aP3mSojb6nf2\+\+GzJp0XcjNvNx5Zd1l9xNWkWypisly4\+5ru9917t2J5JgIZKiVKwer8a3x7s5Qv2sTPDGdiTKV\/uOaS7HSDOyt3R32JR9nBkryeCIgnNXtHd0etztnp2SsgZWUNRhy7e4vd7\/j3OuMp0\/Iru1d7ej8oadkYgXQEzYGOsoZ0oOMZ2CRibBOXW2BbVzhwuUGV1oRYDrM9GuN05lICjPVw9\/jPao\/8MRtpkwbNqRcsr2z\+yx37CSiTEOHNWPl8URBzjQMCt1uIzyRDqmu1FudnzK1FVT07iB4bnRvbAZzITFdeUAJsy\+5HXLKrbISCUBk9jWJQM6KmWXHfcae7kTfsneZ6SKgrf1uuPd1BUimrncHjDAGYXXdFhr6m9ur2dCgRgtjEvWwBogAQEC0vNQ4INrp5s3eq1C0hwOo9UE39JsHwQkc7GKNrbeHsLfCEIYsuGIPa\/Y2DGUx\+UMBEBoY2Zzpy2gTkLRAv6Rj3PICHBKz\/EQiwfmmRaVHuSkjcpggTQCT\+TFTs7gvyQZnLAtSyzpNaqf3SgsqywZALEujxqx2zC316xZ0C3c5vzDDRgDOgR0G4MVssIF511bAwHVIuDo\+OgcKCiApALm6mDEJC6vkBNSlIzMijVLvWxaiR6Bkwqx7ud7IQj3LiIyFGSTzKNUO6TocGAFJ1a5oVoWbydJDTCgAYZBshiRDMtFTsIKCKhx0yUmMMU0NN1HvyvZSa0JCsqCeVdEBhGngM6hD186JBcgCy8y8TWy0dZfmTc2YX9l9BAiq9\/0yVZdudD\/RPcVnd0\+mnKHWkC7Xh3rvW3d4ElvFNmCTVAx0O9frfc537Nu2OaskRqxmMiWrDKFWNvHW7jXuZ\/c8qpJVhjWlytW1TZxsVjG3uq90v9x5aLk2tx4Zm6yS2CoNFqjBfdbzzEq1OSvmGs6aNXRFrzEisicf9Yrb9hwm0GeTDh02tGKwBeqmPznv63MHt\+05WeUMtWYFk1rbXC933\+q9w\/nxjqn6ZYUtYjSrrd6VPcnaOA1IffJs2z7mHeZz\+ziSnN5U4EL6sxErMOsS3ajOHOx\+0Ntl2VmUBJvOihFtkNxYjcOsi\+ANb845dWt8Kfg9e2ZMR\/W\+X5RTIjIrFHiJ\+5Z2nK9PkQnFrJTWlXpl9yfO\/RKbyq2rTViYa6Br9fPO9\+yRGbNKQVGr2xBqsG3SoZtct3p32td2jggGbFZuXW1ufQKbgQ59wvxC7\+V2h\+eYbJtaMTOaVQomuCDfBlThvurZmMhWrVJSbPWu6MlEVtiqMPvsDd2z\+sbOGTrpzEYN0GzVKnFGxQzI0\+f1buLOPVOfTuEGQTftvb590\/MssLkqfunPRhhldYaQwWy2Slf2oKGbdmdIm9MnsFmrE9hpr\+8eX990zqRv2arA9SbL1kBOn0066axNejnovtINwJKnrRlxHEzkZ40hI2GAsNmaALBohKGhgfW0QcGTTSpE8U\/\+1b5gdHxsWsJxPRUJUM3VoEWBRACbTPIm08RIBk0cwkXgRso4ixzDpZPL6fRxdW0MgwRfCl9D4Nbs1yLRghIVUdSScaSI7zBP5SjC\/JRHuYEnOIIw1TVUfGI0ziUc0E9tkyuIv88P\+an2VSYAkMIiYUflx4mXTIEDr6iMwTaugunKiKm7rpnILG2kOx1GlKloQTVNRRQa9L4ttEV64ZuyRCthelxLD3NhMPdSjQYNgRb9VQxBl4tNPg1o7aUgxLAOZB9euS63XBcOynf7QdeuRe5d\+yIDIiTuBpoLH6MZuM5lOw6ZMSmnFmDDFl7iyiCNn4WNouIX4K8AEpx3csnaSMslUNoUCcOSc0esJuN85wFuJSJ5ATaF\/WvoFhxYpwB7BugzPWHaPeuNDwMg2niMaJvHRjQLCWqk1sF2lmTXPFka6\/ffxomjGl7OwwiowMDqXNZCsQBb3aRulUBii5ImGK342IWZ8xYsW0Y\/rwpKqwujEdUWiUTllGCZ03mf0mcleNPO\+NN3jAXCEBDObI8Bjiac3ky9lwhAny5YKNROnw3oApNP38bXAx6lSuFAJx2gmJIZB6OYKi8RRgFDgFEcEPHEL5ye9YExYxCttezDgi9rJHRM3JFC3\/wZPSEB0jUvWP2abZ\/4u3ihdxqyP8l7\+Cr\/lQl1mIiPT3rAz79eOlRgY8\+\/\/fe\+jwBxz7jHz7\+uFdUMNaKqToNTFX3wE0\/\+6KKR4alT1Zj3VvvuH\/74\+7\/7E\/AiIkX4hDGgpKNxQIEVe6\/t\/s4\/\/Lv1DSAj8Uv8bfa8Zz8CAQOv4m\+1M\/\/69S\/\+\/K\/O\/t8vyowAIxgg6TCXtHEiX\+gcK1HnSJnxikQAUojGCRjwW\/f\/7Bz7iZfwT8n5NzyE2LV2\/wdJCx7UgOHSWLDHgGGwx\+7f\/ZMFkJfICnGdTFpP3PyjM6QL0MlRNN7BrdzNFxlTh4n4cJ\/b\/\+O3hiqU4w\+70Z\/\+xJKOD7rFP36LimqGakrVXMuGD7ne4d4XfK\/oApSqDe8R895s9\/3pjx744x\+S\+HpkIRHCZEnAzCWfbJTe3Nq2f\+Nfb1v3EOmSuI6PcejrR1EQChnX87G29d9f\+uav\/3L44QeXX8LhxaOHB5SIsjuBcPbkEoM0IZAmHI8JiQADIUo5OT4RMfOAE948\/tOd\/v65tP4kGf\+HZ6Fda7d7MMd5t0lZZGgsgkREIoE9CkU64UClKmyyQGYQCdEEQwURwSiReo0V1AJYqjSQRdEEr8xiXKBxAIRPxSUgGkIYkTCi5kubIwwYwjCubKKXR5jk6gF\+n0MUBoCB7EQvySZ69RDp\/VZ5HeHDQMUD2rVDglkgEvFam6\/CWggpscXuJCI31iBBbIm0o0eHzhODDolNTPfArRrWBESN4xyqgwkTG\/aduwI7ullkj0uc7mt6flq6aCf7\/B3O\+brjqmj42zRRhNOYSizSA1pyP0KG4khTz0\+gZu2gDSDdO\/rav8bnc\+mi6X74pfP13adP6uS42FQJAAhjXGGSVGDCwA5tz7HZKEgEDAhvCHNVVJuwxHANGrPElWGg5onJ3IK2MNHsxwxKzxufT03dD75Ag2A\+RBsQJz7\/j6HWl52xR4i\+YQBo\/1I\/PRFmSaT7dJ8jqzQ\/mFAeCESCICWbpFucN\+hz7hOOSIR4IFgUAWZ2vUxUIOOD3jCJpb2vGfOAhrzHZ\/q4aZ4EM3dPNkNSyO8mozjbht9xjJyxSpAmcsbBkiSRJEGeFWCrSoEJWAYk6KofZ6uiwAkYSsyomkC8XN0GAEMmICDhjD3XHNd5H3vWHEvH5lHQ71qsou1UcA77IiGyjIsdmGi9Je3F6GVJki3lLc7HuIntRrvRtVyYAGALmq4S6oAn4NrBDo5qk5l\/GSUBAAEPKIkw0j5LWdoKQ5FDTHiHd9HCtpvLFa\/jqN8tjOJsFxDHxxW99d1y57YPfeUjKUoKRAXB9vZ3b86\/3XNGkMhIMhBk9j\/\+\/u5z9R86IzlORioIRAWoNEFmf2YgPmZKtfe5\/\+DtS6iT\/GuewsTysTOqEnTT64\+\+fxbWM73a60\/9fDI2DxUjlr9qxbv2I6SCcwg9KPkLrvuOK4wHjWfd8t3nUwIMcMwdVr7yeg9gHtnZdkYmEoGGSHYBgDFhqKaHcGCrX4u4RFeQQJiE9V0oSRqLfiuAtN8tLgqjG1X4DW34hKnora\+RZk8OPkmFgjKKlV1hW6lP3HX9ujNc6YovnUTNkHadT9oxfVZFJyZVJ6VEVsXKCJpC78oMJCVWJ\+Vi2\/nohsm5ksOgoLg4eDdB97onz32zHXnGiSdf8LNkbF6yYmw\+ofXVoyhSwTkyFnDOPXzmq11HuozNB1\/3a1eoieC7HiS4Vzz2pAc7PBdjltFfxcwcWHZ9g20wT3McpUKjcDipnavprRZ60xdKFzBAGS2iVbE5YxQDzgxC42tmgK7sgZEaQWSdTz8ktvFXqXCzzh9CEwG\+xLF5XcQPrQnOYQiMA5qYBghgDJxySfccjlxIEXJcLuuyid1kDWV3I117p\/D\+Xf7px\/j209JJ8eQff0QAYqR\/ks5FhO2csz5Iw54\+2QO0Dwef7izdIe3jPPxwpBP4Uk1mTfGw8TFIwnkll5gT8ZWOYw5o7ykhxNEdxHQPUCLnNAWFrAXxCVt6YgppbjzhtS8m6dBmei3L\/i9F9xP70KSM9UfAHN8iCQCoqCHVmNdq5D1f0YDLndBUh6El5AnO0NSUFSTi5GXVymJpp4lh\/mZ48JAc1C7qlB2ZoO0EDv3jt\+92PMQEpQMXofQvrBTlCCSzmAyOEQUwu1e\/Cl4qk9\+7NmYqKWQwYpWXuqzS\/F1N4iiJenEq6bRSoPS49gNJwExJ1wGp1pIa\/UePVBF3Auc\+TgZVHdad6iUOBl67vvmvbaMb3XjjExyt6NmLma5RHFegNXbZAZakeMBh89Se7aVDcEGdNyzq4DNdc\/XF7R1haypcuUAGgXcwqSluWbN\/H0x6J0pZbdh4ZLfaF4KPqUhvEhY6NpXvOAaRrSv3HUAFFsiIqjHVGtLbUEwlzhe\/x\/QC0gqYeSFGXJJoASmnbQsHFLqm88zzJADmcn\+nD73zx4yShtGL9RMq4epf\+t\+HC6cbPnj4dbPGgljTRz37HX\+SpOnt3\/r579NaRJXCHH\/rzMt2kvqUx7\/x3xWss4mrqp\/mL32IH8KKRQmg8aZq2HwD6YKJqdWIwLnES3CwSC0YMxtla\/\/q8pSW\/fp3\+8\/JPX4vhQfuO3kx5\/I7dP45V\+WlWMTqzOte75TL2aEiR5Vr6riZW553nsmIERFVIo3lW7dd8ffDmuOG1\/jfDlZgBTNDpcXYLaaH86xr\/hWqBGIAc2czR1KZCrXLtQ4ihpJZ39ulIbywRzhvB\+oA6WGLQNgDSB9UQV0MOyo\+IY0NMnsBehk0AD6FJjPHW5VBWmQNoofmdUtAc\/oWOBdsba42TbA\+AxSzoNMoY9cd9Jy45hZ4wc9t37gO5HK1\+4jnfXsRcOzUAiskDwDUlUMzt4ITzQxzeY2oDKwAMeejFoiG1CAWzuQI0uhhbZvz45izWrEeZ4gCyGydMVtqlHxbz5Ch6tKfVc6k0JzlfVZzdgoREOtENmjQphE4Yp3EBmyuvtaoxn1TVi\+8O16YqASHF0FzAQTuWV9wXp2fd\/\/XzhkyYm2zP\+39kfPtVf0axSuQEDs5qa87P1y1C2EjN7X3eP\/PnucFouF0C7vW3tv9lT3PKWC6fKZ7nC\/uGCMMgMqjeEDk7ZPuab6wY\+Am\+2jvonUNs7QExb4PssCE1YwLm\+rKlRKlTSmFVqrOIABAurTJDnVKjTBT3ElgjVpKkw3veN\+IcEM7oh1ss095x2TE9Lb92dBJkkDjiKRAIptY2da1HfZ675\/z\/pm9ovLXLkjssN05pNFEQpKCeYQBik2kCrbGHjukTWUTqzP7U84RJUwghqGyLSazKCYks4spOYwnsC17bWnjLLEe6smZbu05u0uB9Su\+f4GdN6O6AOG9bv2js6xc9653\+vkpjHAMCDwoY49Z9409ke72Fg\/4618QGKl7px5\/5Q87qhJhyu3v9dt\/wwJb7a8ikgDHqHe569DuRAhZXbbxUjPmygAAJJd7m7Mw\+8azh5e2hrRnwkbNKdcdL0XLpXG8iECAoYYUkiSrWH2X0PQaRBkAGmC5bQfQRvt950pBuhLIvGb6iId84DQpMpTywMd\/7N9icOBKMSxwkr908u37UObB5\+F2L\/zGLyVCyjD5prM\/5bvoJV3hpJB7PPOzf7ZUFtOr2payUiLPnjS0B2Pb2Eag3q42tVLMSm\/\/Pf7q32FNon3jPvX6MInluL60ro\+N0IG02NEAO\+8dIGhl7Ta8ILjxvCKIZi9pJjBB4TKZL42s3aHZLBYQIQmzVpjToC4\+GG90FmOq6EAQIi8iz4bWZIUeDQxjNqhEeod1Nt7\+\+8jX\/s7RBgCuyl\/MJn\/\/OMrWDLKgrr2c5tYY6rEnkN\/FHoZE9l1sxDRjL0RpqkEMv8N7dT1JBO5xvrgMJTzkwPZnen\+v\+6v3BZJEZYR3iJds5z52v76\/yxHmnBLJRaUYCth5MTU3uH\+mGwmbKpFNP\/s5\/vY\/T37lHxKxwihpZUQgS1xZy1\/f\/pl\+2rMPs5Tt\/\/\/5UUQ0PeWgwcsCAMby8yV\+8T8xjQMalxY4Gpd28g\+\/stPMQssypGClrCQWG8EUh\/YnZGcBMInmPByKREoR\+JJvVGq0wCZaFmu\/yUENbGAYq6Qk4wW0eUuWFsK\/\+YK3igWTKOyBXqK9AmVa\/ENoWgMUNCUGSpSdxeqeJISwXgGU5KuVAI2OE4VrvJRF047x75t1lYGI2pWmn2shTh\+eZOcFje85GFwABKu3zm\/vMBbrNKdl\+zy8w9rNuusoImWPBNM9RFVkYsXeA7HCxE2NR3A0Op\/WdLm9rZrgC041VgFlW1fr60GgLVTLoVn\/L5vFO0JVEBOdjosNxPuC84Lca0\+jCYnDdT\/4p4\+UCbFO692rXn6AQcJN37P\/1busFkghHoBho7zi9q88PwrK2XzbxCstHAzg1T783w8UqjV8DLT4z3\+MfyWGNAgIAdoAlpaKsPV9HWGb\/z0mKSEXJmFAgOS\+lP\/ZGUypNjbcftfJ7YRYp3H7xj9mUTR0y22O\/yMuDBfXMXtXgd1m\+d8OdxG7EDlbt9e\/t1M13zpxq8vOQMEs4jskWVIddKvR8rujULXRex477\+Fi0laL\/FsDMJ9qzuF2NeKf1BIgveDUinzqKHsWGAWt3XYKOlqaX\+oWSC7WkpmZ8sA9mclBPc3GkEUbaWTVekvhXOKONF\+kinrgRzQI3WjLXQKMxmUAaj83TFhEImAYAF8aSgWG8ZmXxgCDLA4AwJj1MK4HTk7vh0vFcTaVr5DQDv\/9D\+72zx5idHkAgAg7Sl\+\/qCP1UMDS8VJUN661\+sFWYFQOCyr\/\+GOyso348P1yEFufdWMMNXsOp\/Xc0zYedA6x3azsef\/Iv3opKYEUAJCUVIGubspxPTm\+TFBKGOpgVvVHRFKC0mEAAlMs0Tflniz17NNUAVNq6Yy\+k4sudLnBvbnlJO36xj\/Uq3cfCZzqHlAMUAwQprm2dclhyXXGumNN00LasZ1jqsy1jL8aic\/C7XlDTwxUcqk6enlsbFyLPA\+Nr6ZoxpaVnEjMiACgIXGOoNs7OC9MesY0UB235bOM7OozLxVippYV6KIhaJvZJMztelKUxmHZ5hT9C91Vjd0WlyQ6rtgDgSHMd5LFHNU5Ac30WsagLUeXcpZu2FhhgONq0xonkPHAHWNDzquoKu\/mtIs7bE7xgF4QQ5WU06FS3kh5tJEhzSF\+KVODyOCuEaKlJXzylX\+OX\/j\/xhIifP6x\+3\+\/3nRb9eVuuBprETQy2oymC\+n8ErbLxwfZajdgEkxASWOaJCDb\/MZfT77431pNQ\/c6n36h6bEcpWAJA5BhElWKoISZk5prGJUenbmlD\+Yohggg0tDwlV5V\+IxxgR\+tr3kSN7kn9Ds7pyVDlYaYS5v1GvfnvP\/uC\/\/\/aK8EwhIWgMyy3biPgrs8Px4B4Ggcc7W9xfs5z\+GldOeDvYfW1zvaXBqXudp5i\/M598hGaVwMCBdoc5nrdl\/bbts5AcWALPAO9\/qWaKPyoUYMbfgvUMYO6nWIZl\/uV5rL28DuWVuKZEzXAZPIEFe3A3bnl\/7l0PMlOokcQzGRDBErs8vev8u43L3FEkBMmJjM9nGN\+5OdE2TpzCu6Z\/SwElaYWBn7dI3zE06TJlQaA6EYl7AF9nO1e4\+zQRQbZGTc4O6LWfBOLMRnac\/LPq0i5lJ7\+164fksJNJJ4bOVX\/znd\/zXaXcLr\+8DL7K3dOmNSMAGWDQJYJa4TQaI59SQCsgpAkml6jaFFgqV0bO9GJCZWNbcuoIWhJOwcuFuquH\/hFumivo8mnVctDAPdrQsxaQGAK2yBRKqGwhgBJgUSNpjfaguSTfdFEGA5hCHMHWDL6g4qayqBH\+lrHgzAXMY7u7evZ0UxhCUDSwaOJumAvat7u\/PsCubS5rAAaMIRSRfZ\+3u\/uvO48nq39xp7MP2oMwYey1imBATOibJjvRHP1f07RkkrY1eut5\/q5EQMxYRoIgGRCInbXrvBfto5OlnSBEwCQCeQCCduO3OzPaRD0\+Fmd08ETKJiOZJFOpL1F4QBtviBy5P6AKFUUlkiQOZkYo8iKhyNrr3gAxJFsUSZhKt8FQ27ocJOqqLKqt3VaudKg7G9qQPDzObbIzguxBJYP9kAnJsHEoUEaZVypMshOYjUQW4JRvW8PJHKKBiSnTwVnyTipDAEGBLIqZSbpiTBRjUGh5Kd6mDqmDgGyJzsEiZL4Dza80y8SDakfRy7XhB7FVNnToN0Fhkvgt2yjBNcXsdKfHHrK\/6dMQVOjafzxgiAyOglpsaUp08AIDHaym0uttKncwCgmBFt6qps\+mScvx\+ZZWmPlIYF5o6kRUTtLNJgGfCwhADYICDaPh7iFyDG\+AooMoxQar6apKQDmK1HJFDrbi\+ZBABGmUQR8ySd0YknG4hnK06YFhLP6Bjl9VwLYJxrLA2uAHBHSzyWXRNQSK7CJ\+oJH\/xVyNS\+ygqm333Zn\/9g87nFObaeIUUTEk9AOcCeWwlAzNYZzWManmxSFEjZMVdZGaOYzUfi2TqCIwLxZCQcABGIySbkKlsnAhAZZyOPa3KySdExZsqSERPCSzoiMDhX2wJ\/GMmR9\+NFYf40Oic87c6rt\+\/\/62Kqa37U6ht\/YOplpV\+695\+\/sXmLuV8\/lqPRSQkDtzThAJQZ5mTu2NkixBBNyr68fhcAYPPE8\/16VEQoKQGPD2hAJxHI5lY7YA6AM8mh\+oYmCfEojiOURCARxmGIWM\+buuCcR8d9SbWt7G3\/TvdWLDAzl4DLkjSbcWk6VlamEMS5TRidlDgOKIaILCYfgJStExMnhcxOzMiSjQAxPEUSZWYUigGACl4OkwGQMSSdEo9iCFSZCExFyVEC51XrCgvg6c\+9c3IK4eWgxAoAJNCG5wjI1JxrMzwN6SxPJwBQMDr10AzpQoDEDE9ifoHaSf4CkL\+MzuS0CTGl93KeFOyCAbYKV4YpnkWWnOkd\/f65JAEsjzlDQAZdRlNQnqrk00mlVVamnHSqS\/clpNJOmDzmzSInRwAQp6TEmSth8pNzHn9aIQLJ9dneNHmG4iyStFZpJlndIQW\+AxRSgsJeIzGUe5SEagLAzib\+nb3sLk\+7VEwkDGLVnZgqeTkSJHwxQGr1o2QOy\+a8oONaSSxuQdq3eqJXGNBfDEG0TuykMiUAkq8kOQbM5DulsTDBUWEDFAjLjjSLWAcDixFIhzVvhADEKQBrO0wdMnNdE5kjkM7vLwmXAhQIm7i\+IvKuB0gRHBUiQZwPADZ2\+xZSpwffQHLVHRsiwRwFIQmVLYtQCdEhIKe4SrAZhZWy6KRrX1A\/mndDeFyPxgDkKF5KqA4DDLkmBjtAjJBFhxogU2oowmlU52RIB5VHiUB70PHEguFUjIb5SkwIQL4PLx3Uz1qKImCvDYrQjEtmacMLkRtRaYyqHdpTi4GxiyxFo2lmAAhZzZYWkLU\/2MrEEAByVgqG7AuMeZP6fCCEwF0bbu2yA3j3UtfUADDHREgAGG9kKkyx1MelxkqMU\+NY7O9pmOjFK0fnyMiAdYF0tHZEQxas7V1LO\+LMlTnZmjI\/m3Vbww2QpkFozX\/3UayWUkizqYkicTR7S\/ZsvmtfaicQF1S\/t8aQujAALbRsl1je4pp7VDMn2sXz\/FCdXD\+dBmnGMsEsowZeapoUoTHghIHZFxCN6CEyI84IIt\/qHuBqHs8F0y\+mMYQNwKUNNa4aETBEmHoB3\+JhO5gW\/02nLtFUgsxkyDCkeXVCe7ZNVtMlzNP6PSdaEJYIgmTTPUktLZmZfkFAK0bI1vRe7zZCHQDpeH7PfTbbd0YMhwBokObF3E4ykQnWoVRkfjrqmgAoiJJ1J6VQ7VE2BIBLpukkAJGSyk8ChOQUeOqSJauCpNlRkRcpxzW3FcVklW8AULa45vxFnssW1TCGvTNAxnM4p5ZCmleP0eU6Oi3MM7ljJ0oGVn0PAKD6BdaavdNdjfB7jNoAIOg\+O2pbHLVDtlFaoAHyYl4gbPGIUzDgpe6znKSW4bFapdnhoLtiJvKos0HGS91NPesANkOROnuT42hzZXaVbdtcR\/iZKtG5zqXtSQ0HCOOaxeBF2fP0\+KdtCYRLUAcq8HSxTZ2u3FmrVmfAXrtkA4DncgxUq0AQBl2uskM6JaWS9liwrV1BQHMa69iMpgCapgRatzUYSClhyRyWDBxNda\/yBdUxzoIWOqWntq\+1dS6pde1eRoOQVrrMi\/ecGJLIGDCmwBJW1YyBhCWMCAwIgDWyErEyMSMZDMkMKkwOTeOETRmQAcWMcQAYkdNjZGWHbSoyBqiedTQkYilTgH6kEcYlHMmAMMJhhIuN0talCwCMU8wMlrBRbJQRgcE2YRJpKo5wRE5\/gGwxJnI4J9KctYPcGACokWicuR9borU1zCm7UpvzcmUGAISY8REv6v9EVtP2f2BKNPz2tYgWVx4NhmwUMEBaHXYkqLzhtPCAq\/bMqjRowGXmHGYAnM1ZnZwF7jpJYxEMzf8rvMcyxPU7v9TZRyoAotFSZ8gYABDnEvFODDWofNfmjjZLhmqNN6yuhi1Ry3YA5rX1GxViso1sGjtN\/L\/1sa8grdY9JmFmNMhhUpJ1rGNhnM6BmTaJWQDCXkHvDkOA5QIerqpIBCBSfMJmLAYDKx0mS7GcnoyYccQCRjMY0v77HRiHMSkGzNMzbu05KbbSlMVDFNsPyXoKYwexVsdBgSIh3REAFjAmNbMd\/c9OlDoRbuKcj2I2syuzBqD6\/6KIaeUoUF47hmfUEYUYUEnMU0GBCAg0t88xrd1SLhc\=) !important;
-  --radius-ml: 13px !important;
+  --radius-ml: 14px !important;
   --radius-prompt: 24px !important;
-  --radius-settings: 27px !important;
-  --radius-xxl: 21px !important;
+  --radius-settings: 28px !important;
+  --radius-xxl: 22px !important;
   --setting-item-background: oklch(100% 0 0 / 0.75) !important;
   --shadow-button:
     inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4),
@@ -1079,7 +1075,7 @@
   --shadow-faint: 0px 0 12px 0px oklch(5% 0 0 / 0.055) !important;
   --shadow-input: 0 0 0 0.5px oklch(0% 0 0 / 0.1125) !important;
   --shadow-input-active: 0 0 0 2.5px
-    color-mix(in oklch, rgb(26, 121, 255) 50%, transparent 75%) !important;
+    color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
   --shadow-muted: 0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
   --shadow-normal:
     0px 0px 5px 0px oklch(20% 0 0 / 0.0275),
@@ -1122,7 +1118,7 @@
   --tab-sidebar-bg: oklch(100% 0 0 / 0.95) !important;
   --tab-sidebar-container-bg: oklch(0% 0 0 / 0.03125) !important;
   --table-row-bg: oklch(20% 0 0 / 0.0275) !important;
-  --table-text-weight: 425 !important;
+  --table-text-weight: 420 !important;
   --text-highlight-bg-search: oklch(
     from rgb(229, 169, 37) 0.9 c h / 0.625
   ) !important;
@@ -1149,9 +1145,9 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --accent-h: 215 !important;
-  --accent-l: 53% !important;
-  --accent-s: 100% !important;
+  --accent-h: 212 !important;
+  --accent-l: 52% !important;
+  --accent-s: 86% !important;
   --anim-duration-fast: 150ms !important;
   --anim-duration-moderate: 300ms !important;
   --anim-duration-none: 0 !important;
@@ -1161,7 +1157,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(15, 115, 255, 0.1) !important;
+  --background-modifier-active-hover: rgba(27, 126, 238, 0.1) !important;
   --background-modifier-border: oklch(100% 0.05 281 / 0.0625) !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: oklch(36.25% 0.00375 281) !important;
@@ -1204,9 +1200,9 @@
   --bases-group-heading-property-color: oklch(71.25% 0.00375 281) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
-  --bases-group-heading-property-weight: 425 !important;
+  --bases-group-heading-property-weight: 420 !important;
   --bases-group-heading-value-size: 0.875em !important;
-  --bases-group-heading-value-weight: 625 !important;
+  --bases-group-heading-value-weight: 620 !important;
   --bases-header-border-width: 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 0 !important;
@@ -1218,12 +1214,12 @@
     oklch(23.5% 0.00125 281),
     oklch(27.5% 0.00375 281)
   ) !important;
-  --bases-table-cell-background-selected: rgba(15, 115, 255, 0.1) !important;
+  --bases-table-cell-background-selected: rgba(27, 126, 238, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2.5px
-    color-mix(in oklab, rgb(15, 115, 255) 50%, transparent 75%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(15, 115, 255) !important;
+    color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(27, 126, 238) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -1241,7 +1237,7 @@
     transparent 24px,
     black 24px
   ) !important;
-  --bases-table-header-weight: 500 !important;
+  --bases-table-header-weight: 490 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 0 !important;
   --bases-table-row-height: 32px !important;
@@ -1256,31 +1252,31 @@
   --blockquote-border-thickness: 0.1875rem !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 250 !important;
-  --bold-weight: 675 !important;
+  --bold-weight: 670 !important;
   --border-width: 1px !important;
-  --button-radius: 7px !important;
+  --button-radius: 8px !important;
   --callout-blend-mode: normal;
-  --callout-border-opacity: 0.2;
+  --callout-border-opacity: 0.2375;
   --callout-border-width: 0px;
   --callout-bug: 250, 153, 205;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 58, 135, 255;
+  --callout-default: 71, 154, 255;
   --callout-error: 255, 76, 82;
   --callout-example: 168, 130, 255;
   --callout-fail: 255, 76, 82;
   --callout-important: 85, 211, 244;
-  --callout-info: 58, 135, 255;
+  --callout-info: 71, 154, 255;
   --callout-padding: 1rem;
   --callout-question: 241, 144, 80;
   --callout-quote: 150, 150, 160;
-  --callout-radius: 9px;
+  --callout-radius: 10px;
   --callout-success: 24, 209, 125;
   --callout-summary: 85, 211, 244;
   --callout-tip: 85, 211, 244;
   --callout-title-padding: 0;
-  --callout-title-weight: 675;
-  --callout-todo: 58, 135, 255;
+  --callout-title-weight: 670;
+  --callout-todo: 71, 154, 255;
   --callout-warning: 248, 201, 111;
   --canvas-background: oklch(23.5% 0.00125 281) !important;
   --canvas-card-label-color: oklch(52.5% 0.0075 281) !important;
@@ -1289,17 +1285,17 @@
   --canvas-color-2: 241, 144, 80 !important;
   --canvas-color-3: 248, 201, 111 !important;
   --canvas-color-4: 24, 209, 125 !important;
-  --canvas-color-5: 58, 135, 255 !important;
+  --canvas-color-5: 71, 154, 255 !important;
   --canvas-color-6: 168, 130, 255 !important;
   --canvas-dot-pattern: oklch(34.5% 0.00375 281) !important;
   --caret-color: oklch(85% 0.00375 281) !important;
   --checkbox-border-color: oklch(43.75% 0.0075 281) !important;
   --checkbox-border-color-hover: oklch(71.25% 0.00375 281) !important;
-  --checkbox-color: rgb(15, 115, 255) !important;
+  --checkbox-color: rgb(27, 126, 238) !important;
   --checkbox-color-hover: color-mix(
     in oklab,
-    rgb(15, 115, 255) 62.5%,
-    color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%)
+    rgb(27, 126, 238) 62.5%,
+    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%)
   ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: white !important;
@@ -1307,7 +1303,7 @@
   --checkbox-size: 1.125rem !important;
   --checklist-done-color: oklch(52.5% 0.0075 281) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 7px !important;
+  --clickable-icon-radius: 8px !important;
   --code-background: oklch(100% 0.05 281 / 0.05) !important;
   --code-border-color: oklch(100% 0.05 281 / 0.0625) !important;
   --code-border-width: 0 !important;
@@ -1320,7 +1316,7 @@
   --code-operator: rgb(255, 76, 82) !important;
   --code-property: rgb(85, 211, 244) !important;
   --code-punctuation: oklch(71.25% 0.00375 281) !important;
-  --code-radius: 5px !important;
+  --code-radius: 6px !important;
   --code-size: 0.875em !important;
   --code-string: rgb(24, 209, 125) !important;
   --code-tag: rgb(255, 76, 82) !important;
@@ -1329,21 +1325,21 @@
   --collapse-icon-color: oklch(52.5% 0.0075 281) !important;
   --collapse-icon-color-collapsed: color-mix(
     in oklab,
-    rgb(15, 115, 255) 64%,
+    rgb(27, 126, 238) 64%,
     #fff 36%
   ) !important;
-  --color-accent: rgb(15, 115, 255) !important;
+  --color-accent: rgb(27, 126, 238) !important;
   --color-accent-1: color-mix(
     in oklab,
-    rgb(15, 115, 255) 64%,
+    rgb(27, 126, 238) 64%,
     #fff 36%
   ) !important;
   --color-accent-2: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%),
+    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
     transparent 8%
   ) !important;
-  --color-accent-hsl: 215, 100%, 53% !important;
+  --color-accent-hsl: 212, 86%, 52% !important;
   --color-base-00: oklch(23.5% 0.00125 281) !important;
   --color-base-05: oklch(24% 0 281) !important;
   --color-base-10: oklch(26.25% 0.00375 281) !important;
@@ -1356,8 +1352,8 @@
   --color-base-50: oklch(52.5% 0.0075 281) !important;
   --color-base-60: oklch(63.75% 0.0075 281) !important;
   --color-base-70: oklch(71.25% 0.00375 281) !important;
-  --color-blue: rgb(58, 135, 255) !important;
-  --color-blue-rgb: 58, 135, 255 !important;
+  --color-blue: rgb(71, 154, 255) !important;
+  --color-blue-rgb: 71, 154, 255 !important;
   --color-cyan: rgb(85, 211, 244) !important;
   --color-cyan-rgb: 85, 211, 244 !important;
   --color-green: rgb(24, 209, 125) !important;
@@ -1382,7 +1378,7 @@
   --divider-color: oklch(100% 0.05 281 / 0.0625) !important;
   --divider-color-hover: color-mix(
     in oklab,
-    rgb(15, 115, 255) 50%,
+    rgb(27, 126, 238) 50%,
     transparent 75%
   ) !important;
   --divider-vertical-height: 100% !important;
@@ -1413,7 +1409,7 @@
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
-  --file-header-font-weight: 500 !important;
+  --file-header-font-weight: 490 !important;
   --file-header-justify: center !important;
   --file-line-width: 43.75rem !important;
   --file-margins: 32px !important;
@@ -1422,13 +1418,13 @@
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
-  --font-bold: 725 !important;
+  --font-bold: 720 !important;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
-  --font-extrabold: 825 !important;
-  --font-extralight: 300 !important;
+  --font-extrabold: 820 !important;
+  --font-extralight: 305 !important;
   --font-interface:
     "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
@@ -1440,8 +1436,8 @@
     "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-light: 325 !important;
-  --font-medium: 525 !important;
+  --font-light: 320 !important;
+  --font-medium: 520 !important;
   --font-mermaid:
     "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
@@ -1458,13 +1454,13 @@
     "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
-  --font-normal: 425 !important;
+  --font-normal: 420 !important;
   --font-print:
     "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
-  --font-semibold: 625 !important;
+  --font-semibold: 620 !important;
   --font-small: 0.90625em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
@@ -1480,12 +1476,12 @@
     "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-thin: 275 !important;
+  --font-thin: 270 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
-  --font-weight: 425 !important;
+  --font-weight: 420 !important;
   --footnote-divider-color: oklch(100% 0.05 281 / 0.0625) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
@@ -1498,7 +1494,7 @@
   --footnote-line-height: 1.6 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
-  --footnote-radius: 7px !important;
+  --footnote-radius: 8px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 160px !important;
@@ -1515,37 +1511,37 @@
   --h1-size: 2em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
-  --h1-weight: 350 !important;
+  --h1-weight: 330 !important;
   --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
   --h2-size: 1.5em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 550 !important;
+  --h2-weight: 570 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.375em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 550 !important;
+  --h3-weight: 570 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.25em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 550 !important;
+  --h4-weight: 570 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.6 !important;
   --h5-size: 1.125em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.6 !important;
   --h6-size: 1em !important;
   --h6-style: normal !important;
   --h6-variant: normal !important;
-  --h6-weight: 650 !important;
+  --h6-weight: 670 !important;
   --header-height: 56px !important;
   --heading-formatting: oklch(52.5% 0.0075 281) !important;
   --heading-spacing: 2.5rem !important;
@@ -1555,7 +1551,7 @@
   --icon-color: oklch(63.75% 0.0075 281) !important;
   --icon-color-active: color-mix(
     in oklab,
-    rgb(15, 115, 255) 64%,
+    rgb(27, 126, 238) 64%,
     #fff 36%
   ) !important;
   --icon-color-focused: oklch(85% 0.00375 281) !important;
@@ -1593,24 +1589,24 @@
   --inline-title-size: 2em !important;
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
-  --inline-title-weight: 350 !important;
+  --inline-title-weight: 330 !important;
   --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
   --input-date-separator: oklch(52.5% 0.0075 281) !important;
-  --input-font-weight: 425 !important;
+  --input-font-weight: 420 !important;
   --input-height: 28px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: oklch(52.5% 0.0075 281) !important;
-  --input-radius: 7px !important;
+  --input-radius: 8px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
-  --interactive-accent: rgb(15, 115, 255) !important;
+  --interactive-accent: rgb(27, 126, 238) !important;
   --interactive-accent-hover: color-mix(
     in oklab,
-    rgb(15, 115, 255) 62.5%,
-    color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%)
+    rgb(27, 126, 238) 62.5%,
+    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%)
   ) !important;
-  --interactive-accent-hsl: 215, 100%, 53% !important;
+  --interactive-accent-hsl: 212, 86%, 52% !important;
   --interactive-hover: oklch(36.25% 0.00375 281) !important;
   --interactive-normal: oklch(34.5% 0.00375 281) !important;
   --keyboard-height: 0px !important;
@@ -1626,10 +1622,10 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%) !important;
+  --link-color: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
   --link-color-hover: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%),
+    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
     transparent 8%
   ) !important;
   --link-decoration: none !important;
@@ -1637,25 +1633,25 @@
   --link-decoration-thickness: auto !important;
   --link-external-color: color-mix(
     in oklab,
-    rgb(15, 115, 255) 64%,
+    rgb(27, 126, 238) 64%,
     #fff 36%
   ) !important;
   --link-external-color-hover: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%),
+    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
     transparent 8%
   ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(
-    from color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%) l c h / 0.75
+    from color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) l c h / 0.75
   ) !important;
-  --link-unresolved-decoration-color: rgba(15, 115, 255, 0.3) !important;
+  --link-unresolved-decoration-color: rgba(27, 126, 238, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
-  --link-weight: 425 !important;
+  --link-weight: 420 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
@@ -1667,7 +1663,7 @@
   --list-marker-color: oklch(52.5% 0.0075 281) !important;
   --list-marker-color-collapsed: color-mix(
     in oklab,
-    rgb(15, 115, 255) 64%,
+    rgb(27, 126, 238) 64%,
     #fff 36%
   ) !important;
   --list-marker-color-hover: oklch(71.25% 0.00375 281) !important;
@@ -1683,11 +1679,11 @@
   --menu-border-color: oklch(100% 0.04 281 / 0.125) !important;
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
-  --menu-radius: 13px !important;
+  --menu-radius: 14px !important;
   --menu-shadow: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: oklch(100% 0.05 281 / 0.0625) !important;
-  --metadata-border-radius: 11px !important;
+  --metadata-border-radius: 12px !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
@@ -1728,7 +1724,7 @@
   --metadata-property-background-active: oklch(100% 0.05 281 / 0.05) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2.5px
-    color-mix(in oklab, rgb(15, 115, 255) 50%, transparent 75%) !important;
+    color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(100% 0.05 281 / 0.05) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
@@ -1744,7 +1740,7 @@
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 21px !important;
+  --modal-radius: 22px !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
@@ -1754,20 +1750,20 @@
   --nav-heading-color-collapsed: oklch(52.5% 0.0075 281) !important;
   --nav-heading-color-collapsed-hover: oklch(71.25% 0.00375 281) !important;
   --nav-heading-color-hover: oklch(85% 0.00375 281) !important;
-  --nav-heading-weight: 525 !important;
-  --nav-heading-weight-hover: 525 !important;
+  --nav-heading-weight: 520 !important;
+  --nav-heading-weight-hover: 520 !important;
   --nav-indentation-guide-color: oklch(100% 0.075 281 / 0.1) !important;
   --nav-indentation-guide-width: 0 !important;
   --nav-item-background-active: oklch(100% 0.05 281 / 0.05) !important;
   --nav-item-background-hover: oklch(100% 0.05 281 / 0.05) !important;
-  --nav-item-background-selected: rgba(15, 115, 255, 0.15) !important;
+  --nav-item-background-selected: rgba(27, 126, 238, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(71.25% 0.00375 281) !important;
   --nav-item-color-active: oklch(85% 0.00375 281) !important;
   --nav-item-color-highlighted: color-mix(
     in oklab,
-    rgb(15, 115, 255) 64%,
+    rgb(27, 126, 238) 64%,
     #fff 36%
   ) !important;
   --nav-item-color-hover: oklch(85% 0.00375 281) !important;
@@ -1780,8 +1776,8 @@
   --nav-tag-color: oklch(52.5% 0.0075 281) !important;
   --nav-tag-color-active: oklch(71.25% 0.00375 281) !important;
   --nav-tag-color-hover: oklch(71.25% 0.00375 281) !important;
-  --nav-tag-radius: 7px !important;
-  --nav-tag-weight: 625 !important;
+  --nav-tag-radius: 8px !important;
+  --nav-tag-weight: 620 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
@@ -1808,7 +1804,7 @@
   --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
-  --pill-radius: 17px !important;
+  --pill-radius: 18px !important;
   --popover-font-size: 16px !important;
   --popover-height: 400px !important;
   --popover-max-height: 95vh !important;
@@ -1821,10 +1817,10 @@
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 17px !important;
-  --radius-m: 11px !important;
-  --radius-s: 7px !important;
-  --radius-xl: 19px !important;
+  --radius-l: 18px !important;
+  --radius-m: 12px !important;
+  --radius-s: 8px !important;
+  --radius-xl: 20px !important;
   --ribbon-background: transparent !important;
   --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 0px 12px 8px !important;
@@ -1837,7 +1833,7 @@
   --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 17px !important;
+  --scrollbar-radius: 18px !important;
   --scrollbar-thumb-bg: oklch(31.25% 0.00375 281) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: oklch(52.5% 0.0075 281) !important;
@@ -1848,13 +1844,13 @@
     from oklch(24% 0 281) l 0.00375 h / 0.375
   ) !important;
   --shadow-l:
-    inset 1.125px 1.75px 3px -1.25px rgba(255, 255, 255, 0.15),
-    inset -1.125px -1.75px 3px -1.25px rgba(255, 255, 255, 0.125),
+    inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188),
+    inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138),
     inset 0 8px 16px rgba(255, 255, 255, 0.015),
     0px 0px 24px 0px oklch(0 0 0 / 0.375) !important;
   --shadow-s:
-    inset 1.125px 1.75px 2px -1.25px rgba(255, 255, 255, 0.25),
-    inset -1.125px -1.75px 2px -1.25px rgba(255, 255, 255, 0.175),
+    inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263),
+    inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188),
     inset 0 8px 16px rgba(255, 255, 255, 0.025),
     0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --sidebar-left-toggle-inner-width: 12% !important;
@@ -1894,7 +1890,7 @@
   --status-bar-border-width: 0 !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
-  --status-bar-radius: 17px 0 0 17px !important;
+  --status-bar-radius: 18px 0 0 18px !important;
   --status-bar-text-color: oklch(71.25% 0.00375 281) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
@@ -1905,7 +1901,7 @@
   --sync-avatar-color-3: rgb(248, 201, 111) !important;
   --sync-avatar-color-4: rgb(24, 209, 125) !important;
   --sync-avatar-color-5: rgb(85, 211, 244) !important;
-  --sync-avatar-color-6: rgb(58, 135, 255) !important;
+  --sync-avatar-color-6: rgb(71, 154, 255) !important;
   --sync-avatar-color-7: #a882ff !important;
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
@@ -1917,21 +1913,21 @@
   --tab-max-width: 240px !important;
   --tab-outline-color: oklch(100% 0.05 281 / 0.0625) !important;
   --tab-outline-width: 0 !important;
-  --tab-radius: 7px !important;
+  --tab-radius: 8px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
   --tab-stacked-font-size: 13px !important;
-  --tab-stacked-font-weight: 525 !important;
+  --tab-stacked-font-weight: 520 !important;
   --tab-stacked-header-width: 56px !important;
-  --tab-stacked-pane-width: 700px !important;
+  --tab-stacked-pane-width: 43.75rem !important;
   --tab-stacked-shadow: -8px 0 8px 0 oklch(0 0 0 / 0.1875) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: oklch(27.5% 0.00375 281) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 19px !important;
+  --tab-switcher-preview-radius: 20px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(15, 115, 255) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(27, 126, 238) !important;
   --tab-text-color: oklch(63.75% 0.0075 281) !important;
   --tab-text-color-active: oklch(93.25% 0 281) !important;
   --tab-text-color-focused: oklch(63.75% 0.0075 281) !important;
@@ -1939,7 +1935,7 @@
   --tab-text-color-focused-active-current: oklch(93.25% 0 281) !important;
   --tab-text-color-focused-highlighted: color-mix(
     in oklab,
-    rgb(15, 115, 255) 64%,
+    rgb(27, 126, 238) 64%,
     #fff 36%
   ) !important;
   --tab-width: 240px !important;
@@ -1956,37 +1952,37 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(15, 115, 255) !important;
+  --table-drag-handle-background-active: rgb(27, 126, 238) !important;
   --table-drag-handle-color: oklch(52.5% 0.0075 281) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
   --table-header-border-color: oklch(100% 0.075 281 / 0.1) !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: oklch(57.5% 0.0075 281) !important;
+  --table-header-color: oklch(63.75% 0.0075 281) !important;
   --table-header-size: 0.90625em !important;
-  --table-header-weight: 525 !important;
+  --table-header-weight: 520 !important;
   --table-line-height: 1.6 !important;
   --table-row-alt-background: oklch(100% 0.075 281 / 0.015) !important;
   --table-row-alt-background-hover: oklch(100% 0.075 281 / 0.015) !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(15, 115, 255, 0.1) !important;
+  --table-selection: rgba(27, 126, 238, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(15, 115, 255) !important;
+  --table-selection-border-color: rgb(27, 126, 238) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.90625em !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(15, 115, 255, 0.1) !important;
-  --tag-background-hover: rgba(15, 115, 255, 0.2) !important;
-  --tag-border-color: oklch(from rgb(15, 115, 255) l c h / 0.025) !important;
-  --tag-border-color-hover: rgba(15, 115, 255, 0.15) !important;
+  --tag-background: rgba(27, 126, 238, 0.1) !important;
+  --tag-background-hover: rgba(27, 126, 238, 0.2) !important;
+  --tag-border-color: oklch(from rgb(27, 126, 238) l c h / 0.025) !important;
+  --tag-border-color-hover: rgba(27, 126, 238, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%) !important;
+  --tag-color: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
   --tag-color-hover: color-mix(
     in oklab,
-    rgb(15, 115, 255) 64%,
+    rgb(27, 126, 238) 64%,
     #fff 36%
   ) !important;
   --tag-decoration: none !important;
@@ -1997,12 +1993,12 @@
   --tag-size: 0.8em !important;
   --text-accent: color-mix(
     in oklab,
-    rgb(15, 115, 255) 64%,
+    rgb(27, 126, 238) 64%,
     #fff 36%
   ) !important;
   --text-accent-hover: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%),
+    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
     transparent 8%
   ) !important;
   --text-error: rgb(255, 76, 82) !important;
@@ -2015,7 +2011,7 @@
   --text-normal: oklch(85% 0.00375 281) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: oklab(from rgb(15, 115, 255) l a b / 0.25) !important;
+  --text-selection: oklab(from rgb(27, 126, 238) l a b / 0.25) !important;
   --text-success: rgb(24, 209, 125) !important;
   --text-warning: rgb(241, 144, 80) !important;
   --titlebar-background: transparent !important;
@@ -2025,7 +2021,7 @@
   --titlebar-height: 36px !important;
   --titlebar-text-color: oklch(100% 0.02 281 / 0.35) !important;
   --titlebar-text-color-focused: oklch(71.25% 0.00375 281) !important;
-  --titlebar-text-weight: 625 !important;
+  --titlebar-text-weight: 620 !important;
   --toggle-border-width: 4px !important;
   --toggle-radius: 18px !important;
   --toggle-s-border-width: 4px !important;
@@ -2042,47 +2038,47 @@
   --vault-profile-color-hover: oklch(71.25% 0.00375 281) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 18px !important;
-  --vault-profile-font-weight: 425 !important;
+  --vault-profile-font-weight: 420 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: oklch(85% 0.00375 281) !important;
-  --h2-color: oklch(85% 0.00375 281) !important;
+  --h1-color: oklch(89.5% 0 281) !important;
+  --h2-color: oklch(88.25% 0 281) !important;
   --h3-color: oklch(85% 0.00375 281) !important;
   --h4-color: oklch(85% 0.00375 281) !important;
-  --h5-color: oklch(77.5% 0.00375 281) !important;
-  --h6-color: oklch(71.25% 0.00375 281) !important;
-  --inline-title-color: oklch(85% 0.00375 281) !important;
+  --h5-color: oklch(85% 0.00375 281) !important;
+  --h6-color: oklch(77.5% 0.00375 281) !important;
+  --inline-title-color: oklch(89.5% 0 281) !important;
   --blockquote-color: oklch(71.25% 0.00375 281) !important;
   --bold-color: oklch(93.25% 0 281) !important;
   --color-base-80: oklch(77.5% 0.00375 281) !important;
   --color-base-90: oklch(85% 0.00375 281) !important;
   --font-ui-larger: 24px !important;
-  --radius-sm: 9px !important;
+  --radius-sm: 10px !important;
   --setting-group-heading-color: oklch(63.75% 0.0075 281) !important;
   --setting-group-heading-size: 18px !important;
   --setting-items-padding: 16px !important;
-  --setting-items-radius: 15px !important;
-  --tag-weight: 500 !important;
+  --setting-items-radius: 16px !important;
+  --tag-weight: 490 !important;
   --color-accent-3: color-mix(
     in oklab,
-    rgb(15, 115, 255) 50%,
+    rgb(27, 126, 238) 50%,
     transparent 75%
   ) !important;
-  --radius-xs: 5px !important;
+  --radius-xs: 6px !important;
   --prompt-background: oklch(27.75% 0.00175 281 / 0.625) !important;
-  --tab-font-weight: 425 !important;
+  --tab-font-weight: 420 !important;
+  --setting-group-heading-weight: 520 !important;
   --strikethrough-color: oklch(52.5% 0.0075 281) !important;
   --color-base-55: oklch(57.5% 0.0075 281) !important;
   --setting-items-background: oklch(23.5% 0.00125 281) !important;
-  --setting-group-heading-weight: 525 !important;
   --setting-items-border-width: 0 !important;
   --color-highlight: rgb(248, 201, 111) !important;
   --file-margins-y: 28px !important;
-  --metadata-label-font-weight: 500 !important;
-  --pill-weight: 500 !important;
+  --metadata-label-font-weight: 490 !important;
+  --pill-weight: 490 !important;
   --nav-folder-color: oklch(77.5% 0.00375 281) !important;
   --settings-background: color-mix(
     in oklab,
@@ -2149,19 +2145,15 @@
   --code-special: rgb(255, 76, 82) !important;
   --color-accent-4: color-mix(
     in oklab,
-    oklab(from rgb(15, 115, 255) l a b / 0.25) 30%,
+    oklab(from rgb(27, 126, 238) l a b / 0.25) 30%,
     transparent 70%
   ) !important;
   --color-highlight-rgb: 248, 201, 111 !important;
   --control-icon-background: oklch(100% 0.05 281 / 0.0625) !important;
-  --control-icon-color: color-mix(
-    in oklab,
-    oklch(77.5% 0.00375 281),
-    oklch(85% 0.00375 281)
-  ) !important;
+  --control-icon-color: oklch(77.5% 0.00375 281) !important;
   --control-icon-shadow:
-    inset 1.125px 1.75px 2px -1.25px rgba(255, 255, 255, 0.25),
-    inset -1.125px -1.75px 2px -1.25px rgba(255, 255, 255, 0.175),
+    inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263),
+    inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188),
     inset 0 8px 16px rgba(255, 255, 255, 0.025),
     0px 0px 12px 0px oklch(from oklch(24% 0 281) l 0.00375 h / 0.375) !important;
   --fab-bg: oklch(23.5% 0.00125 281) !important;
@@ -2174,39 +2166,39 @@
     "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif !important;
-  --font-normal-linux: 500 !important;
-  --font-semi-medium: 500 !important;
+  --font-normal-linux: 490 !important;
+  --font-semi-medium: 490 !important;
   --frame-right-space-override: 164px !important;
   --glass-base:
-    inset 1.125px 1.75px 2px -1.25px rgba(255, 255, 255, 0.25),
-    inset -1.125px -1.75px 2px -1.25px rgba(255, 255, 255, 0.175),
+    inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263),
+    inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188),
     inset 0 8px 16px rgba(255, 255, 255, 0.025) !important;
   --glass-base-l:
-    inset 1.125px 1.75px 3px -1.25px rgba(255, 255, 255, 0.15),
-    inset -1.125px -1.75px 3px -1.25px rgba(255, 255, 255, 0.125),
+    inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188),
+    inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138),
     inset 0 8px 16px rgba(255, 255, 255, 0.015) !important;
   --glass-base-m:
-    inset 1.125px 1.75px 3px -1.25px rgba(255, 255, 255, 0.125),
-    inset -1.125px -1.75px 3px -1.25px rgba(255, 255, 255, 0.1),
+    inset 1px 1.75px 2.25px -1.125px rgba(255, 255, 255, 0.15),
+    inset -1px -1.75px 2.25px -1.125px rgba(255, 255, 255, 0.1),
     inset 0 8px 16px rgba(255, 255, 255, 0.015) !important;
   --glass-button:
-    inset 3.5px 3.5px 1.5px -1.25px
-      oklab(from rgb(15, 115, 255) calc(l + 0.075) a b / 0.75),
-    inset -3.5px -3.5px 1.5px -1.25px
-      oklab(from rgb(15, 115, 255) calc(l + 0.075) a b / 0.5625) !important;
+    inset 3px 3px 1.5px -1.25px
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
+    inset -3px -3px 1.5px -1.25px
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5) !important;
   --glass-button-error:
-    inset 3.75px 3.75px 1.25px -1.25px
+    inset 3.25px 3.25px 1.25px -1.25px
       oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.75),
-    inset -3.75px -3.75px 1.25px -1.25px
-      oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.5625) !important;
+    inset -3.25px -3.25px 1.25px -1.25px
+      oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.5) !important;
   --glass-button-l:
-    inset 4.5px 4.5px 1.5px -1.5px
-      oklab(from rgb(15, 115, 255) calc(l + 0.075) a b / 0.75),
-    inset -4.5px -4.5px 1.5px -1.5px
-      oklab(from rgb(15, 115, 255) calc(l + 0.075) a b / 0.5625) !important;
+    inset 3.75px 3.75px 1.5px -1.25px
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
+    inset -3.75px -3.75px 1.5px -1.25px
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5) !important;
   --h1-size-alt: 1.625em !important;
-  --h1-weight-alt: 625 !important;
-  --highlight-blue-rgb: 58, 135, 255 !important;
+  --h1-weight-alt: 570 !important;
+  --highlight-blue-rgb: 71, 154, 255 !important;
   --highlight-cyan-rgb: 85, 211, 244 !important;
   --highlight-green-rgb: 24, 209, 125 !important;
   --highlight-orange-rgb: 241, 144, 80 !important;
@@ -2216,10 +2208,10 @@
   --highlight-yellow-rgb: 248, 201, 111 !important;
   --hotkey-gradient: linear-gradient(
     to top,
-    rgb(15, 115, 255) -10%,
+    rgb(27, 126, 238) -10%,
     color-mix(
         in oklab,
-        oklab(from rgb(15, 115, 255) l a b / 0.25) 30%,
+        oklab(from rgb(27, 126, 238) l a b / 0.25) 30%,
         transparent 70%
       )
       210%
@@ -2227,17 +2219,13 @@
   --icon-stroke-thick: 2.25px !important;
   --link-color-sidebar: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(15, 115, 255) 64%, #fff 36%),
+    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
     transparent 8%
   ) !important;
   --link-unresolved-lch: 0.75 !important;
   --list-bullet-color: oklch(77.5% 0.00375 281) !important;
   --list-dash-color: oklch(100% 0.02 281 / 0.35) !important;
-  --math-color: color-mix(
-    in oklab,
-    oklch(85% 0.00375 281),
-    oklch(93.25% 0 281)
-  ) !important;
+  --math-color: oklch(93.25% 0 281) !important;
   --metadata-input-padding: 6px 8px !important;
   --modal-community-header-bg: oklch(
     from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5
@@ -2251,26 +2239,26 @@
   --nav-text-color: oklch(85% 0.00375 281) !important;
   --paint-description: "The default dark color scheme for Velocity. A deep dark gray with a tinge of blue." !important;
   --paint-image: url(data\:image\/webp\base64\,UklGRqZAAABXRUJQVlA4TJlAAAAv34FAAE1AaCTJkaSseZ\/Dn3CPfwIR\/Z8A0Y9hnLJqGzNV\/fj4\+IAkUTFJXEQX2DXSkgANpLrO1YgqAQhgifn\+Tr2QlolJaCya6Q1MqJokb7EAJTMLgI\+QxEFbEKAXIWcyQjOoo\+FHAdoZMmLkgoJcPDJMuW7y8TFjQf\+Rx9peDnhu1aJATqVPtdun9mHASHKOXUUZOgFfWZ506KO8VI2AI95jeeukO0LvO7DiwMnmABy0I1dLmC\+QZxZzzR2KM2\/tl7k68yknOspDyoLPDR18sSGC4KEUK5y4XBz\/C\+eATB\/prIbVD15sSyzkyLblSMqJHIGGRJfZJibB\/heTMSsoE63yp0TYcmTbVm1lRN\+BFRLO\/jfm160f4RC5u1OQI0lyrSQecAL\/vfonKIQBE3yNmv5PQAIGTX6VAmADZREA5qPQq5RCyA2DEljGQBFCG4OZSqmKhSiAh8AUobZ0oxfPQ\+fJlCYDpexfIU7oV3xcpRQefzw9fnuiDiAB9yCRMEbSf0MAC0spVZmPAFoiAhUv2NBUtVIKKQlkj7a2puL17m87AGADkFIGMIg\/Xnf3P7VHpzKQgKkoUMpHgKEiQMk1E1QHjFYRCASAKAK8\/gAEp8FkBaIGKLVSAkmgXbwVT8VzUREWG6bBshj8riIQrfq\/vs86M\/SRjwAnwQl2\/EqHwUzFDcA1xP\+s5kcw\+JEWGNggTsxr8x\+1FcAgtmjdsGJRQCHY8I05bh\+dAS6b\/POYTTaHcQgAEGKypuQr\+eQnn9zyyTfyybdHgpkG0AR\/5OXu8WIw34iIANcsAPjlF9dUhsawmD\/0KjW0nLgRAFWRUqpFtAXY4\+R4nHzlr8f88XicHfPHI0BFipRSUVERgMwyBXGbbhAAEACkVESo3\+udHH1wILiXe8FxmEOAACBSRKiVUi0Rx6cj1x\+Obp\+VceTmnI2b5sRKUV0BSimg2lMpRV2AUqfBlkWklKImTATAbAEWLObSFv0Mx20bSZLKyj\/qqr5msf\+ImAC6KqCiYo\+HSQIIpBNqShgAFBVoLO3MKgTAMRZ\+EOw4AyQJVYYNNpONgATnogCTpMr3obuki\+on\+tE85IM31LJTFYAAxU33BLcLrAIC4NUNBdmeniILtl3Gv5zzT1W3J16l38vLd07MN0Zyy2FmXNlDd2S5kYSLCZvJAs\+jWasVTTfOhONVkjCQJAApemUS53ichKJX23VJH2RzMgGSxMFz8D5z7ssYEm7k1EOgKOYzs03iMRCJai68Z1SDnNTLASiKpdlTIFVUcTyEUWOvPSiKgqJ8GdV0s\/FV\/NmIM71BvQ4k3BY\/CG5rwrZtkdxYet4\/IqlKKhBaktvHMjUZmuxm5mGGJe54Zjs7Xs7u7AZWs2Jq7rbdzIy2JaNYKkFVJUT8\/3tdmX9EZqnSdXBBSZJk11bkUWj2vzWGzLWG1v2SjiRJsm3Foy5ISMhosP\+9zTOvM2TRttq2En7R2InLUbEMSC7jT8rati1um\/f9\/gFJYU7kXK2DcpmZmfkEusspdcfM3BPgFTNjGCSzNJr\/DQzIKsx0R8W2rWWStO\/3R0Q1M6NlHEF7Uq3aoyvdOBAcA86CW5MrZozK\+P\/\/\+tW27dh227b283rej8WOSglthMyMzFGJS1yisjzKywrYtm1W8\/ve5wxXkCSl1eLkCVZwbIh\+4qO2z5BkW9\/3i6yqqR7bOLZt2z7n2rZt27aNjWPPnuPtvdddxxjbU8iM37dWZURkVW\/M\/TMMpG2T3r\/mLySxjeRIUp2d2d1eZo2Nqlz39RzbtiNJtm31ob4xqOK9S5uDXYbUbF42N5uDzQlGRQw80tx0iKSpqS6da65lU2sQ2zaSJFG1l3\+\+b9tJbNuisvaX3xGDENQnBJoAKFD8E7BgWwkbPVJKK5JaTRQ06e7vw8DreEBYWwjo\+FMJk4XWM5dZIINZkBENfA4b1jGrf\+AMCKGFREAdyNVa\/l4fIgRoAMgCwjiipGC\/igOGFkgzW1dIAGbvfHOSn4e2YduStpYNtI8JgbQBaWZzGFIglnEvDxa0cGS6dYieTuuENtRTmLsahznFtUgIghzkub\/5BYpOljJgwsxCXeYCELqKjdIGUExe4gZ1aDqxjq\/D6rB8I4UFLQw0YFNWRT3Vzq6zOltWo3RQxcp0a3mS6P72\/p3s7as8ZXDu29CbA5gDoA1csk0TX85bBHLl\+YRp1jjsOl09KbXouiq0bBIIAABDFpGONlWpwlNRKyaSKsbcpcKEQHSnS5cOgOUYoijhkpknm6ZzszDv32PePkEaaJR1NjXsjPkIUwbAU6U5l85Swh0W0MRkIys57EYkghWkiaTxRJj9yBhZYJqLIDg864y7LTOJBtoah8WYa0wCAIepNaHH4957vbOmAMS9CSYECEp7pz7KU3pS7\+MsDNamsYj2vC5sHrY4iU\/fM29XwECJa4clLBF0WvsiX8wwmwOa6VSOUOoJW5lU5VbUeTs\/Ltg8vx2ZS9afUwTWuQ2GsMAhjbdJ3c8nWzW\/Zw44k1abc9el4Ji2GiiP7oSxisiBCIDDtUs53YLEZTOZHF7buc5GjcYIKChUoXlXi3WhOhVJALaTmoCaQgC2TT417\+Yq37afzymF5Ie1va4FC7SjMHegLwTJbjzm8QGYdSQ4T5\/4Fj\/izijjuWCipkATk\/2ZI3mjvsP3bL02OK2QRIZBFAT9uV91IvfqwrYVgA5WVce2xwxe7G4nAZBs1xIAgBaa5gAgktIouX8eYUc7FR3mBG9MJzaIyFlFAbDdyDUubSGnFIhkHGbIbpsMAQEl666mO\+\/rfWON6rk5Y993ima7ac47YlgW35IHOETFqGxaMVmwRx055RH\+utchIBIAEDCJYktlvqxvKAzs30Ae0b0DlBEmbj\+zPm\/qAjbJsP02r23iNJSzPDKd\/JYXqNG8Lv5d4S2cm\/vzgm5tIkvsYzprkxTzD2oNtu8Qk0ceAVQ5VRe3mFNMAoANWHET3rK9wXb5bndx96mtC9r06QGAEJzB6pylmJjzs5O2YrTVli45rodlWsE6fHTga6mYE3tNgu1C8nJ\+enorJQRAQKE1JcR77dIc4qFc5VcCShsWM04HMJFkxtZgQXs1tytuUKowERFgCkykUDJrBMB\+ytk50WmDqcT8lh4PjuIRBs7nsu29wJg1HqKr32y34nmdTNynR3mO583S1hCTEi3i\+u7WWmHeUymJhDWVnlanrtM8Ync26UbeuAmvDdejadKiICbbrXGhDTZgWlP1Xq0Z3NarJvJoY4iJOaF6g9Oj8qRku3vJcW3Mai6DZBDmUBdIHObRvSctbMN0JiZsdY3sTP62Eq61Rp0fUK8rtT6bSQENuLKk2cvxS5zn9x0IYACAgBGMA8LZY\+2KZeqlN0VIHFfHLhCA18swYIRpFKK1vJ17SXpB69Sk5IqKwQCcezUgVufCQOaUHHKMedhOWsUwLDfvNlypXFCcJ7rCTkGYOfnSpR4oM6FRxjwB1zV6QwAqsg\/AZWJq668qMgDoqy\/jIQVPd\+ubU05sld2FOVCmQvxcm6juoVe\/xmjNvAeLf9qrE9JAIOJuqNuuPNnuDXJ0B1hAvLTtyz6j4zCpkr2Ch2COA4LxYILs2GaOtsrGALhkK66Dx7lvq4mY1IIOMzcXIszJQlMZUwKR3bRyjBvAqOW\+qlVKJWERuCVRtDsWhbVqdDrMK5YlnhaAxgFwemuZPM2Mk\+cBjgXOyCFzhgAjSG4YuhIOWNfS2MmcQodGlZtOPZUA1pq1CHUvaqQYalGioIG6AIhebFs2AtvrHM39GkkaAJemuXxtXaRlEaaeKFgRaeJmZgWGJgVAaUmClIibPNRS3kutTFEAJYFEQAtpFsrbjpSoU4wgC3JrK6tLAFU22mqcvc\+R\/eXLQtu6Y4RAXUL3DSXCWAkGiEh06KZE4LyVCwBpI003ViJOSKu7N2yd6hAYbjtW42Dza\/nuCqaOWFi7ZsABU2V\+vs9BEHO20vwwTmJOCvf8biLgAKxkCnSMTpgDDjAN81TUCNKezbsWwRBkIlpquadw13dsrGGQJilMhX0yLPNUf50PU8I0cBiaGNLAO4DKks4xT5\/YWoG2AKJoOZ2OshbgUGPfn6IWi7QGhGaNYVxymUQD7qnMG3clbQgIBBY0zmY7u1hCmAVmwEY4r\+335QgEOOBAuWtArHxqBm4N4BaoCd02sq0sR5xyXQ\+qOtxejvMOATQlYHmPhJWbQWnonptJYMXognCBUMhB72Sc\+DOua2\/iqJs5CRUACRQIsMt\/QneD4tCKDWFhdYqRQRU6aJP\/NxMsuUMk0DU79rCHogIApdLiupGDcmJnpnOBMVCeTdtmyOuSBSggVhHlKFLixLYPJAsEPAb6PisEgQKC4roXdIcynddWuAgAYBZWD5g5pQUDgKjuXDj7fQwPpKQxXR2eDwOQ7rgJAkVcd8PuSHyrQt7kOg9hpUBFyIgwBMAkWg1qLGxkJYELQJjdRZOxWRUTjazX6ky6LaL2ovBhyfnlaiU7H6BIxIArmccCShOsoyxrYntmYNYnx9hvBgRL0FHCtjepUloRGWBMOljzjBgBppXDagUQ82Is5vGJudavoYwaBaGQMSioo4DZH\/tOAHSLpWlE2phVHZrrOiTlqgBER4pwpmHWmUUDNKu2aJ4o2FGr09HDOm\/eQoYDXgAy1mGB1BDogCFoAS2UonQODUwUpCWrTEiHY6xLQ7L2IjbsFtfr1PT6XPLQPQrMKBiMYhvrQq1rEw2xhOW5VP05wpZ2OKWijGAQATCCMVcytlOuROS7hhV1kUPa2C5oI08UMuAIgMAZJ7fuszJutmTG2KJFixYkTC4kTrfRDw8VHac3O9yono5zEQt6eoy\+wFLcBGEcjSWAxnrV1xcAKr89QNdtE8wGK3MlZ\/SQW8kOKADQgYA4004OWlysCpcoC4RSRJetrK50XUoMVCkdHpqTAuFYwmgDuGIv5i1rVb\+J9IgLmIyCYhvqlzmlMwPUTH5Xh\+deXeA6b\+pTMhWgcjnXu8Nb9\+lAjIYwjrDi\/Jrj3cn5Jfe3N2aFocimwIgzGlzvA1tIJxnTWK1JVgBmobzvvpNIdWECErs5pNt2uGN7rQAKHaWEGMUokO2LAHDHutbIpLtGrWB9XbC1EZ053\/IOAmBe\/8gsEpthkoxQlShT1GE3hiKXj1VVNiYdpICs0enUsiUCIgFBsoYCw1ixRJBsxmRFJwtKmALByoFYBKxkpq3\/uhUlBRIwQASCMCDwbCK1KN97IltTl01KwJhAw3zeTSHUtRq87zMI0KokWAEY2g1vVbU62VIlWMDUF52vD9INu9zu2Jr6E7JjhCMA\+FEloJm06GeWhSSgZM2r1EoPqZEJB5dSPTdB74bnUUFWBA6ts1qTARNmAayUR3lEjpIrnyyVGkS\+OSmBE7uLMRnQNhH3u65aKGyBAOyGzV0ArIWdoIAVHVp7fmlE7hjctssNhOQGNUBpOiGH5RuAy6QGCtIJYtQK\+4PcFKcAgMDIDqvcMQFmkY2gsR7ER\+2Hxag7SQgSqdn3zYVMNnFyVv1pUR6ZRKFSQftsJCMRkEhQ0OFmTSdUCkgNgA43SaeglKmH1akkGGFZi9acYWutaP\/\/5JQA0FWBNUq7HzUBxZBGqxuLtk\+VakKCBEBgm2yPk13TCc3Jn\/WjUCQ1ZNJdDNRst3UV2zGOqQRAWPvZJif2PkDoCJ4FIC5MazmSj8AAWKUAoKT1QEkEeqzoDj2EARC2ZWxJRAGxb8Dy3lvaXJq80\+V\+9fOALUSamVIW5IVIgMlUN6Gps\+86RJwXftf8ZMLZglsuNAQKaogiMAUikSOIu\/mJNhn1QHN\+0\+ZsF40GOSoi811YIaCeKBMoMAaEMBEjBIiSYpZmhngxG2sTACcMAjRyEGaTmeb1\+\/ek\/4CpI44BIwKSxokkhBAAXdbWagnXMlzFQBya7LO\+CwBACnm4LFPT5TvWK4PDiVoDVFBM7S3ftnPTXs\/WE6ulXVIAQDFhik3kVjFaitEABQMiLJGftStjAFw2IwJM1mmSBgCstZmITdrZXHbx0e2Ll04ezhugpnmfqz4x8YYvf3T\+4dG1ueSId9GpidBeDJw5jisgYr\+6hBsQbSYZy2qH2y73EBKUCBJgJYISARsCOGdf4LN6gASIRCCxRA1WwZ\/49fPJFj8JZZYbcvea89cMDrsA\+HnOetetX9U27Z5YH31vXb9eK0ChCGV\+0bfwKMhoS\/UNu0CYHCah1H31MGfpTavcNx\+t0sIkAgBYUiBSJKGAeZWvb7\+oH1zrENU6y3WnQAOpzGW\+ZBPOQ7iR69yz6sKV6bqcRPPe2BRodGeiO4c2dcrI8hO2x3oYMZUf2hXC9Jl3F\+LQpKw3fXq0siA2R0OY3HPGmobAcrK2K9h8CJhiiLvhdFF6lus6l28\/EQZa8\+UvPv\/Blpd8\/H32\/vOP7uZjUrss5flt\/7qWt5lEFc\+1X26\/tVH2qFBIzn7R7058RSOH58w3t48udXZQkunTxy8e\/3\/zPr2rf\/0mTx7KuzT1CJkmygwciQAOBtg8LX2OJ8UlAFzhZZUGY3e1c\+LsZUSK\+fzW87UUAkpNokFEqKkEoAU9ZdlYPICQZpsqBaZGmy6RMuFqSJfTUxY1y9e8WOtSe9EQAIbmzLFPIkBjHIRjkxEl\+\/1n0n\/B1Cq4luvypUdx8JZxbLGtIeHEDj2EG8vU7vIdvTKYT9QaoAaKSW\/5od3r9uZlkFUlN6lZ8GzlQJCMRVhALJvRKJmNxjgJCMwIGCD56bYxe90OdOfU829tFy8ZzgtQ07w3V31g4rV8\+XPO3z\+ythcdyUdozrZBEvr\/xnCap95m2S2GYQBY80vbWf1D\/TMCiYABmXXJ\/oc\+xFsBWVJhViLZ5xjxF9QhowmbKxFIBINv8w32JlDLsnVd\+5cl8y4Afu5Zb7n109qke7KPvp\/189USIE5hhSXnrXeaiFlgeq6u1zpt2UK96eEAWCOr0SQRNVIgjKY5jgHU2022LChNKA9B5jpfsif10EaQKcxKlvT1bZSPq7SgtIXyBgFXpCBtIfBj\/dD2GGmqliVdFgAAyPNm5lTrXuW5BUd9dPTsHkGsWX2uouICaphAYeRxDRPU0GXX\/glXyd\+olGkf590VEVDzeV6yMNBdnH2wTt68e9s\+b3X9ZKPZEOYV\/ov9x2nxkBkNgdkEADENb1o2AVbY9phGqeWsNRwDAOCYL3\+Zz3\+YLS\/14\+83e\/\/5Z3fzEVmiJZvs7o7Vgm\/sGTkgECBMAUkCxZAACV3cGnL1fdB\+mXsqISDZS9xBk2S3kRvtaq5bDaCmk8VFWq4tgrS5Wowrba5cn8ey3kJ7byBF\/RR\/3LXTvsUVWlmmT29fPL6e4M2\+yWOH8g7NUpfgJq\+20vo4QpjCCIRAEJdshQoiDU12irnqDs1lsnxSNEsSC63IpXnZe61VND8IACGNKztguPbV8bpIkGV1E2uGN5vPrz1fSSFjIfpEFskXV\+N10SXjR0KS0HwPiGu\/BVCGreT\/Cm8GoC2X\/S\+zMtBcq5WpVbutlvIg01qYNG3XvNt\/kQGNJIwsb3bbFyoF7PVwoNGAg80teM48DFeTS7Onj0vO2HT7kuBQrU7xZv\/8f39vj7\/2rFSkCwEs8WiL4xMLaJHMbwas3GMWRhAm3yjJMBSGZNszKafiZufdajFvViKY3AwckZdbjQOpPaA\/zz9N5iEL40oEZAnrGc7ZX2MNyYYAC1iJgM36Nr\/d\/mptEAnIkkzAtj3\/rVai4majDnBNrgMfyIGzbNcGdDC39kqkno\+mtJnfDFQQKZBFYd\/nZX2GVQIJAaYwK1KQgJ9wzj6tNSLBNKlMIDG0L8gExc3CSs\+ADDJudKZE2tMnWhWzMBrWn0IHXNCbbjKVaWS10lxuL2MZp8W\+DeuV9l9sNgEAswlgMo9Zw1tCMgzRTAoRFjeLwQoD1hfczFEFYqw9REd7jlCdiZmOulqQqKA3hQ6sgABAyuM8WWBATB2jSeQuD\+3Tp\+J5X0NQQ4fTABK0LI5YNgXawAXY7Ow2BzX8ZTOv2V32m8WgT29WQdsBoEVTyo7TIkmvwttUtoCEKagAs3gmHVLcurVtkVESnVno2gYd\+oqsIjpzYAVM5hc9UcLI0NQxmqREkRutozg12QILHG2Wxm8WxAZaH3JrOxLSjrmwM2pT\+b6vn0fMF4VJDHiKfmnAQRqVNEJg2YK5UZ6f51mZe7stu2YwSTBhBjzFoGya\/Jk2MASj\+R4j7tGqKiCYOKC\+bvGLLpNjVMu5NM4Fq5DuwqUauq37EmFxs5a0WCVsj8V1wza0IWZBOXLJzHWgHMX0ZFb5RFZZLKnMz\+pn26Y6MDdaYmKx\+jCrfKLmoIkdvrxNODKpvi7pK2s\+OPhyllYBtnIWCYvK6XCEgIQJe\/B\/MxijlFVHGggsnEmmIBIwyUYxvVWwAFpCiMSihQm9EAN4GLLxj5zxl6yQBe2xa\/CEOhDozaJoKgGXiEyBpNkLVEwCAESBpG0BcX0wsaA3mbU4n052YkFvBopIM2MvDMqqWOIYT\/mH7b6eHXOWsBuoOHKpGo6N\+Xmb\+m6BUFuXtZfObt08BEoWvGM5AwRQBxzxzyRbSIVaX6b7HMJAWJgw2x189q27S0AYz\/6oJzCoYgjjVFapTzEEAwQMYSgMAVtdY\+vSEWBo1q0PQ1BDmOUSmLOnh871sB2d6GtJOUkd\/TqeCp2Y\+Gd1LkBJeXw2cVEwwuSeou\/PSue46EO7PhXPe0NE2y5c5p7qILNkW9zcznQdxFPxsscYGXJh73i3JsaRWdPQDsQOF4ClEqWtnN1xP66e2j\+yxLZ\/2uHOtS6WlZZqBCEgXs63JIxMWLaFhDTbgLkySl8UHFdHcatpd85VeY0wBGPVLdLRdE0InhmWpkpJoSzI\+m9GWUs27exy3k8OgEqABnw0RAHD\+ABofDRGgAEQgOAgzE6YE6RVGN3I\/ctjci1tdJipX7SVXLAm5A5Tt7mAGmeZb1wGFQCx9lnx3YQDGqfOFmKTAkEYRzEEGB1gDLN4Re8EFanMRV8MQ0Ckn6CXXqcn\+9jk9k\/tfpPHBzQ\+k\/mvdPjrdKIBH0Y4ZPONGJ29f3vmA3MXIQAAVRn4A8v0Jlq997XlD8uSNObqKG8gZF5az1\+0eA0DVKliyCsKsCirtwLx269yZakDnvk7k00YNq2pI0iVesnrAc2CP\/7M09tvPshmSeliuK3Dmze6\/bRaTw9DGPJqBPNl5w\/dv\+G2YIn2rxne\/f601799xCuVPmezBInMuAIYCKsNfIUwkCR4rTrbcOGVpUmKJF3Lvx4iubhirnleWTEzHi\+smJ0FB3BpRcKQKu5nbvKFFQlDrrD\/XUXx4gLI55hTei1FMh080isJQi6tDMDM542HXM1kMhu5oAYncxou6ANgLv1sJz9RyKQfVkWQ9tIXFPk7AABxBCABAMACNhIoKKI5mAuLxdTIWJeXsq\+XWB1XadIAAmpUOR\+ACeowgCqnJZoQ1wCA2Cf\+BlHf83o4AoCKRK2tIS3B5WIAqjRxiWaGdzf7wBqVZ\/doJmeyag3pJMR6ixxAwJq14sjVfqyZTeFPxWKXr\+Vbe1luOYoyh\/fjju8B\/WzrLN\+Nm074yT9or59vU8t6X2B\+5fg68xKZhzhxi\/K63lxFluEE3bFf33nb\/Uh7k2U7QZ\/0a3\/aJj\/cA5LlPEG\/1JeZ2lrsua\/KXfJgq4IgwgAMiqp5GgBZcQAQeJJoLPABoMbndgzBbnsyLUQ0AJSaRAu174CRL6G0\/kQcfX5HAeywr6C1YS5hzkEI\+QSAmbhUPPV1TF3v0OIZU78tAFYiq97Gysyogk3uYhmmhhGziSVMfySXMGLG\/GHQozE170uA0lpTzDt2HuztzyQwppUFdOeDOIQtlNC0XH2lsIG6ktWMmMDW5AAsKRkz8Yg3aRgTaGUh8BGmUBh3VEOswbZRQTUJgLHtWJqWzMQ84tpFvEWIBFijE4Hp6RiVKoyBQJiqbZtntiEHQENgqfFrtna5FQFCE4IgmQHQHC1pgtngzXZ1zgnE0BtBgAnZmG5VdpMasdjC\+M5h6SCxoFQv61PgusmuCdPVpiaTssL79y7UfW0lKU6nUxiGnJiC7c2cnCAGSROvWFEDwtoAvIUMKwDRNMQMtKqKQ9ujtpaaLY3RmIIw4PQm1NU4N0gMcGZ\+59mALSagHiyxRsECzA4Apq8V1fOQHUm9ncwdDICY8RjNIUQq2UHeX0SEsr0TSuV72RgAEeioGCxkF8GUdUiJFR7dq2vFPrN3dnMQGNBMYNvINmvTYYgGmHnnZgFW6QBBACCdgvkY0Ckq4rqoizGXz0TJzMxLWIBLyzRcDoFIZbfYClZPhIBYdQUe4fT4n925gnIv7qUhJHGlSq3T5\+oWIbCGmX\/uSj\+OBMiD6RpgVkAcgBsT6OsBRRgSDhQ25qCnDxIch4QrgDiYqoEZQImkViAACDbhoNILbNLiEmNim0gqSwitDwm1p8gjNJNGUOkHhAFJAgIMmCPkmxAYCFo7ajYBMFDJCTTTFLmZM6lRG1uue8SEgQSMDSBCAJgOKx1jwHlZccpR7QIAIm5X7IIuZRwBtlVAyORz972wbTzCAGF0zDs39ZQeRkiJ7P9P2tyLLSUYh0AQJ\+iWfWJDL25jQsIhDPEVghxE6OyucWmP7OkQgdjQkV23kcd74gECjDAkdJMDq7yo\+yYm\+brkKR4wQkf3riWVZRhqQQpxOgxxin1y\+1d5XrsJiSLhSBCHHCEM0cTb97lt7xUtDVrJtHf\/QXs873pLCGPv3FH39ewLiF\/gApY6\+YoUpj78dwqCJ4Fp3Mma9W9XAwkDJd0UdtuqmnEQwSamnztsMH1y50wGJh5nc9BvPXPBpfgME1rbknpn8iFnABNCGqy2KndGPTAe2BwiZyADOSM9Pri8o8CCqJo6zcHFjg6MCANMdBeAnHV0UpHWCBohFybCtEHrZJUxABco0BBzFuIcYhostZacMx4wwYxDpDEcJmB8yExMRvWOb4BII6D1DYw797GEwDboG3X\+HaICFwASJzkDGq1pJQiiZBGDtTzRClaoP2UFZCPvRpvsNbQ5GpuZcr2A0FXHg6cQEAhgKOsnSXtKhAAAcYkrn2ohyFDnIzRRQUAL4zw2gnINXY\/YQgBQBNGchLm4hYmKovX54ODnh8TBGIJxTO3CGpKeLx1PzKTrHchdVQ4t4w0KAYFT\/58FgT\/qDUY8XSVxWUmgV\/2bSARdgbrzAdbsAXRxoAVEy6CcD7a4k5bzryDvaF7xwwwzV1R6cSTAPEJCSagVDsVNQDlQQ9CH0kRcMwEAOhTSpiTJNOBYYXNAJAQYmJBo4iCbAE0qmVaKQBoDSmJCIqdOsnZ\+JADBpiKAnp4sx6u0rEKNyiaAoOUgLhGAmmcSyE04SFI5YOVlAWzCJWOafgrK4877ZqaKvpe2OzEa8BwjjxFyHHNEl3ftjoPHVArUwfN7UGI0ZRxt8b\/tlsExfWxWUk6PXTp0gBGkPwBmSM\/QCPhBfmFNnCKj6VEAQwo6DOmmXDCkoGvb\+np7gZIGNabEpsRg7fnI0Sf37kVDr2h7mEeQcgA5Ounav8Q8s4c3c6TQjMOx2fDmmASORTfslsHWZqmcQepwxLU8bL9blouBa4LowN6ZK6s8tS2k0kShBs80hQjFkRVn6IoDOwMe6JGlgfrUDmyKntAeEvLNeLBt37Bt4DjvULF1qtyG6lEYGlKkOwCJEQOLTIj1cy5YA6cXZswAmTVMb8RI\/YRxjaajkDv82K4RaFCLxKp5WkVUVA0gonMTzp1yFNcUQJRwgBro\/CKQ845OgpkjUtWU5kKzvxpkzUZT0D0JXNC41acHGzytAbIgczDbjOeDy\+5mZxMGoPxTaog5\+93debocqLvzLhSjM4CwYs4W6g7UOdF8nNbYtMDCnGh1366lcxIYQKGoRHjX5G7R\/KHf1Lon5O4\/qg3h7I\+N7e45l4BpoR3kRT00j0EsjLsn21yWCdcBE6HMzImL0Bhn3jILPsb\/jP1uBMWsm0TXLP9600VmwKTZt\+RrTKW7wZTtH2f7y\+02cV8l87XpvU\+BRkkITQqMqSnpEUhAzRgxGEUISIJgYEzWFCYEeMapaGmzLuxrI67N4TRgIEEoLEWkFWaLBERQmgOo15jpw\/1u57DWxwEjGCdYkgLG241EjqhEG2UE4wqAC0zAuISJXLXI3a\+OiDh47G6GlbOux93kwJ5Tmn\+x27x\/T\+uxkeOybJv60MX974ZedisGrA3rBpBjnEccckQTb9vZvbp1SeubjZHrftxntxV16DGkpGQXeCHP2vvmLeozJOb2fC4ntw9WMT26hobR1iumomKFsVl9hhR0w0x4yb6Yt\+iDZFY\+IJcdKanjpP\/9Lb24HkqKAjiya7bX8y9IEfkiASNo56DyylsaMEef29v2SD8Riva7NeaBeXvngZQwjgA2QJj1dbudT66\+QEw5WKGBBYkQRhthRvYDG0YT\/7ulb6VfrgPG7uYC5UpZFyL0qd2\+x3ZfSf51n3HzHumBBY0225Z8MrJ\/A0\+th6w4izUqgOIsaqoGKI6ZiY\/s4p7RKqhaGpXHDmzqg7NSBd0ZU1AwBnuRH\+YJPTJdG5e3W\/UNOzJPqqBDCUwC3YGaaN2qYLo2VkhnoLZX6tt2Vk\+QWfltDZDkckNtDt\+\/9Z5c0IZp4pSc2g3b6gkZk1bIM40QzY4UBu0cBE9vgKw4OrKPuJ\+\/AYui\/W5xLl\/2vuLLZb7cEw6LAIbEjRY5OkVpiBEsJwgwl5nOrnH6evMajIn\/3dLrOmAedKAccssbxy1m7HwwA4ub2e1ms2m9AWgiP3was\+BR1BgjFrHNwcC8aGBoMRxkIHfd7tY4r9grmdPV3nXSXmkAd3\/aYowg4jJkE4G9n7jwpzkGkuQW9rJgkgWzsK1NNABmUet5PtyiZvviIGKhR7spkxZM\/uIPIZfvq\/SRV9j7VYlgqgGdKQrCZlzRKkQXSQZGAAKsokb0JmBcwfK2ZQMTEgXdESn5yiQMDFREAl1AwkwYxwqbC9OkNOA6wAwklWwKgrQZmKJqYiaYDiUZcMCxgjlg2SaYaUxncKmwmpopfiMuszbsvCm7k2QlqzAdlWANOCMgSwsBNRV\/6DhzsO\+l7QkcQbYlnBwJPuMdf3g\+pjUr1GOIuWRfzsPzLgX6wJg\+AYCKczzdnuCJNWCEyNuWYYTzne3FfGy9gZIhPUNj\+olT20CQbCjxk\/zcPjj3CwZURKZwvTBghuRwH9M9IwaMkPWUNUWXk7VIdwnc5EvNfHwdxYwZUCXOICNIH6iYEHm63dYnZhrTGRX8Lt\+xJ\+dNEnlcRuoTcIaTN2V3kcZE2\+UL6fGx2VSksgwuMWGASIzoAWMGRF7KV61if2pNkjlG439f3fJUHppZX5RaeWpbozbr5lvC4kLaIR\/dOu9apXUoNQxc4Of2sB7crIHVVW8DAKjxnM\+v7bG5r7ozpKS0rG25pqLOT7fbefdsioxnRjUuTx\+omViqX20X86Q2N9HXKJoeQ0o6EIiMGUwG9\+61QmE9DSnSmWF627QpOmyu0dZRYEQf2w2\+n9V5p1aprdaAMU6fIcXpQsbEGeeHJp5c05jO4LDn6gXesZ0UlsdlksHIUo0mb8ruIo1IubN9Pxt6O6szITGDG1BNzGAg2lgDphGZ2Mv5OYm7XPFCTx0AINq4\/nq1A0OQHglDwDZJpT4FGQYbxUZhn82N8SQgebxuoZZpZ6CO9A0gQkWiwqDkEChm9XwXuYADDWkqWO42RrhsE9rRAOzPGie1FEN9J0kASrgnS0khJjoBke\/qm5elxrzXhX0d69awZNOQ0immGcQWW3tnup5sszSbhjK4Yde2g\/eByF1FWJf7hfNWALBSWUmh\+QFWK1pHgTaM2uIctB6Fm\/2262aiCPOSDgAgGeMs8gtpVwYO3hbqD\/5mHxSBkfN9L3NgW94CoAaMTE0CpvMfBVIFFnpn04N24QqxA\+IOauVlB4Pvu7q\/sjntZFmst04AmAVhyoZ5AIu2cnRqnAXNI7NIxKBKCiFDgLnPXgRt8Y4OunqseXfVCIaIIF8DI4HGCFQNl61JkdslERhQ0ITJfDLDLDEpLLpCEri4kRmGMtWAQHLNSJbDZCSioQBIUgoUvGH1Ht9qBONSYcgoYE3XBBYWNS4oGSAMjKiAoUp6rRAn0xAvG9cBihGUUZvysU2qEnQpC1QzDkEsBWa8KgMqwJARRFhwmoH2ATER\+axlqdO5p7\+q5xILwMc4Z5RmObjoz\/6Qr\+jxaZamjAMT9z\/4qn1Af4NSLTAY8jHQ1P\/svXueV13gwDiOTfzjbtxLewkwSnz\/ths836uOS1RfsQ\/obxBEBA5MWw167\/5nj\/BVN8AxHyMuxjHIvT9sH3j34\/ve\/wQSZgVcYFM3mxIoFezqv9uV1z\/\/bT0pSIif8V\+8Tb75NkyZZPnqM33cump\/0kP\/X7XyaF8RSBJqSSqwBdCr9d\+nzF\+tE2YFEkKVUNCUV4aSsFkSYe5kSSqE0fXPTOsef\/CINWWPTIqks\/b\+LeTocSc\/\+\/wMj016QDULqFGlRT2RN9r\/7qQX9aC0GaCnGVTVe5Yf2uP6GF3VmAaMgmYhiIMPunGP7xm1qpotGPfOfXJP6cmkIpG8d7d5fM8ArWqGKgLGNSioBawZ3eiDu5\+XVLFMs5AN1UwYNDLvb73Hv\/zw6NcfsGJnEiXuIFIAsYpuKlGusZ6Gucp5C6pMumKJdb261UMVTAji9Ud9R5cdDq8\/cX5r3mUVqQmoIgUQU3RsV\+oZhfpoNuSupEZVUFuQEpnyQixTUiOKuAAiQSLdLOsebnTXHNRXNeV\+2YxKZ\+3mideXzASklG9aCAMRSijpPasRRkitMACQIJhNgARSUI4hKgIQlv3UiC4DQQJFWO51tEBgdgqApQazNQEDLgx9zgLC5AtkTA\+BQliAYoCy1JvysbkQgACKbcqhhqwZL1tGAbMIIMEWSSbR\+ay9kBlnBkjSkxqzD60esv22gJfrfYNcFV\/OdEf3yT\+9p39pu9sS983wv\+\/S7qA2vU0DFGEMOT42hSYUKlXUmWyzJ2NMtPnX5D3PN7d\/BeOGav\/10\/6jjXNYhxFgwuYCTSoBJkwqEAbusG0bGgBhm3EIAJFQwATWMn83J3ITRCzd9WuZHkwWmherMf2tuf0rrcoUzIkxdwBzIRYBcVmX7\/5HlYyYF\+pM7ovKupN7yXt33ZoxD8zbBCjl4z4AsoRAKQEPCJv4LT\/sfWR3GitYxsECmkcFNh3Par9pf7bY62Iedf1ylv36tSTG71ZYlrPz3gwkg8xujQImjXVFwgaqzMlQmnFBT\+ESyCUQuCDaREq3CxHIkcNcGswlTAsIC6QpACAmIu\/jKNUzNZbHbyGYmOjI5pQYoxFp03YpnIMkfHeFZEE6GnH9BjjJwAV3Y0QyRL7PZRZ8xRcAShFgwrK5wpYKtrc7mQZhZhxhcwRKNg2C1pi\/m4i9LmZzOiyZMNDAYvxu0aw0DifxG5CPCcjs1q8BLrsxF\+zJWCmRmBrYrf8X6s89DApUSYoCXtTN\+T\/rSD5VHVFKIuDKLHRv1E0aINYiy8w4enb3L5\+sbvaYCcSA5OHdR23oPr0\/3qq\+0bCsMnTQH\/\/DepNiNjeqNY7257vsW26Wtn2UhfPkSCBS\+8f\/rG\+9nZIgXfu3v823dJ9gJkXJHGVuuuQv\/9MW\+kPjGAB4JfPKWg4DsG9fO4xTzRJeYxzIEYvxu13UK43RtYAaFcTVggDK7NYfDZgZ2b8hnAiPM8mscX0L6v3TdUqoaCHqRF2sHb6hNZ46hQtNXbTCOckrfJJnylXfmAxEFVrEDNu5aZuMgQz5S9cDVaJFeXhvQzed239v2Cv1maSyKuy4\/9p9PbdiNq\/IzOimrtnIa271WmYezqEJq8JcFHvnH\+q1ZoU0o9B079lnvKYd0awIaucod5vLrt0hIsNTYInWmHmVCenndyOsqyW1YbcidfniNs4xJJssFwOUBAjLICwMlOap9nNBkHT3h9bO8bQSQFjGzwUCafzOEMVsXszzQHllJCkLsNSTVKAlAoBUW3CL0NR2sZSjmfzuheX03v68Zbvfxp5Sv\+bY\/kQJAOJq8fUsgTkAz6FgemO47lu2Qf43dngzXJdKuYlS5gA8C4qMF5ghtZ6BLt56FmZavVURD2PmcXgyM2zwTK3OEoQ5QPVNUi9WkGIK4hAJgGKovIzN7JAsGXM2dITEzlzpnfrj\+w95KlOkpqyoCxHzE\+tFGmVMyY1Gxb7ehWKKVNUh6soBYF7ODRHJSXmR0CQWdR5KojPQzSISmQOygMqAy7Hz\+G8tPQ5oyLWXvzYb48xL6Q56bEgDZHt2cj9HgAJjPCEAadEu8yonuXcKYjRKWmoiTYjxCg1AEwPFxMBNztPjFB0lsCEXMTusIGI8zHLI5hESOeG8jTbEGcVlexHGO7PT1tiCGCZGgZap0gY8RzRxRGNbq4DmHd8lm6wHRoEzmBfWqpCpd9TIPXa1QjAEqGUyjg\+QB\+Uwhzi9UxhybdT\+wzxMImDyZsnAd\/Mv\+RfzGSArA9BoqhQZxcv843qr\/g6FErDFv\/fW\+r6WSje7PDCOgbC375\/3bT05nyUccmAwpVlw837Xm7w4jYFmCWiZykG2jTX2\+3\/Yj95WotF\/u2bf06N5RsAZ0DJV42\/27pl7uS8PerffYxeZyIsen5x7cVi5aUI0v8uzvIsnyA2VxlQ20LQu8fk6wmPqUVvSkO9b3\+MakqgnTqoaFKoLqAk\+6zN7eLtIjxA0oAIu6vEd7rbd3\/2oygwn0MhUkeuZqWomGLl5lz3B2qABn\/TFPcq2pIVVJEpUXNXE7TuC7qnnaMvfXCO2dIV1IuP1yJzje8Isar2YROuaOqVzQBZQGfIpADDk5N7iO6RRhFGCLV\/WEmDEQtb\/e6BcmYWImwPL\+UT397mPIGn97WJRIkVku\+IStlWt8Wg5F4A9coBp\/v9TNE773kmE0yhprQwtIJoMhEAnJwFrMgbXFWAYEO3VxXRqxcaErCoYQNKOdempbWUobdv06V5NjGqGrE5RWKug2pDVKQJgdggsKQ91ea1jwnAa14EpPQ2UFw8Ad5DyCB\/UL\+zX\/Fktw2M6z9vakXMECpYwWQi9J\/O29bJkSgAUZiCFvTDfaJ\/VMUGDhyGWgJfs6\/YZHVdC1PY5W\+eDEsgIyJjARL7oHZoPdgJesC9bQnNAeGgapyuZOfauCInpFEAXjFMtp\/ihTV2K\+R3zlUDDYmUaAeMCcX7bzB129EUvFI\+R6CFpsbIYjCNMmJQwCcOTxAyf6HKxVgkAhthU29vNOkqPQCJYkmCjZhwi1S63tiM1IBGIdpWSTQXTpAoAJAKJACQS163giMKWasduTntVMrTXvT73OxVoLrbr9lk9gCmwMGdhFBlwcmC3eGEPIoGTIPqoj\+25PZwEgnwGnKVJ4FQYeDLZ9Tvbq22iwiIyEd3ufXuSJwaWaC0zxh11zXZ4UT2MWmYLcTdtv2d69GEJOGUaxEVkxRlwGTX6qI9uWPQFVh4AiJ28gtCkZI4McOMYrRLQ5spD1HDdgekifouCd\/\+VMtdbLlLmnxDQwqERB0eLXE\/agEwo\+QfuIUsqMeILAcRZFMfesXft63sorxJJxb1v1\+yregzXcgLlC2leJQ5C4Fyzv3Zs334bB6EGhTXMTf5\+r\+pZaSHxVc2YDTrmD\/6BfTnLUNwMUonN3B\/ev\+7NPZlLwKrSMi2iBgXNZsVlVLcDDIvADjskALCW0iBQAIFm\+e6vW\+\/\+HEORwJesu\+H4f7LusariEnI9dQ2CsOQwjsip8RoDfZAsVY\/V\+gag5TDQjIhJV7bdiBuqgGmNMDHVswIYkXRluzFilhCRayEirTtTuZRJlFSWytLKYFwaWeU1g\+kssBEAkCFztf7Y36bu\/pxaJIH3l93V0qg\+1XFdrbt\/spGUjfOIyqqFn3nAwIQgC7DpLB9QMMsQcEjf1GuzvW86AoTNkWwS2CTpUbN\/3js\/\+UhZ4H\+davn6HP9vL\+AkmXrpc7i27P5\+3l1fG4axydkLYuIJS9bFdffdHB3u7t8uNV8BYLk35eVAtgEk8fTvVbf9Xji39uvym8y0f3fLMNeAWbKath3cavdJEW29JUzNCwGY8jM2XQUpSxolteWoWAYAhAEx\/LogEQDo7NYp9wARdX\/7yPM5bWiODqCFWofuLYYFViJcIFvW66uvT9a0\+HVBl3bJZutRzADn4ILjhrbrKTTrTB3hthsC4\+Cck2hLawZZuIrZCGGKi9lQ0t2zPltrMZhER5osw0GSuUaOCHboQ7aCz\/gIOYMlLUVxx11079IKGQuWU1jPHj0YEEOvCzq18b6\/hwQ\+BuToc37ln\+xrChWadUZ\+6y\/6kVsHjKP\/8xu\/wQ\+2RfqB4m1i4RAIaAzE\/dVu9MPuG\+ZaC6amfnfH98OlOEiugAf90j\+qr69CJR\+0ZuOlV89\/3PUzL\/HKmh159BeVR9uaqQVENTqzG23pEfoKzTq1G1d7fENUqdHJ3Wylx5d9YHhFi\/UAALgEdssue2JrZH09Mt6NKMXZUDMK1ej4brXLQ4KK5L51XFTsDrptJ9BEdBADQOb377obdOcp8Rx3MCCGb2FO5m3KNRTN06vb3eQz1\+N8AVv23Xt9s8Joadtyd9tT9Y2geRQYAgyVQjlqOseFkr9Zj3JVv4UhIAYUhsgBIKzZfdNlJFWOlQpUIqNreFxMsHwJCHNt0L8iidRO\/fn9h0ydregqdY2OoZLFPqVVbljfWKf0qNSVVrlO1Un2o7qd91uXTuoUhDBOrbJqKyvVHZ6u\/yF6BM1qLyLYyf0qcw6o7z05KlNU1XVQYSi6lJJKY\/dDjncPoyqp1Km6Uv0623mHldWhTlEBMFWfDlXXIXY7fL9dLRkAE865jUSCrr38FeZuA7JVZFrAXW2tUEXdVRARiEQaAIVFmq\/aZCk66Zolb9ywsGJlIwxZRq\+KEZkzyDCrWFPPZOn8ZdCIijAAWF5WpzdICCxpw8ZyI\+uzaWQIA7R8owKgTkMIESptKUv6ZpfrhAmFAAO0vO5sU6VlI8RbjGYhIqRUAEfMQiUAoNAsBe01zryjQIyNYIAAQxkN2vfXEihEfXSDVBdsK4HV47QgOJpZCJQAwEK66c6vWtu\/Ww2ayXs\/BtT5w4kHrp\+LJp86pHFhABpw5v63\+ediZP43SzTHUWuBS\+KRBzHSshrVhZu9\+wfrBMB4ArQ2EC\/IuuOed1Yd\+91qU5O7R6cjiKOgNhUBkIBATuFRGrvmPIyEQS01ST4XwnZEGMgDh1Cr7Ea6QpHypnlXBV5gLR91q0Dz5ZdTP\+d7fXj7j8lx7NXWIea7boLmoqSDBAOEIdlrrOTDHJGp7Wk7qrcLyyi\+x4c5goWhhvtFvGg\/4aNaNwsAS\/qOdw4Ja4yhhvGHsFyrEat1afmNPEfgEuN5JH0CaYWWCCSI4fH8VQfj1tu\/b2\/\/FfYhyRQjhSQUVn709\/nA636\+LwYYYQKJrXmJh2qdSM3vbFX3ETbKBBJb20s8VIcIJAIAHjLDumav8ohWCGjRIolzcwOCzSkHaMk2KwlgipQNZd9rjAEyimlV3gjTjXd\+2dz\+vQ0DsXA40fO7fqwftQ19TxgGQGFM42xkw8x50UmemebghsIQDC313m0MkCpla7kxQJg2RZx1ykaKaFX5UBLCAIA0DgZae9msNnC11xQLRHDfS1PAPcQav8Bms8xX0vbAkWBOzFNZBxLW1gbQQXsTvTy0IuQPV5kpaZf5Fu\/nBFaLMxyTrto37X06IRvCUJNja3umPaUz1HyTl2xJWzWT0L7U\+N4jbc\+8AgGiVxsRUDCVsKUKJG5xfnsgawoIA4YJSZhAoti26pw9wKYiYUslwgCZcRRz257L7\+kY9fZcbiIaQF03ZgydOXNjmw0VzV3MGFQsZLN8d5uvpC3MoWgaJppJqDAwgD25VYRyh5EA0UMUtXpbZbPsd\/9b6UoCO5JpV\+j8L4CIZrW6aXxIGLMfhUm2WcOJsFNDaiQWVto\+VschTR\+TAus1lYoCAW0EgHGXSGQRlwpjKTMMcSphmA0NC1EENnfJkjIxzLBFpgQeEp05UG9KWxRg\+7YbWqem\/gkgz5qsJg2EMXMwGESdKQ014l1TBQMIdCZYgylWEwCasPvOprxY61YDAAFBZ5QiSapIHKB\/3igASN1yWvQGzpgsxkYMhYAo1uPwCpbSvJ3oiDsAJ1ErlOQSXlIQARK1Jl7yp38pNwAIO4FRyZRBVa5gSRAsmkMdpVKMsCWSqSYzgGFYuu7G4i\/a2gFFe4J4NpmMBf7hfBwlDQoWCZA0BfBa\/hV\/nkrDambzXZ28P5ZAfddwl5bnpU8ufVPsARhRNbemHm1zNx4LKai2fnvunSBhiaiLcfpDad\+P6i0qS5IXhACwlLDSxIfn3rn5uyCAoGDJCjrEmmYMn5BgqUxQ2kISEgPqO3P7fnfSYBkKmCdcGNNcS0zeiZVMHDoUQxWimPgbfHBMC8Mlfj\+HL4qx9rwnctnTGMBLSNrB994OQwAm0bpdd6c7XrBsFw8z6NY\+IRe\/Ke4AAOKOcc1zmXoiUBmVRYqcNgB3tjBpxUdfeeOljw8BoGBeJzK3WqKMD2akVMVlAolAkmDIqLo3vPNnAeS\/91pLTOdmg3W8IAc9I1IBi2vzJW0IiQQIJOxqEUzDAELxYPX\/VKkDoMTdGsE0NiIY6Ar0if\+\/\+pHNDuyicsYNwQgStDIMS\+TmiAer\/k9JACTiw8okFCaCIWilGJdiKZYMWdDK\+Ga4gFVU3m2JS7IOesLXjmkcCAFCfRQQdMpGwnLkkxAVDQA4E3bN59FWdxhgJlHRlBdNrZmEc4MVZJShNMmm2rhZSn4f1TPqIaJjk3EjeKxbn0WcsTaL1EXL9gkT15KsiZUpeIZryjQWuygMAIO4cmsh5SZNvFaan4QAula5e06Mbi\/LiB7Bo8r\+IbzHoczDMEkvBThSCDCJ1fkfAsCSHMQImhSqzgSAOW4SKYChYAWs0BoYynNrikCFWmsc2uxrMlChtBqLa\+vDKljV1NjL28nPr1Bvjf2h87gKxdXIO3RGpa6SY4XroJHHCz9WuB4a\/SNpTbsDELXMH6Ux0u6qmZ0AgjXGGMMLUzSF09dBLFBPw\/VToOQ3QPNqahhaAcC4StW7R43U231kwysAiFI9ibCRequPbHgFAGFWKrUxu1Hk9CN1I5ZlBrbNHN3y\+1mzWDUIJBfR9mJ6XfNkmTR1cUw7tst\+ydHIEjvBY3yg1sL8oen\+8AzCMnEBgAwymaupL48wJzihKuemCgS6CC8iDAjDKIYRLlm2AcVicyaYoOxYMU\/UZb3KGZw\/JJ3XZrS5QDBkFjjLqFKIHgVhWjnWNGRlCJgTev\+uIJYmWP4YKUlOGExkGwgYZteebrsWNAJg1up9nNy26aoPAACSSpfXKiSNgsD8ctQQgIqBGquWPUPKroPG1KRAkSKZJCIlLUfnSKLBUAMlC0gkAgCFCmuNVHs8E7UwCKywwioFrcHxOjkVFoCnQqoHhAGE5cs1NyB2\+Ya3m6AewvagNumzacdsgMl\+pVY3VtitMnHQSQ7Tkh9YXkC\+ZAKC3YbcQUNbpCCXIdocSLzGLnCUYyeTHS5zhh5NLf06W7yBHlmJuFS2exDz8heDLa4AACfZoFUqXpujWcM0ZIcLkwJdVmdEQfuBWRyf7dQG4iqf6yEMNE4\+lUm\+AWDqmKhR\/GGeYruusq1bZAlBgVQ3zICJTdalBGFt7T7T0I0JwAqBjJkBSB57C2xAAWPGxECHbggAMHUm9Cimcb0eZpKaKQNDwEwwPUT2nkaBbcqBsKkwFZMAQHc6kLbbNKWM1N3KNCnqTMaBYlbTx5gFFkup2H9Lje0wFxjwOxIAoAFQR6UTJgRgFvZlUyoyAeHJ79iCAFu6h3oECFMwZAeznKY4dn77BVsmsqWFEyc1h1QpNdmIhoDJlsTm2EBLMoypiLwOfAaFSpVTqiw\/BiAkAq7W848mvaDZpi2oEIAlqwVcoC3zpxjADmjj9egIcDCmIOvsUe5yalzEBGW\/KgEAAA\=\=) !important;
-  --radius-ml: 13px !important;
+  --radius-ml: 14px !important;
   --radius-prompt: 24px !important;
-  --radius-settings: 27px !important;
-  --radius-xxl: 21px !important;
+  --radius-settings: 28px !important;
+  --radius-xxl: 22px !important;
   --setting-item-background: color-mix(
     in oklab,
     oklch(23.5% 0.00125 281) 87.5%,
     oklch(27.5% 0.00375 281)
   ) !important;
   --shadow-button:
-    inset 3.5px 3.5px 1.5px -1.25px
-      oklab(from rgb(15, 115, 255) calc(l + 0.075) a b / 0.75),
-    inset -3.5px -3.5px 1.5px -1.25px
-      oklab(from rgb(15, 115, 255) calc(l + 0.075) a b / 0.5625),
+    inset 3px 3px 1.5px -1.25px
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
+    inset -3px -3px 1.5px -1.25px
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5),
     0px 3px 15px 0px oklch(from oklch(23.5% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-button-error:
-    inset 3.75px 3.75px 1.25px -1.25px
+    inset 3.25px 3.25px 1.25px -1.25px
       oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.75),
-    inset -3.75px -3.75px 1.25px -1.25px
-      oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.5625),
+    inset -3.25px -3.25px 1.25px -1.25px
+      oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.5),
     0px 3px 15px 0px oklch(from oklch(23.5% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-canvas-node: 0px 0px 16px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-fab:
@@ -2280,7 +2268,7 @@
     oklch(from oklch(23.5% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-input: 0 0 0 0.5px oklch(100% 0.04 281 / 0.125) !important;
   --shadow-input-active: 0 0 0 2.5px
-    color-mix(in oklab, rgb(15, 115, 255) 50%, transparent 75%) !important;
+    color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
   --shadow-muted: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-normal: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-setting-items: 0 4px 12px 0
@@ -2292,20 +2280,20 @@
     oklch(from oklch(27.5% 0.00375 281) l 0.00375 h / 0.5) !important;
   --shadow-strong: 0px 0px 24px 0px oklch(0 0 0 / 0.375) !important;
   --shadow-suggestion-item:
-    inset 4.5px 4.5px 1.5px -1.5px
-      oklab(from rgb(15, 115, 255) calc(l + 0.075) a b / 0.75),
-    inset -4.5px -4.5px 1.5px -1.5px
-      oklab(from rgb(15, 115, 255) calc(l + 0.075) a b / 0.5625),
+    inset 3.75px 3.75px 1.5px -1.25px
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
+    inset -3.75px -3.75px 1.5px -1.25px
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5),
     0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-tab:
-    inset 1.125px 1.75px 2px -1.25px rgba(255, 255, 255, 0.25),
-    inset -1.125px -1.75px 2px -1.25px rgba(255, 255, 255, 0.175),
+    inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263),
+    inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188),
     inset 0 8px 16px rgba(255, 255, 255, 0.025) !important;
   --shadow-toggle:
     inset 1.5px 1.5px 1.5px 0px
-      oklab(from rgb(15, 115, 255) calc(l + 0.125) a b / 0.75),
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
     inset -1.5px -1.5px 1.5px 0px
-      oklab(from rgb(15, 115, 255) calc(l + 0.075) a b / 0.75) !important;
+      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5) !important;
   --shadow-workspace:
     0 0 0 0.5px oklch(100% 0.075 281 / 0.1),
     0 0 20px oklch(from oklch(23.5% 0.00125 281) l 0.00375 h / 0.75) !important;
@@ -2325,16 +2313,16 @@
   --tab-sidebar-bg: oklch(100% 0.05 281 / 0.0625) !important;
   --tab-sidebar-container-bg: oklch(100% 0.06 281 / 0.025) !important;
   --table-row-bg: oklch(100% 0.075 281 / 0.015) !important;
-  --table-text-weight: 425 !important;
+  --table-text-weight: 420 !important;
   --text-highlight-bg-search: oklch(
     from rgb(248, 201, 111) 0.875 calc(c * 1.375) h / 0.625
   ) !important;
   --toggle-gradient: linear-gradient(
     to bottom,
-    rgb(15, 115, 255) -30%,
+    rgb(27, 126, 238) -30%,
     color-mix(
         in oklab,
-        oklab(from rgb(15, 115, 255) l a b / 0.25) 30%,
+        oklab(from rgb(27, 126, 238) l a b / 0.25) 30%,
         transparent 70%
       )
       180%
@@ -2601,7 +2589,7 @@ body {
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(26, 121, 255), oklab(0.73772 -0.0264446 -0.141198));
+    color: light-dark(rgb(10, 124, 255), oklab(0.744301 -0.0296486 -0.11765));
     cursor: pointer;
     filter: none;
     font-family:
@@ -2628,11 +2616,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
-    text-decoration: underline solid oklab(0.73772 -0.0264446 -0.141198);
+    font-weight: 420;
+    text-decoration: underline solid oklab(0.744301 -0.0296486 -0.11765);
     text-decoration-color: light-dark(
-      rgb(26, 121, 255),
-      oklab(0.73772 -0.0264446 -0.141198)
+      rgb(10, 124, 255),
+      oklab(0.744301 -0.0296486 -0.11765)
     );
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2643,8 +2631,8 @@ body {
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(
-      oklch(0.603409 0.216441 258.855 / 0.666667),
-      oklab(0.73772 -0.0264446 -0.141198 / 0.92)
+      oklch(0.608484 0.214179 257.289 / 0.666667),
+      oklab(0.744301 -0.0296486 -0.11765 / 0.92)
     );
     cursor: pointer;
     filter: none;
@@ -2672,11 +2660,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
-    text-decoration: none solid oklab(0.73772 -0.0264446 -0.141198 / 0.92);
+    font-weight: 420;
+    text-decoration: none solid oklab(0.744301 -0.0296486 -0.11765 / 0.92);
     text-decoration-color: light-dark(
-      oklch(0.603409 0.216441 258.855 / 0.666667),
-      oklab(0.73772 -0.0264446 -0.141198 / 0.92)
+      oklch(0.608484 0.214179 257.289 / 0.666667),
+      oklab(0.744301 -0.0296486 -0.11765 / 0.92)
     );
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2686,8 +2674,8 @@ body {
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(
-      oklch(0.633153 0.200206 258.856 / 0.7),
-      oklch(0.73772 0.143653 259.392 / 0.75)
+      oklch(0.637848 0.198114 257.29 / 0.7),
+      oklch(0.744301 0.121329 255.856 / 0.75)
     );
     cursor: pointer;
     filter: none;
@@ -2715,11 +2703,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
-    text-decoration: none solid rgba(15, 115, 255, 0.3);
+    font-weight: 420;
+    text-decoration: none solid rgba(27, 126, 238, 0.3);
     text-decoration-color: light-dark(
-      rgba(26, 121, 255, 0.3),
-      rgba(15, 115, 255, 0.3)
+      rgba(10, 124, 255, 0.3),
+      rgba(27, 126, 238, 0.3)
     );
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2773,7 +2761,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
+    font-weight: 420;
     text-decoration: none solid oklch(0.85 0.00375 281);
     text-decoration-color: light-dark(
       oklch(0.3 0.0005 281),
@@ -2814,7 +2802,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 675;
+    font-weight: 670;
     text-decoration: none solid oklch(0.9325 0 281);
     text-decoration-color: light-dark(
       oklch(0.24 0.0005 281),
@@ -2855,7 +2843,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 675;
+    font-weight: 670;
     text-decoration: none solid oklch(0.9325 0 281);
     text-decoration-color: light-dark(
       oklch(0.24 0.0005 281),
@@ -2896,7 +2884,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
+    font-weight: 420;
     text-decoration: none solid oklch(0.85 0.00375 281);
     text-decoration-color: light-dark(
       oklch(0.3 0.0005 281),
@@ -2937,7 +2925,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
+    font-weight: 420;
     text-decoration: none solid oklch(0.85 0.00375 281);
     text-decoration-color: light-dark(
       oklch(0.3 0.0005 281),
@@ -2977,11 +2965,11 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
-    text-decoration: none solid oklch(0.85 0.00375 281);
+    font-weight: 420;
+    text-decoration: none solid oklch(0.9325 0 281);
     text-decoration-color: light-dark(
-      oklch(0.3 0.0005 281),
-      oklch(0.85 0.00375 281)
+      oklch(0.24 0.0005 281),
+      oklch(0.9325 0 281)
     );
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3026,7 +3014,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
+    font-weight: 420;
     text-decoration: line-through solid oklch(0.525 0.0075 281);
     text-decoration-color: light-dark(
       oklch(0.715 0.0105 281),
@@ -3059,14 +3047,14 @@ body {
       oklch(0 0 0 / 0.0625),
       oklch(1 0.05 281 / 0.05)
     );
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-start-start-radius: 7px;
-    border-start-end-radius: 7px;
-    border-end-start-radius: 7px;
-    border-end-end-radius: 7px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
     color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
   }
 
@@ -3084,27 +3072,27 @@ body {
     ) {
     background-color: rgba(0, 0, 0, 0);
     border: 0px light-dark(oklch(0.24 0.0005 281), oklch(0.9325 0 281));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
     color: light-dark(oklch(0.24 0.0005 281), oklch(0.9325 0 281));
   }
 
   hr {
     border: 0px light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 17px;
-    border-top-right-radius: 17px;
-    border-bottom-left-radius: 17px;
-    border-bottom-right-radius: 17px;
-    border-start-start-radius: 17px;
-    border-start-end-radius: 17px;
-    border-end-start-radius: 17px;
-    border-end-end-radius: 17px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-start-start-radius: 18px;
+    border-start-end-radius: 18px;
+    border-end-start-radius: 18px;
+    border-end-end-radius: 18px;
     box-shadow: none;
     margin: 0px;
     margin-block-end: 0px;
@@ -3125,8 +3113,8 @@ body {
     > .match-tag {
     align-items: center;
     background-color: light-dark(
-      rgba(26, 121, 255, 0.1),
-      rgba(15, 115, 255, 0.1)
+      rgba(10, 124, 255, 0.1),
+      rgba(27, 126, 238, 0.1)
     );
     display: flex;
     font-family:
@@ -3153,12 +3141,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 500;
+    font-weight: 490;
     margin-inline-start: 0px;
     border: 0px solid
       light-dark(
-        rgba(26, 121, 255, 0.15),
-        oklch(0.59019 0.224474 259.386 / 0.025)
+        rgba(10, 124, 255, 0.15),
+        oklch(0.600473 0.189593 255.849 / 0.025)
       );
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
@@ -3171,7 +3159,7 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: light-dark(rgb(26, 121, 255), oklab(0.73772 -0.0264446 -0.141198));
+    color: light-dark(rgb(10, 124, 255), oklab(0.744301 -0.0296486 -0.11765));
   }
 
   ul > li {
@@ -3182,14 +3170,14 @@ body {
   ul > li::marker {
     background-color: light-dark(oklch(0 0 0 / 0.25), oklch(1 0.02 281 / 0.35));
     border: 0px light-dark(oklch(0 0 0 / 0.25), oklch(1 0.02 281 / 0.35));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-start-start-radius: 16px;
+    border-start-end-radius: 16px;
+    border-end-start-radius: 16px;
+    border-end-end-radius: 16px;
     color: light-dark(oklch(0 0 0 / 0.25), oklch(1 0.02 281 / 0.35));
     pointer-events: none;
     transform: none;
@@ -3203,14 +3191,14 @@ body {
   ol > li::marker {
     background-color: light-dark(oklch(0 0 0 / 0.25), oklch(1 0.02 281 / 0.35));
     border: 0px light-dark(oklch(0 0 0 / 0.25), oklch(1 0.02 281 / 0.35));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-start-start-radius: 16px;
+    border-start-end-radius: 16px;
+    border-end-start-radius: 16px;
+    border-end-end-radius: 16px;
     color: light-dark(oklch(0 0 0 / 0.25), oklch(1 0.02 281 / 0.35));
     pointer-events: none;
     transform: none;
@@ -3222,14 +3210,14 @@ body {
       oklch(1 0.05 281 / 0.05)
     );
     border: 0px solid light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-start-start-radius: 6px;
+    border-start-end-radius: 6px;
+    border-end-start-radius: 6px;
+    border-end-end-radius: 6px;
     color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
     font-family:
       ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -3245,14 +3233,14 @@ body {
       oklch(1 0.05 281 / 0.05)
     );
     border: 0px solid light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
     overflow-x: auto;
     padding: 12px 16px;
     white-space-collapse: preserve;
@@ -3265,14 +3253,14 @@ body {
       oklch(1 0.05 281 / 0.05)
     );
     border: 0px solid light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
     overflow-x: auto;
     padding: 12px 16px;
     white-space-collapse: preserve;
@@ -3371,14 +3359,14 @@ body {
     );
     border: 0px solid
       light-dark(oklch(0 0 0 / 0.0625), oklch(1 0.05 281 / 0.0625));
-    border-top-left-radius: 19px;
-    border-top-right-radius: 19px;
-    border-bottom-left-radius: 19px;
-    border-bottom-right-radius: 19px;
-    border-start-start-radius: 19px;
-    border-start-end-radius: 19px;
-    border-end-start-radius: 19px;
-    border-end-end-radius: 19px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
     color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
     font-family:
       Raveo,
@@ -3422,8 +3410,8 @@ body {
     border-end-start-radius: 24px;
     border-end-end-radius: 24px;
     box-shadow:
-      rgba(255, 255, 255, 0.15) 1.125px 1.75px 3px -1.25px inset,
-      rgba(255, 255, 255, 0.125) -1.125px -1.75px 3px -1.25px inset,
+      rgba(255, 255, 255, 0.19) 1.125px 1.875px 2.5px -1.25px inset,
+      rgba(255, 255, 255, 0.137) -1.125px -1.875px 2.5px -1.25px inset,
       rgba(255, 255, 255, 0.016) 0px 8px 16px 0px inset,
       oklch(0 0 0 / 0.375) 0px 0px 24px 0px;
   }
@@ -3472,7 +3460,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
+    font-weight: 420;
     text-decoration: none solid oklch(0.85 0.00375 281);
     text-decoration-color: light-dark(
       oklch(0.3 0.0005 281),
@@ -3512,14 +3500,14 @@ body {
     > .results-container
     .result-card {
     border: 0px light-dark(oklch(0.24 0.0005 281), oklch(0.9325 0 281));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .search
@@ -3541,7 +3529,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    font-weight: 425;
+    font-weight: 420;
     background-color: light-dark(
       oklch(0 0 0 / 0.0625),
       oklch(1 0.05 281 / 0.05)
@@ -3594,7 +3582,7 @@ body {
   }
 
   h1 {
-    color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
+    color: light-dark(oklch(0.24 0.0005 281), oklch(0.895 0 281));
     font-family:
       Raveo,
       Raveo,
@@ -3623,7 +3611,7 @@ body {
   }
 
   h2 {
-    color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
+    color: light-dark(oklch(0.3 0.0005 281), oklch(0.8825 0 281));
     font-family:
       Raveo,
       Raveo,
@@ -3710,7 +3698,7 @@ body {
   }
 
   h5 {
-    color: light-dark(oklch(0.4 0.0025 281), oklch(0.775 0.00375 281));
+    color: light-dark(oklch(0.4 0.0025 281), oklch(0.85 0.00375 281));
     font-family:
       Raveo,
       Raveo,
@@ -3739,7 +3727,7 @@ body {
   }
 
   h6 {
-    color: light-dark(oklch(0.465 0.0105 281), oklch(0.7125 0.00375 281));
+    color: light-dark(oklch(0.465 0.0105 281), oklch(0.775 0.00375 281));
     font-family:
       Raveo,
       Raveo,
@@ -3769,7 +3757,7 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
+    color: light-dark(oklch(0.24 0.0005 281), oklch(0.895 0 281));
     font-family:
       Raveo,
       Raveo,
@@ -3798,7 +3786,7 @@ body {
   }
 
   li.depth-0 {
-    font-weight: 500;
+    font-weight: 490;
   }
 
   ::-webkit-scrollbar {
@@ -3850,21 +3838,21 @@ body {
 
   .callout {
     border: 0px solid
-      light-dark(rgba(48, 114, 255, 0.2), rgba(58, 135, 255, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(31, 132, 255, 0.24), rgba(71, 154, 255, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
     mix-blend-mode: normal;
     padding: 16px;
   }
 
   .callout .callout-title {
-    border: 0px light-dark(rgb(48, 114, 255), rgb(58, 135, 255));
+    border: 0px light-dark(rgb(31, 132, 255), rgb(71, 154, 255));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3877,7 +3865,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    font-weight: 625;
+    font-weight: 620;
   }
 
   .callout > .callout-content {
@@ -3892,15 +3880,15 @@ body {
     );
     mix-blend-mode: normal;
     border: 0px solid
-      light-dark(rgba(48, 114, 255, 0.2), rgba(58, 135, 255, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(31, 132, 255, 0.24), rgba(71, 154, 255, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="abstract"] {
@@ -3910,15 +3898,15 @@ body {
     );
     mix-blend-mode: normal;
     border: 0px solid
-      light-dark(rgba(9, 186, 221, 0.2), rgba(85, 211, 244, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(9, 186, 221, 0.24), rgba(85, 211, 244, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="info"] {
@@ -3928,15 +3916,15 @@ body {
     );
     mix-blend-mode: normal;
     border: 0px solid
-      light-dark(rgba(48, 114, 255, 0.2), rgba(58, 135, 255, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(31, 132, 255, 0.24), rgba(71, 154, 255, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="todo"] {
@@ -3946,15 +3934,15 @@ body {
     );
     mix-blend-mode: normal;
     border: 0px solid
-      light-dark(rgba(48, 114, 255, 0.2), rgba(58, 135, 255, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(31, 132, 255, 0.24), rgba(71, 154, 255, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="tip"] {
@@ -3964,15 +3952,15 @@ body {
     );
     mix-blend-mode: normal;
     border: 0px solid
-      light-dark(rgba(9, 186, 221, 0.2), rgba(85, 211, 244, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(9, 186, 221, 0.24), rgba(85, 211, 244, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="success"] {
@@ -3981,15 +3969,16 @@ body {
       rgba(68, 207, 110, 0.1)
     );
     mix-blend-mode: normal;
-    border: 0px solid light-dark(rgba(0, 187, 93, 0.2), rgba(24, 209, 125, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border: 0px solid
+      light-dark(rgba(0, 187, 93, 0.24), rgba(24, 209, 125, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="question"] {
@@ -3999,15 +3988,15 @@ body {
     );
     mix-blend-mode: normal;
     border: 0px solid
-      light-dark(rgba(241, 110, 53, 0.2), rgba(241, 144, 80, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(241, 110, 53, 0.24), rgba(241, 144, 80, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="warning"] {
@@ -4017,15 +4006,15 @@ body {
     );
     mix-blend-mode: normal;
     border: 0px solid
-      light-dark(rgba(229, 169, 37, 0.2), rgba(248, 201, 111, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(229, 169, 37, 0.24), rgba(248, 201, 111, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="danger"] {
@@ -4034,15 +4023,16 @@ body {
       rgba(251, 70, 76, 0.1)
     );
     mix-blend-mode: light-dark(darken, lighten);
-    border: 0px solid light-dark(rgba(233, 49, 58, 0.2), rgba(255, 76, 82, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border: 0px solid
+      light-dark(rgba(233, 49, 58, 0.24), rgba(255, 76, 82, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="failure"] {
@@ -4051,15 +4041,16 @@ body {
       rgba(251, 70, 76, 0.1)
     );
     mix-blend-mode: normal;
-    border: 0px solid light-dark(rgba(233, 49, 58, 0.2), rgba(255, 76, 82, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border: 0px solid
+      light-dark(rgba(233, 49, 58, 0.24), rgba(255, 76, 82, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="bug"] {
@@ -4069,15 +4060,15 @@ body {
     );
     mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
-      light-dark(rgba(214, 50, 202, 0.2), rgba(250, 153, 205, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(214, 50, 202, 0.24), rgba(250, 153, 205, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="example"] {
@@ -4087,30 +4078,30 @@ body {
     );
     mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
-      light-dark(rgba(124, 80, 237, 0.2), rgba(168, 130, 255, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(124, 80, 237, 0.24), rgba(168, 130, 255, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   .callout[data-callout="quote"] {
     background-color: rgba(158, 158, 158, 0.1);
     mix-blend-mode: light-dark(darken, lighten);
     border: 0px solid
-      light-dark(rgba(158, 158, 158, 0.2), rgba(150, 150, 160, 0.2));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+      light-dark(rgba(158, 158, 158, 0.24), rgba(150, 150, 160, 0.24));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   table {
@@ -4152,9 +4143,9 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 20px 0px 0px;
+    margin: 18px 0px 0px;
     margin-block-end: 0px;
-    margin-block-start: 20px;
+    margin-block-start: 18px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
@@ -4178,12 +4169,12 @@ body {
 
   th {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(oklch(0.65 0.0105 281), oklch(0.575 0.0075 281));
-    font-weight: 525;
+    color: light-dark(oklch(0.5575 0.0105 281), oklch(0.6375 0.0075 281));
+    font-weight: 520;
     text-align: start;
     vertical-align: top;
     border: 1px solid
-      light-dark(oklch(0.65 0.0105 281), oklch(0.575 0.0075 281));
+      light-dark(oklch(0.5575 0.0105 281), oklch(0.6375 0.0075 281));
     border-bottom: 2px solid
       light-dark(oklch(0 0 0 / 0.092), oklch(1 0.075 281 / 0.1));
     border-top-left-radius: 0px;
@@ -4200,7 +4191,7 @@ body {
   td {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    font-weight: 425;
+    font-weight: 420;
     text-align: center;
     vertical-align: top;
     border: 1px solid light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
@@ -4237,14 +4228,14 @@ body {
     max-width: 100%;
     object-fit: fill;
     border: 0px light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
     margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -4315,14 +4306,14 @@ body {
     max-width: 100%;
     object-fit: contain;
     border: 0px light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
     margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -4333,14 +4324,14 @@ body {
   audio {
     background-color: rgba(0, 0, 0, 0);
     border: 0px light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
     padding: 0px;
   }
 
@@ -4402,14 +4393,14 @@ body {
       sans-serif;
     border: 0px solid
       light-dark(oklch(0 0 0 / 0.0625), oklch(1 0.05 281 / 0.0625));
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-start-start-radius: 7px;
-    border-start-end-radius: 7px;
-    border-end-start-radius: 7px;
-    border-end-end-radius: 7px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
     padding: 4px 8px;
   }
 
@@ -4436,7 +4427,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
     cursor: auto;
-    font-weight: 425;
+    font-weight: 420;
     padding: 0px;
   }
 
@@ -4472,14 +4463,14 @@ body {
       "Source Code Pro", monospace;
     font-size: 14px;
     border: 0px light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-start-start-radius: 7px;
-    border-start-end-radius: 7px;
-    border-end-start-radius: 7px;
-    border-end-end-radius: 7px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
     padding: 1.4px 3.5px;
   }
 
@@ -4493,7 +4484,7 @@ body {
 
   dt {
     color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    font-weight: 425;
+    font-weight: 420;
     margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -4727,7 +4718,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 425;
+    font-weight: 420;
     text-decoration: none solid oklch(0.7125 0.00375 281);
   }
 
@@ -4737,14 +4728,14 @@ body {
       oklch(1 0.05 281 / 0.05)
     );
     border: 0px light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-start-start-radius: 7px;
-    border-start-end-radius: 7px;
-    border-end-start-radius: 7px;
-    border-end-end-radius: 7px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
     color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
     cursor: default;
     transition-behavior: normal;
@@ -4784,12 +4775,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 500;
+    font-weight: 490;
     text-decoration: none solid oklch(0.775 0.00375 281);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: light-dark(rgb(26, 121, 255), oklab(0.73772 -0.0264446 -0.141198));
+    color: light-dark(rgb(10, 124, 255), oklab(0.744301 -0.0296486 -0.11765));
     cursor: default;
     font-family:
       Raveo,
@@ -4815,8 +4806,8 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 500;
-    text-decoration: none solid oklab(0.73772 -0.0264446 -0.141198);
+    font-weight: 490;
+    text-decoration: none solid oklab(0.744301 -0.0296486 -0.11765);
   }
 
   figure[data-rehype-pretty-code-figure] {
@@ -4825,14 +4816,14 @@ body {
       oklch(1 0.05 281 / 0.05)
     );
     border: 0px solid light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
@@ -4843,14 +4834,14 @@ body {
     color: light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
     font-family: monospace;
     border: 0px solid light-dark(oklch(0.3 0.0005 281), oklch(0.85 0.00375 281));
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-start-start-radius: 9px;
-    border-start-end-radius: 9px;
-    border-end-start-radius: 9px;
-    border-end-end-radius: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
   }
 
   pre > code > [data-line] {

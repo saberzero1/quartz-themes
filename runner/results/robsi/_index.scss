@@ -28,8 +28,8 @@
   --background-modifier-error: rgb(200, 50, 70) !important;
   --background-modifier-error-hover: rgb(200, 50, 70) !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: transperent !important;
-  --background-modifier-form-field-hover: transperent !important;
+  --background-modifier-form-field: transparent !important;
+  --background-modifier-form-field-hover: transparent !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.7) !important;
   --background-modifier-message: rgba(255, 255, 255, 0.9) !important;
   --background-modifier-success: rgb(20, 140, 80) !important;
@@ -94,7 +94,7 @@
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.7) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: transparent !important;
+  --blockquote-background-color: rgba(102, 63, 191, 0.08) !important;
   --blockquote-border-color: rgb(129, 71, 209) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
@@ -147,7 +147,7 @@
   --checklist-done-color: rgb(75, 85, 95) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 6px !important;
-  --code-background: rgb(248, 250, 252) !important;
+  --code-background: rgba(102, 63, 191, 0.06) !important;
   --code-border-color: transparent !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.7) !important;
@@ -538,7 +538,7 @@
   --nav-item-background-selected: rgba(129, 71, 209, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgba(255, 255, 255, 0.9) !important;
+  --nav-item-color: rgba(30, 35, 42, 0.9) !important;
   --nav-item-color-active: rgb(30, 35, 42) !important;
   --nav-item-color-highlighted: rgb(160, 30, 140) !important;
   --nav-item-color-hover: rgb(30, 35, 42) !important;
@@ -894,6 +894,49 @@
   --purple-light_x: 140, 100, 220 !important;
   --shadow-xl:
     0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05) !important;
+  --spoiler-background: rgba(240, 242, 246, 0.5) !important;
+  --spoiler-background-hover: rgba(240, 242, 246, 0.7) !important;
+  --spoiler-pattern:
+    radial-gradient(
+      circle 1px at 10px 8px,
+      rgba(100, 100, 100, 0.6) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 30px 2px,
+      rgba(100, 100, 100, 0.4) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 50px 12px,
+      rgba(100, 100, 100, 0.7) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 70px 6px,
+      rgba(100, 100, 100, 0.5) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 15px 24px,
+      rgba(100, 100, 100, 0.6) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 38px 28px,
+      rgba(100, 100, 100, 0.4) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 60px 36px,
+      rgba(100, 100, 100, 0.7) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 85px 22px,
+      rgba(100, 100, 100, 0.5) 50%,
+      transparent 50%
+    ) !important;
   --tab-background-hover: rgba(248, 250, 252, 0.8) !important;
 
   --quartz-icon-color: currentColor;
@@ -920,8 +963,8 @@
   --background-modifier-error: rgb(255, 117, 127) !important;
   --background-modifier-error-hover: rgb(255, 117, 127) !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: transperent !important;
-  --background-modifier-form-field-hover: transperent !important;
+  --background-modifier-form-field: transparent !important;
+  --background-modifier-form-field-hover: transparent !important;
   --background-modifier-hover: rgba(25, 25, 25, 0.7) !important;
   --background-modifier-message: rgba(25, 25, 25, 0.9) !important;
   --background-modifier-success: rgb(158, 206, 106) !important;
@@ -986,7 +1029,7 @@
   --bases-table-summary-background-hover: rgba(25, 25, 25, 0.7) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: transparent !important;
+  --blockquote-background-color: rgba(187, 154, 247, 0.12) !important;
   --blockquote-border-color: rgb(128, 208, 255) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
@@ -1430,7 +1473,7 @@
   --nav-item-background-selected: rgba(128, 208, 255, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgba(255, 255, 255, 0.9) !important;
+  --nav-item-color: rgba(220, 220, 220, 0.9) !important;
   --nav-item-color-active: rgb(220, 220, 220) !important;
   --nav-item-color-highlighted: rgb(187, 154, 247) !important;
   --nav-item-color-hover: rgb(220, 220, 220) !important;
@@ -1792,6 +1835,49 @@
   --red-dark_x: 155, 45, 45 !important;
   --shadow-xl:
     0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05) !important;
+  --spoiler-background: rgba(25, 25, 25, 0.3) !important;
+  --spoiler-background-hover: rgba(25, 25, 25, 0.5) !important;
+  --spoiler-pattern:
+    radial-gradient(
+      circle 1px at 10px 8px,
+      rgba(255, 255, 255, 0.8) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 30px 2px,
+      rgba(255, 255, 255, 0.6) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 50px 12px,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 70px 6px,
+      rgba(255, 255, 255, 0.7) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 15px 24px,
+      rgba(255, 255, 255, 0.8) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 38px 28px,
+      rgba(255, 255, 255, 0.6) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 60px 36px,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle 1px at 85px 22px,
+      rgba(255, 255, 255, 0.7) 50%,
+      transparent 50%
+    ) !important;
   --tab-background-hover: rgba(18, 18, 18, 0.8) !important;
 
   --quartz-icon-color: currentColor;
@@ -1943,7 +2029,7 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(30, 70, 160), rgb(122, 162, 247));
+    color: light-dark(rgb(0, 120, 180), rgb(125, 207, 255));
     cursor: pointer;
     filter: none;
     font-family:
@@ -1959,8 +2045,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(122, 162, 247);
-    text-decoration-color: light-dark(rgb(30, 70, 160), rgb(122, 162, 247));
+    text-decoration: none solid rgb(125, 207, 255);
+    text-decoration-color: light-dark(rgb(0, 120, 180), rgb(125, 207, 255));
     text-decoration-line: none;
     text-decoration-style: solid;
     user-select: text;
@@ -2363,7 +2449,10 @@ body {
   }
 
   code {
-    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    background-color: light-dark(
+      rgba(102, 63, 191, 0.06),
+      rgba(187, 154, 247, 0.05)
+    );
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -2383,7 +2472,10 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    background-color: light-dark(
+      rgba(102, 63, 191, 0.06),
+      rgba(187, 154, 247, 0.05)
+    );
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -2400,7 +2492,10 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    background-color: light-dark(
+      rgba(102, 63, 191, 0.06),
+      rgba(187, 154, 247, 0.05)
+    );
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -2460,7 +2555,10 @@ body {
   }
 
   blockquote {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(
+      rgba(102, 63, 191, 0.08),
+      rgba(187, 154, 247, 0.12)
+    );
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3384,7 +3482,10 @@ body {
   }
 
   kbd {
-    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    background-color: light-dark(
+      rgba(102, 63, 191, 0.06),
+      rgba(187, 154, 247, 0.05)
+    );
     box-shadow: none;
     color: light-dark(rgb(30, 35, 42), rgb(180, 180, 180));
     font-family:
@@ -3598,7 +3699,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: rgba(255, 255, 255, 0.9);
+    color: light-dark(rgba(30, 35, 42, 0.9), rgba(220, 220, 220, 0.9));
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -3613,7 +3714,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgba(255, 255, 255, 0.9);
+    text-decoration: none solid rgba(220, 220, 220, 0.9);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -3644,7 +3745,7 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: rgba(255, 255, 255, 0.9);
+    color: light-dark(rgba(30, 35, 42, 0.9), rgba(220, 220, 220, 0.9));
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -3659,11 +3760,11 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgba(255, 255, 255, 0.9);
+    text-decoration: none solid rgba(220, 220, 220, 0.9);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: rgba(255, 255, 255, 0.9);
+    color: light-dark(rgba(30, 35, 42, 0.9), rgba(220, 220, 220, 0.9));
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -3678,11 +3779,14 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgba(255, 255, 255, 0.9);
+    text-decoration: none solid rgba(220, 220, 220, 0.9);
   }
 
   figure[data-rehype-pretty-code-figure] {
-    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    background-color: light-dark(
+      rgba(102, 63, 191, 0.06),
+      rgba(187, 154, 247, 0.05)
+    );
     border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -3695,7 +3799,10 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-    background-color: light-dark(rgb(248, 250, 252), rgba(187, 154, 247, 0.05));
+    background-color: light-dark(
+      rgba(102, 63, 191, 0.06),
+      rgba(187, 154, 247, 0.05)
+    );
     color: light-dark(rgb(30, 35, 42), rgb(220, 220, 220));
     font-family: monospace;
     border: 0px solid rgba(0, 0, 0, 0);

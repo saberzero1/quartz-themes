@@ -590,3 +590,26 @@ body.is-mobile .mobile-navbar {
 .is-tablet .workspace-drawer {
 height: calc(100vh - var(--size-4-12) - var(--safe-area-inset-bottom));
 }
+
+/* fast fix for tables in .canvas */
+
+body .markdown-rendered th, 
+body .markdown-rendered td,
+body .cm-html-embed th,
+body .cm-html-embed td {
+    border: var(--table-border-width) solid #ffffff10;
+    border-color: #ffffff10;
+}
+
+body .markdown-rendered thead tr > th,
+body .cm-html-embed thead tr > th {
+    border-color: #ffffff10;
+}
+
+
+.markdown-rendered hr {
+    border-color: #ffffff10;
+}
+hr {
+    margin: 0;
+}

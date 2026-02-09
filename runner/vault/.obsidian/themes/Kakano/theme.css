@@ -130,61 +130,16 @@ settings:
     format: hsl-split
     default: '#2176B0'
   -
-    id: heading-background
-    title: Background
-    type: heading
-    level: 1
-    collapsed: true
-  -
-    id: theme-value-gradientContrast
-    title: 'Background gradient contrast'
-    description: 'Degree of contrast for background gradients. Set to zero for a flat background color.'
-    type: variable-number-slider
-    default: 0.2
-    min: 0
-    max: 1
-    step: 0.1
-  -
-    id: heading-customGradient
-    title: Custom Gradient
-    type: heading
-    level: 2
-    collapsed: true
-  -
-    id: theme-setting-customGradient
-    title: 'Use a custom gradient for the background'
-    description: "Kakano normally provides a smooth gradient background using the same hue as the base color. This setting overrides that so you can have a gradient with different hues top and bottom. Note that the colors you set here won't be used directly: they'll be lightened for light mode and darkened for dark mode."
-    type: class-toggle
-  -
-    id: theme-color-customGradientBaseTop
-    title: Custom Gradient Top
-    description: 'Base color for the top of the gradient'
-    type: variable-color
-    format: hsl
-    default: '#ff0000'
-  -
-    id: theme-color-customGradientBaseBottom
-    title: Custom Gradient Bottom
-    description: 'Base color for the bottom of the gradient'
-    type: variable-color
-    format: hsl
-    default: '#0000ff'
-  -
-    id: heading-layout
-    title: Layout
-    type: heading
-    level: 2
-    collapsed: true
-  -
-    id: theme-setting-fullWidthStatusBar
-    title: 'Full width status bar'
-    description: "EXPERIMENTAL If you have many items in your status bar, you may find that it overflows onto the sidebars. This setting will push the main app workspace up so the status bar can use the full window width."
-    type: class-toggle
-  -
     id: heading-notes
     title: Notes
     type: heading
     level: 1
+    collapsed: false
+  -
+    id: heading-notes-appearance
+    title: Appearance
+    type: heading
+    level: 2
     collapsed: true
   -
     id: theme-setting-lightModeNoteBg
@@ -275,7 +230,7 @@ settings:
     id: heading-typographySettings
     title: Typography
     type: heading
-    level: 1
+    level: 2
     collapsed: true
   -
     id: theme-setting-differentiateBulletLevels
@@ -287,7 +242,7 @@ settings:
     id: heading-HeadingSettings
     title: Headings
     type: heading
-    level: 2
+    level: 3
     collapsed: false
   -
     id: theme-setting-headingFont
@@ -364,7 +319,7 @@ settings:
     id: heading-lineWidthSettings
     title: Line length
     type: heading
-    level: 2
+    level: 3
     collapsed: false
   -
     id: infoText-lineWidth
@@ -395,7 +350,7 @@ settings:
     id: heading-editing
     title: Editing
     type: heading
-    level: 1
+    level: 2
     collapsed: true
   -
     id: infoText-editing
@@ -417,7 +372,7 @@ settings:
     id: heading-layout
     title: Layout
     type: heading
-    level: 1
+    level: 2
     collapsed: true
   -
     id: theme-setting-centerImages
@@ -434,6 +389,81 @@ settings:
     id: theme-setting-wideTables
     title: 'Wide tables'
     description: "Allow wide tables to extend left and right beyond the margins for body text."
+    type: class-toggle
+    default: true
+  -
+    id: heading-ui
+    title: User Interface
+    type: heading
+    level: 1
+    collapsed: false
+  -
+    id: heading-ui-background
+    title: Background
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: theme-value-gradientContrast
+    title: 'Background gradient contrast'
+    description: 'Degree of contrast for background gradients. Set to zero for a flat background color.'
+    type: variable-number-slider
+    default: 0.2
+    min: 0
+    max: 1
+    step: 0.1
+  -
+    id: heading-customGradient
+    title: Custom Gradient
+    type: heading
+    level: 3
+    collapsed: true
+  -
+    id: theme-setting-customGradient
+    title: 'Use a custom gradient for the background'
+    description: "Kakano normally provides a smooth gradient background using the same hue as the base color. This setting overrides that so you can have a gradient with different hues top and bottom. Note that the colors you set here won't be used directly: they'll be lightened for light mode and darkened for dark mode."
+    type: class-toggle
+  -
+    id: theme-color-customGradientBaseTop
+    title: Custom Gradient Top
+    description: 'Base color for the top of the gradient'
+    type: variable-color
+    format: hsl
+    default: '#ff0000'
+  -
+    id: theme-color-customGradientBaseBottom
+    title: Custom Gradient Bottom
+    description: 'Base color for the bottom of the gradient'
+    type: variable-color
+    format: hsl
+    default: '#0000ff'
+  -
+    id: heading-layout
+    title: Layout
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: theme-setting-fullWidthStatusBar
+    title: 'Full width status bar'
+    description: "EXPERIMENTAL If you have many items in your status bar, you may find that it overflows onto the sidebars. This setting will push the main app workspace up so the status bar can use the full window width."
+    type: class-toggle
+  -
+    id: heading-icons
+    title: Icons
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: theme-setting-enableIconsInSettings
+    title: 'Enable icons in Settings'
+    description: "Obsidian normally shows icons beside settings groups. If you find that distracting, this setting allows you to hide them."
+    type: class-toggle
+    default: true
+  -
+    id: theme-setting-enableIconsInMenus
+    title: 'Enable icons in non-native Menus'
+    description: "Obsidian normally shows icons for menu items. This setting does not apply if Native Menus are enabled."
     type: class-toggle
     default: true
   -
@@ -461,6 +491,12 @@ settings:
     title: Compatibility
     type: heading
     level: 1
+    collapsed: false
+  -
+    id: heading-compatibility-builtin
+    title: Built-in feature Toggles
+    type: heading
+    level: 2
     collapsed: true
   -
     id: theme-setting-enableBuiltInAlternativeCheckboxes
@@ -482,9 +518,9 @@ settings:
     default: true
   -
     id: heading-communityPlugins
-    title: Community Plugins
+    title: Community Plugins Toggles
     type: heading
-    level: 1
+    level: 2
     collapsed: true
   -
     id: infoText-communityPlugins
@@ -542,6 +578,11 @@ settings:
     type: class-toggle
     default: true
   -
+    id: theme-setting-overridePluginUpdateTracker
+    title: 'Plugin Update Tracker'
+    type: class-toggle
+    default: true
+  -
     id: theme-setting-overrideRecentFiles
     title: 'Recent Files'
     type: class-toggle
@@ -571,6 +612,7 @@ body {
   --checkbox-border-color-hover: var(--interactive-accent-hover);
   --checkbox-border-color: var(--interactive-accent);
   --checkbox-color: var(--interactive-accent);
+  --clickable-icon-radius: 0.25rem;
   --code-background: light-dark(
     var(--theme-color-darkenTransparent06),
     var(--theme-color-lightenTransparent06)
@@ -580,6 +622,7 @@ body {
     var(--theme-color-lightenTransparent50)
   );
   --code-normal: var(--text-normal);
+
   --divider-width: 0;
   --embed-background: var(--theme-color-baseTransparent12);
   --embed-border-bottom: none;
@@ -1079,7 +1122,7 @@ body {
   --tab-text-color-active: var(--theme-color-baseTransparent50);
   --tab-text-color-focused: var(--theme-color-baseDarkened25);
   --tab-text-color-focused-active: var(--theme-color-baseDarkened25);
-  --tab-text-color-focused-active-current: var(--text-normal);
+  --tab-text-color-focused-active-current: var(--icon-color-focused);
   --tag-color: hsl(
     var(--accent-h),
     calc(var(--accent-s)),
@@ -1674,28 +1717,28 @@ body {
   }
 }
 
-.theme-setting-headingScaleFactor1point067 {
+body.theme-setting-headingScaleFactor1point067 {
   --theme-value-headingScaleFactor: 1.067;
 }
-.theme-setting-headingScaleFactor1point125 {
+body.theme-setting-headingScaleFactor1point125 {
   --theme-value-headingScaleFactor: 1.125;
 }
-.theme-setting-headingScaleFactor1point2 {
+body.theme-setting-headingScaleFactor1point2 {
   --theme-value-headingScaleFactor: 1.2;
 }
-.theme-setting-headingScaleFactor1point25 {
+body.theme-setting-headingScaleFactor1point25 {
   --theme-value-headingScaleFactor: 1.25;
 }
-.theme-setting-headingScaleFactor1point333 {
+body.theme-setting-headingScaleFactor1point333 {
   --theme-value-headingScaleFactor: 1.333;
 }
-.theme-setting-headingScaleFactor1point414 {
+body.theme-setting-headingScaleFactor1point414 {
   --theme-value-headingScaleFactor: 1.414;
 }
-.theme-setting-headingScaleFactor1point5 {
+body.theme-setting-headingScaleFactor1point5 {
   --theme-value-headingScaleFactor: 1.5;
 }
-.theme-setting-headingScaleFactor1point618 {
+body.theme-setting-headingScaleFactor1point618 {
   --theme-value-headingScaleFactor: 1.618;
 }
 /* More compact typography to fit more on small screens */
@@ -1708,28 +1751,28 @@ body {
   --h5-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h6-size));
   --line-height-normal: 1.5;
 }
-.is-phone.theme-setting-headingScaleFactorPhone1point067 {
+body.is-phone.theme-setting-headingScaleFactorPhone1point067 {
   --theme-value-headingScaleFactorPhone: 1.067;
 }
-.is-phone.theme-setting-headingScaleFactorPhone1point125 {
+body.is-phone.theme-setting-headingScaleFactorPhone1point125 {
   --theme-value-headingScaleFactorPhone: 1.125;
 }
-.is-phone.theme-setting-headingScaleFactorPhone1point2 {
+body.is-phone.theme-setting-headingScaleFactorPhone1point2 {
   --theme-value-headingScaleFactorPhone: 1.2;
 }
-.is-phone.theme-setting-headingScaleFactorPhone1point25 {
+body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
   --theme-value-headingScaleFactorPhone: 1.25;
 }
-.is-phone.theme-setting-headingScaleFactorPhone1point333 {
+body.is-phone.theme-setting-headingScaleFactorPhone1point333 {
   --theme-value-headingScaleFactorPhone: 1.333;
 }
-.is-phone.theme-setting-headingScaleFactorPhone1point414 {
+body.is-phone.theme-setting-headingScaleFactorPhone1point414 {
   --theme-value-headingScaleFactorPhone: 1.414;
 }
-.is-phone.theme-setting-headingScaleFactorPhone1point5 {
+body.is-phone.theme-setting-headingScaleFactorPhone1point5 {
   --theme-value-headingScaleFactorPhone: 1.5;
 }
-.is-phone.theme-setting-headingScaleFactorPhone1point618 {
+body.is-phone.theme-setting-headingScaleFactorPhone1point618 {
   --theme-value-headingScaleFactorPhone: 1.618;
 }
 /* Smaller font size for markdown documents in sidebar */
@@ -2163,22 +2206,22 @@ li.is-collapsed .list-bullet:after,
   display: none;
 }
 
-.theme-setting-embeddedNoteTitleVisibilityHide .embed-title {
+body.theme-setting-embeddedNoteTitleVisibilityHide .embed-title {
   display: none;
 }
-.theme-setting-embeddedNoteTitleVisibilityShow
+body.theme-setting-embeddedNoteTitleVisibilityShow
   .internal-embed:has(.embed-title:not(:empty)) {
   padding-top: 0.5rem;
 }
-.theme-setting-embeddedNoteTitleVisibilityShow .embed-title {
+body.theme-setting-embeddedNoteTitleVisibilityShow .embed-title {
   display: flex;
 }
 @media (hover: hover) {
-  .theme-setting-embeddedNoteTitleVisibilityHover
+  body.theme-setting-embeddedNoteTitleVisibilityHover
     .internal-embed:has(.embed-title:not(:empty)) {
     padding-top: 1.5rem;
   }
-  .theme-setting-embeddedNoteTitleVisibilityHover
+  body.theme-setting-embeddedNoteTitleVisibilityHover
     .internal-embed:has(.embed-title:not(:empty)):hover
     .embed-title {
     display: flex;
@@ -2216,7 +2259,7 @@ li.is-collapsed .list-bullet:after,
 .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
   max-width: 100%;
 }
-.theme-setting-enableImageAdjustmentWithAltText {
+body.theme-setting-enableImageAdjustmentWithAltText {
   /* Center images */
   .markdown-source-view.mod-cm6 .cm-content > img[alt~=center],
   .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=center] img,
@@ -2255,7 +2298,7 @@ li.is-collapsed .list-bullet:after,
     border-radius: var(--theme-length-fullBorderRadius);
   }
 }
-.theme-setting-centerImages {
+body.theme-setting-centerImages {
   .markdown-source-view.mod-cm6 .cm-content > img,
   .markdown-source-view.mod-cm6 .cm-content .image-embed img,
   .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
@@ -2825,6 +2868,12 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   --file-margins: 0;
   --mobile-sidebar-background: transparent;
   --view-header-height: auto;
+  --input-radius: 5px;
+  --clickable-icon-radius: 0.25rem;
+  --setting-items-background: transparent;
+  --setting-items-radius: 0;
+  --setting-items-border-width: 0;
+  --setting-items-border-color: var(--background-modifier-border);
 }
 .is-phone {
   /* I'm pretty sure this isn't used on mobile */
@@ -2847,6 +2896,9 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
 }
 .is-mobile .view-actions {
   padding: 0;
+}
+.is-phone .view-header .view-header-left .view-action {
+  /* TODO: fix position for this when there's space left/right of main tab */
 }
 .is-mobile .view-header-title-container {
   height: auto;
@@ -2913,11 +2965,12 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
 
 /* #region   Drawers */
 .workspace-drawer {
-  background: none;
-  bottom: 0.5rem;
+  background-color: var(--background-secondary);
+  background: var(--theme-gradient-bottomToTop);
+  bottom: 0;
   padding-bottom: var(--safe-area-inset-bottom);
   padding-top: var(--safe-area-inset-top);
-  top: 0.5rem;
+  top: 0;
 
   &.theme-dark {
     /* Override weirdness in app theme */
@@ -2929,16 +2982,12 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   }
 }
 .workspace-drawer-inner {
-  background-color: var(--background-secondary);
-  background: var(--theme-gradient-bottomToTop);
 }
-.workspace-drawer.mod-left .workspace-drawer-inner {
-  border-top-right-radius: var(--radius-xl);
-  border-bottom-right-radius: var(--radius-xl);
+.workspace-drawer-ribbon {
+  border: none;
 }
-.workspace-drawer.mod-right .workspace-drawer-inner {
-  border-top-left-radius: var(--radius-xl);
-  border-bottom-left-radius: var(--radius-xl);
+.workspace-drawer .nav-buttons-container .nav-action-button {
+  width: auto;
 }
 
 .mod-tappable,
@@ -3051,13 +3100,6 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
     ),
     calc(var(--safe-area-inset-top) + 0.5rem)
   );
-  padding-inline-end: max(
-    calc(
-      var(--safe-area-inset-right) + 2 *
-        var(--theme-spacing-mobileHorizontalSpacing)
-    ),
-    calc(var(--safe-area-inset-right) + 0.5rem)
-  );
   padding-bottom: max(
     calc(
       var(--safe-area-inset-bottom) + 2 *
@@ -3065,13 +3107,21 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
     ),
     calc(var(--safe-area-inset-bottom) + 0.5rem)
   );
-  padding-inline-start: max(
+  /* TODO: removing these as they spoil the slide-in effect, but need to check whether this looks right in practice before deleting */
+  /* padding-inline-end: max(
+    calc(
+      var(--safe-area-inset-right) + 2 *
+        var(--theme-spacing-mobileHorizontalSpacing)
+    ),
+    calc(var(--safe-area-inset-right) + 0.5rem)
+  ); */
+  /* padding-inline-start: max(
     calc(
       var(--safe-area-inset-left) + 2 *
         var(--theme-spacing-mobileHorizontalSpacing)
     ),
     calc(var(--safe-area-inset-left) + 0.5rem)
-  );
+  ); */
 }
 .is-phone .mod-confirmation .modal {
   left: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
@@ -3119,7 +3169,7 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   display: flex;
   align-items: center;
   height: 44px;
-  background-color: var(--theme-color-settingsGroupBg);
+  background-color: transparent;
   padding: 0 0.75em;
   margin: 0;
   border-radius: 0;
@@ -3137,7 +3187,11 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
 .is-phone .modal.mod-sidebar-layout .modal-title {
   border-bottom: none;
 }
-.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout .modal-title {
+.is-phone .modal.mod-settings .vertical-tab-nav-item-chevron,
+.is-phone .modal.mod-settings .vertical-tab-nav-item-title {
+  border-bottom: none;
+}
+body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout .modal-title {
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 .is-phone .modal.mod-settings .vertical-tab-content {
@@ -3181,14 +3235,14 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   }
 }
 
-.is-phone.theme-setting-mobileCardsUI
+body.is-phone.theme-setting-mobileCardsUI
   .modal.mod-sidebar-layout
   .modal-setting-back-button {
   top: 0.5rem;
   left: 2.5rem;
   padding: 0;
 }
-.is-phone.theme-setting-mobileCardsUI .community-modal-search-summary {
+body.is-phone.theme-setting-mobileCardsUI .community-modal-search-summary {
   padding: 0;
 }
 .is-phone .modal.mod-community-modal .modal-content .modal-sidebar {
@@ -3243,10 +3297,10 @@ body.is-phone.theme-setting-mobileCardsUI:has(.modal-container)
   border-bottom-left-radius: var(--tab-radius);
   border-bottom-right-radius: var(--tab-radius);
 }
-.is-phone.is-phone.theme-setting-mobileCardsUI .modal-container {
+body.is-phone.is-phone.theme-setting-mobileCardsUI .modal-container {
   padding: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
 }
-.is-phone.theme-setting-mobileCardsUI .mod-confirmation .modal {
+body.is-phone.theme-setting-mobileCardsUI .mod-confirmation .modal {
   left: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
   right: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
   width: min(
@@ -3257,7 +3311,7 @@ body.is-phone.theme-setting-mobileCardsUI:has(.modal-container)
   );
 }
 /* Style similarly to mobile prompt */
-.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout {
+body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout {
   width: min(
     calc(100vw - 2 * var(--theme-spacing-mobileHorizontalSpacing)),
     calc(100vw - 1rem)
@@ -3330,6 +3384,11 @@ body.is-phone.theme-setting-mobileCardsUI:has(.modal-container)
 /* #endregion */
 /* #endregion */
 
+/* TODO: figure out the right balance for floating nav to minimise overlap */
+.is-mobile.is-floating-nav.is-phone .workspace-drawer .workspace-leaf-content .nav-header ~ div:last-child {
+ margin-bottom: 44px;
+}
+
 /* #region Workspace */
 /* #region   Overall workspace */
 * {
@@ -3347,7 +3406,7 @@ body {
   background-color: var(--background-secondary);
   background: var(--theme-gradient-bottomToTop);
 }
-.theme-setting-fullWidthStatusBar .horizontal-main-container {
+body.theme-setting-fullWidthStatusBar .horizontal-main-container {
   margin-bottom: var(--theme-length-statusBarHeight);
 }
 .workspace {
@@ -3379,87 +3438,6 @@ body.mod-windows {
   }
 }
 /* #endregion */
-/* #region     "Hidden (default)" style. This is the default appearance! */
-body.mod-windows {
-  &.is-frameless.is-hidden-frameless:not(.is-popout-window) {
-    /* Override default appearance for .mod-close, as this one simulates a system control. */
-    .titlebar-button.mod-close {
-      border-radius: 0;
-      width: auto;
-    }
-
-    .titlebar-button.mod-logo {
-      /* This is hidden by default. I'm not sure why, as it provides access to the main menu. */
-      display: flex;
-    }
-
-    .workspace-ribbon.side-dock-ribbon.mod-left {
-      margin-top: calc(var(--header-height) + 2em);
-    }
-
-    .sidebar-toggle-button.mod-left {
-      top: 2em;
-    }
-
-    /* &:not(.is-fullscreen) {
-      .sidebar-toggle-button.mod-left {
-        position: absolute;
-      }
-
-      .workspace-ribbon.mod-left {
-        margin-top: 2.5em;
-        padding-top: 0;
-      }
-      .mod-right-split .mod-top .workspace-tab-header-container {
-        position: relative;
-        padding-inline-end: calc(var(--frame-right-space) + 30px);
-
-        .sidebar-toggle-button.mod-right {
-          position: absolute;
-          right: var(--frame-right-space);
-        }
-      }
-
-      .workspace.is-left-sidedock-open {
-        .mod-left-split .workspace-tabs {
-          overflow: visible;
-        }
-        .sidebar-toggle-button.mod-left {
-          left: var(--ribbon-width);
-          top: 0.5em;
-          padding: 0;
-        }
-      }
-      .workspace:not(.is-left-sidedock-open) {
-        .mod-root .workspace-tabs.mod-top {
-          overflow: visible;
-        }
-        .sidebar-toggle-button.mod-left {
-          left: var(--ribbon-width);
-          top: 0.5em;
-          padding: 0;
-        }
-        .mod-root .workspace-tab-header-container {
-          padding-inline-start: calc(var(--icon-size) + 1rem);
-        }
-      }
-      .workspace:not(.is-right-sidedock-open) {
-      }
-      .workspace:not(.is-right-sidedock-open) {
-        .sidebar-toggle-button.mod-right {
-          left: var(--frame-right-space);
-          top: -0.5em;
-          padding: 0;
-        }
-      }
-    } */
-  }
-}
-/* #endregion */
-/* #endregion */
-/* #region   Linux window frame styles */
-.mod-linux {
-}
 /* #endregion */
 /* #region   Tabs */
 .workspace-tabs .workspace-leaf {
@@ -3490,16 +3468,20 @@ body.mod-windows {
 .workspace-tab-header-inner {
   padding: 0.5rem;
 }
+
 @media (hover: hover) {
-  .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
-    color: var(--icon-color-focused);
-    background-color: var(--theme-color-tabBgInactiveHover);
-  }
-  .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
-    color: var(--icon-color-focused);
-    opacity: var(--icon-opacity);
+  .workspace-tab-header-container {
+    .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+      color: var(--icon-color-focused);
+      background-color: var(--theme-color-tabBgInactiveHover);
+    }
+    .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
+      color: var(--icon-color-focused);
+      opacity: var(--icon-opacity);
+    }
   }
 }
+
 .workspace-leaf.mod-active .view-header-title {
   color: var(--tab-text-color-active);
   display: block;
@@ -3589,7 +3571,7 @@ body.mod-windows {
   }
 }
 /* #region     Wrap tabs setting */
-.theme-setting-wrapTabs {
+body.theme-setting-wrapTabs {
   .workspace-tab-header-container {
     height: auto;
   }
@@ -3618,7 +3600,7 @@ body.mod-windows {
 
 /* #endregion */
 /* #region     Tabs with Obsidian navigation or data (as opposed to user content) can have a different inactive color */
-.theme-setting-distinguishNonContentTabs {
+body.theme-setting-distinguishNonContentTabs {
 
   .workspace-split.mod-root {
     & .workspace-tab-header-container {
@@ -3681,6 +3663,9 @@ body.mod-windows {
 /* #endregion */
 
 /* #region     Empty state */
+.workspace-leaf-content[data-type="empty"] .empty-state-title {
+  display: none;
+}
 .empty-state {
   justify-content: flex-start;
   padding-top: 3em;
@@ -3690,10 +3675,10 @@ body.mod-windows {
   border-radius: var(--radius-m);
   max-height: none;
   max-width: none;
-  padding: 1em 1.5em 1.5em 1.5em;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  margin: 1.5em;
 }
-.empty-state-action-list,
-.is-mobile .empty-state-action-list {
+.empty-state-action-list {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -3704,6 +3689,15 @@ body.mod-windows {
 }
 .empty-state-action-list .empty-state-action.mod-close {
   display: none;
+}
+.is-mobile {
+  .empty-state-action-list {
+    gap: 1em;
+    margin: 0;
+  }
+  .empty-state-action {
+    margin: 0;
+  }
 }
 /* #endregion */
 /* #region     Sidebars */
@@ -3740,6 +3734,10 @@ body.mod-windows {
 
       /* Override scrollbar color, because it forces the scrollbar to appear and we want it invisible here */
       scrollbar-color: auto;
+
+      .workspace-tab-header {
+        border-radius: 0;
+      }
     }
     .workspace-tab-header-container-inner:has(
         .workspace-tab-header[data-type="markdown"].is-active:last-child
@@ -3758,8 +3756,8 @@ body.mod-windows {
 
   .workspace-tab-header {
     background: var(--tab-background-inactive);
-    border-radius: 0;
   }
+
   .workspace-tab-header.has-active-menu,
   .workspace-tab-header.is-active {
     background: var(--theme-color-switcherBgActive);
@@ -3929,7 +3927,7 @@ body.show-ribbon:not(.is-mobile)
   height: var(--theme-length-statusBarHeight);
   justify-content: space-between;
 }
-.theme-setting-fullWidthStatusBar .status-bar {
+body.theme-setting-fullWidthStatusBar .status-bar {
   width: 100%;
 }
 .status-bar-item {
@@ -4057,7 +4055,7 @@ body.mod-macos {
 /* #endregion */
 /* #region     "Obsidian frame" style */
 body.mod-macos {
-  &.is-frameless:not(.is-hidden-frameless):not(.is-popout-window) {
+  &.is-frameless:not(.is-hidden-frameless) {
     --titlebar-height: 40px;
 
     &:not(.is-mobile) {
@@ -4159,7 +4157,7 @@ body.mod-macos {
 /* #endregion */
 /* #region     "Hidden (default)" style. This is the default appearance! */
 /* In this window style we need to make sure buttons don't overlap the window controls. */
-body.mod-macos.is-frameless.is-hidden-frameless:not(.is-popout-window) {
+body.mod-macos.is-frameless.is-hidden-frameless {
   .workspace .workspace-tabs.mod-top-left-space .workspace-tab-header-container,
   .workspace
     .workspace-tabs.mod-top-right-space
@@ -4391,6 +4389,15 @@ body.mod-windows {
   color: var(--nav-item-color);
   background-color: var(--nav-item-background);
 }
+
+.menu-item-icon {
+  display: none;
+}
+body.theme-setting-enableIconsInMenus {
+  .menu-item-icon {
+    display: flex;
+  }
+}
 .menu-item.selected:not(.is-label):not(.is-disabled) {
   background-color: var(--nav-item-background);
   border-radius: var(--radius-s);
@@ -4471,171 +4478,6 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   border-bottom: none;
   margin-bottom: 0;
   display: block;
-}
-/* #endregion */
-/* #region   Close buttons */
-
-.mod-close,
-.modal-close-button,
-.document-search-close-button,
-.workspace-tab-header-inner-close-button,
-.slides-close-btn,
-.clickable-icon.kanban-plugin__search-cancel-button,
-.clickable-icon.kanban-plugin__lane-settings-button[aria-label="Close"],
-.mobile-tab .close-button,
-.bases-toolbar-menu-container-header .close-icon,
-.clickable-icon.document-search-close-button {
-  background-color: transparent;
-  border-radius: 100%;
-  border: none;
-  color: var(--theme-color-control);
-  /* Above .modal-title */
-  z-index: 2;
-  width: var(--theme-length-closeButtonWidth);
-  height: var(--theme-length-closeButtonWidth);
-  min-width: var(--theme-length-closeButtonWidth);
-  min-height: var(--theme-length-closeButtonWidth);
-  display: flex;
-  flex-shrink: 0;
-  align-content: center;
-  justify-content: center;
-  padding: 0.125em;
-
-  .svg-icon {
-    stroke: var(--theme-color-control);
-  }
-}
-@media (hover: hover) {
-  .mod-close:hover,
-  .modal-close-button:hover,
-  .document-search-close-button:hover,
-  .workspace-tab-header-inner-close-button:hover,
-  .workspace-tab-header.is-active
-    .workspace-tab-header-inner-close-button:hover,
-  .mod-sync-history .modal-close-button:hover,
-  .mod-settings .modal-close-button:hover,
-  .workspace-tab-header-inner-close-button:hover,
-  .slides-close-btn:hover,
-  .clickable-icon.kanban-plugin__search-cancel-button:hover,
-  .clickable-icon.kanban-plugin__lane-settings-button[aria-label="Close"]:hover,
-  .multi-select-pill-remove-button:hover,
-  .mobile-tab .close-button:hover,
-  .bases-toolbar-menu-container-header .close-icon:hover,
-  .clickable-icon.document-search-close-button:hover {
-    color: var(--theme-color-controlHover);
-    background-color: var(--theme-color-navigationButtonBgHover);
-
-    .svg-icon {
-      stroke: var(--theme-color-controlHover);
-    }
-  }
-}
-
-/* close buttons that use a text cross instead of an SVG */
-.document-search-close-button,
-.modal-close-button,
-.is-mobile .document-search .document-search-close-button,
-.is-mobile .document-replace .document-search-close-button {
-  padding: var(--size-2-1);
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  align-content: center;
-  --icon-size: var(--icon-s);
-  --icon-stroke: var(--icon-s-stroke-width);
-  text-align: center;
-  justify-content: center;
-  line-height: var(--theme-length-closeButtonWidth);
-}
-.document-search-close-button:before,
-.modal-close-button:before {
-  /* This uses a text cross instead of an SVG. Hack for visual alignment. */
-  margin-top: -3px;
-  line-height: var(--theme-length-closeButtonWidth);
-  width: var(--theme-length-closeButtonWidth);
-  height: var(--theme-length-closeButtonWidth);
-}
-
-/* Tab close button on left, macOS standard */
-.mod-macos {
-  .workspace .mod-root {
-    .workspace-tab-header .workspace-tab-header-inner-close-button {
-      position: static;
-      order: 0;
-    }
-    .workspace-tab-header-inner-icon,
-    .workspace-tab-header-inner-title {
-      order: 1;
-    }
-  }
-  .modal-close-button {
-    left: var(--size-2-3);
-    right: auto;
-  }
-  .mod-community-modal .modal-sidebar .setting-item:first-child {
-    margin-inline-start: auto;
-  }
-  .modal-sidebar .community-modal-controls {
-    padding-inline-start: var(--size-4-5);
-  }
-  .multi-select-pill {
-    padding-inline-start: 0.25em;
-
-    .multi-select-pill-remove-button {
-      order: 0;
-    }
-    .multi-select-pill-content {
-      order: 1;
-      margin: 0;
-    }
-  }
-}
-/* #endregion */
-/* #region   Navigation buttons */
-/* Styled similarly to close button */
-
-.modal-setting-back-button-icon,
-.mod-root .workspace-tab-header-status-icon,
-.mobile-tab .mobile-tab-pin,
-.map-view-graph-controls .minimize-button.svelte-1sl5jax {
-  color: var(--theme-color-control);
-  border: none;
-  border-radius: 100%;
-  background-color: transparent;
-  /* Above .modal-title */
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 1.5rem;
-  height: 1.5rem;
-  padding: 0;
-  cursor: default;
-
-  .svg-icon {
-    stroke: var(--theme-color-control);
-  }
-}
-.mobile-tab .mobile-tab-pin,
-.map-view-graph-controls .minimize-button.svelte-1sl5jax {
-  width: var(--theme-length-closeButtonWidth);
-  height: var(--theme-length-closeButtonWidth);
-}
-@media (hover: hover) {
-  .modal-setting-back-button-icon:hover,
-  .mod-root .workspace-tab-header-status-icon:hover,
-  .mobile-tab .mobile-tab-pin:hover,
-  .map-view-graph-controls .minimize-button.svelte-1sl5jax:hover {
-    color: var(--theme-color-control);
-    background-color: var(--theme-color-navigationButtonBgHover);
-    .svg-icon {
-      stroke: var(--theme-color-controlHover);
-    }
-  }
-  .mod-root .workspace-tab-header-status-icon .svg-icon {
-    width: 80%;
-  }
 }
 /* #endregion */
 /* #region   Notices */
@@ -4849,15 +4691,7 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   color: var(--background-modifier-error);
 }
 /* #endregion */
-/* #region   Action lists */
-.vertical-tab-header-group-title {
-  color: var(--text-normal);
-}
-.horizontal-tab-nav-item,
-.vertical-tab-nav-item {
-  color: var(--theme-color-control);
-}
-/* #endregion */
+
 /* #region   Buttons */
 /* #region     Clickable icon buttons */
 .markdown-source-view.mod-cm6 .code-block-flair,
@@ -4889,11 +4723,11 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   height: 2em;
   justify-content: center;
   min-height: var(--input-height);
+  min-width: var(--input-height);
   opacity: var(--icon-opacity);
   padding: 0.25rem;
   text-decoration: none;
   transition: opacity 0.15s ease-in-out;
-  min-width: 2em;
   width: auto;
 }
 
@@ -5058,6 +4892,177 @@ button.search-result-file-match-replace-button {
 }
 /* #endregion */
 /* #endregion */
+/* #region   Close buttons */
+
+.mod-close,
+.modal-close-button,
+.document-search-close-button,
+.workspace-tab-header-inner-close-button,
+.slides-close-btn,
+.clickable-icon.kanban-plugin__search-cancel-button,
+.clickable-icon.kanban-plugin__lane-settings-button[aria-label="Close"],
+.mobile-tab .close-button,
+.bases-toolbar-menu-container-header .close-icon,
+.clickable-icon.document-search-close-button {
+  background-color: transparent;
+  border-radius: 100%;
+  border: none;
+  color: var(--theme-color-control);
+  /* Above .modal-title */
+  z-index: 2;
+  width: var(--theme-length-closeButtonWidth);
+  height: var(--theme-length-closeButtonWidth);
+  min-width: var(--theme-length-closeButtonWidth);
+  min-height: var(--theme-length-closeButtonWidth);
+  display: flex;
+  flex-shrink: 0;
+  align-content: center;
+  justify-content: center;
+  padding: 0.125em;
+
+  .svg-icon {
+    stroke: var(--theme-color-control);
+  }
+}
+@media (hover: hover) {
+  .mod-close:hover,
+  .modal-close-button:hover,
+  .document-search-close-button:hover,
+  .workspace-tab-header-inner-close-button:hover,
+  .workspace-tab-header.is-active
+    .workspace-tab-header-inner-close-button:hover,
+  .mod-sync-history .modal-close-button:hover,
+  .mod-settings .modal-close-button:hover,
+  .workspace-tab-header-inner-close-button:hover,
+  .slides-close-btn:hover,
+  .clickable-icon.kanban-plugin__search-cancel-button:hover,
+  .clickable-icon.kanban-plugin__lane-settings-button[aria-label="Close"]:hover,
+  .multi-select-pill-remove-button:hover,
+  .mobile-tab .close-button:hover,
+  .bases-toolbar-menu-container-header .close-icon:hover,
+  .clickable-icon.document-search-close-button:hover {
+    color: var(--theme-color-controlHover);
+    background-color: var(--theme-color-navigationButtonBgHover);
+
+    .svg-icon {
+      stroke: var(--theme-color-controlHover);
+    }
+  }
+}
+
+/* close buttons that use a text cross instead of an SVG */
+.document-search-close-button,
+.modal-close-button,
+.is-mobile .document-search .document-search-close-button,
+.is-mobile .document-replace .document-search-close-button {
+  padding: var(--size-2-1);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-content: center;
+  --icon-size: var(--icon-s);
+  --icon-stroke: var(--icon-s-stroke-width);
+  text-align: center;
+  justify-content: center;
+  line-height: var(--theme-length-closeButtonWidth);
+}
+.document-search-close-button:before,
+.modal-close-button:before {
+  /* This uses a text cross instead of an SVG. Hack for visual alignment. */
+  margin-top: -3px;
+  line-height: var(--theme-length-closeButtonWidth);
+  width: var(--theme-length-closeButtonWidth);
+  height: var(--theme-length-closeButtonWidth);
+}
+
+/* Tab close button on left, macOS standard */
+.mod-macos {
+  .workspace .mod-root {
+    .workspace-tab-header .workspace-tab-header-inner-close-button {
+      position: static;
+      order: 0;
+    }
+    .workspace-tab-header-inner-icon,
+    .workspace-tab-header-inner-title {
+      order: 1;
+    }
+  }
+  .modal-close-button {
+    left: var(--size-2-3);
+    right: auto;
+  }
+  .mod-community-modal .modal-sidebar .setting-item:first-child {
+    margin-inline-start: auto;
+  }
+  .modal-sidebar .community-modal-controls {
+    padding-inline-start: var(--size-4-5);
+  }
+  .multi-select-pill {
+    padding-inline-start: 0.25em;
+
+    .multi-select-pill-remove-button {
+      order: 0;
+    }
+    .multi-select-pill-content {
+      order: 1;
+      margin: 0;
+    }
+  }
+}
+/* #endregion */
+/* #region   Navigation buttons */
+/* Buttons that don't change the satete of content, just what we're currently looking at. Styled similarly to close buttons. */
+
+.modal-setting-back-button-icon,
+.view-header-nav-buttons > .clickable-icon,
+.mod-root .workspace-tab-header-status-icon,
+.mobile-tab .mobile-tab-pin,
+.map-view-graph-controls .minimize-button.svelte-1sl5jax {
+  color: var(--theme-color-control);
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+  /* Above .modal-title */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  cursor: default;
+
+  .svg-icon {
+    stroke: var(--theme-color-control);
+    width: 1rem;
+    height: 1rem;
+  }
+}
+.mobile-tab .mobile-tab-pin,
+.map-view-graph-controls .minimize-button.svelte-1sl5jax {
+  width: var(--theme-length-closeButtonWidth);
+  height: var(--theme-length-closeButtonWidth);
+}
+@media (hover: hover) {
+  .modal-setting-back-button-icon:hover,
+  .view-header-nav-buttons > .clickable-icon:hover,
+  .mod-root .workspace-tab-header-status-icon:hover,
+  .mobile-tab .mobile-tab-pin:hover,
+  .map-view-graph-controls .minimize-button.svelte-1sl5jax:hover {
+    color: var(--theme-color-control);
+    background-color: var(--theme-color-navigationButtonBgHover);
+    .svg-icon {
+      stroke: var(--theme-color-controlHover);
+    }
+  }
+  .mod-root .workspace-tab-header-status-icon .svg-icon {
+    width: 80%;
+  }
+}
+/* #endregion */
+
+
 /* #region   Lightweight form controls */
 /* Form controls that are rendered as text until they have focus */
 
@@ -5097,7 +5102,9 @@ body:not(.is-grabbing) .tree-item-self.has-focus.is-being-renamed,
 body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus:focus-within {
   box-shadow: none;
 }
-
+.search-input-container {
+  padding: var(--input-border-width);
+}
 .search-input-container input[type="search"],
 input.document-search-input,
 input[type="email"],
@@ -5239,16 +5246,15 @@ select:focus,
 /* #endregion */
 /* #region.  Flair */
 .flair {
-    background-color: var(--flair-background);
-    border-radius: var(--radius-s);
-    color: var(--flair-color);
-    font-size: var(--font-ui-smaller);
-    letter-spacing: 0.05em;
-    margin-inline-start: 0;
-    line-height: 1;
-    padding: 0.375em 0.75em;
-    text-transform: uppercase;
-
+  background-color: var(--flair-background);
+  border-radius: var(--radius-s);
+  color: var(--flair-color);
+  font-size: var(--font-ui-smaller);
+  letter-spacing: 0.05em;
+  margin-inline-start: 0;
+  line-height: 1;
+  padding: 0.375em 0.75em;
+  text-transform: uppercase;
 }
 /* #endregion */
 /* #region   Multi-select container */
@@ -5525,6 +5531,19 @@ input[type="radio"]:focus {
 }
 /*   #endregion */
 /* #region   Item lists */
+.vertical-tab-header-group-title {
+  color: var(--text-normal);
+}
+
+/* Special case for lists of controls */
+.horizontal-tab-nav-item,
+.vertical-tab-nav-item {
+  color: var(--theme-color-control);
+
+  svg {
+    color: var(--theme-color-control);
+  }
+}
 
 @media (hover: hover) {
   body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
@@ -5533,6 +5552,10 @@ input[type="radio"]:focus {
     color: var(--nav-item-color-hover);
     background-color: var(--nav-item-background-hover);
     font-weight: var(--nav-item-weight-hover);
+
+    svg {
+      color: var(--nav-item-color-hover);
+    }
   }
 }
 .horizontal-tab-nav-item.is-active,
@@ -5541,6 +5564,10 @@ input[type="radio"]:focus {
 .nav-folder-title.is-active {
   background-color: var(--interactive-accent);
   color: var(--nav-item-color-active);
+
+  svg {
+    color: var(--nav-item-color-active);
+  }
 
   &.is-being-renamed {
     background: transparent;
@@ -5989,16 +6016,19 @@ body:not(.is-phone) .modal.mod-sync-history {
 }
 
 /* Settings modal */
-.modal.mod-settings .vertical-tab-header-group {
-  border-inline-end: none;
-  padding: 0 0 1.5em 0;
-}
-.modal.mod-settings .vertical-tab-header-group-title {
-  padding: 0 0.5em 0.5em 0.5em;
-}
-.mod-settings .vertical-tab-content {
-  background: var(--theme-color-settingsBg);
-  padding: 2em;
+
+.modal.mod-settings {
+  .vertical-tab-header-group {
+    border-inline-end: none;
+    padding: 0 0 1.5em 0;
+  }
+  .vertical-tab-header-group-title {
+    padding: 0 0.5em 0.5em 0.5em;
+  }
+  .vertical-tab-content {
+    background: var(--theme-color-settingsBg);
+    padding: 2em;
+  }
 }
 .modal-setting-nav-bar {
   border: none;
@@ -6024,6 +6054,14 @@ body:not(.is-phone) .modal.mod-sync-history {
   }
   .setting-group-search {
     margin-bottom: 4em;
+  }
+}
+.vertical-tab-nav-item-icon {
+  display: none;
+}
+body.theme-setting-enableIconsInSettings {
+  .vertical-tab-nav-item-icon {
+    display: flex;
   }
 }
 
@@ -6558,8 +6596,8 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
 }
 
 /* stick backlinks in document to bottom */
-.theme-setting-stickyEmbeddedLinks-on .cm-sizer > .embedded-backlinks,
-.theme-setting-stickyEmbeddedLinks-on .mod-footer:has(> .embedded-backlinks) {
+body.theme-setting-stickyEmbeddedLinks-on .cm-sizer > .embedded-backlinks,
+body.theme-setting-stickyEmbeddedLinks-on .mod-footer:has(> .embedded-backlinks) {
   position: sticky;
   bottom: 0;
   width: 100%;
@@ -6574,7 +6612,7 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
     }
   }
 }
-.theme-setting-stickyEmbeddedLinks-on
+body.theme-setting-stickyEmbeddedLinks-on
   .markdown-source-view.mod-cm6
   .cm-scroller {
   overflow-y: scroll;
@@ -6582,7 +6620,7 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
   flex-shrink: 1;
   flex-basis: 100%;
 }
-.theme-setting-stickyEmbeddedLinks-on
+body.theme-setting-stickyEmbeddedLinks-on
   .setting-properties-position-below
   .mod-root
   .is-live-preview
@@ -6970,9 +7008,27 @@ body {
     .nav-buttons-container {
       gap: 0.25em;
       /* Insert an element to force a line break in the flexbox, separating the first two controls from the others. */
-      .nav-action-button:first-child,
-      .nav-action-button:nth-child(2) {
+      .nav-action-button:has(.svg-icon.lucide-edit),
+      .nav-action-button:has(.svg-icon.lucide-folder-plus) {
         order: 0;
+      }
+      /* Style first two controls that will create items as lightweight buttons */
+      .nav-action-button:has(.svg-icon.lucide-edit),
+      .nav-action-button:has(.svg-icon.lucide-folder-plus) {
+        border: none;
+        box-shadow: var(--theme-shadow-control);
+        background-color: var(--theme-color-controlLowWeightBg);
+        color: var(--theme-color-controlText);
+        font-size: var(--font-ui-smaller);
+        line-height: var(--line-height-tight);
+        min-height: 1.5rem;
+        padding: 0.25em 0.5em;
+        display: flex;
+        gap: 0.5em;
+
+        &:after {
+          content: attr(aria-label);
+        }
       }
       &:after {
         order: 1;
@@ -6983,35 +7039,17 @@ body {
         order: 2;
       }
     }
-    /* Style first two controls as lightweight buttons */
-    .nav-action-button:first-child,
-    .nav-action-button:nth-child(2) {
-      border: none;
-      box-shadow: var(--theme-shadow-control);
-      background-color: var(--theme-color-controlLowWeightBg);
-      color: var(--theme-color-controlText);
-      font-size: var(--font-ui-smaller);
-      line-height: var(--line-height-tight);
-      min-height: 1.5rem;
-      padding: 0.25em 0.5em;
-      display: flex;
-      gap: 0.5em;
-
-      &:after {
-        content: attr(aria-label);
-      }
-    }
 
     @media (hover: hover) {
-      .nav-action-button:first-child:hover,
-      .nav-action-button:nth-child(2):hover {
+      .nav-action-button:has(.svg-icon.lucide-edit):hover,
+      .nav-action-button:has(.svg-icon.lucide-folder-plus):hover {
         border: none;
         background-color: var(--theme-color-controlBgHover);
         color: var(--theme-color-controlTextHover);
 
       }
-      .nav-action-button:first-child.is-active:hover,
-      .nav-action-button:nth-child(2).has-active-menu:hover {
+      .nav-action-button:has(.svg-icon.lucide-edit).is-active:hover,
+      .nav-action-button:has(.svg-icon.lucide-folder-plus).has-active-menu:hover {
         border: none;
         background-color: var(--theme-color-controlBgHover);
         color: var(--theme-color-controlTextHover);
@@ -7031,8 +7069,8 @@ body {
 .workspace-drawer {
   .workspace-leaf-content[data-type="file-explorer"] {
     .nav-header {
-      .nav-action-button:first-child,
-      .nav-action-button:nth-child(2) {
+      .nav-action-button:has(.svg-icon.lucide-edit),
+      .nav-action-button:has(.svg-icon.lucide-folder-plus) {
         min-height: 44px;
         flex-shrink: 0;
       }
@@ -9370,28 +9408,30 @@ body.theme-setting-overrideStyleSettings {
     margin-inline-start: 0;
   }
 
-  .setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
-    + .style-settings-container {
-    .setting-item.setting-item-heading.style-settings-heading
-      .style-settings-collapse-indicator:after {
-      margin-inline-start: 0.5em;
-      vertical-align: top;
-      display: inline-block;
-      width: 1rem;
-      height: 1rem;
-      margin: 0.125em 0 0 0.5em;
-      opacity: 75%;
-    }
+  &.theme-setting-enableIconsInSettings {
+    .setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
+      + .style-settings-container {
+      .setting-item.setting-item-heading.style-settings-heading
+        .style-settings-collapse-indicator:after {
+        margin-inline-start: 0.5em;
+        vertical-align: top;
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin: 0.125em 0 0 0.5em;
+        opacity: 75%;
+      }
 
-    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-baseColor"]
-      .style-settings-collapse-indicator:after {
-      filter: hue-rotate(0deg);
-      content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><g><rect x='0' y='0' width='1' height='24' style='fill:rgb(255,0,0);'/><rect x='4' y='0' width='1' height='24' style='fill:rgb(255,255,0);'/><rect x='8' y='0' width='1' height='24' style='fill:rgb(0,255,0);'/><rect x='12' y='0' width='1' height='24' style='fill:rgb(0,255,255);'/><rect x='16' y='0' width='1' height='24' style='fill:rgb(0,0,255);'/><rect x='20' y='0' width='1' height='24' style='fill:rgb(255,0,255);'/><rect x='2' y='0' width='1' height='24' style='fill:rgb(255,127,0);'/><rect x='6' y='0' width='1' height='24' style='fill:rgb(127,255,0);'/><rect x='10' y='0' width='1' height='24' style='fill:rgb(0,255,127);'/><rect x='14' y='0' width='1' height='24' style='fill:rgb(0,127,255);'/><rect x='18' y='0' width='1' height='24' style='fill:rgb(127,0,255);'/><rect x='22' y='0' width='1' height='24' style='fill:rgb(255,0,127);'/><rect x='1' y='0' width='1' height='24' style='fill:rgb(255,63,0);'/><rect x='5' y='0' width='1' height='24' style='fill:rgb(191,255,0);'/><rect x='9' y='0' width='1' height='24' style='fill:rgb(0,255,63);'/><rect x='13' y='0' width='1' height='24' style='fill:rgb(0,191,255);'/><rect x='17' y='0' width='1' height='24' style='fill:rgb(63,0,255);'/><rect x='21' y='0' width='1' height='24' style='fill:rgb(255,0,191);'/><rect x='3' y='0' width='1' height='24' style='fill:rgb(255,191,0);'/><rect x='7' y='0' width='1' height='24' style='fill:rgb(63,255,0);'/><rect x='11' y='0' width='1' height='24' style='fill:rgb(0,255,191);'/><rect x='15' y='0' width='1' height='24' style='fill:rgb(0,63,255);'/><rect x='19' y='0' width='1' height='24' style='fill:rgb(191,0,255);'/><rect x='23' y='0' width='1' height='24' style='fill:rgb(255,0,63);'/></g></svg>");
-      opacity: 100%;
+      .setting-item.setting-item-heading.style-settings-heading[data-id="heading-baseColor"]
+        .style-settings-collapse-indicator:after {
+        filter: hue-rotate(0deg);
+        content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><g><rect x='0' y='0' width='1' height='24' style='fill:rgb(255,0,0);'/><rect x='4' y='0' width='1' height='24' style='fill:rgb(255,255,0);'/><rect x='8' y='0' width='1' height='24' style='fill:rgb(0,255,0);'/><rect x='12' y='0' width='1' height='24' style='fill:rgb(0,255,255);'/><rect x='16' y='0' width='1' height='24' style='fill:rgb(0,0,255);'/><rect x='20' y='0' width='1' height='24' style='fill:rgb(255,0,255);'/><rect x='2' y='0' width='1' height='24' style='fill:rgb(255,127,0);'/><rect x='6' y='0' width='1' height='24' style='fill:rgb(127,255,0);'/><rect x='10' y='0' width='1' height='24' style='fill:rgb(0,255,127);'/><rect x='14' y='0' width='1' height='24' style='fill:rgb(0,127,255);'/><rect x='18' y='0' width='1' height='24' style='fill:rgb(127,0,255);'/><rect x='22' y='0' width='1' height='24' style='fill:rgb(255,0,127);'/><rect x='1' y='0' width='1' height='24' style='fill:rgb(255,63,0);'/><rect x='5' y='0' width='1' height='24' style='fill:rgb(191,255,0);'/><rect x='9' y='0' width='1' height='24' style='fill:rgb(0,255,63);'/><rect x='13' y='0' width='1' height='24' style='fill:rgb(0,191,255);'/><rect x='17' y='0' width='1' height='24' style='fill:rgb(63,0,255);'/><rect x='21' y='0' width='1' height='24' style='fill:rgb(255,0,191);'/><rect x='3' y='0' width='1' height='24' style='fill:rgb(255,191,0);'/><rect x='7' y='0' width='1' height='24' style='fill:rgb(63,255,0);'/><rect x='11' y='0' width='1' height='24' style='fill:rgb(0,255,191);'/><rect x='15' y='0' width='1' height='24' style='fill:rgb(0,63,255);'/><rect x='19' y='0' width='1' height='24' style='fill:rgb(191,0,255);'/><rect x='23' y='0' width='1' height='24' style='fill:rgb(255,0,63);'/></g></svg>");
+        opacity: 100%;
+      }
     }
   }
 }
-body.theme-setting-overrideStyleSettings.theme-light {
+body.theme-setting-overrideStyleSettings.theme-setting-enableIconsInSettings.theme-light {
   .setting-item.setting-item-heading.style-settings-heading
     .style-settings-collapse-indicator:after {
     filter: hue-rotate(calc(var(--base-h) * 1deg));
@@ -9401,11 +9441,11 @@ body.theme-setting-overrideStyleSettings.theme-light {
   } */
   .setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
     + .style-settings-container {
-    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-background"]
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-ui-background"]
       .style-settings-collapse-indicator:after {
       content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,0.981029,0.249756,0.225573)'><path d='M23.21,0.789L23.21,23.215L0.765,23.215L0.765,0.789L23.21,0.789ZM22.19,5.886L11.988,5.886L11.988,2.828L3.826,2.828L3.826,5.886L1.786,5.886L1.786,21.176L22.19,21.176L22.19,5.886Z' style='fill:hsl(0deg,75%,5%);stroke:hsl(0deg,75%,5%);stroke-width:2.04px;'/></g></svg>");
     }
-    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-notes"]
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-notes-appearance"]
       .style-settings-collapse-indicator:after {
       content: url("data:image/svg+xml,<svg width='100%' height='100%' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'><g transform='matrix(1,0,0,1,-1,-2)'><g transform='matrix(0.913043,0,0,0.913043,1.04348,-5.63549)'><path d='M22.952,12.744L22.952,29.172L1.048,29.172L1.048,12.744L3.238,12.744L3.238,9.458L12,9.458L12,12.744L22.952,12.744Z' style='fill:none;stroke:hsl(0deg,75%,5%);stroke-width:2.19px;'/></g></g></svg>");
     }
@@ -9424,7 +9464,7 @@ body.theme-setting-overrideStyleSettings.theme-light {
     }
   }
 }
-body.theme-setting-overrideStyleSettings.theme-dark {
+body.theme-setting-overrideStyleSettings.theme-setting-enableIconsInSettings.theme-dark {
   .setting-item.setting-item-heading.style-settings-heading
     .style-settings-collapse-indicator:after {
     filter: hue-rotate(calc(var(--base-h) * 1deg));
@@ -9493,6 +9533,34 @@ body.theme-setting-overrideTasks {
   }
 }
 /*   #endregion */
+/* #region   Community Plugin: Plugin Update Tracker */
+
+body.theme-setting-overridePluginUpdateTracker {
+  .plugin-update-tracker-icon {
+    background-color: var(--theme-color-baseTransparent25);
+    border-radius: 9999px;
+    padding: 0.25rem;
+
+    .plugin-update-tracker-icon-chip {
+      color: var(--flair-color);
+      font-size: var(--font-ui-smaller);
+      letter-spacing: 0.05em;
+      margin-inline-start: 0.25em;
+      line-height: 1;
+      padding: 0.375em 0.75em;
+      text-transform: uppercase;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 9999px;
+    }
+    &.plugin-update-tracker-icon--updates-available .plugin-update-tracker-icon-chip {
+      background-color: var(--theme-color-orangeDarkened);
+    }
+    &.plugin-update-tracker-icon--no-updates-available .plugin-update-tracker-icon-chip {
+      background-color: var(--theme-color-greenDarkened);
+    }
+  }
+}
 /* #endregion */
 /* #region Dev stuff */
 

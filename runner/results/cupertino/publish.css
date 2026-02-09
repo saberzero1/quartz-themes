@@ -93,38 +93,46 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
-  --background-modifier-border: rgba(0, 0, 0, 0.075) !important;
-  --background-modifier-border-focus: rgba(138, 92, 245, 0.5) !important;
-  --background-modifier-border-hover: rgba(0, 0, 0, 0.075) !important;
+  --background-modifier-border: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 15%
+  ) !important;
+  --background-modifier-border-focus: #c0bfbc !important;
+  --background-modifier-border-hover: #deddda !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
-  --background-modifier-error: rgb(255, 56, 60) !important;
-  --background-modifier-error-hover: rgb(255, 56, 60) !important;
-  --background-modifier-error-rgb: 255, 56, 60 !important;
-  --background-modifier-form-field: #ffffff !important;
-  --background-modifier-form-field-hover: #ffffff !important;
+  --background-modifier-error: rgb(237, 51, 59) !important;
+  --background-modifier-error-hover: rgb(237, 51, 59) !important;
+  --background-modifier-error-rgb: 237, 51, 59 !important;
+  --background-modifier-form-field: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 10%
+  ) !important;
+  --background-modifier-form-field-hover: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 10%
+  ) !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
-  --background-modifier-message: rgb(from #fafafa r g b / 75%) !important;
-  --background-modifier-success: rgb(52, 199, 89) !important;
-  --background-modifier-success-rgb: 52, 199, 89 !important;
-  --background-primary: #ffffff !important;
-  --background-primary-alt: #fafafa !important;
-  --background-secondary: #f6f6f6 !important;
-  --background-secondary-alt: #fcfcfc !important;
-  --bases-cards-background: #ffffff !important;
+  --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
+  --background-modifier-success: rgb(46, 194, 126) !important;
+  --background-modifier-success-rgb: 46, 194, 126 !important;
+  --background-primary: #fff !important;
+  --background-primary-alt: #fff !important;
+  --background-secondary: #ebebed !important;
+  --background-secondary-alt: #f3f3f5 !important;
+  --bases-cards-background: #fff !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #fafafa !important;
+  --bases-cards-cover-background: #fff !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgba(0, 0, 0, 0.075) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgba(0, 0, 0, 0.075) !important;
-  --bases-embed-border-color: rgba(0, 0, 0, 0.075) !important;
-  --bases-embed-border-radius: 8px !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #deddda !important;
+  --bases-embed-border-color: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 15%
+  ) !important;
+  --bases-embed-border-radius: 9px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #5c5c5c !important;
+  --bases-group-heading-property-color: rgba(0, 0, 6, 0.64) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -134,25 +142,27 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgba(0, 0, 0, 0.075) !important;
-  --bases-table-cell-background-active: #ffffff !important;
-  --bases-table-cell-background-disabled: #fafafa !important;
+  --bases-table-border-color: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 15%
+  ) !important;
+  --bases-table-cell-background-active: #fff !important;
+  --bases-table-cell-background-disabled: #fff !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgba(138, 92, 245, 0.5) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #c0bfbc !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(153, 115, 247) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 8px !important;
+  --bases-table-container-border-radius: 9px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #fafafa !important;
+  --bases-table-group-background: #fff !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #ffffff !important;
+  --bases-table-header-background: #fff !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --bases-table-header-color: #ababab !important;
+  --bases-table-header-color: rgba(0, 0, 6, 0.48) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -163,65 +173,65 @@ body.theme-light {
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #ffffff !important;
+  --bases-table-summary-background: #fff !important;
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: #fafafa !important;
-  --blockquote-border-color: #ababab !important;
+  --blockquote-background-color: #f3f3f5 !important;
+  --blockquote-border-color: #9a9996 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 300 !important;
   --bold-weight: 700 !important;
   --border-width: 1px !important;
-  --button-radius: 8px !important;
+  --button-radius: 9px !important;
   --callout-blend-mode: normal;
   --callout-border-opacity: 0.25;
   --callout-border-width: 1px;
-  --callout-bug: 255, 56, 60;
+  --callout-bug: 237, 51, 59;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 0, 136, 255;
-  --callout-error: 255, 56, 60;
-  --callout-example: 203, 48, 224;
-  --callout-fail: 255, 56, 60;
-  --callout-important: 0, 192, 232;
-  --callout-info: 0, 136, 255;
+  --callout-default: 98, 160, 234;
+  --callout-error: 237, 51, 59;
+  --callout-example: 192, 97, 203;
+  --callout-fail: 237, 51, 59;
+  --callout-important: 35, 164, 173;
+  --callout-info: 98, 160, 234;
   --callout-padding: 16px;
-  --callout-question: 255, 141, 40;
+  --callout-question: 255, 120, 0;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 8px;
-  --callout-success: 52, 199, 89;
-  --callout-summary: 0, 192, 232;
-  --callout-tip: 0, 192, 232;
+  --callout-radius: 9px;
+  --callout-success: 46, 194, 126;
+  --callout-summary: 35, 164, 173;
+  --callout-tip: 35, 164, 173;
   --callout-title-padding: 0;
   --callout-title-weight: 700;
-  --callout-todo: 0, 136, 255;
-  --callout-warning: 255, 141, 40;
-  --canvas-background: #ffffff !important;
-  --canvas-card-label-color: #ababab !important;
+  --callout-todo: 98, 160, 234;
+  --callout-warning: 255, 120, 0;
+  --canvas-background: #fff !important;
+  --canvas-card-label-color: rgba(0, 0, 6, 0.48) !important;
   --canvas-color: 192, 192, 192 !important;
-  --canvas-color-1: 255, 56, 60 !important;
-  --canvas-color-2: 255, 141, 40 !important;
-  --canvas-color-3: 255, 204, 0 !important;
-  --canvas-color-4: 52, 199, 89 !important;
-  --canvas-color-5: 0, 192, 232 !important;
-  --canvas-color-6: 203, 48, 224 !important;
-  --canvas-dot-pattern: #e0e0e0 !important;
-  --caret-color: #222222 !important;
-  --checkbox-border-color: #ababab !important;
-  --checkbox-border-color-hover: #5c5c5c !important;
+  --canvas-color-1: 237, 51, 59 !important;
+  --canvas-color-2: 255, 120, 0 !important;
+  --canvas-color-3: 246, 211, 45 !important;
+  --canvas-color-4: 46, 194, 126 !important;
+  --canvas-color-5: 35, 164, 173 !important;
+  --canvas-color-6: 192, 97, 203 !important;
+  --canvas-dot-pattern: #e6e5e3 !important;
+  --caret-color: rgba(0, 0, 6, 0.8) !important;
+  --checkbox-border-color: rgba(0, 0, 6, 0.48) !important;
+  --checkbox-border-color-hover: rgba(0, 0, 6, 0.64) !important;
   --checkbox-color: rgb(153, 115, 247) !important;
   --checkbox-color-hover: rgb(166, 139, 249) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #ffffff !important;
-  --checkbox-radius: 100vh !important;
+  --checkbox-marker-color: #fff !important;
+  --checkbox-radius: 100px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #5c5c5c !important;
+  --checklist-done-color: rgba(0, 0, 6, 0.64) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 100vh !important;
-  --code-background: #fafafa !important;
-  --code-border-color: rgba(0, 0, 0, 0.075) !important;
+  --clickable-icon-radius: 9px !important;
+  --code-background: #f3f3f5 !important;
+  --code-border-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
   --code-comment: #b6b9c5 !important;
@@ -229,49 +239,49 @@ body.theme-light {
   --code-important: #b76b02 !important;
   --code-keyword: #e45749 !important;
   --code-normal: #383a42 !important;
-  --code-operator: rgb(255, 56, 60) !important;
+  --code-operator: rgb(237, 51, 59) !important;
   --code-property: #62afef !important;
   --code-punctuation: #383a42 !important;
-  --code-radius: 8px !important;
+  --code-radius: 9px !important;
   --code-size: 0.8em !important;
   --code-string: #0d97b3 !important;
   --code-tag: #e45749 !important;
   --code-value: #a626a4 !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #ababab !important;
+  --collapse-icon-color: rgba(0, 0, 6, 0.48) !important;
   --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
   --color-accent: rgb(138, 92, 245) !important;
   --color-accent-1: rgb(153, 115, 247) !important;
   --color-accent-2: rgb(166, 139, 249) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: #ffffff !important;
-  --color-base-05: #fcfcfc !important;
-  --color-base-10: #fafafa !important;
-  --color-base-100: #222222 !important;
-  --color-base-20: #f6f6f6 !important;
-  --color-base-25: #e3e3e3 !important;
-  --color-base-30: #e0e0e0 !important;
-  --color-base-35: #d4d4d4 !important;
-  --color-base-40: #bdbdbd !important;
-  --color-base-50: #ababab !important;
-  --color-base-60: #707070 !important;
-  --color-base-70: #5c5c5c !important;
-  --color-blue: rgb(0, 136, 255) !important;
-  --color-blue-rgb: 0, 136, 255 !important;
-  --color-cyan: rgb(0, 192, 232) !important;
-  --color-cyan-rgb: 0, 192, 232 !important;
-  --color-green: rgb(52, 199, 89) !important;
-  --color-green-rgb: 52, 199, 89 !important;
-  --color-orange: rgb(255, 141, 40) !important;
-  --color-orange-rgb: 255, 141, 40 !important;
-  --color-pink: rgb(255, 45, 85) !important;
-  --color-pink-rgb: 255, 45, 85 !important;
-  --color-purple: rgb(203, 48, 224) !important;
-  --color-purple-rgb: 203, 48, 224 !important;
-  --color-red: rgb(255, 56, 60) !important;
-  --color-red-rgb: 255, 56, 60 !important;
-  --color-yellow: rgb(255, 204, 0) !important;
-  --color-yellow-rgb: 255, 204, 0 !important;
+  --color-base-05: #fdfdfc !important;
+  --color-base-10: #fbfafa !important;
+  --color-base-100: #000000 !important;
+  --color-base-20: #f6f5f4 !important;
+  --color-base-25: #eeedeb !important;
+  --color-base-30: #e6e5e3 !important;
+  --color-base-35: #deddda !important;
+  --color-base-40: #c0bfbc !important;
+  --color-base-50: #9a9996 !important;
+  --color-base-60: #77767b !important;
+  --color-base-70: #5e5c64 !important;
+  --color-blue: rgb(98, 160, 234) !important;
+  --color-blue-rgb: 98, 160, 234 !important;
+  --color-cyan: rgb(35, 164, 173) !important;
+  --color-cyan-rgb: 35, 164, 173 !important;
+  --color-green: rgb(46, 194, 126) !important;
+  --color-green-rgb: 46, 194, 126 !important;
+  --color-orange: rgb(255, 120, 0) !important;
+  --color-orange-rgb: 255, 120, 0 !important;
+  --color-pink: rgb(224, 97, 178) !important;
+  --color-pink-rgb: 224, 97, 178 !important;
+  --color-purple: rgb(192, 97, 203) !important;
+  --color-purple-rgb: 192, 97, 203 !important;
+  --color-red: rgb(237, 51, 59) !important;
+  --color-red-rgb: 237, 51, 59 !important;
+  --color-yellow: rgb(246, 211, 45) !important;
+  --color-yellow-rgb: 246, 211, 45 !important;
   --corner-smoothing: system-ui !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -279,23 +289,25 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: rgba(0, 0, 0, 0.075) !important;
-  --divider-color-hover: #ababab !important;
+  --divider-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
+  --divider-color-hover: #9a9996 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
-  --drag-ghost-background: #ffffff !important;
-  --drag-ghost-text-color: #222222 !important;
-  --dropdown-background: #e3e3e3 !important;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
+  --drag-ghost-text-color: #fff !important;
+  --dropdown-background: rgb(from rgba(0, 0, 6, 0.8) r g b / 10%) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #e3e3e3 !important;
+  --dropdown-background-hover: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 15%
+  ) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover: none !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid #ababab !important;
+  --embed-border-start: 2px solid #9a9996 !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: none !important;
@@ -303,16 +315,16 @@ body.theme-light {
   --file-folding-offset: 24px !important;
   --file-header-border: none !important;
   --file-header-font:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px 32px !important;
-  --flair-background: #e3e3e3 !important;
-  --flair-color: #222222 !important;
+  --flair-background: rgb(from rgba(0, 0, 6, 0.8) r g b / 10%) !important;
+  --flair-color: rgba(0, 0, 6, 0.8) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -324,17 +336,16 @@ body.theme-light {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
-  --font-interface-theme:
-    system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
+  --font-interface-theme: "Adwaita Sans", "Adwaita Sans Text" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-monospace:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -347,51 +358,49 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, "Arial" !important;
+  --font-print: "Adwaita Sans", "Adwaita Sans Text", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
-  --font-text-theme:
-    system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
+  --font-text-theme: "Adwaita Sans", "Adwaita Sans Text" !important;
   --font-thin: 100 !important;
-  --font-ui-large: 20px !important;
+  --font-ui-large: 17px !important;
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgba(0, 0, 0, 0.075) !important;
+  --footnote-divider-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: #5c5c5c !important;
-  --footnote-id-color-no-occurrences: #ababab !important;
+  --footnote-id-color: rgba(0, 0, 6, 0.64) !important;
+  --footnote-id-color-no-occurrences: rgba(0, 0, 6, 0.48) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --footnote-line-height: 1.6 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
-  --footnote-radius: 8px !important;
+  --footnote-radius: 9px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
-  --frame-right-space: 168px !important;
+  --frame-right-space: 124px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #d4d4d4 !important;
-  --graph-node: #5c5c5c !important;
-  --graph-node-attachment: rgb(255, 204, 0) !important;
+  --graph-line: #deddda !important;
+  --graph-node: rgba(0, 0, 6, 0.64) !important;
+  --graph-node-attachment: rgb(246, 211, 45) !important;
   --graph-node-focused: rgb(138, 92, 245) !important;
-  --graph-node-tag: rgb(52, 199, 89) !important;
-  --graph-node-unresolved: #ababab !important;
-  --graph-text: #222222 !important;
+  --graph-node-tag: rgb(46, 194, 126) !important;
+  --graph-node-unresolved: rgba(0, 0, 6, 0.48) !important;
+  --graph-text: rgba(0, 0, 6, 0.8) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.5em !important;
@@ -428,31 +437,31 @@ body.theme-light {
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
-  --header-height: 56px !important;
-  --heading-formatting: #ababab !important;
+  --header-height: 48px !important;
+  --heading-formatting: rgba(0, 0, 6, 0.48) !important;
   --heading-spacing: 2em !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: rgba(0, 0, 0, 0.075) !important;
+  --hr-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
   --hr-thickness: 2px !important;
-  --icon-color: rgb(0, 0, 0) !important;
+  --icon-color: rgba(0, 0, 6, 0.64) !important;
   --icon-color-active: rgb(138, 92, 245) !important;
-  --icon-color-focused: #222222 !important;
-  --icon-color-hover: rgb(0, 0, 0) !important;
-  --icon-l: 18px !important;
-  --icon-l-stroke-width: 1.75px !important;
-  --icon-m: 18px !important;
-  --icon-m-stroke-width: 1.75px !important;
+  --icon-color-focused: rgba(0, 0, 6, 0.8) !important;
+  --icon-color-hover: rgba(0, 0, 6, 0.64) !important;
+  --icon-l: 16px !important;
+  --icon-l-stroke-width: 2px !important;
+  --icon-m: 16px !important;
+  --icon-m-stroke-width: 2px !important;
   --icon-opacity: 1 !important;
   --icon-opacity-active: 1 !important;
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
+  --icon-size: 16px !important;
+  --icon-stroke: 2px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
-  --icon-xs-stroke-width: 2px !important;
+  --icon-xs-stroke-width: 2.25px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
@@ -468,21 +477,21 @@ body.theme-light {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
+  --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #ababab !important;
-  --input-font-weight: 400 !important;
-  --input-height: 24px !important;
+  --input-date-separator: rgba(0, 0, 6, 0.48) !important;
+  --input-font-weight: 700 !important;
+  --input-height: 32px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #ababab !important;
-  --input-radius: 8px !important;
+  --input-placeholder-color: rgba(0, 0, 6, 0.48) !important;
+  --input-radius: 9px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
   --interactive-accent: rgb(153, 115, 247) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: #e3e3e3 !important;
-  --interactive-normal: #e3e3e3 !important;
+  --interactive-hover: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
+  --interactive-normal: rgb(from rgba(0, 0, 6, 0.8) r g b / 10%) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -520,87 +529,85 @@ body.theme-light {
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #ababab !important;
+  --list-marker-color: rgba(0, 0, 6, 0.48) !important;
   --list-marker-color-collapsed: rgb(138, 92, 245) !important;
-  --list-marker-color-hover: #5c5c5c !important;
+  --list-marker-color-hover: rgba(0, 0, 6, 0.64) !important;
   --list-numbered-style: decimal !important;
-  --list-spacing: 0.2em !important;
+  --list-spacing: 0.175em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #f6f6f6 !important;
-  --menu-border-color: rgba(0, 0, 0, 0.075) !important;
+  --menu-background: #fff !important;
+  --menu-border-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 10%) !important;
   --menu-border-width: 1px !important;
-  --menu-padding: 4px !important;
+  --menu-padding: 6px !important;
   --menu-radius: 12px !important;
   --menu-shadow:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.5),
-    inset -1px -1px 2px rgba(255, 255, 255, 0.5),
-    inset 0 4px 16px rgba(255, 255, 255, 0.025), inset 0 0 1px 1px white,
-    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+    0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07),
+    0 2px 6px 2px rgba(0, 0, 6, 0.03) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgba(0, 0, 0, 0.075) !important;
+  --metadata-border-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgba(0, 0, 0, 0.075) !important;
+  --metadata-divider-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
-  --metadata-gap: 0 !important;
+  --metadata-gap: 8px !important;
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #222222 !important;
+  --metadata-input-text-color: rgba(0, 0, 6, 0.8) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #5c5c5c !important;
-  --metadata-label-text-color-hover: #5c5c5c !important;
+  --metadata-label-text-color: rgba(0, 0, 6, 0.64) !important;
+  --metadata-label-text-color-hover: rgba(0, 0, 6, 0.64) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 0 !important;
+  --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgba(138, 92, 245, 0.5) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgba(0, 0, 0, 0.075) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #c0bfbc !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #deddda !important;
   --metadata-property-padding: 0 !important;
-  --metadata-property-radius: 12px !important;
-  --metadata-property-radius-focus: 12px !important;
-  --metadata-property-radius-hover: 12px !important;
+  --metadata-property-radius: 6px !important;
+  --metadata-property-radius-focus: 6px !important;
+  --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: rgb(from #fafafa r g b / 75%) !important;
-  --modal-border-color: rgba(0, 0, 0, 0.075) !important;
+  --modal-background: #fafafb !important;
+  --modal-border-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 10%) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 20px !important;
+  --modal-radius: 15px !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: rgb(0, 0, 0) !important;
-  --nav-collapse-icon-color-collapsed: #ababab !important;
-  --nav-heading-color: #222222 !important;
-  --nav-heading-color-collapsed: #ababab !important;
-  --nav-heading-color-collapsed-hover: #5c5c5c !important;
-  --nav-heading-color-hover: #222222 !important;
+  --nav-collapse-icon-color: rgba(0, 0, 6, 0.48) !important;
+  --nav-collapse-icon-color-collapsed: rgba(0, 0, 6, 0.48) !important;
+  --nav-heading-color: rgba(0, 0, 6, 0.8) !important;
+  --nav-heading-color-collapsed: rgba(0, 0, 6, 0.48) !important;
+  --nav-heading-color-collapsed-hover: rgba(0, 0, 6, 0.64) !important;
+  --nav-heading-color-hover: rgba(0, 0, 6, 0.8) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
@@ -610,42 +617,42 @@ body.theme-light {
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgb(0, 0, 0) !important;
-  --nav-item-color-active: rgb(0, 0, 0) !important;
+  --nav-item-color: rgba(0, 0, 6, 0.64) !important;
+  --nav-item-color-active: rgba(0, 0, 6, 0.8) !important;
   --nav-item-color-highlighted: rgb(138, 92, 245) !important;
-  --nav-item-color-hover: rgb(0, 0, 0) !important;
-  --nav-item-color-selected: rgb(0, 0, 0) !important;
-  --nav-item-padding: 8px 8px 8px 24px !important;
-  --nav-item-parent-padding: 8px 8px 8px 24px !important;
+  --nav-item-color-hover: rgba(0, 0, 6, 0.8) !important;
+  --nav-item-color-selected: rgba(0, 0, 6, 0.8) !important;
+  --nav-item-padding: 8px 16px 8px 32px !important;
+  --nav-item-parent-padding: 8px 16px 8px 32px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #ababab !important;
-  --nav-tag-color-active: #5c5c5c !important;
-  --nav-tag-color-hover: #5c5c5c !important;
-  --nav-tag-radius: 8px !important;
+  --nav-tag-color: rgba(0, 0, 6, 0.48) !important;
+  --nav-tag-color-active: rgba(0, 0, 6, 0.64) !important;
+  --nav-tag-color-hover: rgba(0, 0, 6, 0.64) !important;
+  --nav-tag-radius: 9px !important;
   --nav-tag-weight: 600 !important;
-  --p-spacing: 1rem !important;
+  --p-spacing: 1.75rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #ffffff !important;
-  --pdf-page-background: #ffffff !important;
+  --pdf-background: #fff !important;
+  --pdf-page-background: #fff !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: #ffffff !important;
+  --pdf-sidebar-background: #fff !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgba(0, 0, 0, 0.075) !important;
-  --pill-border-color-hover: rgba(0, 0, 0, 0.075) !important;
+  --pill-border-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
+  --pill-border-color-hover: #deddda !important;
   --pill-border-width: 1px !important;
-  --pill-color: #5c5c5c !important;
-  --pill-color-hover: #222222 !important;
-  --pill-color-remove: #ababab !important;
+  --pill-color: rgba(0, 0, 6, 0.64) !important;
+  --pill-color-hover: rgba(0, 0, 6, 0.8) !important;
+  --pill-color-remove: rgba(0, 0, 6, 0.48) !important;
   --pill-color-remove-hover: rgb(138, 92, 245) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
@@ -660,16 +667,16 @@ body.theme-light {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --prompt-border-color: rgba(0, 0, 0, 0.075) !important;
+  --prompt-border-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 10%) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 64px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 20px !important;
+  --radius-l: 15px !important;
   --radius-m: 12px !important;
-  --radius-s: 8px !important;
-  --radius-xl: 28px !important;
+  --radius-s: 9px !important;
+  --radius-xl: 18px !important;
   --ribbon-background: transparent !important;
   --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -682,22 +689,20 @@ body.theme-light {
   --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 20px !important;
+  --scrollbar-radius: 15px !important;
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #5c5c5c !important;
+  --search-clear-button-color: rgba(0, 0, 6, 0.64) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #5c5c5c !important;
+  --search-icon-color: rgba(0, 0, 6, 0.64) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #ffffff !important;
+  --search-result-background: #fff !important;
   --shadow-l:
-    0 0 1px rgba(0, 0, 0, 0.4), inset 0 0 1px 1px white,
-    0 16px 64px rgba(0, 0, 0, 0.15) !important;
+    0 0 14px 5px rgba(0, 0, 0, 0.15), 0 0 5px 2px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --shadow-s:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.5),
-    inset -1px -1px 2px rgba(255, 255, 255, 0.5),
-    inset 0 4px 16px rgba(255, 255, 255, 0.025), inset 0 0 1px 1px white,
-    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+    0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07),
+    0 2px 6px 2px rgba(0, 0, 6, 0.03) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -721,70 +726,76 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: rgba(0, 0, 0, 0.075) !important;
+  --slider-thumb-border-color: #deddda !important;
   --slider-thumb-border-width: 0 !important;
-  --slider-thumb-height: 16px !important;
+  --slider-thumb-height: 20px !important;
   --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 20px !important;
-  --slider-thumb-y: -5px !important;
-  --slider-track-background: rgba(0, 0, 0, 0.075) !important;
-  --slider-track-height: 6px !important;
+  --slider-thumb-y: -8px !important;
+  --slider-track-background: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 15%
+  ) !important;
+  --slider-track-height: 4px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #f6f6f6 !important;
-  --status-bar-border-color: rgba(0, 0, 0, 0.075) !important;
+  --status-bar-background: #ebebed !important;
+  --status-bar-border-color: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 15%
+  ) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 12px 0 0 0 !important;
-  --status-bar-text-color: #5c5c5c !important;
+  --status-bar-text-color: rgba(0, 0, 6, 0.64) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: rgb(255, 56, 60) !important;
-  --sync-avatar-color-2: rgb(255, 141, 40) !important;
-  --sync-avatar-color-3: rgb(255, 204, 0) !important;
-  --sync-avatar-color-4: rgb(52, 199, 89) !important;
-  --sync-avatar-color-5: rgb(0, 192, 232) !important;
-  --sync-avatar-color-6: rgb(0, 136, 255) !important;
-  --sync-avatar-color-7: rgb(203, 48, 224) !important;
-  --sync-avatar-color-8: rgb(255, 45, 85) !important;
+  --sync-avatar-color-1: rgb(237, 51, 59) !important;
+  --sync-avatar-color-2: rgb(255, 120, 0) !important;
+  --sync-avatar-color-3: rgb(246, 211, 45) !important;
+  --sync-avatar-color-4: rgb(46, 194, 126) !important;
+  --sync-avatar-color-5: rgb(35, 164, 173) !important;
+  --sync-avatar-color-6: rgb(98, 160, 234) !important;
+  --sync-avatar-color-7: rgb(192, 97, 203) !important;
+  --sync-avatar-color-8: rgb(224, 97, 178) !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #ffffff !important;
-  --tab-container-background: #f6f6f6 !important;
-  --tab-curve: 12px !important;
-  --tab-divider-color: rgba(0, 0, 0, 0.075) !important;
+  --tab-background-active: #fff !important;
+  --tab-container-background: #ebebed !important;
+  --tab-curve: 13px !important;
+  --tab-divider-color: #deddda !important;
   --tab-font-size: 13px !important;
-  --tab-max-width: 320px !important;
-  --tab-outline-color: rgba(0, 0, 0, 0.075) !important;
+  --tab-max-width: 200px !important;
+  --tab-outline-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 8px !important;
-  --tab-radius-active: 8px 8px 0 0 !important;
+  --tab-radius: 9px !important;
+  --tab-radius-active: 9px 9px 0 0 !important;
   --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 56px !important;
+  --tab-stacked-header-width: 48px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #f6f6f6 !important;
+  --tab-switcher-background: #ebebed !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 28px !important;
+  --tab-switcher-preview-radius: 18px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color: #ababab !important;
-  --tab-text-color-active: #5c5c5c !important;
-  --tab-text-color-focused: #5c5c5c !important;
-  --tab-text-color-focused-active: #5c5c5c !important;
+  --tab-text-color: rgba(0, 0, 6, 0.48) !important;
+  --tab-text-color-active: rgba(0, 0, 6, 0.64) !important;
+  --tab-text-color-focused: rgba(0, 0, 6, 0.64) !important;
+  --tab-text-color-focused-active: rgba(0, 0, 6, 0.8) !important;
   --tab-text-color-focused-active-current: #222222 !important;
   --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgba(0, 0, 0, 0.075) !important;
+  --table-add-button-border-color: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 15%
+  ) !important;
   --table-add-button-border-width: 0 !important;
   --table-background: transparent !important;
-  --table-border-color: rgba(0, 0, 0, 0.075) !important;
+  --table-border-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -794,13 +805,13 @@ body.theme-light {
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: rgb(153, 115, 247) !important;
-  --table-drag-handle-color: #ababab !important;
+  --table-drag-handle-color: rgba(0, 0, 6, 0.48) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
   --table-header-border-color: transparent !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: #222222 !important;
+  --table-header-color: rgba(0, 0, 6, 0.8) !important;
   --table-header-size: 0.933em !important;
   --table-header-weight: 700 !important;
   --table-line-height: 1.3 !important;
@@ -830,53 +841,51 @@ body.theme-light {
   --tag-size: 0.875em !important;
   --text-accent: rgb(138, 92, 245) !important;
   --text-accent-hover: rgb(166, 139, 249) !important;
-  --text-error: rgb(255, 56, 60) !important;
-  --text-faint: #ababab !important;
+  --text-error: rgb(237, 51, 59) !important;
+  --text-faint: rgba(0, 0, 6, 0.48) !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #5c5c5c !important;
-  --text-normal: #222222 !important;
+  --text-muted: rgba(0, 0, 6, 0.64) !important;
+  --text-normal: rgba(0, 0, 6, 0.8) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgba(138, 92, 245, 0.2) !important;
-  --text-success: rgb(52, 199, 89) !important;
-  --text-warning: rgb(255, 141, 40) !important;
+  --text-success: rgb(46, 194, 126) !important;
+  --text-warning: rgb(255, 120, 0) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgba(0, 0, 0, 0.075) !important;
-  --titlebar-border-width: 0px !important;
+  --titlebar-border-color: rgb(from rgba(0, 0, 6, 0.8) r g b / 15%) !important;
+  --titlebar-border-width: 1px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #5c5c5c !important;
-  --titlebar-text-color-focused: #222222 !important;
+  --titlebar-text-color: rgba(0, 0, 6, 0.64) !important;
+  --titlebar-text-color-focused: rgba(0, 0, 6, 0.8) !important;
   --titlebar-text-weight: 700 !important;
-  --toggle-border-width: 1.5px !important;
+  --toggle-border-width: 3px !important;
   --toggle-radius: 18px !important;
-  --toggle-s-border-width: 1.5px !important;
-  --toggle-s-thumb-height: 13px !important;
-  --toggle-s-thumb-width: 21px !important;
-  --toggle-s-width: 36px !important;
-  --toggle-thumb-color: white !important;
-  --toggle-thumb-height: 13px !important;
+  --toggle-s-border-width: 3px !important;
+  --toggle-s-thumb-height: 20px !important;
+  --toggle-s-thumb-width: 20px !important;
+  --toggle-s-width: 46px !important;
+  --toggle-thumb-color: color-mix(in srgb, white 80%, #fff) !important;
+  --toggle-thumb-height: 20px !important;
   --toggle-thumb-radius: 18px !important;
-  --toggle-thumb-width: 21px !important;
-  --toggle-width: 36px !important;
+  --toggle-thumb-width: 20px !important;
+  --toggle-width: 46px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #222222 !important;
-  --vault-profile-color-hover: #222222 !important;
+  --vault-profile-color: rgba(0, 0, 6, 0.8) !important;
+  --vault-profile-color-hover: rgba(0, 0, 6, 0.8) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: #f6f6f6 !important;
+  --workspace-background-translucent: #ebebed !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h4-color: #5c5c5c !important;
-  --h5-color: #ababab !important;
-  --h6-color: #ababab !important;
-  --color-base-80: #494949 !important;
-  --color-base-90: #363636 !important;
+  --embed-background-color: #f3f3f5 !important;
   --line-width: 700px !important;
+  --anim-motion-baseline: cubic-bezier(0.32, 0.72, 0, 1) !important;
+  --anim-speed-modifier: 1 !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
@@ -895,67 +904,57 @@ body.theme-light {
   --cards-min-width: 160px !important;
   --cards-mobile-width: 120px !important;
   --cards-padding: 4px !important;
-  --embed-background: #fafafa !important;
+  --density-modifier: 1 !important;
+  --embed-background: #fff !important;
   --file-margins-block: 32px !important;
   --file-margins-inline: 32px !important;
-  --font-print-theme:
-    system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
+  --font-ui-modifier: 0px !important;
+  --hover-sidedock-delay: 160ms !important;
+  --hover-sidedock-trigger-area: 1px !important;
+  --hover-sidedock-width: 320px !important;
+  --icon-stroke-modifier: 1 !important;
   --line-width-wide: min(100cqw, 50rem) !important;
-  --media-radius: 8px !important;
+  --media-radius: 9px !important;
   --nn-theme-file-border-radius: 12px !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.1) !important;
   --nn-theme-file-tag-color: rgb(138, 92, 245) !important;
   --nn-theme-list-bg: transparent !important;
   --nn-theme-list-header-bg: transparent !important;
-  --nn-theme-mobile-list-header-link-color: #222222 !important;
+  --nn-theme-mobile-list-header-link-color: rgba(0, 0, 6, 0.8) !important;
   --nn-theme-mobile-nav-bg: transparent !important;
   --nn-theme-mobile-toolbar-button-active-bg: rgb(153, 115, 247) !important;
   --nn-theme-mobile-toolbar-button-active-icon-color: white !important;
-  --nn-theme-mobile-toolbar-button-icon-color: #222222 !important;
+  --nn-theme-mobile-toolbar-button-icon-color: rgba(0, 0, 6, 0.8) !important;
   --nn-theme-nav-bg: transparent !important;
   --nn-theme-nav-header-bg: transparent !important;
   --nn-theme-navitem-border-radius: 12px !important;
   --nn-theme-navitem-selected-bg: rgba(0, 0, 0, 0.067) !important;
   --nn-theme-navitem-selected-inactive-bg: rgba(0, 0, 0, 0.067) !important;
   --radius-modifier: 1 !important;
-  --setting-group-heading-color: #222222 !important;
-  --setting-group-heading-size: 13px !important;
-  --setting-items-padding: 12px 20px !important;
+  --setting-group-heading-color: rgba(0, 0, 6, 0.8) !important;
+  --setting-group-heading-size: 15px !important;
+  --setting-items-padding: 0px !important;
   --setting-items-radius: 12px !important;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px !important;
-  --tab-action-width: 40px !important;
+  --tab-action-width: 32px !important;
+  --tab-text-align: left !important;
   --tag-weight: 500 !important;
-  --text-normal-editor: #363636 !important;
   --translucent-dark-opacity: 50% !important;
   --translucent-light-opacity: 50% !important;
   --view-top-spacing-markdown: 0px !important;
-  --anim-motion-cupertino: cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --blur-background: rgba(255, 255, 255, 0.35) !important;
-  --blur-l: blur(8px) saturate(1.5) brightness(1.025) !important;
-  --blur-m: blur(4px) saturate(1.5) brightness(1.025) !important;
-  --blur-s: blur(2px) saturate(1.5) brightness(1.025) !important;
-  --radius-window: 6px !important;
-  --shadow-base:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.5),
-    inset -1px -1px 2px rgba(255, 255, 255, 0.5),
-    inset 0 4px 16px rgba(255, 255, 255, 0.025) !important;
-  --shadow-border: 0 0 1px rgba(0, 0, 0, 0.4) !important;
-  --shadow-sidedock:
-    0 0 1px rgba(0, 0, 0, 0.4), inset 0 0 1px 1px white,
-    0 4px 32px rgba(0, 0, 0, 0.075) !important;
-  --shadow-sidedock-spread: -32px 0 0 32px #ffffff !important;
-  --shadow-xs:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.5),
-    inset -1px -1px 2px rgba(255, 255, 255, 0.5),
-    inset 0 4px 16px rgba(255, 255, 255, 0.025),
-    inset 0 -8px 48px rgba(0, 0, 0, 0.02), 0 0 8px rgba(0, 0, 0, 0.025),
-    0 4px 48px rgba(0, 0, 0, 0.15) !important;
-  --side-padding: 20px !important;
-  --sidedock-background: color-mix(
-    in srgb,
-    white 98%,
-    rgb(153, 115, 247)
+  --divider-color-alt: rgba(0, 0, 6, 0.07) !important;
+  --dropdown-padding-end: 2.4em !important;
+  --mono-rgb-adwaita: 0, 0, 6 !important;
+  --setting-group-heading-weight: 700 !important;
+  --setting-items-shadow:
+    0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07),
+    0 2px 6px 2px rgba(0, 0, 6, 0.03) !important;
+  --slider-track-background-active: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 25%
+  ) !important;
+  --slider-track-background-hover: rgb(
+    from rgba(0, 0, 6, 0.8) r g b / 20%
   ) !important;
 }
 
@@ -973,38 +972,46 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
-  --background-modifier-border: rgba(255, 255, 255, 0.075) !important;
-  --background-modifier-border-focus: rgba(138, 92, 245, 0.5) !important;
-  --background-modifier-border-hover: rgba(255, 255, 255, 0.075) !important;
+  --background-modifier-border: rgb(
+    from rgb(255, 255, 255) r g b / 15%
+  ) !important;
+  --background-modifier-border-focus: #77767b !important;
+  --background-modifier-border-hover: #6b6970 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
-  --background-modifier-error: rgb(255, 66, 69) !important;
-  --background-modifier-error-hover: rgb(255, 66, 69) !important;
-  --background-modifier-error-rgb: 255, 66, 69 !important;
-  --background-modifier-form-field: #363636 !important;
-  --background-modifier-form-field-hover: #363636 !important;
+  --background-modifier-error: rgb(224, 27, 36) !important;
+  --background-modifier-error-hover: rgb(224, 27, 36) !important;
+  --background-modifier-error-rgb: 224, 27, 36 !important;
+  --background-modifier-form-field: rgb(
+    from rgb(255, 255, 255) r g b / 10%
+  ) !important;
+  --background-modifier-form-field-hover: rgb(
+    from rgb(255, 255, 255) r g b / 10%
+  ) !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
-  --background-modifier-message: rgb(from #242424 r g b / 75%) !important;
-  --background-modifier-success: rgb(48, 209, 88) !important;
-  --background-modifier-success-rgb: 48, 209, 88 !important;
-  --background-primary: #1e1e1e !important;
-  --background-primary-alt: #242424 !important;
-  --background-secondary: #262626 !important;
-  --background-secondary-alt: #363636 !important;
-  --bases-cards-background: #1e1e1e !important;
+  --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
+  --background-modifier-success: rgb(38, 162, 105) !important;
+  --background-modifier-success-rgb: 38, 162, 105 !important;
+  --background-primary: #1d1d20 !important;
+  --background-primary-alt: rgba(255, 255, 255, 0.08) !important;
+  --background-secondary: #2e2e32 !important;
+  --background-secondary-alt: #28282c !important;
+  --bases-cards-background: #1d1d20 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-cover-background: #242424 !important;
+  --bases-cards-cover-background: rgba(255, 255, 255, 0.08) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
-  --bases-embed-border-color: rgba(255, 255, 255, 0.075) !important;
-  --bases-embed-border-radius: 8px !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(from rgb(255, 255, 255) r g b / 15%) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #6b6970 !important;
+  --bases-embed-border-color: rgb(
+    from rgb(255, 255, 255) r g b / 15%
+  ) !important;
+  --bases-embed-border-radius: 9px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: #b3b3b3 !important;
+  --bases-group-heading-property-color: rgba(255, 255, 255, 0.8) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -1014,25 +1021,27 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgba(255, 255, 255, 0.075) !important;
-  --bases-table-cell-background-active: #1e1e1e !important;
-  --bases-table-cell-background-disabled: #242424 !important;
+  --bases-table-border-color: rgb(
+    from rgb(255, 255, 255) r g b / 15%
+  ) !important;
+  --bases-table-cell-background-active: #1d1d20 !important;
+  --bases-table-cell-background-disabled: rgba(255, 255, 255, 0.08) !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgba(138, 92, 245, 0.5) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #77767b !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 8px !important;
+  --bases-table-container-border-radius: 9px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: #242424 !important;
+  --bases-table-group-background: rgba(255, 255, 255, 0.08) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #1e1e1e !important;
+  --bases-table-header-background: #1d1d20 !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --bases-table-header-color: #666666 !important;
+  --bases-table-header-color: rgba(255, 255, 255, 0.55) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -1043,65 +1052,65 @@ body.theme-dark {
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: #1e1e1e !important;
+  --bases-table-summary-background: #1d1d20 !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
-  --blockquote-background-color: #242424 !important;
-  --blockquote-border-color: #666666 !important;
+  --blockquote-background-color: #28282c !important;
+  --blockquote-border-color: #9a9996 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 300 !important;
   --bold-weight: 700 !important;
   --border-width: 1px !important;
-  --button-radius: 8px !important;
+  --button-radius: 9px !important;
   --callout-blend-mode: normal;
   --callout-border-opacity: 0.25;
   --callout-border-width: 1px;
-  --callout-bug: 255, 66, 69;
+  --callout-bug: 224, 27, 36;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 0, 145, 255;
-  --callout-error: 255, 66, 69;
-  --callout-example: 107, 52, 242;
-  --callout-fail: 255, 66, 69;
-  --callout-important: 60, 211, 254;
-  --callout-info: 0, 145, 255;
+  --callout-default: 53, 132, 228;
+  --callout-error: 224, 27, 36;
+  --callout-example: 145, 65, 172;
+  --callout-fail: 224, 27, 36;
+  --callout-important: 33, 144, 164;
+  --callout-info: 53, 132, 228;
   --callout-padding: 16px;
-  --callout-question: 255, 146, 48;
+  --callout-question: 230, 97, 0;
   --callout-quote: 158, 158, 158;
-  --callout-radius: 8px;
-  --callout-success: 48, 209, 88;
-  --callout-summary: 60, 211, 254;
-  --callout-tip: 60, 211, 254;
+  --callout-radius: 9px;
+  --callout-success: 38, 162, 105;
+  --callout-summary: 33, 144, 164;
+  --callout-tip: 33, 144, 164;
   --callout-title-padding: 0;
   --callout-title-weight: 700;
-  --callout-todo: 0, 145, 255;
-  --callout-warning: 255, 146, 48;
-  --canvas-background: #1e1e1e !important;
-  --canvas-card-label-color: #666666 !important;
+  --callout-todo: 53, 132, 228;
+  --callout-warning: 230, 97, 0;
+  --canvas-background: #1d1d20 !important;
+  --canvas-card-label-color: rgba(255, 255, 255, 0.55) !important;
   --canvas-color: 126, 126, 126 !important;
-  --canvas-color-1: 255, 66, 69 !important;
-  --canvas-color-2: 255, 146, 48 !important;
-  --canvas-color-3: 255, 214, 0 !important;
-  --canvas-color-4: 48, 209, 88 !important;
-  --canvas-color-5: 60, 211, 254 !important;
-  --canvas-color-6: 107, 52, 242 !important;
-  --canvas-dot-pattern: #363636 !important;
-  --caret-color: #dadada !important;
-  --checkbox-border-color: #666666 !important;
-  --checkbox-border-color-hover: #b3b3b3 !important;
+  --canvas-color-1: 224, 27, 36 !important;
+  --canvas-color-2: 230, 97, 0 !important;
+  --canvas-color-3: 245, 194, 17 !important;
+  --canvas-color-4: 38, 162, 105 !important;
+  --canvas-color-5: 33, 144, 164 !important;
+  --canvas-color-6: 145, 65, 172 !important;
+  --canvas-dot-pattern: #5e5c64 !important;
+  --caret-color: rgb(255, 255, 255) !important;
+  --checkbox-border-color: rgba(255, 255, 255, 0.55) !important;
+  --checkbox-border-color-hover: rgba(255, 255, 255, 0.8) !important;
   --checkbox-color: rgb(138, 92, 245) !important;
   --checkbox-color-hover: rgb(166, 139, 249) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: #1e1e1e !important;
-  --checkbox-radius: 100vh !important;
+  --checkbox-marker-color: #1d1d20 !important;
+  --checkbox-radius: 100px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: #b3b3b3 !important;
+  --checklist-done-color: rgba(255, 255, 255, 0.8) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 100vh !important;
-  --code-background: #242424 !important;
-  --code-border-color: rgba(255, 255, 255, 0.075) !important;
+  --clickable-icon-radius: 9px !important;
+  --code-background: #28282c !important;
+  --code-border-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
   --code-comment: #5c6370 !important;
@@ -1109,49 +1118,49 @@ body.theme-dark {
   --code-important: #d19a66 !important;
   --code-keyword: #e16d76 !important;
   --code-normal: #abb2bf !important;
-  --code-operator: rgb(255, 66, 69) !important;
+  --code-operator: rgb(224, 27, 36) !important;
   --code-property: #62afef !important;
   --code-punctuation: #abb2bf !important;
-  --code-radius: 8px !important;
+  --code-radius: 9px !important;
   --code-size: 0.8em !important;
   --code-string: #58b6c2 !important;
   --code-tag: #e16d76 !important;
   --code-value: #c678de !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #666666 !important;
+  --collapse-icon-color: rgba(255, 255, 255, 0.55) !important;
   --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
   --color-accent: rgb(138, 92, 245) !important;
   --color-accent-1: rgb(166, 139, 249) !important;
   --color-accent-2: rgb(197, 182, 252) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
-  --color-base-00: #1e1e1e !important;
-  --color-base-05: #212121 !important;
-  --color-base-10: #242424 !important;
-  --color-base-100: #dadada !important;
-  --color-base-20: #262626 !important;
-  --color-base-25: #2a2a2a !important;
-  --color-base-30: #363636 !important;
-  --color-base-35: #3f3f3f !important;
-  --color-base-40: #555555 !important;
-  --color-base-50: #666666 !important;
-  --color-base-60: #999999 !important;
-  --color-base-70: #b3b3b3 !important;
-  --color-blue: rgb(0, 145, 255) !important;
-  --color-blue-rgb: 0, 145, 255 !important;
-  --color-cyan: rgb(60, 211, 254) !important;
-  --color-cyan-rgb: 60, 211, 254 !important;
-  --color-green: rgb(48, 209, 88) !important;
-  --color-green-rgb: 48, 209, 88 !important;
-  --color-orange: rgb(255, 146, 48) !important;
-  --color-orange-rgb: 255, 146, 48 !important;
-  --color-pink: rgb(255, 55, 95) !important;
-  --color-pink-rgb: 255, 55, 95 !important;
-  --color-purple: rgb(107, 52, 242) !important;
-  --color-purple-rgb: 107, 52, 242 !important;
-  --color-red: rgb(255, 66, 69) !important;
-  --color-red-rgb: 255, 66, 69 !important;
-  --color-yellow: rgb(255, 214, 0) !important;
-  --color-yellow-rgb: 255, 214, 0 !important;
+  --color-base-00: #000000 !important;
+  --color-base-05: #121019 !important;
+  --color-base-10: #241f31 !important;
+  --color-base-100: #ffffff !important;
+  --color-base-20: #3d3846 !important;
+  --color-base-25: #4e4a55 !important;
+  --color-base-30: #5e5c64 !important;
+  --color-base-35: #6b6970 !important;
+  --color-base-40: #77767b !important;
+  --color-base-50: #9a9996 !important;
+  --color-base-60: #c0bfbc !important;
+  --color-base-70: #e6e5e3 !important;
+  --color-blue: rgb(53, 132, 228) !important;
+  --color-blue-rgb: 53, 132, 228 !important;
+  --color-cyan: rgb(33, 144, 164) !important;
+  --color-cyan-rgb: 33, 144, 164 !important;
+  --color-green: rgb(38, 162, 105) !important;
+  --color-green-rgb: 38, 162, 105 !important;
+  --color-orange: rgb(230, 97, 0) !important;
+  --color-orange-rgb: 230, 97, 0 !important;
+  --color-pink: rgb(213, 97, 170) !important;
+  --color-pink-rgb: 213, 97, 170 !important;
+  --color-purple: rgb(145, 65, 172) !important;
+  --color-purple-rgb: 145, 65, 172 !important;
+  --color-red: rgb(224, 27, 36) !important;
+  --color-red-rgb: 224, 27, 36 !important;
+  --color-yellow: rgb(245, 194, 17) !important;
+  --color-yellow-rgb: 245, 194, 17 !important;
   --corner-smoothing: system-ui !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -1159,23 +1168,25 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: rgba(255, 255, 255, 0.075) !important;
-  --divider-color-hover: #666666 !important;
+  --divider-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
+  --divider-color-hover: #9a9996 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
-  --drag-ghost-background: #1e1e1e !important;
-  --drag-ghost-text-color: #dadada !important;
-  --dropdown-background: #363636 !important;
+  --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
+  --drag-ghost-text-color: #fff !important;
+  --dropdown-background: rgb(from rgb(255, 255, 255) r g b / 10%) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #363636 !important;
+  --dropdown-background-hover: rgb(
+    from rgb(255, 255, 255) r g b / 15%
+  ) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --embed-block-shadow-hover: none !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid #666666 !important;
+  --embed-border-start: 2px solid #9a9996 !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: none !important;
@@ -1183,16 +1194,16 @@ body.theme-dark {
   --file-folding-offset: 24px !important;
   --file-header-border: none !important;
   --file-header-font:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px 32px !important;
-  --flair-background: #363636 !important;
-  --flair-color: #dadada !important;
+  --flair-background: rgb(from rgb(255, 255, 255) r g b / 10%) !important;
+  --flair-color: rgb(255, 255, 255) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -1204,17 +1215,16 @@ body.theme-dark {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
-  --font-interface-theme:
-    system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
+  --font-interface-theme: "Adwaita Sans", "Adwaita Sans Text" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-monospace:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -1227,51 +1237,49 @@ body.theme-dark {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, "Arial" !important;
+  --font-print: "Adwaita Sans", "Adwaita Sans Text", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
-  --font-text-theme:
-    system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
+  --font-text-theme: "Adwaita Sans", "Adwaita Sans Text" !important;
   --font-thin: 100 !important;
-  --font-ui-large: 20px !important;
+  --font-ui-large: 17px !important;
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgba(255, 255, 255, 0.075) !important;
+  --footnote-divider-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: #b3b3b3 !important;
-  --footnote-id-color-no-occurrences: #666666 !important;
+  --footnote-id-color: rgba(255, 255, 255, 0.8) !important;
+  --footnote-id-color-no-occurrences: rgba(255, 255, 255, 0.55) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --footnote-line-height: 1.6 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
-  --footnote-radius: 8px !important;
+  --footnote-radius: 9px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
-  --frame-right-space: 168px !important;
+  --frame-right-space: 124px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: #3f3f3f !important;
-  --graph-node: #b3b3b3 !important;
-  --graph-node-attachment: rgb(255, 214, 0) !important;
+  --graph-line: #6b6970 !important;
+  --graph-node: rgba(255, 255, 255, 0.8) !important;
+  --graph-node-attachment: rgb(245, 194, 17) !important;
   --graph-node-focused: rgb(166, 139, 249) !important;
-  --graph-node-tag: rgb(48, 209, 88) !important;
-  --graph-node-unresolved: #666666 !important;
-  --graph-text: #dadada !important;
+  --graph-node-tag: rgb(38, 162, 105) !important;
+  --graph-node-unresolved: rgba(255, 255, 255, 0.55) !important;
+  --graph-text: rgb(255, 255, 255) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.5em !important;
@@ -1308,31 +1316,31 @@ body.theme-dark {
   --h6-style: normal !important;
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
-  --header-height: 56px !important;
-  --heading-formatting: #666666 !important;
+  --header-height: 48px !important;
+  --heading-formatting: rgba(255, 255, 255, 0.55) !important;
   --heading-spacing: 2em !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: rgba(255, 255, 255, 0.075) !important;
+  --hr-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
   --hr-thickness: 2px !important;
-  --icon-color: rgb(255, 255, 255) !important;
+  --icon-color: rgba(255, 255, 255, 0.8) !important;
   --icon-color-active: rgb(166, 139, 249) !important;
-  --icon-color-focused: #dadada !important;
-  --icon-color-hover: rgb(255, 255, 255) !important;
-  --icon-l: 18px !important;
-  --icon-l-stroke-width: 1.75px !important;
-  --icon-m: 18px !important;
-  --icon-m-stroke-width: 1.75px !important;
+  --icon-color-focused: rgb(255, 255, 255) !important;
+  --icon-color-hover: rgba(255, 255, 255, 0.8) !important;
+  --icon-l: 16px !important;
+  --icon-l-stroke-width: 2px !important;
+  --icon-m: 16px !important;
+  --icon-m-stroke-width: 2px !important;
   --icon-opacity: 1 !important;
   --icon-opacity-active: 1 !important;
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
+  --icon-size: 16px !important;
+  --icon-stroke: 2px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
-  --icon-xs-stroke-width: 2px !important;
+  --icon-xs-stroke-width: 2.25px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
@@ -1348,21 +1356,21 @@ body.theme-dark {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
+  --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
-  --input-date-separator: #666666 !important;
-  --input-font-weight: 400 !important;
-  --input-height: 24px !important;
+  --input-date-separator: rgba(255, 255, 255, 0.55) !important;
+  --input-font-weight: 700 !important;
+  --input-height: 32px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: #666666 !important;
-  --input-radius: 8px !important;
+  --input-placeholder-color: rgba(255, 255, 255, 0.55) !important;
+  --input-radius: 9px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
   --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: #363636 !important;
-  --interactive-normal: #363636 !important;
+  --interactive-hover: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
+  --interactive-normal: rgb(from rgb(255, 255, 255) r g b / 10%) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1400,128 +1408,128 @@ body.theme-dark {
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: #666666 !important;
+  --list-marker-color: rgba(255, 255, 255, 0.55) !important;
   --list-marker-color-collapsed: rgb(166, 139, 249) !important;
-  --list-marker-color-hover: #b3b3b3 !important;
+  --list-marker-color-hover: rgba(255, 255, 255, 0.8) !important;
   --list-numbered-style: decimal !important;
-  --list-spacing: 0.2em !important;
+  --list-spacing: 0.175em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: #262626 !important;
-  --menu-border-color: rgba(255, 255, 255, 0.075) !important;
+  --menu-background: #36363a !important;
+  --menu-border-color: rgb(from rgb(255, 255, 255) r g b / 10%) !important;
   --menu-border-width: 1px !important;
-  --menu-padding: 4px !important;
+  --menu-padding: 6px !important;
   --menu-radius: 12px !important;
   --menu-shadow:
-    0 0 1px rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.5),
-    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+    0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07),
+    0 2px 6px 2px rgba(0, 0, 6, 0.03) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgba(255, 255, 255, 0.075) !important;
+  --metadata-border-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgba(255, 255, 255, 0.075) !important;
+  --metadata-divider-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
-  --metadata-gap: 0 !important;
+  --metadata-gap: 8px !important;
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
-  --metadata-input-text-color: #dadada !important;
+  --metadata-input-text-color: rgb(255, 255, 255) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif, ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Adwaita Sans", "Adwaita Sans Text", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: #b3b3b3 !important;
-  --metadata-label-text-color-hover: #b3b3b3 !important;
+  --metadata-label-text-color: rgba(255, 255, 255, 0.8) !important;
+  --metadata-label-text-color-hover: rgba(255, 255, 255, 0.8) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
-  --metadata-padding: 0 !important;
+  --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgba(138, 92, 245, 0.5) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #77767b !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #6b6970 !important;
   --metadata-property-padding: 0 !important;
-  --metadata-property-radius: 12px !important;
-  --metadata-property-radius-focus: 12px !important;
-  --metadata-property-radius-hover: 12px !important;
+  --metadata-property-radius: 6px !important;
+  --metadata-property-radius-focus: 6px !important;
+  --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: rgb(from #242424 r g b / 75%) !important;
-  --modal-border-color: rgba(255, 255, 255, 0.075) !important;
+  --modal-background: #222226 !important;
+  --modal-border-color: rgb(from rgb(255, 255, 255) r g b / 10%) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: 20px !important;
+  --modal-radius: 15px !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: rgb(255, 255, 255) !important;
-  --nav-collapse-icon-color-collapsed: #666666 !important;
-  --nav-heading-color: #dadada !important;
-  --nav-heading-color-collapsed: #666666 !important;
-  --nav-heading-color-collapsed-hover: #b3b3b3 !important;
-  --nav-heading-color-hover: #dadada !important;
+  --nav-collapse-icon-color: rgba(255, 255, 255, 0.55) !important;
+  --nav-collapse-icon-color-collapsed: rgba(255, 255, 255, 0.55) !important;
+  --nav-heading-color: rgb(255, 255, 255) !important;
+  --nav-heading-color-collapsed: rgba(255, 255, 255, 0.55) !important;
+  --nav-heading-color-collapsed-hover: rgba(255, 255, 255, 0.8) !important;
+  --nav-heading-color-hover: rgb(255, 255, 255) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
   --nav-indentation-guide-width: 0px !important;
-  --nav-item-background-active: rgba(0, 0, 0, 0.5) !important;
+  --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgb(255, 255, 255) !important;
+  --nav-item-color: rgba(255, 255, 255, 0.8) !important;
   --nav-item-color-active: rgb(255, 255, 255) !important;
   --nav-item-color-highlighted: rgb(166, 139, 249) !important;
   --nav-item-color-hover: rgb(255, 255, 255) !important;
   --nav-item-color-selected: rgb(255, 255, 255) !important;
-  --nav-item-padding: 8px 8px 8px 24px !important;
-  --nav-item-parent-padding: 8px 8px 8px 24px !important;
+  --nav-item-padding: 8px 16px 8px 32px !important;
+  --nav-item-parent-padding: 8px 16px 8px 32px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: #666666 !important;
-  --nav-tag-color-active: #b3b3b3 !important;
-  --nav-tag-color-hover: #b3b3b3 !important;
-  --nav-tag-radius: 8px !important;
+  --nav-tag-color: rgba(255, 255, 255, 0.55) !important;
+  --nav-tag-color-active: rgba(255, 255, 255, 0.8) !important;
+  --nav-tag-color-hover: rgba(255, 255, 255, 0.8) !important;
+  --nav-tag-radius: 9px !important;
   --nav-tag-weight: 600 !important;
-  --p-spacing: 1rem !important;
+  --p-spacing: 1.75rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: #1e1e1e !important;
-  --pdf-page-background: #1e1e1e !important;
-  --pdf-shadow: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
-  --pdf-sidebar-background: #1e1e1e !important;
+  --pdf-background: #1d1d20 !important;
+  --pdf-page-background: #1d1d20 !important;
+  --pdf-shadow: 0 0 0 1px rgb(from rgb(255, 255, 255) r g b / 15%) !important;
+  --pdf-sidebar-background: #1d1d20 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(255, 255, 255, 0.075) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgb(from rgb(255, 255, 255) r g b / 15%) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgba(255, 255, 255, 0.075) !important;
-  --pill-border-color-hover: rgba(255, 255, 255, 0.075) !important;
+  --pill-border-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
+  --pill-border-color-hover: #6b6970 !important;
   --pill-border-width: 1px !important;
-  --pill-color: #b3b3b3 !important;
-  --pill-color-hover: #dadada !important;
-  --pill-color-remove: #666666 !important;
+  --pill-color: rgba(255, 255, 255, 0.8) !important;
+  --pill-color-hover: rgb(255, 255, 255) !important;
+  --pill-color-remove: rgba(255, 255, 255, 0.55) !important;
   --pill-color-remove-hover: rgb(166, 139, 249) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
@@ -1536,16 +1544,16 @@ body.theme-dark {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
-  --prompt-border-color: rgba(255, 255, 255, 0.075) !important;
+  --prompt-border-color: rgb(from rgb(255, 255, 255) r g b / 10%) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 64px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 20px !important;
+  --radius-l: 15px !important;
   --radius-m: 12px !important;
-  --radius-s: 8px !important;
-  --radius-xl: 28px !important;
+  --radius-s: 9px !important;
+  --radius-xl: 18px !important;
   --ribbon-background: transparent !important;
   --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -1558,20 +1566,20 @@ body.theme-dark {
   --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 20px !important;
+  --scrollbar-radius: 15px !important;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: #b3b3b3 !important;
+  --search-clear-button-color: rgba(255, 255, 255, 0.8) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: #b3b3b3 !important;
+  --search-icon-color: rgba(255, 255, 255, 0.8) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: #1e1e1e !important;
+  --search-result-background: #1d1d20 !important;
   --shadow-l:
-    0 0 1px rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.5),
-    0 0 1px rgba(0, 0, 0, 0.7), 0 16px 64px rgba(0, 0, 0, 0.3) !important;
+    0 0 14px 5px rgba(0, 0, 0, 0.15), 0 0 5px 2px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --shadow-s:
-    0 0 1px rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.5),
-    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+    0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07),
+    0 2px 6px 2px rgba(0, 0, 6, 0.03) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1595,70 +1603,76 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: rgba(255, 255, 255, 0.075) !important;
+  --slider-thumb-border-color: #6b6970 !important;
   --slider-thumb-border-width: 0 !important;
-  --slider-thumb-height: 16px !important;
+  --slider-thumb-height: 20px !important;
   --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 20px !important;
-  --slider-thumb-y: -5px !important;
-  --slider-track-background: rgba(255, 255, 255, 0.075) !important;
-  --slider-track-height: 6px !important;
+  --slider-thumb-y: -8px !important;
+  --slider-track-background: rgb(
+    from rgb(255, 255, 255) r g b / 15%
+  ) !important;
+  --slider-track-height: 4px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: #262626 !important;
-  --status-bar-border-color: rgba(255, 255, 255, 0.075) !important;
+  --status-bar-background: #2e2e32 !important;
+  --status-bar-border-color: rgb(
+    from rgb(255, 255, 255) r g b / 15%
+  ) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 12px 0 0 0 !important;
-  --status-bar-text-color: #b3b3b3 !important;
+  --status-bar-text-color: rgba(255, 255, 255, 0.8) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
   --swatch-width: 22px !important;
-  --sync-avatar-color-1: rgb(255, 66, 69) !important;
-  --sync-avatar-color-2: rgb(255, 146, 48) !important;
-  --sync-avatar-color-3: rgb(255, 214, 0) !important;
-  --sync-avatar-color-4: rgb(48, 209, 88) !important;
-  --sync-avatar-color-5: rgb(60, 211, 254) !important;
-  --sync-avatar-color-6: rgb(0, 145, 255) !important;
-  --sync-avatar-color-7: rgb(107, 52, 242) !important;
-  --sync-avatar-color-8: rgb(255, 55, 95) !important;
+  --sync-avatar-color-1: rgb(224, 27, 36) !important;
+  --sync-avatar-color-2: rgb(230, 97, 0) !important;
+  --sync-avatar-color-3: rgb(245, 194, 17) !important;
+  --sync-avatar-color-4: rgb(38, 162, 105) !important;
+  --sync-avatar-color-5: rgb(33, 144, 164) !important;
+  --sync-avatar-color-6: rgb(53, 132, 228) !important;
+  --sync-avatar-color-7: rgb(145, 65, 172) !important;
+  --sync-avatar-color-8: rgb(213, 97, 170) !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: #1e1e1e !important;
-  --tab-container-background: #262626 !important;
-  --tab-curve: 12px !important;
-  --tab-divider-color: rgba(255, 255, 255, 0.075) !important;
+  --tab-background-active: #1d1d20 !important;
+  --tab-container-background: #2e2e32 !important;
+  --tab-curve: 13px !important;
+  --tab-divider-color: #6b6970 !important;
   --tab-font-size: 13px !important;
-  --tab-max-width: 320px !important;
-  --tab-outline-color: rgba(255, 255, 255, 0.075) !important;
+  --tab-max-width: 200px !important;
+  --tab-outline-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 8px !important;
-  --tab-radius-active: 8px 8px 0 0 !important;
+  --tab-radius: 9px !important;
+  --tab-radius-active: 9px 9px 0 0 !important;
   --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 56px !important;
+  --tab-stacked-header-width: 48px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: #262626 !important;
+  --tab-switcher-background: #2e2e32 !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 28px !important;
+  --tab-switcher-preview-radius: 18px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color: #666666 !important;
-  --tab-text-color-active: #b3b3b3 !important;
-  --tab-text-color-focused: #b3b3b3 !important;
-  --tab-text-color-focused-active: #b3b3b3 !important;
+  --tab-text-color: rgba(255, 255, 255, 0.55) !important;
+  --tab-text-color-active: rgba(255, 255, 255, 0.8) !important;
+  --tab-text-color-focused: rgba(255, 255, 255, 0.8) !important;
+  --tab-text-color-focused-active: rgb(255, 255, 255) !important;
   --tab-text-color-focused-active-current: #dadada !important;
   --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgba(255, 255, 255, 0.075) !important;
+  --table-add-button-border-color: rgb(
+    from rgb(255, 255, 255) r g b / 15%
+  ) !important;
   --table-add-button-border-width: 0 !important;
   --table-background: transparent !important;
-  --table-border-color: rgba(255, 255, 255, 0.075) !important;
+  --table-border-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1668,13 +1682,13 @@ body.theme-dark {
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: rgb(138, 92, 245) !important;
-  --table-drag-handle-color: #666666 !important;
+  --table-drag-handle-color: rgba(255, 255, 255, 0.55) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
   --table-header-border-color: transparent !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: #dadada !important;
+  --table-header-color: rgb(255, 255, 255) !important;
   --table-header-size: 0.933em !important;
   --table-header-weight: 700 !important;
   --table-line-height: 1.3 !important;
@@ -1704,53 +1718,51 @@ body.theme-dark {
   --tag-size: 0.875em !important;
   --text-accent: rgb(166, 139, 249) !important;
   --text-accent-hover: rgb(197, 182, 252) !important;
-  --text-error: rgb(255, 66, 69) !important;
-  --text-faint: #666666 !important;
+  --text-error: rgb(224, 27, 36) !important;
+  --text-faint: rgba(255, 255, 255, 0.55) !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: #b3b3b3 !important;
-  --text-normal: #dadada !important;
+  --text-muted: rgba(255, 255, 255, 0.8) !important;
+  --text-normal: rgb(255, 255, 255) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgba(138, 92, 245, 0.33) !important;
-  --text-success: rgb(48, 209, 88) !important;
-  --text-warning: rgb(255, 146, 48) !important;
+  --text-success: rgb(38, 162, 105) !important;
+  --text-warning: rgb(230, 97, 0) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgba(255, 255, 255, 0.075) !important;
-  --titlebar-border-width: 0px !important;
+  --titlebar-border-color: rgb(from rgb(255, 255, 255) r g b / 15%) !important;
+  --titlebar-border-width: 1px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: #b3b3b3 !important;
-  --titlebar-text-color-focused: #dadada !important;
+  --titlebar-text-color: rgba(255, 255, 255, 0.8) !important;
+  --titlebar-text-color-focused: rgb(255, 255, 255) !important;
   --titlebar-text-weight: 700 !important;
-  --toggle-border-width: 1.5px !important;
+  --toggle-border-width: 3px !important;
   --toggle-radius: 18px !important;
-  --toggle-s-border-width: 1.5px !important;
-  --toggle-s-thumb-height: 13px !important;
-  --toggle-s-thumb-width: 21px !important;
-  --toggle-s-width: 36px !important;
-  --toggle-thumb-color: white !important;
-  --toggle-thumb-height: 13px !important;
+  --toggle-s-border-width: 3px !important;
+  --toggle-s-thumb-height: 20px !important;
+  --toggle-s-thumb-width: 20px !important;
+  --toggle-s-width: 46px !important;
+  --toggle-thumb-color: color-mix(in srgb, white 80%, #1d1d20) !important;
+  --toggle-thumb-height: 20px !important;
   --toggle-thumb-radius: 18px !important;
-  --toggle-thumb-width: 21px !important;
-  --toggle-width: 36px !important;
+  --toggle-thumb-width: 20px !important;
+  --toggle-width: 46px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: #dadada !important;
-  --vault-profile-color-hover: #dadada !important;
+  --vault-profile-color: rgb(255, 255, 255) !important;
+  --vault-profile-color-hover: rgb(255, 255, 255) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgb(from #262626 r g b / 50%) !important;
+  --workspace-background-translucent: rgb(from #2e2e32 r g b / 50%) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h4-color: #b3b3b3 !important;
-  --h5-color: #666666 !important;
-  --h6-color: #666666 !important;
-  --color-base-80: #c0c0c0 !important;
-  --color-base-90: #cdcdcd !important;
+  --embed-background-color: #28282c !important;
   --line-width: 700px !important;
+  --anim-motion-baseline: cubic-bezier(0.32, 0.72, 0, 1) !important;
+  --anim-speed-modifier: 1 !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
@@ -1769,23 +1781,27 @@ body.theme-dark {
   --cards-min-width: 160px !important;
   --cards-mobile-width: 120px !important;
   --cards-padding: 4px !important;
-  --embed-background: #242424 !important;
+  --density-modifier: 1 !important;
+  --embed-background: rgba(255, 255, 255, 0.08) !important;
   --file-margins-block: 32px !important;
   --file-margins-inline: 32px !important;
-  --font-print-theme:
-    system, BlinkMacSystemFont, "SF Pro Text", sans-serif !important;
+  --font-ui-modifier: 0px !important;
+  --hover-sidedock-delay: 160ms !important;
+  --hover-sidedock-trigger-area: 1px !important;
+  --hover-sidedock-width: 320px !important;
+  --icon-stroke-modifier: 1 !important;
   --line-width-wide: min(100cqw, 50rem) !important;
-  --media-radius: 8px !important;
+  --media-radius: 9px !important;
   --nn-theme-file-border-radius: 12px !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.1) !important;
   --nn-theme-file-tag-color: rgb(166, 139, 249) !important;
   --nn-theme-list-bg: transparent !important;
   --nn-theme-list-header-bg: transparent !important;
-  --nn-theme-mobile-list-header-link-color: #dadada !important;
+  --nn-theme-mobile-list-header-link-color: rgb(255, 255, 255) !important;
   --nn-theme-mobile-nav-bg: transparent !important;
   --nn-theme-mobile-toolbar-button-active-bg: rgb(138, 92, 245) !important;
   --nn-theme-mobile-toolbar-button-active-icon-color: white !important;
-  --nn-theme-mobile-toolbar-button-icon-color: #dadada !important;
+  --nn-theme-mobile-toolbar-button-icon-color: rgb(255, 255, 255) !important;
   --nn-theme-nav-bg: transparent !important;
   --nn-theme-nav-header-bg: transparent !important;
   --nn-theme-navitem-border-radius: 12px !important;
@@ -1797,43 +1813,31 @@ body.theme-dark {
     0.067
   ) !important;
   --radius-modifier: 1 !important;
-  --setting-group-heading-color: #dadada !important;
-  --setting-group-heading-size: 13px !important;
-  --setting-items-padding: 12px 20px !important;
+  --setting-group-heading-color: rgb(255, 255, 255) !important;
+  --setting-group-heading-size: 15px !important;
+  --setting-items-padding: 0px !important;
   --setting-items-radius: 12px !important;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px,
     rgba(255, 255, 255, 0.04) 0px 2px 4px -2px !important;
-  --tab-action-width: 40px !important;
+  --tab-action-width: 32px !important;
+  --tab-text-align: left !important;
   --tag-weight: 500 !important;
-  --text-normal-editor: #cdcdcd !important;
   --translucent-dark-opacity: 50% !important;
   --translucent-light-opacity: 50% !important;
   --view-top-spacing-markdown: 0px !important;
-  --anim-motion-cupertino: cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --blur-background: rgba(255, 255, 255, 0.075) !important;
-  --blur-l: blur(8px) saturate(1.5) brightness(1.025) !important;
-  --blur-m: blur(4px) saturate(1.5) brightness(1.025) !important;
-  --blur-s: blur(2px) saturate(1.5) brightness(1.025) !important;
-  --radius-window: 6px !important;
-  --shadow-base:
-    inset 1px 1.5px 1px -1px rgba(255, 255, 255, 0.2),
-    inset -1px -1.5px 1px -1px rgba(255, 255, 255, 0.15),
-    inset 0 4px 16px rgba(255, 255, 255, 0.025) !important;
-  --shadow-border: 0 0 1px rgba(255, 255, 255, 0.3) !important;
-  --shadow-sidedock:
-    0 0 1px rgba(255, 255, 255, 0.3), 0 0 1px rgba(255, 255, 255, 0.35),
-    0 0 1px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
-  --shadow-sidedock-spread: -32px 0 0 32px #1e1e1e !important;
-  --shadow-xs:
-    inset 1px 1.5px 1px -1px rgba(255, 255, 255, 0.2),
-    inset -1px -1.5px 1px -1px rgba(255, 255, 255, 0.15),
-    inset 0 4px 16px rgba(255, 255, 255, 0.025) !important;
-  --side-padding: 20px !important;
-  --sidedock-background: color-mix(
-    in srgb,
-    rgb(21, 21, 21) 98%,
-    rgb(138, 92, 245)
+  --divider-color-alt: rgba(0, 0, 6, 0.36) !important;
+  --dropdown-padding-end: 2.4em !important;
+  --mono-rgb-adwaita: 255, 255, 255 !important;
+  --setting-group-heading-weight: 700 !important;
+  --setting-items-shadow:
+    0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07),
+    0 2px 6px 2px rgba(0, 0, 6, 0.03) !important;
+  --slider-track-background-active: rgb(
+    from rgb(255, 255, 255) r g b / 25%
+  ) !important;
+  --slider-track-background-hover: rgb(
+    from rgb(255, 255, 255) r g b / 20%
   ) !important;
 }
 
@@ -1862,10 +1866,8 @@ body .markdown-rendered a.external-link {
   cursor: pointer;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1890,10 +1892,8 @@ body .markdown-rendered a.internal-link {
   cursor: pointer;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1918,10 +1918,8 @@ body .markdown-rendered a.internal-link.is-unresolved {
   cursor: pointer;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1956,14 +1954,12 @@ body .markdown-rendered a.internal-link:hover {
 }
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: auto;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1976,22 +1972,20 @@ body .markdown-rendered p {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(205, 205, 205);
-  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration-color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-decoration-line: none;
   text-decoration-style: solid;
   user-select: text;
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: text;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2004,22 +1998,20 @@ body strong {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 700;
-  text-decoration: none solid rgb(205, 205, 205);
-  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration-color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-decoration-line: none;
   text-decoration-style: solid;
   user-select: text;
 }
 body b {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: text;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2032,22 +2024,20 @@ body b {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 700;
-  text-decoration: none solid rgb(205, 205, 205);
-  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration-color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-decoration-line: none;
   text-decoration-style: solid;
   user-select: text;
 }
 body em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: text;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2060,22 +2050,20 @@ body em {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(205, 205, 205);
-  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration-color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-decoration-line: none;
   text-decoration-style: solid;
   user-select: text;
 }
 body i {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: text;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2088,22 +2076,20 @@ body i {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(205, 205, 205);
-  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration-color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-decoration-line: none;
   text-decoration-style: solid;
   user-select: text;
 }
 body .markdown-rendered mark {
   background-color: rgba(255, 208, 0, 0.4);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: text;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2116,22 +2102,20 @@ body .markdown-rendered mark {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 500;
-  text-decoration: none solid rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration-color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-decoration-line: none;
   text-decoration-style: solid;
   user-select: text;
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: text;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2144,8 +2128,8 @@ body del {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: line-through solid rgb(205, 205, 205);
-  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  text-decoration: line-through solid rgb(255, 255, 255);
+  text-decoration-color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-decoration-line: line-through;
   text-decoration-style: solid;
   user-select: text;
@@ -2155,33 +2139,34 @@ body .suggestion-item.is-selected {
     rgba(0, 0, 0, 0.067),
     rgba(255, 255, 255, 0.067)
   );
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
 }
 body div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-start-start-radius: 12px;
-  border-start-end-radius: 12px;
-  border-end-start-radius: 12px;
-  border-end-end-radius: 12px;
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  border: 0px light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
 }
 body .markdown-rendered hr {
-  border: 0px light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
+  border: 0px
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
   border-top: 2px solid
-    light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2202,10 +2187,8 @@ body div.multi-select-pill {
   background-color: rgba(138, 92, 245, 0.1);
   display: flex;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2233,12 +2216,12 @@ body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
 }
 body .markdown-rendered ul > li {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-align: start;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
-  border: 0px light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+  background-color: light-dark(rgba(0, 0, 6, 0.48), rgba(255, 255, 255, 0.55));
+  border: 0px light-dark(rgba(0, 0, 6, 0.48), rgba(255, 255, 255, 0.55));
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -2247,17 +2230,17 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 50%;
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
-  color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+  color: light-dark(rgba(0, 0, 6, 0.48), rgba(255, 255, 255, 0.55));
   pointer-events: none;
   transform: none;
 }
 body .markdown-rendered ol > li {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
-  background-color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
-  border: 0px light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+  background-color: light-dark(rgba(0, 0, 6, 0.48), rgba(255, 255, 255, 0.55));
+  border: 0px light-dark(rgba(0, 0, 6, 0.48), rgba(255, 255, 255, 0.55));
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -2266,21 +2249,22 @@ body .markdown-rendered ol > li::marker {
   border-start-end-radius: 50%;
   border-end-start-radius: 50%;
   border-end-end-radius: 50%;
-  color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+  color: light-dark(rgba(0, 0, 6, 0.48), rgba(255, 255, 255, 0.55));
   pointer-events: none;
   transform: none;
 }
 body .markdown-rendered code {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
-  border: 1px solid light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  background-color: light-dark(rgb(243, 243, 245), rgb(40, 40, 44));
+  border: 1px solid
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   color: light-dark(rgb(56, 58, 66), rgb(171, 178, 191));
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -2289,16 +2273,17 @@ body .markdown-rendered code {
   padding: 2px 4px;
 }
 body .markdown-rendered pre > code {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
-  border: 1px solid light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  background-color: light-dark(rgb(243, 243, 245), rgb(40, 40, 44));
+  border: 1px solid
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   overflow-x: auto;
   padding: 12px 16px;
   white-space-collapse: preserve;
@@ -2306,16 +2291,17 @@ body .markdown-rendered pre > code {
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
-  border: 1px solid light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  background-color: light-dark(rgb(243, 243, 245), rgb(40, 40, 44));
+  border: 1px solid
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   overflow-x: auto;
   padding: 12px 16px;
   white-space-collapse: preserve;
@@ -2359,17 +2345,18 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body ul > li.task-list-item[data-task="x"] {
-  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
-  text-decoration: line-through solid rgb(179, 179, 179);
-  text-decoration-color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
+  color: light-dark(rgba(0, 0, 6, 0.64), rgba(255, 255, 255, 0.8));
+  text-decoration: line-through solid rgba(255, 255, 255, 0.8);
+  text-decoration-color: light-dark(
+    rgba(0, 0, 6, 0.64),
+    rgba(255, 255, 255, 0.8)
+  );
 }
 body .markdown-rendered blockquote {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(rgb(243, 243, 245), rgb(40, 40, 44));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2389,26 +2376,28 @@ body .markdown-rendered blockquote {
   margin-inline-end: 0px;
 }
 body .footnote-backref {
-  color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
-  text-decoration: none solid rgb(102, 102, 102);
+  color: light-dark(rgba(0, 0, 6, 0.48), rgba(255, 255, 255, 0.55));
+  text-decoration: none solid rgba(255, 255, 255, 0.55);
 }
 body .site-body-left-column input.search-bar {
-  background-color: light-dark(rgb(255, 255, 255), rgb(54, 54, 54));
-  border: 1px solid light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: light-dark(
+    color(srgb 0 0 0.0235294 / 0.1),
+    color(srgb 1 1 1 / 0.1)
+  );
+  border: 0px solid
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(218, 218, 218));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2422,35 +2411,29 @@ body .site-body-left-column input.search-bar {
     sans-serif;
 }
 body .search-results {
-  background-color: light-dark(
-    color(srgb 0.980392 0.980392 0.980392 / 0.75),
-    color(srgb 0.141176 0.141176 0.141176 / 0.75)
-  );
-  border: 1px solid light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-start-start-radius: 20px;
-  border-start-end-radius: 20px;
-  border-end-start-radius: 20px;
-  border-end-end-radius: 20px;
+  background-color: light-dark(rgb(235, 235, 237), rgb(46, 46, 50));
+  border: 1px solid light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-start-start-radius: 18px;
+  border-start-end-radius: 18px;
+  border-end-start-radius: 18px;
+  border-end-end-radius: 18px;
   box-shadow:
-    rgba(255, 255, 255, 0.3) 0px 0px 1px 0px,
-    rgba(255, 255, 255, 0.5) 0px 0px 1px 0px,
-    rgba(0, 0, 0, 0.7) 0px 0px 1px 0px,
-    rgba(0, 0, 0, 0.3) 0px 16px 64px 0px;
+    rgba(0, 0, 0, 0.15) 0px 0px 14px 5px,
+    rgba(0, 0, 0, 0.1) 0px 0px 5px 2px,
+    rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 body .search-results > * {
-  background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  background-color: light-dark(rgb(243, 243, 245), rgb(40, 40, 44));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: auto;
   filter: none;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2463,39 +2446,39 @@ body .search-results > * {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(205, 205, 205);
-  text-decoration-color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration-color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   text-decoration-line: none;
   text-decoration-style: solid;
   user-select: text;
 }
 body div.search-results {
-  border: 1px solid light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-start-start-radius: 20px;
-  border-start-end-radius: 20px;
-  border-end-start-radius: 20px;
-  border-end-end-radius: 20px;
+  border: 1px solid light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-start-start-radius: 18px;
+  border-start-end-radius: 18px;
+  border-end-start-radius: 18px;
+  border-end-end-radius: 18px;
 }
 body .search-results .suggestion-item {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
 }
 body div.search-results .suggestion-item {
-  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-start-start-radius: 12px;
-  border-start-end-radius: 12px;
-  border-end-start-radius: 12px;
-  border-end-end-radius: 12px;
+  border: 0px light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-weight: 400;
   background-color: light-dark(
     rgba(0, 0, 0, 0.067),
@@ -2503,15 +2486,13 @@ body .search-results .suggestion-item.is-selected {
   );
 }
 body div.search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
 }
 body .published-container .markdown-rendered h1 {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2526,12 +2507,10 @@ body .published-container .markdown-rendered h1 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2546,12 +2525,10 @@ body .published-container .markdown-rendered h2 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2566,12 +2543,10 @@ body .published-container .markdown-rendered h3 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
-  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2586,12 +2561,10 @@ body .published-container .markdown-rendered h4 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
-  color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2606,12 +2579,10 @@ body .published-container .markdown-rendered h5 {
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
-  color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2648,21 +2619,25 @@ body body.styled-scrollbars {
   scrollbar-color: auto;
 }
 body .callout[data-callout="note"] {
-  border: 1px solid light-dark(rgba(0, 136, 255, 0.25), rgba(0, 145, 255, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid
+    light-dark(rgba(98, 160, 234, 0.25), rgba(53, 132, 228, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   mix-blend-mode: normal;
   padding: 16px;
-  background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
+  background-color: light-dark(
+    rgba(98, 160, 234, 0.1),
+    rgba(53, 132, 228, 0.1)
+  );
 }
 body .callout[data-callout="note"] > .callout-title {
-  border: 0px light-dark(rgb(0, 136, 255), rgb(0, 145, 255));
+  border: 0px light-dark(rgb(98, 160, 234), rgb(53, 132, 228));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2681,178 +2656,192 @@ body .callout > .callout-content {
   padding: 0px;
 }
 body .callout[data-callout="abstract"] {
-  background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
+  background-color: light-dark(
+    rgba(35, 164, 173, 0.1),
+    rgba(33, 144, 164, 0.1)
+  );
   mix-blend-mode: normal;
   border: 1px solid
-    light-dark(rgba(0, 192, 232, 0.25), rgba(60, 211, 254, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+    light-dark(rgba(35, 164, 173, 0.25), rgba(33, 144, 164, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="info"] {
-  background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
+  background-color: light-dark(
+    rgba(98, 160, 234, 0.1),
+    rgba(53, 132, 228, 0.1)
+  );
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgba(0, 136, 255, 0.25), rgba(0, 145, 255, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid
+    light-dark(rgba(98, 160, 234, 0.25), rgba(53, 132, 228, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="todo"] {
-  background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
+  background-color: light-dark(
+    rgba(98, 160, 234, 0.1),
+    rgba(53, 132, 228, 0.1)
+  );
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgba(0, 136, 255, 0.25), rgba(0, 145, 255, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid
+    light-dark(rgba(98, 160, 234, 0.25), rgba(53, 132, 228, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="tip"] {
-  background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
+  background-color: light-dark(
+    rgba(35, 164, 173, 0.1),
+    rgba(33, 144, 164, 0.1)
+  );
   mix-blend-mode: normal;
   border: 1px solid
-    light-dark(rgba(0, 192, 232, 0.25), rgba(60, 211, 254, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+    light-dark(rgba(35, 164, 173, 0.25), rgba(33, 144, 164, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="success"] {
-  background-color: light-dark(rgba(8, 185, 78, 0.1), rgba(68, 207, 110, 0.1));
+  background-color: light-dark(
+    rgba(46, 194, 126, 0.1),
+    rgba(38, 162, 105, 0.1)
+  );
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgba(52, 199, 89, 0.25), rgba(48, 209, 88, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid
+    light-dark(rgba(46, 194, 126, 0.25), rgba(38, 162, 105, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="question"] {
-  background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
+  background-color: light-dark(rgba(255, 120, 0, 0.1), rgba(230, 97, 0, 0.1));
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(255, 141, 40, 0.25), rgba(255, 146, 48, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid light-dark(rgba(255, 120, 0, 0.25), rgba(230, 97, 0, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="warning"] {
-  background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
+  background-color: light-dark(rgba(255, 120, 0, 0.1), rgba(230, 97, 0, 0.1));
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(255, 141, 40, 0.25), rgba(255, 146, 48, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid light-dark(rgba(255, 120, 0, 0.25), rgba(230, 97, 0, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="danger"] {
-  background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
+  background-color: light-dark(rgba(237, 51, 59, 0.1), rgba(224, 27, 36, 0.1));
   mix-blend-mode: light-dark(darken, lighten);
-  border: 1px solid light-dark(rgba(255, 56, 60, 0.25), rgba(255, 66, 69, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid light-dark(rgba(237, 51, 59, 0.25), rgba(224, 27, 36, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="failure"] {
-  background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
+  background-color: light-dark(rgba(237, 51, 59, 0.1), rgba(224, 27, 36, 0.1));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgba(255, 56, 60, 0.25), rgba(255, 66, 69, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid light-dark(rgba(237, 51, 59, 0.25), rgba(224, 27, 36, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="bug"] {
-  background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
+  background-color: light-dark(rgba(237, 51, 59, 0.1), rgba(224, 27, 36, 0.1));
   mix-blend-mode: light-dark(darken, lighten);
-  border: 1px solid light-dark(rgba(255, 56, 60, 0.25), rgba(255, 66, 69, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid light-dark(rgba(237, 51, 59, 0.25), rgba(224, 27, 36, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="example"] {
   background-color: light-dark(
-    rgba(120, 82, 238, 0.1),
-    rgba(168, 130, 255, 0.1)
+    rgba(192, 97, 203, 0.1),
+    rgba(145, 65, 172, 0.1)
   );
   mix-blend-mode: light-dark(darken, lighten);
   border: 1px solid
-    light-dark(rgba(203, 48, 224, 0.25), rgba(107, 52, 242, 0.25));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+    light-dark(rgba(192, 97, 203, 0.25), rgba(145, 65, 172, 0.25));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .callout[data-callout="quote"] {
   background-color: rgba(158, 158, 158, 0.1);
   mix-blend-mode: light-dark(darken, lighten);
   border: 1px solid rgba(158, 158, 158, 0.25);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: collapse;
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2875,9 +2864,9 @@ body .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 0px 0px;
+  margin: 28px 0px 0px;
   margin-block-end: 0px;
-  margin-block-start: 16px;
+  margin-block-start: 28px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -2894,45 +2883,49 @@ body .markdown-rendered thead {
   border-end-end-radius: 0px;
 }
 body .markdown-rendered tbody {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+  background-color: light-dark(rgb(255, 255, 255), rgba(255, 255, 255, 0.08));
 }
 body .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-weight: 600;
   text-align: start;
   vertical-align: top;
   border: 1px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border-right-color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   padding: 0px;
 }
 body .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-weight: 400;
   text-align: center;
   vertical-align: top;
-  border-color: light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075))
-    light-dark(rgb(54, 54, 54), rgb(205, 205, 205))
-    light-dark(rgb(54, 54, 54), rgb(205, 205, 205))
-    light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
+  border-color: light-dark(
+      color(srgb 0 0 0.0235294 / 0.15),
+      color(srgb 1 1 1 / 0.15)
+    )
+    light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255))
+    light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255))
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
   border-style: solid;
   border-width: 1px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   padding: 0px;
 }
 body .markdown-rendered tr {
@@ -2952,15 +2945,15 @@ body .markdown-rendered img {
   filter: none;
   max-width: 100%;
   object-fit: fill;
-  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 0px light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -2970,7 +2963,7 @@ body .markdown-rendered img {
 body .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  border: 0px light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2987,12 +2980,10 @@ body .markdown-rendered figure {
   padding: 0px;
 }
 body .markdown-rendered figcaption {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3019,15 +3010,15 @@ body .markdown-rendered video {
   filter: none;
   max-width: 100%;
   object-fit: contain;
-  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 0px light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -3036,7 +3027,7 @@ body .markdown-rendered video {
 }
 body .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  border: 0px light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3051,7 +3042,7 @@ body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 6px;
-  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  border: 0px light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3075,13 +3066,14 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: light-dark(rgb(255, 255, 255), rgb(54, 54, 54));
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  background-color: light-dark(
+    color(srgb 0 0 0.0235294 / 0.1),
+    color(srgb 1 1 1 / 0.1)
+  );
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(218, 218, 218));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3093,20 +3085,21 @@ body input[type="text"] {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 1px solid light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 0px solid
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   padding: 4px 8px;
 }
 body details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  border: 0px light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3124,7 +3117,7 @@ body details {
 }
 body summary {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: auto;
   font-weight: 400;
   padding: 0px;
@@ -3148,16 +3141,14 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: light-dark(rgb(235, 235, 237), rgb(46, 46, 50));
   box-shadow:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px,
     rgba(255, 255, 255, 0.04) 0px 2px 4px -2px;
-  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
+  color: light-dark(rgba(0, 0, 6, 0.64), rgba(255, 255, 255, 0.8));
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3170,15 +3161,16 @@ body kbd {
     "Segoe UI Symbol",
     sans-serif;
   font-size: 12.8px;
-  border: 1px solid light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
   padding: 4px 8px;
 }
 body dl {
@@ -3189,7 +3181,7 @@ body dl {
   margin-inline-start: 0px;
 }
 body dt {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-weight: 400;
   margin: 0px;
   margin-block-end: 0px;
@@ -3198,7 +3190,7 @@ body dt {
   margin-inline-start: 0px;
 }
 body dd {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -3207,19 +3199,19 @@ body dd {
   padding: 0px;
 }
 body sub {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-size: 13.3333px;
   vertical-align: sub;
 }
 body sup {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-size: 13.3333px;
   vertical-align: super;
 }
 body abbr {
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: auto;
-  text-decoration: underline dotted rgb(205, 205, 205);
+  text-decoration: underline dotted rgb(255, 255, 255);
   text-decoration-style: dotted;
 }
 body li.task-list-item[data-task="-"] {
@@ -3318,10 +3310,8 @@ body .math-block > mjx-container.MathJax {
   white-space-collapse: break-spaces;
   text-wrap-mode: wrap;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3336,10 +3326,8 @@ body .math-block > mjx-container.MathJax {
 }
 body div.math-block > mjx-container.MathJax {
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3356,13 +3344,11 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  color: light-dark(rgba(0, 0, 6, 0.64), rgba(255, 255, 255, 0.8));
   cursor: default;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3375,20 +3361,23 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration: none solid rgba(255, 255, 255, 0.8);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: light-dark(rgba(0, 0, 0, 0.067), rgba(0, 0, 0, 0.5));
-  border: 0px light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
-  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  background-color: light-dark(
+    rgba(0, 0, 0, 0.067),
+    rgba(255, 255, 255, 0.067)
+  );
+  border: 0px light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
@@ -3403,13 +3392,11 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  color: light-dark(rgba(0, 0, 6, 0.64), rgba(255, 255, 255, 0.8));
   cursor: default;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3422,7 +3409,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration: none solid rgba(255, 255, 255, 0.8);
 }
 body
   .nav-view-outer
@@ -3431,13 +3418,11 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
+  color: light-dark(rgba(0, 0, 6, 0.64), rgba(255, 255, 255, 0.8));
   cursor: default;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Text",
-    sans-serif,
+    "Adwaita Sans",
+    "Adwaita Sans Text",
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3450,33 +3435,35 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration: none solid rgba(255, 255, 255, 0.8);
 }
 body figure[data-rehype-pretty-code-figure] {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
-  border: 1px solid light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  background-color: light-dark(rgb(243, 243, 245), rgb(40, 40, 44));
+  border: 1px solid
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
-  color: light-dark(rgb(54, 54, 54), rgb(205, 205, 205));
+  background-color: light-dark(rgb(243, 243, 245), rgb(40, 40, 44));
+  color: light-dark(rgba(0, 0, 6, 0.8), rgb(255, 255, 255));
   font-family: monospace;
-  border: 1px solid light-dark(rgba(0, 0, 0, 0.075), rgba(255, 255, 255, 0.075));
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border: 1px solid
+    light-dark(color(srgb 0 0 0.0235294 / 0.15), color(srgb 1 1 1 / 0.15));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-start-start-radius: 9px;
+  border-start-end-radius: 9px;
+  border-end-start-radius: 9px;
+  border-end-end-radius: 9px;
 }
 body pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);

@@ -28,7 +28,7 @@ body {
 	--background-tertiary: #c0c0c0;         /* Classic Win 3.1 gray for UI elements */
 	
 	/* Title bar */
-	--titlebar-background: #000080;         /* Classic Win 3.1 blue */
+	/*--titlebar-background: #000080;         /* Classic Win 3.1 blue */
 	--titlebar-text: #ffffff;               /* White text on blue */
 	
 	/* Text colors */
@@ -59,7 +59,7 @@ body {
 	--background-tertiary: #444444;         /* Dark version of Win 3.1 gray for UI elements */
 	
 	/* Title bar */
-	--titlebar-background: #000080;         /* Classic Win 3.1 blue */
+	/*--titlebar-background: #000080;         /* Classic Win 3.1 blue */
 	--titlebar-text: #ffffff;               /* White text on blue */
 	
 	/* Text colors */
@@ -169,12 +169,6 @@ button:hover {
 	color: var(--text-normal);
 	background-color: var(--background-primary);
 }
-
-/* Headings - shared */
-/*.cm-header {
-	font-weight: bold;
-	color: var(--titlebar-background);
-}*/
 
 /* Headings - Shared (Reading and Editing Modes) */
 .cm-header, /* Editing Mode */

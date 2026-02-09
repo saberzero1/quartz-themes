@@ -796,20 +796,37 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --custom-accent: #8ba4cc !important;
-  --custom-accent-muted: #304f80 !important;
-  --custom-accent-muted-selection: rgba(48, 79, 128, 0.99) !important;
-  --custom-accent-muted-transparent: rgba(48, 79, 128, 0.3) !important;
-  --custom-text-faint: #909090 !important;
-  --custom-text-muted: #cacaca !important;
-  --custom-text-on-accent: #000000 !important;
-  --mica-base-bg-end: #1b2020 !important;
-  --mica-base-bg-start: #202028 !important;
-  --mica-border: #1a1f28 !important;
-  --mica-content-bg-end: #212223 !important;
-  --mica-content-bg-end-transparent: rgba(33, 34, 35, 0.3) !important;
-  --mica-content-bg-start: #222832 !important;
-  --mica-content-bg-start-transparent: rgba(34, 40, 50, 0.3) !important;
+  --sdlt-accent: #8ba4cc !important;
+  --sdlt-accent-muted: #304f80 !important;
+  --sdlt-accent-muted-selection: rgba(48, 79, 128, 0.99) !important;
+  --sdlt-accent-muted-transparent: rgba(48, 79, 128, 0.3) !important;
+  --sdlt-base-bg-end: #1b2020 !important;
+  --sdlt-base-bg-start: #202028 !important;
+  --sdlt-border: #1a1f28 !important;
+  --sdlt-content-bg-end: #212223 !important;
+  --sdlt-content-bg-end-transparent: rgba(33, 34, 35, 0.3) !important;
+  --sdlt-content-bg-start: #222832 !important;
+  --sdlt-content-bg-start-transparent: rgba(34, 40, 50, 0.3) !important;
+  --sdlt-gradient-base: linear-gradient(135deg, #202028, #1b2020) !important;
+  --sdlt-gradient-content: linear-gradient(135deg, #222832, #212223) !important;
+  --sdlt-gradient-subtle: linear-gradient(
+    160deg,
+    transparent,
+    rgba(255, 255, 255, 0.02)
+  ) !important;
+  --sdlt-graph-line: #404050 !important;
+  --sdlt-graph-line-highlight: #507090 !important;
+  --sdlt-header-height: 48px !important;
+  --sdlt-markdown-header-height: 56px !important;
+  --sdlt-overlay-bg: rgba(255, 255, 255, 0.05) !important;
+  --sdlt-overlay-border: rgba(255, 255, 255, 0.08) !important;
+  --sdlt-ribbon-width: 48px !important;
+  --sdlt-search-border: #404040 !important;
+  --sdlt-shadow-active: 0 0 3px 1px rgba(0, 0, 0, 0.5) !important;
+  --sdlt-tag-indicator: #caca00 !important;
+  --sdlt-text-faint: #909090 !important;
+  --sdlt-text-muted: #cacaca !important;
+  --sdlt-text-on-accent: #000000 !important;
 
   --quartz-icon-color: currentColor;
 }

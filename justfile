@@ -55,6 +55,7 @@ ingest:
 [group('database')]
 prepare:
   node ./runner/scripts/prep.js
+  node ./runner/scripts/prep.js
 
 [group('database')]
 prepare-baseline:
@@ -69,4 +70,4 @@ drop:
 [group('database')]
 rebuild: drop ingest
 
-
+everything-and-the-kitchen-sink: extract drop prepare ingest compile convert format-non-generated

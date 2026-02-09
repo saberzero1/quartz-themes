@@ -287,7 +287,7 @@ body.theme-light {
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: #232323 !important;
+  --blockquote-border-color: #000 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -577,14 +577,8 @@ body.theme-light {
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #7e7e7e !important;
   --input-radius: 0 !important;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
+  --input-shadow: none !important;
+  --input-shadow-hover: none !important;
   --interactive-accent: #000 !important;
   --interactive-accent-hover: #000 !important;
   --interactive-accent-hsl: 0, 0%, 28% !important;
@@ -639,9 +633,7 @@ body.theme-light {
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
   --menu-radius: 0 !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --menu-shadow: none !important;
   --metadata-background: transparent !important;
   --metadata-border-color: transparent !important;
   --metadata-border-radius: 0 !important;
@@ -785,7 +777,7 @@ body.theme-light {
   --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 4px !important;
+  --scrollbar-radius: 0px !important;
   --scrollbar-thumb-bg: color-mix(in srgb, #222, transparent 85%) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: #222 !important;
@@ -796,9 +788,7 @@ body.theme-light {
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shadow-s: none !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -979,7 +969,6 @@ body.theme-light {
   --h5-color: #000 !important;
   --h6-color: #000 !important;
   --inline-title-color: #000 !important;
-  --blockquote-color: #000 !important;
   --quote-opening-modifier: #232323 !important;
   --bases-text-color: #000 !important;
   --body-font-color-dark: #b3b3b3 !important;
@@ -993,12 +982,17 @@ body.theme-light {
   --calendar-today-color: #d10000 !important;
   --callout-abstract: 88, 139, 150;
   --callout-note: 84, 122, 155;
+  --canvas-node-border-color: #232323 !important;
   --checkbox-border-width: 1px !important;
   --cta-bg-dynamic: #000 !important;
-  --cta-bg-hover-dynamic: #404040 !important;
+  --cta-bg-hover-dynamic: #000 !important;
   --cta-text-dynamic: #fff !important;
   --dark-accent-custom: #cdcdcd !important;
+  --dashboard-banner-height: 600px !important;
+  --dashboard-banner-offset: 150px !important;
+  --dashboard-banner-opacity: 1 !important;
   --dashboard-border-width: 1px !important;
+  --dashboard-card-transparency: 20% !important;
   --dashboard-col-width: 300px !important;
   --dashboard-gap: 4px !important;
   --drag-bg: color-mix(in srgb, #7a9f79, transparent 85%) !important;
@@ -1008,10 +1002,12 @@ body.theme-light {
   --font-colour-dark-grey-33: #333 !important;
   --font-colour-light-grey-70: #707070 !important;
   --font-colour-light-grey-bd: #bdbdbd !important;
+  --font-text-destructive: #ff4b4b !important;
   --font-ui: "Sen", sans-serif !important;
   --font-ui-override: "Sen", sans-serif !important;
   --inline-title-align: left !important;
-  --input-border: #232323 !important;
+  --input-bg-std: #cdcdcd !important;
+  --input-border: transparent !important;
   --light-accent-custom: #000 !important;
   --metadata-content-radius: 8px !important;
   --mobile-active-bg: #7a9f79 !important;
@@ -1150,7 +1146,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: silver !important;
+  --blockquote-border-color: #cdcdcd !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --bold-modifier: 200 !important;
@@ -1440,14 +1436,8 @@ body.theme-dark {
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #858585 !important;
   --input-radius: 0 !important;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --input-shadow: none !important;
+  --input-shadow-hover: none !important;
   --interactive-accent: #cdcdcd !important;
   --interactive-accent-hover: #fff !important;
   --interactive-accent-hsl: 0, 0%, 75% !important;
@@ -1502,9 +1492,7 @@ body.theme-dark {
   --menu-border-width: 1px !important;
   --menu-padding: 6px !important;
   --menu-radius: 0 !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --menu-shadow: none !important;
   --metadata-background: transparent !important;
   --metadata-border-color: transparent !important;
   --metadata-border-radius: 0 !important;
@@ -1646,7 +1634,7 @@ body.theme-dark {
   --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
-  --scrollbar-radius: 4px !important;
+  --scrollbar-radius: 0px !important;
   --scrollbar-thumb-bg: color-mix(in srgb, #b3b3b3, transparent 85%) !important;
   --scrollbar-width: 12px !important;
   --search-clear-button-color: #b3b3b3 !important;
@@ -1657,9 +1645,7 @@ body.theme-dark {
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shadow-s: none !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1840,7 +1826,6 @@ body.theme-dark {
   --h5-color: #cdcdcd !important;
   --h6-color: #cdcdcd !important;
   --inline-title-color: #cdcdcd !important;
-  --blockquote-color: #b3b3b3 !important;
   --quote-opening-modifier: silver !important;
   --bases-text-color: #c5c5c5 !important;
   --body-font-color-dark: #b3b3b3 !important;
@@ -1854,12 +1839,17 @@ body.theme-dark {
   --calendar-today-color: #feb43f !important;
   --callout-abstract: 109, 163, 174;
   --callout-note: 96, 138, 176;
+  --canvas-node-border-color: silver !important;
   --checkbox-border-width: 1px !important;
   --cta-bg-dynamic: #cdcdcd !important;
   --cta-bg-hover-dynamic: #e0e0e0 !important;
   --cta-text-dynamic: #000 !important;
   --dark-accent-custom: #cdcdcd !important;
+  --dashboard-banner-height: 600px !important;
+  --dashboard-banner-offset: 150px !important;
+  --dashboard-banner-opacity: 1 !important;
   --dashboard-border-width: 1px !important;
+  --dashboard-card-transparency: 20% !important;
   --dashboard-col-width: 300px !important;
   --dashboard-gap: 4px !important;
   --drag-bg: color-mix(in srgb, #00526e, transparent 85%) !important;
@@ -1869,10 +1859,12 @@ body.theme-dark {
   --font-colour-dark-grey-33: #333 !important;
   --font-colour-light-grey-70: #707070 !important;
   --font-colour-light-grey-bd: #bdbdbd !important;
+  --font-text-destructive: #ff4b4b !important;
   --font-ui: "Sen", sans-serif !important;
   --font-ui-override: "Sen", sans-serif !important;
   --inline-title-align: left !important;
-  --input-border: silver !important;
+  --input-bg-std: #000 !important;
+  --input-border: transparent !important;
   --light-accent-custom: #000 !important;
   --metadata-content-radius: 8px !important;
   --mobile-active-bg: #00526e !important;
@@ -2298,7 +2290,7 @@ body .footnote-backref {
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(205, 205, 205), rgb(0, 0, 0));
-  border: 0px solid light-dark(rgb(35, 35, 35), rgb(192, 192, 192));
+  border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -2877,7 +2869,7 @@ body input[type="text"] {
   background-color: light-dark(rgb(205, 205, 205), rgb(0, 0, 0));
   color: light-dark(rgb(34, 34, 34), rgb(179, 179, 179));
   font-family: "iA Writer Quattro S", sans-serif;
-  border: 0px solid light-dark(rgb(35, 35, 35), rgb(192, 192, 192));
+  border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
