@@ -1910,8 +1910,16 @@ body {
     --interactive-accent-hover: var(--color-accent-2);
 }
 
+.theme-dark.is-mobile {
+    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 65%));
+}
+
 .workspace-drawer .nav-header {
     border-bottom: var(--border-width) solid hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 25%));
+}
+
+.theme-dark.is-mobile .workspace-drawer .nav-header, .theme-light.is-mobile .workspace-drawer .nav-header {
+    border-bottom: none !important;
 }
 
 .graph-control-section {
@@ -2167,7 +2175,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
     border-radius: 8px;
 }
 
-.theme-dark.is-mobile.is-mobile .setting-group .setting-items {
+.theme-dark.is-mobile .setting-group .setting-items {
     background: var(--background-primary);
 }
 

@@ -986,6 +986,7 @@
     0px 4px 4px -5.6px rgba(0, 0, 0, 0.4),
     0px 2px 4px -2.7px rgba(0, 0, 0, 0.15), 0px 2px 6px -1px rgba(0, 0, 0, 0.1) !important;
   --font-ui-smallest: 11px !important;
+  --prompt-input-background: rgb(248, 245, 241) !important;
   --alternating-color-1: rgb(215, 151, 25) !important;
   --alternating-color-1-hover-active: rgb(182, 122, 2) !important;
   --alternating-color-2: rgb(191, 63, 54) !important;
@@ -1956,7 +1957,6 @@
   --progress-value-outline: rgba(0, 0, 0, 0.18) !important;
   --progress-value-radius: 8px !important;
   --progress-width: 220px !important;
-  --prompt-input-background: rgb(248, 245, 241) !important;
   --prompt-instructions-background: color-mix(
     in hsl,
     rgb(248, 245, 241) 60%,
@@ -3180,6 +3180,7 @@
     0px 4px 4px -5.6px rgba(0, 0, 0, 0.55),
     0px 2px 4px -2.7px rgba(0, 0, 0, 0.3), 0px 2px 6px -1px rgba(0, 0, 0, 0.25) !important;
   --font-ui-smallest: 11px !important;
+  --prompt-input-background: rgb(46, 38, 31) !important;
   --alternating-color-1: rgb(218, 154, 27) !important;
   --alternating-color-1-hover-active: rgb(188, 129, 26) !important;
   --alternating-color-2: rgb(243, 80, 68) !important;
@@ -4195,7 +4196,6 @@
   --progress-value-outline: rgba(255, 255, 255, 0.21) !important;
   --progress-value-radius: 8px !important;
   --progress-width: 220px !important;
-  --prompt-input-background: rgb(46, 38, 31) !important;
   --prompt-instructions-background: color-mix(
     in hsl,
     rgb(46, 38, 31) 60%,

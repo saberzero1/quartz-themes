@@ -874,6 +874,14 @@ body {
 
   --setting-items-background: var(--mu-background-color-2) !important;
 
+  /* Mobile side margins */
+  --mu-mobile-side-margins-value: 16;
+  --mu-mobile-side-margins: calc(var(--mu-mobile-side-margins-value)*1px);
+
+  /* Global font mode - font size */
+  --mu-global-font-size-value: 16;
+  --mu-global-font-size: calc(var(--mu-global-font-size-value)*1px);
+
 }
 
 body::before {
@@ -8178,6 +8186,7 @@ body.mu-global-font-mode {
   --h6-font: var(--mu-global-font);
   font-feature-settings: var(--mu-global-font-stylistic-set);
   letter-spacing: calc(min(var(--mu-global-font-letter-spacing), var(--mu-max-letter-spacing)));
+  --font-text-size: var(--mu-global-font-size) !important;
 }
 
 /* Indicator size */
@@ -8310,6 +8319,21 @@ span.cm-highlight {
 .nav-file-tag {
   background-color: var(--background-modifier-hover);
   color: var(--text-normal);
+}
+
+/* Mobile margins */
+.is-mobile .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller,
+.is-mobile .markdown-source-view.mod-cm6 .cm-content,
+.is-mobile .markdown-rendered {
+  max-width: 100% !important;
+  padding-left: var(--mu-mobile-side-margins) !important;
+  padding-right: var(--mu-mobile-side-margins) !important;
+
+}
+
+.is-mobile .markdown-source-view.mod-cm6 .cm-content.cm-lineWrapping {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /* Style Settings */
@@ -9502,15 +9526,24 @@ settings:
     -
         id: mu-global-font-mode
         title: Global font mode
-        description: Activate global font mode (text and other UI elements).
+        description: Activate the global font for text and other UI elements.
         type: class-toggle
         addCommand: true
     -
         id: mu-global-font
         title: Global font
         type: variable-text
-        description: Select global font (global font mode).
+        description: Choose the font to use when global font mode is active.
         default: JetBrains Mono, Consolas, Roboto Mono, Menlo, monospace
+    -
+        id: mu-global-font-size-value
+        title: Global font size
+        description: Adjust the font size only when global font mode is active.
+        type: variable-number-slider
+        default: 16
+        min: 10
+        max: 30
+        step: 1
     -
         id: mu-global-font-stylistic-set
         title: Global font stylistic sets
@@ -9903,6 +9936,39 @@ settings:
         default-light: '#00bfff'
         default-dark: '#00bfff'
     -
+        id: magicuser-theme-file-line-width
+        title: Line preferences
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: mu-file-line-width-value
+        title: File line width (desktop and tablet line width)
+        description: Adjust line width (desktop and tablet versions).
+        type: variable-number-slider
+        default: 700
+        min: 500
+        max: 2560
+        step: 1
+    -
+        id: mu-mobile-side-margins-value
+        title: Mobile side margins
+        description: Adjust horizontal margins for mobile phone screens.
+        type: variable-number-slider
+        default: 16
+        min: 8
+        max: 48
+        step: 1
+    -
+        id: line-height-normal
+        title: Line height 
+        description: Adjust line height (desktop, tablet and mobile phone versions).
+        type: variable-number-slider
+        default: 1.5
+        min: 1.0
+        max: 2.0
+        step: 0.1
+    -
         id: magicuser-theme-other-editor-elements
         title: Other editor elements
         type: heading
@@ -10113,21 +10179,6 @@ settings:
         opacity: false
         default-light: '#c300f1'
         default-dark: '#d372ff'
-    -
-        id: magicuser-theme-file-line-width
-        title: File line width
-        type: heading
-        level: 4
-        collapsed: true
-    -
-        id: mu-file-line-width-value
-        title: File line width (note width)
-        description: Adjust file line width (note width).
-        type: variable-number-slider
-        default: 700
-        min: 500
-        max: 2560
-        step: 1
     -
         id: magicuser-theme-hr
         title: Horizontal rules and dividers

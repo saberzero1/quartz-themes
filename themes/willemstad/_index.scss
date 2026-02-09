@@ -815,6 +815,12 @@
   --color-red-2: oklch(from #e93147 calc(l - 0.1) c calc(h + 4)) !important;
   --font-editor: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --callout-gap: 0.5em;
+  --touch-radius-l: 9px !important;
+  --touch-radius-m: 6px !important;
+  --touch-radius-s: 3px !important;
+  --touch-radius-xl: 9px !important;
+  --touch-radius-xs: 3px !important;
+  --touch-radius-xxs: 3px !important;
   --color-base-45: oklch(0.6 0 0) !important;
   --color-base-55: oklch(0.4 0 0) !important;
   --color-base-65: oklch(0.2 0 0) !important;
@@ -824,11 +830,6 @@
   --header-padding: 6px !important;
   --modal-sidebar-background: oklch(0.95 0 0) !important;
   --status-bar-padding: 4px !important;
-  --touch-radius-m: 6px !important;
-  --touch-radius-s: 3px !important;
-  --touch-radius-xl: 9px !important;
-  --touch-radius-xs: 3px !important;
-  --touch-radius-xxs: 3px !important;
   --theme-alternative-checkboxes: disable !important;
   --l: clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) !important;
   --settings-background: oklch(0.98 0 0) !important;
@@ -1207,7 +1208,6 @@
   --tab-padding-hover: 5.25px !important;
   --table-drag-handle-size: 16px !important;
   --text-message-progress-bar: oklch(0 0 0) !important;
-  --touch-radius-l: 9px !important;
   --ui-font: "Manrope", "Inter 4.1", "DM Sans" !important;
   --width-norm-sd: 36px !important;
   --width-vll: 700px !important;
@@ -2071,6 +2071,12 @@
   --color-red-2: oklch(from #fb464c calc(l - 0.1) c calc(h + 4)) !important;
   --font-editor: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --callout-gap: 0.5em;
+  --touch-radius-l: 9px !important;
+  --touch-radius-m: 6px !important;
+  --touch-radius-s: 3px !important;
+  --touch-radius-xl: 9px !important;
+  --touch-radius-xs: 3px !important;
+  --touch-radius-xxs: 3px !important;
   --color-base-45: oklch(0.48 0 0) !important;
   --color-base-55: oklch(0.63 0 0) !important;
   --color-base-65: oklch(0.78 0 0) !important;
@@ -2080,11 +2086,6 @@
   --header-padding: 6px !important;
   --modal-sidebar-background: oklch(0.19 0 0) !important;
   --status-bar-padding: 4px !important;
-  --touch-radius-m: 6px !important;
-  --touch-radius-s: 3px !important;
-  --touch-radius-xl: 9px !important;
-  --touch-radius-xs: 3px !important;
-  --touch-radius-xxs: 3px !important;
   --theme-alternative-checkboxes: disable !important;
   --l: clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) !important;
   --settings-background: oklch(0.17 0 0) !important;
@@ -2529,7 +2530,6 @@
   --tab-padding-hover: 5.25px !important;
   --table-drag-handle-size: 16px !important;
   --text-message-progress-bar: oklch(0.98 0 0) !important;
-  --touch-radius-l: 9px !important;
   --ui-font: "Manrope", "Inter 4.1", "DM Sans" !important;
   --width-norm-sd: 36px !important;
   --width-vll: 700px !important;

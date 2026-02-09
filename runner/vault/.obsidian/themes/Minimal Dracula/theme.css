@@ -1,13 +1,13 @@
 /* ==
 @name             Minimal Dracula
 @namespace        github.com/druxorey/minimal-dracula-for-obsidian
-@version          1.7.2
+@version          1.8.0
 @description      Are you tired of the same boring colors on Obsidian? Then try this modern color style based on the Dracula theme
 @author           Druxorey
 @license          GNU General Public License v3.0
 == */
 
-:root {
+:root:not(.is-phone,.is-mobile) {
 	--drx-border-radius: 10px;
 	--drx-border-width: 2px;
 	--drx-shadow-radius: 8px;
@@ -16,7 +16,7 @@
 
 /* ========================== OBSIDIAN VALUES ======================== */
 
-body {
+body:not(.is-phone,.is-mobile) {
 	--h1-weight: 600;
 	--h2-weight: 600;
 	--h3-weight: 600;
@@ -63,7 +63,7 @@ body {
 	--callout-bug: var(--drx-color-callout-red);
 	--callout-error: var(--drx-color-callout-red);
 	--callout-fail: var(--drx-color-callout-red);
-	--callout-quote: var(--drx-color-callout-blue);
+	--callout-quote: var(--drx-color-callout-purple);
 	--callout-success: var(--drx-color-callout-green);
 	--callout-question: var(--drx-color-callout-orange);
 	--callout-warning: var(--drx-color-callout-orange);
@@ -71,20 +71,19 @@ body {
 
 /* ============================ DARK THEME =========================== */
 
-body.theme-dark {
-	--drx-color-base: #1E1F29;
-	--drx-color-surface: #282A36;
-	--drx-color-overlay: #44475A;
-	--drx-color-highlight: #525568;
+body.theme-dark:not(.is-phone,.is-mobile) {
+	--drx-color-base: #191A21;
+	--drx-color-surface: #21222C;
+	--drx-color-overlay: #282A36;
+	--drx-color-highlight: #343746;
 
 	--drx-color-text: #F8F8F2;
 	--drx-color-subtext: #BABCC9;
 	--drx-color-deactivate: #707487;
+	--drx-color-comment: #6270A4;
 
 	--drx-color-accent: #BD93F9;
 	--drx-color-important: #D6ACFF;
-
-	--drx-color-comment: #6270A4;
 
 	--drx-color-red-1:#FF6E6E;
 	--drx-color-red-2: #FF5555;
@@ -216,45 +215,44 @@ body.theme-dark {
 
 /* ============================ LIGHT THEME ========================== */
 
-body.theme-light {
-	--drx-color-base: #dce0e8;
-	--drx-color-surface: #eff1f5;
-	--drx-color-overlay: #ccd0da;
-	--drx-color-highlight: #bcc0cc;
+body.theme-light:not(.is-phone,.is-mobile) {
+	--drx-color-base: #EDE9DA;
+	--drx-color-surface: #FFFBEB;
+	--drx-color-overlay: #DEDBCC;
+    --drx-color-highlight: #CECCC0;
 
-	--drx-color-text: #4C4F69;
-	--drx-color-subtext: #5C5F77;
-	--drx-color-deactivate: #ACB0BE;
+    --drx-color-text: #1F1F1F;
+    --drx-color-subtext: #6C664B;
+    --drx-color-deactivate: #BCBAB3;
+	--drx-color-comment: #6C664B;
 
-	--drx-color-comment: #6270A4;
+    --drx-color-accent: #CB3A2A;
+	--drx-color-important: #E1776B;
 
-	--drx-color-accent: #EA76CB;
-	--drx-color-important: #EE95D7;
-
-	--drx-color-red-1: #f2cdcd;
-	--drx-color-red-2: #d20f39;
-	--drx-color-red-3: #a30c2b;
-	--drx-color-orange-1: #f5d3ae;
-	--drx-color-orange-2: #e64553;
-	--drx-color-orange-3: #b33a42;
-	--drx-color-yellow-1: #f9e2af;
-	--drx-color-yellow-2: #df8e1d;
-	--drx-color-yellow-3: #b37417;
-	--drx-color-green-1: #d9e0d0;
-	--drx-color-green-2: #40a02b;
-	--drx-color-green-3: #2e7a20;
-	--drx-color-cyan-1: #cdd6f4;
-	--drx-color-cyan-2: #04a5e5;
-	--drx-color-cyan-3: #0378b3;
-	--drx-color-blue-1: #cddbf9;
-	--drx-color-blue-2: #1e66f5;
-	--drx-color-blue-3: #174db3;
-	--drx-color-purple-1: #e8def8;
-	--drx-color-purple-2: #8839ef;
-	--drx-color-purple-3: #662db3;
-	--drx-color-pink-1: #f5c2e7;
-	--drx-color-pink-2: #ea76cb;
-	--drx-color-pink-3: #b35a9d;
+	--drx-color-red-1: #BF185A;
+	--drx-color-red-2: #A3144D;
+	--drx-color-red-3: #000000;
+	--drx-color-orange-1: #000000;
+	--drx-color-orange-2: #D65D0E;
+	--drx-color-orange-3: #AF3A03;
+	--drx-color-yellow-1: #9E841A;
+	--drx-color-yellow-2: #846E15;
+	--drx-color-yellow-3: #000000;
+	--drx-color-green-1: #198D0C;
+	--drx-color-green-2: #14710A;
+	--drx-color-green-3: #000000;
+	--drx-color-cyan-1: #000000;
+	--drx-color-cyan-2: #036A96;
+	--drx-color-cyan-3: #000000;
+	--drx-color-blue-1: #047FB4;
+	--drx-color-blue-2: #036A96;
+	--drx-color-blue-3: #000000;
+	--drx-color-purple-1: #7862D0;
+	--drx-color-purple-2: #644AC9;
+	--drx-color-purple-3: #000000;
+	--drx-color-pink-1: #000000;
+	--drx-color-pink-2: #B16286;
+	--drx-color-pink-3: #8F3F71;
 
 	color: var(--drx-color-text);
 	
@@ -404,7 +402,10 @@ h1 {
 /* Styles the status bar at the bottom-right */
 .status-bar {
 	border-radius: var(--drx-border-radius) 0px 0px 0px;
-	border: none;
+	border-top: 3px solid;
+	border-left: 3px solid;
+	border-color: var(--drx-color-base);
+	background-color: var(--drx-color-base) !important;
 }
 
 /* Prevents layout issues when the writing panel is too small */
@@ -459,7 +460,7 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 .table-width-customized .markdown-rendered .markdown-preview-sizer>div:has(>table) {
 	overflow: auto;
 	width: 200rem !important;
-	margin-left: calc(200rem - 100%) / -2) !important;
+	margin-left: (calc(200rem - 100%) / -2) !important;
 }
 
 /* ============================= CALLOUTS ============================ */
@@ -475,7 +476,8 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 
 .theme-light .cm-callout {
 	border-radius: var(--drx-border-radius);
-	box-shadow: 0 0.25rem 0.5rem var(--drx-color-base);
+	box-shadow: 0 0.25rem 0.5rem #CECCC0B6;
+	border: solid 1px var(--drx-color-highlight);
 }
 
 .theme-light .callout-title {
@@ -484,12 +486,13 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout {
-	padding: 0px
+	padding: 0px;
 }
 
 .theme-light .callout-content {
 	background: var(--drx-color-base) !important;
 	padding: 1rem;
+	box-shadow: inset 0 -0.25rem 0.25rem #CECCC066;
 }
 
 .theme-light .cm-callout:hover {
@@ -515,19 +518,28 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout[data-callout="important"] {
-	background: #BD93F93F !important;
+	background: #A3144D4F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-pink-2); }
 }
 
 .theme-light .callout[data-callout="example"] {
-	background: #FF79C63F !important;
+	background: #A3144D4F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-pink-2); }
 }
 
 .theme-light .callout[data-callout="summary"] {
-	background: #8BE9FD3F !important;
+	background: #036A964F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-blue-2); }
+}
+
+.theme-light .callout[data-callout="tldr"] {
+	background: #036A964F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-blue-2); }
 }
 
 .theme-light .callout[data-callout="tip"] {
-	background: #8BE9FD3F !important;
+	background: #036A964F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-blue-2); }
 }
 
 .theme-light .callout[data-callout="bug"] {
@@ -543,7 +555,8 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout[data-callout="quote"] {
-	background: #54B3FF3F !important;
+	background: #644AC94F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-purple-2); }
 }
 
 .theme-light .callout[data-callout="success"] {
@@ -555,11 +568,16 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout[data-callout="warning"] {
-	background: #FFB86C3F !important;
+	background: #D65D0E4F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-orange-2); }
 }
 
 .callout[data-callout="example"] {
 	--bold-color: var(--drx-color-pink-2);
+}
+
+.callout[data-callout="tldr"] {
+	--bold-color: var(--drx-color-cyan-2);
 }
 
 .callout[data-callout="summary"] {
@@ -583,7 +601,7 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .callout[data-callout="quote"] {
-	--bold-color: var(--drx-color-green-2);
+	--bold-color: var(--drx-color-purple-2);
 }
 
 .callout[data-callout="success"] {
@@ -606,11 +624,6 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 		margin-left:-30px;
 	}
 
-	body.theme-light {
-		--color-base-10: #E9E9ED;
-		--color-base-20: #F4F4F6;
-	}
-
 	h2, h3, h4, h5, h6 {
 		page-break-after: avoid;
 	}
@@ -619,19 +632,16 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 		page-break-inside: avoid;
 	}
 
-	.callout {
+	.theme-light .callout {
 		page-break-inside: avoid;
-	}
-
-	.theme-light .cm-callout {
 		border-radius: 10px !important;
-		border: 2px solid !important;
-		border-color: #C7C8D1 !important;
-		box-shadow: 0 0 8px #DDDDE3 !important;
+		box-shadow: 0 0.25rem 0.5rem #CFCFCF66 !important;
+		border: solid 1px var(--drx-color-highlight) !important;
 	}
 
 	.theme-light .callout-content {
-		background: #F4F4F6 !important;
+		background: #FFFBEB !important;
+		box-shadow: inset 0 -0.25rem 0.25rem #CFCFCF66;
 	}
 }
 

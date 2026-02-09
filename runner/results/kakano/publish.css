@@ -1348,11 +1348,7 @@ body.theme-light {
     rgb(38, 102, 192),
     black 25%
   ) !important;
-  --tab-text-color-focused-active-current: color-mix(
-    in srgb,
-    rgb(38, 102, 192),
-    black 90%
-  ) !important;
+  --tab-text-color-focused-active-current: white !important;
   --tab-text-color-focused-highlighted: rgb(38, 102, 192) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
@@ -1513,6 +1509,7 @@ body.theme-light {
   --setting-items-padding: 0 !important;
   --setting-items-radius: 0 !important;
   --tag-weight: 400 !important;
+  --setting-group-heading-weight: 600 !important;
   --r-background-color: white !important;
   --r-heading-color: color-mix(
     in srgb,
@@ -1570,7 +1567,6 @@ body.theme-light {
   --r-heading1-text-shadow: none !important;
   --r-link-color-hover: rgb(166, 139, 249) !important;
   --r-main-color: color-mix(in srgb, rgb(38, 102, 192), black 90%) !important;
-  --setting-group-heading-weight: 600 !important;
   --setting-items-border-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -2040,7 +2036,7 @@ body.theme-light {
   --theme-color-tagBgHover: hsl(258, 90%, 68%, 0.1) !important;
   --theme-color-tagBgSidebar: hsl(258, 105.6%, 66%, 0.15) !important;
   --theme-color-tagBgSidebarHover: hsl(258, 107.36%, 75.9%, 0.15) !important;
-  --theme-color-tagHover: hsl(258, 89.76%, 68.31%) !important;
+  --theme-color-tagHover: rgb(144, 100, 247) !important;
   --theme-color-tagSidebar: rgb(43, 8, 125) !important;
   --theme-color-tagSidebarHover: rgb(49, 8, 145) !important;
   --theme-color-textMeta: rgb(38, 102, 192) !important;
@@ -2157,7 +2153,7 @@ body.theme-light {
   --theme-shadow-input:
     0 1px 2px hsl(215, 100.5%, 11%, 0.2),
     0 3.4px 6.7px hsl(215, 67%, 11%, 0.15),
-    0 15px 30px hsl(215, 50%, 11.25%, 0.05) !important;
+    0 15px 30px hsl(215, 50.25%, 11.25%, 0.05) !important;
   --theme-value-gradientContrast: 0.2 !important;
   --theme-value-headingScaleFactor: 1.2 !important;
   --theme-value-sidebarFontScalingFactor: 0.8 !important;
@@ -3517,6 +3513,7 @@ body.theme-dark {
   --setting-items-padding: 0 !important;
   --setting-items-radius: 0 !important;
   --tag-weight: 400 !important;
+  --setting-group-heading-weight: 600 !important;
   --r-background-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -3578,7 +3575,6 @@ body.theme-dark {
   --r-heading1-text-shadow: none !important;
   --r-link-color-hover: rgb(197, 182, 252) !important;
   --r-main-color: color-mix(in srgb, rgb(38, 102, 192), white 60%) !important;
-  --setting-group-heading-weight: 600 !important;
   --setting-items-border-color: color-mix(
     in srgb,
     rgb(38, 102, 192),

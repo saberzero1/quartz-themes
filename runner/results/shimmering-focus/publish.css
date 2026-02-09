@@ -282,7 +282,7 @@ body.theme-light {
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: hsl(23025%97%) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: hsl(37.5%99%) !important;
+  --bases-table-header-background: hsl(23025%92%) !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-table-header-color: hsl(23025%35%) !important;
   --bases-table-header-icon-display: flex !important;
@@ -291,7 +291,7 @@ body.theme-light {
     transparent 24px,
     black 24px
   ) !important;
-  --bases-table-header-weight: 400 !important;
+  --bases-table-header-weight: 600 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
@@ -636,7 +636,7 @@ body.theme-light {
   --link-color-hover: #dc388f !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
-  --link-decoration-thickness: auto !important;
+  --link-decoration-thickness: 1.2px !important;
   --link-external-color: #1396a0 !important;
   --link-external-color-hover: #dc388f !important;
   --link-external-decoration: underline !important;
@@ -1137,7 +1137,7 @@ body.theme-dark {
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: hsl(23015%14%) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: hsl(23015%12%) !important;
+  --bases-table-header-background: hsl(23015%18%) !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-table-header-color: hsl(23015%73%) !important;
   --bases-table-header-icon-display: flex !important;
@@ -1146,7 +1146,7 @@ body.theme-dark {
     transparent 24px,
     black 24px
   ) !important;
-  --bases-table-header-weight: 400 !important;
+  --bases-table-header-weight: 600 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
@@ -1491,7 +1491,7 @@ body.theme-dark {
   --link-color-hover: #ed5aa8 !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
-  --link-decoration-thickness: auto !important;
+  --link-decoration-thickness: 1.2px !important;
   --link-external-color: #18c1cd !important;
   --link-external-color-hover: #ed5aa8 !important;
   --link-external-decoration: underline !important;
@@ -1957,7 +1957,7 @@ body .markdown-rendered a.external-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: underline solid rgb(24, 193, 205);
+  text-decoration: underline 1.2px solid rgb(24, 193, 205);
   text-decoration-color: light-dark(rgb(19, 150, 160), rgb(24, 193, 205));
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2007,8 +2007,11 @@ body .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: underline 1.2px double rgb(111, 183, 78);
-  text-decoration-color: rgb(111, 183, 78);
+  text-decoration: underline 1.2px double rgba(24, 193, 205, 0.3);
+  text-decoration-color: light-dark(
+    rgba(19, 150, 160, 0.3),
+    rgba(24, 193, 205, 0.3)
+  );
   text-decoration-line: underline;
   text-decoration-style: double;
   user-select: text;

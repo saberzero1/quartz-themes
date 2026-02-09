@@ -1009,7 +1009,6 @@ body.theme-light {
   --mono0: white !important;
   --mono100: black !important;
   --top-left-padding-y: 0px !important;
-  --tab-switcher-menubar-background: #ffffff !important;
   --line-number-color: #a0aab8 !important;
   --cards-border-width: 1px !important;
   --adaptive-list-edit-offset: 0.5em !important;
@@ -1088,6 +1087,7 @@ body.theme-light {
   --progress-outline: #e3e8ef !important;
   --ribbon-animation-duration: 0.1s !important;
   --sp1: white !important;
+  --tab-switcher-menubar-background: #ffffff !important;
   --table-cell-padding: 4px 10px !important;
   --table-drag-padding: 16px !important;
   --table-drag-space: 16px !important;
@@ -1963,7 +1963,6 @@ body.theme-dark {
   --mono0: black !important;
   --mono100: white !important;
   --top-left-padding-y: 0px !important;
-  --tab-switcher-menubar-background: #1c1d1e !important;
   --line-number-color: hsl(220, -2%, 40%) !important;
   --cards-border-width: 1px !important;
   --adaptive-list-edit-offset: 0.5em !important;
@@ -2043,6 +2042,7 @@ body.theme-dark {
   --progress-outline: #2d3139 !important;
   --ribbon-animation-duration: 0.1s !important;
   --sp1: white !important;
+  --tab-switcher-menubar-background: #1c1d1e !important;
   --table-cell-padding: 4px 10px !important;
   --table-drag-padding: 16px !important;
   --table-drag-space: 16px !important;

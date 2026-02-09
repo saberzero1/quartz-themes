@@ -952,29 +952,28 @@ body.theme-light {
   --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
   --shadow-4: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
   --callout-note: #d97756;
-  --callout-color: #d97756;
   --background-primary-rgb: 238, 236, 226 !important;
   --callout-opacity: 0.12;
   --heading-opacity: 0.2 !important;
   --background-secondary-rgb: 230, 228, 218 !important;
   --text-normal-rgb: 61, 46, 26 !important;
   --setting-items-background: #e6e4da !important;
-  --folder-text-color: #d97756 !important;
   --primary-color: #d97756 !important;
-  --folder-color: rgba(217, 119, 86, 0.12) !important;
   --fast: 0.15s ease !important;
   --slow: 0.3s ease !important;
   --callout-cite: #573d84;
-  --highlight-bg: #e8c89a !important;
+  --highlight-bg: #d6b07b !important;
   --weight-bold: 700 !important;
   --weight-medium: 500 !important;
   --weight-normal: 400 !important;
   --weight-semibold: 600 !important;
   --scrollbar-thumb: rgba(217, 119, 86, 0.35) !important;
   --active-bg-opacity: 0.2 !important;
+  --border-heavy: 3px !important;
+  --border-thick: 2px !important;
+  --border-thin: 1px !important;
   --bounce: 0.25s cubic-bezier(0.34, 1.15, 0.64, 1) !important;
   --callout-cite-rgb: 87, 61, 132;
-  --callout-color-rgb: 217, 119, 86;
   --callout-danger: #c0392b;
   --callout-danger-rgb: 192, 57, 43;
   --callout-example-rgb: 119, 144, 136;
@@ -985,43 +984,63 @@ body.theme-light {
   --callout-video: #a67c52;
   --callout-video-rgb: 166, 124, 82;
   --callout-warning-rgb: 230, 126, 34;
+  --depth-1:
+    0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.03) !important;
+  --depth-2:
+    0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04),
+    0 8px 16px rgba(0, 0, 0, 0.02) !important;
+  --depth-3:
+    0 4px 8px rgba(0, 0, 0, 0.08), 0 8px 16px rgba(0, 0, 0, 0.06),
+    0 16px 32px rgba(0, 0, 0, 0.04) !important;
+  --depth-4:
+    0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.08),
+    0 32px 64px rgba(0, 0, 0, 0.06) !important;
+  --ease-bounce-lg: cubic-bezier(0.175, 0.885, 0.32, 1.8) !important;
+  --ease-bounce-md: cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
+  --ease-bounce-sm: cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
+  --ease-bounce-xl: cubic-bezier(0.175, 0.885, 0.32, 2.2) !important;
+  --ease-overshoot: cubic-bezier(0.68, -0.3, 0.32, 1.3) !important;
   --editor-max-width: 64ch !important;
   --emphasis-color: #ae4e36 !important;
   --emphasis-color-light: #d97756 !important;
-  --folder-1-color: #d97756 !important;
-  --folder-1-color-rgb: 217, 119, 86 !important;
-  --folder-2-color: #6a97bb !important;
-  --folder-2-color-rgb: 106, 151, 187 !important;
-  --folder-3-color: #8f8ca6 !important;
-  --folder-3-color-rgb: 143, 140, 166 !important;
-  --folder-4-color: #798d5d !important;
-  --folder-4-color-rgb: 121, 141, 93 !important;
-  --folder-5-color: #c36686 !important;
-  --folder-5-color-rgb: 195, 102, 134 !important;
-  --folder-6-color: #779088 !important;
-  --folder-6-color-rgb: 119, 144, 136 !important;
-  --folder-accent-opacity: 0.6 !important;
-  --folder-active-opacity: 0.8 !important;
   --folder-opacity: 0.15 !important;
   --folder-opacity-dark: 0.12 !important;
   --folder-text-lightness-dark: 70% !important;
   --folder-text-lightness-light: 25% !important;
   --folder-text-multiplier: 0.85 !important;
+  --glass-border: rgba(255, 255, 255, 0.2) !important;
   --heading-bg-opacity: 0.2 !important;
   --heading-opacity-dark: 0.18 !important;
+  --heading-pad-x: 0.5em !important;
+  --heading-pad-y: 0.2em !important;
   --heading-primary: #d97756 !important;
   --heading-primary-rgb: 217, 119, 86 !important;
   --heading-quaternary: #798d5d !important;
   --heading-quaternary-rgb: 121, 141, 93 !important;
   --heading-quinary: #c36686 !important;
   --heading-quinary-rgb: 195, 102, 134 !important;
-  --heading-secondary: #6a97bb !important;
-  --heading-secondary-rgb: 106, 151, 187 !important;
+  --heading-scale-1: 1.25 !important;
+  --heading-scale-2: 1.1 !important;
+  --heading-scale-3: 1 !important;
+  --heading-scale-4: 0.8 !important;
+  --heading-scale-5: 0.75 !important;
+  --heading-scale-6: 0.6 !important;
+  --heading-scale-x-1: 1.6 !important;
+  --heading-scale-x-2: 1.5 !important;
+  --heading-scale-x-3: 1.5 !important;
+  --heading-scale-x-4: 1.2 !important;
+  --heading-scale-x-5: 1.2 !important;
+  --heading-scale-x-6: 1.1 !important;
+  --heading-secondary: #b8692c !important;
+  --heading-secondary-rgb: 184, 105, 44 !important;
   --heading-senary: #779088 !important;
   --heading-senary-rgb: 119, 144, 136 !important;
-  --heading-tertiary: #8f8ca6 !important;
-  --heading-tertiary-rgb: 143, 140, 166 !important;
+  --heading-tertiary: #9a863c !important;
+  --heading-tertiary-rgb: 154, 134, 60 !important;
   --heading-text-multiplier: 0.85 !important;
+  --height-button: 34px !important;
+  --height-button-sm: 32px !important;
+  --height-input: 38px !important;
   --highlight-bg-dark: #c9a772 !important;
   --highlight-bg-dark-color: #2d1f0e !important;
   --line-normal: 1.6 !important;
@@ -1032,6 +1051,13 @@ body.theme-light {
   --link-opacity-unresolved: 0.05 !important;
   --link-opacity-unresolved-hover: 0.12 !important;
   --normal: 0.25s ease !important;
+  --opacity-active: 0.12 !important;
+  --opacity-border: 0.45 !important;
+  --opacity-divider: 0.15 !important;
+  --opacity-hover: 0.08 !important;
+  --opacity-light-overlay: 0.3 !important;
+  --opacity-overlay: 0.2 !important;
+  --opacity-subtle: 0.1 !important;
   --outline-item-spacing: 0.5em !important;
   --primary-color-dark: #ae4e36 !important;
   --primary-color-rgb: 217, 119, 86 !important;
@@ -1039,6 +1065,7 @@ body.theme-light {
   --r2: 10px !important;
   --r3: 12px !important;
   --r4: 16px !important;
+  --radius-pill: 100px !important;
   --reading-max-width: 64ch !important;
   --s1: 4px !important;
   --s2: 8px !important;
@@ -1060,6 +1087,18 @@ body.theme-light {
   --theme-text-multiplier: 0.85 !important;
   --transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
   --transition-ui: 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  --whimsy-fast: 0.25s !important;
+  --whimsy-lift: translateY(-2px) !important;
+  --whimsy-micro: 0.15s !important;
+  --whimsy-normal: 0.35s !important;
+  --whimsy-nudge: translateX(3px) !important;
+  --whimsy-scale-emphasis: 1.1 !important;
+  --whimsy-scale-normal: 1.05 !important;
+  --whimsy-scale-pop: 1.15 !important;
+  --whimsy-scale-subtle: 1.02 !important;
+  --whimsy-slow: 0.5s !important;
+  --whimsy-stagger-base: 0.03s !important;
+  --whimsy-tilt: rotate(2deg) !important;
   --highlight-bg-rgb: 232, 200, 154 !important;
 }
 
@@ -1858,16 +1897,13 @@ body.theme-dark {
   --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
   --shadow-4: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
   --callout-note: #f2a882;
-  --callout-color: #f2a882;
   --background-primary-rgb: 40, 37, 32 !important;
   --callout-opacity: 0.12;
   --heading-opacity: 0.2 !important;
   --background-secondary-rgb: 50, 48, 42 !important;
   --text-normal-rgb: 232, 220, 198 !important;
   --setting-items-background: #32302a !important;
-  --folder-text-color: #f2a882 !important;
   --primary-color: #f0916f !important;
-  --folder-color: rgba(242, 168, 130, 0.12) !important;
   --fast: 0.15s ease !important;
   --slow: 0.3s ease !important;
   --callout-cite: #a29bfe;
@@ -1878,9 +1914,11 @@ body.theme-dark {
   --weight-semibold: 600 !important;
   --scrollbar-thumb: rgba(240, 145, 111, 0.35) !important;
   --active-bg-opacity: 0.2 !important;
+  --border-heavy: 3px !important;
+  --border-thick: 2px !important;
+  --border-thin: 1px !important;
   --bounce: 0.25s cubic-bezier(0.34, 1.15, 0.64, 1) !important;
   --callout-cite-rgb: 162, 155, 254;
-  --callout-color-rgb: 242, 168, 130;
   --callout-danger: #e74c3c;
   --callout-danger-rgb: 231, 76, 60;
   --callout-example-rgb: 149, 179, 170;
@@ -1891,43 +1929,63 @@ body.theme-dark {
   --callout-video: #f2b399;
   --callout-video-rgb: 242, 179, 153;
   --callout-warning-rgb: 243, 156, 18;
+  --depth-1:
+    0 1px 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.15) !important;
+  --depth-2:
+    0 2px 4px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.2),
+    0 8px 16px rgba(0, 0, 0, 0.15) !important;
+  --depth-3:
+    0 4px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.25),
+    0 16px 32px rgba(0, 0, 0, 0.2) !important;
+  --depth-4:
+    0 8px 16px rgba(0, 0, 0, 0.35), 0 16px 32px rgba(0, 0, 0, 0.3),
+    0 32px 64px rgba(0, 0, 0, 0.25) !important;
+  --ease-bounce-lg: cubic-bezier(0.175, 0.885, 0.32, 1.8) !important;
+  --ease-bounce-md: cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
+  --ease-bounce-sm: cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
+  --ease-bounce-xl: cubic-bezier(0.175, 0.885, 0.32, 2.2) !important;
+  --ease-overshoot: cubic-bezier(0.68, -0.3, 0.32, 1.3) !important;
   --editor-max-width: 64ch !important;
   --emphasis-color: #e27a5a !important;
   --emphasis-color-light: #f2a882 !important;
-  --folder-1-color: #f2a882 !important;
-  --folder-1-color-rgb: 242, 168, 130 !important;
-  --folder-2-color: #8bb5d9 !important;
-  --folder-2-color-rgb: 139, 181, 217 !important;
-  --folder-3-color: #b5a8d4 !important;
-  --folder-3-color-rgb: 181, 168, 212 !important;
-  --folder-4-color: #a8c47a !important;
-  --folder-4-color-rgb: 168, 196, 122 !important;
-  --folder-5-color: #e08ba8 !important;
-  --folder-5-color-rgb: 224, 139, 168 !important;
-  --folder-6-color: #95b3aa !important;
-  --folder-6-color-rgb: 149, 179, 170 !important;
-  --folder-accent-opacity: 0.6 !important;
-  --folder-active-opacity: 0.8 !important;
   --folder-opacity: 0.15 !important;
   --folder-opacity-dark: 0.12 !important;
   --folder-text-lightness-dark: 70% !important;
   --folder-text-lightness-light: 25% !important;
   --folder-text-multiplier: 0.85 !important;
+  --glass-border: rgba(255, 255, 255, 0.2) !important;
   --heading-bg-opacity: 0.2 !important;
   --heading-opacity-dark: 0.18 !important;
+  --heading-pad-x: 0.5em !important;
+  --heading-pad-y: 0.2em !important;
   --heading-primary: #f2a882 !important;
   --heading-primary-rgb: 242, 168, 130 !important;
   --heading-quaternary: #a8c47a !important;
   --heading-quaternary-rgb: 168, 196, 122 !important;
-  --heading-quinary: #e08ba8 !important;
-  --heading-quinary-rgb: 224, 139, 168 !important;
-  --heading-secondary: #8bb5d9 !important;
-  --heading-secondary-rgb: 139, 181, 217 !important;
+  --heading-quinary: #c97a94 !important;
+  --heading-quinary-rgb: 201, 122, 148 !important;
+  --heading-scale-1: 1.25 !important;
+  --heading-scale-2: 1.1 !important;
+  --heading-scale-3: 1 !important;
+  --heading-scale-4: 0.8 !important;
+  --heading-scale-5: 0.75 !important;
+  --heading-scale-6: 0.6 !important;
+  --heading-scale-x-1: 1.6 !important;
+  --heading-scale-x-2: 1.5 !important;
+  --heading-scale-x-3: 1.5 !important;
+  --heading-scale-x-4: 1.2 !important;
+  --heading-scale-x-5: 1.2 !important;
+  --heading-scale-x-6: 1.1 !important;
+  --heading-secondary: #8ba891 !important;
+  --heading-secondary-rgb: 139, 168, 145 !important;
   --heading-senary: #95b3aa !important;
   --heading-senary-rgb: 149, 179, 170 !important;
   --heading-tertiary: #b5a8d4 !important;
   --heading-tertiary-rgb: 181, 168, 212 !important;
   --heading-text-multiplier: 0.85 !important;
+  --height-button: 34px !important;
+  --height-button-sm: 32px !important;
+  --height-input: 38px !important;
   --highlight-bg-dark: #5a4430 !important;
   --highlight-bg-dark-color: #5a4430 !important;
   --highlight-bg-light-color: #f2c088 !important;
@@ -1939,6 +1997,13 @@ body.theme-dark {
   --link-opacity-unresolved: 0.05 !important;
   --link-opacity-unresolved-hover: 0.12 !important;
   --normal: 0.25s ease !important;
+  --opacity-active: 0.12 !important;
+  --opacity-border: 0.45 !important;
+  --opacity-divider: 0.15 !important;
+  --opacity-hover: 0.08 !important;
+  --opacity-light-overlay: 0.3 !important;
+  --opacity-overlay: 0.2 !important;
+  --opacity-subtle: 0.1 !important;
   --outline-item-spacing: 0.5em !important;
   --primary-color-dark: #e27a5a !important;
   --primary-color-rgb: 240, 145, 111 !important;
@@ -1946,6 +2011,7 @@ body.theme-dark {
   --r2: 10px !important;
   --r3: 12px !important;
   --r4: 16px !important;
+  --radius-pill: 100px !important;
   --reading-max-width: 64ch !important;
   --s1: 4px !important;
   --s2: 8px !important;
@@ -1967,6 +2033,18 @@ body.theme-dark {
   --theme-text-multiplier: 0.85 !important;
   --transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
   --transition-ui: 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  --whimsy-fast: 0.25s !important;
+  --whimsy-lift: translateY(-2px) !important;
+  --whimsy-micro: 0.15s !important;
+  --whimsy-normal: 0.35s !important;
+  --whimsy-nudge: translateX(3px) !important;
+  --whimsy-scale-emphasis: 1.1 !important;
+  --whimsy-scale-normal: 1.05 !important;
+  --whimsy-scale-pop: 1.15 !important;
+  --whimsy-scale-subtle: 1.02 !important;
+  --whimsy-slow: 0.5s !important;
+  --whimsy-stagger-base: 0.03s !important;
+  --whimsy-tilt: rotate(2deg) !important;
 }
 
 body {
@@ -2204,7 +2282,7 @@ body i {
   user-select: text;
 }
 body .markdown-rendered mark {
-  background-color: light-dark(rgb(232, 200, 154), rgb(90, 68, 48));
+  background-color: light-dark(rgb(214, 176, 123), rgb(90, 68, 48));
   color: light-dark(rgb(45, 31, 14), rgb(242, 192, 136));
   cursor: text;
   filter: none;
@@ -2220,7 +2298,7 @@ body .markdown-rendered mark {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none solid rgb(242, 192, 136);
   text-decoration-color: light-dark(rgb(45, 31, 14), rgb(242, 192, 136));
   text-decoration-line: none;
@@ -2245,9 +2323,9 @@ body del {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: line-through 2px solid rgb(242, 168, 130);
-  text-decoration-color: light-dark(rgb(217, 119, 86), rgb(242, 168, 130));
-  text-decoration-line: line-through;
+  text-decoration: none solid rgb(242, 168, 130);
+  text-decoration-color: light-dark(rgb(61, 46, 26), rgb(242, 168, 130));
+  text-decoration-line: none;
   text-decoration-style: solid;
   user-select: text;
 }
@@ -2299,7 +2377,10 @@ body .markdown-rendered hr {
 }
 body div.multi-select-pill {
   align-items: center;
-  background-color: rgba(219, 120, 87, 0.1);
+  background-color: light-dark(
+    rgba(217, 119, 86, 0.15),
+    rgba(240, 145, 111, 0.18)
+  );
   display: flex;
   font-family:
     ui-sans-serif,
@@ -2316,14 +2397,14 @@ body div.multi-select-pill {
   font-weight: 400;
   margin-inline-start: 0px;
   border: 0px solid rgba(219, 120, 87, 0.15);
-  border-top-left-radius: 28px;
-  border-top-right-radius: 28px;
-  border-bottom-left-radius: 28px;
-  border-bottom-right-radius: 28px;
-  border-start-start-radius: 28px;
-  border-start-end-radius: 28px;
-  border-end-start-radius: 28px;
-  border-end-end-radius: 28px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-start-start-radius: 8px;
+  border-start-end-radius: 8px;
+  border-end-start-radius: 8px;
+  border-end-end-radius: 8px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
@@ -2513,9 +2594,8 @@ body .site-body-left-column input.search-bar {
     sans-serif;
 }
 body .search-results {
-  background-color: light-dark(rgb(238, 236, 226), rgb(50, 48, 42));
-  border: 1px solid
-    light-dark(rgba(217, 119, 86, 0.12), rgba(240, 145, 111, 0.2));
+  background-color: light-dark(rgba(238, 236, 226, 0.94), rgb(30, 30, 30));
+  border: 1px solid light-dark(rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.2));
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-bottom-left-radius: 16px;
@@ -2553,8 +2633,7 @@ body .search-results > * {
   user-select: text;
 }
 body div.search-results {
-  border: 1px solid
-    light-dark(rgba(217, 119, 86, 0.12), rgba(240, 145, 111, 0.2));
+  border: 1px solid light-dark(rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.2));
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-bottom-left-radius: 16px;
@@ -2610,8 +2689,8 @@ body .published-container .markdown-rendered h1 {
 }
 body .published-container .markdown-rendered h2 {
   color: light-dark(
-    color(srgb 0.306052 0.508587 0.670614),
-    color(srgb 0.387359 0.609178 0.799307)
+    color(srgb 0.613333 0.35 0.146667),
+    color(srgb 0.441905 0.581429 0.470772)
   );
   font-family:
     ui-sans-serif,
@@ -2629,7 +2708,7 @@ body .published-container .markdown-rendered h2 {
 }
 body .published-container .markdown-rendered h3 {
   color: light-dark(
-    color(srgb 0.461961 0.447549 0.572451),
+    color(srgb 0.513333 0.446667 0.2),
     color(srgb 0.582564 0.509231 0.757436)
   );
   font-family:
@@ -2668,7 +2747,7 @@ body .published-container .markdown-rendered h4 {
 body .published-container .markdown-rendered h5 {
   color: light-dark(
     color(srgb 0.711127 0.278873 0.427606),
-    color(srgb 0.833401 0.376599 0.532449)
+    color(srgb 0.733369 0.343298 0.471676)
   );
   font-family:
     ui-sans-serif,
@@ -3066,7 +3145,7 @@ body .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body .markdown-rendered img {
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
+  box-shadow: none;
   filter: none;
   max-width: 100%;
   object-fit: fill;
@@ -3490,7 +3569,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(106, 151, 187), rgb(139, 181, 217));
+  color: light-dark(rgb(184, 105, 44), rgb(139, 168, 145));
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -3505,7 +3584,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(139, 181, 217);
+  text-decoration: none solid rgb(139, 168, 145);
 }
 body
   .nav-view-outer
@@ -3514,7 +3593,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(106, 151, 187), rgb(139, 181, 217));
+  color: light-dark(rgb(184, 105, 44), rgb(139, 168, 145));
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -3529,7 +3608,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(139, 181, 217);
+  text-decoration: none solid rgb(139, 168, 145);
 }
 body figure[data-rehype-pretty-code-figure] {
   background-color: light-dark(rgb(223, 219, 209), rgb(58, 56, 50));

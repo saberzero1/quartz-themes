@@ -827,18 +827,18 @@
   --table-header-background-hover: rgb(238, 236, 244) !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.2) !important;
   --nn-theme-file-tag-color: #222222 !important;
-  --nn-theme-list-bg: transparent !important;
   --nn-theme-mobile-toolbar-button-active-icon-color: rgb(
     138,
     92,
     245
   ) !important;
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
-  --nn-theme-nav-bg: transparent !important;
+  --nn-theme-nav-bg: #ffffff !important;
   --nn-theme-navitem-selected-bg: rgb(0, 0, 0) !important;
   --setting-items-padding: 0 0 20px 0 !important;
   --setting-items-radius: 0 !important;
   --nn-theme-file-selected-bg: rgb(0, 0, 0) !important;
+  --bases-embed-radius: 7px !important;
   --i-0: rgb(249, 249, 251) !important;
   --i-1: rgb(247, 245, 249) !important;
   --i-2: rgb(238, 236, 244) !important;
@@ -916,9 +916,9 @@
   --i-scrollbar-thumb-size: 4px !important;
   --i-scrollbar-track-size: 9px !important;
   --i-spacing-below-headings: 0.3rem !important;
+  --i-translucent-floating-nav-opacity: 92% !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
-  --nn-theme-quick-actions-bg: #ffffff !important;
   --setting-items-background: #ffffff !important;
   --i-lt-border-l: 14% !important;
   --i-lt-l-multiplier: 1 !important;
@@ -1069,7 +1069,7 @@
   --checklist-done-color: rgb(217, 217, 217) !important;
   --checklist-done-decoration: none !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: transparent !important;
+  --code-background: rgb(34, 31, 40) !important;
   --code-border-color: rgb(0, 0, 0) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgb(0, 0, 0) !important;
@@ -1746,18 +1746,18 @@
   --table-header-background-hover: rgb(39, 36, 46) !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.25) !important;
   --nn-theme-file-tag-color: rgb(217, 217, 217) !important;
-  --nn-theme-list-bg: transparent !important;
   --nn-theme-mobile-toolbar-button-active-icon-color: rgb(
     138,
     92,
     245
   ) !important;
   --nn-theme-mobile-toolbar-button-icon-color: rgb(138, 92, 245) !important;
-  --nn-theme-nav-bg: transparent !important;
+  --nn-theme-nav-bg: rgb(29, 27, 34) !important;
   --nn-theme-navitem-selected-bg: rgb(0, 0, 0) !important;
   --setting-items-padding: 0 0 20px 0 !important;
   --setting-items-radius: 0 !important;
   --nn-theme-file-selected-bg: rgb(0, 0, 0) !important;
+  --bases-embed-radius: 7px !important;
   --i-0: rgb(32, 29, 37) !important;
   --i-1: rgb(34, 31, 40) !important;
   --i-2: rgb(39, 36, 46) !important;
@@ -1841,9 +1841,9 @@
   --i-scrollbar-thumb-size: 4px !important;
   --i-scrollbar-track-size: 9px !important;
   --i-spacing-below-headings: 0.3rem !important;
+  --i-translucent-floating-nav-opacity: 92% !important;
   --nn-theme-file-tag-border-radius: 4px !important;
   --nn-theme-navitem-chevron-color: rgb(138, 92, 245) !important;
-  --nn-theme-quick-actions-bg: rgb(29, 27, 34) !important;
   --setting-items-background: rgb(29, 27, 34) !important;
 
   --quartz-icon-color: currentColor;
@@ -2370,8 +2370,8 @@ body {
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: light-dark(
-      rgba(162, 150, 192, 0.2),
-      rgba(70, 65, 83, 0.55)
+      rgba(162, 150, 192, 0.18),
+      rgba(70, 65, 83, 0.49)
     );
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2536,7 +2536,7 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(250, 250, 250), rgb(34, 31, 40));
     border: 1px solid light-dark(rgb(216, 210, 228), rgb(56, 52, 66));
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -2553,7 +2553,7 @@ body {
   }
 
   pre:has(> code) {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(250, 250, 250), rgb(34, 31, 40));
     border: 1px solid light-dark(rgb(216, 210, 228), rgb(56, 52, 66));
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -2781,8 +2781,8 @@ body {
     color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-weight: 400;
     background-color: light-dark(
-      rgba(162, 150, 192, 0.2),
-      rgba(70, 65, 83, 0.55)
+      rgba(162, 150, 192, 0.18),
+      rgba(70, 65, 83, 0.49)
     );
   }
 
@@ -3616,7 +3616,7 @@ body {
   }
 
   kbd {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(rgba(0, 0, 0, 0), rgb(34, 31, 40));
     box-shadow: none;
     color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-family:
@@ -3850,8 +3850,8 @@ body {
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: light-dark(
-      rgba(162, 150, 192, 0.2),
-      rgba(70, 65, 83, 0.55)
+      rgba(162, 150, 192, 0.18),
+      rgba(70, 65, 83, 0.49)
     );
     border: 0px light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     border-top-left-radius: 4px;
@@ -3913,7 +3913,7 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(250, 250, 250), rgb(34, 31, 40));
     border: 1px solid light-dark(rgb(216, 210, 228), rgb(56, 52, 66));
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -3926,7 +3926,7 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-    background-color: light-dark(rgb(250, 250, 250), rgb(36, 36, 36));
+    background-color: light-dark(rgb(250, 250, 250), rgb(34, 31, 40));
     color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
     font-family: monospace;
     border: 1px solid light-dark(rgb(216, 210, 228), rgb(56, 52, 66));

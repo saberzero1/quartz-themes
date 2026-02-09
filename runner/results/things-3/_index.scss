@@ -797,20 +797,20 @@
   --color-grey: #818893 !important;
   --selected-item: #c3d8ff !important;
   --div-color: rgba(210, 210, 210, 0.5) !important;
-  --text-extreme: #000000 !important;
-  --color-red-trans: rgba(255, 83, 131, 0.3) !important;
   --dnc-stroke: 1.95px !important;
   --element-shadow: 0 0 20px rgba(0, 0, 0, 0.1) !important;
+  --properties-background: #f5f6f8 !important;
+  --statusbar-glass-bg: color-mix(in srgb, #ffffff 35%, transparent) !important;
+  --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+  --text-extreme: #000000 !important;
+  --color-red-trans: rgba(255, 83, 131, 0.3) !important;
   --metadata-property-box-shadow: none !important;
   --mobile-glass-border: color-mix(
     in srgb,
     rgb(255, 255, 255) 80%,
     transparent
   ) !important;
-  --properties-background: #f5f6f8 !important;
-  --statusbar-glass-bg: color-mix(in srgb, #ffffff 35%, transparent) !important;
   --statusbar-glass-border: rgba(250, 250, 250, 0.5) !important;
-  --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -1603,20 +1603,20 @@
   --color-grey: #818893 !important;
   --selected-item: #286bbd !important;
   --div-color: rgba(70, 70, 70, 0.9) !important;
-  --text-extreme: #ffffff !important;
-  --color-red-trans: rgba(255, 83, 131, 0.3) !important;
   --dnc-stroke: 1.95px !important;
   --element-shadow: 0 0 20px rgba(0, 0, 0, 0.1) !important;
+  --properties-background: rgb(35, 35, 35) !important;
+  --statusbar-glass-bg: color-mix(in srgb, #262626 35%, transparent) !important;
+  --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+  --text-extreme: #ffffff !important;
+  --color-red-trans: rgba(255, 83, 131, 0.3) !important;
   --metadata-property-box-shadow: none !important;
   --mobile-glass-border: color-mix(
     in srgb,
     rgb(255, 255, 255) 15%,
     transparent
   ) !important;
-  --properties-background: rgb(35, 35, 35) !important;
-  --statusbar-glass-bg: color-mix(in srgb, #262626 35%, transparent) !important;
   --statusbar-glass-border: rgba(100, 100, 100, 0.1) !important;
-  --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
 
   --quartz-icon-color: currentColor;
 }
