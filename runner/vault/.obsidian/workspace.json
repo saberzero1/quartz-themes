@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "general.md",
+                "file": "theme-checkboxes/upper.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "general"
+              "title": "upper"
             }
           }
         ]
@@ -148,27 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "general.md",
+                "file": "theme-checkboxes/upper.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of general"
-            }
-          },
-          {
-            "id": "13e38607cc7b4a79",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "Outline of upper"
             }
           }
         ],
@@ -208,19 +194,22 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "specimen.md",
-    "general.md",
-    "callouts.md",
+    "theme-checkboxes/lower.md",
+    "theme-checkboxes/special.md",
+    "theme-embeds/tooltips.md",
+    "theme-embeds/note-embeds.md",
+    "theme-embeds/frontmatter.md",
+    "backlinks.md",
     "embeds.md",
     "media.md",
-    "integrations.md",
-    "headings.md",
-    "backlinks.md",
     "tables.md",
-    "theme-checkboxes/special.md",
-    "theme-extras/its-theme/callouts/statblocks.md",
+    "integrations.md",
+    "callouts.md",
+    "headings.md",
+    "general.md",
     "theme-checkboxes/upper.md",
-    "theme-checkboxes/lower.md",
+    "specimen.md",
+    "theme-extras/its-theme/callouts/statblocks.md",
     "theme-checkboxes",
     "theme-extras/its-theme/checkboxes.md",
     "theme-extras/its-theme/callouts/infoboxes.md",
@@ -239,9 +228,6 @@
     "per-theme/zen.md",
     "per-theme/zario.md",
     "per-theme/yue.md",
-    "per-theme/xscriptor.md",
-    "per-theme/wyrd.md",
-    "per-theme/wy-console.md",
     "per-theme",
     "folder/collapsed",
     "folder/nested"
