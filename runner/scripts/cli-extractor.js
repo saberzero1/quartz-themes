@@ -329,6 +329,14 @@ function parseThemeName(themeName) {
   return { base: folderName, variation: "_default" };
 }
 
+function getResultDirName(themeName) {
+  const { base, variation } = parseThemeName(themeName);
+  if (variation === "_default") {
+    return sanitize(base);
+  }
+  return `${sanitize(base)}.${variation}`;
+}
+
 function getThemeHash(themeName, manifest = {}) {
   const folderName = resolveThemeFolderName(themeName);
   const themeDir = join(VAULT_PATH, ".obsidian/themes", folderName);
@@ -386,7 +394,7 @@ function shouldSkipTheme(themeName, manifest, hashCache) {
 
   const cachedHash = getCachedHash(themeName, hashCache);
   if (cachedHash === currentHash) {
-    const resultDir = join(RESULTS_DIR, sanitize(themeName));
+    const resultDir = join(RESULTS_DIR, getResultDirName(themeName));
     if (existsSync(resultDir)) {
       const hasResults =
         existsSync(join(resultDir, "dark.json")) ||
@@ -716,7 +724,7 @@ function sortObjectDeep(obj) {
 }
 
 function saveResults(themeName, results) {
-  const themeDir = join(RESULTS_DIR, sanitize(themeName));
+  const themeDir = join(RESULTS_DIR, getResultDirName(themeName));
   mkdirSync(themeDir, { recursive: true });
 
   if (results.dark && Object.keys(results.dark).length > 0) {
@@ -746,6 +754,26 @@ function getInstalledThemes() {
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name)
     .sort((a, b) => a.localeCompare(b));
+}
+
+function getAllExtractableThemes() {
+  const installedThemes = getInstalledThemes();
+  const allThemes = [...installedThemes];
+
+  for (const themeKey of Object.keys(themes)) {
+    if (themeKey.includes(".")) {
+      const baseName = themeKey.split(".")[0];
+      const resolvedFolder = resolveThemeFolderName(baseName);
+      const isInstalled = installedThemes.some(
+        (t) => t.toLowerCase() === resolvedFolder.toLowerCase(),
+      );
+      if (isInstalled) {
+        allThemes.push(themeKey);
+      }
+    }
+  }
+
+  return allThemes.sort((a, b) => a.localeCompare(b));
 }
 
 async function extractSingleTheme(cli, themeName, hashCache, baseline) {
@@ -810,9 +838,9 @@ async function main() {
   const baseline = await extractBaseline(cli, selectors);
 
   if (extractAll) {
-    const installedThemes = getInstalledThemes();
+    const allThemes = getAllExtractableThemes();
     console.log(
-      `\nExtracting all ${installedThemes.length} installed themes...\n`,
+      `\nExtracting ${allThemes.length} themes (including variations)...\n`,
     );
 
     let processed = 0;
@@ -821,9 +849,9 @@ async function main() {
     let totalTime = 0;
     const startTime = Date.now();
 
-    for (let i = 0; i < installedThemes.length; i++) {
-      const themeName = installedThemes[i];
-      console.log(`[${i + 1}/${installedThemes.length}] ${themeName}`);
+    for (let i = 0; i < allThemes.length; i++) {
+      const themeName = allThemes[i];
+      console.log(`[${i + 1}/${allThemes.length}] ${themeName}`);
 
       const result = await extractSingleTheme(
         cli,
