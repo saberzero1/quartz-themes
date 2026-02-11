@@ -68,6 +68,14 @@ cli-extract-all-force:
 cli-clear-cache:
   rm -f ./runner/results/.cli-theme-hashes.json
 
+[group('cli-extract'), doc('Force re-extract baseline (default Obsidian theme)')]
+cli-extract-baseline:
+  FORCE_BASELINE=true node ./runner/scripts/cli-extractor.js "default"
+
+[group('cli-extract'), doc('Clear baseline cache')]
+cli-clear-baseline:
+  rm -rf ./runner/results/_baseline
+
 [group('database')]
 ingest:
   node ./runner/scripts/ingest.js

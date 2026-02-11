@@ -1,8 +1,8 @@
 /**
- * CLI-based CSS Extractor for Quartz Themes - Proof of Concept
+ * CLI-based CSS Extractor for Quartz Themes
  *
  * Uses Obsidian CLI (v1.12+) instead of WebdriverIO for style extraction.
- * Strategy: Batch extraction - all selectors in one eval call per file.
+ * Strategy: Extract ALL computed styles, deduplicate against default Obsidian baseline.
  */
 
 import { execSync } from "child_process";
@@ -22,12 +22,14 @@ import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mj
 
 const VAULT_PATH = resolve("./runner/vault");
 const RESULTS_DIR = resolve("./runner/results");
+const BASELINE_DIR = join(RESULTS_DIR, "_baseline");
 const TEMP_RESULT_FILE = join(VAULT_PATH, ".cli-extract-result.json");
 const TEMP_SCRIPT_FILE = join(VAULT_PATH, ".cli-extract-script.js");
 const CLI_TIMEOUT = 180000;
 
 const HASH_CACHE_FILE = join(RESULTS_DIR, ".cli-theme-hashes.json");
 const FORCE_EXTRACTION = process.env.FORCE_EXTRACTION === "true";
+const FORCE_BASELINE = process.env.FORCE_BASELINE === "true";
 
 const APPEARANCE_FILE = join(VAULT_PATH, ".obsidian/appearance.json");
 const STYLE_SETTINGS_FILE = join(
@@ -58,43 +60,76 @@ const EXTRACTION_FILES = [
   "theme-checkboxes/upper.md",
 ];
 
-const KNOWN_CSS_VARS = [
-  "--background-primary",
-  "--background-primary-alt",
-  "--background-secondary",
-  "--background-secondary-alt",
-  "--background-modifier-border",
-  "--background-modifier-form-field",
-  "--background-modifier-error",
-  "--background-modifier-success",
-  "--text-normal",
-  "--text-muted",
-  "--text-faint",
-  "--text-accent",
-  "--text-accent-hover",
-  "--text-on-accent",
-  "--interactive-normal",
-  "--interactive-hover",
-  "--interactive-accent",
-  "--interactive-accent-hover",
-  "--link-color",
-  "--link-color-hover",
-  "--link-external-color",
-  "--link-unresolved-color",
-  "--tag-color",
-  "--tag-background",
-  "--inline-code-color",
-  "--code-background",
-  "--h1-color",
-  "--h2-color",
-  "--h3-color",
-  "--h4-color",
-  "--h5-color",
-  "--h6-color",
-  "--bold-color",
-  "--italic-color",
-  "--highlight-color",
-  "--callout-default-color",
+const STYLE_PROPERTIES = [
+  "accent-color",
+  "background",
+  "background-color",
+  "background-image",
+  "border",
+  "border-bottom",
+  "border-bottom-color",
+  "border-bottom-left-radius",
+  "border-bottom-right-radius",
+  "border-bottom-style",
+  "border-bottom-width",
+  "border-color",
+  "border-left",
+  "border-left-color",
+  "border-left-style",
+  "border-left-width",
+  "border-radius",
+  "border-right",
+  "border-right-color",
+  "border-right-style",
+  "border-right-width",
+  "border-style",
+  "border-top",
+  "border-top-color",
+  "border-top-left-radius",
+  "border-top-right-radius",
+  "border-top-style",
+  "border-top-width",
+  "border-width",
+  "box-shadow",
+  "caret-color",
+  "color",
+  "column-rule-color",
+  "fill",
+  "filter",
+  "font-family",
+  "font-size",
+  "font-style",
+  "font-weight",
+  "gap",
+  "letter-spacing",
+  "line-height",
+  "list-style-type",
+  "margin",
+  "margin-bottom",
+  "margin-left",
+  "margin-right",
+  "margin-top",
+  "opacity",
+  "outline",
+  "outline-color",
+  "outline-offset",
+  "outline-style",
+  "outline-width",
+  "padding",
+  "padding-bottom",
+  "padding-left",
+  "padding-right",
+  "padding-top",
+  "stroke",
+  "text-align",
+  "text-decoration",
+  "text-decoration-color",
+  "text-decoration-line",
+  "text-decoration-style",
+  "text-decoration-thickness",
+  "text-shadow",
+  "text-transform",
+  "white-space",
 ];
 
 class ObsidianCLI {
@@ -243,16 +278,6 @@ class ObsidianCLI {
   }
 }
 
-function buildTargets() {
-  return config
-    .filter((c) => c.obsidianSelector)
-    .map((c) => ({
-      selector: c.obsidianSelector,
-      pseudoElement: c.pseudoElement || "",
-      properties: c.properties || [],
-    }));
-}
-
 function getThemeConfig(themeName) {
   if (themes[themeName]) {
     return themes[themeName];
@@ -293,6 +318,17 @@ function resolveThemeFolderName(themeName) {
   return match || themeName;
 }
 
+function parseThemeName(themeName) {
+  const folderName = resolveThemeFolderName(themeName);
+
+  if (themeName.includes(".")) {
+    const variation = themeName.split(".").slice(1).join(".");
+    return { base: folderName, variation };
+  }
+
+  return { base: folderName, variation: "_default" };
+}
+
 function getThemeHash(themeName, manifest = {}) {
   const folderName = resolveThemeFolderName(themeName);
   const themeDir = join(VAULT_PATH, ".obsidian/themes", folderName);
@@ -325,13 +361,21 @@ function loadHashCache() {
 
 function saveHashCache(cache) {
   mkdirSync(RESULTS_DIR, { recursive: true });
-  const sortedCache = Object.keys(cache)
-    .sort((a, b) => a.localeCompare(b))
-    .reduce((obj, key) => {
-      obj[key] = cache[key];
-      return obj;
-    }, {});
-  writeFileSync(HASH_CACHE_FILE, JSON.stringify(sortedCache, null, 2));
+  const sorted = sortObjectDeep(cache);
+  writeFileSync(HASH_CACHE_FILE, JSON.stringify(sorted, null, 2));
+}
+
+function getCachedHash(themeName, hashCache) {
+  const { base, variation } = parseThemeName(themeName);
+  return hashCache[base]?.[variation] || null;
+}
+
+function setCachedHash(themeName, hash, hashCache) {
+  const { base, variation } = parseThemeName(themeName);
+  if (!hashCache[base]) {
+    hashCache[base] = {};
+  }
+  hashCache[base][variation] = hash;
 }
 
 function shouldSkipTheme(themeName, manifest, hashCache) {
@@ -340,13 +384,13 @@ function shouldSkipTheme(themeName, manifest, hashCache) {
   const currentHash = getThemeHash(themeName, manifest);
   if (!currentHash) return false;
 
-  const cachedHash = hashCache[sanitize(themeName)];
+  const cachedHash = getCachedHash(themeName, hashCache);
   if (cachedHash === currentHash) {
     const resultDir = join(RESULTS_DIR, sanitize(themeName));
     if (existsSync(resultDir)) {
       const hasResults =
-        existsSync(join(resultDir, "cli-dark.json")) ||
-        existsSync(join(resultDir, "cli-light.json"));
+        existsSync(join(resultDir, "dark.json")) ||
+        existsSync(join(resultDir, "light.json"));
       if (hasResults) {
         return true;
       }
@@ -355,41 +399,52 @@ function shouldSkipTheme(themeName, manifest, hashCache) {
   return false;
 }
 
-function generateBatchExtractionScript(targets) {
+function generateFullExtractionScript(selectors) {
   return `
 (function() {
-  const targets = ${JSON.stringify(targets)};
-  const cssVars = ${JSON.stringify(KNOWN_CSS_VARS)};
+  const selectors = ${JSON.stringify(selectors)};
+  const styleProps = ${JSON.stringify(STYLE_PROPERTIES)};
   const results = {};
 
-  const bodyStyle = window.getComputedStyle(document.body);
-  const bodyVars = {};
-  for (const v of cssVars) {
-    const val = bodyStyle.getPropertyValue(v);
-    if (val && val.trim()) bodyVars[v] = val.trim();
-  }
-  bodyVars["background-color"] = bodyStyle.getPropertyValue("background-color").trim();
-  bodyVars["color"] = bodyStyle.getPropertyValue("color").trim();
-  if (Object.keys(bodyVars).length > 0) {
-    results["body"] = bodyVars;
-  }
-
-  for (const target of targets) {
-    const el = document.querySelector(target.selector);
-    if (!el) continue;
-
-    const style = window.getComputedStyle(el, target.pseudoElement || null);
-    const extracted = {};
-
-    for (const prop of target.properties) {
-      const val = style.getPropertyValue(prop);
-      if (val && val.trim()) {
-        extracted[prop] = val.trim();
+  function getAllCssVars(style) {
+    const vars = {};
+    for (let i = 0; i < style.length; i++) {
+      const prop = style[i];
+      if (prop.startsWith("--")) {
+        const val = style.getPropertyValue(prop);
+        if (val && val.trim()) vars[prop] = val.trim();
       }
     }
+    return vars;
+  }
 
-    if (Object.keys(extracted).length > 0) {
-      results[target.selector] = { ...results[target.selector], ...extracted };
+  function getStandardProps(style) {
+    const props = {};
+    for (const prop of styleProps) {
+      const val = style.getPropertyValue(prop);
+      if (val && val.trim() && val !== "none" && val !== "normal" && val !== "auto") {
+        props[prop] = val.trim();
+      }
+    }
+    return props;
+  }
+
+  const bodyStyle = window.getComputedStyle(document.body);
+  results["body"] = { ...getAllCssVars(bodyStyle), ...getStandardProps(bodyStyle) };
+
+  for (const selector of selectors) {
+    try {
+      const el = document.querySelector(selector);
+      if (!el) continue;
+
+      const style = window.getComputedStyle(el);
+      const extracted = { ...getAllCssVars(style), ...getStandardProps(style) };
+
+      if (Object.keys(extracted).length > 0) {
+        results[selector] = { ...results[selector], ...extracted };
+      }
+    } catch (e) {
+      // Invalid selector, skip
     }
   }
 
@@ -403,8 +458,16 @@ function generateBatchExtractionScript(targets) {
 `;
 }
 
-async function extractBatch(cli, targets) {
-  const script = generateBatchExtractionScript(targets);
+function buildSelectors() {
+  return [
+    ...new Set(
+      config.filter((c) => c.obsidianSelector).map((c) => c.obsidianSelector),
+    ),
+  ];
+}
+
+async function extractFull(cli, selectors) {
+  const script = generateFullExtractionScript(selectors);
   writeFileSync(TEMP_SCRIPT_FILE, script);
 
   try {
@@ -424,6 +487,46 @@ async function extractBatch(cli, targets) {
     if (existsSync(TEMP_SCRIPT_FILE)) unlinkSync(TEMP_SCRIPT_FILE);
     if (existsSync(TEMP_RESULT_FILE)) unlinkSync(TEMP_RESULT_FILE);
   }
+}
+
+function loadBaseline(mode) {
+  const baselineFile = join(BASELINE_DIR, `${mode}.json`);
+  if (existsSync(baselineFile)) {
+    return JSON.parse(readFileSync(baselineFile, "utf-8"));
+  }
+  return null;
+}
+
+function saveBaseline(mode, data) {
+  mkdirSync(BASELINE_DIR, { recursive: true });
+  const sorted = sortObjectDeep(data);
+  writeFileSync(
+    join(BASELINE_DIR, `${mode}.json`),
+    JSON.stringify(sorted, null, 2),
+  );
+}
+
+function deduplicateAgainstBaseline(themeData, baseline) {
+  if (!baseline) return themeData;
+
+  const result = {};
+
+  for (const [selector, styles] of Object.entries(themeData)) {
+    const baselineStyles = baseline[selector] || {};
+    const uniqueStyles = {};
+
+    for (const [prop, value] of Object.entries(styles)) {
+      if (baselineStyles[prop] !== value) {
+        uniqueStyles[prop] = value;
+      }
+    }
+
+    if (Object.keys(uniqueStyles).length > 0) {
+      result[selector] = uniqueStyles;
+    }
+  }
+
+  return result;
 }
 
 function resetVaultConfig() {
@@ -472,7 +575,72 @@ async function expandFileExplorer(cli) {
   `);
 }
 
-async function extractThemeStyles(cli, themeName, manifest = {}) {
+async function extractModeStyles(cli, selectors) {
+  const modeResults = {};
+
+  for (const file of EXTRACTION_FILES) {
+    const fileStart = Date.now();
+    await cli.openFile(file);
+    await cli.sleep(300);
+
+    if (file === "theme-embeds/tooltips.md") {
+      await cli.hoverOverLink();
+    }
+
+    const fileResults = await extractFull(cli, selectors);
+    const count = Object.keys(fileResults).length;
+
+    for (const [selector, styles] of Object.entries(fileResults)) {
+      modeResults[selector] = { ...modeResults[selector], ...styles };
+    }
+
+    const fileTime = ((Date.now() - fileStart) / 1000).toFixed(1);
+    console.log(`    ${file}: ${count} selectors (${fileTime}s)`);
+  }
+
+  return modeResults;
+}
+
+async function extractBaseline(cli, selectors) {
+  console.log("\nExtracting baseline (default Obsidian theme)...");
+
+  const darkBaseline = loadBaseline("dark");
+  const lightBaseline = loadBaseline("light");
+
+  if (darkBaseline && lightBaseline && !FORCE_BASELINE) {
+    console.log("  Using cached baseline");
+    return { dark: darkBaseline, light: lightBaseline };
+  }
+
+  const results = { dark: null, light: null };
+
+  for (const mode of ["dark", "light"]) {
+    console.log(`  ${mode} mode...`);
+
+    configureVaultForTheme("", mode, [], {});
+    await cli.reload();
+    await cli.sleep(1000);
+
+    await ensurePluginsEnabled(cli);
+
+    try {
+      await cli.loadWorkspace("default");
+    } catch {}
+
+    await expandFileExplorer(cli);
+
+    results[mode] = await extractModeStyles(cli, selectors);
+    saveBaseline(mode, results[mode]);
+    console.log(
+      `  Baseline ${mode}: ${Object.keys(results[mode]).length} selectors saved`,
+    );
+  }
+
+  resetVaultConfig();
+  return results;
+}
+
+async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
   const folderName = resolveThemeFolderName(themeName);
   const isVariation = folderName !== themeName;
 
@@ -493,7 +661,7 @@ async function extractThemeStyles(cli, themeName, manifest = {}) {
   );
 
   const results = { dark: null, light: null };
-  const targets = buildTargets();
+  const selectors = buildSelectors();
 
   const modesToExtract = [];
   if (supportsDark) modesToExtract.push("dark");
@@ -510,35 +678,19 @@ async function extractThemeStyles(cli, themeName, manifest = {}) {
 
     try {
       await cli.loadWorkspace("default");
-    } catch {
-      // Workspace might not exist
-    }
+    } catch {}
 
     await expandFileExplorer(cli);
 
-    const modeResults = {};
+    const rawResults = await extractModeStyles(cli, selectors);
+    const modeBaseline = baseline ? baseline[mode] : null;
+    results[mode] = deduplicateAgainstBaseline(rawResults, modeBaseline);
 
-    for (const file of EXTRACTION_FILES) {
-      const fileStart = Date.now();
-      await cli.openFile(file);
-      await cli.sleep(300);
-
-      if (file === "theme-embeds/tooltips.md") {
-        await cli.hoverOverLink();
-      }
-
-      const fileResults = await extractBatch(cli, targets);
-      const count = Object.keys(fileResults).length;
-
-      for (const [selector, styles] of Object.entries(fileResults)) {
-        modeResults[selector] = { ...modeResults[selector], ...styles };
-      }
-
-      const fileTime = ((Date.now() - fileStart) / 1000).toFixed(1);
-      console.log(`    ${file}: ${count} selectors (${fileTime}s)`);
-    }
-
-    results[mode] = modeResults;
+    const rawCount = Object.keys(rawResults).length;
+    const dedupedCount = Object.keys(results[mode]).length;
+    console.log(
+      `  ${mode}: ${rawCount} raw -> ${dedupedCount} unique selectors`,
+    );
   }
 
   resetVaultConfig();
@@ -570,19 +722,19 @@ function saveResults(themeName, results) {
   if (results.dark && Object.keys(results.dark).length > 0) {
     const sortedDark = sortObjectDeep(results.dark);
     writeFileSync(
-      join(themeDir, "cli-dark.json"),
+      join(themeDir, "dark.json"),
       JSON.stringify(sortedDark, null, 2),
     );
-    console.log(`  Saved: ${themeDir}/cli-dark.json`);
+    console.log(`  Saved: ${themeDir}/dark.json`);
   }
 
   if (results.light && Object.keys(results.light).length > 0) {
     const sortedLight = sortObjectDeep(results.light);
     writeFileSync(
-      join(themeDir, "cli-light.json"),
+      join(themeDir, "light.json"),
       JSON.stringify(sortedLight, null, 2),
     );
-    console.log(`  Saved: ${themeDir}/cli-light.json`);
+    console.log(`  Saved: ${themeDir}/light.json`);
   }
 }
 
@@ -596,7 +748,7 @@ function getInstalledThemes() {
     .sort((a, b) => a.localeCompare(b));
 }
 
-async function extractSingleTheme(cli, themeName, hashCache) {
+async function extractSingleTheme(cli, themeName, hashCache, baseline) {
   const themeConfig = getThemeConfig(themeName);
   const manifest = { style_settings: themeConfig.style_settings || {} };
 
@@ -607,14 +759,14 @@ async function extractSingleTheme(cli, themeName, hashCache) {
 
   try {
     const startTime = Date.now();
-    const results = await extractThemeStyles(cli, themeName);
+    const results = await extractThemeStyles(cli, themeName, baseline);
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
 
     saveResults(themeName, results);
 
     const currentHash = getThemeHash(themeName, manifest);
     if (currentHash) {
-      hashCache[sanitize(themeName)] = currentHash;
+      setCachedHash(themeName, currentHash, hashCache);
       saveHashCache(hashCache);
     }
 
@@ -632,7 +784,7 @@ async function extractSingleTheme(cli, themeName, hashCache) {
 }
 
 async function main() {
-  console.log("=== CLI CSS Extractor (Batch Mode) ===\n");
+  console.log("=== CLI CSS Extractor (Full Style Mode) ===\n");
 
   try {
     execSync("obsidian version", { encoding: "utf-8" });
@@ -645,12 +797,17 @@ async function main() {
   const arg = process.argv[2];
   const extractAll = arg === "--all" || arg === "-a";
 
+  const selectors = buildSelectors();
   console.log(`Vault: ${VAULT_PATH}`);
-  console.log(`Targets: ${buildTargets().length} selectors`);
+  console.log(`Selectors: ${selectors.length}`);
+  console.log(`Style properties: ${STYLE_PROPERTIES.length}`);
   console.log(`Files: ${EXTRACTION_FILES.length} notes`);
   if (FORCE_EXTRACTION) console.log(`Force extraction: enabled`);
+  if (FORCE_BASELINE) console.log(`Force baseline: enabled`);
 
   const hashCache = loadHashCache();
+
+  const baseline = await extractBaseline(cli, selectors);
 
   if (extractAll) {
     const installedThemes = getInstalledThemes();
@@ -668,7 +825,12 @@ async function main() {
       const themeName = installedThemes[i];
       console.log(`[${i + 1}/${installedThemes.length}] ${themeName}`);
 
-      const result = await extractSingleTheme(cli, themeName, hashCache);
+      const result = await extractSingleTheme(
+        cli,
+        themeName,
+        hashCache,
+        baseline,
+      );
 
       if (result.skipped) {
         skipped++;
@@ -690,7 +852,12 @@ async function main() {
     const themeName = arg || "Brutalist";
     console.log(`Theme: ${themeName}\n`);
 
-    const result = await extractSingleTheme(cli, themeName, hashCache);
+    const result = await extractSingleTheme(
+      cli,
+      themeName,
+      hashCache,
+      baseline,
+    );
 
     if (result.skipped) {
       console.log(`\nSkipping ${themeName} (unchanged since last extraction)`);

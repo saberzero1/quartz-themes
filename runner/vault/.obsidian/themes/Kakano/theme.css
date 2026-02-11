@@ -680,7 +680,6 @@ body {
   --radius-m: 0.5rem;
   --radius-l: 0.75rem;
   --radius-xl: 1rem;
-  --raised-background: var(--theme-color-baseLightened80);
   --ribbon-background-collapsed: transparent;
   --ribbon-background: transparent;
   --ribbon-width: 3em;
@@ -1113,6 +1112,7 @@ body {
   --nav-item-color-active: var(--theme-color-baseLightened80);
   --nav-item-color: var(--theme-color-baseDarkened80);
   --nav-item-color-hover: white;
+  --raised-background: var(--theme-color-baseLightened80);
   --search-clear-button-color: var(--theme-color-base);
   --search-icon-color: var(--theme-color-base);
   --status-bar-text-color: black;
@@ -1362,6 +1362,7 @@ body.theme-light.theme-setting-customGradient {
   --nav-item-color-active: var(--theme-color-baseDarkened80);
   --nav-item-color: var(--theme-color-baseLightened60);
   --nav-item-color-hover: black;
+  --raised-background: var(--theme-color-baseDarkened80);
   --search-clear-button-color: var(--theme-color-base);
   --search-icon-color: var(--theme-color-base);
   --tag-color: hsl(
@@ -2868,12 +2869,15 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   --file-margins: 0;
   --mobile-sidebar-background: transparent;
   --view-header-height: auto;
-  --input-radius: 5px;
+  --input-radius: 0.5rem;
   --clickable-icon-radius: 0.25rem;
-  --setting-items-background: transparent;
   --setting-items-radius: 0;
   --setting-items-border-width: 0;
   --setting-items-border-color: var(--background-modifier-border);
+}
+.is-mobile.is-dark,
+.is-mobile.is-light {
+  --setting-items-background: transparent;
 }
 .is-phone {
   /* I'm pretty sure this isn't used on mobile */
@@ -2968,8 +2972,6 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   background-color: var(--background-secondary);
   background: var(--theme-gradient-bottomToTop);
   bottom: 0;
-  padding-bottom: var(--safe-area-inset-bottom);
-  padding-top: var(--safe-area-inset-top);
   top: 0;
 
   &.theme-dark {
@@ -2981,7 +2983,32 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
     border: none;
   }
 }
+
+.is-phone .workspace-drawer {
+    /* & .workspace-leaf-content[data-type="file-explorer"] { */
+        .nav-buttons-container {
+          margin: 0 1rem;
+          padding: 0;
+          justify-content: space-between;
+        }
+    /* } */
+}
+
+.workspace-drawer .workspace-leaf {
+
+}
 .workspace-drawer-inner {
+  display: flex;
+  gap: 1rem;
+}
+.workspace-drawer-active-tab-container {
+  gap: 1rem;
+}
+.workspace-drawer-tab-options,
+.workspace-drawer-header,
+.workspace-tab-options {
+  margin: 0 1rem;
+  padding: 0;
 }
 .workspace-drawer-ribbon {
   border: none;
@@ -2990,6 +3017,9 @@ body.theme-setting-enableBuiltInAlternativeCheckboxes {
   width: auto;
 }
 
+.workspace-drawer-tab-select .workspace-tab-header-inner {
+  border-radius: var(--input-radius);
+}
 .mod-tappable,
 .workspace-drawer-active-tab-back-icon,
 .workspace-drawer-active-tab-icon {
@@ -3386,7 +3416,7 @@ body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout {
 
 /* TODO: figure out the right balance for floating nav to minimise overlap */
 .is-mobile.is-floating-nav.is-phone .workspace-drawer .workspace-leaf-content .nav-header ~ div:last-child {
- margin-bottom: 44px;
+ margin-bottom: calc(44px + 0.5rem);
 }
 
 /* #region Workspace */
