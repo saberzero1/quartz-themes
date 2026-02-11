@@ -1,12 +1,1 @@
-{
-  "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
-    "opacity": "1"
-  },
-  "img": {
-    "letter-spacing": "-0.36px"
-  },
-  "mark": {
-    "background": "color(srgb 0.541176 0.360784 0.960784 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box",
-    "background-color": "color(srgb 0.541176 0.360784 0.960784 / 0.25)"
-  }
-}
+{"a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]":{"opacity":"1"},"img":{"letter-spacing":"-0.36px"},"mark":{"background":"color(srgb 0.541176 0.360784 0.960784 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box","background-color":"color(srgb 0.541176 0.360784 0.960784 / 0.25)"}}

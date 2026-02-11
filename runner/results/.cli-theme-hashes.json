@@ -51,7 +51,11 @@
   "Camena": { "_default": "31150ce3d8a9f5f061a619956ec8f738" },
   "Carbon": { "_default": "e84727c5d0f4765e879301ed6b650158" },
   "Cardstock": { "_default": "e86d3bf645ce694955a531db6ee9ebef" },
-  "Catppuccin": { "_default": "1791af9810531e4acfc7bce167081a50" },
+  "Catppuccin": {
+    "_default": "1791af9810531e4acfc7bce167081a50",
+    "frappe": "434ad3c475509cd92a5d961c69f20d6b",
+    "macchiato": "ff141117fa2908a74adeb16d5dca8c14"
+  },
   "Celestial Night": { "_default": "c4f6e78264c8c04d176b362edf54e9d3" },
   "Charcoal": { "_default": "20087eaddf9877cd5ba4e864628ac362" },
   "chiaroscuroflow": { "_default": "0b1a5b79eca4727cab3c6d523ecae295" },
@@ -125,7 +129,10 @@
   "Feather": { "_default": "cdf53bf254aa188d8eb54846ddc0e10c" },
   "Firefly": { "_default": "622d470fe5cb46c242c074eb5551f28a" },
   "FlatCap": { "_default": "1424a53127dae6be13dc05c5f56418c3" },
-  "flexcyon": { "_default": "2be9d4c8400f7519a1f75298370a3c0e" },
+  "flexcyon": {
+    "_default": "2be9d4c8400f7519a1f75298370a3c0e",
+    "tui": "1f237814add6565efb9645412a2cdd41"
+  },
   "Flexoki": { "_default": "f0f0b4e21ddb9c53041914a7b9310e6f" },
   "Flexoki Warm": { "_default": "c7801bee73431175c46c41495503e34a" },
   "Focus": { "_default": "9f2a682474fb8f545a52ee0db1c5ae48" },
@@ -161,7 +168,23 @@
   "Ink": { "_default": "65d691549ffe666f1073e69df3bb98c5" },
   "ion": { "_default": "f599a7643752409a51c39aed72a8f7fa" },
   "Iridium": { "_default": "42e5c1180f64aec7fd8cd2147af231c3" },
-  "ITS Theme": { "_default": "8ec47e1b96a3972fa8d998a6d46ea0bd" },
+  "ITS Theme": {
+    "_default": "8ec47e1b96a3972fa8d998a6d46ea0bd",
+    "blue": "6507c20dc81b72a42482ad84a82c582c",
+    "drowned": "9aa9580fcda36d23c419cd4ada71e91a",
+    "gray": "ceb4d4cbfe6551b2ddf750a58a0ee3d0",
+    "its-dark": "cd642eb1fd46aea5459befe579d386cd",
+    "minimalist": "393a4248be315d898c30f65de8b8eb48",
+    "nord": "70132f31a724cb2a66de96ff383142c7",
+    "notion": "4d743d2d5446f3e68ddae12e43820337",
+    "rainbow": "49eb7afd7eb9e1d5f887088f913f56bd",
+    "school-days": "a143399527784f931d6c1d5b3e1b3941",
+    "tangerine-dunes": "8a6ca6c5f66d1a8598508c32c800712b",
+    "ttrpg-dnd": "9177ab0066f0b4ffb1f4f481c26e616a",
+    "ttrpg-pathfinder": "fbe1459cd48f5ece2eb2d41154b96c16",
+    "ttrpg-pathfinder-remastered": "512ea8ce9b8d8d4f70b2d4dc41d83b4b",
+    "ttrpg-wotc": "9adcd788b620b996b439219cb7d3697d"
+  },
   "Jotter": { "_default": "de15274910949d0f421b8d3d65983d49" },
   "Kakano": { "_default": "bec9fa8f78746d713586a949387d2f5d" },
   "Kanagawa": { "_default": "a8b607939a41ee7dc4c4daba451711fd" },
@@ -182,7 +205,11 @@
   "Mado Miniflow": { "_default": "44808ccd111843cc3523365de87b9197" },
   "MagicUser": { "_default": "ca49d287bd3961879ef752bb3ce34ab2" },
   "Mammoth": { "_default": "ba1a5ec5e5caf0adcdac928a3d50ae17" },
-  "Maple": { "_default": "80966ea5b964ab0e45a5ededf3149654" },
+  "Maple": {
+    "_default": "80966ea5b964ab0e45a5ededf3149654",
+    "default": "852089ea00c63dead6813d72e48a1549",
+    "minimal": "983ee5ec3e5d70afcdd3234e393d2449"
+  },
   "Marathon": { "_default": "ead8c55257418b9818b85bd72b2d7d73" },
   "Material 3": { "_default": "e462dedf957e06ea58fdf97004c38e98" },
   "Material Flat": { "_default": "fcd5c84fed5a46f8dd5025129baddd1c" },
