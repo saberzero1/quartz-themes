@@ -191,9 +191,11 @@ body.theme-light {
   --bases-cards-background: #fcfef3 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: #fafafa !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 6px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px rgba(0, 0, 0, 0) !important;
   --bases-cards-shadow-hover: 0 0 0 1px #d4d4d4 !important;
@@ -248,9 +250,22 @@ body.theme-light {
   --blockquote-border-color: rgb(153, 115, 247) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(in srgb, #fcfef3 65%, transparent)
+    linear-gradient(#fcfef3, color-mix(in srgb, #fcfef3 65%, transparent)) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 4px !important;
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
@@ -284,6 +299,9 @@ body.theme-light {
   --canvas-color-4: 8, 185, 78 !important;
   --canvas-color-5: 0, 191, 188 !important;
   --canvas-color-6: 120, 82, 238 !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: #e0e0e0 !important;
   --caret-color: #6f6e6a !important;
   --checkbox-border-color: #ababab !important;
@@ -349,7 +367,7 @@ body.theme-light {
   --color-red-rgb: 197, 65, 40 !important;
   --color-yellow: #e0ac00 !important;
   --color-yellow-rgb: 224, 172, 0 !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -368,7 +386,11 @@ body.theme-light {
   --dropdown-background-hover: #e5e8c2 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
     0 0 0 1px rgba(0, 0, 0, 0), inset 0 0 0 1px rgba(0, 0, 0, 0) !important;
   --embed-border-bottom: none !important;
@@ -379,16 +401,21 @@ body.theme-light {
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 16px !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: #fcfef3 !important;
+  --file-header-background-focused: #fcfef3 !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px !important;
+  --file-margins: 32px 32px !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: #eff1df !important;
   --flair-color: #6f6e6a !important;
   --focus-ring-color: #0df !important;
@@ -397,13 +424,14 @@ body.theme-light {
   --font-bold: 700 !important;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
@@ -411,7 +439,7 @@ body.theme-light {
   --font-medium: 500 !important;
   --font-mermaid: "宋体", SimSun !important;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -421,7 +449,7 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "Arial" !important;
+  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
@@ -472,25 +500,25 @@ body.theme-light {
   --h2-size: 1.462em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 600 !important;
+  --h2-weight: 680 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.318em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 600 !important;
+  --h3-weight: 660 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.188em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 600 !important;
+  --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
@@ -539,14 +567,18 @@ body.theme-light {
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: #ababab !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #ababab !important;
   --input-radius: 4px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: rgb(153, 115, 247) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -599,8 +631,14 @@ body.theme-light {
   --menu-background: #f8f6ea !important;
   --menu-border-color: #d4d4d4 !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 6px !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
@@ -619,19 +657,22 @@ body.theme-light {
   --metadata-input-background-active: #a3d5aa !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: #6f6e6a !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: #a3d5aa !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #8d9c8d !important;
@@ -644,6 +685,9 @@ body.theme-light {
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #add4ad !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #d4d4d4 !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -654,11 +698,13 @@ body.theme-light {
   --modal-border-color: rgba(0, 0, 0, 0) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 8px !important;
+  --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
@@ -682,8 +728,10 @@ body.theme-light {
   --nav-item-color-highlighted: rgb(138, 92, 245) !important;
   --nav-item-color-hover: #edf4f0 !important;
   --nav-item-color-selected: #6f6e6a !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
+  --nav-item-radius: 4px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
@@ -727,6 +775,9 @@ body.theme-light {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: #fcfef3 !important;
   --prompt-border-color: #bdbdbd !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -737,6 +788,22 @@ body.theme-light {
   --radius-m: 6px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
+  --raised-background: color-mix(in srgb, #fcfef3 65%, transparent)
+    linear-gradient(#fcfef3, color-mix(in srgb, #fcfef3 65%, transparent)) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(
+      to bottom left,
+      white,
+      transparent,
+      white
+    )
+    border-box no-repeat !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: #f6f6f6 !important;
   --ribbon-background-collapsed: #fcfef3 !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -757,6 +824,14 @@ body.theme-light {
   --search-icon-color: #8d9c8d !important;
   --search-icon-size: 18px !important;
   --search-result-background: #fcfef3 !important;
+  --setting-group-heading-color: #6f6e6a !important;
+  --setting-group-heading-size: 15px !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: #fafafa !important;
+  --setting-items-border-color: rgba(0, 0, 0, 0) !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 20px !important;
+  --setting-items-radius: 8px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
@@ -789,7 +864,7 @@ body.theme-light {
   --slider-thumb-border-color: #d4d4d4 !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
+  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: #eff1e1 !important;
@@ -802,6 +877,8 @@ body.theme-light {
   --status-bar-position: fixed !important;
   --status-bar-radius: 6px 0 0 0 !important;
   --status-bar-text-color: #8d9c8d !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: #fcfef3 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -834,6 +911,11 @@ body.theme-light {
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #f8f6ea !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #f8f6ea,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -887,6 +969,7 @@ body.theme-light {
   --tag-border-width: 0px !important;
   --tag-color: #fcfdfe !important;
   --tag-color-hover: rgb(138, 92, 245) !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 4px !important;
@@ -925,17 +1008,39 @@ body.theme-light {
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: 40px !important;
+  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #6f6e6a !important;
   --vault-profile-color-hover: #6f6e6a !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --raised-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
+  --shadow-edges: 0 0 transparent !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --vault-name-color: #636867 !important;
   --green: #afe4ae !important;
   --orange: #c1a58c !important;
@@ -978,23 +1083,27 @@ body .markdown-rendered a.external-link {
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 400;
-  text-decoration: underline solid rgb(82, 115, 165);
+  outline: rgb(82, 115, 165) none 0px;
+  text-decoration: underline rgb(82, 115, 165);
   text-decoration-color: rgb(82, 115, 165);
   text-decoration-line: underline;
   text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
   user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(166, 138, 249);
+  color: rgb(138, 92, 245);
   cursor: pointer;
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 400;
-  text-decoration: underline solid rgb(166, 138, 249);
-  text-decoration-color: rgb(166, 138, 249);
+  outline: rgb(138, 92, 245) none 0px;
+  text-decoration: underline rgb(138, 92, 245);
+  text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
   user-select: text;
 }
 body .markdown-rendered a.internal-link.is-unresolved {
@@ -1004,10 +1113,12 @@ body .markdown-rendered a.internal-link.is-unresolved {
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 400;
-  text-decoration: underline solid rgba(138, 92, 245, 0.3);
+  outline: rgb(138, 92, 245) none 0px;
+  text-decoration: underline rgba(138, 92, 245, 0.3);
   text-decoration-color: rgba(138, 92, 245, 0.3);
   text-decoration-line: underline;
   text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
   user-select: text;
 }
 body .markdown-rendered a.external-link:hover {
@@ -1026,16 +1137,18 @@ body .markdown-rendered a.internal-link:hover {
 }
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(111, 110, 106);
+  color: rgb(141, 156, 141);
   cursor: auto;
   filter: none;
-  font-family: 宋体, SimSun;
+  font-family: "Times New Roman";
   font-weight: 400;
-  text-decoration: none solid rgb(111, 110, 106);
-  text-decoration-color: rgb(111, 110, 106);
+  outline: rgb(141, 156, 141) none 0px;
+  text-decoration: rgb(141, 156, 141);
+  text-decoration-color: rgb(141, 156, 141);
   text-decoration-line: none;
   text-decoration-style: solid;
-  user-select: text;
+  transition: all;
+  user-select: none;
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
@@ -1044,10 +1157,12 @@ body strong {
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 600;
-  text-decoration: none solid rgb(111, 110, 106);
+  outline: rgb(111, 110, 106) none 0px;
+  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body b {
@@ -1057,10 +1172,12 @@ body b {
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 600;
-  text-decoration: none solid rgb(111, 110, 106);
+  outline: rgb(111, 110, 106) none 0px;
+  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body em {
@@ -1070,10 +1187,12 @@ body em {
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 400;
-  text-decoration: none solid rgb(111, 110, 106);
+  outline: rgb(111, 110, 106) none 0px;
+  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body i {
@@ -1083,10 +1202,12 @@ body i {
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 400;
-  text-decoration: none solid rgb(111, 110, 106);
+  outline: rgb(111, 110, 106) none 0px;
+  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body .markdown-rendered mark {
@@ -1096,10 +1217,12 @@ body .markdown-rendered mark {
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 400;
-  text-decoration: none solid rgb(111, 110, 106);
+  outline: rgb(111, 110, 106) none 0px;
+  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body del {
@@ -1109,10 +1232,12 @@ body del {
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 400;
-  text-decoration: line-through solid rgb(111, 110, 106);
+  outline: rgb(111, 110, 106) none 0px;
+  text-decoration: line-through rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: line-through;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body .suggestion-item.is-selected {
@@ -1121,28 +1246,29 @@ body .suggestion-item.is-selected {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(111, 110, 106);
 }
 body div.suggestion-item {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(163, 213, 170);
   border: 0px rgb(111, 110, 106);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(111, 110, 106);
 }
 body .markdown-rendered hr {
-  border: 0px rgba(0, 0, 0, 0);
-  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-color: rgb(128, 128, 128) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-style: solid solid none none;
+  border-width: 0px 1px 0px 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1153,13 +1279,13 @@ body .markdown-rendered hr {
   border-end-end-radius: 0px;
   box-shadow: none;
   margin: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
 body div.multi-select-pill {
-  align-items: center;
+  align-items: normal;
   background-color: rgb(212, 228, 241);
   display: flex;
   font-family:
@@ -1168,7 +1294,9 @@ body div.multi-select-pill {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -1181,10 +1309,10 @@ body div.multi-select-pill {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: rgb(252, 253, 254);
@@ -1194,18 +1322,18 @@ body .markdown-rendered ul > li {
   text-align: start;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: rgb(171, 171, 171);
-  border: 0px rgb(171, 171, 171);
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-start-start-radius: 50%;
-  border-start-end-radius: 50%;
-  border-end-start-radius: 50%;
-  border-end-end-radius: 50%;
-  color: rgb(171, 171, 171);
-  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(34, 34, 34);
+  pointer-events: auto;
   transform: none;
 }
 body .markdown-rendered ol > li {
@@ -1213,37 +1341,37 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
-  background-color: rgb(171, 171, 171);
-  border: 0px rgb(171, 171, 171);
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-start-start-radius: 50%;
-  border-start-end-radius: 50%;
-  border-end-start-radius: 50%;
-  border-end-end-radius: 50%;
-  color: rgb(171, 171, 171);
-  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(34, 34, 34);
+  pointer-events: auto;
   transform: none;
 }
 body .markdown-rendered code {
-  background-color: rgb(250, 250, 250);
-  border: 0px solid rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid rgb(111, 110, 106);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(111, 110, 106);
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
-  padding: 2.1px 4.2px;
+  padding: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: rgb(243, 247, 228);
@@ -1252,14 +1380,14 @@ body .markdown-rendered pre > code {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  overflow-x: auto;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
   padding: 12px 16px;
   white-space-collapse: preserve;
-  text-wrap-mode: wrap;
+  text-wrap-mode: nowrap;
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
@@ -1269,34 +1397,35 @@ body pre[class*="language-"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  overflow-x: auto;
-  padding: 12px 16px;
-  white-space-collapse: preserve;
-  text-wrap-mode: wrap;
-}
-body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
-  appearance: auto;
-  border: 2px inset rgb(118, 118, 118);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 1px 2px;
-  margin: 0px;
+  overflow-x: visible;
+  padding: 12px 16px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
+  appearance: auto;
+  border: 1px solid rgb(171, 171, 171);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  margin: 0px 8px 0px -24px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: auto;
-  position: static;
+  width: 16px;
+  transition: box-shadow 0.15s ease-in-out;
+  position: relative;
   top: auto;
 }
 body ul.contains-task-list > li.task-list-item {
@@ -1307,17 +1436,17 @@ body
   ul.contains-task-list
   > li.task-list-item
   > input[type="checkbox"]:checked {
-  content: none;
+  content: normal;
   top: auto;
   inset-inline-start: auto;
   position: static;
   width: auto;
-  display: inline;
+  display: list-item;
   background-color: rgba(0, 0, 0, 0);
 }
 body ul > li.task-list-item[data-task="x"] {
   color: rgb(141, 156, 141);
-  text-decoration: line-through solid rgb(141, 156, 141);
+  text-decoration: line-through rgb(141, 156, 141);
   text-decoration-color: rgb(141, 156, 141);
 }
 body .markdown-rendered blockquote {
@@ -1326,13 +1455,13 @@ body .markdown-rendered blockquote {
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 16px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
 body .footnote-backref {
   color: rgb(171, 171, 171);
-  text-decoration: none solid rgb(171, 171, 171);
+  text-decoration: rgb(171, 171, 171);
 }
 body .site-body-left-column input.search-bar {
   background-color: rgb(255, 255, 255);
@@ -1341,10 +1470,10 @@ body .site-body-left-column input.search-bar {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(111, 110, 106);
   font-family: "Times New Roman";
 }
@@ -1355,10 +1484,10 @@ body .search-results {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   box-shadow:
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
@@ -1371,10 +1500,12 @@ body .search-results > * {
   filter: none;
   font-family: 宋体, SimSun;
   font-weight: 400;
-  text-decoration: none solid rgb(111, 110, 106);
+  outline: rgb(111, 110, 106) none 0px;
+  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body div.search-results {
@@ -1383,10 +1514,10 @@ body div.search-results {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item {
   color: rgb(111, 110, 106);
@@ -1397,10 +1528,10 @@ body div.search-results .suggestion-item {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item.is-selected {
   color: rgb(111, 110, 106);
@@ -1444,11 +1575,13 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 body body.styled-scrollbars {
-  background-color: rgb(255, 255, 255);
+  background: rgb(252, 254, 243) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  background-color: rgb(252, 254, 243);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1457,26 +1590,28 @@ body body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(34, 34, 34);
+  border: 0px rgb(111, 110, 106);
   box-shadow: none;
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
 body .callout[data-callout="note"] {
+  --callout-color: 8, 109, 221;
   border: 0px solid rgba(8, 109, 221, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: rgba(8, 109, 221, 0.1);
 }
 body .callout[data-callout="note"] > .callout-title {
+  gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1496,6 +1631,7 @@ body .callout > .callout-content {
   padding: 0px;
 }
 body .callout[data-callout="abstract"] {
+  --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 188, 0.1);
   mix-blend-mode: normal;
   border: 0px solid rgba(0, 191, 188, 0.25);
@@ -1503,12 +1639,13 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="info"] {
+  --callout-color: 8, 109, 221;
   background-color: rgba(8, 109, 221, 0.1);
   mix-blend-mode: normal;
   border: 0px solid rgba(8, 109, 221, 0.25);
@@ -1516,12 +1653,13 @@ body .callout[data-callout="info"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="todo"] {
+  --callout-color: 8, 109, 221;
   background-color: rgba(8, 109, 221, 0.1);
   mix-blend-mode: normal;
   border: 0px solid rgba(8, 109, 221, 0.25);
@@ -1529,12 +1667,13 @@ body .callout[data-callout="todo"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="tip"] {
+  --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 188, 0.1);
   mix-blend-mode: normal;
   border: 0px solid rgba(0, 191, 188, 0.25);
@@ -1542,12 +1681,13 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="success"] {
+  --callout-color: 8, 185, 78;
   background-color: rgba(8, 185, 78, 0.1);
   mix-blend-mode: normal;
   border: 0px solid rgba(8, 185, 78, 0.25);
@@ -1555,12 +1695,13 @@ body .callout[data-callout="success"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="question"] {
+  --callout-color: 236, 117, 0;
   background-color: rgba(236, 117, 0, 0.1);
   mix-blend-mode: normal;
   border: 0px solid rgba(236, 117, 0, 0.25);
@@ -1568,12 +1709,13 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="warning"] {
+  --callout-color: 236, 117, 0;
   background-color: rgba(236, 117, 0, 0.1);
   mix-blend-mode: normal;
   border: 0px solid rgba(236, 117, 0, 0.25);
@@ -1581,25 +1723,13 @@ body .callout[data-callout="warning"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="danger"] {
-  background-color: rgba(197, 65, 40, 0.1);
-  mix-blend-mode: darken;
-  border: 0px solid rgba(197, 65, 40, 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-}
-body .callout[data-callout="failure"] {
+  --callout-color: 197, 65, 40;
   background-color: rgba(197, 65, 40, 0.1);
   mix-blend-mode: normal;
   border: 0px solid rgba(197, 65, 40, 0.25);
@@ -1607,57 +1737,74 @@ body .callout[data-callout="failure"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout="failure"] {
+  --callout-color: 197, 65, 40;
   background-color: rgba(197, 65, 40, 0.1);
-  mix-blend-mode: darken;
+  mix-blend-mode: normal;
   border: 0px solid rgba(197, 65, 40, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body .callout[data-callout="bug"] {
+  --callout-color: 197, 65, 40;
+  background-color: rgba(197, 65, 40, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(197, 65, 40, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="example"] {
+  --callout-color: 120, 82, 238;
   background-color: rgba(120, 82, 238, 0.1);
-  mix-blend-mode: darken;
+  mix-blend-mode: normal;
   border: 0px solid rgba(120, 82, 238, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.1);
-  mix-blend-mode: darken;
+  mix-blend-mode: normal;
   border: 0px solid rgba(158, 158, 158, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
-  border-collapse: collapse;
+  border-collapse: separate;
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   table-layout: auto;
-  width: auto;
+  width: 180.766px;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1669,7 +1816,7 @@ body .markdown-rendered table {
   border-end-end-radius: 0px;
   margin: 16px 0px 0px;
   margin-block-end: 0px;
-  margin-block-start: 16px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -1703,13 +1850,13 @@ body .markdown-rendered th {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 0px;
+  padding: 4px 8px;
 }
 body .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(111, 110, 106);
   font-weight: 400;
-  text-align: center;
+  text-align: start;
   vertical-align: top;
   border: 1px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
@@ -1720,7 +1867,7 @@ body .markdown-rendered td {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 0px;
+  padding: 4px 8px;
 }
 body .markdown-rendered tr {
   background-color: rgba(0, 0, 0, 0);
@@ -1734,10 +1881,17 @@ body .markdown-rendered tr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body .markdown-rendered tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0);
+}
+body .markdown-rendered tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0);
+}
 body .markdown-rendered img {
+  border-radius: 0px;
   box-shadow: none;
   filter: none;
-  max-width: 100%;
+  max-width: none;
   object-fit: fill;
   border: 0px rgb(111, 110, 106);
   border-top-left-radius: 0px;
@@ -1767,8 +1921,8 @@ body .markdown-rendered figure {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   margin: 16px 40px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
   margin-inline-end: 40px;
   margin-inline-start: 40px;
   padding: 0px;
@@ -1787,9 +1941,10 @@ body .markdown-rendered figcaption {
   padding: 0px;
 }
 body .markdown-rendered video {
+  border-radius: 0px;
   box-shadow: none;
   filter: none;
-  max-width: 100%;
+  max-width: none;
   object-fit: contain;
   border: 0px rgb(111, 110, 106);
   border-top-left-radius: 0px;
@@ -1819,10 +1974,74 @@ body .markdown-rendered audio {
   border-end-end-radius: 0px;
   padding: 0px;
 }
+body .internal-embed {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(111, 110, 106);
+  border-left: 2px solid rgb(152, 115, 247);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body .markdown-embed {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(111, 110, 106);
+  border-left: 2px solid rgb(152, 115, 247);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body .file-embed {
+  background-color: rgb(250, 250, 250);
+  border-color: rgb(141, 156, 141);
+  border-width: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0px;
+  padding: 8px;
+}
+body .metadata-container {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(141, 156, 141);
+  font-family: 宋体, SimSun;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px 0px 32px;
+  padding: 8px 0px;
+}
+body .metadata-properties {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(141, 156, 141);
+  font-family: 宋体, SimSun;
+  border-color: rgb(141, 156, 141);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
 body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
-  height: 6px;
+  height: 15px;
   border: 0px rgb(111, 110, 106);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1847,18 +2066,31 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: rgb(255, 255, 255);
-  color: rgb(111, 110, 106);
-  font-family: 宋体, SimSun;
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(141, 156, 141);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 0px solid rgb(141, 156, 141);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   padding: 4px 8px;
 }
 body details {
@@ -1926,8 +2158,8 @@ body kbd {
 }
 body dl {
   margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -1966,99 +2198,99 @@ body abbr {
   text-decoration-style: dotted;
 }
 body li.task-list-item[data-task="-"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task=">"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="/"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="?"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="!"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="*"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="l"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="b"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="i"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="S"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="I"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="p"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="c"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="f"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="k"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="u"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="d"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body li.task-list-item[data-task="w"] {
-  color: rgb(34, 34, 34);
-  text-decoration: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
+  color: rgb(111, 110, 106);
+  text-decoration: rgb(111, 110, 106);
+  text-decoration-color: rgb(111, 110, 106);
 }
 body .math-block > mjx-container.MathJax {
   display: block;
   text-align: center;
-  white-space-collapse: break-spaces;
+  white-space-collapse: collapse;
   text-wrap-mode: wrap;
   font-family: 宋体, SimSun;
 }
@@ -2073,7 +2305,7 @@ body .nav-view-outer .tree-item-self a {
   cursor: default;
   font-family: "Times New Roman";
   font-weight: 400;
-  text-decoration: none solid rgb(98, 102, 102);
+  text-decoration: rgb(98, 102, 102);
 }
 body .nav-view-outer .tree-item-self.mod-active {
   background-color: rgb(163, 213, 170);
@@ -2082,10 +2314,10 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: rgb(237, 244, 240);
   cursor: default;
   transition-behavior: normal;
@@ -2105,7 +2337,7 @@ body
   cursor: default;
   font-family: "Times New Roman";
   font-weight: 400;
-  text-decoration: none solid rgb(98, 102, 102);
+  text-decoration: rgb(98, 102, 102);
 }
 body
   .nav-view-outer
@@ -2118,7 +2350,159 @@ body
   cursor: default;
   font-family: "Times New Roman";
   font-weight: 400;
-  text-decoration: none solid rgb(98, 102, 102);
+  text-decoration: rgb(98, 102, 102);
+}
+body .clickable-icon {
+  background-color: rgb(163, 213, 170);
+  color: rgb(255, 255, 255);
+  cursor: default;
+  border-color: rgb(255, 255, 255);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body .site-footer {
+  background-color: rgb(248, 246, 234);
+  color: rgb(141, 156, 141);
+  font-family: "Times New Roman";
+  border-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 1px 0px 0px 1px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .site-footer a {
+  color: rgb(141, 156, 141);
+  text-decoration: rgb(141, 156, 141);
+}
+body .nav-header {
+  color: rgb(111, 110, 106);
+  font-family: "Times New Roman";
+  font-weight: 400;
+}
+body .nav-files-container .tree-item {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(111, 110, 106);
+  border-color: rgb(111, 110, 106);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .nav-file-title {
+  color: rgb(98, 102, 102);
+  text-decoration: rgb(98, 102, 102);
+}
+body .nav-file-title-content {
+  color: rgb(98, 102, 102);
+  font-family: "Times New Roman";
+}
+body .nav-files-container {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(111, 110, 106);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .site-body-left-column-site-theme-toggle {
+  background-color: rgb(163, 213, 170);
+  color: rgb(255, 255, 255);
+  cursor: default;
+  border-color: rgb(255, 255, 255);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body .site-body-left-column-site-theme-toggle svg {
+  stroke: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+body .view-header-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(141, 156, 141);
+  border-color: rgb(141, 156, 141);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body .view-header-breadcrumb-separator {
+  color: rgb(171, 171, 171);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body .page-header .page-title {
+  color: rgb(111, 110, 106);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body .math-block {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(111, 110, 106);
+  border-color: rgb(111, 110, 106);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .footnotes {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-color: rgb(111, 110, 106);
+  border-top-width: 0px;
+  color: rgb(111, 110, 106);
+}
+body .table-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(111, 110, 106);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .view-content {
+  background-color: rgb(252, 254, 243);
+  border-color: rgb(111, 110, 106);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(243, 247, 228);
@@ -2127,10 +2511,10 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(243, 247, 228);
@@ -2141,22 +2525,22 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px rgb(34, 34, 34);
+  border-left: 0px rgb(224, 172, 0);
 }
 body pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(34, 34, 34);
+  border-left-color: rgb(224, 172, 0);
 }
 body pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
+  border: 0px rgb(224, 172, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

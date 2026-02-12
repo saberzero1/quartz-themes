@@ -41,9 +41,11 @@
   --bases-cards-background: #ffffff !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: #f1f1ef !important;
   --bases-cards-font-size: 0.9em !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 0 !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #e9e9e7 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #edece9 !important;
@@ -101,9 +103,22 @@
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
+  --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
+    linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent)) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 500 !important;
   --bold-weight: 900 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 0 !important;
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
@@ -137,6 +152,9 @@
   --canvas-color-4: 8, 185, 78 !important;
   --canvas-color-5: 0, 191, 188 !important;
   --canvas-color-6: 120, 82, 238 !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 0 !important;
   --canvas-dot-pattern: #e0e0e0 !important;
   --caret-color: #37352f !important;
   --checkbox-border-color: #43b3e0 !important;
@@ -202,7 +220,7 @@
   --color-red-rgb: 233, 49, 71 !important;
   --color-yellow: #e0ac00 !important;
   --color-yellow-rgb: 224, 172, 0 !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -221,7 +239,11 @@
   --dropdown-background-hover: #cfcecd !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover: 2px 2px 0 #0f0f0f15 !important;
   --embed-border-bottom: 2px solid transparent !important;
   --embed-border-end: none !important;
@@ -231,16 +253,20 @@
   --embed-max-height: 4000px !important;
   --embed-padding: 0 10px 0 24px !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: #ffffff !important;
+  --file-header-background-focused: #ffffff !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --file-header-font-size: 15px !important;
   --file-header-font-weight: 600 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px !important;
+  --file-margins: 32px 32px !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: #f1f1ef !important;
   --flair-color: #37352f !important;
   --focus-ring-color: #0df !important;
@@ -254,17 +280,17 @@
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-monospace:
     "Fira Code", "Fira Code Medium", "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -277,7 +303,7 @@
   --font-print:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif, "Arial" !important;
+    "Microsoft YaHei Light", sans-serif, "??", "??", "Arial" !important;
   --font-print-override:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -287,9 +313,9 @@
   --font-smaller: 0.9em !important;
   --font-smallest: 0.85em !important;
   --font-text:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -401,14 +427,18 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: #4e5b6f !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #4e5b6f !important;
   --input-radius: 0 !important;
   --input-shadow: 2px 2px 0 #0f0f0f15 !important;
   --input-shadow-hover: 3px 3px 0 #0f0f0f15 !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: #43b3e0 !important;
   --interactive-accent-hover: #cfcecd !important;
   --interactive-accent-hsl: 0, 49%, 49% !important;
@@ -461,8 +491,14 @@
   --menu-background: #f7f6f3 !important;
   --menu-border-color: #edece9 !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 0 !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow: 2px 2px 0 #0f0f0f15 !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #e9e9e7 !important;
@@ -479,20 +515,21 @@
   --metadata-input-background-active: #37352f10 !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-input-font-size: 0.9em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: #37352f !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: #37352f10 !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-label-font-size: 0.9em !important;
   --metadata-label-text-color: #82817c !important;
   --metadata-label-text-color-hover: #82817c !important;
@@ -504,6 +541,9 @@
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #43b3e0 !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #edece9 !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 0 !important;
   --metadata-property-radius-focus: 0 !important;
@@ -514,11 +554,13 @@
   --modal-border-color: #0f0f0f15 !important;
   --modal-border-width: 3px !important;
   --modal-community-sidebar-width: 310px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 0 !important;
+  --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
@@ -542,8 +584,10 @@
   --nav-item-color-highlighted: white !important;
   --nav-item-color-hover: white !important;
   --nav-item-color-selected: #37352f !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px !important;
   --nav-item-parent-padding: 4px 8px !important;
+  --nav-item-radius: 0 !important;
   --nav-item-size: 14px !important;
   --nav-item-white-space: wrap !important;
   --nav-tag-background: transparent !important;
@@ -587,6 +631,9 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 650px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: #ffffff !important;
   --prompt-border-color: #0f0f0f15 !important;
   --prompt-border-width: 3px !important;
   --prompt-input-height: 40px !important;
@@ -597,6 +644,22 @@
   --radius-m: 0 !important;
   --radius-s: 0 !important;
   --radius-xl: 0 !important;
+  --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
+    linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent)) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(
+      to bottom left,
+      white,
+      transparent,
+      white
+    )
+    border-box no-repeat !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: #f1f1ef !important;
   --ribbon-background-collapsed: #ffffff !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -617,6 +680,14 @@
   --search-icon-color: #82817c !important;
   --search-icon-size: 18px !important;
   --search-result-background: #ffffff !important;
+  --setting-group-heading-color: #37352f !important;
+  --setting-group-heading-size: 15px !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: transparent !important;
+  --setting-items-border-color: #e9e9e7 !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 20px !important;
+  --setting-items-radius: 0 !important;
   --shadow-l: 5px 5px 0 #0f0f0f15 !important;
   --shadow-s: 2px 2px 0 #0f0f0f15 !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
@@ -658,6 +729,8 @@
   --status-bar-position: fixed !important;
   --status-bar-radius: 0 0 0 0 !important;
   --status-bar-text-color: #82817c !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: #ffffff !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -690,6 +763,11 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #f7f6f3 !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #f7f6f3,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 3px 3px 0 #0f0f0f15 !important;
   --tab-switcher-preview-radius: 0 !important;
   --tab-switcher-preview-shadow: 2px 2px 0 #0f0f0f15 !important;
@@ -724,9 +802,9 @@
   --table-header-border-width: 1px !important;
   --table-header-color: #37352f !important;
   --table-header-size:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --table-header-weight: 700 !important;
   --table-line-height: 1.3em !important;
   --table-row-alt-background: #37352f10 !important;
@@ -747,6 +825,7 @@
   --tag-border-width: 0px !important;
   --tag-color: white !important;
   --tag-color-hover: white !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: underline !important;
   --tag-padding-x: 7px !important;
@@ -785,17 +864,39 @@
   --toggle-thumb-radius: 0 !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 20px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: 40px !important;
+  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #37352f !important;
   --vault-profile-color-hover: #37352f !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 14px !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --raised-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
+  --shadow-edges: 0 0 transparent !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --h1-color: #37352f !important;
   --h2-color: #37352f !important;
   --h3-color: #37352f !important;
@@ -835,21 +936,21 @@
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
-  --chbx-B: 182, 118, 255 !important;
-  --chbx-C: 214, 108, 108 !important;
-  --chbx-I: 82, 139, 212 !important;
-  --chbx-N: 161, 106, 73 !important;
-  --chbx-P: 79, 165, 79 !important;
-  --chbx-R: 159, 186, 223 !important;
   --chbx-a: 248, 114, 181 !important;
   --chbx-b: 251, 146, 76 !important;
+  --chbx-B: 182, 118, 255 !important;
   --chbx-c: 149, 217, 238 !important;
+  --chbx-C: 214, 108, 108 !important;
   --chbx-d: 203, 212, 235 !important;
   --chbx-h: 168, 177, 189 !important;
   --chbx-i: 219, 1, 1 !important;
+  --chbx-I: 82, 139, 212 !important;
   --chbx-id: 202, 199, 0 !important;
+  --chbx-N: 161, 106, 73 !important;
+  --chbx-P: 79, 165, 79 !important;
   --chbx-q: 253, 175, 0 !important;
   --chbx-r: 249, 190, 123 !important;
+  --chbx-R: 159, 186, 223 !important;
   --its: "its" !important;
   --button-background: #43b3e0 !important;
   --button-border: #43b3e0 !important;
@@ -865,6 +966,7 @@
   --text: #37352f !important;
   --bullet: "" !important;
   --hr-width: auto !important;
+  --nav-item-weight-active: 700 !important;
   --vault-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -883,8 +985,9 @@
   --outline: #0f0f0f15 !important;
   --shadow-m: 3px 3px 0 #0f0f0f15 !important;
   --blockquote-padding: 12px 24px !important;
-  --nav-item-weight-active: 700 !important;
   --scrollbar-track-bg: #ffffff !important;
+  --nav-item-weight: 500 !important;
+  --nav-item-weight-hover: 700 !important;
   --highlight: rgba(55, 53, 47, 0.078) !important;
   --hr-text-offset: 12px !important;
   --nav-item-border-color: #43b3e0 !important;
@@ -893,8 +996,6 @@
   --button-background-hover: #cfcecd !important;
   --callout-margin: 5px 0;
   --graph-bg: #ffffff !important;
-  --nav-item-weight-hover: 700 !important;
-  --nav-item-weight: 500 !important;
   --input-bg: #37352f10 !important;
   --he-text-on-accent-active: #37352f !important;
   --he-text-on-accent-inactive: #37352f !important;
@@ -903,12 +1004,7 @@
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
-  --h1-border-color: #43b3e0 !important;
-  --h2-border-color: #4e5b6f !important;
-  --h3-border-color: #37352f !important;
-  --h4-border-color: #82817c !important;
-  --h5-border-color: #a09e9a !important;
-  --h6-border-color: #cfcecd !important;
+  --tab-background: #f1f1ef !important;
   --r-heading-color: #37352f !important;
   --r-heading-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -924,7 +1020,6 @@
   --kanban-lane-border: 3px solid #0f0f0f15 !important;
   --bg: #edece9 !important;
   --embed-border: 2px solid transparent !important;
-  --setting-items-background: transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #82817c !important;
   --accent2-lite: #2ea1cf !important;
@@ -985,7 +1080,6 @@
   --failure-bg: #772d2d !important;
   --faint-text: #4e5b6f !important;
   --file-font: "its" !important;
-  --file-header-background: #ffffff !important;
   --file-header-breadcrumb-color: #cfcecd !important;
   --file-header-breadcrumb-font-size: 13.5px !important;
   --file-header-color: #cfcecd !important;
@@ -1020,6 +1114,7 @@
   --graph-node-hover-fill: #37352f !important;
   --graph-node-hover-outline: white !important;
   --h1-background: transparent !important;
+  --h1-border-color: #43b3e0 !important;
   --h1-border-left-color: #e9e9e7 !important;
   --h1-border-line-color: #e9e9e7 !important;
   --h1-border-line-height: 0 !important;
@@ -1030,6 +1125,7 @@
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
+  --h2-border-color: #4e5b6f !important;
   --h2-border-left-color: #e9e9e7 !important;
   --h2-border-line-color: #e9e9e7 !important;
   --h2-border-line-height: 0 !important;
@@ -1040,6 +1136,7 @@
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
+  --h3-border-color: #37352f !important;
   --h3-border-left-color: #e9e9e7 !important;
   --h3-border-line-color: #e9e9e7 !important;
   --h3-border-line-height: 0 !important;
@@ -1050,6 +1147,7 @@
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
+  --h4-border-color: #82817c !important;
   --h4-border-left-color: #e9e9e7 !important;
   --h4-border-line-color: #e9e9e7 !important;
   --h4-border-line-height: 0 !important;
@@ -1060,6 +1158,7 @@
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
+  --h5-border-color: #a09e9a !important;
   --h5-border-left-color: #e9e9e7 !important;
   --h5-border-line-color: #e9e9e7 !important;
   --h5-border-line-height: 0 !important;
@@ -1070,6 +1169,7 @@
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
+  --h6-border-color: #cfcecd !important;
   --h6-border-left-color: #e9e9e7 !important;
   --h6-border-line-color: #e9e9e7 !important;
   --h6-border-line-height: 0 !important;
@@ -1303,7 +1403,6 @@
   --style-settings-heading-color: white !important;
   --style-settings-heading-color-hover: white !important;
   --success-bg: #599049 !important;
-  --tab-background: #f1f1ef !important;
   --tab-font-weight-active: 900 !important;
   --tab-min-width: min-content !important;
   --tab-stacked-shadow-color: #d0ddef62 !important;
@@ -1379,9 +1478,11 @@
   --bases-cards-background: #2f3437 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: #3f4447 !important;
   --bases-cards-font-size: 0.9em !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 0 !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #4c5153 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #3c4144 !important;
@@ -1439,9 +1540,22 @@
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
+  --blur-background: color-mix(in srgb, #3f4447 65%, transparent)
+    linear-gradient(#3f4447, color-mix(in srgb, #3f4447 65%, transparent)) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 500 !important;
   --bold-weight: 900 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 0 !important;
   --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
@@ -1475,6 +1589,9 @@
   --canvas-color-4: 68, 207, 110 !important;
   --canvas-color-5: 83, 223, 221 !important;
   --canvas-color-6: 168, 130, 255 !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 0 !important;
   --canvas-dot-pattern: #363636 !important;
   --caret-color: #ebebeb !important;
   --checkbox-border-color: #708dbb !important;
@@ -1540,7 +1657,7 @@
   --color-red-rgb: 251, 70, 76 !important;
   --color-yellow: #e0de71 !important;
   --color-yellow-rgb: 224, 222, 113 !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -1559,7 +1676,11 @@
   --dropdown-background-hover: #5d6265 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover: 2px 2px 0 #0f0f0f40 !important;
   --embed-border-bottom: 2px solid transparent !important;
   --embed-border-end: none !important;
@@ -1569,16 +1690,20 @@
   --embed-max-height: 4000px !important;
   --embed-padding: 0 10px 0 24px !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: #2f3437 !important;
+  --file-header-background-focused: #2f3437 !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --file-header-font-size: 15px !important;
   --file-header-font-weight: 600 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px !important;
+  --file-margins: 32px 32px !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: #3f4447 !important;
   --flair-color: #ebebeb !important;
   --focus-ring-color: #0df !important;
@@ -1592,17 +1717,17 @@
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-monospace:
     "Fira Code", "Fira Code Medium", "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -1615,7 +1740,7 @@
   --font-print:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif, "Arial" !important;
+    "Microsoft YaHei Light", sans-serif, "??", "??", "Arial" !important;
   --font-print-override:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -1625,9 +1750,9 @@
   --font-smaller: 0.9em !important;
   --font-smallest: 0.85em !important;
   --font-text:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1739,14 +1864,18 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: #4e5b6f !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #4e5b6f !important;
   --input-radius: 0 !important;
   --input-shadow: 2px 2px 0 #0f0f0f40 !important;
   --input-shadow-hover: 3px 3px 0 #0f0f0f40 !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: #4b5053 !important;
   --interactive-accent-hover: #5d6265 !important;
   --interactive-accent-hsl: 0, 49%, 49% !important;
@@ -1799,8 +1928,14 @@
   --menu-background: #373c3f !important;
   --menu-border-color: #3c4144 !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 0 !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow: 2px 2px 0 #0f0f0f40 !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #4c5153 !important;
@@ -1817,20 +1952,21 @@
   --metadata-input-background-active: #0f0f0f33 !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-input-font-size: 0.9em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: #ebebeb !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: #0f0f0f33 !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-label-font-size: 0.9em !important;
   --metadata-label-text-color: #a8abac !important;
   --metadata-label-text-color-hover: #a8abac !important;
@@ -1842,6 +1978,9 @@
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #708dbb !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #3c4144 !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 0 !important;
   --metadata-property-radius-focus: 0 !important;
@@ -1852,11 +1991,13 @@
   --modal-border-color: #0f0f0f40 !important;
   --modal-border-width: 3px !important;
   --modal-community-sidebar-width: 310px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 0 !important;
+  --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
@@ -1880,8 +2021,10 @@
   --nav-item-color-highlighted: white !important;
   --nav-item-color-hover: white !important;
   --nav-item-color-selected: #ebebeb !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px !important;
   --nav-item-parent-padding: 4px 8px !important;
+  --nav-item-radius: 0 !important;
   --nav-item-size: 14px !important;
   --nav-item-white-space: wrap !important;
   --nav-tag-background: transparent !important;
@@ -1923,6 +2066,9 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 650px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: #2f3437 !important;
   --prompt-border-color: #0f0f0f40 !important;
   --prompt-border-width: 3px !important;
   --prompt-input-height: 40px !important;
@@ -1933,6 +2079,16 @@
   --radius-m: 0 !important;
   --radius-s: 0 !important;
   --radius-xl: 0 !important;
+  --raised-background: color-mix(in srgb, #3f4447 65%, transparent)
+    linear-gradient(#3f4447, color-mix(in srgb, #3f4447 65%, transparent)) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: transparent !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: #3f4447 !important;
   --ribbon-background-collapsed: #2f3437 !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -1953,6 +2109,14 @@
   --search-icon-color: #a8abac !important;
   --search-icon-size: 18px !important;
   --search-result-background: #2f3437 !important;
+  --setting-group-heading-color: #ebebeb !important;
+  --setting-group-heading-size: 15px !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: transparent !important;
+  --setting-items-border-color: #4c5153 !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 20px !important;
+  --setting-items-radius: 0 !important;
   --shadow-l: 5px 5px 0 #0f0f0f40 !important;
   --shadow-s: 2px 2px 0 #0f0f0f40 !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
@@ -1994,6 +2158,8 @@
   --status-bar-position: fixed !important;
   --status-bar-radius: 0 0 0 0 !important;
   --status-bar-text-color: #a8abac !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: #2f3437 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
@@ -2026,6 +2192,11 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #373c3f !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #373c3f,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 3px 3px 0 #0f0f0f40 !important;
   --tab-switcher-preview-radius: 0 !important;
   --tab-switcher-preview-shadow: 2px 2px 0 #0f0f0f40 !important;
@@ -2060,9 +2231,9 @@
   --table-header-border-width: 1px !important;
   --table-header-color: white !important;
   --table-header-size:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif !important;
+    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --table-header-weight: 700 !important;
   --table-line-height: 1.3em !important;
   --table-row-alt-background: #0f0f0f33 !important;
@@ -2083,6 +2254,7 @@
   --tag-border-width: 0px !important;
   --tag-color: white !important;
   --tag-color-hover: white !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: underline !important;
   --tag-padding-x: 7px !important;
@@ -2121,12 +2293,27 @@
   --toggle-thumb-radius: 0 !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 20px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: 40px !important;
+  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #ebebeb !important;
   --vault-profile-color-hover: #ebebeb !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 14px !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
   --xfa-focus-outline: auto !important;
@@ -2171,21 +2358,21 @@
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
-  --chbx-B: 136, 94, 233 !important;
-  --chbx-C: 207, 67, 67 !important;
-  --chbx-I: 82, 139, 212 !important;
-  --chbx-N: 133, 91, 65 !important;
-  --chbx-P: 79, 165, 79 !important;
-  --chbx-R: 170, 179, 202 !important;
   --chbx-a: 248, 114, 181 !important;
   --chbx-b: 230, 129, 63 !important;
+  --chbx-B: 136, 94, 233 !important;
   --chbx-c: 149, 233, 238 !important;
+  --chbx-C: 207, 67, 67 !important;
   --chbx-d: 62, 69, 82 !important;
   --chbx-h: 92, 118, 153 !important;
   --chbx-i: 194, 42, 42 !important;
+  --chbx-I: 82, 139, 212 !important;
   --chbx-id: 231, 231, 171 !important;
+  --chbx-N: 133, 91, 65 !important;
+  --chbx-P: 79, 165, 79 !important;
   --chbx-q: 253, 175, 0 !important;
   --chbx-r: 249, 190, 123 !important;
+  --chbx-R: 170, 179, 202 !important;
   --its: "its" !important;
   --button-background: #43b3e0 !important;
   --button-border: #43b3e0 !important;
@@ -2201,6 +2388,7 @@
   --text: #ebebeb !important;
   --bullet: "" !important;
   --hr-width: auto !important;
+  --nav-item-weight-active: 700 !important;
   --vault-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -2219,8 +2407,9 @@
   --outline: #0f0f0f40 !important;
   --shadow-m: 3px 3px 0 #0f0f0f40 !important;
   --blockquote-padding: 12px 24px !important;
-  --nav-item-weight-active: 700 !important;
   --scrollbar-track-bg: #2f3437 !important;
+  --nav-item-weight: 500 !important;
+  --nav-item-weight-hover: 700 !important;
   --highlight: rgb(255, 255, 255, 0.1) !important;
   --hr-text-offset: 12px !important;
   --nav-item-border-color: #43b3e0 !important;
@@ -2229,8 +2418,6 @@
   --button-background-hover: #5d6265 !important;
   --callout-margin: 5px 0;
   --graph-bg: #2f3437 !important;
-  --nav-item-weight-hover: 700 !important;
-  --nav-item-weight: 500 !important;
   --input-bg: rgba(0, 0, 0, 0.3) !important;
   --he-text-on-accent-active: #ebebeb !important;
   --he-text-on-accent-inactive: #ebebeb !important;
@@ -2239,12 +2426,7 @@
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
-  --h1-border-color: #43b3e0 !important;
-  --h2-border-color: #708dbb !important;
-  --h3-border-color: #4e5b6f !important;
-  --h4-border-color: #5d6265 !important;
-  --h5-border-color: #3c3f43 !important;
-  --h6-border-color: #0f0f0f33 !important;
+  --tab-background: #3f4447 !important;
   --r-heading-color: #ebebeb !important;
   --r-heading-font:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -2260,7 +2442,6 @@
   --kanban-lane-border: 3px solid #0f0f0f40 !important;
   --bg: #3c4144 !important;
   --embed-border: 2px solid transparent !important;
-  --setting-items-background: transparent !important;
   --accent-text: #dcddde !important;
   --accent2: #a8abac !important;
   --accent2-lite: #2ea1cf !important;
@@ -2321,7 +2502,6 @@
   --failure-bg: #772d2d !important;
   --faint-text: #4e5b6f !important;
   --file-font: "its" !important;
-  --file-header-background: #2f3437 !important;
   --file-header-breadcrumb-color: #5d6265 !important;
   --file-header-breadcrumb-font-size: 13.5px !important;
   --file-header-color: #5d6265 !important;
@@ -2356,6 +2536,7 @@
   --graph-node-hover-fill: #ebebeb !important;
   --graph-node-hover-outline: white !important;
   --h1-background: transparent !important;
+  --h1-border-color: #43b3e0 !important;
   --h1-border-left-color: #4c5153 !important;
   --h1-border-line-color: #4c5153 !important;
   --h1-border-line-height: 0 !important;
@@ -2366,6 +2547,7 @@
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
+  --h2-border-color: #708dbb !important;
   --h2-border-left-color: #4c5153 !important;
   --h2-border-line-color: #4c5153 !important;
   --h2-border-line-height: 0 !important;
@@ -2376,6 +2558,7 @@
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
+  --h3-border-color: #4e5b6f !important;
   --h3-border-left-color: #4c5153 !important;
   --h3-border-line-color: #4c5153 !important;
   --h3-border-line-height: 0 !important;
@@ -2386,6 +2569,7 @@
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
+  --h4-border-color: #5d6265 !important;
   --h4-border-left-color: #4c5153 !important;
   --h4-border-line-color: #4c5153 !important;
   --h4-border-line-height: 0 !important;
@@ -2396,6 +2580,7 @@
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
+  --h5-border-color: #3c3f43 !important;
   --h5-border-left-color: #4c5153 !important;
   --h5-border-line-color: #4c5153 !important;
   --h5-border-line-height: 0 !important;
@@ -2406,6 +2591,7 @@
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
+  --h6-border-color: #0f0f0f33 !important;
   --h6-border-left-color: #4c5153 !important;
   --h6-border-line-color: #4c5153 !important;
   --h6-border-line-height: 0 !important;
@@ -2639,7 +2825,6 @@
   --style-settings-heading-color: white !important;
   --style-settings-heading-color-hover: white !important;
   --success-bg: #32603e !important;
-  --tab-background: #3f4447 !important;
   --tab-font-weight-active: 900 !important;
   --tab-min-width: min-content !important;
   --tab-stacked-shadow-color: #06080c60 !important;
@@ -2734,7 +2919,7 @@ body {
   .page > div#quartz-body div.sidebar.right {
     background-color: light-dark(rgb(241, 241, 239), rgb(63, 68, 71));
     color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
-    border-left: 2px solid light-dark(rgb(241, 241, 239), rgb(63, 68, 71));
+    border-left: 0px light-dark(rgb(241, 241, 239), rgb(63, 68, 71));
   }
 
   .page > div#quartz-body div.sidebar.left {
@@ -2762,17 +2947,19 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(46, 161, 207);
+    outline: rgb(46, 161, 207) none 0px;
+    text-decoration: rgb(46, 161, 207);
     text-decoration-color: rgb(46, 161, 207);
-    text-decoration-line: none;
+    text-decoration-line: underline;
     text-decoration-style: solid;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(67, 179, 224);
+    color: rgb(46, 161, 207);
     cursor: pointer;
     filter: none;
     font-family:
@@ -2790,10 +2977,12 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(67, 179, 224);
-    text-decoration-color: rgb(67, 179, 224);
-    text-decoration-line: none;
+    outline: rgb(46, 161, 207) none 0px;
+    text-decoration: rgb(46, 161, 207);
+    text-decoration-color: rgb(46, 161, 207);
+    text-decoration-line: underline;
     text-decoration-style: solid;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -2817,10 +3006,12 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgba(186, 64, 64, 0.3);
+    outline: rgb(93, 98, 101) none 0px;
+    text-decoration: rgba(186, 64, 64, 0.3);
     text-decoration-color: rgba(186, 64, 64, 0.3);
-    text-decoration-line: none;
+    text-decoration-line: underline;
     text-decoration-style: solid;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -2844,7 +3035,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
     cursor: auto;
     filter: none;
     font-family:
@@ -2862,11 +3053,13 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(235, 235, 235);
-    text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    outline: rgb(168, 171, 172) none 0px;
+    text-decoration: rgb(168, 171, 172);
+    text-decoration-color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
     text-decoration-line: none;
     text-decoration-style: solid;
-    user-select: text;
+    transition: all;
+    user-select: none;
   }
 
   .page article p > strong,
@@ -2890,10 +3083,12 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 900;
-    text-decoration: none solid rgb(235, 235, 235);
+    outline: rgb(235, 235, 235) none 0px;
+    text-decoration: rgb(235, 235, 235);
     text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -2918,10 +3113,12 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 900;
-    text-decoration: none solid rgb(235, 235, 235);
+    outline: rgb(235, 235, 235) none 0px;
+    text-decoration: rgb(235, 235, 235);
     text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -2946,10 +3143,12 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(235, 235, 235);
+    outline: rgb(235, 235, 235) none 0px;
+    text-decoration: rgb(235, 235, 235);
     text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -2974,10 +3173,12 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(235, 235, 235);
+    outline: rgb(235, 235, 235) none 0px;
+    text-decoration: rgb(235, 235, 235);
     text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -3001,10 +3202,12 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(235, 235, 235);
+    outline: rgb(235, 235, 235) none 0px;
+    text-decoration: rgb(235, 235, 235);
     text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
     border: 0px rgb(0, 0, 0);
     border-top-left-radius: 0px;
@@ -3037,10 +3240,13 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: line-through 1px solid rgb(235, 235, 235);
+    outline: rgb(235, 235, 235) none 0px;
+    text-decoration: line-through 1px rgb(235, 235, 235);
     text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     text-decoration-line: line-through;
     text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    transition: all;
     user-select: text;
   }
 
@@ -3063,14 +3269,14 @@ body {
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(45, 170, 219, 0.3);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
   }
 
@@ -3086,22 +3292,25 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(45, 170, 219, 0.3);
     border: 0px light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
   }
 
   hr {
-    border: 0px rgba(0, 0, 0, 0);
-    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-color: rgb(128, 128, 128)
+      light-dark(rgb(241, 241, 239), rgb(63, 68, 71))
+      light-dark(rgb(241, 241, 239), rgb(63, 68, 71));
+    border-style: solid solid none none;
+    border-width: 0px 2px 0px 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3112,8 +3321,8 @@ body {
     border-end-end-radius: 0px;
     box-shadow: none;
     margin: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
+    margin-block-end: 32px;
+    margin-block-start: 32px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
@@ -3128,7 +3337,7 @@ body {
     > ul
     > li
     > .match-tag {
-    align-items: center;
+    align-items: normal;
     background-color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
     display: flex;
     font-family:
@@ -3148,14 +3357,14 @@ body {
     font-weight: 400;
     margin-inline-start: 0px;
     border: 0px solid light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px;
-    border-start-start-radius: 28px;
-    border-start-end-radius: 28px;
-    border-end-start-radius: 28px;
-    border-end-end-radius: 28px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   a.internal.tag-link::before {
@@ -3168,18 +3377,18 @@ body {
   }
 
   ul > li::marker {
-    background-color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
-    border: 0px light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-start-start-radius: 50%;
-    border-start-end-radius: 50%;
-    border-end-start-radius: 50%;
-    border-end-end-radius: 50%;
-    color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
-    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    pointer-events: auto;
     transform: none;
   }
 
@@ -3189,75 +3398,8 @@ body {
   }
 
   ol > li::marker {
-    background-color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
-    border: 0px light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-start-start-radius: 50%;
-    border-start-end-radius: 50%;
-    border-end-start-radius: 50%;
-    border-end-end-radius: 50%;
-    color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
-    pointer-events: none;
-    transform: none;
-  }
-
-  code {
-    background-color: light-dark(rgb(247, 246, 243), rgb(60, 65, 68));
-    border: 0px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
-    font-family: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
-    padding: 2.16px 4.32px;
-  }
-
-  pre > code,
-  pre:has(> code) {
-    background-color: light-dark(rgb(247, 246, 243), rgb(60, 65, 68));
-    border: 0px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    overflow-x: auto;
-    padding: 12px 16px;
-    white-space-collapse: preserve;
-    text-wrap-mode: wrap;
-  }
-
-  pre:has(> code) {
-    background-color: light-dark(rgb(247, 246, 243), rgb(60, 65, 68));
-    border: 0px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    overflow-x: auto;
-    padding: 12px 16px;
-    white-space-collapse: preserve;
-    text-wrap-mode: wrap;
-  }
-
-  input[type="checkbox"] {
-    appearance: auto;
-    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3266,14 +3408,82 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 1px 2px;
-    margin: 0px;
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    pointer-events: auto;
+    transform: none;
+  }
+
+  code {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    font-family: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
+    padding: 0px;
+  }
+
+  pre > code,
+  pre:has(> code) {
+    background-color: light-dark(rgb(247, 246, 243), rgb(60, 65, 68));
+    border: 0px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    overflow-x: visible;
+    padding: 12px 16px;
+    white-space-collapse: preserve;
+    text-wrap-mode: nowrap;
+  }
+
+  pre:has(> code) {
+    background-color: light-dark(rgb(247, 246, 243), rgb(60, 65, 68));
+    border: 0px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    overflow-x: visible;
+    padding: 12px 16px;
+    white-space-collapse: preserve;
+    text-wrap-mode: nowrap;
+  }
+
+  input[type="checkbox"] {
+    appearance: auto;
+    border: 1px solid light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+    margin: 0px 8px 0px -22.4px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: auto;
-    position: static;
+    width: 16px;
+    transition: box-shadow 0.15s ease-in-out;
+    position: relative;
     top: auto;
   }
 
@@ -3283,18 +3493,18 @@ body {
   }
 
   input[type="checkbox"]:checked:after {
-    content: none;
+    content: normal;
     top: auto;
     inset-inline-start: auto;
     position: static;
     width: auto;
-    display: inline;
+    display: list-item;
     background-color: rgba(0, 0, 0, 0);
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(207, 206, 205), rgb(93, 98, 101));
-    text-decoration: none solid rgb(93, 98, 101);
+    text-decoration: rgb(93, 98, 101);
     text-decoration-color: light-dark(rgb(207, 206, 205), rgb(93, 98, 101));
   }
 
@@ -3317,14 +3527,14 @@ body {
     font-style: normal;
     padding-bottom: 12px;
     padding-top: 12px;
-    padding-inline-start: 24px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
   }
 
   .data-footnote-backref {
     color: rgb(78, 91, 111);
-    text-decoration: none solid rgb(78, 91, 111);
+    text-decoration: rgb(78, 91, 111);
   }
 
   .search > .search-button {
@@ -3333,14 +3543,14 @@ body {
       rgba(15, 15, 15, 0.2)
     );
     border: 1px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     font-family:
       Inter,
@@ -3362,20 +3572,20 @@ body {
     background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
     border: 3px solid
       light-dark(rgba(15, 15, 15, 0.082), rgba(15, 15, 15, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     box-shadow: rgba(15, 15, 15, 0.25) 5px 5px 0px 0px;
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
-    border: 0px light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px inset light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     border-bottom: 1px solid light-dark(rgb(247, 246, 243), rgb(55, 60, 63));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3408,10 +3618,12 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(235, 235, 235);
+    outline: rgb(235, 235, 235) none 0px;
+    text-decoration: rgb(235, 235, 235);
     text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -3419,14 +3631,14 @@ body {
   .search > .search-container > .search-space > .search-layout.display-results {
     border: 3px solid
       light-dark(rgba(15, 15, 15, 0.082), rgba(15, 15, 15, 0.25));
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .search
@@ -3444,14 +3656,14 @@ body {
     > .results-container
     .result-card {
     border: 0px light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .search
@@ -3657,15 +3869,23 @@ body {
   }
 
   li.depth-0 {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   ::-webkit-scrollbar {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(47, 52, 55) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(47, 52, 55) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3674,20 +3894,32 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(47, 52, 55) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(47, 52, 55) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
   }
 
   ::-webkit-scrollbar-track {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(47, 52, 55) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3699,7 +3931,11 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(47, 52, 55) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
   }
 
   body {
@@ -3708,21 +3944,23 @@ body {
   }
 
   .callout {
+    --callout-color: 2, 122, 255;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     mix-blend-mode: normal;
     padding: 12px 16px;
   }
 
   .callout .callout-title {
+    gap: 4px;
     border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3745,6 +3983,7 @@ body {
   }
 
   .callout[data-callout="note"] {
+    --callout-color: 2, 122, 255;
     background-color: light-dark(
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
@@ -3752,17 +3991,18 @@ body {
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="abstract"] {
+    --callout-color: 83, 223, 221;
     background-color: light-dark(
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
@@ -3770,17 +4010,18 @@ body {
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="info"] {
+    --callout-color: 2, 122, 255;
     background-color: light-dark(
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
@@ -3788,17 +4029,18 @@ body {
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="todo"] {
+    --callout-color: 2, 122, 255;
     background-color: light-dark(
       rgba(8, 109, 221, 0.1),
       rgba(2, 122, 255, 0.1)
@@ -3806,17 +4048,18 @@ body {
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="tip"] {
+    --callout-color: 83, 223, 221;
     background-color: light-dark(
       rgba(0, 191, 188, 0.1),
       rgba(83, 223, 221, 0.1)
@@ -3824,17 +4067,18 @@ body {
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="success"] {
+    --callout-color: 68, 207, 110;
     background-color: light-dark(
       rgba(8, 185, 78, 0.1),
       rgba(68, 207, 110, 0.1)
@@ -3842,17 +4086,18 @@ body {
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="question"] {
+    --callout-color: 233, 151, 63;
     background-color: light-dark(
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
@@ -3860,17 +4105,18 @@ body {
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="warning"] {
+    --callout-color: 233, 151, 63;
     background-color: light-dark(
       rgba(236, 117, 0, 0.1),
       rgba(233, 151, 63, 0.1)
@@ -3878,35 +4124,18 @@ body {
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="danger"] {
-    background-color: light-dark(
-      rgba(233, 49, 71, 0.1),
-      rgba(251, 70, 76, 0.1)
-    );
-    mix-blend-mode: light-dark(darken, lighten);
-    border: 0px solid
-      light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-  }
-
-  .callout[data-callout="failure"] {
+    --callout-color: 251, 70, 76;
     background-color: light-dark(
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
@@ -3914,70 +4143,92 @@ body {
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
-  .callout[data-callout="bug"] {
+  .callout[data-callout="failure"] {
+    --callout-color: 251, 70, 76;
     background-color: light-dark(
       rgba(233, 49, 71, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  .callout[data-callout="bug"] {
+    --callout-color: 251, 70, 76;
+    background-color: light-dark(
+      rgba(233, 49, 71, 0.1),
+      rgba(251, 70, 76, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid
+      light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="example"] {
+    --callout-color: 168, 130, 255;
     background-color: light-dark(
       rgba(120, 82, 238, 0.1),
       rgba(168, 130, 255, 0.1)
     );
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(120, 82, 238, 0.25), rgba(168, 130, 255, 0.25));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="quote"] {
-    background-color: rgba(158, 158, 158, 0.1);
-    mix-blend-mode: light-dark(darken, lighten);
+    --callout-color: rgb(186, 64, 64);
+    background-color: rgba(0, 0, 0, 0);
+    mix-blend-mode: normal;
     border: 0px solid light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     border-left-width: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   table {
     background-color: rgba(0, 0, 0, 0);
-    border-collapse: collapse;
+    border-collapse: separate;
     color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     font-family:
       Inter,
@@ -3994,7 +4245,7 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     table-layout: auto;
-    width: auto;
+    width: 196.766px;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -4006,7 +4257,7 @@ body {
     border-end-end-radius: 0px;
     margin: 16px 0px 0px;
     margin-block-end: 0px;
-    margin-block-start: 16px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
@@ -4029,12 +4280,9 @@ body {
   }
 
   th {
-    background-color: light-dark(
-      rgba(55, 53, 47, 0.063),
-      rgba(15, 15, 15, 0.2)
-    );
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(55, 53, 47), rgb(255, 255, 255));
-    font-weight: 600;
+    font-weight: 700;
     text-align: start;
     vertical-align: top;
     border: 1px solid light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
@@ -4046,17 +4294,14 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 0px;
+    padding: 4px 8px;
   }
 
   td {
-    background-color: light-dark(
-      rgba(55, 53, 47, 0.063),
-      rgba(15, 15, 15, 0.2)
-    );
+    background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     font-weight: 400;
-    text-align: center;
+    text-align: start;
     vertical-align: top;
     border: 1px solid light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
     border-top-left-radius: 0px;
@@ -4067,7 +4312,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 0px;
+    padding: 4px 8px;
   }
 
   tr {
@@ -4083,10 +4328,22 @@ body {
     border-end-end-radius: 0px;
   }
 
+  tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: light-dark(
+      rgba(55, 53, 47, 0.063),
+      rgba(15, 15, 15, 0.2)
+    );
+  }
+
   img {
+    border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: 100%;
+    max-width: none;
     object-fit: fill;
     border: 0px light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     border-top-left-radius: 0px;
@@ -4117,8 +4374,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 16px 40px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
     margin-inline-end: 40px;
     margin-inline-start: 40px;
     padding: 0px;
@@ -4152,9 +4409,10 @@ body {
   }
 
   video {
+    border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: 100%;
+    max-width: none;
     object-fit: contain;
     border: 0px light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     border-top-left-radius: 0px;
@@ -4186,10 +4444,105 @@ body {
     padding: 0px;
   }
 
+  .transclude {
+    background-color: rgba(0, 0, 0, 0);
+    border-right-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-left: 2px solid light-dark(rgb(67, 179, 224), rgb(75, 80, 83));
+    border-right-width: 0px;
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .transclude-inner {
+    background-color: rgba(0, 0, 0, 0);
+    border-right-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-left: 2px solid light-dark(rgb(67, 179, 224), rgb(75, 80, 83));
+    border-right-width: 0px;
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .file-embed {
+    background-color: light-dark(rgb(241, 241, 239), rgb(63, 68, 71));
+    border-color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 8px;
+  }
+
+  .metadata {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    border: 0px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px 0px 32px;
+    padding: 8px 0px;
+  }
+
+  .metadata-properties {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    border-color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 6px;
+    height: 15px;
     border: 0px light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -4216,11 +4569,8 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(
-      rgba(55, 53, 47, 0.063),
-      rgba(15, 15, 15, 0.2)
-    );
-    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
     font-family:
       Inter,
       -apple-system,
@@ -4235,15 +4585,15 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
-    border: 1px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
+    border: 0px solid light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     padding: 4px 8px;
   }
 
@@ -4295,7 +4645,7 @@ body {
 
   kbd {
     background-color: light-dark(rgb(247, 246, 243), rgb(60, 65, 68));
-    box-shadow: none;
+    box-shadow: rgba(15, 15, 15, 0.25) 0px 2px 0px 0px;
     color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     font-family: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
     font-size: 14.4px;
@@ -4304,17 +4654,17 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
     padding: 1.44px 3.6px;
   }
 
   dl {
     margin: 16px 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
@@ -4359,117 +4709,117 @@ body {
   }
 
   li.task-list-item[data-task="-"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(203, 212, 235), rgb(62, 69, 82));
+    text-decoration: rgb(62, 69, 82);
+    text-decoration-color: light-dark(rgb(203, 212, 235), rgb(62, 69, 82));
   }
 
   li.task-list-item[data-task=">"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    text-decoration: rgb(235, 235, 235);
+    text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
   }
 
   li.task-list-item[data-task="/"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    text-decoration: rgb(168, 171, 172);
+    text-decoration-color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
   }
 
   li.task-list-item[data-task="?"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(253, 175, 0);
+    text-decoration: rgb(253, 175, 0);
+    text-decoration-color: rgb(253, 175, 0);
   }
 
   li.task-list-item[data-task="!"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(219, 1, 1), rgb(194, 42, 42));
+    text-decoration: rgb(194, 42, 42);
+    text-decoration-color: light-dark(rgb(219, 1, 1), rgb(194, 42, 42));
   }
 
   li.task-list-item[data-task="*"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    text-decoration: rgb(235, 235, 235);
+    text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
   }
 
   li.task-list-item[data-task="l"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    text-decoration: rgb(235, 235, 235);
+    text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
   }
 
   li.task-list-item[data-task="b"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(251, 146, 76), rgb(230, 129, 63));
+    text-decoration: rgb(230, 129, 63);
+    text-decoration-color: light-dark(rgb(251, 146, 76), rgb(230, 129, 63));
   }
 
   li.task-list-item[data-task="i"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(202, 199, 0), rgb(231, 231, 171));
+    text-decoration: rgb(231, 231, 171);
+    text-decoration-color: light-dark(rgb(202, 199, 0), rgb(231, 231, 171));
   }
 
   li.task-list-item[data-task="S"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    text-decoration: rgb(235, 235, 235);
+    text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
   }
 
   li.task-list-item[data-task="I"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(82, 139, 212);
+    text-decoration: rgb(82, 139, 212);
+    text-decoration-color: rgb(82, 139, 212);
   }
 
   li.task-list-item[data-task="p"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(159, 186, 223), rgb(170, 179, 202));
+    text-decoration: rgb(170, 179, 202);
+    text-decoration-color: light-dark(rgb(159, 186, 223), rgb(170, 179, 202));
   }
 
   li.task-list-item[data-task="c"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(149, 217, 238), rgb(149, 233, 238));
+    text-decoration: rgb(149, 233, 238);
+    text-decoration-color: light-dark(rgb(149, 217, 238), rgb(149, 233, 238));
   }
 
   li.task-list-item[data-task="f"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(161, 106, 73), rgb(133, 91, 65));
+    text-decoration: rgb(133, 91, 65);
+    text-decoration-color: light-dark(rgb(161, 106, 73), rgb(133, 91, 65));
   }
 
   li.task-list-item[data-task="k"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    text-decoration: rgb(235, 235, 235);
+    text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
   }
 
   li.task-list-item[data-task="u"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    text-decoration: rgb(235, 235, 235);
+    text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
   }
 
   li.task-list-item[data-task="d"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: rgb(82, 139, 212);
+    text-decoration: rgb(82, 139, 212);
+    text-decoration-color: rgb(82, 139, 212);
   }
 
   li.task-list-item[data-task="w"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    text-decoration: rgb(235, 235, 235);
+    text-decoration-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
   }
 
   .katex-display > .katex {
     display: block;
     text-align: center;
-    white-space-collapse: break-spaces;
+    white-space-collapse: collapse;
     text-wrap-mode: wrap;
     font-family:
       Inter,
@@ -4526,20 +4876,20 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 500;
-    text-decoration: none solid rgb(235, 235, 235);
+    text-decoration: rgb(235, 235, 235);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
     background-color: light-dark(rgb(67, 179, 224), rgb(75, 80, 83));
     border: 0px light-dark(rgb(255, 255, 255), rgb(112, 141, 187));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(255, 255, 255), rgb(112, 141, 187));
     cursor: default;
     transition-behavior: normal;
@@ -4570,7 +4920,7 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 700;
-    text-decoration: none solid rgb(235, 235, 235);
+    text-decoration: rgb(235, 235, 235);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -4591,20 +4941,279 @@ body {
       "Microsoft YaHei Light",
       sans-serif;
     font-weight: 700;
-    text-decoration: none solid rgb(235, 235, 235);
+    text-decoration: rgb(235, 235, 235);
+  }
+
+  .graph > .graph-outer > .global-graph-icon {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    cursor: default;
+    border-color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  footer {
+    background-color: light-dark(rgb(241, 241, 239), rgb(63, 68, 71));
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    border-color: light-dark(rgb(67, 179, 224), rgb(112, 141, 187));
+    border-style: solid;
+    border-width: 1px 0px 0px 1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  footer ul li a {
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    text-decoration: rgb(168, 171, 172);
+  }
+
+  .recent-notes > h3 {
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    font-weight: 400;
+  }
+
+  .recent-notes > ul.recent-ul > li {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    text-decoration: rgb(235, 235, 235);
+  }
+
+  .recent-notes > ul.recent-ul > li .section > .meta {
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+  }
+
+  ul.section-ul {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  li.section-li {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  li.section-li > .section > .desc > h3 > a {
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    text-decoration: rgb(235, 235, 235);
+  }
+
+  li.section-li > .section .meta {
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+  }
+
+  .darkmode {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    cursor: default;
+    border-color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .darkmode svg {
+    stroke: rgb(168, 171, 172);
+    color: light-dark(rgb(130, 129, 124), rgb(168, 171, 172));
+  }
+
+  .breadcrumb-container {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(207, 206, 205), rgb(93, 98, 101));
+    border-color: light-dark(rgb(207, 206, 205), rgb(93, 98, 101));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .breadcrumb-element p {
+    color: rgb(78, 91, 111);
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+  }
+
+  .navigation-progress {
+    background-color: light-dark(rgb(241, 241, 239), rgb(63, 68, 71));
+  }
+
+  .page-header h2.page-title {
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+  }
+
+  .katex-display {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .footnotes {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-top-width: 0px;
+    color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+  }
+
+  .table-container {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .spacer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ul.overflow {
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
+    border-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  ol.overflow {
+    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
+    border-color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   figure[data-rehype-pretty-code-figure] {
     background-color: light-dark(rgb(247, 246, 243), rgb(60, 65, 68));
     border: 0px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
@@ -4612,29 +5221,29 @@ body {
     color: light-dark(rgb(55, 53, 47), rgb(235, 235, 235));
     font-family: monospace;
     border: 0px solid light-dark(rgb(233, 233, 231), rgb(76, 81, 83));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   pre > code > [data-line] {
     background-color: rgba(0, 0, 0, 0);
-    border-left: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-left: 0px light-dark(rgb(224, 172, 0), rgb(224, 222, 113));
   }
 
   pre > code > [data-line][data-highlighted-line] {
     background-color: rgba(0, 0, 0, 0);
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-left-color: light-dark(rgb(224, 172, 0), rgb(224, 222, 113));
   }
 
   pre > code [data-highlighted-chars] {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(224, 172, 0), rgb(224, 222, 113));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
