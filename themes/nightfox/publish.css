@@ -190,9 +190,11 @@ body.theme-light {
   --bases-cards-background: #f6f2ee !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: #eae3dc !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #d3c7bb !important;
   --bases-cards-shadow-hover: 0 0 0 1px #aab0ad !important;
@@ -247,9 +249,22 @@ body.theme-light {
   --blockquote-border-color: rgb(77, 152, 157) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(in srgb, #f6f2ee 65%, transparent)
+    linear-gradient(#f6f2ee, color-mix(in srgb, #f6f2ee 65%, transparent)) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 5px !important;
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
@@ -283,6 +298,9 @@ body.theme-light {
   --canvas-color-4: 142, 186, 164 !important;
   --canvas-color-5: 122, 213, 214 !important;
   --canvas-color-6: 186, 161, 226 !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: #aab0ad !important;
   --caret-color: #3d2b5a !important;
   --checkbox-border-color: #99868a !important;
@@ -348,7 +366,7 @@ body.theme-light {
   --color-red-rgb: 165, 34, 47 !important;
   --color-yellow: #ac5402 !important;
   --color-yellow-rgb: 172, 84, 2 !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -367,7 +385,11 @@ body.theme-light {
   --dropdown-background-hover: #f6f2ee !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
     0 0 0 1px #d3c7bb, inset 0 0 0 1px #d3c7bb !important;
   --embed-border-bottom: none !important;
@@ -378,16 +400,21 @@ body.theme-light {
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: #f6f2ee !important;
+  --file-header-background-focused: #f6f2ee !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px !important;
+  --file-margins: 32px 32px !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: #e4dcd4 !important;
   --flair-color: #3d2b5a !important;
   --focus-ring-color: #0df !important;
@@ -396,24 +423,25 @@ body.theme-light {
   --font-bold: 700 !important;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -423,16 +451,16 @@ body.theme-light {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "Arial" !important;
+  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -544,9 +572,11 @@ body.theme-light {
   --inline-title-weight: 300 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: #99868a !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #99868a !important;
   --input-radius: 5px !important;
@@ -558,6 +588,8 @@ body.theme-light {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: rgb(77, 152, 157) !important;
   --interactive-accent-hover: rgb(81, 166, 169) !important;
   --interactive-accent-hsl: 185, 34%, 43% !important;
@@ -610,8 +642,14 @@ body.theme-light {
   --menu-background: #eae3dc !important;
   --menu-border-color: #aab0ad !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
@@ -630,19 +668,22 @@ body.theme-light {
   --metadata-input-background-active: rgba(61, 43, 90, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: #3d2b5a !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(61, 43, 90, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #643f61 !important;
@@ -655,6 +696,9 @@ body.theme-light {
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #a4a2a1 !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #aab0ad !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -665,11 +709,13 @@ body.theme-light {
   --modal-border-color: #aab0ad !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 12px !important;
+  --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 228, 220, 212 !important;
   --mono-rgb-100: 61, 43, 90 !important;
@@ -693,8 +739,10 @@ body.theme-light {
   --nav-item-color-highlighted: rgb(72, 141, 147) !important;
   --nav-item-color-hover: #3d2b5a !important;
   --nav-item-color-selected: #3d2b5a !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
+  --nav-item-radius: 4px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
@@ -738,6 +786,9 @@ body.theme-light {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: #f6f2ee !important;
   --prompt-border-color: #9f9496 !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -748,6 +799,22 @@ body.theme-light {
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
+  --raised-background: color-mix(in srgb, #f6f2ee 65%, transparent)
+    linear-gradient(#f6f2ee, color-mix(in srgb, #f6f2ee 65%, transparent)) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(
+      to bottom left,
+      white,
+      transparent,
+      white
+    )
+    border-box no-repeat !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: #e4dcd4 !important;
   --ribbon-background-collapsed: #eae3dc !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -768,6 +835,14 @@ body.theme-light {
   --search-icon-color: #643f61 !important;
   --search-icon-size: 18px !important;
   --search-result-background: #f6f2ee !important;
+  --setting-group-heading-color: #3d2b5a !important;
+  --setting-group-heading-size: 15px !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: #eae3dc !important;
+  --setting-items-border-color: #d3c7bb !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 20px !important;
+  --setting-items-radius: 12px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
@@ -800,7 +875,7 @@ body.theme-light {
   --slider-thumb-border-color: #aab0ad !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
+  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: #d3c7bb !important;
@@ -813,6 +888,8 @@ body.theme-light {
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
   --status-bar-text-color: #643f61 !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: #f6f2ee !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(61, 43, 90, 0.15) !important;
@@ -845,6 +922,11 @@ body.theme-light {
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #eae3dc !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #eae3dc,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(61, 43, 90, 0.05) !important;
@@ -898,6 +980,7 @@ body.theme-light {
   --tag-border-width: 0px !important;
   --tag-color: rgb(72, 141, 147) !important;
   --tag-color-hover: rgb(72, 141, 147) !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
@@ -936,17 +1019,39 @@ body.theme-light {
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: 40px !important;
+  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #3d2b5a !important;
   --vault-profile-color-hover: #3d2b5a !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(228, 220, 212, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --raised-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
+  --shadow-edges: 0 0 transparent !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --h1-color: #302b5d !important;
   --h2-color: #302b5d !important;
   --h3-color: #302b5d !important;
@@ -1020,9 +1125,11 @@ body.theme-dark {
   --bases-cards-background: #192330 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: #151d28 !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #243347 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #29394f !important;
@@ -1077,9 +1184,22 @@ body.theme-dark {
   --blockquote-border-color: rgb(84, 175, 176) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(in srgb, #29394f 65%, transparent)
+    linear-gradient(#29394f, color-mix(in srgb, #29394f 65%, transparent)) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 5px !important;
   --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
@@ -1113,6 +1233,9 @@ body.theme-dark {
   --canvas-color-4: 129, 178, 154 !important;
   --canvas-color-5: 99, 205, 207 !important;
   --canvas-color-6: 157, 121, 214 !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: #29394f !important;
   --caret-color: #cdcecf !important;
   --checkbox-border-color: #5d728e !important;
@@ -1178,7 +1301,7 @@ body.theme-dark {
   --color-red-rgb: 201, 79, 109 !important;
   --color-yellow: #dbc074 !important;
   --color-yellow-rgb: 219, 192, 116 !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -1197,7 +1320,11 @@ body.theme-dark {
   --dropdown-background-hover: #39506d !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
     0 0 0 1px #243347, inset 0 0 0 1px #243347 !important;
   --embed-border-bottom: none !important;
@@ -1208,16 +1335,21 @@ body.theme-dark {
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: #192330 !important;
+  --file-header-background-focused: #192330 !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px !important;
+  --file-margins: 32px 32px !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: #29394f !important;
   --flair-color: #cdcecf !important;
   --focus-ring-color: #0df !important;
@@ -1226,24 +1358,25 @@ body.theme-dark {
   --font-bold: 700 !important;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-monospace:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -1253,16 +1386,16 @@ body.theme-dark {
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "Arial" !important;
+  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1374,9 +1507,11 @@ body.theme-dark {
   --inline-title-weight: 300 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: #5d728e !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #5d728e !important;
   --input-radius: 5px !important;
@@ -1388,6 +1523,8 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: rgb(84, 175, 176) !important;
   --interactive-accent-hover: rgb(111, 190, 188) !important;
   --interactive-accent-hsl: 181, 37%, 51% !important;
@@ -1440,8 +1577,14 @@ body.theme-dark {
   --menu-background: #151d28 !important;
   --menu-border-color: #29394f !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
@@ -1460,19 +1603,22 @@ body.theme-dark {
   --metadata-input-background-active: rgba(205, 206, 207, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: #cdcecf !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(205, 206, 207, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #aeafb0 !important;
@@ -1485,6 +1631,9 @@ body.theme-dark {
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #39506d !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #29394f !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -1495,11 +1644,13 @@ body.theme-dark {
   --modal-border-color: #29394f !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 12px !important;
+  --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 19, 26, 36 !important;
   --mono-rgb-100: 205, 206, 207 !important;
@@ -1523,8 +1674,10 @@ body.theme-dark {
   --nav-item-color-highlighted: rgb(111, 190, 188) !important;
   --nav-item-color-hover: #cdcecf !important;
   --nav-item-color-selected: #cdcecf !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
+  --nav-item-radius: 4px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
@@ -1566,6 +1719,9 @@ body.theme-dark {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: #192330 !important;
   --prompt-border-color: #496283 !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -1576,6 +1732,16 @@ body.theme-dark {
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
+  --raised-background: color-mix(in srgb, #29394f 65%, transparent)
+    linear-gradient(#29394f, color-mix(in srgb, #29394f 65%, transparent)) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: transparent !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: #131a24 !important;
   --ribbon-background-collapsed: #151d28 !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -1596,6 +1762,14 @@ body.theme-dark {
   --search-icon-color: #aeafb0 !important;
   --search-icon-size: 18px !important;
   --search-result-background: #192330 !important;
+  --setting-group-heading-color: #cdcecf !important;
+  --setting-group-heading-size: 15px !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: #151d28 !important;
+  --setting-items-border-color: #243347 !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 20px !important;
+  --setting-items-radius: 12px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -1628,7 +1802,7 @@ body.theme-dark {
   --slider-thumb-border-color: #29394f !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
+  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: #243347 !important;
@@ -1641,6 +1815,8 @@ body.theme-dark {
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
   --status-bar-text-color: #aeafb0 !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: #192330 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(205, 206, 207, 0.15) !important;
@@ -1673,6 +1849,11 @@ body.theme-dark {
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #151d28 !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #151d28,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(205, 206, 207, 0.05) !important;
@@ -1726,6 +1907,7 @@ body.theme-dark {
   --tag-border-width: 0px !important;
   --tag-color: rgb(111, 190, 188) !important;
   --tag-color-hover: rgb(111, 190, 188) !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
@@ -1764,12 +1946,27 @@ body.theme-dark {
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: 40px !important;
+  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #cdcecf !important;
   --vault-profile-color-hover: #cdcecf !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(19, 26, 36, 0.6) !important;
   --xfa-focus-outline: auto !important;
@@ -1835,22 +2032,26 @@ body .markdown-rendered a.external-link {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: underline solid rgb(110, 189, 187);
+  outline: rgb(110, 189, 187) none 0px;
+  text-decoration: underline rgb(110, 189, 187);
   text-decoration-color: light-dark(rgb(72, 141, 147), rgb(110, 189, 187));
   text-decoration-line: underline;
   text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
   user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(82, 167, 170), rgb(134, 202, 197));
+  color: light-dark(rgb(72, 141, 147), rgb(110, 189, 187));
   cursor: pointer;
   filter: none;
   font-family:
@@ -1859,17 +2060,21 @@ body .markdown-rendered a.internal-link {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: underline solid rgb(134, 202, 197);
-  text-decoration-color: light-dark(rgb(82, 167, 170), rgb(134, 202, 197));
+  outline: rgb(110, 189, 187) none 0px;
+  text-decoration: underline rgb(110, 189, 187);
+  text-decoration-color: light-dark(rgb(72, 141, 147), rgb(110, 189, 187));
   text-decoration-line: underline;
   text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
   user-select: text;
 }
 body .markdown-rendered a.internal-link.is-unresolved {
@@ -1883,20 +2088,24 @@ body .markdown-rendered a.internal-link.is-unresolved {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: underline solid rgba(84, 175, 176, 0.3);
+  outline: rgb(110, 189, 187) none 0px;
+  text-decoration: underline rgba(84, 175, 176, 0.3);
   text-decoration-color: light-dark(
     rgba(72, 141, 147, 0.3),
     rgba(84, 175, 176, 0.3)
   );
   text-decoration-line: underline;
   text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
   user-select: text;
 }
 body .markdown-rendered a.external-link:hover {
@@ -1915,7 +2124,7 @@ body .markdown-rendered a.internal-link:hover {
 }
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
   cursor: auto;
   filter: none;
   font-family:
@@ -1924,18 +2133,22 @@ body .markdown-rendered p {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(205, 206, 207);
-  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  outline: rgb(174, 175, 176) none 0px;
+  text-decoration: rgb(174, 175, 176);
+  text-decoration-color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
   text-decoration-line: none;
   text-decoration-style: solid;
-  user-select: text;
+  transition: all;
+  user-select: none;
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
@@ -1948,17 +2161,21 @@ body strong {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  text-decoration: none solid rgb(214, 214, 215);
+  outline: rgb(214, 214, 215) none 0px;
+  text-decoration: rgb(214, 214, 215);
   text-decoration-color: light-dark(rgb(48, 43, 93), rgb(214, 214, 215));
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body b {
@@ -1972,17 +2189,21 @@ body b {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  text-decoration: none solid rgb(214, 214, 215);
+  outline: rgb(214, 214, 215) none 0px;
+  text-decoration: rgb(214, 214, 215);
   text-decoration-color: light-dark(rgb(48, 43, 93), rgb(214, 214, 215));
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body em {
@@ -1996,17 +2217,21 @@ body em {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(205, 206, 207);
+  outline: rgb(205, 206, 207) none 0px;
+  text-decoration: rgb(205, 206, 207);
   text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body i {
@@ -2020,17 +2245,21 @@ body i {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(205, 206, 207);
+  outline: rgb(205, 206, 207) none 0px;
+  text-decoration: rgb(205, 206, 207);
   text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body .markdown-rendered mark {
@@ -2044,17 +2273,21 @@ body .markdown-rendered mark {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(205, 206, 207);
+  outline: rgb(205, 206, 207) none 0px;
+  text-decoration: rgb(205, 206, 207);
   text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body del {
@@ -2068,17 +2301,21 @@ body del {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: line-through solid rgb(205, 206, 207);
+  outline: rgb(205, 206, 207) none 0px;
+  text-decoration: line-through rgb(205, 206, 207);
   text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   text-decoration-line: line-through;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body .suggestion-item.is-selected {
@@ -2090,28 +2327,34 @@ body .suggestion-item.is-selected {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body div.suggestion-item {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: light-dark(
+    rgba(61, 43, 90, 0.067),
+    rgba(205, 206, 207, 0.067)
+  );
   border: 0px light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body .markdown-rendered hr {
-  border: 0px light-dark(rgb(211, 199, 187), rgb(36, 51, 71));
-  border-top: 3px solid light-dark(rgb(211, 199, 187), rgb(36, 51, 71));
+  border-color: rgb(128, 128, 128)
+    light-dark(rgb(211, 199, 187), rgb(36, 51, 71))
+    light-dark(rgb(211, 199, 187), rgb(36, 51, 71));
+  border-style: solid solid none none;
+  border-width: 0px 1px 0px 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2122,13 +2365,13 @@ body .markdown-rendered hr {
   border-end-end-radius: 0px;
   box-shadow: none;
   margin: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
 body div.multi-select-pill {
-  align-items: center;
+  align-items: normal;
   background-color: light-dark(
     rgba(72, 141, 147, 0.1),
     rgba(84, 175, 176, 0.1)
@@ -2140,7 +2383,9 @@ body div.multi-select-pill {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2154,10 +2399,10 @@ body div.multi-select-pill {
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
   border-bottom-right-radius: 28px;
-  border-start-start-radius: 28px;
-  border-start-end-radius: 28px;
-  border-end-start-radius: 28px;
-  border-end-end-radius: 28px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(72, 141, 147), rgb(110, 189, 187));
@@ -2167,18 +2412,18 @@ body .markdown-rendered ul > li {
   text-align: start;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: light-dark(rgb(153, 134, 138), rgb(93, 114, 142));
-  border: 0px light-dark(rgb(153, 134, 138), rgb(93, 114, 142));
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-start-start-radius: 50%;
-  border-start-end-radius: 50%;
-  border-end-start-radius: 50%;
-  border-end-end-radius: 50%;
-  color: light-dark(rgb(153, 134, 138), rgb(93, 114, 142));
-  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  pointer-events: auto;
   transform: none;
 }
 body .markdown-rendered ol > li {
@@ -2186,37 +2431,37 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
-  background-color: light-dark(rgb(153, 134, 138), rgb(93, 114, 142));
-  border: 0px light-dark(rgb(153, 134, 138), rgb(93, 114, 142));
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-start-start-radius: 50%;
-  border-start-end-radius: 50%;
-  border-end-start-radius: 50%;
-  border-end-end-radius: 50%;
-  color: light-dark(rgb(153, 134, 138), rgb(93, 114, 142));
-  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  pointer-events: auto;
   transform: none;
 }
 body .markdown-rendered code {
-  background-color: light-dark(rgb(234, 227, 220), rgb(19, 26, 36));
-  border: 0px solid light-dark(rgb(211, 199, 187), rgb(36, 51, 71));
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
-  padding: 2.1px 4.2px;
+  padding: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: light-dark(rgb(234, 227, 220), rgb(21, 29, 40));
@@ -2225,14 +2470,14 @@ body .markdown-rendered pre > code {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  overflow-x: auto;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
   padding: 12px 16px;
   white-space-collapse: preserve;
-  text-wrap-mode: wrap;
+  text-wrap-mode: nowrap;
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
@@ -2242,34 +2487,35 @@ body pre[class*="language-"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  overflow-x: auto;
-  padding: 12px 16px;
-  white-space-collapse: preserve;
-  text-wrap-mode: wrap;
-}
-body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
-  appearance: auto;
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 1px 2px;
-  margin: 0px;
+  overflow-x: visible;
+  padding: 12px 16px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
+  appearance: auto;
+  border: 1px solid light-dark(rgb(153, 134, 138), rgb(93, 114, 142));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  margin: 0px 8px 0px -24px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: auto;
-  position: static;
+  width: 16px;
+  transition: box-shadow 0.15s ease-in-out;
+  position: relative;
   top: auto;
 }
 body ul.contains-task-list > li.task-list-item {
@@ -2280,17 +2526,17 @@ body
   ul.contains-task-list
   > li.task-list-item
   > input[type="checkbox"]:checked {
-  content: none;
+  content: normal;
   top: auto;
   inset-inline-start: auto;
   position: static;
   width: auto;
-  display: inline;
+  display: list-item;
   background-color: rgba(0, 0, 0, 0);
 }
 body ul > li.task-list-item[data-task="x"] {
   color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
-  text-decoration: line-through solid rgb(174, 175, 176);
+  text-decoration: line-through rgb(174, 175, 176);
   text-decoration-color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
 }
 body .markdown-rendered blockquote {
@@ -2304,7 +2550,9 @@ body .markdown-rendered blockquote {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2313,13 +2561,13 @@ body .markdown-rendered blockquote {
   font-style: normal;
   padding-bottom: 6px;
   padding-top: 6px;
-  padding-inline-start: 12px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
 body .footnote-backref {
   color: light-dark(rgb(153, 134, 138), rgb(93, 114, 142));
-  text-decoration: none solid rgb(93, 114, 142);
+  text-decoration: rgb(93, 114, 142);
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(rgb(228, 220, 212), rgb(36, 51, 71));
@@ -2328,10 +2576,10 @@ body .site-body-left-column input.search-bar {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-start-start-radius: 5px;
-  border-start-end-radius: 5px;
-  border-end-start-radius: 5px;
-  border-end-end-radius: 5px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   font-family:
     ui-sans-serif,
@@ -2339,7 +2587,9 @@ body .site-body-left-column input.search-bar {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2353,10 +2603,10 @@ body .search-results {
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-start-start-radius: 12px;
-  border-start-end-radius: 12px;
-  border-end-start-radius: 12px;
-  border-end-end-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   box-shadow:
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
@@ -2373,17 +2623,21 @@ body .search-results > * {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(205, 206, 207);
+  outline: rgb(205, 206, 207) none 0px;
+  text-decoration: rgb(205, 206, 207);
   text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body div.search-results {
@@ -2392,10 +2646,10 @@ body div.search-results {
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-start-start-radius: 12px;
-  border-start-end-radius: 12px;
-  border-end-start-radius: 12px;
-  border-end-end-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item {
   color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
@@ -2406,10 +2660,10 @@ body div.search-results .suggestion-item {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item.is-selected {
   color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
@@ -2430,7 +2684,9 @@ body .published-container .markdown-rendered h1 {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2446,7 +2702,9 @@ body .published-container .markdown-rendered h2 {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2462,7 +2720,9 @@ body .published-container .markdown-rendered h3 {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2478,7 +2738,9 @@ body .published-container .markdown-rendered h4 {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2494,7 +2756,9 @@ body .published-container .markdown-rendered h5 {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2510,7 +2774,9 @@ body .published-container .markdown-rendered h6 {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2522,11 +2788,15 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 400;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  margin-inline-start: 12px;
-  padding-inline-start: 4px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 body body.styled-scrollbars {
-  background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+  background: light-dark(
+    rgb(246, 242, 238) none repeat scroll 0% 0% / auto padding-box border-box,
+    rgb(25, 35, 48) none repeat scroll 0% 0% / auto padding-box border-box
+  );
+  background-color: light-dark(rgb(246, 242, 238), rgb(25, 35, 48));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2535,22 +2805,23 @@ body body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   box-shadow: none;
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
 body .callout[data-callout="note"] {
+  --callout-color: 113, 156, 214;
   border: 0px solid
     light-dark(rgba(40, 72, 169, 0.25), rgba(113, 156, 214, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: light-dark(
@@ -2559,6 +2830,7 @@ body .callout[data-callout="note"] {
   );
 }
 body .callout[data-callout="note"] > .callout-title {
+  gap: 4px;
   border: 0px light-dark(rgb(40, 72, 169), rgb(113, 156, 214));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2578,6 +2850,7 @@ body .callout > .callout-content {
   padding: 0px;
 }
 body .callout[data-callout="abstract"] {
+  --callout-color: 99, 205, 207;
   background-color: light-dark(
     rgba(40, 121, 128, 0.1),
     rgba(99, 205, 207, 0.1)
@@ -2589,12 +2862,13 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="info"] {
+  --callout-color: 113, 156, 214;
   background-color: light-dark(
     rgba(40, 72, 169, 0.1),
     rgba(113, 156, 214, 0.1)
@@ -2606,12 +2880,13 @@ body .callout[data-callout="info"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="todo"] {
+  --callout-color: 113, 156, 214;
   background-color: light-dark(
     rgba(40, 72, 169, 0.1),
     rgba(113, 156, 214, 0.1)
@@ -2623,12 +2898,13 @@ body .callout[data-callout="todo"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="tip"] {
+  --callout-color: 99, 205, 207;
   background-color: light-dark(
     rgba(40, 121, 128, 0.1),
     rgba(99, 205, 207, 0.1)
@@ -2640,12 +2916,13 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="success"] {
+  --callout-color: 129, 178, 154;
   background-color: light-dark(
     rgba(87, 127, 99, 0.1),
     rgba(129, 178, 154, 0.1)
@@ -2657,12 +2934,13 @@ body .callout[data-callout="success"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="question"] {
+  --callout-color: 244, 162, 97;
   background-color: light-dark(rgba(149, 95, 97, 0.1), rgba(244, 162, 97, 0.1));
   mix-blend-mode: normal;
   border: 0px solid
@@ -2671,12 +2949,13 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="warning"] {
+  --callout-color: 244, 162, 97;
   background-color: light-dark(rgba(172, 84, 2, 0.1), rgba(244, 162, 97, 0.1));
   mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(172, 84, 2, 0.25), rgba(244, 162, 97, 0.25));
@@ -2684,26 +2963,13 @@ body .callout[data-callout="warning"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="danger"] {
-  background-color: light-dark(rgba(165, 34, 47, 0.1), rgba(201, 79, 109, 0.1));
-  mix-blend-mode: light-dark(darken, lighten);
-  border: 0px solid
-    light-dark(rgba(165, 34, 47, 0.25), rgba(201, 79, 109, 0.25));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-}
-body .callout[data-callout="failure"] {
+  --callout-color: 201, 79, 109;
   background-color: light-dark(rgba(165, 34, 47, 0.1), rgba(201, 79, 109, 0.1));
   mix-blend-mode: normal;
   border: 0px solid
@@ -2712,58 +2978,76 @@ body .callout[data-callout="failure"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout="failure"] {
+  --callout-color: 201, 79, 109;
   background-color: light-dark(rgba(165, 34, 47, 0.1), rgba(201, 79, 109, 0.1));
-  mix-blend-mode: light-dark(darken, lighten);
+  mix-blend-mode: normal;
   border: 0px solid
     light-dark(rgba(165, 34, 47, 0.25), rgba(201, 79, 109, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body .callout[data-callout="bug"] {
+  --callout-color: 201, 79, 109;
+  background-color: light-dark(rgba(165, 34, 47, 0.1), rgba(201, 79, 109, 0.1));
+  mix-blend-mode: normal;
+  border: 0px solid
+    light-dark(rgba(165, 34, 47, 0.25), rgba(201, 79, 109, 0.25));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="example"] {
+  --callout-color: 157, 121, 214;
   background-color: light-dark(
     rgba(110, 51, 206, 0.1),
     rgba(157, 121, 214, 0.1)
   );
-  mix-blend-mode: light-dark(darken, lighten);
+  mix-blend-mode: normal;
   border: 0px solid
     light-dark(rgba(110, 51, 206, 0.25), rgba(157, 121, 214, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.1);
-  mix-blend-mode: light-dark(darken, lighten);
+  mix-blend-mode: normal;
   border: 0px solid rgba(158, 158, 158, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
-  border-collapse: collapse;
+  border-collapse: separate;
   color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   font-family:
     ui-sans-serif,
@@ -2771,14 +3055,16 @@ body .markdown-rendered table {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   table-layout: auto;
-  width: auto;
+  width: 225.219px;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2790,7 +3076,7 @@ body .markdown-rendered table {
   border-end-end-radius: 0px;
   margin: 16px 0px 0px;
   margin-block-end: 0px;
-  margin-block-start: 16px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -2824,13 +3110,13 @@ body .markdown-rendered th {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 0px;
+  padding: 4px 8px;
 }
 body .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   font-weight: 400;
-  text-align: center;
+  text-align: start;
   vertical-align: top;
   border: 1px solid light-dark(rgb(211, 199, 187), rgb(36, 51, 71));
   border-top-left-radius: 0px;
@@ -2841,7 +3127,7 @@ body .markdown-rendered td {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 0px;
+  padding: 4px 8px;
 }
 body .markdown-rendered tr {
   background-color: light-dark(rgb(234, 227, 220), rgb(21, 29, 40));
@@ -2855,10 +3141,17 @@ body .markdown-rendered tr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body .markdown-rendered tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0);
+}
+body .markdown-rendered tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0);
+}
 body .markdown-rendered img {
+  border-radius: 0px;
   box-shadow: none;
   filter: none;
-  max-width: 100%;
+  max-width: none;
   object-fit: fill;
   border: 0px light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   border-top-left-radius: 0px;
@@ -2888,8 +3181,8 @@ body .markdown-rendered figure {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   margin: 16px 40px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
   margin-inline-end: 40px;
   margin-inline-start: 40px;
   padding: 0px;
@@ -2902,7 +3195,9 @@ body .markdown-rendered figcaption {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -2919,9 +3214,10 @@ body .markdown-rendered figcaption {
   padding: 0px;
 }
 body .markdown-rendered video {
+  border-radius: 0px;
   box-shadow: none;
   filter: none;
-  max-width: 100%;
+  max-width: none;
   object-fit: contain;
   border: 0px light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   border-top-left-radius: 0px;
@@ -2951,10 +3247,100 @@ body .markdown-rendered audio {
   border-end-end-radius: 0px;
   padding: 0px;
 }
+body .internal-embed {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-left: 2px solid light-dark(rgb(77, 153, 158), rgb(84, 175, 176));
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body .markdown-embed {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-left: 2px solid light-dark(rgb(77, 153, 158), rgb(84, 175, 176));
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body .file-embed {
+  background-color: light-dark(rgb(234, 227, 220), rgb(21, 29, 40));
+  border-color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  border-width: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px;
+  padding: 8px;
+}
+body .metadata-container {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 0px solid light-dark(rgb(211, 199, 187), rgb(36, 51, 71));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px 0px 32px;
+  padding: 8px 0px;
+}
+body .metadata-properties {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
 body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
-  height: 6px;
+  height: 15px;
   border: 0px light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2979,29 +3365,31 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: light-dark(rgb(228, 220, 212), rgb(36, 51, 71));
-  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
   font-family:
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 1px solid light-dark(rgb(211, 199, 187), rgb(36, 51, 71));
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-start-start-radius: 5px;
-  border-start-end-radius: 5px;
-  border-end-start-radius: 5px;
-  border-end-end-radius: 5px;
+  border: 0px solid light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   padding: 4px 8px;
 }
 body details {
@@ -3069,8 +3457,8 @@ body kbd {
 }
 body dl {
   margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -3109,99 +3497,99 @@ body abbr {
   text-decoration-style: dotted;
 }
 body li.task-list-item[data-task="-"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task=">"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="/"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="?"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="!"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="*"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="l"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="b"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="i"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="S"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="I"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="p"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="c"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="f"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="k"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="u"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="d"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body li.task-list-item[data-task="w"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  text-decoration: rgb(205, 206, 207);
+  text-decoration-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
 }
 body .math-block > mjx-container.MathJax {
   display: block;
   text-align: center;
-  white-space-collapse: break-spaces;
+  white-space-collapse: collapse;
   text-wrap-mode: wrap;
   font-family:
     ui-sans-serif,
@@ -3209,7 +3597,9 @@ body .math-block > mjx-container.MathJax {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -3223,7 +3613,9 @@ body div.math-block > mjx-container.MathJax {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -3242,14 +3634,16 @@ body .nav-view-outer .tree-item-self a {
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(174, 175, 176);
+  text-decoration: rgb(174, 175, 176);
 }
 body .nav-view-outer .tree-item-self.mod-active {
   background-color: light-dark(
@@ -3261,10 +3655,10 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
   cursor: default;
   transition-behavior: normal;
@@ -3288,14 +3682,16 @@ body
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(174, 175, 176);
+  text-decoration: rgb(174, 175, 176);
 }
 body
   .nav-view-outer
@@ -3312,14 +3708,207 @@ body
     BlinkMacSystemFont,
     system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
+    "Inter Variable",
     Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: none solid rgb(174, 175, 176);
+  text-decoration: rgb(174, 175, 176);
+}
+body .clickable-icon {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  cursor: default;
+  border-color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body .site-footer {
+  background-color: light-dark(rgb(234, 227, 220), rgb(21, 29, 40));
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: light-dark(rgb(211, 199, 187), rgb(36, 51, 71));
+  border-style: solid;
+  border-width: 1px 0px 0px 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .site-footer a {
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  text-decoration: rgb(174, 175, 176);
+}
+body .nav-header {
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+}
+body .nav-files-container .tree-item {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .nav-file-title {
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  text-decoration: rgb(174, 175, 176);
+}
+body .nav-file-title-content {
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body .nav-files-container {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .site-body-left-column-site-theme-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  cursor: default;
+  border-color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body .site-body-left-column-site-theme-toggle svg {
+  stroke: rgb(174, 175, 176);
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+}
+body .view-header-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  border-color: light-dark(rgb(100, 63, 97), rgb(174, 175, 176));
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body .view-header-breadcrumb-separator {
+  color: light-dark(rgb(153, 134, 138), rgb(93, 114, 142));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body .page-header .page-title {
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body .math-block {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .footnotes {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-top-width: 0px;
+  color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+}
+body .table-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .view-content {
+  background-color: light-dark(rgb(246, 242, 238), rgb(25, 35, 48));
+  border-color: light-dark(rgb(61, 43, 90), rgb(205, 206, 207));
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] {
   background-color: light-dark(rgb(234, 227, 220), rgb(21, 29, 40));
@@ -3328,10 +3917,10 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: light-dark(rgb(234, 227, 220), rgb(21, 29, 40));
@@ -3342,22 +3931,22 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left: 0px light-dark(rgb(172, 84, 2), rgb(219, 192, 116));
 }
 body pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-color: light-dark(rgb(172, 84, 2), rgb(219, 192, 116));
 }
 body pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px light-dark(rgb(172, 84, 2), rgb(219, 192, 116));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

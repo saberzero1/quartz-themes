@@ -41,9 +41,11 @@
   --bases-cards-background: #e1c4a6 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: #daba97 !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #c6a57f !important;
   --bases-cards-shadow-hover: 0 0 0 1px #a8865f !important;
@@ -98,9 +100,22 @@
   --blockquote-border-color: #800000 !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(in srgb, #e1c4a6 65%, transparent)
+    linear-gradient(#e1c4a6, color-mix(in srgb, #e1c4a6 65%, transparent)) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 5px !important;
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
@@ -134,6 +149,9 @@
   --canvas-color-4: 1, 144, 59 !important;
   --canvas-color-5: 0, 158, 155 !important;
   --canvas-color-6: 95, 56, 214 !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: #c6a57f !important;
   --caret-color: #5f4f49 !important;
   --checkbox-border-color: #7a6d68 !important;
@@ -199,7 +217,7 @@
   --color-red-rgb: 207, 30, 51 !important;
   --color-yellow: #977400 !important;
   --color-yellow-rgb: 151, 116, 0 !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -218,7 +236,11 @@
   --dropdown-background-hover: #daba97 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
     0 0 0 1px #c6a57f, inset 0 0 0 1px #c6a57f !important;
   --embed-border-bottom: none !important;
@@ -229,13 +251,17 @@
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: #e1c4a6 !important;
+  --file-header-background-focused: #e1c4a6 !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "CMU Typewriter Text" !important;
+  --file-header-font: "??", "??", "??", "CMU Typewriter Text" !important;
   --file-header-font-size: 14px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 900px !important;
-  --file-margins: 32px !important;
+  --file-margins: 32px 32px !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: #e1c4a6 !important;
   --flair-color: #5f4f49 !important;
   --focus-ring-color: #0df !important;
@@ -245,24 +271,24 @@
   --font-default: "CMU Typewriter Text" !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "CMU Typewriter Text" !important;
+  --font-interface: "??", "??", "??", "CMU Typewriter Text" !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "CMU Typewriter Text" !important;
-  --font-monospace: "JetBrains Mono" !important;
+  --font-mermaid: "??", "??", "CMU Typewriter Text" !important;
+  --font-monospace: "??", "??", "JetBrains Mono" !important;
   --font-monospace-default: "JetBrains Mono" !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "Arial" !important;
+  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "CMU Typewriter Text" !important;
+  --font-text: "??", "??", "CMU Typewriter Text" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -307,25 +333,25 @@
   --h2-size: 1.462em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 600 !important;
+  --h2-weight: 680 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.318em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 600 !important;
+  --h3-weight: 660 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.188em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 600 !important;
+  --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
@@ -374,9 +400,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: #7a6d68 !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #7a6d68 !important;
   --input-radius: 5px !important;
@@ -388,6 +416,8 @@
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: #800000 !important;
   --interactive-accent-hover: #a00000 !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -440,8 +470,14 @@
   --menu-background: #dabb9a !important;
   --menu-border-color: #a8865f !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
@@ -459,15 +495,16 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "CMU Typewriter Text" !important;
+  --metadata-input-font: "??", "??", "??", "CMU Typewriter Text" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: #5f4f49 !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "CMU Typewriter Text" !important;
+  --metadata-label-font: "??", "??", "??", "CMU Typewriter Text" !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #5b4f4a !important;
   --metadata-label-text-color-hover: #5b4f4a !important;
@@ -479,6 +516,9 @@
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #b4916a !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #a8865f !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -489,11 +529,13 @@
   --modal-border-color: #b4916a !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 12px !important;
+  --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
@@ -517,8 +559,10 @@
   --nav-item-color-highlighted: #800000 !important;
   --nav-item-color-hover: #5f4f49 !important;
   --nav-item-color-selected: #5f4f49 !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
+  --nav-item-radius: 4px !important;
   --nav-item-size: 14px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
@@ -562,6 +606,9 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: #e1c4a6 !important;
   --prompt-border-color: #b4916a !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -572,6 +619,22 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
+  --raised-background: color-mix(in srgb, #e1c4a6 65%, transparent)
+    linear-gradient(#e1c4a6, color-mix(in srgb, #e1c4a6 65%, transparent)) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(
+      to bottom left,
+      white,
+      transparent,
+      white
+    )
+    border-box no-repeat !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: #dabb9a !important;
   --ribbon-background-collapsed: #e1c4a6 !important;
   --ribbon-padding: 0px !important;
@@ -592,6 +655,14 @@
   --search-icon-color: #5b4f4a !important;
   --search-icon-size: 18px !important;
   --search-result-background: #e1c4a6 !important;
+  --setting-group-heading-color: #5f4f49 !important;
+  --setting-group-heading-size: 16px !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: #daba97 !important;
+  --setting-items-border-color: #c6a57f !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 20px !important;
+  --setting-items-radius: 12px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
@@ -624,7 +695,7 @@
   --slider-thumb-border-color: #a8865f !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
+  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: #c6a57f !important;
@@ -637,6 +708,8 @@
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
   --status-bar-text-color: #5b4f4a !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: #e1c4a6 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -669,6 +742,11 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #dabb9a !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #dabb9a,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -722,6 +800,7 @@
   --tag-border-width: 0px !important;
   --tag-color: #800000 !important;
   --tag-color-hover: #800000 !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
@@ -760,17 +839,39 @@
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: 30px !important;
+  --traffic-lights-offset-y: 30px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #5f4f49 !important;
   --vault-profile-color-hover: #5f4f49 !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 14px !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --raised-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
+  --shadow-edges: 0 0 transparent !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --color-italic: #ae612b !important;
   --default-border-radius: 4px !important;
   --activeline: #d4b4946a !important;
@@ -821,9 +922,11 @@
   --bases-cards-background: #372d29 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: #2b2723 !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #504431 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #645743 !important;
@@ -878,9 +981,22 @@
   --blockquote-border-color: #ba945f !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(in srgb, #504431 65%, transparent)
+    linear-gradient(#504431, color-mix(in srgb, #504431 65%, transparent)) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 5px !important;
   --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
@@ -914,6 +1030,9 @@
   --canvas-color-4: 68, 207, 110 !important;
   --canvas-color-5: 83, 223, 221 !important;
   --canvas-color-6: 168, 130, 255 !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: #504431 !important;
   --caret-color: #ccc2b7 !important;
   --checkbox-border-color: #868074 !important;
@@ -979,7 +1098,7 @@
   --color-red-rgb: 251, 70, 76 !important;
   --color-yellow: #e0de71 !important;
   --color-yellow-rgb: 224, 222, 113 !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -998,7 +1117,11 @@
   --dropdown-background-hover: #645743 !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
     0 0 0 1px #504431, inset 0 0 0 1px #504431 !important;
   --embed-border-bottom: none !important;
@@ -1009,13 +1132,17 @@
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: #372d29 !important;
+  --file-header-background-focused: #372d29 !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "CMU Typewriter Text" !important;
+  --file-header-font: "??", "??", "??", "CMU Typewriter Text" !important;
   --file-header-font-size: 14px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 900px !important;
-  --file-margins: 32px !important;
+  --file-margins: 32px 32px !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: #504431 !important;
   --flair-color: #ccc2b7 !important;
   --focus-ring-color: #0df !important;
@@ -1025,24 +1152,24 @@
   --font-default: "CMU Typewriter Text" !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "CMU Typewriter Text" !important;
+  --font-interface: "??", "??", "??", "CMU Typewriter Text" !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "CMU Typewriter Text" !important;
-  --font-monospace: "JetBrains Mono" !important;
+  --font-mermaid: "??", "??", "CMU Typewriter Text" !important;
+  --font-monospace: "??", "??", "JetBrains Mono" !important;
   --font-monospace-default: "JetBrains Mono" !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "Arial" !important;
+  --font-print: "??", "??", "??", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "CMU Typewriter Text" !important;
+  --font-text: "??", "??", "CMU Typewriter Text" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1087,25 +1214,25 @@
   --h2-size: 1.462em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 600 !important;
+  --h2-weight: 680 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.318em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 600 !important;
+  --h3-weight: 660 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.188em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 600 !important;
+  --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.076em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
@@ -1154,9 +1281,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: #868074 !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #868074 !important;
   --input-radius: 5px !important;
@@ -1168,6 +1297,8 @@
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: #ba945f !important;
   --interactive-accent-hover: #ba945f !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -1220,8 +1351,14 @@
   --menu-background: #413632 !important;
   --menu-border-color: #645743 !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
@@ -1239,15 +1376,16 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "CMU Typewriter Text" !important;
+  --metadata-input-font: "??", "??", "??", "CMU Typewriter Text" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: #ccc2b7 !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "CMU Typewriter Text" !important;
+  --metadata-label-font: "??", "??", "??", "CMU Typewriter Text" !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #b2a699 !important;
   --metadata-label-text-color-hover: #b2a699 !important;
@@ -1259,6 +1397,9 @@
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #504431 !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #645743 !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -1269,11 +1410,13 @@
   --modal-border-color: #504431 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 12px !important;
+  --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
@@ -1297,8 +1440,10 @@
   --nav-item-color-highlighted: #ba945f !important;
   --nav-item-color-hover: #ccc2b7 !important;
   --nav-item-color-selected: #ccc2b7 !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
+  --nav-item-radius: 4px !important;
   --nav-item-size: 14px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
@@ -1340,6 +1485,9 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: #372d29 !important;
   --prompt-border-color: #504431 !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -1350,6 +1498,16 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
+  --raised-background: color-mix(in srgb, #504431 65%, transparent)
+    linear-gradient(#504431, color-mix(in srgb, #504431 65%, transparent)) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: transparent !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: #413632 !important;
   --ribbon-background-collapsed: #372d29 !important;
   --ribbon-padding: 0px !important;
@@ -1370,6 +1528,14 @@
   --search-icon-color: #b2a699 !important;
   --search-icon-size: 18px !important;
   --search-result-background: #372d29 !important;
+  --setting-group-heading-color: #ccc2b7 !important;
+  --setting-group-heading-size: 16px !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: #2b2723 !important;
+  --setting-items-border-color: #504431 !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 20px !important;
+  --setting-items-radius: 12px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -1402,7 +1568,7 @@
   --slider-thumb-border-color: #645743 !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
+  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: #504431 !important;
@@ -1415,6 +1581,8 @@
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
   --status-bar-text-color: #b2a699 !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: #372d29 !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
@@ -1447,6 +1615,11 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #413632 !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #413632,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -1500,6 +1673,7 @@
   --tag-border-width: 0px !important;
   --tag-color: #ba945f !important;
   --tag-color-hover: #ba945f !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
@@ -1538,12 +1712,27 @@
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: 30px !important;
+  --traffic-lights-offset-y: 30px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #ccc2b7 !important;
   --vault-profile-color-hover: #ccc2b7 !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 14px !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
   --xfa-focus-outline: auto !important;
@@ -1908,7 +2097,7 @@ body {
   .page > div#quartz-body div.sidebar.right {
     background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
-    border-left: 1px solid light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+    border-left: 0px light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
   }
 
   .page > div#quartz-body div.sidebar.left {
@@ -1923,25 +2112,29 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: underline solid rgb(186, 148, 95);
+    outline: rgb(186, 148, 95) none 0px;
+    text-decoration: underline rgb(186, 148, 95);
     text-decoration-color: light-dark(rgb(128, 0, 0), rgb(186, 148, 95));
     text-decoration-line: underline;
     text-decoration-style: solid;
+    transition: background-color 0.1s ease-in-out;
     user-select: text;
   }
 
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(160, 0, 0), rgb(224, 186, 134));
+    color: light-dark(rgb(128, 0, 0), rgb(186, 148, 95));
     cursor: pointer;
-    filter: brightness(1.3);
+    filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: underline solid rgb(224, 186, 134);
-    text-decoration-color: light-dark(rgb(160, 0, 0), rgb(224, 186, 134));
+    outline: rgb(186, 148, 95) none 0px;
+    text-decoration: underline rgb(186, 148, 95);
+    text-decoration-color: light-dark(rgb(128, 0, 0), rgb(186, 148, 95));
     text-decoration-line: underline;
     text-decoration-style: solid;
+    transition: filter 0.1s ease-in-out;
     user-select: text;
   }
 
@@ -1952,10 +2145,12 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: underline solid rgba(138, 92, 245, 0.3);
+    outline: rgb(186, 148, 95) none 0px;
+    text-decoration: underline rgba(138, 92, 245, 0.3);
     text-decoration-color: rgba(138, 92, 245, 0.3);
     text-decoration-line: underline;
     text-decoration-style: solid;
+    transition: color 0.1s ease-in-out;
     user-select: text;
   }
 
@@ -1979,16 +2174,18 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
     cursor: auto;
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: none solid rgb(204, 194, 183);
-    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    outline: rgb(178, 166, 153) none 0px;
+    text-decoration: rgb(178, 166, 153);
+    text-decoration-color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
     text-decoration-line: none;
     text-decoration-style: solid;
-    user-select: text;
+    transition: all;
+    user-select: none;
   }
 
   .page article p > strong,
@@ -1999,10 +2196,12 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 600;
-    text-decoration: none solid rgb(186, 148, 95);
+    outline: rgb(186, 148, 95) none 0px;
+    text-decoration: rgb(186, 148, 95);
     text-decoration-color: light-dark(rgb(189, 87, 87), rgb(186, 148, 95));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: background-color 0.1s ease-in-out;
     user-select: text;
   }
 
@@ -2014,10 +2213,12 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 600;
-    text-decoration: none solid rgb(186, 148, 95);
+    outline: rgb(186, 148, 95) none 0px;
+    text-decoration: rgb(186, 148, 95);
     text-decoration-color: light-dark(rgb(189, 87, 87), rgb(186, 148, 95));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: background-color 0.1s ease-in-out;
     user-select: text;
   }
 
@@ -2029,10 +2230,12 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: none solid rgb(231, 122, 89);
+    outline: rgb(231, 122, 89) none 0px;
+    text-decoration: rgb(231, 122, 89);
     text-decoration-color: light-dark(rgb(174, 97, 43), rgb(231, 122, 89));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: background-color 0.1s ease-in-out;
     user-select: text;
   }
 
@@ -2044,10 +2247,12 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: none solid rgb(231, 122, 89);
+    outline: rgb(231, 122, 89) none 0px;
+    text-decoration: rgb(231, 122, 89);
     text-decoration-color: light-dark(rgb(174, 97, 43), rgb(231, 122, 89));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: background-color 0.1s ease-in-out;
     user-select: text;
   }
 
@@ -2058,10 +2263,12 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: none solid rgb(204, 194, 183);
+    outline: rgb(204, 194, 183) none 0px;
+    text-decoration: rgb(204, 194, 183);
     text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: background-color 0.1s ease-in-out;
     user-select: text;
     border: 0px rgb(0, 0, 0);
     border-top-left-radius: 0px;
@@ -2081,10 +2288,12 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: line-through solid rgb(204, 194, 183);
+    outline: rgb(204, 194, 183) none 0px;
+    text-decoration: line-through rgb(204, 194, 183);
     text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     text-decoration-line: line-through;
     text-decoration-style: solid;
+    transition: background-color 0.1s ease-in-out;
     user-select: text;
   }
 
@@ -2114,10 +2323,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
@@ -2133,22 +2342,28 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
+    );
     border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   hr {
-    border: 0px light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
-    border-top: 2px solid light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+    border-color: rgb(128, 128, 128)
+      light-dark(rgb(198, 165, 127), rgb(80, 68, 49))
+      light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+    border-style: solid solid none none;
+    border-width: 0px 1px 0px 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2159,8 +2374,8 @@ body {
     border-end-end-radius: 0px;
     box-shadow: none;
     margin: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
+    margin-block-end: 32px;
+    margin-block-start: 32px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
@@ -2175,7 +2390,7 @@ body {
     > ul
     > li
     > .match-tag {
-    align-items: center;
+    align-items: normal;
     background-color: rgba(138, 92, 245, 0.1);
     display: flex;
     font-family: "CMU Typewriter Text";
@@ -2186,10 +2401,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   a.internal.tag-link::before {
@@ -2202,18 +2417,18 @@ body {
   }
 
   ul > li::marker {
-    background-color: light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
-    border: 0px light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-start-start-radius: 50%;
-    border-start-end-radius: 50%;
-    border-end-start-radius: 50%;
-    border-end-end-radius: 50%;
-    color: light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
-    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    pointer-events: auto;
     transform: none;
   }
 
@@ -2223,35 +2438,35 @@ body {
   }
 
   ol > li::marker {
-    background-color: light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
-    border: 0px light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-start-start-radius: 50%;
-    border-start-end-radius: 50%;
-    border-end-start-radius: 50%;
-    border-end-end-radius: 50%;
-    color: light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
-    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    pointer-events: auto;
     transform: none;
   }
 
   code {
-    background-color: light-dark(rgb(203, 170, 135), rgb(43, 39, 35));
-    border: 0px solid light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-family: "JetBrains Mono";
-    padding: 2.1px 4.2px;
+    padding: 0px;
   }
 
   pre > code,
@@ -2262,14 +2477,14 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    overflow-x: auto;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    overflow-x: visible;
     padding: 4px 7px;
     white-space-collapse: preserve;
-    text-wrap-mode: wrap;
+    text-wrap-mode: nowrap;
   }
 
   pre:has(> code) {
@@ -2279,35 +2494,36 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    overflow-x: auto;
-    padding: 12px 16px;
-    white-space-collapse: preserve;
-    text-wrap-mode: wrap;
-  }
-
-  input[type="checkbox"] {
-    appearance: auto;
-    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 1px 2px;
-    margin: 0px;
+    overflow-x: visible;
+    padding: 4px 7px;
+    white-space-collapse: preserve;
+    text-wrap-mode: nowrap;
+  }
+
+  input[type="checkbox"] {
+    appearance: auto;
+    border: 1px solid light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+    margin: 0px 8px 0px -24px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: auto;
-    position: static;
+    width: 16px;
+    transition: box-shadow 0.15s ease-in-out;
+    position: relative;
     top: auto;
   }
 
@@ -2317,18 +2533,18 @@ body {
   }
 
   input[type="checkbox"]:checked:after {
-    content: none;
+    content: normal;
     top: auto;
     inset-inline-start: auto;
     position: static;
     width: auto;
-    display: inline;
+    display: list-item;
     background-color: rgba(0, 0, 0, 0);
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
-    text-decoration: line-through solid rgb(178, 166, 153);
+    text-decoration: line-through rgb(178, 166, 153);
     text-decoration-color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
   }
 
@@ -2338,14 +2554,14 @@ body {
     font-style: normal;
     padding-bottom: 0px;
     padding-top: 0px;
-    padding-inline-start: 10px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
   }
 
   .data-footnote-backref {
     color: light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
-    text-decoration: none solid rgb(134, 128, 116);
+    text-decoration: rgb(134, 128, 116);
   }
 
   .search > .search-button {
@@ -2355,10 +2571,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-family: "CMU Typewriter Text";
   }
@@ -2370,10 +2586,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     box-shadow:
       rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
       rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
@@ -2381,8 +2597,8 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
-    border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px inset light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-bottom: 1px solid light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2402,10 +2618,12 @@ body {
     filter: none;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: none solid rgb(204, 194, 183);
+    outline: rgb(204, 194, 183) none 0px;
+    text-decoration: rgb(204, 194, 183);
     text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: background-color 0.1s ease-in-out;
     user-select: text;
   }
 
@@ -2416,10 +2634,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .search
@@ -2441,10 +2659,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .search
@@ -2566,11 +2784,19 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(225, 196, 166) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(55, 45, 41) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(225, 196, 166) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(55, 45, 41) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2579,20 +2805,32 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(225, 196, 166) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(55, 45, 41) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(225, 196, 166) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(55, 45, 41) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
   }
 
   ::-webkit-scrollbar-track {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(225, 196, 166) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(55, 45, 41) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2604,7 +2842,11 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(225, 196, 166) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(55, 45, 41) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
   }
 
   body {
@@ -2613,22 +2855,24 @@ body {
   }
 
   .callout {
+    --callout-color: 2, 122, 255;
     border: 0px solid
       light-dark(rgba(2, 95, 200, 0.25), rgba(2, 122, 255, 0.25));
     border-left: 3px solid light-dark(rgb(2, 95, 200), rgb(2, 122, 255));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     mix-blend-mode: normal;
-    padding: 12px 12px 12px 24px;
+    padding: 0px;
   }
 
   .callout .callout-title {
+    gap: 4px;
     border: 0px light-dark(rgb(2, 95, 200), rgb(2, 122, 255));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2651,22 +2895,24 @@ body {
   }
 
   .callout[data-callout="note"] {
+    --callout-color: 2, 122, 255;
     background-color: light-dark(rgba(2, 95, 200, 0.1), rgba(2, 122, 255, 0.1));
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(2, 95, 200, 0.25), rgba(2, 122, 255, 0.25));
     border-left: 3px solid light-dark(rgb(2, 95, 200), rgb(2, 122, 255));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="abstract"] {
+    --callout-color: 83, 223, 221;
     background-color: light-dark(
       rgba(0, 158, 155, 0.1),
       rgba(83, 223, 221, 0.1)
@@ -2675,49 +2921,52 @@ body {
     border: 0px solid
       light-dark(rgba(0, 158, 155, 0.25), rgba(83, 223, 221, 0.25));
     border-left: 3px solid light-dark(rgb(0, 158, 155), rgb(83, 223, 221));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="info"] {
+    --callout-color: 2, 122, 255;
     background-color: light-dark(rgba(2, 95, 200, 0.1), rgba(2, 122, 255, 0.1));
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(2, 95, 200, 0.25), rgba(2, 122, 255, 0.25));
     border-left: 3px solid light-dark(rgb(2, 95, 200), rgb(2, 122, 255));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="todo"] {
+    --callout-color: 2, 122, 255;
     background-color: light-dark(rgba(2, 95, 200, 0.1), rgba(2, 122, 255, 0.1));
     mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(2, 95, 200, 0.25), rgba(2, 122, 255, 0.25));
     border-left: 3px solid light-dark(rgb(2, 95, 200), rgb(2, 122, 255));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="tip"] {
+    --callout-color: 83, 223, 221;
     background-color: light-dark(
       rgba(0, 158, 155, 0.1),
       rgba(83, 223, 221, 0.1)
@@ -2726,17 +2975,18 @@ body {
     border: 0px solid
       light-dark(rgba(0, 158, 155, 0.25), rgba(83, 223, 221, 0.25));
     border-left: 3px solid light-dark(rgb(0, 158, 155), rgb(83, 223, 221));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="success"] {
+    --callout-color: 68, 207, 110;
     background-color: light-dark(
       rgba(1, 144, 59, 0.1),
       rgba(68, 207, 110, 0.1)
@@ -2745,17 +2995,18 @@ body {
     border: 0px solid
       light-dark(rgba(1, 144, 59, 0.25), rgba(68, 207, 110, 0.25));
     border-left: 3px solid light-dark(rgb(1, 144, 59), rgb(68, 207, 110));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="question"] {
+    --callout-color: 233, 151, 63;
     background-color: light-dark(
       rgba(193, 109, 24, 0.1),
       rgba(233, 151, 63, 0.1)
@@ -2764,17 +3015,18 @@ body {
     border: 0px solid
       light-dark(rgba(193, 109, 24, 0.25), rgba(233, 151, 63, 0.25));
     border-left: 3px solid light-dark(rgb(193, 109, 24), rgb(233, 151, 63));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="warning"] {
+    --callout-color: 233, 151, 63;
     background-color: light-dark(
       rgba(193, 109, 24, 0.1),
       rgba(233, 151, 63, 0.1)
@@ -2783,36 +3035,18 @@ body {
     border: 0px solid
       light-dark(rgba(193, 109, 24, 0.25), rgba(233, 151, 63, 0.25));
     border-left: 3px solid light-dark(rgb(193, 109, 24), rgb(233, 151, 63));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="danger"] {
-    background-color: light-dark(
-      rgba(207, 30, 51, 0.1),
-      rgba(251, 70, 76, 0.1)
-    );
-    mix-blend-mode: light-dark(darken, lighten);
-    border: 0px solid
-      light-dark(rgba(207, 30, 51, 0.25), rgba(251, 70, 76, 0.25));
-    border-left: 3px solid light-dark(rgb(207, 30, 51), rgb(251, 70, 76));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-  }
-
-  .callout[data-callout="failure"] {
+    --callout-color: 251, 70, 76;
     background-color: light-dark(
       rgba(207, 30, 51, 0.1),
       rgba(251, 70, 76, 0.1)
@@ -2821,76 +3055,99 @@ body {
     border: 0px solid
       light-dark(rgba(207, 30, 51, 0.25), rgba(251, 70, 76, 0.25));
     border-left: 3px solid light-dark(rgb(207, 30, 51), rgb(251, 70, 76));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
-  .callout[data-callout="bug"] {
+  .callout[data-callout="failure"] {
+    --callout-color: 251, 70, 76;
     background-color: light-dark(
       rgba(207, 30, 51, 0.1),
       rgba(251, 70, 76, 0.1)
     );
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(207, 30, 51, 0.25), rgba(251, 70, 76, 0.25));
     border-left: 3px solid light-dark(rgb(207, 30, 51), rgb(251, 70, 76));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  .callout[data-callout="bug"] {
+    --callout-color: 251, 70, 76;
+    background-color: light-dark(
+      rgba(207, 30, 51, 0.1),
+      rgba(251, 70, 76, 0.1)
+    );
+    mix-blend-mode: normal;
+    border: 0px solid
+      light-dark(rgba(207, 30, 51, 0.25), rgba(251, 70, 76, 0.25));
+    border-left: 3px solid light-dark(rgb(207, 30, 51), rgb(251, 70, 76));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="example"] {
+    --callout-color: 168, 130, 255;
     background-color: light-dark(
       rgba(95, 56, 214, 0.1),
       rgba(168, 130, 255, 0.1)
     );
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid
       light-dark(rgba(95, 56, 214, 0.25), rgba(168, 130, 255, 0.25));
     border-left: 3px solid light-dark(rgb(95, 56, 214), rgb(168, 130, 255));
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="quote"] {
+    --callout-color: 158, 158, 158;
     background-color: rgba(158, 158, 158, 0.1);
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid rgba(158, 158, 158, 0.25);
     border-left: 3px solid rgb(158, 158, 158);
-    border-top-left-radius: 4px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 0px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   table {
     background-color: rgba(0, 0, 0, 0);
-    border-collapse: collapse;
+    border-collapse: separate;
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-family: "CMU Typewriter Text";
     table-layout: auto;
-    width: auto;
+    width: 194.578px;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2902,9 +3159,9 @@ body {
     border-end-end-radius: 0px;
     margin: 16px 334.719px 0px 334.703px;
     margin-block-end: 0px;
-    margin-block-start: 16px;
-    margin-inline-end: 334.719px;
-    margin-inline-start: 334.703px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
   }
 
   thead {
@@ -2940,14 +3197,14 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 0px;
+    padding: 4px 8px;
   }
 
   td {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     font-weight: 400;
-    text-align: center;
+    text-align: start;
     vertical-align: top;
     border: 1px solid light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
     border-top-left-radius: 0px;
@@ -2958,7 +3215,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 0px;
+    padding: 4px 8px;
   }
 
   tr {
@@ -2975,10 +3232,19 @@ body {
     border-end-end-radius: 0px;
   }
 
+  tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
   img {
+    border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: 100%;
+    max-width: none;
     object-fit: fill;
     border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 0px;
@@ -2989,11 +3255,11 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: auto;
-    margin-block-end: auto;
-    margin-block-start: auto;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
   }
 
   figure {
@@ -3009,8 +3275,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 16px 40px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
     margin-inline-end: 40px;
     margin-inline-start: 40px;
     padding: 0px;
@@ -3031,9 +3297,10 @@ body {
   }
 
   video {
+    border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: 100%;
+    max-width: none;
     object-fit: contain;
     border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 0px;
@@ -3065,10 +3332,75 @@ body {
     padding: 0px;
   }
 
+  .transclude {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: solid;
+    border-width: 0px;
+    border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .transclude-inner {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: solid;
+    border-width: 0px;
+    border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .file-embed {
+    background-color: light-dark(rgb(218, 186, 151), rgb(43, 39, 35));
+    border-color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    border-width: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 0px;
+    padding: 8px;
+  }
+
+  .metadata {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    font-family: "CMU Typewriter Text";
+    border: 0px solid light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .metadata-properties {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    font-family: "CMU Typewriter Text";
+    border-color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 6px;
+    height: 15px;
     border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3095,19 +3427,19 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(225, 196, 166), rgb(43, 39, 35));
-    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
     font-family: "CMU Typewriter Text";
-    border: 1px solid light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
-    padding: 4px 8px;
+    border: 0px solid light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px 8px;
   }
 
   details {
@@ -3176,8 +3508,8 @@ body {
 
   dl {
     margin: 16px 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
@@ -3222,117 +3554,117 @@ body {
   }
 
   li.task-list-item[data-task="-"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task=">"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="/"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="?"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="!"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="*"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="l"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="b"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="i"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="S"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="I"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="p"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="c"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="f"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="k"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="u"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="d"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   li.task-list-item[data-task="w"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    text-decoration: rgb(204, 194, 183);
+    text-decoration-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
   }
 
   .katex-display > .katex {
     display: block;
     text-align: center;
-    white-space-collapse: break-spaces;
+    white-space-collapse: collapse;
     text-wrap-mode: wrap;
     font-family: "CMU Typewriter Text";
   }
@@ -3350,7 +3682,7 @@ body {
     cursor: default;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: none solid rgb(178, 166, 153);
+    text-decoration: rgb(178, 166, 153);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -3359,21 +3691,21 @@ body {
       rgba(255, 255, 255, 0.067)
     );
     border: 0px light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
-    transition-duration: 0.1s;
-    transition-property: background-color;
-    transition-timing-function: ease-in-out;
+    transition-duration: 0s;
+    transition-property: all;
+    transition-timing-function: ease;
   }
 
   .explorer
@@ -3384,7 +3716,7 @@ body {
     cursor: default;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: none solid rgb(178, 166, 153);
+    text-decoration: rgb(178, 166, 153);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -3392,7 +3724,188 @@ body {
     cursor: default;
     font-family: "CMU Typewriter Text";
     font-weight: 400;
-    text-decoration: none solid rgb(178, 166, 153);
+    text-decoration: rgb(178, 166, 153);
+  }
+
+  .graph > .graph-outer > .global-graph-icon {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    cursor: default;
+    border-color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  footer {
+    background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    font-family: "CMU Typewriter Text";
+    border-color: light-dark(rgb(198, 165, 127), rgb(80, 68, 49));
+    border-style: solid;
+    border-width: 1px 0px 0px 1px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  footer ul li a {
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    text-decoration: rgb(178, 166, 153);
+  }
+
+  .recent-notes > h3 {
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    font-family: "CMU Typewriter Text";
+    font-weight: 400;
+  }
+
+  .recent-notes > ul.recent-ul > li {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    text-decoration: rgb(178, 166, 153);
+  }
+
+  .recent-notes > ul.recent-ul > li .section > .meta {
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    font-family: "CMU Typewriter Text";
+  }
+
+  ul.section-ul {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  li.section-li {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  li.section-li > .section > .desc > h3 > a {
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    text-decoration: rgb(178, 166, 153);
+  }
+
+  li.section-li > .section .meta {
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    font-family: "CMU Typewriter Text";
+  }
+
+  .darkmode {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    cursor: default;
+    border-color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .darkmode svg {
+    stroke: rgb(178, 166, 153);
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+  }
+
+  .breadcrumb-container {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    border-color: light-dark(rgb(91, 79, 74), rgb(178, 166, 153));
+    border-width: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .breadcrumb-element p {
+    color: light-dark(rgb(122, 109, 104), rgb(134, 128, 116));
+    font-family: "CMU Typewriter Text";
+  }
+
+  .navigation-progress {
+    background-color: light-dark(rgb(218, 187, 154), rgb(65, 54, 50));
+  }
+
+  .page-header h2.page-title {
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    font-family: "CMU Typewriter Text";
+  }
+
+  .katex-display {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .footnotes {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-top-width: 0px;
+    color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+  }
+
+  .table-container {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .spacer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ul.overflow {
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
+    border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  ol.overflow {
+    background-color: light-dark(rgb(225, 196, 166), rgb(55, 45, 41));
+    border-color: light-dark(rgb(95, 79, 73), rgb(204, 194, 183));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   figure[data-rehype-pretty-code-figure] {
@@ -3402,10 +3915,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
@@ -3417,25 +3930,25 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   pre > code > [data-line] {
     background-color: rgba(0, 0, 0, 0);
-    border-left: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-left: 0px light-dark(rgb(151, 116, 0), rgb(224, 222, 113));
   }
 
   pre > code > [data-line][data-highlighted-line] {
     background-color: rgba(0, 0, 0, 0);
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-left-color: light-dark(rgb(151, 116, 0), rgb(224, 222, 113));
   }
 
   pre > code [data-highlighted-chars] {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(151, 116, 0), rgb(224, 222, 113));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
