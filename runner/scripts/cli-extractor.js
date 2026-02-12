@@ -24,6 +24,7 @@ const VAULT_PATH = resolve("./runner/vault");
 const RESULTS_DIR = resolve("./runner/results");
 const BASELINE_DIR = join(RESULTS_DIR, "_baseline");
 const TEMP_RESULT_FILE = join(VAULT_PATH, ".cli-extract-result.json");
+const TEMP_ERROR_FILE = join(VAULT_PATH, ".cli-extract-result-error.txt");
 const TEMP_SCRIPT_FILE = join(VAULT_PATH, ".cli-extract-script.js");
 const CLI_TIMEOUT = 180000;
 
@@ -62,6 +63,7 @@ const EXTRACTION_FILES = [
 
 const STYLE_PROPERTIES = [
   "accent-color",
+  "appearance",
   "background",
   "background-color",
   "background-image",
@@ -94,6 +96,8 @@ const STYLE_PROPERTIES = [
   "caret-color",
   "color",
   "column-rule-color",
+  "cursor",
+  "display",
   "fill",
   "filter",
   "font-family",
@@ -115,11 +119,16 @@ const STYLE_PROPERTIES = [
   "outline-offset",
   "outline-style",
   "outline-width",
+  "overflow-x",
   "padding",
   "padding-bottom",
   "padding-left",
   "padding-right",
   "padding-top",
+  "pointer-events",
+  "position",
+  "scrollbar-color",
+  "scrollbar-width",
   "stroke",
   "text-align",
   "text-decoration",
@@ -129,7 +138,16 @@ const STYLE_PROPERTIES = [
   "text-decoration-thickness",
   "text-shadow",
   "text-transform",
+  "transform",
+  "transition",
+  "user-select",
+  "vertical-align",
   "white-space",
+  "width",
+  "-webkit-mask-image",
+  "-webkit-mask-position",
+  "-webkit-mask-repeat",
+  "-webkit-mask-size",
 ];
 
 class ObsidianCLI {
@@ -145,6 +163,7 @@ class ObsidianCLI {
       const result = execSync(fullCommand, {
         encoding: "utf-8",
         timeout,
+        maxBuffer: 50 * 1024 * 1024, // 50MB buffer for large extraction outputs
         cwd: this.vaultPath,
         stdio: ["pipe", "pipe", "pipe"],
       });
@@ -232,6 +251,53 @@ class ObsidianCLI {
   async reload() {
     this.exec("reload");
     await this.sleep(2000);
+  }
+
+  async waitForReady(options = {}) {
+    const { timeout = 15000, interval = 500, label = "" } = options;
+    const start = Date.now();
+
+    while (Date.now() - start < timeout) {
+      try {
+        const status = await this.eval(`
+          (() => {
+            let ruleCount = 0;
+            let sheetCount = 0;
+            try {
+              sheetCount = document.styleSheets.length;
+              for (const sheet of document.styleSheets) {
+                try {
+                  const rules = sheet.cssRules || sheet.rules;
+                  if (rules) ruleCount += rules.length;
+                } catch (e) {}
+              }
+            } catch (e) {}
+            const hasBody = !!document.body;
+            const hasContent = !!document.querySelector(".workspace");
+            return { sheetCount, ruleCount, hasBody, hasContent };
+          })();
+        `);
+
+        if (
+          status &&
+          status.hasBody &&
+          status.hasContent &&
+          status.sheetCount > 0 &&
+          status.ruleCount > 10
+        ) {
+          return true;
+        }
+      } catch {
+        // eval failed, Obsidian may still be loading
+      }
+
+      await this.sleep(interval);
+    }
+
+    console.warn(
+      `      waitForReady timed out after ${timeout}ms${label ? ` (${label})` : ""}`,
+    );
+    return false;
   }
 
   async hoverOverLink() {
@@ -408,60 +474,170 @@ function shouldSkipTheme(themeName, manifest, hashCache) {
 }
 
 function generateFullExtractionScript(selectors) {
+  const pseudoElements = [
+    "::before",
+    "::after",
+    "::selection",
+    "::marker",
+    "::placeholder",
+  ];
+
   return `
 (function() {
-  const selectors = ${JSON.stringify(selectors)};
-  const styleProps = ${JSON.stringify(STYLE_PROPERTIES)};
-  const results = {};
+  const fs = require("fs");
+  const ERROR_FILE = ${JSON.stringify(TEMP_ERROR_FILE)};
+  const RESULT_FILE = ${JSON.stringify(TEMP_RESULT_FILE)};
 
-  function getAllCssVars(style) {
-    const vars = {};
-    for (let i = 0; i < style.length; i++) {
-      const prop = style[i];
-      if (prop.startsWith("--")) {
+  try {
+    const selectors = ${JSON.stringify(selectors)};
+    const styleProps = ${JSON.stringify(STYLE_PROPERTIES)};
+    const pseudoElements = ${JSON.stringify(pseudoElements)};
+    const results = {};
+
+    function discoverCssVarNames() {
+      const varNames = new Set();
+      try {
+        for (const sheet of document.styleSheets) {
+          try {
+            const rules = sheet.cssRules || sheet.rules;
+            if (!rules) continue;
+            for (const rule of rules) {
+              if (rule.style) {
+                for (let i = 0; i < rule.style.length; i++) {
+                  const prop = rule.style[i];
+                  if (prop.startsWith("--")) {
+                    varNames.add(prop);
+                  }
+                }
+              }
+              // Also check nested rules (e.g. @media, @supports)
+              if (rule.cssRules) {
+                for (const nested of rule.cssRules) {
+                  if (nested.style) {
+                    for (let i = 0; i < nested.style.length; i++) {
+                      const prop = nested.style[i];
+                      if (prop.startsWith("--")) {
+                        varNames.add(prop);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          } catch (e) {
+            // CORS-restricted stylesheet, skip
+          }
+        }
+      } catch (e) {
+        // styleSheets access failed, skip
+      }
+      return varNames;
+    }
+
+    const allVarNames = discoverCssVarNames();
+
+    function getAllCssVars(style) {
+      const vars = {};
+      for (const prop of allVarNames) {
         const val = style.getPropertyValue(prop);
         if (val && val.trim()) vars[prop] = val.trim();
       }
+      return vars;
     }
-    return vars;
-  }
 
-  function getStandardProps(style) {
-    const props = {};
-    for (const prop of styleProps) {
-      const val = style.getPropertyValue(prop);
-      if (val && val.trim() && val !== "none" && val !== "normal" && val !== "auto") {
-        props[prop] = val.trim();
+    function getStandardProps(style) {
+      const props = {};
+      for (const prop of styleProps) {
+        const val = style.getPropertyValue(prop);
+        if (val && val.trim() && val !== "none" && val !== "normal" && val !== "auto") {
+          props[prop] = val.trim();
+        }
+      }
+      return props;
+    }
+
+    function extractPseudoStyles(el, selector) {
+      for (const pseudo of pseudoElements) {
+        try {
+          const pseudoStyle = window.getComputedStyle(el, pseudo);
+          const content = pseudoStyle.getPropertyValue("content");
+          if (!content || content === "none" || content === "normal") continue;
+
+          const extracted = { ...getAllCssVars(pseudoStyle), ...getStandardProps(pseudoStyle) };
+          extracted["content"] = content.trim();
+
+          if (Object.keys(extracted).length > 0) {
+            const pseudoKey = selector + pseudo;
+            results[pseudoKey] = { ...results[pseudoKey], ...extracted };
+          }
+        } catch (e) {
+          // Pseudo-element extraction failed, skip
+        }
       }
     }
-    return props;
-  }
 
-  const bodyStyle = window.getComputedStyle(document.body);
-  results["body"] = { ...getAllCssVars(bodyStyle), ...getStandardProps(bodyStyle) };
+    // Extract from html element
+    const htmlStyle = window.getComputedStyle(document.documentElement);
+    const htmlExtracted = { ...getAllCssVars(htmlStyle), ...getStandardProps(htmlStyle) };
+    if (Object.keys(htmlExtracted).length > 0) {
+      results["html"] = htmlExtracted;
+    }
 
-  for (const selector of selectors) {
+    // Extract from body element
+    const bodyStyle = window.getComputedStyle(document.body);
+    results["body"] = { ...getAllCssVars(bodyStyle), ...getStandardProps(bodyStyle) };
+
+    // Extract pseudo-elements from html and body
+    extractPseudoStyles(document.documentElement, "html");
+    extractPseudoStyles(document.body, "body");
+
+    for (const selector of selectors) {
+      try {
+        const el = document.querySelector(selector);
+        if (!el) continue;
+
+        const style = window.getComputedStyle(el);
+        const extracted = { ...getAllCssVars(style), ...getStandardProps(style) };
+
+        if (Object.keys(extracted).length > 0) {
+          results[selector] = { ...results[selector], ...extracted };
+        }
+
+        // Extract pseudo-element styles for this selector
+        extractPseudoStyles(el, selector);
+      } catch (e) {
+        // Invalid selector, skip
+      }
+    }
+
+    fs.writeFileSync(
+      RESULT_FILE,
+      JSON.stringify(results, null, 2)
+    );
+
+    return Object.keys(results).length;
+  } catch (topLevelError) {
     try {
-      const el = document.querySelector(selector);
-      if (!el) continue;
-
-      const style = window.getComputedStyle(el);
-      const extracted = { ...getAllCssVars(style), ...getStandardProps(style) };
-
-      if (Object.keys(extracted).length > 0) {
-        results[selector] = { ...results[selector], ...extracted };
-      }
-    } catch (e) {
-      // Invalid selector, skip
+      const diagInfo = [
+        "EXTRACTION SCRIPT TOP-LEVEL ERROR",
+        "Timestamp: " + new Date().toISOString(),
+        "Error: " + (topLevelError.message || String(topLevelError)),
+        "Stack: " + (topLevelError.stack || "N/A"),
+        "Type: " + (topLevelError.constructor ? topLevelError.constructor.name : typeof topLevelError),
+        "",
+        "DOM state:",
+        "  document.body exists: " + !!document.body,
+        "  document.documentElement exists: " + !!document.documentElement,
+        "  styleSheets count: " + (document.styleSheets ? document.styleSheets.length : "N/A"),
+        "  body classList: " + (document.body ? Array.from(document.body.classList).join(", ") : "N/A"),
+        "  workspace exists: " + !!document.querySelector(".workspace"),
+      ].join("\\n");
+      fs.writeFileSync(ERROR_FILE, diagInfo);
+    } catch (writeError) {
+      // Cannot even write diagnostics - truly fatal
     }
+    return -1;
   }
-
-  require("fs").writeFileSync(
-    ${JSON.stringify(TEMP_RESULT_FILE)},
-    JSON.stringify(results, null, 2)
-  );
-
-  return Object.keys(results).length;
 })();
 `;
 }
@@ -474,27 +650,101 @@ function buildSelectors() {
   ];
 }
 
-async function extractFull(cli, selectors) {
+async function extractFull(cli, selectors, retries = 2) {
   const script = generateFullExtractionScript(selectors);
   writeFileSync(TEMP_SCRIPT_FILE, script);
 
-  try {
-    const loadAndRun = `
-      const script = require("fs").readFileSync(${JSON.stringify(TEMP_SCRIPT_FILE)}, "utf-8");
-      eval(script);
-    `;
-    await cli.eval(loadAndRun);
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      if (existsSync(TEMP_RESULT_FILE)) unlinkSync(TEMP_RESULT_FILE);
+      if (existsSync(TEMP_ERROR_FILE)) unlinkSync(TEMP_ERROR_FILE);
 
-    if (existsSync(TEMP_RESULT_FILE)) {
-      const content = readFileSync(TEMP_RESULT_FILE, "utf-8");
-      return JSON.parse(content);
+      const loadAndRun = `
+        try {
+          const fs = require("fs");
+          const scriptContent = fs.readFileSync(${JSON.stringify(TEMP_SCRIPT_FILE)}, "utf-8");
+          eval(scriptContent);
+        } catch (loadError) {
+          try {
+            require("fs").writeFileSync(
+              ${JSON.stringify(TEMP_ERROR_FILE)},
+              "LOAD_AND_RUN ERROR\\n" +
+              "Error: " + (loadError.message || String(loadError)) + "\\n" +
+              "Stack: " + (loadError.stack || "N/A") + "\\n"
+            );
+          } catch (e) {}
+        }
+      `;
+      await cli.eval(loadAndRun);
+
+      // Poll for result or error file — obsidian eval may return before script completes
+      const pollTimeout = 5000;
+      const pollInterval = 200;
+      const pollStart = Date.now();
+      while (Date.now() - pollStart < pollTimeout) {
+        if (existsSync(TEMP_RESULT_FILE) || existsSync(TEMP_ERROR_FILE)) break;
+        await cli.sleep(pollInterval);
+      }
+
+      if (existsSync(TEMP_ERROR_FILE)) {
+        const errorContent = readFileSync(TEMP_ERROR_FILE, "utf-8");
+        if (attempt < retries) {
+          console.warn(
+            `      Script error (attempt ${attempt + 1}/${retries + 1}): ${errorContent.split("\n")[2] || "unknown"}, retrying...`,
+          );
+          await cli.sleep(500);
+          continue;
+        }
+        console.warn(
+          `      Script error after ${retries + 1} attempts:\n${errorContent}`,
+        );
+      }
+
+      if (existsSync(TEMP_RESULT_FILE)) {
+        const content = readFileSync(TEMP_RESULT_FILE, "utf-8");
+        try {
+          const parsed = JSON.parse(content);
+          if (existsSync(TEMP_SCRIPT_FILE)) unlinkSync(TEMP_SCRIPT_FILE);
+          if (existsSync(TEMP_RESULT_FILE)) unlinkSync(TEMP_RESULT_FILE);
+          if (existsSync(TEMP_ERROR_FILE)) unlinkSync(TEMP_ERROR_FILE);
+          return parsed;
+        } catch (parseError) {
+          if (attempt < retries) {
+            console.warn(
+              `      JSON parse failed (attempt ${attempt + 1}/${retries + 1}), retrying...`,
+            );
+            await cli.sleep(500);
+            continue;
+          }
+          console.warn(
+            `      JSON parse failed after ${retries + 1} attempts: ${parseError.message}`,
+          );
+        }
+      } else if (attempt < retries) {
+        console.warn(
+          `      Result file missing (attempt ${attempt + 1}/${retries + 1}), retrying...`,
+        );
+        await cli.sleep(500);
+        continue;
+      }
+    } catch (error) {
+      if (attempt < retries) {
+        console.warn(
+          `      Extraction error (attempt ${attempt + 1}/${retries + 1}): ${error.message}, retrying...`,
+        );
+        await cli.sleep(500);
+        continue;
+      }
+      console.warn(
+        `      Extraction failed after ${retries + 1} attempts: ${error.message}`,
+      );
     }
-
-    return {};
-  } finally {
-    if (existsSync(TEMP_SCRIPT_FILE)) unlinkSync(TEMP_SCRIPT_FILE);
-    if (existsSync(TEMP_RESULT_FILE)) unlinkSync(TEMP_RESULT_FILE);
   }
+
+  if (existsSync(TEMP_SCRIPT_FILE)) unlinkSync(TEMP_SCRIPT_FILE);
+  if (existsSync(TEMP_RESULT_FILE)) unlinkSync(TEMP_RESULT_FILE);
+  if (existsSync(TEMP_ERROR_FILE)) unlinkSync(TEMP_ERROR_FILE);
+  return {};
 }
 
 function loadBaseline(mode) {
@@ -588,16 +838,46 @@ async function extractModeStyles(cli, selectors) {
 
   for (const file of EXTRACTION_FILES) {
     const fileStart = Date.now();
-    await cli.openFile(file);
-    await cli.sleep(300);
+    let fileResults = {};
+    let attempts = 0;
+    const maxAttempts = 3;
 
-    if (file === "theme-embeds/tooltips.md") {
-      await cli.hoverOverLink();
+    while (attempts < maxAttempts) {
+      attempts++;
+      try {
+        await cli.openFile(file);
+        await cli.waitForReady({ timeout: 5000, interval: 300, label: file });
+
+        if (file === "theme-embeds/tooltips.md") {
+          await cli.hoverOverLink();
+        }
+
+        fileResults = await extractFull(cli, selectors);
+        const count = Object.keys(fileResults).length;
+
+        if (count > 0 || attempts >= maxAttempts) {
+          break;
+        }
+
+        console.warn(
+          `      ${file}: 0 selectors on attempt ${attempts}/${maxAttempts}, retrying...`,
+        );
+        await cli.sleep(500);
+      } catch (error) {
+        if (attempts >= maxAttempts) {
+          console.warn(
+            `      ${file}: extraction failed after ${maxAttempts} attempts: ${error.message}`,
+          );
+          break;
+        }
+        console.warn(
+          `      ${file}: error on attempt ${attempts}/${maxAttempts}: ${error.message}, retrying...`,
+        );
+        await cli.sleep(500);
+      }
     }
 
-    const fileResults = await extractFull(cli, selectors);
     const count = Object.keys(fileResults).length;
-
     for (const [selector, styles] of Object.entries(fileResults)) {
       modeResults[selector] = { ...modeResults[selector], ...styles };
     }
@@ -627,7 +907,7 @@ async function extractBaseline(cli, selectors) {
 
     configureVaultForTheme("", mode, [], {});
     await cli.reload();
-    await cli.sleep(1000);
+    await cli.waitForReady({ label: `baseline ${mode}` });
 
     await ensurePluginsEnabled(cli);
 
@@ -680,7 +960,7 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
 
     configureVaultForTheme(themeName, mode, snippets, styleSettings);
     await cli.reload();
-    await cli.sleep(1000);
+    await cli.waitForReady({ label: `${themeName} ${mode}` });
 
     await ensurePluginsEnabled(cli);
 

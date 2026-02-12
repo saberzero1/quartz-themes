@@ -43,9 +43,11 @@
   --bases-cards-background: rgb(249, 248, 251) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: rgb(227, 222, 237) !important;
   --bases-cards-font-size: 0.875rem !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px rgb(184, 173, 210) !important;
   --bases-cards-shadow-hover: 0 0 0 1px rgb(170, 156, 201) !important;
@@ -106,14 +108,31 @@
   --blockquote-border-color: rgb(153, 115, 247) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(in srgb, rgb(249, 248, 251) 65%, transparent)
+    linear-gradient(
+      rgb(249, 248, 251),
+      color-mix(in srgb, rgb(249, 248, 251) 65%, transparent)
+    ) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 5px !important;
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: from rgb(245, 105, 92) r g b;
+  --callout-color: from rgb(138, 92, 245) r g b;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
   --callout-default: from rgb(92, 168, 245) r g b;
@@ -142,6 +161,9 @@
   --canvas-color-4: from rgb(143, 245, 92) r g b !important;
   --canvas-color-5: from rgb(92, 232, 245) r g b !important;
   --canvas-color-6: from rgb(168, 92, 245) r g b !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: rgb(184, 173, 210) !important;
   --caret-color: rgb(45, 36, 66) !important;
   --checkbox-border-color: rgb(184, 173, 210) !important;
@@ -209,7 +231,7 @@
   --color-red-rgb: from rgb(245, 105, 92) r g b !important;
   --color-yellow: rgb(245, 219, 92) !important;
   --color-yellow-rgb: from rgb(245, 219, 92) r g b !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -228,7 +250,11 @@
   --dropdown-background-hover: rgb(227, 222, 237) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
     0 0 0 1px rgb(184, 173, 210), inset 0 0 0 1px rgb(184, 173, 210) !important;
   --embed-border-bottom: none !important;
@@ -239,17 +265,22 @@
   --embed-max-height: 80vh !important;
   --embed-padding: 0 !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: rgb(249, 248, 251) !important;
+  --file-header-background-focused: rgb(249, 248, 251) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px !important;
+  --file-margins: 32px 32px !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: rgb(249, 248, 251) !important;
   --flair-color: rgb(45, 36, 66) !important;
   --focus-ring-color: #0df !important;
@@ -258,15 +289,16 @@
   --font-bold: 700 !important;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme:
     Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
@@ -274,12 +306,12 @@
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-monospace:
-    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
     Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
@@ -293,18 +325,18 @@
     "DejaVu Sans Mono", monospace !important;
   --font-normal: 400 !important;
   --font-print:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial" !important;
+    "??", "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic",
+    source-sans-pro, sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933rem !important;
   --font-smaller: 0.875rem !important;
   --font-smallest: 0.8rem !important;
   --font-text:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme:
@@ -353,25 +385,25 @@
   --h2-size: 2.047em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 600 !important;
+  --h2-weight: 680 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.728em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 600 !important;
+  --h3-weight: 660 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.44em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 600 !important;
+  --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.2em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
@@ -420,9 +452,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: rgb(184, 173, 210) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgb(184, 173, 210) !important;
   --input-radius: 5px !important;
@@ -434,6 +468,8 @@
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: rgb(153, 115, 247) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -488,8 +524,14 @@
   --menu-background: rgb(241, 239, 246) !important;
   --menu-border-color: rgb(170, 156, 201) !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
@@ -510,13 +552,15 @@
   ) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-input-font-size: 0.875rem !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: rgb(45, 36, 66) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(
@@ -524,10 +568,11 @@
   ) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-label-font-size: 0.875rem !important;
   --metadata-label-text-color: rgb(141, 123, 183) !important;
   --metadata-label-text-color-hover: rgb(141, 123, 183) !important;
@@ -541,6 +586,9 @@
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(155, 140, 192) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(170, 156, 201) !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -551,11 +599,13 @@
   --modal-border-color: rgb(155, 140, 192) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 12px !important;
+  --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
@@ -583,8 +633,10 @@
   --nav-item-color-highlighted: rgb(138, 92, 245) !important;
   --nav-item-color-hover: rgb(45, 36, 66) !important;
   --nav-item-color-selected: rgb(45, 36, 66) !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
+  --nav-item-radius: 4px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
@@ -628,6 +680,9 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: rgb(249, 248, 251) !important;
   --prompt-border-color: rgb(155, 140, 192) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -638,6 +693,25 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
+  --raised-background: color-mix(in srgb, rgb(249, 248, 251) 65%, transparent)
+    linear-gradient(
+      rgb(249, 248, 251),
+      color-mix(in srgb, rgb(249, 248, 251) 65%, transparent)
+    ) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(
+      to bottom left,
+      white,
+      transparent,
+      white
+    )
+    border-box no-repeat !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: rgb(241, 239, 246) !important;
   --ribbon-background-collapsed: rgb(249, 248, 251) !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -658,6 +732,14 @@
   --search-icon-color: rgb(141, 123, 183) !important;
   --search-icon-size: 18px !important;
   --search-result-background: rgb(249, 248, 251) !important;
+  --setting-group-heading-color: rgb(45, 36, 66) !important;
+  --setting-group-heading-size: 15px !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: rgb(227, 222, 237) !important;
+  --setting-items-border-color: rgb(184, 173, 210) !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 20px !important;
+  --setting-items-radius: 12px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
@@ -690,7 +772,7 @@
   --slider-thumb-border-color: rgb(170, 156, 201) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
+  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: rgb(184, 173, 210) !important;
@@ -703,6 +785,8 @@
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
   --status-bar-text-color: rgb(141, 123, 183) !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: rgb(249, 248, 251) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0 / 0.1) !important;
@@ -735,6 +819,11 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: rgb(241, 239, 246) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    rgb(241, 239, 246),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0 / 0.05) !important;
@@ -794,6 +883,7 @@
   --tag-border-width: 0px !important;
   --tag-color: rgb(138, 92, 245) !important;
   --tag-color-hover: rgb(138, 92, 245) !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
@@ -832,17 +922,39 @@
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: 40px !important;
+  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: rgb(90, 72, 132) !important;
   --vault-profile-color-hover: rgb(90, 72, 132) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255 / 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --raised-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
+  --shadow-edges: 0 0 transparent !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --h1-color: rgb(138, 92, 245) !important;
   --h2-color: rgb(138, 92, 245) !important;
   --h3-color: rgb(138, 92, 245) !important;
@@ -854,7 +966,6 @@
   --accent-color: rgb(138, 92, 245) !important;
   --accent-rgb: from rgb(138, 92, 245) r g b !important;
   --blue-h: 210 !important;
-  --callout-color: from rgb(138, 92, 245) r g b;
   --color-grey: rgb(168, 168, 168) !important;
   --color-grey-rgb: from rgb(168, 168, 168) r g b !important;
   --cyan-h: 185 !important;
@@ -908,9 +1019,11 @@
   --bases-cards-background: rgb(23, 18, 33) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: rgb(45, 36, 66) !important;
   --bases-cards-font-size: 0.875rem !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px rgb(79, 63, 115) !important;
   --bases-cards-shadow-hover: 0 0 0 1px rgb(90, 72, 132) !important;
@@ -971,14 +1084,31 @@
   --blockquote-border-color: rgb(138, 92, 245) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(in srgb, rgb(34, 27, 49) 65%, transparent)
+    linear-gradient(
+      rgb(34, 27, 49),
+      color-mix(in srgb, rgb(34, 27, 49) 65%, transparent)
+    ) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 5px !important;
   --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: from rgb(245, 105, 92) r g b;
+  --callout-color: from rgb(138, 92, 245) r g b;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
   --callout-default: from rgb(92, 168, 245) r g b;
@@ -1007,6 +1137,9 @@
   --canvas-color-4: from rgb(143, 245, 92) r g b !important;
   --canvas-color-5: from rgb(92, 232, 245) r g b !important;
   --canvas-color-6: from rgb(168, 92, 245) r g b !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: rgb(79, 63, 115) !important;
   --caret-color: rgb(198, 189, 219) !important;
   --checkbox-border-color: rgb(79, 63, 115) !important;
@@ -1074,7 +1207,7 @@
   --color-red-rgb: from rgb(245, 105, 92) r g b !important;
   --color-yellow: rgb(245, 219, 92) !important;
   --color-yellow-rgb: from rgb(245, 219, 92) r g b !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -1093,7 +1226,11 @@
   --dropdown-background-hover: rgb(56, 45, 82) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
     0 0 0 1px rgb(79, 63, 115), inset 0 0 0 1px rgb(79, 63, 115) !important;
   --embed-border-bottom: none !important;
@@ -1104,17 +1241,22 @@
   --embed-max-height: 80vh !important;
   --embed-padding: 0 !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: rgb(23, 18, 33) !important;
+  --file-header-background-focused: rgb(23, 18, 33) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px !important;
+  --file-margins: 32px 32px !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: rgb(34, 27, 49) !important;
   --flair-color: rgb(198, 189, 219) !important;
   --focus-ring-color: #0df !important;
@@ -1123,15 +1265,16 @@
   --font-bold: 700 !important;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme:
     Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
@@ -1139,12 +1282,12 @@
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-monospace:
-    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
     Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
@@ -1158,18 +1301,18 @@
     "DejaVu Sans Mono", monospace !important;
   --font-normal: 400 !important;
   --font-print:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial" !important;
+    "??", "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic",
+    source-sans-pro, sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933rem !important;
   --font-smaller: 0.875rem !important;
   --font-smallest: 0.8rem !important;
   --font-text:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme:
@@ -1218,25 +1361,25 @@
   --h2-size: 2.047em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 600 !important;
+  --h2-weight: 680 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.728em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 600 !important;
+  --h3-weight: 660 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1.44em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 600 !important;
+  --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.2em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: 620 !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
@@ -1285,9 +1428,11 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: rgb(79, 63, 115) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgb(79, 63, 115) !important;
   --input-radius: 5px !important;
@@ -1299,6 +1444,8 @@
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -1353,8 +1500,14 @@
   --menu-background: rgb(34, 27, 49) !important;
   --menu-border-color: rgb(90, 72, 132) !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
@@ -1375,13 +1528,15 @@
   ) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-input-font-size: 0.875rem !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: rgb(198, 189, 219) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(
@@ -1389,10 +1544,11 @@
   ) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+    "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-label-font-size: 0.875rem !important;
   --metadata-label-text-color: rgb(113, 91, 164) !important;
   --metadata-label-text-color-hover: rgb(113, 91, 164) !important;
@@ -1406,6 +1562,9 @@
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(101, 81, 148) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(90, 72, 132) !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -1416,11 +1575,13 @@
   --modal-border-color: rgb(101, 81, 148) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: 1000px !important;
   --modal-max-width: 1100px !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 12px !important;
+  --modal-shadow: none !important;
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
@@ -1448,8 +1609,10 @@
   --nav-item-color-highlighted: rgb(166, 139, 249) !important;
   --nav-item-color-hover: rgb(198, 189, 219) !important;
   --nav-item-color-selected: rgb(198, 189, 219) !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
+  --nav-item-radius: 4px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
@@ -1491,6 +1654,9 @@
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: rgb(23, 18, 33) !important;
   --prompt-border-color: rgb(101, 81, 148) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -1501,6 +1667,19 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
+  --raised-background: color-mix(in srgb, rgb(34, 27, 49) 65%, transparent)
+    linear-gradient(
+      rgb(34, 27, 49),
+      color-mix(in srgb, rgb(34, 27, 49) 65%, transparent)
+    ) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: transparent !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: rgb(34, 27, 49) !important;
   --ribbon-background-collapsed: rgb(23, 18, 33) !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -1521,6 +1700,14 @@
   --search-icon-color: rgb(113, 91, 164) !important;
   --search-icon-size: 18px !important;
   --search-result-background: rgb(23, 18, 33) !important;
+  --setting-group-heading-color: rgb(198, 189, 219) !important;
+  --setting-group-heading-size: 15px !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: rgb(45, 36, 66) !important;
+  --setting-items-border-color: rgb(79, 63, 115) !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 20px !important;
+  --setting-items-radius: 12px !important;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -1553,7 +1740,7 @@
   --slider-thumb-border-color: rgb(90, 72, 132) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
+  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: rgb(79, 63, 115) !important;
@@ -1566,6 +1753,8 @@
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
   --status-bar-text-color: rgb(113, 91, 164) !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: rgb(23, 18, 33) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255 / 0.15) !important;
@@ -1598,6 +1787,11 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: rgb(34, 27, 49) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    rgb(34, 27, 49),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255 / 0.05) !important;
@@ -1657,6 +1851,7 @@
   --tag-border-width: 0px !important;
   --tag-color: rgb(166, 139, 249) !important;
   --tag-color-hover: rgb(166, 139, 249) !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
@@ -1695,12 +1890,27 @@
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: 40px !important;
+  --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: rgb(141, 123, 183) !important;
   --vault-profile-color-hover: rgb(141, 123, 183) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(0, 0, 0 / 0.6) !important;
   --xfa-focus-outline: auto !important;
@@ -1717,7 +1927,6 @@
   --accent-color: rgb(138, 92, 245) !important;
   --accent-rgb: from rgb(138, 92, 245) r g b !important;
   --blue-h: 210 !important;
-  --callout-color: from rgb(138, 92, 245) r g b;
   --color-grey: rgb(168, 168, 168) !important;
   --color-grey-rgb: from rgb(168, 168, 168) r g b !important;
   --cyan-h: 185 !important;
@@ -1798,7 +2007,7 @@ body {
   .page > div#quartz-body div.sidebar.right {
     background-color: light-dark(rgb(241, 239, 246), rgb(34, 27, 49));
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
-    border-left: 1px solid light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
+    border-left: 0px light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
   }
 
   .page > div#quartz-body div.sidebar.left {
@@ -1824,24 +2033,28 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(138, 92, 245);
+    outline: rgb(138, 92, 245) none 0px;
+    text-decoration: rgb(138, 92, 245);
     text-decoration-color: rgb(138, 92, 245);
-    text-decoration-line: none;
+    text-decoration-line: underline;
     text-decoration-style: solid;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(166, 138, 249), rgb(138, 92, 245));
+    color: rgb(138, 92, 245);
     cursor: pointer;
     filter: none;
     font-family:
@@ -1857,17 +2070,21 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: underline 1.6px wavy rgb(138, 92, 245);
-    text-decoration-color: light-dark(rgb(166, 138, 249), rgb(138, 92, 245));
+    outline: rgb(138, 92, 245) none 0px;
+    text-decoration: rgb(138, 92, 245);
+    text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
-    text-decoration-style: wavy;
+    text-decoration-style: solid;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -1889,20 +2106,24 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid color(srgb 0.54032 0.3608 0.9592 / 0.3);
+    outline: rgb(138, 92, 245) none 0px;
+    text-decoration: color(srgb 0.54032 0.3608 0.9592 / 0.3);
     text-decoration-color: light-dark(
       color(srgb 0.54032 0.3608 0.9592 / 0.2),
       color(srgb 0.54032 0.3608 0.9592 / 0.3)
     );
-    text-decoration-line: none;
+    text-decoration-line: underline;
     text-decoration-style: solid;
+    transition: opacity 0.14s ease-in-out;
     user-select: text;
   }
 
@@ -1926,7 +2147,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
     cursor: auto;
     filter: none;
     font-family:
@@ -1942,18 +2163,22 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(198, 189, 219);
-    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    outline: rgb(113, 90, 165) none 0px;
+    text-decoration: rgb(113, 90, 165);
+    text-decoration-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
     text-decoration-line: none;
     text-decoration-style: solid;
-    user-select: text;
+    transition: all;
+    user-select: none;
   }
 
   .page article p > strong,
@@ -1975,17 +2200,21 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    text-decoration: none solid rgb(198, 189, 219);
+    outline: rgb(198, 189, 219) none 0px;
+    text-decoration: rgb(198, 189, 219);
     text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -2008,17 +2237,21 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    text-decoration: none solid rgb(198, 189, 219);
+    outline: rgb(198, 189, 219) none 0px;
+    text-decoration: rgb(198, 189, 219);
     text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -2041,17 +2274,21 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(198, 189, 219);
+    outline: rgb(198, 189, 219) none 0px;
+    text-decoration: rgb(198, 189, 219);
     text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -2074,17 +2311,21 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(198, 189, 219);
+    outline: rgb(198, 189, 219) none 0px;
+    text-decoration: rgb(198, 189, 219);
     text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -2106,17 +2347,21 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(198, 189, 219);
+    outline: rgb(198, 189, 219) none 0px;
+    text-decoration: rgb(198, 189, 219);
     text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
     border: 0px rgb(0, 0, 0);
     border-top-left-radius: 0px;
@@ -2147,17 +2392,21 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: line-through solid rgb(198, 189, 219);
+    outline: rgb(198, 189, 219) none 0px;
+    text-decoration: line-through rgb(198, 189, 219);
     text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     text-decoration-line: line-through;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -2184,10 +2433,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
@@ -2203,22 +2452,25 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: color(srgb 0.54032 0.3608 0.9592 / 0.2);
     border: 0px light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   hr {
-    border: 0px rgb(138, 92, 245);
-    border-top: 1px solid rgb(138, 92, 245);
+    border-color: rgb(128, 128, 128)
+      light-dark(rgb(184, 173, 210), rgb(79, 63, 115))
+      light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
+    border-style: solid solid none none;
+    border-width: 0px 1px 0px 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2228,11 +2480,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     box-shadow: none;
-    margin: 0px auto;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
+    margin: 0px;
+    margin-block-end: 32px;
+    margin-block-start: 32px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
   }
 
   a.internal.tag-link,
@@ -2245,7 +2497,7 @@ body {
     > ul
     > li
     > .match-tag {
-    align-items: center;
+    align-items: normal;
     background-color: rgba(138, 92, 245, 0.1);
     display: flex;
     font-family:
@@ -2261,7 +2513,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -2274,10 +2528,10 @@ body {
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
-    border-start-start-radius: 28px;
-    border-start-end-radius: 28px;
-    border-end-start-radius: 28px;
-    border-end-end-radius: 28px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   a.internal.tag-link::before {
@@ -2290,18 +2544,18 @@ body {
   }
 
   ul > li::marker {
-    background-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
-    border: 0px light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-start-start-radius: 50%;
-    border-start-end-radius: 50%;
-    border-end-start-radius: 50%;
-    border-end-end-radius: 50%;
-    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
-    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    pointer-events: auto;
     transform: none;
   }
 
@@ -2311,42 +2565,39 @@ body {
   }
 
   ol > li::marker {
-    background-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
-    border: 0px light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-start-start-radius: 50%;
-    border-start-end-radius: 50%;
-    border-end-start-radius: 50%;
-    border-end-end-radius: 50%;
-    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
-    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    pointer-events: auto;
     transform: none;
   }
 
   code {
-    background-color: light-dark(
-      color(srgb 0.54032 0.3608 0.9592 / 0.1),
-      color(srgb 0.54032 0.3608 0.9592 / 0.15)
-    );
-    border: 0px solid light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid rgb(138, 92, 245);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: rgb(138, 92, 245);
     font-family:
       ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
       "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
       "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
       Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-    padding: 1.6px 9.6px;
+    padding: 0px;
   }
 
   pre > code,
@@ -2360,14 +2611,14 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    overflow-x: auto;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    overflow-x: visible;
     padding: 12px 16px;
     white-space-collapse: preserve;
-    text-wrap-mode: wrap;
+    text-wrap-mode: nowrap;
   }
 
   pre:has(> code) {
@@ -2380,35 +2631,36 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    overflow-x: auto;
-    padding: 12px 16px;
-    white-space-collapse: preserve;
-    text-wrap-mode: wrap;
-  }
-
-  input[type="checkbox"] {
-    appearance: auto;
-    border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 1px 2px;
-    margin: 0px;
+    overflow-x: visible;
+    padding: 12px 16px;
+    white-space-collapse: preserve;
+    text-wrap-mode: nowrap;
+  }
+
+  input[type="checkbox"] {
+    appearance: auto;
+    border: 1px solid light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+    margin: 0px 8px 0px -24px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    width: auto;
-    position: static;
+    width: 16px;
+    transition: 0.2s ease-in-out;
+    position: relative;
     top: auto;
   }
 
@@ -2418,18 +2670,18 @@ body {
   }
 
   input[type="checkbox"]:checked:after {
-    content: none;
+    content: normal;
     top: auto;
     inset-inline-start: auto;
     position: static;
     width: auto;
-    display: inline;
+    display: list-item;
     background-color: rgba(0, 0, 0, 0);
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
-    text-decoration: line-through solid rgb(113, 90, 165);
+    text-decoration: line-through rgb(113, 90, 165);
     text-decoration-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
   }
 
@@ -2451,7 +2703,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -2460,14 +2714,14 @@ body {
     font-style: normal;
     padding-bottom: 8px;
     padding-top: 8px;
-    padding-inline-start: 24px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
   }
 
   .data-footnote-backref {
     color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
-    text-decoration: none solid rgb(79, 63, 115);
+    text-decoration: rgb(79, 63, 115);
   }
 
   .search > .search-button {
@@ -2477,10 +2731,10 @@ body {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     font-family:
       Cantarell,
@@ -2495,7 +2749,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -2510,10 +2766,10 @@ body {
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     box-shadow:
       rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
       rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
@@ -2521,8 +2777,8 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
-    border: 0px light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px inset light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     border-bottom: 1px solid light-dark(rgb(241, 239, 246), rgb(34, 27, 49));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2553,17 +2809,21 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(198, 189, 219);
+    outline: rgb(198, 189, 219) none 0px;
+    text-decoration: rgb(198, 189, 219);
     text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     text-decoration-line: none;
     text-decoration-style: solid;
+    transition: all;
     user-select: text;
   }
 
@@ -2574,10 +2834,10 @@ body {
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    border-start-start-radius: 12px;
-    border-start-end-radius: 12px;
-    border-end-start-radius: 12px;
-    border-end-end-radius: 12px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .search
@@ -2599,10 +2859,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .search
@@ -2712,7 +2972,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -2736,7 +2998,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -2760,7 +3024,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -2785,7 +3051,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -2799,11 +3067,19 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(249, 248, 251) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(23, 18, 33) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(249, 248, 251) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(23, 18, 33) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2812,20 +3088,32 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(249, 248, 251) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(23, 18, 33) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(249, 248, 251) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(23, 18, 33) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
   }
 
   ::-webkit-scrollbar-track {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(249, 248, 251) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(23, 18, 33) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2837,7 +3125,11 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+    background: light-dark(
+      rgb(249, 248, 251) none repeat scroll 0% 0% / auto padding-box border-box,
+      rgb(23, 18, 33) none repeat scroll 0% 0% / auto padding-box border-box
+    );
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
   }
 
   body {
@@ -2846,20 +3138,22 @@ body {
   }
 
   .callout {
+    --callout-color: from rgb(92, 168, 245) r g b;
     border: 0px solid color(srgb 0.3608 0.66 0.9592 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     mix-blend-mode: normal;
     padding: 12px 12px 12px 24px;
   }
 
   .callout .callout-title {
+    gap: 4px;
     border: 0px color(srgb 0.3608 0.66 0.9592);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2882,6 +3176,7 @@ body {
   }
 
   .callout[data-callout="note"] {
+    --callout-color: from rgb(92, 168, 245) r g b;
     background-color: light-dark(
       color(srgb 0.3608 0.66 0.9592 / 0.1),
       color(srgb 0.3608 0.66 0.9592 / 0.15)
@@ -2892,13 +3187,14 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="abstract"] {
+    --callout-color: from rgb(92, 232, 245) r g b;
     background-color: light-dark(
       color(srgb 0.3608 0.909334 0.9592 / 0.1),
       color(srgb 0.3608 0.909334 0.9592 / 0.15)
@@ -2909,13 +3205,14 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="info"] {
+    --callout-color: from rgb(92, 168, 245) r g b;
     background-color: light-dark(
       color(srgb 0.3608 0.66 0.9592 / 0.1),
       color(srgb 0.3608 0.66 0.9592 / 0.15)
@@ -2926,13 +3223,14 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="todo"] {
+    --callout-color: from rgb(92, 168, 245) r g b;
     background-color: light-dark(
       color(srgb 0.3608 0.66 0.9592 / 0.1),
       color(srgb 0.3608 0.66 0.9592 / 0.15)
@@ -2943,13 +3241,14 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="tip"] {
+    --callout-color: from rgb(92, 232, 245) r g b;
     background-color: light-dark(
       color(srgb 0.3608 0.909334 0.9592 / 0.1),
       color(srgb 0.3608 0.909334 0.9592 / 0.15)
@@ -2960,13 +3259,14 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="success"] {
+    --callout-color: from rgb(143, 245, 92) r g b;
     background-color: light-dark(
       color(srgb 0.560267 0.9592 0.3608 / 0.1),
       color(srgb 0.560267 0.9592 0.3608 / 0.15)
@@ -2977,13 +3277,14 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="question"] {
+    --callout-color: from rgb(245, 156, 92) r g b;
     background-color: light-dark(
       color(srgb 0.9592 0.610133 0.3608 / 0.1),
       color(srgb 0.9592 0.610133 0.3608 / 0.15)
@@ -2994,13 +3295,14 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="warning"] {
+    --callout-color: from rgb(245, 156, 92) r g b;
     background-color: light-dark(
       color(srgb 0.9592 0.610133 0.3608 / 0.1),
       color(srgb 0.9592 0.610133 0.3608 / 0.15)
@@ -3011,100 +3313,105 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="danger"] {
+    --callout-color: from rgb(245, 105, 92) r g b;
     background-color: light-dark(
       color(srgb 0.9592 0.410667 0.3608 / 0.1),
       color(srgb 0.9592 0.410667 0.3608 / 0.15)
     );
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid color(srgb 0.9592 0.410667 0.3608 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="failure"] {
+    --callout-color: from rgb(245, 105, 92) r g b;
     background-color: light-dark(
       color(srgb 0.9592 0.410667 0.3608 / 0.1),
       color(srgb 0.9592 0.410667 0.3608 / 0.15)
     );
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid color(srgb 0.9592 0.410667 0.3608 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="bug"] {
+    --callout-color: from rgb(245, 105, 92) r g b;
     background-color: light-dark(
       color(srgb 0.9592 0.410667 0.3608 / 0.1),
       color(srgb 0.9592 0.410667 0.3608 / 0.15)
     );
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid color(srgb 0.9592 0.410667 0.3608 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="example"] {
+    --callout-color: from rgb(168, 92, 245) r g b;
     background-color: light-dark(
       color(srgb 0.66 0.3608 0.9592 / 0.1),
       color(srgb 0.66 0.3608 0.9592 / 0.15)
     );
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid color(srgb 0.66 0.3608 0.9592 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   .callout[data-callout="quote"] {
+    --callout-color: from rgb(138, 92, 245) r g b;
     background-color: light-dark(
       color(srgb 0.54032 0.3608 0.9592 / 0.1),
       color(srgb 0.54032 0.3608 0.9592 / 0.15)
     );
-    mix-blend-mode: light-dark(darken, lighten);
+    mix-blend-mode: normal;
     border: 0px solid color(srgb 0.54032 0.3608 0.9592 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   table {
     background-color: rgba(0, 0, 0, 0);
-    border-collapse: collapse;
+    border-collapse: separate;
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     font-family:
       Cantarell,
@@ -3119,14 +3426,16 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     table-layout: auto;
-    width: auto;
+    width: 195.062px;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3138,9 +3447,9 @@ body {
     border-end-end-radius: 0px;
     margin: 24px 237.469px 0px;
     margin-block-end: 0px;
-    margin-block-start: 24px;
-    margin-inline-end: 237.469px;
-    margin-inline-start: 237.469px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
   }
 
   thead {
@@ -3175,14 +3484,14 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 0px;
+    padding: 4px 8px;
   }
 
   td {
     background-color: rgba(0, 0, 0, 0);
     color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     font-weight: 400;
-    text-align: center;
+    text-align: start;
     vertical-align: top;
     border: 1px solid rgb(138, 92, 245);
     border-top-left-radius: 0px;
@@ -3193,7 +3502,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 0px;
+    padding: 4px 8px;
   }
 
   tr {
@@ -3209,25 +3518,37 @@ body {
     border-end-end-radius: 0px;
   }
 
+  tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: light-dark(
+      color(srgb 0.54032 0.3608 0.9592 / 0.1),
+      color(srgb 0.54032 0.3608 0.9592 / 0.15)
+    );
+  }
+
   img {
+    border-radius: 8px;
     box-shadow: none;
     filter: none;
-    max-width: 100%;
+    max-width: none;
     object-fit: fill;
-    border: 1px solid rgb(138, 92, 245);
+    border: 0px light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    border-start-start-radius: 8px;
-    border-start-end-radius: 8px;
-    border-end-start-radius: 8px;
-    border-end-end-radius: 8px;
-    margin: 0px auto;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
   }
 
   figure {
@@ -3243,8 +3564,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 16px 40px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
     margin-inline-end: 40px;
     margin-inline-start: 40px;
     padding: 0px;
@@ -3265,7 +3586,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -3283,9 +3606,10 @@ body {
   }
 
   video {
+    border-radius: 0px;
     box-shadow: none;
     filter: none;
-    max-width: 100%;
+    max-width: none;
     object-fit: contain;
     border: 0px light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     border-top-left-radius: 0px;
@@ -3317,10 +3641,111 @@ body {
     padding: 0px;
   }
 
+  .transclude {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(138, 92, 245);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 0px;
+    padding: 8px;
+  }
+
+  .transclude-inner {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(138, 92, 245);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 0px;
+    padding: 8px;
+  }
+
+  .file-embed {
+    background-color: light-dark(rgb(227, 222, 237), rgb(45, 36, 66));
+    border-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    border-width: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 0px;
+    padding: 8px;
+  }
+
+  .metadata {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    font-family:
+      Cantarell,
+      Avenir,
+      Montserrat,
+      Corbel,
+      "URW Gothic",
+      source-sans-pro,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border: 0px solid light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px 0px 32px;
+    padding: 8px 0px;
+  }
+
+  .metadata-properties {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    font-family:
+      Cantarell,
+      Avenir,
+      Montserrat,
+      Corbel,
+      "URW Gothic",
+      source-sans-pro,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
   progress {
     accent-color: auto;
     background-color: rgba(0, 0, 0, 0);
-    height: 6px;
+    height: 15px;
     border: 0px light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3347,8 +3772,8 @@ body {
   }
 
   input[type="text"] {
-    background-color: light-dark(rgb(249, 248, 251), rgb(45, 36, 66));
-    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
     font-family:
       Cantarell,
       Avenir,
@@ -3362,21 +3787,23 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 1px solid light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-start-start-radius: 5px;
-    border-start-end-radius: 5px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
+    border: 0px solid light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     padding: 4px 8px;
   }
 
@@ -3390,10 +3817,10 @@ body {
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    border-start-start-radius: 8px;
-    border-start-end-radius: 8px;
-    border-end-start-radius: 8px;
-    border-end-end-radius: 8px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3456,8 +3883,8 @@ body {
 
   dl {
     margin: 16px 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
@@ -3502,117 +3929,117 @@ body {
   }
 
   li.task-list-item[data-task="-"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task=">"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="/"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="?"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="!"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="*"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="l"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="b"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="i"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="S"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="I"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="p"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="c"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="f"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="k"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="u"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="d"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   li.task-list-item[data-task="w"] {
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-    text-decoration: rgb(218, 218, 218);
-    text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    text-decoration: rgb(198, 189, 219);
+    text-decoration-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
   }
 
   .katex-display > .katex {
     display: block;
     text-align: center;
-    white-space-collapse: break-spaces;
+    white-space-collapse: collapse;
     text-wrap-mode: wrap;
     font-family:
       Cantarell,
@@ -3627,7 +4054,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -3649,7 +4078,9 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
@@ -3677,14 +4108,16 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(113, 90, 165);
+    text-decoration: rgb(113, 90, 165);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -3694,10 +4127,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     color: light-dark(rgb(90, 72, 132), rgb(141, 123, 183));
     cursor: default;
     transition-behavior: normal;
@@ -3726,14 +4159,16 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(113, 90, 165);
+    text-decoration: rgb(113, 90, 165);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -3752,14 +4187,317 @@ body {
       BlinkMacSystemFont,
       system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
+      "Inter Variable",
       Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: none solid rgb(113, 90, 165);
+    text-decoration: rgb(113, 90, 165);
+  }
+
+  .graph > .graph-outer > .global-graph-icon {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    cursor: default;
+    border-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    border-width: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  footer {
+    background-color: light-dark(rgb(241, 239, 246), rgb(34, 27, 49));
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    font-family:
+      Cantarell,
+      Avenir,
+      Montserrat,
+      Corbel,
+      "URW Gothic",
+      source-sans-pro,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    border-style: solid;
+    border-width: 1px 0px 0px 1px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  footer ul li a {
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    text-decoration: rgb(113, 90, 165);
+  }
+
+  .recent-notes > h3 {
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    font-family:
+      Cantarell,
+      Avenir,
+      Montserrat,
+      Corbel,
+      "URW Gothic",
+      source-sans-pro,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 400;
+  }
+
+  .recent-notes > ul.recent-ul > li {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    text-decoration: rgb(113, 90, 165);
+  }
+
+  .recent-notes > ul.recent-ul > li .section > .meta {
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    font-family:
+      Cantarell,
+      Avenir,
+      Montserrat,
+      Corbel,
+      "URW Gothic",
+      source-sans-pro,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+  }
+
+  ul.section-ul {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  li.section-li {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  li.section-li > .section > .desc > h3 > a {
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    text-decoration: rgb(113, 90, 165);
+  }
+
+  li.section-li > .section .meta {
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    font-family:
+      Cantarell,
+      Avenir,
+      Montserrat,
+      Corbel,
+      "URW Gothic",
+      source-sans-pro,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+  }
+
+  .darkmode {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    cursor: default;
+    border-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    border-width: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .darkmode svg {
+    stroke: rgb(113, 90, 165);
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+  }
+
+  .breadcrumb-container {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    border-color: light-dark(rgb(141, 123, 183), rgb(113, 90, 165));
+    border-width: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .breadcrumb-element p {
+    color: light-dark(rgb(184, 173, 210), rgb(79, 63, 115));
+    font-family:
+      Cantarell,
+      Avenir,
+      Montserrat,
+      Corbel,
+      "URW Gothic",
+      source-sans-pro,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+  }
+
+  .navigation-progress {
+    background-color: light-dark(rgb(241, 239, 246), rgb(34, 27, 49));
+  }
+
+  .page-header h2.page-title {
+    color: light-dark(rgb(90, 72, 132), rgb(141, 123, 183));
+    font-family:
+      Cantarell,
+      Avenir,
+      Montserrat,
+      Corbel,
+      "URW Gothic",
+      source-sans-pro,
+      sans-serif,
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+  }
+
+  .katex-display {
+    background-color: rgba(0, 0, 0, 0);
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .footnotes {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-top-width: 0px;
+    color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+  }
+
+  .table-container {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .spacer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ul.overflow {
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
+    border-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  ol.overflow {
+    background-color: light-dark(rgb(249, 248, 251), rgb(23, 18, 33));
+    border-color: light-dark(rgb(45, 36, 66), rgb(198, 189, 219));
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   figure[data-rehype-pretty-code-figure] {
@@ -3772,10 +4510,10 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
@@ -3790,25 +4528,25 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
   }
 
   pre > code > [data-line] {
     background-color: rgba(0, 0, 0, 0);
-    border-left: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-left: 0px rgb(245, 219, 92);
   }
 
   pre > code > [data-line][data-highlighted-line] {
     background-color: rgba(0, 0, 0, 0);
-    border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-left-color: rgb(245, 219, 92);
   }
 
   pre > code [data-highlighted-chars] {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border: 0px rgb(245, 219, 92);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;

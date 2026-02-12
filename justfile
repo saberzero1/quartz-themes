@@ -98,4 +98,4 @@ drop:
 [group('database')]
 rebuild: drop ingest
 
-everything-and-the-kitchen-sink: extract drop prepare ingest compile convert format-non-generated
+everything-and-the-kitchen-sink: cli-extract-baseline cli-extract-all-force drop prepare ingest compile convert format-non-generated

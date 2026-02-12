@@ -288,12 +288,14 @@ body.theme-light {
   --bases-cards-background: white !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: light-dark(
     hsl(from black h s l / 0.06),
     hsl(from white h s l / 0.06)
   ) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 0.5rem !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow:
     0 0 0.05rem
@@ -428,9 +430,22 @@ body.theme-light {
   ) !important;
   --blockquote-border-thickness: 0.25em !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(in srgb, white 65%, transparent)
+    linear-gradient(white, color-mix(in srgb, white 65%, transparent)) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 5px !important;
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
@@ -468,6 +483,9 @@ body.theme-light {
   --canvas-color-4: 8, 185, 78 !important;
   --canvas-color-5: 0, 191, 188 !important;
   --canvas-color-6: 120, 82, 238 !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 0.25rem !important;
   --canvas-dot-pattern: #e0e0e0 !important;
   --caret-color: hsl(258, 150%, 50%) !important;
   --checkbox-border-color: rgb(38, 102, 192) !important;
@@ -551,7 +569,7 @@ body.theme-light {
   --color-red-rgb: 233, 49, 71 !important;
   --color-yellow: hsl(from rgb(38, 102, 192) 57 s l) !important;
   --color-yellow-rgb: 224, 172, 0 !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -570,7 +588,11 @@ body.theme-light {
   --dropdown-background-hover: #fafafa !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
     0 0 0 1px color-mix(in srgb, rgb(38, 102, 192), white 25%),
     inset 0 0 0 1px color-mix(in srgb, rgb(38, 102, 192), white 25%) !important;
@@ -582,10 +604,12 @@ body.theme-light {
   --embed-max-height: 4000px !important;
   --embed-padding: 1em !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: white !important;
+  --file-header-background-focused: white !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --file-header-font-size: 0.8rem !important;
@@ -593,6 +617,8 @@ body.theme-light {
   --file-header-justify: center !important;
   --file-line-width: 37.5rem !important;
   --file-margins: 0 2em !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: rgb(38, 102, 192) !important;
   --flair-color: color-mix(in srgb, rgb(38, 102, 192), white 95%) !important;
   --focus-ring-color: #0df !important;
@@ -605,8 +631,8 @@ body.theme-light {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --font-interface-override: "??" !important;
@@ -616,12 +642,12 @@ body.theme-light {
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --font-monospace:
-    ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
+    "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
     "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -633,7 +659,7 @@ body.theme-light {
     "Source Code Pro", monospace !important;
   --font-normal: 400 !important;
   --font-print:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "??", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
@@ -641,7 +667,7 @@ body.theme-light {
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -786,6 +812,7 @@ body.theme-light {
   --inline-title-weight: 400 !important;
   --input-border-width: 2px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -793,6 +820,7 @@ body.theme-light {
   ) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: color-mix(
     in srgb,
@@ -805,6 +833,8 @@ body.theme-light {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: rgb(38, 102, 192) !important;
   --interactive-accent-hover: rgb(38, 102, 192) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -873,8 +903,14 @@ body.theme-light {
   ) !important;
   --menu-border-color: #d4d4d4 !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 0.5rem !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow:
     0 0 0.05rem
       color-mix(
@@ -933,13 +969,14 @@ body.theme-light {
   ) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -953,8 +990,8 @@ body.theme-light {
   ) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --metadata-label-font-size: 0.875em !important;
@@ -982,6 +1019,9 @@ body.theme-light {
   ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(38, 102, 192) !important;
   --metadata-property-box-shadow-hover: none !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -996,11 +1036,13 @@ body.theme-light {
   --modal-border-color: black !important;
   --modal-border-width: 0 !important;
   --modal-community-sidebar-width: 280px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: calc(100vh - 2em) !important;
   --modal-max-width: calc(100vw - 2em) !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 0.75rem !important;
+  --modal-shadow: none !important;
   --modal-width: 65rem !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
@@ -1058,8 +1100,10 @@ body.theme-light {
     rgb(38, 102, 192),
     black 90%
   ) !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 0.375em 0.75em 0.375em 0.75em !important;
   --nav-item-parent-padding: 0.25em 0 0.25em 0 !important;
+  --nav-item-radius: 0.25rem !important;
   --nav-item-size: 0.8rem !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
@@ -1123,6 +1167,9 @@ body.theme-light {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: white !important;
   --prompt-border-color: transparent !important;
   --prompt-border-width: 0 !important;
   --prompt-input-height: 40px !important;
@@ -1133,6 +1180,25 @@ body.theme-light {
   --radius-m: 0.5rem !important;
   --radius-s: 0.25rem !important;
   --radius-xl: 1rem !important;
+  --raised-background: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    white 80%
+  ) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(
+      to bottom left,
+      white,
+      transparent,
+      white
+    )
+    border-box no-repeat !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: transparent !important;
   --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -1153,6 +1219,22 @@ body.theme-light {
   --search-icon-color: rgb(38, 102, 192) !important;
   --search-icon-size: 18px !important;
   --search-result-background: white !important;
+  --setting-group-heading-color: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 90%
+  ) !important;
+  --setting-group-heading-size: 1rem !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: none !important;
+  --setting-items-border-color: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    white 25%
+  ) !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 0 !important;
+  --setting-items-radius: 0 !important;
   --shadow-l:
     0 0 0.2rem
       color-mix(
@@ -1241,7 +1323,7 @@ body.theme-light {
   --slider-thumb-border-color: #d4d4d4 !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
+  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: hsl(from rgb(38, 102, 192) h s l / 0.5) !important;
@@ -1262,6 +1344,8 @@ body.theme-light {
   --status-bar-position: fixed !important;
   --status-bar-radius: 0.5rem 0 0 0 !important;
   --status-bar-text-color: black !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: white !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -1301,6 +1385,11 @@ body.theme-light {
     in srgb,
     rgb(38, 102, 192),
     white 60%
+  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    color-mix(in srgb, rgb(38, 102, 192), white 60%),
+    transparent
   ) !important;
   --tab-switcher-preview-background-shadow:
     0 0 0.2rem
@@ -1415,8 +1504,9 @@ body.theme-light {
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(114, 58, 242) !important;
+  --tag-color: hsl(258, 88%, 59.4%) !important;
   --tag-color-hover: rgb(138, 92, 245) !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
@@ -1471,6 +1561,20 @@ body.theme-light {
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: calc(18px + 1rem) !important;
+  --traffic-lights-offset-y: calc(18px + 1rem) !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: color-mix(
     in srgb,
@@ -1484,32 +1588,26 @@ body.theme-light {
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 0.8rem !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(255, 255, 255, 0.6) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
+  --raised-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
+  --shadow-edges: 0 0 transparent !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --base-h: 215 !important;
   --base-l: 45% !important;
   --base-s: 67% !important;
   --embed-border-left: none !important;
   --embed-border-right: none !important;
-  --raised-background: color-mix(
-    in srgb,
-    rgb(38, 102, 192),
-    white 80%
-  ) !important;
   --embed-background: hsl(from rgb(38, 102, 192) h s l / 0.12) !important;
-  --setting-group-heading-color: color-mix(
-    in srgb,
-    rgb(38, 102, 192),
-    black 90%
-  ) !important;
-  --setting-group-heading-size: 1rem !important;
-  --setting-items-padding: 0 !important;
-  --setting-items-radius: 0 !important;
   --tag-weight: 400 !important;
-  --setting-group-heading-weight: 600 !important;
   --r-background-color: white !important;
   --r-heading-color: color-mix(
     in srgb,
@@ -1527,7 +1625,6 @@ body.theme-light {
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --r-main-font-size: 42px !important;
-  --setting-items-background: none !important;
   --r-heading-font-weight: 100 !important;
   --background-input: light-dark(
     hsl(from rgb(38, 102, 192) h s l / 0.12),
@@ -1567,12 +1664,6 @@ body.theme-light {
   --r-heading1-text-shadow: none !important;
   --r-link-color-hover: rgb(166, 139, 249) !important;
   --r-main-color: color-mix(in srgb, rgb(38, 102, 192), black 90%) !important;
-  --setting-items-border-color: color-mix(
-    in srgb,
-    rgb(38, 102, 192),
-    white 25%
-  ) !important;
-  --setting-items-border-width: 0 !important;
   --tab-background-inactive: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -2022,6 +2113,9 @@ body.theme-light {
   --theme-color-tabBgInactiveHover: hsl(
     from rgb(38, 102, 192) h s l / 0.75
   ) !important;
+  --theme-color-tableHeaderBg: hsl(
+    from rgb(38, 102, 192) h s l / 0.12
+  ) !important;
   --theme-color-tabNavActiveBg: light-dark(
     color-mix(in srgb, rgb(38, 102, 192), white 70%),
     color-mix(in srgb, rgb(38, 102, 192), black 70%)
@@ -2029,9 +2123,6 @@ body.theme-light {
   --theme-color-tabNavBg: light-dark(
     color-mix(in srgb, rgb(38, 102, 192), white 60%),
     color-mix(in srgb, rgb(38, 102, 192), black 60%)
-  ) !important;
-  --theme-color-tableHeaderBg: hsl(
-    from rgb(38, 102, 192) h s l / 0.12
   ) !important;
   --theme-color-tagBgHover: hsl(258, 90%, 68%, 0.1) !important;
   --theme-color-tagBgSidebar: hsl(258, 105.6%, 66%, 0.15) !important;
@@ -2239,12 +2330,14 @@ body.theme-dark {
   ) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
+  --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: light-dark(
     hsl(from black h s l / 0.06),
     hsl(from white h s l / 0.06)
   ) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
+  --bases-cards-radius: 0.5rem !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow:
     0 0 0.05rem
@@ -2392,9 +2485,22 @@ body.theme-dark {
   ) !important;
   --blockquote-border-thickness: 0.25em !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(in srgb, #363636 65%, transparent)
+    linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent)) !important;
+  --blur-brightness: 1.15 !important;
+  --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
+  --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
+  --blur-opacity-m: 90% !important;
+  --blur-opacity-s: 65% !important;
+  --blur-radius-l: 16px !important;
+  --blur-radius-m: 10px !important;
+  --blur-radius-s: 6px !important;
+  --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: 600 !important;
   --border-width: 1px !important;
+  --button-corner-shape: round !important;
   --button-radius: 5px !important;
   --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
@@ -2436,6 +2542,9 @@ body.theme-dark {
   --canvas-color-4: 68, 207, 110 !important;
   --canvas-color-5: 83, 223, 221 !important;
   --canvas-color-6: 168, 130, 255 !important;
+  --canvas-controls-icon-size: 16px !important;
+  --canvas-controls-icon-stroke: 2px !important;
+  --canvas-controls-radius: 0.25rem !important;
   --canvas-dot-pattern: #363636 !important;
   --caret-color: hsl(258, 150%, 80%) !important;
   --checkbox-border-color: rgb(38, 102, 192) !important;
@@ -2523,7 +2632,7 @@ body.theme-dark {
   --color-red-rgb: 251, 70, 76 !important;
   --color-yellow: hsl(from rgb(38, 102, 192) 57 s l) !important;
   --color-yellow-rgb: 224, 222, 113 !important;
-  --corner-smoothing: 0 !important;
+  --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -2542,7 +2651,11 @@ body.theme-dark {
   --dropdown-background-hover: #3f3f3f !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
+  --dropdown-icon-inset: 0.5em !important;
+  --dropdown-icon-width: 1em !important;
   --dropdown-padding: 0 1.9em 0 0.8em !important;
+  --dropdown-padding-end: 1.9em !important;
+  --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
     0 0 0 1px color-mix(in srgb, rgb(38, 102, 192), black 25%),
     inset 0 0 0 1px color-mix(in srgb, rgb(38, 102, 192), black 25%) !important;
@@ -2554,10 +2667,20 @@ body.theme-dark {
   --embed-max-height: 4000px !important;
   --embed-padding: 1em !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 95%
+  ) !important;
+  --file-header-background-focused: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 95%
+  ) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --file-header-font-size: 0.8rem !important;
@@ -2565,6 +2688,8 @@ body.theme-dark {
   --file-header-justify: center !important;
   --file-line-width: 37.5rem !important;
   --file-margins: 0 2em !important;
+  --file-margins-x: 32px !important;
+  --file-margins-y: 32px !important;
   --flair-background: rgb(38, 102, 192) !important;
   --flair-color: color-mix(in srgb, rgb(38, 102, 192), white 95%) !important;
   --focus-ring-color: #0df !important;
@@ -2577,8 +2702,8 @@ body.theme-dark {
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
   --font-interface:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --font-interface-override: "??" !important;
@@ -2588,12 +2713,12 @@ body.theme-dark {
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --font-monospace:
-    ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
+    "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
     "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -2605,7 +2730,7 @@ body.theme-dark {
     "Source Code Pro", monospace !important;
   --font-normal: 400 !important;
   --font-print:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "??", "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
@@ -2613,7 +2738,7 @@ body.theme-dark {
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -2766,6 +2891,7 @@ body.theme-dark {
   --inline-title-weight: 400 !important;
   --input-border-width: 2px !important;
   --input-border-width-focus: 2px !important;
+  --input-corner-shape: round !important;
   --input-date-separator: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -2773,6 +2899,7 @@ body.theme-dark {
   ) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
+  --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: color-mix(
     in srgb,
@@ -2785,6 +2912,8 @@ body.theme-dark {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --inset-end: right !important;
+  --inset-start: left !important;
   --interactive-accent: rgb(38, 102, 192) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
@@ -2853,8 +2982,14 @@ body.theme-dark {
   ) !important;
   --menu-border-color: #3f3f3f !important;
   --menu-border-width: 1px !important;
+  --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 0.5rem !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow:
     0 0 0.05rem
       color-mix(
@@ -2913,13 +3048,14 @@ body.theme-dark {
   ) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
+  --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -2933,8 +3069,8 @@ body.theme-dark {
   ) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --metadata-label-font-size: 0.875em !important;
@@ -2963,6 +3099,9 @@ body.theme-dark {
   --metadata-property-box-shadow-focus: 0 0 0 2px
     color-mix(in srgb, rgb(38, 102, 192), black 25%) !important;
   --metadata-property-box-shadow-hover: none !important;
+  --metadata-property-corner-shape: round !important;
+  --metadata-property-corner-shape-focus: round !important;
+  --metadata-property-corner-shape-hover: round !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -2977,11 +3116,13 @@ body.theme-dark {
   --modal-border-color: black !important;
   --modal-border-width: 0 !important;
   --modal-community-sidebar-width: 280px !important;
+  --modal-header-height: auto !important;
   --modal-height: 85vh !important;
   --modal-max-height: calc(100vh - 2em) !important;
   --modal-max-width: calc(100vw - 2em) !important;
   --modal-max-width-narrow: 800px !important;
   --modal-radius: 0.75rem !important;
+  --modal-shadow: none !important;
   --modal-width: 65rem !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
@@ -3039,8 +3180,10 @@ body.theme-dark {
     rgb(38, 102, 192),
     white 60%
   ) !important;
+  --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 0.375em 0.75em 0.375em 0.75em !important;
   --nav-item-parent-padding: 0.25em 0 0.25em 0 !important;
+  --nav-item-radius: 0.25rem !important;
   --nav-item-size: 0.8rem !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
@@ -3111,6 +3254,13 @@ body.theme-dark {
   --popover-pdf-height: 400px !important;
   --popover-pdf-width: 450px !important;
   --popover-width: 450px !important;
+  --preferred-text-scale: 1 !important;
+  --prompt-backdrop-filter: none !important;
+  --prompt-background: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 95%
+  ) !important;
   --prompt-border-color: transparent !important;
   --prompt-border-width: 0 !important;
   --prompt-input-height: 40px !important;
@@ -3121,6 +3271,19 @@ body.theme-dark {
   --radius-m: 0.5rem !important;
   --radius-s: 0.25rem !important;
   --radius-xl: 1rem !important;
+  --raised-background: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 80%
+  ) !important;
+  --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: transparent !important;
+  --raised-mask-border-width: 0 !important;
+  --raised-mask-composite: exclude, add !important;
+  --raised-mask-display: block !important;
   --ribbon-background: transparent !important;
   --ribbon-background-collapsed: transparent !important;
   --ribbon-padding: 8px 4px 12px !important;
@@ -3145,6 +3308,22 @@ body.theme-dark {
     rgb(38, 102, 192),
     black 95%
   ) !important;
+  --setting-group-heading-color: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    white 60%
+  ) !important;
+  --setting-group-heading-size: 1rem !important;
+  --setting-group-heading-weight: 600 !important;
+  --setting-items-background: none !important;
+  --setting-items-border-color: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 25%
+  ) !important;
+  --setting-items-border-width: 0 !important;
+  --setting-items-padding: 0 !important;
+  --setting-items-radius: 0 !important;
   --shadow-l:
     0 0 0.2rem
       color-mix(
@@ -3233,7 +3412,7 @@ body.theme-dark {
   --slider-thumb-border-color: #3f3f3f !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
-  --slider-thumb-radius: 50% !important;
+  --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: hsl(from rgb(38, 102, 192) h s l / 0.5) !important;
@@ -3257,6 +3436,12 @@ body.theme-dark {
     in srgb,
     rgb(38, 102, 192),
     white 60%
+  ) !important;
+  --suggestion-backdrop-filter: none !important;
+  --suggestion-background: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 95%
   ) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
@@ -3301,6 +3486,11 @@ body.theme-dark {
     in srgb,
     rgb(38, 102, 192),
     black 70%
+  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    color-mix(in srgb, rgb(38, 102, 192), black 70%),
+    transparent
   ) !important;
   --tab-switcher-preview-background-shadow:
     0 0 0.2rem
@@ -3421,6 +3611,7 @@ body.theme-dark {
   --tag-border-width: 0px !important;
   --tag-color: rgb(181, 150, 253) !important;
   --tag-color-hover: rgb(166, 139, 249) !important;
+  --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
   --tag-padding-x: 0.65em !important;
@@ -3475,6 +3666,20 @@ body.theme-dark {
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
+  --touch-radius-l: 52px !important;
+  --touch-radius-m: 44px !important;
+  --touch-radius-s: 40px !important;
+  --touch-radius-xl: 60px !important;
+  --touch-radius-xs: 30px !important;
+  --touch-radius-xxs: 24px !important;
+  --touch-size-l: 52px !important;
+  --touch-size-m: 44px !important;
+  --touch-size-s: 40px !important;
+  --touch-size-xl: 60px !important;
+  --touch-size-xs: 30px !important;
+  --touch-size-xxs: 24px !important;
+  --traffic-lights-offset-x: calc(18px + 1rem) !important;
+  --traffic-lights-offset-y: calc(18px + 1rem) !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: color-mix(
     in srgb,
@@ -3488,6 +3693,7 @@ body.theme-dark {
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 0.8rem !important;
   --vault-profile-font-weight: 500 !important;
+  --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6) !important;
   --xfa-focus-outline: auto !important;
@@ -3498,22 +3704,8 @@ body.theme-dark {
   --base-s: 67% !important;
   --embed-border-left: none !important;
   --embed-border-right: none !important;
-  --raised-background: color-mix(
-    in srgb,
-    rgb(38, 102, 192),
-    white 80%
-  ) !important;
   --embed-background: hsl(from rgb(38, 102, 192) h s l / 0.12) !important;
-  --setting-group-heading-color: color-mix(
-    in srgb,
-    rgb(38, 102, 192),
-    white 60%
-  ) !important;
-  --setting-group-heading-size: 1rem !important;
-  --setting-items-padding: 0 !important;
-  --setting-items-radius: 0 !important;
   --tag-weight: 400 !important;
-  --setting-group-heading-weight: 600 !important;
   --r-background-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -3535,7 +3727,6 @@ body.theme-dark {
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --r-main-font-size: 42px !important;
-  --setting-items-background: none !important;
   --r-heading-font-weight: 100 !important;
   --background-input: light-dark(
     hsl(from rgb(38, 102, 192) h s l / 0.12),
@@ -3575,12 +3766,6 @@ body.theme-dark {
   --r-heading1-text-shadow: none !important;
   --r-link-color-hover: rgb(197, 182, 252) !important;
   --r-main-color: color-mix(in srgb, rgb(38, 102, 192), white 60%) !important;
-  --setting-items-border-color: color-mix(
-    in srgb,
-    rgb(38, 102, 192),
-    black 25%
-  ) !important;
-  --setting-items-border-width: 0 !important;
   --tab-background-inactive: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -4051,6 +4236,9 @@ body.theme-dark {
   --theme-color-tabBgInactiveHover: hsl(
     from rgb(38, 102, 192) h s l / 0.75
   ) !important;
+  --theme-color-tableHeaderBg: hsl(
+    from rgb(38, 102, 192) h s l / 0.12
+  ) !important;
   --theme-color-tabNavActiveBg: light-dark(
     color-mix(in srgb, rgb(38, 102, 192), white 70%),
     color-mix(in srgb, rgb(38, 102, 192), black 70%)
@@ -4058,9 +4246,6 @@ body.theme-dark {
   --theme-color-tabNavBg: light-dark(
     color-mix(in srgb, rgb(38, 102, 192), white 60%),
     color-mix(in srgb, rgb(38, 102, 192), black 60%)
-  ) !important;
-  --theme-color-tableHeaderBg: hsl(
-    from rgb(38, 102, 192) h s l / 0.12
   ) !important;
   --theme-color-tagBgHover: hsl(258, 105.6%, 52.8%, 0.75) !important;
   --theme-color-tagBgSidebar: hsl(258, 105.6%, 16.5%, 0.5) !important;
@@ -4217,15 +4402,18 @@ body .markdown-rendered a.external-link {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  text-decoration: underline 1px solid rgb(166, 138, 249);
+  outline: rgb(166, 138, 249) none 0px;
+  text-decoration: underline 1px rgb(166, 138, 249);
   text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.14s ease-in-out;
   user-select: text;
 }
 body .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(166, 138, 249), rgb(197, 182, 252));
+  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   cursor: pointer;
   filter: none;
   font-family:
@@ -4234,10 +4422,13 @@ body .markdown-rendered a.internal-link {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  text-decoration: underline 1px solid rgb(197, 182, 252);
-  text-decoration-color: light-dark(rgb(166, 138, 249), rgb(197, 182, 252));
+  outline: rgb(166, 138, 249) none 0px;
+  text-decoration: underline 1px rgb(166, 138, 249);
+  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.14s ease-in-out;
   user-select: text;
 }
 body .markdown-rendered a.internal-link.is-unresolved {
@@ -4251,10 +4442,13 @@ body .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
+  outline: rgb(166, 138, 249) none 0px;
   text-decoration: underline 1px dashed rgba(138, 92, 245, 0.3);
   text-decoration-color: rgba(138, 92, 245, 0.3);
   text-decoration-line: underline;
   text-decoration-style: dashed;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.14s ease-in-out;
   user-select: text;
 }
 body .markdown-rendered a.external-link:hover {
@@ -4274,8 +4468,8 @@ body .markdown-rendered a.internal-link:hover {
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
   color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
+    color(srgb 0.01485 0.039975 0.07515 / 0.7),
+    color(srgb 0.6594 0.7599 0.9006 / 0.7)
   );
   cursor: auto;
   filter: none;
@@ -4284,15 +4478,17 @@ body .markdown-rendered p {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 300;
-  text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
+  font-weight: 400;
+  outline: color(srgb 0.6594 0.7599 0.9006 / 0.7) none 0px;
+  text-decoration: color(srgb 0.6594 0.7599 0.9006 / 0.7);
   text-decoration-color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
+    color(srgb 0.01485 0.039975 0.07515 / 0.7),
+    color(srgb 0.6594 0.7599 0.9006 / 0.7)
   );
   text-decoration-line: none;
   text-decoration-style: solid;
-  user-select: text;
+  transition: all;
+  user-select: none;
 }
 body strong {
   background-color: rgba(0, 0, 0, 0);
@@ -4308,13 +4504,15 @@ body strong {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
-  text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
+  outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
   );
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body b {
@@ -4331,13 +4529,15 @@ body b {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
-  text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
+  outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
   );
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body em {
@@ -4354,13 +4554,15 @@ body em {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
+  outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
   );
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body i {
@@ -4377,13 +4579,15 @@ body i {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
+  outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
   );
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body .markdown-rendered mark {
@@ -4400,13 +4604,15 @@ body .markdown-rendered mark {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
+  outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
   );
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body del {
@@ -4423,13 +4629,15 @@ body del {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  text-decoration: line-through solid color(srgb 0.6594 0.7599 0.9006);
+  outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
+  text-decoration: line-through color(srgb 0.6594 0.7599 0.9006);
   text-decoration-color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
   );
   text-decoration-line: line-through;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body .suggestion-item.is-selected {
@@ -4438,46 +4646,47 @@ body .suggestion-item.is-selected {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(
     color(srgb 0.957425 0.969988 0.987575),
     color(srgb 0.01485 0.039975 0.07515)
   );
 }
 body div.suggestion-item {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(38, 102, 192);
   border: 0px
     light-dark(
-      color(srgb 0.01485 0.039975 0.07515),
-      color(srgb 0.6594 0.7599 0.9006)
+      color(srgb 0.957425 0.969988 0.987575),
+      color(srgb 0.01485 0.039975 0.07515)
     );
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
+    color(srgb 0.957425 0.969988 0.987575),
+    color(srgb 0.01485 0.039975 0.07515)
   );
 }
 body .markdown-rendered hr {
-  border: 0px
+  border-color: rgb(128, 128, 128)
+    light-dark(
+      color(srgb 0.361375 0.549813 0.813625),
+      color(srgb 0.111375 0.299813 0.563625)
+    )
     light-dark(
       color(srgb 0.361375 0.549813 0.813625),
       color(srgb 0.111375 0.299813 0.563625)
     );
-  border-top: 2px solid
-    light-dark(
-      color(srgb 0.361375 0.549813 0.813625),
-      color(srgb 0.111375 0.299813 0.563625)
-    );
+  border-style: solid solid none none;
+  border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4488,13 +4697,13 @@ body .markdown-rendered hr {
   border-end-end-radius: 0px;
   box-shadow: none;
   margin: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
 body div.multi-select-pill {
-  align-items: center;
+  align-items: normal;
   background-color: light-dark(rgba(134, 82, 255, 0.15), rgba(25, 0, 84, 0.5));
   display: flex;
   font-family:
@@ -4509,10 +4718,10 @@ body div.multi-select-pill {
   border-top-right-radius: 22.4px;
   border-bottom-left-radius: 22.4px;
   border-bottom-right-radius: 22.4px;
-  border-start-start-radius: 22.4px;
-  border-start-end-radius: 22.4px;
-  border-end-start-radius: 22.4px;
-  border-end-end-radius: 22.4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(rgb(44, 8, 127), rgb(181, 151, 253));
@@ -4525,28 +4734,18 @@ body .markdown-rendered ul > li {
   text-align: start;
 }
 body .markdown-rendered ul > li::marker {
-  background-color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
-  );
-  border: 1px solid
-    light-dark(
-      color(srgb 0.01485 0.039975 0.07515),
-      color(srgb 0.6594 0.7599 0.9006)
-    );
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-start-start-radius: 50%;
-  border-start-end-radius: 50%;
-  border-end-start-radius: 50%;
-  border-end-end-radius: 50%;
-  color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
-  );
-  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  pointer-events: auto;
   transform: none;
 }
 body .markdown-rendered ol > li {
@@ -4557,48 +4756,35 @@ body .markdown-rendered ol > li {
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
-  background-color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
-  );
-  border: 1px solid
-    light-dark(
-      color(srgb 0.01485 0.039975 0.07515),
-      color(srgb 0.6594 0.7599 0.9006)
-    );
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-start-start-radius: 50%;
-  border-start-end-radius: 50%;
-  border-end-start-radius: 50%;
-  border-end-end-radius: 50%;
-  color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
-  );
-  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  pointer-events: auto;
   transform: none;
 }
 body .markdown-rendered code {
-  background-color: light-dark(
-    color(srgb 0 0 0 / 0.06),
-    color(srgb 1 1 1 / 0.06)
-  );
+  background-color: rgba(0, 0, 0, 0);
   border: 0px solid
     light-dark(
-      color(srgb 0.361375 0.549813 0.813625),
-      color(srgb 0.111375 0.299813 0.563625)
+      color(srgb 0.01485 0.039975 0.07515),
+      color(srgb 0.6594 0.7599 0.9006)
     );
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
@@ -4607,7 +4793,7 @@ body .markdown-rendered code {
     ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
     "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace;
-  padding: 3.5px 7px;
+  padding: 0px;
 }
 body .markdown-rendered pre > code {
   background-color: light-dark(
@@ -4623,14 +4809,14 @@ body .markdown-rendered pre > code {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  overflow-x: auto;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
   padding: 12px 16px;
   white-space-collapse: preserve;
-  text-wrap-mode: wrap;
+  text-wrap-mode: nowrap;
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
@@ -4647,34 +4833,35 @@ body pre[class*="language-"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  overflow-x: auto;
-  padding: 12px 16px;
-  white-space-collapse: preserve;
-  text-wrap-mode: wrap;
-}
-body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
-  appearance: auto;
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 1px 2px;
-  margin: 0px;
+  overflow-x: visible;
+  padding: 12px 16px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
+  appearance: auto;
+  border: 1px solid rgb(38, 102, 192);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  margin: 0px 8px 0px -24px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  width: auto;
-  position: static;
+  width: 16px;
+  transition: box-shadow 0.15s ease-in-out;
+  position: relative;
   top: auto;
 }
 body ul.contains-task-list > li.task-list-item {
@@ -4685,12 +4872,12 @@ body
   ul.contains-task-list
   > li.task-list-item
   > input[type="checkbox"]:checked {
-  content: none;
+  content: normal;
   top: auto;
   inset-inline-start: auto;
   position: static;
   width: auto;
-  display: inline;
+  display: list-item;
   background-color: rgba(0, 0, 0, 0);
 }
 body ul > li.task-list-item[data-task="x"] {
@@ -4698,7 +4885,7 @@ body ul > li.task-list-item[data-task="x"] {
     color(srgb 0.01485 0.039975 0.07515 / 0.7),
     color(srgb 0.6594 0.7599 0.9006 / 0.7)
   );
-  text-decoration: line-through solid color(srgb 0.6594 0.7599 0.9006 / 0.7);
+  text-decoration: line-through color(srgb 0.6594 0.7599 0.9006 / 0.7);
   text-decoration-color: light-dark(
     color(srgb 0.01485 0.039975 0.07515 / 0.7),
     color(srgb 0.6594 0.7599 0.9006 / 0.7)
@@ -4714,23 +4901,23 @@ body .markdown-rendered blockquote {
   font-style: normal;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding-inline-start: 24px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
 body .footnote-backref {
   color: light-dark(
     color(srgb 0.04455 0.119925 0.22545),
     color(srgb 0.361375 0.549813 0.813625)
   );
-  text-decoration: none solid color(srgb 0.361375 0.549813 0.813625);
+  text-decoration: color(srgb 0.361375 0.549813 0.813625);
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(
     color(srgb 0.1485 0.39975 0.7515 / 0.12),
     color(srgb 0 0 0 / 0.06)
   );
-  border: 0px
+  border: 0px solid
     light-dark(
       color(srgb 0.01485 0.039975 0.07515),
       color(srgb 0.6594 0.7599 0.9006)
@@ -4739,10 +4926,10 @@ body .site-body-left-column input.search-bar {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
@@ -4758,15 +4945,15 @@ body .search-results {
     color(srgb 0.957425 0.969988 0.987575),
     color(srgb 0.0297 0.07995 0.1503)
   );
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-start-start-radius: 12px;
-  border-start-end-radius: 12px;
-  border-end-start-radius: 12px;
-  border-end-end-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   box-shadow:
     color(srgb 0.01485 0.039975 0.07515 / 0.02) 0px 0px 3.2px 0px,
     color(srgb 0.01485 0.039975 0.07515 / 0.04) 0px 3.2px 6.4px 0px,
@@ -4788,46 +4975,48 @@ body .search-results > * {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
+  outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
   );
   text-decoration-line: none;
   text-decoration-style: solid;
+  transition: all;
   user-select: text;
 }
 body div.search-results {
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-start-start-radius: 12px;
-  border-start-end-radius: 12px;
-  border-end-start-radius: 12px;
-  border-end-end-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item {
   color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
-    color(srgb 0.6594 0.7599 0.9006)
+    color(srgb 0.957425 0.969988 0.987575),
+    color(srgb 0.01485 0.039975 0.07515)
   );
 }
 body div.search-results .suggestion-item {
   border: 0px
     light-dark(
-      color(srgb 0.01485 0.039975 0.07515),
-      color(srgb 0.6594 0.7599 0.9006)
+      color(srgb 0.957425 0.969988 0.987575),
+      color(srgb 0.01485 0.039975 0.07515)
     );
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item.is-selected {
   color: light-dark(
@@ -4919,11 +5108,19 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-self {
   font-weight: 500;
 }
 body .outline-view-outer .outline-view .tree-item > .tree-item-children {
-  margin-inline-start: 7.5px;
-  padding-inline-start: 12.3px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 body body.styled-scrollbars {
-  background-color: light-dark(rgb(255, 255, 255), rgb(30, 30, 30));
+  background: light-dark(
+    rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box,
+    color(srgb 0.007425 0.0199875 0.037575) none repeat scroll 0% 0% / auto
+      padding-box border-box
+  );
+  background-color: light-dark(
+    rgb(255, 255, 255),
+    color(srgb 0.007425 0.0199875 0.037575)
+  );
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4932,26 +5129,32 @@ body body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px
+    light-dark(
+      color(srgb 0.01485 0.039975 0.07515),
+      color(srgb 0.6594 0.7599 0.9006)
+    );
   box-shadow: none;
   scrollbar-width: auto;
-  scrollbar-color: auto;
+  scrollbar-color: color(srgb 0.1485 0.39975 0.7515 / 0.25) rgba(0, 0, 0, 0);
 }
 body .callout[data-callout="note"] {
+  --callout-color: 2, 122, 255;
   border: 0px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 24px;
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
 }
 body .callout[data-callout="note"] > .callout-title {
+  gap: 4px;
   border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -4971,6 +5174,7 @@ body .callout > .callout-content {
   padding: 0px;
 }
 body .callout[data-callout="abstract"] {
+  --callout-color: 83, 223, 221;
   background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
   mix-blend-mode: normal;
   border: 0px solid
@@ -4979,12 +5183,13 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="info"] {
+  --callout-color: 2, 122, 255;
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
   mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
@@ -4992,12 +5197,13 @@ body .callout[data-callout="info"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="todo"] {
+  --callout-color: 2, 122, 255;
   background-color: light-dark(rgba(8, 109, 221, 0.1), rgba(2, 122, 255, 0.1));
   mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
@@ -5005,12 +5211,13 @@ body .callout[data-callout="todo"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="tip"] {
+  --callout-color: 83, 223, 221;
   background-color: light-dark(rgba(0, 191, 188, 0.1), rgba(83, 223, 221, 0.1));
   mix-blend-mode: normal;
   border: 0px solid
@@ -5019,12 +5226,13 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="success"] {
+  --callout-color: 68, 207, 110;
   background-color: light-dark(rgba(8, 185, 78, 0.1), rgba(68, 207, 110, 0.1));
   mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
@@ -5032,12 +5240,13 @@ body .callout[data-callout="success"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="question"] {
+  --callout-color: 233, 151, 63;
   background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
   mix-blend-mode: normal;
   border: 0px solid
@@ -5046,12 +5255,13 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="warning"] {
+  --callout-color: 233, 151, 63;
   background-color: light-dark(rgba(236, 117, 0, 0.1), rgba(233, 151, 63, 0.1));
   mix-blend-mode: normal;
   border: 0px solid
@@ -5060,25 +5270,13 @@ body .callout[data-callout="warning"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="danger"] {
-  background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
-  mix-blend-mode: light-dark(darken, lighten);
-  border: 0px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-}
-body .callout[data-callout="failure"] {
+  --callout-color: 251, 70, 76;
   background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
   mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
@@ -5086,57 +5284,74 @@ body .callout[data-callout="failure"] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout="failure"] {
+  --callout-color: 251, 70, 76;
   background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
-  mix-blend-mode: light-dark(darken, lighten);
+  mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body .callout[data-callout="bug"] {
+  --callout-color: 251, 70, 76;
+  background-color: light-dark(rgba(233, 49, 71, 0.1), rgba(251, 70, 76, 0.1));
+  mix-blend-mode: normal;
+  border: 0px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="example"] {
+  --callout-color: 168, 130, 255;
   background-color: light-dark(
     rgba(120, 82, 238, 0.1),
     rgba(168, 130, 255, 0.1)
   );
-  mix-blend-mode: light-dark(darken, lighten);
+  mix-blend-mode: normal;
   border: 0px solid
     light-dark(rgba(120, 82, 238, 0.25), rgba(168, 130, 255, 0.25));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.1);
-  mix-blend-mode: light-dark(darken, lighten);
+  mix-blend-mode: normal;
   border: 0px solid rgba(158, 158, 158, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
-  border-collapse: collapse;
+  border-collapse: separate;
   color: light-dark(
     color(srgb 0.01485 0.039975 0.07515),
     color(srgb 0.6594 0.7599 0.9006)
@@ -5147,7 +5362,7 @@ body .markdown-rendered table {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   table-layout: auto;
-  width: auto;
+  width: 241.219px;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -5157,11 +5372,11 @@ body .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 75.8906px 0px;
+  margin: 0px 75.8906px;
   margin-block-end: 0px;
-  margin-block-start: 16px;
-  margin-inline-end: 75.8906px;
-  margin-inline-start: 75.8906px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
 body .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
@@ -5200,7 +5415,7 @@ body .markdown-rendered th {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 0px;
+  padding: 6px 12px;
 }
 body .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
@@ -5209,7 +5424,7 @@ body .markdown-rendered td {
     color(srgb 0.6594 0.7599 0.9006)
   );
   font-weight: 400;
-  text-align: center;
+  text-align: start;
   vertical-align: top;
   border: 1px solid
     light-dark(
@@ -5224,7 +5439,7 @@ body .markdown-rendered td {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 0px;
+  padding: 6px 12px;
 }
 body .markdown-rendered tr {
   background-color: rgba(0, 0, 0, 0);
@@ -5238,10 +5453,17 @@ body .markdown-rendered tr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body .markdown-rendered tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0);
+}
+body .markdown-rendered tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0);
+}
 body .markdown-rendered img {
+  border-radius: 0px;
   box-shadow: none;
   filter: none;
-  max-width: 100%;
+  max-width: none;
   object-fit: fill;
   border: 0px
     light-dark(
@@ -5256,11 +5478,11 @@ body .markdown-rendered img {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 0px auto;
+  margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
-  margin-inline-end: auto;
-  margin-inline-start: auto;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
 }
 body .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
@@ -5279,8 +5501,8 @@ body .markdown-rendered figure {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   margin: 16px 40px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
   margin-inline-end: 40px;
   margin-inline-start: 40px;
   padding: 0px;
@@ -5306,9 +5528,10 @@ body .markdown-rendered figcaption {
   padding: 0px;
 }
 body .markdown-rendered video {
+  border-radius: 8px;
   box-shadow: none;
   filter: none;
-  max-width: 100%;
+  max-width: none;
   object-fit: contain;
   border: 0px
     light-dark(
@@ -5319,10 +5542,10 @@ body .markdown-rendered video {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-start-start-radius: 8px;
-  border-start-end-radius: 8px;
-  border-end-start-radius: 8px;
-  border-end-end-radius: 8px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -5346,10 +5569,103 @@ body .markdown-rendered audio {
   border-end-end-radius: 0px;
   padding: 0px;
 }
+body .internal-embed {
+  background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
+  border-left: solid;
+  border-width: 0px;
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px;
+  padding: 16px;
+}
+body .markdown-embed {
+  background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
+  border-left: solid;
+  border-width: 0px;
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px;
+  padding: 16px;
+}
+body .file-embed {
+  background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515 / 0.7),
+    color(srgb 0.6594 0.7599 0.9006 / 0.7)
+  );
+  border-width: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px;
+  padding: 8px;
+}
+body .metadata-container {
+  background-color: light-dark(
+    color(srgb 0.957425 0.969988 0.987575),
+    color(srgb 0.0297 0.07995 0.1503)
+  );
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515 / 0.7),
+    color(srgb 0.6594 0.7599 0.9006 / 0.7)
+  );
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  border: 0px solid
+    light-dark(
+      color(srgb 0.01485 0.039975 0.07515 / 0.7),
+      color(srgb 0.6594 0.7599 0.9006 / 0.7)
+    );
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 8px 32px;
+}
+body .metadata-properties {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515 / 0.7),
+    color(srgb 0.6594 0.7599 0.9006 / 0.7)
+  );
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515 / 0.7),
+    color(srgb 0.6594 0.7599 0.9006 / 0.7)
+  );
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
 body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
-  height: 6px;
+  height: 15px;
   border: 0px
     light-dark(
       color(srgb 0.01485 0.039975 0.07515),
@@ -5378,12 +5694,9 @@ body input[type="range"] {
   border-end-end-radius: 0px;
 }
 body input[type="text"] {
-  background-color: light-dark(
-    color(srgb 0.1485 0.39975 0.7515 / 0.12),
-    color(srgb 0 0 0 / 0.06)
-  );
+  background-color: rgba(0, 0, 0, 0);
   color: light-dark(
-    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.04455 0.119925 0.22545),
     color(srgb 0.6594 0.7599 0.9006)
   );
   font-family:
@@ -5391,20 +5704,20 @@ body input[type="text"] {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
-  border: 0px
+  border: 0px solid
     light-dark(
-      color(srgb 0.01485 0.039975 0.07515),
+      color(srgb 0.04455 0.119925 0.22545),
       color(srgb 0.6594 0.7599 0.9006)
     );
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  padding: 4px 8px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px 5.6px;
 }
 body details {
   background-color: rgba(0, 0, 0, 0);
@@ -5471,7 +5784,7 @@ body kbd {
     "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace;
   font-size: 14px;
-  border: 0px
+  border: 0px solid
     light-dark(
       color(srgb 0.01485 0.039975 0.07515),
       color(srgb 0.6594 0.7599 0.9006)
@@ -5488,8 +5801,8 @@ body kbd {
 }
 body dl {
   margin: 16px 0px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -5543,99 +5856,207 @@ body abbr {
   text-decoration-style: dotted;
 }
 body li.task-list-item[data-task="-"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task=">"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="/"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="?"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="!"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="*"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="l"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="b"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="i"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="S"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="I"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="p"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="c"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="f"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="k"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="u"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="d"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body li.task-list-item[data-task="w"] {
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  text-decoration: rgb(218, 218, 218);
-  text-decoration-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
 }
 body .math-block > mjx-container.MathJax {
   display: block;
   text-align: center;
-  white-space-collapse: break-spaces;
+  white-space-collapse: collapse;
   text-wrap-mode: wrap;
   font-family:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -5665,7 +6086,7 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  text-decoration: none solid color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
 }
 body .nav-view-outer .tree-item-self.mod-active {
   background-color: rgb(38, 102, 192);
@@ -5678,10 +6099,10 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
   color: light-dark(
     color(srgb 0.8297 0.87995 0.9503),
     color(srgb 0.0297 0.07995 0.1503)
@@ -5711,7 +6132,7 @@ body
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
-  text-decoration: none solid color(srgb 0.361375 0.549813 0.813625);
+  text-decoration: color(srgb 0.361375 0.549813 0.813625);
 }
 body
   .nav-view-outer
@@ -5731,7 +6152,220 @@ body
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
-  text-decoration: none solid color(srgb 0.361375 0.549813 0.813625);
+  text-decoration: color(srgb 0.361375 0.549813 0.813625);
+}
+body .clickable-icon {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(
+    color(srgb 0.04455 0.119925 0.22545),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  cursor: default;
+  border-color: light-dark(
+    color(srgb 0.04455 0.119925 0.22545),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-width: 0px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+body .site-footer {
+  background-color: light-dark(
+    color(srgb 0.6594 0.7599 0.9006),
+    color(srgb 0.0594 0.1599 0.3006)
+  );
+  color: light-dark(rgb(0, 0, 0), color(srgb 0.6594 0.7599 0.9006));
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  border: 0px solid light-dark(rgb(0, 0, 0), color(srgb 0.6594 0.7599 0.9006));
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .site-footer a {
+  color: light-dark(
+    color(srgb 0.04455 0.119925 0.22545),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+}
+body .nav-header {
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+}
+body .nav-files-container .tree-item {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .nav-file-title {
+  color: light-dark(
+    color(srgb 0.0297 0.07995 0.1503),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+}
+body .nav-file-title-content {
+  color: light-dark(
+    color(srgb 0.0297 0.07995 0.1503),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body .nav-files-container {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .site-body-left-column-site-theme-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(
+    color(srgb 0.04455 0.119925 0.22545),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  cursor: default;
+  border-color: light-dark(
+    color(srgb 0.04455 0.119925 0.22545),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body .site-body-left-column-site-theme-toggle svg {
+  stroke: color(srgb 0.6594 0.7599 0.9006);
+  color: light-dark(
+    color(srgb 0.04455 0.119925 0.22545),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+}
+body .view-header-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515 / 0.7),
+    color(srgb 0.6594 0.7599 0.9006 / 0.7)
+  );
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515 / 0.7),
+    color(srgb 0.6594 0.7599 0.9006 / 0.7)
+  );
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body .view-header-breadcrumb-separator {
+  color: light-dark(
+    color(srgb 0.04455 0.119925 0.22545),
+    color(srgb 0.361375 0.549813 0.813625)
+  );
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body .page-header .page-title {
+  color: light-dark(rgb(255, 255, 255), color(srgb 0.6594 0.7599 0.9006));
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body .math-block {
+  background-color: rgba(0, 0, 0, 0);
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .footnotes {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-top-width: 0px;
+  color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+}
+body .table-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body .view-content {
+  background-color: light-dark(
+    rgb(255, 255, 255),
+    color(srgb 0.007425 0.0199875 0.037575)
+  );
+  border-color: light-dark(
+    color(srgb 0.01485 0.039975 0.07515),
+    color(srgb 0.6594 0.7599 0.9006)
+  );
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] {
   background-color: light-dark(
@@ -5747,10 +6381,10 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: light-dark(
@@ -5771,22 +6405,22 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left: 0px color(srgb 0.7515 0.72135 0.1485);
 }
 body pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-left-color: color(srgb 0.7515 0.72135 0.1485);
 }
 body pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px color(srgb 0.7515 0.72135 0.1485);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
