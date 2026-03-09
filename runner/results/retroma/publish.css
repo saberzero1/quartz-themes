@@ -346,7 +346,7 @@ body.theme-light {
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
+  --bases-table-container-border-radius: 8px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: oklch(
@@ -515,7 +515,7 @@ body.theme-light {
   --canvas-color-6: 120, 82, 238 !important;
   --canvas-controls-icon-size: 16px !important;
   --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 4px !important;
+  --canvas-controls-radius: 8px !important;
   --canvas-dot-pattern: #ababab !important;
   --caret-color: #222222 !important;
   --checkbox-border-color: #ababab !important;
@@ -538,7 +538,7 @@ body.theme-light {
   --checkbox-size: 16px !important;
   --checklist-done-color: #5c5c5c !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
+  --clickable-icon-radius: 8px !important;
   --code-background: oklch(
     from
       oklch(
@@ -706,7 +706,7 @@ body.theme-light {
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px 32px !important;
+  --file-margins: 16px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
   --flair-background: #ffffff !important;
@@ -786,7 +786,7 @@ body.theme-light {
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
+  --footnote-radius: 8px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
@@ -1184,7 +1184,7 @@ body.theme-light {
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
-  --nav-indentation-guide-width: 1px !important;
+  --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
@@ -1198,14 +1198,14 @@ body.theme-light {
   --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-radius: 4px !important;
+  --nav-item-radius: 8px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: #5c5c5c !important;
   --nav-tag-color-active: #5c5c5c !important;
   --nav-tag-color-hover: #5c5c5c !important;
-  --nav-tag-radius: 4px !important;
+  --nav-tag-radius: 8px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
@@ -1303,56 +1303,10 @@ body.theme-light {
   --prompt-width: 700px !important;
   --radius-l: 12px !important;
   --radius-m: 8px !important;
-  --radius-s: 4px !important;
+  --radius-s: 8px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(
-      in srgb,
-      oklch(
-          from
-            oklch(
-              from
-                oklch(
-                  from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l
-                    c h
-                )
-                l c calc(h + 330)
-            )
-            93% calc(c * 0.4) h
-        )
-        65%,
-      transparent
-    )
-    linear-gradient(
-      oklch(
-        from
-          oklch(
-            from
-              oklch(
-                from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c
-                  h
-              )
-              l c calc(h + 330)
-          )
-          93% calc(c * 0.4) h
-      ),
-      color-mix(
-        in srgb,
-        oklch(
-            from
-              oklch(
-                from
-                  oklch(
-                    from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075))
-                      l c h
-                  )
-                  l c calc(h + 330)
-              )
-              93% calc(c * 0.4) h
-          )
-          65%,
-        transparent
-      )
-    ) !important;
+  --raised-background: color-mix(in srgb, #ffffff 65%, transparent)
+    linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
@@ -1557,7 +1511,7 @@ body.theme-light {
       65% calc(c * 0.4) h
   ) !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
+  --tab-radius: 8px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
   --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
@@ -1584,7 +1538,7 @@ body.theme-light {
     transparent
   ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
+  --tab-switcher-preview-radius: 12px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
   --tab-text-color: #ababab !important;
@@ -1763,11 +1717,11 @@ body.theme-light {
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
+  --touch-radius-m: 8px !important;
+  --touch-radius-s: 8px !important;
   --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
+  --touch-radius-xs: 8px !important;
+  --touch-radius-xxs: 8px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
@@ -1823,6 +1777,7 @@ body.theme-light {
       calc(50% - 15%) 30% calc(h + 200)
   ) !important;
   --button-text: #222222 !important;
+  --radius-xs: 8px !important;
   --background-tertiary: oklch(
     from
       oklch(
@@ -1932,7 +1887,7 @@ body.theme-light {
           )
           50% c h
       ),
-    inset -1px -1px
+    inset -2px -2px
       oklch(
         from
           oklch(
@@ -2095,9 +2050,11 @@ body.theme-light {
     from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%
   ) !important;
   --lightness: 50% !important;
+  --mobile-sidebar-width: 100% !important;
   --outline-color: oklch(
     from oklch(from rgb(153, 115, 247) l c h) 25% c h
   ) !important;
+  --radius-xxs: 8px !important;
   --rotation-1: 30 !important;
   --rotation-2: 330 !important;
   --settings-background: oklch(
@@ -2239,7 +2196,7 @@ body.theme-dark {
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: 4px !important;
+  --bases-table-container-border-radius: 8px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: oklch(
@@ -2332,7 +2289,7 @@ body.theme-dark {
   --canvas-color-6: 168, 130, 255 !important;
   --canvas-controls-icon-size: 16px !important;
   --canvas-controls-icon-stroke: 2px !important;
-  --canvas-controls-radius: 4px !important;
+  --canvas-controls-radius: 8px !important;
   --canvas-dot-pattern: #666666 !important;
   --caret-color: #dadada !important;
   --checkbox-border-color: #666666 !important;
@@ -2348,7 +2305,7 @@ body.theme-dark {
   --checkbox-size: 16px !important;
   --checklist-done-color: #b3b3b3 !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 4px !important;
+  --clickable-icon-radius: 8px !important;
   --code-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) 10%
       c h / 50%
@@ -2470,7 +2427,7 @@ body.theme-dark {
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
-  --file-margins: 32px 32px !important;
+  --file-margins: 16px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
   --flair-background: #363636 !important;
@@ -2543,7 +2500,7 @@ body.theme-dark {
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
-  --footnote-radius: 4px !important;
+  --footnote-radius: 8px !important;
   --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
@@ -2853,7 +2810,7 @@ body.theme-dark {
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --nav-indentation-guide-width: 1px !important;
+  --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
@@ -2867,14 +2824,14 @@ body.theme-dark {
   --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
-  --nav-item-radius: 4px !important;
+  --nav-item-radius: 8px !important;
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: #b3b3b3 !important;
   --nav-tag-color-active: #b3b3b3 !important;
   --nav-tag-color-hover: #b3b3b3 !important;
-  --nav-tag-radius: 4px !important;
+  --nav-tag-radius: 8px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
@@ -2943,7 +2900,7 @@ body.theme-dark {
   --prompt-width: 700px !important;
   --radius-l: 12px !important;
   --radius-m: 8px !important;
-  --radius-s: 4px !important;
+  --radius-s: 8px !important;
   --radius-xl: 16px !important;
   --raised-background: color-mix(in srgb, #363636 65%, transparent)
     linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent)) !important;
@@ -3083,7 +3040,7 @@ body.theme-dark {
       calc(c * 0.3) h
   ) !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: 4px !important;
+  --tab-radius: 8px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
   --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
@@ -3102,7 +3059,7 @@ body.theme-dark {
     transparent
   ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
-  --tab-switcher-preview-radius: 16px !important;
+  --tab-switcher-preview-radius: 12px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
   --tab-text-color: #666666 !important;
@@ -3217,11 +3174,11 @@ body.theme-dark {
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --touch-radius-l: 52px !important;
-  --touch-radius-m: 44px !important;
-  --touch-radius-s: 40px !important;
+  --touch-radius-m: 8px !important;
+  --touch-radius-s: 8px !important;
   --touch-radius-xl: 60px !important;
-  --touch-radius-xs: 30px !important;
-  --touch-radius-xxs: 24px !important;
+  --touch-radius-xs: 8px !important;
+  --touch-radius-xxs: 8px !important;
   --touch-size-l: 52px !important;
   --touch-size-m: 44px !important;
   --touch-size-s: 40px !important;
@@ -3262,6 +3219,7 @@ body.theme-dark {
     from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20% calc(h + 200)
   ) !important;
   --button-text: #dadada !important;
+  --radius-xs: 8px !important;
   --background-tertiary: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20%
       calc(c * 0.3) h
@@ -3393,9 +3351,11 @@ body.theme-dark {
     from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%
   ) !important;
   --lightness: 70% !important;
+  --mobile-sidebar-width: 100% !important;
   --outline-color: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 25% c h
   ) !important;
+  --radius-xxs: 8px !important;
   --rotation-1: 30 !important;
   --rotation-2: 330 !important;
   --settings-background: oklch(
@@ -3753,10 +3713,10 @@ body .suggestion-item.is-selected {
     rgba(0, 0, 0, 0.067),
     rgba(255, 255, 255, 0.067)
   );
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -3769,10 +3729,10 @@ body div.suggestion-item {
     rgba(255, 255, 255, 0.067)
   );
   border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -3837,8 +3797,8 @@ body div.multi-select-pill {
 }
 body div.multi-select-pill > div.multi-select-pill-content {
   color: light-dark(
-    oklch(45% 0.189206 293.56deg),
-    oklch(75% 0.217199 292.488deg)
+    oklch(40% 0.189206 293.56deg / 0.75),
+    oklch(80% 0.217199 292.488deg / 0.75)
   );
 }
 body .markdown-rendered ul > li {
@@ -4107,10 +4067,10 @@ body .search-results .suggestion-item {
 }
 body div.search-results .suggestion-item {
   border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4764,8 +4724,8 @@ body .metadata-container {
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  margin: 0px 0px 32px;
-  padding: 8px 16px;
+  margin: 0px;
+  padding: 8px;
 }
 body .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
@@ -4904,10 +4864,10 @@ body kbd {
     "Source Code Pro", monospace;
   font-size: 14px;
   border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 4px;
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
@@ -5110,10 +5070,10 @@ body .nav-view-outer .tree-item-self.mod-active {
     rgba(255, 255, 255, 0.067)
   );
   border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -5313,10 +5273,10 @@ body .view-header-breadcrumb {
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   border-color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   border-width: 0px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 body .view-header-breadcrumb-separator {
   color: light-dark(rgb(171, 171, 171), rgb(102, 102, 102));

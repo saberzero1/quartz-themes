@@ -21,8 +21,8 @@
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(242, 230, 212, 0.1) !important;
   --background-modifier-border: #f2e6d4 !important;
-  --background-modifier-border-focus: #bebebe !important;
-  --background-modifier-border-hover: #bebebe !important;
+  --background-modifier-border-focus: #24272b !important;
+  --background-modifier-border-hover: #24272b !important;
   --background-modifier-box-shadow: #fffdfb !important;
   --background-modifier-cover: rgba(0, 0, 0, 0.6) !important;
   --background-modifier-error: #e93147 !important;
@@ -48,7 +48,7 @@
   --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #f2e6d4 !important;
-  --bases-cards-shadow-hover: 0 0 0 1px #bebebe !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #24272b !important;
   --bases-embed-border-color: #f2e6d4 !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
@@ -69,7 +69,7 @@
   --bases-table-cell-background-selected: rgba(242, 230, 212, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px #bebebe !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #24272b !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #fffdfb !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
@@ -233,7 +233,7 @@
   --drag-ghost-text-color: #ca7081 !important;
   --dropdown-background: #f2e6d4 !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: #bebebe !important;
+  --dropdown-background-hover: #24272b !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
@@ -444,7 +444,7 @@
   --interactive-accent: #fffdfb !important;
   --interactive-accent-hover: rgb(233, 220, 200) !important;
   --interactive-accent-hsl: 36, 53%, 89% !important;
-  --interactive-hover: #bebebe !important;
+  --interactive-hover: #24272b !important;
   --interactive-normal: #f2e6d4 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
@@ -491,7 +491,7 @@
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: #f2e6d4 !important;
-  --menu-border-color: #bebebe !important;
+  --menu-border-color: #24272b !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
@@ -545,8 +545,8 @@
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: #ca7081 !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px #bebebe !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #bebebe !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #24272b !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #24272b !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
   --metadata-property-corner-shape-hover: round !important;
@@ -586,7 +586,7 @@
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #8f8f8f !important;
-  --nav-item-color-active: #222222 !important;
+  --nav-item-color-active: #24272b !important;
   --nav-item-color-highlighted: #00a0ba !important;
   --nav-item-color-hover: #636363 !important;
   --nav-item-color-selected: #8f8f8f !important;
@@ -618,7 +618,7 @@
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
   --pill-border-color: #f2e6d4 !important;
-  --pill-border-color-hover: #bebebe !important;
+  --pill-border-color-hover: #24272b !important;
   --pill-border-width: 1px !important;
   --pill-color: #8f8f8f !important;
   --pill-color-hover: #8f8f8f !important;
@@ -723,7 +723,7 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: #bebebe !important;
+  --slider-thumb-border-color: #24272b !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 18px !important;
@@ -757,7 +757,7 @@
   --tab-background-active: #fff7ed !important;
   --tab-container-background: #f2e6d4 !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: #bebebe !important;
+  --tab-divider-color: #24272b !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
   --tab-outline-color: transparent !important;
@@ -991,7 +991,7 @@
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #fffdfb !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #f2e6d4 !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px #3e4044 !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -1166,7 +1166,7 @@
     0 0 0 1px #636363, inset 0 0 0 1px #636363 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid #f2e6d4 !important;
+  --embed-border-start: 2px solid #3e4044 !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1362,7 +1362,7 @@
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: #f2e6d4 !important;
+  --interactive-accent: #3e4044 !important;
   --interactive-accent-hover: #fffdfb !important;
   --interactive-accent-hsl: 33, 100%, 96% !important;
   --interactive-hover: #fffdfb !important;
@@ -1501,13 +1501,13 @@
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: #f2e6d4 !important;
+  --nav-item-background-active: #3e4044 !important;
   --nav-item-background-hover: rgba(251, 245, 238, 0.06) !important;
   --nav-item-background-selected: rgba(255, 246, 235, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #8f8f8f !important;
-  --nav-item-color-active: #dadada !important;
+  --nav-item-color-active: #fffdfb !important;
   --nav-item-color-highlighted: #00a0ba !important;
   --nav-item-color-hover: #bebebe !important;
   --nav-item-color-selected: #8f8f8f !important;
@@ -1715,7 +1715,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: #f2e6d4 !important;
+  --table-drag-handle-background-active: #3e4044 !important;
   --table-drag-handle-color: #636363 !important;
   --table-drag-handle-color-active: #fffdfb !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -1732,7 +1732,7 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: rgba(255, 246, 235, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: #f2e6d4 !important;
+  --table-selection-border-color: #3e4044 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
@@ -3572,7 +3572,7 @@ body {
   .transclude {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(143, 143, 143);
-    border-left: 2px solid light-dark(rgb(255, 253, 251), rgb(242, 230, 212));
+    border-left: 2px solid light-dark(rgb(255, 253, 251), rgb(62, 64, 68));
     border-right-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -3587,7 +3587,7 @@ body {
   .transclude-inner {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(143, 143, 143);
-    border-left: 2px solid light-dark(rgb(255, 253, 251), rgb(242, 230, 212));
+    border-left: 2px solid light-dark(rgb(255, 253, 251), rgb(62, 64, 68));
     border-right-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -4008,8 +4008,8 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(rgb(255, 253, 251), rgb(242, 230, 212));
-    border: 0px rgb(143, 143, 143);
+    background-color: light-dark(rgb(255, 253, 251), rgb(62, 64, 68));
+    border: 0px light-dark(rgb(36, 39, 43), rgb(255, 253, 251));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -4018,7 +4018,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: rgb(143, 143, 143);
+    color: light-dark(rgb(36, 39, 43), rgb(255, 253, 251));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;

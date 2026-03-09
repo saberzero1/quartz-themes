@@ -668,6 +668,13 @@ body.hide-canvas-dots svg.canvas-background {
   display: none;
 }
 
+/* tempmary canvas fix */
+.theme-dark .canvas-wrapper.is-screenshotting,
+.theme-light .canvas-wrapper.is-screenshotting {
+  background-color: #24291e;
+  background-image: none;
+}
+
 /* canvas export / screenshot fix 
 because there was stupid glitch :((( but it is now fixed :)))
  */

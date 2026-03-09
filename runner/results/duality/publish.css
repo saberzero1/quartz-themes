@@ -1968,9 +1968,9 @@ body.theme-dark {
   --h5-color: #b0a38c !important;
   --h6-color: #b0a38c !important;
   --inline-title-color: #ff4500 !important;
+  --callout-border-color: #4a2c2a;
   --callout-title-color: #ff4500;
   --callout-background: #2a2a2a;
-  --callout-border-color: #4a2c2a;
 }
 
 body {
