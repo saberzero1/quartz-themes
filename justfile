@@ -48,6 +48,11 @@ extract-full: build compile convert format-non-generated
 [group('extract')]
 recompile: compile convert
 
+[group('plugin')]
+generate-plugin:
+  node ./plugin/scripts/generate.js
+  npm --prefix ./plugin run build
+
 [group('cli-extract'), doc('Extract a single theme using CLI (requires running Obsidian)')]
 cli-extract theme="Brutalist":
   bun ./runner/scripts/cli-extractor.js "{{theme}}"
