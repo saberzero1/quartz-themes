@@ -50,19 +50,19 @@ recompile: compile convert
 
 [group('cli-extract'), doc('Extract a single theme using CLI (requires running Obsidian)')]
 cli-extract theme="Brutalist":
-  node ./runner/scripts/cli-extractor.js "{{theme}}"
+  bun ./runner/scripts/cli-extractor.js "{{theme}}"
 
 [group('cli-extract'), doc('Force extract a single theme using CLI')]
 cli-extract-force theme="Brutalist":
-  FORCE_EXTRACTION=true node ./runner/scripts/cli-extractor.js "{{theme}}"
+  FORCE_EXTRACTION=true bun ./runner/scripts/cli-extractor.js "{{theme}}"
 
 [group('cli-extract'), doc('Extract all installed themes using CLI')]
 cli-extract-all:
-  node ./runner/scripts/cli-extractor.js --all
+  bun ./runner/scripts/cli-extractor.js --all
 
 [group('cli-extract'), doc('Force extract all installed themes using CLI')]
 cli-extract-all-force:
-  FORCE_EXTRACTION=true node ./runner/scripts/cli-extractor.js --all
+  FORCE_EXTRACTION=true bun ./runner/scripts/cli-extractor.js --all
 
 [group('cli-extract'), doc('Clear CLI extraction hash cache')]
 cli-clear-cache:
@@ -70,7 +70,7 @@ cli-clear-cache:
 
 [group('cli-extract'), doc('Force re-extract baseline (default Obsidian theme)')]
 cli-extract-baseline:
-  FORCE_BASELINE=true node ./runner/scripts/cli-extractor.js "default"
+  FORCE_BASELINE=true bun ./runner/scripts/cli-extractor.js "default"
 
 [group('cli-extract'), doc('Clear baseline cache')]
 cli-clear-baseline:
