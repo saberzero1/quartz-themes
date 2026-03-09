@@ -195,7 +195,7 @@ body.theme-dark {
   --checklist-done-color: #b3b3b3 !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: #242424 !important;
+  --code-background: rgb(54, 47, 70) !important;
   --code-border-color: #363636 !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgb(138, 92, 245) !important;
@@ -318,12 +318,12 @@ body.theme-dark {
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid:
-    "??", Inconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "??", "Ligconsolata", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --font-monospace:
-    "??", Inconsolata, ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "??", "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-default:
@@ -331,22 +331,22 @@ body.theme-dark {
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
-  --font-monospace-theme: Inconsolata !important;
+  --font-monospace-theme: "Fira Code" !important;
   --font-normal: 400 !important;
-  --font-print: "??", "??", Inconsolata, "Arial" !important;
+  --font-print: "??", "??", "Ligconsolata", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
   --font-text:
-    "??", Inconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "??", "Ligconsolata", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
-  --font-text-theme: Inconsolata !important;
+  --font-text-theme: "Ligconsolata" !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
@@ -937,6 +937,7 @@ body.theme-dark {
   --color-ui-active: rgb(255, 204, 0) !important;
   --color-ui-current: rgb(255, 255, 0) !important;
   --date-background-color: transparent !important;
+  --font-monospace-size: 15px !important;
   --font-stretch-theme: semi-expanded !important;
   --h3: 1.2em !important;
   --h4: 1.1em !important;
@@ -972,7 +973,7 @@ body .markdown-rendered a.external-link {
   cursor: pointer;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1001,7 +1002,7 @@ body .markdown-rendered a.internal-link {
   cursor: pointer;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1030,7 +1031,7 @@ body .markdown-rendered a.internal-link.is-unresolved {
   cursor: pointer;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1101,7 +1102,7 @@ body strong {
   cursor: text;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1130,7 +1131,7 @@ body b {
   cursor: text;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1159,7 +1160,7 @@ body em {
   cursor: text;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1188,7 +1189,7 @@ body i {
   cursor: text;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1217,7 +1218,7 @@ body .markdown-rendered mark {
   cursor: text;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1246,7 +1247,7 @@ body del {
   cursor: text;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1397,13 +1398,13 @@ body .markdown-rendered code {
   border-end-end-radius: 0px;
   color: rgb(218, 218, 218);
   font-family:
-    Inconsolata, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
   padding: 0px;
 }
 body .markdown-rendered pre > code {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(54, 47, 70);
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1420,7 +1421,7 @@ body .markdown-rendered pre > code {
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(54, 47, 70);
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1481,7 +1482,7 @@ body ul > li.task-list-item[data-task="x"] {
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1555,7 +1556,7 @@ body .search-results > * {
   cursor: auto;
   filter: none;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1614,7 +1615,7 @@ body div.search-results .suggestion-item.is-selected {
 body .published-container .markdown-rendered h1 {
   color: rgb(255, 255, 0);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1633,7 +1634,7 @@ body .published-container .markdown-rendered h1 {
 body .published-container .markdown-rendered h2 {
   color: rgb(255, 230, 0);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1652,7 +1653,7 @@ body .published-container .markdown-rendered h2 {
 body .published-container .markdown-rendered h3 {
   color: rgb(255, 204, 0);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1671,7 +1672,7 @@ body .published-container .markdown-rendered h3 {
 body .published-container .markdown-rendered h4 {
   color: rgb(255, 178, 0);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1690,7 +1691,7 @@ body .published-container .markdown-rendered h4 {
 body .published-container .markdown-rendered h5 {
   color: rgb(255, 153, 0);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1709,7 +1710,7 @@ body .published-container .markdown-rendered h5 {
 body .published-container .markdown-rendered h6 {
   color: rgb(255, 128, 0);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1957,7 +1958,7 @@ body .markdown-rendered table {
   border-collapse: separate;
   color: rgb(218, 218, 218);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2099,7 +2100,7 @@ body .markdown-rendered figure {
 body .markdown-rendered figcaption {
   color: rgb(218, 218, 218);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2200,7 +2201,7 @@ body .metadata-container {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(179, 179, 179);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2226,7 +2227,7 @@ body .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(179, 179, 179);
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2348,11 +2349,11 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(54, 47, 70);
   box-shadow: none;
   color: rgb(218, 218, 218);
   font-family:
-    Inconsolata, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
   font-size: 14px;
@@ -2504,7 +2505,7 @@ body .math-block > mjx-container.MathJax {
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2521,7 +2522,7 @@ body .math-block > mjx-container.MathJax {
 }
 body div.math-block > mjx-container.MathJax {
   font-family:
-    Inconsolata,
+    Ligconsolata,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2822,7 +2823,7 @@ body .view-content {
   border-bottom-right-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(54, 47, 70);
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -2834,7 +2835,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-end-end-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(54, 47, 70);
   color: rgb(218, 218, 218);
   font-family: monospace;
   border: 0px solid rgb(54, 54, 54);

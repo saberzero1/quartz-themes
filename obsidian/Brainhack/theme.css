@@ -11,6 +11,10 @@ id: Brainhack
 description: "Thank you for using my theme. If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3"
 settings:
     -
+        id: morespace
+        title: More Space
+        type: class-toggle
+    -
         id: Text and Spacing
         title: Text and Spacing
         type: heading
@@ -136,7 +140,7 @@ body {
 }
 
 .theme-light {
-    --background-primary: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .2) + calc(.5% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 5%) + calc(calc(var(--bgt_l, 0) * 1%) + 4%)));
+    --background-primary: hsl(var(--background-2_h), calc(calc(var(--accent-s) * 0) + calc(.5% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 5%) + calc(calc(var(--bgt_l, 0) * 1%) + 2%)));
 
     --background-1: hsl(var(--accent-h), calc(var(--accent-s) - 20%), 90%, 100%);
     --background-1_2: rgb(234, 234, 234);
@@ -169,7 +173,6 @@ body {
     --color-base-00: var(--background-3);
     --color-base-50: var(--colored-accent-1) !important;
     --interactive-accent: var(--colored-accent-1);
-    --icon-color: var(--colored-accent-1);
     --text-color-inverted: black;
     --tc: rgb(67, 67, 67);
     --italic-color: rgb(154, 154, 154);
@@ -227,7 +230,7 @@ body {
 
 /*////////////////////////////////////////////////////////////////////////////// MAIN BODY - GENERAL CONFIG //////////////////////////////////////////////////////////////////////////////*/
 /*============================= ADJUST SPACING OF MAIN BODY ===================================*/
-body:not(.is-mobile)
+body:not(.is-mobile, .morespace)
 .workspace {
     background-color: transparent;
     right: 10px !important;
@@ -238,7 +241,7 @@ body:not(.is-mobile)
     width: calc(100% - 10px) !important;
     margin-left: 10px;
 }
-body:not(.is-mobile)
+body:not(.is-mobile, .morespace)
 .horizontal-main-container {
     padding-bottom: 10px;
     display: flex;
@@ -246,12 +249,12 @@ body:not(.is-mobile)
     flex: 1 0 0;
     background: transparent;
 }
-body:not(.is-mobile):not(.show-ribbon)
+body:not(.is-mobile):not(.show-ribbon, .morespace)
 .horizontal-main-container {
     padding-left: 10px;
 }
 
-body:not(.is-mobile):not(.show-ribbon) .workspace:before {
+body:not(.is-mobile):not(.show-ribbon, .morespace) .workspace:before {
     width: 100%;
 }
 /*============== Ribbon ===========================*/
@@ -268,6 +271,7 @@ body:not(.is-mobile):not(.show-ribbon) .workspace:before {
 }
 
 /*============== ADD NEW BORDERS =====================*/
+body:not(.morespace)
 .workspace:not(.is-mobile)::before {
     content: " ";
     width: 100%;
@@ -280,12 +284,12 @@ body:not(.is-mobile):not(.show-ribbon) .workspace:before {
     box-shadow: 0px 0px 0px 1px var(--divider-color), 0 0 5px 1px var(--shadow-4);
 }
 /*adjust borders to align with ribbon animation*/
-body:has(.show-ribbon):not(.is-mobile),:has(.workspace-ribbon.side-dock-ribbon:hover) .workspace::before {
+body:has(.show-ribbon):not(.is-mobile, .morespace),:has(.workspace-ribbon.side-dock-ribbon:hover) .workspace::before {
     width: calc(100% - 44px);
     transition-duration: .1s;
 }
 
-body:has(.show-ribbon):not(.is-mobile),:has(.workspace-ribbon.side-dock-ribbon) .workspace::before {
+body:has(.show-ribbon):not(.is-mobile, .morespace),:has(.workspace-ribbon.side-dock-ribbon) .workspace::before {
     width: calc(100% - 44px);
     transition: all .5s ease;
 }
@@ -644,8 +648,6 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 
 
-
-
 .callout-title {
     border-color: var(--callout-border-color) !important;
 }
@@ -777,7 +779,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
     display: flex;
 }
 & .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(245, 0, 87, .5), 0 0 .35em var(--shadow-3);
+    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5), 0 0 .35em var(--shadow-3);
     }
 }
 
@@ -790,7 +792,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
     display: flex;
 }
 & .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5), 0 0 .35em var(--shadow-3);
+    box-shadow: inset 0 0 0 .04em rgba(245, 0, 87, .5), 0 0 .35em var(--shadow-3);
     }
 }
 .callout[data-callout="example"] {
@@ -830,7 +832,12 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 
 
-
+.callout[data-callout="1"] {
+    --callout-border-color: var(--background-3-1);
+    & .callout-icon {
+        display: none;
+        }
+}
 
 
 
@@ -908,7 +915,6 @@ blockquote > *:last-child {
     color: var(--text-color-inverted);
     font-size: 1.3em;
     border-bottom: dashed .1em;
-    --callout-border-color: var(--background-3-1);
     margin-left: .6em;
     margin-right: 10px;
     padding-left: 0em;

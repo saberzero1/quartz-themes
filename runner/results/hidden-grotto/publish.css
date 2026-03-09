@@ -183,15 +183,15 @@ body.theme-light {
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: rgb(106, 191, 64) !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
-  --background-primary: rgb(241, 235, 228) !important;
-  --background-primary-alt: rgb(241, 235, 228) !important;
-  --background-secondary: rgb(231, 220, 208) !important;
-  --background-secondary-alt: rgb(231, 220, 208) !important;
-  --bases-cards-background: rgb(241, 235, 228) !important;
+  --background-primary: rgb(245, 240, 235) !important;
+  --background-primary-alt: rgb(245, 240, 235) !important;
+  --background-secondary: rgb(238, 230, 221) !important;
+  --background-secondary-alt: rgb(238, 230, 221) !important;
+  --bases-cards-background: rgb(245, 240, 235) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: rgb(241, 235, 228) !important;
+  --bases-cards-cover-background: rgb(245, 240, 235) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 0px !important;
@@ -213,8 +213,8 @@ body.theme-light {
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
   --bases-table-border-color: rgb(50, 50, 72) !important;
-  --bases-table-cell-background-active: rgb(241, 235, 228) !important;
-  --bases-table-cell-background-disabled: rgb(241, 235, 228) !important;
+  --bases-table-cell-background-active: rgb(245, 240, 235) !important;
+  --bases-table-cell-background-disabled: rgb(245, 240, 235) !important;
   --bases-table-cell-background-selected: rgba(235, 115, 71, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
@@ -226,9 +226,9 @@ body.theme-light {
   --bases-table-container-border-radius: 0px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: rgb(241, 235, 228) !important;
+  --bases-table-group-background: rgb(245, 240, 235) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: rgb(241, 235, 228) !important;
+  --bases-table-header-background: rgb(245, 240, 235) !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-table-header-color: rgb(75, 75, 108) !important;
   --bases-table-header-icon-display: flex !important;
@@ -241,7 +241,7 @@ body.theme-light {
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: rgb(241, 235, 228) !important;
+  --bases-table-summary-background: rgb(245, 240, 235) !important;
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
@@ -288,7 +288,7 @@ body.theme-light {
   --callout-title-weight: 600;
   --callout-todo: 8, 109, 221;
   --callout-warning: 236, 117, 0;
-  --canvas-background: rgb(241, 235, 228) !important;
+  --canvas-background: rgb(245, 240, 235) !important;
   --canvas-card-label-color: rgb(75, 75, 108) !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 233, 49, 71 !important;
@@ -313,7 +313,7 @@ body.theme-light {
   --checklist-done-color: rgb(75, 75, 108) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 0px !important;
-  --code-background: rgb(241, 235, 228) !important;
+  --code-background: rgb(245, 240, 235) !important;
   --code-border-color: rgb(50, 50, 72) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
@@ -399,8 +399,8 @@ body.theme-light {
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: rgb(241, 235, 228) !important;
-  --file-header-background-focused: rgb(241, 235, 228) !important;
+  --file-header-background: rgb(245, 240, 235) !important;
+  --file-header-background-focused: rgb(245, 240, 235) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font: "??" !important;
   --file-header-font-size: 13px !important;
@@ -615,7 +615,7 @@ body.theme-light {
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: rgb(231, 220, 208) !important;
+  --menu-background: rgb(238, 230, 221) !important;
   --menu-border-color: #d4d4d4 !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
@@ -671,7 +671,7 @@ body.theme-light {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: rgb(241, 235, 228) !important;
+  --modal-background: rgb(245, 240, 235) !important;
   --modal-border-color: #bdbdbd !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -721,10 +721,10 @@ body.theme-light {
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: rgb(241, 235, 228) !important;
-  --pdf-page-background: rgb(241, 235, 228) !important;
+  --pdf-background: rgb(245, 240, 235) !important;
+  --pdf-page-background: rgb(245, 240, 235) !important;
   --pdf-shadow: none !important;
-  --pdf-sidebar-background: rgb(241, 235, 228) !important;
+  --pdf-sidebar-background: rgb(245, 240, 235) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: none !important;
   --pdfViewer-padding-bottom: 0 !important;
@@ -752,7 +752,7 @@ body.theme-light {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: rgb(241, 235, 228) !important;
+  --prompt-background: rgb(245, 240, 235) !important;
   --prompt-border-color: #bdbdbd !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -778,8 +778,8 @@ body.theme-light {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: rgb(231, 220, 208) !important;
-  --ribbon-background-collapsed: rgb(241, 235, 228) !important;
+  --ribbon-background: rgb(238, 230, 221) !important;
+  --ribbon-background-collapsed: rgb(245, 240, 235) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -797,11 +797,11 @@ body.theme-light {
   --search-clear-button-size: 13px !important;
   --search-icon-color: rgb(75, 75, 108) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: rgb(241, 235, 228) !important;
+  --search-result-background: rgb(245, 240, 235) !important;
   --setting-group-heading-color: rgb(50, 50, 72) !important;
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
-  --setting-items-background: rgb(241, 235, 228) !important;
+  --setting-items-background: rgb(245, 240, 235) !important;
   --setting-items-border-color: #e0e0e0 !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
@@ -840,7 +840,7 @@ body.theme-light {
   --slider-track-background: #e0e0e0 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: rgb(231, 220, 208) !important;
+  --status-bar-background: rgb(238, 230, 221) !important;
   --status-bar-border-color: #e0e0e0 !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
@@ -848,7 +848,7 @@ body.theme-light {
   --status-bar-radius: 0px 0 0 0 !important;
   --status-bar-text-color: rgb(75, 75, 108) !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: rgb(241, 235, 228) !important;
+  --suggestion-background: rgb(245, 240, 235) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -862,8 +862,8 @@ body.theme-light {
   --sync-avatar-color-7: #7852ee !important;
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgb(241, 235, 228) !important;
-  --tab-container-background: rgb(231, 220, 208) !important;
+  --tab-background-active: rgb(245, 240, 235) !important;
+  --tab-container-background: rgb(238, 230, 221) !important;
   --tab-curve: 0rem !important;
   --tab-divider-color: #d4d4d4 !important;
   --tab-font-size: 13px !important;
@@ -880,10 +880,10 @@ body.theme-light {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: rgb(231, 220, 208) !important;
+  --tab-switcher-background: rgb(238, 230, 221) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    rgb(231, 220, 208),
+    rgb(238, 230, 221),
     transparent
   ) !important;
   --tab-switcher-preview-background-shadow: none !important;
@@ -950,7 +950,7 @@ body.theme-light {
   --text-accent-hover: rgb(235, 115, 71) !important;
   --text-error: rgb(191, 64, 64) !important;
   --text-faint: rgb(75, 75, 108) !important;
-  --text-highlight-bg: rgb(228, 216, 201) !important;
+  --text-highlight-bg: rgb(231, 220, 208) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: rgb(75, 75, 108) !important;
   --text-normal: rgb(50, 50, 72) !important;
@@ -959,8 +959,8 @@ body.theme-light {
   --text-selection: rgb(235, 115, 71) !important;
   --text-success: rgb(106, 191, 64) !important;
   --text-warning: rgb(191, 128, 64) !important;
-  --titlebar-background: rgb(231, 220, 208) !important;
-  --titlebar-background-focused: rgb(231, 220, 208) !important;
+  --titlebar-background: rgb(238, 230, 221) !important;
+  --titlebar-background-focused: rgb(238, 230, 221) !important;
   --titlebar-border-color: #e0e0e0 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -1014,13 +1014,13 @@ body.theme-light {
   --grotto-accent-h: 16 !important;
   --grotto-accent-l: 60% !important;
   --grotto-accent-s: 80% !important;
-  --grotto-background-tertiary: rgb(228, 216, 201) !important;
+  --grotto-background-tertiary: rgb(231, 220, 208) !important;
   --grotto-backlink-border-color: rgb(50, 50, 72) !important;
-  --grotto-bases-background-color: rgb(241, 235, 228) !important;
+  --grotto-bases-background-color: rgb(245, 240, 235) !important;
   --grotto-bases-border-color: rgb(50, 50, 72) !important;
   --grotto-bases-border-radius: 0rem !important;
   --grotto-bases-color: rgb(50, 50, 72) !important;
-  --grotto-bases-header-background-color: rgb(228, 216, 201) !important;
+  --grotto-bases-header-background-color: rgb(231, 220, 208) !important;
   --grotto-blockquote-background-color: transparent !important;
   --grotto-blockquote-border-color: rgb(235, 115, 71) !important;
   --grotto-blockquote-color: rgb(50, 50, 72) !important;
@@ -1030,7 +1030,7 @@ body.theme-light {
   --grotto-button-background-color: rgb(235, 115, 71) !important;
   --grotto-button-border-color: rgb(50, 50, 72) !important;
   --grotto-button-border-radius: 0rem !important;
-  --grotto-button-color: rgb(241, 235, 228) !important;
+  --grotto-button-color: rgb(245, 240, 235) !important;
   --grotto-calendar-background-color: transparent !important;
   --grotto-calendar-border-color: rgb(50, 50, 72) !important;
   --grotto-calendar-border-radius: 0rem !important;
@@ -1049,29 +1049,29 @@ body.theme-light {
   --grotto-calendar-pointer-events: auto !important;
   --grotto-calendar-today-background-color: rgb(235, 115, 71) !important;
   --grotto-calendar-today-border-color: rgb(50, 50, 72) !important;
-  --grotto-calendar-today-color: rgb(241, 235, 228) !important;
+  --grotto-calendar-today-color: rgb(245, 240, 235) !important;
   --grotto-calendar-view-height: 0vh !important;
   --grotto-calendar-weekend-border-color: rgb(50, 50, 72) !important;
   --grotto-calendar-weekend-border-width: 1px !important;
   --grotto-calendar-year-color: rgb(235, 115, 71) !important;
-  --grotto-callout-background-color: rgb(241, 235, 228) !important;
+  --grotto-callout-background-color: rgb(245, 240, 235) !important;
   --grotto-callout-border-color: rgb(50, 50, 72) !important;
   --grotto-callout-color: rgb(50, 50, 72) !important;
   --grotto-callout-icon: none !important;
   --grotto-callout-padding: 8px 16px !important;
   --grotto-callout-radius: 0rem !important;
   --grotto-callout-title-size: 1.5rem !important;
-  --grotto-canvas-background-color: rgb(241, 235, 228) !important;
+  --grotto-canvas-background-color: rgb(245, 240, 235) !important;
   --grotto-canvas-border-color: rgb(50, 50, 72) !important;
   --grotto-canvas-border-radius: 0rem !important;
   --grotto-canvas-color: rgb(50, 50, 72) !important;
-  --grotto-canvas-controls-background-color: rgb(228, 216, 201) !important;
+  --grotto-canvas-controls-background-color: rgb(231, 220, 208) !important;
   --grotto-canvas-controls-color: rgb(50, 50, 72) !important;
   --grotto-canvas-path-color: rgb(50, 50, 72) !important;
   --grotto-canvas-path-node-color: rgb(235, 115, 71) !important;
   --grotto-checkbox-border-color: rgb(50, 50, 72) !important;
   --grotto-checkbox-border-radius: 0rem !important;
-  --grotto-code-background-color: rgb(228, 216, 201) !important;
+  --grotto-code-background-color: rgb(231, 220, 208) !important;
   --grotto-code-border-color: rgb(50, 50, 72) !important;
   --grotto-code-border-radius: 0rem !important;
   --grotto-code-color: rgb(50, 50, 72) !important;
@@ -1084,16 +1084,16 @@ body.theme-light {
   --grotto-dragging-background-color: rgb(235, 115, 71) !important;
   --grotto-dragging-border-color: rgb(50, 50, 72) !important;
   --grotto-dragging-border-radius: 0rem !important;
-  --grotto-dragging-color: rgb(241, 235, 228) !important;
+  --grotto-dragging-color: rgb(245, 240, 235) !important;
   --grotto-drawer-background-color: rgb(235, 115, 71) !important;
   --grotto-drawer-border-color: rgb(50, 50, 72) !important;
   --grotto-drawer-border-radius: 0rem !important;
-  --grotto-drawer-color: rgb(241, 235, 228) !important;
+  --grotto-drawer-color: rgb(245, 240, 235) !important;
   --grotto-dropdown-background-color: rgb(235, 115, 71) !important;
   --grotto-dropdown-border-color: rgb(50, 50, 72) !important;
   --grotto-dropdown-border-radius: 0rem !important;
-  --grotto-dropdown-color: rgb(241, 235, 228) !important;
-  --grotto-dropdown-option-background-color: rgb(241, 235, 228) !important;
+  --grotto-dropdown-color: rgb(245, 240, 235) !important;
+  --grotto-dropdown-option-background-color: rgb(245, 240, 235) !important;
   --grotto-dropdown-option-color: rgb(50, 50, 72) !important;
   --grotto-embed-background-color: transparent !important;
   --grotto-embed-border-color: rgb(50, 50, 72) !important;
@@ -1103,37 +1103,37 @@ body.theme-light {
   --grotto-embed-title-size: 1.5rem !important;
   --grotto-embed-title-visibility: block !important;
   --grotto-filenav-active-background-color: rgb(235, 115, 71) !important;
-  --grotto-filenav-active-color: rgb(241, 235, 228) !important;
-  --grotto-filenav-background-color: rgb(231, 220, 208) !important;
+  --grotto-filenav-active-color: rgb(245, 240, 235) !important;
+  --grotto-filenav-background-color: rgb(238, 230, 221) !important;
   --grotto-filenav-border-color: rgb(50, 50, 72) !important;
   --grotto-filenav-border-radius: 0rem !important;
-  --grotto-filenav-button-background-color: rgb(228, 216, 201) !important;
+  --grotto-filenav-button-background-color: rgb(231, 220, 208) !important;
   --grotto-filenav-color: rgb(50, 50, 72) !important;
   --grotto-filenav-tag-background-color: rgb(50, 50, 72) !important;
-  --grotto-filenav-tag-color: rgb(231, 220, 208) !important;
+  --grotto-filenav-tag-color: rgb(238, 230, 221) !important;
   --grotto-font-weight: 500 !important;
-  --grotto-graph-controls-background-color: rgb(228, 216, 201) !important;
+  --grotto-graph-controls-background-color: rgb(231, 220, 208) !important;
   --grotto-graph-controls-border-color: rgb(50, 50, 72) !important;
   --grotto-graph-controls-border-radius: 0rem !important;
   --grotto-graph-controls-color: rgb(50, 50, 72) !important;
   --grotto-graph-line-color: rgb(50, 50, 72) !important;
   --grotto-graph-node-color: rgb(50, 50, 72) !important;
   --grotto-graph-sidebar-controls-background-color: rgb(
-    228,
-    216,
-    201
+    231,
+    220,
+    208
   ) !important;
   --grotto-graph-sidebar-controls-border-color: rgb(50, 50, 72) !important;
   --grotto-graph-sidebar-controls-color: rgb(50, 50, 72) !important;
   --grotto-header-1-background-color: rgb(235, 115, 71) !important;
   --grotto-header-1-border-color: rgb(50, 50, 72) !important;
   --grotto-header-1-border-radius: 0rem !important;
-  --grotto-header-1-color: rgb(241, 235, 228) !important;
+  --grotto-header-1-color: rgb(245, 240, 235) !important;
   --grotto-header-1-size: 1.5rem !important;
   --grotto-header-2-background-color: rgb(50, 50, 72) !important;
   --grotto-header-2-border-color: rgb(50, 50, 72) !important;
   --grotto-header-2-border-radius: 0rem !important;
-  --grotto-header-2-color: rgb(241, 235, 228) !important;
+  --grotto-header-2-color: rgb(245, 240, 235) !important;
   --grotto-header-2-size: 1.5rem !important;
   --grotto-header-3-background-color: transparent !important;
   --grotto-header-3-border-color: rgb(50, 50, 72) !important;
@@ -1163,25 +1163,25 @@ body.theme-light {
   --grotto-input-radius: 0rem !important;
   --grotto-italic-color: rgb(235, 115, 71) !important;
   --grotto-italic-weight: 500 !important;
-  --grotto-light-0: rgb(231, 220, 208) !important;
-  --grotto-light-1: rgb(241, 235, 228) !important;
-  --grotto-light-2: rgb(228, 216, 201) !important;
+  --grotto-light-0: rgb(238, 230, 221) !important;
+  --grotto-light-1: rgb(245, 240, 235) !important;
+  --grotto-light-2: rgb(231, 220, 208) !important;
   --grotto-link-color: rgb(235, 115, 71) !important;
   --grotto-link-weight: 500 !important;
   --grotto-list-marker-color: rgb(50, 50, 72) !important;
-  --grotto-menu-background-color: rgb(231, 220, 208) !important;
+  --grotto-menu-background-color: rgb(238, 230, 221) !important;
   --grotto-menu-border-color: rgb(50, 50, 72) !important;
   --grotto-menu-border-radius: 0rem !important;
   --grotto-menu-color: rgb(50, 50, 72) !important;
-  --grotto-mobile-toolbar-background-color: rgb(228, 216, 201) !important;
+  --grotto-mobile-toolbar-background-color: rgb(231, 220, 208) !important;
   --grotto-mobile-toolbar-border-color: rgb(50, 50, 72) !important;
   --grotto-mobile-toolbar-border-radius: 0rem !important;
   --grotto-mobile-toolbar-color: rgb(50, 50, 72) !important;
-  --grotto-modal-background-color: rgb(241, 235, 228) !important;
+  --grotto-modal-background-color: rgb(245, 240, 235) !important;
   --grotto-modal-border-color: rgb(50, 50, 72) !important;
   --grotto-modal-border-radius: 0rem !important;
   --grotto-modal-color: rgb(50, 50, 72) !important;
-  --grotto-navbar-background-color: rgb(228, 216, 201) !important;
+  --grotto-navbar-background-color: rgb(231, 220, 208) !important;
   --grotto-navbar-border-color: rgb(50, 50, 72) !important;
   --grotto-navbar-border-radius: 0rem !important;
   --grotto-navbar-color: rgb(50, 50, 72) !important;
@@ -1190,54 +1190,55 @@ body.theme-light {
   --grotto-notice-background-color: rgb(235, 115, 71) !important;
   --grotto-notice-border-color: rgb(50, 50, 72) !important;
   --grotto-notice-border-radius: 0rem !important;
-  --grotto-notice-color: rgb(241, 235, 228) !important;
+  --grotto-notice-color: rgb(245, 240, 235) !important;
   --grotto-progress-background-color: rgb(50, 50, 72) !important;
   --grotto-progress-border-color: rgb(50, 50, 72) !important;
   --grotto-progress-color: rgb(235, 115, 71) !important;
   --grotto-progress-radius: 0rem !important;
-  --grotto-prompt-background-color: rgb(241, 235, 228) !important;
+  --grotto-prompt-background-color: rgb(245, 240, 235) !important;
   --grotto-prompt-border-color: rgb(50, 50, 72) !important;
   --grotto-prompt-border-radius: 0rem !important;
   --grotto-prompt-color: rgb(50, 50, 72) !important;
-  --grotto-properties-background-color: rgb(241, 235, 228) !important;
+  --grotto-properties-background-color: rgb(245, 240, 235) !important;
   --grotto-properties-border-color: rgb(50, 50, 72) !important;
   --grotto-properties-border-radius: 0rem !important;
   --grotto-properties-color: rgb(50, 50, 72) !important;
   --grotto-pull-background-color: rgb(235, 115, 71) !important;
   --grotto-pull-border-color: rgb(50, 50, 72) !important;
   --grotto-pull-border-radius: 0rem !important;
-  --grotto-pull-color: rgb(241, 235, 228) !important;
+  --grotto-pull-color: rgb(245, 240, 235) !important;
   --grotto-redacted: "Flow Circular" !important;
-  --grotto-resize-handle-border-color: rgb(50, 50, 72) !important;
+  --grotto-resize-handle-border-color: transparent !important;
+  --grotto-resize-handle-border-width: 1px !important;
   --grotto-resize-handle-color: rgb(50, 50, 72) !important;
-  --grotto-ribbon-border-color: rgb(50, 50, 72) !important;
+  --grotto-ribbon-border-color: transparent !important;
   --grotto-ribbon-border-radius: 0rem !important;
   --grotto-ribbon-border-width: 1px !important;
   --grotto-scrollbar-border-color: rgb(50, 50, 72) !important;
-  --grotto-settings-background-color: rgb(231, 220, 208) !important;
+  --grotto-settings-background-color: rgb(238, 230, 221) !important;
   --grotto-settings-border-color: rgb(50, 50, 72) !important;
   --grotto-settings-border-radius: 0rem !important;
   --grotto-settings-color: rgb(50, 50, 72) !important;
   --grotto-slider-background-color: rgb(50, 50, 72) !important;
-  --grotto-slider-border-color: rgb(241, 235, 228) !important;
-  --grotto-statusbar-background-color: rgb(228, 216, 201) !important;
+  --grotto-slider-border-color: rgb(245, 240, 235) !important;
+  --grotto-statusbar-background-color: rgb(231, 220, 208) !important;
   --grotto-statusbar-border-color: rgb(50, 50, 72) !important;
   --grotto-statusbar-border-radius: 0rem !important;
   --grotto-statusbar-color: rgb(50, 50, 72) !important;
   --grotto-strikethrough-color: rgb(50, 50, 72) !important;
   --grotto-strikethrough-opacity: 0.5 !important;
   --grotto-strikethrough-weight: 500 !important;
-  --grotto-suggestion-background-color: rgb(228, 216, 201) !important;
+  --grotto-suggestion-background-color: rgb(231, 220, 208) !important;
   --grotto-suggestion-border-color: rgb(50, 50, 72) !important;
   --grotto-suggestion-border-radius: 0rem !important;
   --grotto-suggestion-color: rgb(50, 50, 72) !important;
   --grotto-suggestion-selected-background-color: rgb(235, 115, 71) !important;
-  --grotto-suggestion-selected-color: rgb(241, 235, 228) !important;
-  --grotto-tab-switcher-background-color: rgb(241, 235, 228) !important;
+  --grotto-suggestion-selected-color: rgb(245, 240, 235) !important;
+  --grotto-tab-switcher-background-color: rgb(245, 240, 235) !important;
   --grotto-tab-switcher-border-color: rgb(50, 50, 72) !important;
   --grotto-tab-switcher-border-radius: 0rem !important;
   --grotto-tab-switcher-color: rgb(50, 50, 72) !important;
-  --grotto-tab-switcher-menu-background-color: rgb(228, 216, 201) !important;
+  --grotto-tab-switcher-menu-background-color: rgb(231, 220, 208) !important;
   --grotto-tab-switcher-selected-tab-background-color: rgb(
     235,
     115,
@@ -1256,21 +1257,21 @@ body.theme-light {
   --grotto-tag-border-color: rgb(50, 50, 72) !important;
   --grotto-tag-border-radius: 0rem !important;
   --grotto-tag-border-width: 1.5px !important;
-  --grotto-tag-color: rgb(241, 235, 228) !important;
+  --grotto-tag-color: rgb(245, 240, 235) !important;
   --grotto-tag-pointer-events: none !important;
   --grotto-tag-size: 0.8rem !important;
   --grotto-tag-weight: 600 !important;
   --grotto-titlebar-border-radius: 0rem !important;
   --grotto-titlebar-color: rgb(50, 50, 72) !important;
-  --grotto-toggle-background-color: rgb(231, 220, 208) !important;
+  --grotto-toggle-background-color: rgb(238, 230, 221) !important;
   --grotto-toggle-border-color: rgb(50, 50, 72) !important;
-  --grotto-tooltip-background-color: rgb(228, 216, 201) !important;
+  --grotto-tooltip-background-color: rgb(231, 220, 208) !important;
   --grotto-tooltip-border-color: rgb(50, 50, 72) !important;
   --grotto-tooltip-border-radius: 0rem !important;
   --grotto-tooltip-color: rgb(50, 50, 72) !important;
   --grotto-ui-border-radius: 0rem !important;
   --grotto-ui-border-width: 1px !important;
-  --grotto-view-header-background-color: rgb(228, 216, 201) !important;
+  --grotto-view-header-background-color: rgb(231, 220, 208) !important;
   --grotto-view-header-border-radius: 0rem !important;
   --grotto-view-header-color: rgb(50, 50, 72) !important;
   --grotto-view-header-sidebar-toggle-display: none !important;
@@ -1323,7 +1324,7 @@ body.theme-dark {
   --bases-embed-border-radius: 0px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: rgb(228, 216, 201) !important;
+  --bases-group-heading-property-color: rgb(231, 220, 208) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -1333,7 +1334,7 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(241, 235, 228) !important;
+  --bases-table-border-color: rgb(245, 240, 235) !important;
   --bases-table-cell-background-active: rgb(50, 50, 72) !important;
   --bases-table-cell-background-disabled: rgb(50, 50, 72) !important;
   --bases-table-cell-background-selected: rgba(235, 115, 71, 0.1) !important;
@@ -1351,7 +1352,7 @@ body.theme-dark {
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: rgb(50, 50, 72) !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --bases-table-header-color: rgb(228, 216, 201) !important;
+  --bases-table-header-color: rgb(231, 220, 208) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -1392,7 +1393,7 @@ body.theme-dark {
   --callout-bug: 251, 70, 76;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: rgb(241, 235, 228);
+  --callout-default: rgb(245, 240, 235);
   --callout-error: 251, 70, 76;
   --callout-example: 168, 130, 255;
   --callout-fail: 251, 70, 76;
@@ -1410,7 +1411,7 @@ body.theme-dark {
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
   --canvas-background: rgb(50, 50, 72) !important;
-  --canvas-card-label-color: rgb(228, 216, 201) !important;
+  --canvas-card-label-color: rgb(231, 220, 208) !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 251, 70, 76 !important;
   --canvas-color-2: 233, 151, 63 !important;
@@ -1422,37 +1423,37 @@ body.theme-dark {
   --canvas-controls-icon-stroke: 2px !important;
   --canvas-controls-radius: 0px !important;
   --canvas-dot-pattern: #363636 !important;
-  --caret-color: rgb(241, 235, 228) !important;
-  --checkbox-border-color: rgb(228, 216, 201) !important;
-  --checkbox-border-color-hover: rgb(228, 216, 201) !important;
+  --caret-color: rgb(245, 240, 235) !important;
+  --checkbox-border-color: rgb(231, 220, 208) !important;
+  --checkbox-border-color-hover: rgb(231, 220, 208) !important;
   --checkbox-color: rgb(235, 115, 71) !important;
   --checkbox-color-hover: rgb(235, 115, 71) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: transparent !important;
   --checkbox-radius: 0px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: rgb(228, 216, 201) !important;
+  --checklist-done-color: rgb(231, 220, 208) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 0px !important;
   --code-background: rgb(50, 50, 72) !important;
-  --code-border-color: rgb(241, 235, 228) !important;
+  --code-border-color: rgb(245, 240, 235) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: rgb(228, 216, 201) !important;
+  --code-comment: rgb(231, 220, 208) !important;
   --code-function: rgb(149, 138, 80) !important;
   --code-important: rgb(184, 153, 122) !important;
   --code-keyword: rgb(184, 122, 153) !important;
-  --code-normal: rgb(241, 235, 228) !important;
+  --code-normal: rgb(245, 240, 235) !important;
   --code-operator: rgb(184, 122, 122) !important;
   --code-property: rgb(89, 166, 153) !important;
-  --code-punctuation: rgb(228, 216, 201) !important;
+  --code-punctuation: rgb(231, 220, 208) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: rgb(89, 166, 89) !important;
   --code-tag: rgb(184, 122, 122) !important;
   --code-value: rgb(153, 122, 184) !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: rgb(228, 216, 201) !important;
+  --collapse-icon-color: rgb(231, 220, 208) !important;
   --collapse-icon-color-collapsed: rgb(235, 115, 71) !important;
   --color-accent: rgb(235, 115, 71) !important;
   --color-accent-1: rgb(235, 115, 71) !important;
@@ -1532,7 +1533,7 @@ body.theme-dark {
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
   --flair-background: #363636 !important;
-  --flair-color: rgb(241, 235, 228) !important;
+  --flair-color: rgb(245, 240, 235) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -1577,8 +1578,8 @@ body.theme-dark {
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: rgb(228, 216, 201) !important;
-  --footnote-id-color-no-occurrences: rgb(228, 216, 201) !important;
+  --footnote-id-color: rgb(231, 220, 208) !important;
+  --footnote-id-color-no-occurrences: rgb(231, 220, 208) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
@@ -1591,12 +1592,12 @@ body.theme-dark {
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #3f3f3f !important;
-  --graph-node: rgb(241, 235, 228) !important;
+  --graph-node: rgb(245, 240, 235) !important;
   --graph-node-attachment: rgb(106, 191, 64) !important;
   --graph-node-focused: rgb(235, 115, 71) !important;
   --graph-node-tag: rgb(235, 115, 71) !important;
-  --graph-node-unresolved: rgb(228, 216, 201) !important;
-  --graph-text: rgb(241, 235, 228) !important;
+  --graph-node-unresolved: rgb(231, 220, 208) !important;
+  --graph-text: rgb(245, 240, 235) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -1634,15 +1635,15 @@ body.theme-dark {
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: rgb(228, 216, 201) !important;
+  --heading-formatting: rgb(231, 220, 208) !important;
   --heading-spacing: 0rem !important;
   --highlight-mix-blend-mode: lighten !important;
   --hr-color: #363636 !important;
   --hr-thickness: 2px !important;
-  --icon-color: rgb(228, 216, 201) !important;
+  --icon-color: rgb(231, 220, 208) !important;
   --icon-color-active: rgb(235, 115, 71) !important;
-  --icon-color-focused: rgb(241, 235, 228) !important;
-  --icon-color-hover: rgb(228, 216, 201) !important;
+  --icon-color-focused: rgb(245, 240, 235) !important;
+  --icon-color-hover: rgb(231, 220, 208) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1676,12 +1677,12 @@ body.theme-dark {
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
-  --input-date-separator: rgb(228, 216, 201) !important;
+  --input-date-separator: rgb(231, 220, 208) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: rgb(228, 216, 201) !important;
+  --input-placeholder-color: rgb(231, 220, 208) !important;
   --input-radius: 5px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
@@ -1729,9 +1730,9 @@ body.theme-dark {
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(241, 235, 228) !important;
-  --list-marker-color-collapsed: rgb(241, 235, 228) !important;
-  --list-marker-color-hover: rgb(241, 235, 228) !important;
+  --list-marker-color: rgb(245, 240, 235) !important;
+  --list-marker-color-collapsed: rgb(245, 240, 235) !important;
+  --list-marker-color-hover: rgb(245, 240, 235) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
@@ -1767,14 +1768,14 @@ body.theme-dark {
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: rgb(241, 235, 228) !important;
+  --metadata-input-text-color: rgb(245, 240, 235) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: "??" !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: rgb(228, 216, 201) !important;
-  --metadata-label-text-color-hover: rgb(228, 216, 201) !important;
+  --metadata-label-text-color: rgb(231, 220, 208) !important;
+  --metadata-label-text-color-hover: rgb(231, 220, 208) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
@@ -1806,12 +1807,12 @@ body.theme-dark {
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: rgb(228, 216, 201) !important;
-  --nav-collapse-icon-color-collapsed: rgb(228, 216, 201) !important;
-  --nav-heading-color: rgb(241, 235, 228) !important;
-  --nav-heading-color-collapsed: rgb(228, 216, 201) !important;
-  --nav-heading-color-collapsed-hover: rgb(228, 216, 201) !important;
-  --nav-heading-color-hover: rgb(241, 235, 228) !important;
+  --nav-collapse-icon-color: rgb(231, 220, 208) !important;
+  --nav-collapse-icon-color-collapsed: rgb(231, 220, 208) !important;
+  --nav-heading-color: rgb(245, 240, 235) !important;
+  --nav-heading-color-collapsed: rgb(231, 220, 208) !important;
+  --nav-heading-color-collapsed-hover: rgb(231, 220, 208) !important;
+  --nav-heading-color-hover: rgb(245, 240, 235) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
@@ -1821,11 +1822,11 @@ body.theme-dark {
   --nav-item-background-selected: rgba(235, 115, 71, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgb(228, 216, 201) !important;
-  --nav-item-color-active: rgb(241, 235, 228) !important;
+  --nav-item-color: rgb(231, 220, 208) !important;
+  --nav-item-color-active: rgb(245, 240, 235) !important;
   --nav-item-color-highlighted: rgb(235, 115, 71) !important;
-  --nav-item-color-hover: rgb(241, 235, 228) !important;
-  --nav-item-color-selected: rgb(241, 235, 228) !important;
+  --nav-item-color-hover: rgb(245, 240, 235) !important;
+  --nav-item-color-selected: rgb(245, 240, 235) !important;
   --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
@@ -1833,9 +1834,9 @@ body.theme-dark {
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: rgb(228, 216, 201) !important;
-  --nav-tag-color-active: rgb(228, 216, 201) !important;
-  --nav-tag-color-hover: rgb(228, 216, 201) !important;
+  --nav-tag-color: rgb(231, 220, 208) !important;
+  --nav-tag-color-active: rgb(231, 220, 208) !important;
+  --nav-tag-color-hover: rgb(231, 220, 208) !important;
   --nav-tag-radius: 0px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 0rem !important;
@@ -1854,9 +1855,9 @@ body.theme-dark {
   --pill-border-color: #363636 !important;
   --pill-border-color-hover: #3f3f3f !important;
   --pill-border-width: 1px !important;
-  --pill-color: rgb(228, 216, 201) !important;
-  --pill-color-hover: rgb(241, 235, 228) !important;
-  --pill-color-remove: rgb(228, 216, 201) !important;
+  --pill-color: rgb(231, 220, 208) !important;
+  --pill-color-hover: rgb(245, 240, 235) !important;
+  --pill-color-remove: rgb(231, 220, 208) !important;
   --pill-color-remove-hover: rgb(235, 115, 71) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
@@ -1908,12 +1909,12 @@ body.theme-dark {
   --scrollbar-radius: 0rem !important;
   --scrollbar-thumb-bg: rgb(235, 115, 71) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: rgb(228, 216, 201) !important;
+  --search-clear-button-color: rgb(231, 220, 208) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: rgb(228, 216, 201) !important;
+  --search-icon-color: rgb(231, 220, 208) !important;
   --search-icon-size: 18px !important;
   --search-result-background: rgb(50, 50, 72) !important;
-  --setting-group-heading-color: rgb(241, 235, 228) !important;
+  --setting-group-heading-color: rgb(245, 240, 235) !important;
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
   --setting-items-background: rgb(50, 50, 72) !important;
@@ -1961,7 +1962,7 @@ body.theme-dark {
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 0px 0 0 0 !important;
-  --status-bar-text-color: rgb(228, 216, 201) !important;
+  --status-bar-text-color: rgb(231, 220, 208) !important;
   --suggestion-backdrop-filter: none !important;
   --suggestion-background: rgb(50, 50, 72) !important;
   --swatch-height: 22px !important;
@@ -2005,18 +2006,18 @@ body.theme-dark {
   --tab-switcher-preview-radius: 0px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(235, 115, 71) !important;
-  --tab-text-color: rgb(228, 216, 201) !important;
-  --tab-text-color-active: rgb(228, 216, 201) !important;
-  --tab-text-color-focused: rgb(228, 216, 201) !important;
-  --tab-text-color-focused-active: rgb(228, 216, 201) !important;
-  --tab-text-color-focused-active-current: rgb(241, 235, 228) !important;
+  --tab-text-color: rgb(231, 220, 208) !important;
+  --tab-text-color-active: rgb(231, 220, 208) !important;
+  --tab-text-color-focused: rgb(231, 220, 208) !important;
+  --tab-text-color-focused-active: rgb(231, 220, 208) !important;
+  --tab-text-color-focused-active-current: rgb(245, 240, 235) !important;
   --tab-text-color-focused-highlighted: rgb(235, 115, 71) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgb(241, 235, 228) !important;
+  --table-add-button-border-color: rgb(245, 240, 235) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(241, 235, 228) !important;
+  --table-border-color: rgb(245, 240, 235) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -2026,13 +2027,13 @@ body.theme-dark {
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: rgb(235, 115, 71) !important;
-  --table-drag-handle-color: rgb(228, 216, 201) !important;
+  --table-drag-handle-color: rgb(231, 220, 208) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: rgb(241, 235, 228) !important;
+  --table-header-border-color: rgb(245, 240, 235) !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: rgb(241, 235, 228) !important;
+  --table-header-color: rgb(245, 240, 235) !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -2049,7 +2050,7 @@ body.theme-dark {
   --table-white-space: break-spaces !important;
   --tag-background: rgba(235, 115, 71, 0.1) !important;
   --tag-background-hover: rgba(235, 115, 71, 0.2) !important;
-  --tag-border-color: rgb(241, 235, 228) !important;
+  --tag-border-color: rgb(245, 240, 235) !important;
   --tag-border-color-hover: rgba(235, 115, 71, 0.15) !important;
   --tag-border-width: 1.5px !important;
   --tag-color: rgb(235, 115, 71) !important;
@@ -2064,11 +2065,11 @@ body.theme-dark {
   --text-accent: rgb(235, 115, 71) !important;
   --text-accent-hover: rgb(235, 115, 71) !important;
   --text-error: rgb(191, 64, 64) !important;
-  --text-faint: rgb(228, 216, 201) !important;
+  --text-faint: rgb(231, 220, 208) !important;
   --text-highlight-bg: rgb(75, 75, 108) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: rgb(228, 216, 201) !important;
-  --text-normal: rgb(241, 235, 228) !important;
+  --text-muted: rgb(231, 220, 208) !important;
+  --text-normal: rgb(245, 240, 235) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgb(235, 115, 71) !important;
@@ -2079,8 +2080,8 @@ body.theme-dark {
   --titlebar-border-color: #363636 !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: rgb(228, 216, 201) !important;
-  --titlebar-text-color-focused: rgb(241, 235, 228) !important;
+  --titlebar-text-color: rgb(231, 220, 208) !important;
+  --titlebar-text-color-focused: rgb(245, 240, 235) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -2108,8 +2109,8 @@ body.theme-dark {
   --traffic-lights-offset-x: 40px !important;
   --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: rgb(241, 235, 228) !important;
-  --vault-profile-color-hover: rgb(241, 235, 228) !important;
+  --vault-profile-color: rgb(245, 240, 235) !important;
+  --vault-profile-color-hover: rgb(245, 240, 235) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -2122,232 +2123,233 @@ body.theme-dark {
   --raised-shadow: none !important;
   --shadow-edges: none !important;
   --shadow-xs: none !important;
-  --blockquote-color: rgb(241, 235, 228) !important;
+  --blockquote-color: rgb(245, 240, 235) !important;
   --table-header-background-hover: transparent !important;
-  --table-text-color: rgb(241, 235, 228) !important;
+  --table-text-color: rgb(245, 240, 235) !important;
   --grotto-accent: rgb(235, 115, 71) !important;
   --grotto-accent-h: 16 !important;
   --grotto-accent-l: 60% !important;
   --grotto-accent-s: 80% !important;
   --grotto-background-tertiary: rgb(75, 75, 108) !important;
-  --grotto-backlink-border-color: rgb(241, 235, 228) !important;
+  --grotto-backlink-border-color: rgb(245, 240, 235) !important;
   --grotto-bases-background-color: rgb(50, 50, 72) !important;
-  --grotto-bases-border-color: rgb(241, 235, 228) !important;
+  --grotto-bases-border-color: rgb(245, 240, 235) !important;
   --grotto-bases-border-radius: 0rem !important;
-  --grotto-bases-color: rgb(241, 235, 228) !important;
+  --grotto-bases-color: rgb(245, 240, 235) !important;
   --grotto-bases-header-background-color: rgb(75, 75, 108) !important;
   --grotto-blockquote-background-color: transparent !important;
   --grotto-blockquote-border-color: rgb(235, 115, 71) !important;
-  --grotto-blockquote-color: rgb(241, 235, 228) !important;
+  --grotto-blockquote-color: rgb(245, 240, 235) !important;
   --grotto-blur: 0px !important;
   --grotto-bold-color: rgb(235, 115, 71) !important;
   --grotto-bold-weight: 800 !important;
   --grotto-button-background-color: rgb(235, 115, 71) !important;
-  --grotto-button-border-color: rgb(241, 235, 228) !important;
+  --grotto-button-border-color: rgb(245, 240, 235) !important;
   --grotto-button-border-radius: 0rem !important;
-  --grotto-button-color: rgb(241, 235, 228) !important;
+  --grotto-button-color: rgb(245, 240, 235) !important;
   --grotto-calendar-background-color: transparent !important;
-  --grotto-calendar-border-color: rgb(241, 235, 228) !important;
+  --grotto-calendar-border-color: rgb(245, 240, 235) !important;
   --grotto-calendar-border-radius: 0rem !important;
   --grotto-calendar-border-width: 1px !important;
-  --grotto-calendar-color: rgb(241, 235, 228) !important;
-  --grotto-calendar-day-active-color: rgb(241, 235, 228) !important;
+  --grotto-calendar-color: rgb(245, 240, 235) !important;
+  --grotto-calendar-day-active-color: rgb(245, 240, 235) !important;
   --grotto-calendar-day-border-color: transparent !important;
   --grotto-calendar-day-border-radius: 0rem !important;
-  --grotto-calendar-day-color: rgb(241, 235, 228) !important;
+  --grotto-calendar-day-color: rgb(245, 240, 235) !important;
   --grotto-calendar-dayofweek-background-color: transparent !important;
-  --grotto-calendar-dayofweek-border-color: rgb(241, 235, 228) !important;
+  --grotto-calendar-dayofweek-border-color: rgb(245, 240, 235) !important;
   --grotto-calendar-dayofweek-border-radius: 0rem !important;
-  --grotto-calendar-dayofweek-color: rgb(241, 235, 228) !important;
+  --grotto-calendar-dayofweek-color: rgb(245, 240, 235) !important;
   --grotto-calendar-dayofweek-outline-color: transparent !important;
-  --grotto-calendar-month-color: rgb(241, 235, 228) !important;
+  --grotto-calendar-month-color: rgb(245, 240, 235) !important;
   --grotto-calendar-pointer-events: auto !important;
   --grotto-calendar-today-background-color: rgb(235, 115, 71) !important;
-  --grotto-calendar-today-border-color: rgb(241, 235, 228) !important;
-  --grotto-calendar-today-color: rgb(241, 235, 228) !important;
+  --grotto-calendar-today-border-color: rgb(245, 240, 235) !important;
+  --grotto-calendar-today-color: rgb(245, 240, 235) !important;
   --grotto-calendar-view-height: 0vh !important;
-  --grotto-calendar-weekend-border-color: rgb(241, 235, 228) !important;
+  --grotto-calendar-weekend-border-color: rgb(245, 240, 235) !important;
   --grotto-calendar-weekend-border-width: 1px !important;
   --grotto-calendar-year-color: rgb(235, 115, 71) !important;
   --grotto-callout-background-color: rgb(50, 50, 72) !important;
-  --grotto-callout-border-color: rgb(241, 235, 228) !important;
-  --grotto-callout-color: rgb(241, 235, 228) !important;
+  --grotto-callout-border-color: rgb(245, 240, 235) !important;
+  --grotto-callout-color: rgb(245, 240, 235) !important;
   --grotto-callout-icon: none !important;
   --grotto-callout-padding: 8px 16px !important;
   --grotto-callout-radius: 0rem !important;
   --grotto-callout-title-size: 1.5rem !important;
   --grotto-canvas-background-color: rgb(50, 50, 72) !important;
-  --grotto-canvas-border-color: rgb(241, 235, 228) !important;
+  --grotto-canvas-border-color: rgb(245, 240, 235) !important;
   --grotto-canvas-border-radius: 0rem !important;
-  --grotto-canvas-color: rgb(241, 235, 228) !important;
+  --grotto-canvas-color: rgb(245, 240, 235) !important;
   --grotto-canvas-controls-background-color: rgb(75, 75, 108) !important;
-  --grotto-canvas-controls-color: rgb(241, 235, 228) !important;
-  --grotto-canvas-path-color: rgb(241, 235, 228) !important;
+  --grotto-canvas-controls-color: rgb(245, 240, 235) !important;
+  --grotto-canvas-path-color: rgb(245, 240, 235) !important;
   --grotto-canvas-path-node-color: rgb(235, 115, 71) !important;
-  --grotto-checkbox-border-color: rgb(241, 235, 228) !important;
+  --grotto-checkbox-border-color: rgb(245, 240, 235) !important;
   --grotto-checkbox-border-radius: 0rem !important;
   --grotto-code-background-color: rgb(75, 75, 108) !important;
-  --grotto-code-border-color: rgb(241, 235, 228) !important;
+  --grotto-code-border-color: rgb(245, 240, 235) !important;
   --grotto-code-border-radius: 0rem !important;
-  --grotto-code-color: rgb(241, 235, 228) !important;
+  --grotto-code-color: rgb(245, 240, 235) !important;
   --grotto-code-weight: 500 !important;
-  --grotto-comment-color: rgb(241, 235, 228) !important;
+  --grotto-comment-color: rgb(245, 240, 235) !important;
   --grotto-comment-weight: 500 !important;
   --grotto-dark-0: rgb(42, 42, 60) !important;
   --grotto-dark-1: rgb(50, 50, 72) !important;
   --grotto-dark-2: rgb(75, 75, 108) !important;
   --grotto-dragging-background-color: rgb(235, 115, 71) !important;
-  --grotto-dragging-border-color: rgb(241, 235, 228) !important;
+  --grotto-dragging-border-color: rgb(245, 240, 235) !important;
   --grotto-dragging-border-radius: 0rem !important;
-  --grotto-dragging-color: rgb(241, 235, 228) !important;
+  --grotto-dragging-color: rgb(245, 240, 235) !important;
   --grotto-drawer-background-color: rgb(235, 115, 71) !important;
-  --grotto-drawer-border-color: rgb(241, 235, 228) !important;
+  --grotto-drawer-border-color: rgb(245, 240, 235) !important;
   --grotto-drawer-border-radius: 0rem !important;
-  --grotto-drawer-color: rgb(241, 235, 228) !important;
+  --grotto-drawer-color: rgb(245, 240, 235) !important;
   --grotto-dropdown-background-color: rgb(235, 115, 71) !important;
-  --grotto-dropdown-border-color: rgb(241, 235, 228) !important;
+  --grotto-dropdown-border-color: rgb(245, 240, 235) !important;
   --grotto-dropdown-border-radius: 0rem !important;
-  --grotto-dropdown-color: rgb(241, 235, 228) !important;
+  --grotto-dropdown-color: rgb(245, 240, 235) !important;
   --grotto-dropdown-option-background-color: rgb(50, 50, 72) !important;
-  --grotto-dropdown-option-color: rgb(241, 235, 228) !important;
+  --grotto-dropdown-option-color: rgb(245, 240, 235) !important;
   --grotto-embed-background-color: transparent !important;
-  --grotto-embed-border-color: rgb(241, 235, 228) !important;
+  --grotto-embed-border-color: rgb(245, 240, 235) !important;
   --grotto-embed-border-radius: 0rem !important;
-  --grotto-embed-color: rgb(241, 235, 228) !important;
-  --grotto-embed-title-color: rgb(241, 235, 228) !important;
+  --grotto-embed-color: rgb(245, 240, 235) !important;
+  --grotto-embed-title-color: rgb(245, 240, 235) !important;
   --grotto-embed-title-size: 1.5rem !important;
   --grotto-embed-title-visibility: block !important;
   --grotto-filenav-active-background-color: rgb(235, 115, 71) !important;
-  --grotto-filenav-active-color: rgb(241, 235, 228) !important;
+  --grotto-filenav-active-color: rgb(245, 240, 235) !important;
   --grotto-filenav-background-color: rgb(42, 42, 60) !important;
-  --grotto-filenav-border-color: rgb(241, 235, 228) !important;
+  --grotto-filenav-border-color: rgb(245, 240, 235) !important;
   --grotto-filenav-border-radius: 0rem !important;
   --grotto-filenav-button-background-color: rgb(75, 75, 108) !important;
-  --grotto-filenav-color: rgb(241, 235, 228) !important;
-  --grotto-filenav-tag-background-color: rgb(241, 235, 228) !important;
+  --grotto-filenav-color: rgb(245, 240, 235) !important;
+  --grotto-filenav-tag-background-color: rgb(245, 240, 235) !important;
   --grotto-filenav-tag-color: rgb(42, 42, 60) !important;
   --grotto-font-weight: 500 !important;
   --grotto-graph-controls-background-color: rgb(75, 75, 108) !important;
-  --grotto-graph-controls-border-color: rgb(241, 235, 228) !important;
+  --grotto-graph-controls-border-color: rgb(245, 240, 235) !important;
   --grotto-graph-controls-border-radius: 0rem !important;
-  --grotto-graph-controls-color: rgb(241, 235, 228) !important;
-  --grotto-graph-line-color: rgb(241, 235, 228) !important;
-  --grotto-graph-node-color: rgb(241, 235, 228) !important;
+  --grotto-graph-controls-color: rgb(245, 240, 235) !important;
+  --grotto-graph-line-color: rgb(245, 240, 235) !important;
+  --grotto-graph-node-color: rgb(245, 240, 235) !important;
   --grotto-graph-sidebar-controls-background-color: rgb(75, 75, 108) !important;
-  --grotto-graph-sidebar-controls-border-color: rgb(241, 235, 228) !important;
-  --grotto-graph-sidebar-controls-color: rgb(241, 235, 228) !important;
+  --grotto-graph-sidebar-controls-border-color: rgb(245, 240, 235) !important;
+  --grotto-graph-sidebar-controls-color: rgb(245, 240, 235) !important;
   --grotto-header-1-background-color: rgb(235, 115, 71) !important;
-  --grotto-header-1-border-color: rgb(241, 235, 228) !important;
+  --grotto-header-1-border-color: rgb(245, 240, 235) !important;
   --grotto-header-1-border-radius: 0rem !important;
-  --grotto-header-1-color: rgb(241, 235, 228) !important;
+  --grotto-header-1-color: rgb(245, 240, 235) !important;
   --grotto-header-1-size: 1.5rem !important;
-  --grotto-header-2-background-color: rgb(241, 235, 228) !important;
-  --grotto-header-2-border-color: rgb(241, 235, 228) !important;
+  --grotto-header-2-background-color: rgb(245, 240, 235) !important;
+  --grotto-header-2-border-color: rgb(245, 240, 235) !important;
   --grotto-header-2-border-radius: 0rem !important;
   --grotto-header-2-color: rgb(50, 50, 72) !important;
   --grotto-header-2-size: 1.5rem !important;
   --grotto-header-3-background-color: transparent !important;
-  --grotto-header-3-border-color: rgb(241, 235, 228) !important;
+  --grotto-header-3-border-color: rgb(245, 240, 235) !important;
   --grotto-header-3-border-radius: 0rem !important;
-  --grotto-header-3-color: rgb(241, 235, 228) !important;
+  --grotto-header-3-color: rgb(245, 240, 235) !important;
   --grotto-header-3-size: 1.5rem !important;
   --grotto-header-4-background-color: transparent !important;
-  --grotto-header-4-border-color: rgb(241, 235, 228) !important;
+  --grotto-header-4-border-color: rgb(245, 240, 235) !important;
   --grotto-header-4-border-radius: 0rem !important;
-  --grotto-header-4-color: rgb(241, 235, 228) !important;
+  --grotto-header-4-color: rgb(245, 240, 235) !important;
   --grotto-header-4-size: 1.5rem !important;
   --grotto-header-5-background-color: transparent !important;
   --grotto-header-5-border-color: rgb(235, 115, 71) !important;
   --grotto-header-5-border-radius: 0rem !important;
-  --grotto-header-5-color: rgb(241, 235, 228) !important;
+  --grotto-header-5-color: rgb(245, 240, 235) !important;
   --grotto-header-5-size: 1.5rem !important;
   --grotto-header-6-background-color: transparent !important;
   --grotto-header-6-border-color: transparent !important;
   --grotto-header-6-border-radius: 0rem !important;
-  --grotto-header-6-color: rgb(241, 235, 228) !important;
+  --grotto-header-6-color: rgb(245, 240, 235) !important;
   --grotto-header-6-size: 1.5rem !important;
   --grotto-header-border-radius: 0rem !important;
   --grotto-header-line-height: 2rem !important;
   --grotto-header-size: 1.5rem !important;
   --grotto-header-weight: 500 !important;
-  --grotto-icon-color: rgb(241, 235, 228) !important;
+  --grotto-icon-color: rgb(245, 240, 235) !important;
   --grotto-input-radius: 0rem !important;
   --grotto-italic-color: rgb(235, 115, 71) !important;
   --grotto-italic-weight: 500 !important;
-  --grotto-light-0: rgb(231, 220, 208) !important;
-  --grotto-light-1: rgb(241, 235, 228) !important;
-  --grotto-light-2: rgb(228, 216, 201) !important;
+  --grotto-light-0: rgb(238, 230, 221) !important;
+  --grotto-light-1: rgb(245, 240, 235) !important;
+  --grotto-light-2: rgb(231, 220, 208) !important;
   --grotto-link-color: rgb(235, 115, 71) !important;
   --grotto-link-weight: 500 !important;
-  --grotto-list-marker-color: rgb(241, 235, 228) !important;
+  --grotto-list-marker-color: rgb(245, 240, 235) !important;
   --grotto-menu-background-color: rgb(42, 42, 60) !important;
-  --grotto-menu-border-color: rgb(241, 235, 228) !important;
+  --grotto-menu-border-color: rgb(245, 240, 235) !important;
   --grotto-menu-border-radius: 0rem !important;
-  --grotto-menu-color: rgb(241, 235, 228) !important;
+  --grotto-menu-color: rgb(245, 240, 235) !important;
   --grotto-mobile-toolbar-background-color: rgb(75, 75, 108) !important;
-  --grotto-mobile-toolbar-border-color: rgb(241, 235, 228) !important;
+  --grotto-mobile-toolbar-border-color: rgb(245, 240, 235) !important;
   --grotto-mobile-toolbar-border-radius: 0rem !important;
-  --grotto-mobile-toolbar-color: rgb(241, 235, 228) !important;
+  --grotto-mobile-toolbar-color: rgb(245, 240, 235) !important;
   --grotto-modal-background-color: rgb(50, 50, 72) !important;
-  --grotto-modal-border-color: rgb(241, 235, 228) !important;
+  --grotto-modal-border-color: rgb(245, 240, 235) !important;
   --grotto-modal-border-radius: 0rem !important;
-  --grotto-modal-color: rgb(241, 235, 228) !important;
+  --grotto-modal-color: rgb(245, 240, 235) !important;
   --grotto-navbar-background-color: rgb(75, 75, 108) !important;
-  --grotto-navbar-border-color: rgb(241, 235, 228) !important;
+  --grotto-navbar-border-color: rgb(245, 240, 235) !important;
   --grotto-navbar-border-radius: 0rem !important;
-  --grotto-navbar-color: rgb(241, 235, 228) !important;
+  --grotto-navbar-color: rgb(245, 240, 235) !important;
   --grotto-navbar-new-tab-display: auto !important;
   --grotto-navbar-position-offset: 16px !important;
   --grotto-notice-background-color: rgb(235, 115, 71) !important;
-  --grotto-notice-border-color: rgb(241, 235, 228) !important;
+  --grotto-notice-border-color: rgb(245, 240, 235) !important;
   --grotto-notice-border-radius: 0rem !important;
-  --grotto-notice-color: rgb(241, 235, 228) !important;
-  --grotto-progress-background-color: rgb(241, 235, 228) !important;
-  --grotto-progress-border-color: rgb(241, 235, 228) !important;
+  --grotto-notice-color: rgb(245, 240, 235) !important;
+  --grotto-progress-background-color: rgb(245, 240, 235) !important;
+  --grotto-progress-border-color: rgb(245, 240, 235) !important;
   --grotto-progress-color: rgb(235, 115, 71) !important;
   --grotto-progress-radius: 0rem !important;
   --grotto-prompt-background-color: rgb(50, 50, 72) !important;
-  --grotto-prompt-border-color: rgb(241, 235, 228) !important;
+  --grotto-prompt-border-color: rgb(245, 240, 235) !important;
   --grotto-prompt-border-radius: 0rem !important;
-  --grotto-prompt-color: rgb(241, 235, 228) !important;
+  --grotto-prompt-color: rgb(245, 240, 235) !important;
   --grotto-properties-background-color: rgb(50, 50, 72) !important;
-  --grotto-properties-border-color: rgb(241, 235, 228) !important;
+  --grotto-properties-border-color: rgb(245, 240, 235) !important;
   --grotto-properties-border-radius: 0rem !important;
-  --grotto-properties-color: rgb(241, 235, 228) !important;
+  --grotto-properties-color: rgb(245, 240, 235) !important;
   --grotto-pull-background-color: rgb(235, 115, 71) !important;
-  --grotto-pull-border-color: rgb(241, 235, 228) !important;
+  --grotto-pull-border-color: rgb(245, 240, 235) !important;
   --grotto-pull-border-radius: 0rem !important;
-  --grotto-pull-color: rgb(241, 235, 228) !important;
+  --grotto-pull-color: rgb(245, 240, 235) !important;
   --grotto-redacted: "Flow Circular" !important;
-  --grotto-resize-handle-border-color: rgb(241, 235, 228) !important;
-  --grotto-resize-handle-color: rgb(241, 235, 228) !important;
-  --grotto-ribbon-border-color: rgb(241, 235, 228) !important;
+  --grotto-resize-handle-border-color: transparent !important;
+  --grotto-resize-handle-border-width: 1px !important;
+  --grotto-resize-handle-color: rgb(245, 240, 235) !important;
+  --grotto-ribbon-border-color: transparent !important;
   --grotto-ribbon-border-radius: 0rem !important;
   --grotto-ribbon-border-width: 1px !important;
-  --grotto-scrollbar-border-color: rgb(241, 235, 228) !important;
+  --grotto-scrollbar-border-color: rgb(245, 240, 235) !important;
   --grotto-settings-background-color: rgb(42, 42, 60) !important;
-  --grotto-settings-border-color: rgb(241, 235, 228) !important;
+  --grotto-settings-border-color: rgb(245, 240, 235) !important;
   --grotto-settings-border-radius: 0rem !important;
-  --grotto-settings-color: rgb(241, 235, 228) !important;
-  --grotto-slider-background-color: rgb(241, 235, 228) !important;
+  --grotto-settings-color: rgb(245, 240, 235) !important;
+  --grotto-slider-background-color: rgb(245, 240, 235) !important;
   --grotto-slider-border-color: rgb(50, 50, 72) !important;
   --grotto-statusbar-background-color: rgb(75, 75, 108) !important;
-  --grotto-statusbar-border-color: rgb(241, 235, 228) !important;
+  --grotto-statusbar-border-color: rgb(245, 240, 235) !important;
   --grotto-statusbar-border-radius: 0rem !important;
-  --grotto-statusbar-color: rgb(241, 235, 228) !important;
-  --grotto-strikethrough-color: rgb(241, 235, 228) !important;
+  --grotto-statusbar-color: rgb(245, 240, 235) !important;
+  --grotto-strikethrough-color: rgb(245, 240, 235) !important;
   --grotto-strikethrough-opacity: 0.5 !important;
   --grotto-strikethrough-weight: 500 !important;
   --grotto-suggestion-background-color: rgb(75, 75, 108) !important;
-  --grotto-suggestion-border-color: rgb(241, 235, 228) !important;
+  --grotto-suggestion-border-color: rgb(245, 240, 235) !important;
   --grotto-suggestion-border-radius: 0rem !important;
-  --grotto-suggestion-color: rgb(241, 235, 228) !important;
+  --grotto-suggestion-color: rgb(245, 240, 235) !important;
   --grotto-suggestion-selected-background-color: rgb(235, 115, 71) !important;
-  --grotto-suggestion-selected-color: rgb(241, 235, 228) !important;
+  --grotto-suggestion-selected-color: rgb(245, 240, 235) !important;
   --grotto-tab-switcher-background-color: rgb(50, 50, 72) !important;
-  --grotto-tab-switcher-border-color: rgb(241, 235, 228) !important;
+  --grotto-tab-switcher-border-color: rgb(245, 240, 235) !important;
   --grotto-tab-switcher-border-radius: 0rem !important;
-  --grotto-tab-switcher-color: rgb(241, 235, 228) !important;
+  --grotto-tab-switcher-color: rgb(245, 240, 235) !important;
   --grotto-tab-switcher-menu-background-color: rgb(75, 75, 108) !important;
   --grotto-tab-switcher-selected-tab-background-color: rgb(
     235,
@@ -2356,15 +2358,15 @@ body.theme-dark {
   ) !important;
   --grotto-tab-switcher-tab-height: 200px !important;
   --grotto-table-background-color: transparent !important;
-  --grotto-table-border-color: rgb(241, 235, 228) !important;
+  --grotto-table-border-color: rgb(245, 240, 235) !important;
   --grotto-table-border-radius: 0rem !important;
   --grotto-table-border-style: separate !important;
   --grotto-table-border-width: 1px !important;
   --grotto-table-cell-width: fit-content !important;
   --grotto-table-cell-width-reading: wrap !important;
-  --grotto-table-color: rgb(241, 235, 228) !important;
-  --grotto-tag-background-color: rgb(241, 235, 228) !important;
-  --grotto-tag-border-color: rgb(241, 235, 228) !important;
+  --grotto-table-color: rgb(245, 240, 235) !important;
+  --grotto-tag-background-color: rgb(245, 240, 235) !important;
+  --grotto-tag-border-color: rgb(245, 240, 235) !important;
   --grotto-tag-border-radius: 0rem !important;
   --grotto-tag-border-width: 1.5px !important;
   --grotto-tag-color: rgb(50, 50, 72) !important;
@@ -2372,18 +2374,18 @@ body.theme-dark {
   --grotto-tag-size: 0.8rem !important;
   --grotto-tag-weight: 600 !important;
   --grotto-titlebar-border-radius: 0rem !important;
-  --grotto-titlebar-color: rgb(241, 235, 228) !important;
+  --grotto-titlebar-color: rgb(245, 240, 235) !important;
   --grotto-toggle-background-color: rgb(42, 42, 60) !important;
-  --grotto-toggle-border-color: rgb(241, 235, 228) !important;
+  --grotto-toggle-border-color: rgb(245, 240, 235) !important;
   --grotto-tooltip-background-color: rgb(75, 75, 108) !important;
-  --grotto-tooltip-border-color: rgb(241, 235, 228) !important;
+  --grotto-tooltip-border-color: rgb(245, 240, 235) !important;
   --grotto-tooltip-border-radius: 0rem !important;
-  --grotto-tooltip-color: rgb(241, 235, 228) !important;
+  --grotto-tooltip-color: rgb(245, 240, 235) !important;
   --grotto-ui-border-radius: 0rem !important;
   --grotto-ui-border-width: 1px !important;
   --grotto-view-header-background-color: rgb(75, 75, 108) !important;
   --grotto-view-header-border-radius: 0rem !important;
-  --grotto-view-header-color: rgb(241, 235, 228) !important;
+  --grotto-view-header-color: rgb(245, 240, 235) !important;
   --grotto-view-header-sidebar-toggle-display: none !important;
 }
 
@@ -2467,14 +2469,14 @@ body .markdown-rendered a.internal-link:hover {
 }
 body .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
+  color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
   cursor: auto;
   filter: none;
   font-family: "??";
   font-weight: 500;
-  outline: rgb(228, 216, 201) none 0px;
-  text-decoration: rgb(228, 216, 201);
-  text-decoration-color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
+  outline: rgb(231, 220, 208) none 0px;
+  text-decoration: rgb(231, 220, 208);
+  text-decoration-color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -2541,15 +2543,15 @@ body i {
   user-select: text;
 }
 body .markdown-rendered mark {
-  background-color: light-dark(rgb(228, 216, 201), rgb(75, 75, 108));
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  background-color: light-dark(rgb(231, 220, 208), rgb(75, 75, 108));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: text;
   filter: none;
   font-family: "??";
   font-weight: 500;
-  outline: rgb(241, 235, 228) none 0px;
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  outline: rgb(245, 240, 235) none 0px;
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -2557,14 +2559,14 @@ body .markdown-rendered mark {
 }
 body del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: text;
   filter: none;
   font-family: "??";
   font-weight: 500;
-  outline: rgb(241, 235, 228) none 0px;
-  text-decoration: line-through rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  outline: rgb(245, 240, 235) none 0px;
+  text-decoration: line-through rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   text-decoration-line: line-through;
   text-decoration-style: solid;
   transition: all;
@@ -2580,11 +2582,11 @@ body .suggestion-item.is-selected {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(241, 235, 228);
+  color: rgb(245, 240, 235);
 }
 body div.suggestion-item {
   background-color: rgb(235, 115, 71);
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2593,10 +2595,10 @@ body div.suggestion-item {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(241, 235, 228);
+  color: rgb(245, 240, 235);
 }
 body .markdown-rendered hr {
-  border-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border-color: rgba(0, 0, 0, 0);
   border-style: solid solid none none;
   border-width: 0px 1px 0px 0px;
   border-top-left-radius: 0px;
@@ -2616,12 +2618,12 @@ body .markdown-rendered hr {
 }
 body div.multi-select-pill {
   align-items: normal;
-  background-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  background-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   display: flex;
   font-family: "??";
   font-weight: 500;
   margin-inline-start: 0px;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2632,10 +2634,10 @@ body div.multi-select-pill {
   border-end-end-radius: 0px;
 }
 body div.multi-select-pill > div.multi-select-pill-content {
-  color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
 }
 body .markdown-rendered ul > li {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   text-align: start;
 }
 body .markdown-rendered ul > li::marker {
@@ -2654,7 +2656,7 @@ body .markdown-rendered ul > li::marker {
   transform: none;
 }
 body .markdown-rendered ol > li {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   text-align: start;
 }
 body .markdown-rendered ol > li::marker {
@@ -2674,7 +2676,7 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2683,13 +2685,13 @@ body .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
   padding: 0px;
 }
 body .markdown-rendered pre > code {
-  background-color: light-dark(rgb(228, 216, 201), rgb(75, 75, 108));
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  background-color: light-dark(rgb(231, 220, 208), rgb(75, 75, 108));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2705,8 +2707,8 @@ body .markdown-rendered pre > code {
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  background-color: light-dark(rgb(228, 216, 201), rgb(75, 75, 108));
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  background-color: light-dark(rgb(231, 220, 208), rgb(75, 75, 108));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2722,7 +2724,7 @@ body pre[class*="language-"] {
 }
 body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   appearance: auto;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2759,9 +2761,9 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body ul > li.task-list-item[data-task="x"] {
-  color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
-  text-decoration: line-through rgb(228, 216, 201);
-  text-decoration-color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
+  color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
+  text-decoration: line-through rgb(231, 220, 208);
+  text-decoration-color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
 }
 body .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -2774,12 +2776,12 @@ body .markdown-rendered blockquote {
   margin-inline-end: 40px;
 }
 body .footnote-backref {
-  color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
-  text-decoration: rgb(228, 216, 201);
+  color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
+  text-decoration: rgb(231, 220, 208);
 }
 body .site-body-left-column input.search-bar {
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2788,12 +2790,12 @@ body .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
 }
 body .search-results {
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2809,21 +2811,21 @@ body .search-results {
 }
 body .search-results > * {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: auto;
   filter: none;
   font-family: "??";
   font-weight: 500;
-  outline: rgb(241, 235, 228) none 0px;
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  outline: rgb(245, 240, 235) none 0px;
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
   user-select: text;
 }
 body div.search-results {
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2834,10 +2836,10 @@ body div.search-results {
   border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item {
-  color: rgb(241, 235, 228);
+  color: rgb(245, 240, 235);
 }
 body div.search-results .suggestion-item {
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2848,40 +2850,40 @@ body div.search-results .suggestion-item {
   border-end-end-radius: 0px;
 }
 body .search-results .suggestion-item.is-selected {
-  color: rgb(241, 235, 228);
+  color: rgb(245, 240, 235);
   font-weight: 500;
   background-color: rgb(235, 115, 71);
 }
 body div.search-results .suggestion-item.is-selected {
-  color: rgb(241, 235, 228);
+  color: rgb(245, 240, 235);
 }
 body .published-container .markdown-rendered h1 {
-  color: rgb(241, 235, 228);
+  color: rgb(245, 240, 235);
   font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h2 {
-  color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h3 {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h4 {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h5 {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
   text-shadow: none;
 }
 body .published-container .markdown-rendered h6 {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
   text-shadow: none;
 }
@@ -2894,10 +2896,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body body.styled-scrollbars {
   background: light-dark(
-    rgb(241, 235, 228) none repeat scroll 0% 0% / auto padding-box border-box,
+    rgb(245, 240, 235) none repeat scroll 0% 0% / auto padding-box border-box,
     rgb(50, 50, 72) none repeat scroll 0% 0% / auto padding-box border-box
   );
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2906,14 +2908,14 @@ body body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   box-shadow: none;
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
 body .callout[data-callout="note"] {
-  --callout-color: rgb(241, 235, 228);
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  --callout-color: rgb(245, 240, 235);
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2924,12 +2926,12 @@ body .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 8px 16px;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: 2px;
-  border: 0px light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  border-bottom: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  border-bottom: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2949,9 +2951,9 @@ body .callout > .callout-content {
 }
 body .callout[data-callout="abstract"] {
   --callout-color: 83, 223, 221;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2963,9 +2965,9 @@ body .callout[data-callout="abstract"] {
 }
 body .callout[data-callout="info"] {
   --callout-color: 2, 122, 255;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2977,9 +2979,9 @@ body .callout[data-callout="info"] {
 }
 body .callout[data-callout="todo"] {
   --callout-color: 2, 122, 255;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2991,9 +2993,9 @@ body .callout[data-callout="todo"] {
 }
 body .callout[data-callout="tip"] {
   --callout-color: 83, 223, 221;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3005,9 +3007,9 @@ body .callout[data-callout="tip"] {
 }
 body .callout[data-callout="success"] {
   --callout-color: 68, 207, 110;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3019,9 +3021,9 @@ body .callout[data-callout="success"] {
 }
 body .callout[data-callout="question"] {
   --callout-color: 233, 151, 63;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3033,9 +3035,9 @@ body .callout[data-callout="question"] {
 }
 body .callout[data-callout="warning"] {
   --callout-color: 233, 151, 63;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3047,9 +3049,9 @@ body .callout[data-callout="warning"] {
 }
 body .callout[data-callout="danger"] {
   --callout-color: 251, 70, 76;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3061,9 +3063,9 @@ body .callout[data-callout="danger"] {
 }
 body .callout[data-callout="failure"] {
   --callout-color: 251, 70, 76;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3075,9 +3077,9 @@ body .callout[data-callout="failure"] {
 }
 body .callout[data-callout="bug"] {
   --callout-color: 251, 70, 76;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3089,9 +3091,9 @@ body .callout[data-callout="bug"] {
 }
 body .callout[data-callout="example"] {
   --callout-color: 168, 130, 255;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3103,9 +3105,9 @@ body .callout[data-callout="example"] {
 }
 body .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   mix-blend-mode: normal;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3118,7 +3120,7 @@ body .callout[data-callout="quote"] {
 body .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: separate;
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
   table-layout: auto;
   width: 187.766px;
@@ -3154,11 +3156,11 @@ body .markdown-rendered tbody {
 }
 body .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-weight: 600;
   text-align: start;
   vertical-align: top;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3171,11 +3173,11 @@ body .markdown-rendered th {
 }
 body .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-weight: 500;
   text-align: start;
   vertical-align: top;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3210,7 +3212,7 @@ body .markdown-rendered img {
   filter: none;
   max-width: none;
   object-fit: fill;
-  border: 0px light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3228,7 +3230,7 @@ body .markdown-rendered img {
 body .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3245,7 +3247,7 @@ body .markdown-rendered figure {
   padding: 0px;
 }
 body .markdown-rendered figcaption {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
   font-size: 16px;
   font-style: normal;
@@ -3263,7 +3265,7 @@ body .markdown-rendered video {
   filter: none;
   max-width: none;
   object-fit: contain;
-  border: 0px light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3280,7 +3282,7 @@ body .markdown-rendered video {
 }
 body .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3293,7 +3295,7 @@ body .markdown-rendered audio {
 }
 body .internal-embed {
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3303,7 +3305,7 @@ body .internal-embed {
 }
 body .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3312,8 +3314,8 @@ body .markdown-embed {
   padding: 0px 0px 16px;
 }
 body .file-embed {
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
-  border-color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
+  border-color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3324,7 +3326,7 @@ body .file-embed {
 }
 body .metadata-container {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
+  color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
   font-family: "??";
   border: 0px solid light-dark(rgb(224, 224, 224), rgb(54, 54, 54));
   border-top-left-radius: 0px;
@@ -3336,9 +3338,9 @@ body .metadata-container {
 }
 body .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
+  color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
   font-family: "??";
-  border-color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
+  border-color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3351,7 +3353,7 @@ body progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 15px;
-  border: 0px light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3376,9 +3378,9 @@ body input[type="range"] {
 }
 body input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3391,7 +3393,7 @@ body input[type="text"] {
 }
 body details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3409,7 +3411,7 @@ body details {
 }
 body summary {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: auto;
   font-weight: 500;
   padding: 0px;
@@ -3433,12 +3435,12 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
   box-shadow: none;
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
   font-size: 14px;
-  border: 0px light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 0px light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3457,7 +3459,7 @@ body dl {
   margin-inline-start: 0px;
 }
 body dt {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-weight: 500;
   margin: 0px;
   margin-block-end: 0px;
@@ -3466,7 +3468,7 @@ body dt {
   margin-inline-start: 0px;
 }
 body dd {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -3475,110 +3477,110 @@ body dd {
   padding: 0px;
 }
 body sub {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-size: 13.3333px;
   vertical-align: sub;
 }
 body sup {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-size: 13.3333px;
   vertical-align: super;
 }
 body abbr {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: auto;
-  text-decoration: underline dotted rgb(241, 235, 228);
+  text-decoration: underline dotted rgb(245, 240, 235);
   text-decoration-style: dotted;
 }
 body li.task-list-item[data-task="-"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task=">"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="/"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="?"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="!"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="*"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="l"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="b"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="i"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="S"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="I"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="p"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="c"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="f"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="k"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="u"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="d"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body li.task-list-item[data-task="w"] {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
-  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
+  text-decoration-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body .math-block > mjx-container.MathJax {
   display: block;
@@ -3594,15 +3596,15 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: default;
   font-family: "??";
   font-weight: 500;
-  text-decoration: rgb(241, 235, 228);
+  text-decoration: rgb(245, 240, 235);
 }
 body .nav-view-outer .tree-item-self.mod-active {
   background-color: rgb(235, 115, 71);
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3611,7 +3613,7 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(241, 235, 228);
+  color: rgb(245, 240, 235);
   cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
@@ -3626,11 +3628,11 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: default;
   font-family: "??";
   font-weight: 500;
-  text-decoration: rgb(241, 235, 228);
+  text-decoration: rgb(245, 240, 235);
 }
 body
   .nav-view-outer
@@ -3639,17 +3641,17 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: default;
   font-family: "??";
   font-weight: 500;
-  text-decoration: rgb(241, 235, 228);
+  text-decoration: rgb(245, 240, 235);
 }
 body .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: default;
-  border-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3657,28 +3659,28 @@ body .clickable-icon {
   border-bottom-right-radius: 0px;
 }
 body .site-footer {
-  background-color: light-dark(rgb(228, 216, 201), rgb(75, 75, 108));
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  background-color: light-dark(rgb(231, 220, 208), rgb(75, 75, 108));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 body .site-footer a {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
 }
 body .nav-header {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
   font-weight: 500;
 }
 body .nav-files-container .tree-item {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  border-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  border-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3686,16 +3688,16 @@ body .nav-files-container .tree-item {
   border-bottom-right-radius: 0px;
 }
 body .nav-file-title {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  text-decoration: rgb(241, 235, 228);
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  text-decoration: rgb(245, 240, 235);
 }
 body .nav-file-title-content {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
 }
 body .nav-files-container {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3704,9 +3706,9 @@ body .nav-files-container {
 }
 body .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   cursor: default;
-  border-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3714,13 +3716,13 @@ body .site-body-left-column-site-theme-toggle {
   border-bottom-right-radius: 0px;
 }
 body .site-body-left-column-site-theme-toggle svg {
-  stroke: rgb(241, 235, 228);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  stroke: rgb(245, 240, 235);
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
-  border-color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
+  color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
+  border-color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3728,17 +3730,17 @@ body .view-header-breadcrumb {
   border-bottom-right-radius: 0px;
 }
 body .view-header-breadcrumb-separator {
-  color: light-dark(rgb(75, 75, 108), rgb(228, 216, 201));
+  color: light-dark(rgb(75, 75, 108), rgb(231, 220, 208));
   font-family: "??";
 }
 body .page-header .page-title {
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: "??";
 }
 body .math-block {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
-  border-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
+  border-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3747,13 +3749,13 @@ body .math-block {
 }
 body .footnotes {
   background-color: rgba(0, 0, 0, 0);
-  border-top-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border-top-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-width: 0px;
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
 }
 body .table-wrapper {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3761,8 +3763,8 @@ body .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body .view-content {
-  background-color: light-dark(rgb(241, 235, 228), rgb(50, 50, 72));
-  border-color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  background-color: light-dark(rgb(245, 240, 235), rgb(50, 50, 72));
+  border-color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3770,8 +3772,8 @@ body .view-content {
   border-bottom-right-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] {
-  background-color: light-dark(rgb(228, 216, 201), rgb(75, 75, 108));
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  background-color: light-dark(rgb(231, 220, 208), rgb(75, 75, 108));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3782,10 +3784,10 @@ body figure[data-rehype-pretty-code-figure] {
   border-end-end-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: light-dark(rgb(228, 216, 201), rgb(75, 75, 108));
-  color: light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  background-color: light-dark(rgb(231, 220, 208), rgb(75, 75, 108));
+  color: light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   font-family: monospace;
-  border: 1px solid light-dark(rgb(50, 50, 72), rgb(241, 235, 228));
+  border: 1px solid light-dark(rgb(50, 50, 72), rgb(245, 240, 235));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

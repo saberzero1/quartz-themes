@@ -37,11 +37,11 @@ body.theme-light {
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #08b94e !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
-  --background-primary: rgb(250, 249, 251) !important;
+  --background-primary: rgb(245, 245, 245) !important;
   --background-primary-alt: #fafafa !important;
   --background-secondary: rgb(255, 255, 255) !important;
   --background-secondary-alt: #fcfcfc !important;
-  --bases-cards-background: rgb(250, 249, 251) !important;
+  --bases-cards-background: rgb(245, 245, 245) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
@@ -67,7 +67,7 @@ body.theme-light {
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
   --bases-table-border-color: #e0e0e0 !important;
-  --bases-table-cell-background-active: rgb(250, 249, 251) !important;
+  --bases-table-cell-background-active: rgb(245, 245, 245) !important;
   --bases-table-cell-background-disabled: #fafafa !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
@@ -82,7 +82,7 @@ body.theme-light {
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: #fafafa !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: rgb(250, 249, 251) !important;
+  --bases-table-header-background: rgb(245, 245, 245) !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-table-header-color: #5c5c5c !important;
   --bases-table-header-icon-display: flex !important;
@@ -95,7 +95,7 @@ body.theme-light {
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: rgb(250, 249, 251) !important;
+  --bases-table-summary-background: rgb(245, 245, 245) !important;
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
@@ -103,10 +103,10 @@ body.theme-light {
   --blockquote-border-color: rgb(138, 92, 245) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, rgb(250, 249, 251) 65%, transparent)
+  --blur-background: color-mix(in srgb, rgb(245, 245, 245) 65%, transparent)
     linear-gradient(
-      rgb(250, 249, 251),
-      color-mix(in srgb, rgb(250, 249, 251) 65%, transparent)
+      rgb(245, 245, 245),
+      color-mix(in srgb, rgb(245, 245, 245) 65%, transparent)
     ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
@@ -165,7 +165,7 @@ body.theme-light {
   --checkbox-color: rgb(138, 92, 245) !important;
   --checkbox-color-hover: rgb(166, 139, 249) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: rgb(250, 249, 251) !important;
+  --checkbox-marker-color: rgb(245, 245, 245) !important;
   --checkbox-radius: 4px !important;
   --checkbox-size: 16px !important;
   --checklist-done-color: #5c5c5c !important;
@@ -257,8 +257,8 @@ body.theme-light {
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: rgb(250, 249, 251) !important;
-  --file-header-background-focused: rgb(250, 249, 251) !important;
+  --file-header-background: rgb(245, 245, 245) !important;
+  --file-header-background-focused: rgb(245, 245, 245) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -393,7 +393,7 @@ body.theme-light {
   --highlight-mix-blend-mode: darken !important;
   --hr-color: #e0e0e0 !important;
   --hr-thickness: 2px !important;
-  --icon-color: rgb(138, 92, 245) !important;
+  --icon-color: #5c5c5c !important;
   --icon-color-active: rgb(138, 92, 245) !important;
   --icon-color-focused: #222222 !important;
   --icon-color-hover: #5c5c5c !important;
@@ -562,7 +562,7 @@ body.theme-light {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: rgb(250, 249, 251) !important;
+  --modal-background: rgb(245, 245, 245) !important;
   --modal-border-color: #bdbdbd !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -612,11 +612,11 @@ body.theme-light {
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: rgb(250, 249, 251) !important;
-  --pdf-page-background: rgb(250, 249, 251) !important;
+  --pdf-background: rgb(245, 245, 245) !important;
+  --pdf-page-background: rgb(245, 245, 245) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: rgb(250, 249, 251) !important;
+  --pdf-sidebar-background: rgb(245, 245, 245) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
@@ -645,7 +645,7 @@ body.theme-light {
   --popover-width: 1050px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: rgb(250, 249, 251) !important;
+  --prompt-background: rgb(245, 245, 245) !important;
   --prompt-border-color: #bdbdbd !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -656,10 +656,10 @@ body.theme-light {
   --radius-m: 1em !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, rgb(250, 249, 251) 65%, transparent)
+  --raised-background: color-mix(in srgb, rgb(245, 245, 245) 65%, transparent)
     linear-gradient(
-      rgb(250, 249, 251),
-      color-mix(in srgb, rgb(250, 249, 251) 65%, transparent)
+      rgb(245, 245, 245),
+      color-mix(in srgb, rgb(245, 245, 245) 65%, transparent)
     ) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
@@ -676,7 +676,7 @@ body.theme-light {
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
   --ribbon-background: rgb(255, 255, 255) !important;
-  --ribbon-background-collapsed: rgb(250, 249, 251) !important;
+  --ribbon-background-collapsed: rgb(245, 245, 245) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -694,7 +694,7 @@ body.theme-light {
   --search-clear-button-size: 13px !important;
   --search-icon-color: #5c5c5c !important;
   --search-icon-size: 18px !important;
-  --search-result-background: rgb(250, 249, 251) !important;
+  --search-result-background: rgb(245, 245, 245) !important;
   --setting-group-heading-color: #222222 !important;
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
@@ -749,7 +749,7 @@ body.theme-light {
   --status-bar-radius: 1em 0 0 0 !important;
   --status-bar-text-color: #5c5c5c !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: rgb(250, 249, 251) !important;
+  --suggestion-background: rgb(245, 245, 245) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -763,7 +763,7 @@ body.theme-light {
   --sync-avatar-color-7: #7852ee !important;
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgb(250, 249, 251) !important;
+  --tab-background-active: rgb(245, 245, 245) !important;
   --tab-container-background: rgb(255, 255, 255) !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #d4d4d4 !important;
@@ -941,7 +941,7 @@ body.theme-light {
   --italic-color: rgb(154, 154, 154) !important;
   --background-3-1: rgb(197, 197, 197) !important;
   --background-3-2: rgba(197, 197, 197, 0.288) !important;
-  --background-7: rgb(206, 206, 206) !important;
+  --background-7: rgb(221, 221, 221) !important;
   --colored-accent-4: rgba(138, 92, 245, 0.1) !important;
   --colored-accent-5: rgba(138, 92, 245, 0.05) !important;
   --main-color: black !important;
@@ -1861,7 +1861,7 @@ body.theme-dark {
   --italic-color: rgb(97, 97, 97) !important;
   --background-3-1: rgb(70, 70, 70) !important;
   --background-3-2: rgba(70, 70, 70, 0.27) !important;
-  --background-7: rgb(46, 46, 46) !important;
+  --background-7: rgb(53, 53, 53) !important;
   --colored-accent-4: rgba(138, 92, 245, 0.1) !important;
   --colored-accent-5: rgba(138, 92, 245, 0.05) !important;
   --main-color: white !important;
@@ -2129,7 +2129,7 @@ body i {
   user-select: text;
 }
 body .markdown-rendered mark {
-  background-color: light-dark(rgb(206, 206, 206), rgb(46, 46, 46));
+  background-color: light-dark(rgb(221, 221, 221), rgb(53, 53, 53));
   color: light-dark(rgb(67, 67, 67), rgb(194, 194, 194));
   cursor: text;
   filter: none;
@@ -2456,7 +2456,7 @@ body .site-body-left-column input.search-bar {
     sans-serif;
 }
 body .search-results {
-  background-color: light-dark(rgb(250, 249, 251), rgb(33, 33, 33));
+  background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
   border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -2652,10 +2652,10 @@ body .outline-view-outer .outline-view .tree-item > .tree-item-children {
 }
 body body.styled-scrollbars {
   background: light-dark(
-    rgb(250, 249, 251) none repeat scroll 0% 0% / auto padding-box border-box,
+    rgb(245, 245, 245) none repeat scroll 0% 0% / auto padding-box border-box,
     rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box
   );
-  background-color: light-dark(rgb(250, 249, 251), rgb(33, 33, 33));
+  background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2837,7 +2837,7 @@ body .callout[data-callout="failure"] {
 }
 body .callout[data-callout="bug"] {
   --callout-color: 251, 70, 76;
-  background-color: rgba(245, 0, 87, 0.1);
+  background-color: rgba(255, 6, 93, 0.1);
   mix-blend-mode: normal;
   border: 0px solid light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
   border-top-left-radius: 16px;
@@ -3555,9 +3555,9 @@ body
 }
 body .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(179, 179, 179));
+  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
-  border-color: light-dark(rgb(138, 92, 245), rgb(179, 179, 179));
+  border-color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   border-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3656,9 +3656,9 @@ body .nav-files-container {
 }
 body .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(138, 92, 245), rgb(179, 179, 179));
+  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
-  border-color: light-dark(rgb(138, 92, 245), rgb(179, 179, 179));
+  border-color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   border-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3667,7 +3667,7 @@ body .site-body-left-column-site-theme-toggle {
 }
 body .site-body-left-column-site-theme-toggle svg {
   stroke: rgb(179, 179, 179);
-  color: light-dark(rgb(138, 92, 245), rgb(179, 179, 179));
+  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
 }
 body .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);
@@ -3739,7 +3739,7 @@ body .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body .view-content {
-  background-color: light-dark(rgb(250, 249, 251), rgb(33, 33, 33));
+  background-color: light-dark(rgb(245, 245, 245), rgb(33, 33, 33));
   border-color: light-dark(rgb(67, 67, 67), rgb(194, 194, 194));
   border-width: 0px;
   border-top-left-radius: 0px;
