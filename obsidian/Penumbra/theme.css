@@ -26,10 +26,10 @@
     --text-error-hover: #c9626a;
     --text-highlight-bg: #F2E6D4;
     --text-selection: #636363;
-    --text-on-accent: #636363;
+    --text-on-accent: #FFFDFB;
     --interactive-normal: #24272B;
     --interactive-hover: #FFFDFB;
-    --interactive-accent: #F2E6D4;
+    --interactive-accent: #3E4044;
     --interactive-accent-hover: #FFFDFB;
     --scrollbar-active-thumb-bg: #8F8F8F;
     --scrollbar-bg: #303338;
@@ -79,7 +79,7 @@
     --text-selection: #FFFDFB;
     --text-on-accent: #24272B;
     --interactive-normal: #F2E6D4;
-    --interactive-hover: #BEBEBE;
+    --interactive-hover: #24272B;
     --interactive-accent: #FFFDFB;
     --interactive-accent-hover: hsl(var(--accent-h), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 4%));
     --scrollbar-active-thumb-bg: #F2E6D4;
@@ -116,7 +116,7 @@
     --checklist-done-color: var(--text-faint);
 
     --nav-item-background-active: var(--interactive-accent);
-    --nav-item-color-active: var(--interactice-hover);
+    --nav-item-color-active: var(--interactive-hover);
     --nav-item-color-hover: var(--background-accent);
     --nav-item-color: var(--text-normal);
     --nav-collapse-icon-color: var(--background-accent);
@@ -408,14 +408,37 @@ pre[class*='language-'] {
     cursor: help !important;
 }
 
-.cm-fat-cursor .CodeMirror-cursor {
-  background-color: var(--text-faint) !important;
-  opacity: 0.5;
-  width: 5px;
+/* --- DARK MODE ACTIVE LINE --- */
+.theme-dark .vim-mode .cm-activeLine {
+  background-color: var(--background-modifier-form-field) !important; 
+  /* Subtle highlight for dark mode */
 }
 
+/* --- LIGHT MODE ACTIVE LINE --- */
+.theme-light .vim-mode .cm-activeLine {
+  background-color: var(--background-modifier-form-field) !important;
+  /* Subtle highlight for light mode */
+}
+/* Optional: Add a border to the left for better visibility in Normal Mode */
+.vim-mode .cm-activeLine {
+  border-left: 3px solid var(--interactive-accent);
+}
+/* --- DARK MODE --- */
+.theme-dark .cm-fat-cursor,
+.theme-dark .cm-focused .cm-fat-cursor {
+  background-color: var(--text-on-accent) !important; /* Your Dark Mode color */
+  opacity: 0.7 !important;
+}
+
+/* --- LIGHT MODE --- */
+/* We add .markdown-source-view to increase specificity if .theme-light isn't enough */
+.theme-light .markdown-source-view.mod-cm6 .cm-fat-cursor,
+.theme-light .cm-focused .cm-fat-cursor {
+  background-color: var(--text-on-accent) !important; /* Your Light Mode color */
+  opacity: 0.5 !important;
+}
+
+/* Optional: This fixes the cursor "ghosting" when you switch modes */
 .cm-animate-fat-cursor {
-  background-color: var(--text-faint) !important;
-  opacity: 0.5;
-  width: 5px;
+  transition: background-color 0.2s ease-in-out;
 }

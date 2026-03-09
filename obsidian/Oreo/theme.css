@@ -2201,9 +2201,9 @@ settings:
         title: Author
         title.zh: 作者
         type: info-text
-        description: "Oreo Theme created with ❤︎ by carols12352. Support at: BuyMeACoffee/(QAQ due to regional differences you cannot buy me a coffee, just enjoy the theme and provide feedback!)"
-        description.zh: "Oreo 主题由 carols12352 创建。支持请访问: BuyMeACoffee/(QAQ 因为地区政策原因你还不能给我买一杯咖啡，请享受主题并且及时给出反馈就好！)"
-        markdown: false
+        description: "Oreo Theme created with ❤︎ by carols12352. Support at: [buy me a coffee](https://www.buymeacoffee.com/ouyang12352)"
+        description.zh: "Oreo 主题由 carols12352 创建。支持请访问: [给我买杯咖啡](https://www.buymeacoffee.com/ouyang12352)"
+        markdown: true
 */
 /* @plugins
 name: Oreo Theme

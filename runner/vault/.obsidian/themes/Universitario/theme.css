@@ -72,16 +72,16 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 
 .theme-light {
     --A01: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A02: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 19%));
-    --A03: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 22%));
-    --A04: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 25%));
-    --A05: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 25%));
-    --A06: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 25%));
-    --A07: hsl(calc(var(--accent-h) + 45), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 22%));
-    --A08: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 19%));
+    --A02: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
+    --A03: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
+    --A04: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
+    --A05: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
+    --A06: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
+    --A07: hsl(calc(var(--accent-h) + 45), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
+    --A08: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
     --A09: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A10: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 19%));
-    --A11: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 22%));
+    --A10: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
+    --A11: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
 }
 
 .theme-dark {
@@ -880,7 +880,7 @@ th {
 
 .markdown-rendered thead>tr>th,
 .markdown-rendered tbody>tr>td {
-    text-align: left !important;
+    text-align: center !important;
 }
 
 .markdown-rendered td,
@@ -1400,7 +1400,7 @@ body {
     --list-marker-color-collapsed: var(--text-accent);
     --list-bullet-border: none;
     --list-bullet-radius: 50%;
-    --list-bullet-size: 0.4rem;
+    --list-bullet-size: 0.3rem;
     --list-bullet-transform: none;
     --list-numbered-style: decimal;
     --nav-item-size: var(--font-ui-small);
@@ -1617,14 +1617,14 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 0;
+    --accent-h: 150;
     --accent-s: 80%;
     --accent-l: 65%;
-    --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 55%));
-    --background-primary-alt: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 50%));
-    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 35%));
-    --background-table: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 35%));
-    --background-tertiary: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 45%));
+    --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 55%));
+    --background-primary-alt: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 50%));
+    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 75%), calc(var(--accent-l) - 35%));
+    --background-table: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 85%), calc(var(--accent-l) - 35%));
+    --background-tertiary: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 45%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-search: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 55%), calc(var(--accent-l) - 35%));
@@ -1869,14 +1869,14 @@ body {
     --accent-h: 228;
     --accent-s: 70%; 
     --accent-l: 70%;
-    --background-primary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 40%));
-    --background-primary-alt: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 25%));
-    --background-secondary: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 15%));
-    --background-table: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 25%));   
-    --background-tertiary: hsl(calc(var(--accent-h) - 40), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 20%));
+    --background-primary: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 25%));
+    --background-primary-alt: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 20%));
+    --background-secondary: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 5%));
+    --background-table: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));   
+    --background-tertiary: hsl(calc(var(--accent-h) - 40), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 10%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-    --background-search: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 10%));
+    --background-search: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 15%));
     --background-modifier-border: var(--color-base-30);
     --background-modifier-border-hover: var(--color-base-35);
     --background-modifier-border-focus: var(--color-base-40);
