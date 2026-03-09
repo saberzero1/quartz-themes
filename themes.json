@@ -1738,7 +1738,10 @@
       "compatibility": ["checking", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
-      "style_settings": {},
+      "style_settings": {
+        "fancy-a-story@@fas-bg-textures": false,
+        "fancy-a-story@@file-explorer-hover-animation": "disable"
+      },
       "variations": [],
       "extra_extract_files": [],
       "snippets": [],

@@ -549,6 +549,11 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
           document,
           NodeFilter.SHOW_ELEMENT,
         );
+        // Baseline of CSS custom property values from body (and html if present).
+        // Used to diff against child elements — only overrides are kept.
+        // Populated after body is processed (DOM order guarantees body comes
+        // before its descendants).
+        const cssVarBaseline = {};
         let e = elements.nextNode();
         while (e) {
           if (
@@ -622,14 +627,27 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
                       : ""
                   }${psuedoElement ?? ""}`;
               for (const [prop, val] of computedStyle) {
+                const isCustomProp = prop && prop.startsWith("--");
+                const isHtmlBody = ["html", "body"].includes(
+                  e.tagName.toLowerCase(),
+                );
+                const valStr = val.toString();
                 if (
+                  // Branch 1: CSS custom properties on html/body — always include.
+                  (isCustomProp && isHtmlBody) ||
+                  // Branch 2: CSS custom properties on other elements — include
+                  // only if the value differs from the body/html baseline (i.e.,
+                  // the element actually overrides the inherited value).
+                  (isCustomProp &&
+                    !isHtmlBody &&
+                    cssVarBaseline[prop] !== undefined &&
+                    valStr !== cssVarBaseline[prop]) ||
+                  // Branch 3: Standard properties — include if different from
+                  // the browser default for this tag (unchanged logic).
                   (prop &&
-                    prop.startsWith("--") &&
-                    ["html", "body"].includes(e.tagName.toLowerCase())) ||
-                  (prop &&
-                    !prop.startsWith("--") &&
+                    !isCustomProp &&
                     !prop.startsWith("-webkit-") &&
-                    /*computedStyle.getPropertyValue(prop)*/ val.toString() !==
+                    valStr !==
                       (defaultStyle ? defaultStyle[prop] : undefined) &&
                     ![
                       "-electron-corner-smoothing",
@@ -657,10 +675,23 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
                   }
                   if (!computedMap[selectorKey][prop]) {
                     computedMap[selectorKey][prop] =
-                      val.toString(); /*computedStyle
+                      valStr; /*computedStyle
                       .getPropertyValue(prop)
                       .toString();*/
                   }
+                }
+              }
+            }
+            // After processing body (or html), snapshot CSS custom property
+            // values as the baseline. Child elements will only keep overrides.
+            if (
+              ["html", "body"].includes(e.tagName.toLowerCase()) &&
+              computedMap[e.tagName.toLowerCase()]
+            ) {
+              const rootStyles = computedMap[e.tagName.toLowerCase()];
+              for (const prop of Object.keys(rootStyles)) {
+                if (prop.startsWith("--") && !(prop in cssVarBaseline)) {
+                  cssVarBaseline[prop] = rootStyles[prop];
                 }
               }
             }
