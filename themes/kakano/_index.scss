@@ -1208,7 +1208,11 @@
     rgb(38, 102, 192),
     black 25%
   ) !important;
-  --tab-text-color-focused-active-current: white !important;
+  --tab-text-color-focused-active-current: color-mix(
+    in srgb,
+    rgb(38, 102, 192),
+    black 90%
+  ) !important;
   --tab-text-color-focused-highlighted: rgb(38, 102, 192) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
@@ -1275,7 +1279,7 @@
   --tag-border-color: rgba(138, 92, 245, 0.15) !important;
   --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: hsl(258, 88%, 59.4%) !important;
+  --tag-color: rgb(114, 58, 242) !important;
   --tag-color-hover: rgb(138, 92, 245) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
@@ -6817,7 +6821,10 @@ body {
   }
 
   .page-header h2.page-title {
-    color: light-dark(rgb(255, 255, 255), color(srgb 0.6594 0.7599 0.9006));
+    color: light-dark(
+      color(srgb 0.01485 0.039975 0.07515),
+      color(srgb 0.6594 0.7599 0.9006)
+    );
     font-family:
       system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,

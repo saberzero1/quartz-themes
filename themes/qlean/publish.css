@@ -3214,6 +3214,7 @@ body.theme-light {
   --font-header:
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif !important;
+  --font-monospace-size: 1em !important;
   --text-strong: #171717 !important;
   --link-unresolved-decoration-color-hover: hsla(
     rgb(26, 26, 26),
@@ -3391,7 +3392,6 @@ body.theme-light {
   --font-inline-title-weight: 900 !important;
   --font-latex-size: 1em !important;
   --font-latex-weight: 400 !important;
-  --font-monospace-size: 1em !important;
   --font-monospace-weight: 400 !important;
   --font-source-view:
     iawriter-mono, Nitti, Menlo, Courier, monospace !important;
@@ -4334,6 +4334,7 @@ body.theme-dark {
   --font-header:
     "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
     "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif !important;
+  --font-monospace-size: 1em !important;
   --text-strong: #f5f5f5 !important;
   --link-unresolved-decoration-color-hover: hsla(
     rgb(230, 230, 230),
@@ -4511,7 +4512,6 @@ body.theme-dark {
   --font-inline-title-weight: 900 !important;
   --font-latex-size: 1em !important;
   --font-latex-weight: 400 !important;
-  --font-monospace-size: 1em !important;
   --font-monospace-weight: 400 !important;
   --font-source-view:
     iawriter-mono, Nitti, Menlo, Courier, monospace !important;
