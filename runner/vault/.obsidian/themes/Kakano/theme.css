@@ -602,6 +602,7 @@ settings:
 /* #endregion */
 /* #region Custom properties */
 /* #region   General */
+
 body {
   --background-input: light-dark(var(--theme-color-baseTransparent12), var(--theme-color-darkenTransparent06));
   --background-modifier-message: var(--theme-color-noticeBg);
@@ -706,6 +707,7 @@ body {
   --tab-switcher-preview-shadow: none;
   --tab-switcher-preview-shadow-active: none;
   --tab-text-color-focused-highlighted: var(--theme-color-base);
+  --tab-text-color-focused-active-current: var(--text-normal);
   --tag-weight: 400;
   --text-on-accent: var(--theme-color-baseLightened95);
   --text-muted: color-mix(in srgb, var(--text-normal), transparent 30%);
@@ -1122,7 +1124,7 @@ body {
   --tab-text-color-active: var(--theme-color-baseTransparent50);
   --tab-text-color-focused: var(--theme-color-baseDarkened25);
   --tab-text-color-focused-active: var(--theme-color-baseDarkened25);
-  --tab-text-color-focused-active-current: var(--icon-color-focused);
+
   --tag-color: hsl(
     var(--accent-h),
     calc(var(--accent-s)),
@@ -1377,7 +1379,6 @@ body.theme-light.theme-setting-customGradient {
   --tab-text-color-active: var(--theme-color-baseTransparent50);
   --tab-text-color-focused: var(--theme-color-baseLightened25);
   --tab-text-color-focused-active: var(--theme-color-baseLightened25);
-  --tab-text-color-focused-active-current: var(--text-normal);
   --text-normal: var(--theme-color-baseLightened60);
   --text-faint: var(--theme-color-baseLightened25);
   --background-prompt: var(--theme-color-baseDarkened80);

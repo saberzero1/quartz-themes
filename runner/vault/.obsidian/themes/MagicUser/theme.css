@@ -8336,6 +8336,81 @@ span.cm-highlight {
   padding-right: 0 !important;
 }
 
+/* Properties bg when closed */
+.metadata-container.is-collapsed {
+  background: transparent;
+  opacity: 0.3;
+}
+
+.metadata-container.is-collapsed:hover {
+  opacity: 1;
+}
+
+/* MagicUser Pages (mup) */
+
+.theme-light :is(.mup-white, .mup-black) {
+  --mup-custom: #ffffff;
+}
+
+.theme-dark :is(.mup-white, .mup-black) {
+  --mup-custom: #000000;
+}
+
+.theme-light .mup-teal {
+  --mup-custom: #b7e8e8;
+}
+
+.theme-dark .mup-teal {
+  --mup-custom: #002121;
+}
+
+.theme-light .mup-blue {
+  --mup-custom: #d9e8f8;
+}
+
+.theme-dark .mup-blue {
+  --mup-custom: #001838;
+}
+
+.theme-light .mup-purple {
+  --mup-custom: #e1dbf1;
+}
+
+.theme-dark .mup-purple {
+  --mup-custom: #180028;
+}
+
+.theme-light .mup-green {
+  --mup-custom: #d8f7d8;
+}
+
+.theme-dark .mup-green {
+  --mup-custom: #00281a;
+}
+
+.theme-light :is(.mup-grey, .mup-gray) {
+  --mup-custom: #e8e8e8;
+}
+
+.theme-dark :is(.mup-grey, .mup-gray) {
+  --mup-custom: #1a1a1a;
+}
+
+.theme-light .mup-yellow {
+  --mup-custom: #ffffbf;
+}
+
+.theme-dark .mup-yellow {
+  --mup-custom: #383800;
+}
+
+:is(.markdown-source-view, .markdown-rendered)[class*="mup-"] {
+  background: var(--mup-custom) !important;
+  --background-primary: var(--mup-custom) !important;
+  --background-secondary: var(--mup-custom) !important;
+  --background-primary-alt: var(--mup-custom) !important;
+}
+
 /* Style Settings */
 
 /* @settings
