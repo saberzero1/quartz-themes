@@ -600,7 +600,9 @@ input[type="checkbox"]:checked:after {
 /* graph view */
 .graph-controls {
   background-color: var(--tr);
-  backdrop-filter: brightness(var(--brightness)) blur(12px);
+  backdrop-filter:
+    /*brightness(var(--brightness))*/
+    blur(12px);
 }
 
 .graph-controls:not(.is-close) {
@@ -668,6 +670,13 @@ body.hide-canvas-dots svg.canvas-background {
   display: none;
 }
 
+/* tempmary canvas fix */
+.theme-dark .canvas-wrapper.is-screenshotting,
+.theme-light .canvas-wrapper.is-screenshotting {
+  background-color: #24291e;
+  background-image: none;
+}
+
 /* canvas export / screenshot fix 
 because there was stupid glitch :((( but it is now fixed :)))
  */
@@ -701,6 +710,7 @@ because there was stupid glitch :((( but it is now fixed :)))
 
 .canvas-control-item {
   background-color: #00000000;
+  border-radius: var(--canvas-controls-radius);
 }
 
 .canvas-card-menu {
@@ -964,7 +974,7 @@ hr {
 }
 
 .is-mobile.is-floating-nav .mod-raised {
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  backdrop-filter: brightness(var(--brightness)) blur(12px);
 }
 
 /* blur + dimming when sliding sidebars is disabled */
@@ -1012,6 +1022,15 @@ hr {
 
 .is-mobile .metadata-content {
   background-color: var(--tr);
+}
+
+.canvas-control-group {
+  background-color: transparent;
+}
+
+.canvas-controls {
+  backdrop-filter: blur(var(--set-blur));
+  border-radius: var(--canvas-controls-radius);
 }
 
 /* ===================== settings open animation ===================== */
