@@ -674,8 +674,7 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
                     computedMap[selectorKey] = {};
                   }
                   if (!computedMap[selectorKey][prop]) {
-                    computedMap[selectorKey][prop] =
-                      valStr; /*computedStyle
+                    computedMap[selectorKey][prop] = valStr; /*computedStyle
                       .getPropertyValue(prop)
                       .toString();*/
                   }
