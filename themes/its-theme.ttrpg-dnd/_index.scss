@@ -987,6 +987,13 @@
   --fg: #029f08 !important;
   --font:
     "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter !important;
+  --h1-border-color: #79c78e !important;
+  --h2-border-color: #cca04c !important;
+  --h3-border-color: #c93c3c !important;
+  --h4-border-color: #0e934c !important;
+  --h5-border-color: #35ad76 !important;
+  --h6-border-color: #91c1ad !important;
+  --h1-background: transparent !important;
   --tab-background: #dfefe6 !important;
   --r-heading-color: #0e934c !important;
   --r-heading-font:
@@ -1093,8 +1100,6 @@
   --graph-lines: #e4e7f8 !important;
   --graph-node-hover-fill: #2e5db2 !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #79c78e !important;
   --h1-border-left-color: #ccd6eb !important;
   --h1-border-line-color: #ccd6eb !important;
   --h1-border-line-height: 4px !important;
@@ -1105,7 +1110,6 @@
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #cca04c !important;
   --h2-border-left-color: #ccd6eb !important;
   --h2-border-line-color: #ccd6eb !important;
   --h2-border-line-height: 4px !important;
@@ -1116,7 +1120,6 @@
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #c93c3c !important;
   --h3-border-left-color: #ccd6eb !important;
   --h3-border-line-color: #ccd6eb !important;
   --h3-border-line-height: 4px !important;
@@ -1127,7 +1130,6 @@
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #0e934c !important;
   --h4-border-left-color: #ccd6eb !important;
   --h4-border-line-color: #ccd6eb !important;
   --h4-border-line-height: 4px !important;
@@ -1138,7 +1140,6 @@
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #35ad76 !important;
   --h5-border-left-color: #ccd6eb !important;
   --h5-border-line-color: #ccd6eb !important;
   --h5-border-line-height: 4px !important;
@@ -1149,7 +1150,6 @@
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: #91c1ad !important;
   --h6-border-left-color: #ccd6eb !important;
   --h6-border-line-color: #ccd6eb !important;
   --h6-border-line-height: 4px !important;
@@ -2385,6 +2385,13 @@
   --fg: white !important;
   --font:
     "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter !important;
+  --h1-border-color: #548b67 !important;
+  --h2-border-color: #cc824c !important;
+  --h3-border-color: #c93c3c !important;
+  --h4-border-color: #2b4e41 !important;
+  --h5-border-color: #1c2f2b !important;
+  --h6-border-color: #0e0f15 !important;
+  --h1-background: transparent !important;
   --tab-background: #0e0f15 !important;
   --r-heading-color: #3eb281 !important;
   --r-heading-font:
@@ -2491,8 +2498,6 @@
   --graph-lines: #244047 !important;
   --graph-node-hover-fill: #3eb281 !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #548b67 !important;
   --h1-border-left-color: #2c3836 !important;
   --h1-border-line-color: #2c3836 !important;
   --h1-border-line-height: 4px !important;
@@ -2503,7 +2508,6 @@
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #cc824c !important;
   --h2-border-left-color: #2c3836 !important;
   --h2-border-line-color: #2c3836 !important;
   --h2-border-line-height: 4px !important;
@@ -2514,7 +2518,6 @@
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #c93c3c !important;
   --h3-border-left-color: #2c3836 !important;
   --h3-border-line-color: #2c3836 !important;
   --h3-border-line-height: 4px !important;
@@ -2525,7 +2528,6 @@
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #2b4e41 !important;
   --h4-border-left-color: #2c3836 !important;
   --h4-border-line-color: #2c3836 !important;
   --h4-border-line-height: 4px !important;
@@ -2536,7 +2538,6 @@
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #1c2f2b !important;
   --h5-border-left-color: #2c3836 !important;
   --h5-border-line-color: #2c3836 !important;
   --h5-border-line-height: 4px !important;
@@ -2547,7 +2548,6 @@
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: #0e0f15 !important;
   --h6-border-left-color: #2c3836 !important;
   --h6-border-line-color: #2c3836 !important;
   --h6-border-line-height: 4px !important;

@@ -93,7 +93,11 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
-  --background-modifier-border: rgb(from #333338 r g b / 15%) !important;
+  --background-modifier-border: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 15%
+  ) !important;
   --background-modifier-border-focus: #c0bfbc !important;
   --background-modifier-border-hover: #deddda !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -101,9 +105,15 @@ body.theme-light {
   --background-modifier-error: rgb(237, 51, 59) !important;
   --background-modifier-error-hover: rgb(237, 51, 59) !important;
   --background-modifier-error-rgb: 237, 51, 59 !important;
-  --background-modifier-form-field: rgb(from #333338 r g b / 10%) !important;
-  --background-modifier-form-field-hover: rgb(
-    from #333338 r g b / 10%
+  --background-modifier-form-field: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 10%
+  ) !important;
+  --background-modifier-form-field-hover: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 10%
   ) !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -116,21 +126,25 @@ body.theme-light {
   --bases-cards-background: #fff !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
+  --bases-cards-corner-shape: superellipse(1.1) !important;
   --bases-cards-cover-background: #fff !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 12px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(from #333338 r g b / 15%) !important;
+  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, #ebebed, #333338 15%) !important;
   --bases-cards-shadow-hover: 0 0 0 1px #deddda !important;
-  --bases-embed-border-color: rgb(from #333338 r g b / 15%) !important;
+  --bases-embed-border-color: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 15%
+  ) !important;
   --bases-embed-border-radius: 9px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
   --bases-group-heading-property-color: #5c5c60 !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 9.02pt !important;
+  --bases-group-heading-property-size: 9.02px !important;
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
@@ -138,7 +152,11 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(from #333338 r g b / 15%) !important;
+  --bases-table-border-color: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 15%
+  ) !important;
   --bases-table-cell-background-active: #fff !important;
   --bases-table-cell-background-disabled: #fff !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
@@ -190,7 +208,7 @@ body.theme-light {
   --bold-modifier: 300 !important;
   --bold-weight: 700 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
+  --button-corner-shape: superellipse(1.1) !important;
   --button-radius: 9px !important;
   --callout-blend-mode: normal;
   --callout-border-opacity: 0.25;
@@ -241,7 +259,7 @@ body.theme-light {
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 9px !important;
   --code-background: #f3f3f5 !important;
-  --code-border-color: rgb(from #333338 r g b / 15%) !important;
+  --code-border-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
   --code-comment: #b6b9c5 !important;
@@ -292,23 +310,27 @@ body.theme-light {
   --color-red-rgb: 237, 51, 59 !important;
   --color-yellow: rgb(246, 211, 45) !important;
   --color-yellow-rgb: 246, 211, 45 !important;
-  --corner-shape: round !important;
+  --corner-shape: superellipse(1.1) !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: rgb(from #333338 r g b / 15%) !important;
+  --divider-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --divider-color-hover: #9a9996 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: rgb(from #333338 r g b / 10%) !important;
+  --dropdown-background: color-mix(in srgb, #ebebed, #333338 10%) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: rgb(from #333338 r g b / 15%) !important;
+  --dropdown-background-hover: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 15%
+  ) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
@@ -333,14 +355,14 @@ body.theme-light {
     -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 11pt !important;
+  --file-header-font-size: 11px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px 32px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
-  --flair-background: rgb(from #333338 r g b / 10%) !important;
+  --flair-background: color-mix(in srgb, #ebebed, #333338 10%) !important;
   --flair-color: #333338 !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
@@ -393,12 +415,12 @@ body.theme-light {
   --font-text-size: 16px !important;
   --font-text-theme: "Adwaita Sans", "Adwaita Sans Text" !important;
   --font-thin: 100 !important;
-  --font-ui-large: 14.96pt !important;
-  --font-ui-medium: 11pt !important;
-  --font-ui-small: 11pt !important;
-  --font-ui-smaller: 9.02pt !important;
+  --font-ui-large: 14.96px !important;
+  --font-ui-medium: 11px !important;
+  --font-ui-small: 11px !important;
+  --font-ui-smaller: 9.02px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgb(from #333338 r g b / 15%) !important;
+  --footnote-divider-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
@@ -462,22 +484,22 @@ body.theme-light {
   --heading-formatting: #858587 !important;
   --heading-spacing: 2em !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: rgb(from #333338 r g b / 15%) !important;
+  --hr-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --hr-thickness: 2px !important;
   --icon-color: #5c5c60 !important;
   --icon-color-active: rgb(138, 92, 245) !important;
   --icon-color-focused: #333338 !important;
   --icon-color-hover: #5c5c60 !important;
-  --icon-l: 16px !important;
+  --icon-l: 18px !important;
   --icon-l-stroke-width: 2px !important;
-  --icon-m: 16px !important;
+  --icon-m: 18px !important;
   --icon-m-stroke-width: 2px !important;
   --icon-opacity: 1 !important;
   --icon-opacity-active: 1 !important;
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 16px !important;
+  --icon-size: 18px !important;
   --icon-stroke: 2px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
@@ -500,7 +522,7 @@ body.theme-light {
   --inline-title-weight: 700 !important;
   --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
-  --input-corner-shape: round !important;
+  --input-corner-shape: superellipse(1.1) !important;
   --input-date-separator: #858587 !important;
   --input-font-weight: 700 !important;
   --input-height: 32px !important;
@@ -515,8 +537,8 @@ body.theme-light {
   --interactive-accent: rgb(153, 115, 247) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: rgb(from #333338 r g b / 15%) !important;
-  --interactive-normal: rgb(from #333338 r g b / 10%) !important;
+  --interactive-hover: color-mix(in srgb, #ebebed, #333338 15%) !important;
+  --interactive-normal: color-mix(in srgb, #ebebed, #333338 10%) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -562,9 +584,9 @@ body.theme-light {
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: #fff !important;
-  --menu-border-color: rgb(from #333338 r g b / 10%) !important;
+  --menu-border-color: color-mix(in srgb, #ebebed, #333338 10%) !important;
   --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
+  --menu-corner-shape: superellipse(1.1) !important;
   --menu-padding: 6px !important;
   --menu-radius: 12px !important;
   --menu-scroll-mask: linear-gradient(
@@ -576,12 +598,12 @@ body.theme-light {
     0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07),
     0 2px 6px 2px rgba(0, 0, 6, 0.03) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgb(from #333338 r g b / 15%) !important;
+  --metadata-border-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgb(from #333338 r g b / 15%) !important;
+  --metadata-divider-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -618,17 +640,17 @@ body.theme-light {
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #c0bfbc !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #deddda !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
+  --metadata-property-corner-shape: superellipse(1.1) !important;
+  --metadata-property-corner-shape-focus: superellipse(1.1) !important;
+  --metadata-property-corner-shape-hover: superellipse(1.1) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 11pt !important;
-  --metadata-sidebar-label-font-size: 11pt !important;
+  --metadata-sidebar-input-font-size: 11px !important;
+  --metadata-sidebar-label-font-size: 11px !important;
   --modal-background: #fafafb !important;
-  --modal-border-color: rgb(from #333338 r g b / 10%) !important;
+  --modal-border-color: color-mix(in srgb, #ebebed, #333338 10%) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
@@ -665,7 +687,7 @@ body.theme-light {
   --nav-item-padding: 8px 16px 8px 32px !important;
   --nav-item-parent-padding: 8px 16px 8px 32px !important;
   --nav-item-radius: 9px !important;
-  --nav-item-size: 11pt !important;
+  --nav-item-size: 11px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: #858587 !important;
@@ -688,7 +710,7 @@ body.theme-light {
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(from #333338 r g b / 15%) !important;
+  --pill-border-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --pill-border-color-hover: #deddda !important;
   --pill-border-width: 1px !important;
   --pill-color: #5c5c60 !important;
@@ -711,7 +733,7 @@ body.theme-light {
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-background: #fff !important;
-  --prompt-border-color: rgb(from #333338 r g b / 10%) !important;
+  --prompt-border-color: color-mix(in srgb, #ebebed, #333338 10%) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 64px !important;
   --prompt-max-height: 70vh !important;
@@ -758,10 +780,14 @@ body.theme-light {
   --search-icon-size: 18px !important;
   --search-result-background: #fff !important;
   --setting-group-heading-color: #333338 !important;
-  --setting-group-heading-size: 11pt !important;
+  --setting-group-heading-size: 11px !important;
   --setting-group-heading-weight: 700 !important;
   --setting-items-background: #fff !important;
-  --setting-items-border-color: rgb(from #333338 r g b / 15%) !important;
+  --setting-items-border-color: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 15%
+  ) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 0px !important;
   --setting-items-radius: 12px !important;
@@ -804,9 +830,13 @@ body.theme-light {
   --slider-track-height: 4px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #ebebed !important;
-  --status-bar-border-color: rgb(from #333338 r g b / 15%) !important;
+  --status-bar-border-color: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 15%
+  ) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 9.02pt !important;
+  --status-bar-font-size: 9.02px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 12px 0 0 0 !important;
   --status-bar-text-color: #5c5c60 !important;
@@ -828,14 +858,14 @@ body.theme-light {
   --tab-background-active: #fff !important;
   --tab-container-background: #ebebed !important;
   --tab-curve: 13px !important;
-  --tab-divider-color: rgb(from #333338 r g b / 15%) !important;
-  --tab-font-size: 11pt !important;
+  --tab-divider-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
+  --tab-font-size: 11px !important;
   --tab-max-width: 200px !important;
-  --tab-outline-color: rgb(from #333338 r g b / 15%) !important;
+  --tab-outline-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 9px !important;
   --tab-radius-active: 9px 9px 0 0 !important;
-  --tab-stacked-font-size: 11pt !important;
+  --tab-stacked-font-size: 11px !important;
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: 48px !important;
   --tab-stacked-pane-width: 700px !important;
@@ -861,10 +891,14 @@ body.theme-light {
   --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgb(from #333338 r g b / 15%) !important;
+  --table-add-button-border-color: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 15%
+  ) !important;
   --table-add-button-border-width: 0 !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(from #333338 r g b / 15%) !important;
+  --table-border-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -924,7 +958,7 @@ body.theme-light {
   --text-warning: rgb(255, 120, 0) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgb(from #333338 r g b / 15%) !important;
+  --titlebar-border-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
   --titlebar-border-width: 1px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #5c5c60 !important;
@@ -959,7 +993,7 @@ body.theme-light {
   --vault-profile-color: #333338 !important;
   --vault-profile-color-hover: #333338 !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 11pt !important;
+  --vault-profile-font-size: 11px !important;
   --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
@@ -981,6 +1015,7 @@ body.theme-light {
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
+  --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
   --banner-mobile-offset: 0px !important;
@@ -999,12 +1034,13 @@ body.theme-light {
   --cards-min-width: 160px !important;
   --cards-mobile-width: 120px !important;
   --cards-padding: 4px !important;
-  --corner-smoothing: system-ui !important;
   --density-modifier: 1 !important;
   --embed-background: #fff !important;
+  --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
   --hover-sidedock-trigger-area: 1px !important;
   --hover-sidedock-width: 320px !important;
+  --icon-size-modifier: 0px !important;
   --icon-stroke-modifier: 1 !important;
   --line-width-wide: 50rem !important;
   --media-radius: 9px !important;
@@ -1029,8 +1065,8 @@ body.theme-light {
   --tab-action-width: 32px !important;
   --tab-text-align: left !important;
   --tag-weight: 500 !important;
-  --translucent-dark-opacity: 50% !important;
-  --translucent-light-opacity: 50% !important;
+  --translucent-dark-opacity: 0% !important;
+  --translucent-light-opacity: 0% !important;
   --view-top-spacing-markdown: 0px !important;
   --divider-color-alt: rgba(0, 0, 6, 0.07) !important;
   --mono-rgb-adwaita: 0, 0, 6 !important;
@@ -1055,7 +1091,11 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
-  --background-modifier-border: rgb(from #fff r g b / 15%) !important;
+  --background-modifier-border: color-mix(
+    in srgb,
+    #2e2e32,
+    #fff 15%
+  ) !important;
   --background-modifier-border-focus: #77767b !important;
   --background-modifier-border-hover: #6b6970 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -1063,8 +1103,16 @@ body.theme-dark {
   --background-modifier-error: rgb(224, 27, 36) !important;
   --background-modifier-error-hover: rgb(224, 27, 36) !important;
   --background-modifier-error-rgb: 224, 27, 36 !important;
-  --background-modifier-form-field: rgb(from #fff r g b / 10%) !important;
-  --background-modifier-form-field-hover: rgb(from #fff r g b / 10%) !important;
+  --background-modifier-form-field: color-mix(
+    in srgb,
+    #2e2e32,
+    #fff 10%
+  ) !important;
+  --background-modifier-form-field-hover: color-mix(
+    in srgb,
+    #2e2e32,
+    #fff 10%
+  ) !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: rgb(38, 162, 105) !important;
@@ -1076,21 +1124,21 @@ body.theme-dark {
   --bases-cards-background: #1d1d20 !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
+  --bases-cards-corner-shape: superellipse(1.1) !important;
   --bases-cards-cover-background: #2e2e32 !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 12px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(from #fff r g b / 15%) !important;
+  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --bases-cards-shadow-hover: 0 0 0 1px #6b6970 !important;
-  --bases-embed-border-color: rgb(from #fff r g b / 15%) !important;
+  --bases-embed-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --bases-embed-border-radius: 9px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
   --bases-group-heading-property-color: #d2d2d2 !important;
   --bases-group-heading-property-display: block !important;
-  --bases-group-heading-property-size: 9.02pt !important;
+  --bases-group-heading-property-size: 9.02px !important;
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
@@ -1098,7 +1146,7 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(from #fff r g b / 15%) !important;
+  --bases-table-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --bases-table-cell-background-active: #1d1d20 !important;
   --bases-table-cell-background-disabled: #2e2e32 !important;
   --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
@@ -1137,12 +1185,12 @@ body.theme-dark {
   --blockquote-font-style: normal !important;
   --blur-background: color-mix(
       in srgb,
-      rgb(from #fff r g b / 10%) 65%,
+      color-mix(in srgb, #2e2e32, #fff 10%) 65%,
       transparent
     )
     linear-gradient(
-      rgb(from #fff r g b / 10%),
-      color-mix(in srgb, rgb(from #fff r g b / 10%) 65%, transparent)
+      color-mix(in srgb, #2e2e32, #fff 10%),
+      color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent)
     ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
@@ -1157,7 +1205,7 @@ body.theme-dark {
   --bold-modifier: 300 !important;
   --bold-weight: 700 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
+  --button-corner-shape: superellipse(1.1) !important;
   --button-radius: 9px !important;
   --callout-blend-mode: normal;
   --callout-border-opacity: 0.25;
@@ -1208,7 +1256,7 @@ body.theme-dark {
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 9px !important;
   --code-background: #2e2e32 !important;
-  --code-border-color: rgb(from #fff r g b / 15%) !important;
+  --code-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --code-border-width: 1px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
   --code-comment: #5c6370 !important;
@@ -1259,23 +1307,23 @@ body.theme-dark {
   --color-red-rgb: 224, 27, 36 !important;
   --color-yellow: rgb(245, 194, 17) !important;
   --color-yellow-rgb: 245, 194, 17 !important;
-  --corner-shape: round !important;
+  --corner-shape: superellipse(1.1) !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: rgb(from #fff r g b / 15%) !important;
+  --divider-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --divider-color-hover: #9a9996 !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: rgb(from #fff r g b / 10%) !important;
+  --dropdown-background: color-mix(in srgb, #2e2e32, #fff 10%) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: rgb(from #fff r g b / 15%) !important;
+  --dropdown-background-hover: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
@@ -1300,14 +1348,14 @@ body.theme-dark {
     -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --file-header-font-size: 11pt !important;
+  --file-header-font-size: 11px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
   --file-line-width: 700px !important;
   --file-margins: 32px 32px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
-  --flair-background: rgb(from #fff r g b / 10%) !important;
+  --flair-background: color-mix(in srgb, #2e2e32, #fff 10%) !important;
   --flair-color: #fff !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
@@ -1360,12 +1408,12 @@ body.theme-dark {
   --font-text-size: 16px !important;
   --font-text-theme: "Adwaita Sans", "Adwaita Sans Text" !important;
   --font-thin: 100 !important;
-  --font-ui-large: 14.96pt !important;
-  --font-ui-medium: 11pt !important;
-  --font-ui-small: 11pt !important;
-  --font-ui-smaller: 9.02pt !important;
+  --font-ui-large: 14.96px !important;
+  --font-ui-medium: 11px !important;
+  --font-ui-small: 11px !important;
+  --font-ui-smaller: 9.02px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgb(from #fff r g b / 15%) !important;
+  --footnote-divider-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
@@ -1429,22 +1477,22 @@ body.theme-dark {
   --heading-formatting: #99999b !important;
   --heading-spacing: 2em !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: rgb(from #fff r g b / 15%) !important;
+  --hr-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --hr-thickness: 2px !important;
   --icon-color: #d2d2d2 !important;
   --icon-color-active: rgb(166, 139, 249) !important;
   --icon-color-focused: #fff !important;
   --icon-color-hover: #d2d2d2 !important;
-  --icon-l: 16px !important;
+  --icon-l: 18px !important;
   --icon-l-stroke-width: 2px !important;
-  --icon-m: 16px !important;
+  --icon-m: 18px !important;
   --icon-m-stroke-width: 2px !important;
   --icon-opacity: 1 !important;
   --icon-opacity-active: 1 !important;
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 16px !important;
+  --icon-size: 18px !important;
   --icon-stroke: 2px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
@@ -1467,7 +1515,7 @@ body.theme-dark {
   --inline-title-weight: 700 !important;
   --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
-  --input-corner-shape: round !important;
+  --input-corner-shape: superellipse(1.1) !important;
   --input-date-separator: #99999b !important;
   --input-font-weight: 700 !important;
   --input-height: 32px !important;
@@ -1482,8 +1530,8 @@ body.theme-dark {
   --interactive-accent: rgb(138, 92, 245) !important;
   --interactive-accent-hover: rgb(166, 139, 249) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
-  --interactive-hover: rgb(from #fff r g b / 15%) !important;
-  --interactive-normal: rgb(from #fff r g b / 10%) !important;
+  --interactive-hover: color-mix(in srgb, #2e2e32, #fff 15%) !important;
+  --interactive-normal: color-mix(in srgb, #2e2e32, #fff 10%) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1529,9 +1577,9 @@ body.theme-dark {
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: #36363a !important;
-  --menu-border-color: rgb(from #fff r g b / 10%) !important;
+  --menu-border-color: color-mix(in srgb, #2e2e32, #fff 10%) !important;
   --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
+  --menu-corner-shape: superellipse(1.1) !important;
   --menu-padding: 6px !important;
   --menu-radius: 12px !important;
   --menu-scroll-mask: linear-gradient(
@@ -1543,12 +1591,12 @@ body.theme-dark {
     0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07),
     0 2px 6px 2px rgba(0, 0, 6, 0.03) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgb(from #fff r g b / 15%) !important;
+  --metadata-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgb(from #fff r g b / 15%) !important;
+  --metadata-divider-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1585,17 +1633,17 @@ body.theme-dark {
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #77767b !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #6b6970 !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
+  --metadata-property-corner-shape: superellipse(1.1) !important;
+  --metadata-property-corner-shape-focus: superellipse(1.1) !important;
+  --metadata-property-corner-shape-hover: superellipse(1.1) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
   --metadata-property-radius-hover: 6px !important;
-  --metadata-sidebar-input-font-size: 11pt !important;
-  --metadata-sidebar-label-font-size: 11pt !important;
+  --metadata-sidebar-input-font-size: 11px !important;
+  --metadata-sidebar-label-font-size: 11px !important;
   --modal-background: #222226 !important;
-  --modal-border-color: rgb(from #fff r g b / 10%) !important;
+  --modal-border-color: color-mix(in srgb, #2e2e32, #fff 10%) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
@@ -1632,7 +1680,7 @@ body.theme-dark {
   --nav-item-padding: 8px 16px 8px 32px !important;
   --nav-item-parent-padding: 8px 16px 8px 32px !important;
   --nav-item-radius: 9px !important;
-  --nav-item-size: 11pt !important;
+  --nav-item-size: 11px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: #99999b !important;
@@ -1646,14 +1694,14 @@ body.theme-dark {
   --page-margin: 1px auto -8px !important;
   --pdf-background: #1d1d20 !important;
   --pdf-page-background: #1d1d20 !important;
-  --pdf-shadow: 0 0 0 1px rgb(from #fff r g b / 15%) !important;
+  --pdf-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --pdf-sidebar-background: #1d1d20 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(from #fff r g b / 15%) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(from #fff r g b / 15%) !important;
+  --pill-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --pill-border-color-hover: #6b6970 !important;
   --pill-border-width: 1px !important;
   --pill-color: #d2d2d2 !important;
@@ -1676,7 +1724,7 @@ body.theme-dark {
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-background: #1d1d20 !important;
-  --prompt-border-color: rgb(from #fff r g b / 10%) !important;
+  --prompt-border-color: color-mix(in srgb, #2e2e32, #fff 10%) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 64px !important;
   --prompt-max-height: 70vh !important;
@@ -1688,12 +1736,12 @@ body.theme-dark {
   --radius-xl: 18px !important;
   --raised-background: color-mix(
       in srgb,
-      rgb(from #fff r g b / 10%) 65%,
+      color-mix(in srgb, #2e2e32, #fff 10%) 65%,
       transparent
     )
     linear-gradient(
-      rgb(from #fff r g b / 10%),
-      color-mix(in srgb, rgb(from #fff r g b / 10%) 65%, transparent)
+      color-mix(in srgb, #2e2e32, #fff 10%),
+      color-mix(in srgb, color-mix(in srgb, #2e2e32, #fff 10%) 65%, transparent)
     ) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
@@ -1724,10 +1772,14 @@ body.theme-dark {
   --search-icon-size: 18px !important;
   --search-result-background: #1d1d20 !important;
   --setting-group-heading-color: #fff !important;
-  --setting-group-heading-size: 11pt !important;
+  --setting-group-heading-size: 11px !important;
   --setting-group-heading-weight: 700 !important;
   --setting-items-background: #2e2e32 !important;
-  --setting-items-border-color: rgb(from #fff r g b / 15%) !important;
+  --setting-items-border-color: color-mix(
+    in srgb,
+    #2e2e32,
+    #fff 15%
+  ) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 0px !important;
   --setting-items-radius: 12px !important;
@@ -1770,9 +1822,9 @@ body.theme-dark {
   --slider-track-height: 4px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #2e2e32 !important;
-  --status-bar-border-color: rgb(from #fff r g b / 15%) !important;
+  --status-bar-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
-  --status-bar-font-size: 9.02pt !important;
+  --status-bar-font-size: 9.02px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 12px 0 0 0 !important;
   --status-bar-text-color: #d2d2d2 !important;
@@ -1794,14 +1846,14 @@ body.theme-dark {
   --tab-background-active: #1d1d20 !important;
   --tab-container-background: #2e2e32 !important;
   --tab-curve: 13px !important;
-  --tab-divider-color: rgb(from #fff r g b / 15%) !important;
-  --tab-font-size: 11pt !important;
+  --tab-divider-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
+  --tab-font-size: 11px !important;
   --tab-max-width: 200px !important;
-  --tab-outline-color: rgb(from #fff r g b / 15%) !important;
+  --tab-outline-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 9px !important;
   --tab-radius-active: 9px 9px 0 0 !important;
-  --tab-stacked-font-size: 11pt !important;
+  --tab-stacked-font-size: 11px !important;
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: 48px !important;
   --tab-stacked-pane-width: 700px !important;
@@ -1827,10 +1879,14 @@ body.theme-dark {
   --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgb(from #fff r g b / 15%) !important;
+  --table-add-button-border-color: color-mix(
+    in srgb,
+    #2e2e32,
+    #fff 15%
+  ) !important;
   --table-add-button-border-width: 0 !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(from #fff r g b / 15%) !important;
+  --table-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1890,7 +1946,7 @@ body.theme-dark {
   --text-warning: rgb(230, 97, 0) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgb(from #fff r g b / 15%) !important;
+  --titlebar-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --titlebar-border-width: 1px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #d2d2d2 !important;
@@ -1925,11 +1981,11 @@ body.theme-dark {
   --vault-profile-color: #fff !important;
   --vault-profile-color-hover: #fff !important;
   --vault-profile-display: flex !important;
-  --vault-profile-font-size: 11pt !important;
+  --vault-profile-font-size: 11px !important;
   --vault-profile-font-weight: 500 !important;
   --vault-profile-order: 2 !important;
   --viewer-container-height: 0 !important;
-  --workspace-background-translucent: rgb(from #2e2e32 r g b / 50%) !important;
+  --workspace-background-translucent: rgb(from #2e2e32 r g b / 0%) !important;
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
@@ -1939,6 +1995,7 @@ body.theme-dark {
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
+  --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
   --banner-mobile-offset: 0px !important;
@@ -1957,12 +2014,13 @@ body.theme-dark {
   --cards-min-width: 160px !important;
   --cards-mobile-width: 120px !important;
   --cards-padding: 4px !important;
-  --corner-smoothing: system-ui !important;
   --density-modifier: 1 !important;
   --embed-background: #2e2e32 !important;
+  --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
   --hover-sidedock-trigger-area: 1px !important;
   --hover-sidedock-width: 320px !important;
+  --icon-size-modifier: 0px !important;
   --icon-stroke-modifier: 1 !important;
   --line-width-wide: 50rem !important;
   --media-radius: 9px !important;
@@ -1993,8 +2051,8 @@ body.theme-dark {
   --tab-action-width: 32px !important;
   --tab-text-align: left !important;
   --tag-weight: 500 !important;
-  --translucent-dark-opacity: 50% !important;
-  --translucent-light-opacity: 50% !important;
+  --translucent-dark-opacity: 0% !important;
+  --translucent-light-opacity: 0% !important;
   --view-top-spacing-markdown: 0px !important;
   --divider-color-alt: rgba(0, 0, 6, 0.36) !important;
   --mono-rgb-adwaita: 255, 255, 255 !important;
@@ -2482,7 +2540,10 @@ body .markdown-rendered code {
 body .markdown-rendered pre > code {
   background-color: light-dark(rgb(243, 243, 245), rgb(46, 46, 50));
   border: 1px solid
-    light-dark(color(srgb 0.2 0.2 0.219608 / 0.15), color(srgb 1 1 1 / 0.15));
+    light-dark(
+      color(srgb 0.813333 0.813333 0.822941),
+      color(srgb 0.303333 0.303333 0.316667)
+    );
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;
@@ -2500,7 +2561,10 @@ body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   background-color: light-dark(rgb(243, 243, 245), rgb(46, 46, 50));
   border: 1px solid
-    light-dark(color(srgb 0.2 0.2 0.219608 / 0.15), color(srgb 1 1 1 / 0.15));
+    light-dark(
+      color(srgb 0.813333 0.813333 0.822941),
+      color(srgb 0.303333 0.303333 0.316667)
+    );
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;
@@ -2588,11 +2652,14 @@ body .footnote-backref {
 }
 body .site-body-left-column input.search-bar {
   background-color: light-dark(
-    color(srgb 0.2 0.2 0.219608 / 0.1),
-    color(srgb 1 1 1 / 0.1)
+    color(srgb 0.849412 0.849412 0.858431),
+    color(srgb 0.262353 0.262353 0.276471)
   );
   border: 0px solid
-    light-dark(color(srgb 0.2 0.2 0.219608 / 0.15), color(srgb 1 1 1 / 0.15));
+    light-dark(
+      color(srgb 0.813333 0.813333 0.822941),
+      color(srgb 0.303333 0.303333 0.316667)
+    );
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;
@@ -3155,12 +3222,15 @@ body .markdown-rendered td {
   text-align: start;
   vertical-align: top;
   border-color: light-dark(
-      color(srgb 0.2 0.2 0.219608 / 0.15),
-      color(srgb 1 1 1 / 0.15)
+      color(srgb 0.813333 0.813333 0.822941),
+      color(srgb 0.303333 0.303333 0.316667)
     )
     light-dark(rgb(51, 51, 56), rgb(255, 255, 255))
     light-dark(rgb(51, 51, 56), rgb(255, 255, 255))
-    light-dark(color(srgb 0.2 0.2 0.219608 / 0.15), color(srgb 1 1 1 / 0.15));
+    light-dark(
+      color(srgb 0.813333 0.813333 0.822941),
+      color(srgb 0.303333 0.303333 0.316667)
+    );
   border-style: solid;
   border-width: 1px 0px 0px 1px;
   border-top-left-radius: 9px;
@@ -3352,7 +3422,10 @@ body .metadata-container {
     "Segoe UI Symbol",
     sans-serif;
   border: 0px solid
-    light-dark(color(srgb 0.2 0.2 0.219608 / 0.15), color(srgb 1 1 1 / 0.15));
+    light-dark(
+      color(srgb 0.813333 0.813333 0.822941),
+      color(srgb 0.303333 0.303333 0.316667)
+    );
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3512,7 +3585,10 @@ body kbd {
     sans-serif;
   font-size: 12.8px;
   border: 1px solid
-    light-dark(color(srgb 0.2 0.2 0.219608 / 0.15), color(srgb 1 1 1 / 0.15));
+    light-dark(
+      color(srgb 0.813333 0.813333 0.822941),
+      color(srgb 0.303333 0.303333 0.316667)
+    );
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;
@@ -3724,16 +3800,16 @@ body .nav-view-outer .tree-item-self.mod-active {
     rgba(0, 0, 0, 0.067),
     rgba(255, 255, 255, 0.067)
   );
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 0px light-dark(rgb(51, 51, 56), rgb(255, 255, 255));
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: light-dark(rgb(51, 51, 56), rgb(255, 255, 255));
   cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
@@ -3999,7 +4075,10 @@ body .view-content {
 body figure[data-rehype-pretty-code-figure] {
   background-color: light-dark(rgb(243, 243, 245), rgb(46, 46, 50));
   border: 1px solid
-    light-dark(color(srgb 0.2 0.2 0.219608 / 0.15), color(srgb 1 1 1 / 0.15));
+    light-dark(
+      color(srgb 0.813333 0.813333 0.822941),
+      color(srgb 0.303333 0.303333 0.316667)
+    );
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;
@@ -4014,7 +4093,10 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: light-dark(rgb(51, 51, 56), rgb(255, 255, 255));
   font-family: monospace;
   border: 1px solid
-    light-dark(color(srgb 0.2 0.2 0.219608 / 0.15), color(srgb 1 1 1 / 0.15));
+    light-dark(
+      color(srgb 0.813333 0.813333 0.822941),
+      color(srgb 0.303333 0.303333 0.316667)
+    );
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;

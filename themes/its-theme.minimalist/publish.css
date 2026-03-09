@@ -1005,6 +1005,13 @@ body.theme-light {
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
+  --h1-border-color: #eef3ff !important;
+  --h2-border-color: #d0ddef62 !important;
+  --h3-border-color: #e1e9f6 !important;
+  --h4-border-color: #d2daee !important;
+  --h5-border-color: #b5c2d8 !important;
+  --h6-border-color: #8ec1e9 !important;
+  --h1-background: transparent !important;
   --tab-background: #f8fbff !important;
   --r-heading-color: #30353a !important;
   --r-heading-font:
@@ -1111,8 +1118,6 @@ body.theme-light {
   --graph-lines: #e5e9f3 !important;
   --graph-node-hover-fill: #30353a !important;
   --graph-node-hover-outline: #000000 !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #eef3ff !important;
   --h1-border-left-color: #ccd6eb !important;
   --h1-border-line-color: #ccd6eb !important;
   --h1-border-line-height: 0 !important;
@@ -1123,7 +1128,6 @@ body.theme-light {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #d0ddef62 !important;
   --h2-border-left-color: #ccd6eb !important;
   --h2-border-line-color: #ccd6eb !important;
   --h2-border-line-height: 0 !important;
@@ -1134,7 +1138,6 @@ body.theme-light {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #e1e9f6 !important;
   --h3-border-left-color: #ccd6eb !important;
   --h3-border-line-color: #ccd6eb !important;
   --h3-border-line-height: 0 !important;
@@ -1145,7 +1148,6 @@ body.theme-light {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #d2daee !important;
   --h4-border-left-color: #ccd6eb !important;
   --h4-border-line-color: #ccd6eb !important;
   --h4-border-line-height: 0 !important;
@@ -1156,7 +1158,6 @@ body.theme-light {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #b5c2d8 !important;
   --h5-border-left-color: #ccd6eb !important;
   --h5-border-line-color: #ccd6eb !important;
   --h5-border-line-height: 0 !important;
@@ -1167,7 +1168,6 @@ body.theme-light {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: #8ec1e9 !important;
   --h6-border-left-color: #ccd6eb !important;
   --h6-border-line-color: #ccd6eb !important;
   --h6-border-line-height: 0 !important;
@@ -2420,6 +2420,13 @@ body.theme-dark {
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
+  --h1-border-color: #727e93 !important;
+  --h2-border-color: #546078 !important;
+  --h3-border-color: #394151 !important;
+  --h4-border-color: #232831 !important;
+  --h5-border-color: #06080c50 !important;
+  --h6-border-color: black !important;
+  --h1-background: transparent !important;
   --tab-background: #1a1e24 !important;
   --r-heading-color: #bccad8 !important;
   --r-heading-font:
@@ -2527,8 +2534,6 @@ body.theme-dark {
   --graph-lines: #363c4950 !important;
   --graph-node-hover-fill: #bccad8 !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #727e93 !important;
   --h1-border-left-color: #252c36 !important;
   --h1-border-line-color: #252c36 !important;
   --h1-border-line-height: 0 !important;
@@ -2539,7 +2544,6 @@ body.theme-dark {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #546078 !important;
   --h2-border-left-color: #252c36 !important;
   --h2-border-line-color: #252c36 !important;
   --h2-border-line-height: 0 !important;
@@ -2550,7 +2554,6 @@ body.theme-dark {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #394151 !important;
   --h3-border-left-color: #252c36 !important;
   --h3-border-line-color: #252c36 !important;
   --h3-border-line-height: 0 !important;
@@ -2561,7 +2564,6 @@ body.theme-dark {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #232831 !important;
   --h4-border-left-color: #252c36 !important;
   --h4-border-line-color: #252c36 !important;
   --h4-border-line-height: 0 !important;
@@ -2572,7 +2574,6 @@ body.theme-dark {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #06080c50 !important;
   --h5-border-left-color: #252c36 !important;
   --h5-border-line-color: #252c36 !important;
   --h5-border-line-height: 0 !important;
@@ -2583,7 +2584,6 @@ body.theme-dark {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: black !important;
   --h6-border-left-color: #252c36 !important;
   --h6-border-line-color: #252c36 !important;
   --h6-border-line-height: 0 !important;

@@ -1068,6 +1068,7 @@ body.theme-light {
   --inline-code-background: #ebebeb !important;
   --black: #111111 !important;
   --green-light: #e4fff6 !important;
+  --hr-height: 0.15em !important;
   --file-title-color: #1f1f1f !important;
   --quote-background: #ebebeb !important;
   --underline-line-color: #00e077 !important;
@@ -1102,7 +1103,6 @@ body.theme-light {
   --grey-light: #fafafa !important;
   --grey-mid: #f5f5f5 !important;
   --hashtag-background: #ebebeb !important;
-  --hr-height: 0.15em !important;
 }
 
 body.theme-dark {
@@ -2003,6 +2003,7 @@ body.theme-dark {
   --inline-code-background: #131a16 !important;
   --black: #111111 !important;
   --green-light: #e4fff6 !important;
+  --hr-height: 0.15em !important;
   --file-title-color: #ebebeb !important;
   --quote-background: #131a16 !important;
   --underline-line-color: #00e077 !important;
@@ -2037,7 +2038,6 @@ body.theme-dark {
   --grey-light: #fafafa !important;
   --grey-mid: #f5f5f5 !important;
   --hashtag-background: #002922 !important;
-  --hr-height: 0.15em !important;
 }
 
 body {

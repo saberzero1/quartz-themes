@@ -945,6 +945,13 @@ body.theme-light {
   --he-text-on-accent-inactive: #412f2f !important;
   --fg: #c75959 !important;
   --font: "its-Draconis", "Draconis", Inter !important;
+  --h1-border-color: #bb5555 !important;
+  --h2-border-color: #a53f3f !important;
+  --h3-border-color: #862c2c !important;
+  --h4-border-color: #662828 !important;
+  --h5-border-color: #697795 !important;
+  --h6-border-color: #a4aec2 !important;
+  --h1-background: transparent !important;
   --tab-background: #fbe2c5 !important;
   --r-heading-color: #c14343 !important;
   --r-heading-font: "its-Draconis", "Draconis", Inter !important;
@@ -1044,8 +1051,6 @@ body.theme-light {
   --graph-lines: #c20a0a35 !important;
   --graph-node-hover-fill: #a35158 !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #bb5555 !important;
   --h1-border-left-color: linear-gradient(
     to left,
     #c93c3c,
@@ -1064,7 +1069,6 @@ body.theme-light {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #a53f3f !important;
   --h2-border-left-color: linear-gradient(
     to left,
     sandybrown,
@@ -1083,7 +1087,6 @@ body.theme-light {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #862c2c !important;
   --h3-border-left-color: linear-gradient(
     to left,
     #a11111,
@@ -1102,7 +1105,6 @@ body.theme-light {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #662828 !important;
   --h4-border-left-color: linear-gradient(
     to left,
     #fbb4577e,
@@ -1121,7 +1123,6 @@ body.theme-light {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #697795 !important;
   --h5-border-left-color: linear-gradient(
     to left,
     #fbb4577e,
@@ -1140,7 +1141,6 @@ body.theme-light {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: #a4aec2 !important;
   --h6-border-left-color: linear-gradient(
     to left,
     #fbb4577e,
@@ -2339,6 +2339,13 @@ body.theme-dark {
   --he-text-on-accent-inactive: #bccad8 !important;
   --fg: #cfd7dd !important;
   --font: "its-Draconis", "Draconis", Inter !important;
+  --h1-border-color: #7c2929 !important;
+  --h2-border-color: #652121 !important;
+  --h3-border-color: #471d1d !important;
+  --h4-border-color: #381919 !important;
+  --h5-border-color: #424c61 !important;
+  --h6-border-color: #2e333d !important;
+  --h1-background: transparent !important;
   --tab-background: #0b0f13 !important;
   --r-heading-color: #c14343 !important;
   --r-heading-font: "its-Draconis", "Draconis", Inter !important;
@@ -2438,8 +2445,6 @@ body.theme-dark {
   --graph-lines: #7a141466 !important;
   --graph-node-hover-fill: #c94d4d !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #7c2929 !important;
   --h1-border-left-color: linear-gradient(
     to left,
     #c93c3c,
@@ -2458,7 +2463,6 @@ body.theme-dark {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #652121 !important;
   --h2-border-left-color: linear-gradient(
     to left,
     sandybrown,
@@ -2477,7 +2481,6 @@ body.theme-dark {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #471d1d !important;
   --h3-border-left-color: linear-gradient(
     to left,
     #a11111,
@@ -2496,7 +2499,6 @@ body.theme-dark {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #381919 !important;
   --h4-border-left-color: linear-gradient(
     to left,
     #283345,
@@ -2515,7 +2517,6 @@ body.theme-dark {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #424c61 !important;
   --h5-border-left-color: linear-gradient(
     to left,
     #283345,
@@ -2534,7 +2535,6 @@ body.theme-dark {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: #2e333d !important;
   --h6-border-left-color: linear-gradient(
     to left,
     #283345,
