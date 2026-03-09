@@ -41,7 +41,7 @@
   --bases-cards-background: #ffffff !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
+  --bases-cards-corner-shape: superellipse(1.1) !important;
   --bases-cards-cover-background: #fafafa !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
@@ -115,7 +115,7 @@
   --bold-modifier: 300 !important;
   --bold-weight: 700 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
+  --button-corner-shape: superellipse(1.1) !important;
   --button-radius: calc(
     8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh *
       clamp(0, (1 - 1) * 10000 + 1, 1)
@@ -220,7 +220,7 @@
   --color-red-rgb: 254, 112, 112 !important;
   --color-yellow: rgb(224, 205, 99) !important;
   --color-yellow-rgb: 224, 205, 99 !important;
-  --corner-shape: round !important;
+  --corner-shape: superellipse(1.1) !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -425,7 +425,7 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-corner-shape: round !important;
+  --input-corner-shape: superellipse(1.1) !important;
   --input-date-separator: #ababab !important;
   --input-font-weight: 500 !important;
   --input-height: 32px !important;
@@ -489,7 +489,7 @@
   --menu-background: #f6f6f6 !important;
   --menu-border-color: #d4d4d4 !important;
   --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
+  --menu-corner-shape: superellipse(1.1) !important;
   --menu-padding: 4px !important;
   --menu-radius: 12px !important;
   --menu-scroll-mask: linear-gradient(
@@ -543,9 +543,9 @@
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #bdbdbd !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #d4d4d4 !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
+  --metadata-property-corner-shape: superellipse(1.1) !important;
+  --metadata-property-corner-shape-focus: superellipse(1.1) !important;
+  --metadata-property-corner-shape-hover: superellipse(1.1) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -909,6 +909,7 @@
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
+  --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
   --banner-mobile-offset: 0px !important;
@@ -927,9 +928,9 @@
   --cards-min-width: 160px !important;
   --cards-mobile-width: 120px !important;
   --cards-padding: 4px !important;
-  --corner-smoothing: system-ui !important;
   --density-modifier: 1 !important;
   --embed-background: #fafafa !important;
+  --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
   --hover-sidedock-trigger-area: 1px !important;
   --hover-sidedock-width: 320px !important;
@@ -937,6 +938,7 @@
   --hr-dashed-size: 1em !important;
   --hr-dashed-spacing: 0.5em !important;
   --hr-width: 100% !important;
+  --icon-size-modifier: 0px !important;
   --icon-stroke-modifier: 1 !important;
   --line-width-wide: 50rem !important;
   --media-radius: 8px !important;
@@ -1003,7 +1005,7 @@
   --bases-cards-background: #1e1e1e !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
-  --bases-cards-corner-shape: round !important;
+  --bases-cards-corner-shape: superellipse(1.1) !important;
   --bases-cards-cover-background: #242424 !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
@@ -1077,7 +1079,7 @@
   --bold-modifier: 300 !important;
   --bold-weight: 700 !important;
   --border-width: 1px !important;
-  --button-corner-shape: round !important;
+  --button-corner-shape: superellipse(1.1) !important;
   --button-radius: calc(
     8px * (1 - clamp(0, (1 - 1) * 10000 + 1, 1)) + 100vh *
       clamp(0, (1 - 1) * 10000 + 1, 1)
@@ -1182,7 +1184,7 @@
   --color-red-rgb: 217, 90, 95 !important;
   --color-yellow: rgb(196, 180, 94) !important;
   --color-yellow-rgb: 196, 180, 94 !important;
-  --corner-shape: round !important;
+  --corner-shape: superellipse(1.1) !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
   --dialog-max-height: 85vh !important;
@@ -1387,7 +1389,7 @@
   --inline-title-weight: 700 !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
-  --input-corner-shape: round !important;
+  --input-corner-shape: superellipse(1.1) !important;
   --input-date-separator: #666666 !important;
   --input-font-weight: 500 !important;
   --input-height: 32px !important;
@@ -1451,7 +1453,7 @@
   --menu-background: #262626 !important;
   --menu-border-color: #3f3f3f !important;
   --menu-border-width: 1px !important;
-  --menu-corner-shape: round !important;
+  --menu-corner-shape: superellipse(1.1) !important;
   --menu-padding: 4px !important;
   --menu-radius: 12px !important;
   --menu-scroll-mask: linear-gradient(
@@ -1505,9 +1507,9 @@
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #555555 !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f !important;
-  --metadata-property-corner-shape: round !important;
-  --metadata-property-corner-shape-focus: round !important;
-  --metadata-property-corner-shape-hover: round !important;
+  --metadata-property-corner-shape: superellipse(1.1) !important;
+  --metadata-property-corner-shape-focus: superellipse(1.1) !important;
+  --metadata-property-corner-shape-hover: superellipse(1.1) !important;
   --metadata-property-padding: 0 !important;
   --metadata-property-radius: 6px !important;
   --metadata-property-radius-focus: 6px !important;
@@ -1857,6 +1859,7 @@
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
+  --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
   --banner-mobile-offset: 0px !important;
@@ -1875,9 +1878,9 @@
   --cards-min-width: 160px !important;
   --cards-mobile-width: 120px !important;
   --cards-padding: 4px !important;
-  --corner-smoothing: system-ui !important;
   --density-modifier: 1 !important;
   --embed-background: #242424 !important;
+  --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
   --hover-sidedock-trigger-area: 1px !important;
   --hover-sidedock-width: 320px !important;
@@ -1885,6 +1888,7 @@
   --hr-dashed-size: 1em !important;
   --hr-dashed-spacing: 0.5em !important;
   --hr-width: 100% !important;
+  --icon-size-modifier: 0px !important;
   --icon-stroke-modifier: 1 !important;
   --line-width-wide: 50rem !important;
   --media-radius: 8px !important;
