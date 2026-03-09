@@ -66,14 +66,19 @@ body.theme-dark {
 	white-space: nowrap;
 }
 
+/* 列表项长文本换行 */
+.cm-s-obsidian .cm-line {
+	word-break: break-all;
+}
+
 /* 设置内部链接样式 */
-.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline {
+/* .markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline {
 	text-decoration: none;
 }
 
 .markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline::before {
-	content: "↪ ";
-}
+	content: "↪";
+} */
 
 .markdown-source-view.mod-cm6 .cm-hmd-internal-link:hover,
 .markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline:hover {
@@ -179,68 +184,42 @@ body:not(.is-mobile)
 
 /* 标题样式 */
 .cm-s-obsidian {
-	/* 图片样式（限定在 .cm-s-obsidian 内） */
-	/* 提高选择器特异性以覆盖 Obsidian 默认样式 */
-	&.markdown-source-view.mod-cm6 .cm-content > img {
-		margin: auto !important;
-		transition: transform 0.5s ease, box-shadow 0.5s ease;
+	/* 图片嵌入容器居中 */
+	.cm-content > .image-embed {
+		width: fit-content;
 		max-width: 100%;
-		max-height: 600px; /* 设置最大高度，宽度会自动等比缩放 */
-		height: auto; /* 保持宽高比 */
-		width: auto; /* 保持宽高比 */
-		object-fit: contain; /* 确保图片完整显示 */
-		&:hover {
-			transform: scale(1.005);
-			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-		}
-	}
-
-	/* 图片嵌入容器居中（如 .internal-embed.media-embed.image-embed） */
-	.internal-embed.media-embed.image-embed {
-		/* display: block; */
-		margin: auto !important;
-		/* 仅作为裁剪容器，不限制内部尺寸和效果 */
+		/* 覆盖 Obsidian 的 .cm-content > * { margin: 0 !important } */
+		margin: 0 auto !important;
 		overflow: hidden;
-		/* 与 .cm-content > img 保持一致的阴影过渡节奏 */
-		transition: box-shadow 0.5s ease;
+		justify-content: center;
 
-		/* 当内部图片悬停时，由容器显示阴影，避免被裁剪 */
-		&:has(img:hover) {
-			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		> .image-wrapper {
+			flex: 0 0 auto;
+			width: fit-content;
+			max-width: 100%;
+			margin: 0 auto;
 		}
 
-		/* 容器内图片同样保持居中和悬停效果 */
-		img {
+		> .image-wrapper > img {
 			display: block;
-			margin: auto !important;
-			max-width: 100%;
-			max-height: 600px; /* 设置最大高度，宽度会自动等比缩放 */
-			height: auto; /* 保持宽高比 */
-			width: auto; /* 保持宽高比 */
-			object-fit: contain; /* 确保图片完整显示 */
-			/* 与 .cm-content > img 保持一致的过渡设置 */
-			transition: transform 0.5s ease, box-shadow 0.5s ease;
-			&:hover {
-				transform: scale(1.005);
-			}
 		}
 	}
 
 	/* 通用 before 样式 */
 	:is(
-			h1,
-			.HyperMD-header-1,
-			h2,
-			.HyperMD-header-2,
-			h3:not(.svelte-1vwr9dd),
-			.HyperMD-header-3,
-			h4,
-			.HyperMD-header-4,
-			h5,
-			.HyperMD-header-5,
-			h6,
-			.HyperMD-header-6
-		)::before {
+		h1,
+		.HyperMD-header-1,
+		h2,
+		.HyperMD-header-2,
+		h3:not(.svelte-1vwr9dd),
+		.HyperMD-header-3,
+		h4,
+		.HyperMD-header-4,
+		h5,
+		.HyperMD-header-5,
+		h6,
+		.HyperMD-header-6
+	)::before {
 		font-size: 10px;
 		margin-left: -13px;
 		margin-right: 1px;
@@ -253,22 +232,22 @@ body:not(.is-mobile)
 
 	/* 设置标题前缀 */
 	:is(h1, .HyperMD-header-1)::before {
-		content: "H1";
+		content: "#";
 	}
 	:is(h2, .HyperMD-header-2)::before {
-		content: "H2";
+		content: "##";
 	}
 	:is(h3:not(.svelte-1vwr9dd), .HyperMD-header-3)::before {
-		content: "H3";
+		content: "###";
 	}
 	:is(h4, .HyperMD-header-4)::before {
-		content: "H4";
+		content: "####";
 	}
 	:is(h5, .HyperMD-header-5)::before {
-		content: "H5";
+		content: "#####";
 	}
 	:is(h6, .HyperMD-header-6)::before {
-		content: "H6";
+		content: "######";
 	}
 
 	.HyperMD-header {

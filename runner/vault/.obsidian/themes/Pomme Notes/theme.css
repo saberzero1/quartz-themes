@@ -1,7 +1,7 @@
 /*──────────────────────────────────────
 Pomme Notes Theme for Obsidian
-Version 2.0.5
-@paralloid, 2026-02-06
+Version 2.0.6
+@paralloid, 2026-02-13
 ───────────────────────────────────────*/
 
 /* @settings
@@ -19,12 +19,13 @@ settings:
 
 @charset "UTF-8";
 body {
-    --background-modifier-hover: rgba(var(--mono-rgb-100), 0.04);
+    /* --background-modifier-hover: rgba(var(--mono-rgb-100), 0.1); */
     --blockquote-background-color: rgba(128,128,128,0.1);
     --blockquote-border-color: hsla(calc(var(--accent-h) - 120), calc(var(--accent-s) * 0.7), var(--accent-l), 0.9);
     --bold-color: var(--text-extreme);
     --border-width: 0.5px;
     --button-radius: var(--radius-l);
+    --callout-padding: 15px 10px 0px 20px;
     --checkbox-color: var(--color-accent);
     --checklist-done-color: var(--text-faint);
     --clickable-icon-radius: var(--radius-l);
@@ -39,8 +40,8 @@ body {
     --link-decoration: none;
     --list-spacing: 0em;
     --nav-item-background-hover: none;
-    --p-spacing-empty: 0rem;
-    --p-spacing: 1.5rem;
+    --p-spacing-empty: 1.5rem;
+    --p-spacing: 1em;
     --pill-border-width: 1px !important;
     --radius-l: 32px;
     --radius-m: 18px;
@@ -188,33 +189,25 @@ body {
 
 /* SMOOTH FADE-IN FOR EMBEDDED CONTENT */
 
+.bases-cards-cover,
+.internal-embed .canvas-minimap,
 .pdf-toolbar {
     opacity: 0; 
     animation: fade-in 0.2s ease forwards;
     animation-delay: 0.2s;
 }
 
+.internal-embed img,
 .pdf-container {
     opacity: 0; 
     animation: fade-in 0.2s ease forwards;
     animation-delay: 0.1s;
 }
 
-.internal-embed img {
-    opacity: 0; 
-    animation: fade-in 0.2s ease forwards;
-    animation-delay: 0.1s;
-}
-
-.internal-embed .canvas-minimap {
-    opacity: 0;
-    animation: fade-in 0.2s ease forwards;
-    animation-delay: 0.2s;
-}
-
 @media print {
   .pdf-toolbar,
   .pdf-container,
+  .bases-cards-cover,
   .internal-embed img,
   .internal-embed .canvas-minimap {
     opacity: 1 !important;
@@ -612,7 +605,6 @@ button:not(.clickable-icon) {
     animation: fade-in 0.5s;
 }
 
-
 /* Highlights */
 
 .is-flashing {
@@ -642,9 +634,10 @@ button:not(.clickable-icon) {
     color: var(--text-extreme);
     font-size: 1.75em;
     font-weight: 600;
-    margin-top: 0px;
+    padding-top: var(--p-spacing);
+    /* margin-top: 0px;
     margin-bottom: 0.85em;
-    padding-top: 0.2rem;
+    padding-top: 0.2rem; */
 }
 
 .cm-editor h2,
@@ -654,9 +647,9 @@ button:not(.clickable-icon) {
     color: var(--text-extreme);
     font-size: 1.5em;
     font-weight: 600 ;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em;
     padding-top: 0.33em;
-    padding-bottom: 0.33em;
+    padding-bottom: 0.33em; */
     border-bottom: 1px solid var(--div-color);
 }
 
@@ -667,9 +660,9 @@ button:not(.clickable-icon) {
     color: var(--text-extreme);
     font-size: 1.25em;
     font-weight: 600;
-    margin-top: 0px;
+    /* margin-top: 0px;
     margin-bottom: 1em;
-    padding-bottom: 0.33em;
+    padding-bottom: 0.33em; */
 }
 
 .cm-editor h4,
@@ -746,11 +739,11 @@ button:not(.clickable-icon) {
 /* Paragraphs, checkboxes, and Lists */
 /* ================================= */
 
-.markdown-rendered p,
+/* .markdown-rendered p,
 .markdown-preview-view p {
     margin-top: 0px;
     margin-bottom: 1.5em;
-}
+} */
 
 .markdown-rendered ol,
 .markdown-rendered ul {
@@ -838,16 +831,14 @@ input[type="checkbox"]:checked:after {
     height: 1px;
     background-color: var(--div-color);
     padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 .markdown-rendered hr {
     border: none;
     height: 1px;
     background-color: var(--div-color);
-    margin-top: 35px;
-    margin-bottom: 10px;
+    margin-top: var(--p-spacing);
+    margin-bottom: var(--p-spacing);
 }
 
 .HyperMD-hr-bg {
@@ -970,6 +961,10 @@ body {
     border-radius: var(--radius-l) !important;
 }
 
+.bases-view {
+    padding-bottom: 45px;
+}
+
 /* ================== */
 /*  📌 Other Changes  */
 /* ================== */
@@ -1030,51 +1025,6 @@ body.is-mobile .mobile-image-viewer img{ border-radius:0 }
 .markdown-preview-view img,
 .markdown-source-view img {
     border-radius: var(--radius-s);
-}
-
-.view-content img {
-  max-width:100%;
-  cursor:zoom-in;
-}
-
-.view-content img:active {
-  cursor:zoom-out;
-}
-
-.view-content .markdown-preview-view img:active,
-.view-content .image-embed:active {
-  background:var(--background-primary);
-  cursor:zoom-out;
-  display:block;
-  z-index:200;
-  position:fixed;
-  max-height:100%;
-  max-width:100%;
-  height:100%;
-  width:100%;
-  object-fit:contain;
-  margin:0 auto;
-  text-align:center;
-  padding:0;
-  left:0;
-  right:0;
-  bottom:0;
-  animation: fade-in 0.1s ease-out;
-}
-
-.view-content .image-embed:active img {
-  top:50%;
-  transform:translateY(-50%);
-  padding:0;
-  margin:0 auto;
-  width:100%;
-  max-height:100vh;
-  object-fit:contain;
-  left:0;
-  right:0;
-  bottom:0;
-  position:absolute;
-  opacity:1
 }
 
 /* DAILY NOTE CALENDAR ADJUSTMENTS */
@@ -1318,9 +1268,17 @@ body.is-mobile .iconic-icon {
     --color-arrow: var(--color-accent)!important;
 }
 
-.nav.svelte-1vwr9dd.svelte-1vwr9dd {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
+body:not(.is-mobile) .nav.svelte-1vwr9dd.svelte-1vwr9dd {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.is-mobile .nav.svelte-1vwr9dd.svelte-1vwr9dd {
+    padding-left: 5px !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* INK */

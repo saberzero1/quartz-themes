@@ -1022,53 +1022,6 @@ h6,
   content: 'open';
 }
 
-/* Image zoom */
-.view-content img {
-  max-width: 100%;
-  cursor: zoom-in;
-}
-
-.view-content img:active {
-  cursor: zoom-out;
-}
-
-.view-content .markdown-preview-view img[referrerpolicy='no-referrer']:active,
-.view-content .image-embed:active {
-  background: var(--background-primary);
-  cursor: zoom-out;
-  display: block;
-  z-index: 200;
-  position: fixed;
-  max-height: 100%;
-  max-width: 100%;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backface-visibility: hidden;
-}
-
-.view-content .image-embed:active img {
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0;
-  margin: 0 auto;
-  width: 100%;
-  max-height: 100vh;
-  object-fit: contain;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  opacity: 1;
-  backface-visibility: hidden;
-}
-
 /* Properties */
 body {
   --metadata-label-width: 5em;
@@ -1450,6 +1403,14 @@ body:has(.metadata-menu)
   }
 }
 
+/* Task Toolbar */
+.plugin-tasks-toolbar input,
+.plugin-tasks-toolbar button {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  border: none;
+}
+
 /* fix task checkbox */
 .markdown-preview-view .task-list-item-checkbox {
   top: 3px;
@@ -1642,10 +1603,10 @@ body .another-quick-switcher__item__description {
 .float-search-modal,
 .modal.task-search-modal {
   position: absolute;
-  top: var(--header-height);
+  top: var(--header-height) !important;
   left: 2px !important;
-  min-width: 500px;
-  max-width: 570px;
+  min-width: 480px;
+  max-width: 480px;
   max-height: 96%;
   box-shadow: none;
   border-radius: 0;
@@ -1955,6 +1916,13 @@ mark {
   margin-left: 8px;
   font-size: 0.8rem;
 }
+/* hide close button */
+.search-input-clear-button {
+  display: none;
+}
+.search-input-container input:not(:placeholder-shown) ~ .input-right-decorator {
+  inset-inline-end: var(--size-4-1);
+}
 
 /* TABS */
 .workspace .mod-root .workspace-tab-header-inner-title {
@@ -1968,4 +1936,16 @@ mark {
 .workspace-split.mod-root .workspace-tab-header.is-active::before,
 .workspace-split.mod-root .workspace-tab-header.is-active::after {
   box-shadow: none !important;
+}
+
+/* VIRTUAL LINKER */
+.virtual-link.glossary-entry a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgb(var(--color-purple-rgb), 0.6);
+  text-underline-position: under;
+}
+/* Properties of the virtual link when hovered */
+.virtual-link.glossary-entry a:hover {
+  color: var(--link-color);
 }
