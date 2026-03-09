@@ -33,18 +33,18 @@
               # Additional libraries for Chromium/Electron
               udev
               # X11 libraries for headless browser automation
-              xorg.libX11
-              xorg.libXcomposite
-              xorg.libXdamage
-              xorg.libXext
-              xorg.libXfixes
-              xorg.libXrandr
-              xorg.libxcb
-              xorg.libXcursor
-              xorg.libXi
-              xorg.libXrender
-              xorg.libXtst
-              xorg.libXScrnSaver
+              libx11
+              libxcomposite
+              libxdamage
+              libxext
+              libxfixes
+              libxrandr
+              libxcb
+              libxcursor
+              libxi
+              libxrender
+              libxtst
+              libxscrnsaver
               # GTK for Electron/Chromium-based applications
               gtk3
               gtk4
