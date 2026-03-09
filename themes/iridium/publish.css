@@ -262,8 +262,8 @@ body.theme-light {
   --blur-radius-s: 6px !important;
   --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
-  --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
+  --bold-modifier: 300 !important;
+  --bold-weight: 700 !important;
   --border-width: 1px !important;
   --button-corner-shape: round !important;
   --button-radius: 5px !important;
@@ -287,7 +287,7 @@ body.theme-light {
   --callout-summary: 0, 191, 188;
   --callout-tip: 0, 191, 188;
   --callout-title-padding: 0.5em 1em;
-  --callout-title-weight: 600;
+  --callout-title-weight: 700;
   --callout-todo: 8, 109, 221;
   --callout-warning: 236, 117, 0;
   --canvas-background: #ffffff !important;
@@ -305,9 +305,13 @@ body.theme-light {
   --canvas-dot-pattern: rgb(221, 217, 232) !important;
   --caret-color: #222222 !important;
   --checkbox-border-color: rgb(138, 92, 245) !important;
-  --checkbox-border-color-hover: rgb(103, 44, 242) !important;
+  --checkbox-border-color-hover: oklch(
+    from rgb(138, 92, 245) calc(l - 0.1) c h
+  ) !important;
   --checkbox-color: rgb(138, 92, 245) !important;
-  --checkbox-color-hover: rgb(103, 44, 242) !important;
+  --checkbox-color-hover: oklch(
+    from rgb(138, 92, 245) calc(l - 0.1) c h
+  ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #ffffff !important;
   --checkbox-radius: 50% !important;
@@ -334,7 +338,9 @@ body.theme-light {
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgb(138, 92, 245) !important;
-  --collapse-icon-color-collapsed: rgb(103, 44, 242) !important;
+  --collapse-icon-color-collapsed: oklch(
+    from rgb(138, 92, 245) calc(l - 0.1) c h
+  ) !important;
   --color-accent: rgb(138, 92, 245) !important;
   --color-accent-1: rgb(153, 115, 247) !important;
   --color-accent-2: rgb(166, 139, 249) !important;
@@ -505,25 +511,25 @@ body.theme-light {
   --h2-size: 1.4em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 680 !important;
+  --h2-weight: 600 !important;
   --h3-letter-spacing: 0 !important;
   --h3-line-height: 1.5 !important;
   --h3-size: 1.3em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 660 !important;
+  --h3-weight: 600 !important;
   --h4-letter-spacing: 0 !important;
   --h4-line-height: 1.5 !important;
   --h4-size: 1.2em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 640 !important;
+  --h4-weight: 600 !important;
   --h5-letter-spacing: 0 !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.1em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 620 !important;
+  --h5-weight: 600 !important;
   --h6-letter-spacing: 0 !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
@@ -537,7 +543,7 @@ body.theme-light {
   --hr-color: rgb(0, 0, 0) !important;
   --hr-thickness: 2px !important;
   --icon-color: #222222 !important;
-  --icon-color-active: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
+  --icon-color-active: rgb(138, 92, 245) !important;
   --icon-color-focused: #222222 !important;
   --icon-color-hover: #222222 !important;
   --icon-l: 18px !important;
@@ -587,7 +593,9 @@ body.theme-light {
   --inset-end: right !important;
   --inset-start: left !important;
   --interactive-accent: rgb(138, 92, 245) !important;
-  --interactive-accent-hover: rgb(103, 44, 242) !important;
+  --interactive-accent-hover: oklch(
+    from rgb(138, 92, 245) calc(l - 0.1) c h
+  ) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: rgb(238, 236, 244) !important;
   --interactive-normal: #ffffff !important;
@@ -605,23 +613,19 @@ body.theme-light {
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
   --link-color: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
-  --link-color-hover: oklch(
-    from oklch(from rgb(138, 92, 245) 0.45 0.1 h) calc(l - 0.15) c h
-  ) !important;
+  --link-color-hover: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
   --link-external-color-hover: oklch(
-    from oklch(from rgb(138, 92, 245) 0.45 0.1 h) calc(l - 0.15) c h
+    from rgb(138, 92, 245) 0.45 0.1 h
   ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(from rgb(138, 92, 245) 0.45 0.1 h) !important;
-  --link-unresolved-decoration-color: oklch(
-    from oklch(from rgb(138, 92, 245) 0.45 0.1 h) l c h / 0.3
-  ) !important;
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -638,7 +642,9 @@ body.theme-light {
   --list-marker-color-collapsed: oklch(
     from rgb(138, 92, 245) 0.45 0.1 h
   ) !important;
-  --list-marker-color-hover: rgb(103, 44, 242) !important;
+  --list-marker-color-hover: oklch(
+    from rgb(138, 92, 245) calc(l - 0.1) c h
+  ) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
@@ -1044,7 +1050,7 @@ body.theme-light {
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
   --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
+  --traffic-lights-offset-y: 58px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #222222 !important;
   --vault-profile-color-hover: #222222 !important;
@@ -1064,20 +1070,6 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     0 0 transparent !important;
-  --h1-color: oklch(from rgb(138, 92, 245) 48% 50% calc(h + 0)) !important;
-  --h2-color: oklch(
-    from rgb(138, 92, 245) 48% 50% calc(h + 0 + (300 - 0) * 0.2)
-  ) !important;
-  --h3-color: oklch(
-    from rgb(138, 92, 245) 48% 50% calc(h + 0 + (300 - 0) * 0.4)
-  ) !important;
-  --h4-color: oklch(
-    from rgb(138, 92, 245) 48% 50% calc(h + 0 + (300 - 0) * 0.6)
-  ) !important;
-  --h5-color: oklch(
-    from rgb(138, 92, 245) 48% 50% calc(h + 0 + (300 - 0) * 0.8)
-  ) !important;
-  --h6-color: oklch(from rgb(138, 92, 245) 48% 50% calc(h + 300)) !important;
   --table-header-background-hover: rgb(238, 236, 244) !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.2) !important;
   --nn-theme-file-tag-color: #222222 !important;
@@ -1112,29 +1104,28 @@ body.theme-light {
   --i-bullet-color-collapsed: oklch(
     from rgb(138, 92, 245) 0.45 0.1 h
   ) !important;
-  --i-bullet-color-hover: rgb(103, 44, 242) !important;
+  --i-bullet-color-hover: oklch(
+    from rgb(138, 92, 245) calc(l - 0.1) c h
+  ) !important;
   --i-card-layout-border: rgb(205, 198, 221) !important;
   --i-card-radius: 8px !important;
+  --i-card-radius-macos: 10px !important;
   --i-dk-custom-layout-s: 12% !important;
   --i-dk-folder-bg-accent: rgb(138, 92, 245) !important;
   --i-dk-folder-name-accent: rgb(138, 92, 245) !important;
   --i-dk-h1-h: 0 !important;
   --i-dk-h6-h: 300 !important;
   --i-dk-heading-accent: rgb(138, 92, 245) !important;
+  --i-dk-heading-highlighted-padding: 0 !important;
   --i-dk-layout-border-l: 8% !important;
   --i-dk-layout-l: 8% !important;
   --i-editor-border: rgb(0, 0, 0) !important;
   --i-editor-border-hover: hsl(
     from hsl(258 25% calc(100% - 1 * 14%)) h s calc(l - 5 * 1)
   ) !important;
-  --i-h1-line-height: 1.5 !important;
   --i-h1-size: 1.5em !important;
-  --i-h1-weight: 600 !important;
-  --i-h2-line-height: 1.5 !important;
   --i-h2-size: 1.4em !important;
-  --i-h3-line-height: 1.5 !important;
   --i-h3-size: 1.3em !important;
-  --i-h4-line-height: 1.5 !important;
   --i-h4-size: 1.2em !important;
   --i-h5-size: 1.1em !important;
   --i-h6-size: 1em !important;
@@ -1146,13 +1137,19 @@ body.theme-light {
   --i-layout-border-color: rgb(199, 191, 217) !important;
   --i-layout-color: rgb(221, 217, 232) !important;
   --i-link-bg-hover: rgb(238, 236, 244) !important;
-  --i-link-decoration-style: solid !important;
+  --i-link-underline-color: oklch(
+    from oklch(from rgb(138, 92, 245) 0.45 0.1 h) l c h / 0.25
+  ) !important;
+  --i-link-underline-offset: 0.1em !important;
+  --i-link-underline-opacity-multiplier: 1 !important;
+  --i-link-underline-style: solid !important;
   --i-lt-custom-layout-s: 25% !important;
   --i-lt-folder-bg-accent: rgb(138, 92, 245) !important;
   --i-lt-folder-name-accent: rgb(138, 92, 245) !important;
   --i-lt-h1-h: 0 !important;
   --i-lt-h6-h: 300 !important;
   --i-lt-heading-accent: rgb(138, 92, 245) !important;
+  --i-lt-heading-highlighted-padding: 0 !important;
   --i-lt-layout-border-l: 8% !important;
   --i-lt-layout-l: 12% !important;
   --i-pattern-color: hsl(from rgb(247, 245, 249) h s 97%) !important;
@@ -1167,6 +1164,7 @@ body.theme-light {
   --i-scrollbar-color-active: rgb(205, 198, 221) !important;
   --i-scrollbar-thumb-size: 4px !important;
   --i-scrollbar-track-size: 9px !important;
+  --i-slider-thumb-shadow: 0 0 0 5px rgb(115, 96, 159) !important;
   --i-spacing-below-headings: 0.3rem !important;
   --i-translucent-floating-nav-opacity: 92% !important;
   --nn-theme-file-tag-border-radius: 4px !important;
@@ -1287,8 +1285,8 @@ body.theme-dark {
   --blur-radius-s: 6px !important;
   --blur-s: blur(6px) saturate(1.5) brightness(1.15) !important;
   --blur-saturation: 1.5 !important;
-  --bold-modifier: 200 !important;
-  --bold-weight: 600 !important;
+  --bold-modifier: 300 !important;
+  --bold-weight: 700 !important;
   --border-width: 1px !important;
   --button-corner-shape: round !important;
   --button-radius: 5px !important;
@@ -1312,7 +1310,7 @@ body.theme-dark {
   --callout-summary: 83, 223, 221;
   --callout-tip: 83, 223, 221;
   --callout-title-padding: 0.5em 1em;
-  --callout-title-weight: 600;
+  --callout-title-weight: 700;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
   --canvas-background: rgb(29, 27, 34) !important;
@@ -1330,9 +1328,13 @@ body.theme-dark {
   --canvas-dot-pattern: rgb(51, 47, 60) !important;
   --caret-color: rgb(217, 217, 217) !important;
   --checkbox-border-color: rgb(138, 92, 245) !important;
-  --checkbox-border-color-hover: rgb(172, 140, 248) !important;
+  --checkbox-border-color-hover: oklch(
+    from rgb(138, 92, 245) calc(l + 0.1) c h
+  ) !important;
   --checkbox-color: rgb(138, 92, 245) !important;
-  --checkbox-color-hover: rgb(172, 140, 248) !important;
+  --checkbox-color-hover: oklch(
+    from rgb(138, 92, 245) calc(l + 0.1) c h
+  ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: rgb(29, 27, 34) !important;
   --checkbox-radius: 50% !important;
@@ -1359,7 +1361,9 @@ body.theme-dark {
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgb(138, 92, 245) !important;
-  --collapse-icon-color-collapsed: rgb(172, 140, 248) !important;
+  --collapse-icon-color-collapsed: oklch(
+    from rgb(138, 92, 245) calc(l + 0.1) c h
+  ) !important;
   --color-accent: rgb(138, 92, 245) !important;
   --color-accent-1: rgb(166, 139, 249) !important;
   --color-accent-2: rgb(197, 182, 252) !important;
@@ -1530,25 +1534,25 @@ body.theme-dark {
   --h2-size: 1.4em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 680 !important;
+  --h2-weight: 600 !important;
   --h3-letter-spacing: 0 !important;
   --h3-line-height: 1.5 !important;
   --h3-size: 1.3em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 660 !important;
+  --h3-weight: 600 !important;
   --h4-letter-spacing: 0 !important;
   --h4-line-height: 1.5 !important;
   --h4-size: 1.2em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 640 !important;
+  --h4-weight: 600 !important;
   --h5-letter-spacing: 0 !important;
   --h5-line-height: 1.5 !important;
   --h5-size: 1.1em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
-  --h5-weight: 620 !important;
+  --h5-weight: 600 !important;
   --h6-letter-spacing: 0 !important;
   --h6-line-height: 1.5 !important;
   --h6-size: 1em !important;
@@ -1562,7 +1566,7 @@ body.theme-dark {
   --hr-color: rgb(0, 0, 0) !important;
   --hr-thickness: 2px !important;
   --icon-color: rgb(217, 217, 217) !important;
-  --icon-color-active: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
+  --icon-color-active: rgb(138, 92, 245) !important;
   --icon-color-focused: rgb(217, 217, 217) !important;
   --icon-color-hover: rgb(217, 217, 217) !important;
   --icon-l: 18px !important;
@@ -1612,7 +1616,9 @@ body.theme-dark {
   --inset-end: right !important;
   --inset-start: left !important;
   --interactive-accent: rgb(138, 92, 245) !important;
-  --interactive-accent-hover: rgb(172, 140, 248) !important;
+  --interactive-accent-hover: oklch(
+    from rgb(138, 92, 245) calc(l + 0.1) c h
+  ) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: rgb(49, 45, 57) !important;
   --interactive-normal: rgb(29, 27, 34) !important;
@@ -1630,23 +1636,19 @@ body.theme-dark {
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
   --link-color: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
-  --link-color-hover: oklch(
-    from oklch(from rgb(138, 92, 245) 0.8 0.05 h) calc(l + 0.15) c h
-  ) !important;
+  --link-color-hover: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
   --link-external-color-hover: oklch(
-    from oklch(from rgb(138, 92, 245) 0.8 0.05 h) calc(l + 0.15) c h
+    from rgb(138, 92, 245) 0.8 0.05 h
   ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(from rgb(138, 92, 245) 0.8 0.05 h) !important;
-  --link-unresolved-decoration-color: oklch(
-    from oklch(from rgb(138, 92, 245) 0.8 0.05 h) l c h / 0.3
-  ) !important;
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1663,7 +1665,9 @@ body.theme-dark {
   --list-marker-color-collapsed: oklch(
     from rgb(138, 92, 245) 0.8 0.05 h
   ) !important;
-  --list-marker-color-hover: rgb(172, 140, 248) !important;
+  --list-marker-color-hover: oklch(
+    from rgb(138, 92, 245) calc(l + 0.1) c h
+  ) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
@@ -2029,7 +2033,7 @@ body.theme-dark {
   --text-normal: rgb(217, 217, 217) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(138, 92, 245, 0.3) !important;
+  --text-selection: rgba(138, 92, 245, 0.33) !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
   --titlebar-background: rgb(32, 29, 37) !important;
@@ -2064,7 +2068,7 @@ body.theme-dark {
   --touch-size-xs: 30px !important;
   --touch-size-xxs: 24px !important;
   --traffic-lights-offset-x: 40px !important;
-  --traffic-lights-offset-y: 40px !important;
+  --traffic-lights-offset-y: 58px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: rgb(217, 217, 217) !important;
   --vault-profile-color-hover: rgb(217, 217, 217) !important;
@@ -2077,20 +2081,6 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --h1-color: oklch(from rgb(138, 92, 245) 80% 20% calc(h + 0)) !important;
-  --h2-color: oklch(
-    from rgb(138, 92, 245) 80% 20% calc(h + 0 + (300 - 0) * 0.2)
-  ) !important;
-  --h3-color: oklch(
-    from rgb(138, 92, 245) 80% 20% calc(h + 0 + (300 - 0) * 0.4)
-  ) !important;
-  --h4-color: oklch(
-    from rgb(138, 92, 245) 80% 20% calc(h + 0 + (300 - 0) * 0.6)
-  ) !important;
-  --h5-color: oklch(
-    from rgb(138, 92, 245) 80% 20% calc(h + 0 + (300 - 0) * 0.8)
-  ) !important;
-  --h6-color: oklch(from rgb(138, 92, 245) 80% 20% calc(h + 300)) !important;
   --table-header-background-hover: rgb(39, 36, 46) !important;
   --nn-theme-file-tag-bg: rgba(138, 92, 245, 0.25) !important;
   --nn-theme-file-tag-color: rgb(217, 217, 217) !important;
@@ -2125,9 +2115,12 @@ body.theme-dark {
   --i-bullet-color-collapsed: oklch(
     from rgb(138, 92, 245) 0.8 0.05 h
   ) !important;
-  --i-bullet-color-hover: rgb(172, 140, 248) !important;
+  --i-bullet-color-hover: oklch(
+    from rgb(138, 92, 245) calc(l + 0.1) c h
+  ) !important;
   --i-card-layout-border: rgb(58, 54, 69) !important;
   --i-card-radius: 8px !important;
+  --i-card-radius-macos: 10px !important;
   --i-dk-border-l: 11% !important;
   --i-dk-custom-layout-s: 12% !important;
   --i-dk-folder-bg-accent: rgb(138, 92, 245) !important;
@@ -2135,6 +2128,7 @@ body.theme-dark {
   --i-dk-h1-h: 0 !important;
   --i-dk-h6-h: 300 !important;
   --i-dk-heading-accent: rgb(138, 92, 245) !important;
+  --i-dk-heading-highlighted-padding: 0 !important;
   --i-dk-l: 12% !important;
   --i-dk-l-multiplier: 1 !important;
   --i-dk-layout-border-l: 8% !important;
@@ -2146,14 +2140,9 @@ body.theme-dark {
   --i-editor-border-hover: hsl(
     from hsl(258 12% calc(12% + 1 * 11%)) h s calc(l + 4 * 1)
   ) !important;
-  --i-h1-line-height: 1.5 !important;
   --i-h1-size: 1.5em !important;
-  --i-h1-weight: 600 !important;
-  --i-h2-line-height: 1.5 !important;
   --i-h2-size: 1.4em !important;
-  --i-h3-line-height: 1.5 !important;
   --i-h3-size: 1.3em !important;
-  --i-h4-line-height: 1.5 !important;
   --i-h4-size: 1.2em !important;
   --i-h5-size: 1.1em !important;
   --i-h6-size: 1em !important;
@@ -2165,13 +2154,19 @@ body.theme-dark {
   --i-layout-border-color: rgb(68, 63, 80) !important;
   --i-layout-color: rgb(49, 45, 57) !important;
   --i-link-bg-hover: rgb(49, 45, 57) !important;
-  --i-link-decoration-style: solid !important;
+  --i-link-underline-color: oklch(
+    from oklch(from rgb(138, 92, 245) 0.8 0.05 h) l c h / 0.35
+  ) !important;
+  --i-link-underline-offset: 0.1em !important;
+  --i-link-underline-opacity-multiplier: 1 !important;
+  --i-link-underline-style: solid !important;
   --i-lt-custom-layout-s: 25% !important;
   --i-lt-folder-bg-accent: rgb(138, 92, 245) !important;
   --i-lt-folder-name-accent: rgb(138, 92, 245) !important;
   --i-lt-h1-h: 0 !important;
   --i-lt-h6-h: 300 !important;
   --i-lt-heading-accent: rgb(138, 92, 245) !important;
+  --i-lt-heading-highlighted-padding: 0 !important;
   --i-lt-layout-border-l: 8% !important;
   --i-lt-layout-l: 12% !important;
   --i-pattern-color: hsl(from rgb(34, 31, 40) h s 15%) !important;
@@ -2186,6 +2181,7 @@ body.theme-dark {
   --i-scrollbar-color-active: rgb(73, 67, 86) !important;
   --i-scrollbar-thumb-size: 4px !important;
   --i-scrollbar-track-size: 9px !important;
+  --i-slider-thumb-shadow: 0 0 0 5px rgb(127, 118, 147) !important;
   --i-spacing-below-headings: 0.3rem !important;
   --i-translucent-floating-nav-opacity: 92% !important;
   --nn-theme-file-tag-border-radius: 4px !important;
@@ -2232,10 +2228,10 @@ body .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: oklch(80% 0.05 292.488deg) none 0px;
-  text-decoration: underline oklch(80% 0.05 292.488deg);
+  text-decoration: underline oklch(80% 0.05 292.488deg / 0.35);
   text-decoration-color: light-dark(
-    oklch(45% 0.1 292.488deg),
-    oklch(80% 0.05 292.488deg)
+    oklch(45% 0.1 292.488deg / 0.25),
+    oklch(80% 0.05 292.488deg / 0.35)
   );
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2263,10 +2259,10 @@ body .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: oklch(80% 0.05 292.488deg) none 0px;
-  text-decoration: underline oklch(80% 0.05 292.488deg);
+  text-decoration: underline oklch(80% 0.05 292.488deg / 0.35);
   text-decoration-color: light-dark(
-    oklch(45% 0.1 292.488deg),
-    oklch(80% 0.05 292.488deg)
+    oklch(45% 0.1 292.488deg / 0.25),
+    oklch(80% 0.05 292.488deg / 0.35)
   );
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2294,10 +2290,10 @@ body .markdown-rendered a.internal-link.is-unresolved {
     sans-serif;
   font-weight: 400;
   outline: oklch(80% 0.05 292.488deg) none 0px;
-  text-decoration: underline oklch(80% 0.05 292.488deg / 0.3);
+  text-decoration: oklch(80% 0.05 292.488deg);
   text-decoration-color: light-dark(
-    oklch(45% 0.1 292.488deg / 0.3),
-    oklch(80% 0.05 292.488deg / 0.3)
+    oklch(45% 0.1 292.488deg),
+    oklch(80% 0.05 292.488deg)
   );
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2365,7 +2361,7 @@ body strong {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   outline: rgb(217, 217, 217) none 0px;
   text-decoration: rgb(217, 217, 217);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
@@ -2393,7 +2389,7 @@ body b {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   outline: rgb(217, 217, 217) none 0px;
   text-decoration: rgb(217, 217, 217);
   text-decoration-color: light-dark(rgb(34, 34, 34), rgb(217, 217, 217));
@@ -3033,7 +3029,7 @@ body .callout[data-callout="note"] > .callout-title {
   padding: 8px 16px;
 }
 body .callout > .callout-title > .callout-title-inner {
-  font-weight: 600;
+  font-weight: 700;
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);

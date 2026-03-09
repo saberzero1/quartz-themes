@@ -262,7 +262,7 @@
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
-  --file-line-width: 700px !important;
+  --file-line-width: 64ch !important;
   --file-margins: 32px 32px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
@@ -909,8 +909,6 @@
   --shadow-4: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
   --callout-note: #d97756;
   --background-primary-rgb: 238, 236, 226 !important;
-  --callout-opacity: 0.12;
-  --heading-opacity: 0.2 !important;
   --background-secondary-rgb: 230, 228, 218 !important;
   --text-normal-rgb: 61, 46, 26 !important;
   --primary-color: #d97756 !important;
@@ -923,7 +921,6 @@
   --weight-normal: 400 !important;
   --weight-semibold: 600 !important;
   --scrollbar-thumb: rgba(217, 119, 86, 0.35) !important;
-  --active-bg-opacity: 0.2 !important;
   --border-heavy: 3px !important;
   --border-thick: 2px !important;
   --border-thin: 1px !important;
@@ -958,14 +955,8 @@
   --editor-max-width: 64ch !important;
   --emphasis-color: #ae4e36 !important;
   --emphasis-color-light: #d97756 !important;
-  --folder-opacity: 0.15 !important;
-  --folder-opacity-dark: 0.12 !important;
-  --folder-text-lightness-dark: 70% !important;
-  --folder-text-lightness-light: 25% !important;
-  --folder-text-multiplier: 0.85 !important;
   --glass-border: rgba(255, 255, 255, 0.2) !important;
   --heading-bg-opacity: 0.2 !important;
-  --heading-opacity-dark: 0.18 !important;
   --heading-pad-x: 0.5em !important;
   --heading-pad-y: 0.2em !important;
   --heading-primary: #d97756 !important;
@@ -1039,21 +1030,24 @@
   --tab-bg-inactive: rgba(245, 239, 224, 0.15) !important;
   --tab-bg-inactive-hover: rgba(245, 239, 224, 0.25) !important;
   --theme-folder-opacity: 0.12 !important;
-  --theme-text-multiplier: 0.85 !important;
   --transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
+  --transition-callout-link:
+    transform 0.18s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.18s,
+    color 0.18s !important;
+  --transition-depth:
+    box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.2),
+    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
   --transition-ui: 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
   --whimsy-fast: 0.25s !important;
-  --whimsy-lift: translateY(-2px) !important;
   --whimsy-micro: 0.15s !important;
   --whimsy-normal: 0.35s !important;
-  --whimsy-nudge: translateX(3px) !important;
   --whimsy-scale-emphasis: 1.1 !important;
   --whimsy-scale-normal: 1.05 !important;
   --whimsy-scale-pop: 1.15 !important;
   --whimsy-scale-subtle: 1.02 !important;
   --whimsy-slow: 0.5s !important;
   --whimsy-stagger-base: 0.03s !important;
-  --whimsy-tilt: rotate(2deg) !important;
   --highlight-bg-rgb: 232, 200, 154 !important;
 
   --quartz-icon-color: currentColor;
@@ -1314,7 +1308,7 @@
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
-  --file-line-width: 700px !important;
+  --file-line-width: 64ch !important;
   --file-margins: 32px 32px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
@@ -1946,8 +1940,6 @@
   --shadow-4: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
   --callout-note: #f2a882;
   --background-primary-rgb: 40, 37, 32 !important;
-  --callout-opacity: 0.12;
-  --heading-opacity: 0.2 !important;
   --background-secondary-rgb: 50, 48, 42 !important;
   --text-normal-rgb: 232, 220, 198 !important;
   --primary-color: #f0916f !important;
@@ -1960,7 +1952,6 @@
   --weight-normal: 400 !important;
   --weight-semibold: 600 !important;
   --scrollbar-thumb: rgba(240, 145, 111, 0.35) !important;
-  --active-bg-opacity: 0.2 !important;
   --border-heavy: 3px !important;
   --border-thick: 2px !important;
   --border-thin: 1px !important;
@@ -1995,14 +1986,8 @@
   --editor-max-width: 64ch !important;
   --emphasis-color: #e27a5a !important;
   --emphasis-color-light: #f2a882 !important;
-  --folder-opacity: 0.15 !important;
-  --folder-opacity-dark: 0.12 !important;
-  --folder-text-lightness-dark: 70% !important;
-  --folder-text-lightness-light: 25% !important;
-  --folder-text-multiplier: 0.85 !important;
   --glass-border: rgba(255, 255, 255, 0.2) !important;
   --heading-bg-opacity: 0.2 !important;
-  --heading-opacity-dark: 0.18 !important;
   --heading-pad-x: 0.5em !important;
   --heading-pad-y: 0.2em !important;
   --heading-primary: #f2a882 !important;
@@ -2077,21 +2062,24 @@
   --tab-bg-inactive: rgba(40, 37, 32, 0.15) !important;
   --tab-bg-inactive-hover: rgba(40, 37, 32, 0.25) !important;
   --theme-folder-opacity: 0.12 !important;
-  --theme-text-multiplier: 0.85 !important;
   --transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
+  --transition-callout-link:
+    transform 0.18s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.18s,
+    color 0.18s !important;
+  --transition-depth:
+    box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.2),
+    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
   --transition-ui: 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
   --whimsy-fast: 0.25s !important;
-  --whimsy-lift: translateY(-2px) !important;
   --whimsy-micro: 0.15s !important;
   --whimsy-normal: 0.35s !important;
-  --whimsy-nudge: translateX(3px) !important;
   --whimsy-scale-emphasis: 1.1 !important;
   --whimsy-scale-normal: 1.05 !important;
   --whimsy-scale-pop: 1.15 !important;
   --whimsy-scale-subtle: 1.02 !important;
   --whimsy-slow: 0.5s !important;
   --whimsy-stagger-base: 0.03s !important;
-  --whimsy-tilt: rotate(2deg) !important;
 
   --quartz-icon-color: currentColor;
 }
@@ -4348,11 +4336,8 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.067),
-      rgba(255, 255, 255, 0.067)
-    );
-    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -4361,7 +4346,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    color: light-dark(rgb(61, 46, 26), rgb(232, 220, 198));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
