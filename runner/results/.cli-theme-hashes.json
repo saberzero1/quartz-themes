@@ -1,173 +1,481 @@
 {
-  "80s Neon": { "_default": "81f9516af8dff9ac05c47d8675f1e91d" },
-  "Abate": { "_default": "6069315e70ed3353222ee52c82261e1d" },
-  "Abecedarium": { "_default": "c88db9dbcd43046250ea8a702230c9bc" },
-  "AbsoluteGruv": { "_default": "b10142bdb12cbee12aff4791ee67b91b" },
-  "Abyssal": { "_default": "2a3279f06bb457c9a95f23db86c2a7c1" },
-  "Adrenaline": { "_default": "907352d701de2995d25d3dc5d768629e" },
-  "Adwaita": { "_default": "f67303cb24844c04b487b14cb8298207" },
-  "Agate": { "_default": "acf3e10a8ff3faf4bd62bfb8629cffe8" },
-  "aged whisky": { "_default": "efd5ed4dabaf50346fd94f5db923698a" },
-  "Al Dente": { "_default": "b3b3d8f4b959eb269cb443b672c1e233" },
-  "Allium": { "_default": "6b8f9886862b96bd192e990a9e96462d" },
-  "AMOLED Serenity": { "_default": "8d35ccc062e5e815c234408c5a89eb1c" },
-  "Antique Flowers": { "_default": "23ee05adbc53b8618d2a0e3ad2042c85" },
-  "AnuPpuccin": { "_default": "80f294555154830aa92fd0358adeac2f" },
-  "Apatheia": { "_default": "7b99d7b860314e4a2f2f7b3ac446f29c" },
-  "Apex": { "_default": "e69c014f0f7a8c522abeeb35f61f1cef" },
-  "Arcane": { "_default": "6b929a6198d4cc12eec3f3d2e7e2f3e5" },
-  "Arzaba": { "_default": "bfd153591c42edbb4691f0bf4030c172" },
-  "Atom": { "_default": "d06fb7ec4340b38af7f3d0e463c1cd9c" },
-  "Atomus": { "_default": "da66872b573b027978aacfde2b65ea14" },
-  "Auger": { "_default": "01a97034321591a85b391b5327540e85" },
-  "Aura": { "_default": "d713a10d9056140627813a69c2224b63" },
-  "Aura Dark": { "_default": "602b312a1bdbfa591a86620d5fd16bf2" },
-  "Aurora": { "_default": "3d81aa6c02fdd4580d86f9fe9e3d40c6" },
-  "Aurora-Twilight": { "_default": "8a0d2b54804ffac46bd5aeb23cbd458f" },
-  "Autotape": { "_default": "f164e0ae8c268f0dec66cf30d36d8833" },
-  "Avatar": { "_default": "0ebbb9df5fa7ae9871b5b010f9eae123" },
-  "Ayu Light & Mirage": { "_default": "8404dc14c8b31ce6fabf05502f370565" },
-  "Ayu Mirage": { "_default": "3cbce13ed2cd82f984031934374c539a" },
-  "Azure": { "_default": "59d48dfe294f06c9546aa1f42e3e8988" },
-  "Base16 Default Dark": { "_default": "a8557545dbc85a20d5d5b3fcd265d1e2" },
-  "Base2Tone": { "_default": "2b628ec67c5c389dd5e2b32b81ac494f" },
-  "Baseline": { "_default": "8f194b1c558344e8768d782d1934c720" },
-  "Behave dark": { "_default": "e88714c68ea106ab3bbe58a889e75b97" },
-  "Big & Bold": { "_default": "fc6db99cc4896431cd4726fc89e21499" },
-  "Black": { "_default": "f3788863bca64de32071f12992bb4dc2" },
-  "Blackbird": { "_default": "045030f2da2cb006712349f826702c95" },
-  "Blood Rush": { "_default": "6d3a38f0e843f7fb04dc00e38dad8c7e" },
-  "Blossom": { "_default": "9f5497d487a7a7483f977c118227e991" },
-  "Blue Topaz": { "_default": "f52e0600dba737f2404cf6e234dcff5e" },
-  "Blur": { "_default": "42e558ca3b0da152237153b118988157" },
-  "Bolt": { "_default": "36fe9eec3068cc51b88704e504af44e6" },
-  "Border": { "_default": "4f080f3bad2215fd100cf91ee9e97789" },
-  "Borealis": { "_default": "fcd8cfea20b0adb3f7c0bb3fcd722d58" },
-  "Bossidian": { "_default": "8de4ece7125430f5f1a56c9485b97691" },
-  "Brainhack": { "_default": "6f262c37606ed45d3e7de671402a76f5" },
-  "Brutalism": { "_default": "7fe170f6b2180956d5555d3c974fd378" },
-  "Brutalist": { "_default": "afb13a6d011ac3d6d685f762bb2ad6a5" },
-  "Buena Vista": { "_default": "b25cccfbc3492ff31c37930b7264dcd0" },
-  "Camena": { "_default": "31150ce3d8a9f5f061a619956ec8f738" },
-  "Carbon": { "_default": "e84727c5d0f4765e879301ed6b650158" },
-  "Cardstock": { "_default": "e86d3bf645ce694955a531db6ee9ebef" },
+  "80s Neon": {
+    "_default": "81f9516af8dff9ac05c47d8675f1e91d"
+  },
+  "Abate": {
+    "_default": "6069315e70ed3353222ee52c82261e1d"
+  },
+  "Abecedarium": {
+    "_default": "c88db9dbcd43046250ea8a702230c9bc"
+  },
+  "AbsoluteGruv": {
+    "_default": "b10142bdb12cbee12aff4791ee67b91b"
+  },
+  "Abyssal": {
+    "_default": "2a3279f06bb457c9a95f23db86c2a7c1"
+  },
+  "Adrenaline": {
+    "_default": "907352d701de2995d25d3dc5d768629e"
+  },
+  "Adwaita": {
+    "_default": "f67303cb24844c04b487b14cb8298207"
+  },
+  "Agate": {
+    "_default": "acf3e10a8ff3faf4bd62bfb8629cffe8"
+  },
+  "aged whisky": {
+    "_default": "efd5ed4dabaf50346fd94f5db923698a"
+  },
+  "Al Dente": {
+    "_default": "b3b3d8f4b959eb269cb443b672c1e233"
+  },
+  "Allium": {
+    "_default": "6b8f9886862b96bd192e990a9e96462d"
+  },
+  "AMOLED Serenity": {
+    "_default": "8d35ccc062e5e815c234408c5a89eb1c"
+  },
+  "Antique Flowers": {
+    "_default": "23ee05adbc53b8618d2a0e3ad2042c85"
+  },
+  "AnuPpuccin": {
+    "_default": "80f294555154830aa92fd0358adeac2f"
+  },
+  "Apatheia": {
+    "_default": "7b99d7b860314e4a2f2f7b3ac446f29c"
+  },
+  "Apex": {
+    "_default": "e69c014f0f7a8c522abeeb35f61f1cef"
+  },
+  "Arcane": {
+    "_default": "6b929a6198d4cc12eec3f3d2e7e2f3e5"
+  },
+  "Arzaba": {
+    "_default": "bfd153591c42edbb4691f0bf4030c172"
+  },
+  "Atom": {
+    "_default": "d06fb7ec4340b38af7f3d0e463c1cd9c"
+  },
+  "Atomus": {
+    "_default": "da66872b573b027978aacfde2b65ea14"
+  },
+  "Auger": {
+    "_default": "4c0dd585be2519015eb469fdd56d3b67"
+  },
+  "Aura": {
+    "_default": "d713a10d9056140627813a69c2224b63"
+  },
+  "Aura Dark": {
+    "_default": "602b312a1bdbfa591a86620d5fd16bf2"
+  },
+  "Aurora": {
+    "_default": "3d81aa6c02fdd4580d86f9fe9e3d40c6"
+  },
+  "Aurora-Twilight": {
+    "_default": "8a0d2b54804ffac46bd5aeb23cbd458f"
+  },
+  "Autotape": {
+    "_default": "f164e0ae8c268f0dec66cf30d36d8833"
+  },
+  "Avatar": {
+    "_default": "0ebbb9df5fa7ae9871b5b010f9eae123"
+  },
+  "Ayu Light & Mirage": {
+    "_default": "8404dc14c8b31ce6fabf05502f370565"
+  },
+  "Ayu Mirage": {
+    "_default": "3cbce13ed2cd82f984031934374c539a"
+  },
+  "Azure": {
+    "_default": "59d48dfe294f06c9546aa1f42e3e8988"
+  },
+  "Base16 Default Dark": {
+    "_default": "1a480215ca2cf83a66bcf0ea64fa065f"
+  },
+  "Base2Tone": {
+    "_default": "2b628ec67c5c389dd5e2b32b81ac494f"
+  },
+  "Baseline": {
+    "_default": "8a34447fa8cf2c7fa673eef1e86651b2"
+  },
+  "Behave dark": {
+    "_default": "e88714c68ea106ab3bbe58a889e75b97"
+  },
+  "Big & Bold": {
+    "_default": "fc6db99cc4896431cd4726fc89e21499"
+  },
+  "Black": {
+    "_default": "f3788863bca64de32071f12992bb4dc2"
+  },
+  "Blackbird": {
+    "_default": "045030f2da2cb006712349f826702c95"
+  },
+  "Blood Rush": {
+    "_default": "6d3a38f0e843f7fb04dc00e38dad8c7e"
+  },
+  "Blossom": {
+    "_default": "9f5497d487a7a7483f977c118227e991"
+  },
+  "Blue Topaz": {
+    "_default": "f52e0600dba737f2404cf6e234dcff5e"
+  },
+  "Blur": {
+    "_default": "42e558ca3b0da152237153b118988157"
+  },
+  "Bolt": {
+    "_default": "36fe9eec3068cc51b88704e504af44e6"
+  },
+  "Border": {
+    "_default": "28c4e54904e0dc1b882a76ff874f8b5e"
+  },
+  "Borealis": {
+    "_default": "fcd8cfea20b0adb3f7c0bb3fcd722d58"
+  },
+  "Bossidian": {
+    "_default": "8de4ece7125430f5f1a56c9485b97691"
+  },
+  "Brainhack": {
+    "_default": "974959bcf8f769041a3c9d77b6cdbd56"
+  },
+  "Brutalism": {
+    "_default": "7fe170f6b2180956d5555d3c974fd378"
+  },
+  "Brutalist": {
+    "_default": "3cdc75a4508f443db5fc5f24fefe20c8"
+  },
+  "Buena Vista": {
+    "_default": "b25cccfbc3492ff31c37930b7264dcd0"
+  },
+  "Camena": {
+    "_default": "31150ce3d8a9f5f061a619956ec8f738"
+  },
+  "Carbon": {
+    "_default": "e84727c5d0f4765e879301ed6b650158"
+  },
+  "Cardstock": {
+    "_default": "e86d3bf645ce694955a531db6ee9ebef"
+  },
   "Catppuccin": {
     "_default": "1791af9810531e4acfc7bce167081a50",
     "frappe": "434ad3c475509cd92a5d961c69f20d6b",
     "macchiato": "ff141117fa2908a74adeb16d5dca8c14"
   },
-  "Celestial Night": { "_default": "c4f6e78264c8c04d176b362edf54e9d3" },
-  "Charcoal": { "_default": "20087eaddf9877cd5ba4e864628ac362" },
-  "chiaroscuroflow": { "_default": "0b1a5b79eca4727cab3c6d523ecae295" },
-  "Chime": { "_default": "e5cd1aea38cb30f4dc345e635776fc02" },
-  "Christmas": { "_default": "1b0bb199520647373b2c4641839699ec" },
-  "Cobalt Peacock": { "_default": "c2e8dba8cb1f9757f69148cce7fd130e" },
-  "cocoa": { "_default": "6c83b30a4473ba0e8110c590ae898e43" },
-  "Coffee": { "_default": "031347e222313d1480d3489a253d25b8" },
-  "Colored Candy": { "_default": "82a299e40889a500bb7494bf87d2c882" },
-  "Comfort": { "_default": "96e142faf14b407f24bddb76e020b276" },
-  "Comfort color dark": { "_default": "0534a4330f0855216ea67a8b2b1c7a8a" },
-  "Comfort Dark": { "_default": "2bb0902d5752fb42c77cb0825bd4e208" },
-  "Comfort Smooth": { "_default": "f13617f699ca9e4d49082c916fe0b8f6" },
-  "Composer": { "_default": "d55345cdebf124138c329c1ff6f575bc" },
-  "Consolas": { "_default": "61bb18a63d039c5a18d2d94d917f342b" },
-  "Cosmical": { "_default": "a287dc1f5826f9d4af448b4811787099" },
-  "Covert": { "_default": "cc5c8a6958258e365d86f27d7e1c46f4" },
-  "Creature": { "_default": "b5acc33b5d0d3fc3670a68dfb18f8342" },
-  "Creme brulee": { "_default": "b402b4ffc44f556ba1790a53b76d5064" },
-  "Cupertino": { "_default": "ac7799b2517a581722d393f858b48c22" },
-  "Cyber Glow": { "_default": "020d5036849bf0a84ef49a19982af3b3" },
-  "Cybertron": { "_default": "a2adcc491244e2e8560adeab18cbe267" },
-  "Cybertron Shifted": { "_default": "e03dd0d93dfa364a23045517656bb9c4" },
-  "Dark Castle": { "_default": "3551f307a0ede66def61d40803d4a0a5" },
-  "Dark Clarity": { "_default": "789f8bbc141a6f849cf2ad482a0be5c3" },
-  "Dark Graphite": { "_default": "961aa06a9246c1ef4e81844d567bd040" },
-  "Dark Graphite Pie": { "_default": "a5f8d8e040dddb6fc80ebbd0726ecd9c" },
-  "Dark Moss": { "_default": "82605fa3d321efa04c07a607da86f5d7" },
-  "DarkEmber": { "_default": "62fe7ef7a74f5b92baa022a65a46f20c" },
-  "Darkyan": { "_default": "80d4a8087062d9dac6ae36b0e64121d5" },
-  "dashboard": { "_default": "399a15b80c08af37def33dbe720aac6a" },
-  "Dawn": { "_default": "bf6267b369ad2df2824bab1da66cd7b5" },
-  "Dayspring": { "_default": "9a11400eeaff0663df173fef5850baae" },
-  "Dedication": { "_default": "cafef20b2952baad4b6ede23fae980d9" },
-  "Dedication 2": { "_default": "aed3ef02383b644a776e749cc3044e11" },
-  "deep submerge": { "_default": "67ce341537cfa7b493cbd4b6ee934b35" },
-  "deeper work": { "_default": "0fa3aac46d5861955f02c131e18379e6" },
-  "Dekurai": { "_default": "09d3f4486c9f41f5a2f532694e17f2f2" },
-  "Desserts": { "_default": "ab9f2fd1fe728302634dca35b293d1aa" },
-  "Discordian": { "_default": "c6fcad56a0d43d3864e2f85dc296f2bc" },
-  "Dracula + LYT": { "_default": "60e1c810e7b0d029eedc11556d42b2f2" },
-  "Dracula for Obsidian": { "_default": "0b10076e2c7d55b43f37425ebd5ebf42" },
-  "Dracula Gemini": { "_default": "80dcf81990277bea91814bf37d5988ae" },
-  "Dracula Official": { "_default": "14c474743c3d6de4ff839f100d4c6291" },
-  "Dracula Plus": { "_default": "a0a338b2478eb3359113a2dd66fdbf0b" },
-  "Dracula Slim": { "_default": "b5ee7d134bbdc2e217259a4a3e20da8f" },
-  "Duality": { "_default": "e9aa8034309639d521164128f0645300" },
-  "Dune": { "_default": "b63b3eeb05bc91495fd493460c608834" },
-  "Dunite": { "_default": "d64c3eba20b79ac0bc8852afc29ad07b" },
-  "Dust": { "_default": "99d1d6eed2c8a2dde5accb61a313a3b3" },
-  "Dynamic Color": { "_default": "d93f920567f3cc92c3b7f58d4780921e" },
-  "Ebullientworks": { "_default": "e4ded7230b0c89d83e31817c5f54506e" },
-  "Eldritch": { "_default": "6548486c5b9ec58d0c8aa4e048c343e3" },
-  "Elegance": { "_default": "3ff54238651387dbfd84869cc58d45c6" },
-  "Emerald Echo": { "_default": "6849d509781ccf75aa1af1aad8556f8a" },
-  "Encore": { "_default": "4602200487080be8d05b95e7e608a465" },
+  "Celestial Night": {
+    "_default": "c4f6e78264c8c04d176b362edf54e9d3"
+  },
+  "Charcoal": {
+    "_default": "20087eaddf9877cd5ba4e864628ac362"
+  },
+  "chiaroscuroflow": {
+    "_default": "0b1a5b79eca4727cab3c6d523ecae295"
+  },
+  "Chime": {
+    "_default": "e5cd1aea38cb30f4dc345e635776fc02"
+  },
+  "Christmas": {
+    "_default": "1b0bb199520647373b2c4641839699ec"
+  },
+  "Cobalt Peacock": {
+    "_default": "c2e8dba8cb1f9757f69148cce7fd130e"
+  },
+  "cocoa": {
+    "_default": "6c83b30a4473ba0e8110c590ae898e43"
+  },
+  "Coffee": {
+    "_default": "031347e222313d1480d3489a253d25b8"
+  },
+  "Colored Candy": {
+    "_default": "82a299e40889a500bb7494bf87d2c882"
+  },
+  "Comfort": {
+    "_default": "96e142faf14b407f24bddb76e020b276"
+  },
+  "Comfort color dark": {
+    "_default": "0534a4330f0855216ea67a8b2b1c7a8a"
+  },
+  "Comfort Dark": {
+    "_default": "2bb0902d5752fb42c77cb0825bd4e208"
+  },
+  "Comfort Smooth": {
+    "_default": "f13617f699ca9e4d49082c916fe0b8f6"
+  },
+  "Composer": {
+    "_default": "056e298727da5ce271d48866664208e4"
+  },
+  "Consolas": {
+    "_default": "ef2e8c03f3e04ccff7467c4996f630e0"
+  },
+  "Cosmical": {
+    "_default": "a287dc1f5826f9d4af448b4811787099"
+  },
+  "Covert": {
+    "_default": "cc5c8a6958258e365d86f27d7e1c46f4"
+  },
+  "Creature": {
+    "_default": "b5acc33b5d0d3fc3670a68dfb18f8342"
+  },
+  "Creme brulee": {
+    "_default": "b402b4ffc44f556ba1790a53b76d5064"
+  },
+  "Cupertino": {
+    "_default": "89592ab9519e746fc9836f1144bd9194"
+  },
+  "Cyber Glow": {
+    "_default": "020d5036849bf0a84ef49a19982af3b3"
+  },
+  "Cybertron": {
+    "_default": "a2adcc491244e2e8560adeab18cbe267"
+  },
+  "Cybertron Shifted": {
+    "_default": "e03dd0d93dfa364a23045517656bb9c4"
+  },
+  "Dark Castle": {
+    "_default": "3551f307a0ede66def61d40803d4a0a5"
+  },
+  "Dark Clarity": {
+    "_default": "789f8bbc141a6f849cf2ad482a0be5c3"
+  },
+  "Dark Graphite": {
+    "_default": "961aa06a9246c1ef4e81844d567bd040"
+  },
+  "Dark Graphite Pie": {
+    "_default": "a5f8d8e040dddb6fc80ebbd0726ecd9c"
+  },
+  "Dark Moss": {
+    "_default": "82605fa3d321efa04c07a607da86f5d7"
+  },
+  "DarkEmber": {
+    "_default": "62fe7ef7a74f5b92baa022a65a46f20c"
+  },
+  "Darkyan": {
+    "_default": "80d4a8087062d9dac6ae36b0e64121d5"
+  },
+  "dashboard": {
+    "_default": "399a15b80c08af37def33dbe720aac6a"
+  },
+  "Dawn": {
+    "_default": "bf6267b369ad2df2824bab1da66cd7b5"
+  },
+  "Dayspring": {
+    "_default": "9a11400eeaff0663df173fef5850baae"
+  },
+  "Dedication": {
+    "_default": "cafef20b2952baad4b6ede23fae980d9"
+  },
+  "Dedication 2": {
+    "_default": "aed3ef02383b644a776e749cc3044e11"
+  },
+  "deep submerge": {
+    "_default": "67ce341537cfa7b493cbd4b6ee934b35"
+  },
+  "deeper work": {
+    "_default": "0fa3aac46d5861955f02c131e18379e6"
+  },
+  "Dekurai": {
+    "_default": "09d3f4486c9f41f5a2f532694e17f2f2"
+  },
+  "Desserts": {
+    "_default": "ab9f2fd1fe728302634dca35b293d1aa"
+  },
+  "Discordian": {
+    "_default": "c6fcad56a0d43d3864e2f85dc296f2bc"
+  },
+  "Dracula + LYT": {
+    "_default": "60e1c810e7b0d029eedc11556d42b2f2"
+  },
+  "Dracula for Obsidian": {
+    "_default": "0b10076e2c7d55b43f37425ebd5ebf42"
+  },
+  "Dracula Gemini": {
+    "_default": "80dcf81990277bea91814bf37d5988ae"
+  },
+  "Dracula Official": {
+    "_default": "14c474743c3d6de4ff839f100d4c6291"
+  },
+  "Dracula Plus": {
+    "_default": "a0a338b2478eb3359113a2dd66fdbf0b"
+  },
+  "Dracula Slim": {
+    "_default": "b5ee7d134bbdc2e217259a4a3e20da8f"
+  },
+  "Duality": {
+    "_default": "e9aa8034309639d521164128f0645300"
+  },
+  "Dune": {
+    "_default": "b63b3eeb05bc91495fd493460c608834"
+  },
+  "Dunite": {
+    "_default": "d64c3eba20b79ac0bc8852afc29ad07b"
+  },
+  "Dust": {
+    "_default": "99d1d6eed2c8a2dde5accb61a313a3b3"
+  },
+  "Dynamic Color": {
+    "_default": "d93f920567f3cc92c3b7f58d4780921e"
+  },
+  "Ebullientworks": {
+    "_default": "e4ded7230b0c89d83e31817c5f54506e"
+  },
+  "Eldritch": {
+    "_default": "6548486c5b9ec58d0c8aa4e048c343e3"
+  },
+  "Elegance": {
+    "_default": "3ff54238651387dbfd84869cc58d45c6"
+  },
+  "Emerald Echo": {
+    "_default": "6849d509781ccf75aa1af1aad8556f8a"
+  },
+  "Encore": {
+    "_default": "4602200487080be8d05b95e7e608a465"
+  },
   "Enhanced file explorer tree": {
     "_default": "d73492a04ec34d39f86e2647291e3f46"
   },
-  "Ethereon": { "_default": "e5f468c2e60d52910acb6b9bf023d580" },
-  "evangelion": { "_default": "2b57323ddaf3f909e1d965b1d357dda7" },
-  "Everblush": { "_default": "6f24d26942bfe91bb27451655b670f3f" },
-  "Everforest": { "_default": "cc35cc9f1aff2f13c4d8ec36cf1954d1" },
-  "Everforest Enchanted": { "_default": "a105d9cde87afdc418459ac032ebbdb9" },
-  "Everforest Spruce": { "_default": "ab63d69fa9e877caef153fa7772abf11" },
-  "Evergreen-Shadow": { "_default": "234e63a23e5c6734886c50ec5ba84f98" },
-  "EvilRed": { "_default": "594fb4fd54cedf636ffaee3d04b194a8" },
-  "Faded": { "_default": "5b6cc513e5e72688f61fe8195c929f0c" },
-  "Fancy-a-Story": { "_default": "38a609903f423badf3ca3bf0d244745c" },
-  "FastPpuccin": { "_default": "745253ca21cb9d9cd8dc3564c140fbbd" },
-  "Feather": { "_default": "cdf53bf254aa188d8eb54846ddc0e10c" },
-  "Firefly": { "_default": "622d470fe5cb46c242c074eb5551f28a" },
-  "FlatCap": { "_default": "1424a53127dae6be13dc05c5f56418c3" },
+  "Ethereon": {
+    "_default": "e5f468c2e60d52910acb6b9bf023d580"
+  },
+  "evangelion": {
+    "_default": "2b57323ddaf3f909e1d965b1d357dda7"
+  },
+  "Everblush": {
+    "_default": "6f24d26942bfe91bb27451655b670f3f"
+  },
+  "Everforest": {
+    "_default": "cc35cc9f1aff2f13c4d8ec36cf1954d1"
+  },
+  "Everforest Enchanted": {
+    "_default": "a105d9cde87afdc418459ac032ebbdb9"
+  },
+  "Everforest Spruce": {
+    "_default": "ab63d69fa9e877caef153fa7772abf11"
+  },
+  "Evergreen-Shadow": {
+    "_default": "234e63a23e5c6734886c50ec5ba84f98"
+  },
+  "EvilRed": {
+    "_default": "594fb4fd54cedf636ffaee3d04b194a8"
+  },
+  "Faded": {
+    "_default": "5b6cc513e5e72688f61fe8195c929f0c"
+  },
+  "Fancy-a-Story": {
+    "_default": "38a609903f423badf3ca3bf0d244745c"
+  },
+  "FastPpuccin": {
+    "_default": "745253ca21cb9d9cd8dc3564c140fbbd"
+  },
+  "Feather": {
+    "_default": "cdf53bf254aa188d8eb54846ddc0e10c"
+  },
+  "Firefly": {
+    "_default": "622d470fe5cb46c242c074eb5551f28a"
+  },
+  "FlatCap": {
+    "_default": "1424a53127dae6be13dc05c5f56418c3"
+  },
   "flexcyon": {
     "_default": "2be9d4c8400f7519a1f75298370a3c0e",
     "tui": "1f237814add6565efb9645412a2cdd41"
   },
-  "Flexoki": { "_default": "f0f0b4e21ddb9c53041914a7b9310e6f" },
-  "Flexoki Warm": { "_default": "c7801bee73431175c46c41495503e34a" },
-  "Focus": { "_default": "9f2a682474fb8f545a52ee0db1c5ae48" },
-  "Frost": { "_default": "1fbb098f6aa44afa70dbe4620ade00f4" },
-  "Fusion": { "_default": "fbae441fb09809cfa439d4386c0988c1" },
-  "Future": { "_default": "23b504a1935aa09b9110147c33f861ae" },
+  "Flexoki": {
+    "_default": "f0f0b4e21ddb9c53041914a7b9310e6f"
+  },
+  "Flexoki Warm": {
+    "_default": "c7801bee73431175c46c41495503e34a"
+  },
+  "Focus": {
+    "_default": "9f2a682474fb8f545a52ee0db1c5ae48"
+  },
+  "Frost": {
+    "_default": "1fbb098f6aa44afa70dbe4620ade00f4"
+  },
+  "Fusion": {
+    "_default": "fbae441fb09809cfa439d4386c0988c1"
+  },
+  "Future": {
+    "_default": "23b504a1935aa09b9110147c33f861ae"
+  },
   "Garden Gnome (Adwaita, GTK)": {
     "_default": "d09b1a22e2fbb207cf82f6a26e442ba9"
   },
-  "GDCT": { "_default": "a6d9aeb196cf7d010943c182a56040a3" },
-  "GDCT Dark": { "_default": "800d40cb21684b7925ad1982036e040b" },
-  "GitHub Theme": { "_default": "6d656c9d2e0c213cffede0cd2a036138" },
-  "GitHubDHC": { "_default": "a96bf2ed87132f1e24f73e5f79e15a7b" },
-  "Gitsidian": { "_default": "27bdc380744b1d8bdba3deff3f48f2c4" },
-  "Glass Robo": { "_default": "189313371a11056a37ffea995566738d" },
-  "Golden Topaz": { "_default": "2d638973df1d29754b462ccca1abc3c3" },
-  "Green Nightmare": { "_default": "6f228f9e52614b47bac816f7dbb42819" },
-  "Gummy-Revived": { "_default": "ba706c23b81ada82020c7aa4604fa061" },
-  "Hackthebox": { "_default": "373083215ce16cc3f265c97b95d1d344" },
-  "halcyon": { "_default": "a0b6ce2844e17dd09e4d757bfdc52d59" },
-  "Handwriting (Kalam)": { "_default": "acba78144e34de0ad2a5778ae94be694" },
-  "Heboric": { "_default": "0e5a5c44ee8aacfd79fedca14f0582b9" },
-  "Hidden Grotto": { "_default": "28bcb1029ee777bcb94a9febc23bd460" },
-  "Hipstersmoothie": { "_default": "1f6fb02d4f50a4e708c421ae04f386cf" },
-  "Hojicha": { "_default": "d0f0ef6ddf229b1604686f679a848096" },
-  "HoverPopup": { "_default": "63681869c06a553f3451c79a7df1b754" },
-  "Hulk": { "_default": "c162bfbeb724171033500fe36d745a29" },
-  "Hydra Pressure": { "_default": "68540d1406379e79543cfdf47295802a" },
-  "iA Writer": { "_default": "664f7a6b7551c75a0ff824edd1c52c39" },
-  "iB Writer": { "_default": "96483984e7d119384696d671ef20d384" },
-  "Iceberg": { "_default": "c5b9ddac0b37c6e3ed99d62ad997113c" },
-  "Improved Potato": { "_default": "913587735df82f8c059acc6ec8563c92" },
-  "Ink": { "_default": "65d691549ffe666f1073e69df3bb98c5" },
-  "ion": { "_default": "f599a7643752409a51c39aed72a8f7fa" },
-  "Iridium": { "_default": "42e5c1180f64aec7fd8cd2147af231c3" },
+  "GDCT": {
+    "_default": "a6d9aeb196cf7d010943c182a56040a3"
+  },
+  "GDCT Dark": {
+    "_default": "800d40cb21684b7925ad1982036e040b"
+  },
+  "GitHub Theme": {
+    "_default": "6d656c9d2e0c213cffede0cd2a036138"
+  },
+  "GitHubDHC": {
+    "_default": "a96bf2ed87132f1e24f73e5f79e15a7b"
+  },
+  "Gitsidian": {
+    "_default": "27bdc380744b1d8bdba3deff3f48f2c4"
+  },
+  "Glass Robo": {
+    "_default": "189313371a11056a37ffea995566738d"
+  },
+  "Golden Topaz": {
+    "_default": "2d638973df1d29754b462ccca1abc3c3"
+  },
+  "Green Nightmare": {
+    "_default": "6f228f9e52614b47bac816f7dbb42819"
+  },
+  "Gummy-Revived": {
+    "_default": "ba706c23b81ada82020c7aa4604fa061"
+  },
+  "Hackthebox": {
+    "_default": "373083215ce16cc3f265c97b95d1d344"
+  },
+  "halcyon": {
+    "_default": "a0b6ce2844e17dd09e4d757bfdc52d59"
+  },
+  "Handwriting (Kalam)": {
+    "_default": "acba78144e34de0ad2a5778ae94be694"
+  },
+  "Heboric": {
+    "_default": "0e5a5c44ee8aacfd79fedca14f0582b9"
+  },
+  "Hidden Grotto": {
+    "_default": "dc731a8250a7468135a458cca94134a4"
+  },
+  "Hipstersmoothie": {
+    "_default": "1f6fb02d4f50a4e708c421ae04f386cf"
+  },
+  "Hojicha": {
+    "_default": "d0f0ef6ddf229b1604686f679a848096"
+  },
+  "HoverPopup": {
+    "_default": "63681869c06a553f3451c79a7df1b754"
+  },
+  "Hulk": {
+    "_default": "c162bfbeb724171033500fe36d745a29"
+  },
+  "Hydra Pressure": {
+    "_default": "68540d1406379e79543cfdf47295802a"
+  },
+  "iA Writer": {
+    "_default": "664f7a6b7551c75a0ff824edd1c52c39"
+  },
+  "iB Writer": {
+    "_default": "96483984e7d119384696d671ef20d384"
+  },
+  "Iceberg": {
+    "_default": "c5b9ddac0b37c6e3ed99d62ad997113c"
+  },
+  "Improved Potato": {
+    "_default": "913587735df82f8c059acc6ec8563c92"
+  },
+  "Ink": {
+    "_default": "65d691549ffe666f1073e69df3bb98c5"
+  },
+  "ion": {
+    "_default": "f599a7643752409a51c39aed72a8f7fa"
+  },
+  "Iridium": {
+    "_default": "18c0b6e9878ffd1772e67ad030c1359b"
+  },
   "ITS Theme": {
     "_default": "8ec47e1b96a3972fa8d998a6d46ea0bd",
     "blue": "6507c20dc81b72a42482ad84a82c582c",
@@ -185,277 +493,789 @@
     "ttrpg-pathfinder-remastered": "512ea8ce9b8d8d4f70b2d4dc41d83b4b",
     "ttrpg-wotc": "9adcd788b620b996b439219cb7d3697d"
   },
-  "Jotter": { "_default": "de15274910949d0f421b8d3d65983d49" },
-  "Kakano": { "_default": "bec9fa8f78746d713586a949387d2f5d" },
-  "Kanagawa": { "_default": "a8b607939a41ee7dc4c4daba451711fd" },
-  "Kanagawa Paper": { "_default": "c5f0e0408db01baf291e95125d3bc64f" },
-  "Kiwi Mono": { "_default": "b747eba1ee7d561614a9636ef627300e" },
-  "Kurokula": { "_default": "1791b1c02f052aaa0d6d22ebe1ac8d6f" },
-  "Lagom": { "_default": "8a19de9e75dc8c798f582401c74cbb5d" },
-  "LaTeX": { "_default": "a9f7f15adad4413d0587d0cf352b16fd" },
-  "Lavender-Mist": { "_default": "0acc939ec620811cb9a9c65657afd617" },
-  "Lemons Theme": { "_default": "e1b0fc71c99dbffdd04e03ef2f7fa42e" },
-  "LessWrong": { "_default": "ee42e494397935ef152fcda4dcf78758" },
-  "Light & Bright": { "_default": "6d0b4e07756b6c64abb4ab260d574544" },
-  "Listive": { "_default": "72d400123e6021f4a2bd24cfa74870fa" },
-  "Lorens": { "_default": "08a41c9c1cee78c37004f0ce916bd3f9" },
-  "Lumines": { "_default": "659949a2989597a765771a6e96ce7df5" },
-  "LYT Mode": { "_default": "4bddc5b750c988fb056e48c069a62ae9" },
-  "Mado 11": { "_default": "eba7d1297a079513fdb31a3bdaccc988" },
-  "Mado Miniflow": { "_default": "44808ccd111843cc3523365de87b9197" },
-  "MagicUser": { "_default": "ca49d287bd3961879ef752bb3ce34ab2" },
-  "Mammoth": { "_default": "ba1a5ec5e5caf0adcdac928a3d50ae17" },
+  "Jotter": {
+    "_default": "de15274910949d0f421b8d3d65983d49"
+  },
+  "Kakano": {
+    "_default": "c65219d9bd788df51ec143216f1929f1"
+  },
+  "Kanagawa": {
+    "_default": "a8b607939a41ee7dc4c4daba451711fd"
+  },
+  "Kanagawa Paper": {
+    "_default": "c5f0e0408db01baf291e95125d3bc64f"
+  },
+  "Kiwi Mono": {
+    "_default": "b747eba1ee7d561614a9636ef627300e"
+  },
+  "Kurokula": {
+    "_default": "1791b1c02f052aaa0d6d22ebe1ac8d6f"
+  },
+  "Lagom": {
+    "_default": "8a19de9e75dc8c798f582401c74cbb5d"
+  },
+  "LaTeX": {
+    "_default": "a9f7f15adad4413d0587d0cf352b16fd"
+  },
+  "Lavender-Mist": {
+    "_default": "0acc939ec620811cb9a9c65657afd617"
+  },
+  "Lemons Theme": {
+    "_default": "e1b0fc71c99dbffdd04e03ef2f7fa42e"
+  },
+  "LessWrong": {
+    "_default": "ee42e494397935ef152fcda4dcf78758"
+  },
+  "Light & Bright": {
+    "_default": "6d0b4e07756b6c64abb4ab260d574544"
+  },
+  "Listive": {
+    "_default": "72d400123e6021f4a2bd24cfa74870fa"
+  },
+  "Lorens": {
+    "_default": "08a41c9c1cee78c37004f0ce916bd3f9"
+  },
+  "Lumines": {
+    "_default": "12192d6ca628b2103d215ea10a3037a5"
+  },
+  "LYT Mode": {
+    "_default": "4bddc5b750c988fb056e48c069a62ae9"
+  },
+  "Mado 11": {
+    "_default": "eba7d1297a079513fdb31a3bdaccc988"
+  },
+  "Mado Miniflow": {
+    "_default": "44808ccd111843cc3523365de87b9197"
+  },
+  "MagicUser": {
+    "_default": "97e771e6dcea9b7a55061ead5d0fb389"
+  },
+  "Mammoth": {
+    "_default": "ba1a5ec5e5caf0adcdac928a3d50ae17"
+  },
   "Maple": {
     "_default": "80966ea5b964ab0e45a5ededf3149654",
     "default": "852089ea00c63dead6813d72e48a1549",
     "minimal": "983ee5ec3e5d70afcdd3234e393d2449"
   },
-  "Marathon": { "_default": "ead8c55257418b9818b85bd72b2d7d73" },
-  "Material 3": { "_default": "e462dedf957e06ea58fdf97004c38e98" },
-  "Material Flat": { "_default": "fcd5c84fed5a46f8dd5025129baddd1c" },
-  "Material Gruvbox": { "_default": "6f394788bc7228c2de4e6f2d15e97790" },
-  "Material Ocean": { "_default": "666ec0482f84cda8509877fe28da53cf" },
-  "Matrix": { "_default": "1e3cb0a2e4367a952c8639f0cab3a99e" },
-  "Meridian": { "_default": "8ddb9f477268f0ee0655b465f989ddb7" },
-  "Micro Mike": { "_default": "f9224f0b0fe1ee9cb8b2a92a8f298b7c" },
-  "Midnight": { "_default": "4f7c4c3a5b3af086065816a9b8559b2c" },
-  "Midnight-Fjord": { "_default": "5b63a7ea4f83cd2db4530a418c1bb75b" },
-  "Minimal": { "_default": "2c4dba1d57fca72e8daffe064d6107bb" },
-  "Minimal Dracula": { "_default": "bd74a9decbea65402b74659c7089be7a" },
-  "Minimal Edge": { "_default": "8a2e8342aa2ea3d477e5961ca7c6f449" },
-  "Minimal Red": { "_default": "eb8d7439be4e0bc7cc8f974d02228762" },
-  "Minimal-Dark-Coder": { "_default": "d44f761433fb57dff2c71d32f47d920b" },
-  "Minimal-Resources": { "_default": "8dfdc5a65aecd811237fba99c18ed454" },
-  "Minimalist Studio": { "_default": "986ddb168ef82653a9b49343ac4e7f8f" },
-  "Minimalists Paradise": { "_default": "eb9c61b1be0b2488141e4aed91fb7558" },
-  "Mint-Breeze": { "_default": "623307a207ef4073e165a577d5c079bd" },
-  "MistyMauve": { "_default": "024c5293ed031b0234e6c1c574242bee" },
-  "Modern GenZ Vibedose": { "_default": "c6bbd0caa10264ae2ccc94adf3cf97fe" },
+  "Marathon": {
+    "_default": "ead8c55257418b9818b85bd72b2d7d73"
+  },
+  "Material 3": {
+    "_default": "e462dedf957e06ea58fdf97004c38e98"
+  },
+  "Material Flat": {
+    "_default": "fcd5c84fed5a46f8dd5025129baddd1c"
+  },
+  "Material Gruvbox": {
+    "_default": "6f394788bc7228c2de4e6f2d15e97790"
+  },
+  "Material Ocean": {
+    "_default": "666ec0482f84cda8509877fe28da53cf"
+  },
+  "Matrix": {
+    "_default": "1e3cb0a2e4367a952c8639f0cab3a99e"
+  },
+  "Meridian": {
+    "_default": "8ddb9f477268f0ee0655b465f989ddb7"
+  },
+  "Micro Mike": {
+    "_default": "f9224f0b0fe1ee9cb8b2a92a8f298b7c"
+  },
+  "Midnight": {
+    "_default": "4f7c4c3a5b3af086065816a9b8559b2c"
+  },
+  "Midnight-Fjord": {
+    "_default": "5b63a7ea4f83cd2db4530a418c1bb75b"
+  },
+  "Minimal": {
+    "_default": "eba27a2a1c2582c2fb406e13b81ce81f"
+  },
+  "Minimal Dracula": {
+    "_default": "bd74a9decbea65402b74659c7089be7a"
+  },
+  "Minimal Edge": {
+    "_default": "8a2e8342aa2ea3d477e5961ca7c6f449"
+  },
+  "Minimal Red": {
+    "_default": "eb8d7439be4e0bc7cc8f974d02228762"
+  },
+  "Minimal-Dark-Coder": {
+    "_default": "d44f761433fb57dff2c71d32f47d920b"
+  },
+  "Minimal-Resources": {
+    "_default": "8dfdc5a65aecd811237fba99c18ed454"
+  },
+  "Minimalist Studio": {
+    "_default": "986ddb168ef82653a9b49343ac4e7f8f"
+  },
+  "Minimalists Paradise": {
+    "_default": "eb9c61b1be0b2488141e4aed91fb7558"
+  },
+  "Mint-Breeze": {
+    "_default": "623307a207ef4073e165a577d5c079bd"
+  },
+  "MistyMauve": {
+    "_default": "024c5293ed031b0234e6c1c574242bee"
+  },
+  "Modern GenZ Vibedose": {
+    "_default": "c6bbd0caa10264ae2ccc94adf3cf97fe"
+  },
   "mono black (monochrome, charcoal)": {
     "_default": "21c33e241c65428fca064f849cb07dc8"
   },
-  "Mono High Contrast": { "_default": "97ca40ecbf046311e06a0f5ce87814a1" },
-  "monochroYOU": { "_default": "a682cfd2f238ee290872dab05cd1fe0c" },
-  "Monokai": { "_default": "fede7479cdfda0ef63b8b69b6897adf8" },
-  "Monokai Ristretto": { "_default": "180e6621731abc29befb6fd04671c662" },
-  "Moonlight": { "_default": "f290b36336f90a73784219aba0385c49" },
-  "Mulled Wine": { "_default": "8167cff57cc3ae26db1afbdd012fa7d8" },
-  "Museifu Basic": { "_default": "83aa4d1e7c1a9fbbc7bca00ffbb3a27c" },
-  "Mushin": { "_default": "bcaa5df7ae3b31b9745e8b02dc608e71" },
-  "Muted-Blue": { "_default": "17233a9e549408addb8c88d9033438cf" },
-  "Myst": { "_default": "b09f33654939dba9078c4c3ccc0a8400" },
-  "Nebula": { "_default": "edf6624db54212fd74451ad0c09fd773" },
-  "Neo": { "_default": "6fccf5e66bf54bc4b91e8977c3c7f797" },
-  "Neo Sploosh": { "_default": "df3fc0641bbe167d0f7a462fcc9bd4db" },
-  "Neon Synthwave": { "_default": "ed9c0088ab62df9aca4e240758e074ad" },
-  "Neovim": { "_default": "34db6614ae9f3c3bd2b99d761e98f37f" },
-  "NeuBorder": { "_default": "c8a79a7a6dc66c644631f4a4f3e7e045" },
-  "Neumorphism": { "_default": "9614b38d8c465a55ad0d03f817317079" },
-  "Neutral Academia": { "_default": "6805c19f858364616bbea84309ca3ae1" },
-  "NichNeumor": { "_default": "9d9136c70f4babfccda0fef38435d326" },
-  "Nier": { "_default": "89c382ec0c95a35be549d707c66e066c" },
-  "Night Owl": { "_default": "867ddcde1361e322760b83bbc21f1f80" },
-  "Nightfox": { "_default": "86e42b501265f9ea0c853cbe136d0963" },
-  "Nightingale": { "_default": "19a1107567c8d9bd87e458c169f8adc4" },
-  "Nightly Wolf": { "_default": "95300c164c48caee5f6298e2df605051" },
-  "nobb": { "_default": "4d6fcfe216067aae167de5a027c2d202" },
-  "Noctilux": { "_default": "b5e35c7df98584b146e7d16e47b0d613" },
-  "Noctis": { "_default": "71201d075e36abf60054ad6e09375e33" },
-  "Noctis Viola": { "_default": "3ab4af2598588688497a7000cc780338" },
-  "Nord": { "_default": "985d451fec7cd9331220102de0602826" },
-  "Nordic": { "_default": "9b386b8b7f5b2b4dfb2535d2b64fe53f" },
-  "Northern-Sky": { "_default": "2c037366b4286b13a23bad2fd6c8e5e6" },
-  "Nostromo": { "_default": "25c9d8b269dfe7dce38416debab9a900" },
-  "Nota Limonada Light": { "_default": "24e49477ad55cc4ce6c71a716965fb6a" },
-  "Notation": { "_default": "eb406afcf04971b5982f8fb2d0f17b1b" },
-  "Notation 2": { "_default": "9d1f8a0241e1ae8544e9fa2554ddb349" },
-  "NotSwift": { "_default": "8950cd22cfb76797a2f509ee2a0b669a" },
-  "Novadust": { "_default": "f1c80131ced503a5929e953b3d9275d5" },
-  "Obsidian Boom": { "_default": "82836d9797fafd07211e269332690d58" },
-  "Obsidian gruvbox": { "_default": "74946b87e593d94022fda3b5f3599e34" },
-  "Obsidian Nord": { "_default": "fcf54ef360ec5e2976adae5c3b0700f4" },
-  "obsidian_ia": { "_default": "bd737bff7861e8ea78d7e3fa03bf8513" },
-  "obsidian_vibrant": { "_default": "1d16120ff6afeff60147cf2ae922d5c2" },
-  "Obsidianite": { "_default": "84d5e736647ca2259040bb35d3c7918f" },
-  "Obsidianotion": { "_default": "e4b07d9ae368af88254626df4b347642" },
-  "Obuntu": { "_default": "65e9566e5b3c8bd8156712cb7177ccf0" },
-  "OISTNB": { "_default": "c5c507d130c8ee92fd67f2e2b56aa514" },
-  "Old World": { "_default": "4bbb4d1a81fbbc3ce76997ff8d6f5929" },
-  "Oldsidian Purple": { "_default": "f943aff1011881473d0eab0ccdf9c00c" },
-  "OLED.Black": { "Black": "c29020cee37c1bf7f8b23cb9a1e6ca42" },
-  "Oliviers Theme": { "_default": "cc4fcabe7c2788759faaee4622375e7b" },
-  "Omega": { "_default": "6bfb94aa717054d37b227446ff813f36" },
-  "OneNice": { "_default": "70dd3bc2ebc5c4f7c8757f82cd3f797a" },
-  "Ono Sendai": { "_default": "a9859b6e7e6936da027c1ea41b10771a" },
-  "Orange": { "_default": "0c8f8ca7922489b719e75b3617026c64" },
-  "Oreo": { "_default": "5bb80c38b7080feb8a58f2aee6d0037e" },
-  "Origami": { "_default": "f5e5661acf91c3e58bbe078782834e68" },
-  "Origin": { "_default": "97357bb7941ec85e540e24e296c7951f" },
-  "Osaka Jade": { "_default": "1d20adbc9b8824af79b2c694d142ba25" },
-  "Oscura": { "_default": "39bb396975fe0f35611c342aac1414e2" },
-  "OverCast": { "_default": "2a8eac79c9d285a7862d8c1a90a33f7e" },
-  "Oxygen": { "_default": "1e5091822b1da22e970752b236e37d2c" },
-  "Pale - 淡": { "_default": "443d27a6a4130f9f4cd62eac8d6c7fe8" },
-  "Panic Mode": { "_default": "1950174be80a9093df48c9529c6fc547" },
-  "parfait": { "_default": "06fd8ccb1bd4a91a021e8f6f8959d009" },
-  "Penumbra": { "_default": "829694decfea3481de987ab7b50fafc1" },
-  "Perso": { "_default": "86d9d48ed6d6c827a0c74bd07bd75e67" },
-  "Phoenix": { "_default": "182f11a1f5c417259fec3328e1f801b3" },
-  "Pine Forest Berry": { "_default": "ab437fb3bf0451f94d1331bc02e17aa6" },
-  "Pink Topaz": { "_default": "ef5a2fef7ade9979f298184098e93e7a" },
-  "Pisum": { "_default": "d9831074feaac94f6aec287f7eb1b84f" },
-  "Planetary": { "_default": "5471c2fa94f10f16257b9bb489003690" },
-  "Planetz Roller": { "_default": "77aadf623ee6a43c069be4eca46ad8d4" },
-  "Playground": { "_default": "68ffb5cbb7bbae46545cf32e9830ce72" },
-  "PLN": { "_default": "6eab5b603a22a815b0ed574899d2e7b8" },
-  "Poimandres": { "_default": "a68bb3c00799ae8875239c4eb03b88f9" },
-  "Poimandres Extended": { "_default": "51195c98e277c3994860324f626bb236" },
-  "Polka": { "_default": "df5c219f6b989d9df821c0798a1b25fa" },
-  "Pomme Notes": { "_default": "b2652253865ed293f7ca23d2485b8782" },
-  "Powered by Lancer": { "_default": "d21ab0da399ba45299a115bbd74ba081" },
+  "Mono High Contrast": {
+    "_default": "97ca40ecbf046311e06a0f5ce87814a1"
+  },
+  "monochroYOU": {
+    "_default": "a682cfd2f238ee290872dab05cd1fe0c"
+  },
+  "Monokai": {
+    "_default": "fede7479cdfda0ef63b8b69b6897adf8"
+  },
+  "Monokai Ristretto": {
+    "_default": "180e6621731abc29befb6fd04671c662"
+  },
+  "Moonlight": {
+    "_default": "f290b36336f90a73784219aba0385c49"
+  },
+  "Mulled Wine": {
+    "_default": "8167cff57cc3ae26db1afbdd012fa7d8"
+  },
+  "Museifu Basic": {
+    "_default": "83aa4d1e7c1a9fbbc7bca00ffbb3a27c"
+  },
+  "Mushin": {
+    "_default": "bcaa5df7ae3b31b9745e8b02dc608e71"
+  },
+  "Muted-Blue": {
+    "_default": "17233a9e549408addb8c88d9033438cf"
+  },
+  "Myst": {
+    "_default": "b09f33654939dba9078c4c3ccc0a8400"
+  },
+  "Nebula": {
+    "_default": "edf6624db54212fd74451ad0c09fd773"
+  },
+  "Neo": {
+    "_default": "6fccf5e66bf54bc4b91e8977c3c7f797"
+  },
+  "Neo Sploosh": {
+    "_default": "df3fc0641bbe167d0f7a462fcc9bd4db"
+  },
+  "Neon Synthwave": {
+    "_default": "ed9c0088ab62df9aca4e240758e074ad"
+  },
+  "Neovim": {
+    "_default": "34db6614ae9f3c3bd2b99d761e98f37f"
+  },
+  "NeuBorder": {
+    "_default": "4f301d8ef9d14f6b889de2cb5874b25d"
+  },
+  "Neumorphism": {
+    "_default": "9614b38d8c465a55ad0d03f817317079"
+  },
+  "Neutral Academia": {
+    "_default": "6805c19f858364616bbea84309ca3ae1"
+  },
+  "NichNeumor": {
+    "_default": "9d9136c70f4babfccda0fef38435d326"
+  },
+  "Nier": {
+    "_default": "89c382ec0c95a35be549d707c66e066c"
+  },
+  "Night Owl": {
+    "_default": "867ddcde1361e322760b83bbc21f1f80"
+  },
+  "Nightfox": {
+    "_default": "86e42b501265f9ea0c853cbe136d0963"
+  },
+  "Nightingale": {
+    "_default": "19a1107567c8d9bd87e458c169f8adc4"
+  },
+  "Nightly Wolf": {
+    "_default": "95300c164c48caee5f6298e2df605051"
+  },
+  "nobb": {
+    "_default": "4d6fcfe216067aae167de5a027c2d202"
+  },
+  "Noctilux": {
+    "_default": "b5e35c7df98584b146e7d16e47b0d613"
+  },
+  "Noctis": {
+    "_default": "71201d075e36abf60054ad6e09375e33"
+  },
+  "Noctis Viola": {
+    "_default": "3ab4af2598588688497a7000cc780338"
+  },
+  "Nord": {
+    "_default": "985d451fec7cd9331220102de0602826"
+  },
+  "Nordic": {
+    "_default": "9b386b8b7f5b2b4dfb2535d2b64fe53f"
+  },
+  "Northern-Sky": {
+    "_default": "2c037366b4286b13a23bad2fd6c8e5e6"
+  },
+  "Nostromo": {
+    "_default": "25c9d8b269dfe7dce38416debab9a900"
+  },
+  "Nota Limonada Light": {
+    "_default": "24e49477ad55cc4ce6c71a716965fb6a"
+  },
+  "Notation": {
+    "_default": "eb406afcf04971b5982f8fb2d0f17b1b"
+  },
+  "Notation 2": {
+    "_default": "9d1f8a0241e1ae8544e9fa2554ddb349"
+  },
+  "NotSwift": {
+    "_default": "8950cd22cfb76797a2f509ee2a0b669a"
+  },
+  "Novadust": {
+    "_default": "f1c80131ced503a5929e953b3d9275d5"
+  },
+  "Obsidian Boom": {
+    "_default": "82836d9797fafd07211e269332690d58"
+  },
+  "Obsidian gruvbox": {
+    "_default": "74946b87e593d94022fda3b5f3599e34"
+  },
+  "Obsidian Nord": {
+    "_default": "fcf54ef360ec5e2976adae5c3b0700f4"
+  },
+  "obsidian_ia": {
+    "_default": "bd737bff7861e8ea78d7e3fa03bf8513"
+  },
+  "obsidian_vibrant": {
+    "_default": "1d16120ff6afeff60147cf2ae922d5c2"
+  },
+  "Obsidianite": {
+    "_default": "84d5e736647ca2259040bb35d3c7918f"
+  },
+  "Obsidianotion": {
+    "_default": "e4b07d9ae368af88254626df4b347642"
+  },
+  "Obuntu": {
+    "_default": "65e9566e5b3c8bd8156712cb7177ccf0"
+  },
+  "OISTNB": {
+    "_default": "c5c507d130c8ee92fd67f2e2b56aa514"
+  },
+  "Old World": {
+    "_default": "4bbb4d1a81fbbc3ce76997ff8d6f5929"
+  },
+  "Oldsidian Purple": {
+    "_default": "f943aff1011881473d0eab0ccdf9c00c"
+  },
+  "OLED.Black": {
+    "Black": "c29020cee37c1bf7f8b23cb9a1e6ca42"
+  },
+  "Oliviers Theme": {
+    "_default": "cc4fcabe7c2788759faaee4622375e7b"
+  },
+  "Omega": {
+    "_default": "6bfb94aa717054d37b227446ff813f36"
+  },
+  "OneNice": {
+    "_default": "70dd3bc2ebc5c4f7c8757f82cd3f797a"
+  },
+  "Ono Sendai": {
+    "_default": "a9859b6e7e6936da027c1ea41b10771a"
+  },
+  "Orange": {
+    "_default": "0c8f8ca7922489b719e75b3617026c64"
+  },
+  "Oreo": {
+    "_default": "dddc2f84c6d5ebadfa0cddb737c61be2"
+  },
+  "Origami": {
+    "_default": "f5e5661acf91c3e58bbe078782834e68"
+  },
+  "Origin": {
+    "_default": "97357bb7941ec85e540e24e296c7951f"
+  },
+  "Osaka Jade": {
+    "_default": "1d20adbc9b8824af79b2c694d142ba25"
+  },
+  "Oscura": {
+    "_default": "39bb396975fe0f35611c342aac1414e2"
+  },
+  "OverCast": {
+    "_default": "2a8eac79c9d285a7862d8c1a90a33f7e"
+  },
+  "Oxygen": {
+    "_default": "d28b6c94013de71993c146bbb71a01ea"
+  },
+  "Pale - 淡": {
+    "_default": "443d27a6a4130f9f4cd62eac8d6c7fe8"
+  },
+  "Panic Mode": {
+    "_default": "1950174be80a9093df48c9529c6fc547"
+  },
+  "parfait": {
+    "_default": "06fd8ccb1bd4a91a021e8f6f8959d009"
+  },
+  "Penumbra": {
+    "_default": "5422f61c214536e27b0e1ac30ad2c675"
+  },
+  "Perso": {
+    "_default": "86d9d48ed6d6c827a0c74bd07bd75e67"
+  },
+  "Phoenix": {
+    "_default": "182f11a1f5c417259fec3328e1f801b3"
+  },
+  "Pine Forest Berry": {
+    "_default": "ab437fb3bf0451f94d1331bc02e17aa6"
+  },
+  "Pink Topaz": {
+    "_default": "ef5a2fef7ade9979f298184098e93e7a"
+  },
+  "Pisum": {
+    "_default": "d9831074feaac94f6aec287f7eb1b84f"
+  },
+  "Planetary": {
+    "_default": "5471c2fa94f10f16257b9bb489003690"
+  },
+  "Planetz Roller": {
+    "_default": "77aadf623ee6a43c069be4eca46ad8d4"
+  },
+  "Playground": {
+    "_default": "68ffb5cbb7bbae46545cf32e9830ce72"
+  },
+  "PLN": {
+    "_default": "6eab5b603a22a815b0ed574899d2e7b8"
+  },
+  "Poimandres": {
+    "_default": "a68bb3c00799ae8875239c4eb03b88f9"
+  },
+  "Poimandres Extended": {
+    "_default": "51195c98e277c3994860324f626bb236"
+  },
+  "Polka": {
+    "_default": "df5c219f6b989d9df821c0798a1b25fa"
+  },
+  "Pomme Notes": {
+    "_default": "71456dad44f8253877120cdad1d7c305"
+  },
+  "Powered by Lancer": {
+    "_default": "d21ab0da399ba45299a115bbd74ba081"
+  },
   "Powered by Lancer - Retouched": {
     "_default": "6f21467555f87fb55c54bd65bd8d96bd"
   },
-  "Primary": { "_default": "fbbc961168df1f4cb1913eb410dc7a12" },
-  "Prime": { "_default": "c70cfb5ff4b4f54fae71e9f291397cdf" },
-  "Prism": { "_default": "371b3e4d60d837c7c0ed0f20852e74e8" },
-  "Proper Dark": { "_default": "2f5d3c6c0485e271224fa6bef4979a4e" },
-  "ProtocolBlue": { "_default": "3c369946a23e29ce40e7bc44040f457f" },
-  "Prussian Blue": { "_default": "ed86ed9c7ac4e45cf96f01691a933f7f" },
-  "Publisher": { "_default": "1fd6ae4bb01000b79206308dcd19beaa" },
-  "Pure": { "_default": "367c9e2721c163a28de04019239f7c9a" },
-  "Purple Aurora": { "_default": "a04b8b18c12e4161a5f9cca536f00aac" },
-  "Purple Owl": { "_default": "708dae05f689cc037a8f73ab6dc8ee44" },
-  "Pxld": { "_default": "2602b1856f752a0ba5e08dc745260743" },
-  "Qlean": { "_default": "d8aeea0f95be44ff602868848d6ae13b" },
-  "Quietus": { "_default": "da07095b1f2c2e2740d9db0b79884bf9" },
-  "Quillcode": { "_default": "30a7316075ff149d8d24817888c0c30b" },
-  "Radiance": { "_default": "01d8d70ce97f7a536670c9a00e05967c" },
-  "Ravenloft": { "_default": "c1635f972bdfb260444ce0ebb0318122" },
-  "Red Graphite": { "_default": "74317e37b2ae66d1500aa92942c4442a" },
-  "Red-Shadow": { "_default": "bd0554cdb1945e0574fdc28dc0c550b5" },
+  "Primary": {
+    "_default": "fbbc961168df1f4cb1913eb410dc7a12"
+  },
+  "Prime": {
+    "_default": "c70cfb5ff4b4f54fae71e9f291397cdf"
+  },
+  "Prism": {
+    "_default": "371b3e4d60d837c7c0ed0f20852e74e8"
+  },
+  "Proper Dark": {
+    "_default": "2f5d3c6c0485e271224fa6bef4979a4e"
+  },
+  "ProtocolBlue": {
+    "_default": "3c369946a23e29ce40e7bc44040f457f"
+  },
+  "Prussian Blue": {
+    "_default": "ed86ed9c7ac4e45cf96f01691a933f7f"
+  },
+  "Publisher": {
+    "_default": "1fd6ae4bb01000b79206308dcd19beaa"
+  },
+  "Pure": {
+    "_default": "367c9e2721c163a28de04019239f7c9a"
+  },
+  "Purple Aurora": {
+    "_default": "a04b8b18c12e4161a5f9cca536f00aac"
+  },
+  "Purple Owl": {
+    "_default": "708dae05f689cc037a8f73ab6dc8ee44"
+  },
+  "Pxld": {
+    "_default": "2602b1856f752a0ba5e08dc745260743"
+  },
+  "Qlean": {
+    "_default": "d8aeea0f95be44ff602868848d6ae13b"
+  },
+  "Quietus": {
+    "_default": "8e677c13ee4efaee5e0e5085f0d5ea08"
+  },
+  "Quillcode": {
+    "_default": "30a7316075ff149d8d24817888c0c30b"
+  },
+  "Radiance": {
+    "_default": "01d8d70ce97f7a536670c9a00e05967c"
+  },
+  "Ravenloft": {
+    "_default": "c1635f972bdfb260444ce0ebb0318122"
+  },
+  "Red Graphite": {
+    "_default": "74317e37b2ae66d1500aa92942c4442a"
+  },
+  "Red-Shadow": {
+    "_default": "bd0554cdb1945e0574fdc28dc0c550b5"
+  },
   "RedShift - OLED Blue Light Filter": {
     "_default": "38fc63f0b4b729a086124b3c2078b853"
   },
-  "Refined Default": { "_default": "bbf3883d038550e723e79c83b8239543" },
-  "Reshi": { "_default": "669a77a4d6f212098854e46027f949d4" },
-  "Retro Windows": { "_default": "ec2e7e57a4792ea842e65e67f6dc9d29" },
-  "Retroma": { "_default": "6670ce6877f10d1968ddb7b384783477" },
-  "RetroNotes": { "_default": "d13852e85f7e01d834a81de2466ea0c5" },
-  "RetroOS 98": { "_default": "1d40b5c0c8355ee5c78114d084720fd0" },
-  "Reverie": { "_default": "ba23b840e1f097e06398b3f53570386b" },
-  "Rezin": { "_default": "1cd6ce0d2b7dd4e9c5232eedcbe6a3ba" },
-  "Ribbons": { "_default": "63ac2d07024869651c41626cdcb2e6a4" },
-  "Rift": { "_default": "8b26366be6c351b33e6b7292fb65cde5" },
-  "Rmaki": { "_default": "33ed47bb752ace29a6662eb10873530d" },
-  "Robsi": { "_default": "167fceecd3e014bef4774ad97481727c" },
-  "Rosé Pine": { "_default": "b3e5e4a8982748468a0cfbb2cb49a62d" },
-  "Rose Pine 2": { "_default": "b5235ddace12ef569ef2452c1ecfcb78" },
-  "Rosé Pine Moon": { "_default": "eda4cdbd550d5f97835fa0d9c81a1b41" },
-  "Rose Red": { "_default": "114cce99fe0999c48cfa4372c4cace5b" },
-  "Royal Velvet": { "_default": "2469cfde9ea147e74ff962cd4590ebec" },
-  "Sad Machine Druid": { "_default": "c06c42ece7f84eec847865f3c0981613" },
-  "Sakurajima": { "_default": "3365c18f57301438594ecfe17004ab0e" },
-  "SALEM": { "_default": "e110c34858e22db0f910af9629b7f50a" },
-  "Sanctum": { "_default": "fc33146c475e95b1a4eadeb887326d82" },
-  "Sanctum reborn": { "_default": "018577d52d8404ba9bb5eb0eecf84c2b" },
-  "Sandover": { "_default": "f7e1892f92e61ef4936b925747f15fc6" },
-  "Sandstorm": { "_default": "5f03309fe2b930050e9798653af7d760" },
-  "Sanguine": { "_default": "cd83779d227cbd9a9f0e63b7a1c32eff" },
-  "Sea Glass": { "_default": "7a19dcaa5348659933854571b9f32a18" },
-  "Seamless View": { "_default": "46f0697f0faabe54ef20e3fba0f560c3" },
-  "Sei": { "_default": "2406491fcf8618f2845a305146548676" },
-  "Serenity": { "_default": "8d50544b2e2f82af0521a12b728a9653" },
-  "Serif": { "_default": "565da5caea1b7e11143cf79e9bd4c465" },
-  "Serika": { "_default": "3c2382575e8232bc704b90f4a85655a5" },
-  "Shade Sanctuary": { "_default": "1743e45a06154e73050415f4a228cae5" },
-  "Shadeflow": { "_default": "65eab2d8c537bcd02d62b52e695d2466" },
-  "Shiba Inu": { "_default": "4f7a95f062f38408a0729cb1bcf4956e" },
-  "Shimmering Focus": { "_default": "6f2cd86f2f51bd378927875bc06db565" },
-  "Simple": { "_default": "bad6cbd69b4b45ae3ee5e464197edba2" },
-  "Simple Color": { "_default": "22233e9b1f9cf8fa94e3407d6b2cc8e6" },
-  "Simplicity": { "_default": "6e76f53d4f47bccc5173556b921eb338" },
-  "Simply Colorful": { "_default": "5a799ff2be2866ee8fe30418de06fd90" },
-  "Sodalite": { "_default": "b6cd95b85b289728f260641091eb50b9" },
-  "Solarized": { "_default": "eda9bf8d4d5db63590776c16b6d38002" },
-  "Soli Deo Gloria": { "_default": "a925818e87af37388db627cddb876ccb" },
-  "Solitude": { "_default": "c1ab3c32cc76dd86039e97f680b05af7" },
-  "Soloing": { "_default": "dc846cca2c863058aabb8967fb197d49" },
-  "Soothe": { "_default": "b5f282f1819790217775aeec840072f7" },
-  "Space": { "_default": "cff7ecb206120dfd3f586b7c6085f570" },
-  "Sparkling Day": { "_default": "3870dfb0386a622042a607b0f5e1ac74" },
-  "Sparkling Night": { "_default": "20dc7132585b5c7369a52bbbeb9e77d6" },
-  "Sparkling Wisdom": { "_default": "676f629376fc119a29c0e6d25261dde8" },
-  "Spectrum": { "_default": "bb4eaae65ebc0a1f93163c32cac937d7" },
-  "Spectrum Blue": { "_default": "ce188dfc08b2f0503e15056b483868c5" },
-  "SpectrumPlus": { "_default": "9e127642088e287df02ab74bbce366df" },
-  "Spring": { "_default": "eb26a30760f0c6e115b8c82638b91c13" },
-  "Spy Terminal": { "_default": "d10615f83c8a74da49e296af9779054b" },
-  "sQdthOne": { "_default": "b93d198e6b07b1c6d69966caceeeeb2d" },
-  "Strict": { "_default": "9b01dad0527eef338b13f9e8c2a6580a" },
-  "Subtlegold": { "_default": "422449c5bc2cf02d30b97ba9f0822b81" },
-  "Suddha": { "_default": "f29d28757cb88db43296f22f3de27c1e" },
-  "Sunbather": { "_default": "0226182c096d3af2a2163755eb4d61cc" },
-  "SynthWave": { "_default": "baeae79af52945a64fdf1a7c2dedff1a" },
-  "Synthwave '84": { "_default": "f6d730e4be7a6d9ef9e36793e754d2de" },
-  "Tech001": { "_default": "612190ce5e6a4881b399f822da66a557" },
-  "Terminal": { "_default": "5da1dcce0b653911f45c7a3320a03c13" },
-  "Terminal2K": { "_default": "730abc33099b5c2d361e22ef227108ee" },
-  "TerraFlow": { "_default": "e18dc2a60d6509892764b9ddb94db9d3" },
+  "Refined Default": {
+    "_default": "bbf3883d038550e723e79c83b8239543"
+  },
+  "Reshi": {
+    "_default": "669a77a4d6f212098854e46027f949d4"
+  },
+  "Retro Windows": {
+    "_default": "ec2e7e57a4792ea842e65e67f6dc9d29"
+  },
+  "Retroma": {
+    "_default": "3aad4e421e18d0636d6d9b80c8a0ab0e"
+  },
+  "RetroNotes": {
+    "_default": "d13852e85f7e01d834a81de2466ea0c5"
+  },
+  "RetroOS 98": {
+    "_default": "1d40b5c0c8355ee5c78114d084720fd0"
+  },
+  "Reverie": {
+    "_default": "ba23b840e1f097e06398b3f53570386b"
+  },
+  "Rezin": {
+    "_default": "1cd6ce0d2b7dd4e9c5232eedcbe6a3ba"
+  },
+  "Ribbons": {
+    "_default": "63ac2d07024869651c41626cdcb2e6a4"
+  },
+  "Rift": {
+    "_default": "8b26366be6c351b33e6b7292fb65cde5"
+  },
+  "Rmaki": {
+    "_default": "33ed47bb752ace29a6662eb10873530d"
+  },
+  "Robsi": {
+    "_default": "167fceecd3e014bef4774ad97481727c"
+  },
+  "Rosé Pine": {
+    "_default": "b3e5e4a8982748468a0cfbb2cb49a62d"
+  },
+  "Rose Pine 2": {
+    "_default": "b5235ddace12ef569ef2452c1ecfcb78"
+  },
+  "Rosé Pine Moon": {
+    "_default": "eda4cdbd550d5f97835fa0d9c81a1b41"
+  },
+  "Rose Red": {
+    "_default": "114cce99fe0999c48cfa4372c4cace5b"
+  },
+  "Royal Velvet": {
+    "_default": "2469cfde9ea147e74ff962cd4590ebec"
+  },
+  "Sad Machine Druid": {
+    "_default": "c06c42ece7f84eec847865f3c0981613"
+  },
+  "Sakurajima": {
+    "_default": "3365c18f57301438594ecfe17004ab0e"
+  },
+  "SALEM": {
+    "_default": "e110c34858e22db0f910af9629b7f50a"
+  },
+  "Sanctum": {
+    "_default": "fc33146c475e95b1a4eadeb887326d82"
+  },
+  "Sanctum reborn": {
+    "_default": "018577d52d8404ba9bb5eb0eecf84c2b"
+  },
+  "Sandover": {
+    "_default": "f7e1892f92e61ef4936b925747f15fc6"
+  },
+  "Sandstorm": {
+    "_default": "5f03309fe2b930050e9798653af7d760"
+  },
+  "Sanguine": {
+    "_default": "cd83779d227cbd9a9f0e63b7a1c32eff"
+  },
+  "Sea Glass": {
+    "_default": "7a19dcaa5348659933854571b9f32a18"
+  },
+  "Seamless View": {
+    "_default": "46f0697f0faabe54ef20e3fba0f560c3"
+  },
+  "Sei": {
+    "_default": "2406491fcf8618f2845a305146548676"
+  },
+  "Serenity": {
+    "_default": "8d50544b2e2f82af0521a12b728a9653"
+  },
+  "Serif": {
+    "_default": "565da5caea1b7e11143cf79e9bd4c465"
+  },
+  "Serika": {
+    "_default": "3c2382575e8232bc704b90f4a85655a5"
+  },
+  "Shade Sanctuary": {
+    "_default": "1743e45a06154e73050415f4a228cae5"
+  },
+  "Shadeflow": {
+    "_default": "65eab2d8c537bcd02d62b52e695d2466"
+  },
+  "Shiba Inu": {
+    "_default": "4f7a95f062f38408a0729cb1bcf4956e"
+  },
+  "Shimmering Focus": {
+    "_default": "64cb6d6bc870dbe2cc49d87152c3088a"
+  },
+  "Simple": {
+    "_default": "bad6cbd69b4b45ae3ee5e464197edba2"
+  },
+  "Simple Color": {
+    "_default": "22233e9b1f9cf8fa94e3407d6b2cc8e6"
+  },
+  "Simplicity": {
+    "_default": "6e76f53d4f47bccc5173556b921eb338"
+  },
+  "Simply Colorful": {
+    "_default": "5a799ff2be2866ee8fe30418de06fd90"
+  },
+  "Sodalite": {
+    "_default": "b6cd95b85b289728f260641091eb50b9"
+  },
+  "Solarized": {
+    "_default": "eda9bf8d4d5db63590776c16b6d38002"
+  },
+  "Soli Deo Gloria": {
+    "_default": "a925818e87af37388db627cddb876ccb"
+  },
+  "Solitude": {
+    "_default": "c1ab3c32cc76dd86039e97f680b05af7"
+  },
+  "Soloing": {
+    "_default": "dc846cca2c863058aabb8967fb197d49"
+  },
+  "Soothe": {
+    "_default": "b5f282f1819790217775aeec840072f7"
+  },
+  "Space": {
+    "_default": "cff7ecb206120dfd3f586b7c6085f570"
+  },
+  "Sparkling Day": {
+    "_default": "3870dfb0386a622042a607b0f5e1ac74"
+  },
+  "Sparkling Night": {
+    "_default": "20dc7132585b5c7369a52bbbeb9e77d6"
+  },
+  "Sparkling Wisdom": {
+    "_default": "676f629376fc119a29c0e6d25261dde8"
+  },
+  "Spectrum": {
+    "_default": "bb4eaae65ebc0a1f93163c32cac937d7"
+  },
+  "Spectrum Blue": {
+    "_default": "ce188dfc08b2f0503e15056b483868c5"
+  },
+  "SpectrumPlus": {
+    "_default": "9e127642088e287df02ab74bbce366df"
+  },
+  "Spring": {
+    "_default": "eb26a30760f0c6e115b8c82638b91c13"
+  },
+  "Spy Terminal": {
+    "_default": "d10615f83c8a74da49e296af9779054b"
+  },
+  "sQdthOne": {
+    "_default": "b93d198e6b07b1c6d69966caceeeeb2d"
+  },
+  "Strict": {
+    "_default": "9b01dad0527eef338b13f9e8c2a6580a"
+  },
+  "Subtlegold": {
+    "_default": "422449c5bc2cf02d30b97ba9f0822b81"
+  },
+  "Suddha": {
+    "_default": "f29d28757cb88db43296f22f3de27c1e"
+  },
+  "Sunbather": {
+    "_default": "0226182c096d3af2a2163755eb4d61cc"
+  },
+  "SynthWave": {
+    "_default": "baeae79af52945a64fdf1a7c2dedff1a"
+  },
+  "Synthwave '84": {
+    "_default": "f6d730e4be7a6d9ef9e36793e754d2de"
+  },
+  "Tech001": {
+    "_default": "612190ce5e6a4881b399f822da66a557"
+  },
+  "Terminal": {
+    "_default": "5da1dcce0b653911f45c7a3320a03c13"
+  },
+  "Terminal2K": {
+    "_default": "730abc33099b5c2d361e22ef227108ee"
+  },
+  "TerraFlow": {
+    "_default": "7a21c4a9cce1c052e045ac72288f901d"
+  },
   "Theme-That-Shall-Not-Be-Named": {
     "_default": "7d2c143b5b5dc7988182b79ecd3a05a6"
   },
-  "Things": { "_default": "2cf3dfa91bf91afcd4b256639bdfe0f0" },
-  "Things 3": { "_default": "4949e794f85b4452b925af638228deac" },
-  "Tiniri": { "_default": "37ec271fe9fc6802fdee03c5c68683a0" },
-  "Tokyo Night": { "_default": "342e3421afd2376b0b80997ccfab86ab" },
-  "Tokyo Night Simple": { "_default": "a1a61275d1957622db124e15152c29de" },
-  "Tokyo Night Storm": { "_default": "da272d8d6e145bed5b042c51e6159cb6" },
-  "Tom's Theme": { "_default": "3317d843e752e1edbc39fd596d319b16" },
-  "Tomorrow": { "_default": "4824884db0476db96a083b4fbc79ef9b" },
-  "Tomorrow Night Bright": { "_default": "4be32fc7fc016f3c2dd81282203d3221" },
-  "Trace Labs": { "_default": "9a98a132fa18f3ad5e59daade3de7825" },
-  "Transient": { "_default": "e0eb4e49b3818386d6aec7a4e53ff3ac" },
-  "Transparent": { "_default": "94d54357a6ad64d50c4ea86f33be35fb" },
-  "True Black": { "_default": "769fa44af76d729100381cf09b8018b7" },
-  "Typewriter": { "_default": "aa30380991d92b243d37b9f860aa5e04" },
-  "Typomagical": { "_default": "55819ed431329dd12b3ec883337732b3" },
-  "Typora-Vue": { "_default": "24856074dd19df175c00ff3d14a9f2bd" },
-  "Tyrone Neon": { "_default": "a92a3c54f11284a7dbc7633b178e9782" },
-  "Ukiyo": { "_default": "a916fb3f5ace840941319d11fb362074" },
-  "Ultra Lobster": { "_default": "d17d921642d6737352ecf406e87219cb" },
-  "Underwater": { "_default": "0f6ff36a2f75781e3c77d80adce5f2ce" },
-  "Universitario": { "_default": "c558aa7b4ce901f321add73f39a60610" },
-  "Ursa": { "_default": "f940ca2b3716ce85c3278398668327df" },
-  "Vanilla AMOLED": { "_default": "23a6b50292c29e608d04293e7f7c7eef" },
-  "Vanilla AMOLED Color": { "_default": "f1a79eddd2ea794d9feba5e1f0abc839" },
-  "Vanilla Palettes": { "_default": "63e8abff54142083e3927453fb7d12e6" },
-  "Vauxhall": { "_default": "1375851827bbb1ef5c161650c8c1d45a" },
-  "Velocity": { "_default": "eab0e12b52d6bc325aaa57477f7adff3" },
-  "Velvet-Moon": { "_default": "655710d5bd322cba101f8d3bb0136b34" },
-  "Venom": { "_default": "fa8ec74aadf3355f55794493757e5232" },
-  "Vercel Geist": { "_default": "a08f0e5bd5194990120fa9a40e6d03c4" },
-  "Vermilion": { "_default": "532f70ca298157ed253a3ffdbec096a8" },
-  "Vesnea Vibe": { "_default": "3011f452a76fb80c5a3e9aa29b2955d3" },
-  "Vesper": { "_default": "935b5e9c61ff8b7de12497241dfe6cd6" },
-  "Vibrant": { "_default": "39b669aadb8e15ec9f67ebadfbd1c798" },
-  "Vicious": { "_default": "22dfc5ed854236c391c4c6e4f950a623" },
-  "Violet Evening": { "_default": "3b1ec79f2a48cd0e43e78fa7cb8629d3" },
-  "Virgo": { "_default": "9d9cc93de216b454831f54d0cd0415ad" },
-  "Vortex": { "_default": "da6a78ab48bd8ec1e7c403a719adbf39" },
-  "W95": { "_default": "265478ce889c856a7fbacb9fab62afe1" },
-  "Wasp": { "_default": "6eda09cf17108d5d03147b9c8eea0f05" },
-  "Wikipedia": { "_default": "7388ad09cb8fe876a7299d8ca709ccd3" },
-  "WilcoxOne": { "_default": "fed495a3dc8dd48fc8d0798e921a272b" },
-  "Willemstad": { "_default": "d5c17c94f552b7cb1d2ace13d0b1ffdf" },
-  "Winter Spices": { "_default": "5296f1dbbb01a73c0b4b5c375038cbe3" },
-  "WiseLight": { "_default": "23d38f45a7b58ce4b086afb83ece65bb" },
-  "Wombat": { "_default": "9607842597002ba250ea52193b1d1c0d" },
-  "WY Console": { "_default": "f363a4997977953b8856fefb102618b9" },
-  "Wyrd": { "_default": "f0829bc460458c9f0962edfb3e05979c" },
-  "Xscriptor": { "_default": "b81c82208fe88049aa6e8dc797ce83ff" },
-  "Yue": { "_default": "1f7ef61b4eaa440a747b2aa0329f8c2b" },
-  "Zario": { "_default": "89f1059c6afa190e65fa978b1424690d" },
-  "Zen": { "_default": "9f2eebc950318c346a43efc27ff597ee" },
-  "Zenburn": { "_default": "e36f66814a06b7cc6f7704d10507b889" }
+  "Things": {
+    "_default": "2cf3dfa91bf91afcd4b256639bdfe0f0"
+  },
+  "Things 3": {
+    "_default": "4949e794f85b4452b925af638228deac"
+  },
+  "Tiniri": {
+    "_default": "37ec271fe9fc6802fdee03c5c68683a0"
+  },
+  "Tokyo Night": {
+    "_default": "342e3421afd2376b0b80997ccfab86ab"
+  },
+  "Tokyo Night Simple": {
+    "_default": "a1a61275d1957622db124e15152c29de"
+  },
+  "Tokyo Night Storm": {
+    "_default": "da272d8d6e145bed5b042c51e6159cb6"
+  },
+  "Tom's Theme": {
+    "_default": "3317d843e752e1edbc39fd596d319b16"
+  },
+  "Tomorrow": {
+    "_default": "4824884db0476db96a083b4fbc79ef9b"
+  },
+  "Tomorrow Night Bright": {
+    "_default": "4be32fc7fc016f3c2dd81282203d3221"
+  },
+  "Trace Labs": {
+    "_default": "9a98a132fa18f3ad5e59daade3de7825"
+  },
+  "Transient": {
+    "_default": "e0eb4e49b3818386d6aec7a4e53ff3ac"
+  },
+  "Transparent": {
+    "_default": "3378321f4ee67d65c8fb0d11eda084d5"
+  },
+  "True Black": {
+    "_default": "769fa44af76d729100381cf09b8018b7"
+  },
+  "Typewriter": {
+    "_default": "aa30380991d92b243d37b9f860aa5e04"
+  },
+  "Typomagical": {
+    "_default": "55819ed431329dd12b3ec883337732b3"
+  },
+  "Typora-Vue": {
+    "_default": "24856074dd19df175c00ff3d14a9f2bd"
+  },
+  "Tyrone Neon": {
+    "_default": "a92a3c54f11284a7dbc7633b178e9782"
+  },
+  "Ukiyo": {
+    "_default": "a916fb3f5ace840941319d11fb362074"
+  },
+  "Ultra Lobster": {
+    "_default": "d17d921642d6737352ecf406e87219cb"
+  },
+  "Underwater": {
+    "_default": "0f6ff36a2f75781e3c77d80adce5f2ce"
+  },
+  "Universitario": {
+    "_default": "377a728b55caa14e092a8585436a0325"
+  },
+  "Ursa": {
+    "_default": "f940ca2b3716ce85c3278398668327df"
+  },
+  "Vanilla AMOLED": {
+    "_default": "23a6b50292c29e608d04293e7f7c7eef"
+  },
+  "Vanilla AMOLED Color": {
+    "_default": "f1a79eddd2ea794d9feba5e1f0abc839"
+  },
+  "Vanilla Palettes": {
+    "_default": "63e8abff54142083e3927453fb7d12e6"
+  },
+  "Vauxhall": {
+    "_default": "1375851827bbb1ef5c161650c8c1d45a"
+  },
+  "Velocity": {
+    "_default": "eab0e12b52d6bc325aaa57477f7adff3"
+  },
+  "Velvet-Moon": {
+    "_default": "655710d5bd322cba101f8d3bb0136b34"
+  },
+  "Venom": {
+    "_default": "fa8ec74aadf3355f55794493757e5232"
+  },
+  "Vercel Geist": {
+    "_default": "a08f0e5bd5194990120fa9a40e6d03c4"
+  },
+  "Vermilion": {
+    "_default": "532f70ca298157ed253a3ffdbec096a8"
+  },
+  "Vesnea Vibe": {
+    "_default": "3011f452a76fb80c5a3e9aa29b2955d3"
+  },
+  "Vesper": {
+    "_default": "935b5e9c61ff8b7de12497241dfe6cd6"
+  },
+  "Vibrant": {
+    "_default": "39b669aadb8e15ec9f67ebadfbd1c798"
+  },
+  "Vicious": {
+    "_default": "22dfc5ed854236c391c4c6e4f950a623"
+  },
+  "Violet Evening": {
+    "_default": "3b1ec79f2a48cd0e43e78fa7cb8629d3"
+  },
+  "Virgo": {
+    "_default": "9d9cc93de216b454831f54d0cd0415ad"
+  },
+  "Vortex": {
+    "_default": "da6a78ab48bd8ec1e7c403a719adbf39"
+  },
+  "W95": {
+    "_default": "265478ce889c856a7fbacb9fab62afe1"
+  },
+  "Wasp": {
+    "_default": "6eda09cf17108d5d03147b9c8eea0f05"
+  },
+  "Wikipedia": {
+    "_default": "7388ad09cb8fe876a7299d8ca709ccd3"
+  },
+  "WilcoxOne": {
+    "_default": "fed495a3dc8dd48fc8d0798e921a272b"
+  },
+  "Willemstad": {
+    "_default": "d5c17c94f552b7cb1d2ace13d0b1ffdf"
+  },
+  "Winter Spices": {
+    "_default": "5296f1dbbb01a73c0b4b5c375038cbe3"
+  },
+  "WiseLight": {
+    "_default": "23d38f45a7b58ce4b086afb83ece65bb"
+  },
+  "Wombat": {
+    "_default": "9607842597002ba250ea52193b1d1c0d"
+  },
+  "WY Console": {
+    "_default": "f363a4997977953b8856fefb102618b9"
+  },
+  "Wyrd": {
+    "_default": "f0829bc460458c9f0962edfb3e05979c"
+  },
+  "Xscriptor": {
+    "_default": "b81c82208fe88049aa6e8dc797ce83ff"
+  },
+  "Yue": {
+    "_default": "1f7ef61b4eaa440a747b2aa0329f8c2b"
+  },
+  "Zario": {
+    "_default": "89f1059c6afa190e65fa978b1424690d"
+  },
+  "Zen": {
+    "_default": "9f2eebc950318c346a43efc27ff597ee"
+  },
+  "Zenburn": {
+    "_default": "e36f66814a06b7cc6f7704d10507b889"
+  }
 }
