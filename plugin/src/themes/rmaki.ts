@@ -1,0 +1,431 @@
+import type { ThemeData } from "../types.js";
+
+export const theme: ThemeData = {
+  meta: {
+    name: "rmaki",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["fira-code"],
+  },
+  dark: {
+    base: `:root:root {
+  --accent: rgb(135, 232, 206);
+  --black: rgb(28, 28, 33);
+  --black-dark-1: rgb(17, 17, 19);
+  --black-light-1: rgb(40, 40, 46);
+  --black-light-2: rgb(52, 52, 60);
+  --black-light-3: rgb(64, 64, 74);
+  --border: 0.5px solid rgb(95, 88, 157);
+  --current-line-bg: rgb(28, 28, 33);
+  --editor-background: rgb(17, 17, 19);
+  --editor-icons: rgb(134, 152, 172);
+  --editor-title: rgb(218, 231, 246);
+  --explorer-active: rgb(28, 28, 33);
+  --explorer-active-bg: rgb(135, 232, 206);
+  --explorer-hover: rgb(40, 40, 46);
+  --font: "Fira Code", monospace;
+  --formatting: rgb(135, 232, 206);
+  --h-black: 240;
+  --h-purple: 246;
+  --h-white: 212;
+  --heading: 1.1rem;
+  --heading-color: rgb(95, 88, 157);
+  --icon-accent: rgb(135, 232, 206);
+  --icon-hover: rgb(135, 232, 206);
+  --icon-normal: rgb(95, 88, 157);
+  --l-black: 12%;
+  --l-purple: 48%;
+  --l-white: 91%;
+  --line-number: rgb(65, 61, 108);
+  --list: rgb(95, 88, 157);
+  --par: 0.9rem;
+  --popup-dark: rgb(17, 17, 19);
+  --purple: rgb(95, 88, 157);
+  --purple-dark-1: rgb(85, 79, 140);
+  --purple-dark-2: rgb(75, 70, 124);
+  --purple-dark-3: rgb(65, 61, 108);
+  --purple-dark-4: rgb(55, 51, 91);
+  --purple-dark-5: rgb(46, 42, 75);
+  --purple-dark-6: rgb(36, 33, 59);
+  --purple-light-1: rgb(108, 102, 169);
+  --purple-light-2: rgb(124, 118, 178);
+  --purple-light-3: rgb(140, 134, 187);
+  --s-black: 7%;
+  --s-purple: 28%;
+  --s-white: 61%;
+  --search-bar: rgb(40, 40, 46);
+  --search-hover: rgb(95, 88, 157);
+  --sidebar-background: rgb(28, 28, 33);
+  --small: 0.7rem;
+  --tab-background: rgb(17, 17, 19);
+  --text: rgb(218, 231, 246);
+  --text-mute: rgb(134, 152, 172);
+  --white: rgb(218, 231, 246);
+  --white-dark-1: rgb(198, 218, 241);
+  --white-dark-2: rgb(177, 205, 236);
+  --white-dark-3: rgb(134, 152, 172);
+  --quartz-icon-color: currentColor;
+}
+
+body .page > div#quartz-body div.sidebar {
+  background-color: rgb(28, 28, 33);
+}`,
+    typography: `body .page article p > b, b {
+  font-family: "Fira Code", monospace;
+}
+
+body .page article p > em, em {
+  font-family: "Fira Code", monospace;
+}
+
+body .page article p > i, i {
+  font-family: "Fira Code", monospace;
+}
+
+body .page article p > strong, strong {
+  font-family: "Fira Code", monospace;
+}
+
+body .text-highlight {
+  background-color: rgb(135, 232, 206);
+  color: rgb(17, 17, 19);
+  font-family: "Fira Code", monospace;
+  outline: rgb(17, 17, 19) none 0px;
+  text-decoration: rgb(17, 17, 19);
+  text-decoration-color: rgb(17, 17, 19);
+}
+
+body del {
+  font-family: "Fira Code", monospace;
+}
+
+body p {
+  font-family: "Fira Code", monospace;
+}`,
+    links: `body a.external, footer a {
+  color: rgb(218, 231, 246);
+  font-family: "Fira Code", monospace;
+  outline: rgb(218, 231, 246) none 0px;
+  text-decoration: underline rgb(135, 232, 206);
+  text-decoration-color: rgb(135, 232, 206);
+}
+
+body a.internal, .breadcrumb-container .breadcrumb-element > a {
+  font-family: "Fira Code", monospace;
+  text-decoration: underline rgb(135, 232, 206);
+  text-decoration-color: rgb(135, 232, 206);
+}
+
+body a.internal.broken {
+  font-family: "Fira Code", monospace;
+  text-decoration: underline rgb(135, 232, 206);
+  text-decoration-color: rgb(135, 232, 206);
+}`,
+    lists: `body dl {
+  margin-bottom: 14.4px;
+  margin-top: 14.4px;
+}
+
+body ol > li {
+  color: rgb(218, 231, 246);
+}
+
+body ol.overflow {
+  background-color: rgb(17, 17, 19);
+}
+
+body ul > li {
+  color: rgb(218, 231, 246);
+}
+
+body ul.overflow {
+  background-color: rgb(17, 17, 19);
+}`,
+    blockquotes: `body .data-footnote-backref {
+  color: rgb(218, 231, 246);
+  text-decoration: underline rgb(135, 232, 206);
+}
+
+body blockquote {
+  font-family: "Fira Code", monospace;
+}`,
+    tables: `body table {
+  font-family: "Fira Code", monospace;
+  width: 222.094px;
+}
+
+body th {
+  color: rgb(135, 232, 206);
+}`,
+    images: `body figcaption {
+  font-family: "Fira Code", monospace;
+  font-size: 14.4px;
+}
+
+body figure {
+  margin-bottom: 14.4px;
+  margin-top: 14.4px;
+}
+
+body video {
+  border-bottom-color: rgb(218, 231, 246);
+  border-left-color: rgb(218, 231, 246);
+  border-right-color: rgb(218, 231, 246);
+  border-top-color: rgb(218, 231, 246);
+}`,
+    checkboxes: `body .katex-display > .katex {
+  font-family: "Fira Code", monospace;
+}
+
+body .katex-display > .katex > .katex-html {
+  font-family: "Fira Code", monospace;
+}
+
+body li.task-list-item[data-task='!'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='*'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='-'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='/'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='>'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='?'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='I'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='S'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='b'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='c'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='d'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='f'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='i'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='k'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='l'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='p'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='u'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}
+
+body li.task-list-item[data-task='w'] {
+  color: rgb(218, 231, 246);
+  text-decoration: rgb(218, 231, 246);
+  text-decoration-color: rgb(218, 231, 246);
+}`,
+    search: `body .search > .search-button {
+  background-color: rgb(17, 17, 19);
+  color: rgb(218, 231, 246);
+  font-family: "Fira Code", monospace;
+}
+
+body .search > .search-container > .search-space > * {
+  font-family: "Fira Code", monospace;
+}
+
+body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  border-bottom-left-radius: 25.2px;
+  border-bottom-right-radius: 25.2px;
+  border-top-left-radius: 25.2px;
+  border-top-right-radius: 25.2px;
+}
+
+body h1 {
+  color: rgb(135, 232, 206);
+  font-family: "Fira Code", monospace;
+}
+
+body h2 {
+  color: rgb(95, 88, 157);
+  font-family: "Fira Code", monospace;
+}
+
+body h2.page-title, h2.page-title a {
+  font-family: "Fira Code", monospace;
+}
+
+body h3 {
+  color: rgb(140, 134, 187);
+  font-family: "Fira Code", monospace;
+}
+
+body h4 {
+  color: rgb(95, 88, 157);
+  font-family: "Fira Code", monospace;
+}
+
+body h5 {
+  color: rgb(135, 232, 206);
+  font-family: "Fira Code", monospace;
+}
+
+body h6 {
+  color: rgb(95, 88, 157);
+  font-family: "Fira Code", monospace;
+}`,
+    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+  font-family: "Fira Code", monospace;
+}
+
+body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+  font-family: "Fira Code", monospace;
+}
+
+body .explorer .explorer-content ul.explorer-ul li a {
+  font-family: "Fira Code", monospace;
+}`,
+    footer: `body footer {
+  background-color: rgb(17, 17, 19);
+  border-top-color: rgb(95, 88, 157);
+  font-family: "Fira Code", monospace;
+}
+
+body footer ul li a {
+  color: rgb(134, 152, 172);
+  text-decoration: rgb(134, 152, 172);
+}`,
+    recentNotes: `body .recent-notes > h3 {
+  font-family: "Fira Code", monospace;
+}
+
+body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+  color: rgb(134, 152, 172);
+  text-decoration: rgb(134, 152, 172);
+}
+
+body .recent-notes > ul.recent-ul > li .section > .meta {
+  color: rgb(134, 152, 172);
+  font-family: "Fira Code", monospace;
+}`,
+    listPage: `body li.section-li > .section .meta {
+  color: rgb(134, 152, 172);
+  font-family: "Fira Code", monospace;
+}
+
+body li.section-li > .section > .desc > h3 > a {
+  color: rgb(134, 152, 172);
+  text-decoration: rgb(134, 152, 172);
+}`,
+    misc: `body .metadata {
+  font-family: "Fira Code", monospace;
+}
+
+body .metadata-properties {
+  font-family: "Fira Code", monospace;
+}
+
+body .navigation-progress {
+  background-color: rgb(17, 17, 19);
+}
+
+body .page-header h2.page-title {
+  color: rgb(218, 231, 246);
+}
+
+body abbr {
+  color: rgb(218, 231, 246);
+  text-decoration: underline dotted rgb(218, 231, 246);
+}
+
+body kbd {
+  font-size: 12.6px;
+  padding-bottom: 1.26px;
+  padding-left: 3.15px;
+  padding-right: 3.15px;
+  padding-top: 1.26px;
+}
+
+body progress {
+  border-bottom-color: rgb(218, 231, 246);
+  border-left-color: rgb(218, 231, 246);
+  border-right-color: rgb(218, 231, 246);
+  border-top-color: rgb(218, 231, 246);
+}
+
+body sub {
+  color: rgb(218, 231, 246);
+  font-size: 12px;
+}
+
+body sup {
+  color: rgb(218, 231, 246);
+  font-size: 12px;
+}`,
+  },
+  light: {},
+};
