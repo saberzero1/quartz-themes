@@ -1,6 +1,19 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+@font-face {
+    font-family: 'Ligconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ligconsolata'), url('https://fonts.cdnfonts.com/s/107278/Ligconsolata-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Ligconsolata';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Ligconsolata'), url('https://fonts.cdnfonts.com/s/107278/Ligconsolata-Bold.woff') format('woff');
+}
 
 /* Body */
 
@@ -18,11 +31,12 @@ body {
 	--background-ui-current: var(--color-default);
 
 	/* Editor */
-	--font-text-theme: Inconsolata;
-	--font-monospace-theme: Inconsolata;
+	--font-text-theme: "Ligconsolata";
+	--font-monospace-theme: "Fira Code";
+	--font-monospace-size: calc(var(--font-text-size) - 1px);
 	--font-weight: 450;
 	--font-stretch-theme: semi-expanded;
-	
+
 	--list-marker-color: var(--color-default);
 	--inline-title-color: var(--color-default);
 	--color-cm-list: hsl(210, 100%, 60%);
@@ -30,6 +44,7 @@ body {
 	--color-cm-checkbox: hsl(180, 100%, 50%);
 	--checkbox-border-color-hover: var(--color-ui-current);
 	--checkbox-marker-color: var(--color-ui-active);
+	--code-background: hsl(258, 20%, 23%);
 
 	/* GUI */
 	--icon-color: var(--color-default);
@@ -42,7 +57,7 @@ body {
 
 	--tab-text-color-focused-active-current: var(--color-ui-current);
 	--tab-text-color-focused-active: var(--color-ui-active);
-	
+
 	--date-background-color: transparent;
 }
 
@@ -65,11 +80,11 @@ body {
 	--color-background-day: transparent;
 	--color-background-weeknum: transparent;
 	--color-background-weekend: transparent;
-  
+
 	--color-dot: var(--text-muted);
 	--color-arrow: var(--text-muted);
 	--color-button: var(--text-muted);
-  
+
 	--color-text-title: var(--text-normal);
 	--color-text-heading: var(--text-muted);
 	--color-text-day: var(--text-normal);
@@ -87,7 +102,7 @@ body {
 
 .cm-s-obsidian span.cm-inline-code, .cm-s-obsidian .HyperMD-codeblock, .cm-s-obsidian .HyperMD-table-row {
 	font-variant-ligatures: discretionary-ligatures;
-	font-size: var(--font-text-size);
+	font-size: var(--font-monospace-size);
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
@@ -183,7 +198,7 @@ div.markdown-preview-view {
 }
 
 .cm-s-obsidian .HyperMD-table-row .cm-inline-code {
-	font-size: var(--font-text-size)  
+	font-size: var(--font-text-size)
 }
 
 .markdown-rendered th, .markdown-rendered td {
@@ -210,7 +225,14 @@ div.markdown-preview-view {
 	color: var(--color-cm-checkbox);
 }
 
+/* Syntax Highlighting */
+
+span.cm-atom.cm-hmd-codeblock {
+  color: #00b344;
+}
+
 /* Kanban */
+
 .kanban-plugin__meta-value, .kanban-plugin__markdown-preview-wrapper {
 	--line-height-normal: 1.5 /* same as --line-height-normal */
 }
@@ -271,7 +293,7 @@ div.kanban-plugin__lane-title-count {
 .kanban-plugin__item:has(.markdown-source-view) {
 	border-color: var(--color-default)
 }
-	
+
 .kanban-plugin__item-metadata .is-button:hover {
     color: var(--color-ui-active);
 }
@@ -602,4 +624,3 @@ body:not(.tasks) li[data-task='P'].task-list-item.is-checked,
 body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
   color: var(--text-normal);
 }
-

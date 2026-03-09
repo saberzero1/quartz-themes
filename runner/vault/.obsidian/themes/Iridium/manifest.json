@@ -1,7 +1,7 @@
 {
 	"name": "Iridium",
-	"version": "1.8.10",
-	"minAppVersion": "1.8.10",
+	"version": "1.8.13",
+	"minAppVersion": "1.12.4",
 	"author": "kyffa",
 	"authorUrl": "https://github.com/kyffa"
 }
