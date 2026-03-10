@@ -16,7 +16,12 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1102,7 +1107,12 @@ body sup {
   },
   light: {
     base: `:root:root {
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

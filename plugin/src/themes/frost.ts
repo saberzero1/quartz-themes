@@ -9,22 +9,27 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --color-bg-primary: #1a202c;
-  --color-bg-secondary: #2d3748;
-  --color-border: #4a5568;
+  --color-bg-primary: #1a202c !important;
+  --color-bg-secondary: #2d3748 !important;
+  --color-border: #4a5568 !important;
   --color-code-bg: #1e2937
-	--color-link: #edf2f7;
-  --color-text-primary: #edf2f7;
-  --color-text-secondary: #a0aec0;
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --radius-lg: 12px;
-  --radius-md: 8px;
-  --radius-sm: 4px;
-  --spacing-lg: 1.5rem;
-  --spacing-md: 1rem;
-  --spacing-sm: 0.5rem;
-  --quartz-icon-color: currentColor;
+	--color-link: #edf2f7 !important;
+  --color-text-primary: #edf2f7 !important;
+  --color-text-secondary: #a0aec0 !important;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  --radius-lg: 12px !important;
+  --radius-md: 8px !important;
+  --radius-sm: 4px !important;
+  --spacing-lg: 1.5rem !important;
+  --spacing-md: 1rem !important;
+  --spacing-sm: 0.5rem !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -315,22 +320,27 @@ body progress {
   },
   light: {
     base: `:root:root {
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8f9fa;
-  --color-border: #e2e8f0;
-  --color-code-bg: #f1f5f9;
-  --color-link: #1a202c;
-  --color-text-primary: #1a202c;
-  --color-text-secondary: #718096;
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --radius-lg: 12px;
-  --radius-md: 8px;
-  --radius-sm: 4px;
-  --spacing-lg: 1.5rem;
-  --spacing-md: 1rem;
-  --spacing-sm: 0.5rem;
-  --quartz-icon-color: currentColor;
+  --color-bg-primary: #ffffff !important;
+  --color-bg-secondary: #f8f9fa !important;
+  --color-border: #e2e8f0 !important;
+  --color-code-bg: #f1f5f9 !important;
+  --color-link: #1a202c !important;
+  --color-text-primary: #1a202c !important;
+  --color-text-secondary: #718096 !important;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  --radius-lg: 12px !important;
+  --radius-md: 8px !important;
+  --radius-sm: 4px !important;
+  --spacing-lg: 1.5rem !important;
+  --spacing-md: 1rem !important;
+  --spacing-sm: 0.5rem !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

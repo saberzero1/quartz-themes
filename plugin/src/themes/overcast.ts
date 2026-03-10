@@ -4,36 +4,41 @@ export const theme: ThemeData = {
   meta: { name: "overcast", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
-  --background-primary: semi-transparent;
-  --background-secondary: semi-transparent;
-  --bases-cards-background: semi-transparent;
-  --bases-table-cell-background-active: semi-transparent;
-  --bases-table-header-background: semi-transparent;
-  --bases-table-summary-background: semi-transparent;
-  --canvas-background: semi-transparent;
-  --checkbox-marker-color: semi-transparent;
-  --divider-width: 0px;
-  --file-header-background: semi-transparent;
-  --file-header-background-focused: semi-transparent;
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --menu-background: semi-transparent;
-  --modal-background: semi-transparent;
-  --pdf-background: semi-transparent;
-  --pdf-page-background: semi-transparent;
-  --pdf-sidebar-background: semi-transparent;
-  --prompt-background: semi-transparent;
-  --ribbon-background: semi-transparent;
-  --ribbon-background-collapsed: semi-transparent;
-  --search-result-background: semi-transparent;
-  --status-bar-background: semi-transparent;
-  --suggestion-background: semi-transparent;
-  --tab-background-active: semi-transparent;
-  --tab-container-background: semi-transparent;
-  --tab-switcher-background: semi-transparent;
-  --tab-switcher-menubar-background: linear-gradient(to top, semi-transparent, transparent);
-  --titlebar-background: semi-transparent;
-  --quartz-icon-color: currentColor;
+  --background-primary: semi-transparent !important;
+  --background-secondary: semi-transparent !important;
+  --bases-cards-background: semi-transparent !important;
+  --bases-table-cell-background-active: semi-transparent !important;
+  --bases-table-header-background: semi-transparent !important;
+  --bases-table-summary-background: semi-transparent !important;
+  --canvas-background: semi-transparent !important;
+  --checkbox-marker-color: semi-transparent !important;
+  --divider-width: 0px !important;
+  --file-header-background: semi-transparent !important;
+  --file-header-background-focused: semi-transparent !important;
+  --light: semi-transparent !important;
+  --lightgray: semi-transparent !important;
+  --menu-background: semi-transparent !important;
+  --modal-background: semi-transparent !important;
+  --pdf-background: semi-transparent !important;
+  --pdf-page-background: semi-transparent !important;
+  --pdf-sidebar-background: semi-transparent !important;
+  --prompt-background: semi-transparent !important;
+  --ribbon-background: semi-transparent !important;
+  --ribbon-background-collapsed: semi-transparent !important;
+  --search-result-background: semi-transparent !important;
+  --status-bar-background: semi-transparent !important;
+  --suggestion-background: semi-transparent !important;
+  --tab-background-active: semi-transparent !important;
+  --tab-container-background: semi-transparent !important;
+  --tab-switcher-background: semi-transparent !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, semi-transparent, transparent) !important;
+  --titlebar-background: semi-transparent !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

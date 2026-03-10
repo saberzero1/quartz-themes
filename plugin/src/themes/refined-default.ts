@@ -9,24 +9,29 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --bases-table-border-color: #dadada;
-  --bases-table-row-background-hover: #1e1e1e;
-  --bold-color: #a68af9;
-  --h4-color: #a68af9;
-  --link-color: #5980f7;
-  --link-color-hover: #8aa5f9;
-  --link-external-color: #5980f7;
-  --link-external-color-hover: #8aa5f9;
-  --link-unresolved-color: #5980f7;
-  --table-background: #1e1e1e;
-  --table-border-color: #dadada;
-  --table-column-alt-background: #1e1e1e;
-  --table-header-background: #1e1e1e;
-  --table-header-border-color: #dadada;
-  --table-row-alt-background: #1e1e1e;
-  --table-row-alt-background-hover: #1e1e1e;
-  --table-row-background-hover: #1e1e1e;
-  --quartz-icon-color: currentColor;
+  --bases-table-border-color: #dadada !important;
+  --bases-table-row-background-hover: #1e1e1e !important;
+  --bold-color: #a68af9 !important;
+  --h4-color: #a68af9 !important;
+  --link-color: #5980f7 !important;
+  --link-color-hover: #8aa5f9 !important;
+  --link-external-color: #5980f7 !important;
+  --link-external-color-hover: #8aa5f9 !important;
+  --link-unresolved-color: #5980f7 !important;
+  --table-background: #1e1e1e !important;
+  --table-border-color: #dadada !important;
+  --table-column-alt-background: #1e1e1e !important;
+  --table-header-background: #1e1e1e !important;
+  --table-header-border-color: #dadada !important;
+  --table-row-alt-background: #1e1e1e !important;
+  --table-row-alt-background-hover: #1e1e1e !important;
+  --table-row-background-hover: #1e1e1e !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     typography: `body .page article p > b, b {
   color: rgb(166, 138, 249);
@@ -95,33 +100,38 @@ body tr {
   },
   light: {
     base: `:root:root {
-  --background-secondary: #fafafa;
-  --bases-table-border-color: #222222;
-  --bases-table-row-background-hover: #ffffff;
-  --bold-color: #8a5cf5;
-  --h4-color: #8a5cf5;
-  --lightgray: var(--background-secondary);
-  --link-color: #2C54F2;
-  --link-color-hover: #5C7BF5;
-  --link-external-color: #2C54F2;
-  --link-external-color-hover: #5C7BF5;
-  --link-unresolved-color: #2C54F2;
-  --menu-background: #fafafa;
-  --ribbon-background: #fafafa;
-  --status-bar-background: #fafafa;
-  --tab-container-background: #fafafa;
-  --tab-switcher-background: #fafafa;
-  --tab-switcher-menubar-background: linear-gradient(to top, #fafafa, transparent);
-  --table-background: #ffffff;
-  --table-border-color: #222222;
-  --table-column-alt-background: #ffffff;
-  --table-header-background: #ffffff;
-  --table-header-border-color: #222222;
-  --table-row-alt-background: #ffffff;
-  --table-row-alt-background-hover: #ffffff;
-  --table-row-background-hover: #ffffff;
-  --titlebar-background: #fafafa;
-  --quartz-icon-color: currentColor;
+  --background-secondary: #fafafa !important;
+  --bases-table-border-color: #222222 !important;
+  --bases-table-row-background-hover: #ffffff !important;
+  --bold-color: #8a5cf5 !important;
+  --h4-color: #8a5cf5 !important;
+  --lightgray: #fafafa !important;
+  --link-color: #2C54F2 !important;
+  --link-color-hover: #5C7BF5 !important;
+  --link-external-color: #2C54F2 !important;
+  --link-external-color-hover: #5C7BF5 !important;
+  --link-unresolved-color: #2C54F2 !important;
+  --menu-background: #fafafa !important;
+  --ribbon-background: #fafafa !important;
+  --status-bar-background: #fafafa !important;
+  --tab-container-background: #fafafa !important;
+  --tab-switcher-background: #fafafa !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #fafafa, transparent) !important;
+  --table-background: #ffffff !important;
+  --table-border-color: #222222 !important;
+  --table-column-alt-background: #ffffff !important;
+  --table-header-background: #ffffff !important;
+  --table-header-border-color: #222222 !important;
+  --table-row-alt-background: #ffffff !important;
+  --table-row-alt-background-hover: #ffffff !important;
+  --table-row-background-hover: #ffffff !important;
+  --titlebar-background: #fafafa !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

@@ -9,7 +9,12 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     links: `body a.external, footer a {
   color: rgb(3, 102, 214);
@@ -401,7 +406,12 @@ body sup {
   },
   light: {
     base: `:root:root {
-  --quartz-icon-color: currentColor;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     links: `body a.external, footer a {
   color: rgb(3, 102, 214);

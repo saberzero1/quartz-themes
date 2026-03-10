@@ -13,319 +13,332 @@ export const theme: ThemeData = {
         353,
         65%,
         54%
-    );
+    ) !important;
   --accent-color-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --accent-color-rgb: 208, 66, 85;
-  --accent-h: 353;
-  --accent-l: 54%;
-  --accent-s: 65%;
-  --background-modifier-active: #303030;
-  --background-modifier-active-hover: rgba(214, 61, 79, 0.1);
-  --background-modifier-border: #383838;
-  --background-modifier-hover: #2a2a2a;
-  --background-secondary: #252525;
-  --bases-cards-radius: 5px;
-  --bases-cards-shadow: 0 0 0 1px #383838;
-  --bases-embed-border-color: #383838;
-  --bases-embed-border-radius: 3px;
-  --bases-group-heading-property-color: #a0a0a0;
-  --bases-table-border-color: #383838;
-  --bases-table-cell-background-selected: rgba(214, 61, 79, 0.1);
+    ) !important;
+  --accent-color-rgb: 208, 66, 85 !important;
+  --accent-h: 353 !important;
+  --accent-l: 54% !important;
+  --accent-s: 65% !important;
+  --background-modifier-active: #303030 !important;
+  --background-modifier-active-hover: rgba(214, 61, 79, 0.1) !important;
+  --background-modifier-border: #383838 !important;
+  --background-modifier-hover: #2a2a2a !important;
+  --background-secondary: #252525 !important;
+  --bases-cards-radius: 5px !important;
+  --bases-cards-shadow: 0 0 0 1px #383838 !important;
+  --bases-embed-border-color: #383838 !important;
+  --bases-embed-border-radius: 3px !important;
+  --bases-group-heading-property-color: #a0a0a0 !important;
+  --bases-table-border-color: #383838 !important;
+  --bases-table-cell-background-selected: rgba(214, 61, 79, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
         353,
         65%,
         54%
-    );
-  --bases-table-container-border-radius: 3px;
-  --bases-table-header-background-hover: #2a2a2a;
-  --bases-table-header-color: #a0a0a0;
-  --bases-table-summary-background-hover: #2a2a2a;
+    ) !important;
+  --bases-table-container-border-radius: 3px !important;
+  --bases-table-header-background-hover: #2a2a2a !important;
+  --bases-table-header-color: #a0a0a0 !important;
+  --bases-table-summary-background-hover: #2a2a2a !important;
   --blockquote-border-color: hsl(
         353,
         65%,
         54%
-    );
+    ) !important;
   --callout-radius: 3px;
-  --canvas-controls-radius: 3px;
-  --caret-color: #e0e0e0;
-  --checkbox-border-color-hover: #a0a0a0;
+  --canvas-controls-radius: 3px !important;
+  --caret-color: #e0e0e0 !important;
+  --checkbox-border-color-hover: #a0a0a0 !important;
   --checkbox-color: hsl(
         353,
         65%,
         54%
-    );
+    ) !important;
   --checkbox-color-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --checkbox-radius: 3px;
-  --checklist-done-color: #a0a0a0;
-  --clickable-icon-radius: 3px;
-  --code-border-color: #383838;
-  --code-bracket-background: #2a2a2a;
-  --code-normal: #e0e0e0;
-  --code-punctuation: #a0a0a0;
-  --code-radius: 3px;
+    ) !important;
+  --checkbox-radius: 3px !important;
+  --checklist-done-color: #a0a0a0 !important;
+  --clickable-icon-radius: 3px !important;
+  --code-border-color: #383838 !important;
+  --code-bracket-background: #2a2a2a !important;
+  --code-normal: #e0e0e0 !important;
+  --code-punctuation: #a0a0a0 !important;
+  --code-radius: 3px !important;
   --collapse-icon-color-collapsed: hsl(
         353,
         65%,
         54%
-    );
+    ) !important;
   --color-accent: hsl(
         353,
         65%,
         54%
-    );
-  --color-accent-1: rgb(222, 94, 115);
-  --color-accent-2: rgb(231, 126, 147);
+    ) !important;
+  --color-accent-1: rgb(222, 94, 115) !important;
+  --color-accent-2: rgb(231, 126, 147) !important;
   --color-accent-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --color-accent-hsl: 353, 65%, 54%;
-  --color-accent-rgb: 208, 66, 85;
-  --dark: var(--text-normal);
-  --darkgray: var(--text-normal);
-  --divider-color: #383838;
+    ) !important;
+  --color-accent-hsl: 353, 65%, 54% !important;
+  --color-accent-rgb: 208, 66, 85 !important;
+  --dark: #e0e0e0 !important;
+  --darkgray: #e0e0e0 !important;
+  --divider-color: #383838 !important;
   --divider-color-hover: hsl(
         353,
         65%,
         54%
-    );
-  --embed-block-shadow-hover: 0 0 0 1px #383838, inset 0 0 0 1px #383838;
+    ) !important;
+  --embed-block-shadow-hover: 0 0 0 1px #383838, inset 0 0 0 1px #383838 !important;
   --embed-border-start: 2px solid hsl(
         353,
         65%,
         54%
-    );
-  --flair-color: #e0e0e0;
-  --font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    ) !important;
+  --flair-color: #e0e0e0 !important;
+  --font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
   --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-  --footnote-divider-color: #383838;
-  --footnote-id-color: #a0a0a0;
-  --footnote-input-background-active: #2a2a2a;
-  --footnote-radius: 3px;
-  --graph-node: #a0a0a0;
+        sans-serif !important;
+  --footnote-divider-color: #383838 !important;
+  --footnote-id-color: #a0a0a0 !important;
+  --footnote-input-background-active: #2a2a2a !important;
+  --footnote-radius: 3px !important;
+  --graph-node: #a0a0a0 !important;
   --graph-node-focused: hsl(
         353,
         65%,
         54%
-    );
-  --graph-text: #e0e0e0;
-  --gray: var(--text-muted);
-  --highlight: var(--background-modifier-hover);
-  --hr-color: #383838;
-  --icon-color: #a0a0a0;
+    ) !important;
+  --graph-text: #e0e0e0 !important;
+  --gray: #a0a0a0 !important;
+  --highlight: #2a2a2a !important;
+  --hr-color: #383838 !important;
+  --icon-color: #a0a0a0 !important;
   --icon-color-active: hsl(
         353,
         65%,
         54%
-    );
-  --icon-color-focused: #e0e0e0;
-  --icon-color-hover: #a0a0a0;
-  --input-background: #2d2d2d;
-  --input-border-color: #383838;
+    ) !important;
+  --icon-color-focused: #e0e0e0 !important;
+  --icon-color-hover: #a0a0a0 !important;
+  --input-background: #2d2d2d !important;
+  --input-border-color: #383838 !important;
   --input-focus-border-color: hsl(
         353,
         65%,
         54%
-    );
-  --input-text-color: #e0e0e0;
+    ) !important;
+  --input-text-color: #e0e0e0 !important;
   --interactive-accent: hsl(
         353,
         65%,
         54%
-    );
+    ) !important;
   --interactive-accent-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --interactive-accent-hsl: 353, 65%, 54%;
-  --interactive-accent-rgb: 208, 66, 85;
-  --lightgray: var(--background-secondary);
+    ) !important;
+  --interactive-accent-hsl: 353, 65%, 54% !important;
+  --interactive-accent-rgb: 208, 66, 85 !important;
+  --lightgray: #252525 !important;
   --link-color: hsl(
         353,
         65%,
         54%
-    );
+    ) !important;
   --link-color-hover: hsl(
         353,
         65%,
         48% 
-    );
+    ) !important;
   --link-external-color: hsl(
         353,
         65%,
         54%
-    );
+    ) !important;
   --link-external-color-hover: hsl(
         353,
         65%,
         48% 
-    );
+    ) !important;
   --link-unresolved-color: hsl(
         353,
         65%,
         54%
-    );
-  --link-unresolved-decoration-color: rgba(214, 61, 79, 0.3);
+    ) !important;
+  --link-unresolved-decoration-color: rgba(214, 61, 79, 0.3) !important;
   --list-marker-color-collapsed: hsl(
         353,
         65%,
         54%
-    );
-  --list-marker-color-hover: #a0a0a0;
-  --menu-background: #252525;
-  --menu-radius: 5px;
-  --metadata-border-color: #383838;
-  --metadata-divider-color: #383838;
-  --metadata-input-background-active: #2a2a2a;
-  --metadata-input-text-color: #e0e0e0;
-  --metadata-label-background-active: #2a2a2a;
-  --metadata-label-text-color: #a0a0a0;
-  --metadata-label-text-color-hover: #a0a0a0;
-  --metadata-property-background-active: #2a2a2a;
-  --modal-radius: 8px;
-  --nav-heading-color: #e0e0e0;
-  --nav-heading-color-collapsed-hover: #a0a0a0;
-  --nav-heading-color-hover: #e0e0e0;
-  --nav-item-background-active: #2a2a2a;
-  --nav-item-background-hover: #2a2a2a;
-  --nav-item-background-selected: rgba(214, 61, 79, 0.15);
-  --nav-item-color: #a0a0a0;
-  --nav-item-color-active: #e0e0e0;
+    ) !important;
+  --list-marker-color-hover: #a0a0a0 !important;
+  --menu-background: #252525 !important;
+  --menu-radius: 5px !important;
+  --metadata-border-color: #383838 !important;
+  --metadata-divider-color: #383838 !important;
+  --metadata-input-background-active: #2a2a2a !important;
+  --metadata-input-text-color: #e0e0e0 !important;
+  --metadata-label-background-active: #2a2a2a !important;
+  --metadata-label-text-color: #a0a0a0 !important;
+  --metadata-label-text-color-hover: #a0a0a0 !important;
+  --metadata-property-background-active: #2a2a2a !important;
+  --modal-radius: 8px !important;
+  --nav-heading-color: #e0e0e0 !important;
+  --nav-heading-color-collapsed-hover: #a0a0a0 !important;
+  --nav-heading-color-hover: #e0e0e0 !important;
+  --nav-item-background-active: #2a2a2a !important;
+  --nav-item-background-hover: #2a2a2a !important;
+  --nav-item-background-selected: rgba(214, 61, 79, 0.15) !important;
+  --nav-item-color: #a0a0a0 !important;
+  --nav-item-color-active: #e0e0e0 !important;
   --nav-item-color-highlighted: hsl(
         353,
         65%,
         54%
-    );
-  --nav-item-color-hover: #e0e0e0;
-  --nav-item-color-selected: #e0e0e0;
-  --nav-item-radius: 3px;
-  --nav-tag-color-active: #a0a0a0;
-  --nav-tag-color-hover: #a0a0a0;
-  --nav-tag-radius: 3px;
-  --pdf-shadow: 0 0 0 1px #383838;
-  --pdf-thumbnail-shadow: 0 0 0 1px #383838;
-  --pill-border-color: #383838;
-  --pill-color: #a0a0a0;
-  --pill-color-hover: #e0e0e0;
+    ) !important;
+  --nav-item-color-hover: #e0e0e0 !important;
+  --nav-item-color-selected: #e0e0e0 !important;
+  --nav-item-radius: 3px !important;
+  --nav-tag-color-active: #a0a0a0 !important;
+  --nav-tag-color-hover: #a0a0a0 !important;
+  --nav-tag-radius: 3px !important;
+  --pdf-shadow: 0 0 0 1px #383838 !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #383838 !important;
+  --pill-border-color: #383838 !important;
+  --pill-color: #a0a0a0 !important;
+  --pill-color-hover: #e0e0e0 !important;
   --pill-color-remove-hover: hsl(
         353,
         65%,
         54%
-    );
-  --radius-l: 8px;
-  --radius-m: 5px;
-  --radius-s: 3px;
-  --ribbon-background: #252525;
-  --scrollbar-radius: 8px;
-  --search-clear-button-color: #a0a0a0;
-  --search-icon-color: #a0a0a0;
-  --secondary: var(--text-accent);
-  --setting-group-heading-color: #e0e0e0;
-  --setting-items-border-color: #383838;
-  --setting-items-radius: 8px;
-  --sidebar-background: #1e1e1e;
-  --sidebar-border-color: #383838;
-  --slider-track-background: #383838;
-  --spacing-l: 16px;
-  --spacing-m: 12px;
-  --spacing-s: 8px;
-  --spacing-xl: 24px;
-  --spacing-xs: 4px;
-  --status-bar-background: #252525;
-  --status-bar-border-color: #383838;
-  --status-bar-radius: 5px 0 0 0;
-  --status-bar-text-color: #a0a0a0;
-  --tab-container-background: #252525;
-  --tab-outline-color: #383838;
-  --tab-radius: 3px;
-  --tab-switcher-background: #252525;
-  --tab-switcher-menubar-background: linear-gradient(to top, #252525, transparent);
+    ) !important;
+  --radius-l: 8px !important;
+  --radius-m: 5px !important;
+  --radius-s: 3px !important;
+  --ribbon-background: #252525 !important;
+  --scrollbar-radius: 8px !important;
+  --search-clear-button-color: #a0a0a0 !important;
+  --search-icon-color: #a0a0a0 !important;
+  --secondary: hsl(
+        353,
+        65%,
+        54%
+    ) !important;
+  --setting-group-heading-color: #e0e0e0 !important;
+  --setting-items-border-color: #383838 !important;
+  --setting-items-radius: 8px !important;
+  --sidebar-background: #1e1e1e !important;
+  --sidebar-border-color: #383838 !important;
+  --slider-track-background: #383838 !important;
+  --spacing-l: 16px !important;
+  --spacing-m: 12px !important;
+  --spacing-s: 8px !important;
+  --spacing-xl: 24px !important;
+  --spacing-xs: 4px !important;
+  --status-bar-background: #252525 !important;
+  --status-bar-border-color: #383838 !important;
+  --status-bar-radius: 5px 0 0 0 !important;
+  --status-bar-text-color: #a0a0a0 !important;
+  --tab-container-background: #252525 !important;
+  --tab-outline-color: #383838 !important;
+  --tab-radius: 3px !important;
+  --tab-switcher-background: #252525 !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #252525, transparent) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(
         353,
         65%,
         54%
-    );
-  --tab-text-color-active: #a0a0a0;
-  --tab-text-color-focused: #a0a0a0;
-  --tab-text-color-focused-active: #a0a0a0;
-  --tab-text-color-focused-active-current: #e0e0e0;
+    ) !important;
+  --tab-text-color-active: #a0a0a0 !important;
+  --tab-text-color-focused: #a0a0a0 !important;
+  --tab-text-color-focused-active: #a0a0a0 !important;
+  --tab-text-color-focused-active-current: #e0e0e0 !important;
   --tab-text-color-focused-highlighted: hsl(
         353,
         65%,
         54%
-    );
-  --table-add-button-border-color: #383838;
-  --table-border-color: #383838;
+    ) !important;
+  --table-add-button-border-color: #383838 !important;
+  --table-border-color: #383838 !important;
   --table-drag-handle-background-active: hsl(
         353,
         65%,
         54%
-    );
-  --table-drag-handle-color-active: #ffffff;
-  --table-header-border-color: #383838;
-  --table-header-color: #e0e0e0;
-  --table-selection: rgba(214, 61, 79, 0.1);
+    ) !important;
+  --table-drag-handle-color-active: #ffffff !important;
+  --table-header-border-color: #383838 !important;
+  --table-header-color: #e0e0e0 !important;
+  --table-selection: rgba(214, 61, 79, 0.1) !important;
   --table-selection-border-color: hsl(
         353,
         65%,
         54%
-    );
-  --tag-background: rgba(214, 61, 79, 0.1);
-  --tag-background-hover: rgba(214, 61, 79, 0.2);
-  --tag-border-color: rgba(214, 61, 79, 0.15);
-  --tag-border-color-hover: rgba(214, 61, 79, 0.15);
+    ) !important;
+  --tag-background: rgba(214, 61, 79, 0.1) !important;
+  --tag-background-hover: rgba(214, 61, 79, 0.2) !important;
+  --tag-border-color: rgba(214, 61, 79, 0.15) !important;
+  --tag-border-color-hover: rgba(214, 61, 79, 0.15) !important;
   --tag-color: hsl(
         353,
         65%,
         54%
-    );
+    ) !important;
   --tag-color-hover: hsl(
         353,
         65%,
         54%
-    );
-  --tertiary: var(--text-accent-hover);
+    ) !important;
+  --tertiary: hsl(
+        353,
+        65%,
+        48% 
+    ) !important;
   --text-accent: hsl(
         353,
         65%,
         54%
-    );
+    ) !important;
   --text-accent-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --text-accent-rgb: 208, 66, 85;
-  --text-muted: #a0a0a0;
-  --text-normal: #e0e0e0;
-  --text-on-accent: #ffffff;
+    ) !important;
+  --text-accent-rgb: 208, 66, 85 !important;
+  --text-muted: #a0a0a0 !important;
+  --text-normal: #e0e0e0 !important;
+  --text-on-accent: #ffffff !important;
   --text-selection: rgba(
         208,
         66,
         85,
         0.3
-    );
-  --textHighlight: var(--background-modifier-hover);
-  --titlebar-background: #1e1e1e;
-  --titlebar-background-focused: #252525;
-  --titlebar-border-color: #383838;
-  --titlebar-text-color: #a0a0a0;
-  --titlebar-text-color-focused: #e0e0e0;
-  --vault-profile-color: #e0e0e0;
-  --vault-profile-color-hover: #e0e0e0;
-  --quartz-icon-color: currentColor;
+    ) !important;
+  --textHighlight: #2a2a2a !important;
+  --titlebar-background: #1e1e1e !important;
+  --titlebar-background-focused: #252525 !important;
+  --titlebar-border-color: #383838 !important;
+  --titlebar-text-color: #a0a0a0 !important;
+  --titlebar-text-color-focused: #e0e0e0 !important;
+  --vault-profile-color: #e0e0e0 !important;
+  --vault-profile-color-hover: #e0e0e0 !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1240,317 +1253,330 @@ body sup {
         353,
         65%,
         60%
-    );
+    ) !important;
   --accent-color-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --accent-color-rgb: 208, 66, 85;
-  --accent-h: 353;
-  --accent-l: 60%;
-  --accent-s: 65%;
-  --background-modifier-active: #e8eaed;
-  --background-modifier-active-hover: rgba(219, 87, 102, 0.1);
-  --background-modifier-border: #dadce0;
-  --background-modifier-hover: #f1f3f4;
-  --background-secondary: #f8f9fa;
-  --bases-cards-radius: 5px;
-  --bases-cards-shadow: 0 0 0 1px #dadce0;
-  --bases-embed-border-color: #dadce0;
-  --bases-embed-border-radius: 3px;
-  --bases-group-heading-property-color: #5f6368;
-  --bases-table-border-color: #dadce0;
-  --bases-table-cell-background-selected: rgba(219, 87, 102, 0.1);
+    ) !important;
+  --accent-color-rgb: 208, 66, 85 !important;
+  --accent-h: 353 !important;
+  --accent-l: 60% !important;
+  --accent-s: 65% !important;
+  --background-modifier-active: #e8eaed !important;
+  --background-modifier-active-hover: rgba(219, 87, 102, 0.1) !important;
+  --background-modifier-border: #dadce0 !important;
+  --background-modifier-hover: #f1f3f4 !important;
+  --background-secondary: #f8f9fa !important;
+  --bases-cards-radius: 5px !important;
+  --bases-cards-shadow: 0 0 0 1px #dadce0 !important;
+  --bases-embed-border-color: #dadce0 !important;
+  --bases-embed-border-radius: 3px !important;
+  --bases-group-heading-property-color: #5f6368 !important;
+  --bases-table-border-color: #dadce0 !important;
+  --bases-table-cell-background-selected: rgba(219, 87, 102, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
         353,
         65%,
         60%
-    );
-  --bases-table-container-border-radius: 3px;
-  --bases-table-header-background-hover: #f1f3f4;
-  --bases-table-header-color: #5f6368;
-  --bases-table-summary-background-hover: #f1f3f4;
+    ) !important;
+  --bases-table-container-border-radius: 3px !important;
+  --bases-table-header-background-hover: #f1f3f4 !important;
+  --bases-table-header-color: #5f6368 !important;
+  --bases-table-summary-background-hover: #f1f3f4 !important;
   --blockquote-border-color: hsl(
         353,
         65%,
         60%
-    );
+    ) !important;
   --callout-radius: 3px;
-  --canvas-controls-radius: 3px;
-  --caret-color: #202124;
-  --checkbox-border-color-hover: #5f6368;
+  --canvas-controls-radius: 3px !important;
+  --caret-color: #202124 !important;
+  --checkbox-border-color-hover: #5f6368 !important;
   --checkbox-color: hsl(
         353,
         65%,
         60%
-    );
+    ) !important;
   --checkbox-color-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --checkbox-radius: 3px;
-  --checklist-done-color: #5f6368;
-  --clickable-icon-radius: 3px;
-  --code-border-color: #dadce0;
-  --code-bracket-background: #f1f3f4;
-  --code-normal: #202124;
-  --code-punctuation: #5f6368;
-  --code-radius: 3px;
+    ) !important;
+  --checkbox-radius: 3px !important;
+  --checklist-done-color: #5f6368 !important;
+  --clickable-icon-radius: 3px !important;
+  --code-border-color: #dadce0 !important;
+  --code-bracket-background: #f1f3f4 !important;
+  --code-normal: #202124 !important;
+  --code-punctuation: #5f6368 !important;
+  --code-radius: 3px !important;
   --collapse-icon-color-collapsed: hsl(
         353,
         65%,
         60%
-    );
+    ) !important;
   --color-accent: hsl(
         353,
         65%,
         60%
-    );
-  --color-accent-1: rgb(225, 107, 123);
-  --color-accent-2: rgb(228, 124, 141);
+    ) !important;
+  --color-accent-1: rgb(225, 107, 123) !important;
+  --color-accent-2: rgb(228, 124, 141) !important;
   --color-accent-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --color-accent-hsl: 353, 65%, 60%;
-  --color-accent-rgb: 208, 66, 85;
-  --dark: var(--text-normal);
-  --darkgray: var(--text-normal);
-  --divider-color: #dadce0;
+    ) !important;
+  --color-accent-hsl: 353, 65%, 60% !important;
+  --color-accent-rgb: 208, 66, 85 !important;
+  --dark: #202124 !important;
+  --darkgray: #202124 !important;
+  --divider-color: #dadce0 !important;
   --divider-color-hover: hsl(
         353,
         65%,
         60%
-    );
-  --embed-block-shadow-hover: 0 0 0 1px #dadce0, inset 0 0 0 1px #dadce0;
+    ) !important;
+  --embed-block-shadow-hover: 0 0 0 1px #dadce0, inset 0 0 0 1px #dadce0 !important;
   --embed-border-start: 2px solid hsl(
         353,
         65%,
         60%
-    );
-  --flair-color: #202124;
-  --font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    ) !important;
+  --flair-color: #202124 !important;
+  --font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
   --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-  --footnote-divider-color: #dadce0;
-  --footnote-id-color: #5f6368;
-  --footnote-input-background-active: #f1f3f4;
-  --footnote-radius: 3px;
-  --graph-node: #5f6368;
+        sans-serif !important;
+  --footnote-divider-color: #dadce0 !important;
+  --footnote-id-color: #5f6368 !important;
+  --footnote-input-background-active: #f1f3f4 !important;
+  --footnote-radius: 3px !important;
+  --graph-node: #5f6368 !important;
   --graph-node-focused: hsl(
         353,
         65%,
         60%
-    );
-  --graph-text: #202124;
-  --gray: var(--text-muted);
-  --highlight: var(--background-modifier-hover);
-  --hr-color: #dadce0;
-  --icon-color: #5f6368;
+    ) !important;
+  --graph-text: #202124 !important;
+  --gray: #5f6368 !important;
+  --highlight: #f1f3f4 !important;
+  --hr-color: #dadce0 !important;
+  --icon-color: #5f6368 !important;
   --icon-color-active: hsl(
         353,
         65%,
         60%
-    );
-  --icon-color-focused: #202124;
-  --icon-color-hover: #5f6368;
-  --input-background: #ffffff;
-  --input-border-color: #dadce0;
+    ) !important;
+  --icon-color-focused: #202124 !important;
+  --icon-color-hover: #5f6368 !important;
+  --input-background: #ffffff !important;
+  --input-border-color: #dadce0 !important;
   --input-focus-border-color: hsl(
         353,
         65%,
         60%
-    );
-  --input-text-color: #202124;
+    ) !important;
+  --input-text-color: #202124 !important;
   --interactive-accent: hsl(
         353,
         65%,
         60%
-    );
+    ) !important;
   --interactive-accent-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --interactive-accent-hsl: 353, 65%, 60%;
-  --interactive-accent-rgb: 208, 66, 85;
-  --lightgray: var(--background-secondary);
+    ) !important;
+  --interactive-accent-hsl: 353, 65%, 60% !important;
+  --interactive-accent-rgb: 208, 66, 85 !important;
+  --lightgray: #f8f9fa !important;
   --link-color: hsl(
         353,
         65%,
         60%
-    );
+    ) !important;
   --link-color-hover: hsl(
         353,
         65%,
         48% 
-    );
+    ) !important;
   --link-external-color: hsl(
         353,
         65%,
         60%
-    );
+    ) !important;
   --link-external-color-hover: hsl(
         353,
         65%,
         48% 
-    );
+    ) !important;
   --link-unresolved-color: hsl(
         353,
         65%,
         60%
-    );
-  --link-unresolved-decoration-color: rgba(219, 87, 102, 0.3);
+    ) !important;
+  --link-unresolved-decoration-color: rgba(219, 87, 102, 0.3) !important;
   --list-marker-color-collapsed: hsl(
         353,
         65%,
         60%
-    );
-  --list-marker-color-hover: #5f6368;
-  --menu-background: #f8f9fa;
-  --menu-radius: 5px;
-  --metadata-border-color: #dadce0;
-  --metadata-divider-color: #dadce0;
-  --metadata-input-background-active: #f1f3f4;
-  --metadata-input-text-color: #202124;
-  --metadata-label-background-active: #f1f3f4;
-  --metadata-label-text-color: #5f6368;
-  --metadata-label-text-color-hover: #5f6368;
-  --metadata-property-background-active: #f1f3f4;
-  --modal-radius: 8px;
-  --nav-heading-color: #202124;
-  --nav-heading-color-collapsed-hover: #5f6368;
-  --nav-heading-color-hover: #202124;
-  --nav-item-background-active: #f1f3f4;
-  --nav-item-background-hover: #f1f3f4;
-  --nav-item-background-selected: rgba(219, 87, 102, 0.15);
-  --nav-item-color: #5f6368;
-  --nav-item-color-active: #202124;
+    ) !important;
+  --list-marker-color-hover: #5f6368 !important;
+  --menu-background: #f8f9fa !important;
+  --menu-radius: 5px !important;
+  --metadata-border-color: #dadce0 !important;
+  --metadata-divider-color: #dadce0 !important;
+  --metadata-input-background-active: #f1f3f4 !important;
+  --metadata-input-text-color: #202124 !important;
+  --metadata-label-background-active: #f1f3f4 !important;
+  --metadata-label-text-color: #5f6368 !important;
+  --metadata-label-text-color-hover: #5f6368 !important;
+  --metadata-property-background-active: #f1f3f4 !important;
+  --modal-radius: 8px !important;
+  --nav-heading-color: #202124 !important;
+  --nav-heading-color-collapsed-hover: #5f6368 !important;
+  --nav-heading-color-hover: #202124 !important;
+  --nav-item-background-active: #f1f3f4 !important;
+  --nav-item-background-hover: #f1f3f4 !important;
+  --nav-item-background-selected: rgba(219, 87, 102, 0.15) !important;
+  --nav-item-color: #5f6368 !important;
+  --nav-item-color-active: #202124 !important;
   --nav-item-color-highlighted: hsl(
         353,
         65%,
         60%
-    );
-  --nav-item-color-hover: #202124;
-  --nav-item-color-selected: #202124;
-  --nav-item-radius: 3px;
-  --nav-tag-color-active: #5f6368;
-  --nav-tag-color-hover: #5f6368;
-  --nav-tag-radius: 3px;
-  --pill-border-color: #dadce0;
-  --pill-color: #5f6368;
-  --pill-color-hover: #202124;
+    ) !important;
+  --nav-item-color-hover: #202124 !important;
+  --nav-item-color-selected: #202124 !important;
+  --nav-item-radius: 3px !important;
+  --nav-tag-color-active: #5f6368 !important;
+  --nav-tag-color-hover: #5f6368 !important;
+  --nav-tag-radius: 3px !important;
+  --pill-border-color: #dadce0 !important;
+  --pill-color: #5f6368 !important;
+  --pill-color-hover: #202124 !important;
   --pill-color-remove-hover: hsl(
         353,
         65%,
         60%
-    );
-  --radius-l: 8px;
-  --radius-m: 5px;
-  --radius-s: 3px;
-  --ribbon-background: #f8f9fa;
-  --scrollbar-radius: 8px;
-  --search-clear-button-color: #5f6368;
-  --search-icon-color: #5f6368;
-  --secondary: var(--text-accent);
-  --setting-group-heading-color: #202124;
-  --setting-items-border-color: #dadce0;
-  --setting-items-radius: 8px;
-  --sidebar-background: #ffffff;
-  --sidebar-border-color: #dadce0;
-  --slider-track-background: #dadce0;
-  --spacing-l: 16px;
-  --spacing-m: 12px;
-  --spacing-s: 8px;
-  --spacing-xl: 24px;
-  --spacing-xs: 4px;
-  --status-bar-background: #f8f9fa;
-  --status-bar-border-color: #dadce0;
-  --status-bar-radius: 5px 0 0 0;
-  --status-bar-text-color: #5f6368;
-  --tab-container-background: #f8f9fa;
-  --tab-outline-color: #dadce0;
-  --tab-radius: 3px;
-  --tab-switcher-background: #f8f9fa;
-  --tab-switcher-menubar-background: linear-gradient(to top, #f8f9fa, transparent);
+    ) !important;
+  --radius-l: 8px !important;
+  --radius-m: 5px !important;
+  --radius-s: 3px !important;
+  --ribbon-background: #f8f9fa !important;
+  --scrollbar-radius: 8px !important;
+  --search-clear-button-color: #5f6368 !important;
+  --search-icon-color: #5f6368 !important;
+  --secondary: hsl(
+        353,
+        65%,
+        60%
+    ) !important;
+  --setting-group-heading-color: #202124 !important;
+  --setting-items-border-color: #dadce0 !important;
+  --setting-items-radius: 8px !important;
+  --sidebar-background: #ffffff !important;
+  --sidebar-border-color: #dadce0 !important;
+  --slider-track-background: #dadce0 !important;
+  --spacing-l: 16px !important;
+  --spacing-m: 12px !important;
+  --spacing-s: 8px !important;
+  --spacing-xl: 24px !important;
+  --spacing-xs: 4px !important;
+  --status-bar-background: #f8f9fa !important;
+  --status-bar-border-color: #dadce0 !important;
+  --status-bar-radius: 5px 0 0 0 !important;
+  --status-bar-text-color: #5f6368 !important;
+  --tab-container-background: #f8f9fa !important;
+  --tab-outline-color: #dadce0 !important;
+  --tab-radius: 3px !important;
+  --tab-switcher-background: #f8f9fa !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #f8f9fa, transparent) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(
         353,
         65%,
         60%
-    );
-  --tab-text-color-active: #5f6368;
-  --tab-text-color-focused: #5f6368;
-  --tab-text-color-focused-active: #5f6368;
-  --tab-text-color-focused-active-current: #202124;
+    ) !important;
+  --tab-text-color-active: #5f6368 !important;
+  --tab-text-color-focused: #5f6368 !important;
+  --tab-text-color-focused-active: #5f6368 !important;
+  --tab-text-color-focused-active-current: #202124 !important;
   --tab-text-color-focused-highlighted: hsl(
         353,
         65%,
         60%
-    );
-  --table-add-button-border-color: #dadce0;
-  --table-border-color: #dadce0;
+    ) !important;
+  --table-add-button-border-color: #dadce0 !important;
+  --table-border-color: #dadce0 !important;
   --table-drag-handle-background-active: hsl(
         353,
         65%,
         60%
-    );
-  --table-drag-handle-color-active: #ffffff;
-  --table-header-border-color: #dadce0;
-  --table-header-color: #202124;
-  --table-selection: rgba(219, 87, 102, 0.1);
+    ) !important;
+  --table-drag-handle-color-active: #ffffff !important;
+  --table-header-border-color: #dadce0 !important;
+  --table-header-color: #202124 !important;
+  --table-selection: rgba(219, 87, 102, 0.1) !important;
   --table-selection-border-color: hsl(
         353,
         65%,
         60%
-    );
-  --tag-background: rgba(219, 87, 102, 0.1);
-  --tag-background-hover: rgba(219, 87, 102, 0.2);
-  --tag-border-color: rgba(219, 87, 102, 0.15);
-  --tag-border-color-hover: rgba(219, 87, 102, 0.15);
+    ) !important;
+  --tag-background: rgba(219, 87, 102, 0.1) !important;
+  --tag-background-hover: rgba(219, 87, 102, 0.2) !important;
+  --tag-border-color: rgba(219, 87, 102, 0.15) !important;
+  --tag-border-color-hover: rgba(219, 87, 102, 0.15) !important;
   --tag-color: hsl(
         353,
         65%,
         60%
-    );
+    ) !important;
   --tag-color-hover: hsl(
         353,
         65%,
         60%
-    );
-  --tertiary: var(--text-accent-hover);
+    ) !important;
+  --tertiary: hsl(
+        353,
+        65%,
+        48% 
+    ) !important;
   --text-accent: hsl(
         353,
         65%,
         60%
-    );
+    ) !important;
   --text-accent-hover: hsl(
         353,
         65%,
         48% 
-    );
-  --text-accent-rgb: 208, 66, 85;
-  --text-muted: #5f6368;
-  --text-normal: #202124;
-  --text-on-accent: #ffffff;
+    ) !important;
+  --text-accent-rgb: 208, 66, 85 !important;
+  --text-muted: #5f6368 !important;
+  --text-normal: #202124 !important;
+  --text-on-accent: #ffffff !important;
   --text-selection: rgba(
         208,
         66,
         85,
         0.2
-    );
-  --textHighlight: var(--background-modifier-hover);
-  --titlebar-background: #ffffff;
-  --titlebar-background-focused: #f8f9fa;
-  --titlebar-border-color: #dadce0;
-  --titlebar-text-color: #5f6368;
-  --titlebar-text-color-focused: #202124;
-  --vault-profile-color: #202124;
-  --vault-profile-color-hover: #202124;
-  --quartz-icon-color: currentColor;
+    ) !important;
+  --textHighlight: #f1f3f4 !important;
+  --titlebar-background: #ffffff !important;
+  --titlebar-background-focused: #f8f9fa !important;
+  --titlebar-border-color: #dadce0 !important;
+  --titlebar-text-color: #5f6368 !important;
+  --titlebar-text-color-focused: #202124 !important;
+  --vault-profile-color: #202124 !important;
+  --vault-profile-color-hover: #202124 !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
