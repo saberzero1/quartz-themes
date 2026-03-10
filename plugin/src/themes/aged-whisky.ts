@@ -244,36 +244,36 @@ html body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(9, 9, 9);
   color: rgb(173, 173, 173);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(9, 9, 9);
   color: rgb(173, 173, 173);
 }
 
-body .page > div#quartz-body div.sidebar {
+html body .page > div#quartz-body div.sidebar {
   background-color: rgb(9, 9, 9);
   color: rgb(173, 173, 173);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(9, 9, 9);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(173, 173, 173);
 }
 
-body div#quartz-root {
+html body div#quartz-root {
   background-color: rgb(9, 9, 9);
   color: rgb(173, 173, 173);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html body .page article p > b, b {
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
   outline: rgb(173, 173, 173) none 0px;
@@ -281,7 +281,7 @@ body div#quartz-root {
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body .page article p > em, em {
+html body .page article p > em, em {
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
   outline: rgb(173, 173, 173) none 0px;
@@ -289,7 +289,7 @@ body .page article p > em, em {
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body .page article p > i, i {
+html body .page article p > i, i {
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
   outline: rgb(173, 173, 173) none 0px;
@@ -297,7 +297,7 @@ body .page article p > i, i {
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body .page article p > strong, strong {
+html body .page article p > strong, strong {
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
   outline: rgb(173, 173, 173) none 0px;
@@ -305,7 +305,7 @@ body .page article p > strong, strong {
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body .text-highlight {
+html body .text-highlight {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
@@ -314,7 +314,7 @@ body .text-highlight {
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body del {
+html body del {
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
   outline: rgb(173, 173, 173) none 0px;
@@ -322,13 +322,13 @@ body del {
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body p {
+html body p {
   color: rgb(173, 173, 173);
   outline: rgb(173, 173, 173) none 0px;
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }`,
-    links: `body a.external, footer a {
+    links: `html body a.external, footer a {
   color: rgb(141, 106, 80);
   font-family: "yu gothic ui", sans-serif;
   font-weight: 600;
@@ -337,7 +337,7 @@ body p {
   text-decoration-color: rgba(142, 116, 109, 0.5);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(141, 106, 80);
   font-family: "yu gothic ui", sans-serif;
   font-weight: 600;
@@ -346,30 +346,30 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgba(142, 116, 109, 0.5);
 }
 
-body a.internal.broken {
+html body a.internal.broken {
   color: rgb(141, 106, 80);
   font-family: "yu gothic ui", sans-serif;
   font-weight: 600;
   outline: rgb(141, 106, 80) none 0px;
 }`,
-    lists: `body dd {
+    lists: `html body dd {
   color: rgb(173, 173, 173);
 }
 
-body dl {
+html body dl {
   margin-bottom: 12.5px;
   margin-top: 12.5px;
 }
 
-body dt {
+html body dt {
   color: rgb(173, 173, 173);
 }
 
-body ol > li {
+html body ol > li {
   color: rgb(173, 173, 173);
 }
 
-body ol.overflow {
+html body ol.overflow {
   background-color: rgb(9, 9, 9);
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
@@ -377,39 +377,39 @@ body ol.overflow {
   border-top-color: rgb(173, 173, 173);
 }
 
-body ul > li {
+html body ul > li {
   color: rgb(173, 173, 173);
 }
 
-body ul.overflow {
+html body ul.overflow {
   background-color: rgb(9, 9, 9);
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html body .data-footnote-backref {
   color: rgb(84, 69, 58);
   text-decoration: rgb(84, 69, 58);
 }
 
-body blockquote {
+html body blockquote {
   font-family: "yu gothic ui", sans-serif;
 }`,
-    tables: `body .table-container {
+    tables: `html body .table-container {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }
 
-body table {
+html body table {
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
   width: 161.953px;
 }
 
-body td {
+html body td {
   border-bottom-color: rgb(9, 9, 9);
   border-left-color: rgb(9, 9, 9);
   border-right-color: rgb(9, 9, 9);
@@ -417,14 +417,14 @@ body td {
   color: rgb(173, 173, 173);
 }
 
-body th {
+html body th {
   border-bottom-color: rgb(9, 9, 9);
   border-left-color: rgb(9, 9, 9);
   border-right-color: rgb(9, 9, 9);
   border-top-color: rgb(9, 9, 9);
   color: rgb(173, 173, 173);
 }`,
-    code: `body code {
+    code: `html body code {
   border-bottom-color: rgb(173, 173, 173);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -436,7 +436,7 @@ body th {
   color: rgb(173, 173, 173);
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(20, 20, 20);
   border-bottom-color: rgb(9, 9, 9);
   border-bottom-left-radius: 0px;
@@ -448,7 +448,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-right-radius: 0px;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(20, 20, 20);
   border-bottom-color: rgb(9, 9, 9);
   border-bottom-left-radius: 0px;
@@ -461,7 +461,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(173, 173, 173);
 }
 
-body pre > code, pre:has(> code) {
+html body pre > code, pre:has(> code) {
   background-color: rgb(20, 20, 20);
   border-bottom-color: rgb(9, 9, 9);
   border-bottom-left-radius: 0px;
@@ -473,7 +473,7 @@ body pre > code, pre:has(> code) {
   border-top-right-radius: 0px;
 }
 
-body pre:has(> code) {
+html body pre:has(> code) {
   background-color: rgb(20, 20, 20);
   border-bottom-color: rgb(9, 9, 9);
   border-bottom-left-radius: 0px;
@@ -484,20 +484,20 @@ body pre:has(> code) {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }`,
-    images: `body audio {
+    images: `html body audio {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }
 
-body figcaption {
+html body figcaption {
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
   font-size: 12.5px;
 }
 
-body figure {
+html body figure {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
@@ -506,7 +506,7 @@ body figure {
   margin-top: 12.5px;
 }
 
-body img {
+html body img {
   border-bottom-color: rgb(173, 173, 173);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -518,13 +518,13 @@ body img {
   border-top-right-radius: 8px;
 }
 
-body video {
+html body video {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html body .file-embed {
   background-color: rgb(141, 106, 80);
   border-bottom-color: rgb(173, 173, 173);
   border-bottom-left-radius: 0px;
@@ -536,37 +536,37 @@ body video {
   border-top-right-radius: 0px;
 }
 
-body .footnotes {
+html body .footnotes {
   border-top-color: rgb(173, 173, 173);
   color: rgb(173, 173, 173);
 }
 
-body .transclude {
+html body .transclude {
   border-bottom-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }
 
-body .transclude-inner {
+html body .transclude-inner {
   border-bottom-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html body .katex-display > .katex {
   font-family: "yu gothic ui", sans-serif;
 }
 
-body .katex-display > .katex > .katex-html {
+html body .katex-display > .katex > .katex-html {
   font-family: "yu gothic ui", sans-serif;
 }
 
-body .page article li:has(>input[type=checkbox]:checked) {
+html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(173, 173, 173);
   text-decoration: line-through rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body input[type=checkbox] {
+html body input[type=checkbox] {
   border-bottom-color: rgb(141, 106, 80);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -579,121 +579,121 @@ body input[type=checkbox] {
   width: 12.5px;
 }
 
-body li.task-list-item[data-task='!'] {
+html body li.task-list-item[data-task='!'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='*'] {
+html body li.task-list-item[data-task='*'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='-'] {
+html body li.task-list-item[data-task='-'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='/'] {
+html body li.task-list-item[data-task='/'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='>'] {
+html body li.task-list-item[data-task='>'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='?'] {
+html body li.task-list-item[data-task='?'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='I'] {
+html body li.task-list-item[data-task='I'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='S'] {
+html body li.task-list-item[data-task='S'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='b'] {
+html body li.task-list-item[data-task='b'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='c'] {
+html body li.task-list-item[data-task='c'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='d'] {
+html body li.task-list-item[data-task='d'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='f'] {
+html body li.task-list-item[data-task='f'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='i'] {
+html body li.task-list-item[data-task='i'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='k'] {
+html body li.task-list-item[data-task='k'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='l'] {
+html body li.task-list-item[data-task='l'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='p'] {
+html body li.task-list-item[data-task='p'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='u'] {
+html body li.task-list-item[data-task='u'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body li.task-list-item[data-task='w'] {
+html body li.task-list-item[data-task='w'] {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
   text-decoration-color: rgb(173, 173, 173);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html body .callout .callout-title {
   border-bottom-color: rgb(175, 169, 163);
   border-left-color: rgb(175, 169, 163);
   border-right-color: rgb(175, 169, 163);
   border-top-color: rgb(175, 169, 163);
 }
 
-body .callout[data-callout="abstract"] {
+html body .callout[data-callout="abstract"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -704,7 +704,7 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="bug"] {
+html body .callout[data-callout="bug"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -715,7 +715,7 @@ body .callout[data-callout="bug"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="danger"] {
+html body .callout[data-callout="danger"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -726,7 +726,7 @@ body .callout[data-callout="danger"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="example"] {
+html body .callout[data-callout="example"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -737,7 +737,7 @@ body .callout[data-callout="example"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="failure"] {
+html body .callout[data-callout="failure"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -748,7 +748,7 @@ body .callout[data-callout="failure"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="info"] {
+html body .callout[data-callout="info"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -759,7 +759,7 @@ body .callout[data-callout="info"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="note"] {
+html body .callout[data-callout="note"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -770,7 +770,7 @@ body .callout[data-callout="note"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="question"] {
+html body .callout[data-callout="question"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -781,7 +781,7 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="quote"] {
+html body .callout[data-callout="quote"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -792,7 +792,7 @@ body .callout[data-callout="quote"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="success"] {
+html body .callout[data-callout="success"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -803,7 +803,7 @@ body .callout[data-callout="success"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="tip"] {
+html body .callout[data-callout="tip"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -814,7 +814,7 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="todo"] {
+html body .callout[data-callout="todo"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -825,7 +825,7 @@ body .callout[data-callout="todo"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="warning"] {
+html body .callout[data-callout="warning"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -835,7 +835,7 @@ body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }`,
-    search: `body .search > .search-button {
+    search: `html body .search > .search-button {
   background-color: rgb(9, 9, 9);
   border-bottom-color: rgb(9, 9, 9);
   border-bottom-left-radius: 0px;
@@ -848,7 +848,7 @@ body .callout[data-callout="warning"] {
   color: rgb(173, 173, 173);
 }
 
-body .search > .search-container > .search-space {
+html body .search > .search-container > .search-space {
   background-color: rgb(9, 9, 9);
   border-bottom-color: rgb(141, 106, 80);
   border-bottom-left-radius: 0px;
@@ -860,7 +860,7 @@ body .search > .search-container > .search-space {
   border-top-right-radius: 0px;
 }
 
-body .search > .search-container > .search-space > * {
+html body .search > .search-container > .search-space > * {
   color: rgb(173, 173, 173);
   font-family: "yu gothic ui", sans-serif;
   outline: rgb(173, 173, 173) none 0px;
@@ -868,11 +868,11 @@ body .search > .search-container > .search-space > * {
   text-decoration-color: rgb(173, 173, 173);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(173, 173, 173);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(173, 173, 173);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -883,15 +883,15 @@ body .search > .search-container > .search-space > .search-layout > .results-con
   border-top-right-radius: 0px;
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(173, 173, 173);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(173, 173, 173);
 }
 
-body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(141, 106, 80);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -902,14 +902,14 @@ body .search > .search-container > .search-space > .search-layout, .search > .se
   border-top-right-radius: 0px;
 }
 
-body .search > .search-container > .search-space > input {
+html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(9, 9, 9);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   border-bottom-color: rgb(173, 173, 173);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -921,7 +921,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(173, 173, 173);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -929,7 +929,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(173, 173, 173);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 21.875px;
   border-bottom-right-radius: 21.875px;
@@ -937,51 +937,51 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   border-top-right-radius: 21.875px;
 }
 
-body a.internal.tag-link::before {
+html body a.internal.tag-link::before {
   color: rgb(171, 174, 174);
 }
 
-body h1 {
+html body h1 {
   color: rgb(150, 137, 136);
   font-family: palatino, serif;
 }
 
-body h2 {
+html body h2 {
   color: rgb(150, 137, 136);
   font-family: palatino, serif;
 }
 
-body h2.page-title, h2.page-title a {
+html body h2.page-title, h2.page-title a {
   color: rgb(142, 116, 109);
   font-family: palatino, serif;
 }
 
-body h3 {
+html body h3 {
   color: rgb(150, 137, 136);
   font-family: palatino, serif;
 }
 
-body h4 {
+html body h4 {
   color: rgb(150, 137, 136);
   font-family: palatino, serif;
 }
 
-body h5 {
+html body h5 {
   color: rgb(150, 137, 136);
   font-family: palatino, serif;
 }
 
-body h6 {
+html body h6 {
   color: rgb(150, 137, 136);
   font-family: palatino, serif;
 }
 
-body hr {
+html body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html body .callout {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-left-color: rgb(113, 81, 67);
@@ -992,17 +992,17 @@ body hr {
   padding-left: 20px;
 }
 
-body ::-webkit-scrollbar {
+html body ::-webkit-scrollbar {
   background: rgb(9, 9, 9) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(9, 9, 9);
 }
 
-body ::-webkit-scrollbar-corner {
+html body ::-webkit-scrollbar-corner {
   background: rgb(9, 9, 9) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(9, 9, 9);
 }
 
-body ::-webkit-scrollbar-thumb {
+html body ::-webkit-scrollbar-thumb {
   background: rgb(9, 9, 9) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(9, 9, 9);
   border-bottom-color: rgb(173, 173, 173);
@@ -1011,39 +1011,39 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(173, 173, 173);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html body ::-webkit-scrollbar-thumb:active {
   background: rgb(9, 9, 9) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(9, 9, 9);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html body ::-webkit-scrollbar-thumb:hover {
   background: rgb(9, 9, 9) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(9, 9, 9);
 }
 
-body ::-webkit-scrollbar-track {
+html body ::-webkit-scrollbar-track {
   background: rgb(9, 9, 9) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(9, 9, 9);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(100, 95, 90);
   font-family: "yu gothic ui", sans-serif;
   text-decoration: rgb(100, 95, 90);
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(100, 95, 90);
   font-family: "yu gothic ui", sans-serif;
   text-decoration: rgb(100, 95, 90);
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html body .explorer .explorer-content ul.explorer-ul li a {
   color: rgb(100, 95, 90);
   font-family: "yu gothic ui", sans-serif;
   text-decoration: rgb(100, 95, 90);
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(142, 116, 109);
   border-bottom-left-radius: 0px;
@@ -1055,7 +1055,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-right-radius: 0px;
   color: rgb(142, 116, 109);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(84, 69, 58);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1066,7 +1066,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-right-radius: 0px;
   color: rgb(84, 69, 58);
 }`,
-    footer: `body footer {
+    footer: `html body footer {
   background-color: rgb(9, 9, 9);
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
@@ -1076,15 +1076,15 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   color: rgb(173, 173, 173);
 }
 
-body footer ul li a {
+html body footer ul li a {
   color: rgb(173, 173, 173);
   text-decoration: rgb(173, 173, 173);
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html body .recent-notes > h3 {
   color: rgb(173, 173, 173);
 }
 
-body .recent-notes > ul.recent-ul > li {
+html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
@@ -1092,39 +1092,39 @@ body .recent-notes > ul.recent-ul > li {
   color: rgb(173, 173, 173);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(100, 95, 90);
   text-decoration: rgb(100, 95, 90);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(100, 95, 90);
   font-family: "yu gothic ui", sans-serif;
 }`,
-    listPage: `body li.section-li {
+    listPage: `html body li.section-li {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }
 
-body li.section-li > .section .meta {
+html body li.section-li > .section .meta {
   color: rgb(100, 95, 90);
   font-family: "yu gothic ui", sans-serif;
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html body li.section-li > .section > .desc > h3 > a {
   color: rgb(100, 95, 90);
   text-decoration: rgb(100, 95, 90);
 }
 
-body ul.section-ul {
+html body ul.section-ul {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html body .darkmode {
   border-bottom-color: rgb(84, 69, 58);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1136,11 +1136,11 @@ body ul.section-ul {
   color: rgb(84, 69, 58);
 }
 
-body .darkmode svg {
+html body .darkmode svg {
   color: rgb(84, 69, 58);
   stroke: rgb(84, 69, 58);
 }`,
-    breadcrumbs: `body .breadcrumb-container {
+    breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgb(173, 173, 173);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1152,10 +1152,10 @@ body .darkmode svg {
   color: rgb(173, 173, 173);
 }
 
-body .breadcrumb-element p {
+html body .breadcrumb-element p {
   color: rgb(84, 69, 58);
 }`,
-    misc: `body .katex-display {
+    misc: `html body .katex-display {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
@@ -1163,7 +1163,7 @@ body .breadcrumb-element p {
   color: rgb(173, 173, 173);
 }
 
-body .metadata {
+html body .metadata {
   border-bottom-color: rgb(9, 9, 9);
   border-left-color: rgb(9, 9, 9);
   border-right-color: rgb(9, 9, 9);
@@ -1172,7 +1172,7 @@ body .metadata {
   font-family: "yu gothic ui", sans-serif;
 }
 
-body .metadata-properties {
+html body .metadata-properties {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
@@ -1181,28 +1181,28 @@ body .metadata-properties {
   font-family: "yu gothic ui", sans-serif;
 }
 
-body .navigation-progress {
+html body .navigation-progress {
   background-color: rgb(9, 9, 9);
 }
 
-body .page-header h2.page-title {
+html body .page-header h2.page-title {
   color: rgb(173, 173, 173);
   font-family: palatino, serif;
 }
 
-body abbr {
+html body abbr {
   color: rgb(173, 173, 173);
   text-decoration: underline dotted rgb(173, 173, 173);
 }
 
-body details {
+html body details {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }
 
-body input[type=text] {
+html body input[type=text] {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
@@ -1210,7 +1210,7 @@ body input[type=text] {
   color: rgb(173, 173, 173);
 }
 
-body kbd {
+html body kbd {
   background-color: rgb(20, 20, 20);
   border-bottom-color: rgb(173, 173, 173);
   border-bottom-left-radius: 0px;
@@ -1228,23 +1228,23 @@ body kbd {
   padding-top: 1.09375px;
 }
 
-body progress {
+html body progress {
   border-bottom-color: rgb(173, 173, 173);
   border-left-color: rgb(173, 173, 173);
   border-right-color: rgb(173, 173, 173);
   border-top-color: rgb(173, 173, 173);
 }
 
-body sub {
+html body sub {
   color: rgb(173, 173, 173);
   font-size: 10.4167px;
 }
 
-body summary {
+html body summary {
   color: rgb(173, 173, 173);
 }
 
-body sup {
+html body sup {
   color: rgb(173, 173, 173);
   font-size: 10.4167px;
 }`,

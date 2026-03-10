@@ -111,57 +111,57 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(0, 0, 0);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(0, 0, 0);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(0, 0, 0);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(0, 0, 0);
 }
 
-body div#quartz-root {
+html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(0, 0, 0);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, b {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
   text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
-body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, em {
   color: rgb(216, 228, 58);
   outline: rgb(216, 228, 58) none 0px;
   text-decoration: rgb(216, 228, 58);
   text-decoration-color: rgb(216, 228, 58);
 }
 
-body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, i {
   color: rgb(216, 228, 58);
   outline: rgb(216, 228, 58) none 0px;
   text-decoration: rgb(216, 228, 58);
   text-decoration-color: rgb(216, 228, 58);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, strong {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
   text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
-body .text-highlight {
+html[saved-theme="dark"] body .text-highlight {
   background-color: rgba(103, 194, 103, 0.41);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, footer a {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
   text-decoration: underline 1px rgb(82, 157, 82);
@@ -169,7 +169,7 @@ body .text-highlight {
   text-decoration-thickness: 1px;
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(99, 190, 99);
   outline: rgb(99, 190, 99) none 0px;
   text-decoration: underline 1px rgb(99, 190, 99);
@@ -177,26 +177,26 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-thickness: 1px;
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   color: rgb(99, 190, 99);
   outline: rgb(99, 190, 99) none 0px;
   text-decoration: underline 1px rgba(138, 92, 245, 0.3);
   text-decoration-thickness: 1px;
 }`,
-    lists: `body ol.overflow {
+    lists: `html[saved-theme="dark"] body ol.overflow {
   background-color: rgb(0, 0, 0);
 }
 
-body ul.overflow {
+html[saved-theme="dark"] body ul.overflow {
   background-color: rgb(0, 0, 0);
 }`,
-    blockquotes: `body blockquote {
+    blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: rgba(17, 33, 1, 0.61);
 }`,
-    tables: `body tr {
+    tables: `html[saved-theme="dark"] body tr {
   background-color: rgba(42, 42, 42, 0.298);
 }`,
-    code: `body code {
+    code: `html[saved-theme="dark"] body code {
   border-bottom-color: rgb(168, 192, 144);
   border-left-color: rgb(168, 192, 144);
   border-right-color: rgb(168, 192, 144);
@@ -204,118 +204,118 @@ body ul.overflow {
   color: rgb(168, 192, 144);
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgba(63, 84, 41, 0.275);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgba(63, 84, 41, 0.275);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, pre:has(> code) {
   background-color: rgba(63, 84, 41, 0.275);
 }
 
-body pre:has(> code) {
+html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgba(63, 84, 41, 0.275);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(0, 0, 0);
 }
 
-body .transclude {
+html[saved-theme="dark"] body .transclude {
   border-left-color: rgba(82, 157, 82, 0.45);
 }
 
-body .transclude-inner {
+html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgba(82, 157, 82, 0.45);
 }`,
-    search: `body .search > .search-container > .search-space {
+    search: `html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(0, 0, 0);
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(0, 0, 0);
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal.tag-link::before {
   color: rgb(99, 190, 99);
 }
 
-body h1 {
+html[saved-theme="dark"] body h1 {
   color: rgb(44, 206, 16);
 }
 
-body h2 {
+html[saved-theme="dark"] body h2 {
   color: rgb(190, 112, 112);
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, h2.page-title a {
   color: rgb(44, 206, 16);
 }
 
-body h3 {
+html[saved-theme="dark"] body h3 {
   color: rgb(61, 118, 118);
 }
 
-body h4 {
+html[saved-theme="dark"] body h4 {
   color: rgb(169, 186, 157);
 }
 
-body h5 {
+html[saved-theme="dark"] body h5 {
   color: rgb(157, 193, 131);
 }
 
-body h6 {
+html[saved-theme="dark"] body h6 {
   color: rgb(72, 110, 2);
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html[saved-theme="dark"] body ::-webkit-scrollbar {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="dark"] body ::-webkit-scrollbar-track {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }`,
-    explorer: `body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+    explorer: `html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(57, 255, 20);
   border-left-color: rgb(57, 255, 20);
   border-right-color: rgb(57, 255, 20);
   border-top-color: rgb(57, 255, 20);
   color: rgb(57, 255, 20);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(82, 157, 82);
   border-left-color: rgb(82, 157, 82);
   border-right-color: rgb(82, 157, 82);
   border-top-color: rgb(82, 157, 82);
   color: rgb(82, 157, 82);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(0, 0, 0);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(82, 157, 82);
   border-left-color: rgb(82, 157, 82);
   border-right-color: rgb(82, 157, 82);
@@ -323,15 +323,15 @@ body ::-webkit-scrollbar-track {
   color: rgb(82, 157, 82);
 }
 
-body .darkmode svg {
+html[saved-theme="dark"] body .darkmode svg {
   color: rgb(82, 157, 82);
   stroke: rgb(82, 157, 82);
 }`,
-    misc: `body .navigation-progress {
+    misc: `html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(0, 0, 0);
 }
 
-body kbd {
+html[saved-theme="dark"] body kbd {
   background-color: rgba(63, 84, 41, 0.275);
   border-bottom-color: rgb(168, 192, 144);
   border-left-color: rgb(168, 192, 144);
@@ -408,38 +408,38 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, b {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
   text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
-body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, em {
   color: rgb(124, 133, 8);
   outline: rgb(124, 133, 8) none 0px;
   text-decoration: rgb(124, 133, 8);
   text-decoration-color: rgb(124, 133, 8);
 }
 
-body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, i {
   color: rgb(124, 133, 8);
   outline: rgb(124, 133, 8) none 0px;
   text-decoration: rgb(124, 133, 8);
   text-decoration-color: rgb(124, 133, 8);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, strong {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
   text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
-body .text-highlight {
+html[saved-theme="light"] body .text-highlight {
   background-color: rgba(82, 157, 82, 0.694);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, footer a {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
   text-decoration: underline 1px rgb(82, 157, 82);
@@ -447,7 +447,7 @@ body .text-highlight {
   text-decoration-thickness: 1px;
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
   text-decoration: underline 1px rgb(82, 157, 82);
@@ -455,19 +455,19 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-thickness: 1px;
 }
 
-body a.internal.broken {
+html[saved-theme="light"] body a.internal.broken {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
   text-decoration: underline 1px rgba(138, 92, 245, 0.3);
   text-decoration-thickness: 1px;
 }`,
-    blockquotes: `body blockquote {
+    blockquotes: `html[saved-theme="light"] body blockquote {
   background-color: rgba(113, 151, 75, 0.26);
 }`,
-    tables: `body tr {
+    tables: `html[saved-theme="light"] body tr {
   background-color: rgba(42, 42, 42, 0.298);
 }`,
-    code: `body code {
+    code: `html[saved-theme="light"] body code {
   border-bottom-color: rgb(168, 192, 144);
   border-left-color: rgb(168, 192, 144);
   border-right-color: rgb(168, 192, 144);
@@ -475,74 +475,74 @@ body a.internal.broken {
   color: rgb(168, 192, 144);
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(7, 14, 0);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(7, 14, 0);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, pre:has(> code) {
   background-color: rgb(7, 14, 0);
 }
 
-body pre:has(> code) {
+html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(7, 14, 0);
 }`,
-    embeds: `body .transclude {
+    embeds: `html[saved-theme="light"] body .transclude {
   border-left-color: rgb(82, 157, 82);
 }
 
-body .transclude-inner {
+html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(82, 157, 82);
 }`,
-    search: `body a.internal.tag-link::before {
+    search: `html[saved-theme="light"] body a.internal.tag-link::before {
   color: rgb(82, 157, 82);
 }
 
-body h1 {
+html[saved-theme="light"] body h1 {
   color: rgb(18, 138, 18);
 }
 
-body h2 {
+html[saved-theme="light"] body h2 {
   color: rgb(190, 112, 112);
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, h2.page-title a {
   color: rgb(82, 157, 82);
 }
 
-body h3 {
+html[saved-theme="light"] body h3 {
   color: rgb(61, 118, 118);
 }
 
-body h4 {
+html[saved-theme="light"] body h4 {
   color: rgb(169, 186, 157);
 }
 
-body h5 {
+html[saved-theme="light"] body h5 {
   color: rgb(157, 193, 131);
 }
 
-body h6 {
+html[saved-theme="light"] body h6 {
   color: rgb(72, 110, 2);
 }`,
-    explorer: `body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+    explorer: `html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(18, 138, 18);
   border-left-color: rgb(18, 138, 18);
   border-right-color: rgb(18, 138, 18);
   border-top-color: rgb(18, 138, 18);
   color: rgb(18, 138, 18);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(39, 75, 39);
   border-left-color: rgb(39, 75, 39);
   border-right-color: rgb(39, 75, 39);
   border-top-color: rgb(39, 75, 39);
   color: rgb(39, 75, 39);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(39, 75, 39);
   border-left-color: rgb(39, 75, 39);
   border-right-color: rgb(39, 75, 39);
@@ -550,11 +550,11 @@ body h6 {
   color: rgb(39, 75, 39);
 }
 
-body .darkmode svg {
+html[saved-theme="light"] body .darkmode svg {
   color: rgb(39, 75, 39);
   stroke: rgb(39, 75, 39);
 }`,
-    misc: `body kbd {
+    misc: `html[saved-theme="light"] body kbd {
   background-color: rgb(7, 14, 0);
   border-bottom-color: rgb(168, 192, 144);
   border-left-color: rgb(168, 192, 144);

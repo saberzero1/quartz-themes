@@ -161,57 +161,57 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(64, 64, 64);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(0, 0, 0);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(64, 64, 64);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-width: 0px;
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(64, 64, 64);
 }
 
-body div#quartz-root {
+html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(0, 0, 0);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, b {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, em {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, i {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, strong {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .text-highlight {
+html[saved-theme="dark"] body .text-highlight {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body del {
+html[saved-theme="dark"] body del {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body p {
+html[saved-theme="dark"] body p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, footer a {
   color: rgb(3, 33, 99);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
@@ -219,7 +219,7 @@ body p {
   text-decoration-color: rgb(3, 33, 99);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(3, 33, 99);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
@@ -227,14 +227,14 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgb(3, 33, 99);
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   color: rgb(3, 33, 99);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
   text-decoration: underline rgba(3, 30, 94, 0.3);
   text-decoration-color: rgba(3, 30, 94, 0.3);
 }`,
-    lists: `body ol.overflow {
+    lists: `html[saved-theme="dark"] body ol.overflow {
   background-color: rgb(0, 0, 0);
   border-left-color: rgb(64, 64, 64);
   border-left-style: solid;
@@ -244,7 +244,7 @@ body a.internal.broken {
   border-right-width: 5px;
 }
 
-body ul.overflow {
+html[saved-theme="dark"] body ul.overflow {
   background-color: rgb(0, 0, 0);
   border-left-color: rgb(64, 64, 64);
   border-left-style: solid;
@@ -253,14 +253,14 @@ body ul.overflow {
   border-right-style: solid;
   border-right-width: 5px;
 }`,
-    blockquotes: `body blockquote {
+    blockquotes: `html[saved-theme="dark"] body blockquote {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    tables: `body table {
+    tables: `html[saved-theme="dark"] body table {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   width: 163.938px;
 }`,
-    code: `body figure[data-rehype-pretty-code-figure] {
+    code: `html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(5, 5, 5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -268,7 +268,7 @@ body ul.overflow {
   border-top-right-radius: 0px;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(5, 5, 5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -276,7 +276,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-top-right-radius: 0px;
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, pre:has(> code) {
   background-color: rgb(5, 5, 5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -284,54 +284,54 @@ body pre > code, pre:has(> code) {
   border-top-right-radius: 0px;
 }
 
-body pre:has(> code) {
+html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(5, 5, 5);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }`,
-    images: `body figcaption {
+    images: `html[saved-theme="dark"] body figcaption {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    embeds: `body .file-embed {
+    embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(5, 5, 5);
 }
 
-body .transclude {
+html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(3, 30, 94);
 }
 
-body .transclude-inner {
+html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(3, 30, 94);
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .katex-display > .katex > .katex-html {
+html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body input[type=checkbox] {
+html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html[saved-theme="dark"] body .callout .callout-title {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
 }
 
-body .callout > .callout-content {
+html[saved-theme="dark"] body .callout > .callout-content {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-body .callout[data-callout="abstract"] {
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   background-color: rgba(83, 223, 221, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -339,7 +339,7 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="bug"] {
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
   background-color: rgba(251, 70, 76, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -347,7 +347,7 @@ body .callout[data-callout="bug"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="danger"] {
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
   background-color: rgba(251, 70, 76, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -355,7 +355,7 @@ body .callout[data-callout="danger"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="example"] {
+html[saved-theme="dark"] body .callout[data-callout="example"] {
   background-color: rgba(168, 130, 255, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -363,7 +363,7 @@ body .callout[data-callout="example"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="failure"] {
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
   background-color: rgba(251, 70, 76, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -371,7 +371,7 @@ body .callout[data-callout="failure"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="info"] {
+html[saved-theme="dark"] body .callout[data-callout="info"] {
   background-color: rgba(2, 122, 255, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -379,7 +379,7 @@ body .callout[data-callout="info"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="note"] {
+html[saved-theme="dark"] body .callout[data-callout="note"] {
   background-color: rgba(2, 122, 255, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -387,7 +387,7 @@ body .callout[data-callout="note"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="question"] {
+html[saved-theme="dark"] body .callout[data-callout="question"] {
   background-color: rgba(233, 151, 63, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -395,7 +395,7 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="quote"] {
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
   background-color: rgba(158, 158, 158, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -403,7 +403,7 @@ body .callout[data-callout="quote"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="success"] {
+html[saved-theme="dark"] body .callout[data-callout="success"] {
   background-color: rgba(68, 207, 110, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -411,7 +411,7 @@ body .callout[data-callout="success"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="tip"] {
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
   background-color: rgba(83, 223, 221, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -419,7 +419,7 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="todo"] {
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
   background-color: rgba(2, 122, 255, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -427,14 +427,14 @@ body .callout[data-callout="todo"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="warning"] {
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
   background-color: rgba(233, 151, 63, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="dark"] body .search > .search-button {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -450,7 +450,7 @@ body .callout[data-callout="warning"] {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(64, 64, 64);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -459,15 +459,15 @@ body .search > .search-container > .search-space {
   box-shadow: rgb(0, 0, 0) -1.5px -1.5px 0px 0px inset, rgb(64, 64, 64) 0px 0px 0px 0px inset, rgb(0, 0, 0) -2px -2px 0px 0px inset, rgb(128, 128, 128) 2px 2px 0px 0px inset;
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(128, 128, 128);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(128, 128, 128);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -478,29 +478,29 @@ body .search > .search-container > .search-space > .search-layout > .results-con
   border-top-right-radius: 0px;
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(128, 128, 128);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(3, 30, 94);
   color: rgb(128, 128, 128);
 }
 
-body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-width: 0px;
   box-shadow: rgb(64, 64, 64) -1px -1px 0px 0px inset, rgb(0, 0, 0) 2px 2px 0px 0px inset, rgb(64, 64, 64) -1px -1px 0px 0px inset, rgb(0, 0, 0) 1px 1px 0px 0px inset;
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   background-color: rgb(3, 30, 94);
   border-bottom-color: rgb(128, 128, 128);
   border-bottom-left-radius: 0px;
@@ -513,7 +513,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(128, 128, 128);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(3, 30, 94);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -522,7 +522,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(128, 128, 128);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(3, 30, 94, 0.1);
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
@@ -531,42 +531,42 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal.tag-link::before {
   color: rgb(3, 33, 99);
 }
 
-body h1 {
+html[saved-theme="dark"] body h1 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h2 {
+html[saved-theme="dark"] body h2 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, h2.page-title a {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h3 {
+html[saved-theme="dark"] body h3 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h4 {
+html[saved-theme="dark"] body h4 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h5 {
+html[saved-theme="dark"] body h5 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h6 {
+html[saved-theme="dark"] body h6 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body hr {
+html[saved-theme="dark"] body hr {
   border-right-width: 0px;
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html[saved-theme="dark"] body .callout {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -577,48 +577,48 @@ body hr {
   padding-top: 0px;
 }
 
-body ::-webkit-scrollbar {
+html[saved-theme="dark"] body ::-webkit-scrollbar {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="dark"] body ::-webkit-scrollbar-track {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgb(3, 30, 94);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 0px;
@@ -630,7 +630,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-right-radius: 0px;
   color: rgb(255, 255, 255);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(64, 64, 64);
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
@@ -642,7 +642,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-right-radius: 0px;
   color: rgb(218, 218, 218);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(64, 64, 64);
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
@@ -651,24 +651,24 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-left-radius: 0px;
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    listPage: `body li.section-li > .section .meta {
+    listPage: `html[saved-theme="dark"] body li.section-li > .section .meta {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body ul.section-ul {
+html[saved-theme="dark"] body ul.section-ul {
   background-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
   border-top-style: solid;
   border-top-width: 1px;
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="dark"] body .darkmode {
   background-color: rgb(64, 64, 64);
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 0px;
@@ -681,34 +681,34 @@ body ul.section-ul {
   color: rgb(218, 218, 218);
 }
 
-body .darkmode svg {
+html[saved-theme="dark"] body .darkmode svg {
   color: rgb(218, 218, 218);
   stroke: rgb(218, 218, 218);
 }`,
-    breadcrumbs: `body .breadcrumb-element p {
+    breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    misc: `body .metadata {
+    misc: `html[saved-theme="dark"] body .metadata {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .metadata-properties {
+html[saved-theme="dark"] body .metadata-properties {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .navigation-progress {
+html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(64, 64, 64);
 }
 
-body .page-header h2.page-title {
+html[saved-theme="dark"] body .page-header h2.page-title {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body input[type=text] {
+html[saved-theme="dark"] body input[type=text] {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body kbd {
+html[saved-theme="dark"] body kbd {
   background-color: rgb(5, 5, 5);
 }`,
   },
@@ -828,49 +828,49 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(192, 192, 192);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(192, 192, 192);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-width: 0px;
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(192, 192, 192);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, b {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, em {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, i {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, strong {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .text-highlight {
+html[saved-theme="light"] body .text-highlight {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body del {
+html[saved-theme="light"] body del {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body p {
+html[saved-theme="light"] body p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, footer a {
   color: rgb(3, 30, 94);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
@@ -878,7 +878,7 @@ body p {
   text-decoration-color: rgb(3, 30, 94);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(3, 30, 94);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
@@ -886,14 +886,14 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgb(3, 30, 94);
 }
 
-body a.internal.broken {
+html[saved-theme="light"] body a.internal.broken {
   color: rgb(3, 30, 94);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
   text-decoration: underline rgba(3, 30, 94, 0.3);
   text-decoration-color: rgba(3, 30, 94, 0.3);
 }`,
-    lists: `body ol.overflow {
+    lists: `html[saved-theme="light"] body ol.overflow {
   border-left-color: rgb(192, 192, 192);
   border-left-style: solid;
   border-left-width: 5px;
@@ -902,7 +902,7 @@ body a.internal.broken {
   border-right-width: 5px;
 }
 
-body ul.overflow {
+html[saved-theme="light"] body ul.overflow {
   border-left-color: rgb(192, 192, 192);
   border-left-style: solid;
   border-left-width: 5px;
@@ -910,77 +910,77 @@ body ul.overflow {
   border-right-style: solid;
   border-right-width: 5px;
 }`,
-    blockquotes: `body blockquote {
+    blockquotes: `html[saved-theme="light"] body blockquote {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    tables: `body table {
+    tables: `html[saved-theme="light"] body table {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   width: 163.938px;
 }`,
-    code: `body figure[data-rehype-pretty-code-figure] {
+    code: `html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, pre:has(> code) {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 
-body pre:has(> code) {
+html[saved-theme="light"] body pre:has(> code) {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }`,
-    images: `body figcaption {
+    images: `html[saved-theme="light"] body figcaption {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    embeds: `body .transclude {
+    embeds: `html[saved-theme="light"] body .transclude {
   border-left-color: rgb(3, 33, 99);
 }
 
-body .transclude-inner {
+html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(3, 33, 99);
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .katex-display > .katex > .katex-html {
+html[saved-theme="light"] body .katex-display > .katex > .katex-html {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body input[type=checkbox] {
+html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html[saved-theme="light"] body .callout .callout-title {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
 }
 
-body .callout > .callout-content {
+html[saved-theme="light"] body .callout > .callout-content {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-body .callout[data-callout="abstract"] {
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
   background-color: rgba(0, 191, 188, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -988,7 +988,7 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="bug"] {
+html[saved-theme="light"] body .callout[data-callout="bug"] {
   background-color: rgba(233, 49, 71, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -996,7 +996,7 @@ body .callout[data-callout="bug"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="danger"] {
+html[saved-theme="light"] body .callout[data-callout="danger"] {
   background-color: rgba(233, 49, 71, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1004,7 +1004,7 @@ body .callout[data-callout="danger"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="example"] {
+html[saved-theme="light"] body .callout[data-callout="example"] {
   background-color: rgba(120, 82, 238, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1012,7 +1012,7 @@ body .callout[data-callout="example"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="failure"] {
+html[saved-theme="light"] body .callout[data-callout="failure"] {
   background-color: rgba(233, 49, 71, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1020,7 +1020,7 @@ body .callout[data-callout="failure"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="info"] {
+html[saved-theme="light"] body .callout[data-callout="info"] {
   background-color: rgba(8, 109, 221, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1028,7 +1028,7 @@ body .callout[data-callout="info"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="note"] {
+html[saved-theme="light"] body .callout[data-callout="note"] {
   background-color: rgba(8, 109, 221, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1036,7 +1036,7 @@ body .callout[data-callout="note"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="question"] {
+html[saved-theme="light"] body .callout[data-callout="question"] {
   background-color: rgba(236, 117, 0, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1044,7 +1044,7 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="quote"] {
+html[saved-theme="light"] body .callout[data-callout="quote"] {
   background-color: rgba(158, 158, 158, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1052,7 +1052,7 @@ body .callout[data-callout="quote"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="success"] {
+html[saved-theme="light"] body .callout[data-callout="success"] {
   background-color: rgba(8, 185, 78, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1060,7 +1060,7 @@ body .callout[data-callout="success"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="tip"] {
+html[saved-theme="light"] body .callout[data-callout="tip"] {
   background-color: rgba(0, 191, 188, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1068,7 +1068,7 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="todo"] {
+html[saved-theme="light"] body .callout[data-callout="todo"] {
   background-color: rgba(8, 109, 221, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1076,14 +1076,14 @@ body .callout[data-callout="todo"] {
   border-top-right-radius: 0px;
 }
 
-body .callout[data-callout="warning"] {
+html[saved-theme="light"] body .callout[data-callout="warning"] {
   background-color: rgba(236, 117, 0, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="light"] body .search > .search-button {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1099,7 +1099,7 @@ body .callout[data-callout="warning"] {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="light"] body .search > .search-container > .search-space {
   background-color: rgb(192, 192, 192);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1108,15 +1108,15 @@ body .search > .search-container > .search-space {
   box-shadow: rgb(0, 0, 0) -1.5px -1.5px 0px 0px inset, rgb(192, 192, 192) 0px 0px 0px 0px inset, rgb(128, 128, 128) -2px -2px 0px 0px inset, rgb(255, 255, 255) 2px 2px 0px 0px inset;
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="light"] body .search > .search-container > .search-space > * {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(255, 255, 255);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1127,29 +1127,29 @@ body .search > .search-container > .search-space > .search-layout > .results-con
   border-top-right-radius: 0px;
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(255, 255, 255);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(3, 30, 94);
   color: rgb(255, 255, 255);
 }
 
-body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-width: 0px;
   box-shadow: rgb(192, 192, 192) -1px -1px 0px 0px inset, rgb(128, 128, 128) 2px 2px 0px 0px inset, rgb(192, 192, 192) -1px -1px 0px 0px inset, rgb(0, 0, 0) 1px 1px 0px 0px inset;
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   background-color: rgb(3, 30, 94);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 0px;
@@ -1162,7 +1162,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(255, 255, 255);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(3, 30, 94);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1171,7 +1171,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(255, 255, 255);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(3, 30, 94, 0.1);
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
@@ -1180,42 +1180,42 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal.tag-link::before {
   color: rgb(3, 30, 94);
 }
 
-body h1 {
+html[saved-theme="light"] body h1 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h2 {
+html[saved-theme="light"] body h2 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, h2.page-title a {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h3 {
+html[saved-theme="light"] body h3 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h4 {
+html[saved-theme="light"] body h4 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h5 {
+html[saved-theme="light"] body h5 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body h6 {
+html[saved-theme="light"] body h6 {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body hr {
+html[saved-theme="light"] body hr {
   border-right-width: 0px;
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html[saved-theme="light"] body .callout {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
@@ -1225,19 +1225,19 @@ body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgb(3, 30, 94);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 0px;
@@ -1249,7 +1249,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-right-radius: 0px;
   color: rgb(255, 255, 255);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(192, 192, 192);
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
@@ -1261,7 +1261,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-right-radius: 0px;
   color: rgb(34, 34, 34);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="light"] body footer {
   background-color: rgb(192, 192, 192);
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
@@ -1270,24 +1270,24 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-left-radius: 0px;
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    listPage: `body li.section-li > .section .meta {
+    listPage: `html[saved-theme="light"] body li.section-li > .section .meta {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body ul.section-ul {
+html[saved-theme="light"] body ul.section-ul {
   background-color: rgb(255, 255, 255);
   border-top-color: rgb(0, 0, 0);
   border-top-style: solid;
   border-top-width: 1px;
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="light"] body .darkmode {
   background-color: rgb(192, 192, 192);
   border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 0px;
@@ -1300,30 +1300,30 @@ body ul.section-ul {
   color: rgb(34, 34, 34);
 }
 
-body .darkmode svg {
+html[saved-theme="light"] body .darkmode svg {
   color: rgb(34, 34, 34);
   stroke: rgb(34, 34, 34);
 }`,
-    breadcrumbs: `body .breadcrumb-element p {
+    breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    misc: `body .metadata {
+    misc: `html[saved-theme="light"] body .metadata {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .metadata-properties {
+html[saved-theme="light"] body .metadata-properties {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body .navigation-progress {
+html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(192, 192, 192);
 }
 
-body .page-header h2.page-title {
+html[saved-theme="light"] body .page-header h2.page-title {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-body input[type=text] {
+html[saved-theme="light"] body input[type=text] {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
   },

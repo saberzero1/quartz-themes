@@ -266,36 +266,36 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(20, 20, 20);
   color: rgb(240, 240, 240);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(25, 25, 25);
   color: rgb(240, 240, 240);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(20, 20, 20);
   color: rgb(240, 240, 240);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(50, 50, 50);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(20, 20, 20);
   border-left-color: rgb(50, 50, 50);
   color: rgb(240, 240, 240);
 }
 
-body div#quartz-root {
+html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(25, 25, 25);
   color: rgb(240, 240, 240);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, b {
   color: rgb(208, 66, 85);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(208, 66, 85) none 0px;
@@ -303,7 +303,7 @@ body div#quartz-root {
   text-decoration-color: rgb(208, 66, 85);
 }
 
-body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, em {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
@@ -311,7 +311,7 @@ body .page article p > em, em {
   text-decoration-color: rgb(112, 122, 250);
 }
 
-body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, i {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
@@ -319,7 +319,7 @@ body .page article p > i, i {
   text-decoration-color: rgb(112, 122, 250);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, strong {
   color: rgb(208, 66, 85);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(208, 66, 85) none 0px;
@@ -327,7 +327,7 @@ body .page article p > strong, strong {
   text-decoration-color: rgb(208, 66, 85);
 }
 
-body .text-highlight {
+html[saved-theme="dark"] body .text-highlight {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 240, 240) none 0px;
@@ -335,7 +335,7 @@ body .text-highlight {
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body del {
+html[saved-theme="dark"] body del {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 240, 240) none 0px;
@@ -343,14 +343,14 @@ body del {
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body p {
+html[saved-theme="dark"] body p {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   outline: rgba(240, 240, 240, 0.7) none 0px;
   text-decoration: rgba(240, 240, 240, 0.7);
   text-decoration-color: rgba(240, 240, 240, 0.7);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, footer a {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
@@ -358,7 +358,7 @@ body p {
   text-decoration-color: rgb(112, 122, 250);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
@@ -366,24 +366,24 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgb(112, 122, 250);
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
 }`,
-    lists: `body dd {
+    lists: `html[saved-theme="dark"] body dd {
   color: rgb(240, 240, 240);
 }
 
-body dt {
+html[saved-theme="dark"] body dt {
   color: rgb(240, 240, 240);
 }
 
-body ol > li {
+html[saved-theme="dark"] body ol > li {
   color: rgb(240, 240, 240);
 }
 
-body ol.overflow {
+html[saved-theme="dark"] body ol.overflow {
   background-color: rgb(25, 25, 25);
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
@@ -391,39 +391,39 @@ body ol.overflow {
   border-top-color: rgb(240, 240, 240);
 }
 
-body ul > li {
+html[saved-theme="dark"] body ul > li {
   color: rgb(240, 240, 240);
 }
 
-body ul.overflow {
+html[saved-theme="dark"] body ul.overflow {
   background-color: rgb(25, 25, 25);
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgba(240, 240, 240, 0.7);
   text-decoration: rgba(240, 240, 240, 0.7);
 }
 
-body blockquote {
+html[saved-theme="dark"] body blockquote {
   font-family: "??", "??", "iA Writer Quattro S";
 }`,
-    tables: `body .table-container {
+    tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }
 
-body table {
+html[saved-theme="dark"] body table {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "iA Writer Quattro S";
   width: 662px;
 }
 
-body td {
+html[saved-theme="dark"] body td {
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
   border-right-color: rgb(50, 50, 50);
@@ -431,14 +431,14 @@ body td {
   color: rgb(240, 240, 240);
 }
 
-body th {
+html[saved-theme="dark"] body th {
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
   border-right-color: rgb(50, 50, 50);
   border-top-color: rgb(50, 50, 50);
   color: rgb(240, 240, 240);
 }`,
-    code: `body code {
+    code: `html[saved-theme="dark"] body code {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
@@ -447,7 +447,7 @@ body th {
   font-family: "iA Writer Mono S";
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(27, 27, 27);
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
@@ -455,7 +455,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-color: rgb(50, 50, 50);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(27, 27, 27);
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
@@ -464,7 +464,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(240, 240, 240);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, pre:has(> code) {
   background-color: rgb(27, 27, 27);
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
@@ -472,46 +472,46 @@ body pre > code, pre:has(> code) {
   border-top-color: rgb(50, 50, 50);
 }
 
-body pre:has(> code) {
+html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(27, 27, 27);
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
   border-right-color: rgb(50, 50, 50);
   border-top-color: rgb(50, 50, 50);
 }`,
-    images: `body audio {
+    images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }
 
-body figcaption {
+html[saved-theme="dark"] body figcaption {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body figure {
+html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }
 
-body img {
+html[saved-theme="dark"] body img {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }
 
-body video {
+html[saved-theme="dark"] body video {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(27, 27, 27);
   border-bottom-color: rgba(240, 240, 240, 0.7);
   border-left-color: rgba(240, 240, 240, 0.7);
@@ -519,153 +519,153 @@ body video {
   border-top-color: rgba(240, 240, 240, 0.7);
 }
 
-body .footnotes {
+html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(240, 240, 240);
   color: rgb(240, 240, 240);
 }
 
-body .transclude {
+html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(112, 122, 250);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }
 
-body .transclude-inner {
+html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(112, 122, 250);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body .katex-display > .katex > .katex-html {
+html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body .page article li:has(>input[type=checkbox]:checked) {
+html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgba(240, 240, 240, 0.7);
   text-decoration: line-through rgba(240, 240, 240, 0.7);
   text-decoration-color: rgba(240, 240, 240, 0.7);
 }
 
-body input[type=checkbox] {
+html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgba(240, 240, 240, 0.7);
   border-left-color: rgba(240, 240, 240, 0.7);
   border-right-color: rgba(240, 240, 240, 0.7);
   border-top-color: rgba(240, 240, 240, 0.7);
 }
 
-body li.task-list-item[data-task='!'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='*'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='-'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='/'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='>'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='?'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='I'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='S'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='b'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='c'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='d'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='f'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='i'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='k'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='l'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='p'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='u'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body li.task-list-item[data-task='w'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(240, 240, 240);
   text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }`,
-    callouts: `body .callout[data-callout="quote"] {
+    callouts: `html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: 112, 122, 250;
   background-color: rgba(112, 122, 250, 0.1);
   border-bottom-color: rgba(112, 122, 250, 0.25);
@@ -673,7 +673,7 @@ body li.task-list-item[data-task='w'] {
   border-right-color: rgba(112, 122, 250, 0.25);
   border-top-color: rgba(112, 122, 250, 0.25);
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(18, 18, 18);
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
@@ -683,11 +683,11 @@ body li.task-list-item[data-task='w'] {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(20, 20, 20);
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 240, 240) none 0px;
@@ -695,27 +695,27 @@ body .search > .search-container > .search-space > * {
   text-decoration-color: rgb(240, 240, 240);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(240, 240, 240);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(240, 240, 240);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgba(18, 18, 18, 0.7);
   color: rgb(240, 240, 240);
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   background-color: rgb(18, 18, 18);
   border-bottom-color: rgba(20, 20, 20, 0.5);
   border-left-color: rgb(240, 240, 240);
@@ -723,7 +723,7 @@ body .search > .search-container > .search-space > input {
   border-top-color: rgb(240, 240, 240);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   background-color: rgba(18, 18, 18, 0.7);
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
@@ -732,70 +732,70 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(240, 240, 240);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgba(18, 18, 18, 0.7);
   color: rgb(240, 240, 240);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal.tag-link::before {
   color: rgb(112, 122, 250);
 }
 
-body h1 {
+html[saved-theme="dark"] body h1 {
   color: rgb(208, 66, 85);
   font-family: Rubik;
 }
 
-body h2 {
+html[saved-theme="dark"] body h2 {
   color: rgb(213, 118, 52);
   font-family: Rubik;
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, h2.page-title a {
   color: rgb(208, 66, 85);
   font-family: Rubik;
 }
 
-body h3 {
+html[saved-theme="dark"] body h3 {
   color: rgb(229, 181, 103);
   font-family: Rubik;
 }
 
-body h4 {
+html[saved-theme="dark"] body h4 {
   color: rgb(168, 195, 115);
   font-family: Rubik;
 }
 
-body h5 {
+html[saved-theme="dark"] body h5 {
   color: rgb(112, 122, 250);
   font-family: Rubik;
 }
 
-body h6 {
+html[saved-theme="dark"] body h6 {
   color: rgb(147, 134, 200);
   font-family: Rubik;
 }
 
-body hr {
+html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
   border-right-color: rgb(50, 50, 50);
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html[saved-theme="dark"] body ::-webkit-scrollbar {
   background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(25, 25, 25);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
   background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(25, 25, 25);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
   background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(25, 25, 25);
   border-bottom-color: rgb(240, 240, 240);
@@ -804,39 +804,39 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(240, 240, 240);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(25, 25, 25);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(25, 25, 25);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="dark"] body ::-webkit-scrollbar-track {
   background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(25, 25, 25);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   text-decoration: rgba(240, 240, 240, 0.7);
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   text-decoration: rgba(240, 240, 240, 0.7);
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   text-decoration: rgba(240, 240, 240, 0.7);
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgb(19, 19, 19);
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
@@ -844,14 +844,14 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-color: rgb(240, 240, 240);
   color: rgb(240, 240, 240);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(240, 240, 240, 0.7);
   border-left-color: rgba(240, 240, 240, 0.7);
   border-right-color: rgba(240, 240, 240, 0.7);
   border-top-color: rgba(240, 240, 240, 0.7);
   color: rgba(240, 240, 240, 0.7);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(20, 20, 20);
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
@@ -861,16 +861,16 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body footer ul li a {
+html[saved-theme="dark"] body footer ul li a {
   color: rgba(240, 240, 240, 0.7);
   text-decoration: rgba(240, 240, 240, 0.7);
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body .recent-notes > ul.recent-ul > li {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
@@ -878,39 +878,39 @@ body .recent-notes > ul.recent-ul > li {
   color: rgb(240, 240, 240);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgba(240, 240, 240, 0.7);
   text-decoration: rgba(240, 240, 240, 0.7);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }`,
-    listPage: `body li.section-li {
+    listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }
 
-body li.section-li > .section .meta {
+html[saved-theme="dark"] body li.section-li > .section .meta {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgba(240, 240, 240, 0.7);
   text-decoration: rgba(240, 240, 240, 0.7);
 }
 
-body ul.section-ul {
+html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgba(240, 240, 240, 0.7);
   border-left-color: rgba(240, 240, 240, 0.7);
   border-right-color: rgba(240, 240, 240, 0.7);
@@ -918,11 +918,11 @@ body ul.section-ul {
   color: rgba(240, 240, 240, 0.7);
 }
 
-body .darkmode svg {
+html[saved-theme="dark"] body .darkmode svg {
   color: rgba(240, 240, 240, 0.7);
   stroke: rgba(240, 240, 240, 0.7);
 }`,
-    breadcrumbs: `body .breadcrumb-container {
+    breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
   border-bottom-color: rgba(240, 240, 240, 0.7);
   border-left-color: rgba(240, 240, 240, 0.7);
   border-right-color: rgba(240, 240, 240, 0.7);
@@ -930,11 +930,11 @@ body .darkmode svg {
   color: rgba(240, 240, 240, 0.7);
 }
 
-body .breadcrumb-element p {
+html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }`,
-    misc: `body .katex-display {
+    misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
@@ -942,7 +942,7 @@ body .breadcrumb-element p {
   color: rgb(240, 240, 240);
 }
 
-body .metadata {
+html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
   border-right-color: rgb(50, 50, 50);
@@ -951,7 +951,7 @@ body .metadata {
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body .metadata-properties {
+html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgba(240, 240, 240, 0.7);
   border-left-color: rgba(240, 240, 240, 0.7);
   border-right-color: rgba(240, 240, 240, 0.7);
@@ -960,28 +960,28 @@ body .metadata-properties {
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body .navigation-progress {
+html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(20, 20, 20);
 }
 
-body .page-header h2.page-title {
+html[saved-theme="dark"] body .page-header h2.page-title {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body abbr {
+html[saved-theme="dark"] body abbr {
   color: rgb(240, 240, 240);
   text-decoration: underline dotted rgb(240, 240, 240);
 }
 
-body details {
+html[saved-theme="dark"] body details {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }
 
-body input[type=text] {
+html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgba(240, 240, 240, 0.7);
   border-left-color: rgba(240, 240, 240, 0.7);
   border-right-color: rgba(240, 240, 240, 0.7);
@@ -990,7 +990,7 @@ body input[type=text] {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body kbd {
+html[saved-theme="dark"] body kbd {
   background-color: rgb(27, 27, 27);
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
@@ -1000,22 +1000,22 @@ body kbd {
   font-family: "iA Writer Mono S";
 }
 
-body progress {
+html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
 }
 
-body sub {
+html[saved-theme="dark"] body sub {
   color: rgb(240, 240, 240);
 }
 
-body summary {
+html[saved-theme="dark"] body summary {
   color: rgb(240, 240, 240);
 }
 
-body sup {
+html[saved-theme="dark"] body sup {
   color: rgb(240, 240, 240);
 }`,
   },
@@ -1276,36 +1276,36 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(238, 231, 221);
   color: rgb(74, 52, 28);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(247, 243, 238);
   color: rgb(74, 52, 28);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(238, 231, 221);
   color: rgb(74, 52, 28);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(233, 223, 209);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(238, 231, 221);
   border-left-color: rgb(233, 223, 209);
   color: rgb(74, 52, 28);
 }
 
-body div#quartz-root {
+html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(247, 243, 238);
   color: rgb(74, 52, 28);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, b {
   color: rgb(240, 100, 119);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 100, 119) none 0px;
@@ -1313,7 +1313,7 @@ body div#quartz-root {
   text-decoration-color: rgb(240, 100, 119);
 }
 
-body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, em {
   color: rgb(124, 155, 255);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(124, 155, 255) none 0px;
@@ -1321,7 +1321,7 @@ body .page article p > em, em {
   text-decoration-color: rgb(124, 155, 255);
 }
 
-body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, i {
   color: rgb(124, 155, 255);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(124, 155, 255) none 0px;
@@ -1329,7 +1329,7 @@ body .page article p > i, i {
   text-decoration-color: rgb(124, 155, 255);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, strong {
   color: rgb(240, 100, 119);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 100, 119) none 0px;
@@ -1337,7 +1337,7 @@ body .page article p > strong, strong {
   text-decoration-color: rgb(240, 100, 119);
 }
 
-body .text-highlight {
+html[saved-theme="light"] body .text-highlight {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(74, 52, 28) none 0px;
@@ -1345,7 +1345,7 @@ body .text-highlight {
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body del {
+html[saved-theme="light"] body del {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(74, 52, 28) none 0px;
@@ -1353,14 +1353,14 @@ body del {
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body p {
+html[saved-theme="light"] body p {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   outline: rgba(74, 52, 28, 0.9) none 0px;
   text-decoration: rgba(74, 52, 28, 0.9);
   text-decoration-color: rgba(74, 52, 28, 0.9);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, footer a {
   color: rgb(233, 179, 92);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(233, 179, 92) none 0px;
@@ -1368,7 +1368,7 @@ body p {
   text-decoration-color: rgb(233, 179, 92);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(233, 179, 92);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(233, 179, 92) none 0px;
@@ -1376,24 +1376,24 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgb(233, 179, 92);
 }
 
-body a.internal.broken {
+html[saved-theme="light"] body a.internal.broken {
   color: rgb(233, 179, 92);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(233, 179, 92) none 0px;
 }`,
-    lists: `body dd {
+    lists: `html[saved-theme="light"] body dd {
   color: rgb(74, 52, 28);
 }
 
-body dt {
+html[saved-theme="light"] body dt {
   color: rgb(74, 52, 28);
 }
 
-body ol > li {
+html[saved-theme="light"] body ol > li {
   color: rgb(74, 52, 28);
 }
 
-body ol.overflow {
+html[saved-theme="light"] body ol.overflow {
   background-color: rgb(247, 243, 238);
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
@@ -1401,39 +1401,39 @@ body ol.overflow {
   border-top-color: rgb(74, 52, 28);
 }
 
-body ul > li {
+html[saved-theme="light"] body ul > li {
   color: rgb(74, 52, 28);
 }
 
-body ul.overflow {
+html[saved-theme="light"] body ul.overflow {
   background-color: rgb(247, 243, 238);
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgba(74, 52, 28, 0.9);
   text-decoration: rgba(74, 52, 28, 0.9);
 }
 
-body blockquote {
+html[saved-theme="light"] body blockquote {
   font-family: "??", "??", "iA Writer Quattro S";
 }`,
-    tables: `body .table-container {
+    tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }
 
-body table {
+html[saved-theme="light"] body table {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "iA Writer Quattro S";
   width: 662px;
 }
 
-body td {
+html[saved-theme="light"] body td {
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
   border-right-color: rgb(233, 223, 209);
@@ -1441,14 +1441,14 @@ body td {
   color: rgb(74, 52, 28);
 }
 
-body th {
+html[saved-theme="light"] body th {
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
   border-right-color: rgb(233, 223, 209);
   border-top-color: rgb(233, 223, 209);
   color: rgb(74, 52, 28);
 }`,
-    code: `body code {
+    code: `html[saved-theme="light"] body code {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
@@ -1457,7 +1457,7 @@ body th {
   font-family: "iA Writer Mono S";
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(250, 238, 225);
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
@@ -1465,7 +1465,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-color: rgb(233, 223, 209);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(250, 238, 225);
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
@@ -1474,7 +1474,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(74, 52, 28);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, pre:has(> code) {
   background-color: rgb(250, 238, 225);
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
@@ -1482,46 +1482,46 @@ body pre > code, pre:has(> code) {
   border-top-color: rgb(233, 223, 209);
 }
 
-body pre:has(> code) {
+html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(250, 238, 225);
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
   border-right-color: rgb(233, 223, 209);
   border-top-color: rgb(233, 223, 209);
 }`,
-    images: `body audio {
+    images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }
 
-body figcaption {
+html[saved-theme="light"] body figcaption {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body figure {
+html[saved-theme="light"] body figure {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }
 
-body img {
+html[saved-theme="light"] body img {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }
 
-body video {
+html[saved-theme="light"] body video {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html[saved-theme="light"] body .file-embed {
   background-color: rgb(250, 238, 225);
   border-bottom-color: rgba(74, 52, 28, 0.9);
   border-left-color: rgba(74, 52, 28, 0.9);
@@ -1529,153 +1529,153 @@ body video {
   border-top-color: rgba(74, 52, 28, 0.9);
 }
 
-body .footnotes {
+html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(74, 52, 28);
   color: rgb(74, 52, 28);
 }
 
-body .transclude {
+html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(233, 179, 92);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }
 
-body .transclude-inner {
+html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(233, 179, 92);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body .katex-display > .katex > .katex-html {
+html[saved-theme="light"] body .katex-display > .katex > .katex-html {
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body .page article li:has(>input[type=checkbox]:checked) {
+html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgba(74, 52, 28, 0.9);
   text-decoration: line-through rgba(74, 52, 28, 0.9);
   text-decoration-color: rgba(74, 52, 28, 0.9);
 }
 
-body input[type=checkbox] {
+html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgba(74, 52, 28, 0.9);
   border-left-color: rgba(74, 52, 28, 0.9);
   border-right-color: rgba(74, 52, 28, 0.9);
   border-top-color: rgba(74, 52, 28, 0.9);
 }
 
-body li.task-list-item[data-task='!'] {
+html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='*'] {
+html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='-'] {
+html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='/'] {
+html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='>'] {
+html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='?'] {
+html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='I'] {
+html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='S'] {
+html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='b'] {
+html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='c'] {
+html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='d'] {
+html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='f'] {
+html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='i'] {
+html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='k'] {
+html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='l'] {
+html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='p'] {
+html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='u'] {
+html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body li.task-list-item[data-task='w'] {
+html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(74, 52, 28);
   text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }`,
-    callouts: `body .callout[data-callout="quote"] {
+    callouts: `html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: 124, 155, 255;
   background-color: rgba(124, 155, 255, 0.1);
   border-bottom-color: rgba(124, 155, 255, 0.25);
@@ -1683,7 +1683,7 @@ body li.task-list-item[data-task='w'] {
   border-right-color: rgba(124, 155, 255, 0.25);
   border-top-color: rgba(124, 155, 255, 0.25);
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(241, 230, 214);
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
@@ -1693,11 +1693,11 @@ body li.task-list-item[data-task='w'] {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="light"] body .search > .search-container > .search-space {
   background-color: rgb(238, 231, 221);
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(74, 52, 28) none 0px;
@@ -1705,27 +1705,27 @@ body .search > .search-container > .search-space > * {
   text-decoration-color: rgb(74, 52, 28);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(74, 52, 28);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(74, 52, 28);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgba(241, 230, 214, 0.7);
   color: rgb(74, 52, 28);
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="light"] body .search > .search-container > .search-space > input {
   background-color: rgb(241, 230, 214);
   border-bottom-color: rgba(238, 231, 221, 0.5);
   border-left-color: rgb(74, 52, 28);
@@ -1733,7 +1733,7 @@ body .search > .search-container > .search-space > input {
   border-top-color: rgb(74, 52, 28);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   background-color: rgba(241, 230, 214, 0.7);
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
@@ -1742,70 +1742,70 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(74, 52, 28);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgba(241, 230, 214, 0.7);
   color: rgb(74, 52, 28);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal.tag-link::before {
   color: rgb(233, 179, 92);
 }
 
-body h1 {
+html[saved-theme="light"] body h1 {
   color: rgb(240, 100, 119);
   font-family: Rubik;
 }
 
-body h2 {
+html[saved-theme="light"] body h2 {
   color: rgb(245, 146, 75);
   font-family: Rubik;
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, h2.page-title a {
   color: rgb(240, 100, 119);
   font-family: Rubik;
 }
 
-body h3 {
+html[saved-theme="light"] body h3 {
   color: rgb(233, 179, 92);
   font-family: Rubik;
 }
 
-body h4 {
+html[saved-theme="light"] body h4 {
   color: rgb(154, 230, 92);
   font-family: Rubik;
 }
 
-body h5 {
+html[saved-theme="light"] body h5 {
   color: rgb(124, 155, 255);
   font-family: Rubik;
 }
 
-body h6 {
+html[saved-theme="light"] body h6 {
   color: rgb(144, 120, 241);
   font-family: Rubik;
 }
 
-body hr {
+html[saved-theme="light"] body hr {
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
   border-right-color: rgb(233, 223, 209);
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html[saved-theme="light"] body ::-webkit-scrollbar {
   background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(247, 243, 238);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="light"] body ::-webkit-scrollbar-corner {
   background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(247, 243, 238);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
   background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(247, 243, 238);
   border-bottom-color: rgb(74, 52, 28);
@@ -1814,39 +1814,39 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(74, 52, 28);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(247, 243, 238);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(247, 243, 238);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="light"] body ::-webkit-scrollbar-track {
   background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(247, 243, 238);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   text-decoration: rgba(74, 52, 28, 0.9);
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   text-decoration: rgba(74, 52, 28, 0.9);
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   text-decoration: rgba(74, 52, 28, 0.9);
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgb(247, 203, 160);
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
@@ -1854,14 +1854,14 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-color: rgb(74, 52, 28);
   color: rgb(74, 52, 28);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(74, 52, 28, 0.9);
   border-left-color: rgba(74, 52, 28, 0.9);
   border-right-color: rgba(74, 52, 28, 0.9);
   border-top-color: rgba(74, 52, 28, 0.9);
   color: rgba(74, 52, 28, 0.9);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="light"] body footer {
   background-color: rgb(238, 231, 221);
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
@@ -1871,16 +1871,16 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body footer ul li a {
+html[saved-theme="light"] body footer ul li a {
   color: rgba(74, 52, 28, 0.9);
   text-decoration: rgba(74, 52, 28, 0.9);
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body .recent-notes > ul.recent-ul > li {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
@@ -1888,39 +1888,39 @@ body .recent-notes > ul.recent-ul > li {
   color: rgb(74, 52, 28);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgba(74, 52, 28, 0.9);
   text-decoration: rgba(74, 52, 28, 0.9);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }`,
-    listPage: `body li.section-li {
+    listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }
 
-body li.section-li > .section .meta {
+html[saved-theme="light"] body li.section-li > .section .meta {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgba(74, 52, 28, 0.9);
   text-decoration: rgba(74, 52, 28, 0.9);
 }
 
-body ul.section-ul {
+html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgba(74, 52, 28, 0.9);
   border-left-color: rgba(74, 52, 28, 0.9);
   border-right-color: rgba(74, 52, 28, 0.9);
@@ -1928,11 +1928,11 @@ body ul.section-ul {
   color: rgba(74, 52, 28, 0.9);
 }
 
-body .darkmode svg {
+html[saved-theme="light"] body .darkmode svg {
   color: rgba(74, 52, 28, 0.9);
   stroke: rgba(74, 52, 28, 0.9);
 }`,
-    breadcrumbs: `body .breadcrumb-container {
+    breadcrumbs: `html[saved-theme="light"] body .breadcrumb-container {
   border-bottom-color: rgba(74, 52, 28, 0.9);
   border-left-color: rgba(74, 52, 28, 0.9);
   border-right-color: rgba(74, 52, 28, 0.9);
@@ -1940,11 +1940,11 @@ body .darkmode svg {
   color: rgba(74, 52, 28, 0.9);
 }
 
-body .breadcrumb-element p {
+html[saved-theme="light"] body .breadcrumb-element p {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }`,
-    misc: `body .katex-display {
+    misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
@@ -1952,7 +1952,7 @@ body .breadcrumb-element p {
   color: rgb(74, 52, 28);
 }
 
-body .metadata {
+html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
   border-right-color: rgb(233, 223, 209);
@@ -1961,7 +1961,7 @@ body .metadata {
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body .metadata-properties {
+html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgba(74, 52, 28, 0.9);
   border-left-color: rgba(74, 52, 28, 0.9);
   border-right-color: rgba(74, 52, 28, 0.9);
@@ -1970,28 +1970,28 @@ body .metadata-properties {
   font-family: "??", "??", "iA Writer Quattro S";
 }
 
-body .navigation-progress {
+html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(238, 231, 221);
 }
 
-body .page-header h2.page-title {
+html[saved-theme="light"] body .page-header h2.page-title {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body abbr {
+html[saved-theme="light"] body abbr {
   color: rgb(74, 52, 28);
   text-decoration: underline dotted rgb(74, 52, 28);
 }
 
-body details {
+html[saved-theme="light"] body details {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }
 
-body input[type=text] {
+html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgba(74, 52, 28, 0.9);
   border-left-color: rgba(74, 52, 28, 0.9);
   border-right-color: rgba(74, 52, 28, 0.9);
@@ -2000,7 +2000,7 @@ body input[type=text] {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-body kbd {
+html[saved-theme="light"] body kbd {
   background-color: rgb(250, 238, 225);
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
@@ -2010,22 +2010,22 @@ body kbd {
   font-family: "iA Writer Mono S";
 }
 
-body progress {
+html[saved-theme="light"] body progress {
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
   border-top-color: rgb(74, 52, 28);
 }
 
-body sub {
+html[saved-theme="light"] body sub {
   color: rgb(74, 52, 28);
 }
 
-body summary {
+html[saved-theme="light"] body summary {
   color: rgb(74, 52, 28);
 }
 
-body sup {
+html[saved-theme="light"] body sup {
   color: rgb(74, 52, 28);
 }`,
   },

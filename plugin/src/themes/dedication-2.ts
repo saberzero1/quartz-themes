@@ -176,64 +176,64 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(22, 27, 34);
   color: rgb(222, 222, 222);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(13, 17, 23);
   color: rgb(222, 222, 222);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(22, 27, 34);
   color: rgb(222, 222, 222);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(0, 255, 255);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(22, 27, 34);
   border-left-color: rgb(0, 255, 255);
   color: rgb(222, 222, 222);
 }
 
-body div#quartz-root {
+html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(13, 17, 23);
   color: rgb(222, 222, 222);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, b {
   color: rgb(222, 222, 222);
   outline: rgb(222, 222, 222) none 0px;
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, em {
   color: rgb(222, 222, 222);
   outline: rgb(222, 222, 222) none 0px;
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, i {
   color: rgb(222, 222, 222);
   outline: rgb(222, 222, 222) none 0px;
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, strong {
   color: rgb(222, 222, 222);
   outline: rgb(222, 222, 222) none 0px;
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body .text-highlight {
+html[saved-theme="dark"] body .text-highlight {
   background-color: rgb(100, 2, 17);
   color: rgb(222, 222, 222);
   outline: rgb(222, 222, 222) none 0px;
@@ -241,17 +241,17 @@ body .text-highlight {
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body del {
+html[saved-theme="dark"] body del {
   color: rgb(222, 222, 222);
   outline: rgb(222, 222, 222) none 0px;
   text-decoration: line-through rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body p {
+html[saved-theme="dark"] body p {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, footer a {
   color: rgb(222, 222, 222);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
@@ -261,7 +261,7 @@ body p {
   transition: 0.2s;
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(222, 222, 222);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
@@ -271,7 +271,7 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   transition: color 0.2s;
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   color: rgb(222, 222, 222);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
@@ -280,19 +280,19 @@ body a.internal.broken {
   text-decoration-color: rgb(222, 222, 222);
   transition: color 0.2s;
 }`,
-    lists: `body dd {
+    lists: `html[saved-theme="dark"] body dd {
   color: rgb(222, 222, 222);
 }
 
-body dt {
+html[saved-theme="dark"] body dt {
   color: rgb(222, 222, 222);
 }
 
-body ol > li {
+html[saved-theme="dark"] body ol > li {
   color: rgb(222, 222, 222);
 }
 
-body ol.overflow {
+html[saved-theme="dark"] body ol.overflow {
   background-color: rgb(13, 17, 23);
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
@@ -300,42 +300,42 @@ body ol.overflow {
   border-top-color: rgb(222, 222, 222);
 }
 
-body ul > li {
+html[saved-theme="dark"] body ul > li {
   color: rgb(222, 222, 222);
 }
 
-body ul.overflow {
+html[saved-theme="dark"] body ul.overflow {
   background-color: rgb(13, 17, 23);
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(192, 176, 160);
   text-decoration: rgb(192, 176, 160);
 }
 
-body blockquote {
+html[saved-theme="dark"] body blockquote {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-style: italic;
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
-    tables: `body .table-container {
+    tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }
 
-body table {
+html[saved-theme="dark"] body table {
   color: rgb(222, 222, 222);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   width: 662px;
 }
 
-body td {
+html[saved-theme="dark"] body td {
   border-bottom-color: rgb(0, 255, 255);
   border-left-color: rgb(0, 255, 255);
   border-right-color: rgb(0, 255, 255);
@@ -346,7 +346,7 @@ body td {
   text-align: center;
 }
 
-body th {
+html[saved-theme="dark"] body th {
   border-bottom-color: rgb(0, 255, 255);
   border-left-color: rgb(0, 255, 255);
   border-right-color: rgb(0, 255, 255);
@@ -357,10 +357,10 @@ body th {
   text-align: center;
 }
 
-body tr {
+html[saved-theme="dark"] body tr {
   background-color: color(srgb 0.0668627 0.147255 0.226667);
 }`,
-    code: `body code {
+    code: `html[saved-theme="dark"] body code {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
@@ -368,7 +368,7 @@ body tr {
   color: rgb(222, 222, 222);
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(30, 30, 30);
   border-bottom-color: rgb(0, 255, 255);
   border-bottom-left-radius: 8px;
@@ -384,7 +384,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-width: 1px;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(30, 30, 30);
   border-bottom-color: rgb(0, 255, 255);
   border-bottom-left-radius: 8px;
@@ -401,22 +401,22 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(222, 222, 222);
 }
 
-body pre > code > [data-line] {
+html[saved-theme="dark"] body pre > code > [data-line] {
   border-left-color: rgb(249, 248, 113);
 }
 
-body pre > code > [data-line][data-highlighted-line] {
+html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
   border-left-color: rgb(249, 248, 113);
 }
 
-body pre > code [data-highlighted-chars] {
+html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
   border-bottom-color: rgb(249, 248, 113);
   border-left-color: rgb(249, 248, 113);
   border-right-color: rgb(249, 248, 113);
   border-top-color: rgb(249, 248, 113);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, pre:has(> code) {
   background-color: rgb(30, 30, 30);
   border-bottom-color: rgb(0, 255, 255);
   border-bottom-left-radius: 8px;
@@ -434,7 +434,7 @@ body pre > code, pre:has(> code) {
   padding-top: 16px;
 }
 
-body pre:has(> code) {
+html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(30, 30, 30);
   border-bottom-color: rgb(0, 255, 255);
   border-bottom-left-radius: 8px;
@@ -451,25 +451,25 @@ body pre:has(> code) {
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
-    images: `body audio {
+    images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }
 
-body figcaption {
+html[saved-theme="dark"] body figcaption {
   color: rgb(222, 222, 222);
 }
 
-body figure {
+html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }
 
-body img {
+html[saved-theme="dark"] body img {
   border-bottom-color: rgb(222, 222, 222);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -482,37 +482,37 @@ body img {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
 }
 
-body video {
+html[saved-theme="dark"] body video {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }`,
-    embeds: `body .footnotes {
+    embeds: `html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(222, 222, 222);
   color: rgb(222, 222, 222);
 }
 
-body .transclude {
+html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(0, 102, 204);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }
 
-body .transclude-inner {
+html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(0, 102, 204);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }`,
-    checkboxes: `body .page article li:has(>input[type=checkbox]:checked) {
+    checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(192, 176, 160);
   text-decoration: rgb(192, 176, 160);
   text-decoration-color: rgb(192, 176, 160);
 }
 
-body input[type=checkbox] {
+html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(0, 255, 255);
   border-left-color: rgb(0, 255, 255);
   border-right-color: rgb(0, 255, 255);
@@ -522,114 +522,114 @@ body input[type=checkbox] {
   width: 16.6562px;
 }
 
-body li.task-list-item[data-task='!'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='*'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='-'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='/'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='>'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='?'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='I'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='S'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='b'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='c'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='d'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='f'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='i'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='k'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='l'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='p'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='u'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body li.task-list-item[data-task='w'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(222, 222, 222);
   text-decoration: rgb(222, 222, 222);
   text-decoration-color: rgb(222, 222, 222);
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="dark"] body .search > .search-button {
   border-bottom-color: rgb(0, 255, 255);
   border-left-color: rgb(0, 255, 255);
   border-right-color: rgb(0, 255, 255);
@@ -638,11 +638,11 @@ body li.task-list-item[data-task='w'] {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(13, 17, 23);
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(222, 222, 222);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   outline: rgb(222, 222, 222) none 0px;
@@ -650,33 +650,33 @@ body .search > .search-container > .search-space > * {
   text-decoration-color: rgb(222, 222, 222);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(222, 222, 222);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(222, 222, 222);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(222, 222, 222);
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(22, 27, 34);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
@@ -684,69 +684,69 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(222, 222, 222);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(222, 222, 222);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", Inter, -apple-system, BlinkMacSystemFont, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal.tag-link::before {
   color: rgb(0, 255, 255);
 }
 
-body h1 {
+html[saved-theme="dark"] body h1 {
   color: rgb(40, 154, 255);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h2 {
+html[saved-theme="dark"] body h2 {
   color: rgb(0, 245, 106);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, h2.page-title a {
   color: rgb(222, 222, 222);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h3 {
+html[saved-theme="dark"] body h3 {
   color: rgb(10, 247, 255);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h4 {
+html[saved-theme="dark"] body h4 {
   color: rgb(249, 248, 113);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h5 {
+html[saved-theme="dark"] body h5 {
   color: rgb(255, 87, 87);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h6 {
+html[saved-theme="dark"] body h6 {
   color: rgb(255, 60, 213);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body hr {
+html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(0, 255, 255);
   border-left-color: rgb(0, 255, 255);
   border-right-color: rgb(0, 255, 255);
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html[saved-theme="dark"] body ::-webkit-scrollbar {
   background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(13, 17, 23);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
   background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(13, 17, 23);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
   background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(13, 17, 23);
   border-bottom-color: rgb(222, 222, 222);
@@ -755,40 +755,40 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(222, 222, 222);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(13, 17, 23);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(13, 17, 23);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="dark"] body ::-webkit-scrollbar-track {
   background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(13, 17, 23);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
   color: rgb(222, 222, 222);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="dark"] body footer {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
@@ -798,13 +798,13 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-width: 0px;
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(222, 222, 222);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
 }
 
-body .recent-notes > ul.recent-ul > li {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
@@ -812,31 +812,31 @@ body .recent-notes > ul.recent-ul > li {
   color: rgb(222, 222, 222);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }`,
-    listPage: `body li.section-li {
+    listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }
 
-body li.section-li > .section .meta {
+html[saved-theme="dark"] body li.section-li > .section .meta {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body ul.section-ul {
+html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }`,
-    breadcrumbs: `body .breadcrumb-element p {
+    breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(192, 176, 160);
   font-family: "??", "??", Inter, -apple-system, BlinkMacSystemFont, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `body .katex-display {
+    misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
@@ -844,7 +844,7 @@ body ul.section-ul {
   color: rgb(222, 222, 222);
 }
 
-body .metadata {
+html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(0, 255, 255);
   border-left-color: rgb(0, 255, 255);
   border-right-color: rgb(0, 255, 255);
@@ -852,36 +852,36 @@ body .metadata {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .metadata-properties {
+html[saved-theme="dark"] body .metadata-properties {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .navigation-progress {
+html[saved-theme="dark"] body .navigation-progress {
   background-color: rgba(0, 0, 0, 0);
 }
 
-body .page-header h2.page-title {
+html[saved-theme="dark"] body .page-header h2.page-title {
   color: rgb(222, 222, 222);
   font-family: "??", "??", Inter, -apple-system, BlinkMacSystemFont, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-body abbr {
+html[saved-theme="dark"] body abbr {
   color: rgb(222, 222, 222);
   text-decoration: underline dotted rgb(222, 222, 222);
 }
 
-body details {
+html[saved-theme="dark"] body details {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }
 
-body input[type=text] {
+html[saved-theme="dark"] body input[type=text] {
   font-family: "??", "??", Inter, -apple-system, BlinkMacSystemFont, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-body kbd {
+html[saved-theme="dark"] body kbd {
   background-color: rgb(107, 102, 102);
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
@@ -890,22 +890,22 @@ body kbd {
   color: rgb(222, 222, 222);
 }
 
-body progress {
+html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(222, 222, 222);
   border-left-color: rgb(222, 222, 222);
   border-right-color: rgb(222, 222, 222);
   border-top-color: rgb(222, 222, 222);
 }
 
-body sub {
+html[saved-theme="dark"] body sub {
   color: rgb(222, 222, 222);
 }
 
-body summary {
+html[saved-theme="dark"] body summary {
   color: rgb(222, 222, 222);
 }
 
-body sup {
+html[saved-theme="dark"] body sup {
   color: rgb(222, 222, 222);
 }`,
   },
@@ -1084,64 +1084,64 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(196, 196, 196);
   color: rgb(26, 32, 35);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(237, 237, 237);
   color: rgb(26, 32, 35);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(196, 196, 196);
   color: rgb(26, 32, 35);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(0, 184, 212);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(196, 196, 196);
   border-left-color: rgb(0, 184, 212);
   color: rgb(26, 32, 35);
 }
 
-body div#quartz-root {
+html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(237, 237, 237);
   color: rgb(26, 32, 35);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, b {
   color: rgb(26, 32, 35);
   outline: rgb(26, 32, 35) none 0px;
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, em {
   color: rgb(26, 32, 35);
   outline: rgb(26, 32, 35) none 0px;
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, i {
   color: rgb(26, 32, 35);
   outline: rgb(26, 32, 35) none 0px;
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, strong {
   color: rgb(26, 32, 35);
   outline: rgb(26, 32, 35) none 0px;
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body .text-highlight {
+html[saved-theme="light"] body .text-highlight {
   background-color: rgb(240, 240, 240);
   color: rgb(26, 32, 35);
   outline: rgb(26, 32, 35) none 0px;
@@ -1149,17 +1149,17 @@ body .text-highlight {
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body del {
+html[saved-theme="light"] body del {
   color: rgb(26, 32, 35);
   outline: rgb(26, 32, 35) none 0px;
   text-decoration: line-through rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body p {
+html[saved-theme="light"] body p {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, footer a {
   color: rgb(26, 32, 35);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
@@ -1169,7 +1169,7 @@ body p {
   transition: 0.2s;
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(26, 32, 35);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
@@ -1179,7 +1179,7 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   transition: color 0.2s;
 }
 
-body a.internal.broken {
+html[saved-theme="light"] body a.internal.broken {
   color: rgb(26, 32, 35);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
@@ -1188,19 +1188,19 @@ body a.internal.broken {
   text-decoration-color: rgb(26, 32, 35);
   transition: color 0.2s;
 }`,
-    lists: `body dd {
+    lists: `html[saved-theme="light"] body dd {
   color: rgb(26, 32, 35);
 }
 
-body dt {
+html[saved-theme="light"] body dt {
   color: rgb(26, 32, 35);
 }
 
-body ol > li {
+html[saved-theme="light"] body ol > li {
   color: rgb(26, 32, 35);
 }
 
-body ol.overflow {
+html[saved-theme="light"] body ol.overflow {
   background-color: rgb(237, 237, 237);
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
@@ -1208,42 +1208,42 @@ body ol.overflow {
   border-top-color: rgb(26, 32, 35);
 }
 
-body ul > li {
+html[saved-theme="light"] body ul > li {
   color: rgb(26, 32, 35);
 }
 
-body ul.overflow {
+html[saved-theme="light"] body ul.overflow {
   background-color: rgb(237, 237, 237);
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(153, 153, 153);
   text-decoration: rgb(153, 153, 153);
 }
 
-body blockquote {
+html[saved-theme="light"] body blockquote {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-style: italic;
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
-    tables: `body .table-container {
+    tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }
 
-body table {
+html[saved-theme="light"] body table {
   color: rgb(26, 32, 35);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   width: 662px;
 }
 
-body td {
+html[saved-theme="light"] body td {
   border-bottom-color: rgb(0, 184, 212);
   border-left-color: rgb(0, 184, 212);
   border-right-color: rgb(0, 184, 212);
@@ -1254,7 +1254,7 @@ body td {
   text-align: center;
 }
 
-body th {
+html[saved-theme="light"] body th {
   border-bottom-color: rgb(0, 184, 212);
   border-left-color: rgb(0, 184, 212);
   border-right-color: rgb(0, 184, 212);
@@ -1265,10 +1265,10 @@ body th {
   text-align: center;
 }
 
-body tr {
+html[saved-theme="light"] body tr {
   background-color: color(srgb 0.79 0.859412 0.94);
 }`,
-    code: `body code {
+    code: `html[saved-theme="light"] body code {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
@@ -1276,7 +1276,7 @@ body tr {
   color: rgb(26, 32, 35);
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(190, 190, 190);
   border-bottom-color: rgb(0, 184, 212);
   border-bottom-left-radius: 8px;
@@ -1292,7 +1292,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-width: 1px;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(190, 190, 190);
   border-bottom-color: rgb(0, 184, 212);
   border-bottom-left-radius: 8px;
@@ -1309,22 +1309,22 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(26, 32, 35);
 }
 
-body pre > code > [data-line] {
+html[saved-theme="light"] body pre > code > [data-line] {
   border-left-color: rgb(255, 145, 0);
 }
 
-body pre > code > [data-line][data-highlighted-line] {
+html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
   border-left-color: rgb(255, 145, 0);
 }
 
-body pre > code [data-highlighted-chars] {
+html[saved-theme="light"] body pre > code [data-highlighted-chars] {
   border-bottom-color: rgb(255, 145, 0);
   border-left-color: rgb(255, 145, 0);
   border-right-color: rgb(255, 145, 0);
   border-top-color: rgb(255, 145, 0);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, pre:has(> code) {
   background-color: rgb(190, 190, 190);
   border-bottom-color: rgb(0, 184, 212);
   border-bottom-left-radius: 8px;
@@ -1342,7 +1342,7 @@ body pre > code, pre:has(> code) {
   padding-top: 16px;
 }
 
-body pre:has(> code) {
+html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(190, 190, 190);
   border-bottom-color: rgb(0, 184, 212);
   border-bottom-left-radius: 8px;
@@ -1359,25 +1359,25 @@ body pre:has(> code) {
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
-    images: `body audio {
+    images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }
 
-body figcaption {
+html[saved-theme="light"] body figcaption {
   color: rgb(26, 32, 35);
 }
 
-body figure {
+html[saved-theme="light"] body figure {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }
 
-body img {
+html[saved-theme="light"] body img {
   border-bottom-color: rgb(26, 32, 35);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1390,41 +1390,41 @@ body img {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
 }
 
-body video {
+html[saved-theme="light"] body video {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html[saved-theme="light"] body .file-embed {
   background-color: rgb(212, 212, 212);
 }
 
-body .footnotes {
+html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(26, 32, 35);
   color: rgb(26, 32, 35);
 }
 
-body .transclude {
+html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(41, 98, 255);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }
 
-body .transclude-inner {
+html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(41, 98, 255);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }`,
-    checkboxes: `body .page article li:has(>input[type=checkbox]:checked) {
+    checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(153, 153, 153);
   text-decoration: rgb(153, 153, 153);
   text-decoration-color: rgb(153, 153, 153);
 }
 
-body input[type=checkbox] {
+html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(0, 184, 212);
   border-left-color: rgb(0, 184, 212);
   border-right-color: rgb(0, 184, 212);
@@ -1434,114 +1434,114 @@ body input[type=checkbox] {
   width: 16.6562px;
 }
 
-body li.task-list-item[data-task='!'] {
+html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='*'] {
+html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='-'] {
+html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='/'] {
+html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='>'] {
+html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='?'] {
+html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='I'] {
+html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='S'] {
+html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='b'] {
+html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='c'] {
+html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='d'] {
+html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='f'] {
+html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='i'] {
+html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='k'] {
+html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='l'] {
+html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='p'] {
+html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='u'] {
+html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body li.task-list-item[data-task='w'] {
+html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(26, 32, 35);
   text-decoration: rgb(26, 32, 35);
   text-decoration-color: rgb(26, 32, 35);
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="light"] body .search > .search-button {
   border-bottom-color: rgb(0, 184, 212);
   border-left-color: rgb(0, 184, 212);
   border-right-color: rgb(0, 184, 212);
@@ -1550,11 +1550,11 @@ body li.task-list-item[data-task='w'] {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="light"] body .search > .search-container > .search-space {
   background-color: rgb(237, 237, 237);
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(26, 32, 35);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   outline: rgb(26, 32, 35) none 0px;
@@ -1562,33 +1562,33 @@ body .search > .search-container > .search-space > * {
   text-decoration-color: rgb(26, 32, 35);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(26, 32, 35);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(26, 32, 35);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(26, 32, 35);
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(196, 196, 196);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
@@ -1596,69 +1596,69 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(26, 32, 35);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(26, 32, 35);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", Inter, -apple-system, BlinkMacSystemFont, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal.tag-link::before {
   color: rgb(0, 184, 212);
 }
 
-body h1 {
+html[saved-theme="light"] body h1 {
   color: rgb(0, 118, 255);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h2 {
+html[saved-theme="light"] body h2 {
   color: rgb(0, 200, 83);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, h2.page-title a {
   color: rgb(26, 32, 35);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h3 {
+html[saved-theme="light"] body h3 {
   color: rgb(0, 184, 212);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h4 {
+html[saved-theme="light"] body h4 {
   color: rgb(255, 145, 0);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h5 {
+html[saved-theme="light"] body h5 {
   color: rgb(255, 23, 68);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body h6 {
+html[saved-theme="light"] body h6 {
   color: rgb(224, 64, 251);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body hr {
+html[saved-theme="light"] body hr {
   border-bottom-color: rgb(0, 184, 212);
   border-left-color: rgb(0, 184, 212);
   border-right-color: rgb(0, 184, 212);
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html[saved-theme="light"] body ::-webkit-scrollbar {
   background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(237, 237, 237);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="light"] body ::-webkit-scrollbar-corner {
   background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(237, 237, 237);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
   background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(237, 237, 237);
   border-bottom-color: rgb(26, 32, 35);
@@ -1667,40 +1667,40 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(26, 32, 35);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(237, 237, 237);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(237, 237, 237);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="light"] body ::-webkit-scrollbar-track {
   background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(237, 237, 237);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
   color: rgb(26, 32, 35);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="light"] body footer {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
@@ -1710,13 +1710,13 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-width: 0px;
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(26, 32, 35);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
 }
 
-body .recent-notes > ul.recent-ul > li {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
@@ -1724,31 +1724,31 @@ body .recent-notes > ul.recent-ul > li {
   color: rgb(26, 32, 35);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }`,
-    listPage: `body li.section-li {
+    listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }
 
-body li.section-li > .section .meta {
+html[saved-theme="light"] body li.section-li > .section .meta {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body ul.section-ul {
+html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }`,
-    breadcrumbs: `body .breadcrumb-element p {
+    breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(153, 153, 153);
   font-family: "??", "??", Inter, -apple-system, BlinkMacSystemFont, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `body .katex-display {
+    misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
@@ -1756,7 +1756,7 @@ body ul.section-ul {
   color: rgb(26, 32, 35);
 }
 
-body .metadata {
+html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(0, 184, 212);
   border-left-color: rgb(0, 184, 212);
   border-right-color: rgb(0, 184, 212);
@@ -1764,36 +1764,36 @@ body .metadata {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .metadata-properties {
+html[saved-theme="light"] body .metadata-properties {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-body .navigation-progress {
+html[saved-theme="light"] body .navigation-progress {
   background-color: rgba(0, 0, 0, 0);
 }
 
-body .page-header h2.page-title {
+html[saved-theme="light"] body .page-header h2.page-title {
   color: rgb(26, 32, 35);
   font-family: "??", "??", Inter, -apple-system, BlinkMacSystemFont, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-body abbr {
+html[saved-theme="light"] body abbr {
   color: rgb(26, 32, 35);
   text-decoration: underline dotted rgb(26, 32, 35);
 }
 
-body details {
+html[saved-theme="light"] body details {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }
 
-body input[type=text] {
+html[saved-theme="light"] body input[type=text] {
   font-family: "??", "??", Inter, -apple-system, BlinkMacSystemFont, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-body kbd {
+html[saved-theme="light"] body kbd {
   background-color: rgb(153, 153, 153);
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
@@ -1802,22 +1802,22 @@ body kbd {
   color: rgb(26, 32, 35);
 }
 
-body progress {
+html[saved-theme="light"] body progress {
   border-bottom-color: rgb(26, 32, 35);
   border-left-color: rgb(26, 32, 35);
   border-right-color: rgb(26, 32, 35);
   border-top-color: rgb(26, 32, 35);
 }
 
-body sub {
+html[saved-theme="light"] body sub {
   color: rgb(26, 32, 35);
 }
 
-body summary {
+html[saved-theme="light"] body summary {
   color: rgb(26, 32, 35);
 }
 
-body sup {
+html[saved-theme="light"] body sup {
   color: rgb(26, 32, 35);
 }`,
   },

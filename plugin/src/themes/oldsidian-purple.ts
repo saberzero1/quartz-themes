@@ -80,47 +80,47 @@ html body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(38, 38, 38);
 }
 
-body div#quartz-root {
+html body div#quartz-root {
   background-color: rgb(38, 38, 38);
 }`,
-    typography: `body .text-highlight {
+    typography: `html body .text-highlight {
   background-color: rgb(108, 65, 216);
 }`,
-    links: `body a.external, footer a {
+    links: `html body a.external, footer a {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
   text-decoration: underline rgb(129, 76, 255);
   text-decoration-color: rgb(129, 76, 255);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
   text-decoration: underline rgb(129, 76, 255);
   text-decoration-color: rgb(129, 76, 255);
 }
 
-body a.internal.broken {
+html body a.internal.broken {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
   text-decoration: underline rgb(129, 76, 255);
   text-decoration-color: rgb(129, 76, 255);
 }`,
-    lists: `body ol.overflow {
+    lists: `html body ol.overflow {
   background-color: rgb(38, 38, 38);
 }
 
-body ul.overflow {
+html body ul.overflow {
   background-color: rgb(38, 38, 38);
 }`,
-    tables: `body .spacer {
+    tables: `html body .spacer {
   background-color: rgb(22, 22, 22);
 }`,
-    code: `body code {
+    code: `html body code {
   border-bottom-color: rgb(251, 70, 59);
   border-left-color: rgb(251, 70, 59);
   border-right-color: rgb(251, 70, 59);
@@ -128,40 +128,40 @@ body ul.overflow {
   color: rgb(251, 70, 59);
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(22, 22, 22);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(22, 22, 22);
 }
 
-body pre > code, pre:has(> code) {
+html body pre > code, pre:has(> code) {
   background-color: rgb(22, 22, 22);
 }
 
-body pre:has(> code) {
+html body pre:has(> code) {
   background-color: rgb(22, 22, 22);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html body .file-embed {
   background-color: rgb(22, 22, 22);
 }
 
-body .transclude {
+html body .transclude {
   border-left-color: rgb(108, 65, 216);
 }
 
-body .transclude-inner {
+html body .transclude-inner {
   border-left-color: rgb(108, 65, 216);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html body .callout .callout-title {
   padding-bottom: 8px;
   padding-left: 12px;
   padding-right: 8px;
   padding-top: 8px;
 }
 
-body .callout > .callout-content {
+html body .callout > .callout-content {
   background-color: rgb(22, 22, 22);
   padding-bottom: 8px;
   padding-left: 12px;
@@ -169,7 +169,7 @@ body .callout > .callout-content {
   padding-top: 8px;
 }
 
-body .callout[data-callout="abstract"] {
+html body .callout[data-callout="abstract"] {
   border-bottom-color: rgb(83, 223, 221);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -181,7 +181,7 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="bug"] {
+html body .callout[data-callout="bug"] {
   border-bottom-color: rgb(251, 70, 76);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -193,7 +193,7 @@ body .callout[data-callout="bug"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="danger"] {
+html body .callout[data-callout="danger"] {
   border-bottom-color: rgb(251, 70, 76);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -205,7 +205,7 @@ body .callout[data-callout="danger"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="example"] {
+html body .callout[data-callout="example"] {
   border-bottom-color: rgb(168, 130, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -217,7 +217,7 @@ body .callout[data-callout="example"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="failure"] {
+html body .callout[data-callout="failure"] {
   border-bottom-color: rgb(251, 70, 76);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -229,7 +229,7 @@ body .callout[data-callout="failure"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="info"] {
+html body .callout[data-callout="info"] {
   border-bottom-color: rgb(2, 122, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -241,7 +241,7 @@ body .callout[data-callout="info"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="note"] {
+html body .callout[data-callout="note"] {
   border-bottom-color: rgb(2, 122, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -253,7 +253,7 @@ body .callout[data-callout="note"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="question"] {
+html body .callout[data-callout="question"] {
   border-bottom-color: rgb(233, 151, 63);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -265,7 +265,7 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="quote"] {
+html body .callout[data-callout="quote"] {
   border-bottom-color: rgb(158, 158, 158);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -277,7 +277,7 @@ body .callout[data-callout="quote"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="success"] {
+html body .callout[data-callout="success"] {
   border-bottom-color: rgb(68, 207, 110);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -289,7 +289,7 @@ body .callout[data-callout="success"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="tip"] {
+html body .callout[data-callout="tip"] {
   border-bottom-color: rgb(83, 223, 221);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -301,7 +301,7 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="todo"] {
+html body .callout[data-callout="todo"] {
   border-bottom-color: rgb(2, 122, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -313,7 +313,7 @@ body .callout[data-callout="todo"] {
   border-top-right-radius: 5px;
 }
 
-body .callout[data-callout="warning"] {
+html body .callout[data-callout="warning"] {
   border-bottom-color: rgb(233, 151, 63);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -324,14 +324,14 @@ body .callout[data-callout="warning"] {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }`,
-    search: `body .search > .search-container > .search-space {
+    search: `html body .search > .search-container > .search-space {
   background-color: rgb(38, 38, 38);
 }
 
-body a.internal.tag-link::before {
+html body a.internal.tag-link::before {
   color: rgb(129, 76, 255);
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html body .callout {
   border-bottom-color: rgb(2, 122, 255);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -347,39 +347,39 @@ body a.internal.tag-link::before {
   padding-top: 0px;
 }
 
-body ::-webkit-scrollbar {
+html body ::-webkit-scrollbar {
   background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(38, 38, 38);
 }
 
-body ::-webkit-scrollbar-corner {
+html body ::-webkit-scrollbar-corner {
   background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(38, 38, 38);
 }
 
-body ::-webkit-scrollbar-thumb {
+html body ::-webkit-scrollbar-thumb {
   background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(38, 38, 38);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html body ::-webkit-scrollbar-thumb:active {
   background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(38, 38, 38);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html body ::-webkit-scrollbar-thumb:hover {
   background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(38, 38, 38);
 }
 
-body ::-webkit-scrollbar-track {
+html body ::-webkit-scrollbar-track {
   background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(38, 38, 38);
 }`,
-    explorer: `body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+    explorer: `html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgb(108, 65, 216);
 }`,
-    misc: `body kbd {
+    misc: `html body kbd {
   background-color: rgb(22, 22, 22);
   border-bottom-color: rgb(251, 70, 59);
   border-left-color: rgb(251, 70, 59);

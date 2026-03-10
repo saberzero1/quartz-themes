@@ -90,26 +90,26 @@ html body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
 }
 
-body .page > div#quartz-body div.sidebar {
+html body .page > div#quartz-body div.sidebar {
   background-color: rgb(51, 51, 51);
   color: rgb(34, 34, 34);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(255, 255, 255);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(51, 51, 51);
   border-left-color: rgb(255, 255, 255);
   border-left-style: solid;
@@ -117,39 +117,39 @@ body .page > div#quartz-body div.sidebar.right {
   color: rgb(255, 255, 255);
 }
 
-body div#quartz-root {
+html body div#quartz-root {
   background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html body .page article p > b, b {
   color: rgb(255, 0, 0);
   outline: rgb(255, 0, 0) none 0px;
   text-decoration: rgb(255, 0, 0);
   text-decoration-color: rgb(255, 0, 0);
 }
 
-body .page article p > em, em {
+html body .page article p > em, em {
   color: rgb(0, 255, 255);
   outline: rgb(0, 255, 255) none 0px;
   text-decoration: rgb(0, 255, 255);
   text-decoration-color: rgb(0, 255, 255);
 }
 
-body .page article p > i, i {
+html body .page article p > i, i {
   color: rgb(0, 255, 255);
   outline: rgb(0, 255, 255) none 0px;
   text-decoration: rgb(0, 255, 255);
   text-decoration-color: rgb(0, 255, 255);
 }
 
-body .page article p > strong, strong {
+html body .page article p > strong, strong {
   color: rgb(255, 0, 0);
   outline: rgb(255, 0, 0) none 0px;
   text-decoration: rgb(255, 0, 0);
   text-decoration-color: rgb(255, 0, 0);
 }
 
-body .text-highlight {
+html body .text-highlight {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(255, 255, 0);
   outline: rgb(255, 255, 0) none 0px;
@@ -157,45 +157,45 @@ body .text-highlight {
   text-decoration-color: rgb(255, 255, 0);
 }
 
-body del {
+html body del {
   color: rgb(255, 0, 255);
   outline: rgb(255, 0, 255) none 0px;
   text-decoration: rgb(255, 0, 255);
   text-decoration-color: rgb(255, 0, 255);
 }`,
-    links: `body a.external, footer a {
+    links: `html body a.external, footer a {
   color: rgb(0, 255, 0);
   outline: rgb(0, 255, 0) none 0px;
   text-decoration: rgb(0, 255, 0);
   text-decoration-color: rgb(0, 255, 0);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(0, 255, 0);
   outline: rgb(0, 255, 0) none 0px;
   text-decoration: rgb(0, 255, 0);
   text-decoration-color: rgb(0, 255, 0);
 }
 
-body a.internal.broken {
+html body a.internal.broken {
   color: rgb(0, 255, 0);
   outline: rgb(0, 255, 0) none 0px;
   text-decoration: rgb(0, 255, 0);
   text-decoration-color: rgb(0, 255, 0);
 }`,
-    lists: `body dd {
+    lists: `html body dd {
   color: rgb(255, 255, 255);
 }
 
-body dt {
+html body dt {
   color: rgb(255, 255, 255);
 }
 
-body ol > li {
+html body ol > li {
   color: rgb(255, 255, 255);
 }
 
-body ol.overflow {
+html body ol.overflow {
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
@@ -203,38 +203,38 @@ body ol.overflow {
   border-top-color: rgb(255, 255, 255);
 }
 
-body ul > li {
+html body ul > li {
   color: rgb(255, 255, 255);
 }
 
-body ul.overflow {
+html body ul.overflow {
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }`,
-    tables: `body .spacer {
+    tables: `html body .spacer {
   background-color: rgb(34, 34, 34);
 }
 
-body .table-container {
+html body .table-container {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }
 
-body table {
+html body table {
   color: rgb(255, 255, 255);
   width: 231.219px;
 }
 
-body td {
+html body td {
   color: rgb(255, 255, 255);
 }
 
-body th {
+html body th {
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(88, 88, 88);
   border-bottom-width: 3px;
@@ -246,7 +246,7 @@ body th {
   border-top-width: 3px;
   color: rgb(255, 255, 0);
 }`,
-    code: `body code {
+    code: `html body code {
   background-color: rgb(68, 68, 68);
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
@@ -255,70 +255,70 @@ body th {
   color: rgb(255, 255, 255);
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(68, 68, 68);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(68, 68, 68);
   color: rgb(255, 255, 255);
 }
 
-body pre > code, pre:has(> code) {
+html body pre > code, pre:has(> code) {
   background-color: rgb(68, 68, 68);
 }
 
-body pre:has(> code) {
+html body pre:has(> code) {
   background-color: rgb(68, 68, 68);
 }`,
-    images: `body audio {
+    images: `html body audio {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }
 
-body figcaption {
+html body figcaption {
   color: rgb(255, 255, 255);
 }
 
-body figure {
+html body figure {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }
 
-body img {
+html body img {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }
 
-body video {
+html body video {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}`,
-    embeds: `body .footnotes {
-  border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-}
-
-body .transclude {
-  border-bottom-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}
-
-body .transclude-inner {
-  border-bottom-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }`,
-    checkboxes: `body input[type=checkbox] {
+    embeds: `html body .footnotes {
+  border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+html body .transclude {
+  border-bottom-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+}
+
+html body .transclude-inner {
+  border-bottom-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+}`,
+    checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -334,121 +334,121 @@ body .transclude-inner {
   transition: 0.3s;
 }
 
-body li.task-list-item[data-task='!'] {
+html body li.task-list-item[data-task='!'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='*'] {
+html body li.task-list-item[data-task='*'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='-'] {
+html body li.task-list-item[data-task='-'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='/'] {
+html body li.task-list-item[data-task='/'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='>'] {
+html body li.task-list-item[data-task='>'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='?'] {
+html body li.task-list-item[data-task='?'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='I'] {
+html body li.task-list-item[data-task='I'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='S'] {
+html body li.task-list-item[data-task='S'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='b'] {
+html body li.task-list-item[data-task='b'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='c'] {
+html body li.task-list-item[data-task='c'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='d'] {
+html body li.task-list-item[data-task='d'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='f'] {
+html body li.task-list-item[data-task='f'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='i'] {
+html body li.task-list-item[data-task='i'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='k'] {
+html body li.task-list-item[data-task='k'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='l'] {
+html body li.task-list-item[data-task='l'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='p'] {
+html body li.task-list-item[data-task='p'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='u'] {
+html body li.task-list-item[data-task='u'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body li.task-list-item[data-task='w'] {
+html body li.task-list-item[data-task='w'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html body .callout .callout-title {
   border-bottom-color: rgb(65, 135, 255);
   border-left-color: rgb(65, 135, 255);
   border-right-color: rgb(65, 135, 255);
   border-top-color: rgb(65, 135, 255);
 }
 
-body .callout[data-callout="abstract"] {
+html body .callout[data-callout="abstract"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(157, 225, 255);
   border-bottom-width: 2px;
@@ -460,7 +460,7 @@ body .callout[data-callout="abstract"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="bug"] {
+html body .callout[data-callout="bug"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(255, 0, 93);
   border-bottom-width: 2px;
@@ -472,7 +472,7 @@ body .callout[data-callout="bug"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="danger"] {
+html body .callout[data-callout="danger"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(255, 0, 51);
   border-bottom-width: 2px;
@@ -484,7 +484,7 @@ body .callout[data-callout="danger"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="example"] {
+html body .callout[data-callout="example"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(158, 119, 255);
   border-bottom-width: 2px;
@@ -496,7 +496,7 @@ body .callout[data-callout="example"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="failure"] {
+html body .callout[data-callout="failure"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(255, 0, 0);
   border-bottom-width: 2px;
@@ -508,7 +508,7 @@ body .callout[data-callout="failure"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="info"] {
+html body .callout[data-callout="info"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(0, 221, 255);
   border-bottom-width: 2px;
@@ -520,7 +520,7 @@ body .callout[data-callout="info"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="note"] {
+html body .callout[data-callout="note"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(65, 135, 255);
   border-bottom-width: 2px;
@@ -532,7 +532,7 @@ body .callout[data-callout="note"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="question"] {
+html body .callout[data-callout="question"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(98, 255, 0);
   border-bottom-width: 2px;
@@ -544,7 +544,7 @@ body .callout[data-callout="question"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="quote"] {
+html body .callout[data-callout="quote"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-width: 2px;
@@ -556,7 +556,7 @@ body .callout[data-callout="quote"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="success"] {
+html body .callout[data-callout="success"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(0, 255, 98);
   border-bottom-width: 2px;
@@ -568,7 +568,7 @@ body .callout[data-callout="success"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="tip"] {
+html body .callout[data-callout="tip"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(0, 255, 229);
   border-bottom-width: 2px;
@@ -580,7 +580,7 @@ body .callout[data-callout="tip"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="todo"] {
+html body .callout[data-callout="todo"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(0, 221, 255);
   border-bottom-width: 2px;
@@ -592,7 +592,7 @@ body .callout[data-callout="todo"] {
   border-top-width: 2px;
 }
 
-body .callout[data-callout="warning"] {
+html body .callout[data-callout="warning"] {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(255, 149, 0);
   border-bottom-width: 2px;
@@ -603,7 +603,7 @@ body .callout[data-callout="warning"] {
   border-top-color: rgb(255, 149, 0);
   border-top-width: 2px;
 }`,
-    search: `body .search > .search-button {
+    search: `html body .search > .search-button {
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-width: 2px;
@@ -616,7 +616,7 @@ body .callout[data-callout="warning"] {
   color: rgb(255, 255, 255);
 }
 
-body .search > .search-container > .search-space {
+html body .search > .search-container > .search-space {
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-width: 2px;
@@ -628,33 +628,33 @@ body .search > .search-container > .search-space {
   border-top-width: 2px;
 }
 
-body .search > .search-container > .search-space > * {
+html body .search > .search-container > .search-space > * {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(255, 255, 255);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(255, 255, 255);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(255, 255, 255);
 }
 
-body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-width: 2px;
   border-left-color: rgb(255, 255, 255);
@@ -665,7 +665,7 @@ body .search > .search-container > .search-space > .search-layout, .search > .se
   border-top-width: 2px;
 }
 
-body .search > .search-container > .search-space > input {
+html body .search > .search-container > .search-space > input {
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-width: 2px;
@@ -680,7 +680,7 @@ body .search > .search-container > .search-space > input {
   border-top-width: 2px;
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -688,39 +688,39 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(255, 255, 255);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(255, 255, 255);
 }
 
-body h1 {
+html body h1 {
   color: rgb(255, 0, 0);
 }
 
-body h2 {
+html body h2 {
   color: rgb(0, 255, 0);
 }
 
-body h2.page-title, h2.page-title a {
+html body h2.page-title, h2.page-title a {
   color: rgb(255, 255, 255);
 }
 
-body h3 {
+html body h3 {
   color: rgb(255, 255, 0);
 }
 
-body h4 {
+html body h4 {
   color: rgb(0, 255, 255);
 }
 
-body h5 {
+html body h5 {
   color: rgb(255, 165, 0);
 }
 
-body h6 {
+html body h6 {
   color: rgb(255, 0, 170);
 }
 
-body hr {
+html body hr {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -732,7 +732,7 @@ body hr {
   border-top-style: solid;
   border-top-width: 2px;
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html body .callout {
   border-bottom-color: rgb(65, 135, 255);
   border-bottom-width: 2px;
   border-left-color: rgb(65, 135, 255);
@@ -743,17 +743,17 @@ body hr {
   border-top-width: 2px;
 }
 
-body ::-webkit-scrollbar {
+html body ::-webkit-scrollbar {
   background: rgb(34, 34, 34) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(34, 34, 34);
 }
 
-body ::-webkit-scrollbar-corner {
+html body ::-webkit-scrollbar-corner {
   background: rgb(34, 34, 34) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(34, 34, 34);
 }
 
-body ::-webkit-scrollbar-thumb {
+html body ::-webkit-scrollbar-thumb {
   background: rgb(34, 34, 34) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(255, 255, 255);
@@ -762,35 +762,35 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(255, 255, 255);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html body ::-webkit-scrollbar-thumb:active {
   background: rgb(34, 34, 34) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(34, 34, 34);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html body ::-webkit-scrollbar-thumb:hover {
   background: rgb(34, 34, 34) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(34, 34, 34);
 }
 
-body ::-webkit-scrollbar-track {
+html body ::-webkit-scrollbar-track {
   background: rgb(34, 34, 34) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(34, 34, 34);
 }`,
-    explorer: `body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-}`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    explorer: `html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }`,
-    footer: `body footer {
+    graph: `html body .graph > .graph-outer > .global-graph-icon {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}`,
+    footer: `html body footer {
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-width: 1px;
@@ -800,15 +800,15 @@ body ::-webkit-scrollbar-track {
   border-top-color: rgb(255, 255, 255);
 }
 
-body footer ul li a {
+html body footer ul li a {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html body .recent-notes > h3 {
   color: rgb(34, 34, 34);
 }
 
-body .recent-notes > ul.recent-ul > li {
+html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(34, 34, 34);
   border-left-color: rgb(34, 34, 34);
   border-right-color: rgb(34, 34, 34);
@@ -816,28 +816,28 @@ body .recent-notes > ul.recent-ul > li {
   color: rgb(34, 34, 34);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(255, 255, 255);
 }`,
-    listPage: `body li.section-li {
+    listPage: `html body li.section-li {
   border-bottom-color: rgb(34, 34, 34);
   border-left-color: rgb(34, 34, 34);
   border-right-color: rgb(34, 34, 34);
   border-top-color: rgb(34, 34, 34);
 }
 
-body li.section-li > .section .meta {
+html body li.section-li > .section .meta {
   color: rgb(255, 255, 255);
 }
 
-body ul.section-ul {
+html body ul.section-ul {
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(34, 34, 34);
   border-left-color: rgb(34, 34, 34);
   border-right-color: rgb(34, 34, 34);
   border-top-color: rgb(34, 34, 34);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html body .darkmode {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -845,11 +845,11 @@ body ul.section-ul {
   color: rgb(255, 255, 255);
 }
 
-body .darkmode svg {
+html body .darkmode svg {
   color: rgb(255, 255, 255);
   stroke: rgb(255, 255, 255);
 }`,
-    breadcrumbs: `body .breadcrumb-container {
+    breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -857,10 +857,10 @@ body .darkmode svg {
   color: rgb(255, 255, 255);
 }
 
-body .breadcrumb-element p {
+html body .breadcrumb-element p {
   color: rgb(255, 255, 255);
 }`,
-    misc: `body .katex-display {
+    misc: `html body .katex-display {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -868,7 +868,7 @@ body .breadcrumb-element p {
   color: rgb(255, 255, 255);
 }
 
-body .metadata-properties {
+html body .metadata-properties {
   border-bottom-color: rgb(51, 51, 51);
   border-bottom-left-radius: 7.55906px;
   border-bottom-right-radius: 7.55906px;
@@ -887,27 +887,27 @@ body .metadata-properties {
   border-top-width: 2px;
 }
 
-body .navigation-progress {
+html body .navigation-progress {
   background-color: rgb(34, 34, 34);
 }
 
-body .page-header h2.page-title {
+html body .page-header h2.page-title {
   color: rgb(255, 255, 0);
 }
 
-body abbr {
+html body abbr {
   color: rgb(255, 255, 255);
   text-decoration: underline dotted rgb(255, 255, 255);
 }
 
-body details {
+html body details {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }
 
-body input[type=text] {
+html body input[type=text] {
   background-color: rgb(34, 34, 34);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-width: 2px;
@@ -919,7 +919,7 @@ body input[type=text] {
   border-top-width: 2px;
 }
 
-body kbd {
+html body kbd {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -927,22 +927,22 @@ body kbd {
   color: rgb(255, 255, 255);
 }
 
-body progress {
+html body progress {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }
 
-body sub {
+html body sub {
   color: rgb(255, 255, 255);
 }
 
-body summary {
+html body summary {
   color: rgb(255, 255, 255);
 }
 
-body sup {
+html body sup {
   color: rgb(255, 255, 255);
 }`,
   },
