@@ -9,140 +9,140 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-active: rgb(103, 136, 162);
+  --accent-active: rgb(103, 136, 162) !important;
   --accent-active-bg: hsla(
     207,
     24%,
     52%,
     0.85
-  );
-  --accent-inactive: rgb(72, 83, 91);
+  ) !important;
+  --accent-inactive: rgb(72, 83, 91) !important;
   --active-line: 207,
     12%,
-    14%;
-  --animation: 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --animation-delay: 1000ms;
-  --animation-dur: 250ms;
-  --animation-fast: 125ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --animation-slow: 500ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    14% !important;
+  --animation: 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --animation-delay: 1000ms !important;
+  --animation-dur: 250ms !important;
+  --animation-fast: 125ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --animation-slow: 500ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --app-bg-image: linear-gradient(
     320deg,
     rgb(55, 50, 62),
     rgb(54, 79, 89)
-  );
-  --app-layout-spacing: 6px;
-  --background-modifier-active-hover: rgba(85, 115, 139, 0.1);
+  ) !important;
+  --app-layout-spacing: 6px !important;
+  --background-modifier-active-hover: rgba(85, 115, 139, 0.1) !important;
   --background-modifier-border: hsla(
     207,
     6%,
     32%,
     75%
-  );
+  ) !important;
   --background-modifier-border-focus: hsla(
     207,
     17%,
     52%,
     60%
-  );
+  ) !important;
   --background-modifier-border-hover: hsla(
     207,
     17%,
     52%,
     60%
-  );
-  --background-modifier-error: rgba(209.304, 137.496, 137.496, 1);
-  --background-modifier-error-hover: rgba(209.304, 137.496, 137.496, 0.9);
-  --background-modifier-error-rgb: 209.304, 137.496, 137.496;
+  ) !important;
+  --background-modifier-error: rgba(209.304, 137.496, 137.496, 1) !important;
+  --background-modifier-error-hover: rgba(209.304, 137.496, 137.496, 0.9) !important;
+  --background-modifier-error-rgb: 209.304, 137.496, 137.496 !important;
   --background-modifier-hover: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
+  ) !important;
   --background-modifier-message: hsla(
     207,
     24%,
     52%,
     0.85
-  );
-  --background-modifier-success: rgba(147.288, 199.512, 155.992, 0.85);
-  --background-modifier-success-rgb: 147.288, 199.512, 155.992;
-  --background-primary: rgb(27, 28, 29);
-  --background-primary-alt: rgb(33, 36, 39);
-  --background-primary-alt-hsl: 207, 8%, 13.5%;
+  ) !important;
+  --background-modifier-success: rgba(147.288, 199.512, 155.992, 0.85) !important;
+  --background-modifier-success-rgb: 147.288, 199.512, 155.992 !important;
+  --background-primary: rgb(27, 28, 29) !important;
+  --background-primary-alt: rgb(33, 36, 39) !important;
+  --background-primary-alt-hsl: 207, 8%, 13.5% !important;
   --background-primary-hsl: 207,
-    5%, 11%;
-  --background-secondary: rgb(29, 32, 32);
+    5%, 11% !important;
+  --background-secondary: rgb(29, 32, 32) !important;
   --background-secondary-hsl: 189,
-    6%, 12%;
-  --base-accent-h: 207;
-  --bases-cards-background: rgb(27, 28, 29);
-  --bases-cards-cover-background: rgb(33, 36, 39);
+    6%, 12% !important;
+  --base-accent-h: 207 !important;
+  --bases-cards-background: rgb(27, 28, 29) !important;
+  --bases-cards-cover-background: rgb(33, 36, 39) !important;
   --bases-cards-shadow: 0 0 0 1px hsla(
     207,
     6%,
     32%,
     75%
-  );
+  ) !important;
   --bases-cards-shadow-hover: 0 0 0 1px hsla(
     207,
     17%,
     52%,
     60%
-  );
+  ) !important;
   --bases-embed-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --bases-embed-border-radius: 8px;
-  --bases-group-heading-property-size: 13px;
+  ) !important;
+  --bases-embed-border-radius: 8px !important;
+  --bases-group-heading-property-size: 13px !important;
   --bases-table-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --bases-table-cell-background-active: rgb(27, 28, 29);
-  --bases-table-cell-background-disabled: rgb(33, 36, 39);
-  --bases-table-cell-background-selected: rgba(85, 115, 139, 0.1);
+  ) !important;
+  --bases-table-cell-background-active: rgb(27, 28, 29) !important;
+  --bases-table-cell-background-disabled: rgb(33, 36, 39) !important;
+  --bases-table-cell-background-selected: rgba(85, 115, 139, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsla(
     207,
     17%,
     52%,
     60%
-  );
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(85, 115, 139);
-  --bases-table-group-background: rgb(33, 36, 39);
-  --bases-table-header-background: rgb(27, 28, 29);
+  ) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(85, 115, 139) !important;
+  --bases-table-group-background: rgb(33, 36, 39) !important;
+  --bases-table-header-background: rgb(27, 28, 29) !important;
   --bases-table-header-background-hover: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
-  --bases-table-summary-background: rgb(27, 28, 29);
+  ) !important;
+  --bases-table-summary-background: rgb(27, 28, 29) !important;
   --bases-table-summary-background-hover: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
-  --bg-delta-dark: 0%;
+  ) !important;
+  --bg-delta-dark: 0% !important;
   --bg-editor: hsla(
     207,
     5%, 11%,
     max(0.6, 0.85)
-  );
-  --bg-opacity: 0.6;
-  --bg-surface: rgba(29, 32, 32, 0.6);
-  --block-outline-width: 2px;
-  --blockquote-background-color: rgb(33, 36, 39);
-  --blockquote-border-color: rgb(103, 136, 162);
-  --blockquote-border-thickness: 4px;
-  --blockquote-radius: 6px;
-  --button-radius: 6px;
+  ) !important;
+  --bg-opacity: 0.6 !important;
+  --bg-surface: rgba(29, 32, 32, 0.6) !important;
+  --block-outline-width: 2px !important;
+  --blockquote-background-color: rgb(33, 36, 39) !important;
+  --blockquote-border-color: rgb(103, 136, 162) !important;
+  --blockquote-border-thickness: 4px !important;
+  --blockquote-radius: 6px !important;
+  --button-radius: 6px !important;
   --callout-bug: 209.304, 137.496, 137.496;
   --callout-default: 126.48, 183.6, 240.72;
   --callout-error: 209.304, 137.496, 137.496;
@@ -157,500 +157,515 @@ export const theme: ThemeData = {
   --callout-tip: 126.48, 199.92, 197.472;
   --callout-todo: 126.48, 183.6, 240.72;
   --callout-warning: 206.04, 162.52, 140.76;
-  --canvas-background: rgb(27, 28, 29);
-  --canvas-color-1: 209.304, 137.496, 137.496;
-  --canvas-color-2: 206.04, 162.52, 140.76;
-  --canvas-color-3: 214.2, 181.56, 132.6;
-  --canvas-color-4: 147.288, 199.512, 155.992;
-  --canvas-color-5: 126.48, 199.92, 197.472;
-  --canvas-color-6: 186.2265, 179.265, 238.935;
-  --caret-color: rgba(232, 240, 247, 0.75);
-  --checkbox-border-color: rgb(72, 83, 91);
-  --checkbox-border-color-hover: rgb(103, 136, 162);
-  --checkbox-color: rgb(103, 136, 162);
-  --checkbox-color-hover: rgb(100, 136, 160);
-  --checkbox-marker-color: #eaeaea;
-  --code-background: rgb(33, 36, 39);
+  --canvas-background: rgb(27, 28, 29) !important;
+  --canvas-color-1: 209.304, 137.496, 137.496 !important;
+  --canvas-color-2: 206.04, 162.52, 140.76 !important;
+  --canvas-color-3: 214.2, 181.56, 132.6 !important;
+  --canvas-color-4: 147.288, 199.512, 155.992 !important;
+  --canvas-color-5: 126.48, 199.92, 197.472 !important;
+  --canvas-color-6: 186.2265, 179.265, 238.935 !important;
+  --caret-color: rgba(232, 240, 247, 0.75) !important;
+  --checkbox-border-color: rgb(72, 83, 91) !important;
+  --checkbox-border-color-hover: rgb(103, 136, 162) !important;
+  --checkbox-color: rgb(103, 136, 162) !important;
+  --checkbox-color-hover: rgb(100, 136, 160) !important;
+  --checkbox-marker-color: #eaeaea !important;
+  --code-background: rgb(33, 36, 39) !important;
   --code-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --code-border-width: 1px;
+  ) !important;
+  --code-border-width: 1px !important;
   --code-bracket-background: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
-  --code-class: rgba(206.04, 162.52, 140.76, 0.85);
-  --code-function: rgba(126.48, 183.6, 240.72, 0.85);
-  --code-important: rgba(186.2265, 179.265, 238.935, 0.85);
-  --code-keyword: rgba(186.2265, 179.265, 238.935, 0.85);
-  --code-mac-style-header-bg: #111;
-  --code-mac-style-header-color: #aaa;
-  --code-normal: #b3b3b3;
-  --code-operator: #999999;
-  --code-property: rgba(214.2, 181.56, 132.6, 0.85);
-  --code-punctuation: #999999;
-  --code-radius: 8px;
-  --code-string: rgba(147.288, 199.512, 155.992, 0.85);
-  --code-tag: rgba(209.304, 137.496, 137.496, 0.85);
-  --code-value: rgba(126.48, 199.92, 197.472, 0.85);
-  --code-variable: rgba(214.2, 181.56, 132.6, 0.85);
-  --codeFont: var(--font-monospace);
-  --collapse-icon-color-collapsed: rgb(100, 136, 160);
-  --color-accent: rgb(85, 115, 139);
-  --color-accent-1: rgb(100, 136, 160);
-  --color-accent-2: rgb(118, 153, 173);
+  ) !important;
+  --code-class: rgba(206.04, 162.52, 140.76, 0.85) !important;
+  --code-function: rgba(126.48, 183.6, 240.72, 0.85) !important;
+  --code-important: rgba(186.2265, 179.265, 238.935, 0.85) !important;
+  --code-keyword: rgba(186.2265, 179.265, 238.935, 0.85) !important;
+  --code-mac-style-header-bg: #111 !important;
+  --code-mac-style-header-color: #aaa !important;
+  --code-normal: #b3b3b3 !important;
+  --code-operator: #999999 !important;
+  --code-property: rgba(214.2, 181.56, 132.6, 0.85) !important;
+  --code-punctuation: #999999 !important;
+  --code-radius: 8px !important;
+  --code-string: rgba(147.288, 199.512, 155.992, 0.85) !important;
+  --code-tag: rgba(209.304, 137.496, 137.496, 0.85) !important;
+  --code-value: rgba(126.48, 199.92, 197.472, 0.85) !important;
+  --code-variable: rgba(214.2, 181.56, 132.6, 0.85) !important;
+  --codeFont: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --collapse-icon-color-collapsed: rgb(100, 136, 160) !important;
+  --color-accent: rgb(85, 115, 139) !important;
+  --color-accent-1: rgb(100, 136, 160) !important;
+  --color-accent-2: rgb(118, 153, 173) !important;
   --color-accent-hsl: 207, 24%,
-    44.2%;
-  --color-blue: rgba(126.48, 183.6, 240.72, 0.85);
-  --color-blue-rgb: 126.48, 183.6, 240.72;
-  --color-cyan: rgba(126.48, 199.92, 197.472, 0.85);
-  --color-cyan-rgb: 126.48, 199.92, 197.472;
-  --color-green: rgba(147.288, 199.512, 155.992, 0.85);
-  --color-green-rgb: 147.288, 199.512, 155.992;
-  --color-opacity: 0.85;
-  --color-orange: rgba(206.04, 162.52, 140.76, 0.85);
-  --color-orange-rgb: 206.04, 162.52, 140.76;
-  --color-purple: rgba(186.2265, 179.265, 238.935, 0.85);
-  --color-purple-rgb: 186.2265, 179.265, 238.935;
-  --color-red: rgba(209.304, 137.496, 137.496, 0.85);
-  --color-red-rgb: 209.304, 137.496, 137.496;
-  --color-yellow: rgba(214.2, 181.56, 132.6, 0.85);
-  --color-yellow-rgb: 214.2, 181.56, 132.6;
-  --dark: var(--text-normal);
-  --darkgray: var(--text-normal);
-  --divider-color: transparent;
-  --divider-color-hover: rgb(85, 115, 139);
-  --divider-width-hover: 4px;
-  --editor-min-opacity: 0.85;
+    44.2% !important;
+  --color-blue: rgba(126.48, 183.6, 240.72, 0.85) !important;
+  --color-blue-rgb: 126.48, 183.6, 240.72 !important;
+  --color-cyan: rgba(126.48, 199.92, 197.472, 0.85) !important;
+  --color-cyan-rgb: 126.48, 199.92, 197.472 !important;
+  --color-green: rgba(147.288, 199.512, 155.992, 0.85) !important;
+  --color-green-rgb: 147.288, 199.512, 155.992 !important;
+  --color-opacity: 0.85 !important;
+  --color-orange: rgba(206.04, 162.52, 140.76, 0.85) !important;
+  --color-orange-rgb: 206.04, 162.52, 140.76 !important;
+  --color-purple: rgba(186.2265, 179.265, 238.935, 0.85) !important;
+  --color-purple-rgb: 186.2265, 179.265, 238.935 !important;
+  --color-red: rgba(209.304, 137.496, 137.496, 0.85) !important;
+  --color-red-rgb: 209.304, 137.496, 137.496 !important;
+  --color-yellow: rgba(214.2, 181.56, 132.6, 0.85) !important;
+  --color-yellow-rgb: 214.2, 181.56, 132.6 !important;
+  --dark: rgba(232, 240, 247, 0.75) !important;
+  --darkgray: rgba(232, 240, 247, 0.75) !important;
+  --divider-color: transparent !important;
+  --divider-color-hover: rgb(85, 115, 139) !important;
+  --divider-width-hover: 4px !important;
+  --editor-min-opacity: 0.85 !important;
   --embed-background: hsla(
     207,
     5%, 11%,
     max(0.6, 0.85)
-  );
+  ) !important;
   --embed-block-shadow-hover: 0 0 0 1px rgb(72, 83, 91),
-    inset 0 0 0 1px rgb(72, 83, 91);
-  --embed-border-bottom: 2px solid rgb(72, 83, 91);
-  --embed-border-end: 2px solid rgb(72, 83, 91);
-  --embed-border-start: 2px solid rgb(72, 83, 91);
-  --embed-border-top: 2px solid rgb(72, 83, 91);
-  --embed-padding: 16px 20px;
-  --embed-radius: 8px;
-  --file-folding-offset: 28px;
-  --file-header-background: rgb(27, 28, 29);
-  --file-header-background-focused: rgb(27, 28, 29);
-  --file-header-font-size: 14px;
-  --file-line-width: clamp(600px, 72%, 850px);
-  --flair-color: rgba(232, 240, 247, 0.75);
-  --folder-color: rgb(208, 164, 22);
-  --folder-inactive: 70%;
-  --font-monospace: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-monospace-theme: "maplemono";
-  --font-ui-medium: 16px;
-  --font-ui-small: 14px;
-  --font-ui-smaller: 13px;
+    inset 0 0 0 1px rgb(72, 83, 91) !important;
+  --embed-border-bottom: 2px solid rgb(72, 83, 91) !important;
+  --embed-border-end: 2px solid rgb(72, 83, 91) !important;
+  --embed-border-start: 2px solid rgb(72, 83, 91) !important;
+  --embed-border-top: 2px solid rgb(72, 83, 91) !important;
+  --embed-padding: 16px 20px !important;
+  --embed-radius: 8px !important;
+  --file-folding-offset: 28px !important;
+  --file-header-background: rgb(27, 28, 29) !important;
+  --file-header-background-focused: rgb(27, 28, 29) !important;
+  --file-header-font-size: 14px !important;
+  --file-line-width: clamp(600px, 72%, 850px) !important;
+  --flair-color: rgba(232, 240, 247, 0.75) !important;
+  --folder-color: rgb(208, 164, 22) !important;
+  --folder-inactive: 70% !important;
+  --font-monospace: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-theme: "maplemono" !important;
+  --font-ui-medium: 16px !important;
+  --font-ui-small: 14px !important;
+  --font-ui-smaller: 13px !important;
   --footnote-divider-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
+  ) !important;
   --footnote-input-background-active: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
-  --footnote-line-height: 1.8;
-  --frame-bg: rgb(27, 31, 34);
-  --graph-node-attachment: rgba(214.2, 181.56, 132.6, 0.85);
-  --graph-node-focused: rgb(103, 136, 162);
-  --graph-node-tag: rgba(147.288, 199.512, 155.992, 0.85);
-  --graph-text: rgba(232, 240, 247, 0.75);
-  --gray: var(--text-normal);
-  --grid-dots-color: #3f3f3f;
-  --grid-line-color: #2a2a2a;
-  --grid-spacing: 20px;
-  --h1-color: rgb(209.304, 137.496, 137.496);
-  --h1-color-rgb: 209.304, 137.496, 137.496;
-  --h1-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --h1-line-height: 46.08px;
-  --h1-size: 25.6px;
-  --h1-weight: 750;
-  --h2-color: rgb(206.04, 162.52, 140.76);
-  --h2-color-rgb: 206.04, 162.52, 140.76;
-  --h2-font: "";
-  --h2-line-height: 43.2px;
-  --h2-size: 24px;
-  --h2-weight: 700;
-  --h3-color: rgb(147.288, 199.512, 155.992);
-  --h3-color-rgb: 147.288, 199.512, 155.992;
-  --h3-font: "";
-  --h3-line-height: 40.32px;
-  --h3-size: 22.4px;
-  --h3-weight: 600;
-  --h4-color: rgb(126.48, 183.6, 240.72);
-  --h4-color-rgb: 126.48, 183.6, 240.72;
-  --h4-font: "";
-  --h4-line-height: 37.44px;
-  --h4-size: 20.8px;
-  --h4-weight: 550;
-  --h5-color: rgb(186.2265, 179.265, 238.935);
-  --h5-color-rgb: 186.2265, 179.265, 238.935;
-  --h5-font: "";
-  --h5-line-height: 34.56px;
-  --h5-size: 19.2px;
-  --h5-weight: 550;
-  --h6-color: rgb(126.48, 199.92, 197.472);
-  --h6-color-rgb: 126.48, 199.92, 197.472;
-  --h6-font: "";
-  --h6-line-height: 31.68px;
-  --h6-size: 17.6px;
-  --h6-variant: small-caps;
-  --h6-weight: 500;
-  --heading-spacing: 20px;
-  --highlight: var(--background-modifier-hover);
+  ) !important;
+  --footnote-line-height: 1.8 !important;
+  --frame-bg: rgb(27, 31, 34) !important;
+  --graph-node-attachment: rgba(214.2, 181.56, 132.6, 0.85) !important;
+  --graph-node-focused: rgb(103, 136, 162) !important;
+  --graph-node-tag: rgba(147.288, 199.512, 155.992, 0.85) !important;
+  --graph-text: rgba(232, 240, 247, 0.75) !important;
+  --gray: rgba(232, 240, 247, 0.75) !important;
+  --grid-dots-color: #3f3f3f !important;
+  --grid-line-color: #2a2a2a !important;
+  --grid-spacing: 20px !important;
+  --h1-color: rgb(209.304, 137.496, 137.496) !important;
+  --h1-color-rgb: 209.304, 137.496, 137.496 !important;
+  --h1-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --h1-line-height: 46.08px !important;
+  --h1-size: 25.6px !important;
+  --h1-weight: 750 !important;
+  --h2-color: rgb(206.04, 162.52, 140.76) !important;
+  --h2-color-rgb: 206.04, 162.52, 140.76 !important;
+  --h2-font: "" !important;
+  --h2-line-height: 43.2px !important;
+  --h2-size: 24px !important;
+  --h2-weight: 700 !important;
+  --h3-color: rgb(147.288, 199.512, 155.992) !important;
+  --h3-color-rgb: 147.288, 199.512, 155.992 !important;
+  --h3-font: "" !important;
+  --h3-line-height: 40.32px !important;
+  --h3-size: 22.4px !important;
+  --h3-weight: 600 !important;
+  --h4-color: rgb(126.48, 183.6, 240.72) !important;
+  --h4-color-rgb: 126.48, 183.6, 240.72 !important;
+  --h4-font: "" !important;
+  --h4-line-height: 37.44px !important;
+  --h4-size: 20.8px !important;
+  --h4-weight: 550 !important;
+  --h5-color: rgb(186.2265, 179.265, 238.935) !important;
+  --h5-color-rgb: 186.2265, 179.265, 238.935 !important;
+  --h5-font: "" !important;
+  --h5-line-height: 34.56px !important;
+  --h5-size: 19.2px !important;
+  --h5-weight: 550 !important;
+  --h6-color: rgb(126.48, 199.92, 197.472) !important;
+  --h6-color-rgb: 126.48, 199.92, 197.472 !important;
+  --h6-font: "" !important;
+  --h6-line-height: 31.68px !important;
+  --h6-size: 17.6px !important;
+  --h6-variant: small-caps !important;
+  --h6-weight: 500 !important;
+  --heading-spacing: 20px !important;
+  --highlight: hsl(
+    207,
+    24%,
+    max(50%, 66% * 0.6),
+    20%
+  ) !important;
   --hr-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
+  ) !important;
   --icon-color-active: hsl(
     204,
     24.48%,
     50.83%
-  );
-  --icon-color-focused: rgba(232, 240, 247, 0.75);
-  --inline-code: rgba(209.304, 137.496, 137.496, 0.85);
-  --inline-title-color: rgb(209.304, 137.496, 137.496);
-  --inline-title-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --inline-title-line-height: 46.08px;
-  --inline-title-size: 25.6px;
-  --inline-title-weight: 750;
-  --input-radius: 6px;
-  --interactive-accent: rgb(85, 115, 139);
-  --interactive-accent-hover: rgb(100, 136, 160);
+  ) !important;
+  --icon-color-focused: rgba(232, 240, 247, 0.75) !important;
+  --inline-code: rgba(209.304, 137.496, 137.496, 0.85) !important;
+  --inline-title-color: rgb(209.304, 137.496, 137.496) !important;
+  --inline-title-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --inline-title-line-height: 46.08px !important;
+  --inline-title-size: 25.6px !important;
+  --inline-title-weight: 750 !important;
+  --input-radius: 6px !important;
+  --interactive-accent: rgb(85, 115, 139) !important;
+  --interactive-accent-hover: rgb(100, 136, 160) !important;
   --interactive-accent-hsl: 207, 24%,
-    44.2%;
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --line-height-normal: 1.8;
-  --line-height-tight: 1.5;
-  --link-color: rgba(126.48, 199.92, 197.472, 0.85);
-  --link-color-hover: rgba(126.48, 199.92, 197.472, 0.85);
-  --link-color-rgb: 126.48, 199.92, 197.472;
-  --link-color-underline: rgba(126.48, 199.92, 197.472, 0.85);
+    44.2% !important;
+  --light: rgb(27, 28, 29) !important;
+  --lightgray: rgb(29, 32, 32) !important;
+  --line-height-normal: 1.8 !important;
+  --line-height-tight: 1.5 !important;
+  --link-color: rgba(126.48, 199.92, 197.472, 0.85) !important;
+  --link-color-hover: rgba(126.48, 199.92, 197.472, 0.85) !important;
+  --link-color-rgb: 126.48, 199.92, 197.472 !important;
+  --link-color-underline: rgba(126.48, 199.92, 197.472, 0.85) !important;
   --link-external-color: rgba(
     214.2, 181.56, 132.6,
     0.85
-  );
+  ) !important;
   --link-external-color-hover: rgba(
     214.2, 181.56, 132.6,
     0.85
-  );
-  --link-external-color-rgb: 214.2, 181.56, 132.6;
+  ) !important;
+  --link-external-color-rgb: 214.2, 181.56, 132.6 !important;
   --link-external-color-underline: rgba(
     214.2, 181.56, 132.6,
     0.85
-  );
-  --link-footnote: rgba(186.2265, 179.265, 238.935, 0.85);
-  --link-text-size: 16px;
+  ) !important;
+  --link-footnote: rgba(186.2265, 179.265, 238.935, 0.85) !important;
+  --link-text-size: 16px !important;
   --link-unresolved-color: rgba(
     126.48, 199.92, 197.472,
     0.7225
-  );
+  ) !important;
   --link-unresolved-decoration-color: rgba(
     126.48, 199.92, 197.472,
     0.7225
-  );
-  --list-bullet-size: 7.33333px;
-  --list-marker-color: rgb(103, 136, 162);
-  --list-marker-color-alt: rgb(103, 136, 162);
-  --list-marker-color-alt-render: transparent;
-  --list-marker-color-collapsed: rgb(100, 136, 160);
-  --list-threading-color: rgb(72, 83, 91);
-  --list-threading-width: max(0.1rem, 2px);
-  --menu-background: rgb(29, 32, 32);
+  ) !important;
+  --list-bullet-size: 7.33333px !important;
+  --list-marker-color: rgb(103, 136, 162) !important;
+  --list-marker-color-alt: rgb(103, 136, 162) !important;
+  --list-marker-color-alt-render: transparent !important;
+  --list-marker-color-collapsed: rgb(100, 136, 160) !important;
+  --list-threading-color: rgb(72, 83, 91) !important;
+  --list-threading-width: max(0.1rem, 2px) !important;
+  --menu-background: rgb(29, 32, 32) !important;
   --menu-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --menu-padding: 4px;
+  ) !important;
+  --menu-padding: 4px !important;
   --metadata-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
+  ) !important;
   --metadata-divider-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
+  ) !important;
   --metadata-input-background-active: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
-  --metadata-input-text-color: rgba(232, 240, 247, 0.75);
+  ) !important;
+  --metadata-input-text-color: rgba(232, 240, 247, 0.75) !important;
   --metadata-label-background-active: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
+  ) !important;
   --metadata-property-background-active: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
+  ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px hsla(
     207,
     17%,
     52%,
     60%
-  );
+  ) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px hsla(
     207,
     17%,
     52%,
     60%
-  );
-  --metadata-sidebar-input-font-size: 14px;
-  --metadata-sidebar-label-font-size: 14px;
-  --modal-background: rgb(27, 28, 29);
-  --modal-close-button-padding: 12px;
-  --modal-header-height: 48px;
-  --modal-height: min(85vh, 1000px);
-  --modal-width: min(90vw, 1100px);
-  --nav-heading-color: rgba(232, 240, 247, 0.75);
-  --nav-heading-color-hover: rgba(232, 240, 247, 0.75);
-  --nav-indentation-guide-color: #363636;
-  --nav-indentation-guide-width: 1.8px;
+  ) !important;
+  --metadata-sidebar-input-font-size: 14px !important;
+  --metadata-sidebar-label-font-size: 14px !important;
+  --modal-background: rgb(27, 28, 29) !important;
+  --modal-close-button-padding: 12px !important;
+  --modal-header-height: 48px !important;
+  --modal-height: min(85vh, 1000px) !important;
+  --modal-width: min(90vw, 1100px) !important;
+  --nav-heading-color: rgba(232, 240, 247, 0.75) !important;
+  --nav-heading-color-hover: rgba(232, 240, 247, 0.75) !important;
+  --nav-indentation-guide-color: #363636 !important;
+  --nav-indentation-guide-width: 1.8px !important;
   --nav-item-background-active: hsla(
     207,
     24%,
     52%,
     0.85
-  );
+  ) !important;
   --nav-item-background-hover: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
+  ) !important;
   --nav-item-background-selected: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
-  --nav-item-children-padding-left: 8px;
-  --nav-item-color-active: rgba(232, 240, 247, 0.75);
-  --nav-item-color-highlighted: rgb(100, 136, 160);
-  --nav-item-color-hover: rgba(232, 240, 247, 0.75);
-  --nav-item-color-selected: rgba(232, 240, 247, 0.75);
-  --nav-item-size: 14.4px;
-  --outline-guideline-color: rgb(72, 83, 91);
-  --outline-guideline-color-alt: rgb(103, 136, 162);
-  --outline-guideline-width: 2px;
-  --outline-item-height: 25.92px;
-  --p-spacing: 8px;
-  --pdf-background: transparent;
-  --pdf-page-background: rgb(27, 28, 29);
+  ) !important;
+  --nav-item-children-padding-left: 8px !important;
+  --nav-item-color-active: rgba(232, 240, 247, 0.75) !important;
+  --nav-item-color-highlighted: rgb(100, 136, 160) !important;
+  --nav-item-color-hover: rgba(232, 240, 247, 0.75) !important;
+  --nav-item-color-selected: rgba(232, 240, 247, 0.75) !important;
+  --nav-item-size: 14.4px !important;
+  --outline-guideline-color: rgb(72, 83, 91) !important;
+  --outline-guideline-color-alt: rgb(103, 136, 162) !important;
+  --outline-guideline-width: 2px !important;
+  --outline-item-height: 25.92px !important;
+  --p-spacing: 8px !important;
+  --pdf-background: transparent !important;
+  --pdf-page-background: rgb(27, 28, 29) !important;
   --pdf-shadow: 0 0 0 1px hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --pdf-sidebar-background: rgb(27, 28, 29);
+  ) !important;
+  --pdf-sidebar-background: rgb(27, 28, 29) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px hsla(
     207,
     6%,
     32%,
     75%
-  );
+  ) !important;
   --pill-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
+  ) !important;
   --pill-border-color-hover: hsla(
     207,
     17%,
     52%,
     60%
-  );
-  --pill-color-hover: rgba(232, 240, 247, 0.75);
-  --pill-color-remove-hover: rgb(100, 136, 160);
-  --prompt-background: rgb(27, 28, 29);
-  --ribbon-background: rgb(29, 32, 32);
-  --ribbon-background-collapsed: rgb(27, 28, 29);
-  --scrollbar-color: rgba(0, 0, 0, 0);
-  --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --search-result-background: rgb(27, 28, 29);
-  --secondary: var(--text-accent);
-  --select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='none' stroke='%23DDDDDD' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/></svg>");
-  --setting-accent-h-dark: 207;
-  --setting-calendar-max-width: 500px;
-  --setting-code-ligature: 'calt';
-  --setting-color-dirs: rgb(208, 164, 22);
-  --setting-file-line-width: clamp(600px, 72%, 850px);
-  --setting-group-heading-color: rgba(232, 240, 247, 0.75);
-  --setting-group-heading-size: 16px;
-  --setting-h1-weight: 750;
-  --setting-h2-font: "";
-  --setting-h2-weight: 700;
-  --setting-h3-font: "";
-  --setting-h3-weight: 600;
-  --setting-h4-font: "";
-  --setting-h4-weight: 550;
-  --setting-h5-font: "";
-  --setting-h5-weight: 550;
-  --setting-h6-font: "";
-  --setting-h6-weight: 500;
-  --setting-hr-icon: ''⭐'';
-  --setting-items-background: rgb(33, 36, 39);
+  ) !important;
+  --pill-color-hover: rgba(232, 240, 247, 0.75) !important;
+  --pill-color-remove-hover: rgb(100, 136, 160) !important;
+  --prompt-background: rgb(27, 28, 29) !important;
+  --ribbon-background: rgb(29, 32, 32) !important;
+  --ribbon-background-collapsed: rgb(27, 28, 29) !important;
+  --scrollbar-color: rgba(0, 0, 0, 0) !important;
+  --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --search-result-background: rgb(27, 28, 29) !important;
+  --secondary: rgb(100, 136, 160) !important;
+  --select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='none' stroke='%23DDDDDD' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/></svg>") !important;
+  --setting-accent-h-dark: 207 !important;
+  --setting-calendar-max-width: 500px !important;
+  --setting-code-ligature: 'calt' !important;
+  --setting-color-dirs: rgb(208, 164, 22) !important;
+  --setting-file-line-width: clamp(600px, 72%, 850px) !important;
+  --setting-group-heading-color: rgba(232, 240, 247, 0.75) !important;
+  --setting-group-heading-size: 16px !important;
+  --setting-h1-weight: 750 !important;
+  --setting-h2-font: "" !important;
+  --setting-h2-weight: 700 !important;
+  --setting-h3-font: "" !important;
+  --setting-h3-weight: 600 !important;
+  --setting-h4-font: "" !important;
+  --setting-h4-weight: 550 !important;
+  --setting-h5-font: "" !important;
+  --setting-h5-weight: 550 !important;
+  --setting-h6-font: "" !important;
+  --setting-h6-weight: 500 !important;
+  --setting-hr-icon: ''⭐'' !important;
+  --setting-items-background: rgb(33, 36, 39) !important;
   --setting-items-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --setting-modal-header-title: 'Maple 1.0.0-beta.33';
-  --setting-scrollbar-hover: rgba(85, 115, 139, 0.4);
-  --setting-text-bold-style: underline dotted;
-  --setting-text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --setting-text-italic-style: underline dotted;
+  ) !important;
+  --setting-modal-header-title: 'Maple 1.0.0-beta.33' !important;
+  --setting-scrollbar-hover: rgba(85, 115, 139, 0.4) !important;
+  --setting-text-bold-style: underline dotted !important;
+  --setting-text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
+  --setting-text-italic-style: underline dotted !important;
   --slider-thumb-border-color: hsla(
     207,
     17%,
     52%,
     60%
-  );
-  --slider-track-background: rgb(72, 83, 91);
-  --status-bar-background: rgb(29, 32, 32);
+  ) !important;
+  --slider-track-background: rgb(72, 83, 91) !important;
+  --status-bar-background: rgb(29, 32, 32) !important;
   --status-bar-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --status-bar-border-width: 1px;
-  --status-bar-font-size: 13px;
-  --status-bar-radius: 6px;
-  --suggestion-background: rgb(27, 28, 29);
-  --sync-avatar-color-1: rgba(209.304, 137.496, 137.496, 0.85);
-  --sync-avatar-color-2: rgba(206.04, 162.52, 140.76, 0.85);
-  --sync-avatar-color-3: rgba(214.2, 181.56, 132.6, 0.85);
-  --sync-avatar-color-4: rgba(147.288, 199.512, 155.992, 0.85);
-  --sync-avatar-color-5: rgba(126.48, 199.92, 197.472, 0.85);
-  --sync-avatar-color-6: rgba(126.48, 183.6, 240.72, 0.85);
-  --sync-avatar-color-7: rgba(186.2265, 179.265, 238.935, 0.85);
-  --tab-active-shadow: none;
-  --tab-background-active: rgb(27, 28, 29);
-  --tab-container-background: rgb(27, 31, 34);
-  --tab-font-size: 14px;
-  --tab-outline-color: transparent;
-  --tab-radius: 6px;
-  --tab-stacked-font-size: 14px;
-  --tab-switcher-background: rgb(29, 32, 32);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(29, 32, 32), transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(85, 115, 139);
-  --tab-text-color-focused-active-current: rgba(232, 240, 247, 0.75);
-  --tab-text-color-focused-highlighted: rgb(100, 136, 160);
+  ) !important;
+  --status-bar-border-width: 1px !important;
+  --status-bar-font-size: 13px !important;
+  --status-bar-radius: 6px !important;
+  --suggestion-background: rgb(27, 28, 29) !important;
+  --sync-avatar-color-1: rgba(209.304, 137.496, 137.496, 0.85) !important;
+  --sync-avatar-color-2: rgba(206.04, 162.52, 140.76, 0.85) !important;
+  --sync-avatar-color-3: rgba(214.2, 181.56, 132.6, 0.85) !important;
+  --sync-avatar-color-4: rgba(147.288, 199.512, 155.992, 0.85) !important;
+  --sync-avatar-color-5: rgba(126.48, 199.92, 197.472, 0.85) !important;
+  --sync-avatar-color-6: rgba(126.48, 183.6, 240.72, 0.85) !important;
+  --sync-avatar-color-7: rgba(186.2265, 179.265, 238.935, 0.85) !important;
+  --tab-active-shadow: none !important;
+  --tab-background-active: rgb(27, 28, 29) !important;
+  --tab-container-background: rgb(27, 31, 34) !important;
+  --tab-font-size: 14px !important;
+  --tab-outline-color: transparent !important;
+  --tab-radius: 6px !important;
+  --tab-stacked-font-size: 14px !important;
+  --tab-switcher-background: rgb(29, 32, 32) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(29, 32, 32), transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(85, 115, 139) !important;
+  --tab-text-color-focused-active-current: rgba(232, 240, 247, 0.75) !important;
+  --tab-text-color-focused-highlighted: rgb(100, 136, 160) !important;
   --table-add-button-background: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
+  ) !important;
   --table-add-button-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --table-add-button-border-width: 0;
+  ) !important;
+  --table-add-button-border-width: 0 !important;
   --table-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --table-cell-vertical-alignment: middle;
+  ) !important;
+  --table-cell-vertical-alignment: middle !important;
   --table-drag-handle-background: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
-  );
-  --table-drag-handle-background-active: rgb(72, 83, 91);
-  --table-drag-handle-color-active: #eaeaea;
-  --table-header-background: rgb(33, 36, 39);
-  --table-header-background-hover: rgb(33, 36, 39);
+  ) !important;
+  --table-drag-handle-background-active: rgb(72, 83, 91) !important;
+  --table-drag-handle-color-active: #eaeaea !important;
+  --table-header-background: rgb(33, 36, 39) !important;
+  --table-header-background-hover: rgb(33, 36, 39) !important;
   --table-header-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --table-header-color: rgba(232, 240, 247, 0.75);
-  --table-line-height: 1.5;
-  --table-selection: rgba(85, 115, 139, 0.1);
-  --table-selection-border-color: rgb(72, 83, 91);
-  --table-selection-border-radius: 8px;
-  --tag-background: rgba(85, 115, 139, 0.1);
-  --tag-background-hover: rgba(85, 115, 139, 0.2);
-  --tag-border-color: rgb(100, 136, 160);
-  --tag-border-color-hover: rgba(85, 115, 139, 0.15);
-  --tag-border-width: 1px;
-  --tag-color: rgb(100, 136, 160);
-  --tag-color-hover: rgb(100, 136, 160);
-  --tag-padding-x: 8px;
-  --tag-padding-y: 0;
-  --tertiary: var(--text-accent-hover);
-  --text-accent: rgb(100, 136, 160);
-  --text-accent-hover: rgb(118, 153, 173);
-  --text-error: rgba(209.304, 137.496, 137.496, 0.85);
-  --text-normal: rgba(232, 240, 247, 0.75);
-  --text-on-accent: #eaeaea;
-  --text-selection: rgba(85, 115, 139, 0.33);
-  --text-success: rgba(147.288, 199.512, 155.992, 0.85);
-  --text-warning: rgba(206.04, 162.52, 140.76, 0.85);
-  --textHighlight: var(--background-modifier-hover);
-  --theme-accent-active-h: 207;
-  --theme-accent-active-l: 52%;
-  --theme-accent-active-s: 24%;
-  --theme-accent-h: 207;
-  --theme-accent-inactive-h: 207;
-  --theme-accent-inactive-l: 32%;
-  --theme-accent-inactive-s: 12%;
-  --titlebar-background: rgb(27, 31, 34);
-  --titlebar-background-focused: rgb(27, 31, 34);
+  ) !important;
+  --table-header-color: rgba(232, 240, 247, 0.75) !important;
+  --table-line-height: 1.5 !important;
+  --table-selection: rgba(85, 115, 139, 0.1) !important;
+  --table-selection-border-color: rgb(72, 83, 91) !important;
+  --table-selection-border-radius: 8px !important;
+  --tag-background: rgba(85, 115, 139, 0.1) !important;
+  --tag-background-hover: rgba(85, 115, 139, 0.2) !important;
+  --tag-border-color: rgb(100, 136, 160) !important;
+  --tag-border-color-hover: rgba(85, 115, 139, 0.15) !important;
+  --tag-border-width: 1px !important;
+  --tag-color: rgb(100, 136, 160) !important;
+  --tag-color-hover: rgb(100, 136, 160) !important;
+  --tag-padding-x: 8px !important;
+  --tag-padding-y: 0 !important;
+  --tertiary: rgb(118, 153, 173) !important;
+  --text-accent: rgb(100, 136, 160) !important;
+  --text-accent-hover: rgb(118, 153, 173) !important;
+  --text-error: rgba(209.304, 137.496, 137.496, 0.85) !important;
+  --text-normal: rgba(232, 240, 247, 0.75) !important;
+  --text-on-accent: #eaeaea !important;
+  --text-selection: rgba(85, 115, 139, 0.33) !important;
+  --text-success: rgba(147.288, 199.512, 155.992, 0.85) !important;
+  --text-warning: rgba(206.04, 162.52, 140.76, 0.85) !important;
+  --textHighlight: hsl(
+    207,
+    24%,
+    max(50%, 66% * 0.6),
+    20%
+  ) !important;
+  --theme-accent-active-h: 207 !important;
+  --theme-accent-active-l: 52% !important;
+  --theme-accent-active-s: 24% !important;
+  --theme-accent-h: 207 !important;
+  --theme-accent-inactive-h: 207 !important;
+  --theme-accent-inactive-l: 32% !important;
+  --theme-accent-inactive-s: 12% !important;
+  --titlebar-background: rgb(27, 31, 34) !important;
+  --titlebar-background-focused: rgb(27, 31, 34) !important;
   --titlebar-border-color: hsla(
     207,
     6%,
     32%,
     75%
-  );
-  --titlebar-text-color-focused: rgba(232, 240, 247, 0.75);
-  --vault-profile-color: rgba(232, 240, 247, 0.75);
-  --vault-profile-color-hover: rgba(232, 240, 247, 0.75);
-  --vault-profile-font-size: 14px;
-  --quartz-icon-color: currentColor;
+  ) !important;
+  --titlebar-text-color-focused: rgba(232, 240, 247, 0.75) !important;
+  --vault-profile-color: rgba(232, 240, 247, 0.75) !important;
+  --vault-profile-color-hover: rgba(232, 240, 247, 0.75) !important;
+  --vault-profile-font-size: 14px !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1646,141 +1661,141 @@ body sup {
   },
   light: {
     base: `:root:root {
-  --accent-active: rgb(167, 147, 118);
+  --accent-active: rgb(167, 147, 118) !important;
   --accent-active-bg: hsla(
     35,
     22%,
     56%,
     1
-  );
-  --accent-inactive: rgb(210, 201, 188);
+  ) !important;
+  --accent-inactive: rgb(210, 201, 188) !important;
   --active-line: 35,
     20%,
-    92%;
-  --animation: 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --animation-delay: 1000ms;
-  --animation-dur: 250ms;
-  --animation-fast: 125ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --animation-slow: 500ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    92% !important;
+  --animation: 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --animation-delay: 1000ms !important;
+  --animation-dur: 250ms !important;
+  --animation-fast: 125ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --animation-slow: 500ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --app-bg-image: linear-gradient(
     320deg,
     rgb(236, 245, 224),
     rgb(234, 212, 210)
-  );
-  --app-layout-spacing: 6px;
-  --background-modifier-active-hover: rgba(167, 147, 118, 0.1);
+  ) !important;
+  --app-layout-spacing: 6px !important;
+  --background-modifier-active-hover: rgba(167, 147, 118, 0.1) !important;
   --background-modifier-border: hsla(
     35,
     10%,
     78%,
     75%
-  );
+  ) !important;
   --background-modifier-border-focus: hsla(
     35,
     15.4%,
     56%,
     60%
-  );
+  ) !important;
   --background-modifier-border-hover: hsla(
     35,
     15%,
     56%,
     60%
-  );
-  --background-modifier-error: rgba(189.0825, 81.2175, 81.2175, 1);
-  --background-modifier-error-hover: rgba(189.0825, 81.2175, 81.2175, 0.9);
-  --background-modifier-error-rgb: 189.0825, 81.2175, 81.2175;
+  ) !important;
+  --background-modifier-error: rgba(189.0825, 81.2175, 81.2175, 1) !important;
+  --background-modifier-error-hover: rgba(189.0825, 81.2175, 81.2175, 0.9) !important;
+  --background-modifier-error-rgb: 189.0825, 81.2175, 81.2175 !important;
   --background-modifier-hover: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
+  ) !important;
   --background-modifier-message: hsla(
     35,
     22%,
     56%,
     1
-  );
-  --background-modifier-success: rgba(71.4, 142.8, 20.4, 1);
-  --background-modifier-success-rgb: 71.4, 142.8, 20.4;
-  --background-primary: rgb(248, 248, 246);
-  --background-primary-alt: rgb(242, 240, 237);
-  --background-primary-alt-hsl: 35, 18%, 93.5%;
-  --background-primary-hsl: 35, 12%, 97%;
-  --background-secondary: rgb(239, 237, 236);
-  --background-secondary-hsl: 17, 8%, 93%;
-  --base-accent-h: 35;
-  --bases-cards-background: rgb(248, 248, 246);
-  --bases-cards-cover-background: rgb(242, 240, 237);
+  ) !important;
+  --background-modifier-success: rgba(71.4, 142.8, 20.4, 1) !important;
+  --background-modifier-success-rgb: 71.4, 142.8, 20.4 !important;
+  --background-primary: rgb(248, 248, 246) !important;
+  --background-primary-alt: rgb(242, 240, 237) !important;
+  --background-primary-alt-hsl: 35, 18%, 93.5% !important;
+  --background-primary-hsl: 35, 12%, 97% !important;
+  --background-secondary: rgb(239, 237, 236) !important;
+  --background-secondary-hsl: 17, 8%, 93% !important;
+  --base-accent-h: 35 !important;
+  --bases-cards-background: rgb(248, 248, 246) !important;
+  --bases-cards-cover-background: rgb(242, 240, 237) !important;
   --bases-cards-shadow: 0 0 0 1px hsla(
     35,
     10%,
     78%,
     75%
-  );
+  ) !important;
   --bases-cards-shadow-hover: 0 0 0 1px hsla(
     35,
     15%,
     56%,
     60%
-  );
+  ) !important;
   --bases-embed-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --bases-embed-border-radius: 8px;
-  --bases-group-heading-property-size: 13px;
+  ) !important;
+  --bases-embed-border-radius: 8px !important;
+  --bases-group-heading-property-size: 13px !important;
   --bases-table-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --bases-table-cell-background-active: rgb(248, 248, 246);
-  --bases-table-cell-background-disabled: rgb(242, 240, 237);
-  --bases-table-cell-background-selected: rgba(167, 147, 118, 0.1);
+  ) !important;
+  --bases-table-cell-background-active: rgb(248, 248, 246) !important;
+  --bases-table-cell-background-disabled: rgb(242, 240, 237) !important;
+  --bases-table-cell-background-selected: rgba(167, 147, 118, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsla(
     35,
     15%,
     56%,
     60%
-  );
+  ) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
     34,
     22.22%,
     60.2%
-  );
-  --bases-table-group-background: rgb(242, 240, 237);
-  --bases-table-header-background: rgb(248, 248, 246);
+  ) !important;
+  --bases-table-group-background: rgb(242, 240, 237) !important;
+  --bases-table-header-background: rgb(248, 248, 246) !important;
   --bases-table-header-background-hover: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
-  --bases-table-summary-background: rgb(248, 248, 246);
+  ) !important;
+  --bases-table-summary-background: rgb(248, 248, 246) !important;
   --bases-table-summary-background-hover: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
+  ) !important;
   --bg-editor: hsla(
     35, 12%, 97%,
     max(0.6, 0.8)
-  );
-  --bg-opacity: 0.6;
-  --bg-surface: rgba(239, 237, 236, 0.6);
-  --block-outline-width: 2px;
-  --blockquote-background-color: rgb(242, 240, 237);
-  --blockquote-border-color: rgb(167, 147, 118);
-  --blockquote-border-thickness: 4px;
-  --blockquote-radius: 6px;
-  --blur-background: color-mix(in srgb, rgb(248, 248, 246) 65%, transparent) linear-gradient(rgb(248, 248, 246), color-mix(in srgb, rgb(248, 248, 246) 65%, transparent));
-  --button-radius: 6px;
+  ) !important;
+  --bg-opacity: 0.6 !important;
+  --bg-surface: rgba(239, 237, 236, 0.6) !important;
+  --block-outline-width: 2px !important;
+  --blockquote-background-color: rgb(242, 240, 237) !important;
+  --blockquote-border-color: rgb(167, 147, 118) !important;
+  --blockquote-border-thickness: 4px !important;
+  --blockquote-radius: 6px !important;
+  --blur-background: color-mix(in srgb, rgb(248, 248, 246) 65%, transparent) linear-gradient(rgb(248, 248, 246), color-mix(in srgb, rgb(248, 248, 246) 65%, transparent)) !important;
+  --button-radius: 6px !important;
   --callout-bug: 189.0825, 81.2175, 81.2175;
   --callout-default: 5.202, 132.8822, 168.198;
   --callout-error: 189.0825, 81.2175, 81.2175;
@@ -1795,463 +1810,478 @@ body sup {
   --callout-tip: 17.85, 124.95, 82.11;
   --callout-todo: 5.202, 132.8822, 168.198;
   --callout-warning: 199.41, 122.774, 35.19;
-  --canvas-background: rgb(248, 248, 246);
-  --canvas-color-1: 189.0825, 81.2175, 81.2175;
-  --canvas-color-2: 199.41, 122.774, 35.19;
-  --canvas-color-3: 177.48, 139.74, 26.52;
-  --canvas-color-4: 71.4, 142.8, 20.4;
-  --canvas-color-5: 17.85, 124.95, 82.11;
-  --canvas-color-6: 114.24, 97.92, 146.88;
-  --checkbox-border-color: rgb(210, 201, 188);
-  --checkbox-border-color-hover: rgb(167, 147, 118);
-  --checkbox-color: rgb(167, 147, 118);
-  --checkbox-color-hover: rgb(183, 165, 143);
-  --checkbox-marker-color: #fafafa;
-  --code-background: rgb(242, 240, 237);
+  --canvas-background: rgb(248, 248, 246) !important;
+  --canvas-color-1: 189.0825, 81.2175, 81.2175 !important;
+  --canvas-color-2: 199.41, 122.774, 35.19 !important;
+  --canvas-color-3: 177.48, 139.74, 26.52 !important;
+  --canvas-color-4: 71.4, 142.8, 20.4 !important;
+  --canvas-color-5: 17.85, 124.95, 82.11 !important;
+  --canvas-color-6: 114.24, 97.92, 146.88 !important;
+  --checkbox-border-color: rgb(210, 201, 188) !important;
+  --checkbox-border-color-hover: rgb(167, 147, 118) !important;
+  --checkbox-color: rgb(167, 147, 118) !important;
+  --checkbox-color-hover: rgb(183, 165, 143) !important;
+  --checkbox-marker-color: #fafafa !important;
+  --code-background: rgb(242, 240, 237) !important;
   --code-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --code-border-width: 1px;
+  ) !important;
+  --code-border-width: 1px !important;
   --code-bracket-background: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
-  --code-class: rgba(199.41, 122.774, 35.19, 1);
-  --code-function: rgba(5.202, 132.8822, 168.198, 1);
-  --code-important: rgba(114.24, 97.92, 146.88, 1);
-  --code-keyword: rgba(114.24, 97.92, 146.88, 1);
-  --code-mac-style-header-bg: #333;
-  --code-mac-style-header-color: #ddd;
-  --code-normal: #5c5c5c;
-  --code-operator: #707070;
-  --code-property: rgba(177.48, 139.74, 26.52, 1);
-  --code-punctuation: #707070;
-  --code-radius: 8px;
-  --code-string: rgba(71.4, 142.8, 20.4, 1);
-  --code-tag: rgba(189.0825, 81.2175, 81.2175, 1);
-  --code-value: rgba(17.85, 124.95, 82.11, 1);
-  --code-variable: rgba(177.48, 139.74, 26.52, 1);
-  --codeFont: var(--font-monospace);
-  --collapse-icon-color-collapsed: rgb(167, 147, 118);
-  --color-accent: rgb(167, 147, 118);
-  --color-accent-1: rgb(175, 156, 131);
-  --color-accent-2: rgb(183, 165, 143);
+  ) !important;
+  --code-class: rgba(199.41, 122.774, 35.19, 1) !important;
+  --code-function: rgba(5.202, 132.8822, 168.198, 1) !important;
+  --code-important: rgba(114.24, 97.92, 146.88, 1) !important;
+  --code-keyword: rgba(114.24, 97.92, 146.88, 1) !important;
+  --code-mac-style-header-bg: #333 !important;
+  --code-mac-style-header-color: #ddd !important;
+  --code-normal: #5c5c5c !important;
+  --code-operator: #707070 !important;
+  --code-property: rgba(177.48, 139.74, 26.52, 1) !important;
+  --code-punctuation: #707070 !important;
+  --code-radius: 8px !important;
+  --code-string: rgba(71.4, 142.8, 20.4, 1) !important;
+  --code-tag: rgba(189.0825, 81.2175, 81.2175, 1) !important;
+  --code-value: rgba(17.85, 124.95, 82.11, 1) !important;
+  --code-variable: rgba(177.48, 139.74, 26.52, 1) !important;
+  --codeFont: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --collapse-icon-color-collapsed: rgb(167, 147, 118) !important;
+  --color-accent: rgb(167, 147, 118) !important;
+  --color-accent-1: rgb(175, 156, 131) !important;
+  --color-accent-2: rgb(183, 165, 143) !important;
   --color-accent-hsl: 35, 22%,
-    56%;
-  --color-blue: rgba(5.202, 132.8822, 168.198, 1);
-  --color-blue-rgb: 5.202, 132.8822, 168.198;
-  --color-cyan: rgba(17.85, 124.95, 82.11, 1);
-  --color-cyan-rgb: 17.85, 124.95, 82.11;
-  --color-green: rgba(71.4, 142.8, 20.4, 1);
-  --color-green-rgb: 71.4, 142.8, 20.4;
-  --color-opacity: 1;
-  --color-orange: rgba(199.41, 122.774, 35.19, 1);
-  --color-orange-rgb: 199.41, 122.774, 35.19;
-  --color-purple: rgba(114.24, 97.92, 146.88, 1);
-  --color-purple-rgb: 114.24, 97.92, 146.88;
-  --color-red: rgba(189.0825, 81.2175, 81.2175, 1);
-  --color-red-rgb: 189.0825, 81.2175, 81.2175;
-  --color-yellow: rgba(177.48, 139.74, 26.52, 1);
-  --color-yellow-rgb: 177.48, 139.74, 26.52;
-  --divider-color: transparent;
-  --divider-color-hover: rgb(175, 156, 131);
-  --divider-width-hover: 4px;
-  --editor-min-opacity: 0.8;
+    56% !important;
+  --color-blue: rgba(5.202, 132.8822, 168.198, 1) !important;
+  --color-blue-rgb: 5.202, 132.8822, 168.198 !important;
+  --color-cyan: rgba(17.85, 124.95, 82.11, 1) !important;
+  --color-cyan-rgb: 17.85, 124.95, 82.11 !important;
+  --color-green: rgba(71.4, 142.8, 20.4, 1) !important;
+  --color-green-rgb: 71.4, 142.8, 20.4 !important;
+  --color-opacity: 1 !important;
+  --color-orange: rgba(199.41, 122.774, 35.19, 1) !important;
+  --color-orange-rgb: 199.41, 122.774, 35.19 !important;
+  --color-purple: rgba(114.24, 97.92, 146.88, 1) !important;
+  --color-purple-rgb: 114.24, 97.92, 146.88 !important;
+  --color-red: rgba(189.0825, 81.2175, 81.2175, 1) !important;
+  --color-red-rgb: 189.0825, 81.2175, 81.2175 !important;
+  --color-yellow: rgba(177.48, 139.74, 26.52, 1) !important;
+  --color-yellow-rgb: 177.48, 139.74, 26.52 !important;
+  --divider-color: transparent !important;
+  --divider-color-hover: rgb(175, 156, 131) !important;
+  --divider-width-hover: 4px !important;
+  --editor-min-opacity: 0.8 !important;
   --embed-background: hsla(
     35, 12%, 97%,
     max(0.6, 0.8)
-  );
+  ) !important;
   --embed-block-shadow-hover: 0 0 0 1px rgb(210, 201, 188),
-    inset 0 0 0 1px rgb(210, 201, 188);
-  --embed-border-bottom: 2px solid rgb(210, 201, 188);
-  --embed-border-end: 2px solid rgb(210, 201, 188);
-  --embed-border-start: 2px solid rgb(210, 201, 188);
-  --embed-border-top: 2px solid rgb(210, 201, 188);
-  --embed-padding: 16px 20px;
-  --embed-radius: 8px;
-  --file-folding-offset: 28px;
-  --file-header-background: rgb(248, 248, 246);
-  --file-header-background-focused: rgb(248, 248, 246);
-  --file-header-font-size: 14px;
-  --file-line-width: clamp(600px, 72%, 850px);
-  --folder-color: rgb(208, 164, 22);
-  --folder-inactive: 85%;
-  --font-monospace: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  --font-monospace-theme: "maplemono";
-  --font-ui-medium: 16px;
-  --font-ui-small: 14px;
-  --font-ui-smaller: 13px;
+    inset 0 0 0 1px rgb(210, 201, 188) !important;
+  --embed-border-bottom: 2px solid rgb(210, 201, 188) !important;
+  --embed-border-end: 2px solid rgb(210, 201, 188) !important;
+  --embed-border-start: 2px solid rgb(210, 201, 188) !important;
+  --embed-border-top: 2px solid rgb(210, 201, 188) !important;
+  --embed-padding: 16px 20px !important;
+  --embed-radius: 8px !important;
+  --file-folding-offset: 28px !important;
+  --file-header-background: rgb(248, 248, 246) !important;
+  --file-header-background-focused: rgb(248, 248, 246) !important;
+  --file-header-font-size: 14px !important;
+  --file-line-width: clamp(600px, 72%, 850px) !important;
+  --folder-color: rgb(208, 164, 22) !important;
+  --folder-inactive: 85% !important;
+  --font-monospace: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-theme: "maplemono" !important;
+  --font-ui-medium: 16px !important;
+  --font-ui-small: 14px !important;
+  --font-ui-smaller: 13px !important;
   --footnote-divider-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
+  ) !important;
   --footnote-input-background-active: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
-  --footnote-line-height: 1.8;
-  --frame-bg: rgb(235, 233, 229);
-  --graph-node-attachment: rgba(177.48, 139.74, 26.52, 1);
-  --graph-node-focused: rgb(167, 147, 118);
-  --graph-node-tag: rgba(71.4, 142.8, 20.4, 1);
-  --grid-dots-color: #d4d4d4;
-  --grid-line-color: #e3e3e3;
-  --grid-spacing: 20px;
-  --h1-color: rgb(189.0825, 81.2175, 81.2175);
-  --h1-color-rgb: 189.0825, 81.2175, 81.2175;
-  --h1-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --h1-line-height: 46.08px;
-  --h1-size: 25.6px;
-  --h1-weight: 750;
-  --h2-color: rgb(199.41, 122.774, 35.19);
-  --h2-color-rgb: 199.41, 122.774, 35.19;
-  --h2-font: "";
-  --h2-line-height: 43.2px;
-  --h2-size: 24px;
-  --h2-weight: 700;
-  --h3-color: rgb(71.4, 142.8, 20.4);
-  --h3-color-rgb: 71.4, 142.8, 20.4;
-  --h3-font: "";
-  --h3-line-height: 40.32px;
-  --h3-size: 22.4px;
-  --h3-weight: 600;
-  --h4-color: rgb(5.202, 132.8822, 168.198);
-  --h4-color-rgb: 5.202, 132.8822, 168.198;
-  --h4-font: "";
-  --h4-line-height: 37.44px;
-  --h4-size: 20.8px;
-  --h4-weight: 550;
-  --h5-color: rgb(114.24, 97.92, 146.88);
-  --h5-color-rgb: 114.24, 97.92, 146.88;
-  --h5-font: "";
-  --h5-line-height: 34.56px;
-  --h5-size: 19.2px;
-  --h5-weight: 550;
-  --h6-color: rgb(17.85, 124.95, 82.11);
-  --h6-color-rgb: 17.85, 124.95, 82.11;
-  --h6-font: "";
-  --h6-line-height: 31.68px;
-  --h6-size: 17.6px;
-  --h6-variant: small-caps;
-  --h6-weight: 500;
-  --heading-spacing: 20px;
-  --highlight: var(--background-modifier-hover);
+  ) !important;
+  --footnote-line-height: 1.8 !important;
+  --frame-bg: rgb(235, 233, 229) !important;
+  --graph-node-attachment: rgba(177.48, 139.74, 26.52, 1) !important;
+  --graph-node-focused: rgb(167, 147, 118) !important;
+  --graph-node-tag: rgba(71.4, 142.8, 20.4, 1) !important;
+  --grid-dots-color: #d4d4d4 !important;
+  --grid-line-color: #e3e3e3 !important;
+  --grid-spacing: 20px !important;
+  --h1-color: rgb(189.0825, 81.2175, 81.2175) !important;
+  --h1-color-rgb: 189.0825, 81.2175, 81.2175 !important;
+  --h1-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --h1-line-height: 46.08px !important;
+  --h1-size: 25.6px !important;
+  --h1-weight: 750 !important;
+  --h2-color: rgb(199.41, 122.774, 35.19) !important;
+  --h2-color-rgb: 199.41, 122.774, 35.19 !important;
+  --h2-font: "" !important;
+  --h2-line-height: 43.2px !important;
+  --h2-size: 24px !important;
+  --h2-weight: 700 !important;
+  --h3-color: rgb(71.4, 142.8, 20.4) !important;
+  --h3-color-rgb: 71.4, 142.8, 20.4 !important;
+  --h3-font: "" !important;
+  --h3-line-height: 40.32px !important;
+  --h3-size: 22.4px !important;
+  --h3-weight: 600 !important;
+  --h4-color: rgb(5.202, 132.8822, 168.198) !important;
+  --h4-color-rgb: 5.202, 132.8822, 168.198 !important;
+  --h4-font: "" !important;
+  --h4-line-height: 37.44px !important;
+  --h4-size: 20.8px !important;
+  --h4-weight: 550 !important;
+  --h5-color: rgb(114.24, 97.92, 146.88) !important;
+  --h5-color-rgb: 114.24, 97.92, 146.88 !important;
+  --h5-font: "" !important;
+  --h5-line-height: 34.56px !important;
+  --h5-size: 19.2px !important;
+  --h5-weight: 550 !important;
+  --h6-color: rgb(17.85, 124.95, 82.11) !important;
+  --h6-color-rgb: 17.85, 124.95, 82.11 !important;
+  --h6-font: "" !important;
+  --h6-line-height: 31.68px !important;
+  --h6-size: 17.6px !important;
+  --h6-variant: small-caps !important;
+  --h6-weight: 500 !important;
+  --heading-spacing: 20px !important;
+  --highlight: hsl(
+    35,
+    20%,
+    max(70%, 66% * 0.8),
+    25%
+  ) !important;
   --hr-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --icon-color-active: rgb(167, 147, 118);
-  --inline-code: rgba(189.0825, 81.2175, 81.2175, 1);
-  --inline-title-color: rgb(189.0825, 81.2175, 81.2175);
-  --inline-title-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --inline-title-line-height: 46.08px;
-  --inline-title-size: 25.6px;
-  --inline-title-weight: 750;
-  --input-radius: 6px;
-  --interactive-accent: rgb(175, 156, 131);
-  --interactive-accent-hover: rgb(183, 165, 143);
+  ) !important;
+  --icon-color-active: rgb(167, 147, 118) !important;
+  --inline-code: rgba(189.0825, 81.2175, 81.2175, 1) !important;
+  --inline-title-color: rgb(189.0825, 81.2175, 81.2175) !important;
+  --inline-title-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --inline-title-line-height: 46.08px !important;
+  --inline-title-size: 25.6px !important;
+  --inline-title-weight: 750 !important;
+  --input-radius: 6px !important;
+  --interactive-accent: rgb(175, 156, 131) !important;
+  --interactive-accent-hover: rgb(183, 165, 143) !important;
   --interactive-accent-hsl: 35, 22%,
-    56%;
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --line-height-normal: 1.8;
-  --line-height-tight: 1.5;
-  --link-color: rgba(17.85, 124.95, 82.11, 1);
-  --link-color-hover: rgba(17.85, 124.95, 82.11, 1);
-  --link-color-rgb: 17.85, 124.95, 82.11;
-  --link-color-underline: rgba(17.85, 124.95, 82.11, 1);
+    56% !important;
+  --light: rgb(248, 248, 246) !important;
+  --lightgray: rgb(239, 237, 236) !important;
+  --line-height-normal: 1.8 !important;
+  --line-height-tight: 1.5 !important;
+  --link-color: rgba(17.85, 124.95, 82.11, 1) !important;
+  --link-color-hover: rgba(17.85, 124.95, 82.11, 1) !important;
+  --link-color-rgb: 17.85, 124.95, 82.11 !important;
+  --link-color-underline: rgba(17.85, 124.95, 82.11, 1) !important;
   --link-external-color: rgba(
     177.48, 139.74, 26.52,
     1
-  );
+  ) !important;
   --link-external-color-hover: rgba(
     177.48, 139.74, 26.52,
     1
-  );
-  --link-external-color-rgb: 177.48, 139.74, 26.52;
+  ) !important;
+  --link-external-color-rgb: 177.48, 139.74, 26.52 !important;
   --link-external-color-underline: rgba(
     177.48, 139.74, 26.52,
     1
-  );
-  --link-footnote: rgba(114.24, 97.92, 146.88, 1);
-  --link-text-size: 16px;
+  ) !important;
+  --link-footnote: rgba(114.24, 97.92, 146.88, 1) !important;
+  --link-text-size: 16px !important;
   --link-unresolved-color: rgba(
     17.85, 124.95, 82.11,
     0.85
-  );
+  ) !important;
   --link-unresolved-decoration-color: rgba(
     17.85, 124.95, 82.11,
     0.85
-  );
-  --list-bullet-size: 7.33333px;
-  --list-marker-color: rgb(167, 147, 118);
-  --list-marker-color-alt: rgb(167, 147, 118);
-  --list-marker-color-alt-render: transparent;
-  --list-marker-color-collapsed: rgb(167, 147, 118);
-  --list-threading-color: rgb(210, 201, 188);
-  --list-threading-width: max(0.1rem, 2px);
-  --menu-background: rgb(239, 237, 236);
+  ) !important;
+  --list-bullet-size: 7.33333px !important;
+  --list-marker-color: rgb(167, 147, 118) !important;
+  --list-marker-color-alt: rgb(167, 147, 118) !important;
+  --list-marker-color-alt-render: transparent !important;
+  --list-marker-color-collapsed: rgb(167, 147, 118) !important;
+  --list-threading-color: rgb(210, 201, 188) !important;
+  --list-threading-width: max(0.1rem, 2px) !important;
+  --menu-background: rgb(239, 237, 236) !important;
   --menu-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --menu-padding: 4px;
+  ) !important;
+  --menu-padding: 4px !important;
   --metadata-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
+  ) !important;
   --metadata-divider-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
+  ) !important;
   --metadata-input-background-active: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
+  ) !important;
   --metadata-label-background-active: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
+  ) !important;
   --metadata-property-background-active: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
+  ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px hsla(
     35,
     15%,
     56%,
     60%
-  );
+  ) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px hsla(
     35,
     15%,
     56%,
     60%
-  );
-  --metadata-sidebar-input-font-size: 14px;
-  --metadata-sidebar-label-font-size: 14px;
-  --modal-background: rgb(248, 248, 246);
-  --modal-close-button-padding: 12px;
-  --modal-header-height: 48px;
-  --modal-height: min(85vh, 1000px);
-  --modal-width: min(90vw, 1100px);
-  --nav-indentation-guide-color: #e0e0e0;
-  --nav-indentation-guide-width: 1.8px;
+  ) !important;
+  --metadata-sidebar-input-font-size: 14px !important;
+  --metadata-sidebar-label-font-size: 14px !important;
+  --modal-background: rgb(248, 248, 246) !important;
+  --modal-close-button-padding: 12px !important;
+  --modal-header-height: 48px !important;
+  --modal-height: min(85vh, 1000px) !important;
+  --modal-width: min(90vw, 1100px) !important;
+  --nav-indentation-guide-color: #e0e0e0 !important;
+  --nav-indentation-guide-width: 1.8px !important;
   --nav-item-background-active: hsla(
     35,
     22%,
     56%,
     1
-  );
+  ) !important;
   --nav-item-background-hover: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
+  ) !important;
   --nav-item-background-selected: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
-  --nav-item-children-padding-left: 8px;
-  --nav-item-color-highlighted: rgb(167, 147, 118);
-  --nav-item-size: 14.4px;
-  --outline-guideline-color: rgb(210, 201, 188);
-  --outline-guideline-color-alt: rgb(167, 147, 118);
-  --outline-guideline-width: 2px;
-  --outline-item-height: 25.92px;
-  --p-spacing: 8px;
-  --pdf-background: transparent;
-  --pdf-page-background: rgb(248, 248, 246);
-  --pdf-sidebar-background: rgb(248, 248, 246);
+  ) !important;
+  --nav-item-children-padding-left: 8px !important;
+  --nav-item-color-highlighted: rgb(167, 147, 118) !important;
+  --nav-item-size: 14.4px !important;
+  --outline-guideline-color: rgb(210, 201, 188) !important;
+  --outline-guideline-color-alt: rgb(167, 147, 118) !important;
+  --outline-guideline-width: 2px !important;
+  --outline-item-height: 25.92px !important;
+  --p-spacing: 8px !important;
+  --pdf-background: transparent !important;
+  --pdf-page-background: rgb(248, 248, 246) !important;
+  --pdf-sidebar-background: rgb(248, 248, 246) !important;
   --pill-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
+  ) !important;
   --pill-border-color-hover: hsla(
     35,
     15.4%,
     56%,
     60%
-  );
-  --pill-color-remove-hover: rgb(167, 147, 118);
-  --prompt-background: rgb(248, 248, 246);
-  --raised-background: color-mix(in srgb, rgb(248, 248, 246) 65%, transparent) linear-gradient(rgb(248, 248, 246), color-mix(in srgb, rgb(248, 248, 246) 65%, transparent));
-  --ribbon-background: rgb(239, 237, 236);
-  --ribbon-background-collapsed: rgb(248, 248, 246);
-  --scrollbar-color: rgba(0, 0, 0, 0);
-  --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --search-result-background: rgb(248, 248, 246);
-  --secondary: var(--text-accent);
-  --select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='none' stroke='%23222222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/></svg>");
-  --setting-accent-h-dark: 207;
-  --setting-calendar-max-width: 500px;
-  --setting-code-ligature: 'calt';
-  --setting-color-dirs: rgb(208, 164, 22);
-  --setting-file-line-width: clamp(600px, 72%, 850px);
-  --setting-group-heading-size: 16px;
-  --setting-h1-weight: 750;
-  --setting-h2-font: "";
-  --setting-h2-weight: 700;
-  --setting-h3-font: "";
-  --setting-h3-weight: 600;
-  --setting-h4-font: "";
-  --setting-h4-weight: 550;
-  --setting-h5-font: "";
-  --setting-h5-weight: 550;
-  --setting-h6-font: "";
-  --setting-h6-weight: 500;
-  --setting-hr-icon: ''⭐'';
-  --setting-items-background: rgb(242, 240, 237);
+  ) !important;
+  --pill-color-remove-hover: rgb(167, 147, 118) !important;
+  --prompt-background: rgb(248, 248, 246) !important;
+  --raised-background: color-mix(in srgb, rgb(248, 248, 246) 65%, transparent) linear-gradient(rgb(248, 248, 246), color-mix(in srgb, rgb(248, 248, 246) 65%, transparent)) !important;
+  --ribbon-background: rgb(239, 237, 236) !important;
+  --ribbon-background-collapsed: rgb(248, 248, 246) !important;
+  --scrollbar-color: rgba(0, 0, 0, 0) !important;
+  --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+  --search-result-background: rgb(248, 248, 246) !important;
+  --secondary: rgb(167, 147, 118) !important;
+  --select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='none' stroke='%23222222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/></svg>") !important;
+  --setting-accent-h-dark: 207 !important;
+  --setting-calendar-max-width: 500px !important;
+  --setting-code-ligature: 'calt' !important;
+  --setting-color-dirs: rgb(208, 164, 22) !important;
+  --setting-file-line-width: clamp(600px, 72%, 850px) !important;
+  --setting-group-heading-size: 16px !important;
+  --setting-h1-weight: 750 !important;
+  --setting-h2-font: "" !important;
+  --setting-h2-weight: 700 !important;
+  --setting-h3-font: "" !important;
+  --setting-h3-weight: 600 !important;
+  --setting-h4-font: "" !important;
+  --setting-h4-weight: 550 !important;
+  --setting-h5-font: "" !important;
+  --setting-h5-weight: 550 !important;
+  --setting-h6-font: "" !important;
+  --setting-h6-weight: 500 !important;
+  --setting-hr-icon: ''⭐'' !important;
+  --setting-items-background: rgb(242, 240, 237) !important;
   --setting-items-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --setting-modal-header-title: 'Maple 1.0.0-beta.33';
-  --setting-scrollbar-hover: rgba(167, 147, 118, 0.4);
-  --setting-text-bold-style: underline dotted;
-  --setting-text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --setting-text-italic-style: underline dotted;
+  ) !important;
+  --setting-modal-header-title: 'Maple 1.0.0-beta.33' !important;
+  --setting-scrollbar-hover: rgba(167, 147, 118, 0.4) !important;
+  --setting-text-bold-style: underline dotted !important;
+  --setting-text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
+  --setting-text-italic-style: underline dotted !important;
   --slider-thumb-border-color: hsla(
     35,
     15%,
     56%,
     60%
-  );
-  --slider-track-background: rgb(210, 201, 188);
-  --status-bar-background: rgb(239, 237, 236);
+  ) !important;
+  --slider-track-background: rgb(210, 201, 188) !important;
+  --status-bar-background: rgb(239, 237, 236) !important;
   --status-bar-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --status-bar-border-width: 1px;
-  --status-bar-font-size: 13px;
-  --status-bar-radius: 6px;
-  --suggestion-background: rgb(248, 248, 246);
-  --sync-avatar-color-1: rgba(189.0825, 81.2175, 81.2175, 1);
-  --sync-avatar-color-2: rgba(199.41, 122.774, 35.19, 1);
-  --sync-avatar-color-3: rgba(177.48, 139.74, 26.52, 1);
-  --sync-avatar-color-4: rgba(71.4, 142.8, 20.4, 1);
-  --sync-avatar-color-5: rgba(17.85, 124.95, 82.11, 1);
-  --sync-avatar-color-6: rgba(5.202, 132.8822, 168.198, 1);
-  --sync-avatar-color-7: rgba(114.24, 97.92, 146.88, 1);
-  --tab-active-shadow: none;
-  --tab-background-active: rgb(248, 248, 246);
-  --tab-container-background: rgb(235, 233, 229);
-  --tab-font-size: 14px;
-  --tab-outline-color: transparent;
-  --tab-radius: 6px;
-  --tab-stacked-font-size: 14px;
-  --tab-switcher-background: rgb(239, 237, 236);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(239, 237, 236), transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(167, 147, 118);
-  --tab-text-color-focused-highlighted: rgb(167, 147, 118);
+  ) !important;
+  --status-bar-border-width: 1px !important;
+  --status-bar-font-size: 13px !important;
+  --status-bar-radius: 6px !important;
+  --suggestion-background: rgb(248, 248, 246) !important;
+  --sync-avatar-color-1: rgba(189.0825, 81.2175, 81.2175, 1) !important;
+  --sync-avatar-color-2: rgba(199.41, 122.774, 35.19, 1) !important;
+  --sync-avatar-color-3: rgba(177.48, 139.74, 26.52, 1) !important;
+  --sync-avatar-color-4: rgba(71.4, 142.8, 20.4, 1) !important;
+  --sync-avatar-color-5: rgba(17.85, 124.95, 82.11, 1) !important;
+  --sync-avatar-color-6: rgba(5.202, 132.8822, 168.198, 1) !important;
+  --sync-avatar-color-7: rgba(114.24, 97.92, 146.88, 1) !important;
+  --tab-active-shadow: none !important;
+  --tab-background-active: rgb(248, 248, 246) !important;
+  --tab-container-background: rgb(235, 233, 229) !important;
+  --tab-font-size: 14px !important;
+  --tab-outline-color: transparent !important;
+  --tab-radius: 6px !important;
+  --tab-stacked-font-size: 14px !important;
+  --tab-switcher-background: rgb(239, 237, 236) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(239, 237, 236), transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(167, 147, 118) !important;
+  --tab-text-color-focused-highlighted: rgb(167, 147, 118) !important;
   --table-add-button-background: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
+  ) !important;
   --table-add-button-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --table-add-button-border-width: 0;
+  ) !important;
+  --table-add-button-border-width: 0 !important;
   --table-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --table-cell-vertical-alignment: middle;
+  ) !important;
+  --table-cell-vertical-alignment: middle !important;
   --table-drag-handle-background: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
-  );
-  --table-drag-handle-background-active: rgb(210, 201, 188);
-  --table-drag-handle-color-active: #fafafa;
-  --table-header-background: rgb(242, 240, 237);
-  --table-header-background-hover: rgb(242, 240, 237);
+  ) !important;
+  --table-drag-handle-background-active: rgb(210, 201, 188) !important;
+  --table-drag-handle-color-active: #fafafa !important;
+  --table-header-background: rgb(242, 240, 237) !important;
+  --table-header-background-hover: rgb(242, 240, 237) !important;
   --table-header-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --table-line-height: 1.5;
-  --table-selection: rgba(167, 147, 118, 0.1);
-  --table-selection-border-color: rgb(210, 201, 188);
-  --table-selection-border-radius: 8px;
-  --tag-background: rgba(167, 147, 118, 0.1);
-  --tag-background-hover: rgba(167, 147, 118, 0.2);
-  --tag-border-color: rgb(167, 147, 118);
-  --tag-border-color-hover: rgba(167, 147, 118, 0.15);
-  --tag-border-width: 1px;
-  --tag-color: rgb(167, 147, 118);
-  --tag-color-hover: rgb(167, 147, 118);
-  --tag-padding-x: 8px;
-  --tag-padding-y: 0;
-  --tertiary: var(--text-accent-hover);
-  --text-accent: rgb(167, 147, 118);
-  --text-accent-hover: rgb(183, 165, 143);
-  --text-error: rgba(189.0825, 81.2175, 81.2175, 1);
-  --text-on-accent: #fafafa;
-  --text-selection: rgba(167, 147, 118, 0.25);
-  --text-success: rgba(71.4, 142.8, 20.4, 1);
-  --text-warning: rgba(199.41, 122.774, 35.19, 1);
-  --textHighlight: var(--background-modifier-hover);
-  --theme-accent-active-h: 35;
-  --theme-accent-active-l: 56%;
-  --theme-accent-active-s: 22%;
-  --theme-accent-h: 35;
-  --theme-accent-inactive-h: 35;
-  --theme-accent-inactive-l: 78%;
-  --theme-accent-inactive-s: 20%;
-  --titlebar-background: rgb(235, 233, 229);
-  --titlebar-background-focused: rgb(235, 233, 229);
+  ) !important;
+  --table-line-height: 1.5 !important;
+  --table-selection: rgba(167, 147, 118, 0.1) !important;
+  --table-selection-border-color: rgb(210, 201, 188) !important;
+  --table-selection-border-radius: 8px !important;
+  --tag-background: rgba(167, 147, 118, 0.1) !important;
+  --tag-background-hover: rgba(167, 147, 118, 0.2) !important;
+  --tag-border-color: rgb(167, 147, 118) !important;
+  --tag-border-color-hover: rgba(167, 147, 118, 0.15) !important;
+  --tag-border-width: 1px !important;
+  --tag-color: rgb(167, 147, 118) !important;
+  --tag-color-hover: rgb(167, 147, 118) !important;
+  --tag-padding-x: 8px !important;
+  --tag-padding-y: 0 !important;
+  --tertiary: rgb(183, 165, 143) !important;
+  --text-accent: rgb(167, 147, 118) !important;
+  --text-accent-hover: rgb(183, 165, 143) !important;
+  --text-error: rgba(189.0825, 81.2175, 81.2175, 1) !important;
+  --text-on-accent: #fafafa !important;
+  --text-selection: rgba(167, 147, 118, 0.25) !important;
+  --text-success: rgba(71.4, 142.8, 20.4, 1) !important;
+  --text-warning: rgba(199.41, 122.774, 35.19, 1) !important;
+  --textHighlight: hsl(
+    35,
+    20%,
+    max(70%, 66% * 0.8),
+    25%
+  ) !important;
+  --theme-accent-active-h: 35 !important;
+  --theme-accent-active-l: 56% !important;
+  --theme-accent-active-s: 22% !important;
+  --theme-accent-h: 35 !important;
+  --theme-accent-inactive-h: 35 !important;
+  --theme-accent-inactive-l: 78% !important;
+  --theme-accent-inactive-s: 20% !important;
+  --titlebar-background: rgb(235, 233, 229) !important;
+  --titlebar-background-focused: rgb(235, 233, 229) !important;
   --titlebar-border-color: hsla(
     35,
     10%,
     78%,
     75%
-  );
-  --vault-profile-font-size: 14px;
-  --quartz-icon-color: currentColor;
+  ) !important;
+  --vault-profile-font-size: 14px !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

@@ -9,605 +9,614 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-1: oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30));
-  --accent-2: oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330));
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1);
+  --accent-1: oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) !important;
+  --accent-2: oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) !important;
+  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
   --background-modifier-border: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
+  ) l c h) !important;
   --background-modifier-border-focus: oklch(
     from oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
   ) 70% c h
-  );
+  ) !important;
   --background-modifier-error: oklch(
     from #d32f2f 70% 20% h
-  );
+  ) !important;
   --background-modifier-error-hover: oklch(
     from #d32f2f 70% 20% h
-  );
+  ) !important;
   --background-modifier-success: oklch(
     from #4caf50 70% 20% h
-  );
+  ) !important;
   --background-paper: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
-  );
+  ) !important;
   --background-primary: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --background-primary-alt: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
-  );
+  ) !important;
   --background-secondary: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  );
+  ) !important;
   --background-secondary-alt: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 22% calc(c * 0.3) h
-  );
+  ) !important;
   --background-tertiary: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
-  );
-  --base-accent: oklch(from rgb(138, 92, 245) l c h);
+  ) !important;
+  --base-accent: oklch(from rgb(138, 92, 245) l c h) !important;
   --bases-cards-background: oklch(from oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
-  ) 25% c h);
-  --bases-cards-border-width: 4px;
+  ) 25% c h) !important;
+  --bases-cards-border-width: 4px !important;
   --bases-cards-cover-background: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
-  );
+  ) !important;
   --bases-cards-shadow: 0 0 0 1px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
+  ) l c h) !important;
   --bases-embed-border-color: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
-  --bases-embed-border-radius: 12px;
-  --bases-table-border-color: oklch(from #dadada 50% c h / 50%);
+  ) l c h) !important;
+  --bases-embed-border-radius: 12px !important;
+  --bases-table-border-color: oklch(from #dadada 50% c h / 50%) !important;
   --bases-table-cell-background-active: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --bases-table-cell-background-disabled: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
-  );
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1);
+  ) !important;
+  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(
     from oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
   ) 70% c h
-  );
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245);
-  --bases-table-container-border-radius: 8px;
+  ) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
+  --bases-table-container-border-radius: 8px !important;
   --bases-table-group-background: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
-  );
+  ) !important;
   --bases-table-header-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
-  --bases-table-header-weight: 100;
+  ) !important;
+  --bases-table-header-weight: 100 !important;
   --bases-table-summary-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --blockquote-background-color: oklch(
     from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
   ) l c h / 40%
-  );
-  --blockquote-border-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h / 75%);
-  --blockquote-border-thickness: 4px;
+  ) !important;
+  --blockquote-border-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h / 75%) !important;
+  --blockquote-border-thickness: 4px !important;
   --bold-color: oklch(
     from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20%
       calc(h + 100)
-  );
-  --bold-weight: 600;
+  ) !important;
+  --bold-weight: 600 !important;
   --border-groove: 4px groove oklch(
     from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
-  );
+  ) !important;
   --border-ridge: 4px ridge oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --border-solid: 4px solid oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
-  );
+  ) !important;
   --box-shadow: inset -2px -2px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
   ) 0% c h),
     inset 2px 2px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) 50% c h);
+  ) 50% c h) !important;
   --box-shadow-active: inset 2px 2px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
   ) 0% c h),
-    inset -2px -2px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h);
+    inset -2px -2px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h) !important;
   --box-shadow-active-sm: inset 1px 1px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
   ) 0% c h),
-    inset -1px -1px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h);
+    inset -1px -1px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h) !important;
   --box-shadow-sm: inset -1px -1px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
   ) 0% c h),
     inset 1px 1px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) 50% c h);
+  ) 50% c h) !important;
   --button-active: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) 25% c h);
-  --button-border-radius: 8px;
+  ) 25% c h) !important;
+  --button-border-radius: 8px !important;
   --button-hover: oklch(from oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
-  ) l c h);
+  ) l c h) !important;
   --button-normal: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
-  --button-radius: 12px;
-  --button-text: #dadada;
+  ) !important;
+  --button-radius: 12px !important;
+  --button-text: #dadada !important;
   --callout-border-width: 4px;
   --callout-radius: 12px;
   --callout-title-weight: 600;
   --canvas-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
-  --canvas-controls-radius: 8px;
-  --canvas-dot-pattern: #666666;
-  --checkbox-color: rgb(138, 92, 245);
-  --checkbox-color-hover: rgb(166, 139, 249);
+  ) !important;
+  --canvas-controls-radius: 8px !important;
+  --canvas-dot-pattern: #666666 !important;
+  --checkbox-color: rgb(138, 92, 245) !important;
+  --checkbox-color-hover: rgb(166, 139, 249) !important;
   --checkbox-marker-color: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
-  );
-  --checkbox-radius: 12px;
-  --chroma: 20%;
-  --chroma-accent: 0.3;
-  --chroma-folder: 20%;
-  --clickable-icon-radius: 8px;
+  ) !important;
+  --checkbox-radius: 12px !important;
+  --chroma: 20% !important;
+  --chroma-accent: 0.3 !important;
+  --chroma-folder: 20% !important;
+  --clickable-icon-radius: 8px !important;
   --code-background: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) 10% c h / 50%);
+  ) 10% c h / 50%) !important;
   --code-border-color: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
+  ) l c h) !important;
   --code-function: oklch(
     from #ffeb3b 70% 20% h
-  );
+  ) !important;
   --code-important: oklch(
     from #ff9800 70% 20% h
-  );
+  ) !important;
   --code-operator: oklch(
     from #d32f2f 70% 20% h
-  );
+  ) !important;
   --code-property: oklch(
     from #00bcd4 70% 20% h
-  );
-  --code-radius: 12px;
+  ) !important;
+  --code-radius: 12px !important;
   --code-string: oklch(
     from #4caf50 70% 20% h
-  );
+  ) !important;
   --code-tag: oklch(
     from #d32f2f 70% 20% h
-  );
+  ) !important;
   --code-value: oklch(
     from #673ab7 70% 20% h
-  );
-  --collapse-icon-color-collapsed: rgb(166, 139, 249);
-  --color-accent: rgb(138, 92, 245);
-  --color-accent-1: rgb(166, 139, 249);
-  --color-accent-2: rgb(197, 182, 252);
+  ) !important;
+  --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
+  --color-accent: rgb(138, 92, 245) !important;
+  --color-accent-1: rgb(166, 139, 249) !important;
+  --color-accent-2: rgb(197, 182, 252) !important;
   --color-amber: oklch(
     from #ffb300 70% 20% h
-  );
+  ) !important;
   --color-blue: oklch(
     from #2196f3 70% 20% h
-  );
+  ) !important;
   --color-cyan: oklch(
     from #00bcd4 70% 20% h
-  );
+  ) !important;
   --color-green: oklch(
     from #4caf50 70% 20% h
-  );
+  ) !important;
   --color-indigo: oklch(
     from #3f51b5 70% 20% h
-  );
+  ) !important;
   --color-lime: oklch(
     from #8bc34a 70% 20% h
-  );
+  ) !important;
   --color-magenta: oklch(
     from #e91e63 70% 20% h
-  );
+  ) !important;
   --color-orange: oklch(
     from #ff9800 70% 20% h
-  );
+  ) !important;
   --color-purple: oklch(
     from #673ab7 70% 20% h
-  );
+  ) !important;
   --color-red: oklch(
     from #d32f2f 70% 20% h
-  );
+  ) !important;
   --color-rose: oklch(
     from #f48fb1 70% 20% h
-  );
+  ) !important;
   --color-teal: oklch(
     from #009688 70% 20% h
-  );
+  ) !important;
   --color-vermillion: oklch(
     from #ff5722 70% 20% h
-  );
+  ) !important;
   --color-violet: oklch(
     from #9c27b0 70% 20% h
-  );
+  ) !important;
   --color-yellow: oklch(
     from #ffeb3b 70% 20% h
-  );
+  ) !important;
   --divider-color: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
-  );
-  --divider-color-hover: rgb(138, 92, 245);
-  --divider-width: 0px;
+  ) !important;
+  --divider-color-hover: rgb(138, 92, 245) !important;
+  --divider-width: 0px !important;
   --embed-block-shadow-hover: 0 0 0 1px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
   ) l c h), inset 0 0 0 1px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
-  --embed-border-start: 2px solid rgb(138, 92, 245);
+  ) l c h) !important;
+  --embed-border-start: 2px solid rgb(138, 92, 245) !important;
   --file-header-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --file-header-background-focused: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  );
-  --file-margins: 16px;
+  ) !important;
+  --file-margins: 16px !important;
   --folder-accent-1: oklch(
     from #d32f2f 70% 20% h
-  );
+  ) !important;
   --folder-accent-10: oklch(
     from #8bc34a 70% 20% h
-  );
+  ) !important;
   --folder-accent-11: oklch(
     from #009688 70% 20% h
-  );
+  ) !important;
   --folder-accent-12: oklch(
     from #673ab7 70% 20% h
-  );
+  ) !important;
   --folder-accent-13: oklch(
     from #e91e63 70% 20% h
-  );
+  ) !important;
   --folder-accent-14: oklch(
     from #f48fb1 70% 20% h
-  );
+  ) !important;
   --folder-accent-15: oklch(
     from #00bcd4 70% 20% h
-  );
+  ) !important;
   --folder-accent-2: oklch(
     from #ff9800 70% 20% h
-  );
+  ) !important;
   --folder-color-3: oklch(
     from #ffeb3b 70% 20% h
-  );
+  ) !important;
   --folder-color-4: oklch(
     from #4caf50 70% 20% h
-  );
+  ) !important;
   --folder-color-5: oklch(
     from #2196f3 70% 20% h
-  );
+  ) !important;
   --folder-color-6: oklch(
     from #3f51b5 70% 20% h
-  );
+  ) !important;
   --folder-color-7: oklch(
     from #9c27b0 70% 20% h
-  );
+  ) !important;
   --folder-color-8: oklch(
     from #ff5722 70% 20% h
-  );
+  ) !important;
   --folder-color-9: oklch(
     from #ffb300 70% 20% h
-  );
+  ) !important;
   --footnote-divider-color: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
-  --footnote-radius: 8px;
+  ) l c h) !important;
+  --footnote-radius: 8px !important;
   --graph-node-attachment: oklch(
     from #ffeb3b 70% 20% h
-  );
-  --graph-node-focused: rgb(166, 139, 249);
+  ) !important;
+  --graph-node-focused: rgb(166, 139, 249) !important;
   --graph-node-tag: oklch(
     from #4caf50 70% 20% h
-  );
+  ) !important;
   --h1-color: oklch(
     from #d32f2f 70% 20% h
-  );
+  ) !important;
   --h2-color: oklch(
     from #ff9800 70% 20% h
-  );
+  ) !important;
   --h3-color: oklch(
     from #ffeb3b 70% 20% h
-  );
+  ) !important;
   --h4-color: oklch(
     from #4caf50 70% 20% h
-  );
+  ) !important;
   --h5-color: oklch(
     from #2196f3 70% 20% h
-  );
+  ) !important;
   --h6-color: oklch(
     from #3f51b5 70% 20% h
-  );
-  --header-height: 48px;
-  --heading-spacing: 2.5rem;
-  --highlight: var(--text-highlight-bg);
-  --hr-color: oklch(from #dadada l c h / 25%);
-  --hue-amber: #ffb300;
-  --hue-blue: #2196f3;
-  --hue-cyan: #00bcd4;
-  --hue-green: #4caf50;
-  --hue-indigo: #3f51b5;
-  --hue-lime: #8bc34a;
-  --hue-magenta: #e91e63;
-  --hue-orange: #ff9800;
-  --hue-purple: #673ab7;
-  --hue-red: #d32f2f;
-  --hue-rose: #f48fb1;
-  --hue-teal: #009688;
-  --hue-vermillion: #ff5722;
-  --hue-violet: #9c27b0;
-  --hue-yellow: #ffeb3b;
-  --icon-color-active: rgb(166, 139, 249);
+  ) !important;
+  --header-height: 48px !important;
+  --heading-spacing: 2.5rem !important;
+  --highlight: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% 20% h / 75%) !important;
+  --hr-color: oklch(from #dadada l c h / 25%) !important;
+  --hue-amber: #ffb300 !important;
+  --hue-blue: #2196f3 !important;
+  --hue-cyan: #00bcd4 !important;
+  --hue-green: #4caf50 !important;
+  --hue-indigo: #3f51b5 !important;
+  --hue-lime: #8bc34a !important;
+  --hue-magenta: #e91e63 !important;
+  --hue-orange: #ff9800 !important;
+  --hue-purple: #673ab7 !important;
+  --hue-red: #d32f2f !important;
+  --hue-rose: #f48fb1 !important;
+  --hue-teal: #009688 !important;
+  --hue-vermillion: #ff5722 !important;
+  --hue-violet: #9c27b0 !important;
+  --hue-yellow: #ffeb3b !important;
+  --icon-color-active: rgb(166, 139, 249) !important;
   --img-border-color: oklch(from oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
-  ) l 20% h);
-  --img-border-radius: 0px;
-  --img-border-width: 0px;
+  ) l 20% h) !important;
+  --img-border-radius: 0px !important;
+  --img-border-width: 0px !important;
   --inline-title-color: oklch(
     from #d32f2f 70% 20% h
-  );
-  --input-border-width: 2px;
-  --input-radius: 12px;
-  --interactive-accent: rgb(138, 92, 245);
-  --interactive-accent-hover: rgb(166, 139, 249);
-  --interactive-active: oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%);
+  ) !important;
+  --input-border-width: 2px !important;
+  --input-radius: 12px !important;
+  --interactive-accent: rgb(138, 92, 245) !important;
+  --interactive-accent-hover: rgb(166, 139, 249) !important;
+  --interactive-active: oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%) !important;
   --italic-color: oklch(
     from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20%
       calc(h + 200)
-  );
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --lightness: 70%;
+  ) !important;
+  --light: oklch(
+    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+  ) !important;
+  --lightgray: oklch(
+    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+  ) !important;
+  --lightness: 70% !important;
   --link-color: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 80% 20% h
-  );
+  ) !important;
   --link-color-hover: oklch(
     from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 80% 20% h
   ) 80% 20% h / 80%
-  );
+  ) !important;
   --link-external-color: oklch(
     from #d32f2f 70% 20% h
-  );
+  ) !important;
   --link-external-color-hover: oklch(
     from oklch(
     from #d32f2f 70% 20% h
   ) 70% 20% h / 80%
-  );
+  ) !important;
   --link-unresolved-color: oklch(
     from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 80% 20% h
   ) 80% 20% h / 60%
-  );
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3);
-  --link-weight: 700;
-  --list-indent: 2.25em;
-  --list-marker-color-collapsed: rgb(166, 139, 249);
+  ) !important;
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-weight: 700 !important;
+  --list-indent: 2.25em !important;
+  --list-marker-color-collapsed: rgb(166, 139, 249) !important;
   --menu-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
-  );
+  ) !important;
   --metadata-background: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h / 75%);
+  ) l c h / 75%) !important;
   --metadata-border-color: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
-  --metadata-border-radius: 12px;
+  ) l c h) !important;
+  --metadata-border-radius: 12px !important;
   --metadata-divider-color: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
-  --metadata-gap: 8px;
-  --metadata-input-height: 28px;
+  ) l c h) !important;
+  --metadata-gap: 8px !important;
+  --metadata-input-height: 28px !important;
   --metadata-label-background: oklch(
     from oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
   ) l c h / 15%
-  );
+  ) !important;
   --metadata-label-background-active: oklch(
     from oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
   ) l c h / 30%
-  );
+  ) !important;
   --metadata-label-background-hover: oklch(
     from oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
   ) l c h / 30%
-  );
-  --metadata-label-font-weight: 700;
-  --metadata-label-width: 8em;
+  ) !important;
+  --metadata-label-font-weight: 700 !important;
+  --metadata-label-width: 8em !important;
   --metadata-property-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
-  );
+  ) !important;
   --metadata-property-background-hover: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
-  );
+  ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px oklch(
     from oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
   ) 70% c h
-  );
+  ) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
-  );
-  --metadata-property-radius: 12px;
-  --metadata-property-radius-focus: 12px;
-  --metadata-property-radius-hover: 12px;
-  --mobile-sidebar-width: 100%;
+  ) !important;
+  --metadata-property-radius: 12px !important;
+  --metadata-property-radius-focus: 12px !important;
+  --metadata-property-radius-hover: 12px !important;
+  --mobile-sidebar-width: 100% !important;
   --modal-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
-  --nav-indentation-guide-width: 2px;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15);
-  --nav-item-color-highlighted: rgb(166, 139, 249);
-  --nav-item-radius: 8px;
-  --nav-tag-color: #b3b3b3;
-  --nav-tag-radius: 8px;
-  --outline-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 25% c h);
+  ) !important;
+  --nav-indentation-guide-width: 2px !important;
+  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-color-highlighted: rgb(166, 139, 249) !important;
+  --nav-item-radius: 8px !important;
+  --nav-tag-color: #b3b3b3 !important;
+  --nav-tag-radius: 8px !important;
+  --outline-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 25% c h) !important;
   --pdf-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --pdf-page-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --pdf-shadow: 0 0 0 1px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
+  ) l c h) !important;
   --pdf-sidebar-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
+  ) l c h) !important;
   --pill-border-color: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
-  --pill-color-remove-hover: rgb(166, 139, 249);
+  ) l c h) !important;
+  --pill-color-remove-hover: rgb(166, 139, 249) !important;
   --prompt-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
-  --radius-s: 8px;
-  --radius-xs: 8px;
-  --radius-xxs: 8px;
+  ) !important;
+  --radius-s: 8px !important;
+  --radius-xs: 8px !important;
+  --radius-xxs: 8px !important;
   --ribbon-background: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  );
+  ) !important;
   --ribbon-background-collapsed: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  );
-  --rotation-1: 30;
-  --rotation-2: 330;
+  ) !important;
+  --rotation-1: 30 !important;
+  --rotation-2: 330 !important;
   --search-result-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
-  --secondary: var(--text-accent);
+  ) !important;
+  --secondary: rgb(166, 139, 249) !important;
   --setting-items-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --setting-items-border-color: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
+  ) l c h) !important;
   --settings-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
-  );
-  --sidebar-markdown-font-size: 14.4px;
-  --slider-track-background: oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%);
-  --slider-track-height: 6px;
+  ) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
+  --slider-track-background: oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%) !important;
+  --slider-track-height: 6px !important;
   --status-bar-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
-  );
+  ) !important;
   --status-bar-border-color: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
-  );
+  ) !important;
   --strong-emphasis: oklch(
     from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20%
       calc(h + 200)
-  );
+  ) !important;
   --suggestion-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --sync-avatar-color-1: oklch(
     from #d32f2f 70% 20% h
-  );
+  ) !important;
   --sync-avatar-color-2: oklch(
     from #ff9800 70% 20% h
-  );
+  ) !important;
   --sync-avatar-color-3: oklch(
     from #ffeb3b 70% 20% h
-  );
+  ) !important;
   --sync-avatar-color-4: oklch(
     from #4caf50 70% 20% h
-  );
+  ) !important;
   --sync-avatar-color-5: oklch(
     from #00bcd4 70% 20% h
-  );
+  ) !important;
   --sync-avatar-color-6: oklch(
     from #2196f3 70% 20% h
-  );
+  ) !important;
   --sync-avatar-color-7: oklch(
     from #673ab7 70% 20% h
-  );
+  ) !important;
   --tab-background-active: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
-  );
+  ) !important;
   --tab-container-background: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  );
+  ) !important;
   --tab-outline-color: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
-  );
-  --tab-radius: 8px;
-  --tab-stacked-header-width: 48px;
+  ) !important;
+  --tab-radius: 8px !important;
+  --tab-stacked-header-width: 48px !important;
   --tab-switcher-background: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  );
+  ) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ), transparent);
-  --tab-switcher-preview-radius: 12px;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245);
-  --tab-text-color-focused-highlighted: rgb(166, 139, 249);
+  ), transparent) !important;
+  --tab-switcher-preview-radius: 12px !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
   --table-add-button-border-color: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
-  --table-border-color: oklch(from #dadada 50% c h / 50%);
-  --table-border-spacing: 2px;
-  --table-data-background: oklch(from oklch(from rgb(138, 92, 245) l c h) l c h / 7%);
-  --table-drag-handle-background-active: rgb(138, 92, 245);
-  --table-header-background: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% c h / 30%);
-  --table-header-border-color: oklch(from #dadada 50% c h / 50%);
-  --table-header-weight: 600;
-  --table-selection: rgba(138, 92, 245, 0.1);
-  --table-selection-border-color: rgb(138, 92, 245);
-  --tag-background: rgba(138, 92, 245, 0.1);
-  --tag-background-hover: rgba(138, 92, 245, 0.2);
-  --tag-border-color: rgba(138, 92, 245, 0.15);
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15);
-  --tag-border-width: 1px;
-  --tag-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 80% c h / 75%);
-  --tag-color-hover: rgb(166, 139, 249);
-  --tag-radius: 8px;
-  --tertiary: var(--text-accent-hover);
-  --text-accent: rgb(166, 139, 249);
-  --text-accent-hover: rgb(197, 182, 252);
+  ) l c h) !important;
+  --table-border-color: oklch(from #dadada 50% c h / 50%) !important;
+  --table-border-spacing: 2px !important;
+  --table-data-background: oklch(from oklch(from rgb(138, 92, 245) l c h) l c h / 7%) !important;
+  --table-drag-handle-background-active: rgb(138, 92, 245) !important;
+  --table-header-background: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% c h / 30%) !important;
+  --table-header-border-color: oklch(from #dadada 50% c h / 50%) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection-border-color: rgb(138, 92, 245) !important;
+  --tag-background: rgba(138, 92, 245, 0.1) !important;
+  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
+  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
+  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-border-width: 1px !important;
+  --tag-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 80% c h / 75%) !important;
+  --tag-color-hover: rgb(166, 139, 249) !important;
+  --tag-radius: 8px !important;
+  --tertiary: rgb(197, 182, 252) !important;
+  --text-accent: rgb(166, 139, 249) !important;
+  --text-accent-hover: rgb(197, 182, 252) !important;
   --text-error: oklch(
     from #d32f2f 70% 20% h
-  );
-  --text-highlight-bg: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% 20% h / 75%);
-  --text-selection: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 45% c h / 75%);
+  ) !important;
+  --text-highlight-bg: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% 20% h / 75%) !important;
+  --text-selection: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 45% c h / 75%) !important;
   --text-success: oklch(
     from #4caf50 70% 20% h
-  );
+  ) !important;
   --text-warning: oklch(
     from #ff9800 70% 20% h
-  );
-  --textHighlight: var(--text-highlight-bg);
+  ) !important;
+  --textHighlight: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% 20% h / 75%) !important;
   --titlebar-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
-  );
+  ) !important;
   --titlebar-background-focused: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
-  );
+  ) !important;
   --titlebar-border-color: oklch(from oklch(
     from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
-  ) l c h);
-  --touch-radius-m: 8px;
-  --touch-radius-s: 8px;
-  --touch-radius-xs: 8px;
-  --touch-radius-xxs: 8px;
-  --traffic-lights-offset-x: 48px;
-  --traffic-lights-offset-y: 48px;
-  --window-border-radius: 12px;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
-  --quartz-icon-color: currentColor;
+  ) l c h) !important;
+  --touch-radius-m: 8px !important;
+  --touch-radius-s: 8px !important;
+  --touch-radius-xs: 8px !important;
+  --touch-radius-xxs: 8px !important;
+  --traffic-lights-offset-x: 48px !important;
+  --traffic-lights-offset-y: 48px !important;
+  --window-border-radius: 12px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1327,613 +1336,622 @@ body kbd {
   },
   light: {
     base: `:root:root {
-  --accent-1: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30));
-  --accent-2: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330));
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1);
+  --accent-1: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) !important;
+  --accent-2: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) !important;
+  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
   --background-modifier-border: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
+  ) l c h) !important;
   --background-modifier-border-focus: oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) 70% c h
-  );
+  ) !important;
   --background-modifier-error: oklch(
     from #d32f2f 50% 30% h
-  );
+  ) !important;
   --background-modifier-error-hover: oklch(
     from #d32f2f 50% 30% h
-  );
+  ) !important;
   --background-modifier-success: oklch(
     from #4caf50 50% 30% h
-  );
+  ) !important;
   --background-paper: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
-  );
+  ) !important;
   --background-primary: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --background-primary-alt: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  );
+  ) !important;
   --background-secondary: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  );
+  ) !important;
   --background-secondary-alt: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
-  );
+  ) !important;
   --background-tertiary: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
-  );
-  --base-accent: oklch(from rgb(153, 115, 247) l c h);
+  ) !important;
+  --base-accent: oklch(from rgb(153, 115, 247) l c h) !important;
   --bases-cards-background: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
-  ) 85% c h);
-  --bases-cards-border-width: 4px;
+  ) 85% c h) !important;
+  --bases-cards-border-width: 4px !important;
   --bases-cards-cover-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  );
+  ) !important;
   --bases-cards-shadow: 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
+  ) l c h) !important;
   --bases-embed-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
-  --bases-embed-border-radius: 12px;
-  --bases-table-border-color: oklch(from #222222 50% c h / 50%);
+  ) l c h) !important;
+  --bases-embed-border-radius: 12px !important;
+  --bases-table-border-color: oklch(from #222222 50% c h / 50%) !important;
   --bases-table-cell-background-active: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --bases-table-cell-background-disabled: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  );
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1);
+  ) !important;
+  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) 70% c h
-  );
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(153, 115, 247);
-  --bases-table-container-border-radius: 8px;
+  ) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(153, 115, 247) !important;
+  --bases-table-container-border-radius: 8px !important;
   --bases-table-group-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  );
+  ) !important;
   --bases-table-header-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
-  --bases-table-header-weight: 100;
+  ) !important;
+  --bases-table-header-weight: 100 !important;
   --bases-table-summary-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --blockquote-background-color: oklch(
     from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h / 40%
-  );
-  --blockquote-border-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 50% c h / 75%);
-  --blockquote-border-thickness: 4px;
+  ) !important;
+  --blockquote-border-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 50% c h / 75%) !important;
+  --blockquote-border-thickness: 4px !important;
   --blur-background: color-mix(in srgb, oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) 65%, transparent) linear-gradient(oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ), color-mix(in srgb, oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  ) 65%, transparent));
+  ) 65%, transparent)) !important;
   --bold-color: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30%
       calc(h + 100)
-  );
-  --bold-weight: 600;
+  ) !important;
+  --bold-weight: 600 !important;
   --border-groove: 4px groove oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
-  );
+  ) !important;
   --border-ridge: 4px ridge oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --border-solid: 4px solid oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
-  );
+  ) !important;
   --box-shadow: inset -2px -2px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) 50% c h),
     inset 2px 2px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 100% c h);
+  ) 100% c h) !important;
   --box-shadow-active: inset 2px 2px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) 50% c h),
     inset -2px -2px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 100% c h);
+  ) 100% c h) !important;
   --box-shadow-active-sm: inset 1px 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) 50% c h),
     inset -1px -1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 100% c h);
+  ) 100% c h) !important;
   --box-shadow-sm: inset -1px -1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) 50% c h),
     inset 1px 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 100% c h);
+  ) 100% c h) !important;
   --button-active: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
-  ) 85% c h);
-  --button-border-radius: 8px;
+  ) 85% c h) !important;
+  --button-border-radius: 8px !important;
   --button-hover: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
-  ) l c h);
+  ) l c h) !important;
   --button-normal: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
-  --button-radius: 12px;
-  --button-text: #222222;
+  ) !important;
+  --button-radius: 12px !important;
+  --button-text: #222222 !important;
   --callout-border-width: 4px;
   --callout-radius: 12px;
   --callout-title-weight: 600;
   --canvas-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
-  --canvas-controls-radius: 8px;
-  --canvas-dot-pattern: #ababab;
-  --checkbox-color: rgb(153, 115, 247);
-  --checkbox-color-hover: rgb(166, 139, 249);
+  ) !important;
+  --canvas-controls-radius: 8px !important;
+  --canvas-dot-pattern: #ababab !important;
+  --checkbox-color: rgb(153, 115, 247) !important;
+  --checkbox-color-hover: rgb(166, 139, 249) !important;
   --checkbox-marker-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
-  );
-  --checkbox-radius: 12px;
-  --chroma: 30%;
-  --chroma-accent: 0.4;
-  --chroma-folder: 30%;
-  --clickable-icon-radius: 8px;
+  ) !important;
+  --checkbox-radius: 12px !important;
+  --chroma: 30% !important;
+  --chroma-accent: 0.4 !important;
+  --chroma-folder: 30% !important;
+  --clickable-icon-radius: 8px !important;
   --code-background: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) 85% c h / 50%);
+  ) 85% c h / 50%) !important;
   --code-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
+  ) l c h) !important;
   --code-function: oklch(
     from #ffeb3b 50% 30% h
-  );
+  ) !important;
   --code-important: oklch(
     from #ff9800 50% 30% h
-  );
+  ) !important;
   --code-operator: oklch(
     from #d32f2f 50% 30% h
-  );
+  ) !important;
   --code-property: oklch(
     from #00bcd4 50% 30% h
-  );
-  --code-radius: 12px;
+  ) !important;
+  --code-radius: 12px !important;
   --code-string: oklch(
     from #4caf50 50% 30% h
-  );
+  ) !important;
   --code-tag: oklch(
     from #d32f2f 50% 30% h
-  );
+  ) !important;
   --code-value: oklch(
     from #673ab7 50% 30% h
-  );
-  --collapse-icon-color-collapsed: rgb(138, 92, 245);
-  --color-accent: rgb(138, 92, 245);
-  --color-accent-1: rgb(153, 115, 247);
-  --color-accent-2: rgb(166, 139, 249);
+  ) !important;
+  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
+  --color-accent: rgb(138, 92, 245) !important;
+  --color-accent-1: rgb(153, 115, 247) !important;
+  --color-accent-2: rgb(166, 139, 249) !important;
   --color-amber: oklch(
     from #ffb300 50% 30% h
-  );
+  ) !important;
   --color-blue: oklch(
     from #2196f3 50% 30% h
-  );
+  ) !important;
   --color-cyan: oklch(
     from #00bcd4 50% 30% h
-  );
+  ) !important;
   --color-green: oklch(
     from #4caf50 50% 30% h
-  );
+  ) !important;
   --color-indigo: oklch(
     from #3f51b5 50% 30% h
-  );
+  ) !important;
   --color-lime: oklch(
     from #8bc34a 50% 30% h
-  );
+  ) !important;
   --color-magenta: oklch(
     from #e91e63 50% 30% h
-  );
+  ) !important;
   --color-orange: oklch(
     from #ff9800 50% 30% h
-  );
+  ) !important;
   --color-purple: oklch(
     from #673ab7 50% 30% h
-  );
+  ) !important;
   --color-red: oklch(
     from #d32f2f 50% 30% h
-  );
+  ) !important;
   --color-rose: oklch(
     from #f48fb1 50% 30% h
-  );
+  ) !important;
   --color-teal: oklch(
     from #009688 50% 30% h
-  );
+  ) !important;
   --color-vermillion: oklch(
     from #ff5722 50% 30% h
-  );
+  ) !important;
   --color-violet: oklch(
     from #9c27b0 50% 30% h
-  );
+  ) !important;
   --color-yellow: oklch(
     from #ffeb3b 50% 30% h
-  );
+  ) !important;
   --divider-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
-  );
-  --divider-color-hover: rgb(153, 115, 247);
-  --divider-width: 0px;
+  ) !important;
+  --divider-color-hover: rgb(153, 115, 247) !important;
+  --divider-width: 0px !important;
   --embed-block-shadow-hover: 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h), inset 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
-  --embed-border-start: 2px solid rgb(153, 115, 247);
+  ) l c h) !important;
+  --embed-border-start: 2px solid rgb(153, 115, 247) !important;
   --file-header-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --file-header-background-focused: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  );
-  --file-margins: 16px;
+  ) !important;
+  --file-margins: 16px !important;
   --folder-accent-1: oklch(
     from #d32f2f 50% 30% h
-  );
+  ) !important;
   --folder-accent-10: oklch(
     from #8bc34a 50% 30% h
-  );
+  ) !important;
   --folder-accent-11: oklch(
     from #009688 50% 30% h
-  );
+  ) !important;
   --folder-accent-12: oklch(
     from #673ab7 50% 30% h
-  );
+  ) !important;
   --folder-accent-13: oklch(
     from #e91e63 50% 30% h
-  );
+  ) !important;
   --folder-accent-14: oklch(
     from #f48fb1 50% 30% h
-  );
+  ) !important;
   --folder-accent-15: oklch(
     from #00bcd4 50% 30% h
-  );
+  ) !important;
   --folder-accent-2: oklch(
     from #ff9800 50% 30% h
-  );
+  ) !important;
   --folder-color-3: oklch(
     from #ffeb3b 50% 30% h
-  );
+  ) !important;
   --folder-color-4: oklch(
     from #4caf50 50% 30% h
-  );
+  ) !important;
   --folder-color-5: oklch(
     from #2196f3 50% 30% h
-  );
+  ) !important;
   --folder-color-6: oklch(
     from #3f51b5 50% 30% h
-  );
+  ) !important;
   --folder-color-7: oklch(
     from #9c27b0 50% 30% h
-  );
+  ) !important;
   --folder-color-8: oklch(
     from #ff5722 50% 30% h
-  );
+  ) !important;
   --folder-color-9: oklch(
     from #ffb300 50% 30% h
-  );
+  ) !important;
   --footnote-divider-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
-  --footnote-radius: 8px;
+  ) l c h) !important;
+  --footnote-radius: 8px !important;
   --graph-node-attachment: oklch(
     from #ffeb3b 50% 30% h
-  );
-  --graph-node-focused: rgb(138, 92, 245);
+  ) !important;
+  --graph-node-focused: rgb(138, 92, 245) !important;
   --graph-node-tag: oklch(
     from #4caf50 50% 30% h
-  );
+  ) !important;
   --h1-color: oklch(
     from #d32f2f 50% 30% h
-  );
+  ) !important;
   --h2-color: oklch(
     from #ff9800 50% 30% h
-  );
+  ) !important;
   --h3-color: oklch(
     from #ffeb3b 50% 30% h
-  );
+  ) !important;
   --h4-color: oklch(
     from #4caf50 50% 30% h
-  );
+  ) !important;
   --h5-color: oklch(
     from #2196f3 50% 30% h
-  );
+  ) !important;
   --h6-color: oklch(
     from #3f51b5 50% 30% h
-  );
-  --header-height: 48px;
-  --heading-spacing: 2.5rem;
-  --highlight: var(--text-highlight-bg);
-  --hr-color: oklch(from #222222 l c h / 25%);
-  --hue-amber: #ffb300;
-  --hue-blue: #2196f3;
-  --hue-cyan: #00bcd4;
-  --hue-green: #4caf50;
-  --hue-indigo: #3f51b5;
-  --hue-lime: #8bc34a;
-  --hue-magenta: #e91e63;
-  --hue-orange: #ff9800;
-  --hue-purple: #673ab7;
-  --hue-red: #d32f2f;
-  --hue-rose: #f48fb1;
-  --hue-teal: #009688;
-  --hue-vermillion: #ff5722;
-  --hue-violet: #9c27b0;
-  --hue-yellow: #ffeb3b;
-  --icon-color-active: rgb(138, 92, 245);
+  ) !important;
+  --header-height: 48px !important;
+  --heading-spacing: 2.5rem !important;
+  --highlight: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 80% 30% h / 75%) !important;
+  --hr-color: oklch(from #222222 l c h / 25%) !important;
+  --hue-amber: #ffb300 !important;
+  --hue-blue: #2196f3 !important;
+  --hue-cyan: #00bcd4 !important;
+  --hue-green: #4caf50 !important;
+  --hue-indigo: #3f51b5 !important;
+  --hue-lime: #8bc34a !important;
+  --hue-magenta: #e91e63 !important;
+  --hue-orange: #ff9800 !important;
+  --hue-purple: #673ab7 !important;
+  --hue-red: #d32f2f !important;
+  --hue-rose: #f48fb1 !important;
+  --hue-teal: #009688 !important;
+  --hue-vermillion: #ff5722 !important;
+  --hue-violet: #9c27b0 !important;
+  --hue-yellow: #ffeb3b !important;
+  --icon-color-active: rgb(138, 92, 245) !important;
   --img-border-color: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
-  ) l 30% h);
-  --img-border-radius: 0px;
-  --img-border-width: 0px;
+  ) l 30% h) !important;
+  --img-border-radius: 0px !important;
+  --img-border-width: 0px !important;
   --inline-title-color: oklch(
     from #d32f2f 50% 30% h
-  );
-  --input-border-width: 2px;
-  --input-radius: 12px;
-  --interactive-accent: rgb(153, 115, 247);
-  --interactive-accent-hover: rgb(166, 139, 249);
-  --interactive-active: oklch(from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%);
+  ) !important;
+  --input-border-width: 2px !important;
+  --input-radius: 12px !important;
+  --interactive-accent: rgb(153, 115, 247) !important;
+  --interactive-accent-hover: rgb(166, 139, 249) !important;
+  --interactive-active: oklch(from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%) !important;
   --italic-color: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30%
       calc(h + 200)
-  );
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --lightness: 50%;
+  ) !important;
+  --light: oklch(
+    from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
+  ) !important;
+  --lightgray: oklch(
+    from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
+  ) !important;
+  --lightness: 50% !important;
   --link-color: oklch(
     from oklch(from rgb(153, 115, 247) l c h) 35% 30% h
-  );
+  ) !important;
   --link-color-hover: oklch(
     from oklch(
     from oklch(from rgb(153, 115, 247) l c h) 35% 30% h
   ) 50% 30% h / 80%
-  );
+  ) !important;
   --link-external-color: oklch(
     from #d32f2f 50% 30% h
-  );
+  ) !important;
   --link-external-color-hover: oklch(
     from oklch(
     from #d32f2f 50% 30% h
   ) 50% 30% h / 80%
-  );
+  ) !important;
   --link-unresolved-color: oklch(
     from oklch(
     from oklch(from rgb(153, 115, 247) l c h) 35% 30% h
   ) 50% 30% h / 60%
-  );
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3);
-  --link-weight: 700;
-  --list-indent: 2.25em;
-  --list-marker-color-collapsed: rgb(138, 92, 245);
+  ) !important;
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-weight: 700 !important;
+  --list-indent: 2.25em !important;
+  --list-marker-color-collapsed: rgb(138, 92, 245) !important;
   --menu-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
-  );
+  ) !important;
   --metadata-background: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h / 75%);
+  ) l c h / 75%) !important;
   --metadata-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
-  --metadata-border-radius: 12px;
+  ) l c h) !important;
+  --metadata-border-radius: 12px !important;
   --metadata-divider-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
-  --metadata-gap: 8px;
-  --metadata-input-height: 28px;
+  ) l c h) !important;
+  --metadata-gap: 8px !important;
+  --metadata-input-height: 28px !important;
   --metadata-label-background: oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
   ) l c h / 15%
-  );
+  ) !important;
   --metadata-label-background-active: oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
   ) l c h / 30%
-  );
+  ) !important;
   --metadata-label-background-hover: oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
   ) l c h / 30%
-  );
-  --metadata-label-font-weight: 700;
-  --metadata-label-width: 8em;
+  ) !important;
+  --metadata-label-font-weight: 700 !important;
+  --metadata-label-width: 8em !important;
   --metadata-property-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
-  );
+  ) !important;
   --metadata-property-background-hover: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
-  );
+  ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) 70% c h
-  );
+  ) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
-  );
-  --metadata-property-radius: 12px;
-  --metadata-property-radius-focus: 12px;
-  --metadata-property-radius-hover: 12px;
-  --mobile-sidebar-width: 100%;
+  ) !important;
+  --metadata-property-radius: 12px !important;
+  --metadata-property-radius-focus: 12px !important;
+  --metadata-property-radius-hover: 12px !important;
+  --mobile-sidebar-width: 100% !important;
   --modal-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
-  --nav-indentation-guide-width: 2px;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15);
-  --nav-item-color-highlighted: rgb(138, 92, 245);
-  --nav-item-radius: 8px;
-  --nav-tag-color: #5c5c5c;
-  --nav-tag-radius: 8px;
-  --outline-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 25% c h);
+  ) !important;
+  --nav-indentation-guide-width: 2px !important;
+  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-color-highlighted: rgb(138, 92, 245) !important;
+  --nav-item-radius: 8px !important;
+  --nav-tag-color: #5c5c5c !important;
+  --nav-tag-radius: 8px !important;
+  --outline-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 25% c h) !important;
   --pdf-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --pdf-page-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --pdf-sidebar-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --pill-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
-  --pill-color-remove-hover: rgb(138, 92, 245);
+  ) l c h) !important;
+  --pill-color-remove-hover: rgb(138, 92, 245) !important;
   --prompt-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
-  --radius-s: 8px;
-  --radius-xs: 8px;
-  --radius-xxs: 8px;
+  ) !important;
+  --radius-s: 8px !important;
+  --radius-xs: 8px !important;
+  --radius-xxs: 8px !important;
   --ribbon-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  );
+  ) !important;
   --ribbon-background-collapsed: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  );
-  --rotation-1: 30;
-  --rotation-2: 330;
+  ) !important;
+  --rotation-1: 30 !important;
+  --rotation-2: 330 !important;
   --search-result-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
-  --secondary: var(--text-accent);
+  ) !important;
+  --secondary: rgb(138, 92, 245) !important;
   --setting-items-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --setting-items-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
+  ) l c h) !important;
   --settings-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
-  );
-  --sidebar-markdown-font-size: 14.4px;
-  --slider-track-background: oklch(from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%);
-  --slider-track-height: 6px;
+  ) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
+  --slider-track-background: oklch(from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%) !important;
+  --slider-track-height: 6px !important;
   --status-bar-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
-  );
+  ) !important;
   --status-bar-border-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
-  );
+  ) !important;
   --strong-emphasis: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30%
       calc(h + 200)
-  );
+  ) !important;
   --suggestion-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --sync-avatar-color-1: oklch(
     from #d32f2f 50% 30% h
-  );
+  ) !important;
   --sync-avatar-color-2: oklch(
     from #ff9800 50% 30% h
-  );
+  ) !important;
   --sync-avatar-color-3: oklch(
     from #ffeb3b 50% 30% h
-  );
+  ) !important;
   --sync-avatar-color-4: oklch(
     from #4caf50 50% 30% h
-  );
+  ) !important;
   --sync-avatar-color-5: oklch(
     from #00bcd4 50% 30% h
-  );
+  ) !important;
   --sync-avatar-color-6: oklch(
     from #2196f3 50% 30% h
-  );
+  ) !important;
   --sync-avatar-color-7: oklch(
     from #673ab7 50% 30% h
-  );
+  ) !important;
   --tab-background-active: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
-  );
+  ) !important;
   --tab-container-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  );
+  ) !important;
   --tab-outline-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
-  );
-  --tab-radius: 8px;
-  --tab-stacked-header-width: 48px;
+  ) !important;
+  --tab-radius: 8px !important;
+  --tab-stacked-header-width: 48px !important;
   --tab-switcher-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  );
+  ) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ), transparent);
-  --tab-switcher-preview-radius: 12px;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245);
-  --tab-text-color-focused-highlighted: rgb(138, 92, 245);
+  ), transparent) !important;
+  --tab-switcher-preview-radius: 12px !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
   --table-add-button-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
-  --table-border-color: oklch(from #222222 50% c h / 50%);
-  --table-border-spacing: 2px;
-  --table-data-background: oklch(from oklch(from rgb(153, 115, 247) l c h) l c h / 7%);
-  --table-drag-handle-background-active: rgb(153, 115, 247);
-  --table-header-background: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 50% c h / 30%);
-  --table-header-border-color: oklch(from #222222 50% c h / 50%);
-  --table-header-weight: 600;
-  --table-selection: rgba(138, 92, 245, 0.1);
-  --table-selection-border-color: rgb(153, 115, 247);
-  --tag-background: rgba(138, 92, 245, 0.1);
-  --tag-background-hover: rgba(138, 92, 245, 0.2);
-  --tag-border-color: rgba(138, 92, 245, 0.15);
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15);
-  --tag-border-width: 1px;
-  --tag-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 40% c h / 75%);
-  --tag-color-hover: rgb(138, 92, 245);
-  --tag-radius: 8px;
-  --tertiary: var(--text-accent-hover);
-  --text-accent: rgb(138, 92, 245);
-  --text-accent-hover: rgb(166, 139, 249);
+  ) l c h) !important;
+  --table-border-color: oklch(from #222222 50% c h / 50%) !important;
+  --table-border-spacing: 2px !important;
+  --table-data-background: oklch(from oklch(from rgb(153, 115, 247) l c h) l c h / 7%) !important;
+  --table-drag-handle-background-active: rgb(153, 115, 247) !important;
+  --table-header-background: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 50% c h / 30%) !important;
+  --table-header-border-color: oklch(from #222222 50% c h / 50%) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection-border-color: rgb(153, 115, 247) !important;
+  --tag-background: rgba(138, 92, 245, 0.1) !important;
+  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
+  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
+  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-border-width: 1px !important;
+  --tag-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 40% c h / 75%) !important;
+  --tag-color-hover: rgb(138, 92, 245) !important;
+  --tag-radius: 8px !important;
+  --tertiary: rgb(166, 139, 249) !important;
+  --text-accent: rgb(138, 92, 245) !important;
+  --text-accent-hover: rgb(166, 139, 249) !important;
   --text-error: oklch(
     from #d32f2f 50% 30% h
-  );
-  --text-highlight-bg: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 80% 30% h / 75%);
-  --text-selection: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 80% 30% h / 75%);
+  ) !important;
+  --text-highlight-bg: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 80% 30% h / 75%) !important;
+  --text-selection: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 80% 30% h / 75%) !important;
   --text-success: oklch(
     from #4caf50 50% 30% h
-  );
+  ) !important;
   --text-warning: oklch(
     from #ff9800 50% 30% h
-  );
-  --textHighlight: var(--text-highlight-bg);
+  ) !important;
+  --textHighlight: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 80% 30% h / 75%) !important;
   --titlebar-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
-  );
+  ) !important;
   --titlebar-background-focused: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
-  );
+  ) !important;
   --titlebar-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
-  ) l c h);
+  ) l c h) !important;
   --titlebar-text-color-focused: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
-  ) 100% c h);
-  --touch-radius-m: 8px;
-  --touch-radius-s: 8px;
-  --touch-radius-xs: 8px;
-  --touch-radius-xxs: 8px;
-  --traffic-lights-offset-x: 48px;
-  --traffic-lights-offset-y: 48px;
-  --window-border-radius: 12px;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
-  --quartz-icon-color: currentColor;
+  ) 100% c h) !important;
+  --touch-radius-m: 8px !important;
+  --touch-radius-s: 8px !important;
+  --touch-radius-xs: 8px !important;
+  --touch-radius-xxs: 8px !important;
+  --traffic-lights-offset-x: 48px !important;
+  --traffic-lights-offset-y: 48px !important;
+  --window-border-radius: 12px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

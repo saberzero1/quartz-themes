@@ -9,96 +9,109 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-l: 79%;
-  --background-modifier-active-hover: rgba(183, 154, 249, 0.1);
-  --bases-table-cell-background-selected: rgba(183, 154, 249, 0.1);
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(183, 154, 249);
-  --blockquote-border-color: #dadada;
-  --blockquote-border-thickness: 1px;
-  --bodyFont: var(--font-text);
-  --bold-weight: 600;
-  --checkbox-color: rgb(183, 154, 249);
-  --checkbox-color-hover: rgb(222, 211, 253);
-  --code-normal: #62d770;
-  --codeFont: var(--font-text);
-  --collapse-icon-color-collapsed: rgb(222, 211, 253);
-  --color-accent: rgb(183, 154, 249);
-  --color-accent-1: rgb(222, 211, 253);
-  --color-accent-2: hsl(253, 92.4%, 101.91%);
-  --color-accent-hsl: 258, 88%, 79%;
-  --divider-color-hover: rgb(183, 154, 249);
-  --embed-border-start: 2px solid rgb(183, 154, 249);
+  --accent-l: 79% !important;
+  --background-modifier-active-hover: rgba(183, 154, 249, 0.1) !important;
+  --bases-table-cell-background-selected: rgba(183, 154, 249, 0.1) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(183, 154, 249) !important;
+  --blockquote-border-color: #dadada !important;
+  --blockquote-border-thickness: 1px !important;
+  --bodyFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --bold-weight: 600 !important;
+  --checkbox-color: rgb(183, 154, 249) !important;
+  --checkbox-color-hover: rgb(222, 211, 253) !important;
+  --code-normal: #62d770 !important;
+  --codeFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --collapse-icon-color-collapsed: rgb(222, 211, 253) !important;
+  --color-accent: rgb(183, 154, 249) !important;
+  --color-accent-1: rgb(222, 211, 253) !important;
+  --color-accent-2: hsl(253, 92.4%, 101.91%) !important;
+  --color-accent-hsl: 258, 88%, 79% !important;
+  --divider-color-hover: rgb(183, 154, 249) !important;
+  --embed-border-start: 2px solid rgb(183, 154, 249) !important;
   --file-header-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-interface: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
-  --font-links: "Alegreya SC", "Spectral", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --font-links: "Alegreya SC", "Spectral", serif !important;
   --font-mermaid: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-print: '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, 'Arial';
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, 'Arial' !important;
   --font-text: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-text-theme: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
-  --font-title: "Playfair Display";
-  --graph-node-focused: rgb(222, 211, 253);
-  --headerFont: var(--font-text);
-  --heading-weight: 600;
-  --highlight: var(--background-modifier-active-hover);
-  --icon-color-active: rgb(222, 211, 253);
-  --interactive-accent: rgb(183, 154, 249);
-  --interactive-accent-hover: rgb(222, 211, 253);
-  --interactive-accent-hsl: 258, 88%, 79%;
-  --line-height-body: 1.45;
-  --line-height-headings: 1.2;
-  --link-color: rgb(222, 211, 253);
-  --link-color-hover: hsl(253, 92.4%, 101.91%);
-  --link-decoration: none;
-  --link-external-color: #7fcae6;
-  --link-external-color-hover: #89ebe5;
-  --link-external-decoration: none;
-  --link-unresolved-color: #d5aecf;
-  --link-unresolved-decoration-color: rgba(183, 154, 249, 0.3);
-  --link-unresolved-opacity: 1;
-  --list-marker-color-collapsed: rgb(222, 211, 253);
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --font-title: "Playfair Display" !important;
+  --graph-node-focused: rgb(222, 211, 253) !important;
+  --headerFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --heading-weight: 600 !important;
+  --highlight: rgba(183, 154, 249, 0.1) !important;
+  --icon-color-active: rgb(222, 211, 253) !important;
+  --interactive-accent: rgb(183, 154, 249) !important;
+  --interactive-accent-hover: rgb(222, 211, 253) !important;
+  --interactive-accent-hsl: 258, 88%, 79% !important;
+  --line-height-body: 1.45 !important;
+  --line-height-headings: 1.2 !important;
+  --link-color: rgb(222, 211, 253) !important;
+  --link-color-hover: hsl(253, 92.4%, 101.91%) !important;
+  --link-decoration: none !important;
+  --link-external-color: #7fcae6 !important;
+  --link-external-color-hover: #89ebe5 !important;
+  --link-external-decoration: none !important;
+  --link-unresolved-color: #d5aecf !important;
+  --link-unresolved-decoration-color: rgba(183, 154, 249, 0.3) !important;
+  --link-unresolved-opacity: 1 !important;
+  --list-marker-color-collapsed: rgb(222, 211, 253) !important;
   --metadata-input-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --metadata-label-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
-  --modal-height: 75vh;
-  --nav-item-background-selected: rgba(183, 154, 249, 0.15);
-  --nav-item-color-highlighted: rgb(222, 211, 253);
-  --pill-color-remove-hover: rgb(222, 211, 253);
-  --secondary: var(--text-accent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(183, 154, 249);
-  --tab-text-color-focused-highlighted: rgb(222, 211, 253);
-  --table-column-first-border-width: 0;
-  --table-column-last-border-width: 0;
-  --table-drag-handle-background-active: rgb(183, 154, 249);
-  --table-header-border-width: 0;
-  --table-row-last-border-width: 0;
-  --table-selection: rgba(183, 154, 249, 0.1);
-  --table-selection-border-color: rgb(183, 154, 249);
-  --tag-background: rgba(183, 154, 249, 0.1);
-  --tag-background-hover: rgba(183, 154, 249, 0.2);
-  --tag-border-color: rgba(183, 154, 249, 0.15);
-  --tag-border-color-hover: rgba(183, 154, 249, 0.15);
-  --tag-color: #eeb662;
-  --tag-color-hover: #f7d865;
-  --tertiary: var(--text-accent-hover);
-  --text-accent: rgb(222, 211, 253);
-  --text-accent-hover: hsl(253, 92.4%, 101.91%);
-  --text-selection: rgba(183, 154, 249, 0.33);
-  --textHighlight: var(--background-modifier-active-hover);
-  --title-gradient-bottom: rgb(222, 211, 253);
-  --title-gradient-top: #dadada;
-  --titleFont: var(--font-text);
-  --quartz-icon-color: currentColor;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --modal-height: 75vh !important;
+  --nav-item-background-selected: rgba(183, 154, 249, 0.15) !important;
+  --nav-item-color-highlighted: rgb(222, 211, 253) !important;
+  --pill-color-remove-hover: rgb(222, 211, 253) !important;
+  --secondary: rgb(222, 211, 253) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(183, 154, 249) !important;
+  --tab-text-color-focused-highlighted: rgb(222, 211, 253) !important;
+  --table-column-first-border-width: 0 !important;
+  --table-column-last-border-width: 0 !important;
+  --table-drag-handle-background-active: rgb(183, 154, 249) !important;
+  --table-header-border-width: 0 !important;
+  --table-row-last-border-width: 0 !important;
+  --table-selection: rgba(183, 154, 249, 0.1) !important;
+  --table-selection-border-color: rgb(183, 154, 249) !important;
+  --tag-background: rgba(183, 154, 249, 0.1) !important;
+  --tag-background-hover: rgba(183, 154, 249, 0.2) !important;
+  --tag-border-color: rgba(183, 154, 249, 0.15) !important;
+  --tag-border-color-hover: rgba(183, 154, 249, 0.15) !important;
+  --tag-color: #eeb662 !important;
+  --tag-color-hover: #f7d865 !important;
+  --tertiary: hsl(253, 92.4%, 101.91%) !important;
+  --text-accent: rgb(222, 211, 253) !important;
+  --text-accent-hover: hsl(253, 92.4%, 101.91%) !important;
+  --text-selection: rgba(183, 154, 249, 0.33) !important;
+  --textHighlight: rgba(183, 154, 249, 0.1) !important;
+  --title-gradient-bottom: rgb(222, 211, 253) !important;
+  --title-gradient-top: #dadada !important;
+  --titleFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     typography: `body .page article p > b, b {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
@@ -401,57 +414,70 @@ body kbd {
   },
   light: {
     base: `:root:root {
-  --blockquote-border-color: #222222;
-  --blockquote-border-thickness: 1px;
-  --bodyFont: var(--font-text);
-  --bold-weight: 600;
-  --code-normal: #4db95a;
-  --codeFont: var(--font-text);
+  --blockquote-border-color: #222222 !important;
+  --blockquote-border-thickness: 1px !important;
+  --bodyFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --bold-weight: 600 !important;
+  --code-normal: #4db95a !important;
+  --codeFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --file-header-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-interface: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
-  --font-links: "Alegreya SC", "Spectral", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --font-links: "Alegreya SC", "Spectral", serif !important;
   --font-mermaid: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-print: '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, 'Arial';
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, 'Arial' !important;
   --font-text: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-text-theme: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
-  --font-title: "Playfair Display";
-  --headerFont: var(--font-text);
-  --heading-weight: 600;
-  --line-height-body: 1.45;
-  --line-height-headings: 1.2;
-  --link-decoration: none;
-  --link-external-color: #2f9bb7;
-  --link-external-color-hover: rgb(72, 191, 224);
-  --link-external-decoration: none;
-  --link-unresolved-color: #d5aecf;
-  --link-unresolved-opacity: 1;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --font-title: "Playfair Display" !important;
+  --headerFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --heading-weight: 600 !important;
+  --line-height-body: 1.45 !important;
+  --line-height-headings: 1.2 !important;
+  --link-decoration: none !important;
+  --link-external-color: #2f9bb7 !important;
+  --link-external-color-hover: rgb(72, 191, 224) !important;
+  --link-external-decoration: none !important;
+  --link-unresolved-color: #d5aecf !important;
+  --link-unresolved-opacity: 1 !important;
   --metadata-input-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --metadata-label-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
-  --modal-height: 75vh;
-  --table-column-first-border-width: 0;
-  --table-column-last-border-width: 0;
-  --table-header-border-width: 0;
-  --table-row-last-border-width: 0;
-  --tag-background: #eeb662;
-  --tag-background-hover: #f7d865;
-  --tag-color: #222222;
-  --tag-color-hover: #222222;
-  --title-gradient-bottom: color-mix(in hsl, rgb(138, 92, 245), black);
-  --title-gradient-top: rgb(138, 92, 245);
-  --titleFont: var(--font-text);
-  --quartz-icon-color: currentColor;
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --modal-height: 75vh !important;
+  --table-column-first-border-width: 0 !important;
+  --table-column-last-border-width: 0 !important;
+  --table-header-border-width: 0 !important;
+  --table-row-last-border-width: 0 !important;
+  --tag-background: #eeb662 !important;
+  --tag-background-hover: #f7d865 !important;
+  --tag-color: #222222 !important;
+  --tag-color-hover: #222222 !important;
+  --title-gradient-bottom: color-mix(in hsl, rgb(138, 92, 245), black) !important;
+  --title-gradient-top: rgb(138, 92, 245) !important;
+  --titleFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     typography: `body .page article p > b, b {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;

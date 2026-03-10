@@ -6,36 +6,41 @@ export const theme: ThemeData = {
     base: `:root:root {
   --callout-padding: 18px;
   --callout-radius: 0;
-  --file-header-justify: left;
-  --file-line-width: 100%;
-  --sdlt-accent: #8BA4CC;
-  --sdlt-accent-muted: #304F80;
-  --sdlt-accent-muted-selection: rgba(48, 79, 128, 0.99);
-  --sdlt-accent-muted-transparent: rgba(48, 79, 128, 0.3);
-  --sdlt-base-bg-end: #1B2020;
-  --sdlt-base-bg-start: #202028;
-  --sdlt-border: #1A1F28;
-  --sdlt-content-bg-end: #212223;
-  --sdlt-content-bg-end-transparent: rgba(33, 34, 35, 0.3);
-  --sdlt-content-bg-start: #222832;
-  --sdlt-content-bg-start-transparent: rgba(34, 40, 50, 0.3);
-  --sdlt-gradient-base: linear-gradient(135deg, #202028, #1B2020);
-  --sdlt-gradient-content: linear-gradient(135deg, #222832, #212223);
-  --sdlt-gradient-subtle: linear-gradient(160deg, transparent, rgba(255, 255, 255, 0.02));
-  --sdlt-graph-line: #404050;
-  --sdlt-graph-line-highlight: #507090;
-  --sdlt-header-height: 48px;
-  --sdlt-markdown-header-height: 56px;
-  --sdlt-overlay-bg: rgba(255, 255, 255, 0.05);
-  --sdlt-overlay-border: rgba(255, 255, 255, 0.08);
-  --sdlt-ribbon-width: 48px;
-  --sdlt-search-border: #404040;
-  --sdlt-shadow-active: 0 0 3px 1px rgba(0, 0, 0, 0.5);
-  --sdlt-tag-indicator: #caca00;
-  --sdlt-text-faint: #909090;
-  --sdlt-text-muted: #cacaca;
-  --sdlt-text-on-accent: #000000;
-  --quartz-icon-color: currentColor;
+  --file-header-justify: left !important;
+  --file-line-width: 100% !important;
+  --sdlt-accent: #8BA4CC !important;
+  --sdlt-accent-muted: #304F80 !important;
+  --sdlt-accent-muted-selection: rgba(48, 79, 128, 0.99) !important;
+  --sdlt-accent-muted-transparent: rgba(48, 79, 128, 0.3) !important;
+  --sdlt-base-bg-end: #1B2020 !important;
+  --sdlt-base-bg-start: #202028 !important;
+  --sdlt-border: #1A1F28 !important;
+  --sdlt-content-bg-end: #212223 !important;
+  --sdlt-content-bg-end-transparent: rgba(33, 34, 35, 0.3) !important;
+  --sdlt-content-bg-start: #222832 !important;
+  --sdlt-content-bg-start-transparent: rgba(34, 40, 50, 0.3) !important;
+  --sdlt-gradient-base: linear-gradient(135deg, #202028, #1B2020) !important;
+  --sdlt-gradient-content: linear-gradient(135deg, #222832, #212223) !important;
+  --sdlt-gradient-subtle: linear-gradient(160deg, transparent, rgba(255, 255, 255, 0.02)) !important;
+  --sdlt-graph-line: #404050 !important;
+  --sdlt-graph-line-highlight: #507090 !important;
+  --sdlt-header-height: 48px !important;
+  --sdlt-markdown-header-height: 56px !important;
+  --sdlt-overlay-bg: rgba(255, 255, 255, 0.05) !important;
+  --sdlt-overlay-border: rgba(255, 255, 255, 0.08) !important;
+  --sdlt-ribbon-width: 48px !important;
+  --sdlt-search-border: #404040 !important;
+  --sdlt-shadow-active: 0 0 3px 1px rgba(0, 0, 0, 0.5) !important;
+  --sdlt-tag-indicator: #caca00 !important;
+  --sdlt-text-faint: #909090 !important;
+  --sdlt-text-muted: #cacaca !important;
+  --sdlt-text-on-accent: #000000 !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

@@ -5,14 +5,19 @@ export const theme: ThemeData = {
   dark: {},
   light: {
     base: `:root:root {
-  --brackets-color: #a7b6c2;
-  --code-font-family: 'Hack';
-  --link-color: #106ba3;
-  --side-dock-active: #202b33;
-  --side-dock-bg: #182026;
-  --side-dock-bg-hover: #202b33;
-  --text-color: #202b33;
-  --quartz-icon-color: currentColor;
+  --brackets-color: #a7b6c2 !important;
+  --code-font-family: 'Hack' !important;
+  --link-color: #106ba3 !important;
+  --side-dock-active: #202b33 !important;
+  --side-dock-bg: #182026 !important;
+  --side-dock-bg-hover: #202b33 !important;
+  --text-color: #202b33 !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     typography: `body .page article p > b, b {
   color: rgb(32, 43, 51);

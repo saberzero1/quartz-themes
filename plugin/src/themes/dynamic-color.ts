@@ -11,582 +11,591 @@ export const theme: ThemeData = {
     base: `:root:root[saved-theme="dark"] {
   --background-modifier-active-hover: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
-  --background-modifier-border: rgb(0, 0, 0);
+	) !important;
+  --background-modifier-border: rgb(0, 0, 0) !important;
   --background-modifier-border-focus: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --background-modifier-border-hover: rgb(0, 0, 0);
-  --background-modifier-error: rgb(0, 0, 0);
-  --background-modifier-hover: rgb(0, 0, 0);
-  --background-primary: rgb(0, 0, 0);
-  --background-primary-alt: rgb(0, 0, 0);
-  --background-secondary: rgb(0, 0, 0);
-  --background-secondary-alt: rgb(0, 0, 0);
-  --bases-cards-background: rgb(0, 0, 0);
-  --bases-cards-cover-background: rgb(0, 0, 0);
-  --bases-cards-shadow: 0 0 0 1px rgb(0, 0, 0);
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(0, 0, 0);
-  --bases-embed-border-color: rgb(0, 0, 0);
-  --bases-group-heading-property-color: rgb(0, 0, 0);
-  --bases-table-border-color: rgb(0, 0, 0);
-  --bases-table-cell-background-active: rgb(0, 0, 0);
-  --bases-table-cell-background-disabled: rgb(0, 0, 0);
+	) !important;
+  --background-modifier-border-hover: rgb(0, 0, 0) !important;
+  --background-modifier-error: rgb(0, 0, 0) !important;
+  --background-modifier-hover: rgb(0, 0, 0) !important;
+  --background-primary: rgb(0, 0, 0) !important;
+  --background-primary-alt: rgb(0, 0, 0) !important;
+  --background-secondary: rgb(0, 0, 0) !important;
+  --background-secondary-alt: rgb(0, 0, 0) !important;
+  --bases-cards-background: rgb(0, 0, 0) !important;
+  --bases-cards-cover-background: rgb(0, 0, 0) !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
+  --bases-embed-border-color: rgb(0, 0, 0) !important;
+  --bases-group-heading-property-color: rgb(0, 0, 0) !important;
+  --bases-table-border-color: rgb(0, 0, 0) !important;
+  --bases-table-cell-background-active: rgb(0, 0, 0) !important;
+  --bases-table-cell-background-disabled: rgb(0, 0, 0) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --bases-table-group-background: rgb(0, 0, 0);
-  --bases-table-header-background: rgb(0, 0, 0);
-  --bases-table-header-background-hover: rgb(0, 0, 0);
-  --bases-table-header-color: rgb(0, 0, 0);
-  --bases-table-summary-background: rgb(0, 0, 0);
-  --bases-table-summary-background-hover: rgb(0, 0, 0);
-  --blockquote-background-color: rgb(0, 0, 0);
+	) !important;
+  --bases-table-group-background: rgb(0, 0, 0) !important;
+  --bases-table-header-background: rgb(0, 0, 0) !important;
+  --bases-table-header-background-hover: rgb(0, 0, 0) !important;
+  --bases-table-header-color: rgb(0, 0, 0) !important;
+  --bases-table-summary-background: rgb(0, 0, 0) !important;
+  --bases-table-summary-background-hover: rgb(0, 0, 0) !important;
+  --blockquote-background-color: rgb(0, 0, 0) !important;
   --blockquote-border-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --blockquote-color: rgb(0, 0, 0);
-  --blur-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent));
-  --button-radius: 20px;
-  --canvas-background: rgb(0, 0, 0);
-  --canvas-card-label-color: rgb(0, 0, 0);
-  --canvas-dot-pattern: rgb(0, 0, 0);
-  --caret-color: rgb(0, 0, 0);
-  --checkbox-border-color: rgb(0, 0, 0);
-  --checkbox-border-color-hover: rgb(0, 0, 0);
+	) !important;
+  --blockquote-color: rgb(0, 0, 0) !important;
+  --blur-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
+  --button-radius: 20px !important;
+  --canvas-background: rgb(0, 0, 0) !important;
+  --canvas-card-label-color: rgb(0, 0, 0) !important;
+  --canvas-dot-pattern: rgb(0, 0, 0) !important;
+  --caret-color: rgb(0, 0, 0) !important;
+  --checkbox-border-color: rgb(0, 0, 0) !important;
+  --checkbox-border-color-hover: rgb(0, 0, 0) !important;
   --checkbox-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --checkbox-marker-color: rgb(0, 0, 0);
-  --checklist-done-color: rgb(0, 0, 0);
-  --code-background: rgb(0, 0, 0);
-  --code-border-color: rgb(0, 0, 0);
-  --code-bracket-background: rgb(0, 0, 0);
-  --code-comment: rgb(0, 0, 0);
-  --code-normal: rgb(0, 0, 0);
-  --code-punctuation: rgb(0, 0, 0);
-  --collapse-icon-color: rgb(0, 0, 0);
+	) !important;
+  --checkbox-marker-color: rgb(0, 0, 0) !important;
+  --checklist-done-color: rgb(0, 0, 0) !important;
+  --code-background: rgb(0, 0, 0) !important;
+  --code-border-color: rgb(0, 0, 0) !important;
+  --code-bracket-background: rgb(0, 0, 0) !important;
+  --code-comment: rgb(0, 0, 0) !important;
+  --code-normal: rgb(0, 0, 0) !important;
+  --code-punctuation: rgb(0, 0, 0) !important;
+  --collapse-icon-color: rgb(0, 0, 0) !important;
   --collapse-icon-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --dark: var(--text-normal);
-  --darkgray: var(--text-normal);
-  --divider-color: rgb(0, 0, 0);
-  --divider-color-hover: rgb(0, 0, 0);
-  --dropdown-background: rgb(0, 0, 0);
+	) !important;
+  --dark: rgb(0, 0, 0) !important;
+  --darkgray: rgb(0, 0, 0) !important;
+  --divider-color: rgb(0, 0, 0) !important;
+  --divider-color-hover: rgb(0, 0, 0) !important;
+  --dropdown-background: rgb(0, 0, 0) !important;
   --dropdown-background-hover: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
-  --embed-background: rgb(0, 0, 0);
-  --embed-block-shadow-hover: 0 0 0 1px rgb(0, 0, 0), inset 0 0 0 1px rgb(0, 0, 0);
+	) !important;
+  --embed-background: rgb(0, 0, 0) !important;
+  --embed-block-shadow-hover: 0 0 0 1px rgb(0, 0, 0), inset 0 0 0 1px rgb(0, 0, 0) !important;
   --embed-border-start: 2px solid hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --error-hue: 0;
-  --error-saturation: 84%;
-  --file-header-background: rgb(0, 0, 0);
-  --file-header-background-focused: rgb(0, 0, 0);
-  --flair-background: rgb(0, 0, 0);
-  --flair-color: rgb(0, 0, 0);
-  --footnote-divider-color: rgb(0, 0, 0);
-  --footnote-id-color: rgb(0, 0, 0);
-  --footnote-id-color-no-occurrences: rgb(0, 0, 0);
-  --footnote-input-background-active: rgb(0, 0, 0);
-  --graph-line: rgb(0, 0, 0);
-  --graph-node: rgb(0, 0, 0);
-  --graph-node-attachment: rgb(0, 0, 0);
-  --graph-node-focused: rgb(0, 0, 0);
+	) !important;
+  --error-hue: 0 !important;
+  --error-saturation: 84% !important;
+  --file-header-background: rgb(0, 0, 0) !important;
+  --file-header-background-focused: rgb(0, 0, 0) !important;
+  --flair-background: rgb(0, 0, 0) !important;
+  --flair-color: rgb(0, 0, 0) !important;
+  --footnote-divider-color: rgb(0, 0, 0) !important;
+  --footnote-id-color: rgb(0, 0, 0) !important;
+  --footnote-id-color-no-occurrences: rgb(0, 0, 0) !important;
+  --footnote-input-background-active: rgb(0, 0, 0) !important;
+  --graph-line: rgb(0, 0, 0) !important;
+  --graph-node: rgb(0, 0, 0) !important;
+  --graph-node-attachment: rgb(0, 0, 0) !important;
+  --graph-node-focused: rgb(0, 0, 0) !important;
   --graph-node-tag: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
-  --graph-node-unresolved: rgb(0, 0, 0);
-  --graph-text: rgb(0, 0, 0);
-  --gray: var(--text-muted);
-  --h1-color: rgb(0, 0, 0);
-  --h2-color: rgb(0, 0, 0);
-  --h3-color: rgb(0, 0, 0);
-  --h4-color: rgb(0, 0, 0);
-  --h5-color: rgb(0, 0, 0);
-  --h6-color: rgb(0, 0, 0);
-  --heading-formatting: rgb(0, 0, 0);
-  --highlight: var(--text-highlight-bg);
-  --hr-color: rgb(0, 0, 0);
-  --hue: 258;
-  --icon-color: rgb(0, 0, 0);
+	) !important;
+  --graph-node-unresolved: rgb(0, 0, 0) !important;
+  --graph-text: rgb(0, 0, 0) !important;
+  --gray: rgb(0, 0, 0) !important;
+  --h1-color: rgb(0, 0, 0) !important;
+  --h2-color: rgb(0, 0, 0) !important;
+  --h3-color: rgb(0, 0, 0) !important;
+  --h4-color: rgb(0, 0, 0) !important;
+  --h5-color: rgb(0, 0, 0) !important;
+  --h6-color: rgb(0, 0, 0) !important;
+  --heading-formatting: rgb(0, 0, 0) !important;
+  --highlight: rgb(0, 0, 0) !important;
+  --hr-color: rgb(0, 0, 0) !important;
+  --hue: 258 !important;
+  --icon-color: rgb(0, 0, 0) !important;
   --icon-color-active: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --icon-color-focused: rgb(0, 0, 0);
-  --icon-color-hover: rgb(0, 0, 0);
-  --inline-title-color: rgb(0, 0, 0);
-  --input-date-separator: rgb(0, 0, 0);
-  --input-placeholder-color: rgb(0, 0, 0);
+	) !important;
+  --icon-color-focused: rgb(0, 0, 0) !important;
+  --icon-color-hover: rgb(0, 0, 0) !important;
+  --inline-title-color: rgb(0, 0, 0) !important;
+  --input-date-separator: rgb(0, 0, 0) !important;
+  --input-placeholder-color: rgb(0, 0, 0) !important;
   --interactive-accent: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --interactive-hover: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
-  --interactive-normal: rgb(0, 0, 0);
-  --interactive-normal-accent: rgb(0, 0, 0);
-  --interactive-normal-hover: rgb(0, 0, 0);
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
+	) !important;
+  --interactive-normal: rgb(0, 0, 0) !important;
+  --interactive-normal-accent: rgb(0, 0, 0) !important;
+  --interactive-normal-hover: rgb(0, 0, 0) !important;
+  --light: rgb(0, 0, 0) !important;
+  --lightgray: rgb(0, 0, 0) !important;
   --link-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --link-color-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --link-external-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --link-external-color-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --link-unresolved-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --list-marker-color: rgb(0, 0, 0);
+	) !important;
+  --list-marker-color: rgb(0, 0, 0) !important;
   --list-marker-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --list-marker-color-hover: rgb(0, 0, 0);
-  --md-ref-palette-error-0: rgb(0, 0, 0);
-  --md-ref-palette-error-10: rgb(0, 0, 0);
-  --md-ref-palette-error-100: rgb(0, 0, 0);
-  --md-ref-palette-error-12: rgb(0, 0, 0);
-  --md-ref-palette-error-17: rgb(0, 0, 0);
-  --md-ref-palette-error-20: rgb(0, 0, 0);
-  --md-ref-palette-error-22: rgb(0, 0, 0);
-  --md-ref-palette-error-24: rgb(0, 0, 0);
-  --md-ref-palette-error-25: rgb(0, 0, 0);
-  --md-ref-palette-error-30: rgb(0, 0, 0);
-  --md-ref-palette-error-35: rgb(0, 0, 0);
-  --md-ref-palette-error-4: rgb(0, 0, 0);
-  --md-ref-palette-error-40: rgb(0, 0, 0);
-  --md-ref-palette-error-5: rgb(0, 0, 0);
-  --md-ref-palette-error-50: rgb(0, 0, 0);
-  --md-ref-palette-error-6: rgb(0, 0, 0);
-  --md-ref-palette-error-60: rgb(0, 0, 0);
-  --md-ref-palette-error-70: rgb(0, 0, 0);
-  --md-ref-palette-error-80: rgb(0, 0, 0);
-  --md-ref-palette-error-87: rgb(0, 0, 0);
-  --md-ref-palette-error-90: rgb(0, 0, 0);
-  --md-ref-palette-error-92: rgb(0, 0, 0);
-  --md-ref-palette-error-94: rgb(0, 0, 0);
-  --md-ref-palette-error-95: rgb(0, 0, 0);
-  --md-ref-palette-error-96: rgb(0, 0, 0);
-  --md-ref-palette-error-98: rgb(0, 0, 0);
-  --md-ref-palette-error-99: rgb(0, 0, 0);
-  --md-ref-palette-neutral-0: rgb(0, 0, 0);
-  --md-ref-palette-neutral-10: rgb(0, 0, 0);
-  --md-ref-palette-neutral-100: rgb(0, 0, 0);
-  --md-ref-palette-neutral-12: rgb(0, 0, 0);
-  --md-ref-palette-neutral-17: rgb(0, 0, 0);
-  --md-ref-palette-neutral-20: rgb(0, 0, 0);
-  --md-ref-palette-neutral-22: rgb(0, 0, 0);
-  --md-ref-palette-neutral-24: rgb(0, 0, 0);
-  --md-ref-palette-neutral-25: rgb(0, 0, 0);
-  --md-ref-palette-neutral-30: rgb(0, 0, 0);
-  --md-ref-palette-neutral-35: rgb(0, 0, 0);
-  --md-ref-palette-neutral-4: rgb(0, 0, 0);
-  --md-ref-palette-neutral-40: rgb(0, 0, 0);
-  --md-ref-palette-neutral-5: rgb(0, 0, 0);
-  --md-ref-palette-neutral-50: rgb(0, 0, 0);
-  --md-ref-palette-neutral-6: rgb(0, 0, 0);
-  --md-ref-palette-neutral-60: rgb(0, 0, 0);
-  --md-ref-palette-neutral-70: rgb(0, 0, 0);
-  --md-ref-palette-neutral-80: rgb(0, 0, 0);
-  --md-ref-palette-neutral-87: rgb(0, 0, 0);
-  --md-ref-palette-neutral-90: rgb(0, 0, 0);
-  --md-ref-palette-neutral-92: rgb(0, 0, 0);
-  --md-ref-palette-neutral-94: rgb(0, 0, 0);
-  --md-ref-palette-neutral-95: rgb(0, 0, 0);
-  --md-ref-palette-neutral-96: rgb(0, 0, 0);
-  --md-ref-palette-neutral-98: rgb(0, 0, 0);
-  --md-ref-palette-neutral-99: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-0: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-10: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-100: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-12: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-17: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-20: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-22: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-24: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-25: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-30: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-35: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-4: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-40: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-5: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-50: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-6: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-60: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-70: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-80: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-87: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-90: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-92: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-94: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-95: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-96: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-98: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-99: rgb(0, 0, 0);
+	) !important;
+  --list-marker-color-hover: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-99: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-99: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-99: rgb(0, 0, 0) !important;
   --md-ref-palette-primary-0: hsl(
 		258 calc(max(48%, 88%)) 0%
-	);
+	) !important;
   --md-ref-palette-primary-10: hsl(
 		258 calc(max(48%, 88%)) 10%
-	);
+	) !important;
   --md-ref-palette-primary-100: hsl(
 		258 calc(max(48%, 88%)) 100%
-	);
+	) !important;
   --md-ref-palette-primary-12: hsl(
 		258 calc(max(48%, 88%)) 12%
-	);
+	) !important;
   --md-ref-palette-primary-17: hsl(
 		258 calc(max(48%, 88%)) 17%
-	);
+	) !important;
   --md-ref-palette-primary-20: hsl(
 		258 calc(max(48%, 88%)) 20%
-	);
+	) !important;
   --md-ref-palette-primary-22: hsl(
 		258 calc(max(48%, 88%)) 22%
-	);
+	) !important;
   --md-ref-palette-primary-24: hsl(
 		258 calc(max(48%, 88%)) 24%
-	);
+	) !important;
   --md-ref-palette-primary-25: hsl(
 		258 calc(max(48%, 88%)) 25%
-	);
+	) !important;
   --md-ref-palette-primary-30: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
+	) !important;
   --md-ref-palette-primary-35: hsl(
 		258 calc(max(48%, 88%)) 35%
-	);
+	) !important;
   --md-ref-palette-primary-4: hsl(
 		258 calc(max(48%, 88%)) 4%
-	);
+	) !important;
   --md-ref-palette-primary-40: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --md-ref-palette-primary-5: hsl(
 		258 calc(max(48%, 88%)) 5%
-	);
+	) !important;
   --md-ref-palette-primary-50: hsl(
 		258 calc(max(48%, 88%)) 50%
-	);
+	) !important;
   --md-ref-palette-primary-6: hsl(
 		258 calc(max(48%, 88%)) 6%
-	);
+	) !important;
   --md-ref-palette-primary-60: hsl(
 		258 calc(max(48%, 88%)) 60%
-	);
+	) !important;
   --md-ref-palette-primary-70: hsl(
 		258 calc(max(48%, 88%)) 70%
-	);
+	) !important;
   --md-ref-palette-primary-80: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --md-ref-palette-primary-87: hsl(
 		258 calc(max(48%, 88%)) 87%
-	);
+	) !important;
   --md-ref-palette-primary-90: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
+	) !important;
   --md-ref-palette-primary-92: hsl(
 		258 calc(max(48%, 88%)) 92%
-	);
+	) !important;
   --md-ref-palette-primary-94: hsl(
 		258 calc(max(48%, 88%)) 94%
-	);
+	) !important;
   --md-ref-palette-primary-95: hsl(
 		258 calc(max(48%, 88%)) 95%
-	);
+	) !important;
   --md-ref-palette-primary-96: hsl(
 		258 calc(max(48%, 88%)) 96%
-	);
+	) !important;
   --md-ref-palette-primary-98: hsl(
 		258 calc(max(48%, 88%)) 98%
-	);
+	) !important;
   --md-ref-palette-primary-99: hsl(
 		258 calc(max(48%, 88%)) 99%
-	);
-  --md-ref-palette-secondary-0: rgb(0, 0, 0);
-  --md-ref-palette-secondary-10: rgb(0, 0, 0);
-  --md-ref-palette-secondary-100: rgb(0, 0, 0);
-  --md-ref-palette-secondary-12: rgb(0, 0, 0);
-  --md-ref-palette-secondary-17: rgb(0, 0, 0);
-  --md-ref-palette-secondary-20: rgb(0, 0, 0);
-  --md-ref-palette-secondary-22: rgb(0, 0, 0);
-  --md-ref-palette-secondary-24: rgb(0, 0, 0);
-  --md-ref-palette-secondary-25: rgb(0, 0, 0);
-  --md-ref-palette-secondary-30: rgb(0, 0, 0);
-  --md-ref-palette-secondary-35: rgb(0, 0, 0);
-  --md-ref-palette-secondary-4: rgb(0, 0, 0);
-  --md-ref-palette-secondary-40: rgb(0, 0, 0);
-  --md-ref-palette-secondary-5: rgb(0, 0, 0);
-  --md-ref-palette-secondary-50: rgb(0, 0, 0);
-  --md-ref-palette-secondary-6: rgb(0, 0, 0);
-  --md-ref-palette-secondary-60: rgb(0, 0, 0);
-  --md-ref-palette-secondary-70: rgb(0, 0, 0);
-  --md-ref-palette-secondary-80: rgb(0, 0, 0);
-  --md-ref-palette-secondary-87: rgb(0, 0, 0);
-  --md-ref-palette-secondary-90: rgb(0, 0, 0);
-  --md-ref-palette-secondary-92: rgb(0, 0, 0);
-  --md-ref-palette-secondary-94: rgb(0, 0, 0);
-  --md-ref-palette-secondary-95: rgb(0, 0, 0);
-  --md-ref-palette-secondary-96: rgb(0, 0, 0);
-  --md-ref-palette-secondary-98: rgb(0, 0, 0);
-  --md-ref-palette-secondary-99: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-0: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-10: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-100: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-12: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-17: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-20: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-22: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-24: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-25: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-30: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-35: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-4: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-40: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-5: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-50: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-6: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-60: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-70: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-80: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-87: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-90: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-92: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-94: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-95: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-96: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-98: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-99: rgb(0, 0, 0);
-  --md-sys-color-background: rgb(0, 0, 0);
-  --md-sys-color-error: rgb(0, 0, 0);
-  --md-sys-color-error-container: rgb(0, 0, 0);
-  --md-sys-color-inverse-on-surface: rgb(0, 0, 0);
+	) !important;
+  --md-ref-palette-secondary-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-99: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-99: rgb(0, 0, 0) !important;
+  --md-sys-color-background: rgb(0, 0, 0) !important;
+  --md-sys-color-error: rgb(0, 0, 0) !important;
+  --md-sys-color-error-container: rgb(0, 0, 0) !important;
+  --md-sys-color-inverse-on-surface: rgb(0, 0, 0) !important;
   --md-sys-color-inverse-primary: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --md-sys-color-inverse-surface: rgb(0, 0, 0);
-  --md-sys-color-on-background: rgb(0, 0, 0);
-  --md-sys-color-on-error: rgb(0, 0, 0);
-  --md-sys-color-on-error-container: rgb(0, 0, 0);
+	) !important;
+  --md-sys-color-inverse-surface: rgb(0, 0, 0) !important;
+  --md-sys-color-on-background: rgb(0, 0, 0) !important;
+  --md-sys-color-on-error: rgb(0, 0, 0) !important;
+  --md-sys-color-on-error-container: rgb(0, 0, 0) !important;
   --md-sys-color-on-primary: hsl(
 		258 calc(max(48%, 88%)) 20%
-	);
+	) !important;
   --md-sys-color-on-primary-container: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
+	) !important;
   --md-sys-color-on-primary-fixed: hsl(
 		258 calc(max(48%, 88%)) 10%
-	);
+	) !important;
   --md-sys-color-on-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
-  --md-sys-color-on-secondary: rgb(0, 0, 0);
-  --md-sys-color-on-secondary-container: rgb(0, 0, 0);
-  --md-sys-color-on-secondary-fixed: rgb(0, 0, 0);
-  --md-sys-color-on-secondary-fixed-dim: rgb(0, 0, 0);
-  --md-sys-color-on-surface: rgb(0, 0, 0);
-  --md-sys-color-on-surface-variant: rgb(0, 0, 0);
-  --md-sys-color-on-tertiary: rgb(0, 0, 0);
-  --md-sys-color-on-tertiary-container: rgb(0, 0, 0);
-  --md-sys-color-on-tertiary-fixed: rgb(0, 0, 0);
-  --md-sys-color-on-tertiary-fixed-dim: rgb(0, 0, 0);
-  --md-sys-color-outline: rgb(0, 0, 0);
-  --md-sys-color-outline-variant: rgb(0, 0, 0);
+	) !important;
+  --md-sys-color-on-secondary: rgb(0, 0, 0) !important;
+  --md-sys-color-on-secondary-container: rgb(0, 0, 0) !important;
+  --md-sys-color-on-secondary-fixed: rgb(0, 0, 0) !important;
+  --md-sys-color-on-secondary-fixed-dim: rgb(0, 0, 0) !important;
+  --md-sys-color-on-surface: rgb(0, 0, 0) !important;
+  --md-sys-color-on-surface-variant: rgb(0, 0, 0) !important;
+  --md-sys-color-on-tertiary: rgb(0, 0, 0) !important;
+  --md-sys-color-on-tertiary-container: rgb(0, 0, 0) !important;
+  --md-sys-color-on-tertiary-fixed: rgb(0, 0, 0) !important;
+  --md-sys-color-on-tertiary-fixed-dim: rgb(0, 0, 0) !important;
+  --md-sys-color-outline: rgb(0, 0, 0) !important;
+  --md-sys-color-outline-variant: rgb(0, 0, 0) !important;
   --md-sys-color-primary: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --md-sys-color-primary-container: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
+	) !important;
   --md-sys-color-primary-fixed: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
+	) !important;
   --md-sys-color-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --md-sys-color-scrim: rgb(0, 0, 0);
-  --md-sys-color-secondary: rgb(0, 0, 0);
-  --md-sys-color-secondary-container: rgb(0, 0, 0);
-  --md-sys-color-secondary-fixed: rgb(0, 0, 0);
-  --md-sys-color-secondary-fixed-dim: rgb(0, 0, 0);
-  --md-sys-color-shadow: rgb(0, 0, 0);
-  --md-sys-color-surface: rgb(0, 0, 0);
-  --md-sys-color-surface-bright: rgb(0, 0, 0);
-  --md-sys-color-surface-container: rgb(0, 0, 0);
-  --md-sys-color-surface-container-high: rgb(0, 0, 0);
-  --md-sys-color-surface-container-highest: rgb(0, 0, 0);
-  --md-sys-color-surface-container-low: rgb(0, 0, 0);
-  --md-sys-color-surface-container-lowest: rgb(0, 0, 0);
-  --md-sys-color-surface-dim: rgb(0, 0, 0);
-  --md-sys-color-surface-variant: rgb(0, 0, 0);
-  --md-sys-color-tertiary: rgb(0, 0, 0);
-  --md-sys-color-tertiary-container: rgb(0, 0, 0);
-  --md-sys-color-tertiary-fixed: rgb(0, 0, 0);
-  --md-sys-color-tertiary-fixed-dim: rgb(0, 0, 0);
-  --menu-background: rgb(0, 0, 0);
-  --menu-border-color: rgb(0, 0, 0);
-  --metadata-border-color: rgb(0, 0, 0);
-  --metadata-divider-color: rgb(0, 0, 0);
-  --metadata-input-background-active: rgb(0, 0, 0);
-  --metadata-input-text-color: rgb(0, 0, 0);
-  --metadata-label-background-active: rgb(0, 0, 0);
-  --metadata-label-text-color: rgb(0, 0, 0);
-  --metadata-label-text-color-hover: rgb(0, 0, 0);
-  --metadata-property-background-active: rgb(0, 0, 0);
+	) !important;
+  --md-sys-color-scrim: rgb(0, 0, 0) !important;
+  --md-sys-color-secondary: rgb(0, 0, 0) !important;
+  --md-sys-color-secondary-container: rgb(0, 0, 0) !important;
+  --md-sys-color-secondary-fixed: rgb(0, 0, 0) !important;
+  --md-sys-color-secondary-fixed-dim: rgb(0, 0, 0) !important;
+  --md-sys-color-shadow: rgb(0, 0, 0) !important;
+  --md-sys-color-surface: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-bright: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container-high: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container-highest: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container-low: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container-lowest: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-dim: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-variant: rgb(0, 0, 0) !important;
+  --md-sys-color-tertiary: rgb(0, 0, 0) !important;
+  --md-sys-color-tertiary-container: rgb(0, 0, 0) !important;
+  --md-sys-color-tertiary-fixed: rgb(0, 0, 0) !important;
+  --md-sys-color-tertiary-fixed-dim: rgb(0, 0, 0) !important;
+  --menu-background: rgb(0, 0, 0) !important;
+  --menu-border-color: rgb(0, 0, 0) !important;
+  --metadata-border-color: rgb(0, 0, 0) !important;
+  --metadata-divider-color: rgb(0, 0, 0) !important;
+  --metadata-input-background-active: rgb(0, 0, 0) !important;
+  --metadata-input-text-color: rgb(0, 0, 0) !important;
+  --metadata-label-background-active: rgb(0, 0, 0) !important;
+  --metadata-label-text-color: rgb(0, 0, 0) !important;
+  --metadata-label-text-color-hover: rgb(0, 0, 0) !important;
+  --metadata-property-background-active: rgb(0, 0, 0) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(0, 0, 0);
-  --modal-background: rgb(0, 0, 0);
-  --nav-collapse-icon-color: rgb(0, 0, 0);
-  --nav-collapse-icon-color-collapsed: rgb(0, 0, 0);
-  --nav-heading-color: rgb(0, 0, 0);
-  --nav-heading-color-collapsed: rgb(0, 0, 0);
-  --nav-heading-color-collapsed-hover: rgb(0, 0, 0);
-  --nav-heading-color-hover: rgb(0, 0, 0);
-  --nav-item-background-active: rgb(0, 0, 0);
-  --nav-item-background-hover: rgb(0, 0, 0);
-  --nav-item-color: rgb(0, 0, 0);
-  --nav-item-color-active: rgb(0, 0, 0);
+	) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
+  --modal-background: rgb(0, 0, 0) !important;
+  --nav-collapse-icon-color: rgb(0, 0, 0) !important;
+  --nav-collapse-icon-color-collapsed: rgb(0, 0, 0) !important;
+  --nav-heading-color: rgb(0, 0, 0) !important;
+  --nav-heading-color-collapsed: rgb(0, 0, 0) !important;
+  --nav-heading-color-collapsed-hover: rgb(0, 0, 0) !important;
+  --nav-heading-color-hover: rgb(0, 0, 0) !important;
+  --nav-item-background-active: rgb(0, 0, 0) !important;
+  --nav-item-background-hover: rgb(0, 0, 0) !important;
+  --nav-item-color: rgb(0, 0, 0) !important;
+  --nav-item-color-active: rgb(0, 0, 0) !important;
   --nav-item-color-highlighted: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --nav-item-color-hover: rgb(0, 0, 0);
-  --nav-item-color-selected: rgb(0, 0, 0);
-  --nav-tag-color: rgb(0, 0, 0);
-  --nav-tag-color-active: rgb(0, 0, 0);
-  --nav-tag-color-hover: rgb(0, 0, 0);
-  --neutral-hue: 258;
-  --neutral-saturation: 4%;
-  --neutral-variant-hue: 258;
-  --neutral-variant-saturation: 8%;
-  --pdf-background: rgb(0, 0, 0);
-  --pdf-page-background: rgb(0, 0, 0);
-  --pdf-shadow: 0 0 0 1px rgb(0, 0, 0);
-  --pdf-sidebar-background: rgb(0, 0, 0);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(0, 0, 0);
-  --pill-border-color: rgb(0, 0, 0);
-  --pill-border-color-hover: rgb(0, 0, 0);
-  --pill-color: rgb(0, 0, 0);
-  --pill-color-hover: rgb(0, 0, 0);
-  --pill-color-remove: rgb(0, 0, 0);
+	) !important;
+  --nav-item-color-hover: rgb(0, 0, 0) !important;
+  --nav-item-color-selected: rgb(0, 0, 0) !important;
+  --nav-tag-color: rgb(0, 0, 0) !important;
+  --nav-tag-color-active: rgb(0, 0, 0) !important;
+  --nav-tag-color-hover: rgb(0, 0, 0) !important;
+  --neutral-hue: 258 !important;
+  --neutral-saturation: 4% !important;
+  --neutral-variant-hue: 258 !important;
+  --neutral-variant-saturation: 8% !important;
+  --pdf-background: rgb(0, 0, 0) !important;
+  --pdf-page-background: rgb(0, 0, 0) !important;
+  --pdf-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
+  --pdf-sidebar-background: rgb(0, 0, 0) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
+  --pill-border-color: rgb(0, 0, 0) !important;
+  --pill-border-color-hover: rgb(0, 0, 0) !important;
+  --pill-color: rgb(0, 0, 0) !important;
+  --pill-color-hover: rgb(0, 0, 0) !important;
+  --pill-color-remove: rgb(0, 0, 0) !important;
   --pill-color-remove-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --primary-hue: 258;
-  --primary-saturation: calc(max(48%, 88%));
-  --prompt-background: rgb(0, 0, 0);
-  --raised-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent));
-  --ribbon-background: rgb(0, 0, 0);
-  --ribbon-background-collapsed: rgb(0, 0, 0);
-  --saturation: 88%;
-  --scrollbar-active-thumb-bg: rgb(0, 0, 0);
-  --scrollbar-bg: rgb(0, 0, 0);
-  --scrollbar-thumb-bg: rgb(0, 0, 0);
-  --search-clear-button-color: rgb(0, 0, 0);
-  --search-icon-color: rgb(0, 0, 0);
-  --search-result-background: rgb(0, 0, 0);
-  --secondary: var(--text-accent);
-  --secondary-hue: 258;
-  --secondary-saturation: 16%;
-  --setting-group-heading-color: rgb(0, 0, 0);
-  --setting-items-background: rgb(0, 0, 0);
-  --setting-items-border-color: rgb(0, 0, 0);
-  --slider-thumb-border-color: rgb(0, 0, 0);
-  --slider-thumb-radius: 36px;
-  --slider-track-background: rgb(0, 0, 0);
+	) !important;
+  --primary-hue: 258 !important;
+  --primary-saturation: calc(max(48%, 88%)) !important;
+  --prompt-background: rgb(0, 0, 0) !important;
+  --raised-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
+  --ribbon-background: rgb(0, 0, 0) !important;
+  --ribbon-background-collapsed: rgb(0, 0, 0) !important;
+  --saturation: 88% !important;
+  --scrollbar-active-thumb-bg: rgb(0, 0, 0) !important;
+  --scrollbar-bg: rgb(0, 0, 0) !important;
+  --scrollbar-thumb-bg: rgb(0, 0, 0) !important;
+  --search-clear-button-color: rgb(0, 0, 0) !important;
+  --search-icon-color: rgb(0, 0, 0) !important;
+  --search-result-background: rgb(0, 0, 0) !important;
+  --secondary: hsl(
+		258 calc(max(48%, 88%)) 80%
+	) !important;
+  --secondary-hue: 258 !important;
+  --secondary-saturation: 16% !important;
+  --setting-group-heading-color: rgb(0, 0, 0) !important;
+  --setting-items-background: rgb(0, 0, 0) !important;
+  --setting-items-border-color: rgb(0, 0, 0) !important;
+  --slider-thumb-border-color: rgb(0, 0, 0) !important;
+  --slider-thumb-radius: 36px !important;
+  --slider-track-background: rgb(0, 0, 0) !important;
   --status-bar-background: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
-  --status-bar-border-color: rgb(0, 0, 0);
+	) !important;
+  --status-bar-border-color: rgb(0, 0, 0) !important;
   --status-bar-text-color: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
-  --suggestion-background: rgb(0, 0, 0);
-  --tab-background-active: rgb(0, 0, 0);
-  --tab-container-background: rgb(0, 0, 0);
-  --tab-divider-color: rgb(0, 0, 0);
-  --tab-outline-color: rgb(0, 0, 0);
-  --tab-switcher-background: rgb(0, 0, 0);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 0, 0), transparent);
-  --tab-text-color: rgb(0, 0, 0);
-  --tab-text-color-active: rgb(0, 0, 0);
-  --tab-text-color-focused: rgb(0, 0, 0);
-  --tab-text-color-focused-active: rgb(0, 0, 0);
-  --tab-text-color-focused-active-current: rgb(0, 0, 0);
+	) !important;
+  --suggestion-background: rgb(0, 0, 0) !important;
+  --tab-background-active: rgb(0, 0, 0) !important;
+  --tab-container-background: rgb(0, 0, 0) !important;
+  --tab-divider-color: rgb(0, 0, 0) !important;
+  --tab-outline-color: rgb(0, 0, 0) !important;
+  --tab-switcher-background: rgb(0, 0, 0) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 0, 0), transparent) !important;
+  --tab-text-color: rgb(0, 0, 0) !important;
+  --tab-text-color-active: rgb(0, 0, 0) !important;
+  --tab-text-color-focused: rgb(0, 0, 0) !important;
+  --tab-text-color-focused-active: rgb(0, 0, 0) !important;
+  --tab-text-color-focused-active-current: rgb(0, 0, 0) !important;
   --tab-text-color-focused-highlighted: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --table-add-button-border-color: rgb(0, 0, 0);
-  --table-border-color: rgb(0, 0, 0);
+	) !important;
+  --table-add-button-border-color: rgb(0, 0, 0) !important;
+  --table-border-color: rgb(0, 0, 0) !important;
   --table-drag-handle-background-active: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --table-drag-handle-color: rgb(0, 0, 0);
+	) !important;
+  --table-drag-handle-color: rgb(0, 0, 0) !important;
   --table-drag-handle-color-active: hsl(
 		258 calc(max(48%, 88%)) 20%
-	);
-  --table-header-border-color: rgb(0, 0, 0);
-  --table-header-color: rgb(0, 0, 0);
+	) !important;
+  --table-header-border-color: rgb(0, 0, 0) !important;
+  --table-header-color: rgb(0, 0, 0) !important;
   --table-selection-border-color: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --tag-background: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
+	) !important;
   --tag-background-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --tag-color: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
+	) !important;
   --tag-color-hover: hsl(
 		258 calc(max(48%, 88%)) 20%
-	);
-  --tertiary: var(--text-accent-hover);
-  --tertiary-hue: 318;
-  --tertiary-saturation: 24%;
+	) !important;
+  --tertiary: hsl(
+		258 calc(max(48%, 88%)) 80%
+	) !important;
+  --tertiary-hue: 318 !important;
+  --tertiary-saturation: 24% !important;
   --text-accent: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --text-accent-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --text-faint: rgb(0, 0, 0);
-  --text-highlight-bg: rgb(0, 0, 0);
-  --text-muted: rgb(0, 0, 0);
-  --text-normal: rgb(0, 0, 0);
+	) !important;
+  --text-faint: rgb(0, 0, 0) !important;
+  --text-highlight-bg: rgb(0, 0, 0) !important;
+  --text-muted: rgb(0, 0, 0) !important;
+  --text-normal: rgb(0, 0, 0) !important;
   --text-on-accent: hsl(
 		258 calc(max(48%, 88%)) 20%
-	);
+	) !important;
   --text-on-accent-inverted: hsl(
 		258 calc(max(48%, 88%)) 20%
-	);
-  --text-selection: rgb(0, 0, 0);
-  --textHighlight: var(--text-highlight-bg);
-  --titlebar-background: rgb(0, 0, 0);
-  --titlebar-background-focused: rgb(0, 0, 0);
-  --titlebar-border-color: rgb(0, 0, 0);
-  --titlebar-text-color: rgb(0, 0, 0);
-  --titlebar-text-color-focused: rgb(0, 0, 0);
-  --vault-name-color: rgb(0, 0, 0);
-  --vault-profile-color: rgb(0, 0, 0);
-  --vault-profile-color-hover: rgb(0, 0, 0);
-  --quartz-icon-color: currentColor;
+	) !important;
+  --text-selection: rgb(0, 0, 0) !important;
+  --textHighlight: rgb(0, 0, 0) !important;
+  --titlebar-background: rgb(0, 0, 0) !important;
+  --titlebar-background-focused: rgb(0, 0, 0) !important;
+  --titlebar-border-color: rgb(0, 0, 0) !important;
+  --titlebar-text-color: rgb(0, 0, 0) !important;
+  --titlebar-text-color-focused: rgb(0, 0, 0) !important;
+  --vault-name-color: rgb(0, 0, 0) !important;
+  --vault-profile-color: rgb(0, 0, 0) !important;
+  --vault-profile-color-hover: rgb(0, 0, 0) !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1296,580 +1305,589 @@ body sup {
     base: `:root:root {
   --background-modifier-active-hover: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
-  --background-modifier-border: rgb(0, 0, 0);
+	) !important;
+  --background-modifier-border: rgb(0, 0, 0) !important;
   --background-modifier-border-focus: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --background-modifier-border-hover: rgb(0, 0, 0);
-  --background-modifier-error: rgb(0, 0, 0);
-  --background-modifier-hover: rgb(0, 0, 0);
-  --background-primary: rgb(0, 0, 0);
-  --background-primary-alt: rgb(0, 0, 0);
-  --background-secondary: rgb(0, 0, 0);
-  --background-secondary-alt: rgb(0, 0, 0);
-  --bases-cards-background: rgb(0, 0, 0);
-  --bases-cards-cover-background: rgb(0, 0, 0);
-  --bases-cards-shadow: 0 0 0 1px rgb(0, 0, 0);
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(0, 0, 0);
-  --bases-embed-border-color: rgb(0, 0, 0);
-  --bases-group-heading-property-color: rgb(0, 0, 0);
-  --bases-table-border-color: rgb(0, 0, 0);
-  --bases-table-cell-background-active: rgb(0, 0, 0);
-  --bases-table-cell-background-disabled: rgb(0, 0, 0);
+	) !important;
+  --background-modifier-border-hover: rgb(0, 0, 0) !important;
+  --background-modifier-error: rgb(0, 0, 0) !important;
+  --background-modifier-hover: rgb(0, 0, 0) !important;
+  --background-primary: rgb(0, 0, 0) !important;
+  --background-primary-alt: rgb(0, 0, 0) !important;
+  --background-secondary: rgb(0, 0, 0) !important;
+  --background-secondary-alt: rgb(0, 0, 0) !important;
+  --bases-cards-background: rgb(0, 0, 0) !important;
+  --bases-cards-cover-background: rgb(0, 0, 0) !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
+  --bases-embed-border-color: rgb(0, 0, 0) !important;
+  --bases-group-heading-property-color: rgb(0, 0, 0) !important;
+  --bases-table-border-color: rgb(0, 0, 0) !important;
+  --bases-table-cell-background-active: rgb(0, 0, 0) !important;
+  --bases-table-cell-background-disabled: rgb(0, 0, 0) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --bases-table-group-background: rgb(0, 0, 0);
-  --bases-table-header-background: rgb(0, 0, 0);
-  --bases-table-header-background-hover: rgb(0, 0, 0);
-  --bases-table-header-color: rgb(0, 0, 0);
-  --bases-table-summary-background: rgb(0, 0, 0);
-  --bases-table-summary-background-hover: rgb(0, 0, 0);
-  --blockquote-background-color: rgb(0, 0, 0);
+	) !important;
+  --bases-table-group-background: rgb(0, 0, 0) !important;
+  --bases-table-header-background: rgb(0, 0, 0) !important;
+  --bases-table-header-background-hover: rgb(0, 0, 0) !important;
+  --bases-table-header-color: rgb(0, 0, 0) !important;
+  --bases-table-summary-background: rgb(0, 0, 0) !important;
+  --bases-table-summary-background-hover: rgb(0, 0, 0) !important;
+  --blockquote-background-color: rgb(0, 0, 0) !important;
   --blockquote-border-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --blockquote-color: rgb(0, 0, 0);
-  --blur-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent));
-  --button-radius: 20px;
-  --canvas-background: rgb(0, 0, 0);
-  --canvas-card-label-color: rgb(0, 0, 0);
-  --canvas-dot-pattern: rgb(0, 0, 0);
-  --caret-color: rgb(0, 0, 0);
-  --checkbox-border-color: rgb(0, 0, 0);
-  --checkbox-border-color-hover: rgb(0, 0, 0);
+	) !important;
+  --blockquote-color: rgb(0, 0, 0) !important;
+  --blur-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
+  --button-radius: 20px !important;
+  --canvas-background: rgb(0, 0, 0) !important;
+  --canvas-card-label-color: rgb(0, 0, 0) !important;
+  --canvas-dot-pattern: rgb(0, 0, 0) !important;
+  --caret-color: rgb(0, 0, 0) !important;
+  --checkbox-border-color: rgb(0, 0, 0) !important;
+  --checkbox-border-color-hover: rgb(0, 0, 0) !important;
   --checkbox-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --checkbox-marker-color: rgb(0, 0, 0);
-  --checklist-done-color: rgb(0, 0, 0);
-  --code-background: rgb(0, 0, 0);
-  --code-border-color: rgb(0, 0, 0);
-  --code-bracket-background: rgb(0, 0, 0);
-  --code-comment: rgb(0, 0, 0);
-  --code-normal: rgb(0, 0, 0);
-  --code-punctuation: rgb(0, 0, 0);
-  --collapse-icon-color: rgb(0, 0, 0);
+	) !important;
+  --checkbox-marker-color: rgb(0, 0, 0) !important;
+  --checklist-done-color: rgb(0, 0, 0) !important;
+  --code-background: rgb(0, 0, 0) !important;
+  --code-border-color: rgb(0, 0, 0) !important;
+  --code-bracket-background: rgb(0, 0, 0) !important;
+  --code-comment: rgb(0, 0, 0) !important;
+  --code-normal: rgb(0, 0, 0) !important;
+  --code-punctuation: rgb(0, 0, 0) !important;
+  --collapse-icon-color: rgb(0, 0, 0) !important;
   --collapse-icon-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --dark: var(--text-normal);
-  --darkgray: var(--text-normal);
-  --divider-color: rgb(0, 0, 0);
-  --divider-color-hover: rgb(0, 0, 0);
-  --dropdown-background: rgb(0, 0, 0);
+	) !important;
+  --dark: rgb(0, 0, 0) !important;
+  --darkgray: rgb(0, 0, 0) !important;
+  --divider-color: rgb(0, 0, 0) !important;
+  --divider-color-hover: rgb(0, 0, 0) !important;
+  --dropdown-background: rgb(0, 0, 0) !important;
   --dropdown-background-hover: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
-  --embed-background: rgb(0, 0, 0);
-  --embed-block-shadow-hover: 0 0 0 1px rgb(0, 0, 0), inset 0 0 0 1px rgb(0, 0, 0);
+	) !important;
+  --embed-background: rgb(0, 0, 0) !important;
+  --embed-block-shadow-hover: 0 0 0 1px rgb(0, 0, 0), inset 0 0 0 1px rgb(0, 0, 0) !important;
   --embed-border-start: 2px solid hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --error-hue: 0;
-  --error-saturation: 84%;
-  --file-header-background: rgb(0, 0, 0);
-  --file-header-background-focused: rgb(0, 0, 0);
-  --flair-background: rgb(0, 0, 0);
-  --flair-color: rgb(0, 0, 0);
-  --footnote-divider-color: rgb(0, 0, 0);
-  --footnote-id-color: rgb(0, 0, 0);
-  --footnote-id-color-no-occurrences: rgb(0, 0, 0);
-  --footnote-input-background-active: rgb(0, 0, 0);
-  --graph-line: rgb(0, 0, 0);
-  --graph-node: rgb(0, 0, 0);
-  --graph-node-attachment: rgb(0, 0, 0);
-  --graph-node-focused: rgb(0, 0, 0);
+	) !important;
+  --error-hue: 0 !important;
+  --error-saturation: 84% !important;
+  --file-header-background: rgb(0, 0, 0) !important;
+  --file-header-background-focused: rgb(0, 0, 0) !important;
+  --flair-background: rgb(0, 0, 0) !important;
+  --flair-color: rgb(0, 0, 0) !important;
+  --footnote-divider-color: rgb(0, 0, 0) !important;
+  --footnote-id-color: rgb(0, 0, 0) !important;
+  --footnote-id-color-no-occurrences: rgb(0, 0, 0) !important;
+  --footnote-input-background-active: rgb(0, 0, 0) !important;
+  --graph-line: rgb(0, 0, 0) !important;
+  --graph-node: rgb(0, 0, 0) !important;
+  --graph-node-attachment: rgb(0, 0, 0) !important;
+  --graph-node-focused: rgb(0, 0, 0) !important;
   --graph-node-tag: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
-  --graph-node-unresolved: rgb(0, 0, 0);
-  --graph-text: rgb(0, 0, 0);
-  --gray: var(--text-muted);
-  --h1-color: rgb(0, 0, 0);
-  --h2-color: rgb(0, 0, 0);
-  --h3-color: rgb(0, 0, 0);
-  --h4-color: rgb(0, 0, 0);
-  --h5-color: rgb(0, 0, 0);
-  --h6-color: rgb(0, 0, 0);
-  --heading-formatting: rgb(0, 0, 0);
-  --highlight: var(--text-highlight-bg);
-  --hr-color: rgb(0, 0, 0);
-  --hue: 258;
-  --icon-color: rgb(0, 0, 0);
+	) !important;
+  --graph-node-unresolved: rgb(0, 0, 0) !important;
+  --graph-text: rgb(0, 0, 0) !important;
+  --gray: rgb(0, 0, 0) !important;
+  --h1-color: rgb(0, 0, 0) !important;
+  --h2-color: rgb(0, 0, 0) !important;
+  --h3-color: rgb(0, 0, 0) !important;
+  --h4-color: rgb(0, 0, 0) !important;
+  --h5-color: rgb(0, 0, 0) !important;
+  --h6-color: rgb(0, 0, 0) !important;
+  --heading-formatting: rgb(0, 0, 0) !important;
+  --highlight: rgb(0, 0, 0) !important;
+  --hr-color: rgb(0, 0, 0) !important;
+  --hue: 258 !important;
+  --icon-color: rgb(0, 0, 0) !important;
   --icon-color-active: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --icon-color-focused: rgb(0, 0, 0);
-  --icon-color-hover: rgb(0, 0, 0);
-  --inline-title-color: rgb(0, 0, 0);
-  --input-date-separator: rgb(0, 0, 0);
-  --input-placeholder-color: rgb(0, 0, 0);
+	) !important;
+  --icon-color-focused: rgb(0, 0, 0) !important;
+  --icon-color-hover: rgb(0, 0, 0) !important;
+  --inline-title-color: rgb(0, 0, 0) !important;
+  --input-date-separator: rgb(0, 0, 0) !important;
+  --input-placeholder-color: rgb(0, 0, 0) !important;
   --interactive-accent: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --interactive-hover: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
-  --interactive-normal: rgb(0, 0, 0);
-  --interactive-normal-accent: rgb(0, 0, 0);
-  --interactive-normal-hover: rgb(0, 0, 0);
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
+	) !important;
+  --interactive-normal: rgb(0, 0, 0) !important;
+  --interactive-normal-accent: rgb(0, 0, 0) !important;
+  --interactive-normal-hover: rgb(0, 0, 0) !important;
+  --light: rgb(0, 0, 0) !important;
+  --lightgray: rgb(0, 0, 0) !important;
   --link-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --link-color-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --link-external-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --link-external-color-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --link-unresolved-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --list-marker-color: rgb(0, 0, 0);
+	) !important;
+  --list-marker-color: rgb(0, 0, 0) !important;
   --list-marker-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --list-marker-color-hover: rgb(0, 0, 0);
-  --md-ref-palette-error-0: rgb(0, 0, 0);
-  --md-ref-palette-error-10: rgb(0, 0, 0);
-  --md-ref-palette-error-100: rgb(0, 0, 0);
-  --md-ref-palette-error-12: rgb(0, 0, 0);
-  --md-ref-palette-error-17: rgb(0, 0, 0);
-  --md-ref-palette-error-20: rgb(0, 0, 0);
-  --md-ref-palette-error-22: rgb(0, 0, 0);
-  --md-ref-palette-error-24: rgb(0, 0, 0);
-  --md-ref-palette-error-25: rgb(0, 0, 0);
-  --md-ref-palette-error-30: rgb(0, 0, 0);
-  --md-ref-palette-error-35: rgb(0, 0, 0);
-  --md-ref-palette-error-4: rgb(0, 0, 0);
-  --md-ref-palette-error-40: rgb(0, 0, 0);
-  --md-ref-palette-error-5: rgb(0, 0, 0);
-  --md-ref-palette-error-50: rgb(0, 0, 0);
-  --md-ref-palette-error-6: rgb(0, 0, 0);
-  --md-ref-palette-error-60: rgb(0, 0, 0);
-  --md-ref-palette-error-70: rgb(0, 0, 0);
-  --md-ref-palette-error-80: rgb(0, 0, 0);
-  --md-ref-palette-error-87: rgb(0, 0, 0);
-  --md-ref-palette-error-90: rgb(0, 0, 0);
-  --md-ref-palette-error-92: rgb(0, 0, 0);
-  --md-ref-palette-error-94: rgb(0, 0, 0);
-  --md-ref-palette-error-95: rgb(0, 0, 0);
-  --md-ref-palette-error-96: rgb(0, 0, 0);
-  --md-ref-palette-error-98: rgb(0, 0, 0);
-  --md-ref-palette-error-99: rgb(0, 0, 0);
-  --md-ref-palette-neutral-0: rgb(0, 0, 0);
-  --md-ref-palette-neutral-10: rgb(0, 0, 0);
-  --md-ref-palette-neutral-100: rgb(0, 0, 0);
-  --md-ref-palette-neutral-12: rgb(0, 0, 0);
-  --md-ref-palette-neutral-17: rgb(0, 0, 0);
-  --md-ref-palette-neutral-20: rgb(0, 0, 0);
-  --md-ref-palette-neutral-22: rgb(0, 0, 0);
-  --md-ref-palette-neutral-24: rgb(0, 0, 0);
-  --md-ref-palette-neutral-25: rgb(0, 0, 0);
-  --md-ref-palette-neutral-30: rgb(0, 0, 0);
-  --md-ref-palette-neutral-35: rgb(0, 0, 0);
-  --md-ref-palette-neutral-4: rgb(0, 0, 0);
-  --md-ref-palette-neutral-40: rgb(0, 0, 0);
-  --md-ref-palette-neutral-5: rgb(0, 0, 0);
-  --md-ref-palette-neutral-50: rgb(0, 0, 0);
-  --md-ref-palette-neutral-6: rgb(0, 0, 0);
-  --md-ref-palette-neutral-60: rgb(0, 0, 0);
-  --md-ref-palette-neutral-70: rgb(0, 0, 0);
-  --md-ref-palette-neutral-80: rgb(0, 0, 0);
-  --md-ref-palette-neutral-87: rgb(0, 0, 0);
-  --md-ref-palette-neutral-90: rgb(0, 0, 0);
-  --md-ref-palette-neutral-92: rgb(0, 0, 0);
-  --md-ref-palette-neutral-94: rgb(0, 0, 0);
-  --md-ref-palette-neutral-95: rgb(0, 0, 0);
-  --md-ref-palette-neutral-96: rgb(0, 0, 0);
-  --md-ref-palette-neutral-98: rgb(0, 0, 0);
-  --md-ref-palette-neutral-99: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-0: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-10: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-100: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-12: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-17: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-20: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-22: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-24: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-25: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-30: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-35: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-4: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-40: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-5: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-50: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-6: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-60: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-70: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-80: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-87: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-90: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-92: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-94: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-95: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-96: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-98: rgb(0, 0, 0);
-  --md-ref-palette-neutral-variant-99: rgb(0, 0, 0);
+	) !important;
+  --list-marker-color-hover: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-error-99: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-99: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-neutral-variant-99: rgb(0, 0, 0) !important;
   --md-ref-palette-primary-0: hsl(
 		258 calc(max(48%, 88%)) 0%
-	);
+	) !important;
   --md-ref-palette-primary-10: hsl(
 		258 calc(max(48%, 88%)) 10%
-	);
+	) !important;
   --md-ref-palette-primary-100: hsl(
 		258 calc(max(48%, 88%)) 100%
-	);
+	) !important;
   --md-ref-palette-primary-12: hsl(
 		258 calc(max(48%, 88%)) 12%
-	);
+	) !important;
   --md-ref-palette-primary-17: hsl(
 		258 calc(max(48%, 88%)) 17%
-	);
+	) !important;
   --md-ref-palette-primary-20: hsl(
 		258 calc(max(48%, 88%)) 20%
-	);
+	) !important;
   --md-ref-palette-primary-22: hsl(
 		258 calc(max(48%, 88%)) 22%
-	);
+	) !important;
   --md-ref-palette-primary-24: hsl(
 		258 calc(max(48%, 88%)) 24%
-	);
+	) !important;
   --md-ref-palette-primary-25: hsl(
 		258 calc(max(48%, 88%)) 25%
-	);
+	) !important;
   --md-ref-palette-primary-30: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
+	) !important;
   --md-ref-palette-primary-35: hsl(
 		258 calc(max(48%, 88%)) 35%
-	);
+	) !important;
   --md-ref-palette-primary-4: hsl(
 		258 calc(max(48%, 88%)) 4%
-	);
+	) !important;
   --md-ref-palette-primary-40: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --md-ref-palette-primary-5: hsl(
 		258 calc(max(48%, 88%)) 5%
-	);
+	) !important;
   --md-ref-palette-primary-50: hsl(
 		258 calc(max(48%, 88%)) 50%
-	);
+	) !important;
   --md-ref-palette-primary-6: hsl(
 		258 calc(max(48%, 88%)) 6%
-	);
+	) !important;
   --md-ref-palette-primary-60: hsl(
 		258 calc(max(48%, 88%)) 60%
-	);
+	) !important;
   --md-ref-palette-primary-70: hsl(
 		258 calc(max(48%, 88%)) 70%
-	);
+	) !important;
   --md-ref-palette-primary-80: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
+	) !important;
   --md-ref-palette-primary-87: hsl(
 		258 calc(max(48%, 88%)) 87%
-	);
+	) !important;
   --md-ref-palette-primary-90: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
+	) !important;
   --md-ref-palette-primary-92: hsl(
 		258 calc(max(48%, 88%)) 92%
-	);
+	) !important;
   --md-ref-palette-primary-94: hsl(
 		258 calc(max(48%, 88%)) 94%
-	);
+	) !important;
   --md-ref-palette-primary-95: hsl(
 		258 calc(max(48%, 88%)) 95%
-	);
+	) !important;
   --md-ref-palette-primary-96: hsl(
 		258 calc(max(48%, 88%)) 96%
-	);
+	) !important;
   --md-ref-palette-primary-98: hsl(
 		258 calc(max(48%, 88%)) 98%
-	);
+	) !important;
   --md-ref-palette-primary-99: hsl(
 		258 calc(max(48%, 88%)) 99%
-	);
-  --md-ref-palette-secondary-0: rgb(0, 0, 0);
-  --md-ref-palette-secondary-10: rgb(0, 0, 0);
-  --md-ref-palette-secondary-100: rgb(0, 0, 0);
-  --md-ref-palette-secondary-12: rgb(0, 0, 0);
-  --md-ref-palette-secondary-17: rgb(0, 0, 0);
-  --md-ref-palette-secondary-20: rgb(0, 0, 0);
-  --md-ref-palette-secondary-22: rgb(0, 0, 0);
-  --md-ref-palette-secondary-24: rgb(0, 0, 0);
-  --md-ref-palette-secondary-25: rgb(0, 0, 0);
-  --md-ref-palette-secondary-30: rgb(0, 0, 0);
-  --md-ref-palette-secondary-35: rgb(0, 0, 0);
-  --md-ref-palette-secondary-4: rgb(0, 0, 0);
-  --md-ref-palette-secondary-40: rgb(0, 0, 0);
-  --md-ref-palette-secondary-5: rgb(0, 0, 0);
-  --md-ref-palette-secondary-50: rgb(0, 0, 0);
-  --md-ref-palette-secondary-6: rgb(0, 0, 0);
-  --md-ref-palette-secondary-60: rgb(0, 0, 0);
-  --md-ref-palette-secondary-70: rgb(0, 0, 0);
-  --md-ref-palette-secondary-80: rgb(0, 0, 0);
-  --md-ref-palette-secondary-87: rgb(0, 0, 0);
-  --md-ref-palette-secondary-90: rgb(0, 0, 0);
-  --md-ref-palette-secondary-92: rgb(0, 0, 0);
-  --md-ref-palette-secondary-94: rgb(0, 0, 0);
-  --md-ref-palette-secondary-95: rgb(0, 0, 0);
-  --md-ref-palette-secondary-96: rgb(0, 0, 0);
-  --md-ref-palette-secondary-98: rgb(0, 0, 0);
-  --md-ref-palette-secondary-99: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-0: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-10: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-100: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-12: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-17: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-20: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-22: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-24: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-25: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-30: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-35: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-4: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-40: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-5: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-50: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-6: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-60: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-70: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-80: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-87: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-90: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-92: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-94: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-95: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-96: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-98: rgb(0, 0, 0);
-  --md-ref-palette-tertiary-99: rgb(0, 0, 0);
-  --md-sys-color-background: rgb(0, 0, 0);
-  --md-sys-color-error: rgb(0, 0, 0);
-  --md-sys-color-error-container: rgb(0, 0, 0);
-  --md-sys-color-inverse-on-surface: rgb(0, 0, 0);
+	) !important;
+  --md-ref-palette-secondary-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-99: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-0: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-10: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-100: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-12: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-17: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-20: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-22: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-24: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-25: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-30: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-35: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-4: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-40: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-5: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-50: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-6: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-60: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-70: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-80: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-87: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-90: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-92: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-94: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-95: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-96: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-98: rgb(0, 0, 0) !important;
+  --md-ref-palette-tertiary-99: rgb(0, 0, 0) !important;
+  --md-sys-color-background: rgb(0, 0, 0) !important;
+  --md-sys-color-error: rgb(0, 0, 0) !important;
+  --md-sys-color-error-container: rgb(0, 0, 0) !important;
+  --md-sys-color-inverse-on-surface: rgb(0, 0, 0) !important;
   --md-sys-color-inverse-primary: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --md-sys-color-inverse-surface: rgb(0, 0, 0);
-  --md-sys-color-on-background: rgb(0, 0, 0);
-  --md-sys-color-on-error: rgb(0, 0, 0);
-  --md-sys-color-on-error-container: rgb(0, 0, 0);
+	) !important;
+  --md-sys-color-inverse-surface: rgb(0, 0, 0) !important;
+  --md-sys-color-on-background: rgb(0, 0, 0) !important;
+  --md-sys-color-on-error: rgb(0, 0, 0) !important;
+  --md-sys-color-on-error-container: rgb(0, 0, 0) !important;
   --md-sys-color-on-primary: hsl(
 		258 calc(max(48%, 88%)) 100%
-	);
+	) !important;
   --md-sys-color-on-primary-container: hsl(
 		258 calc(max(48%, 88%)) 10%
-	);
+	) !important;
   --md-sys-color-on-primary-fixed: hsl(
 		258 calc(max(48%, 88%)) 10%
-	);
+	) !important;
   --md-sys-color-on-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 30%
-	);
-  --md-sys-color-on-secondary: rgb(0, 0, 0);
-  --md-sys-color-on-secondary-container: rgb(0, 0, 0);
-  --md-sys-color-on-secondary-fixed: rgb(0, 0, 0);
-  --md-sys-color-on-secondary-fixed-dim: rgb(0, 0, 0);
-  --md-sys-color-on-surface: rgb(0, 0, 0);
-  --md-sys-color-on-surface-variant: rgb(0, 0, 0);
-  --md-sys-color-on-tertiary: rgb(0, 0, 0);
-  --md-sys-color-on-tertiary-container: rgb(0, 0, 0);
-  --md-sys-color-on-tertiary-fixed: rgb(0, 0, 0);
-  --md-sys-color-on-tertiary-fixed-dim: rgb(0, 0, 0);
-  --md-sys-color-outline: rgb(0, 0, 0);
-  --md-sys-color-outline-variant: rgb(0, 0, 0);
+	) !important;
+  --md-sys-color-on-secondary: rgb(0, 0, 0) !important;
+  --md-sys-color-on-secondary-container: rgb(0, 0, 0) !important;
+  --md-sys-color-on-secondary-fixed: rgb(0, 0, 0) !important;
+  --md-sys-color-on-secondary-fixed-dim: rgb(0, 0, 0) !important;
+  --md-sys-color-on-surface: rgb(0, 0, 0) !important;
+  --md-sys-color-on-surface-variant: rgb(0, 0, 0) !important;
+  --md-sys-color-on-tertiary: rgb(0, 0, 0) !important;
+  --md-sys-color-on-tertiary-container: rgb(0, 0, 0) !important;
+  --md-sys-color-on-tertiary-fixed: rgb(0, 0, 0) !important;
+  --md-sys-color-on-tertiary-fixed-dim: rgb(0, 0, 0) !important;
+  --md-sys-color-outline: rgb(0, 0, 0) !important;
+  --md-sys-color-outline-variant: rgb(0, 0, 0) !important;
   --md-sys-color-primary: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --md-sys-color-primary-container: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
+	) !important;
   --md-sys-color-primary-fixed: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
+	) !important;
   --md-sys-color-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 80%
-	);
-  --md-sys-color-scrim: rgb(0, 0, 0);
-  --md-sys-color-secondary: rgb(0, 0, 0);
-  --md-sys-color-secondary-container: rgb(0, 0, 0);
-  --md-sys-color-secondary-fixed: rgb(0, 0, 0);
-  --md-sys-color-secondary-fixed-dim: rgb(0, 0, 0);
-  --md-sys-color-shadow: rgb(0, 0, 0);
-  --md-sys-color-surface: rgb(0, 0, 0);
-  --md-sys-color-surface-bright: rgb(0, 0, 0);
-  --md-sys-color-surface-container: rgb(0, 0, 0);
-  --md-sys-color-surface-container-high: rgb(0, 0, 0);
-  --md-sys-color-surface-container-highest: rgb(0, 0, 0);
-  --md-sys-color-surface-container-low: rgb(0, 0, 0);
-  --md-sys-color-surface-container-lowest: rgb(0, 0, 0);
-  --md-sys-color-surface-dim: rgb(0, 0, 0);
-  --md-sys-color-surface-variant: rgb(0, 0, 0);
-  --md-sys-color-tertiary: rgb(0, 0, 0);
-  --md-sys-color-tertiary-container: rgb(0, 0, 0);
-  --md-sys-color-tertiary-fixed: rgb(0, 0, 0);
-  --md-sys-color-tertiary-fixed-dim: rgb(0, 0, 0);
-  --menu-background: rgb(0, 0, 0);
-  --menu-border-color: rgb(0, 0, 0);
-  --metadata-border-color: rgb(0, 0, 0);
-  --metadata-divider-color: rgb(0, 0, 0);
-  --metadata-input-background-active: rgb(0, 0, 0);
-  --metadata-input-text-color: rgb(0, 0, 0);
-  --metadata-label-background-active: rgb(0, 0, 0);
-  --metadata-label-text-color: rgb(0, 0, 0);
-  --metadata-label-text-color-hover: rgb(0, 0, 0);
-  --metadata-property-background-active: rgb(0, 0, 0);
+	) !important;
+  --md-sys-color-scrim: rgb(0, 0, 0) !important;
+  --md-sys-color-secondary: rgb(0, 0, 0) !important;
+  --md-sys-color-secondary-container: rgb(0, 0, 0) !important;
+  --md-sys-color-secondary-fixed: rgb(0, 0, 0) !important;
+  --md-sys-color-secondary-fixed-dim: rgb(0, 0, 0) !important;
+  --md-sys-color-shadow: rgb(0, 0, 0) !important;
+  --md-sys-color-surface: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-bright: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container-high: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container-highest: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container-low: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-container-lowest: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-dim: rgb(0, 0, 0) !important;
+  --md-sys-color-surface-variant: rgb(0, 0, 0) !important;
+  --md-sys-color-tertiary: rgb(0, 0, 0) !important;
+  --md-sys-color-tertiary-container: rgb(0, 0, 0) !important;
+  --md-sys-color-tertiary-fixed: rgb(0, 0, 0) !important;
+  --md-sys-color-tertiary-fixed-dim: rgb(0, 0, 0) !important;
+  --menu-background: rgb(0, 0, 0) !important;
+  --menu-border-color: rgb(0, 0, 0) !important;
+  --metadata-border-color: rgb(0, 0, 0) !important;
+  --metadata-divider-color: rgb(0, 0, 0) !important;
+  --metadata-input-background-active: rgb(0, 0, 0) !important;
+  --metadata-input-text-color: rgb(0, 0, 0) !important;
+  --metadata-label-background-active: rgb(0, 0, 0) !important;
+  --metadata-label-text-color: rgb(0, 0, 0) !important;
+  --metadata-label-text-color-hover: rgb(0, 0, 0) !important;
+  --metadata-property-background-active: rgb(0, 0, 0) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(0, 0, 0);
-  --modal-background: rgb(0, 0, 0);
-  --nav-collapse-icon-color: rgb(0, 0, 0);
-  --nav-collapse-icon-color-collapsed: rgb(0, 0, 0);
-  --nav-heading-color: rgb(0, 0, 0);
-  --nav-heading-color-collapsed: rgb(0, 0, 0);
-  --nav-heading-color-collapsed-hover: rgb(0, 0, 0);
-  --nav-heading-color-hover: rgb(0, 0, 0);
-  --nav-item-background-active: rgb(0, 0, 0);
-  --nav-item-background-hover: rgb(0, 0, 0);
-  --nav-item-color: rgb(0, 0, 0);
-  --nav-item-color-active: rgb(0, 0, 0);
+	) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
+  --modal-background: rgb(0, 0, 0) !important;
+  --nav-collapse-icon-color: rgb(0, 0, 0) !important;
+  --nav-collapse-icon-color-collapsed: rgb(0, 0, 0) !important;
+  --nav-heading-color: rgb(0, 0, 0) !important;
+  --nav-heading-color-collapsed: rgb(0, 0, 0) !important;
+  --nav-heading-color-collapsed-hover: rgb(0, 0, 0) !important;
+  --nav-heading-color-hover: rgb(0, 0, 0) !important;
+  --nav-item-background-active: rgb(0, 0, 0) !important;
+  --nav-item-background-hover: rgb(0, 0, 0) !important;
+  --nav-item-color: rgb(0, 0, 0) !important;
+  --nav-item-color-active: rgb(0, 0, 0) !important;
   --nav-item-color-highlighted: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --nav-item-color-hover: rgb(0, 0, 0);
-  --nav-item-color-selected: rgb(0, 0, 0);
-  --nav-tag-color: rgb(0, 0, 0);
-  --nav-tag-color-active: rgb(0, 0, 0);
-  --nav-tag-color-hover: rgb(0, 0, 0);
-  --neutral-hue: 258;
-  --neutral-saturation: 4%;
-  --neutral-variant-hue: 258;
-  --neutral-variant-saturation: 8%;
-  --pdf-background: rgb(0, 0, 0);
-  --pdf-page-background: rgb(0, 0, 0);
-  --pdf-sidebar-background: rgb(0, 0, 0);
-  --pill-border-color: rgb(0, 0, 0);
-  --pill-border-color-hover: rgb(0, 0, 0);
-  --pill-color: rgb(0, 0, 0);
-  --pill-color-hover: rgb(0, 0, 0);
-  --pill-color-remove: rgb(0, 0, 0);
+	) !important;
+  --nav-item-color-hover: rgb(0, 0, 0) !important;
+  --nav-item-color-selected: rgb(0, 0, 0) !important;
+  --nav-tag-color: rgb(0, 0, 0) !important;
+  --nav-tag-color-active: rgb(0, 0, 0) !important;
+  --nav-tag-color-hover: rgb(0, 0, 0) !important;
+  --neutral-hue: 258 !important;
+  --neutral-saturation: 4% !important;
+  --neutral-variant-hue: 258 !important;
+  --neutral-variant-saturation: 8% !important;
+  --pdf-background: rgb(0, 0, 0) !important;
+  --pdf-page-background: rgb(0, 0, 0) !important;
+  --pdf-sidebar-background: rgb(0, 0, 0) !important;
+  --pill-border-color: rgb(0, 0, 0) !important;
+  --pill-border-color-hover: rgb(0, 0, 0) !important;
+  --pill-color: rgb(0, 0, 0) !important;
+  --pill-color-hover: rgb(0, 0, 0) !important;
+  --pill-color-remove: rgb(0, 0, 0) !important;
   --pill-color-remove-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --primary-hue: 258;
-  --primary-saturation: calc(max(48%, 88%));
-  --prompt-background: rgb(0, 0, 0);
-  --raised-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent));
-  --ribbon-background: rgb(0, 0, 0);
-  --ribbon-background-collapsed: rgb(0, 0, 0);
-  --saturation: 88%;
-  --scrollbar-active-thumb-bg: rgb(0, 0, 0);
-  --scrollbar-bg: rgb(0, 0, 0);
-  --scrollbar-thumb-bg: rgb(0, 0, 0);
-  --search-clear-button-color: rgb(0, 0, 0);
-  --search-icon-color: rgb(0, 0, 0);
-  --search-result-background: rgb(0, 0, 0);
-  --secondary: var(--text-accent);
-  --secondary-hue: 258;
-  --secondary-saturation: 16%;
-  --setting-group-heading-color: rgb(0, 0, 0);
-  --setting-items-background: rgb(0, 0, 0);
-  --setting-items-border-color: rgb(0, 0, 0);
-  --slider-thumb-border-color: rgb(0, 0, 0);
-  --slider-thumb-radius: 36px;
-  --slider-track-background: rgb(0, 0, 0);
+	) !important;
+  --primary-hue: 258 !important;
+  --primary-saturation: calc(max(48%, 88%)) !important;
+  --prompt-background: rgb(0, 0, 0) !important;
+  --raised-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
+  --ribbon-background: rgb(0, 0, 0) !important;
+  --ribbon-background-collapsed: rgb(0, 0, 0) !important;
+  --saturation: 88% !important;
+  --scrollbar-active-thumb-bg: rgb(0, 0, 0) !important;
+  --scrollbar-bg: rgb(0, 0, 0) !important;
+  --scrollbar-thumb-bg: rgb(0, 0, 0) !important;
+  --search-clear-button-color: rgb(0, 0, 0) !important;
+  --search-icon-color: rgb(0, 0, 0) !important;
+  --search-result-background: rgb(0, 0, 0) !important;
+  --secondary: hsl(
+		258 calc(max(48%, 88%)) 40%
+	) !important;
+  --secondary-hue: 258 !important;
+  --secondary-saturation: 16% !important;
+  --setting-group-heading-color: rgb(0, 0, 0) !important;
+  --setting-items-background: rgb(0, 0, 0) !important;
+  --setting-items-border-color: rgb(0, 0, 0) !important;
+  --slider-thumb-border-color: rgb(0, 0, 0) !important;
+  --slider-thumb-radius: 36px !important;
+  --slider-track-background: rgb(0, 0, 0) !important;
   --status-bar-background: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
-  --status-bar-border-color: rgb(0, 0, 0);
+	) !important;
+  --status-bar-border-color: rgb(0, 0, 0) !important;
   --status-bar-text-color: hsl(
 		258 calc(max(48%, 88%)) 10%
-	);
-  --suggestion-background: rgb(0, 0, 0);
-  --tab-background-active: rgb(0, 0, 0);
-  --tab-container-background: rgb(0, 0, 0);
-  --tab-divider-color: rgb(0, 0, 0);
-  --tab-outline-color: rgb(0, 0, 0);
-  --tab-switcher-background: rgb(0, 0, 0);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 0, 0), transparent);
-  --tab-text-color: rgb(0, 0, 0);
-  --tab-text-color-active: rgb(0, 0, 0);
-  --tab-text-color-focused: rgb(0, 0, 0);
-  --tab-text-color-focused-active: rgb(0, 0, 0);
-  --tab-text-color-focused-active-current: rgb(0, 0, 0);
+	) !important;
+  --suggestion-background: rgb(0, 0, 0) !important;
+  --tab-background-active: rgb(0, 0, 0) !important;
+  --tab-container-background: rgb(0, 0, 0) !important;
+  --tab-divider-color: rgb(0, 0, 0) !important;
+  --tab-outline-color: rgb(0, 0, 0) !important;
+  --tab-switcher-background: rgb(0, 0, 0) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 0, 0), transparent) !important;
+  --tab-text-color: rgb(0, 0, 0) !important;
+  --tab-text-color-active: rgb(0, 0, 0) !important;
+  --tab-text-color-focused: rgb(0, 0, 0) !important;
+  --tab-text-color-focused-active: rgb(0, 0, 0) !important;
+  --tab-text-color-focused-active-current: rgb(0, 0, 0) !important;
   --tab-text-color-focused-highlighted: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --table-add-button-border-color: rgb(0, 0, 0);
-  --table-border-color: rgb(0, 0, 0);
+	) !important;
+  --table-add-button-border-color: rgb(0, 0, 0) !important;
+  --table-border-color: rgb(0, 0, 0) !important;
   --table-drag-handle-background-active: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --table-drag-handle-color: rgb(0, 0, 0);
+	) !important;
+  --table-drag-handle-color: rgb(0, 0, 0) !important;
   --table-drag-handle-color-active: hsl(
 		258 calc(max(48%, 88%)) 100%
-	);
-  --table-header-border-color: rgb(0, 0, 0);
-  --table-header-color: rgb(0, 0, 0);
+	) !important;
+  --table-header-border-color: rgb(0, 0, 0) !important;
+  --table-header-color: rgb(0, 0, 0) !important;
   --table-selection-border-color: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --tag-background: hsl(
 		258 calc(max(48%, 88%)) 90%
-	);
+	) !important;
   --tag-background-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --tag-color: hsl(
 		258 calc(max(48%, 88%)) 10%
-	);
+	) !important;
   --tag-color-hover: hsl(
 		258 calc(max(48%, 88%)) 100%
-	);
-  --tertiary: var(--text-accent-hover);
-  --tertiary-hue: 318;
-  --tertiary-saturation: 24%;
+	) !important;
+  --tertiary: hsl(
+		258 calc(max(48%, 88%)) 40%
+	) !important;
+  --tertiary-hue: 318 !important;
+  --tertiary-saturation: 24% !important;
   --text-accent: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
+	) !important;
   --text-accent-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
-	);
-  --text-faint: rgb(0, 0, 0);
-  --text-highlight-bg: rgb(0, 0, 0);
-  --text-muted: rgb(0, 0, 0);
-  --text-normal: rgb(0, 0, 0);
+	) !important;
+  --text-faint: rgb(0, 0, 0) !important;
+  --text-highlight-bg: rgb(0, 0, 0) !important;
+  --text-muted: rgb(0, 0, 0) !important;
+  --text-normal: rgb(0, 0, 0) !important;
   --text-on-accent: hsl(
 		258 calc(max(48%, 88%)) 100%
-	);
+	) !important;
   --text-on-accent-inverted: hsl(
 		258 calc(max(48%, 88%)) 100%
-	);
-  --text-selection: rgb(0, 0, 0);
-  --textHighlight: var(--text-highlight-bg);
-  --titlebar-background: rgb(0, 0, 0);
-  --titlebar-background-focused: rgb(0, 0, 0);
-  --titlebar-border-color: rgb(0, 0, 0);
-  --titlebar-text-color: rgb(0, 0, 0);
-  --titlebar-text-color-focused: rgb(0, 0, 0);
-  --vault-name-color: rgb(0, 0, 0);
-  --vault-profile-color: rgb(0, 0, 0);
-  --vault-profile-color-hover: rgb(0, 0, 0);
-  --quartz-icon-color: currentColor;
+	) !important;
+  --text-selection: rgb(0, 0, 0) !important;
+  --textHighlight: rgb(0, 0, 0) !important;
+  --titlebar-background: rgb(0, 0, 0) !important;
+  --titlebar-background-focused: rgb(0, 0, 0) !important;
+  --titlebar-border-color: rgb(0, 0, 0) !important;
+  --titlebar-text-color: rgb(0, 0, 0) !important;
+  --titlebar-text-color-focused: rgb(0, 0, 0) !important;
+  --vault-name-color: rgb(0, 0, 0) !important;
+  --vault-profile-color: rgb(0, 0, 0) !important;
+  --vault-profile-color-hover: rgb(0, 0, 0) !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

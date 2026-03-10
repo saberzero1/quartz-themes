@@ -17,37 +17,42 @@ export const theme: ThemeData = {
   --callout-summary: 0, 191, 188;
   --callout-tip: 0, 191, 188;
   --callout-warning: 255, 144, 0;
-  --canvas-color-2: 255, 144, 0;
-  --canvas-color-3: 260, 200, 44;
-  --canvas-color-5: 0, 191, 188;
-  --canvas-color-6: 120, 82, 238;
-  --checklist-done-color: #555555;
-  --code-function: #ffc82c;
-  --code-important: #ff9000;
-  --code-keyword: #ff4d7b;
-  --code-pre-radius: 8px;
-  --code-property: #00bfbc;
-  --code-value: #7852ee;
-  --color-cyan: #00bfbc;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-orange: #ff9000;
-  --color-orange-rgb: 255, 144, 0;
-  --color-pink: #ff4d7b;
-  --color-pink-rgb: 255, 77, 123;
-  --color-purple: #7852ee;
-  --color-purple-rgb: 120, 82, 238;
-  --color-yellow: #ffc82c;
-  --color-yellow-rgb: 260, 200, 44;
-  --embed-padding: 0 0 0 20px;
-  --graph-node-attachment: #ffc82c;
-  --quote-qutter-background: #2a2a2a;
-  --sync-avatar-color-2: #ff9000;
-  --sync-avatar-color-3: #ffc82c;
-  --sync-avatar-color-5: #00bfbc;
-  --sync-avatar-color-7: #7852ee;
-  --sync-avatar-color-8: #ff4d7b;
-  --text-warning: #ff9000;
-  --quartz-icon-color: currentColor;
+  --canvas-color-2: 255, 144, 0 !important;
+  --canvas-color-3: 260, 200, 44 !important;
+  --canvas-color-5: 0, 191, 188 !important;
+  --canvas-color-6: 120, 82, 238 !important;
+  --checklist-done-color: #555555 !important;
+  --code-function: #ffc82c !important;
+  --code-important: #ff9000 !important;
+  --code-keyword: #ff4d7b !important;
+  --code-pre-radius: 8px !important;
+  --code-property: #00bfbc !important;
+  --code-value: #7852ee !important;
+  --color-cyan: #00bfbc !important;
+  --color-cyan-rgb: 0, 191, 188 !important;
+  --color-orange: #ff9000 !important;
+  --color-orange-rgb: 255, 144, 0 !important;
+  --color-pink: #ff4d7b !important;
+  --color-pink-rgb: 255, 77, 123 !important;
+  --color-purple: #7852ee !important;
+  --color-purple-rgb: 120, 82, 238 !important;
+  --color-yellow: #ffc82c !important;
+  --color-yellow-rgb: 260, 200, 44 !important;
+  --embed-padding: 0 0 0 20px !important;
+  --graph-node-attachment: #ffc82c !important;
+  --quote-qutter-background: #2a2a2a !important;
+  --sync-avatar-color-2: #ff9000 !important;
+  --sync-avatar-color-3: #ffc82c !important;
+  --sync-avatar-color-5: #00bfbc !important;
+  --sync-avatar-color-7: #7852ee !important;
+  --sync-avatar-color-8: #ff4d7b !important;
+  --text-warning: #ff9000 !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     links: `body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration: rgb(166, 138, 249);
@@ -248,16 +253,21 @@ body .callout[data-callout="warning"] {
     base: `:root:root {
   --callout-padding: 12px 12px 12px 20px;
   --callout-radius: 8px;
-  --checklist-done-color: #bdbdbd;
-  --code-border-color: #e3e3e3;
-  --code-keyword: #e8426d;
-  --code-pre-radius: 8px;
-  --color-pink: #e8426d;
-  --color-pink-rgb: 232, 66, 109;
-  --embed-padding: 0 0 0 20px;
-  --quote-qutter-background: #e3e3e3;
-  --sync-avatar-color-8: #e8426d;
-  --quartz-icon-color: currentColor;
+  --checklist-done-color: #bdbdbd !important;
+  --code-border-color: #e3e3e3 !important;
+  --code-keyword: #e8426d !important;
+  --code-pre-radius: 8px !important;
+  --color-pink: #e8426d !important;
+  --color-pink-rgb: 232, 66, 109 !important;
+  --embed-padding: 0 0 0 20px !important;
+  --quote-qutter-background: #e3e3e3 !important;
+  --sync-avatar-color-8: #e8426d !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     links: `body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration: rgb(138, 92, 245);

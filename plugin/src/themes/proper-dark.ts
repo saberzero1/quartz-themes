@@ -9,57 +9,62 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-modifier-hover: rgba(255, 255, 255, 0.09);
-  --background-primary: #161a1d;
-  --background-secondary: #0b0d0f;
-  --bases-cards-background: #161a1d;
-  --bases-table-cell-background-active: #161a1d;
-  --bases-table-header-background: #161a1d;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.09);
-  --bases-table-summary-background: #161a1d;
-  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.09);
-  --canvas-background: #161a1d;
-  --checkbox-marker-color: #161a1d;
-  --code-background: #0b0d0f;
-  --code-bracket-background: rgba(255, 255, 255, 0.09);
-  --divider-color: #30363d;
-  --file-header-background: #161a1d;
-  --file-header-background-focused: #161a1d;
-  --footnote-input-background-active: rgba(255, 255, 255, 0.09);
-  --highlight: var(--background-modifier-hover);
-  --indentation-guide-color: #161a1f;
-  --inline-title-size: 3em;
-  --inline-title-weight: normal;
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --menu-background: #0b0d0f;
-  --metadata-input-background-active: rgba(255, 255, 255, 0.09);
-  --metadata-label-background-active: rgba(255, 255, 255, 0.09);
-  --metadata-property-background-active: rgba(255, 255, 255, 0.09);
-  --modal-background: #161a1d;
-  --nav-indentation-guide-color: #161a1f;
-  --nav-item-background-active: rgb(138, 92, 245);
-  --nav-item-background-hover: rgba(255, 255, 255, 0.09);
-  --nav-item-color-active: white;
-  --pdf-background: #161a1d;
-  --pdf-page-background: #161a1d;
-  --pdf-sidebar-background: #161a1d;
-  --prompt-background: #161a1d;
-  --ribbon-background: #000000;
-  --ribbon-background-collapsed: #161a1d;
-  --search-result-background: #161a1d;
-  --status-bar-background: #0b0d0f;
-  --status-bar-border-color: #30363d;
-  --suggestion-background: #161a1d;
-  --tab-background-active: #161a1d;
-  --tab-container-background: #0b0d0f;
-  --tab-outline-color: #30363d;
-  --tab-switcher-background: #0b0d0f;
-  --tab-switcher-menubar-background: linear-gradient(to top, #0b0d0f, transparent);
-  --textHighlight: var(--background-modifier-hover);
-  --titlebar-background: #0b0d0f;
-  --titlebar-background-focused: #0b0d0f;
-  --quartz-icon-color: currentColor;
+  --background-modifier-hover: rgba(255, 255, 255, 0.09) !important;
+  --background-primary: #161a1d !important;
+  --background-secondary: #0b0d0f !important;
+  --bases-cards-background: #161a1d !important;
+  --bases-table-cell-background-active: #161a1d !important;
+  --bases-table-header-background: #161a1d !important;
+  --bases-table-header-background-hover: rgba(255, 255, 255, 0.09) !important;
+  --bases-table-summary-background: #161a1d !important;
+  --bases-table-summary-background-hover: rgba(255, 255, 255, 0.09) !important;
+  --canvas-background: #161a1d !important;
+  --checkbox-marker-color: #161a1d !important;
+  --code-background: #0b0d0f !important;
+  --code-bracket-background: rgba(255, 255, 255, 0.09) !important;
+  --divider-color: #30363d !important;
+  --file-header-background: #161a1d !important;
+  --file-header-background-focused: #161a1d !important;
+  --footnote-input-background-active: rgba(255, 255, 255, 0.09) !important;
+  --highlight: rgba(255, 255, 255, 0.09) !important;
+  --indentation-guide-color: #161a1f !important;
+  --inline-title-size: 3em !important;
+  --inline-title-weight: normal !important;
+  --light: #161a1d !important;
+  --lightgray: #0b0d0f !important;
+  --menu-background: #0b0d0f !important;
+  --metadata-input-background-active: rgba(255, 255, 255, 0.09) !important;
+  --metadata-label-background-active: rgba(255, 255, 255, 0.09) !important;
+  --metadata-property-background-active: rgba(255, 255, 255, 0.09) !important;
+  --modal-background: #161a1d !important;
+  --nav-indentation-guide-color: #161a1f !important;
+  --nav-item-background-active: rgb(138, 92, 245) !important;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.09) !important;
+  --nav-item-color-active: white !important;
+  --pdf-background: #161a1d !important;
+  --pdf-page-background: #161a1d !important;
+  --pdf-sidebar-background: #161a1d !important;
+  --prompt-background: #161a1d !important;
+  --ribbon-background: #000000 !important;
+  --ribbon-background-collapsed: #161a1d !important;
+  --search-result-background: #161a1d !important;
+  --status-bar-background: #0b0d0f !important;
+  --status-bar-border-color: #30363d !important;
+  --suggestion-background: #161a1d !important;
+  --tab-background-active: #161a1d !important;
+  --tab-container-background: #0b0d0f !important;
+  --tab-outline-color: #30363d !important;
+  --tab-switcher-background: #0b0d0f !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #0b0d0f, transparent) !important;
+  --textHighlight: rgba(255, 255, 255, 0.09) !important;
+  --titlebar-background: #0b0d0f !important;
+  --titlebar-background-focused: #0b0d0f !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -187,9 +192,14 @@ body kbd {
   },
   light: {
     base: `:root:root {
-  --nav-item-background-active: rgb(153, 115, 247);
-  --nav-item-color-active: white;
-  --quartz-icon-color: currentColor;
+  --nav-item-background-active: rgb(153, 115, 247) !important;
+  --nav-item-color-active: white !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     search: `body .search > .search-container > .search-space {
   background-color: rgb(246, 246, 246);
