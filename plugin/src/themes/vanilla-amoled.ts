@@ -54,6 +54,8 @@ export const theme: ThemeData = {
   --color-base-50: #666;
   --color-base-60: #999;
   --color-base-70: #bbb;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #333;
   --dropdown-background: #333;
   --dropdown-background-hover: #363636;
@@ -69,6 +71,7 @@ export const theme: ThemeData = {
   --graph-node: #bbb;
   --graph-node-unresolved: #666;
   --graph-text: #fff;
+  --gray: var(--text-muted);
   --heading-formatting: #666;
   --hr-color: #333;
   --icon-color: #bbb;
@@ -78,6 +81,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: #666;
   --interactive-hover: #363636;
   --interactive-normal: #333;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: #666;
   --list-marker-color-hover: #bbb;
   --menu-background: #080808;

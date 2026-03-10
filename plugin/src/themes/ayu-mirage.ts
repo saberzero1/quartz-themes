@@ -61,6 +61,8 @@ export const theme: ThemeData = {
   --code-punctuation: #686e80;
   --collapse-icon-color: #686e80;
   --collapse-icon-color-collapsed: #fec154;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #686e80;
   --divider-color-hover: rgb(63, 69, 91);
   --dropdown-background: #171a23;
@@ -100,6 +102,7 @@ export const theme: ThemeData = {
   --graph-node-unresolved: #686e80;
   --graph-note-name: #d1cec6;
   --graph-text: #d1cec6;
+  --gray: var(--text-muted);
   --hashtag-color: #6875aa;
   --header-before-color: rgb(93, 99, 121);
   --header-before-size-h1: 0.5em;
@@ -109,6 +112,7 @@ export const theme: ThemeData = {
   --header-before-size-h5: 0.5em;
   --header-before-size-h6: 0.5em;
   --heading-formatting: #686e80;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(99, 99, 99);
   --icon-color: #686e80;
   --icon-color-active: #fec154;
@@ -133,6 +137,8 @@ export const theme: ThemeData = {
   --interface-color-pencil: #fec03e;
   --interface-color-pin: #d1cec6;
   --interface-color-three-dots: #a0e85b;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-footnote: 1.2em;
   --line-height-header-preview: 1em;
   --line-height-preview: 1.7em;
@@ -189,6 +195,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #686e80;
   --search-icon-color: #686e80;
   --search-result-background: #171a23;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #d1cec6;
   --setting-items-background: rgba(0, 0, 0, 0.08);
   --setting-items-border-color: #686e80;
@@ -222,6 +229,7 @@ export const theme: ThemeData = {
   --tag-color-hover: #fec154;
   --tag-text-color: #eaebeb;
   --tag-text-hover: #eaebeb;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #fec154;
   --text-accent-hover: #686e80;
   --text-error: #800000;
@@ -239,6 +247,7 @@ export const theme: ThemeData = {
   --text-title-h4: #8e98aa;
   --text-title-h5: #8e98aa;
   --text-title-h6: #8e98aa;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #13151e;
   --titlebar-background-focused: #13151e;
   --titlebar-border-color: #686e80;

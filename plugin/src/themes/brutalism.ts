@@ -49,6 +49,7 @@ export const theme: ThemeData = {
   --footnote-id-color-no-occurrences: #565f8988;
   --graph-line: #555555;
   --graph-node-unresolved: #565f8988;
+  --gray: var(--text-faint);
   --h1-color: #7aa2f7;
   --h1-size: 1.25em;
   --h2-color: #7aa2f7;
@@ -64,12 +65,15 @@ export const theme: ThemeData = {
   --header-color: #7aa2f7;
   --header-size: 1.25em;
   --heading-formatting: #565f8988;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #999999;
   --inline-title-color: #7aa2f7;
   --inline-title-size: 1.25em;
   --input-date-separator: #565f8988;
   --input-placeholder-color: #565f8988;
   --italic-color: #9aa5ce;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: #565f8988;
   --menu-background: #1a1b26;
   --menu-border-color: #555555;
@@ -120,6 +124,7 @@ export const theme: ThemeData = {
   --table-header-border-color: #999999;
   --text-faint: #565f8988;
   --text-highlight-bg: #9ece6a66;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #1a1b26;
   --titlebar-background-focused: #1a1b26;
   --titlebar-border-color: #999999;

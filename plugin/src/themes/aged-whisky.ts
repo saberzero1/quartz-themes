@@ -31,6 +31,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: #adadad;
   --bases-table-summary-background: #090909;
   --blur-background: color-mix(in srgb, #8e746d3a 65%, transparent) linear-gradient(#8e746d3a, color-mix(in srgb, #8e746d3a 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 0px;
   --callout-blend-mode: normal;
   --callout-radius: 0px;
@@ -55,6 +56,7 @@ export const theme: ThemeData = {
   --code-normal: #adadad;
   --code-punctuation: #adadad;
   --code-radius: 0px;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #54453a;
   --collapse-icon-color-collapsed: #8d6a50;
   --color-base-00: #090909;
@@ -69,6 +71,8 @@ export const theme: ThemeData = {
   --color-base-50: #54453a;
   --color-base-60: #5b5556;
   --color-base-70: #adadad;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --dropdown-background: #8e746d3a;
   --dropdown-background-hover: #8d6a50;
@@ -90,7 +94,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #8d6a50;
   --graph-node-unresolved: #54453a;
   --graph-text: #adadad;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #54453a;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #adadad35;
   --hr-thickness: 1px;
   --icon-color: #54453a;
@@ -106,6 +113,8 @@ export const theme: ThemeData = {
   --input-radius: 0px;
   --interactive-hover: #8d6a50;
   --interactive-normal: #8e746d3a;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #8d6a50;
   --link-color-hover: #8e746d;
   --link-external-color: #8d6a50;
@@ -170,6 +179,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #adadad;
   --search-icon-color: #adadad;
   --search-result-background: #090909;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #adadad;
   --setting-items-background: #8d6a50;
   --setting-items-border-color: #090909;
@@ -208,12 +218,15 @@ export const theme: ThemeData = {
   --tag-background-hover: transparent;
   --tag-color: #abaeae;
   --tag-color-hover: #856255;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #8d6a50;
   --text-accent-hover: #8e746d;
   --text-faint: #54453a;
   --text-highlight-bg: transparent;
   --text-muted: #adadad;
   --text-normal: #adadad;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #090909;
   --titlebar-background-focused: #090909;
   --titlebar-border-color: #090909;

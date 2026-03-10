@@ -109,6 +109,7 @@ export const theme: ThemeData = {
   --blur-radius-s: 6px;
   --blur-s: blur(6px) saturate(1.5) brightness(1.15);
   --blur-saturation: 1.5;
+  --bodyFont: var(--font-text);
   --bold-modifier: 200;
   --bold-weight: 600;
   --border-width: 1px;
@@ -180,6 +181,7 @@ export const theme: ThemeData = {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: rgb(166, 139, 249);
   --color-accent: rgb(138, 92, 245);
@@ -217,6 +219,8 @@ export const theme: ThemeData = {
   --corner-shape: round;
   --cursor: default;
   --cursor-link: pointer;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
@@ -318,6 +322,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #666666;
   --graph-text: #dadada;
+  --gray: var(--text-muted);
   --h1-letter-spacing: -0.015em;
   --h1-line-height: 1.2;
   --h1-size: 1.618em;
@@ -355,8 +360,10 @@ export const theme: ThemeData = {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
+  --headerFont: var(--font-text);
   --heading-formatting: #666666;
   --heading-spacing: 2.5rem;
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: lighten;
   --hr-color: #363636;
   --hr-thickness: 2px;
@@ -424,6 +431,8 @@ export const theme: ThemeData = {
   --layer-slides: 45;
   --layer-status-bar: 15;
   --layer-tooltip: 70;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: rgb(166, 139, 249);
@@ -628,6 +637,7 @@ export const theme: ThemeData = {
   --search-icon-color: #b3b3b3;
   --search-icon-size: 18px;
   --search-result-background: #1e1e1e;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #dadada;
   --setting-group-heading-size: 15px;
   --setting-group-heading-weight: 600;
@@ -772,6 +782,7 @@ export const theme: ThemeData = {
   --tag-padding-y: 0.25em;
   --tag-radius: 2em;
   --tag-size: 0.875em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(166, 139, 249);
   --text-accent-hover: rgb(197, 182, 252);
   --text-error: #fb464c;
@@ -785,6 +796,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(138, 92, 245, 0.33);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #262626;
   --titlebar-background-focused: #363636;
   --titlebar-border-color: #363636;
@@ -2815,6 +2828,7 @@ body sup {
   --blur-radius-s: 6px;
   --blur-s: blur(6px) saturate(1.5) brightness(1.15);
   --blur-saturation: 1.5;
+  --bodyFont: var(--font-text);
   --bold-modifier: 200;
   --bold-weight: 600;
   --border-width: 1px;
@@ -2886,6 +2900,7 @@ body sup {
   --code-tag: #e93147;
   --code-value: #7852ee;
   --code-white-space: pre-wrap;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #ababab;
   --collapse-icon-color-collapsed: rgb(138, 92, 245);
   --color-accent: rgb(138, 92, 245);
@@ -2923,6 +2938,8 @@ body sup {
   --corner-shape: round;
   --cursor: default;
   --cursor-link: pointer;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
@@ -3024,6 +3041,7 @@ body sup {
   --graph-node-tag: #08b94e;
   --graph-node-unresolved: #ababab;
   --graph-text: #222222;
+  --gray: var(--text-muted);
   --h1-letter-spacing: -0.015em;
   --h1-line-height: 1.2;
   --h1-size: 1.618em;
@@ -3061,8 +3079,10 @@ body sup {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
+  --headerFont: var(--font-text);
   --heading-formatting: #ababab;
   --heading-spacing: 2.5rem;
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: darken;
   --hr-color: #e0e0e0;
   --hr-thickness: 2px;
@@ -3130,6 +3150,8 @@ body sup {
   --layer-slides: 45;
   --layer-status-bar: 15;
   --layer-tooltip: 70;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: rgb(138, 92, 245);
@@ -3335,6 +3357,7 @@ body sup {
   --search-icon-color: #5c5c5c;
   --search-icon-size: 18px;
   --search-result-background: #ffffff;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #222222;
   --setting-group-heading-size: 15px;
   --setting-group-heading-weight: 600;
@@ -3481,6 +3504,7 @@ body sup {
   --tag-padding-y: 0.25em;
   --tag-radius: 2em;
   --tag-size: 0.875em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(166, 139, 249);
   --text-error: #e93147;
@@ -3494,6 +3518,8 @@ body sup {
   --text-selection: rgba(138, 92, 245, 0.2);
   --text-success: #08b94e;
   --text-warning: #ec7500;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #f6f6f6;
   --titlebar-background-focused: #fcfcfc;
   --titlebar-border-color: #e0e0e0;

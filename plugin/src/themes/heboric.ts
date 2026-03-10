@@ -40,6 +40,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: rgb(200, 100, 100);
   --blockquote-border-thickness: 0.2rem;
   --blur-background: color-mix(in srgb, rgb(82, 87, 96) 65%, transparent) linear-gradient(rgb(82, 87, 96), color-mix(in srgb, rgb(82, 87, 96) 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 3px;
   --callout-border-width: 1px;
   --callout-padding: 1rem;
@@ -72,6 +73,7 @@ export const theme: ThemeData = {
   --code-string: rgb(156, 202, 119);
   --code-tag: rgb(210, 121, 121);
   --code-value: rgb(204, 151, 102);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(106, 111, 124);
   --collapse-icon-color-collapsed: rgb(200, 100, 100);
   --color-accent: rgb(200, 100, 100);
@@ -90,6 +92,8 @@ export const theme: ThemeData = {
   --color-base-60: rgb(159, 163, 173);
   --color-base-70: rgb(186, 189, 196);
   --color-base-80: rgb(214, 216, 220);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(54, 57, 63);
   --divider-color-hover: rgb(200, 100, 100);
   --dropdown-background: rgb(82, 87, 96);
@@ -116,6 +120,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(200, 100, 100);
   --graph-node-unresolved: rgb(220, 120, 120);
   --graph-text: rgb(186, 189, 196);
+  --gray: var(--text-muted);
   --h1-color: rgb(241, 242, 243);
   --h1-font: "SF Pro", ui-sans-serif, sans-serif;
   --h1-size: 2rem;
@@ -134,7 +139,9 @@ export const theme: ThemeData = {
   --h6-color: rgb(214, 216, 220);
   --h6-font: "SF Pro", ui-sans-serif, sans-serif;
   --h6-size: 1rem;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(106, 111, 124);
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: rgb(63, 67, 74);
   --hr-thickness: 0.125rem;
   --icon-color: rgb(186, 189, 196);
@@ -151,6 +158,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(200, 100, 100);
   --interactive-hover: rgb(94, 99, 110);
   --interactive-normal: rgb(82, 87, 96);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(200, 100, 100);
   --link-color-hover: rgb(220, 120, 120);
   --link-decoration: none;
@@ -218,6 +227,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(186, 189, 196);
   --search-icon-color: rgb(186, 189, 196);
   --search-result-background: rgb(40, 42, 47);
+  --secondary: var(--text-accent);
   --serif: "New York", "Georgia", ui-serif, serif;
   --setting-group-heading-color: rgb(186, 189, 196);
   --setting-items-background: rgb(45, 47, 52);
@@ -257,12 +267,15 @@ export const theme: ThemeData = {
   --tag-color: rgb(241, 242, 243);
   --tag-color-hover: rgb(241, 242, 243);
   --tag-radius: 3px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(200, 100, 100);
   --text-accent-hover: rgb(220, 120, 120);
   --text-faint: rgb(106, 111, 124);
   --text-muted: rgb(186, 189, 196);
   --text-normal: rgb(186, 189, 196);
   --text-selection: rgb(179, 77, 77);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(33, 35, 39);
   --titlebar-background-focused: rgb(33, 35, 39);
   --titlebar-border-color: rgb(82, 87, 96);
@@ -1308,6 +1321,7 @@ body sup {
   --blockquote-border-color: rgb(200, 100, 100);
   --blockquote-border-thickness: 0.2rem;
   --blur-background: color-mix(in srgb, #fefefe 65%, transparent) linear-gradient(#fefefe, color-mix(in srgb, #fefefe 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 3px;
   --callout-border-width: 1px;
   --callout-padding: 1rem;
@@ -1336,6 +1350,7 @@ body sup {
   --code-string: rgb(163, 193, 139);
   --code-tag: rgb(204, 102, 102);
   --code-value: rgb(198, 138, 83);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color-collapsed: rgb(200, 100, 100);
   --color-accent: rgb(200, 100, 100);
   --color-accent-1: rgb(200, 100, 100);
@@ -1345,6 +1360,8 @@ body sup {
   --color-base-60: #727272;
   --color-base-70: #555555;
   --color-base-80: #444444;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgb(200, 100, 100);
   --embed-border-start: 2px solid rgb(200, 100, 100);
   --file-header-background: #fefefe;
@@ -1363,6 +1380,7 @@ body sup {
   --graph-node-tag: rgb(200, 100, 100);
   --graph-node-unresolved: rgb(220, 120, 120);
   --graph-text: #555555;
+  --gray: var(--text-muted);
   --h1-color: #000000;
   --h1-font: "SF Pro", ui-sans-serif, sans-serif;
   --h1-size: 2rem;
@@ -1381,6 +1399,8 @@ body sup {
   --h6-color: #444444;
   --h6-font: "SF Pro", ui-sans-serif, sans-serif;
   --h6-size: 1rem;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: #e3e3e3;
   --hr-thickness: 0.125rem;
   --icon-color: #555555;
@@ -1393,6 +1413,8 @@ body sup {
   --input-radius: 3px;
   --interactive-accent: rgb(200, 100, 100);
   --interactive-accent-hover: rgb(220, 120, 120);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(200, 100, 100);
   --link-color-hover: rgb(220, 120, 120);
   --link-decoration: none;
@@ -1444,6 +1466,7 @@ body sup {
   --search-clear-button-color: #555555;
   --search-icon-color: #555555;
   --search-result-background: #fefefe;
+  --secondary: var(--text-accent);
   --serif: "New York", "Georgia", ui-serif, serif;
   --setting-group-heading-color: #555555;
   --status-bar-background: rgb(253, 249, 247);
@@ -1471,11 +1494,14 @@ body sup {
   --tag-color: #fafafa;
   --tag-color-hover: #ffffff;
   --tag-radius: 3px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(200, 100, 100);
   --text-accent-hover: rgb(220, 120, 120);
   --text-muted: #555555;
   --text-normal: #555555;
   --text-selection: rgb(200, 100, 100);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background-focused: #f6f6f6;
   --titlebar-text-color: #555555;
   --titlebar-text-color-focused: #555555;

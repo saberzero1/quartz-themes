@@ -19,6 +19,7 @@ export const theme: ThemeData = {
   --bases-table-container-border-radius: 8px;
   --bases-table-header-background: rgb(2, 4, 34);
   --bases-table-summary-background: rgb(2, 4, 34);
+  --bodyFont: var(--font-text);
   --bold-color: #d86679;
   --button-radius: 12px;
   --callout-radius: 8px;
@@ -28,6 +29,7 @@ export const theme: ThemeData = {
   --checkbox-radius: 12px;
   --clickable-icon-radius: 8px;
   --code-radius: 8px;
+  --codeFont: var(--font-text);
   --file-header-background: rgb(2, 4, 34);
   --file-header-background-focused: rgb(2, 4, 34);
   --font-mermaid: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -41,10 +43,13 @@ export const theme: ThemeData = {
   --h4-color: #f88773;
   --h5-color: #f88773;
   --h6-color: #f88773;
+  --headerFont: var(--font-text);
   --highlight-hue: 30;
   --inline-title-color: #ffc444;
   --input-radius: 12px;
   --italic-color: #82c0e9;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: rgb(0, 0, 0);
   --menu-radius: 12px;
   --modal-background: rgb(2, 4, 34);
@@ -75,6 +80,7 @@ export const theme: ThemeData = {
   --tab-switcher-background: rgb(0, 0, 0);
   --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 0, 0), transparent);
   --text: rgb(221, 221, 253);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(0, 0, 0);
   --toggle-radius: 12px;
   --toggle-thumb-radius: 12px;
@@ -627,6 +633,7 @@ body progress {
   --bases-table-header-background: rgb(221, 223, 253);
   --bases-table-summary-background: rgb(221, 223, 253);
   --blur-background: color-mix(in srgb, rgb(221, 223, 253) 65%, transparent) linear-gradient(rgb(221, 223, 253), color-mix(in srgb, rgb(221, 223, 253) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: #d86679;
   --button-radius: 12px;
   --callout-radius: 8px;
@@ -636,6 +643,7 @@ body progress {
   --checkbox-radius: 12px;
   --clickable-icon-radius: 8px;
   --code-radius: 8px;
+  --codeFont: var(--font-text);
   --file-header-background: rgb(221, 223, 253);
   --file-header-background-focused: rgb(221, 223, 253);
   --font-mermaid: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -649,10 +657,13 @@ body progress {
   --h4-color: #f88773;
   --h5-color: #f88773;
   --h6-color: #f88773;
+  --headerFont: var(--font-text);
   --highlight-hue: 30;
   --inline-title-color: #ffc444;
   --input-radius: 12px;
   --italic-color: #82c0e9;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: rgb(255, 255, 255);
   --menu-radius: 12px;
   --modal-background: rgb(221, 223, 253);
@@ -684,6 +695,7 @@ body progress {
   --tab-switcher-background: rgb(255, 255, 255);
   --tab-switcher-menubar-background: linear-gradient(to top, rgb(255, 255, 255), transparent);
   --text: rgb(2, 2, 34);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(255, 255, 255);
   --toggle-radius: 12px;
   --toggle-thumb-radius: 12px;

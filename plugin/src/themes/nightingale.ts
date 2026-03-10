@@ -22,6 +22,7 @@ export const theme: ThemeData = {
   --bases-table-group-background: #1e2127;
   --blockquote-border-color: rgba(27, 128, 210, 0.842);
   --body-font-weight: 450;
+  --bodyFont: var(--font-interface);
   --canvas-card-label-color: rgba(122, 162, 247, 0.8);
   --caret-color: #b7b7b7;
   --checkbox-border-color: rgba(122, 162, 247, 0.8);
@@ -32,8 +33,11 @@ export const theme: ThemeData = {
   --code-comment: rgba(122, 162, 247, 0.8);
   --code-mono-font: 'Incosolata', 'Consolas';
   --code-normal: #b7b7b7;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: rgba(122, 162, 247, 0.8);
   --collapse-icon-color-collapsed: rgba(184, 71, 255, 0.8);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: 'Avenir LT Std', Helvetica, Arial, 'Amazon Ember', 'Rubik', Roboto, sans-serif, sans-serif;
   --default-font-size: 18px;
   --divider-color: rgba(14, 210, 247, 0.05);
@@ -48,6 +52,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgba(184, 71, 255, 0.8);
   --graph-node-unresolved: rgba(122, 162, 247, 0.8);
   --graph-text: #b7b7b7;
+  --gray: var(--text-faint);
   --h1-size: 44px;
   --h1-weight: 600;
   --h2-size: 36px;
@@ -60,7 +65,9 @@ export const theme: ThemeData = {
   --h5-weight: 500;
   --h6-size: 20px;
   --h6-weight: 500;
+  --headerFont: var(--font-interface);
   --heading-formatting: rgba(122, 162, 247, 0.8);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(14, 210, 247, 0.05);
   --icon-color-active: rgba(184, 71, 255, 0.8);
   --icon-color-focused: #b7b7b7;
@@ -72,6 +79,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgba(14, 210, 247, 0.8);
   --interactive-accent-rgb: #3dd7fb;
   --interactive-before: #5e6565;
+  --light: var(--background-primary-alt);
+  --lightgray: var(--background-secondary);
   --link-color: rgba(184, 71, 255, 0.8);
   --link-external-color: rgba(184, 71, 255, 0.8);
   --link-unresolved-color: rgba(184, 71, 255, 0.8);
@@ -114,6 +123,7 @@ export const theme: ThemeData = {
   --pill-color-remove-hover: rgba(184, 71, 255, 0.8);
   --quote-background: #1e2127;
   --ribbon-background: #15111e;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #b7b7b7;
   --setting-items-background: #1e2127;
   --setting-items-border-color: rgba(14, 210, 247, 0.05);
@@ -137,6 +147,7 @@ export const theme: ThemeData = {
   --tag-color: rgba(184, 71, 255, 0.8);
   --tag-color-hover: rgba(184, 71, 255, 0.8);
   --tag-font-family: 'Microsoft Yahei', 'SimSun', 'Helvetica Neue', 'Helvetica', sans-serif;
+  --tertiary: var(--interactive-accent-hover);
   --text-accent: rgba(184, 71, 255, 0.8);
   --text-dim: rgba(69, 170, 255, 0.8);
   --text-faint: rgba(122, 162, 247, 0.8);
@@ -145,7 +156,9 @@ export const theme: ThemeData = {
   --text-sub-accent: rgba(255, 40, 137, 0.8);
   --text-title-1: rgba(216, 253, 7, 0.8);
   --text-title-2: rgba(253, 49, 6, 0.8);
+  --textHighlight: var(--text-highlight-bg);
   --title-font: 'Optima LT Std', 'Microsoft Yahei', 'Noto Sans SC', sans-serif;
+  --titleFont: var(--font-interface);
   --titlebar-background: #15111e;
   --titlebar-background-focused: #0a080f;
   --titlebar-border-color: rgba(14, 210, 247, 0.05);

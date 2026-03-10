@@ -21,6 +21,7 @@ export const theme: ThemeData = {
   --blockquote-background-color: #444444;
   --blockquote-border-color: #f6fa70;
   --blockquote-border-thickness: 4px;
+  --bodyFont: var(--font-text);
   --bold-color: #f6fa70;
   --callout-radius: 0px;
   --canvas-background: #171717;
@@ -43,6 +44,7 @@ export const theme: ThemeData = {
   --code-string: #9acd32;
   --code-tag: #556b2f;
   --code-value: #00dfa2;
+  --codeFont: var(--font-text);
   --coral: #ff725b;
   --dark-green: #32cd32;
   --dark-yellow: #ffd700;
@@ -77,6 +79,8 @@ export const theme: ThemeData = {
   --h5-weight: 300;
   --h6-size: 0.9rem;
   --h6-weight: 300;
+  --headerFont: var(--font-text);
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: #00dfa2;
   --icon-color-focused: #00dfa2;
   --indentation-guide-color: #171717;
@@ -89,6 +93,8 @@ export const theme: ThemeData = {
   --input-focus-outline: 1px solid Canvas;
   --input-unfocused-border-color: transparent;
   --italic-color: #f6fa70;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #f6fa70;
   --link-color-hover: #ff725b;
   --link-decoration-hover: #556b2f;
@@ -154,6 +160,8 @@ export const theme: ThemeData = {
   --text-highlight-bg: #ffd700;
   --text-highlight-bg-active: #ffd700;
   --text-selection: #556b2f;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #444444;
   --toggle-radius: 20px;
   --toggle-thumb-color: #171717;
@@ -658,6 +666,7 @@ body kbd {
   --blockquote-border-color: #f6fa70;
   --blockquote-border-thickness: 4px;
   --blur-background: color-mix(in srgb, #f0f0f0 65%, transparent) linear-gradient(#f0f0f0, color-mix(in srgb, #f0f0f0 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: #ffd700;
   --callout-radius: 0px;
   --canvas-background: #f0f0f0;
@@ -680,6 +689,7 @@ body kbd {
   --code-string: #8b008b;
   --code-tag: #228b22;
   --code-value: #008000;
+  --codeFont: var(--font-text);
   --coral: #ff725b;
   --dark-green: #32cd32;
   --dark-yellow: #ffd700;
@@ -714,6 +724,8 @@ body kbd {
   --h5-weight: 300;
   --h6-size: 0.9rem;
   --h6-weight: 300;
+  --headerFont: var(--font-text);
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: #32cd32;
   --icon-color-focused: #32cd32;
   --indentation-guide-color: #f0f0f0;
@@ -726,6 +738,8 @@ body kbd {
   --input-focus-outline: 1px solid Canvas;
   --input-unfocused-border-color: transparent;
   --italic-color: #ffd700;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #ffd700;
   --link-external-color: #ffd700;
   --link-unresolved-color: #4682b4;
@@ -790,6 +804,8 @@ body kbd {
   --text-highlight-bg: #ffd700;
   --text-highlight-bg-active: #ffd700;
   --text-selection: #ffd700;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #e6e6fa;
   --toggle-radius: 20px;
   --toggle-thumb-color: #f0f0f0;

@@ -66,6 +66,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: hsl(285.3488372093deg, 100%, 83%);
   --blockquote-border-thickness: 4px;
   --blur-background: color-mix(in srgb, #222222 65%, transparent) linear-gradient(#222222, color-mix(in srgb, #222222 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: hsl(106.9879518072deg, 62%, 74%);
   --bold-weight: 700;
   --border-width: 0px;
@@ -161,6 +162,7 @@ export const theme: ThemeData = {
   --code-string: #a5e693;
   --code-tag: #f5988f;
   --code-value: #ac9df2;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #505050;
   --collapse-icon-color-collapsed: hsl(106.9879518072deg, 62%, 74%);
   --color-accent: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
@@ -231,6 +233,8 @@ export const theme: ThemeData = {
   --complement-h: 285.3488372093deg;
   --complement-l: 83.137254902%;
   --complement-s: 100%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: hsl(106.9879518072deg, 62%, 74%);
   --divider-width: 0px;
@@ -294,6 +298,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #a5e693;
   --graph-node-unresolved: #505050;
   --graph-text: #909090;
+  --gray: var(--text-muted);
   --h1-color: #ffffff;
   --h1-size: 1.802em;
   --h1-weight: 500;
@@ -311,7 +316,9 @@ export const theme: ThemeData = {
   --h5-weight: 500;
   --h6-color: #ffffff;
   --h6-weight: 500;
+  --headerFont: var(--font-text);
   --heading-formatting: #505050;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #222222;
   --icon-color: #707070;
   --icon-color-active: hsl(106.9879518072deg, 62%, 74%);
@@ -337,6 +344,8 @@ export const theme: ThemeData = {
   --interactive-hover: #303030;
   --interactive-normal: #222222;
   --italic-color: hsl(285.3488372093deg, 100%, 83%);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: hsl(285.3488372093deg, 100%, 83.137254902%);
   --link-color-hover: hsl(285.3488372093deg, 100%, 93%);
   --link-external-color: hsl(285.3488372093deg, 100%, 83.137254902%);
@@ -453,6 +462,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #707070;
   --search-icon-color: #707070;
   --search-result-background: #1a1a1a;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #909090;
   --setting-items-background: #1a1a1a;
   --setting-items-border-color: #222222;
@@ -532,6 +542,7 @@ export const theme: ThemeData = {
     73.9215686275%, 0.15);
   --tag-color: hsl(106.9879518072deg, 62%, 74%);
   --tag-color-hover: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(106.9879518072deg, 62%, 74%);
   --text-accent-hover: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
   --text-complement: hsl(285.3488372093deg, 100%, 83%);
@@ -548,6 +559,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(255, 255, 255, 0.2);
   --text-success: #a5e693;
   --text-warning: #ffc8a3;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #121212;
   --titlebar-background-focused: #121212;
   --titlebar-border-color: #222222;

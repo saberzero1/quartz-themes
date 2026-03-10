@@ -172,7 +172,9 @@ export const theme: ThemeData = {
   --color-base-35: rgb(70, 61, 42);
   --color-base-40: rgb(89, 77, 54);
   --color-base-50: rgb(128, 111, 77);
+  --dark: var(--text-normal);
   --dark-blue: rgb(33, 42, 110);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(70, 61, 42);
   --divider-color-hover: rgb(194, 133, 10);
   --divider-width: 2px;
@@ -225,6 +227,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(245, 184, 61);
   --graph-node-unresolved: rgb(128, 111, 77);
   --graph-text: rgb(250, 219, 158);
+  --gray: var(--text-muted);
   --h1-color: rgb(250, 219, 158);
   --h2-color: rgb(250, 219, 158);
   --h3-color: rgb(250, 219, 158);
@@ -236,6 +239,7 @@ export const theme: ThemeData = {
   --header-height: 2em;
   --heading-formatting: rgb(128, 111, 77);
   --heading-spacing: 0;
+  --highlight: var(--background-modifier-hover);
   --highlighted-folder-background: rgb(54, 47, 33);
   --highlighted-folder-color: yellow;
   --highlighted-folder-current-note-color: rgb(245, 184, 61);
@@ -267,7 +271,9 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(245, 184, 61);
   --interactive-accent-hsl: 40, 90%, 40%;
   --interactive-hover: rgb(70, 61, 42);
+  --light: var(--background-primary);
   --light-blue: rgb(167, 195, 226);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.4em;
   --link-color: rgb(117, 158, 240);
   --link-color-hover: rgb(36, 24, 0);
@@ -375,6 +381,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(153, 133, 92);
   --search-icon-color: rgb(245, 184, 61);
   --search-result-background: rgb(32, 28, 19);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(250, 219, 158);
   --setting-group-heading-size: 16px;
   --setting-items-border-color: rgb(70, 61, 42);
@@ -457,6 +464,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(194, 133, 10, 0.15);
   --tag-color: rgb(36, 24, 0);
   --tag-color-hover: rgb(36, 24, 0);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(245, 184, 61);
   --text-accent-hover: rgb(36, 24, 0);
   --text-faint: rgb(128, 111, 77);
@@ -465,6 +473,7 @@ export const theme: ThemeData = {
   --text-on-accent: rgb(36, 24, 0);
   --text-on-accent-inverted: rgb(245, 184, 61);
   --text-selection: rgba(245, 184, 61, 0.2);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #333;
   --titlebar-background-focused: rgb(54, 47, 33);
   --titlebar-border-color: rgb(70, 61, 42);
@@ -1538,7 +1547,9 @@ body sup {
   --color-base-35: rgb(224, 205, 190);
   --color-base-40: rgb(110, 79, 53);
   --color-base-50: rgb(202, 171, 145);
+  --dark: var(--text-normal);
   --dark-blue: rgb(33, 42, 110);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(224, 205, 190);
   --divider-color-hover: rgb(217, 175, 140);
   --divider-width: 2px;
@@ -1593,6 +1604,7 @@ body sup {
   --graph-node-focused: rgb(217, 175, 140);
   --graph-node-unresolved: rgb(202, 171, 145);
   --graph-text: rgb(110, 79, 53);
+  --gray: var(--text-muted);
   --h1-color: rgb(110, 79, 53);
   --h2-color: rgb(110, 79, 53);
   --h3-color: rgb(110, 79, 53);
@@ -1604,6 +1616,7 @@ body sup {
   --header-height: 2em;
   --heading-formatting: rgb(202, 171, 145);
   --heading-spacing: 0;
+  --highlight: var(--background-modifier-hover);
   --highlighted-folder-background: rgb(230, 215, 203);
   --highlighted-folder-color: yellow;
   --highlighted-folder-current-note-color: rgb(191, 121, 64);
@@ -1636,7 +1649,9 @@ body sup {
   --interactive-accent-hsl: 27, 50%, 70%;
   --interactive-hover: rgb(191, 121, 64);
   --interactive-normal: rgb(249, 242, 236);
+  --light: var(--background-primary);
   --light-blue: rgb(167, 195, 226);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.4em;
   --link-color: rgb(83, 132, 172);
   --link-color-hover: rgb(249, 242, 236);
@@ -1743,6 +1758,7 @@ body sup {
   --search-clear-button-color: rgb(165, 118, 80);
   --search-icon-color: rgb(191, 121, 64);
   --search-result-background: rgb(245, 239, 234);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(110, 79, 53);
   --setting-group-heading-size: 16px;
   --setting-items-border-color: rgb(224, 205, 190);
@@ -1825,6 +1841,7 @@ body sup {
   --tag-border-color-hover: rgba(217, 175, 140, 0.15);
   --tag-color: rgb(250, 244, 240);
   --tag-color-hover: rgb(249, 242, 236);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(217, 175, 140);
   --text-accent-hover: rgb(249, 242, 236);
   --text-faint: rgb(202, 171, 145);
@@ -1833,6 +1850,7 @@ body sup {
   --text-on-accent: rgb(250, 244, 240);
   --text-on-accent-inverted: rgb(191, 121, 64);
   --text-selection: rgba(138, 98, 66, 0.2);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #333;
   --titlebar-background-focused: rgb(230, 215, 203);
   --titlebar-border-color: rgb(224, 205, 190);

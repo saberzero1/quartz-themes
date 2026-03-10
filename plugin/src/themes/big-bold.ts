@@ -58,6 +58,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: rgb(28, 32, 38);
   --blockquote-border-color: rgb(0, 176, 179);
   --blur-background: color-mix(in srgb, rgb(31, 36, 45) 65%, transparent) linear-gradient(rgb(31, 36, 45), color-mix(in srgb, rgb(31, 36, 45) 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-background: hsl(
     183,
     105%,
@@ -113,6 +114,7 @@ export const theme: ThemeData = {
   --code-string: #7dcf2b;
   --code-tag: #ff4d3a;
   --code-value: #b45af5;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(114, 125, 146);
   --collapse-icon-color-collapsed: rgb(0, 168, 160);
   --color-accent: rgb(0, 176, 179);
@@ -154,6 +156,8 @@ export const theme: ThemeData = {
   --custom-code-height: 1em;
   --custom-doc-bg: rgb(0, 168, 160);
   --custom-line-height: 2em;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(41, 49, 61);
   --divider-color-hover: rgb(0, 176, 179);
   --doc-background: rgb(43, 57, 70);
@@ -198,6 +202,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #7dcf2b;
   --graph-node-unresolved: rgb(114, 125, 146);
   --graph-text: #c8d4e6;
+  --gray: var(--text-muted);
   --h1-align: center;
   --h1-color-custom: #00cecb;
   --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -222,12 +227,14 @@ export const theme: ThemeData = {
   --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --h6-size: 1.1em;
   --h6-weight: 700;
+  --headerFont: var(--font-text);
   --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --heading-formatting: rgb(114, 125, 146);
   --heading-style: normal;
   --heading-variant: normal;
   --heading-weight: 700;
+  --highlight: var(--text-highlight-bg);
   --highlight-text: white;
   --hr-color: rgb(41, 49, 61);
   --icon-background: rgb(31, 36, 45);
@@ -258,6 +265,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 181, 100%, 35%;
   --interactive-hover: rgb(56, 65, 82);
   --interactive-normal: rgb(31, 36, 45);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(0, 168, 160);
   --link-color-hover: hsl(
     183,
@@ -350,6 +359,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(154, 163, 183);
   --search-icon-color: rgb(154, 163, 183);
   --search-result-background: rgb(28, 32, 38);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #c8d4e6;
   --setting-items-background: rgb(30, 34, 42);
   --setting-items-border-color: rgb(41, 49, 61);
@@ -415,6 +425,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(0, 176, 179, 0.15);
   --tag-color: rgb(0, 168, 160);
   --tag-color-hover: rgb(0, 168, 160);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(0, 168, 160);
   --text-accent-hover: hsl(
     183,
@@ -430,10 +441,12 @@ export const theme: ThemeData = {
   --text-selection: rgba(0, 176, 179, 0.25);
   --text-success: #7dcf2b;
   --text-warning: #f69c00;
+  --textHighlight: var(--text-highlight-bg);
   --tile-field-padding: 5px;
   --tile-img-radius: 14px;
   --tile-padding: 8px;
   --tile-radius: 14px;
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(33, 39, 49);
   --titlebar-background-focused: rgb(31, 36, 45);
   --titlebar-border-color: rgb(41, 49, 61);
@@ -1650,6 +1663,7 @@ body sup {
   --bases-table-summary-background: rgb(255, 255, 255);
   --blockquote-border-color: rgb(0, 168, 160);
   --blur-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-background: hsl(
     183,
     105%,
@@ -1709,6 +1723,7 @@ body sup {
   --code-string: #8fb26b;
   --code-tag: #c75f54;
   --code-value: #8076ad;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #878787;
   --collapse-icon-color-collapsed: rgb(0, 176, 179);
   --color-accent: rgb(0, 176, 179);
@@ -1750,6 +1765,8 @@ body sup {
   --custom-code-height: 1em;
   --custom-doc-bg: rgb(0, 168, 160);
   --custom-line-height: 2em;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #9f9f9f66;
   --divider-color-hover: rgb(0, 168, 160);
   --doc-background: rgb(240, 245, 245);
@@ -1794,6 +1811,7 @@ body sup {
   --graph-node-tag: #8fb26b;
   --graph-node-unresolved: #878787;
   --graph-text: #252525;
+  --gray: var(--text-muted);
   --h1-align: center;
   --h1-color-custom: #49a7ba;
   --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1818,12 +1836,14 @@ body sup {
   --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --h6-size: 1.1em;
   --h6-weight: 700;
+  --headerFont: var(--font-text);
   --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --heading-formatting: #878787;
   --heading-style: normal;
   --heading-variant: normal;
   --heading-weight: 700;
+  --highlight: var(--text-highlight-bg);
   --highlight-text: #252525;
   --hr-color: #9f9f9f66;
   --icon-background: #fcfcfc;
@@ -1858,6 +1878,8 @@ body sup {
   --interactive-accent-hsl: 181, 100%, 35%;
   --interactive-hover: #fdfdfd;
   --interactive-normal: rgb(255, 255, 255);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(0, 176, 179);
   --link-color-hover: hsl(
     183,
@@ -1946,6 +1968,7 @@ body sup {
   --search-clear-button-color: #7f7f7f;
   --search-icon-color: #7f7f7f;
   --search-result-background: rgb(255, 255, 255);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #252525;
   --setting-items-background: #fdfdfd;
   --setting-items-border-color: #9f9f9f66;
@@ -2007,6 +2030,7 @@ body sup {
   --tag-border-color-hover: rgba(0, 176, 179, 0.15);
   --tag-color: rgb(0, 176, 179);
   --tag-color-hover: rgb(0, 176, 179);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(0, 176, 179);
   --text-accent-hover: hsl(
     183,
@@ -2022,10 +2046,12 @@ body sup {
   --text-selection: rgba(0, 176, 179, 0.2);
   --text-success: #8fb26b;
   --text-warning: #d08344;
+  --textHighlight: var(--text-highlight-bg);
   --tile-field-padding: 5px;
   --tile-img-radius: 14px;
   --tile-padding: 8px;
   --tile-radius: 14px;
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(245, 245, 245);
   --titlebar-border-color: #9f9f9f66;
   --titlebar-text-color: #7f7f7f;

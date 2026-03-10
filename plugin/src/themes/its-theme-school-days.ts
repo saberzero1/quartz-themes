@@ -70,6 +70,7 @@ export const theme: ThemeData = {
   --blockquote-padding: 12px 24px;
   --blockquote-padding-lp: 7px 0;
   --blur-background: color-mix(in srgb, #0e0f15 65%, transparent) linear-gradient(#0e0f15, color-mix(in srgb, #0e0f15 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-modifier: 500;
   --bold-weight: 900;
   --box-border: 2px solid #0e0f15;
@@ -131,6 +132,7 @@ export const theme: ThemeData = {
   --code-shadow: 0 2px 0 #0e0f15;
   --code-size: .90em;
   --code-text: #e6a210;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #4e5b6f;
   --collapse-icon-color-collapsed: #586477;
   --color-accent: rgb(186, 64, 64);
@@ -138,8 +140,10 @@ export const theme: ThemeData = {
   --color-accent-2: rgb(209, 113, 121);
   --color-accent-hsl: 0, 49%, 49%;
   --comment-font: "Recursive Mono Linear Static Medium", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --dark: var(--text-normal);
   --dark-accent: #2b3550;
   --dark-sidebar: #10161d;
+  --darkgray: var(--text-normal);
   --dataview-table-width: 100%;
   --dataview-th-alt-color: rgba(134, 55, 55, 0.1);
   --dataview-th-background: #0e0f15;
@@ -263,6 +267,7 @@ export const theme: ThemeData = {
   --graph-node-unresolved: #586477;
   --graph-tag: #2b3550;
   --graph-text: #dcddde;
+  --gray: var(--text-muted);
   --h1-background: transparent;
   --h1-border-color: #d0913d;
   --h1-border-left-color: #2f3440;
@@ -376,6 +381,7 @@ export const theme: ThemeData = {
   --header-solve: #c7c7c7;
   --header-text-align: start;
   --header-weight: 700;
+  --headerFont: var(--font-text);
   --headers: #4378c1;
   --heading-formatting: #586477;
   --heading-spacing: 10px;
@@ -464,6 +470,8 @@ export const theme: ThemeData = {
   --latex-color: #b2cfff;
   --latex-format-color: #61afef;
   --latex-syntax-color: #ebbd3e;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.3em;
   --lines: #414b5c;
   --link-background: transparent;
@@ -658,6 +666,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #aab3ca;
   --search-icon-color: #aab3ca;
   --search-result-background: #1a1e24;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #dcddde;
   --setting-item-alt-background-hover: #06080c60;
   --setting-item-background-hover: rgba(65, 82, 119, 0.31);
@@ -830,6 +839,7 @@ export const theme: ThemeData = {
   --tag-text: #d04e4e;
   --tall: 700px;
   --td: #06080c60;
+  --tertiary: var(--text-accent-hover);
   --text: #dcddde;
   --text-accent: #61afef;
   --text-accent-hover: #d0913d;
@@ -841,6 +851,7 @@ export const theme: ThemeData = {
   --text-normal: #dcddde;
   --text-on-accent: #e5ebee;
   --text-selection: rgba(86, 128, 226, 0.4);
+  --textHighlight: var(--text-highlight-bg);
   --th: #2b3550;
   --th-text: #e5ebee;
   --theme-rainbow-1: #d0913d;
@@ -850,6 +861,7 @@ export const theme: ThemeData = {
   --theme-rainbow-5: #273346;
   --theme-rainbow-6: #212731;
   --tiny: 100px;
+  --titleFont: var(--font-text);
   --titlebar-background: #1a1e24;
   --titlebar-background-focused: #0e0f15;
   --titlebar-border-color: #2f3440;
@@ -1933,6 +1945,7 @@ body sup {
   --blockquote-padding: 12px 24px;
   --blockquote-padding-lp: 7px 0;
   --blur-background: color-mix(in srgb, #f8fbff 65%, transparent) linear-gradient(#f8fbff, color-mix(in srgb, #f8fbff 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-modifier: 500;
   --bold-weight: 900;
   --box-border: 2px solid #e1e6ed;
@@ -1994,6 +2007,7 @@ body sup {
   --code-shadow: 0 2px 0 #e1e6ed;
   --code-size: .90em;
   --code-text: #ebab16;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #4e5b6f;
   --collapse-icon-color-collapsed: #91a3c1;
   --color-accent: rgb(186, 64, 64);
@@ -2001,8 +2015,10 @@ body sup {
   --color-accent-2: rgb(199, 87, 92);
   --color-accent-hsl: 0, 49%, 49%;
   --comment-font: "Recursive Mono Linear Static Medium", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --dark: var(--text-normal);
   --dark-accent: #4382c1;
   --dark-sidebar: #f1f5ff;
+  --darkgray: var(--text-normal);
   --dataview-table-width: 100%;
   --dataview-th-alt-color: rgba(109, 153, 212, 0.1);
   --dataview-th-background: #e3f0fd;
@@ -2126,6 +2142,7 @@ body sup {
   --graph-node-unresolved: #727e93;
   --graph-tag: #000000;
   --graph-text: #697580;
+  --gray: var(--text-muted);
   --h1-background: transparent;
   --h1-border-color: #e6af66;
   --h1-border-left-color: #c9ced9;
@@ -2239,6 +2256,7 @@ body sup {
   --header-solve: #a87643;
   --header-text-align: start;
   --header-weight: 700;
+  --headerFont: var(--font-text);
   --headers: #4382c1;
   --heading-formatting: #91a3c1;
   --heading-spacing: 10px;
@@ -2328,6 +2346,8 @@ body sup {
   --latex-color: #5895fa;
   --latex-format-color: #9ed3ff;
   --latex-syntax-color: #fdaf00;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.3em;
   --lines: #d6deea;
   --link-background: transparent;
@@ -2520,6 +2540,7 @@ body sup {
   --search-clear-button-color: #6f8fd8;
   --search-icon-color: #6f8fd8;
   --search-result-background: #f8fbff;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #697580;
   --setting-item-alt-background-hover: #d0ddef62;
   --setting-item-background-hover: rgba(149, 192, 229, 0.37);
@@ -2692,6 +2713,7 @@ body sup {
   --tag-text: #e6af66;
   --tall: 700px;
   --td: #d0ddef62;
+  --tertiary: var(--text-accent-hover);
   --text: #697580;
   --text-accent: #5599d0;
   --text-accent-hover: #e6af66;
@@ -2703,6 +2725,7 @@ body sup {
   --text-normal: #697580;
   --text-on-accent: #e5ebee;
   --text-selection: rgba(118, 186, 253, 0.4);
+  --textHighlight: var(--text-highlight-bg);
   --th: #b48c55;
   --th-text: #e5ebee;
   --theme-rainbow-1: #e6af66;
@@ -2712,6 +2735,7 @@ body sup {
   --theme-rainbow-5: #b48c55;
   --theme-rainbow-6: #727e93;
   --tiny: 100px;
+  --titleFont: var(--font-text);
   --titlebar-background: #f8fbff;
   --titlebar-background-focused: #e3f0fd;
   --titlebar-border-color: #c9ced9;

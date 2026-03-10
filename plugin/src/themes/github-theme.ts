@@ -116,6 +116,8 @@ export const theme: ThemeData = {
   --color-red: #F47067;
   --color-red-rgb: 248, 81, 73;
   --color-yellow: #d29922;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #30363d;
   --divider-color-hover: rgb(87, 165, 255);
   --dropdown-background: #30363d;
@@ -141,6 +143,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #7ee787;
   --graph-node-unresolved: #6e7681;
   --graph-text: #c9d1d9;
+  --gray: var(--text-muted);
   --h-color-theme: #7ee787;
   --h1-color: #7ee787;
   --h1-color-theme: #7ee787;
@@ -165,6 +168,7 @@ export const theme: ThemeData = {
   --h6-color-theme: #7ee787;
   --h6-size: 1.12em;
   --heading-formatting: #6e7681;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #30363d;
   --icon-color: #8b949e;
   --icon-color-active: rgb(66, 154, 255);
@@ -188,6 +192,8 @@ export const theme: ThemeData = {
   --kanban-lane-border: #21262d;
   --kanban-lane-count: #21262d;
   --kanban-options-btn: #30363d;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(66, 154, 255);
   --link-color-hover: rgb(107, 176, 255);
   --link-decoration: none;
@@ -259,6 +265,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #8b949e;
   --search-icon-color: #8b949e;
   --search-result-background: #0d1117;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #c9d1d9;
   --setting-items-background: #161b22;
   --setting-items-border-color: #30363d;
@@ -312,6 +319,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(87, 165, 255, 0.15);
   --tag-color: rgb(66, 154, 255);
   --tag-color-hover: rgb(66, 154, 255);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(66, 154, 255);
   --text-accent-hover: rgb(107, 176, 255);
   --text-error: #F47067;
@@ -322,6 +330,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(87, 165, 255, 0.4);
   --text-success: #7ee787;
   --text-warning: #FFA657;
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #161b22;
   --titlebar-background-focused: #010409;
   --titlebar-border-color: #30363d;
@@ -1335,6 +1344,8 @@ body sup {
   --color-red: #cf222e;
   --color-red-rgb: 228, 55, 75;
   --color-yellow: #BD8E37;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #d0d7de;
   --divider-color-hover: rgb(10, 115, 235);
   --dropdown-background-hover: #f6f8fa;
@@ -1355,6 +1366,7 @@ body sup {
   --graph-node-tag: #0cb54f;
   --graph-node-unresolved: #6e7781;
   --graph-text: #24292f;
+  --gray: var(--text-muted);
   --h-color-theme: #24292f;
   --h1-color: #24292f;
   --h1-color-theme: #24292f;
@@ -1379,6 +1391,7 @@ body sup {
   --h6-color-theme: #24292f;
   --h6-size: 1.12em;
   --heading-formatting: #6e7781;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #d0d7de;
   --icon-color: #57606a;
   --icon-color-active: rgb(9, 108, 220);
@@ -1401,6 +1414,8 @@ body sup {
   --kanban-lane-border: #d8dee4;
   --kanban-lane-count: #aeb8c133;
   --kanban-options-btn: #f6f8fa;
+  --light: var(--background-primary-alt);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(9, 108, 220);
   --link-color-hover: rgb(10, 120, 245);
   --link-decoration: none;
@@ -1461,6 +1476,7 @@ body sup {
   --ribbon-background: #f6f8fa;
   --search-clear-button-color: #57606a;
   --search-icon-color: #57606a;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #24292f;
   --setting-items-background: #f6f8fa;
   --setting-items-border-color: #d0d7de;
@@ -1512,6 +1528,7 @@ body sup {
   --tag-border-color-hover: rgba(9, 108, 220, 0.15);
   --tag-color: rgb(9, 108, 220);
   --tag-color-hover: rgb(9, 108, 220);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(9, 108, 220);
   --text-accent-hover: rgb(10, 120, 245);
   --text-error: #cf222e;
@@ -1522,6 +1539,7 @@ body sup {
   --text-selection: rgba(9, 108, 220, 0.2);
   --text-success: #0cb54f;
   --text-warning: #d96c00;
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #f6f8fa;
   --titlebar-border-color: #d0d7de;
   --titlebar-text-color: #57606a;

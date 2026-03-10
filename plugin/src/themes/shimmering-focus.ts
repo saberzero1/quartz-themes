@@ -62,6 +62,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: hsl(230/**/15%22%);
   --blockquote-border-thickness: 8px;
   --blur-background: color-mix(in srgb, hsl(230/**/15%12%) 65%, transparent) linear-gradient(hsl(230/**/15%12%), color-mix(in srgb, hsl(230/**/15%12%) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: #ed5aa8;
   --bold-weight: 600;
   --callout-padding: 8px;
@@ -84,6 +85,7 @@ export const theme: ThemeData = {
   --code-comment: hsl(230/**/15%40%);
   --code-normal: hsl(230/**/30%82%);
   --code-punctuation: hsl(230/**/15%73%);
+  --codeFont: var(--font-text);
   --collapse-icon-color: hsl(230/**/15%40%);
   --collapse-icon-color-collapsed: #18c1cd;
   --color-accent: #18c1cd;
@@ -102,6 +104,8 @@ export const theme: ThemeData = {
   --color-base-60: hsl(230/**/15%60%);
   --color-base-70: hsl(230/**/15%73%);
   --color-base-85s: hsl(230/**/30%82%);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: hsl(230/**/15%22%);
   --divider-color-hover: #ed5aa8;
   --divider-width: 2px;
@@ -134,6 +138,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #18c1cd;
   --graph-node-unresolved: hsl(230/**/15%40%);
   --graph-text: hsl(230/**/30%82%);
+  --gray: var(--text-muted);
   --h1-font: "Optima","Recursive S";
   --h1-size: 1.7em;
   --h2-font: "Optima","Recursive S";
@@ -146,10 +151,12 @@ export const theme: ThemeData = {
   --h5-size: 1.1em;
   --h6-font: "Optima","Recursive S";
   --h6-size: 1em;
+  --headerFont: var(--font-text);
   --heading-formatting: hsl(230/**/15%40%);
   --heading-letter-spacing: 1.5px;
   --heading-scaling: 1;
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-active-hover);
   --highlight-hue-1: 50;
   --highlight-sla-values: 85% 40%/40%;
   --hotkey-color: #da975d;
@@ -180,6 +187,8 @@ export const theme: ThemeData = {
   --interactive-hover: hsl(230/**/15%16%);
   --interactive-normal: hsl(230/**/15%12%);
   --italic-color: #ed5aa8;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.2;
   --link-color: #18c1cd;
   --link-color-hover: #ed5aa8;
@@ -256,6 +265,7 @@ export const theme: ThemeData = {
   --search-icon-color: hsl(230/**/15%73%);
   --search-match-color: #e0de71;
   --search-result-background: hsl(230/**/15%12%);
+  --secondary: var(--text-accent);
   --secondary-accent: #da975d;
   --setting-group-heading-color: hsl(230/**/30%82%);
   --setting-items-background: hsl(230/**/15%14%);
@@ -309,6 +319,7 @@ export const theme: ThemeData = {
   --tag-padding-x: 0;
   --tag-padding-y: 0;
   --tag-size: 1em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #18c1cd;
   --text-accent-hover: #ed5aa8;
   --text-faint: hsl(230/**/15%40%);
@@ -317,8 +328,10 @@ export const theme: ThemeData = {
   --text-normal: hsl(230/**/30%82%);
   --text-on-accent: #fff;
   --text-selection: rgb(24, 193, 205);
+  --textHighlight: var(--background-modifier-active-hover);
   --thin-border: 1px solid hsl(230/**/15%40%);
   --thin-muted-border: 1px solid hsl(230/**/15%22%);
+  --titleFont: var(--font-text);
   --titlebar-background: hsl(230/**/15%25%);
   --titlebar-background-focused: hsl(230/**/15%22%);
   --titlebar-border-color: hsl(230/**/15%22%);
@@ -1369,6 +1382,7 @@ body sup {
   --blockquote-border-color: hsl(230/**/25%88%);
   --blockquote-border-thickness: 8px;
   --blur-background: color-mix(in srgb, hsl(230/**/37.5%99%) 65%, transparent) linear-gradient(hsl(230/**/37.5%99%), color-mix(in srgb, hsl(230/**/37.5%99%) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: #dc388f;
   --bold-weight: 600;
   --callout-padding: 8px;
@@ -1392,6 +1406,7 @@ body sup {
   --code-normal: hsl(230/**/50%24%);
   --code-property: #279b99;
   --code-punctuation: hsl(230/**/25%35%);
+  --codeFont: var(--font-text);
   --collapse-icon-color: hsl(230/**/25%67%);
   --collapse-icon-color-collapsed: #1396a0;
   --color-accent: #1396a0;
@@ -1411,6 +1426,8 @@ body sup {
   --color-base-70: hsl(230/**/25%35%);
   --color-base-85s: hsl(230/**/50%24%);
   --color-cyan: #279b99;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: hsl(230/**/25%92%);
   --divider-color-hover: #dc388f;
   --divider-width: 2px;
@@ -1443,6 +1460,7 @@ body sup {
   --graph-node-focused: #1396a0;
   --graph-node-unresolved: hsl(230/**/25%67%);
   --graph-text: hsl(230/**/50%24%);
+  --gray: var(--text-muted);
   --h1-font: "Optima","Recursive S";
   --h1-size: 1.7em;
   --h2-font: "Optima","Recursive S";
@@ -1455,10 +1473,12 @@ body sup {
   --h5-size: 1.1em;
   --h6-font: "Optima","Recursive S";
   --h6-size: 1em;
+  --headerFont: var(--font-text);
   --heading-formatting: hsl(230/**/25%67%);
   --heading-letter-spacing: 1.5px;
   --heading-scaling: 1;
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-active-hover);
   --highlight-hue-1: 50;
   --highlight-sla-values: 85% 70%/40%;
   --hotkey-color: #c67e3f;
@@ -1489,6 +1509,8 @@ body sup {
   --interactive-hover: hsl(230/**/25%95%);
   --interactive-normal: hsl(230/**/37.5%99%);
   --italic-color: #dc388f;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.2;
   --link-color: #1396a0;
   --link-color-hover: #dc388f;
@@ -1563,6 +1585,7 @@ body sup {
   --search-icon-color: hsl(230/**/25%35%);
   --search-match-color: #ec7500;
   --search-result-background: hsl(230/**/37.5%99%);
+  --secondary: var(--text-accent);
   --secondary-accent: #c67e3f;
   --setting-group-heading-color: hsl(230/**/50%24%);
   --setting-items-background: hsl(230/**/25%97%);
@@ -1617,6 +1640,7 @@ body sup {
   --tag-padding-x: 0;
   --tag-padding-y: 0;
   --tag-size: 1em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #1396a0;
   --text-accent-hover: #dc388f;
   --text-faint: hsl(230/**/25%67%);
@@ -1625,8 +1649,10 @@ body sup {
   --text-normal: hsl(230/**/50%24%);
   --text-on-accent: #fff;
   --text-selection: rgb(19, 150, 160);
+  --textHighlight: var(--background-modifier-active-hover);
   --thin-border: 1px solid hsl(230/**/25%67%);
   --thin-muted-border: 1px solid hsl(230/**/25%88%);
+  --titleFont: var(--font-text);
   --titlebar-background: hsl(230/**/25%88%);
   --titlebar-background-focused: hsl(230/**/25%92%);
   --titlebar-border-color: hsl(230/**/25%88%);

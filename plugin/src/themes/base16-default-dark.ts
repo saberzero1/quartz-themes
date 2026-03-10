@@ -79,6 +79,8 @@ export const theme: ThemeData = {
   --color-purple: #ba8baf;
   --color-red: #ab4642;
   --color-yellow: #f7ca88;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #383838;
   --divider-color-hover: #484848;
   --dropdown-background: #282828;
@@ -99,9 +101,11 @@ export const theme: ThemeData = {
   --graph-node-tag: #a1b56c;
   --graph-node-unresolved: #585858;
   --graph-text: #d8d8d8;
+  --gray: var(--text-muted);
   --heading-color: #d8d8d8;
   --heading-formatting: #585858;
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: #383838;
   --icon-color: #b8b8b8;
   --icon-color-active: #7cafc2;
@@ -118,6 +122,8 @@ export const theme: ThemeData = {
   --interactive-normal: #282828;
   --interactive-success: #a1b56c;
   --italic-color: #a1b56c;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #7cafc2;
   --link-color-hover: #86c1b9;
   --link-external-color: #ba8baf;
@@ -178,6 +184,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #b8b8b8;
   --search-icon-color: #b8b8b8;
   --search-result-background: #181818;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #d8d8d8;
   --setting-items-background: #181818;
   --setting-items-border-color: #383838;
@@ -225,6 +232,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(138, 92, 245, 0.15);
   --tag-color: #7cafc2;
   --tag-color-hover: #7cafc2;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #7cafc2;
   --text-accent-hover: #86c1b9;
   --text-error: #ab4642;
@@ -235,6 +243,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(124, 175, 194, 0.3);
   --text-success: #a1b56c;
   --text-warning: #dc9656;
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: #181818;
   --titlebar-background-focused: #181818;
   --titlebar-border-color: #383838;
@@ -1274,6 +1283,7 @@ body sup {
   --embed-border-start: 2px solid rgb(153, 115, 247);
   --graph-node-focused: rgb(138, 92, 245);
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-active-hover);
   --icon-color-active: rgb(138, 92, 245);
   --interactive-accent: rgb(153, 115, 247);
   --interactive-accent-hover: rgb(166, 139, 249);
@@ -1293,6 +1303,7 @@ body sup {
   --nav-item-color-highlighted: rgb(138, 92, 245);
   --pill-color-remove-hover: rgb(138, 92, 245);
   --popover-width: 600px;
+  --secondary: var(--text-accent);
   --sidebar-markdown-font-size: 14.4px;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245);
   --tab-text-color-focused-highlighted: rgb(138, 92, 245);
@@ -1306,9 +1317,11 @@ body sup {
   --tag-border-color-hover: rgba(138, 92, 245, 0.15);
   --tag-color: rgb(138, 92, 245);
   --tag-color-hover: rgb(138, 92, 245);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(166, 139, 249);
   --text-selection: rgba(138, 92, 245, 0.2);
+  --textHighlight: var(--background-modifier-active-hover);
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --quartz-icon-color: currentColor;
 }`,

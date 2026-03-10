@@ -24,6 +24,8 @@ export const theme: ThemeData = {
   --checkbox-marker-color: #282a36;
   --code-background: #44475a;
   --code-normal: #f8f8f2;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: #b294bb;
   --embed-border-start: 2px solid #b294bb;
   --file-header-background: #282a36;
@@ -32,9 +34,12 @@ export const theme: ThemeData = {
   --font-family-editor: Avenir, Avenir Next, sans-serif;
   --font-family-preview: Avenir, Avenir Next, sans-serif;
   --graph-text: #f8f8f2;
+  --gray: var(--text-normal);
   --icon-color-focused: #f8f8f2;
   --interactive-accent: #b294bb;
   --interactive-accent-rgb: #f1fa8c;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --markup-code: #ffb86c;
   --menu-background: #282a36;
   --metadata-input-text-color: #f8f8f2;
@@ -52,6 +57,7 @@ export const theme: ThemeData = {
   --ribbon-background: #282a36;
   --ribbon-background-collapsed: #282a36;
   --search-result-background: #282a36;
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: #f8f8f2;
   --setting-items-background: #44475a;
   --status-bar-background: #282a36;

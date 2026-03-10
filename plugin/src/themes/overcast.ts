@@ -15,6 +15,8 @@ export const theme: ThemeData = {
   --divider-width: 0px;
   --file-header-background: semi-transparent;
   --file-header-background-focused: semi-transparent;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: semi-transparent;
   --modal-background: semi-transparent;
   --pdf-background: semi-transparent;

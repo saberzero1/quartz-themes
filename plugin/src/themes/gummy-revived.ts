@@ -33,6 +33,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: #808080;
   --bases-table-summary-background: #090909;
   --blur-background: color-mix(in srgb, #1F1F1F 65%, transparent) linear-gradient(#1F1F1F, color-mix(in srgb, #1F1F1F 65%, transparent));
+  --bodyFont: var(--font-text);
   --callout-blend-mode: normal;
   --callout-radius: 8px;
   --canvas-background: #090909;
@@ -50,6 +51,7 @@ export const theme: ThemeData = {
   --code-comment: #5F5F5F;
   --code-normal: #bdbdbd;
   --code-punctuation: #808080;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #5F5F5F;
   --color-base-00: #090909;
   --color-base-10: #1F1F1F;
@@ -62,6 +64,8 @@ export const theme: ThemeData = {
   --color-base-50: #808080;
   --color-base-60: #5F5F5F;
   --color-base-70: #bdbdbd;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #1F1F1F;
   --dropdown-background: #1F1F1F;
   --dropdown-background-hover: #383838;
@@ -88,6 +92,7 @@ export const theme: ThemeData = {
   --graph-node: #808080;
   --graph-node-unresolved: #5F5F5F;
   --graph-text: #bdbdbd;
+  --gray: var(--text-muted);
   --h1-color: #dddddd;
   --h1-font: 'Peace Sans';
   --h1-gradient-accent: #bec4ff;
@@ -112,6 +117,7 @@ export const theme: ThemeData = {
   --h6-font: 'Peace Sans';
   --h6-gradient-accent: #e990eb;
   --h6-weight: 00;
+  --headerFont: var(--font-text);
   --heading-formatting: #5F5F5F;
   --hr-color: #1F1F1F;
   --icon-color: #808080;
@@ -124,6 +130,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: #5F5F5F;
   --interactive-hover: #383838;
   --interactive-normal: #1F1F1F;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #808080;
   --link-color-hover: #bdbdbd;
   --link-decoration-hover: none;
@@ -207,6 +215,7 @@ export const theme: ThemeData = {
   --text-faint: #5F5F5F;
   --text-muted: #808080;
   --text-normal: #bdbdbd;
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: #1F1F1F;
@@ -1291,6 +1300,7 @@ body sup {
   --bases-table-summary-background: #FFF;
   --blockquote-border-color: rgb(138, 92, 245);
   --blur-background: color-mix(in srgb, #FFF 65%, transparent) linear-gradient(#FFF, color-mix(in srgb, #FFF 65%, transparent));
+  --bodyFont: var(--font-text);
   --callout-blend-mode: normal;
   --callout-radius: 8px;
   --canvas-background: #FFF;
@@ -1309,6 +1319,7 @@ body sup {
   --code-comment: #707070;
   --code-normal: #5A5A5A;
   --code-punctuation: #ABABAB;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #707070;
   --color-base-00: #FFF;
   --color-base-05: #FCFCFC;
@@ -1321,6 +1332,8 @@ body sup {
   --color-base-40: #BDBDBD;
   --color-base-50: #ABABAB;
   --color-base-70: #5A5A5A;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #E0E0E0;
   --divider-color-hover: rgb(138, 92, 245);
   --dropdown-background: #FFF;
@@ -1349,6 +1362,7 @@ body sup {
   --graph-node: #ABABAB;
   --graph-node-unresolved: #707070;
   --graph-text: #5A5A5A;
+  --gray: var(--text-muted);
   --h1-color: #686868;
   --h1-font: 'Peace Sans';
   --h1-gradient-accent: #5968fb;
@@ -1373,6 +1387,7 @@ body sup {
   --h6-font: 'Peace Sans';
   --h6-gradient-accent: #f21bf6;
   --h6-weight: 00;
+  --headerFont: var(--font-text);
   --heading-formatting: #707070;
   --hr-color: #E0E0E0;
   --icon-color: #ABABAB;
@@ -1386,6 +1401,8 @@ body sup {
   --interactive-accent: rgb(138, 92, 245);
   --interactive-hover: #FAFAFA;
   --interactive-normal: #FFF;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #ABABAB;
   --link-color-hover: #5A5A5A;
   --link-decoration-hover: none;
@@ -1439,6 +1456,7 @@ body sup {
   --search-clear-button-color: #ABABAB;
   --search-icon-color: #ABABAB;
   --search-result-background: #FFF;
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: #5A5A5A;
   --setting-items-background: #FAFAFA;
   --setting-items-border-color: #E0E0E0;
@@ -1470,6 +1488,7 @@ body sup {
   --text-muted: #ABABAB;
   --text-normal: #5A5A5A;
   --text-selection: #E0E0E0;
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: #E0E0E0;

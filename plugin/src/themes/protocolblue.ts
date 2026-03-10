@@ -90,10 +90,12 @@ export const theme: ThemeData = {
   --color-teal0-rgb: #009999;
   --color-yellow: #eeec79;
   --cursor-line-background: rgba(#009999, 0.2);
+  --dark: var(--text-normal);
   --dark0: #242424;
   --dark1: #202020;
   --dark2: #393939;
   --dark3: #424242;
+  --darkgray: var(--text-normal);
   --dataview-key: #d8dee9;
   --dataview-key-background: rgba(#81a1c1, 0.3);
   --dataview-value: #d8dee9;
@@ -121,6 +123,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #007991;
   --graph-node-unresolved: #d8dee9;
   --graph-text: #eceff4;
+  --gray: var(--text-muted);
   --green: #37c991;
   --h1-color: #009999;
   --h2-color: #8fbcbb;
@@ -129,6 +132,7 @@ export const theme: ThemeData = {
   --h5-color: #007991;
   --h6-color: #ffffff;
   --heading-formatting: #d8dee9;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #393939;
   --icon-color: #e5e9f0;
   --icon-color-active: #009999;
@@ -141,10 +145,12 @@ export const theme: ThemeData = {
   --interactive-accent-hover: hsl(177, 102%, 34.5%);
   --interactive-accent-hsl: 180, 100%, 30%;
   --italic-color: #ffffff;
+  --light: var(--background-primary);
   --light0: #d8dee9;
   --light1: #e5e9f0;
   --light2: #eceff4;
   --light3: #ffffff;
+  --lightgray: var(--background-secondary);
   --link-color: #009999;
   --link-color-hover: #ffffff;
   --link-decoration: none;
@@ -206,6 +212,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #e5e9f0;
   --search-icon-color: #e5e9f0;
   --search-result-background: #242424;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #eceff4;
   --setting-items-border-color: #393939;
   --slider-track-background: #393939;
@@ -262,6 +269,7 @@ export const theme: ThemeData = {
   --teal2: #00fff2;
   --teal3: #3aa0b9;
   --teal4: #007991;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #009999;
   --text-accent-hover: #ffffff;
   --text-error: #ff5c5c;
@@ -273,6 +281,7 @@ export const theme: ThemeData = {
   --text-selection: #007991;
   --text-success: #37c991;
   --text-warning: #ff9035;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #242424;
   --titlebar-background-focused: #242424;
   --titlebar-border-color: #393939;

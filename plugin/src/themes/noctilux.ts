@@ -59,6 +59,8 @@ export const theme: ThemeData = {
   --color-base-50: #666;
   --color-base-60: #999;
   --color-base-70: #bbb;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #333;
   --divider-color-hover: #5e5cff;
   --dropdown-background: #333;
@@ -79,6 +81,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #58a6ff;
   --graph-node-unresolved: #666;
   --graph-text: #fff;
+  --gray: var(--text-muted);
   --h1-color: #0fb6d6;
   --h2-color: #cbdbe5;
   --h3-color: #cbdbe5;
@@ -100,6 +103,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: #ffffff;
   --interactive-hover: #363636;
   --interactive-normal: #333;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --link-color: #58a6ff;
   --link-color-hover: #ffffff;
@@ -153,6 +158,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #bbb;
   --search-icon-color: #bbb;
   --search-result-background: #0e0e0e;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #fff;
   --setting-items-background: #1a1a1a;
   --setting-items-border-color: #333;
@@ -184,6 +190,7 @@ export const theme: ThemeData = {
   --tag-background: rgba(88, 166, 255, 0.15);
   --tag-color: #58a6ff;
   --tag-color-hover: #58a6ff;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #58a6ff;
   --text-accent-hover: #ffffff;
   --text-faint: #666;

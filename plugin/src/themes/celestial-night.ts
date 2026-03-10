@@ -51,6 +51,7 @@ export const theme: ThemeData = {
   --blockquote-color: white;
   --blockquote-font-style: italic;
   --blur-background: color-mix(in srgb, #1d232f 65%, transparent) linear-gradient(#1d232f, color-mix(in srgb, #1d232f 65%, transparent));
+  --bodyFont: var(--font-text);
   --callout-blend-mode: normal;
   --callout-bug: 228, 111, 125;
   --callout-default: 86, 174, 214;
@@ -102,6 +103,7 @@ export const theme: ThemeData = {
   --code-string: #a5d18c;
   --code-tag: #e46f7d;
   --code-value: #b584c7;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #5f6980;
   --collapse-icon-color-collapsed: hsl(38, 102%, 115%);
   --color-accent: rgb(255, 255, 255);
@@ -136,6 +138,8 @@ export const theme: ThemeData = {
   --color-red-rgb: 228, 111, 125;
   --color-yellow: #ffde73;
   --color-yellow-rgb: 255, 222, 115;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #3b3f56;
   --divider-color-hover: rgb(255, 255, 255);
   --dropdown-background: #1d232f;
@@ -171,6 +175,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #a5d18c;
   --graph-node-unresolved: #5f6980;
   --graph-text: #cdd1df;
+  --gray: var(--text-muted);
   --h1-font: 'Merienda';
   --h1-size: 2em;
   --h1-weight: 900;
@@ -184,8 +189,10 @@ export const theme: ThemeData = {
   --h5-weight: 500;
   --h6-font: 'Merienda';
   --h6-weight: 400;
+  --headerFont: var(--font-text);
   --heading-font: 'Merienda';
   --heading-formatting: #5f6980;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: #3b3f56;
   --icon-color: #8890a6;
   --icon-color-active: hsl(38, 102%, 115%);
@@ -201,6 +208,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 41, 100%, 100%;
   --interactive-hover: #3b445d;
   --interactive-normal: #1d232f;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: hsl(38, 102%, 115%);
   --link-color-hover: hsl(36, 105%, 129%);
   --link-decoration-color-active: rgba(255, 255, 255, 0.5);
@@ -268,6 +277,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #8890a6;
   --search-icon-color: #8890a6;
   --search-result-background: #2a3141;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #cdd1df;
   --setting-items-background: #222a38;
   --setting-items-border-color: #3b3f56;
@@ -320,6 +330,7 @@ export const theme: ThemeData = {
   --tag-color-hover: hsl(38, 102%, 115%);
   --tag-radius: 1em;
   --tag-weight: 300;
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(38, 102%, 115%);
   --text-accent-hover: hsl(36, 105%, 129%);
   --text-error: #e46f7d;
@@ -330,6 +341,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(255, 255, 255, 0.33);
   --text-success: #a5d18c;
   --text-warning: #fbb36c;
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #262b3b;
   --titlebar-background-focused: #1d232f;
   --titlebar-border-color: #3b3f56;

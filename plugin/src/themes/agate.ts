@@ -39,6 +39,7 @@ export const theme: ThemeData = {
   --blockquote-border-thickness: 3px;
   --blockquote-font-style: italic;
   --blur-background: color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent) linear-gradient(linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)), color-mix(in srgb, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-modifier: 500;
   --bold-weight: 900;
   --button-radius: 2px;
@@ -72,6 +73,7 @@ export const theme: ThemeData = {
   --code-string: #b58900;
   --code-tag: #dc322f;
   --code-value: rgb(55, 0, 255);
+  --codeFont: var(--font-text);
   --collapse-icon-color: rgb(20, 20, 20);
   --color-base-00: #f7f7f730;
   --color-base-05: #d5d0d034;
@@ -84,6 +86,8 @@ export const theme: ThemeData = {
   --color-base-40: #d5d0d034;
   --color-base-50: rgb(20, 20, 20);
   --color-base-60: #d5d0d034;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(20, 19, 19, 0.172);
   --dropdown-background: #f7f7f730;
   --dropdown-background-hover: #f7f7f7c1;
@@ -110,6 +114,7 @@ export const theme: ThemeData = {
   --graph-line: rgba(20, 20, 20, 0.2);
   --graph-node-unresolved: rgb(20, 20, 20);
   --graph-text: rgb(20, 20, 20);
+  --gray: var(--text-faint);
   --h1-font: 'Pretendard-Bold';
   --h1-size: 2em;
   --h2-font: 'Pretendard-Bold';
@@ -128,7 +133,9 @@ export const theme: ThemeData = {
   --h6-font: 'Pretendard-Bold';
   --h6-line-height: 2em;
   --h6-weight: 700;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(20, 20, 20);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(20, 20, 20, 0.2);
   --hr-thickness: 1px;
   --icon-color-focused: rgb(20, 20, 20);
@@ -141,8 +148,10 @@ export const theme: ThemeData = {
   --input-radius: 0px;
   --interactive-hover: #f7f7f7c1;
   --interactive-normal: #f7f7f730;
+  --light: var(--background-primary);
   --light-alpha-color: 0;
   --light-color: 170, 170, 170;
+  --lightgray: var(--background-secondary);
   --line-color: rgba(20, 20, 20, 0.2);
   --line-height-normal: 2em;
   --link-color: rgb(55, 0, 255);
@@ -238,6 +247,8 @@ export const theme: ThemeData = {
   --text-highlight-bg: rgba(55, 0, 255, 0.2);
   --text-normal: rgb(20, 20, 20);
   --text-selection: rgba(55, 0, 255, 0.2);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: linear-gradient(to left, rgba(170, 170, 170, 0) 100%, rgba(20, 20, 20, 0.2));
   --titlebar-background-focused: #d5d0d034;
   --titlebar-border-color: rgba(20, 19, 19, 0.172);

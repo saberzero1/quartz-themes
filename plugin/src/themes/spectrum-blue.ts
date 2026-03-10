@@ -18,6 +18,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: #222222;
   --bases-table-row-background-hover: rgb(31, 31, 31);
   --bases-table-summary-background: #222222;
+  --bodyFont: var(--font-interface);
   --bold-color: rgb(12, 255, 174);
   --border-background: black;
   --canvas-background: #222222;
@@ -28,7 +29,10 @@ export const theme: ThemeData = {
   --checkbox-color-hover: rgb(140, 203, 255);
   --checkbox-marker-color: #222222;
   --code-normal: rgb(245, 152, 131);
+  --codeFont: var(--font-interface);
   --color-var: rgb(0, 255, 140);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: "JetBrains Mono", monospace;
   --divider-color: rgb(60, 60, 60);
   --divider-color-hover: rgb(12, 99, 137);
@@ -42,6 +46,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(82, 130, 159);
   --graph-node-unresolved: rgb(51, 56, 59);
   --graph-text: rgb(237, 237, 237);
+  --gray: var(--text-normal);
   --h1-color: rgb(98, 255, 116);
   --h1-line-height: 3rem;
   --h1-size: 30pt;
@@ -60,6 +65,7 @@ export const theme: ThemeData = {
   --h6-color: rgb(161, 98, 255);
   --h6-line-height: 3rem;
   --h6-size: 12pt;
+  --headerFont: var(--font-interface);
   --heading-spacing: 0.625rem;
   --heading-text-color: #fff;
   --icon-color-focused: rgb(91, 149, 197);
@@ -69,6 +75,8 @@ export const theme: ThemeData = {
   --inline-title-line-height: 3rem;
   --inline-title-size: 30pt;
   --italic-color: rgb(84, 238, 255);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(85, 162, 255);
   --link-color-hover: rgb(50, 233, 253);
   --link-unresolved-color: rgb(101, 142, 169);
@@ -114,6 +122,7 @@ export const theme: ThemeData = {
   --table-row-alt-background-hover: rgb(31, 31, 31);
   --table-row-background-hover: rgb(31, 31, 31);
   --text-normal: rgb(237, 237, 237);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(25, 25, 25);
   --titlebar-text-color-focused: rgb(237, 237, 237);
   --vault-profile-color: rgb(237, 237, 237);

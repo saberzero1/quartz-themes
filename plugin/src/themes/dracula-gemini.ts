@@ -92,6 +92,8 @@ export const theme: ThemeData = {
   --color-dracula-selection: #44475a;
   --color-dracula-yellow: #f1fa8c;
   --color-dracula-yellow-ish: #f4f9bf;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(65, 68, 88);
   --divider-color-hover: rgb(96, 113, 164);
   --dropdown-background: rgb(65, 68, 88);
@@ -112,6 +114,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(121, 139, 180);
   --graph-node-unresolved: rgb(108, 114, 147);
   --graph-text: #f8f8f2;
+  --gray: var(--text-muted);
   --h1-color: #ff79c6;
   --h1-line-height: 1.3125;
   --h1-size: 2em;
@@ -137,6 +140,7 @@ export const theme: ThemeData = {
   --header-hanging-margin: 30px;
   --heading-formatting: rgb(108, 114, 147);
   --heading-spacing: 0;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: rgb(65, 68, 88);
   --icon-color: rgb(208, 210, 220);
   --icon-color-active: rgb(121, 139, 180);
@@ -154,6 +158,8 @@ export const theme: ThemeData = {
   --interactive-hover: rgb(72, 75, 97);
   --interactive-normal: rgb(65, 68, 88);
   --italic-color: #f1fa8c;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #ff79c6;
   --link-color-hover: #bd93f9;
   --link-external-color: #ff79c6;
@@ -217,6 +223,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(208, 210, 220);
   --search-icon-color: rgb(208, 210, 220);
   --search-result-background: #282a36;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #f8f8f2;
   --setting-items-background: rgb(48, 50, 65);
   --setting-items-border-color: rgb(65, 68, 88);
@@ -258,12 +265,14 @@ export const theme: ThemeData = {
   --tag-padding-y: 0.125em;
   --tag-radius: 0.1875em;
   --tag-size: 16px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(121, 139, 180);
   --text-accent-hover: rgb(144, 160, 193);
   --text-faint: rgb(108, 114, 147);
   --text-muted: rgb(208, 210, 220);
   --text-normal: #f8f8f2;
   --text-selection: #44475a;
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: rgb(52, 55, 70);
   --titlebar-background-focused: rgb(65, 68, 88);
   --titlebar-border-color: rgb(65, 68, 88);

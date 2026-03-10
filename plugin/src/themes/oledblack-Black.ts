@@ -24,6 +24,8 @@ export const theme: ThemeData = {
   --code-background: #000000;
   --code-normal: #ffffff;
   --cyan: #14c7de;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --darkslateblue: #444fad;
   --file-header-background: #000000;
   --file-header-background-focused: #000000;
@@ -32,6 +34,8 @@ export const theme: ThemeData = {
   --gray: #818181;
   --green: #2eda77;
   --icon-color-focused: #ffffff;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: #000000;
   --metadata-input-text-color: #ffffff;
   --modal-background: #000000;

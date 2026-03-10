@@ -100,6 +100,7 @@ export const theme: ThemeData = {
   --h5-color: #F3F2E9;
   --h6-color: #F3F2E9;
   --header-col: #F3F2E9;
+  --highlight: var(--text-highlight-bg);
   --hl-mark-blue: #378dff;
   --hl-mark-gray: dimgray;
   --hl-mark-green: #52a543;
@@ -159,6 +160,7 @@ export const theme: ThemeData = {
   --scale-smaller-f: 12px;
   --sea-bg: rgba(36, 174, 166, 0.3);
   --sea-border: none;
+  --secondary: var(--text-accent);
   --setting-items-border-color: #555555;
   --shadow-tone: rgba(255, 255, 255, 0.06);
   --slant-blue: #566370;
@@ -179,6 +181,7 @@ export const theme: ThemeData = {
   --table-highl-col: rgba(255, 166, 0, 0.5);
   --tag-color: rgb(138, 92, 245);
   --tag-color-hover: rgb(138, 92, 245);
+  --tertiary: var(--text-accent);
   --text-accent: rgb(138, 92, 245);
   --text-accent-special: #378dff;
   --text-faint-c: #666666;
@@ -187,6 +190,7 @@ export const theme: ThemeData = {
   --text-normal-c: #dadada;
   --text-selection: #4A6CB0A1;
   --text-selection-c: #4A6CB0A1;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-border-color: #555555;
   --toolbar-bg-sw: #1e1e1e;
   --var-bg-col: rgba(255, 255, 255, 0.2);
@@ -622,6 +626,7 @@ body kbd {
   --h5-color: #433721;
   --h6-color: #433721;
   --header-col: #433721;
+  --highlight: var(--text-highlight-bg);
   --hl-mark-blue: #99ccff;
   --hl-mark-gray: #bfbfbf;
   --hl-mark-green: #ace573;
@@ -698,6 +703,7 @@ body kbd {
   --text-normal-c: #222222;
   --text-selection: #DD94178A;
   --text-selection-c: #DD94178A;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-border-color: #bdbdbd;
   --toolbar-bg-sw: #ffffff;
   --var-bg-col: #ffffff;

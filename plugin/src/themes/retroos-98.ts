@@ -34,6 +34,7 @@ export const theme: ThemeData = {
   --bg-button-light: rgb(128, 128, 128);
   --bg-button-shadow: black;
   --blockquote-border-color: rgb(3, 30, 94);
+  --bodyFont: var(--font-text);
   --callout-blend-mode: darken;
   --canvas-background: #000000;
   --checkbox-color: rgb(3, 30, 94);
@@ -42,6 +43,7 @@ export const theme: ThemeData = {
   --closebutton: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' width='8' height='7'/%3e%3cdefs%3e%3cimage id='A' width='8' height='7' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAOklEQVQImW2OQQ4AMAjCqv//MzssM0jGyaQIlCRxVWwJoA0oIVAd33L4EgjTut3wqxiDx65NnZ256QAPcA8KJ2HN6QAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
   --code-background: #050505;
   --code-bracket-background: transparent;
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: rgb(3, 33, 99);
   --color-accent: rgb(3, 30, 94);
   --color-accent-1: rgb(3, 33, 99);
@@ -72,6 +74,8 @@ export const theme: ThemeData = {
   --footnote-input-background-active: transparent;
   --graph-node-focused: rgb(3, 33, 99);
   --header-height: 35px;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-hover);
   --highlight-mix-blend-mode: darken;
   --icon-color-active: rgb(3, 33, 99);
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
@@ -80,6 +84,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(3, 33, 99);
   --interactive-accent-hsl: 222, 94%, 19%;
   --lefticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.062' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWElEQVQImU3MoRHCQBQE0PdvztEYAolIGQgKoBAEkrJi4yggMxuTY%2b7Lt7u/TJfkg7VN8MUd2gRXXKCfk9uA0Vyxz79bVb3wxjawQ1U9k3QsfzyDR5IdvwPUnB2IEQfd7wAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e");
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(3, 33, 99);
   --link-color-hover: hsl(192, 142.88%, 29.45%);
   --link-external-color: rgb(3, 33, 99);
@@ -112,6 +118,7 @@ export const theme: ThemeData = {
   --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cuse href='%23A' x='6.75' y='5.063' width='5' height='8'/%3e%3cdefs%3e%3cimage id='A' width='5' height='8' href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVQImV3NqRGAQBAF0SniQBACEkEASMLdABBIQkAgEZvBQ4AYtmXXP8LLEJlPXphaCQeWVsKGtYs/d0TUnCyYc33HmI9O9HnjAUuAVuCj%2bT4gAAAAAElFTkSuQmCC'/%3e%3c/defs%3e%3c/svg%3e");
   --scrollbar-width: 18px;
   --search-result-background: #000000;
+  --secondary: var(--text-accent);
   --setting-items-background: #050505;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
   --status-bar-background: rgb(64, 64, 64);
@@ -134,9 +141,12 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(3, 30, 94, 0.15);
   --tag-color: rgb(3, 33, 99);
   --tag-color-hover: rgb(3, 33, 99);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(3, 33, 99);
   --text-accent-hover: hsl(192, 142.88%, 29.45%);
   --text-selection: rgba(3, 30, 94, 0.47);
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(64, 64, 64);
   --titlebar-background-focused: rgb(64, 64, 64);
   --tooltip-border: rgb(128, 128, 128);
@@ -714,10 +724,12 @@ body kbd {
   --bg-button-light: white;
   --bg-button-shadow: gray;
   --blockquote-border-color: rgb(3, 33, 99);
+  --bodyFont: var(--font-text);
   --checkbox-color: rgb(3, 33, 99);
   --checkbox-color-hover: hsl(192, 142.88%, 29.45%);
   --closebutton: url("data:image/svg+xmlcharset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
   --code-bracket-background: transparent;
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: rgb(3, 30, 94);
   --color-accent: rgb(3, 30, 94);
   --color-accent-1: rgb(3, 33, 99);
@@ -736,6 +748,8 @@ body kbd {
   --footnote-input-background-active: transparent;
   --graph-node-focused: rgb(3, 30, 94);
   --header-height: 35px;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-hover);
   --icon-color-active: rgb(3, 30, 94);
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
@@ -743,6 +757,7 @@ body kbd {
   --interactive-accent-hover: hsl(192, 142.88%, 29.45%);
   --interactive-accent-hsl: 222, 94%, 19%;
   --lefticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M10.875 5.063H12v7.875h-1.125v-1.125H9.75v-1.125H8.625V9.563H7.5V8.438h1.125V7.313H9.75V6.188h1.125V5.063z' fill-rule='nonzero'/%3e%3c/svg%3e");
+  --lightgray: var(--background-secondary);
   --link-color: rgb(3, 30, 94);
   --link-color-hover: hsl(192, 142.88%, 29.45%);
   --link-external-color: rgb(3, 30, 94);
@@ -768,6 +783,7 @@ body kbd {
   --ribbon-background: silver;
   --righticon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 18 18' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M10.125 12.938H9V5.063h1.125v1.125h1.125v1.125h1.125v1.125H13.5v1.125h-1.125v1.125H11.25v1.125h-1.125v1.125z' fill-rule='nonzero'/%3e%3c/svg%3e");
   --scrollbar-width: 18px;
+  --secondary: var(--text-accent);
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
   --status-bar-background: silver;
@@ -787,9 +803,12 @@ body kbd {
   --tag-border-color-hover: rgba(3, 30, 94, 0.15);
   --tag-color: rgb(3, 30, 94);
   --tag-color-hover: rgb(3, 30, 94);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(3, 30, 94);
   --text-accent-hover: hsl(192, 142.88%, 29.45%);
   --text-selection: rgba(3, 30, 94, 0.47);
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: silver;
   --titlebar-background-focused: silver;
   --tooltip-border: black;

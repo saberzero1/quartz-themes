@@ -134,6 +134,7 @@ export const theme: ThemeData = {
   --heading-spacing: 2.5rem;
   --hidden-text-underline-background-color: #ffff0088;
   --hidden-text-underline-foreground-color: #dadada;
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: normal;
   --hr-color: #0072d3;
   --hr-thickness: 1px;
@@ -154,6 +155,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 254, 80%, 68%;
   --interactive-hover: #007fff38;
   --interactive-normal: #007fff18;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #d372ff;
   --link-color-hover: #db8fff;
   --link-external-color: #00a9dd;
@@ -437,6 +440,7 @@ export const theme: ThemeData = {
   --ribbon-background-collapsed: #003388;
   --search-icon-color: #007fff;
   --search-result-background: #002248;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #00a3ff;
   --setting-group-heading-size: 16px;
   --setting-items-background: #001122;
@@ -498,10 +502,12 @@ export const theme: ThemeData = {
   --tag-radius: 1em;
   --tag-radius-value: 1;
   --tag-size: 0.933em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(170, 153, 245);
   --text-accent-hover: rgb(206, 199, 250);
   --text-highlight-bg: #ffff0088;
   --text-selection: rgba(139, 108, 239, 0.33);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #003388;
   --titlebar-background-focused: #003388;
   --titlebar-border-color: #007fff38;
@@ -1094,6 +1100,8 @@ body kbd {
   --color-accent-1: rgb(155, 130, 242);
   --color-accent-2: rgb(170, 153, 245);
   --color-accent-hsl: 254, 80%, 68%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #007fff10;
   --divider-color-hover: #007fff;
   --divider-width: 1px;
@@ -1126,6 +1134,7 @@ body kbd {
   --graph-node-tag: #20cf20;
   --graph-node-unresolved: #a3a3a3;
   --graph-text: #000;
+  --gray: var(--text-muted);
   --h1-color: #0072d3;
   --h1-font: system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --h1-size: 2em;
@@ -1153,6 +1162,7 @@ body kbd {
   --heading-spacing: 2.5rem;
   --hidden-text-underline-background-color: #ffff0088;
   --hidden-text-underline-foreground-color: #000;
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: normal;
   --hr-color: #0072d3;
   --hr-thickness: 1px;
@@ -1173,6 +1183,8 @@ body kbd {
   --interactive-accent-hsl: 254, 80%, 68%;
   --interactive-hover: #007fff38;
   --interactive-normal: #007fff18;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #a200ff;
   --link-color-hover: #c300ff;
   --link-external-color: #0033ff;
@@ -1466,6 +1478,7 @@ body kbd {
   --search-clear-button-color: #353535;
   --search-icon-color: #007fff;
   --search-result-background: #e8efff;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #0048f1;
   --setting-group-heading-size: 16px;
   --setting-items-background: #d1dfff;
@@ -1530,12 +1543,14 @@ body kbd {
   --tag-radius: 1em;
   --tag-radius-value: 1;
   --tag-size: 0.933em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(139, 108, 239);
   --text-accent-hover: rgb(170, 153, 245);
   --text-highlight-bg: #ffff0088;
   --text-muted: #353535;
   --text-normal: #000;
   --text-selection: rgba(139, 108, 239, 0.2);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #003388;
   --titlebar-background-focused: #003388;
   --titlebar-border-color: #007fff38;

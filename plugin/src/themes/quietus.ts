@@ -26,6 +26,7 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid rgb(138, 92, 245);
   --graph-node-focused: rgb(166, 139, 249);
   --heading-spacing: 2.5rem;
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: rgb(166, 139, 249);
   --interactive-accent: rgb(138, 92, 245);
   --interactive-accent-hover: rgb(166, 139, 249);
@@ -51,6 +52,7 @@ export const theme: ThemeData = {
 		#8a5cf5 45%,
 		transparent
 	);
+  --secondary: var(--text-accent);
   --sidebar-markdown-font-size: 14.4px;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245);
   --tab-text-color-focused-highlighted: rgb(166, 139, 249);
@@ -64,6 +66,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(138, 92, 245, 0.15);
   --tag-color: rgb(166, 139, 249);
   --tag-color-hover: rgb(166, 139, 249);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(166, 139, 249);
   --text-accent-hover: #dadada;
   --text-highlight-bg: color-mix(
@@ -72,6 +75,7 @@ export const theme: ThemeData = {
 		transparent
 	);
   --text-selection: color-mix(in srgb, #dadada 10%, transparent);
+  --textHighlight: var(--text-highlight-bg);
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --quartz-icon-color: currentColor;
 }`,
@@ -117,6 +121,7 @@ body a.internal.broken {
   --embed-border-start: 2px solid rgb(153, 115, 247);
   --graph-node-focused: rgb(138, 92, 245);
   --heading-spacing: 2.5rem;
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: rgb(138, 92, 245);
   --interactive-accent: rgb(153, 115, 247);
   --interactive-accent-hover: rgb(166, 139, 249);
@@ -142,6 +147,7 @@ body a.internal.broken {
 		transparent
 	);
   --quietus-text-strong-color: #1a1a1a;
+  --secondary: var(--text-accent);
   --sidebar-markdown-font-size: 14.4px;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245);
   --tab-text-color-focused-highlighted: rgb(138, 92, 245);
@@ -155,6 +161,7 @@ body a.internal.broken {
   --tag-border-color-hover: rgba(138, 92, 245, 0.15);
   --tag-color: rgb(138, 92, 245);
   --tag-color-hover: rgb(138, 92, 245);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(166, 139, 249);
   --text-highlight-bg: color-mix(
@@ -163,6 +170,7 @@ body a.internal.broken {
 		transparent
 	);
   --text-selection: rgba(138, 92, 245, 0.2);
+  --textHighlight: var(--text-highlight-bg);
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --quartz-icon-color: currentColor;
 }`,

@@ -29,6 +29,7 @@ export const theme: ThemeData = {
   --bases-table-text-size: 0.875em;
   --blockquote-border-color: #93684e;
   --blur-background: color-mix(in srgb, #0f0a07 65%, transparent) linear-gradient(#0f0a07, color-mix(in srgb, #0f0a07 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: #b08c75;
   --canvas-background: #0f0a07;
   --canvas-card-label-color: #93684e;
@@ -44,6 +45,7 @@ export const theme: ThemeData = {
   --code-comment: #93684e;
   --code-normal: #dfccc3;
   --code-punctuation: #d8c2b4;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #93684e;
   --collapse-icon-color-collapsed: #93684e;
   --color-accent: #93684e;
@@ -55,6 +57,8 @@ export const theme: ThemeData = {
   --color-base-30: #0f0a07;
   --color-base-50: #93684e;
   --color-base-70: #d8c2b4;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #0f0a07;
   --divider-color-hover: #93684e;
   --dropdown-background: #0f0a07;
@@ -77,6 +81,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #93684e;
   --graph-node-unresolved: #93684e;
   --graph-text: #dfccc3;
+  --gray: var(--text-muted);
   --h1-size: 1.802em;
   --h2-size: 1.602em;
   --h2-weight: 600;
@@ -86,6 +91,7 @@ export const theme: ThemeData = {
   --h4-weight: 600;
   --h5-size: 1.125em;
   --h5-weight: 600;
+  --headerFont: var(--font-text);
   --heading-formatting: #93684e;
   --hr-color: #0f0a07;
   --icon-color: #d8c2b4;
@@ -99,6 +105,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: #93684e;
   --interactive-normal: #0f0a07;
   --italic-color: #b08c75;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #93684e;
   --link-color-hover: #93684e;
   --link-external-color: #93684e;
@@ -147,6 +155,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #d8c2b4;
   --search-icon-color: #d8c2b4;
   --search-result-background: #0f0a07;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #dfccc3;
   --setting-items-border-color: #0f0a07;
   --slider-thumb-radius: 50%;
@@ -175,12 +184,14 @@ export const theme: ThemeData = {
   --table-selection-border-color: #93684e;
   --tag-color: #93684e;
   --tag-color-hover: #93684e;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #93684e;
   --text-accent-hover: #93684e;
   --text-faint: #93684e;
   --text-muted: #d8c2b4;
   --text-normal: #dfccc3;
   --text-selection: #503a2c;
+  --titleFont: var(--font-text);
   --titlebar-background: #191510;
   --titlebar-background-focused: #0f0a07;
   --titlebar-border-color: #0f0a07;
@@ -951,6 +962,7 @@ body sup {
   --bases-table-text-size: 0.875em;
   --blockquote-border-color: #93684e;
   --blur-background: color-mix(in srgb, #f2ebe4 65%, transparent) linear-gradient(#f2ebe4, color-mix(in srgb, #f2ebe4 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: #b08c75;
   --canvas-background: #f2ebe4;
   --canvas-card-label-color: #93684e;
@@ -967,6 +979,7 @@ body sup {
   --code-comment: #93684e;
   --code-normal: #231915;
   --code-punctuation: #2a2119;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #93684e;
   --collapse-icon-color-collapsed: #93684e;
   --color-accent: #93684e;
@@ -980,6 +993,8 @@ body sup {
   --color-base-30: #f2ebe4;
   --color-base-50: #93684e;
   --color-base-70: #2a2119;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #f2ebe4;
   --divider-color-hover: #93684e;
   --dropdown-background: #f2ebe4;
@@ -1003,6 +1018,7 @@ body sup {
   --graph-node-focused: #93684e;
   --graph-node-unresolved: #93684e;
   --graph-text: #231915;
+  --gray: var(--text-muted);
   --h1-size: 1.802em;
   --h2-size: 1.602em;
   --h2-weight: 600;
@@ -1012,6 +1028,7 @@ body sup {
   --h4-weight: 600;
   --h5-size: 1.125em;
   --h5-weight: 600;
+  --headerFont: var(--font-text);
   --heading-formatting: #93684e;
   --hr-color: #f2ebe4;
   --icon-color: #2a2119;
@@ -1026,6 +1043,8 @@ body sup {
   --interactive-hover: #e2d6cd;
   --interactive-normal: #f2ebe4;
   --italic-color: #b08c75;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #93684e;
   --link-color-hover: #93684e;
   --link-external-color: #93684e;
@@ -1072,6 +1091,7 @@ body sup {
   --search-clear-button-color: #2a2119;
   --search-icon-color: #2a2119;
   --search-result-background: #f2ebe4;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #231915;
   --setting-items-background: #e2d6cd;
   --setting-items-border-color: #f2ebe4;
@@ -1102,12 +1122,14 @@ body sup {
   --table-selection-border-color: #93684e;
   --tag-color: #93684e;
   --tag-color-hover: #93684e;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #93684e;
   --text-accent-hover: #93684e;
   --text-faint: #93684e;
   --text-muted: #2a2119;
   --text-normal: #231915;
   --text-selection: #c6a794;
+  --titleFont: var(--font-text);
   --titlebar-background: #e2d6cd;
   --titlebar-background-focused: #dcccc0;
   --titlebar-border-color: #f2ebe4;

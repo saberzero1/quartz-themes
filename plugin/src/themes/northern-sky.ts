@@ -20,6 +20,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: #dfedf7;
   --bases-table-summary-background: #dfedf7;
   --blur-background: color-mix(in srgb, #dfedf7 65%, transparent) linear-gradient(#dfedf7, color-mix(in srgb, #dfedf7 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: #62a12b;
   --button-radius: 12px;
   --callout-radius: 8px;
@@ -29,6 +30,7 @@ export const theme: ThemeData = {
   --checkbox-radius: 12px;
   --clickable-icon-radius: 8px;
   --code-radius: 8px;
+  --codeFont: var(--font-text);
   --file-header-background: #dfedf7;
   --file-header-background-focused: #dfedf7;
   --font-mermaid: '??', 'Finlandica', sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -42,10 +44,12 @@ export const theme: ThemeData = {
   --h4-color: #62a12b;
   --h5-color: #62a12b;
   --h6-color: #62a12b;
+  --headerFont: var(--font-text);
   --highlight-hue: 30;
   --inline-title-color: #62a12b;
   --input-radius: 12px;
   --italic-color: #62a12b;
+  --light: var(--background-primary);
   --menu-radius: 12px;
   --modal-background: #dfedf7;
   --modal-radius: 16px;
@@ -72,6 +76,7 @@ export const theme: ThemeData = {
   --tab-radius: 8px;
   --tab-radius-active: 12px;
   --text: #061218;
+  --titleFont: var(--font-text);
   --toggle-radius: 12px;
   --toggle-thumb-radius: 12px;
   --quartz-icon-color: currentColor;

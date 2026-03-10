@@ -54,6 +54,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: rgb(77, 77, 77);
   --blur-background: color-mix(in srgb, rgb(31, 31, 31) 65%, transparent) linear-gradient(rgb(31, 31, 31), color-mix(in srgb, rgb(31, 31, 31) 65%, transparent));
   --blur-intensity: 8px;
+  --bodyFont: var(--font-text);
   --bold-color: rgb(232, 232, 232);
   --button-radius: 4px;
   --callout-background-alpha: 20%;
@@ -89,6 +90,7 @@ export const theme: ThemeData = {
   --code-string: rgb(81, 194, 89);
   --code-tag: rgb(238, 146, 140);
   --code-value: rgb(188, 158, 224);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(207, 207, 207);
   --collapse-icon-color-collapsed: rgb(232, 232, 232);
   --color-accent: rgb(188, 158, 224);
@@ -170,6 +172,8 @@ export const theme: ThemeData = {
   --color-yellow-tint: rgb(126, 101, 32);
   --color-yellow-tint-hsl: 44, 59%, 31%;
   --custom-vault-banner-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='40' height='40'%0AviewBox='0 0 40 40'%0Astyle=' fill:%23000000'%3E%3Cpath fill='%23dbb065' d='M1.5 35.5L1.5 4.5 11.793 4.5 14.793 7.5 35.5 7.5 35.5 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M11.586,5l2.707,2.707L14.586,8H15h20v27H2V5H11.586 M12,4H1v32h35V7H15L12,4L12,4z'%3E%3C/path%3E%3Cg%3E%3Cpath fill='%23f5ce85' d='M1.599 35.5L5.417 14.5 16.151 14.5 19.151 12.5 39.41 12.5 35.577 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M38.82,13l-3.667,22H2.198l3.636-20H16h0.303l0.252-0.168L19.303,13H38.82 M40,12H19l-3,2H5L1,36 h35L40,12L40,12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(77, 77, 77);
   --divider-color-hover: rgb(132, 76, 184);
   --drag-ghost-text-color: rgb(232, 232, 232);
@@ -217,6 +221,7 @@ export const theme: ThemeData = {
   --graph-tag-color-dt: rgb(152, 172, 230);
   --graph-text: rgb(232, 232, 232);
   --graph-unresolved-color-dt: rgb(238, 146, 140);
+  --gray: var(--text-muted);
   --h1-color: rgb(232, 232, 232);
   --h1-line-height: 1.3;
   --h1-size: 2.2em;
@@ -245,8 +250,10 @@ export const theme: ThemeData = {
   --h6-text-color-dt: rgb(232, 232, 232);
   --h6-weight: 800;
   --header-height: 41px;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(207, 207, 207);
   --heading-spacing: 1.25em;
+  --highlight: var(--text-highlight-bg);
   --highlight-text-normal: rgb(188, 158, 224);
   --hr-color: rgb(77, 77, 77);
   --icon-color: rgb(219, 219, 219);
@@ -276,6 +283,8 @@ export const theme: ThemeData = {
   --interactive-hover: rgb(46, 46, 46);
   --interactive-normal: rgb(31, 31, 31);
   --italic-color: rgb(232, 232, 232);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(188, 158, 224);
   --link-color-hover: rgba(188, 158, 224, 0.6);
   --link-external-color: rgb(188, 158, 224);
@@ -357,6 +366,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(219, 219, 219);
   --search-icon-color: rgb(219, 219, 219);
   --search-result-background: rgb(46, 46, 46);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(232, 232, 232);
   --setting-items-background: rgb(20, 20, 20);
   --setting-items-border-color: rgb(77, 77, 77);
@@ -425,6 +435,7 @@ export const theme: ThemeData = {
   --tag-padding-y: 0;
   --tag-radius: 4px;
   --tag-size: 0.8em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(132, 76, 184);
   --text-accent-hover: rgb(132, 76, 184);
   --text-bold-color-dt: rgb(232, 232, 232);
@@ -443,6 +454,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(132, 76, 184, 0.55);
   --text-success: rgb(81, 194, 89);
   --text-warning: rgb(241, 150, 80);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(31, 31, 31);
   --titlebar-background-focused: rgb(31, 31, 31);
   --titlebar-border-color: rgb(77, 77, 77);
@@ -1528,6 +1541,7 @@ body sup {
   --blockquote-border-color: rgb(176, 176, 176);
   --blur-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent));
   --blur-intensity: 8px;
+  --bodyFont: var(--font-text);
   --bold-color: rgb(38, 38, 38);
   --button-radius: 4px;
   --callout-background-alpha: 20%;
@@ -1562,6 +1576,7 @@ body sup {
   --code-string: rgb(62, 138, 0);
   --code-tag: rgb(216, 58, 49);
   --code-value: rgb(132, 90, 231);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(89, 89, 89);
   --collapse-icon-color-collapsed: rgb(38, 38, 38);
   --color-accent: rgb(132, 90, 231);
@@ -1643,6 +1658,8 @@ body sup {
   --color-yellow-tint: rgb(220, 181, 76);
   --color-yellow-tint-hsl: 44, 67%, 58%;
   --custom-vault-banner-icon-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='40' height='40'%0AviewBox='0 0 40 40'%0Astyle=' fill:%23000000'%3E%3Cpath fill='%23dbb065' d='M1.5 35.5L1.5 4.5 11.793 4.5 14.793 7.5 35.5 7.5 35.5 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M11.586,5l2.707,2.707L14.586,8H15h20v27H2V5H11.586 M12,4H1v32h35V7H15L12,4L12,4z'%3E%3C/path%3E%3Cg%3E%3Cpath fill='%23f5ce85' d='M1.599 35.5L5.417 14.5 16.151 14.5 19.151 12.5 39.41 12.5 35.577 35.5z'%3E%3C/path%3E%3Cpath fill='%23967a44' d='M38.82,13l-3.667,22H2.198l3.636-20H16h0.303l0.252-0.168L19.303,13H38.82 M40,12H19l-3,2H5L1,36 h35L40,12L40,12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(176, 176, 176);
   --divider-color-hover: rgb(190, 175, 248);
   --drag-ghost-text-color: rgb(38, 38, 38);
@@ -1690,6 +1707,7 @@ body sup {
   --graph-tag-color-lt: rgb(158, 187, 240);
   --graph-text: rgb(38, 38, 38);
   --graph-unresolved-color-lt: rgb(245, 164, 153);
+  --gray: var(--text-muted);
   --h1-color: rgb(38, 38, 38);
   --h1-line-height: 1.3;
   --h1-size: 2.2em;
@@ -1718,8 +1736,10 @@ body sup {
   --h6-text-color-lt: rgb(38, 38, 38);
   --h6-weight: 800;
   --header-height: 41px;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(89, 89, 89);
   --heading-spacing: 1.25em;
+  --highlight: var(--text-highlight-bg);
   --highlight-text-normal: rgb(132, 90, 231);
   --hr-color: rgb(176, 176, 176);
   --icon-color: rgb(51, 51, 51);
@@ -1749,6 +1769,8 @@ body sup {
   --interactive-hover: rgb(255, 255, 255);
   --interactive-normal: rgb(255, 255, 255);
   --italic-color: rgb(38, 38, 38);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(132, 90, 231);
   --link-color-hover: rgba(132, 90, 231, 0.6);
   --link-external-color: rgb(132, 90, 231);
@@ -1828,6 +1850,7 @@ body sup {
   --search-clear-button-color: rgb(51, 51, 51);
   --search-icon-color: rgb(51, 51, 51);
   --search-result-background: rgb(255, 255, 255);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(38, 38, 38);
   --setting-items-background: rgb(255, 255, 255);
   --setting-items-border-color: rgb(176, 176, 176);
@@ -1896,6 +1919,7 @@ body sup {
   --tag-padding-y: 0;
   --tag-radius: 4px;
   --tag-size: 0.8em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(132, 90, 231);
   --text-accent-hover: rgb(190, 175, 248);
   --text-bold-color-lt: rgb(38, 38, 38);
@@ -1914,6 +1938,8 @@ body sup {
   --text-selection: rgba(190, 175, 248, 0.55);
   --text-success: rgb(62, 138, 0);
   --text-warning: rgb(184, 95, 0);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(237, 237, 237);
   --titlebar-background-focused: rgb(237, 237, 237);
   --titlebar-border-color: rgb(176, 176, 176);

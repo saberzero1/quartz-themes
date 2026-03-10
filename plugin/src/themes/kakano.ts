@@ -179,6 +179,7 @@ export const theme: ThemeData = {
     black 80%
   );
   --blockquote-border-thickness: 0.25em;
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --callout-padding: 0.75em
     1.5em;
@@ -245,6 +246,7 @@ export const theme: ThemeData = {
   --code-string: hsl(from rgb(38, 102, 192) 124 s l);
   --code-tag: hsl(from rgb(38, 102, 192) 356 s l);
   --code-value: hsl(from rgb(38, 102, 192) 253 s l);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(38, 102, 192);
   --collapse-icon-color-collapsed: rgb(38, 102, 192);
   --color-accent: rgb(138, 92, 245);
@@ -258,6 +260,8 @@ export const theme: ThemeData = {
   --color-purple: hsl(from rgb(38, 102, 192) 253 s l);
   --color-red: hsl(from rgb(38, 102, 192) 356 s l);
   --color-yellow: hsl(from rgb(38, 102, 192) 57 s l);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -375,6 +379,7 @@ export const theme: ThemeData = {
     rgb(38, 102, 192),
     white 60%
   );
+  --gray: var(--text-muted);
   --h1-line-height: 1.5;
   --h1-size: 39.81312px;
   --h1-weight: 100;
@@ -392,12 +397,14 @@ export const theme: ThemeData = {
   --h6-size: 16px;
   --h6-weight: 500;
   --header-height: calc(18px + 1rem);
+  --headerFont: var(--font-text);
   --heading-formatting: color-mix(
     in srgb,
     rgb(38, 102, 192),
     white 25%
   );
   --heading-spacing: 0.67em;
+  --highlight: var(--background-modifier-hover);
   --hr-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -438,6 +445,8 @@ export const theme: ThemeData = {
     );
   --interactive-accent: rgb(38, 102, 192);
   --interactive-accent-hover: rgb(166, 139, 249);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(166, 139, 249);
   --link-color-hover: rgb(197, 182, 252);
   --link-decoration-thickness: 1px;
@@ -762,6 +771,7 @@ export const theme: ThemeData = {
     rgb(38, 102, 192),
     black 95%
   );
+  --secondary: var(--text-accent);
   --setting-group-heading-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -994,6 +1004,7 @@ export const theme: ThemeData = {
   --tag-color: rgb(181, 150, 253);
   --tag-color-hover: rgb(166, 139, 249);
   --tag-weight: 400;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(166, 139, 249);
   --text-accent-hover: rgb(197, 182, 252);
   --text-error: hsl(from rgb(38, 102, 192) 356 s l);
@@ -1020,6 +1031,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(138, 92, 245, 0.33);
   --text-success: hsl(from rgb(38, 102, 192) 124 s l);
   --text-warning: hsl(from rgb(38, 102, 192) 27 s l);
+  --textHighlight: var(--background-modifier-hover);
   --theme-cardAspectRatio: auto;
   --theme-cardImageFit: contain;
   --theme-color-activeLineHighlight: hsl(
@@ -1733,6 +1745,7 @@ export const theme: ThemeData = {
   --theme-value-gradientContrast: 0.2;
   --theme-value-headingScaleFactor: 1.2;
   --theme-value-sidebarFontScalingFactor: 0.8;
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: color-mix(
@@ -2794,6 +2807,7 @@ body sup {
   );
   --blockquote-border-thickness: 0.25em;
   --blur-background: color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --callout-padding: 0.75em
     1.5em;
@@ -2852,6 +2866,7 @@ body sup {
   --code-string: hsl(from rgb(38, 102, 192) 124 s l);
   --code-tag: hsl(from rgb(38, 102, 192) 356 s l);
   --code-value: hsl(from rgb(38, 102, 192) 253 s l);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(38, 102, 192);
   --collapse-icon-color-collapsed: rgb(38, 102, 192);
   --color-accent: rgb(138, 92, 245);
@@ -2865,6 +2880,8 @@ body sup {
   --color-purple: hsl(from rgb(38, 102, 192) 253 s l);
   --color-red: hsl(from rgb(38, 102, 192) 356 s l);
   --color-yellow: hsl(from rgb(38, 102, 192) 57 s l);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -2974,6 +2991,7 @@ body sup {
     rgb(38, 102, 192),
     black 90%
   );
+  --gray: var(--text-muted);
   --h1-line-height: 1.5;
   --h1-size: 39.81312px;
   --h1-weight: 100;
@@ -2991,12 +3009,14 @@ body sup {
   --h6-size: 16px;
   --h6-weight: 500;
   --header-height: calc(18px + 1rem);
+  --headerFont: var(--font-text);
   --heading-formatting: color-mix(
     in srgb,
     rgb(38, 102, 192),
     black 70%
   );
   --heading-spacing: 0.67em;
+  --highlight: var(--background-modifier-hover);
   --hr-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -3029,6 +3049,8 @@ body sup {
     );
   --interactive-accent: rgb(38, 102, 192);
   --interactive-accent-hover: rgb(38, 102, 192);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(138, 92, 245);
   --link-color-hover: rgb(166, 139, 249);
   --link-decoration-thickness: 1px;
@@ -3315,6 +3337,7 @@ body sup {
   --search-clear-button-color: rgb(38, 102, 192);
   --search-icon-color: rgb(38, 102, 192);
   --search-result-background: white;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: color-mix(
     in srgb,
     rgb(38, 102, 192),
@@ -3540,6 +3563,7 @@ body sup {
   --tag-color: rgb(114, 58, 242);
   --tag-color-hover: rgb(138, 92, 245);
   --tag-weight: 400;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(166, 139, 249);
   --text-error: hsl(from rgb(38, 102, 192) 356 s l);
@@ -3566,6 +3590,7 @@ body sup {
   --text-selection: rgba(138, 92, 245, 0.2);
   --text-success: hsl(from rgb(38, 102, 192) 124 s l);
   --text-warning: hsl(from rgb(38, 102, 192) 27 s l);
+  --textHighlight: var(--background-modifier-hover);
   --theme-cardAspectRatio: auto;
   --theme-cardImageFit: contain;
   --theme-color-activeLineHighlight: hsl(
@@ -4273,6 +4298,7 @@ body sup {
   --theme-value-gradientContrast: 0.2;
   --theme-value-headingScaleFactor: 1.2;
   --theme-value-sidebarFontScalingFactor: 0.8;
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: color-mix(

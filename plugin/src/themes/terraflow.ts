@@ -74,6 +74,8 @@ export const theme: ThemeData = {
   --color-accent-1: rgb(228, 145, 124);
   --color-accent-2: rgb(236, 170, 156);
   --color-accent-hsl: 15, 65%, 60%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --depth-1: 0 1px 2px rgba(0, 0, 0, 0.2),
                0 2px 4px rgba(0, 0, 0, 0.15);
   --depth-2: 0 2px 4px rgba(0, 0, 0, 0.25),
@@ -106,6 +108,7 @@ export const theme: ThemeData = {
   --graph-node: rgba(232, 220, 198, 0.7);
   --graph-node-focused: #e27a5a;
   --graph-text: #e8dcc6;
+  --gray: var(--text-muted);
   --heading-bg-opacity: .2;
   --heading-pad-x: 0.5em;
   --heading-pad-y: 0.2em;
@@ -138,6 +141,7 @@ export const theme: ThemeData = {
   --height-button: 34px;
   --height-button-sm: 32px;
   --height-input: 38px;
+  --highlight: var(--background-modifier-active-hover);
   --highlight-bg: #3a2f20;
   --highlight-bg-dark: #5a4430;
   --highlight-bg-dark-color: #5a4430;
@@ -149,6 +153,8 @@ export const theme: ThemeData = {
   --interactive-accent: #f0916f;
   --interactive-accent-hover: #e27a5a;
   --interactive-accent-hsl: 15, 65%, 60%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-normal: 1.6;
   --line-relaxed: 2.0;
   --line-tight: 1.5;
@@ -220,6 +226,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgba(232, 220, 198, 0.7);
   --search-icon-color: rgba(232, 220, 198, 0.7);
   --search-result-background: #282520;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #e8dcc6;
   --setting-items-background: #32302a;
   --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -263,12 +270,14 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(219, 120, 87, 0.15);
   --tag-color: #e27a5a;
   --tag-color-hover: #e27a5a;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #e27a5a;
   --text-accent-hover: rgb(236, 170, 156);
   --text-muted: rgba(232, 220, 198, 0.7);
   --text-normal: #e8dcc6;
   --text-normal-rgb: 232, 220, 198;
   --text-selection: #4a3d2e;
+  --textHighlight: var(--background-modifier-active-hover);
   --theme-folder-opacity: .12;
   --titlebar-background: #32302a;
   --titlebar-background-focused: #3a3832;
@@ -1441,6 +1450,8 @@ body sup {
   --color-accent-1: rgb(225, 134, 107);
   --color-accent-2: rgb(228, 145, 124);
   --color-accent-hsl: 15, 65%, 60%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --depth-1: 0 1px 2px rgba(0, 0, 0, 0.05),
                0 2px 4px rgba(0, 0, 0, 0.03);
   --depth-2: 0 2px 4px rgba(0, 0, 0, 0.06),
@@ -1473,6 +1484,7 @@ body sup {
   --graph-node: rgba(61, 46, 26, 0.7);
   --graph-node-focused: #ae4e36;
   --graph-text: #3d2e1a;
+  --gray: var(--text-muted);
   --heading-bg-opacity: .2;
   --heading-pad-x: 0.5em;
   --heading-pad-y: 0.2em;
@@ -1505,6 +1517,7 @@ body sup {
   --height-button: 34px;
   --height-button-sm: 32px;
   --height-input: 38px;
+  --highlight: var(--background-modifier-active-hover);
   --highlight-bg: #d6b07b;
   --highlight-bg-dark: #c9a772;
   --highlight-bg-dark-color: #2d1f0e;
@@ -1516,6 +1529,8 @@ body sup {
   --interactive-accent: #d97756;
   --interactive-accent-hover: #ae4e36;
   --interactive-accent-hsl: 15, 65%, 60%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-normal: 1.6;
   --line-relaxed: 2.0;
   --line-tight: 1.5;
@@ -1588,6 +1603,7 @@ body sup {
   --search-clear-button-color: rgba(61, 46, 26, 0.7);
   --search-icon-color: rgba(61, 46, 26, 0.7);
   --search-result-background: #eeece2;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #3d2e1a;
   --setting-items-background: #e6e4da;
   --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -1631,12 +1647,14 @@ body sup {
   --tag-border-color-hover: rgba(219, 120, 87, 0.15);
   --tag-color: #ae4e36;
   --tag-color-hover: #ae4e36;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #ae4e36;
   --text-accent-hover: rgb(228, 145, 124);
   --text-muted: rgba(61, 46, 26, 0.7);
   --text-normal: #3d2e1a;
   --text-normal-rgb: 61, 46, 26;
   --text-selection: #f0e0d0;
+  --textHighlight: var(--background-modifier-active-hover);
   --theme-folder-opacity: .12;
   --titlebar-background: #e6e4da;
   --titlebar-background-focused: #dfdbd1;

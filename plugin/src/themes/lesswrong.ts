@@ -36,6 +36,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: #505050;
   --blockquote-border-thickness: 3px;
   --blur-background: color-mix(in srgb, #252525 65%, transparent) linear-gradient(#252525, color-mix(in srgb, #252525 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 3px;
   --callout-radius: 3px;
   --canvas-background: #000000;
@@ -52,6 +53,7 @@ export const theme: ThemeData = {
   --code-normal: #DEDEDE;
   --code-radius: 3px;
   --code-size: 14px;
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: rgb(155, 192, 156);
   --color-accent: rgb(126, 174, 130);
   --color-accent-1: rgb(155, 192, 156);
@@ -62,6 +64,8 @@ export const theme: ThemeData = {
   --color-base-20: #212121;
   --color-base-30: #252525;
   --cursor-link: default;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #252525;
   --divider-color-hover: rgb(126, 174, 130);
   --dropdown-background: #252525;
@@ -83,12 +87,15 @@ export const theme: ThemeData = {
   --footnote-size: 14px;
   --graph-node-focused: rgb(155, 192, 156);
   --graph-text: #DEDEDE;
+  --gray: var(--text-normal);
   --h1-weight: 100;
   --h2-weight: 100;
   --h3-weight: 100;
   --h4-weight: 100;
   --h5-weight: 100;
   --h6-weight: 100;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: #252525;
   --hr-thickness: 1px;
   --icon-color: #696969;
@@ -99,6 +106,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(155, 192, 156);
   --interactive-accent-hsl: 125, 23%, 59%;
   --interactive-normal: #252525;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #69886E;
   --link-color-hover: #344437;
   --link-decoration: none;
@@ -149,6 +158,7 @@ export const theme: ThemeData = {
   --ribbon-background-collapsed: #000000;
   --scrollbar-radius: 3px;
   --search-result-background: #000000;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #DEDEDE;
   --setting-items-background: #1C1B1A;
   --setting-items-border-color: #252525;
@@ -183,10 +193,13 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(126, 174, 130, 0.15);
   --tag-color: rgb(155, 192, 156);
   --tag-color-hover: rgb(155, 192, 156);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(155, 192, 156);
   --text-accent-hover: rgb(179, 208, 179);
   --text-normal: #DEDEDE;
   --text-selection: rgba(126, 174, 130, 0.33);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #212121;
   --titlebar-background-focused: #252525;
   --titlebar-border-color: #252525;
@@ -1078,6 +1091,7 @@ body sup {
   --blockquote-border-color: #E0E0E0;
   --blockquote-border-thickness: 3px;
   --blur-background: color-mix(in srgb, #FFFFFF 65%, transparent) linear-gradient(#FFFFFF, color-mix(in srgb, #FFFFFF 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 3px;
   --callout-radius: 3px;
   --canvas-background: #FFFFFF;
@@ -1092,6 +1106,7 @@ body sup {
   --code-normal: #212121;
   --code-radius: 3px;
   --code-size: 14px;
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: rgb(126, 174, 130);
   --color-accent: rgb(126, 174, 130);
   --color-accent-1: rgb(139, 182, 142);
@@ -1102,6 +1117,8 @@ body sup {
   --color-base-10: #FCFBF9;
   --color-base-20: #F8F4EF;
   --cursor-link: default;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgb(139, 182, 142);
   --dropdown-background: #FFFFFF;
   --dropdown-background-hover: #FCFBF9;
@@ -1121,12 +1138,15 @@ body sup {
   --footnote-size: 14px;
   --graph-node-focused: rgb(126, 174, 130);
   --graph-text: #212121;
+  --gray: var(--text-normal);
   --h1-weight: 100;
   --h2-weight: 100;
   --h3-weight: 100;
   --h4-weight: 100;
   --h5-weight: 100;
   --h6-weight: 100;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-active-hover);
   --hr-thickness: 1px;
   --icon-color-active: rgb(126, 174, 130);
   --icon-color-focused: #212121;
@@ -1136,6 +1156,8 @@ body sup {
   --interactive-accent-hsl: 125, 23%, 59%;
   --interactive-hover: #FCFBF9;
   --interactive-normal: #FFFFFF;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #69886E;
   --link-color-hover: #B3C3B5;
   --link-decoration: none;
@@ -1181,6 +1203,7 @@ body sup {
   --ribbon-background-collapsed: #FFFFFF;
   --scrollbar-radius: 3px;
   --search-result-background: #FFFFFF;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #212121;
   --setting-items-background: #FCFBF9;
   --setting-items-radius: 3px;
@@ -1211,10 +1234,13 @@ body sup {
   --tag-border-color-hover: rgba(126, 174, 130, 0.15);
   --tag-color: rgb(126, 174, 130);
   --tag-color-hover: rgb(126, 174, 130);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(126, 174, 130);
   --text-accent-hover: rgb(155, 192, 156);
   --text-normal: #212121;
   --text-selection: rgba(126, 174, 130, 0.2);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #F8F4EF;
   --titlebar-background-focused: #FCFBF9;
   --titlebar-text-color-focused: #212121;

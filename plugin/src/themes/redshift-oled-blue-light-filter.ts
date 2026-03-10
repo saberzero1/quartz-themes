@@ -75,6 +75,8 @@ export const theme: ThemeData = {
   --color-base-50: rgb(85, 0, 0);
   --color-base-60: rgb(102, 0, 0);
   --color-base-70: rgb(0, 0, 0);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(130, 0, 0);
   --divider-color-hover: rgb(30, 0, 0);
   --dropdown-background: rgb(0, 0, 0);
@@ -94,7 +96,9 @@ export const theme: ThemeData = {
   --graph-node-focused: red;
   --graph-node-unresolved: rgb(153, 0, 0);
   --graph-text: rgb(255, 0, 0);
+  --gray: var(--text-muted);
   --heading-formatting: rgb(153, 0, 0);
+  --highlight: var(--background-modifier-hover);
   --hr-color: rgb(130, 0, 0);
   --icon-color: rgb(204, 0, 0);
   --icon-color-active: red;
@@ -110,6 +114,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 0, 88%, 66%;
   --interactive-hover: rgb(58, 0, 0);
   --interactive-normal: rgb(0, 0, 0);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: red;
   --link-color-hover: rgb(255, 0, 0);
   --link-external-color: red;
@@ -169,6 +175,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(204, 0, 0);
   --search-icon-color: rgb(204, 0, 0);
   --search-result-background: black;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(255, 0, 0);
   --setting-items-background: rgb(26, 0, 0);
   --setting-items-border-color: rgb(130, 0, 0);
@@ -206,6 +213,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(245, 92, 92, 0.15);
   --tag-color: red;
   --tag-color-hover: red;
+  --tertiary: var(--text-accent-hover);
   --text-accent: red;
   --text-accent-hover: rgb(255, 0, 0);
   --text-error: rgb(179, 0, 0);
@@ -217,6 +225,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(245, 92, 92, 0.33);
   --text-success: rgb(255, 0, 0);
   --text-warning: rgb(255, 0, 0);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: black;
   --titlebar-background-focused: rgb(0, 0, 0);
   --titlebar-border-color: rgb(130, 0, 0);

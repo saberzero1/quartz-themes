@@ -26,9 +26,12 @@ export const theme: ThemeData = {
   --file-header-background: #161a1d;
   --file-header-background-focused: #161a1d;
   --footnote-input-background-active: rgba(255, 255, 255, 0.09);
+  --highlight: var(--background-modifier-hover);
   --indentation-guide-color: #161a1f;
   --inline-title-size: 3em;
   --inline-title-weight: normal;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: #0b0d0f;
   --metadata-input-background-active: rgba(255, 255, 255, 0.09);
   --metadata-label-background-active: rgba(255, 255, 255, 0.09);
@@ -53,6 +56,7 @@ export const theme: ThemeData = {
   --tab-outline-color: #30363d;
   --tab-switcher-background: #0b0d0f;
   --tab-switcher-menubar-background: linear-gradient(to top, #0b0d0f, transparent);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #0b0d0f;
   --titlebar-background-focused: #0b0d0f;
   --quartz-icon-color: currentColor;

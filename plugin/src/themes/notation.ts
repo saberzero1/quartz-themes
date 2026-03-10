@@ -58,8 +58,11 @@ export const theme: ThemeData = {
   --code-comment: rgba(255, 255, 255, 0.25);
   --code-normal: rgba(255, 255, 255, 0.9);
   --code-punctuation: rgba(255, 255, 255, 0.45);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgba(255, 255, 255, 0.25);
   --collapse-icon-color-collapsed: rgba(255, 255, 255, 0.45);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(255, 255, 255, 0.14);
   --divider-color-hover: rgb(46, 170, 220);
   --dropdown-background: #2a2a2a;
@@ -78,7 +81,9 @@ export const theme: ThemeData = {
   --graph-node-focused: rgba(255, 255, 255, 0.45);
   --graph-node-unresolved: rgba(255, 255, 255, 0.25);
   --graph-text: rgba(255, 255, 255, 0.9);
+  --gray: var(--text-muted);
   --heading-formatting: rgba(255, 255, 255, 0.25);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(255, 255, 255, 0.14);
   --hue: 203;
   --icon-color: rgba(255, 255, 255, 0.45);
@@ -92,6 +97,8 @@ export const theme: ThemeData = {
   --interactive-accent-rgb: 46, 170, 220;
   --interactive-hover: #303030;
   --interactive-normal: #2a2a2a;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgba(255, 255, 255, 0.45);
   --link-color-hover: rgba(255, 255, 255, 0.45);
   --link-external-color: rgba(255, 255, 255, 0.45);
@@ -140,6 +147,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgba(255, 255, 255, 0.45);
   --search-icon-color: rgba(255, 255, 255, 0.45);
   --search-result-background: rgb(47, 52, 55);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgba(255, 255, 255, 0.9);
   --setting-items-background: rgb(61, 68, 72);
   --setting-items-border-color: rgba(255, 255, 255, 0.14);
@@ -169,6 +177,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: rgb(46, 170, 220);
   --tag-color: rgba(255, 255, 255, 0.45);
   --tag-color-hover: rgba(255, 255, 255, 0.45);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgba(255, 255, 255, 0.45);
   --text-accent-hover: rgba(255, 255, 255, 0.45);
   --text-blue: rgb(82, 156, 202);
@@ -187,6 +196,7 @@ export const theme: ThemeData = {
   --text-rgb: 255, 255, 255;
   --text-selection: rgba(0, 123, 255, 0.2);
   --text-yellow: rgb(255, 220, 73);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(54, 60, 63);
   --titlebar-background-focused: rgb(61, 68, 72);
   --titlebar-border-color: rgba(255, 255, 255, 0.14);
@@ -963,8 +973,11 @@ body sup {
   --code-comment: rgba(55, 53, 47, 0.25);
   --code-normal: rgba(55, 53, 47, 0.9);
   --code-punctuation: rgba(55, 53, 47, 0.45);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgba(55, 53, 47, 0.25);
   --collapse-icon-color-collapsed: rgba(55, 53, 47, 0.45);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(55, 53, 47, 0.14);
   --divider-color-hover: rgb(46, 170, 220);
   --dropdown-background: #f2f3f5;
@@ -983,7 +996,9 @@ body sup {
   --graph-node-focused: rgba(55, 53, 47, 0.45);
   --graph-node-unresolved: rgba(55, 53, 47, 0.25);
   --graph-text: rgba(55, 53, 47, 0.9);
+  --gray: var(--text-muted);
   --heading-formatting: rgba(55, 53, 47, 0.25);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(55, 53, 47, 0.14);
   --hue: 203;
   --icon-color: rgba(55, 53, 47, 0.45);
@@ -997,6 +1012,8 @@ body sup {
   --interactive-accent-rgb: 46, 170, 220;
   --interactive-hover: #e9e9e9;
   --interactive-normal: #f2f3f5;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgba(55, 53, 47, 0.45);
   --link-color-hover: rgba(55, 53, 47, 0.45);
   --link-external-color: rgba(55, 53, 47, 0.45);
@@ -1043,6 +1060,7 @@ body sup {
   --search-clear-button-color: rgba(55, 53, 47, 0.45);
   --search-icon-color: rgba(55, 53, 47, 0.45);
   --search-result-background: rgb(255, 255, 255);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgba(55, 53, 47, 0.9);
   --setting-items-background: rgb(244, 245, 246);
   --setting-items-border-color: rgba(55, 53, 47, 0.14);
@@ -1072,6 +1090,7 @@ body sup {
   --table-selection-border-color: rgb(46, 170, 220);
   --tag-color: rgba(55, 53, 47, 0.45);
   --tag-color-hover: rgba(55, 53, 47, 0.45);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgba(55, 53, 47, 0.45);
   --text-accent-hover: rgba(55, 53, 47, 0.45);
   --text-blue: rgb(11, 110, 153);
@@ -1090,6 +1109,7 @@ body sup {
   --text-rgb: 55, 53, 47;
   --text-selection: rgba(0, 122, 255, 0.15);
   --text-yellow: rgb(223, 171, 1);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(244, 245, 246);
   --titlebar-background-focused: rgb(227, 230, 232);
   --titlebar-border-color: rgba(55, 53, 47, 0.14);

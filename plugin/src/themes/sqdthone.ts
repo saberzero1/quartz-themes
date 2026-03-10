@@ -31,6 +31,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: rgb(59, 176, 137);
   --bases-table-summary-background: rgb(38, 34, 38);
   --blockquote-border-color: rgb(98, 119, 188);
+  --bodyFont: var(--font-interface);
   --canvas-background: rgb(38, 34, 38);
   --canvas-card-label-color: rgb(79, 196, 173);
   --caret-color: rgb(48, 145, 113);
@@ -52,6 +53,7 @@ export const theme: ThemeData = {
   --code-string: 108, 40%, 42%;
   --code-tag: 346, 50%, 36%;
   --code-value: 270, 40%, 42%;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: rgb(79, 196, 173);
   --color-alternate: 316, 50%, 80%;
   --color-base-0: 300,  6%, 10%;
@@ -120,6 +122,8 @@ export const theme: ThemeData = {
   --crimson3: 346, 50%, 28%;
   --crimson4: 346, 50%, 24%;
   --crimson5: 346, 50%, 20%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --day0: 15, 20%, 96%;
   --day1: 15, 20%, 92%;
   --day2: 15, 20%, 88%;
@@ -152,13 +156,16 @@ export const theme: ThemeData = {
   --graph-node-tag: 108, 40%, 42%;
   --graph-node-unresolved: rgb(79, 196, 173);
   --graph-text: rgb(48, 145, 113);
+  --gray: var(--text-muted);
   --green0: 108, 40%, 34%;
   --green1: 108, 40%, 38%;
   --green2: 108, 40%, 42%;
   --green3: 108, 40%, 46%;
   --green4: 108, 40%, 50%;
   --green5: 108, 40%, 54%;
+  --headerFont: var(--font-interface);
   --heading-formatting: rgb(79, 196, 173);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(98, 119, 188);
   --icon-color: rgb(59, 176, 137);
   --icon-color-focused: rgb(48, 145, 113);
@@ -174,6 +181,8 @@ export const theme: ThemeData = {
   --interactive-accent: rgb(98, 119, 188);
   --letterspacing-text-headers: 1.2px;
   --letterspacing-text-p: 1px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color-hover: rgb(107, 64, 150);
   --link-external-color-hover: rgb(107, 64, 150);
   --list-marker-color: rgb(79, 196, 173);
@@ -240,6 +249,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(59, 176, 137);
   --search-icon-color: rgb(59, 176, 137);
   --search-result-background: rgb(38, 34, 38);
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: rgb(48, 145, 113);
   --setting-items-background: rgb(49, 43, 49);
   --setting-items-border-color: rgb(98, 119, 188);
@@ -288,6 +298,7 @@ export const theme: ThemeData = {
   --teal3: 160, 50%, 46%;
   --teal4: 160, 50%, 50%;
   --teal5: 168, 50%, 54%;
+  --tertiary: var(--text-accent-hover);
   --text-accent-hover: rgb(107, 64, 150);
   --text-error: 346, 50%, 36%;
   --text-faint: rgb(79, 196, 173);
@@ -298,6 +309,8 @@ export const theme: ThemeData = {
   --text-selection: rgb(222, 210, 206);
   --text-success: 108, 40%, 42%;
   --text-warning: 21, 50%, 52%;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(59, 53, 59);
   --titlebar-background-focused: rgb(49, 43, 49);
   --titlebar-border-color: rgb(98, 119, 188);
@@ -1212,6 +1225,7 @@ body sup {
   --bases-table-summary-background: rgb(239, 233, 231);
   --blockquote-border-color: rgb(84, 106, 182);
   --blur-background: color-mix(in srgb, rgb(239, 233, 231) 65%, transparent) linear-gradient(rgb(239, 233, 231), color-mix(in srgb, rgb(239, 233, 231) 65%, transparent));
+  --bodyFont: var(--font-interface);
   --canvas-background: rgb(239, 233, 231);
   --canvas-card-label-color: rgb(81, 72, 81);
   --caret-color: rgb(38, 34, 38);
@@ -1234,6 +1248,7 @@ body sup {
   --code-string: 108, 40%, 42%;
   --code-tag: 346, 50%, 32%;
   --code-value: 270, 40%, 38%;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: rgb(81, 72, 81);
   --collapse-icon-color-collapsed: rgb(84, 106, 182);
   --color-alternate: 316, 50%, 68%;
@@ -1303,6 +1318,8 @@ body sup {
   --crimson3: 346, 50%, 28%;
   --crimson4: 346, 50%, 24%;
   --crimson5: 346, 50%, 20%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --day0: 15, 20%, 96%;
   --day1: 15, 20%, 92%;
   --day2: 15, 20%, 88%;
@@ -1339,13 +1356,16 @@ body sup {
   --graph-node-tag: 108, 40%, 42%;
   --graph-node-unresolved: rgb(81, 72, 81);
   --graph-text: rgb(38, 34, 38);
+  --gray: var(--text-muted);
   --green0: 108, 40%, 34%;
   --green1: 108, 40%, 38%;
   --green2: 108, 40%, 42%;
   --green3: 108, 40%, 46%;
   --green4: 108, 40%, 50%;
   --green5: 108, 40%, 54%;
+  --headerFont: var(--font-interface);
   --heading-formatting: rgb(81, 72, 81);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(84, 106, 182);
   --icon-color: rgb(59, 53, 59);
   --icon-color-active: rgb(84, 106, 182);
@@ -1365,6 +1385,8 @@ body sup {
   --interactive-normal: rgb(222, 210, 206);
   --letterspacing-text-headers: 1.2px;
   --letterspacing-text-p: 1px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(84, 106, 182);
   --link-color-hover: rgb(97, 58, 136);
   --link-external-color: rgb(84, 106, 182);
@@ -1436,6 +1458,7 @@ body sup {
   --search-clear-button-color: rgb(59, 53, 59);
   --search-icon-color: rgb(59, 53, 59);
   --search-result-background: rgb(239, 233, 231);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(38, 34, 38);
   --setting-items-background: rgb(231, 221, 218);
   --setting-items-border-color: rgb(84, 106, 182);
@@ -1487,6 +1510,7 @@ body sup {
   --teal3: 160, 50%, 46%;
   --teal4: 160, 50%, 50%;
   --teal5: 168, 50%, 54%;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(84, 106, 182);
   --text-accent-hover: rgb(97, 58, 136);
   --text-error: 346, 50%, 32%;
@@ -1498,6 +1522,8 @@ body sup {
   --text-selection: rgb(168, 140, 56);
   --text-success: 108, 40%, 42%;
   --text-warning: 22, 50%, 40%;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(222, 210, 206);
   --titlebar-background-focused: rgb(231, 221, 218);
   --titlebar-border-color: rgb(84, 106, 182);

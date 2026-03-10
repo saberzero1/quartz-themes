@@ -17,6 +17,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: #1B1B1B;
   --bases-table-header-color: #707070;
   --bases-table-summary-background: #1B1B1B;
+  --bodyFont: var(--font-text);
   --callout-title-color: #CCC;
   --canvas-background: #1B1B1B;
   --canvas-card-label-color: #707070;
@@ -30,7 +31,10 @@ export const theme: ThemeData = {
   --code-comment: #707070;
   --code-normal: #CCC;
   --code-punctuation: #707070;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #707070;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --file-header-background: #1B1B1B;
   --file-header-background-focused: #1B1B1B;
   --file-line-width: min(800px, 98vw);
@@ -44,6 +48,7 @@ export const theme: ThemeData = {
   --graph-node: #707070;
   --graph-node-unresolved: #707070;
   --graph-text: #CCC;
+  --gray: var(--text-muted);
   --h1-color: #CCC;
   --h1-size: 16px;
   --h2-size: 16px;
@@ -53,7 +58,9 @@ export const theme: ThemeData = {
   --h5-size: 16px;
   --h6-line-height: 1.7;
   --h6-size: 16px;
+  --headerFont: var(--font-text);
   --heading-formatting: #707070;
+  --highlight: var(--text-highlight-bg);
   --icon-color: #707070;
   --icon-color-focused: #CCC;
   --icon-color-hover: #707070;
@@ -61,6 +68,8 @@ export const theme: ThemeData = {
   --inline-title-size: 16px;
   --input-date-separator: #707070;
   --input-placeholder-color: #707070;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.7;
   --link-color: #CCC;
   --link-external-color: #CCC;
@@ -124,6 +133,8 @@ export const theme: ThemeData = {
   --text-highlight-color: #DCCF99;
   --text-muted: #707070;
   --text-normal: #CCC;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #141414;
   --titlebar-background-focused: #141414;
   --titlebar-text-color: #707070;
@@ -812,6 +823,7 @@ body sup {
   --bases-table-header-color: #B5B3B1;
   --bases-table-summary-background: #F7F7F7;
   --blur-background: color-mix(in srgb, #F7F7F7 65%, transparent) linear-gradient(#F7F7F7, color-mix(in srgb, #F7F7F7 65%, transparent));
+  --bodyFont: var(--font-text);
   --callout-title-color: #1A1A1A;
   --canvas-background: #F7F7F7;
   --canvas-card-label-color: #B5B3B1;
@@ -825,7 +837,10 @@ body sup {
   --code-comment: #B5B3B1;
   --code-normal: #1A1A1A;
   --code-punctuation: #B5B3B1;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #B5B3B1;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --file-header-background: #F7F7F7;
   --file-header-background-focused: #F7F7F7;
   --file-line-width: min(800px, 98vw);
@@ -839,6 +854,7 @@ body sup {
   --graph-node: #B5B3B1;
   --graph-node-unresolved: #B5B3B1;
   --graph-text: #1A1A1A;
+  --gray: var(--text-muted);
   --h1-color: #1A1A1A;
   --h1-size: 16px;
   --h2-size: 16px;
@@ -848,7 +864,9 @@ body sup {
   --h5-size: 16px;
   --h6-line-height: 1.7;
   --h6-size: 16px;
+  --headerFont: var(--font-text);
   --heading-formatting: #B5B3B1;
+  --highlight: var(--text-highlight-bg);
   --icon-color: #B5B3B1;
   --icon-color-focused: #1A1A1A;
   --icon-color-hover: #B5B3B1;
@@ -856,6 +874,8 @@ body sup {
   --inline-title-size: 16px;
   --input-date-separator: #B5B3B1;
   --input-placeholder-color: #B5B3B1;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.7;
   --link-color: #1A1A1A;
   --link-external-color: #1A1A1A;
@@ -920,6 +940,8 @@ body sup {
   --text-highlight-color: #1A1A1A;
   --text-muted: #B5B3B1;
   --text-normal: #1A1A1A;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #FCFCFC;
   --titlebar-background-focused: #FCFCFC;
   --titlebar-text-color: #B5B3B1;

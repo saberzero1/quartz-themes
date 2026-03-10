@@ -292,6 +292,44 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap) {
     }
   }
 
+  const derivedQuartzVars = {
+    "--light": ["--background-primary", "--background-primary-alt"],
+    "--lightgray": ["--background-secondary", "--background-secondary-alt"],
+    "--gray": ["--text-muted", "--text-faint", "--text-normal"],
+    "--darkgray": ["--text-normal", "--text-muted"],
+    "--dark": ["--text-normal", "--text-muted"],
+    "--secondary": ["--text-accent", "--color-accent", "--interactive-accent"],
+    "--tertiary": [
+      "--text-accent-hover",
+      "--interactive-accent-hover",
+      "--text-accent",
+    ],
+    "--highlight": [
+      "--text-highlight-bg",
+      "--background-modifier-hover",
+      "--background-modifier-active-hover",
+    ],
+    "--textHighlight": [
+      "--text-highlight-bg",
+      "--background-modifier-hover",
+      "--background-modifier-active-hover",
+    ],
+    "--bodyFont": ["--font-text", "--font-interface", "--font-text-theme"],
+    "--headerFont": ["--font-text", "--font-interface", "--font-text-theme"],
+    "--titleFont": ["--font-text", "--font-interface", "--font-text-theme"],
+    "--codeFont": ["--font-monospace", "--font-text", "--font-interface"],
+  };
+
+  for (const [quartzVar, sources] of Object.entries(derivedQuartzVars)) {
+    if (baseVars[quartzVar]) continue;
+    for (const source of sources) {
+      if (baseVars[source]) {
+        baseVars[quartzVar] = `var(${source})`;
+        break;
+      }
+    }
+  }
+
   config.forEach((mapping, index) => {
     const aspect = aspectMap[index] ?? "misc";
     const style = data[mapping.obsidianSelector];

@@ -14,6 +14,7 @@ export const theme: ThemeData = {
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(232, 201, 48);
   --bases-table-container-border-radius: 0px;
   --blockquote-border-color: rgb(232, 201, 48);
+  --bodyFont: var(--font-text);
   --button-radius: 0px;
   --callout-radius: 0px;
   --canvas-controls-radius: 0px;
@@ -22,6 +23,7 @@ export const theme: ThemeData = {
   --checkbox-radius: 0px;
   --clickable-icon-radius: 0px;
   --code-radius: 0px;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color-collapsed: rgb(238, 204, 83);
   --color-accent: rgb(232, 201, 48);
   --color-accent-1: rgb(238, 204, 83);
@@ -40,6 +42,8 @@ export const theme: ThemeData = {
   --font-text-theme: "Roboto Mono *", monospace;
   --footnote-radius: 0px;
   --graph-node-focused: rgb(238, 204, 83);
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-active-hover);
   --icon-color: #e2b714;
   --icon-color-active: rgb(238, 204, 83);
   --input-radius: 0px;
@@ -68,6 +72,7 @@ export const theme: ThemeData = {
   --ribbon-background: #323437;
   --ribbon-background-collapsed: #323437;
   --scrollbar-radius: 0px;
+  --secondary: var(--text-accent);
   --setting-items-radius: 0px;
   --slider-thumb-radius: 0px;
   --status-bar-background: #323437;
@@ -85,9 +90,12 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(232, 201, 48, 0.15);
   --tag-color: rgb(238, 204, 83);
   --tag-color-hover: rgb(238, 204, 83);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(238, 204, 83);
   --text-accent-hover: rgb(243, 212, 119);
   --text-selection: rgba(232, 201, 48, 0.33);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --toggle-radius: 0px;
   --toggle-thumb-radius: 0px;
   --quartz-icon-color: currentColor;
@@ -508,6 +516,7 @@ body kbd {
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(235, 204, 66);
   --bases-table-container-border-radius: 0px;
   --blockquote-border-color: rgb(235, 204, 66);
+  --bodyFont: var(--font-text);
   --button-radius: 0px;
   --callout-radius: 0px;
   --canvas-controls-radius: 0px;
@@ -516,6 +525,7 @@ body kbd {
   --checkbox-radius: 0px;
   --clickable-icon-radius: 0px;
   --code-radius: 0px;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color-collapsed: rgb(232, 201, 48);
   --color-accent: rgb(232, 201, 48);
   --color-accent-1: rgb(235, 204, 66);
@@ -534,6 +544,8 @@ body kbd {
   --font-text-theme: "Roboto Mono *", monospace;
   --footnote-radius: 0px;
   --graph-node-focused: rgb(232, 201, 48);
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-active-hover);
   --icon-color: #e2b714;
   --icon-color-active: rgb(232, 201, 48);
   --input-radius: 0px;
@@ -562,6 +574,7 @@ body kbd {
   --ribbon-background: #e1e1e3;
   --ribbon-background-collapsed: #e1e1e3;
   --scrollbar-radius: 0px;
+  --secondary: var(--text-accent);
   --setting-items-radius: 0px;
   --slider-thumb-radius: 0px;
   --status-bar-background: #e1e1e3c0;
@@ -579,9 +592,12 @@ body kbd {
   --tag-border-color-hover: rgba(232, 201, 48, 0.15);
   --tag-color: rgb(232, 201, 48);
   --tag-color-hover: rgb(232, 201, 48);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(232, 201, 48);
   --text-accent-hover: rgb(238, 204, 83);
   --text-selection: rgba(232, 201, 48, 0.2);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --toggle-radius: 0px;
   --toggle-thumb-radius: 0px;
   --quartz-icon-color: currentColor;

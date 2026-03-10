@@ -20,6 +20,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #000000;
   --blockquote-border-color: #FF8533;
   --blur-background: color-mix(in srgb, #CC5500 65%, transparent) linear-gradient(#CC5500, color-mix(in srgb, #CC5500 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: #000000;
   --canvas-card-label-color: #AA4400;
   --caret-color: #FF6600;
@@ -33,8 +34,11 @@ export const theme: ThemeData = {
   --code-comment: #AA4400;
   --code-normal: #FF6600;
   --code-punctuation: #CC5500;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #AA4400;
+  --dark: var(--text-normal);
   --dark-gray: #1A1A1A;
+  --darkgray: var(--text-normal);
   --divider-color: #AA4400;
   --divider-color-hover: #FF8533;
   --dropdown-background: #CC5500;
@@ -61,6 +65,8 @@ export const theme: ThemeData = {
   --graph-node: #CC5500;
   --graph-node-unresolved: #AA4400;
   --graph-text: #FF6600;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #AA4400;
   --hr-color: #AA4400;
   --icon-color: #CC5500;
@@ -71,7 +77,9 @@ export const theme: ThemeData = {
   --interactive-accent: #FF8533;
   --interactive-hover: #FF6600;
   --interactive-normal: #CC5500;
+  --light: var(--background-primary);
   --light-gray: #4D4D4D;
+  --lightgray: var(--background-secondary);
   --list-marker-color: #AA4400;
   --list-marker-color-hover: #CC5500;
   --medium-gray: #333333;
@@ -120,6 +128,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #CC5500;
   --search-icon-color: #CC5500;
   --search-result-background: #000000;
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: #FF6600;
   --setting-items-border-color: #AA4400;
   --slider-thumb-radius: 50%;
@@ -154,6 +163,7 @@ export const theme: ThemeData = {
   --text-faint: #AA4400;
   --text-muted: #CC5500;
   --text-normal: #FF6600;
+  --titleFont: var(--font-text);
   --titlebar-background: #0A0A0A;
   --titlebar-border-color: #AA4400;
   --titlebar-text-color: #CC5500;
@@ -906,6 +916,7 @@ body sup {
   --bases-table-summary-background: #E5E5E5;
   --blockquote-border-color: #FF8533;
   --blur-background: color-mix(in srgb, #E5E5E5 65%, transparent) linear-gradient(#E5E5E5, color-mix(in srgb, #E5E5E5 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: #E5E5E5;
   --canvas-card-label-color: #4D4D4D;
   --caret-color: #000000;
@@ -919,8 +930,11 @@ body sup {
   --code-comment: #4D4D4D;
   --code-normal: #000000;
   --code-punctuation: #333333;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #4D4D4D;
+  --dark: var(--text-normal);
   --dark-gray: #1A1A1A;
+  --darkgray: var(--text-normal);
   --divider-color: #AA4400;
   --divider-color-hover: #FF8533;
   --dropdown-background: #CC5500;
@@ -947,6 +961,8 @@ body sup {
   --graph-node: #333333;
   --graph-node-unresolved: #4D4D4D;
   --graph-text: #000000;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #4D4D4D;
   --hr-color: #AA4400;
   --icon-color: #333333;
@@ -957,7 +973,9 @@ body sup {
   --interactive-accent: #FF8533;
   --interactive-hover: #FF6600;
   --interactive-normal: #CC5500;
+  --light: var(--background-primary);
   --light-gray: #4D4D4D;
+  --lightgray: var(--background-secondary);
   --list-marker-color: #4D4D4D;
   --list-marker-color-hover: #333333;
   --medium-gray: #333333;
@@ -1004,6 +1022,7 @@ body sup {
   --search-clear-button-color: #333333;
   --search-icon-color: #333333;
   --search-result-background: #E5E5E5;
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: #000000;
   --setting-items-border-color: #AA4400;
   --slider-thumb-radius: 50%;
@@ -1038,6 +1057,7 @@ body sup {
   --text-faint: #4D4D4D;
   --text-muted: #333333;
   --text-normal: #000000;
+  --titleFont: var(--font-text);
   --titlebar-background: #FFFFFF;
   --titlebar-border-color: #AA4400;
   --titlebar-text-color: #333333;

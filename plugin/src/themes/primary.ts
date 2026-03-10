@@ -70,6 +70,7 @@ export const theme: ThemeData = {
   --blockquote-background-color: rgb(38, 33, 28);
   --blockquote-border-color: rgb(59, 48, 38);
   --blur-background: color-mix(in srgb, rgb(38, 33, 28) 65%, transparent) linear-gradient(rgb(38, 33, 28), color-mix(in srgb, rgb(38, 33, 28) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: rgb(243, 80, 68);
   --bold-highlight-bg: rgba(240, 81, 108, 0.2);
   --bold-highlight-color: rgb(215, 192, 163);
@@ -294,6 +295,7 @@ export const theme: ThemeData = {
   --code-string: rgb(80, 196, 101);
   --code-tag: rgb(192, 78, 78);
   --code-value: rgb(113, 97, 194);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(107, 86, 61);
   --collapse-icon-color-collapsed: rgb(107, 86, 61);
   --color-accent: rgb(78, 62, 45);
@@ -384,6 +386,8 @@ export const theme: ThemeData = {
   --copy-code-btn-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.39),0px 2px 4px -2px rgba(0, 0, 0, 0.39);
   --copy-code-button-radius: 4px;
   --cursor: pointer;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --disabled-component-opacity: 0.3;
   --divider-color: rgb(59, 48, 38);
   --divider-color-hover: color-mix(in srgb, rgb(81, 64, 47) 40%, rgb(59, 48, 38));
@@ -491,6 +495,7 @@ export const theme: ThemeData = {
   --graph-node-unresolved: rgb(229, 170, 31);
   --graph-node-unresolved-opacity: 1;
   --graph-text: rgb(145, 121, 89);
+  --gray: var(--text-muted);
   --gutter-color: color-mix(in srgb, rgb(107, 86, 61) 40%, rgb(81, 64, 47));
   --gutter-color-active: rgb(145, 121, 89);
   --h1-bg-color: transparent;
@@ -566,7 +571,9 @@ export const theme: ThemeData = {
   --h6-text-transform: normal;
   --h6-weight: 650;
   --header-height: 46px;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(145, 121, 89);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(59, 48, 38);
   --hr-thickness: 1px;
   --icon-bg: transparent;
@@ -644,6 +651,8 @@ export const theme: ThemeData = {
   --kbd-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.17),inset 0px -2px 0px 0px rgba(0, 0, 0, 0.2);
   --language-chbx-color: rgb(219, 111, 97);
   --law-chbx-color: rgb(174, 138, 91);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-ahref-color: rgb(247, 104, 94);
   --link-ahref-color-hover: rgb(251, 132, 121);
   --link-ahref-decoration-color: color-mix(in srgb, currentColor 22%, transparent);
@@ -904,6 +913,7 @@ export const theme: ThemeData = {
   --search-result-dest-file-icon-color: rgb(81, 64, 47);
   --search-result-dest-file-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.3),inset 0px -2px 0px 0px rgba(0, 0, 0, 0.25);
   --search-result-dest-file-shadow-hover: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.3),inset 0px -2px 0px 0px rgba(0, 0, 0, 0.25),0px 2px 3px 0px rgba(0, 0, 0, 0.29);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(215, 192, 163);
   --setting-group-heading-weight: 650;
   --setting-items-background: rgb(42, 36, 30);
@@ -1023,6 +1033,7 @@ export const theme: ThemeData = {
   --tag-shadow-active: inset 0px -0.1em 0px 0px rgba(0, 0, 0, 0.2);
   --tag-shadow-hover: inset 0px -0.1em 0px 0px rgba(0, 0, 0, 0.2),0px 0px 0px 3px rgba(0, 0, 0, 0.15);
   --telephone-chbx-color: rgb(56, 159, 104);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(78, 62, 45);
   --text-accent-hover: rgb(107, 78, 56);
   --text-error: rgb(243, 80, 68);
@@ -1044,6 +1055,8 @@ export const theme: ThemeData = {
   --text-selection-theme-text-color: color-mix(in srgb, currentColor 70%, white);
   --text-success: rgb(16, 132, 84);
   --text-warning: rgb(218, 94, 22);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(38, 33, 28);
   --titlebar-background-focused: rgb(38, 33, 28);
   --titlebar-border-color: rgb(59, 48, 38);
@@ -2291,6 +2304,7 @@ body sup {
   --blockquote-background-color: rgb(252, 250, 248);
   --blockquote-border-color: rgb(228, 215, 195);
   --blur-background: color-mix(in srgb, rgb(248, 245, 241) 65%, transparent) linear-gradient(rgb(248, 245, 241), color-mix(in srgb, rgb(248, 245, 241) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: rgb(191, 63, 54);
   --bold-highlight-bg: rgba(240, 81, 108, 0.2);
   --bold-highlight-color: rgb(89, 62, 34);
@@ -2515,6 +2529,7 @@ body sup {
   --code-string: rgb(79, 171, 119);
   --code-tag: rgb(205, 66, 66);
   --code-value: rgb(125, 113, 193);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(207, 182, 150);
   --collapse-icon-color-collapsed: rgb(207, 182, 150);
   --color-accent: rgb(157, 128, 98);
@@ -2605,6 +2620,8 @@ body sup {
   --copy-code-btn-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.09),0px 2px 4px -2px rgba(0, 0, 0, 0.06);
   --copy-code-button-radius: 4px;
   --cursor: pointer;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --disabled-component-opacity: 0.3;
   --divider-color: rgb(228, 215, 195);
   --divider-color-hover: color-mix(in hsl, rgb(207, 182, 150) 60%, rgb(228, 215, 195));
@@ -2712,6 +2729,7 @@ body sup {
   --graph-node-unresolved: rgb(236, 185, 54);
   --graph-node-unresolved-opacity: 1;
   --graph-text: rgb(183, 157, 123);
+  --gray: var(--text-muted);
   --gutter-color: color-mix(in hsl, rgb(228, 215, 195) 40%, rgb(207, 182, 150));
   --gutter-color-active: rgb(157, 128, 98);
   --h1-bg-color: transparent;
@@ -2787,7 +2805,9 @@ body sup {
   --h6-text-transform: normal;
   --h6-weight: 650;
   --header-height: 46px;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(183, 157, 123);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(228, 215, 195);
   --hr-thickness: 1px;
   --icon-bg: transparent;
@@ -2865,6 +2885,8 @@ body sup {
   --kbd-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.03),inset 0px -2px 0px 0px rgba(0, 0, 0, 0.06);
   --language-chbx-color: rgb(217, 122, 109);
   --law-chbx-color: rgb(174, 138, 91);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-ahref-color: rgb(223, 69, 58);
   --link-ahref-color-hover: rgb(217, 116, 109);
   --link-ahref-decoration-color: color-mix(in srgb, currentColor 22%, transparent);
@@ -3123,6 +3145,7 @@ body sup {
   --search-result-dest-file-icon-color: rgb(207, 182, 150);
   --search-result-dest-file-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1),inset 0px -2px 0px 0px rgba(0, 0, 0, 0.05);
   --search-result-dest-file-shadow-hover: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1),inset 0px -2px 0px 0px rgba(0, 0, 0, 0.05),0px 2px 3px 0px rgba(0, 0, 0, 0.09);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(89, 62, 34);
   --setting-group-heading-weight: 650;
   --setting-items-background: rgb(242, 236, 227);
@@ -3241,6 +3264,7 @@ body sup {
   --tag-shadow-active: inset 0px -0.1em 0px 0px rgba(0, 0, 0, 0.1);
   --tag-shadow-hover: inset 0px -0.1em 0px 0px rgba(0, 0, 0, 0.1),0px 0px 0px 3px rgba(0, 0, 0, 0.03);
   --telephone-chbx-color: rgb(64, 176, 116);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(157, 128, 98);
   --text-accent-hover: rgb(185, 151, 121);
   --text-error: rgb(191, 63, 54);
@@ -3262,6 +3286,8 @@ body sup {
   --text-selection-theme-text-color: color-mix(in srgb, currentColor 70%, black);
   --text-success: rgb(50, 149, 98);
   --text-warning: rgb(215, 92, 40);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(238, 231, 221);
   --titlebar-background-focused: rgb(238, 231, 221);
   --titlebar-border-color: rgb(228, 215, 195);

@@ -88,6 +88,8 @@ export const theme: ThemeData = {
   --color-yellow-h: 46;
   --color-yellow-l-p: 43;
   --color-yellow-s: 100%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --dropdown-background: #000;
   --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent;
@@ -101,6 +103,7 @@ export const theme: ThemeData = {
   --graph-node: #000;
   --graph-node-unresolved: #000;
   --graph-text: rgb(236, 210, 198);
+  --gray: var(--text-muted);
   --heading-formatting: #000;
   --hr-color: transparent;
   --icon-bloom: drop-shadow(0px 0px 0.04167em rgb(191, 106, 64)) drop-shadow(0px 0px 0.04167em rgb(191, 106, 64));
@@ -117,6 +120,8 @@ export const theme: ThemeData = {
   --ion-l-p: 85;
   --ion-s: 50%;
   --ion-threshold: 80;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: #000;
   --list-marker-color-hover: #000;
   --menu-background: #000;

@@ -56,6 +56,8 @@ export const theme: ThemeData = {
   --code-normal: #BBBBBB;
   --collapse-icon-color: #666;
   --collapse-icon-color-collapsed: #8B806C;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #392D15;
   --divider-color-hover: #00372A;
   --dropdown-background: #575042;
@@ -71,6 +73,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #8B806C;
   --graph-node-unresolved: #666;
   --graph-text: #BBBBBB;
+  --gray: var(--text-faint);
   --green-base: #00503B;
   --green-bright: #227E67;
   --green-compliment: #7B2E00;
@@ -78,6 +81,7 @@ export const theme: ThemeData = {
   --green-deep: #090C0D;
   --green-light: #0F6751;
   --heading-formatting: #666;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #392D15;
   --icon-color-active: #8B806C;
   --icon-color-focused: #BBBBBB;
@@ -89,6 +93,8 @@ export const theme: ThemeData = {
   --interactive-hover: #3F3624;
   --interactive-normal: #575042;
   --interactive-success: #197300;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #8B806C;
   --link-color-hover: #575042;
   --link-external-color: #8B806C;
@@ -134,6 +140,7 @@ export const theme: ThemeData = {
   --scrollbar-bg: rgba(238, 237, 237, 0.05);
   --scrollbar-thumb-bg: rgba(238, 237, 237, 0.1);
   --search-result-background: #090C0D;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #BBBBBB;
   --setting-items-background: #252525;
   --setting-items-border-color: #392D15;
@@ -165,6 +172,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #00372A;
   --tag-color: #8B806C;
   --tag-color-hover: #8B806C;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #8B806C;
   --text-accent-hover: #575042;
   --text-error: #ff3333;
@@ -181,6 +189,7 @@ export const theme: ThemeData = {
   --text-title-h3: #575042;
   --text-title-h4: #8B806C;
   --text-title-h5: #B7AD97;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #0C090D;
   --titlebar-background-focused: #000000;
   --titlebar-border-color: #392D15;

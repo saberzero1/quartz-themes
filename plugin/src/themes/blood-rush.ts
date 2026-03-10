@@ -36,6 +36,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: #aaa;
   --bases-table-summary-background: #111111;
   --blur-background: color-mix(in srgb, #191919 65%, transparent) linear-gradient(#191919, color-mix(in srgb, #191919 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 0px;
   --callout-blend-mode: normal;
   --callout-radius: 0px;
@@ -60,6 +61,7 @@ export const theme: ThemeData = {
   --code-normal: #aaa;
   --code-punctuation: #aaa;
   --code-radius: 0px;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #aaa;
   --collapse-icon-color-collapsed: #A82424;
   --color-base-00: #111111;
@@ -74,6 +76,8 @@ export const theme: ThemeData = {
   --color-base-50: #aaa;
   --color-base-60: #A82424;
   --color-base-70: #aaa;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --dropdown-background: #191919;
   --dropdown-background-hover: #030303;
@@ -95,7 +99,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #A82424;
   --graph-node-unresolved: #aaa;
   --graph-text: #aaa;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #aaa;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #3d424180;
   --hr-thickness: 1px;
   --icon-color: #aaa;
@@ -111,6 +118,8 @@ export const theme: ThemeData = {
   --input-radius: 0px;
   --interactive-hover: #030303;
   --interactive-normal: #191919;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #A82424;
   --link-color-hover: #999;
   --link-external-color: #A82424;
@@ -175,6 +184,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #aaa;
   --search-icon-color: #aaa;
   --search-result-background: #111111;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #aaa;
   --setting-items-background: #111111;
   --setting-items-border-color: #111111;
@@ -214,12 +224,15 @@ export const theme: ThemeData = {
   --tag-color: #aaa;
   --tag-color-hover: #191919;
   --tag-radius: 0px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #A82424;
   --text-accent-hover: #999;
   --text-faint: #aaa;
   --text-highlight-bg: transparent;
   --text-muted: #aaa;
   --text-normal: #aaa;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #111111;
   --titlebar-background-focused: #111111;
   --titlebar-border-color: #111111;
@@ -1397,6 +1410,7 @@ body sup {
   --bases-table-header-color: #aaa;
   --bases-table-summary-background: #111111;
   --blur-background: color-mix(in srgb, #111111 65%, transparent) linear-gradient(#111111, color-mix(in srgb, #111111 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 0px;
   --callout-blend-mode: normal;
   --callout-radius: 0px;
@@ -1421,6 +1435,7 @@ body sup {
   --code-normal: #aaa;
   --code-punctuation: #aaa;
   --code-radius: 0px;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #aaa;
   --collapse-icon-color-collapsed: #A82424;
   --color-base-00: #111111;
@@ -1435,6 +1450,8 @@ body sup {
   --color-base-50: #aaa;
   --color-base-60: #A82424;
   --color-base-70: #aaa;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --dropdown-background: #191919;
   --dropdown-background-hover: #111111;
@@ -1456,7 +1473,10 @@ body sup {
   --graph-node-focused: #A82424;
   --graph-node-unresolved: #aaa;
   --graph-text: #aaa;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #aaa;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #3d424180;
   --hr-thickness: 1px;
   --icon-color: #aaa;
@@ -1472,6 +1492,8 @@ body sup {
   --input-radius: 0px;
   --interactive-hover: #111111;
   --interactive-normal: #191919;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #A82424;
   --link-color-hover: #999;
   --link-external-color: #A82424;
@@ -1534,6 +1556,7 @@ body sup {
   --search-clear-button-color: #aaa;
   --search-icon-color: #aaa;
   --search-result-background: #111111;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #aaa;
   --setting-items-background: #111111;
   --setting-items-border-color: #111111;
@@ -1573,12 +1596,15 @@ body sup {
   --tag-color: #aaa;
   --tag-color-hover: #191919;
   --tag-radius: 0px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #A82424;
   --text-accent-hover: #999;
   --text-faint: #aaa;
   --text-highlight-bg: transparent;
   --text-muted: #aaa;
   --text-normal: #aaa;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #111111;
   --titlebar-background-focused: #111111;
   --titlebar-border-color: #111111;

@@ -48,6 +48,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075);
   --blockquote-border-color: rgb(150, 82, 218);
   --blur-background: color-mix(in srgb, rgb(89, 82, 96) 65%, transparent) linear-gradient(rgb(89, 82, 96), color-mix(in srgb, rgb(89, 82, 96) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: rgb(221, 120, 95);
   --callout-bug: 228, 18, 88;
   --callout-error: 228, 18, 88;
@@ -79,6 +80,7 @@ export const theme: ThemeData = {
   --code-string: rgba(61, 165, 9, 0);
   --code-tag: rgb(226, 18, 88);
   --code-value: rgb(150, 82, 218);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(166, 154, 177);
   --collapse-icon-color-collapsed: rgb(168, 120, 227);
   --color-accent: rgb(150, 82, 218);
@@ -106,6 +108,8 @@ export const theme: ThemeData = {
   --color-red: rgb(226, 18, 88);
   --color-red-rgb: 228, 18, 88;
   --color-yellow: rgb(255, 157, 0);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(255, 157, 0);
   --divider-color-hover: rgb(150, 82, 218);
   --dropdown-background: rgb(89, 82, 96);
@@ -136,6 +140,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgba(61, 165, 9, 0);
   --graph-node-unresolved: rgb(166, 154, 177);
   --graph-text: rgb(191, 185, 198);
+  --gray: var(--text-muted);
   --h1-color: rgb(150, 82, 218);
   --h1-font: "Architects Daughter", Neucha;
   --h2-color: rgb(222, 18, 120);
@@ -148,7 +153,9 @@ export const theme: ThemeData = {
   --h5-font: "Architects Daughter", Neucha;
   --h6-color: rgb(0, 111, 133);
   --h6-font: "Architects Daughter", Neucha;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(186, 179, 193);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(255, 157, 0);
   --icon-color: rgb(186, 179, 193);
   --icon-color-active: rgb(168, 120, 227);
@@ -164,6 +171,8 @@ export const theme: ThemeData = {
   --interactive-hover: rgb(128, 117, 138);
   --interactive-normal: rgb(89, 82, 96);
   --italic-color: rgb(216, 75, 108);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(255, 157, 0);
   --link-color-hover: rgb(255, 177, 51);
   --link-decoration: none;
@@ -232,6 +241,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(186, 179, 193);
   --search-icon-color: rgb(186, 179, 193);
   --search-result-background: rgb(38, 34, 42);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(191, 185, 198);
   --setting-items-background: rgb(46, 41, 50);
   --setting-items-border-color: rgb(255, 157, 0);
@@ -279,6 +289,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(150, 82, 218, 0.15);
   --tag-color: rgb(168, 120, 227);
   --tag-color-hover: rgb(168, 120, 227);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(168, 120, 227);
   --text-accent-hover: rgb(187, 152, 235);
   --text-error: rgb(226, 18, 88);
@@ -290,6 +301,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(150, 82, 218, 0.33);
   --text-success: rgba(61, 165, 9, 0);
   --text-warning: rgb(236, 109, 19);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(38, 34, 42);
   --titlebar-background-focused: rgb(46, 41, 50);
   --titlebar-border-color: rgb(255, 157, 0);
@@ -1337,6 +1350,7 @@ body sup {
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.075);
   --blockquote-border-color: rgb(159, 98, 223);
   --blur-background: color-mix(in srgb, rgb(199, 193, 205) 65%, transparent) linear-gradient(rgb(199, 193, 205), color-mix(in srgb, rgb(199, 193, 205) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: rgb(221, 120, 95);
   --callout-bug: 228, 18, 88;
   --callout-error: 228, 18, 88;
@@ -1368,6 +1382,7 @@ body sup {
   --code-string: rgba(61, 165, 9, 0);
   --code-tag: rgb(226, 18, 88);
   --code-value: rgb(150, 82, 218);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(46, 41, 50);
   --collapse-icon-color-collapsed: rgb(150, 82, 218);
   --color-accent: rgb(150, 82, 218);
@@ -1396,6 +1411,8 @@ body sup {
   --color-red: rgb(226, 18, 88);
   --color-red-rgb: 228, 18, 88;
   --color-yellow: rgb(255, 157, 0);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(255, 157, 0);
   --divider-color-hover: rgb(159, 98, 223);
   --dropdown-background: rgb(212, 207, 216);
@@ -1426,6 +1443,7 @@ body sup {
   --graph-node-tag: rgba(61, 165, 9, 0);
   --graph-node-unresolved: rgb(46, 41, 50);
   --graph-text: rgb(89, 82, 96);
+  --gray: var(--text-muted);
   --h1-color: rgb(150, 82, 218);
   --h1-font: "Architects Daughter", Neucha;
   --h2-color: rgb(222, 18, 120);
@@ -1438,7 +1456,9 @@ body sup {
   --h5-font: "Architects Daughter", Neucha;
   --h6-color: rgb(0, 111, 133);
   --h6-font: "Architects Daughter", Neucha;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(51, 46, 56);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(255, 157, 0);
   --icon-color: rgb(51, 46, 56);
   --icon-color-active: rgb(150, 82, 218);
@@ -1454,6 +1474,8 @@ body sup {
   --interactive-hover: rgb(199, 193, 205);
   --interactive-normal: rgb(212, 207, 216);
   --italic-color: rgb(216, 75, 108);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(255, 157, 0);
   --link-color-hover: rgb(255, 177, 51);
   --link-decoration: none;
@@ -1520,6 +1542,7 @@ body sup {
   --search-clear-button-color: rgb(51, 46, 56);
   --search-icon-color: rgb(51, 46, 56);
   --search-result-background: rgb(199, 193, 205);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(89, 82, 96);
   --setting-items-background: rgb(191, 185, 198);
   --setting-items-border-color: rgb(255, 157, 0);
@@ -1567,6 +1590,7 @@ body sup {
   --tag-border-color-hover: rgba(150, 82, 218, 0.15);
   --tag-color: rgb(150, 82, 218);
   --tag-color-hover: rgb(150, 82, 218);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(150, 82, 218);
   --text-accent-hover: rgb(168, 120, 227);
   --text-error: rgb(226, 18, 88);
@@ -1578,6 +1602,8 @@ body sup {
   --text-selection: rgba(150, 82, 218, 0.2);
   --text-success: rgba(61, 165, 9, 0);
   --text-warning: rgb(236, 109, 19);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(199, 193, 205);
   --titlebar-background-focused: rgb(191, 185, 198);
   --titlebar-border-color: rgb(255, 157, 0);

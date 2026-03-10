@@ -91,6 +91,8 @@ export const theme: ThemeData = {
   --color-base-35: transparent;
   --color-base-40: transparent;
   --color-base-50: #cad2e2;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #4a5466;
   --divider-color-hover: #9fef00;
   --drag-ghost-background: #9fef00;
@@ -115,6 +117,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #9fef00;
   --graph-node-unresolved: #a4b1cd;
   --graph-text: #a4b1cd;
+  --gray: var(--text-muted);
   --h1-color: #cad2e2;
   --h1-size: 2em;
   --h2-color: #cad2e2;
@@ -133,6 +136,7 @@ export const theme: ThemeData = {
   --h6-size: 1.12em;
   --h6-weight: 700;
   --heading-formatting: #cad2e2;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #1a2332;
   --htb-border: #4a5466;
   --htb-divider-color: #1a2332;
@@ -155,6 +159,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 80, 100%, 47%;
   --interactive-hover: transparent;
   --interactive-normal: #4a5466;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #9fef00;
   --link-color-hover: #9fef00;
   --link-decoration: normal;
@@ -221,6 +227,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #a4b1cd;
   --search-icon-color: #a4b1cd;
   --search-result-background: #141d2b;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #a4b1cd;
   --setting-items-background: #1a2331;
   --setting-items-border-color: #4a5466;
@@ -269,6 +276,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(160, 240, 0, 0.15);
   --tag-color: hsl(77, 102%, 54.05%);
   --tag-color-hover: hsl(77, 102%, 54.05%);
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(77, 102%, 54.05%);
   --text-accent-hover: hsl(75, 105%, 60.63%);
   --text-faint: #cad2e2;
@@ -277,6 +285,7 @@ export const theme: ThemeData = {
   --text-normal: #a4b1cd;
   --text-on-accent: #141d2b;
   --text-selection: #9fef00;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #1a2331;
   --titlebar-background-focused: #1a2331;
   --titlebar-border-color: #4a5466;

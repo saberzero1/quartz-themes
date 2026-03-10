@@ -63,6 +63,7 @@ export const theme: ThemeData = {
   --footnote-divider-color: transparent;
   --graph-node-focused: hsl(255, 89.76%, 75.9%);
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: transparent;
   --icon-color-active: hsl(255, 89.76%, 75.9%);
   --input-shadow-hover: inset 0 0 0 1px rgba(255, 255, 255, 0.12),
@@ -72,6 +73,8 @@ export const theme: ThemeData = {
   --interactive-hover: #00000060;
   --interactive-normal: #00000060;
   --kolorboku: #e2e0dc;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: hsl(255, 89.76%, 75.9%);
   --link-color-hover: hsl(253, 92.4%, 85.14%);
   --link-external-color: hsl(255, 89.76%, 75.9%);
@@ -103,6 +106,7 @@ export const theme: ThemeData = {
   --ribbon-background-collapsed: transparent;
   --scrollbar-width: 10px;
   --search-result-background: transparent;
+  --secondary: var(--text-accent);
   --set-blur: 80px;
   --setting-items-border-color: transparent;
   --sidebar-markdown-font-size: 14.4px;
@@ -130,9 +134,11 @@ export const theme: ThemeData = {
   --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
   --tag-color: hsl(255, 89.76%, 75.9%);
   --tag-color-hover: hsl(255, 89.76%, 75.9%);
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(255, 89.76%, 75.9%);
   --text-accent-hover: hsl(253, 92.4%, 85.14%);
   --text-selection: hsla(258, 88%, 66%, 0.33);
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: transparent;
   --titlebar-border-color: transparent;
   --tr: transparent;
@@ -511,11 +517,14 @@ body input[type=text] {
   --footnote-divider-color: transparent;
   --graph-node-focused: hsl(258, 88%, 66%);
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: transparent;
   --icon-color-active: hsl(258, 88%, 66%);
   --interactive-accent: hsl(257, 88.88%, 70.95%);
   --interactive-accent-hover: hsl(255, 89.76%, 75.9%);
   --kolorboku: #1d1d1f;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: hsl(258, 88%, 66%);
   --link-color-hover: hsl(255, 89.76%, 75.9%);
   --link-external-color: hsl(258, 88%, 66%);
@@ -543,6 +552,7 @@ body input[type=text] {
   --ribbon-background-collapsed: transparent;
   --scrollbar-width: 10px;
   --search-result-background: transparent;
+  --secondary: var(--text-accent);
   --set-blur: 80px;
   --setting-items-border-color: transparent;
   --sidebar-markdown-font-size: 14.4px;
@@ -570,9 +580,11 @@ body input[type=text] {
   --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
   --tag-color: hsl(258, 88%, 66%);
   --tag-color-hover: hsl(258, 88%, 66%);
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(258, 88%, 66%);
   --text-accent-hover: hsl(255, 89.76%, 75.9%);
   --text-selection: hsla(258, 88%, 66%, 0.2);
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: transparent;
   --titlebar-border-color: transparent;
   --tr: transparent;

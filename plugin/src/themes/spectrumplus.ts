@@ -33,6 +33,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: rgb(36, 36, 36);
   --bases-table-summary-background: rgb(36, 36, 36);
   --blockquote-border-color: rgb(255, 190, 0);
+  --bodyFont: var(--font-interface);
   --canvas-background: rgb(36, 36, 36);
   --caret-color: rgb(201, 201, 201);
   --chart-color-1: rgb(245, 112, 76);
@@ -45,7 +46,10 @@ export const theme: ThemeData = {
   --checkbox-color-hover: rgb(254, 106, 38);
   --checkbox-marker-color: rgb(36, 36, 36);
   --code-normal: rgb(201, 201, 201);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color-collapsed: rgb(255, 190, 0);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: "JetBrains Mono", monospace;
   --divider-color-hover: rgb(255, 190, 0);
   --embed-border-start: 2px solid rgb(255, 190, 0);
@@ -68,11 +72,16 @@ export const theme: ThemeData = {
   --font-size-xs: .78em;
   --graph-node-focused: rgb(255, 190, 0);
   --graph-text: rgb(201, 201, 201);
+  --gray: var(--text-normal);
   --header-height: 42px;
+  --headerFont: var(--font-interface);
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: rgb(255, 190, 0);
   --icon-color-focused: rgb(201, 201, 201);
   --interactive-accent: rgb(255, 190, 0);
   --interactive-accent-hover: rgb(254, 106, 38);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(255, 190, 0);
   --link-color-hover: rgb(254, 106, 38);
   --link-external-color: rgb(255, 190, 0);
@@ -112,6 +121,7 @@ export const theme: ThemeData = {
   --ribbon-background-collapsed: rgb(36, 36, 36);
   --ribbon-width: 40px;
   --search-result-background: rgb(36, 36, 36);
+  --secondary: var(--text-accent);
   --secondary-background: rgb(27, 27, 27);
   --secondary-background-low-opacity: rgba(27, 27, 27, 0.329);
   --secondary-background-rgb: 27, 27, 27;
@@ -155,11 +165,14 @@ export const theme: ThemeData = {
   --tag-color-hover: rgb(255, 190, 0);
   --tags: rgb(241, 158, 238);
   --tags-rgb: 241, 158, 238;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(255, 190, 0);
   --text-accent-hover: rgb(254, 106, 38);
   --text-highlight-bg: #e9b35f;
   --text-normal: rgb(201, 201, 201);
   --text-on-accent: black;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(27, 27, 27);
   --titlebar-text-color-focused: rgb(201, 201, 201);
   --traffic-lights-offset-x: 42px;

@@ -170,6 +170,8 @@ export const theme: ThemeData = {
   --ctp-teal: 148, 226, 213;
   --ctp-text: 198, 208, 245;
   --ctp-yellow: 249, 226, 175;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(49, 50, 68);
   --divider-color-hover: rgb(245, 224, 220);
   --drag-ghost-background: rgb(198, 208, 245);
@@ -193,6 +195,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(166, 227, 161);
   --graph-node-unresolved: rgb(161, 168, 201);
   --graph-text: rgb(198, 208, 245);
+  --gray: var(--text-muted);
   --h1-color: rgb(243, 139, 168);
   --h2-color: rgb(250, 179, 135);
   --h3-color: rgb(166, 227, 161);
@@ -200,6 +203,7 @@ export const theme: ThemeData = {
   --h5-color: rgb(180, 190, 254);
   --h6-color: rgb(203, 166, 247);
   --heading-formatting: rgb(245, 224, 220);
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: none;
   --hr-color: rgb(49, 50, 68);
   --icon-color: rgb(142, 149, 179);
@@ -217,6 +221,8 @@ export const theme: ThemeData = {
   --interactive-hover: rgb(67, 70, 90);
   --interactive-normal: rgb(49, 50, 68);
   --interactive-success: rgb(166, 227, 161);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(245, 224, 220);
   --link-color-hover: rgb(245, 224, 220);
   --link-external-color: rgb(245, 224, 220);
@@ -288,6 +294,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(142, 149, 179);
   --search-icon-color: rgb(142, 149, 179);
   --search-result-background: rgb(30, 30, 46);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(198, 208, 245);
   --setting-items-background: rgb(24, 24, 37);
   --setting-items-border-color: rgb(49, 50, 68);
@@ -343,6 +350,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(245, 224, 220, 0.15);
   --tag-color: rgb(245, 224, 220);
   --tag-color-hover: rgb(245, 224, 220);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(245, 224, 220);
   --text-accent-hover: rgb(245, 224, 220);
   --text-error: rgb(243, 139, 168);
@@ -357,6 +365,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(245, 224, 220, 0.25);
   --text-success: rgb(166, 227, 161);
   --text-warning: rgb(250, 179, 135);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(24, 24, 37);
   --titlebar-background-focused: rgb(17, 17, 27);
   --titlebar-border-color: rgb(49, 50, 68);
@@ -1403,6 +1412,8 @@ body sup {
   --ctp-teal: 23, 146, 153;
   --ctp-text: 76, 79, 105;
   --ctp-yellow: 228, 147, 32;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(188, 192, 204);
   --divider-color-hover: rgb(222, 149, 132);
   --drag-ghost-background: rgb(76, 79, 105);
@@ -1426,6 +1437,7 @@ body sup {
   --graph-node-tag: rgb(64, 160, 43);
   --graph-node-unresolved: rgb(108, 111, 133);
   --graph-text: rgb(76, 79, 105);
+  --gray: var(--text-muted);
   --h1-color: rgb(210, 15, 57);
   --h2-color: rgb(254, 100, 11);
   --h3-color: rgb(64, 160, 43);
@@ -1433,6 +1445,7 @@ body sup {
   --h5-color: rgb(114, 135, 253);
   --h6-color: rgb(136, 57, 239);
   --heading-formatting: rgb(222, 149, 132);
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: none;
   --hr-color: rgb(188, 192, 204);
   --icon-color: rgb(124, 127, 147);
@@ -1450,6 +1463,8 @@ body sup {
   --interactive-hover: rgb(188, 192, 204);
   --interactive-normal: rgb(204, 208, 218);
   --interactive-success: rgb(64, 160, 43);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(222, 149, 132);
   --link-color-hover: rgb(222, 149, 132);
   --link-external-color: rgb(222, 149, 132);
@@ -1521,6 +1536,7 @@ body sup {
   --search-clear-button-color: rgb(124, 127, 147);
   --search-icon-color: rgb(124, 127, 147);
   --search-result-background: rgb(239, 241, 245);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(76, 79, 105);
   --setting-items-background: rgb(230, 233, 239);
   --setting-items-border-color: rgb(188, 192, 204);
@@ -1576,6 +1592,7 @@ body sup {
   --tag-border-color-hover: rgba(222, 149, 132, 0.15);
   --tag-color: rgb(222, 149, 132);
   --tag-color-hover: rgb(222, 149, 132);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(222, 149, 132);
   --text-accent-hover: rgb(222, 149, 132);
   --text-error: rgb(210, 15, 57);
@@ -1590,6 +1607,7 @@ body sup {
   --text-selection: rgba(222, 149, 132, 0.25);
   --text-success: rgb(64, 160, 43);
   --text-warning: rgb(254, 100, 11);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(230, 233, 239);
   --titlebar-background-focused: rgb(220, 224, 232);
   --titlebar-border-color: rgb(188, 192, 204);

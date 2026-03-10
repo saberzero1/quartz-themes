@@ -144,6 +144,8 @@ export const theme: ThemeData = {
   --color-yellow-8: #4b2900;
   --color-yellow-9: #341a00;
   --cursor-bg: #3fb950;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #21262d;
   --divider-color-hover: #2ea043;
   --dropdown-background: #30363d;
@@ -161,6 +163,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #388bfd;
   --graph-node-unresolved: #6e7681;
   --graph-text: #c9d1d9;
+  --gray: var(--text-muted);
   --gray-1: #5c6370;
   --gray-2: #abb2bf;
   --green: #98c379;
@@ -172,6 +175,7 @@ export const theme: ThemeData = {
   --h6-size: 1.1rem;
   --heading-formatting: #6e7681;
   --heading-spacing: 1.5rem;
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: screen;
   --hr-color: #21262d;
   --icon-color: #6e7681;
@@ -187,6 +191,8 @@ export const theme: ThemeData = {
   --interactive-hover: #484f58;
   --interactive-normal: #30363d;
   --interactive-success: #238636;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #388bfd;
   --link-color-hover: #58a6ff;
   --link-external-color: #388bfd;
@@ -240,6 +246,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #6e7681;
   --search-icon-color: #6e7681;
   --search-result-background: #0d1117;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #c9d1d9;
   --setting-items-background: #161b22;
   --setting-items-border-color: #21262d;
@@ -270,6 +277,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #2ea043;
   --tag-color: #388bfd;
   --tag-color-hover: #388bfd;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #388bfd;
   --text-accent-hover: #58a6ff;
   --text-accent-light: #58a6ff;
@@ -285,6 +293,7 @@ export const theme: ThemeData = {
   --text-normal: #c9d1d9;
   --text-on-accent: #f7f9fc;
   --text-selection: rgba(23, 48, 77, 0.99);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #161b22;
   --titlebar-background-focused: #21262d;
   --titlebar-border-color: #21262d;

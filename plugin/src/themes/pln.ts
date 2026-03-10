@@ -150,6 +150,8 @@ export const theme: ThemeData = {
   --color-yellow-light: #ebcb8b;
   --color-yellow-light-rgb: 235, 203, 139;
   --color-yellow-rgb: 235, 203, 139;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #4C566A;
   --divider-color-hover: rgb(129, 161, 193);
   --dropdown-background: #3B4252;
@@ -180,6 +182,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #a3be8c;
   --graph-node-unresolved: #D8DEE9;
   --graph-text: #f5f7f9;
+  --gray: var(--text-muted);
   --h1-size: 2em;
   --h2-size: 1.6em;
   --h3-size: 1.37em;
@@ -189,6 +192,7 @@ export const theme: ThemeData = {
   --header-height: 30px;
   --heading-formatting: #D8DEE9;
   --heading-spacing: 0;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #4C566A;
   --icon-color: #ECEFF4;
   --icon-color-active: rgb(129, 161, 193);
@@ -202,6 +206,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 210, 34%, 63%;
   --interactive-hover: #4C566A;
   --interactive-normal: #3B4252;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(129, 161, 193);
   --link-color-hover: rgb(189, 209, 224);
   --link-decoration: none;
@@ -270,6 +276,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #ECEFF4;
   --search-icon-color: #ECEFF4;
   --search-result-background: #3B4252;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #f5f7f9;
   --setting-group-heading-size: 12px;
   --setting-items-background: #2E3440;
@@ -322,6 +329,7 @@ export const theme: ThemeData = {
   --tag-color: rgb(129, 161, 193);
   --tag-color-hover: rgb(129, 161, 193);
   --tag-radius: 5px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(129, 161, 193);
   --text-accent-hover: rgb(189, 209, 224);
   --text-error: #FC6E68;
@@ -333,6 +341,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(129, 161, 193, 0.33);
   --text-success: #a3be8c;
   --text-warning: #d08770;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #2E3440;
   --titlebar-background-focused: #2E3440;
   --titlebar-border-color: #4C566A;
@@ -1479,6 +1488,8 @@ body sup {
   --color-yellow-light: #ebcb8b;
   --color-yellow-light-rgb: 235, 203, 139;
   --color-yellow-rgb: 228, 184, 96;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #D8DEE9;
   --divider-color-hover: rgb(110, 143, 180);
   --dropdown-background: #ECEFF4;
@@ -1509,6 +1520,7 @@ body sup {
   --graph-node-tag: #a3be8c;
   --graph-node-unresolved: #3B4252;
   --graph-text: #2E3440;
+  --gray: var(--text-muted);
   --h1-size: 2em;
   --h2-size: 1.6em;
   --h3-size: 1.37em;
@@ -1518,6 +1530,7 @@ body sup {
   --header-height: 30px;
   --heading-formatting: #3B4252;
   --heading-spacing: 0;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #D8DEE9;
   --icon-color: #2E3440;
   --icon-color-active: rgb(97, 131, 174);
@@ -1531,6 +1544,8 @@ body sup {
   --interactive-accent-hsl: 213, 32%, 53%;
   --interactive-hover: #E5E9F0;
   --interactive-normal: #ECEFF4;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(97, 131, 174);
   --link-color-hover: rgb(123, 156, 188);
   --link-decoration: none;
@@ -1597,6 +1612,7 @@ body sup {
   --search-clear-button-color: #2E3440;
   --search-icon-color: #2E3440;
   --search-result-background: #f5f7f9;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #2E3440;
   --setting-group-heading-size: 12px;
   --setting-items-background: #ECEFF4;
@@ -1649,6 +1665,7 @@ body sup {
   --tag-color: rgb(97, 131, 174);
   --tag-color-hover: rgb(97, 131, 174);
   --tag-radius: 5px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(97, 131, 174);
   --text-accent-hover: rgb(123, 156, 188);
   --text-error: #FC6E68;
@@ -1660,6 +1677,7 @@ body sup {
   --text-selection: rgba(97, 131, 174, 0.2);
   --text-success: #a3be8c;
   --text-warning: #d08770;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #ECEFF4;
   --titlebar-background-focused: #E5E9F0;
   --titlebar-border-color: #D8DEE9;

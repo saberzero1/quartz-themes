@@ -33,6 +33,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: #2edb6e;
   --blue: #009fff;
   --blue-light: #1aa9ff;
+  --bodyFont: var(--font-interface);
   --border: #323232;
   --canvas-card-label-color: rgba(255, 255, 255, 0.38);
   --caret-color: rgba(255, 255, 255, 0.87);
@@ -47,13 +48,16 @@ export const theme: ThemeData = {
   --code-comment: rgba(255, 255, 255, 0.38);
   --code-normal: rgba(255, 255, 255, 0.87);
   --code-punctuation: rgba(255, 255, 255, 0.6);
+  --codeFont: var(--font-interface);
   --collapse-icon-color: rgba(255, 255, 255, 0.38);
   --collapse-icon-color-collapsed: #2edb6e;
+  --dark: var(--text-normal);
   --dark0: #1e1e1e;
   --dark1: #232323;
   --dark2: #282828;
   --dark3: #2d2d2d;
   --dark4: #323232;
+  --darkgray: var(--text-normal);
   --default-font: system, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu,
     cantarell, Open Sans, Helvetica Neue, sans-serif;
   --divider-color: #323232;
@@ -74,9 +78,12 @@ export const theme: ThemeData = {
   --graph-node-focused: #2edb6e;
   --graph-node-unresolved: rgba(255, 255, 255, 0.38);
   --graph-text: rgba(255, 255, 255, 0.87);
+  --gray: var(--text-muted);
   --green: #2edb6e;
   --green-light: #44df7d;
+  --headerFont: var(--font-interface);
   --heading-formatting: rgba(255, 255, 255, 0.38);
+  --highlight: var(--text-highlight-bg);
   --hr-color: #323232;
   --icon-color: rgba(255, 255, 255, 0.6);
   --icon-color-active: #2edb6e;
@@ -90,10 +97,12 @@ export const theme: ThemeData = {
   --interactive-accent: #2edb6e;
   --interactive-accent-hover: #44df7d;
   --interactive-success: #2edb6e;
+  --light: var(--background-primary-alt);
   --light0: rgba(255, 255, 255, 0.18);
   --light1: rgba(255, 255, 255, 0.38);
   --light2: rgba(255, 255, 255, 0.6);
   --light3: rgba(255, 255, 255, 0.87);
+  --lightgray: var(--background-secondary);
   --link-color: #2edb6e;
   --link-color-hover: #44df7d;
   --link-external-color: #2edb6e;
@@ -141,6 +150,7 @@ export const theme: ThemeData = {
   --ribbon-background: #1e1e1e;
   --search-clear-button-color: rgba(255, 255, 255, 0.6);
   --search-icon-color: rgba(255, 255, 255, 0.6);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgba(255, 255, 255, 0.87);
   --setting-items-background: #1e1e1e;
   --setting-items-border-color: #323232;
@@ -170,6 +180,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #2edb6e;
   --tag-color: #2edb6e;
   --tag-color-hover: #2edb6e;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #2edb6e;
   --text-accent-hover: #44df7d;
   --text-error: red-base;
@@ -180,6 +191,8 @@ export const theme: ThemeData = {
   --text-normal: rgba(255, 255, 255, 0.87);
   --text-on-accent: rgb(255, 255, 255);
   --text-selection: #323232;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #1e1e1e;
   --titlebar-background-focused: #1e1e1e;
   --titlebar-border-color: #323232;

@@ -126,6 +126,7 @@ export const theme: ThemeData = {
   --h6-color: rgb(135, 176, 249);
   --h6-line-height: 1.6;
   --header-height: 44px;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(255 255 255 / 5%);
   --icon-xl: 24px;
   --inline-title-color: rgb(166, 227, 161);
@@ -134,6 +135,8 @@ export const theme: ThemeData = {
   --input-shadow: 0px 0px 0px 1px rgb(0 0 0 / 10%), 0 0.5px 0 0 rgb(255 255 255 / 10%) inset;
   --interactive-normal: #3f3f3f;
   --labeled-nav-top-margin: 44px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --link-decoration: none;
   --link-external-decoration: none;
@@ -220,6 +223,7 @@ export const theme: ThemeData = {
   --text-highlight-bg: rgba(250, 179, 135, 0.25);
   --text-success: #A6E3A1;
   --text-warning: #FAB387;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: rgb(255 255 255 / 5%);
@@ -878,6 +882,7 @@ body kbd {
   --h6-color: rgb(135, 176, 249);
   --h6-line-height: 1.6;
   --header-height: 44px;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(0, 0, 0, 0.05);
   --icon-xl: 24px;
   --inline-title-color: rgb(166, 227, 161);
@@ -958,6 +963,7 @@ body kbd {
   --text-selection: rgba(0, 0, 0, 0.05);
   --text-success: #28cd41;
   --text-warning: #ff9500;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: rgb(0 0 0 / 5%);

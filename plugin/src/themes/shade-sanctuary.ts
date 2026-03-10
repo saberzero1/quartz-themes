@@ -40,6 +40,7 @@ export const theme: ThemeData = {
   --blue: #437cf3;
   --blue-violet: #6f51f4;
   --blur-background: color-mix(in srgb, color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) 65%, transparent) linear-gradient(color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)), color-mix(in srgb, color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000);
   --canvas-card-label-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255));
   --canvas-dot-pattern: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255));
@@ -55,6 +56,7 @@ export const theme: ThemeData = {
   --code-comment: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255));
   --code-normal: #faf4ed;
   --code-punctuation: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255));
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255));
   --color-base-00: color-mix(in srgb, rgb(25, 11, 45) 25%, #000);
   --color-base-05: color-mix(in srgb, rgb(25, 11, 45) 40%, #000);
@@ -71,6 +73,8 @@ export const theme: ThemeData = {
   --cool-cyan: #43cfea;
   --cool-gray: #515768;
   --cyan: #51e1e9;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255));
   --dropdown-background: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255));
   --dropdown-background-hover: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255));
@@ -96,6 +100,7 @@ export const theme: ThemeData = {
   --graph-node: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255));
   --graph-node-unresolved: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255));
   --graph-text: #faf4ed;
+  --gray: var(--text-muted);
   --h1-color: rgb(151, 77, 255);
   --h1-size: 24px;
   --h2-color: rgb(181, 128, 255);
@@ -109,7 +114,9 @@ export const theme: ThemeData = {
   --h6-color: rgb(240, 229, 255);
   --h6-size: 16px;
   --header-title-color: rgb(151, 77, 255);
+  --headerFont: var(--font-text);
   --heading-formatting: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255));
+  --highlight: var(--text-highlight-bg);
   --hot-red: #e3365e;
   --hr-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255));
   --hue-bg: 265;
@@ -125,7 +132,9 @@ export const theme: ThemeData = {
   --input-placeholder-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255));
   --interactive-hover: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255));
   --interactive-normal: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255));
+  --light: var(--background-primary);
   --light-blue: #54b6f8;
+  --lightgray: var(--background-secondary);
   --list-marker-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255));
   --list-marker-color-hover: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255));
   --lum: 11%;
@@ -220,7 +229,9 @@ export const theme: ThemeData = {
   --text-highlight-bg-active: color-mix(in srgb, rgb(151, 77, 255) 25%, transparent);
   --text-muted: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255));
   --text-normal: #faf4ed;
+  --textHighlight: var(--text-highlight-bg);
   --title-color: rgb(151, 77, 255);
+  --titleFont: var(--font-text);
   --titlebar-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000);
   --titlebar-background-focused: color-mix(in srgb, rgb(25, 11, 45) 50%, #000);
   --titlebar-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255));
@@ -1214,6 +1225,8 @@ body sup {
   },
   light: {
     base: `:root:root {
+  --bodyFont: var(--font-text);
+  --codeFont: var(--font-monospace);
   --file-header-font: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-callout-theme: "Computer Modern", "Sans-Serif";
   --font-interface: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1228,6 +1241,7 @@ body sup {
   --h4-size: 18px;
   --h5-size: 17px;
   --h6-size: 16px;
+  --headerFont: var(--font-text);
   --hue-bg: 265;
   --hue-fg: 265;
   --inline-title-size: 24px;
@@ -1243,6 +1257,7 @@ body sup {
   --tab-max-width: 300px;
   --tab-width: 180px;
   --title-color: black;
+  --titleFont: var(--font-text);
   --unified-heading-space: 10px;
   --quartz-icon-color: currentColor;
 }

@@ -27,6 +27,8 @@ export const theme: ThemeData = {
   --code-background: rgba(255, 255, 255, 0.05);
   --code-normal: #ccc;
   --code-punctuation: #707070;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --file-header-background: transparent;
   --file-header-background-focused: transparent;
@@ -35,6 +37,7 @@ export const theme: ThemeData = {
   --footnote-line-height: 1.6;
   --graph-node: #707070;
   --graph-text: #ccc;
+  --gray: var(--text-muted);
   --h1-size: 32px;
   --h5-line-height: 1.6;
   --h6-line-height: 1.6;
@@ -42,6 +45,8 @@ export const theme: ThemeData = {
   --icon-color-focused: #ccc;
   --icon-color-hover: #707070;
   --inline-title-size: 32px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --link-unresolved-decoration-style: dotted;
   --list-marker-color-hover: #707070;
@@ -745,6 +750,8 @@ body sup {
   --code-background: rgba(0, 0, 0, 0.05);
   --code-normal: #1a1a1a;
   --code-punctuation: #b5b3b1;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --file-header-background: #f7f7f7;
   --file-header-background-focused: #f7f7f7;
@@ -753,6 +760,7 @@ body sup {
   --footnote-line-height: 1.6;
   --graph-node: #b5b3b1;
   --graph-text: #1a1a1a;
+  --gray: var(--text-muted);
   --h1-size: 32px;
   --h5-line-height: 1.6;
   --h6-line-height: 1.6;
@@ -760,6 +768,8 @@ body sup {
   --icon-color-focused: #1a1a1a;
   --icon-color-hover: #b5b3b1;
   --inline-title-size: 32px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --link-unresolved-decoration-style: dotted;
   --list-marker-color-hover: #b5b3b1;

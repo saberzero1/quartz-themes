@@ -71,6 +71,8 @@ export const theme: ThemeData = {
   --color-accent-shadow: rgba(232, 125, 125, 0.2);
   --color-accent-shadow-more: rgba(232, 125, 125, 0.1);
   --color-external: #4ed5ff;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(38, 38, 38);
   --divider-color-hover: rgb(203, 183, 250);
   --embed-block-shadow-hover: 0 0 0 1px rgb(38, 38, 38), inset 0 0 0 1px rgb(38, 38, 38);
@@ -85,7 +87,9 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(203, 183, 250);
   --graph-node-unresolved: rgb(77, 77, 77);
   --graph-text: rgb(204, 204, 204);
+  --gray: var(--text-muted);
   --heading-formatting: rgb(77, 77, 77);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(38, 38, 38);
   --icon-bright: brightness(140%);
   --icon-color: rgb(140, 140, 140);
@@ -99,6 +103,8 @@ export const theme: ThemeData = {
   --interactive-accent: rgb(203, 183, 250);
   --interactive-accent-hover: rgb(238, 231, 253);
   --interactive-accent-rgb: 66, 66, 66;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-shadow: rgb(31, 31, 31);
   --line-width: 800px;
   --link-color: rgb(203, 183, 250);
@@ -158,6 +164,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(140, 140, 140);
   --search-icon-color: rgb(140, 140, 140);
   --search-result-background: rgb(15, 15, 15);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(204, 204, 204);
   --setting-items-background: rgb(18, 18, 18);
   --setting-items-border-color: rgb(38, 38, 38);
@@ -191,6 +198,7 @@ export const theme: ThemeData = {
   --tag-color-hover: rgb(203, 183, 250);
   --tags-fade-in-speed: 100ms cubic-bezier(0.4, 0, 1, 1);
   --tags-fade-out-speed: 2000ms cubic-bezier(0.4, 0, 1, 1);
+  --tertiary: var(--text-accent-hover);
   --text: system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,'m1+ 1p';
   --text-accent: rgb(203, 183, 250);
   --text-accent-hover: rgb(238, 231, 253);
@@ -201,6 +209,7 @@ export const theme: ThemeData = {
   --text-normal: rgb(204, 204, 204);
   --text-selection: rgb(50, 50, 50);
   --text-shadow: rgb(33, 33, 33);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(26, 26, 26);
   --titlebar-background-focused: rgb(26, 26, 26);
   --titlebar-border-color: rgb(38, 38, 38);
@@ -1097,6 +1106,8 @@ body sup {
   --color-accent-hover-invert: rgb(102, 102, 102);
   --color-accent-shadow: rgba(232, 125, 125, 0.4);
   --color-external: #389ebd;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(222, 222, 222);
   --divider-color-hover: rgb(138, 92, 245);
   --embed-block-shadow-hover: 0 0 0 1px rgb(222, 222, 222), inset 0 0 0 1px rgb(222, 222, 222);
@@ -1111,6 +1122,7 @@ body sup {
   --graph-node-focused: rgb(138, 92, 245);
   --graph-node-unresolved: hsl(0,0%,calc(95% - 3s5%));
   --graph-text: hsl(0,0%,-5%);
+  --gray: var(--text-muted);
   --heading-formatting: hsl(0,0%,calc(95% - 3s5%));
   --hr-color: rgb(222, 222, 222);
   --icon-bright: brightness(20%);
@@ -1125,6 +1137,8 @@ body sup {
   --interactive-accent: rgb(138, 92, 245);
   --interactive-accent-hover: rgb(103, 44, 242);
   --interactive-accent-rgb: 220, 220, 220;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-shadow: rgb(204, 204, 204);
   --line-width: 800px;
   --link-color: rgb(138, 92, 245);
@@ -1182,6 +1196,7 @@ body sup {
   --search-clear-button-color: rgb(102, 102, 102);
   --search-icon-color: rgb(102, 102, 102);
   --search-result-background: rgb(230, 230, 230);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: hsl(0,0%,-5%);
   --setting-items-background: rgb(237, 237, 237);
   --setting-items-border-color: rgb(222, 222, 222);
@@ -1215,6 +1230,7 @@ body sup {
   --tag-color-hover: rgb(138, 92, 245);
   --tags-fade-in-speed: 100ms cubic-bezier(0.4, 0, 1, 1);
   --tags-fade-out-speed: 2000ms cubic-bezier(0.4, 0, 1, 1);
+  --tertiary: var(--text-accent-hover);
   --text: system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,'m1+ 1p';
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(103, 44, 242);

@@ -50,6 +50,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075);
   --blockquote-border-color: rgb(0, 119, 255);
   --blur-background: color-mix(in srgb, #262626 65%, transparent) linear-gradient(#262626, color-mix(in srgb, #262626 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --border-conOp: 1px solid rgb(255 255 255 / 10%);
   --border-lowOp: 1px solid rgb(255 255 255 / 10%);
@@ -78,6 +79,7 @@ export const theme: ThemeData = {
   --code-string: #44CF6E;
   --code-tag: #FB464C;
   --code-value: #A882FF;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #999;
   --collapse-icon-color-collapsed: rgb(0, 119, 255);
   --color-accent: rgb(0, 119, 255);
@@ -110,6 +112,8 @@ export const theme: ThemeData = {
   --color-yellow: #E0DE71;
   --color-yellow-hsl: 59, 64%, 66%;
   --conOp: rgb(255 255 255 / 10%);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #282828;
   --divider-color-hover: rgb(0, 119, 255);
   --dropdown-background: #262626;
@@ -146,6 +150,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(0, 119, 255);
   --graph-node-unresolved: #999;
   --graph-text: #bababa;
+  --gray: var(--text-muted);
   --h1-font: "Monaspace";
   --h1-size: clamp(2.5rem, 8vw - 2rem, 3rem);
   --h1-weight: 500;
@@ -158,7 +163,9 @@ export const theme: ThemeData = {
   --h5-size: 1.12em;
   --h5-weight: 600;
   --h6-size: 1.12em;
+  --headerFont: var(--font-text);
   --heading-formatting: #999;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #282828;
   --icon-color: #666;
   --icon-color-active: rgb(0, 119, 255);
@@ -178,6 +185,7 @@ export const theme: ThemeData = {
   --interactive-hover: #3F3F3F;
   --interactive-normal: #262626;
   --lbs: rgb(0 0 5 / 15%) 0px 20px 30px;
+  --lightgray: var(--background-secondary-alt);
   --link-color: #666;
   --link-color-hover: #bababa;
   --link-decoration-hover: none;
@@ -253,6 +261,7 @@ export const theme: ThemeData = {
   --scrollbar-radius: 10px;
   --search-clear-button-color: #666;
   --search-icon-color: #666;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #bababa;
   --setting-items-border-color: #282828;
   --setting-items-radius: 10px;
@@ -300,6 +309,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(0, 119, 255, 0.15);
   --tag-color: rgb(0, 119, 255);
   --tag-color-hover: rgb(0, 119, 255);
+  --tertiary: var(--text-accent-hover);
   --test-image: url("https://i.pinimg.com/564x/15/05/3c/15053c066ed66a20595bef2f0b08c37d.jpg");
   --text-accent: rgb(0, 119, 255);
   --text-accent-hover: rgb(0, 0, 0);
@@ -313,6 +323,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(0, 119, 255, 0.33);
   --text-success: #44CF6E;
   --text-warning: #E9973F;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: #282828;
@@ -1241,6 +1253,7 @@ body sup {
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.075);
   --blockquote-border-color: rgb(8, 108, 221);
   --blur-background: color-mix(in srgb, #FFF 65%, transparent) linear-gradient(#FFF, color-mix(in srgb, #FFF 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --border-conOp: 1px solid rgb(0 0 0 / 30%);
   --border-lowOp: 1px solid rgb(0 0 0 / 10%);
@@ -1274,6 +1287,7 @@ body sup {
   --code-string: #08B94E;
   --code-tag: #E93147;
   --code-value: #7852EE;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #707070;
   --collapse-icon-color-collapsed: rgb(8, 108, 221);
   --color-accent: rgb(8, 108, 221);
@@ -1311,6 +1325,8 @@ body sup {
   --color-yellow: #E0AC00;
   --color-yellow-hsl: 46, 100%, 44%;
   --conOp: rgb(0 0 0 / 30%);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #E0E0E0;
   --divider-color-hover: rgb(8, 108, 221);
   --dropdown-background: #FFF;
@@ -1349,6 +1365,7 @@ body sup {
   --graph-node-tag: rgb(8, 108, 221);
   --graph-node-unresolved: #707070;
   --graph-text: #5A5A5A;
+  --gray: var(--text-muted);
   --h1-font: "Monaspace";
   --h1-size: clamp(2.5rem, 8vw - 2rem, 3rem);
   --h1-weight: 500;
@@ -1361,7 +1378,9 @@ body sup {
   --h5-size: 1.12em;
   --h5-weight: 600;
   --h6-size: 1.12em;
+  --headerFont: var(--font-text);
   --heading-formatting: #707070;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #E0E0E0;
   --icon-color: #ABABAB;
   --icon-color-active: rgb(8, 108, 221);
@@ -1381,6 +1400,8 @@ body sup {
   --interactive-hover: #FAFAFA;
   --interactive-normal: #FFF;
   --lbs: rgb(0 5 0 / 3%) 0px 20px 30px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #ABABAB;
   --link-color-hover: #5A5A5A;
   --link-decoration-hover: none;
@@ -1462,6 +1483,7 @@ body sup {
   --search-clear-button-color: #ABABAB;
   --search-icon-color: #ABABAB;
   --search-result-background: #FFF;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #5A5A5A;
   --setting-items-background: #FAFAFA;
   --setting-items-border-color: #E0E0E0;
@@ -1516,6 +1538,7 @@ body sup {
   --tag-border-color-hover: rgba(8, 108, 221, 0.15);
   --tag-color: rgb(8, 108, 221);
   --tag-color-hover: rgb(8, 108, 221);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(8, 108, 221);
   --text-accent-hover: rgb(0, 0, 0);
   --text-error: #E93147;
@@ -1528,6 +1551,8 @@ body sup {
   --text-selection: #E0E0E0;
   --text-success: #08B94E;
   --text-warning: #EC7500;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: #E0E0E0;

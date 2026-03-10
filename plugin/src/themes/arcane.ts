@@ -30,6 +30,7 @@ export const theme: ThemeData = {
   --blockquote-border-thickness: 5px;
   --blue-1: rgb(72, 54, 153);
   --blue-2: #4d3ca6;
+  --bodyFont: var(--font-interface);
   --bold-color: #ffb86c;
   --bold-weight: 600;
   --callout-question: 224, 222, 113;
@@ -55,6 +56,7 @@ export const theme: ThemeData = {
   --code-string: #ffff80;
   --code-tag: #ff80bf;
   --code-value: #8aff80;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #6c6498;
   --collapse-icon-color-collapsed: rgb(170, 153, 245);
   --color-accent: rgb(139, 108, 239);
@@ -68,6 +70,7 @@ export const theme: ThemeData = {
   --cyan-4: rgb(114, 185, 203);
   --cyan-5: rgb(60, 152, 180);
   --cyan-6: rgb(76, 118, 133);
+  --dark: var(--text-normal);
   --dark-1: rgba(0, 0, 0, 0.05);
   --dark-10: #2f2f2d;
   --dark-11: #303030;
@@ -90,6 +93,7 @@ export const theme: ThemeData = {
   --dark-7: #262626;
   --dark-8: #282a36;
   --dark-9: #2a2a2a;
+  --darkgray: var(--text-normal);
   --default-font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --divider-color-hover: #6e6b7e;
   --embed-block-shadow-hover: 0 0 0 1px #363636,
@@ -117,6 +121,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(101, 230, 168);
   --graph-node-unresolved: #6c6498;
   --graph-text: rgb(159, 169, 198);
+  --gray: var(--text-muted);
   --gray-1: rgb(153, 153, 153);
   --gray-2: rgb(159, 169, 198);
   --gray-3: rgb(213, 214, 215);
@@ -143,7 +148,9 @@ export const theme: ThemeData = {
   --h5-size: 1.125em;
   --h5-weight: 600;
   --h6-color: rgb(134, 251, 253);
+  --headerFont: var(--font-interface);
   --heading-formatting: #6c6498;
+  --highlight: var(--background-modifier-hover);
   --icon-color: #6e6b7e;
   --icon-color-active: rgb(153, 153, 153);
   --icon-color-focused: #f8f8f2;
@@ -157,6 +164,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 254, 80%, 68%;
   --interactive-accent-rgb: rgb(72, 54, 153);
   --italic-color: #ffff80;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #ff80bf;
   --link-color-hover: rgba(224, 113, 161, 0.9);
   --link-decoration: none;
@@ -229,6 +238,7 @@ export const theme: ThemeData = {
   --search-icon-color: #6e6b7e;
   --search-result-background: rgb(34, 33, 44);
   --search-result-text-color: #262626;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #f8f8f2;
   --setting-items-background: rgb(29, 31, 42);
   --slider-thumb-radius: 50%;
@@ -265,6 +275,7 @@ export const theme: ThemeData = {
   --tag-color: rgb(101, 230, 168);
   --tag-color-hover: rgba(101, 230, 168, 0.7);
   --tag-decoration-hover: underline;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(170, 153, 245);
   --text-accent-hover: #6e6b7e;
   --text-faint: #6c6498;
@@ -273,6 +284,8 @@ export const theme: ThemeData = {
   --text-normal: #f8f8f2;
   --text-on-accent: #f8f8f2;
   --text-selection: rgba(139, 108, 239, 0.33);
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(34, 32, 44);
   --titlebar-background-focused: rgb(34, 32, 44);
   --titlebar-text-color: #6e6b7e;

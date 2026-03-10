@@ -79,6 +79,8 @@ export const theme: ThemeData = {
   --color-outline: #282828;
   --color-secondary-dark: #0f1116;
   --color-thistle: #d8bfd8;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --divider-color: #282828;
   --dropdown-background: #282828;
   --embed-background: #0f1116;
@@ -112,6 +114,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(213, 26, 126);
   --graph-node-tag: #0064d7;
   --graph-node-unresolved: rgb(95, 95, 100);
+  --gray: var(--text-muted);
   --h1-size: 2.002em;
   --h2-size: 1.802em;
   --h2-weight: 600;
@@ -122,6 +125,7 @@ export const theme: ThemeData = {
   --h5-size: 1.325em;
   --h5-weight: 600;
   --h6-size: 1.155em;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #282828;
   --icon-color: #666666;
   --icon-color-active: rgb(166, 139, 249);
@@ -142,6 +146,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(166, 139, 249);
   --interactive-normal: #282828;
   --italic-color: #d8bfd8;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(166, 139, 249);
   --link-color-hover: rgb(197, 182, 252);
   --link-external-color: rgb(166, 139, 249);
@@ -201,6 +207,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #666666;
   --search-icon-color: #666666;
   --search-result-background: #040812;
+  --secondary: var(--text-accent);
   --setting-items-background: #0f1116;
   --setting-items-border-color: #282828;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
@@ -241,10 +248,12 @@ export const theme: ThemeData = {
   --tag-color: rgb(166, 139, 249);
   --tag-color-hover: rgb(166, 139, 249);
   --tag-radius: 0.5em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(166, 139, 249);
   --text-accent-hover: rgb(197, 182, 252);
   --text-muted: #666666;
   --text-selection: rgba(138, 92, 245, 0.25);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #0f1116;
   --titlebar-background-focused: #0f1116;
   --titlebar-border-color: #282828;

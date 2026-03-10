@@ -37,6 +37,7 @@ export const theme: ThemeData = {
   --blockquote-border: #fb4a4a;
   --blockquote-border-color: rgba(247, 14, 14, 0.5);
   --body-font-weight: 400;
+  --bodyFont: var(--font-interface);
   --canvas-background: #0b090a;
   --canvas-card-label-color: #bebebe;
   --caret-color: #e0e0e0;
@@ -50,12 +51,15 @@ export const theme: ThemeData = {
   --code-comment: #bebebe;
   --code-mono-font: 'Fira Code', 'Operator Mono', 'JetBrains Mono', 'Source Code Pro', 'OperatorMonoSSmLig-Book', monospace;
   --code-normal: #e0e0e0;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #bebebe;
   --collapse-icon-color-collapsed: #b22222;
   --color-accent: rgb(180, 34, 34);
   --color-accent-1: rgb(207, 38, 46);
   --color-accent-2: rgb(221, 54, 68);
   --color-accent-hsl: 0, 68%, 42%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: 'Poppins', 'Oswald', 'Montserrat', 'Roboto', 'Glow Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
   --default-font-size: 16px;
   --divider-color: rgba(247, 14, 14, 0.05);
@@ -76,7 +80,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #b22222;
   --graph-node-unresolved: #bebebe;
   --graph-text: #e0e0e0;
+  --gray: var(--text-faint);
+  --headerFont: var(--font-interface);
   --heading-formatting: #bebebe;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(247, 14, 14, 0.05);
   --icon-color-active: #b22222;
   --icon-color-focused: #e0e0e0;
@@ -87,6 +94,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 0, 68%, 42%;
   --interactive-accent-rgb: #fb3d3d;
   --interactive-before: #655e5e;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #b22222;
   --link-color-hover: rgb(221, 54, 68);
   --link-external-color: #b22222;
@@ -128,6 +137,7 @@ export const theme: ThemeData = {
   --ribbon-background: #121212;
   --ribbon-background-collapsed: #0b090a;
   --search-result-background: #0b090a;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #e0e0e0;
   --setting-items-background: #121212;
   --setting-items-border-color: rgba(247, 14, 14, 0.05);
@@ -159,6 +169,7 @@ export const theme: ThemeData = {
   --tag-color: #b22222;
   --tag-color-hover: #b22222;
   --tag-font-family: 'Fira Sans', 'Operator Mono', 'OperatorMonoSSmLig-Book', 'Montserrat', 'Glow Sans SC', 'PingFang TC', '微软雅黑', 'STXihei', '华文细黑', 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  --tertiary: var(--text-accent-hover);
   --test-color: rgb(247, 122, 122);
   --text-a: #fb6b6b;
   --text-a-hover: #fb6b6b;
@@ -178,6 +189,8 @@ export const theme: ThemeData = {
   --text-title-h3: #e5383b;
   --text-title-h4: #e5383b;
   --text-title-h5: #e5383b;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #121212;
   --titlebar-background-focused: #121212;
   --titlebar-border-color: rgba(247, 14, 14, 0.05);

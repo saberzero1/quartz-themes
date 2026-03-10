@@ -98,6 +98,7 @@ export const theme: ThemeData = {
   --h6-weight: bold;
   --heading-formatting: #888888;
   --heading-spacing: 20px;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: #ffffff;
   --icon-color: #ffffff;
   --icon-color-active: #999999;
@@ -119,6 +120,8 @@ export const theme: ThemeData = {
   --interactive-hover: #4d4d4d;
   --interactive-normal: #333333;
   --italic-color: #cccccc;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #87cefa;
   --link-color-hover: #4682b4;
   --link-decoration-thickness: 1px;
@@ -223,6 +226,7 @@ export const theme: ThemeData = {
   --scrollbar-bg: #333333;
   --scrollbar-thumb-bg: #555555;
   --search-result-background: black;
+  --secondary: var(--text-accent);
   --sidebar-markdown-font-size: 14.4px;
   --slider-thumb-border-color: #444444;
   --slider-track-background: #666666;
@@ -260,11 +264,13 @@ export const theme: ThemeData = {
   --tag-color: #ffffff;
   --tag-color-hover: #cccccc;
   --tag-weight: bold;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(166, 139, 249);
   --text-accent-hover: rgb(197, 182, 252);
   --text-primary: white;
   --text-secondary: #cccccc;
   --text-selection: #333333;
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: #333333;
   --titlebar-background-focused: #444444;
   --titlebar-border-color: #555555;
@@ -717,6 +723,7 @@ body kbd {
   --h6-weight: bold;
   --heading-formatting: #888888;
   --heading-spacing: 20px;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: #000000;
   --icon-color: #000000;
   --icon-color-active: #333333;
@@ -834,6 +841,7 @@ body kbd {
   --scrollbar-active-thumb-bg: #999999;
   --scrollbar-bg: #f0f0f0;
   --scrollbar-thumb-bg: #cccccc;
+  --secondary: var(--text-accent);
   --sidebar-markdown-font-size: 14.4px;
   --slider-thumb-border-color: #cccccc;
   --status-bar-background: #f0f0f0;
@@ -866,9 +874,11 @@ body kbd {
   --tag-color: #000000;
   --tag-color-hover: #333333;
   --tag-weight: bold;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(166, 139, 249);
   --text-selection: rgba(138, 92, 245, 0.2);
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: #f0f0f0;
   --titlebar-background-focused: #e0e0e0;
   --titlebar-border-color: #cccccc;

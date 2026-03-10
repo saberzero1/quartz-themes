@@ -40,6 +40,8 @@ export const theme: ThemeData = {
   --code-punctuation: #f2f2f2;
   --collapse-icon-color: #c5c5c5;
   --collapse-icon-color-collapsed: #f2f2f2;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(0, 0, 0, 0.25);
   --divider-color-hover: #ffbf00;
   --embed-block-shadow-hover: 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(0, 0, 0, 0.25);
@@ -54,7 +56,9 @@ export const theme: ThemeData = {
   --graph-node-focused: #f2f2f2;
   --graph-node-unresolved: #c5c5c5;
   --graph-text: #f2f2f2;
+  --gray: var(--text-muted);
   --heading-formatting: #c5c5c5;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(0, 0, 0, 0.25);
   --icon-color: #f2f2f2;
   --icon-color-active: #f2f2f2;
@@ -65,6 +69,8 @@ export const theme: ThemeData = {
   --interactive-accent: #ffbf00;
   --interactive-accent-hover: #d0a011;
   --interactive-accent-rgb: 255, 191, 0;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #f2f2f2;
   --link-color-hover: #ffffff;
   --link-external-color: #f2f2f2;
@@ -110,6 +116,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #f2f2f2;
   --search-icon-color: #f2f2f2;
   --search-result-background: #35674d;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #f2f2f2;
   --setting-items-background: #2c5640;
   --setting-items-border-color: rgba(0, 0, 0, 0.25);
@@ -139,6 +146,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #ffbf00;
   --tag-color: #f2f2f2;
   --tag-color-hover: #f2f2f2;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #f2f2f2;
   --text-accent-hover: #ffffff;
   --text-faint: #c5c5c5;
@@ -147,6 +155,7 @@ export const theme: ThemeData = {
   --text-normal: #f2f2f2;
   --text-on-accent: #000000;
   --text-selection: rgba(44, 86, 64, 0.99);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #a23227;
   --titlebar-background-focused: #952e24;
   --titlebar-border-color: rgba(0, 0, 0, 0.25);

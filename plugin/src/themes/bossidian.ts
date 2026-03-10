@@ -32,6 +32,8 @@ export const theme: ThemeData = {
   --color-bossidian-primary-background: #22292c;
   --color-bossidian-secondary: #ff8800;
   --color-bossidian-secondary-background: #1b2124;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgba(14, 210, 247, 0.7);
   --embed-border-start: 2px solid rgba(14, 210, 247, 0.7);
   --file-header-background: #22292c;
@@ -41,6 +43,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #2faae6;
   --graph-node-unresolved: #2e88b4;
   --graph-text: #bebebe;
+  --gray: var(--text-faint);
   --h1-color: #2faae6;
   --h2-color: #2faae6;
   --h3-color: #2faae6;
@@ -48,6 +51,7 @@ export const theme: ThemeData = {
   --h5-color: #2faae6;
   --h6-color: #2faae6;
   --heading-formatting: #2e88b4;
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: #2faae6;
   --icon-color-focused: #bebebe;
   --inline-title-color: #2faae6;
@@ -55,6 +59,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: #2e88b4;
   --interactive-accent: rgba(14, 210, 247, 0.7);
   --interactive-accent-hover: #ff8800;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #2faae6;
   --link-color-hover: #ff8800;
   --link-external-color: #2faae6;
@@ -87,6 +93,7 @@ export const theme: ThemeData = {
   --ribbon-background: #1b2124;
   --ribbon-background-collapsed: #22292c;
   --search-result-background: #22292c;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #bebebe;
   --status-bar-background: #1b2124;
   --suggestion-background: #22292c;
@@ -106,11 +113,13 @@ export const theme: ThemeData = {
   --tag-background: rgba(14, 210, 247, 0.15);
   --tag-color: #2faae6;
   --tag-color-hover: #2faae6;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #2faae6;
   --text-accent-hover: #ff8800;
   --text-faint: #2e88b4;
   --text-highlight-bg: rgba(244, 86, 157, 0.25);
   --text-normal: #bebebe;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #1b2124;
   --titlebar-background-focused: #0d0b12;
   --titlebar-text-color-focused: #bebebe;

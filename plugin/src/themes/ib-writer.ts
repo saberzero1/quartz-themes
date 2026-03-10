@@ -27,6 +27,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: rgb(27, 26, 27);
   --blockquote-border-color: clear;
   --blockquote-font-style: italic;
+  --bodyFont: var(--font-text);
   --canvas-background: rgb(27, 26, 27);
   --caret-color: rgb(204, 204, 204);
   --checkbox-border-color: rgb(204, 204, 204);
@@ -39,6 +40,7 @@ export const theme: ThemeData = {
   --code-block-background-color: rgb(240, 240, 240);
   --code-block-background-color-dark: rgb(38, 37, 38);
   --code-normal: rgb(204, 204, 204);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color-collapsed: rgb(204, 204, 204);
   --color-accent: rgb(204, 204, 204);
   --color-accent-1: rgb(22, 80, 96);
@@ -48,6 +50,8 @@ export const theme: ThemeData = {
   --color-base-10: rgb(38, 37, 38);
   --color-base-100: rgb(204, 204, 204);
   --color-base-20: #141414;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgb(20, 68, 84);
   --edit-view-background-color: rgb(247, 247, 247);
   --edit-view-background-color-dark: rgb(27, 26, 27);
@@ -70,6 +74,7 @@ export const theme: ThemeData = {
   --footnote-line-height: 1.6;
   --graph-node-focused: rgb(22, 80, 96);
   --graph-text: rgb(204, 204, 204);
+  --gray: var(--text-normal);
   --h1-size: 1.4rem;
   --h2-size: 1.3rem;
   --h3-size: 1.2rem;
@@ -83,6 +88,8 @@ export const theme: ThemeData = {
   --h6-size: 1.17rem;
   --hashtag-underline-color: #b4b3b0;
   --hashtag-underline-color-dark: #7a7a79;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-active-hover);
   --icon-color-active: rgb(22, 80, 96);
   --icon-color-focused: rgb(204, 204, 204);
   --indicator-color: #00bfff;
@@ -90,6 +97,8 @@ export const theme: ThemeData = {
   --interactive-accent: rgb(20, 68, 84);
   --interactive-accent-hover: rgb(22, 80, 96);
   --interactive-accent-hsl: 196, 61.5%, 20.4%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --link-color: rgb(22, 80, 96);
   --link-color-hover: #0591cf;
@@ -135,6 +144,7 @@ export const theme: ThemeData = {
   --ribbon-background: #141414;
   --ribbon-background-collapsed: rgb(27, 26, 27);
   --search-result-background: rgb(27, 26, 27);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(204, 204, 204);
   --setting-items-background: rgb(38, 37, 38);
   --sidebar-markdown-font-size: 1.0125rem;
@@ -163,12 +173,15 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(19, 66, 83, 0.15);
   --tag-color: rgb(204, 204, 204);
   --tag-color-hover: rgb(22, 80, 96);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(22, 80, 96);
   --text-accent-hover: #0591cf;
   --text-color: rgb(26, 26, 26);
   --text-color-dark: rgb(204, 204, 204);
   --text-normal: rgb(204, 204, 204);
   --text-selection: rgb(20, 68, 84);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #141414;
   --titlebar-text-color-focused: rgb(204, 204, 204);
   --vault-profile-color: rgb(204, 204, 204);
@@ -873,6 +886,7 @@ body sup {
   --blockquote-border-color: clear;
   --blockquote-font-style: italic;
   --blur-background: color-mix(in srgb, rgb(247, 247, 247) 65%, transparent) linear-gradient(rgb(247, 247, 247), color-mix(in srgb, rgb(247, 247, 247) 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: rgb(247, 247, 247);
   --caret-color: rgb(26, 26, 26);
   --checkbox-border-color: rgb(26, 26, 26);
@@ -885,6 +899,7 @@ body sup {
   --code-block-background-color: rgb(240, 240, 240);
   --code-block-background-color-dark: rgb(38, 37, 38);
   --code-normal: rgb(26, 26, 26);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color-collapsed: rgb(26, 26, 26);
   --color-accent: rgb(26, 26, 26);
   --color-accent-1: rgb(112, 204, 251);
@@ -894,6 +909,8 @@ body sup {
   --color-base-10: rgb(240, 240, 240);
   --color-base-100: rgb(26, 26, 26);
   --color-base-20: #fdfdfd;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: #00bfff;
   --dropdown-background: rgb(247, 247, 247);
   --dropdown-background-hover: rgb(240, 240, 240);
@@ -919,6 +936,7 @@ body sup {
   --footnote-line-height: 1.6;
   --graph-node-focused: rgb(26, 26, 26);
   --graph-text: rgb(26, 26, 26);
+  --gray: var(--text-normal);
   --h1-size: 1.4rem;
   --h2-size: 1.3rem;
   --h3-size: 1.2rem;
@@ -932,6 +950,8 @@ body sup {
   --h6-size: 1.17rem;
   --hashtag-underline-color: #b4b3b0;
   --hashtag-underline-color-dark: #7a7a79;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-active-hover);
   --icon-color-active: rgb(26, 26, 26);
   --icon-color-focused: rgb(26, 26, 26);
   --indicator-color: #00bfff;
@@ -941,6 +961,8 @@ body sup {
   --interactive-accent-hsl: 201, 93%, 66%;
   --interactive-hover: rgb(240, 240, 240);
   --interactive-normal: rgb(247, 247, 247);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --link-color: rgb(26, 26, 26);
   --link-color-hover: #0591cf;
@@ -987,6 +1009,7 @@ body sup {
   --ribbon-background: #fdfdfd;
   --ribbon-background-collapsed: rgb(247, 247, 247);
   --search-result-background: rgb(247, 247, 247);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(26, 26, 26);
   --setting-items-background: rgb(240, 240, 240);
   --sidebar-markdown-font-size: 1.0125rem;
@@ -1015,12 +1038,15 @@ body sup {
   --tag-border-color-hover: rgba(88, 192, 249, 0.15);
   --tag-color: rgb(26, 26, 26);
   --tag-color-hover: rgb(26, 26, 26);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(26, 26, 26);
   --text-accent-hover: #0591cf;
   --text-color: rgb(26, 26, 26);
   --text-color-dark: rgb(204, 204, 204);
   --text-normal: rgb(26, 26, 26);
   --text-selection: rgb(185, 233, 249);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #fdfdfd;
   --titlebar-text-color-focused: rgb(26, 26, 26);
   --vault-profile-color: rgb(26, 26, 26);

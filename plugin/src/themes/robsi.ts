@@ -138,6 +138,8 @@ export const theme: ThemeData = {
   --cyan: rgb(125, 207, 255);
   --cyan_hsl: 202 100% 75%;
   --cyan_x: 125, 207, 255;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: rgb(128, 208, 255);
   --divider-vertical-height: 0%;
@@ -176,6 +178,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(255, 158, 100);
   --graph-node-unresolved: rgb(180, 180, 180);
   --graph-text: rgb(220, 220, 220);
+  --gray: var(--text-muted);
   --green: rgb(158, 206, 106);
   --green-dark: rgb(120, 156, 122);
   --green-dark_x: 120, 156, 122;
@@ -189,6 +192,7 @@ export const theme: ThemeData = {
   --h6-color: rgb(224, 175, 104);
   --h6-line-height: 1.6;
   --heading-formatting: rgb(180, 180, 180);
+  --highlight: var(--text-highlight-bg);
   --hr-color: transparent;
   --icon-color: rgb(180, 180, 180);
   --icon-color-active: rgb(187, 154, 247);
@@ -209,6 +213,8 @@ export const theme: ThemeData = {
   --internal-link-color: rgb(158, 206, 106);
   --internal-link-color-hover: rgb(122, 162, 247);
   --italic-color: rgb(122, 162, 247);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --line-height-theme: 1.6;
   --link-color: rgb(187, 154, 247);
@@ -315,6 +321,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(180, 180, 180);
   --search-icon-color: rgb(180, 180, 180);
   --search-result-background: #020202;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(220, 220, 220);
   --setting-items-background: transparent;
   --setting-items-border-color: transparent;
@@ -390,6 +397,7 @@ export const theme: ThemeData = {
   --teal_x: 26, 188, 156;
   --terminal_black: rgb(65, 72, 104);
   --terminal_black_x: 65, 72, 104;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(187, 154, 247);
   --text-accent-hover: rgb(125, 207, 255);
   --text-error: rgb(219, 75, 75);
@@ -403,6 +411,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(128, 208, 255, 0.33);
   --text-success: rgb(158, 206, 106);
   --text-warning: rgb(255, 158, 100);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: transparent;
@@ -1622,6 +1631,8 @@ body sup {
   --comment_x: 120, 125, 135;
   --cyan: rgb(0, 120, 180);
   --cyan_x: 0, 120, 180;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: rgb(129, 71, 209);
   --divider-vertical-height: 0%;
@@ -1660,6 +1671,7 @@ body sup {
   --graph-node-tag: rgb(220, 100, 20);
   --graph-node-unresolved: rgb(75, 85, 95);
   --graph-text: rgb(30, 35, 42);
+  --gray: var(--text-muted);
   --green: rgb(20, 140, 80);
   --green_x: 20, 140, 80;
   --h1-color: rgb(200, 50, 70);
@@ -1671,6 +1683,7 @@ body sup {
   --h6-color: rgb(180, 120, 0);
   --h6-line-height: 1.6;
   --heading-formatting: rgb(75, 85, 95);
+  --highlight: var(--text-highlight-bg);
   --hr-color: transparent;
   --icon-color: rgb(75, 85, 95);
   --icon-color-active: rgb(160, 30, 140);
@@ -1691,6 +1704,8 @@ body sup {
   --internal-link-color: rgb(20, 140, 80);
   --internal-link-color-hover: rgb(30, 70, 160);
   --italic-color: rgb(30, 70, 160);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --line-height-theme: 1.6;
   --link-color: rgb(102, 63, 191);
@@ -1793,6 +1808,7 @@ body sup {
   --search-clear-button-color: rgb(75, 85, 95);
   --search-icon-color: rgb(75, 85, 95);
   --search-result-background: #f8fafc;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(30, 35, 42);
   --setting-items-background: transparent;
   --setting-items-border-color: transparent;
@@ -1868,6 +1884,7 @@ body sup {
   --teal_x: 0, 140, 160;
   --terminal_black: rgb(15, 15, 20);
   --terminal_black_x: 15, 15, 20;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(160, 30, 140);
   --text-accent-hover: rgb(0, 120, 180);
   --text-error: rgb(180, 30, 50);
@@ -1881,6 +1898,7 @@ body sup {
   --text-selection: rgba(129, 71, 209, 0.2);
   --text-success: rgb(20, 140, 80);
   --text-warning: rgb(220, 100, 20);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: transparent;

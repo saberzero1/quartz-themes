@@ -36,6 +36,7 @@ export const theme: ThemeData = {
   --blockquote-border-thickness: 4px;
   --blockquote-font-style: italic;
   --blockquote-style: italic;
+  --bodyFont: var(--font-text);
   --bold-color: rgb(224, 228, 235);
   --bold-weight: 700;
   --canvas-background: rgb(54, 57, 63);
@@ -43,6 +44,7 @@ export const theme: ThemeData = {
   --checkbox-marker-color: rgb(54, 57, 63);
   --code-background: #1a1a1a;
   --code-border-color: rgb(88, 83, 80);
+  --codeFont: var(--font-text);
   --default-font: 'Inter';
   --divider-color: rgb(54, 57, 63);
   --divider-width: 0px;
@@ -100,7 +102,9 @@ export const theme: ThemeData = {
   --he-title-bar-inactive-bg: #3D373A;
   --he-title-bar-inactive-pinned-bg: #735050;
   --header-height: 38px;
+  --headerFont: var(--font-text);
   --heading-spacing: 1.4rem;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(88, 83, 80);
   --icon-l: 17px;
   --icon-m: 17px;
@@ -117,6 +121,8 @@ export const theme: ThemeData = {
   --inline-title-size: 1.60em;
   --inline-title-weight: 600;
   --keyheader-font: 'Open Sans';
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.35;
   --link-decoration: none;
   --list-bullet-size: 0.3rem;
@@ -197,6 +203,8 @@ export const theme: ThemeData = {
   --tag-size: 12px;
   --text-highlight-bg: rgba(255, 208, 0, 0.3);
   --text-selection: rgba(30, 144, 255, 0.4);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(47, 49, 55);
   --titlebar-background-focused: rgb(47, 49, 55);
   --titlebar-border-color: rgb(88, 83, 80);
@@ -690,6 +698,7 @@ body kbd {
   --blockquote-font-style: italic;
   --blockquote-style: italic;
   --blur-background: color-mix(in srgb, rgb(231, 234, 238) 65%, transparent) linear-gradient(rgb(231, 234, 238), color-mix(in srgb, rgb(231, 234, 238) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: rgb(60, 73, 93);
   --bold-weight: 700;
   --canvas-background: rgb(231, 234, 238);
@@ -703,7 +712,10 @@ body kbd {
   --code-border-color: #ada7a4;
   --code-comment: #808080;
   --code-punctuation: #1a1a1a;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #808080;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --default-font: 'Inter';
   --divider-color: rgb(231, 234, 238);
   --divider-width: 0px;
@@ -726,6 +738,7 @@ body kbd {
   --footnote-line-height: 1.35;
   --graph-node: #1a1a1a;
   --graph-node-unresolved: #808080;
+  --gray: var(--text-muted);
   --h1-border-width: 1px;
   --h1-color: rgb(60, 73, 93);
   --h1-font: Courgette;
@@ -765,6 +778,7 @@ body kbd {
   --he-title-bar-inactive-bg: #EAA4A4;
   --he-title-bar-inactive-pinned-bg: #A7B3A1;
   --header-height: 38px;
+  --headerFont: var(--font-text);
   --heading-formatting: #808080;
   --heading-spacing: 1.4rem;
   --hr-color: #ada7a4;
@@ -786,6 +800,8 @@ body kbd {
   --input-placeholder-color: #808080;
   --interactive-accent-hover: #708ca9;
   --keyheader-font: 'Open Sans';
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.35;
   --link-decoration: none;
   --list-bullet-size: 0.3rem;
@@ -884,9 +900,11 @@ body kbd {
   --tag-padding-y: 0.1em;
   --tag-radius: 0.6em;
   --tag-size: 12px;
+  --tertiary: var(--interactive-accent-hover);
   --text-faint: #808080;
   --text-muted: #1a1a1a;
   --text-selection: DarkGray;
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(211, 214, 222);
   --titlebar-background-focused: rgb(211, 214, 222);
   --titlebar-border-color: #ada7a4;

@@ -54,6 +54,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: rgb(76, 140, 230);
   --blue: #4da2f8;
   --blur-background: color-mix(in srgb, #35393e 65%, transparent) linear-gradient(#35393e, color-mix(in srgb, #35393e 65%, transparent));
+  --bodyFont: var(--font-text);
   --brown: #ca6419;
   --callout-title-size: 1.2rem;
   --canvas-background: #333547;
@@ -80,6 +81,7 @@ export const theme: ThemeData = {
   --code-string: #79e3aa;
   --code-tag: #f03063;
   --code-value: #ff7641;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(93, 109, 126);
   --collapse-icon-color-collapsed: rgb(121, 169, 236);
   --color-accent: rgb(76, 140, 230);
@@ -97,6 +99,8 @@ export const theme: ThemeData = {
   --color-base-70: #bababa;
   --d1: #333547;
   --d2: #272835;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --divider-color: #35393e;
   --divider-color-hover: rgb(76, 140, 230);
   --dropdown-background: #35393e;
@@ -133,6 +137,7 @@ export const theme: ThemeData = {
   --graph-node: rgb(190, 198, 207);
   --graph-node-focused: rgb(121, 169, 236);
   --graph-node-unresolved: rgb(93, 109, 126);
+  --gray: var(--text-muted);
   --green: #79e3aa;
   --h1-color: #dadada;
   --h1-size: 2rem;
@@ -146,7 +151,9 @@ export const theme: ThemeData = {
   --h5-size: 1.2rem;
   --h6-color: #895ef7;
   --h6-size: 1rem;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(93, 109, 126);
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: #494e6a;
   --hr-thickness: 0.0955rem;
   --icon-color: #f4f4f2;
@@ -171,6 +178,8 @@ export const theme: ThemeData = {
   --interactive-normal: #35393e;
   --l1: #f4f4f2;
   --l2: #e8e8e8;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(121, 169, 236);
   --link-color-hover: rgb(175, 203, 244);
   --link-external-color: #79e3aa;
@@ -228,6 +237,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(190, 198, 207);
   --search-icon-color: rgb(190, 198, 207);
   --search-result-background: #333547;
+  --secondary: var(--text-accent);
   --setting-items-background: #282c34;
   --setting-items-border-color: #35393e;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
@@ -272,6 +282,7 @@ export const theme: ThemeData = {
   --tag-color-hover: rgb(121, 169, 236);
   --tag-size: 1rem;
   --teal: #1fcbdc;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(121, 169, 236);
   --text-accent-hover: rgb(175, 203, 244);
   --text-faint: rgb(93, 109, 126);
@@ -280,6 +291,8 @@ export const theme: ThemeData = {
   --text-highlight-bg-d: rgba(255, 208, 0, 0.4);
   --text-muted: rgb(190, 198, 207);
   --text-selection: rgba(76, 140, 230, 0.25);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #272835;
   --titlebar-background-focused: #272835;
   --titlebar-border-color: #35393e;
@@ -825,6 +838,7 @@ body kbd {
   --blockquote-border-color: rgb(90, 149, 231);
   --blue: #4da2f8;
   --blur-background: color-mix(in srgb, #f4f4f2 65%, transparent) linear-gradient(#f4f4f2, color-mix(in srgb, #f4f4f2 65%, transparent));
+  --bodyFont: var(--font-text);
   --brown: #ca6419;
   --callout-bug: 228, 55, 75;
   --callout-error: 228, 55, 75;
@@ -858,6 +872,7 @@ body kbd {
   --code-string: #79e3aa;
   --code-tag: #f03063;
   --code-value: #ff7641;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(162, 170, 179);
   --collapse-icon-color-collapsed: rgb(76, 140, 230);
   --color-accent: rgb(76, 140, 230);
@@ -881,6 +896,8 @@ body kbd {
   --color-yellow: #bd8e37;
   --d1: #333547;
   --d2: #272835;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --divider-color: #ebedf0;
   --divider-color-hover: rgb(90, 149, 231);
   --dropdown-background: #f4f4f2;
@@ -921,6 +938,7 @@ body kbd {
   --graph-node-focused: rgb(76, 140, 230);
   --graph-node-tag: #0cb54f;
   --graph-node-unresolved: rgb(162, 170, 179);
+  --gray: var(--text-muted);
   --green: #79e3aa;
   --h1-color: #222222;
   --h1-size: 2rem;
@@ -934,7 +952,9 @@ body kbd {
   --h5-size: 1.2rem;
   --h6-color: #895ef7;
   --h6-size: 1rem;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(162, 170, 179);
+  --highlight: var(--background-modifier-hover);
   --hr-color: #494e6a;
   --hr-thickness: 0.0955rem;
   --icon-color: #333547;
@@ -960,6 +980,8 @@ body kbd {
   --interactive-normal: #f4f4f2;
   --l1: #f4f4f2;
   --l2: #e8e8e8;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(76, 140, 230);
   --link-color-hover: rgb(32, 112, 223);
   --link-external-color: #79e3aa;
@@ -1018,6 +1040,7 @@ body kbd {
   --search-clear-button-color: rgb(85, 94, 104);
   --search-icon-color: rgb(85, 94, 104);
   --search-result-background: #f4f4f2;
+  --secondary: var(--text-accent);
   --setting-items-background: #f6f7f8;
   --setting-items-border-color: #ebedf0;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
@@ -1069,6 +1092,7 @@ body kbd {
   --tag-color-hover: rgb(76, 140, 230);
   --tag-size: 1rem;
   --teal: #1fcbdc;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(76, 140, 230);
   --text-accent-hover: rgb(32, 112, 223);
   --text-error: #e4374b;
@@ -1080,6 +1104,8 @@ body kbd {
   --text-selection: rgba(76, 140, 230, 0.2);
   --text-success: #0cb54f;
   --text-warning: #d96c00;
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #e8e8e8;
   --titlebar-background-focused: #e8e8e8;
   --titlebar-border-color: #ebedf0;

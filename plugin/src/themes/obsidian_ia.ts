@@ -30,6 +30,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: #ecebea;
   --bases-table-summary-background: #191a19;
   --blockquote-border-color: #00c1ff;
+  --bodyFont: var(--font-interface);
   --canvas-background: #191a19;
   --canvas-card-label-color: #8e8f92;
   --caret-color: #cbcccc;
@@ -43,8 +44,11 @@ export const theme: ThemeData = {
   --code-comment: #8e8f92;
   --code-normal: #cbcccc;
   --code-punctuation: #ecebea;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #8e8f92;
   --collapse-icon-color-collapsed: #00c1ff;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: system, BlinkMacSystemFont, 'iA Writer Mono V', monospace;
   --divider-color-hover: #00c1ff;
   --embed-border-start: 2px solid #00c1ff;
@@ -60,7 +64,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #00c1ff;
   --graph-node-unresolved: #8e8f92;
   --graph-text: #cbcccc;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-interface);
   --heading-formatting: #8e8f92;
+  --highlight: var(--text-highlight-bg);
   --icon-color: #ecebea;
   --icon-color-active: #00c1ff;
   --icon-color-focused: #cbcccc;
@@ -71,6 +78,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: #00b1ef;
   --interactive-accent-rgb: 0, 193, 255;
   --leaf-handle: #242524;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #00c1ff;
   --link-color-hover: #00b1ef;
   --link-external-color: #00c1ff;
@@ -117,6 +126,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #ecebea;
   --search-icon-color: #ecebea;
   --search-result-background: #191a19;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #cbcccc;
   --setting-items-background: #191a19;
   --status-bar-background: #141514;
@@ -140,6 +150,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #00c1ff;
   --tag-color: #00c1ff;
   --tag-color-hover: #00c1ff;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #00c1ff;
   --text-accent-hover: #00b1ef;
   --text-faint: #8e8f92;
@@ -149,6 +160,8 @@ export const theme: ThemeData = {
   --text-on-accent: #cbcccc;
   --text-selection: #20434e;
   --text-tag: #8c8c8c;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #141514;
   --titlebar-background-focused: #242524;
   --titlebar-text-color: #ecebea;
@@ -911,6 +924,7 @@ body sup {
   --bases-table-summary-background: #f7f7f7;
   --blockquote-border-color: #00b1ef;
   --blur-background: color-mix(in srgb, #f7f7f7 65%, transparent) linear-gradient(#f7f7f7, color-mix(in srgb, #f7f7f7 65%, transparent));
+  --bodyFont: var(--font-interface);
   --canvas-background: #f7f7f7;
   --canvas-card-label-color: #9c9c9c;
   --caret-color: #191919;
@@ -924,8 +938,11 @@ body sup {
   --code-comment: #9c9c9c;
   --code-normal: #191919;
   --code-punctuation: #101010;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #9c9c9c;
   --collapse-icon-color-collapsed: #00b1ef;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: system, BlinkMacSystemFont, 'iA Writer Mono V', monospace;
   --divider-color-hover: #00b1ef;
   --embed-border-start: 2px solid #00b1ef;
@@ -941,7 +958,10 @@ body sup {
   --graph-node-focused: #00b1ef;
   --graph-node-unresolved: #9c9c9c;
   --graph-text: #191919;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-interface);
   --heading-formatting: #9c9c9c;
+  --highlight: var(--text-highlight-bg);
   --icon-color: #101010;
   --icon-color-active: #00b1ef;
   --icon-color-focused: #191919;
@@ -952,6 +972,8 @@ body sup {
   --interactive-accent-hover: #00c1ff;
   --interactive-accent-rgb: 0, 193, 255;
   --leaf-handle: #ecebea;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #00b1ef;
   --link-color-hover: #00c1ff;
   --link-external-color: #00b1ef;
@@ -999,6 +1021,7 @@ body sup {
   --search-clear-button-color: #101010;
   --search-icon-color: #101010;
   --search-result-background: #f7f7f7;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #191919;
   --setting-items-background: #f7f7f7;
   --status-bar-background: #fcfcfc;
@@ -1022,6 +1045,7 @@ body sup {
   --table-selection-border-color: #00b1ef;
   --tag-color: #00b1ef;
   --tag-color-hover: #00b1ef;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #00b1ef;
   --text-accent-hover: #00c1ff;
   --text-faint: #9c9c9c;
@@ -1031,6 +1055,8 @@ body sup {
   --text-on-accent: #f7f7f7;
   --text-selection: #c9e9f4;
   --text-tag: #8c8c8c;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #fcfcfc;
   --titlebar-background-focused: #ecebea;
   --titlebar-text-color: #101010;

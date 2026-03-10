@@ -59,6 +59,7 @@ export const theme: ThemeData = {
   --big-radius: 24px;
   --blockquote-border-color: rgb(191, 170, 238);
   --blur-background: color-mix(in srgb, rgb(69, 66, 76) 65%, transparent) linear-gradient(rgb(69, 66, 76), color-mix(in srgb, rgb(69, 66, 76) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold: 650;
   --canvas-background: rgb(30, 29, 32);
   --caret-color: #E5E1E5;
@@ -75,10 +76,13 @@ export const theme: ThemeData = {
   --code-border-color: rgb(37, 35, 42);
   --code-normal: #E5E1E5;
   --code-punctuation: rgb(198, 190, 218);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color-collapsed: rgb(226, 221, 238);
   --color-accent: rgb(162, 138, 219);
   --color-accent-1: rgb(191, 172, 236);
   --color-accent-2: rgb(222, 212, 247);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: rgb(191, 170, 238);
   --dropdown-background: rgb(69, 66, 76);
@@ -124,12 +128,15 @@ export const theme: ThemeData = {
   --graph-node: rgb(198, 190, 218);
   --graph-node-focused: rgb(226, 221, 238);
   --graph-text: #E5E1E5;
+  --gray: var(--text-muted);
   --h1: 2.25em;
   --h2: 20pt;
   --h3: 16pt;
   --h4: 15pt;
   --h5: 14pt;
   --h6: 12pt;
+  --headerFont: var(--font-text);
+  --highlight: var(--text-highlight-bg);
   --hover: rgb(
     41.92,
     40.04,
@@ -151,6 +158,7 @@ export const theme: ThemeData = {
   --inverse-on-surface: #1C1B1E;
   --inverse-surface: #E5E1E5;
   --light: 350;
+  --lightgray: var(--background-secondary);
   --link-color: rgb(226, 221, 238);
   --link-color-hover: rgb(191, 172, 236);
   --link-external-color: rgb(226, 221, 238);
@@ -300,6 +308,8 @@ export const theme: ThemeData = {
   --text-normal: #E5E1E5;
   --text-on-accent: rgb(30, 29, 32);
   --text-selection: rgb(46, 38, 64);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(69, 66, 76);
   --titlebar-background-focused: rgb(
     47.14,
@@ -1253,6 +1263,7 @@ body sup {
   --big-radius: 24px;
   --blockquote-border-color: rgb(165, 134, 238);
   --blur-background: color-mix(in srgb, #fff 65%, transparent) linear-gradient(#fff, color-mix(in srgb, #fff 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold: 650;
   --canvas-background: #fff;
   --canvas-card-label-color: rgb(46, 38, 64);
@@ -1272,11 +1283,14 @@ body sup {
   --code-comment: rgb(46, 38, 64);
   --code-normal: #111;
   --code-punctuation: rgb(46, 38, 64);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(46, 38, 64);
   --collapse-icon-color-collapsed: rgb(100, 60, 195);
   --color-accent: rgb(173, 147, 236);
   --color-accent-1: rgb(191, 172, 236);
   --color-accent-2: rgb(209, 196, 237);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: rgb(165, 134, 238);
   --dropdown-background: rgb(232, 225, 249);
@@ -1323,13 +1337,16 @@ body sup {
   --graph-node-focused: rgb(100, 60, 195);
   --graph-node-unresolved: rgb(46, 38, 64);
   --graph-text: #111;
+  --gray: var(--text-muted);
   --h1: 2.25em;
   --h2: 20pt;
   --h3: 16pt;
   --h4: 15pt;
   --h5: 14pt;
   --h6: 12pt;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(46, 38, 64);
+  --highlight: var(--text-highlight-bg);
   --hover: rgb(
     242.2,
     236.92,
@@ -1353,6 +1370,7 @@ body sup {
   --inverse-on-surface: #EEE;
   --inverse-surface: #111;
   --light: 350;
+  --lightgray: var(--background-secondary);
   --link-color: rgb(100, 60, 195);
   --link-color-hover: rgb(191, 172, 236);
   --link-external-color: rgb(100, 60, 195);
@@ -1506,6 +1524,8 @@ body sup {
   --text-normal: #111;
   --text-on-accent: rgb(46, 38, 64);
   --text-selection: rgb(195, 182, 226);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(232, 225, 249);
   --titlebar-background-focused: rgb(
     237.4,

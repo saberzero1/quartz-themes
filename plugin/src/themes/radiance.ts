@@ -90,6 +90,8 @@ export const theme: ThemeData = {
     );
   --color-accent-hsl: 353, 65%, 54%;
   --color-accent-rgb: 208, 66, 85;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #383838;
   --divider-color-hover: hsl(
         353,
@@ -118,6 +120,8 @@ export const theme: ThemeData = {
         54%
     );
   --graph-text: #e0e0e0;
+  --gray: var(--text-muted);
+  --highlight: var(--background-modifier-hover);
   --hr-color: #383838;
   --icon-color: #a0a0a0;
   --icon-color-active: hsl(
@@ -147,6 +151,7 @@ export const theme: ThemeData = {
     );
   --interactive-accent-hsl: 353, 65%, 54%;
   --interactive-accent-rgb: 208, 66, 85;
+  --lightgray: var(--background-secondary);
   --link-color: hsl(
         353,
         65%,
@@ -226,6 +231,7 @@ export const theme: ThemeData = {
   --scrollbar-radius: 8px;
   --search-clear-button-color: #a0a0a0;
   --search-icon-color: #a0a0a0;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #e0e0e0;
   --setting-items-border-color: #383838;
   --setting-items-radius: 8px;
@@ -290,6 +296,7 @@ export const theme: ThemeData = {
         65%,
         54%
     );
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(
         353,
         65%,
@@ -310,6 +317,7 @@ export const theme: ThemeData = {
         85,
         0.3
     );
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #1e1e1e;
   --titlebar-background-focused: #252525;
   --titlebar-border-color: #383838;
@@ -1309,6 +1317,8 @@ body sup {
     );
   --color-accent-hsl: 353, 65%, 60%;
   --color-accent-rgb: 208, 66, 85;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #dadce0;
   --divider-color-hover: hsl(
         353,
@@ -1337,6 +1347,8 @@ body sup {
         60%
     );
   --graph-text: #202124;
+  --gray: var(--text-muted);
+  --highlight: var(--background-modifier-hover);
   --hr-color: #dadce0;
   --icon-color: #5f6368;
   --icon-color-active: hsl(
@@ -1366,6 +1378,7 @@ body sup {
     );
   --interactive-accent-hsl: 353, 65%, 60%;
   --interactive-accent-rgb: 208, 66, 85;
+  --lightgray: var(--background-secondary);
   --link-color: hsl(
         353,
         65%,
@@ -1443,6 +1456,7 @@ body sup {
   --scrollbar-radius: 8px;
   --search-clear-button-color: #5f6368;
   --search-icon-color: #5f6368;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #202124;
   --setting-items-border-color: #dadce0;
   --setting-items-radius: 8px;
@@ -1507,6 +1521,7 @@ body sup {
         65%,
         60%
     );
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(
         353,
         65%,
@@ -1527,6 +1542,7 @@ body sup {
         85,
         0.2
     );
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #ffffff;
   --titlebar-background-focused: #f8f9fa;
   --titlebar-border-color: #dadce0;
