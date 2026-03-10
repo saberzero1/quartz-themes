@@ -179,7 +179,7 @@ export const theme: ThemeData = {
     black 80%
   ) !important;
   --blockquote-border-thickness: 0.25em !important;
-  --bodyFont: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --bodyFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --bold-weight: 600 !important;
@@ -248,7 +248,7 @@ export const theme: ThemeData = {
   --code-string: hsl(from rgb(38, 102, 192) 124 s l) !important;
   --code-tag: hsl(from rgb(38, 102, 192) 356 s l) !important;
   --code-value: hsl(from rgb(38, 102, 192) 253 s l) !important;
-  --codeFont: '??', ui-monospace, Menlo, SFMono-Regular, Consolas,
+  --codeFont: ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
   --collapse-icon-color: rgb(38, 102, 192) !important;
@@ -312,8 +312,8 @@ export const theme: ThemeData = {
     rgb(38, 102, 192),
     black 95%
   ) !important;
-  --file-header-font: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --file-header-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --file-header-font-size: 0.8rem !important;
   --file-line-width: 37.5rem !important;
@@ -326,24 +326,24 @@ export const theme: ThemeData = {
   ) !important;
   --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --font-interface: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --font-interface: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --font-interface-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --font-mermaid: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --font-mermaid: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --font-monospace: '??', ui-monospace, Menlo, SFMono-Regular, Consolas,
+  --font-monospace: ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-theme: ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
-  --font-print: '??', '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Arial' !important;
-  --font-text: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --font-print: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial' !important;
+  --font-text: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --font-text-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -413,7 +413,7 @@ export const theme: ThemeData = {
   --h6-size: 16px !important;
   --h6-weight: 500 !important;
   --header-height: calc(18px + 1rem) !important;
-  --headerFont: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --headerFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --heading-formatting: color-mix(
@@ -549,8 +549,8 @@ export const theme: ThemeData = {
     rgb(38, 102, 192),
     black 90%
   ) !important;
-  --metadata-input-font: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --metadata-input-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --metadata-input-height: 28px !important;
   --metadata-input-text-color: color-mix(
@@ -563,8 +563,8 @@ export const theme: ThemeData = {
     rgb(38, 102, 192),
     black 90%
   ) !important;
-  --metadata-label-font: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --metadata-label-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --metadata-label-text-color: color-mix(in srgb, color-mix(
     in srgb,
@@ -1771,7 +1771,7 @@ export const theme: ThemeData = {
   --theme-value-gradientContrast: 0.2 !important;
   --theme-value-headingScaleFactor: 1.2 !important;
   --theme-value-sidebarFontScalingFactor: 0.8 !important;
-  --titleFont: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --titleFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --titlebar-background: transparent !important;
@@ -2838,7 +2838,7 @@ html[saved-theme="dark"] body sup {
   ) !important;
   --blockquote-border-thickness: 0.25em !important;
   --blur-background: color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent)) !important;
-  --bodyFont: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --bodyFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --bold-weight: 600 !important;
@@ -2899,7 +2899,7 @@ html[saved-theme="dark"] body sup {
   --code-string: hsl(from rgb(38, 102, 192) 124 s l) !important;
   --code-tag: hsl(from rgb(38, 102, 192) 356 s l) !important;
   --code-value: hsl(from rgb(38, 102, 192) 253 s l) !important;
-  --codeFont: '??', ui-monospace, Menlo, SFMono-Regular, Consolas,
+  --codeFont: ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
   --collapse-icon-color: rgb(38, 102, 192) !important;
@@ -2955,8 +2955,8 @@ html[saved-theme="dark"] body sup {
   ) !important;
   --file-header-background: white !important;
   --file-header-background-focused: white !important;
-  --file-header-font: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --file-header-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --file-header-font-size: 0.8rem !important;
   --file-line-width: 37.5rem !important;
@@ -2969,24 +2969,24 @@ html[saved-theme="dark"] body sup {
   ) !important;
   --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --font-interface: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --font-interface: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --font-interface-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --font-mermaid: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --font-mermaid: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --font-monospace: '??', ui-monospace, Menlo, SFMono-Regular, Consolas,
+  --font-monospace: ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-theme: ui-monospace, Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", "Source Code Pro", monospace !important;
-  --font-print: '??', '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Arial' !important;
-  --font-text: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --font-print: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial' !important;
+  --font-text: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --font-text-theme: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -3056,7 +3056,7 @@ html[saved-theme="dark"] body sup {
   --h6-size: 16px !important;
   --h6-weight: 500 !important;
   --header-height: calc(18px + 1rem) !important;
-  --headerFont: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --headerFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --heading-formatting: color-mix(
@@ -3180,8 +3180,8 @@ html[saved-theme="dark"] body sup {
     rgb(38, 102, 192),
     white 95%
   ) !important;
-  --metadata-input-font: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --metadata-input-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --metadata-input-height: 28px !important;
   --metadata-input-text-color: color-mix(
@@ -3194,8 +3194,8 @@ html[saved-theme="dark"] body sup {
     rgb(38, 102, 192),
     white 95%
   ) !important;
-  --metadata-label-font: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --metadata-label-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --metadata-label-text-color: color-mix(in srgb, color-mix(
     in srgb,
@@ -4351,7 +4351,7 @@ html[saved-theme="dark"] body sup {
   --theme-value-gradientContrast: 0.2 !important;
   --theme-value-headingScaleFactor: 1.2 !important;
   --theme-value-sidebarFontScalingFactor: 0.8 !important;
-  --titleFont: '??', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  --titleFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --titlebar-background: transparent !important;

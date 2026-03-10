@@ -657,7 +657,7 @@ export const theme: ThemeData = {
   --table-drag-handle-color: #666 !important;
   --table-drag-handle-color-active: #232830 !important;
   --table-header-color: #ffffff !important;
-  --table-header-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --table-header-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --table-header-size: 0.875em !important;
   --table-header-weight: 400 !important;
   --table-selection: hsla(254,

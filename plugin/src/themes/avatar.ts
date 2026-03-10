@@ -85,7 +85,7 @@ export const theme: ThemeData = {
   --font-mermaid: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   --font-monospace: 'JetBrains Mono', 'Source Code Pro', monospace !important;
   --font-monospace-theme: 'JetBrains Mono', 'Source Code Pro', monospace !important;
-  --font-print: '??', '??', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, 'Arial' !important;
+  --font-print: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, Arial' !important;
   --font-text: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   --font-text-theme: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   --footnote-divider-color: #4a5568 !important;

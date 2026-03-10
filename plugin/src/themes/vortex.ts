@@ -44,7 +44,7 @@ export const theme: ThemeData = {
   --bases-table-group-background: #0d0b12 !important;
   --bases-table-header-background: #111111 !important;
   --bases-table-summary-background: #111111 !important;
-  --bodyFont: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --callout-background-opacity: 0.2;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
@@ -59,7 +59,7 @@ export const theme: ThemeData = {
   --checkbox-marker-color: #111111 !important;
   --code-background: #0d0b12 !important;
   --code-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --codeFont: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --color-hr: rgb(138, 92, 245) !important;
   --color-italic: rgb(138, 92, 245) !important;
   --default-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif !important;
@@ -67,11 +67,11 @@ export const theme: ThemeData = {
   --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent), inset 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
   --file-header-background: #111111 !important;
   --file-header-background-focused: #111111 !important;
-  --file-header-font: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --footnote-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
   --gradient-bold: linear-gradient(135deg, #00eaff, #ff008c) !important;
-  --headerFont: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --hr-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
   --hr-gradient: linear-gradient( to right,
     rgba(0, 255, 255, 0) 0%,
@@ -87,8 +87,8 @@ export const theme: ThemeData = {
   --menu-background: #1a1a1a !important;
   --metadata-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
   --metadata-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --metadata-input-font: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --modal-background: #111111 !important;
   --pdf-background: #111111 !important;
   --pdf-page-background: #111111 !important;
@@ -129,7 +129,7 @@ export const theme: ThemeData = {
   --text-title-h5: #2ECC71 !important;
   --text-title-h6: #db3eb1 !important;
   --theme-color: rgb(138, 92, 245) !important;
-  --titleFont: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #1a1a1a !important;
   --titlebar-background-focused: #0d0b12 !important;
   --titlebar-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
@@ -587,7 +587,7 @@ html[saved-theme="dark"] body kbd {
   --bases-table-border-color: rgb(138, 92, 245) !important;
   --bases-table-cell-background-disabled: #ffffff !important;
   --bases-table-group-background: #ffffff !important;
-  --bodyFont: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --callout-background-opacity: 0.2;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
@@ -601,17 +601,17 @@ html[saved-theme="dark"] body kbd {
   --checkbox-color-hover: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff) !important;
   --code-background: #ffffff !important;
   --code-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --codeFont: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --color-hr: rgb(138, 92, 245) !important;
   --color-italic: rgb(138, 92, 245) !important;
   --default-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif !important;
   --divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
   --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent), inset 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --file-header-font: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-interface: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --footnote-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
   --gradient-bold: linear-gradient(135deg, #00eaff, #ff008c) !important;
-  --headerFont: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --hr-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
   --hr-gradient: linear-gradient( to right,
     rgba(0, 255, 255, 0) 0%,
@@ -627,8 +627,8 @@ html[saved-theme="dark"] body kbd {
   --menu-background: #eeeeee !important;
   --metadata-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
   --metadata-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --metadata-input-font: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --pill-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
   --ribbon-background: #eeeeee !important;
   --scrollbar-active-thumb-bg: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent) !important;
@@ -657,7 +657,7 @@ html[saved-theme="dark"] body kbd {
   --text-title-h5: #2ECC71 !important;
   --text-title-h6: #db3eb1 !important;
   --theme-color: rgb(138, 92, 245) !important;
-  --titleFont: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #eeeeee !important;
   --titlebar-background-focused: #eeeeee !important;
   --titlebar-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;

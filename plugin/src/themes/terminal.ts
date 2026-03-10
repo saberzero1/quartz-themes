@@ -40,7 +40,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #000000 !important;
   --blockquote-border-color: #000000 !important;
   --blur-background: color-mix(in srgb, #000000 65%, transparent) linear-gradient(#000000, color-mix(in srgb, #000000 65%, transparent)) !important;
-  --bodyFont: '??', '??', Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --canvas-background: #000000 !important;
   --canvas-card-label-color: #15d00d !important;
   --caret-color: #15d00d !important;
@@ -57,7 +57,7 @@ export const theme: ThemeData = {
   --code-comment: #15d00d !important;
   --code-normal: #15d00d !important;
   --code-punctuation: #15d00d !important;
-  --codeFont: '??', '??', Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-down: "v" !important;
   --collapse-icon-color: #15d00d !important;
   --collapse-icon-color-collapsed: #15d00d !important;
@@ -75,10 +75,10 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid #000000 !important;
   --file-header-background: #000000 !important;
   --file-header-background-focused: #000000 !important;
-  --file-header-font: '??', '??', Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --flair-background: #000000 !important;
   --flair-color: #15d00d !important;
-  --font-interface: '??', '??', Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --footnote-divider-color: #15d00d !important;
   --footnote-id-color: #15d00d !important;
   --footnote-id-color-no-occurrences: #15d00d !important;
@@ -87,7 +87,7 @@ export const theme: ThemeData = {
   --graph-node-unresolved: #15d00d !important;
   --graph-text: #15d00d !important;
   --gray: #15d00d !important;
-  --headerFont: '??', '??', Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #15d00d !important;
   --highlight: rgba(255, 255, 0, 0.4) !important;
   --hr-color: #15d00d !important;
@@ -117,9 +117,9 @@ export const theme: ThemeData = {
   --menu-background: #000000 !important;
   --metadata-border-color: #15d00d !important;
   --metadata-divider-color: #15d00d !important;
-  --metadata-input-font: '??', '??', Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: #15d00d !important;
-  --metadata-label-font: '??', '??', Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: #15d00d !important;
   --metadata-label-text-color-hover: #15d00d !important;
   --modal-background: #000000 !important;
@@ -218,7 +218,7 @@ export const theme: ThemeData = {
   --the-color-rgb: 35, 255, 24 !important;
   --the-font: Fira Code !important;
   --the-font-size: 14px !important;
-  --titleFont: '??', '??', Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: Fira Code, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #000000 !important;
   --titlebar-background-focused: #000000 !important;
   --titlebar-border-color: #15d00d !important;

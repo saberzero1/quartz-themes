@@ -40,7 +40,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: rgb(200, 100, 100) !important;
   --blockquote-border-thickness: 0.2rem !important;
   --blur-background: color-mix(in srgb, rgb(82, 87, 96) 65%, transparent) linear-gradient(rgb(82, 87, 96), color-mix(in srgb, rgb(82, 87, 96) 65%, transparent)) !important;
-  --bodyFont: '??', '??', "New York", "Georgia", ui-serif, serif !important;
+  --bodyFont: "New York", "Georgia", ui-serif, serif !important;
   --button-radius: 3px !important;
   --callout-border-width: 1px;
   --callout-padding: 1rem;
@@ -73,7 +73,7 @@ export const theme: ThemeData = {
   --code-string: rgb(156, 202, 119) !important;
   --code-tag: rgb(210, 121, 121) !important;
   --code-value: rgb(204, 151, 102) !important;
-  --codeFont: '??', '??', "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+  --codeFont: "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace !important;
   --collapse-icon-color: rgb(106, 111, 124) !important;
   --collapse-icon-color-collapsed: rgb(200, 100, 100) !important;
@@ -103,14 +103,14 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid rgb(200, 100, 100) !important;
   --file-header-background: rgb(40, 42, 47) !important;
   --file-header-background-focused: rgb(40, 42, 47) !important;
-  --file-header-font: '??', '??', "SF Pro", ui-sans-serif, sans-serif !important;
+  --file-header-font: "SF Pro", ui-sans-serif, sans-serif !important;
   --flair-background: rgb(82, 87, 96) !important;
   --flair-color: rgb(186, 189, 196) !important;
-  --font-interface: '??', '??', "SF Pro", ui-sans-serif, sans-serif !important;
-  --font-mermaid: '??', '??', "New York", "Georgia", ui-serif, serif !important;
-  --font-monospace: '??', '??', "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+  --font-interface: "SF Pro", ui-sans-serif, sans-serif !important;
+  --font-mermaid: "New York", "Georgia", ui-serif, serif !important;
+  --font-monospace: "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace !important;
-  --font-text: '??', '??', "New York", "Georgia", ui-serif, serif !important;
+  --font-text: "New York", "Georgia", ui-serif, serif !important;
   --footnote-divider-color: rgb(82, 87, 96) !important;
   --footnote-id-color: rgb(186, 189, 196) !important;
   --footnote-id-color-no-occurrences: rgb(106, 111, 124) !important;
@@ -140,7 +140,7 @@ export const theme: ThemeData = {
   --h6-color: rgb(214, 216, 220) !important;
   --h6-font: "SF Pro", ui-sans-serif, sans-serif !important;
   --h6-size: 1rem !important;
-  --headerFont: '??', '??', "New York", "Georgia", ui-serif, serif !important;
+  --headerFont: "New York", "Georgia", ui-serif, serif !important;
   --heading-formatting: rgb(106, 111, 124) !important;
   --highlight: rgb(200, 100, 100) !important;
   --hr-color: rgb(63, 67, 74) !important;
@@ -175,9 +175,9 @@ export const theme: ThemeData = {
   --menu-border-color: rgb(94, 99, 110) !important;
   --metadata-border-color: rgb(82, 87, 96) !important;
   --metadata-divider-color: rgb(82, 87, 96) !important;
-  --metadata-input-font: '??', '??', "SF Pro", ui-sans-serif, sans-serif !important;
+  --metadata-input-font: "SF Pro", ui-sans-serif, sans-serif !important;
   --metadata-input-text-color: rgb(186, 189, 196) !important;
-  --metadata-label-font: '??', '??', "SF Pro", ui-sans-serif, sans-serif !important;
+  --metadata-label-font: "SF Pro", ui-sans-serif, sans-serif !important;
   --metadata-label-text-color: rgb(186, 189, 196) !important;
   --metadata-label-text-color-hover: rgb(186, 189, 196) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(131, 137, 149) !important;
@@ -276,7 +276,7 @@ export const theme: ThemeData = {
   --text-normal: rgb(186, 189, 196) !important;
   --text-selection: rgb(179, 77, 77) !important;
   --textHighlight: rgb(200, 100, 100) !important;
-  --titleFont: '??', '??', "New York", "Georgia", ui-serif, serif !important;
+  --titleFont: "New York", "Georgia", ui-serif, serif !important;
   --titlebar-background: rgb(33, 35, 39) !important;
   --titlebar-background-focused: rgb(33, 35, 39) !important;
   --titlebar-border-color: rgb(82, 87, 96) !important;
@@ -1325,7 +1325,7 @@ html[saved-theme="dark"] body sup {
   --blockquote-border-color: rgb(200, 100, 100) !important;
   --blockquote-border-thickness: 0.2rem !important;
   --blur-background: color-mix(in srgb, #fefefe 65%, transparent) linear-gradient(#fefefe, color-mix(in srgb, #fefefe 65%, transparent)) !important;
-  --bodyFont: '??', '??', "New York", "Georgia", ui-serif, serif !important;
+  --bodyFont: "New York", "Georgia", ui-serif, serif !important;
   --button-radius: 3px !important;
   --callout-border-width: 1px;
   --callout-padding: 1rem;
@@ -1354,7 +1354,7 @@ html[saved-theme="dark"] body sup {
   --code-string: rgb(163, 193, 139) !important;
   --code-tag: rgb(204, 102, 102) !important;
   --code-value: rgb(198, 138, 83) !important;
-  --codeFont: '??', '??', "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+  --codeFont: "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace !important;
   --collapse-icon-color-collapsed: rgb(200, 100, 100) !important;
   --color-accent: rgb(200, 100, 100) !important;
@@ -1371,13 +1371,13 @@ html[saved-theme="dark"] body sup {
   --embed-border-start: 2px solid rgb(200, 100, 100) !important;
   --file-header-background: #fefefe !important;
   --file-header-background-focused: #fefefe !important;
-  --file-header-font: '??', '??', "SF Pro", ui-sans-serif, sans-serif !important;
+  --file-header-font: "SF Pro", ui-sans-serif, sans-serif !important;
   --flair-color: #555555 !important;
-  --font-interface: '??', '??', "SF Pro", ui-sans-serif, sans-serif !important;
-  --font-mermaid: '??', '??', "New York", "Georgia", ui-serif, serif !important;
-  --font-monospace: '??', '??', "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+  --font-interface: "SF Pro", ui-sans-serif, sans-serif !important;
+  --font-mermaid: "New York", "Georgia", ui-serif, serif !important;
+  --font-monospace: "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace !important;
-  --font-text: '??', '??', "New York", "Georgia", ui-serif, serif !important;
+  --font-text: "New York", "Georgia", ui-serif, serif !important;
   --footnote-id-color: #555555 !important;
   --footnote-radius: 3px !important;
   --graph-node: #555555 !important;
@@ -1404,7 +1404,7 @@ html[saved-theme="dark"] body sup {
   --h6-color: #444444 !important;
   --h6-font: "SF Pro", ui-sans-serif, sans-serif !important;
   --h6-size: 1rem !important;
-  --headerFont: '??', '??', "New York", "Georgia", ui-serif, serif !important;
+  --headerFont: "New York", "Georgia", ui-serif, serif !important;
   --highlight: rgb(250, 240, 240) !important;
   --hr-color: #e3e3e3 !important;
   --hr-thickness: 0.125rem !important;
@@ -1430,9 +1430,9 @@ html[saved-theme="dark"] body sup {
   --list-marker-color-collapsed: rgb(200, 100, 100) !important;
   --list-marker-color-hover: #555555 !important;
   --menu-background: rgb(253, 249, 247) !important;
-  --metadata-input-font: '??', '??', "SF Pro", ui-sans-serif, sans-serif !important;
+  --metadata-input-font: "SF Pro", ui-sans-serif, sans-serif !important;
   --metadata-input-text-color: #555555 !important;
-  --metadata-label-font: '??', '??', "SF Pro", ui-sans-serif, sans-serif !important;
+  --metadata-label-font: "SF Pro", ui-sans-serif, sans-serif !important;
   --metadata-label-text-color: #555555 !important;
   --metadata-label-text-color-hover: #555555 !important;
   --modal-background: #fefefe !important;
@@ -1506,7 +1506,7 @@ html[saved-theme="dark"] body sup {
   --text-normal: #555555 !important;
   --text-selection: rgb(200, 100, 100) !important;
   --textHighlight: rgb(250, 240, 240) !important;
-  --titleFont: '??', '??', "New York", "Georgia", ui-serif, serif !important;
+  --titleFont: "New York", "Georgia", ui-serif, serif !important;
   --titlebar-background-focused: #f6f6f6 !important;
   --titlebar-text-color: #555555 !important;
   --titlebar-text-color-focused: #555555 !important;

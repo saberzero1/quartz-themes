@@ -50,7 +50,7 @@ export const theme: ThemeData = {
   --blockquote-border-thickness: 2.5px !important;
   --blockquote-color: #a0a7c4 !important;
   --blur-background: color-mix(in srgb, #4e4560 65%, transparent) linear-gradient(#4e4560, color-mix(in srgb, #4e4560 65%, transparent)) !important;
-  --bodyFont: '??', '??', "Arima", cursive !important;
+  --bodyFont: "Arima", cursive !important;
   --border-radius-average: 11px !important;
   --callout-bug: 220, 118, 167;
   --callout-default: 136, 198, 227;
@@ -104,7 +104,7 @@ export const theme: ThemeData = {
   --code-string: #75c297 !important;
   --code-tag: #e17884 !important;
   --code-value: #b584c7 !important;
-  --codeFont: '??', '??', "Arima", cursive !important;
+  --codeFont: "Arima", cursive !important;
   --collapse-icon-color: rgb(125, 127, 149) !important;
   --color-base-00: #3b3347 !important;
   --color-base-05: #2f2837 !important;
@@ -143,13 +143,13 @@ export const theme: ThemeData = {
   --embed-block-shadow-hover: 0 0 0 1px #4e4560, inset 0 0 0 1px #4e4560 !important;
   --file-header-background: #3b3347 !important;
   --file-header-background-focused: #3b3347 !important;
-  --file-header-font: '??', '??', '??', "Arima", cursive !important;
+  --file-header-font: "Arima", cursive !important;
   --flair-background: #4e4560 !important;
   --flair-color: #a0a7c4 !important;
   --font-default: "Arima", cursive !important;
-  --font-interface: '??', '??', '??', "Arima", cursive !important;
-  --font-mermaid: '??', '??', "Arima", cursive !important;
-  --font-text: '??', '??', "Arima", cursive !important;
+  --font-interface: "Arima", cursive !important;
+  --font-mermaid: "Arima", cursive !important;
+  --font-text: "Arima", cursive !important;
   --footnote-divider-color: #4e4560 !important;
   --footnote-id-color: #7f83a1 !important;
   --footnote-id-color-no-occurrences: rgb(125, 127, 149) !important;
@@ -175,7 +175,7 @@ export const theme: ThemeData = {
   --h6-color: #a0a7c4 !important;
   --h6-line-height: 1.7 !important;
   --h6-variant: small-caps !important;
-  --headerFont: '??', '??', "Arima", cursive !important;
+  --headerFont: "Arima", cursive !important;
   --heading-formatting: rgb(125, 127, 149) !important;
   --highlight: hsl(
     258,
@@ -205,9 +205,9 @@ export const theme: ThemeData = {
   --menu-radius: 10px !important;
   --metadata-border-color: #4e4560 !important;
   --metadata-divider-color: #4e4560 !important;
-  --metadata-input-font: '??', '??', '??', "Arima", cursive !important;
+  --metadata-input-font: "Arima", cursive !important;
   --metadata-input-text-color: #a0a7c4 !important;
-  --metadata-label-font: '??', '??', '??', "Arima", cursive !important;
+  --metadata-label-font: "Arima", cursive !important;
   --metadata-label-text-color: #7f83a1 !important;
   --metadata-label-text-color-hover: #7f83a1 !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(98, 111, 134) !important;
@@ -320,7 +320,7 @@ export const theme: ThemeData = {
     66%,
     0.3
   ) !important;
-  --titleFont: '??', '??', "Arima", cursive !important;
+  --titleFont: "Arima", cursive !important;
   --titlebar-background: #2f2837 !important;
   --titlebar-background-focused: #2f2837 !important;
   --titlebar-border-color: #4e4560 !important;
@@ -1411,7 +1411,7 @@ html[saved-theme="dark"] body sup {
   --blockquote-border-thickness: 2.5px !important;
   --blockquote-color: #594f67 !important;
   --blur-background: color-mix(in srgb, #f8f3f2 65%, transparent) linear-gradient(#f8f3f2, color-mix(in srgb, #f8f3f2 65%, transparent)) !important;
-  --bodyFont: '??', '??', "Arima", cursive !important;
+  --bodyFont: "Arima", cursive !important;
   --border-radius-average: 11px !important;
   --callout-bug: 220, 118, 167;
   --callout-default: 136, 198, 227;
@@ -1467,7 +1467,7 @@ html[saved-theme="dark"] body sup {
   --code-string: #75c297 !important;
   --code-tag: #e17884 !important;
   --code-value: #b584c7 !important;
-  --codeFont: '??', '??', "Arima", cursive !important;
+  --codeFont: "Arima", cursive !important;
   --collapse-icon-color: #a391a3 !important;
   --collapse-icon-color-collapsed: rgb(193, 139, 172) !important;
   --color-accent: rgb(193, 139, 172) !important;
@@ -1513,13 +1513,13 @@ html[saved-theme="dark"] body sup {
   --embed-border-start: 2px solid rgb(201, 156, 185) !important;
   --file-header-background: #f8f3f2 !important;
   --file-header-background-focused: #f8f3f2 !important;
-  --file-header-font: '??', '??', '??', "Arima", cursive !important;
+  --file-header-font: "Arima", cursive !important;
   --flair-background: #f8f3f2 !important;
   --flair-color: #594f67 !important;
   --font-default: "Arima", cursive !important;
-  --font-interface: '??', '??', '??', "Arima", cursive !important;
-  --font-mermaid: '??', '??', "Arima", cursive !important;
-  --font-text: '??', '??', "Arima", cursive !important;
+  --font-interface: "Arima", cursive !important;
+  --font-mermaid: "Arima", cursive !important;
+  --font-text: "Arima", cursive !important;
   --footnote-divider-color: #cec2c577 !important;
   --footnote-id-color: #685a68 !important;
   --footnote-id-color-no-occurrences: #a391a3 !important;
@@ -1546,7 +1546,7 @@ html[saved-theme="dark"] body sup {
   --h6-color: #594f67 !important;
   --h6-line-height: 1.7 !important;
   --h6-variant: small-caps !important;
-  --headerFont: '??', '??', "Arima", cursive !important;
+  --headerFont: "Arima", cursive !important;
   --heading-formatting: #a391a3 !important;
   --highlight: hsl(
     323,
@@ -1587,9 +1587,9 @@ html[saved-theme="dark"] body sup {
   --menu-radius: 10px !important;
   --metadata-border-color: #cec2c577 !important;
   --metadata-divider-color: #cec2c577 !important;
-  --metadata-input-font: '??', '??', '??', "Arima", cursive !important;
+  --metadata-input-font: "Arima", cursive !important;
   --metadata-input-text-color: #594f67 !important;
-  --metadata-label-font: '??', '??', '??', "Arima", cursive !important;
+  --metadata-label-font: "Arima", cursive !important;
   --metadata-label-text-color: #685a68 !important;
   --metadata-label-text-color-hover: #685a68 !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #b6a4b2 !important;
@@ -1719,7 +1719,7 @@ html[saved-theme="dark"] body sup {
     65%,
     0.2
   ) !important;
-  --titleFont: '??', '??', "Arima", cursive !important;
+  --titleFont: "Arima", cursive !important;
   --titlebar-background: #f4ebeb !important;
   --titlebar-background-focused: #faf3f1 !important;
   --titlebar-border-color: #cec2c577 !important;

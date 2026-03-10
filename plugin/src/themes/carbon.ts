@@ -31,7 +31,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: #161616 !important;
   --bases-table-summary-background: #161616 !important;
   --blockquote-border-color: rgb(16, 100, 254) !important;
-  --bodyFont: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --bodyFont: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --button-radius: 0px !important;
   --callout-radius: 0px;
   --canvas-background: #161616 !important;
@@ -64,9 +64,9 @@ export const theme: ThemeData = {
   --flair-color: #F4F4F4 !important;
   --font-default: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --font-interface: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
-  --font-mermaid: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --font-mermaid: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --font-monospace: "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace !important;
-  --font-text: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --font-text: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --font-ui-small: 14px !important;
   --footnote-divider-color: #6F6F6F !important;
   --footnote-radius: 0px !important;
@@ -75,7 +75,7 @@ export const theme: ThemeData = {
   --gray: #F4F4F4 !important;
   --h1-weight: 400 !important;
   --h2-weight: 400 !important;
-  --headerFont: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --headerFont: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --highlight: #001d6c !important;
   --hr-color: #6F6F6F !important;
   --icon-color: #F4F4F4 !important;
@@ -189,7 +189,7 @@ export const theme: ThemeData = {
   --text-normal: #F4F4F4 !important;
   --text-selection: rgba(16, 100, 254, 0.33) !important;
   --textHighlight: #001d6c !important;
-  --titleFont: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --titleFont: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --titlebar-background: #000000 !important;
   --titlebar-background-focused: #000000 !important;
   --titlebar-border-color: #6F6F6F !important;
@@ -1119,7 +1119,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-summary-background: #FFFFFF !important;
   --blockquote-border-color: rgb(36, 116, 255) !important;
   --blur-background: color-mix(in srgb, #FFFFFF 65%, transparent) linear-gradient(#FFFFFF, color-mix(in srgb, #FFFFFF 65%, transparent)) !important;
-  --bodyFont: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --bodyFont: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --button-radius: 0px !important;
   --callout-radius: 0px;
   --canvas-background: #FFFFFF !important;
@@ -1152,9 +1152,9 @@ html[saved-theme="dark"] body sup {
   --flair-color: #262626 !important;
   --font-default: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --font-interface: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
-  --font-mermaid: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --font-mermaid: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --font-monospace: "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace !important;
-  --font-text: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --font-text: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --font-ui-small: 14px !important;
   --footnote-divider-color: #8D8D8D !important;
   --footnote-radius: 0px !important;
@@ -1163,7 +1163,7 @@ html[saved-theme="dark"] body sup {
   --gray: #262626 !important;
   --h1-weight: 400 !important;
   --h2-weight: 400 !important;
-  --headerFont: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --headerFont: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --highlight: #d0e2ff !important;
   --hr-color: #8D8D8D !important;
   --icon-color: #262626 !important;
@@ -1281,7 +1281,7 @@ html[saved-theme="dark"] body sup {
   --text-normal: #262626 !important;
   --text-selection: rgba(16, 100, 254, 0.2) !important;
   --textHighlight: #d0e2ff !important;
-  --titleFont: '??', '??', "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --titleFont: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
   --titlebar-background: #000000 !important;
   --titlebar-background-focused: #000000 !important;
   --titlebar-border-color: #8D8D8D !important;

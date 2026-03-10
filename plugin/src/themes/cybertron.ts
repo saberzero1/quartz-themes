@@ -56,7 +56,7 @@ export const theme: ThemeData = {
   --code-punctuation: rgb(49, 156, 180) !important;
   --code-size: 13.125px !important;
   --code-tag: rgb(49, 156, 180) !important;
-  --codeFont: '??', "JetBrains Mono", Menlo, SFMono-Regular, Consolas,
+  --codeFont: "JetBrains Mono", Menlo, SFMono-Regular, Consolas,
     "Fira Coda", SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: #999999 !important;
   --collapse-icon-color-collapsed: #319cb4 !important;
@@ -70,7 +70,7 @@ export const theme: ThemeData = {
   --file-header-background: #2f3136 !important;
   --file-header-background-focused: #2f3136 !important;
   --flair-color: #5dbcd2 !important;
-  --font-monospace: '??', "JetBrains Mono", Menlo, SFMono-Regular, Consolas,
+  --font-monospace: "JetBrains Mono", Menlo, SFMono-Regular, Consolas,
     "Fira Coda", SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "JetBrains Mono", Menlo, SFMono-Regular, Consolas,
     "Fira Coda", SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace !important;

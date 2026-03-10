@@ -1144,7 +1144,7 @@ export const theme: ThemeData = {
   --flexcyon-w-spacing: 0px !important;
   --flexcyon-yellow: #C29E42 !important;
   --flexyon-base-grey-token: #586582 !important;
-  --font-mermaid: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-mermaid: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-ui-large: 17.79833px !important;
   --font-ui-medium: 16.1803px !important;
   --font-ui-small: 14.56227px !important;
@@ -1410,7 +1410,7 @@ export const theme: ThemeData = {
     #191D28
   ) !important;
   --r-heading-color: #D3D5D3 !important;
-  --r-heading-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --r-heading-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-heading-margin: 16px 0px !important;
   --r-heading-text-transform: capitalize !important;
   --r-heading1-size: 1.81803em !important;
@@ -1423,7 +1423,7 @@ export const theme: ThemeData = {
     65%,
     88%
   ) !important;
-  --r-main-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --r-main-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-main-font-size: max-content !important;
   --radius-l: 6px !important;
   --radius-m: 4px !important;
@@ -3826,7 +3826,7 @@ html[saved-theme="dark"] body sup {
   --flexcyon-w-spacing: 0px !important;
   --flexcyon-yellow: #E8C62A !important;
   --flexyon-base-grey-token: #586582 !important;
-  --font-mermaid: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-mermaid: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-ui-large: 17.79833px !important;
   --font-ui-medium: 16.1803px !important;
   --font-ui-small: 14.56227px !important;
@@ -4066,7 +4066,7 @@ html[saved-theme="dark"] body sup {
     #EDEBE5 30%
   ) !important;
   --r-heading-color: #080808 !important;
-  --r-heading-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --r-heading-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-heading-margin: 16px 0px !important;
   --r-heading-text-transform: capitalize !important;
   --r-heading1-size: 1.81803em !important;
@@ -4079,7 +4079,7 @@ html[saved-theme="dark"] body sup {
     58%,
     88%
   ) !important;
-  --r-main-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --r-main-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-main-font-size: max-content !important;
   --radius-l: 6px !important;
   --radius-m: 4px !important;
