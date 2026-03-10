@@ -96,6 +96,8 @@ export const TEMPLATE_CSS = `
         align-self: baseline;
         background: var(--quartz-icon-color);
         content: '';
+        margin-inline-end: 0.5rem;
+        margin-block-start: 0.2rem;
       }
       & > div {
         width: 100%;

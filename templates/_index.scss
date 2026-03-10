@@ -949,6 +949,8 @@ body {
           align-self: baseline;
           background: var(--icon-color);
           content: '';
+          margin-inline-end: 0.5rem;
+          margin-block-start: 0.2rem;
         }
         & > div {
           width: 100%;
