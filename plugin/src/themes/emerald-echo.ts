@@ -111,11 +111,11 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   background-color: rgb(0, 0, 0);
 }
 
@@ -130,28 +130,28 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(0, 0, 0);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
   text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
-html[saved-theme="dark"] body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(216, 228, 58);
   outline: rgb(216, 228, 58) none 0px;
   text-decoration: rgb(216, 228, 58);
   text-decoration-color: rgb(216, 228, 58);
 }
 
-html[saved-theme="dark"] body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(216, 228, 58);
   outline: rgb(216, 228, 58) none 0px;
   text-decoration: rgb(216, 228, 58);
   text-decoration-color: rgb(216, 228, 58);
 }
 
-html[saved-theme="dark"] body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
   text-decoration: rgb(65, 180, 180);
@@ -161,7 +161,7 @@ html[saved-theme="dark"] body .page article p > strong, strong {
 html[saved-theme="dark"] body .text-highlight {
   background-color: rgba(103, 194, 103, 0.41);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
   text-decoration: underline 1px rgb(82, 157, 82);
@@ -169,7 +169,7 @@ html[saved-theme="dark"] body .text-highlight {
   text-decoration-thickness: 1px;
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(99, 190, 99);
   outline: rgb(99, 190, 99) none 0px;
   text-decoration: underline 1px rgb(99, 190, 99);
@@ -212,7 +212,7 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-reh
   background-color: rgba(63, 84, 41, 0.275);
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: rgba(63, 84, 41, 0.275);
 }
 
@@ -250,7 +250,7 @@ html[saved-theme="dark"] body h2 {
   color: rgb(190, 112, 112);
 }
 
-html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: rgb(44, 206, 16);
 }
 
@@ -408,28 +408,28 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
   text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
-html[saved-theme="light"] body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(124, 133, 8);
   outline: rgb(124, 133, 8) none 0px;
   text-decoration: rgb(124, 133, 8);
   text-decoration-color: rgb(124, 133, 8);
 }
 
-html[saved-theme="light"] body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(124, 133, 8);
   outline: rgb(124, 133, 8) none 0px;
   text-decoration: rgb(124, 133, 8);
   text-decoration-color: rgb(124, 133, 8);
 }
 
-html[saved-theme="light"] body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
   text-decoration: rgb(65, 180, 180);
@@ -439,7 +439,7 @@ html[saved-theme="light"] body .page article p > strong, strong {
 html[saved-theme="light"] body .text-highlight {
   background-color: rgba(82, 157, 82, 0.694);
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
   text-decoration: underline 1px rgb(82, 157, 82);
@@ -447,7 +447,7 @@ html[saved-theme="light"] body .text-highlight {
   text-decoration-thickness: 1px;
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
   text-decoration: underline 1px rgb(82, 157, 82);
@@ -483,7 +483,7 @@ html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-re
   background-color: rgb(7, 14, 0);
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   background-color: rgb(7, 14, 0);
 }
 
@@ -509,7 +509,7 @@ html[saved-theme="light"] body h2 {
   color: rgb(190, 112, 112);
 }
 
-html[saved-theme="light"] body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: rgb(82, 157, 82);
 }
 

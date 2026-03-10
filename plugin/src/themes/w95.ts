@@ -226,11 +226,11 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(189, 190, 189);
 }
 
-html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
   background-color: rgb(189, 190, 189);
 }
 
@@ -250,28 +250,28 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(189, 190, 189);
 }`,
-    typography: `html body .page article p > b, b {
+    typography: `html body .page article p > b, html b {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html body .page article p > em, em {
+html body .page article p > em, html em {
   color: rgb(52, 59, 88);
   outline: rgb(52, 59, 88) none 0px;
   text-decoration: rgb(52, 59, 88);
   text-decoration-color: rgb(52, 59, 88);
 }
 
-html body .page article p > i, i {
+html body .page article p > i, html i {
   color: rgb(52, 59, 88);
   outline: rgb(52, 59, 88) none 0px;
   text-decoration: rgb(52, 59, 88);
   text-decoration-color: rgb(52, 59, 88);
 }
 
-html body .page article p > strong, strong {
+html body .page article p > strong, html strong {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
@@ -281,14 +281,14 @@ html body .page article p > strong, strong {
 html body .text-highlight {
   background-color: rgba(72, 94, 48, 0.4);
 }`,
-    links: `html body a.external, footer a {
+    links: `html body a.external, html footer a {
   color: rgb(0, 0, 122);
   outline: rgb(0, 0, 122) none 0px;
   text-decoration: underline rgb(0, 0, 122);
   text-decoration-color: rgb(0, 0, 122);
 }
 
-html body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(0, 0, 122);
   outline: rgb(0, 0, 122) none 0px;
   text-decoration: underline rgb(0, 0, 122);
@@ -363,7 +363,7 @@ html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-titl
   border-top-color: rgb(112, 112, 112);
 }
 
-html body pre > code, pre:has(> code) {
+html body pre > code, html pre:has(> code) {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
@@ -407,7 +407,7 @@ html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(189, 190, 189);
 }
 
-html body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 122, 0.1);
   border-bottom-color: rgba(0, 0, 122, 0.15);
   border-left-color: rgba(0, 0, 122, 0.15);
@@ -427,7 +427,7 @@ html body h2 {
   color: rgb(52, 84, 138);
 }
 
-html body h2.page-title, h2.page-title a {
+html body h2.page-title, html h2.page-title a {
   color: rgb(52, 84, 138);
 }
 

@@ -137,11 +137,11 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(26, 27, 38);
 }
 
-html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
   background-color: rgb(26, 27, 38);
 }
 
@@ -161,28 +161,28 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(26, 27, 38);
 }`,
-    typography: `html body .page article p > b, b {
+    typography: `html body .page article p > b, html b {
   color: rgb(187, 154, 247);
   outline: rgb(187, 154, 247) none 0px;
   text-decoration: rgb(187, 154, 247);
   text-decoration-color: rgb(187, 154, 247);
 }
 
-html body .page article p > em, em {
+html body .page article p > em, html em {
   color: rgb(154, 165, 206);
   outline: rgb(154, 165, 206) none 0px;
   text-decoration: rgb(154, 165, 206);
   text-decoration-color: rgb(154, 165, 206);
 }
 
-html body .page article p > i, i {
+html body .page article p > i, html i {
   color: rgb(154, 165, 206);
   outline: rgb(154, 165, 206) none 0px;
   text-decoration: rgb(154, 165, 206);
   text-decoration-color: rgb(154, 165, 206);
 }
 
-html body .page article p > strong, strong {
+html body .page article p > strong, html strong {
   color: rgb(187, 154, 247);
   outline: rgb(187, 154, 247) none 0px;
   text-decoration: rgb(187, 154, 247);
@@ -232,7 +232,7 @@ html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-titl
   border-top-color: rgb(153, 153, 153);
 }
 
-html body pre > code, pre:has(> code) {
+html body pre > code, html pre:has(> code) {
   background-color: rgb(26, 27, 38);
   border-bottom-color: rgb(153, 153, 153);
   border-left-color: rgb(153, 153, 153);
@@ -279,7 +279,7 @@ html body h2 {
   color: rgb(122, 162, 247);
 }
 
-html body h2.page-title, h2.page-title a {
+html body h2.page-title, html h2.page-title a {
   color: rgb(122, 162, 247);
 }
 

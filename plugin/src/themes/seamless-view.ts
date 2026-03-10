@@ -199,11 +199,11 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(30, 30, 30);
 }
 
-html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
   background-color: rgb(42, 42, 42);
 }
 
@@ -218,14 +218,14 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(42, 42, 42);
 }`,
-    typography: `html body .page article p > em, em {
+    typography: `html body .page article p > em, html em {
   color: rgb(228, 212, 129);
   outline: rgb(228, 212, 129) none 0px;
   text-decoration: rgb(228, 212, 129);
   text-decoration-color: rgb(228, 212, 129);
 }
 
-html body .page article p > i, i {
+html body .page article p > i, html i {
   color: rgb(228, 212, 129);
   outline: rgb(228, 212, 129) none 0px;
   text-decoration: rgb(228, 212, 129);
@@ -242,14 +242,14 @@ html body del {
   text-decoration: line-through rgb(179, 179, 179);
   text-decoration-color: rgb(179, 179, 179);
 }`,
-    links: `html body a.external, footer a {
+    links: `html body a.external, html footer a {
   color: rgb(132, 171, 63);
   outline: rgb(132, 171, 63) none 0px;
   text-decoration: underline rgb(132, 171, 63);
   text-decoration-color: rgb(132, 171, 63);
 }
 
-html body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(132, 171, 63);
   outline: rgb(132, 171, 63) none 0px;
   text-decoration: underline rgb(132, 171, 63);
@@ -305,7 +305,7 @@ html body pre > code [data-highlighted-chars] {
   border-top-color: rgb(116, 185, 241);
 }
 
-html body pre > code, pre:has(> code) {
+html body pre > code, html pre:has(> code) {
   background-color: rgb(54, 54, 54);
   overflow-x: hidden;
   padding-bottom: 21px;
@@ -406,7 +406,7 @@ html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(30, 30, 30);
 }
 
-html body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(110, 148, 56, 0.1);
   border-bottom-color: rgba(110, 148, 56, 0.15);
   border-left-color: rgba(110, 148, 56, 0.15);
@@ -426,7 +426,7 @@ html body h2 {
   color: rgb(228, 212, 129);
 }
 
-html body h2.page-title, h2.page-title a {
+html body h2.page-title, html h2.page-title a {
   color: rgb(179, 179, 179);
 }
 
