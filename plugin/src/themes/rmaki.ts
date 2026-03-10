@@ -75,19 +75,19 @@ html body {
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(28, 28, 33);
 }`,
-    typography: `html body .page article p > b, b {
+    typography: `html body .page article p > b, html b {
   font-family: "Fira Code", monospace;
 }
 
-html body .page article p > em, em {
+html body .page article p > em, html em {
   font-family: "Fira Code", monospace;
 }
 
-html body .page article p > i, i {
+html body .page article p > i, html i {
   font-family: "Fira Code", monospace;
 }
 
-html body .page article p > strong, strong {
+html body .page article p > strong, html strong {
   font-family: "Fira Code", monospace;
 }
 
@@ -107,7 +107,7 @@ html body del {
 html body p {
   font-family: "Fira Code", monospace;
 }`,
-    links: `html body a.external, footer a {
+    links: `html body a.external, html footer a {
   color: rgb(218, 231, 246);
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
@@ -115,7 +115,7 @@ html body p {
   text-decoration-color: rgb(135, 232, 206);
 }
 
-html body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   font-family: "Fira Code", monospace;
   text-decoration: underline rgb(135, 232, 206);
   text-decoration-color: rgb(135, 232, 206);
@@ -303,7 +303,7 @@ html body .search > .search-container > .search-space > * {
   font-family: "Fira Code", monospace;
 }
 
-html body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 25.2px;
   border-bottom-right-radius: 25.2px;
   border-top-left-radius: 25.2px;
@@ -320,7 +320,7 @@ html body h2 {
   font-family: "Fira Code", monospace;
 }
 
-html body h2.page-title, h2.page-title a {
+html body h2.page-title, html h2.page-title a {
   font-family: "Fira Code", monospace;
 }
 

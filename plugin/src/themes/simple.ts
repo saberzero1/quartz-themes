@@ -91,19 +91,19 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(50, 50, 50);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -118,11 +118,11 @@ html[saved-theme="dark"] body del {
 html[saved-theme="dark"] body p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -177,7 +177,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   border-top-left-radius: 24px;
@@ -193,7 +193,7 @@ html[saved-theme="dark"] body h2 {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -389,19 +389,19 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(238, 238, 238);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -416,11 +416,11 @@ html[saved-theme="light"] body del {
 html[saved-theme="light"] body p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -461,7 +461,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   border-top-left-radius: 24px;
@@ -477,7 +477,7 @@ html[saved-theme="light"] body h2 {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 

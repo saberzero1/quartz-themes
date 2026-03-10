@@ -331,11 +331,11 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(48, 48, 48);
 }
 
-html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   background-color: rgb(30, 30, 32);
 }
 
@@ -353,14 +353,14 @@ html[saved-theme="dark"] body div#quartz-root {
     typography: `html[saved-theme="dark"] body p {
   font-family: system-ui;
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(98, 160, 234);
   outline: rgb(98, 160, 234) none 0px;
   text-decoration: underline rgb(98, 160, 234);
   text-decoration-color: rgb(98, 160, 234);
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(98, 160, 234);
   outline: rgb(98, 160, 234) none 0px;
   text-decoration: underline rgb(98, 160, 234);
@@ -417,7 +417,7 @@ html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(246, 211, 45);
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: rgb(48, 48, 48);
 }
 
@@ -657,11 +657,11 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-top-right-radius: 6px;
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   background-color: rgba(136, 136, 136, 0.2);
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -673,7 +673,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   border-bottom-color: rgb(48, 48, 48);
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   background-color: rgba(136, 136, 136, 0.2);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -681,7 +681,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   border-top-right-radius: 6px;
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   background-color: rgba(136, 136, 136, 0.2);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -689,7 +689,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   border-top-right-radius: 6px;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(92, 161, 245, 0.1);
   border-bottom-color: rgba(92, 161, 245, 0.15);
   border-bottom-left-radius: 24.36px;
@@ -1157,11 +1157,11 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(235, 235, 235);
 }
 
-html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
   background-color: rgb(250, 250, 250);
 }
 
@@ -1179,14 +1179,14 @@ html[saved-theme="light"] body div#quartz-root {
     typography: `html[saved-theme="light"] body p {
   font-family: system-ui;
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(28, 113, 216);
   outline: rgb(28, 113, 216) none 0px;
   text-decoration: underline rgb(28, 113, 216);
   text-decoration-color: rgb(28, 113, 216);
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(28, 113, 216);
   outline: rgb(28, 113, 216) none 0px;
   text-decoration: underline rgb(28, 113, 216);
@@ -1243,7 +1243,7 @@ html[saved-theme="light"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(229, 165, 10);
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   background-color: rgb(235, 235, 235);
 }
 
@@ -1483,11 +1483,11 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-top-right-radius: 6px;
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   background-color: rgba(136, 136, 136, 0.2);
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -1499,7 +1499,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-bottom-color: rgb(235, 235, 235);
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   background-color: rgba(136, 136, 136, 0.2);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1507,7 +1507,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   border-top-right-radius: 6px;
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   background-color: rgba(136, 136, 136, 0.2);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1515,7 +1515,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   border-top-right-radius: 6px;
 }
 
-html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(92, 161, 245, 0.1);
   border-bottom-color: rgba(92, 161, 245, 0.15);
   border-bottom-left-radius: 24.36px;

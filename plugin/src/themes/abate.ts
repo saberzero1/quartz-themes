@@ -192,11 +192,11 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(253, 246, 227);
 }
 
-html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
   background-color: rgb(253, 246, 227);
 }
 
@@ -241,7 +241,7 @@ html body pre > code [data-highlighted-chars] {
   border-top-color: rgb(250, 189, 47);
 }
 
-html body pre > code, pre:has(> code) {
+html body pre > code, html pre:has(> code) {
   background-color: rgb(253, 246, 227);
 }
 
@@ -412,7 +412,7 @@ html body .callout[data-callout="warning"] {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
 }
 
-html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
   background-color: rgba(40, 40, 40, 0.08);
 }
 
@@ -420,11 +420,11 @@ html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(253, 246, 227);
 }
 
-html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   background-color: rgba(40, 40, 40, 0.08);
 }
 
-html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
   background-color: rgba(40, 40, 40, 0.08);
 }
 
@@ -436,7 +436,7 @@ html body h2 {
   color: rgb(18, 89, 122);
 }
 
-html body h2.page-title, h2.page-title a {
+html body h2.page-title, html h2.page-title a {
   color: rgb(0, 0, 0);
 }
 

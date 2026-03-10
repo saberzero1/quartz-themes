@@ -213,11 +213,11 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   background-color: rgb(12, 12, 12);
 }
 
@@ -241,7 +241,7 @@ html[saved-theme="dark"] body div#quartz-root {
     typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: rgb(138, 92, 245);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(159, 160, 164);
   outline: rgb(159, 160, 164) none 0px;
   text-decoration: underline rgb(159, 160, 164);
@@ -249,7 +249,7 @@ html[saved-theme="dark"] body div#quartz-root {
   transition: opacity 0.15s ease-in-out;
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(159, 160, 164);
   outline: rgb(159, 160, 164) none 0px;
   text-decoration: underline rgb(159, 160, 164);
@@ -363,7 +363,7 @@ html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(105, 238, 215);
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: rgb(12, 12, 12);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -568,11 +568,11 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-top-right-radius: 16px;
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   background-color: color(srgb 0.3 0.3 0.3);
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgba(89, 89, 89, 0.518);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -587,7 +587,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   border-bottom-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   background-color: color(srgb 0.3 0.3 0.3);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -595,7 +595,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   border-top-right-radius: 16px;
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   background-color: color(srgb 0.3 0.3 0.3);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -607,7 +607,7 @@ html[saved-theme="dark"] body a.internal.tag-link::before {
   color: rgba(89, 89, 89, 0.518);
 }
 
-html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: rgb(138, 92, 245);
 }
 
@@ -959,11 +959,11 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
   background-color: rgb(165, 170, 182);
 }
 
@@ -987,7 +987,7 @@ html[saved-theme="light"] body div#quartz-root {
     typography: `html[saved-theme="light"] body .text-highlight {
   background-color: rgb(138, 92, 245);
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(95, 99, 105);
   outline: rgb(95, 99, 105) none 0px;
   text-decoration: underline rgb(95, 99, 105);
@@ -995,7 +995,7 @@ html[saved-theme="light"] body div#quartz-root {
   transition: opacity 0.15s ease-in-out;
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(95, 99, 105);
   outline: rgb(95, 99, 105) none 0px;
   text-decoration: underline rgb(95, 99, 105);
@@ -1109,7 +1109,7 @@ html[saved-theme="light"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(105, 238, 215);
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   background-color: rgb(165, 170, 182);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1322,11 +1322,11 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-top-right-radius: 16px;
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   background-color: color(srgb 0.395294 0.411765 0.450196);
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgba(37, 37, 37, 0.525);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1341,7 +1341,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-bottom-color: rgb(144, 150, 164);
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   background-color: color(srgb 0.395294 0.411765 0.450196);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1349,7 +1349,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   border-top-right-radius: 16px;
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   background-color: color(srgb 0.395294 0.411765 0.450196);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1361,7 +1361,7 @@ html[saved-theme="light"] body a.internal.tag-link::before {
   color: rgba(37, 37, 37, 0.525);
 }
 
-html[saved-theme="light"] body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: rgb(138, 92, 245);
 }
 

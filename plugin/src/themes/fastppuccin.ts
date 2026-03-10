@@ -383,12 +383,12 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(24, 24, 37);
   color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   background-color: rgb(30, 30, 46);
   color: rgb(198, 208, 245);
 }
@@ -412,28 +412,28 @@ html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(30, 30, 46);
   color: rgb(198, 208, 245);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(198, 208, 245);
   outline: rgb(198, 208, 245) none 0px;
   text-decoration: rgb(198, 208, 245);
   text-decoration-color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(198, 208, 245);
   outline: rgb(198, 208, 245) none 0px;
   text-decoration: rgb(198, 208, 245);
   text-decoration-color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(198, 208, 245);
   outline: rgb(198, 208, 245) none 0px;
   text-decoration: rgb(198, 208, 245);
   text-decoration-color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(198, 208, 245);
   outline: rgb(198, 208, 245) none 0px;
   text-decoration: rgb(198, 208, 245);
@@ -461,14 +461,14 @@ html[saved-theme="dark"] body p {
   text-decoration: rgb(142, 149, 179);
   text-decoration-color: rgb(142, 149, 179);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(245, 224, 220);
   outline: rgb(245, 224, 220) none 0px;
   text-decoration: underline rgb(245, 224, 220);
   text-decoration-color: rgb(245, 224, 220);
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(245, 224, 220);
   outline: rgb(245, 224, 220) none 0px;
   text-decoration: underline rgb(245, 224, 220);
@@ -586,7 +586,7 @@ html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(249, 226, 175);
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: rgb(17, 17, 27);
   border-bottom-color: rgb(49, 50, 68);
   border-left-color: rgb(49, 50, 68);
@@ -939,16 +939,16 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-top-color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
   color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   background-color: rgba(198, 208, 245, 0.075);
   color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(105, 109, 134);
   border-left-color: rgb(105, 109, 134);
   border-right-color: rgb(105, 109, 134);
@@ -962,7 +962,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   border-top-color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   background-color: rgba(198, 208, 245, 0.075);
   border-bottom-color: rgb(198, 208, 245);
   border-left-color: rgb(198, 208, 245);
@@ -971,12 +971,12 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   background-color: rgba(198, 208, 245, 0.075);
   color: rgb(198, 208, 245);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(245, 224, 220, 0.1);
   border-bottom-color: rgba(245, 224, 220, 0.15);
   border-left-color: rgba(245, 224, 220, 0.15);
@@ -996,7 +996,7 @@ html[saved-theme="dark"] body h2 {
   color: rgb(250, 179, 135);
 }
 
-html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: rgb(198, 208, 245);
 }
 
@@ -1630,12 +1630,12 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(230, 233, 239);
   color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
   background-color: rgb(239, 241, 245);
   color: rgb(76, 79, 105);
 }
@@ -1659,28 +1659,28 @@ html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(239, 241, 245);
   color: rgb(76, 79, 105);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(76, 79, 105);
   outline: rgb(76, 79, 105) none 0px;
   text-decoration: rgb(76, 79, 105);
   text-decoration-color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(76, 79, 105);
   outline: rgb(76, 79, 105) none 0px;
   text-decoration: rgb(76, 79, 105);
   text-decoration-color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(76, 79, 105);
   outline: rgb(76, 79, 105) none 0px;
   text-decoration: rgb(76, 79, 105);
   text-decoration-color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(76, 79, 105);
   outline: rgb(76, 79, 105) none 0px;
   text-decoration: rgb(76, 79, 105);
@@ -1708,14 +1708,14 @@ html[saved-theme="light"] body p {
   text-decoration: rgb(124, 127, 147);
   text-decoration-color: rgb(124, 127, 147);
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(222, 149, 132);
   outline: rgb(222, 149, 132) none 0px;
   text-decoration: underline rgb(222, 149, 132);
   text-decoration-color: rgb(222, 149, 132);
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(222, 149, 132);
   outline: rgb(222, 149, 132) none 0px;
   text-decoration: underline rgb(222, 149, 132);
@@ -1833,7 +1833,7 @@ html[saved-theme="light"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(228, 147, 32);
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   background-color: rgb(220, 224, 232);
   border-bottom-color: rgb(188, 192, 204);
   border-left-color: rgb(188, 192, 204);
@@ -2186,16 +2186,16 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-top-color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
   color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   background-color: rgba(76, 79, 105, 0.075);
   color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(156, 160, 176);
   border-left-color: rgb(156, 160, 176);
   border-right-color: rgb(156, 160, 176);
@@ -2209,7 +2209,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-top-color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   background-color: rgba(76, 79, 105, 0.075);
   border-bottom-color: rgb(76, 79, 105);
   border-left-color: rgb(76, 79, 105);
@@ -2218,12 +2218,12 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   background-color: rgba(76, 79, 105, 0.075);
   color: rgb(76, 79, 105);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(222, 149, 132, 0.1);
   border-bottom-color: rgba(222, 149, 132, 0.15);
   border-left-color: rgba(222, 149, 132, 0.15);
@@ -2243,7 +2243,7 @@ html[saved-theme="light"] body h2 {
   color: rgb(254, 100, 11);
 }
 
-html[saved-theme="light"] body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: rgb(76, 79, 105);
 }
 

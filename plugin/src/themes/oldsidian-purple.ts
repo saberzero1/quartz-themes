@@ -80,7 +80,7 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
   background-color: rgb(38, 38, 38);
 }
 
@@ -90,14 +90,14 @@ html body div#quartz-root {
     typography: `html body .text-highlight {
   background-color: rgb(108, 65, 216);
 }`,
-    links: `html body a.external, footer a {
+    links: `html body a.external, html footer a {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
   text-decoration: underline rgb(129, 76, 255);
   text-decoration-color: rgb(129, 76, 255);
 }
 
-html body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
   text-decoration: underline rgb(129, 76, 255);
@@ -136,7 +136,7 @@ html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-titl
   background-color: rgb(22, 22, 22);
 }
 
-html body pre > code, pre:has(> code) {
+html body pre > code, html pre:has(> code) {
   background-color: rgb(22, 22, 22);
 }
 

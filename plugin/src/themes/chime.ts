@@ -337,12 +337,12 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(47, 40, 55);
   color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(160, 167, 196);
 }
@@ -367,7 +367,7 @@ html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(59, 51, 71);
   color: rgb(160, 167, 196);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(160, 167, 196) none 0px;
@@ -375,7 +375,7 @@ html[saved-theme="dark"] body div#quartz-root {
   text-decoration-color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(160, 167, 196) none 0px;
@@ -383,7 +383,7 @@ html[saved-theme="dark"] body .page article p > em, em {
   text-decoration-color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(160, 167, 196) none 0px;
@@ -391,7 +391,7 @@ html[saved-theme="dark"] body .page article p > i, i {
   text-decoration-color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(160, 167, 196) none 0px;
@@ -423,12 +423,12 @@ html[saved-theme="dark"] body p {
   text-decoration: rgb(127, 131, 161);
   text-decoration-color: rgb(127, 131, 161);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   font-family: "??", "??", Arima, cursive;
   text-decoration: rgb(166, 138, 249);
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "??", "??", Arima, cursive;
   text-decoration: rgb(166, 138, 249);
 }
@@ -582,7 +582,7 @@ html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(220, 180, 111);
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: rgb(65, 59, 78);
   border-bottom-color: rgb(78, 69, 96);
   border-bottom-left-radius: 8px;
@@ -1017,15 +1017,15 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-top-right-radius: 8px;
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
   color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(98, 111, 134);
   border-left-color: rgb(98, 111, 134);
   border-right-color: rgb(98, 111, 134);
@@ -1039,7 +1039,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   border-top-color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: rgb(160, 167, 196);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1051,7 +1051,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -1059,7 +1059,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", "??", Arima, cursive;
 }
 
@@ -1073,7 +1073,7 @@ html[saved-theme="dark"] body h2 {
   font-family: "??", "??", Arima, cursive;
 }
 
-html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
 }
@@ -1738,12 +1738,12 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(244, 235, 235);
   color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(89, 79, 103);
 }
@@ -1768,7 +1768,7 @@ html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(248, 243, 242);
   color: rgb(89, 79, 103);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
@@ -1776,7 +1776,7 @@ html[saved-theme="light"] body div#quartz-root {
   text-decoration-color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
@@ -1784,7 +1784,7 @@ html[saved-theme="light"] body .page article p > em, em {
   text-decoration-color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
@@ -1792,7 +1792,7 @@ html[saved-theme="light"] body .page article p > i, i {
   text-decoration-color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
@@ -1824,7 +1824,7 @@ html[saved-theme="light"] body p {
   text-decoration: rgb(104, 90, 104);
   text-decoration-color: rgb(104, 90, 104);
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(193, 139, 172);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(193, 139, 172) none 0px;
@@ -1832,7 +1832,7 @@ html[saved-theme="light"] body p {
   text-decoration-color: rgb(193, 139, 172);
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(193, 139, 172);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(193, 139, 172) none 0px;
@@ -1992,7 +1992,7 @@ html[saved-theme="light"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(220, 180, 111);
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   background-color: rgb(240, 233, 228);
   border-bottom-color: rgba(206, 194, 197, 0.467);
   border-bottom-left-radius: 8px;
@@ -2429,15 +2429,15 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-top-right-radius: 8px;
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
   color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(182, 164, 178);
   border-left-color: rgb(182, 164, 178);
   border-right-color: rgb(182, 164, 178);
@@ -2451,7 +2451,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-top-color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-color: rgb(89, 79, 103);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2463,7 +2463,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -2471,7 +2471,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(193, 139, 172, 0.1);
   border-bottom-color: rgba(193, 139, 172, 0.15);
   border-left-color: rgba(193, 139, 172, 0.15);
@@ -2494,7 +2494,7 @@ html[saved-theme="light"] body h2 {
   font-family: "??", "??", Arima, cursive;
 }
 
-html[saved-theme="light"] body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
 }

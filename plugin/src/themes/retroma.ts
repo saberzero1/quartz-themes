@@ -619,11 +619,11 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: oklch(0.24 0.0651598 292.488);
 }
 
-html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   background-color: oklch(0.28 0.0651598 262.488);
 }
 
@@ -644,28 +644,28 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: oklch(0.28 0.0651598 262.488);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: oklch(0.8 0.08 32.4879);
   outline: oklch(0.8 0.08 32.4879) none 0px;
   text-decoration: oklch(0.8 0.08 32.4879);
   text-decoration-color: oklch(0.8 0.08 32.4879);
 }
 
-html[saved-theme="dark"] body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: oklch(0.8 0.08 132.488);
   outline: oklch(0.8 0.08 132.488) none 0px;
   text-decoration: oklch(0.8 0.08 132.488);
   text-decoration-color: oklch(0.8 0.08 132.488);
 }
 
-html[saved-theme="dark"] body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: oklch(0.8 0.08 132.488);
   outline: oklch(0.8 0.08 132.488) none 0px;
   text-decoration: oklch(0.8 0.08 132.488);
   text-decoration-color: oklch(0.8 0.08 132.488);
 }
 
-html[saved-theme="dark"] body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: oklch(0.8 0.08 32.4879);
   outline: oklch(0.8 0.08 32.4879) none 0px;
   text-decoration: oklch(0.8 0.08 32.4879);
@@ -675,7 +675,7 @@ html[saved-theme="dark"] body .page article p > strong, strong {
 html[saved-theme="dark"] body .text-highlight {
   background-color: oklch(0.5 0.08 322.488 / 0.75);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: oklch(0.7 0.08 26.4069);
   font-weight: 700;
   outline: oklch(0.7 0.08 26.4069) none 0px;
@@ -683,7 +683,7 @@ html[saved-theme="dark"] body .text-highlight {
   text-decoration-color: oklch(0.7 0.08 26.4069);
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: oklch(0.8 0.08 292.488);
   font-weight: 700;
   outline: oklch(0.8 0.08 292.488) none 0px;
@@ -804,7 +804,7 @@ html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
   border-top-color: oklch(0.7 0.08 102.472);
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: oklch(0.1 0.0651598 292.488 / 0.5);
   border-bottom-color: oklch(0.24 0.0651598 292.488);
   border-bottom-left-radius: 12px;
@@ -1018,7 +1018,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-top-right-radius: 8px;
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: oklch(0.28 0.0651598 262.488);
   border-bottom-style: ridge;
   border-bottom-width: 4px;
@@ -1052,21 +1052,21 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   border-top-width: 2px;
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-width: 1px;
@@ -1090,7 +1090,7 @@ html[saved-theme="dark"] body h2 {
   color: oklch(0.7 0.08 64.0404);
 }
 
-html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: oklch(0.7 0.08 26.4069);
 }
 
@@ -1954,11 +1954,11 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: oklch(0.8 0.0756825 293.56);
 }
 
-html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
   background-color: oklch(0.93 0.0756825 263.56);
 }
 
@@ -1979,28 +1979,28 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: oklch(0.93 0.0756825 263.56);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: oklch(0.35 0.12 33.5595);
   outline: oklch(0.35 0.12 33.5595) none 0px;
   text-decoration: oklch(0.35 0.12 33.5595);
   text-decoration-color: oklch(0.35 0.12 33.5595);
 }
 
-html[saved-theme="light"] body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: oklch(0.35 0.12 133.56);
   outline: oklch(0.35 0.12 133.56) none 0px;
   text-decoration: oklch(0.35 0.12 133.56);
   text-decoration-color: oklch(0.35 0.12 133.56);
 }
 
-html[saved-theme="light"] body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: oklch(0.35 0.12 133.56);
   outline: oklch(0.35 0.12 133.56) none 0px;
   text-decoration: oklch(0.35 0.12 133.56);
   text-decoration-color: oklch(0.35 0.12 133.56);
 }
 
-html[saved-theme="light"] body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: oklch(0.35 0.12 33.5595);
   outline: oklch(0.35 0.12 33.5595) none 0px;
   text-decoration: oklch(0.35 0.12 33.5595);
@@ -2010,7 +2010,7 @@ html[saved-theme="light"] body .page article p > strong, strong {
 html[saved-theme="light"] body .text-highlight {
   background-color: oklch(0.8 0.12 323.56 / 0.75);
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: oklch(0.5 0.12 26.4069);
   font-weight: 700;
   outline: oklch(0.5 0.12 26.4069) none 0px;
@@ -2018,7 +2018,7 @@ html[saved-theme="light"] body .text-highlight {
   text-decoration-color: oklch(0.5 0.12 26.4069);
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: oklch(0.35 0.12 293.56);
   font-weight: 700;
   outline: oklch(0.35 0.12 293.56) none 0px;
@@ -2139,7 +2139,7 @@ html[saved-theme="light"] body pre > code [data-highlighted-chars] {
   border-top-color: oklch(0.5 0.12 102.472);
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   background-color: oklch(0.85 0.0756825 293.56 / 0.5);
   border-bottom-color: oklch(0.8 0.0756825 293.56);
   border-bottom-left-radius: 12px;
@@ -2353,7 +2353,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-top-right-radius: 8px;
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: oklch(0.93 0.0756825 263.56);
   border-bottom-style: ridge;
   border-bottom-width: 4px;
@@ -2387,21 +2387,21 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-top-width: 2px;
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-width: 1px;
@@ -2425,7 +2425,7 @@ html[saved-theme="light"] body h2 {
   color: oklch(0.5 0.12 64.0404);
 }
 
-html[saved-theme="light"] body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: oklch(0.5 0.12 26.4069);
 }
 
