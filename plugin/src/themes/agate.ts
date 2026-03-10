@@ -5,10 +5,9 @@ export const theme: ThemeData = {
     name: "agate",
     modes: ["light"],
     variations: [],
-    fonts: ["noto-serif","pretendard","noto-sans-kr","itc-slimbach"],
+    fonts: ["noto-serif", "pretendard", "noto-sans-kr", "itc-slimbach"],
   },
-  dark: {
-  },
+  dark: {},
   light: {
     base: `:root:root {
   --accent-color: 55, 0, 255;
