@@ -56,7 +56,7 @@ export const theme: ThemeData = {
   --code-comment: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
   --code-normal: #faf4ed !important;
   --code-punctuation: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --codeFont: '??', "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --codeFont: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
   --color-base-00: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
   --color-base-05: color-mix(in srgb, rgb(25, 11, 45) 40%, #000) !important;
@@ -81,14 +81,14 @@ export const theme: ThemeData = {
   --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)), inset 0 0 0 1px color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
   --file-header-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
   --file-header-background-focused: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --file-header-font: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --flair-background: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
   --flair-color: #faf4ed !important;
   --font-callout-theme: "Computer Modern", "Sans-Serif" !important;
-  --font-interface: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif !important;
   --font-mermaid: "Computer Modern", "Inter", Sans-Serif !important;
-  --font-monospace: '??', "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace !important;
   --font-text: "Computer Modern", "Inter", Sans-Serif !important;
   --footnote-divider-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
@@ -144,10 +144,10 @@ export const theme: ThemeData = {
   --metadata-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
   --metadata-divider-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
   --metadata-input-background-active: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --metadata-input-font: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: #faf4ed !important;
   --metadata-label-background-active: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --metadata-label-font: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
   --metadata-label-text-color-hover: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
   --metadata-property-background-active: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
@@ -1229,13 +1229,13 @@ html[saved-theme="dark"] body sup {
   light: {
     base: `:root:root {
   --bodyFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --codeFont: '??', "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --file-header-font: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --file-header-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-callout-theme: "Computer Modern", "Sans-Serif" !important;
-  --font-interface: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Jetbrains Mono", "Inter", Sans-Serif !important;
   --font-mermaid: "Computer Modern", "Inter", Sans-Serif !important;
-  --font-monospace: '??', "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace !important;
   --font-text: "Computer Modern", "Inter", Sans-Serif !important;
   --h1-size: 24px !important;
@@ -1251,8 +1251,8 @@ html[saved-theme="dark"] body sup {
   --lum: 11% !important;
   --lum-bg: 95% !important;
   --lum-fg: 50% !important;
-  --metadata-input-font: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font: '??', "Jetbrains Mono", "Inter", Sans-Serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --sat-bg: 60% !important;
   --sat-fg: 100% !important;
   --tab-curve: 10px !important;

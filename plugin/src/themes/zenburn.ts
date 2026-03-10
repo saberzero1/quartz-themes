@@ -48,7 +48,7 @@ export const theme: ThemeData = {
   --blue-light: #8cb0d3 !important;
   --blue-purple: #c0bed1 !important;
   --blur-background: color-mix(in srgb, #484848 65%, transparent) linear-gradient(#484848, color-mix(in srgb, #484848 65%, transparent)) !important;
-  --bodyFont: '??', "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+  --bodyFont: "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --canvas-background: #3f3f3f !important;
   --canvas-card-label-color: #f8f5ed !important;
@@ -64,7 +64,7 @@ export const theme: ThemeData = {
   --code-comment: #f8f5ed !important;
   --code-normal: #f8f5ed !important;
   --code-punctuation: #e8d7b9 !important;
-  --codeFont: '??', "Inconsolata", "Source Code Pro", ui-monospace, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --codeFont: "Inconsolata", "Source Code Pro", ui-monospace, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: #f8f5ed !important;
   --collapse-icon-color-collapsed: #bca3a3 !important;
   --color-text-weeknum: #bca3a3 !important;
@@ -85,13 +85,13 @@ export const theme: ThemeData = {
   --flair-color: #f8f5ed !important;
   --font-header-text-theme: "Inter Medium", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     sans-serif !important;
-  --font-mermaid: '??', "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+  --font-mermaid: "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: '??', "Inconsolata", "Source Code Pro", ui-monospace, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace: "Inconsolata", "Source Code Pro", ui-monospace, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "Inconsolata", "Source Code Pro", ui-monospace, monospace !important;
-  --font-print: '??', '??', "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
-    sans-serif, 'Arial' !important;
-  --font-text: '??', "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+  --font-print: "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+    sans-serif, Arial' !important;
+  --font-text: "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     sans-serif !important;
@@ -123,7 +123,7 @@ export const theme: ThemeData = {
   --h6-color: #f8f5ed !important;
   --h6-size: 1.12em !important;
   --h6-weight: 400 !important;
-  --headerFont: '??', "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+  --headerFont: "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #f8f5ed !important;
   --highlight: #6699cc !important;
@@ -270,7 +270,7 @@ export const theme: ThemeData = {
   --text-title-h5: #f8f5ed !important;
   --text-title-h6: #f8f5ed !important;
   --textHighlight: #6699cc !important;
-  --titleFont: '??', "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+  --titleFont: "Inter Light", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #4f4f4f !important;
   --titlebar-background-focused: #0f0f0f !important;

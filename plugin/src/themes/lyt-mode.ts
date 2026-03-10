@@ -51,8 +51,8 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: transparent !important;
   --blockquote-border-color: rgb(145, 110, 201) !important;
   --blur-background: color-mix(in srgb, rgb(23, 24, 28) 65%, transparent) linear-gradient(rgb(23, 24, 28), color-mix(in srgb, rgb(23, 24, 28) 65%, transparent)) !important;
-  --bodyFont: '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
+  --bodyFont: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
     Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: rgb(219, 206, 132) !important;
   --bold-italic-color: rgb(219, 222, 230) !important;
@@ -96,7 +96,7 @@ export const theme: ThemeData = {
   --code-string: rgb(157, 226, 161) !important;
   --code-tag: rgb(199, 133, 161) !important;
   --code-value: rgb(130, 183, 186) !important;
-  --codeFont: '??', 'DM Mono', 'Fira Code', Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --codeFont: DM Mono, Fira Code, Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: rgb(124, 132, 156) !important;
   --collapse-icon-color-collapsed: rgb(185, 195, 223) !important;
   --color-accent: rgb(145, 110, 201) !important;
@@ -258,9 +258,9 @@ export const theme: ThemeData = {
   --embed-padding: 0 0 0 20px !important;
   --file-header-background: rgb(45, 48, 57) !important;
   --file-header-background-focused: rgb(45, 48, 57) !important;
-  --file-header-font: '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
-    Helvetica, Arial, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
+    Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 16px !important;
   --file-header-font-weight: 500 !important;
   --file-margins: 32px !important;
@@ -268,27 +268,27 @@ export const theme: ThemeData = {
   --flair-color: rgb(185, 195, 223) !important;
   --font-big: 1.15em !important;
   --font-body: 1em !important;
-  --font-interface: '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
-    Helvetica, Arial, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
+    Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: 'DM Sans', 'Inter', -apple-system
     BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
     Helvetica, Arial, sans-serif !important;
-  --font-mermaid: '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
+  --font-mermaid: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
     Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-mono: 'DM Mono', 'Fira Code', Courier, monospace !important;
-  --font-monospace: '??', 'DM Mono', 'Fira Code', Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace: DM Mono, Fira Code, Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: 'DM Mono', 'Fira Code', Courier, monospace !important;
-  --font-print: '??', '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
-    Helvetica, Arial, sans-serif, 'Arial' !important;
+  --font-print: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
+    Helvetica, Arial, sans-serif, Arial' !important;
   --font-sans: 'DM Sans', 'Inter', -apple-system
     BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
     Helvetica, Arial, sans-serif !important;
   --font-smallish: 0.89em !important;
-  --font-text: '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
+  --font-text: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
     Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: 'DM Sans', 'Inter', -apple-system
     BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
@@ -333,8 +333,8 @@ export const theme: ThemeData = {
   --h6-size: 1.05rem !important;
   --header-shadow-color: rgb(31, 31, 31) !important;
   --header-shadow-size: 0px 4px 3px !important;
-  --headerFont: '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
+  --headerFont: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
     Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --highlight: rgba(255, 252, 59, 0.08) !important;
   --hr-color: rgb(67, 72, 81) !important;
@@ -384,14 +384,14 @@ export const theme: ThemeData = {
   --metadata-border-color: rgba(100, 100, 100, 0.25) !important;
   --metadata-divider-color: rgba(100, 100, 100, 0.25) !important;
   --metadata-input-background-active: transparent !important;
-  --metadata-input-font: '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
-    Helvetica, Arial, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
+    Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: rgb(185, 195, 223) !important;
   --metadata-label-background-active: transparent !important;
-  --metadata-label-font: '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
-    Helvetica, Arial, sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
+    Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: rgb(160, 167, 187) !important;
   --metadata-label-text-color-hover: rgb(160, 167, 187) !important;
   --metadata-property-background-active: transparent !important;
@@ -562,8 +562,8 @@ export const theme: ThemeData = {
   --text-success: rgb(13, 145, 116) !important;
   --text-warning: #E9973F !important;
   --textHighlight: rgba(255, 252, 59, 0.08) !important;
-  --titleFont: '??', 'DM Sans', 'Inter', -apple-system
-    BlinkMacSystemFont, 'Segoe UI', 'Ubuntu',
+  --titleFont: DM Sans, Inter, -apple-system
+    BlinkMacSystemFont, Segoe UI, Ubuntu,
     Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: rgb(30, 31, 36) !important;
   --titlebar-background-focused: rgb(30, 31, 36) !important;

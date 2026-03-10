@@ -50,7 +50,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075) !important;
   --blockquote-border-color: rgb(245, 92, 81) !important;
   --blur-background: color-mix(in srgb, #232120 65%, transparent) linear-gradient(#232120, color-mix(in srgb, #232120 65%, transparent)) !important;
-  --bodyFont: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: #f85c51 !important;
   --bold-weight: 600 !important;
   --canvas-background: #121110 !important;
@@ -81,7 +81,7 @@ export const theme: ThemeData = {
   --code-string: #23d18c !important;
   --code-tag: #f85c51 !important;
   --code-value: #a29bfe !important;
-  --codeFont: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: rgb(245, 92, 81) !important;
   --collapse-icon-color-collapsed: rgb(245, 92, 81) !important;
   --color-accent: rgb(245, 92, 81) !important;
@@ -111,9 +111,9 @@ export const theme: ThemeData = {
   --file-margins: 32px !important;
   --flair-background: #232120 !important;
   --flair-color: #ffebd1 !important;
-  --font-mermaid: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: '??', '??', IBM Plex Sans, sans-serif, 'Arial' !important;
-  --font-text: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: IBM Plex Sans, sans-serif, Arial' !important;
+  --font-text: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: IBM Plex Sans, sans-serif !important;
   --footnote-divider-color: #232120 !important;
   --footnote-id-color: #807874 !important;
@@ -141,7 +141,7 @@ export const theme: ThemeData = {
   --h5-size: 1.125em !important;
   --h5-weight: 600 !important;
   --h6-color: rgb(245, 92, 81) !important;
-  --headerFont: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: rgb(245, 92, 81) !important;
   --highlight: #69afff !important;
   --hr-color: #232120 !important;
@@ -299,7 +299,7 @@ export const theme: ThemeData = {
   --text-success: #23d18c !important;
   --text-tag: #23d18c !important;
   --textHighlight: #69afff !important;
-  --titleFont: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #181716 !important;
   --titlebar-background-focused: #181716 !important;
   --titlebar-border-color: #232120 !important;
@@ -1125,7 +1125,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.075) !important;
   --blockquote-border-color: rgb(245, 92, 81) !important;
   --blur-background: color-mix(in srgb, #fffefd 65%, transparent) linear-gradient(#fffefd, color-mix(in srgb, #fffefd 65%, transparent)) !important;
-  --bodyFont: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: #f85c51 !important;
   --bold-weight: 600 !important;
   --callout-bug: 251, 70, 76;
@@ -1178,7 +1178,7 @@ html[saved-theme="dark"] body sup {
   --code-string: #0cc77c !important;
   --code-tag: #f85c51 !important;
   --code-value: #a29bfe !important;
-  --codeFont: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: rgb(245, 92, 81) !important;
   --collapse-icon-color-collapsed: rgb(245, 92, 81) !important;
   --color-accent: rgb(245, 92, 81) !important;
@@ -1219,9 +1219,9 @@ html[saved-theme="dark"] body sup {
   --file-margins: 32px !important;
   --flair-background: #f6e2db !important;
   --flair-color: #4a3827 !important;
-  --font-mermaid: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: '??', '??', IBM Plex Sans, sans-serif, 'Arial' !important;
-  --font-text: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: IBM Plex Sans, sans-serif, Arial' !important;
+  --font-text: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: IBM Plex Sans, sans-serif !important;
   --footnote-divider-color: #f6e2db !important;
   --footnote-id-color: #b29688 !important;
@@ -1250,7 +1250,7 @@ html[saved-theme="dark"] body sup {
   --h5-size: 1.125em !important;
   --h5-weight: 600 !important;
   --h6-color: rgb(245, 92, 81) !important;
-  --headerFont: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: rgb(245, 92, 81) !important;
   --highlight: #d6e9ff !important;
   --hr-color: #f6e2db !important;
@@ -1410,7 +1410,7 @@ html[saved-theme="dark"] body sup {
   --text-tag: #0cc77c !important;
   --text-warning: #e9973f !important;
   --textHighlight: #d6e9ff !important;
-  --titleFont: '??', IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: IBM Plex Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #fdf9f5 !important;
   --titlebar-background-focused: #fdf9f5 !important;
   --titlebar-border-color: #f6e2db !important;

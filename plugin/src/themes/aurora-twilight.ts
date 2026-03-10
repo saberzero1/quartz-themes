@@ -19,7 +19,7 @@ export const theme: ThemeData = {
   --bases-table-container-border-radius: 8px !important;
   --bases-table-header-background: rgb(2, 4, 34) !important;
   --bases-table-summary-background: rgb(2, 4, 34) !important;
-  --bodyFont: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: #d86679 !important;
   --button-radius: 12px !important;
   --callout-radius: 8px;
@@ -29,12 +29,12 @@ export const theme: ThemeData = {
   --checkbox-radius: 12px !important;
   --clickable-icon-radius: 8px !important;
   --code-radius: 8px !important;
-  --codeFont: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-background: rgb(2, 4, 34) !important;
   --file-header-background-focused: rgb(2, 4, 34) !important;
-  --font-mermaid: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: '??', '??', Cabin, Quicksand, 'Arial' !important;
-  --font-text: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: Cabin, Quicksand, Arial' !important;
+  --font-text: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: Cabin, Quicksand !important;
   --footnote-radius: 8px !important;
   --h1-color: #ffc444 !important;
@@ -43,7 +43,7 @@ export const theme: ThemeData = {
   --h4-color: #f88773 !important;
   --h5-color: #f88773 !important;
   --h6-color: #f88773 !important;
-  --headerFont: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --highlight-hue: 30 !important;
   --inline-title-color: #ffc444 !important;
   --input-radius: 12px !important;
@@ -80,7 +80,7 @@ export const theme: ThemeData = {
   --tab-switcher-background: rgb(0, 0, 0) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 0, 0), transparent) !important;
   --text: rgb(221, 221, 253) !important;
-  --titleFont: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: rgb(0, 0, 0) !important;
   --toggle-radius: 12px !important;
   --toggle-thumb-radius: 12px !important;
@@ -636,7 +636,7 @@ html[saved-theme="dark"] body progress {
   --bases-table-header-background: rgb(221, 223, 253) !important;
   --bases-table-summary-background: rgb(221, 223, 253) !important;
   --blur-background: color-mix(in srgb, rgb(221, 223, 253) 65%, transparent) linear-gradient(rgb(221, 223, 253), color-mix(in srgb, rgb(221, 223, 253) 65%, transparent)) !important;
-  --bodyFont: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: #d86679 !important;
   --button-radius: 12px !important;
   --callout-radius: 8px;
@@ -646,12 +646,12 @@ html[saved-theme="dark"] body progress {
   --checkbox-radius: 12px !important;
   --clickable-icon-radius: 8px !important;
   --code-radius: 8px !important;
-  --codeFont: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-background: rgb(221, 223, 253) !important;
   --file-header-background-focused: rgb(221, 223, 253) !important;
-  --font-mermaid: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: '??', '??', Cabin, Quicksand, 'Arial' !important;
-  --font-text: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: Cabin, Quicksand, Arial' !important;
+  --font-text: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: Cabin, Quicksand !important;
   --footnote-radius: 8px !important;
   --h1-color: #ffc444 !important;
@@ -660,7 +660,7 @@ html[saved-theme="dark"] body progress {
   --h4-color: #f88773 !important;
   --h5-color: #f88773 !important;
   --h6-color: #f88773 !important;
-  --headerFont: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --highlight-hue: 30 !important;
   --inline-title-color: #ffc444 !important;
   --input-radius: 12px !important;
@@ -698,7 +698,7 @@ html[saved-theme="dark"] body progress {
   --tab-switcher-background: rgb(255, 255, 255) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, rgb(255, 255, 255), transparent) !important;
   --text: rgb(2, 2, 34) !important;
-  --titleFont: '??', Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: rgb(255, 255, 255) !important;
   --toggle-radius: 12px !important;
   --toggle-thumb-radius: 12px !important;

@@ -9,8 +9,8 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --bodyFont: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --codeFont: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --bodyFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --codeFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --color-base-15: #1f1f1f !important;
   --color-base-23: #323232 !important;
   --color-ghostwhite-rgb: 248, 248, 255 !important;
@@ -18,29 +18,29 @@ export const theme: ThemeData = {
   --content-bgcolor: rgb(25, 25, 25) !important;
   --default-border-color: rgba(255, 255, 255, 0.06) !important;
   --divider-color: #1f1f1f !important;
-  --file-header-font: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-family-iawriter-quattro: "iaWriterQuattro", mono !important;
   --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-interface: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-mermaid: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-paragraph: .9rem !important;
   --font-smallest: 0.6rem !important;
-  --font-text: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --frontmatter-active-bg: rgba(255, 255, 255, 0.15) !important;
   --frontmatter-active-color: rgba(0, 0, 0, 0.8) !important;
   --frontmatter-atom-background: rgba(255, 255, 255, 0.04) !important;
   --frontmatter-atom-color: rgba(255, 255, 255, 0.4) !important;
   --frontmatter-font-size: .5rem !important;
-  --headerFont: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --headerFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --heading-text-color: #fff !important;
   --link-hover-color: #fff !important;
   --link-unresolved-opacity: 0.85 !important;
   --list-indent: .8rem !important;
-  --metadata-input-font: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --metadata-label-font: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --nav-item-active: #FFF !important;
   --nav-item-background-active: #252525 !important;
   --nav-item-background-hover: #2C2C2C !important;
@@ -81,7 +81,7 @@ export const theme: ThemeData = {
   --tag-padding-y: 2px !important;
   --tag-radius: 5px !important;
   --tag-size: .75rem !important;
-  --titleFont: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --titleFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --width-body-content: 700px !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -418,37 +418,37 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --bodyFont: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --codeFont: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --bodyFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --codeFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --color-base-15: #f0f0f0 !important;
   --color-base-23: #eee !important;
   --content-bgcolor: rgb(255, 255, 255) !important;
   --default-border-color: rgba(0, 0, 0, 0.06) !important;
   --divider-color: #f0f0f0 !important;
-  --file-header-font: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --file-header-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-color-paragraph: #37352f !important;
   --font-default: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-family-iawriter-quattro: "iaWriterQuattro", mono !important;
   --font-family-ibm: "IBMRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-family-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-family-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-interface: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --font-mermaid: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-interface: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-mermaid: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --font-paragraph: .9rem !important;
   --font-smallest: 0.6rem !important;
-  --font-text: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-text: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --frontmatter-active-bg: rgba(0, 0, 0, 0.15) !important;
   --frontmatter-active-color: rgba(0, 0, 0, 0.8) !important;
   --frontmatter-atom-background: rgba(0, 0, 0, 0.05) !important;
   --frontmatter-atom-color: rgba(0, 0, 0, 0.5) !important;
   --frontmatter-font-size: .5rem !important;
-  --headerFont: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --headerFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --heading-text-color: #37352f !important;
   --link-hover-color: #000 !important;
   --link-unresolved-opacity: 0.85 !important;
   --list-indent: .8rem !important;
-  --metadata-input-font: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  --metadata-label-font: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --metadata-input-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --metadata-label-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --nav-item-active: #373530 !important;
   --nav-item-background-active: #EDEDEB !important;
   --nav-item-background-hover: #E8E8E6 !important;
@@ -487,7 +487,7 @@ html[saved-theme="dark"] body sup {
   --tag-padding-y: 2px !important;
   --tag-radius: 5px !important;
   --tag-size: .75rem !important;
-  --titleFont: '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --titleFont: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   --width-body-content: 700px !important;
   --quartz-icon-color: currentColor !important;
 }

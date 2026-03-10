@@ -280,7 +280,7 @@ export const theme: ThemeData = {
     monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
-  --font-print: '??', "??", "??", 'Arial' !important;
+  --font-print: "??", "??", Arial' !important;
   --font-text: "??",
     "??",
     "??",

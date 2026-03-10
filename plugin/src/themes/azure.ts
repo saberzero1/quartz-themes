@@ -87,7 +87,7 @@ export const theme: ThemeData = {
   --code-radius: 2px !important;
   --code-size: 16px !important;
   --code-string: rgb(238, 238, 238) !important;
-  --codeFont: '??', "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --codeFont: "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: rgb(158, 158, 158) !important;
   --collapse-icon-color-collapsed: hsl(214, 102%, 70.15%) !important;
   --color-accent: rgb(56, 132, 255) !important;
@@ -124,9 +124,9 @@ export const theme: ThemeData = {
   --font-interface: "Consolas", monospace !important;
   --font-interface-theme: "Consolas", monospace !important;
   --font-mermaid: "Consolas", monospace !important;
-  --font-monospace: '??', "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace: "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "Consolas", monospace !important;
-  --font-print: '??', "Consolas", monospace, "Consolas", monospace, 'Arial' !important;
+  --font-print: "Consolas", monospace, "Consolas", monospace, Arial' !important;
   --font-small: 16px !important;
   --font-smaller: 14px !important;
   --font-smallest: 12px !important;
@@ -1439,7 +1439,7 @@ html[saved-theme="dark"] body sup {
   --code-radius: 2px !important;
   --code-size: 16px !important;
   --code-string: rgb(38, 38, 38) !important;
-  --codeFont: '??', "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --codeFont: "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: rgb(99, 99, 99) !important;
   --collapse-icon-color-collapsed: rgb(56, 132, 255) !important;
   --color-accent: rgb(56, 132, 255) !important;
@@ -1476,9 +1476,9 @@ html[saved-theme="dark"] body sup {
   --font-interface: "Consolas", monospace !important;
   --font-interface-theme: "Consolas", monospace !important;
   --font-mermaid: "Consolas", monospace !important;
-  --font-monospace: '??', "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace: "Consolas", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "Consolas", monospace !important;
-  --font-print: '??', "Consolas", monospace, "Consolas", monospace, 'Arial' !important;
+  --font-print: "Consolas", monospace, "Consolas", monospace, Arial' !important;
   --font-small: 16px !important;
   --font-smaller: 14px !important;
   --font-smallest: 12px !important;

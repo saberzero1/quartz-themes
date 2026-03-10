@@ -262,15 +262,64 @@ function normalizeVariations(variations) {
 
 function normalizeFonts(fonts) {
   if (Array.isArray(fonts))
-    return fonts
-      .filter((value) => typeof value === "string")
-      .map((value) => value.replaceAll('"??", ', ""));
+    return fonts.filter((value) => typeof value === "string");
   if (fonts && typeof fonts === "object") {
-    return Object.values(fonts)
-      .filter((value) => typeof value === "string")
-      .map((value) => value.replaceAll('"??", ', ""));
+    return Object.values(fonts).filter((value) => typeof value === "string");
   }
   return [];
+}
+
+// Font CSS variable names that may contain corrupted '??' entries from Obsidian extraction.
+// These are CJK/emoji font names that got mangled to literal question marks (U+003F).
+const FONT_CSS_VARS = new Set([
+  "--font-interface",
+  "--font-text",
+  "--font-text-theme",
+  "--font-monospace",
+  "--default-font",
+  "--file-header-font",
+  "--metadata-input-font",
+  "--metadata-label-font",
+  "--bodyFont",
+  "--headerFont",
+  "--titleFont",
+  "--codeFont",
+  "font-family",
+]);
+
+/**
+ * Sanitize a font-family CSS value by removing corrupted '??' entries.
+ * These appear as single-quoted '??' (literally two question marks) in font lists,
+ * e.g.: "'??', '??', '"JetBrains Mono", monospace, "Inter", sans-serif', ui-sans-serif"
+ * After stripping, also cleans up orphaned leading quotes from the next entry.
+ */
+function sanitizeFontValue(value) {
+  if (typeof value !== "string" || !value.includes("??")) return value;
+
+  // Remove entries that are just '??' (single-quoted double question marks)
+  // Handles: '??', or '??' at end, with optional whitespace
+  let cleaned = value.replace(/'\?\?'\s*,?\s*/g, "");
+
+  // After removing '??' entries, we may have orphaned leading single-quotes
+  // from entries like '"JetBrains Mono", monospace, "Inter", sans-serif'
+  // where the leading ' was part of the original quoting. Strip leading ' if
+  // the value now starts with ' followed by a quote or letter.
+  cleaned = cleaned.replace(/^\s*'(?="|[a-zA-Z-])/g, "");
+
+  // Also handle mid-string orphaned quotes after comma: , '"Font"
+  cleaned = cleaned.replace(/,\s*'(?="|[a-zA-Z-])/g, ", ");
+
+  // Clean up trailing single quotes that were part of the original quoting
+  // e.g.: sans-serif', ui-sans-serif → sans-serif, ui-sans-serif
+  cleaned = cleaned.replace(/'\s*,/g, ",");
+
+  // Clean up leading/trailing commas and whitespace
+  cleaned = cleaned.replace(/^[\s,]+/, "").replace(/[\s,]+$/, "");
+
+  // Collapse multiple consecutive commas into one
+  cleaned = cleaned.replace(/,\s*,+/g, ",");
+
+  return cleaned.trim();
 }
 
 function resolveThemeKey(themeId, themesMeta) {
@@ -293,6 +342,16 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap) {
   for (const [key, value] of Object.entries(bodyStyles)) {
     if (key.startsWith("--") && value && value !== "inherit") {
       baseVars[key] = value;
+    }
+  }
+
+  // Sanitize any CSS values that contain corrupted '??' entries.
+  // These can appear in font vars but also other vars like --table-header-size.
+  for (const key of Object.keys(baseVars)) {
+    if (typeof baseVars[key] === "string" && baseVars[key].includes("??")) {
+      baseVars[key] = sanitizeFontValue(baseVars[key]);
+      // Remove the entry entirely if sanitization left it empty
+      if (!baseVars[key]) delete baseVars[key];
     }
   }
 

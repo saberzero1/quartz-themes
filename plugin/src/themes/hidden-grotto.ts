@@ -40,7 +40,6 @@ export const theme: ThemeData = {
   --blockquote-border-color: rgb(235, 115, 71) !important;
   --blockquote-color: rgb(245, 240, 235) !important;
   --blur-background: none !important;
-  --bodyFont: '??' !important;
   --bold-weight: 600 !important;
   --callout-default: rgb(245, 240, 235);
   --callout-radius: 0px;
@@ -71,7 +70,6 @@ export const theme: ThemeData = {
   --code-string: rgb(89, 166, 89) !important;
   --code-tag: rgb(184, 122, 122) !important;
   --code-value: rgb(153, 122, 184) !important;
-  --codeFont: '??' !important;
   --collapse-icon-color: rgb(231, 220, 208) !important;
   --collapse-icon-color-collapsed: rgb(235, 115, 71) !important;
   --color-accent: rgb(235, 115, 71) !important;
@@ -86,13 +84,7 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid rgb(235, 115, 71) !important;
   --file-header-background: rgb(50, 50, 72) !important;
   --file-header-background-focused: rgb(50, 50, 72) !important;
-  --file-header-font: '??' !important;
   --flair-color: rgb(245, 240, 235) !important;
-  --font-interface: '??' !important;
-  --font-mermaid: '??' !important;
-  --font-monospace: '??' !important;
-  --font-print: '??' !important;
-  --font-text: '??' !important;
   --footnote-id-color: rgb(231, 220, 208) !important;
   --footnote-id-color-no-occurrences: rgb(231, 220, 208) !important;
   --footnote-radius: 0px !important;
@@ -360,7 +352,6 @@ export const theme: ThemeData = {
   --grotto-view-header-border-radius: 0rem !important;
   --grotto-view-header-color: rgb(245, 240, 235) !important;
   --grotto-view-header-sidebar-toggle-display: none !important;
-  --headerFont: '??' !important;
   --heading-formatting: rgb(231, 220, 208) !important;
   --heading-spacing: 0rem !important;
   --highlight: rgb(75, 75, 108) !important;
@@ -391,10 +382,8 @@ export const theme: ThemeData = {
   --menu-background: rgb(42, 42, 60) !important;
   --menu-radius: 0px !important;
   --menu-shadow: none !important;
-  --metadata-input-font: '??' !important;
   --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(245, 240, 235) !important;
-  --metadata-label-font: '??' !important;
   --metadata-label-text-color: rgb(231, 220, 208) !important;
   --metadata-label-text-color-hover: rgb(231, 220, 208) !important;
   --modal-background: rgb(50, 50, 72) !important;
@@ -505,7 +494,6 @@ export const theme: ThemeData = {
   --text-success: rgb(106, 191, 64) !important;
   --text-warning: rgb(191, 128, 64) !important;
   --textHighlight: rgb(75, 75, 108) !important;
-  --titleFont: '??' !important;
   --titlebar-background: rgb(42, 42, 60) !important;
   --titlebar-background-focused: rgb(42, 42, 60) !important;
   --titlebar-text-color: rgb(231, 220, 208) !important;
@@ -1752,7 +1740,6 @@ html[saved-theme="dark"] body sup {
   --blockquote-border-color: rgb(235, 115, 71) !important;
   --blockquote-color: rgb(50, 50, 72) !important;
   --blur-background: none !important;
-  --bodyFont: '??' !important;
   --bold-weight: 600 !important;
   --callout-default: rgb(50, 50, 72);
   --callout-radius: 0px;
@@ -1783,7 +1770,6 @@ html[saved-theme="dark"] body sup {
   --code-string: rgb(89, 166, 89) !important;
   --code-tag: rgb(184, 122, 122) !important;
   --code-value: rgb(153, 122, 184) !important;
-  --codeFont: '??' !important;
   --collapse-icon-color: rgb(75, 75, 108) !important;
   --collapse-icon-color-collapsed: rgb(235, 115, 71) !important;
   --color-accent: rgb(235, 115, 71) !important;
@@ -1798,13 +1784,7 @@ html[saved-theme="dark"] body sup {
   --embed-border-start: 2px solid rgb(235, 115, 71) !important;
   --file-header-background: rgb(245, 240, 235) !important;
   --file-header-background-focused: rgb(245, 240, 235) !important;
-  --file-header-font: '??' !important;
   --flair-color: rgb(50, 50, 72) !important;
-  --font-interface: '??' !important;
-  --font-mermaid: '??' !important;
-  --font-monospace: '??' !important;
-  --font-print: '??' !important;
-  --font-text: '??' !important;
   --footnote-id-color: rgb(75, 75, 108) !important;
   --footnote-id-color-no-occurrences: rgb(75, 75, 108) !important;
   --footnote-radius: 0px !important;
@@ -2072,7 +2052,6 @@ html[saved-theme="dark"] body sup {
   --grotto-view-header-border-radius: 0rem !important;
   --grotto-view-header-color: rgb(50, 50, 72) !important;
   --grotto-view-header-sidebar-toggle-display: none !important;
-  --headerFont: '??' !important;
   --heading-formatting: rgb(75, 75, 108) !important;
   --heading-spacing: 0rem !important;
   --highlight: rgb(231, 220, 208) !important;
@@ -2103,10 +2082,8 @@ html[saved-theme="dark"] body sup {
   --menu-background: rgb(238, 230, 221) !important;
   --menu-radius: 0px !important;
   --menu-shadow: none !important;
-  --metadata-input-font: '??' !important;
   --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(50, 50, 72) !important;
-  --metadata-label-font: '??' !important;
   --metadata-label-text-color: rgb(75, 75, 108) !important;
   --metadata-label-text-color-hover: rgb(75, 75, 108) !important;
   --modal-background: rgb(245, 240, 235) !important;
@@ -2217,7 +2194,6 @@ html[saved-theme="dark"] body sup {
   --text-success: rgb(106, 191, 64) !important;
   --text-warning: rgb(191, 128, 64) !important;
   --textHighlight: rgb(231, 220, 208) !important;
-  --titleFont: '??' !important;
   --titlebar-background: rgb(238, 230, 221) !important;
   --titlebar-background-focused: rgb(238, 230, 221) !important;
   --titlebar-text-color: rgb(75, 75, 108) !important;

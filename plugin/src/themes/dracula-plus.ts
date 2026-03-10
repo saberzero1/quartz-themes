@@ -57,7 +57,7 @@ export const theme: ThemeData = {
   --code-normal: #f8f8f2 !important;
   --code-property: #00ffff !important;
   --code-punctuation: #f8f8f2 !important;
-  --codeFont: '??', "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular,
+  --codeFont: "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular,
     Consolas, "Roboto Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: #bd93f9 !important;
   --collapse-icon-color-collapsed: #ffb86c !important;
@@ -78,7 +78,7 @@ export const theme: ThemeData = {
   --flair-color: #f8f8f2 !important;
   --font-family-editor: Avenir, Avenir Next, sans-serif !important;
   --font-family-preview: Avenir, Avenir Next, sans-serif !important;
-  --font-monospace: '??', "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular,
+  --font-monospace: "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular,
     Consolas, "Roboto Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular,
     Consolas, "Roboto Mono", monospace !important;

@@ -17,7 +17,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: #1B1B1B !important;
   --bases-table-header-color: #707070 !important;
   --bases-table-summary-background: #1B1B1B !important;
-  --bodyFont: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --callout-title-color: #CCC;
   --canvas-background: #1B1B1B !important;
   --canvas-card-label-color: #707070 !important;
@@ -31,7 +31,7 @@ export const theme: ThemeData = {
   --code-comment: #707070 !important;
   --code-normal: #CCC !important;
   --code-punctuation: #707070 !important;
-  --codeFont: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #707070 !important;
   --dark: #CCC !important;
   --darkgray: #CCC !important;
@@ -40,8 +40,8 @@ export const theme: ThemeData = {
   --file-line-width: min(800px, 98vw) !important;
   --file-margins: 64px 32px 32px 32px !important;
   --flair-color: #CCC !important;
-  --font-mermaid: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-text: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --footnote-id-color: #707070 !important;
   --footnote-id-color-no-occurrences: #707070 !important;
   --footnote-line-height: 1.7 !important;
@@ -58,7 +58,7 @@ export const theme: ThemeData = {
   --h5-size: 16px !important;
   --h6-line-height: 1.7 !important;
   --h6-size: 16px !important;
-  --headerFont: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #707070 !important;
   --highlight: #494113 !important;
   --icon-color: #707070 !important;
@@ -134,7 +134,7 @@ export const theme: ThemeData = {
   --text-muted: #707070 !important;
   --text-normal: #CCC !important;
   --textHighlight: #494113 !important;
-  --titleFont: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #141414 !important;
   --titlebar-background-focused: #141414 !important;
   --titlebar-text-color: #707070 !important;
@@ -826,7 +826,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-header-color: #B5B3B1 !important;
   --bases-table-summary-background: #F7F7F7 !important;
   --blur-background: color-mix(in srgb, #F7F7F7 65%, transparent) linear-gradient(#F7F7F7, color-mix(in srgb, #F7F7F7 65%, transparent)) !important;
-  --bodyFont: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --callout-title-color: #1A1A1A;
   --canvas-background: #F7F7F7 !important;
   --canvas-card-label-color: #B5B3B1 !important;
@@ -840,7 +840,7 @@ html[saved-theme="dark"] body sup {
   --code-comment: #B5B3B1 !important;
   --code-normal: #1A1A1A !important;
   --code-punctuation: #B5B3B1 !important;
-  --codeFont: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #B5B3B1 !important;
   --dark: #1A1A1A !important;
   --darkgray: #1A1A1A !important;
@@ -849,8 +849,8 @@ html[saved-theme="dark"] body sup {
   --file-line-width: min(800px, 98vw) !important;
   --file-margins: 64px 32px 32px 32px !important;
   --flair-color: #1A1A1A !important;
-  --font-mermaid: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-text: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --footnote-id-color: #B5B3B1 !important;
   --footnote-id-color-no-occurrences: #B5B3B1 !important;
   --footnote-line-height: 1.7 !important;
@@ -867,7 +867,7 @@ html[saved-theme="dark"] body sup {
   --h5-size: 16px !important;
   --h6-line-height: 1.7 !important;
   --h6-size: 16px !important;
-  --headerFont: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #B5B3B1 !important;
   --highlight: #FCEA95 !important;
   --icon-color: #B5B3B1 !important;
@@ -944,7 +944,7 @@ html[saved-theme="dark"] body sup {
   --text-muted: #B5B3B1 !important;
   --text-normal: #1A1A1A !important;
   --textHighlight: #FCEA95 !important;
-  --titleFont: "iA Writer Duo", '??', "iA Writer Duo", '??', '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: "iA Writer Duo", "iA Writer Duo", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #FCFCFC !important;
   --titlebar-background-focused: #FCFCFC !important;
   --titlebar-text-color: #B5B3B1 !important;

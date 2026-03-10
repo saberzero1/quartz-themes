@@ -66,7 +66,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: hsl(285.3488372093deg, 100%, 83%) !important;
   --blockquote-border-thickness: 4px !important;
   --blur-background: color-mix(in srgb, #222222 65%, transparent) linear-gradient(#222222, color-mix(in srgb, #222222 65%, transparent)) !important;
-  --bodyFont: '??', '??', JetBrains Mono,
+  --bodyFont: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
@@ -168,7 +168,7 @@ export const theme: ThemeData = {
   --code-string: #a5e693 !important;
   --code-tag: #f5988f !important;
   --code-value: #ac9df2 !important;
-  --codeFont: '??', '??', JetBrains Mono,
+  --codeFont: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
@@ -259,7 +259,7 @@ export const theme: ThemeData = {
   --file-header-background: #1a1a1a !important;
   --file-header-background-focused: #1a1a1a !important;
   --file-header-border: 0px solid transparent !important;
-  --file-header-font: '??', '??', '??', JetBrains Mono,
+  --file-header-font: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
@@ -276,21 +276,21 @@ export const theme: ThemeData = {
     "Roboto Mono",
     "Source Code Pro",
     monospace !important;
-  --font-interface: '??', '??', '??', JetBrains Mono,
+  --font-interface: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
     "Roboto Mono",
     "Source Code Pro",
     monospace !important;
-  --font-mermaid: '??', '??', JetBrains Mono,
+  --font-mermaid: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
     "Roboto Mono",
     "Source Code Pro",
     monospace !important;
-  --font-text: '??', '??', JetBrains Mono,
+  --font-text: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
@@ -328,7 +328,7 @@ export const theme: ThemeData = {
   --h5-weight: 500 !important;
   --h6-color: #ffffff !important;
   --h6-weight: 500 !important;
-  --headerFont: '??', '??', JetBrains Mono,
+  --headerFont: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
@@ -392,7 +392,7 @@ export const theme: ThemeData = {
   --metadata-border-color: #222222 !important;
   --metadata-divider-color: #222222 !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
-  --metadata-input-font: '??', '??', '??', JetBrains Mono,
+  --metadata-input-font: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
@@ -401,7 +401,7 @@ export const theme: ThemeData = {
     monospace !important;
   --metadata-input-text-color: #909090 !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.075) !important;
-  --metadata-label-font: '??', '??', '??', JetBrains Mono,
+  --metadata-label-font: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
@@ -578,7 +578,7 @@ export const theme: ThemeData = {
   --text-success: #a5e693 !important;
   --text-warning: #ffc8a3 !important;
   --textHighlight: transparent !important;
-  --titleFont: '??', '??', JetBrains Mono,
+  --titleFont: JetBrains Mono,
     Menlo,
     SFMono-Regular,
     Consolas,
