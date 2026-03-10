@@ -50,6 +50,7 @@ export const theme: ThemeData = {
   --blockquote-background-color: rgba(110, 110, 110, 0.2);
   --blockquote-border-color: #e2752c;
   --blur-background: color-mix(in srgb, #474747 65%, transparent) linear-gradient(#474747, color-mix(in srgb, #474747 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-accent-ink: #64ad4b;
   --bold-color: #64ad4b;
   --button-radius: 50px;
@@ -97,6 +98,7 @@ export const theme: ThemeData = {
   --code-string: #5a7a4d;
   --code-tag: #8a2e2e;
   --code-value: #5f4a8c;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgba(249, 246, 238, 0.65);
   --collapse-icon-color-collapsed: hsl(-3, 102%, 14.95%);
   --color-accent: rgb(66, 0, 0);
@@ -133,6 +135,8 @@ export const theme: ThemeData = {
   --color-red-rgb: 138, 46, 46;
   --color-yellow: #c29938;
   --color-yellow-rgb: 194, 153, 56;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #6e6e6e;
   --divider-color-hover: rgb(66, 0, 0);
   --dropdown-background: #474747;
@@ -165,6 +169,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #64ad4b;
   --graph-node-unresolved: rgba(249, 246, 238, 0.65);
   --graph-text: #f9f6ee;
+  --gray: var(--text-muted);
   --h1-color: #e2752c;
   --h1-line-height: 1.5em;
   --h1-size: 2.2em;
@@ -183,7 +188,9 @@ export const theme: ThemeData = {
   --h6-color: #e2752c;
   --h6-line-height: 1.5em;
   --h6-size: 1.2em;
+  --headerFont: var(--font-text);
   --heading-formatting: rgba(249, 246, 238, 0.65);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(226, 117, 44, 0.85);
   --icon-color: rgba(249, 246, 238, 0.85);
   --icon-color-active: hsl(-3, 102%, 14.95%);
@@ -206,10 +213,12 @@ export const theme: ThemeData = {
   --leather-color: #2a0000;
   --leather-color-alt: #440000;
   --leather-color-rgb: 75, 0, 0;
+  --light: var(--background-primary);
   --light-ink: #f9f6ee;
   --light-ink-alt: #e2d6d6;
   --light-ink-fainted: rgba(249, 246, 238, 0.65);
   --light-ink-muted: rgba(249, 246, 238, 0.85);
+  --lightgray: var(--background-secondary);
   --link-color: #e2752c;
   --link-color-hover: rgba(226, 117, 44, 0.85);
   --link-external-color: #e2752c;
@@ -293,6 +302,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgba(249, 246, 238, 0.85);
   --search-icon-color: rgba(249, 246, 238, 0.85);
   --search-result-background: #0c0c0c;
+  --secondary: var(--text-accent);
   --secondary-ink: #e2752c;
   --secondary-ink-fainted: rgba(226, 117, 44, 0.65);
   --secondary-ink-muted: rgba(226, 117, 44, 0.85);
@@ -340,6 +350,7 @@ export const theme: ThemeData = {
   --tag-color-hover: #202020;
   --tag-padding-x: 0.75em;
   --tag-padding-y: 0.12em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(-3, 102%, 14.95%);
   --text-accent-hover: hsl(-5, 105%, 16.77%);
   --text-error: #8a2e2e;
@@ -353,6 +364,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(110, 110, 110, 0.5);
   --text-success: #5a7a4d;
   --text-warning: #b3682a;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #2a0000;
   --titlebar-background-focused: #2a0000;
   --titlebar-border-color: #6e6e6e;
@@ -1395,6 +1408,7 @@ body sup {
   --blockquote-background-color: rgba(186, 153, 66, 0.2);
   --blockquote-border-color: #9c2d32;
   --blur-background: color-mix(in srgb, #f9f6ee 65%, transparent) linear-gradient(#f9f6ee, color-mix(in srgb, #f9f6ee 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-accent-ink: #4f6c4f;
   --bold-color: #4f6c4f;
   --button-radius: 50px;
@@ -1442,6 +1456,7 @@ body sup {
   --code-string: #719461;
   --code-tag: #b43c3c;
   --code-value: #775cb0;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgba(30, 61, 109, 0.65);
   --collapse-icon-color-collapsed: rgb(185, 152, 65);
   --color-accent: rgb(185, 152, 65);
@@ -1478,6 +1493,8 @@ body sup {
   --color-red-rgb: 180, 60, 60;
   --color-yellow: #f2ba44;
   --color-yellow-rgb: 242, 186, 68;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #ba9942;
   --divider-color-hover: #762a3f;
   --dropdown-background: #dac897;
@@ -1510,6 +1527,7 @@ body sup {
   --graph-node-tag: #4f6c4f;
   --graph-node-unresolved: rgba(30, 61, 109, 0.65);
   --graph-text: #1e3d6d;
+  --gray: var(--text-muted);
   --h1-color: #9c2d32;
   --h1-line-height: 1.5em;
   --h1-size: 2.2em;
@@ -1528,7 +1546,9 @@ body sup {
   --h6-color: #9c2d32;
   --h6-line-height: 1.5em;
   --h6-size: 1.2em;
+  --headerFont: var(--font-text);
   --heading-formatting: rgba(30, 61, 109, 0.65);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(156, 45, 50, 0.85);
   --icon-color: rgba(30, 61, 109, 0.85);
   --icon-color-active: rgb(185, 152, 65);
@@ -1551,10 +1571,12 @@ body sup {
   --leather-color: #632335;
   --leather-color-alt: #762a3f;
   --leather-color-rgb: 99, 35, 53;
+  --light: var(--background-primary);
   --light-ink: #f9f6ee;
   --light-ink-alt: #e5d7b4;
   --light-ink-fainted: rgba(249, 246, 238, 0.65);
   --light-ink-muted: rgba(249, 246, 238, 0.85);
+  --lightgray: var(--background-secondary);
   --link-color: #9c2d32;
   --link-color-hover: rgba(156, 45, 50, 0.85);
   --link-external-color: #9c2d32;
@@ -1636,6 +1658,7 @@ body sup {
   --search-clear-button-color: rgba(30, 61, 109, 0.85);
   --search-icon-color: rgba(30, 61, 109, 0.85);
   --search-result-background: #f9f6ee;
+  --secondary: var(--text-accent);
   --secondary-ink: #9c2d32;
   --secondary-ink-fainted: rgba(156, 45, 50, 0.65);
   --secondary-ink-muted: rgba(156, 45, 50, 0.85);
@@ -1683,6 +1706,7 @@ body sup {
   --tag-color-hover: #efe7d1;
   --tag-padding-x: 0.75em;
   --tag-padding-y: 0.12em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(185, 152, 65);
   --text-accent-hover: rgb(199, 164, 92);
   --text-error: #b43c3c;
@@ -1696,6 +1720,8 @@ body sup {
   --text-selection: rgba(186, 153, 66, 0.5);
   --text-success: #719461;
   --text-warning: #db8134;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #632335;
   --titlebar-background-focused: #632335;
   --titlebar-border-color: #ba9942;

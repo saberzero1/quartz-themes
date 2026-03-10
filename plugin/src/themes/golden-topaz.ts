@@ -73,7 +73,9 @@ export const theme: ThemeData = {
   --collapse-icon-color: rgb(121, 121, 121);
   --collapse-icon-color-collapsed: #E1B87F;
   --color-specification: #E1B87F;
+  --dark: var(--text-normal);
   --darkblue: #007aff;
+  --darkgray: var(--text-normal);
   --darkgreen: #007672;
   --day-planner-dot: #786b54;
   --day-planner-item-hover: #EFDBB2;
@@ -141,6 +143,7 @@ export const theme: ThemeData = {
   --graph-text-color: #a29c90;
   --graph-unresolved: #E1B87F;
   --graphtag: #007672;
+  --gray: var(--text-muted);
   --gray-1: #353231;
   --gray-2: #786b54;
   --green: #0f9d58;
@@ -152,6 +155,7 @@ export const theme: ThemeData = {
   --h6-color: #D1CCBD;
   --header-color: #f1a634d0;
   --heading-formatting: rgb(121, 121, 121);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(0, 0, 0, 0.1);
   --icon-color: #a29c90;
   --icon-color-active: #E1B87F;
@@ -165,7 +169,9 @@ export const theme: ThemeData = {
   --interactive-accent-rgb: 45, 135, 211;
   --interactive-hover: #E1B87F;
   --interactive-normal: #007672;
+  --light: var(--background-primary);
   --light-yellow: #E1B87F;
+  --lightgray: var(--background-secondary);
   --link-color: #E1B87F;
   --link-color-hover: #786b54;
   --link-external-color: #E1B87F;
@@ -231,6 +237,7 @@ export const theme: ThemeData = {
   --search-result-background: #353231;
   --search-result-file-title-color: #007672;
   --search-text: #007672;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #a29c90;
   --setting-items-background: #00767224;
   --setting-items-border-color: rgba(0, 0, 0, 0.1);
@@ -281,6 +288,7 @@ export const theme: ThemeData = {
   --tag8: #2F3546;
   --tag9: #393c44;
   --tape-color: #007672;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #E1B87F;
   --text-accent-hover: #786b54;
   --text-blue: #8ca1ff;
@@ -303,6 +311,7 @@ export const theme: ThemeData = {
   --text-selection: #EFDBB2;
   --text-size-cloze: 0.9375em;
   --text-yellow: #ffdc51;
+  --textHighlight: var(--text-highlight-bg);
   --theme-color: #E1B87F;
   --theme-color-translucent: #007672;
   --theme-color-translucent-1: #007672;
@@ -1161,7 +1170,9 @@ body sup {
   --collapse-icon-color: #4c5064;
   --collapse-icon-color-collapsed: #4c5064;
   --color-specification: #e6eff4;
+  --dark: var(--text-normal);
   --darkblue: #5667a4;
+  --darkgray: var(--text-normal);
   --darkgreen: #1a8b8d;
   --day-planner-dot: #e6eff4;
   --day-planner-item-hover: #4c5064;
@@ -1229,6 +1240,7 @@ body sup {
   --graph-text-color: #000000;
   --graph-unresolved: #4c5064;
   --graphtag: #4c5064;
+  --gray: var(--text-muted);
   --gray-1: #a6a7a8;
   --gray-2: #808080;
   --green: #0f9d58;
@@ -1240,6 +1252,7 @@ body sup {
   --h6-color: #000000;
   --header-color: #E1B87F;
   --heading-formatting: #4c5064;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(0, 0, 0, 0.1);
   --icon-color: #4c5064;
   --icon-color-active: #4c5064;
@@ -1253,8 +1266,10 @@ body sup {
   --interactive-accent-rgb: 70, 142, 235;
   --interactive-hover: #e6eff4;
   --interactive-normal: #dddbc7;
+  --light: var(--background-primary);
   --light-purple: #b77dca;
   --light-yellow: #ffe168;
+  --lightgray: var(--background-secondary);
   --link-color: #4c5064;
   --link-color-hover: #4c5064;
   --link-external-color: #4c5064;
@@ -1318,6 +1333,7 @@ body sup {
   --search-result-background: #dddbc7;
   --search-result-file-title-color: #4c5064;
   --search-text: #4c5064;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #000000;
   --setting-items-background: #fbf0d221;
   --setting-items-border-color: rgba(0, 0, 0, 0.1);
@@ -1368,6 +1384,7 @@ body sup {
   --tag8: #1a8b8d;
   --tag9: #a6a7a8;
   --tape-color: #786b54;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #4c5064;
   --text-accent-hover: #4c5064;
   --text-blue: #0083bb;
@@ -1389,6 +1406,7 @@ body sup {
   --text-selection: #fbf0d2;
   --text-size-cloze: 0.9375em;
   --text-yellow: #d4a300;
+  --textHighlight: var(--text-highlight-bg);
   --theme-color: #4c5064;
   --theme-color-translucent: #4c5064;
   --theme-color-translucent-1: #fbf0d2;

@@ -68,6 +68,7 @@ export const theme: ThemeData = {
   --blockquote-padding: 12px 24px;
   --blockquote-padding-lp: 7px 0;
   --blur-background: color-mix(in srgb, #242933 65%, transparent) linear-gradient(#242933, color-mix(in srgb, #242933 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-modifier: 500;
   --bold-weight: 900;
   --box-border: 2px solid #242933;
@@ -129,6 +130,7 @@ export const theme: ThemeData = {
   --code-shadow: 0 2px 0 #242933;
   --code-size: .90em;
   --code-text: #81A1C1;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #4e5b6f;
   --collapse-icon-color-collapsed: #586477;
   --color-accent: rgb(186, 64, 64);
@@ -136,8 +138,10 @@ export const theme: ThemeData = {
   --color-accent-2: rgb(209, 113, 121);
   --color-accent-hsl: 0, 49%, 49%;
   --comment-font: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
+  --dark: var(--text-normal);
   --dark-accent: #4C566A;
   --dark-sidebar: #3B4252;
+  --darkgray: var(--text-normal);
   --dataview-table-width: 100%;
   --dataview-th-alt-color: rgba(94, 129, 172, 0.1);
   --dataview-th-background: #242933;
@@ -261,6 +265,7 @@ export const theme: ThemeData = {
   --graph-node-unresolved: #586477;
   --graph-tag: #88C0D0;
   --graph-text: #ECEFF4;
+  --gray: var(--text-muted);
   --h1-background: transparent;
   --h1-border-color: #BF616A;
   --h1-border-left-color: #434C5E;
@@ -373,6 +378,7 @@ export const theme: ThemeData = {
   --header-shadow: transparent;
   --header-text-align: start;
   --header-weight: 700;
+  --headerFont: var(--font-text);
   --headers: #88C0D0;
   --heading-formatting: #586477;
   --heading-spacing: 10px;
@@ -460,6 +466,8 @@ export const theme: ThemeData = {
   --latex-color: #5E81AC;
   --latex-format-color: #586477;
   --latex-syntax-color: #97a1b9;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.3em;
   --lines: #4C566A;
   --link-background: transparent;
@@ -654,6 +662,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #97a1b9;
   --search-icon-color: #97a1b9;
   --search-result-background: #2E3440;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #ECEFF4;
   --setting-item-alt-background-hover: #06080c60;
   --setting-item-background-hover: rgba(81, 120, 138, 0.48);
@@ -825,6 +834,7 @@ export const theme: ThemeData = {
   --tag-text: #A3BE8C;
   --tall: 700px;
   --td: #06080c60;
+  --tertiary: var(--text-accent-hover);
   --text: #ECEFF4;
   --text-accent: #88C0D0;
   --text-accent-hover: #81A1C1;
@@ -836,6 +846,7 @@ export const theme: ThemeData = {
   --text-normal: #ECEFF4;
   --text-on-accent: #e5ebee;
   --text-selection: rgba(60, 159, 168, 0.4);
+  --textHighlight: var(--text-highlight-bg);
   --th: #4C566A;
   --th-text: #e5ebee;
   --theme-rainbow-1: #BF616A;
@@ -845,6 +856,7 @@ export const theme: ThemeData = {
   --theme-rainbow-5: #A48EAD;
   --theme-rainbow-6: #29395a;
   --tiny: 100px;
+  --titleFont: var(--font-text);
   --titlebar-background: #2E3440;
   --titlebar-background-focused: #242933;
   --titlebar-border-color: #434C5E;
@@ -1926,6 +1938,7 @@ body sup {
   --blockquote-padding: 12px 24px;
   --blockquote-padding-lp: 7px 0;
   --blur-background: color-mix(in srgb, #FBFBFC 65%, transparent) linear-gradient(#FBFBFC, color-mix(in srgb, #FBFBFC 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-modifier: 500;
   --bold-weight: 900;
   --box-border: 2px solid #bdcce6;
@@ -1987,6 +2000,7 @@ body sup {
   --code-shadow: 0 2px 0 #bdcce6;
   --code-size: .90em;
   --code-text: #81A1C1;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #4e5b6f;
   --collapse-icon-color-collapsed: #7e8dac;
   --color-accent: rgb(186, 64, 64);
@@ -1994,8 +2008,10 @@ body sup {
   --color-accent-2: rgb(199, 87, 92);
   --color-accent-hsl: 0, 49%, 49%;
   --comment-font: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
+  --dark: var(--text-normal);
   --dark-accent: #29395a;
   --dark-sidebar: #dde2ec;
+  --darkgray: var(--text-normal);
   --dataview-table-width: 100%;
   --dataview-th-alt-color: rgba(143, 188, 187, 0.1);
   --dataview-th-background: #E5E9F0;
@@ -2117,6 +2133,7 @@ body sup {
   --graph-node-unresolved: #7e8dac;
   --graph-tag: #88C0D0;
   --graph-text: #4C566A;
+  --gray: var(--text-muted);
   --h1-background: transparent;
   --h1-border-color: #BF616A;
   --h1-border-left-color: #b5c1d4;
@@ -2229,6 +2246,7 @@ body sup {
   --header-shadow: transparent;
   --header-text-align: start;
   --header-weight: 700;
+  --headerFont: var(--font-text);
   --headers: #88C0D0;
   --heading-formatting: #7e8dac;
   --heading-spacing: 10px;
@@ -2317,6 +2335,8 @@ body sup {
   --latex-color: #3c66a8;
   --latex-format-color: #7e8dac;
   --latex-syntax-color: #7e8dac;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.3em;
   --lines: #b5c1d4;
   --link-background: transparent;
@@ -2509,6 +2529,7 @@ body sup {
   --search-clear-button-color: #7e8dac;
   --search-icon-color: #7e8dac;
   --search-result-background: #FBFBFC;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #4C566A;
   --setting-item-alt-background-hover: #d0ddef62;
   --setting-item-background-hover: rgba(119, 235, 210, 0.4);
@@ -2680,6 +2701,7 @@ body sup {
   --tag-text: #8FBCBB;
   --tall: 700px;
   --td: #d0ddef62;
+  --tertiary: var(--text-accent-hover);
   --text: #4C566A;
   --text-accent: #8FBCBB;
   --text-accent-hover: #81A1C1;
@@ -2691,6 +2713,7 @@ body sup {
   --text-normal: #4C566A;
   --text-on-accent: #e5ebee;
   --text-selection: rgba(97, 148, 231, 0.3);
+  --textHighlight: var(--text-highlight-bg);
   --th: #29395a;
   --th-text: #e5ebee;
   --theme-rainbow-1: #BF616A;
@@ -2700,6 +2723,7 @@ body sup {
   --theme-rainbow-5: #A48EAD;
   --theme-rainbow-6: #7e8dac;
   --tiny: 100px;
+  --titleFont: var(--font-text);
   --titlebar-background: #FBFBFC;
   --titlebar-background-focused: #E5E9F0;
   --titlebar-border-color: #b5c1d4;

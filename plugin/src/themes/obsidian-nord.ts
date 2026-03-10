@@ -107,6 +107,7 @@ export const theme: ThemeData = {
   --color-yellow: rgb(235, 203, 139);
   --color-yellow-rgb: 235,203,139;
   --cursor-line-background: rgba(191, 97, 106, 0.2);
+  --dark: var(--text-normal);
   --dark0: rgb(46, 52, 64);
   --dark0_x: 46,52,64;
   --dark1: rgb(59, 66, 82);
@@ -115,6 +116,7 @@ export const theme: ThemeData = {
   --dark2_x: 67,76,94;
   --dark3: rgb(76, 86, 106);
   --dark3_x: 76,86,106;
+  --darkgray: var(--text-normal);
   --dataview-key: rgb(216, 222, 233);
   --dataview-key-background: rgba(129, 161, 193, 0.3);
   --dataview-value: rgb(216, 222, 233);
@@ -146,6 +148,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(191, 97, 106);
   --graph-node-unresolved: rgb(216, 222, 233);
   --graph-text: rgb(236, 239, 244);
+  --gray: var(--text-muted);
   --green: rgb(163, 190, 140);
   --green_x: 163,190,140;
   --h1-color: rgb(191, 97, 106);
@@ -155,6 +158,7 @@ export const theme: ThemeData = {
   --h5-color: rgb(143, 188, 187);
   --h6-color: rgb(129, 161, 193);
   --heading-formatting: rgb(216, 222, 233);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(67, 76, 94);
   --icon-color: rgb(229, 233, 240);
   --icon-color-active: rgb(208, 135, 112);
@@ -167,6 +171,7 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(203, 124, 136);
   --interactive-accent-hsl: 354, 42%, 56%;
   --italic-color: rgb(235, 203, 139);
+  --light: var(--background-primary);
   --light0: rgb(216, 222, 233);
   --light0_x: 216,222,233;
   --light1: rgb(229, 233, 240);
@@ -175,6 +180,7 @@ export const theme: ThemeData = {
   --light2_x: 236,239,244;
   --light3: rgb(255, 255, 255);
   --light3_x: 255,255,255;
+  --lightgray: var(--background-secondary);
   --link-color: rgb(208, 135, 112);
   --link-color-hover: rgb(129, 161, 193);
   --link-decoration: none;
@@ -238,6 +244,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(229, 233, 240);
   --search-icon-color: rgb(229, 233, 240);
   --search-result-background: rgb(46, 52, 64);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(236, 239, 244);
   --setting-items-background: rgb(46, 52, 64);
   --setting-items-border-color: rgb(67, 76, 94);
@@ -289,6 +296,7 @@ export const theme: ThemeData = {
   --tag-padding-x: .5em;
   --tag-padding-y: .2em;
   --tag-radius: .5em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(208, 135, 112);
   --text-accent-hover: rgb(129, 161, 193);
   --text-error: rgb(191, 97, 106);
@@ -300,6 +308,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(191, 97, 106, 0.6);
   --text-success: rgb(163, 190, 140);
   --text-warning: rgb(208, 135, 112);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(59, 66, 82);
   --titlebar-background-focused: rgb(67, 76, 94);
   --titlebar-border-color: rgb(67, 76, 94);
@@ -1293,6 +1302,7 @@ body sup {
   --color-yellow: rgb(235, 203, 139);
   --color-yellow-rgb: 235,203,139;
   --cursor-line-background: rgba(191, 97, 106, 0.1);
+  --dark: var(--text-normal);
   --dark0: rgb(46, 52, 64);
   --dark0_x: 46,52,64;
   --dark1: rgb(59, 66, 82);
@@ -1301,6 +1311,7 @@ body sup {
   --dark2_x: 67,76,94;
   --dark3: rgb(76, 86, 106);
   --dark3_x: 76,86,106;
+  --darkgray: var(--text-normal);
   --dataview-key: rgb(46, 52, 64);
   --dataview-key-background: rgba(129, 161, 193, 0.3);
   --dataview-value: rgb(46, 52, 64);
@@ -1332,6 +1343,7 @@ body sup {
   --graph-node-tag: rgb(191, 97, 106);
   --graph-node-unresolved: rgb(46, 52, 64);
   --graph-text: rgb(67, 76, 94);
+  --gray: var(--text-muted);
   --green: rgb(163, 190, 140);
   --green_x: 163,190,140;
   --h1-color: rgb(191, 97, 106);
@@ -1341,6 +1353,7 @@ body sup {
   --h5-color: rgb(143, 188, 187);
   --h6-color: rgb(129, 161, 193);
   --heading-formatting: rgb(46, 52, 64);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(229, 233, 240);
   --icon-color: rgb(59, 66, 82);
   --icon-color-active: rgb(208, 135, 112);
@@ -1353,6 +1366,7 @@ body sup {
   --interactive-accent-hover: rgb(203, 124, 136);
   --interactive-accent-hsl: 354, 42%, 56%;
   --italic-color: rgb(163, 190, 140);
+  --light: var(--background-primary);
   --light0: rgb(216, 222, 233);
   --light0_x: 216,222,233;
   --light1: rgb(229, 233, 240);
@@ -1361,6 +1375,7 @@ body sup {
   --light2_x: 236,239,244;
   --light3: rgb(255, 255, 255);
   --light3_x: 255,255,255;
+  --lightgray: var(--background-secondary);
   --link-color: rgb(208, 135, 112);
   --link-color-hover: rgb(129, 161, 193);
   --link-decoration: none;
@@ -1423,6 +1438,7 @@ body sup {
   --search-clear-button-color: rgb(59, 66, 82);
   --search-icon-color: rgb(59, 66, 82);
   --search-result-background: rgb(255, 255, 255);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(67, 76, 94);
   --setting-items-background: rgb(255, 255, 255);
   --setting-items-border-color: rgb(229, 233, 240);
@@ -1474,6 +1490,7 @@ body sup {
   --tag-padding-x: .5em;
   --tag-padding-y: .2em;
   --tag-radius: .5em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(208, 135, 112);
   --text-accent-hover: rgb(129, 161, 193);
   --text-error: rgb(191, 97, 106);
@@ -1485,6 +1502,7 @@ body sup {
   --text-selection: rgba(191, 97, 106, 0.6);
   --text-success: rgb(163, 190, 140);
   --text-warning: rgb(208, 135, 112);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(236, 239, 244);
   --titlebar-background-focused: rgb(229, 233, 240);
   --titlebar-border-color: rgb(229, 233, 240);

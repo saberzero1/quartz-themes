@@ -134,6 +134,8 @@ export const theme: ThemeData = {
   --color-red-rgb: 239, 107, 115;
   --color-yellow: #ffd580;
   --color-yellow-rgb: 255, 204, 102;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: color-mix( in hsl, #1d2433, #2f3b54 );
   --divider-color-hover: #ffcc66;
   --drag-ghost-background: #2f3b54;
@@ -159,6 +161,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #c3a6ff;
   --graph-node-unresolved: #ef6b73;
   --graph-text: #d7dce2;
+  --gray: var(--text-muted);
   --h1-color: #bae67e;
   --h2-color: #bae67e;
   --h2-weight: 675;
@@ -210,6 +213,7 @@ export const theme: ThemeData = {
   --halcyon-text-muted: #8695b799;
   --halcyon-text-normal: #d7dce2;
   --heading-formatting: #8695b799;
+  --highlight: var(--text-highlight-bg);
   --hr-color: color-mix( in hsl, #8695b799, color-mix( in hsl, #1d2433, #2f3b54 ) );
   --icon-color: color-mix( in hsl, #8695b799, #d7dce2 );
   --icon-color-active: #ffcc66;
@@ -226,6 +230,8 @@ export const theme: ThemeData = {
   --interactive-hover: #1d2433;
   --interactive-normal: color-mix( in hsl, #1d2433 75%, transparent );
   --italic-color: #ef6b73;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #c3a6ff;
   --link-color-hover: color-mix( in hsl, #c3a6ff, #a2aabc );
   --link-external-color: #c3a6ff;
@@ -295,6 +301,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #ef6b73;
   --search-icon-color: #ffcc66;
   --search-result-background: #1d2433;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #d7dce2;
   --setting-items-background: #2f3b54;
   --setting-items-border-color: color-mix( in hsl, #1d2433, #2f3b54 );
@@ -356,6 +363,7 @@ export const theme: ThemeData = {
   --tag-color: #5ccfe6;
   --tag-color-hover: #5ccfe6;
   --tag-decoration-hover: underline;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #ffcc66;
   --text-accent-hover: #ffd580;
   --text-error: #ef6b73;
@@ -367,6 +375,7 @@ export const theme: ThemeData = {
   --text-selection: color-mix( in hsl, color-mix( in hsl, #2f3b54, #6679a4 ) 35%, transparent );
   --text-success: #bae67e;
   --text-warning: #ef6b73;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #171c28;
   --titlebar-background-focused: #171c28;
   --titlebar-border-color: color-mix( in hsl, #1d2433, #2f3b54 );

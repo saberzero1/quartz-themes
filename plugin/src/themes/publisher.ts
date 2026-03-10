@@ -51,6 +51,7 @@ export const theme: ThemeData = {
   --black-95: rgb(13, 13, 13);
   --blockquote-border-color: rgb(255, 47, 0);
   --blur-background: color-mix(in srgb, rgb(51, 51, 51) 65%, transparent) linear-gradient(rgb(51, 51, 51), color-mix(in srgb, rgb(51, 51, 51) 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 8px;
   --callout-border-width: 2px;
   --callout-radius: 8px;
@@ -71,12 +72,15 @@ export const theme: ThemeData = {
   --code-comment: rgb(128, 128, 128);
   --code-normal: rgb(204, 204, 204);
   --code-punctuation: rgb(153, 153, 153);
+  --codeFont: var(--font-text);
   --collapse-icon-color: rgb(128, 128, 128);
   --collapse-icon-color-collapsed: rgb(255, 47, 0);
   --color-accent: rgb(255, 47, 0);
   --color-accent-1: hsl(8, 102%, 57.5%);
   --color-accent-2: hsl(6, 105%, 64.5%);
   --color-accent-hsl: 11, 100%, 50%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: rgb(255, 47, 0);
   --drag-ghost-background: rgb(255, 255, 255);
@@ -104,6 +108,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(179, 179, 179);
   --graph-node-unresolved: rgb(128, 128, 128);
   --graph-text: rgb(179, 179, 179);
+  --gray: var(--text-muted);
   --h1-line-height: 1.5rem;
   --h1-size: 1.5rem;
   --h1-weight: 425;
@@ -121,7 +126,9 @@ export const theme: ThemeData = {
   --h5-weight: 380;
   --h6-size: .88rem;
   --h6-weight: 375;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(128, 128, 128);
+  --highlight: var(--background-modifier-hover);
   --hr-color: rgb(153, 153, 153);
   --hr-thickness: 1px;
   --icon-color: rgb(204, 204, 204);
@@ -139,6 +146,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 11, 100%, 50%;
   --interactive-hover: rgb(26, 26, 26);
   --interactive-normal: rgb(51, 51, 51);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(179, 179, 179);
   --link-color-hover: rgb(204, 204, 204);
   --link-decoration: none;
@@ -228,6 +237,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(153, 153, 153);
   --search-icon-color: rgb(204, 204, 204);
   --search-result-background: rgb(51, 51, 51);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(179, 179, 179);
   --setting-items-background: rgb(26, 26, 26);
   --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -274,12 +284,15 @@ export const theme: ThemeData = {
   --tag-color: rgb(255, 47, 0);
   --tag-color-hover: rgb(255, 47, 0);
   --tag-radius: 8px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(255, 47, 0);
   --text-accent-hover: rgb(255, 88, 51);
   --text-faint: rgb(128, 128, 128);
   --text-muted: rgb(153, 153, 153);
   --text-normal: rgb(179, 179, 179);
   --text-selection: rgba(255, 47, 0, 0.33);
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(26, 26, 26);
   --titlebar-background-focused: rgb(26, 26, 26);
   --titlebar-text-color: rgb(204, 204, 204);
@@ -1340,6 +1353,7 @@ body sup {
   --black-95: rgb(13, 13, 13);
   --blockquote-border-color: hsl(10, 101%, 53.75%);
   --blur-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 8px;
   --callout-border-width: 2px;
   --callout-radius: 8px;
@@ -1360,12 +1374,15 @@ body sup {
   --code-comment: rgb(128, 128, 128);
   --code-normal: rgb(26, 26, 26);
   --code-punctuation: rgb(102, 102, 102);
+  --codeFont: var(--font-text);
   --collapse-icon-color: rgb(128, 128, 128);
   --collapse-icon-color-collapsed: rgb(255, 47, 0);
   --color-accent: rgb(255, 47, 0);
   --color-accent-1: hsl(10, 101%, 53.75%);
   --color-accent-2: hsl(8, 102%, 57.5%);
   --color-accent-hsl: 11, 100%, 50%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: hsl(10, 101%, 53.75%);
   --drag-ghost-background: rgb(255, 213, 204);
@@ -1394,6 +1411,7 @@ body sup {
   --graph-node-tag: rgb(0, 0, 0);
   --graph-node-unresolved: rgb(128, 128, 128);
   --graph-text: rgb(77, 77, 77);
+  --gray: var(--text-muted);
   --h1-line-height: 1.5rem;
   --h1-size: 1.5rem;
   --h1-weight: 425;
@@ -1411,7 +1429,9 @@ body sup {
   --h5-weight: 380;
   --h6-size: .88rem;
   --h6-weight: 375;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(128, 128, 128);
+  --highlight: var(--background-modifier-hover);
   --hr-color: rgb(51, 51, 51);
   --hr-thickness: 1px;
   --icon-color: rgb(51, 51, 51);
@@ -1429,6 +1449,8 @@ body sup {
   --interactive-accent-hsl: 11, 100%, 50%;
   --interactive-hover: rgb(255, 255, 255);
   --interactive-normal: rgb(230, 230, 230);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(77, 77, 77);
   --link-color-hover: rgb(0, 0, 0);
   --link-decoration: none;
@@ -1518,6 +1540,7 @@ body sup {
   --search-clear-button-color: rgb(102, 102, 102);
   --search-icon-color: rgb(51, 51, 51);
   --search-result-background: rgb(51, 51, 51);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(77, 77, 77);
   --setting-items-background: rgb(245, 245, 245);
   --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -1564,6 +1587,7 @@ body sup {
   --tag-color: rgb(255, 47, 0);
   --tag-color-hover: rgb(255, 47, 0);
   --tag-radius: 8px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(255, 47, 0);
   --text-accent-hover: rgb(255, 88, 51);
   --text-faint: rgb(128, 128, 128);
@@ -1571,6 +1595,8 @@ body sup {
   --text-normal: rgb(77, 77, 77);
   --text-on-accent: rgb(255, 255, 255);
   --text-selection: rgba(255, 47, 0, 0.2);
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(255, 255, 255);
   --titlebar-background-focused: rgb(255, 255, 255);
   --titlebar-text-color: rgb(26, 26, 26);

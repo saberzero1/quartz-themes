@@ -11,8 +11,10 @@ export const theme: ThemeData = {
   --bases-table-cell-background-active: #262626;
   --bases-table-header-background: #262626;
   --bases-table-summary-background: #262626;
+  --bodyFont: var(--font-text);
   --canvas-background: #262626;
   --checkbox-marker-color: #262626;
+  --codeFont: var(--font-monospace);
   --color-jk-purple: #896a9e;
   --color-jk-purple-33: #896a9e33;
   --divider-color: #f000;
@@ -30,6 +32,9 @@ export const theme: ThemeData = {
   --font-print: '??', '??', "LXGW WenKai GB Screen R", jinkaiFont, 'Arial';
   --font-text: '??', "LXGW WenKai GB Screen R", jinkaiFont, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-theme: "LXGW WenKai GB Screen R", jinkaiFont;
+  --headerFont: var(--font-text);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary-alt);
   --metadata-input-font: '??', "LXGW WenKai GB Screen R", jinkaiFont, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font: '??', "LXGW WenKai GB Screen R", jinkaiFont, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --modal-background: #262626;
@@ -45,6 +50,7 @@ export const theme: ThemeData = {
   --tab-outline-color: #f000;
   --table-border-color: #cccc;
   --table-header-border-color: #cccc;
+  --titleFont: var(--font-text);
   --titlebar-background-focused: #262626;
   --quartz-icon-color: currentColor;
 }
@@ -300,10 +306,12 @@ body kbd {
   --bases-table-summary-background: #f4f7fb;
   --bases-table-summary-background-hover: #896a9e33;
   --blur-background: color-mix(in srgb, #f4f7fb 65%, transparent) linear-gradient(#f4f7fb, color-mix(in srgb, #f4f7fb 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: #f4f7fb;
   --checkbox-marker-color: #f4f7fb;
   --code-background: #fff7;
   --code-bracket-background: #896a9e33;
+  --codeFont: var(--font-monospace);
   --color-jk-purple: #896a9e;
   --color-jk-purple-33: #896a9e33;
   --divider-color: #f000;
@@ -322,6 +330,10 @@ body kbd {
   --font-text: '??', "LXGW WenKai GB Screen R", jinkaiFont, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-theme: "LXGW WenKai GB Screen R", jinkaiFont;
   --footnote-input-background-active: #896a9e33;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-hover);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: #f4f7fb;
   --metadata-input-background-active: #896a9e33;
   --metadata-input-font: '??', "LXGW WenKai GB Screen R", jinkaiFont, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -350,6 +362,8 @@ body kbd {
   --tab-switcher-menubar-background: linear-gradient(to top, #f4f7fb, transparent);
   --table-border-color: #cccc;
   --table-header-border-color: #cccc;
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #f4f7fb;
   --titlebar-background-focused: #f4f7fb;
   --quartz-icon-color: currentColor;

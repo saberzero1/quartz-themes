@@ -49,6 +49,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: rgb(81, 81, 81);
   --blockquote-border-thickness: 0px;
   --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent));
+  --bodyFont: var(--font-text);
   --callout-bug: 255,
     107,
     129;
@@ -132,6 +133,7 @@ export const theme: ThemeData = {
   --code-punctuation: #a0a0a0;
   --code-string: #7bed9f;
   --code-tag: #ff6b81;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #707070;
   --collapse-icon-color-collapsed: rgb(61, 61, 61);
   --color-accent: rgb(81, 81, 81);
@@ -185,6 +187,8 @@ export const theme: ThemeData = {
   --color-yellow-rgb: 251,
     211,
     81;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #404040;
   --divider-color-hover: rgb(81, 81, 81);
   --divider-width: 0px;
@@ -284,7 +288,10 @@ export const theme: ThemeData = {
   --graph-node-tag: #7bed9f;
   --graph-node-unresolved: #707070;
   --graph-text: #ffffff;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #707070;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #404040;
   --icon-color: #a0a0a0;
   --icon-color-active: rgb(61, 61, 61);
@@ -303,6 +310,8 @@ export const theme: ThemeData = {
     65%;
   --interactive-hover: #484848;
   --interactive-normal: #404040;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(61, 61, 61);
   --link-color-hover: rgb(101, 101, 101);
   --link-external-color: rgb(61, 61, 61);
@@ -413,6 +422,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #a0a0a0;
   --search-icon-color: #a0a0a0;
   --search-result-background: #202020;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #ffffff;
   --setting-items-background: #282828;
   --setting-items-border-color: #404040;
@@ -468,6 +478,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(81, 81, 81, 0.15);
   --tag-color: rgb(61, 61, 61);
   --tag-color-hover: rgb(61, 61, 61);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(61, 61, 61);
   --text-accent-hover: rgb(101, 101, 101);
   --text-error: #ff6b81;
@@ -479,6 +490,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(255, 255, 255, 0.2);
   --text-success: #7bed9f;
   --text-warning: #ff7f50;
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #383838;
   --titlebar-background-focused: #383838;
   --titlebar-border-color: #404040;

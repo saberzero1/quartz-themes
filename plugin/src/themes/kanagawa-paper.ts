@@ -31,6 +31,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: #8ba4b0;
   --boatYellow1: #938056;
   --boatYellow2: #C0A36E;
+  --bodyFont: var(--font-text);
   --bold-color: #c5c9c5;
   --canvas-background: #181616;
   --canvas-card-label-color: #9e9b93;
@@ -44,9 +45,12 @@ export const theme: ThemeData = {
   --code-border-color: #8ba4b0;
   --code-comment: #9e9b93;
   --code-normal: #c5c9c5;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #9e9b93;
   --collapse-icon-color-collapsed: #87a987;
   --crystalBlue: #7E9CD8;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #8ba4b0;
   --divider-color-hover: #8ba4b0;
   --dragonAqua: #8ea4a2;
@@ -91,7 +95,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #87a987;
   --graph-node-unresolved: #9e9b93;
   --graph-text: #c5c9c5;
+  --gray: var(--text-faint);
+  --headerFont: var(--font-text);
   --heading-formatting: #9e9b93;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #8ba4b0;
   --icon-color-active: #87a987;
   --icon-color-focused: #c5c9c5;
@@ -102,7 +109,9 @@ export const theme: ThemeData = {
   --interactive-accent-rgb: #8a9a7b;
   --interactive-before: #625e5a;
   --katanaGray: #717C7C;
+  --light: var(--background-primary);
   --lightBlue: #A3D4D5;
+  --lightgray: var(--background-secondary);
   --link-color: #87a987;
   --link-external-color: #87a987;
   --link-unresolved-color: #87a987;
@@ -156,6 +165,7 @@ export const theme: ThemeData = {
   --sakuraPink: #D27E99;
   --samuraiRed: #E82424;
   --search-result-background: #181616;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #c5c9c5;
   --setting-items-background: #181616;
   --setting-items-border-color: #8ba4b0;
@@ -197,6 +207,7 @@ export const theme: ThemeData = {
   --tag-color: #87a987;
   --tag-color-hover: #87a987;
   --task-checkbox: #625e5a;
+  --tertiary: var(--text-accent);
   --text-a: #949fb5;
   --text-a-hover: #a292a3;
   --text-a-url: #949fb5;
@@ -214,6 +225,8 @@ export const theme: ThemeData = {
   --text-title-h4: #87a987;
   --text-title-h5: #8ea4a2;
   --text-title-h6: #8ba4b0;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #1D1C19;
   --titlebar-background-focused: #282727;
   --titlebar-border-color: #8ba4b0;
@@ -933,6 +946,7 @@ body sup {
   --blur-background: color-mix(in srgb, #f2ecbc 65%, transparent) linear-gradient(#f2ecbc, color-mix(in srgb, #f2ecbc 65%, transparent));
   --boatYellow1: #938056;
   --boatYellow2: #C0A36E;
+  --bodyFont: var(--font-text);
   --bold-color: #545464;
   --canvas-background: #f2ecbc;
   --canvas-card-label-color: #8a8980;
@@ -944,8 +958,11 @@ body sup {
   --code-block: #8a8980;
   --code-comment: #8a8980;
   --code-normal: #545464;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #8a8980;
   --crystalBlue: #7E9CD8;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --dragonAqua: #8ea4a2;
   --dragonAsh: #737c73;
   --dragonBlack0: #0d0c0c;
@@ -984,13 +1001,17 @@ body sup {
   --fujiWhite: #DCD7BA;
   --graph-node-unresolved: #8a8980;
   --graph-text: #545464;
+  --gray: var(--text-faint);
+  --headerFont: var(--font-text);
   --heading-formatting: #8a8980;
   --icon-color-focused: #545464;
   --input-date-separator: #8a8980;
   --input-placeholder-color: #8a8980;
   --interactive-before: #716e61;
   --katanaGray: #717C7C;
+  --light: var(--background-primary);
   --lightBlue: #A3D4D5;
+  --lightgray: var(--background-secondary);
   --list-marker-color: #8a8980;
   --lotusGray: #dcd7ba;
   --lotusGray2: #716e61;
@@ -1067,6 +1088,7 @@ body sup {
   --text-mark: rgba(183, 208, 174, 0.4);
   --text-normal: #545464;
   --text-selection: rgba(183, 208, 174, 0.5);
+  --titleFont: var(--font-text);
   --titlebar-background: #dcd5ac;
   --titlebar-background-focused: #e5ddb0;
   --titlebar-text-color-focused: #545464;

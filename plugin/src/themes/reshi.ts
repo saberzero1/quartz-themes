@@ -53,6 +53,7 @@ export const theme: ThemeData = {
   --blockquote-background-color: none;
   --blockquote-border-color: #778e55;
   --blockquote-color: #707070;
+  --bodyFont: var(--font-text);
   --bold-color: #778e55;
   --bold-weight: 600;
   --button-radius: 6px;
@@ -113,6 +114,7 @@ export const theme: ThemeData = {
   --code-string: #91a86e;
   --code-tag: #7fbbb8;
   --code-value: #b96b88;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #6a6a6a;
   --collapse-icon-color-collapsed: #778e55;
   --color-accent: rgb(173, 190, 147);
@@ -135,10 +137,12 @@ export const theme: ThemeData = {
   --color-red-rgb: rgb(142, 70, 70);
   --color-yellow: #dfbf74;
   --color-yellow-rgb: rgb(223, 191, 116);
+  --dark: var(--text-normal);
   --dark-grey-1: #1d1d1d;
   --dark-grey-2: #1f1f1f;
   --dark-grey-3: #151515;
   --dark-white: #9d9d9d;
+  --darkgray: var(--text-normal);
   --dialog-max-width: 85vh;
   --divider-color: #9d9d9d;
   --divider-color-hover: #778e55;
@@ -187,6 +191,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #404040;
   --graph-node-unresolved: #c4c4c4;
   --graph-text: #555555;
+  --gray: var(--text-muted);
   --green-01: #829f55;
   --green-02: #748e4c;
   --green-03: #677e43;
@@ -224,7 +229,9 @@ export const theme: ThemeData = {
   --h6-color: #e8d17d;
   --h6-font: 'Noto Sans', sans-serif;
   --h6-weight: 650;
+  --headerFont: var(--font-text);
   --heading-formatting: #9d9d9d;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #333333;
   --hr-thickness: 1px;
   --icon-color: #778e55;
@@ -251,10 +258,12 @@ export const theme: ThemeData = {
   --interactive-accent-hover: #849e5f;
   --interactive-accent-hsl: #778e55;
   --italic-color: #ecd993;
+  --light: var(--background-primary);
   --light-black: #404040;
   --light-gold: #f8f1d8;
   --light-green: #cdd3c3;
   --light-grey: #ececec;
+  --lightgray: var(--background-secondary);
   --link-color: #778e55;
   --link-color-hover: #9db27e;
   --link-decoration: none;
@@ -392,6 +401,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #9d9d9d;
   --search-icon-color: #778e55;
   --search-result-background: #252525;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #9d9d9d;
   --setting-items-background: #1f1f1f;
   --setting-items-border-color: #9d9d9d;
@@ -479,6 +489,7 @@ export const theme: ThemeData = {
   --tag-radius: 6px;
   --tag-size: 12px;
   --tag-weight: 400;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #778e55;
   --text-accent-hover: #9db27e;
   --text-error: #8e4646;
@@ -491,6 +502,8 @@ export const theme: ThemeData = {
   --text-selection: #404040;
   --text-success: #778e55;
   --text-warning: #8e4646;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #252525;
   --titlebar-background-focused: #252525;
   --titlebar-border-color: none;
@@ -1705,6 +1718,7 @@ body sup {
   --blockquote-border-color: #596d3a;
   --blockquote-color: #555555;
   --blur-background: color-mix(in srgb, #ececec 65%, transparent) linear-gradient(#ececec, color-mix(in srgb, #ececec 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: #596d3a;
   --bold-weight: 600;
   --button-radius: 6px;
@@ -1765,6 +1779,7 @@ body sup {
   --code-string: #596d3a;
   --code-tag: #2b8b87;
   --code-value: #c62f46;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #6a6a6a;
   --collapse-icon-color-collapsed: #596d3a;
   --color-accent: rgb(174, 195, 141);
@@ -1787,10 +1802,12 @@ body sup {
   --color-red-rgb: rgb(128, 32, 32);
   --color-yellow: #d3980c;
   --color-yellow-rgb: rgb(211, 152, 12);
+  --dark: var(--text-normal);
   --dark-grey-1: #1d1d1d;
   --dark-grey-2: #1f1f1f;
   --dark-grey-3: #151515;
   --dark-white: #9d9d9d;
+  --darkgray: var(--text-normal);
   --dialog-max-width: 85vh;
   --divider-color: #404040;
   --divider-color-hover: #596d3a;
@@ -1842,6 +1859,7 @@ body sup {
   --graph-node-tag: #707070;
   --graph-node-unresolved: #151515;
   --graph-text: #555555;
+  --gray: var(--text-muted);
   --green-01: #829f55;
   --green-02: #748e4c;
   --green-03: #677e43;
@@ -1879,7 +1897,9 @@ body sup {
   --h6-color: #202020;
   --h6-font: 'Noto Sans', sans-serif;
   --h6-weight: 650;
+  --headerFont: var(--font-text);
   --heading-formatting: #404040;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #c4c4c4;
   --hr-thickness: 1px;
   --icon-color: #596d3a;
@@ -1908,10 +1928,12 @@ body sup {
   --interactive-hover: #c4c4c4;
   --interactive-normal: #e1e1e1;
   --italic-color: #6a6a6a;
+  --light: var(--background-primary);
   --light-black: #404040;
   --light-gold: #f8f1d8;
   --light-green: #cdd3c3;
   --light-grey: #ececec;
+  --lightgray: var(--background-secondary);
   --link-color: #596d3a;
   --link-color-hover: #303b1f;
   --link-decoration: none;
@@ -2048,6 +2070,7 @@ body sup {
   --search-clear-button-color: #404040;
   --search-icon-color: #596d3a;
   --search-result-background: #ececec;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #404040;
   --setting-items-background: #d7d7d7;
   --setting-items-border-color: #404040;
@@ -2135,6 +2158,7 @@ body sup {
   --tag-radius: 6px;
   --tag-size: 12px;
   --tag-weight: 400;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #596d3a;
   --text-accent-hover: #303b1f;
   --text-error: #802020;
@@ -2147,6 +2171,8 @@ body sup {
   --text-selection: #d7d7d7;
   --text-success: #596d3a;
   --text-warning: #802020;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #ececec;
   --titlebar-background-focused: #ececec;
   --titlebar-border-color: none;

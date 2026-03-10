@@ -26,6 +26,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: #212121;
   --bases-table-summary-background: #212121;
   --blockquote-border-color: #ed5b0f;
+  --bodyFont: var(--font-interface);
   --bright-orange-v: #fe8019;
   --bright-red: #fb4934;
   --bright-yellow-v: #fabd2f;
@@ -46,8 +47,10 @@ export const theme: ThemeData = {
   --code-light-gray: #cccccc;
   --code-normal: #cccccc;
   --code-orange: #b46629;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #625e5e;
   --collapse-icon-color-collapsed: #fe750e;
+  --dark: var(--text-normal);
   --dark0: #282828;
   --dark0-hard: #1d2021;
   --dark0-soft: #32302f;
@@ -55,6 +58,7 @@ export const theme: ThemeData = {
   --dark2: #504945;
   --dark3: #665c54;
   --dark4: #7c6f64;
+  --darkgray: var(--text-normal);
   --default-codeblock: #1a1a1a;
   --default-font: system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
   --divider-color: #534f4e;
@@ -96,8 +100,10 @@ export const theme: ThemeData = {
   --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, #27cac7);
   --h6-link-ul-color: color-mix(in srgb, #27cac7 33%, transparent);
   --h6-size: 1.35em;
+  --headerFont: var(--font-interface);
   --heading-formatting: #625e5e;
   --heading-spacing: 0.625rem;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #534f4e;
   --hx-link-ul-transparency-pct: 33%;
   --icon-color-active: #fe750e;
@@ -110,6 +116,7 @@ export const theme: ThemeData = {
   --interactive-accent: #ed5b0f;
   --interactive-accent-rgb: #fe750e;
   --interactive-before: #7c6f64;
+  --light: var(--background-primary);
   --light0: #fbf1c7;
   --light0-hard: #f9f5d7;
   --light0-soft: #f2e5bc;
@@ -117,6 +124,7 @@ export const theme: ThemeData = {
   --light2: #d5c4a1;
   --light3: #bdae93;
   --light4: #a89984;
+  --lightgray: var(--background-secondary);
   --link-color: #fe750e;
   --link-color-hover: #fe9109;
   --link-decoration: none;
@@ -200,6 +208,7 @@ export const theme: ThemeData = {
   --ribbon-background: #191717;
   --ribbon-background-collapsed: #212121;
   --search-result-background: #212121;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #eadad9;
   --setting-items-background: #282828;
   --setting-items-border-color: #534f4e;
@@ -226,6 +235,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #ed5b0f;
   --tag-color: #fe750e;
   --tag-color-hover: #fe750e;
+  --tertiary: var(--text-accent-hover);
   --test-green: #00ff00;
   --text-a: #fe750e;
   --text-a-hover: #fe9109;
@@ -247,6 +257,8 @@ export const theme: ThemeData = {
   --text-title-h4: #fea30f;
   --text-title-h5: #c0c90a;
   --text-title-h6: #27cac7;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #191717;
   --titlebar-background-focused: #161414;
   --titlebar-border-color: #534f4e;
@@ -1027,6 +1039,7 @@ body sup {
   --bases-table-summary-background: #dbc5af;
   --blockquote-border-color: #ed5b0f;
   --blur-background: color-mix(in srgb, #dbc5af 65%, transparent) linear-gradient(#dbc5af, color-mix(in srgb, #dbc5af 65%, transparent));
+  --bodyFont: var(--font-interface);
   --bright-orange-v: #fe8019;
   --bright-red: #fb4934;
   --bright-yellow-v: #fabd2f;
@@ -1050,8 +1063,10 @@ body sup {
   --code-normal: #161414;
   --code-orange: #b46629;
   --code-punctuation: #534f4e;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #534f4e;
   --collapse-icon-color-collapsed: #fe750e;
+  --dark: var(--text-normal);
   --dark0: #282828;
   --dark0-hard: #1d2021;
   --dark0-soft: #32302f;
@@ -1059,6 +1074,7 @@ body sup {
   --dark2: #504945;
   --dark3: #665c54;
   --dark4: #7c6f64;
+  --darkgray: var(--text-normal);
   --default-codeblock: #b9a693;
   --default-font: system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter;
   --divider-color: #534f4e;
@@ -1105,8 +1121,10 @@ body sup {
   --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, #27cac7);
   --h6-link-ul-color: color-mix(in srgb, #27cac7 33%, transparent);
   --h6-size: 1.35em;
+  --headerFont: var(--font-interface);
   --heading-formatting: #534f4e;
   --heading-spacing: 0.625rem;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #534f4e;
   --hx-link-ul-transparency-pct: 33%;
   --icon-color: #534f4e;
@@ -1123,6 +1141,7 @@ body sup {
   --interactive-before: #a79584;
   --interactive-hover: #e7cfb8;
   --interactive-normal: #d0baa6;
+  --light: var(--background-primary);
   --light0: #fbf1c7;
   --light0-hard: #f9f5d7;
   --light0-soft: #f2e5bc;
@@ -1130,6 +1149,7 @@ body sup {
   --light2: #d5c4a1;
   --light3: #bdae93;
   --light4: #a89984;
+  --lightgray: var(--background-secondary);
   --link-color: #fe750e;
   --link-color-hover: #fe9109;
   --link-decoration: none;
@@ -1222,6 +1242,7 @@ body sup {
   --search-clear-button-color: #534f4e;
   --search-icon-color: #534f4e;
   --search-result-background: #dbc5af;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #1e1e1e;
   --setting-items-background: #e7cfb8;
   --setting-items-border-color: #534f4e;
@@ -1252,6 +1273,7 @@ body sup {
   --table-selection-border-color: #ed5b0f;
   --tag-color: #fe750e;
   --tag-color-hover: #fe750e;
+  --tertiary: var(--text-accent-hover);
   --test-green: #00ff00;
   --text-a: #fe750e;
   --text-a-hover: #fe9109;
@@ -1274,6 +1296,8 @@ body sup {
   --text-title-h4: #fea30f;
   --text-title-h5: #c0c90a;
   --text-title-h6: #27cac7;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #d0baa6;
   --titlebar-background-focused: #b9a693;
   --titlebar-border-color: #534f4e;

@@ -105,6 +105,7 @@ export const theme: ThemeData = {
   --blur-radius-s: 8px;
   --blur-s: blur(8px) saturate(1.125) brightness(1);
   --blur-saturation: 1.125;
+  --bodyFont: var(--font-text);
   --bold-color: oklch(93.25% 0 281);
   --bold-modifier: 250;
   --bold-weight: 670;
@@ -168,6 +169,7 @@ export const theme: ThemeData = {
   --code-special: rgb(255, 76, 82);
   --code-string: rgb(24, 209, 125);
   --code-tag: rgb(255, 76, 82);
+  --codeFont: var(--font-text);
   --collapse-icon-color: oklch(52.50% 0.0075 281);
   --collapse-icon-color-collapsed: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%);
   --color-accent: rgb(27, 126, 238);
@@ -209,6 +211,8 @@ export const theme: ThemeData = {
   --control-icon-color: oklch(77.50% 0.00375 281);
   --control-icon-shadow: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025), 0px 0px 12px 0px oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375);
   --corner-smoothing: 60%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --dialog-width: 500px;
   --divider-color: oklch(100% 0.05 281 / 0.0625);
   --divider-color-hover: color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%);
@@ -279,6 +283,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(24, 209, 125);
   --graph-node-unresolved: oklch(52.50% 0.0075 281);
   --graph-text: oklch(85.00% 0.00375 281);
+  --gray: var(--text-muted);
   --h1-color: oklch(89.5% 0 281);
   --h1-size: 2em;
   --h1-size-alt: 1.625em;
@@ -300,7 +305,9 @@ export const theme: ThemeData = {
   --h6-line-height: 1.6;
   --h6-weight: 670;
   --header-height: 56px;
+  --headerFont: var(--font-text);
   --heading-formatting: oklch(52.50% 0.0075 281);
+  --highlight: var(--text-highlight-bg);
   --highlight-blue-rgb: 71, 154, 255;
   --highlight-cyan-rgb: 85, 211, 244;
   --highlight-green-rgb: 24, 209, 125;
@@ -341,6 +348,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 212, 86%, 52%;
   --interactive-hover: oklch(36.25% 0.00375 281);
   --interactive-normal: oklch(34.50% 0.00375 281);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --link-color: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%);
   --link-color-hover: color-mix(in oklab, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%), transparent 8%);
@@ -466,6 +475,7 @@ export const theme: ThemeData = {
   --search-icon-color: oklch(52.50% 0.0075 281);
   --search-icon-size: 17px;
   --search-result-background: oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: oklch(63.75% 0.0075 281);
   --setting-group-heading-size: 18px;
   --setting-group-heading-weight: 520;
@@ -573,6 +583,7 @@ export const theme: ThemeData = {
   --tag-padding-y: 0.3125em;
   --tag-size: 0.8em;
   --tag-weight: 490;
+  --tertiary: var(--text-accent-hover);
   --text-accent: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%);
   --text-accent-hover: color-mix(in oklab, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%), transparent 8%);
   --text-error: rgb(255, 76, 82);
@@ -585,6 +596,8 @@ export const theme: ThemeData = {
   --text-selection: oklab(from rgb(27, 126, 238) l a b / 0.25);
   --text-success: rgb(24, 209, 125);
   --text-warning: rgb(241, 144, 80);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: oklch(100% 0.05 281 / 0.0625);
@@ -1858,6 +1871,7 @@ body sup {
   --blur-radius-s: 8px;
   --blur-s: blur(8px) saturate(1.125) brightness(1);
   --blur-saturation: 1.125;
+  --bodyFont: var(--font-text);
   --bold-color: oklch(24% 0.0005 281);
   --bold-modifier: 250;
   --bold-weight: 670;
@@ -1923,6 +1937,7 @@ body sup {
   --code-string: rgb(0, 187, 93);
   --code-tag: rgb(233, 49, 58);
   --code-value: rgb(124, 80, 237);
+  --codeFont: var(--font-text);
   --collapse-icon-color: oklch(71.5% 0.0105 281);
   --collapse-icon-color-collapsed: rgb(10, 124, 255);
   --color-accent: rgb(10, 124, 255);
@@ -1968,6 +1983,8 @@ body sup {
   --control-icon-color: oklch(40% 0.0025 281);
   --control-icon-shadow: 0px 0 12px 0px oklch(05% 0 0 / 0.055);
   --corner-smoothing: 60%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --dialog-width: 500px;
   --divider-color: oklch(0% 0 0 / 0.0625);
   --divider-color-hover: color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%);
@@ -2035,6 +2052,7 @@ body sup {
   --graph-node-tag: rgb(0, 187, 93);
   --graph-node-unresolved: oklch(71.5% 0.0105 281);
   --graph-text: oklch(30% 0.0005 281);
+  --gray: var(--text-muted);
   --h1-color: oklch(24% 0.0005 281);
   --h1-size: 2em;
   --h1-size-alt: 1.625em;
@@ -2056,7 +2074,9 @@ body sup {
   --h6-line-height: 1.6;
   --h6-weight: 670;
   --header-height: 56px;
+  --headerFont: var(--font-text);
   --heading-formatting: oklch(71.5% 0.0105 281);
+  --highlight: var(--text-highlight-bg);
   --highlight-blue-rgb: 31, 132, 255;
   --highlight-cyan-rgb: 9, 186, 221;
   --highlight-green-rgb: 0, 187, 93;
@@ -2096,6 +2116,8 @@ body sup {
   --interactive-accent-hsl: 212, 100%, 52%;
   --interactive-hover: oklch(0% 0 0 / 0.092);
   --interactive-normal: oklch(0% 0 0 / 0.07);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.6;
   --link-color: rgb(10, 124, 255);
   --link-color-hover: color-mix(in oklch, rgb(10, 124, 255) 80%, transparent 40%);
@@ -2221,6 +2243,7 @@ body sup {
   --search-icon-color: oklch(71.5% 0.0105 281);
   --search-icon-size: 17px;
   --search-result-background: oklch(100% 0 0 / 0.625);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: oklch(55.75% 0.0105 281);
   --setting-group-heading-size: 18px;
   --setting-group-heading-weight: 520;
@@ -2330,6 +2353,7 @@ body sup {
   --tag-padding-y: 0.3125em;
   --tag-size: 0.8em;
   --tag-weight: 490;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(10, 124, 255);
   --text-accent-hover: color-mix(in oklch, rgb(10, 124, 255) 80%, transparent 40%);
   --text-error: rgb(233, 49, 58);
@@ -2342,6 +2366,8 @@ body sup {
   --text-selection: oklab(from rgb(10, 124, 255) l a b / 0.15);
   --text-success: rgb(0, 187, 93);
   --text-warning: rgb(241, 110, 53);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: oklch(0% 0 0 / 0.0625);

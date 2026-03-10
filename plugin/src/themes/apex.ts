@@ -12,6 +12,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: transparent;
   --bases-table-header-color: #707070;
   --bases-table-summary-background: transparent;
+  --bodyFont: var(--font-text);
   --canvas-background: transparent;
   --caret-color: #ccc;
   --checkbox-border-color-hover: #707070;
@@ -22,6 +23,9 @@ export const theme: ThemeData = {
   --checklist-done-decoration: none;
   --code-normal: #ccc;
   --code-punctuation: #707070;
+  --codeFont: var(--font-text);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --file-header-background: transparent;
   --file-header-background-focused: transparent;
@@ -32,6 +36,7 @@ export const theme: ThemeData = {
   --footnote-line-height: 1.7;
   --graph-node: #707070;
   --graph-text: #ccc;
+  --gray: var(--text-muted);
   --h1-font: "Geist", system-ui, sans-serif;
   --h1-line-height: 1.7;
   --h1-size: 25.6px;
@@ -47,12 +52,15 @@ export const theme: ThemeData = {
   --h5-size: 16px;
   --h6-line-height: 1.7;
   --h6-size: 16px;
+  --headerFont: var(--font-text);
   --icon-color: #707070;
   --icon-color-focused: #ccc;
   --icon-color-hover: #707070;
   --inline-title-font: "Geist", system-ui, sans-serif;
   --inline-title-line-height: 1.7;
   --inline-title-size: 25.6px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.7;
   --link-external-decoration-color: #707070;
   --link-unresolved-decoration-color: #707070;
@@ -100,6 +108,7 @@ export const theme: ThemeData = {
   --table-header-color: #ccc;
   --text-muted: #707070;
   --text-normal: #ccc;
+  --titleFont: var(--font-text);
   --titlebar-background: #141414;
   --titlebar-text-color: #707070;
   --titlebar-text-color-focused: #ccc;
@@ -777,6 +786,7 @@ body sup {
   --bases-table-header-color: #b5b3b1;
   --bases-table-summary-background: #f7f7f7;
   --blur-background: color-mix(in srgb, #f7f7f7 65%, transparent) linear-gradient(#f7f7f7, color-mix(in srgb, #f7f7f7 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: #f7f7f7;
   --caret-color: #1a1a1a;
   --checkbox-border-color-hover: #b5b3b1;
@@ -787,6 +797,9 @@ body sup {
   --checklist-done-decoration: none;
   --code-normal: #1a1a1a;
   --code-punctuation: #b5b3b1;
+  --codeFont: var(--font-text);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --file-header-background: #f7f7f7;
   --file-header-background-focused: #f7f7f7;
@@ -797,6 +810,7 @@ body sup {
   --footnote-line-height: 1.7;
   --graph-node: #b5b3b1;
   --graph-text: #1a1a1a;
+  --gray: var(--text-muted);
   --h1-font: "Geist", system-ui, sans-serif;
   --h1-line-height: 1.7;
   --h1-size: 25.6px;
@@ -812,12 +826,15 @@ body sup {
   --h5-size: 16px;
   --h6-line-height: 1.7;
   --h6-size: 16px;
+  --headerFont: var(--font-text);
   --icon-color: #b5b3b1;
   --icon-color-focused: #1a1a1a;
   --icon-color-hover: #b5b3b1;
   --inline-title-font: "Geist", system-ui, sans-serif;
   --inline-title-line-height: 1.7;
   --inline-title-size: 25.6px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.7;
   --link-external-decoration-color: #b5b3b1;
   --link-unresolved-decoration-color: #b5b3b1;
@@ -866,6 +883,7 @@ body sup {
   --table-header-color: #1a1a1a;
   --text-muted: #b5b3b1;
   --text-normal: #1a1a1a;
+  --titleFont: var(--font-text);
   --titlebar-background: #fcfcfc;
   --titlebar-text-color: #b5b3b1;
   --titlebar-text-color-focused: #1a1a1a;

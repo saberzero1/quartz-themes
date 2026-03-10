@@ -100,6 +100,7 @@ body tr {
   --bases-table-row-background-hover: #ffffff;
   --bold-color: #8a5cf5;
   --h4-color: #8a5cf5;
+  --lightgray: var(--background-secondary);
   --link-color: #2C54F2;
   --link-color-hover: #5C7BF5;
   --link-external-color: #2C54F2;

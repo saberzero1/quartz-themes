@@ -45,6 +45,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: #D8B131;
   --blockquote-border-color: #D92926;
   --blur-background: color-mix(in srgb, #E4E5E0 65%, transparent) linear-gradient(#E4E5E0, color-mix(in srgb, #E4E5E0 65%, transparent));
+  --bodyFont: var(--font-interface);
   --canvas-background: #030308;
   --canvas-card-label-color: #83888C;
   --caret-color: #83888C;
@@ -60,6 +61,7 @@ export const theme: ThemeData = {
   --code-comment: #83888C;
   --code-normal: #83888C;
   --code-punctuation: #83888C;
+  --codeFont: var(--font-interface);
   --col-accent: #D92926;
   --col-accent-plus: #FF4949;
   --col-base: #E4E5E0;
@@ -166,6 +168,8 @@ export const theme: ThemeData = {
   --col-txt-titles: #D92926;
   --collapse-icon-color: #83888C;
   --collapse-icon-color-collapsed: #FF4949;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #232221;
   --divider-color-hover: #D92926;
   --dropdown-background: #E4E5E0;
@@ -196,7 +200,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #FF4949;
   --graph-node-unresolved: #83888C;
   --graph-text: #83888C;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-interface);
   --heading-formatting: #83888C;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #232221;
   --icon-color: #83888C;
   --icon-color-active: #FF4949;
@@ -215,6 +222,8 @@ export const theme: ThemeData = {
   --letterspacing-pr-text: 0.5px;
   --letterspacing-txt-headers: 1.5px;
   --letterspacing-txt-p: 0.5px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-ed-headers: 20px;
   --line-height-ed-text: 20px;
   --line-height-pr-headers: 20px;
@@ -280,6 +289,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #83888C;
   --search-icon-color: #83888C;
   --search-result-background: #030308;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #83888C;
   --setting-items-background: black;
   --setting-items-border-color: #232221;
@@ -351,6 +361,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: hsla(#D92926, 0.15);
   --tag-color: #FF4949;
   --tag-color-hover: #FF4949;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #FF4949;
   --text-accent-hover: #FFD059;
   --text-error: #D8B131;
@@ -360,6 +371,8 @@ export const theme: ThemeData = {
   --text-on-accent: #232221;
   --text-selection: #83888C;
   --text-success: #D92926;
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-interface);
   --titlebar-background: #030308;
   --titlebar-background-focused: #030308;
   --titlebar-border-color: #232221;

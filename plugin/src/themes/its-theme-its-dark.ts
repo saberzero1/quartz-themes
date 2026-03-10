@@ -68,6 +68,7 @@ export const theme: ThemeData = {
   --blockquote-padding: 12px 24px;
   --blockquote-padding-lp: 7px 0;
   --blur-background: color-mix(in srgb, black 65%, transparent) linear-gradient(black, color-mix(in srgb, black 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-modifier: 500;
   --bold-weight: 900;
   --box-border: 2px solid black;
@@ -129,6 +130,7 @@ export const theme: ThemeData = {
   --code-shadow: 0 2px 0 black;
   --code-size: .90em;
   --code-text: #803232;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #4e5b6f;
   --collapse-icon-color-collapsed: #1b262f;
   --color-accent: rgb(186, 64, 64);
@@ -136,8 +138,10 @@ export const theme: ThemeData = {
   --color-accent-2: rgb(209, 113, 121);
   --color-accent-hsl: 0, 49%, 49%;
   --comment-font: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
+  --dark: var(--text-normal);
   --dark-accent: #04070c;
   --dark-sidebar: #000000;
+  --darkgray: var(--text-normal);
   --dataview-table-width: 100%;
   --dataview-th-alt-color: rgba(134, 55, 55, 0.1);
   --dataview-th-background: black;
@@ -261,6 +265,7 @@ export const theme: ThemeData = {
   --graph-node-unresolved: #1b262f;
   --graph-tag: #04070c;
   --graph-text: #475569;
+  --gray: var(--text-muted);
   --h1-background: transparent;
   --h1-border-color: #aa3333;
   --h1-border-left-color: #380b13;
@@ -373,6 +378,7 @@ export const theme: ThemeData = {
   --header-shadow: transparent;
   --header-text-align: start;
   --header-weight: 700;
+  --headerFont: var(--font-text);
   --headers: #aa3333;
   --heading-formatting: #1b262f;
   --heading-spacing: 10px;
@@ -460,6 +466,8 @@ export const theme: ThemeData = {
   --latex-color: #c94d4d;
   --latex-format-color: #1b262f;
   --latex-syntax-color: #803232;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.3em;
   --lines: #571a1a;
   --link-background: transparent;
@@ -654,6 +662,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #803232;
   --search-icon-color: #803232;
   --search-result-background: #070b11;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #475569;
   --setting-item-alt-background-hover: #03000054;
   --setting-item-background-hover: rgba(60, 8, 8, 0.46);
@@ -825,6 +834,7 @@ export const theme: ThemeData = {
   --tag-text: #d04e4e;
   --tall: 700px;
   --td: #03000054;
+  --tertiary: var(--text-accent-hover);
   --text: #475569;
   --text-accent: #c5575b;
   --text-accent-hover: #475569;
@@ -836,6 +846,7 @@ export const theme: ThemeData = {
   --text-normal: #475569;
   --text-on-accent: #e5ebee;
   --text-selection: rgba(139, 6, 6, 0.4);
+  --textHighlight: var(--text-highlight-bg);
   --th: #571a1a;
   --th-text: #e5ebee;
   --theme-rainbow-1: #aa3333;
@@ -845,6 +856,7 @@ export const theme: ThemeData = {
   --theme-rainbow-5: #475569;
   --theme-rainbow-6: #04070c;
   --tiny: 100px;
+  --titleFont: var(--font-text);
   --titlebar-background: #070b11;
   --titlebar-background-focused: black;
   --titlebar-border-color: #380b13;
@@ -1923,6 +1935,7 @@ body sup {
   --blockquote-font-style: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --blockquote-padding: 12px 24px;
   --blockquote-padding-lp: 7px 0;
+  --bodyFont: var(--font-text);
   --bold-modifier: 500;
   --bold-weight: 900;
   --box-border: 2px solid #d9e4f0;
@@ -1983,6 +1996,7 @@ body sup {
   --code-shadow: 0 2px 0 #d9e4f0;
   --code-size: 0.9em;
   --code-text: #ea4262;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #4e5b6f;
   --collapse-icon-color-collapsed: #a6bbde;
   --color-accent: rgb(186, 64, 64);
@@ -1990,8 +2004,10 @@ body sup {
   --color-accent-2: rgb(199, 87, 92);
   --color-accent-hsl: 0, 49%, 49%;
   --comment-font: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
+  --dark: var(--text-normal);
   --dark-accent: #c35c5c;
   --dark-sidebar: #dce4f6;
+  --darkgray: var(--text-normal);
   --dataview-table-width: 100%;
   --dataview-th-background: #d5e1f3;
   --dataview-th-border-bottom: 2px solid #c14343;
@@ -2113,6 +2129,7 @@ body sup {
   --graph-node-unresolved: #a6bbde;
   --graph-tag: #c35c5c;
   --graph-text: #30353a;
+  --gray: var(--text-muted);
   --h1-background: transparent;
   --h1-border-color: #bb5555;
   --h1-border-left-color: #ccd6eb;
@@ -2225,6 +2242,7 @@ body sup {
   --header-shadow: transparent;
   --header-text-align: start;
   --header-weight: 700;
+  --headerFont: var(--font-text);
   --headers: #c14343;
   --heading-formatting: #a6bbde;
   --heading-spacing: 10px;
@@ -2313,6 +2331,8 @@ body sup {
   --latex-color: #cd2626;
   --latex-format-color: #a6bbde;
   --latex-syntax-color: #697580;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.3em;
   --lines: #d6deea;
   --link-background: transparent;
@@ -2503,6 +2523,7 @@ body sup {
   --search-clear-button-color: #697580;
   --search-icon-color: #697580;
   --search-result-background: #e6edf8;
+  --secondary: var(--text-accent);
   --setting-item-alt-background-hover: #d0ddef62;
   --setting-item-background-hover: rgba(255, 0, 0, 0.212);
   --setting-item-border-color: #ccd6eb;
@@ -2669,6 +2690,7 @@ body sup {
   --tag-text: #cd2626;
   --tall: 700px;
   --td: #d0ddef62;
+  --tertiary: var(--text-accent-hover);
   --text: #30353a;
   --text-accent: #5599d0;
   --text-accent-hover: #aac1d3;
@@ -2680,6 +2702,7 @@ body sup {
   --text-normal: #30353a;
   --text-on-accent: #e5ebee;
   --text-selection: rgba(229, 149, 149, 0.37);
+  --textHighlight: var(--text-highlight-bg);
   --th: #c35c5c;
   --th-text: #e5ebee;
   --theme-rainbow-1: #bb5555;
@@ -2689,6 +2712,7 @@ body sup {
   --theme-rainbow-5: #697795;
   --theme-rainbow-6: #a4aec2;
   --tiny: 100px;
+  --titleFont: var(--font-text);
   --titlebar-background: #e6edf8;
   --titlebar-background-focused: #d5e1f3;
   --titlebar-border-color: #ccd6eb;

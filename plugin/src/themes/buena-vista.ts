@@ -102,6 +102,8 @@ export const theme: ThemeData = {
   --color-base-70: rgb(166, 166, 166);
   --color-base-80: rgb(194, 194, 194);
   --color-base-90: rgb(224, 224, 224);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(69, 69, 69);
   --dropdown-background: rgb(69, 69, 69);
   --dropdown-background-hover: rgb(79, 79, 79);
@@ -122,7 +124,9 @@ export const theme: ThemeData = {
   --graph-node: rgb(166, 166, 166);
   --graph-node-unresolved: rgb(112, 112, 112);
   --graph-text: rgb(255, 255, 255);
+  --gray: var(--text-muted);
   --heading-formatting: rgb(112, 112, 112);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(69, 69, 69);
   --icon-color: rgb(166, 166, 166);
   --icon-color-focused: rgb(255, 255, 255);
@@ -133,6 +137,8 @@ export const theme: ThemeData = {
   --interactive-normal: rgb(69, 69, 69);
   --italic-color: rgb(172, 140, 248);
   --italic-h: 258;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: rgb(112, 112, 112);
   --list-marker-color-hover: rgb(166, 166, 166);
   --max-highlight: 45%;
@@ -217,6 +223,7 @@ export const theme: ThemeData = {
   --text-highlight-h: 438;
   --text-muted: rgb(166, 166, 166);
   --text-normal: rgb(255, 255, 255);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(51, 51, 51);
   --titlebar-background-focused: #36363680;
   --titlebar-border-color: rgb(69, 69, 69);
@@ -1053,6 +1060,8 @@ body sup {
   --color-base-70: rgb(110, 110, 110);
   --color-base-80: rgb(84, 84, 84);
   --color-base-90: rgb(56, 56, 56);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(207, 207, 207);
   --dropdown-background: rgb(255, 255, 255);
   --dropdown-background-hover: rgb(245, 245, 245);
@@ -1073,7 +1082,9 @@ body sup {
   --graph-node: rgb(110, 110, 110);
   --graph-node-unresolved: rgb(161, 161, 161);
   --graph-text: rgb(26, 26, 26);
+  --gray: var(--text-muted);
   --heading-formatting: rgb(161, 161, 161);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(207, 207, 207);
   --icon-color: rgb(110, 110, 110);
   --icon-color-focused: rgb(26, 26, 26);
@@ -1084,6 +1095,8 @@ body sup {
   --interactive-normal: rgb(255, 255, 255);
   --italic-color: rgb(55, 10, 158);
   --italic-h: 258;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: rgb(161, 161, 161);
   --list-marker-color-hover: rgb(110, 110, 110);
   --max-highlight: 65%;
@@ -1166,6 +1179,7 @@ body sup {
   --text-highlight-h: 438;
   --text-muted: rgb(110, 110, 110);
   --text-normal: rgb(26, 26, 26);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(227, 227, 227);
   --titlebar-background-focused: #e0e0e080;
   --titlebar-border-color: rgb(207, 207, 207);

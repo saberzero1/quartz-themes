@@ -40,6 +40,8 @@ export const theme: ThemeData = {
   --code-normal: #ececec;
   --code-punctuation: #8e8e9e;
   --collapse-icon-color: #5c5c66;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: #ff058d;
   --divider-width: 0px;
@@ -56,6 +58,7 @@ export const theme: ThemeData = {
   --graph-node: #8e8e9e;
   --graph-node-unresolved: #5c5c66;
   --graph-text: #ececec;
+  --gray: var(--text-muted);
   --header-line-height: 1.2;
   --heading-formatting: #5c5c66;
   --icon-color: #8e8e9e;
@@ -65,6 +68,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: #5c5c66;
   --interactive-accent: #ff058d;
   --interactive-hover: rgba(255, 255, 255, 0.05);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: #5c5c66;
   --list-marker-color-hover: #8e8e9e;
   --menu-background: #0d0e16;
@@ -97,6 +102,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #8e8e9e;
   --search-icon-color: #8e8e9e;
   --search-result-background: #13141f;
+  --secondary: var(--interactive-accent);
   --selection-color: rgba(255, 5, 141, 0.25);
   --setting-group-heading-color: #ececec;
   --setting-items-background: #181924;

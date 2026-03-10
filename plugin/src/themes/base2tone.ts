@@ -75,6 +75,8 @@ export const theme: ThemeData = {
   --code-punctuation: rgb(225, 210, 254);
   --collapse-icon-color: rgb(208, 185, 254);
   --collapse-icon-color-collapsed: rgb(131, 81, 230);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(84, 75, 104);
   --divider-color-hover: rgb(207, 136, 74);
   --dropdown-background: rgb(41, 36, 51);
@@ -93,7 +95,9 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(131, 81, 230);
   --graph-node-unresolved: rgb(208, 185, 254);
   --graph-text: rgb(241, 235, 255);
+  --gray: var(--text-muted);
   --heading-formatting: rgb(208, 185, 254);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(84, 75, 104);
   --icon-color: rgb(225, 210, 254);
   --icon-color-active: rgb(131, 81, 230);
@@ -107,6 +111,8 @@ export const theme: ThemeData = {
   --interactive-accent-rgb: 207,136,74;
   --interactive-hover: rgb(207, 136, 74);
   --interactive-normal: rgb(41, 36, 51);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(131, 81, 230);
   --link-color-hover: rgb(145, 99, 238);
   --link-external: rgb(207, 136, 74);
@@ -156,6 +162,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(225, 210, 254);
   --search-icon-color: rgb(225, 210, 254);
   --search-result-background: rgb(41, 36, 51);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(241, 235, 255);
   --setting-items-background: rgb(53, 47, 66);
   --setting-items-border-color: rgb(84, 75, 104);
@@ -185,6 +192,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: rgb(207, 136, 74);
   --tag-color: rgb(131, 81, 230);
   --tag-color-hover: rgb(131, 81, 230);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(131, 81, 230);
   --text-accent-hover: rgb(145, 99, 238);
   --text-faint: rgb(208, 185, 254);
@@ -193,6 +201,7 @@ export const theme: ThemeData = {
   --text-normal: rgb(241, 235, 255);
   --text-on-accent: rgb(251, 250, 249);
   --text-selection: rgba(131, 81, 230, 0.25);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(84, 75, 104);
   --titlebar-background-focused: rgb(53, 47, 66);
   --titlebar-border-color: rgb(84, 75, 104);

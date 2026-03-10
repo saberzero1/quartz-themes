@@ -49,6 +49,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: rgba(from rgb(138, 92, 245) r g b / 0.2);
   --blue-h: 210;
   --blur-background: color-mix(in srgb, rgb(34, 27, 49) 65%, transparent) linear-gradient(rgb(34, 27, 49), color-mix(in srgb, rgb(34, 27, 49) 65%, transparent));
+  --bodyFont: var(--font-text);
   --callout-bug: from rgb(245, 105, 92) r g b;
   --callout-color: from rgb(138, 92, 245) r g b;
   --callout-default: from rgb(92, 168, 245) r g b;
@@ -94,6 +95,7 @@ export const theme: ThemeData = {
   --code-string: rgb(143, 245, 92);
   --code-tag: rgb(245, 105, 92);
   --code-value: rgb(168, 92, 245);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(79, 63, 115);
   --color-base-00: rgb(23, 18, 33);
   --color-base-05: rgb(34, 27, 49);
@@ -126,6 +128,8 @@ export const theme: ThemeData = {
   --color-yellow: rgb(245, 219, 92);
   --color-yellow-rgb: from rgb(245, 219, 92) r g b;
   --cyan-h: 185;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(79, 63, 115);
   --dropdown-background: rgb(34, 27, 49);
   --dropdown-background-hover: rgb(56, 45, 82);
@@ -160,6 +164,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(245, 219, 92);
   --graph-node-unresolved: rgba(from rgb(245, 105, 92) r g b / 0.8);
   --graph-text: rgb(198, 189, 219);
+  --gray: var(--text-muted);
   --green-h: 100;
   --h1-color: rgb(138, 92, 245);
   --h1-size: 2.488em;
@@ -172,8 +177,10 @@ export const theme: ThemeData = {
   --h5-color: rgb(138, 92, 245);
   --h5-size: 1.2em;
   --h6-color: rgb(138, 92, 245);
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(79, 63, 115);
   --heading-spacing: 1.2em;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(138, 92, 245);
   --hr-thickness: 0.1rem;
   --icon-color: rgb(113, 91, 164);
@@ -187,6 +194,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: rgb(79, 63, 115);
   --interactive-hover: rgb(56, 45, 82);
   --interactive-normal: rgb(34, 27, 49);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(138, 92, 245);
   --link-color-hover: rgb(138, 92, 245);
   --link-decoration: none;
@@ -314,6 +323,8 @@ export const theme: ThemeData = {
   --text-normal: rgb(198, 189, 219);
   --text-success: rgb(143, 245, 92);
   --text-warning: rgb(245, 156, 92);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(34, 27, 49);
   --titlebar-background-focused: rgb(34, 27, 49);
   --titlebar-border-color: rgb(79, 63, 115);
@@ -1332,6 +1343,7 @@ body sup {
   --bases-table-summary-background-hover: rgba(from rgb(138, 92, 245) r g b / 0.2);
   --blue-h: 210;
   --blur-background: color-mix(in srgb, rgb(249, 248, 251) 65%, transparent) linear-gradient(rgb(249, 248, 251), color-mix(in srgb, rgb(249, 248, 251) 65%, transparent));
+  --bodyFont: var(--font-text);
   --callout-bug: from rgb(245, 105, 92) r g b;
   --callout-color: from rgb(138, 92, 245) r g b;
   --callout-default: from rgb(92, 168, 245) r g b;
@@ -1377,6 +1389,7 @@ body sup {
   --code-string: rgb(143, 245, 92);
   --code-tag: rgb(245, 105, 92);
   --code-value: rgb(168, 92, 245);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(184, 173, 210);
   --color-base-00: rgb(249, 248, 251);
   --color-base-05: rgb(241, 239, 246);
@@ -1409,6 +1422,8 @@ body sup {
   --color-yellow: rgb(245, 219, 92);
   --color-yellow-rgb: from rgb(245, 219, 92) r g b;
   --cyan-h: 185;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(184, 173, 210);
   --dropdown-background: rgb(249, 248, 251);
   --dropdown-background-hover: rgb(227, 222, 237);
@@ -1443,6 +1458,7 @@ body sup {
   --graph-node-tag: rgb(245, 219, 92);
   --graph-node-unresolved: rgba(from rgb(245, 105, 92) r g b / 0.8);
   --graph-text: rgb(45, 36, 66);
+  --gray: var(--text-muted);
   --green-h: 100;
   --h1-color: rgb(138, 92, 245);
   --h1-size: 2.488em;
@@ -1455,8 +1471,10 @@ body sup {
   --h5-color: rgb(138, 92, 245);
   --h5-size: 1.2em;
   --h6-color: rgb(138, 92, 245);
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(184, 173, 210);
   --heading-spacing: 1.2em;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(138, 92, 245);
   --hr-thickness: 0.1rem;
   --icon-color: rgb(141, 123, 183);
@@ -1470,6 +1488,8 @@ body sup {
   --input-placeholder-color: rgb(184, 173, 210);
   --interactive-hover: rgb(227, 222, 237);
   --interactive-normal: rgb(249, 248, 251);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color-hover: rgb(138, 92, 245);
   --link-decoration: none;
   --link-decoration-hover: wavy;
@@ -1592,6 +1612,8 @@ body sup {
   --text-normal: rgb(45, 36, 66);
   --text-success: rgb(143, 245, 92);
   --text-warning: rgb(245, 156, 92);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(241, 239, 246);
   --titlebar-background-focused: rgb(241, 239, 246);
   --titlebar-border-color: rgb(184, 173, 210);

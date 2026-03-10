@@ -32,6 +32,7 @@ export const theme: ThemeData = {
   --blockquote-border: #893cf5;
   --blockquote-border-color: rgba(137, 60, 245, 0.55);
   --body-font-weight: normal;
+  --bodyFont: var(--font-interface);
   --canvas-background: #202020;
   --canvas-card-label-color: #893cf5d8;
   --caret-color: #cccccc;
@@ -44,8 +45,11 @@ export const theme: ThemeData = {
   --code-comment: #893cf5d8;
   --code-mono-font: 'OperatorMonoSSmLig-Book';
   --code-normal: #cccccc;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #893cf5d8;
   --collapse-icon-color-collapsed: #893cf5;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: 'Rubik', 'Glow Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
   --default-font-size: 1.05rem;
@@ -68,7 +72,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #893cf5;
   --graph-node-unresolved: #893cf5d8;
   --graph-text: #cccccc;
+  --gray: var(--text-faint);
+  --headerFont: var(--font-interface);
   --heading-formatting: #893cf5d8;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #202020;
   --icon-color-active: #893cf5;
   --icon-color-focused: #cccccc;
@@ -79,6 +86,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgba(137, 60, 245, 0.8);
   --interactive-accent-rgb: rgb(61, 215, 251);
   --interactive-before: #5e6565;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #893cf5;
   --link-external-color: #893cf5;
   --link-unresolved-color: #893cf5;
@@ -118,6 +127,7 @@ export const theme: ThemeData = {
   --ribbon-background: #1a1a1a;
   --ribbon-background-collapsed: #202020;
   --search-result-background: #202020;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #cccccc;
   --setting-items-background: #161616;
   --setting-items-border-color: #202020;
@@ -146,6 +156,7 @@ export const theme: ThemeData = {
   --tag-font-family: 'OperatorMonoSSmLig-Book', 'Glow Sans SC', '华文细黑', 'STXihei', 'PingFang TC',
     '微软雅黑体', 'Microsoft YaHei New', '微软雅黑', 'Microsoft Yahei', '宋体', 'SimSun',
     'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  --tertiary: var(--interactive-accent-hover);
   --test-color: rgb(122, 162, 247);
   --text-a: #61d0ff;
   --text-a-hover: #61d0ff;
@@ -163,6 +174,8 @@ export const theme: ThemeData = {
   --text-title-h3: #cccccc;
   --text-title-h4: #cccccc;
   --text-title-h5: #cccccc;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #1a1a1a;
   --titlebar-background-focused: #161616;
   --titlebar-border-color: #202020;

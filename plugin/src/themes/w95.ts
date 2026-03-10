@@ -79,6 +79,7 @@ export const theme: ThemeData = {
   --graph-line: #bdbebd;
   --graph-node-focused: rgb(0, 0, 122);
   --graph-node-unresolved: #4f5057;
+  --gray: var(--text-faint);
   --h1-color: #34548a;
   --h1-size: 1.4rem;
   --h2-color: #34548a;
@@ -94,6 +95,7 @@ export const theme: ThemeData = {
   --header-color: #34548a;
   --header-size: 1.4rem;
   --heading-formatting: #4f5057;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #707070;
   --icon-color-active: rgb(0, 0, 122);
   --indentation-guide-color: rgba(0, 0, 0, 0.4);
@@ -117,6 +119,8 @@ export const theme: ThemeData = {
   --interactive-hover: #FFFFFF;
   --interactive-normal: #FFFFFF;
   --italic-color: #343b58;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(0, 0, 122);
   --link-color-hover: hsl(237, 102%, 27.6%);
   --link-external-color: rgb(0, 0, 122);
@@ -162,6 +166,7 @@ export const theme: ThemeData = {
   --scrollbar-thumb: #f6f6f6;
   --scrollbar-track: #e3e3e3;
   --search-result-background: #bdbebd;
+  --secondary: var(--text-accent);
   --setting-group-heading-size: 14px;
   --setting-items-border-color: #707070;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
@@ -202,11 +207,13 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(0, 0, 122, 0.15);
   --tag-color: rgb(0, 0, 122);
   --tag-color-hover: rgb(0, 0, 122);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(0, 0, 122);
   --text-accent-hover: hsl(237, 102%, 27.6%);
   --text-faint: #4f5057;
   --text-highlight-bg: #485e3066;
   --text-selection: rgba(0, 0, 122, 0.2);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #bdbebd;
   --titlebar-background-focused: #bdbebd;
   --titlebar-border-color: #707070;

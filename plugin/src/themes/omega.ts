@@ -61,6 +61,8 @@ export const theme: ThemeData = {
   --collapse-icon-color: rgb(245, 245, 245);
   --coral-pink: rgb(248, 131, 121);
   --cornflower-blue: rgb(100, 149, 237);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(255, 239, 0);
   --divider-width: 2px;
   --embed-block-shadow-hover: 0 0 0 1px rgb(54, 69, 79);
@@ -83,6 +85,7 @@ export const theme: ThemeData = {
   --graph-node: rgb(245, 245, 245);
   --graph-node-unresolved: rgb(245, 245, 245);
   --graph-text: rgb(245, 245, 245);
+  --gray: var(--text-muted);
   --h1-color: rgb(255, 239, 0);
   --h2-color: rgb(255, 121, 0);
   --h3-color: rgb(128, 0, 255);
@@ -90,6 +93,7 @@ export const theme: ThemeData = {
   --h5-color: rgb(248, 131, 121);
   --h6-color: rgb(219, 215, 210);
   --heading-formatting: rgb(245, 245, 245);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(219, 215, 210);
   --hr-thickness: 1px;
   --icon-color: rgb(245, 245, 245);
@@ -107,6 +111,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: rgb(245, 245, 245);
   --input-radius: 4px;
   --italic-color: rgb(248, 131, 121);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(128, 0, 255);
   --link-color-hover: rgb(255, 239, 0);
   --link-external-color: rgb(255, 111, 255);
@@ -244,6 +250,7 @@ export const theme: ThemeData = {
   --text-highlight-bg-rgb: 255, 239, 0;
   --text-muted: rgb(245, 245, 245);
   --text-normal: rgb(245, 245, 245);
+  --textHighlight: var(--text-highlight-bg);
   --timber-wood: rgb(219, 215, 210);
   --titlebar-background: rgb(0, 53, 107);
   --titlebar-background-focused: rgb(0, 53, 107);

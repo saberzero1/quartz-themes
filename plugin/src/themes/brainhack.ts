@@ -69,8 +69,10 @@ export const theme: ThemeData = {
   --footnote-id-color-no-occurrences: rgb(138, 92, 245);
   --graph-node-focused: rgb(166, 139, 249);
   --graph-node-unresolved: rgb(138, 92, 245);
+  --gray: var(--text-faint);
   --heading-formatting: rgb(138, 92, 245);
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-active-hover);
   --highlight-1: rgba(255, 255, 255, 0.075);
   --highlight-2: rgba(255, 255, 255, 0.075);
   --icon-color-active: rgb(166, 139, 249);
@@ -79,6 +81,8 @@ export const theme: ThemeData = {
   --interactive-accent: rgb(138, 92, 245);
   --interactive-accent-hover: rgb(166, 139, 249);
   --italic-color: rgb(97, 97, 97);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(166, 139, 249);
   --link-color-hover: rgb(197, 182, 252);
   --link-external-color: rgb(166, 139, 249);
@@ -115,6 +119,7 @@ export const theme: ThemeData = {
   --ribbon-background: rgb(30, 30, 31);
   --ribbon-background-collapsed: rgb(33, 33, 33);
   --search-result-background: rgb(33, 33, 33);
+  --secondary: var(--text-accent);
   --shadow-1: rgba(8, 2, 24, 0.5);
   --shadow-2: rgba(18, 18, 18, 0.4);
   --shadow-3: rgba(0, 0, 0, 0.26);
@@ -144,11 +149,13 @@ export const theme: ThemeData = {
   --tag-color: rgb(166, 139, 249);
   --tag-color-hover: rgb(166, 139, 249);
   --tc: rgb(194, 194, 194);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(166, 139, 249);
   --text-accent-hover: rgb(197, 182, 252);
   --text-color-inverted: rgb(223, 223, 223);
   --text-faint: rgb(138, 92, 245);
   --text-selection: rgba(138, 92, 245, 0.33);
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: rgb(30, 30, 31);
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --quartz-icon-color: currentColor;
@@ -915,8 +922,10 @@ body sup {
   --footnote-id-color-no-occurrences: rgb(138, 92, 245);
   --graph-node-focused: rgb(138, 92, 245);
   --graph-node-unresolved: rgb(138, 92, 245);
+  --gray: var(--text-faint);
   --heading-formatting: rgb(138, 92, 245);
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-active-hover);
   --highlight-1: rgba(0, 0, 0, 0.056);
   --highlight-2: rgba(214, 214, 214, 0.308);
   --icon-color-active: rgb(138, 92, 245);
@@ -926,6 +935,8 @@ body sup {
   --interactive-accent-hover: rgb(166, 139, 249);
   --interactive-normal: rgb(250, 250, 250);
   --italic-color: rgb(154, 154, 154);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(138, 92, 245);
   --link-color-hover: rgb(166, 139, 249);
   --link-external-color: rgb(138, 92, 245);
@@ -963,6 +974,7 @@ body sup {
   --ribbon-background: rgb(255, 255, 255);
   --ribbon-background-collapsed: rgb(245, 245, 245);
   --search-result-background: rgb(245, 245, 245);
+  --secondary: var(--text-accent);
   --shadow-1: rgba(8, 2, 24, 0.5);
   --shadow-2: rgba(0, 0, 0, 0.257);
   --shadow-3: rgba(0, 0, 0, 0.08);
@@ -992,11 +1004,13 @@ body sup {
   --tag-color: rgb(138, 92, 245);
   --tag-color-hover: rgb(138, 92, 245);
   --tc: rgb(67, 67, 67);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(166, 139, 249);
   --text-color-inverted: black;
   --text-faint: rgb(138, 92, 245);
   --text-selection: rgba(138, 92, 245, 0.2);
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: rgb(255, 255, 255);
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --quartz-icon-color: currentColor;

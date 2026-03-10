@@ -18,6 +18,8 @@ export const theme: ThemeData = {
   --code-background: #000000;
   --code-normal: #bbbbbb;
   --code-radius: 0px;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --flair-color: #bbbbbb;
   --fluro-blue-rgb: 0, 255, 255;
   --fluro-coral-rgb: 240, 128, 128;
@@ -28,6 +30,7 @@ export const theme: ThemeData = {
 	--fluro-yellow-rgb: 255, 255, 0;
   --footnote-radius: 0px;
   --graph-text: #bbbbbb;
+  --gray: var(--text-normal);
   --h2-color: #fff;
   --h3-color: #fff;
   --h3-weight: 500;

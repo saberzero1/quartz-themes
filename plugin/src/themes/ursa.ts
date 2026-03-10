@@ -33,6 +33,8 @@ export const theme: ThemeData = {
   --code-comment: #B2B2B2;
   --code-normal: #DDDDDD;
   --collapse-icon-color: #B2B2B2;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #92a1a17a;
   --divider-color-hover: #92A1A1;
   --embed-block-shadow-hover: 0 0 0 1px #92a1a17a, inset 0 0 0 1px #92a1a17a;
@@ -46,6 +48,7 @@ export const theme: ThemeData = {
   --footnote-id-color-no-occurrences: #B2B2B2;
   --graph-node-unresolved: #B2B2B2;
   --graph-text: #DDDDDD;
+  --gray: var(--text-faint);
   --heading-formatting: #B2B2B2;
   --hr-color: #92a1a17a;
   --icon-color-focused: #DDDDDD;
@@ -54,6 +57,8 @@ export const theme: ThemeData = {
   --interactive-accent: #92A1A1;
   --interactive-accent-rgb: #6BCAFB;
   --interactive-before: #5e6565;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: #B2B2B2;
   --menu-background: #1E2022;
   --metadata-border-color: #92a1a17a;
@@ -82,6 +87,7 @@ export const theme: ThemeData = {
   --ribbon-background: #1E2022;
   --ribbon-background-collapsed: #1E2022;
   --search-result-background: #1E2022;
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: #DDDDDD;
   --setting-items-background: #1E2022;
   --setting-items-border-color: #92a1a17a;
@@ -867,6 +873,8 @@ body sup {
   --code-comment: #B2B2B2;
   --code-normal: #333;
   --collapse-icon-color: #B2B2B2;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #92a1a17a;
   --divider-color-hover: #92A1A1;
   --embed-block-shadow-hover: 0 0 0 1px #92a1a17a, inset 0 0 0 1px #92a1a17a;
@@ -880,6 +888,7 @@ body sup {
   --footnote-id-color-no-occurrences: #B2B2B2;
   --graph-node-unresolved: #B2B2B2;
   --graph-text: #333;
+  --gray: var(--text-faint);
   --heading-formatting: #B2B2B2;
   --hr-color: #92a1a17a;
   --icon-color-focused: #333;
@@ -888,6 +897,8 @@ body sup {
   --interactive-accent: #92A1A1;
   --interactive-accent-rgb: #db4d52;
   --interactive-before: #5e6565;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: #B2B2B2;
   --menu-background: #FBFBFB;
   --metadata-border-color: #92a1a17a;
@@ -915,6 +926,7 @@ body sup {
   --ribbon-background: #FBFBFB;
   --ribbon-background-collapsed: #FBFBFB;
   --search-result-background: #FBFBFB;
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: #333;
   --setting-items-background: #FBFBFB;
   --setting-items-border-color: #92a1a17a;

@@ -15,6 +15,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: #1D1F21;
   --bases-table-header-color: #969896;
   --bases-table-summary-background: #1D1F21;
+  --bodyFont: var(--font-text);
   --canvas-background: #1D1F21;
   --caret-color: #C5C8C6;
   --checkbox-border-color-hover: #969896;
@@ -31,6 +32,7 @@ export const theme: ThemeData = {
   --code-string: #B5BD68;
   --code-tag: #CC6666;
   --code-value: #B777E0;
+  --codeFont: var(--font-text);
   --color-blue: #81A2BE;
   --color-cyan: #8ABEB7;
   --color-green: #B5BD68;
@@ -39,6 +41,8 @@ export const theme: ThemeData = {
   --color-purple: #B777E0;
   --color-red: #CC6666;
   --color-yellow: #F0C674;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #181A1E;
   --file-header-background: #1D1F21;
   --file-header-background-focused: #1D1F21;
@@ -52,9 +56,13 @@ export const theme: ThemeData = {
   --graph-node-attachment: #F0C674;
   --graph-node-tag: #B5BD68;
   --graph-text: #C5C8C6;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --icon-color: #969896;
   --icon-color-focused: #C5C8C6;
   --icon-color-hover: #969896;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color-hover: #969896;
   --menu-background: #282A2E;
   --metadata-input-text-color: #C5C8C6;
@@ -110,6 +118,7 @@ export const theme: ThemeData = {
   --text-selection: #373B41;
   --text-success: #B5BD68;
   --text-warning: #DE935F;
+  --titleFont: var(--font-text);
   --titlebar-background: #1D1F21;
   --titlebar-background-focused: #282A2E;
   --titlebar-text-color: #969896;

@@ -88,6 +88,8 @@ export const theme: ThemeData = {
   --color-base-85: rgb(0, 0, 0);
   --color-base-90: rgb(0, 0, 0);
   --color-base-95: rgb(0, 0, 0);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(0, 0, 0);
   --divider-color-hover: rgb(0, 0, 0);
   --dropdown-background: rgb(0, 0, 0);
@@ -106,7 +108,9 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(102, 102, 102);
   --graph-node-unresolved: rgb(0, 0, 0);
   --graph-text: rgb(0, 0, 0);
+  --gray: var(--text-muted);
   --heading-formatting: rgb(0, 0, 0);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(0, 0, 0);
   --icon-color: rgb(0, 0, 0);
   --icon-color-active: rgb(102, 102, 102);
@@ -121,6 +125,8 @@ export const theme: ThemeData = {
   40%;
   --interactive-hover: rgb(0, 0, 0);
   --interactive-normal: rgb(0, 0, 0);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(102, 102, 102);
   --link-color-hover: rgb(0, 0, 0);
   --link-external-color: rgb(102, 102, 102);
@@ -173,6 +179,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(0, 0, 0);
   --search-icon-color: rgb(0, 0, 0);
   --search-result-background: rgb(0, 0, 0);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(0, 0, 0);
   --setting-items-background: rgb(0, 0, 0);
   --setting-items-border-color: rgb(0, 0, 0);
@@ -209,6 +216,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(102, 102, 102, 0.15);
   --tag-color: rgb(102, 102, 102);
   --tag-color-hover: rgb(102, 102, 102);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(102, 102, 102);
   --text-accent-hover: rgb(0, 0, 0);
   --text-faint: rgb(0, 0, 0);
@@ -216,6 +224,7 @@ export const theme: ThemeData = {
   --text-muted: rgb(0, 0, 0);
   --text-normal: rgb(0, 0, 0);
   --text-selection: rgba(102, 102, 102, 0.2);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(0, 0, 0);
   --titlebar-background-focused: rgb(0, 0, 0);
   --titlebar-border-color: rgb(0, 0, 0);

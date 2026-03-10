@@ -45,7 +45,10 @@ export const theme: ThemeData = {
   --file-header-background-focused: rgb(16, 14, 21);
   --footnote-divider-color: transparent;
   --footnote-radius: 100px;
+  --highlight: var(--text-highlight-bg);
   --hr-color: transparent;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-external-color: rgb(184, 153, 255);
   --link-external-color-hover: rgb(184, 153, 255);
   --menu-background: rgb(27, 21, 40);
@@ -89,6 +92,7 @@ export const theme: ThemeData = {
   --text-highlight-bg: rgb(31, 0, 102);
   --text-on-accent: rgb(27, 21, 40);
   --text-on-accent-inverted: rgb(27, 21, 40);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(27, 21, 40);
   --titlebar-background-focused: rgb(27, 21, 40);
   --titlebar-border-color: transparent;
@@ -533,10 +537,13 @@ body kbd {
   --flair-background: rgb(219, 204, 255);
   --footnote-divider-color: transparent;
   --footnote-radius: 100px;
+  --highlight: var(--text-highlight-bg);
   --hr-color: transparent;
   --interactive-accent: rgb(47, 0, 158);
   --interactive-accent-hover: rgb(47, 0, 158);
   --interactive-normal: rgb(219, 204, 255);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-external-color: rgb(47, 0, 158);
   --link-external-color-hover: rgb(47, 0, 158);
   --menu-background: hsla(
@@ -568,6 +575,7 @@ body kbd {
 	);
   --ribbon-background-collapsed: rgb(244, 240, 255);
   --search-result-background: rgb(244, 240, 255);
+  --secondary: var(--interactive-accent);
   --setting-items-border-color: transparent;
   --slider-track-background: transparent;
   --status-bar-background: hsla(
@@ -607,8 +615,10 @@ body kbd {
   --tag-background: rgb(201, 179, 255);
   --tag-background-hover: rgb(201, 179, 255);
   --tag-color: rgb(47, 0, 158);
+  --tertiary: var(--interactive-accent-hover);
   --text-highlight-bg: rgb(201, 179, 255);
   --text-on-accent-inverted: white;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: hsla(
 		258,
 		88%,

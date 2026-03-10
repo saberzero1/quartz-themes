@@ -38,6 +38,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #22212c;
   --blockquote-border-color: #483699;
   --blur-background: color-mix(in srgb, #2a2a2a 65%, transparent) linear-gradient(#2a2a2a, color-mix(in srgb, #2a2a2a 65%, transparent));
+  --bodyFont: var(--font-interface);
   --border-xsm: rgba(255, 255, 255, 0.25);
   --border-xsm-alt: rgba(100, 100, 100, 0.25);
   --canvas-background: #22212c;
@@ -58,6 +59,7 @@ export const theme: ThemeData = {
   --code-punctuation: #6e6b7e;
   --code-string: rgb(101, 230, 168);
   --code-value: rgb(201, 184, 255);
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #6c6498;
   --collapse-icon-color-collapsed: #bd93f9;
   --color-black: rgb(30, 31, 36);
@@ -163,6 +165,8 @@ export const theme: ThemeData = {
   --color-yellow-gradient-2: linear-gradient(-90deg,
     #f3ee5e, #f1ec50, #f0eb41, #eee933, 
     #ece725, #eae516, #dbd815, #ccc914);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --divider-color: rgb(52, 58, 75);
   --divider-color-hover: #483699;
@@ -234,10 +238,13 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(101, 230, 168);
   --graph-node-unresolved: #6c6498;
   --graph-text: #f8f8f2;
+  --gray: var(--text-muted);
   --header-line-height: 1.264em;
   --header-shadow-color: rgb(31, 31, 31);
   --header-shadow-size: 0px 4px 3px;
+  --headerFont: var(--font-interface);
   --heading-formatting: #6c6498;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(52, 58, 75);
   --icon-color: #6e6b7e;
   --icon-color-active: #bd93f9;
@@ -251,6 +258,8 @@ export const theme: ThemeData = {
   --interactive-hover: #303030;
   --interactive-normal: #2a2a2a;
   --interactive-success: rgb(13, 145, 116);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height: 1.58em;
   --line-width: 42em;
   --link-color: #bd93f9;
@@ -367,6 +376,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #6e6b7e;
   --search-icon-color: #6e6b7e;
   --search-result-background: #22212c;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #f8f8f2;
   --setting-items-background: #23212d;
   --setting-items-border-color: rgb(52, 58, 75);
@@ -411,6 +421,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #483699;
   --tag-color: #bd93f9;
   --tag-color-hover: #bd93f9;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #bd93f9;
   --text-accent-hover: #bd93f9;
   --text-error: rgb(252, 95, 142);
@@ -423,6 +434,8 @@ export const theme: ThemeData = {
   --text-on-accent: #f8f8f2;
   --text-selection: #363948;
   --text-success: rgb(101, 230, 168);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #15131f;
   --titlebar-background-focused: #2a2442;
   --titlebar-border-color: rgb(52, 58, 75);

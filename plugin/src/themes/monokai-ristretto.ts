@@ -36,6 +36,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #2c2525;
   --blockquote-border-color: #85dacc;
   --blur-background: color-mix(in srgb, #403838 65%, transparent) linear-gradient(#403838, color-mix(in srgb, #403838 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: #2c2525;
   --canvas-card-label-color: #5b5353;
   --caret-color: #e6d9db;
@@ -50,8 +51,11 @@ export const theme: ThemeData = {
   --code-comment: #5b5353;
   --code-normal: #e6d9db;
   --code-punctuation: #72696a;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #5b5353;
   --collapse-icon-color-collapsed: #85dacc;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #403838;
   --divider-color-hover: #85dacc;
   --dropdown-background: #403838;
@@ -75,7 +79,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #85dacc;
   --graph-node-unresolved: #5b5353;
   --graph-text: #e6d9db;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #5b5353;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #403838;
   --icon-color: #72696a;
   --icon-color-active: #85dacc;
@@ -88,6 +95,8 @@ export const theme: ThemeData = {
   --interactive-hover: #5b5353;
   --interactive-normal: #403838;
   --interactive-success: #adda78;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #85dacc;
   --link-color-hover: #85dacc;
   --link-external-color: #85dacc;
@@ -137,6 +146,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #72696a;
   --search-icon-color: #72696a;
   --search-result-background: #2c2525;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #e6d9db;
   --setting-items-background: #2c2525;
   --setting-items-border-color: #403838;
@@ -166,6 +176,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #85dacc;
   --tag-color: #85dacc;
   --tag-color-hover: #85dacc;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #85dacc;
   --text-accent-hover: #85dacc;
   --text-error: #fd6883;
@@ -177,6 +188,8 @@ export const theme: ThemeData = {
   --text-normal: #e6d9db;
   --text-on-accent: #2c2525;
   --text-selection: rgba(64, 56, 56, 0.5);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #2c2525;
   --titlebar-background-focused: #211c1c;
   --titlebar-border-color: #403838;

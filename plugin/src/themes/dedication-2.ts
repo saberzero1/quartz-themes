@@ -23,6 +23,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: #0d1117;
   --bases-table-summary-background: #0d1117;
   --blockquote-border-color: #0066cc;
+  --bodyFont: var(--font-interface);
   --canvas-background: #0d1117;
   --canvas-card-label-color: #c0b0a0;
   --caret-color: #dedede;
@@ -34,8 +35,11 @@ export const theme: ThemeData = {
   --code-border-color: #00ffff;
   --code-comment: #c0b0a0;
   --code-normal: #dedede;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #c0b0a0;
   --collapse-icon-color-collapsed: #00ffff;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --divider-color: #00ffff;
   --divider-color-hover: #0066cc;
@@ -53,7 +57,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #00ffff;
   --graph-node-unresolved: #c0b0a0;
   --graph-text: #dedede;
+  --gray: var(--text-faint);
+  --headerFont: var(--font-interface);
   --heading-formatting: #c0b0a0;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #00ffff;
   --icon-color-active: #00ffff;
   --icon-color-focused: #dedede;
@@ -63,6 +70,8 @@ export const theme: ThemeData = {
   --interactive-accent: #0066cc;
   --interactive-accent-rgb: #f8c537;
   --interactive-before: #7c6f64;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #00ffff;
   --link-color-hover: #D49335;
   --link-decoration: none;
@@ -106,6 +115,7 @@ export const theme: ThemeData = {
   --ribbon-background: #161b22;
   --ribbon-background-collapsed: #0d1117;
   --search-result-background: #0d1117;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #dedede;
   --setting-items-border-color: #00ffff;
   --slider-track-background: #00ffff;
@@ -131,6 +141,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #0066cc;
   --tag-color: #00ffff;
   --tag-color-hover: #00ffff;
+  --tertiary: var(--text-accent-hover);
   --text-a: #f8c537;
   --text-a-hover: #83a598;
   --text-accent: #00ffff;
@@ -147,6 +158,8 @@ export const theme: ThemeData = {
   --text-title-h4: #F9F871;
   --text-title-h5: #ff5757;
   --text-title-h6: #ff3cd5;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #161b22;
   --titlebar-background-focused: #21262d;
   --titlebar-border-color: #00ffff;
@@ -912,6 +925,7 @@ body sup {
   --bases-table-summary-background: #EDEDED;
   --blockquote-border-color: #2962ff;
   --blur-background: color-mix(in srgb, #EDEDED 65%, transparent) linear-gradient(#EDEDED, color-mix(in srgb, #EDEDED 65%, transparent));
+  --bodyFont: var(--font-interface);
   --canvas-background: #EDEDED;
   --canvas-card-label-color: #999999;
   --caret-color: #1A2023;
@@ -923,8 +937,11 @@ body sup {
   --code-border-color: #00b8d4;
   --code-comment: #999999;
   --code-normal: #1A2023;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #999999;
   --collapse-icon-color-collapsed: #00b8d4;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --divider-color: #00b8d4;
   --divider-color-hover: #2962ff;
@@ -942,7 +959,10 @@ body sup {
   --graph-node-focused: #00b8d4;
   --graph-node-unresolved: #999999;
   --graph-text: #1A2023;
+  --gray: var(--text-faint);
+  --headerFont: var(--font-interface);
   --heading-formatting: #999999;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #00b8d4;
   --icon-color-active: #00b8d4;
   --icon-color-focused: #1A2023;
@@ -952,6 +972,8 @@ body sup {
   --interactive-accent: #2962ff;
   --interactive-accent-rgb: #d81b60;
   --interactive-before: #a89984;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #00b8d4;
   --link-color-hover: #d50000;
   --link-decoration: none;
@@ -994,6 +1016,7 @@ body sup {
   --ribbon-background: #C4C4C4;
   --ribbon-background-collapsed: #EDEDED;
   --search-result-background: #EDEDED;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #1A2023;
   --setting-items-background: #d4d4d4;
   --setting-items-border-color: #00b8d4;
@@ -1020,6 +1043,7 @@ body sup {
   --table-selection-border-color: #2962ff;
   --tag-color: #00b8d4;
   --tag-color-hover: #00b8d4;
+  --tertiary: var(--text-accent-hover);
   --text-a: #2962ff;
   --text-a-hover: #0039cb;
   --text-accent: #00b8d4;
@@ -1037,6 +1061,8 @@ body sup {
   --text-title-h5: #ff1744;
   --text-title-h6: #e040fb;
   --text-white: #ffffff;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #C4C4C4;
   --titlebar-background-focused: #707070;
   --titlebar-border-color: #00b8d4;

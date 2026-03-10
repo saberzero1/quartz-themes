@@ -40,6 +40,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: #959595;
   --bases-table-summary-background: #1E1E1E;
   --blur-background: color-mix(in srgb, #1E1E1E 65%, transparent) linear-gradient(#1E1E1E, color-mix(in srgb, #1E1E1E 65%, transparent));
+  --bodyFont: var(--font-text);
   --callout-blend-mode: normal;
   --callout-border-opacity: 0.5;
   --callout-border-width: 0.5px;
@@ -82,6 +83,7 @@ export const theme: ThemeData = {
   --code-string: #65c756;
   --code-tag: #ec3643;
   --code-value: #c161fd;
+  --codeFont: var(--font-monospace);
   --codeblock-radius: 4px;
   --collapse-icon-color: #959595;
   --collapse-icon-color-collapsed: rgb(104, 48, 232);
@@ -141,6 +143,8 @@ export const theme: ThemeData = {
   --color-scrollbar-1: #959595;
   --color-scrollbar-2: #959595;
   --color-scrollbar-3: #6B6B6B;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(0, 0, 0);
   --divider-color-hover: rgb(0, 0, 0);
   --divider-color-tabv: #524845;
@@ -173,6 +177,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #65c756;
   --graph-node-unresolved: #B8B2B1;
   --graph-text: rgb(228, 228, 228);
+  --gray: var(--text-muted);
   --h1-font: SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif;
   --h1-size: 2.1rem;
   --h1-weight: 100;
@@ -194,8 +199,10 @@ export const theme: ThemeData = {
   --h6-size: 0.8rem;
   --h6-weight: 100;
   --header-height: 50px;
+  --headerFont: var(--font-text);
   --heading-formatting: #B8B2B1;
   --heading-spacing: 1.25rem;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #1E1E1E;
   --icon-color: #959595;
   --icon-color-active: rgb(104, 48, 232);
@@ -211,6 +218,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: #B8B2B1;
   --interactive-hover: #1E1D1E;
   --interactive-normal: #1E1E1E;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary-alt);
   --link-color: rgb(102, 64, 191);
   --link-color-hover: rgb(228, 228, 228);
   --link-decoration-color: rgb(102, 64, 191);
@@ -324,6 +333,8 @@ export const theme: ThemeData = {
   --text-normal: rgb(228, 228, 228);
   --text-success: #65c756;
   --text-warning: #f99e15;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background-focused: #2F2F2F;
   --titlebar-border-color: #1E1E1E;
   --titlebar-text-color: #959595;
@@ -1417,6 +1428,7 @@ body sup {
   --bases-table-summary-background: #FFFFFF;
   --blockquote-border-color: rgb(138, 92, 245);
   --blur-background: color-mix(in srgb, #FFFFFF 65%, transparent) linear-gradient(#FFFFFF, color-mix(in srgb, #FFFFFF 65%, transparent));
+  --bodyFont: var(--font-text);
   --callout-blend-mode: normal;
   --callout-border-opacity: 0.5;
   --callout-border-width: 0.5px;
@@ -1460,6 +1472,7 @@ body sup {
   --code-string: #65c756;
   --code-tag: #ec3643;
   --code-value: #c161fd;
+  --codeFont: var(--font-monospace);
   --codeblock-radius: 4px;
   --collapse-icon-color: #6E6966;
   --color-base-00: #FFFFFF;
@@ -1516,6 +1529,8 @@ body sup {
   --color-scrollbar-1: #C2C2C2;
   --color-scrollbar-2: #B4AFAE;
   --color-scrollbar-3: #E2E2E2;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #D8D2D2;
   --divider-color-hover: #D8D2D2;
   --divider-width: 0.5px;
@@ -1548,6 +1563,7 @@ body sup {
   --graph-node-tag: #65c756;
   --graph-node-unresolved: #B8B2B1;
   --graph-text: rgb(76, 73, 73);
+  --gray: var(--text-muted);
   --h1-font: SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif;
   --h1-size: 2.1rem;
   --h1-weight: 100;
@@ -1569,8 +1585,10 @@ body sup {
   --h6-size: 0.8rem;
   --h6-weight: 100;
   --header-height: 50px;
+  --headerFont: var(--font-text);
   --heading-formatting: #B8B2B1;
   --heading-spacing: 1.25rem;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #D8D2D2;
   --icon-color: #6E6966;
   --icon-color-focused: rgb(76, 73, 73);
@@ -1586,6 +1604,8 @@ body sup {
   --interactive-accent: rgb(138, 92, 245);
   --interactive-hover: #FAFAFA;
   --interactive-normal: #FFFFFF;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color-hover: rgb(76, 73, 73);
   --link-decoration-color: rgb(138, 92, 245);
   --link-external-color: rgb(76, 73, 73);
@@ -1658,6 +1678,7 @@ body sup {
   --search-clear-button-color: #6E6966;
   --search-icon-color: #6E6966;
   --search-result-background: #FFFFFF;
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: rgb(76, 73, 73);
   --setting-items-background: #FFFFFF;
   --setting-items-border-color: #D8D2D2;
@@ -1703,6 +1724,8 @@ body sup {
   --text-normal: rgb(76, 73, 73);
   --text-success: #65c756;
   --text-warning: #f99e15;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #F0E8E6;
   --titlebar-background-focused: #FAFAFA;
   --titlebar-border-color: #D8D2D2;

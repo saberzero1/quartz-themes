@@ -71,6 +71,8 @@ export const theme: ThemeData = {
   --graph-node-focused: rgba(138, 92, 245, 0);
   --icon-color-active: rgba(138, 92, 245, 0);
   --interactive-accent: rgba(138, 92, 245, 0);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgba(138, 92, 245, 0);
   --link-external-color: rgba(138, 92, 245, 0);
   --link-unresolved-color: rgba(138, 92, 245, 0);
@@ -96,6 +98,7 @@ export const theme: ThemeData = {
   --ribbon-background-collapsed: #2e2e2e;
   --scrollbar-radius: 5px;
   --search-result-background: #2e2e2e;
+  --secondary: var(--text-accent);
   --setting-items-radius: 5px;
   --slider-thumb-radius: 5px;
   --status-bar-background: #2e2e2e;
@@ -114,6 +117,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: rgba(138, 92, 245, 0);
   --tag-color: rgba(138, 92, 245, 0);
   --tag-color-hover: rgba(138, 92, 245, 0);
+  --tertiary: var(--text-accent);
   --text-accent: rgba(138, 92, 245, 0);
   --titlebar-background: #2e2e2e;
   --titlebar-background-focused: #2e2e2e;
@@ -693,6 +697,8 @@ body summary {
   --footnote-radius: 5px;
   --graph-node-focused: rgba(138, 92, 245, 0);
   --icon-color-active: rgba(138, 92, 245, 0);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgba(138, 92, 245, 0);
   --link-external-color: rgba(138, 92, 245, 0);
   --link-unresolved-color: rgba(138, 92, 245, 0);
@@ -719,6 +725,7 @@ body summary {
   --ribbon-background-collapsed: white;
   --scrollbar-radius: 5px;
   --search-result-background: white;
+  --secondary: var(--text-accent);
   --setting-items-radius: 5px;
   --slider-thumb-radius: 5px;
   --status-bar-background: white;
@@ -735,6 +742,7 @@ body summary {
   --tab-text-color-focused-highlighted: rgba(138, 92, 245, 0);
   --tag-color: rgba(138, 92, 245, 0);
   --tag-color-hover: rgba(138, 92, 245, 0);
+  --tertiary: var(--text-accent);
   --text-accent: rgba(138, 92, 245, 0);
   --titlebar-background: white;
   --titlebar-background-focused: white;

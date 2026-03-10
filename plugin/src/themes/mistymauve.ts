@@ -62,6 +62,7 @@ export const theme: ThemeData = {
   --h6-font: "Arvo", serif;
   --h6-size: 0.8em;
   --h6-weight: 400;
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
   --inline-title-color: #e26868;
   --inline-title-font: "Permanent Marker", cursive;
@@ -100,6 +101,7 @@ export const theme: ThemeData = {
   --scrollbar-bg: #d8d9cf;
   --scrollbar-thumb-bg: #ff8787;
   --search-icon-color: #ff8787;
+  --secondary: var(--text-accent);
   --tab-outline-color: #e26868;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(#d8d9cf, 91%, 55%);
   --tab-text-color-focused-active-current: #e26868;
@@ -117,12 +119,14 @@ export const theme: ThemeData = {
   --tag-border-color-hover: hsla(#d8d9cf, 91%, 55%, 0.15);
   --tag-color: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
   --tag-color-hover: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
   --text-accent-hover: hsl(calc(#d8d9cf - 5), calc(91% * 1.05), calc(55% * 1.29));
   --text-highlight-bg: #e26868;
   --text-on-accent: #ff8787;
   --text-on-accent-inverted: #ff8787;
   --text-selection: #e26868;
+  --textHighlight: var(--text-highlight-bg);
   --vault-name-color: #e26868;
   --vault-name-color-hover: #ff8787;
   --vault-name-font-size: 1em;
@@ -474,6 +478,7 @@ body .darkmode svg {
   --h6-font: "Arvo", serif;
   --h6-size: 0.8em;
   --h6-weight: 400;
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: hsl(#d8d9cf, 91%, 55%);
   --inline-title-color: #e26868;
   --inline-title-font: "Permanent Marker", cursive;
@@ -482,6 +487,8 @@ body .darkmode svg {
   --interactive-accent: hsl(calc(#d8d9cf - 1), calc(91% * 1.01), calc(55% * 1.075));
   --interactive-accent-hover: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
   --interactive-accent-hsl: #d8d9cf, 91%, 55%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #ff8787;
   --link-color-hover: #e26868;
   --link-decoration: none;
@@ -522,6 +529,7 @@ body .darkmode svg {
   --scrollbar-thumb-bg: #ff8787;
   --search-icon-color: #ff8787;
   --search-result-background: #d8d9cf;
+  --secondary: var(--text-accent);
   --status-bar-background: #ededed;
   --suggestion-background: #d8d9cf;
   --tab-background-active: #d8d9cf;
@@ -545,12 +553,14 @@ body .darkmode svg {
   --tag-border-color-hover: hsla(#d8d9cf, 91%, 55%, 0.15);
   --tag-color: hsl(#d8d9cf, 91%, 55%);
   --tag-color-hover: hsl(#d8d9cf, 91%, 55%);
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(#d8d9cf, 91%, 55%);
   --text-accent-hover: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
   --text-highlight-bg: #ff8787;
   --text-on-accent: #ff8787;
   --text-on-accent-inverted: #ff8787;
   --text-selection: #ff8787;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #ededed;
   --vault-name-color: #e26868;
   --vault-name-color-hover: #ff8787;

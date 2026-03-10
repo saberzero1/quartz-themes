@@ -40,6 +40,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: rgb(235, 115, 71);
   --blockquote-color: rgb(245, 240, 235);
   --blur-background: none;
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --callout-default: rgb(245, 240, 235);
   --callout-radius: 0px;
@@ -70,12 +71,15 @@ export const theme: ThemeData = {
   --code-string: rgb(89, 166, 89);
   --code-tag: rgb(184, 122, 122);
   --code-value: rgb(153, 122, 184);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(231, 220, 208);
   --collapse-icon-color-collapsed: rgb(235, 115, 71);
   --color-accent: rgb(235, 115, 71);
   --color-accent-1: rgb(235, 115, 71);
   --color-accent-2: rgb(235, 115, 71);
   --color-accent-hsl: 16, 80%, 60%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgb(235, 115, 71);
   --divider-width: 0px;
   --divider-width-hover: 2px;
@@ -98,6 +102,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(235, 115, 71);
   --graph-node-unresolved: rgb(231, 220, 208);
   --graph-text: rgb(245, 240, 235);
+  --gray: var(--text-muted);
   --grotto-accent: rgb(235, 115, 71);
   --grotto-accent-h: 16;
   --grotto-accent-l: 60%;
@@ -355,8 +360,10 @@ export const theme: ThemeData = {
   --grotto-view-header-border-radius: 0rem;
   --grotto-view-header-color: rgb(245, 240, 235);
   --grotto-view-header-sidebar-toggle-display: none;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(231, 220, 208);
   --heading-spacing: 0rem;
+  --highlight: var(--text-highlight-bg);
   --icon-color: rgb(231, 220, 208);
   --icon-color-active: rgb(235, 115, 71);
   --icon-color-focused: rgb(245, 240, 235);
@@ -368,6 +375,8 @@ export const theme: ThemeData = {
   --interactive-accent: rgb(235, 115, 71);
   --interactive-accent-hover: rgb(235, 115, 71);
   --interactive-accent-hsl: 16, 80%, 60%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(235, 115, 71);
   --link-color-hover: rgb(235, 115, 71);
   --link-external-color: rgb(235, 115, 71);
@@ -434,6 +443,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(231, 220, 208);
   --search-icon-color: rgb(231, 220, 208);
   --search-result-background: rgb(50, 50, 72);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(245, 240, 235);
   --setting-items-background: rgb(50, 50, 72);
   --setting-items-radius: 0px;
@@ -483,6 +493,7 @@ export const theme: ThemeData = {
   --tag-padding-x: 0.4rem;
   --tag-padding-y: 0.1rem;
   --tag-radius: 0rem;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(235, 115, 71);
   --text-accent-hover: rgb(235, 115, 71);
   --text-error: rgb(191, 64, 64);
@@ -493,6 +504,8 @@ export const theme: ThemeData = {
   --text-selection: rgb(235, 115, 71);
   --text-success: rgb(106, 191, 64);
   --text-warning: rgb(191, 128, 64);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(42, 42, 60);
   --titlebar-background-focused: rgb(42, 42, 60);
   --titlebar-text-color: rgb(231, 220, 208);
@@ -1736,6 +1749,7 @@ body sup {
   --blockquote-border-color: rgb(235, 115, 71);
   --blockquote-color: rgb(50, 50, 72);
   --blur-background: none;
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --callout-default: rgb(50, 50, 72);
   --callout-radius: 0px;
@@ -1766,12 +1780,15 @@ body sup {
   --code-string: rgb(89, 166, 89);
   --code-tag: rgb(184, 122, 122);
   --code-value: rgb(153, 122, 184);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(75, 75, 108);
   --collapse-icon-color-collapsed: rgb(235, 115, 71);
   --color-accent: rgb(235, 115, 71);
   --color-accent-1: rgb(235, 115, 71);
   --color-accent-2: rgb(235, 115, 71);
   --color-accent-hsl: 16, 80%, 60%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgb(235, 115, 71);
   --divider-width: 0px;
   --divider-width-hover: 2px;
@@ -1794,6 +1811,7 @@ body sup {
   --graph-node-tag: rgb(235, 115, 71);
   --graph-node-unresolved: rgb(75, 75, 108);
   --graph-text: rgb(50, 50, 72);
+  --gray: var(--text-muted);
   --grotto-accent: rgb(235, 115, 71);
   --grotto-accent-h: 16;
   --grotto-accent-l: 60%;
@@ -2051,8 +2069,10 @@ body sup {
   --grotto-view-header-border-radius: 0rem;
   --grotto-view-header-color: rgb(50, 50, 72);
   --grotto-view-header-sidebar-toggle-display: none;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(75, 75, 108);
   --heading-spacing: 0rem;
+  --highlight: var(--text-highlight-bg);
   --icon-color: rgb(75, 75, 108);
   --icon-color-active: rgb(235, 115, 71);
   --icon-color-focused: rgb(50, 50, 72);
@@ -2064,6 +2084,8 @@ body sup {
   --interactive-accent: rgb(235, 115, 71);
   --interactive-accent-hover: rgb(235, 115, 71);
   --interactive-accent-hsl: 16, 80%, 60%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(235, 115, 71);
   --link-color-hover: rgb(235, 115, 71);
   --link-external-color: rgb(235, 115, 71);
@@ -2130,6 +2152,7 @@ body sup {
   --search-clear-button-color: rgb(75, 75, 108);
   --search-icon-color: rgb(75, 75, 108);
   --search-result-background: rgb(245, 240, 235);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(50, 50, 72);
   --setting-items-background: rgb(245, 240, 235);
   --setting-items-radius: 0px;
@@ -2179,6 +2202,7 @@ body sup {
   --tag-padding-x: 0.4rem;
   --tag-padding-y: 0.1rem;
   --tag-radius: 0rem;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(235, 115, 71);
   --text-accent-hover: rgb(235, 115, 71);
   --text-error: rgb(191, 64, 64);
@@ -2189,6 +2213,8 @@ body sup {
   --text-selection: rgb(235, 115, 71);
   --text-success: rgb(106, 191, 64);
   --text-warning: rgb(191, 128, 64);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(238, 230, 221);
   --titlebar-background-focused: rgb(238, 230, 221);
   --titlebar-text-color: rgb(75, 75, 108);

@@ -48,6 +48,8 @@ export const theme: ThemeData = {
   --color-accent-1: hsl(calc(#da6a5c - 3), calc(88% * 1.02), calc(66% * 1.15));
   --color-accent-2: hsl(calc(#da6a5c - 5), calc(88% * 1.05), calc(66% * 1.29));
   --color-accent-hsl: #da6a5c, 88%, 66%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: #c0564b;
   --embed-border-start: 2px solid #c0564b;
   --file-header-background: #1b1412;
@@ -65,6 +67,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #c0564b;
   --graph-node-unresolved: #a2928c;
   --graph-text: #f0eae2;
+  --gray: var(--text-muted);
   --h1-col: #c0564b;
   --h2-col: #b16a5c;
   --h3-col: #a78478;
@@ -73,6 +76,7 @@ export const theme: ThemeData = {
   --h6-col: #776760;
   --heading-formatting: #a2928c;
   --hi-bg: #3e2c29;
+  --highlight: var(--background-modifier-active-hover);
   --icon-color: #c8b4aa;
   --icon-color-active: #c0564b;
   --icon-color-focused: #f0eae2;
@@ -83,6 +87,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: #da6a5c;
   --interactive-accent-hsl: 10 60% 45%;
   --lh-base: 1.6;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #c0564b;
   --link-color-hover: hsl(calc(#da6a5c - 5), calc(88% * 1.05), calc(66% * 1.29));
   --link-external-color: #c0564b;
@@ -128,6 +134,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #c8b4aa;
   --search-icon-color: #c8b4aa;
   --search-result-background: #1b1412;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #f0eae2;
   --sp-head-bottom: 0.4em;
   --sp-head-top: 1.2em;
@@ -156,12 +163,14 @@ export const theme: ThemeData = {
   --tag-border-color-hover: hsla(10 60% 45%, 0.15);
   --tag-color: #c0564b;
   --tag-color-hover: #c0564b;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #c0564b;
   --text-accent-hover: hsl(calc(#da6a5c - 5), calc(88% * 1.05), calc(66% * 1.29));
   --text-faint: #a2928c;
   --text-muted: #c8b4aa;
   --text-normal: #f0eae2;
   --text-selection: rgb(192 86 75 / 35%);
+  --textHighlight: var(--background-modifier-active-hover);
   --title-col: #7e2f2a;
   --titlebar-background: #261b1a;
   --titlebar-text-color: #c8b4aa;
@@ -900,6 +909,8 @@ body sup {
   --color-accent-1: hsl(calc(#a9473e - 1), calc(88% * 1.01), calc(66% * 1.075));
   --color-accent-2: hsl(calc(#a9473e - 3), calc(88% * 1.02), calc(66% * 1.15));
   --color-accent-hsl: #a9473e, 88%, 66%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: #92342c;
   --embed-border-start: 2px solid #92342c;
   --file-header-background: #f3eee6;
@@ -917,6 +928,7 @@ body sup {
   --graph-node-focused: #92342c;
   --graph-node-unresolved: #a2928a;
   --graph-text: #362a27;
+  --gray: var(--text-muted);
   --h1-col: #7e2f2a;
   --h2-col: #874338;
   --h3-col: #926054;
@@ -925,6 +937,7 @@ body sup {
   --h6-col: #b19991;
   --heading-formatting: #a2928a;
   --hi-bg: #cfc2b4;
+  --highlight: var(--background-modifier-active-hover);
   --icon-color: #6f5f5a;
   --icon-color-active: #92342c;
   --icon-color-focused: #362a27;
@@ -935,6 +948,8 @@ body sup {
   --interactive-accent-hover: #a9473e;
   --interactive-accent-hsl: 10 60% 45%;
   --lh-base: 1.6;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #92342c;
   --link-color-hover: hsl(calc(#a9473e - 3), calc(88% * 1.02), calc(66% * 1.15));
   --link-external-color: #92342c;
@@ -981,6 +996,7 @@ body sup {
   --search-clear-button-color: #6f5f5a;
   --search-icon-color: #6f5f5a;
   --search-result-background: #f3eee6;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #362a27;
   --sp-head-bottom: 0.4em;
   --sp-head-top: 1.2em;
@@ -1009,12 +1025,14 @@ body sup {
   --tag-border-color-hover: hsla(10 60% 45%, 0.15);
   --tag-color: #92342c;
   --tag-color-hover: #92342c;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #92342c;
   --text-accent-hover: hsl(calc(#a9473e - 3), calc(88% * 1.02), calc(66% * 1.15));
   --text-faint: #a2928a;
   --text-muted: #6f5f5a;
   --text-normal: #362a27;
   --text-selection: rgb(192 86 75 / 35%);
+  --textHighlight: var(--background-modifier-active-hover);
   --title-col: #7e2f2a;
   --titlebar-background: #e8dfd6;
   --titlebar-text-color: #6f5f5a;

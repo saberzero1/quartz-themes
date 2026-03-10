@@ -99,6 +99,8 @@ export const theme: ThemeData = {
   --color-red-rgb: 234, 131, 165;
   --color-yellow: #e6b99d;
   --color-yellow-rgb: 230, 185, 157;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgb(245, 164, 148);
   --embed-border-start: 2px solid rgb(245, 164, 148);
   --file-header-background: #161617;
@@ -113,6 +115,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #90b99f;
   --graph-node-unresolved: #8b8693;
   --graph-text: #c9c7cd;
+  --gray: var(--text-muted);
   --h1-color: #e6b99d;
   --h2-color: #92a2d5;
   --h3-color: #e29eca;
@@ -120,6 +123,7 @@ export const theme: ThemeData = {
   --h5-color: #90b99f;
   --h6-color: #ea83a5;
   --heading-formatting: #8b8693;
+  --highlight: var(--text-highlight-bg);
   --hr-thickness: 3px;
   --icon-color: #9f9ca6;
   --icon-color-active: #92a2d5;
@@ -133,6 +137,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(251, 209, 203);
   --interactive-accent-hsl: 10, 83%, 77%;
   --italic-color: #e29eca;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-accent: rgb(145, 161, 212);
   --link-accent-h: 226;
   --link-accent-l: 70%;
@@ -239,6 +245,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(245, 164, 148, 0.15);
   --tag-color: rgb(251, 209, 203);
   --tag-color-hover: rgb(251, 209, 203);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(251, 209, 203);
   --text-accent-hover: rgb(255, 251, 250);
   --text-error: #ea83a5;
@@ -249,6 +256,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(245, 164, 148, 0.33);
   --text-success: #90b99f;
   --text-warning: #e6b99d;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #131314;
   --titlebar-background-focused: #27272a;
   --titlebar-text-color: #9f9ca6;

@@ -53,6 +53,8 @@ export const theme: ThemeData = {
   --color-accent-hsl: 135, 94%, 65%;
   --color-base-70: #bababa;
   --color-scheme: dark;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: #50fa7b;
   --dracula-Comment: #6272A4;
   --dracula-definition: #50FA7B;
@@ -70,6 +72,8 @@ export const theme: ThemeData = {
   --graph-node: #bababa;
   --graph-node-focused: rgb(62, 249, 109);
   --graph-text: #f8f8f2;
+  --gray: var(--text-muted);
+  --highlight: var(--background-modifier-active-hover);
   --icon-color: #bababa;
   --icon-color-active: rgb(62, 249, 109);
   --icon-color-focused: #f8f8f2;
@@ -80,6 +84,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(62, 249, 109);
   --interactive-accent-hsl: 135, 94%, 65%;
   --interactive-accent-rgb: #f1fa8c;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(62, 249, 109);
   --link-color-hover: rgb(102, 250, 139);
   --link-external-color: rgb(62, 249, 109);
@@ -117,6 +123,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #bababa;
   --search-icon-color: #bababa;
   --search-result-background: #282a36;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #f8f8f2;
   --setting-items-background: #44475a;
   --status-bar-background: #20212B;
@@ -143,6 +150,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(82, 250, 124, 0.15);
   --tag-color: rgb(62, 249, 109);
   --tag-color-hover: rgb(62, 249, 109);
+  --tertiary: var(--text-accent-hover);
   --text-a: #ff79c6;
   --text-a-hover: #ff79c0;
   --text-accent: rgb(62, 249, 109);
@@ -160,6 +168,7 @@ export const theme: ThemeData = {
   --text-title-h4: #ff5555;
   --text-title-h5: #f1fa8c;
   --text-title-h6: #bd93f4;
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: #20212B;
   --titlebar-background-focused: #20212B;
   --titlebar-text-color: #bababa;

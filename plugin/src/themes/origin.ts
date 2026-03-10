@@ -31,6 +31,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: #363636;
   --blockquote-border-thickness: 4px;
   --blur-background: color-mix(in srgb, #0c0c0c 65%, transparent) linear-gradient(#0c0c0c, color-mix(in srgb, #0c0c0c 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 3px;
   --callout-blend-mode: normal;
   --callout-bug: 245, 0, 87;
@@ -75,6 +76,7 @@ export const theme: ThemeData = {
   --code-string: rgb(0, 191, 165);
   --code-tag: rgb(255, 82, 82);
   --code-value: rgb(124, 77, 255);
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: #b3b3b3;
   --color-accent: rgb(131, 107, 250);
   --color-accent-1: rgb(67, 42, 157);
@@ -124,11 +126,15 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(67, 42, 157);
   --graph-node-tag: rgb(100, 221, 23);
   --header-height: 30px;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-hover);
   --icon-color-active: rgb(67, 42, 157);
   --input-shadow: #363636 0 0 0px 1px;
   --interactive-accent: rgb(131, 107, 250);
   --interactive-accent-hover: rgb(67, 42, 157);
   --interactive-normal: #0c0c0c;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(67, 42, 157);
   --link-color-hover: rgb(147, 126, 252);
   --link-external-color: rgb(67, 42, 157);
@@ -175,6 +181,7 @@ export const theme: ThemeData = {
   --ribbon-width: 30px;
   --scrollbar-radius: 6px;
   --search-result-background: #202020;
+  --secondary: var(--text-accent);
   --setting-items-background: #000000;
   --setting-items-radius: 6px;
   --size-2-1: 6px;
@@ -207,11 +214,14 @@ export const theme: ThemeData = {
   --table-selection-border-color: rgb(131, 107, 250);
   --tag-color: rgb(67, 42, 157);
   --tag-color-hover: rgb(67, 42, 157);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(67, 42, 157);
   --text-accent-hover: rgb(147, 126, 252);
   --text-error: rgb(255, 23, 68);
   --text-success: rgb(100, 221, 23);
   --text-warning: rgb(255, 145, 0);
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #000000;
   --titlebar-background-focused: #000000;
   --titlebar-height: 25px;
@@ -837,6 +847,7 @@ body kbd {
   --bases-table-summary-background-hover: #f2f3f5;
   --blockquote-border-color: #ddd;
   --blockquote-border-thickness: 4px;
+  --bodyFont: var(--font-text);
   --button-radius: 3px;
   --callout-blend-mode: normal;
   --callout-bug: 245, 0, 87;
@@ -889,6 +900,7 @@ body kbd {
   --code-string: rgb(0, 191, 165);
   --code-tag: rgb(255, 82, 82);
   --code-value: rgb(124, 77, 255);
+  --codeFont: var(--font-text);
   --collapse-icon-color: #999999;
   --collapse-icon-color-collapsed: #888888;
   --color-accent: rgb(124, 97, 219);
@@ -926,6 +938,8 @@ body kbd {
   --color-red-rgb: 255, 23, 68;
   --color-teal: rgb(0, 191, 165);
   --color-teal-rgb: 0, 191, 165;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #ddd;
   --divider-color-hover: rgb(118, 91, 215);
   --dropdown-background-hover: #f5f6f8;
@@ -951,8 +965,11 @@ body kbd {
   --graph-node-tag: rgb(100, 221, 23);
   --graph-node-unresolved: #999999;
   --graph-text: #2e3338;
+  --gray: var(--text-muted);
   --header-height: 30px;
+  --headerFont: var(--font-text);
   --heading-formatting: #999999;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #ddd;
   --icon-color: #888888;
   --icon-color-active: rgb(124, 97, 219);
@@ -963,6 +980,8 @@ body kbd {
   --interactive-accent: rgb(118, 91, 215);
   --interactive-accent-hover: rgb(123, 86, 210);
   --interactive-hover: #f5f6f8;
+  --light: var(--background-primary-alt);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(124, 97, 219);
   --link-color-hover: rgb(123, 86, 210);
   --link-external-color: rgb(124, 97, 219);
@@ -1030,6 +1049,7 @@ body kbd {
   --scrollbar-radius: 6px;
   --search-clear-button-color: #888888;
   --search-icon-color: #888888;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #2e3338;
   --setting-items-background: #f5f6f8;
   --setting-items-border-color: #ddd;
@@ -1077,6 +1097,7 @@ body kbd {
   --table-selection-border-color: rgb(118, 91, 215);
   --tag-color: rgb(124, 97, 219);
   --tag-color-hover: rgb(124, 97, 219);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(124, 97, 219);
   --text-accent-hover: rgb(123, 86, 210);
   --text-error: rgb(255, 23, 68);
@@ -1085,6 +1106,8 @@ body kbd {
   --text-normal: #2e3338;
   --text-success: rgb(100, 221, 23);
   --text-warning: rgb(255, 145, 0);
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #e3e5e8;
   --titlebar-background-focused: #e3e5e8;
   --titlebar-border-color: #ddd;

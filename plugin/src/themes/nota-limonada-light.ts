@@ -29,6 +29,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #fefdf6;
   --blockquote-border-color: rgb(38, 153, 36);
   --blur-background: color-mix(in srgb, #fefdf6 65%, transparent) linear-gradient(#fefdf6, color-mix(in srgb, #fefdf6 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 0px;
   --callout-radius: 0px;
   --canvas-background: #fefdf6;
@@ -44,6 +45,7 @@ export const theme: ThemeData = {
   --code-normal: #1a1a1a;
   --code-punctuation: #3b5e40;
   --code-radius: 0px;
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: rgb(34, 140, 34);
   --color-accent: rgb(34, 140, 34);
   --color-accent-1: rgb(38, 153, 36);
@@ -51,6 +53,8 @@ export const theme: ThemeData = {
   --color-accent-hsl: 120, 61%, 34%;
   --color-base-100: #1a1a1a;
   --color-base-70: #3b5e40;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgb(38, 153, 36);
   --embed-border-start: 2px solid rgb(38, 153, 36);
   --file-header-background: #fefdf6;
@@ -65,6 +69,9 @@ export const theme: ThemeData = {
   --graph-node: #3b5e40;
   --graph-node-focused: rgb(34, 140, 34);
   --graph-text: #1a1a1a;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-active-hover);
   --icon-color: #3b5e40;
   --icon-color-active: rgb(34, 140, 34);
   --icon-color-focused: #1a1a1a;
@@ -73,6 +80,8 @@ export const theme: ThemeData = {
   --interactive-accent: rgb(38, 153, 36);
   --interactive-accent-hover: rgb(44, 161, 38);
   --interactive-accent-hsl: 120, 61%, 34%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(34, 140, 34);
   --link-color-hover: rgb(44, 161, 38);
   --link-external-color: rgb(34, 140, 34);
@@ -118,6 +127,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #3b5e40;
   --search-icon-color: #3b5e40;
   --search-result-background: #fefdf6;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #1a1a1a;
   --setting-items-radius: 0px;
   --slider-thumb-radius: 0px;
@@ -147,11 +157,14 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(34, 140, 34, 0.15);
   --tag-color: rgb(34, 140, 34);
   --tag-color-hover: rgb(34, 140, 34);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(34, 140, 34);
   --text-accent-hover: rgb(44, 161, 38);
   --text-muted: #3b5e40;
   --text-normal: #1a1a1a;
   --text-selection: rgba(34, 140, 34, 0.2);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #fbfbe0;
   --titlebar-background-focused: #fbfbe0;
   --titlebar-text-color: #3b5e40;

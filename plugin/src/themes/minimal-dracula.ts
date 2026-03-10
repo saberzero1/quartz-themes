@@ -82,6 +82,8 @@ export const theme: ThemeData = {
   --color-base-50: #707487;
   --color-base-60: red;
   --color-base-70: #BABCC9;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #191A21;
   --dropdown-background: #191A21;
   --dropdown-background-hover: #282A36;
@@ -143,6 +145,7 @@ export const theme: ThemeData = {
   --graph-node: #BABCC9;
   --graph-node-unresolved: #707487;
   --graph-text: #F8F8F2;
+  --gray: var(--text-muted);
   --h1-line-height: 1.00em;
   --h1-size: 1.50em;
   --h1-weight: 600;
@@ -173,6 +176,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: #707487;
   --interactive-hover: #282A36;
   --interactive-normal: #191A21;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #BD93F9;
   --link-color-hover: #D6ACFF;
   --link-external-color: #BD93F9;
@@ -1216,6 +1221,8 @@ body sup {
   --color-base-50: #BCBAB3;
   --color-base-60: red;
   --color-base-70: #6C664B;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #EDE9DA;
   --dropdown-background: #EDE9DA;
   --dropdown-background-hover: #EDE9DA;
@@ -1277,6 +1284,7 @@ body sup {
   --graph-node: #6C664B;
   --graph-node-unresolved: #BCBAB3;
   --graph-text: #1F1F1F;
+  --gray: var(--text-muted);
   --h1-line-height: 1.00em;
   --h1-size: 1.50em;
   --h1-weight: 600;
@@ -1307,6 +1315,8 @@ body sup {
   --input-placeholder-color: #BCBAB3;
   --interactive-hover: #EDE9DA;
   --interactive-normal: #EDE9DA;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #CB3A2A;
   --link-color-hover: #E1776B;
   --link-external-color: #CB3A2A;

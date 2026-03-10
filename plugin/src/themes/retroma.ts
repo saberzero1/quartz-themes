@@ -329,6 +329,7 @@ export const theme: ThemeData = {
   );
   --header-height: 48px;
   --heading-spacing: 2.5rem;
+  --highlight: var(--text-highlight-bg);
   --hr-color: oklch(from #dadada l c h / 25%);
   --hue-amber: #ffb300;
   --hue-blue: #2196f3;
@@ -363,6 +364,8 @@ export const theme: ThemeData = {
     from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20%
       calc(h + 200)
   );
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --lightness: 70%;
   --link-color: oklch(
     from oklch(from rgb(138, 92, 245) l c h) 80% 20% h
@@ -485,6 +488,7 @@ export const theme: ThemeData = {
   --search-result-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
   );
+  --secondary: var(--text-accent);
   --setting-items-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
   );
@@ -571,6 +575,7 @@ export const theme: ThemeData = {
   --tag-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 80% c h / 75%);
   --tag-color-hover: rgb(166, 139, 249);
   --tag-radius: 8px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(166, 139, 249);
   --text-accent-hover: rgb(197, 182, 252);
   --text-error: oklch(
@@ -584,6 +589,7 @@ export const theme: ThemeData = {
   --text-warning: oklch(
     from #ff9800 70% 20% h
   );
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: oklch(
     from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
   );
@@ -1652,6 +1658,7 @@ body kbd {
   );
   --header-height: 48px;
   --heading-spacing: 2.5rem;
+  --highlight: var(--text-highlight-bg);
   --hr-color: oklch(from #222222 l c h / 25%);
   --hue-amber: #ffb300;
   --hue-blue: #2196f3;
@@ -1686,6 +1693,8 @@ body kbd {
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30%
       calc(h + 200)
   );
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --lightness: 50%;
   --link-color: oklch(
     from oklch(from rgb(153, 115, 247) l c h) 35% 30% h
@@ -1802,6 +1811,7 @@ body kbd {
   --search-result-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   );
+  --secondary: var(--text-accent);
   --setting-items-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   );
@@ -1888,6 +1898,7 @@ body kbd {
   --tag-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 40% c h / 75%);
   --tag-color-hover: rgb(138, 92, 245);
   --tag-radius: 8px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(166, 139, 249);
   --text-error: oklch(
@@ -1901,6 +1912,7 @@ body kbd {
   --text-warning: oklch(
     from #ff9800 50% 30% h
   );
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
   );

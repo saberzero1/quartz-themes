@@ -91,6 +91,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(138, 92, 245);
   --header-height: 35px;
   --heading-spacing: 10px;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #59595984;
   --ic-border: 0px;
   --ic-border-color: #59595984;
@@ -126,6 +127,8 @@ export const theme: ThemeData = {
   --inline-title-color: rgb(138, 92, 245);
   --input-radius: 16px;
   --interactive-normal: #313435A6;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #9FA0A4;
   --link-external-color: #9FA0A4;
   --link-unresolved-color: #9FA0A4;
@@ -169,6 +172,7 @@ export const theme: ThemeData = {
   --scrollbar-bg: #ffffff10;
   --scrollbar-thumb-bg: #ffffff50;
   --search-result-background: #000000;
+  --secondary: var(--text-accent);
   --setting-items-background: #000000;
   --shadow-base: inset 1px 1px 2px rgba(255, 255, 255, 0.5), inset -1px -1px 2px rgba(255, 255, 255, 0.5), inset 0 4px 16px rgba(255, 255, 255, 0.025);
   --shadow-border: 0 0 1px 0 rgba(0, 0, 0, 0.4);
@@ -190,10 +194,12 @@ export const theme: ThemeData = {
   --table-header-background: rgb(138, 92, 245);
   --tag-color: #59595984;
   --tag-color-hover: #59595984;
+  --tertiary: var(--text-accent);
   --text-accent: #59595984;
   --text-color: #ffffff;
   --text-highlight-bg: rgb(138, 92, 245);
   --text-selection: #a5aab680;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #000000;
   --titlebar-background-focused: #000000;
   --toolbar-option-width: auto;
@@ -822,6 +828,7 @@ body kbd {
   --graph-node-tag: rgb(138, 92, 245);
   --header-height: 35px;
   --heading-spacing: 10px;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #25252586;
   --ic-border: 0px;
   --ic-border-color: #25252586;
@@ -859,6 +866,8 @@ body kbd {
   --interactive-accent: #a5aab680;
   --interactive-accent-hover: #a5aab640;
   --interactive-normal: #9096A4;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #5F6369;
   --link-external-color: #5F6369;
   --link-unresolved-color: #5F6369;
@@ -902,6 +911,7 @@ body kbd {
   --scrollbar-bg: #00000010;
   --scrollbar-thumb-bg: #00000050;
   --search-result-background: #9096A4;
+  --secondary: var(--text-accent);
   --setting-items-background: #9096A4;
   --shadow-base: inset 1px 1px 2px rgba(255, 255, 255, 0.5), inset -1px -1px 2px rgba(255, 255, 255, 0.5), inset 0 4px 16px rgba(255, 255, 255, 0.025);
   --shadow-border: 0 0 1px 0 rgba(0, 0, 0, 0.4);
@@ -925,10 +935,12 @@ body kbd {
   --table-selection-border-color: #a5aab680;
   --tag-color: #25252586;
   --tag-color-hover: #25252586;
+  --tertiary: var(--interactive-accent-hover);
   --text-accent: #25252586;
   --text-color: #000000;
   --text-highlight-bg: rgb(138, 92, 245);
   --text-selection: #a5aab680;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #9096A4;
   --titlebar-background-focused: #9096A4;
   --toolbar-option-width: auto;

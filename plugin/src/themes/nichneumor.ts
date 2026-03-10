@@ -120,6 +120,7 @@ export const theme: ThemeData = {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #ebcb8b;
   --color-yellow-rgb: 224, 172, 0;
+  --dark: var(--text-normal);
   --dark-background: #1a1b20;
   --dark-background-flip: #EFF0F6;
   --dark-shadow-first: #0a0b0d;
@@ -132,6 +133,7 @@ export const theme: ThemeData = {
   --dark-shadow-third-flip: #F4F9F4;
   --dark-titlebar-background: #2a2b33;
   --dark-titlebar-background-focused: #0a0b0d;
+  --darkgray: var(--text-normal);
   --divider-color: #41424f;
   --dropdown-background: #41424f;
   --dropdown-background-hover: #494a58;
@@ -151,6 +153,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #a3be8c;
   --graph-node-unresolved: #585a6b;
   --graph-text: #dddfee;
+  --gray: var(--text-muted);
   --h1-size: 2em;
   --h2-size: 1.7em;
   --h3-size: 1.5em;
@@ -168,6 +171,7 @@ export const theme: ThemeData = {
   --input-placeholder-color: #585a6b;
   --interactive-hover: #494a58;
   --interactive-normal: #41424f;
+  --light: var(--background-primary);
   --light-background: #dbd1c6;
   --light-shadow-fifth: #FCFCFC;
   --light-shadow-first: #bab2a8;
@@ -176,6 +180,7 @@ export const theme: ThemeData = {
   --light-shadow-third: #ede2d6;
   --light-titlebar-background: #fcf0e4;
   --light-titlebar-background-focused: #bab2a8;
+  --lightgray: var(--background-secondary);
   --list-marker-color: #585a6b;
   --list-marker-color-hover: #b1b3c2;
   --menu-background: #31333c;
@@ -1205,6 +1210,7 @@ body sup {
   --color-purple: #b48ead;
   --color-red: #bf616a;
   --color-yellow: #c4963a;
+  --dark: var(--text-normal);
   --dark-background: #1a1b20;
   --dark-background-flip: #EFF0F6;
   --dark-shadow-first: #0a0b0d;
@@ -1217,6 +1223,7 @@ body sup {
   --dark-shadow-third-flip: #F4F9F4;
   --dark-titlebar-background: #2a2b33;
   --dark-titlebar-background-focused: #0a0b0d;
+  --darkgray: var(--text-normal);
   --divider-color: #c1b8ae;
   --dropdown-background: #dbd1c6;
   --dropdown-background-hover: #d1c7bd;
@@ -1236,6 +1243,7 @@ body sup {
   --graph-node-tag: #8aa176;
   --graph-node-unresolved: #98928c;
   --graph-text: #252423;
+  --gray: var(--text-muted);
   --h1-size: 2em;
   --h2-size: 1.7em;
   --h3-size: 1.5em;
@@ -1253,6 +1261,7 @@ body sup {
   --input-placeholder-color: #98928c;
   --interactive-hover: #d1c7bd;
   --interactive-normal: #dbd1c6;
+  --light: var(--background-primary);
   --light-background: #dbd1c6;
   --light-shadow-fifth: #FCFCFC;
   --light-shadow-first: #bab2a8;
@@ -1261,6 +1270,7 @@ body sup {
   --light-shadow-third: #ede2d6;
   --light-titlebar-background: #fcf0e4;
   --light-titlebar-background-focused: #bab2a8;
+  --lightgray: var(--background-secondary);
   --list-marker-color: #98928c;
   --list-marker-color-hover: #54504d;
   --menu-background: #cbc2b8;

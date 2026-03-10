@@ -33,6 +33,7 @@ export const theme: ThemeData = {
   --bases-table-row-background-hover: rgba(138, 92, 245, 0.33);
   --bases-table-summary-background: rgb(63, 59, 74);
   --blur-background: color-mix(in srgb, rgb(80, 74, 94) 65%, transparent) linear-gradient(rgb(80, 74, 94), color-mix(in srgb, rgb(80, 74, 94) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --callout-blend-mode: normal;
   --callout-border-opacity: 25%;
@@ -56,6 +57,7 @@ export const theme: ThemeData = {
   --code-border-color: rgb(80, 74, 94);
   --code-normal: rgb(200, 194, 214);
   --code-punctuation: rgb(172, 152, 221);
+  --codeFont: var(--font-text);
   --color-base-00: rgb(63, 59, 74);
   --color-base-10: rgb(46, 43, 54);
   --color-base-100: rgb(200, 194, 214);
@@ -64,6 +66,8 @@ export const theme: ThemeData = {
   --color-base-30: rgb(80, 74, 94);
   --color-base-60: rgb(30, 27, 40);
   --color-base-70: rgb(172, 152, 221);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(80, 74, 94);
   --divider-width: 0px;
   --dropdown-background: rgb(80, 74, 94);
@@ -86,6 +90,7 @@ export const theme: ThemeData = {
   --footnote-id-color: rgb(172, 152, 221);
   --graph-node: rgb(172, 152, 221);
   --graph-text: rgb(200, 194, 214);
+  --gray: var(--text-muted);
   --h1-font: 'Lato';
   --h1-size: 2.17em;
   --h1-weight: 600;
@@ -97,6 +102,7 @@ export const theme: ThemeData = {
   --h4-weight: 400;
   --h5-weight: 400;
   --h6-weight: 400;
+  --headerFont: var(--font-text);
   --hr-color: rgb(80, 74, 94);
   --icon-color: rgb(172, 152, 221);
   --icon-color-focused: rgb(200, 194, 214);
@@ -106,6 +112,8 @@ export const theme: ThemeData = {
   --inline-title-weight: 600;
   --input-font-weight: 300;
   --interactive-normal: rgb(80, 74, 94);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-decoration: none;
   --link-weight: 300;
   --list-marker-color-hover: rgb(172, 152, 221);
@@ -183,6 +191,7 @@ export const theme: ThemeData = {
   --tag-decoration: underline;
   --text-muted: rgb(172, 152, 221);
   --text-normal: rgb(200, 194, 214);
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: rgb(80, 74, 94);
   --titlebar-border-color: rgb(80, 74, 94);
@@ -1212,6 +1221,7 @@ body sup {
   --bases-table-row-background-hover: rgba(138, 92, 245, 0.2);
   --bases-table-summary-background: rgb(255, 255, 255);
   --blur-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --callout-blend-mode: normal;
   --callout-border-opacity: 25%;
@@ -1243,6 +1253,7 @@ body sup {
   --code-string: #08B94E;
   --code-tag: #E93147;
   --code-value: #7852EE;
+  --codeFont: var(--font-text);
   --collapse-icon-color: rgb(153, 142, 180);
   --color-base-00: rgb(255, 255, 255);
   --color-base-05: rgb(246, 244, 250);
@@ -1261,6 +1272,8 @@ body sup {
   --color-pink: #D53984;
   --color-purple: #7852EE;
   --color-red: #E93147;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(223, 218, 236);
   --divider-width: 0px;
   --dropdown-background: rgb(255, 255, 255);
@@ -1288,6 +1301,7 @@ body sup {
   --graph-node-tag: #08B94E;
   --graph-node-unresolved: rgb(153, 142, 180);
   --graph-text: rgb(75, 73, 80);
+  --gray: var(--text-muted);
   --h1-color: rgb(61, 57, 70);
   --h1-font: 'Lato';
   --h1-size: 2.17em;
@@ -1305,6 +1319,7 @@ body sup {
   --h5-weight: 400;
   --h6-color: rgb(61, 57, 70);
   --h6-weight: 400;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(153, 142, 180);
   --hr-color: rgb(223, 218, 236);
   --icon-color: rgb(117, 102, 153);
@@ -1319,6 +1334,8 @@ body sup {
   --input-placeholder-color: rgb(153, 142, 180);
   --interactive-hover: rgb(244, 242, 248);
   --interactive-normal: rgb(255, 255, 255);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-decoration: none;
   --link-weight: 300;
   --list-marker-color: rgb(153, 142, 180);
@@ -1418,6 +1435,7 @@ body sup {
   --text-muted: rgb(117, 102, 153);
   --text-normal: rgb(75, 73, 80);
   --text-success: #08B94E;
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: rgb(246, 244, 250);
   --titlebar-border-color: rgb(223, 218, 236);

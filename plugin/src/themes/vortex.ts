@@ -44,6 +44,7 @@ export const theme: ThemeData = {
   --bases-table-group-background: #0d0b12;
   --bases-table-header-background: #111111;
   --bases-table-summary-background: #111111;
+  --bodyFont: var(--font-interface);
   --callout-background-opacity: 0.2;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
@@ -58,6 +59,7 @@ export const theme: ThemeData = {
   --checkbox-marker-color: #111111;
   --code-background: #0d0b12;
   --code-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent);
+  --codeFont: var(--font-interface);
   --color-hr: rgb(138, 92, 245);
   --color-italic: rgb(138, 92, 245);
   --default-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif;
@@ -69,6 +71,7 @@ export const theme: ThemeData = {
   --font-interface: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --footnote-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent);
   --gradient-bold: linear-gradient(135deg, #00eaff, #ff008c);
+  --headerFont: var(--font-interface);
   --hr-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent);
   --hr-gradient: linear-gradient( to right,
     rgba(0, 255, 255, 0) 0%,
@@ -77,6 +80,8 @@ export const theme: ThemeData = {
     #9400D3 75%,
     rgba(0, 255, 255, 0) 100%
     );
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-bullet-radius: 100%;
   --list-marker-color: rgb(138, 92, 245);
   --menu-background: #1a1a1a;
@@ -124,6 +129,7 @@ export const theme: ThemeData = {
   --text-title-h5: #2ECC71;
   --text-title-h6: #db3eb1;
   --theme-color: rgb(138, 92, 245);
+  --titleFont: var(--font-interface);
   --titlebar-background: #1a1a1a;
   --titlebar-background-focused: #0d0b12;
   --titlebar-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent);
@@ -583,6 +589,7 @@ body kbd {
   --bases-table-border-color: rgb(138, 92, 245);
   --bases-table-cell-background-disabled: #ffffff;
   --bases-table-group-background: #ffffff;
+  --bodyFont: var(--font-interface);
   --callout-background-opacity: 0.2;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
@@ -596,6 +603,7 @@ body kbd {
   --checkbox-color-hover: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff);
   --code-background: #ffffff;
   --code-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent);
+  --codeFont: var(--font-interface);
   --color-hr: rgb(138, 92, 245);
   --color-italic: rgb(138, 92, 245);
   --default-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif;
@@ -605,6 +613,7 @@ body kbd {
   --font-interface: '??', '??', Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --footnote-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent);
   --gradient-bold: linear-gradient(135deg, #00eaff, #ff008c);
+  --headerFont: var(--font-interface);
   --hr-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent);
   --hr-gradient: linear-gradient( to right,
     rgba(0, 255, 255, 0) 0%,
@@ -613,6 +622,8 @@ body kbd {
     #9400D3 75%,
     rgba(0, 255, 255, 0) 100%
     );
+  --light: var(--background-primary-alt);
+  --lightgray: var(--background-secondary);
   --list-bullet-radius: 100%;
   --list-marker-color: rgb(138, 92, 245);
   --menu-background: #eeeeee;
@@ -648,6 +659,7 @@ body kbd {
   --text-title-h5: #2ECC71;
   --text-title-h6: #db3eb1;
   --theme-color: rgb(138, 92, 245);
+  --titleFont: var(--font-interface);
   --titlebar-background: #eeeeee;
   --titlebar-background-focused: #eeeeee;
   --titlebar-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent);

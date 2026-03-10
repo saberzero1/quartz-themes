@@ -56,8 +56,11 @@ export const theme: ThemeData = {
   --code-border-color: #928374;
   --code-comment: #859289;
   --code-normal: #ebdbb2;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #859289;
   --collapse-icon-color-collapsed: #458588;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --dim-aqua: #689d6a;
   --dim-blue: #458588;
   --dim-green: #98971a;
@@ -87,6 +90,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #458588;
   --graph-node-unresolved: #859289;
   --graph-text: #ebdbb2;
+  --gray: var(--text-faint);
   --grey0-dark: #7f897d;
   --grey0-light: #a4ad9e;
   --grey1-dark: #859289;
@@ -94,6 +98,7 @@ export const theme: ThemeData = {
   --grey2-dark: #9aa79d;
   --grey2-light: #879686;
   --heading-formatting: #859289;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #928374;
   --icon-color-active: #458588;
   --icon-color-focused: #ebdbb2;
@@ -103,6 +108,7 @@ export const theme: ThemeData = {
   --interactive-accent: #689d6a;
   --interactive-accent-rgb: #458588;
   --interactive-before: #928374;
+  --light: var(--background-primary);
   --light-aqua: #569d79;
   --light-blue: #5a93a2;
   --light-dim-aqua: #6ec398;
@@ -117,6 +123,7 @@ export const theme: ThemeData = {
   --light-purple: #b87b9d;
   --light-red: #f85552;
   --light-yellow: #bf983d;
+  --lightgray: var(--background-secondary);
   --link-color: #458588;
   --link-external-color: #458588;
   --link-unresolved-color: #458588;
@@ -151,6 +158,7 @@ export const theme: ThemeData = {
   --ribbon-background: #282828;
   --ribbon-background-collapsed: #282828;
   --search-result-background: #282828;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #ebdbb2;
   --setting-items-background: #282828;
   --setting-items-border-color: #928374;
@@ -177,6 +185,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #689d6a;
   --tag-color: #458588;
   --tag-color-hover: #458588;
+  --tertiary: var(--text-accent);
   --text-a: #689d6a;
   --text-a-hover: #8ec07c;
   --text-accent: #458588;
@@ -192,6 +201,7 @@ export const theme: ThemeData = {
   --text-title-h4: #98971a;
   --text-title-h5: #689d6a;
   --text-title-h6: #b16286;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #282828;
   --titlebar-background-focused: #282828;
   --titlebar-border-color: #928374;

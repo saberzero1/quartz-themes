@@ -146,6 +146,7 @@ export const theme: ThemeData = {
   --blur-depth: 10px;
   --blur-depth-cp: 10px;
   --blur-p-kanban-frosted-glass: 5;
+  --bodyFont: var(--font-text);
   --bottom-padding-value: 0em;
   --brightness-4-bg: 0.9;
   --brightness-4-bg-cp: 0.9;
@@ -247,6 +248,7 @@ export const theme: ThemeData = {
   --code-variable: #db7c84;
   --code-variable-2: #53ada3;
   --code-variable-3: #e7852fe7;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #797979;
   --collapse-icon-color-collapsed: rgb(45, 130, 205);
   --color-accent: rgb(45, 130, 205);
@@ -267,7 +269,9 @@ export const theme: ThemeData = {
   --cursor-violet: #bf76ff;
   --cursor-yellow: #fff955;
   --custom-titlebar-bg: #000000;
+  --dark: var(--text-normal);
   --darkblue: #478fee;
+  --darkgray: var(--text-normal);
   --darkgreen: #568060;
   --day-planner-dot: #dfcf77;
   --day-planner-item-hover: #053c85;
@@ -369,6 +373,7 @@ export const theme: ThemeData = {
   --graph-text: #c6c6c6;
   --graph-text-color: #B5B5B5;
   --graph-unresolved: #f08080de;
+  --gray: var(--text-muted);
   --gray-1: #5C6370;
   --gray-2: #abb2bf;
   --green: #abd58e;
@@ -404,8 +409,10 @@ export const theme: ThemeData = {
   --he-title-bar-inactive-bg: rgba(45, 130, 205, 0.01);
   --he-title-bar-inactive-fg: #8a8a8a;
   --he-title-bar-inactive-pinned-bg: rgba(45, 130, 205, 0.01);
+  --headerFont: var(--font-text);
   --heading-formatting: #797979;
   --hibox: 24px;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #242424;
   --hr-color-1: rgb(45, 130, 205);
   --hr-color-2: rgb(45, 130, 205);
@@ -450,7 +457,9 @@ export const theme: ThemeData = {
   --kanban-color-7: #8f36cb3f;
   --letter-space-code: 0;
   --letter-space-main: 0;
+  --light: var(--background-primary);
   --light-yellow: #cac685;
+  --lightgray: var(--background-secondary);
   --line-height-list: 2;
   --line-height-main: 1.5;
   --line-height-split: 1.3;
@@ -616,6 +625,7 @@ export const theme: ThemeData = {
   --search-result-file-matched-bg: #023774;
   --search-result-file-title-color: #c6c6c6;
   --search-text: #e0e0e0;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #c6c6c6;
   --setting-items-background: #444444;
   --setting-items-border-color: #343434;
@@ -723,6 +733,7 @@ export const theme: ThemeData = {
   --tag4: #43804f;
   --tag5: #5f932e;
   --tape-color: #99999967;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(45, 130, 205);
   --text-accent-hover: rgb(97, 175, 224);
   --text-blue: #7c94ff;
@@ -758,6 +769,7 @@ export const theme: ThemeData = {
   --text-selection: #3b767160;
   --text-yellow: #ffdc51;
   --text-yellow-2: #cca217;
+  --textHighlight: var(--text-highlight-bg);
   --theme-color: rgb(45, 130, 205);
   --theme-color-translucent-001: rgba(45, 130, 205, 0.01);
   --theme-color-translucent-005: rgba(45, 130, 205, 0.05);
@@ -768,6 +780,7 @@ export const theme: ThemeData = {
   --theme-color-translucent-06: rgba(45, 130, 205, 0.6);
   --thino-background-dark-custom: url("https://");
   --thino-background-light-custom: url("https://");
+  --titleFont: var(--font-text);
   --titlebar-background: #151515;
   --titlebar-background-focused: #000000;
   --titlebar-blur-depth: 8px;
@@ -2011,6 +2024,7 @@ body sup {
   --blur-depth: 10px;
   --blur-depth-cp: 10px;
   --blur-p-kanban-frosted-glass: 5;
+  --bodyFont: var(--font-text);
   --bottom-padding-value: 0em;
   --brightness-4-bg: 0.9;
   --brightness-4-bg-cp: 0.9;
@@ -2109,6 +2123,7 @@ body sup {
   --code-variable: #f07178;
   --code-variable-2: #b74ff3;
   --code-variable-3: #e7852fe7;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #7f7f7f;
   --collapse-icon-color-collapsed: rgb(47, 147, 228);
   --color-accent: rgb(47, 147, 228);
@@ -2129,7 +2144,9 @@ body sup {
   --cursor-violet: #ee82ee;
   --cursor-yellow: #d5ca00;
   --custom-titlebar-bg: #f3f3f3;
+  --dark: var(--text-normal);
   --darkblue: #3b84e4;
+  --darkgray: var(--text-normal);
   --darkgreen: #068a5e;
   --day-planner-dot: #ffd900;
   --day-planner-item-hover: #8fccff;
@@ -2229,6 +2246,7 @@ body sup {
   --graph-text: #0e0e0e;
   --graph-text-color: #696969;
   --graph-unresolved: #db4e4ecc;
+  --gray: var(--text-muted);
   --gray-1: #383a42;
   --gray-2: #383a42;
   --green: #A3BE8C;
@@ -2264,8 +2282,10 @@ body sup {
   --he-title-bar-inactive-bg: rgba(47, 147, 228, 0.01);
   --he-title-bar-inactive-fg: #7f7f7f;
   --he-title-bar-inactive-pinned-bg: rgba(47, 147, 228, 0.01);
+  --headerFont: var(--font-text);
   --heading-formatting: #7f7f7f;
   --hibox: 24px;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #dddddd;
   --hr-color-1: rgb(64, 159, 231);
   --hr-color-2: rgb(64, 159, 231);
@@ -2303,8 +2323,10 @@ body sup {
   --internal-link-color: rgb(47, 147, 228);
   --letter-space-code: 0;
   --letter-space-main: 0;
+  --light: var(--background-primary-alt);
   --light-purple: #b74ff3;
   --light-yellow: #ab9a02;
+  --lightgray: var(--background-secondary);
   --line-height-list: 2;
   --line-height-main: 1.5;
   --line-height-split: 1.3;
@@ -2462,6 +2484,7 @@ body sup {
   --search-result-file-matched-bg: #ffd9d9e5;
   --search-result-file-title-color: #0e0e0e;
   --search-text: #000000;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #0e0e0e;
   --setting-items-background: #e9e9e9;
   --setting-items-border-color: #dddddd;
@@ -2567,6 +2590,7 @@ body sup {
   --tag4: #14acc7;
   --tag5: #10bdbd;
   --tape-color: #acacac65;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(47, 147, 228);
   --text-accent-hover: rgb(82, 173, 235);
   --text-blue: #0083bb;
@@ -2601,6 +2625,7 @@ body sup {
   --text-selection: #a9d1c859;
   --text-yellow: #d4a300;
   --text-yellow-2: #a78000;
+  --textHighlight: var(--text-highlight-bg);
   --theme-color: rgb(64, 159, 231);
   --theme-color-translucent-001: rgba(47, 147, 228, 0.01);
   --theme-color-translucent-005: rgba(47, 147, 228, 0.05);
@@ -2611,6 +2636,7 @@ body sup {
   --theme-color-translucent-06: rgba(47, 147, 228, 0.6);
   --thino-background-dark-custom: url("https://");
   --thino-background-light-custom: url("https://");
+  --titleFont: var(--font-text);
   --titlebar-background: #fcfcfc;
   --titlebar-background-focused: #f3f3f3;
   --titlebar-blur-depth: 8px;

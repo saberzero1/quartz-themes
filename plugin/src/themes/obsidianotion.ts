@@ -9,6 +9,8 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
+  --bodyFont: var(--font-text);
+  --codeFont: var(--font-text);
   --color-base-15: #1f1f1f;
   --color-base-23: #323232;
   --color-ghostwhite-rgb: 248, 248, 255;
@@ -32,6 +34,7 @@ export const theme: ThemeData = {
   --frontmatter-atom-background: rgba(255, 255, 255, 0.04);
   --frontmatter-atom-color: rgba(255, 255, 255, 0.4);
   --frontmatter-font-size: .5rem;
+  --headerFont: var(--font-text);
   --heading-text-color: #fff;
   --link-hover-color: #fff;
   --link-unresolved-opacity: 0.85;
@@ -78,6 +81,7 @@ export const theme: ThemeData = {
   --tag-padding-y: 2px;
   --tag-radius: 5px;
   --tag-size: .75rem;
+  --titleFont: var(--font-text);
   --width-body-content: 700px;
   --quartz-icon-color: currentColor;
 }
@@ -409,6 +413,8 @@ body sup {
   },
   light: {
     base: `:root:root {
+  --bodyFont: var(--font-text);
+  --codeFont: var(--font-text);
   --color-base-15: #f0f0f0;
   --color-base-23: #eee;
   --content-bgcolor: rgb(255, 255, 255);
@@ -431,6 +437,7 @@ body sup {
   --frontmatter-atom-background: rgba(0, 0, 0, 0.05);
   --frontmatter-atom-color: rgba(0, 0, 0, 0.5);
   --frontmatter-font-size: .5rem;
+  --headerFont: var(--font-text);
   --heading-text-color: #37352f;
   --link-hover-color: #000;
   --link-unresolved-opacity: 0.85;
@@ -475,6 +482,7 @@ body sup {
   --tag-padding-y: 2px;
   --tag-radius: 5px;
   --tag-size: .75rem;
+  --titleFont: var(--font-text);
   --width-body-content: 700px;
   --quartz-icon-color: currentColor;
 }

@@ -83,6 +83,7 @@ export const theme: ThemeData = {
   --hr-color: #6e8166;
   --inline-code-background: #292c3a;
   --interactive-accent: #5AFF15;
+  --light: var(--background-primary);
   --light-accent: #3fc570;
   --light-background-primary: #f6f6fc;
   --light-background-secondary: #eceff5;
@@ -94,6 +95,7 @@ export const theme: ThemeData = {
   --light-link: #3fc570;
   --light-mint: #3fc570;
   --light-sea-green: #00BFB3;
+  --lightgray: var(--background-secondary);
   --lime: #C3F73A;
   --lime-dark: #92cb00;
   --line-width: 850px;
@@ -113,6 +115,7 @@ export const theme: ThemeData = {
   --rich-black: #121019;
   --robin-egg-blue: #19D8D5;
   --search-result-background: #1a1c25;
+  --secondary: var(--color-accent);
   --setting-items-background: #20212b;
   --status-bar-background: #20212b;
   --suggestion-background: #1a1c25;
@@ -402,6 +405,7 @@ body kbd {
   --icon-color-active: #3fc570;
   --inline-code-background: #eceff5;
   --interactive-accent: #3fc570;
+  --light: var(--background-primary);
   --light-accent: #3fc570;
   --light-background-primary: #f6f6fc;
   --light-background-secondary: #eceff5;
@@ -413,6 +417,7 @@ body kbd {
   --light-link: #3fc570;
   --light-mint: #3fc570;
   --light-sea-green: #00BFB3;
+  --lightgray: var(--background-secondary);
   --lime: #C3F73A;
   --lime-dark: #92cb00;
   --line-width: 850px;
@@ -438,6 +443,7 @@ body kbd {
   --rich-black: #121019;
   --robin-egg-blue: #19D8D5;
   --search-result-background: #f6f6fc;
+  --secondary: var(--text-accent);
   --setting-items-background: #eceff5;
   --status-bar-background: #eceff5;
   --status-bar-border-color: #dbe1f0;
@@ -454,6 +460,7 @@ body kbd {
   --table-selection-border-color: #3fc570;
   --tag-color: #3fc570;
   --tag-color-hover: #3fc570;
+  --tertiary: var(--text-accent);
   --text-accent: #3fc570;
   --titlebar-background: #eceff5;
   --titlebar-background-focused: #eceff5;

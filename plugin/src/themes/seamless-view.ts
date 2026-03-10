@@ -103,6 +103,7 @@ export const theme: ThemeData = {
   --h6-color: #a882ff;
   --header-height: 37px;
   --heading-spacing: 0;
+  --highlight: var(--text-highlight-bg);
   --highlight-color: 138, 15, 15;
   --hr-color: #555555;
   --icon-color-active: rgb(132, 171, 63);
@@ -123,6 +124,8 @@ export const theme: ThemeData = {
   --lc-bg-opacity-dark: 0.1;
   --lc-bg-right-reading: 1px;
   --lc-bg-top-reading: 1px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(132, 171, 63);
   --link-color-hover: rgb(152, 190, 75);
   --link-external-color: rgb(132, 171, 63);
@@ -149,6 +152,7 @@ export const theme: ThemeData = {
   --ribbon-background: #1e1e1e;
   --ribbon-width: 41px;
   --search-result-background: #2a2a2a;
+  --secondary: var(--text-accent);
   --setting-items-background: #363636;
   --status-bar-background: #1e1e1e;
   --strike-color: #b3b3b3;
@@ -176,11 +180,13 @@ export const theme: ThemeData = {
   --tag-color: rgb(132, 171, 63);
   --tag-color-hover: rgb(132, 171, 63);
   --tag-padding-y: 0.15em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(132, 171, 63);
   --text-accent-hover: rgb(152, 190, 75);
   --text-highlight-bg: rgba(138, 15, 15, 0.4);
   --text-highlight-bg-rgb: 138, 15, 15;
   --text-selection: rgba(110, 148, 56, 0.33);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #363636;
   --titlebar-background-focused: #1e1e1e;
   --traffic-lights-offset-x: 37px;

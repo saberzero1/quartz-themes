@@ -15,10 +15,12 @@ export const theme: ThemeData = {
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(183, 154, 249);
   --blockquote-border-color: #dadada;
   --blockquote-border-thickness: 1px;
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --checkbox-color: rgb(183, 154, 249);
   --checkbox-color-hover: rgb(222, 211, 253);
   --code-normal: #62d770;
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: rgb(222, 211, 253);
   --color-accent: rgb(183, 154, 249);
   --color-accent-1: rgb(222, 211, 253);
@@ -45,7 +47,9 @@ export const theme: ThemeData = {
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
   --font-title: "Playfair Display";
   --graph-node-focused: rgb(222, 211, 253);
+  --headerFont: var(--font-text);
   --heading-weight: 600;
+  --highlight: var(--background-modifier-active-hover);
   --icon-color-active: rgb(222, 211, 253);
   --interactive-accent: rgb(183, 154, 249);
   --interactive-accent-hover: rgb(222, 211, 253);
@@ -70,6 +74,7 @@ export const theme: ThemeData = {
   --nav-item-background-selected: rgba(183, 154, 249, 0.15);
   --nav-item-color-highlighted: rgb(222, 211, 253);
   --pill-color-remove-hover: rgb(222, 211, 253);
+  --secondary: var(--text-accent);
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(183, 154, 249);
   --tab-text-color-focused-highlighted: rgb(222, 211, 253);
   --table-column-first-border-width: 0;
@@ -85,11 +90,14 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(183, 154, 249, 0.15);
   --tag-color: #eeb662;
   --tag-color-hover: #f7d865;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(222, 211, 253);
   --text-accent-hover: hsl(253, 92.4%, 101.91%);
   --text-selection: rgba(183, 154, 249, 0.33);
+  --textHighlight: var(--background-modifier-active-hover);
   --title-gradient-bottom: rgb(222, 211, 253);
   --title-gradient-top: #dadada;
+  --titleFont: var(--font-text);
   --quartz-icon-color: currentColor;
 }`,
     typography: `body .page article p > b, b {
@@ -395,8 +403,10 @@ body kbd {
     base: `:root:root {
   --blockquote-border-color: #222222;
   --blockquote-border-thickness: 1px;
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --code-normal: #4db95a;
+  --codeFont: var(--font-text);
   --file-header-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
   --font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -415,6 +425,7 @@ body kbd {
   --font-text-theme: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
   --font-title: "Playfair Display";
+  --headerFont: var(--font-text);
   --heading-weight: 600;
   --line-height-body: 1.45;
   --line-height-headings: 1.2;
@@ -439,6 +450,7 @@ body kbd {
   --tag-color-hover: #222222;
   --title-gradient-bottom: color-mix(in hsl, rgb(138, 92, 245), black);
   --title-gradient-top: rgb(138, 92, 245);
+  --titleFont: var(--font-text);
   --quartz-icon-color: currentColor;
 }`,
     typography: `body .page article p > b, b {

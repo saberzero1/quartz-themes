@@ -47,6 +47,7 @@ export const theme: ThemeData = {
   --blue-900: oklch(98% 0.005 260.58);
   --blue-rgb: 42, 113, 235;
   --blur-background: color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent) linear-gradient(oklch(25.5% 0.021 279.29), color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-modifier: 300;
   --bold-weight: 700;
   --callout-bug: oklch(48.5% 0.193 13.65);
@@ -96,7 +97,10 @@ export const theme: ThemeData = {
   --code-normal: oklch(92% 0.004 279.29);
   --code-punctuation: oklch(84.5% 0.01 279.29);
   --code-radius: 8px;
+  --codeFont: var(--font-text);
   --collapse-icon-color: oklch(74.5% 0.018 279.29);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: oklch(25.5% 0.021 279.29);
   --dropdown-background: oklch(25.5% 0.021 279.29);
   --dropdown-background-hover: oklch(35.5% 0.029 279.29);
@@ -164,7 +168,9 @@ export const theme: ThemeData = {
   --h6-color: oklch(84.5% 0.01 279.29);
   --h6-font: "Bricolage Grotesque";
   --h6-weight: 650;
+  --headerFont: var(--font-text);
   --heading-formatting: oklch(74.5% 0.018 279.29);
+  --highlight: var(--text-highlight-bg);
   --highlight-text-color: oklch(12% 0.009 279.29);
   --hr-color: oklch(25.5% 0.021 279.29);
   --icon-color: oklch(61.5% 0.028 279.29);
@@ -179,6 +185,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: oklch(74.5% 0.018 279.29);
   --interactive-hover: oklch(35.5% 0.029 279.29);
   --interactive-normal: oklch(25.5% 0.021 279.29);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-decoration: none;
   --list-indent-source: 0px;
   --list-marker-color: oklch(74.5% 0.018 279.29);
@@ -340,6 +348,8 @@ export const theme: ThemeData = {
   --text-normal: oklch(92% 0.004 279.29);
   --text-success: oklch(61.5% 0.183 140.09);
   --text-warning: oklch(61.5% 0.17 46.85);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: oklch(13.5% 0.01 279.29);
   --titlebar-background-focused: oklch(18% 0.014 279.29);
   --titlebar-border-color: oklch(25.5% 0.021 279.29);

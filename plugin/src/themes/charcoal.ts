@@ -60,6 +60,8 @@ export const theme: ThemeData = {
   --code-punctuation: rgb(109, 109, 109);
   --collapse-icon-color: rgb(109, 109, 109);
   --collapse-icon-color-collapsed: #9bb7c5;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(109, 109, 109);
   --divider-color-hover: rgba(0, 0, 0, 0.1);
   --dropdown-background: #222527;
@@ -99,6 +101,7 @@ export const theme: ThemeData = {
   --graph-node-unresolved: rgb(109, 109, 109);
   --graph-note-name: #959595;
   --graph-text: #959595;
+  --gray: var(--text-muted);
   --hashtag-color: #4c535a;
   --header-before-color: #575757;
   --header-before-size-h1: 0.5em;
@@ -108,6 +111,7 @@ export const theme: ThemeData = {
   --header-before-size-h5: 0.5em;
   --header-before-size-h6: 0.5em;
   --heading-formatting: rgb(109, 109, 109);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(99, 99, 99);
   --icon-color: rgb(109, 109, 109);
   --icon-color-active: #9bb7c5;
@@ -132,6 +136,8 @@ export const theme: ThemeData = {
   --interface-color-pencil: #fec03e;
   --interface-color-pin: #959595;
   --interface-color-three-dots: #a0e85b;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-footnote: 1.2em;
   --line-height-header-preview: 1em;
   --line-height-preview: 1.7em;
@@ -188,6 +194,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(109, 109, 109);
   --search-icon-color: rgb(109, 109, 109);
   --search-result-background: #222527;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #959595;
   --setting-items-background: rgba(0, 0, 0, 0.08);
   --setting-items-border-color: rgb(109, 109, 109);
@@ -221,6 +228,7 @@ export const theme: ThemeData = {
   --tag-color-hover: #9bb7c5;
   --tag-text-color: #959595;
   --tag-text-hover: #959595;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #9bb7c5;
   --text-accent-hover: rgb(109, 109, 109);
   --text-error: #800000;
@@ -238,6 +246,7 @@ export const theme: ThemeData = {
   --text-title-h4: #9c9c9d;
   --text-title-h5: #9c9c9d;
   --text-title-h6: #9c9c9d;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #1c1e21;
   --titlebar-background-focused: #1c1e21;
   --titlebar-border-color: rgb(109, 109, 109);

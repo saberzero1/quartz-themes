@@ -60,6 +60,7 @@ export const theme: ThemeData = {
   --code-comment: rgb(150, 155, 170);
   --code-normal: #dcddde;
   --code-punctuation: #888;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(150, 155, 170);
   --collapse-icon-color-collapsed: rgb(123, 161, 219);
   --color-accent: rgb(88, 130, 208);
@@ -68,6 +69,8 @@ export const theme: ThemeData = {
   --color-accent-hsl: 219, 56%, 58%;
   --comment: #6272a4;
   --cyan: #8be9fd;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #434c5e;
   --divider-color-hover: rgb(88, 130, 208);
   --dropdown-background-hover: #353b47;
@@ -86,10 +89,12 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(123, 161, 219);
   --graph-node-unresolved: rgb(150, 155, 170);
   --graph-text: #dcddde;
+  --gray: var(--text-muted);
   --gray-1: #5c6370;
   --gray-2: #abb2bf;
   --green: #50fa7b;
   --heading-formatting: rgb(150, 155, 170);
+  --highlight: var(--text-highlight-bg);
   --hr-color: #434c5e;
   --icon-color: #888;
   --icon-color-active: rgb(123, 161, 219);
@@ -102,6 +107,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 219, 56%, 58%;
   --interactive-hover: #353b47;
   --interactive-normal: #20242b;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(123, 161, 219);
   --link-color-hover: rgb(104, 186, 253);
   --link-external-color: rgb(123, 161, 219);
@@ -156,6 +163,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #888;
   --search-icon-color: #888;
   --search-result-background: #2e3440;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #dcddde;
   --setting-items-background: #272c38;
   --setting-items-border-color: #434c5e;
@@ -195,6 +203,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(88, 130, 208, 0.15);
   --tag-color: rgb(123, 161, 219);
   --tag-color-hover: rgb(123, 161, 219);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(123, 161, 219);
   --text-accent-color: rgb(97, 175, 239);
   --text-accent-h: 207;
@@ -213,6 +222,7 @@ export const theme: ThemeData = {
   --text-normal: #dcddde;
   --text-on-accent: #dcddde;
   --text-selection: rgba(0, 122, 255, 0.2);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #3b4252;
   --titlebar-background-focused: #434c5e;
   --titlebar-border-color: #434c5e;

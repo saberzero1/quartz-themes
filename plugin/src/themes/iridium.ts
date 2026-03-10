@@ -89,6 +89,8 @@ export const theme: ThemeData = {
   --color-base-50: rgb(97, 90, 114);
   --color-base-60: rgb(148, 141, 165);
   --color-base-70: rgb(175, 169, 188);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(51, 47, 60);
   --divider-color-hover: rgb(138, 92, 245);
   --dropdown-background: rgb(29, 27, 34);
@@ -114,6 +116,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(138, 92, 245);
   --graph-node-unresolved: rgb(97, 90, 114);
   --graph-text: rgb(217, 217, 217);
+  --gray: var(--text-muted);
   --h1-letter-spacing: 0;
   --h1-line-height: 1.5;
   --h1-size: 1.5em;
@@ -136,6 +139,7 @@ export const theme: ThemeData = {
   --h6-letter-spacing: 0;
   --heading-formatting: rgb(102, 102, 102);
   --heading-spacing: 1.5rem;
+  --highlight: var(--background-modifier-hover);
   --hr-color: rgb(0, 0, 0);
   --i-0: rgb(32, 29, 37);
   --i-1: rgb(34, 31, 40);
@@ -233,6 +237,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: oklch(from rgb(138, 92, 245) calc(l + 0.1) c h);
   --interactive-hover: rgb(49, 45, 57);
   --interactive-normal: rgb(29, 27, 34);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: oklch(from rgb(138, 92, 245) 0.8 0.05 h);
   --link-color-hover: oklch(from rgb(138, 92, 245) 0.8 0.05 h);
   --link-external-color: oklch(from rgb(138, 92, 245) 0.8 0.05 h);
@@ -306,6 +312,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(179, 179, 179);
   --search-icon-color: rgb(179, 179, 179);
   --search-result-background: rgb(29, 27, 34);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(217, 217, 217);
   --setting-items-background: rgb(29, 27, 34);
   --setting-items-border-color: rgb(51, 47, 60);
@@ -351,12 +358,14 @@ export const theme: ThemeData = {
   --tag-color-hover: rgb(217, 217, 217);
   --tag-padding-x: 0.5em;
   --tag-radius: 4px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: oklch(from rgb(138, 92, 245) 0.8 0.05 h);
   --text-accent-hover: oklch(from oklch(from rgb(138, 92, 245) 0.8 0.05 h) calc(l + 0.15) c h);
   --text-faint: rgb(102, 102, 102);
   --text-muted: rgb(179, 179, 179);
   --text-normal: rgb(217, 217, 217);
   --text-selection: rgba(138, 92, 245, 0.33);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: rgb(32, 29, 37);
   --titlebar-background-focused: rgb(32, 29, 37);
   --titlebar-border-color: rgb(51, 47, 60);
@@ -1499,6 +1508,7 @@ body sup {
   --h5-weight: 600;
   --h6-letter-spacing: 0;
   --heading-spacing: 1.5rem;
+  --highlight: var(--background-modifier-hover);
   --hr-color: rgb(0, 0, 0);
   --i-0: rgb(249, 249, 251);
   --i-1: rgb(247, 245, 249);
@@ -1590,6 +1600,8 @@ body sup {
   --interactive-accent: rgb(138, 92, 245);
   --interactive-accent-hover: oklch(from rgb(138, 92, 245) calc(l - 0.1) c h);
   --interactive-hover: rgb(238, 236, 244);
+  --light: var(--background-primary-alt);
+  --lightgray: var(--background-secondary);
   --link-color: oklch(from rgb(138, 92, 245) 0.45 0.1 h);
   --link-color-hover: oklch(from rgb(138, 92, 245) 0.45 0.1 h);
   --link-external-color: oklch(from rgb(138, 92, 245) 0.45 0.1 h);
@@ -1635,6 +1647,7 @@ body sup {
   --ribbon-background: rgb(221, 217, 232);
   --ribbon-background-collapsed: rgb(221, 217, 232);
   --ribbon-padding: 8px 0 12px;
+  --secondary: var(--text-accent);
   --setting-items-background: #ffffff;
   --setting-items-border-color: rgb(221, 217, 232);
   --setting-items-padding: 0 0 20px 0;
@@ -1675,9 +1688,11 @@ body sup {
   --tag-color-hover: #222222;
   --tag-padding-x: 0.5em;
   --tag-radius: 4px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: oklch(from rgb(138, 92, 245) 0.45 0.1 h);
   --text-accent-hover: oklch(from oklch(from rgb(138, 92, 245) 0.45 0.1 h) calc(l - 0.15) c h);
   --text-selection: rgba(138, 92, 245, 0.2);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: rgb(249, 249, 251);
   --titlebar-background-focused: rgb(249, 249, 251);
   --titlebar-border-color: rgb(221, 217, 232);

@@ -63,6 +63,8 @@ export const theme: ThemeData = {
   --code-normal: #ffffff;
   --code-punctuation: #888888;
   --collapse-icon-color: #888888;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #333333;
   --divider-color-hover: #4d8bf9;
   --dropdown-background: #000000;
@@ -93,6 +95,7 @@ export const theme: ThemeData = {
   --graph-node: #888888;
   --graph-node-unresolved: #888888;
   --graph-text: #ffffff;
+  --gray: var(--text-muted);
   --heading-color-h1: #4d8bf9;
   --heading-color-h2: #0070f3;
   --heading-color-h3: #ffffff;
@@ -100,6 +103,7 @@ export const theme: ThemeData = {
   --heading-color-h5: #ffffff;
   --heading-color-h6: #888888;
   --heading-formatting: #888888;
+  --highlight: var(--text-highlight-bg);
   --highlight-high: #444444;
   --highlight-low: #111111;
   --highlight-med: #333333;
@@ -116,6 +120,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: #4d8bf9;
   --interactive-hover: #111111;
   --interactive-normal: #000000;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #4d8bf9;
   --link-color-hover: #0070f3;
   --link-external-color: #888888;
@@ -162,6 +168,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #888888;
   --search-icon-color: #888888;
   --search-result-background: #000000;
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: #ffffff;
   --setting-items-background: #000000;
   --setting-items-border-color: #333333;
@@ -188,6 +195,7 @@ export const theme: ThemeData = {
   --table-header-border-color: #333333;
   --table-header-color: #ffffff;
   --table-selection-border-color: #4d8bf9;
+  --tertiary: var(--text-accent-hover);
   --text-1: #ffffff;
   --text-2: #888888;
   --text-accent-hover: #0070f3;
@@ -199,6 +207,7 @@ export const theme: ThemeData = {
   --text-normal: #ffffff;
   --text-on-accent: #ffffff;
   --text-selection: rgba(77, 139, 249, 0.3);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #000000;
   --titlebar-background-focused: #000000;
   --titlebar-border-color: #333333;
@@ -1065,6 +1074,8 @@ body sup {
   --code-normal: #ffffff;
   --code-punctuation: #888888;
   --collapse-icon-color: #888888;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #eaeaea;
   --divider-color-hover: #4d8bf9;
   --dropdown-background: #000000;
@@ -1095,6 +1106,7 @@ body sup {
   --graph-node: #888888;
   --graph-node-unresolved: #888888;
   --graph-text: #ffffff;
+  --gray: var(--text-muted);
   --heading-color-h1: #4d8bf9;
   --heading-color-h2: #0070f3;
   --heading-color-h3: #ffffff;
@@ -1102,6 +1114,7 @@ body sup {
   --heading-color-h5: #ffffff;
   --heading-color-h6: #888888;
   --heading-formatting: #888888;
+  --highlight: var(--text-highlight-bg);
   --highlight-high: #adc8ff;
   --highlight-low: #eaeaea;
   --highlight-med: #999999;
@@ -1118,6 +1131,8 @@ body sup {
   --interactive-accent-hover: #4d8bf9;
   --interactive-hover: #eaeaea;
   --interactive-normal: #000000;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #0070f3;
   --link-color-hover: #0051cc;
   --link-external-color-hover: #0051cc;
@@ -1162,6 +1177,7 @@ body sup {
   --search-clear-button-color: #888888;
   --search-icon-color: #888888;
   --search-result-background: #000000;
+  --secondary: var(--interactive-accent);
   --setting-group-heading-color: #ffffff;
   --setting-items-background: #000000;
   --setting-items-border-color: #eaeaea;
@@ -1188,6 +1204,7 @@ body sup {
   --table-header-border-color: #eaeaea;
   --table-header-color: #ffffff;
   --table-selection-border-color: #4d8bf9;
+  --tertiary: var(--text-accent-hover);
   --text-1: #ffffff;
   --text-2: #888888;
   --text-accent-hover: #0051cc;
@@ -1199,6 +1216,7 @@ body sup {
   --text-normal: #ffffff;
   --text-on-accent: #ffffff;
   --text-selection: rgba(77, 139, 249, 0.3);
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #000000;
   --titlebar-background-focused: #000000;
   --titlebar-border-color: #eaeaea;

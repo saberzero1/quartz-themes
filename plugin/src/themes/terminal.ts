@@ -40,6 +40,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #000000;
   --blockquote-border-color: #000000;
   --blur-background: color-mix(in srgb, #000000 65%, transparent) linear-gradient(#000000, color-mix(in srgb, #000000 65%, transparent));
+  --bodyFont: var(--font-interface);
   --canvas-background: #000000;
   --canvas-card-label-color: #15d00d;
   --caret-color: #15d00d;
@@ -56,10 +57,13 @@ export const theme: ThemeData = {
   --code-comment: #15d00d;
   --code-normal: #15d00d;
   --code-punctuation: #15d00d;
+  --codeFont: var(--font-interface);
   --collapse-down: "v";
   --collapse-icon-color: #15d00d;
   --collapse-icon-color-collapsed: #15d00d;
   --collapse-right: ">";
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: Fira Code;
   --divider-color: #15d00d;
   --divider-color-hover: #000000;
@@ -82,7 +86,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #15d00d;
   --graph-node-unresolved: #15d00d;
   --graph-text: #15d00d;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-interface);
   --heading-formatting: #15d00d;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #15d00d;
   --icon-color: #15d00d;
   --icon-color-active: #15d00d;
@@ -97,6 +104,8 @@ export const theme: ThemeData = {
   --interactive-hover: #000000;
   --interactive-normal: #000000;
   --interactive-success: #197300;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #15d00d;
   --link-color-hover: #15d00d;
   --link-external-color: #15d00d;
@@ -156,6 +165,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #15d00d;
   --search-icon-color: #15d00d;
   --search-result-background: #000000;
+  --secondary: var(--text-accent);
   --selected: ">";
   --setting-group-heading-color: #15d00d;
   --setting-items-background: #000000;
@@ -189,6 +199,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #000000;
   --tag-color: #15d00d;
   --tag-color-hover: #15d00d;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #15d00d;
   --text-accent-hover: #15d00d;
   --text-error: #ff3333;
@@ -201,11 +212,13 @@ export const theme: ThemeData = {
   --text-normal: #15d00d;
   --text-on-accent: #15d00d;
   --text-selection: rgba(23, 48, 77, 0.99);
+  --textHighlight: var(--text-highlight-bg);
   --the-background-color: #000000;
   --the-color: #15d00d;
   --the-color-rgb: 35, 255, 24;
   --the-font: Fira Code;
   --the-font-size: 14px;
+  --titleFont: var(--font-interface);
   --titlebar-background: #000000;
   --titlebar-background-focused: #000000;
   --titlebar-border-color: #15d00d;

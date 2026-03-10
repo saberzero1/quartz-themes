@@ -21,6 +21,7 @@ export const theme: ThemeData = {
   --blockquote-background-color: #1d2021;
   --blockquote-border-color: #91f697;
   --blockquote-border-thickness: 4px;
+  --bodyFont: var(--font-text);
   --button-radius: 4px;
   --canvas-background: #232627;
   --canvas-card-label-color: #91f697;
@@ -49,6 +50,7 @@ export const theme: ThemeData = {
   --code-string: #91f697;
   --code-tag: #f92672;
   --code-value: #8be1c0;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #6f6b5b;
   --collapse-icon-color-collapsed: #6f6b5b;
   --color-aquamarine: #b7f3db;
@@ -73,6 +75,8 @@ export const theme: ThemeData = {
   --color-rose-rgb: 249, 38, 114;
   --color-tan: #ebdbb2;
   --color-tan-rgb: 235, 219, 178;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #6f6b5b26;
   --divider-color-hover: #6f6b5b;
   --file-header-background: #232627;
@@ -96,6 +100,7 @@ export const theme: ThemeData = {
   --graph-node: #91f697;
   --graph-node-focused: #f92672;
   --graph-text: #ebdbb2;
+  --gray: var(--text-normal);
   --h1-color: #f92672;
   --h1-size: 1.802em;
   --h2-color: #009489;
@@ -115,6 +120,7 @@ export const theme: ThemeData = {
   --h5-weight: 600;
   --h6-color: #ebdbb2;
   --h6-style: italic;
+  --headerFont: var(--font-text);
   --hr-color: #6f6b5b26;
   --hr-thickness: 3px;
   --icon-color: #6f6b5b;
@@ -128,6 +134,8 @@ export const theme: ThemeData = {
   --inline-title-color: #f92672;
   --inline-title-size: 1.802em;
   --input-radius: 4px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #91f697;
   --link-color-hover: #91f697;
   --link-decoration: none;
@@ -217,6 +225,7 @@ export const theme: ThemeData = {
   --tag-color: #91f697;
   --tag-padding-y: 0.3em;
   --text-normal: #ebdbb2;
+  --titleFont: var(--font-text);
   --titlebar-background: #232627;
   --titlebar-background-focused: #1d2021;
   --titlebar-border-color: #6f6b5b26;

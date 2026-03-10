@@ -11,6 +11,8 @@ export const theme: ThemeData = {
     base: `:root:root[saved-theme="dark"] {
   --bases-group-heading-property-size: 11px;
   --blockquote-background-color: #242424;
+  --bodyFont: var(--font-text);
+  --codeFont: var(--font-text);
   --color-base-23: #323232;
   --default-border-radius: 3px;
   --divider-color: #323232;
@@ -42,6 +44,7 @@ export const theme: ThemeData = {
   --h5-margin-top: 3rem;
   --h6-margin-bottom: .6rem;
   --h6-margin-top: 3rem;
+  --headerFont: var(--font-text);
   --hr-thickness: 1px;
   --list-spacing: 5px;
   --metadata-input-font: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -71,6 +74,7 @@ export const theme: ThemeData = {
   --tab-radius-active: 3px;
   --tab-stacked-font-size: 12px;
   --tag-size: .75rem;
+  --titleFont: var(--font-text);
   --vault-profile-font-size: 12px;
   --quartz-icon-color: currentColor;
 }
@@ -300,6 +304,8 @@ body sup {
     base: `:root:root {
   --bases-group-heading-property-size: 11px;
   --blockquote-background-color: #fafafa;
+  --bodyFont: var(--font-text);
+  --codeFont: var(--font-text);
   --color-base-23: #eee;
   --default-border-radius: 3px;
   --divider-color: #eee;
@@ -331,6 +337,7 @@ body sup {
   --h5-margin-top: 3rem;
   --h6-margin-bottom: .6rem;
   --h6-margin-top: 3rem;
+  --headerFont: var(--font-text);
   --hr-thickness: 1px;
   --list-spacing: 5px;
   --metadata-input-font: '??', '??', '??', "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -360,6 +367,7 @@ body sup {
   --tab-radius-active: 3px;
   --tab-stacked-font-size: 12px;
   --tag-size: .75rem;
+  --titleFont: var(--font-text);
   --vault-profile-font-size: 12px;
   --quartz-icon-color: currentColor;
 }

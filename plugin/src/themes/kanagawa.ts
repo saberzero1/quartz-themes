@@ -31,6 +31,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: #658594;
   --boatYellow1: #938056;
   --boatYellow2: #C0A36E;
+  --bodyFont: var(--font-text);
   --bold-color: #ebdbb2;
   --bright-aqua: #8ec07c;
   --bright-blue: #83a598;
@@ -51,10 +52,12 @@ export const theme: ThemeData = {
   --code-border-color: #658594;
   --code-comment: #727169;
   --code-normal: #DCD7BA;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #727169;
   --collapse-icon-color-collapsed: #76946A;
   --cool-off-white: #F0F5F5;
   --crystalBlue: #7E9CD8;
+  --dark: var(--text-normal);
   --dark0: #282828;
   --dark0-hard: #1d2021;
   --dark0-soft: #32302f;
@@ -62,6 +65,7 @@ export const theme: ThemeData = {
   --dark2: #504945;
   --dark3: #665c54;
   --dark4: #7c6f64;
+  --darkgray: var(--text-normal);
   --divider-color: #658594;
   --divider-color-hover: #658594;
   --dragonBlue: #658594;
@@ -91,7 +95,9 @@ export const theme: ThemeData = {
   --graph-node-unresolved: #727169;
   --graph-text: #DCD7BA;
   --gray: #928374;
+  --headerFont: var(--font-text);
   --heading-formatting: #727169;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #658594;
   --icon-color-active: #76946A;
   --icon-color-focused: #DCD7BA;
@@ -102,6 +108,7 @@ export const theme: ThemeData = {
   --interactive-accent-rgb: #98BB6C;
   --interactive-before: #54546D;
   --katanaGray: #717C7C;
+  --light: var(--background-primary);
   --light0: #fbf1c7;
   --light0-hard: #f9f5d7;
   --light0-soft: #f2e5bc;
@@ -110,6 +117,7 @@ export const theme: ThemeData = {
   --light3: #bdae93;
   --light4: #a89984;
   --lightBlue: #A3D4D5;
+  --lightgray: var(--background-secondary);
   --link-color: #76946A;
   --link-external-color: #76946A;
   --link-unresolved-color: #76946A;
@@ -198,6 +206,7 @@ export const theme: ThemeData = {
   --sakuraPink: #D27E99;
   --samuraiRed: #E82424;
   --search-result-background: #1F1F28;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #DCD7BA;
   --setting-items-background: #1F1F28;
   --setting-items-border-color: #658594;
@@ -239,6 +248,7 @@ export const theme: ThemeData = {
   --tag-color: #76946A;
   --tag-color-hover: #76946A;
   --task-checkbox: #54546D;
+  --tertiary: var(--text-accent);
   --text-a: #658594;
   --text-a-hover: #FF5D62;
   --text-a-url: #658594;
@@ -256,6 +266,8 @@ export const theme: ThemeData = {
   --text-title-h4: #98971a;
   --text-title-h5: #689d6a;
   --text-title-h6: #458588;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #181820;
   --titlebar-background-focused: #2A2A37;
   --titlebar-border-color: #658594;
@@ -982,6 +994,7 @@ body sup {
   --blur-background: color-mix(in srgb, #F2EFE9 65%, transparent) linear-gradient(#F2EFE9, color-mix(in srgb, #F2EFE9 65%, transparent));
   --boatYellow1: #938056;
   --boatYellow2: #C0A36E;
+  --bodyFont: var(--font-text);
   --bold-color: #545464;
   --bright-aqua: #8ec07c;
   --bright-blue: #83a598;
@@ -1002,10 +1015,12 @@ body sup {
   --code-border-color: #9fb5c9;
   --code-comment: #8a8980;
   --code-normal: #545464;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #8a8980;
   --collapse-icon-color-collapsed: #6f894e;
   --cool-off-white: #F0F5F5;
   --crystalBlue: #7E9CD8;
+  --dark: var(--text-normal);
   --dark0: #282828;
   --dark0-hard: #1d2021;
   --dark0-soft: #32302f;
@@ -1013,6 +1028,7 @@ body sup {
   --dark2: #504945;
   --dark3: #665c54;
   --dark4: #7c6f64;
+  --darkgray: var(--text-normal);
   --divider-color: #9fb5c9;
   --divider-color-hover: #9fb5c9;
   --dragonBlue: #658594;
@@ -1042,7 +1058,9 @@ body sup {
   --graph-node-unresolved: #8a8980;
   --graph-text: #545464;
   --gray: #928374;
+  --headerFont: var(--font-text);
   --heading-formatting: #8a8980;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #9fb5c9;
   --icon-color-active: #6f894e;
   --icon-color-focused: #545464;
@@ -1053,6 +1071,7 @@ body sup {
   --interactive-accent-rgb: #6f894e;
   --interactive-before: #716e61;
   --katanaGray: #717C7C;
+  --light: var(--background-primary);
   --light0: #fbf1c7;
   --light0-hard: #f9f5d7;
   --light0-soft: #f2e5bc;
@@ -1061,6 +1080,7 @@ body sup {
   --light3: #bdae93;
   --light4: #a89984;
   --lightBlue: #A3D4D5;
+  --lightgray: var(--background-secondary);
   --link-color: #6f894e;
   --link-external-color: #6f894e;
   --link-unresolved-color: #6f894e;
@@ -1148,6 +1168,7 @@ body sup {
   --sakuraPink: #D27E99;
   --samuraiRed: #E82424;
   --search-result-background: #F2EFE9;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #545464;
   --setting-items-background: #e7dba0;
   --setting-items-border-color: #9fb5c9;
@@ -1189,6 +1210,7 @@ body sup {
   --tag-color: #6f894e;
   --tag-color-hover: #6f894e;
   --task-checkbox: #716e61;
+  --tertiary: var(--text-accent);
   --text-a: #4e8ca2;
   --text-a-hover: #c84053;
   --text-a-url: #6693bf;
@@ -1206,6 +1228,8 @@ body sup {
   --text-title-h4: #6f894e;
   --text-title-h5: #597b75;
   --text-title-h6: #4d699b;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #F8F8F8;
   --titlebar-background-focused: #f2ecbc;
   --titlebar-border-color: #9fb5c9;

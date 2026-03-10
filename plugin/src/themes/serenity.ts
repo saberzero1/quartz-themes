@@ -49,6 +49,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: rgb(61, 61, 61);
   --blockquote-border-thickness: 1.2px;
   --blur-background: color-mix(in srgb, rgb(20, 20, 20) 65%, transparent) linear-gradient(rgb(20, 20, 20), color-mix(in srgb, rgb(20, 20, 20) 65%, transparent));
+  --bodyFont: var(--font-text);
   --c-00: 5%;
   --c-05: 6%;
   --c-10: 10%;
@@ -88,6 +89,7 @@ export const theme: ThemeData = {
   --code-normal: rgb(186, 186, 186);
   --code-punctuation: rgb(166, 166, 166);
   --code-radius: 5px;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(166, 166, 166);
   --collapse-icon-color-collapsed: hsl(242, 104%, 76%);
   --color-accent: rgb(102, 107, 255);
@@ -130,6 +132,8 @@ export const theme: ThemeData = {
   --custom-theme-tint-secondary-l: 15;
   --custom-theme-tint-text-d: 10;
   --custom-theme-tint-text-l: 205;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(61, 61, 61);
   --divider-color-hover: rgb(102, 107, 255);
   --divider-width: 0.2px;
@@ -169,6 +173,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(104, 109, 243);
   --graph-node-unresolved: rgb(161, 124, 248);
   --graph-text: rgb(186, 186, 186);
+  --gray: var(--text-muted);
   --h-align-s: left;
   --h-weight-s: 600;
   --h1-align: left;
@@ -189,7 +194,9 @@ export const theme: ThemeData = {
   --h5-weight: 600;
   --h6-align: left;
   --h6-line-height: 1.75;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(166, 166, 166);
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: rgb(61, 61, 61);
   --hr-thickness: 1px;
   --icon-color: rgb(166, 166, 166);
@@ -216,6 +223,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 238, 100%, 70%;
   --interactive-hover: rgba(102, 107, 255, 0.1);
   --interactive-normal: rgb(20, 20, 20);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.75;
   --link-color: hsl(242, 104%, 76%);
   --link-color-hover: hsl(234, 104%, 75%);
@@ -292,6 +301,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(166, 166, 166);
   --search-icon-color: rgb(166, 166, 166);
   --search-result-background: rgb(13, 13, 13);
+  --secondary: var(--text-accent);
   --serenity-mode-font-size: 17px;
   --setting-group-heading-color: rgb(186, 186, 186);
   --setting-items-background: rgb(26, 26, 26);
@@ -346,18 +356,21 @@ export const theme: ThemeData = {
   --tag-padding-x: 6px;
   --tag-padding-y: 2px;
   --tag-radius: 5px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(242, 104%, 76%);
   --text-accent-hover: hsl(234, 104%, 75%);
   --text-faint: rgb(166, 166, 166);
   --text-muted: rgb(166, 166, 166);
   --text-normal: rgb(186, 186, 186);
   --text-selection: rgba(102, 107, 255, 0.33);
+  --textHighlight: var(--background-modifier-active-hover);
   --theme-sat: 0%;
   --theme-sat-secondary: 0%;
   --theme-sat-text: 0%;
   --theme-tint: 0;
   --theme-tint-secondary: 0;
   --theme-tint-text: 0;
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(13, 13, 13);
   --titlebar-background-focused: rgb(3, 3, 3);
   --titlebar-border-color: rgb(61, 61, 61);
@@ -1542,6 +1555,7 @@ body sup {
   --blockquote-border-color: rgb(134, 121, 121);
   --blockquote-border-thickness: 1.2px;
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent) linear-gradient(hsl(0, 0%, 103.2%), color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent));
+  --bodyFont: var(--font-text);
   --c-00: 103.2%;
   --c-05: 101.2%;
   --c-10: 97.2%;
@@ -1587,6 +1601,7 @@ body sup {
   --code-punctuation: rgb(69, 69, 69);
   --code-radius: 5px;
   --code-tag: #f45757;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(89, 89, 89);
   --collapse-icon-color-collapsed: rgb(108, 132, 229);
   --color-accent: rgb(108, 132, 229);
@@ -1631,6 +1646,8 @@ body sup {
   --custom-theme-tint-secondary-l: 15;
   --custom-theme-tint-text-d: 10;
   --custom-theme-tint-text-l: 205;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(219, 215, 215);
   --divider-color-hover: rgb(129, 151, 234);
   --divider-width: 0.2px;
@@ -1671,6 +1688,7 @@ body sup {
   --graph-node-focused: rgb(165, 182, 248);
   --graph-node-unresolved: rgb(138, 122, 240);
   --graph-text: rgb(51, 51, 51);
+  --gray: var(--text-muted);
   --h-align-s: left;
   --h-weight-s: 600;
   --h1-align: left;
@@ -1691,7 +1709,9 @@ body sup {
   --h5-weight: 600;
   --h6-align: left;
   --h6-line-height: 1.75;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(89, 89, 89);
+  --highlight: var(--background-modifier-hover);
   --hr-color: rgb(134, 121, 121);
   --hr-thickness: 1px;
   --icon-color: rgb(69, 69, 69);
@@ -1718,6 +1738,8 @@ body sup {
   --interactive-accent-hsl: 228, 70%, 66%;
   --interactive-hover: rgba(108, 132, 229, 0.1);
   --interactive-normal: hsl(0, 0%, 101.2%);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.75;
   --link-color: rgb(129, 151, 234);
   --link-color-hover: rgb(135, 162, 237);
@@ -1797,6 +1819,7 @@ body sup {
   --search-clear-button-color: rgb(69, 69, 69);
   --search-icon-color: rgb(69, 69, 69);
   --search-result-background: hsl(0, 0%, 103.2%);
+  --secondary: var(--text-accent);
   --serenity-mode-font-size: 17px;
   --setting-group-heading-color: rgb(51, 51, 51);
   --setting-items-background: rgb(247, 247, 247);
@@ -1852,6 +1875,7 @@ body sup {
   --tag-padding-x: 6px;
   --tag-padding-y: 2px;
   --tag-radius: 5px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(108, 132, 229);
   --text-accent-hover: rgb(135, 162, 237);
   --text-base: 15%;
@@ -1860,12 +1884,14 @@ body sup {
   --text-muted: rgb(69, 69, 69);
   --text-normal: rgb(51, 51, 51);
   --text-selection: rgba(108, 132, 229, 0.2);
+  --textHighlight: var(--background-modifier-hover);
   --theme-sat: 0%;
   --theme-sat-secondary: 0%;
   --theme-sat-text: 0%;
   --theme-tint: 0;
   --theme-tint-secondary: 0;
   --theme-tint-text: 0;
+  --titleFont: var(--font-text);
   --titlebar-background: hsl(0, 0%, 103.2%);
   --titlebar-background-focused: rgb(250, 250, 250);
   --titlebar-border-color: rgb(219, 215, 215);

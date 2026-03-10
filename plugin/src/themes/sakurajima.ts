@@ -43,6 +43,8 @@ export const theme: ThemeData = {
   --color-accent-1: rgb(194, 110, 41);
   --color-accent-2: rgb(215, 119, 51);
   --color-accent-hsl: 30, 64%, 40%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgb(167, 102, 37);
   --dropdown-background-brend-mode: rgb(125, 119, 114);
   --embed-border-start: 2px solid rgb(167, 102, 37);
@@ -53,6 +55,8 @@ export const theme: ThemeData = {
   --graph-node: rgb(181, 174, 165);
   --graph-node-focused: rgb(194, 110, 41);
   --graph-text: rgb(232, 222, 209);
+  --gray: var(--text-muted);
+  --highlight: var(--background-modifier-active-hover);
   --icon-color: rgb(181, 174, 165);
   --icon-color-active: rgb(194, 110, 41);
   --icon-color-focused: rgb(232, 222, 209);
@@ -61,6 +65,7 @@ export const theme: ThemeData = {
   --interactive-accent: rgb(167, 102, 37);
   --interactive-accent-hover: rgb(194, 110, 41);
   --interactive-accent-hsl: 30, 64%, 40%;
+  --light: var(--background-primary);
   --link-color: rgb(194, 110, 41);
   --link-color-hover: rgb(215, 119, 51);
   --link-external-color: rgb(194, 110, 41);
@@ -121,6 +126,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(181, 174, 165);
   --search-icon-color: rgb(181, 174, 165);
   --search-result-background: rgb(46, 46, 46);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(232, 222, 209);
   --setting-items-background: rgb(28, 26, 25);
   --slider-thumb-radius: 8px;
@@ -147,11 +153,13 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(167, 102, 37, 0.15);
   --tag-color: rgb(194, 110, 41);
   --tag-color-hover: rgb(194, 110, 41);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(194, 110, 41);
   --text-accent-hover: rgb(215, 119, 51);
   --text-muted: rgb(181, 174, 165);
   --text-normal: rgb(232, 222, 209);
   --text-selection: rgba(167, 102, 37, 0.33);
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-text-color: rgb(181, 174, 165);
   --titlebar-text-color-focused: rgb(232, 222, 209);
   --toggle-radius: 8px;
