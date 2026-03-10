@@ -324,7 +324,7 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap) {
     if (baseVars[quartzVar]) continue;
     for (const source of sources) {
       if (baseVars[source]) {
-        baseVars[quartzVar] = `var(${source})`;
+        baseVars[quartzVar] = baseVars[source];
         break;
       }
     }
@@ -369,6 +369,11 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap) {
       ? ':root:root[saved-theme="dark"]'
       : ":root:root"
     : ":root:root";
+  const htmlSelector = bothModes
+    ? mode === "dark"
+      ? 'html[saved-theme="dark"]'
+      : 'html[saved-theme="light"]'
+    : "html";
 
   for (const aspect of ASPECT_ORDER) {
     const selectorMap = aspectSelectors.get(aspect);
@@ -376,9 +381,15 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap) {
 
     if (aspect === "base") {
       const varKeys = Object.keys(baseVars).sort();
-      const varLines = varKeys.map((key) => `  ${key}: ${baseVars[key]};`);
-      varLines.push("  --quartz-icon-color: currentColor;");
+      const varLines = varKeys.map((key) => {
+        const suffix = key.startsWith("--callout-") ? "" : " !important";
+        return `  ${key}: ${baseVars[key]}${suffix};`;
+      });
+      varLines.push("  --quartz-icon-color: currentColor !important;");
       cssParts.push(`${rootSelector} {\n${varLines.join("\n")}\n}`);
+      cssParts.push(
+        `${htmlSelector} body {\n  background-color: var(--background-primary) !important;\n  color: var(--text-normal) !important;\n}`,
+      );
     }
 
     if (selectorMap && selectorMap.size > 0) {

@@ -9,42 +9,47 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --bases-cards-radius: 0px;
-  --bases-embed-border-radius: 0px;
-  --bases-table-container-border-radius: 0px;
-  --bodyFont: var(--font-text);
-  --button-radius: 0px;
+  --bases-cards-radius: 0px !important;
+  --bases-embed-border-radius: 0px !important;
+  --bases-table-container-border-radius: 0px !important;
+  --bodyFont: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --button-radius: 0px !important;
   --callout-radius: 0px;
-  --canvas-controls-radius: 0px;
-  --checkbox-radius: 0px;
-  --clickable-icon-radius: 0px;
-  --code-radius: 0px;
-  --codeFont: var(--font-text);
-  --font-mermaid: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-print: '??', '??', "Computer Modern", 'Arial';
-  --font-text: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-text-theme: "Computer Modern";
-  --footnote-radius: 0px;
-  --headerFont: var(--font-text);
-  --input-radius: 0px;
-  --menu-radius: 0px;
-  --modal-radius: 0px;
-  --nav-item-radius: 0px;
-  --nav-tag-radius: 0px;
-  --primary-color: #2875d9;
-  --radius-l: 0px;
-  --radius-m: 0px;
-  --radius-s: 0px;
-  --scrollbar-radius: 0px;
-  --setting-items-radius: 0px;
-  --slider-thumb-radius: 0px;
-  --status-bar-radius: 0px 0 0 0;
-  --tab-radius: 0px;
-  --tab-radius-active: 0px;
-  --titleFont: var(--font-text);
-  --toggle-radius: 0px;
-  --toggle-thumb-radius: 0px;
-  --quartz-icon-color: currentColor;
+  --canvas-controls-radius: 0px !important;
+  --checkbox-radius: 0px !important;
+  --clickable-icon-radius: 0px !important;
+  --code-radius: 0px !important;
+  --codeFont: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: '??', '??', "Computer Modern", 'Arial' !important;
+  --font-text: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text-theme: "Computer Modern" !important;
+  --footnote-radius: 0px !important;
+  --headerFont: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --input-radius: 0px !important;
+  --menu-radius: 0px !important;
+  --modal-radius: 0px !important;
+  --nav-item-radius: 0px !important;
+  --nav-tag-radius: 0px !important;
+  --primary-color: #2875d9 !important;
+  --radius-l: 0px !important;
+  --radius-m: 0px !important;
+  --radius-s: 0px !important;
+  --scrollbar-radius: 0px !important;
+  --setting-items-radius: 0px !important;
+  --slider-thumb-radius: 0px !important;
+  --status-bar-radius: 0px 0 0 0 !important;
+  --tab-radius: 0px !important;
+  --tab-radius-active: 0px !important;
+  --titleFont: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --toggle-radius: 0px !important;
+  --toggle-thumb-radius: 0px !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     typography: `body .page article p > b, b {
   font-family: "??", "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -364,42 +369,47 @@ body kbd {
   },
   light: {
     base: `:root:root {
-  --bases-cards-radius: 0px;
-  --bases-embed-border-radius: 0px;
-  --bases-table-container-border-radius: 0px;
-  --bodyFont: var(--font-text);
-  --button-radius: 0px;
+  --bases-cards-radius: 0px !important;
+  --bases-embed-border-radius: 0px !important;
+  --bases-table-container-border-radius: 0px !important;
+  --bodyFont: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --button-radius: 0px !important;
   --callout-radius: 0px;
-  --canvas-controls-radius: 0px;
-  --checkbox-radius: 0px;
-  --clickable-icon-radius: 0px;
-  --code-radius: 0px;
-  --codeFont: var(--font-text);
-  --font-mermaid: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-print: '??', '??', "Computer Modern", 'Arial';
-  --font-text: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-text-theme: "Computer Modern";
-  --footnote-radius: 0px;
-  --headerFont: var(--font-text);
-  --input-radius: 0px;
-  --menu-radius: 0px;
-  --modal-radius: 0px;
-  --nav-item-radius: 0px;
-  --nav-tag-radius: 0px;
-  --primary-color: #2875d9;
-  --radius-l: 0px;
-  --radius-m: 0px;
-  --radius-s: 0px;
-  --scrollbar-radius: 0px;
-  --setting-items-radius: 0px;
-  --slider-thumb-radius: 0px;
-  --status-bar-radius: 0px 0 0 0;
-  --tab-radius: 0px;
-  --tab-radius-active: 0px;
-  --titleFont: var(--font-text);
-  --toggle-radius: 0px;
-  --toggle-thumb-radius: 0px;
-  --quartz-icon-color: currentColor;
+  --canvas-controls-radius: 0px !important;
+  --checkbox-radius: 0px !important;
+  --clickable-icon-radius: 0px !important;
+  --code-radius: 0px !important;
+  --codeFont: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: '??', '??', "Computer Modern", 'Arial' !important;
+  --font-text: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text-theme: "Computer Modern" !important;
+  --footnote-radius: 0px !important;
+  --headerFont: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --input-radius: 0px !important;
+  --menu-radius: 0px !important;
+  --modal-radius: 0px !important;
+  --nav-item-radius: 0px !important;
+  --nav-tag-radius: 0px !important;
+  --primary-color: #2875d9 !important;
+  --radius-l: 0px !important;
+  --radius-m: 0px !important;
+  --radius-s: 0px !important;
+  --scrollbar-radius: 0px !important;
+  --setting-items-radius: 0px !important;
+  --slider-thumb-radius: 0px !important;
+  --status-bar-radius: 0px 0 0 0 !important;
+  --tab-radius: 0px !important;
+  --tab-radius-active: 0px !important;
+  --titleFont: '??', "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --toggle-radius: 0px !important;
+  --toggle-thumb-radius: 0px !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }`,
     typography: `body .page article p > b, b {
   font-family: "??", "Computer Modern", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

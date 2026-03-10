@@ -9,52 +9,59 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-h: 254;
-  --accent-l: 68%;
-  --accent-s: 80%;
-  --background-modifier-active-hover: rgb(139, 108, 239);
-  --background-modifier-border: rgb(54, 58, 79);
-  --background-modifier-border-focus: rgb(110, 115, 141);
-  --background-modifier-border-hover: rgb(91, 96, 120);
-  --background-modifier-box-shadow: rgb(24, 25, 38, 30%);
-  --background-modifier-cover: rgb(24, 25, 38, 90%);
-  --background-modifier-error: rgb(237, 135, 150, 90%);
-  --background-modifier-error-hover: rgb(237, 135, 150, 100%);
-  --background-modifier-error-rgb: 237, 135, 150;
-  --background-modifier-form-field: rgb(24, 25, 38, 30%);
-  --background-modifier-form-field-highlighted: rgb(24, 25, 38, 22%);
-  --background-modifier-form-field-hover: rgb(24, 25, 38, 30%);
-  --background-modifier-hover: rgb(202, 211, 245, 7.5%);
-  --background-modifier-message: rgb(0, 0, 0, 90%);
-  --background-modifier-success: rgb(166, 218, 149, 90%);
-  --background-modifier-success-rgb: 166, 218, 149;
-  --background-primary: rgb(36, 39, 58);
-  --background-primary-alt: rgb(30, 32, 48);
-  --background-primary-rgb: 36, 39, 58;
-  --background-secondary: rgb(30, 32, 48);
-  --background-secondary-alt: rgb(24, 25, 38);
-  --bases-cards-background: rgb(36, 39, 58);
-  --bases-cards-cover-background: rgb(30, 32, 48);
-  --bases-cards-shadow: 0 0 0 1px rgb(54, 58, 79);
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(91, 96, 120);
-  --bases-embed-border-color: rgb(54, 58, 79);
-  --bases-group-heading-property-color: rgb(165, 173, 203);
-  --bases-table-border-color: rgb(54, 58, 79);
-  --bases-table-cell-background-active: rgb(36, 39, 58);
-  --bases-table-cell-background-disabled: rgb(30, 32, 48);
-  --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(110, 115, 141);
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(183, 189, 248);
-  --bases-table-group-background: rgb(30, 32, 48);
-  --bases-table-header-background: rgb(36, 39, 58);
-  --bases-table-header-background-hover: rgb(202, 211, 245, 7.5%);
-  --bases-table-header-color: rgb(165, 173, 203);
-  --bases-table-summary-background: rgb(36, 39, 58);
-  --bases-table-summary-background-hover: rgb(202, 211, 245, 7.5%);
-  --blockquote-border-color: rgb(183, 189, 248);
-  --blur-background: color-mix(in srgb, rgb(54, 58, 79) 65%, transparent) linear-gradient(rgb(54, 58, 79), color-mix(in srgb, rgb(54, 58, 79) 65%, transparent));
-  --bodyFont: var(--font-text);
-  --bold-weight: 600;
+  --accent-h: 254 !important;
+  --accent-l: 68% !important;
+  --accent-s: 80% !important;
+  --background-modifier-active-hover: rgb(139, 108, 239) !important;
+  --background-modifier-border: rgb(54, 58, 79) !important;
+  --background-modifier-border-focus: rgb(110, 115, 141) !important;
+  --background-modifier-border-hover: rgb(91, 96, 120) !important;
+  --background-modifier-box-shadow: rgb(24, 25, 38, 30%) !important;
+  --background-modifier-cover: rgb(24, 25, 38, 90%) !important;
+  --background-modifier-error: rgb(237, 135, 150, 90%) !important;
+  --background-modifier-error-hover: rgb(237, 135, 150, 100%) !important;
+  --background-modifier-error-rgb: 237, 135, 150 !important;
+  --background-modifier-form-field: rgb(24, 25, 38, 30%) !important;
+  --background-modifier-form-field-highlighted: rgb(24, 25, 38, 22%) !important;
+  --background-modifier-form-field-hover: rgb(24, 25, 38, 30%) !important;
+  --background-modifier-hover: rgb(202, 211, 245, 7.5%) !important;
+  --background-modifier-message: rgb(0, 0, 0, 90%) !important;
+  --background-modifier-success: rgb(166, 218, 149, 90%) !important;
+  --background-modifier-success-rgb: 166, 218, 149 !important;
+  --background-primary: rgb(36, 39, 58) !important;
+  --background-primary-alt: rgb(30, 32, 48) !important;
+  --background-primary-rgb: 36, 39, 58 !important;
+  --background-secondary: rgb(30, 32, 48) !important;
+  --background-secondary-alt: rgb(24, 25, 38) !important;
+  --bases-cards-background: rgb(36, 39, 58) !important;
+  --bases-cards-cover-background: rgb(30, 32, 48) !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(54, 58, 79) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(91, 96, 120) !important;
+  --bases-embed-border-color: rgb(54, 58, 79) !important;
+  --bases-group-heading-property-color: rgb(165, 173, 203) !important;
+  --bases-table-border-color: rgb(54, 58, 79) !important;
+  --bases-table-cell-background-active: rgb(36, 39, 58) !important;
+  --bases-table-cell-background-disabled: rgb(30, 32, 48) !important;
+  --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(110, 115, 141) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(183, 189, 248) !important;
+  --bases-table-group-background: rgb(30, 32, 48) !important;
+  --bases-table-header-background: rgb(36, 39, 58) !important;
+  --bases-table-header-background-hover: rgb(202, 211, 245, 7.5%) !important;
+  --bases-table-header-color: rgb(165, 173, 203) !important;
+  --bases-table-summary-background: rgb(36, 39, 58) !important;
+  --bases-table-summary-background-hover: rgb(202, 211, 245, 7.5%) !important;
+  --blockquote-border-color: rgb(183, 189, 248) !important;
+  --blur-background: color-mix(in srgb, rgb(54, 58, 79) 65%, transparent) linear-gradient(rgb(54, 58, 79), color-mix(in srgb, rgb(54, 58, 79) 65%, transparent)) !important;
+  --bodyFont: '??', "Vollkorn",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bold-weight: 600 !important;
   --callout-border-opacity: 0.2;
   --callout-border-width: 0.25px;
   --callout-bug: 237, 135, 150;
@@ -72,126 +79,133 @@ export const theme: ThemeData = {
   --callout-tip: 125, 196, 228;
   --callout-todo: 138, 173, 244;
   --callout-warning: 245, 169, 127;
-  --canvas-background: rgb(36, 39, 58);
-  --canvas-card-label-color: rgb(73, 77, 100);
-  --canvas-color-1: 237, 135, 150;
-  --canvas-color-2: 245, 169, 127;
-  --canvas-color-3: 238, 212, 159;
-  --canvas-color-4: 166, 218, 149;
-  --canvas-color-5: 125, 196, 228;
-  --canvas-color-6: 198, 160, 246;
-  --canvas-dot-pattern: rgb(73, 77, 100);
-  --caret-color: rgb(202, 211, 245);
-  --checkbox-border-color: rgb(73, 77, 100);
-  --checkbox-border-color-hover: rgb(165, 173, 203);
-  --checkbox-color: rgb(183, 189, 248);
-  --checkbox-color-hover: rgb(183, 189, 248);
-  --checkbox-marker-color: rgb(36, 39, 58);
-  --checklist-done-color: rgb(166, 218, 149);
-  --code-background: rgb(30, 32, 48);
-  --code-border-color: rgb(54, 58, 79);
-  --code-bracket-background: rgb(202, 211, 245, 7.5%);
-  --code-comment: rgb(73, 77, 100);
-  --code-function: rgb(238, 212, 159);
-  --code-important: rgb(245, 169, 127);
-  --code-keyword: rgb(245, 189, 230);
-  --code-normal: rgb(165, 173, 203);
-  --code-operator: rgb(237, 135, 150);
-  --code-property: rgb(145, 215, 227);
-  --code-punctuation: rgb(165, 173, 203);
-  --code-string: rgb(166, 218, 149);
-  --code-tag: rgb(237, 135, 150);
-  --code-value: rgb(183, 189, 248);
-  --codeFont: var(--font-text);
-  --collapse-icon-color: rgb(73, 77, 100);
-  --collapse-icon-color-collapsed: rgb(165, 173, 203);
-  --color-accent: rgb(183, 189, 248);
-  --color-accent-1: rgb(183, 189, 248);
-  --color-accent-2: rgb(183, 189, 248, 90%);
-  --color-accent-hsl: 254, 80%, 68%;
-  --color-base-00: rgb(24, 25, 38);
-  --color-base-10: rgb(30, 32, 48);
-  --color-base-100: rgb(202, 211, 245);
-  --color-base-20: rgb(36, 39, 58);
-  --color-base-25: rgb(54, 58, 79);
-  --color-base-30: rgb(73, 77, 100);
-  --color-base-35: rgb(91, 96, 120);
-  --color-base-40: rgb(110, 115, 141);
-  --color-base-50: rgb(128, 135, 162);
-  --color-base-60: rgb(147, 154, 183);
-  --color-base-70: rgb(165, 173, 203);
-  --color-blue: rgb(138, 173, 244);
-  --color-blue-rgb: 138, 173, 244;
-  --color-cyan: rgb(145, 215, 227);
-  --color-cyan-rgb: 125, 196, 228;
-  --color-green: rgb(166, 218, 149);
-  --color-green-rgb: 166, 218, 149;
-  --color-orange: rgb(245, 169, 127);
-  --color-orange-rgb: 245, 169, 127;
-  --color-pink: rgb(245, 189, 230);
-  --color-pink-rgb: 245, 189, 230;
-  --color-purple: rgb(183, 189, 248);
-  --color-purple-rgb: 198, 160, 246;
-  --color-red: rgb(237, 135, 150);
-  --color-red-rgb: 237, 135, 150;
-  --color-yellow: rgb(238, 212, 159);
-  --color-yellow-rgb: 238, 212, 159;
-  --ctp-accent: 183, 189, 248;
-  --ctp-base: 36, 39, 58;
-  --ctp-blockquote: 244, 219, 214;
-  --ctp-blue: 138, 173, 244;
-  --ctp-bold: 125, 196, 228;
-  --ctp-crust: 24, 25, 38;
-  --ctp-flamingo: 240, 198, 198;
-  --ctp-green: 166, 218, 149;
-  --ctp-h1: 183, 189, 248;
-  --ctp-h2: 183, 189, 248;
-  --ctp-h3: 183, 189, 248;
-  --ctp-h4: 183, 189, 248;
-  --ctp-h5: 183, 189, 248;
-  --ctp-h6: 183, 189, 248;
-  --ctp-italic: 166, 218, 149;
-  --ctp-lavender: 183, 189, 248;
-  --ctp-mantle: 30, 32, 48;
-  --ctp-maroon: 238, 153, 160;
-  --ctp-mauve: 198, 160, 246;
-  --ctp-overlay0: 110, 115, 141;
-  --ctp-overlay1: 128, 135, 162;
-  --ctp-overlay2: 147, 154, 183;
-  --ctp-page-title: 202, 211, 245;
-  --ctp-peach: 245, 169, 127;
-  --ctp-pink: 245, 189, 230;
-  --ctp-red: 237, 135, 150;
-  --ctp-rosewater: 244, 219, 214;
-  --ctp-sapphire: 125, 196, 228;
-  --ctp-sky: 145, 215, 227;
-  --ctp-strikethrough: 238, 153, 160;
-  --ctp-subtext0: 165, 173, 203;
-  --ctp-subtext1: 184, 192, 224;
-  --ctp-surface0: 54, 58, 79;
-  --ctp-surface1: 73, 77, 100;
-  --ctp-surface2: 91, 96, 120;
-  --ctp-tag-pill-color: 183, 189, 248;
-  --ctp-teal: 139, 213, 202;
-  --ctp-text: 202, 211, 245;
-  --ctp-yellow: 238, 212, 159;
-  --dark: var(--text-normal);
-  --darkgray: var(--text-normal);
-  --divider-color: rgb(54, 58, 79);
-  --divider-color-hover: rgb(138, 173, 244);
-  --divider-width-hover: 2px;
-  --drag-ghost-background: rgb(0, 0, 0, 85%);
-  --drag-ghost-text-color: rgb(202, 211, 245);
-  --dropdown-background: rgb(54, 58, 79);
-  --dropdown-background-hover: rgb(73, 77, 100);
+  --canvas-background: rgb(36, 39, 58) !important;
+  --canvas-card-label-color: rgb(73, 77, 100) !important;
+  --canvas-color-1: 237, 135, 150 !important;
+  --canvas-color-2: 245, 169, 127 !important;
+  --canvas-color-3: 238, 212, 159 !important;
+  --canvas-color-4: 166, 218, 149 !important;
+  --canvas-color-5: 125, 196, 228 !important;
+  --canvas-color-6: 198, 160, 246 !important;
+  --canvas-dot-pattern: rgb(73, 77, 100) !important;
+  --caret-color: rgb(202, 211, 245) !important;
+  --checkbox-border-color: rgb(73, 77, 100) !important;
+  --checkbox-border-color-hover: rgb(165, 173, 203) !important;
+  --checkbox-color: rgb(183, 189, 248) !important;
+  --checkbox-color-hover: rgb(183, 189, 248) !important;
+  --checkbox-marker-color: rgb(36, 39, 58) !important;
+  --checklist-done-color: rgb(166, 218, 149) !important;
+  --code-background: rgb(30, 32, 48) !important;
+  --code-border-color: rgb(54, 58, 79) !important;
+  --code-bracket-background: rgb(202, 211, 245, 7.5%) !important;
+  --code-comment: rgb(73, 77, 100) !important;
+  --code-function: rgb(238, 212, 159) !important;
+  --code-important: rgb(245, 169, 127) !important;
+  --code-keyword: rgb(245, 189, 230) !important;
+  --code-normal: rgb(165, 173, 203) !important;
+  --code-operator: rgb(237, 135, 150) !important;
+  --code-property: rgb(145, 215, 227) !important;
+  --code-punctuation: rgb(165, 173, 203) !important;
+  --code-string: rgb(166, 218, 149) !important;
+  --code-tag: rgb(237, 135, 150) !important;
+  --code-value: rgb(183, 189, 248) !important;
+  --codeFont: '??', "Vollkorn",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --collapse-icon-color: rgb(73, 77, 100) !important;
+  --collapse-icon-color-collapsed: rgb(165, 173, 203) !important;
+  --color-accent: rgb(183, 189, 248) !important;
+  --color-accent-1: rgb(183, 189, 248) !important;
+  --color-accent-2: rgb(183, 189, 248, 90%) !important;
+  --color-accent-hsl: 254, 80%, 68% !important;
+  --color-base-00: rgb(24, 25, 38) !important;
+  --color-base-10: rgb(30, 32, 48) !important;
+  --color-base-100: rgb(202, 211, 245) !important;
+  --color-base-20: rgb(36, 39, 58) !important;
+  --color-base-25: rgb(54, 58, 79) !important;
+  --color-base-30: rgb(73, 77, 100) !important;
+  --color-base-35: rgb(91, 96, 120) !important;
+  --color-base-40: rgb(110, 115, 141) !important;
+  --color-base-50: rgb(128, 135, 162) !important;
+  --color-base-60: rgb(147, 154, 183) !important;
+  --color-base-70: rgb(165, 173, 203) !important;
+  --color-blue: rgb(138, 173, 244) !important;
+  --color-blue-rgb: 138, 173, 244 !important;
+  --color-cyan: rgb(145, 215, 227) !important;
+  --color-cyan-rgb: 125, 196, 228 !important;
+  --color-green: rgb(166, 218, 149) !important;
+  --color-green-rgb: 166, 218, 149 !important;
+  --color-orange: rgb(245, 169, 127) !important;
+  --color-orange-rgb: 245, 169, 127 !important;
+  --color-pink: rgb(245, 189, 230) !important;
+  --color-pink-rgb: 245, 189, 230 !important;
+  --color-purple: rgb(183, 189, 248) !important;
+  --color-purple-rgb: 198, 160, 246 !important;
+  --color-red: rgb(237, 135, 150) !important;
+  --color-red-rgb: 237, 135, 150 !important;
+  --color-yellow: rgb(238, 212, 159) !important;
+  --color-yellow-rgb: 238, 212, 159 !important;
+  --ctp-accent: 183, 189, 248 !important;
+  --ctp-base: 36, 39, 58 !important;
+  --ctp-blockquote: 244, 219, 214 !important;
+  --ctp-blue: 138, 173, 244 !important;
+  --ctp-bold: 125, 196, 228 !important;
+  --ctp-crust: 24, 25, 38 !important;
+  --ctp-flamingo: 240, 198, 198 !important;
+  --ctp-green: 166, 218, 149 !important;
+  --ctp-h1: 183, 189, 248 !important;
+  --ctp-h2: 183, 189, 248 !important;
+  --ctp-h3: 183, 189, 248 !important;
+  --ctp-h4: 183, 189, 248 !important;
+  --ctp-h5: 183, 189, 248 !important;
+  --ctp-h6: 183, 189, 248 !important;
+  --ctp-italic: 166, 218, 149 !important;
+  --ctp-lavender: 183, 189, 248 !important;
+  --ctp-mantle: 30, 32, 48 !important;
+  --ctp-maroon: 238, 153, 160 !important;
+  --ctp-mauve: 198, 160, 246 !important;
+  --ctp-overlay0: 110, 115, 141 !important;
+  --ctp-overlay1: 128, 135, 162 !important;
+  --ctp-overlay2: 147, 154, 183 !important;
+  --ctp-page-title: 202, 211, 245 !important;
+  --ctp-peach: 245, 169, 127 !important;
+  --ctp-pink: 245, 189, 230 !important;
+  --ctp-red: 237, 135, 150 !important;
+  --ctp-rosewater: 244, 219, 214 !important;
+  --ctp-sapphire: 125, 196, 228 !important;
+  --ctp-sky: 145, 215, 227 !important;
+  --ctp-strikethrough: 238, 153, 160 !important;
+  --ctp-subtext0: 165, 173, 203 !important;
+  --ctp-subtext1: 184, 192, 224 !important;
+  --ctp-surface0: 54, 58, 79 !important;
+  --ctp-surface1: 73, 77, 100 !important;
+  --ctp-surface2: 91, 96, 120 !important;
+  --ctp-tag-pill-color: 183, 189, 248 !important;
+  --ctp-teal: 139, 213, 202 !important;
+  --ctp-text: 202, 211, 245 !important;
+  --ctp-yellow: 238, 212, 159 !important;
+  --dark: rgb(202, 211, 245) !important;
+  --darkgray: rgb(202, 211, 245) !important;
+  --divider-color: rgb(54, 58, 79) !important;
+  --divider-color-hover: rgb(138, 173, 244) !important;
+  --divider-width-hover: 2px !important;
+  --drag-ghost-background: rgb(0, 0, 0, 85%) !important;
+  --drag-ghost-text-color: rgb(202, 211, 245) !important;
+  --dropdown-background: rgb(54, 58, 79) !important;
+  --dropdown-background-hover: rgb(73, 77, 100) !important;
   --embed-block-shadow-hover: 0 0 0 1px
     rgb(54, 58, 79),
-    inset 0 0 0 1px rgb(54, 58, 79);
-  --embed-border-left: 2px solid rgb(183, 189, 248);
-  --embed-border-right: none;
-  --embed-border-start: 2px solid rgb(183, 189, 248);
-  --file-header-background: rgb(36, 39, 58);
-  --file-header-background-focused: rgb(36, 39, 58);
+    inset 0 0 0 1px rgb(54, 58, 79) !important;
+  --embed-border-left: 2px solid rgb(183, 189, 248) !important;
+  --embed-border-right: none !important;
+  --embed-border-start: 2px solid rgb(183, 189, 248) !important;
+  --file-header-background: rgb(36, 39, 58) !important;
+  --file-header-background-focused: rgb(36, 39, 58) !important;
   --file-header-font: '??', "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -199,10 +213,10 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --file-margins: 32px;
-  --flair-background: rgb(54, 58, 79);
-  --flair-color: rgb(202, 211, 245);
+    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-margins: 32px !important;
+  --flair-background: rgb(54, 58, 79) !important;
+  --flair-color: rgb(202, 211, 245) !important;
   --font-interface: '??', "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -210,7 +224,7 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -218,7 +232,7 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif;
+    sans-serif !important;
   --font-mermaid: '??', "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -226,7 +240,7 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-print: '??', '??', "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -234,7 +248,7 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, 'Arial';
+    sans-serif, 'Arial' !important;
   --font-text: '??', "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -242,7 +256,7 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -250,91 +264,98 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif;
-  --font-ui-medium: 16px;
-  --footnote-divider-color: rgb(54, 58, 79);
-  --footnote-id-color: rgb(165, 173, 203);
-  --footnote-id-color-no-occurrences: rgb(73, 77, 100);
-  --footnote-input-background-active: rgb(202, 211, 245, 7.5%);
-  --graph-line: rgb(91, 96, 120);
-  --graph-node: rgb(165, 173, 203);
-  --graph-node-attachment: rgb(238, 212, 159);
-  --graph-node-focused: rgb(183, 189, 248);
-  --graph-node-tag: rgb(166, 218, 149);
-  --graph-node-unresolved: rgb(73, 77, 100);
-  --graph-text: rgb(202, 211, 245);
-  --gray: var(--text-muted);
-  --h1-line-height: 1.5;
-  --h1-size: 2em;
-  --h2-line-height: 1.5;
-  --h2-size: 1.6em;
-  --h2-weight: 600;
-  --h3-line-height: 1.5;
-  --h3-size: 1.37em;
-  --h3-weight: 600;
-  --h4-line-height: 1.5;
-  --h4-size: 1.25em;
-  --h4-weight: 600;
-  --h5-size: 1.12em;
-  --h5-weight: 600;
-  --h6-size: 1.12em;
-  --headerFont: var(--font-text);
-  --heading-formatting: rgb(73, 77, 100);
-  --hex-blue: #8aadf4;
-  --hex-green: #a6da95;
-  --hex-lavender: #b7bdf8;
-  --hex-mauve: #c6a0f6;
-  --hex-peach: #f5a97f;
-  --hex-pink: #f5bde6;
-  --hex-red: #ed8796;
-  --hex-sapphire: #7dc4e4;
-  --hex-sky: #91d7e3;
-  --hex-teal: #8bd5ca;
-  --hex-yellow: #eed49f;
-  --highlight: var(--text-highlight-bg);
-  --hr-color: rgb(138, 173, 244);
-  --icon-color: rgb(165, 173, 203);
-  --icon-color-active: rgb(183, 189, 248);
-  --icon-color-focused: rgb(202, 211, 245);
-  --icon-color-hover: rgb(30, 32, 48);
-  --icon-opacity: 1;
-  --indentation-guide-color: rgb(73, 77, 100);
-  --indentation-guide-color-active: rgb(125, 196, 228, 70%);
-  --indentation-guide-width: 2px;
-  --inline-title-line-height: 1.5;
-  --inline-title-size: 2em;
-  --input-date-separator: rgb(73, 77, 100);
-  --input-placeholder-color: rgb(73, 77, 100);
-  --interactive-accent: rgb(183, 189, 248);
-  --interactive-accent-hover: rgb(183, 189, 248);
-  --interactive-accent-hsl: 254, 80%, 68%;
-  --interactive-accent-rgb: 183, 189, 248;
-  --interactive-hover: rgb(73, 77, 100);
-  --interactive-normal: rgb(54, 58, 79);
-  --interactive-success: rgb(166, 218, 149);
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --line-height-tight: 1.25;
-  --link-color: rgb(138, 173, 244);
-  --link-color-hover: rgb(138, 173, 244);
-  --link-decoration: none;
-  --link-decoration-thickness: 2px;
-  --link-external-color: rgb(139, 213, 202);
-  --link-external-color-hover: rgb(139, 213, 202);
-  --link-external-decoration: none;
-  --link-unresolved-color: rgb(238, 153, 160);
-  --link-unresolved-decoration-color: rgb(237, 135, 150);
-  --link-unresolved-opacity: 1;
-  --list-indent: 2em;
-  --list-marker-color: rgb(125, 196, 228);
-  --list-marker-color-collapsed: rgb(183, 189, 248);
-  --list-marker-color-hover: rgb(165, 173, 203);
-  --list-spacing: 0.1em;
-  --menu-background: rgb(30, 32, 48);
-  --menu-border-color: rgb(91, 96, 120);
-  --metadata-border-color: rgb(54, 58, 79);
-  --metadata-divider-color: rgb(54, 58, 79);
-  --metadata-input-background-active: rgb(202, 211, 245, 7.5%);
+    sans-serif !important;
+  --font-ui-medium: 16px !important;
+  --footnote-divider-color: rgb(54, 58, 79) !important;
+  --footnote-id-color: rgb(165, 173, 203) !important;
+  --footnote-id-color-no-occurrences: rgb(73, 77, 100) !important;
+  --footnote-input-background-active: rgb(202, 211, 245, 7.5%) !important;
+  --graph-line: rgb(91, 96, 120) !important;
+  --graph-node: rgb(165, 173, 203) !important;
+  --graph-node-attachment: rgb(238, 212, 159) !important;
+  --graph-node-focused: rgb(183, 189, 248) !important;
+  --graph-node-tag: rgb(166, 218, 149) !important;
+  --graph-node-unresolved: rgb(73, 77, 100) !important;
+  --graph-text: rgb(202, 211, 245) !important;
+  --gray: rgb(165, 173, 203) !important;
+  --h1-line-height: 1.5 !important;
+  --h1-size: 2em !important;
+  --h2-line-height: 1.5 !important;
+  --h2-size: 1.6em !important;
+  --h2-weight: 600 !important;
+  --h3-line-height: 1.5 !important;
+  --h3-size: 1.37em !important;
+  --h3-weight: 600 !important;
+  --h4-line-height: 1.5 !important;
+  --h4-size: 1.25em !important;
+  --h4-weight: 600 !important;
+  --h5-size: 1.12em !important;
+  --h5-weight: 600 !important;
+  --h6-size: 1.12em !important;
+  --headerFont: '??', "Vollkorn",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --heading-formatting: rgb(73, 77, 100) !important;
+  --hex-blue: #8aadf4 !important;
+  --hex-green: #a6da95 !important;
+  --hex-lavender: #b7bdf8 !important;
+  --hex-mauve: #c6a0f6 !important;
+  --hex-peach: #f5a97f !important;
+  --hex-pink: #f5bde6 !important;
+  --hex-red: #ed8796 !important;
+  --hex-sapphire: #7dc4e4 !important;
+  --hex-sky: #91d7e3 !important;
+  --hex-teal: #8bd5ca !important;
+  --hex-yellow: #eed49f !important;
+  --highlight: rgb(244, 219, 214, 100%) !important;
+  --hr-color: rgb(138, 173, 244) !important;
+  --icon-color: rgb(165, 173, 203) !important;
+  --icon-color-active: rgb(183, 189, 248) !important;
+  --icon-color-focused: rgb(202, 211, 245) !important;
+  --icon-color-hover: rgb(30, 32, 48) !important;
+  --icon-opacity: 1 !important;
+  --indentation-guide-color: rgb(73, 77, 100) !important;
+  --indentation-guide-color-active: rgb(125, 196, 228, 70%) !important;
+  --indentation-guide-width: 2px !important;
+  --inline-title-line-height: 1.5 !important;
+  --inline-title-size: 2em !important;
+  --input-date-separator: rgb(73, 77, 100) !important;
+  --input-placeholder-color: rgb(73, 77, 100) !important;
+  --interactive-accent: rgb(183, 189, 248) !important;
+  --interactive-accent-hover: rgb(183, 189, 248) !important;
+  --interactive-accent-hsl: 254, 80%, 68% !important;
+  --interactive-accent-rgb: 183, 189, 248 !important;
+  --interactive-hover: rgb(73, 77, 100) !important;
+  --interactive-normal: rgb(54, 58, 79) !important;
+  --interactive-success: rgb(166, 218, 149) !important;
+  --light: rgb(36, 39, 58) !important;
+  --lightgray: rgb(30, 32, 48) !important;
+  --line-height-tight: 1.25 !important;
+  --link-color: rgb(138, 173, 244) !important;
+  --link-color-hover: rgb(138, 173, 244) !important;
+  --link-decoration: none !important;
+  --link-decoration-thickness: 2px !important;
+  --link-external-color: rgb(139, 213, 202) !important;
+  --link-external-color-hover: rgb(139, 213, 202) !important;
+  --link-external-decoration: none !important;
+  --link-unresolved-color: rgb(238, 153, 160) !important;
+  --link-unresolved-decoration-color: rgb(237, 135, 150) !important;
+  --link-unresolved-opacity: 1 !important;
+  --list-indent: 2em !important;
+  --list-marker-color: rgb(125, 196, 228) !important;
+  --list-marker-color-collapsed: rgb(183, 189, 248) !important;
+  --list-marker-color-hover: rgb(165, 173, 203) !important;
+  --list-spacing: 0.1em !important;
+  --menu-background: rgb(30, 32, 48) !important;
+  --menu-border-color: rgb(91, 96, 120) !important;
+  --metadata-border-color: rgb(54, 58, 79) !important;
+  --metadata-divider-color: rgb(54, 58, 79) !important;
+  --metadata-input-background-active: rgb(202, 211, 245, 7.5%) !important;
   --metadata-input-font: '??', "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -342,9 +363,9 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-text-color: rgb(202, 211, 245);
-  --metadata-label-background-active: rgb(202, 211, 245, 7.5%);
+    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-text-color: rgb(202, 211, 245) !important;
+  --metadata-label-background-active: rgb(202, 211, 245, 7.5%) !important;
   --metadata-label-font: '??', "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -352,178 +373,190 @@ export const theme: ThemeData = {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-text-color: rgb(165, 173, 203);
-  --metadata-label-text-color-hover: rgb(165, 173, 203);
-  --metadata-property-background-active: rgb(202, 211, 245, 7.5%);
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(110, 115, 141);
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(91, 96, 120);
-  --modal-background: rgb(36, 39, 58);
-  --modal-border-color: rgb(110, 115, 141);
-  --modal-radius: 10px;
-  --mono-rgb-0: 24, 25, 38;
-  --mono-rgb-100: 202, 211, 245;
-  --nav-collapse-icon-color: rgb(73, 77, 100);
-  --nav-collapse-icon-color-collapsed: rgb(73, 77, 100);
-  --nav-heading-color: rgb(202, 211, 245);
-  --nav-heading-color-collapsed: rgb(73, 77, 100);
-  --nav-heading-color-collapsed-hover: rgb(165, 173, 203);
-  --nav-heading-color-hover: rgb(202, 211, 245);
-  --nav-indentation-guide-color: rgb(73, 77, 100);
-  --nav-indentation-guide-width: 2px;
-  --nav-item-background-active: rgb(202, 211, 245, 7.5%);
-  --nav-item-background-hover: rgb(202, 211, 245, 7.5%);
-  --nav-item-background-selected: rgb(139, 108, 239);
-  --nav-item-children-margin-left: 12px;
-  --nav-item-children-padding-left: 4px;
-  --nav-item-color: rgb(165, 173, 203);
-  --nav-item-color-active: rgb(30, 32, 48);
-  --nav-item-color-highlighted: rgb(183, 189, 248);
-  --nav-item-color-hover: rgb(30, 32, 48);
-  --nav-item-color-selected: rgb(30, 32, 48);
-  --nav-item-white-space: nowrap;
-  --nav-tag-color: rgb(73, 77, 100);
-  --nav-tag-color-active: rgb(165, 173, 203);
-  --nav-tag-color-hover: rgb(165, 173, 203);
-  --pdf-background: rgb(36, 39, 58);
-  --pdf-page-background: rgb(36, 39, 58);
-  --pdf-shadow: 0 0 0 1px rgb(54, 58, 79);
-  --pdf-sidebar-background: rgb(36, 39, 58);
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(54, 58, 79);
-  --pill-border-color: rgb(54, 58, 79);
-  --pill-border-color-hover: rgb(91, 96, 120);
-  --pill-color: rgb(165, 173, 203);
-  --pill-color-hover: rgb(202, 211, 245);
-  --pill-color-remove: rgb(73, 77, 100);
-  --pill-color-remove-hover: rgb(183, 189, 248);
-  --popover-max-height: 70vh;
-  --popover-pdf-height: 800px;
-  --popover-pdf-width: 600px;
-  --prompt-background: rgb(36, 39, 58);
-  --prompt-border-color: rgb(110, 115, 141);
-  --radius-l: 10px;
-  --raised-background: color-mix(in srgb, rgb(54, 58, 79) 65%, transparent) linear-gradient(rgb(54, 58, 79), color-mix(in srgb, rgb(54, 58, 79) 65%, transparent));
-  --ribbon-background: rgb(30, 32, 48);
-  --ribbon-background-collapsed: rgb(36, 39, 58);
+    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-text-color: rgb(165, 173, 203) !important;
+  --metadata-label-text-color-hover: rgb(165, 173, 203) !important;
+  --metadata-property-background-active: rgb(202, 211, 245, 7.5%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(110, 115, 141) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(91, 96, 120) !important;
+  --modal-background: rgb(36, 39, 58) !important;
+  --modal-border-color: rgb(110, 115, 141) !important;
+  --modal-radius: 10px !important;
+  --mono-rgb-0: 24, 25, 38 !important;
+  --mono-rgb-100: 202, 211, 245 !important;
+  --nav-collapse-icon-color: rgb(73, 77, 100) !important;
+  --nav-collapse-icon-color-collapsed: rgb(73, 77, 100) !important;
+  --nav-heading-color: rgb(202, 211, 245) !important;
+  --nav-heading-color-collapsed: rgb(73, 77, 100) !important;
+  --nav-heading-color-collapsed-hover: rgb(165, 173, 203) !important;
+  --nav-heading-color-hover: rgb(202, 211, 245) !important;
+  --nav-indentation-guide-color: rgb(73, 77, 100) !important;
+  --nav-indentation-guide-width: 2px !important;
+  --nav-item-background-active: rgb(202, 211, 245, 7.5%) !important;
+  --nav-item-background-hover: rgb(202, 211, 245, 7.5%) !important;
+  --nav-item-background-selected: rgb(139, 108, 239) !important;
+  --nav-item-children-margin-left: 12px !important;
+  --nav-item-children-padding-left: 4px !important;
+  --nav-item-color: rgb(165, 173, 203) !important;
+  --nav-item-color-active: rgb(30, 32, 48) !important;
+  --nav-item-color-highlighted: rgb(183, 189, 248) !important;
+  --nav-item-color-hover: rgb(30, 32, 48) !important;
+  --nav-item-color-selected: rgb(30, 32, 48) !important;
+  --nav-item-white-space: nowrap !important;
+  --nav-tag-color: rgb(73, 77, 100) !important;
+  --nav-tag-color-active: rgb(165, 173, 203) !important;
+  --nav-tag-color-hover: rgb(165, 173, 203) !important;
+  --pdf-background: rgb(36, 39, 58) !important;
+  --pdf-page-background: rgb(36, 39, 58) !important;
+  --pdf-shadow: 0 0 0 1px rgb(54, 58, 79) !important;
+  --pdf-sidebar-background: rgb(36, 39, 58) !important;
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgb(54, 58, 79) !important;
+  --pill-border-color: rgb(54, 58, 79) !important;
+  --pill-border-color-hover: rgb(91, 96, 120) !important;
+  --pill-color: rgb(165, 173, 203) !important;
+  --pill-color-hover: rgb(202, 211, 245) !important;
+  --pill-color-remove: rgb(73, 77, 100) !important;
+  --pill-color-remove-hover: rgb(183, 189, 248) !important;
+  --popover-max-height: 70vh !important;
+  --popover-pdf-height: 800px !important;
+  --popover-pdf-width: 600px !important;
+  --prompt-background: rgb(36, 39, 58) !important;
+  --prompt-border-color: rgb(110, 115, 141) !important;
+  --radius-l: 10px !important;
+  --raised-background: color-mix(in srgb, rgb(54, 58, 79) 65%, transparent) linear-gradient(rgb(54, 58, 79), color-mix(in srgb, rgb(54, 58, 79) 65%, transparent)) !important;
+  --ribbon-background: rgb(30, 32, 48) !important;
+  --ribbon-background-collapsed: rgb(36, 39, 58) !important;
   --ribbon-padding: 8px 4px
-    12px;
-  --scrollbar-active-thumb-bg: rgb(202, 211, 245, 20%);
-  --scrollbar-bg: rgb(202, 211, 245, 5%);
-  --scrollbar-radius: 10px;
-  --scrollbar-thumb-bg: rgb(202, 211, 245, 10%);
-  --search-clear-button-color: rgb(165, 173, 203);
-  --search-icon-color: rgb(165, 173, 203);
-  --search-result-background: rgb(36, 39, 58);
-  --secondary: var(--text-accent);
-  --setting-group-heading-color: rgb(202, 211, 245);
-  --setting-group-heading-size: 16px;
-  --setting-items-background: rgb(30, 32, 48);
-  --setting-items-border-color: rgb(54, 58, 79);
-  --setting-items-radius: 10px;
-  --sidebar-markdown-font-size: 14.4px;
-  --slider-thumb-border-color: rgb(91, 96, 120);
-  --slider-thumb-radius: 50%;
-  --slider-track-background: rgb(54, 58, 79);
-  --status-bar-background: rgb(30, 32, 48);
-  --status-bar-border-color: rgb(54, 58, 79);
-  --status-bar-scroll-padding: 30px;
-  --status-bar-text-color: rgb(165, 173, 203);
-  --suggestion-background: rgb(36, 39, 58);
-  --swatch-height: 24px;
+    12px !important;
+  --scrollbar-active-thumb-bg: rgb(202, 211, 245, 20%) !important;
+  --scrollbar-bg: rgb(202, 211, 245, 5%) !important;
+  --scrollbar-radius: 10px !important;
+  --scrollbar-thumb-bg: rgb(202, 211, 245, 10%) !important;
+  --search-clear-button-color: rgb(165, 173, 203) !important;
+  --search-icon-color: rgb(165, 173, 203) !important;
+  --search-result-background: rgb(36, 39, 58) !important;
+  --secondary: rgb(183, 189, 248) !important;
+  --setting-group-heading-color: rgb(202, 211, 245) !important;
+  --setting-group-heading-size: 16px !important;
+  --setting-items-background: rgb(30, 32, 48) !important;
+  --setting-items-border-color: rgb(54, 58, 79) !important;
+  --setting-items-radius: 10px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
+  --slider-thumb-border-color: rgb(91, 96, 120) !important;
+  --slider-thumb-radius: 50% !important;
+  --slider-track-background: rgb(54, 58, 79) !important;
+  --status-bar-background: rgb(30, 32, 48) !important;
+  --status-bar-border-color: rgb(54, 58, 79) !important;
+  --status-bar-scroll-padding: 30px !important;
+  --status-bar-text-color: rgb(165, 173, 203) !important;
+  --suggestion-background: rgb(36, 39, 58) !important;
+  --swatch-height: 24px !important;
   --swatch-shadow: inset 0 0 0 1px
-    rgb(202, 211, 245, 15%);
-  --swatch-width: 24px;
-  --sync-avatar-color-1: rgb(237, 135, 150);
-  --sync-avatar-color-2: rgb(245, 169, 127);
-  --sync-avatar-color-3: rgb(238, 212, 159);
-  --sync-avatar-color-4: rgb(166, 218, 149);
-  --sync-avatar-color-5: rgb(145, 215, 227);
-  --sync-avatar-color-6: rgb(138, 173, 244);
-  --sync-avatar-color-7: rgb(183, 189, 248);
-  --sync-avatar-color-8: rgb(245, 189, 230);
-  --tab-background-active: rgb(36, 39, 58);
-  --tab-container-background: rgb(30, 32, 48);
-  --tab-divider-color: rgb(91, 96, 120);
-  --tab-outline-color: rgb(54, 58, 79);
-  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%);
-  --tab-stacked-text-align: left;
-  --tab-switcher-background: rgb(30, 32, 48);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(30, 32, 48), transparent);
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(202, 211, 245, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(183, 189, 248);
-  --tab-text-color: rgb(73, 77, 100);
-  --tab-text-color-active: rgb(165, 173, 203);
-  --tab-text-color-focused: rgb(165, 173, 203);
-  --tab-text-color-focused-active: rgb(202, 211, 245);
-  --tab-text-color-focused-active-current: rgb(202, 211, 245);
-  --tab-text-color-focused-highlighted: rgb(183, 189, 248);
-  --table-add-button-border-color: rgb(54, 58, 79);
-  --table-border-color: rgb(54, 58, 79);
-  --table-drag-handle-background-active: rgb(183, 189, 248);
-  --table-drag-handle-color: rgb(73, 77, 100);
-  --table-drag-handle-color-active: rgb(30, 32, 48);
-  --table-header-border-color: rgb(54, 58, 79);
-  --table-header-color: rgb(165, 173, 203);
-  --table-header-size: 0.875em;
-  --table-header-weight: 400;
-  --table-line-height: 1.25;
-  --table-selection: rgba(139, 108, 239, 0.1);
-  --table-selection-border-color: rgb(183, 189, 248);
-  --table-white-space: normal;
-  --tag-background: transparent;
-  --tag-background-hover: 0;
-  --tag-border-color: rgb(139, 108, 239);
+    rgb(202, 211, 245, 15%) !important;
+  --swatch-width: 24px !important;
+  --sync-avatar-color-1: rgb(237, 135, 150) !important;
+  --sync-avatar-color-2: rgb(245, 169, 127) !important;
+  --sync-avatar-color-3: rgb(238, 212, 159) !important;
+  --sync-avatar-color-4: rgb(166, 218, 149) !important;
+  --sync-avatar-color-5: rgb(145, 215, 227) !important;
+  --sync-avatar-color-6: rgb(138, 173, 244) !important;
+  --sync-avatar-color-7: rgb(183, 189, 248) !important;
+  --sync-avatar-color-8: rgb(245, 189, 230) !important;
+  --tab-background-active: rgb(36, 39, 58) !important;
+  --tab-container-background: rgb(30, 32, 48) !important;
+  --tab-divider-color: rgb(91, 96, 120) !important;
+  --tab-outline-color: rgb(54, 58, 79) !important;
+  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%) !important;
+  --tab-stacked-text-align: left !important;
+  --tab-switcher-background: rgb(30, 32, 48) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(30, 32, 48), transparent) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(202, 211, 245, 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(183, 189, 248) !important;
+  --tab-text-color: rgb(73, 77, 100) !important;
+  --tab-text-color-active: rgb(165, 173, 203) !important;
+  --tab-text-color-focused: rgb(165, 173, 203) !important;
+  --tab-text-color-focused-active: rgb(202, 211, 245) !important;
+  --tab-text-color-focused-active-current: rgb(202, 211, 245) !important;
+  --tab-text-color-focused-highlighted: rgb(183, 189, 248) !important;
+  --table-add-button-border-color: rgb(54, 58, 79) !important;
+  --table-border-color: rgb(54, 58, 79) !important;
+  --table-drag-handle-background-active: rgb(183, 189, 248) !important;
+  --table-drag-handle-color: rgb(73, 77, 100) !important;
+  --table-drag-handle-color-active: rgb(30, 32, 48) !important;
+  --table-header-border-color: rgb(54, 58, 79) !important;
+  --table-header-color: rgb(165, 173, 203) !important;
+  --table-header-size: 0.875em !important;
+  --table-header-weight: 400 !important;
+  --table-line-height: 1.25 !important;
+  --table-selection: rgba(139, 108, 239, 0.1) !important;
+  --table-selection-border-color: rgb(183, 189, 248) !important;
+  --table-white-space: normal !important;
+  --tag-background: transparent !important;
+  --tag-background-hover: 0 !important;
+  --tag-border-color: rgb(139, 108, 239) !important;
   --tag-border-color-hover: hsl(
       254, 80%, 68%,
       15%
-    );
-  --tag-border-width: 0;
-  --tag-color: rgb(183, 189, 248);
-  --tag-color-hover: rgb(183, 189, 248);
-  --tag-decoration-hover: underline;
-  --tag-padding-x: 0;
-  --tag-padding-y: 0;
-  --tag-radius: 0.8em;
-  --tag-size: max(16px, 0.933em);
-  --tertiary: var(--text-accent-hover);
-  --text-accent: rgb(183, 189, 248);
-  --text-accent-hover: rgb(183, 189, 248);
-  --text-error: rgb(237, 135, 150);
-  --text-error-hover: rgb(237, 135, 150, 80%);
-  --text-faint: rgb(73, 77, 100);
-  --text-highlight-bg: rgb(244, 219, 214, 100%);
-  --text-highlight-bg-active: rgb(244, 219, 214, 100%);
-  --text-muted: rgb(165, 173, 203);
-  --text-muted-rgb: 165, 173, 203;
-  --text-normal: rgb(202, 211, 245);
-  --text-on-accent: rgb(30, 32, 48);
-  --text-on-accent-inverted: rgb(30, 32, 48);
-  --text-selection: rgb(147, 154, 183, 30%);
-  --text-success: rgb(166, 218, 149);
-  --text-warning: rgb(245, 169, 127);
-  --textHighlight: var(--text-highlight-bg);
-  --titleFont: var(--font-text);
-  --titlebar-background: rgb(30, 32, 48);
-  --titlebar-background-focused: rgb(24, 25, 38);
-  --titlebar-border-color: rgb(54, 58, 79);
-  --titlebar-border-width: 0;
-  --titlebar-text-color: rgb(165, 173, 203);
-  --titlebar-text-color-focused: rgb(202, 211, 245);
-  --titlebar-text-color-highlighted: rgb(183, 189, 248);
-  --toggle-thumb-color: rgb(202, 211, 245);
-  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-text-decoration-color: text-decoration-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --vault-name-color: rgb(202, 211, 245);
-  --vault-name-font-size: 13px;
-  --vault-name-font-weight: 500;
-  --vault-profile-color: rgb(202, 211, 245);
-  --vault-profile-color-hover: rgb(202, 211, 245);
-  --workspace-background-translucent: rgb(24, 25, 38, 60%);
-  --quartz-icon-color: currentColor;
+    ) !important;
+  --tag-border-width: 0 !important;
+  --tag-color: rgb(183, 189, 248) !important;
+  --tag-color-hover: rgb(183, 189, 248) !important;
+  --tag-decoration-hover: underline !important;
+  --tag-padding-x: 0 !important;
+  --tag-padding-y: 0 !important;
+  --tag-radius: 0.8em !important;
+  --tag-size: max(16px, 0.933em) !important;
+  --tertiary: rgb(183, 189, 248) !important;
+  --text-accent: rgb(183, 189, 248) !important;
+  --text-accent-hover: rgb(183, 189, 248) !important;
+  --text-error: rgb(237, 135, 150) !important;
+  --text-error-hover: rgb(237, 135, 150, 80%) !important;
+  --text-faint: rgb(73, 77, 100) !important;
+  --text-highlight-bg: rgb(244, 219, 214, 100%) !important;
+  --text-highlight-bg-active: rgb(244, 219, 214, 100%) !important;
+  --text-muted: rgb(165, 173, 203) !important;
+  --text-muted-rgb: 165, 173, 203 !important;
+  --text-normal: rgb(202, 211, 245) !important;
+  --text-on-accent: rgb(30, 32, 48) !important;
+  --text-on-accent-inverted: rgb(30, 32, 48) !important;
+  --text-selection: rgb(147, 154, 183, 30%) !important;
+  --text-success: rgb(166, 218, 149) !important;
+  --text-warning: rgb(245, 169, 127) !important;
+  --textHighlight: rgb(244, 219, 214, 100%) !important;
+  --titleFont: '??', "Vollkorn",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titlebar-background: rgb(30, 32, 48) !important;
+  --titlebar-background-focused: rgb(24, 25, 38) !important;
+  --titlebar-border-color: rgb(54, 58, 79) !important;
+  --titlebar-border-width: 0 !important;
+  --titlebar-text-color: rgb(165, 173, 203) !important;
+  --titlebar-text-color-focused: rgb(202, 211, 245) !important;
+  --titlebar-text-color-highlighted: rgb(183, 189, 248) !important;
+  --toggle-thumb-color: rgb(202, 211, 245) !important;
+  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-text-decoration-color: text-decoration-color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --vault-name-color: rgb(202, 211, 245) !important;
+  --vault-name-font-size: 13px !important;
+  --vault-name-font-weight: 500 !important;
+  --vault-profile-color: rgb(202, 211, 245) !important;
+  --vault-profile-color-hover: rgb(202, 211, 245) !important;
+  --workspace-background-translucent: rgb(24, 25, 38, 60%) !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1507,52 +1540,59 @@ body sup {
   },
   light: {
     base: `:root:root {
-  --accent-h: 254;
-  --accent-l: 68%;
-  --accent-s: 80%;
-  --background-modifier-active-hover: rgb(139, 108, 239);
-  --background-modifier-border: rgb(204, 208, 218);
-  --background-modifier-border-focus: rgb(156, 160, 176);
-  --background-modifier-border-hover: rgb(172, 176, 190);
-  --background-modifier-box-shadow: rgb(220, 224, 232, 30%);
-  --background-modifier-cover: rgb(220, 224, 232, 90%);
-  --background-modifier-error: rgb(210, 15, 57, 90%);
-  --background-modifier-error-hover: rgb(210, 15, 57, 100%);
-  --background-modifier-error-rgb: 210, 15, 57;
-  --background-modifier-form-field: rgb(220, 224, 232, 30%);
-  --background-modifier-form-field-highlighted: rgb(220, 224, 232, 22%);
-  --background-modifier-form-field-hover: rgb(220, 224, 232, 30%);
-  --background-modifier-hover: rgb(76, 79, 105, 7.5%);
-  --background-modifier-message: rgb(0, 0, 0, 90%);
-  --background-modifier-success: rgb(64, 160, 43, 90%);
-  --background-modifier-success-rgb: 64, 160, 43;
-  --background-primary: rgb(239, 241, 245);
-  --background-primary-alt: rgb(230, 233, 239);
-  --background-primary-rgb: 239, 241, 245;
-  --background-secondary: rgb(230, 233, 239);
-  --background-secondary-alt: rgb(220, 224, 232);
-  --bases-cards-background: rgb(239, 241, 245);
-  --bases-cards-cover-background: rgb(230, 233, 239);
-  --bases-cards-shadow: 0 0 0 1px rgb(204, 208, 218);
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(172, 176, 190);
-  --bases-embed-border-color: rgb(204, 208, 218);
-  --bases-group-heading-property-color: rgb(108, 111, 133);
-  --bases-table-border-color: rgb(204, 208, 218);
-  --bases-table-cell-background-active: rgb(239, 241, 245);
-  --bases-table-cell-background-disabled: rgb(230, 233, 239);
-  --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(156, 160, 176);
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(114, 135, 253);
-  --bases-table-group-background: rgb(230, 233, 239);
-  --bases-table-header-background: rgb(239, 241, 245);
-  --bases-table-header-background-hover: rgb(76, 79, 105, 7.5%);
-  --bases-table-header-color: rgb(108, 111, 133);
-  --bases-table-summary-background: rgb(239, 241, 245);
-  --bases-table-summary-background-hover: rgb(76, 79, 105, 7.5%);
-  --blockquote-border-color: rgb(114, 135, 253);
-  --blur-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent));
-  --bodyFont: var(--font-text);
-  --bold-weight: 600;
+  --accent-h: 254 !important;
+  --accent-l: 68% !important;
+  --accent-s: 80% !important;
+  --background-modifier-active-hover: rgb(139, 108, 239) !important;
+  --background-modifier-border: rgb(204, 208, 218) !important;
+  --background-modifier-border-focus: rgb(156, 160, 176) !important;
+  --background-modifier-border-hover: rgb(172, 176, 190) !important;
+  --background-modifier-box-shadow: rgb(220, 224, 232, 30%) !important;
+  --background-modifier-cover: rgb(220, 224, 232, 90%) !important;
+  --background-modifier-error: rgb(210, 15, 57, 90%) !important;
+  --background-modifier-error-hover: rgb(210, 15, 57, 100%) !important;
+  --background-modifier-error-rgb: 210, 15, 57 !important;
+  --background-modifier-form-field: rgb(220, 224, 232, 30%) !important;
+  --background-modifier-form-field-highlighted: rgb(220, 224, 232, 22%) !important;
+  --background-modifier-form-field-hover: rgb(220, 224, 232, 30%) !important;
+  --background-modifier-hover: rgb(76, 79, 105, 7.5%) !important;
+  --background-modifier-message: rgb(0, 0, 0, 90%) !important;
+  --background-modifier-success: rgb(64, 160, 43, 90%) !important;
+  --background-modifier-success-rgb: 64, 160, 43 !important;
+  --background-primary: rgb(239, 241, 245) !important;
+  --background-primary-alt: rgb(230, 233, 239) !important;
+  --background-primary-rgb: 239, 241, 245 !important;
+  --background-secondary: rgb(230, 233, 239) !important;
+  --background-secondary-alt: rgb(220, 224, 232) !important;
+  --bases-cards-background: rgb(239, 241, 245) !important;
+  --bases-cards-cover-background: rgb(230, 233, 239) !important;
+  --bases-cards-shadow: 0 0 0 1px rgb(204, 208, 218) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px rgb(172, 176, 190) !important;
+  --bases-embed-border-color: rgb(204, 208, 218) !important;
+  --bases-group-heading-property-color: rgb(108, 111, 133) !important;
+  --bases-table-border-color: rgb(204, 208, 218) !important;
+  --bases-table-cell-background-active: rgb(239, 241, 245) !important;
+  --bases-table-cell-background-disabled: rgb(230, 233, 239) !important;
+  --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px rgb(156, 160, 176) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(114, 135, 253) !important;
+  --bases-table-group-background: rgb(230, 233, 239) !important;
+  --bases-table-header-background: rgb(239, 241, 245) !important;
+  --bases-table-header-background-hover: rgb(76, 79, 105, 7.5%) !important;
+  --bases-table-header-color: rgb(108, 111, 133) !important;
+  --bases-table-summary-background: rgb(239, 241, 245) !important;
+  --bases-table-summary-background-hover: rgb(76, 79, 105, 7.5%) !important;
+  --blockquote-border-color: rgb(114, 135, 253) !important;
+  --blur-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent)) !important;
+  --bodyFont: '??', "Vollkorn",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bold-weight: 600 !important;
   --callout-border-opacity: 0.2;
   --callout-border-width: 0.25px;
   --callout-bug: 210, 15, 57;
@@ -1570,126 +1610,133 @@ body sup {
   --callout-tip: 32, 159, 181;
   --callout-todo: 30, 102, 245;
   --callout-warning: 254, 100, 11;
-  --canvas-background: rgb(239, 241, 245);
-  --canvas-card-label-color: rgb(188, 192, 204);
-  --canvas-color-1: 210, 15, 57;
-  --canvas-color-2: 254, 100, 11;
-  --canvas-color-3: 223, 142, 29;
-  --canvas-color-4: 64, 160, 43;
-  --canvas-color-5: 32, 159, 181;
-  --canvas-color-6: 136, 57, 239;
-  --canvas-dot-pattern: rgb(188, 192, 204);
-  --caret-color: rgb(76, 79, 105);
-  --checkbox-border-color: rgb(188, 192, 204);
-  --checkbox-border-color-hover: rgb(108, 111, 133);
-  --checkbox-color: rgb(114, 135, 253);
-  --checkbox-color-hover: rgb(114, 135, 253);
-  --checkbox-marker-color: rgb(239, 241, 245);
-  --checklist-done-color: rgb(64, 160, 43);
-  --code-background: rgb(230, 233, 239);
-  --code-border-color: rgb(204, 208, 218);
-  --code-bracket-background: rgb(76, 79, 105, 7.5%);
-  --code-comment: rgb(188, 192, 204);
-  --code-function: rgb(223, 142, 29);
-  --code-important: rgb(254, 100, 11);
-  --code-keyword: rgb(234, 118, 203);
-  --code-normal: rgb(108, 111, 133);
-  --code-operator: rgb(210, 15, 57);
-  --code-property: rgb(4, 165, 229);
-  --code-punctuation: rgb(108, 111, 133);
-  --code-string: rgb(64, 160, 43);
-  --code-tag: rgb(210, 15, 57);
-  --code-value: rgb(114, 135, 253);
-  --codeFont: var(--font-text);
-  --collapse-icon-color: rgb(188, 192, 204);
-  --collapse-icon-color-collapsed: rgb(108, 111, 133);
-  --color-accent: rgb(114, 135, 253);
-  --color-accent-1: rgb(114, 135, 253);
-  --color-accent-2: rgb(114, 135, 253, 90%);
-  --color-accent-hsl: 254, 80%, 68%;
-  --color-base-00: rgb(220, 224, 232);
-  --color-base-10: rgb(230, 233, 239);
-  --color-base-100: rgb(76, 79, 105);
-  --color-base-20: rgb(239, 241, 245);
-  --color-base-25: rgb(204, 208, 218);
-  --color-base-30: rgb(188, 192, 204);
-  --color-base-35: rgb(172, 176, 190);
-  --color-base-40: rgb(156, 160, 176);
-  --color-base-50: rgb(140, 143, 161);
-  --color-base-60: rgb(124, 127, 147);
-  --color-base-70: rgb(108, 111, 133);
-  --color-blue: rgb(30, 102, 245);
-  --color-blue-rgb: 30, 102, 245;
-  --color-cyan: rgb(4, 165, 229);
-  --color-cyan-rgb: 32, 159, 181;
-  --color-green: rgb(64, 160, 43);
-  --color-green-rgb: 64, 160, 43;
-  --color-orange: rgb(254, 100, 11);
-  --color-orange-rgb: 254, 100, 11;
-  --color-pink: rgb(234, 118, 203);
-  --color-pink-rgb: 234, 118, 203;
-  --color-purple: rgb(114, 135, 253);
-  --color-purple-rgb: 136, 57, 239;
-  --color-red: rgb(210, 15, 57);
-  --color-red-rgb: 210, 15, 57;
-  --color-yellow: rgb(223, 142, 29);
-  --color-yellow-rgb: 223, 142, 29;
-  --ctp-accent: 114, 135, 253;
-  --ctp-base: 239, 241, 245;
-  --ctp-blockquote: 220, 138, 120;
-  --ctp-blue: 30, 102, 245;
-  --ctp-bold: 32, 159, 181;
-  --ctp-crust: 220, 224, 232;
-  --ctp-flamingo: 221, 120, 120;
-  --ctp-green: 64, 160, 43;
-  --ctp-h1: 114, 135, 253;
-  --ctp-h2: 114, 135, 253;
-  --ctp-h3: 114, 135, 253;
-  --ctp-h4: 114, 135, 253;
-  --ctp-h5: 114, 135, 253;
-  --ctp-h6: 114, 135, 253;
-  --ctp-italic: 64, 160, 43;
-  --ctp-lavender: 114, 135, 253;
-  --ctp-mantle: 230, 233, 239;
-  --ctp-maroon: 230, 69, 83;
-  --ctp-mauve: 136, 57, 239;
-  --ctp-overlay0: 156, 160, 176;
-  --ctp-overlay1: 140, 143, 161;
-  --ctp-overlay2: 124, 127, 147;
-  --ctp-page-title: 76, 79, 105;
-  --ctp-peach: 254, 100, 11;
-  --ctp-pink: 234, 118, 203;
-  --ctp-red: 210, 15, 57;
-  --ctp-rosewater: 220, 138, 120;
-  --ctp-sapphire: 32, 159, 181;
-  --ctp-sky: 4, 165, 229;
-  --ctp-strikethrough: 230, 69, 83;
-  --ctp-subtext0: 108, 111, 133;
-  --ctp-subtext1: 92, 95, 119;
-  --ctp-surface0: 204, 208, 218;
-  --ctp-surface1: 188, 192, 204;
-  --ctp-surface2: 172, 176, 190;
-  --ctp-tag-pill-color: 114, 135, 253;
-  --ctp-teal: 23, 146, 153;
-  --ctp-text: 76, 79, 105;
-  --ctp-yellow: 223, 142, 29;
-  --dark: var(--text-normal);
-  --darkgray: var(--text-normal);
-  --divider-color: rgb(204, 208, 218);
-  --divider-color-hover: rgb(30, 102, 245);
-  --divider-width-hover: 2px;
-  --drag-ghost-background: rgb(0, 0, 0, 85%);
-  --drag-ghost-text-color: rgb(76, 79, 105);
-  --dropdown-background: rgb(204, 208, 218);
-  --dropdown-background-hover: rgb(188, 192, 204);
+  --canvas-background: rgb(239, 241, 245) !important;
+  --canvas-card-label-color: rgb(188, 192, 204) !important;
+  --canvas-color-1: 210, 15, 57 !important;
+  --canvas-color-2: 254, 100, 11 !important;
+  --canvas-color-3: 223, 142, 29 !important;
+  --canvas-color-4: 64, 160, 43 !important;
+  --canvas-color-5: 32, 159, 181 !important;
+  --canvas-color-6: 136, 57, 239 !important;
+  --canvas-dot-pattern: rgb(188, 192, 204) !important;
+  --caret-color: rgb(76, 79, 105) !important;
+  --checkbox-border-color: rgb(188, 192, 204) !important;
+  --checkbox-border-color-hover: rgb(108, 111, 133) !important;
+  --checkbox-color: rgb(114, 135, 253) !important;
+  --checkbox-color-hover: rgb(114, 135, 253) !important;
+  --checkbox-marker-color: rgb(239, 241, 245) !important;
+  --checklist-done-color: rgb(64, 160, 43) !important;
+  --code-background: rgb(230, 233, 239) !important;
+  --code-border-color: rgb(204, 208, 218) !important;
+  --code-bracket-background: rgb(76, 79, 105, 7.5%) !important;
+  --code-comment: rgb(188, 192, 204) !important;
+  --code-function: rgb(223, 142, 29) !important;
+  --code-important: rgb(254, 100, 11) !important;
+  --code-keyword: rgb(234, 118, 203) !important;
+  --code-normal: rgb(108, 111, 133) !important;
+  --code-operator: rgb(210, 15, 57) !important;
+  --code-property: rgb(4, 165, 229) !important;
+  --code-punctuation: rgb(108, 111, 133) !important;
+  --code-string: rgb(64, 160, 43) !important;
+  --code-tag: rgb(210, 15, 57) !important;
+  --code-value: rgb(114, 135, 253) !important;
+  --codeFont: '??', "Vollkorn",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --collapse-icon-color: rgb(188, 192, 204) !important;
+  --collapse-icon-color-collapsed: rgb(108, 111, 133) !important;
+  --color-accent: rgb(114, 135, 253) !important;
+  --color-accent-1: rgb(114, 135, 253) !important;
+  --color-accent-2: rgb(114, 135, 253, 90%) !important;
+  --color-accent-hsl: 254, 80%, 68% !important;
+  --color-base-00: rgb(220, 224, 232) !important;
+  --color-base-10: rgb(230, 233, 239) !important;
+  --color-base-100: rgb(76, 79, 105) !important;
+  --color-base-20: rgb(239, 241, 245) !important;
+  --color-base-25: rgb(204, 208, 218) !important;
+  --color-base-30: rgb(188, 192, 204) !important;
+  --color-base-35: rgb(172, 176, 190) !important;
+  --color-base-40: rgb(156, 160, 176) !important;
+  --color-base-50: rgb(140, 143, 161) !important;
+  --color-base-60: rgb(124, 127, 147) !important;
+  --color-base-70: rgb(108, 111, 133) !important;
+  --color-blue: rgb(30, 102, 245) !important;
+  --color-blue-rgb: 30, 102, 245 !important;
+  --color-cyan: rgb(4, 165, 229) !important;
+  --color-cyan-rgb: 32, 159, 181 !important;
+  --color-green: rgb(64, 160, 43) !important;
+  --color-green-rgb: 64, 160, 43 !important;
+  --color-orange: rgb(254, 100, 11) !important;
+  --color-orange-rgb: 254, 100, 11 !important;
+  --color-pink: rgb(234, 118, 203) !important;
+  --color-pink-rgb: 234, 118, 203 !important;
+  --color-purple: rgb(114, 135, 253) !important;
+  --color-purple-rgb: 136, 57, 239 !important;
+  --color-red: rgb(210, 15, 57) !important;
+  --color-red-rgb: 210, 15, 57 !important;
+  --color-yellow: rgb(223, 142, 29) !important;
+  --color-yellow-rgb: 223, 142, 29 !important;
+  --ctp-accent: 114, 135, 253 !important;
+  --ctp-base: 239, 241, 245 !important;
+  --ctp-blockquote: 220, 138, 120 !important;
+  --ctp-blue: 30, 102, 245 !important;
+  --ctp-bold: 32, 159, 181 !important;
+  --ctp-crust: 220, 224, 232 !important;
+  --ctp-flamingo: 221, 120, 120 !important;
+  --ctp-green: 64, 160, 43 !important;
+  --ctp-h1: 114, 135, 253 !important;
+  --ctp-h2: 114, 135, 253 !important;
+  --ctp-h3: 114, 135, 253 !important;
+  --ctp-h4: 114, 135, 253 !important;
+  --ctp-h5: 114, 135, 253 !important;
+  --ctp-h6: 114, 135, 253 !important;
+  --ctp-italic: 64, 160, 43 !important;
+  --ctp-lavender: 114, 135, 253 !important;
+  --ctp-mantle: 230, 233, 239 !important;
+  --ctp-maroon: 230, 69, 83 !important;
+  --ctp-mauve: 136, 57, 239 !important;
+  --ctp-overlay0: 156, 160, 176 !important;
+  --ctp-overlay1: 140, 143, 161 !important;
+  --ctp-overlay2: 124, 127, 147 !important;
+  --ctp-page-title: 76, 79, 105 !important;
+  --ctp-peach: 254, 100, 11 !important;
+  --ctp-pink: 234, 118, 203 !important;
+  --ctp-red: 210, 15, 57 !important;
+  --ctp-rosewater: 220, 138, 120 !important;
+  --ctp-sapphire: 32, 159, 181 !important;
+  --ctp-sky: 4, 165, 229 !important;
+  --ctp-strikethrough: 230, 69, 83 !important;
+  --ctp-subtext0: 108, 111, 133 !important;
+  --ctp-subtext1: 92, 95, 119 !important;
+  --ctp-surface0: 204, 208, 218 !important;
+  --ctp-surface1: 188, 192, 204 !important;
+  --ctp-surface2: 172, 176, 190 !important;
+  --ctp-tag-pill-color: 114, 135, 253 !important;
+  --ctp-teal: 23, 146, 153 !important;
+  --ctp-text: 76, 79, 105 !important;
+  --ctp-yellow: 223, 142, 29 !important;
+  --dark: rgb(76, 79, 105) !important;
+  --darkgray: rgb(76, 79, 105) !important;
+  --divider-color: rgb(204, 208, 218) !important;
+  --divider-color-hover: rgb(30, 102, 245) !important;
+  --divider-width-hover: 2px !important;
+  --drag-ghost-background: rgb(0, 0, 0, 85%) !important;
+  --drag-ghost-text-color: rgb(76, 79, 105) !important;
+  --dropdown-background: rgb(204, 208, 218) !important;
+  --dropdown-background-hover: rgb(188, 192, 204) !important;
   --embed-block-shadow-hover: 0 0 0 1px
     rgb(204, 208, 218),
-    inset 0 0 0 1px rgb(204, 208, 218);
-  --embed-border-left: 2px solid rgb(114, 135, 253);
-  --embed-border-right: none;
-  --embed-border-start: 2px solid rgb(114, 135, 253);
-  --file-header-background: rgb(239, 241, 245);
-  --file-header-background-focused: rgb(239, 241, 245);
+    inset 0 0 0 1px rgb(204, 208, 218) !important;
+  --embed-border-left: 2px solid rgb(114, 135, 253) !important;
+  --embed-border-right: none !important;
+  --embed-border-start: 2px solid rgb(114, 135, 253) !important;
+  --file-header-background: rgb(239, 241, 245) !important;
+  --file-header-background-focused: rgb(239, 241, 245) !important;
   --file-header-font: '??', "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -1697,10 +1744,10 @@ body sup {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --file-margins: 32px;
-  --flair-background: rgb(204, 208, 218);
-  --flair-color: rgb(76, 79, 105);
+    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-margins: 32px !important;
+  --flair-background: rgb(204, 208, 218) !important;
+  --flair-color: rgb(76, 79, 105) !important;
   --font-interface: '??', "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -1708,7 +1755,7 @@ body sup {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -1716,7 +1763,7 @@ body sup {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif;
+    sans-serif !important;
   --font-mermaid: '??', "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -1724,7 +1771,7 @@ body sup {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-print: '??', '??', "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -1732,7 +1779,7 @@ body sup {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, 'Arial';
+    sans-serif, 'Arial' !important;
   --font-text: '??', "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -1740,7 +1787,7 @@ body sup {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
@@ -1748,91 +1795,98 @@ body sup {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif;
-  --font-ui-medium: 16px;
-  --footnote-divider-color: rgb(204, 208, 218);
-  --footnote-id-color: rgb(108, 111, 133);
-  --footnote-id-color-no-occurrences: rgb(188, 192, 204);
-  --footnote-input-background-active: rgb(76, 79, 105, 7.5%);
-  --graph-line: rgb(172, 176, 190);
-  --graph-node: rgb(108, 111, 133);
-  --graph-node-attachment: rgb(223, 142, 29);
-  --graph-node-focused: rgb(114, 135, 253);
-  --graph-node-tag: rgb(64, 160, 43);
-  --graph-node-unresolved: rgb(188, 192, 204);
-  --graph-text: rgb(76, 79, 105);
-  --gray: var(--text-muted);
-  --h1-line-height: 1.5;
-  --h1-size: 2em;
-  --h2-line-height: 1.5;
-  --h2-size: 1.6em;
-  --h2-weight: 600;
-  --h3-line-height: 1.5;
-  --h3-size: 1.37em;
-  --h3-weight: 600;
-  --h4-line-height: 1.5;
-  --h4-size: 1.25em;
-  --h4-weight: 600;
-  --h5-size: 1.12em;
-  --h5-weight: 600;
-  --h6-size: 1.12em;
-  --headerFont: var(--font-text);
-  --heading-formatting: rgb(188, 192, 204);
-  --hex-blue: #1e66f5;
-  --hex-green: #40a02b;
-  --hex-lavender: #7287fd;
-  --hex-mauve: #8839ef;
-  --hex-peach: #fe640b;
-  --hex-pink: #ea76cb;
-  --hex-red: #d20f39;
-  --hex-sapphire: #209fb5;
-  --hex-sky: #04a5e5;
-  --hex-teal: #179299;
-  --hex-yellow: #df8e1d;
-  --highlight: var(--text-highlight-bg);
-  --hr-color: rgb(30, 102, 245);
-  --icon-color: rgb(108, 111, 133);
-  --icon-color-active: rgb(114, 135, 253);
-  --icon-color-focused: rgb(76, 79, 105);
-  --icon-color-hover: rgb(230, 233, 239);
-  --icon-opacity: 1;
-  --indentation-guide-color: rgb(188, 192, 204);
-  --indentation-guide-color-active: rgb(32, 159, 181, 70%);
-  --indentation-guide-width: 2px;
-  --inline-title-line-height: 1.5;
-  --inline-title-size: 2em;
-  --input-date-separator: rgb(188, 192, 204);
-  --input-placeholder-color: rgb(188, 192, 204);
-  --interactive-accent: rgb(114, 135, 253);
-  --interactive-accent-hover: rgb(114, 135, 253);
-  --interactive-accent-hsl: 254, 80%, 68%;
-  --interactive-accent-rgb: 114, 135, 253;
-  --interactive-hover: rgb(188, 192, 204);
-  --interactive-normal: rgb(204, 208, 218);
-  --interactive-success: rgb(64, 160, 43);
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --line-height-tight: 1.25;
-  --link-color: rgb(30, 102, 245);
-  --link-color-hover: rgb(30, 102, 245);
-  --link-decoration: none;
-  --link-decoration-thickness: 2px;
-  --link-external-color: rgb(23, 146, 153);
-  --link-external-color-hover: rgb(23, 146, 153);
-  --link-external-decoration: none;
-  --link-unresolved-color: rgb(230, 69, 83);
-  --link-unresolved-decoration-color: rgb(210, 15, 57);
-  --link-unresolved-opacity: 1;
-  --list-indent: 2em;
-  --list-marker-color: rgb(32, 159, 181);
-  --list-marker-color-collapsed: rgb(114, 135, 253);
-  --list-marker-color-hover: rgb(108, 111, 133);
-  --list-spacing: 0.1em;
-  --menu-background: rgb(230, 233, 239);
-  --menu-border-color: rgb(172, 176, 190);
-  --metadata-border-color: rgb(204, 208, 218);
-  --metadata-divider-color: rgb(204, 208, 218);
-  --metadata-input-background-active: rgb(76, 79, 105, 7.5%);
+    sans-serif !important;
+  --font-ui-medium: 16px !important;
+  --footnote-divider-color: rgb(204, 208, 218) !important;
+  --footnote-id-color: rgb(108, 111, 133) !important;
+  --footnote-id-color-no-occurrences: rgb(188, 192, 204) !important;
+  --footnote-input-background-active: rgb(76, 79, 105, 7.5%) !important;
+  --graph-line: rgb(172, 176, 190) !important;
+  --graph-node: rgb(108, 111, 133) !important;
+  --graph-node-attachment: rgb(223, 142, 29) !important;
+  --graph-node-focused: rgb(114, 135, 253) !important;
+  --graph-node-tag: rgb(64, 160, 43) !important;
+  --graph-node-unresolved: rgb(188, 192, 204) !important;
+  --graph-text: rgb(76, 79, 105) !important;
+  --gray: rgb(108, 111, 133) !important;
+  --h1-line-height: 1.5 !important;
+  --h1-size: 2em !important;
+  --h2-line-height: 1.5 !important;
+  --h2-size: 1.6em !important;
+  --h2-weight: 600 !important;
+  --h3-line-height: 1.5 !important;
+  --h3-size: 1.37em !important;
+  --h3-weight: 600 !important;
+  --h4-line-height: 1.5 !important;
+  --h4-size: 1.25em !important;
+  --h4-weight: 600 !important;
+  --h5-size: 1.12em !important;
+  --h5-weight: 600 !important;
+  --h6-size: 1.12em !important;
+  --headerFont: '??', "Vollkorn",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --heading-formatting: rgb(188, 192, 204) !important;
+  --hex-blue: #1e66f5 !important;
+  --hex-green: #40a02b !important;
+  --hex-lavender: #7287fd !important;
+  --hex-mauve: #8839ef !important;
+  --hex-peach: #fe640b !important;
+  --hex-pink: #ea76cb !important;
+  --hex-red: #d20f39 !important;
+  --hex-sapphire: #209fb5 !important;
+  --hex-sky: #04a5e5 !important;
+  --hex-teal: #179299 !important;
+  --hex-yellow: #df8e1d !important;
+  --highlight: rgb(220, 138, 120, 100%) !important;
+  --hr-color: rgb(30, 102, 245) !important;
+  --icon-color: rgb(108, 111, 133) !important;
+  --icon-color-active: rgb(114, 135, 253) !important;
+  --icon-color-focused: rgb(76, 79, 105) !important;
+  --icon-color-hover: rgb(230, 233, 239) !important;
+  --icon-opacity: 1 !important;
+  --indentation-guide-color: rgb(188, 192, 204) !important;
+  --indentation-guide-color-active: rgb(32, 159, 181, 70%) !important;
+  --indentation-guide-width: 2px !important;
+  --inline-title-line-height: 1.5 !important;
+  --inline-title-size: 2em !important;
+  --input-date-separator: rgb(188, 192, 204) !important;
+  --input-placeholder-color: rgb(188, 192, 204) !important;
+  --interactive-accent: rgb(114, 135, 253) !important;
+  --interactive-accent-hover: rgb(114, 135, 253) !important;
+  --interactive-accent-hsl: 254, 80%, 68% !important;
+  --interactive-accent-rgb: 114, 135, 253 !important;
+  --interactive-hover: rgb(188, 192, 204) !important;
+  --interactive-normal: rgb(204, 208, 218) !important;
+  --interactive-success: rgb(64, 160, 43) !important;
+  --light: rgb(239, 241, 245) !important;
+  --lightgray: rgb(230, 233, 239) !important;
+  --line-height-tight: 1.25 !important;
+  --link-color: rgb(30, 102, 245) !important;
+  --link-color-hover: rgb(30, 102, 245) !important;
+  --link-decoration: none !important;
+  --link-decoration-thickness: 2px !important;
+  --link-external-color: rgb(23, 146, 153) !important;
+  --link-external-color-hover: rgb(23, 146, 153) !important;
+  --link-external-decoration: none !important;
+  --link-unresolved-color: rgb(230, 69, 83) !important;
+  --link-unresolved-decoration-color: rgb(210, 15, 57) !important;
+  --link-unresolved-opacity: 1 !important;
+  --list-indent: 2em !important;
+  --list-marker-color: rgb(32, 159, 181) !important;
+  --list-marker-color-collapsed: rgb(114, 135, 253) !important;
+  --list-marker-color-hover: rgb(108, 111, 133) !important;
+  --list-spacing: 0.1em !important;
+  --menu-background: rgb(230, 233, 239) !important;
+  --menu-border-color: rgb(172, 176, 190) !important;
+  --metadata-border-color: rgb(204, 208, 218) !important;
+  --metadata-divider-color: rgb(204, 208, 218) !important;
+  --metadata-input-background-active: rgb(76, 79, 105, 7.5%) !important;
   --metadata-input-font: '??', "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -1840,9 +1894,9 @@ body sup {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-input-text-color: rgb(76, 79, 105);
-  --metadata-label-background-active: rgb(76, 79, 105, 7.5%);
+    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-text-color: rgb(76, 79, 105) !important;
+  --metadata-label-background-active: rgb(76, 79, 105, 7.5%) !important;
   --metadata-label-font: '??', "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -1850,178 +1904,190 @@ body sup {
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --metadata-label-text-color: rgb(108, 111, 133);
-  --metadata-label-text-color-hover: rgb(108, 111, 133);
-  --metadata-property-background-active: rgb(76, 79, 105, 7.5%);
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(156, 160, 176);
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(172, 176, 190);
-  --modal-background: rgb(239, 241, 245);
-  --modal-border-color: rgb(156, 160, 176);
-  --modal-radius: 10px;
-  --mono-rgb-0: 220, 224, 232;
-  --mono-rgb-100: 76, 79, 105;
-  --nav-collapse-icon-color: rgb(188, 192, 204);
-  --nav-collapse-icon-color-collapsed: rgb(188, 192, 204);
-  --nav-heading-color: rgb(76, 79, 105);
-  --nav-heading-color-collapsed: rgb(188, 192, 204);
-  --nav-heading-color-collapsed-hover: rgb(108, 111, 133);
-  --nav-heading-color-hover: rgb(76, 79, 105);
-  --nav-indentation-guide-color: rgb(188, 192, 204);
-  --nav-indentation-guide-width: 2px;
-  --nav-item-background-active: rgb(76, 79, 105, 7.5%);
-  --nav-item-background-hover: rgb(76, 79, 105, 7.5%);
-  --nav-item-background-selected: rgb(139, 108, 239);
-  --nav-item-children-margin-left: 12px;
-  --nav-item-children-padding-left: 4px;
-  --nav-item-color: rgb(108, 111, 133);
-  --nav-item-color-active: rgb(230, 233, 239);
-  --nav-item-color-highlighted: rgb(114, 135, 253);
-  --nav-item-color-hover: rgb(230, 233, 239);
-  --nav-item-color-selected: rgb(230, 233, 239);
-  --nav-item-white-space: nowrap;
-  --nav-tag-color: rgb(188, 192, 204);
-  --nav-tag-color-active: rgb(108, 111, 133);
-  --nav-tag-color-hover: rgb(108, 111, 133);
-  --pdf-background: rgb(239, 241, 245);
-  --pdf-page-background: rgb(239, 241, 245);
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
-  --pdf-sidebar-background: rgb(239, 241, 245);
-  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
-  --pill-border-color: rgb(204, 208, 218);
-  --pill-border-color-hover: rgb(172, 176, 190);
-  --pill-color: rgb(108, 111, 133);
-  --pill-color-hover: rgb(76, 79, 105);
-  --pill-color-remove: rgb(188, 192, 204);
-  --pill-color-remove-hover: rgb(114, 135, 253);
-  --popover-max-height: 70vh;
-  --popover-pdf-height: 800px;
-  --popover-pdf-width: 600px;
-  --prompt-background: rgb(239, 241, 245);
-  --prompt-border-color: rgb(156, 160, 176);
-  --radius-l: 10px;
-  --raised-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent));
-  --ribbon-background: rgb(230, 233, 239);
-  --ribbon-background-collapsed: rgb(239, 241, 245);
+    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-text-color: rgb(108, 111, 133) !important;
+  --metadata-label-text-color-hover: rgb(108, 111, 133) !important;
+  --metadata-property-background-active: rgb(76, 79, 105, 7.5%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(156, 160, 176) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(172, 176, 190) !important;
+  --modal-background: rgb(239, 241, 245) !important;
+  --modal-border-color: rgb(156, 160, 176) !important;
+  --modal-radius: 10px !important;
+  --mono-rgb-0: 220, 224, 232 !important;
+  --mono-rgb-100: 76, 79, 105 !important;
+  --nav-collapse-icon-color: rgb(188, 192, 204) !important;
+  --nav-collapse-icon-color-collapsed: rgb(188, 192, 204) !important;
+  --nav-heading-color: rgb(76, 79, 105) !important;
+  --nav-heading-color-collapsed: rgb(188, 192, 204) !important;
+  --nav-heading-color-collapsed-hover: rgb(108, 111, 133) !important;
+  --nav-heading-color-hover: rgb(76, 79, 105) !important;
+  --nav-indentation-guide-color: rgb(188, 192, 204) !important;
+  --nav-indentation-guide-width: 2px !important;
+  --nav-item-background-active: rgb(76, 79, 105, 7.5%) !important;
+  --nav-item-background-hover: rgb(76, 79, 105, 7.5%) !important;
+  --nav-item-background-selected: rgb(139, 108, 239) !important;
+  --nav-item-children-margin-left: 12px !important;
+  --nav-item-children-padding-left: 4px !important;
+  --nav-item-color: rgb(108, 111, 133) !important;
+  --nav-item-color-active: rgb(230, 233, 239) !important;
+  --nav-item-color-highlighted: rgb(114, 135, 253) !important;
+  --nav-item-color-hover: rgb(230, 233, 239) !important;
+  --nav-item-color-selected: rgb(230, 233, 239) !important;
+  --nav-item-white-space: nowrap !important;
+  --nav-tag-color: rgb(188, 192, 204) !important;
+  --nav-tag-color-active: rgb(108, 111, 133) !important;
+  --nav-tag-color-hover: rgb(108, 111, 133) !important;
+  --pdf-background: rgb(239, 241, 245) !important;
+  --pdf-page-background: rgb(239, 241, 245) !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: rgb(239, 241, 245) !important;
+  --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pill-border-color: rgb(204, 208, 218) !important;
+  --pill-border-color-hover: rgb(172, 176, 190) !important;
+  --pill-color: rgb(108, 111, 133) !important;
+  --pill-color-hover: rgb(76, 79, 105) !important;
+  --pill-color-remove: rgb(188, 192, 204) !important;
+  --pill-color-remove-hover: rgb(114, 135, 253) !important;
+  --popover-max-height: 70vh !important;
+  --popover-pdf-height: 800px !important;
+  --popover-pdf-width: 600px !important;
+  --prompt-background: rgb(239, 241, 245) !important;
+  --prompt-border-color: rgb(156, 160, 176) !important;
+  --radius-l: 10px !important;
+  --raised-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent)) !important;
+  --ribbon-background: rgb(230, 233, 239) !important;
+  --ribbon-background-collapsed: rgb(239, 241, 245) !important;
   --ribbon-padding: 8px 4px
-    12px;
-  --scrollbar-active-thumb-bg: rgb(76, 79, 105, 20%);
-  --scrollbar-bg: rgb(76, 79, 105, 5%);
-  --scrollbar-radius: 10px;
-  --scrollbar-thumb-bg: rgb(76, 79, 105, 10%);
-  --search-clear-button-color: rgb(108, 111, 133);
-  --search-icon-color: rgb(108, 111, 133);
-  --search-result-background: rgb(239, 241, 245);
-  --secondary: var(--text-accent);
-  --setting-group-heading-color: rgb(76, 79, 105);
-  --setting-group-heading-size: 16px;
-  --setting-items-background: rgb(230, 233, 239);
-  --setting-items-border-color: rgb(204, 208, 218);
-  --setting-items-radius: 10px;
-  --sidebar-markdown-font-size: 14.4px;
-  --slider-thumb-border-color: rgb(172, 176, 190);
-  --slider-thumb-radius: 50%;
-  --slider-track-background: rgb(204, 208, 218);
-  --status-bar-background: rgb(230, 233, 239);
-  --status-bar-border-color: rgb(204, 208, 218);
-  --status-bar-scroll-padding: 30px;
-  --status-bar-text-color: rgb(108, 111, 133);
-  --suggestion-background: rgb(239, 241, 245);
-  --swatch-height: 24px;
+    12px !important;
+  --scrollbar-active-thumb-bg: rgb(76, 79, 105, 20%) !important;
+  --scrollbar-bg: rgb(76, 79, 105, 5%) !important;
+  --scrollbar-radius: 10px !important;
+  --scrollbar-thumb-bg: rgb(76, 79, 105, 10%) !important;
+  --search-clear-button-color: rgb(108, 111, 133) !important;
+  --search-icon-color: rgb(108, 111, 133) !important;
+  --search-result-background: rgb(239, 241, 245) !important;
+  --secondary: rgb(114, 135, 253) !important;
+  --setting-group-heading-color: rgb(76, 79, 105) !important;
+  --setting-group-heading-size: 16px !important;
+  --setting-items-background: rgb(230, 233, 239) !important;
+  --setting-items-border-color: rgb(204, 208, 218) !important;
+  --setting-items-radius: 10px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
+  --slider-thumb-border-color: rgb(172, 176, 190) !important;
+  --slider-thumb-radius: 50% !important;
+  --slider-track-background: rgb(204, 208, 218) !important;
+  --status-bar-background: rgb(230, 233, 239) !important;
+  --status-bar-border-color: rgb(204, 208, 218) !important;
+  --status-bar-scroll-padding: 30px !important;
+  --status-bar-text-color: rgb(108, 111, 133) !important;
+  --suggestion-background: rgb(239, 241, 245) !important;
+  --swatch-height: 24px !important;
   --swatch-shadow: inset 0 0 0 1px
-    rgb(76, 79, 105, 15%);
-  --swatch-width: 24px;
-  --sync-avatar-color-1: rgb(210, 15, 57);
-  --sync-avatar-color-2: rgb(254, 100, 11);
-  --sync-avatar-color-3: rgb(223, 142, 29);
-  --sync-avatar-color-4: rgb(64, 160, 43);
-  --sync-avatar-color-5: rgb(4, 165, 229);
-  --sync-avatar-color-6: rgb(30, 102, 245);
-  --sync-avatar-color-7: rgb(114, 135, 253);
-  --sync-avatar-color-8: rgb(234, 118, 203);
-  --tab-background-active: rgb(239, 241, 245);
-  --tab-container-background: rgb(230, 233, 239);
-  --tab-divider-color: rgb(172, 176, 190);
-  --tab-outline-color: rgb(204, 208, 218);
-  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%);
-  --tab-stacked-text-align: left;
-  --tab-switcher-background: rgb(230, 233, 239);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(230, 233, 239), transparent);
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(76, 79, 105, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(114, 135, 253);
-  --tab-text-color: rgb(188, 192, 204);
-  --tab-text-color-active: rgb(108, 111, 133);
-  --tab-text-color-focused: rgb(108, 111, 133);
-  --tab-text-color-focused-active: rgb(76, 79, 105);
-  --tab-text-color-focused-active-current: rgb(76, 79, 105);
-  --tab-text-color-focused-highlighted: rgb(114, 135, 253);
-  --table-add-button-border-color: rgb(204, 208, 218);
-  --table-border-color: rgb(204, 208, 218);
-  --table-drag-handle-background-active: rgb(114, 135, 253);
-  --table-drag-handle-color: rgb(188, 192, 204);
-  --table-drag-handle-color-active: rgb(230, 233, 239);
-  --table-header-border-color: rgb(204, 208, 218);
-  --table-header-color: rgb(108, 111, 133);
-  --table-header-size: 0.875em;
-  --table-header-weight: 400;
-  --table-line-height: 1.25;
-  --table-selection: rgba(139, 108, 239, 0.1);
-  --table-selection-border-color: rgb(114, 135, 253);
-  --table-white-space: normal;
-  --tag-background: transparent;
-  --tag-background-hover: 0;
-  --tag-border-color: rgb(139, 108, 239);
+    rgb(76, 79, 105, 15%) !important;
+  --swatch-width: 24px !important;
+  --sync-avatar-color-1: rgb(210, 15, 57) !important;
+  --sync-avatar-color-2: rgb(254, 100, 11) !important;
+  --sync-avatar-color-3: rgb(223, 142, 29) !important;
+  --sync-avatar-color-4: rgb(64, 160, 43) !important;
+  --sync-avatar-color-5: rgb(4, 165, 229) !important;
+  --sync-avatar-color-6: rgb(30, 102, 245) !important;
+  --sync-avatar-color-7: rgb(114, 135, 253) !important;
+  --sync-avatar-color-8: rgb(234, 118, 203) !important;
+  --tab-background-active: rgb(239, 241, 245) !important;
+  --tab-container-background: rgb(230, 233, 239) !important;
+  --tab-divider-color: rgb(172, 176, 190) !important;
+  --tab-outline-color: rgb(204, 208, 218) !important;
+  --tab-stacked-shadow: -8px 0 8px 0 rgb(0, 0, 0, 5%) !important;
+  --tab-stacked-text-align: left !important;
+  --tab-switcher-background: rgb(230, 233, 239) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(230, 233, 239), transparent) !important;
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(76, 79, 105, 0.05) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(114, 135, 253) !important;
+  --tab-text-color: rgb(188, 192, 204) !important;
+  --tab-text-color-active: rgb(108, 111, 133) !important;
+  --tab-text-color-focused: rgb(108, 111, 133) !important;
+  --tab-text-color-focused-active: rgb(76, 79, 105) !important;
+  --tab-text-color-focused-active-current: rgb(76, 79, 105) !important;
+  --tab-text-color-focused-highlighted: rgb(114, 135, 253) !important;
+  --table-add-button-border-color: rgb(204, 208, 218) !important;
+  --table-border-color: rgb(204, 208, 218) !important;
+  --table-drag-handle-background-active: rgb(114, 135, 253) !important;
+  --table-drag-handle-color: rgb(188, 192, 204) !important;
+  --table-drag-handle-color-active: rgb(230, 233, 239) !important;
+  --table-header-border-color: rgb(204, 208, 218) !important;
+  --table-header-color: rgb(108, 111, 133) !important;
+  --table-header-size: 0.875em !important;
+  --table-header-weight: 400 !important;
+  --table-line-height: 1.25 !important;
+  --table-selection: rgba(139, 108, 239, 0.1) !important;
+  --table-selection-border-color: rgb(114, 135, 253) !important;
+  --table-white-space: normal !important;
+  --tag-background: transparent !important;
+  --tag-background-hover: 0 !important;
+  --tag-border-color: rgb(139, 108, 239) !important;
   --tag-border-color-hover: hsl(
       254, 80%, 68%,
       15%
-    );
-  --tag-border-width: 0;
-  --tag-color: rgb(114, 135, 253);
-  --tag-color-hover: rgb(114, 135, 253);
-  --tag-decoration-hover: underline;
-  --tag-padding-x: 0;
-  --tag-padding-y: 0;
-  --tag-radius: 0.8em;
-  --tag-size: max(16px, 0.933em);
-  --tertiary: var(--text-accent-hover);
-  --text-accent: rgb(114, 135, 253);
-  --text-accent-hover: rgb(114, 135, 253);
-  --text-error: rgb(210, 15, 57);
-  --text-error-hover: rgb(210, 15, 57, 80%);
-  --text-faint: rgb(188, 192, 204);
-  --text-highlight-bg: rgb(220, 138, 120, 100%);
-  --text-highlight-bg-active: rgb(220, 138, 120, 100%);
-  --text-muted: rgb(108, 111, 133);
-  --text-muted-rgb: 108, 111, 133;
-  --text-normal: rgb(76, 79, 105);
-  --text-on-accent: rgb(230, 233, 239);
-  --text-on-accent-inverted: rgb(230, 233, 239);
-  --text-selection: rgb(124, 127, 147, 30%);
-  --text-success: rgb(64, 160, 43);
-  --text-warning: rgb(254, 100, 11);
-  --textHighlight: var(--text-highlight-bg);
-  --titleFont: var(--font-text);
-  --titlebar-background: rgb(230, 233, 239);
-  --titlebar-background-focused: rgb(220, 224, 232);
-  --titlebar-border-color: rgb(204, 208, 218);
-  --titlebar-border-width: 0;
-  --titlebar-text-color: rgb(108, 111, 133);
-  --titlebar-text-color-focused: rgb(76, 79, 105);
-  --titlebar-text-color-highlighted: rgb(114, 135, 253);
-  --toggle-thumb-color: rgb(76, 79, 105);
-  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1);
-  --transition-text-decoration-color: text-decoration-color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
-  --vault-name-color: rgb(76, 79, 105);
-  --vault-name-font-size: 13px;
-  --vault-name-font-weight: 500;
-  --vault-profile-color: rgb(76, 79, 105);
-  --vault-profile-color-hover: rgb(76, 79, 105);
-  --workspace-background-translucent: rgb(220, 224, 232, 60%);
-  --quartz-icon-color: currentColor;
+    ) !important;
+  --tag-border-width: 0 !important;
+  --tag-color: rgb(114, 135, 253) !important;
+  --tag-color-hover: rgb(114, 135, 253) !important;
+  --tag-decoration-hover: underline !important;
+  --tag-padding-x: 0 !important;
+  --tag-padding-y: 0 !important;
+  --tag-radius: 0.8em !important;
+  --tag-size: max(16px, 0.933em) !important;
+  --tertiary: rgb(114, 135, 253) !important;
+  --text-accent: rgb(114, 135, 253) !important;
+  --text-accent-hover: rgb(114, 135, 253) !important;
+  --text-error: rgb(210, 15, 57) !important;
+  --text-error-hover: rgb(210, 15, 57, 80%) !important;
+  --text-faint: rgb(188, 192, 204) !important;
+  --text-highlight-bg: rgb(220, 138, 120, 100%) !important;
+  --text-highlight-bg-active: rgb(220, 138, 120, 100%) !important;
+  --text-muted: rgb(108, 111, 133) !important;
+  --text-muted-rgb: 108, 111, 133 !important;
+  --text-normal: rgb(76, 79, 105) !important;
+  --text-on-accent: rgb(230, 233, 239) !important;
+  --text-on-accent-inverted: rgb(230, 233, 239) !important;
+  --text-selection: rgb(124, 127, 147, 30%) !important;
+  --text-success: rgb(64, 160, 43) !important;
+  --text-warning: rgb(254, 100, 11) !important;
+  --textHighlight: rgb(220, 138, 120, 100%) !important;
+  --titleFont: '??', "Vollkorn",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    "Microsoft YaHei Light",
+    roboto,
+    inter,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titlebar-background: rgb(230, 233, 239) !important;
+  --titlebar-background-focused: rgb(220, 224, 232) !important;
+  --titlebar-border-color: rgb(204, 208, 218) !important;
+  --titlebar-border-width: 0 !important;
+  --titlebar-text-color: rgb(108, 111, 133) !important;
+  --titlebar-text-color-focused: rgb(76, 79, 105) !important;
+  --titlebar-text-color-highlighted: rgb(114, 135, 253) !important;
+  --toggle-thumb-color: rgb(76, 79, 105) !important;
+  --transition-hover-bg: background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --transition-text-decoration-color: text-decoration-color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
+  --vault-name-color: rgb(76, 79, 105) !important;
+  --vault-name-font-size: 13px !important;
+  --vault-name-font-weight: 500 !important;
+  --vault-profile-color: rgb(76, 79, 105) !important;
+  --vault-profile-color-hover: rgb(76, 79, 105) !important;
+  --workspace-background-translucent: rgb(220, 224, 232, 60%) !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

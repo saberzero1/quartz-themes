@@ -9,58 +9,58 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-dark: 55%;
-  --accent-h: 200;
-  --accent-l: 45%;
-  --accent-s: 70%;
-  --background-modifier-active-hover: rgba(34, 142, 195, 0.1);
-  --background-modifier-border: #141F25;
-  --background-modifier-border-focus: #1E3038;
-  --background-modifier-border-hover: #19272E;
-  --background-modifier-error: #E6578A;
-  --background-modifier-error-hover: #E6578A;
-  --background-modifier-error-rgb: 280, 87, 138;
-  --background-modifier-form-field: #121C21;
-  --background-modifier-form-field-hover: #121C21;
-  --background-modifier-hover: rgba(34, 142, 195, 0.1);
-  --background-modifier-success: #39F098;
-  --background-modifier-success-rgb: 57, 240, 152;
-  --background-primary: #0E161B;
-  --background-primary-alt: #0C1417;
-  --background-secondary: #070B0D;
-  --background-secondary-alt: #141F25;
-  --bases-cards-background: #0E161B;
-  --bases-cards-cover-background: #0C1417;
-  --bases-cards-shadow: 0 0 0 1px #141F25;
-  --bases-cards-shadow-hover: 0 0 0 1px #19272E;
-  --bases-embed-border-color: #141F25;
-  --bases-group-heading-property-color: #7AA3B8;
-  --bases-table-border-color: #19272E;
-  --bases-table-cell-background-active: #0E161B;
-  --bases-table-cell-background-disabled: #0C1417;
-  --bases-table-cell-background-selected: rgba(34, 142, 195, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px #1E3038;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(34, 142, 195);
-  --bases-table-group-background: #0C1417;
-  --bases-table-header-background: #0E161B;
-  --bases-table-header-background-hover: rgba(34, 142, 195, 0.1);
-  --bases-table-header-color: #7AA3B8;
-  --bases-table-row-background-hover: #0C1417;
-  --bases-table-summary-background: #0E161B;
-  --bases-table-summary-background-hover: rgba(34, 142, 195, 0.1);
-  --block-margin: 2em 0;
-  --blockquote-background-color: #070B0D;
-  --blockquote-border-color: rgb(34, 142, 195);
+  --accent-dark: 55% !important;
+  --accent-h: 200 !important;
+  --accent-l: 45% !important;
+  --accent-s: 70% !important;
+  --background-modifier-active-hover: rgba(34, 142, 195, 0.1) !important;
+  --background-modifier-border: #141F25 !important;
+  --background-modifier-border-focus: #1E3038 !important;
+  --background-modifier-border-hover: #19272E !important;
+  --background-modifier-error: #E6578A !important;
+  --background-modifier-error-hover: #E6578A !important;
+  --background-modifier-error-rgb: 280, 87, 138 !important;
+  --background-modifier-form-field: #121C21 !important;
+  --background-modifier-form-field-hover: #121C21 !important;
+  --background-modifier-hover: rgba(34, 142, 195, 0.1) !important;
+  --background-modifier-success: #39F098 !important;
+  --background-modifier-success-rgb: 57, 240, 152 !important;
+  --background-primary: #0E161B !important;
+  --background-primary-alt: #0C1417 !important;
+  --background-secondary: #070B0D !important;
+  --background-secondary-alt: #141F25 !important;
+  --bases-cards-background: #0E161B !important;
+  --bases-cards-cover-background: #0C1417 !important;
+  --bases-cards-shadow: 0 0 0 1px #141F25 !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #19272E !important;
+  --bases-embed-border-color: #141F25 !important;
+  --bases-group-heading-property-color: #7AA3B8 !important;
+  --bases-table-border-color: #19272E !important;
+  --bases-table-cell-background-active: #0E161B !important;
+  --bases-table-cell-background-disabled: #0C1417 !important;
+  --bases-table-cell-background-selected: rgba(34, 142, 195, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #1E3038 !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(34, 142, 195) !important;
+  --bases-table-group-background: #0C1417 !important;
+  --bases-table-header-background: #0E161B !important;
+  --bases-table-header-background-hover: rgba(34, 142, 195, 0.1) !important;
+  --bases-table-header-color: #7AA3B8 !important;
+  --bases-table-row-background-hover: #0C1417 !important;
+  --bases-table-summary-background: #0E161B !important;
+  --bases-table-summary-background-hover: rgba(34, 142, 195, 0.1) !important;
+  --block-margin: 2em 0 !important;
+  --blockquote-background-color: #070B0D !important;
+  --blockquote-border-color: rgb(34, 142, 195) !important;
   --blockquote-color: hsl(
                                             200, 
                                             70%, 
-                                            70%);
-  --blockquote-style: italic;
-  --blur-background: color-mix(in srgb, #141F25 65%, transparent) linear-gradient(#141F25, color-mix(in srgb, #141F25 65%, transparent));
+                                            70%) !important;
+  --blockquote-style: italic !important;
+  --blur-background: color-mix(in srgb, #141F25 65%, transparent) linear-gradient(#141F25, color-mix(in srgb, #141F25 65%, transparent)) !important;
   --box-shadow-layered: 1.5px 0px 5px   rgba(10, 17, 20, 0.015),
       3.5px 0px 15px  rgba(10, 17, 20, 0.025),
       8px   0px 35px  rgba(10, 17, 20, 0.035),
-      27px  0px 125px rgba(10, 17, 20, 0.05);
+      27px  0px 125px rgba(10, 17, 20, 0.05) !important;
   --callout-bug: 280, 87, 138;
   --callout-default: 4, 165, 255;
   --callout-error: 280, 87, 138;
@@ -74,362 +74,373 @@ export const theme: ThemeData = {
   --callout-tip: 129, 213, 208;
   --callout-todo: 4, 165, 255;
   --callout-warning: 243, 200, 91;
-  --canvas-background: #0E161B;
-  --canvas-card-label-color: #355464;
-  --canvas-color-1: 280, 87, 138;
-  --canvas-color-2: 243, 200, 91;
-  --canvas-color-3: 207, 186, 0;
-  --canvas-color-4: 57, 240, 152;
-  --canvas-color-5: 129, 213, 208;
-  --canvas-color-6: 180, 145, 237;
-  --canvas-dot-pattern: #141F25;
-  --caret-color: #BDD1DB;
-  --checkbox-border-color: #243842;
-  --checkbox-border-color-hover: #7AA3B8;
-  --checkbox-color: rgb(34, 142, 195);
+  --canvas-background: #0E161B !important;
+  --canvas-card-label-color: #355464 !important;
+  --canvas-color-1: 280, 87, 138 !important;
+  --canvas-color-2: 243, 200, 91 !important;
+  --canvas-color-3: 207, 186, 0 !important;
+  --canvas-color-4: 57, 240, 152 !important;
+  --canvas-color-5: 129, 213, 208 !important;
+  --canvas-color-6: 180, 145, 237 !important;
+  --canvas-dot-pattern: #141F25 !important;
+  --caret-color: #BDD1DB !important;
+  --checkbox-border-color: #243842 !important;
+  --checkbox-border-color-hover: #7AA3B8 !important;
+  --checkbox-color: rgb(34, 142, 195) !important;
   --checkbox-color-hover: hsl(
                                             200, 
                                             70%, 
-                                            70%);
-  --checkbox-marker-color: #0E161B;
-  --checklist-done-color: #7AA3B8;
-  --code-background: #15222C;
-  --code-border-color: #141F25;
-  --code-bracket-background: rgba(34, 142, 195, 0.1);
-  --code-comment: #3f6a87;
-  --code-function: #CFBA00;
-  --code-important: #F3C85B;
-  --code-keyword: #EC95EE;
-  --code-normal: #D6E3F0;
-  --code-operator: #E6578A;
-  --code-property: #81D5D0;
-  --code-punctuation: #7AA3B8;
-  --code-string: #39F098;
-  --code-tag: #E6578A;
-  --code-value: #B491ED;
-  --collapse-icon-color: #355464;
+                                            70%) !important;
+  --checkbox-marker-color: #0E161B !important;
+  --checklist-done-color: #7AA3B8 !important;
+  --code-background: #15222C !important;
+  --code-border-color: #141F25 !important;
+  --code-bracket-background: rgba(34, 142, 195, 0.1) !important;
+  --code-comment: #3f6a87 !important;
+  --code-function: #CFBA00 !important;
+  --code-important: #F3C85B !important;
+  --code-keyword: #EC95EE !important;
+  --code-normal: #D6E3F0 !important;
+  --code-operator: #E6578A !important;
+  --code-property: #81D5D0 !important;
+  --code-punctuation: #7AA3B8 !important;
+  --code-string: #39F098 !important;
+  --code-tag: #E6578A !important;
+  --code-value: #B491ED !important;
+  --collapse-icon-color: #355464 !important;
   --collapse-icon-color-collapsed: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --color-accent: rgb(34, 142, 195);
-  --color-accent-1: rgb(46, 170, 220);
-  --color-accent-2: rgb(69, 188, 227);
+                                              55%) !important;
+  --color-accent: rgb(34, 142, 195) !important;
+  --color-accent-1: rgb(46, 170, 220) !important;
+  --color-accent-2: rgb(69, 188, 227) !important;
   --color-accent-alt: hsl(
                                             200, 
                                             70%, 
-                                            70%);
-  --color-accent-hsl: 200, 70%, 45%;
-  --color-base-00: #070B0D;
-  --color-base-10: #0C1417;
-  --color-base-100: #BDD1DB;
-  --color-base-20: #0E161B;
-  --color-base-25: #121C21;
-  --color-base-30: #141F25;
-  --color-base-35: #19272E;
-  --color-base-40: #1E3038;
-  --color-base-50: #243842;
-  --color-base-60: #355464;
-  --color-base-70: #7AA3B8;
-  --color-blue: #04A5FF;
-  --color-blue-rgb: 4, 165, 255;
-  --color-cyan: #81D5D0;
-  --color-cyan-rgb: 129, 213, 208;
+                                            70%) !important;
+  --color-accent-hsl: 200, 70%, 45% !important;
+  --color-base-00: #070B0D !important;
+  --color-base-10: #0C1417 !important;
+  --color-base-100: #BDD1DB !important;
+  --color-base-20: #0E161B !important;
+  --color-base-25: #121C21 !important;
+  --color-base-30: #141F25 !important;
+  --color-base-35: #19272E !important;
+  --color-base-40: #1E3038 !important;
+  --color-base-50: #243842 !important;
+  --color-base-60: #355464 !important;
+  --color-base-70: #7AA3B8 !important;
+  --color-blue: #04A5FF !important;
+  --color-blue-rgb: 4, 165, 255 !important;
+  --color-cyan: #81D5D0 !important;
+  --color-cyan-rgb: 129, 213, 208 !important;
   --color-emphasis: hsl(
                                                 200,
                                                 70%,
-                                                65%);
-  --color-green: #39F098;
-  --color-green-rgb: 57, 240, 152;
-  --color-orange: #F3C85B;
-  --color-orange-rgb: 243, 200, 91;
-  --color-pink: #EC95EE;
-  --color-pink-rgb: 236, 149, 238;
-  --color-purple: #B491ED;
-  --color-purple-rgb: 180, 145, 237;
-  --color-red: #E6578A;
-  --color-red-rgb: 280, 87, 138;
-  --color-yellow: #CFBA00;
-  --color-yellow-rgb: 207, 186, 0;
-  --dark: var(--text-normal);
-  --darkgray: var(--text-normal);
-  --divider-color: #141F25;
-  --divider-color-hover: rgb(34, 142, 195);
-  --dropdown-background: #141F25;
-  --dropdown-background-hover: #19272E;
-  --embed-background-color: #141F25;
-  --embed-block-shadow-hover: 0 0 0 1px #141F25, inset 0 0 0 1px #141F25;
-  --embed-border-start: 2px solid rgb(34, 142, 195);
-  --file-header-background: #0E161B;
-  --file-header-background-focused: #0E161B;
-  --flair-background: #141F25;
-  --flair-color: #BDD1DB;
-  --footnote-divider-color: #141F25;
-  --footnote-id-color: #7AA3B8;
-  --footnote-id-color-no-occurrences: #355464;
-  --footnote-input-background-active: rgba(34, 142, 195, 0.1);
-  --graph-line: #243842;
+                                                65%) !important;
+  --color-green: #39F098 !important;
+  --color-green-rgb: 57, 240, 152 !important;
+  --color-orange: #F3C85B !important;
+  --color-orange-rgb: 243, 200, 91 !important;
+  --color-pink: #EC95EE !important;
+  --color-pink-rgb: 236, 149, 238 !important;
+  --color-purple: #B491ED !important;
+  --color-purple-rgb: 180, 145, 237 !important;
+  --color-red: #E6578A !important;
+  --color-red-rgb: 280, 87, 138 !important;
+  --color-yellow: #CFBA00 !important;
+  --color-yellow-rgb: 207, 186, 0 !important;
+  --dark: #BDD1DB !important;
+  --darkgray: #BDD1DB !important;
+  --divider-color: #141F25 !important;
+  --divider-color-hover: rgb(34, 142, 195) !important;
+  --dropdown-background: #141F25 !important;
+  --dropdown-background-hover: #19272E !important;
+  --embed-background-color: #141F25 !important;
+  --embed-block-shadow-hover: 0 0 0 1px #141F25, inset 0 0 0 1px #141F25 !important;
+  --embed-border-start: 2px solid rgb(34, 142, 195) !important;
+  --file-header-background: #0E161B !important;
+  --file-header-background-focused: #0E161B !important;
+  --flair-background: #141F25 !important;
+  --flair-color: #BDD1DB !important;
+  --footnote-divider-color: #141F25 !important;
+  --footnote-id-color: #7AA3B8 !important;
+  --footnote-id-color-no-occurrences: #355464 !important;
+  --footnote-input-background-active: rgba(34, 142, 195, 0.1) !important;
+  --graph-line: #243842 !important;
   --graph-node: hsl(
                                               200,
                                               70%,
-                                              75%);
-  --graph-node-attachment: #CFBA00;
+                                              75%) !important;
+  --graph-node-attachment: #CFBA00 !important;
   --graph-node-focused: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --graph-node-tag: #39F098;
-  --graph-node-unresolved: #355464;
-  --graph-text: #BDD1DB;
-  --gray: var(--text-muted);
-  --h1-color: #DEE8ED;
-  --h1-line-height: 1.111;
-  --h1-size: 2.25em;
-  --h2-color: #DEE8ED;
-  --h2-line-height: 1.143;
-  --h2-size: 1.75em;
-  --h3-color: #DEE8ED;
-  --h3-line-height: 1.167;
-  --h3-size: 1.5em;
-  --h4-color: #DEE8ED;
-  --h4-line-height: 1.2;
-  --h4-size: 1.25em;
-  --h5-color: #DEE8ED;
-  --h5-line-height: 1.25;
-  --h5-size: 1em;
-  --h6-color: #DEE8ED;
-  --h6-line-height: 1.333;
-  --h6-size: 0.75em;
-  --heading-color: #DEE8ED;
-  --heading-formatting: #355464;
-  --highlight: var(--background-modifier-hover);
-  --hr-color: #141F25;
-  --hr-thickness: 1px;
-  --icon-color: #7AA3B8;
+                                              55%) !important;
+  --graph-node-tag: #39F098 !important;
+  --graph-node-unresolved: #355464 !important;
+  --graph-text: #BDD1DB !important;
+  --gray: #7AA3B8 !important;
+  --h1-color: #DEE8ED !important;
+  --h1-line-height: 1.111 !important;
+  --h1-size: 2.25em !important;
+  --h2-color: #DEE8ED !important;
+  --h2-line-height: 1.143 !important;
+  --h2-size: 1.75em !important;
+  --h3-color: #DEE8ED !important;
+  --h3-line-height: 1.167 !important;
+  --h3-size: 1.5em !important;
+  --h4-color: #DEE8ED !important;
+  --h4-line-height: 1.2 !important;
+  --h4-size: 1.25em !important;
+  --h5-color: #DEE8ED !important;
+  --h5-line-height: 1.25 !important;
+  --h5-size: 1em !important;
+  --h6-color: #DEE8ED !important;
+  --h6-line-height: 1.333 !important;
+  --h6-size: 0.75em !important;
+  --heading-color: #DEE8ED !important;
+  --heading-formatting: #355464 !important;
+  --highlight: rgba(34, 142, 195, 0.1) !important;
+  --hr-color: #141F25 !important;
+  --hr-thickness: 1px !important;
+  --icon-color: #7AA3B8 !important;
   --icon-color-active: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --icon-color-focused: #BDD1DB;
-  --icon-color-hover: #7AA3B8;
-  --indentation-guide-color: rgba(34, 142, 195, 0.15);
-  --indentation-guide-color-active: rgba(34, 142, 195, 0.15);
-  --inline-title-border: #19272E;
-  --inline-title-color: #3d6681;
-  --inline-title-line-height: 1.111;
-  --inline-title-size: 1em;
-  --inline-title-weight: bold;
-  --input-date-separator: #355464;
-  --input-placeholder-color: #355464;
-  --interactive-accent: rgb(34, 142, 195);
-  --interactive-accent-hover: rgb(46, 170, 220);
-  --interactive-accent-hsl: 200, 70%, 45%;
-  --interactive-hover: #19272E;
-  --interactive-normal: #141F25;
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --line-height-roomy: 1.75;
+                                              55%) !important;
+  --icon-color-focused: #BDD1DB !important;
+  --icon-color-hover: #7AA3B8 !important;
+  --indentation-guide-color: rgba(34, 142, 195, 0.15) !important;
+  --indentation-guide-color-active: rgba(34, 142, 195, 0.15) !important;
+  --inline-title-border: #19272E !important;
+  --inline-title-color: #3d6681 !important;
+  --inline-title-line-height: 1.111 !important;
+  --inline-title-size: 1em !important;
+  --inline-title-weight: bold !important;
+  --input-date-separator: #355464 !important;
+  --input-placeholder-color: #355464 !important;
+  --interactive-accent: rgb(34, 142, 195) !important;
+  --interactive-accent-hover: rgb(46, 170, 220) !important;
+  --interactive-accent-hsl: 200, 70%, 45% !important;
+  --interactive-hover: #19272E !important;
+  --interactive-normal: #141F25 !important;
+  --light: #0E161B !important;
+  --lightgray: #070B0D !important;
+  --line-height-roomy: 1.75 !important;
   --link-color: hsl(
                                               200,
                                               70%,
-                                              55%);
+                                              55%) !important;
   --link-color-hover: hsl(
                                               200,
                                               70%,
-                                              75%);
+                                              75%) !important;
   --link-color-hover-embed: hsl(
                                                 200,
                                                 70%,
-                                                95%);
+                                                95%) !important;
   --link-external-color: hsl(
                                               200,
                                               70%,
-                                              55%);
+                                              55%) !important;
   --link-external-color-hover: hsl(
                                               200,
                                               70%,
-                                              75%);
+                                              75%) !important;
   --link-unresolved-color: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --link-unresolved-decoration-color: rgba(34, 142, 195, 0.3);
+                                              55%) !important;
+  --link-unresolved-decoration-color: rgba(34, 142, 195, 0.3) !important;
   --list-marker-color: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --list-marker-color-collapsed: #BDD1DB;
-  --list-marker-color-hover: #7AA3B8;
-  --list-spacing: 0.5em;
-  --menu-background: #070B0D;
-  --menu-border-color: #19272E;
-  --metadata-border-color: #141F25;
-  --metadata-divider-color: #141F25;
-  --metadata-input-background-active: rgba(34, 142, 195, 0.1);
-  --metadata-input-text-color: #BDD1DB;
-  --metadata-label-background-active: rgba(34, 142, 195, 0.1);
-  --metadata-label-text-color: #7AA3B8;
-  --metadata-label-text-color-hover: #7AA3B8;
-  --metadata-property-background-active: rgba(34, 142, 195, 0.1);
-  --metadata-property-box-shadow-focus: 0 0 0 2px #1E3038;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #19272E;
-  --modal-background: #0E161B;
-  --modal-border-color: #1E3038;
-  --nav-collapse-icon-color: #355464;
-  --nav-collapse-icon-color-collapsed: #355464;
-  --nav-heading-color: #BDD1DB;
-  --nav-heading-color-collapsed: #355464;
-  --nav-heading-color-collapsed-hover: #7AA3B8;
-  --nav-heading-color-hover: #BDD1DB;
-  --nav-indentation-guide-color: rgba(34, 142, 195, 0.15);
-  --nav-item-background-active: rgba(34, 142, 195, 0.1);
-  --nav-item-background-hover: rgba(34, 142, 195, 0.1);
-  --nav-item-background-selected: rgba(34, 142, 195, 0.15);
-  --nav-item-color: #7AA3B8;
-  --nav-item-color-active: #BDD1DB;
+                                              55%) !important;
+  --list-marker-color-collapsed: #BDD1DB !important;
+  --list-marker-color-hover: #7AA3B8 !important;
+  --list-spacing: 0.5em !important;
+  --menu-background: #070B0D !important;
+  --menu-border-color: #19272E !important;
+  --metadata-border-color: #141F25 !important;
+  --metadata-divider-color: #141F25 !important;
+  --metadata-input-background-active: rgba(34, 142, 195, 0.1) !important;
+  --metadata-input-text-color: #BDD1DB !important;
+  --metadata-label-background-active: rgba(34, 142, 195, 0.1) !important;
+  --metadata-label-text-color: #7AA3B8 !important;
+  --metadata-label-text-color-hover: #7AA3B8 !important;
+  --metadata-property-background-active: rgba(34, 142, 195, 0.1) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #1E3038 !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #19272E !important;
+  --modal-background: #0E161B !important;
+  --modal-border-color: #1E3038 !important;
+  --nav-collapse-icon-color: #355464 !important;
+  --nav-collapse-icon-color-collapsed: #355464 !important;
+  --nav-heading-color: #BDD1DB !important;
+  --nav-heading-color-collapsed: #355464 !important;
+  --nav-heading-color-collapsed-hover: #7AA3B8 !important;
+  --nav-heading-color-hover: #BDD1DB !important;
+  --nav-indentation-guide-color: rgba(34, 142, 195, 0.15) !important;
+  --nav-item-background-active: rgba(34, 142, 195, 0.1) !important;
+  --nav-item-background-hover: rgba(34, 142, 195, 0.1) !important;
+  --nav-item-background-selected: rgba(34, 142, 195, 0.15) !important;
+  --nav-item-color: #7AA3B8 !important;
+  --nav-item-color-active: #BDD1DB !important;
   --nav-item-color-highlighted: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --nav-item-color-hover: #BDD1DB;
-  --nav-item-color-selected: #BDD1DB;
-  --nav-tag-color: #355464;
-  --nav-tag-color-active: #7AA3B8;
-  --nav-tag-color-hover: #7AA3B8;
-  --pdf-background: #0E161B;
-  --pdf-page-background: #0E161B;
-  --pdf-shadow: 0 0 0 1px #141F25;
-  --pdf-sidebar-background: #0E161B;
-  --pdf-thumbnail-shadow: 0 0 0 1px #141F25;
-  --pill-border-color: #141F25;
-  --pill-border-color-hover: #19272E;
-  --pill-color: #7AA3B8;
-  --pill-color-hover: #BDD1DB;
-  --pill-color-remove: #355464;
+                                              55%) !important;
+  --nav-item-color-hover: #BDD1DB !important;
+  --nav-item-color-selected: #BDD1DB !important;
+  --nav-tag-color: #355464 !important;
+  --nav-tag-color-active: #7AA3B8 !important;
+  --nav-tag-color-hover: #7AA3B8 !important;
+  --pdf-background: #0E161B !important;
+  --pdf-page-background: #0E161B !important;
+  --pdf-shadow: 0 0 0 1px #141F25 !important;
+  --pdf-sidebar-background: #0E161B !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px #141F25 !important;
+  --pill-border-color: #141F25 !important;
+  --pill-border-color-hover: #19272E !important;
+  --pill-color: #7AA3B8 !important;
+  --pill-color-hover: #BDD1DB !important;
+  --pill-color-remove: #355464 !important;
   --pill-color-remove-hover: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --prompt-background: #0E161B;
-  --prompt-border-color: #1E3038;
-  --raised-background: color-mix(in srgb, #141F25 65%, transparent) linear-gradient(#141F25, color-mix(in srgb, #141F25 65%, transparent));
-  --rendered-code-bg: #15222C;
-  --rendered-code-text: #F3C85B;
-  --ribbon-background: #070B0D;
-  --ribbon-background-collapsed: #0E161B;
-  --search-clear-button-color: #7AA3B8;
-  --search-icon-color: #7AA3B8;
-  --search-result-background: #0E161B;
-  --secondary: var(--text-accent);
-  --setting-group-heading-color: #BDD1DB;
-  --setting-items-background: #0C1417;
-  --setting-items-border-color: #141F25;
-  --slider-thumb-border-color: #19272E;
-  --slider-track-background: #141F25;
-  --status-bar-background: #070B0D;
-  --status-bar-border-color: #141F25;
-  --status-bar-text-color: #7AA3B8;
-  --suggestion-background: #0E161B;
-  --sync-avatar-color-1: #E6578A;
-  --sync-avatar-color-2: #F3C85B;
-  --sync-avatar-color-3: #CFBA00;
-  --sync-avatar-color-4: #39F098;
-  --sync-avatar-color-5: #81D5D0;
-  --sync-avatar-color-6: #04A5FF;
-  --sync-avatar-color-7: #B491ED;
-  --sync-avatar-color-8: #EC95EE;
-  --tab-background-active: #0E161B;
-  --tab-container-background: #070B0D;
-  --tab-container-background-new: #070B0D;
-  --tab-curve: 12px;
-  --tab-divider-color: #141F25;
-  --tab-outline-color: #141F25;
-  --tab-radius: 9px;
-  --tab-switcher-background: #070B0D;
-  --tab-switcher-menubar-background: linear-gradient(to top, #070B0D, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(34, 142, 195);
-  --tab-text-color: #19272E;
-  --tab-text-color-active: #243842;
-  --tab-text-color-focused: #355464;
-  --tab-text-color-focused-active: #7AA3B8;
-  --tab-text-color-focused-active-current: #BDD1DB;
+                                              55%) !important;
+  --prompt-background: #0E161B !important;
+  --prompt-border-color: #1E3038 !important;
+  --raised-background: color-mix(in srgb, #141F25 65%, transparent) linear-gradient(#141F25, color-mix(in srgb, #141F25 65%, transparent)) !important;
+  --rendered-code-bg: #15222C !important;
+  --rendered-code-text: #F3C85B !important;
+  --ribbon-background: #070B0D !important;
+  --ribbon-background-collapsed: #0E161B !important;
+  --search-clear-button-color: #7AA3B8 !important;
+  --search-icon-color: #7AA3B8 !important;
+  --search-result-background: #0E161B !important;
+  --secondary: hsl(
+                                              200,
+                                              70%,
+                                              55%) !important;
+  --setting-group-heading-color: #BDD1DB !important;
+  --setting-items-background: #0C1417 !important;
+  --setting-items-border-color: #141F25 !important;
+  --slider-thumb-border-color: #19272E !important;
+  --slider-track-background: #141F25 !important;
+  --status-bar-background: #070B0D !important;
+  --status-bar-border-color: #141F25 !important;
+  --status-bar-text-color: #7AA3B8 !important;
+  --suggestion-background: #0E161B !important;
+  --sync-avatar-color-1: #E6578A !important;
+  --sync-avatar-color-2: #F3C85B !important;
+  --sync-avatar-color-3: #CFBA00 !important;
+  --sync-avatar-color-4: #39F098 !important;
+  --sync-avatar-color-5: #81D5D0 !important;
+  --sync-avatar-color-6: #04A5FF !important;
+  --sync-avatar-color-7: #B491ED !important;
+  --sync-avatar-color-8: #EC95EE !important;
+  --tab-background-active: #0E161B !important;
+  --tab-container-background: #070B0D !important;
+  --tab-container-background-new: #070B0D !important;
+  --tab-curve: 12px !important;
+  --tab-divider-color: #141F25 !important;
+  --tab-outline-color: #141F25 !important;
+  --tab-radius: 9px !important;
+  --tab-switcher-background: #070B0D !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #070B0D, transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(34, 142, 195) !important;
+  --tab-text-color: #19272E !important;
+  --tab-text-color-active: #243842 !important;
+  --tab-text-color-focused: #355464 !important;
+  --tab-text-color-focused-active: #7AA3B8 !important;
+  --tab-text-color-focused-active-current: #BDD1DB !important;
   --tab-text-color-focused-highlighted: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --table-add-button-border-color: #141F25;
-  --table-border-color: #19272E;
-  --table-drag-handle-background-active: rgb(34, 142, 195);
-  --table-drag-handle-color: #355464;
-  --table-header-background: #0C1417;
-  --table-header-background-hover: #121C21;
-  --table-header-border-color: #19272E;
-  --table-header-color: #BDD1DB;
-  --table-row-background-hover: #0C1417;
-  --table-row-even-background: #141F25;
-  --table-row-odd-background: #0E161B;
-  --table-selection: rgba(34, 142, 195, 0.1);
-  --table-selection-border-color: rgb(34, 142, 195);
-  --tag-background: rgba(34, 142, 195, 0.1);
-  --tag-background-hover: rgba(34, 142, 195, 0.2);
-  --tag-border-color: rgba(34, 142, 195, 0.15);
-  --tag-border-color-hover: rgba(34, 142, 195, 0.15);
+                                              55%) !important;
+  --table-add-button-border-color: #141F25 !important;
+  --table-border-color: #19272E !important;
+  --table-drag-handle-background-active: rgb(34, 142, 195) !important;
+  --table-drag-handle-color: #355464 !important;
+  --table-header-background: #0C1417 !important;
+  --table-header-background-hover: #121C21 !important;
+  --table-header-border-color: #19272E !important;
+  --table-header-color: #BDD1DB !important;
+  --table-row-background-hover: #0C1417 !important;
+  --table-row-even-background: #141F25 !important;
+  --table-row-odd-background: #0E161B !important;
+  --table-selection: rgba(34, 142, 195, 0.1) !important;
+  --table-selection-border-color: rgb(34, 142, 195) !important;
+  --tag-background: rgba(34, 142, 195, 0.1) !important;
+  --tag-background-hover: rgba(34, 142, 195, 0.2) !important;
+  --tag-border-color: rgba(34, 142, 195, 0.15) !important;
+  --tag-border-color-hover: rgba(34, 142, 195, 0.15) !important;
   --tag-color: hsl(
                                               200,
                                               70%,
-                                              55%);
+                                              55%) !important;
   --tag-color-hover: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --tag-padding-x: 0.5em;
-  --tag-padding-y: 0.15em;
-  --tag-radius: 0.5em;
-  --tag-size: 0.75em;
-  --tertiary: var(--text-accent-hover);
+                                              55%) !important;
+  --tag-padding-x: 0.5em !important;
+  --tag-padding-y: 0.15em !important;
+  --tag-radius: 0.5em !important;
+  --tag-size: 0.75em !important;
+  --tertiary: hsl(
+                                              200,
+                                              70%,
+                                              75%) !important;
   --text-accent: hsl(
                                               200,
                                               70%,
-                                              55%);
+                                              55%) !important;
   --text-accent-emphasis: hsl(
                                                 200,
                                                 70%,
-                                                65%);
+                                                65%) !important;
   --text-accent-hover: hsl(
                                               200,
                                               70%,
-                                              75%);
+                                              75%) !important;
   --text-accent-hover-embed: hsl(
                                                 200,
                                                 70%,
-                                                95%);
-  --text-completed-checkboxes: #3e657c;
-  --text-completed-checkboxes-embed: #3f6b88;
-  --text-error: #E6578A;
-  --text-faint: #355464;
-  --text-highlight-bg-editing: #56572A;
-  --text-highlight-bg-rendered: rgba(230, 232, 104, 0.85);
-  --text-highlight-editing: #F0EAAF;
-  --text-highlight-rendered: #252525;
-  --text-muted: #7AA3B8;
-  --text-normal: #BDD1DB;
-  --text-selection: rgba(34, 142, 195, 0.33);
-  --text-success: #39F098;
-  --text-warning: #F3C85B;
-  --textHighlight: var(--background-modifier-hover);
-  --titlebar-background: #070B0D;
-  --titlebar-background-focused: #070B0D;
-  --titlebar-border-color: #141F25;
-  --titlebar-text-color: #7AA3B8;
-  --titlebar-text-color-focused: #BDD1DB;
+                                                95%) !important;
+  --text-completed-checkboxes: #3e657c !important;
+  --text-completed-checkboxes-embed: #3f6b88 !important;
+  --text-error: #E6578A !important;
+  --text-faint: #355464 !important;
+  --text-highlight-bg-editing: #56572A !important;
+  --text-highlight-bg-rendered: rgba(230, 232, 104, 0.85) !important;
+  --text-highlight-editing: #F0EAAF !important;
+  --text-highlight-rendered: #252525 !important;
+  --text-muted: #7AA3B8 !important;
+  --text-normal: #BDD1DB !important;
+  --text-selection: rgba(34, 142, 195, 0.33) !important;
+  --text-success: #39F098 !important;
+  --text-warning: #F3C85B !important;
+  --textHighlight: rgba(34, 142, 195, 0.1) !important;
+  --titlebar-background: #070B0D !important;
+  --titlebar-background-focused: #070B0D !important;
+  --titlebar-border-color: #141F25 !important;
+  --titlebar-text-color: #7AA3B8 !important;
+  --titlebar-text-color-focused: #BDD1DB !important;
   --vault-name-color: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --vault-profile-color: #BDD1DB;
-  --vault-profile-color-hover: #BDD1DB;
-  --workspace-background-translucent: rgba(7, 11, 13, 0.95);
-  --quartz-icon-color: currentColor;
+                                              55%) !important;
+  --vault-profile-color: #BDD1DB !important;
+  --vault-profile-color-hover: #BDD1DB !important;
+  --workspace-background-translucent: rgba(7, 11, 13, 0.95) !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -1376,53 +1387,53 @@ body sup {
   },
   light: {
     base: `:root:root {
-  --accent-dark: 55%;
-  --accent-h: 200;
-  --accent-l: 45%;
-  --accent-s: 70%;
-  --background-modifier-active-hover: rgba(34, 142, 195, 0.1);
-  --background-modifier-border: #CFDAE2;
-  --background-modifier-border-focus: #98ACBA;
-  --background-modifier-border-hover: #52697A;
-  --background-modifier-error: #F51A68;
-  --background-modifier-error-hover: #F51A68;
-  --background-modifier-error-rgb: 245, 26, 104;
-  --background-modifier-form-field: #F6F9FB;
-  --background-modifier-form-field-hover: #F6F9FB;
-  --background-modifier-hover: rgba(34, 142, 195, 0.1);
-  --background-modifier-success: #34915e;
-  --background-modifier-success-rgb: 52, 145, 94;
-  --background-primary: #F6F9FB;
-  --background-primary-alt: #EFF3F6;
-  --background-secondary: #EFF3F6;
-  --bases-cards-background: #F6F9FB;
-  --bases-cards-cover-background: #EFF3F6;
-  --bases-cards-shadow: 0 0 0 1px #CFDAE2;
-  --bases-cards-shadow-hover: 0 0 0 1px #52697A;
-  --bases-embed-border-color: #CFDAE2;
-  --bases-group-heading-property-color: #141F25;
-  --bases-table-border-color: #CFDAE2;
-  --bases-table-cell-background-active: #F6F9FB;
-  --bases-table-cell-background-disabled: #EFF3F6;
-  --bases-table-cell-background-selected: rgba(34, 142, 195, 0.1);
-  --bases-table-cell-shadow-active: 0 0 0 2px #98ACBA;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(35, 154, 209);
-  --bases-table-group-background: #EFF3F6;
-  --bases-table-header-background: #F6F9FB;
-  --bases-table-header-background-hover: rgba(34, 142, 195, 0.1);
-  --bases-table-header-color: #141F25;
-  --bases-table-row-background-hover: #EFF3F6;
-  --bases-table-summary-background: #F6F9FB;
-  --bases-table-summary-background-hover: rgba(34, 142, 195, 0.1);
-  --block-margin: 2em 0;
-  --blockquote-background-color: #F6F9FB;
-  --blockquote-border-color: rgb(35, 154, 209);
-  --blockquote-color: #2E3D49;
-  --blockquote-style: italic;
-  --blur-background: color-mix(in srgb, #F6F9FB 65%, transparent) linear-gradient(#F6F9FB, color-mix(in srgb, #F6F9FB 65%, transparent));
+  --accent-dark: 55% !important;
+  --accent-h: 200 !important;
+  --accent-l: 45% !important;
+  --accent-s: 70% !important;
+  --background-modifier-active-hover: rgba(34, 142, 195, 0.1) !important;
+  --background-modifier-border: #CFDAE2 !important;
+  --background-modifier-border-focus: #98ACBA !important;
+  --background-modifier-border-hover: #52697A !important;
+  --background-modifier-error: #F51A68 !important;
+  --background-modifier-error-hover: #F51A68 !important;
+  --background-modifier-error-rgb: 245, 26, 104 !important;
+  --background-modifier-form-field: #F6F9FB !important;
+  --background-modifier-form-field-hover: #F6F9FB !important;
+  --background-modifier-hover: rgba(34, 142, 195, 0.1) !important;
+  --background-modifier-success: #34915e !important;
+  --background-modifier-success-rgb: 52, 145, 94 !important;
+  --background-primary: #F6F9FB !important;
+  --background-primary-alt: #EFF3F6 !important;
+  --background-secondary: #EFF3F6 !important;
+  --bases-cards-background: #F6F9FB !important;
+  --bases-cards-cover-background: #EFF3F6 !important;
+  --bases-cards-shadow: 0 0 0 1px #CFDAE2 !important;
+  --bases-cards-shadow-hover: 0 0 0 1px #52697A !important;
+  --bases-embed-border-color: #CFDAE2 !important;
+  --bases-group-heading-property-color: #141F25 !important;
+  --bases-table-border-color: #CFDAE2 !important;
+  --bases-table-cell-background-active: #F6F9FB !important;
+  --bases-table-cell-background-disabled: #EFF3F6 !important;
+  --bases-table-cell-background-selected: rgba(34, 142, 195, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px #98ACBA !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(35, 154, 209) !important;
+  --bases-table-group-background: #EFF3F6 !important;
+  --bases-table-header-background: #F6F9FB !important;
+  --bases-table-header-background-hover: rgba(34, 142, 195, 0.1) !important;
+  --bases-table-header-color: #141F25 !important;
+  --bases-table-row-background-hover: #EFF3F6 !important;
+  --bases-table-summary-background: #F6F9FB !important;
+  --bases-table-summary-background-hover: rgba(34, 142, 195, 0.1) !important;
+  --block-margin: 2em 0 !important;
+  --blockquote-background-color: #F6F9FB !important;
+  --blockquote-border-color: rgb(35, 154, 209) !important;
+  --blockquote-color: #2E3D49 !important;
+  --blockquote-style: italic !important;
+  --blur-background: color-mix(in srgb, #F6F9FB 65%, transparent) linear-gradient(#F6F9FB, color-mix(in srgb, #F6F9FB 65%, transparent)) !important;
   --box-shadow-layered: 0px 3px  10px  -100px rgba(26, 40, 51, 0.15),
     0px 11px 35px  -100px rgba(26, 40, 51, 0.25),
-    0px 52px 150px -100px rgba(26, 40, 51, 0.35);
+    0px 52px 150px -100px rgba(26, 40, 51, 0.35) !important;
   --callout-bug: 245, 26, 104;
   --callout-default: 4, 119, 255;
   --callout-error: 245, 26, 104;
@@ -1437,357 +1448,368 @@ body sup {
   --callout-tip: 0, 200, 200;
   --callout-todo: 4, 119, 255;
   --callout-warning: 253, 148, 52;
-  --canvas-background: #F6F9FB;
-  --canvas-card-label-color: #141F28;
-  --canvas-color: 152, 172, 186;
-  --canvas-color-1: 245, 26, 104;
-  --canvas-color-2: 253, 148, 52;
-  --canvas-color-3: 194, 186, 140;
-  --canvas-color-4: 52, 145, 94;
-  --canvas-color-5: 0, 200, 200;
-  --canvas-color-6: 156, 122, 211;
-  --canvas-dot-pattern: #98ACBA;
-  --caret-color: #141F25;
-  --checkbox-border-color: #1A2833;
-  --checkbox-border-color-hover: #141F25;
-  --checkbox-color: rgb(35, 154, 209);
+  --canvas-background: #F6F9FB !important;
+  --canvas-card-label-color: #141F28 !important;
+  --canvas-color: 152, 172, 186 !important;
+  --canvas-color-1: 245, 26, 104 !important;
+  --canvas-color-2: 253, 148, 52 !important;
+  --canvas-color-3: 194, 186, 140 !important;
+  --canvas-color-4: 52, 145, 94 !important;
+  --canvas-color-5: 0, 200, 200 !important;
+  --canvas-color-6: 156, 122, 211 !important;
+  --canvas-dot-pattern: #98ACBA !important;
+  --caret-color: #141F25 !important;
+  --checkbox-border-color: #1A2833 !important;
+  --checkbox-border-color-hover: #141F25 !important;
+  --checkbox-color: rgb(35, 154, 209) !important;
   --checkbox-color-hover: hsl(
                                             200, 
                                             70%, 
-                                            70%);
-  --checkbox-marker-color: #F6F9FB;
-  --checklist-done-color: #141F25;
-  --code-background: #E3EDF2;
-  --code-border-color: #CFDAE2;
-  --code-bracket-background: rgba(34, 142, 195, 0.1);
-  --code-comment: #82A2C8;
-  --code-function: #FF3E82;
-  --code-important: #FD6434;
-  --code-keyword: #4696F4;
-  --code-normal: #527EB2;
-  --code-operator: #202B8B;
-  --code-property: #00A4A4;
-  --code-punctuation: #527EB2;
-  --code-string: #71AB8F;
-  --code-tag: #E83A78;
-  --code-value: #4696F4;
-  --collapse-icon-color: #141F28;
+                                            70%) !important;
+  --checkbox-marker-color: #F6F9FB !important;
+  --checklist-done-color: #141F25 !important;
+  --code-background: #E3EDF2 !important;
+  --code-border-color: #CFDAE2 !important;
+  --code-bracket-background: rgba(34, 142, 195, 0.1) !important;
+  --code-comment: #82A2C8 !important;
+  --code-function: #FF3E82 !important;
+  --code-important: #FD6434 !important;
+  --code-keyword: #4696F4 !important;
+  --code-normal: #527EB2 !important;
+  --code-operator: #202B8B !important;
+  --code-property: #00A4A4 !important;
+  --code-punctuation: #527EB2 !important;
+  --code-string: #71AB8F !important;
+  --code-tag: #E83A78 !important;
+  --code-value: #4696F4 !important;
+  --collapse-icon-color: #141F28 !important;
   --collapse-icon-color-collapsed: hsl(
                                               200,
                                               70%,
-                                              45%);
-  --color-accent: rgb(34, 142, 195);
-  --color-accent-1: rgb(35, 154, 209);
-  --color-accent-2: rgb(46, 170, 220);
+                                              45%) !important;
+  --color-accent: rgb(34, 142, 195) !important;
+  --color-accent-1: rgb(35, 154, 209) !important;
+  --color-accent-2: rgb(46, 170, 220) !important;
   --color-accent-alt: hsl(
                                             200, 
                                             70%, 
-                                            70%);
-  --color-accent-hsl: 200, 70%, 45%;
-  --color-base-00: #F6F9FB;
-  --color-base-10: #EFF3F6;
-  --color-base-100: #070B0D;
-  --color-base-20: #E3EDF2;
-  --color-base-25: #CFDAE2;
-  --color-base-30: #98ACBA;
-  --color-base-35: #52697A;
-  --color-base-40: #2E3D49;
-  --color-base-50: #1A2833;
-  --color-base-60: #141F28;
-  --color-base-70: #141F25;
-  --color-blue: #0477FF;
-  --color-blue-rgb: 4, 119, 255;
-  --color-cyan: #00C8C8;
-  --color-cyan-rgb: 0, 200, 200;
+                                            70%) !important;
+  --color-accent-hsl: 200, 70%, 45% !important;
+  --color-base-00: #F6F9FB !important;
+  --color-base-10: #EFF3F6 !important;
+  --color-base-100: #070B0D !important;
+  --color-base-20: #E3EDF2 !important;
+  --color-base-25: #CFDAE2 !important;
+  --color-base-30: #98ACBA !important;
+  --color-base-35: #52697A !important;
+  --color-base-40: #2E3D49 !important;
+  --color-base-50: #1A2833 !important;
+  --color-base-60: #141F28 !important;
+  --color-base-70: #141F25 !important;
+  --color-blue: #0477FF !important;
+  --color-blue-rgb: 4, 119, 255 !important;
+  --color-cyan: #00C8C8 !important;
+  --color-cyan-rgb: 0, 200, 200 !important;
   --color-emphasis: hsl(
                                                 200,
                                                 70%,
-                                                47%);
-  --color-green: #34915e;
-  --color-green-rgb: 52, 145, 94;
-  --color-orange: #FD9434;
-  --color-orange-rgb: 253, 148, 52;
-  --color-pink: #E135E4;
-  --color-pink-rgb: 225, 53, 228;
-  --color-purple: #9C7AD3;
-  --color-purple-rgb: 156, 122, 211;
-  --color-red: #F51A68;
-  --color-red-rgb: 245, 26, 104;
-  --color-yellow: #C2BA8C;
-  --color-yellow-rgb: 194, 186, 140;
-  --dark: var(--text-normal);
-  --darkgray: var(--text-normal);
-  --divider-color: #CFDAE2;
-  --divider-color-hover: rgb(35, 154, 209);
-  --dropdown-background: #F6F9FB;
-  --dropdown-background-hover: #EFF3F6;
-  --embed-background-color: #EFF3F6;
-  --embed-block-shadow-hover: 0 0 0 1px #CFDAE2, inset 0 0 0 1px #CFDAE2;
-  --embed-border-start: 2px solid rgb(35, 154, 209);
-  --file-header-background: #F6F9FB;
-  --file-header-background-focused: #F6F9FB;
-  --flair-background: #F6F9FB;
-  --flair-color: #141F25;
-  --footnote-divider-color: #CFDAE2;
-  --footnote-id-color: #141F25;
-  --footnote-id-color-no-occurrences: #141F28;
-  --footnote-input-background-active: rgba(34, 142, 195, 0.1);
-  --graph-line: #98ACBA;
+                                                47%) !important;
+  --color-green: #34915e !important;
+  --color-green-rgb: 52, 145, 94 !important;
+  --color-orange: #FD9434 !important;
+  --color-orange-rgb: 253, 148, 52 !important;
+  --color-pink: #E135E4 !important;
+  --color-pink-rgb: 225, 53, 228 !important;
+  --color-purple: #9C7AD3 !important;
+  --color-purple-rgb: 156, 122, 211 !important;
+  --color-red: #F51A68 !important;
+  --color-red-rgb: 245, 26, 104 !important;
+  --color-yellow: #C2BA8C !important;
+  --color-yellow-rgb: 194, 186, 140 !important;
+  --dark: #141F25 !important;
+  --darkgray: #141F25 !important;
+  --divider-color: #CFDAE2 !important;
+  --divider-color-hover: rgb(35, 154, 209) !important;
+  --dropdown-background: #F6F9FB !important;
+  --dropdown-background-hover: #EFF3F6 !important;
+  --embed-background-color: #EFF3F6 !important;
+  --embed-block-shadow-hover: 0 0 0 1px #CFDAE2, inset 0 0 0 1px #CFDAE2 !important;
+  --embed-border-start: 2px solid rgb(35, 154, 209) !important;
+  --file-header-background: #F6F9FB !important;
+  --file-header-background-focused: #F6F9FB !important;
+  --flair-background: #F6F9FB !important;
+  --flair-color: #141F25 !important;
+  --footnote-divider-color: #CFDAE2 !important;
+  --footnote-id-color: #141F25 !important;
+  --footnote-id-color-no-occurrences: #141F28 !important;
+  --footnote-input-background-active: rgba(34, 142, 195, 0.1) !important;
+  --graph-line: #98ACBA !important;
   --graph-node: hsl(
                                             200, 
                                             70%, 
-                                            70%);
-  --graph-node-attachment: #C2BA8C;
+                                            70%) !important;
+  --graph-node-attachment: #C2BA8C !important;
   --graph-node-focused: hsl(
                                               200,
                                               70%,
-                                              45%);
-  --graph-node-tag: #34915e;
-  --graph-node-unresolved: #98ACBA;
-  --graph-text: #141F25;
-  --gray: var(--text-muted);
-  --h1-color: #2E3D49;
-  --h1-line-height: 1.111;
-  --h1-size: 2.25em;
-  --h2-color: #2E3D49;
-  --h2-line-height: 1.143;
-  --h2-size: 1.75em;
-  --h3-color: #2E3D49;
-  --h3-line-height: 1.167;
-  --h3-size: 1.5em;
-  --h4-color: #2E3D49;
-  --h4-line-height: 1.2;
-  --h4-size: 1.25em;
-  --h5-color: #2E3D49;
-  --h5-line-height: 1.25;
-  --h5-size: 1em;
-  --h6-color: #2E3D49;
-  --h6-line-height: 1.333;
-  --h6-size: 0.75em;
-  --heading-color: #2E3D49;
-  --heading-formatting: #141F28;
-  --highlight: var(--background-modifier-hover);
-  --hr-color: #CFDAE2;
-  --hr-thickness: 1px;
-  --icon-color: #141F25;
+                                              45%) !important;
+  --graph-node-tag: #34915e !important;
+  --graph-node-unresolved: #98ACBA !important;
+  --graph-text: #141F25 !important;
+  --gray: #141F25 !important;
+  --h1-color: #2E3D49 !important;
+  --h1-line-height: 1.111 !important;
+  --h1-size: 2.25em !important;
+  --h2-color: #2E3D49 !important;
+  --h2-line-height: 1.143 !important;
+  --h2-size: 1.75em !important;
+  --h3-color: #2E3D49 !important;
+  --h3-line-height: 1.167 !important;
+  --h3-size: 1.5em !important;
+  --h4-color: #2E3D49 !important;
+  --h4-line-height: 1.2 !important;
+  --h4-size: 1.25em !important;
+  --h5-color: #2E3D49 !important;
+  --h5-line-height: 1.25 !important;
+  --h5-size: 1em !important;
+  --h6-color: #2E3D49 !important;
+  --h6-line-height: 1.333 !important;
+  --h6-size: 0.75em !important;
+  --heading-color: #2E3D49 !important;
+  --heading-formatting: #141F28 !important;
+  --highlight: rgba(34, 142, 195, 0.1) !important;
+  --hr-color: #CFDAE2 !important;
+  --hr-thickness: 1px !important;
+  --icon-color: #141F25 !important;
   --icon-color-active: hsl(
                                               200,
                                               70%,
-                                              45%);
-  --icon-color-focused: #141F25;
-  --icon-color-hover: #141F25;
-  --indentation-guide-color: rgba(34, 142, 195, 0.15);
-  --indentation-guide-color-active: rgba(34, 142, 195, 0.15);
-  --inline-title-border: #CFDAE2;
-  --inline-title-color: #7c93a4;
-  --inline-title-line-height: 1.111;
-  --inline-title-size: 1em;
-  --inline-title-weight: bold;
-  --input-date-separator: #141F28;
-  --input-placeholder-color: #141F28;
-  --interactive-accent: rgb(35, 154, 209);
-  --interactive-accent-hover: rgb(46, 170, 220);
-  --interactive-accent-hsl: 200, 70%, 45%;
-  --interactive-hover: #EFF3F6;
-  --interactive-normal: #F6F9FB;
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --line-height-roomy: 1.75;
+                                              45%) !important;
+  --icon-color-focused: #141F25 !important;
+  --icon-color-hover: #141F25 !important;
+  --indentation-guide-color: rgba(34, 142, 195, 0.15) !important;
+  --indentation-guide-color-active: rgba(34, 142, 195, 0.15) !important;
+  --inline-title-border: #CFDAE2 !important;
+  --inline-title-color: #7c93a4 !important;
+  --inline-title-line-height: 1.111 !important;
+  --inline-title-size: 1em !important;
+  --inline-title-weight: bold !important;
+  --input-date-separator: #141F28 !important;
+  --input-placeholder-color: #141F28 !important;
+  --interactive-accent: rgb(35, 154, 209) !important;
+  --interactive-accent-hover: rgb(46, 170, 220) !important;
+  --interactive-accent-hsl: 200, 70%, 45% !important;
+  --interactive-hover: #EFF3F6 !important;
+  --interactive-normal: #F6F9FB !important;
+  --light: #F6F9FB !important;
+  --lightgray: #EFF3F6 !important;
+  --line-height-roomy: 1.75 !important;
   --link-color: hsl(
                                               200,
                                               70%,
-                                              45%);
+                                              45%) !important;
   --link-color-hover: hsl(
                                               200,
                                               70%,
-                                              55%);
+                                              55%) !important;
   --link-color-hover-embed: hsl(
                                                 200,
                                                 70%,
-                                                50%);
+                                                50%) !important;
   --link-external-color: hsl(
                                               200,
                                               70%,
-                                              45%);
+                                              45%) !important;
   --link-external-color-hover: hsl(
                                               200,
                                               70%,
-                                              55%);
-  --link-unresolved-color: #52697A;
-  --link-unresolved-decoration-color: #52697A;
+                                              55%) !important;
+  --link-unresolved-color: #52697A !important;
+  --link-unresolved-decoration-color: #52697A !important;
   --list-marker-color: hsl(
                                               200,
                                               70%,
-                                              45%);
-  --list-marker-color-collapsed: #141F25;
-  --list-marker-color-hover: #141F25;
-  --list-spacing: 0.5em;
-  --menu-background: #EFF3F6;
-  --menu-border-color: #52697A;
-  --metadata-border-color: #CFDAE2;
-  --metadata-divider-color: #CFDAE2;
-  --metadata-input-background-active: rgba(34, 142, 195, 0.1);
-  --metadata-input-text-color: #141F25;
-  --metadata-label-background-active: rgba(34, 142, 195, 0.1);
-  --metadata-label-text-color: #141F25;
-  --metadata-label-text-color-hover: #141F25;
-  --metadata-property-background-active: rgba(34, 142, 195, 0.1);
-  --metadata-property-box-shadow-focus: 0 0 0 2px #98ACBA;
-  --metadata-property-box-shadow-hover: 0 0 0 1px #52697A;
-  --modal-background: #F6F9FB;
-  --modal-border-color: #CFDAE2;
-  --nav-collapse-icon-color: #141F28;
-  --nav-collapse-icon-color-collapsed: #141F28;
-  --nav-heading-color: #141F25;
-  --nav-heading-color-collapsed: #141F28;
-  --nav-heading-color-collapsed-hover: #141F25;
-  --nav-heading-color-hover: #141F25;
-  --nav-indentation-guide-color: rgba(34, 142, 195, 0.15);
-  --nav-item-background-active: rgba(34, 142, 195, 0.1);
-  --nav-item-background-hover: rgba(34, 142, 195, 0.1);
-  --nav-item-background-selected: rgba(34, 142, 195, 0.15);
-  --nav-item-color: #141F25;
-  --nav-item-color-active: #141F25;
+                                              45%) !important;
+  --list-marker-color-collapsed: #141F25 !important;
+  --list-marker-color-hover: #141F25 !important;
+  --list-spacing: 0.5em !important;
+  --menu-background: #EFF3F6 !important;
+  --menu-border-color: #52697A !important;
+  --metadata-border-color: #CFDAE2 !important;
+  --metadata-divider-color: #CFDAE2 !important;
+  --metadata-input-background-active: rgba(34, 142, 195, 0.1) !important;
+  --metadata-input-text-color: #141F25 !important;
+  --metadata-label-background-active: rgba(34, 142, 195, 0.1) !important;
+  --metadata-label-text-color: #141F25 !important;
+  --metadata-label-text-color-hover: #141F25 !important;
+  --metadata-property-background-active: rgba(34, 142, 195, 0.1) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px #98ACBA !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #52697A !important;
+  --modal-background: #F6F9FB !important;
+  --modal-border-color: #CFDAE2 !important;
+  --nav-collapse-icon-color: #141F28 !important;
+  --nav-collapse-icon-color-collapsed: #141F28 !important;
+  --nav-heading-color: #141F25 !important;
+  --nav-heading-color-collapsed: #141F28 !important;
+  --nav-heading-color-collapsed-hover: #141F25 !important;
+  --nav-heading-color-hover: #141F25 !important;
+  --nav-indentation-guide-color: rgba(34, 142, 195, 0.15) !important;
+  --nav-item-background-active: rgba(34, 142, 195, 0.1) !important;
+  --nav-item-background-hover: rgba(34, 142, 195, 0.1) !important;
+  --nav-item-background-selected: rgba(34, 142, 195, 0.15) !important;
+  --nav-item-color: #141F25 !important;
+  --nav-item-color-active: #141F25 !important;
   --nav-item-color-highlighted: hsl(
                                               200,
                                               70%,
-                                              45%);
-  --nav-item-color-hover: #141F25;
-  --nav-item-color-selected: #141F25;
-  --nav-tag-color: #141F28;
-  --nav-tag-color-active: #141F25;
-  --nav-tag-color-hover: #141F25;
-  --pdf-background: #F6F9FB;
-  --pdf-page-background: #F6F9FB;
-  --pdf-sidebar-background: #F6F9FB;
-  --pill-border-color: #CFDAE2;
-  --pill-border-color-hover: #52697A;
-  --pill-color: #141F25;
-  --pill-color-hover: #141F25;
-  --pill-color-remove: #141F28;
+                                              45%) !important;
+  --nav-item-color-hover: #141F25 !important;
+  --nav-item-color-selected: #141F25 !important;
+  --nav-tag-color: #141F28 !important;
+  --nav-tag-color-active: #141F25 !important;
+  --nav-tag-color-hover: #141F25 !important;
+  --pdf-background: #F6F9FB !important;
+  --pdf-page-background: #F6F9FB !important;
+  --pdf-sidebar-background: #F6F9FB !important;
+  --pill-border-color: #CFDAE2 !important;
+  --pill-border-color-hover: #52697A !important;
+  --pill-color: #141F25 !important;
+  --pill-color-hover: #141F25 !important;
+  --pill-color-remove: #141F28 !important;
   --pill-color-remove-hover: hsl(
                                               200,
                                               70%,
-                                              45%);
-  --prompt-background: #F6F9FB;
-  --prompt-border-color: #2E3D49;
-  --raised-background: color-mix(in srgb, #F6F9FB 65%, transparent) linear-gradient(#F6F9FB, color-mix(in srgb, #F6F9FB 65%, transparent));
-  --rendered-code-bg: #E3EDF2;
-  --rendered-code-text: #F51A68;
-  --ribbon-background: #EFF3F6;
-  --ribbon-background-collapsed: #F6F9FB;
-  --search-clear-button-color: #141F25;
-  --search-icon-color: #141F25;
-  --search-result-background: #F6F9FB;
-  --secondary: var(--text-accent);
-  --setting-group-heading-color: #141F25;
-  --setting-items-background: #EFF3F6;
-  --setting-items-border-color: #CFDAE2;
-  --slider-thumb-border-color: #52697A;
-  --slider-track-background: #CFDAE2;
-  --status-bar-background: #EFF3F6;
-  --status-bar-border-color: #CFDAE2;
-  --status-bar-text-color: #141F25;
-  --suggestion-background: #F6F9FB;
-  --sync-avatar-color-1: #F51A68;
-  --sync-avatar-color-2: #FD9434;
-  --sync-avatar-color-3: #C2BA8C;
-  --sync-avatar-color-4: #34915e;
-  --sync-avatar-color-5: #00C8C8;
-  --sync-avatar-color-6: #0477FF;
-  --sync-avatar-color-7: #9C7AD3;
-  --sync-avatar-color-8: #E135E4;
-  --tab-background-active: #F6F9FB;
-  --tab-container-background: #EFF3F6;
-  --tab-container-background-new: #F6F9FB;
-  --tab-curve: 12px;
-  --tab-divider-color: #CFDAE2;
-  --tab-outline-color: #CFDAE2;
-  --tab-radius: 9px;
-  --tab-switcher-background: #EFF3F6;
-  --tab-switcher-menubar-background: linear-gradient(to top, #EFF3F6, transparent);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(34, 142, 195);
-  --tab-text-color: #52697A;
-  --tab-text-color-active: #1A2833;
-  --tab-text-color-focused: #141F28;
-  --tab-text-color-focused-active: #141F25;
-  --tab-text-color-focused-active-current: #070B0D;
+                                              45%) !important;
+  --prompt-background: #F6F9FB !important;
+  --prompt-border-color: #2E3D49 !important;
+  --raised-background: color-mix(in srgb, #F6F9FB 65%, transparent) linear-gradient(#F6F9FB, color-mix(in srgb, #F6F9FB 65%, transparent)) !important;
+  --rendered-code-bg: #E3EDF2 !important;
+  --rendered-code-text: #F51A68 !important;
+  --ribbon-background: #EFF3F6 !important;
+  --ribbon-background-collapsed: #F6F9FB !important;
+  --search-clear-button-color: #141F25 !important;
+  --search-icon-color: #141F25 !important;
+  --search-result-background: #F6F9FB !important;
+  --secondary: hsl(
+                                              200,
+                                              70%,
+                                              45%) !important;
+  --setting-group-heading-color: #141F25 !important;
+  --setting-items-background: #EFF3F6 !important;
+  --setting-items-border-color: #CFDAE2 !important;
+  --slider-thumb-border-color: #52697A !important;
+  --slider-track-background: #CFDAE2 !important;
+  --status-bar-background: #EFF3F6 !important;
+  --status-bar-border-color: #CFDAE2 !important;
+  --status-bar-text-color: #141F25 !important;
+  --suggestion-background: #F6F9FB !important;
+  --sync-avatar-color-1: #F51A68 !important;
+  --sync-avatar-color-2: #FD9434 !important;
+  --sync-avatar-color-3: #C2BA8C !important;
+  --sync-avatar-color-4: #34915e !important;
+  --sync-avatar-color-5: #00C8C8 !important;
+  --sync-avatar-color-6: #0477FF !important;
+  --sync-avatar-color-7: #9C7AD3 !important;
+  --sync-avatar-color-8: #E135E4 !important;
+  --tab-background-active: #F6F9FB !important;
+  --tab-container-background: #EFF3F6 !important;
+  --tab-container-background-new: #F6F9FB !important;
+  --tab-curve: 12px !important;
+  --tab-divider-color: #CFDAE2 !important;
+  --tab-outline-color: #CFDAE2 !important;
+  --tab-radius: 9px !important;
+  --tab-switcher-background: #EFF3F6 !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #EFF3F6, transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(34, 142, 195) !important;
+  --tab-text-color: #52697A !important;
+  --tab-text-color-active: #1A2833 !important;
+  --tab-text-color-focused: #141F28 !important;
+  --tab-text-color-focused-active: #141F25 !important;
+  --tab-text-color-focused-active-current: #070B0D !important;
   --tab-text-color-focused-highlighted: hsl(
                                               200,
                                               70%,
-                                              45%);
-  --table-add-button-border-color: #CFDAE2;
-  --table-border-color: #CFDAE2;
-  --table-drag-handle-background-active: rgb(35, 154, 209);
-  --table-drag-handle-color: #141F28;
-  --table-header-background: #EFF3F6;
-  --table-header-background-hover: #EFF3F6;
-  --table-header-border-color: #CFDAE2;
-  --table-header-color: #141F25;
-  --table-row-background-hover: #EFF3F6;
-  --table-row-even-background: #F6F9FB;
-  --table-row-odd-background: #E3EDF2;
-  --table-selection: rgba(34, 142, 195, 0.1);
-  --table-selection-border-color: rgb(35, 154, 209);
-  --tag-background: rgba(34, 142, 195, 0.1);
-  --tag-background-hover: rgba(34, 142, 195, 0.2);
-  --tag-border-color: rgba(34, 142, 195, 0.15);
-  --tag-border-color-hover: rgba(34, 142, 195, 0.15);
+                                              45%) !important;
+  --table-add-button-border-color: #CFDAE2 !important;
+  --table-border-color: #CFDAE2 !important;
+  --table-drag-handle-background-active: rgb(35, 154, 209) !important;
+  --table-drag-handle-color: #141F28 !important;
+  --table-header-background: #EFF3F6 !important;
+  --table-header-background-hover: #EFF3F6 !important;
+  --table-header-border-color: #CFDAE2 !important;
+  --table-header-color: #141F25 !important;
+  --table-row-background-hover: #EFF3F6 !important;
+  --table-row-even-background: #F6F9FB !important;
+  --table-row-odd-background: #E3EDF2 !important;
+  --table-selection: rgba(34, 142, 195, 0.1) !important;
+  --table-selection-border-color: rgb(35, 154, 209) !important;
+  --tag-background: rgba(34, 142, 195, 0.1) !important;
+  --tag-background-hover: rgba(34, 142, 195, 0.2) !important;
+  --tag-border-color: rgba(34, 142, 195, 0.15) !important;
+  --tag-border-color-hover: rgba(34, 142, 195, 0.15) !important;
   --tag-color: hsl(
                                               200,
                                               70%,
-                                              45%);
+                                              45%) !important;
   --tag-color-hover: hsl(
                                               200,
                                               70%,
-                                              45%);
-  --tag-padding-x: 0.5em;
-  --tag-padding-y: 0.15em;
-  --tag-radius: 0.5em;
-  --tag-size: 0.75em;
-  --tertiary: var(--text-accent-hover);
+                                              45%) !important;
+  --tag-padding-x: 0.5em !important;
+  --tag-padding-y: 0.15em !important;
+  --tag-radius: 0.5em !important;
+  --tag-size: 0.75em !important;
+  --tertiary: hsl(
+                                              200,
+                                              70%,
+                                              55%) !important;
   --text-accent: hsl(
                                               200,
                                               70%,
-                                              45%);
+                                              45%) !important;
   --text-accent-emphasis: hsl(
                                                 200,
                                                 70%,
-                                                47%);
+                                                47%) !important;
   --text-accent-hover: hsl(
                                               200,
                                               70%,
-                                              55%);
+                                              55%) !important;
   --text-accent-hover-embed: hsl(
                                                 200,
                                                 70%,
-                                                50%);
-  --text-completed-checkboxes: #3e657c;
-  --text-completed-checkboxes-embed: #3f6b88;
-  --text-error: #F51A68;
-  --text-faint: #141F28;
-  --text-highlight-bg-editing: rgba(230, 232, 104, 0.85);
-  --text-highlight-editing: #000;
-  --text-highlight-rendered: #252525;
-  --text-muted: #141F25;
-  --text-normal: #141F25;
-  --text-selection: rgba(34, 142, 195, 0.2);
-  --text-success: #34915e;
-  --text-warning: #FD9434;
-  --textHighlight: var(--background-modifier-hover);
-  --titlebar-background: #EFF3F6;
-  --titlebar-background-focused: #F6F9FB;
-  --titlebar-border-color: #CFDAE2;
-  --titlebar-text-color: #141F25;
-  --titlebar-text-color-focused: #141F25;
+                                                50%) !important;
+  --text-completed-checkboxes: #3e657c !important;
+  --text-completed-checkboxes-embed: #3f6b88 !important;
+  --text-error: #F51A68 !important;
+  --text-faint: #141F28 !important;
+  --text-highlight-bg-editing: rgba(230, 232, 104, 0.85) !important;
+  --text-highlight-editing: #000 !important;
+  --text-highlight-rendered: #252525 !important;
+  --text-muted: #141F25 !important;
+  --text-normal: #141F25 !important;
+  --text-selection: rgba(34, 142, 195, 0.2) !important;
+  --text-success: #34915e !important;
+  --text-warning: #FD9434 !important;
+  --textHighlight: rgba(34, 142, 195, 0.1) !important;
+  --titlebar-background: #EFF3F6 !important;
+  --titlebar-background-focused: #F6F9FB !important;
+  --titlebar-border-color: #CFDAE2 !important;
+  --titlebar-text-color: #141F25 !important;
+  --titlebar-text-color-focused: #141F25 !important;
   --vault-name-color: hsl(
                                               200,
                                               70%,
-                                              45%);
-  --vault-profile-color: #141F25;
-  --vault-profile-color-hover: #141F25;
-  --workspace-background-translucent: rgba(227, 236, 242, 0.6);
-  --quartz-icon-color: currentColor;
+                                              45%) !important;
+  --vault-profile-color: #141F25 !important;
+  --vault-profile-color-hover: #141F25 !important;
+  --workspace-background-translucent: rgba(227, 236, 242, 0.6) !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {

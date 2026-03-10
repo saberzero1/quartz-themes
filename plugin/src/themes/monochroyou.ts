@@ -9,95 +9,100 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-modifier-border: transparent;
-  --background-primary: rgb(16, 14, 21);
-  --background-secondary: rgb(27, 21, 40);
-  --bases-cards-background: rgb(16, 14, 21);
-  --bases-cards-shadow: 0 0 0 1px transparent;
-  --bases-embed-border-color: transparent;
-  --bases-embed-border-radius: 100px;
-  --bases-table-border-color: transparent;
-  --bases-table-cell-background-active: rgb(16, 14, 21);
-  --bases-table-container-border-radius: 100px;
-  --bases-table-header-background: rgb(16, 14, 21);
-  --bases-table-summary-background: rgb(16, 14, 21);
-  --button-radius: 100px;
+  --background-modifier-border: transparent !important;
+  --background-primary: rgb(16, 14, 21) !important;
+  --background-secondary: rgb(27, 21, 40) !important;
+  --bases-cards-background: rgb(16, 14, 21) !important;
+  --bases-cards-shadow: 0 0 0 1px transparent !important;
+  --bases-embed-border-color: transparent !important;
+  --bases-embed-border-radius: 100px !important;
+  --bases-table-border-color: transparent !important;
+  --bases-table-cell-background-active: rgb(16, 14, 21) !important;
+  --bases-table-container-border-radius: 100px !important;
+  --bases-table-header-background: rgb(16, 14, 21) !important;
+  --bases-table-summary-background: rgb(16, 14, 21) !important;
+  --button-radius: 100px !important;
   --callout-radius: 100px;
-  --canvas-background: rgb(16, 14, 21);
-  --canvas-controls-radius: 100px;
-  --checkbox-marker-color: rgb(16, 14, 21);
-  --checkbox-radius: 100px;
-  --clickable-icon-radius: 100px;
-  --code-background: rgb(15, 0, 51);
-  --code-border-color: transparent;
-  --code-normal: rgb(184, 153, 255);
-  --code-radius: 100px;
-  --colorBackgroundPrimary: rgb(16, 14, 21);
-  --colorBackgroundSecondary: rgb(27, 21, 40);
-  --colorOnPrimary: rgb(27, 21, 40);
-  --colorPrimary: rgb(184, 153, 255);
-  --colorPrimaryContainer: rgb(15, 0, 51);
-  --colorPrimaryContainerVariant: rgb(31, 0, 102);
-  --colorPrimaryContainerVariantHover: rgb(15, 0, 51);
-  --divider-color: transparent;
-  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent;
-  --file-header-background: rgb(16, 14, 21);
-  --file-header-background-focused: rgb(16, 14, 21);
-  --footnote-divider-color: transparent;
-  --footnote-radius: 100px;
-  --highlight: var(--text-highlight-bg);
-  --hr-color: transparent;
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --link-external-color: rgb(184, 153, 255);
-  --link-external-color-hover: rgb(184, 153, 255);
-  --menu-background: rgb(27, 21, 40);
-  --metadata-border-color: transparent;
-  --metadata-divider-color: transparent;
-  --modal-background: rgb(16, 14, 21);
-  --nav-item-background-active: rgb(31, 0, 102);
-  --nav-item-background-hover: rgb(15, 0, 51);
-  --nav-item-color: white;
-  --nav-item-radius: 100px;
-  --nav-tag-radius: 100px;
-  --pdf-background: rgb(16, 14, 21);
-  --pdf-page-background: rgb(16, 14, 21);
-  --pdf-shadow: 0 0 0 1px transparent;
-  --pdf-sidebar-background: rgb(16, 14, 21);
-  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
-  --pill-border-color: transparent;
-  --prompt-background: rgb(16, 14, 21);
-  --radius-s: 100px;
-  --ribbon-background: rgb(27, 21, 40);
-  --ribbon-background-collapsed: rgb(16, 14, 21);
-  --search-result-background: rgb(16, 14, 21);
-  --setting-items-border-color: transparent;
-  --slider-track-background: transparent;
-  --status-bar-background: rgb(27, 21, 40);
-  --status-bar-border-color: transparent;
-  --suggestion-background: rgb(16, 14, 21);
-  --tab-background-active: rgb(31, 0, 102);
-  --tab-container-background: rgb(27, 21, 40);
-  --tab-outline-color: transparent;
-  --tab-radius: 100px;
-  --tab-switcher-background: rgb(27, 21, 40);
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(27, 21, 40), transparent);
-  --table-add-button-border-color: transparent;
-  --table-border-color: transparent;
-  --table-drag-handle-color-active: rgb(27, 21, 40);
-  --table-header-border-color: transparent;
-  --tag-background: rgb(31, 0, 102);
-  --tag-background-hover: rgb(31, 0, 102);
-  --tag-color: rgb(184, 153, 255);
-  --text-highlight-bg: rgb(31, 0, 102);
-  --text-on-accent: rgb(27, 21, 40);
-  --text-on-accent-inverted: rgb(27, 21, 40);
-  --textHighlight: var(--text-highlight-bg);
-  --titlebar-background: rgb(27, 21, 40);
-  --titlebar-background-focused: rgb(27, 21, 40);
-  --titlebar-border-color: transparent;
-  --toggle-thumb-color: rgb(27, 21, 40);
-  --quartz-icon-color: currentColor;
+  --canvas-background: rgb(16, 14, 21) !important;
+  --canvas-controls-radius: 100px !important;
+  --checkbox-marker-color: rgb(16, 14, 21) !important;
+  --checkbox-radius: 100px !important;
+  --clickable-icon-radius: 100px !important;
+  --code-background: rgb(15, 0, 51) !important;
+  --code-border-color: transparent !important;
+  --code-normal: rgb(184, 153, 255) !important;
+  --code-radius: 100px !important;
+  --colorBackgroundPrimary: rgb(16, 14, 21) !important;
+  --colorBackgroundSecondary: rgb(27, 21, 40) !important;
+  --colorOnPrimary: rgb(27, 21, 40) !important;
+  --colorPrimary: rgb(184, 153, 255) !important;
+  --colorPrimaryContainer: rgb(15, 0, 51) !important;
+  --colorPrimaryContainerVariant: rgb(31, 0, 102) !important;
+  --colorPrimaryContainerVariantHover: rgb(15, 0, 51) !important;
+  --divider-color: transparent !important;
+  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
+  --file-header-background: rgb(16, 14, 21) !important;
+  --file-header-background-focused: rgb(16, 14, 21) !important;
+  --footnote-divider-color: transparent !important;
+  --footnote-radius: 100px !important;
+  --highlight: rgb(31, 0, 102) !important;
+  --hr-color: transparent !important;
+  --light: rgb(16, 14, 21) !important;
+  --lightgray: rgb(27, 21, 40) !important;
+  --link-external-color: rgb(184, 153, 255) !important;
+  --link-external-color-hover: rgb(184, 153, 255) !important;
+  --menu-background: rgb(27, 21, 40) !important;
+  --metadata-border-color: transparent !important;
+  --metadata-divider-color: transparent !important;
+  --modal-background: rgb(16, 14, 21) !important;
+  --nav-item-background-active: rgb(31, 0, 102) !important;
+  --nav-item-background-hover: rgb(15, 0, 51) !important;
+  --nav-item-color: white !important;
+  --nav-item-radius: 100px !important;
+  --nav-tag-radius: 100px !important;
+  --pdf-background: rgb(16, 14, 21) !important;
+  --pdf-page-background: rgb(16, 14, 21) !important;
+  --pdf-shadow: 0 0 0 1px transparent !important;
+  --pdf-sidebar-background: rgb(16, 14, 21) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent !important;
+  --pill-border-color: transparent !important;
+  --prompt-background: rgb(16, 14, 21) !important;
+  --radius-s: 100px !important;
+  --ribbon-background: rgb(27, 21, 40) !important;
+  --ribbon-background-collapsed: rgb(16, 14, 21) !important;
+  --search-result-background: rgb(16, 14, 21) !important;
+  --setting-items-border-color: transparent !important;
+  --slider-track-background: transparent !important;
+  --status-bar-background: rgb(27, 21, 40) !important;
+  --status-bar-border-color: transparent !important;
+  --suggestion-background: rgb(16, 14, 21) !important;
+  --tab-background-active: rgb(31, 0, 102) !important;
+  --tab-container-background: rgb(27, 21, 40) !important;
+  --tab-outline-color: transparent !important;
+  --tab-radius: 100px !important;
+  --tab-switcher-background: rgb(27, 21, 40) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(27, 21, 40), transparent) !important;
+  --table-add-button-border-color: transparent !important;
+  --table-border-color: transparent !important;
+  --table-drag-handle-color-active: rgb(27, 21, 40) !important;
+  --table-header-border-color: transparent !important;
+  --tag-background: rgb(31, 0, 102) !important;
+  --tag-background-hover: rgb(31, 0, 102) !important;
+  --tag-color: rgb(184, 153, 255) !important;
+  --text-highlight-bg: rgb(31, 0, 102) !important;
+  --text-on-accent: rgb(27, 21, 40) !important;
+  --text-on-accent-inverted: rgb(27, 21, 40) !important;
+  --textHighlight: rgb(31, 0, 102) !important;
+  --titlebar-background: rgb(27, 21, 40) !important;
+  --titlebar-background-focused: rgb(27, 21, 40) !important;
+  --titlebar-border-color: transparent !important;
+  --toggle-thumb-color: rgb(27, 21, 40) !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="dark"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -482,157 +487,167 @@ body kbd {
   },
   light: {
     base: `:root:root {
-  --background-modifier-border: transparent;
-  --background-primary: rgb(244, 240, 255);
+  --background-modifier-border: transparent !important;
+  --background-primary: rgb(244, 240, 255) !important;
   --background-secondary: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	);
-  --bases-cards-background: rgb(244, 240, 255);
-  --bases-cards-shadow: 0 0 0 1px transparent;
-  --bases-embed-border-color: transparent;
-  --bases-embed-border-radius: 100px;
-  --bases-table-border-color: transparent;
-  --bases-table-cell-background-active: rgb(244, 240, 255);
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(47, 0, 158);
-  --bases-table-container-border-radius: 100px;
-  --bases-table-header-background: rgb(244, 240, 255);
-  --bases-table-summary-background: rgb(244, 240, 255);
-  --blockquote-border-color: rgb(47, 0, 158);
-  --blur-background: color-mix(in srgb, rgb(244, 240, 255) 65%, transparent) linear-gradient(rgb(244, 240, 255), color-mix(in srgb, rgb(244, 240, 255) 65%, transparent));
-  --button-radius: 100px;
+	) !important;
+  --bases-cards-background: rgb(244, 240, 255) !important;
+  --bases-cards-shadow: 0 0 0 1px transparent !important;
+  --bases-embed-border-color: transparent !important;
+  --bases-embed-border-radius: 100px !important;
+  --bases-table-border-color: transparent !important;
+  --bases-table-cell-background-active: rgb(244, 240, 255) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(47, 0, 158) !important;
+  --bases-table-container-border-radius: 100px !important;
+  --bases-table-header-background: rgb(244, 240, 255) !important;
+  --bases-table-summary-background: rgb(244, 240, 255) !important;
+  --blockquote-border-color: rgb(47, 0, 158) !important;
+  --blur-background: color-mix(in srgb, rgb(244, 240, 255) 65%, transparent) linear-gradient(rgb(244, 240, 255), color-mix(in srgb, rgb(244, 240, 255) 65%, transparent)) !important;
+  --button-radius: 100px !important;
   --callout-radius: 100px;
-  --canvas-background: rgb(244, 240, 255);
-  --canvas-controls-radius: 100px;
-  --checkbox-color: rgb(47, 0, 158);
-  --checkbox-color-hover: rgb(47, 0, 158);
-  --checkbox-marker-color: rgb(244, 240, 255);
-  --checkbox-radius: 100px;
-  --clickable-icon-radius: 100px;
-  --code-background: rgb(230, 219, 255);
-  --code-border-color: transparent;
-  --code-normal: rgb(47, 0, 158);
-  --code-radius: 100px;
-  --colorBackgroundPrimary: rgb(244, 240, 255);
+  --canvas-background: rgb(244, 240, 255) !important;
+  --canvas-controls-radius: 100px !important;
+  --checkbox-color: rgb(47, 0, 158) !important;
+  --checkbox-color-hover: rgb(47, 0, 158) !important;
+  --checkbox-marker-color: rgb(244, 240, 255) !important;
+  --checkbox-radius: 100px !important;
+  --clickable-icon-radius: 100px !important;
+  --code-background: rgb(230, 219, 255) !important;
+  --code-border-color: transparent !important;
+  --code-normal: rgb(47, 0, 158) !important;
+  --code-radius: 100px !important;
+  --colorBackgroundPrimary: rgb(244, 240, 255) !important;
   --colorBackgroundSecondary: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	);
-  --colorOnPrimary: white;
-  --colorPrimary: rgb(47, 0, 158);
-  --colorPrimaryContainer: rgb(230, 219, 255);
-  --colorPrimaryContainerVariant: rgb(201, 179, 255);
-  --colorPrimaryContainerVariantHover: rgb(223, 209, 255);
-  --divider-color: transparent;
-  --divider-color-hover: rgb(47, 0, 158);
-  --dropdown-background: rgb(219, 204, 255);
-  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent;
-  --embed-border-start: 2px solid rgb(47, 0, 158);
-  --file-header-background: rgb(244, 240, 255);
-  --file-header-background-focused: rgb(244, 240, 255);
-  --flair-background: rgb(219, 204, 255);
-  --footnote-divider-color: transparent;
-  --footnote-radius: 100px;
-  --highlight: var(--text-highlight-bg);
-  --hr-color: transparent;
-  --interactive-accent: rgb(47, 0, 158);
-  --interactive-accent-hover: rgb(47, 0, 158);
-  --interactive-normal: rgb(219, 204, 255);
-  --light: var(--background-primary);
-  --lightgray: var(--background-secondary);
-  --link-external-color: rgb(47, 0, 158);
-  --link-external-color-hover: rgb(47, 0, 158);
+	) !important;
+  --colorOnPrimary: white !important;
+  --colorPrimary: rgb(47, 0, 158) !important;
+  --colorPrimaryContainer: rgb(230, 219, 255) !important;
+  --colorPrimaryContainerVariant: rgb(201, 179, 255) !important;
+  --colorPrimaryContainerVariantHover: rgb(223, 209, 255) !important;
+  --divider-color: transparent !important;
+  --divider-color-hover: rgb(47, 0, 158) !important;
+  --dropdown-background: rgb(219, 204, 255) !important;
+  --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
+  --embed-border-start: 2px solid rgb(47, 0, 158) !important;
+  --file-header-background: rgb(244, 240, 255) !important;
+  --file-header-background-focused: rgb(244, 240, 255) !important;
+  --flair-background: rgb(219, 204, 255) !important;
+  --footnote-divider-color: transparent !important;
+  --footnote-radius: 100px !important;
+  --highlight: rgb(201, 179, 255) !important;
+  --hr-color: transparent !important;
+  --interactive-accent: rgb(47, 0, 158) !important;
+  --interactive-accent-hover: rgb(47, 0, 158) !important;
+  --interactive-normal: rgb(219, 204, 255) !important;
+  --light: rgb(244, 240, 255) !important;
+  --lightgray: hsla(
+		258,
+		88%,
+		66%,
+		2%
+	) !important;
+  --link-external-color: rgb(47, 0, 158) !important;
+  --link-external-color-hover: rgb(47, 0, 158) !important;
   --menu-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	);
-  --metadata-border-color: transparent;
-  --metadata-divider-color: transparent;
-  --modal-background: rgb(244, 240, 255);
-  --nav-item-background-active: rgb(201, 179, 255);
-  --nav-item-background-hover: rgb(223, 209, 255);
-  --nav-item-color: black;
-  --nav-item-radius: 100px;
-  --nav-tag-radius: 100px;
-  --pdf-background: rgb(244, 240, 255);
-  --pdf-page-background: rgb(244, 240, 255);
-  --pdf-sidebar-background: rgb(244, 240, 255);
-  --pill-border-color: transparent;
-  --prompt-background: rgb(244, 240, 255);
-  --radius-s: 100px;
-  --raised-background: color-mix(in srgb, rgb(244, 240, 255) 65%, transparent) linear-gradient(rgb(244, 240, 255), color-mix(in srgb, rgb(244, 240, 255) 65%, transparent));
+	) !important;
+  --metadata-border-color: transparent !important;
+  --metadata-divider-color: transparent !important;
+  --modal-background: rgb(244, 240, 255) !important;
+  --nav-item-background-active: rgb(201, 179, 255) !important;
+  --nav-item-background-hover: rgb(223, 209, 255) !important;
+  --nav-item-color: black !important;
+  --nav-item-radius: 100px !important;
+  --nav-tag-radius: 100px !important;
+  --pdf-background: rgb(244, 240, 255) !important;
+  --pdf-page-background: rgb(244, 240, 255) !important;
+  --pdf-sidebar-background: rgb(244, 240, 255) !important;
+  --pill-border-color: transparent !important;
+  --prompt-background: rgb(244, 240, 255) !important;
+  --radius-s: 100px !important;
+  --raised-background: color-mix(in srgb, rgb(244, 240, 255) 65%, transparent) linear-gradient(rgb(244, 240, 255), color-mix(in srgb, rgb(244, 240, 255) 65%, transparent)) !important;
   --ribbon-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	);
-  --ribbon-background-collapsed: rgb(244, 240, 255);
-  --search-result-background: rgb(244, 240, 255);
-  --secondary: var(--interactive-accent);
-  --setting-items-border-color: transparent;
-  --slider-track-background: transparent;
+	) !important;
+  --ribbon-background-collapsed: rgb(244, 240, 255) !important;
+  --search-result-background: rgb(244, 240, 255) !important;
+  --secondary: rgb(47, 0, 158) !important;
+  --setting-items-border-color: transparent !important;
+  --slider-track-background: transparent !important;
   --status-bar-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	);
-  --status-bar-border-color: transparent;
-  --suggestion-background: rgb(244, 240, 255);
-  --tab-background-active: rgb(201, 179, 255);
+	) !important;
+  --status-bar-border-color: transparent !important;
+  --suggestion-background: rgb(244, 240, 255) !important;
+  --tab-background-active: rgb(201, 179, 255) !important;
   --tab-container-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	);
-  --tab-outline-color: transparent;
-  --tab-radius: 100px;
+	) !important;
+  --tab-outline-color: transparent !important;
+  --tab-radius: 100px !important;
   --tab-switcher-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	);
+	) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, hsla(
 		258,
 		88%,
 		66%,
 		2%
-	), transparent);
-  --table-add-button-border-color: transparent;
-  --table-border-color: transparent;
-  --table-drag-handle-background-active: rgb(47, 0, 158);
-  --table-header-border-color: transparent;
-  --table-selection-border-color: rgb(47, 0, 158);
-  --tag-background: rgb(201, 179, 255);
-  --tag-background-hover: rgb(201, 179, 255);
-  --tag-color: rgb(47, 0, 158);
-  --tertiary: var(--interactive-accent-hover);
-  --text-highlight-bg: rgb(201, 179, 255);
-  --text-on-accent-inverted: white;
-  --textHighlight: var(--text-highlight-bg);
+	), transparent) !important;
+  --table-add-button-border-color: transparent !important;
+  --table-border-color: transparent !important;
+  --table-drag-handle-background-active: rgb(47, 0, 158) !important;
+  --table-header-border-color: transparent !important;
+  --table-selection-border-color: rgb(47, 0, 158) !important;
+  --tag-background: rgb(201, 179, 255) !important;
+  --tag-background-hover: rgb(201, 179, 255) !important;
+  --tag-color: rgb(47, 0, 158) !important;
+  --tertiary: rgb(47, 0, 158) !important;
+  --text-highlight-bg: rgb(201, 179, 255) !important;
+  --text-on-accent-inverted: white !important;
+  --textHighlight: rgb(201, 179, 255) !important;
   --titlebar-background: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	);
+	) !important;
   --titlebar-background-focused: hsla(
 		258,
 		88%,
 		66%,
 		2%
-	);
-  --titlebar-border-color: transparent;
-  --quartz-icon-color: currentColor;
+	) !important;
+  --titlebar-border-color: transparent !important;
+  --quartz-icon-color: currentColor !important;
+}
+
+html[saved-theme="light"] body {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
 }
 
 body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
