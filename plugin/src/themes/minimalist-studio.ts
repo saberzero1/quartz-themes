@@ -54,7 +54,7 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+    links: `html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   text-decoration: rgb(166, 138, 249);
 }
 
@@ -90,7 +90,7 @@ html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(255, 200, 44);
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -269,7 +269,7 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+    links: `html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   text-decoration: rgb(138, 92, 245);
 }
 
@@ -298,7 +298,7 @@ html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-re
   border-top-right-radius: 8px;
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   border-bottom-color: rgb(227, 227, 227);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;

@@ -32,11 +32,11 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   color: rgb(237, 242, 247);
 }
 
-html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   color: rgb(237, 242, 247);
 }
 
@@ -52,28 +52,28 @@ html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(26, 32, 44);
   color: rgb(237, 242, 247);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(237, 242, 247);
   outline: rgb(237, 242, 247) none 0px;
   text-decoration: rgb(237, 242, 247);
   text-decoration-color: rgb(237, 242, 247);
 }
 
-html[saved-theme="dark"] body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(237, 242, 247);
   outline: rgb(237, 242, 247) none 0px;
   text-decoration: rgb(237, 242, 247);
   text-decoration-color: rgb(237, 242, 247);
 }
 
-html[saved-theme="dark"] body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(237, 242, 247);
   outline: rgb(237, 242, 247) none 0px;
   text-decoration: rgb(237, 242, 247);
   text-decoration-color: rgb(237, 242, 247);
 }
 
-html[saved-theme="dark"] body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(237, 242, 247);
   outline: rgb(237, 242, 247) none 0px;
   text-decoration: rgb(237, 242, 247);
@@ -90,7 +90,7 @@ html[saved-theme="dark"] body del {
 html[saved-theme="dark"] body p {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
   text-decoration: underline 1px rgb(218, 218, 218);
@@ -99,7 +99,7 @@ html[saved-theme="dark"] body p {
   transition: 0.2s;
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
   text-decoration: underline 1px rgb(218, 218, 218);
@@ -343,11 +343,11 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   color: rgb(26, 32, 44);
 }
 
-html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
   color: rgb(26, 32, 44);
 }
 
@@ -362,28 +362,28 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   color: rgb(26, 32, 44);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
   text-decoration: rgb(26, 32, 44);
   text-decoration-color: rgb(26, 32, 44);
 }
 
-html[saved-theme="light"] body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
   text-decoration: rgb(26, 32, 44);
   text-decoration-color: rgb(26, 32, 44);
 }
 
-html[saved-theme="light"] body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
   text-decoration: rgb(26, 32, 44);
   text-decoration-color: rgb(26, 32, 44);
 }
 
-html[saved-theme="light"] body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
   text-decoration: rgb(26, 32, 44);
@@ -400,7 +400,7 @@ html[saved-theme="light"] body del {
 html[saved-theme="light"] body p {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
   text-decoration: underline 1px rgb(26, 32, 44);
@@ -409,7 +409,7 @@ html[saved-theme="light"] body p {
   transition: 0.2s;
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
   text-decoration: underline 1px rgb(26, 32, 44);

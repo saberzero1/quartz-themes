@@ -165,12 +165,12 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(24, 24, 24);
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
-html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   background-color: rgb(22, 22, 22);
   color: color(srgb 0.862096 0.80824 0.98776);
 }
@@ -195,7 +195,7 @@ html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(22, 22, 22);
   color: color(srgb 0.862096 0.80824 0.98776);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: color(srgb 0.632256 0.48864 0.96736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
@@ -203,7 +203,7 @@ html[saved-theme="dark"] body div#quartz-root {
   text-decoration-color: color(srgb 0.632256 0.48864 0.96736);
 }
 
-html[saved-theme="dark"] body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
@@ -211,7 +211,7 @@ html[saved-theme="dark"] body .page article p > em, em {
   text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
 }
 
-html[saved-theme="dark"] body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
@@ -219,7 +219,7 @@ html[saved-theme="dark"] body .page article p > i, i {
   text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
 }
 
-html[saved-theme="dark"] body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: color(srgb 0.632256 0.48864 0.96736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
@@ -251,11 +251,11 @@ html[saved-theme="dark"] body p {
   text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -367,7 +367,7 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-reh
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
 }
 
@@ -802,11 +802,11 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
   border-top-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-title, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) .card-description {
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
-html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
@@ -817,7 +817,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   border-top-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
   border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
   border-left-color: color(srgb 0.862096 0.80824 0.98776);
   border-right-color: color(srgb 0.862096 0.80824 0.98776);
@@ -825,11 +825,11 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
-html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -843,7 +843,7 @@ html[saved-theme="dark"] body h2 {
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
 }
@@ -1282,12 +1282,12 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(197, 197, 197);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
-html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
   background-color: rgb(228, 228, 228);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
@@ -1312,7 +1312,7 @@ html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(228, 228, 228);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: color(srgb 0.432256 0.28864 0.76736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
@@ -1320,7 +1320,7 @@ html[saved-theme="light"] body div#quartz-root {
   text-decoration-color: color(srgb 0.432256 0.28864 0.76736);
 }
 
-html[saved-theme="light"] body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
@@ -1328,7 +1328,7 @@ html[saved-theme="light"] body .page article p > em, em {
   text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
 }
 
-html[saved-theme="light"] body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
@@ -1336,7 +1336,7 @@ html[saved-theme="light"] body .page article p > i, i {
   text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
 }
 
-html[saved-theme="light"] body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: color(srgb 0.432256 0.28864 0.76736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
@@ -1368,11 +1368,11 @@ html[saved-theme="light"] body p {
   text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -1484,7 +1484,7 @@ html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-re
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
 }
 
@@ -1919,11 +1919,11 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-title, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) .card-description {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
-html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
@@ -1934,7 +1934,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
   border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -1942,11 +1942,11 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
-html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -1960,7 +1960,7 @@ html[saved-theme="light"] body h2 {
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="light"] body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
 }

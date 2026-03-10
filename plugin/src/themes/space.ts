@@ -191,12 +191,12 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(24, 29, 39);
   color: rgb(216, 215, 223);
 }
 
-html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
   background-color: rgb(24, 29, 39);
   color: rgb(216, 215, 223);
 }
@@ -220,28 +220,28 @@ html body div#quartz-root {
   background-color: rgb(24, 29, 39);
   color: rgb(216, 215, 223);
 }`,
-    typography: `html body .page article p > b, b {
+    typography: `html body .page article p > b, html b {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-html body .page article p > em, em {
+html body .page article p > em, html em {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-html body .page article p > i, i {
+html body .page article p > i, html i {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-html body .page article p > strong, strong {
+html body .page article p > strong, html strong {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
   text-decoration: rgb(216, 215, 223);
@@ -266,7 +266,7 @@ html body del {
 html body p {
   font-family: "Bai Jamjuree";
 }`,
-    links: `html body a.external, footer a {
+    links: `html body a.external, html footer a {
   color: rgb(255, 230, 153);
   font-family: "Bai Jamjuree";
   outline: rgb(255, 230, 153) none 0px;
@@ -274,7 +274,7 @@ html body p {
   text-decoration-color: rgb(255, 230, 153);
 }
 
-html body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 230, 153);
   font-family: "Bai Jamjuree";
   outline: rgb(255, 230, 153) none 0px;
@@ -395,7 +395,7 @@ html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-titl
   color: rgb(216, 215, 223);
 }
 
-html body pre > code, pre:has(> code) {
+html body pre > code, html pre:has(> code) {
   background-color: rgb(15, 18, 24);
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
@@ -613,11 +613,11 @@ html body .search > .search-container > .search-space > .search-layout > .result
   border-top-color: rgb(216, 215, 223);
 }
 
-html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
   color: rgb(216, 215, 223);
 }
 
-html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
   background-color: rgb(219, 84, 97);
   color: rgb(216, 215, 223);
 }
@@ -629,7 +629,7 @@ html body .search > .search-container > .search-space > input {
   border-top-color: rgb(216, 215, 223);
 }
 
-html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   background-color: rgb(219, 84, 97);
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
@@ -638,7 +638,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(216, 215, 223);
 }
 
-html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
   background-color: rgb(219, 84, 97);
   color: rgb(216, 215, 223);
 }
@@ -657,7 +657,7 @@ html body h2 {
   font-family: "Bai Jamjuree";
 }
 
-html body h2.page-title, h2.page-title a {
+html body h2.page-title, html h2.page-title a {
   color: rgb(255, 216, 94);
   font-family: "Bai Jamjuree";
 }

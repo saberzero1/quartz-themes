@@ -142,11 +142,11 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(26, 26, 26);
 }
 
-html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   background-color: rgb(17, 17, 17);
 }
 
@@ -166,7 +166,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(17, 17, 17);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgba(0, 0, 0, 0);
   font-weight: 700;
   outline: rgba(0, 0, 0, 0) none 0px;
@@ -174,7 +174,7 @@ html[saved-theme="dark"] body div#quartz-root {
   text-decoration-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="dark"] body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: color(srgb 0.586288 0.42472 0.96328);
   font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
   outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
@@ -182,7 +182,7 @@ html[saved-theme="dark"] body .page article p > em, em {
   text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
 }
 
-html[saved-theme="dark"] body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: color(srgb 0.586288 0.42472 0.96328);
   font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
   outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
@@ -190,7 +190,7 @@ html[saved-theme="dark"] body .page article p > i, i {
   text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
 }
 
-html[saved-theme="dark"] body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgba(0, 0, 0, 0);
   font-weight: 700;
   outline: rgba(0, 0, 0, 0) none 0px;
@@ -201,7 +201,7 @@ html[saved-theme="dark"] body .page article p > strong, strong {
 html[saved-theme="dark"] body p {
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration: rgb(255, 255, 255);
@@ -209,7 +209,7 @@ html[saved-theme="dark"] body p {
   transition: background 0.35s ease-in-out;
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 255, 255);
   font-weight: 700;
   outline: rgb(255, 255, 255) none 0px;
@@ -272,7 +272,7 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-reh
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: rgb(26, 26, 26);
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
@@ -400,7 +400,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   border-bottom-color: rgb(26, 26, 26);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -677,7 +677,7 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(238, 238, 238);
 }
 
@@ -693,7 +693,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(238, 238, 238);
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgba(0, 0, 0, 0);
   font-weight: 700;
   outline: rgba(0, 0, 0, 0) none 0px;
@@ -701,7 +701,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   text-decoration-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="light"] body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: color(srgb 0.586288 0.42472 0.96328);
   font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
   outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
@@ -709,7 +709,7 @@ html[saved-theme="light"] body .page article p > em, em {
   text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
 }
 
-html[saved-theme="light"] body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: color(srgb 0.586288 0.42472 0.96328);
   font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
   outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
@@ -717,7 +717,7 @@ html[saved-theme="light"] body .page article p > i, i {
   text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
 }
 
-html[saved-theme="light"] body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgba(0, 0, 0, 0);
   font-weight: 700;
   outline: rgba(0, 0, 0, 0) none 0px;
@@ -728,7 +728,7 @@ html[saved-theme="light"] body .page article p > strong, strong {
 html[saved-theme="light"] body p {
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(17, 17, 17);
   outline: rgb(17, 17, 17) none 0px;
   text-decoration: rgb(17, 17, 17);
@@ -736,7 +736,7 @@ html[saved-theme="light"] body p {
   transition: background 0.35s ease-in-out;
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(17, 17, 17);
   font-weight: 700;
   outline: rgb(17, 17, 17) none 0px;
@@ -792,7 +792,7 @@ html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-re
   border-top-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   background-color: rgb(255, 255, 255);
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.05);
@@ -916,7 +916,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-bottom-color: rgb(238, 238, 238);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;

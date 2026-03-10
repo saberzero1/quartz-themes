@@ -140,14 +140,14 @@ html[saved-theme="dark"] body {
     typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: rgb(226, 104, 104);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(255, 135, 135);
   outline: rgb(255, 135, 135) none 0px;
   text-decoration: underline rgb(255, 135, 135);
   text-decoration-color: rgb(255, 135, 135);
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 135, 135);
   outline: rgb(255, 135, 135) none 0px;
   text-decoration: rgb(255, 135, 135);
@@ -325,7 +325,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }`,
-    search: `html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    search: `html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(218, 218, 218);
   border-left-color: rgb(218, 218, 218);
@@ -347,7 +347,7 @@ html[saved-theme="dark"] body h2 {
   font-family: Arvo, serif;
 }
 
-html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: rgb(226, 104, 104);
   font-family: "Permanent Marker", cursive;
 }
@@ -578,11 +578,11 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(237, 237, 237);
 }
 
-html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
   background-color: rgb(216, 217, 207);
 }
 
@@ -600,14 +600,14 @@ html[saved-theme="light"] body div#quartz-root {
     typography: `html[saved-theme="light"] body .text-highlight {
   background-color: rgb(255, 135, 135);
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(255, 135, 135);
   outline: rgb(255, 135, 135) none 0px;
   text-decoration: underline rgb(255, 135, 135);
   text-decoration-color: rgb(255, 135, 135);
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 135, 135);
   outline: rgb(255, 135, 135) none 0px;
   text-decoration: rgb(255, 135, 135);
@@ -800,7 +800,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-bottom-color: rgb(237, 237, 237);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(34, 34, 34);
   border-left-color: rgb(34, 34, 34);
@@ -822,7 +822,7 @@ html[saved-theme="light"] body h2 {
   font-family: Arvo, serif;
 }
 
-html[saved-theme="light"] body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: rgb(226, 104, 104);
   font-family: "Permanent Marker", cursive;
 }

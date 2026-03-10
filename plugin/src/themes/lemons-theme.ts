@@ -551,12 +551,12 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(48, 48, 48);
   color: rgb(255, 255, 255);
 }
 
-html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
   background-color: rgb(32, 32, 32);
   color: rgb(255, 255, 255);
 }
@@ -581,7 +581,7 @@ html body div#quartz-root {
   background-color: rgb(32, 32, 32);
   color: rgb(255, 255, 255);
 }`,
-    typography: `html body .page article p > b, b {
+    typography: `html body .page article p > b, html b {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(255, 255, 255) none 0px;
@@ -589,7 +589,7 @@ html body div#quartz-root {
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html body .page article p > em, em {
+html body .page article p > em, html em {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(255, 255, 255) none 0px;
@@ -597,7 +597,7 @@ html body .page article p > em, em {
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html body .page article p > i, i {
+html body .page article p > i, html i {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(255, 255, 255) none 0px;
@@ -605,7 +605,7 @@ html body .page article p > i, i {
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html body .page article p > strong, strong {
+html body .page article p > strong, html strong {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(255, 255, 255) none 0px;
@@ -636,7 +636,7 @@ html body p {
   text-decoration: rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
 }`,
-    links: `html body a.external, footer a {
+    links: `html body a.external, html footer a {
   color: rgb(250, 206, 62);
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(250, 206, 62) none 0px;
@@ -644,7 +644,7 @@ html body p {
   text-decoration-color: rgb(250, 206, 62);
 }
 
-html body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(250, 206, 62);
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   outline: rgb(250, 206, 62) none 0px;
@@ -797,7 +797,7 @@ html body pre > code [data-highlighted-chars] {
   border-top-color: rgb(251, 211, 81);
 }
 
-html body pre > code, pre:has(> code) {
+html body pre > code, html pre:has(> code) {
   background-color: rgb(40, 40, 40);
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
@@ -1247,16 +1247,16 @@ html body .search > .search-container > .search-space > .search-layout > .result
   border-top-color: rgb(250, 206, 62);
 }
 
-html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-title, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) .card-description {
   color: rgb(250, 206, 62);
 }
 
-html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
   background-color: rgba(255, 255, 255, 0.075);
   color: rgb(250, 206, 62);
 }
 
-html body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html body .search > .search-container > .search-space > .search-layout, html .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(80, 80, 80);
   border-bottom-width: 0px;
   border-left-color: rgb(80, 80, 80);
@@ -1280,7 +1280,7 @@ html body .search > .search-container > .search-space > input {
   border-top-right-radius: 12px;
 }
 
-html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
   background-color: rgba(255, 255, 255, 0.075);
   border-bottom-color: rgb(250, 206, 62);
   border-left-color: rgb(250, 206, 62);
@@ -1289,12 +1289,12 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(250, 206, 62);
 }
 
-html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
   background-color: rgba(255, 255, 255, 0.075);
   color: rgb(250, 206, 62);
 }
 
-html body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(251, 211, 81, 0.1);
   border-bottom-color: rgba(251, 211, 81, 0.15);
   border-left-color: rgba(251, 211, 81, 0.15);
@@ -1317,7 +1317,7 @@ html body h2 {
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }
 
-html body h2.page-title, h2.page-title a {
+html body h2.page-title, html h2.page-title a {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", "??", "??", "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
 }

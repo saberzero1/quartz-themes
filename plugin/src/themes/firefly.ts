@@ -86,7 +86,7 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(128, 128, 128);
 }`,
-    typography: `html body .page article p > b, b {
+    typography: `html body .page article p > b, html b {
   color: rgb(192, 205, 243);
   filter: drop-shadow(rgb(192, 205, 243) 0px 0px 3px);
   outline: rgb(192, 205, 243) none 0px;
@@ -94,7 +94,7 @@ html body .page > div#quartz-body div.sidebar.right {
   text-decoration-color: rgb(192, 205, 243);
 }
 
-html body .page article p > em, em {
+html body .page article p > em, html em {
   color: rgb(192, 205, 243);
   font-weight: 500;
   outline: rgb(192, 205, 243) none 0px;
@@ -102,7 +102,7 @@ html body .page article p > em, em {
   text-decoration-color: rgb(192, 205, 243);
 }
 
-html body .page article p > i, i {
+html body .page article p > i, html i {
   color: rgb(192, 205, 243);
   font-weight: 500;
   outline: rgb(192, 205, 243) none 0px;
@@ -110,7 +110,7 @@ html body .page article p > i, i {
   text-decoration-color: rgb(192, 205, 243);
 }
 
-html body .page article p > strong, strong {
+html body .page article p > strong, html strong {
   color: rgb(192, 205, 243);
   filter: drop-shadow(rgb(192, 205, 243) 0px 0px 3px);
   outline: rgb(192, 205, 243) none 0px;
@@ -129,7 +129,7 @@ html body del {
   text-decoration: line-through rgb(192, 205, 243);
   text-decoration-color: rgb(192, 205, 243);
 }`,
-    links: `html body a.external, footer a {
+    links: `html body a.external, html footer a {
   color: rgb(111, 161, 255);
   font-family: Inter, sans-serif;
   outline: rgb(111, 161, 255) none 0px;
@@ -137,7 +137,7 @@ html body del {
   text-decoration-color: rgb(111, 161, 255);
 }
 
-html body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(111, 161, 255);
   font-family: Inter, sans-serif;
   outline: rgb(111, 161, 255) none 0px;
@@ -277,7 +277,7 @@ html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-titl
   font-family: "Jetbrains Mono", monospace;
 }
 
-html body pre > code, pre:has(> code) {
+html body pre > code, html pre:has(> code) {
   background-color: rgb(5, 6, 8);
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-left-radius: 5px;
@@ -597,7 +597,7 @@ html body .search > .search-container > .search-space {
   border-top-width: 0px;
 }
 
-html body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html body .search > .search-container > .search-space > .search-layout, html .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(218, 218, 218);
   border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
@@ -613,7 +613,7 @@ html body .search > .search-container > .search-space > input {
   border-bottom-width: 0px;
 }
 
-html body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-color: rgb(166, 138, 249);
   border-left-color: rgb(166, 138, 249);
   border-right-color: rgb(166, 138, 249);

@@ -33,27 +33,27 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(166, 138, 249);
   outline: rgb(166, 138, 249) none 0px;
   text-decoration: rgb(166, 138, 249);
   text-decoration-color: rgb(166, 138, 249);
 }
 
-html[saved-theme="dark"] body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(166, 138, 249);
   outline: rgb(166, 138, 249) none 0px;
   text-decoration: rgb(166, 138, 249);
   text-decoration-color: rgb(166, 138, 249);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(89, 128, 247);
   outline: rgb(89, 128, 247) none 0px;
   text-decoration: underline rgb(89, 128, 247);
   text-decoration-color: rgb(89, 128, 247);
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(89, 128, 247);
   outline: rgb(89, 128, 247) none 0px;
   text-decoration: underline rgb(89, 128, 247);
@@ -134,7 +134,7 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(250, 250, 250);
 }
 
@@ -145,27 +145,27 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(250, 250, 250);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration: rgb(138, 92, 245);
   text-decoration-color: rgb(138, 92, 245);
 }
 
-html[saved-theme="light"] body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration: rgb(138, 92, 245);
   text-decoration-color: rgb(138, 92, 245);
 }`,
-    links: `html[saved-theme="light"] body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(44, 84, 242);
   outline: rgb(44, 84, 242) none 0px;
   text-decoration: underline rgb(44, 84, 242);
   text-decoration-color: rgb(44, 84, 242);
 }
 
-html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(44, 84, 242);
   outline: rgb(44, 84, 242) none 0px;
   text-decoration: underline rgb(44, 84, 242);

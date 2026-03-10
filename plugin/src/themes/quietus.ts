@@ -95,14 +95,14 @@ html[saved-theme="dark"] body {
     typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: color(srgb 0.541176 0.360784 0.960784 / 0.45);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
   text-decoration: underline rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
   text-decoration: underline rgb(218, 218, 218);

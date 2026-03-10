@@ -150,11 +150,11 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(8, 8, 8);
 }
 
-html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
   background-color: rgb(0, 0, 0);
 }
 
@@ -210,7 +210,7 @@ html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-titl
   border-top-color: rgb(51, 51, 51);
 }
 
-html body pre > code, pre:has(> code) {
+html body pre > code, html pre:has(> code) {
   background-color: rgb(17, 17, 17);
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
@@ -244,7 +244,7 @@ html body .search > .search-container > .search-space {
   border-top-color: rgb(74, 74, 74);
 }
 
-html body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html body .search > .search-container > .search-space > .search-layout, html .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(74, 74, 74);
   border-left-color: rgb(74, 74, 74);
   border-right-color: rgb(74, 74, 74);
@@ -263,7 +263,7 @@ html body h2 {
   color: rgb(235, 203, 139);
 }
 
-html body h2.page-title, h2.page-title a {
+html body h2.page-title, html h2.page-title a {
   color: rgb(191, 97, 106);
 }
 

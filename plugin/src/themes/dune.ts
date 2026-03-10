@@ -227,14 +227,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }`,
-    links: `html[saved-theme="dark"] body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration: underline rgb(138, 92, 245);
   text-decoration-color: rgb(138, 92, 245);
 }
 
-html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration: underline dotted rgb(138, 92, 245);
@@ -321,7 +321,7 @@ html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(124, 204, 207);
 }
 
-html[saved-theme="dark"] body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom-color: rgb(128, 128, 128);
   border-bottom-width: 1px;
@@ -447,7 +447,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
   background-color: rgb(105, 105, 105);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -455,7 +455,7 @@ html[saved-theme="dark"] body a.internal.tag-link::before {
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: rgb(55, 141, 255);
 }
 
@@ -745,7 +745,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }`,
-    links: `html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
+    links: `html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   text-decoration: underline dotted rgb(138, 92, 245);
   text-decoration-style: dotted;
 }
@@ -829,7 +829,7 @@ html[saved-theme="light"] body pre > code [data-highlighted-chars] {
   border-top-color: rgb(21, 67, 113);
 }
 
-html[saved-theme="light"] body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
   background-color: rgba(255, 255, 255, 0.3);
   border-bottom-color: rgb(128, 128, 128);
   border-bottom-width: 1px;
@@ -958,7 +958,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-top-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -966,7 +966,7 @@ html[saved-theme="light"] body a.internal.tag-link::before {
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: rgb(0, 128, 255);
 }
 
