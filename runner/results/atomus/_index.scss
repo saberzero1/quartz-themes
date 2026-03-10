@@ -3460,9 +3460,11 @@ body {
           min-width: 1rem;
           min-height: 1rem;
           display: flex;
-          align-self: center;
+          align-self: baseline;
           background: var(--quartz-icon-color);
           content: "";
+          margin-inline-end: 0.5rem;
+          margin-block-start: 0.2rem;
         }
         & > div {
           width: 100%;
@@ -3527,11 +3529,12 @@ body {
           min-height: 1rem;
           content: "";
           display: flex;
-          align-self: center;
+          align-self: baseline;
           background: var(--quartz-icon-color);
           mask-image: var(--file-icon);
           -webkit-mask-image: var(--file-icon);
           margin-inline-end: 0.5rem;
+          margin-block-start: 0.2rem;
         }
       }
     }
