@@ -476,4 +476,13 @@ blockquote.callout {
     }
   }
 }
+
+:root[saved-theme="light"], :root[saved-theme="dark"] {
+  body {
+    a.external, a.internal, .breadcrumb-container .breadcrumb-element > a, footer a {
+      text-decoration: none;
+
+    }
+  }
+}
 `;

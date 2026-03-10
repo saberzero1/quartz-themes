@@ -3847,6 +3847,18 @@ body {
   }
 }
 
+:root[saved-theme="light"],
+:root[saved-theme="dark"] {
+  body {
+    a.external,
+    a.internal,
+    .breadcrumb-container .breadcrumb-element > a,
+    footer a {
+      text-decoration: none;
+    }
+  }
+}
+
 :root:root:root {
   body {
     --text-normal: rgba(255, 220, 255, 0.8);
