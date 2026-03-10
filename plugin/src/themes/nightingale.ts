@@ -22,7 +22,7 @@ export const theme: ThemeData = {
   --bases-table-group-background: #1e2127 !important;
   --blockquote-border-color: rgba(27, 128, 210, 0.842) !important;
   --body-font-weight: 450 !important;
-  --bodyFont: '??', '??', 'Avenir LT Std', Helvetica, Arial, 'Amazon Ember', 'Rubik', Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: Avenir LT Std, Helvetica, Arial, Amazon Ember, Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --canvas-card-label-color: rgba(122, 162, 247, 0.8) !important;
   --caret-color: #b7b7b7 !important;
   --checkbox-border-color: rgba(122, 162, 247, 0.8) !important;
@@ -33,7 +33,7 @@ export const theme: ThemeData = {
   --code-comment: rgba(122, 162, 247, 0.8) !important;
   --code-mono-font: 'Incosolata', 'Consolas' !important;
   --code-normal: #b7b7b7 !important;
-  --codeFont: '??', '??', 'Avenir LT Std', Helvetica, Arial, 'Amazon Ember', 'Rubik', Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: Avenir LT Std, Helvetica, Arial, Amazon Ember, Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: rgba(122, 162, 247, 0.8) !important;
   --collapse-icon-color-collapsed: rgba(184, 71, 255, 0.8) !important;
   --dark: #b7b7b7 !important;
@@ -44,9 +44,9 @@ export const theme: ThemeData = {
   --divider-color-hover: rgba(27, 128, 210, 0.842) !important;
   --embed-block-shadow-hover: 0 0 0 1px rgba(14, 210, 247, 0.05), inset 0 0 0 1px rgba(14, 210, 247, 0.05) !important;
   --embed-border-start: 2px solid rgba(27, 128, 210, 0.842) !important;
-  --file-header-font: '??', '??', 'Avenir LT Std', Helvetica, Arial, 'Amazon Ember', 'Rubik', Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: Avenir LT Std, Helvetica, Arial, Amazon Ember, Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --flair-color: #b7b7b7 !important;
-  --font-interface: '??', '??', 'Avenir LT Std', Helvetica, Arial, 'Amazon Ember', 'Rubik', Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: Avenir LT Std, Helvetica, Arial, Amazon Ember, Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --footnote-divider-color: rgba(14, 210, 247, 0.05) !important;
   --footnote-id-color-no-occurrences: rgba(122, 162, 247, 0.8) !important;
   --graph-node-focused: rgba(184, 71, 255, 0.8) !important;
@@ -65,7 +65,7 @@ export const theme: ThemeData = {
   --h5-weight: 500 !important;
   --h6-size: 20px !important;
   --h6-weight: 500 !important;
-  --headerFont: '??', '??', 'Avenir LT Std', Helvetica, Arial, 'Amazon Ember', 'Rubik', Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: Avenir LT Std, Helvetica, Arial, Amazon Ember, Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: rgba(122, 162, 247, 0.8) !important;
   --highlight: rgba(192, 205, 14, 0.8) !important;
   --hr-color: rgba(14, 210, 247, 0.05) !important;
@@ -89,9 +89,9 @@ export const theme: ThemeData = {
   --menu-background: #15111e !important;
   --metadata-border-color: rgba(14, 210, 247, 0.05) !important;
   --metadata-divider-color: rgba(14, 210, 247, 0.05) !important;
-  --metadata-input-font: '??', '??', 'Avenir LT Std', Helvetica, Arial, 'Amazon Ember', 'Rubik', Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: Avenir LT Std, Helvetica, Arial, Amazon Ember, Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: #b7b7b7 !important;
-  --metadata-label-font: '??', '??', 'Avenir LT Std', Helvetica, Arial, 'Amazon Ember', 'Rubik', Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: Avenir LT Std, Helvetica, Arial, Amazon Ember, Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --nav-collapse-icon-color: rgba(122, 162, 247, 0.8) !important;
   --nav-collapse-icon-color-collapsed: rgba(122, 162, 247, 0.8) !important;
   --nav-heading-color: #b7b7b7 !important;
@@ -158,7 +158,7 @@ export const theme: ThemeData = {
   --text-title-2: rgba(253, 49, 6, 0.8) !important;
   --textHighlight: rgba(192, 205, 14, 0.8) !important;
   --title-font: 'Optima LT Std', 'Microsoft Yahei', 'Noto Sans SC', sans-serif !important;
-  --titleFont: '??', '??', 'Avenir LT Std', Helvetica, Arial, 'Amazon Ember', 'Rubik', Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: Avenir LT Std, Helvetica, Arial, Amazon Ember, Rubik, Roboto, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #15111e !important;
   --titlebar-background-focused: #0a080f !important;
   --titlebar-border-color: rgba(14, 210, 247, 0.05) !important;

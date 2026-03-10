@@ -50,7 +50,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075) !important;
   --blockquote-border-color: rgb(139, 108, 239) !important;
   --blur-background: color-mix(in srgb, rgb(84, 39, 231) 65%, transparent) linear-gradient(rgb(84, 39, 231), color-mix(in srgb, rgb(84, 39, 231) 65%, transparent)) !important;
-  --bodyFont: '??', "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-weight: 600 !important;
   --callout-content-padding: 0px;
   --callout-padding: 12px 12px 12px
@@ -73,7 +73,7 @@ export const theme: ThemeData = {
   --code-comment: rgb(79, 94, 99) !important;
   --code-normal: rgb(164, 178, 182) !important;
   --code-punctuation: rgb(164, 178, 182) !important;
-  --codeFont: '??', "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --codeFont: "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: rgb(79, 94, 99) !important;
   --collapse-icon-color-collapsed: rgb(84, 39, 231) !important;
   --color-accent: rgb(139, 108, 239) !important;
@@ -112,17 +112,17 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid rgb(139, 108, 239) !important;
   --file-header-background: rgb(14, 16, 17) !important;
   --file-header-background-focused: rgb(14, 16, 17) !important;
-  --file-header-font: '??', "Fira Code", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-margins: 32px !important;
   --flair-background: rgb(84, 39, 231) !important;
   --flair-color: rgb(198, 207, 210) !important;
-  --font-interface: '??', "Fira Code", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Fira Code" !important;
-  --font-mermaid: '??', "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: '??', "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-mermaid: "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "Fira Code" !important;
-  --font-print: '??', '??', "Fira Code", 'Arial' !important;
-  --font-text: '??', "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: "Fira Code", Arial' !important;
+  --font-text: "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Fira Code" !important;
   --footnote-divider-color: rgb(32, 38, 40) !important;
   --footnote-id-color: rgb(164, 178, 182) !important;
@@ -158,7 +158,7 @@ export const theme: ThemeData = {
   --header-6-alignment: left !important;
   --header-6-weight: normal !important;
   --header-height: 38px !important;
-  --headerFont: '??', "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: rgb(79, 94, 99) !important;
   --highlight: rgba(255, 255, 255, 0.075) !important;
   --hr-color: rgb(32, 38, 40) !important;
@@ -203,10 +203,10 @@ export const theme: ThemeData = {
   --metadata-border-color: rgb(32, 38, 40) !important;
   --metadata-divider-color: rgb(32, 38, 40) !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
-  --metadata-input-font: '??', "Fira Code", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: rgb(198, 207, 210) !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.075) !important;
-  --metadata-label-font: '??', "Fira Code", '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: rgb(164, 178, 182) !important;
   --metadata-label-text-color-hover: rgb(164, 178, 182) !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.075) !important;
@@ -322,7 +322,7 @@ export const theme: ThemeData = {
   --text-normal: rgb(198, 207, 210) !important;
   --text-selection: rgba(139, 108, 239, 0.25) !important;
   --textHighlight: rgba(255, 255, 255, 0.075) !important;
-  --titleFont: '??', "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: rgb(14, 16, 17) !important;
   --titlebar-background-focused: rgb(14, 16, 17) !important;
   --titlebar-border-color: rgb(32, 38, 40) !important;

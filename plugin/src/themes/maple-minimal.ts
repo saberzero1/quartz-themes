@@ -190,7 +190,7 @@ export const theme: ThemeData = {
   --code-tag: rgba(209.304, 137.496, 137.496, 0.85) !important;
   --code-value: rgba(126.48, 199.92, 197.472, 0.85) !important;
   --code-variable: rgba(214.2, 181.56, 132.6, 0.85) !important;
-  --codeFont: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --codeFont: "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color-collapsed: rgb(100, 136, 160) !important;
   --color-accent: rgb(85, 115, 139) !important;
   --color-accent-1: rgb(100, 136, 160) !important;
@@ -235,7 +235,7 @@ export const theme: ThemeData = {
   --flair-color: rgba(232, 240, 247, 0.75) !important;
   --folder-color: rgb(208, 164, 22) !important;
   --folder-inactive: 70% !important;
-  --font-monospace: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace: "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "maplemono" !important;
   --font-ui-medium: 16px !important;
   --font-ui-small: 14px !important;
@@ -264,7 +264,7 @@ export const theme: ThemeData = {
   --grid-spacing: 20px !important;
   --h1-color: rgb(209.304, 137.496, 137.496) !important;
   --h1-color-rgb: 209.304, 137.496, 137.496 !important;
-  --h1-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --h1-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --h1-line-height: 46.08px !important;
   --h1-size: 25.6px !important;
   --h1-weight: 750 !important;
@@ -320,7 +320,7 @@ export const theme: ThemeData = {
   --icon-color-focused: rgba(232, 240, 247, 0.75) !important;
   --inline-code: rgba(209.304, 137.496, 137.496, 0.85) !important;
   --inline-title-color: rgb(209.304, 137.496, 137.496) !important;
-  --inline-title-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --inline-title-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --inline-title-line-height: 46.08px !important;
   --inline-title-size: 25.6px !important;
   --inline-title-weight: 750 !important;
@@ -1828,7 +1828,7 @@ html[saved-theme="dark"] body sup {
   --code-tag: rgba(189.0825, 81.2175, 81.2175, 1) !important;
   --code-value: rgba(17.85, 124.95, 82.11, 1) !important;
   --code-variable: rgba(177.48, 139.74, 26.52, 1) !important;
-  --codeFont: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --codeFont: "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color-collapsed: rgb(167, 147, 118) !important;
   --color-accent: rgb(167, 147, 118) !important;
   --color-accent-1: rgb(175, 156, 131) !important;
@@ -1870,7 +1870,7 @@ html[saved-theme="dark"] body sup {
   --file-line-width: clamp(600px, 72%, 850px) !important;
   --folder-color: rgb(208, 164, 22) !important;
   --folder-inactive: 85% !important;
-  --font-monospace: '??', "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace: "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "maplemono" !important;
   --font-ui-medium: 16px !important;
   --font-ui-small: 14px !important;
@@ -1897,7 +1897,7 @@ html[saved-theme="dark"] body sup {
   --grid-spacing: 20px !important;
   --h1-color: rgb(189.0825, 81.2175, 81.2175) !important;
   --h1-color-rgb: 189.0825, 81.2175, 81.2175 !important;
-  --h1-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --h1-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --h1-line-height: 46.08px !important;
   --h1-size: 25.6px !important;
   --h1-weight: 750 !important;
@@ -1948,7 +1948,7 @@ html[saved-theme="dark"] body sup {
   --icon-color-active: rgb(167, 147, 118) !important;
   --inline-code: rgba(189.0825, 81.2175, 81.2175, 1) !important;
   --inline-title-color: rgb(189.0825, 81.2175, 81.2175) !important;
-  --inline-title-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --inline-title-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --inline-title-line-height: 46.08px !important;
   --inline-title-size: 25.6px !important;
   --inline-title-weight: 750 !important;

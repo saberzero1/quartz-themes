@@ -47,7 +47,7 @@ export const theme: ThemeData = {
   --blue-900: oklch(98% 0.005 260.58) !important;
   --blue-rgb: 42, 113, 235 !important;
   --blur-background: color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent) linear-gradient(oklch(25.5% 0.021 279.29), color-mix(in srgb, oklch(25.5% 0.021 279.29) 65%, transparent)) !important;
-  --bodyFont: '??', "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-modifier: 300 !important;
   --bold-weight: 700 !important;
   --callout-bug: oklch(48.5% 0.193 13.65);
@@ -97,7 +97,7 @@ export const theme: ThemeData = {
   --code-normal: oklch(92% 0.004 279.29) !important;
   --code-punctuation: oklch(84.5% 0.01 279.29) !important;
   --code-radius: 8px !important;
-  --codeFont: '??', "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: oklch(74.5% 0.018 279.29) !important;
   --dark: oklch(92% 0.004 279.29) !important;
   --darkgray: oklch(92% 0.004 279.29) !important;
@@ -112,9 +112,9 @@ export const theme: ThemeData = {
   --file-margins: 40px 32px !important;
   --flair-background: oklch(25.5% 0.021 279.29) !important;
   --flair-color: oklch(92% 0.004 279.29) !important;
-  --font-mermaid: '??', "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: '??', '??', "Inter", 'Arial' !important;
-  --font-text: '??', "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: "Inter", Arial' !important;
+  --font-text: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Inter" !important;
   --footnote-divider-color: oklch(25.5% 0.021 279.29) !important;
   --footnote-id-color: oklch(84.5% 0.01 279.29) !important;
@@ -168,7 +168,7 @@ export const theme: ThemeData = {
   --h6-color: oklch(84.5% 0.01 279.29) !important;
   --h6-font: "Bricolage Grotesque" !important;
   --h6-weight: 650 !important;
-  --headerFont: '??', "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: oklch(74.5% 0.018 279.29) !important;
   --highlight: oklch(84.5% 0.174 97.11) !important;
   --highlight-text-color: oklch(12% 0.009 279.29) !important;
@@ -349,7 +349,7 @@ export const theme: ThemeData = {
   --text-success: oklch(61.5% 0.183 140.09) !important;
   --text-warning: oklch(61.5% 0.17 46.85) !important;
   --textHighlight: oklch(84.5% 0.174 97.11) !important;
-  --titleFont: '??', "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: oklch(13.5% 0.01 279.29) !important;
   --titlebar-background-focused: oklch(18% 0.014 279.29) !important;
   --titlebar-border-color: oklch(25.5% 0.021 279.29) !important;

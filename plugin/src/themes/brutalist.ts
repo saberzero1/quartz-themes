@@ -136,7 +136,7 @@ export const theme: ThemeData = {
   --font-mermaid: 'iA Writer Quattro S', sans-serif !important;
   --font-monospace: 'Noto Sans Mono', monospace !important;
   --font-monospace-override: 'Noto Sans Mono', monospace !important;
-  --font-print: '??', 'iA Writer Quattro S', sans-serif, 'iA Writer Quattro S', sans-serif, 'Arial' !important;
+  --font-print: iA Writer Quattro S, sans-serif, iA Writer Quattro S, sans-serif, Arial' !important;
   --font-text: 'iA Writer Quattro S', sans-serif !important;
   --font-text-destructive: #ff4b4b !important;
   --font-text-override: 'iA Writer Quattro S', sans-serif !important;
@@ -1536,7 +1536,7 @@ html[saved-theme="dark"] body sup {
   --font-mermaid: 'iA Writer Quattro S', sans-serif !important;
   --font-monospace: 'Noto Sans Mono', monospace !important;
   --font-monospace-override: 'Noto Sans Mono', monospace !important;
-  --font-print: '??', 'iA Writer Quattro S', sans-serif, 'iA Writer Quattro S', sans-serif, 'Arial' !important;
+  --font-print: iA Writer Quattro S, sans-serif, iA Writer Quattro S, sans-serif, Arial' !important;
   --font-text: 'iA Writer Quattro S', sans-serif !important;
   --font-text-destructive: #ff4b4b !important;
   --font-text-override: 'iA Writer Quattro S', sans-serif !important;

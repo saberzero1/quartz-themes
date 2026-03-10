@@ -53,7 +53,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: rgb(205, 214, 244, 7.5%) !important;
   --blockquote-border-color: rgb(180, 190, 254) !important;
   --blur-background: color-mix(in srgb, rgb(49, 50, 68) 65%, transparent) linear-gradient(rgb(49, 50, 68), color-mix(in srgb, rgb(49, 50, 68) 65%, transparent)) !important;
-  --bodyFont: '??', "Vollkorn",
+  --bodyFont: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -109,7 +109,7 @@ export const theme: ThemeData = {
   --code-string: rgb(166, 227, 161) !important;
   --code-tag: rgb(243, 139, 168) !important;
   --code-value: rgb(180, 190, 254) !important;
-  --codeFont: '??', "Vollkorn",
+  --codeFont: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -206,25 +206,25 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid rgb(180, 190, 254) !important;
   --file-header-background: rgb(30, 30, 46) !important;
   --file-header-background-focused: rgb(30, 30, 46) !important;
-  --file-header-font: '??', "Nunito Sans",
+  --file-header-font: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-margins: 32px !important;
   --flair-background: rgb(49, 50, 68) !important;
   --flair-color: rgb(205, 214, 244) !important;
-  --font-interface: '??', "Nunito Sans",
+  --font-interface: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -233,7 +233,7 @@ export const theme: ThemeData = {
     roboto,
     inter,
     sans-serif !important;
-  --font-mermaid: '??', "Vollkorn",
+  --font-mermaid: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -241,15 +241,15 @@ export const theme: ThemeData = {
     roboto,
     inter,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: '??', '??', "Vollkorn",
+  --font-print: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, 'Arial' !important;
-  --font-text: '??', "Vollkorn",
+    sans-serif, Arial' !important;
+  --font-text: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -292,7 +292,7 @@ export const theme: ThemeData = {
   --h5-size: 1.12em !important;
   --h5-weight: 600 !important;
   --h6-size: 1.12em !important;
-  --headerFont: '??', "Vollkorn",
+  --headerFont: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -356,24 +356,24 @@ export const theme: ThemeData = {
   --metadata-border-color: rgb(49, 50, 68) !important;
   --metadata-divider-color: rgb(49, 50, 68) !important;
   --metadata-input-background-active: rgb(205, 214, 244, 7.5%) !important;
-  --metadata-input-font: '??', "Nunito Sans",
+  --metadata-input-font: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: rgb(205, 214, 244) !important;
   --metadata-label-background-active: rgb(205, 214, 244, 7.5%) !important;
-  --metadata-label-font: '??', "Nunito Sans",
+  --metadata-label-font: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: rgb(166, 173, 200) !important;
   --metadata-label-text-color-hover: rgb(166, 173, 200) !important;
   --metadata-property-background-active: rgb(205, 214, 244, 7.5%) !important;
@@ -524,7 +524,7 @@ export const theme: ThemeData = {
   --text-success: rgb(166, 227, 161) !important;
   --text-warning: rgb(250, 179, 135) !important;
   --textHighlight: rgb(245, 224, 220, 100%) !important;
-  --titleFont: '??', "Vollkorn",
+  --titleFont: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -1582,7 +1582,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-summary-background-hover: rgb(76, 79, 105, 7.5%) !important;
   --blockquote-border-color: rgb(114, 135, 253) !important;
   --blur-background: color-mix(in srgb, rgb(239, 241, 245) 65%, transparent) linear-gradient(rgb(239, 241, 245), color-mix(in srgb, rgb(239, 241, 245) 65%, transparent)) !important;
-  --bodyFont: '??', "Vollkorn",
+  --bodyFont: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -1638,7 +1638,7 @@ html[saved-theme="dark"] body sup {
   --code-string: rgb(64, 160, 43) !important;
   --code-tag: rgb(210, 15, 57) !important;
   --code-value: rgb(114, 135, 253) !important;
-  --codeFont: '??', "Vollkorn",
+  --codeFont: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -1735,25 +1735,25 @@ html[saved-theme="dark"] body sup {
   --embed-border-start: 2px solid rgb(114, 135, 253) !important;
   --file-header-background: rgb(239, 241, 245) !important;
   --file-header-background-focused: rgb(239, 241, 245) !important;
-  --file-header-font: '??', "Nunito Sans",
+  --file-header-font: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-margins: 32px !important;
   --flair-background: rgb(204, 208, 218) !important;
   --flair-color: rgb(76, 79, 105) !important;
-  --font-interface: '??', "Nunito Sans",
+  --font-interface: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
@@ -1762,7 +1762,7 @@ html[saved-theme="dark"] body sup {
     roboto,
     inter,
     sans-serif !important;
-  --font-mermaid: '??', "Vollkorn",
+  --font-mermaid: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -1770,15 +1770,15 @@ html[saved-theme="dark"] body sup {
     roboto,
     inter,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: '??', '??', "Vollkorn",
+  --font-print: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, 'Arial' !important;
-  --font-text: '??', "Vollkorn",
+    sans-serif, Arial' !important;
+  --font-text: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -1821,7 +1821,7 @@ html[saved-theme="dark"] body sup {
   --h5-size: 1.12em !important;
   --h5-weight: 600 !important;
   --h6-size: 1.12em !important;
-  --headerFont: '??', "Vollkorn",
+  --headerFont: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -1885,24 +1885,24 @@ html[saved-theme="dark"] body sup {
   --metadata-border-color: rgb(204, 208, 218) !important;
   --metadata-divider-color: rgb(204, 208, 218) !important;
   --metadata-input-background-active: rgb(76, 79, 105, 7.5%) !important;
-  --metadata-input-font: '??', "Nunito Sans",
+  --metadata-input-font: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: rgb(76, 79, 105) !important;
   --metadata-label-background-active: rgb(76, 79, 105, 7.5%) !important;
-  --metadata-label-font: '??', "Nunito Sans",
+  --metadata-label-font: "Nunito Sans",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
     "Microsoft YaHei Light",
     roboto,
     inter,
-    sans-serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: rgb(108, 111, 133) !important;
   --metadata-label-text-color-hover: rgb(108, 111, 133) !important;
   --metadata-property-background-active: rgb(76, 79, 105, 7.5%) !important;
@@ -2053,7 +2053,7 @@ html[saved-theme="dark"] body sup {
   --text-success: rgb(64, 160, 43) !important;
   --text-warning: rgb(254, 100, 11) !important;
   --textHighlight: rgb(220, 138, 120, 100%) !important;
-  --titleFont: '??', "Vollkorn",
+  --titleFont: "Vollkorn",
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",

@@ -29,7 +29,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #fefdf6 !important;
   --blockquote-border-color: rgb(38, 153, 36) !important;
   --blur-background: color-mix(in srgb, #fefdf6 65%, transparent) linear-gradient(#fefdf6, color-mix(in srgb, #fefdf6 65%, transparent)) !important;
-  --bodyFont: '??', Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --button-radius: 0px !important;
   --callout-radius: 0px;
   --canvas-background: #fefdf6 !important;
@@ -45,7 +45,7 @@ export const theme: ThemeData = {
   --code-normal: #1a1a1a !important;
   --code-punctuation: #3b5e40 !important;
   --code-radius: 0px !important;
-  --codeFont: '??', Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --codeFont: Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color-collapsed: rgb(34, 140, 34) !important;
   --color-accent: rgb(34, 140, 34) !important;
   --color-accent-1: rgb(38, 153, 36) !important;
@@ -60,9 +60,9 @@ export const theme: ThemeData = {
   --file-header-background: #fefdf6 !important;
   --file-header-background-focused: #fefdf6 !important;
   --flair-color: #1a1a1a !important;
-  --font-mermaid: '??', Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-print: '??', '??', Garamond, Georgia, serif, 'Arial' !important;
-  --font-text: '??', Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-mermaid: Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: Garamond, Georgia, serif, Arial' !important;
+  --font-text: Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: Garamond, Georgia, serif !important;
   --footnote-id-color: #3b5e40 !important;
   --footnote-radius: 0px !important;
@@ -70,7 +70,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(34, 140, 34) !important;
   --graph-text: #1a1a1a !important;
   --gray: #3b5e40 !important;
-  --headerFont: '??', Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --highlight: rgba(34, 140, 34, 0.1) !important;
   --icon-color: #3b5e40 !important;
   --icon-color-active: rgb(34, 140, 34) !important;
@@ -164,7 +164,7 @@ export const theme: ThemeData = {
   --text-normal: #1a1a1a !important;
   --text-selection: rgba(34, 140, 34, 0.2) !important;
   --textHighlight: rgba(34, 140, 34, 0.1) !important;
-  --titleFont: '??', Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: Garamond, Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #fbfbe0 !important;
   --titlebar-background-focused: #fbfbe0 !important;
   --titlebar-text-color: #3b5e40 !important;

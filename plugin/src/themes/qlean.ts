@@ -194,7 +194,7 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid rgb(204, 204, 204) !important;
   --file-header-background: #0a0a0a !important;
   --file-header-background-focused: #0a0a0a !important;
-  --file-header-font: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+  --file-header-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif !important;
   --flair-color: #d4d4d4 !important;
   --focus-transition-duration: 0.2s !important;
@@ -242,7 +242,7 @@ export const theme: ThemeData = {
     sans-serif !important;
   --font-inline-title-size: 2em !important;
   --font-inline-title-weight: 900 !important;
-  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+  --font-interface: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif !important;
   --font-interface-override: "" !important;
   --font-latex-size: 1em !important;
@@ -342,10 +342,10 @@ export const theme: ThemeData = {
   --list-marker-color-collapsed: rgb(230, 230, 230) !important;
   --list-marker-color-hover: #737373 !important;
   --menu-background: #171717 !important;
-  --metadata-input-font: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+  --metadata-input-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif !important;
   --metadata-input-text-color: #d4d4d4 !important;
-  --metadata-label-font: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+  --metadata-label-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif !important;
   --metadata-label-text-color: #737373 !important;
   --metadata-label-text-color-hover: #737373 !important;
@@ -1705,7 +1705,7 @@ html[saved-theme="dark"] body sup {
   --embed-border-start: 2px solid rgb(0, 0, 0) !important;
   --file-header-background: #fafafa !important;
   --file-header-background-focused: #fafafa !important;
-  --file-header-font: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+  --file-header-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif !important;
   --flair-color: #404040 !important;
   --focus-transition-duration: 0.2s !important;
@@ -1753,7 +1753,7 @@ html[saved-theme="dark"] body sup {
     sans-serif !important;
   --font-inline-title-size: 2em !important;
   --font-inline-title-weight: 900 !important;
-  --font-interface: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+  --font-interface: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif !important;
   --font-interface-override: "" !important;
   --font-latex-size: 1em !important;
@@ -1853,10 +1853,10 @@ html[saved-theme="dark"] body sup {
   --list-marker-color-collapsed: rgb(26, 26, 26) !important;
   --list-marker-color-hover: #737373 !important;
   --menu-background: #f5f5f5 !important;
-  --metadata-input-font: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+  --metadata-input-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif !important;
   --metadata-input-text-color: #404040 !important;
-  --metadata-label-font: "", '??', '??', "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
+  --metadata-label-font: "", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
     sans-serif !important;
   --metadata-label-text-color: #737373 !important;
   --metadata-label-text-color-hover: #737373 !important;

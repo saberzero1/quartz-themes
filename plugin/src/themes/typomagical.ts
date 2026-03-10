@@ -15,14 +15,14 @@ export const theme: ThemeData = {
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(183, 154, 249) !important;
   --blockquote-border-color: #dadada !important;
   --blockquote-border-thickness: 1px !important;
-  --bodyFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --bodyFont: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --bold-weight: 600 !important;
   --checkbox-color: rgb(183, 154, 249) !important;
   --checkbox-color-hover: rgb(222, 211, 253) !important;
   --code-normal: #62d770 !important;
-  --codeFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --codeFont: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --collapse-icon-color-collapsed: rgb(222, 211, 253) !important;
@@ -32,26 +32,26 @@ export const theme: ThemeData = {
   --color-accent-hsl: 258, 88%, 79% !important;
   --divider-color-hover: rgb(183, 154, 249) !important;
   --embed-border-start: 2px solid rgb(183, 154, 249) !important;
-  --file-header-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --file-header-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
-  --font-interface: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --font-interface: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-links: "Alegreya SC", "Spectral", serif !important;
-  --font-mermaid: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --font-mermaid: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
-  --font-print: '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, 'Arial' !important;
-  --font-text: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --font-print: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Arial' !important;
+  --font-text: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-text-theme: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-title: "Playfair Display" !important;
   --graph-node-focused: rgb(222, 211, 253) !important;
-  --headerFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --headerFont: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --heading-weight: 600 !important;
@@ -72,9 +72,9 @@ export const theme: ThemeData = {
   --link-unresolved-decoration-color: rgba(183, 154, 249, 0.3) !important;
   --link-unresolved-opacity: 1 !important;
   --list-marker-color-collapsed: rgb(222, 211, 253) !important;
-  --metadata-input-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --metadata-input-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
-  --metadata-label-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --metadata-label-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --modal-height: 75vh !important;
   --nav-item-background-selected: rgba(183, 154, 249, 0.15) !important;
@@ -103,7 +103,7 @@ export const theme: ThemeData = {
   --textHighlight: rgba(183, 154, 249, 0.1) !important;
   --title-gradient-bottom: rgb(222, 211, 253) !important;
   --title-gradient-top: #dadada !important;
-  --titleFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --titleFont: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --quartz-icon-color: currentColor !important;
@@ -416,33 +416,33 @@ html[saved-theme="dark"] body kbd {
     base: `:root:root {
   --blockquote-border-color: #222222 !important;
   --blockquote-border-thickness: 1px !important;
-  --bodyFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --bodyFont: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --bold-weight: 600 !important;
   --code-normal: #4db95a !important;
-  --codeFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --codeFont: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
-  --file-header-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --file-header-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
-  --font-interface: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --font-interface: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-links: "Alegreya SC", "Spectral", serif !important;
-  --font-mermaid: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --font-mermaid: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
-  --font-print: '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, 'Arial' !important;
-  --font-text: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --font-print: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Arial' !important;
+  --font-text: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-text-theme: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --font-title: "Playfair Display" !important;
-  --headerFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --headerFont: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --heading-weight: 600 !important;
@@ -454,9 +454,9 @@ html[saved-theme="dark"] body kbd {
   --link-external-decoration: none !important;
   --link-unresolved-color: #d5aecf !important;
   --link-unresolved-opacity: 1 !important;
-  --metadata-input-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --metadata-input-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
-  --metadata-label-font: '??', '??', '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --metadata-label-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --modal-height: 75vh !important;
   --table-column-first-border-width: 0 !important;
@@ -469,7 +469,7 @@ html[saved-theme="dark"] body kbd {
   --tag-color-hover: #222222 !important;
   --title-gradient-bottom: color-mix(in hsl, rgb(138, 92, 245), black) !important;
   --title-gradient-top: rgb(138, 92, 245) !important;
-  --titleFont: '??', "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --titleFont: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif !important;
   --quartz-icon-color: currentColor !important;

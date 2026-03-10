@@ -32,8 +32,8 @@ export const theme: ThemeData = {
   --OT-color-on-accent-1: rgb(36, 24, 0) !important;
   --OT-color-on-accent-2: rgb(36, 24, 0) !important;
   --OT-color-on-accent-3: rgb(219, 184, 112) !important;
-  --OT-editMode-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --OT-editMode-font-family: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif,
+  --OT-editMode-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --OT-editMode-font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif,
     												"Comic Sans MS",
 													ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --OT-editMode-line-height: 1.4em !important;
@@ -260,7 +260,7 @@ export const theme: ThemeData = {
   --indentation-guide-width: 1.5px !important;
   --indentation-guide-width-active: 1.5px !important;
   --inline-title-color: rgb(128, 111, 77) !important;
-  --inline-title-font: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --inline-title-font: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --inline-title-line-height: 0em !important;
   --inline-title-size: 18px !important;
   --inline-title-weight: 400 !important;
@@ -1408,8 +1408,8 @@ html[saved-theme="dark"] body sup {
   --OT-color-on-accent-1: rgb(249, 242, 236) !important;
   --OT-color-on-accent-2: rgb(250, 244, 240) !important;
   --OT-color-on-accent-3: rgb(153, 97, 51) !important;
-  --OT-editMode-font: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --OT-editMode-font-family: '??', '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif,
+  --OT-editMode-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --OT-editMode-font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif,
     												"Comic Sans MS",
 													ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --OT-editMode-line-height: 1.4em !important;
@@ -1640,7 +1640,7 @@ html[saved-theme="dark"] body sup {
   --indentation-guide-width: 1.5px !important;
   --indentation-guide-width-active: 1.5px !important;
   --inline-title-color: rgb(202, 171, 145) !important;
-  --inline-title-font: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --inline-title-font: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --inline-title-line-height: 0em !important;
   --inline-title-size: 18px !important;
   --inline-title-weight: 400 !important;

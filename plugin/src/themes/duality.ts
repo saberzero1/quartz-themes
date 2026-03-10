@@ -34,7 +34,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: #b0a38c !important;
   --bases-table-summary-background: #1c1c1c !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.05) !important;
-  --bodyFont: '??', "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bodyFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --button-radius: 6px !important;
   --callout-background: #2a2a2a;
   --callout-border-color: #4a2c2a;
@@ -55,7 +55,7 @@ export const theme: ThemeData = {
   --code-normal: #d4c9b5 !important;
   --code-punctuation: #b0a38c !important;
   --code-string: #b0a38c !important;
-  --codeFont: '??', "Courier New", Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --codeFont: "Courier New", Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: #8c816d !important;
   --collapse-icon-color-collapsed: #ff4500 !important;
   --dark: #d4c9b5 !important;
@@ -68,15 +68,15 @@ export const theme: ThemeData = {
   --embed-block-shadow-hover: 0 0 0 1px #4a2c2a, inset 0 0 0 1px #4a2c2a !important;
   --file-header-background: #1c1c1c !important;
   --file-header-background-focused: #1c1c1c !important;
-  --file-header-font: '??', "Times New Roman", Times, serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --flair-color: #d4c9b5 !important;
-  --font-interface: '??', "Times New Roman", Times, serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Times New Roman", Times, serif !important;
-  --font-mermaid: '??', "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace: '??', "Courier New", Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-mermaid: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "Courier New", Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "Courier New", Courier, monospace !important;
-  --font-print: '??', '??', "Times New Roman", Times, serif, 'Arial' !important;
-  --font-text: '??', "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-print: "Times New Roman", Times, serif, Arial' !important;
+  --font-text: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Times New Roman", Times, serif !important;
   --footnote-divider-color: #4a2c2a !important;
   --footnote-id-color: #b0a38c !important;
@@ -99,7 +99,7 @@ export const theme: ThemeData = {
   --h5-size: 1em !important;
   --h6-color: #b0a38c !important;
   --h6-size: 0.9em !important;
-  --headerFont: '??', "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --headerFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #8c816d !important;
   --highlight: rgba(255, 69, 0, 0.9) !important;
   --hr-color: #4a2c2a !important;
@@ -129,10 +129,10 @@ export const theme: ThemeData = {
   --metadata-border-color: #4a2c2a !important;
   --metadata-divider-color: #4a2c2a !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.05) !important;
-  --metadata-input-font: '??', "Times New Roman", Times, serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: #d4c9b5 !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.05) !important;
-  --metadata-label-font: '??', "Times New Roman", Times, serif, '??', ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: #b0a38c !important;
   --metadata-label-text-color-hover: #b0a38c !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.05) !important;
@@ -220,7 +220,7 @@ export const theme: ThemeData = {
   --text-on-accent: #000000 !important;
   --text-selection: rgba(255, 69, 0, 0.3) !important;
   --textHighlight: rgba(255, 69, 0, 0.9) !important;
-  --titleFont: '??', "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --titleFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #151515 !important;
   --titlebar-background-focused: #151515 !important;
   --titlebar-border-color: #4a2c2a !important;
@@ -1170,7 +1170,6 @@ html[saved-theme="dark"] body sup {
   --indentation-guide-color-active: #88a3ff !important;
   --indentation-guide-width-active: 2px !important;
   --inline-title-color: #6a1b9a !important;
-  --inline-title-font: '??' !important;
   --inline-title-line-height: 1.4 !important;
   --inline-title-size: 2em !important;
   --input-date-separator: #7896f0 !important;

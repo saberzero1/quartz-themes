@@ -58,7 +58,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: rgb(28, 32, 38) !important;
   --blockquote-border-color: rgb(0, 176, 179) !important;
   --blur-background: color-mix(in srgb, rgb(31, 36, 45) 65%, transparent) linear-gradient(rgb(31, 36, 45), color-mix(in srgb, rgb(31, 36, 45) 65%, transparent)) !important;
-  --bodyFont: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --bodyFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --button-background: hsl(
     183,
     105%,
@@ -170,7 +170,7 @@ export const theme: ThemeData = {
   --file-emoji: "Noto Emoji" !important;
   --file-header-background: rgb(28, 32, 38) !important;
   --file-header-background-focused: rgb(28, 32, 38) !important;
-  --file-header-font: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --file-header-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --file-line-width: 900px !important;
   --flair-background: rgb(31, 36, 45) !important;
   --flair-color: #c8d4e6 !important;
@@ -185,11 +185,11 @@ export const theme: ThemeData = {
   --folder-padding: 4px !important;
   --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-emoji: "Noto Color Emoji" !important;
-  --font-interface: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-interface: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-main: "Nunito Sans" !important;
-  --font-mermaid: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-mermaid: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-monospace: "DM Mono", monospace !important;
-  --font-text: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-text: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --footnote-divider-color: rgb(41, 49, 61) !important;
   --footnote-id-color: rgb(154, 163, 183) !important;
   --footnote-id-color-no-occurrences: rgb(114, 125, 146) !important;
@@ -227,7 +227,7 @@ export const theme: ThemeData = {
   --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --h6-size: 1.1em !important;
   --h6-weight: 700 !important;
-  --headerFont: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --headerFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --heading-formatting: rgb(114, 125, 146) !important;
@@ -292,9 +292,9 @@ export const theme: ThemeData = {
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-border-color: rgb(41, 49, 61) !important;
   --metadata-divider-color: rgb(41, 49, 61) !important;
-  --metadata-input-font: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --metadata-input-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --metadata-input-text-color: #c8d4e6 !important;
-  --metadata-label-font: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --metadata-label-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --metadata-label-text-color: rgb(154, 163, 183) !important;
   --metadata-label-text-color-hover: rgb(154, 163, 183) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px rgb(64, 75, 94) !important;
@@ -450,7 +450,7 @@ export const theme: ThemeData = {
   --tile-img-radius: 14px !important;
   --tile-padding: 8px !important;
   --tile-radius: 14px !important;
-  --titleFont: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --titleFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --titlebar-background: rgb(33, 39, 49) !important;
   --titlebar-background-focused: rgb(31, 36, 45) !important;
   --titlebar-border-color: rgb(41, 49, 61) !important;
@@ -1670,7 +1670,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-summary-background: rgb(255, 255, 255) !important;
   --blockquote-border-color: rgb(0, 168, 160) !important;
   --blur-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent)) !important;
-  --bodyFont: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --bodyFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --button-background: hsl(
     183,
     105%,
@@ -1786,7 +1786,7 @@ html[saved-theme="dark"] body sup {
   --file-emoji: "Noto Emoji" !important;
   --file-header-background: rgb(255, 255, 255) !important;
   --file-header-background-focused: rgb(255, 255, 255) !important;
-  --file-header-font: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --file-header-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --file-line-width: 900px !important;
   --flair-background: rgb(255, 255, 255) !important;
   --flair-color: #252525 !important;
@@ -1801,11 +1801,11 @@ html[saved-theme="dark"] body sup {
   --folder-padding: 4px !important;
   --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-emoji: "Noto Color Emoji" !important;
-  --font-interface: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-interface: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-main: "Nunito Sans" !important;
-  --font-mermaid: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-mermaid: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-monospace: "DM Mono", monospace !important;
-  --font-text: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-text: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --footnote-divider-color: #9f9f9f66 !important;
   --footnote-id-color: #7f7f7f !important;
   --footnote-id-color-no-occurrences: #878787 !important;
@@ -1843,7 +1843,7 @@ html[saved-theme="dark"] body sup {
   --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --h6-size: 1.1em !important;
   --h6-weight: 700 !important;
-  --headerFont: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --headerFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --heading-formatting: #878787 !important;
@@ -1910,9 +1910,9 @@ html[saved-theme="dark"] body sup {
   --menu-radius: 14px !important;
   --metadata-border-color: #9f9f9f66 !important;
   --metadata-divider-color: #9f9f9f66 !important;
-  --metadata-input-font: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --metadata-input-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --metadata-input-text-color: #252525 !important;
-  --metadata-label-font: '??', '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --metadata-label-font: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --metadata-label-text-color: #7f7f7f !important;
   --metadata-label-text-color-hover: #7f7f7f !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #d7d7d7 !important;
@@ -2062,7 +2062,7 @@ html[saved-theme="dark"] body sup {
   --tile-img-radius: 14px !important;
   --tile-padding: 8px !important;
   --tile-radius: 14px !important;
-  --titleFont: '??', '??', "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --titleFont: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --titlebar-background: rgb(245, 245, 245) !important;
   --titlebar-border-color: #9f9f9f66 !important;
   --titlebar-text-color: #7f7f7f !important;
