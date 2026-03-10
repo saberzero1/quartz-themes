@@ -44,6 +44,9 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
 
   return {
     name: "QuartzTheme",
+    textTransform(_ctx, src) {
+      return src;
+    },
     externalResources() {
       return {
         css: resolvedCSS ? [{ content: resolvedCSS, inline: true }] : [],
