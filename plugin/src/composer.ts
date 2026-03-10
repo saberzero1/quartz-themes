@@ -6,6 +6,7 @@
  */
 
 import type { AspectCSS, AspectKey, ThemeData, ThemeOptions } from "./types";
+import { TEMPLATE_CSS } from "./templateCSS";
 import { resolveThemeId, loadTheme } from "./registry";
 
 /** All aspect keys in the order they should appear in the CSS output. */
@@ -75,7 +76,7 @@ export function composeCSS(options: ThemeOptions): string {
     if (lightCSS) parts.push(lightCSS);
   }
 
-  return parts.join("\n");
+  return parts.join("\n") + "\n" + TEMPLATE_CSS;
 }
 
 /**
