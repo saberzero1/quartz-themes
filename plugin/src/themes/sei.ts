@@ -288,13 +288,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
 html[saved-theme="dark"] body a.internal.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(37, 38, 39);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(37, 38, 39);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: rgb(32, 33, 34);
   padding-bottom: 5px;

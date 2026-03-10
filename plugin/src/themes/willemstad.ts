@@ -875,7 +875,6 @@ html[saved-theme="dark"] body ol > li {
 }
 
 html[saved-theme="dark"] body ol.overflow {
-  background-color: oklch(0.13 0 0);
   border-bottom-color: oklch(0.98 0 0);
   border-left-color: oklch(0.98 0 0);
   border-right-color: oklch(0.98 0 0);
@@ -887,7 +886,6 @@ html[saved-theme="dark"] body ul > li {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: oklch(0.13 0 0);
   border-bottom-color: oklch(0.98 0 0);
   border-left-color: oklch(0.98 0 0);
   border-right-color: oklch(0.98 0 0);
@@ -2716,7 +2714,6 @@ html[saved-theme="light"] body ol > li {
 }
 
 html[saved-theme="light"] body ol.overflow {
-  background-color: oklch(1 0 0);
   border-bottom-color: oklch(0 0 0);
   border-left-color: oklch(0 0 0);
   border-right-color: oklch(0 0 0);
@@ -2728,7 +2725,6 @@ html[saved-theme="light"] body ul > li {
 }
 
 html[saved-theme="light"] body ul.overflow {
-  background-color: oklch(1 0 0);
   border-bottom-color: oklch(0 0 0);
   border-left-color: oklch(0 0 0);
   border-right-color: oklch(0 0 0);

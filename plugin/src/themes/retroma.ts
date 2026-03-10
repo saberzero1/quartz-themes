@@ -696,13 +696,6 @@ html[saved-theme="dark"] body a.internal.broken {
   font-weight: 700;
   outline: oklch(0.8 0.08 292.488 / 0.6) none 0px;
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: oklch(0.28 0.0651598 262.488);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: oklch(0.28 0.0651598 262.488);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: oklch(0.24 0.0651598 292.488 / 0.4);
   padding-bottom: 4px;
@@ -2030,13 +2023,6 @@ html[saved-theme="light"] body a.internal.broken {
   color: oklch(0.5 0.12 293.56 / 0.6);
   font-weight: 700;
   outline: oklch(0.5 0.12 293.56 / 0.6) none 0px;
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: oklch(0.93 0.0756825 263.56);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: oklch(0.93 0.0756825 263.56);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   background-color: oklch(0.8 0.0756825 293.56 / 0.4);

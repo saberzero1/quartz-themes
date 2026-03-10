@@ -788,7 +788,6 @@ html[saved-theme="dark"] body ol > li {
 }
 
 html[saved-theme="dark"] body ol.overflow {
-  background-color: oklch(0.235 0.00125 281);
   border-bottom-color: oklch(0.85 0.00375 281);
   border-left-color: oklch(0.85 0.00375 281);
   border-right-color: oklch(0.85 0.00375 281);
@@ -800,7 +799,6 @@ html[saved-theme="dark"] body ul > li {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: oklch(0.235 0.00125 281);
   border-bottom-color: oklch(0.85 0.00375 281);
   border-left-color: oklch(0.85 0.00375 281);
   border-right-color: oklch(0.85 0.00375 281);
@@ -2557,7 +2555,6 @@ html[saved-theme="light"] body ol > li {
 }
 
 html[saved-theme="light"] body ol.overflow {
-  background-color: oklch(0.99 0.0005 281);
   border-bottom-color: oklch(0.3 0.0005 281);
   border-left-color: oklch(0.3 0.0005 281);
   border-right-color: oklch(0.3 0.0005 281);
@@ -2569,7 +2566,6 @@ html[saved-theme="light"] body ul > li {
 }
 
 html[saved-theme="light"] body ul.overflow {
-  background-color: oklch(0.99 0.0005 281);
   border-bottom-color: oklch(0.3 0.0005 281);
   border-left-color: oklch(0.3 0.0005 281);
   border-right-color: oklch(0.3 0.0005 281);

@@ -707,7 +707,6 @@ html[saved-theme="dark"] body ol > li {
 }
 
 html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(10, 10, 11);
   border-bottom-color: rgb(229, 228, 231);
   border-left-color: rgb(229, 228, 231);
   border-right-color: rgb(229, 228, 231);
@@ -719,7 +718,6 @@ html[saved-theme="dark"] body ul > li {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(10, 10, 11);
   border-bottom-color: rgb(229, 228, 231);
   border-left-color: rgb(229, 228, 231);
   border-right-color: rgb(229, 228, 231);

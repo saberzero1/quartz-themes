@@ -166,13 +166,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
 html[saved-theme="dark"] body a.internal.broken {
   font-family: "??", Satoshi, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(16, 16, 16);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(16, 16, 16);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   font-family: "??", Satoshi, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,

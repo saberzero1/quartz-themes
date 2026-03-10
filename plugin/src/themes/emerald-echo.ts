@@ -183,13 +183,6 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration: underline 1px rgba(138, 92, 245, 0.3);
   text-decoration-thickness: 1px;
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(0, 0, 0);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: rgba(17, 33, 1, 0.61);
 }`,

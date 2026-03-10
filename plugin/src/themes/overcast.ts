@@ -110,16 +110,8 @@ html body ol > li {
   color: rgb(255, 255, 255);
 }
 
-html body ol.overflow {
-  background-color: rgba(0, 0, 0, 0);
-}
-
 html body ul > li {
   color: rgb(255, 255, 255);
-}
-
-html body ul.overflow {
-  background-color: rgba(0, 0, 0, 0);
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(255, 255, 255);

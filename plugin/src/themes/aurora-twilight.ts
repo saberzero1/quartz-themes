@@ -175,7 +175,6 @@ html[saved-theme="dark"] body a.internal.broken {
   font-family: "??", Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(2, 4, 34);
   border-bottom-color: rgb(221, 221, 253);
   border-left-color: rgb(221, 221, 253);
   border-right-color: rgb(221, 221, 253);
@@ -183,7 +182,6 @@ html[saved-theme="dark"] body a.internal.broken {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(2, 4, 34);
   border-bottom-color: rgb(221, 221, 253);
   border-left-color: rgb(221, 221, 253);
   border-right-color: rgb(221, 221, 253);
@@ -795,7 +793,6 @@ html[saved-theme="light"] body a.internal.broken {
   font-family: "??", Cabin, Quicksand, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(221, 223, 253);
   border-bottom-color: rgb(2, 2, 34);
   border-left-color: rgb(2, 2, 34);
   border-right-color: rgb(2, 2, 34);
@@ -803,7 +800,6 @@ html[saved-theme="light"] body a.internal.broken {
 }
 
 html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(221, 223, 253);
   border-bottom-color: rgb(2, 2, 34);
   border-left-color: rgb(2, 2, 34);
   border-right-color: rgb(2, 2, 34);

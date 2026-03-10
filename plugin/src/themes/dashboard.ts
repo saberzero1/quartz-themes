@@ -281,13 +281,6 @@ html body a.internal.broken {
   color: rgb(126, 149, 115);
   outline: rgb(126, 149, 115) none 0px;
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(250, 250, 250);
-}
-
-html body ul.overflow {
-  background-color: rgb(250, 250, 250);
-}`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(78, 77, 73);
   text-decoration: rgba(172, 183, 167, 0);

@@ -138,13 +138,6 @@ html[saved-theme="dark"] body div#quartz-root {
   text-decoration: underline rgb(184, 153, 255);
   text-decoration-color: rgb(184, 153, 255);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(16, 14, 21);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(16, 14, 21);
-}`,
     tables: `html[saved-theme="dark"] body td {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
@@ -682,13 +675,6 @@ html[saved-theme="light"] body div#quartz-root {
   outline: rgb(47, 0, 158) none 0px;
   text-decoration: underline rgb(47, 0, 158);
   text-decoration-color: rgb(47, 0, 158);
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(244, 240, 255);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(244, 240, 255);
 }`,
     tables: `html[saved-theme="light"] body td {
   border-bottom-color: rgba(0, 0, 0, 0);

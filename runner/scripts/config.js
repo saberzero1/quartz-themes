@@ -389,7 +389,7 @@ export const config = [
       "a.internal:hover, .breadcrumb-container .breadcrumb-element > a:hover",
     pseudoElement: "",
     properties: [
-      "text-decoration",
+      // "text-decoration",
       "text-decoration-color",
       "text-decoration-line",
       "text-decoration-style",
@@ -2123,14 +2123,16 @@ export const config = [
     publishSelector: `.view-content`,
     quartzSelector: "ul.overflow",
     pseudoElement: "",
-    properties: ["background-color", ...defaults.border],
+    properties: [...defaults.border],
+    // properties: ["background-color", ...defaults.border],
   },
   {
     obsidianSelector: `.view-content`,
     publishSelector: `.view-content`,
     quartzSelector: "ol.overflow",
     pseudoElement: "",
-    properties: ["background-color", ...defaults.border],
+    properties: [...defaults.border],
+    // properties: ["background-color", ...defaults.border],
   },
   // === CODE BLOCK WITH TITLE ===
   {

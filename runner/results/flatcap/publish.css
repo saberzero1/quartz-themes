@@ -1217,7 +1217,6 @@ body .markdown-rendered a.external-link:hover {
   color: rgb(166, 138, 249);
 }
 body .markdown-rendered a.internal-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
   text-decoration-color: rgb(166, 138, 249);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2948,7 +2947,6 @@ body .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body .view-content {
-  background-color: rgb(18, 20, 24);
   border-color: rgb(203, 206, 213);
   border-width: 0px;
   border-top-left-radius: 0px;

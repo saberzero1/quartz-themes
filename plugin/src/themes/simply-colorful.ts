@@ -320,13 +320,6 @@ html[saved-theme="dark"] body a.internal.broken {
   filter: grayscale(0.25);
   outline: rgb(138, 92, 245) none 0px;
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(25, 25, 25);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(25, 25, 25);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: rgba(138, 92, 245, 0.05);
   padding-bottom: 20px;
@@ -1121,13 +1114,6 @@ html[saved-theme="light"] body a.internal.broken {
   color: rgb(126, 85, 221);
   filter: grayscale(0.25);
   outline: rgb(126, 85, 221) none 0px;
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(247, 247, 247);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(247, 247, 247);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(170, 170, 170);

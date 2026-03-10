@@ -392,13 +392,6 @@ html body a.internal.broken {
   text-decoration: underline rgba(0, 136, 255, 0.3);
   text-decoration-color: rgba(0, 136, 255, 0.3);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(0, 34, 64);
-}
-
-html body ul.overflow {
-  background-color: rgb(0, 34, 64);
-}`,
     tables: `html body tbody tr:nth-child(odd) {
   background-color: rgba(0, 136, 255, 0.05);
 }

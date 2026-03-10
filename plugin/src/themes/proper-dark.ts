@@ -91,13 +91,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(22, 26, 29);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(22, 26, 29);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(22, 26, 29);
-}`,
     code: `html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(11, 13, 15);
 }

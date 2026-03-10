@@ -1154,9 +1154,9 @@ body.theme-light {
   --vault-name-color: #5770b9 !important;
   --bold-color: #eb5325 !important;
   --italic-color: #5770b9 !important;
-  --bases-embed-padding: 4px !important;
   --bases-border-r: 16px !important;
   --bases-cards-group-padding: 16px !important;
+  --bases-embed-padding: 4px !important;
   --bases-no-img-str: "No image path could be found for this file" !important;
   --cm-font-size: 15.37127px !important;
   --cm-panel-bg: color-mix(
@@ -2731,9 +2731,9 @@ body.theme-dark {
   --vault-name-color: rgb(147, 238, 109) !important;
   --bold-color: #c03a47 !important;
   --italic-color: #92a871 !important;
-  --bases-embed-padding: 4px !important;
   --bases-border-r: 16px !important;
   --bases-cards-group-padding: 16px !important;
+  --bases-embed-padding: 4px !important;
   --bases-no-img-str: "No image path could be found for this file" !important;
   --cm-font-size: 15.37127px !important;
   --cm-panel-bg: #14161c !important;
@@ -3421,7 +3421,6 @@ body .markdown-rendered a.external-link:hover {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
 }
 body .markdown-rendered a.internal-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
   text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -5288,7 +5287,6 @@ body .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body .view-content {
-  background-color: light-dark(rgb(250, 247, 239), rgb(25, 29, 40));
   border-color: light-dark(rgb(8, 8, 8), rgb(211, 213, 211));
   border-width: 0px;
   border-top-left-radius: 0px;

@@ -492,7 +492,6 @@ html body ol > li {
 }
 
 html body ol.overflow {
-  background-color: oklch(0.135 0.01 279.29);
   border-bottom-color: oklch(0.92 0.004 279.29);
   border-left-color: oklch(0.92 0.004 279.29);
   border-right-color: oklch(0.92 0.004 279.29);
@@ -504,7 +503,6 @@ html body ul > li {
 }
 
 html body ul.overflow {
-  background-color: oklch(0.135 0.01 279.29);
   border-bottom-color: oklch(0.92 0.004 279.29);
   border-left-color: oklch(0.92 0.004 279.29);
   border-right-color: oklch(0.92 0.004 279.29);

@@ -335,13 +335,6 @@ html body p {
   text-decoration: rgb(102, 102, 102);
   text-decoration-color: rgb(102, 102, 102);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(4, 8, 18);
-}
-
-html body ul.overflow {
-  background-color: rgb(4, 8, 18);
-}`,
     blockquotes: `html body blockquote {
   background-color: rgb(15, 17, 22);
 }`,

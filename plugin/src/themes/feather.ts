@@ -409,13 +409,6 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration: underline rgba(77, 140, 230, 0.3);
   text-decoration-color: rgba(77, 140, 230, 0.3);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(51, 53, 71);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(51, 53, 71);
-}`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(93, 109, 126);
   text-decoration: rgb(93, 109, 126);
@@ -1230,13 +1223,6 @@ html[saved-theme="light"] body a.internal.broken {
   outline: rgb(77, 140, 230) none 0px;
   text-decoration: underline rgba(77, 140, 230, 0.3);
   text-decoration-color: rgba(77, 140, 230, 0.3);
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(244, 244, 242);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(244, 244, 242);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(162, 170, 179);

@@ -2010,7 +2010,6 @@ body .markdown-rendered a.external-link:hover {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
 }
 body .markdown-rendered a.internal-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
   text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3701,7 +3700,6 @@ body .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body .view-content {
-  background-color: light-dark(rgb(221, 223, 253), rgb(2, 4, 34));
   border-color: light-dark(rgb(2, 2, 34), rgb(221, 221, 253));
   border-width: 0px;
   border-top-left-radius: 0px;

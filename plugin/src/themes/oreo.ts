@@ -365,13 +365,6 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration-style: dashed;
   text-decoration-thickness: 1px;
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(0, 0, 0);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: rgb(26, 26, 26);
 }`,

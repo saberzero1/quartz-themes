@@ -275,13 +275,6 @@ html body a.internal.broken {
   text-decoration: underline rgba(18, 115, 82, 0.3);
   text-decoration-color: rgba(18, 115, 82, 0.3);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(20, 26, 31);
-}
-
-html body ul.overflow {
-  background-color: rgb(20, 26, 31);
-}`,
     blockquotes: `html body blockquote {
   font-style: italic;
 }`,

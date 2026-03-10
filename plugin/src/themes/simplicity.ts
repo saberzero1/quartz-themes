@@ -155,13 +155,6 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration: rgb(80, 190, 185);
   text-decoration-color: rgb(80, 190, 185);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(16, 43, 43);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(16, 43, 43);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   padding-bottom: 20px;
   padding-top: 20px;

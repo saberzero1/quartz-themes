@@ -188,13 +188,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
 html[saved-theme="dark"] body a.internal.broken {
   transition: opacity 0.25s ease-in-out;
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgba(0, 0, 0, 0);
-}`,
     tables: `html[saved-theme="dark"] body td {
   border-bottom-color: rgba(255, 255, 255, 0.063);
   border-left-color: rgba(255, 255, 255, 0.063);
@@ -637,13 +630,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
 
 html[saved-theme="light"] body a.internal.broken {
   transition: opacity 0.25s ease-in-out;
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgba(0, 0, 0, 0);
 }`,
     tables: `html[saved-theme="light"] body td {
   border-bottom-color: rgba(255, 255, 255, 0.063);

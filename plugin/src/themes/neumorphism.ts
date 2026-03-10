@@ -44,13 +44,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(28, 28, 28);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(28, 28, 28);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(28, 28, 28);
-}`,
     images: `html[saved-theme="dark"] body img {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

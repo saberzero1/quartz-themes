@@ -97,13 +97,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(50, 50, 50);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(50, 50, 50);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(50, 50, 50);
-}`,
     tables: `html[saved-theme="dark"] body .spacer {
   background-color: rgb(50, 50, 50);
 }
@@ -429,13 +422,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 }
 
 html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(239, 220, 188);
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(239, 220, 188);
-}
-
-html[saved-theme="light"] body ul.overflow {
   background-color: rgb(239, 220, 188);
 }`,
     tables: `html[saved-theme="light"] body .spacer {

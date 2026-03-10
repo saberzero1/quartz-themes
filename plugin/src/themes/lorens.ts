@@ -634,7 +634,6 @@ html body ol > li {
 }
 
 html body ol.overflow {
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(204, 212, 224);
   border-left-color: rgb(204, 212, 224);
   border-right-color: rgb(204, 212, 224);
@@ -646,7 +645,6 @@ html body ul > li {
 }
 
 html body ul.overflow {
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(204, 212, 224);
   border-left-color: rgb(204, 212, 224);
   border-right-color: rgb(204, 212, 224);

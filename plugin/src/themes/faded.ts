@@ -799,7 +799,6 @@ html body a.internal.broken {
   text-decoration-color: rgba(139, 108, 239, 0.3);
 }`,
     lists: `html body ol.overflow {
-  background-color: rgb(35, 40, 48);
   border-bottom-color: rgb(214, 186, 124);
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -809,7 +808,6 @@ html body a.internal.broken {
 }
 
 html body ul.overflow {
-  background-color: rgb(35, 40, 48);
   border-bottom-color: rgb(214, 186, 124);
   border-bottom-style: solid;
   border-bottom-width: 2px;

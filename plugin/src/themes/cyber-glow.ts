@@ -400,13 +400,11 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration-color: rgba(76, 173, 214, 0.3);
 }`,
     lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgba(76, 173, 214, 0.1);
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: rgba(76, 173, 214, 0.1);
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }`,
@@ -1436,13 +1434,11 @@ html[saved-theme="light"] body a.internal.broken {
   text-decoration-color: rgba(92, 192, 235, 0.3);
 }`,
     lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgba(92, 192, 235, 0.1);
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }
 
 html[saved-theme="light"] body ul.overflow {
-  background-color: rgba(92, 192, 235, 0.1);
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }`,
