@@ -69,7 +69,7 @@ html body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+    explorer: `html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(92, 92, 92);
   cursor: default;
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

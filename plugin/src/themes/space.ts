@@ -191,64 +191,64 @@ html body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(24, 29, 39);
   color: rgb(216, 215, 223);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(24, 29, 39);
   color: rgb(216, 215, 223);
 }
 
-body .page > div#quartz-body div.sidebar {
+html body .page > div#quartz-body div.sidebar {
   background-color: rgb(24, 29, 39);
   color: rgb(216, 215, 223);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(36, 43, 58);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(24, 29, 39);
   border-left-color: rgb(36, 43, 58);
   color: rgb(216, 215, 223);
 }
 
-body div#quartz-root {
+html body div#quartz-root {
   background-color: rgb(24, 29, 39);
   color: rgb(216, 215, 223);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html body .page article p > b, b {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body .page article p > em, em {
+html body .page article p > em, em {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body .page article p > i, i {
+html body .page article p > i, i {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body .page article p > strong, strong {
+html body .page article p > strong, strong {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body .text-highlight {
+html body .text-highlight {
   background-color: rgb(219, 84, 97);
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
@@ -256,17 +256,17 @@ body .text-highlight {
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body del {
+html body del {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
   text-decoration: line-through rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body p {
+html body p {
   font-family: "Bai Jamjuree";
 }`,
-    links: `body a.external, footer a {
+    links: `html body a.external, footer a {
   color: rgb(255, 230, 153);
   font-family: "Bai Jamjuree";
   outline: rgb(255, 230, 153) none 0px;
@@ -274,7 +274,7 @@ body p {
   text-decoration-color: rgb(255, 230, 153);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 230, 153);
   font-family: "Bai Jamjuree";
   outline: rgb(255, 230, 153) none 0px;
@@ -282,24 +282,24 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgb(255, 230, 153);
 }
 
-body a.internal.broken {
+html body a.internal.broken {
   color: rgb(255, 230, 153);
   font-family: "Bai Jamjuree";
   outline: rgb(255, 230, 153) none 0px;
 }`,
-    lists: `body dd {
+    lists: `html body dd {
   color: rgb(216, 215, 223);
 }
 
-body dt {
+html body dt {
   color: rgb(216, 215, 223);
 }
 
-body ol > li {
+html body ol > li {
   color: rgb(216, 215, 223);
 }
 
-body ol.overflow {
+html body ol.overflow {
   background-color: rgb(24, 29, 39);
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
@@ -307,39 +307,39 @@ body ol.overflow {
   border-top-color: rgb(216, 215, 223);
 }
 
-body ul > li {
+html body ul > li {
   color: rgb(216, 215, 223);
 }
 
-body ul.overflow {
+html body ul.overflow {
   background-color: rgb(24, 29, 39);
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html body .data-footnote-backref {
   color: rgb(178, 178, 184);
   text-decoration: rgb(178, 178, 184);
 }
 
-body blockquote {
+html body blockquote {
   font-family: "Bai Jamjuree";
 }`,
-    tables: `body .table-container {
+    tables: `html body .table-container {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }
 
-body table {
+html body table {
   color: rgb(216, 215, 223);
   font-family: "Bai Jamjuree";
   width: 194.781px;
 }
 
-body td {
+html body td {
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
   border-right-color: rgb(36, 43, 58);
@@ -347,7 +347,7 @@ body td {
   color: rgb(216, 215, 223);
 }
 
-body th {
+html body th {
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
   border-right-color: rgb(36, 43, 58);
@@ -355,16 +355,16 @@ body th {
   color: rgb(216, 215, 223);
 }
 
-body thead {
+html body thead {
   border-bottom-color: rgb(36, 43, 58);
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }
 
-body tr {
+html body tr {
   border-bottom-color: rgb(36, 43, 58);
 }`,
-    code: `body code {
+    code: `html body code {
   background-color: rgb(15, 18, 24);
   border-bottom-color: rgb(190, 183, 223);
   border-left-color: rgb(190, 183, 223);
@@ -378,7 +378,7 @@ body tr {
   padding-top: 4px;
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(15, 18, 24);
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
@@ -386,7 +386,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-color: rgb(36, 43, 58);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(15, 18, 24);
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
@@ -395,7 +395,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(216, 215, 223);
 }
 
-body pre > code, pre:has(> code) {
+html body pre > code, pre:has(> code) {
   background-color: rgb(15, 18, 24);
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
@@ -403,54 +403,54 @@ body pre > code, pre:has(> code) {
   border-top-color: rgb(36, 43, 58);
 }
 
-body pre:has(> code) {
+html body pre:has(> code) {
   background-color: rgb(15, 18, 24);
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
   border-right-color: rgb(36, 43, 58);
   border-top-color: rgb(36, 43, 58);
 }`,
-    images: `body audio {
+    images: `html body audio {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }
 
-body figcaption {
+html body figcaption {
   color: rgb(216, 215, 223);
 }
 
-body figure {
+html body figure {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }
 
-body img {
+html body img {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }
 
-body video {
+html body video {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html body .file-embed {
   background-color: rgb(24, 29, 39);
 }
 
-body .footnotes {
+html body .footnotes {
   border-top-color: rgb(216, 215, 223);
   color: rgb(216, 215, 223);
 }
 
-body .transclude {
+html body .transclude {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(219, 84, 97);
   border-right-color: rgb(216, 215, 223);
@@ -459,7 +459,7 @@ body .transclude {
   padding-right: 10px;
 }
 
-body .transclude-inner {
+html body .transclude-inner {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(219, 84, 97);
   border-right-color: rgb(216, 215, 223);
@@ -467,121 +467,121 @@ body .transclude-inner {
   padding-left: 10px;
   padding-right: 10px;
 }`,
-    checkboxes: `body input[type=checkbox] {
+    checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(107, 154, 182);
   border-left-color: rgb(107, 154, 182);
   border-right-color: rgb(107, 154, 182);
   border-top-color: rgb(107, 154, 182);
 }
 
-body li.task-list-item[data-task='!'] {
+html body li.task-list-item[data-task='!'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='*'] {
+html body li.task-list-item[data-task='*'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='-'] {
+html body li.task-list-item[data-task='-'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='/'] {
+html body li.task-list-item[data-task='/'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='>'] {
+html body li.task-list-item[data-task='>'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='?'] {
+html body li.task-list-item[data-task='?'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='I'] {
+html body li.task-list-item[data-task='I'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='S'] {
+html body li.task-list-item[data-task='S'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='b'] {
+html body li.task-list-item[data-task='b'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='c'] {
+html body li.task-list-item[data-task='c'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='d'] {
+html body li.task-list-item[data-task='d'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='f'] {
+html body li.task-list-item[data-task='f'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='i'] {
+html body li.task-list-item[data-task='i'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='k'] {
+html body li.task-list-item[data-task='k'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='l'] {
+html body li.task-list-item[data-task='l'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='p'] {
+html body li.task-list-item[data-task='p'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='u'] {
+html body li.task-list-item[data-task='u'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body li.task-list-item[data-task='w'] {
+html body li.task-list-item[data-task='w'] {
   color: rgb(216, 215, 223);
   text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }`,
-    search: `body .search > .search-button {
+    search: `html body .search > .search-button {
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
   border-right-color: rgb(36, 43, 58);
@@ -590,11 +590,11 @@ body li.task-list-item[data-task='w'] {
   font-family: "Bai Jamjuree";
 }
 
-body .search > .search-container > .search-space {
+html body .search > .search-container > .search-space {
   background-color: rgb(24, 29, 39);
 }
 
-body .search > .search-container > .search-space > * {
+html body .search > .search-container > .search-space > * {
   color: rgb(216, 215, 223);
   font-family: "Bai Jamjuree";
   outline: rgb(216, 215, 223) none 0px;
@@ -602,34 +602,34 @@ body .search > .search-container > .search-space > * {
   text-decoration-color: rgb(216, 215, 223);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(216, 215, 223);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(216, 215, 223);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(219, 84, 97);
   color: rgb(216, 215, 223);
 }
 
-body .search > .search-container > .search-space > input {
+html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(24, 29, 39);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   background-color: rgb(219, 84, 97);
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
@@ -638,66 +638,66 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(216, 215, 223);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(219, 84, 97);
   color: rgb(216, 215, 223);
 }
 
-body a.internal.tag-link::before {
+html body a.internal.tag-link::before {
   color: rgb(255, 230, 153);
 }
 
-body h1 {
+html body h1 {
   color: rgb(190, 183, 223);
   font-family: "Bai Jamjuree";
 }
 
-body h2 {
+html body h2 {
   color: rgb(255, 216, 94);
   font-family: "Bai Jamjuree";
 }
 
-body h2.page-title, h2.page-title a {
+html body h2.page-title, h2.page-title a {
   color: rgb(255, 216, 94);
   font-family: "Bai Jamjuree";
 }
 
-body h3 {
+html body h3 {
   color: rgb(255, 79, 0);
   font-family: "Bai Jamjuree";
 }
 
-body h4 {
+html body h4 {
   color: rgb(76, 134, 168);
   font-family: "Bai Jamjuree";
 }
 
-body h5 {
+html body h5 {
   color: rgb(128, 100, 67);
   font-family: "Bai Jamjuree";
 }
 
-body h6 {
+html body h6 {
   color: rgb(201, 202, 217);
   font-family: "Bai Jamjuree";
 }
 
-body hr {
+html body hr {
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
   border-right-color: rgb(36, 43, 58);
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html body ::-webkit-scrollbar {
   background: rgb(24, 29, 39) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(24, 29, 39);
 }
 
-body ::-webkit-scrollbar-corner {
+html body ::-webkit-scrollbar-corner {
   background: rgb(24, 29, 39) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(24, 29, 39);
 }
 
-body ::-webkit-scrollbar-thumb {
+html body ::-webkit-scrollbar-thumb {
   background: rgb(24, 29, 39) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(24, 29, 39);
   border-bottom-color: rgb(216, 215, 223);
@@ -706,35 +706,35 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(216, 215, 223);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html body ::-webkit-scrollbar-thumb:active {
   background: rgb(24, 29, 39) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(24, 29, 39);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html body ::-webkit-scrollbar-thumb:hover {
   background: rgb(24, 29, 39) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(24, 29, 39);
 }
 
-body ::-webkit-scrollbar-track {
+html body ::-webkit-scrollbar-track {
   background: rgb(24, 29, 39) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(24, 29, 39);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "Bai Jamjuree";
   font-weight: 700;
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "Bai Jamjuree";
   font-weight: 700;
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html body .explorer .explorer-content ul.explorer-ul li a {
   font-family: "Bai Jamjuree";
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(216, 215, 223);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -745,10 +745,10 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-right-radius: 0px;
   color: rgb(216, 215, 223);
 }`,
-    toc: `body li.depth-0 {
+    toc: `html body li.depth-0 {
   font-weight: 700;
 }`,
-    footer: `body footer {
+    footer: `html body footer {
   background-color: rgb(24, 29, 39);
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
@@ -756,12 +756,12 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-color: rgb(36, 43, 58);
   font-family: "Bai Jamjuree";
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html body .recent-notes > h3 {
   color: rgb(216, 215, 223);
   font-family: "Bai Jamjuree";
 }
 
-body .recent-notes > ul.recent-ul > li {
+html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
@@ -769,30 +769,30 @@ body .recent-notes > ul.recent-ul > li {
   color: rgb(216, 215, 223);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html body .recent-notes > ul.recent-ul > li .section > .meta {
   font-family: "Bai Jamjuree";
 }`,
-    listPage: `body li.section-li {
+    listPage: `html body li.section-li {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }
 
-body li.section-li > .section .meta {
+html body li.section-li > .section .meta {
   font-family: "Bai Jamjuree";
 }
 
-body ul.section-ul {
+html body ul.section-ul {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }`,
-    breadcrumbs: `body .breadcrumb-element p {
+    breadcrumbs: `html body .breadcrumb-element p {
   color: rgb(178, 178, 184);
 }`,
-    misc: `body .katex-display {
+    misc: `html body .katex-display {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
@@ -800,7 +800,7 @@ body ul.section-ul {
   color: rgb(216, 215, 223);
 }
 
-body .metadata {
+html body .metadata {
   border-bottom-color: rgb(36, 43, 58);
   border-left-color: rgb(36, 43, 58);
   border-right-color: rgb(36, 43, 58);
@@ -808,31 +808,31 @@ body .metadata {
   font-family: "Bai Jamjuree";
 }
 
-body .metadata-properties {
+html body .metadata-properties {
   font-family: "Bai Jamjuree";
 }
 
-body .navigation-progress {
+html body .navigation-progress {
   background-color: rgb(24, 29, 39);
 }
 
-body .page-header h2.page-title {
+html body .page-header h2.page-title {
   color: rgb(216, 215, 223);
 }
 
-body abbr {
+html body abbr {
   color: rgb(216, 215, 223);
   text-decoration: underline dotted rgb(216, 215, 223);
 }
 
-body details {
+html body details {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }
 
-body kbd {
+html body kbd {
   background-color: rgb(24, 29, 39);
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
@@ -842,22 +842,22 @@ body kbd {
   font-family: "Bai Jamjuree";
 }
 
-body progress {
+html body progress {
   border-bottom-color: rgb(216, 215, 223);
   border-left-color: rgb(216, 215, 223);
   border-right-color: rgb(216, 215, 223);
   border-top-color: rgb(216, 215, 223);
 }
 
-body sub {
+html body sub {
   color: rgb(216, 215, 223);
 }
 
-body summary {
+html body summary {
   color: rgb(216, 215, 223);
 }
 
-body sup {
+html body sup {
   color: rgb(216, 215, 223);
 }`,
   },

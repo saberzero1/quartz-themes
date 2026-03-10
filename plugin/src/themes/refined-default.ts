@@ -33,68 +33,68 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, b {
   color: rgb(166, 138, 249);
   outline: rgb(166, 138, 249) none 0px;
   text-decoration: rgb(166, 138, 249);
   text-decoration-color: rgb(166, 138, 249);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, strong {
   color: rgb(166, 138, 249);
   outline: rgb(166, 138, 249) none 0px;
   text-decoration: rgb(166, 138, 249);
   text-decoration-color: rgb(166, 138, 249);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, footer a {
   color: rgb(89, 128, 247);
   outline: rgb(89, 128, 247) none 0px;
   text-decoration: underline rgb(89, 128, 247);
   text-decoration-color: rgb(89, 128, 247);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(89, 128, 247);
   outline: rgb(89, 128, 247) none 0px;
   text-decoration: underline rgb(89, 128, 247);
   text-decoration-color: rgb(89, 128, 247);
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   color: rgb(89, 128, 247);
   outline: rgb(89, 128, 247) none 0px;
 }`,
-    tables: `body table {
+    tables: `html[saved-theme="dark"] body table {
   margin-left: 218.391px;
   margin-right: 218.391px;
 }
 
-body tbody tr:nth-child(even) {
+html[saved-theme="dark"] body tbody tr:nth-child(even) {
   background-color: rgb(30, 30, 30);
 }
 
-body tbody tr:nth-child(odd) {
+html[saved-theme="dark"] body tbody tr:nth-child(odd) {
   background-color: rgb(30, 30, 30);
 }
 
-body td {
+html[saved-theme="dark"] body td {
   border-bottom-color: rgb(218, 218, 218);
   border-left-color: rgb(218, 218, 218);
   border-right-color: rgb(218, 218, 218);
   border-top-color: rgb(218, 218, 218);
 }
 
-body th {
+html[saved-theme="dark"] body th {
   border-bottom-color: rgb(218, 218, 218);
   border-left-color: rgb(218, 218, 218);
   border-right-color: rgb(218, 218, 218);
   border-top-color: rgb(218, 218, 218);
 }
 
-body tr {
+html[saved-theme="dark"] body tr {
   background-color: rgb(30, 30, 30);
 }`,
-    search: `body h4 {
+    search: `html[saved-theme="dark"] body h4 {
   color: rgb(166, 138, 249);
 }`,
   },
@@ -134,89 +134,89 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(250, 250, 250);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(250, 250, 250);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(250, 250, 250);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, b {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration: rgb(138, 92, 245);
   text-decoration-color: rgb(138, 92, 245);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, strong {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration: rgb(138, 92, 245);
   text-decoration-color: rgb(138, 92, 245);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, footer a {
   color: rgb(44, 84, 242);
   outline: rgb(44, 84, 242) none 0px;
   text-decoration: underline rgb(44, 84, 242);
   text-decoration-color: rgb(44, 84, 242);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(44, 84, 242);
   outline: rgb(44, 84, 242) none 0px;
   text-decoration: underline rgb(44, 84, 242);
   text-decoration-color: rgb(44, 84, 242);
 }
 
-body a.internal.broken {
+html[saved-theme="light"] body a.internal.broken {
   color: rgb(44, 84, 242);
   outline: rgb(44, 84, 242) none 0px;
 }`,
-    tables: `body table {
+    tables: `html[saved-theme="light"] body table {
   margin-left: 218.391px;
   margin-right: 218.391px;
 }
 
-body tbody tr:nth-child(even) {
+html[saved-theme="light"] body tbody tr:nth-child(even) {
   background-color: rgb(255, 255, 255);
 }
 
-body tbody tr:nth-child(odd) {
+html[saved-theme="light"] body tbody tr:nth-child(odd) {
   background-color: rgb(255, 255, 255);
 }
 
-body td {
+html[saved-theme="light"] body td {
   border-bottom-color: rgb(34, 34, 34);
   border-left-color: rgb(34, 34, 34);
   border-right-color: rgb(34, 34, 34);
   border-top-color: rgb(34, 34, 34);
 }
 
-body th {
+html[saved-theme="light"] body th {
   border-bottom-color: rgb(34, 34, 34);
   border-left-color: rgb(34, 34, 34);
   border-right-color: rgb(34, 34, 34);
   border-top-color: rgb(34, 34, 34);
 }
 
-body tr {
+html[saved-theme="light"] body tr {
   background-color: rgb(255, 255, 255);
 }`,
-    search: `body .search > .search-container > .search-space > input {
+    search: `html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(250, 250, 250);
 }
 
-body h4 {
+html[saved-theme="light"] body h4 {
   color: rgb(138, 92, 245);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="light"] body footer {
   background-color: rgb(250, 250, 250);
 }`,
-    misc: `body .navigation-progress {
+    misc: `html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(250, 250, 250);
 }`,
   },

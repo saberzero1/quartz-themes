@@ -33,32 +33,32 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(28, 28, 28);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(28, 28, 28);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(28, 28, 28);
 }`,
-    lists: `body ol.overflow {
+    lists: `html[saved-theme="dark"] body ol.overflow {
   background-color: rgb(28, 28, 28);
 }
 
-body ul.overflow {
+html[saved-theme="dark"] body ul.overflow {
   background-color: rgb(28, 28, 28);
 }`,
-    images: `body img {
+    images: `html[saved-theme="dark"] body img {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(28, 28, 28);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -67,7 +67,7 @@ body ul.overflow {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }`,
-    misc: `body .navigation-progress {
+    misc: `html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(28, 28, 28);
 }`,
   },
@@ -97,25 +97,25 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(255, 255, 255);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(255, 255, 255);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(255, 255, 255);
 }`,
-    images: `body img {
+    images: `html[saved-theme="light"] body img {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="light"] body footer {
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -124,7 +124,7 @@ body .page > div#quartz-body div.sidebar.right {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }`,
-    misc: `body .navigation-progress {
+    misc: `html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(255, 255, 255);
 }`,
   },

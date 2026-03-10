@@ -226,82 +226,82 @@ html body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(189, 190, 189);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(189, 190, 189);
 }
 
-body .page > div#quartz-body div.sidebar {
+html body .page > div#quartz-body div.sidebar {
   background-color: rgb(189, 190, 189);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(112, 112, 112);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(189, 190, 189);
   border-left-color: rgb(112, 112, 112);
 }
 
-body div#quartz-root {
+html body div#quartz-root {
   background-color: rgb(189, 190, 189);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html body .page article p > b, b {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
-body .page article p > em, em {
+html body .page article p > em, em {
   color: rgb(52, 59, 88);
   outline: rgb(52, 59, 88) none 0px;
   text-decoration: rgb(52, 59, 88);
   text-decoration-color: rgb(52, 59, 88);
 }
 
-body .page article p > i, i {
+html body .page article p > i, i {
   color: rgb(52, 59, 88);
   outline: rgb(52, 59, 88) none 0px;
   text-decoration: rgb(52, 59, 88);
   text-decoration-color: rgb(52, 59, 88);
 }
 
-body .page article p > strong, strong {
+html body .page article p > strong, strong {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
-body .text-highlight {
+html body .text-highlight {
   background-color: rgba(72, 94, 48, 0.4);
 }`,
-    links: `body a.external, footer a {
+    links: `html body a.external, footer a {
   color: rgb(0, 0, 122);
   outline: rgb(0, 0, 122) none 0px;
   text-decoration: underline rgb(0, 0, 122);
   text-decoration-color: rgb(0, 0, 122);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(0, 0, 122);
   outline: rgb(0, 0, 122) none 0px;
   text-decoration: underline rgb(0, 0, 122);
   text-decoration-color: rgb(0, 0, 122);
 }
 
-body a.internal.broken {
+html body a.internal.broken {
   color: rgb(0, 0, 122);
   outline: rgb(0, 0, 122) none 0px;
   text-decoration: underline rgba(0, 0, 122, 0.3);
   text-decoration-color: rgba(0, 0, 122, 0.3);
 }`,
-    lists: `body ol.overflow {
+    lists: `html body ol.overflow {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: ridge;
   border-bottom-width: 4px;
@@ -316,7 +316,7 @@ body a.internal.broken {
   border-top-width: 4px;
 }
 
-body ul.overflow {
+html body ul.overflow {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: ridge;
   border-bottom-width: 4px;
@@ -330,24 +330,24 @@ body ul.overflow {
   border-top-style: ridge;
   border-top-width: 4px;
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html body .data-footnote-backref {
   color: rgb(79, 80, 87);
   text-decoration: rgb(79, 80, 87);
 }`,
-    tables: `body td {
+    tables: `html body td {
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
   border-right-color: rgb(112, 112, 112);
   border-top-color: rgb(112, 112, 112);
 }
 
-body th {
+html body th {
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
   border-right-color: rgb(112, 112, 112);
   border-top-color: rgb(112, 112, 112);
 }`,
-    code: `body figure[data-rehype-pretty-code-figure] {
+    code: `html body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
@@ -355,7 +355,7 @@ body th {
   border-top-color: rgb(112, 112, 112);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
@@ -363,7 +363,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-top-color: rgb(112, 112, 112);
 }
 
-body pre > code, pre:has(> code) {
+html body pre > code, pre:has(> code) {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
@@ -371,43 +371,43 @@ body pre > code, pre:has(> code) {
   border-top-color: rgb(112, 112, 112);
 }
 
-body pre:has(> code) {
+html body pre:has(> code) {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
   border-right-color: rgb(112, 112, 112);
   border-top-color: rgb(112, 112, 112);
 }`,
-    embeds: `body .transclude {
+    embeds: `html body .transclude {
   border-left-color: rgb(0, 0, 123);
 }
 
-body .transclude-inner {
+html body .transclude-inner {
   border-left-color: rgb(0, 0, 123);
 }`,
-    checkboxes: `body input[type=checkbox] {
+    checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(79, 80, 87);
   border-left-color: rgb(79, 80, 87);
   border-right-color: rgb(79, 80, 87);
   border-top-color: rgb(79, 80, 87);
 }`,
-    search: `body .search > .search-button {
+    search: `html body .search > .search-button {
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
   border-right-color: rgb(112, 112, 112);
   border-top-color: rgb(112, 112, 112);
 }
 
-body .search > .search-container > .search-space {
+html body .search > .search-container > .search-space {
   background-color: rgb(189, 190, 189);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px, rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px, rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
 }
 
-body .search > .search-container > .search-space > input {
+html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(189, 190, 189);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 122, 0.1);
   border-bottom-color: rgba(0, 0, 122, 0.15);
   border-left-color: rgba(0, 0, 122, 0.15);
@@ -415,73 +415,73 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   border-top-color: rgba(0, 0, 122, 0.15);
 }
 
-body a.internal.tag-link::before {
+html body a.internal.tag-link::before {
   color: rgb(0, 0, 122);
 }
 
-body h1 {
+html body h1 {
   color: rgb(52, 84, 138);
 }
 
-body h2 {
+html body h2 {
   color: rgb(52, 84, 138);
 }
 
-body h2.page-title, h2.page-title a {
+html body h2.page-title, h2.page-title a {
   color: rgb(52, 84, 138);
 }
 
-body h3 {
+html body h3 {
   color: rgb(52, 84, 138);
 }
 
-body h4 {
+html body h4 {
   color: rgb(52, 84, 138);
 }
 
-body h5 {
+html body h5 {
   color: rgb(52, 84, 138);
 }
 
-body h6 {
+html body h6 {
   color: rgb(52, 84, 138);
 }
 
-body hr {
+html body hr {
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
   border-right-color: rgb(112, 112, 112);
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html body ::-webkit-scrollbar {
   background: rgb(189, 190, 189) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(189, 190, 189);
 }
 
-body ::-webkit-scrollbar-corner {
+html body ::-webkit-scrollbar-corner {
   background: rgb(189, 190, 189) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(189, 190, 189);
 }
 
-body ::-webkit-scrollbar-thumb {
+html body ::-webkit-scrollbar-thumb {
   background: rgb(189, 190, 189) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(189, 190, 189);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html body ::-webkit-scrollbar-thumb:active {
   background: rgb(189, 190, 189) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(189, 190, 189);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html body ::-webkit-scrollbar-thumb:hover {
   background: rgb(189, 190, 189) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(189, 190, 189);
 }
 
-body ::-webkit-scrollbar-track {
+html body ::-webkit-scrollbar-track {
   background: rgb(189, 190, 189) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(189, 190, 189);
 }`,
-    explorer: `body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+    explorer: `html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgb(0, 0, 123);
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
@@ -489,7 +489,7 @@ body ::-webkit-scrollbar-track {
   border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(128, 128, 128);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -507,7 +507,7 @@ body ::-webkit-scrollbar-track {
   border-top-style: solid;
   border-top-width: 1px;
 }`,
-    footer: `body footer {
+    footer: `html body footer {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
@@ -517,7 +517,7 @@ body ::-webkit-scrollbar-track {
   border-top-left-radius: 0px;
   border-top-width: 0px;
 }`,
-    listPage: `body ul.section-ul {
+    listPage: `html body ul.section-ul {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: ridge;
@@ -529,7 +529,7 @@ body ::-webkit-scrollbar-track {
   border-top-style: ridge;
   border-top-width: 4px;
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html body .darkmode {
   border-bottom-color: rgb(128, 128, 128);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -547,21 +547,21 @@ body ::-webkit-scrollbar-track {
   border-top-style: solid;
   border-top-width: 1px;
 }`,
-    breadcrumbs: `body .breadcrumb-element p {
+    breadcrumbs: `html body .breadcrumb-element p {
   color: rgb(79, 80, 87);
 }`,
-    misc: `body .metadata {
+    misc: `html body .metadata {
   border-bottom-color: rgb(112, 112, 112);
   border-left-color: rgb(112, 112, 112);
   border-right-color: rgb(112, 112, 112);
   border-top-color: rgb(112, 112, 112);
 }
 
-body .navigation-progress {
+html body .navigation-progress {
   background-color: rgba(0, 0, 0, 0);
 }
 
-body kbd {
+html body kbd {
   background-color: rgb(255, 255, 255);
 }`,
   },

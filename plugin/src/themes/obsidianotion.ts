@@ -91,14 +91,14 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(31, 31, 31);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(31, 31, 31);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, b {
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
@@ -106,7 +106,7 @@ body .page > div#quartz-body div.sidebar.right {
   text-decoration-color: rgb(200, 200, 200);
 }
 
-body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, em {
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
@@ -114,7 +114,7 @@ body .page article p > em, em {
   text-decoration-color: rgb(200, 200, 200);
 }
 
-body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, i {
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
@@ -122,7 +122,7 @@ body .page article p > i, i {
   text-decoration-color: rgb(200, 200, 200);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, strong {
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
@@ -130,11 +130,11 @@ body .page article p > strong, strong {
   text-decoration-color: rgb(200, 200, 200);
 }
 
-body .text-highlight {
+html[saved-theme="dark"] body .text-highlight {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body del {
+html[saved-theme="dark"] body del {
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
@@ -142,107 +142,107 @@ body del {
   text-decoration-color: rgb(200, 200, 200);
 }
 
-body p {
+html[saved-theme="dark"] body p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, footer a {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    lists: `body dl {
+    lists: `html[saved-theme="dark"] body dl {
   margin-bottom: 14.4px;
   margin-top: 14.4px;
 }`,
-    blockquotes: `body blockquote {
+    blockquotes: `html[saved-theme="dark"] body blockquote {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    tables: `body .table-container {
+    tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(200, 200, 200);
   border-left-color: rgb(200, 200, 200);
   border-right-color: rgb(200, 200, 200);
   border-top-color: rgb(200, 200, 200);
 }
 
-body table {
+html[saved-theme="dark"] body table {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0px;
   width: 191px;
 }`,
-    images: `body audio {
+    images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(200, 200, 200);
   border-left-color: rgb(200, 200, 200);
   border-right-color: rgb(200, 200, 200);
   border-top-color: rgb(200, 200, 200);
 }
 
-body figcaption {
+html[saved-theme="dark"] body figcaption {
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body figure {
+html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(200, 200, 200);
   border-left-color: rgb(200, 200, 200);
   border-right-color: rgb(200, 200, 200);
   border-top-color: rgb(200, 200, 200);
 }
 
-body img {
+html[saved-theme="dark"] body img {
   border-bottom-color: rgb(200, 200, 200);
   border-left-color: rgb(200, 200, 200);
   border-right-color: rgb(200, 200, 200);
   border-top-color: rgb(200, 200, 200);
 }
 
-body video {
+html[saved-theme="dark"] body video {
   border-bottom-color: rgb(200, 200, 200);
   border-left-color: rgb(200, 200, 200);
   border-right-color: rgb(200, 200, 200);
   border-top-color: rgb(200, 200, 200);
 }`,
-    embeds: `body .transclude {
+    embeds: `html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(200, 200, 200);
   border-right-color: rgb(200, 200, 200);
   border-top-color: rgb(200, 200, 200);
 }
 
-body .transclude-inner {
+html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(200, 200, 200);
   border-right-color: rgb(200, 200, 200);
   border-top-color: rgb(200, 200, 200);
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .katex-display > .katex > .katex-html {
+html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body li.task-list-item[data-task='-'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(102, 102, 102);
   text-decoration: line-through 1px rgb(102, 102, 102);
   text-decoration-color: rgb(102, 102, 102);
 }`,
-    callouts: `body .callout[data-callout="info"] {
+    callouts: `html[saved-theme="dark"] body .callout[data-callout="info"] {
   background-color: rgb(255, 0, 0);
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="dark"] body .search > .search-button {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -251,117 +251,117 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal.tag-link::before {
   color: rgb(255, 255, 255);
 }
 
-body h1 {
-  color: rgb(255, 255, 255);
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-body h2 {
+html[saved-theme="dark"] body h1 {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h2.page-title, h2.page-title a {
-  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-body h3 {
+html[saved-theme="dark"] body h2 {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h4 {
+html[saved-theme="dark"] body h2.page-title, h2.page-title a {
+  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body h3 {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h5 {
+html[saved-theme="dark"] body h4 {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h6 {
+html[saved-theme="dark"] body h5 {
   color: rgb(255, 255, 255);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body hr {
+html[saved-theme="dark"] body h6 {
+  color: rgb(255, 255, 255);
+  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(31, 31, 31);
   border-left-color: rgb(31, 31, 31);
   border-right-color: rgb(31, 31, 31);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(155, 155, 155);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: rgb(155, 155, 155);
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(155, 155, 155);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: rgb(155, 155, 155);
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
   color: rgb(155, 155, 155);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: rgb(155, 155, 155);
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgb(37, 37, 37);
   cursor: pointer;
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   cursor: pointer;
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="dark"] body footer {
   border-bottom-color: rgb(31, 31, 31);
   border-left-color: rgb(31, 31, 31);
   border-right-color: rgb(31, 31, 31);
   border-top-color: rgb(31, 31, 31);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(155, 155, 155);
   text-decoration: rgb(155, 155, 155);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(155, 155, 155);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    listPage: `body li.section-li > .section .meta {
+    listPage: `html[saved-theme="dark"] body li.section-li > .section .meta {
   color: rgb(155, 155, 155);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(155, 155, 155);
   text-decoration: rgb(155, 155, 155);
 }
 
-body ul.section-ul {
+html[saved-theme="dark"] body ul.section-ul {
   background-color: rgb(42, 42, 42);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="dark"] body .darkmode {
   cursor: pointer;
 }`,
-    breadcrumbs: `body .breadcrumb-element p {
+    breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    misc: `body .katex-display {
+    misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(200, 200, 200);
   border-left-color: rgb(200, 200, 200);
   border-right-color: rgb(200, 200, 200);
@@ -369,29 +369,29 @@ body ul.section-ul {
   color: rgb(200, 200, 200);
 }
 
-body .metadata {
+html[saved-theme="dark"] body .metadata {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 40px;
 }
 
-body .metadata-properties {
+html[saved-theme="dark"] body .metadata-properties {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .page-header h2.page-title {
+html[saved-theme="dark"] body .page-header h2.page-title {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body abbr {
+html[saved-theme="dark"] body abbr {
   color: rgb(200, 200, 200);
   text-decoration: underline dotted rgb(200, 200, 200);
 }
 
-body input[type=text] {
+html[saved-theme="dark"] body input[type=text] {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body kbd {
+html[saved-theme="dark"] body kbd {
   font-size: 12.6px;
   padding-bottom: 1.26px;
   padding-left: 3.15px;
@@ -399,19 +399,19 @@ body kbd {
   padding-top: 1.26px;
 }
 
-body progress {
+html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(200, 200, 200);
   border-left-color: rgb(200, 200, 200);
   border-right-color: rgb(200, 200, 200);
   border-top-color: rgb(200, 200, 200);
 }
 
-body sub {
+html[saved-theme="dark"] body sub {
   color: rgb(200, 200, 200);
   font-size: 12px;
 }
 
-body sup {
+html[saved-theme="dark"] body sup {
   color: rgb(200, 200, 200);
   font-size: 12px;
 }`,
@@ -497,91 +497,91 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(240, 240, 240);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(240, 240, 240);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, b {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, em {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, i {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, strong {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .text-highlight {
+html[saved-theme="light"] body .text-highlight {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body del {
+html[saved-theme="light"] body del {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body p {
+html[saved-theme="light"] body p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, footer a {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body a.internal.broken {
+html[saved-theme="light"] body a.internal.broken {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    lists: `body dl {
+    lists: `html[saved-theme="light"] body dl {
   margin-bottom: 14.4px;
   margin-top: 14.4px;
 }`,
-    blockquotes: `body blockquote {
+    blockquotes: `html[saved-theme="light"] body blockquote {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    tables: `body table {
+    tables: `html[saved-theme="light"] body table {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0px;
   width: 191px;
 }`,
-    images: `body figcaption {
+    images: `html[saved-theme="light"] body figcaption {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .katex-display > .katex > .katex-html {
+html[saved-theme="light"] body .katex-display > .katex > .katex-html {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body li.task-list-item[data-task='-'] {
+html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(171, 171, 171);
   text-decoration: line-through 1px rgb(171, 171, 171);
   text-decoration-color: rgb(171, 171, 171);
 }`,
-    callouts: `body .callout[data-callout="info"] {
+    callouts: `html[saved-theme="light"] body .callout[data-callout="info"] {
   background-color: rgb(255, 0, 0);
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="light"] body .search > .search-button {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="light"] body .search > .search-container > .search-space > * {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -589,134 +589,134 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal.tag-link::before {
   color: rgb(0, 0, 0);
 }
 
-body h1 {
+html[saved-theme="light"] body h1 {
   color: rgb(55, 53, 47);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h2 {
+html[saved-theme="light"] body h2 {
   color: rgb(55, 53, 47);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, h2.page-title a {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h3 {
+html[saved-theme="light"] body h3 {
   color: rgb(55, 53, 47);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h4 {
+html[saved-theme="light"] body h4 {
   color: rgb(55, 53, 47);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h5 {
+html[saved-theme="light"] body h5 {
   color: rgb(55, 53, 47);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body h6 {
+html[saved-theme="light"] body h6 {
   color: rgb(55, 53, 47);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body hr {
+html[saved-theme="light"] body hr {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(114, 113, 109);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: rgb(114, 113, 109);
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(114, 113, 109);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: rgb(114, 113, 109);
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
   color: rgb(114, 113, 109);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: rgb(114, 113, 109);
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgb(237, 237, 235);
   cursor: pointer;
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   cursor: pointer;
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="light"] body footer {
   border-bottom-color: rgb(240, 240, 240);
   border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(114, 113, 109);
   text-decoration: rgb(114, 113, 109);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(114, 113, 109);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    listPage: `body li.section-li > .section .meta {
+    listPage: `html[saved-theme="light"] body li.section-li > .section .meta {
   color: rgb(114, 113, 109);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(114, 113, 109);
   text-decoration: rgb(114, 113, 109);
 }
 
-body ul.section-ul {
+html[saved-theme="light"] body ul.section-ul {
   background-color: rgb(250, 250, 250);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="light"] body .darkmode {
   cursor: pointer;
 }`,
-    breadcrumbs: `body .breadcrumb-element p {
+    breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    misc: `body .metadata {
+    misc: `html[saved-theme="light"] body .metadata {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 40px;
 }
 
-body .metadata-properties {
+html[saved-theme="light"] body .metadata-properties {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body .page-header h2.page-title {
+html[saved-theme="light"] body .page-header h2.page-title {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body input[type=text] {
+html[saved-theme="light"] body input[type=text] {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body kbd {
+html[saved-theme="light"] body kbd {
   font-size: 12.6px;
   padding-bottom: 1.26px;
   padding-left: 3.15px;
@@ -724,11 +724,11 @@ body kbd {
   padding-top: 1.26px;
 }
 
-body sub {
+html[saved-theme="light"] body sub {
   font-size: 12px;
 }
 
-body sup {
+html[saved-theme="light"] body sup {
   font-size: 12px;
 }`,
   },

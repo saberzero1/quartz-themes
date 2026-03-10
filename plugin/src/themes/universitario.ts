@@ -259,107 +259,107 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(22, 29, 24);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(22, 29, 24);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(22, 29, 24);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(22, 29, 24);
   border-left-color: rgba(0, 0, 0, 0);
 }
 
-body div#quartz-root {
+html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(22, 29, 24);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, b {
   color: rgb(140, 217, 204);
   outline: rgb(140, 217, 204) none 0px;
   text-decoration: rgb(140, 217, 204);
   text-decoration-color: rgb(140, 217, 204);
 }
 
-body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, em {
   color: rgb(159, 191, 223);
   outline: rgb(159, 191, 223) none 0px;
   text-decoration: rgb(159, 191, 223);
   text-decoration-color: rgb(159, 191, 223);
 }
 
-body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, i {
   color: rgb(159, 191, 223);
   outline: rgb(159, 191, 223) none 0px;
   text-decoration: rgb(159, 191, 223);
   text-decoration-color: rgb(159, 191, 223);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, strong {
   color: rgb(140, 217, 204);
   outline: rgb(140, 217, 204) none 0px;
   text-decoration: rgb(140, 217, 204);
   text-decoration-color: rgb(140, 217, 204);
 }
 
-body .text-highlight {
+html[saved-theme="dark"] body .text-highlight {
   background-color: rgb(38, 55, 89);
 }
 
-body p {
+html[saved-theme="dark"] body p {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, footer a {
   color: rgb(138, 243, 185);
   outline: rgb(138, 243, 185) none 0px;
   text-decoration: rgb(138, 243, 185);
   text-decoration-color: rgb(138, 243, 185);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(172, 246, 209);
   outline: rgb(172, 246, 209) none 0px;
   text-decoration: rgb(172, 246, 209);
   text-decoration-color: rgb(172, 246, 209);
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   color: rgb(138, 243, 185);
   outline: rgb(138, 243, 185) none 0px;
   text-decoration: rgb(138, 243, 185);
   text-decoration-color: rgb(138, 243, 185);
 }`,
-    lists: `body ol.overflow {
+    lists: `html[saved-theme="dark"] body ol.overflow {
   background-color: rgb(22, 29, 24);
 }
 
-body ul.overflow {
+html[saved-theme="dark"] body ul.overflow {
   background-color: rgb(22, 29, 24);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(172, 179, 210);
   text-decoration: rgb(172, 179, 210);
 }
 
-body blockquote {
+html[saved-theme="dark"] body blockquote {
   background-color: rgb(46, 56, 48);
   font-style: italic;
   padding-bottom: 8px;
   padding-top: 8px;
 }`,
-    tables: `body table {
+    tables: `html[saved-theme="dark"] body table {
   border-bottom-color: rgb(54, 54, 54);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -379,12 +379,12 @@ body blockquote {
   width: 664px;
 }
 
-body td {
+html[saved-theme="dark"] body td {
   background-color: rgb(77, 77, 77);
   text-align: center;
 }
 
-body th {
+html[saved-theme="dark"] body th {
   background-color: rgb(46, 56, 48);
   border-bottom-width: 0px;
   border-left-width: 0px;
@@ -395,20 +395,20 @@ body th {
   text-align: center;
 }
 
-body thead {
+html[saved-theme="dark"] body thead {
   border-bottom-color: rgb(54, 54, 54);
   border-left-color: rgb(54, 54, 54);
   border-right-color: rgb(54, 54, 54);
   border-top-color: rgb(54, 54, 54);
 }
 
-body tr {
+html[saved-theme="dark"] body tr {
   border-bottom-color: rgb(54, 54, 54);
   border-left-color: rgb(54, 54, 54);
   border-right-color: rgb(54, 54, 54);
   border-top-color: rgb(54, 54, 54);
 }`,
-    code: `body code {
+    code: `html[saved-theme="dark"] body code {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -416,22 +416,22 @@ body tr {
   color: rgb(255, 255, 255);
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(34, 42, 38);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(34, 42, 38);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, pre:has(> code) {
   background-color: rgb(34, 42, 38);
 }
 
-body pre:has(> code) {
+html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(34, 42, 38);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(34, 42, 38);
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
@@ -443,7 +443,7 @@ body pre:has(> code) {
   padding-top: 1px;
 }
 
-body .transclude {
+html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(218, 218, 218);
   border-left-width: 0px;
   padding-bottom: 1px;
@@ -452,7 +452,7 @@ body .transclude {
   padding-top: 1px;
 }
 
-body .transclude-inner {
+html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(218, 218, 218);
   border-left-width: 0px;
   padding-bottom: 1px;
@@ -460,19 +460,19 @@ body .transclude-inner {
   padding-right: 1px;
   padding-top: 1px;
 }`,
-    checkboxes: `body .page article li:has(>input[type=checkbox]:checked) {
+    checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(255, 255, 255);
   text-decoration: line-through rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
-body input[type=checkbox] {
+html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(172, 179, 210);
   border-left-color: rgb(172, 179, 210);
   border-right-color: rgb(172, 179, 210);
   border-top-color: rgb(172, 179, 210);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(255, 130, 255);
   border-left-color: rgb(255, 130, 255);
   border-right-color: rgb(255, 130, 255);
@@ -483,7 +483,7 @@ body input[type=checkbox] {
   padding-top: 2px;
 }
 
-body .callout > .callout-content {
+html[saved-theme="dark"] body .callout > .callout-content {
   background-color: rgba(255, 130, 255, 0.1);
   padding-bottom: 2px;
   padding-left: 12px;
@@ -491,7 +491,7 @@ body .callout > .callout-content {
   padding-top: 2px;
 }
 
-body .callout[data-callout="abstract"] {
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: 74, 176, 255;
   background-color: rgba(74, 176, 255, 0.1);
   border-bottom-color: rgba(74, 176, 255, 0);
@@ -508,7 +508,7 @@ body .callout[data-callout="abstract"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="bug"] {
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: 252, 95, 142;
   background-color: rgba(252, 95, 142, 0.1);
   border-bottom-color: rgba(252, 95, 142, 0);
@@ -525,7 +525,7 @@ body .callout[data-callout="bug"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="danger"] {
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: 255, 74, 74;
   background-color: rgba(255, 74, 74, 0.1);
   border-bottom-color: rgba(255, 74, 74, 0);
@@ -542,7 +542,7 @@ body .callout[data-callout="danger"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="example"] {
+html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: 184, 148, 255;
   background-color: rgba(184, 148, 255, 0.1);
   border-bottom-color: rgba(184, 148, 255, 0);
@@ -559,7 +559,7 @@ body .callout[data-callout="example"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="failure"] {
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --callout-color: 255, 74, 74;
   background-color: rgba(255, 74, 74, 0.1);
   border-bottom-color: rgba(255, 74, 74, 0);
@@ -576,7 +576,7 @@ body .callout[data-callout="failure"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="info"] {
+html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: 74, 176, 255;
   background-color: rgba(74, 176, 255, 0.1);
   border-bottom-color: rgba(74, 176, 255, 0);
@@ -593,7 +593,7 @@ body .callout[data-callout="info"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="note"] {
+html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: 255, 130, 255;
   background-color: rgba(255, 130, 255, 0.1);
   border-bottom-color: rgba(255, 130, 255, 0);
@@ -610,7 +610,7 @@ body .callout[data-callout="note"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="question"] {
+html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: 255, 128, 183;
   background-color: rgba(255, 128, 183, 0.1);
   border-bottom-color: rgba(255, 128, 183, 0);
@@ -627,7 +627,7 @@ body .callout[data-callout="question"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="quote"] {
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: 184, 148, 255;
   background-color: rgba(184, 148, 255, 0.1);
   border-bottom-color: rgba(184, 148, 255, 0);
@@ -644,7 +644,7 @@ body .callout[data-callout="quote"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="success"] {
+html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: 77, 224, 185;
   background-color: rgba(77, 224, 185, 0.1);
   border-bottom-color: rgba(77, 224, 185, 0);
@@ -661,7 +661,7 @@ body .callout[data-callout="success"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="tip"] {
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: 244, 138, 74;
   background-color: rgba(244, 138, 74, 0.1);
   border-bottom-color: rgba(244, 138, 74, 0);
@@ -678,7 +678,7 @@ body .callout[data-callout="tip"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="todo"] {
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: 170, 230, 89;
   background-color: rgba(170, 230, 89, 0.1);
   border-bottom-color: rgba(170, 230, 89, 0);
@@ -695,7 +695,7 @@ body .callout[data-callout="todo"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="warning"] {
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: 244, 138, 74;
   background-color: rgba(244, 138, 74, 0.1);
   border-bottom-color: rgba(244, 138, 74, 0);
@@ -711,7 +711,7 @@ body .callout[data-callout="warning"] {
   border-top-right-radius: 10px;
   border-top-width: 3px;
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(22, 29, 24);
   border-bottom-color: rgb(138, 243, 185);
   border-left-color: rgb(138, 243, 185);
@@ -719,7 +719,7 @@ body .callout[data-callout="warning"] {
   border-top-color: rgb(138, 243, 185);
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(22, 29, 24);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -727,30 +727,30 @@ body .search > .search-container > .search-space {
   border-top-right-radius: 8px;
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(73, 80, 78);
 }
 
-body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(73, 80, 78);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   background-color: rgb(73, 80, 78);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -758,7 +758,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   border-top-right-radius: 6px;
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(73, 80, 78);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -766,7 +766,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   border-top-right-radius: 6px;
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(94, 237, 166, 0.1);
   border-bottom-color: rgba(94, 237, 166, 0.15);
   border-left-color: rgba(94, 237, 166, 0.15);
@@ -774,28 +774,28 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   border-top-color: rgba(94, 237, 166, 0.15);
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal.tag-link::before {
   color: rgb(138, 243, 185);
 }
 
-body h1 {
+html[saved-theme="dark"] body h1 {
   text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 5px;
 }
 
-body h5 {
+html[saved-theme="dark"] body h5 {
   color: rgb(225, 170, 255);
 }
 
-body h6 {
+html[saved-theme="dark"] body h6 {
   color: rgb(255, 175, 200);
 }
 
-body hr {
+html[saved-theme="dark"] body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 255, 130, 255;
   border-bottom-color: rgba(255, 130, 255, 0);
   border-bottom-left-radius: 10px;
@@ -815,51 +815,51 @@ body hr {
   padding-top: 4px;
 }
 
-body ::-webkit-scrollbar {
+html[saved-theme="dark"] body ::-webkit-scrollbar {
   background: rgb(22, 29, 24) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(22, 29, 24);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
   background: rgb(22, 29, 24) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(22, 29, 24);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
   background: rgb(22, 29, 24) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(22, 29, 24);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(22, 29, 24) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(22, 29, 24);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(22, 29, 24) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(22, 29, 24);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="dark"] body ::-webkit-scrollbar-track {
   background: rgb(22, 29, 24) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(22, 29, 24);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(232, 252, 246);
   text-decoration: rgb(232, 252, 246);
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(232, 252, 246);
   text-decoration: rgb(232, 252, 246);
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
   color: rgb(232, 252, 246);
   text-decoration: rgb(232, 252, 246);
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgba(255, 255, 255, 0.075);
   border-bottom-color: rgb(232, 252, 246);
   border-left-color: rgb(232, 252, 246);
@@ -867,14 +867,14 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-color: rgb(232, 252, 246);
   color: rgb(232, 252, 246);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(209, 250, 230);
   border-left-color: rgb(209, 250, 230);
   border-right-color: rgb(209, 250, 230);
   border-top-color: rgb(209, 250, 230);
   color: rgb(209, 250, 230);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(46, 56, 48);
   border-bottom-color: rgb(138, 243, 185);
   border-left-color: rgb(138, 243, 185);
@@ -885,11 +885,11 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   color: rgb(255, 255, 255);
 }
 
-body footer ul li a {
+html[saved-theme="dark"] body footer ul li a {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
 }`,
-    recentNotes: `body .recent-notes > ul.recent-ul > li {
+    recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   background-color: rgb(54, 73, 64);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -897,15 +897,15 @@ body footer ul li a {
   border-top-right-radius: 4px;
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(232, 252, 246);
   text-decoration: rgb(232, 252, 246);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(232, 252, 246);
 }`,
-    listPage: `body li.section-li {
+    listPage: `html[saved-theme="dark"] body li.section-li {
   background-color: rgb(54, 73, 64);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -913,15 +913,15 @@ body .recent-notes > ul.recent-ul > li .section > .meta {
   border-top-right-radius: 4px;
 }
 
-body li.section-li > .section .meta {
+html[saved-theme="dark"] body li.section-li > .section .meta {
   color: rgb(232, 252, 246);
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(232, 252, 246);
   text-decoration: rgb(232, 252, 246);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(209, 250, 230);
   border-left-color: rgb(209, 250, 230);
   border-right-color: rgb(209, 250, 230);
@@ -929,11 +929,11 @@ body li.section-li > .section > .desc > h3 > a {
   color: rgb(209, 250, 230);
 }
 
-body .darkmode svg {
+html[saved-theme="dark"] body .darkmode svg {
   color: rgb(209, 250, 230);
   stroke: rgb(209, 250, 230);
 }`,
-    breadcrumbs: `body .breadcrumb-container {
+    breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
   border-bottom-color: rgb(194, 240, 217);
   border-left-color: rgb(194, 240, 217);
   border-right-color: rgb(194, 240, 217);
@@ -941,14 +941,14 @@ body .darkmode svg {
   color: rgb(194, 240, 217);
 }
 
-body .breadcrumb-element p {
+html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(172, 179, 210);
 }`,
-    misc: `body .metadata {
+    misc: `html[saved-theme="dark"] body .metadata {
   color: rgb(255, 255, 255);
 }
 
-body .metadata-properties {
+html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -956,11 +956,11 @@ body .metadata-properties {
   color: rgb(255, 255, 255);
 }
 
-body .navigation-progress {
+html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(46, 56, 48);
 }
 
-body input[type=text] {
+html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgb(232, 252, 246);
   border-left-color: rgb(232, 252, 246);
   border-right-color: rgb(232, 252, 246);
@@ -968,7 +968,7 @@ body input[type=text] {
   color: rgb(232, 252, 246);
 }
 
-body kbd {
+html[saved-theme="dark"] body kbd {
   background-color: rgb(34, 42, 38);
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
@@ -1230,107 +1230,107 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(244, 237, 247);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(244, 237, 247);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(244, 237, 247);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgba(0, 0, 0, 0);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(244, 237, 247);
   border-left-color: rgba(0, 0, 0, 0);
 }
 
-body div#quartz-root {
+html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(244, 237, 247);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, b {
   color: rgb(54, 46, 107);
   outline: rgb(54, 46, 107) none 0px;
   text-decoration: rgb(54, 46, 107);
   text-decoration-color: rgb(54, 46, 107);
 }
 
-body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, em {
   color: rgb(63, 54, 125);
   outline: rgb(63, 54, 125) none 0px;
   text-decoration: rgb(63, 54, 125);
   text-decoration-color: rgb(63, 54, 125);
 }
 
-body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, i {
   color: rgb(63, 54, 125);
   outline: rgb(63, 54, 125) none 0px;
   text-decoration: rgb(63, 54, 125);
   text-decoration-color: rgb(63, 54, 125);
 }
 
-body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, strong {
   color: rgb(54, 46, 107);
   outline: rgb(54, 46, 107) none 0px;
   text-decoration: rgb(54, 46, 107);
   text-decoration-color: rgb(54, 46, 107);
 }
 
-body .text-highlight {
+html[saved-theme="light"] body .text-highlight {
   background-color: rgb(232, 230, 234);
 }
 
-body p {
+html[saved-theme="light"] body p {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, footer a {
   color: rgb(125, 146, 232);
   outline: rgb(125, 146, 232) none 0px;
   text-decoration: rgb(125, 146, 232);
   text-decoration-color: rgb(125, 146, 232);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(46, 58, 107);
   outline: rgb(46, 58, 107) none 0px;
   text-decoration: rgb(46, 58, 107);
   text-decoration-color: rgb(46, 58, 107);
 }
 
-body a.internal.broken {
+html[saved-theme="light"] body a.internal.broken {
   color: rgb(125, 146, 232);
   outline: rgb(125, 146, 232) none 0px;
   text-decoration: rgb(125, 146, 232);
   text-decoration-color: rgb(125, 146, 232);
 }`,
-    lists: `body ol.overflow {
+    lists: `html[saved-theme="light"] body ol.overflow {
   background-color: rgb(244, 237, 247);
 }
 
-body ul.overflow {
+html[saved-theme="light"] body ul.overflow {
   background-color: rgb(244, 237, 247);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(92, 61, 88);
   text-decoration: rgb(92, 61, 88);
 }
 
-body blockquote {
+html[saved-theme="light"] body blockquote {
   background-color: rgb(184, 219, 224);
   font-style: italic;
   padding-bottom: 8px;
   padding-top: 8px;
 }`,
-    tables: `body table {
+    tables: `html[saved-theme="light"] body table {
   border-bottom-color: rgb(224, 224, 224);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1350,12 +1350,12 @@ body blockquote {
   width: 664px;
 }
 
-body td {
+html[saved-theme="light"] body td {
   background-color: rgb(217, 218, 242);
   text-align: center;
 }
 
-body th {
+html[saved-theme="light"] body th {
   background-color: rgb(184, 219, 224);
   border-bottom-width: 0px;
   border-left-width: 0px;
@@ -1366,20 +1366,20 @@ body th {
   text-align: center;
 }
 
-body thead {
+html[saved-theme="light"] body thead {
   border-bottom-color: rgb(224, 224, 224);
   border-left-color: rgb(224, 224, 224);
   border-right-color: rgb(224, 224, 224);
   border-top-color: rgb(224, 224, 224);
 }
 
-body tr {
+html[saved-theme="light"] body tr {
   border-bottom-color: rgb(224, 224, 224);
   border-left-color: rgb(224, 224, 224);
   border-right-color: rgb(224, 224, 224);
   border-top-color: rgb(224, 224, 224);
 }`,
-    code: `body code {
+    code: `html[saved-theme="light"] body code {
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
@@ -1387,22 +1387,22 @@ body tr {
   color: rgb(0, 0, 0);
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(224, 222, 237);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(224, 222, 237);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, pre:has(> code) {
   background-color: rgb(224, 222, 237);
 }
 
-body pre:has(> code) {
+html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(224, 222, 237);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html[saved-theme="light"] body .file-embed {
   background-color: rgb(224, 222, 237);
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
@@ -1414,7 +1414,7 @@ body pre:has(> code) {
   padding-top: 1px;
 }
 
-body .transclude {
+html[saved-theme="light"] body .transclude {
   border-left-color: rgb(34, 34, 34);
   border-left-width: 0px;
   padding-bottom: 1px;
@@ -1423,7 +1423,7 @@ body .transclude {
   padding-top: 1px;
 }
 
-body .transclude-inner {
+html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(34, 34, 34);
   border-left-width: 0px;
   padding-bottom: 1px;
@@ -1431,19 +1431,19 @@ body .transclude-inner {
   padding-right: 1px;
   padding-top: 1px;
 }`,
-    checkboxes: `body .page article li:has(>input[type=checkbox]:checked) {
+    checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(0, 0, 0);
   text-decoration: line-through rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
-body input[type=checkbox] {
+html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(92, 61, 88);
   border-left-color: rgb(92, 61, 88);
   border-right-color: rgb(92, 61, 88);
   border-top-color: rgb(92, 61, 88);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgb(20, 120, 200);
   border-left-color: rgb(20, 120, 200);
   border-right-color: rgb(20, 120, 200);
@@ -1454,7 +1454,7 @@ body input[type=checkbox] {
   padding-top: 2px;
 }
 
-body .callout > .callout-content {
+html[saved-theme="light"] body .callout > .callout-content {
   background-color: rgba(20, 120, 200, 0.15);
   padding-bottom: 2px;
   padding-left: 15px;
@@ -1462,7 +1462,7 @@ body .callout > .callout-content {
   padding-top: 2px;
 }
 
-body .callout[data-callout="abstract"] {
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --callout-color: 50, 100, 140;
   background-color: rgba(50, 100, 140, 0.15);
   border-bottom-color: rgba(50, 100, 140, 0);
@@ -1479,7 +1479,7 @@ body .callout[data-callout="abstract"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="bug"] {
+html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: 255, 0, 0;
   background-color: rgba(255, 0, 0, 0.15);
   border-bottom-color: rgba(255, 0, 0, 0);
@@ -1496,7 +1496,7 @@ body .callout[data-callout="bug"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="danger"] {
+html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: 255, 74, 74;
   background-color: rgba(255, 74, 74, 0.15);
   border-bottom-color: rgba(255, 74, 74, 0);
@@ -1513,7 +1513,7 @@ body .callout[data-callout="danger"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="example"] {
+html[saved-theme="light"] body .callout[data-callout="example"] {
   --callout-color: 72, 122, 33;
   background-color: rgba(72, 122, 33, 0.15);
   border-bottom-color: rgba(72, 122, 33, 0);
@@ -1530,7 +1530,7 @@ body .callout[data-callout="example"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="failure"] {
+html[saved-theme="light"] body .callout[data-callout="failure"] {
   --callout-color: 255, 74, 74;
   background-color: rgba(255, 74, 74, 0.15);
   border-bottom-color: rgba(255, 74, 74, 0);
@@ -1547,7 +1547,7 @@ body .callout[data-callout="failure"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="info"] {
+html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: 10, 220, 0;
   background-color: rgba(10, 220, 0, 0.15);
   border-bottom-color: rgba(10, 220, 0, 0);
@@ -1564,7 +1564,7 @@ body .callout[data-callout="info"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="note"] {
+html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: 20, 120, 200;
   background-color: rgba(20, 120, 200, 0.15);
   border-bottom-color: rgba(20, 120, 200, 0);
@@ -1581,7 +1581,7 @@ body .callout[data-callout="note"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="question"] {
+html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: 255, 0, 183;
   background-color: rgba(255, 0, 183, 0.15);
   border-bottom-color: rgba(255, 0, 183, 0);
@@ -1598,7 +1598,7 @@ body .callout[data-callout="question"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="quote"] {
+html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: 0, 100, 255;
   background-color: rgba(0, 100, 255, 0.15);
   border-bottom-color: rgba(0, 100, 255, 0);
@@ -1615,7 +1615,7 @@ body .callout[data-callout="quote"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="success"] {
+html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: 137, 68, 198;
   background-color: rgba(137, 68, 198, 0.15);
   border-bottom-color: rgba(137, 68, 198, 0);
@@ -1632,7 +1632,7 @@ body .callout[data-callout="success"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="tip"] {
+html[saved-theme="light"] body .callout[data-callout="tip"] {
   --callout-color: 210, 100, 100;
   background-color: rgba(210, 100, 100, 0.15);
   border-bottom-color: rgba(210, 100, 100, 0);
@@ -1649,7 +1649,7 @@ body .callout[data-callout="tip"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="todo"] {
+html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: 40, 150, 15;
   background-color: rgba(40, 150, 15, 0.15);
   border-bottom-color: rgba(40, 150, 15, 0);
@@ -1666,7 +1666,7 @@ body .callout[data-callout="todo"] {
   border-top-width: 3px;
 }
 
-body .callout[data-callout="warning"] {
+html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-color: 244, 138, 74;
   background-color: rgba(244, 138, 74, 0.15);
   border-bottom-color: rgba(244, 138, 74, 0);
@@ -1682,7 +1682,7 @@ body .callout[data-callout="warning"] {
   border-top-right-radius: 10px;
   border-top-width: 3px;
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(244, 237, 247);
   border-bottom-color: rgb(125, 146, 232);
   border-left-color: rgb(125, 146, 232);
@@ -1690,7 +1690,7 @@ body .callout[data-callout="warning"] {
   border-top-color: rgb(125, 146, 232);
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="light"] body .search > .search-container > .search-space {
   background-color: rgb(244, 237, 247);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1698,30 +1698,30 @@ body .search > .search-container > .search-space {
   border-top-right-radius: 8px;
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(172, 180, 210);
 }
 
-body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(172, 180, 210);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   background-color: rgb(172, 180, 210);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1729,7 +1729,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   border-top-right-radius: 6px;
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   background-color: rgb(172, 180, 210);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1737,7 +1737,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   border-top-right-radius: 6px;
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(125, 146, 232, 0.1);
   border-bottom-color: rgba(125, 146, 232, 0.15);
   border-left-color: rgba(125, 146, 232, 0.15);
@@ -1745,16 +1745,16 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   border-top-color: rgba(125, 146, 232, 0.15);
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal.tag-link::before {
   color: rgb(125, 146, 232);
 }
 
-body hr {
+html[saved-theme="light"] body hr {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 20, 120, 200;
   border-bottom-color: rgba(20, 120, 200, 0);
   border-bottom-left-radius: 10px;
@@ -1774,51 +1774,51 @@ body hr {
   padding-top: 4px;
 }
 
-body ::-webkit-scrollbar {
+html[saved-theme="light"] body ::-webkit-scrollbar {
   background: rgb(244, 237, 247) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(244, 237, 247);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="light"] body ::-webkit-scrollbar-corner {
   background: rgb(244, 237, 247) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(244, 237, 247);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
   background: rgb(244, 237, 247) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(244, 237, 247);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(244, 237, 247) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(244, 237, 247);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(244, 237, 247) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(244, 237, 247);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="light"] body ::-webkit-scrollbar-track {
   background: rgb(244, 237, 247) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(244, 237, 247);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(58, 31, 122);
   text-decoration: rgb(58, 31, 122);
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(58, 31, 122);
   text-decoration: rgb(58, 31, 122);
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
   color: rgb(58, 31, 122);
   text-decoration: rgb(58, 31, 122);
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   background-color: rgba(0, 0, 0, 0.075);
   border-bottom-color: rgb(58, 31, 122);
   border-left-color: rgb(58, 31, 122);
@@ -1826,14 +1826,14 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-color: rgb(58, 31, 122);
   color: rgb(58, 31, 122);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(15, 30, 87);
   border-left-color: rgb(15, 30, 87);
   border-right-color: rgb(15, 30, 87);
   border-top-color: rgb(15, 30, 87);
   color: rgb(15, 30, 87);
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="light"] body footer {
   background-color: rgb(172, 180, 210);
   border-bottom-color: rgb(125, 146, 232);
   border-left-color: rgb(125, 146, 232);
@@ -1844,11 +1844,11 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   color: rgb(0, 0, 0);
 }
 
-body footer ul li a {
+html[saved-theme="light"] body footer ul li a {
   color: rgb(0, 0, 0);
   text-decoration: rgb(0, 0, 0);
 }`,
-    recentNotes: `body .recent-notes > ul.recent-ul > li {
+    recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   background-color: rgb(209, 213, 230);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1856,15 +1856,15 @@ body footer ul li a {
   border-top-right-radius: 4px;
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(58, 31, 122);
   text-decoration: rgb(58, 31, 122);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(58, 31, 122);
 }`,
-    listPage: `body li.section-li {
+    listPage: `html[saved-theme="light"] body li.section-li {
   background-color: rgb(209, 213, 230);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1872,15 +1872,15 @@ body .recent-notes > ul.recent-ul > li .section > .meta {
   border-top-right-radius: 4px;
 }
 
-body li.section-li > .section .meta {
+html[saved-theme="light"] body li.section-li > .section .meta {
   color: rgb(58, 31, 122);
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(58, 31, 122);
   text-decoration: rgb(58, 31, 122);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(15, 30, 87);
   border-left-color: rgb(15, 30, 87);
   border-right-color: rgb(15, 30, 87);
@@ -1888,11 +1888,11 @@ body li.section-li > .section > .desc > h3 > a {
   color: rgb(15, 30, 87);
 }
 
-body .darkmode svg {
+html[saved-theme="light"] body .darkmode svg {
   color: rgb(15, 30, 87);
   stroke: rgb(15, 30, 87);
 }`,
-    breadcrumbs: `body .breadcrumb-container {
+    breadcrumbs: `html[saved-theme="light"] body .breadcrumb-container {
   border-bottom-color: rgb(62, 64, 116);
   border-left-color: rgb(62, 64, 116);
   border-right-color: rgb(62, 64, 116);
@@ -1900,14 +1900,14 @@ body .darkmode svg {
   color: rgb(62, 64, 116);
 }
 
-body .breadcrumb-element p {
+html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(92, 61, 88);
 }`,
-    misc: `body .metadata {
+    misc: `html[saved-theme="light"] body .metadata {
   color: rgb(0, 0, 0);
 }
 
-body .metadata-properties {
+html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
@@ -1915,11 +1915,11 @@ body .metadata-properties {
   color: rgb(0, 0, 0);
 }
 
-body .navigation-progress {
+html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(172, 180, 210);
 }
 
-body input[type=text] {
+html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgb(58, 31, 122);
   border-left-color: rgb(58, 31, 122);
   border-right-color: rgb(58, 31, 122);
@@ -1927,7 +1927,7 @@ body input[type=text] {
   color: rgb(58, 31, 122);
 }
 
-body kbd {
+html[saved-theme="light"] body kbd {
   background-color: rgb(224, 222, 237);
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
