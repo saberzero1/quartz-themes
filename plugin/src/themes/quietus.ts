@@ -92,24 +92,24 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    typography: `body .text-highlight {
+    typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: color(srgb 0.541176 0.360784 0.960784 / 0.45);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, footer a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
   text-decoration: underline rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
   text-decoration: underline rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   color: rgb(138, 92, 245);
   filter: brightness(1.2);
   outline: rgb(138, 92, 245) none 0px;
@@ -200,7 +200,7 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    typography: `body .text-highlight {
+    typography: `html[saved-theme="light"] body .text-highlight {
   background-color: color(srgb 0.541176 0.360784 0.960784 / 0.25);
 }`,
   },

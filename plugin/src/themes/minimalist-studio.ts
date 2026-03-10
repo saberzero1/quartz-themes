@@ -54,74 +54,74 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `body a.internal, .breadcrumb-container .breadcrumb-element > a {
+    links: `html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration: rgb(166, 138, 249);
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
-    code: `body figure[data-rehype-pretty-code-figure] {
+    code: `html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body pre > code > [data-line] {
+html[saved-theme="dark"] body pre > code > [data-line] {
   border-left-color: rgb(255, 200, 44);
 }
 
-body pre > code > [data-line][data-highlighted-line] {
+html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
   border-left-color: rgb(255, 200, 44);
 }
 
-body pre > code [data-highlighted-chars] {
+html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
   border-bottom-color: rgb(255, 200, 44);
   border-left-color: rgb(255, 200, 44);
   border-right-color: rgb(255, 200, 44);
   border-top-color: rgb(255, 200, 44);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, pre:has(> code) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body pre:has(> code) {
+html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }`,
-    embeds: `body .transclude {
+    embeds: `html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(218, 218, 218);
   border-left-width: 0px;
 }
 
-body .transclude-inner {
+html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(218, 218, 218);
   border-left-width: 0px;
 }`,
-    checkboxes: `body .page article li:has(>input[type=checkbox]:checked) {
+    checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(85, 85, 85);
   text-decoration: line-through rgb(85, 85, 85);
   text-decoration-color: rgb(85, 85, 85);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html[saved-theme="dark"] body .callout .callout-title {
   gap: 8px;
 }
 
-body .callout[data-callout="abstract"] {
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 188, 0.1);
   border-bottom-color: rgba(0, 191, 188, 0.25);
@@ -134,21 +134,21 @@ body .callout[data-callout="abstract"] {
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="bug"] {
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="danger"] {
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="example"] {
+html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: 120, 82, 238;
   background-color: rgba(120, 82, 238, 0.1);
   border-bottom-color: rgba(120, 82, 238, 0.25);
@@ -161,28 +161,28 @@ body .callout[data-callout="example"] {
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="failure"] {
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="info"] {
+html[saved-theme="dark"] body .callout[data-callout="info"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="note"] {
+html[saved-theme="dark"] body .callout[data-callout="note"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="question"] {
+html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: 255, 144, 0;
   background-color: rgba(255, 144, 0, 0.1);
   border-bottom-color: rgba(255, 144, 0, 0.25);
@@ -195,21 +195,21 @@ body .callout[data-callout="question"] {
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="quote"] {
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="success"] {
+html[saved-theme="dark"] body .callout[data-callout="success"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="tip"] {
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 188, 0.1);
   border-bottom-color: rgba(0, 191, 188, 0.25);
@@ -222,14 +222,14 @@ body .callout[data-callout="tip"] {
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="todo"] {
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="warning"] {
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: 255, 144, 0;
   background-color: rgba(255, 144, 0, 0.1);
   border-bottom-color: rgba(255, 144, 0, 0.25);
@@ -241,7 +241,7 @@ body .callout[data-callout="warning"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html[saved-theme="dark"] body .callout {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -269,14 +269,14 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `body a.internal, .breadcrumb-container .breadcrumb-element > a {
+    links: `html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration: rgb(138, 92, 245);
 }
 
-body a.internal.broken {
+html[saved-theme="light"] body a.internal.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
-    code: `body figure[data-rehype-pretty-code-figure] {
+    code: `html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
   border-bottom-color: rgb(227, 227, 227);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -287,7 +287,7 @@ body a.internal.broken {
   border-top-right-radius: 8px;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-bottom-color: rgb(227, 227, 227);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -298,7 +298,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-top-right-radius: 8px;
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, pre:has(> code) {
   border-bottom-color: rgb(227, 227, 227);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -309,7 +309,7 @@ body pre > code, pre:has(> code) {
   border-top-right-radius: 8px;
 }
 
-body pre:has(> code) {
+html[saved-theme="light"] body pre:has(> code) {
   border-bottom-color: rgb(227, 227, 227);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -319,115 +319,115 @@ body pre:has(> code) {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }`,
-    embeds: `body .transclude {
+    embeds: `html[saved-theme="light"] body .transclude {
   border-left-color: rgb(34, 34, 34);
   border-left-width: 0px;
 }
 
-body .transclude-inner {
+html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(34, 34, 34);
   border-left-width: 0px;
 }`,
-    checkboxes: `body .page article li:has(>input[type=checkbox]:checked) {
+    checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(189, 189, 189);
   text-decoration: line-through rgb(189, 189, 189);
   text-decoration-color: rgb(189, 189, 189);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html[saved-theme="light"] body .callout .callout-title {
   gap: 8px;
 }
 
-body .callout[data-callout="abstract"] {
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="bug"] {
+html[saved-theme="light"] body .callout[data-callout="bug"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="danger"] {
+html[saved-theme="light"] body .callout[data-callout="danger"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="example"] {
+html[saved-theme="light"] body .callout[data-callout="example"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="failure"] {
+html[saved-theme="light"] body .callout[data-callout="failure"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="info"] {
+html[saved-theme="light"] body .callout[data-callout="info"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="note"] {
+html[saved-theme="light"] body .callout[data-callout="note"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="question"] {
+html[saved-theme="light"] body .callout[data-callout="question"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="quote"] {
+html[saved-theme="light"] body .callout[data-callout="quote"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="success"] {
+html[saved-theme="light"] body .callout[data-callout="success"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="tip"] {
+html[saved-theme="light"] body .callout[data-callout="tip"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="todo"] {
+html[saved-theme="light"] body .callout[data-callout="todo"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-body .callout[data-callout="warning"] {
+html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html[saved-theme="light"] body .callout {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;

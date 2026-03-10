@@ -17,18 +17,18 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    typography: `body .text-highlight {
+    typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: rgba(172, 232, 255, 0.39);
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }`,
-    tables: `body table {
+    tables: `html[saved-theme="dark"] body table {
   margin-left: 218.391px;
   margin-right: 218.391px;
 }`,
-    checkboxes: `body input[type=checkbox] {
+    checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(179, 179, 179);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -54,18 +54,18 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    typography: `body .text-highlight {
+    typography: `html[saved-theme="light"] body .text-highlight {
   background-color: rgba(172, 232, 255, 0.39);
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }`,
-    tables: `body table {
+    tables: `html[saved-theme="light"] body table {
   margin-left: 218.391px;
   margin-right: 218.391px;
 }`,
-    checkboxes: `body input[type=checkbox] {
+    checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(92, 92, 92);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;

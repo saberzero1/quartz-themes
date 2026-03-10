@@ -439,36 +439,36 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="dark"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(23, 23, 23);
   color: rgb(212, 212, 212);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="dark"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(10, 10, 10);
   color: rgb(212, 212, 212);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(23, 23, 23);
   color: rgb(212, 212, 212);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(64, 64, 64);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(23, 23, 23);
   border-left-color: rgb(64, 64, 64);
   color: rgb(212, 212, 212);
 }
 
-body div#quartz-root {
+html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(10, 10, 10);
   color: rgb(212, 212, 212);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="dark"] body .page article p > b, b {
   color: rgb(245, 245, 245);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -478,7 +478,7 @@ body div#quartz-root {
   text-decoration-thickness: 1px;
 }
 
-body .page article p > em, em {
+html[saved-theme="dark"] body .page article p > em, em {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(212, 212, 212) none 0px;
@@ -487,7 +487,7 @@ body .page article p > em, em {
   text-decoration-thickness: 1px;
 }
 
-body .page article p > i, i {
+html[saved-theme="dark"] body .page article p > i, i {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(212, 212, 212) none 0px;
@@ -496,7 +496,7 @@ body .page article p > i, i {
   text-decoration-thickness: 1px;
 }
 
-body .page article p > strong, strong {
+html[saved-theme="dark"] body .page article p > strong, strong {
   color: rgb(245, 245, 245);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -506,7 +506,7 @@ body .page article p > strong, strong {
   text-decoration-thickness: 1px;
 }
 
-body .text-highlight {
+html[saved-theme="dark"] body .text-highlight {
   background-color: rgb(230, 230, 230);
   color: rgb(10, 10, 10);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
@@ -516,7 +516,7 @@ body .text-highlight {
   text-decoration-thickness: 2px;
 }
 
-body del {
+html[saved-theme="dark"] body del {
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(115, 115, 115) none 0px;
@@ -525,14 +525,14 @@ body del {
   text-decoration-thickness: 2px;
 }
 
-body p {
+html[saved-theme="dark"] body p {
   color: rgb(115, 115, 115);
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(115, 115, 115) none 0px;
   text-decoration: rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="dark"] body a.external, footer a {
   color: rgb(217, 217, 217);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(217, 217, 217) none 0px;
@@ -541,7 +541,7 @@ body p {
   text-decoration-thickness: 1px;
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(217, 217, 217);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(217, 217, 217) none 0px;
@@ -550,7 +550,7 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-thickness: 1px;
 }
 
-body a.internal.broken {
+html[saved-theme="dark"] body a.internal.broken {
   color: rgba(230, 230, 230, 0.9);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgba(230, 230, 230, 0.9) none 0px;
@@ -559,19 +559,19 @@ body a.internal.broken {
   text-decoration-style: dashed;
   text-decoration-thickness: 1px;
 }`,
-    lists: `body dd {
+    lists: `html[saved-theme="dark"] body dd {
   color: rgb(212, 212, 212);
 }
 
-body dt {
+html[saved-theme="dark"] body dt {
   color: rgb(212, 212, 212);
 }
 
-body ol > li {
+html[saved-theme="dark"] body ol > li {
   color: rgb(212, 212, 212);
 }
 
-body ol.overflow {
+html[saved-theme="dark"] body ol.overflow {
   background-color: rgb(10, 10, 10);
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
@@ -579,36 +579,36 @@ body ol.overflow {
   border-top-color: rgb(212, 212, 212);
 }
 
-body ul > li {
+html[saved-theme="dark"] body ul > li {
   color: rgb(212, 212, 212);
 }
 
-body ul.overflow {
+html[saved-theme="dark"] body ul.overflow {
   background-color: rgb(10, 10, 10);
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(217, 217, 217);
   text-decoration: underline 1px rgb(217, 217, 217);
 }
 
-body blockquote {
+html[saved-theme="dark"] body blockquote {
   background-color: rgba(250, 250, 250, 0.05);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
   padding-top: 20px;
 }`,
-    tables: `body .table-container {
+    tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body table {
+html[saved-theme="dark"] body table {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
   color: rgb(212, 212, 212);
@@ -616,7 +616,7 @@ body table {
   width: 662px;
 }
 
-body td {
+html[saved-theme="dark"] body td {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -629,7 +629,7 @@ body td {
   vertical-align: middle;
 }
 
-body th {
+html[saved-theme="dark"] body th {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -644,16 +644,16 @@ body th {
   vertical-align: middle;
 }
 
-body thead {
+html[saved-theme="dark"] body thead {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
 }
 
-body tr {
+html[saved-theme="dark"] body tr {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
 }`,
-    code: `body code {
+    code: `html[saved-theme="dark"] body code {
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.75px;
   border-bottom-right-radius: 1.75px;
@@ -666,7 +666,7 @@ body tr {
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(23, 23, 23);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 2px;
@@ -682,7 +682,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-width: 1px;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(23, 23, 23);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 2px;
@@ -699,7 +699,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(212, 212, 212);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="dark"] body pre > code, pre:has(> code) {
   background-color: rgb(23, 23, 23);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 2px;
@@ -719,7 +719,7 @@ body pre > code, pre:has(> code) {
   padding-top: 20px;
 }
 
-body pre:has(> code) {
+html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(23, 23, 23);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 2px;
@@ -738,39 +738,39 @@ body pre:has(> code) {
   padding-right: 0px;
   padding-top: 16px;
 }`,
-    images: `body audio {
+    images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body figcaption {
+html[saved-theme="dark"] body figcaption {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body figure {
+html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body img {
+html[saved-theme="dark"] body img {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body video {
+html[saved-theme="dark"] body video {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(38, 38, 38);
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
@@ -778,39 +778,39 @@ body video {
   border-top-color: rgb(115, 115, 115);
 }
 
-body .footnotes {
+html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(212, 212, 212);
   color: rgb(212, 212, 212);
 }
 
-body .transclude {
+html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(204, 204, 204);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body .transclude-inner {
+html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(204, 204, 204);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .katex-display > .katex > .katex-html {
+html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .page article li:has(>input[type=checkbox]:checked) {
+html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(115, 115, 115);
   text-decoration: rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
 }
 
-body input[type=checkbox] {
+html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(179, 179, 179);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -822,121 +822,121 @@ body input[type=checkbox] {
   transition: background-color 0.2s, border-color 0.2s;
 }
 
-body li.task-list-item[data-task='!'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='*'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='-'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(251, 70, 76);
   text-decoration: rgb(251, 70, 76);
   text-decoration-color: rgb(251, 70, 76);
 }
 
-body li.task-list-item[data-task='/'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='>'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='?'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='I'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='S'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='b'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='c'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='d'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='f'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='i'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='k'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='l'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='p'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='u'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body li.task-list-item[data-task='w'] {
+html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body .callout[data-callout="abstract"] {
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -948,7 +948,7 @@ body .callout[data-callout="abstract"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="bug"] {
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
   background-color: color(srgb 0.196078 0.101961 0.101961 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -960,7 +960,7 @@ body .callout[data-callout="bug"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="danger"] {
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
   background-color: color(srgb 0.196078 0.101961 0.101961 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -972,7 +972,7 @@ body .callout[data-callout="danger"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="example"] {
+html[saved-theme="dark"] body .callout[data-callout="example"] {
   background-color: color(srgb 0.14902 0.12549 0.188235 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -984,7 +984,7 @@ body .callout[data-callout="example"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="failure"] {
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
   background-color: color(srgb 0.196078 0.101961 0.101961 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -996,7 +996,7 @@ body .callout[data-callout="failure"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="info"] {
+html[saved-theme="dark"] body .callout[data-callout="info"] {
   background-color: color(srgb 0.0784314 0.12549 0.192157 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1008,7 +1008,7 @@ body .callout[data-callout="info"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="note"] {
+html[saved-theme="dark"] body .callout[data-callout="note"] {
   background-color: color(srgb 0.0784314 0.12549 0.192157 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1020,7 +1020,7 @@ body .callout[data-callout="note"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="question"] {
+html[saved-theme="dark"] body .callout[data-callout="question"] {
   background-color: color(srgb 0.184314 0.141176 0.0980392 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1032,7 +1032,7 @@ body .callout[data-callout="question"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="quote"] {
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
   background-color: color(srgb 0.141176 0.141176 0.141176 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1044,7 +1044,7 @@ body .callout[data-callout="quote"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="success"] {
+html[saved-theme="dark"] body .callout[data-callout="success"] {
   background-color: color(srgb 0.101961 0.168627 0.117647 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1056,7 +1056,7 @@ body .callout[data-callout="success"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="tip"] {
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
   background-color: color(srgb 0.117647 0.172549 0.172549 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1068,7 +1068,7 @@ body .callout[data-callout="tip"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="todo"] {
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
   background-color: color(srgb 0.0784314 0.12549 0.192157 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1080,7 +1080,7 @@ body .callout[data-callout="todo"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="warning"] {
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
   background-color: color(srgb 0.184314 0.141176 0.0980392 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1091,7 +1091,7 @@ body .callout[data-callout="warning"] {
   border-top-right-radius: 2px;
   border-top-width: 1px;
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="dark"] body .search > .search-button {
   border-bottom-left-radius: 1.625px;
   border-bottom-right-radius: 1.625px;
   border-top-left-radius: 1.625px;
@@ -1100,7 +1100,7 @@ body .callout[data-callout="warning"] {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgba(0, 0, 0, 0.8);
   border-bottom-color: rgba(230, 230, 230, 0.6);
   border-bottom-left-radius: 2px;
@@ -1112,7 +1112,7 @@ body .search > .search-container > .search-space {
   border-top-right-radius: 2px;
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(212, 212, 212) none 0px;
@@ -1120,11 +1120,11 @@ body .search > .search-container > .search-space > * {
   text-decoration-color: rgb(212, 212, 212);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(212, 212, 212);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
@@ -1135,15 +1135,15 @@ body .search > .search-container > .search-space > .search-layout > .results-con
   border-top-right-radius: 1.875px;
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(212, 212, 212);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(212, 212, 212);
 }
 
-body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgba(230, 230, 230, 0.6);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1154,14 +1154,14 @@ body .search > .search-container > .search-space > .search-layout, .search > .se
   border-top-right-radius: 2px;
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
@@ -1173,7 +1173,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(212, 212, 212);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
   border-top-left-radius: 1.875px;
@@ -1181,7 +1181,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(212, 212, 212);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(230, 230, 230, 0.5);
   border-bottom-left-radius: 0px;
@@ -1198,51 +1198,51 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal.tag-link::before {
   color: rgb(245, 245, 245);
 }
 
-body h1 {
+html[saved-theme="dark"] body h1 {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h2 {
+html[saved-theme="dark"] body h2 {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="dark"] body h2.page-title, h2.page-title a {
   color: rgb(245, 245, 245);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h3 {
+html[saved-theme="dark"] body h3 {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h4 {
+html[saved-theme="dark"] body h4 {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h5 {
+html[saved-theme="dark"] body h5 {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h6 {
+html[saved-theme="dark"] body h6 {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body hr {
+html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html[saved-theme="dark"] body .callout {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -1257,17 +1257,17 @@ body hr {
   padding-top: 8px;
 }
 
-body ::-webkit-scrollbar {
+html[saved-theme="dark"] body ::-webkit-scrollbar {
   background: rgb(10, 10, 10) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(10, 10, 10);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
   background: rgb(10, 10, 10) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(10, 10, 10);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
   background: rgb(10, 10, 10) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(10, 10, 10);
   border-bottom-color: rgb(212, 212, 212);
@@ -1276,39 +1276,39 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(212, 212, 212);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(10, 10, 10) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(10, 10, 10);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(10, 10, 10) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(10, 10, 10);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="dark"] body ::-webkit-scrollbar-track {
   background: rgb(10, 10, 10) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(10, 10, 10);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   text-decoration: rgb(212, 212, 212);
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   text-decoration: rgb(212, 212, 212);
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   text-decoration: rgb(212, 212, 212);
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(230, 230, 230);
   border-bottom-left-radius: 1.78125px;
   border-bottom-right-radius: 1.78125px;
@@ -1327,7 +1327,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-width: 1px;
   color: rgb(245, 245, 245);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
@@ -1339,7 +1339,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   color: rgb(115, 115, 115);
   cursor: pointer;
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(23, 23, 23);
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.5px;
@@ -1353,16 +1353,16 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body footer ul li a {
+html[saved-theme="dark"] body footer ul li a {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(212, 212, 212);
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .recent-notes > ul.recent-ul > li {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
@@ -1370,39 +1370,39 @@ body .recent-notes > ul.recent-ul > li {
   color: rgb(212, 212, 212);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }`,
-    listPage: `body li.section-li {
+    listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body li.section-li > .section .meta {
+html[saved-theme="dark"] body li.section-li > .section .meta {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
 }
 
-body ul.section-ul {
+html[saved-theme="dark"] body ul.section-ul {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
@@ -1415,11 +1415,11 @@ body ul.section-ul {
   cursor: pointer;
 }
 
-body .darkmode svg {
+html[saved-theme="dark"] body .darkmode svg {
   color: rgb(115, 115, 115);
   stroke: rgb(115, 115, 115);
 }`,
-    breadcrumbs: `body .breadcrumb-container {
+    breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.625px;
   border-bottom-right-radius: 1.625px;
@@ -1431,10 +1431,10 @@ body .darkmode svg {
   color: rgb(115, 115, 115);
 }
 
-body .breadcrumb-element p {
+html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }`,
-    misc: `body .katex-display {
+    misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(245, 245, 245);
   border-left-color: rgb(245, 245, 245);
   border-right-color: rgb(245, 245, 245);
@@ -1442,12 +1442,12 @@ body .breadcrumb-element p {
   color: rgb(245, 245, 245);
 }
 
-body .metadata {
+html[saved-theme="dark"] body .metadata {
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .metadata-properties {
+html[saved-theme="dark"] body .metadata-properties {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
@@ -1456,28 +1456,28 @@ body .metadata-properties {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .navigation-progress {
+html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(23, 23, 23);
 }
 
-body .page-header h2.page-title {
+html[saved-theme="dark"] body .page-header h2.page-title {
   color: rgb(245, 245, 245);
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body abbr {
+html[saved-theme="dark"] body abbr {
   color: rgb(212, 212, 212);
   text-decoration: underline dotted rgb(212, 212, 212);
 }
 
-body details {
+html[saved-theme="dark"] body details {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body input[type=text] {
+html[saved-theme="dark"] body input[type=text] {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
@@ -1486,7 +1486,7 @@ body input[type=text] {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body kbd {
+html[saved-theme="dark"] body kbd {
   background-color: rgb(38, 38, 38);
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 1.75px;
@@ -1500,22 +1500,22 @@ body kbd {
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 }
 
-body progress {
+html[saved-theme="dark"] body progress {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
 }
 
-body sub {
+html[saved-theme="dark"] body sub {
   color: rgb(212, 212, 212);
 }
 
-body summary {
+html[saved-theme="dark"] body summary {
   color: rgb(212, 212, 212);
 }
 
-body sup {
+html[saved-theme="dark"] body sup {
   color: rgb(212, 212, 212);
 }`,
   },
@@ -1953,36 +1953,36 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html[saved-theme="light"] body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(245, 245, 245);
   color: rgb(64, 64, 64);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html[saved-theme="light"] body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(250, 250, 250);
   color: rgb(64, 64, 64);
 }
 
-body .page > div#quartz-body div.sidebar {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(245, 245, 245);
   color: rgb(64, 64, 64);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(212, 212, 212);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(245, 245, 245);
   border-left-color: rgb(212, 212, 212);
   color: rgb(64, 64, 64);
 }
 
-body div#quartz-root {
+html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(250, 250, 250);
   color: rgb(64, 64, 64);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html[saved-theme="light"] body .page article p > b, b {
   color: rgb(23, 23, 23);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -1992,7 +1992,7 @@ body div#quartz-root {
   text-decoration-thickness: 1px;
 }
 
-body .page article p > em, em {
+html[saved-theme="light"] body .page article p > em, em {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(64, 64, 64) none 0px;
@@ -2001,7 +2001,7 @@ body .page article p > em, em {
   text-decoration-thickness: 1px;
 }
 
-body .page article p > i, i {
+html[saved-theme="light"] body .page article p > i, i {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(64, 64, 64) none 0px;
@@ -2010,7 +2010,7 @@ body .page article p > i, i {
   text-decoration-thickness: 1px;
 }
 
-body .page article p > strong, strong {
+html[saved-theme="light"] body .page article p > strong, strong {
   color: rgb(23, 23, 23);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -2020,7 +2020,7 @@ body .page article p > strong, strong {
   text-decoration-thickness: 1px;
 }
 
-body .text-highlight {
+html[saved-theme="light"] body .text-highlight {
   background-color: rgb(26, 26, 26);
   color: rgb(250, 250, 250);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
@@ -2030,7 +2030,7 @@ body .text-highlight {
   text-decoration-thickness: 2px;
 }
 
-body del {
+html[saved-theme="light"] body del {
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(115, 115, 115) none 0px;
@@ -2039,14 +2039,14 @@ body del {
   text-decoration-thickness: 2px;
 }
 
-body p {
+html[saved-theme="light"] body p {
   color: rgb(115, 115, 115);
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(115, 115, 115) none 0px;
   text-decoration: rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
 }`,
-    links: `body a.external, footer a {
+    links: `html[saved-theme="light"] body a.external, footer a {
   color: rgb(13, 13, 13);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(13, 13, 13) none 0px;
@@ -2055,7 +2055,7 @@ body p {
   text-decoration-thickness: 1px;
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(13, 13, 13);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(13, 13, 13) none 0px;
@@ -2064,7 +2064,7 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-thickness: 1px;
 }
 
-body a.internal.broken {
+html[saved-theme="light"] body a.internal.broken {
   color: rgba(26, 26, 26, 0.9);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgba(26, 26, 26, 0.9) none 0px;
@@ -2073,19 +2073,19 @@ body a.internal.broken {
   text-decoration-style: dashed;
   text-decoration-thickness: 1px;
 }`,
-    lists: `body dd {
+    lists: `html[saved-theme="light"] body dd {
   color: rgb(64, 64, 64);
 }
 
-body dt {
+html[saved-theme="light"] body dt {
   color: rgb(64, 64, 64);
 }
 
-body ol > li {
+html[saved-theme="light"] body ol > li {
   color: rgb(64, 64, 64);
 }
 
-body ol.overflow {
+html[saved-theme="light"] body ol.overflow {
   background-color: rgb(250, 250, 250);
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
@@ -2093,36 +2093,36 @@ body ol.overflow {
   border-top-color: rgb(64, 64, 64);
 }
 
-body ul > li {
+html[saved-theme="light"] body ul > li {
   color: rgb(64, 64, 64);
 }
 
-body ul.overflow {
+html[saved-theme="light"] body ul.overflow {
   background-color: rgb(250, 250, 250);
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(13, 13, 13);
   text-decoration: underline 1px rgb(13, 13, 13);
 }
 
-body blockquote {
+html[saved-theme="light"] body blockquote {
   background-color: rgba(10, 10, 10, 0.05);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
   padding-top: 20px;
 }`,
-    tables: `body .table-container {
+    tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body table {
+html[saved-theme="light"] body table {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
   color: rgb(64, 64, 64);
@@ -2130,7 +2130,7 @@ body table {
   width: 662px;
 }
 
-body td {
+html[saved-theme="light"] body td {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -2143,7 +2143,7 @@ body td {
   vertical-align: middle;
 }
 
-body th {
+html[saved-theme="light"] body th {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -2158,16 +2158,16 @@ body th {
   vertical-align: middle;
 }
 
-body thead {
+html[saved-theme="light"] body thead {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
 }
 
-body tr {
+html[saved-theme="light"] body tr {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
 }`,
-    code: `body code {
+    code: `html[saved-theme="light"] body code {
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.75px;
   border-bottom-right-radius: 1.75px;
@@ -2180,7 +2180,7 @@ body tr {
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 }
 
-body figure[data-rehype-pretty-code-figure] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(245, 245, 245);
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 2px;
@@ -2196,7 +2196,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-top-width: 1px;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(245, 245, 245);
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 2px;
@@ -2213,7 +2213,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(64, 64, 64);
 }
 
-body pre > code, pre:has(> code) {
+html[saved-theme="light"] body pre > code, pre:has(> code) {
   background-color: rgb(245, 245, 245);
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 2px;
@@ -2233,7 +2233,7 @@ body pre > code, pre:has(> code) {
   padding-top: 20px;
 }
 
-body pre:has(> code) {
+html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(245, 245, 245);
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 2px;
@@ -2252,39 +2252,39 @@ body pre:has(> code) {
   padding-right: 0px;
   padding-top: 16px;
 }`,
-    images: `body audio {
+    images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body figcaption {
+html[saved-theme="light"] body figcaption {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body figure {
+html[saved-theme="light"] body figure {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body img {
+html[saved-theme="light"] body img {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body video {
+html[saved-theme="light"] body video {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html[saved-theme="light"] body .file-embed {
   background-color: rgb(229, 229, 229);
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
@@ -2292,39 +2292,39 @@ body video {
   border-top-color: rgb(115, 115, 115);
 }
 
-body .footnotes {
+html[saved-theme="light"] body .footnotes {
   border-top-color: rgb(64, 64, 64);
   color: rgb(64, 64, 64);
 }
 
-body .transclude {
+html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body .transclude-inner {
+html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .katex-display > .katex > .katex-html {
+html[saved-theme="light"] body .katex-display > .katex > .katex-html {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .page article li:has(>input[type=checkbox]:checked) {
+html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(115, 115, 115);
   text-decoration: rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
 }
 
-body input[type=checkbox] {
+html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(92, 92, 92);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -2336,121 +2336,121 @@ body input[type=checkbox] {
   transition: background-color 0.2s, border-color 0.2s;
 }
 
-body li.task-list-item[data-task='!'] {
+html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='*'] {
+html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='-'] {
+html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(233, 49, 71);
   text-decoration: rgb(233, 49, 71);
   text-decoration-color: rgb(233, 49, 71);
 }
 
-body li.task-list-item[data-task='/'] {
+html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='>'] {
+html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='?'] {
+html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='I'] {
+html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='S'] {
+html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='b'] {
+html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='c'] {
+html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='d'] {
+html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='f'] {
+html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='i'] {
+html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='k'] {
+html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='l'] {
+html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='p'] {
+html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='u'] {
+html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body li.task-list-item[data-task='w'] {
+html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }`,
-    callouts: `body .callout .callout-title {
+    callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body .callout[data-callout="abstract"] {
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2462,7 +2462,7 @@ body .callout[data-callout="abstract"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="bug"] {
+html[saved-theme="light"] body .callout[data-callout="bug"] {
   background-color: color(srgb 1 0.909804 0.917647 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2474,7 +2474,7 @@ body .callout[data-callout="bug"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="danger"] {
+html[saved-theme="light"] body .callout[data-callout="danger"] {
   background-color: color(srgb 1 0.909804 0.917647 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2486,7 +2486,7 @@ body .callout[data-callout="danger"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="example"] {
+html[saved-theme="light"] body .callout[data-callout="example"] {
   background-color: color(srgb 0.937255 0.921569 0.996078 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2498,7 +2498,7 @@ body .callout[data-callout="example"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="failure"] {
+html[saved-theme="light"] body .callout[data-callout="failure"] {
   background-color: color(srgb 1 0.909804 0.917647 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2510,7 +2510,7 @@ body .callout[data-callout="failure"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="info"] {
+html[saved-theme="light"] body .callout[data-callout="info"] {
   background-color: color(srgb 0.894118 0.933333 0.992157 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2522,7 +2522,7 @@ body .callout[data-callout="info"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="note"] {
+html[saved-theme="light"] body .callout[data-callout="note"] {
   background-color: color(srgb 0.894118 0.933333 0.992157 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2534,7 +2534,7 @@ body .callout[data-callout="note"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="question"] {
+html[saved-theme="light"] body .callout[data-callout="question"] {
   background-color: color(srgb 1 0.941176 0.898039 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2546,7 +2546,7 @@ body .callout[data-callout="question"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="quote"] {
+html[saved-theme="light"] body .callout[data-callout="quote"] {
   background-color: color(srgb 0.956863 0.956863 0.956863 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2558,7 +2558,7 @@ body .callout[data-callout="quote"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="success"] {
+html[saved-theme="light"] body .callout[data-callout="success"] {
   background-color: color(srgb 0.909804 0.972549 0.917647 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2570,7 +2570,7 @@ body .callout[data-callout="success"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="tip"] {
+html[saved-theme="light"] body .callout[data-callout="tip"] {
   background-color: color(srgb 0.909804 0.972549 0.972549 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2582,7 +2582,7 @@ body .callout[data-callout="tip"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="todo"] {
+html[saved-theme="light"] body .callout[data-callout="todo"] {
   background-color: color(srgb 0.894118 0.933333 0.992157 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2594,7 +2594,7 @@ body .callout[data-callout="todo"] {
   border-top-width: 1px;
 }
 
-body .callout[data-callout="warning"] {
+html[saved-theme="light"] body .callout[data-callout="warning"] {
   background-color: color(srgb 1 0.941176 0.898039 / 0.8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2605,7 +2605,7 @@ body .callout[data-callout="warning"] {
   border-top-right-radius: 2px;
   border-top-width: 1px;
 }`,
-    search: `body .search > .search-button {
+    search: `html[saved-theme="light"] body .search > .search-button {
   border-bottom-left-radius: 1.625px;
   border-bottom-right-radius: 1.625px;
   border-top-left-radius: 1.625px;
@@ -2614,7 +2614,7 @@ body .callout[data-callout="warning"] {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .search > .search-container > .search-space {
+html[saved-theme="light"] body .search > .search-container > .search-space {
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom-color: rgba(26, 26, 26, 0.6);
   border-bottom-left-radius: 2px;
@@ -2626,7 +2626,7 @@ body .search > .search-container > .search-space {
   border-top-right-radius: 2px;
 }
 
-body .search > .search-container > .search-space > * {
+html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(64, 64, 64) none 0px;
@@ -2634,11 +2634,11 @@ body .search > .search-container > .search-space > * {
   text-decoration-color: rgb(64, 64, 64);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(64, 64, 64);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
@@ -2649,15 +2649,15 @@ body .search > .search-container > .search-space > .search-layout > .results-con
   border-top-right-radius: 1.875px;
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(64, 64, 64);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(64, 64, 64);
 }
 
-body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
+html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgba(26, 26, 26, 0.6);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2668,14 +2668,14 @@ body .search > .search-container > .search-space > .search-layout, .search > .se
   border-top-right-radius: 2px;
 }
 
-body .search > .search-container > .search-space > input {
+html[saved-theme="light"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
@@ -2687,7 +2687,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(64, 64, 64);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
   border-top-left-radius: 1.875px;
@@ -2695,7 +2695,7 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(64, 64, 64);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(26, 26, 26, 0.5);
   border-bottom-left-radius: 0px;
@@ -2712,51 +2712,51 @@ body a.internal.tag-link, .search > .search-container > .search-space > .search-
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 }
 
-body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal.tag-link::before {
   color: rgb(23, 23, 23);
 }
 
-body h1 {
+html[saved-theme="light"] body h1 {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h2 {
+html[saved-theme="light"] body h2 {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h2.page-title, h2.page-title a {
+html[saved-theme="light"] body h2.page-title, h2.page-title a {
   color: rgb(23, 23, 23);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h3 {
+html[saved-theme="light"] body h3 {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h4 {
+html[saved-theme="light"] body h4 {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h5 {
+html[saved-theme="light"] body h5 {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body h6 {
+html[saved-theme="light"] body h6 {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body hr {
+html[saved-theme="light"] body hr {
   border-bottom-color: rgb(212, 212, 212);
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
 }`,
-    scrollbars: `body .callout {
+    scrollbars: `html[saved-theme="light"] body .callout {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-width: 1px;
@@ -2771,17 +2771,17 @@ body hr {
   padding-top: 8px;
 }
 
-body ::-webkit-scrollbar {
+html[saved-theme="light"] body ::-webkit-scrollbar {
   background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(250, 250, 250);
 }
 
-body ::-webkit-scrollbar-corner {
+html[saved-theme="light"] body ::-webkit-scrollbar-corner {
   background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(250, 250, 250);
 }
 
-body ::-webkit-scrollbar-thumb {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
   background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(250, 250, 250);
   border-bottom-color: rgb(64, 64, 64);
@@ -2790,39 +2790,39 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(64, 64, 64);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
   background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(250, 250, 250);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
   background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(250, 250, 250);
 }
 
-body ::-webkit-scrollbar-track {
+html[saved-theme="light"] body ::-webkit-scrollbar-track {
   background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(250, 250, 250);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   text-decoration: rgb(64, 64, 64);
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   text-decoration: rgb(64, 64, 64);
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   text-decoration: rgb(64, 64, 64);
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(26, 26, 26);
   border-bottom-left-radius: 1.78125px;
   border-bottom-right-radius: 1.78125px;
@@ -2841,7 +2841,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-top-width: 1px;
   color: rgb(23, 23, 23);
 }`,
-    graph: `body .graph > .graph-outer > .global-graph-icon {
+    graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
@@ -2853,7 +2853,7 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   color: rgb(115, 115, 115);
   cursor: pointer;
 }`,
-    footer: `body footer {
+    footer: `html[saved-theme="light"] body footer {
   background-color: rgb(245, 245, 245);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.5px;
@@ -2867,16 +2867,16 @@ body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body footer ul li a {
+html[saved-theme="light"] body footer ul li a {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(64, 64, 64);
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .recent-notes > ul.recent-ul > li {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
@@ -2884,39 +2884,39 @@ body .recent-notes > ul.recent-ul > li {
   color: rgb(64, 64, 64);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }`,
-    listPage: `body li.section-li {
+    listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body li.section-li > .section .meta {
+html[saved-theme="light"] body li.section-li > .section .meta {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(64, 64, 64);
   text-decoration: rgb(64, 64, 64);
 }
 
-body ul.section-ul {
+html[saved-theme="light"] body ul.section-ul {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }`,
-    darkmode: `body .darkmode {
+    darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.875px;
   border-bottom-right-radius: 1.875px;
@@ -2929,11 +2929,11 @@ body ul.section-ul {
   cursor: pointer;
 }
 
-body .darkmode svg {
+html[saved-theme="light"] body .darkmode svg {
   color: rgb(115, 115, 115);
   stroke: rgb(115, 115, 115);
 }`,
-    breadcrumbs: `body .breadcrumb-container {
+    breadcrumbs: `html[saved-theme="light"] body .breadcrumb-container {
   border-bottom-color: rgb(115, 115, 115);
   border-bottom-left-radius: 1.625px;
   border-bottom-right-radius: 1.625px;
@@ -2945,10 +2945,10 @@ body .darkmode svg {
   color: rgb(115, 115, 115);
 }
 
-body .breadcrumb-element p {
+html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }`,
-    misc: `body .katex-display {
+    misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(23, 23, 23);
   border-left-color: rgb(23, 23, 23);
   border-right-color: rgb(23, 23, 23);
@@ -2956,12 +2956,12 @@ body .breadcrumb-element p {
   color: rgb(23, 23, 23);
 }
 
-body .metadata {
+html[saved-theme="light"] body .metadata {
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .metadata-properties {
+html[saved-theme="light"] body .metadata-properties {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
@@ -2970,28 +2970,28 @@ body .metadata-properties {
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body .navigation-progress {
+html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(245, 245, 245);
 }
 
-body .page-header h2.page-title {
+html[saved-theme="light"] body .page-header h2.page-title {
   color: rgb(23, 23, 23);
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body abbr {
+html[saved-theme="light"] body abbr {
   color: rgb(64, 64, 64);
   text-decoration: underline dotted rgb(64, 64, 64);
 }
 
-body details {
+html[saved-theme="light"] body details {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body input[type=text] {
+html[saved-theme="light"] body input[type=text] {
   border-bottom-color: rgb(115, 115, 115);
   border-left-color: rgb(115, 115, 115);
   border-right-color: rgb(115, 115, 115);
@@ -3000,7 +3000,7 @@ body input[type=text] {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-body kbd {
+html[saved-theme="light"] body kbd {
   background-color: rgb(229, 229, 229);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 1.75px;
@@ -3014,22 +3014,22 @@ body kbd {
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 }
 
-body progress {
+html[saved-theme="light"] body progress {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
 }
 
-body sub {
+html[saved-theme="light"] body sub {
   color: rgb(64, 64, 64);
 }
 
-body summary {
+html[saved-theme="light"] body summary {
   color: rgb(64, 64, 64);
 }
 
-body sup {
+html[saved-theme="light"] body sup {
   color: rgb(64, 64, 64);
 }`,
   },

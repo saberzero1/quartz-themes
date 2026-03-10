@@ -41,72 +41,72 @@ html body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(0, 0, 0);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(0, 0, 0);
 }
 
-body .page > div#quartz-body div.sidebar {
+html body .page > div#quartz-body div.sidebar {
   background-color: rgb(0, 0, 0);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(0, 0, 0);
 }
 
-body div#quartz-root {
+html body div#quartz-root {
   background-color: rgb(0, 0, 0);
 }`,
-    lists: `body ol.overflow {
+    lists: `html body ol.overflow {
   background-color: rgb(0, 0, 0);
 }
 
-body ul.overflow {
+html body ul.overflow {
   background-color: rgb(0, 0, 0);
 }`,
-    search: `body .search > .search-container > .search-space {
+    search: `html body .search > .search-container > .search-space {
   background-color: rgb(0, 0, 0);
 }
 
-body .search > .search-container > .search-space > input {
+html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(0, 0, 0);
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html body ::-webkit-scrollbar {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-corner {
+html body ::-webkit-scrollbar-corner {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-thumb {
+html body ::-webkit-scrollbar-thumb {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html body ::-webkit-scrollbar-thumb:active {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html body ::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }
 
-body ::-webkit-scrollbar-track {
+html body ::-webkit-scrollbar-track {
   background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 0, 0);
 }`,
-    footer: `body footer {
+    footer: `html body footer {
   background-color: rgb(0, 0, 0);
 }`,
-    misc: `body .navigation-progress {
+    misc: `html body .navigation-progress {
   background-color: rgb(0, 0, 0);
 }`,
   },

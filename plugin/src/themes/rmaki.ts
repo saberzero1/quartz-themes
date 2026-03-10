@@ -72,26 +72,26 @@ html body {
   color: var(--text-normal) !important;
 }
 
-body .page > div#quartz-body div.sidebar {
+html body .page > div#quartz-body div.sidebar {
   background-color: rgb(28, 28, 33);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html body .page article p > b, b {
   font-family: "Fira Code", monospace;
 }
 
-body .page article p > em, em {
+html body .page article p > em, em {
   font-family: "Fira Code", monospace;
 }
 
-body .page article p > i, i {
+html body .page article p > i, i {
   font-family: "Fira Code", monospace;
 }
 
-body .page article p > strong, strong {
+html body .page article p > strong, strong {
   font-family: "Fira Code", monospace;
 }
 
-body .text-highlight {
+html body .text-highlight {
   background-color: rgb(135, 232, 206);
   color: rgb(17, 17, 19);
   font-family: "Fira Code", monospace;
@@ -100,14 +100,14 @@ body .text-highlight {
   text-decoration-color: rgb(17, 17, 19);
 }
 
-body del {
+html body del {
   font-family: "Fira Code", monospace;
 }
 
-body p {
+html body p {
   font-family: "Fira Code", monospace;
 }`,
-    links: `body a.external, footer a {
+    links: `html body a.external, footer a {
   color: rgb(218, 231, 246);
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
@@ -115,299 +115,299 @@ body p {
   text-decoration-color: rgb(135, 232, 206);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, .breadcrumb-container .breadcrumb-element > a {
   font-family: "Fira Code", monospace;
   text-decoration: underline rgb(135, 232, 206);
   text-decoration-color: rgb(135, 232, 206);
 }
 
-body a.internal.broken {
+html body a.internal.broken {
   font-family: "Fira Code", monospace;
   text-decoration: underline rgb(135, 232, 206);
   text-decoration-color: rgb(135, 232, 206);
 }`,
-    lists: `body dl {
+    lists: `html body dl {
   margin-bottom: 14.4px;
   margin-top: 14.4px;
 }
 
-body ol > li {
+html body ol > li {
   color: rgb(218, 231, 246);
 }
 
-body ol.overflow {
+html body ol.overflow {
   background-color: rgb(17, 17, 19);
 }
 
-body ul > li {
+html body ul > li {
   color: rgb(218, 231, 246);
 }
 
-body ul.overflow {
+html body ul.overflow {
   background-color: rgb(17, 17, 19);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html body .data-footnote-backref {
   color: rgb(218, 231, 246);
   text-decoration: underline rgb(135, 232, 206);
 }
 
-body blockquote {
+html body blockquote {
   font-family: "Fira Code", monospace;
 }`,
-    tables: `body table {
+    tables: `html body table {
   font-family: "Fira Code", monospace;
   width: 222.094px;
 }
 
-body th {
+html body th {
   color: rgb(135, 232, 206);
 }`,
-    images: `body figcaption {
+    images: `html body figcaption {
   font-family: "Fira Code", monospace;
   font-size: 14.4px;
 }
 
-body figure {
+html body figure {
   margin-bottom: 14.4px;
   margin-top: 14.4px;
 }
 
-body video {
+html body video {
   border-bottom-color: rgb(218, 231, 246);
   border-left-color: rgb(218, 231, 246);
   border-right-color: rgb(218, 231, 246);
   border-top-color: rgb(218, 231, 246);
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html body .katex-display > .katex {
   font-family: "Fira Code", monospace;
 }
 
-body .katex-display > .katex > .katex-html {
+html body .katex-display > .katex > .katex-html {
   font-family: "Fira Code", monospace;
 }
 
-body li.task-list-item[data-task='!'] {
+html body li.task-list-item[data-task='!'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='*'] {
+html body li.task-list-item[data-task='*'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='-'] {
+html body li.task-list-item[data-task='-'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='/'] {
+html body li.task-list-item[data-task='/'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='>'] {
+html body li.task-list-item[data-task='>'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='?'] {
+html body li.task-list-item[data-task='?'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='I'] {
+html body li.task-list-item[data-task='I'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='S'] {
+html body li.task-list-item[data-task='S'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='b'] {
+html body li.task-list-item[data-task='b'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='c'] {
+html body li.task-list-item[data-task='c'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='d'] {
+html body li.task-list-item[data-task='d'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='f'] {
+html body li.task-list-item[data-task='f'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='i'] {
+html body li.task-list-item[data-task='i'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='k'] {
+html body li.task-list-item[data-task='k'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='l'] {
+html body li.task-list-item[data-task='l'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='p'] {
+html body li.task-list-item[data-task='p'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='u'] {
+html body li.task-list-item[data-task='u'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
-body li.task-list-item[data-task='w'] {
+html body li.task-list-item[data-task='w'] {
   color: rgb(218, 231, 246);
   text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }`,
-    search: `body .search > .search-button {
+    search: `html body .search > .search-button {
   background-color: rgb(17, 17, 19);
   color: rgb(218, 231, 246);
   font-family: "Fira Code", monospace;
 }
 
-body .search > .search-container > .search-space > * {
+html body .search > .search-container > .search-space > * {
   font-family: "Fira Code", monospace;
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 25.2px;
   border-bottom-right-radius: 25.2px;
   border-top-left-radius: 25.2px;
   border-top-right-radius: 25.2px;
 }
 
-body h1 {
+html body h1 {
   color: rgb(135, 232, 206);
   font-family: "Fira Code", monospace;
 }
 
-body h2 {
+html body h2 {
   color: rgb(95, 88, 157);
   font-family: "Fira Code", monospace;
 }
 
-body h2.page-title, h2.page-title a {
+html body h2.page-title, h2.page-title a {
   font-family: "Fira Code", monospace;
 }
 
-body h3 {
+html body h3 {
   color: rgb(140, 134, 187);
   font-family: "Fira Code", monospace;
 }
 
-body h4 {
+html body h4 {
   color: rgb(95, 88, 157);
   font-family: "Fira Code", monospace;
 }
 
-body h5 {
+html body h5 {
   color: rgb(135, 232, 206);
   font-family: "Fira Code", monospace;
 }
 
-body h6 {
+html body h6 {
   color: rgb(95, 88, 157);
   font-family: "Fira Code", monospace;
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "Fira Code", monospace;
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "Fira Code", monospace;
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html body .explorer .explorer-content ul.explorer-ul li a {
   font-family: "Fira Code", monospace;
 }`,
-    footer: `body footer {
+    footer: `html body footer {
   background-color: rgb(17, 17, 19);
   border-top-color: rgb(95, 88, 157);
   font-family: "Fira Code", monospace;
 }
 
-body footer ul li a {
+html body footer ul li a {
   color: rgb(134, 152, 172);
   text-decoration: rgb(134, 152, 172);
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html body .recent-notes > h3 {
   font-family: "Fira Code", monospace;
 }
 
-body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
+html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(134, 152, 172);
   text-decoration: rgb(134, 152, 172);
 }
 
-body .recent-notes > ul.recent-ul > li .section > .meta {
+html body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(134, 152, 172);
   font-family: "Fira Code", monospace;
 }`,
-    listPage: `body li.section-li > .section .meta {
+    listPage: `html body li.section-li > .section .meta {
   color: rgb(134, 152, 172);
   font-family: "Fira Code", monospace;
 }
 
-body li.section-li > .section > .desc > h3 > a {
+html body li.section-li > .section > .desc > h3 > a {
   color: rgb(134, 152, 172);
   text-decoration: rgb(134, 152, 172);
 }`,
-    misc: `body .metadata {
+    misc: `html body .metadata {
   font-family: "Fira Code", monospace;
 }
 
-body .metadata-properties {
+html body .metadata-properties {
   font-family: "Fira Code", monospace;
 }
 
-body .navigation-progress {
+html body .navigation-progress {
   background-color: rgb(17, 17, 19);
 }
 
-body .page-header h2.page-title {
+html body .page-header h2.page-title {
   color: rgb(218, 231, 246);
 }
 
-body abbr {
+html body abbr {
   color: rgb(218, 231, 246);
   text-decoration: underline dotted rgb(218, 231, 246);
 }
 
-body kbd {
+html body kbd {
   font-size: 12.6px;
   padding-bottom: 1.26px;
   padding-left: 3.15px;
@@ -415,19 +415,19 @@ body kbd {
   padding-top: 1.26px;
 }
 
-body progress {
+html body progress {
   border-bottom-color: rgb(218, 231, 246);
   border-left-color: rgb(218, 231, 246);
   border-right-color: rgb(218, 231, 246);
   border-top-color: rgb(218, 231, 246);
 }
 
-body sub {
+html body sub {
   color: rgb(218, 231, 246);
   font-size: 12px;
 }
 
-body sup {
+html body sup {
   color: rgb(218, 231, 246);
   font-size: 12px;
 }`,

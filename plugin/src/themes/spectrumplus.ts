@@ -187,31 +187,31 @@ html body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(27, 27, 27);
   color: rgb(201, 201, 201);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(36, 36, 36);
   color: rgb(201, 201, 201);
 }
 
-body .page > div#quartz-body div.sidebar {
+html body .page > div#quartz-body div.sidebar {
   background-color: rgb(27, 27, 27);
   color: rgb(201, 201, 201);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(27, 27, 27);
   color: rgb(201, 201, 201);
 }
 
-body div#quartz-root {
+html body div#quartz-root {
   background-color: rgb(36, 36, 36);
   color: rgb(201, 201, 201);
 }`,
-    typography: `body .page article p > b, b {
+    typography: `html body .page article p > b, b {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
   font-weight: 900;
@@ -220,7 +220,7 @@ body div#quartz-root {
   text-decoration-color: rgb(245, 112, 76);
 }
 
-body .page article p > em, em {
+html body .page article p > em, em {
   color: rgb(237, 228, 130);
   font-family: "JetBrains Mono";
   outline: rgb(237, 228, 130) none 0px;
@@ -228,7 +228,7 @@ body .page article p > em, em {
   text-decoration-color: rgb(237, 228, 130);
 }
 
-body .page article p > i, i {
+html body .page article p > i, i {
   color: rgb(237, 228, 130);
   font-family: "JetBrains Mono";
   outline: rgb(237, 228, 130) none 0px;
@@ -236,7 +236,7 @@ body .page article p > i, i {
   text-decoration-color: rgb(237, 228, 130);
 }
 
-body .page article p > strong, strong {
+html body .page article p > strong, strong {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
   font-weight: 900;
@@ -245,7 +245,7 @@ body .page article p > strong, strong {
   text-decoration-color: rgb(245, 112, 76);
 }
 
-body .text-highlight {
+html body .text-highlight {
   background-color: rgb(233, 179, 95);
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
@@ -254,7 +254,7 @@ body .text-highlight {
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body del {
+html body del {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
   outline: rgb(201, 201, 201) none 0px;
@@ -262,10 +262,10 @@ body del {
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body p {
+html body p {
   font-family: "JetBrains Mono";
 }`,
-    links: `body a.external, footer a {
+    links: `html body a.external, footer a {
   color: rgb(130, 210, 232);
   font-family: "JetBrains Mono";
   outline: rgb(130, 210, 232) none 0px;
@@ -273,7 +273,7 @@ body p {
   text-decoration-color: rgb(130, 210, 232);
 }
 
-body a.internal, .breadcrumb-container .breadcrumb-element > a {
+html body a.internal, .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 190, 0);
   font-family: "JetBrains Mono";
   outline: rgb(255, 190, 0) none 0px;
@@ -281,24 +281,24 @@ body a.internal, .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgb(255, 190, 0);
 }
 
-body a.internal.broken {
+html body a.internal.broken {
   color: rgb(255, 190, 0);
   font-family: "JetBrains Mono";
   outline: rgb(255, 190, 0) none 0px;
 }`,
-    lists: `body dd {
+    lists: `html body dd {
   color: rgb(201, 201, 201);
 }
 
-body dt {
+html body dt {
   color: rgb(201, 201, 201);
 }
 
-body ol > li {
+html body ol > li {
   color: rgb(201, 201, 201);
 }
 
-body ol.overflow {
+html body ol.overflow {
   background-color: rgb(36, 36, 36);
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
@@ -306,50 +306,50 @@ body ol.overflow {
   border-top-color: rgb(201, 201, 201);
 }
 
-body ul > li {
+html body ul > li {
   color: rgb(201, 201, 201);
 }
 
-body ul.overflow {
+html body ul.overflow {
   background-color: rgb(36, 36, 36);
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }`,
-    blockquotes: `body .data-footnote-backref {
+    blockquotes: `html body .data-footnote-backref {
   color: rgb(255, 190, 0);
   text-decoration: rgb(255, 190, 0);
 }
 
-body blockquote {
+html body blockquote {
   font-family: "JetBrains Mono";
 }`,
-    tables: `body .table-container {
+    tables: `html body .table-container {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }
 
-body table {
+html body table {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
   width: 150.219px;
 }
 
-body tbody tr:nth-child(even) {
+html body tbody tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.204);
 }
 
-body td {
+html body td {
   color: rgb(201, 201, 201);
 }
 
-body th {
+html body th {
   color: rgb(201, 201, 201);
 }`,
-    code: `body code {
+    code: `html body code {
   border-bottom-color: rgb(193, 181, 148);
   border-left-color: rgb(193, 181, 148);
   border-right-color: rgb(193, 181, 148);
@@ -358,43 +358,43 @@ body th {
   font-family: "JetBrains Mono", monospace;
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
 }`,
-    images: `body audio {
+    images: `html body audio {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }
 
-body figcaption {
+html body figcaption {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
 }
 
-body figure {
+html body figure {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }
 
-body img {
+html body img {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }
 
-body video {
+html body video {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }`,
-    embeds: `body .file-embed {
+    embeds: `html body .file-embed {
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 8.75px;
   border-bottom-right-radius: 8.75px;
@@ -413,12 +413,12 @@ body video {
   border-top-width: 1px;
 }
 
-body .footnotes {
+html body .footnotes {
   border-top-color: rgb(201, 201, 201);
   color: rgb(201, 201, 201);
 }
 
-body .transclude {
+html body .transclude {
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -436,7 +436,7 @@ body .transclude {
   border-top-width: 1px;
 }
 
-body .transclude-inner {
+html body .transclude-inner {
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -453,19 +453,19 @@ body .transclude-inner {
   border-top-style: solid;
   border-top-width: 1px;
 }`,
-    checkboxes: `body .katex-display > .katex {
+    checkboxes: `html body .katex-display > .katex {
   font-family: "JetBrains Mono";
 }
 
-body .katex-display > .katex > .katex-html {
+html body .katex-display > .katex > .katex-html {
   font-family: "JetBrains Mono";
 }
 
-body .page article li:has(>input[type=checkbox]:checked) {
+html body .page article li:has(>input[type=checkbox]:checked) {
   text-decoration: rgb(179, 179, 179);
 }
 
-body input[type=checkbox] {
+html body input[type=checkbox] {
   border-bottom-color: rgb(179, 179, 179);
   border-bottom-left-radius: 1.66667px;
   border-bottom-right-radius: 1.66667px;
@@ -479,123 +479,123 @@ body input[type=checkbox] {
   width: 20px;
 }
 
-body li.task-list-item[data-task='!'] {
+html body li.task-list-item[data-task='!'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='*'] {
+html body li.task-list-item[data-task='*'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='-'] {
+html body li.task-list-item[data-task='-'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='/'] {
+html body li.task-list-item[data-task='/'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='>'] {
+html body li.task-list-item[data-task='>'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='?'] {
+html body li.task-list-item[data-task='?'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='I'] {
+html body li.task-list-item[data-task='I'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='S'] {
+html body li.task-list-item[data-task='S'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='b'] {
+html body li.task-list-item[data-task='b'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='c'] {
+html body li.task-list-item[data-task='c'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='d'] {
+html body li.task-list-item[data-task='d'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='f'] {
+html body li.task-list-item[data-task='f'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='i'] {
+html body li.task-list-item[data-task='i'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='k'] {
+html body li.task-list-item[data-task='k'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='l'] {
+html body li.task-list-item[data-task='l'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='p'] {
+html body li.task-list-item[data-task='p'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='u'] {
+html body li.task-list-item[data-task='u'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body li.task-list-item[data-task='w'] {
+html body li.task-list-item[data-task='w'] {
   color: rgb(201, 201, 201);
   text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }`,
-    search: `body .search > .search-button {
+    search: `html body .search > .search-button {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
 }
 
-body .search > .search-container > .search-space {
+html body .search > .search-container > .search-space {
   background-color: rgb(36, 36, 36);
 }
 
-body .search > .search-container > .search-space > * {
+html body .search > .search-container > .search-space > * {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
   outline: rgb(201, 201, 201) none 0px;
@@ -603,33 +603,33 @@ body .search > .search-container > .search-space > * {
   text-decoration-color: rgb(201, 201, 201);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container {
+html body .search > .search-container > .search-space > .search-layout > .results-container {
   color: rgb(201, 201, 201);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+html body .search > .search-container > .search-space > .search-layout > .results-container .result-card {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
   color: rgb(201, 201, 201);
 }
 
-body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(201, 201, 201);
 }
 
-body .search > .search-container > .search-space > input {
+html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(27, 27, 27);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
@@ -637,63 +637,63 @@ body .search>.search-container>.search-space>.search-layout>.results-container .
   color: rgb(201, 201, 201);
 }
 
-body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
   color: rgb(201, 201, 201);
 }
 
-body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "JetBrains Mono";
 }
 
-body a.internal.tag-link::before {
+html body a.internal.tag-link::before {
   color: rgb(255, 190, 0);
 }
 
-body h1 {
+html body h1 {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
 }
 
-body h2 {
+html body h2 {
   color: rgb(245, 161, 76);
   font-family: "JetBrains Mono";
 }
 
-body h2.page-title, h2.page-title a {
+html body h2.page-title, h2.page-title a {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
 }
 
-body h3 {
+html body h3 {
   color: rgb(237, 228, 130);
   font-family: "JetBrains Mono";
 }
 
-body h4 {
+html body h4 {
   color: rgb(170, 222, 98);
   font-family: "JetBrains Mono";
 }
 
-body h5 {
+html body h5 {
   color: rgb(98, 222, 172);
   font-family: "JetBrains Mono";
 }
 
-body h6 {
+html body h6 {
   color: rgb(98, 183, 222);
   font-family: "JetBrains Mono";
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html body ::-webkit-scrollbar {
   background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(36, 36, 36);
 }
 
-body ::-webkit-scrollbar-corner {
+html body ::-webkit-scrollbar-corner {
   background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(36, 36, 36);
 }
 
-body ::-webkit-scrollbar-thumb {
+html body ::-webkit-scrollbar-thumb {
   background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(36, 36, 36);
   border-bottom-color: rgb(201, 201, 201);
@@ -702,80 +702,49 @@ body ::-webkit-scrollbar-thumb {
   border-top-color: rgb(201, 201, 201);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html body ::-webkit-scrollbar-thumb:active {
   background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(36, 36, 36);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html body ::-webkit-scrollbar-thumb:hover {
   background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(36, 36, 36);
 }
 
-body ::-webkit-scrollbar-track {
+html body ::-webkit-scrollbar-track {
   background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(36, 36, 36);
 }`,
-    explorer: `body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "JetBrains Mono";
 }
 
-body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "JetBrains Mono";
 }
 
-body .explorer .explorer-content ul.explorer-ul li a {
+html body .explorer .explorer-content ul.explorer-ul li a {
   font-family: "JetBrains Mono";
 }
 
-body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
   color: rgb(201, 201, 201);
 }`,
-    footer: `body footer {
+    footer: `html body footer {
   background-color: rgb(27, 27, 27);
   font-family: "JetBrains Mono";
 }`,
-    recentNotes: `body .recent-notes > h3 {
+    recentNotes: `html body .recent-notes > h3 {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
 }
 
-body .recent-notes > ul.recent-ul > li {
-  border-bottom-color: rgb(201, 201, 201);
-  border-left-color: rgb(201, 201, 201);
-  border-right-color: rgb(201, 201, 201);
-  border-top-color: rgb(201, 201, 201);
-  color: rgb(201, 201, 201);
-}
-
-body .recent-notes > ul.recent-ul > li .section > .meta {
-  font-family: "JetBrains Mono";
-}`,
-    listPage: `body li.section-li {
-  border-bottom-color: rgb(201, 201, 201);
-  border-left-color: rgb(201, 201, 201);
-  border-right-color: rgb(201, 201, 201);
-  border-top-color: rgb(201, 201, 201);
-}
-
-body li.section-li > .section .meta {
-  font-family: "JetBrains Mono";
-}
-
-body ul.section-ul {
-  border-bottom-color: rgb(201, 201, 201);
-  border-left-color: rgb(201, 201, 201);
-  border-right-color: rgb(201, 201, 201);
-  border-top-color: rgb(201, 201, 201);
-}`,
-    breadcrumbs: `body .breadcrumb-element p {
-  font-family: "JetBrains Mono";
-}`,
-    misc: `body .katex-display {
+html body .recent-notes > ul.recent-ul > li {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
@@ -783,40 +752,71 @@ body ul.section-ul {
   color: rgb(201, 201, 201);
 }
 
-body .metadata {
+html body .recent-notes > ul.recent-ul > li .section > .meta {
+  font-family: "JetBrains Mono";
+}`,
+    listPage: `html body li.section-li {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
+}
+
+html body li.section-li > .section .meta {
   font-family: "JetBrains Mono";
 }
 
-body .metadata-properties {
+html body ul.section-ul {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
+}`,
+    breadcrumbs: `html body .breadcrumb-element p {
+  font-family: "JetBrains Mono";
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
+  color: rgb(201, 201, 201);
+}
+
+html body .metadata {
   font-family: "JetBrains Mono";
 }
 
-body .navigation-progress {
+html body .metadata-properties {
+  font-family: "JetBrains Mono";
+}
+
+html body .navigation-progress {
   background-color: rgb(27, 27, 27);
 }
 
-body .page-header h2.page-title {
+html body .page-header h2.page-title {
   color: rgb(201, 201, 201);
   font-family: "JetBrains Mono";
 }
 
-body abbr {
+html body abbr {
   color: rgb(201, 201, 201);
   text-decoration: underline dotted rgb(201, 201, 201);
 }
 
-body details {
+html body details {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }
 
-body input[type=text] {
+html body input[type=text] {
   font-family: "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-body kbd {
+html body kbd {
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -834,22 +834,22 @@ body kbd {
   font-family: "JetBrains Mono", monospace;
 }
 
-body progress {
+html body progress {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
 }
 
-body sub {
+html body sub {
   color: rgb(201, 201, 201);
 }
 
-body summary {
+html body summary {
   color: rgb(201, 201, 201);
 }
 
-body sup {
+html body sup {
   color: rgb(201, 201, 201);
 }`,
   },

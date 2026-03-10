@@ -403,7 +403,7 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap) {
         const propLines = props.map(
           (prop) => `  ${prop}: ${propMap.get(prop)};`,
         );
-        return `${resolvedSelector} {\n${propLines.join("\n")}\n}`;
+        return `${htmlSelector} ${resolvedSelector} {\n${propLines.join("\n")}\n}`;
       });
       cssParts.push(selectorBlocks.join("\n\n"));
     }

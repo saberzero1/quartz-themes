@@ -74,156 +74,156 @@ html body {
   color: var(--text-normal) !important;
 }
 
-body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
+html body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(17, 15, 24);
 }
 
-body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
+html body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer {
   background-color: rgb(21, 20, 27);
 }
 
-body .page > div#quartz-body div.sidebar {
+html body .page > div#quartz-body div.sidebar {
   background-color: rgb(17, 15, 24);
 }
 
-body .page > div#quartz-body div.sidebar.left {
+html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(97, 255, 202);
 }
 
-body .page > div#quartz-body div.sidebar.right {
+html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(17, 15, 24);
   border-left-color: rgb(97, 255, 202);
 }
 
-body div#quartz-root {
-  background-color: rgb(21, 20, 27);
-}`,
-    lists: `body ol.overflow {
-  background-color: rgb(21, 20, 27);
-}
-
-body ul.overflow {
+html body div#quartz-root {
   background-color: rgb(21, 20, 27);
 }`,
-    tables: `body td {
-  border-bottom-color: rgb(97, 255, 202);
-  border-left-color: rgb(97, 255, 202);
-  border-right-color: rgb(97, 255, 202);
-  border-top-color: rgb(97, 255, 202);
+    lists: `html body ol.overflow {
+  background-color: rgb(21, 20, 27);
 }
 
-body th {
-  border-bottom-color: rgb(97, 255, 202);
-  border-left-color: rgb(97, 255, 202);
-  border-right-color: rgb(97, 255, 202);
-  border-top-color: rgb(97, 255, 202);
+html body ul.overflow {
+  background-color: rgb(21, 20, 27);
 }`,
-    code: `body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(17, 15, 24);
+    tables: `html body td {
   border-bottom-color: rgb(97, 255, 202);
   border-left-color: rgb(97, 255, 202);
   border-right-color: rgb(97, 255, 202);
   border-top-color: rgb(97, 255, 202);
 }
 
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(17, 15, 24);
-  border-bottom-color: rgb(97, 255, 202);
-  border-left-color: rgb(97, 255, 202);
-  border-right-color: rgb(97, 255, 202);
-  border-top-color: rgb(97, 255, 202);
-}
-
-body pre > code, pre:has(> code) {
-  background-color: rgb(17, 15, 24);
-  border-bottom-color: rgb(97, 255, 202);
-  border-left-color: rgb(97, 255, 202);
-  border-right-color: rgb(97, 255, 202);
-  border-top-color: rgb(97, 255, 202);
-}
-
-body pre:has(> code) {
-  background-color: rgb(17, 15, 24);
+html body th {
   border-bottom-color: rgb(97, 255, 202);
   border-left-color: rgb(97, 255, 202);
   border-right-color: rgb(97, 255, 202);
   border-top-color: rgb(97, 255, 202);
 }`,
-    search: `body .search > .search-button {
+    code: `html body figure[data-rehype-pretty-code-figure] {
+  background-color: rgb(17, 15, 24);
   border-bottom-color: rgb(97, 255, 202);
   border-left-color: rgb(97, 255, 202);
   border-right-color: rgb(97, 255, 202);
   border-top-color: rgb(97, 255, 202);
 }
 
-body .search > .search-container > .search-space {
+html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+  background-color: rgb(17, 15, 24);
+  border-bottom-color: rgb(97, 255, 202);
+  border-left-color: rgb(97, 255, 202);
+  border-right-color: rgb(97, 255, 202);
+  border-top-color: rgb(97, 255, 202);
+}
+
+html body pre > code, pre:has(> code) {
+  background-color: rgb(17, 15, 24);
+  border-bottom-color: rgb(97, 255, 202);
+  border-left-color: rgb(97, 255, 202);
+  border-right-color: rgb(97, 255, 202);
+  border-top-color: rgb(97, 255, 202);
+}
+
+html body pre:has(> code) {
+  background-color: rgb(17, 15, 24);
+  border-bottom-color: rgb(97, 255, 202);
+  border-left-color: rgb(97, 255, 202);
+  border-right-color: rgb(97, 255, 202);
+  border-top-color: rgb(97, 255, 202);
+}`,
+    search: `html body .search > .search-button {
+  border-bottom-color: rgb(97, 255, 202);
+  border-left-color: rgb(97, 255, 202);
+  border-right-color: rgb(97, 255, 202);
+  border-top-color: rgb(97, 255, 202);
+}
+
+html body .search > .search-container > .search-space {
   background-color: rgb(21, 20, 27);
 }
 
-body .search > .search-container > .search-space > input {
+html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(17, 15, 24);
 }
 
-body hr {
+html body hr {
   border-bottom-color: rgb(97, 255, 202);
   border-left-color: rgb(97, 255, 202);
   border-right-color: rgb(97, 255, 202);
 }`,
-    scrollbars: `body ::-webkit-scrollbar {
+    scrollbars: `html body ::-webkit-scrollbar {
   background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(21, 20, 27);
 }
 
-body ::-webkit-scrollbar-corner {
+html body ::-webkit-scrollbar-corner {
   background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(21, 20, 27);
 }
 
-body ::-webkit-scrollbar-thumb {
+html body ::-webkit-scrollbar-thumb {
   background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(21, 20, 27);
 }
 
-body ::-webkit-scrollbar-thumb:active {
+html body ::-webkit-scrollbar-thumb:active {
   background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(21, 20, 27);
 }
 
-body ::-webkit-scrollbar-thumb:hover {
+html body ::-webkit-scrollbar-thumb:hover {
   background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(21, 20, 27);
 }
 
-body ::-webkit-scrollbar-track {
+html body ::-webkit-scrollbar-track {
   background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(21, 20, 27);
 }`,
-    explorer: `body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+    explorer: `html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   border-bottom-color: rgb(162, 119, 255);
   border-left-color: rgb(162, 119, 255);
   border-right-color: rgb(162, 119, 255);
   border-top-color: rgb(162, 119, 255);
   color: rgb(162, 119, 255);
 }`,
-    footer: `body footer {
+    footer: `html body footer {
   background-color: rgb(17, 15, 24);
   border-bottom-color: rgb(97, 255, 202);
   border-left-color: rgb(97, 255, 202);
   border-right-color: rgb(97, 255, 202);
   border-top-color: rgb(97, 255, 202);
 }`,
-    misc: `body .metadata {
+    misc: `html body .metadata {
   border-bottom-color: rgb(97, 255, 202);
   border-left-color: rgb(97, 255, 202);
   border-right-color: rgb(97, 255, 202);
   border-top-color: rgb(97, 255, 202);
 }
 
-body .navigation-progress {
+html body .navigation-progress {
   background-color: rgb(17, 15, 24);
 }
 
-body kbd {
+html body kbd {
   background-color: rgb(17, 15, 24);
 }`,
   },
