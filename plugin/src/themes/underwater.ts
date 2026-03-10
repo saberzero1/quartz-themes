@@ -55,6 +55,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: rgb(246, 193, 119);
   --blockquote-border-thickness: 3px;
   --blur-background: color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent) linear-gradient(rgba(64, 61, 82, 0.5), color-mix(in srgb, rgba(64, 61, 82, 0.5) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: rgb(235, 111, 146);
   --button-radius: 7px;
   --callout-bug: 235, 188, 186;
@@ -106,6 +107,7 @@ export const theme: ThemeData = {
   --code-string: rgb(246, 193, 119);
   --code-tag: rgb(156, 207, 216);
   --code-value: rgb(196, 167, 231);
+  --codeFont: var(--font-text);
   --collapse-icon-color: #6e6a86;
   --collapse-icon-color-collapsed: rgb(235, 188, 186);
   --color-accent: rgb(162, 208, 221);
@@ -141,6 +143,8 @@ export const theme: ThemeData = {
   --color-yellow: rgb(246, 193, 119);
   --color-yellow-rgb: 246, 193, 119;
   --cursor: pointer;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(64, 61, 82, 0.6);
   --divider-color-hover: rgb(235, 188, 186);
   --divider-width: 0px;
@@ -174,6 +178,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(156, 207, 216);
   --graph-node-unresolved: #6e6a86;
   --graph-text: #e0def4;
+  --gray: var(--text-muted);
   --h1-color: rgb(235, 111, 146);
   --h1-font: '??', '??', "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
   --h1-size: 1.45em;
@@ -192,8 +197,10 @@ export const theme: ThemeData = {
   --h6-color: #e0def4;
   --h6-font: '??', '??', "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
   --h6-variant: small-caps;
+  --headerFont: var(--font-text);
   --heading-formatting: #6e6a86;
   --headings-font: '??', '??', "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --highlight: var(--text-highlight-bg);
   --highlight-high: #524f67;
   --highlight-low: #21202e;
   --highlight-med: rgb(64, 61, 82);
@@ -218,6 +225,8 @@ export const theme: ThemeData = {
   --iris-rgb: 196, 167, 231;
   --italic-color: rgb(156, 207, 216);
   --latex-color: rgb(246, 193, 119);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(235, 188, 186);
   --link-color-hover: rgba(235, 188, 186, 0.6);
   --link-decoration: none;
@@ -295,6 +304,7 @@ export const theme: ThemeData = {
   --search-icon-color: #6e6a86;
   --search-result-background: #191724;
   --search-result-background-hover: rgb(235, 188, 186);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #e0def4;
   --setting-items-background: #26233a;
   --setting-items-border-color: rgba(64, 61, 82, 0.6);
@@ -356,6 +366,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(162, 208, 221, 0.15);
   --tag-color: rgb(235, 188, 186);
   --tag-color-hover: rgb(235, 188, 186);
+  --tertiary: var(--text-accent-hover);
   --text: #e0def4;
   --text-accent: rgb(235, 188, 186);
   --text-accent-hover: rgb(156, 207, 216);
@@ -369,6 +380,8 @@ export const theme: ThemeData = {
   --text-selection: rgb(64, 61, 82, 0.5);
   --text-success: rgb(156, 207, 216);
   --text-warning: rgb(246, 193, 119);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: rgba(64, 61, 82, 0.6);
@@ -1466,6 +1479,7 @@ body sup {
   --blockquote-border-color: rgb(234, 157, 52);
   --blockquote-border-thickness: 3px;
   --blur-background: color-mix(in srgb, rgb(255, 250, 243) 65%, transparent) linear-gradient(rgb(255, 250, 243), color-mix(in srgb, rgb(255, 250, 243) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-color: rgb(180, 99, 122);
   --button-radius: 7px;
   --callout-bug: 215, 130, 126;
@@ -1517,6 +1531,7 @@ body sup {
   --code-string: rgb(234, 157, 52);
   --code-tag: rgb(86, 148, 159);
   --code-value: rgb(144, 122, 169);
+  --codeFont: var(--font-text);
   --collapse-icon-color: #9893a5;
   --collapse-icon-color-collapsed: rgb(215, 130, 126);
   --color-accent: rgb(80, 141, 149);
@@ -1552,6 +1567,8 @@ body sup {
   --color-yellow: rgb(234, 157, 52);
   --color-yellow-rgb: 234, 157, 52;
   --cursor: pointer;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(223, 218, 217, 0.6);
   --divider-color-hover: rgb(215, 130, 126);
   --divider-width: 0px;
@@ -1585,6 +1602,7 @@ body sup {
   --graph-node-tag: rgb(86, 148, 159);
   --graph-node-unresolved: #9893a5;
   --graph-text: #575279;
+  --gray: var(--text-muted);
   --h1-color: rgb(180, 99, 122);
   --h1-font: '??', '??', "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
   --h1-size: 1.45em;
@@ -1603,8 +1621,10 @@ body sup {
   --h6-color: #575279;
   --h6-font: '??', '??', "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
   --h6-variant: small-caps;
+  --headerFont: var(--font-text);
   --heading-formatting: #9893a5;
   --headings-font: '??', '??', "Lexend", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, sans-serif, "Inter", sans-serif;
+  --highlight: var(--text-highlight-bg);
   --highlight-high: #cecacd;
   --highlight-low: #f4ede8;
   --highlight-med: rgb(223, 218, 217);
@@ -1629,6 +1649,8 @@ body sup {
   --iris-rgb: 144, 122, 169;
   --italic-color: rgb(86, 148, 159);
   --latex-color: rgb(40, 105, 131);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(215, 130, 126);
   --link-color-hover: rgba(215, 130, 126, 0.6);
   --link-decoration: none;
@@ -1704,6 +1726,7 @@ body sup {
   --search-icon-color: #9893a5;
   --search-result-background: #faf4ed;
   --search-result-background-hover: rgb(215, 130, 126);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #575279;
   --setting-items-background: #f2e9e1;
   --setting-items-border-color: rgba(223, 218, 217, 0.6);
@@ -1765,6 +1788,7 @@ body sup {
   --tag-border-color-hover: rgba(80, 141, 149, 0.15);
   --tag-color: rgb(215, 130, 126);
   --tag-color-hover: rgb(215, 130, 126);
+  --tertiary: var(--text-accent-hover);
   --text: #575279;
   --text-accent: rgb(215, 130, 126);
   --text-accent-hover: rgb(86, 148, 159);
@@ -1778,6 +1802,8 @@ body sup {
   --text-selection: rgb(223, 218, 217, 0.5);
   --text-success: rgb(86, 148, 159);
   --text-warning: rgb(234, 157, 52);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: rgba(223, 218, 217, 0.6);

@@ -81,6 +81,7 @@ export const theme: ThemeData = {
   --blue-70: rgb(50, 84, 133);
   --blue-80: rgb(26, 56, 101);
   --blue-90: rgb(7, 37, 80);
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --border-inverse: rgb(244, 244, 240);
   --border-strong-1: rgb(112, 110, 109);
@@ -147,6 +148,7 @@ export const theme: ThemeData = {
   --code-string: rgb(137, 180, 110);
   --code-tag: rgb(243, 88, 53);
   --code-value: rgb(119, 119, 119);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(112, 110, 109);
   --collapse-icon-color-collapsed: rgb(102, 153, 97);
   --color-accent: rgb(102, 153, 97);
@@ -182,6 +184,8 @@ export const theme: ThemeData = {
   --cyan-70: rgb(32, 87, 121);
   --cyan-80: rgb(0, 60, 92);
   --cyan-90: rgb(0, 40, 71);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(58, 56, 56);
   --divider-color-hover: rgb(102, 153, 97);
   --duration-fast-1: 70ms;
@@ -247,6 +251,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(199, 66, 41);
   --graph-node-unresolved: rgb(112, 110, 109);
   --graph-text: rgb(244, 244, 240);
+  --gray: var(--text-muted);
   --gray-10: 244,
     244,
     240;
@@ -304,6 +309,7 @@ export const theme: ThemeData = {
   --h5-size: 1.125em;
   --h5-weight: 600;
   --h6-font: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --headerFont: var(--font-text);
   --heading-counter: " ";
   --heading-formatting: rgb(112, 110, 109);
   --highlight: rgba(102, 153, 97, 0.7);
@@ -382,6 +388,8 @@ export const theme: ThemeData = {
   --leading-7: 1.875em;
   --leading-8: 2.25em;
   --leading-9: 2.5em;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(102, 153, 97);
   --link-color-hover: rgb(102, 153, 97);
   --link-external-color: rgb(102, 153, 97);
@@ -519,6 +527,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(199, 197, 194);
   --search-icon-color: rgb(199, 197, 194);
   --search-result-background: rgb(22, 22, 22);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(244, 244, 240);
   --setting-group-heading-size: 14px;
   --setting-items-background: rgb(38, 38, 37);
@@ -583,6 +592,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(102, 153, 97, 0.25);
   --tag-color: rgb(102, 153, 97);
   --tag-color-hover: rgb(102, 153, 97);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(102, 153, 97);
   --text-accent-hover: rgb(102, 153, 97);
   --text-code: rgb(236, 91, 118);
@@ -598,6 +608,8 @@ export const theme: ThemeData = {
   --text-secondary: rgb(199, 197, 194);
   --text-selection: rgba(102, 153, 97, 0.5);
   --text-success: rgb(102, 152, 97);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(22, 22, 22);
   --titlebar-background-focused: rgb(22, 22, 22);
   --titlebar-border-color: rgb(58, 56, 56);
@@ -1701,6 +1713,7 @@ body sup {
   --blue-80: rgb(26, 56, 101);
   --blue-90: rgb(7, 37, 80);
   --blur-background: color-mix(in srgb, rgb(244, 244, 240) 65%, transparent) linear-gradient(rgb(244, 244, 240), color-mix(in srgb, rgb(244, 244, 240) 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --border-inverse: rgb(22, 22, 22);
   --border-strong-1: rgb(142, 140, 139);
@@ -1767,6 +1780,7 @@ body sup {
   --code-string: rgb(102, 152, 97);
   --code-tag: rgb(199, 66, 41);
   --code-value: rgb(119, 119, 119);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(169, 168, 165);
   --collapse-icon-color-collapsed: rgb(246, 141, 69);
   --color-accent: rgb(246, 141, 69);
@@ -1802,6 +1816,8 @@ body sup {
   --cyan-70: rgb(32, 87, 121);
   --cyan-80: rgb(0, 60, 92);
   --cyan-90: rgb(0, 40, 71);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(226, 224, 220);
   --divider-color-hover: rgb(246, 141, 69);
   --duration-fast-1: 70ms;
@@ -1867,6 +1883,7 @@ body sup {
   --graph-node-tag: rgb(199, 66, 41);
   --graph-node-unresolved: rgb(169, 168, 165);
   --graph-text: rgb(22, 22, 22);
+  --gray: var(--text-muted);
   --gray-10: 244,
     244,
     240;
@@ -1924,6 +1941,7 @@ body sup {
   --h5-size: 1.125em;
   --h5-weight: 600;
   --h6-font: '??', Inter,sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --headerFont: var(--font-text);
   --heading-counter: " ";
   --heading-formatting: rgb(169, 168, 165);
   --highlight: rgba(246, 141, 69, 0.7);
@@ -2002,6 +2020,8 @@ body sup {
   --leading-7: 1.875em;
   --leading-8: 2.25em;
   --leading-9: 2.5em;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(246, 141, 69);
   --link-color-hover: rgb(246, 141, 69);
   --link-external-color: rgb(246, 141, 69);
@@ -2138,6 +2158,7 @@ body sup {
   --search-clear-button-color: rgb(84, 81, 81);
   --search-icon-color: rgb(84, 81, 81);
   --search-result-background: rgb(244, 244, 240);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(22, 22, 22);
   --setting-group-heading-size: 14px;
   --setting-items-background: rgb(253, 254, 254);
@@ -2202,6 +2223,7 @@ body sup {
   --tag-border-color-hover: rgba(246, 141, 69, 0.25);
   --tag-color: rgb(246, 141, 69);
   --tag-color-hover: rgb(246, 141, 69);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(246, 141, 69);
   --text-accent-hover: rgb(246, 141, 69);
   --text-code: rgb(208, 47, 92);
@@ -2217,6 +2239,8 @@ body sup {
   --text-secondary: rgb(84, 81, 81);
   --text-selection: rgba(246, 141, 69, 0.5);
   --text-success: rgb(102, 152, 97);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(244, 244, 240);
   --titlebar-background-focused: rgb(244, 244, 240);
   --titlebar-border-color: rgb(226, 224, 220);

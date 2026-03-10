@@ -33,6 +33,7 @@ export const theme: ThemeData = {
   --blockquote-border-thickness: 8px;
   --blockquote-color: #FFC663;
   --blockquote-font-style: italic;
+  --bodyFont: var(--font-text);
   --bold-color: #FFFFFF;
   --bold-weight: 800;
   --border-width: 2px;
@@ -79,12 +80,15 @@ export const theme: ThemeData = {
   --code-string: #85B1A9;
   --code-tag: #2AB9FF;
   --code-value: #9D5918;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #DDD0C4;
   --collapse-icon-color-collapsed: #94959B;
   --color-accent: rgb(136, 123, 163);
   --color-accent-1: rgb(156, 146, 181);
   --color-accent-2: rgb(177, 170, 197);
   --color-accent-hsl: 260.488, 18.2222%, 55.8824%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #515151;
   --divider-color-hover: #FFFFFF;
   --divider-width-hover: 2px;
@@ -113,6 +117,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(156, 146, 181);
   --graph-node-unresolved: rgba(255, 255, 255, 0.6);
   --graph-text: rgb(255, 255, 255);
+  --gray: var(--text-muted);
   --h-font-style: oblique 10deg;
   --h-font-variant: proportional-nums;
   --h-weight: 900;
@@ -140,7 +145,9 @@ export const theme: ThemeData = {
   --h6-style: oblique 10deg;
   --h6-variant: proportional-nums;
   --h6-weight: 900;
+  --headerFont: var(--font-text);
   --heading-formatting: #FFFFFF;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: rgba(148, 149, 155, 0.3);
   --hr-thickness: 4px;
   --icon-color: #DDD0C4;
@@ -256,6 +263,8 @@ export const theme: ThemeData = {
   --kuro-yellow-light-rgb: 252, 255, 184;
   --kuro-yellow-normal: #FFF700;
   --kuro-yellow-normal-rgb: 255, 247, 0;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #2AB9FF;
   --link-color-hover: #A1D9FF;
   --link-external-color: #54CA74;
@@ -314,6 +323,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #B66056;
   --search-icon-color: #887AA3;
   --search-result-background: #141515;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(255, 255, 255);
   --setting-group-heading-size: 18px;
   --setting-items-radius: 16px;
@@ -355,6 +365,7 @@ export const theme: ThemeData = {
   --tag-color: #DDD0C4;
   --tag-color-hover: #FFFFFF;
   --tag-weight: 100;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(156, 146, 181);
   --text-accent-hover: rgb(177, 170, 197);
   --text-error: #FFB7B7;
@@ -366,6 +377,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(136, 123, 163, 0.33);
   --text-success: #54CA74;
   --text-warning: #E59605;
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #212121;
   --titlebar-text-color: rgba(255, 255, 255, 0.8);
   --titlebar-text-color-focused: rgb(255, 255, 255);

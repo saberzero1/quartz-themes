@@ -37,6 +37,7 @@ export const theme: ThemeData = {
   --blockquote-color: #3eb4bf;
   --blockquote-font-style: italic;
   --blur-background: color-mix(in srgb, rgb(14, 19, 21) 65%, transparent) linear-gradient(rgb(14, 19, 21), color-mix(in srgb, rgb(14, 19, 21) 65%, transparent));
+  --bodyFont: var(--font-interface);
   --bold-color: white;
   --bold-weight: 600;
   --canvas-background: rgb(20, 26, 31);
@@ -51,6 +52,7 @@ export const theme: ThemeData = {
   --code-bracket-background: rgba(34, 142, 195, 0.173);
   --code-normal: #7095c2;
   --code-punctuation: rgb(167, 171, 175);
+  --codeFont: var(--font-interface);
   --collapse-icon-color-collapsed: rgb(12, 192, 132);
   --color-accent: rgb(18, 115, 82);
   --color-accent-1: rgb(20, 133, 90);
@@ -62,6 +64,8 @@ export const theme: ThemeData = {
   --color-base-25: rgb(26, 34, 41);
   --color-base-30: rgb(14, 19, 21);
   --color-base-70: rgb(167, 171, 175);
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --default-font: "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif;
   --divider-color: rgb(61, 61, 67);
   --divider-color-hover: rgb(22, 105, 84);
@@ -79,12 +83,15 @@ export const theme: ThemeData = {
   --footnote-input-background-active: rgba(34, 142, 195, 0.173);
   --graph-node: rgb(167, 171, 175);
   --graph-node-focused: rgb(12, 192, 132);
+  --gray: var(--text-muted);
   --h1-color: rgb(76, 166, 230);
   --h2-color: #34daa5;
   --h3-color: rgb(54, 226, 226);
   --h4-color: #e3e363;
   --h5-color: rgb(233, 99, 99);
   --h6-color: rgb(224, 108, 199);
+  --headerFont: var(--font-interface);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(61, 61, 67);
   --icon-color: rgb(167, 171, 175);
   --icon-color-active: rgb(12, 192, 132);
@@ -93,6 +100,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(31, 147, 118);
   --interactive-accent-hsl: 160, 73%, 26%;
   --interactive-normal: rgb(14, 19, 21);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(12, 182, 157);
   --link-color-hover: rgb(6, 239, 204);
   --link-external-color: rgb(12, 182, 157);
@@ -142,6 +151,7 @@ export const theme: ThemeData = {
   --search-match-color: #ffff00;
   --search-match-color-other: #ffff00;
   --search-result-background: rgb(20, 26, 31);
+  --secondary: var(--text-accent);
   --setting-items-background: rgb(16, 21, 25);
   --setting-items-border-color: rgb(61, 61, 67);
   --setting-items-radius: 10px;
@@ -175,12 +185,15 @@ export const theme: ThemeData = {
   --tag-color: rgb(10, 209, 235);
   --tag-color-hover: rgb(49, 223, 246);
   --tag-padding-x: 0.55em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(12, 192, 132);
   --text-accent-hover: rgb(39, 241, 174);
   --text-highlight-bg: #075dc7;
   --text-muted: rgb(167, 171, 175);
   --text-on-accent: rgb(250, 250, 250);
   --text-selection: rgb(20, 47, 66);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(14, 19, 21);
   --titlebar-background-focused: rgb(14, 19, 21);
   --titlebar-border-color: rgb(61, 61, 67);

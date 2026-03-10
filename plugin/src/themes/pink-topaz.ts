@@ -74,7 +74,9 @@ export const theme: ThemeData = {
   --collapse-icon-color: #efe9d9;
   --collapse-icon-color-collapsed: #ffccbc;
   --color-specification: #f93759;
+  --dark: var(--text-normal);
   --darkblue: #0040ff;
+  --darkgray: var(--text-normal);
   --darkgreen: #1bbc9b;
   --day-planner-dot: #ffebec;
   --day-planner-item-hover: #f39ba0;
@@ -142,6 +144,7 @@ export const theme: ThemeData = {
   --graph-text-color: #efe9d9;
   --graph-unresolved: #ffccbc;
   --graphtag: #f39ba0;
+  --gray: var(--text-muted);
   --gray-1: #c9b0b0;
   --gray-2: #b4b1c6;
   --green: #00ffc7;
@@ -153,6 +156,7 @@ export const theme: ThemeData = {
   --h6-color: #ffccbc;
   --header-color: #f39ba0;
   --heading-formatting: #efe9d9;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #191919;
   --icon-color: #efe9d9;
   --icon-color-active: #ffccbc;
@@ -166,7 +170,9 @@ export const theme: ThemeData = {
   --interactive-accent-rgb: 45, 135, 211;
   --interactive-hover: #ffccbc;
   --interactive-normal: #f39ba0;
+  --light: var(--background-primary);
   --light-yellow: #ffd26c;
+  --lightgray: var(--background-secondary);
   --link-color: #ffccbc;
   --link-color-hover: #f93759;
   --link-external-color: #ffccbc;
@@ -232,6 +238,7 @@ export const theme: ThemeData = {
   --search-result-background: #212121;
   --search-result-file-title-color: #f39ba0;
   --search-text: #fff;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #efe9d9;
   --setting-items-background: #f937590d;
   --setting-items-border-color: #191919;
@@ -282,6 +289,7 @@ export const theme: ThemeData = {
   --tag8: #02a588;
   --tag9: #ab4967;
   --tape-color: #ffccbc47;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #ffccbc;
   --text-accent-hover: #f93759;
   --text-blue: #8ca1ff;
@@ -304,6 +312,7 @@ export const theme: ThemeData = {
   --text-selection: #e5c7a94a;
   --text-size-cloze: 0.9375em;
   --text-yellow: #ffdc51;
+  --textHighlight: var(--text-highlight-bg);
   --theme-color: #ffccbc;
   --theme-color-translucent: #f39ba0;
   --theme-color-translucent-1: #f39ba0;
@@ -1157,7 +1166,9 @@ body sup {
   --collapse-icon-color: #37291a;
   --collapse-icon-color-collapsed: #980000;
   --color-specification: #fd355a;
+  --dark: var(--text-normal);
   --darkblue: #5981f0;
+  --darkgray: var(--text-normal);
   --darkgreen: #004f2d;
   --day-planner-dot: #ffdece;
   --day-planner-item-hover: #f5a7a2;
@@ -1225,6 +1236,7 @@ body sup {
   --graph-text-color: #37291a;
   --graph-unresolved: #E87659;
   --graphtag: #ffdece;
+  --gray: var(--text-muted);
   --gray-1: #c4c4c4;
   --gray-2: #7c8595;
   --green: #40916c;
@@ -1236,6 +1248,7 @@ body sup {
   --h6-color: #f39ba0;
   --header-color: #f5a7a2;
   --heading-formatting: #37291a;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(0, 0, 0, 0.1);
   --icon-color: #37291a;
   --icon-color-active: #980000;
@@ -1249,8 +1262,10 @@ body sup {
   --interactive-accent-rgb: #fd355a;
   --interactive-hover: #ffdece;
   --interactive-normal: #f39ba0;
+  --light: var(--background-primary);
   --light-purple: #d3d6fe;
   --light-yellow: #e5e79c;
+  --lightgray: var(--background-secondary);
   --link-color: #980000;
   --link-color-hover: #37291a;
   --link-external-color: #980000;
@@ -1314,6 +1329,7 @@ body sup {
   --search-result-background: #efe9d9;
   --search-result-file-title-color: #980000;
   --search-text: #37291a;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #37291a;
   --setting-items-background: #ffdece;
   --setting-items-border-color: rgba(0, 0, 0, 0.1);
@@ -1364,6 +1380,7 @@ body sup {
   --tag8: #dbb671;
   --tag9: #f19c79;
   --tape-color: #acacac65;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #980000;
   --text-accent-hover: #37291a;
   --text-blue: #0083bb;
@@ -1385,6 +1402,7 @@ body sup {
   --text-selection: #ffebec;
   --text-size-cloze: 0.9375em;
   --text-yellow: #d4a300;
+  --textHighlight: var(--text-highlight-bg);
   --theme-color: #f5a7a2;
   --theme-color-translucent: #f5a7a2;
   --theme-color-translucent-1: #ffdece;

@@ -478,6 +478,8 @@ export const theme: ThemeData = {
   --d8ylFv: 34.8, 100%, 9.8%;
   --d8ylG: rgb(41, 23, 0);
   --d8ylGv: 34.5, 100%, 7.8%;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --dashboardHeight: 40px;
   --disabledOverlay: linear-gradient(90deg, rgba(0, 0, 0, 0) 75%, #00000088 100%);
   --divider-color: rgb(56, 60, 67);
@@ -537,6 +539,7 @@ export const theme: ThemeData = {
   --graph-line: rgb(63, 67, 75);
   --graph-node-unresolved: rgb(110, 116, 124);
   --graph-text: #a3a5aa;
+  --gray: var(--text-faint);
   --green: rgb(67, 182, 130);
   --green-360: rgb(67, 182, 130);
   --green-active: rgb(54, 145, 103);
@@ -604,6 +607,8 @@ export const theme: ThemeData = {
   --interactive-normal: rgb(56, 60, 67);
   --levelHover: #ffffff11;
   --levelLayer: #D3E2FF18;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(138, 92, 245);
   --linkBrightnessAdditive: 1;
   --list-marker-color: rgb(110, 116, 124);

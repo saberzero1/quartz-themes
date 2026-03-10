@@ -129,6 +129,8 @@ export const theme: ThemeData = {
   --color-white: #fff;
   --color-yellow: oklch(73.46% 0.1461 87.4626);
   --color-yellow-rgb: 208, 162, 21;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --default-mono-font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
@@ -160,9 +162,11 @@ export const theme: ThemeData = {
   --graph-node-tag: oklch(65.13% 0.1241 119.4018);
   --graph-node-unresolved: oklch(45.31% 0.0049 91.5721);
   --graph-text: oklch(0.9901 0.0161 95.22);
+  --gray: var(--text-muted);
   --header-height: 60px;
   --heading-formatting: oklch(45.31% 0.0049 91.5721);
   --heading-spacing: 2.5rem;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #3a3a3c;
   --icon-color: oklch(84.63% 0.0136 102.1557);
   --icon-color-active: rgb(0, 0, 0);
@@ -179,6 +183,8 @@ export const theme: ThemeData = {
   --interactive-normal: oklch(27.34% 0.0023 67.5746);
   --italic-color: oklch(73.46% 0.1461 87.4626);
   --leading-relaxed: 1.625;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(0, 0, 0);
   --link-color-hover: rgb(0, 0, 0);
   --link-decoration: none;
@@ -244,6 +250,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: oklch(84.63% 0.0136 102.1557);
   --search-icon-color: oklch(84.63% 0.0136 102.1557);
   --search-result-background: oklch(22.28% 0.0025 67.5819);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: oklch(0.9901 0.0161 95.22);
   --setting-items-background: oklch(22.28% 0.0025 67.5819);
   --setting-items-border-color: #3a3a3c;
@@ -297,6 +304,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(115, 217, 208, 0.15);
   --tag-color: rgb(0, 0, 0);
   --tag-color-hover: rgb(0, 0, 0);
+  --tertiary: var(--text-accent-hover);
   --text-2xl: 2.25rem;
   --text-2xl--line-height: 1.33333;
   --text-3xl: 3rem;
@@ -324,6 +332,7 @@ export const theme: ThemeData = {
   --text-xl--line-height: 1.4;
   --text-xs: 0.75rem;
   --text-xs--line-height: 1.33333;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: oklch(27.34% 0.0023 67.5746);
   --titlebar-background-focused: oklch(32.14% 0.0037 84.5916);
   --titlebar-border-color: #3a3a3c;
@@ -1576,6 +1585,8 @@ body sup {
   --color-white: #fff;
   --color-yellow: oklch(63.33% 0.1294 85.8140);
   --color-yellow-oklch: 0.6333 0.1294 85.8140;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --default-mono-font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
@@ -1607,9 +1618,11 @@ body sup {
   --graph-node-tag: oklch(55.93% 0.1335 122.9402);
   --graph-node-unresolved: oklch(77.21% 0.0127 96.5429);
   --graph-text: #3a3633;
+  --gray: var(--text-muted);
   --header-height: 60px;
   --heading-formatting: oklch(77.21% 0.0127 96.5429);
   --heading-spacing: 2.5rem;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #e5e4e3;
   --icon-color: #8a8785;
   --icon-color-active: rgb(0, 0, 0);
@@ -1626,6 +1639,8 @@ body sup {
   --interactive-normal: oklch(99.01% 0.0160 95.2865);
   --italic-color: #FF9500;
   --leading-relaxed: 1.625;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(0, 0, 0);
   --link-color-hover: rgb(0, 0, 0);
   --link-decoration: none;
@@ -1689,6 +1704,7 @@ body sup {
   --search-clear-button-color: #8a8785;
   --search-icon-color: #8a8785;
   --search-result-background: #fbfbfa;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #3a3633;
   --setting-items-background: #f7f7f6;
   --setting-items-border-color: #e5e4e3;
@@ -1740,6 +1756,7 @@ body sup {
   --tag-border-color-hover: rgba(36, 132, 124, 0.15);
   --tag-color: rgb(0, 0, 0);
   --tag-color-hover: rgb(0, 0, 0);
+  --tertiary: var(--text-accent-hover);
   --text-2xl: 2.25rem;
   --text-2xl--line-height: 1.33333;
   --text-3xl: 3rem;
@@ -1767,6 +1784,7 @@ body sup {
   --text-xl--line-height: 1.4;
   --text-xs: 0.75rem;
   --text-xs--line-height: 1.33333;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #f4f4f3;
   --titlebar-background-focused: #efefed;
   --titlebar-border-color: #e5e4e3;

@@ -30,6 +30,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #0e0e0e;
   --blur-background: color-mix(in srgb, #333333 65%, transparent) linear-gradient(#333333, color-mix(in srgb, #333333 65%, transparent));
   --body-font: "Inter";
+  --bodyFont: var(--font-text);
   --button-background: #0e0e0e;
   --button-border: #0e0e0e;
   --button-text: #dddddd;
@@ -50,6 +51,7 @@ export const theme: ThemeData = {
   --code-string: rgb(163, 190, 140);
   --code-tag: rgb(191, 97, 106);
   --code-value: rgb(180, 142, 173);
+  --codeFont: var(--font-text);
   --color-base-00: #0e0e0e;
   --color-base-05: #343434;
   --color-base-100: #ffffff;
@@ -61,6 +63,8 @@ export const theme: ThemeData = {
   --color-base-70: #bbbbbb;
   --color-base-80: #dddddd;
   --color-base-90: #eeeeee;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #333333;
   --dropdown-background: #333333;
   --dropdown-background-hover: #363636;
@@ -84,6 +88,7 @@ export const theme: ThemeData = {
   --graph-line: #363636;
   --graph-node: #bbbbbb;
   --graph-text: #ffffff;
+  --gray: var(--text-muted);
   --green: rgb(163, 190, 140);
   --green_x: 163, 190, 140;
   --h1-color: rgb(191, 97, 106);
@@ -99,6 +104,7 @@ export const theme: ThemeData = {
   --h6-color: rgb(129, 161, 193);
   --h6-font: "Inter";
   --header-font: "Inter";
+  --headerFont: var(--font-text);
   --hr-color: #333333;
   --icon-color: #bbbbbb;
   --icon-color-focused: #ffffff;
@@ -107,6 +113,8 @@ export const theme: ThemeData = {
   --inline-title-font: "Inter";
   --interactive-hover: #363636;
   --interactive-normal: #333333;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color-hover: #bbbbbb;
   --menu-background: #0e0e0e;
   --menu-border-color: #363636;
@@ -226,6 +234,7 @@ export const theme: ThemeData = {
   --text-primary: #dddddd;
   --text-secondary: #666666;
   --text-warning: rgb(235, 203, 139);
+  --titleFont: var(--font-text);
   --titlebar-background: #0e0e0e;
   --titlebar-background-focused: #242424;
   --titlebar-border-color: #333333;

@@ -181,6 +181,8 @@ export const theme: ThemeData = {
   --content-line-width: min(40rem, 88%);
   --content-margin: auto;
   --content-margin-start: max( calc(50% - 20rem), 6% );
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(54, 54, 54);
   --divider-color-hover: rgb(121, 146, 160);
   --dropdown-background: hsla( 0, 0%, 55%, 0.12 );
@@ -223,6 +225,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #a8c373;
   --graph-node-unresolved: hsl( 0, -10%, 35% );
   --graph-text: hsl( 0, -10%, 82% );
+  --gray: var(--text-muted);
   --h1-size: 1.125em;
   --h1-weight: 600;
   --h1l: rgb(54, 54, 54);
@@ -246,6 +249,7 @@ export const theme: ThemeData = {
   --heading-formatting: hsl( 0, -10%, 35% );
   --heading-spacing: 2em;
   --hider-ribbon-display: none;
+  --highlight: var(--text-highlight-bg);
   --hl1: hsla( 201, 50%, 40%, 30% );
   --hl2: rgba(255, 177, 80, 0.3);
   --hr-color: rgb(54, 54, 54);
@@ -282,6 +286,8 @@ export const theme: ThemeData = {
   --kanban-border: 0px;
   --leaflet-borders: rgba(255, 255, 255, 0.1);
   --leaflet-buttons: rgb(33, 33, 33);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height: 1.5;
   --line-number-color: hsl( 0, -10%, 35% );
   --line-number-color-active: hsl( 0, -20%, 60% );
@@ -380,6 +386,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: hsl( 0, -20%, 60% );
   --search-icon-color: hsl( 0, -20%, 60% );
   --search-result-background: rgb(38, 38, 38);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: hsl( 0, -10%, 82% );
   --setting-items-background: rgb(33, 33, 33);
   --setting-items-border-color: rgb(54, 54, 54);
@@ -451,6 +458,7 @@ export const theme: ThemeData = {
   --tag-color-hover: hsl( 0, -10%, 82% );
   --tag-padding-y: 0.2em;
   --tag-size: 0.8em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(136, 158, 170);
   --text-accent-hover: rgb(160, 178, 187);
   --text-blockquote: hsl( 0, -20%, 60% );
@@ -467,6 +475,7 @@ export const theme: ThemeData = {
   --text-selection: hsla( 201, 50%, 40%, 30% );
   --text-success: #a8c373;
   --text-warning: #d5763f;
+  --textHighlight: var(--text-highlight-bg);
   --title-color: hsl( 0, -10%, 82% );
   --title-color-inactive: hsl( 0, -20%, 60% );
   --titlebar-background: rgb(38, 38, 38);
@@ -1515,6 +1524,8 @@ body sup {
   --content-line-width: min(40rem, 88%);
   --content-margin: auto;
   --content-margin-start: max( calc(50% - 20rem), 6% );
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(230, 230, 230);
   --divider-color-hover: rgb(124, 149, 162);
   --dropdown-background: white;
@@ -1557,6 +1568,7 @@ body sup {
   --graph-node-tag: #a8c373;
   --graph-node-unresolved: hsl( 0, -10%, 71% );
   --graph-text: rgb(15, 15, 15);
+  --gray: var(--text-muted);
   --h1-size: 1.125em;
   --h1-weight: 600;
   --h1l: rgb(230, 230, 230);
@@ -1580,6 +1592,7 @@ body sup {
   --heading-formatting: hsl( 0, -10%, 71% );
   --heading-spacing: 2em;
   --hider-ribbon-display: none;
+  --highlight: var(--text-highlight-bg);
   --hl1: hsla( 201, 50%, 76%, 30% );
   --hl2: rgba(255, 225, 0, 0.5);
   --hr-color: rgb(230, 230, 230);
@@ -1615,6 +1628,8 @@ body sup {
   --interactive-normal: white;
   --leaflet-borders: rgba(0, 0, 0, 0.1);
   --leaflet-buttons: white;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height: 1.5;
   --line-number-color: hsl( 0, -10%, 71% );
   --line-number-color-active: hsl( 0, -20%, 46% );
@@ -1712,6 +1727,7 @@ body sup {
   --search-clear-button-color: hsl( 0, -20%, 46% );
   --search-icon-color: hsl( 0, -20%, 46% );
   --search-result-background: white;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(15, 15, 15);
   --setting-items-background: rgb(245, 245, 245);
   --setting-items-border-color: rgb(230, 230, 230);
@@ -1783,6 +1799,7 @@ body sup {
   --tag-color-hover: rgb(15, 15, 15);
   --tag-padding-y: 0.2em;
   --tag-size: 0.8em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(106, 134, 149);
   --text-accent-hover: rgb(89, 113, 125);
   --text-blockquote: hsl( 0, -20%, 46% );
@@ -1799,6 +1816,7 @@ body sup {
   --text-selection: hsla( 201, 50%, 76%, 30% );
   --text-success: #a8c373;
   --text-warning: #d5763f;
+  --textHighlight: var(--text-highlight-bg);
   --title-color: rgb(15, 15, 15);
   --title-color-inactive: hsl( 0, -20%, 46% );
   --titlebar-background: white;

@@ -44,12 +44,14 @@ export const theme: ThemeData = {
   --h4-color: rgb(163, 110, 251);
   --h5-color: rgb(109, 215, 215);
   --h6-color: rgb(175, 191, 5);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(245, 245, 245, 0.2);
   --indentation-guide-color: rgba(245, 245, 245, 0.1);
   --indentation-guide-color-active: rgba(245, 245, 245, 0.1);
   --inline-title-color: rgb(231, 77, 71);
   --input-radius: 14px;
   --italic-color: rgb(166, 139, 249);
+  --lightgray: var(--background-secondary);
   --list-bullet-end-padding: 1.4rem;
   --list-indent: 1.5em;
   --list-marker-color: rgba(245, 245, 245, 0.25);
@@ -93,6 +95,7 @@ export const theme: ThemeData = {
   --text-line-height: 36px;
   --text-paragraph-gap: 3.4px;
   --text-shadow-color: white;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(42, 42, 42);
   --titlebar-background-focused: rgba(18, 18, 18, 0.1);
   --titlebar-border-color: rgba(245, 245, 245, 0.15);
@@ -748,12 +751,14 @@ body sup {
   --h4-color: rgb(163, 110, 251);
   --h5-color: rgb(109, 215, 215);
   --h6-color: rgb(175, 191, 5);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(28, 28, 28, 0.09);
   --indentation-guide-color: rgba(28, 28, 28, 0.05);
   --indentation-guide-color-active: rgba(28, 28, 28, 0.05);
   --inline-title-color: rgb(231, 77, 71);
   --input-radius: 14px;
   --italic-color: rgb(138, 92, 245);
+  --lightgray: var(--background-secondary);
   --list-bullet-end-padding: 1.4rem;
   --list-indent: 1.5em;
   --mac-window-opacity: 0;
@@ -794,6 +799,7 @@ body sup {
   --text-line-height: 36px;
   --text-paragraph-gap: 3.4px;
   --text-shadow-color: black;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: rgb(248, 248, 248);
   --titlebar-background-focused: rgba(240, 240, 240, 0.1);
   --titlebar-border-color: rgba(28, 28, 28, 0.09);

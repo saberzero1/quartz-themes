@@ -224,6 +224,8 @@ export const theme: ThemeData = {
   --cool-cyan: #43cfea;
   --cool-gray: #515768;
   --cyan: #51e1e9;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: color-mix(
     in srgb,
     rgb(11, 12, 45) 90%,
@@ -294,6 +296,7 @@ export const theme: ThemeData = {
     rgb(179, 153, 255)
   );
   --graph-text: color-mix(in srgb, rgb(179, 153, 255) 30%, #fff);
+  --gray: var(--text-muted);
   --h1-color: #43cfea;
   --h2-color: #54b6f8;
   --h3-color: #437cf3;
@@ -305,6 +308,7 @@ export const theme: ThemeData = {
     rgb(11, 12, 45) 60%,
     rgb(179, 153, 255)
   );
+  --highlight: var(--text-highlight-bg);
   --hot-red: #e3365e;
   --hr-color: color-mix(
     in srgb,
@@ -355,7 +359,9 @@ export const theme: ThemeData = {
     rgb(11, 12, 45) 90%,
     rgb(179, 153, 255)
   );
+  --light: var(--background-primary);
   --light-blue: #54b6f8;
+  --lightgray: var(--background-secondary);
   --list-marker-color: color-mix(
     in srgb,
     rgb(11, 12, 45) 60%,
@@ -669,6 +675,7 @@ export const theme: ThemeData = {
   --text-normal: color-mix(in srgb, rgb(179, 153, 255) 30%, #fff);
   --text-success: #52eea3;
   --text-warning: #fa9f50;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: color-mix(in srgb, rgb(11, 12, 45) 25%, #000);
   --titlebar-background-focused: color-mix(in srgb, rgb(11, 12, 45) 50%, #000);
   --titlebar-border-color: color-mix(
@@ -1749,6 +1756,8 @@ body sup {
   --cool-cyan: #3bb2ce;
   --cool-gray: #515768;
   --cyan: #47c1cd;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: color-mix(
     in srgb,
     rgb(235, 235, 250) 90%,
@@ -1807,6 +1816,7 @@ body sup {
     rgb(64, 0, 255)
   );
   --graph-text: color-mix(in srgb, rgb(64, 0, 255) 50%, #000);
+  --gray: var(--text-muted);
   --h1-color: #3bb2ce;
   --h2-color: #54b6f8;
   --h3-color: #437cf3;
@@ -1818,6 +1828,7 @@ body sup {
     rgb(235, 235, 250) 60%,
     rgb(64, 0, 255)
   );
+  --highlight: var(--text-highlight-bg);
   --hot-red: #e3365e;
   --hr-color: color-mix(
     in srgb,
@@ -1860,7 +1871,9 @@ body sup {
   );
   --interactive-hover: color-mix(in srgb, rgb(235, 235, 250) 50%, #fff);
   --interactive-normal: color-mix(in srgb, rgb(235, 235, 250) 25%, #fff);
+  --light: var(--background-primary);
   --light-blue: #54b6f8;
+  --lightgray: var(--background-secondary);
   --list-marker-color: color-mix(
     in srgb,
     rgb(235, 235, 250) 60%,
@@ -2154,6 +2167,7 @@ body sup {
   --text-normal: color-mix(in srgb, rgb(64, 0, 255) 50%, #000);
   --text-success: #47cc91;
   --text-warning: #fa9f50;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: color-mix(in srgb, rgb(235, 235, 250) 25%, #fff);
   --titlebar-background-focused: color-mix(in srgb, rgb(235, 235, 250) 50%, #fff);
   --titlebar-border-color: color-mix(

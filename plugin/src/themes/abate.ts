@@ -100,6 +100,7 @@ export const theme: ThemeData = {
   --heading-color: #0f4761
 		
 		--font-text-theme: Open Sans serif;
+  --highlight: var(--background-modifier-hover);
   --indentation-guide-color: rgba(40, 40, 40, 0.12);
   --indentation-guide-color-active: rgba(40, 40, 40, 0.3);
   --indentation-guide-width: 2px;
@@ -120,6 +121,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 258,
 		88%,
 		66%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3);
   --list-indent: 2.25em;
   --list-indent-editing: 1em;
@@ -178,6 +181,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(138, 92, 245, 0.2);
   --text-success: #05903d;
   --text-warning: #ed6002;
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #fdf6e3;
   --titlebar-background-focused: #fff5de;
   --quartz-icon-color: currentColor;

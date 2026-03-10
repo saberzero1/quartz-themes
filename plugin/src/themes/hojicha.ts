@@ -45,6 +45,7 @@ export const theme: ThemeData = {
   --footnote-divider-color: rgba(240, 140, 58, 0.4);
   --footnote-id-color-no-occurrences: #696969;
   --graph-node-unresolved: #696969;
+  --gray: var(--text-faint);
   --green: #859679;
   --green-rgba: rgba(133, 150, 121, 0.4);
   --h1: #859679;
@@ -76,6 +77,7 @@ export const theme: ThemeData = {
   --pre-code: #111111;
   --red: #804043;
   --red-rgba: rgba(128, 64, 67, 0.4);
+  --secondary: var(--interactive-accent);
   --setting-items-border-color: rgba(240, 140, 58, 0.4);
   --slate-green: #8a968f;
   --slider-track-background: rgba(240, 140, 58, 0.4);

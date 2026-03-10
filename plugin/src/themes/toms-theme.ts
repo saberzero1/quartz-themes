@@ -37,6 +37,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: black;
   --blockquote-border-color: #44cf6e;
   --blur-background: color-mix(in srgb, #306850 65%, transparent) linear-gradient(#306850, color-mix(in srgb, #306850 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: black;
   --canvas-card-label-color: #306850;
   --caret-color: #44cf6e;
@@ -51,12 +52,15 @@ export const theme: ThemeData = {
   --code-comment: #306850;
   --code-normal: #44cf6e;
   --code-punctuation: #44cf6e;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #306850;
   --collapse-icon-color-collapsed: #44cf6e;
   --color-darkgreen: #306850;
   --color-light: #e0f8cf;
   --color-nearblack: #071821;
   --color-off-light: #cfe6be;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #306850;
   --divider-color-hover: #44cf6e;
   --dropdown-background: #306850;
@@ -82,7 +86,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #44cf6e;
   --graph-node-unresolved: #306850;
   --graph-text: #44cf6e;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #306850;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #306850;
   --icon-color: #44cf6e;
   --icon-color-active: #44cf6e;
@@ -95,6 +102,8 @@ export const theme: ThemeData = {
   --interactive-hover: #071821;
   --interactive-normal: #306850;
   --interactive-success: #44cf6e;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #44cf6e;
   --link-color-hover: #e0f8cf;
   --link-external-color: #44cf6e;
@@ -148,6 +157,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #44cf6e;
   --search-icon-color: #44cf6e;
   --search-result-background: black;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #44cf6e;
   --setting-items-background: #071821;
   --setting-items-border-color: #306850;
@@ -177,6 +187,7 @@ export const theme: ThemeData = {
   --table-selection-border-color: #44cf6e;
   --tag-color: #44cf6e;
   --tag-color-hover: #44cf6e;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #44cf6e;
   --text-accent-hover: #e0f8cf;
   --text-error: red;
@@ -188,6 +199,8 @@ export const theme: ThemeData = {
   --text-normal: #44cf6e;
   --text-on-accent: #306850;
   --text-selection: #306850;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: black;
   --titlebar-background-focused: black;
   --titlebar-border-color: #306850;
@@ -969,6 +982,7 @@ body sup {
   --bases-table-summary-background: #e0f8cf;
   --blockquote-border-color: #08b94e;
   --blur-background: color-mix(in srgb, #e0f8cf 65%, transparent) linear-gradient(#e0f8cf, color-mix(in srgb, #e0f8cf 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: #e0f8cf;
   --canvas-card-label-color: #306850;
   --caret-color: #071821;
@@ -983,12 +997,15 @@ body sup {
   --code-comment: #306850;
   --code-normal: #071821;
   --code-punctuation: #08b94e;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #306850;
   --collapse-icon-color-collapsed: #08b94e;
   --color-darkgreen: #306850;
   --color-light: #e0f8cf;
   --color-nearblack: #071821;
   --color-off-light: #cfe6be;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #071821;
   --divider-color-hover: #08b94e;
   --dropdown-background: #e0f8cf;
@@ -1014,7 +1031,10 @@ body sup {
   --graph-node-focused: #08b94e;
   --graph-node-unresolved: #306850;
   --graph-text: #071821;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #306850;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #071821;
   --icon-color: #08b94e;
   --icon-color-active: #08b94e;
@@ -1027,6 +1047,8 @@ body sup {
   --interactive-hover: #306850;
   --interactive-normal: #e0f8cf;
   --interactive-success: #197300;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #08b94e;
   --link-color-hover: #071821;
   --link-external-color: #08b94e;
@@ -1075,6 +1097,7 @@ body sup {
   --search-clear-button-color: #08b94e;
   --search-icon-color: #08b94e;
   --search-result-background: #e0f8cf;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #071821;
   --setting-items-background: #cfe6be;
   --setting-items-border-color: #071821;
@@ -1104,6 +1127,7 @@ body sup {
   --table-selection-border-color: #08b94e;
   --tag-color: #08b94e;
   --tag-color-hover: #08b94e;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #08b94e;
   --text-accent-hover: #071821;
   --text-error: red;
@@ -1115,6 +1139,8 @@ body sup {
   --text-normal: #071821;
   --text-on-accent: #306850;
   --text-selection: #08b94e;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #e0f8cf;
   --titlebar-background-focused: #e0f8cf;
   --titlebar-border-color: #071821;

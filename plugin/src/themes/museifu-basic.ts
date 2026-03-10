@@ -24,6 +24,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
   --bases-table-row-background-hover: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%);
   --bases-table-summary-background: rgb(22, 22, 22);
+  --bodyFont: var(--font-interface);
   --bold-color: color-mix(in srgb, rgb(138, 92, 245) 80%, #ffffff 20%);
   --callout-border-width: 5px;
   --callout-padding: 0;
@@ -41,9 +42,12 @@ export const theme: ThemeData = {
   --code-background: color-mix(in srgb, rgb(138, 92, 245) 15%, transparent 0%);
   --code-comment: rgb(138, 92, 245);
   --code-punctuation: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
+  --codeFont: var(--font-interface);
   --collapse-icon-color: rgb(138, 92, 245);
   --color-accent-trans: color-mix(in srgb, rgb(138, 92, 245) 15%, transparent 0%);
+  --dark: var(--text-normal);
   --dark-or-white-var: #ffffff;
+  --darkgray: var(--text-normal);
   --default-font: 'JetBrains Mono', monospace;
   --file-header-background: rgb(22, 22, 22);
   --file-header-background-focused: rgb(22, 22, 22);
@@ -55,8 +59,11 @@ export const theme: ThemeData = {
   --graph-node: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
   --graph-node-unresolved: rgb(138, 92, 245);
   --graph-text: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
+  --gray: var(--text-muted);
   --grid-size: 64px;
+  --headerFont: var(--font-interface);
   --heading-formatting: rgb(138, 92, 245);
+  --highlight: var(--text-highlight-bg);
   --icon-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
   --icon-color-focused: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
   --icon-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
@@ -65,6 +72,8 @@ export const theme: ThemeData = {
   --interactive-color: rgb(138, 92, 245);
   --italic-color: color-mix(in srgb, rgb(138, 92, 245) 60%, #ffffff 20%);
   --large-kanban-width: 400px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: rgb(138, 92, 245);
   --list-marker-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
   --menu-background: rgb(24, 24, 24);
@@ -140,6 +149,8 @@ export const theme: ThemeData = {
   --text-highlight-bg: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%);
   --text-muted: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
   --text-normal: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(24, 24, 24);
   --titlebar-background-focused: color-mix(in srgb, rgb(138, 92, 245) 50%, transparent 0%);
   --titlebar-text-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%);
@@ -1120,6 +1131,7 @@ body sup {
   --bases-table-row-background-hover: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%);
   --bases-table-summary-background: rgb(228, 228, 228);
   --blur-background: color-mix(in srgb, rgb(228, 228, 228) 65%, transparent) linear-gradient(rgb(228, 228, 228), color-mix(in srgb, rgb(228, 228, 228) 65%, transparent));
+  --bodyFont: var(--font-interface);
   --bold-color: color-mix(in srgb, rgb(138, 92, 245) 80%, #000000 20%);
   --callout-border-width: 5px;
   --callout-padding: 0;
@@ -1139,9 +1151,12 @@ body sup {
   --code-comment: rgb(138, 92, 245);
   --code-normal: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
   --code-punctuation: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
+  --codeFont: var(--font-interface);
   --collapse-icon-color: rgb(138, 92, 245);
   --color-accent-trans: color-mix(in srgb, rgb(138, 92, 245) 15%, transparent 0%);
+  --dark: var(--text-normal);
   --dark-or-white-var: #000000;
+  --darkgray: var(--text-normal);
   --default-font: 'JetBrains Mono', monospace;
   --file-header-background: rgb(228, 228, 228);
   --file-header-background-focused: rgb(228, 228, 228);
@@ -1153,8 +1168,11 @@ body sup {
   --graph-node: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
   --graph-node-unresolved: rgb(138, 92, 245);
   --graph-text: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
+  --gray: var(--text-muted);
   --grid-size: 64px;
+  --headerFont: var(--font-interface);
   --heading-formatting: rgb(138, 92, 245);
+  --highlight: var(--text-highlight-bg);
   --icon-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
   --icon-color-focused: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
   --icon-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
@@ -1163,6 +1181,8 @@ body sup {
   --interactive-color: rgb(138, 92, 245);
   --italic-color: color-mix(in srgb, rgb(138, 92, 245) 60%, #000000 20%);
   --large-kanban-width: 400px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: rgb(138, 92, 245);
   --list-marker-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
   --menu-background: rgb(197, 197, 197);
@@ -1241,6 +1261,8 @@ body sup {
   --text-muted: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
   --text-normal: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);
   --text-on-accent: #ffffff;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(197, 197, 197);
   --titlebar-background-focused: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%);
   --titlebar-text-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%);

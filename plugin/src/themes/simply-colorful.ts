@@ -139,6 +139,7 @@ export const theme: ThemeData = {
   --h5-weight: 700;
   --h6-color: #cec92a;
   --h6-weight: 700;
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: rgb(138, 92, 245);
   --icon-color-focused: rgb(138, 92, 245);
   --icon-color-hover: rgb(138, 92, 245);
@@ -148,6 +149,8 @@ export const theme: ThemeData = {
   --interactive-hover: #4c4c4c;
   --interactive-normal: #414141;
   --italic-color: #32ce2d;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #8a5cf5;
   --link-color-hover: rgba(138, 92, 245, 0.825);
   --link-external-color: #0071e3;
@@ -192,6 +195,7 @@ export const theme: ThemeData = {
   --ribbon-background-collapsed: #191919;
   --scrollbar-active-thumb-bg: rgba(138, 92, 245, 0.5);
   --search-result-background: #191919;
+  --secondary: var(--text-accent);
   --setting-items-background: #222222;
   --slider-thumb-border-color: rgba(138, 92, 245, 0.75);
   --slider-thumb-border-width: 2px;
@@ -228,6 +232,7 @@ export const theme: ThemeData = {
   --tag-padding-x: 0.7em;
   --tag-padding-y: 0.3em;
   --tag-radius: 1em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #8a5cf5;
   --text-accent-hover: rgba(138, 92, 245, 0.825);
   --text-error: #e03035;
@@ -235,6 +240,7 @@ export const theme: ThemeData = {
   --text-highlight-bg-rgb: 236, 235, 0;
   --text-success: #32ce2d;
   --text-warning: #e08330;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #1e1e1e;
   --titlebar-background-focused: #1e1e1e;
   --quartz-icon-color: currentColor;
@@ -835,6 +841,8 @@ body kbd {
   --color-red-rgb: 224, 48, 53;
   --color-yellow: #b6b11c;
   --color-yellow-rgb: 206, 201, 42;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --dataview-table-even-bg-color: #e7e7e7;
   --dataview-table-odd-bg-color: #f0f0f0;
   --dataview-table-row-hover: 258, 88%, 66%;
@@ -862,6 +870,7 @@ body kbd {
   --graph-node-focused: #7e55dd;
   --graph-node-tag: #0fa50a;
   --graph-node-unresolved: #aaaaaa;
+  --gray: var(--text-muted);
   --h-hover-transparency: 25%;
   --h-transparency: 12%;
   --h1-color: #2471d4;
@@ -881,6 +890,7 @@ body kbd {
   --h6-color: #b6b11c;
   --h6-weight: 700;
   --heading-formatting: #aaaaaa;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #dadada;
   --icon-color: #4f4f4f;
   --icon-color-focused: rgb(138, 92, 245);
@@ -893,6 +903,8 @@ body kbd {
   --interactive-hover: #e7e7e7;
   --interactive-normal: #f7f7f7;
   --italic-color: #0fa50a;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #7e55dd;
   --link-color-hover: rgba(126, 85, 221, 0.825);
   --link-external-color: #0071e3;
@@ -953,6 +965,7 @@ body kbd {
   --search-clear-button-color: #4f4f4f;
   --search-icon-color: #4f4f4f;
   --search-result-background: #f7f7f7;
+  --secondary: var(--text-accent);
   --setting-items-background: #e7e7e7;
   --setting-items-border-color: #dadada;
   --slider-thumb-border-color: rgba(138, 92, 245, 0.75);
@@ -1000,6 +1013,7 @@ body kbd {
   --tag-padding-x: 0.7em;
   --tag-padding-y: 0.3em;
   --tag-radius: 1em;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #7e55dd;
   --text-accent-hover: rgba(126, 85, 221, 0.825);
   --text-error: #e03035;
@@ -1009,6 +1023,7 @@ body kbd {
   --text-muted: #4f4f4f;
   --text-success: #0fa50a;
   --text-warning: #d57929;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #f0f0f0;
   --titlebar-background-focused: #f0f0f0;
   --titlebar-border-color: #dadada;

@@ -53,6 +53,7 @@ export const theme: ThemeData = {
   --blur-background: color-mix(in srgb, #323232 65%, transparent) linear-gradient(#323232, color-mix(in srgb, #323232 65%, transparent));
   --body-font-color-dark: #a0a0a0;
   --body-font-color-light: #000000;
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --button-bg-dynamic: #000000;
   --button-bg-hover-dynamic: #000000;
@@ -93,6 +94,7 @@ export const theme: ThemeData = {
   --code-normal: #a0a0a0;
   --code-punctuation: #B3B3B3;
   --code-radius: 0px;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #858585;
   --collapse-icon-color-collapsed: #cdcdcd;
   --color-accent: rgb(191, 191, 191);
@@ -102,7 +104,9 @@ export const theme: ThemeData = {
   --cta-bg-dynamic: #cdcdcd;
   --cta-bg-hover-dynamic: #E0E0E0;
   --cta-text-dynamic: #000000;
+  --dark: var(--text-normal);
   --dark-accent-custom: #cdcdcd;
+  --darkgray: var(--text-normal);
   --dashboard-banner-height: 600px;
   --dashboard-banner-offset: 150px;
   --dashboard-banner-opacity: 1.0;
@@ -149,6 +153,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #cdcdcd;
   --graph-node-unresolved: #858585;
   --graph-text: #a0a0a0;
+  --gray: var(--text-muted);
   --h1-color: #cdcdcd;
   --h2-color: #cdcdcd;
   --h3-color: #cdcdcd;
@@ -157,8 +162,10 @@ export const theme: ThemeData = {
   --h5-line-height: 1.6;
   --h6-color: #cdcdcd;
   --h6-line-height: 1.6;
+  --headerFont: var(--font-text);
   --heading-formatting: #858585;
   --heading-spacing: 1.5em;
+  --highlight: var(--text-highlight-bg);
   --hr-color: transparent;
   --icon-color: #B3B3B3;
   --icon-color-active: #cdcdcd;
@@ -182,7 +189,9 @@ export const theme: ThemeData = {
   --interactive-accent-hover: #ffffff;
   --interactive-accent-hsl: 0, 0%, 75%;
   --interactive-normal: #323232;
+  --light: var(--background-primary);
   --light-accent-custom: #000000;
+  --lightgray: var(--background-secondary);
   --line-height: 1.6;
   --line-height-normal: 1.6;
   --link-color: #e2e2e2;
@@ -272,6 +281,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #B3B3B3;
   --search-icon-color: #B3B3B3;
   --search-result-background: #3c3c3c;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #a0a0a0;
   --setting-items-background: #323232;
   --setting-items-border-color: transparent;
@@ -334,6 +344,7 @@ export const theme: ThemeData = {
   --tag-color: #cdcdcd;
   --tag-color-hover: #cdcdcd;
   --tag-radius: 0;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #cdcdcd;
   --text-accent-hover: #ffffff;
   --text-align-mode: left;
@@ -343,6 +354,8 @@ export const theme: ThemeData = {
   --text-normal: #a0a0a0;
   --text-on-accent: #323232;
   --text-selection: #00526E;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #323232;
   --titlebar-background-focused: #323232;
   --titlebar-border-color: transparent;
@@ -1433,6 +1446,7 @@ body sup {
   --blur-background: color-mix(in srgb, #C5C5C5 65%, transparent) linear-gradient(#C5C5C5, color-mix(in srgb, #C5C5C5 65%, transparent));
   --body-font-color-dark: #a0a0a0;
   --body-font-color-light: #000000;
+  --bodyFont: var(--font-text);
   --bold-weight: 600;
   --button-bg-dynamic: #d0d0d0;
   --button-bg-hover-dynamic: #ffffff;
@@ -1477,6 +1491,7 @@ body sup {
   --code-normal: #000000;
   --code-punctuation: #222222;
   --code-radius: 0px;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #7e7e7e;
   --collapse-icon-color-collapsed: #000000;
   --color-accent: rgb(71, 71, 71);
@@ -1486,7 +1501,9 @@ body sup {
   --cta-bg-dynamic: #000000;
   --cta-bg-hover-dynamic: #000000;
   --cta-text-dynamic: #ffffff;
+  --dark: var(--text-normal);
   --dark-accent-custom: #cdcdcd;
+  --darkgray: var(--text-normal);
   --dashboard-banner-height: 600px;
   --dashboard-banner-offset: 150px;
   --dashboard-banner-opacity: 1.0;
@@ -1533,6 +1550,7 @@ body sup {
   --graph-node-focused: #000000;
   --graph-node-unresolved: #7e7e7e;
   --graph-text: #000000;
+  --gray: var(--text-muted);
   --h1-color: #000000;
   --h2-color: #000000;
   --h3-color: #000000;
@@ -1541,8 +1559,10 @@ body sup {
   --h5-line-height: 1.6;
   --h6-color: #000000;
   --h6-line-height: 1.6;
+  --headerFont: var(--font-text);
   --heading-formatting: #7e7e7e;
   --heading-spacing: 1.5em;
+  --highlight: var(--text-highlight-bg);
   --hr-color: transparent;
   --icon-color: #222222;
   --icon-color-active: #000000;
@@ -1566,7 +1586,9 @@ body sup {
   --interactive-accent-hover: #000000;
   --interactive-accent-hsl: 0, 0%, 28%;
   --interactive-normal: #B0B0B0;
+  --light: var(--background-primary);
   --light-accent-custom: #000000;
+  --lightgray: var(--background-secondary);
   --line-height: 1.6;
   --line-height-normal: 1.6;
   --link-color: #505050;
@@ -1654,6 +1676,7 @@ body sup {
   --search-clear-button-color: #222222;
   --search-icon-color: #222222;
   --search-result-background: #C5C5C5;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #000000;
   --setting-items-background: #B0B0B0;
   --setting-items-border-color: transparent;
@@ -1716,6 +1739,7 @@ body sup {
   --tag-color: #000000;
   --tag-color-hover: #000000;
   --tag-radius: 0;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #000000;
   --text-accent-hover: #000000;
   --text-align-mode: left;
@@ -1725,6 +1749,8 @@ body sup {
   --text-normal: #000000;
   --text-on-accent: #ffffff;
   --text-selection: #7a9f79;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #B0B0B0;
   --titlebar-background-focused: #B0B0B0;
   --titlebar-border-color: transparent;

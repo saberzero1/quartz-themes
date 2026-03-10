@@ -51,8 +51,10 @@ export const theme: ThemeData = {
   --codeblock-color: #FCFCFC;
   --collapse-icon-color-collapsed: #5AFF15;
   --cool-gray: #7C809B;
+  --dark: var(--text-normal);
   --dark-purple: #242032;
   --dark-purple-light: #413a58;
+  --darkgray: var(--text-normal);
   --divider-color: #413a58;
   --divider-color-hover: #8B80F9;
   --embed-border-start: 2px solid #8B80F9;
@@ -70,6 +72,7 @@ export const theme: ThemeData = {
   --gold: rgb(253, 233, 9);
   --graph-node-focused: #5AFF15;
   --graph-text: #FCFCFC;
+  --gray: var(--text-normal);
   --h1-color: #8B80F9;
   --h1-gradient-end: transparent;
   --h1-gradient-mid: #8B80F9;
@@ -90,6 +93,8 @@ export const theme: ThemeData = {
   --inline-code-color: #5AFF15;
   --inline-title-color: #8B80F9;
   --interactive-accent: #8B80F9;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-width: 750px;
   --link-color: #5AFF15;
   --link-ext-color: #8B80F9;
@@ -130,6 +135,7 @@ export const theme: ThemeData = {
   --rich-black: #121019;
   --robin-egg-blue: #19D8D5;
   --search-result-background: #8B80F9;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #FCFCFC;
   --status-bar-background: #16141f;
   --status-bar-border-color: #413a58;
@@ -151,6 +157,7 @@ export const theme: ThemeData = {
   --tag-color-hover: #5AFF15;
   --tags-background: #242032;
   --tags-color: #19D8D5;
+  --tertiary: var(--text-accent);
   --text-accent: #5AFF15;
   --text-header: #8B80F9;
   --text-normal: #FCFCFC;
@@ -955,8 +962,10 @@ body sup {
   --codeblock-color: #FCFCFC;
   --collapse-icon-color-collapsed: #5AFF15;
   --cool-gray: #7C809B;
+  --dark: var(--text-normal);
   --dark-purple: #242032;
   --dark-purple-light: #413a58;
+  --darkgray: var(--text-normal);
   --divider-color: #413a58;
   --divider-color-hover: #8B80F9;
   --embed-border-start: 2px solid #8B80F9;
@@ -974,6 +983,7 @@ body sup {
   --gold: rgb(253, 233, 9);
   --graph-node-focused: #5AFF15;
   --graph-text: #FCFCFC;
+  --gray: var(--text-normal);
   --h1-color: #8B80F9;
   --h1-gradient-end: transparent;
   --h1-gradient-mid: #8B80F9;
@@ -994,6 +1004,8 @@ body sup {
   --inline-code-color: #5AFF15;
   --inline-title-color: #8B80F9;
   --interactive-accent: #8B80F9;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-width: 750px;
   --link-color: #5AFF15;
   --link-ext-color: #8B80F9;
@@ -1035,6 +1047,7 @@ body sup {
   --rich-black: #121019;
   --robin-egg-blue: #19D8D5;
   --search-result-background: #8B80F9;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #FCFCFC;
   --status-bar-background: #16141f;
   --status-bar-border-color: #413a58;
@@ -1056,6 +1069,7 @@ body sup {
   --tag-color-hover: #5AFF15;
   --tags-background: #242032;
   --tags-color: #19D8D5;
+  --tertiary: var(--text-accent);
   --text-accent: #5AFF15;
   --text-header: #8B80F9;
   --text-normal: #FCFCFC;

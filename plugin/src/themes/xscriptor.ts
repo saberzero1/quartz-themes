@@ -45,6 +45,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: #ffd700;
   --blur-background: color-mix(in srgb, rgba(0, 0, 0, 0.8) 65%, transparent) linear-gradient(rgba(0, 0, 0, 0.8), color-mix(in srgb, rgba(0, 0, 0, 0.8) 65%, transparent));
   --blur-intensity: 20px;
+  --bodyFont: var(--font-text);
   --border-color: #404040;
   --border-color-focus: #707070;
   --border-color-hover: #505050;
@@ -101,6 +102,7 @@ export const theme: ThemeData = {
   --code-normal: #ffffff;
   --code-punctuation: #d0d0d0;
   --code-radius: 4px;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #a0a0a0;
   --collapse-icon-color-collapsed: #cc99ff;
   --color-blue-rgb: 95, 158, 160;
@@ -111,6 +113,8 @@ export const theme: ThemeData = {
   --color-purple-rgb: 147, 112, 219;
   --color-red-rgb: 205, 145, 158;
   --color-yellow-rgb: 218, 165, 32;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #303030;
   --divider-color-hover: #404040;
   --dropdown-background: rgba(0, 0, 0, 0.8);
@@ -135,12 +139,14 @@ export const theme: ThemeData = {
   --graph-node-focused: #cc99ff;
   --graph-node-unresolved: #a0a0a0;
   --graph-text: #ffffff;
+  --gray: var(--text-muted);
   --h1-color: #cd919e;
   --h2-color: #daa520;
   --h3-color: #8fbc8f;
   --h4-color: #5f9ea0;
   --h5-color: #9370db;
   --h6-color: #cd853f;
+  --headerFont: var(--font-text);
   --heading-formatting: #a0a0a0;
   --highlight-blue: #1a1a4a;
   --highlight-green: #1a4a1a;
@@ -162,6 +168,8 @@ export const theme: ThemeData = {
   --interactive-normal: rgba(0, 0, 0, 0.8);
   --interactive-success: #90ff9f;
   --italic-color: #8be3eb;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height: 1.6;
   --link-color: #cc99ff;
   --link-color-hover: #cc99ff;
@@ -219,6 +227,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #d0d0d0;
   --search-icon-color: #d0d0d0;
   --search-result-background: rgba(10, 10, 10, 0.8);
+  --secondary: var(--text-accent);
   --select-color: rgba(0, 0, 0, 0.8);
   --setting-group-heading-color: #ffffff;
   --setting-items-background: rgba(15, 15, 15, 0.8);
@@ -258,6 +267,7 @@ export const theme: ThemeData = {
   --tag-color: #cc99ff;
   --tag-color-hover: #cc99ff;
   --tag-text: #90caf9;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #cc99ff;
   --text-accent-hover: #cc99ff;
   --text-error: #cd919e;
@@ -267,6 +277,7 @@ export const theme: ThemeData = {
   --text-on-accent: #000000;
   --text-success: #8fbc8f;
   --text-warning: #daa520;
+  --titleFont: var(--font-text);
   --titlebar-background: rgba(18, 18, 18, 0.8);
   --titlebar-background-focused: rgba(21, 21, 21, 0.8);
   --titlebar-border-color: #404040;
@@ -1408,6 +1419,7 @@ body sup {
   --bases-table-header-color: #5f6368;
   --blockquote-border-color: #1a73e8;
   --blur-intensity: 20px;
+  --bodyFont: var(--font-text);
   --border-color: #dadce0;
   --border-color-focus: #9aa0a6;
   --border-color-hover: #bdc1c6;
@@ -1448,8 +1460,11 @@ body sup {
   --code-normal: #202124;
   --code-punctuation: #5f6368;
   --code-radius: 4px;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #9aa0a6;
   --collapse-icon-color-collapsed: #cc99ff;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #e8eaed;
   --divider-color-hover: #dadce0;
   --dropdown-background: #f8f9fa;
@@ -1472,12 +1487,14 @@ body sup {
   --graph-node-focused: #cc99ff;
   --graph-node-unresolved: #9aa0a6;
   --graph-text: #202124;
+  --gray: var(--text-muted);
   --h1-color: #8b0000;
   --h2-color: #b8860b;
   --h3-color: #2e8b57;
   --h4-color: #4682b4;
   --h5-color: #9932cc;
   --h6-color: #696969;
+  --headerFont: var(--font-text);
   --heading-formatting: #9aa0a6;
   --highlight-blue: #bbdefb;
   --highlight-green: #c8e6c9;
@@ -1499,6 +1516,8 @@ body sup {
   --interactive-normal: #f8f9fa;
   --interactive-success: #137333;
   --italic-color: #8b4513;
+  --light: var(--background-primary-alt);
+  --lightgray: var(--background-secondary);
   --line-height: 1.6;
   --link-color: #cc99ff;
   --link-color-hover: #99c2ff;
@@ -1546,6 +1565,7 @@ body sup {
   --scrollbar-radius: 10.08px;
   --search-clear-button-color: #5f6368;
   --search-icon-color: #5f6368;
+  --secondary: var(--text-accent);
   --select-color: #ffffff;
   --setting-group-heading-color: #202124;
   --setting-items-background: #f8f9fa;
@@ -1581,6 +1601,7 @@ body sup {
   --tag-color: #cc99ff;
   --tag-color-hover: #cc99ff;
   --tag-text: #1565c0;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #cc99ff;
   --text-accent-hover: #99c2ff;
   --text-error: #d93025;
@@ -1590,6 +1611,7 @@ body sup {
   --text-on-accent: #ffffff;
   --text-success: #137333;
   --text-warning: #f9ab00;
+  --titleFont: var(--font-text);
   --titlebar-background: #f1f3f4;
   --titlebar-background-focused: #e8eaed;
   --titlebar-border-color: #dadce0;

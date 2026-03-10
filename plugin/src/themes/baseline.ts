@@ -46,6 +46,7 @@ export const theme: ThemeData = {
   --blockquote-background-color: #242424;
   --blockquote-border-color: #666666;
   --blockquote-size: 16px;
+  --bodyFont: var(--font-text);
   --bold-modifier: 300;
   --bold-weight: 700;
   --button-corner-shape: superellipse(1.1);
@@ -105,6 +106,7 @@ export const theme: ThemeData = {
   --code-string: #58b6c2;
   --code-tag: #e16d76;
   --code-value: #c678de;
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: #b3b3b3;
   --color-accent: rgb(138, 92, 245);
   --color-accent-1: rgb(166, 139, 249);
@@ -162,7 +164,9 @@ export const theme: ThemeData = {
   --h6-font: '??', "Instrument Serif";
   --h6-line-height: 1.6;
   --header-height: 48px;
+  --headerFont: var(--font-text);
   --heading-spacing: 2em;
+  --highlight: var(--background-modifier-active-hover);
   --hover-sidedock-delay: 160ms;
   --hover-sidedock-trigger-area: 1px;
   --hover-sidedock-width: 320px;
@@ -266,6 +270,7 @@ export const theme: ThemeData = {
   --ribbon-background: transparent;
   --ribbon-background-collapsed: transparent;
   --scrollbar-radius: 20px;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #666666;
   --setting-group-heading-size: 13px;
   --setting-items-padding: 16px 16px;
@@ -318,6 +323,7 @@ export const theme: ThemeData = {
   --tag-padding-y: 4px;
   --tag-radius: 8px;
   --tag-weight: 500;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(166, 139, 249);
   --text-accent-hover: rgb(197, 182, 252);
   --text-error: rgb(217, 90, 95);
@@ -326,6 +332,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(138, 92, 245, 0.33);
   --text-success: rgb(72, 196, 90);
   --text-warning: rgb(219, 134, 80);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --traffic-lights-offset-x: 48px;
@@ -1051,6 +1059,7 @@ body kbd {
   --blockquote-background-color: #fafafa;
   --blockquote-border-color: #ababab;
   --blockquote-size: 16px;
+  --bodyFont: var(--font-text);
   --bold-modifier: 300;
   --bold-weight: 700;
   --button-corner-shape: superellipse(1.1);
@@ -1110,6 +1119,7 @@ body kbd {
   --code-string: #0d97b3;
   --code-tag: #e45749;
   --code-value: #a626a4;
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: #5c5c5c;
   --color-accent: rgb(138, 92, 245);
   --color-accent-1: rgb(153, 115, 247);
@@ -1167,7 +1177,9 @@ body kbd {
   --h6-font: '??', "Instrument Serif";
   --h6-line-height: 1.6;
   --header-height: 48px;
+  --headerFont: var(--font-text);
   --heading-spacing: 2em;
+  --highlight: var(--background-modifier-active-hover);
   --hover-sidedock-delay: 160ms;
   --hover-sidedock-trigger-area: 1px;
   --hover-sidedock-width: 320px;
@@ -1271,6 +1283,7 @@ body kbd {
   --ribbon-background: transparent;
   --ribbon-background-collapsed: transparent;
   --scrollbar-radius: 20px;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #ababab;
   --setting-group-heading-size: 13px;
   --setting-items-padding: 16px 16px;
@@ -1323,6 +1336,7 @@ body kbd {
   --tag-padding-y: 4px;
   --tag-radius: 8px;
   --tag-weight: 500;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(166, 139, 249);
   --text-error: rgb(254, 112, 112);
@@ -1331,6 +1345,8 @@ body kbd {
   --text-selection: rgba(138, 92, 245, 0.2);
   --text-success: rgb(74, 213, 95);
   --text-warning: rgb(242, 154, 100);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --traffic-lights-offset-x: 48px;

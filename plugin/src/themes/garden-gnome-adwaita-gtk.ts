@@ -48,6 +48,7 @@ export const theme: ThemeData = {
   --blue-4-rgb: 28, 113, 216;
   --blue-5: #1a5fb4;
   --blue-5-rgb: 26,  95, 180;
+  --bodyFont: var(--font-interface);
   --brown-1: #cdab8f;
   --brown-1-rgb: 205, 171, 143;
   --brown-2: #b5835a;
@@ -94,6 +95,7 @@ export const theme: ThemeData = {
   --code-string: #33d17a;
   --code-tag: #e01b24;
   --code-value: #9141ac;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #b3b3b3;
   --collapse-icon-color-collapsed: #666666;
   --color-accent: rgb(92, 161, 245);
@@ -161,6 +163,8 @@ export const theme: ThemeData = {
   --green-5: #26a269;
   --green-5-rgb: 38, 162, 105;
   --header-height: 44px;
+  --headerFont: var(--font-interface);
+  --highlight: var(--background-modifier-hover);
   --icon-color: #dadada;
   --icon-color-active: #62a0ea;
   --icon-l: 16px;
@@ -175,6 +179,7 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 213, 88%, 66%;
   --invert-filter-b: invert() hue-rotate(180deg);
   --invert-filter-w: none;
+  --light: var(--background-primary);
   --light-1: #ffffff;
   --light-1-rgb: 255, 255, 255;
   --light-2: #f6f5f4;
@@ -185,6 +190,7 @@ export const theme: ThemeData = {
   --light-4-rgb: 192, 191, 188;
   --light-5: #9a9996;
   --light-5-rgb: 154, 153, 150;
+  --lightgray: var(--background-secondary);
   --link-color: #62a0ea;
   --link-color-hover: #99c1f1;
   --link-external-color: #62a0ea;
@@ -260,6 +266,7 @@ export const theme: ThemeData = {
   --rounded-corner-element: 6px;
   --rounded-corner-frame: 12px;
   --search-result-background: rgb(30, 30, 32);
+  --secondary: var(--text-accent);
   --setting-items-background: rgb(39, 38, 39);
   --shadow-frame: #0002 0 2px 6px;
   --status-bar-background: rgb(48, 48, 48);
@@ -289,12 +296,15 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(92, 161, 245, 0.15);
   --tag-color: #62a0ea;
   --tag-color-hover: #62a0ea;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #62a0ea;
   --text-accent-hover: #99c1f1;
   --text-error: #e01b24;
   --text-selection: rgba(92, 161, 245, 0.33);
   --text-success: #33d17a;
   --text-warning: #ff7800;
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(39, 38, 39);
   --titlebar-background-focused: rgb(48, 48, 48);
   --toggle-thumb-height: 23px;
@@ -853,6 +863,7 @@ body kbd {
   --blue-5: #1a5fb4;
   --blue-5-rgb: 26,  95, 180;
   --blur-background: color-mix(in srgb, rgb(250, 250, 250) 65%, transparent) linear-gradient(rgb(250, 250, 250), color-mix(in srgb, rgb(250, 250, 250) 65%, transparent));
+  --bodyFont: var(--font-interface);
   --brown-1: #cdab8f;
   --brown-1-rgb: 205, 171, 143;
   --brown-2: #b5835a;
@@ -899,6 +910,7 @@ body kbd {
   --code-string: #33d17a;
   --code-tag: #e01b24;
   --code-value: #9141ac;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #5c5c5c;
   --collapse-icon-color-collapsed: #ababab;
   --color-accent: rgb(92, 161, 245);
@@ -969,6 +981,8 @@ body kbd {
   --green-5: #26a269;
   --green-5-rgb: 38, 162, 105;
   --header-height: 44px;
+  --headerFont: var(--font-interface);
+  --highlight: var(--background-modifier-hover);
   --icon-color: #222222;
   --icon-color-active: #1c71d8;
   --icon-l: 16px;
@@ -985,6 +999,7 @@ body kbd {
   --interactive-normal: rgba(0, 0, 0, 0.067);
   --invert-filter-b: none;
   --invert-filter-w: invert() hue-rotate(180deg);
+  --light: var(--background-primary);
   --light-1: #ffffff;
   --light-1-rgb: 255, 255, 255;
   --light-2: #f6f5f4;
@@ -995,6 +1010,7 @@ body kbd {
   --light-4-rgb: 192, 191, 188;
   --light-5: #9a9996;
   --light-5-rgb: 154, 153, 150;
+  --lightgray: var(--background-secondary);
   --link-color: #1c71d8;
   --link-color-hover: #3584e4;
   --link-external-color: #1c71d8;
@@ -1071,6 +1087,7 @@ body kbd {
   --rounded-corner-element: 6px;
   --rounded-corner-frame: 12px;
   --search-result-background: rgb(250, 250, 250);
+  --secondary: var(--text-accent);
   --setting-items-background: rgb(242, 242, 242);
   --shadow-frame: #0002 0 2px 6px;
   --status-bar-background: rgb(235, 235, 235);
@@ -1100,12 +1117,15 @@ body kbd {
   --tag-border-color-hover: rgba(92, 161, 245, 0.15);
   --tag-color: #1c71d8;
   --tag-color-hover: #1c71d8;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #1c71d8;
   --text-accent-hover: #3584e4;
   --text-error: #e01b24;
   --text-selection: rgba(92, 161, 245, 0.2);
   --text-success: #33d17a;
   --text-warning: #ff7800;
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-interface);
   --titlebar-background: #ffffff;
   --titlebar-background-focused: #ffffff;
   --toggle-thumb-height: 23px;

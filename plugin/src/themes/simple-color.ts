@@ -10,8 +10,10 @@ export const theme: ThemeData = {
   --bases-table-cell-background-active: black;
   --bases-table-header-background: black;
   --bases-table-summary-background: black;
+  --bodyFont: var(--font-text);
   --canvas-background: black;
   --checkbox-marker-color: black;
+  --codeFont: var(--font-text);
   --file-header-background: black;
   --file-header-background-focused: black;
   --font-mermaid: '??', Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -24,7 +26,10 @@ export const theme: ThemeData = {
   --h4-color: #a3be8c;
   --h5-color: #b48ead;
   --h6-color: #8fbcbb;
+  --headerFont: var(--font-text);
   --inline-title-color: #bf616a;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: black;
   --modal-background: black;
   --pdf-background: black;
@@ -41,6 +46,7 @@ export const theme: ThemeData = {
   --tab-switcher-background: black;
   --tab-switcher-menubar-background: linear-gradient(to top, black, transparent);
   --text-color: #81a1c1;
+  --titleFont: var(--font-text);
   --titlebar-background: black;
   --titlebar-background-focused: black;
   --quartz-icon-color: currentColor;

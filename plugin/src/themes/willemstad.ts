@@ -66,6 +66,7 @@ export const theme: ThemeData = {
   --blur-4: blur(4px);
   --blur-8: blur(8px);
   --blur-background: color-mix(in srgb, oklch(0.19 0 0) 65%, transparent) linear-gradient(oklch(0.19 0 0), color-mix(in srgb, oklch(0.19 0 0) 65%, transparent));
+  --bodyFont: var(--font-text);
   --border-scrollbar-non-native: 2px;
   --brightness-25: brightness(25%);
   --brightness-50: brightness(50%);
@@ -300,6 +301,7 @@ export const theme: ThemeData = {
   --code-normal: oklch(0.98 0 0);
   --code-punctuation: oklch(0.68 0 0);
   --code-radius: 3px;
+  --codeFont: var(--font-monospace);
   --col-background-activeline: oklch(from oklch(0.58 0 0) l c h / calc(alpha - calc(1 - 0.25)));
   --col-base-alpha-alh: 0.25;
   --col-base-bg-alh: oklch(0.58 0 0);
@@ -392,6 +394,8 @@ export const theme: ThemeData = {
   --cssc-latex-font-size: 14pt;
   --cssc-latex-font-source: "DM Mono" ,"MathJax Main", "MJXZERO", "MJXTEX";
   --cssc-latex-text-indent: 0em;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --distant-opacity: 0.2;
   --divider-color: oklch(0.3 0 0);
@@ -435,6 +439,7 @@ export const theme: ThemeData = {
   --graph-node-focused: oklch(70.7% 0.1737 155.3deg);
   --graph-node-unresolved: oklch(0.48 0 0);
   --graph-text: oklch(0.98 0 0);
+  --gray: var(--text-muted);
   --grid-columns-container-comm-modal: 5;
   --h1-size: 1.8em;
   --h1-weight: 600;
@@ -455,11 +460,13 @@ export const theme: ThemeData = {
   --header-margin-half: 2px;
   --header-padding: 6px;
   --header-padding-hover: 4.5px;
+  --headerFont: var(--font-text);
   --heading-formatting: oklch(0.48 0 0);
   --heading-spacing: 0;
   --height-hover-sd: 50%;
   --height-norm-sd: 25%;
   --height-progress-bar-subline: 4px;
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: normal;
   --hover-diff: 1.5px;
   --hover-diff-sidebar: 1.25px;
@@ -495,6 +502,8 @@ export const theme: ThemeData = {
   --interactive-normal: oklch(0.19 0 0);
   --l: clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975);
   --l-threshold: 0.7;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: oklch(70.7% 0.1737 155.3deg);
   --link-color-hover: oklch(82.77% 0.1667 79.6deg);
   --link-external-color: oklch(70.7% 0.1737 155.3deg);
@@ -625,6 +634,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: oklch(0.68 0 0);
   --search-icon-color: oklch(0.68 0 0);
   --search-result-background: oklch(0.13 0 0);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: oklch(0.98 0 0);
   --setting-heading: "Inter 4.1", "DM Sans", "Manrope";
   --setting-items-background: oklch(0.17 0 0);
@@ -704,6 +714,7 @@ export const theme: ThemeData = {
   --tag-color: oklch(70.7% 0.1737 155.3deg);
   --tag-color-hover: oklch(70.7% 0.1737 155.3deg);
   --tag-radius: 3px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: oklch(70.7% 0.1737 155.3deg);
   --text-accent-hover: oklch(82.77% 0.1667 79.6deg);
   --text-error-hover: oklch(from #fb464c calc(l - 0.1) c calc(h + 4));
@@ -714,7 +725,9 @@ export const theme: ThemeData = {
   --text-muted: oklch(0.68 0 0);
   --text-normal: oklch(0.98 0 0);
   --text-selection: oklch(80.92% 0.170357 75.4802deg);
+  --textHighlight: var(--text-highlight-bg);
   --theme-alternative-checkboxes: disable;
+  --titleFont: var(--font-text);
   --titlebar-background: oklch(0.19 0 0);
   --titlebar-background-focused: oklch(0.21 0 0);
   --titlebar-border-color: oklch(0.3 0 0);
@@ -1882,6 +1895,7 @@ body sup {
   --blur-4: blur(4px);
   --blur-8: blur(8px);
   --blur-background: color-mix(in srgb, oklch(1 0 0) 65%, transparent) linear-gradient(oklch(1 0 0), color-mix(in srgb, oklch(1 0 0) 65%, transparent));
+  --bodyFont: var(--font-text);
   --border-scrollbar-non-native: 2px;
   --brightness-25: brightness(25%);
   --brightness-50: brightness(50%);
@@ -2116,6 +2130,7 @@ body sup {
   --code-normal: oklch(0 0 0);
   --code-punctuation: oklch(0.3 0 0);
   --code-radius: 3px;
+  --codeFont: var(--font-monospace);
   --col-background-activeline: oklch(from oklch(0.5 0 0) l c h / calc(alpha - calc(1 - 0.25)));
   --col-base-alpha-alh: 0.25;
   --col-base-bg-alh: oklch(0.5 0 0);
@@ -2208,6 +2223,8 @@ body sup {
   --cssc-latex-font-size: 14pt;
   --cssc-latex-font-source: "DM Mono" ,"MathJax Main", "MJXZERO", "MJXTEX";
   --cssc-latex-text-indent: 0em;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope";
   --distant-opacity: 0.2;
   --divider-color: oklch(0.8 0 0);
@@ -2251,6 +2268,7 @@ body sup {
   --graph-node-focused: oklch(40.14% 0.0638 202.51deg);
   --graph-node-unresolved: oklch(0.6 0 0);
   --graph-text: oklch(0 0 0);
+  --gray: var(--text-muted);
   --grid-columns-container-comm-modal: 5;
   --h1-size: 1.8em;
   --h1-weight: 600;
@@ -2271,11 +2289,13 @@ body sup {
   --header-margin-half: 2px;
   --header-padding: 6px;
   --header-padding-hover: 4.5px;
+  --headerFont: var(--font-text);
   --heading-formatting: oklch(0.6 0 0);
   --heading-spacing: 0;
   --height-hover-sd: 50%;
   --height-norm-sd: 25%;
   --height-progress-bar-subline: 4px;
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: normal;
   --hover-diff: 1.5px;
   --hover-diff-sidebar: 1.25px;
@@ -2311,6 +2331,8 @@ body sup {
   --interactive-normal: oklch(0.95 0 0);
   --l: clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975);
   --l-threshold: 0.7;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: oklch(40.14% 0.0638 202.51deg);
   --link-color-hover: oklch(82.77% 0.1667 79.6deg);
   --link-external-color: oklch(40.14% 0.0638 202.51deg);
@@ -2441,6 +2463,7 @@ body sup {
   --search-clear-button-color: oklch(0.3 0 0);
   --search-icon-color: oklch(0.3 0 0);
   --search-result-background: oklch(1 0 0);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: oklch(0 0 0);
   --setting-heading: "Inter 4.1", "DM Sans", "Manrope";
   --setting-items-background: oklch(0.98 0 0);
@@ -2525,6 +2548,7 @@ body sup {
   --tag-color: oklch(40.14% 0.0638 202.51deg);
   --tag-color-hover: oklch(40.14% 0.0638 202.51deg);
   --tag-radius: 3px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: oklch(40.14% 0.0638 202.51deg);
   --text-accent-hover: oklch(82.77% 0.1667 79.6deg);
   --text-error-hover: oklch(from #e93147 calc(l - 0.1) c calc(h + 4));
@@ -2535,7 +2559,9 @@ body sup {
   --text-muted: oklch(0.3 0 0);
   --text-normal: oklch(0 0 0);
   --text-selection: oklch(80.92% 0.170357 75.4802deg);
+  --textHighlight: var(--text-highlight-bg);
   --theme-alternative-checkboxes: disable;
+  --titleFont: var(--font-text);
   --titlebar-background: oklch(0.95 0 0);
   --titlebar-background-focused: oklch(0.93 0 0);
   --titlebar-border-color: oklch(0.8 0 0);

@@ -26,6 +26,7 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid rgb(153, 115, 247);
   --graph-node-focused: rgb(138, 92, 245);
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-active-hover);
   --icon-color-active: rgb(138, 92, 245);
   --interactive-accent: rgb(153, 115, 247);
   --interactive-accent-hover: rgb(166, 139, 249);
@@ -41,6 +42,7 @@ export const theme: ThemeData = {
   --nav-item-background-selected: rgba(138, 92, 245, 0.15);
   --nav-item-color-highlighted: rgb(138, 92, 245);
   --pill-color-remove-hover: rgb(138, 92, 245);
+  --secondary: var(--text-accent);
   --sidebar-markdown-font-size: 14.4px;
   --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245);
   --tab-text-color-focused-highlighted: rgb(138, 92, 245);
@@ -54,9 +56,11 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(138, 92, 245, 0.15);
   --tag-color: rgb(138, 92, 245);
   --tag-color-hover: rgb(138, 92, 245);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(138, 92, 245);
   --text-accent-hover: rgb(166, 139, 249);
   --text-selection: rgba(138, 92, 245, 0.2);
+  --textHighlight: var(--background-modifier-active-hover);
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>");
   --quartz-icon-color: currentColor;
 }`,

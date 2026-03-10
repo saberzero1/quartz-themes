@@ -44,6 +44,7 @@ export const theme: ThemeData = {
   --h4-color: #a9ba9d;
   --h5-color: #9dc183;
   --h6-color: #486e02;
+  --highlight: var(--text-highlight-bg);
   --icon-color: #529d52;
   --icon-color-active: #63be63;
   --icon-color-focused: #39ff14;
@@ -54,6 +55,8 @@ export const theme: ThemeData = {
   --interactive-accent: #529d5273;
   --interactive-accent-hover: #37ff148c;
   --italic-color: #d8e43a;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #63be63;
   --link-color-hover: #39ff14;
   --link-decoration-thickness: 1px;
@@ -79,6 +82,7 @@ export const theme: ThemeData = {
   --scrollbar-active-thumb-bg: #39ff14;
   --scrollbar-thumb-bg: #529D52;
   --search-result-background: #000000;
+  --secondary: var(--text-accent);
   --setting-items-background: #000000;
   --status-bar-background: #000000;
   --suggestion-background: #000000;
@@ -92,9 +96,11 @@ export const theme: ThemeData = {
   --table-selection-border-color: #529d5273;
   --tag-color: #63be63;
   --tag-color-hover: #63be63;
+  --tertiary: var(--interactive-accent-hover);
   --text-accent: #63be63;
   --text-highlight-bg: #67c26769;
   --text-selection: #55a05550;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #000000;
   --titlebar-background-focused: #000000;
   --quartz-icon-color: currentColor;
@@ -351,6 +357,7 @@ body kbd {
   --h4-color: #a9ba9d;
   --h5-color: #9dc183;
   --h6-color: #486e02;
+  --highlight: var(--text-highlight-bg);
   --icon-color: #274b27;
   --icon-color-active: #529D52;
   --icon-color-focused: #128a12;
@@ -377,15 +384,18 @@ body kbd {
   --pill-color-remove-hover: #529D52;
   --scrollbar-active-thumb-bg: #529D52;
   --scrollbar-thumb-bg: #529D52;
+  --secondary: var(--text-accent);
   --tab-text-color-focused-highlighted: #529D52;
   --table-drag-handle-background-active: #529D52;
   --table-header-background: #2a2a2a4c;
   --table-selection-border-color: #529D52;
   --tag-color: #529D52;
   --tag-color-hover: #529D52;
+  --tertiary: var(--interactive-accent-hover);
   --text-accent: #529D52;
   --text-highlight-bg: #529d52b1;
   --text-selection: #55a05550;
+  --textHighlight: var(--text-highlight-bg);
   --quartz-icon-color: currentColor;
 }`,
     typography: `body .page article p > b, b {

@@ -60,6 +60,7 @@ export const theme: ThemeData = {
   --footnote-radius: 0;
   --graph-line: #555555;
   --graph-node-unresolved: #565f8988;
+  --gray: var(--text-faint);
   --h1-color: rgb(138, 92, 245);
   --h1-size: 1.25em;
   --h2-color: rgb(138, 92, 245);
@@ -75,12 +76,15 @@ export const theme: ThemeData = {
   --header-color: rgb(138, 92, 245);
   --header-size: 1.25em;
   --heading-formatting: #565f8988;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(138, 92, 245);
   --inline-title-color: rgb(138, 92, 245);
   --inline-title-size: 1.25em;
   --input-date-separator: #565f8988;
   --input-placeholder-color: #565f8988;
   --italic-color: white;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: #565f8988;
   --menu-background: #111111;
   --menu-border-color: rgb(138, 92, 245);
@@ -145,6 +149,7 @@ export const theme: ThemeData = {
   --table-header-border-color: rgb(138, 92, 245);
   --text-faint: #565f8988;
   --text-highlight-bg: #9ece6a66;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #111111;
   --titlebar-background-focused: #111111;
   --titlebar-border-color: rgb(138, 92, 245);
@@ -637,6 +642,7 @@ body kbd {
   --footnote-radius: 0;
   --graph-line: #bdbdbd;
   --graph-node-unresolved: #9699a388;
+  --gray: var(--text-faint);
   --h1-color: rgb(153, 115, 247);
   --h1-size: 1.25em;
   --h2-color: rgb(153, 115, 247);
@@ -651,6 +657,7 @@ body kbd {
   --h6-size: 1.25em;
   --header-size: 1.25em;
   --heading-formatting: #9699a388;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(153, 115, 247);
   --inline-title-color: rgb(153, 115, 247);
   --inline-title-size: 1.25em;
@@ -659,6 +666,8 @@ body kbd {
   --interactive-hover: #d5d5d5;
   --interactive-normal: #d5d5d5;
   --italic-color: black;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: #9699a388;
   --menu-background: #d5d5d5;
   --menu-border-color: rgb(153, 115, 247);
@@ -722,6 +731,7 @@ body kbd {
   --table-header-border-color: rgb(153, 115, 247);
   --text-faint: #9699a388;
   --text-highlight-bg: #485e3066;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #d5d5d5;
   --titlebar-background-focused: #d5d5d5;
   --titlebar-border-color: rgb(153, 115, 247);

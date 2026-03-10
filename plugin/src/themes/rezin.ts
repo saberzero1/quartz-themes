@@ -15,12 +15,17 @@ export const theme: ThemeData = {
   --caret-color: #4baaa8;
   --checkbox-marker-color: #181824;
   --code-normal: #4baaa8;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --file-header-background: #181824;
   --file-header-background-focused: #181824;
   --flair-color: #4baaa8;
   --font-family-editor: Avenir, Avenir Next, sans-serif;
   --graph-text: #4baaa8;
+  --gray: var(--text-normal);
   --icon-color-focused: #4baaa8;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: #0f0f18;
   --metadata-input-text-color: #4baaa8;
   --modal-background: #181824;

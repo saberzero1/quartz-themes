@@ -48,6 +48,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #1e1f21;
   --blockquote-border-color: rgb(27, 111, 228);
   --blur-background: color-mix(in srgb, #35383d 65%, transparent) linear-gradient(#35383d, color-mix(in srgb, #35383d 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 0px;
   --callout-bug: 232, 51,51;
   --callout-default: 0, 105, 224;
@@ -97,6 +98,7 @@ export const theme: ThemeData = {
   --code-string: rgb(82, 163, 0);
   --code-tag: rgb(232, 41, 41);
   --code-value: rgb(140, 63, 247);
+  --codeFont: var(--font-text);
   --collapse-icon-color: rgb(142, 148, 157);
   --collapse-icon-color-collapsed: rgb(45, 122, 230);
   --color-accent: rgb(27, 111, 228);
@@ -131,6 +133,8 @@ export const theme: ThemeData = {
   --color-red-rgb: 232, 51,51;
   --color-yellow: rgb(163, 163, 0);
   --color-yellow-rgb: 204, 204, 0;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #dae1ea31;
   --divider-color-hover: rgb(27, 111, 228);
   --dropdown-background: #35383d;
@@ -160,6 +164,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(82, 163, 0);
   --graph-node-unresolved: rgb(142, 148, 157);
   --graph-text: #d8dce3;
+  --gray: var(--text-muted);
   --h1-font: 'Linux Libertine','Georgia','Times',serif;
   --h1-size: 1.7em;
   --h1-weight: 500;
@@ -174,7 +179,9 @@ export const theme: ThemeData = {
   --h6-background: rgba(117, 147, 189, 0.15);
   --h6-size: 0.99em;
   --h6-weight: bold;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(142, 148, 157);
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: #dae1ea31;
   --icon-color: #d0d4d9;
   --icon-color-active: rgb(45, 122, 230);
@@ -200,6 +207,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 215, 79%, 50%;
   --interactive-hover: #313539;
   --interactive-normal: #35383d;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(95, 142, 236);
   --link-color-hover: rgb(25, 108, 210);
   --link-decoration: none;
@@ -273,6 +282,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #d0d4d9;
   --search-icon-color: #d0d4d9;
   --search-result-background: #1e1f21;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #d8dce3;
   --setting-items-background: #242629;
   --setting-items-border-color: #dae1ea31;
@@ -337,6 +347,7 @@ export const theme: ThemeData = {
   --tag-padding-x: 0px;
   --tag-padding-y: 0px;
   --tag-radius: 0px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(45, 122, 230);
   --text-accent-hover: rgb(25, 108, 210);
   --text-error: rgb(232, 41, 41);
@@ -346,6 +357,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(27, 111, 228, 0.33);
   --text-success: rgb(82, 163, 0);
   --text-warning: rgb(230, 111, 0);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #27282b;
   --titlebar-background-focused: #242629;
   --titlebar-border-color: #dae1ea31;
@@ -1507,6 +1520,7 @@ body sup {
   --bases-table-container-border-radius: 0px;
   --bases-table-header-color: #5a5a5a;
   --blockquote-border-color: rgb(26, 106, 219);
+  --bodyFont: var(--font-text);
   --button-radius: 0px;
   --callout-bug: 232, 51,51;
   --callout-default: 0, 105, 224;
@@ -1551,6 +1565,7 @@ body sup {
   --code-string: rgb(82, 163, 0);
   --code-tag: rgb(232, 41, 41);
   --code-value: rgb(140, 63, 247);
+  --codeFont: var(--font-text);
   --collapse-icon-color: #989898;
   --collapse-icon-color-collapsed: rgb(27, 111, 228);
   --color-accent: rgb(27, 111, 228);
@@ -1577,6 +1592,8 @@ body sup {
   --color-red-rgb: 232, 51,51;
   --color-yellow: rgb(163, 163, 0);
   --color-yellow-rgb: 204, 204, 0;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --divider-color: #a2a9b1;
   --divider-color-hover: rgb(26, 106, 219);
   --embed-block-shadow-hover: 0 0 0 1px #a2a9b1, inset 0 0 0 1px #a2a9b1;
@@ -1598,6 +1615,7 @@ body sup {
   --graph-node-focused: rgb(27, 111, 228);
   --graph-node-tag: rgb(82, 163, 0);
   --graph-node-unresolved: #989898;
+  --gray: var(--text-muted);
   --h1-font: 'Linux Libertine','Georgia','Times',serif;
   --h1-size: 1.7em;
   --h1-weight: 500;
@@ -1612,7 +1630,9 @@ body sup {
   --h6-background: rgb(235, 235, 210);
   --h6-size: 0.99em;
   --h6-weight: bold;
+  --headerFont: var(--font-text);
   --heading-formatting: #989898;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: #a2a9b1;
   --icon-color: #5a5a5a;
   --icon-color-active: rgb(27, 111, 228);
@@ -1635,6 +1655,7 @@ body sup {
   --interactive-accent: rgb(26, 106, 219);
   --interactive-accent-hover: rgb(72, 145, 234);
   --interactive-accent-hsl: 215, 79%, 50%;
+  --lightgray: var(--background-secondary-alt);
   --link-color: rgb(24, 85, 205);
   --link-color-hover: rgb(72, 145, 234);
   --link-decoration: none;
@@ -1684,6 +1705,7 @@ body sup {
   --scrollbar-thumb-bg: transparent;
   --search-clear-button-color: #5a5a5a;
   --search-icon-color: #5a5a5a;
+  --secondary: var(--text-accent);
   --setting-items-border-color: #a2a9b1;
   --setting-items-radius: 0px;
   --slider-track-background: #a2a9b1;
@@ -1737,6 +1759,7 @@ body sup {
   --tag-padding-x: 0px;
   --tag-padding-y: 0px;
   --tag-radius: 0px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(27, 111, 228);
   --text-accent-hover: rgb(72, 145, 234);
   --text-error: rgb(232, 41, 41);
@@ -1745,6 +1768,8 @@ body sup {
   --text-selection: rgba(27, 111, 228, 0.2);
   --text-success: rgb(82, 163, 0);
   --text-warning: rgb(230, 111, 0);
+  --textHighlight: var(--background-modifier-active-hover);
+  --titleFont: var(--font-text);
   --titlebar-background-focused: #f8f9fa;
   --titlebar-border-color: #a2a9b1;
   --titlebar-text-color: #5a5a5a;

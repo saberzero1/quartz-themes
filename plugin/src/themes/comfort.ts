@@ -33,6 +33,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: #a3d5aa;
   --blue: #3d74f6;
   --blur-background: color-mix(in srgb, #fcfef3 65%, transparent) linear-gradient(#fcfef3, color-mix(in srgb, #fcfef3 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 4px;
   --callout-bug: 197,
     65,
@@ -55,9 +56,12 @@ export const theme: ThemeData = {
   --code-bracket-background: #a3d5aa;
   --code-normal: #6f6e6a;
   --code-punctuation: #8d9c8d;
+  --codeFont: var(--font-text);
   --color-red-rgb: 197,
     65,
     40;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(0, 0, 0, 0);
   --dropdown-background: #eff1df;
   --dropdown-background-hover: #e5e8c2;
@@ -74,9 +78,12 @@ export const theme: ThemeData = {
   --footnote-input-background-active: #a3d5aa;
   --graph-node: #8d9c8d;
   --graph-text: #6f6e6a;
+  --gray: var(--text-muted);
   --gray-1: #b0c0aa;
   --gray-2: #a0a5b8;
   --green: #afe4ae;
+  --headerFont: var(--font-text);
+  --highlight: var(--background-modifier-hover);
   --hr-color: rgba(0, 0, 0, 0);
   --icon-color: #ffffff;
   --icon-color-active: #edf4f0;
@@ -87,6 +94,8 @@ export const theme: ThemeData = {
   --input-shadow-hover: none;
   --interactive-hover: #e5e8c2;
   --interactive-normal: #eff1df;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-external-color: #5273a5;
   --link-external-color-hover: #1a4078;
   --list-marker-color-hover: #8d9c8d;
@@ -168,6 +177,8 @@ export const theme: ThemeData = {
   --tag-radius: 4px;
   --text-muted: #8d9c8d;
   --text-normal: #6f6e6a;
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-text);
   --titlebar-background: #a3d5aa;
   --titlebar-background-focused: #a3d5aa;
   --titlebar-border-color: rgba(0, 0, 0, 0);

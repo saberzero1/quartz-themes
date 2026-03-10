@@ -45,6 +45,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background-hover: rgba(80, 85, 94, 0.16);
   --blockquote-bg: rgba(5, 5, 6, 0.07);
   --blockquote-border: rgb(178, 149, 187);
+  --bodyFont: var(--font-interface);
   --canvas-background: #2E3035;
   --canvas-card-label-color: rgb(156, 156, 156);
   --caret-color: rgb(208, 209, 210);
@@ -58,8 +59,11 @@ export const theme: ThemeData = {
   --code-comment: rgb(156, 156, 156);
   --code-normal: rgb(208, 209, 210);
   --code-punctuation: rgb(141, 145, 150);
+  --codeFont: var(--font-interface);
   --collapse-icon-color: rgb(156, 156, 156);
   --collapse-icon-color-collapsed: rgb(176, 136, 231);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
   --discord-blue: rgb(114, 136, 218);
   --discord-blue-hover: rgb(104, 124, 196);
@@ -108,7 +112,10 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(176, 136, 231);
   --graph-node-unresolved: rgb(156, 156, 156);
   --graph-text: rgb(208, 209, 210);
+  --gray: var(--text-muted);
+  --headerFont: var(--font-interface);
   --heading-formatting: rgb(156, 156, 156);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(33, 35, 38);
   --icon-color: rgb(141, 145, 150);
   --icon-color-active: rgb(176, 136, 231);
@@ -117,6 +124,8 @@ export const theme: ThemeData = {
   --input-date-separator: rgb(156, 156, 156);
   --input-placeholder-color: rgb(156, 156, 156);
   --letter-spacing-notes: -0.2px;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(176, 136, 231);
   --link-decoration: none;
   --link-external-color: rgb(176, 136, 231);
@@ -179,6 +188,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(141, 145, 150);
   --search-icon-color: rgb(141, 145, 150);
   --search-result-background: #2E3035;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(208, 209, 210);
   --setting-items-background: rgb(68, 71, 90);
   --setting-items-border-color: rgb(33, 35, 38);
@@ -206,6 +216,7 @@ export const theme: ThemeData = {
   --table-header-color: rgb(208, 209, 210);
   --tag-color: rgb(176, 136, 231);
   --tag-color-hover: rgb(176, 136, 231);
+  --tertiary: var(--text-accent);
   --text-a: rgb(228, 129, 192);
   --text-a-hover: rgb(255, 138, 202);
   --text-accent: rgb(176, 136, 231);
@@ -229,6 +240,8 @@ export const theme: ThemeData = {
   --text-title-h4: rgb(140, 149, 212);
   --text-title-h5: rgb(140, 149, 212);
   --text-title-h6: rgb(120, 144, 151);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: #2B2D31;
   --titlebar-background-focused: rgb(33, 35, 38);
   --titlebar-border-color: rgb(33, 35, 38);

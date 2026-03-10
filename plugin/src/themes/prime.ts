@@ -226,6 +226,8 @@ export const theme: ThemeData = {
   --color-tokyo-night-yellow: #e0af68;
   --color-yellow: #faf69c;
   --cursor: pointer;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #2c394d;
   --divider-color-hover: #9ca0fa;
   --dropdown-background: #2c394d;
@@ -247,6 +249,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #9cfac7;
   --graph-node-unresolved: #aea8ba;
   --graph-text: #fafbfc;
+  --gray: var(--text-muted);
   --h1-color: #9ca0fa;
   --h2-color: #9cfaf6;
   --h3-color: #9cfac7;
@@ -254,6 +257,7 @@ export const theme: ThemeData = {
   --h5-color: #fac79e;
   --h6-color: #fa9ccf;
   --heading-formatting: #aea8ba;
+  --highlight: var(--background-modifier-hover);
   --highlight-background-color--active: rgba(250, 246, 156, 0.1);
   --highlight-background-color--active-dark: rgb(238, 232, 169, .1);
   --highlight-background-color--normal: rgba(255, 213, 0, 0.01);
@@ -278,6 +282,8 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 237.45, 90%, 80%;
   --interactive-hover: #324158;
   --interactive-normal: #2c394d;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #9ca0fa;
   --link-color-hover: rgba(158, 162, 250, 0.9);
   --link-decoration: none;
@@ -347,6 +353,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #c0c0c0;
   --search-icon-color: #c0c0c0;
   --search-result-background: #0d1117;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #fafbfc;
   --setting-items-background: #0d1117;
   --setting-items-border-color: #2c394d;
@@ -393,6 +400,7 @@ export const theme: ThemeData = {
   --tag-color: #aea8ba;
   --tag-color-hover: #9ca0fa;
   --tag-radius: 18px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #9ca0fa;
   --text-accent-hover: rgba(158, 162, 250, 0.9);
   --text-error: #ff4140;
@@ -403,6 +411,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(158, 162, 250, 0.33);
   --text-success: #9cfac7;
   --text-warning: #fac79e;
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #131922;
   --titlebar-background-focused: #0d1117;
   --titlebar-border-color: #2c394d;
@@ -1377,6 +1386,8 @@ body sup {
   --color-tokyo-night-yellow: #e0af68;
   --color-yellow: #c0b90a;
   --cursor: pointer;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #c5ccdB;
   --divider-color-hover: #8c90f9;
   --dropdown-background: #dadfe8;
@@ -1397,6 +1408,7 @@ body sup {
   --graph-node-tag: #0bd065;
   --graph-node-unresolved: #8d8d8d;
   --graph-text: #0d1117;
+  --gray: var(--text-muted);
   --h1-color: #8c90f9;
   --h2-color: #0bd0c8;
   --h3-color: #0bd065;
@@ -1404,6 +1416,7 @@ body sup {
   --h5-color: #f37c1d;
   --h6-color: #fa9ccf;
   --heading-formatting: #8d8d8d;
+  --highlight: var(--background-modifier-hover);
   --highlight-background-color--active: rgba(250, 246, 156, 0.2);
   --highlight-background-color--active-dark: rgb(238, 232, 169, .1);
   --highlight-background-color--normal: rgba(255, 213, 0, 0.15);
@@ -1428,6 +1441,8 @@ body sup {
   --interactive-accent-hsl: 237.80, 90%, 76%;
   --interactive-hover: #e5e8ee;
   --interactive-normal: #dadfe8;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #8c90f9;
   --link-color-hover: rgba(158, 162, 250, 0.9);
   --link-decoration: none;
@@ -1492,6 +1507,7 @@ body sup {
   --search-clear-button-color: #747474;
   --search-icon-color: #747474;
   --search-result-background: #f9fafc;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #0d1117;
   --setting-items-background: #f9fafc;
   --setting-items-border-color: #c5ccdB;
@@ -1537,6 +1553,7 @@ body sup {
   --tag-color: #8d8d8d;
   --tag-color-hover: #8c90f9;
   --tag-radius: 18px;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #8c90f9;
   --text-accent-hover: rgba(139, 143, 249, 0.9);
   --text-error: #f6535a;
@@ -1547,6 +1564,7 @@ body sup {
   --text-selection: rgba(139, 143, 249, 0.4);
   --text-success: #0bd065;
   --text-warning: #f37c1d;
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #eff1f5;
   --titlebar-background-focused: #f9fafc;
   --titlebar-border-color: #c5ccdB;

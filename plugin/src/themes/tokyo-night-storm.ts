@@ -69,6 +69,7 @@ export const theme: ThemeData = {
   --blue0_x: 61, 89, 161;
   --blue_x: 122, 162, 247;
   --blur-background: color-mix(in srgb, rgb(36, 40, 59) 65%, transparent) linear-gradient(rgb(36, 40, 59), color-mix(in srgb, rgb(36, 40, 59) 65%, transparent));
+  --bodyFont: var(--font-interface);
   --bold-color: rgb(128, 208, 255);
   --border-width: 2px;
   --callout-quote: rgb(169, 177, 214);
@@ -95,6 +96,7 @@ export const theme: ThemeData = {
   --code-string: rgb(158, 206, 106);
   --code-tag: rgb(255, 117, 127);
   --code-value: rgb(157, 124, 21);
+  --codeFont: var(--font-interface);
   --collapse-icon-color: rgb(86, 95, 137);
   --collapse-icon-color-collapsed: hsl(199, 102%, 86.25%);
   --color-accent: rgb(128, 208, 255);
@@ -122,6 +124,8 @@ export const theme: ThemeData = {
   --cyan: rgb(125, 207, 255);
   --cyan_hsl: 202 100% 75%;
   --cyan_x: 125, 207, 255;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --default-font: "JetBrains Mono Nerd Font", monospace;
   --divider-color: rgb(65, 72, 104);
   --divider-color-hover: rgb(128, 208, 255);
@@ -157,6 +161,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(255, 158, 100);
   --graph-node-unresolved: rgb(86, 95, 137);
   --graph-text: rgb(192, 202, 245);
+  --gray: var(--text-muted);
   --green: rgb(158, 206, 106);
   --green_x: 158, 206, 106;
   --h1-color: rgb(255, 117, 127);
@@ -165,7 +170,9 @@ export const theme: ThemeData = {
   --h4-color: rgb(125, 207, 255);
   --h5-color: rgb(122, 162, 247);
   --h6-color: rgb(187, 154, 247);
+  --headerFont: var(--font-interface);
   --heading-formatting: rgb(86, 95, 137);
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(65, 72, 104);
   --icon-color: rgb(169, 177, 214);
   --icon-color-active: hsl(199, 102%, 86.25%);
@@ -186,6 +193,8 @@ export const theme: ThemeData = {
   --interactive-normal: rgb(36, 40, 59);
   --interactive-success: rgb(158, 206, 106);
   --italic-color: rgb(128, 208, 255);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: hsl(199, 102%, 86.25%);
   --link-color-hover: hsl(197, 105%, 96.75%);
   --link-external-color: hsl(199, 102%, 86.25%);
@@ -268,6 +277,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(169, 177, 214);
   --search-icon-color: rgb(169, 177, 214);
   --search-result-background: rgb(36, 40, 59);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(192, 202, 245);
   --setting-items-background: rgb(36, 40, 59);
   --setting-items-border-color: rgb(65, 72, 104);
@@ -322,6 +332,7 @@ export const theme: ThemeData = {
   --teal_x: 26, 188, 156;
   --terminal_black: rgb(65, 72, 104);
   --terminal_black_x: 65, 72, 104;
+  --tertiary: var(--text-accent-hover);
   --text-accent: hsl(199, 102%, 86.25%);
   --text-accent-hover: hsl(197, 105%, 96.75%);
   --text-error: rgb(219, 75, 75);
@@ -335,6 +346,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(61, 89, 161, 0.6);
   --text-success: rgb(158, 206, 106);
   --text-warning: rgb(255, 158, 100);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-interface);
   --titlebar-background: rgb(36, 40, 59);
   --titlebar-background-focused: rgb(36, 40, 59);
   --titlebar-border-color: rgb(65, 72, 104);

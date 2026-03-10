@@ -39,8 +39,10 @@ export const theme: ThemeData = {
   --file-header-background: #262626ff;
   --file-header-background-focused: #262626ff;
   --graph-node-focused: #814CFF;
+  --highlight: var(--text-highlight-bg);
   --icon-color-active: #814CFF;
   --interactive-accent: #6C41D8;
+  --light: var(--background-primary);
   --link-color: #814CFF;
   --link-external-color: #814CFF;
   --link-unresolved-color: #814CFF;
@@ -56,6 +58,7 @@ export const theme: ThemeData = {
   --prompt-background: #262626ff;
   --ribbon-background-collapsed: #262626ff;
   --search-result-background: #262626ff;
+  --secondary: var(--text-accent);
   --setting-items-background: #161616;
   --suggestion-background: #262626ff;
   --tab-background-active: #262626ff;
@@ -65,8 +68,10 @@ export const theme: ThemeData = {
   --table-selection-border-color: #6C41D8;
   --tag-color: #814CFF;
   --tag-color-hover: #814CFF;
+  --tertiary: var(--text-accent);
   --text-accent: #814CFF;
   --text-highlight-bg: #6C41D8;
+  --textHighlight: var(--text-highlight-bg);
   --quartz-icon-color: currentColor;
 }
 

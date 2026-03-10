@@ -55,6 +55,7 @@ export const theme: ThemeData = {
   --blockquote-border-thickness: 0px;
   --blockquote-color: #cce8e8;
   --blur-background: color-mix(in srgb, #2f3f3f 65%, transparent) linear-gradient(#2f3f3f, color-mix(in srgb, #2f3f3f 65%, transparent));
+  --bodyFont: var(--font-interface);
   --border-width: 2px;
   --button-radius: 20px;
   --callout-radius: 0.75em;
@@ -78,6 +79,7 @@ export const theme: ThemeData = {
   --code-normal: #e0e3e2;
   --code-punctuation: #bec8c8;
   --code-radius: 0.75em;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #899392;
   --collapse-icon-color-collapsed: rgb(22, 218, 212);
   --color-accent: rgb(21, 185, 188);
@@ -99,6 +101,8 @@ export const theme: ThemeData = {
   --color-base-60: #b0cccc;
   --color-base-70: #bec8c8;
   --custom-drawer-header: "Bolt";
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: rgb(21, 185, 188);
   --dropdown-background: #2f3f3f;
@@ -129,6 +133,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #53dfdd;
   --graph-node-unresolved: #b4c8e9;
   --graph-text: #e0e3e2;
+  --gray: var(--text-muted);
   --h1-size: 2.3em;
   --h1-weight: 300;
   --h2-size: 2em;
@@ -141,7 +146,9 @@ export const theme: ThemeData = {
   --h5-weight: 400;
   --h6-size: 1.35em;
   --h6-weight: 500;
+  --headerFont: var(--font-interface);
   --heading-formatting: #899392;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #2f3f3f;
   --icon-color: #bec8c8;
   --icon-color-active: rgb(22, 218, 212);
@@ -164,6 +171,8 @@ export const theme: ThemeData = {
 			41%;
   --interactive-hover: #2f3f3f;
   --interactive-normal: #2f3f3f;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(21, 185, 188);
   --link-color-hover: rgb(21, 185, 188);
   --link-decoration-thickness: 1.5px;
@@ -330,6 +339,8 @@ export const theme: ThemeData = {
   --text-muted: #bec8c8;
   --text-normal: #e0e3e2;
   --text-selection: rgba(21, 185, 188, 0.33);
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-interface);
   --titlebar-background: #192e2e;
   --titlebar-background-focused: #2f3f3f;
   --titlebar-border-color: #2f3f3f;
@@ -1383,6 +1394,7 @@ body sup {
   --blockquote-border-thickness: 0px;
   --blockquote-color: #041f20;
   --blur-background: color-mix(in srgb, #fdfcfa 65%, transparent) linear-gradient(#fdfcfa, color-mix(in srgb, #fdfcfa 65%, transparent));
+  --bodyFont: var(--font-interface);
   --border-width: 2px;
   --button-radius: 20px;
   --callout-radius: 0.75em;
@@ -1406,6 +1418,7 @@ body sup {
   --code-normal: #191c1c;
   --code-punctuation: #3f4949;
   --code-radius: 0.75em;
+  --codeFont: var(--font-interface);
   --collapse-icon-color: #6f7979;
   --collapse-icon-color-collapsed: rgb(0, 105, 107);
   --color-accent: rgb(0, 105, 107);
@@ -1427,6 +1440,8 @@ body sup {
   --color-base-60: #4a6363;
   --color-base-70: #3f4949;
   --custom-drawer-header: "Bolt";
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: hsl(180, 101%, 22.575%);
   --dropdown-background: #eef5f3;
@@ -1457,6 +1472,7 @@ body sup {
   --graph-node-tag: #00bfbc;
   --graph-node-unresolved: #4c5f7c;
   --graph-text: #191c1c;
+  --gray: var(--text-muted);
   --h1-size: 2.3em;
   --h1-weight: 300;
   --h2-size: 2em;
@@ -1469,7 +1485,9 @@ body sup {
   --h5-weight: 400;
   --h6-size: 1.35em;
   --h6-weight: 500;
+  --headerFont: var(--font-interface);
   --heading-formatting: #6f7979;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #dbe8e8;
   --icon-color: #3f4949;
   --icon-color-active: rgb(0, 105, 107);
@@ -1492,6 +1510,8 @@ body sup {
 			21%;
   --interactive-hover: #dbe8e8;
   --interactive-normal: #eef5f3;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #00696b;
   --link-color-hover: #00696b;
   --link-decoration-thickness: 1.5px;
@@ -1656,6 +1676,8 @@ body sup {
   --text-muted: #3f4949;
   --text-normal: #191c1c;
   --text-selection: rgba(0, 105, 107, 0.2);
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-interface);
   --titlebar-background: #eef5f3;
   --titlebar-background-focused: #eef5f3;
   --titlebar-border-color: #dbe8e8;

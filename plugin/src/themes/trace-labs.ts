@@ -111,6 +111,8 @@ export const theme: ThemeData = {
   --color-red-rgb: 248, 81, 73;
   --color-tlgreen: #84EDB5;
   --color-yellow: #d29922;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #30363d;
   --divider-color-hover: rgb(87, 165, 255);
   --dropdown-background: #30363d;
@@ -137,6 +139,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #7ee787;
   --graph-node-unresolved: #6e7681;
   --graph-text: #ffffff;
+  --gray: var(--text-muted);
   --h-color-theme: #7ee787;
   --h1-color: #84EDB5;
   --h1-color-theme: #84EDB5;
@@ -161,6 +164,7 @@ export const theme: ThemeData = {
   --h6-color-theme: #84EDB5;
   --h6-size: 1.12em;
   --heading-formatting: #6e7681;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #30363d;
   --icon-color: #8b949e;
   --icon-color-active: rgb(66, 154, 255);
@@ -185,6 +189,8 @@ export const theme: ThemeData = {
   --kanban-lane-border: #21262d;
   --kanban-lane-count: #21262d;
   --kanban-options-btn: #30363d;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #00ffff;
   --link-color-hover: #84EDB5;
   --link-decoration: none;
@@ -257,6 +263,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #8b949e;
   --search-icon-color: #8b949e;
   --search-result-background: #1d1b1b;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #ffffff;
   --setting-group-heading-weight: 700;
   --setting-items-background: #161b22;
@@ -311,6 +318,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(87, 165, 255, 0.15);
   --tag-color: rgb(66, 154, 255);
   --tag-color-hover: rgb(66, 154, 255);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(66, 154, 255);
   --text-accent-hover: rgb(107, 176, 255);
   --text-error: #F47067;
@@ -321,6 +329,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(87, 165, 255, 0.4);
   --text-success: #7ee787;
   --text-warning: #FFA657;
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: #0f0909;
   --titlebar-background-focused: #010409;
   --titlebar-border-color: #30363d;

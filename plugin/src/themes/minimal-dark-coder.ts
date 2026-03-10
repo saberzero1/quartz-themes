@@ -30,6 +30,8 @@ export const theme: ThemeData = {
   --code-punctuation: #CCBA8D;
   --collapse-icon-color: #FF1493;
   --collapse-icon-color-collapsed: #32CD32;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --file-header-background: #181a1b;
   --file-header-background-focused: #181a1b;
   --flair-color: #CCBA8D;
@@ -39,13 +41,17 @@ export const theme: ThemeData = {
   --graph-node-focused: #32CD32;
   --graph-node-unresolved: #FF1493;
   --graph-text: #CCBA8D;
+  --gray: var(--text-muted);
   --heading-formatting: #FF1493;
+  --highlight: var(--text-highlight-bg);
   --icon-color: #CCBA8D;
   --icon-color-active: #32CD32;
   --icon-color-focused: #CCBA8D;
   --icon-color-hover: #CCBA8D;
   --input-date-separator: #FF1493;
   --input-placeholder-color: #FF1493;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #32CD32;
   --link-color-hover: #FF5C8F;
   --link-external-color: #32CD32;
@@ -86,6 +92,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #CCBA8D;
   --search-icon-color: #CCBA8D;
   --search-result-background: #181a1b;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #CCBA8D;
   --status-bar-background: #181a1b;
   --status-bar-text-color: #CCBA8D;
@@ -104,6 +111,7 @@ export const theme: ThemeData = {
   --table-header-color: #CCBA8D;
   --tag-color: #32CD32;
   --tag-color-hover: #32CD32;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #32CD32;
   --text-accent-hover: #FF5C8F;
   --text-faint: #FF1493;
@@ -111,6 +119,7 @@ export const theme: ThemeData = {
   --text-muted: #CCBA8D;
   --text-normal: #CCBA8D;
   --text-selection: #29502e;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #181a1b;
   --titlebar-background-focused: #181a1b;
   --titlebar-text-color: #CCBA8D;

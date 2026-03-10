@@ -23,6 +23,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: #bab3aa;
   --bases-table-summary-background: #171a23;
   --black: #24252a;
+  --bodyFont: var(--font-text);
   --bold: #bdb2a9;
   --bold-color: #bdb2a9;
   --canvas-background: #171a23;
@@ -35,7 +36,10 @@ export const theme: ThemeData = {
   --code-border-color: #53555a;
   --code-normal: #908caa;
   --code-punctuation: #bab3aa;
+  --codeFont: var(--font-text);
   --collapse-icon-color-collapsed: #f03d2f;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #53555a;
   --embed-block-shadow-hover: 0 0 0 1px #53555a, inset 0 0 0 1px #53555a;
   --family: "Geist", sans-serif;
@@ -62,6 +66,7 @@ export const theme: ThemeData = {
   --h4-color: #f03d2f;
   --h5-color: #f03d2f;
   --h6-color: #f03d2f;
+  --headerFont: var(--font-text);
   --highlight-high: #524f67;
   --highlight-low: #21202e;
   --highlight-med: #403d52;
@@ -73,6 +78,7 @@ export const theme: ThemeData = {
   --inline-title-color: #f03d2f;
   --iris: #c4a7e7;
   --italic-color: #bdb2a9;
+  --light: var(--background-primary);
   --light-base: #d4954c;
   --light-foam: #56949f;
   --light-gold: #ea9d34;
@@ -88,6 +94,7 @@ export const theme: ThemeData = {
   --light-subtle: #797593;
   --light-surface: #fffaf3;
   --light-text: #575279;
+  --lightgray: var(--background-secondary);
   --link-color: #f03d2f;
   --link-color-hover: #8d1a11;
   --link-external-color: #f03d2f;
@@ -139,6 +146,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #bab3aa;
   --search-icon-color: #bab3aa;
   --search-result-background: #171a23;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #d7d8d7;
   --setting-items-border-color: #53555a;
   --sidebar-active: #f03d2f;
@@ -169,12 +177,14 @@ export const theme: ThemeData = {
   --tag-background: #53555a;
   --tag-color: #f03d2f;
   --tag-color-hover: #8d1a11;
+  --tertiary: var(--text-accent-hover);
   --text: #d7d8d7;
   --text-accent: #f03d2f;
   --text-accent-hover: #8d1a11;
   --text-muted: #bab3aa;
   --text-normal: #d7d8d7;
   --text-selection: rgba(49, 116, 143, 0.6);
+  --titleFont: var(--font-text);
   --titlebar-background: #242a36;
   --titlebar-border-color: #53555a;
   --titlebar-text-color: #bab3aa;

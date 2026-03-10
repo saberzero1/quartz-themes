@@ -32,6 +32,8 @@ export const theme: ThemeData = {
   --hr-color: #61ffca;
   --indentation-guide-color: #edecee;
   --interactive-normal: #61ffca;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: #110f18;
   --metadata-border-color: #61ffca;
   --metadata-divider-color: #61ffca;

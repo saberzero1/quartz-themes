@@ -233,6 +233,8 @@ export const theme: ThemeData = {
   --color-yellow-900: rgb(217, 214, 23);
   --color-yellow-rgb: 255, 232, 139;
   --cursor: pointer;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(101, 110, 123, 0.2);
   --divider-color-hover: #0ba360;
   --dropdown-background: hsl(216,
@@ -264,6 +266,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(124, 211, 124);
   --graph-node-unresolved: rgb(99, 110, 126);
   --graph-text: rgb(204, 212, 224);
+  --gray: var(--text-muted);
   --h1-accent-color: rgb(255, 120, 129);
   --h1-color: rgb(217, 214, 23);
   --h1-size: 1.5em;
@@ -288,6 +291,7 @@ export const theme: ThemeData = {
   --h6-size: 1.125em;
   --h6-weight: 575;
   --heading-formatting: rgb(99, 110, 126);
+  --highlight: var(--background-modifier-hover);
   --hover-indicator-color: #0ba360;
   --hr-color: rgba(101, 110, 123, 0.2);
   --icon-color: rgb(171, 181, 196);
@@ -317,6 +321,8 @@ export const theme: ThemeData = {
             4%,
             20%);
   --italic-color: rgb(251, 187, 131);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-customize: 1.5;
   --line-normal-opacity: 0.5;
   --link-color: rgb(86, 109, 143);
@@ -404,6 +410,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(171, 181, 196);
   --search-icon-color: rgb(171, 181, 196);
   --search-result-background: transparent;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(204, 212, 224);
   --setting-items-background: rgb(39, 40, 43);
   --setting-items-border-color: rgba(101, 110, 123, 0.2);
@@ -465,6 +472,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(94, 119, 156, 0.15);
   --tag-color: rgb(86, 109, 143);
   --tag-color-hover: rgb(86, 109, 143);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(86, 109, 143);
   --text-accent-hover: rgb(105, 129, 165);
   --text-error: rgb(255, 120, 129);
@@ -475,6 +483,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(94, 119, 156, 0.25);
   --text-success: rgb(124, 211, 124);
   --text-warning: rgb(251, 187, 131);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: rgba(101, 110, 123, 0.2);

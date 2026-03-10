@@ -48,6 +48,7 @@ export const theme: ThemeData = {
   --bases-table-summary-background: white;
   --blockquote-border-color: rgb(146, 174, 201);
   --blur-background: color-mix(in srgb, white 65%, transparent) linear-gradient(white, color-mix(in srgb, white 65%, transparent));
+  --bodyFont: var(--font-text);
   --bold-weight: 700;
   --callout-bug: 191, 97, 106;
   --callout-default: 97, 153, 191;
@@ -91,6 +92,7 @@ export const theme: ThemeData = {
   --code-string: #a3be8c;
   --code-tag: #bf616a;
   --code-value: #958eb4;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #4C566A;
   --collapse-icon-color-collapsed: rgb(129, 161, 193);
   --color-accent: rgb(129, 161, 193);
@@ -125,6 +127,7 @@ export const theme: ThemeData = {
   --color-red-rgb: 191, 97, 106;
   --color-yellow: #ebcb8b;
   --color-yellow-rgb: 235, 203, 139;
+  --dark: var(--text-normal);
   --dark0: #2e3440;
   --dark0-raw: 46, 52, 64;
   --dark1: #3b4252;
@@ -133,6 +136,7 @@ export const theme: ThemeData = {
   --dark2-raw: 67, 76, 94;
   --dark3: #4c566a;
   --dark3-raw: 76, 86, 106;
+  --darkgray: var(--text-normal);
   --divider-color: #E5E9F0;
   --divider-color-hover: rgb(146, 174, 201);
   --dropdown-background: white;
@@ -165,6 +169,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #a3be8c;
   --graph-node-unresolved: #4C566A;
   --graph-text: color-mix(in srgb, rgb(129, 161, 193), #000 45%);
+  --gray: var(--text-muted);
   --h1-color: rgb(129, 161, 193);
   --h2-color: rgb(129, 161, 193);
   --h3-color: rgb(129, 161, 193);
@@ -173,7 +178,9 @@ export const theme: ThemeData = {
   --h6-color: rgb(129, 161, 193);
   --header-color: rgb(129, 161, 193);
   --header-font: "Norwester";
+  --headerFont: var(--font-text);
   --heading-formatting: #4C566A;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #E5E9F0;
   --icon-color: color-mix(in srgb, rgb(129, 161, 193), #000 20%);
   --icon-color-active: rgb(129, 161, 193);
@@ -188,6 +195,7 @@ export const theme: ThemeData = {
   --interactive-accent-hsl: 210, 34%, 63%;
   --interactive-hover: #ECEFF4;
   --interactive-normal: white;
+  --light: var(--background-primary);
   --light0: #d8dee9;
   --light0-raw: 216, 222, 233;
   --light1: #e5e9f0;
@@ -196,6 +204,7 @@ export const theme: ThemeData = {
   --light2-raw: 236, 239, 244;
   --light3: #ffffff;
   --light3-raw: 255, 255, 255;
+  --lightgray: var(--background-secondary);
   --link-color: rgb(129, 161, 193);
   --link-color-hover: rgb(159, 186, 209);
   --link-external-color: rgb(129, 161, 193);
@@ -261,6 +270,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: color-mix(in srgb, rgb(129, 161, 193), #000 20%);
   --search-icon-color: color-mix(in srgb, rgb(129, 161, 193), #000 20%);
   --search-result-background: white;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: color-mix(in srgb, rgb(129, 161, 193), #000 45%);
   --setting-items-background: #ECEFF4;
   --setting-items-border-color: #E5E9F0;
@@ -329,6 +339,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(129, 161, 193, 0.15);
   --tag-color: rgb(129, 161, 193);
   --tag-color-hover: rgb(129, 161, 193);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(129, 161, 193);
   --text-accent-hover: rgb(159, 186, 209);
   --text-error: #bf616a;
@@ -339,6 +350,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(129, 161, 193, 0.2);
   --text-success: #a3be8c;
   --text-warning: #d08770;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #ECEFF4;
   --titlebar-background-focused: white;
   --titlebar-border-color: #E5E9F0;

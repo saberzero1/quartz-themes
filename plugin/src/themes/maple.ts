@@ -199,6 +199,7 @@ export const theme: ThemeData = {
   --code-tag: rgba(209.304, 137.496, 137.496, 0.85);
   --code-value: rgba(126.48, 199.92, 197.472, 0.85);
   --code-variable: rgba(214.2, 181.56, 132.6, 0.85);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color-collapsed: rgb(100, 136, 160);
   --color-accent: rgb(85, 115, 139);
   --color-accent-1: rgb(100, 136, 160);
@@ -220,6 +221,8 @@ export const theme: ThemeData = {
   --color-red-rgb: 209.304, 137.496, 137.496;
   --color-yellow: rgba(214.2, 181.56, 132.6, 0.85);
   --color-yellow-rgb: 214.2, 181.56, 132.6;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --divider-color-hover: rgb(85, 115, 139);
   --divider-width-hover: 4px;
@@ -268,6 +271,7 @@ export const theme: ThemeData = {
   --graph-node-focused: rgb(103, 136, 162);
   --graph-node-tag: rgba(147.288, 199.512, 155.992, 0.85);
   --graph-text: rgba(232, 240, 247, 0.75);
+  --gray: var(--text-normal);
   --grid-dots-color: #3f3f3f;
   --grid-line-color: #2a2a2a;
   --grid-spacing: 20px;
@@ -309,6 +313,7 @@ export const theme: ThemeData = {
   --h6-variant: small-caps;
   --h6-weight: 500;
   --heading-spacing: 20px;
+  --highlight: var(--background-modifier-hover);
   --hr-color: hsla(
     207,
     6%,
@@ -332,6 +337,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(100, 136, 160);
   --interactive-accent-hsl: 207, 24%,
     44.2%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.8;
   --line-height-tight: 1.5;
   --link-color: rgba(126.48, 199.92, 197.472, 0.85);
@@ -494,6 +501,7 @@ export const theme: ThemeData = {
   --scrollbar-color: rgba(0, 0, 0, 0);
   --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --search-result-background: rgb(27, 28, 29);
+  --secondary: var(--text-accent);
   --select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='none' stroke='%23DDDDDD' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/></svg>");
   --setting-accent-h-dark: 207;
   --setting-calendar-max-width: 500px;
@@ -613,6 +621,7 @@ export const theme: ThemeData = {
   --tag-color-hover: rgb(100, 136, 160);
   --tag-padding-x: 8px;
   --tag-padding-y: 0;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(100, 136, 160);
   --text-accent-hover: rgb(118, 153, 173);
   --text-error: rgba(209.304, 137.496, 137.496, 0.85);
@@ -621,6 +630,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(85, 115, 139, 0.33);
   --text-success: rgba(147.288, 199.512, 155.992, 0.85);
   --text-warning: rgba(206.04, 162.52, 140.76, 0.85);
+  --textHighlight: var(--background-modifier-hover);
   --theme-accent-active-h: 207;
   --theme-accent-active-l: 52%;
   --theme-accent-active-s: 24%;
@@ -1826,6 +1836,7 @@ body sup {
   --code-tag: rgba(189.0825, 81.2175, 81.2175, 1);
   --code-value: rgba(17.85, 124.95, 82.11, 1);
   --code-variable: rgba(177.48, 139.74, 26.52, 1);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color-collapsed: rgb(167, 147, 118);
   --color-accent: rgb(167, 147, 118);
   --color-accent-1: rgb(175, 156, 131);
@@ -1933,6 +1944,7 @@ body sup {
   --h6-variant: small-caps;
   --h6-weight: 500;
   --heading-spacing: 20px;
+  --highlight: var(--background-modifier-hover);
   --hr-color: hsla(
     35,
     10%,
@@ -1951,6 +1963,8 @@ body sup {
   --interactive-accent-hover: rgb(183, 165, 143);
   --interactive-accent-hsl: 35, 22%,
     56%;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-normal: 1.8;
   --line-height-tight: 1.5;
   --link-color: rgba(17.85, 124.95, 82.11, 1);
@@ -2095,6 +2109,7 @@ body sup {
   --scrollbar-color: rgba(0, 0, 0, 0);
   --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --search-result-background: rgb(248, 248, 246);
+  --secondary: var(--text-accent);
   --select-bg-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='none' stroke='%23222222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/></svg>");
   --setting-accent-h-dark: 207;
   --setting-calendar-max-width: 500px;
@@ -2211,6 +2226,7 @@ body sup {
   --tag-color-hover: rgb(167, 147, 118);
   --tag-padding-x: 8px;
   --tag-padding-y: 0;
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(167, 147, 118);
   --text-accent-hover: rgb(183, 165, 143);
   --text-error: rgba(189.0825, 81.2175, 81.2175, 1);
@@ -2218,6 +2234,7 @@ body sup {
   --text-selection: rgba(167, 147, 118, 0.25);
   --text-success: rgba(71.4, 142.8, 20.4, 1);
   --text-warning: rgba(199.41, 122.774, 35.19, 1);
+  --textHighlight: var(--background-modifier-hover);
   --theme-accent-active-h: 35;
   --theme-accent-active-l: 56%;
   --theme-accent-active-s: 22%;

@@ -67,6 +67,7 @@ export const theme: ThemeData = {
   --frost2_x: 129,161,193;
   --graph-line: #363636;
   --graph-node-unresolved: #666;
+  --gray: var(--text-faint);
   --green: rgb(163, 190, 140);
   --green_x: 163,190,140;
   --h1-color: rgb(191, 97, 106);
@@ -82,6 +83,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: #666;
   --interactive-hover: #363636;
   --interactive-normal: #333;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: #666;
   --menu-background: #080808;
   --menu-border-color: #363636;

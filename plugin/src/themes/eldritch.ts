@@ -48,6 +48,8 @@ export const theme: ThemeData = {
   --color-accent-hsl: 135, 94%, 65%;
   --color-base-70: #bababa;
   --color-scheme: dark;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: #37f499;
   --eldritch-Comment: #7081d0;
   --eldritch-definition: #37f499;
@@ -65,6 +67,8 @@ export const theme: ThemeData = {
   --graph-node: #bababa;
   --graph-node-focused: rgb(62, 249, 109);
   --graph-text: #ebfafa;
+  --gray: var(--text-muted);
+  --highlight: var(--background-modifier-active-hover);
   --icon-color: #bababa;
   --icon-color-active: rgb(62, 249, 109);
   --icon-color-focused: #ebfafa;
@@ -79,6 +83,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(62, 249, 109);
   --interactive-accent-hsl: 135, 94%, 65%;
   --interactive-accent-rgb: #f1fc79;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(62, 249, 109);
   --link-color-hover: rgb(102, 250, 139);
   --link-external-color: rgb(62, 249, 109);
@@ -118,6 +124,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #bababa;
   --search-icon-color: #bababa;
   --search-result-background: #212337;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #ebfafa;
   --setting-items-background: #323449;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
@@ -148,6 +155,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(82, 250, 124, 0.15);
   --tag-color: rgb(62, 249, 109);
   --tag-color-hover: rgb(62, 249, 109);
+  --tertiary: var(--text-accent-hover);
   --text-a: #f265b5;
   --text-a-hover: #f265b5;
   --text-accent: rgb(62, 249, 109);
@@ -165,6 +173,7 @@ export const theme: ThemeData = {
   --text-title-h4: #f16c75;
   --text-title-h5: #f1fc79;
   --text-title-h6: #f265b5;
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: rgb(29, 33, 40);
   --titlebar-background-focused: rgb(44, 46, 57);
   --titlebar-text-color: #bababa;

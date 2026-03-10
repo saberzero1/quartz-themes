@@ -49,6 +49,7 @@ export const theme: ThemeData = {
   --blockquote-color: #E1DCF2;
   --blockquote-font-style: italic;
   --blur-background: color-mix(in srgb, #374151 65%, transparent) linear-gradient(#374151, color-mix(in srgb, #374151 65%, transparent));
+  --bodyFont: var(--font-text);
   --canvas-background: #1a2332;
   --canvas-card-label-color: #718096;
   --caret-color: #e2e8f0;
@@ -63,8 +64,11 @@ export const theme: ThemeData = {
   --code-comment: #718096;
   --code-normal: #e2e8f0;
   --code-punctuation: #a0aec0;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #718096;
   --collapse-icon-color-collapsed: #7dd3c0;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #4a5568;
   --divider-color-hover: #7dd3c0;
   --dropdown-background: #374151;
@@ -91,6 +95,7 @@ export const theme: ThemeData = {
   --graph-node-focused: #7dd3c0;
   --graph-node-unresolved: #718096;
   --graph-text: #e2e8f0;
+  --gray: var(--text-muted);
   --h1-color: #EF44C0;
   --h1-size: 2.5em;
   --h2-color: #a78bfa;
@@ -108,7 +113,9 @@ export const theme: ThemeData = {
   --h6-color: #6366f1;
   --h6-size: 1.0em;
   --h6-weight: 500;
+  --headerFont: var(--font-text);
   --heading-formatting: #718096;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #fbbf24;
   --icon-color: #7dd3c0;
   --icon-color-active: #f561ab;
@@ -125,6 +132,8 @@ export const theme: ThemeData = {
   --interactive-hover: #4a5568;
   --interactive-normal: #374151;
   --interactive-success: #059669;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #7dd3c0;
   --link-color-hover: #5eead4;
   --link-external-color: #fbbf24;
@@ -174,6 +183,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #a0aec0;
   --search-icon-color: #a0aec0;
   --search-result-background: #1a2332;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #e2e8f0;
   --setting-items-background: #2d3748;
   --setting-items-border-color: #4a5568;
@@ -209,6 +219,7 @@ export const theme: ThemeData = {
   --tag-background-hover: rgba(251, 191, 36, 0.3);
   --tag-color: #fbbf24;
   --tag-color-hover: #7dd3c0;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #7dd3c0;
   --text-accent-hover: #5eead4;
   --text-faint: #718096;
@@ -218,6 +229,8 @@ export const theme: ThemeData = {
   --text-muted: #a0aec0;
   --text-normal: #e2e8f0;
   --text-on-accent: #1a202c;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #374151;
   --titlebar-border-color: #4a5568;
   --titlebar-text-color: #a0aec0;

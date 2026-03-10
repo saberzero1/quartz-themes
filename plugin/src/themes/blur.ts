@@ -38,6 +38,8 @@ export const theme: ThemeData = {
   --code-punctuation: #ffffff;
   --collapse-icon-color: #ffffff;
   --collapse-icon-color-collapsed: #ffffff;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(255, 255, 255, 0.05);
   --embed-block-shadow-hover: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
   --file-header-background: transparent;
@@ -50,7 +52,9 @@ export const theme: ThemeData = {
   --graph-node-focused: #ffffff;
   --graph-node-unresolved: #ffffff;
   --graph-text: #ffffff;
+  --gray: var(--text-muted);
   --heading-formatting: #ffffff;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(255, 255, 255, 0.05);
   --icon-color: #ffffff;
   --icon-color-active: #ffffff;
@@ -58,6 +62,8 @@ export const theme: ThemeData = {
   --icon-color-hover: #ffffff;
   --input-date-separator: #ffffff;
   --input-placeholder-color: #ffffff;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #ffffff;
   --link-external-color: #ffffff;
   --link-unresolved-color: #ffffff;
@@ -105,6 +111,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #ffffff;
   --search-icon-color: #ffffff;
   --search-result-background: transparent;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #ffffff;
   --setting-items-background: transparent;
   --setting-items-border-color: rgba(255, 255, 255, 0.05);
@@ -132,6 +139,7 @@ export const theme: ThemeData = {
   --table-header-color: #ffffff;
   --tag-color: #ffffff;
   --tag-color-hover: #ffffff;
+  --tertiary: var(--text-accent);
   --text-accent: #ffffff;
   --text-faint: #ffffff;
   --text-highlight-bg: rgba(255, 255, 255, 0.15);
@@ -139,6 +147,7 @@ export const theme: ThemeData = {
   --text-normal: #ffffff;
   --text-on-accent: #ffffff;
   --text-selection: #ffffff;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: rgba(255, 255, 255, 0.05);
@@ -967,6 +976,8 @@ body sup {
   --code-punctuation: #ffffff;
   --collapse-icon-color: #ffffff;
   --collapse-icon-color-collapsed: #ffffff;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgba(255, 255, 255, 0.05);
   --embed-block-shadow-hover: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
   --file-header-background: transparent;
@@ -979,7 +990,9 @@ body sup {
   --graph-node-focused: #ffffff;
   --graph-node-unresolved: #ffffff;
   --graph-text: #ffffff;
+  --gray: var(--text-muted);
   --heading-formatting: #ffffff;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgba(255, 255, 255, 0.05);
   --icon-color: #ffffff;
   --icon-color-active: #ffffff;
@@ -987,6 +1000,8 @@ body sup {
   --icon-color-hover: #ffffff;
   --input-date-separator: #ffffff;
   --input-placeholder-color: #ffffff;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #ffffff;
   --link-external-color: #ffffff;
   --link-unresolved-color: #ffffff;
@@ -1033,6 +1048,7 @@ body sup {
   --search-clear-button-color: #ffffff;
   --search-icon-color: #ffffff;
   --search-result-background: transparent;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #ffffff;
   --setting-items-background: transparent;
   --setting-items-border-color: rgba(255, 255, 255, 0.05);
@@ -1060,6 +1076,7 @@ body sup {
   --table-header-color: #ffffff;
   --tag-color: #ffffff;
   --tag-color-hover: #ffffff;
+  --tertiary: var(--text-accent);
   --text-accent: #ffffff;
   --text-faint: #ffffff;
   --text-highlight-bg: rgba(255, 255, 255, 0.15);
@@ -1067,6 +1084,7 @@ body sup {
   --text-normal: #ffffff;
   --text-on-accent: #ffffff;
   --text-selection: #ffffff;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: rgba(255, 255, 255, 0.05);

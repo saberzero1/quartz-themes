@@ -59,6 +59,7 @@ export const theme: ThemeData = {
   --bb-shadow: -33px 24px 64px -8px rgba(247, 69, 69, 0.1), 33px 12px 64px -8px rgba(155, 245, 253, 0.1);
   --blockquote-border-color: rgb(247, 69, 69);
   --blur-background: color-mix(in srgb, #555555 65%, transparent) linear-gradient(#555555, color-mix(in srgb, #555555 65%, transparent));
+  --bodyFont: var(--font-interface);
   --callout-bug: 247, 69, 69;
   --callout-cite: 87, 61, 132;
   --callout-default: 90, 100, 248;
@@ -103,6 +104,7 @@ export const theme: ThemeData = {
   --code-string: #95f745;
   --code-tag: #F74545;
   --code-value: #AA45F7;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #707070;
   --collapse-icon-color-collapsed: rgb(247, 69, 69);
   --color-accent: rgb(247, 69, 69);
@@ -145,6 +147,8 @@ export const theme: ThemeData = {
   --color-yellow: #F7CC44;
   --color-yellow-hsl: 46, 92%, 62%;
   --color-yellow-rgb: 247, 204, 68;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: #555555;
   --divider-color-hover: rgb(247, 69, 69);
   --dropdown-background: #555555;
@@ -173,6 +177,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(247, 69, 69);
   --graph-node-unresolved: #707070;
   --graph-text: #b3b3b3;
+  --gray: var(--text-muted);
   --h1-color: #dadada;
   --h1-size: 3.5em;
   --h1-weight: 900;
@@ -186,7 +191,9 @@ export const theme: ThemeData = {
   --h5-weight: 600;
   --h6-size: 0.7368em;
   --h6-weight: 500;
+  --headerFont: var(--font-interface);
   --heading-formatting: #707070;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #555555;
   --icon-color: #999999;
   --icon-color-active: rgb(247, 69, 69);
@@ -201,6 +208,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(251, 112, 118);
   --interactive-accent-hsl: 0, 92%, 62%;
   --interactive-normal: #555555;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(247, 69, 69);
   --link-color-hover: rgb(253, 155, 163);
   --link-external-color: rgb(247, 69, 69);
@@ -272,6 +281,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #999999;
   --search-icon-color: #999999;
   --search-result-background: #202020;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #b3b3b3;
   --setting-group-heading-size: 16px;
   --setting-items-background: #444444;
@@ -325,6 +335,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(247, 69, 69, 0.15);
   --tag-color: rgb(247, 69, 69);
   --tag-color-hover: rgb(247, 69, 69);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(247, 69, 69);
   --text-accent-hover: rgb(253, 155, 163);
   --text-cite: 87, 161, 132;
@@ -337,6 +348,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(247, 69, 69, 0.33);
   --text-success: #95f745;
   --text-warning: #F78A45;
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-interface);
   --titlebar-background: #555555;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: #555555;
@@ -1589,6 +1602,7 @@ body sup {
   --bb-shadow: -33px 24px 64px -8px rgba(244, 59, 42, 0.1), 33px 12px 64px -8px rgba(116, 229, 251, 0.1);
   --blockquote-border-color: rgb(246, 73, 60);
   --blur-background: color-mix(in srgb, #f8f5f3 65%, transparent) linear-gradient(#f8f5f3, color-mix(in srgb, #f8f5f3 65%, transparent));
+  --bodyFont: var(--font-interface);
   --callout-bug: 255, 94, 35;
   --callout-cite: 87, 61, 132;
   --callout-default: 112, 180, 249;
@@ -1633,6 +1647,7 @@ body sup {
   --code-string: #689C2B;
   --code-tag: #FF5E23;
   --code-value: #744CB4;
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: #b3b3b3;
   --collapse-icon-color-collapsed: rgb(244, 59, 42);
   --color-accent: rgb(244, 59, 42);
@@ -1679,6 +1694,8 @@ body sup {
   --color-yellow: #FCDC37;
   --color-yellow-hsl: 50, 97%, 60%;
   --color-yellow-rgb: 252, 220, 55;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --divider-color: #d3d3d3;
   --divider-color-hover: rgb(246, 73, 60);
   --dropdown-background: #f8f5f3;
@@ -1707,6 +1724,7 @@ body sup {
   --graph-node-focused: #dddddd;
   --graph-node-tag: rgb(244, 59, 42);
   --graph-node-unresolved: #b3b3b3;
+  --gray: var(--text-muted);
   --h1-color: #000;
   --h1-size: 3.5em;
   --h1-weight: 900;
@@ -1720,7 +1738,9 @@ body sup {
   --h5-weight: 600;
   --h6-size: 0.7368em;
   --h6-weight: 500;
+  --headerFont: var(--font-interface);
   --heading-formatting: #b3b3b3;
+  --highlight: var(--background-modifier-hover);
   --hr-color: #d3d3d3;
   --icon-color: #6b6b6b;
   --icon-color-active: rgb(244, 59, 42);
@@ -1735,6 +1755,8 @@ body sup {
   --interactive-accent-hsl: 5, 90%, 56%;
   --interactive-hover: #e4e1de;
   --interactive-normal: #f8f5f3;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(244, 59, 42);
   --link-color-hover: rgb(248, 84, 79);
   --link-external-color: rgb(244, 59, 42);
@@ -1800,6 +1822,7 @@ body sup {
   --search-clear-button-color: #6b6b6b;
   --search-icon-color: #6b6b6b;
   --search-result-background: #f8f5f3;
+  --secondary: var(--text-accent);
   --setting-group-heading-size: 16px;
   --setting-items-background: #e4e1de;
   --setting-items-border-color: #d3d3d3;
@@ -1852,6 +1875,7 @@ body sup {
   --tag-border-color-hover: rgba(244, 59, 42, 0.15);
   --tag-color: rgb(244, 59, 42);
   --tag-color-hover: rgb(244, 59, 42);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(244, 59, 42);
   --text-accent-hover: rgb(248, 84, 79);
   --text-cite: 87, 161, 132;
@@ -1863,6 +1887,8 @@ body sup {
   --text-selection: rgba(244, 59, 42, 0.2);
   --text-success: #689C2B;
   --text-warning: #FD912C;
+  --textHighlight: var(--background-modifier-hover);
+  --titleFont: var(--font-interface);
   --titlebar-background: #e9e9e9;
   --titlebar-background-focused: transparent;
   --titlebar-border-color: #d3d3d3;

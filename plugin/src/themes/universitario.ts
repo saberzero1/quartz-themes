@@ -91,6 +91,8 @@ export const theme: ThemeData = {
   --color-accent-1: rgb(139, 244, 186);
   --color-accent-2: rgb(180, 248, 208);
   --color-accent-hsl: 150, 80%, 65%;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --divider-color: transparent;
   --divider-color-hover: rgb(94, 237, 166);
   --embed-block-shadow-hover: 0 0 0 1px #363636,
@@ -108,6 +110,7 @@ export const theme: ThemeData = {
   --graph-node: rgb(139, 244, 186);
   --graph-node-focused: rgb(139, 244, 186);
   --graph-node-unresolved: rgb(172, 179, 210);
+  --gray: var(--text-muted);
   --h1-size: 2.5rem;
   --h2-size: 2.0rem;
   --h2-weight: 600;
@@ -122,6 +125,7 @@ export const theme: ThemeData = {
   --h6-size: 1.2rem;
   --heading-formatting: rgb(172, 179, 210);
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-hover);
   --icon-color: rgb(209, 250, 230);
   --icon-color-active: rgb(139, 244, 186);
   --icon-color-hover: white;
@@ -136,6 +140,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(139, 244, 186);
   --interactive-accent-hsl: 150, 80%, 65%;
   --italic-color: rgb(159, 191, 223);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(172, 246, 209);
   --link-color-hover: rgb(195, 248, 222);
   --link-external-color: rgb(139, 244, 186);
@@ -192,6 +198,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: white;
   --search-icon-color: white;
   --search-result-background: rgb(22, 29, 24);
+  --secondary: var(--text-accent);
   --setting-items-background: rgb(34, 42, 38);
   --sidebar-markdown-font-size: 14.4px;
   --slider-thumb-radius: 50%;
@@ -228,6 +235,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(94, 237, 166, 0.15);
   --tag-color: rgb(139, 244, 186);
   --tag-color-hover: rgb(139, 244, 186);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(139, 244, 186);
   --text-accent-hover: rgb(180, 248, 208);
   --text-faint: rgb(172, 179, 210);
@@ -235,6 +243,7 @@ export const theme: ThemeData = {
   --text-muted: white;
   --text-selection: rgba(94, 237, 166, 0.33);
   --text-title: rgb(194, 240, 217);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: rgb(22, 29, 24);
   --titlebar-background-focused: rgb(22, 29, 24);
   --titlebar-text-color: white;
@@ -1048,6 +1057,8 @@ body kbd {
   --color-accent-1: rgb(146, 166, 237);
   --color-accent-2: rgb(172, 189, 241);
   --color-accent-hsl: 228, 70%, 70%;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --divider-color: transparent;
   --divider-color-hover: rgb(146, 166, 237);
   --embed-block-shadow-hover: 0 0 0 1px #e0e0e0,
@@ -1065,6 +1076,7 @@ body kbd {
   --graph-node: rgb(125, 146, 232);
   --graph-node-focused: rgb(125, 146, 232);
   --graph-node-unresolved: rgb(92, 61, 88);
+  --gray: var(--text-muted);
   --h1-size: 2.5rem;
   --h2-size: 2.0rem;
   --h2-weight: 600;
@@ -1077,6 +1089,7 @@ body kbd {
   --h6-size: 1.2rem;
   --heading-formatting: rgb(92, 61, 88);
   --heading-spacing: 2.5rem;
+  --highlight: var(--background-modifier-hover);
   --icon-color: rgb(15, 30, 87);
   --icon-color-active: rgb(15, 30, 87);
   --icon-color-hover: black;
@@ -1091,6 +1104,8 @@ body kbd {
   --interactive-accent-hover: rgb(172, 189, 241);
   --interactive-accent-hsl: 228, 70%, 70%;
   --italic-color: rgb(63, 54, 125);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: rgb(46, 58, 107);
   --link-color-hover: rgb(31, 39, 71);
   --link-external-color: rgb(125, 146, 232);
@@ -1149,6 +1164,7 @@ body kbd {
   --search-clear-button-color: black;
   --search-icon-color: black;
   --search-result-background: #fafafa;
+  --secondary: var(--text-accent);
   --setting-items-background: rgb(224, 222, 237);
   --sidebar-markdown-font-size: 14.4px;
   --slider-thumb-radius: 50%;
@@ -1185,6 +1201,7 @@ body kbd {
   --tag-border-color-hover: rgba(125, 146, 232, 0.15);
   --tag-color: rgb(125, 146, 232);
   --tag-color-hover: rgb(125, 146, 232);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(125, 146, 232);
   --text-accent-hover: rgb(172, 189, 241);
   --text-faint: rgb(92, 61, 88);
@@ -1192,6 +1209,7 @@ body kbd {
   --text-muted: black;
   --text-selection: rgba(125, 146, 232, 0.2);
   --text-title: rgb(62, 64, 116);
+  --textHighlight: var(--background-modifier-hover);
   --titlebar-background: rgb(244, 237, 247);
   --titlebar-background-focused: rgb(244, 237, 247);
   --titlebar-text-color: black;

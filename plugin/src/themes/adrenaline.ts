@@ -53,12 +53,15 @@ export const theme: ThemeData = {
   --footnote-id-color-no-occurrences: rgb(138, 92, 245);
   --frame-right-space: 100px;
   --graph-node-unresolved: rgb(138, 92, 245);
+  --gray: var(--text-faint);
   --heading-formatting: rgb(138, 92, 245);
   --highlight-1: rgba(255, 255, 255, 0.075);
   --highlight-2: rgba(255, 255, 255, 0.075);
   --input-date-separator: rgb(138, 92, 245);
   --input-placeholder-color: rgb(138, 92, 245);
   --interactive-normal: rgb(138, 92, 245);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: rgb(138, 92, 245);
   --menu-background: rgb(38, 38, 39);
   --modal-background: rgb(25, 25, 26);
@@ -878,6 +881,7 @@ body sup {
   --footnote-id-color-no-occurrences: rgb(138, 92, 245);
   --frame-right-space: 100px;
   --graph-node-unresolved: rgb(138, 92, 245);
+  --gray: var(--text-faint);
   --heading-formatting: rgb(138, 92, 245);
   --highlight-1: rgba(0, 0, 0, 0.056);
   --highlight-2: rgba(214, 214, 214, 0.308);
@@ -886,6 +890,8 @@ body sup {
   --input-placeholder-color: rgb(138, 92, 245);
   --interactive-accent: rgb(138, 92, 245);
   --interactive-normal: rgb(138, 92, 245);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --list-marker-color: rgb(138, 92, 245);
   --menu-background: rgb(244, 244, 246);
   --modal-background: rgb(239, 237, 242);
@@ -904,6 +910,7 @@ body sup {
   --ribbon-background: rgb(244, 244, 246);
   --ribbon-background-collapsed: rgb(239, 237, 242);
   --search-result-background: rgb(239, 237, 242);
+  --secondary: var(--interactive-accent);
   --shadow-1: rgba(8, 2, 24, 0.5);
   --shadow-2: rgba(0, 0, 0, 0.257);
   --shadow-3: rgba(0, 0, 0, 0.227);

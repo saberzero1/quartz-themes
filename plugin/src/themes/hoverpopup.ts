@@ -146,6 +146,8 @@ export const theme: ThemeData = {
   --color-satu-lowicon: #6f74a1;
   --color-scrollbar-track: #282b3b;
   --color-spliter: rgb(from #5e6280 r g b / 0.1);
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(from #5e6280 r g b / 0.1);
   --divider-color-hover: #a464fc;
   --dropdown-background: #232433;
@@ -170,7 +172,9 @@ export const theme: ThemeData = {
   --graph-node-focused: #a464fc;
   --graph-node-unresolved: #ffc83d;
   --graph-text: #e0e0ff;
+  --gray: var(--text-muted);
   --heading-formatting: #ffc83d;
+  --highlight: var(--text-highlight-bg);
   --hr-color: rgb(from #5e6280 r g b / 0.1);
   --icon-color: #afb2c7;
   --icon-color-active: #a464fc;
@@ -182,6 +186,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: #7845bf;
   --interactive-hover: #404359;
   --interactive-normal: #232433;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #64bcfc;
   --link-color-hover: #00ddff;
   --link-decoration: none;
@@ -242,6 +248,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #afb2c7;
   --search-icon-color: #afb2c7;
   --search-result-background: #181926;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #e0e0ff;
   --setting-items-background: #232433;
   --setting-items-border-color: rgb(from #5e6280 r g b / 0.1);
@@ -274,6 +281,7 @@ export const theme: ThemeData = {
   --tag-background: #232433;
   --tag-color: #afb2c7;
   --tag-color-hover: #e0e0ff;
+  --tertiary: var(--interactive-accent-hover);
   --text-accent: #a464fc;
   --text-error: #ff3d63;
   --text-faint: #ffc83d;
@@ -281,6 +289,7 @@ export const theme: ThemeData = {
   --text-muted: #afb2c7;
   --text-normal: #e0e0ff;
   --text-on-accent: #e0e0ff;
+  --textHighlight: var(--text-highlight-bg);
   --titlebar-background: #232433;
   --titlebar-background-focused: #404359;
   --titlebar-border-color: rgb(from #5e6280 r g b / 0.1);

@@ -31,6 +31,7 @@ export const theme: ThemeData = {
   --bases-table-header-color: #49504E;
   --bases-table-summary-background: #000000;
   --blur-background: color-mix(in srgb, #0a0c14 65%, transparent) linear-gradient(#0a0c14, color-mix(in srgb, #0a0c14 65%, transparent));
+  --bodyFont: var(--font-text);
   --button-radius: 0px;
   --callout-blend-mode: normal;
   --callout-radius: 0px;
@@ -55,6 +56,7 @@ export const theme: ThemeData = {
   --code-normal: #49504E;
   --code-punctuation: #49504E;
   --code-radius: 0px;
+  --codeFont: var(--font-text);
   --collapse-icon-color: #4C5E75;
   --collapse-icon-color-collapsed: #4C5E75;
   --color-base-00: #000000;
@@ -69,6 +71,8 @@ export const theme: ThemeData = {
   --color-base-50: #4C5E75;
   --color-base-60: #4C5E75;
   --color-base-70: #49504E;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: transparent;
   --dropdown-background: #0a0c14;
   --dropdown-background-hover: #030303;
@@ -90,7 +94,10 @@ export const theme: ThemeData = {
   --graph-node-focused: #4C5E75;
   --graph-node-unresolved: #4C5E75;
   --graph-text: #49504E;
+  --gray: var(--text-muted);
+  --headerFont: var(--font-text);
   --heading-formatting: #4C5E75;
+  --highlight: var(--text-highlight-bg);
   --hr-color: #3d424180;
   --hr-thickness: 1px;
   --icon-color: #4C5E75;
@@ -106,6 +113,8 @@ export const theme: ThemeData = {
   --input-radius: 0px;
   --interactive-hover: #030303;
   --interactive-normal: #0a0c14;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #4C5E75;
   --link-color-hover: #4e698d;
   --link-external-color: #4C5E75;
@@ -170,6 +179,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #49504E;
   --search-icon-color: #49504E;
   --search-result-background: #000000;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #49504E;
   --setting-items-background: #070707;
   --setting-items-border-color: #070707;
@@ -209,12 +219,15 @@ export const theme: ThemeData = {
   --tag-background-hover: transparent;
   --tag-color: #4C5E75;
   --tag-color-hover: #3D4241;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #4C5E75;
   --text-accent-hover: #4e698d;
   --text-faint: #4C5E75;
   --text-highlight-bg: transparent;
   --text-muted: #49504E;
   --text-normal: #49504E;
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: #070707;
   --titlebar-background-focused: #070707;
   --titlebar-border-color: #070707;

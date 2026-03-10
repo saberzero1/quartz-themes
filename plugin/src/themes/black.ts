@@ -14,6 +14,8 @@ export const theme: ThemeData = {
   --checkbox-marker-color: #000;
   --file-header-background: #000;
   --file-header-background-focused: #000;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: #000;
   --modal-background: #000;
   --pdf-background: #000;

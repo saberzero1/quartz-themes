@@ -51,6 +51,8 @@ export const theme: ThemeData = {
   --color-goldFusion-rgb: 165, 156, 103;
   --color-starred: rgb(241, 226, 25);
   --color-starred-rgb: 241, 226, 25;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --divider-color: #262626;
   --divider-color-hover: rgb(195, 174, 111);
   --embed-border-start: 2px solid rgb(195, 174, 111);
@@ -60,11 +62,13 @@ export const theme: ThemeData = {
   --footnote-input-background-active: #111111;
   --graph-node: rgb(198 193 135);
   --graph-node-focused: rgb(209, 189, 143);
+  --gray: var(--text-muted);
   --h1-size: 2em;
   --h2-size: 1.7em;
   --h3-size: 1.4em;
   --h4-size: 1.2em;
   --h5-size: 1.1em;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: rgb(198 193 135 / 10%);
   --icon-color: rgb(198 193 135);
   --icon-color-active: rgb(209, 189, 143);
@@ -76,6 +80,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(209, 189, 143);
   --interactive-accent-hsl: 45, 41%, 60%;
   --italic-color: rgb(172, 99, 99);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.8;
   --link-color: rgb(209, 189, 143);
   --link-color-hover: rgb(222, 205, 171);
@@ -115,6 +121,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(198 193 135);
   --search-icon-color: rgb(198 193 135);
   --search-result-background: #110f0f;
+  --secondary: var(--text-accent);
   --status-bar-background: #111111;
   --status-bar-border-color: #262626;
   --status-bar-text-color: rgb(198 193 135);
@@ -144,6 +151,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(195, 174, 111, 0.15);
   --tag-color: rgb(209, 189, 143);
   --tag-color-hover: rgb(209, 189, 143);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(209, 189, 143);
   --text-accent-hover: rgb(222, 205, 171);
   --text-muted: rgb(198 193 135);
@@ -151,6 +159,7 @@ export const theme: ThemeData = {
   --text-on-accent-inverted: white;
   --text-selection: rgba(195, 174, 111, 0.33);
   --text-stroke-color: rgb(0, 0, 0);
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: #111111;
   --titlebar-background-focused: #111111;
   --titlebar-text-color: rgb(198 193 135);
@@ -634,6 +643,8 @@ body kbd {
   --color-goldFusion-rgb: 165, 156, 103;
   --color-starred: rgb(241, 226, 25);
   --color-starred-rgb: 241, 226, 25;
+  --dark: var(--text-muted);
+  --darkgray: var(--text-muted);
   --divider-color: #f6f6f6;
   --divider-color-hover: rgb(202, 183, 129);
   --embed-border-start: 2px solid rgb(202, 183, 129);
@@ -643,11 +654,13 @@ body kbd {
   --footnote-input-background-active: #fefff6;
   --graph-node: rgb(110 102 3);
   --graph-node-focused: rgb(195, 174, 111);
+  --gray: var(--text-muted);
   --h1-size: 2em;
   --h2-size: 1.7em;
   --h3-size: 1.4em;
   --h4-size: 1.2em;
   --h5-size: 1.1em;
+  --highlight: var(--background-modifier-active-hover);
   --hr-color: rgb(110 102 3 / 10%);
   --icon-color: rgb(110 102 3);
   --icon-color-active: rgb(195, 174, 111);
@@ -659,6 +672,8 @@ body kbd {
   --interactive-accent-hover: rgb(209, 189, 143);
   --interactive-accent-hsl: 45, 41%, 60%;
   --italic-color: rgb(172, 99, 99);
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --line-height-tight: 1.8;
   --link-color: rgb(195, 174, 111);
   --link-color-hover: rgb(209, 189, 143);
@@ -699,6 +714,7 @@ body kbd {
   --search-clear-button-color: rgb(110 102 3);
   --search-icon-color: rgb(110 102 3);
   --search-result-background: #fefff6;
+  --secondary: var(--text-accent);
   --status-bar-background: #fefff6;
   --status-bar-border-color: #f6f6f6;
   --status-bar-text-color: rgb(110 102 3);
@@ -728,6 +744,7 @@ body kbd {
   --tag-border-color-hover: rgba(195, 174, 111, 0.15);
   --tag-color: rgb(195, 174, 111);
   --tag-color-hover: rgb(195, 174, 111);
+  --tertiary: var(--text-accent-hover);
   --text-accent: rgb(195, 174, 111);
   --text-accent-hover: rgb(209, 189, 143);
   --text-muted: rgb(110 102 3);
@@ -735,6 +752,7 @@ body kbd {
   --text-on-accent-inverted: white;
   --text-selection: rgba(195, 174, 111, 0.2);
   --text-stroke-color: #222222;
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: #fefff6;
   --titlebar-background-focused: #fefff6;
   --titlebar-text-color: rgb(110 102 3);

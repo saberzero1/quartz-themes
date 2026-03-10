@@ -41,6 +41,7 @@ export const theme: ThemeData = {
   --icon-xs: 15px;
   --inline-title-color: #d9d8d8;
   --interactive-normal: #484848;
+  --light: var(--background-primary);
   --modal-background: #323232;
   --nav-item-color: #ffffff;
   --nav-item-color-active: #ffffffbb;
@@ -358,6 +359,8 @@ body ul.section-ul {
   --icon-xs: 15px;
   --inline-title-color: #242424c7;
   --interactive-normal: #ecdfd2;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: rgba(255, 255, 255, 0.062);
   --modal-background: #efdcbc;
   --nav-item-color: #828282;

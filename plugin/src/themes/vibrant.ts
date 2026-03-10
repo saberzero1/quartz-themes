@@ -20,12 +20,17 @@ export const theme: ThemeData = {
   --checkbox-marker-color: #222222;
   --code-normal: #FFFFFF;
   --color-icon: #FFFFFF;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --file-header-background: #222222;
   --file-header-background-focused: #222222;
   --flair-color: #FFFFFF;
   --graph-text: #FFFFFF;
+  --gray: var(--text-normal);
   --gray-color: #585858;
   --icon-color-focused: #FFFFFF;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: #333333;
   --metadata-input-text-color: #FFFFFF;
   --modal-background: #222222;

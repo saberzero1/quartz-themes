@@ -108,6 +108,8 @@ export const theme: ThemeData = {
   --color-yellow-hover: #EFDC9E;
   --color-yellow-hover-rgb: 239, 220, 158;
   --color-yellow-rgb: 216, 192, 128;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color-hover: rgb(92, 138, 122);
   --embed-border-start: 2px solid rgb(92, 138, 122);
   --file-header-background: #2B2F3A;
@@ -121,6 +123,7 @@ export const theme: ThemeData = {
   --graph-node-tag: #5E9A84;
   --graph-node-unresolved: #6B7280;
   --graph-text: #E5E7EB;
+  --gray: var(--text-muted);
   --h1-blue: #DCE5EE;
   --h1-color: #D3E8E7;
   --h1-cyan: #D9ECEC;
@@ -182,6 +185,7 @@ export const theme: ThemeData = {
   --h6-red: #693C3C;
   --h6-yellow: #66572B;
   --heading-formatting: #6B7280;
+  --highlight: var(--background-modifier-active-hover);
   --icon-color: #9CA3AF;
   --icon-color-active: #5E9A84;
   --icon-color-focused: #E5E7EB;
@@ -193,6 +197,8 @@ export const theme: ThemeData = {
   --interactive-accent-hover: rgb(108, 157, 138);
   --interactive-accent-hsl: 160, 20%, 45%;
   --italic-color: #CC946B;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --link-color: #5E9A84;
   --link-color-hover: #8FC9B0;
   --link-external-color: #5E9A84;
@@ -235,6 +241,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #9CA3AF;
   --search-icon-color: #9CA3AF;
   --search-result-background: #2B2F3A;
+  --secondary: var(--text-accent);
   --setting-group-heading-color: #E5E7EB;
   --setting-items-background: #303543;
   --settings-related-modal-width: 80%;
@@ -271,6 +278,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(92, 138, 122, 0.15);
   --tag-color: #5E9A84;
   --tag-color-hover: #5E9A84;
+  --tertiary: var(--text-accent-hover);
   --text-accent: #5E9A84;
   --text-accent-hover: #8FC9B0;
   --text-error: #C06C6C;
@@ -280,6 +288,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(92, 138, 122, 0.33);
   --text-success: #5E9A84;
   --text-warning: #CC946B;
+  --textHighlight: var(--background-modifier-active-hover);
   --titlebar-background: #3A3F4C;
   --titlebar-background-focused: #444B5A;
   --titlebar-text-color: #9CA3AF;

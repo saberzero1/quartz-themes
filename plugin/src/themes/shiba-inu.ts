@@ -63,6 +63,7 @@ export const theme: ThemeData = {
   --blur-background: color-mix(in srgb, rgb(65, 69, 89) 65%, transparent) linear-gradient(rgb(65, 69, 89), color-mix(in srgb, rgb(65, 69, 89) 65%, transparent));
   --blur-depth: 10px;
   --blur-depth-cp: 10px;
+  --bodyFont: var(--font-text);
   --bold-color: rgb(255, 98, 107);
   --callout-blend-mode: none;
   --callout-bug: 255, 98, 107;
@@ -124,6 +125,7 @@ export const theme: ThemeData = {
   --code-string: rgb(56, 198, 141);
   --code-tag: rgb(255, 98, 107);
   --code-value: rgb(196, 167, 231);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(165, 172, 201);
   --collapse-icon-color-collapsed: rgb(235, 188, 186);
   --color-accent: rgb(235, 188, 186);
@@ -170,6 +172,8 @@ export const theme: ThemeData = {
   --color-yellow: rgb(249, 226, 175);
   --color-yellow-rgb: 249, 226, 175;
   --cyan: 137, 199, 223;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(65, 69, 89);
   --divider-color-hover: rgb(235, 188, 186);
   --dropdown-background: rgb(65, 69, 89);
@@ -216,6 +220,7 @@ export const theme: ThemeData = {
   --graph-node-tag: rgb(56, 198, 141);
   --graph-node-unresolved: rgb(165, 172, 201);
   --graph-text: rgb(198, 206, 239);
+  --gray: var(--text-muted);
   --green: 56, 198, 141;
   --h1-color: rgb(255, 98, 107);
   --h1-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -229,7 +234,9 @@ export const theme: ThemeData = {
   --h5-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --h6-color: rgb(128, 216, 220);
   --h6-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(235, 188, 186);
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: none;
   --hr-color: rgb(65, 69, 89);
   --hr-outline-color: rgb(65, 69, 89);
@@ -261,6 +268,8 @@ export const theme: ThemeData = {
   --internal-link-color: rgba(235, 188, 186, 0.9);
   --italic-color: rgb(56, 198, 141);
   --lemon: 246, 193, 119;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --lily: 235, 188, 186;
   --link-color: rgb(235, 188, 186);
   --link-color-hover: rgb(235, 188, 186);
@@ -339,6 +348,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: rgb(148, 155, 183);
   --search-icon-color: rgb(148, 155, 183);
   --search-result-background: rgb(42, 45, 61);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(198, 206, 239);
   --setting-items-background: rgb(38, 42, 58);
   --setting-items-border-color: rgb(65, 69, 89);
@@ -402,6 +412,7 @@ export const theme: ThemeData = {
   --tag-border-color-hover: rgba(235, 188, 186, 0.15);
   --tag-color: rgb(235, 188, 186);
   --tag-color-hover: rgb(235, 188, 186);
+  --tertiary: var(--text-accent-hover);
   --text: 198, 206, 239;
   --text-accent: rgb(235, 188, 186);
   --text-accent-hover: rgb(235, 188, 186);
@@ -417,6 +428,8 @@ export const theme: ThemeData = {
   --text-selection: rgba(147, 183, 245, 0.15);
   --text-success: rgb(56, 198, 141);
   --text-warning: rgb(247, 157, 124);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(38, 42, 58);
   --titlebar-background-focused: rgb(36, 39, 52);
   --titlebar-border-color: rgb(65, 69, 89);
@@ -1512,6 +1525,7 @@ body sup {
   --blur-background: color-mix(in srgb, rgb(252, 252, 252) 65%, transparent) linear-gradient(rgb(252, 252, 252), color-mix(in srgb, rgb(252, 252, 252) 65%, transparent));
   --blur-depth: 10px;
   --blur-depth-cp: 10px;
+  --bodyFont: var(--font-text);
   --bold-color: rgb(240, 68, 114);
   --callout-blend-mode: none;
   --callout-bug: 240, 68, 114;
@@ -1573,6 +1587,7 @@ body sup {
   --code-string: rgb(64, 155, 40);
   --code-tag: rgb(240, 68, 114);
   --code-value: rgb(176, 110, 201);
+  --codeFont: var(--font-monospace);
   --collapse-icon-color: rgb(108, 111, 133);
   --collapse-icon-color-collapsed: rgb(222, 149, 132);
   --color-accent: rgb(222, 149, 132);
@@ -1619,6 +1634,8 @@ body sup {
   --color-yellow: rgb(228, 147, 32);
   --color-yellow-rgb: 228, 147, 32;
   --cyan: 37, 189, 209;
+  --dark: var(--text-normal);
+  --darkgray: var(--text-normal);
   --divider-color: rgb(188, 192, 204);
   --divider-color-hover: rgb(222, 149, 132);
   --dropdown-background: rgb(221, 225, 238);
@@ -1665,6 +1682,7 @@ body sup {
   --graph-node-tag: rgb(64, 155, 40);
   --graph-node-unresolved: rgb(108, 111, 133);
   --graph-text: rgb(76, 79, 105);
+  --gray: var(--text-muted);
   --green: 64, 155, 40;
   --h1-color: rgb(240, 68, 114);
   --h1-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1678,7 +1696,9 @@ body sup {
   --h5-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --h6-color: rgb(58, 161, 182);
   --h6-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --headerFont: var(--font-text);
   --heading-formatting: rgb(222, 149, 132);
+  --highlight: var(--text-highlight-bg);
   --highlight-mix-blend-mode: none;
   --hr-color: rgb(188, 192, 204);
   --hr-outline-color: rgb(188, 192, 204);
@@ -1710,6 +1730,8 @@ body sup {
   --internal-link-color: rgba(222, 149, 132, 0.9);
   --italic-color: rgb(64, 155, 40);
   --lemon: 195, 173, 87;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --lily: 222, 149, 132;
   --link-color: rgb(222, 149, 132);
   --link-color-hover: rgb(222, 149, 132);
@@ -1786,6 +1808,7 @@ body sup {
   --search-clear-button-color: rgb(76, 79, 105);
   --search-icon-color: rgb(76, 79, 105);
   --search-result-background: rgb(252, 252, 252);
+  --secondary: var(--text-accent);
   --setting-group-heading-color: rgb(76, 79, 105);
   --setting-items-background: rgb(243, 236, 243);
   --setting-items-border-color: rgb(188, 192, 204);
@@ -1849,6 +1872,7 @@ body sup {
   --tag-border-color-hover: rgba(222, 149, 132, 0.15);
   --tag-color: rgb(222, 149, 132);
   --tag-color-hover: rgb(222, 149, 132);
+  --tertiary: var(--text-accent-hover);
   --text: 76, 79, 105;
   --text-accent: rgb(222, 149, 132);
   --text-accent-hover: rgb(222, 149, 132);
@@ -1864,6 +1888,8 @@ body sup {
   --text-selection: rgba(71, 143, 238, 0.15);
   --text-success: rgb(64, 155, 40);
   --text-warning: rgb(249, 102, 50);
+  --textHighlight: var(--text-highlight-bg);
+  --titleFont: var(--font-text);
   --titlebar-background: rgb(243, 236, 243);
   --titlebar-background-focused: rgb(254, 241, 241);
   --titlebar-border-color: rgb(188, 192, 204);

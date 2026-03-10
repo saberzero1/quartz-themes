@@ -35,6 +35,8 @@ export const theme: ThemeData = {
   --footnote-divider-color: #191926;
   --hr-color: #191926;
   --interactive-normal: #191926;
+  --light: var(--background-primary);
+  --lightgray: var(--background-secondary);
   --menu-background: transparent;
   --metadata-border-color: #191926;
   --metadata-divider-color: #191926;
