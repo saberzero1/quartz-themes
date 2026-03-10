@@ -1,4 +1,8 @@
 export { QuartzTheme } from "./transformer";
+export { QuartzTheme as QuartzThemes } from "./transformer";
+export { QuartzTheme as quartzThemes } from "./transformer";
+export { QuartzTheme as transformer } from "./transformer";
+export { QuartzTheme as default } from "./transformer";
 
 export type {
   ThemeOptions,
@@ -17,7 +21,6 @@ export {
   registerTheme,
 } from "./registry";
 
-// Re-export Quartz types for consumer convenience
 export type {
   QuartzTransformerPlugin,
   StaticResources,
