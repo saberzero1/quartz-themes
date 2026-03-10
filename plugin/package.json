@@ -37,6 +37,7 @@
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
+    "prebuild": "node scripts/generate.js",
     "build": "tsup",
     "prepare": "npm run build",
     "dev": "tsup --watch",
