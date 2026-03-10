@@ -262,9 +262,13 @@ function normalizeVariations(variations) {
 
 function normalizeFonts(fonts) {
   if (Array.isArray(fonts))
-    return fonts.filter((value) => typeof value === "string");
+    return fonts
+      .filter((value) => typeof value === "string")
+      .map((value) => value.replaceAll('"??", ', ""));
   if (fonts && typeof fonts === "object") {
-    return Object.values(fonts).filter((value) => typeof value === "string");
+    return Object.values(fonts)
+      .filter((value) => typeof value === "string")
+      .map((value) => value.replaceAll('"??", ', ""));
   }
   return [];
 }
