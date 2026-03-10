@@ -2,9 +2,11 @@
   "name": "quartz-themes",
   "version": "1.0.0",
   "description": "Quartz-compatible Obsidian themes",
-  "main": "main.js",
+  "main": "plugin/dist/index.js",
+  "types": "plugin/dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "build": "npm --prefix ./plugin install && npm --prefix ./plugin run build",
     "web:build": "just build",
     "web:run": "just extract",
     "web:compile": "just compile",
@@ -37,6 +39,47 @@
     "url": "https://github.com/saberzero1/quartz-themes/issues"
   },
   "homepage": "https://github.com/saberzero1/quartz-themes#readme",
+  "exports": {
+    ".": {
+      "types": "./plugin/dist/index.d.ts",
+      "import": "./plugin/dist/index.js"
+    },
+    "./types": {
+      "types": "./plugin/dist/types.d.ts",
+      "import": "./plugin/dist/types.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "quartz": {
+    "name": "quartz-themes",
+    "displayName": "Quartz Themes",
+    "category": "transformer",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 10,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "theme": "tokyo-night",
+      "mode": "both"
+    },
+    "optionSchema": {
+      "theme": {
+        "type": "string"
+      },
+      "mode": {
+        "type": "enum",
+        "values": [
+          "dark",
+          "light",
+          "both"
+        ]
+      },
+      "variation": {
+        "type": "string"
+      }
+    }
+  },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@wdio/cli": "^9.18.4",
