@@ -224,13 +224,6 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(17, 17, 17);
-}`,
     tables: `html[saved-theme="dark"] body td {
   border-bottom-color: rgb(138, 92, 245);
   border-left-color: rgb(138, 92, 245);

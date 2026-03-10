@@ -978,13 +978,6 @@ body.theme-light {
   --he-text-on-accent-inactive: #393636 !important;
   --fg: #025d4e !important;
   --font: "Taroca" !important;
-  --h1-border-color: #002a17 !important;
-  --h2-border-color: #4e1b0e !important;
-  --h3-border-color: #025d4e !important;
-  --h4-border-color: #000000 !important;
-  --h5-border-color: #e58000 !important;
-  --h6-border-color: #393636 !important;
-  --h1-background: transparent !important;
   --tab-background: #e2ded8 !important;
   --r-heading-color: #002a17 !important;
   --r-heading-font: "Taroca" !important;
@@ -1088,6 +1081,8 @@ body.theme-light {
   --graph-lines: #e0dacb !important;
   --graph-node-hover-fill: #000000 !important;
   --graph-node-hover-outline: #e5ebee !important;
+  --h1-background: transparent !important;
+  --h1-border-color: #002a17 !important;
   --h1-border-left-color: black !important;
   --h1-border-line-color: black !important;
   --h1-border-line-height: 1.5px !important;
@@ -1098,6 +1093,7 @@ body.theme-light {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
+  --h2-border-color: #4e1b0e !important;
   --h2-border-left-color: black !important;
   --h2-border-line-color: black !important;
   --h2-border-line-height: 1.5px !important;
@@ -1108,6 +1104,7 @@ body.theme-light {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
+  --h3-border-color: #025d4e !important;
   --h3-border-left-color: black !important;
   --h3-border-line-color: black !important;
   --h3-border-line-height: 2px !important;
@@ -1118,6 +1115,7 @@ body.theme-light {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
+  --h4-border-color: #000000 !important;
   --h4-border-left-color: black !important;
   --h4-border-line-color: black !important;
   --h4-border-line-height: 0 !important;
@@ -1128,6 +1126,7 @@ body.theme-light {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
+  --h5-border-color: #e58000 !important;
   --h5-border-left-color: black !important;
   --h5-border-line-color: black !important;
   --h5-border-line-height: 0 !important;
@@ -1138,6 +1137,7 @@ body.theme-light {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
+  --h6-border-color: #393636 !important;
   --h6-border-left-color: black !important;
   --h6-border-line-color: black !important;
   --h6-border-line-height: 0 !important;
@@ -2361,13 +2361,6 @@ body.theme-dark {
   --he-text-on-accent-inactive: #bccad8 !important;
   --fg: #cfd7dd !important;
   --font: "Taroca" !important;
-  --h1-border-color: #2f8b62 !important;
-  --h2-border-color: #2f4f87 !important;
-  --h3-border-color: #a22b30 !important;
-  --h4-border-color: #d0765b !important;
-  --h5-border-color: #694b3c !important;
-  --h6-border-color: #2e333d !important;
-  --h1-background: transparent !important;
   --tab-background: #0b0f13 !important;
   --r-heading-color: #2f8b62 !important;
   --r-heading-font: "Taroca" !important;
@@ -2471,6 +2464,8 @@ body.theme-dark {
   --graph-lines: #253f32 !important;
   --graph-node-hover-fill: #d0765b !important;
   --graph-node-hover-outline: #e5ebee !important;
+  --h1-background: transparent !important;
+  --h1-border-color: #2f8b62 !important;
   --h1-border-left-color: #253f32 !important;
   --h1-border-line-color: #253f32 !important;
   --h1-border-line-height: 1.5px !important;
@@ -2481,6 +2476,7 @@ body.theme-dark {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
+  --h2-border-color: #2f4f87 !important;
   --h2-border-left-color: #253f32 !important;
   --h2-border-line-color: #253f32 !important;
   --h2-border-line-height: 1.5px !important;
@@ -2491,6 +2487,7 @@ body.theme-dark {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
+  --h3-border-color: #a22b30 !important;
   --h3-border-left-color: #253f32 !important;
   --h3-border-line-color: #253f32 !important;
   --h3-border-line-height: 2px !important;
@@ -2501,6 +2498,7 @@ body.theme-dark {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
+  --h4-border-color: #d0765b !important;
   --h4-border-left-color: #253f32 !important;
   --h4-border-line-color: #253f32 !important;
   --h4-border-line-height: 0 !important;
@@ -2511,6 +2509,7 @@ body.theme-dark {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
+  --h5-border-color: #694b3c !important;
   --h5-border-left-color: #253f32 !important;
   --h5-border-line-color: #253f32 !important;
   --h5-border-line-height: 0 !important;
@@ -2521,6 +2520,7 @@ body.theme-dark {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
+  --h6-border-color: #2e333d !important;
   --h6-border-left-color: #253f32 !important;
   --h6-border-line-color: #253f32 !important;
   --h6-border-line-height: 0 !important;
@@ -2897,7 +2897,6 @@ body .markdown-rendered a.external-link:hover {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
 }
 body .markdown-rendered a.internal-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
   text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4555,7 +4554,6 @@ body .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body .view-content {
-  background-color: light-dark(rgb(236, 233, 228), rgb(26, 30, 36));
   border-color: light-dark(rgb(57, 54, 54), rgb(188, 202, 216));
   border-width: 0px;
   border-top-left-radius: 0px;

@@ -98,13 +98,6 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(21, 20, 27);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(21, 20, 27);
-}
-
-html body ul.overflow {
-  background-color: rgb(21, 20, 27);
-}`,
     tables: `html body td {
   border-bottom-color: rgb(97, 255, 202);
   border-left-color: rgb(97, 255, 202);

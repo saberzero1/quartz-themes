@@ -60,13 +60,6 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(0, 0, 0);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(0, 0, 0);
-}
-
-html body ul.overflow {
-  background-color: rgb(0, 0, 0);
-}`,
     search: `html body .search > .search-container > .search-space {
   background-color: rgb(0, 0, 0);
 }

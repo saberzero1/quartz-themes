@@ -443,7 +443,6 @@ html[saved-theme="dark"] body ol > li {
 }
 
 html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(26, 26, 26);
   border-bottom-color: rgb(179, 179, 179);
   border-left-color: rgb(179, 179, 179);
   border-right-color: rgb(179, 179, 179);
@@ -455,7 +454,6 @@ html[saved-theme="dark"] body ul > li {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(26, 26, 26);
   border-bottom-color: rgb(179, 179, 179);
   border-left-color: rgb(179, 179, 179);
   border-right-color: rgb(179, 179, 179);

@@ -110,13 +110,6 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
 html body a.internal.broken {
   font-family: "??", Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(0, 0, 0);
-}
-
-html body ul.overflow {
-  background-color: rgb(0, 0, 0);
-}`,
     blockquotes: `html body blockquote {
   font-family: "??", Georgia, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,

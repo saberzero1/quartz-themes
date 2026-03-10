@@ -192,13 +192,6 @@ html body .page article p > strong, html strong {
 html body .text-highlight {
   background-color: rgba(158, 206, 106, 0.4);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(26, 27, 38);
-}
-
-html body ul.overflow {
-  background-color: rgb(26, 27, 38);
-}`,
     blockquotes: `html body .data-footnote-backref {
   color: rgba(86, 95, 137, 0.533);
   text-decoration: rgba(86, 95, 137, 0.533);

@@ -135,16 +135,8 @@ html body ol > li {
   color: rgb(218, 231, 246);
 }
 
-html body ol.overflow {
-  background-color: rgb(17, 17, 19);
-}
-
 html body ul > li {
   color: rgb(218, 231, 246);
-}
-
-html body ul.overflow {
-  background-color: rgb(17, 17, 19);
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(218, 231, 246);

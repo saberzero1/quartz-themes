@@ -1047,20 +1047,20 @@ body.theme-dark {
   --bold-color: #d8c080 !important;
   --italic-color: #cc946b !important;
   --color-blue-hover: #89b3e0 !important;
-  --color-cyan-hover: #87d0d0 !important;
-  --color-green-hover: #8fc9b0 !important;
-  --color-orange-hover: #e9b286 !important;
-  --color-pink-hover: #d79dc9 !important;
-  --color-purple-hover: #b094e3 !important;
-  --color-red-hover: #e08b8b !important;
-  --color-yellow-hover: #efdc9e !important;
   --color-blue-hover-rgb: 137, 179, 224 !important;
+  --color-cyan-hover: #87d0d0 !important;
   --color-cyan-hover-rgb: 135, 208, 208 !important;
+  --color-green-hover: #8fc9b0 !important;
   --color-green-hover-rgb: 143, 201, 176 !important;
+  --color-orange-hover: #e9b286 !important;
   --color-orange-hover-rgb: 233, 178, 134 !important;
+  --color-pink-hover: #d79dc9 !important;
   --color-pink-hover-rgb: 215, 157, 201 !important;
+  --color-purple-hover: #b094e3 !important;
   --color-purple-hover-rgb: 176, 148, 227 !important;
+  --color-red-hover: #e08b8b !important;
   --color-red-hover-rgb: 224, 139, 139 !important;
+  --color-yellow-hover: #efdc9e !important;
   --color-yellow-hover-rgb: 239, 220, 158 !important;
   --h1-blue: #dce5ee !important;
   --h1-cyan: #d9ecec !important;
@@ -1233,7 +1233,6 @@ body .markdown-rendered a.external-link:hover {
   color: rgb(166, 138, 249);
 }
 body .markdown-rendered a.internal-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
   text-decoration-color: rgb(166, 138, 249);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2964,7 +2963,6 @@ body .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body .view-content {
-  background-color: rgb(43, 47, 58);
   border-color: rgb(229, 231, 235);
   border-width: 0px;
   border-top-left-radius: 0px;

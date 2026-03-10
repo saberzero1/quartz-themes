@@ -583,13 +583,6 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration: underline rgba(139, 108, 239, 0.3);
   text-decoration-color: rgba(139, 108, 239, 0.3);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(0, 34, 72);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: rgba(207, 207, 207, 0.125);
 }`,
@@ -1697,7 +1690,6 @@ html[saved-theme="light"] body ol > li {
 }
 
 html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(232, 239, 255);
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
@@ -1709,7 +1701,6 @@ html[saved-theme="light"] body ul > li {
 }
 
 html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(232, 239, 255);
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);

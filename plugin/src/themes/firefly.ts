@@ -153,16 +153,8 @@ html body a.internal.broken {
   color: rgb(192, 205, 243);
 }
 
-html body ol.overflow {
-  background-color: rgb(31, 33, 47);
-}
-
 html body ul > li {
   color: rgb(192, 205, 243);
-}
-
-html body ul.overflow {
-  background-color: rgb(31, 33, 47);
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(111, 161, 255);

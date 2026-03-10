@@ -980,13 +980,6 @@ body.theme-light {
   --fg: #912e2e !important;
   --font:
     "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif !important;
-  --h1-border-color: #bb5555 !important;
-  --h2-border-color: #a53f3f !important;
-  --h3-border-color: #862c2c !important;
-  --h4-border-color: #662828 !important;
-  --h5-border-color: #697795 !important;
-  --h6-border-color: #a4aec2 !important;
-  --h1-background: transparent !important;
   --tab-background: #eef3fd !important;
   --r-heading-color: #c14343 !important;
   --r-heading-font:
@@ -1091,6 +1084,8 @@ body.theme-light {
   --graph-lines: #e4e7f8 !important;
   --graph-node-hover-fill: #912e2e !important;
   --graph-node-hover-outline: #e5ebee !important;
+  --h1-background: transparent !important;
+  --h1-border-color: #bb5555 !important;
   --h1-border-left-color: #ccd6eb !important;
   --h1-border-line-color: #ccd6eb !important;
   --h1-border-line-height: 4px !important;
@@ -1101,6 +1096,7 @@ body.theme-light {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
+  --h2-border-color: #a53f3f !important;
   --h2-border-left-color: #ccd6eb !important;
   --h2-border-line-color: #ccd6eb !important;
   --h2-border-line-height: 4px !important;
@@ -1111,6 +1107,7 @@ body.theme-light {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
+  --h3-border-color: #862c2c !important;
   --h3-border-left-color: #ccd6eb !important;
   --h3-border-line-color: #ccd6eb !important;
   --h3-border-line-height: 4px !important;
@@ -1121,6 +1118,7 @@ body.theme-light {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
+  --h4-border-color: #662828 !important;
   --h4-border-left-color: #ccd6eb !important;
   --h4-border-line-color: #ccd6eb !important;
   --h4-border-line-height: 4px !important;
@@ -1131,6 +1129,7 @@ body.theme-light {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
+  --h5-border-color: #697795 !important;
   --h5-border-left-color: #ccd6eb !important;
   --h5-border-line-color: #ccd6eb !important;
   --h5-border-line-height: 4px !important;
@@ -1141,6 +1140,7 @@ body.theme-light {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
+  --h6-border-color: #a4aec2 !important;
   --h6-border-left-color: #ccd6eb !important;
   --h6-border-line-color: #ccd6eb !important;
   --h6-border-line-height: 4px !important;
@@ -2367,13 +2367,6 @@ body.theme-dark {
   --fg: #cfd7dd !important;
   --font:
     "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif !important;
-  --h1-border-color: #7c2929 !important;
-  --h2-border-color: #652121 !important;
-  --h3-border-color: #471d1d !important;
-  --h4-border-color: #381919 !important;
-  --h5-border-color: #424c61 !important;
-  --h6-border-color: #2e333d !important;
-  --h1-background: transparent !important;
   --tab-background: #0b0f13 !important;
   --r-heading-color: #c14343 !important;
   --r-heading-font:
@@ -2479,6 +2472,8 @@ body.theme-dark {
   --graph-lines: #652121 !important;
   --graph-node-hover-fill: #c14343 !important;
   --graph-node-hover-outline: #e5ebee !important;
+  --h1-background: transparent !important;
+  --h1-border-color: #7c2929 !important;
   --h1-border-left-color: #283345 !important;
   --h1-border-line-color: #283345 !important;
   --h1-border-line-height: 4px !important;
@@ -2489,6 +2484,7 @@ body.theme-dark {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
+  --h2-border-color: #652121 !important;
   --h2-border-left-color: #283345 !important;
   --h2-border-line-color: #283345 !important;
   --h2-border-line-height: 4px !important;
@@ -2499,6 +2495,7 @@ body.theme-dark {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
+  --h3-border-color: #471d1d !important;
   --h3-border-left-color: #283345 !important;
   --h3-border-line-color: #283345 !important;
   --h3-border-line-height: 4px !important;
@@ -2509,6 +2506,7 @@ body.theme-dark {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
+  --h4-border-color: #381919 !important;
   --h4-border-left-color: #283345 !important;
   --h4-border-line-color: #283345 !important;
   --h4-border-line-height: 4px !important;
@@ -2519,6 +2517,7 @@ body.theme-dark {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
+  --h5-border-color: #424c61 !important;
   --h5-border-left-color: #283345 !important;
   --h5-border-line-color: #283345 !important;
   --h5-border-line-height: 4px !important;
@@ -2529,6 +2528,7 @@ body.theme-dark {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
+  --h6-border-color: #2e333d !important;
   --h6-border-left-color: #283345 !important;
   --h6-border-line-color: #283345 !important;
   --h6-border-line-height: 4px !important;
@@ -2906,7 +2906,6 @@ body .markdown-rendered a.external-link:hover {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
 }
 body .markdown-rendered a.internal-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
   text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4582,7 +4581,6 @@ body .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body .view-content {
-  background-color: light-dark(rgb(248, 251, 255), rgb(26, 30, 36));
   border-color: light-dark(rgb(48, 53, 58), rgb(188, 202, 216));
   border-width: 0px;
   border-top-left-radius: 0px;

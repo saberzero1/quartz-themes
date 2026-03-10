@@ -211,13 +211,6 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(253, 246, 227);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(253, 246, 227);
-}
-
-html body ul.overflow {
-  background-color: rgb(253, 246, 227);
-}`,
     code: `html body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(253, 246, 227);
 }

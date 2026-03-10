@@ -909,8 +909,6 @@
   --color-gray-rgb: 235, 236, 237 !important;
   --custom-line-height: 1.5em !important;
   --hue: 203 !important;
-  --color-brown: rgb(100, 71, 58) !important;
-  --color-brown-rgb: 233, 229, 227 !important;
   --h1-bg: transparent !important;
   --h2-bg: transparent !important;
   --h3-bg: transparent !important;
@@ -925,6 +923,8 @@
   --sat: 8% !important;
   --text-rgb: 55, 53, 47 !important;
   --banner-size: 220px !important;
+  --color-brown: rgb(100, 71, 58) !important;
+  --color-brown-rgb: 233, 229, 227 !important;
   --h-bg: transparent !important;
   --h-color: rgba(55, 53, 47, 0.9) !important;
   --list-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='8' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='8' y1='18' x2='21' y2='18'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='3.01' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='12' x2='3.01' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='3.01' y2='18'%3E%3C/line%3E%3C/svg%3E") !important;
@@ -1828,8 +1828,6 @@
   --color-gray-rgb: 69, 75, 78 !important;
   --custom-line-height: 1.5em !important;
   --hue: 203 !important;
-  --color-brown: rgb(147, 114, 100) !important;
-  --color-brown-rgb: 67, 64, 64 !important;
   --h1-bg: transparent !important;
   --h2-bg: transparent !important;
   --h3-bg: transparent !important;
@@ -1844,6 +1842,8 @@
   --sat: 8% !important;
   --text-rgb: 255, 255, 255 !important;
   --banner-size: 220px !important;
+  --color-brown: rgb(147, 114, 100) !important;
+  --color-brown-rgb: 67, 64, 64 !important;
   --h-bg: transparent !important;
   --h-color: rgba(255, 255, 255, 0.9) !important;
   --list-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='8' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='8' y1='18' x2='21' y2='18'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='3.01' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='12' x2='3.01' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='3.01' y2='18'%3E%3C/line%3E%3C/svg%3E") !important;
@@ -2069,7 +2069,6 @@ body {
 
   a.internal:hover,
   .breadcrumb-container .breadcrumb-element > a:hover {
-    text-decoration: underline rgb(166, 138, 249);
     text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -3934,7 +3933,6 @@ body {
   }
 
   ul.overflow {
-    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
     border-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -3944,7 +3942,6 @@ body {
   }
 
   ol.overflow {
-    background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
     border-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
     border-width: 0px;
     border-top-left-radius: 0px;

@@ -103,13 +103,6 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgba(0, 0, 0, 0);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html body ul.overflow {
-  background-color: rgba(0, 0, 0, 0);
-}`,
     tables: `html body td {
   border-bottom-color: rgb(25, 25, 38);
   border-left-color: rgb(25, 25, 38);

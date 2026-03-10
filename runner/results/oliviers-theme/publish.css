@@ -2293,7 +2293,6 @@ body .markdown-rendered a.external-link:hover {
   color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
 }
 body .markdown-rendered a.internal-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
   text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4037,7 +4036,6 @@ body .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body .view-content {
-  background-color: light-dark(rgb(245, 239, 234), rgb(32, 28, 19));
   border-color: light-dark(rgb(110, 79, 53), rgb(250, 219, 158));
   border-width: 0px;
   border-top-left-radius: 0px;

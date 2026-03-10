@@ -217,13 +217,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
 html[saved-theme="dark"] body .text-highlight {
   background-color: rgba(158, 206, 106, 0.4);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(17, 17, 17);
-}`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgba(86, 95, 137, 0.533);
   text-decoration: rgba(86, 95, 137, 0.533);
@@ -803,13 +796,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
 
 html[saved-theme="light"] body .text-highlight {
   background-color: rgba(72, 94, 48, 0.4);
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(213, 213, 213);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(213, 213, 213);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgba(150, 153, 163, 0.533);

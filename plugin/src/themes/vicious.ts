@@ -591,7 +591,6 @@ html[saved-theme="dark"] body ol > li {
 }
 
 html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(8, 9, 14);
   border-bottom-color: rgb(251, 252, 252);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -607,7 +606,6 @@ html[saved-theme="dark"] body ul > li {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(8, 9, 14);
   border-bottom-color: rgb(251, 252, 252);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2119,7 +2117,6 @@ html[saved-theme="light"] body ol > li {
 }
 
 html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(251, 252, 252);
   border-bottom-color: rgb(8, 9, 14);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2135,7 +2132,6 @@ html[saved-theme="light"] body ul > li {
 }
 
 html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(251, 252, 252);
   border-bottom-color: rgb(8, 9, 14);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;

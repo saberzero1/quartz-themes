@@ -235,7 +235,6 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration-color: rgba(3, 30, 94, 0.3);
 }`,
     lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(0, 0, 0);
   border-left-color: rgb(64, 64, 64);
   border-left-style: solid;
   border-left-width: 5px;
@@ -245,7 +244,6 @@ html[saved-theme="dark"] body a.internal.broken {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(0, 0, 0);
   border-left-color: rgb(64, 64, 64);
   border-left-style: solid;
   border-left-width: 5px;

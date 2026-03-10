@@ -174,13 +174,6 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(0, 0, 0);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(0, 0, 0);
-}
-
-html body ul.overflow {
-  background-color: rgb(0, 0, 0);
-}`,
     tables: `html body td {
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);

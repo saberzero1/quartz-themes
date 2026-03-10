@@ -297,13 +297,6 @@ html[saved-theme="dark"] body a.internal.broken {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(54, 57, 63);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: rgb(63, 67, 74);
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1005,13 +998,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
 html[saved-theme="light"] body a.internal.broken {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgba(138, 92, 245, 0.3);
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(231, 234, 238);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(128, 128, 128);
