@@ -2267,7 +2267,6 @@ html[saved-theme="light"] body ol > li {
 }
 
 html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(248, 248, 248);
   border-bottom-color: rgb(72, 72, 72);
   border-left-color: rgb(72, 72, 72);
   border-right-color: rgb(72, 72, 72);
@@ -2279,7 +2278,6 @@ html[saved-theme="light"] body ul > li {
 }
 
 html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(248, 248, 248);
   border-bottom-color: rgb(72, 72, 72);
   border-left-color: rgb(72, 72, 72);
   border-right-color: rgb(72, 72, 72);

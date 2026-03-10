@@ -167,7 +167,6 @@ html body a.internal.broken {
   font-family: "??", Finlandica, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     lists: `html body ol.overflow {
-  background-color: rgb(223, 237, 247);
   border-bottom-color: rgb(6, 18, 24);
   border-left-color: rgb(6, 18, 24);
   border-right-color: rgb(6, 18, 24);
@@ -175,7 +174,6 @@ html body a.internal.broken {
 }
 
 html body ul.overflow {
-  background-color: rgb(223, 237, 247);
   border-bottom-color: rgb(6, 18, 24);
   border-left-color: rgb(6, 18, 24);
   border-right-color: rgb(6, 18, 24);

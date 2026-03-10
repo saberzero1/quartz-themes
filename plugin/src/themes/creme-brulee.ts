@@ -478,7 +478,6 @@ html[saved-theme="dark"] body ol > li {
 }
 
 html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(31, 26, 20);
   border-bottom-color: rgb(217, 184, 140);
   border-left-color: rgb(217, 184, 140);
   border-right-color: rgb(217, 184, 140);
@@ -490,7 +489,6 @@ html[saved-theme="dark"] body ul > li {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(31, 26, 20);
   border-bottom-color: rgb(217, 184, 140);
   border-left-color: rgb(217, 184, 140);
   border-right-color: rgb(217, 184, 140);
@@ -1778,7 +1776,6 @@ html[saved-theme="light"] body ol > li {
 }
 
 html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(252, 250, 248);
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);
@@ -1790,7 +1787,6 @@ html[saved-theme="light"] body ul > li {
 }
 
 html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(252, 250, 248);
   border-bottom-color: rgb(74, 52, 28);
   border-left-color: rgb(74, 52, 28);
   border-right-color: rgb(74, 52, 28);

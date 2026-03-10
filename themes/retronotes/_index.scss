@@ -2079,7 +2079,6 @@ body {
 
   a.internal:hover,
   .breadcrumb-container .breadcrumb-element > a:hover {
-    text-decoration: underline rgb(166, 138, 249);
     text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -4343,7 +4342,6 @@ body {
   }
 
   ul.overflow {
-    background-color: light-dark(rgb(249, 246, 238), rgb(12, 12, 12));
     border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -4353,7 +4351,6 @@ body {
   }
 
   ol.overflow {
-    background-color: light-dark(rgb(249, 246, 238), rgb(12, 12, 12));
     border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
     border-width: 0px;
     border-top-left-radius: 0px;

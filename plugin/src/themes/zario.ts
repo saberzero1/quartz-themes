@@ -388,13 +388,6 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration-color: rgba(77, 140, 230, 0.3);
   text-decoration-thickness: 1px;
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(18, 22, 28);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(18, 22, 28);
-}`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(93, 109, 126);
   text-decoration: rgb(93, 109, 126);

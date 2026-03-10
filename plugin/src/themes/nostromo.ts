@@ -383,7 +383,6 @@ html body a.internal.broken {
 }
 
 html body ol.overflow {
-  background-color: rgb(29, 32, 33);
   border-bottom-color: rgb(235, 219, 178);
   border-left-color: rgb(235, 219, 178);
   border-right-color: rgb(235, 219, 178);
@@ -395,7 +394,6 @@ html body ul > li {
 }
 
 html body ul.overflow {
-  background-color: rgb(29, 32, 33);
   border-bottom-color: rgb(235, 219, 178);
   border-left-color: rgb(235, 219, 178);
   border-right-color: rgb(235, 219, 178);

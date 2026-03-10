@@ -110,13 +110,6 @@ html body a.internal.broken {
   text-decoration: underline rgb(129, 76, 255);
   text-decoration-color: rgb(129, 76, 255);
 }`,
-    lists: `html body ol.overflow {
-  background-color: rgb(38, 38, 38);
-}
-
-html body ul.overflow {
-  background-color: rgb(38, 38, 38);
-}`,
     tables: `html body .spacer {
   background-color: rgb(22, 22, 22);
 }`,

@@ -1933,7 +1933,6 @@ html[saved-theme="dark"] body ol > li {
 }
 
 html[saved-theme="dark"] body ol.overflow {
-  background-color: color(srgb 0.007425 0.0199875 0.037575);
   border-bottom-color: color(srgb 0.6594 0.7599 0.9006);
   border-left-color: color(srgb 0.6594 0.7599 0.9006);
   border-right-color: color(srgb 0.6594 0.7599 0.9006);
@@ -1945,7 +1944,6 @@ html[saved-theme="dark"] body ul > li {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: color(srgb 0.007425 0.0199875 0.037575);
   border-bottom-color: color(srgb 0.6594 0.7599 0.9006);
   border-left-color: color(srgb 0.6594 0.7599 0.9006);
   border-right-color: color(srgb 0.6594 0.7599 0.9006);

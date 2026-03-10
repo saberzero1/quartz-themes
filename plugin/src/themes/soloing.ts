@@ -196,13 +196,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   text-decoration: underline rgb(19, 196, 163);
   text-decoration-color: rgb(19, 196, 163);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(26, 28, 37);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(26, 28, 37);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   padding-bottom: 5.76px;
   padding-top: 4.32px;
@@ -544,13 +537,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
 html[saved-theme="light"] body a.internal.broken {
   color: rgb(63, 197, 112);
   outline: rgb(63, 197, 112) none 0px;
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(246, 246, 252);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(246, 246, 252);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   padding-bottom: 5.76px;

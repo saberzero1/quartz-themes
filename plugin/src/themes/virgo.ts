@@ -113,13 +113,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
 html[saved-theme="dark"] body a.internal.broken {
   font-family: "??", "LXGW WenKai GB Screen R", jinkaiFont, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(38, 38, 38);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(38, 38, 38);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   font-family: "??", "LXGW WenKai GB Screen R", jinkaiFont, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
@@ -440,13 +433,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
 
 html[saved-theme="light"] body a.internal.broken {
   font-family: "??", "LXGW WenKai GB Screen R", jinkaiFont, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(244, 247, 251);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(244, 247, 251);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   font-family: "??", "LXGW WenKai GB Screen R", jinkaiFont, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

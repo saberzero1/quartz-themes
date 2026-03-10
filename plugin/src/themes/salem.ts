@@ -245,13 +245,6 @@ html[saved-theme="dark"] body a.internal.broken {
   text-decoration: rgba(195, 174, 111, 0.3);
   text-decoration-color: rgba(195, 174, 111, 0.3);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(17, 15, 15);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(17, 15, 15);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: rgba(29, 29, 29, 0.643);
   padding-bottom: 10px;
@@ -842,13 +835,6 @@ html[saved-theme="light"] body a.internal.broken {
   outline: rgb(195, 174, 111) none 0px;
   text-decoration: rgba(195, 174, 111, 0.3);
   text-decoration-color: rgba(195, 174, 111, 0.3);
-}`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(254, 255, 246);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(254, 255, 246);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   background-color: rgba(218, 230, 197, 0.643);

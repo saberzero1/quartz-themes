@@ -367,7 +367,6 @@ html[saved-theme="dark"] body ol > li {
 }
 
 html[saved-theme="dark"] body ol.overflow {
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 244, 237);
   border-left-color: rgb(250, 244, 237);
   border-right-color: rgb(250, 244, 237);
@@ -379,7 +378,6 @@ html[saved-theme="dark"] body ul > li {
 }
 
 html[saved-theme="dark"] body ul.overflow {
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(250, 244, 237);
   border-left-color: rgb(250, 244, 237);
   border-right-color: rgb(250, 244, 237);
@@ -1336,14 +1334,6 @@ html[saved-theme="light"] body a.internal.broken {
     lists: `html[saved-theme="light"] body dl {
   margin-bottom: 18px;
   margin-top: 10px;
-}
-
-html[saved-theme="light"] body ol.overflow {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgba(0, 0, 0, 0);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   font-family: "Computer Modern", Inter, sans-serif;

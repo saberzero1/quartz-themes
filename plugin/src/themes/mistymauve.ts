@@ -620,13 +620,6 @@ html[saved-theme="light"] body a.internal.broken {
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(34, 34, 34);
 }`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  background-color: rgb(216, 217, 207);
-}
-
-html[saved-theme="light"] body ul.overflow {
-  background-color: rgb(216, 217, 207);
-}`,
     tables: `html[saved-theme="light"] body td {
   border-bottom-color: rgb(0, 0, 0);
   border-left-color: rgb(0, 0, 0);

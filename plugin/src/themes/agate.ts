@@ -5,9 +5,10 @@ export const theme: ThemeData = {
     name: "agate",
     modes: ["light"],
     variations: [],
-    fonts: ["noto-serif", "pretendard", "noto-sans-kr", "itc-slimbach"],
+    fonts: ["noto-serif","pretendard","noto-sans-kr","itc-slimbach"],
   },
-  dark: {},
+  dark: {
+  },
   light: {
     base: `:root:root {
   --accent-color: 55, 0, 255 !important;
@@ -388,7 +389,6 @@ html body ol > li {
 }
 
 html body ol.overflow {
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(20, 20, 20);
   border-left-color: rgb(20, 20, 20);
   border-right-color: rgb(20, 20, 20);
@@ -400,7 +400,6 @@ html body ul > li {
 }
 
 html body ul.overflow {
-  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(20, 20, 20);
   border-left-color: rgb(20, 20, 20);
   border-right-color: rgb(20, 20, 20);

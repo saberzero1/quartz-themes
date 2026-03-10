@@ -302,13 +302,6 @@ html[saved-theme="dark"] body a.internal.broken {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   outline: rgb(67, 42, 157) none 0px;
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(32, 32, 32);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(32, 32, 32);
-}`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   font-family: "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   padding-bottom: 12.8px;

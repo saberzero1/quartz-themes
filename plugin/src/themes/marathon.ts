@@ -201,14 +201,6 @@ html[saved-theme="dark"] body a.internal.broken {
 }`,
     lists: `html[saved-theme="dark"] body dt {
   font-weight: 300;
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  background-color: rgb(46, 46, 46);
-}
-
-html[saved-theme="dark"] body ul.overflow {
-  background-color: rgb(46, 46, 46);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   background-color: rgba(138, 92, 245, 0.05);
