@@ -34,6 +34,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: oklch(42% 0 0) !important;
   --bases-table-cell-background-active: oklch(30% 0 0) !important;
   --bases-table-cell-background-disabled: oklch(27% 0 0) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(45% 0 0) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px oklch(0.7 0.15 70) !important;
   --bases-table-group-background: oklch(27% 0 0) !important;
@@ -43,6 +44,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: oklch(0.7 0.15 262) !important;
   --blockquote-border-thickness: 0.2em !important;
   --blur-background: color-mix(in srgb, oklch(36% 0 0) 65%, transparent) linear-gradient(oklch(36% 0 0), color-mix(in srgb, oklch(36% 0 0) 65%, transparent)) !important;
+  --bold-weight: 600 !important;
   --callout-bug: 244,114,102;
   --callout-default: 141,158,255;
   --callout-error: 244,114,102;
@@ -54,6 +56,7 @@ export const theme: ThemeData = {
   --callout-success: 160,223,139;
   --callout-summary: 132,220,210;
   --callout-tip: 132,220,210;
+  --callout-title-weight: 600;
   --callout-todo: 141,158,255;
   --callout-warning: 247,159,105;
   --canvas-background: oklch(30% 0 0) !important;
@@ -72,22 +75,25 @@ export const theme: ThemeData = {
   --checkbox-color-hover: oklch(0.9 0.15 70) !important;
   --checkbox-marker-color: oklch(30% 0 0) !important;
   --checklist-done-color: oklch(77.5% 0 0) !important;
-  --code-background: oklch(36% 0 0) !important;
+  --code-background: oklch(27% 0 0) !important;
   --code-border-color: oklch(36% 0 0) !important;
-  --code-comment: oklch(58% 0 0) !important;
-  --code-function: #d4e481 !important;
-  --code-important: #f79f69 !important;
-  --code-keyword: #dfaac0 !important;
-  --code-normal: oklch(100% 0 0) !important;
-  --code-operator: #f47266 !important;
-  --code-property: #84dcd2 !important;
-  --code-punctuation: oklch(77.5% 0 0) !important;
+  --code-comment: oklch(70% 0 0) !important;
+  --code-function: oklch(85% 0.2 300) !important;
+  --code-important: oklch(70% 0.2 295) !important;
+  --code-keyword: oklch(90% 0.16 150) !important;
+  --code-normal: oklch(95% 0 0) !important;
+  --code-operator: oklch(95% 0 0) !important;
+  --code-property: oklch(90% 0.16 250) !important;
+  --code-punctuation: oklch(95% 0 0) !important;
   --code-radius: 8px !important;
-  --code-string: #8bdfae !important;
-  --code-tag: #f47266 !important;
+  --code-string: oklch(90% 0.16 90) !important;
+  --code-tag: oklch(75% 0.2 260) !important;
   --code-value: #b89de7 !important;
+  --code-valuse: oklch(90% 0.16 110) !important;
   --collapse-icon-color: oklch(58% 0 0) !important;
   --collapse-icon-color-collapsed: oklch(0.9 0.15 70) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-base-00: oklch(21% 0 0) !important;
   --color-base-05: oklch(24% 0 0) !important;
   --color-base-10: oklch(27% 0 0) !important;
@@ -145,6 +151,7 @@ export const theme: ThemeData = {
   --h5-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --h6-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: oklch(58% 0 0) !important;
+  --heading-spacing: 2.5rem !important;
   --heading-underline-color: oklch(36% 0 0) !important;
   --highlight: oklch(from oklch(0.7 0.15 70) l c h/0.33) !important;
   --hr-color: oklch(42% 0 0) !important;
@@ -168,6 +175,8 @@ export const theme: ThemeData = {
   --link-external-color: oklch(0.9 0.15 70) !important;
   --link-external-color-hover: oklch(1 0.09 70) !important;
   --link-unresolved-color: oklch(0.9 0.15 70) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: oklch(77.5% 0 0) !important;
   --list-marker-color-collapsed: oklch(0.9 0.15 70) !important;
   --list-marker-color-hover: oklch(77.5% 0 0) !important;
@@ -177,6 +186,7 @@ export const theme: ThemeData = {
   --metadata-divider-color: oklch(36% 0 0) !important;
   --metadata-gap: 0 !important;
   --metadata-input-font-size: max(13px,0.9em) !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: oklch(0.9 0.15 70) !important;
   --metadata-label-font-size: max(13px,0.9em) !important;
   --metadata-label-text-color: oklch(0.9 0.15 262) !important;
@@ -192,6 +202,7 @@ export const theme: ThemeData = {
   --nav-heading-color-collapsed: oklch(58% 0 0) !important;
   --nav-heading-color-collapsed-hover: oklch(77.5% 0 0) !important;
   --nav-heading-color-hover: oklch(100% 0 0) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: oklch(77.5% 0 0) !important;
   --nav-item-color-active: oklch(100% 0 0) !important;
   --nav-item-color-highlighted: oklch(0.9 0.15 70) !important;
@@ -234,6 +245,7 @@ export const theme: ThemeData = {
   --setting-group-heading-color: oklch(100% 0 0) !important;
   --setting-items-background: oklch(27% 0 0) !important;
   --setting-items-border-color: oklch(36% 0 0) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: oklch(39% 0 0) !important;
   --slider-track-background: oklch(36% 0 0) !important;
   --status-bar-background: oklch(24% 0 0) !important;
@@ -267,9 +279,12 @@ export const theme: ThemeData = {
   --table-header-border-color: oklch(42% 0 0) !important;
   --table-header-color: oklch(100% 0 0) !important;
   --table-header-weight: 500 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: oklch(0.7 0.15 70) !important;
   --tag-background: color-mix(in oklch,oklch(0.9 0.15 262) 15%,transparent) !important;
   --tag-background-hover: color-mix(in oklch,oklch(0.9 0.15 262) 30%,transparent) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: oklch(0.9 0.15 262) !important;
   --tag-color-hover: oklch(1 0.09 262) !important;
   --tag-padding-x: 0.75em !important;
@@ -309,6 +324,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: oklch(100% 0 0) !important;
   --vault-profile-color: oklch(100% 0 0) !important;
   --vault-profile-color-hover: oklch(100% 0 0) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -475,19 +491,19 @@ html[saved-theme="dark"] body th {
   font-weight: 500;
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: oklch(1 0 0);
+  border-bottom-color: oklch(0.95 0 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-left-color: oklch(1 0 0);
-  border-right-color: oklch(1 0 0);
-  border-top-color: oklch(1 0 0);
+  border-left-color: oklch(0.95 0 0);
+  border-right-color: oklch(0.95 0 0);
+  border-top-color: oklch(0.95 0 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(1 0 0);
+  color: oklch(0.95 0 0);
 }
 
 html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: oklch(0.36 0 0);
+  background-color: oklch(0.27 0 0);
   border-bottom-color: oklch(0.36 0 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -499,7 +515,7 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
 }
 
 html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: oklch(0.36 0 0);
+  background-color: oklch(0.27 0 0);
   border-bottom-color: oklch(0.36 0 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -512,22 +528,22 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-reh
 }
 
 html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(212, 228, 129);
+  border-left-color: oklch(0.85 0.2 300);
 }
 
 html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(212, 228, 129);
+  border-left-color: oklch(0.85 0.2 300);
 }
 
 html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(212, 228, 129);
-  border-left-color: rgb(212, 228, 129);
-  border-right-color: rgb(212, 228, 129);
-  border-top-color: rgb(212, 228, 129);
+  border-bottom-color: oklch(0.85 0.2 300);
+  border-left-color: oklch(0.85 0.2 300);
+  border-right-color: oklch(0.85 0.2 300);
+  border-top-color: oklch(0.85 0.2 300);
 }
 
 html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: oklch(0.36 0 0);
+  background-color: oklch(0.27 0 0);
   border-bottom-color: oklch(0.36 0 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -539,7 +555,7 @@ html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> cod
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: oklch(0.36 0 0);
+  background-color: oklch(0.27 0 0);
   border-bottom-color: oklch(0.36 0 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1107,16 +1123,16 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: oklch(0.58 0 0);
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
-  background-color: oklch(0.36 0 0);
-  border-bottom-color: oklch(1 0 0);
+  background-color: oklch(0.27 0 0);
+  border-bottom-color: oklch(0.95 0 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-left-color: oklch(1 0 0);
-  border-right-color: oklch(1 0 0);
-  border-top-color: oklch(1 0 0);
+  border-left-color: oklch(0.95 0 0);
+  border-right-color: oklch(0.95 0 0);
+  border-top-color: oklch(0.95 0 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: oklch(1 0 0);
+  color: oklch(0.95 0 0);
 }
 
 html[saved-theme="dark"] body .metadata {
@@ -1164,12 +1180,12 @@ html[saved-theme="dark"] body input[type=text] {
 }
 
 html[saved-theme="dark"] body kbd {
-  background-color: oklch(0.36 0 0);
-  border-bottom-color: oklch(1 0 0);
-  border-left-color: oklch(1 0 0);
-  border-right-color: oklch(1 0 0);
-  border-top-color: oklch(1 0 0);
-  color: oklch(1 0 0);
+  background-color: oklch(0.27 0 0);
+  border-bottom-color: oklch(0.95 0 0);
+  border-left-color: oklch(0.95 0 0);
+  border-right-color: oklch(0.95 0 0);
+  border-top-color: oklch(0.95 0 0);
+  color: oklch(0.95 0 0);
 }
 
 html[saved-theme="dark"] body progress {
@@ -1220,6 +1236,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: oklch(82% 0 0) !important;
   --bases-table-cell-background-active: oklch(100% 0 0) !important;
   --bases-table-cell-background-disabled: oklch(97% 0 0) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(78% 0 0) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px oklch(0.5 0.15 70) !important;
   --bases-table-group-background: oklch(97% 0 0) !important;
@@ -1229,6 +1246,7 @@ html[saved-theme="dark"] body sup {
   --blockquote-border-color: oklch(0.5 0.15 262) !important;
   --blockquote-border-thickness: 0.2em !important;
   --blur-background: color-mix(in srgb, oklch(100% 0 0) 65%, transparent) linear-gradient(oklch(100% 0 0), color-mix(in srgb, oklch(100% 0 0) 65%, transparent)) !important;
+  --bold-weight: 600 !important;
   --callout-bug: 244,114,102;
   --callout-default: 141,158,255;
   --callout-error: 244,114,102;
@@ -1240,6 +1258,7 @@ html[saved-theme="dark"] body sup {
   --callout-success: 160,223,139;
   --callout-summary: 132,220,210;
   --callout-tip: 132,220,210;
+  --callout-title-weight: 600;
   --callout-todo: 141,158,255;
   --callout-warning: 247,159,105;
   --canvas-background: oklch(100% 0 0) !important;
@@ -1260,20 +1279,23 @@ html[saved-theme="dark"] body sup {
   --checklist-done-color: oklch(27.5% 0 0) !important;
   --code-background: oklch(97% 0 0) !important;
   --code-border-color: oklch(88% 0 0) !important;
-  --code-comment: oklch(45% 0 0) !important;
-  --code-function: #d4e481 !important;
-  --code-important: #f79f69 !important;
-  --code-keyword: #dfaac0 !important;
+  --code-comment: oklch(50% 0 0) !important;
+  --code-function: oklch(40% 0.2 300) !important;
+  --code-important: oklch(30% 0.2 295) !important;
+  --code-keyword: oklch(40% 0.16 150) !important;
   --code-normal: oklch(0% 0 0) !important;
-  --code-operator: #f47266 !important;
-  --code-property: #84dcd2 !important;
-  --code-punctuation: oklch(27.5% 0 0) !important;
+  --code-operator: oklch(0% 0 0) !important;
+  --code-property: oklch(40% 0.16 250) !important;
+  --code-punctuation: oklch(0% 0 0) !important;
   --code-radius: 8px !important;
-  --code-string: #8bdfae !important;
-  --code-tag: #f47266 !important;
+  --code-string: oklch(40% 0.2 90) !important;
+  --code-tag: oklch(40% 0.2 260) !important;
   --code-value: #b89de7 !important;
+  --code-valuse: oklch(40% 0.16 110) !important;
   --collapse-icon-color: oklch(45% 0 0) !important;
   --collapse-icon-color-collapsed: oklch(0.4 0.15 70) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-base-00: oklch(100% 0 0) !important;
   --color-base-05: oklch(97% 0 0) !important;
   --color-base-10: oklch(94% 0 0) !important;
@@ -1331,6 +1353,7 @@ html[saved-theme="dark"] body sup {
   --h5-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --h6-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: oklch(45% 0 0) !important;
+  --heading-spacing: 2.5rem !important;
   --heading-underline-color: oklch(85% 0 0) !important;
   --highlight: oklch(from oklch(0.5 0.15 70) l c h/0.33) !important;
   --hr-color: oklch(82% 0 0) !important;
@@ -1354,6 +1377,8 @@ html[saved-theme="dark"] body sup {
   --link-external-color: oklch(0.4 0.15 70) !important;
   --link-external-color-hover: oklch(0.3 0.15 70) !important;
   --link-unresolved-color: oklch(0.4 0.15 70) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: oklch(27.5% 0 0) !important;
   --list-marker-color-collapsed: oklch(0.4 0.15 70) !important;
   --list-marker-color-hover: oklch(27.5% 0 0) !important;
@@ -1363,6 +1388,7 @@ html[saved-theme="dark"] body sup {
   --metadata-divider-color: oklch(88% 0 0) !important;
   --metadata-gap: 0 !important;
   --metadata-input-font-size: max(13px,0.9em) !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: oklch(0.4 0.15 70) !important;
   --metadata-label-font-size: max(13px,0.9em) !important;
   --metadata-label-text-color: oklch(0.4 0.15 262) !important;
@@ -1378,6 +1404,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-collapsed: oklch(45% 0 0) !important;
   --nav-heading-color-collapsed-hover: oklch(27.5% 0 0) !important;
   --nav-heading-color-hover: oklch(0% 0 0) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: oklch(27.5% 0 0) !important;
   --nav-item-color-active: oklch(0% 0 0) !important;
   --nav-item-color-highlighted: oklch(0.4 0.15 70) !important;
@@ -1418,6 +1445,7 @@ html[saved-theme="dark"] body sup {
   --setting-group-heading-color: oklch(0% 0 0) !important;
   --setting-items-background: oklch(97% 0 0) !important;
   --setting-items-border-color: oklch(88% 0 0) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: oklch(85% 0 0) !important;
   --slider-track-background: oklch(88% 0 0) !important;
   --status-bar-background: oklch(94% 0 0) !important;
@@ -1452,9 +1480,12 @@ html[saved-theme="dark"] body sup {
   --table-header-border-color: oklch(82% 0 0) !important;
   --table-header-color: oklch(0% 0 0) !important;
   --table-header-weight: 500 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: oklch(0.5 0.15 70) !important;
   --tag-background: color-mix(in oklch,oklch(0.4 0.15 262) 15%,transparent) !important;
   --tag-background-hover: color-mix(in oklch,oklch(0.4 0.15 262) 30%,transparent) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: oklch(0.4 0.15 262) !important;
   --tag-color-hover: oklch(0.3 0.15 262) !important;
   --tag-padding-x: 0.75em !important;
@@ -1496,6 +1527,7 @@ html[saved-theme="dark"] body sup {
   --titlebar-text-color-focused: oklch(0% 0 0) !important;
   --vault-profile-color: oklch(0% 0 0) !important;
   --vault-profile-color-hover: oklch(0% 0 0) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1699,18 +1731,18 @@ html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-re
 }
 
 html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(212, 228, 129);
+  border-left-color: oklch(0.4 0.2 300);
 }
 
 html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(212, 228, 129);
+  border-left-color: oklch(0.4 0.2 300);
 }
 
 html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(212, 228, 129);
-  border-left-color: rgb(212, 228, 129);
-  border-right-color: rgb(212, 228, 129);
-  border-top-color: rgb(212, 228, 129);
+  border-bottom-color: oklch(0.4 0.2 300);
+  border-left-color: oklch(0.4 0.2 300);
+  border-right-color: oklch(0.4 0.2 300);
+  border-top-color: oklch(0.4 0.2 300);
 }
 
 html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {

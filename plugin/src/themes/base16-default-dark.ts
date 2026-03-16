@@ -9,7 +9,7 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #383838 !important;
   --background-modifier-box-shadow: none !important;
   --background-modifier-cover: rgba(24, 24, 24, 0.8) !important;
@@ -32,7 +32,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: #383838 !important;
   --bases-table-cell-background-active: #181818 !important;
   --bases-table-cell-background-disabled: #181818 !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #7cafc2 !important;
   --bases-table-group-background: #181818 !important;
   --bases-table-header-background: #181818 !important;
@@ -68,9 +68,9 @@ export const theme: ThemeData = {
   --code-value: #f7ca88 !important;
   --collapse-icon-color: #585858 !important;
   --collapse-icon-color-collapsed: #7cafc2 !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(166, 139, 249) !important;
-  --color-accent-2: rgb(197, 182, 252) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-blue: #7cafc2 !important;
   --color-cyan: #86c1b9 !important;
   --color-green: #a1b56c !important;
@@ -105,7 +105,7 @@ export const theme: ThemeData = {
   --heading-color: #d8d8d8 !important;
   --heading-formatting: #585858 !important;
   --heading-spacing: 2.5rem !important;
-  --highlight: rgba(138, 92, 245, 0.1) !important;
+  --highlight: hsla(258, 88%, 66%, 0.1) !important;
   --hr-color: #383838 !important;
   --icon-color: #b8b8b8 !important;
   --icon-color-active: #7cafc2 !important;
@@ -131,7 +131,7 @@ export const theme: ThemeData = {
   --link-internal-color: #7cafc2 !important;
   --link-internal-hover: #86c1b9 !important;
   --link-unresolved-color: #888888 !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --list-indent: 1.6em !important;
   --list-marker-color: #585858 !important;
   --list-marker-color-collapsed: #7cafc2 !important;
@@ -153,7 +153,7 @@ export const theme: ThemeData = {
   --nav-heading-color-collapsed: #585858 !important;
   --nav-heading-color-collapsed-hover: #b8b8b8 !important;
   --nav-heading-color-hover: #d8d8d8 !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: #b8b8b8 !important;
   --nav-item-color-active: #d8d8d8 !important;
   --nav-item-color-highlighted: #7cafc2 !important;
@@ -207,7 +207,7 @@ export const theme: ThemeData = {
   --tab-outline-color: #383838 !important;
   --tab-switcher-background: #181818 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #181818, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #b8b8b8 !important;
   --tab-text-color-active: #d8d8d8 !important;
   --tab-text-color-focused: #d8d8d8 !important;
@@ -224,12 +224,12 @@ export const theme: ThemeData = {
   --table-header-weight: 600 !important;
   --table-row-even-background: transparent !important;
   --table-row-odd-background: transparent !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: #7cafc2 !important;
   --tag-background: rgba(124, 175, 194, 0.05) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #7cafc2 !important;
   --tag-color-hover: #7cafc2 !important;
   --tertiary: #86c1b9 !important;
@@ -243,7 +243,7 @@ export const theme: ThemeData = {
   --text-selection: rgba(124, 175, 194, 0.3) !important;
   --text-success: #a1b56c !important;
   --text-warning: #dc9656 !important;
-  --textHighlight: rgba(138, 92, 245, 0.1) !important;
+  --textHighlight: hsla(258, 88%, 66%, 0.1) !important;
   --titlebar-background: #181818 !important;
   --titlebar-background-focused: #181818 !important;
   --titlebar-border-color: #383838 !important;
@@ -1198,6 +1198,7 @@ html[saved-theme="dark"] body .metadata {
   border-right-color: rgb(56, 56, 56);
   border-top-color: rgb(56, 56, 56);
   color: rgb(184, 184, 184);
+  margin-bottom: 24px;
   padding-bottom: 0px;
   padding-top: 0px;
 }
@@ -1269,62 +1270,62 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(153, 115, 247) !important;
-  --blockquote-border-color: rgb(153, 115, 247) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(257, 88.88%, 70.95%) !important;
+  --blockquote-border-color: hsl(257, 88.88%, 70.95%) !important;
   --bold-weight: 600 !important;
   --bullet-new-color: rgb(72, 72, 72) !important;
   --callout-title-weight: 600;
-  --checkbox-color: rgb(153, 115, 247) !important;
-  --checkbox-color-hover: rgb(166, 139, 249) !important;
-  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(153, 115, 247) !important;
-  --color-accent-2: rgb(166, 139, 249) !important;
-  --divider-color-hover: rgb(153, 115, 247) !important;
-  --embed-border-start: 2px solid rgb(153, 115, 247) !important;
-  --graph-node-focused: rgb(138, 92, 245) !important;
+  --checkbox-color: hsl(257, 88.88%, 70.95%) !important;
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  --collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
+  --divider-color-hover: hsl(257, 88.88%, 70.95%) !important;
+  --embed-border-start: 2px solid hsl(257, 88.88%, 70.95%) !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
   --heading-spacing: 2.5rem !important;
-  --highlight: rgba(138, 92, 245, 0.1) !important;
-  --icon-color-active: rgb(138, 92, 245) !important;
-  --interactive-accent: rgb(153, 115, 247) !important;
-  --interactive-accent-hover: rgb(166, 139, 249) !important;
-  --link-color: rgb(138, 92, 245) !important;
-  --link-color-hover: rgb(166, 139, 249) !important;
-  --link-external-color: rgb(138, 92, 245) !important;
-  --link-external-color-hover: rgb(166, 139, 249) !important;
-  --link-unresolved-color: rgb(138, 92, 245) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --highlight: hsla(258, 88%, 66%, 0.1) !important;
+  --icon-color-active: hsl(258, 88%, 66%) !important;
+  --interactive-accent: hsl(257, 88.88%, 70.95%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
+  --link-color: hsl(258, 88%, 66%) !important;
+  --link-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  --link-external-color: hsl(258, 88%, 66%) !important;
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  --link-unresolved-color: hsl(258, 88%, 66%) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --list-indent: 2.25em !important;
-  --list-marker-color-collapsed: rgb(138, 92, 245) !important;
+  --list-marker-color-collapsed: hsl(258, 88%, 66%) !important;
   --metadata-gap: 0 !important;
   --metadata-input-height: 28px !important;
   --metadata-label-width: 5em !important;
   --metadata-padding: 0 !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
-  --nav-item-color-highlighted: rgb(138, 92, 245) !important;
-  --pill-color-remove-hover: rgb(138, 92, 245) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
+  --nav-item-color-highlighted: hsl(258, 88%, 66%) !important;
+  --pill-color-remove-hover: hsl(258, 88%, 66%) !important;
   --popover-width: 600px !important;
-  --secondary: rgb(138, 92, 245) !important;
+  --secondary: hsl(258, 88%, 66%) !important;
   --sidebar-markdown-font-size: 14.4px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
-  --table-drag-handle-background-active: rgb(153, 115, 247) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%) !important;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%) !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
-  --table-selection-border-color: rgb(153, 115, 247) !important;
-  --tag-background: rgba(138, 92, 245, 0.1) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
-  --tag-color: rgb(138, 92, 245) !important;
-  --tag-color-hover: rgb(138, 92, 245) !important;
-  --tertiary: rgb(166, 139, 249) !important;
-  --text-accent: rgb(138, 92, 245) !important;
-  --text-accent-hover: rgb(166, 139, 249) !important;
-  --text-selection: rgba(138, 92, 245, 0.2) !important;
-  --textHighlight: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-color: hsl(258, 88%, 66%) !important;
+  --tag-color-hover: hsl(258, 88%, 66%) !important;
+  --tertiary: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent: hsl(258, 88%, 66%) !important;
+  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
+  --text-selection: hsla(258, 88%, 66%, 0.2) !important;
+  --textHighlight: hsla(258, 88%, 66%, 0.1) !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -1381,6 +1382,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
   border-top-right-radius: 0px;
 }`,
     misc: `html[saved-theme="light"] body .metadata {
+  margin-bottom: 24px;
   padding-bottom: 0px;
   padding-top: 0px;
 }
