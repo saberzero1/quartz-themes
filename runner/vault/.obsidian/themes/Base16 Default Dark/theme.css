@@ -328,6 +328,7 @@
 .theme-dark .cm-strong {
   color: var(--bold-color);
   font-weight: 600;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Bold inside callouts - neutral color */
@@ -997,6 +998,44 @@ h6,
   padding: 0px;
 }
 
+/* Vertical left border on headings — document only */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.is-live-preview .HyperMD-header {
+  position: relative;
+  border-left: 3px solid var(--color-red) !important;
+  padding-left: 10px !important;
+}
+
+.markdown-preview-view .inline-title,
+.is-live-preview .inline-title {
+  position: relative;
+  border-left: 3px solid var(--color-red) !important;
+  padding-left: 10px !important;
+  border-radius: 5px;
+}
+
+/* Place collapse indicator to the left of the border */
+.markdown-preview-view
+  :is(h1, h2, h3, h4, h5, h6)
+  > .collapse-indicator.collapse-icon {
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.is-live-preview .HyperMD-header .cm-fold-indicator {
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* fix headings for tasks */
 .callout :is(h1, h2, h3, h4, h5, h6) {
   background-color: var(--background-primary);
@@ -1073,8 +1112,12 @@ body {
   margin-top: 3px;
 }
 
-.markdown-source-view.is-live-preview.show-properties .metadata-container {
+.is-live-preview.show-properties .metadata-container {
   display: none;
+}
+
+.mod-header.mod-ui .metadata-container {
+  margin-bottom: 1.5rem;
 }
 
 /* metadatamenu */
