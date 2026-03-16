@@ -96,7 +96,7 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
       compatibilityString += `<img src="media/${compatibility}.svg" alt="${compatibility.toUpperCase()}"/> `;
     });
     compatibilityTableLines.push(
-      `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName.theme}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName.theme}/syntax) | ${licenseString} |`,
+      `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName.theme}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName.theme}) | ${licenseString} |`,
     );
 
     // Publish README.md for each theme to the publish folder
