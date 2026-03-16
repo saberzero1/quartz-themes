@@ -1,3 +1,111 @@
+/* @settings
+
+name: Neumorphism
+id: neumorphism
+settings:
+  -
+    id: layout
+    title: Layout
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: gap
+    title: Panel gap
+    description: Space between floating panels
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 3
+    step: 0.25
+    format: rem
+  -
+    id: border-radius
+    title: Border radius
+    type: variable-number-slider
+    default: 10
+    min: 0
+    max: 30
+    step: 1
+    format: px
+  -
+    id: header-height
+    title: Header height
+    type: variable-number-slider
+    default: 40
+    min: 28
+    max: 60
+    step: 2
+    format: px
+  -
+    id: appearance
+    title: Appearance
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: show-left-sidebar
+    title: Show left sidebar
+    description: Show the settings gear button in the left sidebar
+    type: class-toggle
+    default: true
+  -
+    id: light-colors
+    title: Light mode colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: light-background
+    title: Background
+    type: variable-color
+    opacity: false
+    format: hex
+    default: '#ffffff'
+  -
+    id: light-shadow-first
+    title: Shadow
+    type: variable-color
+    opacity: false
+    format: hex
+    default: '#949494'
+  -
+    id: light-shadow-second
+    title: Highlight
+    type: variable-color
+    opacity: false
+    format: hex
+    default: '#ffffff'
+  -
+    id: dark-colors
+    title: Dark mode colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: dark-background
+    title: Background
+    type: variable-color
+    opacity: false
+    format: hex
+    default: '#1c1c1c'
+  -
+    id: dark-shadow-first
+    title: Shadow
+    type: variable-color
+    opacity: false
+    format: hex
+    default: '#0a0a0a'
+  -
+    id: dark-shadow-second
+    title: Highlight
+    type: variable-color
+    opacity: false
+    format: hex
+    default: '#111111'
+
+*/
+
 body {
     color-scheme: light dark;
     --header-height: 40px;
@@ -35,9 +143,16 @@ hr:not(.cm-editor hr) {
     border-radius: var(--border-radius) !important;
 }
 
-.workspace-ribbon.mod-left:before,
-.side-dock-settings {
+.workspace-ribbon.mod-left:before {
     display: none !important;
+}
+
+body:not(.show-left-sidebar) .workspace-ribbon.mod-left {
+    width: 0px;
+    padding: 0px;
+    flex: unset;
+    margin: 0px;
+    pointer-events: none;
 }
 
 

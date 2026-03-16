@@ -141,7 +141,7 @@ settings:
         title: "Animate Settings / Modal Opening"
         description: "Smooth scale + fade animation when opening Settings or any modal window."
         type: class-toggle
-        default: true
+        default: false
     -
         id: snippets-section
         title: "🧩 Snippets / Addons"
@@ -595,11 +595,30 @@ input[type="checkbox"]:checked:after {
   background-color: var(--tr);
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   color: var(--kolorboku);
+  animation: tr-notice-in var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+@keyframes tr-notice-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* spojnosc */
+.canvas-control-item:hover {
+  background-color: var(--background-modifier-hover);
+}
+
 
 /* graph view */
 .graph-controls {
-  background-color: var(--tr);
+  background-color: #00000080;
   backdrop-filter:
     /*brightness(var(--brightness))*/
     blur(12px);
@@ -980,6 +999,7 @@ hr {
 /* blur + dimming when sliding sidebars is disabled */
 .workspace-drawer-inner {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  transition: width cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow) !important;
 }
 
 /* when sliding sidebars is enabled - no blur or dimming */
@@ -990,6 +1010,7 @@ hr {
 /* background dimming behind drawer when sliding sidebars is disabled */
 .workspace-drawer-backdrop {
   background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow) !important;
 }
 
 .is-sliding .workspace-drawer-backdrop {
@@ -1029,8 +1050,15 @@ hr {
 }
 
 .canvas-controls {
-  backdrop-filter: blur(var(--set-blur));
-  border-radius: var(--canvas-controls-radius);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  /* fixed because of roznica w mobile and desktop */
+  gap: 4px;
+
+}
+
+.dropdown option {
+  background-color: #00000061;
 }
 
 /* ===================== settings open animation ===================== */
