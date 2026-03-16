@@ -215,7 +215,7 @@ body.theme-light {
   --bases-table-border-color: oklch(82% 0 0) !important;
   --bases-table-cell-background-active: oklch(100% 0 0) !important;
   --bases-table-cell-background-disabled: oklch(97% 0 0) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(78% 0 0) !important;
@@ -321,25 +321,25 @@ body.theme-light {
   --code-border-color: oklch(88% 0 0) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.067) !important;
-  --code-comment: oklch(45% 0 0) !important;
-  --code-function: #d4e481 !important;
-  --code-important: #f79f69 !important;
-  --code-keyword: #dfaac0 !important;
+  --code-comment: oklch(50% 0 0) !important;
+  --code-function: oklch(40% 0.2 300) !important;
+  --code-important: oklch(30% 0.2 295) !important;
+  --code-keyword: oklch(40% 0.16 150) !important;
   --code-normal: oklch(0% 0 0) !important;
-  --code-operator: #f47266 !important;
-  --code-property: #84dcd2 !important;
-  --code-punctuation: oklch(27.5% 0 0) !important;
+  --code-operator: oklch(0% 0 0) !important;
+  --code-property: oklch(40% 0.16 250) !important;
+  --code-punctuation: oklch(0% 0 0) !important;
   --code-radius: 8px !important;
   --code-size: 0.875em !important;
-  --code-string: #8bdfae !important;
-  --code-tag: #f47266 !important;
+  --code-string: oklch(40% 0.2 90) !important;
+  --code-tag: oklch(40% 0.2 260) !important;
   --code-value: #b89de7 !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: oklch(45% 0 0) !important;
   --collapse-icon-color-collapsed: oklch(0.4 0.15 70) !important;
   --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(153, 115, 247) !important;
-  --color-accent-2: rgb(166, 139, 249) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: oklch(100% 0 0) !important;
   --color-base-05: oklch(97% 0 0) !important;
@@ -622,7 +622,7 @@ body.theme-light {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(0.4 0.15 70) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -734,7 +734,7 @@ body.theme-light {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(27.5% 0 0) !important;
@@ -972,7 +972,7 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: oklch(0.5 0.15 70) !important;
   --table-selection-border-radius: 4px !important;
@@ -989,8 +989,8 @@ body.theme-light {
     oklch(0.4 0.15 262) 30%,
     transparent
   ) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: oklch(0.4 0.15 262) !important;
   --tag-color-hover: oklch(0.3 0.15 262) !important;
@@ -1110,6 +1110,7 @@ body.theme-light {
   --base-row-even-bg: oklch(100% 0 0) !important;
   --base-row-hover-bg: oklch(82% 0 0) !important;
   --base-row-odd-bg: oklch(97% 0 0) !important;
+  --code-valuse: oklch(40% 0.16 110) !important;
   --heading-underline-color: oklch(85% 0 0) !important;
   --nn-theme-file-selected-bg: oklch(85% 0 0) !important;
   --nn-theme-file-selected-inactive-bg: oklch(88% 0 0) !important;
@@ -1198,7 +1199,7 @@ body.theme-dark {
   --bases-table-border-color: oklch(42% 0 0) !important;
   --bases-table-cell-background-active: oklch(30% 0 0) !important;
   --bases-table-cell-background-disabled: oklch(27% 0 0) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(45% 0 0) !important;
@@ -1300,29 +1301,29 @@ body.theme-dark {
   --checklist-done-color: oklch(77.5% 0 0) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: oklch(36% 0 0) !important;
+  --code-background: oklch(27% 0 0) !important;
   --code-border-color: oklch(36% 0 0) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: oklch(58% 0 0) !important;
-  --code-function: #d4e481 !important;
-  --code-important: #f79f69 !important;
-  --code-keyword: #dfaac0 !important;
-  --code-normal: oklch(100% 0 0) !important;
-  --code-operator: #f47266 !important;
-  --code-property: #84dcd2 !important;
-  --code-punctuation: oklch(77.5% 0 0) !important;
+  --code-comment: oklch(70% 0 0) !important;
+  --code-function: oklch(85% 0.2 300) !important;
+  --code-important: oklch(70% 0.2 295) !important;
+  --code-keyword: oklch(90% 0.16 150) !important;
+  --code-normal: oklch(95% 0 0) !important;
+  --code-operator: oklch(95% 0 0) !important;
+  --code-property: oklch(90% 0.16 250) !important;
+  --code-punctuation: oklch(95% 0 0) !important;
   --code-radius: 8px !important;
   --code-size: 0.875em !important;
-  --code-string: #8bdfae !important;
-  --code-tag: #f47266 !important;
+  --code-string: oklch(90% 0.16 90) !important;
+  --code-tag: oklch(75% 0.2 260) !important;
   --code-value: #b89de7 !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: oklch(58% 0 0) !important;
   --collapse-icon-color-collapsed: oklch(0.9 0.15 70) !important;
   --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(166, 139, 249) !important;
-  --color-accent-2: rgb(197, 182, 252) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: oklch(21% 0 0) !important;
   --color-base-05: oklch(24% 0 0) !important;
@@ -1605,7 +1606,7 @@ body.theme-dark {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(0.9 0.15 70) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1717,7 +1718,7 @@ body.theme-dark {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(77.5% 0 0) !important;
@@ -1947,7 +1948,7 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
   --table-selection-border-color: oklch(0.7 0.15 70) !important;
   --table-selection-border-radius: 4px !important;
@@ -1964,8 +1965,8 @@ body.theme-dark {
     oklch(0.9 0.15 262) 30%,
     transparent
   ) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: oklch(0.9 0.15 262) !important;
   --tag-color-hover: oklch(1 0.09 262) !important;
@@ -2078,6 +2079,7 @@ body.theme-dark {
   --base-row-even-bg: oklch(30% 0 0) !important;
   --base-row-hover-bg: oklch(39% 0 0) !important;
   --base-row-odd-bg: oklch(33% 0 0) !important;
+  --code-valuse: oklch(90% 0.16 110) !important;
   --heading-underline-color: oklch(36% 0 0) !important;
   --nn-theme-file-selected-bg: oklch(39% 0 0) !important;
   --nn-theme-file-selected-inactive-bg: oklch(36% 0 0) !important;
@@ -2555,7 +2557,7 @@ body .markdown-rendered ol > li::marker {
 }
 body .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px solid light-dark(oklch(0% 0 0deg), oklch(100% 0 0deg));
+  border: 0px solid light-dark(oklch(0% 0 0deg), oklch(95% 0 0deg));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -2564,7 +2566,7 @@ body .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(oklch(0% 0 0deg), oklch(100% 0 0deg));
+  color: light-dark(oklch(0% 0 0deg), oklch(95% 0 0deg));
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
@@ -2572,7 +2574,7 @@ body .markdown-rendered code {
   padding: 0px;
 }
 body .markdown-rendered pre > code {
-  background-color: light-dark(oklch(97% 0 0deg), oklch(36% 0 0deg));
+  background-color: light-dark(oklch(97% 0 0deg), oklch(27% 0 0deg));
   border: 0px solid light-dark(oklch(88% 0 0deg), oklch(36% 0 0deg));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2589,7 +2591,7 @@ body .markdown-rendered pre > code {
 }
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  background-color: light-dark(oklch(97% 0 0deg), oklch(36% 0 0deg));
+  background-color: light-dark(oklch(97% 0 0deg), oklch(27% 0 0deg));
   border: 0px solid light-dark(oklch(88% 0 0deg), oklch(36% 0 0deg));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -3550,15 +3552,15 @@ body details[open] {
   padding: 0px;
 }
 body kbd {
-  background-color: light-dark(oklch(97% 0 0deg), oklch(36% 0 0deg));
+  background-color: light-dark(oklch(97% 0 0deg), oklch(27% 0 0deg));
   box-shadow: none;
-  color: light-dark(oklch(0% 0 0deg), oklch(100% 0 0deg));
+  color: light-dark(oklch(0% 0 0deg), oklch(95% 0 0deg));
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
   font-size: 14px;
-  border: 0px light-dark(oklch(0% 0 0deg), oklch(100% 0 0deg));
+  border: 0px light-dark(oklch(0% 0 0deg), oklch(95% 0 0deg));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3991,9 +3993,9 @@ body .page-header .page-title {
     sans-serif;
 }
 body .math-block {
-  background-color: light-dark(oklch(97% 0 0deg), oklch(36% 0 0deg));
-  color: light-dark(oklch(0% 0 0deg), oklch(100% 0 0deg));
-  border-color: light-dark(oklch(0% 0 0deg), oklch(100% 0 0deg));
+  background-color: light-dark(oklch(97% 0 0deg), oklch(27% 0 0deg));
+  color: light-dark(oklch(0% 0 0deg), oklch(95% 0 0deg));
+  border-color: light-dark(oklch(0% 0 0deg), oklch(95% 0 0deg));
   border-width: 0px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -4024,7 +4026,7 @@ body .view-content {
   border-bottom-right-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] {
-  background-color: light-dark(oklch(97% 0 0deg), oklch(36% 0 0deg));
+  background-color: light-dark(oklch(97% 0 0deg), oklch(27% 0 0deg));
   border: 0px solid light-dark(oklch(88% 0 0deg), oklch(36% 0 0deg));
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -4036,7 +4038,7 @@ body figure[data-rehype-pretty-code-figure] {
   border-end-end-radius: 0px;
 }
 body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: light-dark(oklch(97% 0 0deg), oklch(36% 0 0deg));
+  background-color: light-dark(oklch(97% 0 0deg), oklch(27% 0 0deg));
   color: light-dark(oklch(0% 0 0deg), oklch(100% 0 0deg));
   font-family: monospace;
   border: 0px solid light-dark(oklch(88% 0 0deg), oklch(36% 0 0deg));
@@ -4051,15 +4053,15 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
 }
 body pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px rgb(212, 228, 129);
+  border-left: 0px light-dark(oklch(40% 0.2 300deg), oklch(85% 0.2 300deg));
 }
 body pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(212, 228, 129);
+  border-left-color: light-dark(oklch(40% 0.2 300deg), oklch(85% 0.2 300deg));
 }
 body pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(212, 228, 129);
+  border: 0px light-dark(oklch(40% 0.2 300deg), oklch(85% 0.2 300deg));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

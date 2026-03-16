@@ -17,9 +17,11 @@ export const theme: ThemeData = {
   --anim-in: 150ms 75ms cubic-bezier(0, 0.55, 0.45, 1) !important;
   --anim-out: 300ms 600ms cubic-bezier(0, 0.55, 0.45, 1) !important;
   --anim-speed: 1 !important;
-  --background-activated-file-dark: rgba(90, 93, 114, 0.25) !important;
-  --background-activated-tab-header-dark: rgba(112, 123, 194, 0.15) !important;
-  --background-activated-tab-header-light: rgb(40, 41, 47) !important;
+  --background-activated-file-dark: hsla(232, 12%, 40%, 0.25) !important;
+  --background-activated-tab-header-dark: hsla(232,
+        40%,
+        60%, 0.15) !important;
+  --background-activated-tab-header-light: hsl(232, 8%, 16.66667%) !important;
   --background-alt-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --background-alt-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --background-mod-left-CSS-backdrop-filter-dark: blur(32px) !important;
@@ -28,96 +30,101 @@ export const theme: ThemeData = {
   --background-mod-left-CSS-blend-mode-light: normal !important;
   --background-mod-left-CSS-dark: rgba(0, 0, 0, 0.5) !important;
   --background-mod-left-CSS-light: rgba(255, 255, 255, 0.5) !important;
-  --background-mod-left-split: rgb(40, 41, 47) !important;
-  --background-mod-left-split-dark: rgb(40, 41, 47) !important;
-  --background-mod-left-split-light: rgb(40, 41, 47) !important;
+  --background-mod-left-split: hsl(232, 8%, 16.66667%) !important;
+  --background-mod-left-split-dark: hsl(232, 8%, 16.66667%) !important;
+  --background-mod-left-split-light: hsl(232, 8%, 16.66667%) !important;
   --background-mod-right-CSS-backdrop-filter-dark: blur(32px) !important;
   --background-mod-right-CSS-backdrop-filter-light: blur(32px) !important;
   --background-mod-right-CSS-blend-mode-dark: normal !important;
   --background-mod-right-CSS-blend-mode-light: normal !important;
   --background-mod-right-CSS-dark: rgba(0, 0, 0, 0.5) !important;
   --background-mod-right-CSS-light: rgba(255, 255, 255, 0.5) !important;
-  --background-mod-right-split: rgb(40, 41, 47) !important;
-  --background-mod-right-split-dark: rgb(40, 41, 47) !important;
-  --background-mod-right-split-light: rgb(40, 41, 47) !important;
+  --background-mod-right-split: hsl(232, 8%, 16.66667%) !important;
+  --background-mod-right-split-dark: hsl(232, 8%, 16.66667%) !important;
+  --background-mod-right-split-light: hsl(232, 8%, 16.66667%) !important;
   --background-mod-root-CSS-backdrop-filter-dark: blur(32px) !important;
   --background-mod-root-CSS-backdrop-filter-light: blur(32px) !important;
   --background-mod-root-CSS-blend-mode-dark: normal !important;
   --background-mod-root-CSS-blend-mode-light: normal !important;
   --background-mod-root-CSS-dark: rgba(0, 0, 0, 0.5) !important;
   --background-mod-root-CSS-light: rgba(255, 255, 255, 0.5) !important;
-  --background-mod-root-split: rgb(40, 41, 47) !important;
-  --background-mod-root-split-dark: rgb(40, 41, 47) !important;
-  --background-mod-root-split-light: rgb(40, 41, 47) !important;
-  --background-modifier-active-hover: rgba(112, 123, 194, 0.15) !important;
-  --background-modifier-border: rgba(119, 124, 156, 0.2) !important;
-  --background-modifier-border-focus: rgba(119, 124, 156, 0.3) !important;
-  --background-modifier-border-hover: rgba(119, 124, 156, 0.25) !important;
-  --background-modifier-border-muted: rgba(119, 124, 156, 0.1) !important;
+  --background-mod-root-split: hsl(232, 8%, 16.66667%) !important;
+  --background-mod-root-split-dark: hsl(232, 8%, 16.66667%) !important;
+  --background-mod-root-split-light: hsl(232, 8%, 16.66667%) !important;
+  --background-modifier-active-hover: hsla(232,
+        40%,
+        60%, 0.15) !important;
+  --background-modifier-border: hsla(232, 16%, 54%, 0.2) !important;
+  --background-modifier-border-focus: hsla(232, 16%, 54%, 0.3) !important;
+  --background-modifier-border-hover: hsla(232, 16%, 54%, 0.25) !important;
+  --background-modifier-border-muted: hsla(232, 16%, 54%, 0.1) !important;
   --background-modifier-error: rgb(255, 120, 129) !important;
   --background-modifier-error-hover: rgb(255, 120, 129) !important;
   --background-modifier-error-rgb: 255, 120, 129 !important;
   --background-modifier-form-field: transparent !important;
   --background-modifier-form-field-hover: transparent !important;
-  --background-modifier-hover: rgba(90, 93, 114, 0.25) !important;
+  --background-modifier-hover: hsla(232, 12%, 40%, 0.25) !important;
   --background-modifier-success: rgb(124, 211, 124) !important;
   --background-modifier-success-rgb: 124, 211, 124 !important;
-  --background-primary: rgb(40, 41, 47) !important;
-  --background-primary-alt: rgb(45, 46, 52) !important;
-  --background-secondary: rgb(35, 36, 41) !important;
+  --background-primary: hsl(232, 8%, 16.66667%) !important;
+  --background-primary-alt: hsl(232, 8%, 19.23077%) !important;
+  --background-secondary: hsl(232, 8%, 15.30612%) !important;
   --background-secondary-alt: hsl(232,
-            7%,
+            7.40741%,
             25%) !important;
   --background-tertiary: hsl(232,
-            7%,
-            21%) !important;
+            7.40741%,
+            20.83333%) !important;
   --background-underlying: hsl(232,
-            7%,
-            21%) !important;
+            7.40741%,
+            20.83333%) !important;
   --background-underlying-CSS-blend-mode-dark: soft-light, luminosity, hue, luminosity, hard-light !important;
   --background-underlying-CSS-blend-mode-light: overlay, color-burn !important;
   --background-underlying-CSS-dark: linear-gradient(317deg, rgb(112, 55, 205) 0%, rgb(29, 12, 32) 19%, rgb(101, 31, 113) 19%, rgb(101, 31, 113) 33%), radial-gradient(100% 100% at 90% 9%, rgb(29, 12, 32) 0%, rgb(29, 12, 32) 100%), linear-gradient(109deg, rgb(104, 178, 248) 0%, rgb(80, 110, 229) 15%, rgb(112, 55, 205) 34%, rgb(104, 178, 248) 54%, rgb(104, 178, 248) 65%), radial-gradient(100% 100% at 20% 45%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%), radial-gradient(100% 100% at 90% 27%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%), linear-gradient(339deg, rgb(101, 31, 113) 0%, rgb(104, 178, 248) 12%, rgb(101, 31, 113) 14%, rgb(80, 110, 229) 19%, rgb(101, 31, 113) 20%, rgb(29, 12, 32) 30%) !important;
   --background-underlying-CSS-light: radial-gradient(100% 100% at 13% 50%, rgb(90, 109, 237) 0%, rgb(224, 218, 247) 100%), linear-gradient(6deg, rgb(235, 242, 252) 0%, rgb(90, 109, 237) 5%, rgb(166, 126, 241) 7%, rgb(224, 218, 247) 11%, rgb(90, 109, 237) 16%), radial-gradient(100% 100% at 60% 71%, rgb(224, 218, 247) 0%, rgb(219, 244, 255) 100%), linear-gradient(97deg, rgb(90, 109, 237) 0%, rgb(90, 109, 237) 23%, rgb(90, 109, 237) 53%), linear-gradient(351deg, rgb(235, 242, 252) 0%, rgb(219, 244, 255) 1%, rgb(235, 242, 252) 6%, rgb(224, 218, 247) 10%, rgb(166, 126, 241) 13%, rgb(235, 242, 252) 29%), radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%), radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%) !important;
   --background-underlying-dark: hsl(232,
-            7%,
-            21%) !important;
+            7.40741%,
+            20.83333%) !important;
   --background-underlying-light: hsl(232,
             7.40741%,
             20.83333%) !important;
-  --bases-cards-background: rgb(40, 41, 47) !important;
-  --bases-cards-cover-background: rgb(45, 46, 52) !important;
-  --bases-cards-shadow: 0 0 0 1px rgba(119, 124, 156, 0.2) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgba(119, 124, 156, 0.25) !important;
-  --bases-embed-border-color: rgba(119, 124, 156, 0.2) !important;
-  --bases-group-heading-property-color: rgb(184, 186, 199) !important;
-  --bases-table-border-color: rgba(119, 124, 156, 0.2) !important;
-  --bases-table-cell-background-active: rgb(40, 41, 47) !important;
-  --bases-table-cell-background-disabled: rgb(45, 46, 52) !important;
-  --bases-table-cell-background-selected: rgba(112, 123, 194, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgba(119, 124, 156, 0.3) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(112, 123, 194) !important;
-  --bases-table-group-background: rgb(45, 46, 52) !important;
-  --bases-table-header-background: rgb(40, 41, 47) !important;
-  --bases-table-header-background-hover: rgba(90, 93, 114, 0.25) !important;
-  --bases-table-header-color: rgb(184, 186, 199) !important;
-  --bases-table-summary-background: rgb(40, 41, 47) !important;
-  --bases-table-summary-background-hover: rgba(90, 93, 114, 0.25) !important;
+  --bases-cards-background: hsl(232, 8%, 16.66667%) !important;
+  --bases-cards-cover-background: hsl(232, 8%, 19.23077%) !important;
+  --bases-cards-shadow: 0 0 0 1px hsla(232, 16%, 54%, 0.2) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsla(232, 16%, 54%, 0.25) !important;
+  --bases-embed-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --bases-group-heading-property-color: hsl(232, 12%, 75%) !important;
+  --bases-table-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --bases-table-cell-background-active: hsl(232, 8%, 16.66667%) !important;
+  --bases-table-cell-background-disabled: hsl(232, 8%, 19.23077%) !important;
+  --bases-table-cell-background-selected: hsla(232,
+        40%,
+        60%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsla(232, 16%, 54%, 0.3) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(232, 40%, 60%) !important;
+  --bases-table-group-background: hsl(232, 8%, 19.23077%) !important;
+  --bases-table-header-background: hsl(232, 8%, 16.66667%) !important;
+  --bases-table-header-background-hover: hsla(232, 12%, 40%, 0.25) !important;
+  --bases-table-header-color: hsl(232, 12%, 75%) !important;
+  --bases-table-summary-background: hsl(232, 8%, 16.66667%) !important;
+  --bases-table-summary-background-hover: hsla(232, 12%, 40%, 0.25) !important;
   --blockquote-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --blockquote-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --blockquote-border-color: rgb(112, 123, 194) !important;
+  --blockquote-border-color: hsl(232, 40%, 60%) !important;
   --blockquote-border-thickness: 3px !important;
   --blockquote-padding: 8px !important;
   --blur-background: color-mix(in srgb, hsl(232,
-            6%,
+            5.71429%,
             25%) 65%, transparent) linear-gradient(hsl(232,
-            6%,
+            5.71429%,
             25%), color-mix(in srgb, hsl(232,
-            6%,
+            5.71429%,
             25%) 65%, transparent)) !important;
   --bold-color: rgb(255, 120, 129) !important;
   --border-radius-activated-file-dark: 4px !important;
   --border-radius-activated-tab-header-dark: 6px !important;
   --border-radius-activated-tab-header-light: 6px !important;
+  --button-radius: 6px !important;
   --callout-bug: 255, 120, 129;
   --callout-content-radius: 0px;
   --callout-default: 137, 189, 244;
@@ -136,7 +143,7 @@ export const theme: ThemeData = {
   --canvas-background: transparent !important;
   --canvas-card-border-style: solid !important;
   --canvas-card-border-width: 2px !important;
-  --canvas-card-label-color: rgb(116, 119, 139) !important;
+  --canvas-card-label-color: hsl(232, 9%, 50%) !important;
   --canvas-color-1: 255, 120, 129 !important;
   --canvas-color-2: 251, 187, 131 !important;
   --canvas-color-3: 255, 232, 139 !important;
@@ -147,55 +154,55 @@ export const theme: ThemeData = {
   --card-border-radius-light: 8px !important;
   --card-shadow-border-radius-dark: 7px !important;
   --card-shadow-border-radius-light: 7px !important;
-  --card-shadow-dark: 0 -1px 0 0 rgba(119, 124, 156, 0.2), 0 0 0 1px rgba(119, 124, 156, 0.2) !important;
-  --card-shadow-light: 0 0 0 1px rgba(119, 124, 156, 0.1), 0 0 6px rgba(119, 124, 156, 0.1) !important;
-  --caret-color: rgb(211, 213, 222) !important;
-  --checkbox-border-color: rgb(116, 119, 139) !important;
-  --checkbox-border-color-hover: rgb(116, 119, 139) !important;
+  --card-shadow-dark: 0 -1px 0 0 hsla(232, 16%, 54%, 0.2), 0 0 0 1px hsla(232, 16%, 54%, 0.2) !important;
+  --card-shadow-light: 0 0 0 1px hsla(232, 16%, 54%, 0.1), 0 0 6px hsla(232, 16%, 54%, 0.1) !important;
+  --caret-color: hsl(232, 15%, 85%) !important;
+  --checkbox-border-color: hsl(232, 9%, 50%) !important;
+  --checkbox-border-color-hover: hsl(232, 9%, 50%) !important;
   --checkbox-color: rgb(124, 211, 124) !important;
   --checkbox-color-hover: rgb(124, 211, 124) !important;
-  --checkbox-marker-color: rgb(40, 41, 47) !important;
+  --checkbox-marker-color: hsl(232, 8%, 16.66667%) !important;
   --checkbox-radius: 6px !important;
-  --checklist-done-color: rgb(116, 119, 139) !important;
+  --checklist-done-color: hsl(232, 9%, 50%) !important;
   --clickable-icon-radius: 6px !important;
   --code-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --code-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --code-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --code-border: 1px dashed rgba(119, 124, 156, 0.2) !important;
-  --code-border-color: rgba(119, 124, 156, 0.2) !important;
-  --code-border-dark: 1px dashed rgba(119, 124, 156, 0.2) !important;
-  --code-border-light: 1px dashed rgba(119, 124, 156, 0.2) !important;
-  --code-bracket-background: rgba(90, 93, 114, 0.25) !important;
-  --code-comment: rgb(116, 119, 139) !important;
+  --code-border: 1px dashed hsla(232, 16%, 54%, 0.2) !important;
+  --code-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --code-border-dark: 1px dashed hsla(232, 16%, 54%, 0.2) !important;
+  --code-border-light: 1px dashed hsla(232, 16%, 54%, 0.2) !important;
+  --code-bracket-background: hsla(232, 12%, 40%, 0.25) !important;
+  --code-comment: hsl(232, 9%, 50%) !important;
   --code-function: rgb(255, 232, 139) !important;
   --code-important: rgb(251, 187, 131) !important;
   --code-keyword: rgb(242, 182, 222) !important;
-  --code-normal: rgb(184, 186, 199) !important;
+  --code-normal: hsl(232, 12%, 75%) !important;
   --code-operator: rgb(255, 120, 129) !important;
   --code-property: rgb(134, 223, 226) !important;
-  --code-punctuation: rgb(184, 186, 199) !important;
+  --code-punctuation: hsl(232, 12%, 75%) !important;
   --code-string: rgb(124, 211, 124) !important;
   --code-tag: rgb(255, 120, 129) !important;
   --code-value: rgb(203, 158, 255) !important;
-  --collapse-icon-color: rgb(116, 119, 139) !important;
-  --collapse-icon-color-collapsed: rgb(144, 155, 208) !important;
-  --color-accent: rgb(112, 123, 194) !important;
-  --color-accent-1: rgb(144, 155, 208) !important;
-  --color-accent-1-dark: rgb(144, 155, 208) !important;
-  --color-accent-2: rgb(172, 182, 221) !important;
-  --color-accent-2-dark: rgb(172, 182, 221) !important;
-  --color-accent-3: rgba(119, 124, 156, 0) !important;
-  --color-accent-3-dark: rgba(119, 124, 156, 0) !important;
-  --color-accent-dark: rgb(112, 123, 194) !important;
+  --collapse-icon-color: hsl(232, 9%, 50%) !important;
+  --collapse-icon-color-collapsed: hsl(229, 40.8%, 69%) !important;
+  --color-accent: hsl(232, 40%, 60%) !important;
+  --color-accent-1: hsl(229, 40.8%, 69%) !important;
+  --color-accent-1-dark: hsl(229, 40.8%, 69%) !important;
+  --color-accent-2: hsl(227, 42%, 77.4%) !important;
+  --color-accent-2-dark: hsl(227, 42%, 77.4%) !important;
+  --color-accent-3: hsla(232, 16%, 54%) !important;
+  --color-accent-3-dark: hsla(232, 16%, 54%) !important;
+  --color-accent-dark: hsl(232, 40%, 60%) !important;
   --color-accent-hsl: 232,
         40%,
         60% !important;
   --color-accent-hsl-dark: 232,
         40%,
         60% !important;
-  --color-activated-file-dark: rgb(211, 213, 222) !important;
-  --color-activated-tab-header-dark: rgb(211, 213, 222) !important;
-  --color-activated-tab-header-light: rgb(211, 213, 222) !important;
+  --color-activated-file-dark: hsl(232, 15%, 85%) !important;
+  --color-activated-tab-header-dark: hsl(232, 15%, 85%) !important;
+  --color-activated-tab-header-light: hsl(232, 15%, 85%) !important;
   --color-base-15: #252525 !important;
   --color-base-35: #3F3F3F !important;
   --color-base-40: #555 !important;
@@ -219,40 +226,40 @@ export const theme: ThemeData = {
   --color-yellow: rgb(255, 232, 139) !important;
   --color-yellow-rgb: 255, 232, 139 !important;
   --cursor: pointer !important;
-  --dark: rgb(211, 213, 222) !important;
-  --darkgray: rgb(211, 213, 222) !important;
-  --divider-color: rgba(119, 124, 156, 0.2) !important;
-  --divider-color-hover: rgb(112, 123, 194) !important;
+  --dark: hsl(232, 15%, 85%) !important;
+  --darkgray: hsl(232, 15%, 85%) !important;
+  --divider-color: hsla(232, 16%, 54%, 0.2) !important;
+  --divider-color-hover: hsl(232, 40%, 60%) !important;
   --dropdown-background: hsl(232,
-            6%,
+            5.71429%,
             25%) !important;
   --dropdown-background-hover: hsl(232,
             5.71429%,
             27.77778%) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgba(119, 124, 156, 0.2), inset 0 0 0 1px rgba(119, 124, 156, 0.2) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsla(232, 16%, 54%, 0.2), inset 0 0 0 1px hsla(232, 16%, 54%, 0.2) !important;
   --embed-border-radius: 0px !important;
-  --embed-border-start: 2px solid rgb(112, 123, 194) !important;
+  --embed-border-start: 2px solid hsl(232, 40%, 60%) !important;
   --empty-state-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3e%3cpath fill='black' fill-opacity='.15' d='M13.32 7.155a4.375 4.375 0 0 1-5.7 6.517l5.7-6.517ZM10 5.625a4.375 4.375 0 0 0-3.32 7.22l5.704-6.514A4.35 4.35 0 0 0 10 5.625ZM18.125 10A8.125 8.125 0 1 1 10 1.875 8.135 8.135 0 0 1 18.125 10Zm-2.5 0a5.6 5.6 0 0 0-1.476-3.793l.382-.483a.626.626 0 1 0-.937-.823l-.384.483a5.625 5.625 0 0 0-7.36 8.409l-.381.483a.625.625 0 0 0 .937.823l.384-.483A5.621 5.621 0 0 0 15.625 10Z'/%3e%3c/svg%3e") !important;
-  --file-header-background: rgb(40, 41, 47) !important;
-  --file-header-background-focused: rgb(40, 41, 47) !important;
+  --file-header-background: hsl(232, 8%, 16.66667%) !important;
+  --file-header-background-focused: hsl(232, 8%, 16.66667%) !important;
   --flair-background: hsl(232,
-            6%,
+            5.71429%,
             25%) !important;
-  --flair-color: rgb(211, 213, 222) !important;
-  --footnote-divider-color: rgba(119, 124, 156, 0.2) !important;
-  --footnote-id-color: rgb(184, 186, 199) !important;
-  --footnote-id-color-no-occurrences: rgb(116, 119, 139) !important;
-  --footnote-input-background-active: rgba(90, 93, 114, 0.25) !important;
+  --flair-color: hsl(232, 15%, 85%) !important;
+  --footnote-divider-color: hsla(232, 16%, 54%, 0.2) !important;
+  --footnote-id-color: hsl(232, 12%, 75%) !important;
+  --footnote-id-color-no-occurrences: hsl(232, 9%, 50%) !important;
+  --footnote-input-background-active: hsla(232, 12%, 40%, 0.25) !important;
   --frame-right-space: 110px !important;
   --graph-line: #3F3F3F !important;
-  --graph-node: rgb(184, 186, 199) !important;
+  --graph-node: hsl(232, 12%, 75%) !important;
   --graph-node-attachment: rgb(255, 232, 139) !important;
-  --graph-node-focused: rgb(144, 155, 208) !important;
+  --graph-node-focused: hsl(229, 40.8%, 69%) !important;
   --graph-node-tag: rgb(124, 211, 124) !important;
-  --graph-node-unresolved: rgb(116, 119, 139) !important;
-  --graph-text: rgb(211, 213, 222) !important;
-  --gray: rgb(184, 186, 199) !important;
-  --grid-background-pattern-color: rgba(119, 124, 156, 0.2) !important;
+  --graph-node-unresolved: hsl(232, 9%, 50%) !important;
+  --graph-text: hsl(232, 15%, 85%) !important;
+  --gray: hsl(232, 12%, 75%) !important;
+  --grid-background-pattern-color: hsla(232, 16%, 54%, 0.2) !important;
   --grid-background-pattern-size: 36px !important;
   --h1-accent-color: rgb(255, 120, 129) !important;
   --h1-size: 1.5em !important;
@@ -271,146 +278,152 @@ export const theme: ThemeData = {
   --h6-accent-color: rgb(203, 158, 255) !important;
   --h6-size: 1.125em !important;
   --h6-weight: 575 !important;
-  --heading-formatting: rgb(116, 119, 139) !important;
+  --heading-formatting: hsl(232, 9%, 50%) !important;
   --heading-spacing: 2.5rem !important;
-  --highlight: rgba(90, 93, 114, 0.25) !important;
-  --hr-color: rgba(119, 124, 156, 0.2) !important;
-  --icon-color: rgb(184, 186, 199) !important;
-  --icon-color-active: rgb(144, 155, 208) !important;
-  --icon-color-focused: rgb(211, 213, 222) !important;
-  --icon-color-hover: rgb(184, 186, 199) !important;
+  --highlight: hsla(232, 12%, 40%, 0.25) !important;
+  --hr-color: hsla(232, 16%, 54%, 0.2) !important;
+  --icon-color: hsl(232, 12%, 75%) !important;
+  --icon-color-active: hsl(229, 40.8%, 69%) !important;
+  --icon-color-focused: hsl(232, 15%, 85%) !important;
+  --icon-color-hover: hsl(232, 12%, 75%) !important;
   --inline-code-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --inline-code-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --inline-code-normal: rgb(242, 182, 222) !important;
   --inline-title-size: 1.5em !important;
-  --input-date-separator: rgb(116, 119, 139) !important;
-  --input-placeholder-color: rgb(116, 119, 139) !important;
-  --input-radius-dark: 5px !important;
+  --input-date-separator: hsl(232, 9%, 50%) !important;
+  --input-height: 32px !important;
+  --input-placeholder-color: hsl(232, 9%, 50%) !important;
+  --input-radius: 6px !important;
+  --input-radius-dark: 6px !important;
   --input-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32), 0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12), inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16) !important;
   --input-shadow-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32), 0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12), inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16) !important;
   --input-shadow-hover: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32), 0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12), inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16) !important;
   --input-shadow-hover-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32), 0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12), inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16) !important;
-  --interactive-accent: rgb(112, 123, 194) !important;
-  --interactive-accent-hover: rgb(144, 155, 208) !important;
+  --interactive-accent: hsl(232, 40%, 60%) !important;
+  --interactive-accent-hover: hsl(229, 40.8%, 69%) !important;
   --interactive-accent-hsl: 232,
         40%,
         60% !important;
   --interactive-hover: hsl(232,
-            6%,
-            28%) !important;
+            5.71429%,
+            27.77778%) !important;
   --interactive-normal: hsl(232,
-            6%,
+            5.71429%,
             25%) !important;
   --italic-color: rgb(251, 187, 131) !important;
-  --light: rgb(40, 41, 47) !important;
-  --lightgray: rgb(35, 36, 41) !important;
+  --light: hsl(232, 8%, 16.66667%) !important;
+  --lightgray: hsl(232, 8%, 15.30612%) !important;
   --line-height-customize: 1.5 !important;
   --line-normal-opacity: 0.5 !important;
-  --link-color: rgb(144, 155, 208) !important;
-  --link-color-hover: rgb(172, 182, 221) !important;
+  --link-color: hsl(229, 40.8%, 69%) !important;
+  --link-color-hover: hsl(227, 42%, 77.4%) !important;
   --link-external-color: rgb(137, 189, 244) !important;
   --link-external-color-hover: rgb(137, 189, 244) !important;
-  --link-unresolved-color: rgb(144, 155, 208) !important;
-  --link-unresolved-decoration-color: rgba(112, 123, 194, 0.3) !important;
+  --link-unresolved-color: hsl(229, 40.8%, 69%) !important;
+  --link-unresolved-decoration-color: hsla(232,
+        40%,
+        60%, 0.3) !important;
   --list-bullet-size-alt: 0.15em !important;
   --list-indent: 2em !important;
-  --list-marker-color: rgb(116, 119, 139) !important;
-  --list-marker-color-collapsed: rgb(144, 155, 208) !important;
-  --list-marker-color-hover: rgb(184, 186, 199) !important;
-  --menu-background: rgb(35, 36, 41) !important;
-  --menu-border-color: rgba(119, 124, 156, 0.25) !important;
+  --list-marker-color: hsl(232, 9%, 50%) !important;
+  --list-marker-color-collapsed: hsl(229, 40.8%, 69%) !important;
+  --list-marker-color-hover: hsl(232, 12%, 75%) !important;
+  --menu-background: hsl(232, 8%, 15.30612%) !important;
+  --menu-border-color: hsla(232, 16%, 54%, 0.25) !important;
   --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121),
         0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
         0px 15px 30px rgba(0, 0, 0, 0.3),
-        0 -1px 0 0 rgba(119, 124, 156, 0.3) !important;
-  --metadata-border-color: rgba(119, 124, 156, 0.2) !important;
-  --metadata-divider-color: rgba(119, 124, 156, 0.2) !important;
-  --metadata-input-background-active: rgba(90, 93, 114, 0.25) !important;
+        0 -1px 0 0 hsla(232, 16%, 54%, 0.3) !important;
+  --metadata-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --metadata-divider-color: hsla(232, 16%, 54%, 0.2) !important;
+  --metadata-input-background-active: hsla(232, 12%, 40%, 0.25) !important;
   --metadata-input-height: 28px !important;
-  --metadata-input-text-color: rgb(211, 213, 222) !important;
-  --metadata-label-background-active: rgba(90, 93, 114, 0.25) !important;
-  --metadata-label-text-color: rgb(184, 186, 199) !important;
-  --metadata-label-text-color-hover: rgb(184, 186, 199) !important;
-  --metadata-property-background-active: rgba(90, 93, 114, 0.25) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgba(119, 124, 156, 0.3) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgba(119, 124, 156, 0.25) !important;
+  --metadata-input-text-color: hsl(232, 15%, 85%) !important;
+  --metadata-label-background-active: hsla(232, 12%, 40%, 0.25) !important;
+  --metadata-label-text-color: hsl(232, 12%, 75%) !important;
+  --metadata-label-text-color-hover: hsl(232, 12%, 75%) !important;
+  --metadata-property-background-active: hsla(232, 12%, 40%, 0.25) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsla(232, 16%, 54%, 0.3) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(232, 16%, 54%, 0.25) !important;
   --mix-blend-mode-on-border-dark: screen !important;
   --mix-blend-mode-on-border-light: normal !important;
-  --modal-background: rgb(40, 41, 47) !important;
-  --modal-border-color: rgba(119, 124, 156, 0.2) !important;
-  --nav-collapse-icon-color: rgb(116, 119, 139) !important;
-  --nav-collapse-icon-color-collapsed: rgb(116, 119, 139) !important;
-  --nav-heading-color: rgb(211, 213, 222) !important;
-  --nav-heading-color-collapsed: rgb(116, 119, 139) !important;
-  --nav-heading-color-collapsed-hover: rgb(184, 186, 199) !important;
-  --nav-heading-color-hover: rgb(211, 213, 222) !important;
-  --nav-item-background-active: rgba(90, 93, 114, 0.25) !important;
-  --nav-item-background-hover: rgba(90, 93, 114, 0.25) !important;
-  --nav-item-background-selected: rgba(112, 123, 194, 0.15) !important;
-  --nav-item-color: rgb(184, 186, 199) !important;
-  --nav-item-color-active: rgb(211, 213, 222) !important;
-  --nav-item-color-highlighted: rgb(144, 155, 208) !important;
-  --nav-item-color-hover: rgb(211, 213, 222) !important;
-  --nav-item-color-selected: rgb(211, 213, 222) !important;
-  --nav-tag-color: rgb(116, 119, 139) !important;
-  --nav-tag-color-active: rgb(184, 186, 199) !important;
-  --nav-tag-color-hover: rgb(184, 186, 199) !important;
+  --modal-background: hsl(232, 8%, 16.66667%) !important;
+  --modal-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --nav-collapse-icon-color: hsl(232, 9%, 50%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(232, 9%, 50%) !important;
+  --nav-heading-color: hsl(232, 15%, 85%) !important;
+  --nav-heading-color-collapsed: hsl(232, 9%, 50%) !important;
+  --nav-heading-color-collapsed-hover: hsl(232, 12%, 75%) !important;
+  --nav-heading-color-hover: hsl(232, 15%, 85%) !important;
+  --nav-item-background-active: hsla(232, 12%, 40%, 0.25) !important;
+  --nav-item-background-hover: hsla(232, 12%, 40%, 0.25) !important;
+  --nav-item-background-selected: hsla(232,
+        40%,
+        60%, 0.15) !important;
+  --nav-item-color: hsl(232, 12%, 75%) !important;
+  --nav-item-color-active: hsl(232, 15%, 85%) !important;
+  --nav-item-color-highlighted: hsl(229, 40.8%, 69%) !important;
+  --nav-item-color-hover: hsl(232, 15%, 85%) !important;
+  --nav-item-color-selected: hsl(232, 15%, 85%) !important;
+  --nav-tag-color: hsl(232, 9%, 50%) !important;
+  --nav-tag-color-active: hsl(232, 12%, 75%) !important;
+  --nav-tag-color-hover: hsl(232, 12%, 75%) !important;
   --new-tab-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2280%22%20height%3D%2280%22%20fill%3D%22none%22%20viewBox%3D%220%200%2080%2080%22%3E%3Cg%20filter%3D%22url(%23a)%22%3E%3Cpath%20fill%3D%22%23000%22%20fill-opacity%3D%22.26%22%20d%3D%22M51.894%2060.617c-.291%202.162-2.41%203.85-4.515%203.267-3-.825-6.474-2.112-9.6-2.352l-4.79-.362a3.163%203.163%200%200%201-2.042-.95l-8.254-8.483a3.15%203.15%200%200%201-.616-3.49S27.18%2037.053%2027.37%2036.47c.19-.582.886-5.66%201.298-8.388a3.153%203.153%200%200%201%201.011-1.875l9.765-8.767a3.165%203.165%200%200%201%204.597.394l8.202%2010.4c.464.59.702%201.32.706%202.07.009%201.97.172%206.016%201.263%208.621%201.062%202.535%203.01%205.272%204.03%206.619.39.517.45%201.216.12%201.773a138.06%20138.06%200%200%201-4.15%206.54c-1.386%202.063-2.028%204.613-2.318%206.761Z%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22%230E0E0E%22%20d%3D%22M51.602%2060.187c-.292%202.171-2.417%203.867-4.528%203.282-3.008-.829-6.491-2.122-9.626-2.362l-4.803-.365a3.168%203.168%200%200%201-2.048-.953l-8.277-8.523a3.168%203.168%200%200%201-.618-3.504S26.82%2036.515%2027.01%2035.93c.19-.585.888-5.686%201.301-8.427a3.17%203.17%200%200%201%201.015-1.883l9.79-8.807a3.17%203.17%200%200%201%204.61.396l8.226%2010.448c.465.59.704%201.326.707%202.078.01%201.98.173%206.043%201.268%208.66%201.064%202.547%203.018%205.296%204.04%206.65a1.6%201.6%200%200%201%20.12%201.78%20137.46%20137.46%200%200%201-4.16%206.57c-1.39%202.072-2.034%204.634-2.325%206.792Z%22%2F%3E%3Cpath%20fill%3D%22url(%23b)%22%20d%3D%22M31.489%2060.433c3.844-7.804%203.736-13.395%202.1-17.384-1.505-3.672-4.304-5.988-6.51-7.425-.047.208-.115.41-.202.605l-5.175%2011.532a3.168%203.168%200%200%200%20.618%203.505l8.277%208.523c.26.267.562.484.892.644Z%22%2F%3E%3Cpath%20fill%3D%22url(%23c)%22%20d%3D%22M47.075%2063.469c2.11.585%204.235-1.11%204.527-3.282.252-1.869.769-4.041%201.806-5.936-2.38-5.121-5.256-7.777-8.41-8.954-3.339-1.246-6.987-.835-10.684.063.826%203.76.331%208.673-2.82%2015.073.358.174.75.28%201.154.309%200%200%202.275.191%204.98.383%202.705.191%206.73%201.59%209.447%202.344Z%22%2F%3E%3Cpath%20fill%3D%22url(%23d)%22%20d%3D%22M41.95%2044.595c1.038.108%202.056.332%203.047.702%203.154%201.177%206.032%203.833%208.411%208.954.16-.292.333-.578.519-.855a138.877%20138.877%200%200%200%204.16-6.57%201.603%201.603%200%200%200-.12-1.78c-1.022-1.354-2.976-4.103-4.04-6.65-1.095-2.617-1.258-6.68-1.267-8.66a3.377%203.377%200%200%200-.708-2.079L43.727%2017.21a3.198%203.198%200%200%200-.136-.162c.603%201.978.562%203.569.19%205.015-.345%201.341-.975%202.558-1.641%203.843-.223.43-.45.87-.672%201.323-.884%201.806-1.68%203.85-1.798%206.592-.118%202.74.444%206.179%202.28%2010.774Z%22%2F%3E%3Cpath%20fill%3D%22url(%23e)%22%20d%3D%22M41.948%2044.594c-1.835-4.595-2.398-8.033-2.28-10.774.118-2.742.915-4.786%201.798-6.592.222-.454.45-.893.673-1.324.665-1.285%201.295-2.501%201.64-3.842.373-1.447.414-3.038-.19-5.017a3.17%203.17%200%200%200-4.472-.232l-9.792%208.807a3.17%203.17%200%200%200-1.014%201.883l-1.192%207.902a3.182%203.182%200%200%201-.04.218c2.206%201.438%205.006%203.754%206.511%207.426.294.717.54%201.486.72%202.31%202.6-.632%205.177-1.022%207.638-.765Z%22%2F%3E%3Cg%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%3E%3Cpath%20fill%3D%22url(%23f)%22%20d%3D%22M39.687%2033.638c-.118%202.72.221%205.839%202.053%2010.424l-.575-.052c-1.643-4.785-2.001-7.238-1.881-9.995.12-2.758%201.01-4.879%201.899-6.688.225-.458.75-1.319.974-1.75.665-1.28%201.108-1.955%201.488-3.124.53-1.633.416-2.406.355-3.176.422%202.783-1.178%205.202-2.388%207.667-.882%201.795-1.807%203.976-1.925%206.694Z%22%2F%3E%3Cpath%20fill%3D%22url(%23g)%22%20d%3D%22M34.131%2043.25c.217.502.422.907.552%201.529l-.48.108c-.2-.726-.354-1.242-.63-1.865-1.654-3.902-4.309-5.91-6.478-7.381%202.62%201.41%205.31%203.616%207.036%207.608Z%22%2F%3E%3Cpath%20fill%3D%22url(%23h)%22%20d%3D%22M34.71%2045.27c.917%204.264-.105%209.683-3.118%2014.95%202.518-5.22%203.74-10.234%202.723-14.866l.396-.085Z%22%2F%3E%3Cpath%20fill%3D%22url(%23i)%22%20d%3D%22M45.11%2044.888c4.94%201.848%206.842%205.908%208.264%209.294-1.756-3.546-4.197-7.462-8.441-8.915-3.23-1.106-5.957-.975-10.619.083l-.104-.462c4.948-1.128%207.535-1.26%2010.9%200Z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient%20id%3D%22b%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(-5.44827%20-20.95522%2013.96424%20-3.63065%2031.076%2059.662)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.44%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23333%22%20stop-opacity%3D%22.52%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22c%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(-9.24927%20-16.1868%2016.18663%20-9.24917%2047.535%2064.623)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23565656%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23151515%22%20stop-opacity%3D%22.71%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22d%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(4.6468%20-35.22462%2026.02364%203.433%2049.53%2050.76)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%237E7E7E%22%20stop-opacity%3D%22.91%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%231E1E1E%22%20stop-opacity%3D%22.6%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22e%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(13.14708%20-30.29344%2020.65904%208.96583%2034.531%2046.293)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23D7D7D7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23414141%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22f%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(-3.34584%2015.42817%20-10.40357%20-2.25617%2044.882%2027.895)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%220%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.17%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22g%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(8.17858%208.27172%20-17.61805%2017.41967%2026.387%2036.445)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.2%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.44%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22h%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22rotate(80.202%20-7.323%2041.856)%20scale(13.634%2028.9518)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.12%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.35%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22i%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22rotate(-152.296%2033.168%2019.977)%20scale(20.7745%2065.377)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.21%22%2F%3E%3Cstop%20offset%3D%22.467%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.19%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.29%22%2F%3E%3C%2FradialGradient%3E%3Cfilter%20id%3D%22a%22%20width%3D%2239.273%22%20height%3D%2249.867%22%20x%3D%2220.551%22%20y%3D%2215.381%22%20color-interpolation-filters%3D%22sRGB%22%20filterUnits%3D%22userSpaceOnUse%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeBlend%20in%3D%22SourceGraphic%22%20in2%3D%22BackgroundImageFix%22%20mode%3D%22normal%22%20result%3D%22shape%22%2F%3E%3CfeGaussianBlur%20result%3D%22effect1_foregroundBlur_3584_482%22%20stdDeviation%3D%22.624%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3C%2Fsvg%3E") !important;
-  --on-border-dark: rgba(119, 124, 156, 0) !important;
-  --on-border-light: rgba(119, 124, 156, 0) !important;
-  --pdf-background: rgb(40, 41, 47) !important;
-  --pdf-page-background: rgb(40, 41, 47) !important;
-  --pdf-shadow: 0 0 0 1px rgba(119, 124, 156, 0.2) !important;
-  --pdf-sidebar-background: rgb(40, 41, 47) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(119, 124, 156, 0.2) !important;
-  --pill-border-color: rgba(119, 124, 156, 0.2) !important;
-  --pill-border-color-hover: rgba(119, 124, 156, 0.25) !important;
-  --pill-color: rgb(184, 186, 199) !important;
-  --pill-color-hover: rgb(211, 213, 222) !important;
-  --pill-color-remove: rgb(116, 119, 139) !important;
-  --pill-color-remove-hover: rgb(144, 155, 208) !important;
-  --prompt-background: rgb(40, 41, 47) !important;
-  --prompt-border-color: rgba(119, 124, 156, 0.2) !important;
+  --on-border-dark: hsla(232, 16%, 54%) !important;
+  --on-border-light: hsla(232, 16%, 54%) !important;
+  --pdf-background: hsl(232, 8%, 16.66667%) !important;
+  --pdf-page-background: hsl(232, 8%, 16.66667%) !important;
+  --pdf-shadow: 0 0 0 1px hsla(232, 16%, 54%, 0.2) !important;
+  --pdf-sidebar-background: hsl(232, 8%, 16.66667%) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px hsla(232, 16%, 54%, 0.2) !important;
+  --pill-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --pill-border-color-hover: hsla(232, 16%, 54%, 0.25) !important;
+  --pill-color: hsl(232, 12%, 75%) !important;
+  --pill-color-hover: hsl(232, 15%, 85%) !important;
+  --pill-color-remove: hsl(232, 9%, 50%) !important;
+  --pill-color-remove-hover: hsl(229, 40.8%, 69%) !important;
+  --prompt-background: hsl(232, 8%, 16.66667%) !important;
+  --prompt-border-color: hsla(232, 16%, 54%, 0.2) !important;
   --raised-background: color-mix(in srgb, hsl(232,
-            6%,
+            5.71429%,
             25%) 65%, transparent) linear-gradient(hsl(232,
-            6%,
+            5.71429%,
             25%), color-mix(in srgb, hsl(232,
-            6%,
+            5.71429%,
             25%) 65%, transparent)) !important;
-  --ribbon-background: rgb(35, 36, 41) !important;
-  --ribbon-background-collapsed: rgb(40, 41, 47) !important;
+  --ribbon-background: hsl(232, 8%, 15.30612%) !important;
+  --ribbon-background-collapsed: hsl(232, 8%, 16.66667%) !important;
   --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.15) !important;
   --scrollbar-bg: rgba(255, 255, 255, 0) !important;
-  --search-clear-button-color: rgb(184, 186, 199) !important;
-  --search-icon-color: rgb(184, 186, 199) !important;
+  --search-clear-button-color: hsl(232, 12%, 75%) !important;
+  --search-icon-color: hsl(232, 12%, 75%) !important;
   --search-result-background: transparent !important;
-  --secondary: rgb(144, 155, 208) !important;
-  --setting-group-heading-color: rgb(211, 213, 222) !important;
-  --setting-items-background: rgb(45, 46, 52) !important;
-  --setting-items-border-color: rgba(119, 124, 156, 0.2) !important;
+  --secondary: hsl(229, 40.8%, 69%) !important;
+  --setting-group-heading-color: hsl(232, 15%, 85%) !important;
+  --setting-items-background: hsl(232, 8%, 19.23077%) !important;
+  --setting-items-border-color: hsla(232, 16%, 54%, 0.2) !important;
   --shadow-activated-file-dark: none !important;
-  --shadow-activated-tab-header-dark: inset 0 0 0 1px rgba(119, 124, 156, 0.2), inset 0 2px 4px 0 rgba(119, 124, 156, 0.1), inset 0 1px 1px 1px rgba(119, 124, 156, 0.2) !important;
-  --shadow-activated-tab-header-light: 0 -1px 0 0 rgba(255, 255, 255, 0.24), 0 0 0 1px rgba(119, 124, 156, 0.2), 0 0 4px rgba(119, 124, 156, 0.2), 0px 2px 6px -4px rgba(119, 124, 156, 0.1), inset 0 -1px 3px 0 hsl(232,
-            7%,
-            21%) !important;
+  --shadow-activated-tab-header-dark: inset 0 0 0 1px hsla(232, 16%, 54%, 0.2), inset 0 2px 4px 0 hsla(232, 16%, 54%, 0.1), inset 0 1px 1px 1px hsla(232, 16%, 54%, 0.2) !important;
+  --shadow-activated-tab-header-light: 0 -1px 0 0 rgba(255, 255, 255, 0.24), 0 0 0 1px hsla(232, 16%, 54%, 0.2), 0 0 4px hsla(232, 16%, 54%, 0.2), 0px 2px 6px -4px hsla(232, 16%, 54%, 0.1), inset 0 -1px 3px 0 hsl(232,
+            7.40741%,
+            20.83333%) !important;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
         0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
         0px 30px 90px rgba(0, 0, 0, 0.2),
-        0 -1px 0 0 rgba(119, 124, 156, 0.3) !important;
+        0 -1px 0 0 hsla(232, 16%, 54%, 0.3) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
         0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
         0px 15px 30px rgba(0, 0, 0, 0.3),
-        0 -1px 0 0 rgba(119, 124, 156, 0.3) !important;
+        0 -1px 0 0 hsla(232, 16%, 54%, 0.3) !important;
   --sidebar-markdown-font-size: 14.4px !important;
-  --slider-thumb-border-color: rgba(119, 124, 156, 0.25) !important;
+  --slider-thumb-border-color: hsla(232, 16%, 54%, 0.25) !important;
   --slider-thumb-border-width: 0 !important;
-  --slider-track-background: rgba(119, 124, 156, 0.2) !important;
+  --slider-track-background: hsla(232, 16%, 54%, 0.2) !important;
   --status-bar-background: transparent !important;
   --status-bar-border-color: transparent !important;
   --status-bar-border-width: 0 !important;
-  --status-bar-text-color: rgb(184, 186, 199) !important;
-  --suggestion-background: rgb(40, 41, 47) !important;
+  --status-bar-text-color: hsl(232, 12%, 75%) !important;
+  --suggestion-background: hsl(232, 8%, 16.66667%) !important;
   --sync-avatar-color-1: rgb(255, 120, 129) !important;
   --sync-avatar-color-2: rgb(251, 187, 131) !important;
   --sync-avatar-color-3: rgb(255, 232, 139) !important;
@@ -421,74 +434,90 @@ export const theme: ThemeData = {
   --sync-avatar-color-8: rgb(242, 182, 222) !important;
   --tab-background-active: transparent !important;
   --tab-container-background: transparent !important;
-  --tab-divider-color: rgba(119, 124, 156, 0.25) !important;
-  --tab-outline-color: rgba(119, 124, 156, 0.2) !important;
-  --tab-switcher-background: rgb(35, 36, 41) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(35, 36, 41), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(112, 123, 194) !important;
-  --tab-text-color: rgb(116, 119, 139) !important;
-  --tab-text-color-active: rgb(184, 186, 199) !important;
-  --tab-text-color-focused: rgb(184, 186, 199) !important;
-  --tab-text-color-focused-active: rgb(184, 186, 199) !important;
-  --tab-text-color-focused-active-current: rgb(211, 213, 222) !important;
-  --tab-text-color-focused-highlighted: rgb(144, 155, 208) !important;
-  --table-add-button-border-color: rgba(119, 124, 156, 0.2) !important;
-  --table-border-color: rgba(119, 124, 156, 0.2) !important;
-  --table-drag-handle-background-active: rgb(112, 123, 194) !important;
-  --table-drag-handle-color: rgb(116, 119, 139) !important;
+  --tab-divider-color: hsla(232, 16%, 54%, 0.25) !important;
+  --tab-outline-color: hsla(232, 16%, 54%, 0.2) !important;
+  --tab-switcher-background: hsl(232, 8%, 15.30612%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(232, 8%, 15.30612%), transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(232, 40%, 60%) !important;
+  --tab-text-color: hsl(232, 9%, 50%) !important;
+  --tab-text-color-active: hsl(232, 12%, 75%) !important;
+  --tab-text-color-focused: hsl(232, 12%, 75%) !important;
+  --tab-text-color-focused-active: hsl(232, 12%, 75%) !important;
+  --tab-text-color-focused-active-current: hsl(232, 15%, 85%) !important;
+  --tab-text-color-focused-highlighted: hsl(229, 40.8%, 69%) !important;
+  --table-add-button-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --table-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --table-drag-handle-background-active: hsl(232, 40%, 60%) !important;
+  --table-drag-handle-color: hsl(232, 9%, 50%) !important;
   --table-header-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --table-header-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --table-header-border-color: rgba(119, 124, 156, 0.2) !important;
-  --table-header-color: rgb(211, 213, 222) !important;
+  --table-header-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --table-header-color: hsl(232, 15%, 85%) !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(112, 123, 194, 0.1) !important;
-  --table-selection-border-color: rgb(112, 123, 194) !important;
+  --table-selection: hsla(232,
+        40%,
+        60%, 0.1) !important;
+  --table-selection-border-color: hsl(232, 40%, 60%) !important;
   --table-width: 88cqw !important;
-  --tag-background: rgba(112, 123, 194, 0.1) !important;
-  --tag-background-hover: rgba(112, 123, 194, 0.2) !important;
-  --tag-border-color: rgba(112, 123, 194, 0.15) !important;
-  --tag-border-color-hover: rgba(112, 123, 194, 0.15) !important;
+  --tag-background: hsla(232,
+        40%,
+        60%, 0.1) !important;
+  --tag-background-hover: hsla(232,
+        40%,
+        60%, 0.2) !important;
+  --tag-border-color: hsla(232,
+        40%,
+        60%, 0.15) !important;
+  --tag-border-color-hover: hsla(232,
+        40%,
+        60%, 0.15) !important;
   --tag-border-width: 1px !important;
-  --tag-color: rgb(144, 155, 208) !important;
-  --tag-color-hover: rgb(144, 155, 208) !important;
-  --tertiary: rgb(172, 182, 221) !important;
-  --text-accent: rgb(144, 155, 208) !important;
-  --text-accent-hover: rgb(172, 182, 221) !important;
+  --tag-color: hsl(229, 40.8%, 69%) !important;
+  --tag-color-hover: hsl(229, 40.8%, 69%) !important;
+  --tertiary: hsl(227, 42%, 77.4%) !important;
+  --text-accent: hsl(229, 40.8%, 69%) !important;
+  --text-accent-hover: hsl(227, 42%, 77.4%) !important;
   --text-error: rgb(255, 120, 129) !important;
-  --text-faint: rgb(116, 119, 139) !important;
+  --text-faint: hsl(232, 9%, 50%) !important;
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --text-muted: rgb(184, 186, 199) !important;
-  --text-normal: rgb(211, 213, 222) !important;
-  --text-selection: rgba(112, 123, 194, 0.4) !important;
+  --text-muted: hsl(232, 12%, 75%) !important;
+  --text-normal: hsl(232, 15%, 85%) !important;
+  --text-selection: hsla(232,
+        40%,
+        60%, 0.4) !important;
   --text-success: rgb(124, 211, 124) !important;
   --text-warning: rgb(251, 187, 131) !important;
-  --textHighlight: rgba(90, 93, 114, 0.25) !important;
+  --textHighlight: hsla(232, 12%, 40%, 0.25) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgba(119, 124, 156, 0.2) !important;
-  --titlebar-text-color: rgb(184, 186, 199) !important;
-  --titlebar-text-color-focused: rgb(211, 213, 222) !important;
+  --titlebar-border-color: hsla(232, 16%, 54%, 0.2) !important;
+  --titlebar-text-color: hsl(232, 12%, 75%) !important;
+  --titlebar-text-color-focused: hsl(232, 15%, 85%) !important;
   --toggle-thumb-color-dark: white !important;
   --toggle-thumb-enabled-color: white !important;
   --toggle-thumb-enabled-color-dark: white !important;
-  --toggle-thumb-enabled-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.1), inset 0px -1px 1px rgba(255, 255, 255, 0.3), inset 0px -4px 6px rgba(112, 123, 194, 0.4), inset 0px 4px 4px rgba(255, 255, 255, 0.4) !important;
-  --toggle-thumb-enabled-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.1), inset 0px -1px 1px rgba(255, 255, 255, 0.3), inset 0px -4px 6px rgba(112, 123, 194, 0.4), inset 0px 4px 4px rgba(255, 255, 255, 0.4) !important;
+  --toggle-thumb-enabled-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.1), inset 0px -1px 1px rgba(255, 255, 255, 0.3), inset 0px -4px 6px hsla(232,
+        40%,
+        60%, 0.4), inset 0px 4px 4px rgba(255, 255, 255, 0.4) !important;
+  --toggle-thumb-enabled-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.1), inset 0px -1px 1px rgba(255, 255, 255, 0.3), inset 0px -4px 6px hsla(232,
+        40%,
+        60%, 0.4), inset 0px 4px 4px rgba(255, 255, 255, 0.4) !important;
   --toggle-thumb-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(255, 255, 255, 0.3), inset 0px -4px 6px rgba(0, 0, 0, 0.2), inset 0px 4px 4px rgba(255, 255, 255, 0.4) !important;
   --toggle-thumb-shadow-dark: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(255, 255, 255, 0.3), inset 0px -4px 6px rgba(0, 0, 0, 0.2), inset 0px 4px 4px rgba(255, 255, 255, 0.4) !important;
-  --toggle-track-color: rgba(119, 124, 156, 0.25) !important;
-  --toggle-track-color-dark: rgba(119, 124, 156, 0.25) !important;
-  --toggle-track-enabled-color: rgb(112, 123, 194) !important;
-  --toggle-track-enabled-color-dark: rgb(112, 123, 194) !important;
-  --toggle-track-hovered-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px rgba(119, 124, 156, 0.2) !important;
-  --toggle-track-hovered-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px rgba(119, 124, 156, 0.2) !important;
-  --toggle-track-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px rgba(119, 124, 156, 0.2) !important;
-  --toggle-track-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px rgba(119, 124, 156, 0.2) !important;
-  --vault-profile-color: rgb(211, 213, 222) !important;
-  --vault-profile-color-hover: rgb(211, 213, 222) !important;
+  --toggle-track-color: hsla(232, 16%, 54%, 0.25) !important;
+  --toggle-track-color-dark: hsla(232, 16%, 54%, 0.25) !important;
+  --toggle-track-enabled-color: hsl(232, 40%, 60%) !important;
+  --toggle-track-enabled-color-dark: hsl(232, 40%, 60%) !important;
+  --toggle-track-hovered-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px hsla(232, 16%, 54%, 0.2) !important;
+  --toggle-track-hovered-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px hsla(232, 16%, 54%, 0.2) !important;
+  --toggle-track-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px hsla(232, 16%, 54%, 0.2) !important;
+  --toggle-track-shadow-dark: inset 0px -1px 2px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px hsla(232, 16%, 54%, 0.2) !important;
+  --vault-profile-color: hsl(232, 15%, 85%) !important;
+  --vault-profile-color-hover: hsl(232, 15%, 85%) !important;
   --workspace-background-translucent: hsla(232,
-            7%,
-            21%, 0.6) !important;
-  --workspace-divider-color: rgba(119, 124, 156, 0.2) !important;
+            7.40741%,
+            20.83333%, 0.6) !important;
+  --workspace-divider-color: hsla(232, 16%, 54%, 0.2) !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -1049,9 +1078,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(119, 124, 156, 0.3);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-left-color: rgba(119, 124, 156, 0.3);
   border-right-color: rgba(119, 124, 156, 0.3);
   border-top-color: rgba(119, 124, 156, 0.3);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   color: rgb(211, 213, 222);
 }
 
@@ -1430,8 +1463,10 @@ html[saved-theme="dark"] body sup {
   --anim-in: 150ms 75ms cubic-bezier(0, 0.55, 0.45, 1) !important;
   --anim-out: 300ms 600ms cubic-bezier(0, 0.55, 0.45, 1) !important;
   --anim-speed: 1 !important;
-  --background-activated-file-light: rgba(158, 159, 169, 0.15) !important;
-  --background-activated-tab-header-dark: rgba(75, 99, 251, 0.15) !important;
+  --background-activated-file-light: hsla(232, 6%, 64%, 0.15) !important;
+  --background-activated-tab-header-dark: hsla(232,
+        96%,
+        64%, 0.15) !important;
   --background-activated-tab-header-light: #ffffff !important;
   --background-alt-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --background-alt-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
@@ -1462,58 +1497,63 @@ html[saved-theme="dark"] body sup {
   --background-mod-root-split: #ffffff !important;
   --background-mod-root-split-dark: #ffffff !important;
   --background-mod-root-split-light: #ffffff !important;
-  --background-modifier-active-hover: rgba(75, 99, 251, 0.15) !important;
-  --background-modifier-border: rgba(128, 138, 198, 0.2) !important;
-  --background-modifier-border-focus: rgba(128, 138, 198, 0.3) !important;
-  --background-modifier-border-hover: rgba(128, 138, 198, 0.25) !important;
-  --background-modifier-border-muted: rgba(128, 138, 198, 0.1) !important;
+  --background-modifier-active-hover: hsla(232,
+        96%,
+        64%, 0.15) !important;
+  --background-modifier-border: hsla(232, 38.4%, 64%, 0.2) !important;
+  --background-modifier-border-focus: hsla(232, 38.4%, 64%, 0.3) !important;
+  --background-modifier-border-hover: hsla(232, 38.4%, 64%, 0.25) !important;
+  --background-modifier-border-muted: hsla(232, 38.4%, 64%, 0.1) !important;
   --background-modifier-error: rgb(221, 44, 56) !important;
   --background-modifier-error-hover: rgb(221, 44, 56) !important;
   --background-modifier-error-rgb: 221, 44, 56 !important;
   --background-modifier-form-field: transparent !important;
   --background-modifier-form-field-hover: transparent !important;
-  --background-modifier-hover: rgba(158, 159, 169, 0.15) !important;
+  --background-modifier-hover: hsla(232, 6%, 64%, 0.15) !important;
   --background-modifier-success: rgb(29, 165, 29) !important;
   --background-modifier-success-rgb: 29, 165, 29 !important;
   --background-secondary: hsl(232,
             16%,
-            98%) !important;
+            97.75%) !important;
   --background-tertiary: hsl(232,
             64%,
             96.4%) !important;
   --background-underlying: hsl(232,
             64%,
-            96%) !important;
+            96.4%) !important;
   --background-underlying-CSS-blend-mode-dark: soft-light, luminosity, hue, luminosity, hard-light !important;
   --background-underlying-CSS-blend-mode-light: overlay, color-burn !important;
   --background-underlying-CSS-dark: linear-gradient(317deg, rgb(112, 55, 205) 0%, rgb(29, 12, 32) 19%, rgb(101, 31, 113) 19%, rgb(101, 31, 113) 33%), radial-gradient(100% 100% at 90% 9%, rgb(29, 12, 32) 0%, rgb(29, 12, 32) 100%), linear-gradient(109deg, rgb(104, 178, 248) 0%, rgb(80, 110, 229) 15%, rgb(112, 55, 205) 34%, rgb(104, 178, 248) 54%, rgb(104, 178, 248) 65%), radial-gradient(100% 100% at 20% 45%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%), radial-gradient(100% 100% at 90% 27%, rgb(80, 110, 229) 0%, rgb(101, 31, 113) 100%), linear-gradient(339deg, rgb(101, 31, 113) 0%, rgb(104, 178, 248) 12%, rgb(101, 31, 113) 14%, rgb(80, 110, 229) 19%, rgb(101, 31, 113) 20%, rgb(29, 12, 32) 30%) !important;
   --background-underlying-CSS-light: radial-gradient(100% 100% at 13% 50%, rgb(90, 109, 237) 0%, rgb(224, 218, 247) 100%), linear-gradient(6deg, rgb(235, 242, 252) 0%, rgb(90, 109, 237) 5%, rgb(166, 126, 241) 7%, rgb(224, 218, 247) 11%, rgb(90, 109, 237) 16%), radial-gradient(100% 100% at 60% 71%, rgb(224, 218, 247) 0%, rgb(219, 244, 255) 100%), linear-gradient(97deg, rgb(90, 109, 237) 0%, rgb(90, 109, 237) 23%, rgb(90, 109, 237) 53%), linear-gradient(351deg, rgb(235, 242, 252) 0%, rgb(219, 244, 255) 1%, rgb(235, 242, 252) 6%, rgb(224, 218, 247) 10%, rgb(166, 126, 241) 13%, rgb(235, 242, 252) 29%), radial-gradient(100% 100% at 10% 32%, rgb(90, 109, 237) 0%, rgb(219, 244, 255) 100%), radial-gradient(100% 100% at 35% 63%, rgb(224, 218, 247) 0%, rgb(224, 218, 247) 100%) !important;
   --background-underlying-dark: hsl(232,
             64%,
-            96%) !important;
+            96.4%) !important;
   --background-underlying-light: hsl(232,
             64%,
             96.4%) !important;
-  --bases-cards-shadow: 0 0 0 1px rgba(128, 138, 198, 0.2) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgba(128, 138, 198, 0.25) !important;
-  --bases-embed-border-color: rgba(128, 138, 198, 0.2) !important;
-  --bases-group-heading-property-color: rgb(84, 86, 100) !important;
-  --bases-table-border-color: rgba(128, 138, 198, 0.2) !important;
-  --bases-table-cell-background-selected: rgba(75, 99, 251, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgba(128, 138, 198, 0.3) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(99, 122, 253) !important;
-  --bases-table-header-background-hover: rgba(158, 159, 169, 0.15) !important;
-  --bases-table-header-color: rgb(84, 86, 100) !important;
-  --bases-table-summary-background-hover: rgba(158, 159, 169, 0.15) !important;
+  --bases-cards-shadow: 0 0 0 1px hsla(232, 38.4%, 64%, 0.2) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsla(232, 38.4%, 64%, 0.25) !important;
+  --bases-embed-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --bases-group-heading-property-color: hsl(232, 9%, 36%) !important;
+  --bases-table-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --bases-table-cell-background-selected: hsla(232,
+        96%,
+        64%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsla(232, 38.4%, 64%, 0.3) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(231, 96.96%, 68.8%) !important;
+  --bases-table-header-background-hover: hsla(232, 6%, 64%, 0.15) !important;
+  --bases-table-header-color: hsl(232, 9%, 36%) !important;
+  --bases-table-summary-background-hover: hsla(232, 6%, 64%, 0.15) !important;
   --blockquote-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --blockquote-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --blockquote-border-color: rgb(99, 122, 253) !important;
+  --blockquote-border-color: hsl(231, 96.96%, 68.8%) !important;
   --blockquote-border-thickness: 3px !important;
   --blockquote-padding: 8px !important;
   --bold-color: rgb(221, 44, 56) !important;
   --border-radius-activated-file-light: 4px !important;
   --border-radius-activated-tab-header-dark: 6px !important;
   --border-radius-activated-tab-header-light: 6px !important;
+  --button-radius: 6px !important;
   --callout-bug: 221, 44, 56;
   --callout-content-radius: 0px;
   --callout-default: 23, 117, 217;
@@ -1532,7 +1572,7 @@ html[saved-theme="dark"] body sup {
   --canvas-background: transparent !important;
   --canvas-card-border-style: solid !important;
   --canvas-card-border-width: 2px !important;
-  --canvas-card-label-color: rgb(152, 155, 174) !important;
+  --canvas-card-label-color: hsl(232, 12%, 64%) !important;
   --canvas-color-1: 221, 44, 56 !important;
   --canvas-color-2: 222, 116, 23 !important;
   --canvas-color-3: 192, 156, 12 !important;
@@ -1543,54 +1583,54 @@ html[saved-theme="dark"] body sup {
   --card-border-radius-light: 8px !important;
   --card-shadow-border-radius-dark: 7px !important;
   --card-shadow-border-radius-light: 7px !important;
-  --card-shadow-dark: 0 -1px 0 0 rgba(128, 138, 198, 0.2), 0 0 0 1px rgba(128, 138, 198, 0.2) !important;
-  --card-shadow-light: 0 0 0 1px rgba(128, 138, 198, 0.1), 0 0 6px rgba(128, 138, 198, 0.1) !important;
-  --caret-color: rgb(29, 29, 32) !important;
-  --checkbox-border-color: rgb(152, 155, 174) !important;
-  --checkbox-border-color-hover: rgb(152, 155, 174) !important;
+  --card-shadow-dark: 0 -1px 0 0 hsla(232, 38.4%, 64%, 0.2), 0 0 0 1px hsla(232, 38.4%, 64%, 0.2) !important;
+  --card-shadow-light: 0 0 0 1px hsla(232, 38.4%, 64%, 0.1), 0 0 6px hsla(232, 38.4%, 64%, 0.1) !important;
+  --caret-color: hsl(232, 6%, 12%) !important;
+  --checkbox-border-color: hsl(232, 12%, 64%) !important;
+  --checkbox-border-color-hover: hsl(232, 12%, 64%) !important;
   --checkbox-color: rgb(29, 165, 29) !important;
   --checkbox-color-hover: rgb(29, 165, 29) !important;
   --checkbox-radius: 6px !important;
-  --checklist-done-color: rgb(152, 155, 174) !important;
+  --checklist-done-color: hsl(232, 12%, 64%) !important;
   --clickable-icon-radius: 6px !important;
   --code-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --code-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --code-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --code-border: 1px dashed rgba(128, 138, 198, 0.2) !important;
-  --code-border-color: rgba(128, 138, 198, 0.2) !important;
-  --code-border-dark: 1px dashed rgba(128, 138, 198, 0.2) !important;
-  --code-border-light: 1px dashed rgba(128, 138, 198, 0.2) !important;
-  --code-bracket-background: rgba(158, 159, 169, 0.15) !important;
-  --code-comment: rgb(152, 155, 174) !important;
+  --code-border: 1px dashed hsla(232, 38.4%, 64%, 0.2) !important;
+  --code-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --code-border-dark: 1px dashed hsla(232, 38.4%, 64%, 0.2) !important;
+  --code-border-light: 1px dashed hsla(232, 38.4%, 64%, 0.2) !important;
+  --code-bracket-background: hsla(232, 6%, 64%, 0.15) !important;
+  --code-comment: hsl(232, 12%, 64%) !important;
   --code-function: rgb(192, 156, 12) !important;
   --code-important: rgb(222, 116, 23) !important;
   --code-keyword: rgb(221, 19, 153) !important;
-  --code-normal: rgb(84, 86, 100) !important;
+  --code-normal: hsl(232, 9%, 36%) !important;
   --code-operator: rgb(221, 44, 56) !important;
   --code-property: rgb(22, 166, 171) !important;
-  --code-punctuation: rgb(84, 86, 100) !important;
+  --code-punctuation: hsl(232, 9%, 36%) !important;
   --code-string: rgb(29, 165, 29) !important;
   --code-tag: rgb(221, 44, 56) !important;
   --code-value: rgb(143, 71, 225) !important;
-  --collapse-icon-color: rgb(152, 155, 174) !important;
-  --collapse-icon-color-collapsed: rgb(99, 122, 253) !important;
-  --color-accent: rgb(75, 99, 251) !important;
-  --color-accent-1: rgb(99, 122, 253) !important;
-  --color-accent-1-light: rgb(99, 122, 253) !important;
-  --color-accent-2: rgb(124, 148, 254) !important;
-  --color-accent-2-light: rgb(124, 148, 254) !important;
-  --color-accent-3: rgba(128, 138, 198, 0) !important;
-  --color-accent-3-light: rgba(128, 138, 198, 0) !important;
+  --collapse-icon-color: hsl(232, 12%, 64%) !important;
+  --collapse-icon-color-collapsed: hsl(231, 96.96%, 68.8%) !important;
+  --color-accent: hsl(232, 96%, 64%) !important;
+  --color-accent-1: hsl(231, 96.96%, 68.8%) !important;
+  --color-accent-1-light: hsl(231, 96.96%, 68.8%) !important;
+  --color-accent-2: hsl(229, 97.92%, 73.6%) !important;
+  --color-accent-2-light: hsl(229, 97.92%, 73.6%) !important;
+  --color-accent-3: hsla(232, 38.4%, 64%) !important;
+  --color-accent-3-light: hsla(232, 38.4%, 64%) !important;
   --color-accent-hsl: 232,
         96%,
         64% !important;
   --color-accent-hsl-light: 232,
         96%,
         64% !important;
-  --color-accent-light: rgb(75, 99, 251) !important;
-  --color-activated-file-light: rgb(29, 29, 32) !important;
-  --color-activated-tab-header-dark: rgb(29, 29, 32) !important;
-  --color-activated-tab-header-light: rgb(29, 29, 32) !important;
+  --color-accent-light: hsl(232, 96%, 64%) !important;
+  --color-activated-file-light: hsl(232, 6%, 12%) !important;
+  --color-activated-tab-header-dark: hsl(232, 6%, 12%) !important;
+  --color-activated-tab-header-light: hsl(232, 6%, 12%) !important;
   --color-base-15: #f7f7f7 !important;
   --color-base-20: #F0F0F0 !important;
   --color-base-70: #5a5a5a !important;
@@ -1611,31 +1651,31 @@ html[saved-theme="dark"] body sup {
   --color-yellow: rgb(192, 156, 12) !important;
   --color-yellow-rgb: 192, 156, 12 !important;
   --cursor: pointer !important;
-  --dark: rgb(29, 29, 32) !important;
-  --darkgray: rgb(29, 29, 32) !important;
-  --divider-color: rgba(128, 138, 198, 0.2) !important;
-  --divider-color-hover: rgb(99, 122, 253) !important;
+  --dark: hsl(232, 6%, 12%) !important;
+  --darkgray: hsl(232, 6%, 12%) !important;
+  --divider-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --divider-color-hover: hsl(231, 96.96%, 68.8%) !important;
   --dropdown-background: #fcfcfc !important;
   --dropdown-background-hover: #f7f7f7 !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgba(128, 138, 198, 0.2), inset 0 0 0 1px rgba(128, 138, 198, 0.2) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsla(232, 38.4%, 64%, 0.2), inset 0 0 0 1px hsla(232, 38.4%, 64%, 0.2) !important;
   --embed-border-radius: 0px !important;
-  --embed-border-start: 2px solid rgb(99, 122, 253) !important;
+  --embed-border-start: 2px solid hsl(231, 96.96%, 68.8%) !important;
   --empty-state-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3e%3cpath fill='black' fill-opacity='.15' d='M13.32 7.155a4.375 4.375 0 0 1-5.7 6.517l5.7-6.517ZM10 5.625a4.375 4.375 0 0 0-3.32 7.22l5.704-6.514A4.35 4.35 0 0 0 10 5.625ZM18.125 10A8.125 8.125 0 1 1 10 1.875 8.135 8.135 0 0 1 18.125 10Zm-2.5 0a5.6 5.6 0 0 0-1.476-3.793l.382-.483a.626.626 0 1 0-.937-.823l-.384.483a5.625 5.625 0 0 0-7.36 8.409l-.381.483a.625.625 0 0 0 .937.823l.384-.483A5.621 5.621 0 0 0 15.625 10Z'/%3e%3c/svg%3e") !important;
   --flair-background: #fcfcfc !important;
-  --flair-color: rgb(29, 29, 32) !important;
-  --footnote-divider-color: rgba(128, 138, 198, 0.2) !important;
-  --footnote-id-color: rgb(84, 86, 100) !important;
-  --footnote-id-color-no-occurrences: rgb(152, 155, 174) !important;
-  --footnote-input-background-active: rgba(158, 159, 169, 0.15) !important;
+  --flair-color: hsl(232, 6%, 12%) !important;
+  --footnote-divider-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --footnote-id-color: hsl(232, 9%, 36%) !important;
+  --footnote-id-color-no-occurrences: hsl(232, 12%, 64%) !important;
+  --footnote-input-background-active: hsla(232, 6%, 64%, 0.15) !important;
   --frame-right-space: 110px !important;
-  --graph-node: rgb(84, 86, 100) !important;
+  --graph-node: hsl(232, 9%, 36%) !important;
   --graph-node-attachment: rgb(192, 156, 12) !important;
-  --graph-node-focused: rgb(99, 122, 253) !important;
+  --graph-node-focused: hsl(231, 96.96%, 68.8%) !important;
   --graph-node-tag: rgb(29, 165, 29) !important;
-  --graph-node-unresolved: rgb(152, 155, 174) !important;
-  --graph-text: rgb(29, 29, 32) !important;
-  --gray: rgb(84, 86, 100) !important;
-  --grid-background-pattern-color: rgba(128, 138, 198, 0.2) !important;
+  --graph-node-unresolved: hsl(232, 12%, 64%) !important;
+  --graph-text: hsl(232, 6%, 12%) !important;
+  --gray: hsl(232, 9%, 36%) !important;
+  --grid-background-pattern-color: hsla(232, 38.4%, 64%, 0.2) !important;
   --grid-background-pattern-size: 36px !important;
   --h1-accent-color: rgb(221, 44, 56) !important;
   --h1-size: 1.5em !important;
@@ -1654,27 +1694,29 @@ html[saved-theme="dark"] body sup {
   --h6-accent-color: rgb(143, 71, 225) !important;
   --h6-size: 1.125em !important;
   --h6-weight: 575 !important;
-  --heading-formatting: rgb(152, 155, 174) !important;
+  --heading-formatting: hsl(232, 12%, 64%) !important;
   --heading-spacing: 2.5rem !important;
-  --highlight: rgba(158, 159, 169, 0.15) !important;
-  --hr-color: rgba(128, 138, 198, 0.2) !important;
-  --icon-color: rgb(84, 86, 100) !important;
-  --icon-color-active: rgb(99, 122, 253) !important;
-  --icon-color-focused: rgb(29, 29, 32) !important;
-  --icon-color-hover: rgb(84, 86, 100) !important;
+  --highlight: hsla(232, 6%, 64%, 0.15) !important;
+  --hr-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --icon-color: hsl(232, 9%, 36%) !important;
+  --icon-color-active: hsl(231, 96.96%, 68.8%) !important;
+  --icon-color-focused: hsl(232, 6%, 12%) !important;
+  --icon-color-hover: hsl(232, 9%, 36%) !important;
   --inline-code-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --inline-code-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --inline-code-normal: rgb(221, 19, 153) !important;
   --inline-title-size: 1.5em !important;
-  --input-date-separator: rgb(152, 155, 174) !important;
-  --input-placeholder-color: rgb(152, 155, 174) !important;
-  --input-radius-light: 5px !important;
+  --input-date-separator: hsl(232, 12%, 64%) !important;
+  --input-height: 32px !important;
+  --input-placeholder-color: hsl(232, 12%, 64%) !important;
+  --input-radius: 6px !important;
+  --input-radius-light: 6px !important;
   --input-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.16), inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12), inset 0px 2px 0.75px rgba(255, 255, 255, 0.4), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04) !important;
   --input-shadow-hover: 0px 4px 8px -4px rgba(0, 0, 0, 0.16), inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12), inset 0px 2px 0.75px rgba(255, 255, 255, 0.4), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04) !important;
   --input-shadow-hover-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16), inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12), inset 0px 2px 0.75px rgba(255, 255, 255, 0.4), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04) !important;
   --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16), inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12), inset 0px 2px 0.75px rgba(255, 255, 255, 0.4), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04) !important;
-  --interactive-accent: rgb(99, 122, 253) !important;
-  --interactive-accent-hover: rgb(124, 148, 254) !important;
+  --interactive-accent: hsl(231, 96.96%, 68.8%) !important;
+  --interactive-accent-hover: hsl(229, 97.92%, 73.6%) !important;
   --interactive-accent-hsl: 232,
         96%,
         64% !important;
@@ -1683,84 +1725,88 @@ html[saved-theme="dark"] body sup {
   --italic-color: rgb(222, 116, 23) !important;
   --lightgray: hsl(232,
             16%,
-            98%) !important;
+            97.75%) !important;
   --line-height-customize: 1.5 !important;
   --line-normal-opacity: 0.5 !important;
-  --link-color: rgb(99, 122, 253) !important;
-  --link-color-hover: rgb(124, 148, 254) !important;
+  --link-color: hsl(231, 96.96%, 68.8%) !important;
+  --link-color-hover: hsl(229, 97.92%, 73.6%) !important;
   --link-external-color: rgb(23, 117, 217) !important;
   --link-external-color-hover: rgb(23, 117, 217) !important;
-  --link-unresolved-color: rgb(99, 122, 253) !important;
-  --link-unresolved-decoration-color: rgba(75, 99, 251, 0.3) !important;
+  --link-unresolved-color: hsl(231, 96.96%, 68.8%) !important;
+  --link-unresolved-decoration-color: hsla(232,
+        96%,
+        64%, 0.3) !important;
   --list-bullet-size-alt: 0.15em !important;
   --list-indent: 2em !important;
-  --list-marker-color: rgb(152, 155, 174) !important;
-  --list-marker-color-collapsed: rgb(99, 122, 253) !important;
-  --list-marker-color-hover: rgb(84, 86, 100) !important;
+  --list-marker-color: hsl(232, 12%, 64%) !important;
+  --list-marker-color-collapsed: hsl(231, 96.96%, 68.8%) !important;
+  --list-marker-color-hover: hsl(232, 9%, 36%) !important;
   --menu-background: hsl(232,
             16%,
-            98%) !important;
-  --menu-border-color: rgba(128, 138, 198, 0.25) !important;
+            97.75%) !important;
+  --menu-border-color: hsla(232, 38.4%, 64%, 0.25) !important;
   --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028),
         0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
         0px 15px 30px rgba(0, 0, 0, 0.07) !important;
-  --metadata-border-color: rgba(128, 138, 198, 0.2) !important;
-  --metadata-divider-color: rgba(128, 138, 198, 0.2) !important;
-  --metadata-input-background-active: rgba(158, 159, 169, 0.15) !important;
+  --metadata-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --metadata-divider-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --metadata-input-background-active: hsla(232, 6%, 64%, 0.15) !important;
   --metadata-input-height: 28px !important;
-  --metadata-input-text-color: rgb(29, 29, 32) !important;
-  --metadata-label-background-active: rgba(158, 159, 169, 0.15) !important;
-  --metadata-label-text-color: rgb(84, 86, 100) !important;
-  --metadata-label-text-color-hover: rgb(84, 86, 100) !important;
-  --metadata-property-background-active: rgba(158, 159, 169, 0.15) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgba(128, 138, 198, 0.3) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgba(128, 138, 198, 0.25) !important;
+  --metadata-input-text-color: hsl(232, 6%, 12%) !important;
+  --metadata-label-background-active: hsla(232, 6%, 64%, 0.15) !important;
+  --metadata-label-text-color: hsl(232, 9%, 36%) !important;
+  --metadata-label-text-color-hover: hsl(232, 9%, 36%) !important;
+  --metadata-property-background-active: hsla(232, 6%, 64%, 0.15) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsla(232, 38.4%, 64%, 0.3) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(232, 38.4%, 64%, 0.25) !important;
   --mix-blend-mode-on-border-dark: screen !important;
   --mix-blend-mode-on-border-light: normal !important;
-  --modal-border-color: rgba(128, 138, 198, 0.2) !important;
-  --nav-collapse-icon-color: rgb(152, 155, 174) !important;
-  --nav-collapse-icon-color-collapsed: rgb(152, 155, 174) !important;
-  --nav-heading-color: rgb(29, 29, 32) !important;
-  --nav-heading-color-collapsed: rgb(152, 155, 174) !important;
-  --nav-heading-color-collapsed-hover: rgb(84, 86, 100) !important;
-  --nav-heading-color-hover: rgb(29, 29, 32) !important;
-  --nav-item-background-active: rgba(158, 159, 169, 0.15) !important;
-  --nav-item-background-hover: rgba(158, 159, 169, 0.15) !important;
-  --nav-item-background-selected: rgba(75, 99, 251, 0.15) !important;
-  --nav-item-color: rgb(84, 86, 100) !important;
-  --nav-item-color-active: rgb(29, 29, 32) !important;
-  --nav-item-color-highlighted: rgb(99, 122, 253) !important;
-  --nav-item-color-hover: rgb(29, 29, 32) !important;
-  --nav-item-color-selected: rgb(29, 29, 32) !important;
-  --nav-tag-color: rgb(152, 155, 174) !important;
-  --nav-tag-color-active: rgb(84, 86, 100) !important;
-  --nav-tag-color-hover: rgb(84, 86, 100) !important;
+  --modal-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --nav-collapse-icon-color: hsl(232, 12%, 64%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(232, 12%, 64%) !important;
+  --nav-heading-color: hsl(232, 6%, 12%) !important;
+  --nav-heading-color-collapsed: hsl(232, 12%, 64%) !important;
+  --nav-heading-color-collapsed-hover: hsl(232, 9%, 36%) !important;
+  --nav-heading-color-hover: hsl(232, 6%, 12%) !important;
+  --nav-item-background-active: hsla(232, 6%, 64%, 0.15) !important;
+  --nav-item-background-hover: hsla(232, 6%, 64%, 0.15) !important;
+  --nav-item-background-selected: hsla(232,
+        96%,
+        64%, 0.15) !important;
+  --nav-item-color: hsl(232, 9%, 36%) !important;
+  --nav-item-color-active: hsl(232, 6%, 12%) !important;
+  --nav-item-color-highlighted: hsl(231, 96.96%, 68.8%) !important;
+  --nav-item-color-hover: hsl(232, 6%, 12%) !important;
+  --nav-item-color-selected: hsl(232, 6%, 12%) !important;
+  --nav-tag-color: hsl(232, 12%, 64%) !important;
+  --nav-tag-color-active: hsl(232, 9%, 36%) !important;
+  --nav-tag-color-hover: hsl(232, 9%, 36%) !important;
   --new-tab-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2280%22%20height%3D%2280%22%20fill%3D%22none%22%20viewBox%3D%220%200%2080%2080%22%3E%3Cg%20filter%3D%22url(%23a)%22%3E%3Cpath%20fill%3D%22%23000%22%20fill-opacity%3D%22.26%22%20d%3D%22M51.894%2060.617c-.291%202.162-2.41%203.85-4.515%203.267-3-.825-6.474-2.112-9.6-2.352l-4.79-.362a3.163%203.163%200%200%201-2.042-.95l-8.254-8.483a3.15%203.15%200%200%201-.616-3.49S27.18%2037.053%2027.37%2036.47c.19-.582.886-5.66%201.298-8.388a3.153%203.153%200%200%201%201.011-1.875l9.765-8.767a3.165%203.165%200%200%201%204.597.394l8.202%2010.4c.464.59.702%201.32.706%202.07.009%201.97.172%206.016%201.263%208.621%201.062%202.535%203.01%205.272%204.03%206.619.39.517.45%201.216.12%201.773a138.06%20138.06%200%200%201-4.15%206.54c-1.386%202.063-2.028%204.613-2.318%206.761Z%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22%230E0E0E%22%20d%3D%22M51.602%2060.187c-.292%202.171-2.417%203.867-4.528%203.282-3.008-.829-6.491-2.122-9.626-2.362l-4.803-.365a3.168%203.168%200%200%201-2.048-.953l-8.277-8.523a3.168%203.168%200%200%201-.618-3.504S26.82%2036.515%2027.01%2035.93c.19-.585.888-5.686%201.301-8.427a3.17%203.17%200%200%201%201.015-1.883l9.79-8.807a3.17%203.17%200%200%201%204.61.396l8.226%2010.448c.465.59.704%201.326.707%202.078.01%201.98.173%206.043%201.268%208.66%201.064%202.547%203.018%205.296%204.04%206.65a1.6%201.6%200%200%201%20.12%201.78%20137.46%20137.46%200%200%201-4.16%206.57c-1.39%202.072-2.034%204.634-2.325%206.792Z%22%2F%3E%3Cpath%20fill%3D%22url(%23b)%22%20d%3D%22M31.489%2060.433c3.844-7.804%203.736-13.395%202.1-17.384-1.505-3.672-4.304-5.988-6.51-7.425-.047.208-.115.41-.202.605l-5.175%2011.532a3.168%203.168%200%200%200%20.618%203.505l8.277%208.523c.26.267.562.484.892.644Z%22%2F%3E%3Cpath%20fill%3D%22url(%23c)%22%20d%3D%22M47.075%2063.469c2.11.585%204.235-1.11%204.527-3.282.252-1.869.769-4.041%201.806-5.936-2.38-5.121-5.256-7.777-8.41-8.954-3.339-1.246-6.987-.835-10.684.063.826%203.76.331%208.673-2.82%2015.073.358.174.75.28%201.154.309%200%200%202.275.191%204.98.383%202.705.191%206.73%201.59%209.447%202.344Z%22%2F%3E%3Cpath%20fill%3D%22url(%23d)%22%20d%3D%22M41.95%2044.595c1.038.108%202.056.332%203.047.702%203.154%201.177%206.032%203.833%208.411%208.954.16-.292.333-.578.519-.855a138.877%20138.877%200%200%200%204.16-6.57%201.603%201.603%200%200%200-.12-1.78c-1.022-1.354-2.976-4.103-4.04-6.65-1.095-2.617-1.258-6.68-1.267-8.66a3.377%203.377%200%200%200-.708-2.079L43.727%2017.21a3.198%203.198%200%200%200-.136-.162c.603%201.978.562%203.569.19%205.015-.345%201.341-.975%202.558-1.641%203.843-.223.43-.45.87-.672%201.323-.884%201.806-1.68%203.85-1.798%206.592-.118%202.74.444%206.179%202.28%2010.774Z%22%2F%3E%3Cpath%20fill%3D%22url(%23e)%22%20d%3D%22M41.948%2044.594c-1.835-4.595-2.398-8.033-2.28-10.774.118-2.742.915-4.786%201.798-6.592.222-.454.45-.893.673-1.324.665-1.285%201.295-2.501%201.64-3.842.373-1.447.414-3.038-.19-5.017a3.17%203.17%200%200%200-4.472-.232l-9.792%208.807a3.17%203.17%200%200%200-1.014%201.883l-1.192%207.902a3.182%203.182%200%200%201-.04.218c2.206%201.438%205.006%203.754%206.511%207.426.294.717.54%201.486.72%202.31%202.6-.632%205.177-1.022%207.638-.765Z%22%2F%3E%3Cg%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%3E%3Cpath%20fill%3D%22url(%23f)%22%20d%3D%22M39.687%2033.638c-.118%202.72.221%205.839%202.053%2010.424l-.575-.052c-1.643-4.785-2.001-7.238-1.881-9.995.12-2.758%201.01-4.879%201.899-6.688.225-.458.75-1.319.974-1.75.665-1.28%201.108-1.955%201.488-3.124.53-1.633.416-2.406.355-3.176.422%202.783-1.178%205.202-2.388%207.667-.882%201.795-1.807%203.976-1.925%206.694Z%22%2F%3E%3Cpath%20fill%3D%22url(%23g)%22%20d%3D%22M34.131%2043.25c.217.502.422.907.552%201.529l-.48.108c-.2-.726-.354-1.242-.63-1.865-1.654-3.902-4.309-5.91-6.478-7.381%202.62%201.41%205.31%203.616%207.036%207.608Z%22%2F%3E%3Cpath%20fill%3D%22url(%23h)%22%20d%3D%22M34.71%2045.27c.917%204.264-.105%209.683-3.118%2014.95%202.518-5.22%203.74-10.234%202.723-14.866l.396-.085Z%22%2F%3E%3Cpath%20fill%3D%22url(%23i)%22%20d%3D%22M45.11%2044.888c4.94%201.848%206.842%205.908%208.264%209.294-1.756-3.546-4.197-7.462-8.441-8.915-3.23-1.106-5.957-.975-10.619.083l-.104-.462c4.948-1.128%207.535-1.26%2010.9%200Z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient%20id%3D%22b%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(-5.44827%20-20.95522%2013.96424%20-3.63065%2031.076%2059.662)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.44%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23333%22%20stop-opacity%3D%22.52%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22c%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(-9.24927%20-16.1868%2016.18663%20-9.24917%2047.535%2064.623)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23565656%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23151515%22%20stop-opacity%3D%22.71%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22d%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(4.6468%20-35.22462%2026.02364%203.433%2049.53%2050.76)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%237E7E7E%22%20stop-opacity%3D%22.91%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%231E1E1E%22%20stop-opacity%3D%22.6%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22e%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(13.14708%20-30.29344%2020.65904%208.96583%2034.531%2046.293)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23D7D7D7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23414141%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22f%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(-3.34584%2015.42817%20-10.40357%20-2.25617%2044.882%2027.895)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%220%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.17%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22g%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22matrix(8.17858%208.27172%20-17.61805%2017.41967%2026.387%2036.445)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.2%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.44%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22h%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22rotate(80.202%20-7.323%2041.856)%20scale(13.634%2028.9518)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.12%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.35%22%2F%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22i%22%20cx%3D%220%22%20cy%3D%220%22%20r%3D%221%22%20gradientTransform%3D%22rotate(-152.296%2033.168%2019.977)%20scale(20.7745%2065.377)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.21%22%2F%3E%3Cstop%20offset%3D%22.467%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.19%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%22.29%22%2F%3E%3C%2FradialGradient%3E%3Cfilter%20id%3D%22a%22%20width%3D%2239.273%22%20height%3D%2249.867%22%20x%3D%2220.551%22%20y%3D%2215.381%22%20color-interpolation-filters%3D%22sRGB%22%20filterUnits%3D%22userSpaceOnUse%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeBlend%20in%3D%22SourceGraphic%22%20in2%3D%22BackgroundImageFix%22%20mode%3D%22normal%22%20result%3D%22shape%22%2F%3E%3CfeGaussianBlur%20result%3D%22effect1_foregroundBlur_3584_482%22%20stdDeviation%3D%22.624%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3C%2Fsvg%3E") !important;
-  --on-border-dark: rgba(128, 138, 198, 0) !important;
-  --on-border-light: rgba(128, 138, 198, 0) !important;
-  --pill-border-color: rgba(128, 138, 198, 0.2) !important;
-  --pill-border-color-hover: rgba(128, 138, 198, 0.25) !important;
-  --pill-color: rgb(84, 86, 100) !important;
-  --pill-color-hover: rgb(29, 29, 32) !important;
-  --pill-color-remove: rgb(152, 155, 174) !important;
-  --pill-color-remove-hover: rgb(99, 122, 253) !important;
-  --prompt-border-color: rgba(128, 138, 198, 0.2) !important;
+  --on-border-dark: hsla(232, 38.4%, 64%) !important;
+  --on-border-light: hsla(232, 38.4%, 64%) !important;
+  --pill-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --pill-border-color-hover: hsla(232, 38.4%, 64%, 0.25) !important;
+  --pill-color: hsl(232, 9%, 36%) !important;
+  --pill-color-hover: hsl(232, 6%, 12%) !important;
+  --pill-color-remove: hsl(232, 12%, 64%) !important;
+  --pill-color-remove-hover: hsl(231, 96.96%, 68.8%) !important;
+  --prompt-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
   --ribbon-background: hsl(232,
             16%,
-            98%) !important;
+            97.75%) !important;
   --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.15) !important;
   --scrollbar-bg: rgba(0, 0, 0, 0) !important;
-  --search-clear-button-color: rgb(84, 86, 100) !important;
-  --search-icon-color: rgb(84, 86, 100) !important;
+  --search-clear-button-color: hsl(232, 9%, 36%) !important;
+  --search-icon-color: hsl(232, 9%, 36%) !important;
   --search-result-background: transparent !important;
-  --secondary: rgb(99, 122, 253) !important;
-  --setting-group-heading-color: rgb(29, 29, 32) !important;
-  --setting-items-border-color: rgba(128, 138, 198, 0.2) !important;
+  --secondary: hsl(231, 96.96%, 68.8%) !important;
+  --setting-group-heading-color: hsl(232, 6%, 12%) !important;
+  --setting-items-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
   --shadow-activated-file-light: none !important;
-  --shadow-activated-tab-header-dark: inset 0 0 0 1px rgba(128, 138, 198, 0.2), inset 0 2px 4px 0 rgba(128, 138, 198, 0.1), inset 0 1px 1px 1px rgba(128, 138, 198, 0.2) !important;
-  --shadow-activated-tab-header-light: 0 -1px 0 0 rgba(255, 255, 255, 0.24), 0 0 0 1px rgba(128, 138, 198, 0.2), 0 0 4px rgba(128, 138, 198, 0.2), 0px 2px 6px -4px rgba(128, 138, 198, 0.1), inset 0 -1px 3px 0 hsl(232,
+  --shadow-activated-tab-header-dark: inset 0 0 0 1px hsla(232, 38.4%, 64%, 0.2), inset 0 2px 4px 0 hsla(232, 38.4%, 64%, 0.1), inset 0 1px 1px 1px hsla(232, 38.4%, 64%, 0.2) !important;
+  --shadow-activated-tab-header-light: 0 -1px 0 0 rgba(255, 255, 255, 0.24), 0 0 0 1px hsla(232, 38.4%, 64%, 0.2), 0 0 4px hsla(232, 38.4%, 64%, 0.2), 0px 2px 6px -4px hsla(232, 38.4%, 64%, 0.1), inset 0 -1px 3px 0 hsl(232,
             64%,
-            96%) !important;
+            96.4%) !important;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
         0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
         0px 30px 90px rgba(0, 0, 0, 0.2) !important;
@@ -1768,13 +1814,13 @@ html[saved-theme="dark"] body sup {
         0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
         0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --sidebar-markdown-font-size: 14.4px !important;
-  --slider-thumb-border-color: rgba(128, 138, 198, 0.25) !important;
+  --slider-thumb-border-color: hsla(232, 38.4%, 64%, 0.25) !important;
   --slider-thumb-border-width: 0 !important;
-  --slider-track-background: rgba(128, 138, 198, 0.2) !important;
+  --slider-track-background: hsla(232, 38.4%, 64%, 0.2) !important;
   --status-bar-background: transparent !important;
   --status-bar-border-color: transparent !important;
   --status-bar-border-width: 0 !important;
-  --status-bar-text-color: rgb(84, 86, 100) !important;
+  --status-bar-text-color: hsl(232, 9%, 36%) !important;
   --sync-avatar-color-1: rgb(221, 44, 56) !important;
   --sync-avatar-color-2: rgb(222, 116, 23) !important;
   --sync-avatar-color-3: rgb(192, 156, 12) !important;
@@ -1785,76 +1831,92 @@ html[saved-theme="dark"] body sup {
   --sync-avatar-color-8: rgb(221, 19, 153) !important;
   --tab-background-active: transparent !important;
   --tab-container-background: transparent !important;
-  --tab-divider-color: rgba(128, 138, 198, 0.25) !important;
-  --tab-outline-color: rgba(128, 138, 198, 0.2) !important;
+  --tab-divider-color: hsla(232, 38.4%, 64%, 0.25) !important;
+  --tab-outline-color: hsla(232, 38.4%, 64%, 0.2) !important;
   --tab-switcher-background: hsl(232,
             16%,
-            98%) !important;
+            97.75%) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, hsl(232,
             16%,
-            98%), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(75, 99, 251) !important;
-  --tab-text-color: rgb(152, 155, 174) !important;
-  --tab-text-color-active: rgb(84, 86, 100) !important;
-  --tab-text-color-focused: rgb(84, 86, 100) !important;
-  --tab-text-color-focused-active: rgb(84, 86, 100) !important;
-  --tab-text-color-focused-active-current: rgb(29, 29, 32) !important;
-  --tab-text-color-focused-highlighted: rgb(99, 122, 253) !important;
-  --table-add-button-border-color: rgba(128, 138, 198, 0.2) !important;
-  --table-border-color: rgba(128, 138, 198, 0.2) !important;
-  --table-drag-handle-background-active: rgb(99, 122, 253) !important;
-  --table-drag-handle-color: rgb(152, 155, 174) !important;
+            97.75%), transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(232, 96%, 64%) !important;
+  --tab-text-color: hsl(232, 12%, 64%) !important;
+  --tab-text-color-active: hsl(232, 9%, 36%) !important;
+  --tab-text-color-focused: hsl(232, 9%, 36%) !important;
+  --tab-text-color-focused-active: hsl(232, 9%, 36%) !important;
+  --tab-text-color-focused-active-current: hsl(232, 6%, 12%) !important;
+  --tab-text-color-focused-highlighted: hsl(231, 96.96%, 68.8%) !important;
+  --table-add-button-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --table-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --table-drag-handle-background-active: hsl(231, 96.96%, 68.8%) !important;
+  --table-drag-handle-color: hsl(232, 12%, 64%) !important;
   --table-header-background-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --table-header-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
-  --table-header-border-color: rgba(128, 138, 198, 0.2) !important;
-  --table-header-color: rgb(29, 29, 32) !important;
+  --table-header-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --table-header-color: hsl(232, 6%, 12%) !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(75, 99, 251, 0.1) !important;
-  --table-selection-border-color: rgb(99, 122, 253) !important;
+  --table-selection: hsla(232,
+        96%,
+        64%, 0.1) !important;
+  --table-selection-border-color: hsl(231, 96.96%, 68.8%) !important;
   --table-width: 88cqw !important;
-  --tag-background: rgba(75, 99, 251, 0.1) !important;
-  --tag-background-hover: rgba(75, 99, 251, 0.2) !important;
-  --tag-border-color: rgba(75, 99, 251, 0.15) !important;
-  --tag-border-color-hover: rgba(75, 99, 251, 0.15) !important;
+  --tag-background: hsla(232,
+        96%,
+        64%, 0.1) !important;
+  --tag-background-hover: hsla(232,
+        96%,
+        64%, 0.2) !important;
+  --tag-border-color: hsla(232,
+        96%,
+        64%, 0.15) !important;
+  --tag-border-color-hover: hsla(232,
+        96%,
+        64%, 0.15) !important;
   --tag-border-width: 1px !important;
-  --tag-color: rgb(99, 122, 253) !important;
-  --tag-color-hover: rgb(99, 122, 253) !important;
-  --tertiary: rgb(124, 148, 254) !important;
-  --text-accent: rgb(99, 122, 253) !important;
-  --text-accent-hover: rgb(124, 148, 254) !important;
+  --tag-color: hsl(231, 96.96%, 68.8%) !important;
+  --tag-color-hover: hsl(231, 96.96%, 68.8%) !important;
+  --tertiary: hsl(229, 97.92%, 73.6%) !important;
+  --text-accent: hsl(231, 96.96%, 68.8%) !important;
+  --text-accent-hover: hsl(229, 97.92%, 73.6%) !important;
   --text-error: rgb(221, 44, 56) !important;
-  --text-faint: rgb(152, 155, 174) !important;
+  --text-faint: hsl(232, 12%, 64%) !important;
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
-  --text-muted: rgb(84, 86, 100) !important;
-  --text-normal: rgb(29, 29, 32) !important;
-  --text-selection: rgba(75, 99, 251, 0.2) !important;
+  --text-muted: hsl(232, 9%, 36%) !important;
+  --text-normal: hsl(232, 6%, 12%) !important;
+  --text-selection: hsla(232,
+        96%,
+        64%, 0.2) !important;
   --text-success: rgb(29, 165, 29) !important;
   --text-warning: rgb(222, 116, 23) !important;
-  --textHighlight: rgba(158, 159, 169, 0.15) !important;
+  --textHighlight: hsla(232, 6%, 64%, 0.15) !important;
   --titlebar-background: transparent !important;
   --titlebar-background-focused: transparent !important;
-  --titlebar-border-color: rgba(128, 138, 198, 0.2) !important;
-  --titlebar-text-color: rgb(84, 86, 100) !important;
-  --titlebar-text-color-focused: rgb(29, 29, 32) !important;
+  --titlebar-border-color: hsla(232, 38.4%, 64%, 0.2) !important;
+  --titlebar-text-color: hsl(232, 9%, 36%) !important;
+  --titlebar-text-color-focused: hsl(232, 6%, 12%) !important;
   --toggle-thumb-color-light: white !important;
   --toggle-thumb-enabled-color: white !important;
   --toggle-thumb-enabled-color-light: white !important;
-  --toggle-thumb-enabled-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(75, 99, 251, 0.15) !important;
-  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(75, 99, 251, 0.15) !important;
+  --toggle-thumb-enabled-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px hsla(232,
+        96%,
+        64%, 0.15) !important;
+  --toggle-thumb-enabled-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px hsla(232,
+        96%,
+        64%, 0.15) !important;
   --toggle-thumb-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.05) !important;
   --toggle-thumb-shadow-light: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(255, 255, 255, 0.4), inset 0px -4px 4px rgba(0, 0, 0, 0.05) !important;
-  --toggle-track-color: rgba(128, 138, 198, 0.25) !important;
-  --toggle-track-color-light: rgba(128, 138, 198, 0.25) !important;
-  --toggle-track-enabled-color: rgb(99, 122, 253) !important;
-  --toggle-track-enabled-color-light: rgb(99, 122, 253) !important;
+  --toggle-track-color: hsla(232, 38.4%, 64%, 0.25) !important;
+  --toggle-track-color-light: hsla(232, 38.4%, 64%, 0.25) !important;
+  --toggle-track-enabled-color: hsl(231, 96.96%, 68.8%) !important;
+  --toggle-track-enabled-color-light: hsl(231, 96.96%, 68.8%) !important;
   --toggle-track-hovered-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px #ffffff, 0px 2px 4px rgba(0, 0, 0, 0.04) !important;
   --toggle-track-hovered-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px #ffffff, 0px 2px 4px rgba(0, 0, 0, 0.04) !important;
   --toggle-track-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px #ffffff, 0px 2px 4px rgba(0, 0, 0, 0.04) !important;
   --toggle-track-shadow-light: inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 1px 0px #ffffff, 0px 2px 4px rgba(0, 0, 0, 0.04) !important;
-  --vault-profile-color: rgb(29, 29, 32) !important;
-  --vault-profile-color-hover: rgb(29, 29, 32) !important;
+  --vault-profile-color: hsl(232, 6%, 12%) !important;
+  --vault-profile-color-hover: hsl(232, 6%, 12%) !important;
   --workspace-background-translucent: rgba(246, 246, 246, 0.8) !important;
-  --workspace-divider-color: rgba(128, 138, 198, 0.2) !important;
+  --workspace-divider-color: hsla(232, 38.4%, 64%, 0.2) !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -2414,9 +2476,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(128, 137, 198, 0.3);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-left-color: rgba(128, 137, 198, 0.3);
   border-right-color: rgba(128, 137, 198, 0.3);
   border-top-color: rgba(128, 137, 198, 0.3);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   color: rgb(29, 29, 32);
 }
 

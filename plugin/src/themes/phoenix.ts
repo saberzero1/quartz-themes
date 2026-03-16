@@ -9,6 +9,7 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #534f4e !important;
   --background-primary: #212121 !important;
   --background-primary-alt: #282828 !important;
@@ -21,12 +22,14 @@ export const theme: ThemeData = {
   --bases-table-border-color: #534f4e !important;
   --bases-table-cell-background-active: #212121 !important;
   --bases-table-cell-background-disabled: #282828 !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #ed5b0f !important;
   --bases-table-group-background: #282828 !important;
   --bases-table-header-background: #212121 !important;
   --bases-table-summary-background: #212121 !important;
   --blockquote-border-color: #ed5b0f !important;
   --bodyFont: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bold-weight: 600 !important;
   --bright-orange-v: #fe8019 !important;
   --bright-red: #fb4934 !important;
   --bright-yellow-v: #fabd2f !important;
@@ -34,11 +37,13 @@ export const theme: ThemeData = {
   --callout-bg-darken-pct: 0%;
   --callout-blend-mode: normal;
   --callout-padding: 12px 12px 12px 20px;
+  --callout-title-weight: 600;
   --canvas-background: #212121 !important;
   --canvas-card-label-color: #625e5e !important;
   --caret-color: #eadad9 !important;
   --checkbox-border-color: #625e5e !important;
   --checkbox-color: #ed5b0f !important;
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-marker-color: #212121 !important;
   --code-background: #1a1a1a !important;
   --code-block: #cccccc !important;
@@ -50,6 +55,9 @@ export const theme: ThemeData = {
   --codeFont: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #625e5e !important;
   --collapse-icon-color-collapsed: #fe750e !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --dark: #eadad9 !important;
   --dark0: #282828 !important;
   --dark0-hard: #1d2021 !important;
@@ -85,21 +93,27 @@ export const theme: ThemeData = {
   --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, #bc0104) !important;
   --h1-link-ul-color: color-mix(in srgb, #bc0104 33%, transparent) !important;
   --h1-size: 2.2em !important;
+  --h1-weight: 500 !important;
   --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, #ea4f0d) !important;
   --h2-link-ul-color: color-mix(in srgb, #ea4f0d 33%, transparent) !important;
   --h2-size: 2.0em !important;
+  --h2-weight: 500 !important;
   --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, #fe750e) !important;
   --h3-link-ul-color: color-mix(in srgb, #fe750e 33%, transparent) !important;
   --h3-size: 1.85em !important;
+  --h3-weight: 500 !important;
   --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, #fea30f) !important;
   --h4-link-ul-color: color-mix(in srgb, #fea30f 33%, transparent) !important;
   --h4-size: 1.6em !important;
+  --h4-weight: 500 !important;
   --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, #c0c90a) !important;
   --h5-link-ul-color: color-mix(in srgb, #c0c90a 33%, transparent) !important;
   --h5-size: 1.47em !important;
+  --h5-weight: 500 !important;
   --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, #27cac7) !important;
   --h6-link-ul-color: color-mix(in srgb, #27cac7 33%, transparent) !important;
   --h6-size: 1.35em !important;
+  --h6-weight: 500 !important;
   --headerFont: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #625e5e !important;
   --heading-spacing: 0.625rem !important;
@@ -111,9 +125,11 @@ export const theme: ThemeData = {
   --img-border-radius: 2px !important;
   --inline-code: #cccccc !important;
   --inline-title-size: 2.2em !important;
+  --inline-title-weight: 500 !important;
   --input-date-separator: #625e5e !important;
   --input-placeholder-color: #625e5e !important;
   --interactive-accent: #ed5b0f !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-accent-rgb: #fe750e !important;
   --interactive-before: #7c6f64 !important;
   --light: #212121 !important;
@@ -135,6 +151,7 @@ export const theme: ThemeData = {
   --link-external-decoration-hover: none !important;
   --link-unresolved-color: #fe750e !important;
   --link-unresolved-decoration: none !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-hover: none !important;
   --list-indent: 1em !important;
   --list-marker-color: #625e5e !important;
@@ -144,6 +161,7 @@ export const theme: ThemeData = {
   --metadata-border-color: #534f4e !important;
   --metadata-divider-color: #534f4e !important;
   --metadata-input-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #eadad9 !important;
   --metadata-label-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --modal-background: #212121 !important;
@@ -152,6 +170,7 @@ export const theme: ThemeData = {
   --nav-heading-color: #eadad9 !important;
   --nav-heading-color-collapsed: #625e5e !important;
   --nav-heading-color-hover: #eadad9 !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color-active: #eadad9 !important;
   --nav-item-color-highlighted: #fe750e !important;
   --nav-item-color-hover: #eadad9 !important;
@@ -212,6 +231,7 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #eadad9 !important;
   --setting-items-background: #282828 !important;
   --setting-items-border-color: #534f4e !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --size-code: 14.4px !important;
   --size-normal: 16px !important;
   --slider-track-background: #534f4e !important;
@@ -223,6 +243,7 @@ export const theme: ThemeData = {
   --tab-outline-color: #534f4e !important;
   --tab-switcher-background: #191717 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #191717, transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #625e5e !important;
   --tab-text-color-focused-active-current: #eadad9 !important;
   --tab-text-color-focused-highlighted: #fe750e !important;
@@ -232,7 +253,13 @@ export const theme: ThemeData = {
   --table-drag-handle-color: #625e5e !important;
   --table-header-border-color: #534f4e !important;
   --table-header-color: #eadad9 !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: #ed5b0f !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #fe750e !important;
   --tag-color-hover: #fe750e !important;
   --tertiary: #fe9109 !important;
@@ -266,6 +293,7 @@ export const theme: ThemeData = {
   --vault-profile-color: #eadad9 !important;
   --vault-profile-color-hover: #eadad9 !important;
   --vim-cursor: #fe750e !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1022,6 +1050,7 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #534f4e !important;
   --background-primary: #dbc5af !important;
   --background-primary-alt: #e7cfb8 !important;
@@ -1035,6 +1064,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: #534f4e !important;
   --bases-table-cell-background-active: #dbc5af !important;
   --bases-table-cell-background-disabled: #e7cfb8 !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #ed5b0f !important;
   --bases-table-group-background: #e7cfb8 !important;
   --bases-table-header-background: #dbc5af !important;
@@ -1043,6 +1073,7 @@ html[saved-theme="dark"] body sup {
   --blockquote-border-color: #ed5b0f !important;
   --blur-background: color-mix(in srgb, #dbc5af 65%, transparent) linear-gradient(#dbc5af, color-mix(in srgb, #dbc5af 65%, transparent)) !important;
   --bodyFont: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bold-weight: 600 !important;
   --bright-orange-v: #fe8019 !important;
   --bright-red: #fb4934 !important;
   --bright-yellow-v: #fabd2f !important;
@@ -1050,12 +1081,14 @@ html[saved-theme="dark"] body sup {
   --callout-bg-darken-pct: 5%;
   --callout-blend-mode: normal;
   --callout-padding: 12px 12px 12px 20px;
+  --callout-title-weight: 600;
   --canvas-background: #dbc5af !important;
   --canvas-card-label-color: #534f4e !important;
   --caret-color: #1e1e1e !important;
   --checkbox-border-color: #534f4e !important;
   --checkbox-border-color-hover: #534f4e !important;
   --checkbox-color: #ed5b0f !important;
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-marker-color: #dbc5af !important;
   --checklist-done-color: #534f4e !important;
   --code-background: #b9a693 !important;
@@ -1069,6 +1102,9 @@ html[saved-theme="dark"] body sup {
   --codeFont: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #534f4e !important;
   --collapse-icon-color-collapsed: #fe750e !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --dark: #1e1e1e !important;
   --dark0: #282828 !important;
   --dark0-hard: #1d2021 !important;
@@ -1109,21 +1145,27 @@ html[saved-theme="dark"] body sup {
   --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, #bc0104) !important;
   --h1-link-ul-color: color-mix(in srgb, #bc0104 33%, transparent) !important;
   --h1-size: 2.2em !important;
+  --h1-weight: 500 !important;
   --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, #ea4f0d) !important;
   --h2-link-ul-color: color-mix(in srgb, #ea4f0d 33%, transparent) !important;
   --h2-size: 2.0em !important;
+  --h2-weight: 500 !important;
   --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, #fe750e) !important;
   --h3-link-ul-color: color-mix(in srgb, #fe750e 33%, transparent) !important;
   --h3-size: 1.85em !important;
+  --h3-weight: 500 !important;
   --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, #fea30f) !important;
   --h4-link-ul-color: color-mix(in srgb, #fea30f 33%, transparent) !important;
   --h4-size: 1.6em !important;
+  --h4-weight: 500 !important;
   --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, #c0c90a) !important;
   --h5-link-ul-color: color-mix(in srgb, #c0c90a 33%, transparent) !important;
   --h5-size: 1.47em !important;
+  --h5-weight: 500 !important;
   --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, #27cac7) !important;
   --h6-link-ul-color: color-mix(in srgb, #27cac7 33%, transparent) !important;
   --h6-size: 1.35em !important;
+  --h6-weight: 500 !important;
   --headerFont: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #534f4e !important;
   --heading-spacing: 0.625rem !important;
@@ -1137,9 +1179,11 @@ html[saved-theme="dark"] body sup {
   --img-border-radius: 2px !important;
   --inline-code: #161414 !important;
   --inline-title-size: 2.2em !important;
+  --inline-title-weight: 500 !important;
   --input-date-separator: #534f4e !important;
   --input-placeholder-color: #534f4e !important;
   --interactive-accent: #ed5b0f !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-accent-rgb: #fe750e !important;
   --interactive-before: #a79584 !important;
   --interactive-hover: #e7cfb8 !important;
@@ -1163,6 +1207,7 @@ html[saved-theme="dark"] body sup {
   --link-external-decoration-hover: none !important;
   --link-unresolved-color: #fe750e !important;
   --link-unresolved-decoration: none !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-hover: none !important;
   --list-indent: 1em !important;
   --list-marker-color: #534f4e !important;
@@ -1173,6 +1218,7 @@ html[saved-theme="dark"] body sup {
   --metadata-border-color: #534f4e !important;
   --metadata-divider-color: #534f4e !important;
   --metadata-input-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #1e1e1e !important;
   --metadata-label-font: -apple-system, BlinkMacSystemFont, SF Pro Text, Liberation Sans, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: #534f4e !important;
@@ -1184,6 +1230,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-collapsed: #534f4e !important;
   --nav-heading-color-collapsed-hover: #534f4e !important;
   --nav-heading-color-hover: #1e1e1e !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: #534f4e !important;
   --nav-item-color-active: #1e1e1e !important;
   --nav-item-color-highlighted: #fe750e !important;
@@ -1249,6 +1296,7 @@ html[saved-theme="dark"] body sup {
   --setting-group-heading-color: #1e1e1e !important;
   --setting-items-background: #e7cfb8 !important;
   --setting-items-border-color: #534f4e !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --size-code: 14.4px !important;
   --size-normal: 16px !important;
   --slider-track-background: #534f4e !important;
@@ -1261,6 +1309,7 @@ html[saved-theme="dark"] body sup {
   --tab-outline-color: #534f4e !important;
   --tab-switcher-background: #d0baa6 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #d0baa6, transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #534f4e !important;
   --tab-text-color-active: #534f4e !important;
   --tab-text-color-focused: #534f4e !important;
@@ -1273,7 +1322,13 @@ html[saved-theme="dark"] body sup {
   --table-drag-handle-color: #534f4e !important;
   --table-header-border-color: #534f4e !important;
   --table-header-color: #1e1e1e !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: #ed5b0f !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #fe750e !important;
   --tag-color-hover: #fe750e !important;
   --tertiary: #fe9109 !important;
@@ -1309,6 +1364,7 @@ html[saved-theme="dark"] body sup {
   --vault-profile-color: #1e1e1e !important;
   --vault-profile-color-hover: #1e1e1e !important;
   --vim-cursor: #fe750e !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 

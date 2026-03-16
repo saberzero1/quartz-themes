@@ -168,7 +168,7 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: oklch(
     from
       oklch(
@@ -301,7 +301,7 @@ body.theme-light {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
+  --bases-header-border-width: 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -322,7 +322,7 @@ body.theme-light {
       oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
       75% calc(c * 0.4) h
   ) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
@@ -342,7 +342,7 @@ body.theme-light {
         )
         70% c h
     ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(153, 115, 247) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(257, 88.88%, 70.95%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -404,7 +404,7 @@ body.theme-light {
       l c h / 40%
   ) !important;
   --blockquote-border-color: oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 50% c h / 75%
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 75%
   ) !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-font-style: normal !important;
@@ -503,7 +503,7 @@ body.theme-light {
           )
           l c calc(h + 330)
       )
-      93% calc(c * 0.4) h
+      98% calc(c * 0.4) h
   ) !important;
   --canvas-card-label-color: #ababab !important;
   --canvas-color: 192, 192, 192 !important;
@@ -516,12 +516,26 @@ body.theme-light {
   --canvas-controls-icon-size: 16px !important;
   --canvas-controls-icon-stroke: 2px !important;
   --canvas-controls-radius: 8px !important;
-  --canvas-dot-pattern: #ababab !important;
+  --canvas-dot-pattern: oklch(from #222222 l c h / 0.3) !important;
   --caret-color: #222222 !important;
   --checkbox-border-color: #ababab !important;
   --checkbox-border-color-hover: #5c5c5c !important;
-  --checkbox-color: rgb(153, 115, 247) !important;
-  --checkbox-color-hover: rgb(166, 139, 249) !important;
+  --checkbox-color: oklch(
+    from
+      oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h)
+      80% calc(c * 0.4) h
+  ) !important;
+  --checkbox-color-hover: oklch(
+    from
+      oklch(
+        from
+          oklch(
+            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+          )
+          l c calc(h + 30)
+      )
+      65% calc(c * 0.4) h
+  ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: oklch(
     from
@@ -577,11 +591,11 @@ body.theme-light {
   --code-tag: oklch(from #d32f2f 50% 30% h) !important;
   --code-value: oklch(from #673ab7 50% 30% h) !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #ababab !important;
-  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(153, 115, 247) !important;
-  --color-accent-2: rgb(166, 139, 249) !important;
+  --collapse-icon-color: #5c5c5c !important;
+  --collapse-icon-color-collapsed: #ababab !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -629,7 +643,7 @@ body.theme-light {
       )
       65% calc(c * 0.4) h
   ) !important;
-  --divider-color-hover: rgb(153, 115, 247) !important;
+  --divider-color-hover: hsl(257, 88.88%, 70.95%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 0px !important;
   --divider-width-hover: 3px !important;
@@ -674,7 +688,7 @@ body.theme-light {
       ) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(153, 115, 247) !important;
+  --embed-border-start: 2px solid hsl(257, 88.88%, 70.95%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -794,7 +808,7 @@ body.theme-light {
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
   --graph-node-attachment: oklch(from #ffeb3b 50% 30% h) !important;
-  --graph-node-focused: rgb(138, 92, 245) !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
   --graph-node-tag: oklch(from #4caf50 50% 30% h) !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #222222 !important;
@@ -841,7 +855,7 @@ body.theme-light {
   --hr-color: oklch(from #222222 l c h / 25%) !important;
   --hr-thickness: 2px !important;
   --icon-color: #5c5c5c !important;
-  --icon-color-active: rgb(138, 92, 245) !important;
+  --icon-color-active: hsl(258, 88%, 66%) !important;
   --icon-color-focused: #222222 !important;
   --icon-color-hover: #5c5c5c !important;
   --icon-l: 18px !important;
@@ -894,8 +908,8 @@ body.theme-light {
     0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(153, 115, 247) !important;
-  --interactive-accent-hover: rgb(166, 139, 249) !important;
+  --interactive-accent: hsl(257, 88.88%, 70.95%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: #fafafa !important;
   --interactive-normal: #ffffff !important;
@@ -913,11 +927,11 @@ body.theme-light {
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
   --link-color: oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 35% 30% h
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) 35% 30% h
   ) !important;
   --link-color-hover: oklch(
-    from oklch(from oklch(from rgb(153, 115, 247) l c h) 35% 30% h) 50% 30% h /
-      80%
+    from oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 35% 30% h) 50%
+      30% h / 80%
   ) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
@@ -930,10 +944,10 @@ body.theme-light {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(
-    from oklch(from oklch(from rgb(153, 115, 247) l c h) 35% 30% h) 50% 30% h /
-      60%
+    from oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 35% 30% h) 50%
+      30% h / 60%
   ) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -947,7 +961,7 @@ body.theme-light {
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: #ababab !important;
-  --list-marker-color-collapsed: rgb(138, 92, 245) !important;
+  --list-marker-color-collapsed: hsl(258, 88%, 66%) !important;
   --list-marker-color-hover: #5c5c5c !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -1175,7 +1189,7 @@ body.theme-light {
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: #ababab !important;
+  --nav-collapse-icon-color: #5c5c5c !important;
   --nav-collapse-icon-color-collapsed: #ababab !important;
   --nav-heading-color: #222222 !important;
   --nav-heading-color-collapsed: #ababab !important;
@@ -1187,12 +1201,22 @@ body.theme-light {
   --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: oklch(
+    from
+      oklch(
+        from
+          oklch(
+            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+          )
+          l c calc(h + 330)
+      )
+      80% 30% h / 75%
+  ) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #5c5c5c !important;
   --nav-item-color-active: #222222 !important;
-  --nav-item-color-highlighted: rgb(138, 92, 245) !important;
+  --nav-item-color-highlighted: hsl(258, 88%, 66%) !important;
   --nav-item-color-hover: #222222 !important;
   --nav-item-color-selected: #222222 !important;
   --nav-item-margin-bottom: 2px !important;
@@ -1268,7 +1292,7 @@ body.theme-light {
   --pill-color: #5c5c5c !important;
   --pill-color-hover: #222222 !important;
   --pill-color-remove: #ababab !important;
-  --pill-color-remove-hover: rgb(138, 92, 245) !important;
+  --pill-color-remove-hover: hsl(258, 88%, 66%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1423,7 +1447,7 @@ body.theme-light {
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 50%
   ) !important;
   --slider-track-height: 6px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
@@ -1540,13 +1564,13 @@ body.theme-light {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 12px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #ababab !important;
   --tab-text-color-active: #5c5c5c !important;
   --tab-text-color-focused: #5c5c5c !important;
   --tab-text-color-focused-active: #5c5c5c !important;
   --tab-text-color-focused-active-current: #222222 !important;
-  --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: oklch(
@@ -1571,7 +1595,7 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(153, 115, 247) !important;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%) !important;
   --table-drag-handle-color: #ababab !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -1596,22 +1620,22 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: rgb(153, 115, 247) !important;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(138, 92, 245, 0.1) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 1px !important;
   --tag-color: oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 40% c h / 75%
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%
   ) !important;
-  --tag-color-hover: rgb(138, 92, 245) !important;
+  --tag-color-hover: hsl(258, 88%, 66%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -1619,8 +1643,8 @@ body.theme-light {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 8px !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(138, 92, 245) !important;
-  --text-accent-hover: rgb(166, 139, 249) !important;
+  --text-accent: hsl(258, 88%, 66%) !important;
+  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-error: oklch(from #d32f2f 50% 30% h) !important;
   --text-faint: #ababab !important;
   --text-highlight-bg: oklch(
@@ -1822,6 +1846,11 @@ body.theme-light {
           100% c h
       ) !important;
   --metadata-label-font-weight: 700 !important;
+  --folder-color-1: oklch(from #d32f2f 50% 30% h) !important;
+  --folder-color-10: oklch(from #8bc34a 50% 30% h) !important;
+  --folder-color-11: oklch(from #009688 50% 30% h) !important;
+  --folder-color-12: oklch(from #673ab7 50% 30% h) !important;
+  --folder-color-2: oklch(from #ff9800 50% 30% h) !important;
   --folder-color-3: oklch(from #ffeb3b 50% 30% h) !important;
   --folder-color-4: oklch(from #4caf50 50% 30% h) !important;
   --folder-color-5: oklch(from #2196f3 50% 30% h) !important;
@@ -1840,7 +1869,7 @@ body.theme-light {
       )
       98% calc(c * 0.4) h
   ) !important;
-  --base-accent: oklch(from rgb(153, 115, 247) l c h) !important;
+  --base-accent: oklch(from hsl(257, 88.88%, 70.95%) l c h) !important;
   --border-groove: 4px groove
     oklch(
       from
@@ -2006,14 +2035,10 @@ body.theme-light {
   --color-rose: oklch(from #f48fb1 50% 30% h) !important;
   --color-vermillion: oklch(from #ff5722 50% 30% h) !important;
   --color-violet: oklch(from #9c27b0 50% 30% h) !important;
-  --folder-accent-1: oklch(from #d32f2f 50% 30% h) !important;
-  --folder-accent-10: oklch(from #8bc34a 50% 30% h) !important;
-  --folder-accent-11: oklch(from #009688 50% 30% h) !important;
-  --folder-accent-12: oklch(from #673ab7 50% 30% h) !important;
-  --folder-accent-13: oklch(from #e91e63 50% 30% h) !important;
-  --folder-accent-14: oklch(from #f48fb1 50% 30% h) !important;
-  --folder-accent-15: oklch(from #00bcd4 50% 30% h) !important;
-  --folder-accent-2: oklch(from #ff9800 50% 30% h) !important;
+  --folder-accent: oklch(from hsl(257, 88.88%, 70.95%) l c h) !important;
+  --folder-color-13: oklch(from #e91e63 50% 30% h) !important;
+  --folder-color-14: oklch(from #f48fb1 50% 30% h) !important;
+  --folder-color-15: oklch(from #00bcd4 50% 30% h) !important;
   --hue-amber: #ffb300 !important;
   --hue-blue: #2196f3 !important;
   --hue-cyan: #00bcd4 !important;
@@ -2047,14 +2072,53 @@ body.theme-light {
   ) !important;
   --img-border-width: 0px !important;
   --interactive-active: oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 50%
   ) !important;
   --lightness: 50% !important;
   --mobile-sidebar-width: 100% !important;
   --outline-color: oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 25% c h
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) 25% c h
   ) !important;
   --radius-xxs: 8px !important;
+  --retroma-canvas-card-border-width: 3px !important;
+  --retroma-canvas-card-embed-border-width: 3px !important;
+  --retroma-canvas-dot-opacity: 0.3 !important;
+  --retroma-canvas-node-content-bg-opacity: 0.25 !important;
+  --retroma-folder-bg-color: oklch(
+    from
+      oklch(
+        from
+          oklch(
+            from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+          )
+          l c calc(h + 330)
+      )
+      93% calc(c * 0.4) h
+  ) !important;
+  --retroma-folder-border: 1px solid
+    oklch(
+      from
+        oklch(
+          from
+            oklch(
+              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+            )
+            l c calc(h + 330)
+        )
+        55% 30% h / 50%
+    ) !important;
+  --retroma-folder-box-shadow: -1px 1px 0px
+    oklch(
+      from
+        oklch(
+          from
+            oklch(
+              from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h
+            )
+            l c calc(h + 330)
+        )
+        60% calc(c * 0.4) h
+    ) !important;
   --rotation-1: 30 !important;
   --rotation-2: 330 !important;
   --settings-background: oklch(
@@ -2075,7 +2139,7 @@ body.theme-light {
   ) !important;
   --table-border-spacing: 2px !important;
   --table-data-background: oklch(
-    from oklch(from rgb(153, 115, 247) l c h) l c h / 7%
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) l c h / 7%
   ) !important;
 }
 
@@ -2092,16 +2156,20 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --background-modifier-border-focus: oklch(
     from
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330))
-          28% calc(c * 0.3) h
+        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+          calc(0.24 - 0.02) calc(c * 0.3) h
       )
       70% c h
   ) !important;
@@ -2118,24 +2186,24 @@ body.theme-dark {
   --background-modifier-success: oklch(from #4caf50 70% 20% h) !important;
   --background-modifier-success-rgb: 68, 207, 110 !important;
   --background-primary: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --background-primary-alt: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04) calc(c * 0.3) h
   ) !important;
   --background-secondary: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h
   ) !important;
   --background-secondary-alt: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 22%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30))
+      calc(0.24 - 0.08) calc(c * 0.3) h
   ) !important;
   --bases-cards-background: oklch(
     from
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
+        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+          calc(0.24 - 0.1) calc(c * 0.3) h
       )
       25% c h
   ) !important;
@@ -2143,7 +2211,7 @@ body.theme-dark {
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04) calc(c * 0.3) h
   ) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
@@ -2151,13 +2219,21 @@ body.theme-dark {
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px
     oklch(
-      from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l
-        c h
+      from
+        oklch(
+          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+            calc(c * 0.3) h
+        )
+        l c h
     ) !important;
   --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f !important;
   --bases-embed-border-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --bases-embed-border-radius: 12px !important;
   --bases-embed-border-width: 0px !important;
@@ -2168,31 +2244,32 @@ body.theme-dark {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
+  --bases-header-border-width: 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
   --bases-table-border-color: oklch(from #dadada 50% c h / 50%) !important;
   --bases-table-cell-background-active: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --bases-table-cell-background-disabled: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04) calc(c * 0.3) h
   ) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     oklch(
       from
         oklch(
-          from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330))
-            28% calc(c * 0.3) h
+          from
+            oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+            calc(0.24 - 0.02) calc(c * 0.3) h
         )
         70% c h
     ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -2200,12 +2277,12 @@ body.theme-dark {
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04) calc(c * 0.3) h
   ) !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-table-header-color: #b3b3b3 !important;
@@ -2220,18 +2297,22 @@ body.theme-dark {
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h / 40%
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h / 40%
   ) !important;
   --blockquote-border-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 50% c h / 75%
+    from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 75%
   ) !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-font-style: normal !important;
@@ -2276,7 +2357,7 @@ body.theme-dark {
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
   --canvas-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24
       calc(c * 0.3) h
   ) !important;
   --canvas-card-label-color: #666666 !important;
@@ -2290,15 +2371,20 @@ body.theme-dark {
   --canvas-controls-icon-size: 16px !important;
   --canvas-controls-icon-stroke: 2px !important;
   --canvas-controls-radius: 8px !important;
-  --canvas-dot-pattern: #666666 !important;
+  --canvas-dot-pattern: oklch(from #dadada l c h / 0.3) !important;
   --caret-color: #dadada !important;
   --checkbox-border-color: #666666 !important;
   --checkbox-border-color-hover: #b3b3b3 !important;
-  --checkbox-color: rgb(138, 92, 245) !important;
-  --checkbox-color-hover: rgb(166, 139, 249) !important;
+  --checkbox-color: oklch(
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h
+  ) !important;
+  --checkbox-color-hover: oklch(
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30))
+      calc(0.24 - 0.08) calc(c * 0.3) h
+  ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32%
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24
       calc(c * 0.3) h
   ) !important;
   --checkbox-radius: 12px !important;
@@ -2307,12 +2393,20 @@ body.theme-dark {
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 8px !important;
   --code-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) 10%
-      c h / 50%
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      10% c h / 50%
   ) !important;
   --code-border-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
@@ -2330,11 +2424,11 @@ body.theme-dark {
   --code-tag: oklch(from #d32f2f 70% 20% h) !important;
   --code-value: oklch(from #673ab7 70% 20% h) !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: #666666 !important;
-  --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(166, 139, 249) !important;
-  --color-accent-2: rgb(197, 182, 252) !important;
+  --collapse-icon-color: #b3b3b3 !important;
+  --collapse-icon-color-collapsed: #666666 !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: #1e1e1e !important;
   --color-base-05: #212121 !important;
@@ -2372,10 +2466,10 @@ body.theme-dark {
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30))
+      calc(0.24 - 0.12) calc(c * 0.3) h
   ) !important;
-  --divider-color-hover: rgb(138, 92, 245) !important;
+  --divider-color-hover: hsl(258, 88%, 66%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 0px !important;
   --divider-width-hover: 3px !important;
@@ -2394,28 +2488,36 @@ body.theme-dark {
   --embed-block-shadow-hover:
     0 0 0 1px
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
+        from
+          oklch(
+            from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+              calc(c * 0.3) h
+          )
           l c h
       ),
     inset 0 0 0 1px
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
+        from
+          oklch(
+            from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+              calc(c * 0.3) h
+          )
           l c h
       ) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(138, 92, 245) !important;
+  --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
   --file-header-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --file-header-background-focused: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h
   ) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
@@ -2486,8 +2588,12 @@ body.theme-dark {
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
   --footnote-divider-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
@@ -2508,7 +2614,7 @@ body.theme-dark {
   --graph-line: #3f3f3f !important;
   --graph-node: #b3b3b3 !important;
   --graph-node-attachment: oklch(from #ffeb3b 70% 20% h) !important;
-  --graph-node-focused: rgb(166, 139, 249) !important;
+  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-tag: oklch(from #4caf50 70% 20% h) !important;
   --graph-node-unresolved: #666666 !important;
   --graph-text: #dadada !important;
@@ -2555,7 +2661,7 @@ body.theme-dark {
   --hr-color: oklch(from #dadada l c h / 25%) !important;
   --hr-thickness: 2px !important;
   --icon-color: #b3b3b3 !important;
-  --icon-color-active: rgb(166, 139, 249) !important;
+  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
   --icon-color-focused: #dadada !important;
   --icon-color-hover: #b3b3b3 !important;
   --icon-l: 18px !important;
@@ -2608,8 +2714,8 @@ body.theme-dark {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(138, 92, 245) !important;
-  --interactive-accent-hover: rgb(166, 139, 249) !important;
+  --interactive-accent: hsl(258, 88%, 66%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: #3f3f3f !important;
   --interactive-normal: #363636 !important;
@@ -2627,10 +2733,10 @@ body.theme-dark {
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
   --link-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 80% 20% h
+    from oklch(from hsl(258, 88%, 66%) l c h) 80% 20% h
   ) !important;
   --link-color-hover: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 80% 20% h) 80% 20% h /
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% 20% h) 80% 20% h /
       80%
   ) !important;
   --link-decoration: underline !important;
@@ -2644,10 +2750,10 @@ body.theme-dark {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 80% 20% h) 80% 20% h /
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% 20% h) 80% 20% h /
       60%
   ) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -2661,14 +2767,14 @@ body.theme-dark {
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: #666666 !important;
-  --list-marker-color-collapsed: rgb(166, 139, 249) !important;
+  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --list-marker-color-hover: #b3b3b3 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32%
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24
       calc(c * 0.3) h
   ) !important;
   --menu-border-color: #3f3f3f !important;
@@ -2685,20 +2791,32 @@ body.theme-dark {
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h / 75%
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h / 75%
   ) !important;
   --metadata-border-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --metadata-border-radius: 12px !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
   --metadata-divider-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
@@ -2720,24 +2838,24 @@ body.theme-dark {
   --metadata-label-background: oklch(
     from
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
+        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+          calc(0.24 - 0.1) calc(c * 0.3) h
       )
       l c h / 15%
   ) !important;
   --metadata-label-background-active: oklch(
     from
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
+        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+          calc(0.24 - 0.1) calc(c * 0.3) h
       )
       l c h / 30%
   ) !important;
   --metadata-label-background-hover: oklch(
     from
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
+        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+          calc(0.24 - 0.1) calc(c * 0.3) h
       )
       l c h / 30%
   ) !important;
@@ -2753,27 +2871,28 @@ body.theme-dark {
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32%
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24
       calc(c * 0.3) h
   ) !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32%
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24
       calc(c * 0.3) h
   ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px
     oklch(
       from
         oklch(
-          from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330))
-            28% calc(c * 0.3) h
+          from
+            oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+            calc(0.24 - 0.02) calc(c * 0.3) h
         )
         70% c h
     ) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px
     oklch(
-      from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20%
-        calc(c * 0.3) h
+      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+        calc(0.24 - 0.1) calc(c * 0.3) h
     ) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
@@ -2785,8 +2904,8 @@ body.theme-dark {
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
   --modal-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --modal-border-color: #555555 !important;
   --modal-border-width: 1px !important;
@@ -2801,7 +2920,7 @@ body.theme-dark {
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: #666666 !important;
+  --nav-collapse-icon-color: #b3b3b3 !important;
   --nav-collapse-icon-color-collapsed: #666666 !important;
   --nav-heading-color: #dadada !important;
   --nav-heading-color-collapsed: #666666 !important;
@@ -2813,12 +2932,15 @@ body.theme-dark {
   --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: oklch(
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 45%
+      c h / 75%
+  ) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #b3b3b3 !important;
   --nav-item-color-active: #dadada !important;
-  --nav-item-color-highlighted: rgb(166, 139, 249) !important;
+  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --nav-item-color-hover: #dadada !important;
   --nav-item-color-selected: #dadada !important;
   --nav-item-margin-bottom: 2px !important;
@@ -2838,41 +2960,53 @@ body.theme-dark {
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
   --pdf-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --pdf-page-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --pdf-shadow: 0 0 0 1px
     oklch(
-      from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l
-        c h
+      from
+        oklch(
+          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+            calc(c * 0.3) h
+        )
+        l c h
     ) !important;
   --pdf-sidebar-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px
     oklch(
-      from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l
-        c h
+      from
+        oklch(
+          from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+            calc(c * 0.3) h
+        )
+        l c h
     ) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
   --pill-border-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --pill-border-color-hover: #3f3f3f !important;
   --pill-border-width: 1px !important;
   --pill-color: #b3b3b3 !important;
   --pill-color-hover: #dadada !important;
   --pill-color-remove: #666666 !important;
-  --pill-color-remove-hover: rgb(166, 139, 249) !important;
+  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -2889,8 +3023,8 @@ body.theme-dark {
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --prompt-border-color: #555555 !important;
   --prompt-border-width: 1px !important;
@@ -2913,10 +3047,10 @@ body.theme-dark {
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
   --ribbon-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h
   ) !important;
   --ribbon-background-collapsed: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h
   ) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
@@ -2936,19 +3070,23 @@ body.theme-dark {
   --search-icon-color: #b3b3b3 !important;
   --search-icon-size: 18px !important;
   --search-result-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --setting-group-heading-color: #dadada !important;
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
   --setting-items-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --setting-items-border-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
@@ -2989,17 +3127,17 @@ body.theme-dark {
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
   --slider-track-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%
+    from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%
   ) !important;
   --slider-track-height: 6px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.1) calc(c * 0.3) h
   ) !important;
   --status-bar-border-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30))
+      calc(0.24 - 0.12) calc(c * 0.3) h
   ) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
@@ -3008,8 +3146,8 @@ body.theme-dark {
   --status-bar-text-color: #b3b3b3 !important;
   --suggestion-backdrop-filter: none !important;
   --suggestion-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
@@ -3025,19 +3163,19 @@ body.theme-dark {
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --tab-container-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h
   ) !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #3f3f3f !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
   --tab-outline-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30))
+      calc(0.24 - 0.12) calc(c * 0.3) h
   ) !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 8px !important;
@@ -3051,28 +3189,35 @@ body.theme-dark {
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h
   ) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h),
+    oklch(
+      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3)
+        h
+    ),
     transparent
   ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 12px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #666666 !important;
   --tab-text-color-active: #b3b3b3 !important;
   --tab-text-color-focused: #b3b3b3 !important;
   --tab-text-color-focused-active: #b3b3b3 !important;
   --tab-text-color-focused-active-current: #dadada !important;
-  --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
@@ -3085,12 +3230,12 @@ body.theme-dark {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(138, 92, 245) !important;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
   --table-drag-handle-color: #666666 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% c
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 50% c
       h / 30%
   ) !important;
   --table-header-border-color: oklch(from #dadada 50% c h / 50%) !important;
@@ -3103,22 +3248,22 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(138, 92, 245) !important;
+  --table-selection-border-color: hsl(258, 88%, 66%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(138, 92, 245, 0.1) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 1px !important;
   --tag-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 80% c h / 75%
+    from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%
   ) !important;
-  --tag-color-hover: rgb(166, 139, 249) !important;
+  --tag-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -3126,12 +3271,12 @@ body.theme-dark {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 8px !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(166, 139, 249) !important;
-  --text-accent-hover: rgb(197, 182, 252) !important;
+  --text-accent: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: oklch(from #d32f2f 70% 20% h) !important;
   --text-faint: #666666 !important;
   --text-highlight-bg: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50%
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 50%
       20% h / 75%
   ) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
@@ -3140,22 +3285,26 @@ body.theme-dark {
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
   --text-selection: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 45% c
-      h / 75%
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 45%
+      c h / 75%
   ) !important;
   --text-success: oklch(from #4caf50 70% 20% h) !important;
   --text-warning: oklch(from #ff9800 70% 20% h) !important;
   --titlebar-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30))
+      calc(0.24 - 0.12) calc(c * 0.3) h
   ) !important;
   --titlebar-background-focused: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30))
+      calc(0.24 - 0.12) calc(c * 0.3) h
   ) !important;
   --titlebar-border-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) l c
-      h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      l c h
   ) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -3200,10 +3349,10 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
   --accent-1: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)
+    from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)
   ) !important;
   --accent-2: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)
+    from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)
   ) !important;
   --h1-color: oklch(from #d32f2f 70% 20% h) !important;
   --h2-color: oklch(from #ff9800 70% 20% h) !important;
@@ -3213,16 +3362,16 @@ body.theme-dark {
   --h6-color: oklch(from #3f51b5 70% 20% h) !important;
   --inline-title-color: oklch(from #d32f2f 70% 20% h) !important;
   --bold-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20% calc(h + 100)
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% calc(h + 100)
   ) !important;
   --italic-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20% calc(h + 200)
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% calc(h + 200)
   ) !important;
   --button-text: #dadada !important;
   --radius-xs: 8px !important;
   --background-tertiary: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.1) calc(c * 0.3) h
   ) !important;
   --color-magenta: oklch(from #e91e63 70% 20% h) !important;
   --color-teal: oklch(from #009688 70% 20% h) !important;
@@ -3232,15 +3381,28 @@ body.theme-dark {
   --box-shadow:
     inset -2px -2px
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
+        from
+          oklch(
+            from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+              calc(c * 0.3) h
+          )
           0% c h
       ),
     inset 2px 2px
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
+        from
+          oklch(
+            from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+              calc(c * 0.3) h
+          )
           50% c h
       ) !important;
   --metadata-label-font-weight: 700 !important;
+  --folder-color-1: oklch(from #d32f2f 70% 20% h) !important;
+  --folder-color-10: oklch(from #8bc34a 70% 20% h) !important;
+  --folder-color-11: oklch(from #009688 70% 20% h) !important;
+  --folder-color-12: oklch(from #673ab7 70% 20% h) !important;
+  --folder-color-2: oklch(from #ff9800 70% 20% h) !important;
   --folder-color-3: oklch(from #ffeb3b 70% 20% h) !important;
   --folder-color-4: oklch(from #4caf50 70% 20% h) !important;
   --folder-color-5: oklch(from #2196f3 70% 20% h) !important;
@@ -3249,62 +3411,85 @@ body.theme-dark {
   --folder-color-8: oklch(from #ff5722 70% 20% h) !important;
   --folder-color-9: oklch(from #ffb300 70% 20% h) !important;
   --background-paper: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32%
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24
       calc(c * 0.3) h
   ) !important;
-  --base-accent: oklch(from rgb(138, 92, 245) l c h) !important;
+  --base-accent: oklch(from hsl(258, 88%, 66%) l c h) !important;
   --border-groove: 4px groove
-    oklch(from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h) !important;
+    oklch(
+      from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04) calc(c * 0.3)
+        h
+    ) !important;
   --border-ridge: 4px ridge
     oklch(
-      from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-        calc(c * 0.3) h
+      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+        calc(0.24 - 0.02) calc(c * 0.3) h
     ) !important;
   --border-solid: 4px solid
     oklch(
-      from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18%
-        calc(c * 0.3) h
+      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30))
+        calc(0.24 - 0.12) calc(c * 0.3) h
     ) !important;
   --box-shadow-active:
     inset 2px 2px
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
+        from
+          oklch(
+            from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+              calc(c * 0.3) h
+          )
           0% c h
       ),
-    inset -2px -2px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h) !important;
+    inset -2px -2px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h) !important;
   --box-shadow-active-sm:
     inset 1px 1px
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
+        from
+          oklch(
+            from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+              calc(c * 0.3) h
+          )
           0% c h
       ),
-    inset -1px -1px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h) !important;
+    inset -1px -1px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h) !important;
   --box-shadow-sm:
     inset -1px -1px
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
+        from
+          oklch(
+            from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+              calc(c * 0.3) h
+          )
           0% c h
       ),
     inset 1px 1px
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h)
+        from
+          oklch(
+            from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+              calc(c * 0.3) h
+          )
           50% c h
       ) !important;
   --button-active: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h) 25%
-      c h
+    from
+      oklch(
+        from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+          calc(c * 0.3) h
+      )
+      25% c h
   ) !important;
   --button-hover: oklch(
     from
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330))
-          32% calc(c * 0.3) h
+        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+          0.24 calc(c * 0.3) h
       )
       l c h
   ) !important;
   --button-normal: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28%
-      calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
   ) !important;
   --chroma: 20% !important;
   --chroma-accent: 0.3 !important;
@@ -3315,14 +3500,10 @@ body.theme-dark {
   --color-rose: oklch(from #f48fb1 70% 20% h) !important;
   --color-vermillion: oklch(from #ff5722 70% 20% h) !important;
   --color-violet: oklch(from #9c27b0 70% 20% h) !important;
-  --folder-accent-1: oklch(from #d32f2f 70% 20% h) !important;
-  --folder-accent-10: oklch(from #8bc34a 70% 20% h) !important;
-  --folder-accent-11: oklch(from #009688 70% 20% h) !important;
-  --folder-accent-12: oklch(from #673ab7 70% 20% h) !important;
-  --folder-accent-13: oklch(from #e91e63 70% 20% h) !important;
-  --folder-accent-14: oklch(from #f48fb1 70% 20% h) !important;
-  --folder-accent-15: oklch(from #00bcd4 70% 20% h) !important;
-  --folder-accent-2: oklch(from #ff9800 70% 20% h) !important;
+  --folder-accent: oklch(from hsl(258, 88%, 66%) l c h) !important;
+  --folder-color-13: oklch(from #e91e63 70% 20% h) !important;
+  --folder-color-14: oklch(from #f48fb1 70% 20% h) !important;
+  --folder-color-15: oklch(from #00bcd4 70% 20% h) !important;
   --hue-amber: #ffb300 !important;
   --hue-blue: #2196f3 !important;
   --hue-cyan: #00bcd4 !important;
@@ -3341,33 +3522,52 @@ body.theme-dark {
   --img-border-color: oklch(
     from
       oklch(
-        from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330))
-          20% calc(c * 0.3) h
+        from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+          calc(0.24 - 0.1) calc(c * 0.3) h
       )
       l 20% h
   ) !important;
   --img-border-width: 0px !important;
   --interactive-active: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%
+    from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%
   ) !important;
   --lightness: 70% !important;
+  --lightness-accent: 0.24 !important;
   --mobile-sidebar-width: 100% !important;
   --outline-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 25% c h
+    from oklch(from hsl(258, 88%, 66%) l c h) 25% c h
   ) !important;
   --radius-xxs: 8px !important;
+  --retroma-canvas-card-border-width: 3px !important;
+  --retroma-canvas-card-embed-border-width: 3px !important;
+  --retroma-canvas-dot-opacity: 0.3 !important;
+  --retroma-canvas-node-content-bg-opacity: 0.25 !important;
+  --retroma-folder-bg-color: oklch(
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+      calc(0.24 - 0.02) calc(c * 0.3) h
+  ) !important;
+  --retroma-folder-border: 1px solid
+    oklch(
+      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+        55% 20% h / 50%
+    ) !important;
+  --retroma-folder-box-shadow: -1px 1px 0px
+    oklch(
+      from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330))
+        calc(0.24 - 0.1) calc(c * 0.3) h
+    ) !important;
   --rotation-1: 30 !important;
   --rotation-2: 330 !important;
   --settings-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32%
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24
       calc(c * 0.3) h
   ) !important;
   --strong-emphasis: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20% calc(h + 200)
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20% calc(h + 200)
   ) !important;
   --table-border-spacing: 2px !important;
   --table-data-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) l c h / 7%
+    from oklch(from hsl(258, 88%, 66%) l c h) l c h / 7%
   ) !important;
 }
 
@@ -3740,8 +3940,8 @@ body div.suggestion-item {
 }
 body .markdown-rendered hr {
   border-color: rgb(128, 128, 128)
-    light-dark(oklch(65% 0.0756825 323.56deg), oklch(18% 0.0651598 322.488deg))
-    light-dark(oklch(65% 0.0756825 323.56deg), oklch(18% 0.0651598 322.488deg));
+    light-dark(oklch(65% 0.0756825 323.56deg), oklch(12% 0.0651598 322.488deg))
+    light-dark(oklch(65% 0.0756825 323.56deg), oklch(12% 0.0651598 322.488deg));
   border-style: solid solid none none;
   border-width: 0px;
   border-top-left-radius: 0px;
@@ -3862,7 +4062,7 @@ body .markdown-rendered pre > code {
     oklch(10% 0.0651598 292.488deg / 0.5)
   );
   border: 0px solid
-    light-dark(oklch(80% 0.0756825 293.56deg), oklch(24% 0.0651598 292.488deg));
+    light-dark(oklch(80% 0.0756825 293.56deg), oklch(18% 0.0651598 292.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -3883,7 +4083,7 @@ body pre[class*="language-"] {
     oklch(10% 0.0651598 292.488deg / 0.5)
   );
   border: 0px solid
-    light-dark(oklch(80% 0.0756825 293.56deg), oklch(24% 0.0651598 292.488deg));
+    light-dark(oklch(80% 0.0756825 293.56deg), oklch(18% 0.0651598 292.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -3943,7 +4143,7 @@ body ul > li.task-list-item[data-task="x"] {
 body .markdown-rendered blockquote {
   background-color: light-dark(
     oklch(80% 0.0756825 293.56deg / 0.4),
-    oklch(24% 0.0651598 292.488deg / 0.4)
+    oklch(18% 0.0651598 292.488deg / 0.4)
   );
   font-family:
     ui-sans-serif,
@@ -3973,13 +4173,10 @@ body .footnote-backref {
 body .site-body-left-column input.search-bar {
   background-color: light-dark(
     oklch(98% 0.0756825 263.56deg),
-    oklch(32% 0.0651598 262.488deg)
+    oklch(24% 0.0651598 262.488deg)
   );
-  border: 2px solid
-    light-dark(
-      oklch(47.4759% 0.0000235681 23.6314deg / 0.5),
-      oklch(76.6742% 0.0000382729 23.6907deg / 0.5)
-    );
+  border: 1px solid
+    light-dark(oklch(25% 0.189206 293.56deg), oklch(25% 0.217199 292.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4007,10 +4204,10 @@ body .site-body-left-column input.search-bar {
 body .search-results {
   background-color: light-dark(
     oklch(93% 0.0756825 263.56deg),
-    oklch(28% 0.0651598 262.488deg)
+    oklch(22% 0.0651598 262.488deg)
   );
   border: 4px ridge
-    light-dark(oklch(93% 0.0756825 263.56deg), oklch(28% 0.0651598 262.488deg));
+    light-dark(oklch(93% 0.0756825 263.56deg), oklch(22% 0.0651598 262.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4051,7 +4248,7 @@ body .search-results > * {
 }
 body div.search-results {
   border: 4px ridge
-    light-dark(oklch(93% 0.0756825 263.56deg), oklch(28% 0.0651598 262.488deg));
+    light-dark(oklch(93% 0.0756825 263.56deg), oklch(22% 0.0651598 262.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4205,12 +4402,12 @@ body body.styled-scrollbars {
   background: light-dark(
     oklch(93% 0.0756825 263.56deg) none repeat scroll 0% 0% / auto padding-box
       border-box,
-    oklch(28% 0.0651598 262.488deg) none repeat scroll 0% 0% / auto padding-box
+    oklch(22% 0.0651598 262.488deg) none repeat scroll 0% 0% / auto padding-box
       border-box
   );
   background-color: light-dark(
     oklch(93% 0.0756825 263.56deg),
-    oklch(28% 0.0651598 262.488deg)
+    oklch(22% 0.0651598 262.488deg)
   );
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -4457,7 +4654,7 @@ body .markdown-rendered table {
   table-layout: auto;
   width: 240.219px;
   border: 4px ridge
-    light-dark(oklch(93% 0.0756825 263.56deg), oklch(28% 0.0651598 262.488deg));
+    light-dark(oklch(93% 0.0756825 263.56deg), oklch(22% 0.0651598 262.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4475,7 +4672,7 @@ body .markdown-rendered table {
 body .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
   border: 0px
-    light-dark(oklch(93% 0.0756825 263.56deg), oklch(28% 0.0651598 262.488deg));
+    light-dark(oklch(93% 0.0756825 263.56deg), oklch(22% 0.0651598 262.488deg));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4539,7 +4736,7 @@ body .markdown-rendered tr {
     oklch(50% 0.217199 322.488deg / 0.3)
   );
   border: 0px
-    light-dark(oklch(93% 0.0756825 263.56deg), oklch(28% 0.0651598 262.488deg));
+    light-dark(oklch(93% 0.0756825 263.56deg), oklch(22% 0.0651598 262.488deg));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4686,7 +4883,7 @@ body .markdown-embed {
 body .file-embed {
   background-color: light-dark(
     oklch(75% 0.0756825 293.56deg),
-    oklch(26% 0.0651598 292.488deg)
+    oklch(20% 0.0651598 292.488deg)
   );
   border-color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   border-width: 0px;
@@ -4700,7 +4897,7 @@ body .file-embed {
 body .metadata-container {
   background-color: light-dark(
     oklch(80% 0.0756825 293.56deg / 0.75),
-    oklch(24% 0.0651598 292.488deg / 0.75)
+    oklch(18% 0.0651598 292.488deg / 0.75)
   );
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   font-family:
@@ -4718,7 +4915,7 @@ body .metadata-container {
     "Segoe UI Symbol",
     sans-serif;
   border: 4px ridge
-    light-dark(oklch(93% 0.0756825 263.56deg), oklch(28% 0.0651598 262.488deg));
+    light-dark(oklch(93% 0.0756825 263.56deg), oklch(22% 0.0651598 262.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4797,10 +4994,10 @@ body input[type="text"] {
     "Segoe UI Symbol",
     sans-serif;
   border: 0px solid light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -5092,7 +5289,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(oklch(50% 0.12 64.0404deg), oklch(70% 0.08 64.0404deg));
+  color: light-dark(oklch(50% 0.12 26.4069deg), oklch(70% 0.08 26.4069deg));
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -5109,7 +5306,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 700;
-  text-decoration: oklch(70% 0.08 64.0404deg);
+  text-decoration: oklch(70% 0.08 26.4069deg);
 }
 body
   .nav-view-outer
@@ -5118,7 +5315,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(oklch(50% 0.12 64.0404deg), oklch(70% 0.08 64.0404deg));
+  color: light-dark(oklch(50% 0.12 26.4069deg), oklch(70% 0.08 26.4069deg));
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -5135,12 +5332,12 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 700;
-  text-decoration: oklch(70% 0.08 64.0404deg);
+  text-decoration: oklch(70% 0.08 26.4069deg);
 }
 body .clickable-icon {
   background-color: light-dark(
     oklch(93% 0.0756825 263.56deg),
-    oklch(28% 0.0651598 262.488deg)
+    oklch(22% 0.0651598 262.488deg)
   );
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: pointer;
@@ -5154,7 +5351,7 @@ body .clickable-icon {
 body .site-footer {
   background-color: light-dark(
     oklch(60% 0.0756825 263.56deg),
-    oklch(20% 0.0651598 262.488deg)
+    oklch(14% 0.0651598 262.488deg)
   );
   color: light-dark(oklch(100% 0.0756825 263.56deg), rgb(179, 179, 179));
   font-family:
@@ -5172,7 +5369,7 @@ body .site-footer {
     "Segoe UI Symbol",
     sans-serif;
   border: 0px solid
-    light-dark(oklch(65% 0.0756825 323.56deg), oklch(18% 0.0651598 322.488deg));
+    light-dark(oklch(65% 0.0756825 323.56deg), oklch(12% 0.0651598 322.488deg));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5202,11 +5399,11 @@ body .nav-header {
 }
 body .nav-files-container .tree-item {
   background-color: light-dark(
-    oklch(50% 0.12 64.0404deg / 0.3),
-    oklch(70% 0.08 64.0404deg / 0.3)
+    oklch(50% 0.12 26.4069deg / 0.3),
+    oklch(70% 0.08 26.4069deg / 0.3)
   );
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border: 2px solid
+  border: 1px solid
     light-dark(
       oklch(55% 0.12 263.56deg / 0.5),
       oklch(55% 0.08 262.488deg / 0.5)
@@ -5240,10 +5437,10 @@ body .nav-file-title-content {
 body .nav-files-container {
   background-color: light-dark(
     oklch(98% 0.0756825 263.56deg),
-    oklch(32% 0.0651598 262.488deg)
+    oklch(24% 0.0651598 262.488deg)
   );
   border: 4px ridge
-    light-dark(oklch(93% 0.0756825 263.56deg), oklch(28% 0.0651598 262.488deg));
+    light-dark(oklch(93% 0.0756825 263.56deg), oklch(22% 0.0651598 262.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -5252,7 +5449,7 @@ body .nav-files-container {
 body .site-body-left-column-site-theme-toggle {
   background-color: light-dark(
     oklch(93% 0.0756825 263.56deg),
-    oklch(28% 0.0651598 262.488deg)
+    oklch(22% 0.0651598 262.488deg)
   );
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: pointer;
@@ -5350,7 +5547,7 @@ body figure[data-rehype-pretty-code-figure] {
     oklch(10% 0.0651598 292.488deg / 0.5)
   );
   border: 0px solid
-    light-dark(oklch(80% 0.0756825 293.56deg), oklch(24% 0.0651598 292.488deg));
+    light-dark(oklch(80% 0.0756825 293.56deg), oklch(18% 0.0651598 292.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -5368,7 +5565,7 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   font-family: monospace;
   border: 0px solid
-    light-dark(oklch(80% 0.0756825 293.56deg), oklch(24% 0.0651598 292.488deg));
+    light-dark(oklch(80% 0.0756825 293.56deg), oklch(18% 0.0651598 292.488deg));
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;

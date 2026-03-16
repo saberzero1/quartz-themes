@@ -9,15 +9,17 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-1: oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) !important;
-  --accent-2: oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --accent-1: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) !important;
+  --accent-2: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --background-modifier-border-focus: oklch(
     from oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) 70% c h
   ) !important;
   --background-modifier-error: oklch(
@@ -30,113 +32,143 @@ export const theme: ThemeData = {
     from #4caf50 70% 20% h
   ) !important;
   --background-paper: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24 calc(c * 0.3)
+      h
   ) !important;
   --background-primary: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --background-primary-alt: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
+      calc(c * 0.3) h
   ) !important;
   --background-secondary: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) !important;
   --background-secondary-alt: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 22% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) calc(0.24 - 0.08)
+      calc(c * 0.3) h
   ) !important;
   --background-tertiary: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.1)
+      calc(c * 0.3) h
   ) !important;
-  --base-accent: oklch(from rgb(138, 92, 245) l c h) !important;
+  --base-accent: oklch(from hsl(258, 88%, 66%) l c h) !important;
   --bases-cards-background: oklch(from oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.1)
+      calc(c * 0.3) h
   ) 25% c h) !important;
   --bases-cards-border-width: 4px !important;
   --bases-cards-cover-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
+      calc(c * 0.3) h
   ) !important;
   --bases-cards-shadow: 0 0 0 1px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --bases-embed-border-color: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --bases-embed-border-radius: 12px !important;
+  --bases-header-border-width: 0 !important;
   --bases-table-border-color: oklch(from #dadada 50% c h / 50%) !important;
   --bases-table-cell-background-active: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --bases-table-cell-background-disabled: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
+      calc(c * 0.3) h
   ) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(
     from oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) 70% c h
   ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --bases-table-container-border-radius: 8px !important;
   --bases-table-group-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
+      calc(c * 0.3) h
   ) !important;
   --bases-table-header-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --bases-table-header-weight: 100 !important;
   --bases-table-summary-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --blockquote-background-color: oklch(
     from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h / 40%
   ) !important;
-  --blockquote-border-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h / 75%) !important;
+  --blockquote-border-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 75%) !important;
   --blockquote-border-thickness: 4px !important;
   --bold-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20%
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20%
       calc(h + 100)
   ) !important;
   --bold-weight: 600 !important;
   --border-groove: 4px groove oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 26% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.04)
+      calc(c * 0.3) h
   ) !important;
   --border-ridge: 4px ridge oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --border-solid: 4px solid oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) calc(0.24 - 0.12)
+      calc(c * 0.3) h
   ) !important;
   --box-shadow: inset -2px -2px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) 0% c h),
     inset 2px 2px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) 50% c h) !important;
   --box-shadow-active: inset 2px 2px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) 0% c h),
-    inset -2px -2px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h) !important;
+    inset -2px -2px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h) !important;
   --box-shadow-active-sm: inset 1px 1px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) 0% c h),
-    inset -1px -1px oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h) !important;
+    inset -1px -1px oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h) !important;
   --box-shadow-sm: inset -1px -1px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) 0% c h),
     inset 1px 1px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) 50% c h) !important;
   --button-active: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) 25% c h) !important;
   --button-border-radius: 8px !important;
   --button-hover: oklch(from oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24 calc(c * 0.3)
+      h
   ) l c h) !important;
   --button-normal: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --button-radius: 12px !important;
   --button-text: #dadada !important;
@@ -144,14 +176,24 @@ export const theme: ThemeData = {
   --callout-radius: 12px;
   --callout-title-weight: 600;
   --canvas-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24 calc(c * 0.3)
+      h
   ) !important;
   --canvas-controls-radius: 8px !important;
-  --canvas-dot-pattern: #666666 !important;
-  --checkbox-color: rgb(138, 92, 245) !important;
-  --checkbox-color-hover: rgb(166, 139, 249) !important;
+  --canvas-dot-pattern: oklch(
+    from #dadada l c h / 0.3
+  ) !important;
+  --checkbox-color: oklch(
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
+  ) !important;
+  --checkbox-color-hover: oklch(
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) calc(0.24 - 0.08)
+      calc(c * 0.3) h
+  ) !important;
   --checkbox-marker-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24 calc(c * 0.3)
+      h
   ) !important;
   --checkbox-radius: 12px !important;
   --chroma: 20% !important;
@@ -159,10 +201,12 @@ export const theme: ThemeData = {
   --chroma-folder: 20% !important;
   --clickable-icon-radius: 8px !important;
   --code-background: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) 10% c h / 50%) !important;
   --code-border-color: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --code-function: oklch(
     from #ffeb3b 70% 20% h
@@ -186,10 +230,11 @@ export const theme: ThemeData = {
   --code-value: oklch(
     from #673ab7 70% 20% h
   ) !important;
-  --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(166, 139, 249) !important;
-  --color-accent-2: rgb(197, 182, 252) !important;
+  --collapse-icon-color: #b3b3b3 !important;
+  --collapse-icon-color-collapsed: #666666 !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-amber: oklch(
     from #ffb300 70% 20% h
   ) !important;
@@ -236,45 +281,51 @@ export const theme: ThemeData = {
     from #ffeb3b 70% 20% h
   ) !important;
   --divider-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) calc(0.24 - 0.12)
+      calc(c * 0.3) h
   ) !important;
-  --divider-color-hover: rgb(138, 92, 245) !important;
+  --divider-color-hover: hsl(258, 88%, 66%) !important;
   --divider-width: 0px !important;
   --embed-block-shadow-hover: 0 0 0 1px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h), inset 0 0 0 1px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
-  --embed-border-start: 2px solid rgb(138, 92, 245) !important;
+  --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
   --file-header-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --file-header-background-focused: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) !important;
   --file-margins: 16px !important;
-  --folder-accent-1: oklch(
+  --folder-accent: oklch(from hsl(258, 88%, 66%) l c h) !important;
+  --folder-color-1: oklch(
     from #d32f2f 70% 20% h
   ) !important;
-  --folder-accent-10: oklch(
+  --folder-color-10: oklch(
     from #8bc34a 70% 20% h
   ) !important;
-  --folder-accent-11: oklch(
+  --folder-color-11: oklch(
     from #009688 70% 20% h
   ) !important;
-  --folder-accent-12: oklch(
+  --folder-color-12: oklch(
     from #673ab7 70% 20% h
   ) !important;
-  --folder-accent-13: oklch(
+  --folder-color-13: oklch(
     from #e91e63 70% 20% h
   ) !important;
-  --folder-accent-14: oklch(
+  --folder-color-14: oklch(
     from #f48fb1 70% 20% h
   ) !important;
-  --folder-accent-15: oklch(
+  --folder-color-15: oklch(
     from #00bcd4 70% 20% h
   ) !important;
-  --folder-accent-2: oklch(
+  --folder-color-2: oklch(
     from #ff9800 70% 20% h
   ) !important;
   --folder-color-3: oklch(
@@ -299,13 +350,14 @@ export const theme: ThemeData = {
     from #ffb300 70% 20% h
   ) !important;
   --footnote-divider-color: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --footnote-radius: 8px !important;
   --graph-node-attachment: oklch(
     from #ffeb3b 70% 20% h
   ) !important;
-  --graph-node-focused: rgb(166, 139, 249) !important;
+  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-tag: oklch(
     from #4caf50 70% 20% h
   ) !important;
@@ -329,7 +381,7 @@ export const theme: ThemeData = {
   ) !important;
   --header-height: 48px !important;
   --heading-spacing: 2.5rem !important;
-  --highlight: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% 20% h / 75%) !important;
+  --highlight: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 50% 20% h / 75%) !important;
   --hr-color: oklch(from #dadada l c h / 25%) !important;
   --hue-amber: #ffb300 !important;
   --hue-blue: #2196f3 !important;
@@ -346,9 +398,10 @@ export const theme: ThemeData = {
   --hue-vermillion: #ff5722 !important;
   --hue-violet: #9c27b0 !important;
   --hue-yellow: #ffeb3b !important;
-  --icon-color-active: rgb(166, 139, 249) !important;
+  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
   --img-border-color: oklch(from oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.1)
+      calc(c * 0.3) h
   ) l 20% h) !important;
   --img-border-radius: 0px !important;
   --img-border-width: 0px !important;
@@ -357,26 +410,29 @@ export const theme: ThemeData = {
   ) !important;
   --input-border-width: 2px !important;
   --input-radius: 12px !important;
-  --interactive-accent: rgb(138, 92, 245) !important;
-  --interactive-accent-hover: rgb(166, 139, 249) !important;
-  --interactive-active: oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%) !important;
+  --interactive-accent: hsl(258, 88%, 66%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
+  --interactive-active: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%) !important;
   --italic-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20%
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20%
       calc(h + 200)
   ) !important;
   --light: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --lightgray: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) !important;
   --lightness: 70% !important;
+  --lightness-accent: 0.24 !important;
   --link-color: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 80% 20% h
+    from oklch(from hsl(258, 88%, 66%) l c h) 80% 20% h
   ) !important;
   --link-color-hover: oklch(
     from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 80% 20% h
+    from oklch(from hsl(258, 88%, 66%) l c h) 80% 20% h
   ) 80% 20% h / 80%
   ) !important;
   --link-external-color: oklch(
@@ -389,134 +445,177 @@ export const theme: ThemeData = {
   ) !important;
   --link-unresolved-color: oklch(
     from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 80% 20% h
+    from oklch(from hsl(258, 88%, 66%) l c h) 80% 20% h
   ) 80% 20% h / 60%
   ) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-weight: 700 !important;
   --list-indent: 2.25em !important;
-  --list-marker-color-collapsed: rgb(166, 139, 249) !important;
+  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --menu-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24 calc(c * 0.3)
+      h
   ) !important;
   --metadata-background: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h / 75%) !important;
   --metadata-border-color: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --metadata-border-radius: 12px !important;
   --metadata-divider-color: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --metadata-gap: 8px !important;
   --metadata-input-height: 28px !important;
   --metadata-label-background: oklch(
     from oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.1)
+      calc(c * 0.3) h
   ) l c h / 15%
   ) !important;
   --metadata-label-background-active: oklch(
     from oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.1)
+      calc(c * 0.3) h
   ) l c h / 30%
   ) !important;
   --metadata-label-background-hover: oklch(
     from oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.1)
+      calc(c * 0.3) h
   ) l c h / 30%
   ) !important;
   --metadata-label-font-weight: 700 !important;
   --metadata-label-width: 8em !important;
   --metadata-property-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24 calc(c * 0.3)
+      h
   ) !important;
   --metadata-property-background-hover: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24 calc(c * 0.3)
+      h
   ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px oklch(
     from oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) 70% c h
   ) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.1)
+      calc(c * 0.3) h
   ) !important;
   --metadata-property-radius: 12px !important;
   --metadata-property-radius-focus: 12px !important;
   --metadata-property-radius-hover: 12px !important;
   --mobile-sidebar-width: 100% !important;
   --modal-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
+  --nav-collapse-icon-color: #b3b3b3 !important;
   --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
-  --nav-item-color-highlighted: rgb(166, 139, 249) !important;
+  --nav-item-background-selected: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 45% c h / 75%) !important;
+  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --nav-item-radius: 8px !important;
   --nav-tag-color: #b3b3b3 !important;
   --nav-tag-radius: 8px !important;
-  --outline-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 25% c h) !important;
+  --outline-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 25% c h) !important;
   --pdf-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --pdf-page-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --pdf-shadow: 0 0 0 1px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --pdf-sidebar-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --pill-border-color: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
-  --pill-color-remove-hover: rgb(166, 139, 249) !important;
+  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --prompt-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --radius-s: 8px !important;
   --radius-xs: 8px !important;
   --radius-xxs: 8px !important;
+  --retroma-canvas-card-border-width: 3px !important;
+  --retroma-canvas-card-embed-border-width: 3px !important;
+  --retroma-canvas-dot-opacity: 0.3 !important;
+  --retroma-canvas-node-content-bg-opacity: 0.25 !important;
+  --retroma-folder-bg-color: oklch(
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
+  ) !important;
+  --retroma-folder-border: 1px solid
+    oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 55% 20% h / 50%) !important;
+  --retroma-folder-box-shadow: -1px 1px 0px oklch(
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.1)
+      calc(c * 0.3) h
+  ) !important;
   --ribbon-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) !important;
   --ribbon-background-collapsed: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) !important;
   --rotation-1: 30 !important;
   --rotation-2: 330 !important;
   --search-result-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
-  --secondary: rgb(166, 139, 249) !important;
+  --secondary: hsl(255, 89.76%, 75.9%) !important;
   --setting-items-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --setting-items-border-color: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --settings-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 32% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24 calc(c * 0.3)
+      h
   ) !important;
   --sidebar-markdown-font-size: 14.4px !important;
-  --slider-track-background: oklch(from oklch(from rgb(138, 92, 245) l c h) 50% c h / 50%) !important;
+  --slider-track-background: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 50% c h / 50%) !important;
   --slider-track-height: 6px !important;
   --status-bar-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 20% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.1)
+      calc(c * 0.3) h
   ) !important;
   --status-bar-border-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) calc(0.24 - 0.12)
+      calc(c * 0.3) h
   ) !important;
   --strong-emphasis: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) calc(70% + 10%) 20%
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(70% + 10%) 20%
       calc(h + 200)
   ) !important;
   --suggestion-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --sync-avatar-color-1: oklch(
     from #d32f2f 70% 20% h
@@ -540,68 +639,77 @@ export const theme: ThemeData = {
     from #673ab7 70% 20% h
   ) !important;
   --tab-background-active: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 28% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) calc(0.24 - 0.02)
+      calc(c * 0.3) h
   ) !important;
   --tab-container-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) !important;
   --tab-outline-color: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) calc(0.24 - 0.12)
+      calc(c * 0.3) h
   ) !important;
   --tab-radius: 8px !important;
   --tab-stacked-header-width: 48px !important;
   --tab-switcher-background: oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ), transparent) !important;
   --tab-switcher-preview-radius: 12px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --table-add-button-border-color: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --table-border-color: oklch(from #dadada 50% c h / 50%) !important;
   --table-border-spacing: 2px !important;
-  --table-data-background: oklch(from oklch(from rgb(138, 92, 245) l c h) l c h / 7%) !important;
-  --table-drag-handle-background-active: rgb(138, 92, 245) !important;
-  --table-header-background: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% c h / 30%) !important;
+  --table-data-background: oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c h / 7%) !important;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
+  --table-header-background: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 50% c h / 30%) !important;
   --table-header-border-color: oklch(from #dadada 50% c h / 50%) !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
-  --table-selection-border-color: rgb(138, 92, 245) !important;
-  --tag-background: rgba(138, 92, 245, 0.1) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-border-color: hsl(258, 88%, 66%) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 1px !important;
-  --tag-color: oklch(from oklch(from rgb(138, 92, 245) l c h) 80% c h / 75%) !important;
-  --tag-color-hover: rgb(166, 139, 249) !important;
+  --tag-color: oklch(from oklch(from hsl(258, 88%, 66%) l c h) 80% c h / 75%) !important;
+  --tag-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --tag-radius: 8px !important;
-  --tertiary: rgb(197, 182, 252) !important;
-  --text-accent: rgb(166, 139, 249) !important;
-  --text-accent-hover: rgb(197, 182, 252) !important;
+  --tertiary: hsl(253, 92.4%, 85.14%) !important;
+  --text-accent: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: oklch(
     from #d32f2f 70% 20% h
   ) !important;
-  --text-highlight-bg: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% 20% h / 75%) !important;
-  --text-selection: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 330)) 45% c h / 75%) !important;
+  --text-highlight-bg: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 50% 20% h / 75%) !important;
+  --text-selection: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 45% c h / 75%) !important;
   --text-success: oklch(
     from #4caf50 70% 20% h
   ) !important;
   --text-warning: oklch(
     from #ff9800 70% 20% h
   ) !important;
-  --textHighlight: oklch(from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 50% 20% h / 75%) !important;
+  --textHighlight: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) 50% 20% h / 75%) !important;
   --titlebar-background: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) calc(0.24 - 0.12)
+      calc(c * 0.3) h
   ) !important;
   --titlebar-background-focused: oklch(
-    from oklch(from oklch(from rgb(138, 92, 245) l c h) l c calc(h + 30)) 18% calc(c * 0.3) h
+    from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 30)) calc(0.24 - 0.12)
+      calc(c * 0.3) h
   ) !important;
   --titlebar-border-color: oklch(from oklch(
-    from oklch(from rgb(138, 92, 245) l c h) 24% calc(c * 0.3) h
+    from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06)
+      calc(c * 0.3) h
   ) l c h) !important;
   --touch-radius-m: 8px !important;
   --touch-radius-s: 8px !important;
@@ -620,29 +728,29 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: oklch(0.24 0.0651598 292.488);
+  background-color: oklch(0.18 0.0651598 292.488);
 }
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
-  background-color: oklch(0.28 0.0651598 262.488);
+  background-color: oklch(0.24 0.0651598 262.488);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
-  background-color: oklch(0.28 0.0651598 262.488);
+  background-color: oklch(0.22 0.0651598 262.488);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
-  border-right-color: oklch(0.18 0.0651598 322.488);
+  border-right-color: oklch(0.12 0.0651598 322.488);
   border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: oklch(0.24 0.0651598 292.488);
-  border-left-color: oklch(0.18 0.0651598 322.488);
+  background-color: oklch(0.18 0.0651598 292.488);
+  border-left-color: oklch(0.12 0.0651598 322.488);
 }
 
 html[saved-theme="dark"] body div#quartz-root {
-  background-color: oklch(0.28 0.0651598 262.488);
+  background-color: oklch(0.22 0.0651598 262.488);
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: oklch(0.8 0.08 32.4879);
@@ -697,23 +805,23 @@ html[saved-theme="dark"] body a.internal.broken {
   outline: oklch(0.8 0.08 292.488 / 0.6) none 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
-  background-color: oklch(0.24 0.0651598 292.488 / 0.4);
+  background-color: oklch(0.18 0.0651598 292.488 / 0.4);
   padding-bottom: 4px;
   padding-top: 4px;
 }`,
     tables: `html[saved-theme="dark"] body table {
-  border-bottom-color: oklch(0.28 0.0651598 262.488);
+  border-bottom-color: oklch(0.22 0.0651598 262.488);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: ridge;
   border-bottom-width: 4px;
-  border-left-color: oklch(0.28 0.0651598 262.488);
+  border-left-color: oklch(0.22 0.0651598 262.488);
   border-left-style: ridge;
   border-left-width: 4px;
-  border-right-color: oklch(0.28 0.0651598 262.488);
+  border-right-color: oklch(0.22 0.0651598 262.488);
   border-right-style: ridge;
   border-right-width: 4px;
-  border-top-color: oklch(0.28 0.0651598 262.488);
+  border-top-color: oklch(0.22 0.0651598 262.488);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-top-style: ridge;
@@ -738,18 +846,18 @@ html[saved-theme="dark"] body th {
 }
 
 html[saved-theme="dark"] body thead {
-  border-bottom-color: oklch(0.28 0.0651598 262.488);
-  border-left-color: oklch(0.28 0.0651598 262.488);
-  border-right-color: oklch(0.28 0.0651598 262.488);
-  border-top-color: oklch(0.28 0.0651598 262.488);
+  border-bottom-color: oklch(0.22 0.0651598 262.488);
+  border-left-color: oklch(0.22 0.0651598 262.488);
+  border-right-color: oklch(0.22 0.0651598 262.488);
+  border-top-color: oklch(0.22 0.0651598 262.488);
 }
 
 html[saved-theme="dark"] body tr {
   background-color: oklch(0.5 0.217199 322.488 / 0.3);
-  border-bottom-color: oklch(0.28 0.0651598 262.488);
-  border-left-color: oklch(0.28 0.0651598 262.488);
-  border-right-color: oklch(0.28 0.0651598 262.488);
-  border-top-color: oklch(0.28 0.0651598 262.488);
+  border-bottom-color: oklch(0.22 0.0651598 262.488);
+  border-left-color: oklch(0.22 0.0651598 262.488);
+  border-right-color: oklch(0.22 0.0651598 262.488);
+  border-top-color: oklch(0.22 0.0651598 262.488);
 }`,
     code: `html[saved-theme="dark"] body code {
   border-bottom-left-radius: 12px;
@@ -760,24 +868,24 @@ html[saved-theme="dark"] body tr {
 
 html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   background-color: oklch(0.1 0.0651598 292.488 / 0.5);
-  border-bottom-color: oklch(0.24 0.0651598 292.488);
+  border-bottom-color: oklch(0.18 0.0651598 292.488);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-left-color: oklch(0.24 0.0651598 292.488);
-  border-right-color: oklch(0.24 0.0651598 292.488);
-  border-top-color: oklch(0.24 0.0651598 292.488);
+  border-left-color: oklch(0.18 0.0651598 292.488);
+  border-right-color: oklch(0.18 0.0651598 292.488);
+  border-top-color: oklch(0.18 0.0651598 292.488);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
 html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: oklch(0.1 0.0651598 292.488 / 0.5);
-  border-bottom-color: oklch(0.24 0.0651598 292.488);
+  border-bottom-color: oklch(0.18 0.0651598 292.488);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-left-color: oklch(0.24 0.0651598 292.488);
-  border-right-color: oklch(0.24 0.0651598 292.488);
-  border-top-color: oklch(0.24 0.0651598 292.488);
+  border-left-color: oklch(0.18 0.0651598 292.488);
+  border-right-color: oklch(0.18 0.0651598 292.488);
+  border-top-color: oklch(0.18 0.0651598 292.488);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -799,29 +907,29 @@ html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
 
 html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: oklch(0.1 0.0651598 292.488 / 0.5);
-  border-bottom-color: oklch(0.24 0.0651598 292.488);
+  border-bottom-color: oklch(0.18 0.0651598 292.488);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-left-color: oklch(0.24 0.0651598 292.488);
-  border-right-color: oklch(0.24 0.0651598 292.488);
-  border-top-color: oklch(0.24 0.0651598 292.488);
+  border-left-color: oklch(0.18 0.0651598 292.488);
+  border-right-color: oklch(0.18 0.0651598 292.488);
+  border-top-color: oklch(0.18 0.0651598 292.488);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: oklch(0.1 0.0651598 292.488 / 0.5);
-  border-bottom-color: oklch(0.24 0.0651598 292.488);
+  border-bottom-color: oklch(0.18 0.0651598 292.488);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-left-color: oklch(0.24 0.0651598 292.488);
-  border-right-color: oklch(0.24 0.0651598 292.488);
-  border-top-color: oklch(0.24 0.0651598 292.488);
+  border-left-color: oklch(0.18 0.0651598 292.488);
+  border-right-color: oklch(0.18 0.0651598 292.488);
+  border-top-color: oklch(0.18 0.0651598 292.488);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: oklch(0.26 0.0651598 292.488);
+  background-color: oklch(0.2 0.0651598 292.488);
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-left-radius: 12px;
@@ -972,33 +1080,29 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-width: 4px;
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
-  background-color: oklch(0.32 0.0651598 262.488);
-  border-bottom-color: oklch(0.766742 0.0000382729 23.6907 / 0.5);
+  background-color: oklch(0.24 0.0651598 262.488);
+  border-bottom-color: oklch(0.25 0.217199 292.488);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-bottom-width: 2px;
-  border-left-color: oklch(0.766742 0.0000382729 23.6907 / 0.5);
-  border-left-width: 2px;
-  border-right-color: oklch(0.766742 0.0000382729 23.6907 / 0.5);
-  border-right-width: 2px;
-  border-top-color: oklch(0.766742 0.0000382729 23.6907 / 0.5);
+  border-left-color: oklch(0.25 0.217199 292.488);
+  border-right-color: oklch(0.25 0.217199 292.488);
+  border-top-color: oklch(0.25 0.217199 292.488);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  border-top-width: 2px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: oklch(0.28 0.0651598 262.488);
-  border-bottom-color: oklch(0.28 0.0651598 262.488);
+  background-color: oklch(0.22 0.0651598 262.488);
+  border-bottom-color: oklch(0.22 0.0651598 262.488);
   border-bottom-style: ridge;
   border-bottom-width: 4px;
-  border-left-color: oklch(0.28 0.0651598 262.488);
+  border-left-color: oklch(0.22 0.0651598 262.488);
   border-left-style: ridge;
   border-left-width: 4px;
-  border-right-color: oklch(0.28 0.0651598 262.488);
+  border-right-color: oklch(0.22 0.0651598 262.488);
   border-right-style: ridge;
   border-right-width: 4px;
-  border-top-color: oklch(0.28 0.0651598 262.488);
+  border-top-color: oklch(0.22 0.0651598 262.488);
   border-top-style: ridge;
   border-top-width: 4px;
   box-shadow: oklch(0 0 0 / 0.4) 0px 0px 12px 2px;
@@ -1012,37 +1116,37 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
-  border-bottom-color: oklch(0.28 0.0651598 262.488);
+  border-bottom-color: oklch(0.22 0.0651598 262.488);
   border-bottom-style: ridge;
   border-bottom-width: 4px;
-  border-left-color: oklch(0.28 0.0651598 262.488);
+  border-left-color: oklch(0.22 0.0651598 262.488);
   border-left-style: ridge;
   border-left-width: 4px;
-  border-right-color: oklch(0.28 0.0651598 262.488);
+  border-right-color: oklch(0.22 0.0651598 262.488);
   border-right-style: ridge;
   border-right-width: 4px;
-  border-top-color: oklch(0.28 0.0651598 262.488);
+  border-top-color: oklch(0.22 0.0651598 262.488);
   border-top-style: ridge;
   border-top-width: 4px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
-  background-color: oklch(0.32 0.0651598 262.488);
-  border-bottom-color: oklch(0.766742 0.0000382729 23.6907 / 0.5);
+  background-color: oklch(0.24 0.0651598 262.488);
+  border-bottom-color: oklch(0.25 0.217199 292.488);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-bottom-width: 2px;
-  border-left-color: oklch(0.766742 0.0000382729 23.6907 / 0.5);
+  border-left-color: oklch(0.25 0.217199 292.488);
   border-left-style: solid;
-  border-left-width: 2px;
-  border-right-color: oklch(0.766742 0.0000382729 23.6907 / 0.5);
+  border-left-width: 1px;
+  border-right-color: oklch(0.25 0.217199 292.488);
   border-right-style: solid;
-  border-right-width: 2px;
-  border-top-color: oklch(0.766742 0.0000382729 23.6907 / 0.5);
+  border-right-width: 1px;
+  border-top-color: oklch(0.25 0.217199 292.488);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-top-style: solid;
-  border-top-width: 2px;
+  border-top-width: 1px;
+  box-shadow: oklch(0 0.0651598 292.488) 2px 2px 0px 0px inset, oklch(0.5 0.217199 292.488) -2px -2px 0px 0px inset;
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
@@ -1104,9 +1208,9 @@ html[saved-theme="dark"] body h6 {
 }
 
 html[saved-theme="dark"] body hr {
-  border-bottom-color: oklch(0.18 0.0651598 322.488);
-  border-left-color: oklch(0.18 0.0651598 322.488);
-  border-right-color: oklch(0.18 0.0651598 322.488);
+  border-bottom-color: oklch(0.12 0.0651598 322.488);
+  border-left-color: oklch(0.12 0.0651598 322.488);
+  border-right-color: oklch(0.12 0.0651598 322.488);
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
@@ -1121,44 +1225,44 @@ html[saved-theme="dark"] body hr {
 }
 
 html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: oklch(0.28 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.28 0.0651598 262.488);
+  background: oklch(0.22 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: oklch(0.22 0.0651598 262.488);
 }
 
 html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: oklch(0.28 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.28 0.0651598 262.488);
+  background: oklch(0.22 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: oklch(0.22 0.0651598 262.488);
 }
 
 html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: oklch(0.28 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.28 0.0651598 262.488);
+  background: oklch(0.22 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: oklch(0.22 0.0651598 262.488);
 }
 
 html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: oklch(0.28 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.28 0.0651598 262.488);
+  background: oklch(0.22 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: oklch(0.22 0.0651598 262.488);
 }
 
 html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.28 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.28 0.0651598 262.488);
+  background: oklch(0.22 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: oklch(0.22 0.0651598 262.488);
 }
 
 html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: oklch(0.28 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.28 0.0651598 262.488);
+  background: oklch(0.22 0.0651598 262.488) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: oklch(0.22 0.0651598 262.488);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: oklch(0.7 0.08 64.0404);
+  color: oklch(0.7 0.08 26.4069);
   font-weight: 700;
-  text-decoration: oklch(0.7 0.08 64.0404);
+  text-decoration: oklch(0.7 0.08 26.4069);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: oklch(0.7 0.08 64.0404);
+  color: oklch(0.7 0.08 26.4069);
   font-weight: 700;
-  text-decoration: oklch(0.7 0.08 64.0404);
+  text-decoration: oklch(0.7 0.08 26.4069);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -1171,7 +1275,7 @@ html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(
   font-weight: 700;
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
-  background-color: oklch(0.28 0.0651598 262.488);
+  background-color: oklch(0.22 0.0651598 262.488);
   border-bottom-color: oklch(0.25 0.217199 292.488);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1191,75 +1295,75 @@ html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(
   cursor: pointer;
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: oklch(0.2 0.0651598 262.488);
-  border-bottom-color: oklch(0.18 0.0651598 322.488);
-  border-left-color: oklch(0.18 0.0651598 322.488);
+  background-color: oklch(0.14 0.0651598 262.488);
+  border-bottom-color: oklch(0.12 0.0651598 322.488);
+  border-left-color: oklch(0.12 0.0651598 322.488);
   border-left-width: 0px;
-  border-right-color: oklch(0.18 0.0651598 322.488);
-  border-top-color: oklch(0.18 0.0651598 322.488);
+  border-right-color: oklch(0.12 0.0651598 322.488);
+  border-top-color: oklch(0.12 0.0651598 322.488);
   border-top-left-radius: 0px;
   border-top-width: 0px;
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
-  background-color: oklch(0.7 0.08 64.0404 / 0.3);
+  background-color: oklch(0.7 0.08 26.4069 / 0.3);
   border-bottom-color: oklch(0.55 0.08 262.488 / 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-left-color: oklch(0.55 0.08 262.488 / 0.5);
   border-left-style: solid;
-  border-left-width: 2px;
+  border-left-width: 1px;
   border-right-color: oklch(0.55 0.08 262.488 / 0.5);
   border-right-style: solid;
-  border-right-width: 2px;
+  border-right-width: 1px;
   border-top-color: oklch(0.55 0.08 262.488 / 0.5);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-style: solid;
-  border-top-width: 2px;
+  border-top-width: 1px;
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
-  background-color: oklch(0.7 0.08 64.0404 / 0.3);
+  background-color: oklch(0.7 0.08 26.4069 / 0.3);
   border-bottom-color: oklch(0.55 0.08 262.488 / 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-left-color: oklch(0.55 0.08 262.488 / 0.5);
   border-left-style: solid;
-  border-left-width: 2px;
+  border-left-width: 1px;
   border-right-color: oklch(0.55 0.08 262.488 / 0.5);
   border-right-style: solid;
-  border-right-width: 2px;
+  border-right-width: 1px;
   border-top-color: oklch(0.55 0.08 262.488 / 0.5);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-style: solid;
-  border-top-width: 2px;
+  border-top-width: 1px;
 }
 
 html[saved-theme="dark"] body ul.section-ul {
-  background-color: oklch(0.32 0.0651598 262.488);
-  border-bottom-color: oklch(0.28 0.0651598 262.488);
+  background-color: oklch(0.24 0.0651598 262.488);
+  border-bottom-color: oklch(0.22 0.0651598 262.488);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: ridge;
   border-bottom-width: 4px;
-  border-left-color: oklch(0.28 0.0651598 262.488);
+  border-left-color: oklch(0.22 0.0651598 262.488);
   border-left-style: ridge;
   border-left-width: 4px;
-  border-right-color: oklch(0.28 0.0651598 262.488);
+  border-right-color: oklch(0.22 0.0651598 262.488);
   border-right-style: ridge;
   border-right-width: 4px;
-  border-top-color: oklch(0.28 0.0651598 262.488);
+  border-top-color: oklch(0.22 0.0651598 262.488);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-top-style: ridge;
   border-top-width: 4px;
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
-  background-color: oklch(0.28 0.0651598 262.488);
+  background-color: oklch(0.22 0.0651598 262.488);
   border-bottom-color: oklch(0.25 0.217199 292.488);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1285,19 +1389,19 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-right-radius: 8px;
 }`,
     misc: `html[saved-theme="dark"] body .metadata {
-  background-color: oklch(0.24 0.0651598 292.488 / 0.75);
-  border-bottom-color: oklch(0.28 0.0651598 262.488);
+  background-color: oklch(0.18 0.0651598 292.488 / 0.75);
+  border-bottom-color: oklch(0.22 0.0651598 262.488);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-style: ridge;
   border-bottom-width: 4px;
-  border-left-color: oklch(0.28 0.0651598 262.488);
+  border-left-color: oklch(0.22 0.0651598 262.488);
   border-left-style: ridge;
   border-left-width: 4px;
-  border-right-color: oklch(0.28 0.0651598 262.488);
+  border-right-color: oklch(0.22 0.0651598 262.488);
   border-right-style: ridge;
   border-right-width: 4px;
-  border-top-color: oklch(0.28 0.0651598 262.488);
+  border-top-color: oklch(0.22 0.0651598 262.488);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-top-style: ridge;
@@ -1308,14 +1412,7 @@ html[saved-theme="dark"] body ul.section-ul {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: oklch(0.2 0.0651598 262.488);
-}
-
-html[saved-theme="dark"] body input[type=text] {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  background-color: oklch(0.14 0.0651598 262.488);
 }
 
 html[saved-theme="dark"] body kbd {
@@ -1331,7 +1428,7 @@ html[saved-theme="dark"] body kbd {
     base: `:root:root {
   --accent-1: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) !important;
   --accent-2: oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h) !important;
@@ -1367,7 +1464,7 @@ html[saved-theme="dark"] body kbd {
   --background-tertiary: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
   ) !important;
-  --base-accent: oklch(from rgb(153, 115, 247) l c h) !important;
+  --base-accent: oklch(from hsl(257, 88.88%, 70.95%) l c h) !important;
   --bases-cards-background: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
   ) 85% c h) !important;
@@ -1382,6 +1479,7 @@ html[saved-theme="dark"] body kbd {
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h) !important;
   --bases-embed-border-radius: 12px !important;
+  --bases-header-border-width: 0 !important;
   --bases-table-border-color: oklch(from #222222 50% c h / 50%) !important;
   --bases-table-cell-background-active: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
@@ -1389,13 +1487,13 @@ html[saved-theme="dark"] body kbd {
   --bases-table-cell-background-disabled: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
   ) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(
     from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) 70% c h
   ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(153, 115, 247) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(257, 88.88%, 70.95%) !important;
   --bases-table-container-border-radius: 8px !important;
   --bases-table-group-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 75% calc(c * 0.4) h
@@ -1412,7 +1510,7 @@ html[saved-theme="dark"] body kbd {
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h / 40%
   ) !important;
-  --blockquote-border-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 50% c h / 75%) !important;
+  --blockquote-border-color: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 75%) !important;
   --blockquote-border-thickness: 4px !important;
   --blur-background: color-mix(in srgb, oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
@@ -1475,12 +1573,18 @@ html[saved-theme="dark"] body kbd {
   --callout-radius: 12px;
   --callout-title-weight: 600;
   --canvas-background: oklch(
-    from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
+    from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
   ) !important;
   --canvas-controls-radius: 8px !important;
-  --canvas-dot-pattern: #ababab !important;
-  --checkbox-color: rgb(153, 115, 247) !important;
-  --checkbox-color-hover: rgb(166, 139, 249) !important;
+  --canvas-dot-pattern: oklch(
+    from #222222 l c h / 0.3
+  ) !important;
+  --checkbox-color: oklch(
+    from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
+  ) !important;
+  --checkbox-color-hover: oklch(
+    from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
+  ) !important;
   --checkbox-marker-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
   ) !important;
@@ -1517,10 +1621,11 @@ html[saved-theme="dark"] body kbd {
   --code-value: oklch(
     from #673ab7 50% 30% h
   ) !important;
-  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(153, 115, 247) !important;
-  --color-accent-2: rgb(166, 139, 249) !important;
+  --collapse-icon-color: #5c5c5c !important;
+  --collapse-icon-color-collapsed: #ababab !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-amber: oklch(
     from #ffb300 50% 30% h
   ) !important;
@@ -1569,14 +1674,14 @@ html[saved-theme="dark"] body kbd {
   --divider-color: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 65% calc(c * 0.4) h
   ) !important;
-  --divider-color-hover: rgb(153, 115, 247) !important;
+  --divider-color-hover: hsl(257, 88.88%, 70.95%) !important;
   --divider-width: 0px !important;
   --embed-block-shadow-hover: 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h), inset 0 0 0 1px oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h) !important;
-  --embed-border-start: 2px solid rgb(153, 115, 247) !important;
+  --embed-border-start: 2px solid hsl(257, 88.88%, 70.95%) !important;
   --file-header-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) !important;
@@ -1584,28 +1689,29 @@ html[saved-theme="dark"] body kbd {
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) !important;
   --file-margins: 16px !important;
-  --folder-accent-1: oklch(
+  --folder-accent: oklch(from hsl(257, 88.88%, 70.95%) l c h) !important;
+  --folder-color-1: oklch(
     from #d32f2f 50% 30% h
   ) !important;
-  --folder-accent-10: oklch(
+  --folder-color-10: oklch(
     from #8bc34a 50% 30% h
   ) !important;
-  --folder-accent-11: oklch(
+  --folder-color-11: oklch(
     from #009688 50% 30% h
   ) !important;
-  --folder-accent-12: oklch(
+  --folder-color-12: oklch(
     from #673ab7 50% 30% h
   ) !important;
-  --folder-accent-13: oklch(
+  --folder-color-13: oklch(
     from #e91e63 50% 30% h
   ) !important;
-  --folder-accent-14: oklch(
+  --folder-color-14: oklch(
     from #f48fb1 50% 30% h
   ) !important;
-  --folder-accent-15: oklch(
+  --folder-color-15: oklch(
     from #00bcd4 50% 30% h
   ) !important;
-  --folder-accent-2: oklch(
+  --folder-color-2: oklch(
     from #ff9800 50% 30% h
   ) !important;
   --folder-color-3: oklch(
@@ -1636,7 +1742,7 @@ html[saved-theme="dark"] body kbd {
   --graph-node-attachment: oklch(
     from #ffeb3b 50% 30% h
   ) !important;
-  --graph-node-focused: rgb(138, 92, 245) !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
   --graph-node-tag: oklch(
     from #4caf50 50% 30% h
   ) !important;
@@ -1677,7 +1783,7 @@ html[saved-theme="dark"] body kbd {
   --hue-vermillion: #ff5722 !important;
   --hue-violet: #9c27b0 !important;
   --hue-yellow: #ffeb3b !important;
-  --icon-color-active: rgb(138, 92, 245) !important;
+  --icon-color-active: hsl(258, 88%, 66%) !important;
   --img-border-color: oklch(from oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
   ) l 30% h) !important;
@@ -1688,9 +1794,9 @@ html[saved-theme="dark"] body kbd {
   ) !important;
   --input-border-width: 2px !important;
   --input-radius: 12px !important;
-  --interactive-accent: rgb(153, 115, 247) !important;
-  --interactive-accent-hover: rgb(166, 139, 249) !important;
-  --interactive-active: oklch(from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%) !important;
+  --interactive-accent: hsl(257, 88.88%, 70.95%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
+  --interactive-active: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 50%) !important;
   --italic-color: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) calc(50% - 15%) 30%
       calc(h + 200)
@@ -1703,11 +1809,11 @@ html[saved-theme="dark"] body kbd {
   ) !important;
   --lightness: 50% !important;
   --link-color: oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 35% 30% h
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) 35% 30% h
   ) !important;
   --link-color-hover: oklch(
     from oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 35% 30% h
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) 35% 30% h
   ) 50% 30% h / 80%
   ) !important;
   --link-external-color: oklch(
@@ -1720,13 +1826,13 @@ html[saved-theme="dark"] body kbd {
   ) !important;
   --link-unresolved-color: oklch(
     from oklch(
-    from oklch(from rgb(153, 115, 247) l c h) 35% 30% h
+    from oklch(from hsl(257, 88.88%, 70.95%) l c h) 35% 30% h
   ) 50% 30% h / 60%
   ) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-weight: 700 !important;
   --list-indent: 2.25em !important;
-  --list-marker-color-collapsed: rgb(138, 92, 245) !important;
+  --list-marker-color-collapsed: hsl(258, 88%, 66%) !important;
   --menu-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
   ) !important;
@@ -1780,13 +1886,14 @@ html[saved-theme="dark"] body kbd {
   --modal-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) !important;
+  --nav-collapse-icon-color: #5c5c5c !important;
   --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
-  --nav-item-color-highlighted: rgb(138, 92, 245) !important;
+  --nav-item-background-selected: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 80% 30% h / 75%) !important;
+  --nav-item-color-highlighted: hsl(258, 88%, 66%) !important;
   --nav-item-radius: 8px !important;
   --nav-tag-color: #5c5c5c !important;
   --nav-tag-radius: 8px !important;
-  --outline-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 25% c h) !important;
+  --outline-color: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 25% c h) !important;
   --pdf-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) !important;
@@ -1799,13 +1906,25 @@ html[saved-theme="dark"] body kbd {
   --pill-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h) !important;
-  --pill-color-remove-hover: rgb(138, 92, 245) !important;
+  --pill-color-remove-hover: hsl(258, 88%, 66%) !important;
   --prompt-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) !important;
   --radius-s: 8px !important;
   --radius-xs: 8px !important;
   --radius-xxs: 8px !important;
+  --retroma-canvas-card-border-width: 3px !important;
+  --retroma-canvas-card-embed-border-width: 3px !important;
+  --retroma-canvas-dot-opacity: 0.3 !important;
+  --retroma-canvas-node-content-bg-opacity: 0.25 !important;
+  --retroma-folder-bg-color: oklch(
+    from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
+  ) !important;
+  --retroma-folder-border: 1px solid
+    oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 55% 30% h / 50%) !important;
+  --retroma-folder-box-shadow: -1px 1px 0px oklch(
+    from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
+  ) !important;
   --ribbon-background: oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) !important;
@@ -1817,7 +1936,7 @@ html[saved-theme="dark"] body kbd {
   --search-result-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) !important;
-  --secondary: rgb(138, 92, 245) !important;
+  --secondary: hsl(258, 88%, 66%) !important;
   --setting-items-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 93% calc(c * 0.4) h
   ) !important;
@@ -1828,7 +1947,7 @@ html[saved-theme="dark"] body kbd {
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h
   ) !important;
   --sidebar-markdown-font-size: 14.4px !important;
-  --slider-track-background: oklch(from oklch(from rgb(153, 115, 247) l c h) 50% c h / 50%) !important;
+  --slider-track-background: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 50% c h / 50%) !important;
   --slider-track-height: 6px !important;
   --status-bar-background: oklch(
     from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 60% calc(c * 0.4) h
@@ -1882,31 +2001,31 @@ html[saved-theme="dark"] body kbd {
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ), transparent) !important;
   --tab-switcher-preview-radius: 12px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
-  --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%) !important;
   --table-add-button-border-color: oklch(from oklch(
     from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h
   ) l c h) !important;
   --table-border-color: oklch(from #222222 50% c h / 50%) !important;
   --table-border-spacing: 2px !important;
-  --table-data-background: oklch(from oklch(from rgb(153, 115, 247) l c h) l c h / 7%) !important;
-  --table-drag-handle-background-active: rgb(153, 115, 247) !important;
+  --table-data-background: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) l c h / 7%) !important;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%) !important;
   --table-header-background: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 30)) 50% c h / 30%) !important;
   --table-header-border-color: oklch(from #222222 50% c h / 50%) !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
-  --table-selection-border-color: rgb(153, 115, 247) !important;
-  --tag-background: rgba(138, 92, 245, 0.1) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 1px !important;
-  --tag-color: oklch(from oklch(from rgb(153, 115, 247) l c h) 40% c h / 75%) !important;
-  --tag-color-hover: rgb(138, 92, 245) !important;
+  --tag-color: oklch(from oklch(from hsl(257, 88.88%, 70.95%) l c h) 40% c h / 75%) !important;
+  --tag-color-hover: hsl(258, 88%, 66%) !important;
   --tag-radius: 8px !important;
-  --tertiary: rgb(166, 139, 249) !important;
-  --text-accent: rgb(138, 92, 245) !important;
-  --text-accent-hover: rgb(166, 139, 249) !important;
+  --tertiary: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent: hsl(258, 88%, 66%) !important;
+  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-error: oklch(
     from #d32f2f 50% 30% h
   ) !important;
@@ -1952,7 +2071,7 @@ html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
-  background-color: oklch(0.93 0.0756825 263.56);
+  background-color: oklch(0.98 0.0756825 263.56);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
@@ -2301,18 +2420,14 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: oklch(0.98 0.0756825 263.56);
-  border-bottom-color: oklch(0.474759 0.0000235681 23.6314 / 0.5);
+  border-bottom-color: oklch(0.25 0.189206 293.56);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-bottom-width: 2px;
-  border-left-color: oklch(0.474759 0.0000235681 23.6314 / 0.5);
-  border-left-width: 2px;
-  border-right-color: oklch(0.474759 0.0000235681 23.6314 / 0.5);
-  border-right-width: 2px;
-  border-top-color: oklch(0.474759 0.0000235681 23.6314 / 0.5);
+  border-left-color: oklch(0.25 0.189206 293.56);
+  border-right-color: oklch(0.25 0.189206 293.56);
+  border-top-color: oklch(0.25 0.189206 293.56);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  border-top-width: 2px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
@@ -2356,21 +2471,21 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
   background-color: oklch(0.98 0.0756825 263.56);
-  border-bottom-color: oklch(0.474759 0.0000235681 23.6314 / 0.5);
+  border-bottom-color: oklch(0.25 0.189206 293.56);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-bottom-width: 2px;
-  border-left-color: oklch(0.474759 0.0000235681 23.6314 / 0.5);
+  border-left-color: oklch(0.25 0.189206 293.56);
   border-left-style: solid;
-  border-left-width: 2px;
-  border-right-color: oklch(0.474759 0.0000235681 23.6314 / 0.5);
+  border-left-width: 1px;
+  border-right-color: oklch(0.25 0.189206 293.56);
   border-right-style: solid;
-  border-right-width: 2px;
-  border-top-color: oklch(0.474759 0.0000235681 23.6314 / 0.5);
+  border-right-width: 1px;
+  border-top-color: oklch(0.25 0.189206 293.56);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-top-style: solid;
-  border-top-width: 2px;
+  border-top-width: 1px;
+  box-shadow: oklch(0.5 0.0756825 293.56) 2px 2px 0px 0px inset, oklch(1 0.0756825 293.56) -2px -2px 0px 0px inset;
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
@@ -2478,15 +2593,15 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
   background-color: oklch(0.93 0.0756825 263.56);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: oklch(0.5 0.12 64.0404);
+  color: oklch(0.5 0.12 26.4069);
   font-weight: 700;
-  text-decoration: oklch(0.5 0.12 64.0404);
+  text-decoration: oklch(0.5 0.12 26.4069);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: oklch(0.5 0.12 64.0404);
+  color: oklch(0.5 0.12 26.4069);
   font-weight: 700;
-  text-decoration: oklch(0.5 0.12 64.0404);
+  text-decoration: oklch(0.5 0.12 26.4069);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -2535,42 +2650,42 @@ html[saved-theme="light"] body footer ul li a {
   text-decoration: oklch(1 0.0756825 263.56);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
-  background-color: oklch(0.5 0.12 64.0404 / 0.3);
+  background-color: oklch(0.5 0.12 26.4069 / 0.3);
   border-bottom-color: oklch(0.55 0.12 263.56 / 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-left-color: oklch(0.55 0.12 263.56 / 0.5);
   border-left-style: solid;
-  border-left-width: 2px;
+  border-left-width: 1px;
   border-right-color: oklch(0.55 0.12 263.56 / 0.5);
   border-right-style: solid;
-  border-right-width: 2px;
+  border-right-width: 1px;
   border-top-color: oklch(0.55 0.12 263.56 / 0.5);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-style: solid;
-  border-top-width: 2px;
+  border-top-width: 1px;
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
-  background-color: oklch(0.5 0.12 64.0404 / 0.3);
+  background-color: oklch(0.5 0.12 26.4069 / 0.3);
   border-bottom-color: oklch(0.55 0.12 263.56 / 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-left-color: oklch(0.55 0.12 263.56 / 0.5);
   border-left-style: solid;
-  border-left-width: 2px;
+  border-left-width: 1px;
   border-right-color: oklch(0.55 0.12 263.56 / 0.5);
   border-right-style: solid;
-  border-right-width: 2px;
+  border-right-width: 1px;
   border-top-color: oklch(0.55 0.12 263.56 / 0.5);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-style: solid;
-  border-top-width: 2px;
+  border-top-width: 1px;
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -2643,13 +2758,6 @@ html[saved-theme="light"] body ul.section-ul {
 
 html[saved-theme="light"] body .navigation-progress {
   background-color: oklch(0.6 0.0756825 263.56);
-}
-
-html[saved-theme="light"] body input[type=text] {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
 }
 
 html[saved-theme="light"] body kbd {
