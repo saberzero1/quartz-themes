@@ -19,7 +19,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgb(139, 108, 239) !important;
+  --background-modifier-active-hover: hsl(254, 80%, 68%, 15%) !important;
   --background-modifier-border: rgb(204, 208, 218) !important;
   --background-modifier-border-focus: rgb(156, 160, 176) !important;
   --background-modifier-border-hover: rgb(172, 176, 190) !important;
@@ -66,7 +66,7 @@
   --bases-table-border-color: rgb(204, 208, 218) !important;
   --bases-table-cell-background-active: rgb(239, 241, 245) !important;
   --bases-table-cell-background-disabled: rgb(230, 233, 239) !important;
-  --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(254, 80%, 68%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px rgb(156, 160, 176) !important;
@@ -599,7 +599,7 @@
   --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: rgb(76, 79, 105, 7.5%) !important;
   --nav-item-background-hover: rgb(76, 79, 105, 7.5%) !important;
-  --nav-item-background-selected: rgb(139, 108, 239) !important;
+  --nav-item-background-selected: hsl(254, 80%, 68%, 20%) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgb(108, 111, 133) !important;
@@ -837,7 +837,7 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(139, 108, 239, 0.1) !important;
+  --table-selection: hsla(254, 80%, 68%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: rgb(114, 135, 253) !important;
   --table-selection-border-radius: 4px !important;
@@ -846,7 +846,7 @@
   --table-white-space: normal !important;
   --tag-background: transparent !important;
   --tag-background-hover: 0 !important;
-  --tag-border-color: rgb(139, 108, 239) !important;
+  --tag-border-color: hsl(254, 80%, 68%, 10%) !important;
   --tag-border-color-hover: hsl(254, 80%, 68%, 15%) !important;
   --tag-border-width: 0 !important;
   --tag-color: rgb(114, 135, 253) !important;
@@ -1016,7 +1016,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgb(139, 108, 239) !important;
+  --background-modifier-active-hover: hsl(254, 80%, 68%, 15%) !important;
   --background-modifier-border: rgb(65, 69, 89) !important;
   --background-modifier-border-focus: rgb(115, 121, 148) !important;
   --background-modifier-border-hover: rgb(98, 104, 128) !important;
@@ -1063,7 +1063,7 @@
   --bases-table-border-color: rgb(65, 69, 89) !important;
   --bases-table-cell-background-active: rgb(48, 52, 70) !important;
   --bases-table-cell-background-disabled: rgb(41, 44, 60) !important;
-  --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(254, 80%, 68%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px rgb(115, 121, 148) !important;
@@ -1596,7 +1596,7 @@
   --nav-indentation-guide-width: 2px !important;
   --nav-item-background-active: rgb(198, 208, 245, 7.5%) !important;
   --nav-item-background-hover: rgb(198, 208, 245, 7.5%) !important;
-  --nav-item-background-selected: rgb(139, 108, 239) !important;
+  --nav-item-background-selected: hsl(254, 80%, 68%, 20%) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgb(165, 173, 206) !important;
@@ -1826,7 +1826,7 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(139, 108, 239, 0.1) !important;
+  --table-selection: hsla(254, 80%, 68%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
   --table-selection-border-color: rgb(186, 187, 241) !important;
   --table-selection-border-radius: 4px !important;
@@ -1835,7 +1835,7 @@
   --table-white-space: normal !important;
   --tag-background: transparent !important;
   --tag-background-hover: 0 !important;
-  --tag-border-color: rgb(139, 108, 239) !important;
+  --tag-border-color: hsl(254, 80%, 68%, 10%) !important;
   --tag-border-color-hover: hsl(254, 80%, 68%, 15%) !important;
   --tag-border-width: 0 !important;
   --tag-color: rgb(186, 187, 241) !important;
