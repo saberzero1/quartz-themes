@@ -9,6 +9,7 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root {
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: oklch(25.5% 0.021 279.29) !important;
   --background-modifier-border-focus: oklch(61.5% 0.028 279.29) !important;
   --background-modifier-border-hover: oklch(35.5% 0.029 279.29) !important;
@@ -27,11 +28,14 @@ export const theme: ThemeData = {
   --bases-table-border-color: oklch(25.5% 0.021 279.29) !important;
   --bases-table-cell-background-active: oklch(13.5% 0.01 279.29) !important;
   --bases-table-cell-background-disabled: oklch(25.5% 0.021 279.29) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(61.5% 0.028 279.29) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --bases-table-group-background: oklch(25.5% 0.021 279.29) !important;
   --bases-table-header-background: oklch(13.5% 0.01 279.29) !important;
   --bases-table-header-color: oklch(84.5% 0.01 279.29) !important;
   --bases-table-summary-background: oklch(13.5% 0.01 279.29) !important;
+  --blockquote-border-color: hsl(258, 88%, 66%) !important;
   --blue: rgb(42, 113, 235) !important;
   --blue-100: oklch(25.5% 0.091 260.58) !important;
   --blue-200: oklch(35.5% 0.127 260.58) !important;
@@ -66,6 +70,7 @@ export const theme: ThemeData = {
   --callout-summary: oklch(48.5% 0.039 279.29);
   --callout-tip: oklch(48.5% 0.106 161.65);
   --callout-title-color: oklch(61.5% 0.176 260.58);
+  --callout-title-weight: 600;
   --callout-todo: oklch(48.5% 0.173 260.58);
   --callout-warning: oklch(48.5% 0.134 46.85);
   --canvas-background: oklch(13.5% 0.01 279.29) !important;
@@ -81,7 +86,7 @@ export const theme: ThemeData = {
   --checkbox-border-color: oklch(48.5% 0.039 279.29) !important;
   --checkbox-border-color-hover: oklch(84.5% 0.01 279.29) !important;
   --checkbox-color: oklch(74.5% 0.164 161.65) !important;
-  --checkbox-color-hover: rgb(138, 92, 245) !important;
+  --checkbox-color-hover: hsl(258, 88%, 66%) !important;
   --checkbox-margin-inline-start: 0.4em !important;
   --checkbox-marker-color: oklch(13.5% 0.01 279.29) !important;
   --checkbox-quote-color: oklch(61.5% 0.028 279.29) !important;
@@ -99,13 +104,19 @@ export const theme: ThemeData = {
   --code-radius: 8px !important;
   --codeFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: oklch(74.5% 0.018 279.29) !important;
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --dark: oklch(92% 0.004 279.29) !important;
   --darkgray: oklch(92% 0.004 279.29) !important;
   --divider-color: oklch(25.5% 0.021 279.29) !important;
+  --divider-color-hover: hsl(258, 88%, 66%) !important;
   --dropdown-background: oklch(25.5% 0.021 279.29) !important;
   --dropdown-background-hover: oklch(35.5% 0.029 279.29) !important;
   --ease-out: cubic-bezier(0.33, 1, 0.68, 1) !important;
   --embed-block-shadow-hover: 0 !important;
+  --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
   --file-header-background: oklch(13.5% 0.01 279.29) !important;
   --file-header-background-focused: oklch(13.5% 0.01 279.29) !important;
   --file-header-font: "Inter" !important;
@@ -120,6 +131,7 @@ export const theme: ThemeData = {
   --footnote-id-color: oklch(84.5% 0.01 279.29) !important;
   --footnote-id-color-no-occurrences: oklch(74.5% 0.018 279.29) !important;
   --graph-node: oklch(84.5% 0.01 279.29) !important;
+  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-unresolved: oklch(74.5% 0.018 279.29) !important;
   --graph-text: oklch(92% 0.004 279.29) !important;
   --gray: rgb(90, 93, 117) !important;
@@ -170,10 +182,12 @@ export const theme: ThemeData = {
   --h6-weight: 650 !important;
   --headerFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: oklch(74.5% 0.018 279.29) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: oklch(84.5% 0.174 97.11) !important;
   --highlight-text-color: oklch(12% 0.009 279.29) !important;
   --hr-color: oklch(25.5% 0.021 279.29) !important;
   --icon-color: oklch(61.5% 0.028 279.29) !important;
+  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
   --icon-color-focused: oklch(92% 0.004 279.29) !important;
   --icon-color-hover: oklch(84.5% 0.01 279.29) !important;
   --inline-title-color: oklch(61.5% 0.17 288) !important;
@@ -183,19 +197,30 @@ export const theme: ThemeData = {
   --input-date-separator: oklch(74.5% 0.018 279.29) !important;
   --input-font-weight: 600 !important;
   --input-placeholder-color: oklch(74.5% 0.018 279.29) !important;
+  --interactive-accent: hsl(258, 88%, 66%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-hover: oklch(35.5% 0.029 279.29) !important;
   --interactive-normal: oklch(25.5% 0.021 279.29) !important;
   --light: oklch(13.5% 0.01 279.29) !important;
   --lightgray: oklch(18% 0.014 279.29) !important;
+  --link-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-decoration: none !important;
+  --link-external-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
+  --link-unresolved-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-indent-source: 0px !important;
   --list-marker-color: oklch(74.5% 0.018 279.29) !important;
+  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --list-marker-color-hover: oklch(84.5% 0.01 279.29) !important;
   --list-padding-inline-start: 0px !important;
   --menu-background: oklch(18% 0.014 279.29) !important;
   --menu-border-color: oklch(35.5% 0.029 279.29) !important;
   --metadata-border-color: oklch(25.5% 0.021 279.29) !important;
   --metadata-divider-color: oklch(25.5% 0.021 279.29) !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: oklch(92% 0.004 279.29) !important;
   --metadata-label-text-color: oklch(84.5% 0.01 279.29) !important;
   --metadata-label-text-color-hover: oklch(84.5% 0.01 279.29) !important;
@@ -211,8 +236,10 @@ export const theme: ThemeData = {
   --nav-heading-color-hover: oklch(92% 0.004 279.29) !important;
   --nav-item-background-active: oklch(25.5% 0.021 279.29) !important;
   --nav-item-background-hover: oklch(25.5% 0.021 279.29) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: oklch(84.5% 0.01 279.29) !important;
   --nav-item-color-active: oklch(92% 0.004 279.29) !important;
+  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --nav-item-color-hover: oklch(92% 0.004 279.29) !important;
   --nav-item-color-selected: oklch(92% 0.004 279.29) !important;
   --nav-tag-color: oklch(74.5% 0.018 279.29) !important;
@@ -243,6 +270,7 @@ export const theme: ThemeData = {
   --pill-color: oklch(84.5% 0.01 279.29) !important;
   --pill-color-hover: oklch(92% 0.004 279.29) !important;
   --pill-color-remove: oklch(74.5% 0.018 279.29) !important;
+  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pink: rgb(242, 66, 255) !important;
   --pink-100: oklch(25.5% 0.119 324.98) !important;
   --pink-200: oklch(35.5% 0.165 324.98) !important;
@@ -308,10 +336,12 @@ export const theme: ThemeData = {
   --search-clear-button-color: oklch(84.5% 0.01 279.29) !important;
   --search-icon-color: oklch(84.5% 0.01 279.29) !important;
   --search-result-background: oklch(13.5% 0.01 279.29) !important;
+  --secondary: hsl(255, 89.76%, 75.9%) !important;
   --semibold-modifier: 200 !important;
   --setting-group-heading-color: oklch(92% 0.004 279.29) !important;
   --setting-items-background: oklch(25.5% 0.021 279.29) !important;
   --setting-items-border-color: oklch(25.5% 0.021 279.29) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: oklch(35.5% 0.029 279.29) !important;
   --slider-track-background: oklch(25.5% 0.021 279.29) !important;
   --status-bar-background: oklch(18% 0.014 279.29) !important;
@@ -326,26 +356,39 @@ export const theme: ThemeData = {
   --tab-radius-active: 0 !important;
   --tab-switcher-background: oklch(18% 0.014 279.29) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(18% 0.014 279.29), transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: oklch(74.5% 0.018 279.29) !important;
   --tab-text-color-active: oklch(84.5% 0.01 279.29) !important;
   --tab-text-color-focused: oklch(84.5% 0.01 279.29) !important;
   --tab-text-color-focused-active: oklch(84.5% 0.01 279.29) !important;
   --tab-text-color-focused-active-current: oklch(92% 0.004 279.29) !important;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --table-add-button-border-color: oklch(25.5% 0.021 279.29) !important;
   --table-border-color: oklch(25.5% 0.021 279.29) !important;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
   --table-drag-handle-color: oklch(74.5% 0.018 279.29) !important;
   --table-header-background: oklch(25.5% 0.021 279.29) !important;
   --table-header-border-color: oklch(25.5% 0.021 279.29) !important;
   --table-header-color: oklch(92% 0.004 279.29) !important;
   --table-header-weight: 700 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-border-color: hsl(258, 88%, 66%) !important;
   --tag-background: oklch(35.5% 0.127 260.58) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: oklch(84.5% 0.06 260.58) !important;
+  --tag-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  --tertiary: hsl(253, 92.4%, 85.14%) !important;
+  --text-accent: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: oklch(61.5% 0.245 13.65) !important;
   --text-faint: oklch(74.5% 0.018 279.29) !important;
   --text-highlight-bg: oklch(84.5% 0.174 97.11) !important;
   --text-inverse: oklch(12% 0.009 279.29) !important;
   --text-muted: oklch(84.5% 0.01 279.29) !important;
   --text-normal: oklch(92% 0.004 279.29) !important;
+  --text-selection: hsla(258, 88%, 66%, 0.33) !important;
   --text-success: oklch(61.5% 0.183 140.09) !important;
   --text-warning: oklch(61.5% 0.17 46.85) !important;
   --textHighlight: oklch(84.5% 0.174 97.11) !important;
@@ -358,6 +401,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: oklch(92% 0.004 279.29) !important;
   --vault-profile-color: oklch(92% 0.004 279.29) !important;
   --vault-profile-color-hover: oklch(92% 0.004 279.29) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --yellow: rgb(242, 208, 3) !important;
   --yellow-100: oklch(25.5% 0.052 97.11) !important;
   --yellow-200: oklch(35.5% 0.072 97.11) !important;
@@ -1198,20 +1242,6 @@ html body ::-webkit-scrollbar-track {
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: oklch(0.845 0.01 279.29);
   text-decoration: oklch(0.845 0.01 279.29);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: oklch(0.845 0.01 279.29);
-  text-decoration: oklch(0.845 0.01 279.29);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: oklch(0.255 0.021 279.29);
-  border-bottom-color: oklch(0.92 0.004 279.29);
-  border-left-color: oklch(0.92 0.004 279.29);
-  border-right-color: oklch(0.92 0.004 279.29);
-  border-top-color: oklch(0.92 0.004 279.29);
-  color: oklch(0.92 0.004 279.29);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: oklch(0.615 0.028 279.29);

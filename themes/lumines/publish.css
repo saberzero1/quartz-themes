@@ -3689,7 +3689,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(51, 51, 51), rgb(230, 230, 230));
+  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -3706,11 +3706,14 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(230, 230, 230);
+  text-decoration: rgb(179, 179, 179);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(51, 51, 51), rgb(230, 230, 230));
+  background-color: light-dark(
+    rgba(0, 0, 0, 0.067),
+    rgba(255, 255, 255, 0.067)
+  );
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3719,7 +3722,7 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(51, 51, 51), rgb(230, 230, 230));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
@@ -4119,6 +4122,545 @@ body
   > .callout-icon
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
+}
+body
+  .callout[data-callout="accessible"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-accessible));
+}
+body
+  .callout[data-callout="archive"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-archive));
+}
+body
+  .callout[data-callout="award"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-award));
+}
+body
+  .callout[data-callout="badge"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-badge));
+}
+body
+  .callout[data-callout="badges"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-badges));
+}
+body
+  .callout[data-callout="balloon"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-balloon));
+}
+body
+  .callout[data-callout="bandage"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-bandage));
+}
+body
+  .callout[data-callout="bell"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-bell));
+}
+body
+  .callout[data-callout="bitcoin"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-bitcoin));
+}
+body
+  .callout[data-callout="briefcase"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-briefcase));
+}
+body
+  .callout[data-callout="bubble"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-bubble));
+}
+body
+  .callout[data-callout="camera"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-camera));
+}
+body
+  .callout[data-callout="cannabis"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-cannabis));
+}
+body
+  .callout[data-callout="card"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-card));
+}
+body
+  .callout[data-callout="clipboard"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-clipboard));
+}
+body
+  .callout[data-callout="clock"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-clock));
+}
+body
+  .callout[data-callout="cloud"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-cloud));
+}
+body
+  .callout[data-callout="code"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-code));
+}
+body
+  .callout[data-callout="cookie"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-cookie));
+}
+body
+  .callout[data-callout="desktop"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-desktop));
+}
+body
+  .callout[data-callout="diamond"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-diamond));
+}
+body
+  .callout[data-callout="diamonds"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-diamonds));
+}
+body
+  .callout[data-callout="discord"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-discord));
+}
+body
+  .callout[data-callout="dislike"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-dislike));
+}
+body
+  .callout[data-callout="dollar"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-dollar));
+}
+body
+  .callout[data-callout="down"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-down));
+}
+body
+  .callout[data-callout="euro"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-euro));
+}
+body
+  .callout[data-callout="eye"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-eye));
+}
+body
+  .callout[data-callout="favicon"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-favicon));
+}
+body
+  .callout[data-callout="file"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-file));
+}
+body
+  .callout[data-callout="filter"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-filter));
+}
+body
+  .callout[data-callout="flame"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-flame));
+}
+body
+  .callout[data-callout="flare"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-flare));
+}
+body
+  .callout[data-callout="flower"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-flower));
+}
+body
+  .callout[data-callout="folder"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-folder));
+}
+body
+  .callout[data-callout="ghost"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-ghost));
+}
+body
+  .callout[data-callout="gift"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-gift));
+}
+body
+  .callout[data-callout="github"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-github));
+}
+body
+  .callout[data-callout="heart"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-heart));
+}
+body
+  .callout[data-callout="hourglass"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-hourglass));
+}
+body
+  .callout[data-callout="image"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-image));
+}
+body
+  .callout[data-callout="key"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-key));
+}
+body
+  .callout[data-callout="label"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-label));
+}
+body
+  .callout[data-callout="lemon"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-lemon));
+}
+body
+  .callout[data-callout="like"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-like));
+}
+body
+  .callout[data-callout="linkedin"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-linkedin));
+}
+body
+  .callout[data-callout="list"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-list));
+}
+body
+  .callout[data-callout="location"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-location));
+}
+body
+  .callout[data-callout="mail"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-mail));
+}
+body
+  .callout[data-callout="message"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-message));
+}
+body
+  .callout[data-callout="mobile"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-mobile));
+}
+body
+  .callout[data-callout="palette"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-palette));
+}
+body
+  .callout[data-callout="pig"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-pig));
+}
+body
+  .callout[data-callout="pound"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-pound));
+}
+body
+  .callout[data-callout="puzzle"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-puzzle));
+}
+body
+  .callout[data-callout="radar"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-radar));
+}
+body
+  .callout[data-callout="rupee"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-rupee));
+}
+body
+  .callout[data-callout="settings"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-settings));
+}
+body
+  .callout[data-callout="shield"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-shield));
+}
+body
+  .callout[data-callout="spade"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-spade));
+}
+body
+  .callout[data-callout="star"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-star));
+}
+body
+  .callout[data-callout="steam"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-steam));
+}
+body
+  .callout[data-callout="table"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-table));
+}
+body
+  .callout[data-callout="tablet"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-tablet));
+}
+body
+  .callout[data-callout="taka"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-taka));
+}
+body
+  .callout[data-callout="tiktok"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-tiktok));
+}
+body
+  .callout[data-callout="trash"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-trash));
+}
+body
+  .callout[data-callout="trophy"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-trophy));
+}
+body
+  .callout[data-callout="truck"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-truck));
+}
+body
+  .callout[data-callout="unknown"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-unknown));
+}
+body
+  .callout[data-callout="up"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-up));
+}
+body
+  .callout[data-callout="user"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-user));
+}
+body
+  .callout[data-callout="whatsapp"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-whatsapp));
+}
+body
+  .callout[data-callout="windmill"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-windmill));
+}
+body
+  .callout[data-callout="yen"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-yen));
+}
+body
+  .callout[data-callout="youtube"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-youtube));
+}
+body
+  .callout[data-callout="yuan"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-yuan));
 }
 body pre > code,
 body .markdown-rendered pre > code {

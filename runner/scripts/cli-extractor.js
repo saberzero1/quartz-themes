@@ -18,6 +18,7 @@ import {
 import { resolve, join } from "path";
 import { config } from "./config.js";
 import { themes } from "../../config.mjs";
+import { dirToKey } from "../../extensions/extractor.mjs";
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
 
 const VAULT_PATH = resolve("./runner/vault");
@@ -542,11 +543,18 @@ function generateFullExtractionScript(selectors) {
 
     const allVarNames = discoverCssVarNames();
 
-    function getAllCssVars(style) {
+    function getAllCssVars(style, baseline) {
       const vars = {};
       for (const prop of allVarNames) {
         const val = style.getPropertyValue(prop);
-        if (val && val.trim()) vars[prop] = val.trim();
+        if (val && val.trim()) {
+          const trimmed = val.trim();
+          // If a baseline is provided, only include vars that differ from it
+          if (baseline && baseline[prop] !== undefined && baseline[prop] === trimmed) {
+            continue;
+          }
+          vars[prop] = trimmed;
+        }
       }
       return vars;
     }
@@ -562,14 +570,14 @@ function generateFullExtractionScript(selectors) {
       return props;
     }
 
-    function extractPseudoStyles(el, selector) {
+    function extractPseudoStyles(el, selector, baseline) {
       for (const pseudo of pseudoElements) {
         try {
           const pseudoStyle = window.getComputedStyle(el, pseudo);
           const content = pseudoStyle.getPropertyValue("content");
           if (!content || content === "none" || content === "normal") continue;
 
-          const extracted = { ...getAllCssVars(pseudoStyle), ...getStandardProps(pseudoStyle) };
+          const extracted = { ...getAllCssVars(pseudoStyle, baseline), ...getStandardProps(pseudoStyle) };
           extracted["content"] = content.trim();
 
           if (Object.keys(extracted).length > 0) {
@@ -597,20 +605,32 @@ function generateFullExtractionScript(selectors) {
     extractPseudoStyles(document.documentElement, "html");
     extractPseudoStyles(document.body, "body");
 
+    // Build baseline from html/body CSS vars — child elements will only
+    // keep overrides, preventing inherited vars from bloating every selector.
+    const cssVarBaseline = {};
+    for (const key of ["html", "body"]) {
+      if (!results[key]) continue;
+      for (const prop of Object.keys(results[key])) {
+        if (prop.startsWith("--") && !(prop in cssVarBaseline)) {
+          cssVarBaseline[prop] = results[key][prop];
+        }
+      }
+    }
+
     for (const selector of selectors) {
       try {
         const el = document.querySelector(selector);
         if (!el) continue;
 
         const style = window.getComputedStyle(el);
-        const extracted = { ...getAllCssVars(style), ...getStandardProps(style) };
+        const extracted = { ...getAllCssVars(style, cssVarBaseline), ...getStandardProps(style) };
 
         if (Object.keys(extracted).length > 0) {
           results[selector] = { ...results[selector], ...extracted };
         }
 
         // Extract pseudo-element styles for this selector
-        extractPseudoStyles(el, selector);
+        extractPseudoStyles(el, selector, cssVarBaseline);
       } catch (e) {
         // Invalid selector, skip
       }
@@ -968,12 +988,16 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
   const results = { dark: null, light: null };
   const selectors = buildSelectors();
 
-  // Look up custom callout types for this theme from the manifest
-  const customCalloutTypes = calloutManifest[themeName] || [];
+  // Look up custom callout types for this theme from the manifest.
+  // Manifest keys are themes.json keys (lowercase-hyphenated), but for base
+  // themes themeName is the raw directory name (e.g. "Fancy-a-Story").
+  // Dot-variations are already themes.json keys, so we only convert base themes.
+  const manifestKey = themeName.includes(".") ? themeName : dirToKey(themeName);
+  const customCalloutTypes = calloutManifest[manifestKey] || [];
   const extraSelectors = buildCustomCalloutSelectors(customCalloutTypes);
   const allSelectors = [...selectors, ...extraSelectors];
   const extraFiles =
-    customCalloutTypes.length > 0 ? [`theme-callouts/${themeName}.md`] : [];
+    customCalloutTypes.length > 0 ? [`theme-callouts/${manifestKey}.md`] : [];
 
   if (customCalloutTypes.length > 0) {
     console.log(

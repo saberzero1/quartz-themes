@@ -4,6 +4,7 @@ export const theme: ThemeData = {
   meta: { name: "evangelion", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #2c1c42 !important;
   --background-modifier-cover: #151515 !important;
   --background-modifier-error: #db6088 !important;
@@ -33,8 +34,10 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #201430 !important;
   --blockquote-border-color: #8edf5f !important;
   --blur-background: color-mix(in srgb, #43492a 65%, transparent) linear-gradient(#43492a, color-mix(in srgb, #43492a 65%, transparent)) !important;
+  --bold-weight: 600 !important;
   --button-radius: 0px !important;
   --callout-blend-mode: darken;
+  --callout-title-weight: 600;
   --canvas-background: #201430 !important;
   --canvas-card-label-color: #ada4a0 !important;
   --caret-color: #e1d6f8 !important;
@@ -59,6 +62,9 @@ export const theme: ThemeData = {
   --code-value: #d99145 !important;
   --collapse-icon-color: #ada4a0 !important;
   --collapse-icon-color-collapsed: #875faf !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --dark: #e1d6f8 !important;
   --darkgray: #e1d6f8 !important;
   --divider-color: #452f5c !important;
@@ -80,6 +86,7 @@ export const theme: ThemeData = {
   --graph-text: #e1d6f8 !important;
   --gray: #d4d4d4 !important;
   --heading-formatting: #ada4a0 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: rgba(135, 255, 95, 0.85) !important;
   --highlight-mix-blend-mode: darken !important;
   --hr-color: #2c1c42 !important;
@@ -105,12 +112,14 @@ export const theme: ThemeData = {
   --link-external-decoration: wavy !important;
   --link-unresolved-color: #666 !important;
   --link-unresolved-decoration-color: #9f50e1 !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #ada4a0 !important;
   --list-marker-color-collapsed: #875faf !important;
   --list-marker-color-hover: #d4d4d4 !important;
   --menu-background: #452f5c !important;
   --metadata-border-color: #2c1c42 !important;
   --metadata-divider-color: #2c1c42 !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #e1d6f8 !important;
   --metadata-label-text-color: #d4d4d4 !important;
   --metadata-label-text-color-hover: #d4d4d4 !important;
@@ -122,6 +131,7 @@ export const theme: ThemeData = {
   --nav-heading-color-collapsed-hover: #d4d4d4 !important;
   --nav-heading-color-hover: #e1d6f8 !important;
   --nav-indentation-guide-color: #28163b !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: #d4d4d4 !important;
   --nav-item-color-active: #e1d6f8 !important;
   --nav-item-color-highlighted: #875faf !important;
@@ -153,6 +163,7 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #e1d6f8 !important;
   --setting-items-background: #39274c !important;
   --setting-items-border-color: #2c1c42 !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-track-background: #2c1c42 !important;
   --status-bar-background: #452f5c !important;
   --status-bar-border-color: #452f5c !important;
@@ -167,6 +178,7 @@ export const theme: ThemeData = {
   --tab-radius-active: 0 !important;
   --tab-switcher-background: #452f5c !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #452f5c, transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #ada4a0 !important;
   --tab-text-color-active: #d4d4d4 !important;
   --tab-text-color-focused: #d4d4d4 !important;
@@ -188,6 +200,7 @@ export const theme: ThemeData = {
   --table-header-border-color: #9f50e1 !important;
   --table-header-border-width: 1 !important;
   --table-header-color: #000000 !important;
+  --table-header-weight: 600 !important;
   --table-row-last-border-width: 1 !important;
   --table-selection: #9cda7c !important;
   --table-selection-blend-mode: darken !important;
@@ -195,6 +208,9 @@ export const theme: ThemeData = {
   --table-selection-border-width: 1 !important;
   --table-text-color: #e1d6f8 !important;
   --tag-background: #67478a !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #87ff5f !important;
   --tag-color-hover: #875faf !important;
   --tag-radius: 0px !important;
@@ -219,6 +235,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: #e1d6f8 !important;
   --vault-profile-color: #e1d6f8 !important;
   --vault-profile-color-hover: #e1d6f8 !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1053,19 +1070,6 @@ html body ::-webkit-scrollbar-track {
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(212, 212, 212);
   text-decoration: rgb(212, 212, 212);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(225, 214, 248);
-  border-left-color: rgb(225, 214, 248);
-  border-right-color: rgb(225, 214, 248);
-  border-top-color: rgb(225, 214, 248);
-  color: rgb(225, 214, 248);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(212, 212, 212);

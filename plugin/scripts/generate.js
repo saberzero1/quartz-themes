@@ -590,6 +590,10 @@ async function readJsonIfExists(filePath) {
     return JSON.parse(raw);
   } catch (error) {
     if (error && error.code === "ENOENT") return null;
+    if (error instanceof RangeError) {
+      console.warn(`Skipping ${filePath}: file too large to read as a string`);
+      return null;
+    }
     throw error;
   }
 }

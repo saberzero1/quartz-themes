@@ -9,42 +9,47 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --accent-brighter-10: color-mix(in srgb, rgb(138, 92, 245) 90%, #ffffff) !important;
-  --accent-brighter-30: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff) !important;
-  --accent-brighter-50: color-mix(in srgb, rgb(138, 92, 245) 50%, #ffffff) !important;
-  --accent-brighter-70: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff) !important;
-  --accent-brighter-90: color-mix(in srgb, rgb(138, 92, 245) 10%, #ffffff) !important;
-  --accent-darker-10: color-mix(in srgb, rgb(138, 92, 245) 90%, #111111) !important;
-  --accent-darker-30: color-mix(in srgb, rgb(138, 92, 245) 70%, #111111) !important;
-  --accent-darker-50: color-mix(in srgb, rgb(138, 92, 245) 50%, #111111) !important;
-  --accent-darker-70: color-mix(in srgb, rgb(138, 92, 245) 30%, #111111) !important;
-  --accent-opacity-10: color-mix(in srgb, rgb(138, 92, 245) 10%, transparent) !important;
-  --accent-opacity-20: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent) !important;
-  --accent-opacity-30: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent) !important;
-  --accent-opacity-40: color-mix(in srgb, rgb(138, 92, 245) 40%, transparent) !important;
-  --accent-opacity-5: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --accent-opacity-50: color-mix(in srgb, rgb(138, 92, 245) 50%, transparent) !important;
-  --accent-opacity-60: color-mix(in srgb, rgb(138, 92, 245) 60%, transparent) !important;
-  --accent-opacity-70: color-mix(in srgb, rgb(138, 92, 245) 70%, transparent) !important;
-  --accent-opacity-80: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent) !important;
-  --accent-opacity-90: color-mix(in srgb, rgb(138, 92, 245) 90%, transparent) !important;
+  --accent-brighter-10: color-mix(in srgb, hsl(258, 88%, 66%) 90%, #ffffff) !important;
+  --accent-brighter-30: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff) !important;
+  --accent-brighter-50: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff) !important;
+  --accent-brighter-70: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff) !important;
+  --accent-brighter-90: color-mix(in srgb, hsl(258, 88%, 66%) 10%, #ffffff) !important;
+  --accent-darker-10: color-mix(in srgb, hsl(258, 88%, 66%) 90%, #111111) !important;
+  --accent-darker-30: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #111111) !important;
+  --accent-darker-50: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #111111) !important;
+  --accent-darker-70: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #111111) !important;
+  --accent-opacity-10: color-mix(in srgb, hsl(258, 88%, 66%) 10%, transparent) !important;
+  --accent-opacity-20: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent) !important;
+  --accent-opacity-30: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent) !important;
+  --accent-opacity-40: color-mix(in srgb, hsl(258, 88%, 66%) 40%, transparent) !important;
+  --accent-opacity-5: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --accent-opacity-50: color-mix(in srgb, hsl(258, 88%, 66%) 50%, transparent) !important;
+  --accent-opacity-60: color-mix(in srgb, hsl(258, 88%, 66%) 60%, transparent) !important;
+  --accent-opacity-70: color-mix(in srgb, hsl(258, 88%, 66%) 70%, transparent) !important;
+  --accent-opacity-80: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent) !important;
+  --accent-opacity-90: color-mix(in srgb, hsl(258, 88%, 66%) 90%, transparent) !important;
   --alt-color: #ffffff !important;
-  --background-modifier-border: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
+  --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --background-primary: #111111 !important;
   --background-primary-alt: #0d0b12 !important;
   --background-secondary: #1a1a1a !important;
   --background-secondary-alt: #0d0b12 !important;
   --bases-cards-background: #111111 !important;
   --bases-cards-cover-background: #0d0b12 !important;
-  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --bases-embed-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --bases-table-border-color: rgb(138, 92, 245) !important;
+  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --bases-embed-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --bases-table-border-color: hsl(258, 88%, 66%) !important;
   --bases-table-cell-background-active: #111111 !important;
   --bases-table-cell-background-disabled: #0d0b12 !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --bases-table-group-background: #0d0b12 !important;
   --bases-table-header-background: #111111 !important;
   --bases-table-summary-background: #111111 !important;
+  --blockquote-border-color: hsl(258, 88%, 66%) !important;
   --bodyFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bold-weight: 600 !important;
   --callout-background-opacity: 0.2;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
@@ -52,27 +57,38 @@ export const theme: ThemeData = {
   --callout-color-purple: 150, 100, 250;
   --callout-color-red: 255, 80, 80;
   --callout-color-yellow: 255, 204, 0;
+  --callout-title-weight: 600;
   --canvas-background: #111111 !important;
-  --checkbox-border-color: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff) !important;
-  --checkbox-border-color-hover: rgb(138, 92, 245) !important;
-  --checkbox-color-hover: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff) !important;
+  --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff) !important;
+  --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
+  --checkbox-color: hsl(258, 88%, 66%) !important;
+  --checkbox-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff) !important;
   --checkbox-marker-color: #111111 !important;
   --code-background: #0d0b12 !important;
-  --code-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --code-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --codeFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --color-hr: rgb(138, 92, 245) !important;
-  --color-italic: rgb(138, 92, 245) !important;
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
+  --color-hr: hsl(258, 88%, 66%) !important;
+  --color-italic: hsl(258, 88%, 66%) !important;
   --default-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif !important;
-  --divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent), inset 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --divider-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --divider-color-hover: hsl(258, 88%, 66%) !important;
+  --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent), inset 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
   --file-header-background: #111111 !important;
   --file-header-background-focused: #111111 !important;
   --file-header-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --footnote-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --footnote-divider-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --gradient-bold: linear-gradient(135deg, #00eaff, #ff008c) !important;
+  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --headerFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --hr-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --heading-spacing: 2.5rem !important;
+  --highlight: hsla(258, 88%, 66%, 0.1) !important;
+  --hr-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --hr-gradient: linear-gradient( to right,
     rgba(0, 255, 255, 0) 0%,
     #9400D3 25%,
@@ -80,60 +96,91 @@ export const theme: ThemeData = {
     #9400D3 75%,
     rgba(0, 255, 255, 0) 100%
     ) !important;
+  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
+  --interactive-accent: hsl(258, 88%, 66%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --light: #111111 !important;
   --lightgray: #1a1a1a !important;
+  --link-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
+  --link-external-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
+  --link-unresolved-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --list-bullet-radius: 100% !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
+  --list-indent: 2.25em !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
+  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --menu-background: #1a1a1a !important;
-  --metadata-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --metadata-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --metadata-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --metadata-divider-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --metadata-input-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-label-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --modal-background: #111111 !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
+  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --pdf-background: #111111 !important;
   --pdf-page-background: #111111 !important;
-  --pdf-shadow: 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --pdf-shadow: 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --pdf-sidebar-background: #111111 !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --pill-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --pill-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --prompt-background: #111111 !important;
   --ribbon-background: #1a1a1a !important;
   --ribbon-background-collapsed: #111111 !important;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent) !important;
+  --scrollbar-active-thumb-bg: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent) !important;
   --search-result-background: #111111 !important;
+  --secondary: hsl(255, 89.76%, 75.9%) !important;
   --setting-items-background: #0d0b12 !important;
-  --setting-items-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --slider-track-background: color-mix(in srgb, rgb(138, 92, 245) 40%, transparent) !important;
+  --setting-items-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
+  --slider-track-background: color-mix(in srgb, hsl(258, 88%, 66%) 40%, transparent) !important;
   --status-bar-background: #1a1a1a !important;
-  --status-bar-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --status-bar-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --sub-accent: #f4569d !important;
   --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent) !important;
   --suggestion-background: #111111 !important;
   --tab-background-active: #111111 !important;
   --tab-container-background: #1a1a1a !important;
-  --tab-outline-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --tab-outline-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --tab-switcher-background: #1a1a1a !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #1a1a1a, transparent) !important;
-  --table-add-button-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --table-border-color: rgb(138, 92, 245) !important;
-  --table-header-border-color: rgb(138, 92, 245) !important;
-  --tag-background: color-mix(in srgb, rgb(138, 92, 245) 10%, transparent) !important;
-  --tag-background-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent) !important;
-  --tag-color: rgb(138, 92, 245) !important;
-  --tag-color-hover: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
+  --table-add-button-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --table-border-color: hsl(258, 88%, 66%) !important;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
+  --table-header-border-color: hsl(258, 88%, 66%) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-border-color: hsl(258, 88%, 66%) !important;
+  --tag-background: color-mix(in srgb, hsl(258, 88%, 66%) 10%, transparent) !important;
+  --tag-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-color: hsl(258, 88%, 66%) !important;
+  --tag-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff) !important;
   --tag-radius: 5px !important;
+  --tertiary: hsl(253, 92.4%, 85.14%) !important;
+  --text-accent: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
+  --text-selection: hsla(258, 88%, 66%, 0.33) !important;
   --text-title-h1: #00e5ff !important;
   --text-title-h2: #ffca28 !important;
   --text-title-h3: #ff5d68 !important;
   --text-title-h4: #d500f9 !important;
   --text-title-h5: #2ECC71 !important;
   --text-title-h6: #db3eb1 !important;
-  --theme-color: rgb(138, 92, 245) !important;
+  --textHighlight: hsla(258, 88%, 66%, 0.1) !important;
+  --theme-color: hsl(258, 88%, 66%) !important;
   --titleFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #1a1a1a !important;
   --titlebar-background-focused: #0d0b12 !important;
-  --titlebar-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --vault-profile-color-hover: rgb(138, 92, 245) !important;
+  --titlebar-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --vault-profile-color-hover: hsl(258, 88%, 66%) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -290,10 +337,10 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-top-color: color(srgb 0.678224 0.55256 0.97144);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
-  border-bottom-color: rgb(150, 100, 250);
-  border-left-color: rgb(150, 100, 250);
-  border-right-color: rgb(150, 100, 250);
-  border-top-color: rgb(150, 100, 250);
+  border-bottom-color: rgb(50, 150, 255);
+  border-left-color: rgb(50, 150, 255);
+  border-right-color: rgb(50, 150, 255);
+  border-top-color: rgb(50, 150, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -484,19 +531,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
-  border-bottom-color: color(srgb 0.678224 0.55256 0.97144);
-  border-left-color: color(srgb 0.678224 0.55256 0.97144);
-  border-right-color: color(srgb 0.678224 0.55256 0.97144);
-  border-top-color: color(srgb 0.678224 0.55256 0.97144);
-  color: color(srgb 0.678224 0.55256 0.97144);
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(26, 26, 26);
@@ -557,37 +591,42 @@ html[saved-theme="dark"] body kbd {
   },
   light: {
     base: `:root:root {
-  --accent-brighter-10: color-mix(in srgb, rgb(138, 92, 245) 90%, #ffffff) !important;
-  --accent-brighter-30: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff) !important;
-  --accent-brighter-50: color-mix(in srgb, rgb(138, 92, 245) 50%, #ffffff) !important;
-  --accent-brighter-70: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff) !important;
-  --accent-brighter-90: color-mix(in srgb, rgb(138, 92, 245) 10%, #ffffff) !important;
-  --accent-darker-10: color-mix(in srgb, rgb(138, 92, 245) 90%, #111111) !important;
-  --accent-darker-30: color-mix(in srgb, rgb(138, 92, 245) 70%, #111111) !important;
-  --accent-darker-50: color-mix(in srgb, rgb(138, 92, 245) 50%, #111111) !important;
-  --accent-darker-70: color-mix(in srgb, rgb(138, 92, 245) 30%, #111111) !important;
-  --accent-opacity-10: color-mix(in srgb, rgb(138, 92, 245) 10%, transparent) !important;
-  --accent-opacity-20: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent) !important;
-  --accent-opacity-30: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent) !important;
-  --accent-opacity-40: color-mix(in srgb, rgb(138, 92, 245) 40%, transparent) !important;
-  --accent-opacity-5: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --accent-opacity-50: color-mix(in srgb, rgb(138, 92, 245) 50%, transparent) !important;
-  --accent-opacity-60: color-mix(in srgb, rgb(138, 92, 245) 60%, transparent) !important;
-  --accent-opacity-70: color-mix(in srgb, rgb(138, 92, 245) 70%, transparent) !important;
-  --accent-opacity-80: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent) !important;
-  --accent-opacity-90: color-mix(in srgb, rgb(138, 92, 245) 90%, transparent) !important;
+  --accent-brighter-10: color-mix(in srgb, hsl(258, 88%, 66%) 90%, #ffffff) !important;
+  --accent-brighter-30: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff) !important;
+  --accent-brighter-50: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff) !important;
+  --accent-brighter-70: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff) !important;
+  --accent-brighter-90: color-mix(in srgb, hsl(258, 88%, 66%) 10%, #ffffff) !important;
+  --accent-darker-10: color-mix(in srgb, hsl(258, 88%, 66%) 90%, #111111) !important;
+  --accent-darker-30: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #111111) !important;
+  --accent-darker-50: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #111111) !important;
+  --accent-darker-70: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #111111) !important;
+  --accent-opacity-10: color-mix(in srgb, hsl(258, 88%, 66%) 10%, transparent) !important;
+  --accent-opacity-20: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent) !important;
+  --accent-opacity-30: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent) !important;
+  --accent-opacity-40: color-mix(in srgb, hsl(258, 88%, 66%) 40%, transparent) !important;
+  --accent-opacity-5: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --accent-opacity-50: color-mix(in srgb, hsl(258, 88%, 66%) 50%, transparent) !important;
+  --accent-opacity-60: color-mix(in srgb, hsl(258, 88%, 66%) 60%, transparent) !important;
+  --accent-opacity-70: color-mix(in srgb, hsl(258, 88%, 66%) 70%, transparent) !important;
+  --accent-opacity-80: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent) !important;
+  --accent-opacity-90: color-mix(in srgb, hsl(258, 88%, 66%) 90%, transparent) !important;
   --alt-color: #111111 !important;
-  --background-modifier-border: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
+  --background-modifier-border: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --background-primary-alt: #ffffff !important;
   --background-secondary: #eeeeee !important;
   --background-secondary-alt: #eeeeee !important;
   --bases-cards-cover-background: #ffffff !important;
-  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --bases-embed-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --bases-table-border-color: rgb(138, 92, 245) !important;
+  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --bases-embed-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --bases-table-border-color: hsl(258, 88%, 66%) !important;
   --bases-table-cell-background-disabled: #ffffff !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(257, 88.88%, 70.95%) !important;
   --bases-table-group-background: #ffffff !important;
+  --blockquote-border-color: hsl(257, 88.88%, 70.95%) !important;
   --bodyFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bold-weight: 600 !important;
   --callout-background-opacity: 0.2;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
@@ -595,24 +634,34 @@ html[saved-theme="dark"] body kbd {
   --callout-color-purple: 150, 100, 250;
   --callout-color-red: 255, 80, 80;
   --callout-color-yellow: 255, 204, 0;
-  --checkbox-border-color: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff) !important;
-  --checkbox-border-color-hover: rgb(138, 92, 245) !important;
-  --checkbox-color: rgb(138, 92, 245) !important;
-  --checkbox-color-hover: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff) !important;
+  --callout-title-weight: 600;
+  --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff) !important;
+  --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
+  --checkbox-color: hsl(258, 88%, 66%) !important;
+  --checkbox-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff) !important;
   --code-background: #ffffff !important;
-  --code-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --code-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --codeFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --color-hr: rgb(138, 92, 245) !important;
-  --color-italic: rgb(138, 92, 245) !important;
+  --collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
+  --color-hr: hsl(258, 88%, 66%) !important;
+  --color-italic: hsl(258, 88%, 66%) !important;
   --default-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif !important;
-  --divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent), inset 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --divider-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --divider-color-hover: hsl(257, 88.88%, 70.95%) !important;
+  --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent), inset 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --embed-border-start: 2px solid hsl(257, 88.88%, 70.95%) !important;
   --file-header-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --footnote-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --footnote-divider-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --gradient-bold: linear-gradient(135deg, #00eaff, #ff008c) !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
   --headerFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --hr-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --heading-spacing: 2.5rem !important;
+  --highlight: hsla(258, 88%, 66%, 0.1) !important;
+  --hr-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --hr-gradient: linear-gradient( to right,
     rgba(0, 255, 255, 0) 0%,
     #9400D3 25%,
@@ -620,48 +669,80 @@ html[saved-theme="dark"] body kbd {
     #9400D3 75%,
     rgba(0, 255, 255, 0) 100%
     ) !important;
+  --icon-color-active: hsl(258, 88%, 66%) !important;
+  --interactive-accent: hsl(257, 88.88%, 70.95%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --light: #ffffff !important;
   --lightgray: #eeeeee !important;
+  --link-color: hsl(258, 88%, 66%) !important;
+  --link-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  --link-external-color: hsl(258, 88%, 66%) !important;
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  --link-unresolved-color: hsl(258, 88%, 66%) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --list-bullet-radius: 100% !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
+  --list-indent: 2.25em !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
+  --list-marker-color-collapsed: hsl(258, 88%, 66%) !important;
   --menu-background: #eeeeee !important;
-  --metadata-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --metadata-divider-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --metadata-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --metadata-divider-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --metadata-input-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-label-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --pill-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
+  --nav-item-color-highlighted: hsl(258, 88%, 66%) !important;
+  --pill-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --pill-color-remove-hover: hsl(258, 88%, 66%) !important;
   --ribbon-background: #eeeeee !important;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent) !important;
+  --scrollbar-active-thumb-bg: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent) !important;
+  --secondary: hsl(258, 88%, 66%) !important;
   --setting-items-background: #ffffff !important;
-  --setting-items-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --slider-track-background: color-mix(in srgb, rgb(138, 92, 245) 40%, transparent) !important;
+  --setting-items-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
+  --slider-track-background: color-mix(in srgb, hsl(258, 88%, 66%) 40%, transparent) !important;
   --status-bar-background: #eeeeee !important;
-  --status-bar-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --status-bar-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --sub-accent: #f4569d !important;
   --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent) !important;
   --tab-container-background: #eeeeee !important;
-  --tab-outline-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --tab-outline-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --tab-switcher-background: #eeeeee !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #eeeeee, transparent) !important;
-  --table-add-button-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --table-border-color: rgb(138, 92, 245) !important;
-  --table-header-border-color: rgb(138, 92, 245) !important;
-  --tag-background: color-mix(in srgb, rgb(138, 92, 245) 10%, transparent) !important;
-  --tag-background-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent) !important;
-  --tag-color-hover: color-mix(in srgb, rgb(138, 92, 245) 70%, #ffffff) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%) !important;
+  --table-add-button-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --table-border-color: hsl(258, 88%, 66%) !important;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%) !important;
+  --table-header-border-color: hsl(258, 88%, 66%) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%) !important;
+  --tag-background: color-mix(in srgb, hsl(258, 88%, 66%) 10%, transparent) !important;
+  --tag-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-color: hsl(258, 88%, 66%) !important;
+  --tag-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff) !important;
   --tag-radius: 5px !important;
+  --tertiary: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent: hsl(258, 88%, 66%) !important;
+  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
+  --text-selection: hsla(258, 88%, 66%, 0.2) !important;
   --text-title-h1: #00e5ff !important;
   --text-title-h2: #ffca28 !important;
   --text-title-h3: #ff5d68 !important;
   --text-title-h4: #d500f9 !important;
   --text-title-h5: #2ECC71 !important;
   --text-title-h6: #db3eb1 !important;
-  --theme-color: rgb(138, 92, 245) !important;
+  --textHighlight: hsla(258, 88%, 66%, 0.1) !important;
+  --theme-color: hsl(258, 88%, 66%) !important;
   --titleFont: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #eeeeee !important;
   --titlebar-background-focused: #eeeeee !important;
-  --titlebar-border-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
-  --vault-profile-color-hover: rgb(138, 92, 245) !important;
+  --titlebar-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
+  --vault-profile-color-hover: hsl(258, 88%, 66%) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -810,10 +891,10 @@ html[saved-theme="light"] body pre:has(> code) {
   border-top-color: color(srgb 0.678224 0.55256 0.97144);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
-  border-bottom-color: rgb(150, 100, 250);
-  border-left-color: rgb(150, 100, 250);
-  border-right-color: rgb(150, 100, 250);
-  border-top-color: rgb(150, 100, 250);
+  border-bottom-color: rgb(50, 150, 255);
+  border-left-color: rgb(50, 150, 255);
+  border-right-color: rgb(50, 150, 255);
+  border-top-color: rgb(50, 150, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -966,19 +1047,6 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  font-family: "??", "??", Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
-  border-bottom-color: color(srgb 0.678224 0.55256 0.97144);
-  border-left-color: color(srgb 0.678224 0.55256 0.97144);
-  border-right-color: color(srgb 0.678224 0.55256 0.97144);
-  border-top-color: color(srgb 0.678224 0.55256 0.97144);
-  color: color(srgb 0.678224 0.55256 0.97144);
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: rgb(238, 238, 238);

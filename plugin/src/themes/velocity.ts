@@ -23,7 +23,7 @@ export const theme: ThemeData = {
   --autofit-close-button-left-padding: 20px !important;
   --autofit-close-button-right-padding: 0px !important;
   --autofit-left-padding: 4px !important;
-  --background-modifier-active-hover: rgba(27, 126, 238, 0.1) !important;
+  --background-modifier-active-hover: hsla(212, 86%, 52%, 0.1) !important;
   --background-modifier-border: oklch(100% 0.05 281 / 0.0625) !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: oklch(36.25% 0.00375 281) !important;
@@ -58,9 +58,9 @@ export const theme: ThemeData = {
   --bases-table-border-color: oklch(100% 0.075 281 / 0.1) !important;
   --bases-table-cell-background-active: transparent !important;
   --bases-table-cell-background-disabled: color-mix(in oklab, oklch(23.50% 0.00125 281), oklch(27.50% 0.00375 281)) !important;
-  --bases-table-cell-background-selected: rgba(27, 126, 238, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2.5px color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(27, 126, 238) !important;
+  --bases-table-cell-background-selected: hsla(212, 86%, 52%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2.5px color-mix(in oklab, hsl(212, 86%, 52%) 50%, transparent 75%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(212, 86%, 52%) !important;
   --bases-table-container-border-radius: 0 !important;
   --bases-table-group-background: transparent !important;
   --bases-table-header-background: oklch(23.50% 0.00125 281) !important;
@@ -146,8 +146,8 @@ export const theme: ThemeData = {
   --caret-color: oklch(85.00% 0.00375 281) !important;
   --checkbox-border-color: oklch(43.75% 0.0075 281) !important;
   --checkbox-border-color-hover: oklch(71.25% 0.00375 281) !important;
-  --checkbox-color: rgb(27, 126, 238) !important;
-  --checkbox-color-hover: color-mix(in oklab, rgb(27, 126, 238) 62.5%, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%)) !important;
+  --checkbox-color: hsl(212, 86%, 52%) !important;
+  --checkbox-color-hover: color-mix(in oklab, hsl(212, 86%, 52%) 62.5%, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%)) !important;
   --checkbox-marker-color: white !important;
   --checkbox-radius: 50% !important;
   --checkbox-size: 1.125rem !important;
@@ -171,12 +171,12 @@ export const theme: ThemeData = {
   --code-tag: rgb(255, 76, 82) !important;
   --codeFont: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: oklch(52.50% 0.0075 281) !important;
-  --collapse-icon-color-collapsed: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
-  --color-accent: rgb(27, 126, 238) !important;
-  --color-accent-1: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
-  --color-accent-2: color-mix(in oklab, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%), transparent 8%) !important;
-  --color-accent-3: color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
-  --color-accent-4: color-mix(in oklab, oklab(from rgb(27, 126, 238) l a b / 0.25) 30%, transparent 70%) !important;
+  --collapse-icon-color-collapsed: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
+  --color-accent: hsl(212, 86%, 52%) !important;
+  --color-accent-1: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
+  --color-accent-2: color-mix(in oklab, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%), transparent 8%) !important;
+  --color-accent-3: color-mix(in oklab, hsl(212, 86%, 52%) 50%, transparent 75%) !important;
+  --color-accent-4: color-mix(in oklab, oklab(from hsl(212, 86%, 52%) l a b / 0.25) 30%, transparent 70%) !important;
   --color-accent-hsl: 212, 86%, 52% !important;
   --color-base-00: oklch(23.50% 0.00125 281) !important;
   --color-base-05: oklch(24.00% 0 281) !important;
@@ -215,7 +215,7 @@ export const theme: ThemeData = {
   --darkgray: oklch(85.00% 0.00375 281) !important;
   --dialog-width: 500px !important;
   --divider-color: oklch(100% 0.05 281 / 0.0625) !important;
-  --divider-color-hover: color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
+  --divider-color-hover: color-mix(in oklab, hsl(212, 86%, 52%) 50%, transparent 75%) !important;
   --divider-width: 0 !important;
   --drag-ghost-background: oklch(23.50% 0.00125 281) !important;
   --drag-ghost-text-color: oklch(85.00% 0.00375 281) !important;
@@ -272,9 +272,9 @@ export const theme: ThemeData = {
   --glass-base: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025) !important;
   --glass-base-l: inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188), inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138), inset 0 8px 16px rgba(255, 255, 255, 0.015) !important;
   --glass-base-m: inset 1px 1.75px 2.25px -1.125px rgba(255, 255, 255, 0.15), inset -1px -1.75px 2.25px -1.125px rgba(255, 255, 255, 0.1), inset 0 8px 16px rgba(255, 255, 255, 0.015) !important;
-  --glass-button: inset 3px 3px 1.5px -1.25px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75), inset -3px -3px 1.5px -1.25px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5) !important;
+  --glass-button: inset 3px 3px 1.5px -1.25px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75), inset -3px -3px 1.5px -1.25px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5) !important;
   --glass-button-error: inset 3.25px 3.25px 1.25px -1.25px oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.75), inset -3.25px -3.25px 1.25px -1.25px oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.5) !important;
-  --glass-button-l: inset 3.75px 3.75px 1.5px -1.25px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75), inset -3.75px -3.75px 1.5px -1.25px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5) !important;
+  --glass-button-l: inset 3.75px 3.75px 1.5px -1.25px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75), inset -3.75px -3.75px 1.5px -1.25px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5) !important;
   --graph-controls-width: 232px !important;
   --graph-line: oklch(36.25% 0.00375 281) !important;
   --graph-node: oklch(71.25% 0.00375 281) !important;
@@ -307,6 +307,7 @@ export const theme: ThemeData = {
   --header-height: 56px !important;
   --headerFont: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: oklch(52.50% 0.0075 281) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: oklch(from rgb(248, 201, 111) 0.8 calc(c * 1.375) h / 0.33) !important;
   --highlight-blue-rgb: 71, 154, 255 !important;
   --highlight-cyan-rgb: 85, 211, 244 !important;
@@ -316,10 +317,10 @@ export const theme: ThemeData = {
   --highlight-purple-rgb: 168, 130, 255 !important;
   --highlight-red-rgb: 255, 76, 82 !important;
   --highlight-yellow-rgb: 248, 201, 111 !important;
-  --hotkey-gradient: linear-gradient(to top, rgb(27, 126, 238) -10%, color-mix(in oklab, oklab(from rgb(27, 126, 238) l a b / 0.25) 30%, transparent 70%) 210%) !important;
+  --hotkey-gradient: linear-gradient(to top, hsl(212, 86%, 52%) -10%, color-mix(in oklab, oklab(from hsl(212, 86%, 52%) l a b / 0.25) 30%, transparent 70%) 210%) !important;
   --hr-color: oklch(100% 0.075 281 / 0.1) !important;
   --icon-color: oklch(63.75% 0.0075 281) !important;
-  --icon-color-active: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
+  --icon-color-active: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
   --icon-color-focused: oklch(85.00% 0.00375 281) !important;
   --icon-color-hover: oklch(85.00% 0.00375 281) !important;
   --icon-m-stroke-width: 1.875px !important;
@@ -343,23 +344,23 @@ export const theme: ThemeData = {
   --input-radius: 8px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
-  --interactive-accent: rgb(27, 126, 238) !important;
-  --interactive-accent-hover: color-mix(in oklab, rgb(27, 126, 238) 62.5%, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%)) !important;
+  --interactive-accent: hsl(212, 86%, 52%) !important;
+  --interactive-accent-hover: color-mix(in oklab, hsl(212, 86%, 52%) 62.5%, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%)) !important;
   --interactive-accent-hsl: 212, 86%, 52% !important;
   --interactive-hover: oklch(36.25% 0.00375 281) !important;
   --interactive-normal: oklch(34.50% 0.00375 281) !important;
   --light: oklch(23.50% 0.00125 281) !important;
   --lightgray: oklch(27.50% 0.00375 281) !important;
   --line-height-normal: 1.6 !important;
-  --link-color: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
-  --link-color-hover: color-mix(in oklab, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%), transparent 8%) !important;
-  --link-color-sidebar: color-mix(in oklab, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%), transparent 8%) !important;
+  --link-color: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
+  --link-color-hover: color-mix(in oklab, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%), transparent 8%) !important;
+  --link-color-sidebar: color-mix(in oklab, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%), transparent 8%) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
-  --link-external-color: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
-  --link-external-color-hover: color-mix(in oklab, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%), transparent 8%) !important;
-  --link-unresolved-color: oklch(from color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) l c h / 0.75) !important;
-  --link-unresolved-decoration-color: rgba(27, 126, 238, 0.3) !important;
+  --link-external-color: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
+  --link-external-color-hover: color-mix(in oklab, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%), transparent 8%) !important;
+  --link-unresolved-color: oklch(from color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) l c h / 0.75) !important;
+  --link-unresolved-decoration-color: hsla(212, 86%, 52%, 0.3) !important;
   --link-unresolved-lch: 0.75 !important;
   --link-unresolved-opacity: 1 !important;
   --link-weight: 420 !important;
@@ -367,7 +368,7 @@ export const theme: ThemeData = {
   --list-dash-color: oklch(100% 0.02 281 / 0.35) !important;
   --list-indent: 1.5em !important;
   --list-marker-color: oklch(52.50% 0.0075 281) !important;
-  --list-marker-color-collapsed: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
+  --list-marker-color-collapsed: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
   --list-marker-color-hover: oklch(71.25% 0.00375 281) !important;
   --list-spacing: 0.125em !important;
   --math-color: oklch(93.25% 0 281) !important;
@@ -392,7 +393,7 @@ export const theme: ThemeData = {
   --metadata-label-text-color-hover: oklch(63.75% 0.0075 281) !important;
   --metadata-label-width: 10em !important;
   --metadata-property-background-active: oklch(100% 0.05 281 / 0.05) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2.5px color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2.5px color-mix(in oklab, hsl(212, 86%, 52%) 50%, transparent 75%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(100% 0.05 281 / 0.05) !important;
   --mobile-nav-fade-bg: linear-gradient(oklch(from oklch(27.50% 0.00375 281) l c h), transparent 78px) !important;
   --modal-background: oklch(27.75% 0.00175 281 / 0.625) !important;
@@ -417,10 +418,10 @@ export const theme: ThemeData = {
   --nav-indentation-guide-width: 0 !important;
   --nav-item-background-active: oklch(100% 0.05 281 / 0.05) !important;
   --nav-item-background-hover: oklch(100% 0.05 281 / 0.05) !important;
-  --nav-item-background-selected: rgba(27, 126, 238, 0.15) !important;
+  --nav-item-background-selected: hsla(212, 86%, 52%, 0.15) !important;
   --nav-item-color: oklch(71.25% 0.00375 281) !important;
   --nav-item-color-active: oklch(85.00% 0.00375 281) !important;
-  --nav-item-color-highlighted: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
+  --nav-item-color-highlighted: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
   --nav-item-color-hover: oklch(85.00% 0.00375 281) !important;
   --nav-item-color-selected: oklch(85.00% 0.00375 281) !important;
   --nav-item-radius: 8px !important;
@@ -475,7 +476,7 @@ export const theme: ThemeData = {
   --search-icon-color: oklch(52.50% 0.0075 281) !important;
   --search-icon-size: 17px !important;
   --search-result-background: oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375) !important;
-  --secondary: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
+  --secondary: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
   --setting-group-heading-color: oklch(63.75% 0.0075 281) !important;
   --setting-group-heading-size: 18px !important;
   --setting-group-heading-weight: 520 !important;
@@ -485,13 +486,13 @@ export const theme: ThemeData = {
   --setting-items-padding: 16px !important;
   --setting-items-radius: 16px !important;
   --settings-background: color-mix(in oklab, oklch(26.25% 0.00375 281) 70%, oklch(27.50% 0.00375 281)) !important;
-  --shadow-button: inset 3px 3px 1.5px -1.25px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75), inset -3px -3px 1.5px -1.25px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5), 0px 3px 15px 0px oklch(from oklch(23.50% 0.00125 281) l 0.00375 h / 0.75) !important;
+  --shadow-button: inset 3px 3px 1.5px -1.25px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75), inset -3px -3px 1.5px -1.25px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5), 0px 3px 15px 0px oklch(from oklch(23.50% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-button-error: inset 3.25px 3.25px 1.25px -1.25px oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.75), inset -3.25px -3.25px 1.25px -1.25px oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.5), 0px 3px 15px 0px oklch(from oklch(23.50% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-canvas-node: 0px 0px 16px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-fab: 0 0 0 0.5px oklch(100% 0.04 281 / 0.125), 0px 2px 12px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-faint: 0px 3px 15px 0px oklch(from oklch(23.50% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-input: 0 0 0 0.5px oklch(100% 0.04 281 / 0.125) !important;
-  --shadow-input-active: 0 0 0 2.5px color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
+  --shadow-input-active: 0 0 0 2.5px color-mix(in oklab, hsl(212, 86%, 52%) 50%, transparent 75%) !important;
   --shadow-l: inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188), inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138), inset 0 8px 16px rgba(255, 255, 255, 0.015), 0px 0px 24px 0px oklch(0 0 0 / 0.375) !important;
   --shadow-muted: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-normal: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
@@ -500,12 +501,13 @@ export const theme: ThemeData = {
   --shadow-setting-items-top: inset 1px 2px 2px 0 oklch(from oklch(24.00% 0 281) l 0.00375 h / 0.375), 0px 1px 9px oklch(100% 0.06 281 / 0.025) !important;
   --shadow-sidebar: 0px 0px 12px 0px oklch(from oklch(27.50% 0.00375 281) l 0.00375 h / 0.5) !important;
   --shadow-strong: 0px 0px 24px 0px oklch(0 0 0 / 0.375) !important;
-  --shadow-suggestion-item: inset 3.75px 3.75px 1.5px -1.25px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75), inset -3.75px -3.75px 1.5px -1.25px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5), 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
+  --shadow-suggestion-item: inset 3.75px 3.75px 1.5px -1.25px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75), inset -3.75px -3.75px 1.5px -1.25px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5), 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-tab: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025) !important;
-  --shadow-toggle: inset 1.5px 1.5px 1.5px 0px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75), inset -1.5px -1.5px 1.5px 0px oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5) !important;
+  --shadow-toggle: inset 1.5px 1.5px 1.5px 0px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75), inset -1.5px -1.5px 1.5px 0px oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5) !important;
   --shadow-workspace: 0 0 0 0.5px oklch(100% 0.075 281 / 0.1), 0 0 20px oklch(from oklch(23.50% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-workspace-multi: 0 0 0 0.5px oklch(100% 0.075 281 / 0.1) !important;
   --sidebar-left-toggle-inner-width: 12% !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 12% !important;
   --slider-thumb-border-color: oklch(36.25% 0.00375 281) !important;
   --slider-thumb-border-width: 0 !important;
@@ -549,17 +551,17 @@ export const theme: ThemeData = {
   --tab-switcher-background: oklch(27.50% 0.00375 281) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(27.50% 0.00375 281), transparent) !important;
   --tab-switcher-preview-radius: 20px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(27, 126, 238) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(212, 86%, 52%) !important;
   --tab-text-color: oklch(63.75% 0.0075 281) !important;
   --tab-text-color-active: oklch(93.25% 0 281) !important;
   --tab-text-color-focused: oklch(63.75% 0.0075 281) !important;
   --tab-text-color-focused-active: oklch(93.25% 0 281) !important;
   --tab-text-color-focused-active-current: oklch(93.25% 0 281) !important;
-  --tab-text-color-focused-highlighted: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
+  --tab-text-color-focused-highlighted: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
   --tab-width: 240px !important;
   --table-add-button-border-color: oklch(100% 0.05 281 / 0.0625) !important;
   --table-border-color: oklch(100% 0.075 281 / 0.1) !important;
-  --table-drag-handle-background-active: rgb(27, 126, 238) !important;
+  --table-drag-handle-background-active: hsl(212, 86%, 52%) !important;
   --table-drag-handle-color: oklch(52.50% 0.0075 281) !important;
   --table-header-border-color: oklch(100% 0.075 281 / 0.1) !important;
   --table-header-color: oklch(63.75% 0.0075 281) !important;
@@ -569,23 +571,23 @@ export const theme: ThemeData = {
   --table-row-alt-background: oklch(100% 0.075 281 / 0.015) !important;
   --table-row-alt-background-hover: oklch(100% 0.075 281 / 0.015) !important;
   --table-row-bg: oklch(100% 0.075 281 / 0.015) !important;
-  --table-selection: rgba(27, 126, 238, 0.1) !important;
-  --table-selection-border-color: rgb(27, 126, 238) !important;
+  --table-selection: hsla(212, 86%, 52%, 0.1) !important;
+  --table-selection-border-color: hsl(212, 86%, 52%) !important;
   --table-text-size: 0.90625em !important;
   --table-text-weight: 420 !important;
-  --tag-background: rgba(27, 126, 238, 0.1) !important;
-  --tag-background-hover: rgba(27, 126, 238, 0.2) !important;
-  --tag-border-color: oklch(from rgb(27, 126, 238) l c h / 0.025) !important;
-  --tag-border-color-hover: rgba(27, 126, 238, 0.15) !important;
-  --tag-color: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
-  --tag-color-hover: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
+  --tag-background: hsla(212, 86%, 52%, 0.1) !important;
+  --tag-background-hover: hsla(212, 86%, 52%, 0.2) !important;
+  --tag-border-color: oklch(from hsl(212, 86%, 52%) l c h / 0.025) !important;
+  --tag-border-color-hover: hsla(212, 86%, 52%, 0.15) !important;
+  --tag-color: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
+  --tag-color-hover: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
   --tag-padding-x: 0.6875em !important;
   --tag-padding-y: 0.3125em !important;
   --tag-size: 0.8em !important;
   --tag-weight: 490 !important;
-  --tertiary: color-mix(in oklab, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%), transparent 8%) !important;
-  --text-accent: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
-  --text-accent-hover: color-mix(in oklab, color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%), transparent 8%) !important;
+  --tertiary: color-mix(in oklab, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%), transparent 8%) !important;
+  --text-accent: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
+  --text-accent-hover: color-mix(in oklab, color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%), transparent 8%) !important;
   --text-error: rgb(255, 76, 82) !important;
   --text-faint: oklch(52.50% 0.0075 281) !important;
   --text-highlight-bg: oklch(from rgb(248, 201, 111) 0.8 calc(c * 1.375) h / 0.33) !important;
@@ -593,7 +595,7 @@ export const theme: ThemeData = {
   --text-highlight-bg-search: oklch(from rgb(248, 201, 111) 0.875 calc(c * 1.375) h / 0.625) !important;
   --text-muted: oklch(71.25% 0.00375 281) !important;
   --text-normal: oklch(85.00% 0.00375 281) !important;
-  --text-selection: oklab(from rgb(27, 126, 238) l a b / 0.25) !important;
+  --text-selection: oklab(from hsl(212, 86%, 52%) l a b / 0.25) !important;
   --text-success: rgb(24, 209, 125) !important;
   --text-warning: rgb(241, 144, 80) !important;
   --textHighlight: oklch(from rgb(248, 201, 111) 0.8 calc(c * 1.375) h / 0.33) !important;
@@ -606,7 +608,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: oklch(71.25% 0.00375 281) !important;
   --titlebar-text-weight: 620 !important;
   --toggle-border-width: 4px !important;
-  --toggle-gradient: linear-gradient(to bottom, rgb(27, 126, 238) -30%, color-mix(in oklab, oklab(from rgb(27, 126, 238) l a b / 0.25) 30%, transparent 70%) 180%) !important;
+  --toggle-gradient: linear-gradient(to bottom, hsl(212, 86%, 52%) -30%, color-mix(in oklab, oklab(from hsl(212, 86%, 52%) l a b / 0.25) 30%, transparent 70%) 180%) !important;
   --toggle-s-border-width: 4px !important;
   --toggle-s-thumb-height: 12px !important;
   --toggle-s-thumb-width: 12px !important;
@@ -644,6 +646,7 @@ export const theme: ThemeData = {
   --vl-layout-padding: 8px !important;
   --warning-gradient: linear-gradient(to top, rgb(255, 76, 82) -30%, oklch(from oklch(27.50% 0.00375 281) l 0.00375 h / 0.5) 180%) !important;
   --workspace-border-color: oklch(100% 0.05 281 / 0.08125) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1152,18 +1155,14 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   text-decoration-color: oklch(0.85 0.00375 281);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
-  border-bottom-color: rgb(71, 154, 255);
-  border-left-color: rgb(71, 154, 255);
-  border-right-color: rgb(71, 154, 255);
-  border-top-color: rgb(71, 154, 255);
+  border-bottom-color: rgb(85, 211, 244);
+  border-left-color: rgb(85, 211, 244);
+  border-right-color: rgb(85, 211, 244);
+  border-top-color: rgb(85, 211, 244);
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
-  font-weight: 620;
-}
-
-html[saved-theme="dark"] body .callout > .callout-content {
-  padding-left: 28px;
+  font-weight: 520;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -1563,13 +1562,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 490;
   text-decoration: oklab(0.744301 -0.0296486 -0.11765);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: oklch(0.7125 0.00375 281);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 420;
-  text-decoration: oklch(0.7125 0.00375 281);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
   font-weight: 490;
@@ -1792,7 +1784,7 @@ html[saved-theme="dark"] body sup {
   --autofit-close-button-left-padding: 20px !important;
   --autofit-close-button-right-padding: 0px !important;
   --autofit-left-padding: 4px !important;
-  --background-modifier-active-hover: rgba(10, 124, 255, 0.1) !important;
+  --background-modifier-active-hover: hsla(212, 100%, 52%, 0.1) !important;
   --background-modifier-border: oklch(0% 0 0 / 0.0625) !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: oklch(82.50% 0.0025 281) !important;
@@ -1827,9 +1819,9 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: oklch(0% 0 0 / 0.092) !important;
   --bases-table-cell-background-active: transparent !important;
   --bases-table-cell-background-disabled: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281)) !important;
-  --bases-table-cell-background-selected: rgba(10, 124, 255, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2.5px color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px color-mix(in oklab, rgb(10, 124, 255), white 7.5%) !important;
+  --bases-table-cell-background-selected: hsla(212, 100%, 52%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
   --bases-table-container-border-radius: 0 !important;
   --bases-table-group-background: transparent !important;
   --bases-table-header-background: oklch(99% 0.0005 281) !important;
@@ -1915,8 +1907,8 @@ html[saved-theme="dark"] body sup {
   --caret-color: oklch(30% 0.0005 281) !important;
   --checkbox-border-color: oklch(82.50% 0.0025 281) !important;
   --checkbox-border-color-hover: oklch(46.5% 0.0105 281) !important;
-  --checkbox-color: color-mix(in oklab, rgb(10, 124, 255), white 7.5%) !important;
-  --checkbox-color-hover: color-mix(in oklch, rgb(10, 124, 255) 80%, transparent 40%) !important;
+  --checkbox-color: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
+  --checkbox-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
   --checkbox-marker-color: white !important;
   --checkbox-radius: 50% !important;
   --checkbox-size: 1.125rem !important;
@@ -1942,12 +1934,12 @@ html[saved-theme="dark"] body sup {
   --code-value: rgb(124, 80, 237) !important;
   --codeFont: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: oklch(71.5% 0.0105 281) !important;
-  --collapse-icon-color-collapsed: rgb(10, 124, 255) !important;
-  --color-accent: rgb(10, 124, 255) !important;
-  --color-accent-1: color-mix(in oklab, rgb(10, 124, 255), white 7.5%) !important;
-  --color-accent-2: color-mix(in oklch, rgb(10, 124, 255) 80%, transparent 40%) !important;
-  --color-accent-3: color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
-  --color-accent-4: color-mix(in oklch, oklab(from rgb(10, 124, 255) l a b / 0.15) 40%, transparent 60%) !important;
+  --collapse-icon-color-collapsed: hsl(212, 100%, 52%) !important;
+  --color-accent: hsl(212, 100%, 52%) !important;
+  --color-accent-1: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
+  --color-accent-2: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
+  --color-accent-3: color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
+  --color-accent-4: color-mix(in oklch, oklab(from hsl(212, 100%, 52%) l a b / 0.15) 40%, transparent 60%) !important;
   --color-accent-hsl: 212, 100%, 52% !important;
   --color-base-00: oklch(100% 0.0005 281) !important;
   --color-base-05: oklch(99% 0.0005 281) !important;
@@ -1990,7 +1982,7 @@ html[saved-theme="dark"] body sup {
   --darkgray: oklch(30% 0.0005 281) !important;
   --dialog-width: 500px !important;
   --divider-color: oklch(0% 0 0 / 0.0625) !important;
-  --divider-color-hover: color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
+  --divider-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --divider-width: 0 !important;
   --drag-ghost-background: oklch(100% 0.0005 281) !important;
   --drag-ghost-text-color: oklch(30% 0.0005 281) !important;
@@ -2079,6 +2071,7 @@ html[saved-theme="dark"] body sup {
   --header-height: 56px !important;
   --headerFont: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: oklch(71.5% 0.0105 281) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: oklch(from rgb(229, 169, 37) 0.9 c h / 0.33) !important;
   --highlight-blue-rgb: 31, 132, 255 !important;
   --highlight-cyan-rgb: 9, 186, 221 !important;
@@ -2090,7 +2083,7 @@ html[saved-theme="dark"] body sup {
   --highlight-yellow-rgb: 229, 169, 37 !important;
   --hr-color: oklch(0% 0 0 / 0.092) !important;
   --icon-color: oklch(55.75% 0.0105 281) !important;
-  --icon-color-active: rgb(10, 124, 255) !important;
+  --icon-color-active: hsl(212, 100%, 52%) !important;
   --icon-color-focused: oklch(30% 0.0005 281) !important;
   --icon-color-hover: oklch(30% 0.0005 281) !important;
   --icon-m-stroke-width: 1.875px !important;
@@ -2114,23 +2107,23 @@ html[saved-theme="dark"] body sup {
   --input-radius: 8px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
-  --interactive-accent: color-mix(in oklab, rgb(10, 124, 255), white 7.5%) !important;
-  --interactive-accent-hover: color-mix(in oklch, rgb(10, 124, 255) 80%, transparent 40%) !important;
+  --interactive-accent: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
+  --interactive-accent-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
   --interactive-accent-hsl: 212, 100%, 52% !important;
   --interactive-hover: oklch(0% 0 0 / 0.092) !important;
   --interactive-normal: oklch(0% 0 0 / 0.07) !important;
   --light: oklch(99% 0.0005 281) !important;
   --lightgray: oklch(96.2% 0.0025 281) !important;
   --line-height-normal: 1.6 !important;
-  --link-color: rgb(10, 124, 255) !important;
-  --link-color-hover: color-mix(in oklch, rgb(10, 124, 255) 80%, transparent 40%) !important;
-  --link-color-sidebar: color-mix(in oklab, rgb(10, 124, 255), white 7.5%) !important;
+  --link-color: hsl(212, 100%, 52%) !important;
+  --link-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
+  --link-color-sidebar: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
-  --link-external-color: rgb(10, 124, 255) !important;
-  --link-external-color-hover: color-mix(in oklch, rgb(10, 124, 255) 80%, transparent 40%) !important;
-  --link-unresolved-color: oklch(from color-mix(in oklab, rgb(10, 124, 255), white 7.5%) l c h / 0.7) !important;
-  --link-unresolved-decoration-color: rgba(10, 124, 255, 0.3) !important;
+  --link-external-color: hsl(212, 100%, 52%) !important;
+  --link-external-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
+  --link-unresolved-color: oklch(from color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) l c h / 0.7) !important;
+  --link-unresolved-decoration-color: hsla(212, 100%, 52%, 0.3) !important;
   --link-unresolved-lch: 0.7 !important;
   --link-unresolved-opacity: 1 !important;
   --link-weight: 420 !important;
@@ -2138,7 +2131,7 @@ html[saved-theme="dark"] body sup {
   --list-dash-color: oklch(0% 0 0 / 0.25) !important;
   --list-indent: 1.5em !important;
   --list-marker-color: oklch(71.5% 0.0105 281) !important;
-  --list-marker-color-collapsed: rgb(10, 124, 255) !important;
+  --list-marker-color-collapsed: hsl(212, 100%, 52%) !important;
   --list-marker-color-hover: oklch(46.5% 0.0105 281) !important;
   --list-spacing: 0.125em !important;
   --math-color: oklch(24% 0.0005 281) !important;
@@ -2163,7 +2156,7 @@ html[saved-theme="dark"] body sup {
   --metadata-label-text-color-hover: oklch(55.75% 0.0105 281) !important;
   --metadata-label-width: 10em !important;
   --metadata-property-background-active: oklch(0% 0 0 / 0.0625) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2.5px color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(0% 0 0 / 0.0625) !important;
   --mobile-nav-fade-bg: linear-gradient(oklch(96.2% 0.0025 281), transparent 78px) !important;
   --modal-background: oklch(99.5% 0.00125 281 / 0.675) !important;
@@ -2188,10 +2181,10 @@ html[saved-theme="dark"] body sup {
   --nav-indentation-guide-width: 0 !important;
   --nav-item-background-active: oklch(0% 0 0 / 0.0625) !important;
   --nav-item-background-hover: oklch(0% 0 0 / 0.0625) !important;
-  --nav-item-background-selected: rgba(10, 124, 255, 0.15) !important;
+  --nav-item-background-selected: hsla(212, 100%, 52%, 0.15) !important;
   --nav-item-color: oklch(46.5% 0.0105 281) !important;
   --nav-item-color-active: oklch(30% 0.0005 281) !important;
-  --nav-item-color-highlighted: rgb(10, 124, 255) !important;
+  --nav-item-color-highlighted: hsl(212, 100%, 52%) !important;
   --nav-item-color-hover: oklch(30% 0.0005 281) !important;
   --nav-item-color-selected: oklch(30% 0.0005 281) !important;
   --nav-item-radius: 8px !important;
@@ -2246,7 +2239,7 @@ html[saved-theme="dark"] body sup {
   --search-icon-color: oklch(71.5% 0.0105 281) !important;
   --search-icon-size: 17px !important;
   --search-result-background: oklch(100% 0 0 / 0.625) !important;
-  --secondary: rgb(10, 124, 255) !important;
+  --secondary: hsl(212, 100%, 52%) !important;
   --setting-group-heading-color: oklch(55.75% 0.0105 281) !important;
   --setting-group-heading-size: 18px !important;
   --setting-group-heading-weight: 520 !important;
@@ -2262,7 +2255,7 @@ html[saved-theme="dark"] body sup {
   --shadow-fab: 0 0 0 0.5px oklch(0% 0 0 / 0.1125), 0px 3px 15px 0px oklch(0% 0 0 / 0.0625) !important;
   --shadow-faint: 0px 0 12px 0px oklch(05% 0 0 / 0.055) !important;
   --shadow-input: 0 0 0 0.5px oklch(0% 0 0 / 0.1125) !important;
-  --shadow-input-active: 0 0 0 2.5px color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
+  --shadow-input-active: 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --shadow-l: inset 1.5px 1.5px 4px 0 oklch(100% 0 0 / 0.625), inset -1.5px -1.5px 4px 0 oklch(100% 0 0 / 0.625), 0px 1.25px 6.25px rgba(0, 0, 0, 0.08), 0px 3px 12px rgba(0, 0, 0, 0.06), 0px 16px 32px rgba(0, 0, 0, 0.12) !important;
   --shadow-muted: 0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
   --shadow-normal: 0px 0px 5px 0px oklch(20% 0 0 / 0.0275), 0px 10px 20px 0px oklch(0% 0 0 / 0.07) !important;
@@ -2277,6 +2270,7 @@ html[saved-theme="dark"] body sup {
   --shadow-workspace: 0 0.25px 1.25px 0px oklch(0% 0 0 / 0.25), 0px 0px 24px oklch(05% 0 0 / 0.055) !important;
   --shadow-workspace-multi: 0px 2.5px 10px oklch(05% 0 0 / 0.055) !important;
   --sidebar-left-toggle-inner-width: 12% !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-right-toggle-inner-width: 12% !important;
   --slider-thumb-border-color: oklch(82.50% 0.0025 281) !important;
   --slider-thumb-border-width: 0 !important;
@@ -2322,17 +2316,17 @@ html[saved-theme="dark"] body sup {
   --tab-switcher-background: oklch(96.2% 0.0025 281) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(96.2% 0.0025 281), transparent) !important;
   --tab-switcher-preview-radius: 20px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(10, 124, 255) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(212, 100%, 52%) !important;
   --tab-text-color: oklch(55.75% 0.0105 281) !important;
   --tab-text-color-active: oklch(24% 0.0005 281) !important;
   --tab-text-color-focused: oklch(55.75% 0.0105 281) !important;
   --tab-text-color-focused-active: oklch(24% 0.0005 281) !important;
   --tab-text-color-focused-active-current: oklch(24% 0.0005 281) !important;
-  --tab-text-color-focused-highlighted: rgb(10, 124, 255) !important;
+  --tab-text-color-focused-highlighted: hsl(212, 100%, 52%) !important;
   --tab-width: 240px !important;
   --table-add-button-border-color: oklch(0% 0 0 / 0.0625) !important;
   --table-border-color: oklch(0% 0 0 / 0.092) !important;
-  --table-drag-handle-background-active: color-mix(in oklab, rgb(10, 124, 255), white 7.5%) !important;
+  --table-drag-handle-background-active: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
   --table-drag-handle-color: oklch(71.5% 0.0105 281) !important;
   --table-header-border-color: oklch(0% 0 0 / 0.092) !important;
   --table-header-color: oklch(55.75% 0.0105 281) !important;
@@ -2342,23 +2336,23 @@ html[saved-theme="dark"] body sup {
   --table-row-alt-background: oklch(20% 0 0 / 0.0275) !important;
   --table-row-alt-background-hover: oklch(20% 0 0 / 0.0275) !important;
   --table-row-bg: oklch(20% 0 0 / 0.0275) !important;
-  --table-selection: rgba(10, 124, 255, 0.1) !important;
-  --table-selection-border-color: color-mix(in oklab, rgb(10, 124, 255), white 7.5%) !important;
+  --table-selection: hsla(212, 100%, 52%, 0.1) !important;
+  --table-selection-border-color: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
   --table-text-size: 0.90625em !important;
   --table-text-weight: 420 !important;
-  --tag-background: rgba(10, 124, 255, 0.1) !important;
-  --tag-background-hover: rgba(10, 124, 255, 0.2) !important;
-  --tag-border-color: rgba(10, 124, 255, 0.15) !important;
-  --tag-border-color-hover: rgba(10, 124, 255, 0.15) !important;
-  --tag-color: rgb(10, 124, 255) !important;
-  --tag-color-hover: rgb(10, 124, 255) !important;
+  --tag-background: hsla(212, 100%, 52%, 0.1) !important;
+  --tag-background-hover: hsla(212, 100%, 52%, 0.2) !important;
+  --tag-border-color: hsla(212, 100%, 52%, 0.15) !important;
+  --tag-border-color-hover: hsla(212, 100%, 52%, 0.15) !important;
+  --tag-color: hsl(212, 100%, 52%) !important;
+  --tag-color-hover: hsl(212, 100%, 52%) !important;
   --tag-padding-x: 0.6875em !important;
   --tag-padding-y: 0.3125em !important;
   --tag-size: 0.8em !important;
   --tag-weight: 490 !important;
-  --tertiary: color-mix(in oklch, rgb(10, 124, 255) 80%, transparent 40%) !important;
-  --text-accent: rgb(10, 124, 255) !important;
-  --text-accent-hover: color-mix(in oklch, rgb(10, 124, 255) 80%, transparent 40%) !important;
+  --tertiary: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
+  --text-accent: hsl(212, 100%, 52%) !important;
+  --text-accent-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
   --text-error: rgb(233, 49, 58) !important;
   --text-faint: oklch(71.5% 0.0105 281) !important;
   --text-highlight-bg: oklch(from rgb(229, 169, 37) 0.9 c h / 0.33) !important;
@@ -2366,7 +2360,7 @@ html[saved-theme="dark"] body sup {
   --text-highlight-bg-search: oklch(from rgb(229, 169, 37) 0.9 c h / 0.625) !important;
   --text-muted: oklch(46.5% 0.0105 281) !important;
   --text-normal: oklch(30% 0.0005 281) !important;
-  --text-selection: oklab(from rgb(10, 124, 255) l a b / 0.15) !important;
+  --text-selection: oklab(from hsl(212, 100%, 52%) l a b / 0.15) !important;
   --text-success: rgb(0, 187, 93) !important;
   --text-warning: rgb(241, 110, 53) !important;
   --textHighlight: oklch(from rgb(229, 169, 37) 0.9 c h / 0.33) !important;
@@ -2411,6 +2405,7 @@ html[saved-theme="dark"] body sup {
   --vl-ease-out: cubic-bezier(0.3, 0.75, 0, 1) !important;
   --vl-layout-padding: 8px !important;
   --workspace-border-color: oklch(62.5% 0 0 / 0.03) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2919,18 +2914,14 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   text-decoration-color: oklch(0.3 0.0005 281);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
-  border-bottom-color: rgb(31, 132, 255);
-  border-left-color: rgb(31, 132, 255);
-  border-right-color: rgb(31, 132, 255);
-  border-top-color: rgb(31, 132, 255);
+  border-bottom-color: rgb(9, 186, 221);
+  border-left-color: rgb(9, 186, 221);
+  border-right-color: rgb(9, 186, 221);
+  border-top-color: rgb(9, 186, 221);
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
-  font-weight: 620;
-}
-
-html[saved-theme="light"] body .callout > .callout-content {
-  padding-left: 28px;
+  font-weight: 520;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -3330,13 +3321,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 490;
   text-decoration: rgb(10, 124, 255);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: oklch(0.465 0.0105 281);
-  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 420;
-  text-decoration: oklch(0.465 0.0105 281);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
   font-weight: 490;

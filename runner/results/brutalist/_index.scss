@@ -2947,7 +2947,7 @@ body {
 
   .callout .callout-title {
     gap: 4px;
-    border: 0px light-dark(rgb(84, 122, 155), rgb(96, 138, 176));
+    border: 0px light-dark(rgb(35, 35, 35), rgb(192, 192, 192));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3764,9 +3764,22 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(34, 34, 34), rgb(179, 179, 179));
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
-    font-family: Sen, sans-serif;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-weight: 400;
     text-decoration: rgb(179, 179, 179);
   }
@@ -3776,16 +3789,16 @@ body {
       rgba(0, 0, 0, 0.067),
       rgba(255, 255, 255, 0.067)
     );
-    border: 0px light-dark(rgb(0, 0, 0), rgb(160, 160, 160));
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(rgb(0, 0, 0), rgb(160, 160, 160));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -4475,6 +4488,10 @@ body {
     }
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
+    }
+
+    &[data-callout="banner"] {
+      --color: rgb(var(--callout-banner)) !important;
     }
   }
 }

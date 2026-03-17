@@ -19,7 +19,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(59, 166, 247, 0.1) !important;
+  --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1) !important;
   --background-modifier-border: #b7bfcd !important;
   --background-modifier-border-focus: #8d9ab0 !important;
   --background-modifier-border-hover: #a2acbe !important;
@@ -66,11 +66,11 @@
   --bases-table-border-color: #b7bfcd !important;
   --bases-table-cell-background-active: #f6f7f9 !important;
   --bases-table-cell-background-disabled: #e1e4ea !important;
-  --bases-table-cell-background-selected: rgba(59, 166, 247, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(206, 92%, 60%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #8d9ab0 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(83, 180, 249) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(205, 92.92%, 64.5%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -97,7 +97,7 @@
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(83, 180, 249) !important;
+  --blockquote-border-color: hsl(205, 92.92%, 64.5%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --blur-background: color-mix(in srgb, #f6f7f9 65%, transparent)
@@ -156,8 +156,8 @@
   --caret-color: #485465 !important;
   --checkbox-border-color: #7886a1 !important;
   --checkbox-border-color-hover: #56647b !important;
-  --checkbox-color: rgb(83, 180, 249) !important;
-  --checkbox-color-hover: rgb(102, 193, 250) !important;
+  --checkbox-color: hsl(205, 92.92%, 64.5%) !important;
+  --checkbox-color-hover: hsl(203, 93.84%, 69%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #f6f7f9 !important;
   --checkbox-radius: 4px !important;
@@ -184,10 +184,10 @@
   --code-value: #52d8d8 !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #7886a1 !important;
-  --collapse-icon-color-collapsed: rgb(59, 166, 247) !important;
-  --color-accent: rgb(59, 166, 247) !important;
-  --color-accent-1: rgb(83, 180, 249) !important;
-  --color-accent-2: rgb(102, 193, 250) !important;
+  --collapse-icon-color-collapsed: hsl(206, 92%, 60%) !important;
+  --color-accent: hsl(206, 92%, 60%) !important;
+  --color-accent-1: hsl(205, 92.92%, 64.5%) !important;
+  --color-accent-2: hsl(203, 93.84%, 69%) !important;
   --color-accent-hsl: 206, 92%, 60% !important;
   --color-base-00: #f6f7f9 !important;
   --color-base-05: #fcfcfc !important;
@@ -225,7 +225,7 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #b7bfcd !important;
-  --divider-color-hover: rgb(83, 180, 249) !important;
+  --divider-color-hover: hsl(205, 92.92%, 64.5%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -245,7 +245,7 @@
     0 0 0 1px #b7bfcd, inset 0 0 0 1px #b7bfcd !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(83, 180, 249) !important;
+  --embed-border-start: 2px solid hsl(205, 92.92%, 64.5%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -341,7 +341,7 @@
   --graph-line: #a2acbe !important;
   --graph-node: #56647b !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: rgb(59, 166, 247) !important;
+  --graph-node-focused: hsl(206, 92%, 60%) !important;
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: #7886a1 !important;
   --graph-text: #485465 !important;
@@ -388,7 +388,7 @@
   --hr-color: #b7bfcd !important;
   --hr-thickness: 2px !important;
   --icon-color: #56647b !important;
-  --icon-color-active: rgb(59, 166, 247) !important;
+  --icon-color-active: hsl(206, 92%, 60%) !important;
   --icon-color-focused: #485465 !important;
   --icon-color-hover: #56647b !important;
   --icon-l: 18px !important;
@@ -441,8 +441,8 @@
     0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(83, 180, 249) !important;
-  --interactive-accent-hover: rgb(102, 193, 250) !important;
+  --interactive-accent: hsl(205, 92.92%, 64.5%) !important;
+  --interactive-accent-hover: hsl(203, 93.84%, 69%) !important;
   --interactive-accent-hsl: 206, 92%, 60% !important;
   --interactive-hover: #e1e4ea !important;
   --interactive-normal: #f6f7f9 !important;
@@ -459,18 +459,18 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(59, 166, 247) !important;
-  --link-color-hover: rgb(102, 193, 250) !important;
+  --link-color: hsl(206, 92%, 60%) !important;
+  --link-color-hover: hsl(203, 93.84%, 69%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(59, 166, 247) !important;
-  --link-external-color-hover: rgb(102, 193, 250) !important;
+  --link-external-color: hsl(206, 92%, 60%) !important;
+  --link-external-color-hover: hsl(203, 93.84%, 69%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(59, 166, 247) !important;
-  --link-unresolved-decoration-color: rgba(59, 166, 247, 0.3) !important;
+  --link-unresolved-color: hsl(206, 92%, 60%) !important;
+  --link-unresolved-decoration-color: hsla(206, 92%, 60%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -484,7 +484,7 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: #7886a1 !important;
-  --list-marker-color-collapsed: rgb(59, 166, 247) !important;
+  --list-marker-color-collapsed: hsl(206, 92%, 60%) !important;
   --list-marker-color-hover: #56647b !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -582,12 +582,12 @@
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --nav-item-background-selected: rgba(59, 166, 247, 0.15) !important;
+  --nav-item-background-selected: hsla(206, 92%, 60%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #56647b !important;
   --nav-item-color-active: #485465 !important;
-  --nav-item-color-highlighted: rgb(59, 166, 247) !important;
+  --nav-item-color-highlighted: hsl(206, 92%, 60%) !important;
   --nav-item-color-hover: #485465 !important;
   --nav-item-color-selected: #485465 !important;
   --nav-item-margin-bottom: 2px !important;
@@ -623,7 +623,7 @@
   --pill-color: #56647b !important;
   --pill-color-hover: #485465 !important;
   --pill-color-remove: #7886a1 !important;
-  --pill-color-remove-hover: rgb(59, 166, 247) !important;
+  --pill-color-remove-hover: hsl(206, 92%, 60%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -781,13 +781,13 @@
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(59, 166, 247) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(206, 92%, 60%) !important;
   --tab-text-color: #7886a1 !important;
   --tab-text-color-active: #56647b !important;
   --tab-text-color-focused: #56647b !important;
   --tab-text-color-focused-active: #56647b !important;
   --tab-text-color-focused-active-current: #485465 !important;
-  --tab-text-color-focused-highlighted: rgb(59, 166, 247) !important;
+  --tab-text-color-focused-highlighted: hsl(206, 92%, 60%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: #b7bfcd !important;
@@ -802,7 +802,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(83, 180, 249) !important;
+  --table-drag-handle-background-active: hsl(205, 92.92%, 64.5%) !important;
   --table-drag-handle-color: #7886a1 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -817,20 +817,20 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(59, 166, 247, 0.1) !important;
+  --table-selection: hsla(206, 92%, 60%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: rgb(83, 180, 249) !important;
+  --table-selection-border-color: hsl(205, 92.92%, 64.5%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(59, 166, 247, 0.1) !important;
-  --tag-background-hover: rgba(59, 166, 247, 0.2) !important;
-  --tag-border-color: rgba(59, 166, 247, 0.15) !important;
-  --tag-border-color-hover: rgba(59, 166, 247, 0.15) !important;
+  --tag-background: hsla(206, 92%, 60%, 0.1) !important;
+  --tag-background-hover: hsla(206, 92%, 60%, 0.2) !important;
+  --tag-border-color: hsla(206, 92%, 60%, 0.15) !important;
+  --tag-border-color-hover: hsla(206, 92%, 60%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(59, 166, 247) !important;
-  --tag-color-hover: rgb(59, 166, 247) !important;
+  --tag-color: hsl(206, 92%, 60%) !important;
+  --tag-color-hover: hsl(206, 92%, 60%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -838,8 +838,8 @@
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(59, 166, 247) !important;
-  --text-accent-hover: rgb(102, 193, 250) !important;
+  --text-accent: hsl(206, 92%, 60%) !important;
+  --text-accent-hover: hsl(203, 93.84%, 69%) !important;
   --text-error: #e93147 !important;
   --text-faint: #7886a1 !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
@@ -848,7 +848,7 @@
   --text-normal: #485465 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(59, 166, 247, 0.2) !important;
+  --text-selection: hsla(206, 92%, 60%, 0.2) !important;
   --text-success: #08b94e !important;
   --text-warning: #ec7500 !important;
   --titlebar-background: #e1e4ea !important;
@@ -961,7 +961,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(59, 166, 247, 0.1) !important;
+  --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1) !important;
   --background-modifier-border: #455063 !important;
   --background-modifier-border-focus: #647590 !important;
   --background-modifier-border-hover: #546178 !important;
@@ -1008,11 +1008,11 @@
   --bases-table-border-color: #455063 !important;
   --bases-table-cell-background-active: #171b21 !important;
   --bases-table-cell-background-disabled: #262c36 !important;
-  --bases-table-cell-background-selected: rgba(59, 166, 247, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(206, 92%, 60%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #647590 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(59, 166, 247) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(206, 92%, 60%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -1039,7 +1039,7 @@
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(59, 166, 247) !important;
+  --blockquote-border-color: hsl(206, 92%, 60%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --blur-background: color-mix(in srgb, #455063 65%, transparent)
@@ -1098,8 +1098,8 @@
   --caret-color: #ccd2db !important;
   --checkbox-border-color: #7b89a3 !important;
   --checkbox-border-color-hover: #aeb7c7 !important;
-  --checkbox-color: rgb(59, 166, 247) !important;
-  --checkbox-color-hover: rgb(102, 193, 250) !important;
+  --checkbox-color: hsl(206, 92%, 60%) !important;
+  --checkbox-color-hover: hsl(203, 93.84%, 69%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #171b21 !important;
   --checkbox-radius: 4px !important;
@@ -1126,10 +1126,10 @@
   --code-value: #52d8d8 !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #7b89a3 !important;
-  --collapse-icon-color-collapsed: rgb(102, 193, 250) !important;
-  --color-accent: rgb(59, 166, 247) !important;
-  --color-accent-1: rgb(102, 193, 250) !important;
-  --color-accent-2: rgb(139, 213, 253) !important;
+  --collapse-icon-color-collapsed: hsl(203, 93.84%, 69%) !important;
+  --color-accent: hsl(206, 92%, 60%) !important;
+  --color-accent-1: hsl(203, 93.84%, 69%) !important;
+  --color-accent-2: hsl(201, 96.6%, 77.4%) !important;
   --color-accent-hsl: 206, 92%, 60% !important;
   --color-base-00: #171b21 !important;
   --color-base-05: #212121 !important;
@@ -1167,7 +1167,7 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #455063 !important;
-  --divider-color-hover: rgb(59, 166, 247) !important;
+  --divider-color-hover: hsl(206, 92%, 60%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -1187,7 +1187,7 @@
     0 0 0 1px #455063, inset 0 0 0 1px #455063 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(59, 166, 247) !important;
+  --embed-border-start: 2px solid hsl(206, 92%, 60%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1283,7 +1283,7 @@
   --graph-line: #546178 !important;
   --graph-node: #aeb7c7 !important;
   --graph-node-attachment: #8d8b1d !important;
-  --graph-node-focused: rgb(102, 193, 250) !important;
+  --graph-node-focused: hsl(203, 93.84%, 69%) !important;
   --graph-node-tag: #33a555 !important;
   --graph-node-unresolved: #7b89a3 !important;
   --graph-text: #ccd2db !important;
@@ -1330,7 +1330,7 @@
   --hr-color: #455063 !important;
   --hr-thickness: 2px !important;
   --icon-color: #aeb7c7 !important;
-  --icon-color-active: rgb(102, 193, 250) !important;
+  --icon-color-active: hsl(203, 93.84%, 69%) !important;
   --icon-color-focused: #ccd2db !important;
   --icon-color-hover: #aeb7c7 !important;
   --icon-l: 18px !important;
@@ -1383,8 +1383,8 @@
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(59, 166, 247) !important;
-  --interactive-accent-hover: rgb(102, 193, 250) !important;
+  --interactive-accent: hsl(206, 92%, 60%) !important;
+  --interactive-accent-hover: hsl(203, 93.84%, 69%) !important;
   --interactive-accent-hsl: 206, 92%, 60% !important;
   --interactive-hover: #546178 !important;
   --interactive-normal: #455063 !important;
@@ -1401,18 +1401,18 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(102, 193, 250) !important;
-  --link-color-hover: rgb(139, 213, 253) !important;
+  --link-color: hsl(203, 93.84%, 69%) !important;
+  --link-color-hover: hsl(201, 96.6%, 77.4%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(102, 193, 250) !important;
-  --link-external-color-hover: rgb(139, 213, 253) !important;
+  --link-external-color: hsl(203, 93.84%, 69%) !important;
+  --link-external-color-hover: hsl(201, 96.6%, 77.4%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(102, 193, 250) !important;
-  --link-unresolved-decoration-color: rgba(59, 166, 247, 0.3) !important;
+  --link-unresolved-color: hsl(203, 93.84%, 69%) !important;
+  --link-unresolved-decoration-color: hsla(206, 92%, 60%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1426,7 +1426,7 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: #7b89a3 !important;
-  --list-marker-color-collapsed: rgb(102, 193, 250) !important;
+  --list-marker-color-collapsed: hsl(203, 93.84%, 69%) !important;
   --list-marker-color-hover: #aeb7c7 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -1524,12 +1524,12 @@
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --nav-item-background-selected: rgba(59, 166, 247, 0.15) !important;
+  --nav-item-background-selected: hsla(206, 92%, 60%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #aeb7c7 !important;
   --nav-item-color-active: #ccd2db !important;
-  --nav-item-color-highlighted: rgb(102, 193, 250) !important;
+  --nav-item-color-highlighted: hsl(203, 93.84%, 69%) !important;
   --nav-item-color-hover: #ccd2db !important;
   --nav-item-color-selected: #ccd2db !important;
   --nav-item-margin-bottom: 2px !important;
@@ -1563,7 +1563,7 @@
   --pill-color: #aeb7c7 !important;
   --pill-color-hover: #ccd2db !important;
   --pill-color-remove: #7b89a3 !important;
-  --pill-color-remove-hover: rgb(102, 193, 250) !important;
+  --pill-color-remove-hover: hsl(203, 93.84%, 69%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1715,13 +1715,13 @@
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(59, 166, 247) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(206, 92%, 60%) !important;
   --tab-text-color: #7b89a3 !important;
   --tab-text-color-active: #aeb7c7 !important;
   --tab-text-color-focused: #aeb7c7 !important;
   --tab-text-color-focused-active: #aeb7c7 !important;
   --tab-text-color-focused-active-current: #ccd2db !important;
-  --tab-text-color-focused-highlighted: rgb(102, 193, 250) !important;
+  --tab-text-color-focused-highlighted: hsl(203, 93.84%, 69%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: #455063 !important;
@@ -1736,7 +1736,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(59, 166, 247) !important;
+  --table-drag-handle-background-active: hsl(206, 92%, 60%) !important;
   --table-drag-handle-color: #7b89a3 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -1751,20 +1751,20 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(59, 166, 247, 0.1) !important;
+  --table-selection: hsla(206, 92%, 60%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(59, 166, 247) !important;
+  --table-selection-border-color: hsl(206, 92%, 60%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(59, 166, 247, 0.1) !important;
-  --tag-background-hover: rgba(59, 166, 247, 0.2) !important;
-  --tag-border-color: rgba(59, 166, 247, 0.15) !important;
-  --tag-border-color-hover: rgba(59, 166, 247, 0.15) !important;
+  --tag-background: hsla(206, 92%, 60%, 0.1) !important;
+  --tag-background-hover: hsla(206, 92%, 60%, 0.2) !important;
+  --tag-border-color: hsla(206, 92%, 60%, 0.15) !important;
+  --tag-border-color-hover: hsla(206, 92%, 60%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(102, 193, 250) !important;
-  --tag-color-hover: rgb(102, 193, 250) !important;
+  --tag-color: hsl(203, 93.84%, 69%) !important;
+  --tag-color-hover: hsl(203, 93.84%, 69%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -1772,8 +1772,8 @@
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(102, 193, 250) !important;
-  --text-accent-hover: rgb(139, 213, 253) !important;
+  --text-accent: hsl(203, 93.84%, 69%) !important;
+  --text-accent-hover: hsl(201, 96.6%, 77.4%) !important;
   --text-error: #c03c40 !important;
   --text-faint: #7b89a3 !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
@@ -1782,7 +1782,7 @@
   --text-normal: #ccd2db !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(59, 166, 247, 0.33) !important;
+  --text-selection: hsla(206, 92%, 60%, 0.33) !important;
   --text-success: #33a555 !important;
   --text-warning: #a86f32 !important;
   --titlebar-background: #303845 !important;
@@ -3129,7 +3129,7 @@ body {
 
   .callout .callout-title {
     gap: 4px;
-    border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    border: 0px rgb(173, 204, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4023,7 +4023,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(86, 100, 123), rgb(174, 183, 199));
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -4040,7 +4040,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(174, 183, 199);
+    text-decoration: rgb(179, 179, 179);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -4048,7 +4048,7 @@ body {
       rgba(0, 0, 0, 0.067),
       rgba(255, 255, 255, 0.067)
     );
-    border: 0px light-dark(rgb(72, 84, 101), rgb(204, 210, 219));
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -4057,7 +4057,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(rgb(72, 84, 101), rgb(204, 210, 219));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -4853,6 +4853,271 @@ body {
     }
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
+    }
+
+    &[data-callout="c1-blue"] {
+      --color: rgb(var(--callout-c1-blue)) !important;
+    }
+    &[data-callout="c1-cyan"] {
+      --color: rgb(var(--callout-c1-cyan)) !important;
+    }
+    &[data-callout="c1-green"] {
+      --color: rgb(var(--callout-c1-green)) !important;
+    }
+    &[data-callout="c1-grey"] {
+      --color: rgb(var(--callout-c1-grey)) !important;
+    }
+    &[data-callout="c1-light-blue"] {
+      --color: rgb(var(--callout-c1-light-blue)) !important;
+    }
+    &[data-callout="c1-light-purple"] {
+      --color: rgb(var(--callout-c1-light-purple)) !important;
+    }
+    &[data-callout="c1-orange"] {
+      --color: rgb(var(--callout-c1-orange)) !important;
+    }
+    &[data-callout="c1-pink"] {
+      --color: rgb(var(--callout-c1-pink)) !important;
+    }
+    &[data-callout="c1-purple"] {
+      --color: rgb(var(--callout-c1-purple)) !important;
+    }
+    &[data-callout="c1-red"] {
+      --color: rgb(var(--callout-c1-red)) !important;
+    }
+    &[data-callout="c1-yellow"] {
+      --color: rgb(var(--callout-c1-yellow)) !important;
+    }
+    &[data-callout="c2-blue"] {
+      --color: rgb(var(--callout-c2-blue)) !important;
+    }
+    &[data-callout="c2-cyan"] {
+      --color: rgb(var(--callout-c2-cyan)) !important;
+    }
+    &[data-callout="c2-green"] {
+      --color: rgb(var(--callout-c2-green)) !important;
+    }
+    &[data-callout="c2-grey"] {
+      --color: rgb(var(--callout-c2-grey)) !important;
+    }
+    &[data-callout="c2-light-blue"] {
+      --color: rgb(var(--callout-c2-light-blue)) !important;
+    }
+    &[data-callout="c2-light-purple"] {
+      --color: rgb(var(--callout-c2-light-purple)) !important;
+    }
+    &[data-callout="c2-orange"] {
+      --color: rgb(var(--callout-c2-orange)) !important;
+    }
+    &[data-callout="c2-pink"] {
+      --color: rgb(var(--callout-c2-pink)) !important;
+    }
+    &[data-callout="c2-purple"] {
+      --color: rgb(var(--callout-c2-purple)) !important;
+    }
+    &[data-callout="c2-red"] {
+      --color: rgb(var(--callout-c2-red)) !important;
+    }
+    &[data-callout="c2-yellow"] {
+      --color: rgb(var(--callout-c2-yellow)) !important;
+    }
+    &[data-callout="c3-blue"] {
+      --color: rgb(var(--callout-c3-blue)) !important;
+    }
+    &[data-callout="c3-cyan"] {
+      --color: rgb(var(--callout-c3-cyan)) !important;
+    }
+    &[data-callout="c3-green"] {
+      --color: rgb(var(--callout-c3-green)) !important;
+    }
+    &[data-callout="c3-grey"] {
+      --color: rgb(var(--callout-c3-grey)) !important;
+    }
+    &[data-callout="c3-light-blue"] {
+      --color: rgb(var(--callout-c3-light-blue)) !important;
+    }
+    &[data-callout="c3-light-purple"] {
+      --color: rgb(var(--callout-c3-light-purple)) !important;
+    }
+    &[data-callout="c3-orange"] {
+      --color: rgb(var(--callout-c3-orange)) !important;
+    }
+    &[data-callout="c3-pink"] {
+      --color: rgb(var(--callout-c3-pink)) !important;
+    }
+    &[data-callout="c3-purple"] {
+      --color: rgb(var(--callout-c3-purple)) !important;
+    }
+    &[data-callout="c3-red"] {
+      --color: rgb(var(--callout-c3-red)) !important;
+    }
+    &[data-callout="c3-yellow"] {
+      --color: rgb(var(--callout-c3-yellow)) !important;
+    }
+    &[data-callout="c4-blue"] {
+      --color: rgb(var(--callout-c4-blue)) !important;
+    }
+    &[data-callout="c4-cyan"] {
+      --color: rgb(var(--callout-c4-cyan)) !important;
+    }
+    &[data-callout="c4-green"] {
+      --color: rgb(var(--callout-c4-green)) !important;
+    }
+    &[data-callout="c4-grey"] {
+      --color: rgb(var(--callout-c4-grey)) !important;
+    }
+    &[data-callout="c4-light-blue"] {
+      --color: rgb(var(--callout-c4-light-blue)) !important;
+    }
+    &[data-callout="c4-light-purple"] {
+      --color: rgb(var(--callout-c4-light-purple)) !important;
+    }
+    &[data-callout="c4-orange"] {
+      --color: rgb(var(--callout-c4-orange)) !important;
+    }
+    &[data-callout="c4-pink"] {
+      --color: rgb(var(--callout-c4-pink)) !important;
+    }
+    &[data-callout="c4-purple"] {
+      --color: rgb(var(--callout-c4-purple)) !important;
+    }
+    &[data-callout="c4-red"] {
+      --color: rgb(var(--callout-c4-red)) !important;
+    }
+    &[data-callout="c4-yellow"] {
+      --color: rgb(var(--callout-c4-yellow)) !important;
+    }
+    &[data-callout="info-blue"] {
+      --color: rgb(var(--callout-info-blue)) !important;
+    }
+    &[data-callout="info-cyan"] {
+      --color: rgb(var(--callout-info-cyan)) !important;
+    }
+    &[data-callout="info-green"] {
+      --color: rgb(var(--callout-info-green)) !important;
+    }
+    &[data-callout="info-grey"] {
+      --color: rgb(var(--callout-info-grey)) !important;
+    }
+    &[data-callout="info-light-blue"] {
+      --color: rgb(var(--callout-info-light-blue)) !important;
+    }
+    &[data-callout="info-light-purple"] {
+      --color: rgb(var(--callout-info-light-purple)) !important;
+    }
+    &[data-callout="info-orange"] {
+      --color: rgb(var(--callout-info-orange)) !important;
+    }
+    &[data-callout="info-pink"] {
+      --color: rgb(var(--callout-info-pink)) !important;
+    }
+    &[data-callout="info-purple"] {
+      --color: rgb(var(--callout-info-purple)) !important;
+    }
+    &[data-callout="info-red"] {
+      --color: rgb(var(--callout-info-red)) !important;
+    }
+    &[data-callout="info-yellow"] {
+      --color: rgb(var(--callout-info-yellow)) !important;
+    }
+    &[data-callout="mt-blue"] {
+      --color: rgb(var(--callout-mt-blue)) !important;
+    }
+    &[data-callout="mt-cyan"] {
+      --color: rgb(var(--callout-mt-cyan)) !important;
+    }
+    &[data-callout="mt-green"] {
+      --color: rgb(var(--callout-mt-green)) !important;
+    }
+    &[data-callout="mt-grey"] {
+      --color: rgb(var(--callout-mt-grey)) !important;
+    }
+    &[data-callout="mt-light-blue"] {
+      --color: rgb(var(--callout-mt-light-blue)) !important;
+    }
+    &[data-callout="mt-light-purple"] {
+      --color: rgb(var(--callout-mt-light-purple)) !important;
+    }
+    &[data-callout="mt-orange"] {
+      --color: rgb(var(--callout-mt-orange)) !important;
+    }
+    &[data-callout="mt-pink"] {
+      --color: rgb(var(--callout-mt-pink)) !important;
+    }
+    &[data-callout="mt-purple"] {
+      --color: rgb(var(--callout-mt-purple)) !important;
+    }
+    &[data-callout="mt-red"] {
+      --color: rgb(var(--callout-mt-red)) !important;
+    }
+    &[data-callout="mt-yellow"] {
+      --color: rgb(var(--callout-mt-yellow)) !important;
+    }
+    &[data-callout="text-blue"] {
+      --color: rgb(var(--callout-text-blue)) !important;
+    }
+    &[data-callout="text-cyan"] {
+      --color: rgb(var(--callout-text-cyan)) !important;
+    }
+    &[data-callout="text-green"] {
+      --color: rgb(var(--callout-text-green)) !important;
+    }
+    &[data-callout="text-grey"] {
+      --color: rgb(var(--callout-text-grey)) !important;
+    }
+    &[data-callout="text-light-blue"] {
+      --color: rgb(var(--callout-text-light-blue)) !important;
+    }
+    &[data-callout="text-light-purple"] {
+      --color: rgb(var(--callout-text-light-purple)) !important;
+    }
+    &[data-callout="text-orange"] {
+      --color: rgb(var(--callout-text-orange)) !important;
+    }
+    &[data-callout="text-pink"] {
+      --color: rgb(var(--callout-text-pink)) !important;
+    }
+    &[data-callout="text-purple"] {
+      --color: rgb(var(--callout-text-purple)) !important;
+    }
+    &[data-callout="text-red"] {
+      --color: rgb(var(--callout-text-red)) !important;
+    }
+    &[data-callout="text-yellow"] {
+      --color: rgb(var(--callout-text-yellow)) !important;
+    }
+    &[data-callout="warn-blue"] {
+      --color: rgb(var(--callout-warn-blue)) !important;
+    }
+    &[data-callout="warn-cyan"] {
+      --color: rgb(var(--callout-warn-cyan)) !important;
+    }
+    &[data-callout="warn-green"] {
+      --color: rgb(var(--callout-warn-green)) !important;
+    }
+    &[data-callout="warn-grey"] {
+      --color: rgb(var(--callout-warn-grey)) !important;
+    }
+    &[data-callout="warn-light-blue"] {
+      --color: rgb(var(--callout-warn-light-blue)) !important;
+    }
+    &[data-callout="warn-light-purple"] {
+      --color: rgb(var(--callout-warn-light-purple)) !important;
+    }
+    &[data-callout="warn-orange"] {
+      --color: rgb(var(--callout-warn-orange)) !important;
+    }
+    &[data-callout="warn-pink"] {
+      --color: rgb(var(--callout-warn-pink)) !important;
+    }
+    &[data-callout="warn-purple"] {
+      --color: rgb(var(--callout-warn-purple)) !important;
+    }
+    &[data-callout="warn-red"] {
+      --color: rgb(var(--callout-warn-red)) !important;
+    }
+    &[data-callout="warn-yellow"] {
+      --color: rgb(var(--callout-warn-yellow)) !important;
     }
   }
 }

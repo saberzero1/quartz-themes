@@ -66,7 +66,7 @@
   --bases-table-border-color: #f8fbff !important;
   --bases-table-cell-background-active: #f8fbff !important;
   --bases-table-cell-background-disabled: #101b2f !important;
-  --bases-table-cell-background-selected: rgba(186, 64, 64, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(0, 49%, 49%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #64a0db !important;
@@ -188,9 +188,9 @@
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #4e5b6f !important;
   --collapse-icon-color-collapsed: #a6bbde !important;
-  --color-accent: rgb(186, 64, 64) !important;
-  --color-accent-1: rgb(194, 76, 78) !important;
-  --color-accent-2: rgb(199, 87, 92) !important;
+  --color-accent: hsl(0, 49%, 49%) !important;
+  --color-accent-1: hsl(-1, 49.49%, 52.675%) !important;
+  --color-accent-2: hsl(-3, 49.98%, 56.35%) !important;
   --color-accent-hsl: 0, 49%, 49% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -468,7 +468,7 @@
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: #a6bbde !important;
-  --link-unresolved-decoration-color: rgba(186, 64, 64, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(0, 49%, 49%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
@@ -811,7 +811,7 @@
   --table-row-alt-background-hover: rgba(46, 124, 214, 0.2) !important;
   --table-row-background-hover: rgba(46, 124, 214, 0.2) !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(186, 64, 64, 0.1) !important;
+  --table-selection: hsla(0, 49%, 49%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: #517cbf !important;
   --table-selection-border-radius: 0 !important;
@@ -951,8 +951,8 @@
   --accent: #64a0db !important;
   --text: #283a67 !important;
   --bullet: "" !important;
-  --hr-width: auto !important;
   --nav-item-weight-active: 700 !important;
+  --hr-width: auto !important;
   --vault-font:
     "Recursive Sans Linear Static Black", "Oleo Script", "Calisto MT" !important;
   --graph-arrow: #4e99d0 !important;
@@ -986,6 +986,13 @@
   --fg: #025d9f !important;
   --font:
     "Recursive Sans Linear Static Black", "Oleo Script", "Calisto MT" !important;
+  --h1-border-color: #64a0db !important;
+  --h2-border-color: #4378c1 !important;
+  --h3-border-color: #587aa8 !important;
+  --h4-border-color: #283a67 !important;
+  --h5-border-color: #8897b4 !important;
+  --h6-border-color: #a6bbde !important;
+  --h1-background: transparent !important;
   --tab-background: #eef3fd !important;
   --r-heading-color: #4378c1 !important;
   --r-heading-font:
@@ -1091,8 +1098,6 @@
   --graph-lines: rgba(46, 124, 214, 0.2) !important;
   --graph-node-hover-fill: #5174a3 !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #64a0db !important;
   --h1-border-left-color: #ccd6eb !important;
   --h1-border-line-color: #ccd6eb !important;
   --h1-border-line-height: 4px !important;
@@ -1103,7 +1108,6 @@
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #4378c1 !important;
   --h2-border-left-color: #ccd6eb !important;
   --h2-border-line-color: #ccd6eb !important;
   --h2-border-line-height: 4px !important;
@@ -1114,7 +1118,6 @@
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #587aa8 !important;
   --h3-border-left-color: #ccd6eb !important;
   --h3-border-line-color: #ccd6eb !important;
   --h3-border-line-height: 4px !important;
@@ -1125,7 +1128,6 @@
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #283a67 !important;
   --h4-border-left-color: #ccd6eb !important;
   --h4-border-line-color: #ccd6eb !important;
   --h4-border-line-height: 4px !important;
@@ -1136,7 +1138,6 @@
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #8897b4 !important;
   --h5-border-left-color: #ccd6eb !important;
   --h5-border-line-color: #ccd6eb !important;
   --h5-border-line-height: 4px !important;
@@ -1147,7 +1148,6 @@
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: #a6bbde !important;
   --h6-border-left-color: #ccd6eb !important;
   --h6-border-line-color: #ccd6eb !important;
   --h6-border-line-height: 4px !important;
@@ -1476,7 +1476,7 @@
   --bases-table-border-color: #1a1e24 !important;
   --bases-table-cell-background-active: #1a1e24 !important;
   --bases-table-cell-background-disabled: #1f283b !important;
-  --bases-table-cell-background-selected: rgba(186, 64, 64, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(0, 49%, 49%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #394d64 !important;
@@ -1598,9 +1598,9 @@
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #4e5b6f !important;
   --collapse-icon-color-collapsed: #586477 !important;
-  --color-accent: rgb(186, 64, 64) !important;
-  --color-accent-1: rgb(199, 87, 92) !important;
-  --color-accent-2: rgb(209, 113, 121) !important;
+  --color-accent: hsl(0, 49%, 49%) !important;
+  --color-accent-1: hsl(-3, 49.98%, 56.35%) !important;
+  --color-accent-2: hsl(-5, 51.45%, 63.21%) !important;
   --color-accent-hsl: 0, 49%, 49% !important;
   --color-base-00: #1e1e1e !important;
   --color-base-05: #212121 !important;
@@ -1878,7 +1878,7 @@
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: #586477 !important;
-  --link-unresolved-decoration-color: rgba(186, 64, 64, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(0, 49%, 49%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
@@ -2213,7 +2213,7 @@
   --table-row-alt-background-hover: rgba(46, 124, 214, 0.3) !important;
   --table-row-background-hover: rgba(46, 124, 214, 0.3) !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(186, 64, 64, 0.1) !important;
+  --table-selection: hsla(0, 49%, 49%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
   --table-selection-border-color: #293e64 !important;
   --table-selection-border-radius: 0 !important;
@@ -2346,8 +2346,8 @@
   --accent: #394d64 !important;
   --text: #aab3ca !important;
   --bullet: "" !important;
-  --hr-width: auto !important;
   --nav-item-weight-active: 700 !important;
+  --hr-width: auto !important;
   --vault-font:
     "Recursive Sans Linear Static Black", "Oleo Script", "Calisto MT" !important;
   --graph-arrow: #6d7a9b !important;
@@ -2381,6 +2381,13 @@
   --fg: #cfd7dd !important;
   --font:
     "Recursive Sans Linear Static Black", "Oleo Script", "Calisto MT" !important;
+  --h1-border-color: #4c78cc !important;
+  --h2-border-color: #2b71cd !important;
+  --h3-border-color: #293e64 !important;
+  --h4-border-color: #1f283b !important;
+  --h5-border-color: #394d64 !important;
+  --h6-border-color: #6d7a9b !important;
+  --h1-background: transparent !important;
   --tab-background: #0e0f15 !important;
   --r-heading-color: #2b71cd !important;
   --r-heading-font:
@@ -2486,8 +2493,6 @@
   --graph-lines: rgba(46, 124, 214, 0.3) !important;
   --graph-node-hover-fill: #6ca6e0 !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #4c78cc !important;
   --h1-border-left-color: #283345 !important;
   --h1-border-line-color: #283345 !important;
   --h1-border-line-height: 4px !important;
@@ -2498,7 +2503,6 @@
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #2b71cd !important;
   --h2-border-left-color: #283345 !important;
   --h2-border-line-color: #283345 !important;
   --h2-border-line-height: 4px !important;
@@ -2509,7 +2513,6 @@
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #293e64 !important;
   --h3-border-left-color: #283345 !important;
   --h3-border-line-color: #283345 !important;
   --h3-border-line-height: 4px !important;
@@ -2520,7 +2523,6 @@
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #1f283b !important;
   --h4-border-left-color: #283345 !important;
   --h4-border-line-color: #283345 !important;
   --h4-border-line-height: 4px !important;
@@ -2531,7 +2533,6 @@
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #394d64 !important;
   --h5-border-left-color: #283345 !important;
   --h5-border-line-color: #283345 !important;
   --h5-border-line-height: 4px !important;
@@ -2542,7 +2543,6 @@
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: #6d7a9b !important;
   --h6-border-left-color: #283345 !important;
   --h6-border-line-color: #283345 !important;
   --h6-border-line-height: 4px !important;
@@ -3820,7 +3820,7 @@ body {
 
   .callout .callout-title {
     gap: 4px;
-    border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    border: 0px light-dark(rgb(40, 58, 103), rgb(170, 179, 202));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3838,7 +3838,7 @@ body {
 
   .callout > .callout-content {
     background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
+    padding: 5px 10px;
   }
 
   .callout[data-callout="note"] {
@@ -4070,7 +4070,7 @@ body {
   }
 
   .callout[data-callout="quote"] {
-    --callout-color: rgb(186, 64, 64);
+    --callout-color: hsl(0, 49%, 49%);
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
     border: 0px solid light-dark(rgb(40, 58, 103), rgb(170, 179, 202));
@@ -4718,38 +4718,41 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(40, 58, 103), rgb(170, 179, 202));
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
     font-family:
-      Inter,
+      ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
+      system-ui,
       "Segoe UI",
+      "Google Sans Flex",
       Roboto,
-      Helvetica,
-      Arial,
-      sans-serif,
+      "Inter Variable",
+      Inter,
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol",
-      "Microsoft YaHei Light",
       sans-serif;
-    font-weight: 500;
-    text-decoration: rgb(170, 179, 202);
+    font-weight: 400;
+    text-decoration: rgb(179, 179, 179);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: light-dark(rgb(81, 124, 191), rgb(41, 62, 100));
-    border: 0px rgb(229, 235, 238);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
+    );
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: rgb(229, 235, 238);
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -5545,6 +5548,58 @@ body {
     }
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
+    }
+
+    &[data-callout="aside"] {
+      --color: rgb(var(--callout-aside)) !important;
+    }
+    &[data-callout="blank"] {
+      --color: rgb(var(--callout-blank)) !important;
+    }
+    &[data-callout="caption"] {
+      --color: rgb(var(--callout-caption)) !important;
+    }
+    &[data-callout="captions"] {
+      --color: rgb(var(--callout-captions)) !important;
+    }
+    &[data-callout="cards"] {
+      --color: rgb(var(--callout-cards)) !important;
+    }
+    &[data-callout="checks"] {
+      --color: rgb(var(--callout-checks)) !important;
+    }
+    &[data-callout="column"] {
+      --color: rgb(var(--callout-column)) !important;
+    }
+    &[data-callout="columns"] {
+      --color: rgb(var(--callout-columns)) !important;
+    }
+    &[data-callout="grid"] {
+      --color: rgb(var(--callout-grid)) !important;
+    }
+    &[data-callout="infobox"] {
+      --color: rgb(var(--callout-infobox)) !important;
+    }
+    &[data-callout="kanban"] {
+      --color: rgb(var(--callout-kanban)) !important;
+    }
+    &[data-callout="kith"] {
+      --color: rgb(var(--callout-kith)) !important;
+    }
+    &[data-callout="metadata"] {
+      --color: rgb(var(--callout-metadata)) !important;
+    }
+    &[data-callout="quotes"] {
+      --color: rgb(var(--callout-quotes)) !important;
+    }
+    &[data-callout="recite"] {
+      --color: rgb(var(--callout-recite)) !important;
+    }
+    &[data-callout="statblocks"] {
+      --color: rgb(var(--callout-statblocks)) !important;
+    }
+    &[data-callout="timeline"] {
+      --color: rgb(var(--callout-timeline)) !important;
     }
   }
 }

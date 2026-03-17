@@ -9,6 +9,7 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: rgb(50, 50, 50) !important;
   --background-modifier-border-hover: rgb(50, 50, 50) !important;
   --background-modifier-form-field: rgb(18, 18, 18) !important;
@@ -27,6 +28,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: rgb(50, 50, 50) !important;
   --bases-table-cell-background-active: rgb(25, 25, 25) !important;
   --bases-table-cell-background-disabled: rgb(27, 27, 27) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(112, 122, 250) !important;
   --bases-table-group-background: rgb(27, 27, 27) !important;
   --bases-table-header-background: rgb(25, 25, 25) !important;
@@ -39,6 +41,8 @@ export const theme: ThemeData = {
   --bodyFont: "iA Writer Quattro S" !important;
   --bold-color: rgb(208, 66, 85) !important;
   --bold-colors: rgb(208, 66, 85) !important;
+  --bold-weight: 600 !important;
+  --callout-title-weight: 600;
   --canvas-background: rgb(25, 25, 25) !important;
   --canvas-card-label-color: rgba(240, 240, 240, 0.7) !important;
   --card-background-color: rgb(18, 18, 18) !important;
@@ -59,6 +63,8 @@ export const theme: ThemeData = {
   --collapse-icon-color: rgba(240, 240, 240, 0.7) !important;
   --collapse-icon-color-collapsed: rgb(112, 122, 250) !important;
   --color-accent: rgb(112, 122, 250) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --cpt-accent: 112, 122, 250 !important;
   --cpt-aura: 112, 122, 250 !important;
   --cpt-black: 10, 10, 10 !important;
@@ -130,6 +136,7 @@ export const theme: ThemeData = {
   --h6-font: Rubik !important;
   --headerFont: "iA Writer Quattro S" !important;
   --heading-formatting: rgba(240, 240, 240, 0.7) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: rgba(18, 18, 18, 0.7) !important;
   --hr-color: rgb(112, 122, 250) !important;
   --icon-color: rgba(240, 240, 240, 0.7) !important;
@@ -154,6 +161,8 @@ export const theme: ThemeData = {
   --link-external-color: rgb(112, 122, 250) !important;
   --link-external-color-hover: rgba(112, 122, 250, 0.7) !important;
   --link-unresolved-color: rgb(112, 122, 250) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: rgba(240, 240, 240, 0.7) !important;
   --list-marker-color-collapsed: rgb(112, 122, 250) !important;
   --list-marker-color-hover: rgba(240, 240, 240, 0.7) !important;
@@ -163,6 +172,7 @@ export const theme: ThemeData = {
   --metadata-divider-color: rgb(50, 50, 50) !important;
   --metadata-input-background-active: rgba(18, 18, 18, 0.7) !important;
   --metadata-input-font: "iA Writer Quattro S" !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(240, 240, 240) !important;
   --metadata-label-background-active: rgba(18, 18, 18, 0.7) !important;
   --metadata-label-font: "iA Writer Quattro S" !important;
@@ -180,6 +190,7 @@ export const theme: ThemeData = {
   --nav-heading-color-hover: rgb(240, 240, 240) !important;
   --nav-item-background-active: rgba(18, 18, 18, 0.7) !important;
   --nav-item-background-hover: rgba(18, 18, 18, 0.7) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: rgba(240, 240, 240, 0.7) !important;
   --nav-item-color-active: rgb(240, 240, 240) !important;
   --nav-item-color-highlighted: rgb(112, 122, 250) !important;
@@ -212,6 +223,7 @@ export const theme: ThemeData = {
   --setting-group-heading-color: rgb(240, 240, 240) !important;
   --setting-items-background: rgb(27, 27, 27) !important;
   --setting-items-border-color: rgb(50, 50, 50) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: rgb(50, 50, 50) !important;
   --slider-track-background: rgb(50, 50, 50) !important;
   --status-bar-background: rgb(20, 20, 20) !important;
@@ -238,7 +250,13 @@ export const theme: ThemeData = {
   --table-drag-handle-color-active: black !important;
   --table-header-border-color: rgb(50, 50, 50) !important;
   --table-header-color: rgb(240, 240, 240) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: rgb(112, 122, 250) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: rgb(112, 122, 250) !important;
   --tag-color-hover: rgb(112, 122, 250) !important;
   --tertiary: rgba(112, 122, 250, 0.7) !important;
@@ -258,6 +276,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: rgb(240, 240, 240) !important;
   --vault-profile-color: rgb(240, 240, 240) !important;
   --vault-profile-color-hover: rgb(240, 240, 240) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -826,21 +845,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   text-decoration: rgba(240, 240, 240, 0.7);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgba(240, 240, 240, 0.7);
-  font-family: "??", "??", "??", "iA Writer Quattro S";
-  text-decoration: rgba(240, 240, 240, 0.7);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(19, 19, 19);
-  border-bottom-color: rgb(240, 240, 240);
-  border-left-color: rgb(240, 240, 240);
-  border-right-color: rgb(240, 240, 240);
-  border-top-color: rgb(240, 240, 240);
-  color: rgb(240, 240, 240);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(240, 240, 240, 0.7);
@@ -1019,6 +1023,7 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: rgb(233, 223, 209) !important;
   --background-modifier-border-hover: rgb(233, 223, 209) !important;
   --background-modifier-form-field: rgb(241, 230, 214) !important;
@@ -1037,6 +1042,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: rgb(233, 223, 209) !important;
   --bases-table-cell-background-active: rgb(247, 243, 238) !important;
   --bases-table-cell-background-disabled: rgb(250, 238, 225) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px rgb(233, 179, 92) !important;
   --bases-table-group-background: rgb(250, 238, 225) !important;
   --bases-table-header-background: rgb(247, 243, 238) !important;
@@ -1049,6 +1055,8 @@ html[saved-theme="dark"] body sup {
   --bodyFont: "iA Writer Quattro S" !important;
   --bold-color: rgb(240, 100, 119) !important;
   --bold-colors: rgb(240, 100, 119) !important;
+  --bold-weight: 600 !important;
+  --callout-title-weight: 600;
   --canvas-background: rgb(247, 243, 238) !important;
   --canvas-card-label-color: rgba(74, 52, 28, 0.9) !important;
   --card-background-color: rgb(241, 230, 214) !important;
@@ -1069,6 +1077,8 @@ html[saved-theme="dark"] body sup {
   --collapse-icon-color: rgba(74, 52, 28, 0.9) !important;
   --collapse-icon-color-collapsed: rgb(233, 179, 92) !important;
   --color-accent: rgb(233, 179, 92) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --cpt-accent: 233, 179, 92 !important;
   --cpt-aura: 233, 179, 92 !important;
   --cpt-black: 74, 52, 28 !important;
@@ -1140,6 +1150,7 @@ html[saved-theme="dark"] body sup {
   --h6-font: Rubik !important;
   --headerFont: "iA Writer Quattro S" !important;
   --heading-formatting: rgba(74, 52, 28, 0.9) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: rgba(241, 230, 214, 0.7) !important;
   --hr-color: rgb(233, 179, 92) !important;
   --icon-color: rgba(74, 52, 28, 0.9) !important;
@@ -1164,6 +1175,8 @@ html[saved-theme="dark"] body sup {
   --link-external-color: rgb(233, 179, 92) !important;
   --link-external-color-hover: rgba(233, 179, 92, 0.7) !important;
   --link-unresolved-color: rgb(233, 179, 92) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: rgba(74, 52, 28, 0.9) !important;
   --list-marker-color-collapsed: rgb(233, 179, 92) !important;
   --list-marker-color-hover: rgba(74, 52, 28, 0.9) !important;
@@ -1173,6 +1186,7 @@ html[saved-theme="dark"] body sup {
   --metadata-divider-color: rgb(233, 223, 209) !important;
   --metadata-input-background-active: rgba(241, 230, 214, 0.7) !important;
   --metadata-input-font: "iA Writer Quattro S" !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(74, 52, 28) !important;
   --metadata-label-background-active: rgba(241, 230, 214, 0.7) !important;
   --metadata-label-font: "iA Writer Quattro S" !important;
@@ -1190,6 +1204,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-hover: rgb(74, 52, 28) !important;
   --nav-item-background-active: rgba(241, 230, 214, 0.7) !important;
   --nav-item-background-hover: rgba(241, 230, 214, 0.7) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: rgba(74, 52, 28, 0.9) !important;
   --nav-item-color-active: rgb(74, 52, 28) !important;
   --nav-item-color-highlighted: rgb(233, 179, 92) !important;
@@ -1220,6 +1235,7 @@ html[saved-theme="dark"] body sup {
   --setting-group-heading-color: rgb(74, 52, 28) !important;
   --setting-items-background: rgb(250, 238, 225) !important;
   --setting-items-border-color: rgb(233, 223, 209) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: rgb(233, 223, 209) !important;
   --slider-track-background: rgb(233, 223, 209) !important;
   --status-bar-background: rgb(238, 231, 221) !important;
@@ -1246,7 +1262,13 @@ html[saved-theme="dark"] body sup {
   --table-drag-handle-color-active: black !important;
   --table-header-border-color: rgb(233, 223, 209) !important;
   --table-header-color: rgb(74, 52, 28) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: rgb(233, 179, 92) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: rgb(233, 179, 92) !important;
   --tag-color-hover: rgb(233, 179, 92) !important;
   --tertiary: rgba(233, 179, 92, 0.7) !important;
@@ -1266,6 +1288,7 @@ html[saved-theme="dark"] body sup {
   --titlebar-text-color-focused: rgb(74, 52, 28) !important;
   --vault-profile-color: rgb(74, 52, 28) !important;
   --vault-profile-color-hover: rgb(74, 52, 28) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1834,21 +1857,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   text-decoration: rgba(74, 52, 28, 0.9);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgba(74, 52, 28, 0.9);
-  font-family: "??", "??", "??", "iA Writer Quattro S";
-  text-decoration: rgba(74, 52, 28, 0.9);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(247, 203, 160);
-  border-bottom-color: rgb(74, 52, 28);
-  border-left-color: rgb(74, 52, 28);
-  border-right-color: rgb(74, 52, 28);
-  border-top-color: rgb(74, 52, 28);
-  color: rgb(74, 52, 28);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(74, 52, 28, 0.9);

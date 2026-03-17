@@ -19,10 +19,10 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(108, 132, 229, 0.1) !important;
-  --background-modifier-border: rgb(219, 215, 215) !important;
-  --background-modifier-border-focus: rgb(230, 230, 230) !important;
-  --background-modifier-border-hover: rgb(134, 121, 121) !important;
+  --background-modifier-active-hover: hsla(228, 70%, 66%, 0.1) !important;
+  --background-modifier-border: hsl(0, 5%, 85%) !important;
+  --background-modifier-border-focus: hsl(0, 0%, 90%) !important;
+  --background-modifier-border-hover: hsl(0, 5%, 50%, 0.28) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
   --background-modifier-error: #f45757 !important;
@@ -31,29 +31,29 @@
   --background-modifier-form-field: hsl(0, 0%, 103.2%) !important;
   --background-modifier-form-field-hover: hsl(0, 0%, 103.2%) !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.05) !important;
-  --background-modifier-message: rgb(129, 151, 234) !important;
+  --background-modifier-message: hsl(227, 70.7%, 70.95%) !important;
   --background-modifier-success: #08b94e !important;
   --background-modifier-success-rgb: 8, 185, 78 !important;
   --background-primary: hsl(0, 0%, 103.2%) !important;
-  --background-primary-alt: rgb(247, 247, 247) !important;
-  --background-secondary: rgb(250, 250, 250) !important;
+  --background-primary-alt: hsl(0, 0%, 97.2%) !important;
+  --background-secondary: hsl(0, 0%, 98.2%) !important;
   --background-secondary-alt: hsl(0, 0%, 101.2%) !important;
   --bases-cards-background: hsl(0, 0%, 103.2%) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: rgb(247, 247, 247) !important;
+  --bases-cards-cover-background: hsl(0, 0%, 97.2%) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 12px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(219, 215, 215) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(134, 121, 121) !important;
-  --bases-embed-border-color: rgb(219, 215, 215) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(0, 5%, 85%) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(0, 5%, 50%, 0.28) !important;
+  --bases-embed-border-color: hsl(0, 5%, 85%) !important;
   --bases-embed-border-radius: 5px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: rgb(69, 69, 69) !important;
+  --bases-group-heading-property-color: hsl(0, 0%, 27%) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -63,25 +63,25 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(219, 215, 215) !important;
+  --bases-table-border-color: hsl(0, 5%, 85%) !important;
   --bases-table-cell-background-active: hsl(0, 0%, 103.2%) !important;
-  --bases-table-cell-background-disabled: rgb(247, 247, 247) !important;
-  --bases-table-cell-background-selected: rgba(108, 132, 229, 0.1) !important;
+  --bases-table-cell-background-disabled: hsl(0, 0%, 97.2%) !important;
+  --bases-table-cell-background-selected: hsla(228, 70%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(230, 230, 230) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(129, 151, 234) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(0, 0%, 90%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(227, 70.7%, 70.95%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 5px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: rgb(247, 247, 247) !important;
+  --bases-table-group-background: hsl(0, 0%, 97.2%) !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-background: hsl(0, 0%, 103.2%) !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.05) !important;
-  --bases-table-header-color: rgb(69, 69, 69) !important;
+  --bases-table-header-color: hsl(0, 0%, 27%) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -97,7 +97,7 @@
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(134, 121, 121) !important;
+  --blockquote-border-color: hsl(0, 5%, 50%, 0.28) !important;
   --blockquote-border-thickness: 1.2px !important;
   --blockquote-font-style: normal !important;
   --blur-background: color-mix(in srgb, hsl(0, 0%, 103.2%) 65%, transparent)
@@ -124,7 +124,7 @@
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: 213, 57, 132;
-  --callout-content-background: rgb(247, 247, 247);
+  --callout-content-background: hsl(0, 0%, 97.2%);
   --callout-content-padding: 10px;
   --callout-default: 8, 109, 221;
   --callout-error: 244, 87, 87;
@@ -144,7 +144,7 @@
   --callout-todo: 8, 109, 221;
   --callout-warning: 236, 117, 0;
   --canvas-background: hsl(0, 0%, 103.2%) !important;
-  --canvas-card-label-color: rgb(89, 89, 89) !important;
+  --canvas-card-label-color: hsl(0, 0%, 35%) !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 244, 87, 87 !important;
   --canvas-color-2: 236, 117, 0 !important;
@@ -155,55 +155,55 @@
   --canvas-controls-icon-size: 16px !important;
   --canvas-controls-icon-stroke: 2px !important;
   --canvas-controls-radius: 5px !important;
-  --canvas-dot-pattern: rgb(219, 215, 215) !important;
-  --caret-color: rgb(51, 51, 51) !important;
-  --checkbox-border-color: rgb(89, 89, 89) !important;
-  --checkbox-border-color-hover: rgb(69, 69, 69) !important;
-  --checkbox-color: rgb(129, 151, 234) !important;
-  --checkbox-color-hover: rgb(135, 162, 237) !important;
+  --canvas-dot-pattern: hsl(0, 5%, 85%) !important;
+  --caret-color: hsl(0, 0%, 20%) !important;
+  --checkbox-border-color: hsl(0, 0%, 35%) !important;
+  --checkbox-border-color-hover: hsl(0, 0%, 27%) !important;
+  --checkbox-color: hsl(227, 70.7%, 70.95%) !important;
+  --checkbox-color-hover: hsl(224, 74%, 73%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: hsl(0, 0%, 103.2%) !important;
   --checkbox-radius: 10px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: rgb(69, 69, 69) !important;
+  --checklist-done-color: hsl(0, 0%, 27%) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 5px !important;
-  --code-background: rgb(247, 247, 247) !important;
-  --code-border-color: rgb(219, 215, 215) !important;
+  --code-background: hsl(0, 0%, 97.2%) !important;
+  --code-border-color: hsl(0, 5%, 85%) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(0, 0, 0, 0.05) !important;
-  --code-comment: rgb(89, 89, 89) !important;
+  --code-comment: hsl(0, 0%, 35%) !important;
   --code-function: #e0ac00 !important;
   --code-important: #ec7500 !important;
   --code-keyword: #d53984 !important;
-  --code-normal: rgb(51, 51, 51) !important;
+  --code-normal: hsl(0, 0%, 20%) !important;
   --code-operator: #f45757 !important;
   --code-property: #00bfbc !important;
-  --code-punctuation: rgb(69, 69, 69) !important;
+  --code-punctuation: hsl(0, 0%, 27%) !important;
   --code-radius: 5px !important;
   --code-size: 0.875em !important;
   --code-string: #08b94e !important;
   --code-tag: #f45757 !important;
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: rgb(89, 89, 89) !important;
-  --collapse-icon-color-collapsed: rgb(108, 132, 229) !important;
-  --color-accent: rgb(108, 132, 229) !important;
-  --color-accent-1: rgb(129, 151, 234) !important;
-  --color-accent-2: rgb(135, 162, 237) !important;
+  --collapse-icon-color: hsl(0, 0%, 35%) !important;
+  --collapse-icon-color-collapsed: hsl(228, 70%, 66%) !important;
+  --color-accent: hsl(228, 70%, 66%) !important;
+  --color-accent-1: hsl(227, 70.7%, 70.95%) !important;
+  --color-accent-2: hsl(224, 74%, 73%) !important;
   --color-accent-hsl: 228, 70%, 66% !important;
   --color-base-00: hsl(0, 0%, 103.2%) !important;
   --color-base-05: hsl(0, 0%, 101.2%) !important;
-  --color-base-10: rgb(247, 247, 247) !important;
-  --color-base-100: rgb(51, 51, 51) !important;
-  --color-base-20: rgb(250, 250, 250) !important;
-  --color-base-25: rgb(235, 235, 235) !important;
-  --color-base-30: rgb(219, 215, 215) !important;
-  --color-base-35: rgb(134, 121, 121) !important;
-  --color-base-40: rgb(230, 230, 230) !important;
-  --color-base-50: rgb(89, 89, 89) !important;
-  --color-base-60: rgb(77, 77, 77) !important;
-  --color-base-70: rgb(69, 69, 69) !important;
+  --color-base-10: hsl(0, 0%, 97.2%) !important;
+  --color-base-100: hsl(0, 0%, 20%) !important;
+  --color-base-20: hsl(0, 0%, 98.2%) !important;
+  --color-base-25: hsl(0, 0%, 92%) !important;
+  --color-base-30: hsl(0, 5%, 85%) !important;
+  --color-base-35: hsl(0, 5%, 50%, 0.28) !important;
+  --color-base-40: hsl(0, 0%, 90%) !important;
+  --color-base-50: hsl(0, 0%, 35%) !important;
+  --color-base-60: hsl(0, 0%, 30%) !important;
+  --color-base-70: hsl(0, 0%, 27%) !important;
   --color-blue: #086ddd !important;
   --color-blue-rgb: 8, 109, 221 !important;
   --color-cyan: #00bfbc !important;
@@ -227,8 +227,8 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: rgb(219, 215, 215) !important;
-  --divider-color-hover: rgb(129, 151, 234) !important;
+  --divider-color: hsl(0, 5%, 85%) !important;
+  --divider-color-hover: hsl(227, 70.7%, 70.95%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 0.2px !important;
   --divider-width-hover: 3px !important;
@@ -236,7 +236,7 @@
   --drag-ghost-text-color: #fff !important;
   --dropdown-background: hsl(0, 0%, 101.2%) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: rgba(108, 132, 229, 0.1) !important;
+  --dropdown-background-hover: hsla(228, 70%, 66%, 0.1) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
@@ -245,10 +245,10 @@
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px rgb(219, 215, 215), inset 0 0 0 1px rgb(219, 215, 215) !important;
+    0 0 0 1px hsl(0, 5%, 85%), inset 0 0 0 1px hsl(0, 5%, 85%) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(129, 151, 234) !important;
+  --embed-border-start: 2px solid hsl(227, 70.7%, 70.95%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -272,7 +272,7 @@
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
   --flair-background: hsl(0, 0%, 101.2%) !important;
-  --flair-color: rgb(51, 51, 51) !important;
+  --flair-color: hsl(0, 0%, 20%) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -336,12 +336,12 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgb(219, 215, 215) !important;
+  --footnote-divider-color: hsl(0, 5%, 85%) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: rgb(69, 69, 69) !important;
-  --footnote-id-color-no-occurrences: rgb(89, 89, 89) !important;
+  --footnote-id-color: hsl(0, 0%, 27%) !important;
+  --footnote-id-color-no-occurrences: hsl(0, 0%, 35%) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(0, 0, 0, 0.05) !important;
@@ -353,13 +353,13 @@
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: rgb(134, 121, 121) !important;
-  --graph-node: rgb(145, 148, 243) !important;
+  --graph-line: hsl(0, 5%, 50%, 0.28) !important;
+  --graph-node: hsl(238, 80%, 76%) !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: rgb(165, 182, 248) !important;
+  --graph-node-focused: hsl(228, 85%, 81%) !important;
   --graph-node-tag: #08b94e !important;
-  --graph-node-unresolved: rgb(138, 122, 240) !important;
-  --graph-text: rgb(51, 51, 51) !important;
+  --graph-node-unresolved: hsl(248, 80%, 71%) !important;
+  --graph-text: hsl(0, 0%, 20%) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.72em !important;
@@ -397,15 +397,15 @@
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: rgb(89, 89, 89) !important;
+  --heading-formatting: hsl(0, 0%, 35%) !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: rgb(134, 121, 121) !important;
+  --hr-color: hsl(0, 5%, 50%, 0.28) !important;
   --hr-thickness: 1px !important;
-  --icon-color: rgb(69, 69, 69) !important;
-  --icon-color-active: rgb(108, 132, 229) !important;
-  --icon-color-focused: rgb(51, 51, 51) !important;
-  --icon-color-hover: rgb(69, 69, 69) !important;
+  --icon-color: hsl(0, 0%, 27%) !important;
+  --icon-color-active: hsl(228, 70%, 66%) !important;
+  --icon-color-focused: hsl(0, 0%, 20%) !important;
+  --icon-color-hover: hsl(0, 0%, 27%) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -424,7 +424,7 @@
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
-  --indentation-guide-color-active: rgb(129, 151, 234) !important;
+  --indentation-guide-color-active: hsl(227, 70.7%, 70.95%) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -439,21 +439,21 @@
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
-  --input-date-separator: rgb(89, 89, 89) !important;
+  --input-date-separator: hsl(0, 0%, 35%) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: rgb(89, 89, 89) !important;
+  --input-placeholder-color: hsl(0, 0%, 35%) !important;
   --input-radius: 5px !important;
-  --input-shadow: rgb(219, 215, 215) 0 0 0 0.8px !important;
-  --input-shadow-hover: rgba(108, 132, 229, 0.6) 0 0 0px 1px !important;
+  --input-shadow: hsl(0, 5%, 85%) 0 0 0 0.8px !important;
+  --input-shadow-hover: hsla(228, 70%, 66%, 0.6) 0 0 0px 1px !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(129, 151, 234) !important;
-  --interactive-accent-hover: rgb(135, 162, 237) !important;
+  --interactive-accent: hsl(227, 70.7%, 70.95%) !important;
+  --interactive-accent-hover: hsl(224, 74%, 73%) !important;
   --interactive-accent-hsl: 228, 70%, 66% !important;
-  --interactive-hover: rgba(108, 132, 229, 0.1) !important;
+  --interactive-hover: hsla(228, 70%, 66%, 0.1) !important;
   --interactive-normal: hsl(0, 0%, 101.2%) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
@@ -468,18 +468,18 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.75 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(129, 151, 234) !important;
-  --link-color-hover: rgb(135, 162, 237) !important;
+  --link-color: hsl(227, 70.7%, 70.95%) !important;
+  --link-color-hover: hsl(224, 74%, 73%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: 0.06em !important;
-  --link-external-color: rgb(108, 132, 229) !important;
-  --link-external-color-hover: rgb(135, 162, 237) !important;
+  --link-external-color: hsl(228, 70%, 66%) !important;
+  --link-external-color-hover: hsl(224, 74%, 73%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(108, 132, 229) !important;
-  --link-unresolved-decoration-color: rgba(108, 132, 229, 0.3) !important;
+  --link-unresolved-color: hsl(228, 70%, 66%) !important;
+  --link-unresolved-decoration-color: hsla(228, 70%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -492,15 +492,15 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(69, 69, 69) !important;
-  --list-marker-color-collapsed: rgb(108, 132, 229) !important;
-  --list-marker-color-hover: rgb(69, 69, 69) !important;
+  --list-marker-color: hsl(0, 0%, 27%) !important;
+  --list-marker-color-collapsed: hsl(228, 70%, 66%) !important;
+  --list-marker-color-hover: hsl(0, 0%, 27%) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: rgb(250, 250, 250) !important;
-  --menu-border-color: rgb(134, 121, 121) !important;
+  --menu-background: hsl(0, 0%, 98.2%) !important;
+  --menu-border-color: hsl(0, 5%, 50%, 0.28) !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
@@ -514,12 +514,12 @@
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgb(219, 215, 215) !important;
+  --metadata-border-color: hsl(0, 5%, 85%) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgb(219, 215, 215) !important;
+  --metadata-divider-color: hsl(0, 5%, 85%) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -538,7 +538,7 @@
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: rgb(51, 51, 51) !important;
+  --metadata-input-text-color: hsl(0, 0%, 20%) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.05) !important;
   --metadata-label-background-hover: transparent !important;
@@ -550,16 +550,16 @@
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: rgb(69, 69, 69) !important;
-  --metadata-label-text-color-hover: rgb(69, 69, 69) !important;
+  --metadata-label-text-color: hsl(0, 0%, 27%) !important;
+  --metadata-label-text-color-hover: hsl(0, 0%, 27%) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(0, 0, 0, 0.05) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(230, 230, 230) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(134, 121, 121) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, 90%) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, 5%, 50%, 0.28) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
   --metadata-property-corner-shape-hover: round !important;
@@ -570,7 +570,7 @@
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
   --modal-background: hsl(0, 0%, 103.2%) !important;
-  --modal-border-color: rgb(230, 230, 230) !important;
+  --modal-border-color: hsl(0, 0%, 90%) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
@@ -583,26 +583,26 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
-  --nav-collapse-icon-color: rgb(89, 89, 89) !important;
-  --nav-collapse-icon-color-collapsed: rgb(89, 89, 89) !important;
-  --nav-heading-color: rgb(51, 51, 51) !important;
-  --nav-heading-color-collapsed: rgb(89, 89, 89) !important;
-  --nav-heading-color-collapsed-hover: rgb(69, 69, 69) !important;
-  --nav-heading-color-hover: rgb(51, 51, 51) !important;
+  --nav-collapse-icon-color: hsl(0, 0%, 35%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 35%) !important;
+  --nav-heading-color: hsl(0, 0%, 20%) !important;
+  --nav-heading-color-collapsed: hsl(0, 0%, 35%) !important;
+  --nav-heading-color-collapsed-hover: hsl(0, 0%, 27%) !important;
+  --nav-heading-color-hover: hsl(0, 0%, 20%) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.05) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.05) !important;
-  --nav-item-background-selected: rgba(108, 132, 229, 0.15) !important;
+  --nav-item-background-selected: hsla(228, 70%, 66%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgb(69, 69, 69) !important;
-  --nav-item-color-active: rgb(51, 51, 51) !important;
-  --nav-item-color-highlighted: rgb(108, 132, 229) !important;
-  --nav-item-color-hover: rgb(51, 51, 51) !important;
-  --nav-item-color-selected: rgb(51, 51, 51) !important;
+  --nav-item-color: hsl(0, 0%, 27%) !important;
+  --nav-item-color-active: hsl(0, 0%, 20%) !important;
+  --nav-item-color-highlighted: hsl(228, 70%, 66%) !important;
+  --nav-item-color-hover: hsl(0, 0%, 20%) !important;
+  --nav-item-color-selected: hsl(0, 0%, 20%) !important;
   --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
@@ -610,9 +610,9 @@
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: rgb(89, 89, 89) !important;
-  --nav-tag-color-active: rgb(69, 69, 69) !important;
-  --nav-tag-color-hover: rgb(69, 69, 69) !important;
+  --nav-tag-color: hsl(0, 0%, 35%) !important;
+  --nav-tag-color-active: hsl(0, 0%, 27%) !important;
+  --nav-tag-color-hover: hsl(0, 0%, 27%) !important;
   --nav-tag-radius: 5px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
@@ -630,13 +630,13 @@
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(219, 215, 215) !important;
-  --pill-border-color-hover: rgb(134, 121, 121) !important;
+  --pill-border-color: hsl(0, 5%, 85%) !important;
+  --pill-border-color-hover: hsl(0, 5%, 50%, 0.28) !important;
   --pill-border-width: 1px !important;
-  --pill-color: rgb(69, 69, 69) !important;
-  --pill-color-hover: rgb(51, 51, 51) !important;
-  --pill-color-remove: rgb(89, 89, 89) !important;
-  --pill-color-remove-hover: rgb(108, 132, 229) !important;
+  --pill-color: hsl(0, 0%, 27%) !important;
+  --pill-color-hover: hsl(0, 0%, 20%) !important;
+  --pill-color-remove: hsl(0, 0%, 35%) !important;
+  --pill-color-remove-hover: hsl(228, 70%, 66%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -653,7 +653,7 @@
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-background: hsl(0, 0%, 103.2%) !important;
-  --prompt-border-color: rgb(230, 230, 230) !important;
+  --prompt-border-color: hsl(0, 0%, 90%) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 40vw !important;
@@ -697,16 +697,16 @@
   --scrollbar-radius: 18px !important;
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: rgb(69, 69, 69) !important;
+  --search-clear-button-color: hsl(0, 0%, 27%) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: rgb(69, 69, 69) !important;
+  --search-icon-color: hsl(0, 0%, 27%) !important;
   --search-icon-size: 18px !important;
   --search-result-background: hsl(0, 0%, 103.2%) !important;
-  --setting-group-heading-color: rgb(51, 51, 51) !important;
+  --setting-group-heading-color: hsl(0, 0%, 20%) !important;
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
-  --setting-items-background: rgb(247, 247, 247) !important;
-  --setting-items-border-color: rgb(219, 215, 215) !important;
+  --setting-items-background: hsl(0, 0%, 97.2%) !important;
+  --setting-items-border-color: hsl(0, 5%, 85%) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 18px !important;
@@ -739,22 +739,22 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: rgb(134, 121, 121) !important;
+  --slider-thumb-border-color: hsl(0, 5%, 50%, 0.28) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: rgb(219, 215, 215) !important;
+  --slider-track-background: hsl(0, 5%, 85%) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: rgb(250, 250, 250) !important;
-  --status-bar-border-color: rgb(219, 215, 215) !important;
+  --status-bar-background: hsl(0, 0%, 98.2%) !important;
+  --status-bar-border-color: hsl(0, 5%, 85%) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 12px 0 0 0 !important;
-  --status-bar-text-color: rgb(69, 69, 69) !important;
+  --status-bar-text-color: hsl(0, 0%, 27%) !important;
   --suggestion-backdrop-filter: none !important;
   --suggestion-background: hsl(0, 0%, 103.2%) !important;
   --swatch-height: 22px !important;
@@ -771,12 +771,12 @@
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: hsl(0, 0%, 103.2%) !important;
-  --tab-container-background: rgb(250, 250, 250) !important;
+  --tab-container-background: hsl(0, 0%, 98.2%) !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: rgb(219, 215, 215) !important;
+  --tab-divider-color: hsl(0, 5%, 85%) !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: rgb(219, 215, 215) !important;
+  --tab-outline-color: hsl(0, 5%, 85%) !important;
   --tab-outline-width: 0.7px !important;
   --tab-radius: 5px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -788,28 +788,28 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: rgb(250, 250, 250) !important;
+  --tab-switcher-background: hsl(0, 0%, 98.2%) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    rgb(250, 250, 250),
+    hsl(0, 0%, 98.2%),
     transparent
   ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 24px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(108, 132, 229) !important;
-  --tab-text-color: rgb(89, 89, 89) !important;
-  --tab-text-color-active: rgb(69, 69, 69) !important;
-  --tab-text-color-focused: rgb(69, 69, 69) !important;
-  --tab-text-color-focused-active: rgb(69, 69, 69) !important;
-  --tab-text-color-focused-active-current: rgb(51, 51, 51) !important;
-  --tab-text-color-focused-highlighted: rgb(108, 132, 229) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(228, 70%, 66%) !important;
+  --tab-text-color: hsl(0, 0%, 35%) !important;
+  --tab-text-color-active: hsl(0, 0%, 27%) !important;
+  --tab-text-color-focused: hsl(0, 0%, 27%) !important;
+  --tab-text-color-focused-active: hsl(0, 0%, 27%) !important;
+  --tab-text-color-focused-active-current: hsl(0, 0%, 20%) !important;
+  --tab-text-color-focused-highlighted: hsl(228, 70%, 66%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgb(219, 215, 215) !important;
+  --table-add-button-border-color: hsl(0, 5%, 85%) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(219, 215, 215) !important;
+  --table-border-color: hsl(0, 5%, 85%) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -818,14 +818,14 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(129, 151, 234) !important;
-  --table-drag-handle-color: rgb(89, 89, 89) !important;
+  --table-drag-handle-background-active: hsl(227, 70.7%, 70.95%) !important;
+  --table-drag-handle-color: hsl(0, 0%, 35%) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: rgb(250, 250, 250) !important;
-  --table-header-border-color: rgb(219, 215, 215) !important;
+  --table-header-background: hsl(0, 0%, 98.2%) !important;
+  --table-header-border-color: hsl(0, 5%, 85%) !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: rgb(51, 51, 51) !important;
+  --table-header-color: hsl(0, 0%, 20%) !important;
   --table-header-size: 0.875em !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -833,20 +833,20 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(108, 132, 229, 0.1) !important;
+  --table-selection: hsla(228, 70%, 66%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: rgb(129, 151, 234) !important;
+  --table-selection-border-color: hsl(227, 70.7%, 70.95%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.875em !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(108, 132, 229, 0.1) !important;
-  --tag-background-hover: rgba(108, 132, 229, 0.2) !important;
-  --tag-border-color: rgba(108, 132, 229, 0.15) !important;
-  --tag-border-color-hover: rgba(108, 132, 229, 0.15) !important;
+  --tag-background: hsla(228, 70%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(228, 70%, 66%, 0.2) !important;
+  --tag-border-color: hsla(228, 70%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(228, 70%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(108, 132, 229) !important;
-  --tag-color-hover: rgb(108, 132, 229) !important;
+  --tag-color: hsl(228, 70%, 66%) !important;
+  --tag-color-hover: hsl(228, 70%, 66%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -854,26 +854,26 @@
   --tag-padding-y: 2px !important;
   --tag-radius: 5px !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(108, 132, 229) !important;
-  --text-accent-hover: rgb(135, 162, 237) !important;
+  --text-accent: hsl(228, 70%, 66%) !important;
+  --text-accent-hover: hsl(224, 74%, 73%) !important;
   --text-error: #f45757 !important;
-  --text-faint: rgb(89, 89, 89) !important;
+  --text-faint: hsl(0, 0%, 35%) !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: rgb(69, 69, 69) !important;
-  --text-normal: rgb(51, 51, 51) !important;
+  --text-muted: hsl(0, 0%, 27%) !important;
+  --text-normal: hsl(0, 0%, 20%) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(108, 132, 229, 0.2) !important;
+  --text-selection: hsla(228, 70%, 66%, 0.2) !important;
   --text-success: #08b94e !important;
   --text-warning: #ec7500 !important;
   --titlebar-background: hsl(0, 0%, 103.2%) !important;
-  --titlebar-background-focused: rgb(250, 250, 250) !important;
-  --titlebar-border-color: rgb(219, 215, 215) !important;
+  --titlebar-background-focused: hsl(0, 0%, 98.2%) !important;
+  --titlebar-border-color: hsl(0, 5%, 85%) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: rgb(69, 69, 69) !important;
-  --titlebar-text-color-focused: rgb(51, 51, 51) !important;
+  --titlebar-text-color: hsl(0, 0%, 27%) !important;
+  --titlebar-text-color-focused: hsl(0, 0%, 20%) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -901,8 +901,8 @@
   --traffic-lights-offset-x: 40px !important;
   --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: rgb(51, 51, 51) !important;
-  --vault-profile-color-hover: rgb(51, 51, 51) !important;
+  --vault-profile-color: hsl(0, 0%, 20%) !important;
+  --vault-profile-color-hover: hsl(0, 0%, 20%) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -919,7 +919,7 @@
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     0 0 transparent !important;
-  --table-header-background-hover: rgb(250, 250, 250) !important;
+  --table-header-background-hover: hsl(0, 0%, 98.2%) !important;
   --text-base: 15% !important;
   --font-default-custom: "iA Writer Quattro S" !important;
   --font-monospace-custom: "iA Writer Mono S" !important;
@@ -927,8 +927,8 @@
   --font-secondary-custom: "iA Writer Duo S" !important;
   --h1-align: left !important;
   --inline-title-align: center !important;
-  --link-decoration-color: rgb(129, 151, 234) !important;
-  --link-decoration-color-active: rgba(108, 132, 229, 0.5) !important;
+  --link-decoration-color: hsl(227, 70.7%, 70.95%) !important;
+  --link-decoration-color-active: hsla(228, 70%, 66%, 0.5) !important;
   --callout-title-size: 0.98em;
   --tag-opacity: 0.25 !important;
   --tag-opacity-hover: 0.2 !important;
@@ -938,7 +938,7 @@
   --link-underline-offset: 2px !important;
   --base-c: 100% !important;
   --bg-box: rgba(255, 255, 255, 0.14) !important;
-  --bg-box-top: rgb(135, 162, 237) !important;
+  --bg-box-top: hsl(224, 74%, 73%) !important;
   --c-00: 103.2% !important;
   --c-05: 101.2% !important;
   --c-10: 97.2% !important;
@@ -951,7 +951,7 @@
   --c-50: 35% !important;
   --c-60: 30% !important;
   --c-70: 27% !important;
-  --cursor-color: rgb(129, 151, 234) !important;
+  --cursor-color: hsl(227, 70.7%, 70.95%) !important;
   --cursor-width: 2.5px !important;
   --custom-base-c-d: 10% !important;
   --custom-base-c-l: 99% !important;
@@ -995,7 +995,7 @@
   --p-indent: 15px !important;
   --p-margin: 20px !important;
   --serenity-mode-font-size: 17px !important;
-  --speech-color: rgb(51, 51, 51) !important;
+  --speech-color: hsl(0, 0%, 20%) !important;
   --speech-opacity: 0.5 !important;
   --theme-sat: 0% !important;
   --theme-sat-secondary: 0% !important;
@@ -1020,41 +1020,41 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(102, 107, 255, 0.1) !important;
-  --background-modifier-border: rgb(61, 61, 61) !important;
-  --background-modifier-border-focus: rgb(59, 59, 59) !important;
-  --background-modifier-border-hover: rgb(61, 61, 61) !important;
+  --background-modifier-active-hover: hsla(238, 100%, 70%, 0.1) !important;
+  --background-modifier-border: hsl(0, 0%, 24%) !important;
+  --background-modifier-border-focus: hsl(0, 0%, 23%) !important;
+  --background-modifier-border-hover: hsl(0, 0%, 24%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: rgb(26, 26, 26) !important;
-  --background-modifier-form-field-hover: rgb(26, 26, 26) !important;
+  --background-modifier-form-field: hsl(0, 0%, 10%) !important;
+  --background-modifier-form-field-hover: hsl(0, 0%, 10%) !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: hsl(242, 104%, 76%) !important;
   --background-modifier-success: #44cf6e !important;
   --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: rgb(13, 13, 13) !important;
-  --background-primary-alt: rgb(26, 26, 26) !important;
-  --background-secondary: rgb(3, 3, 3) !important;
-  --background-secondary-alt: rgb(20, 20, 20) !important;
-  --bases-cards-background: rgb(13, 13, 13) !important;
+  --background-primary: hsl(0, 0%, 5%) !important;
+  --background-primary-alt: hsl(0, 0%, 10%) !important;
+  --background-secondary: hsl(0, 0%, 1%) !important;
+  --background-secondary-alt: hsl(0, 0%, 8%) !important;
+  --bases-cards-background: hsl(0, 0%, 5%) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: rgb(26, 26, 26) !important;
+  --bases-cards-cover-background: hsl(0, 0%, 10%) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 12px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(61, 61, 61) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(61, 61, 61) !important;
-  --bases-embed-border-color: rgb(61, 61, 61) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(0, 0%, 24%) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(0, 0%, 24%) !important;
+  --bases-embed-border-color: hsl(0, 0%, 24%) !important;
   --bases-embed-border-radius: 5px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: rgb(166, 166, 166) !important;
+  --bases-group-heading-property-color: hsl(0, 0%, 65%) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -1064,25 +1064,25 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(61, 61, 61) !important;
-  --bases-table-cell-background-active: rgb(13, 13, 13) !important;
-  --bases-table-cell-background-disabled: rgb(26, 26, 26) !important;
-  --bases-table-cell-background-selected: rgba(102, 107, 255, 0.1) !important;
+  --bases-table-border-color: hsl(0, 0%, 24%) !important;
+  --bases-table-cell-background-active: hsl(0, 0%, 5%) !important;
+  --bases-table-cell-background-disabled: hsl(0, 0%, 10%) !important;
+  --bases-table-cell-background-selected: hsla(238, 100%, 70%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(59, 59, 59) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(102, 107, 255) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(0, 0%, 23%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(238, 100%, 70%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 5px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: rgb(26, 26, 26) !important;
+  --bases-table-group-background: hsl(0, 0%, 10%) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: rgb(13, 13, 13) !important;
+  --bases-table-header-background: hsl(0, 0%, 5%) !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --bases-table-header-color: rgb(166, 166, 166) !important;
+  --bases-table-header-color: hsl(0, 0%, 65%) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -1093,18 +1093,18 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: rgb(13, 13, 13) !important;
+  --bases-table-summary-background: hsl(0, 0%, 5%) !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(61, 61, 61) !important;
+  --blockquote-border-color: hsl(0, 0%, 24%) !important;
   --blockquote-border-thickness: 1.2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, rgb(20, 20, 20) 65%, transparent)
+  --blur-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent)
     linear-gradient(
-      rgb(20, 20, 20),
-      color-mix(in srgb, rgb(20, 20, 20) 65%, transparent)
+      hsl(0, 0%, 8%),
+      color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent)
     ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
@@ -1125,7 +1125,7 @@
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: 250, 153, 205;
-  --callout-content-background: rgb(26, 26, 26);
+  --callout-content-background: hsl(0, 0%, 10%);
   --callout-content-padding: 10px;
   --callout-default: 2, 122, 255;
   --callout-error: 251, 70, 76;
@@ -1144,8 +1144,8 @@
   --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
-  --canvas-background: rgb(13, 13, 13) !important;
-  --canvas-card-label-color: rgb(166, 166, 166) !important;
+  --canvas-background: hsl(0, 0%, 5%) !important;
+  --canvas-card-label-color: hsl(0, 0%, 65%) !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 251, 70, 76 !important;
   --canvas-color-2: 233, 151, 63 !important;
@@ -1156,55 +1156,55 @@
   --canvas-controls-icon-size: 16px !important;
   --canvas-controls-icon-stroke: 2px !important;
   --canvas-controls-radius: 5px !important;
-  --canvas-dot-pattern: rgb(20, 20, 20) !important;
-  --caret-color: rgb(186, 186, 186) !important;
-  --checkbox-border-color: rgb(166, 166, 166) !important;
-  --checkbox-border-color-hover: rgb(166, 166, 166) !important;
-  --checkbox-color: rgb(102, 107, 255) !important;
+  --canvas-dot-pattern: hsl(0, 0%, 8%) !important;
+  --caret-color: hsl(0, 0%, 73%) !important;
+  --checkbox-border-color: hsl(0, 0%, 65%) !important;
+  --checkbox-border-color-hover: hsl(0, 0%, 65%) !important;
+  --checkbox-color: hsl(238, 100%, 70%) !important;
   --checkbox-color-hover: hsl(242, 104%, 76%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: rgb(13, 13, 13) !important;
+  --checkbox-marker-color: hsl(0, 0%, 5%) !important;
   --checkbox-radius: 10px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: rgb(166, 166, 166) !important;
+  --checklist-done-color: hsl(0, 0%, 65%) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 5px !important;
-  --code-background: rgb(26, 26, 26) !important;
-  --code-border-color: rgb(61, 61, 61) !important;
+  --code-background: hsl(0, 0%, 10%) !important;
+  --code-border-color: hsl(0, 0%, 24%) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.067) !important;
-  --code-comment: rgb(166, 166, 166) !important;
+  --code-comment: hsl(0, 0%, 65%) !important;
   --code-function: #e0de71 !important;
   --code-important: #e9973f !important;
   --code-keyword: #fa99cd !important;
-  --code-normal: rgb(186, 186, 186) !important;
+  --code-normal: hsl(0, 0%, 73%) !important;
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
-  --code-punctuation: rgb(166, 166, 166) !important;
+  --code-punctuation: hsl(0, 0%, 65%) !important;
   --code-radius: 5px !important;
   --code-size: 0.875em !important;
   --code-string: #44cf6e !important;
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: rgb(166, 166, 166) !important;
+  --collapse-icon-color: hsl(0, 0%, 65%) !important;
   --collapse-icon-color-collapsed: hsl(242, 104%, 76%) !important;
-  --color-accent: rgb(102, 107, 255) !important;
+  --color-accent: hsl(238, 100%, 70%) !important;
   --color-accent-1: hsl(242, 104%, 76%) !important;
   --color-accent-2: hsl(234, 104%, 75%) !important;
   --color-accent-hsl: 238, 100%, 70% !important;
-  --color-base-00: rgb(13, 13, 13) !important;
-  --color-base-05: rgb(15, 15, 15) !important;
-  --color-base-10: rgb(26, 26, 26) !important;
-  --color-base-100: rgb(186, 186, 186) !important;
-  --color-base-20: rgb(3, 3, 3) !important;
-  --color-base-25: rgb(20, 20, 20) !important;
-  --color-base-30: rgb(20, 20, 20) !important;
-  --color-base-35: rgb(61, 61, 61) !important;
-  --color-base-40: rgb(59, 59, 59) !important;
-  --color-base-50: rgb(166, 166, 166) !important;
-  --color-base-60: rgb(176, 176, 176) !important;
-  --color-base-70: rgb(181, 181, 181) !important;
+  --color-base-00: hsl(0, 0%, 5%) !important;
+  --color-base-05: hsl(0, 0%, 6%) !important;
+  --color-base-10: hsl(0, 0%, 10%) !important;
+  --color-base-100: hsl(0, 0%, 73%) !important;
+  --color-base-20: hsl(0, 0%, 1%) !important;
+  --color-base-25: hsl(0, 0%, 8%) !important;
+  --color-base-30: hsl(0, 0%, 8%) !important;
+  --color-base-35: hsl(0, 0%, 24%) !important;
+  --color-base-40: hsl(0, 0%, 23%) !important;
+  --color-base-50: hsl(0, 0%, 65%) !important;
+  --color-base-60: hsl(0, 0%, 69%) !important;
+  --color-base-70: hsl(0, 0%, 71%) !important;
   --color-blue: #027aff !important;
   --color-blue-rgb: 2, 122, 255 !important;
   --color-cyan: #53dfdd !important;
@@ -1228,16 +1228,16 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: rgb(61, 61, 61) !important;
-  --divider-color-hover: rgb(102, 107, 255) !important;
+  --divider-color: hsl(0, 0%, 24%) !important;
+  --divider-color-hover: hsl(238, 100%, 70%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 0.2px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: rgb(20, 20, 20) !important;
+  --dropdown-background: hsl(0, 0%, 8%) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: rgba(102, 107, 255, 0.1) !important;
+  --dropdown-background-hover: hsla(238, 100%, 70%, 0.1) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
@@ -1246,17 +1246,17 @@
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px rgb(61, 61, 61), inset 0 0 0 1px rgb(61, 61, 61) !important;
+    0 0 0 1px hsl(0, 0%, 24%), inset 0 0 0 1px hsl(0, 0%, 24%) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(102, 107, 255) !important;
+  --embed-border-start: 2px solid hsl(238, 100%, 70%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: rgb(13, 13, 13) !important;
-  --file-header-background-focused: rgb(13, 13, 13) !important;
+  --file-header-background: hsl(0, 0%, 5%) !important;
+  --file-header-background-focused: hsl(0, 0%, 5%) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
     "??", "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic",
@@ -1272,8 +1272,8 @@
   --file-margins: 32px 32px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
-  --flair-background: rgb(20, 20, 20) !important;
-  --flair-color: rgb(186, 186, 186) !important;
+  --flair-background: hsl(0, 0%, 8%) !important;
+  --flair-color: hsl(0, 0%, 73%) !important;
   --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
@@ -1337,12 +1337,12 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgb(61, 61, 61) !important;
+  --footnote-divider-color: hsl(0, 0%, 24%) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: rgb(166, 166, 166) !important;
-  --footnote-id-color-no-occurrences: rgb(166, 166, 166) !important;
+  --footnote-id-color: hsl(0, 0%, 65%) !important;
+  --footnote-id-color-no-occurrences: hsl(0, 0%, 65%) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.067) !important;
@@ -1354,13 +1354,13 @@
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: rgb(61, 61, 61) !important;
-  --graph-node: rgb(149, 134, 249) !important;
+  --graph-line: hsl(0, 0%, 24%) !important;
+  --graph-node: hsl(248, 90%, 75%) !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: rgb(104, 109, 243) !important;
+  --graph-node-focused: hsl(238, 85%, 68%) !important;
   --graph-node-tag: #44cf6e !important;
-  --graph-node-unresolved: rgb(161, 124, 248) !important;
-  --graph-text: rgb(186, 186, 186) !important;
+  --graph-node-unresolved: hsl(258, 90%, 73%) !important;
+  --graph-text: hsl(0, 0%, 73%) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.72em !important;
@@ -1398,15 +1398,15 @@
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: rgb(166, 166, 166) !important;
+  --heading-formatting: hsl(0, 0%, 65%) !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: rgb(61, 61, 61) !important;
+  --hr-color: hsl(0, 0%, 24%) !important;
   --hr-thickness: 1px !important;
-  --icon-color: rgb(166, 166, 166) !important;
+  --icon-color: hsl(0, 0%, 65%) !important;
   --icon-color-active: hsl(242, 104%, 76%) !important;
-  --icon-color-focused: rgb(186, 186, 186) !important;
-  --icon-color-hover: rgb(166, 166, 166) !important;
+  --icon-color-focused: hsl(0, 0%, 73%) !important;
+  --icon-color-hover: hsl(0, 0%, 65%) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1425,7 +1425,7 @@
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
-  --indentation-guide-color-active: rgb(102, 107, 255) !important;
+  --indentation-guide-color-active: hsl(238, 100%, 70%) !important;
   --indentation-guide-editing-indent: 0.85em !important;
   --indentation-guide-reading-indent: -0.85em !important;
   --indentation-guide-source-indent: 0.25em !important;
@@ -1440,22 +1440,22 @@
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
-  --input-date-separator: rgb(166, 166, 166) !important;
+  --input-date-separator: hsl(0, 0%, 65%) !important;
   --input-font-weight: 400 !important;
   --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: rgb(166, 166, 166) !important;
+  --input-placeholder-color: hsl(0, 0%, 65%) !important;
   --input-radius: 5px !important;
-  --input-shadow: rgb(61, 61, 61) 0 0 0 0.8px !important;
-  --input-shadow-hover: rgba(102, 107, 255, 0.6) 0 0 0px 1px !important;
+  --input-shadow: hsl(0, 0%, 24%) 0 0 0 0.8px !important;
+  --input-shadow-hover: hsla(238, 100%, 70%, 0.6) 0 0 0px 1px !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(102, 107, 255) !important;
+  --interactive-accent: hsl(238, 100%, 70%) !important;
   --interactive-accent-hover: hsl(242, 104%, 76%) !important;
   --interactive-accent-hsl: 238, 100%, 70% !important;
-  --interactive-hover: rgba(102, 107, 255, 0.1) !important;
-  --interactive-normal: rgb(20, 20, 20) !important;
+  --interactive-hover: hsla(238, 100%, 70%, 0.1) !important;
+  --interactive-normal: hsl(0, 0%, 8%) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1480,7 +1480,7 @@
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: hsl(242, 104%, 76%) !important;
-  --link-unresolved-decoration-color: rgba(102, 107, 255, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(238, 100%, 70%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1493,15 +1493,15 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(166, 166, 166) !important;
+  --list-marker-color: hsl(0, 0%, 65%) !important;
   --list-marker-color-collapsed: hsl(242, 104%, 76%) !important;
-  --list-marker-color-hover: rgb(166, 166, 166) !important;
+  --list-marker-color-hover: hsl(0, 0%, 65%) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: rgb(3, 3, 3) !important;
-  --menu-border-color: rgb(61, 61, 61) !important;
+  --menu-background: hsl(0, 0%, 1%) !important;
+  --menu-border-color: hsl(0, 0%, 24%) !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
@@ -1515,12 +1515,12 @@
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgb(61, 61, 61) !important;
+  --metadata-border-color: hsl(0, 0%, 24%) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgb(61, 61, 61) !important;
+  --metadata-divider-color: hsl(0, 0%, 24%) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1539,7 +1539,7 @@
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: rgb(186, 186, 186) !important;
+  --metadata-input-text-color: hsl(0, 0%, 73%) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
@@ -1551,16 +1551,16 @@
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: rgb(166, 166, 166) !important;
-  --metadata-label-text-color-hover: rgb(166, 166, 166) !important;
+  --metadata-label-text-color: hsl(0, 0%, 65%) !important;
+  --metadata-label-text-color-hover: hsl(0, 0%, 65%) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(59, 59, 59) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(61, 61, 61) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0, 0%, 23%) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0, 0%, 24%) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
   --metadata-property-corner-shape-hover: round !important;
@@ -1570,8 +1570,8 @@
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: rgb(13, 13, 13) !important;
-  --modal-border-color: rgb(59, 59, 59) !important;
+  --modal-background: hsl(0, 0%, 5%) !important;
+  --modal-border-color: hsl(0, 0%, 23%) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
@@ -1584,26 +1584,26 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: rgb(166, 166, 166) !important;
-  --nav-collapse-icon-color-collapsed: rgb(166, 166, 166) !important;
-  --nav-heading-color: rgb(186, 186, 186) !important;
-  --nav-heading-color-collapsed: rgb(166, 166, 166) !important;
-  --nav-heading-color-collapsed-hover: rgb(166, 166, 166) !important;
-  --nav-heading-color-hover: rgb(186, 186, 186) !important;
+  --nav-collapse-icon-color: hsl(0, 0%, 65%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 65%) !important;
+  --nav-heading-color: hsl(0, 0%, 73%) !important;
+  --nav-heading-color-collapsed: hsl(0, 0%, 65%) !important;
+  --nav-heading-color-collapsed-hover: hsl(0, 0%, 65%) !important;
+  --nav-heading-color-hover: hsl(0, 0%, 73%) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --nav-item-background-selected: rgba(102, 107, 255, 0.15) !important;
+  --nav-item-background-selected: hsla(238, 100%, 70%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgb(166, 166, 166) !important;
-  --nav-item-color-active: rgb(186, 186, 186) !important;
+  --nav-item-color: hsl(0, 0%, 65%) !important;
+  --nav-item-color-active: hsl(0, 0%, 73%) !important;
   --nav-item-color-highlighted: hsl(242, 104%, 76%) !important;
-  --nav-item-color-hover: rgb(186, 186, 186) !important;
-  --nav-item-color-selected: rgb(186, 186, 186) !important;
+  --nav-item-color-hover: hsl(0, 0%, 73%) !important;
+  --nav-item-color-selected: hsl(0, 0%, 73%) !important;
   --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
@@ -1611,30 +1611,30 @@
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: rgb(166, 166, 166) !important;
-  --nav-tag-color-active: rgb(166, 166, 166) !important;
-  --nav-tag-color-hover: rgb(166, 166, 166) !important;
+  --nav-tag-color: hsl(0, 0%, 65%) !important;
+  --nav-tag-color-active: hsl(0, 0%, 65%) !important;
+  --nav-tag-color-hover: hsl(0, 0%, 65%) !important;
   --nav-tag-radius: 5px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: rgb(13, 13, 13) !important;
-  --pdf-page-background: rgb(13, 13, 13) !important;
-  --pdf-shadow: 0 0 0 1px rgb(61, 61, 61) !important;
-  --pdf-sidebar-background: rgb(13, 13, 13) !important;
+  --pdf-background: hsl(0, 0%, 5%) !important;
+  --pdf-page-background: hsl(0, 0%, 5%) !important;
+  --pdf-shadow: 0 0 0 1px hsl(0, 0%, 24%) !important;
+  --pdf-sidebar-background: hsl(0, 0%, 5%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(61, 61, 61) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(0, 0%, 24%) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(61, 61, 61) !important;
-  --pill-border-color-hover: rgb(61, 61, 61) !important;
+  --pill-border-color: hsl(0, 0%, 24%) !important;
+  --pill-border-color-hover: hsl(0, 0%, 24%) !important;
   --pill-border-width: 1px !important;
-  --pill-color: rgb(166, 166, 166) !important;
-  --pill-color-hover: rgb(186, 186, 186) !important;
-  --pill-color-remove: rgb(166, 166, 166) !important;
+  --pill-color: hsl(0, 0%, 65%) !important;
+  --pill-color-hover: hsl(0, 0%, 73%) !important;
+  --pill-color-remove: hsl(0, 0%, 65%) !important;
   --pill-color-remove-hover: hsl(242, 104%, 76%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
@@ -1651,8 +1651,8 @@
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: rgb(13, 13, 13) !important;
-  --prompt-border-color: rgb(59, 59, 59) !important;
+  --prompt-background: hsl(0, 0%, 5%) !important;
+  --prompt-border-color: hsl(0, 0%, 23%) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 40vw !important;
@@ -1662,10 +1662,10 @@
   --radius-m: 12px !important;
   --radius-s: 5px !important;
   --radius-xl: 24px !important;
-  --raised-background: color-mix(in srgb, rgb(20, 20, 20) 65%, transparent)
+  --raised-background: color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent)
     linear-gradient(
-      rgb(20, 20, 20),
-      color-mix(in srgb, rgb(20, 20, 20) 65%, transparent)
+      hsl(0, 0%, 8%),
+      color-mix(in srgb, hsl(0, 0%, 8%) 65%, transparent)
     ) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
@@ -1675,8 +1675,8 @@
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: rgb(13, 13, 13) !important;
-  --ribbon-background-collapsed: rgb(13, 13, 13) !important;
+  --ribbon-background: hsl(0, 0%, 5%) !important;
+  --ribbon-background-collapsed: hsl(0, 0%, 5%) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1690,16 +1690,16 @@
   --scrollbar-radius: 18px !important;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: rgb(166, 166, 166) !important;
+  --search-clear-button-color: hsl(0, 0%, 65%) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: rgb(166, 166, 166) !important;
+  --search-icon-color: hsl(0, 0%, 65%) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: rgb(13, 13, 13) !important;
-  --setting-group-heading-color: rgb(186, 186, 186) !important;
+  --search-result-background: hsl(0, 0%, 5%) !important;
+  --setting-group-heading-color: hsl(0, 0%, 73%) !important;
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
-  --setting-items-background: rgb(26, 26, 26) !important;
-  --setting-items-border-color: rgb(61, 61, 61) !important;
+  --setting-items-background: hsl(0, 0%, 10%) !important;
+  --setting-items-border-color: hsl(0, 0%, 24%) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 18px !important;
@@ -1732,24 +1732,24 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: rgb(61, 61, 61) !important;
+  --slider-thumb-border-color: hsl(0, 0%, 24%) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: rgb(61, 61, 61) !important;
+  --slider-track-background: hsl(0, 0%, 24%) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: rgb(3, 3, 3) !important;
-  --status-bar-border-color: rgb(61, 61, 61) !important;
+  --status-bar-background: hsl(0, 0%, 1%) !important;
+  --status-bar-border-color: hsl(0, 0%, 24%) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 12px 0 0 0 !important;
-  --status-bar-text-color: rgb(166, 166, 166) !important;
+  --status-bar-text-color: hsl(0, 0%, 65%) !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: rgb(13, 13, 13) !important;
+  --suggestion-background: hsl(0, 0%, 5%) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
@@ -1763,13 +1763,13 @@
   --sync-avatar-color-7: #a882ff !important;
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgb(13, 13, 13) !important;
-  --tab-container-background: rgb(3, 3, 3) !important;
+  --tab-background-active: hsl(0, 0%, 5%) !important;
+  --tab-container-background: hsl(0, 0%, 1%) !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: rgb(20, 20, 20) !important;
+  --tab-divider-color: hsl(0, 0%, 8%) !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: rgb(61, 61, 61) !important;
+  --tab-outline-color: hsl(0, 0%, 24%) !important;
   --tab-outline-width: 0.7px !important;
   --tab-radius: 5px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -1781,28 +1781,28 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: rgb(3, 3, 3) !important;
+  --tab-switcher-background: hsl(0, 0%, 1%) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    rgb(3, 3, 3),
+    hsl(0, 0%, 1%),
     transparent
   ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 24px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(102, 107, 255) !important;
-  --tab-text-color: rgb(166, 166, 166) !important;
-  --tab-text-color-active: rgb(166, 166, 166) !important;
-  --tab-text-color-focused: rgb(166, 166, 166) !important;
-  --tab-text-color-focused-active: rgb(166, 166, 166) !important;
-  --tab-text-color-focused-active-current: rgb(186, 186, 186) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(238, 100%, 70%) !important;
+  --tab-text-color: hsl(0, 0%, 65%) !important;
+  --tab-text-color-active: hsl(0, 0%, 65%) !important;
+  --tab-text-color-focused: hsl(0, 0%, 65%) !important;
+  --tab-text-color-focused-active: hsl(0, 0%, 65%) !important;
+  --tab-text-color-focused-active-current: hsl(0, 0%, 73%) !important;
   --tab-text-color-focused-highlighted: hsl(242, 104%, 76%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgb(61, 61, 61) !important;
+  --table-add-button-border-color: hsl(0, 0%, 24%) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(61, 61, 61) !important;
+  --table-border-color: hsl(0, 0%, 24%) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1811,14 +1811,14 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(102, 107, 255) !important;
-  --table-drag-handle-color: rgb(166, 166, 166) !important;
+  --table-drag-handle-background-active: hsl(238, 100%, 70%) !important;
+  --table-drag-handle-color: hsl(0, 0%, 65%) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: rgb(3, 3, 3) !important;
-  --table-header-border-color: rgb(61, 61, 61) !important;
+  --table-header-background: hsl(0, 0%, 1%) !important;
+  --table-header-border-color: hsl(0, 0%, 24%) !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: rgb(186, 186, 186) !important;
+  --table-header-color: hsl(0, 0%, 73%) !important;
   --table-header-size: 0.875em !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -1826,17 +1826,17 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(102, 107, 255, 0.1) !important;
+  --table-selection: hsla(238, 100%, 70%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(102, 107, 255) !important;
+  --table-selection-border-color: hsl(238, 100%, 70%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.875em !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(102, 107, 255, 0.1) !important;
-  --tag-background-hover: rgba(102, 107, 255, 0.2) !important;
-  --tag-border-color: rgba(102, 107, 255, 0.15) !important;
-  --tag-border-color-hover: rgba(102, 107, 255, 0.15) !important;
+  --tag-background: hsla(238, 100%, 70%, 0.1) !important;
+  --tag-background-hover: hsla(238, 100%, 70%, 0.2) !important;
+  --tag-border-color: hsla(238, 100%, 70%, 0.15) !important;
+  --tag-border-color-hover: hsla(238, 100%, 70%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: hsl(242, 104%, 76%) !important;
   --tag-color-hover: hsl(242, 104%, 76%) !important;
@@ -1850,23 +1850,23 @@
   --text-accent: hsl(242, 104%, 76%) !important;
   --text-accent-hover: hsl(234, 104%, 75%) !important;
   --text-error: #fb464c !important;
-  --text-faint: rgb(166, 166, 166) !important;
+  --text-faint: hsl(0, 0%, 65%) !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: rgb(166, 166, 166) !important;
-  --text-normal: rgb(186, 186, 186) !important;
+  --text-muted: hsl(0, 0%, 65%) !important;
+  --text-normal: hsl(0, 0%, 73%) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(102, 107, 255, 0.33) !important;
+  --text-selection: hsla(238, 100%, 70%, 0.33) !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
-  --titlebar-background: rgb(13, 13, 13) !important;
-  --titlebar-background-focused: rgb(3, 3, 3) !important;
-  --titlebar-border-color: rgb(61, 61, 61) !important;
+  --titlebar-background: hsl(0, 0%, 5%) !important;
+  --titlebar-background-focused: hsl(0, 0%, 1%) !important;
+  --titlebar-border-color: hsl(0, 0%, 24%) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: rgb(166, 166, 166) !important;
-  --titlebar-text-color-focused: rgb(186, 186, 186) !important;
+  --titlebar-text-color: hsl(0, 0%, 65%) !important;
+  --titlebar-text-color-focused: hsl(0, 0%, 73%) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -1894,8 +1894,8 @@
   --traffic-lights-offset-x: 40px !important;
   --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: rgb(186, 186, 186) !important;
-  --vault-profile-color-hover: rgb(186, 186, 186) !important;
+  --vault-profile-color: hsl(0, 0%, 73%) !important;
+  --vault-profile-color-hover: hsl(0, 0%, 73%) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -1905,7 +1905,7 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --table-header-background-hover: rgb(3, 3, 3) !important;
+  --table-header-background-hover: hsl(0, 0%, 1%) !important;
   --font-default-custom: "iA Writer Quattro S" !important;
   --font-monospace-custom: "iA Writer Mono S" !important;
   --font-secondary: "iA Writer Duo S" !important;
@@ -1913,7 +1913,7 @@
   --h1-align: left !important;
   --inline-title-align: center !important;
   --link-decoration-color: hsl(242, 104%, 76%) !important;
-  --link-decoration-color-active: rgba(102, 107, 255, 0.5) !important;
+  --link-decoration-color-active: hsla(238, 100%, 70%, 0.5) !important;
   --callout-title-size: 0.98em;
   --tag-opacity: 0.25 !important;
   --tag-opacity-hover: 0.2 !important;
@@ -1937,7 +1937,7 @@
   --c-50: 65% !important;
   --c-60: 69% !important;
   --c-70: 71% !important;
-  --cursor-color: rgb(102, 107, 255) !important;
+  --cursor-color: hsl(238, 100%, 70%) !important;
   --cursor-width: 2.5px !important;
   --custom-base-c-d: 10% !important;
   --custom-base-c-l: 99% !important;
@@ -1981,7 +1981,7 @@
   --p-indent: 15px !important;
   --p-margin: 20px !important;
   --serenity-mode-font-size: 17px !important;
-  --speech-color: rgb(186, 186, 186) !important;
+  --speech-color: hsl(0, 0%, 73%) !important;
   --speech-opacity: 0.5 !important;
   --theme-sat: 0% !important;
   --theme-sat-secondary: 0% !important;
@@ -3279,7 +3279,7 @@ body {
 
   .callout .callout-title {
     gap: 15.68px;
-    border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    border: 0px light-dark(rgb(121, 117, 147), rgb(144, 140, 170));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 0px;
@@ -4233,18 +4233,9 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(69, 69, 69), rgb(166, 166, 166));
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
     font-family:
-      "iA Writer Quattro S",
-      "Nanum Gothic Coding",
-      "MS PGothic",
-      "PingFang SC",
-      蘋方,
-      "蘋方 SC",
-      "Microsoft YaHei Light",
-      ui-sans-serif,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -4259,21 +4250,24 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(166, 166, 166);
+    text-decoration: rgb(179, 179, 179);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(51, 51, 51), rgb(186, 186, 186));
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
+    );
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(rgb(51, 51, 51), rgb(186, 186, 186));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -5097,6 +5091,253 @@ body {
     }
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
+    }
+
+    &[data-callout="a"] {
+      --color: rgb(var(--callout-a)) !important;
+    }
+    &[data-callout="activity"] {
+      --color: rgb(var(--callout-activity)) !important;
+    }
+    &[data-callout="add"] {
+      --color: rgb(var(--callout-add)) !important;
+    }
+    &[data-callout="arrow"] {
+      --color: rgb(var(--callout-arrow)) !important;
+    }
+    &[data-callout="b"] {
+      --color: rgb(var(--callout-b)) !important;
+    }
+    &[data-callout="beats"] {
+      --color: rgb(var(--callout-beats)) !important;
+    }
+    &[data-callout="bookmark"] {
+      --color: rgb(var(--callout-bookmark)) !important;
+    }
+    &[data-callout="c"] {
+      --color: rgb(var(--callout-c)) !important;
+    }
+    &[data-callout="cake"] {
+      --color: rgb(var(--callout-cake)) !important;
+    }
+    &[data-callout="calendar"] {
+      --color: rgb(var(--callout-calendar)) !important;
+    }
+    &[data-callout="cancel"] {
+      --color: rgb(var(--callout-cancel)) !important;
+    }
+    &[data-callout="cancelled"] {
+      --color: rgb(var(--callout-cancelled)) !important;
+    }
+    &[data-callout="close"] {
+      --color: rgb(var(--callout-close)) !important;
+    }
+    &[data-callout="comment"] {
+      --color: rgb(var(--callout-comment)) !important;
+    }
+    &[data-callout="cons"] {
+      --color: rgb(var(--callout-cons)) !important;
+    }
+    &[data-callout="d"] {
+      --color: rgb(var(--callout-d)) !important;
+    }
+    &[data-callout="down"] {
+      --color: rgb(var(--callout-down)) !important;
+    }
+    &[data-callout="download"] {
+      --color: rgb(var(--callout-download)) !important;
+    }
+    &[data-callout="e"] {
+      --color: rgb(var(--callout-e)) !important;
+    }
+    &[data-callout="event"] {
+      --color: rgb(var(--callout-event)) !important;
+    }
+    &[data-callout="eye"] {
+      --color: rgb(var(--callout-eye)) !important;
+    }
+    &[data-callout="forwarded"] {
+      --color: rgb(var(--callout-forwarded)) !important;
+    }
+    &[data-callout="g"] {
+      --color: rgb(var(--callout-g)) !important;
+    }
+    &[data-callout="game"] {
+      --color: rgb(var(--callout-game)) !important;
+    }
+    &[data-callout="h"] {
+      --color: rgb(var(--callout-h)) !important;
+    }
+    &[data-callout="handshake"] {
+      --color: rgb(var(--callout-handshake)) !important;
+    }
+    &[data-callout="heart"] {
+      --color: rgb(var(--callout-heart)) !important;
+    }
+    &[data-callout="home"] {
+      --color: rgb(var(--callout-home)) !important;
+    }
+    &[data-callout="i"] {
+      --color: rgb(var(--callout-i)) !important;
+    }
+    &[data-callout="idea"] {
+      --color: rgb(var(--callout-idea)) !important;
+    }
+    &[data-callout="incomplete"] {
+      --color: rgb(var(--callout-incomplete)) !important;
+    }
+    &[data-callout="j"] {
+      --color: rgb(var(--callout-j)) !important;
+    }
+    &[data-callout="junk"] {
+      --color: rgb(var(--callout-junk)) !important;
+    }
+    &[data-callout="k"] {
+      --color: rgb(var(--callout-k)) !important;
+    }
+    &[data-callout="key"] {
+      --color: rgb(var(--callout-key)) !important;
+    }
+    &[data-callout="l"] {
+      --color: rgb(var(--callout-l)) !important;
+    }
+    &[data-callout="like"] {
+      --color: rgb(var(--callout-like)) !important;
+    }
+    &[data-callout="link"] {
+      --color: rgb(var(--callout-link)) !important;
+    }
+    &[data-callout="location"] {
+      --color: rgb(var(--callout-location)) !important;
+    }
+    &[data-callout="love"] {
+      --color: rgb(var(--callout-love)) !important;
+    }
+    &[data-callout="m"] {
+      --color: rgb(var(--callout-m)) !important;
+    }
+    &[data-callout="map"] {
+      --color: rgb(var(--callout-map)) !important;
+    }
+    &[data-callout="memo"] {
+      --color: rgb(var(--callout-memo)) !important;
+    }
+    &[data-callout="money"] {
+      --color: rgb(var(--callout-money)) !important;
+    }
+    &[data-callout="music"] {
+      --color: rgb(var(--callout-music)) !important;
+    }
+    &[data-callout="n"] {
+      --color: rgb(var(--callout-n)) !important;
+    }
+    &[data-callout="nav"] {
+      --color: rgb(var(--callout-nav)) !important;
+    }
+    &[data-callout="navigation"] {
+      --color: rgb(var(--callout-navigation)) !important;
+    }
+    &[data-callout="next"] {
+      --color: rgb(var(--callout-next)) !important;
+    }
+    &[data-callout="no"] {
+      --color: rgb(var(--callout-no)) !important;
+    }
+    &[data-callout="o"] {
+      --color: rgb(var(--callout-o)) !important;
+    }
+    &[data-callout="open"] {
+      --color: rgb(var(--callout-open)) !important;
+    }
+    &[data-callout="p"] {
+      --color: rgb(var(--callout-p)) !important;
+    }
+    &[data-callout="party"] {
+      --color: rgb(var(--callout-party)) !important;
+    }
+    &[data-callout="person"] {
+      --color: rgb(var(--callout-person)) !important;
+    }
+    &[data-callout="plus"] {
+      --color: rgb(var(--callout-plus)) !important;
+    }
+    &[data-callout="prize"] {
+      --color: rgb(var(--callout-prize)) !important;
+    }
+    &[data-callout="pros"] {
+      --color: rgb(var(--callout-pros)) !important;
+    }
+    &[data-callout="pulse"] {
+      --color: rgb(var(--callout-pulse)) !important;
+    }
+    &[data-callout="q"] {
+      --color: rgb(var(--callout-q)) !important;
+    }
+    &[data-callout="quick"] {
+      --color: rgb(var(--callout-quick)) !important;
+    }
+    &[data-callout="r"] {
+      --color: rgb(var(--callout-r)) !important;
+    }
+    &[data-callout="report"] {
+      --color: rgb(var(--callout-report)) !important;
+    }
+    &[data-callout="s"] {
+      --color: rgb(var(--callout-s)) !important;
+    }
+    &[data-callout="save"] {
+      --color: rgb(var(--callout-save)) !important;
+    }
+    &[data-callout="savings"] {
+      --color: rgb(var(--callout-savings)) !important;
+    }
+    &[data-callout="scheduling"] {
+      --color: rgb(var(--callout-scheduling)) !important;
+    }
+    &[data-callout="secret"] {
+      --color: rgb(var(--callout-secret)) !important;
+    }
+    &[data-callout="star"] {
+      --color: rgb(var(--callout-star)) !important;
+    }
+    &[data-callout="t"] {
+      --color: rgb(var(--callout-t)) !important;
+    }
+    &[data-callout="trash"] {
+      --color: rgb(var(--callout-trash)) !important;
+    }
+    &[data-callout="u"] {
+      --color: rgb(var(--callout-u)) !important;
+    }
+    &[data-callout="unlock"] {
+      --color: rgb(var(--callout-unlock)) !important;
+    }
+    &[data-callout="up"] {
+      --color: rgb(var(--callout-up)) !important;
+    }
+    &[data-callout="user"] {
+      --color: rgb(var(--callout-user)) !important;
+    }
+    &[data-callout="v"] {
+      --color: rgb(var(--callout-v)) !important;
+    }
+    &[data-callout="visibility"] {
+      --color: rgb(var(--callout-visibility)) !important;
+    }
+    &[data-callout="w"] {
+      --color: rgb(var(--callout-w)) !important;
+    }
+    &[data-callout="win"] {
+      --color: rgb(var(--callout-win)) !important;
+    }
+    &[data-callout="y"] {
+      --color: rgb(var(--callout-y)) !important;
+    }
+    &[data-callout="yes"] {
+      --color: rgb(var(--callout-yes)) !important;
+    }
+    &[data-callout="zap"] {
+      --color: rgb(var(--callout-zap)) !important;
     }
   }
 }

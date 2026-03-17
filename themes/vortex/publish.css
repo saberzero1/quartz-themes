@@ -81,10 +81,10 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --background-modifier-border-focus: #bdbdbd !important;
@@ -114,11 +114,11 @@ body.theme-light {
   --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px
-    color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+    color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --bases-cards-shadow-hover: 0 0 0 1px #d4d4d4 !important;
   --bases-embed-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --bases-embed-border-radius: 4px !important;
@@ -134,14 +134,14 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(138, 92, 245) !important;
+  --bases-table-border-color: hsl(258, 88%, 66%) !important;
   --bases-table-cell-background-active: #ffffff !important;
   --bases-table-cell-background-disabled: #ffffff !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #bdbdbd !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(153, 115, 247) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(257, 88.88%, 70.95%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -168,7 +168,7 @@ body.theme-light {
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(153, 115, 247) !important;
+  --blockquote-border-color: hsl(257, 88.88%, 70.95%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --blur-background: color-mix(in srgb, #ffffff 65%, transparent)
@@ -227,14 +227,14 @@ body.theme-light {
   --caret-color: #222222 !important;
   --checkbox-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #ffffff
   ) !important;
-  --checkbox-border-color-hover: rgb(138, 92, 245) !important;
-  --checkbox-color: rgb(138, 92, 245) !important;
+  --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
+  --checkbox-color: hsl(258, 88%, 66%) !important;
   --checkbox-color-hover: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #ffffff
   ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
@@ -247,7 +247,7 @@ body.theme-light {
   --code-background: #ffffff !important;
   --code-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --code-border-width: 0px !important;
@@ -267,10 +267,10 @@ body.theme-light {
   --code-value: #7852ee !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #ababab !important;
-  --collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(153, 115, 247) !important;
-  --color-accent-2: rgb(166, 139, 249) !important;
+  --collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -309,10 +309,10 @@ body.theme-light {
   --direction: 1 !important;
   --divider-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
-  --divider-color-hover: rgb(153, 115, 247) !important;
+  --divider-color-hover: hsl(257, 88.88%, 70.95%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -329,11 +329,11 @@ body.theme-light {
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent),
-    inset 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+    0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(153, 115, 247) !important;
+  --embed-border-start: 2px solid hsl(257, 88.88%, 70.95%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -411,7 +411,7 @@ body.theme-light {
   --font-weight: 400 !important;
   --footnote-divider-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --footnote-divider-color-active: transparent !important;
@@ -433,7 +433,7 @@ body.theme-light {
   --graph-line: #d4d4d4 !important;
   --graph-node: #5c5c5c !important;
   --graph-node-attachment: #e0ac00 !important;
-  --graph-node-focused: rgb(138, 92, 245) !important;
+  --graph-node-focused: hsl(258, 88%, 66%) !important;
   --graph-node-tag: #08b94e !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #222222 !important;
@@ -477,10 +477,10 @@ body.theme-light {
   --heading-formatting: #ababab !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --hr-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --hr-thickness: 2px !important;
   --icon-color: #5c5c5c !important;
-  --icon-color-active: rgb(138, 92, 245) !important;
+  --icon-color-active: hsl(258, 88%, 66%) !important;
   --icon-color-focused: #222222 !important;
   --icon-color-hover: #5c5c5c !important;
   --icon-l: 18px !important;
@@ -533,8 +533,8 @@ body.theme-light {
     0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(153, 115, 247) !important;
-  --interactive-accent-hover: rgb(166, 139, 249) !important;
+  --interactive-accent: hsl(257, 88.88%, 70.95%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: #fafafa !important;
   --interactive-normal: #ffffff !important;
@@ -551,18 +551,18 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(138, 92, 245) !important;
-  --link-color-hover: rgb(166, 139, 249) !important;
+  --link-color: hsl(258, 88%, 66%) !important;
+  --link-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(138, 92, 245) !important;
-  --link-external-color-hover: rgb(166, 139, 249) !important;
+  --link-external-color: hsl(258, 88%, 66%) !important;
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(138, 92, 245) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-color: hsl(258, 88%, 66%) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -575,8 +575,8 @@ body.theme-light {
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
-  --list-marker-color-collapsed: rgb(138, 92, 245) !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
+  --list-marker-color-collapsed: hsl(258, 88%, 66%) !important;
   --list-marker-color-hover: #5c5c5c !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -599,7 +599,7 @@ body.theme-light {
   --metadata-background: transparent !important;
   --metadata-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --metadata-border-radius: 0 !important;
@@ -608,7 +608,7 @@ body.theme-light {
   --metadata-display-reading: block !important;
   --metadata-divider-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --metadata-divider-color-focus: transparent !important;
@@ -682,12 +682,12 @@ body.theme-light {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #5c5c5c !important;
   --nav-item-color-active: #222222 !important;
-  --nav-item-color-highlighted: rgb(138, 92, 245) !important;
+  --nav-item-color-highlighted: hsl(258, 88%, 66%) !important;
   --nav-item-color-hover: #222222 !important;
   --nav-item-color-selected: #222222 !important;
   --nav-item-margin-bottom: 2px !important;
@@ -719,7 +719,7 @@ body.theme-light {
   --pill-background-hover: transparent !important;
   --pill-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --pill-border-color-hover: #d4d4d4 !important;
@@ -727,7 +727,7 @@ body.theme-light {
   --pill-color: #5c5c5c !important;
   --pill-color-hover: #222222 !important;
   --pill-color-remove: #ababab !important;
-  --pill-color-remove-hover: rgb(138, 92, 245) !important;
+  --pill-color-remove-hover: hsl(258, 88%, 66%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -780,7 +780,7 @@ body.theme-light {
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: color-mix(
     in srgb,
-    rgb(138, 92, 245) 80%,
+    hsl(258, 88%, 66%) 80%,
     transparent
   ) !important;
   --scrollbar-bg: rgba(0, 0, 0, 0.05) !important;
@@ -800,7 +800,7 @@ body.theme-light {
   --setting-items-background: #ffffff !important;
   --setting-items-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --setting-items-border-width: 0 !important;
@@ -843,7 +843,7 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: color-mix(
     in srgb,
-    rgb(138, 92, 245) 40%,
+    hsl(258, 88%, 66%) 40%,
     transparent
   ) !important;
   --slider-track-height: 3px !important;
@@ -851,7 +851,7 @@ body.theme-light {
   --status-bar-background: #eeeeee !important;
   --status-bar-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
@@ -882,7 +882,7 @@ body.theme-light {
   --tab-max-width: 320px !important;
   --tab-outline-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --tab-outline-width: 1px !important;
@@ -905,23 +905,23 @@ body.theme-light {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #ababab !important;
   --tab-text-color-active: #5c5c5c !important;
   --tab-text-color-focused: #5c5c5c !important;
   --tab-text-color-focused-active: #5c5c5c !important;
   --tab-text-color-focused-active-current: #222222 !important;
-  --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(138, 92, 245) !important;
+  --table-border-color: hsl(258, 88%, 66%) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -930,12 +930,12 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(153, 115, 247) !important;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%) !important;
   --table-drag-handle-color: #ababab !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: rgb(138, 92, 245) !important;
+  --table-header-border-color: hsl(258, 88%, 66%) !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #222222 !important;
   --table-header-size: 16px !important;
@@ -945,30 +945,30 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: rgb(153, 115, 247) !important;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
   --tag-background: color-mix(
     in srgb,
-    rgb(138, 92, 245) 10%,
+    hsl(258, 88%, 66%) 10%,
     transparent
   ) !important;
   --tag-background-hover: color-mix(
     in srgb,
-    rgb(138, 92, 245) 30%,
+    hsl(258, 88%, 66%) 30%,
     transparent
   ) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(138, 92, 245) !important;
+  --tag-color: hsl(258, 88%, 66%) !important;
   --tag-color-hover: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #ffffff
   ) !important;
   --tag-corner-shape: round !important;
@@ -978,8 +978,8 @@ body.theme-light {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 5px !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(138, 92, 245) !important;
-  --text-accent-hover: rgb(166, 139, 249) !important;
+  --text-accent: hsl(258, 88%, 66%) !important;
+  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-error: #e93147 !important;
   --text-faint: #ababab !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
@@ -988,14 +988,14 @@ body.theme-light {
   --text-normal: #222222 !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(138, 92, 245, 0.2) !important;
+  --text-selection: hsla(258, 88%, 66%, 0.2) !important;
   --text-success: #08b94e !important;
   --text-warning: #ec7500 !important;
   --titlebar-background: #eeeeee !important;
   --titlebar-background-focused: #eeeeee !important;
   --titlebar-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --titlebar-border-width: 0px !important;
@@ -1030,7 +1030,7 @@ body.theme-light {
   --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #222222 !important;
-  --vault-profile-color-hover: rgb(138, 92, 245) !important;
+  --vault-profile-color-hover: hsl(258, 88%, 66%) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -1055,112 +1055,112 @@ body.theme-light {
   --text-title-h4: #d500f9 !important;
   --text-title-h5: #2ecc71 !important;
   --text-title-h6: #db3eb1 !important;
-  --theme-color: rgb(138, 92, 245) !important;
+  --theme-color: hsl(258, 88%, 66%) !important;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
   --callout-color-orange: 255, 150, 50;
   --callout-color-purple: 150, 100, 250;
   --callout-color-red: 255, 80, 80;
   --callout-color-yellow: 255, 204, 0;
-  --color-italic: rgb(138, 92, 245) !important;
+  --color-italic: hsl(258, 88%, 66%) !important;
   --accent-brighter-10: color-mix(
     in srgb,
-    rgb(138, 92, 245) 90%,
+    hsl(258, 88%, 66%) 90%,
     #ffffff
   ) !important;
   --accent-brighter-30: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #ffffff
   ) !important;
   --accent-brighter-50: color-mix(
     in srgb,
-    rgb(138, 92, 245) 50%,
+    hsl(258, 88%, 66%) 50%,
     #ffffff
   ) !important;
   --accent-brighter-70: color-mix(
     in srgb,
-    rgb(138, 92, 245) 30%,
+    hsl(258, 88%, 66%) 30%,
     #ffffff
   ) !important;
   --accent-brighter-90: color-mix(
     in srgb,
-    rgb(138, 92, 245) 10%,
+    hsl(258, 88%, 66%) 10%,
     #ffffff
   ) !important;
   --accent-darker-10: color-mix(
     in srgb,
-    rgb(138, 92, 245) 90%,
+    hsl(258, 88%, 66%) 90%,
     #111111
   ) !important;
   --accent-darker-30: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #111111
   ) !important;
   --accent-darker-50: color-mix(
     in srgb,
-    rgb(138, 92, 245) 50%,
+    hsl(258, 88%, 66%) 50%,
     #111111
   ) !important;
   --accent-darker-70: color-mix(
     in srgb,
-    rgb(138, 92, 245) 30%,
+    hsl(258, 88%, 66%) 30%,
     #111111
   ) !important;
   --accent-opacity-10: color-mix(
     in srgb,
-    rgb(138, 92, 245) 10%,
+    hsl(258, 88%, 66%) 10%,
     transparent
   ) !important;
   --accent-opacity-20: color-mix(
     in srgb,
-    rgb(138, 92, 245) 20%,
+    hsl(258, 88%, 66%) 20%,
     transparent
   ) !important;
   --accent-opacity-30: color-mix(
     in srgb,
-    rgb(138, 92, 245) 30%,
+    hsl(258, 88%, 66%) 30%,
     transparent
   ) !important;
   --accent-opacity-40: color-mix(
     in srgb,
-    rgb(138, 92, 245) 40%,
+    hsl(258, 88%, 66%) 40%,
     transparent
   ) !important;
   --accent-opacity-5: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --accent-opacity-50: color-mix(
     in srgb,
-    rgb(138, 92, 245) 50%,
+    hsl(258, 88%, 66%) 50%,
     transparent
   ) !important;
   --accent-opacity-60: color-mix(
     in srgb,
-    rgb(138, 92, 245) 60%,
+    hsl(258, 88%, 66%) 60%,
     transparent
   ) !important;
   --accent-opacity-70: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     transparent
   ) !important;
   --accent-opacity-80: color-mix(
     in srgb,
-    rgb(138, 92, 245) 80%,
+    hsl(258, 88%, 66%) 80%,
     transparent
   ) !important;
   --accent-opacity-90: color-mix(
     in srgb,
-    rgb(138, 92, 245) 90%,
+    hsl(258, 88%, 66%) 90%,
     transparent
   ) !important;
   --alt-color: #111111 !important;
   --callout-background-opacity: 0.2;
-  --color-hr: rgb(138, 92, 245) !important;
+  --color-hr: hsl(258, 88%, 66%) !important;
   --gradient-bold: linear-gradient(135deg, #00eaff, #ff008c) !important;
   --hr-gradient: linear-gradient(
     to right,
@@ -1187,10 +1187,10 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --background-modifier-border-focus: #555555 !important;
@@ -1220,11 +1220,11 @@ body.theme-dark {
   --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px
-    color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+    color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f !important;
   --bases-embed-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --bases-embed-border-radius: 4px !important;
@@ -1240,14 +1240,14 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(138, 92, 245) !important;
+  --bases-table-border-color: hsl(258, 88%, 66%) !important;
   --bases-table-cell-background-active: #111111 !important;
   --bases-table-cell-background-disabled: #0d0b12 !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -1274,7 +1274,7 @@ body.theme-dark {
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(138, 92, 245) !important;
+  --blockquote-border-color: hsl(258, 88%, 66%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
   --blur-background: color-mix(in srgb, #363636 65%, transparent)
@@ -1333,14 +1333,14 @@ body.theme-dark {
   --caret-color: #dadada !important;
   --checkbox-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #ffffff
   ) !important;
-  --checkbox-border-color-hover: rgb(138, 92, 245) !important;
-  --checkbox-color: rgb(138, 92, 245) !important;
+  --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
+  --checkbox-color: hsl(258, 88%, 66%) !important;
   --checkbox-color-hover: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #ffffff
   ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
@@ -1353,7 +1353,7 @@ body.theme-dark {
   --code-background: #0d0b12 !important;
   --code-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --code-border-width: 0px !important;
@@ -1373,10 +1373,10 @@ body.theme-dark {
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #666666 !important;
-  --collapse-icon-color-collapsed: rgb(166, 139, 249) !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(166, 139, 249) !important;
-  --color-accent-2: rgb(197, 182, 252) !important;
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: #1e1e1e !important;
   --color-base-05: #212121 !important;
@@ -1415,10 +1415,10 @@ body.theme-dark {
   --direction: 1 !important;
   --divider-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
-  --divider-color-hover: rgb(138, 92, 245) !important;
+  --divider-color-hover: hsl(258, 88%, 66%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -1435,11 +1435,11 @@ body.theme-dark {
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent),
-    inset 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+    0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(138, 92, 245) !important;
+  --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1517,7 +1517,7 @@ body.theme-dark {
   --font-weight: 400 !important;
   --footnote-divider-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --footnote-divider-color-active: transparent !important;
@@ -1539,7 +1539,7 @@ body.theme-dark {
   --graph-line: #3f3f3f !important;
   --graph-node: #b3b3b3 !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: rgb(166, 139, 249) !important;
+  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-tag: #44cf6e !important;
   --graph-node-unresolved: #666666 !important;
   --graph-text: #dadada !important;
@@ -1583,10 +1583,10 @@ body.theme-dark {
   --heading-formatting: #666666 !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --hr-color: color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --hr-thickness: 2px !important;
   --icon-color: #b3b3b3 !important;
-  --icon-color-active: rgb(166, 139, 249) !important;
+  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
   --icon-color-focused: #dadada !important;
   --icon-color-hover: #b3b3b3 !important;
   --icon-l: 18px !important;
@@ -1639,8 +1639,8 @@ body.theme-dark {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(138, 92, 245) !important;
-  --interactive-accent-hover: rgb(166, 139, 249) !important;
+  --interactive-accent: hsl(258, 88%, 66%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: #3f3f3f !important;
   --interactive-normal: #363636 !important;
@@ -1657,18 +1657,18 @@ body.theme-dark {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(166, 139, 249) !important;
-  --link-color-hover: rgb(197, 182, 252) !important;
+  --link-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(166, 139, 249) !important;
-  --link-external-color-hover: rgb(197, 182, 252) !important;
+  --link-external-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(166, 139, 249) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1681,8 +1681,8 @@ body.theme-dark {
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
-  --list-marker-color-collapsed: rgb(166, 139, 249) !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
+  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --list-marker-color-hover: #b3b3b3 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -1705,7 +1705,7 @@ body.theme-dark {
   --metadata-background: transparent !important;
   --metadata-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --metadata-border-radius: 0 !important;
@@ -1714,7 +1714,7 @@ body.theme-dark {
   --metadata-display-reading: block !important;
   --metadata-divider-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --metadata-divider-color-focus: transparent !important;
@@ -1788,12 +1788,12 @@ body.theme-dark {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #b3b3b3 !important;
   --nav-item-color-active: #dadada !important;
-  --nav-item-color-highlighted: rgb(166, 139, 249) !important;
+  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --nav-item-color-hover: #dadada !important;
   --nav-item-color-selected: #dadada !important;
   --nav-item-margin-bottom: 2px !important;
@@ -1814,17 +1814,17 @@ body.theme-dark {
   --page-margin: 1px auto -8px !important;
   --pdf-background: #111111 !important;
   --pdf-page-background: #111111 !important;
-  --pdf-shadow: 0 0 0 1px color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+  --pdf-shadow: 0 0 0 1px color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --pdf-sidebar-background: #111111 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px
-    color-mix(in srgb, rgb(138, 92, 245) 5%, transparent) !important;
+    color-mix(in srgb, hsl(258, 88%, 66%) 5%, transparent) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
   --pill-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --pill-border-color-hover: #3f3f3f !important;
@@ -1832,7 +1832,7 @@ body.theme-dark {
   --pill-color: #b3b3b3 !important;
   --pill-color-hover: #dadada !important;
   --pill-color-remove: #666666 !important;
-  --pill-color-remove-hover: rgb(166, 139, 249) !important;
+  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1879,7 +1879,7 @@ body.theme-dark {
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: color-mix(
     in srgb,
-    rgb(138, 92, 245) 80%,
+    hsl(258, 88%, 66%) 80%,
     transparent
   ) !important;
   --scrollbar-bg: rgba(255, 255, 255, 0.05) !important;
@@ -1899,7 +1899,7 @@ body.theme-dark {
   --setting-items-background: #0d0b12 !important;
   --setting-items-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --setting-items-border-width: 0 !important;
@@ -1942,7 +1942,7 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: color-mix(
     in srgb,
-    rgb(138, 92, 245) 40%,
+    hsl(258, 88%, 66%) 40%,
     transparent
   ) !important;
   --slider-track-height: 3px !important;
@@ -1950,7 +1950,7 @@ body.theme-dark {
   --status-bar-background: #1a1a1a !important;
   --status-bar-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
@@ -1981,7 +1981,7 @@ body.theme-dark {
   --tab-max-width: 320px !important;
   --tab-outline-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --tab-outline-width: 1px !important;
@@ -2004,23 +2004,23 @@ body.theme-dark {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #666666 !important;
   --tab-text-color-active: #b3b3b3 !important;
   --tab-text-color-focused: #b3b3b3 !important;
   --tab-text-color-focused-active: #b3b3b3 !important;
   --tab-text-color-focused-active-current: #dadada !important;
-  --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(138, 92, 245) !important;
+  --table-border-color: hsl(258, 88%, 66%) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -2029,12 +2029,12 @@ body.theme-dark {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(138, 92, 245) !important;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
   --table-drag-handle-color: #666666 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: rgb(138, 92, 245) !important;
+  --table-header-border-color: hsl(258, 88%, 66%) !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #dadada !important;
   --table-header-size: 16px !important;
@@ -2044,30 +2044,30 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(138, 92, 245) !important;
+  --table-selection-border-color: hsl(258, 88%, 66%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
   --tag-background: color-mix(
     in srgb,
-    rgb(138, 92, 245) 10%,
+    hsl(258, 88%, 66%) 10%,
     transparent
   ) !important;
   --tag-background-hover: color-mix(
     in srgb,
-    rgb(138, 92, 245) 30%,
+    hsl(258, 88%, 66%) 30%,
     transparent
   ) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(138, 92, 245) !important;
+  --tag-color: hsl(258, 88%, 66%) !important;
   --tag-color-hover: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #ffffff
   ) !important;
   --tag-corner-shape: round !important;
@@ -2077,8 +2077,8 @@ body.theme-dark {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 5px !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(166, 139, 249) !important;
-  --text-accent-hover: rgb(197, 182, 252) !important;
+  --text-accent: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: #fb464c !important;
   --text-faint: #666666 !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
@@ -2087,14 +2087,14 @@ body.theme-dark {
   --text-normal: #dadada !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(138, 92, 245, 0.33) !important;
+  --text-selection: hsla(258, 88%, 66%, 0.33) !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
   --titlebar-background: #1a1a1a !important;
   --titlebar-background-focused: #0d0b12 !important;
   --titlebar-border-color: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --titlebar-border-width: 0px !important;
@@ -2129,7 +2129,7 @@ body.theme-dark {
   --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
   --vault-profile-color: #dadada !important;
-  --vault-profile-color-hover: rgb(138, 92, 245) !important;
+  --vault-profile-color-hover: hsl(258, 88%, 66%) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -2147,112 +2147,112 @@ body.theme-dark {
   --text-title-h4: #d500f9 !important;
   --text-title-h5: #2ecc71 !important;
   --text-title-h6: #db3eb1 !important;
-  --theme-color: rgb(138, 92, 245) !important;
+  --theme-color: hsl(258, 88%, 66%) !important;
   --callout-color-blue: 50, 150, 255;
   --callout-color-green: 50, 200, 100;
   --callout-color-orange: 255, 150, 50;
   --callout-color-purple: 150, 100, 250;
   --callout-color-red: 255, 80, 80;
   --callout-color-yellow: 255, 204, 0;
-  --color-italic: rgb(138, 92, 245) !important;
+  --color-italic: hsl(258, 88%, 66%) !important;
   --accent-brighter-10: color-mix(
     in srgb,
-    rgb(138, 92, 245) 90%,
+    hsl(258, 88%, 66%) 90%,
     #ffffff
   ) !important;
   --accent-brighter-30: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #ffffff
   ) !important;
   --accent-brighter-50: color-mix(
     in srgb,
-    rgb(138, 92, 245) 50%,
+    hsl(258, 88%, 66%) 50%,
     #ffffff
   ) !important;
   --accent-brighter-70: color-mix(
     in srgb,
-    rgb(138, 92, 245) 30%,
+    hsl(258, 88%, 66%) 30%,
     #ffffff
   ) !important;
   --accent-brighter-90: color-mix(
     in srgb,
-    rgb(138, 92, 245) 10%,
+    hsl(258, 88%, 66%) 10%,
     #ffffff
   ) !important;
   --accent-darker-10: color-mix(
     in srgb,
-    rgb(138, 92, 245) 90%,
+    hsl(258, 88%, 66%) 90%,
     #111111
   ) !important;
   --accent-darker-30: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     #111111
   ) !important;
   --accent-darker-50: color-mix(
     in srgb,
-    rgb(138, 92, 245) 50%,
+    hsl(258, 88%, 66%) 50%,
     #111111
   ) !important;
   --accent-darker-70: color-mix(
     in srgb,
-    rgb(138, 92, 245) 30%,
+    hsl(258, 88%, 66%) 30%,
     #111111
   ) !important;
   --accent-opacity-10: color-mix(
     in srgb,
-    rgb(138, 92, 245) 10%,
+    hsl(258, 88%, 66%) 10%,
     transparent
   ) !important;
   --accent-opacity-20: color-mix(
     in srgb,
-    rgb(138, 92, 245) 20%,
+    hsl(258, 88%, 66%) 20%,
     transparent
   ) !important;
   --accent-opacity-30: color-mix(
     in srgb,
-    rgb(138, 92, 245) 30%,
+    hsl(258, 88%, 66%) 30%,
     transparent
   ) !important;
   --accent-opacity-40: color-mix(
     in srgb,
-    rgb(138, 92, 245) 40%,
+    hsl(258, 88%, 66%) 40%,
     transparent
   ) !important;
   --accent-opacity-5: color-mix(
     in srgb,
-    rgb(138, 92, 245) 5%,
+    hsl(258, 88%, 66%) 5%,
     transparent
   ) !important;
   --accent-opacity-50: color-mix(
     in srgb,
-    rgb(138, 92, 245) 50%,
+    hsl(258, 88%, 66%) 50%,
     transparent
   ) !important;
   --accent-opacity-60: color-mix(
     in srgb,
-    rgb(138, 92, 245) 60%,
+    hsl(258, 88%, 66%) 60%,
     transparent
   ) !important;
   --accent-opacity-70: color-mix(
     in srgb,
-    rgb(138, 92, 245) 70%,
+    hsl(258, 88%, 66%) 70%,
     transparent
   ) !important;
   --accent-opacity-80: color-mix(
     in srgb,
-    rgb(138, 92, 245) 80%,
+    hsl(258, 88%, 66%) 80%,
     transparent
   ) !important;
   --accent-opacity-90: color-mix(
     in srgb,
-    rgb(138, 92, 245) 90%,
+    hsl(258, 88%, 66%) 90%,
     transparent
   ) !important;
   --alt-color: #ffffff !important;
   --callout-background-opacity: 0.2;
-  --color-hr: rgb(138, 92, 245) !important;
+  --color-hr: hsl(258, 88%, 66%) !important;
   --gradient-bold: linear-gradient(135deg, #00eaff, #ff008c) !important;
   --hr-gradient: linear-gradient(
     to right,
@@ -3071,7 +3071,7 @@ body .callout[data-callout="note"] {
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: 4px;
-  border: 0px rgb(150, 100, 250);
+  border: 0px rgb(50, 150, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3854,12 +3854,6 @@ body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
-    Rubik,
-    "Segoe UI",
-    Roboto,
-    Arial,
-    sans-serif,
-    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3877,8 +3871,11 @@ body .nav-view-outer .tree-item-self a {
   text-decoration: rgb(179, 179, 179);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
-  border: 0px color(srgb 0.678224 0.55256 0.97144);
+  background-color: light-dark(
+    rgba(0, 0, 0, 0.067),
+    rgba(255, 255, 255, 0.067)
+  );
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3887,7 +3884,7 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: color(srgb 0.678224 0.55256 0.97144);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
@@ -4328,6 +4325,104 @@ body
   > .callout-icon
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
+}
+body
+  .callout[data-callout="analysis"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-analysis));
+}
+body
+  .callout[data-callout="bookmark"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-bookmark));
+}
+body
+  .callout[data-callout="calendar"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-calendar));
+}
+body
+  .callout[data-callout="celebration"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-celebration));
+}
+body
+  .callout[data-callout="code"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-code));
+}
+body
+  .callout[data-callout="gift"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-gift));
+}
+body
+  .callout[data-callout="goal"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-goal));
+}
+body
+  .callout[data-callout="highlight"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-highlight));
+}
+body
+  .callout[data-callout="idea"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-idea));
+}
+body
+  .callout[data-callout="inspiration"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-inspiration));
+}
+body
+  .callout[data-callout="puzzle"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-puzzle));
+}
+body
+  .callout[data-callout="reminder"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-reminder));
+}
+body
+  .callout[data-callout="task"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-task));
+}
+body
+  .callout[data-callout="team"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-team));
 }
 body pre > code,
 body .markdown-rendered pre > code {

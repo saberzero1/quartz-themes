@@ -75,7 +75,7 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(33, 176, 67, 0.1) !important;
+  --background-modifier-active-hover: hsla(134, 68%, 41%, 0.1) !important;
   --background-modifier-border: #f6f6f6 !important;
   --background-modifier-border-focus: #bdbdbd !important;
   --background-modifier-border-hover: #d4d4d4 !important;
@@ -122,7 +122,7 @@ body.theme-light {
   --bases-table-border-color: #f6f6f6 !important;
   --bases-table-cell-background-active: #f6f6f6 !important;
   --bases-table-cell-background-disabled: #f0f0f0 !important;
-  --bases-table-cell-background-selected: rgba(33, 176, 67, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(134, 68%, 41%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #bdbdbd !important;
@@ -242,8 +242,8 @@ body.theme-light {
   --collapse-icon-color: #21b043 !important;
   --collapse-icon-color-collapsed: #21b043 !important;
   --color-accent: #21b043 !important;
-  --color-accent-1: rgb(35, 190, 68) !important;
-  --color-accent-2: rgb(37, 203, 67) !important;
+  --color-accent-1: hsl(133, 68.68%, 44.075%) !important;
+  --color-accent-2: hsl(131, 69.36%, 47.15%) !important;
   --color-accent-hsl: 134, 68%, 41% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -638,7 +638,7 @@ body.theme-light {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --nav-item-background-selected: rgba(33, 176, 67, 0.15) !important;
+  --nav-item-background-selected: hsla(134, 68%, 41%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #444444 !important;
@@ -873,17 +873,17 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(33, 176, 67, 0.1) !important;
+  --table-selection: hsla(134, 68%, 41%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: #21b043 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(33, 176, 67, 0.1) !important;
-  --tag-background-hover: rgba(33, 176, 67, 0.2) !important;
-  --tag-border-color: rgba(33, 176, 67, 0.15) !important;
-  --tag-border-color-hover: rgba(33, 176, 67, 0.15) !important;
+  --tag-background: hsla(134, 68%, 41%, 0.1) !important;
+  --tag-background-hover: hsla(134, 68%, 41%, 0.2) !important;
+  --tag-border-color: hsla(134, 68%, 41%, 0.15) !important;
+  --tag-border-color-hover: hsla(134, 68%, 41%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: #21b043 !important;
   --tag-color-hover: #21b043 !important;
@@ -1002,7 +1002,7 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(161, 249, 144, 0.1) !important;
+  --background-modifier-active-hover: hsla(110, 90%, 77%, 0.1) !important;
   --background-modifier-border: #141414 !important;
   --background-modifier-border-focus: #555555 !important;
   --background-modifier-border-hover: #3f3f3f !important;
@@ -1049,7 +1049,7 @@ body.theme-dark {
   --bases-table-border-color: #141414 !important;
   --bases-table-cell-background-active: #141414 !important;
   --bases-table-cell-background-disabled: #191919 !important;
-  --bases-table-cell-background-selected: rgba(161, 249, 144, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(110, 90%, 77%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
@@ -1169,8 +1169,8 @@ body.theme-dark {
   --collapse-icon-color: #a1f98f !important;
   --collapse-icon-color-collapsed: #a1f98f !important;
   --color-accent: #a1f98f !important;
-  --color-accent-1: rgb(212, 253, 201) !important;
-  --color-accent-2: rgb(251, 255, 250) !important;
+  --color-accent-1: hsl(107, 91.8%, 88.55%) !important;
+  --color-accent-2: hsl(105, 94.5%, 99.33%) !important;
   --color-accent-hsl: 110, 90%, 77% !important;
   --color-base-00: #1e1e1e !important;
   --color-base-05: #212121 !important;
@@ -1565,7 +1565,7 @@ body.theme-dark {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --nav-item-background-selected: rgba(161, 249, 144, 0.15) !important;
+  --nav-item-background-selected: hsla(110, 90%, 77%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #b8b8b8 !important;
@@ -1792,17 +1792,17 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(161, 249, 144, 0.1) !important;
+  --table-selection: hsla(110, 90%, 77%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
   --table-selection-border-color: #a1f98f !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(161, 249, 144, 0.1) !important;
-  --tag-background-hover: rgba(161, 249, 144, 0.2) !important;
-  --tag-border-color: rgba(161, 249, 144, 0.15) !important;
-  --tag-border-color-hover: rgba(161, 249, 144, 0.15) !important;
+  --tag-background: hsla(110, 90%, 77%, 0.1) !important;
+  --tag-background-hover: hsla(110, 90%, 77%, 0.2) !important;
+  --tag-border-color: hsla(110, 90%, 77%, 0.15) !important;
+  --tag-border-color-hover: hsla(110, 90%, 77%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: #a1f98f !important;
   --tag-color-hover: #a1f98f !important;
@@ -2712,7 +2712,7 @@ body .callout[data-callout="note"] {
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: 6px;
-  border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+  border: 0px light-dark(rgb(34, 176, 67), rgb(161, 249, 143));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3487,7 +3487,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(68, 68, 68), rgb(184, 184, 184));
+  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -3504,14 +3504,14 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(184, 184, 184);
+  text-decoration: rgb(179, 179, 179);
 }
 body .nav-view-outer .tree-item-self.mod-active {
   background-color: light-dark(
     rgba(0, 0, 0, 0.067),
     rgba(255, 255, 255, 0.067)
   );
-  border: 0px light-dark(rgb(20, 20, 20), rgb(209, 209, 209));
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3520,7 +3520,7 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(20, 20, 20), rgb(209, 209, 209));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
@@ -3919,6 +3919,20 @@ body
   > .callout-icon
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
+}
+body
+  .callout[data-callout="primary"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-primary));
+}
+body
+  .callout[data-callout="secondary"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-secondary));
 }
 body pre > code,
 body .markdown-rendered pre > code {
