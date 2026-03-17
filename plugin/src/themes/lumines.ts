@@ -1189,20 +1189,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(153, 109, 247);
   text-decoration: rgb(153, 109, 247);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(230, 230, 230);
-  text-decoration: rgb(230, 230, 230);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(230, 230, 230);
-  border-left-color: rgb(230, 230, 230);
-  border-right-color: rgb(230, 230, 230);
-  border-top-color: rgb(230, 230, 230);
-  color: rgb(230, 230, 230);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(230, 230, 230);
@@ -2560,20 +2546,6 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(153, 109, 247);
   text-decoration: rgb(153, 109, 247);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(51, 51, 51);
-  text-decoration: rgb(51, 51, 51);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(51, 51, 51);
-  border-left-color: rgb(51, 51, 51);
-  border-right-color: rgb(51, 51, 51);
-  border-top-color: rgb(51, 51, 51);
-  color: rgb(51, 51, 51);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(51, 51, 51);

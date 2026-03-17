@@ -19,7 +19,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(10, 124, 255, 0.1) !important;
+  --background-modifier-active-hover: hsla(212, 100%, 52%, 0.1) !important;
   --background-modifier-border: oklch(0% 0 0 / 0.0625) !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: oklch(82.5% 0.0025 281) !important;
@@ -84,13 +84,13 @@
     oklch(99% 0.0005 281),
     oklch(96.2% 0.0025 281)
   ) !important;
-  --bases-table-cell-background-selected: rgba(10, 124, 255, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(212, 100%, 52%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2.5px
-    color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
+    color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px
-    color-mix(in oklab, rgb(10, 124, 255), white 7.5%) !important;
+    color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -181,12 +181,12 @@
   --checkbox-border-color-hover: oklch(46.5% 0.0105 281) !important;
   --checkbox-color: color-mix(
     in oklab,
-    rgb(10, 124, 255),
+    hsl(212, 100%, 52%),
     white 7.5%
   ) !important;
   --checkbox-color-hover: color-mix(
     in oklch,
-    rgb(10, 124, 255) 80%,
+    hsl(212, 100%, 52%) 80%,
     transparent 40%
   ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
@@ -215,16 +215,16 @@
   --code-value: rgb(124, 80, 237) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: oklch(71.5% 0.0105 281) !important;
-  --collapse-icon-color-collapsed: rgb(10, 124, 255) !important;
-  --color-accent: rgb(10, 124, 255) !important;
+  --collapse-icon-color-collapsed: hsl(212, 100%, 52%) !important;
+  --color-accent: hsl(212, 100%, 52%) !important;
   --color-accent-1: color-mix(
     in oklab,
-    rgb(10, 124, 255),
+    hsl(212, 100%, 52%),
     white 7.5%
   ) !important;
   --color-accent-2: color-mix(
     in oklch,
-    rgb(10, 124, 255) 80%,
+    hsl(212, 100%, 52%) 80%,
     transparent 40%
   ) !important;
   --color-accent-hsl: 212, 100%, 52% !important;
@@ -266,7 +266,7 @@
   --divider-color: oklch(0% 0 0 / 0.0625) !important;
   --divider-color-hover: color-mix(
     in oklch,
-    rgb(10, 124, 255) 50%,
+    hsl(212, 100%, 52%) 50%,
     transparent 75%
   ) !important;
   --divider-vertical-height: 100% !important;
@@ -449,7 +449,7 @@
   --hr-color: oklch(0% 0 0 / 0.092) !important;
   --hr-thickness: 2px !important;
   --icon-color: oklch(55.75% 0.0105 281) !important;
-  --icon-color-active: rgb(10, 124, 255) !important;
+  --icon-color-active: hsl(212, 100%, 52%) !important;
   --icon-color-focused: oklch(30% 0.0005 281) !important;
   --icon-color-hover: oklch(30% 0.0005 281) !important;
   --icon-l: 18px !important;
@@ -502,12 +502,12 @@
   --inset-start: left !important;
   --interactive-accent: color-mix(
     in oklab,
-    rgb(10, 124, 255),
+    hsl(212, 100%, 52%),
     white 7.5%
   ) !important;
   --interactive-accent-hover: color-mix(
     in oklch,
-    rgb(10, 124, 255) 80%,
+    hsl(212, 100%, 52%) 80%,
     transparent 40%
   ) !important;
   --interactive-accent-hsl: 212, 100%, 52% !important;
@@ -526,28 +526,28 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(10, 124, 255) !important;
+  --link-color: hsl(212, 100%, 52%) !important;
   --link-color-hover: color-mix(
     in oklch,
-    rgb(10, 124, 255) 80%,
+    hsl(212, 100%, 52%) 80%,
     transparent 40%
   ) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(10, 124, 255) !important;
+  --link-external-color: hsl(212, 100%, 52%) !important;
   --link-external-color-hover: color-mix(
     in oklch,
-    rgb(10, 124, 255) 80%,
+    hsl(212, 100%, 52%) 80%,
     transparent 40%
   ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(
-    from color-mix(in oklab, rgb(10, 124, 255), white 7.5%) l c h / 0.7
+    from color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) l c h / 0.7
   ) !important;
-  --link-unresolved-decoration-color: rgba(10, 124, 255, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(212, 100%, 52%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
@@ -561,7 +561,7 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: oklch(71.5% 0.0105 281) !important;
-  --list-marker-color-collapsed: rgb(10, 124, 255) !important;
+  --list-marker-color-collapsed: hsl(212, 100%, 52%) !important;
   --list-marker-color-hover: oklch(46.5% 0.0105 281) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.125em !important;
@@ -633,7 +633,7 @@
   --metadata-property-background-active: oklch(0% 0 0 / 0.0625) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2.5px
-    color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
+    color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(0% 0 0 / 0.0625) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
@@ -670,12 +670,12 @@
   --nav-indentation-guide-width: 0 !important;
   --nav-item-background-active: oklch(0% 0 0 / 0.0625) !important;
   --nav-item-background-hover: oklch(0% 0 0 / 0.0625) !important;
-  --nav-item-background-selected: rgba(10, 124, 255, 0.15) !important;
+  --nav-item-background-selected: hsla(212, 100%, 52%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(46.5% 0.0105 281) !important;
   --nav-item-color-active: oklch(30% 0.0005 281) !important;
-  --nav-item-color-highlighted: rgb(10, 124, 255) !important;
+  --nav-item-color-highlighted: hsl(212, 100%, 52%) !important;
   --nav-item-color-hover: oklch(30% 0.0005 281) !important;
   --nav-item-color-selected: oklch(30% 0.0005 281) !important;
   --nav-item-margin-bottom: 2px !important;
@@ -878,13 +878,13 @@
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 20px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(10, 124, 255) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(212, 100%, 52%) !important;
   --tab-text-color: oklch(55.75% 0.0105 281) !important;
   --tab-text-color-active: oklch(24% 0.0005 281) !important;
   --tab-text-color-focused: oklch(55.75% 0.0105 281) !important;
   --tab-text-color-focused-active: oklch(24% 0.0005 281) !important;
   --tab-text-color-focused-active-current: oklch(24% 0.0005 281) !important;
-  --tab-text-color-focused-highlighted: rgb(10, 124, 255) !important;
+  --tab-text-color-focused-highlighted: hsl(212, 100%, 52%) !important;
   --tab-width: 240px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: oklch(0% 0 0 / 0.0625) !important;
@@ -901,7 +901,7 @@
   --table-drag-handle-background: transparent !important;
   --table-drag-handle-background-active: color-mix(
     in oklab,
-    rgb(10, 124, 255),
+    hsl(212, 100%, 52%),
     white 7.5%
   ) !important;
   --table-drag-handle-color: oklch(71.5% 0.0105 281) !important;
@@ -918,24 +918,24 @@
   --table-row-alt-background-hover: oklch(20% 0 0 / 0.0275) !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(10, 124, 255, 0.1) !important;
+  --table-selection: hsla(212, 100%, 52%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: color-mix(
     in oklab,
-    rgb(10, 124, 255),
+    hsl(212, 100%, 52%),
     white 7.5%
   ) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.90625em !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(10, 124, 255, 0.1) !important;
-  --tag-background-hover: rgba(10, 124, 255, 0.2) !important;
-  --tag-border-color: rgba(10, 124, 255, 0.15) !important;
-  --tag-border-color-hover: rgba(10, 124, 255, 0.15) !important;
+  --tag-background: hsla(212, 100%, 52%, 0.1) !important;
+  --tag-background-hover: hsla(212, 100%, 52%, 0.2) !important;
+  --tag-border-color: hsla(212, 100%, 52%, 0.15) !important;
+  --tag-border-color-hover: hsla(212, 100%, 52%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: rgb(10, 124, 255) !important;
-  --tag-color-hover: rgb(10, 124, 255) !important;
+  --tag-color: hsl(212, 100%, 52%) !important;
+  --tag-color-hover: hsl(212, 100%, 52%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -943,10 +943,10 @@
   --tag-padding-y: 0.3125em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.8em !important;
-  --text-accent: rgb(10, 124, 255) !important;
+  --text-accent: hsl(212, 100%, 52%) !important;
   --text-accent-hover: color-mix(
     in oklch,
-    rgb(10, 124, 255) 80%,
+    hsl(212, 100%, 52%) 80%,
     transparent 40%
   ) !important;
   --text-error: rgb(233, 49, 58) !important;
@@ -957,7 +957,7 @@
   --text-normal: oklch(30% 0.0005 281) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: oklab(from rgb(10, 124, 255) l a b / 0.15) !important;
+  --text-selection: oklab(from hsl(212, 100%, 52%) l a b / 0.15) !important;
   --text-success: rgb(0, 187, 93) !important;
   --text-warning: rgb(241, 110, 53) !important;
   --titlebar-background: transparent !important;
@@ -1029,7 +1029,7 @@
   --pill-weight: 490 !important;
   --color-accent-3: color-mix(
     in oklch,
-    rgb(10, 124, 255) 50%,
+    hsl(212, 100%, 52%) 50%,
     transparent 75%
   ) !important;
   --radius-xs: 6px !important;
@@ -1046,6 +1046,7 @@
     oklch(96.2% 0.0025 281) 70%,
     oklch(92% 0.0025 281)
   ) !important;
+  --math-color: oklch(24% 0.0005 281) !important;
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1) !important;
@@ -1098,7 +1099,7 @@
   --code-special: rgb(233, 49, 58) !important;
   --color-accent-4: color-mix(
     in oklch,
-    oklab(from rgb(10, 124, 255) l a b / 0.15) 40%,
+    oklab(from hsl(212, 100%, 52%) l a b / 0.15) 40%,
     transparent 60%
   ) !important;
   --color-highlight-rgb: 229, 169, 37 !important;
@@ -1140,13 +1141,12 @@
   --icon-stroke-thick: 2.25px !important;
   --link-color-sidebar: color-mix(
     in oklab,
-    rgb(10, 124, 255),
+    hsl(212, 100%, 52%),
     white 7.5%
   ) !important;
   --link-unresolved-lch: 0.7 !important;
   --list-bullet-color: oklch(55.75% 0.0105 281) !important;
   --list-dash-color: oklch(0% 0 0 / 0.25) !important;
-  --math-color: oklch(24% 0.0005 281) !important;
   --mobile-nav-fade-bg: linear-gradient(
     oklch(96.2% 0.0025 281),
     transparent 78px
@@ -1182,7 +1182,7 @@
   --shadow-faint: 0px 0 12px 0px oklch(05% 0 0 / 0.055) !important;
   --shadow-input: 0 0 0 0.5px oklch(0% 0 0 / 0.1125) !important;
   --shadow-input-active: 0 0 0 2.5px
-    color-mix(in oklch, rgb(10, 124, 255) 50%, transparent 75%) !important;
+    color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --shadow-muted: 0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
   --shadow-normal:
     0px 0px 5px 0px oklch(20% 0 0 / 0.0275),
@@ -1265,7 +1265,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(27, 126, 238, 0.1) !important;
+  --background-modifier-active-hover: hsla(212, 86%, 52%, 0.1) !important;
   --background-modifier-border: oklch(100% 0.05 281 / 0.0625) !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: oklch(36.25% 0.00375 281) !important;
@@ -1324,12 +1324,12 @@
     oklch(23.5% 0.00125 281),
     oklch(27.5% 0.00375 281)
   ) !important;
-  --bases-table-cell-background-selected: rgba(27, 126, 238, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(212, 86%, 52%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2.5px
-    color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(27, 126, 238) !important;
+    color-mix(in oklab, hsl(212, 86%, 52%) 50%, transparent 75%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(212, 86%, 52%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -1424,11 +1424,11 @@
   --caret-color: oklch(85% 0.00375 281) !important;
   --checkbox-border-color: oklch(43.75% 0.0075 281) !important;
   --checkbox-border-color-hover: oklch(71.25% 0.00375 281) !important;
-  --checkbox-color: rgb(27, 126, 238) !important;
+  --checkbox-color: hsl(212, 86%, 52%) !important;
   --checkbox-color-hover: color-mix(
     in oklab,
-    rgb(27, 126, 238) 62.5%,
-    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%)
+    hsl(212, 86%, 52%) 62.5%,
+    color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%)
   ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: white !important;
@@ -1458,18 +1458,18 @@
   --collapse-icon-color: oklch(52.5% 0.0075 281) !important;
   --collapse-icon-color-collapsed: color-mix(
     in oklab,
-    rgb(27, 126, 238) 64%,
+    hsl(212, 86%, 52%) 64%,
     #fff 36%
   ) !important;
-  --color-accent: rgb(27, 126, 238) !important;
+  --color-accent: hsl(212, 86%, 52%) !important;
   --color-accent-1: color-mix(
     in oklab,
-    rgb(27, 126, 238) 64%,
+    hsl(212, 86%, 52%) 64%,
     #fff 36%
   ) !important;
   --color-accent-2: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
+    color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%),
     transparent 8%
   ) !important;
   --color-accent-hsl: 212, 86%, 52% !important;
@@ -1511,7 +1511,7 @@
   --divider-color: oklch(100% 0.05 281 / 0.0625) !important;
   --divider-color-hover: color-mix(
     in oklab,
-    rgb(27, 126, 238) 50%,
+    hsl(212, 86%, 52%) 50%,
     transparent 75%
   ) !important;
   --divider-vertical-height: 100% !important;
@@ -1696,7 +1696,7 @@
   --icon-color: oklch(63.75% 0.0075 281) !important;
   --icon-color-active: color-mix(
     in oklab,
-    rgb(27, 126, 238) 64%,
+    hsl(212, 86%, 52%) 64%,
     #fff 36%
   ) !important;
   --icon-color-focused: oklch(85% 0.00375 281) !important;
@@ -1749,11 +1749,11 @@
   --input-shadow-hover: none !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(27, 126, 238) !important;
+  --interactive-accent: hsl(212, 86%, 52%) !important;
   --interactive-accent-hover: color-mix(
     in oklab,
-    rgb(27, 126, 238) 62.5%,
-    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%)
+    hsl(212, 86%, 52%) 62.5%,
+    color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%)
   ) !important;
   --interactive-accent-hsl: 212, 86%, 52% !important;
   --interactive-hover: oklch(36.25% 0.00375 281) !important;
@@ -1771,10 +1771,14 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
+  --link-color: color-mix(
+    in oklab,
+    hsl(212, 86%, 52%) 64%,
+    #fff 36%
+  ) !important;
   --link-color-hover: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
+    color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%),
     transparent 8%
   ) !important;
   --link-decoration: none !important;
@@ -1782,21 +1786,21 @@
   --link-decoration-thickness: auto !important;
   --link-external-color: color-mix(
     in oklab,
-    rgb(27, 126, 238) 64%,
+    hsl(212, 86%, 52%) 64%,
     #fff 36%
   ) !important;
   --link-external-color-hover: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
+    color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%),
     transparent 8%
   ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(
-    from color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) l c h / 0.75
+    from color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) l c h / 0.75
   ) !important;
-  --link-unresolved-decoration-color: rgba(27, 126, 238, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(212, 86%, 52%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
@@ -1812,7 +1816,7 @@
   --list-marker-color: oklch(52.5% 0.0075 281) !important;
   --list-marker-color-collapsed: color-mix(
     in oklab,
-    rgb(27, 126, 238) 64%,
+    hsl(212, 86%, 52%) 64%,
     #fff 36%
   ) !important;
   --list-marker-color-hover: oklch(71.25% 0.00375 281) !important;
@@ -1882,7 +1886,7 @@
   --metadata-property-background-active: oklch(100% 0.05 281 / 0.05) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2.5px
-    color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
+    color-mix(in oklab, hsl(212, 86%, 52%) 50%, transparent 75%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(100% 0.05 281 / 0.05) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
@@ -1919,14 +1923,14 @@
   --nav-indentation-guide-width: 0 !important;
   --nav-item-background-active: oklch(100% 0.05 281 / 0.05) !important;
   --nav-item-background-hover: oklch(100% 0.05 281 / 0.05) !important;
-  --nav-item-background-selected: rgba(27, 126, 238, 0.15) !important;
+  --nav-item-background-selected: hsla(212, 86%, 52%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(71.25% 0.00375 281) !important;
   --nav-item-color-active: oklch(85% 0.00375 281) !important;
   --nav-item-color-highlighted: color-mix(
     in oklab,
-    rgb(27, 126, 238) 64%,
+    hsl(212, 86%, 52%) 64%,
     #fff 36%
   ) !important;
   --nav-item-color-hover: oklch(85% 0.00375 281) !important;
@@ -2127,7 +2131,7 @@
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 20px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(27, 126, 238) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(212, 86%, 52%) !important;
   --tab-text-color: oklch(63.75% 0.0075 281) !important;
   --tab-text-color-active: oklch(93.25% 0 281) !important;
   --tab-text-color-focused: oklch(63.75% 0.0075 281) !important;
@@ -2135,7 +2139,7 @@
   --tab-text-color-focused-active-current: oklch(93.25% 0 281) !important;
   --tab-text-color-focused-highlighted: color-mix(
     in oklab,
-    rgb(27, 126, 238) 64%,
+    hsl(212, 86%, 52%) 64%,
     #fff 36%
   ) !important;
   --tab-width: 240px !important;
@@ -2152,7 +2156,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(27, 126, 238) !important;
+  --table-drag-handle-background-active: hsl(212, 86%, 52%) !important;
   --table-drag-handle-color: oklch(52.5% 0.0075 281) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -2167,22 +2171,22 @@
   --table-row-alt-background-hover: oklch(100% 0.075 281 / 0.015) !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(27, 126, 238, 0.1) !important;
+  --table-selection: hsla(212, 86%, 52%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(27, 126, 238) !important;
+  --table-selection-border-color: hsl(212, 86%, 52%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.90625em !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(27, 126, 238, 0.1) !important;
-  --tag-background-hover: rgba(27, 126, 238, 0.2) !important;
-  --tag-border-color: oklch(from rgb(27, 126, 238) l c h / 0.025) !important;
-  --tag-border-color-hover: rgba(27, 126, 238, 0.15) !important;
+  --tag-background: hsla(212, 86%, 52%, 0.1) !important;
+  --tag-background-hover: hsla(212, 86%, 52%, 0.2) !important;
+  --tag-border-color: oklch(from hsl(212, 86%, 52%) l c h / 0.025) !important;
+  --tag-border-color-hover: hsla(212, 86%, 52%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%) !important;
+  --tag-color: color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%) !important;
   --tag-color-hover: color-mix(
     in oklab,
-    rgb(27, 126, 238) 64%,
+    hsl(212, 86%, 52%) 64%,
     #fff 36%
   ) !important;
   --tag-corner-shape: round !important;
@@ -2194,12 +2198,12 @@
   --tag-size: 0.8em !important;
   --text-accent: color-mix(
     in oklab,
-    rgb(27, 126, 238) 64%,
+    hsl(212, 86%, 52%) 64%,
     #fff 36%
   ) !important;
   --text-accent-hover: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
+    color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%),
     transparent 8%
   ) !important;
   --text-error: rgb(255, 76, 82) !important;
@@ -2212,7 +2216,7 @@
   --text-normal: oklch(85% 0.00375 281) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: oklab(from rgb(27, 126, 238) l a b / 0.25) !important;
+  --text-selection: oklab(from hsl(212, 86%, 52%) l a b / 0.25) !important;
   --text-success: rgb(24, 209, 125) !important;
   --text-warning: rgb(241, 144, 80) !important;
   --titlebar-background: transparent !important;
@@ -2277,7 +2281,7 @@
   --pill-weight: 490 !important;
   --color-accent-3: color-mix(
     in oklab,
-    rgb(27, 126, 238) 50%,
+    hsl(212, 86%, 52%) 50%,
     transparent 75%
   ) !important;
   --radius-xs: 6px !important;
@@ -2294,6 +2298,7 @@
     oklch(26.25% 0.00375 281) 70%,
     oklch(27.5% 0.00375 281)
   ) !important;
+  --math-color: oklch(93.25% 0 281) !important;
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1) !important;
@@ -2349,7 +2354,7 @@
   --code-special: rgb(255, 76, 82) !important;
   --color-accent-4: color-mix(
     in oklab,
-    oklab(from rgb(27, 126, 238) l a b / 0.25) 30%,
+    oklab(from hsl(212, 86%, 52%) l a b / 0.25) 30%,
     transparent 70%
   ) !important;
   --color-highlight-rgb: 248, 201, 111 !important;
@@ -2386,9 +2391,9 @@
     inset 0 8px 16px rgba(255, 255, 255, 0.015) !important;
   --glass-button:
     inset 3px 3px 1.5px -1.25px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75),
     inset -3px -3px 1.5px -1.25px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5) !important;
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5) !important;
   --glass-button-error:
     inset 3.25px 3.25px 1.25px -1.25px
       oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.75),
@@ -2396,9 +2401,9 @@
       oklab(from rgb(255, 76, 82) calc(l + 0.075) a b / 0.5) !important;
   --glass-button-l:
     inset 3.75px 3.75px 1.5px -1.25px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75),
     inset -3.75px -3.75px 1.5px -1.25px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5) !important;
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5) !important;
   --h1-size-alt: 1.625em !important;
   --h1-weight-alt: 570 !important;
   --highlight-blue-rgb: 71, 154, 255 !important;
@@ -2411,10 +2416,10 @@
   --highlight-yellow-rgb: 248, 201, 111 !important;
   --hotkey-gradient: linear-gradient(
     to top,
-    rgb(27, 126, 238) -10%,
+    hsl(212, 86%, 52%) -10%,
     color-mix(
         in oklab,
-        oklab(from rgb(27, 126, 238) l a b / 0.25) 30%,
+        oklab(from hsl(212, 86%, 52%) l a b / 0.25) 30%,
         transparent 70%
       )
       210%
@@ -2422,13 +2427,12 @@
   --icon-stroke-thick: 2.25px !important;
   --link-color-sidebar: color-mix(
     in oklab,
-    color-mix(in oklab, rgb(27, 126, 238) 64%, #fff 36%),
+    color-mix(in oklab, hsl(212, 86%, 52%) 64%, #fff 36%),
     transparent 8%
   ) !important;
   --link-unresolved-lch: 0.75 !important;
   --list-bullet-color: oklch(77.5% 0.00375 281) !important;
   --list-dash-color: oklch(100% 0.02 281 / 0.35) !important;
-  --math-color: oklch(93.25% 0 281) !important;
   --mobile-nav-fade-bg: linear-gradient(
     oklch(from oklch(27.5% 0.00375 281) l c h),
     transparent 78px
@@ -2456,9 +2460,9 @@
   ) !important;
   --shadow-button:
     inset 3px 3px 1.5px -1.25px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75),
     inset -3px -3px 1.5px -1.25px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5),
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5),
     0px 3px 15px 0px oklch(from oklch(23.5% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-button-error:
     inset 3.25px 3.25px 1.25px -1.25px
@@ -2474,7 +2478,7 @@
     oklch(from oklch(23.5% 0.00125 281) l 0.00375 h / 0.75) !important;
   --shadow-input: 0 0 0 0.5px oklch(100% 0.04 281 / 0.125) !important;
   --shadow-input-active: 0 0 0 2.5px
-    color-mix(in oklab, rgb(27, 126, 238) 50%, transparent 75%) !important;
+    color-mix(in oklab, hsl(212, 86%, 52%) 50%, transparent 75%) !important;
   --shadow-muted: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-normal: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-setting-items: 0 4px 12px 0
@@ -2487,9 +2491,9 @@
   --shadow-strong: 0px 0px 24px 0px oklch(0 0 0 / 0.375) !important;
   --shadow-suggestion-item:
     inset 3.75px 3.75px 1.5px -1.25px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75),
     inset -3.75px -3.75px 1.5px -1.25px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5),
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5),
     0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-tab:
     inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263),
@@ -2497,9 +2501,9 @@
     inset 0 8px 16px rgba(255, 255, 255, 0.025) !important;
   --shadow-toggle:
     inset 1.5px 1.5px 1.5px 0px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.75),
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.75),
     inset -1.5px -1.5px 1.5px 0px
-      oklab(from rgb(27, 126, 238) calc(l + 0.075) a b / 0.5) !important;
+      oklab(from hsl(212, 86%, 52%) calc(l + 0.075) a b / 0.5) !important;
   --shadow-workspace:
     0 0 0 0.5px oklch(100% 0.075 281 / 0.1),
     0 0 20px oklch(from oklch(23.5% 0.00125 281) l 0.00375 h / 0.75) !important;
@@ -2525,10 +2529,10 @@
   ) !important;
   --toggle-gradient: linear-gradient(
     to bottom,
-    rgb(27, 126, 238) -30%,
+    hsl(212, 86%, 52%) -30%,
     color-mix(
         in oklab,
-        oklab(from rgb(27, 126, 238) l a b / 0.25) 30%,
+        oklab(from hsl(212, 86%, 52%) l a b / 0.25) 30%,
         transparent 70%
       )
       180%
@@ -4227,7 +4231,7 @@ body {
 
   .callout .callout-title {
     gap: 4px;
-    border: 0px light-dark(rgb(31, 132, 255), rgb(71, 154, 255));
+    border: 0px light-dark(rgb(9, 186, 221), rgb(85, 211, 244));
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4240,12 +4244,12 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    font-weight: 620;
+    font-weight: 520;
   }
 
   .callout > .callout-content {
     background-color: rgba(0, 0, 0, 0);
-    padding: 0px 0px 0px 28px;
+    padding: 0px;
   }
 
   .callout[data-callout="note"] {
@@ -5243,21 +5247,9 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(oklch(0.465 0.0105 281), oklch(0.7125 0.00375 281));
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
     font-family:
-      Raveo,
-      Raveo,
-      Inter,
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -5271,8 +5263,8 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 420;
-    text-decoration: oklch(0.7125 0.00375 281);
+    font-weight: 400;
+    text-decoration: rgb(179, 179, 179);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -6192,6 +6184,34 @@ body {
     }
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
+    }
+
+    &[data-callout="math-cyan"] {
+      --color: rgb(var(--callout-math-cyan)) !important;
+    }
+    &[data-callout="math-gray"] {
+      --color: rgb(var(--callout-math-gray)) !important;
+    }
+    &[data-callout="math-green"] {
+      --color: rgb(var(--callout-math-green)) !important;
+    }
+    &[data-callout="math-grey"] {
+      --color: rgb(var(--callout-math-grey)) !important;
+    }
+    &[data-callout="math-orange"] {
+      --color: rgb(var(--callout-math-orange)) !important;
+    }
+    &[data-callout="math-pink"] {
+      --color: rgb(var(--callout-math-pink)) !important;
+    }
+    &[data-callout="math-purple"] {
+      --color: rgb(var(--callout-math-purple)) !important;
+    }
+    &[data-callout="math-red"] {
+      --color: rgb(var(--callout-math-red)) !important;
+    }
+    &[data-callout="math-yellow"] {
+      --color: rgb(var(--callout-math-yellow)) !important;
     }
   }
 }

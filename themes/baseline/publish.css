@@ -1053,11 +1053,11 @@ body.theme-light {
   --h6-font: "??", "Instrument Serif" !important;
   --inline-title-font: "??", "Instrument Serif" !important;
   --line-width: 700px !important;
-  --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
-  --anim-speed-modifier: 1 !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
+  --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
+  --anim-speed-modifier: 1 !important;
   --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
@@ -2002,11 +2002,11 @@ body.theme-dark {
   --h6-font: "??", "Instrument Serif" !important;
   --inline-title-font: "??", "Instrument Serif" !important;
   --line-width: 700px !important;
-  --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
-  --anim-speed-modifier: 1 !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
+  --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
+  --anim-speed-modifier: 1 !important;
   --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
@@ -3658,7 +3658,6 @@ body .nav-view-outer .tree-item-self a {
   color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
-    Inter,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -4093,6 +4092,20 @@ body
   > .callout-icon
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
+}
+body
+  .callout[data-callout="banner-icon"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-banner-icon));
+}
+body
+  .callout[data-callout="note-toolbar"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-note-toolbar));
 }
 body pre > code,
 body .markdown-rendered pre > code {

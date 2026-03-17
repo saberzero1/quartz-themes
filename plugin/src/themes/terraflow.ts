@@ -12,7 +12,7 @@ export const theme: ThemeData = {
   --accent-h: 15 !important;
   --accent-l: 60% !important;
   --accent-s: 65% !important;
-  --background-modifier-active-hover: rgba(219, 120, 87, 0.1) !important;
+  --background-modifier-active-hover: hsla(15, 65%, 60%, 0.1) !important;
   --background-primary: #282520 !important;
   --background-primary-rgb: 40, 37, 32 !important;
   --background-secondary: #32302a !important;
@@ -21,7 +21,7 @@ export const theme: ThemeData = {
   --bases-cards-background: #282520 !important;
   --bases-group-heading-property-color: rgba(232, 220, 198, 0.7) !important;
   --bases-table-cell-background-active: #282520 !important;
-  --bases-table-cell-background-selected: rgba(219, 120, 87, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(15, 65%, 60%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #f0916f !important;
   --bases-table-header-background: #282520 !important;
   --bases-table-header-color: rgba(232, 220, 198, 0.7) !important;
@@ -70,9 +70,9 @@ export const theme: ThemeData = {
   --code-tag: #e08ba8 !important;
   --code-value: #95b3aa !important;
   --collapse-icon-color-collapsed: #e27a5a !important;
-  --color-accent: rgb(219, 120, 87) !important;
-  --color-accent-1: rgb(228, 145, 124) !important;
-  --color-accent-2: rgb(236, 170, 156) !important;
+  --color-accent: hsl(15, 65%, 60%) !important;
+  --color-accent-1: hsl(12, 66.3%, 69%) !important;
+  --color-accent-2: hsl(10, 68.25%, 77.4%) !important;
   --color-accent-hsl: 15, 65%, 60% !important;
   --dark: #e8dcc6 !important;
   --darkgray: #e8dcc6 !important;
@@ -141,7 +141,7 @@ export const theme: ThemeData = {
   --height-button: 34px !important;
   --height-button-sm: 32px !important;
   --height-input: 38px !important;
-  --highlight: rgba(219, 120, 87, 0.1) !important;
+  --highlight: hsla(15, 65%, 60%, 0.1) !important;
   --highlight-bg: #3a2f20 !important;
   --highlight-bg-dark: #5a4430 !important;
   --highlight-bg-dark-color: #5a4430 !important;
@@ -161,13 +161,13 @@ export const theme: ThemeData = {
   --link-color: #f0916f !important;
   --link-color-hover: #e27a5a !important;
   --link-external-color: #e27a5a !important;
-  --link-external-color-hover: rgb(236, 170, 156) !important;
+  --link-external-color-hover: hsl(10, 68.25%, 77.4%) !important;
   --link-opacity-hover: .18 !important;
   --link-opacity-normal: .1 !important;
   --link-opacity-unresolved: .05 !important;
   --link-opacity-unresolved-hover: .12 !important;
   --link-unresolved-color: #f0916f !important;
-  --link-unresolved-decoration-color: rgba(219, 120, 87, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(15, 65%, 60%, 0.3) !important;
   --list-indent: 2.25em !important;
   --list-marker-color-collapsed: #e27a5a !important;
   --list-marker-color-hover: rgba(232, 220, 198, 0.7) !important;
@@ -180,7 +180,7 @@ export const theme: ThemeData = {
   --nav-heading-color: #e8dcc6 !important;
   --nav-heading-color-collapsed-hover: rgba(232, 220, 198, 0.7) !important;
   --nav-heading-color-hover: #e8dcc6 !important;
-  --nav-item-background-selected: rgba(219, 120, 87, 0.15) !important;
+  --nav-item-background-selected: hsla(15, 65%, 60%, 0.15) !important;
   --nav-item-color: rgba(232, 220, 198, 0.7) !important;
   --nav-item-color-active: #e8dcc6 !important;
   --nav-item-color-highlighted: #e27a5a !important;
@@ -253,7 +253,7 @@ export const theme: ThemeData = {
   --tab-outline-color: #4a473e88 !important;
   --tab-switcher-background: #32302a !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #32302a, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(219, 120, 87) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(15, 65%, 60%) !important;
   --tab-text-color-active: rgba(232, 220, 198, 0.7) !important;
   --tab-text-color-focused: rgba(232, 220, 198, 0.7) !important;
   --tab-text-color-focused-active: rgba(232, 220, 198, 0.7) !important;
@@ -262,22 +262,22 @@ export const theme: ThemeData = {
   --table-drag-handle-background-active: #f0916f !important;
   --table-header-color: #e8dcc6 !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(219, 120, 87, 0.1) !important;
+  --table-selection: hsla(15, 65%, 60%, 0.1) !important;
   --table-selection-border-color: #f0916f !important;
-  --tag-background: rgba(219, 120, 87, 0.1) !important;
-  --tag-background-hover: rgba(219, 120, 87, 0.2) !important;
-  --tag-border-color: rgba(219, 120, 87, 0.15) !important;
-  --tag-border-color-hover: rgba(219, 120, 87, 0.15) !important;
+  --tag-background: hsla(15, 65%, 60%, 0.1) !important;
+  --tag-background-hover: hsla(15, 65%, 60%, 0.2) !important;
+  --tag-border-color: hsla(15, 65%, 60%, 0.15) !important;
+  --tag-border-color-hover: hsla(15, 65%, 60%, 0.15) !important;
   --tag-color: #e27a5a !important;
   --tag-color-hover: #e27a5a !important;
-  --tertiary: rgb(236, 170, 156) !important;
+  --tertiary: hsl(10, 68.25%, 77.4%) !important;
   --text-accent: #e27a5a !important;
-  --text-accent-hover: rgb(236, 170, 156) !important;
+  --text-accent-hover: hsl(10, 68.25%, 77.4%) !important;
   --text-muted: rgba(232, 220, 198, 0.7) !important;
   --text-normal: #e8dcc6 !important;
   --text-normal-rgb: 232, 220, 198 !important;
   --text-selection: #4a3d2e !important;
-  --textHighlight: rgba(219, 120, 87, 0.1) !important;
+  --textHighlight: hsla(15, 65%, 60%, 0.1) !important;
   --theme-folder-opacity: .12 !important;
   --titlebar-background: #32302a !important;
   --titlebar-background-focused: #3a3832 !important;
@@ -779,10 +779,10 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(232, 220, 198);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
-  border-bottom-color: color(srgb 0.976505 0.842762 0.774084);
-  border-left-color: color(srgb 0.976505 0.842762 0.774084);
-  border-right-color: color(srgb 0.976505 0.842762 0.774084);
-  border-top-color: color(srgb 0.976505 0.842762 0.774084);
+  border-bottom-color: color(srgb 0.984041 0.906701 0.874783);
+  border-left-color: color(srgb 0.984041 0.906701 0.874783);
+  border-right-color: color(srgb 0.984041 0.906701 0.874783);
+  border-top-color: color(srgb 0.984041 0.906701 0.874783);
   gap: 13.2px;
 }
 
@@ -1166,20 +1166,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(139, 168, 145);
   text-decoration: rgb(139, 168, 145);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgba(232, 220, 198, 0.7);
-  text-decoration: rgba(232, 220, 198, 0.7);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(232, 220, 198);
-  border-left-color: rgb(232, 220, 198);
-  border-right-color: rgb(232, 220, 198);
-  border-top-color: rgb(232, 220, 198);
-  color: rgb(232, 220, 198);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(232, 220, 198, 0.7);
@@ -1390,7 +1376,7 @@ html[saved-theme="dark"] body sup {
   --accent-h: 15 !important;
   --accent-l: 60% !important;
   --accent-s: 65% !important;
-  --background-modifier-active-hover: rgba(219, 120, 87, 0.1) !important;
+  --background-modifier-active-hover: hsla(15, 65%, 60%, 0.1) !important;
   --background-primary: #eeece2 !important;
   --background-primary-rgb: 238, 236, 226 !important;
   --background-secondary: #e6e4da !important;
@@ -1399,7 +1385,7 @@ html[saved-theme="dark"] body sup {
   --bases-cards-background: #eeece2 !important;
   --bases-group-heading-property-color: rgba(61, 46, 26, 0.7) !important;
   --bases-table-cell-background-active: #eeece2 !important;
-  --bases-table-cell-background-selected: rgba(219, 120, 87, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(15, 65%, 60%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #d97756 !important;
   --bases-table-header-background: #eeece2 !important;
   --bases-table-header-color: rgba(61, 46, 26, 0.7) !important;
@@ -1449,9 +1435,9 @@ html[saved-theme="dark"] body sup {
   --code-tag: #c36686 !important;
   --code-value: #779088 !important;
   --collapse-icon-color-collapsed: #ae4e36 !important;
-  --color-accent: rgb(219, 120, 87) !important;
-  --color-accent-1: rgb(225, 134, 107) !important;
-  --color-accent-2: rgb(228, 145, 124) !important;
+  --color-accent: hsl(15, 65%, 60%) !important;
+  --color-accent-1: hsl(14, 65.65%, 64.5%) !important;
+  --color-accent-2: hsl(12, 66.3%, 69%) !important;
   --color-accent-hsl: 15, 65%, 60% !important;
   --dark: #3d2e1a !important;
   --darkgray: #3d2e1a !important;
@@ -1520,7 +1506,7 @@ html[saved-theme="dark"] body sup {
   --height-button: 34px !important;
   --height-button-sm: 32px !important;
   --height-input: 38px !important;
-  --highlight: rgba(219, 120, 87, 0.1) !important;
+  --highlight: hsla(15, 65%, 60%, 0.1) !important;
   --highlight-bg: #d6b07b !important;
   --highlight-bg-dark: #c9a772 !important;
   --highlight-bg-dark-color: #2d1f0e !important;
@@ -1540,13 +1526,13 @@ html[saved-theme="dark"] body sup {
   --link-color: #d97756 !important;
   --link-color-hover: #ae4e36 !important;
   --link-external-color: #ae4e36 !important;
-  --link-external-color-hover: rgb(228, 145, 124) !important;
+  --link-external-color-hover: hsl(12, 66.3%, 69%) !important;
   --link-opacity-hover: .18 !important;
   --link-opacity-normal: .1 !important;
   --link-opacity-unresolved: .05 !important;
   --link-opacity-unresolved-hover: .12 !important;
   --link-unresolved-color: #d97756 !important;
-  --link-unresolved-decoration-color: rgba(219, 120, 87, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(15, 65%, 60%, 0.3) !important;
   --list-indent: 2.25em !important;
   --list-marker-color-collapsed: #ae4e36 !important;
   --list-marker-color-hover: rgba(61, 46, 26, 0.7) !important;
@@ -1559,7 +1545,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color: #3d2e1a !important;
   --nav-heading-color-collapsed-hover: rgba(61, 46, 26, 0.7) !important;
   --nav-heading-color-hover: #3d2e1a !important;
-  --nav-item-background-selected: rgba(219, 120, 87, 0.15) !important;
+  --nav-item-background-selected: hsla(15, 65%, 60%, 0.15) !important;
   --nav-item-color: rgba(61, 46, 26, 0.7) !important;
   --nav-item-color-active: #3d2e1a !important;
   --nav-item-color-highlighted: #ae4e36 !important;
@@ -1633,7 +1619,7 @@ html[saved-theme="dark"] body sup {
   --tab-outline-color: #d2cfc588 !important;
   --tab-switcher-background: #e6e4da !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #e6e4da, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(219, 120, 87) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(15, 65%, 60%) !important;
   --tab-text-color-active: rgba(61, 46, 26, 0.7) !important;
   --tab-text-color-focused: rgba(61, 46, 26, 0.7) !important;
   --tab-text-color-focused-active: rgba(61, 46, 26, 0.7) !important;
@@ -1642,22 +1628,22 @@ html[saved-theme="dark"] body sup {
   --table-drag-handle-background-active: #d97756 !important;
   --table-header-color: #3d2e1a !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(219, 120, 87, 0.1) !important;
+  --table-selection: hsla(15, 65%, 60%, 0.1) !important;
   --table-selection-border-color: #d97756 !important;
-  --tag-background: rgba(219, 120, 87, 0.1) !important;
-  --tag-background-hover: rgba(219, 120, 87, 0.2) !important;
-  --tag-border-color: rgba(219, 120, 87, 0.15) !important;
-  --tag-border-color-hover: rgba(219, 120, 87, 0.15) !important;
+  --tag-background: hsla(15, 65%, 60%, 0.1) !important;
+  --tag-background-hover: hsla(15, 65%, 60%, 0.2) !important;
+  --tag-border-color: hsla(15, 65%, 60%, 0.15) !important;
+  --tag-border-color-hover: hsla(15, 65%, 60%, 0.15) !important;
   --tag-color: #ae4e36 !important;
   --tag-color-hover: #ae4e36 !important;
-  --tertiary: rgb(228, 145, 124) !important;
+  --tertiary: hsl(12, 66.3%, 69%) !important;
   --text-accent: #ae4e36 !important;
-  --text-accent-hover: rgb(228, 145, 124) !important;
+  --text-accent-hover: hsl(12, 66.3%, 69%) !important;
   --text-muted: rgba(61, 46, 26, 0.7) !important;
   --text-normal: #3d2e1a !important;
   --text-normal-rgb: 61, 46, 26 !important;
   --text-selection: #f0e0d0 !important;
-  --textHighlight: rgba(219, 120, 87, 0.1) !important;
+  --textHighlight: hsla(15, 65%, 60%, 0.1) !important;
   --theme-folder-opacity: .12 !important;
   --titlebar-background: #e6e4da !important;
   --titlebar-background-focused: #dfdbd1 !important;
@@ -2159,10 +2145,10 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(61, 46, 26);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
-  border-bottom-color: color(srgb 0.679074 0.285291 0.152691);
-  border-left-color: color(srgb 0.679074 0.285291 0.152691);
-  border-right-color: color(srgb 0.679074 0.285291 0.152691);
-  border-top-color: color(srgb 0.679074 0.285291 0.152691);
+  border-bottom-color: color(srgb 0.455686 0.340392 0.225098);
+  border-left-color: color(srgb 0.455686 0.340392 0.225098);
+  border-right-color: color(srgb 0.455686 0.340392 0.225098);
+  border-top-color: color(srgb 0.455686 0.340392 0.225098);
   gap: 13.2px;
 }
 
@@ -2546,20 +2532,6 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(184, 105, 44);
   text-decoration: rgb(184, 105, 44);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgba(61, 46, 26, 0.7);
-  text-decoration: rgba(61, 46, 26, 0.7);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(61, 46, 26);
-  border-left-color: rgb(61, 46, 26);
-  border-right-color: rgb(61, 46, 26);
-  border-top-color: rgb(61, 46, 26);
-  color: rgb(61, 46, 26);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(61, 46, 26, 0.7);

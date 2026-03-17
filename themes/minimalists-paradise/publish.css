@@ -72,7 +72,7 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #e0e0e0 !important;
   --background-modifier-border-focus: #bdbdbd !important;
   --background-modifier-border-hover: #d4d4d4 !important;
@@ -123,7 +123,7 @@ body.theme-light {
   --bases-table-border-color: #25252586 !important;
   --bases-table-cell-background-active: #9096a4 !important;
   --bases-table-cell-background-disabled: #9096a4 !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #bdbdbd !important;
@@ -255,9 +255,9 @@ body.theme-light {
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #ababab !important;
   --collapse-icon-color-collapsed: #25252586 !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(153, 115, 247) !important;
-  --color-accent-2: rgb(166, 139, 249) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -413,10 +413,10 @@ body.theme-light {
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #25252586 !important;
-  --graph-node: rgb(138, 92, 245) !important;
+  --graph-node: hsl(258, 88%, 66%) !important;
   --graph-node-attachment: #e0ac00 !important;
   --graph-node-focused: #25252586 !important;
-  --graph-node-tag: rgb(138, 92, 245) !important;
+  --graph-node-tag: hsl(258, 88%, 66%) !important;
   --graph-node-unresolved: #ababab !important;
   --graph-text: #222222 !important;
   --h1-letter-spacing: -0.015em !important;
@@ -534,17 +534,17 @@ body.theme-light {
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
   --link-color: #5f6369 !important;
-  --link-color-hover: rgb(166, 139, 249) !important;
+  --link-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: #5f6369 !important;
-  --link-external-color-hover: rgb(166, 139, 249) !important;
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: #5f6369 !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -557,7 +557,7 @@ body.theme-light {
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
   --list-marker-color-collapsed: #25252586 !important;
   --list-marker-color-hover: #5c5c5c !important;
   --list-numbered-style: decimal !important;
@@ -676,7 +676,7 @@ body.theme-light {
     #9096a4 70%,
     black 30%
   ) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #5c5c5c !important;
@@ -848,7 +848,7 @@ body.theme-light {
   --sync-avatar-color-7: #7852ee !important;
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgb(138, 92, 245) !important;
+  --tab-background-active: hsl(258, 88%, 66%) !important;
   --tab-container-background: #9096a4 !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #d4d4d4 !important;
@@ -875,7 +875,7 @@ body.theme-light {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #ababab !important;
   --tab-text-color-active: #5c5c5c !important;
   --tab-text-color-focused: #5c5c5c !important;
@@ -900,7 +900,7 @@ body.theme-light {
   --table-drag-handle-color: #ababab !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: rgb(138, 92, 245) !important;
+  --table-header-background: hsl(258, 88%, 66%) !important;
   --table-header-border-color: #e0e0e0 !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #222222 !important;
@@ -911,17 +911,17 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: #a5aab680 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(138, 92, 245, 0.1) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: #25252586 !important;
   --tag-color-hover: #25252586 !important;
@@ -933,10 +933,10 @@ body.theme-light {
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
   --text-accent: #25252586 !important;
-  --text-accent-hover: rgb(166, 139, 249) !important;
+  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-error: #e93147 !important;
   --text-faint: #ababab !important;
-  --text-highlight-bg: rgb(138, 92, 245) !important;
+  --text-highlight-bg: hsl(258, 88%, 66%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #5c5c5c !important;
   --text-normal: #222222 !important;
@@ -997,7 +997,7 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     0 0 transparent !important;
-  --inline-title-color: rgb(138, 92, 245) !important;
+  --inline-title-color: hsl(258, 88%, 66%) !important;
   --text-color: #000000 !important;
   --nn-theme-list-bg: #a5aab6 !important;
   --nn-theme-list-header-bg: #a5aab6 !important;
@@ -1014,6 +1014,7 @@ body.theme-light {
   --graph-bg: #a5aab6 !important;
   --blockquote-radius: 16px !important;
   --mobile-sidebar-background: #9096a4 !important;
+  --ic-section-background-color: hsl(258, 88%, 66%) !important;
   --anim-motion: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
   --background-default: #a5aab6 !important;
   --blur-s-alt: blur(4px) saturate(1.5) brightness(0.75) !important;
@@ -1025,11 +1026,11 @@ body.theme-light {
     rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 10px 0px !important;
   --cards-gap: 16px !important;
-  --citation-bg: rgb(138, 92, 245) !important;
+  --citation-bg: hsl(258, 88%, 66%) !important;
   --citation-radius: 8px !important;
   --color-panel: #a5aab6 !important;
   --default-radius: 16px !important;
-  --external-link-text-shadow: 1px 1px 2px rgb(138, 92, 245) !important;
+  --external-link-text-shadow: 1px 1px 2px hsl(258, 88%, 66%) !important;
   --file-title-color: #25252586 !important;
   --ic-border: 0px !important;
   --ic-border-color: #25252586 !important;
@@ -1039,14 +1040,13 @@ body.theme-light {
   --ic-image-border-color: #25252586 !important;
   --ic-image-round-corners: 0px !important;
   --ic-infobox-color: #9096a4 !important;
-  --ic-infobox-title-color: rgb(138, 92, 245) !important;
+  --ic-infobox-title-color: hsl(258, 88%, 66%) !important;
   --ic-inside-padding: 24px !important;
   --ic-label-alignment: left !important;
   --ic-label-padding: 0.5rem !important;
   --ic-label-width: 80px !important;
   --ic-outside-padding: 20px !important;
   --ic-section-alignment: Center !important;
-  --ic-section-background-color: rgb(138, 92, 245) !important;
   --ic-section-border: 0px !important;
   --ic-section-border-color: #252525c3 !important;
   --ic-section-corners: 0px !important;
@@ -1095,7 +1095,7 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(138, 92, 245, 0.1) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #363636 !important;
   --background-modifier-border-focus: #555555 !important;
   --background-modifier-border-hover: #3f3f3f !important;
@@ -1146,11 +1146,11 @@ body.theme-dark {
   --bases-table-border-color: #59595984 !important;
   --bases-table-cell-background-active: #000000 !important;
   --bases-table-cell-background-disabled: #000000 !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #555555 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(138, 92, 245) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -1245,8 +1245,8 @@ body.theme-dark {
   --caret-color: #ffffff !important;
   --checkbox-border-color: #666666 !important;
   --checkbox-border-color-hover: #b3b3b3 !important;
-  --checkbox-color: rgb(138, 92, 245) !important;
-  --checkbox-color-hover: rgb(166, 139, 249) !important;
+  --checkbox-color: hsl(258, 88%, 66%) !important;
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #000000 !important;
   --checkbox-radius: 16px !important;
@@ -1278,9 +1278,9 @@ body.theme-dark {
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #666666 !important;
   --collapse-icon-color-collapsed: #59595984 !important;
-  --color-accent: rgb(138, 92, 245) !important;
-  --color-accent-1: rgb(166, 139, 249) !important;
-  --color-accent-2: rgb(197, 182, 252) !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-accent-hsl: 258, 88%, 66% !important;
   --color-base-00: #1e1e1e !important;
   --color-base-05: #212121 !important;
@@ -1318,7 +1318,7 @@ body.theme-dark {
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #59595984 !important;
-  --divider-color-hover: rgb(138, 92, 245) !important;
+  --divider-color-hover: hsl(258, 88%, 66%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -1338,7 +1338,7 @@ body.theme-dark {
     0 0 0 1px #363636, inset 0 0 0 1px #363636 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(138, 92, 245) !important;
+  --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1436,10 +1436,10 @@ body.theme-dark {
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #59595984 !important;
-  --graph-node: rgb(138, 92, 245) !important;
+  --graph-node: hsl(258, 88%, 66%) !important;
   --graph-node-attachment: #e0de71 !important;
   --graph-node-focused: #59595984 !important;
-  --graph-node-tag: rgb(138, 92, 245) !important;
+  --graph-node-tag: hsl(258, 88%, 66%) !important;
   --graph-node-unresolved: #666666 !important;
   --graph-text: #dadada !important;
   --h1-letter-spacing: -0.015em !important;
@@ -1538,8 +1538,8 @@ body.theme-dark {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(138, 92, 245) !important;
-  --interactive-accent-hover: rgb(166, 139, 249) !important;
+  --interactive-accent: hsl(258, 88%, 66%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-accent-hsl: 258, 88%, 66% !important;
   --interactive-hover: #3f3f3f !important;
   --interactive-normal: #313435a6 !important;
@@ -1557,17 +1557,17 @@ body.theme-dark {
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
   --link-color: #9fa0a4 !important;
-  --link-color-hover: rgb(197, 182, 252) !important;
+  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: #9fa0a4 !important;
-  --link-external-color-hover: rgb(197, 182, 252) !important;
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: #9fa0a4 !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1580,7 +1580,7 @@ body.theme-dark {
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
   --list-marker-color-collapsed: #59595984 !important;
   --list-marker-color-hover: #b3b3b3 !important;
   --list-numbered-style: decimal !important;
@@ -1699,7 +1699,7 @@ body.theme-dark {
     #000000 70%,
     white 30%
   ) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #b3b3b3 !important;
@@ -1863,7 +1863,7 @@ body.theme-dark {
   --sync-avatar-color-7: #a882ff !important;
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgb(138, 92, 245) !important;
+  --tab-background-active: hsl(258, 88%, 66%) !important;
   --tab-container-background: #000000 !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #3f3f3f !important;
@@ -1890,7 +1890,7 @@ body.theme-dark {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(138, 92, 245) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #666666 !important;
   --tab-text-color-active: #b3b3b3 !important;
   --tab-text-color-focused: #b3b3b3 !important;
@@ -1911,11 +1911,11 @@ body.theme-dark {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(138, 92, 245) !important;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
   --table-drag-handle-color: #666666 !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: rgb(138, 92, 245) !important;
+  --table-header-background: hsl(258, 88%, 66%) !important;
   --table-header-border-color: #363636 !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #dadada !important;
@@ -1926,17 +1926,17 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(138, 92, 245) !important;
+  --table-selection-border-color: hsl(258, 88%, 66%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(138, 92, 245, 0.1) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: #59595984 !important;
   --tag-color-hover: #59595984 !important;
@@ -1948,10 +1948,10 @@ body.theme-dark {
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
   --text-accent: #59595984 !important;
-  --text-accent-hover: rgb(197, 182, 252) !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: #fb464c !important;
   --text-faint: #666666 !important;
-  --text-highlight-bg: rgb(138, 92, 245) !important;
+  --text-highlight-bg: hsl(258, 88%, 66%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #b3b3b3 !important;
   --text-normal: #dadada !important;
@@ -2005,7 +2005,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --inline-title-color: rgb(138, 92, 245) !important;
+  --inline-title-color: hsl(258, 88%, 66%) !important;
   --text-color: #ffffff !important;
   --nn-theme-list-bg: #0c0c0c !important;
   --nn-theme-list-header-bg: #0c0c0c !important;
@@ -2023,6 +2023,7 @@ body.theme-dark {
   --graph-bg: #0c0c0c !important;
   --blockquote-radius: 16px !important;
   --mobile-sidebar-background: #000000 !important;
+  --ic-section-background-color: hsl(258, 88%, 66%) !important;
   --anim-motion: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
   --background-default: #0c0c0c !important;
   --blur-s-alt: blur(4px) saturate(1.5) brightness(0.75) !important;
@@ -2032,12 +2033,12 @@ body.theme-dark {
   --card-radius: 16px !important;
   --card-shadow: 0 3px 8px rgba(97, 97, 97, 0.15) !important;
   --cards-gap: 16px !important;
-  --citation-bg: rgb(138, 92, 245) !important;
+  --citation-bg: hsl(258, 88%, 66%) !important;
   --citation-radius: 8px !important;
   --color-panel: #0c0c0c !important;
   --custom-color-accent-dark: #68686e !important;
   --default-radius: 16px !important;
-  --external-link-text-shadow: 1px 1px 2px rgb(138, 92, 245) !important;
+  --external-link-text-shadow: 1px 1px 2px hsl(258, 88%, 66%) !important;
   --file-title-color: #59595984 !important;
   --ic-border: 0px !important;
   --ic-border-color: #59595984 !important;
@@ -2047,14 +2048,13 @@ body.theme-dark {
   --ic-image-border-color: #59595984 !important;
   --ic-image-round-corners: 0px !important;
   --ic-infobox-color: #313435a6 !important;
-  --ic-infobox-title-color: rgb(138, 92, 245) !important;
+  --ic-infobox-title-color: hsl(258, 88%, 66%) !important;
   --ic-inside-padding: 24px !important;
   --ic-label-alignment: left !important;
   --ic-label-padding: 0.5rem !important;
   --ic-label-width: 80px !important;
   --ic-outside-padding: 20px !important;
   --ic-section-alignment: Center !important;
-  --ic-section-background-color: rgb(138, 92, 245) !important;
   --ic-section-border: 0px !important;
   --ic-section-border-color: #595959 !important;
   --ic-section-corners: 0px !important;
@@ -2901,7 +2901,7 @@ body .callout[data-callout="note"] {
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: 4px;
-  border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+  border: 0px rgb(138, 92, 245);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3673,7 +3673,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgba(37, 37, 37, 0.525), rgba(89, 89, 89, 0.518));
+  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -3690,12 +3690,12 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgba(89, 89, 89, 0.518);
+  text-decoration: rgb(179, 179, 179);
 }
 body .nav-view-outer .tree-item-self.mod-active {
   background-color: light-dark(
-    color(srgb 0.395294 0.411765 0.450196),
-    color(srgb 0.3 0.3 0.3)
+    rgba(0, 0, 0, 0.067),
+    rgba(255, 255, 255, 0.067)
   );
   border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 4px;
@@ -4103,6 +4103,34 @@ body
   > .callout-icon
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
+}
+body
+  .callout[data-callout="infobox"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-infobox));
+}
+body
+  .callout[data-callout="infoboxleft"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-infoboxleft));
+}
+body
+  .callout[data-callout="infoboxright"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-infoboxright));
+}
+body
+  .callout[data-callout="tabbed"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-tabbed));
 }
 body pre > code,
 body .markdown-rendered pre > code {

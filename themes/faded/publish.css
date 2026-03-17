@@ -989,7 +989,7 @@ body.theme-dark {
   --text-normal: #dadada !important;
   --text-on-accent: #232830 !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(172, 57, 57, 0.25) !important;
+  --text-selection: hsla(0, 50%, 45%, 0.25) !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
   --titlebar-background: #0c0f11 !important;
@@ -1068,6 +1068,7 @@ body.theme-dark {
   --mcl-card-border-width: 1px !important;
   --mcl-card-gap: 0.2em !important;
   --mcl-card-header-border-width: 1px !important;
+  --font: "Cuprum" !important;
   --amber-100: #fef3c7 !important;
   --amber-200: #fde68a !important;
   --amber-300: #fcd34d !important;
@@ -1295,7 +1296,6 @@ body.theme-dark {
   --emerald-900: #064e3b !important;
   --FA6Regular: "Font Awesome 6 Free Regular" !important;
   --FA6Solid: "Font Awesome 6 Free Solid" !important;
-  --font: "Cuprum" !important;
   --fuchsia-100: #fae8ff !important;
   --fuchsia-200: #f5d0fe !important;
   --fuchsia-300: #f0abfc !important;
@@ -3071,14 +3071,27 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: rgb(186, 186, 186);
+  color: rgb(179, 179, 179);
   cursor: default;
-  font-family: Cuprum;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 400;
-  text-decoration: rgb(186, 186, 186);
+  text-decoration: rgb(179, 179, 179);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: rgba(255, 255, 255, 0.067);
   border: 0px rgb(218, 218, 218);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -3426,6 +3439,20 @@ body
   > .callout-icon
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
+}
+body
+  .callout[data-callout="multi-column"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-multi-column));
+}
+body
+  .callout[data-callout="multi-column-flex-height"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-multi-column-flex-height));
 }
 body pre > code,
 body .markdown-rendered pre > code {

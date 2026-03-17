@@ -3139,7 +3139,7 @@ body .callout[data-callout="note"] {
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: 4px;
-  border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+  border: 0px rgb(0, 136, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3898,7 +3898,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
+  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -3915,11 +3915,14 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: rgb(179, 179, 179);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 127, 255, 0.157);
-  border: 0px light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
+  background-color: light-dark(
+    rgba(0, 0, 0, 0.067),
+    rgba(255, 255, 255, 0.067)
+  );
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3928,7 +3931,7 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
@@ -4325,6 +4328,804 @@ body
   > .callout-icon
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
+}
+body
+  .callout[data-callout="b-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-b-blue));
+}
+body
+  .callout[data-callout="b-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-b-green));
+}
+body
+  .callout[data-callout="b-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-b-orange));
+}
+body
+  .callout[data-callout="b-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-b-pink));
+}
+body
+  .callout[data-callout="b-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-b-purple));
+}
+body
+  .callout[data-callout="b-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-b-red));
+}
+body
+  .callout[data-callout="b-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-b-yellow));
+}
+body
+  .callout[data-callout="book"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-book));
+}
+body
+  .callout[data-callout="clip"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-clip));
+}
+body
+  .callout[data-callout="comment"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-comment));
+}
+body
+  .callout[data-callout="con"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-con));
+}
+body
+  .callout[data-callout="cons"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-cons));
+}
+body
+  .callout[data-callout="fc"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-fc));
+}
+body
+  .callout[data-callout="fc-group"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-fc-group));
+}
+body
+  .callout[data-callout="g-black"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-g-black));
+}
+body
+  .callout[data-callout="g-gray"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-g-gray));
+}
+body
+  .callout[data-callout="g-white"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-g-white));
+}
+body
+  .callout[data-callout="h1-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h1-blue));
+}
+body
+  .callout[data-callout="h1-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h1-green));
+}
+body
+  .callout[data-callout="h1-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h1-orange));
+}
+body
+  .callout[data-callout="h1-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h1-pink));
+}
+body
+  .callout[data-callout="h1-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h1-purple));
+}
+body
+  .callout[data-callout="h1-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h1-red));
+}
+body
+  .callout[data-callout="h1-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h1-yellow));
+}
+body
+  .callout[data-callout="h2-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h2-blue));
+}
+body
+  .callout[data-callout="h2-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h2-green));
+}
+body
+  .callout[data-callout="h2-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h2-orange));
+}
+body
+  .callout[data-callout="h2-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h2-pink));
+}
+body
+  .callout[data-callout="h2-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h2-purple));
+}
+body
+  .callout[data-callout="h2-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h2-red));
+}
+body
+  .callout[data-callout="h2-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h2-yellow));
+}
+body
+  .callout[data-callout="h3-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h3-blue));
+}
+body
+  .callout[data-callout="h3-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h3-green));
+}
+body
+  .callout[data-callout="h3-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h3-orange));
+}
+body
+  .callout[data-callout="h3-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h3-pink));
+}
+body
+  .callout[data-callout="h3-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h3-purple));
+}
+body
+  .callout[data-callout="h3-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h3-red));
+}
+body
+  .callout[data-callout="h3-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h3-yellow));
+}
+body
+  .callout[data-callout="h4-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h4-blue));
+}
+body
+  .callout[data-callout="h4-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h4-green));
+}
+body
+  .callout[data-callout="h4-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h4-orange));
+}
+body
+  .callout[data-callout="h4-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h4-pink));
+}
+body
+  .callout[data-callout="h4-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h4-purple));
+}
+body
+  .callout[data-callout="h4-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h4-red));
+}
+body
+  .callout[data-callout="h4-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h4-yellow));
+}
+body
+  .callout[data-callout="h5-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h5-blue));
+}
+body
+  .callout[data-callout="h5-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h5-green));
+}
+body
+  .callout[data-callout="h5-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h5-orange));
+}
+body
+  .callout[data-callout="h5-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h5-pink));
+}
+body
+  .callout[data-callout="h5-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h5-purple));
+}
+body
+  .callout[data-callout="h5-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h5-red));
+}
+body
+  .callout[data-callout="h5-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h5-yellow));
+}
+body
+  .callout[data-callout="h6-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h6-blue));
+}
+body
+  .callout[data-callout="h6-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h6-green));
+}
+body
+  .callout[data-callout="h6-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h6-orange));
+}
+body
+  .callout[data-callout="h6-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h6-pink));
+}
+body
+  .callout[data-callout="h6-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h6-purple));
+}
+body
+  .callout[data-callout="h6-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h6-red));
+}
+body
+  .callout[data-callout="h6-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-h6-yellow));
+}
+body
+  .callout[data-callout="hl-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-hl-blue));
+}
+body
+  .callout[data-callout="hl-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-hl-green));
+}
+body
+  .callout[data-callout="hl-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-hl-orange));
+}
+body
+  .callout[data-callout="hl-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-hl-pink));
+}
+body
+  .callout[data-callout="hl-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-hl-purple));
+}
+body
+  .callout[data-callout="hl-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-hl-red));
+}
+body
+  .callout[data-callout="hl-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-hl-yellow));
+}
+body
+  .callout[data-callout="l-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-l-blue));
+}
+body
+  .callout[data-callout="l-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-l-green));
+}
+body
+  .callout[data-callout="l-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-l-orange));
+}
+body
+  .callout[data-callout="l-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-l-pink));
+}
+body
+  .callout[data-callout="l-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-l-purple));
+}
+body
+  .callout[data-callout="l-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-l-red));
+}
+body
+  .callout[data-callout="l-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-l-yellow));
+}
+body
+  .callout[data-callout="lb-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-lb-blue));
+}
+body
+  .callout[data-callout="lb-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-lb-green));
+}
+body
+  .callout[data-callout="lb-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-lb-orange));
+}
+body
+  .callout[data-callout="lb-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-lb-pink));
+}
+body
+  .callout[data-callout="lb-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-lb-purple));
+}
+body
+  .callout[data-callout="lb-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-lb-red));
+}
+body
+  .callout[data-callout="lb-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-lb-yellow));
+}
+body
+  .callout[data-callout="link"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-link));
+}
+body
+  .callout[data-callout="links"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-links));
+}
+body
+  .callout[data-callout="m-black"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-m-black));
+}
+body
+  .callout[data-callout="m-gray"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-m-gray));
+}
+body
+  .callout[data-callout="m-white"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-m-white));
+}
+body
+  .callout[data-callout="magic"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-magic));
+}
+body
+  .callout[data-callout="mic"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-mic));
+}
+body
+  .callout[data-callout="p-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-p-blue));
+}
+body
+  .callout[data-callout="p-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-p-green));
+}
+body
+  .callout[data-callout="p-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-p-orange));
+}
+body
+  .callout[data-callout="p-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-p-pink));
+}
+body
+  .callout[data-callout="p-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-p-purple));
+}
+body
+  .callout[data-callout="p-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-p-red));
+}
+body
+  .callout[data-callout="p-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-p-yellow));
+}
+body
+  .callout[data-callout="paperclip"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-paperclip));
+}
+body
+  .callout[data-callout="pro"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-pro));
+}
+body
+  .callout[data-callout="pros"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-pros));
+}
+body
+  .callout[data-callout="q-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-q-blue));
+}
+body
+  .callout[data-callout="q-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-q-green));
+}
+body
+  .callout[data-callout="q-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-q-orange));
+}
+body
+  .callout[data-callout="q-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-q-pink));
+}
+body
+  .callout[data-callout="q-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-q-purple));
+}
+body
+  .callout[data-callout="q-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-q-red));
+}
+body
+  .callout[data-callout="q-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-q-yellow));
+}
+body
+  .callout[data-callout="table"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-table));
+}
+body
+  .callout[data-callout="target"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-target));
+}
+body
+  .callout[data-callout="ub-blue"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-ub-blue));
+}
+body
+  .callout[data-callout="ub-green"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-ub-green));
+}
+body
+  .callout[data-callout="ub-orange"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-ub-orange));
+}
+body
+  .callout[data-callout="ub-pink"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-ub-pink));
+}
+body
+  .callout[data-callout="ub-purple"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-ub-purple));
+}
+body
+  .callout[data-callout="ub-red"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-ub-red));
+}
+body
+  .callout[data-callout="ub-yellow"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-ub-yellow));
+}
+body
+  .callout[data-callout="video"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-video));
 }
 body pre > code,
 body .markdown-rendered pre > code {

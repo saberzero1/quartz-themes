@@ -1065,9 +1065,9 @@ body.theme-light {
   --accent: rgb(215, 131, 126) !important;
   --text: #575279 !important;
   --border-color: #dfdad9 !important;
+  --code-variable: #575279 !important;
   --code-builtin: #b4637a !important;
   --code-definition: #d7827e !important;
-  --code-variable: #575279 !important;
   --surface: #fffaf3 !important;
   --base: #faf4ed !important;
   --foam: #56949f !important;
@@ -1992,9 +1992,9 @@ body.theme-dark {
   --accent: rgb(129, 161, 193) !important;
   --border-color: #434c5e !important;
   --gray: #434c5e !important;
+  --code-variable: #d8dee9 !important;
   --code-builtin: #88c0d0 !important;
   --code-definition: #88c0d0 !important;
-  --code-variable: #d8dee9 !important;
   --white: #eceff4 !important;
   --black: #2e3440 !important;
   --dark-gray: #3b4252 !important;

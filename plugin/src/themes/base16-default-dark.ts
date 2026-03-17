@@ -1083,19 +1083,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(184, 184, 184);
   text-decoration: rgb(184, 184, 184);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(184, 184, 184);
-  text-decoration: rgb(184, 184, 184);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(216, 216, 216);
-  border-left-color: rgb(216, 216, 216);
-  border-right-color: rgb(216, 216, 216);
-  border-top-color: rgb(216, 216, 216);
-  color: rgb(216, 216, 216);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(184, 184, 184);

@@ -1074,9 +1074,9 @@ body.theme-light {
   --vault-name-font-size: 18px !important;
   --vault-name-font-weight: bold !important;
   --font-ui-larger: 20px !important;
+  --nav-item-weight-active: bold !important;
   --embed-background: #ffffff !important;
   --tag-weight: bold !important;
-  --nav-item-weight-active: bold !important;
   --pill-weight: bold !important;
   --nav-item-weight: normal !important;
   --nav-item-weight-hover: bold !important;
@@ -2017,9 +2017,9 @@ body.theme-dark {
   --vault-name-font-size: 18px !important;
   --vault-name-font-weight: bold !important;
   --font-ui-larger: 20px !important;
+  --nav-item-weight-active: bold !important;
   --embed-background: #333333 !important;
   --tag-weight: bold !important;
-  --nav-item-weight-active: bold !important;
   --pill-weight: bold !important;
   --nav-item-weight: normal !important;
   --nav-item-weight-hover: bold !important;

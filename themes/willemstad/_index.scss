@@ -847,7 +847,7 @@
   --text-accent-hover: oklch(82.77% 0.1667 79.6deg) !important;
   --text-error: #e93147 !important;
   --text-faint: oklch(0.6 0 0) !important;
-  --text-highlight-bg: rgb(0, 0, 0) !important;
+  --text-highlight-bg: hsl(46deg 100% 50%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: oklch(0.3 0 0) !important;
   --text-normal: oklch(0 0 0) !important;
@@ -916,7 +916,7 @@
   --table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --color-base-80: oklch(0.05 0 0) !important;
   --color-base-90: oklch(0.02 0 0) !important;
-  --text-highlight-bg-active: rgb(0, 0, 0) !important;
+  --text-highlight-bg-active: hsl(76deg 100% 50%) !important;
   --color-base-15: oklch(0.97 0 0) !important;
   --font-heading: "Manrope", "Inter 4.1", "DM Sans" !important;
   --font-ui: "Manrope", "Inter 4.1", "DM Sans" !important;
@@ -1138,19 +1138,19 @@
       clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
   ) !important;
   --col-h6-bg: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-highlight-0: rgb(0, 0, 0) !important;
-  --col-highlight-0-org: rgb(0, 0, 0) !important;
-  --col-highlight-1: rgb(0, 0, 0) !important;
-  --col-highlight-1-org: rgb(0, 0, 0) !important;
-  --col-highlight-2: rgb(0, 0, 0) !important;
-  --col-highlight-2-org: rgb(0, 0, 0) !important;
-  --col-highlight-3: rgb(0, 0, 0) !important;
-  --col-highlight-3-org: rgb(0, 0, 0) !important;
-  --col-highlight-text: rgb(0, 0, 0) !important;
-  --col-highlight-text-pickr: rgb(0, 0, 0) !important;
+  --col-highlight-0: hsl(46deg 100% 50%) !important;
+  --col-highlight-0-org: hsl(60deg 100% 50%) !important;
+  --col-highlight-1: hsl(76deg 100% 50%) !important;
+  --col-highlight-1-org: hsl(120deg 100% 50%) !important;
+  --col-highlight-2: hsl(166deg 100% 50%) !important;
+  --col-highlight-2-org: hsl(180deg 100% 50%) !important;
+  --col-highlight-3: hsl(262deg 44% 82%) !important;
+  --col-highlight-3-org: hsl(300deg 100% 50%) !important;
+  --col-highlight-text: hsl(0deg 0% 0%) !important;
+  --col-highlight-text-pickr: hsl(0deg 0% 0%) !important;
   --col-tab-style: oklch(40.14% 0.0638 202.51deg) !important;
   --col-titlebar-accent: oklch(40.14% 0.0638 202.51deg) !important;
-  --color-background-progress-bar-message: rgb(0, 0, 0) !important;
+  --color-background-progress-bar-message: hsl(0deg 0% 100% / 75%) !important;
   --color-bloemfontein: oklch(40.14% 0.0638 202.51deg) !important;
   --color-selection: oklch(80.92% 0.170357 75.4802deg) !important;
   --color-set-d-selection: oklch(80.92% 0.170357 75.4802deg) !important;
@@ -1445,7 +1445,7 @@
   --bases-table-border-color: oklch(0.3 0 0) !important;
   --bases-table-cell-background-active: oklch(0.13 0 0) !important;
   --bases-table-cell-background-disabled: oklch(0.17 0 0) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(0.48 0 0) !important;
@@ -1837,7 +1837,7 @@
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(70.7% 0.1737 155.3deg) !important;
-  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1943,7 +1943,7 @@
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --nav-item-background-selected: rgba(138, 92, 245, 0.15) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(0.68 0 0) !important;
@@ -2173,17 +2173,17 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: normal !important;
   --table-selection-border-color: oklch(40.14% 0.0638 202.51deg) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(138, 92, 245, 0.1) !important;
-  --tag-background-hover: rgba(138, 92, 245, 0.2) !important;
-  --tag-border-color: rgba(138, 92, 245, 0.15) !important;
-  --tag-border-color-hover: rgba(138, 92, 245, 0.15) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: oklch(70.7% 0.1737 155.3deg) !important;
   --tag-color-hover: oklch(70.7% 0.1737 155.3deg) !important;
@@ -2198,7 +2198,7 @@
   --text-accent-hover: oklch(82.77% 0.1667 79.6deg) !important;
   --text-error: #fb464c !important;
   --text-faint: oklch(0.48 0 0) !important;
-  --text-highlight-bg: rgb(0, 0, 0) !important;
+  --text-highlight-bg: hsl(46deg 100% 50%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: oklch(0.68 0 0) !important;
   --text-normal: oklch(0.98 0 0) !important;
@@ -2260,7 +2260,7 @@
   --table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
   --color-base-80: oklch(0.92 0 0) !important;
   --color-base-90: oklch(0.95 0 0) !important;
-  --text-highlight-bg-active: rgb(0, 0, 0) !important;
+  --text-highlight-bg-active: hsl(76deg 100% 50%) !important;
   --color-base-15: oklch(0.18 0 0) !important;
   --font-heading: "Manrope", "Inter 4.1", "DM Sans" !important;
   --font-ui: "Manrope", "Inter 4.1", "DM Sans" !important;
@@ -2545,19 +2545,19 @@
       clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
   ) !important;
   --col-h6-bg: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-highlight-0: rgb(0, 0, 0) !important;
-  --col-highlight-0-org: rgb(0, 0, 0) !important;
-  --col-highlight-1: rgb(0, 0, 0) !important;
-  --col-highlight-1-org: rgb(0, 0, 0) !important;
-  --col-highlight-2: rgb(0, 0, 0) !important;
-  --col-highlight-2-org: rgb(0, 0, 0) !important;
-  --col-highlight-3: rgb(0, 0, 0) !important;
-  --col-highlight-3-org: rgb(0, 0, 0) !important;
-  --col-highlight-text: rgb(0, 0, 0) !important;
-  --col-highlight-text-pickr: rgb(0, 0, 0) !important;
+  --col-highlight-0: hsl(46deg 100% 50%) !important;
+  --col-highlight-0-org: hsl(60deg 100% 50%) !important;
+  --col-highlight-1: hsl(76deg 100% 50%) !important;
+  --col-highlight-1-org: hsl(120deg 100% 50%) !important;
+  --col-highlight-2: hsl(166deg 100% 50%) !important;
+  --col-highlight-2-org: hsl(180deg 100% 50%) !important;
+  --col-highlight-3: hsl(262deg 44% 82%) !important;
+  --col-highlight-3-org: hsl(300deg 100% 50%) !important;
+  --col-highlight-text: hsl(0deg 0% 0%) !important;
+  --col-highlight-text-pickr: hsl(0deg 0% 0%) !important;
   --col-tab-style: oklch(40.14% 0.0638 202.51deg) !important;
   --col-titlebar-accent: oklch(40.14% 0.0638 202.51deg) !important;
-  --color-background-progress-bar-message: rgb(0, 0, 0) !important;
+  --color-background-progress-bar-message: hsl(0deg 0% 0% / 75%) !important;
   --color-bloemfontein: oklch(70.7% 0.1737 155.3deg) !important;
   --color-d-accent: oklch(40.14% 0.0638 202.51deg) !important;
   --color-d-accent-1: oklch(70.7% 0.1737 155.3deg) !important;
@@ -12897,7 +12897,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 6px 8px;
+    padding: 6px 8px 0px;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -12906,7 +12906,7 @@ body {
 
   .callout > .callout-content {
     background-color: light-dark(oklch(0.98 0 0), oklch(0.17 0 0));
-    padding: 0px 16px;
+    padding: 6px 8px;
   }
 
   .callout[data-callout="note"] {
@@ -13672,13 +13672,24 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(oklch(0.3 0 0), oklch(0.68 0 0));
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
     font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-weight: 400;
-    text-decoration: oklch(0.68 0 0);
+    text-decoration: rgb(179, 179, 179);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -13686,16 +13697,16 @@ body {
       rgba(0, 0, 0, 0.067),
       rgba(255, 255, 255, 0.067)
     );
-    border: 0px light-dark(oklch(0 0 0), oklch(0.98 0 0));
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(oklch(0 0 0), oklch(0.98 0 0));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -14404,6 +14415,64 @@ body {
     }
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
+    }
+
+    &[data-callout="aside"] {
+      --color: rgb(var(--callout-aside)) !important;
+    }
+    &[data-callout="attachment"] {
+      --color: rgb(var(--callout-attachment)) !important;
+    }
+    &[data-callout="code"] {
+      --color: rgb(var(--callout-code)) !important;
+    }
+    &[data-callout="columns"] {
+      --color: rgb(var(--callout-columns)) !important;
+    }
+    &[data-callout="email"] {
+      --color: rgb(var(--callout-email)) !important;
+    }
+    &[data-callout="file"] {
+      --color: rgb(var(--callout-file)) !important;
+    }
+    &[data-callout="goal"] {
+      --color: rgb(var(--callout-goal)) !important;
+    }
+    &[data-callout="images"] {
+      --color: rgb(var(--callout-images)) !important;
+    }
+    &[data-callout="infobox"] {
+      --color: rgb(var(--callout-infobox)) !important;
+    }
+    &[data-callout="kanban"] {
+      --color: rgb(var(--callout-kanban)) !important;
+    }
+    &[data-callout="link"] {
+      --color: rgb(var(--callout-link)) !important;
+    }
+    &[data-callout="mail"] {
+      --color: rgb(var(--callout-mail)) !important;
+    }
+    &[data-callout="minus"] {
+      --color: rgb(var(--callout-minus)) !important;
+    }
+    &[data-callout="negative"] {
+      --color: rgb(var(--callout-negative)) !important;
+    }
+    &[data-callout="note-toolbar"] {
+      --color: rgb(var(--callout-note-toolbar)) !important;
+    }
+    &[data-callout="phone"] {
+      --color: rgb(var(--callout-phone)) !important;
+    }
+    &[data-callout="plus"] {
+      --color: rgb(var(--callout-plus)) !important;
+    }
+    &[data-callout="positive"] {
+      --color: rgb(var(--callout-positive)) !important;
+    }
+    &[data-callout="url"] {
+      --color: rgb(var(--callout-url)) !important;
     }
   }
 }

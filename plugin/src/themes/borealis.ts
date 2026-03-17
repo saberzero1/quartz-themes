@@ -12,7 +12,7 @@ export const theme: ThemeData = {
   --accent-h: 110 !important;
   --accent-l: 77% !important;
   --accent-s: 90% !important;
-  --background-modifier-active-hover: rgba(161, 249, 144, 0.1) !important;
+  --background-modifier-active-hover: hsla(110, 90%, 77%, 0.1) !important;
   --background-modifier-border: #141414 !important;
   --background-modifier-form-field: #141414 !important;
   --background-modifier-form-field-hover: #141414 !important;
@@ -31,7 +31,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: #141414 !important;
   --bases-table-cell-background-active: #141414 !important;
   --bases-table-cell-background-disabled: #191919 !important;
-  --bases-table-cell-background-selected: rgba(161, 249, 144, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(110, 90%, 77%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #a1f98f !important;
   --bases-table-group-background: #191919 !important;
   --bases-table-header-background: #141414 !important;
@@ -40,6 +40,8 @@ export const theme: ThemeData = {
   --blockquote-border-color: #a1f98f !important;
   --blur-background: color-mix(in srgb, #a1f98f 65%, transparent) linear-gradient(#a1f98f, color-mix(in srgb, #a1f98f 65%, transparent)) !important;
   --bold-color: #a1f98f !important;
+  --bold-weight: 600 !important;
+  --callout-title-weight: 600;
   --canvas-background: #141414 !important;
   --canvas-card-label-color: #a1f98f !important;
   --canvas-color-1: 120, 246, 95 !important;
@@ -73,8 +75,8 @@ export const theme: ThemeData = {
   --collapse-icon-color: #a1f98f !important;
   --collapse-icon-color-collapsed: #a1f98f !important;
   --color-accent: #a1f98f !important;
-  --color-accent-1: rgb(212, 253, 201) !important;
-  --color-accent-2: rgb(251, 255, 250) !important;
+  --color-accent-1: hsl(107, 91.8%, 88.55%) !important;
+  --color-accent-2: hsl(105, 94.5%, 99.33%) !important;
   --color-accent-hsl: 110, 90%, 77% !important;
   --color-primary: #a1f98f !important;
   --color-secondary: #e78ff9 !important;
@@ -106,6 +108,7 @@ export const theme: ThemeData = {
   --h5-size: 16px !important;
   --h6-size: 14px !important;
   --heading-formatting: #a1f98f !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: rgba(161, 249, 143, 0.4) !important;
   --hr-color: #141414 !important;
   --hsl-primary: 110, 90%, 77% !important;
@@ -143,6 +146,7 @@ export const theme: ThemeData = {
   --link-unresolved-decoration-style: underline !important;
   --link-unresolved-opacity: 0.6 !important;
   --link-weight: none !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #a1f98f !important;
   --list-marker-color-collapsed: #a1f98f !important;
   --list-marker-color-hover: #b8b8b8 !important;
@@ -150,6 +154,7 @@ export const theme: ThemeData = {
   --metadata-border-color: #141414 !important;
   --metadata-divider-color: #141414 !important;
   --metadata-input-font-size: 12px !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #d1d1d1 !important;
   --metadata-label-font-size: 12px !important;
   --metadata-label-text-color: #b8b8b8 !important;
@@ -161,7 +166,7 @@ export const theme: ThemeData = {
   --nav-heading-color-collapsed: #a1f98f !important;
   --nav-heading-color-collapsed-hover: #b8b8b8 !important;
   --nav-heading-color-hover: #d1d1d1 !important;
-  --nav-item-background-selected: rgba(161, 249, 144, 0.15) !important;
+  --nav-item-background-selected: hsla(110, 90%, 77%, 0.15) !important;
   --nav-item-color: #b8b8b8 !important;
   --nav-item-color-active: #d1d1d1 !important;
   --nav-item-color-highlighted: #a1f98f !important;
@@ -197,6 +202,7 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #d1d1d1 !important;
   --setting-items-background: #191919 !important;
   --setting-items-border-color: #141414 !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-track-background: #141414 !important;
   --status-bar-background: #131313 !important;
   --status-bar-border-color: #141414 !important;
@@ -221,12 +227,13 @@ export const theme: ThemeData = {
   --table-drag-handle-color-active: #141414 !important;
   --table-header-border-color: #141414 !important;
   --table-header-color: #d1d1d1 !important;
-  --table-selection: rgba(161, 249, 144, 0.1) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(110, 90%, 77%, 0.1) !important;
   --table-selection-border-color: #a1f98f !important;
-  --tag-background: rgba(161, 249, 144, 0.1) !important;
-  --tag-background-hover: rgba(161, 249, 144, 0.2) !important;
-  --tag-border-color: rgba(161, 249, 144, 0.15) !important;
-  --tag-border-color-hover: rgba(161, 249, 144, 0.15) !important;
+  --tag-background: hsla(110, 90%, 77%, 0.1) !important;
+  --tag-background-hover: hsla(110, 90%, 77%, 0.2) !important;
+  --tag-border-color: hsla(110, 90%, 77%, 0.15) !important;
+  --tag-border-color-hover: hsla(110, 90%, 77%, 0.15) !important;
   --tag-color: #a1f98f !important;
   --tag-color-hover: #a1f98f !important;
   --tertiary: #a1f98f !important;
@@ -253,6 +260,7 @@ export const theme: ThemeData = {
   --transparent-secondary: rgba(231, 143, 249, 0.6) !important;
   --vault-profile-color: #d1d1d1 !important;
   --vault-profile-color-hover: #d1d1d1 !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --yellow: #f9e78f !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -677,6 +685,10 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(209, 209, 209);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
+  border-bottom-color: rgb(161, 249, 143);
+  border-left-color: rgb(161, 249, 143);
+  border-right-color: rgb(161, 249, 143);
+  border-top-color: rgb(161, 249, 143);
   gap: 6px;
   padding-bottom: 8px;
   padding-left: 8px;
@@ -839,19 +851,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(184, 184, 184);
   text-decoration: rgb(184, 184, 184);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(184, 184, 184);
-  text-decoration: rgb(184, 184, 184);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(209, 209, 209);
-  border-left-color: rgb(209, 209, 209);
-  border-right-color: rgb(209, 209, 209);
-  border-top-color: rgb(209, 209, 209);
-  color: rgb(209, 209, 209);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(184, 184, 184);
@@ -1023,7 +1022,7 @@ html[saved-theme="dark"] body sup {
   --accent-h: 134 !important;
   --accent-l: 41% !important;
   --accent-s: 68% !important;
-  --background-modifier-active-hover: rgba(33, 176, 67, 0.1) !important;
+  --background-modifier-active-hover: hsla(134, 68%, 41%, 0.1) !important;
   --background-modifier-border: #f6f6f6 !important;
   --background-modifier-form-field: #f6f6f6 !important;
   --background-modifier-form-field-hover: #f6f6f6 !important;
@@ -1042,7 +1041,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: #f6f6f6 !important;
   --bases-table-cell-background-active: #f6f6f6 !important;
   --bases-table-cell-background-disabled: #f0f0f0 !important;
-  --bases-table-cell-background-selected: rgba(33, 176, 67, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(134, 68%, 41%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #21b043 !important;
   --bases-table-group-background: #f0f0f0 !important;
   --bases-table-header-background: #f6f6f6 !important;
@@ -1051,6 +1050,8 @@ html[saved-theme="dark"] body sup {
   --blockquote-border-color: #21b043 !important;
   --blur-background: color-mix(in srgb, #f6f6f6 65%, transparent) linear-gradient(#f6f6f6, color-mix(in srgb, #f6f6f6 65%, transparent)) !important;
   --bold-color: #21b043 !important;
+  --bold-weight: 600 !important;
+  --callout-title-weight: 600;
   --canvas-background: #f6f6f6 !important;
   --canvas-card-label-color: #21b043 !important;
   --canvas-color-1: 120, 246, 95 !important;
@@ -1085,8 +1086,8 @@ html[saved-theme="dark"] body sup {
   --collapse-icon-color: #21b043 !important;
   --collapse-icon-color-collapsed: #21b043 !important;
   --color-accent: #21b043 !important;
-  --color-accent-1: rgb(35, 190, 68) !important;
-  --color-accent-2: rgb(37, 203, 67) !important;
+  --color-accent-1: hsl(133, 68.68%, 44.075%) !important;
+  --color-accent-2: hsl(131, 69.36%, 47.15%) !important;
   --color-accent-hsl: 134, 68%, 41% !important;
   --color-primary: #21b043 !important;
   --color-secondary: #b0218e !important;
@@ -1118,6 +1119,7 @@ html[saved-theme="dark"] body sup {
   --h5-size: 16px !important;
   --h6-size: 14px !important;
   --heading-formatting: #21b043 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: rgba(34, 176, 67, 0.4) !important;
   --hr-color: #f6f6f6 !important;
   --hsl-primary: 134, 68%, 41% !important;
@@ -1155,6 +1157,7 @@ html[saved-theme="dark"] body sup {
   --link-unresolved-decoration-style: underline !important;
   --link-unresolved-opacity: 0.6 !important;
   --link-weight: none !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #21b043 !important;
   --list-marker-color-collapsed: #21b043 !important;
   --list-marker-color-hover: #444444 !important;
@@ -1162,6 +1165,7 @@ html[saved-theme="dark"] body sup {
   --metadata-border-color: #f6f6f6 !important;
   --metadata-divider-color: #f6f6f6 !important;
   --metadata-input-font-size: 12px !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #141414 !important;
   --metadata-label-font-size: 12px !important;
   --metadata-label-text-color: #444444 !important;
@@ -1173,7 +1177,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-collapsed: #21b043 !important;
   --nav-heading-color-collapsed-hover: #444444 !important;
   --nav-heading-color-hover: #141414 !important;
-  --nav-item-background-selected: rgba(33, 176, 67, 0.15) !important;
+  --nav-item-background-selected: hsla(134, 68%, 41%, 0.15) !important;
   --nav-item-color: #444444 !important;
   --nav-item-color-active: #141414 !important;
   --nav-item-color-highlighted: #21b043 !important;
@@ -1207,6 +1211,7 @@ html[saved-theme="dark"] body sup {
   --setting-group-heading-color: #141414 !important;
   --setting-items-background: #f0f0f0 !important;
   --setting-items-border-color: #f6f6f6 !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-track-background: #f6f6f6 !important;
   --status-bar-background: #f4f2f2 !important;
   --status-bar-border-color: #f6f6f6 !important;
@@ -1231,12 +1236,13 @@ html[saved-theme="dark"] body sup {
   --table-drag-handle-color-active: #f6f6f6 !important;
   --table-header-border-color: #f6f6f6 !important;
   --table-header-color: #141414 !important;
-  --table-selection: rgba(33, 176, 67, 0.1) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(134, 68%, 41%, 0.1) !important;
   --table-selection-border-color: #21b043 !important;
-  --tag-background: rgba(33, 176, 67, 0.1) !important;
-  --tag-background-hover: rgba(33, 176, 67, 0.2) !important;
-  --tag-border-color: rgba(33, 176, 67, 0.15) !important;
-  --tag-border-color-hover: rgba(33, 176, 67, 0.15) !important;
+  --tag-background: hsla(134, 68%, 41%, 0.1) !important;
+  --tag-background-hover: hsla(134, 68%, 41%, 0.2) !important;
+  --tag-border-color: hsla(134, 68%, 41%, 0.15) !important;
+  --tag-border-color-hover: hsla(134, 68%, 41%, 0.15) !important;
   --tag-color: #21b043 !important;
   --tag-color-hover: #21b043 !important;
   --tertiary: #21b043 !important;
@@ -1263,6 +1269,7 @@ html[saved-theme="dark"] body sup {
   --transparent-secondary: rgba(176, 33, 142, 0.6) !important;
   --vault-profile-color: #141414 !important;
   --vault-profile-color-hover: #141414 !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --yellow: #8eb021 !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -1695,6 +1702,10 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(20, 20, 20);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
+  border-bottom-color: rgb(34, 176, 67);
+  border-left-color: rgb(34, 176, 67);
+  border-right-color: rgb(34, 176, 67);
+  border-top-color: rgb(34, 176, 67);
   gap: 6px;
   padding-bottom: 8px;
   padding-left: 8px;
@@ -1857,19 +1868,6 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(68, 68, 68);
   text-decoration: rgb(68, 68, 68);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(20, 20, 20);
-  border-left-color: rgb(20, 20, 20);
-  border-right-color: rgb(20, 20, 20);
-  border-top-color: rgb(20, 20, 20);
-  color: rgb(20, 20, 20);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(68, 68, 68);

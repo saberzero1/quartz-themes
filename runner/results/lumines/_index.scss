@@ -4063,7 +4063,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(51, 51, 51), rgb(230, 230, 230));
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -4080,12 +4080,15 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(230, 230, 230);
+    text-decoration: rgb(179, 179, 179);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px light-dark(rgb(51, 51, 51), rgb(230, 230, 230));
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
+    );
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -4094,7 +4097,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(rgb(51, 51, 51), rgb(230, 230, 230));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -4891,6 +4894,238 @@ body {
     }
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
+    }
+
+    &[data-callout="accessible"] {
+      --color: rgb(var(--callout-accessible)) !important;
+    }
+    &[data-callout="archive"] {
+      --color: rgb(var(--callout-archive)) !important;
+    }
+    &[data-callout="award"] {
+      --color: rgb(var(--callout-award)) !important;
+    }
+    &[data-callout="badge"] {
+      --color: rgb(var(--callout-badge)) !important;
+    }
+    &[data-callout="badges"] {
+      --color: rgb(var(--callout-badges)) !important;
+    }
+    &[data-callout="balloon"] {
+      --color: rgb(var(--callout-balloon)) !important;
+    }
+    &[data-callout="bandage"] {
+      --color: rgb(var(--callout-bandage)) !important;
+    }
+    &[data-callout="bell"] {
+      --color: rgb(var(--callout-bell)) !important;
+    }
+    &[data-callout="bitcoin"] {
+      --color: rgb(var(--callout-bitcoin)) !important;
+    }
+    &[data-callout="briefcase"] {
+      --color: rgb(var(--callout-briefcase)) !important;
+    }
+    &[data-callout="bubble"] {
+      --color: rgb(var(--callout-bubble)) !important;
+    }
+    &[data-callout="camera"] {
+      --color: rgb(var(--callout-camera)) !important;
+    }
+    &[data-callout="cannabis"] {
+      --color: rgb(var(--callout-cannabis)) !important;
+    }
+    &[data-callout="card"] {
+      --color: rgb(var(--callout-card)) !important;
+    }
+    &[data-callout="clipboard"] {
+      --color: rgb(var(--callout-clipboard)) !important;
+    }
+    &[data-callout="clock"] {
+      --color: rgb(var(--callout-clock)) !important;
+    }
+    &[data-callout="cloud"] {
+      --color: rgb(var(--callout-cloud)) !important;
+    }
+    &[data-callout="code"] {
+      --color: rgb(var(--callout-code)) !important;
+    }
+    &[data-callout="cookie"] {
+      --color: rgb(var(--callout-cookie)) !important;
+    }
+    &[data-callout="desktop"] {
+      --color: rgb(var(--callout-desktop)) !important;
+    }
+    &[data-callout="diamond"] {
+      --color: rgb(var(--callout-diamond)) !important;
+    }
+    &[data-callout="diamonds"] {
+      --color: rgb(var(--callout-diamonds)) !important;
+    }
+    &[data-callout="discord"] {
+      --color: rgb(var(--callout-discord)) !important;
+    }
+    &[data-callout="dislike"] {
+      --color: rgb(var(--callout-dislike)) !important;
+    }
+    &[data-callout="dollar"] {
+      --color: rgb(var(--callout-dollar)) !important;
+    }
+    &[data-callout="down"] {
+      --color: rgb(var(--callout-down)) !important;
+    }
+    &[data-callout="euro"] {
+      --color: rgb(var(--callout-euro)) !important;
+    }
+    &[data-callout="eye"] {
+      --color: rgb(var(--callout-eye)) !important;
+    }
+    &[data-callout="favicon"] {
+      --color: rgb(var(--callout-favicon)) !important;
+    }
+    &[data-callout="file"] {
+      --color: rgb(var(--callout-file)) !important;
+    }
+    &[data-callout="filter"] {
+      --color: rgb(var(--callout-filter)) !important;
+    }
+    &[data-callout="flame"] {
+      --color: rgb(var(--callout-flame)) !important;
+    }
+    &[data-callout="flare"] {
+      --color: rgb(var(--callout-flare)) !important;
+    }
+    &[data-callout="flower"] {
+      --color: rgb(var(--callout-flower)) !important;
+    }
+    &[data-callout="folder"] {
+      --color: rgb(var(--callout-folder)) !important;
+    }
+    &[data-callout="ghost"] {
+      --color: rgb(var(--callout-ghost)) !important;
+    }
+    &[data-callout="gift"] {
+      --color: rgb(var(--callout-gift)) !important;
+    }
+    &[data-callout="github"] {
+      --color: rgb(var(--callout-github)) !important;
+    }
+    &[data-callout="heart"] {
+      --color: rgb(var(--callout-heart)) !important;
+    }
+    &[data-callout="hourglass"] {
+      --color: rgb(var(--callout-hourglass)) !important;
+    }
+    &[data-callout="image"] {
+      --color: rgb(var(--callout-image)) !important;
+    }
+    &[data-callout="key"] {
+      --color: rgb(var(--callout-key)) !important;
+    }
+    &[data-callout="label"] {
+      --color: rgb(var(--callout-label)) !important;
+    }
+    &[data-callout="lemon"] {
+      --color: rgb(var(--callout-lemon)) !important;
+    }
+    &[data-callout="like"] {
+      --color: rgb(var(--callout-like)) !important;
+    }
+    &[data-callout="linkedin"] {
+      --color: rgb(var(--callout-linkedin)) !important;
+    }
+    &[data-callout="list"] {
+      --color: rgb(var(--callout-list)) !important;
+    }
+    &[data-callout="location"] {
+      --color: rgb(var(--callout-location)) !important;
+    }
+    &[data-callout="mail"] {
+      --color: rgb(var(--callout-mail)) !important;
+    }
+    &[data-callout="message"] {
+      --color: rgb(var(--callout-message)) !important;
+    }
+    &[data-callout="mobile"] {
+      --color: rgb(var(--callout-mobile)) !important;
+    }
+    &[data-callout="palette"] {
+      --color: rgb(var(--callout-palette)) !important;
+    }
+    &[data-callout="pig"] {
+      --color: rgb(var(--callout-pig)) !important;
+    }
+    &[data-callout="pound"] {
+      --color: rgb(var(--callout-pound)) !important;
+    }
+    &[data-callout="puzzle"] {
+      --color: rgb(var(--callout-puzzle)) !important;
+    }
+    &[data-callout="radar"] {
+      --color: rgb(var(--callout-radar)) !important;
+    }
+    &[data-callout="rupee"] {
+      --color: rgb(var(--callout-rupee)) !important;
+    }
+    &[data-callout="settings"] {
+      --color: rgb(var(--callout-settings)) !important;
+    }
+    &[data-callout="shield"] {
+      --color: rgb(var(--callout-shield)) !important;
+    }
+    &[data-callout="spade"] {
+      --color: rgb(var(--callout-spade)) !important;
+    }
+    &[data-callout="star"] {
+      --color: rgb(var(--callout-star)) !important;
+    }
+    &[data-callout="steam"] {
+      --color: rgb(var(--callout-steam)) !important;
+    }
+    &[data-callout="table"] {
+      --color: rgb(var(--callout-table)) !important;
+    }
+    &[data-callout="tablet"] {
+      --color: rgb(var(--callout-tablet)) !important;
+    }
+    &[data-callout="taka"] {
+      --color: rgb(var(--callout-taka)) !important;
+    }
+    &[data-callout="tiktok"] {
+      --color: rgb(var(--callout-tiktok)) !important;
+    }
+    &[data-callout="trash"] {
+      --color: rgb(var(--callout-trash)) !important;
+    }
+    &[data-callout="trophy"] {
+      --color: rgb(var(--callout-trophy)) !important;
+    }
+    &[data-callout="truck"] {
+      --color: rgb(var(--callout-truck)) !important;
+    }
+    &[data-callout="unknown"] {
+      --color: rgb(var(--callout-unknown)) !important;
+    }
+    &[data-callout="up"] {
+      --color: rgb(var(--callout-up)) !important;
+    }
+    &[data-callout="user"] {
+      --color: rgb(var(--callout-user)) !important;
+    }
+    &[data-callout="whatsapp"] {
+      --color: rgb(var(--callout-whatsapp)) !important;
+    }
+    &[data-callout="windmill"] {
+      --color: rgb(var(--callout-windmill)) !important;
+    }
+    &[data-callout="yen"] {
+      --color: rgb(var(--callout-yen)) !important;
+    }
+    &[data-callout="youtube"] {
+      --color: rgb(var(--callout-youtube)) !important;
+    }
+    &[data-callout="yuan"] {
+      --color: rgb(var(--callout-yuan)) !important;
     }
   }
 }

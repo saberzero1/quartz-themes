@@ -67,7 +67,7 @@ body.theme-light {
   --bases-table-border-color: #f8fbff !important;
   --bases-table-cell-background-active: #f8fbff !important;
   --bases-table-cell-background-disabled: #1b2c25 !important;
-  --bases-table-cell-background-selected: rgba(186, 64, 64, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(0, 49%, 49%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #79c78e !important;
@@ -189,9 +189,9 @@ body.theme-light {
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #4e5b6f !important;
   --collapse-icon-color-collapsed: #91c1ad !important;
-  --color-accent: rgb(186, 64, 64) !important;
-  --color-accent-1: rgb(194, 76, 78) !important;
-  --color-accent-2: rgb(199, 87, 92) !important;
+  --color-accent: hsl(0, 49%, 49%) !important;
+  --color-accent-1: hsl(-1, 49.49%, 52.675%) !important;
+  --color-accent-2: hsl(-3, 49.98%, 56.35%) !important;
   --color-accent-hsl: 0, 49%, 49% !important;
   --color-base-00: #ffffff !important;
   --color-base-05: #fcfcfc !important;
@@ -470,7 +470,7 @@ body.theme-light {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: #91c1ad !important;
-  --link-unresolved-decoration-color: rgba(186, 64, 64, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(0, 49%, 49%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
@@ -813,7 +813,7 @@ body.theme-light {
   --table-row-alt-background-hover: rgba(60, 168, 122, 0.4) !important;
   --table-row-background-hover: rgba(60, 168, 122, 0.4) !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(186, 64, 64, 0.1) !important;
+  --table-selection: hsla(0, 49%, 49%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: #5a8d71 !important;
   --table-selection-border-radius: 0 !important;
@@ -953,8 +953,8 @@ body.theme-light {
   --accent: #79c78e !important;
   --text: #697580 !important;
   --bullet: "" !important;
-  --hr-width: auto !important;
   --nav-item-weight-active: 700 !important;
+  --hr-width: auto !important;
   --vault-font:
     "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter !important;
   --graph-arrow: #52ad67 !important;
@@ -988,6 +988,13 @@ body.theme-light {
   --fg: #029f08 !important;
   --font:
     "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter !important;
+  --h1-border-color: #79c78e !important;
+  --h2-border-color: #cca04c !important;
+  --h3-border-color: #c93c3c !important;
+  --h4-border-color: #0e934c !important;
+  --h5-border-color: #35ad76 !important;
+  --h6-border-color: #91c1ad !important;
+  --h1-background: transparent !important;
   --tab-background: #dfefe6 !important;
   --r-heading-color: #0e934c !important;
   --r-heading-font:
@@ -1094,8 +1101,6 @@ body.theme-light {
   --graph-lines: #e4e7f8 !important;
   --graph-node-hover-fill: #2e5db2 !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #79c78e !important;
   --h1-border-left-color: #ccd6eb !important;
   --h1-border-line-color: #ccd6eb !important;
   --h1-border-line-height: 4px !important;
@@ -1106,7 +1111,6 @@ body.theme-light {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #cca04c !important;
   --h2-border-left-color: #ccd6eb !important;
   --h2-border-line-color: #ccd6eb !important;
   --h2-border-line-height: 4px !important;
@@ -1117,7 +1121,6 @@ body.theme-light {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #c93c3c !important;
   --h3-border-left-color: #ccd6eb !important;
   --h3-border-line-color: #ccd6eb !important;
   --h3-border-line-height: 4px !important;
@@ -1128,7 +1131,6 @@ body.theme-light {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #0e934c !important;
   --h4-border-left-color: #ccd6eb !important;
   --h4-border-line-color: #ccd6eb !important;
   --h4-border-line-height: 4px !important;
@@ -1139,7 +1141,6 @@ body.theme-light {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #35ad76 !important;
   --h5-border-left-color: #ccd6eb !important;
   --h5-border-line-color: #ccd6eb !important;
   --h5-border-line-height: 4px !important;
@@ -1150,7 +1151,6 @@ body.theme-light {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: #91c1ad !important;
   --h6-border-left-color: #ccd6eb !important;
   --h6-border-line-color: #ccd6eb !important;
   --h6-border-line-height: 4px !important;
@@ -1479,7 +1479,7 @@ body.theme-dark {
   --bases-table-border-color: #1a1e24 !important;
   --bases-table-cell-background-active: #1a1e24 !important;
   --bases-table-cell-background-disabled: #1b2c25 !important;
-  --bases-table-cell-background-selected: rgba(186, 64, 64, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(0, 49%, 49%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #548b67 !important;
@@ -1601,9 +1601,9 @@ body.theme-dark {
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: #4e5b6f !important;
   --collapse-icon-color-collapsed: #587770 !important;
-  --color-accent: rgb(186, 64, 64) !important;
-  --color-accent-1: rgb(199, 87, 92) !important;
-  --color-accent-2: rgb(209, 113, 121) !important;
+  --color-accent: hsl(0, 49%, 49%) !important;
+  --color-accent-1: hsl(-3, 49.98%, 56.35%) !important;
+  --color-accent-2: hsl(-5, 51.45%, 63.21%) !important;
   --color-accent-hsl: 0, 49%, 49% !important;
   --color-base-00: #1e1e1e !important;
   --color-base-05: #212121 !important;
@@ -1882,7 +1882,7 @@ body.theme-dark {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: #587770 !important;
-  --link-unresolved-decoration-color: rgba(186, 64, 64, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(0, 49%, 49%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 1 !important;
@@ -2217,7 +2217,7 @@ body.theme-dark {
   --table-row-alt-background-hover: rgba(60, 168, 122, 0.4) !important;
   --table-row-background-hover: rgba(60, 168, 122, 0.4) !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(186, 64, 64, 0.1) !important;
+  --table-selection: hsla(0, 49%, 49%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
   --table-selection-border-color: #2e4d3c !important;
   --table-selection-border-radius: 0 !important;
@@ -2350,8 +2350,8 @@ body.theme-dark {
   --accent: #548b67 !important;
   --text: #dcdedd !important;
   --bullet: "" !important;
-  --hr-width: auto !important;
   --nav-item-weight-active: 700 !important;
+  --hr-width: auto !important;
   --vault-font:
     "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter !important;
   --graph-arrow: #aacac9 !important;
@@ -2385,6 +2385,13 @@ body.theme-dark {
   --fg: white !important;
   --font:
     "Cinzel Decorative", "Amarante", "Oleo Script", "Lobster 1.3", Inter !important;
+  --h1-border-color: #548b67 !important;
+  --h2-border-color: #cc824c !important;
+  --h3-border-color: #c93c3c !important;
+  --h4-border-color: #2b4e41 !important;
+  --h5-border-color: #1c2f2b !important;
+  --h6-border-color: #0e0f15 !important;
+  --h1-background: transparent !important;
   --tab-background: #0e0f15 !important;
   --r-heading-color: #3eb281 !important;
   --r-heading-font:
@@ -2491,8 +2498,6 @@ body.theme-dark {
   --graph-lines: #244047 !important;
   --graph-node-hover-fill: #3eb281 !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-background: transparent !important;
-  --h1-border-color: #548b67 !important;
   --h1-border-left-color: #2c3836 !important;
   --h1-border-line-color: #2c3836 !important;
   --h1-border-line-height: 4px !important;
@@ -2503,7 +2508,6 @@ body.theme-dark {
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-color: #cc824c !important;
   --h2-border-left-color: #2c3836 !important;
   --h2-border-line-color: #2c3836 !important;
   --h2-border-line-height: 4px !important;
@@ -2514,7 +2518,6 @@ body.theme-dark {
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-color: #c93c3c !important;
   --h3-border-left-color: #2c3836 !important;
   --h3-border-line-color: #2c3836 !important;
   --h3-border-line-height: 4px !important;
@@ -2525,7 +2528,6 @@ body.theme-dark {
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-color: #2b4e41 !important;
   --h4-border-left-color: #2c3836 !important;
   --h4-border-line-color: #2c3836 !important;
   --h4-border-line-height: 4px !important;
@@ -2536,7 +2538,6 @@ body.theme-dark {
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-color: #1c2f2b !important;
   --h5-border-left-color: #2c3836 !important;
   --h5-border-line-color: #2c3836 !important;
   --h5-border-line-height: 4px !important;
@@ -2547,7 +2548,6 @@ body.theme-dark {
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-color: #0e0f15 !important;
   --h6-border-left-color: #2c3836 !important;
   --h6-border-line-color: #2c3836 !important;
   --h6-border-line-height: 4px !important;
@@ -3548,7 +3548,7 @@ body .callout[data-callout="note"] {
 }
 body .callout[data-callout="note"] > .callout-title {
   gap: 4px;
-  border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+  border: 0px light-dark(rgb(105, 117, 128), rgb(220, 222, 221));
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3564,7 +3564,7 @@ body .callout > .callout-title > .callout-title-inner {
 }
 body .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
+  padding: 5px 10px;
 }
 body .callout[data-callout="abstract"] {
   --callout-color: 83, 223, 221;
@@ -3729,7 +3729,7 @@ body .callout[data-callout="example"] {
   border-end-end-radius: 0px;
 }
 body .callout[data-callout="quote"] {
-  --callout-color: rgb(186, 64, 64);
+  --callout-color: hsl(0, 49%, 49%);
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
   border: 0px solid light-dark(rgb(105, 117, 128), rgb(220, 222, 221));
@@ -4326,37 +4326,40 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(105, 117, 128), rgb(220, 222, 221));
+  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
-    Inter,
+    ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
+    system-ui,
     "Segoe UI",
+    "Google Sans Flex",
     Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
+    "Inter Variable",
+    Inter,
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol",
-    "Microsoft YaHei Light",
     sans-serif;
-  font-weight: 500;
-  text-decoration: rgb(220, 222, 221);
+  font-weight: 400;
+  text-decoration: rgb(179, 179, 179);
 }
 body .nav-view-outer .tree-item-self.mod-active {
-  background-color: light-dark(rgb(90, 141, 113), rgb(46, 77, 60));
-  border: 0px rgb(229, 235, 238);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  background-color: light-dark(
+    rgba(0, 0, 0, 0.067),
+    rgba(255, 255, 255, 0.067)
+  );
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(229, 235, 238);
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
@@ -4755,6 +4758,125 @@ body
   > .callout-icon
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
+}
+body
+  .callout[data-callout="aside"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-aside));
+}
+body
+  .callout[data-callout="blank"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-blank));
+}
+body
+  .callout[data-callout="caption"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-caption));
+}
+body
+  .callout[data-callout="captions"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-captions));
+}
+body
+  .callout[data-callout="cards"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-cards));
+}
+body
+  .callout[data-callout="checks"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-checks));
+}
+body
+  .callout[data-callout="column"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-column));
+}
+body
+  .callout[data-callout="columns"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-columns));
+}
+body
+  .callout[data-callout="grid"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-grid));
+}
+body
+  .callout[data-callout="infobox"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-infobox));
+}
+body
+  .callout[data-callout="kanban"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-kanban));
+}
+body
+  .callout[data-callout="kith"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-kith));
+}
+body
+  .callout[data-callout="metadata"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-metadata));
+}
+body
+  .callout[data-callout="quotes"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-quotes));
+}
+body
+  .callout[data-callout="recite"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-recite));
+}
+body
+  .callout[data-callout="statblocks"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-statblocks));
+}
+body
+  .callout[data-callout="timeline"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-timeline));
 }
 body pre > code,
 body .markdown-rendered pre > code {

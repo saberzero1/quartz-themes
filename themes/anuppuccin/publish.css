@@ -138,7 +138,7 @@ body.theme-light {
   --bases-table-border-color: rgb(188, 192, 204) !important;
   --bases-table-cell-background-active: rgb(239, 241, 245) !important;
   --bases-table-cell-background-disabled: rgb(230, 233, 239) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px rgb(156, 160, 176) !important;
@@ -896,7 +896,7 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: none !important;
   --table-selection-border-color: rgb(222, 149, 132) !important;
   --table-selection-border-radius: 4px !important;
@@ -1100,7 +1100,7 @@ body.theme-dark {
   --bases-table-border-color: rgb(49, 50, 68) !important;
   --bases-table-cell-background-active: rgb(30, 30, 46) !important;
   --bases-table-cell-background-disabled: rgb(24, 24, 37) !important;
-  --bases-table-cell-background-selected: rgba(138, 92, 245, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px rgb(86, 89, 112) !important;
@@ -1849,7 +1849,7 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(138, 92, 245, 0.1) !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: none !important;
   --table-selection-border-color: rgb(245, 224, 220) !important;
   --table-selection-border-radius: 4px !important;
@@ -3627,7 +3627,7 @@ body .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
 body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(124, 127, 147), rgb(142, 149, 179));
+  color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -3644,14 +3644,14 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(142, 149, 179);
+  text-decoration: rgb(179, 179, 179);
 }
 body .nav-view-outer .tree-item-self.mod-active {
   background-color: light-dark(
-    rgba(76, 79, 105, 0.075),
-    rgba(198, 208, 245, 0.075)
+    rgba(0, 0, 0, 0.067),
+    rgba(255, 255, 255, 0.067)
   );
-  border: 0px light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
+  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3660,7 +3660,7 @@ body .nav-view-outer .tree-item-self.mod-active {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
+  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
   cursor: default;
   transition-behavior: normal;
   transition-delay: 0s;
@@ -4059,6 +4059,83 @@ body
   > .callout-icon
   > svg.svg-icon {
   stroke: rgb(var(--callout-quote));
+}
+body
+  .callout[data-callout="blank-container"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-blank-container));
+}
+body
+  .callout[data-callout="capacities-body"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-capacities-body));
+}
+body
+  .callout[data-callout="capacities-card"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-capacities-card));
+}
+body
+  .callout[data-callout="capacities-card-prop"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-capacities-card-prop));
+}
+body
+  .callout[data-callout="capacities-index"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-capacities-index));
+}
+body
+  .callout[data-callout="capacities-prop"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-capacities-prop));
+}
+body
+  .callout[data-callout="capacities-prop-image"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-capacities-prop-image));
+}
+body
+  .callout[data-callout="capacities-sidebar"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-capacities-sidebar));
+}
+body
+  .callout[data-callout="formula"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-formula));
+}
+body
+  .callout[data-callout="multi-column"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-multi-column));
+}
+body
+  .callout[data-callout="seealso"]
+  > .callout-title
+  > .callout-icon
+  > svg.svg-icon {
+  stroke: rgb(var(--callout-seealso));
 }
 body pre > code,
 body .markdown-rendered pre > code {

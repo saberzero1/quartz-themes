@@ -3421,7 +3421,7 @@ body {
 
   .callout .callout-title {
     gap: 4px;
-    border: 0px light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    border: 0px rgb(0, 136, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4302,7 +4302,7 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -4319,12 +4319,15 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: rgb(179, 179, 179);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(0, 127, 255, 0.157);
-    border: 0px light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
+    );
+    border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -4333,7 +4336,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: light-dark(rgb(0, 0, 0), rgb(218, 218, 218));
+    color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
     cursor: default;
     transition-behavior: normal;
     transition-delay: 0s;
@@ -5126,6 +5129,349 @@ body {
     }
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
+    }
+
+    &[data-callout="b-blue"] {
+      --color: rgb(var(--callout-b-blue)) !important;
+    }
+    &[data-callout="b-green"] {
+      --color: rgb(var(--callout-b-green)) !important;
+    }
+    &[data-callout="b-orange"] {
+      --color: rgb(var(--callout-b-orange)) !important;
+    }
+    &[data-callout="b-pink"] {
+      --color: rgb(var(--callout-b-pink)) !important;
+    }
+    &[data-callout="b-purple"] {
+      --color: rgb(var(--callout-b-purple)) !important;
+    }
+    &[data-callout="b-red"] {
+      --color: rgb(var(--callout-b-red)) !important;
+    }
+    &[data-callout="b-yellow"] {
+      --color: rgb(var(--callout-b-yellow)) !important;
+    }
+    &[data-callout="book"] {
+      --color: rgb(var(--callout-book)) !important;
+    }
+    &[data-callout="clip"] {
+      --color: rgb(var(--callout-clip)) !important;
+    }
+    &[data-callout="comment"] {
+      --color: rgb(var(--callout-comment)) !important;
+    }
+    &[data-callout="con"] {
+      --color: rgb(var(--callout-con)) !important;
+    }
+    &[data-callout="cons"] {
+      --color: rgb(var(--callout-cons)) !important;
+    }
+    &[data-callout="fc"] {
+      --color: rgb(var(--callout-fc)) !important;
+    }
+    &[data-callout="fc-group"] {
+      --color: rgb(var(--callout-fc-group)) !important;
+    }
+    &[data-callout="g-black"] {
+      --color: rgb(var(--callout-g-black)) !important;
+    }
+    &[data-callout="g-gray"] {
+      --color: rgb(var(--callout-g-gray)) !important;
+    }
+    &[data-callout="g-white"] {
+      --color: rgb(var(--callout-g-white)) !important;
+    }
+    &[data-callout="h1-blue"] {
+      --color: rgb(var(--callout-h1-blue)) !important;
+    }
+    &[data-callout="h1-green"] {
+      --color: rgb(var(--callout-h1-green)) !important;
+    }
+    &[data-callout="h1-orange"] {
+      --color: rgb(var(--callout-h1-orange)) !important;
+    }
+    &[data-callout="h1-pink"] {
+      --color: rgb(var(--callout-h1-pink)) !important;
+    }
+    &[data-callout="h1-purple"] {
+      --color: rgb(var(--callout-h1-purple)) !important;
+    }
+    &[data-callout="h1-red"] {
+      --color: rgb(var(--callout-h1-red)) !important;
+    }
+    &[data-callout="h1-yellow"] {
+      --color: rgb(var(--callout-h1-yellow)) !important;
+    }
+    &[data-callout="h2-blue"] {
+      --color: rgb(var(--callout-h2-blue)) !important;
+    }
+    &[data-callout="h2-green"] {
+      --color: rgb(var(--callout-h2-green)) !important;
+    }
+    &[data-callout="h2-orange"] {
+      --color: rgb(var(--callout-h2-orange)) !important;
+    }
+    &[data-callout="h2-pink"] {
+      --color: rgb(var(--callout-h2-pink)) !important;
+    }
+    &[data-callout="h2-purple"] {
+      --color: rgb(var(--callout-h2-purple)) !important;
+    }
+    &[data-callout="h2-red"] {
+      --color: rgb(var(--callout-h2-red)) !important;
+    }
+    &[data-callout="h2-yellow"] {
+      --color: rgb(var(--callout-h2-yellow)) !important;
+    }
+    &[data-callout="h3-blue"] {
+      --color: rgb(var(--callout-h3-blue)) !important;
+    }
+    &[data-callout="h3-green"] {
+      --color: rgb(var(--callout-h3-green)) !important;
+    }
+    &[data-callout="h3-orange"] {
+      --color: rgb(var(--callout-h3-orange)) !important;
+    }
+    &[data-callout="h3-pink"] {
+      --color: rgb(var(--callout-h3-pink)) !important;
+    }
+    &[data-callout="h3-purple"] {
+      --color: rgb(var(--callout-h3-purple)) !important;
+    }
+    &[data-callout="h3-red"] {
+      --color: rgb(var(--callout-h3-red)) !important;
+    }
+    &[data-callout="h3-yellow"] {
+      --color: rgb(var(--callout-h3-yellow)) !important;
+    }
+    &[data-callout="h4-blue"] {
+      --color: rgb(var(--callout-h4-blue)) !important;
+    }
+    &[data-callout="h4-green"] {
+      --color: rgb(var(--callout-h4-green)) !important;
+    }
+    &[data-callout="h4-orange"] {
+      --color: rgb(var(--callout-h4-orange)) !important;
+    }
+    &[data-callout="h4-pink"] {
+      --color: rgb(var(--callout-h4-pink)) !important;
+    }
+    &[data-callout="h4-purple"] {
+      --color: rgb(var(--callout-h4-purple)) !important;
+    }
+    &[data-callout="h4-red"] {
+      --color: rgb(var(--callout-h4-red)) !important;
+    }
+    &[data-callout="h4-yellow"] {
+      --color: rgb(var(--callout-h4-yellow)) !important;
+    }
+    &[data-callout="h5-blue"] {
+      --color: rgb(var(--callout-h5-blue)) !important;
+    }
+    &[data-callout="h5-green"] {
+      --color: rgb(var(--callout-h5-green)) !important;
+    }
+    &[data-callout="h5-orange"] {
+      --color: rgb(var(--callout-h5-orange)) !important;
+    }
+    &[data-callout="h5-pink"] {
+      --color: rgb(var(--callout-h5-pink)) !important;
+    }
+    &[data-callout="h5-purple"] {
+      --color: rgb(var(--callout-h5-purple)) !important;
+    }
+    &[data-callout="h5-red"] {
+      --color: rgb(var(--callout-h5-red)) !important;
+    }
+    &[data-callout="h5-yellow"] {
+      --color: rgb(var(--callout-h5-yellow)) !important;
+    }
+    &[data-callout="h6-blue"] {
+      --color: rgb(var(--callout-h6-blue)) !important;
+    }
+    &[data-callout="h6-green"] {
+      --color: rgb(var(--callout-h6-green)) !important;
+    }
+    &[data-callout="h6-orange"] {
+      --color: rgb(var(--callout-h6-orange)) !important;
+    }
+    &[data-callout="h6-pink"] {
+      --color: rgb(var(--callout-h6-pink)) !important;
+    }
+    &[data-callout="h6-purple"] {
+      --color: rgb(var(--callout-h6-purple)) !important;
+    }
+    &[data-callout="h6-red"] {
+      --color: rgb(var(--callout-h6-red)) !important;
+    }
+    &[data-callout="h6-yellow"] {
+      --color: rgb(var(--callout-h6-yellow)) !important;
+    }
+    &[data-callout="hl-blue"] {
+      --color: rgb(var(--callout-hl-blue)) !important;
+    }
+    &[data-callout="hl-green"] {
+      --color: rgb(var(--callout-hl-green)) !important;
+    }
+    &[data-callout="hl-orange"] {
+      --color: rgb(var(--callout-hl-orange)) !important;
+    }
+    &[data-callout="hl-pink"] {
+      --color: rgb(var(--callout-hl-pink)) !important;
+    }
+    &[data-callout="hl-purple"] {
+      --color: rgb(var(--callout-hl-purple)) !important;
+    }
+    &[data-callout="hl-red"] {
+      --color: rgb(var(--callout-hl-red)) !important;
+    }
+    &[data-callout="hl-yellow"] {
+      --color: rgb(var(--callout-hl-yellow)) !important;
+    }
+    &[data-callout="l-blue"] {
+      --color: rgb(var(--callout-l-blue)) !important;
+    }
+    &[data-callout="l-green"] {
+      --color: rgb(var(--callout-l-green)) !important;
+    }
+    &[data-callout="l-orange"] {
+      --color: rgb(var(--callout-l-orange)) !important;
+    }
+    &[data-callout="l-pink"] {
+      --color: rgb(var(--callout-l-pink)) !important;
+    }
+    &[data-callout="l-purple"] {
+      --color: rgb(var(--callout-l-purple)) !important;
+    }
+    &[data-callout="l-red"] {
+      --color: rgb(var(--callout-l-red)) !important;
+    }
+    &[data-callout="l-yellow"] {
+      --color: rgb(var(--callout-l-yellow)) !important;
+    }
+    &[data-callout="lb-blue"] {
+      --color: rgb(var(--callout-lb-blue)) !important;
+    }
+    &[data-callout="lb-green"] {
+      --color: rgb(var(--callout-lb-green)) !important;
+    }
+    &[data-callout="lb-orange"] {
+      --color: rgb(var(--callout-lb-orange)) !important;
+    }
+    &[data-callout="lb-pink"] {
+      --color: rgb(var(--callout-lb-pink)) !important;
+    }
+    &[data-callout="lb-purple"] {
+      --color: rgb(var(--callout-lb-purple)) !important;
+    }
+    &[data-callout="lb-red"] {
+      --color: rgb(var(--callout-lb-red)) !important;
+    }
+    &[data-callout="lb-yellow"] {
+      --color: rgb(var(--callout-lb-yellow)) !important;
+    }
+    &[data-callout="link"] {
+      --color: rgb(var(--callout-link)) !important;
+    }
+    &[data-callout="links"] {
+      --color: rgb(var(--callout-links)) !important;
+    }
+    &[data-callout="m-black"] {
+      --color: rgb(var(--callout-m-black)) !important;
+    }
+    &[data-callout="m-gray"] {
+      --color: rgb(var(--callout-m-gray)) !important;
+    }
+    &[data-callout="m-white"] {
+      --color: rgb(var(--callout-m-white)) !important;
+    }
+    &[data-callout="magic"] {
+      --color: rgb(var(--callout-magic)) !important;
+    }
+    &[data-callout="mic"] {
+      --color: rgb(var(--callout-mic)) !important;
+    }
+    &[data-callout="p-blue"] {
+      --color: rgb(var(--callout-p-blue)) !important;
+    }
+    &[data-callout="p-green"] {
+      --color: rgb(var(--callout-p-green)) !important;
+    }
+    &[data-callout="p-orange"] {
+      --color: rgb(var(--callout-p-orange)) !important;
+    }
+    &[data-callout="p-pink"] {
+      --color: rgb(var(--callout-p-pink)) !important;
+    }
+    &[data-callout="p-purple"] {
+      --color: rgb(var(--callout-p-purple)) !important;
+    }
+    &[data-callout="p-red"] {
+      --color: rgb(var(--callout-p-red)) !important;
+    }
+    &[data-callout="p-yellow"] {
+      --color: rgb(var(--callout-p-yellow)) !important;
+    }
+    &[data-callout="paperclip"] {
+      --color: rgb(var(--callout-paperclip)) !important;
+    }
+    &[data-callout="pro"] {
+      --color: rgb(var(--callout-pro)) !important;
+    }
+    &[data-callout="pros"] {
+      --color: rgb(var(--callout-pros)) !important;
+    }
+    &[data-callout="q-blue"] {
+      --color: rgb(var(--callout-q-blue)) !important;
+    }
+    &[data-callout="q-green"] {
+      --color: rgb(var(--callout-q-green)) !important;
+    }
+    &[data-callout="q-orange"] {
+      --color: rgb(var(--callout-q-orange)) !important;
+    }
+    &[data-callout="q-pink"] {
+      --color: rgb(var(--callout-q-pink)) !important;
+    }
+    &[data-callout="q-purple"] {
+      --color: rgb(var(--callout-q-purple)) !important;
+    }
+    &[data-callout="q-red"] {
+      --color: rgb(var(--callout-q-red)) !important;
+    }
+    &[data-callout="q-yellow"] {
+      --color: rgb(var(--callout-q-yellow)) !important;
+    }
+    &[data-callout="table"] {
+      --color: rgb(var(--callout-table)) !important;
+    }
+    &[data-callout="target"] {
+      --color: rgb(var(--callout-target)) !important;
+    }
+    &[data-callout="ub-blue"] {
+      --color: rgb(var(--callout-ub-blue)) !important;
+    }
+    &[data-callout="ub-green"] {
+      --color: rgb(var(--callout-ub-green)) !important;
+    }
+    &[data-callout="ub-orange"] {
+      --color: rgb(var(--callout-ub-orange)) !important;
+    }
+    &[data-callout="ub-pink"] {
+      --color: rgb(var(--callout-ub-pink)) !important;
+    }
+    &[data-callout="ub-purple"] {
+      --color: rgb(var(--callout-ub-purple)) !important;
+    }
+    &[data-callout="ub-red"] {
+      --color: rgb(var(--callout-ub-red)) !important;
+    }
+    &[data-callout="ub-yellow"] {
+      --color: rgb(var(--callout-ub-yellow)) !important;
+    }
+    &[data-callout="video"] {
+      --color: rgb(var(--callout-video)) !important;
     }
   }
 }

@@ -50,6 +50,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: oklch(0.3 0 0) !important;
   --bases-table-cell-background-active: oklch(0.13 0 0) !important;
   --bases-table-cell-background-disabled: oklch(0.17 0 0) !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(0.48 0 0) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px oklch(40.14% 0.0638 202.51deg) !important;
   --bases-table-container-border-radius: 3px !important;
@@ -67,6 +68,7 @@ export const theme: ThemeData = {
   --blur-8: blur(8px) !important;
   --blur-background: color-mix(in srgb, oklch(0.19 0 0) 65%, transparent) linear-gradient(oklch(0.19 0 0), color-mix(in srgb, oklch(0.19 0 0) 65%, transparent)) !important;
   --bodyFont: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
+  --bold-weight: 600 !important;
   --border-scrollbar-non-native: 2px !important;
   --brightness-25: brightness(25%) !important;
   --brightness-50: brightness(50%) !important;
@@ -81,6 +83,7 @@ export const theme: ThemeData = {
   --callout-gap: 0.5em;
   --callout-radius: 3px;
   --callout-title-gap: 0.75em;
+  --callout-title-weight: 600;
   --canvas-background: oklch(0.13 0 0) !important;
   --canvas-card-label-color: oklch(0.48 0 0) !important;
   --canvas-controls-radius: 3px !important;
@@ -321,16 +324,16 @@ export const theme: ThemeData = {
   --col-h5-bg: oklch(70.7% 0.1737 155.3deg) !important;
   --col-h6: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h6-bg: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-highlight-0: rgb(0, 0, 0) !important;
-  --col-highlight-0-org: rgb(0, 0, 0) !important;
-  --col-highlight-1: rgb(0, 0, 0) !important;
-  --col-highlight-1-org: rgb(0, 0, 0) !important;
-  --col-highlight-2: rgb(0, 0, 0) !important;
-  --col-highlight-2-org: rgb(0, 0, 0) !important;
-  --col-highlight-3: rgb(0, 0, 0) !important;
-  --col-highlight-3-org: rgb(0, 0, 0) !important;
-  --col-highlight-text: rgb(0, 0, 0) !important;
-  --col-highlight-text-pickr: rgb(0, 0, 0) !important;
+  --col-highlight-0: hsl(46deg 100% 50%) !important;
+  --col-highlight-0-org: hsl(60deg 100% 50%) !important;
+  --col-highlight-1: hsl(76deg 100% 50%) !important;
+  --col-highlight-1-org: hsl(120deg 100% 50%) !important;
+  --col-highlight-2: hsl(166deg 100% 50%) !important;
+  --col-highlight-2-org: hsl(180deg 100% 50%) !important;
+  --col-highlight-3: hsl(262deg 44% 82%) !important;
+  --col-highlight-3-org: hsl(300deg 100% 50%) !important;
+  --col-highlight-text: hsl(0deg 0% 0%) !important;
+  --col-highlight-text-pickr: hsl(0deg 0% 0%) !important;
   --col-tab-style: oklch(40.14% 0.0638 202.51deg) !important;
   --col-titlebar-accent: oklch(40.14% 0.0638 202.51deg) !important;
   --collapse-icon-color: oklch(0.48 0 0) !important;
@@ -338,7 +341,7 @@ export const theme: ThemeData = {
   --color-accent: oklch(40.14% 0.0638 202.51deg) !important;
   --color-accent-1: oklch(70.7% 0.1737 155.3deg) !important;
   --color-accent-2: oklch(82.77% 0.1667 79.6deg) !important;
-  --color-background-progress-bar-message: rgb(0, 0, 0) !important;
+  --color-background-progress-bar-message: hsl(0deg 0% 0% / 75%) !important;
   --color-base-00: oklch(0.13 0 0) !important;
   --color-base-05: oklch(0.15 0 0) !important;
   --color-base-10: oklch(0.17 0 0) !important;
@@ -466,7 +469,7 @@ export const theme: ThemeData = {
   --height-hover-sd: 50% !important;
   --height-norm-sd: 25% !important;
   --height-progress-bar-subline: 4px !important;
-  --highlight: rgb(0, 0, 0) !important;
+  --highlight: hsl(46deg 100% 50%) !important;
   --highlight-mix-blend-mode: normal !important;
   --hover-diff: 1.5px !important;
   --hover-diff-sidebar: 1.25px !important;
@@ -509,6 +512,8 @@ export const theme: ThemeData = {
   --link-external-color: oklch(70.7% 0.1737 155.3deg) !important;
   --link-external-color-hover: oklch(82.77% 0.1667 79.6deg) !important;
   --link-unresolved-color: oklch(70.7% 0.1737 155.3deg) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: oklch(0.48 0 0) !important;
   --list-marker-color-collapsed: oklch(70.7% 0.1737 155.3deg) !important;
   --list-marker-color-hover: oklch(0.68 0 0) !important;
@@ -532,6 +537,7 @@ export const theme: ThemeData = {
   --metadata-border-color: oklch(0.3 0 0) !important;
   --metadata-divider-color: oklch(0.3 0 0) !important;
   --metadata-input-font: "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: oklch(0.98 0 0) !important;
   --metadata-label-font: "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --metadata-label-text-color: oklch(0.68 0 0) !important;
@@ -562,6 +568,7 @@ export const theme: ThemeData = {
   --nav-heading-color-collapsed: oklch(0.48 0 0) !important;
   --nav-heading-color-collapsed-hover: oklch(0.68 0 0) !important;
   --nav-heading-color-hover: oklch(0.98 0 0) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: oklch(0.68 0 0) !important;
   --nav-item-color-active: oklch(0.98 0 0) !important;
   --nav-item-color-highlighted: oklch(70.7% 0.1737 155.3deg) !important;
@@ -647,6 +654,7 @@ export const theme: ThemeData = {
   --sidebar-icon-padding: 5px !important;
   --sidebar-icon-size: 18px !important;
   --sidebar-icon-size-hover: 20.5px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-padding-hover: 3.75px !important;
   --size-bw-bases: size * 1.5 !important;
   --size-bw-iframe: size * 1.5 !important;
@@ -709,8 +717,14 @@ export const theme: ThemeData = {
   --table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
   --table-header-border-color: oklch(0.3 0 0) !important;
   --table-header-color: oklch(0.98 0 0) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-blend-mode: normal !important;
   --table-selection-border-color: oklch(40.14% 0.0638 202.51deg) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: oklch(70.7% 0.1737 155.3deg) !important;
   --tag-color-hover: oklch(70.7% 0.1737 155.3deg) !important;
   --tag-radius: 3px !important;
@@ -719,13 +733,13 @@ export const theme: ThemeData = {
   --text-accent-hover: oklch(82.77% 0.1667 79.6deg) !important;
   --text-error-hover: oklch(from #fb464c calc(l - 0.1) c calc(h + 4)) !important;
   --text-faint: oklch(0.48 0 0) !important;
-  --text-highlight-bg: rgb(0, 0, 0) !important;
-  --text-highlight-bg-active: rgb(0, 0, 0) !important;
+  --text-highlight-bg: hsl(46deg 100% 50%) !important;
+  --text-highlight-bg-active: hsl(76deg 100% 50%) !important;
   --text-message-progress-bar: oklch(0.98 0 0) !important;
   --text-muted: oklch(0.68 0 0) !important;
   --text-normal: oklch(0.98 0 0) !important;
   --text-selection: oklch(80.92% 0.170357 75.4802deg) !important;
-  --textHighlight: rgb(0, 0, 0) !important;
+  --textHighlight: hsl(46deg 100% 50%) !important;
   --theme-alternative-checkboxes: disable !important;
   --titleFont: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --titlebar-background: oklch(0.19 0 0) !important;
@@ -748,6 +762,7 @@ export const theme: ThemeData = {
   --vault-profile-color-hover: oklch(0.98 0 0) !important;
   --width-norm-sd: 36px !important;
   --width-vll: 700px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1212,7 +1227,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-right-color: rgb(0, 191, 111);
   border-top-color: rgb(0, 191, 111);
   gap: 8px;
-  padding-bottom: 6px;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 6px;
@@ -1220,8 +1234,10 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
 
 html[saved-theme="dark"] body .callout > .callout-content {
   background-color: oklch(0.17 0 0);
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -1610,24 +1626,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: oklch(0.68 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   text-decoration: oklch(0.68 0 0);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: oklch(0.68 0 0);
-  font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
-  text-decoration: oklch(0.68 0 0);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: oklch(0.98 0 0);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: oklch(0.98 0 0);
-  border-right-color: oklch(0.98 0 0);
-  border-top-color: oklch(0.98 0 0);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  color: oklch(0.98 0 0);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: oklch(0.68 0 0);
@@ -1899,6 +1897,7 @@ html[saved-theme="dark"] body sup {
   --blur-8: blur(8px) !important;
   --blur-background: color-mix(in srgb, oklch(1 0 0) 65%, transparent) linear-gradient(oklch(1 0 0), color-mix(in srgb, oklch(1 0 0) 65%, transparent)) !important;
   --bodyFont: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
+  --bold-weight: 600 !important;
   --border-scrollbar-non-native: 2px !important;
   --brightness-25: brightness(25%) !important;
   --brightness-50: brightness(50%) !important;
@@ -1913,6 +1912,7 @@ html[saved-theme="dark"] body sup {
   --callout-gap: 0.5em;
   --callout-radius: 3px;
   --callout-title-gap: 0.75em;
+  --callout-title-weight: 600;
   --canvas-background: oklch(1 0 0) !important;
   --canvas-card-label-color: oklch(0.6 0 0) !important;
   --canvas-controls-radius: 3px !important;
@@ -2153,16 +2153,16 @@ html[saved-theme="dark"] body sup {
   --col-h5-bg: oklch(70.7% 0.1737 155.3deg) !important;
   --col-h6: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h6-bg: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-highlight-0: rgb(0, 0, 0) !important;
-  --col-highlight-0-org: rgb(0, 0, 0) !important;
-  --col-highlight-1: rgb(0, 0, 0) !important;
-  --col-highlight-1-org: rgb(0, 0, 0) !important;
-  --col-highlight-2: rgb(0, 0, 0) !important;
-  --col-highlight-2-org: rgb(0, 0, 0) !important;
-  --col-highlight-3: rgb(0, 0, 0) !important;
-  --col-highlight-3-org: rgb(0, 0, 0) !important;
-  --col-highlight-text: rgb(0, 0, 0) !important;
-  --col-highlight-text-pickr: rgb(0, 0, 0) !important;
+  --col-highlight-0: hsl(46deg 100% 50%) !important;
+  --col-highlight-0-org: hsl(60deg 100% 50%) !important;
+  --col-highlight-1: hsl(76deg 100% 50%) !important;
+  --col-highlight-1-org: hsl(120deg 100% 50%) !important;
+  --col-highlight-2: hsl(166deg 100% 50%) !important;
+  --col-highlight-2-org: hsl(180deg 100% 50%) !important;
+  --col-highlight-3: hsl(262deg 44% 82%) !important;
+  --col-highlight-3-org: hsl(300deg 100% 50%) !important;
+  --col-highlight-text: hsl(0deg 0% 0%) !important;
+  --col-highlight-text-pickr: hsl(0deg 0% 0%) !important;
   --col-tab-style: oklch(40.14% 0.0638 202.51deg) !important;
   --col-titlebar-accent: oklch(40.14% 0.0638 202.51deg) !important;
   --collapse-icon-color: oklch(0.6 0 0) !important;
@@ -2170,7 +2170,7 @@ html[saved-theme="dark"] body sup {
   --color-accent: oklch(40.14% 0.0638 202.51deg) !important;
   --color-accent-1: oklch(70.7% 0.1737 155.3deg) !important;
   --color-accent-2: oklch(82.77% 0.1667 79.6deg) !important;
-  --color-background-progress-bar-message: rgb(0, 0, 0) !important;
+  --color-background-progress-bar-message: hsl(0deg 0% 100% / 75%) !important;
   --color-base-00: oklch(1 0 0) !important;
   --color-base-05: oklch(0.99 0 0) !important;
   --color-base-10: oklch(0.98 0 0) !important;
@@ -2298,7 +2298,7 @@ html[saved-theme="dark"] body sup {
   --height-hover-sd: 50% !important;
   --height-norm-sd: 25% !important;
   --height-progress-bar-subline: 4px !important;
-  --highlight: rgb(0, 0, 0) !important;
+  --highlight: hsl(46deg 100% 50%) !important;
   --highlight-mix-blend-mode: normal !important;
   --hover-diff: 1.5px !important;
   --hover-diff-sidebar: 1.25px !important;
@@ -2342,6 +2342,7 @@ html[saved-theme="dark"] body sup {
   --link-external-color-hover: oklch(82.77% 0.1667 79.6deg) !important;
   --link-unresolved-color: oklch(40.14% 0.0638 202.51deg) !important;
   --link-unresolved-decoration-color: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 30%) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: oklch(0.6 0 0) !important;
   --list-marker-color-collapsed: oklch(40.14% 0.0638 202.51deg) !important;
   --list-marker-color-hover: oklch(0.3 0 0) !important;
@@ -2365,6 +2366,7 @@ html[saved-theme="dark"] body sup {
   --metadata-border-color: oklch(0.8 0 0) !important;
   --metadata-divider-color: oklch(0.8 0 0) !important;
   --metadata-input-font: "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: oklch(0 0 0) !important;
   --metadata-label-font: "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --metadata-label-text-color: oklch(0.3 0 0) !important;
@@ -2479,6 +2481,7 @@ html[saved-theme="dark"] body sup {
   --sidebar-icon-padding: 5px !important;
   --sidebar-icon-size: 18px !important;
   --sidebar-icon-size-hover: 20.5px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --sidebar-padding-hover: 3.75px !important;
   --size-bw-bases: size * 1.5 !important;
   --size-bw-iframe: size * 1.5 !important;
@@ -2541,6 +2544,7 @@ html[saved-theme="dark"] body sup {
   --table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --table-header-border-color: oklch(0.8 0 0) !important;
   --table-header-color: oklch(0 0 0) !important;
+  --table-header-weight: 600 !important;
   --table-selection: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 10%) !important;
   --table-selection-blend-mode: normal !important;
   --table-selection-border-color: oklch(70.7% 0.1737 155.3deg) !important;
@@ -2556,13 +2560,13 @@ html[saved-theme="dark"] body sup {
   --text-accent-hover: oklch(82.77% 0.1667 79.6deg) !important;
   --text-error-hover: oklch(from #e93147 calc(l - 0.1) c calc(h + 4)) !important;
   --text-faint: oklch(0.6 0 0) !important;
-  --text-highlight-bg: rgb(0, 0, 0) !important;
-  --text-highlight-bg-active: rgb(0, 0, 0) !important;
+  --text-highlight-bg: hsl(46deg 100% 50%) !important;
+  --text-highlight-bg-active: hsl(76deg 100% 50%) !important;
   --text-message-progress-bar: oklch(0 0 0) !important;
   --text-muted: oklch(0.3 0 0) !important;
   --text-normal: oklch(0 0 0) !important;
   --text-selection: oklch(80.92% 0.170357 75.4802deg) !important;
-  --textHighlight: rgb(0, 0, 0) !important;
+  --textHighlight: hsl(46deg 100% 50%) !important;
   --theme-alternative-checkboxes: disable !important;
   --titleFont: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --titlebar-background: oklch(0.95 0 0) !important;
@@ -2585,6 +2589,7 @@ html[saved-theme="dark"] body sup {
   --vault-profile-color-hover: oklch(0 0 0) !important;
   --width-norm-sd: 36px !important;
   --width-vll: 700px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -3051,7 +3056,6 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-right-color: rgb(0, 191, 111);
   border-top-color: rgb(0, 191, 111);
   gap: 8px;
-  padding-bottom: 6px;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 6px;
@@ -3059,8 +3063,10 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
 
 html[saved-theme="light"] body .callout > .callout-content {
   background-color: oklch(0.98 0 0);
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -3454,24 +3460,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: oklch(0.3 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   text-decoration: oklch(0.3 0 0);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: oklch(0.3 0 0);
-  font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
-  text-decoration: oklch(0.3 0 0);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: oklch(0 0 0);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: oklch(0 0 0);
-  border-right-color: oklch(0 0 0);
-  border-top-color: oklch(0 0 0);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  color: oklch(0 0 0);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: oklch(0.3 0 0);

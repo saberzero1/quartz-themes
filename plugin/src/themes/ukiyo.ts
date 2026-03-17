@@ -10,6 +10,7 @@ export const theme: ThemeData = {
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --activeline: #51454140 !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #504431 !important;
   --background-modifier-border-focus: #504431 !important;
   --background-modifier-border-hover: #645743 !important;
@@ -30,6 +31,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: #504431 !important;
   --bases-table-cell-background-active: #372d29 !important;
   --bases-table-cell-background-disabled: #2b2723 !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #504431 !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #ba945f !important;
   --bases-table-group-background: #2b2723 !important;
@@ -39,6 +41,8 @@ export const theme: ThemeData = {
   --blockquote-border-color: #ba945f !important;
   --blur-background: color-mix(in srgb, #504431 65%, transparent) linear-gradient(#504431, color-mix(in srgb, #504431 65%, transparent)) !important;
   --bodyFont: "CMU Typewriter Text" !important;
+  --bold-weight: 600 !important;
+  --callout-title-weight: 600;
   --canvas-background: #372d29 !important;
   --canvas-card-label-color: #868074 !important;
   --canvas-dot-pattern: #504431 !important;
@@ -114,6 +118,7 @@ export const theme: ThemeData = {
   --headerFont: "CMU Typewriter Text" !important;
   --heading-formatting: #868074 !important;
   --heading-formatting-color: #c72626 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: #926b22e6 !important;
   --hover-animation-duration: 100ms !important;
   --hover-faster-animation-duration: 75ms !important;
@@ -136,6 +141,7 @@ export const theme: ThemeData = {
   --link-external-color: #ba945f !important;
   --link-external-color-hover: #e0ba86 !important;
   --link-unresolved-color: #ba945f !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --list-indent: 1.4em !important;
   --list-marker-color: #868074 !important;
   --list-marker-color-collapsed: #ba945f !important;
@@ -145,6 +151,7 @@ export const theme: ThemeData = {
   --metadata-border-color: #504431 !important;
   --metadata-divider-color: #504431 !important;
   --metadata-input-font: "CMU Typewriter Text" !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #ccc2b7 !important;
   --metadata-label-font: "CMU Typewriter Text" !important;
   --metadata-label-text-color: #b2a699 !important;
@@ -161,6 +168,7 @@ export const theme: ThemeData = {
   --nav-heading-color-collapsed: #868074 !important;
   --nav-heading-color-collapsed-hover: #b2a699 !important;
   --nav-heading-color-hover: #ccc2b7 !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: #b2a699 !important;
   --nav-item-color-active: #ccc2b7 !important;
   --nav-item-color-highlighted: #ba945f !important;
@@ -198,6 +206,7 @@ export const theme: ThemeData = {
   --setting-group-heading-size: 16px !important;
   --setting-items-background: #2b2723 !important;
   --setting-items-border-color: #504431 !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: #645743 !important;
   --slider-track-background: #504431 !important;
   --status-bar-background: #413632 !important;
@@ -227,7 +236,13 @@ export const theme: ThemeData = {
   --table-drag-handle-color: #868074 !important;
   --table-header-border-color: #504431 !important;
   --table-header-color: #ccc2b7 !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: #ba945f !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #ba945f !important;
   --tag-color-hover: #ba945f !important;
   --tag-radius: 4px !important;
@@ -251,6 +266,7 @@ export const theme: ThemeData = {
   --vault-profile-color: #ccc2b7 !important;
   --vault-profile-color-hover: #ccc2b7 !important;
   --vault-profile-font-size: 14px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -985,24 +1001,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: rgb(178, 166, 153);
   font-family: "??", "??", "??", "CMU Typewriter Text";
   text-decoration: rgb(178, 166, 153);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(178, 166, 153);
-  font-family: "??", "??", "??", "CMU Typewriter Text";
-  text-decoration: rgb(178, 166, 153);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(204, 194, 183);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(204, 194, 183);
-  border-right-color: rgb(204, 194, 183);
-  border-top-color: rgb(204, 194, 183);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(204, 194, 183);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(178, 166, 153);
@@ -1199,6 +1197,7 @@ html[saved-theme="dark"] body sup {
   light: {
     base: `:root:root {
   --activeline: #d4b4946a !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #c6a57f !important;
   --background-modifier-border-focus: #b4916a !important;
   --background-modifier-border-hover: #a8865f !important;
@@ -1224,6 +1223,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: #c6a57f !important;
   --bases-table-cell-background-active: #e1c4a6 !important;
   --bases-table-cell-background-disabled: #daba97 !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #b4916a !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #800000 !important;
   --bases-table-group-background: #daba97 !important;
@@ -1233,6 +1233,7 @@ html[saved-theme="dark"] body sup {
   --blockquote-border-color: #800000 !important;
   --blur-background: color-mix(in srgb, #e1c4a6 65%, transparent) linear-gradient(#e1c4a6, color-mix(in srgb, #e1c4a6 65%, transparent)) !important;
   --bodyFont: "CMU Typewriter Text" !important;
+  --bold-weight: 600 !important;
   --callout-bug: 207, 30, 51;
   --callout-default: 2, 95, 200;
   --callout-error: 207, 30, 51;
@@ -1244,6 +1245,7 @@ html[saved-theme="dark"] body sup {
   --callout-success: 1, 144, 59;
   --callout-summary: 0, 158, 155;
   --callout-tip: 0, 158, 155;
+  --callout-title-weight: 600;
   --callout-todo: 2, 95, 200;
   --callout-warning: 193, 109, 24;
   --canvas-background: #e1c4a6 !important;
@@ -1353,6 +1355,7 @@ html[saved-theme="dark"] body sup {
   --headerFont: "CMU Typewriter Text" !important;
   --heading-formatting: #7a6d68 !important;
   --heading-formatting-color: #d34747 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: #eac357 !important;
   --hover-animation-duration: 100ms !important;
   --hover-faster-animation-duration: 75ms !important;
@@ -1375,6 +1378,7 @@ html[saved-theme="dark"] body sup {
   --link-external-color: #800000 !important;
   --link-external-color-hover: #a00000 !important;
   --link-unresolved-color: #800000 !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --list-indent: 1.4em !important;
   --list-marker-color: #7a6d68 !important;
   --list-marker-color-collapsed: #800000 !important;
@@ -1384,6 +1388,7 @@ html[saved-theme="dark"] body sup {
   --metadata-border-color: #c6a57f !important;
   --metadata-divider-color: #c6a57f !important;
   --metadata-input-font: "CMU Typewriter Text" !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #5f4f49 !important;
   --metadata-label-font: "CMU Typewriter Text" !important;
   --metadata-label-text-color: #5b4f4a !important;
@@ -1400,6 +1405,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-collapsed: #7a6d68 !important;
   --nav-heading-color-collapsed-hover: #5b4f4a !important;
   --nav-heading-color-hover: #5f4f49 !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color: #5b4f4a !important;
   --nav-item-color-active: #5f4f49 !important;
   --nav-item-color-highlighted: #800000 !important;
@@ -1435,6 +1441,7 @@ html[saved-theme="dark"] body sup {
   --setting-group-heading-size: 16px !important;
   --setting-items-background: #daba97 !important;
   --setting-items-border-color: #c6a57f !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: #a8865f !important;
   --slider-track-background: #c6a57f !important;
   --status-bar-background: #dabb9a !important;
@@ -1472,7 +1479,13 @@ html[saved-theme="dark"] body sup {
   --table-drag-handle-color: #7a6d68 !important;
   --table-header-border-color: #c6a57f !important;
   --table-header-color: #5f4f49 !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: #800000 !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #800000 !important;
   --tag-color-hover: #800000 !important;
   --tag-radius: 4px !important;
@@ -1499,6 +1512,7 @@ html[saved-theme="dark"] body sup {
   --vault-profile-color: #5f4f49 !important;
   --vault-profile-color-hover: #5f4f49 !important;
   --vault-profile-font-size: 14px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2314,24 +2328,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(91, 79, 74);
   font-family: "??", "??", "??", "CMU Typewriter Text";
   text-decoration: rgb(91, 79, 74);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(91, 79, 74);
-  font-family: "??", "??", "??", "CMU Typewriter Text";
-  text-decoration: rgb(91, 79, 74);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(95, 79, 73);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(95, 79, 73);
-  border-right-color: rgb(95, 79, 73);
-  border-top-color: rgb(95, 79, 73);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(95, 79, 73);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(91, 79, 74);

@@ -11,6 +11,7 @@ export const theme: ThemeData = {
     base: `:root:root[saved-theme="dark"] {
   --background-embed: rgba(62, 75, 80, 0.7) !important;
   --background-embed-transparent: rgba(62, 75, 80, 0.7) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #5d6b66 !important;
   --background-modifier-border-hover: #4d5960 !important;
   --background-primary: #333c43 !important;
@@ -26,6 +27,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: #5d6b66 !important;
   --bases-table-cell-background-active: #333c43 !important;
   --bases-table-cell-background-disabled: #333c43 !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #569d79 !important;
   --bases-table-group-background: #333c43 !important;
   --bases-table-header-background: #333c43 !important;
@@ -47,6 +49,8 @@ export const theme: ThemeData = {
   --bg5: #5d6b66 !important;
   --blockquote-background-color: rgba(62, 75, 80, 0.7) !important;
   --blockquote-border-color: #569d79 !important;
+  --bold-weight: 600 !important;
+  --callout-title-weight: 600;
   --canvas-background: #333c43 !important;
   --canvas-card-label-color: #859289 !important;
   --canvas-dot-pattern: #666666 !important;
@@ -74,11 +78,14 @@ export const theme: ThemeData = {
   --code-value: #d699b6 !important;
   --collapse-icon-color: #859289 !important;
   --collapse-icon-color-collapsed: #5a93a2 !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --dark: #d3c6aa !important;
   --darkgray: #d3c6aa !important;
   --divider-color: #5d6b66 !important;
   --divider-color-hover: #569d79 !important;
-  --embed-block-shadow-hover: 0 4px 14px -2px rgba(0, 0, 0, 0.4) !important;
+  --embed-block-shadow-hover: 0 4px 14px -2px hsla(0, 0%, 0%, 40%) !important;
   --embed-border-start: 2px solid #569d79 !important;
   --fg: #d3c6aa !important;
   --fg-aqua: #83c092 !important;
@@ -129,6 +136,7 @@ export const theme: ThemeData = {
   --header-purple: #b87b9d !important;
   --header-red: #da6362 !important;
   --header-yellow: #bf983d !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: #55544a !important;
   --hr-color: #5d6b66 !important;
   --icon-color-active: #5a93a2 !important;
@@ -162,6 +170,7 @@ export const theme: ThemeData = {
   --menu-border-color: #4d5960 !important;
   --metadata-border-color: #5d6b66 !important;
   --metadata-divider-color: #5d6b66 !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #d3c6aa !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #4d5960 !important;
   --modal-background: #333c43 !important;
@@ -170,6 +179,7 @@ export const theme: ThemeData = {
   --nav-heading-color: #d3c6aa !important;
   --nav-heading-color-collapsed: #859289 !important;
   --nav-heading-color-hover: #d3c6aa !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color-active: #d3c6aa !important;
   --nav-item-color-highlighted: #5a93a2 !important;
   --nav-item-color-hover: #d3c6aa !important;
@@ -193,7 +203,8 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #d3c6aa !important;
   --setting-items-background: #333c43 !important;
   --setting-items-border-color: #5d6b66 !important;
-  --shadow-l: 0 4px 14px -2px rgba(0, 0, 0, 0.4) !important;
+  --shadow-l: 0 4px 14px -2px hsla(0, 0%, 0%, 40%) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: #4d5960 !important;
   --slider-track-background: #5d6b66 !important;
   --status-bar-background: #333c43 !important;
@@ -208,6 +219,7 @@ export const theme: ThemeData = {
   --tab-outline-color: #5d6b66 !important;
   --tab-switcher-background: #333c43 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #333c43, transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #859289 !important;
   --tab-text-color-focused-active-current: #d3c6aa !important;
   --tab-text-color-focused-highlighted: #5a93a2 !important;
@@ -220,12 +232,16 @@ export const theme: ThemeData = {
   --table-header-background-hover: #48584e !important;
   --table-header-border-color: #5d6b66 !important;
   --table-header-color: #d3c6aa !important;
+  --table-header-weight: 600 !important;
   --table-row-alt-background: #3a464c !important;
   --table-row-alt-background-hover: #434f55 !important;
   --table-row-background-hover: #555f66 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: #569d79 !important;
-  --tag-background: rgba(139, 108, 239, 0.1) !important;
-  --tag-background-hover: rgba(139, 108, 239, 0.2) !important;
+  --tag-background: hsla(254, 80%, 68%, 0.1) !important;
+  --tag-background-hover: hsla(254, 80%, 68%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #5a93a2 !important;
   --tag-color-hover: #5a93a2 !important;
   --tag-color-hsl: 254, 80%, 68% !important;
@@ -243,6 +259,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: #d3c6aa !important;
   --vault-profile-color: #d3c6aa !important;
   --vault-profile-color-hover: #d3c6aa !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -661,6 +678,10 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(211, 198, 170);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
+  border-bottom-color: rgb(76, 175, 80);
+  border-left-color: rgb(76, 175, 80);
+  border-right-color: rgb(76, 175, 80);
+  border-top-color: rgb(76, 175, 80);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   gap: 8px;
@@ -672,10 +693,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
 
 html[saved-theme="dark"] body .callout > .callout-content {
   background-color: rgba(41, 49, 54, 0.3);
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -967,13 +984,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
   background: rgb(51, 60, 67) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(51, 60, 67);
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(211, 198, 170);
-  border-left-color: rgb(211, 198, 170);
-  border-right-color: rgb(211, 198, 170);
-  border-top-color: rgb(211, 198, 170);
-  color: rgb(211, 198, 170);
-}`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(51, 60, 67);
   border-bottom-color: rgb(93, 107, 102);
@@ -1087,6 +1097,7 @@ html[saved-theme="dark"] body sup {
     base: `:root:root {
   --background-embed: rgb(238 236 213 / 70%) !important;
   --background-embed-transparent: rgb(238 236 213 / 70%) !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-border: #bec5b2 !important;
   --background-modifier-border-hover: #edeada !important;
   --background-primary: #fffbef !important;
@@ -1102,6 +1113,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: #bec5b2 !important;
   --bases-table-cell-background-active: #fffbef !important;
   --bases-table-cell-background-disabled: #fffbef !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #569d79 !important;
   --bases-table-group-background: #fffbef !important;
   --bases-table-header-background: #fffbef !important;
@@ -1124,6 +1136,8 @@ html[saved-theme="dark"] body sup {
   --blockquote-background-color: rgb(238 236 213 / 70%) !important;
   --blockquote-border-color: #569d79 !important;
   --blur-background: color-mix(in srgb, #fffbef 65%, transparent) linear-gradient(#fffbef, color-mix(in srgb, #fffbef 65%, transparent)) !important;
+  --bold-weight: 600 !important;
+  --callout-title-weight: 600;
   --canvas-background: #fffbef !important;
   --canvas-card-label-color: #939f91 !important;
   --canvas-dot-pattern: #ababab !important;
@@ -1151,11 +1165,14 @@ html[saved-theme="dark"] body sup {
   --code-value: #df69ba !important;
   --collapse-icon-color: #939f91 !important;
   --collapse-icon-color-collapsed: #5a93a2 !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --dark: #5c6a72 !important;
   --darkgray: #5c6a72 !important;
   --divider-color: #bec5b2 !important;
   --divider-color-hover: #569d79 !important;
-  --embed-block-shadow-hover: 0 4px 14px -2px rgba(0, 0, 0, 0.4) !important;
+  --embed-block-shadow-hover: 0 4px 14px -2px hsla(0, 0%, 0%, 40%) !important;
   --embed-border-start: 2px solid #569d79 !important;
   --fg: #5c6a72 !important;
   --fg-aqua: #35a77c !important;
@@ -1206,6 +1223,7 @@ html[saved-theme="dark"] body sup {
   --header-purple: #dd2b8d !important;
   --header-red: #f85552 !important;
   --header-yellow: #f3b931 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: #fef2d5 !important;
   --hr-color: #bec5b2 !important;
   --icon-color-active: #5a93a2 !important;
@@ -1239,6 +1257,7 @@ html[saved-theme="dark"] body sup {
   --menu-border-color: #edeada !important;
   --metadata-border-color: #bec5b2 !important;
   --metadata-divider-color: #bec5b2 !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #5c6a72 !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #edeada !important;
   --modal-background: #fffbef !important;
@@ -1247,6 +1266,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color: #5c6a72 !important;
   --nav-heading-color-collapsed: #939f91 !important;
   --nav-heading-color-hover: #5c6a72 !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color-active: #5c6a72 !important;
   --nav-item-color-highlighted: #5a93a2 !important;
   --nav-item-color-hover: #5c6a72 !important;
@@ -1269,7 +1289,8 @@ html[saved-theme="dark"] body sup {
   --setting-group-heading-color: #5c6a72 !important;
   --setting-items-background: #fffbef !important;
   --setting-items-border-color: #bec5b2 !important;
-  --shadow-l: 0 4px 14px -2px rgba(0, 0, 0, 0.4) !important;
+  --shadow-l: 0 4px 14px -2px hsla(0, 0%, 0%, 40%) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: #edeada !important;
   --slider-track-background: #bec5b2 !important;
   --status-bar-background: #fffbef !important;
@@ -1284,6 +1305,7 @@ html[saved-theme="dark"] body sup {
   --tab-outline-color: #bec5b2 !important;
   --tab-switcher-background: #fffbef !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #fffbef, transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color: #939f91 !important;
   --tab-text-color-focused-active-current: #5c6a72 !important;
   --tab-text-color-focused-highlighted: #5a93a2 !important;
@@ -1296,12 +1318,16 @@ html[saved-theme="dark"] body sup {
   --table-header-background-hover: #f3f5d9 !important;
   --table-header-border-color: #bec5b2 !important;
   --table-header-color: #5c6a72 !important;
+  --table-header-weight: 600 !important;
   --table-row-alt-background: #f8f5e4 !important;
   --table-row-alt-background-hover: #f2efdf !important;
   --table-row-background-hover: #e8e5d5 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: #569d79 !important;
-  --tag-background: rgba(139, 108, 239, 0.1) !important;
-  --tag-background-hover: rgba(139, 108, 239, 0.2) !important;
+  --tag-background: hsla(254, 80%, 68%, 0.1) !important;
+  --tag-background-hover: hsla(254, 80%, 68%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #5a93a2 !important;
   --tag-color-hover: #5a93a2 !important;
   --tag-color-hsl: 254, 80%, 68% !important;
@@ -1319,6 +1345,7 @@ html[saved-theme="dark"] body sup {
   --titlebar-text-color-focused: #5c6a72 !important;
   --vault-profile-color: #5c6a72 !important;
   --vault-profile-color-hover: #5c6a72 !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1737,6 +1764,10 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(92, 106, 114);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
+  border-bottom-color: rgb(76, 175, 80);
+  border-left-color: rgb(76, 175, 80);
+  border-right-color: rgb(76, 175, 80);
+  border-top-color: rgb(76, 175, 80);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   gap: 8px;
@@ -1748,10 +1779,6 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
 
 html[saved-theme="light"] body .callout > .callout-content {
   background-color: rgba(242, 239, 223, 0.3);
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -2042,13 +2069,6 @@ html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
 html[saved-theme="light"] body ::-webkit-scrollbar-track {
   background: rgb(255, 251, 239) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(255, 251, 239);
-}`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(92, 106, 114);
-  border-left-color: rgb(92, 106, 114);
-  border-right-color: rgb(92, 106, 114);
-  border-top-color: rgb(92, 106, 114);
-  color: rgb(92, 106, 114);
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: rgb(255, 251, 239);

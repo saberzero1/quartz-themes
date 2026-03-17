@@ -797,10 +797,10 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(160, 160, 160);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
-  border-bottom-color: rgb(96, 138, 176);
-  border-left-color: rgb(96, 138, 176);
-  border-right-color: rgb(96, 138, 176);
-  border-top-color: rgb(96, 138, 176);
+  border-bottom-color: rgb(192, 192, 192);
+  border-left-color: rgb(192, 192, 192);
+  border-right-color: rgb(192, 192, 192);
+  border-top-color: rgb(192, 192, 192);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -1231,22 +1231,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: Sen, sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  font-family: Sen, sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(160, 160, 160);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(160, 160, 160);
-  border-right-color: rgb(160, 160, 160);
-  border-top-color: rgb(160, 160, 160);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(160, 160, 160);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 0px;
@@ -2209,10 +2193,10 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(0, 0, 0);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
-  border-bottom-color: rgb(84, 122, 155);
-  border-left-color: rgb(84, 122, 155);
-  border-right-color: rgb(84, 122, 155);
-  border-top-color: rgb(84, 122, 155);
+  border-bottom-color: rgb(35, 35, 35);
+  border-left-color: rgb(35, 35, 35);
+  border-right-color: rgb(35, 35, 35);
+  border-top-color: rgb(35, 35, 35);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -2647,24 +2631,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(34, 34, 34);
   font-family: Sen, sans-serif;
   text-decoration: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(34, 34, 34);
-  font-family: Sen, sans-serif;
-  text-decoration: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(0, 0, 0);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(0, 0, 0);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(34, 34, 34);

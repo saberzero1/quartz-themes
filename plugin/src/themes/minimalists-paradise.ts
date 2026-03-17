@@ -18,6 +18,7 @@ export const theme: ThemeData = {
   --anim-out: 300ms 600ms cubic-bezier(0, 0.55, 0.45, 1) !important;
   --anim-speed: 1 !important;
   --background-default: #0c0c0c !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-hover: color-mix(in srgb, #000000 70%, white 30%) !important;
   --background-primary: #000000 !important;
   --background-primary-alt: #000000 !important;
@@ -29,6 +30,8 @@ export const theme: ThemeData = {
   --bases-table-border-color: #59595984 !important;
   --bases-table-cell-background-active: #000000 !important;
   --bases-table-cell-background-disabled: #000000 !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --bases-table-group-background: #000000 !important;
   --bases-table-header-background: #000000 !important;
   --bases-table-header-background-hover: color-mix(in srgb, #000000 70%, white 30%) !important;
@@ -42,10 +45,12 @@ export const theme: ThemeData = {
   --blur-m: blur(8px) saturate(1.5) brightness(1.025) !important;
   --blur-s: blur(4px) saturate(1.5) brightness(1.025) !important;
   --blur-s-alt: blur(4px) saturate(1.5) brightness(0.75) !important;
+  --bold-weight: 600 !important;
   --button-radius: 16px !important;
   --callout-border-radius: 16px;
   --callout-border-width: 1px;
   --callout-color: #313435A6;
+  --callout-title-weight: 600;
   --canvas-background: #000000 !important;
   --card-bg: #000000 !important;
   --card-padding: 16px !important;
@@ -53,9 +58,11 @@ export const theme: ThemeData = {
   --card-shadow: 0 3px 8px rgba(97, 97, 97, 0.15) !important;
   --cards-gap: 16px !important;
   --caret-color: #ffffff !important;
+  --checkbox-color: hsl(258, 88%, 66%) !important;
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-marker-color: #000000 !important;
   --checkbox-radius: 16px !important;
-  --citation-bg: rgb(138, 92, 245) !important;
+  --citation-bg: hsl(258, 88%, 66%) !important;
   --citation-radius: 8px !important;
   --clickable-icon-radius: 8px !important;
   --code-background: #0c0c0c !important;
@@ -73,12 +80,17 @@ export const theme: ThemeData = {
   --code-tag: #2D76E9 !important;
   --code-value: #9795EE !important;
   --collapse-icon-color-collapsed: #59595984 !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-panel: #0c0c0c !important;
   --custom-color-accent-dark: #68686e !important;
   --default-radius: 16px !important;
   --divider-color: #59595984 !important;
+  --divider-color-hover: hsl(258, 88%, 66%) !important;
   --dropdown-background: #313435A6 !important;
-  --external-link-text-shadow: 1px 1px 2px rgb(138, 92, 245) !important;
+  --embed-border-start: 2px solid hsl(258, 88%, 66%) !important;
+  --external-link-text-shadow: 1px 1px 2px hsl(258, 88%, 66%) !important;
   --file-header-background: #000000 !important;
   --file-header-background-focused: #000000 !important;
   --file-title-color: #59595984 !important;
@@ -86,12 +98,12 @@ export const theme: ThemeData = {
   --footnote-input-background-active: color-mix(in srgb, #000000 70%, white 30%) !important;
   --graph-bg: #0c0c0c !important;
   --graph-line: #59595984 !important;
-  --graph-node: rgb(138, 92, 245) !important;
+  --graph-node: hsl(258, 88%, 66%) !important;
   --graph-node-focused: #59595984 !important;
-  --graph-node-tag: rgb(138, 92, 245) !important;
+  --graph-node-tag: hsl(258, 88%, 66%) !important;
   --header-height: 35px !important;
   --heading-spacing: 10px !important;
-  --highlight: rgb(138, 92, 245) !important;
+  --highlight: hsl(258, 88%, 66%) !important;
   --hr-color: #59595984 !important;
   --ic-border: 0px !important;
   --ic-border-color: #59595984 !important;
@@ -101,14 +113,14 @@ export const theme: ThemeData = {
   --ic-image-border-color: #59595984 !important;
   --ic-image-round-corners: 0px !important;
   --ic-infobox-color: #313435A6 !important;
-  --ic-infobox-title-color: rgb(138, 92, 245) !important;
+  --ic-infobox-title-color: hsl(258, 88%, 66%) !important;
   --ic-inside-padding: 24px !important;
   --ic-label-alignment: left !important;
   --ic-label-padding: 0.5rem !important;
   --ic-label-width: 80px !important;
   --ic-outside-padding: 20px !important;
   --ic-section-alignment: Center !important;
-  --ic-section-background-color: rgb(138, 92, 245) !important;
+  --ic-section-background-color: hsl(258, 88%, 66%) !important;
   --ic-section-border: 0px !important;
   --ic-section-border-color: #595959 !important;
   --ic-section-corners: 0px !important;
@@ -124,19 +136,26 @@ export const theme: ThemeData = {
   --ic-title-word-spacing: 0rem !important;
   --ic-width: 300px !important;
   --icon-color-active: #59595984 !important;
-  --inline-title-color: rgb(138, 92, 245) !important;
+  --inline-title-color: hsl(258, 88%, 66%) !important;
   --input-radius: 16px !important;
+  --interactive-accent: hsl(258, 88%, 66%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-normal: #313435A6 !important;
   --light: #000000 !important;
   --lightgray: #000000 !important;
   --link-color: #9FA0A4 !important;
+  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-external-color: #9FA0A4 !important;
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-unresolved-color: #9FA0A4 !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --list-indent: 2.25em !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
   --list-marker-color-collapsed: #59595984 !important;
   --menu-background: #000000 !important;
   --menu-padding: 4px !important;
   --metadata-input-background-active: color-mix(in srgb, #000000 70%, white 30%) !important;
+  --metadata-input-height: 28px !important;
   --metadata-label-background-active: color-mix(in srgb, #000000 70%, white 30%) !important;
   --metadata-property-background-active: color-mix(in srgb, #000000 70%, white 30%) !important;
   --mobile-card-radius: 32px !important;
@@ -148,6 +167,7 @@ export const theme: ThemeData = {
   --modal-radius: 16px !important;
   --nav-item-background-active: color-mix(in srgb, #000000 70%, white 30%) !important;
   --nav-item-background-hover: color-mix(in srgb, #000000 70%, white 30%) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color-highlighted: #59595984 !important;
   --nn-theme-list-bg: #0c0c0c !important;
   --nn-theme-list-header-bg: #0c0c0c !important;
@@ -179,10 +199,11 @@ export const theme: ThemeData = {
   --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(255, 255, 255, 0.04) 0px 2px 4px -2px !important;
   --shadow-xxs: inset 0 6px 50px rgba(255, 255, 255, 0.08), inset 1px 1px 2px rgba(255, 255, 255, 0.5), inset -1px -1px 2px rgba(255, 255, 255, 0.5), inset 0 4px 16px rgba(255, 255, 255, 0.025) !important;
   --side-padding: 20px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --status-bar-background: #000000 !important;
   --status-bar-border-color: #59595984 !important;
   --suggestion-background: #000000 !important;
-  --tab-background-active: rgb(138, 92, 245) !important;
+  --tab-background-active: hsl(258, 88%, 66%) !important;
   --tab-container-background: #000000 !important;
   --tab-outline-color: #59595984 !important;
   --tab-radius: 6.4px !important;
@@ -190,21 +211,32 @@ export const theme: ThemeData = {
   --tab-stacked-header-width: 35px !important;
   --tab-switcher-background: #000000 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #000000, transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color-focused-highlighted: #59595984 !important;
-  --table-header-background: rgb(138, 92, 245) !important;
+  --table-drag-handle-background-active: hsl(258, 88%, 66%) !important;
+  --table-header-background: hsl(258, 88%, 66%) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
+  --table-selection-border-color: hsl(258, 88%, 66%) !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #59595984 !important;
   --tag-color-hover: #59595984 !important;
-  --tertiary: #59595984 !important;
+  --tertiary: hsl(253, 92.4%, 85.14%) !important;
   --text-accent: #59595984 !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-color: #ffffff !important;
-  --text-highlight-bg: rgb(138, 92, 245) !important;
+  --text-highlight-bg: hsl(258, 88%, 66%) !important;
   --text-selection: #a5aab680 !important;
-  --textHighlight: rgb(138, 92, 245) !important;
+  --textHighlight: hsl(258, 88%, 66%) !important;
   --titlebar-background: #000000 !important;
   --titlebar-background-focused: #000000 !important;
   --toolbar-option-width: auto !important;
   --traffic-lights-offset-x: 35px !important;
   --traffic-lights-offset-y: 35px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -380,7 +412,14 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }`,
-    callouts: `html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+    callouts: `html[saved-theme="dark"] body .callout .callout-title {
+  border-bottom-color: rgb(138, 92, 245);
+  border-left-color: rgb(138, 92, 245);
+  border-right-color: rgb(138, 92, 245);
+  border-top-color: rgb(138, 92, 245);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -658,15 +697,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(89, 89, 89, 0.518);
   text-decoration: rgba(89, 89, 89, 0.518);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgba(89, 89, 89, 0.518);
-  text-decoration: rgba(89, 89, 89, 0.518);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: color(srgb 0.3 0.3 0.3);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 8px;
@@ -748,6 +778,7 @@ html[saved-theme="dark"] body kbd {
   --anim-out: 300ms 600ms cubic-bezier(0, 0.55, 0.45, 1) !important;
   --anim-speed: 1 !important;
   --background-default: #A5AAB6 !important;
+  --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
   --background-modifier-hover: color-mix(in srgb, #9096A4 70%, black 30%) !important;
   --background-primary: #9096A4 !important;
   --background-primary-alt: #9096A4 !important;
@@ -759,6 +790,7 @@ html[saved-theme="dark"] body kbd {
   --bases-table-border-color: #25252586 !important;
   --bases-table-cell-background-active: #9096A4 !important;
   --bases-table-cell-background-disabled: #9096A4 !important;
+  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #a5aab680 !important;
   --bases-table-group-background: #9096A4 !important;
   --bases-table-header-background: #9096A4 !important;
@@ -773,10 +805,12 @@ html[saved-theme="dark"] body kbd {
   --blur-m: blur(8px) saturate(1.5) brightness(1.025) !important;
   --blur-s: blur(4px) saturate(1.5) brightness(1.025) !important;
   --blur-s-alt: blur(4px) saturate(1.5) brightness(0.75) !important;
+  --bold-weight: 600 !important;
   --button-radius: 16px !important;
   --callout-border-radius: 16px;
   --callout-border-width: 1px;
   --callout-color: #9096A4;
+  --callout-title-weight: 600;
   --canvas-background: #9096A4 !important;
   --card-bg: #9096A4 !important;
   --card-padding: 16px !important;
@@ -788,7 +822,7 @@ html[saved-theme="dark"] body kbd {
   --checkbox-color-hover: #a5aab640 !important;
   --checkbox-marker-color: #9096A4 !important;
   --checkbox-radius: 16px !important;
-  --citation-bg: rgb(138, 92, 245) !important;
+  --citation-bg: hsl(258, 88%, 66%) !important;
   --citation-radius: 8px !important;
   --clickable-icon-radius: 8px !important;
   --code-background: #A5AAB6 !important;
@@ -806,6 +840,9 @@ html[saved-theme="dark"] body kbd {
   --code-tag: #2D76E9 !important;
   --code-value: #9795EE !important;
   --collapse-icon-color-collapsed: #25252586 !important;
+  --color-accent: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-panel: #a5aab6 !important;
   --custom-color-accent-light: #788091 !important;
   --default-radius: 16px !important;
@@ -813,7 +850,7 @@ html[saved-theme="dark"] body kbd {
   --divider-color-hover: #a5aab680 !important;
   --dropdown-background: #9096A4 !important;
   --embed-border-start: 2px solid #a5aab680 !important;
-  --external-link-text-shadow: 1px 1px 2px rgb(138, 92, 245) !important;
+  --external-link-text-shadow: 1px 1px 2px hsl(258, 88%, 66%) !important;
   --file-header-background: #9096A4 !important;
   --file-header-background-focused: #9096A4 !important;
   --file-title-color: #25252586 !important;
@@ -821,12 +858,12 @@ html[saved-theme="dark"] body kbd {
   --footnote-input-background-active: color-mix(in srgb, #9096A4 70%, black 30%) !important;
   --graph-bg: #a5aab6 !important;
   --graph-line: #25252586 !important;
-  --graph-node: rgb(138, 92, 245) !important;
+  --graph-node: hsl(258, 88%, 66%) !important;
   --graph-node-focused: #25252586 !important;
-  --graph-node-tag: rgb(138, 92, 245) !important;
+  --graph-node-tag: hsl(258, 88%, 66%) !important;
   --header-height: 35px !important;
   --heading-spacing: 10px !important;
-  --highlight: rgb(138, 92, 245) !important;
+  --highlight: hsl(258, 88%, 66%) !important;
   --hr-color: #25252586 !important;
   --ic-border: 0px !important;
   --ic-border-color: #25252586 !important;
@@ -836,14 +873,14 @@ html[saved-theme="dark"] body kbd {
   --ic-image-border-color: #25252586 !important;
   --ic-image-round-corners: 0px !important;
   --ic-infobox-color: #9096A4 !important;
-  --ic-infobox-title-color: rgb(138, 92, 245) !important;
+  --ic-infobox-title-color: hsl(258, 88%, 66%) !important;
   --ic-inside-padding: 24px !important;
   --ic-label-alignment: left !important;
   --ic-label-padding: 0.5rem !important;
   --ic-label-width: 80px !important;
   --ic-outside-padding: 20px !important;
   --ic-section-alignment: Center !important;
-  --ic-section-background-color: rgb(138, 92, 245) !important;
+  --ic-section-background-color: hsl(258, 88%, 66%) !important;
   --ic-section-border: 0px !important;
   --ic-section-border-color: #252525c3 !important;
   --ic-section-corners: 0px !important;
@@ -859,7 +896,7 @@ html[saved-theme="dark"] body kbd {
   --ic-title-word-spacing: 0rem !important;
   --ic-width: 300px !important;
   --icon-color-active: #25252586 !important;
-  --inline-title-color: rgb(138, 92, 245) !important;
+  --inline-title-color: hsl(258, 88%, 66%) !important;
   --input-radius: 16px !important;
   --interactive-accent: #a5aab680 !important;
   --interactive-accent-hover: #a5aab640 !important;
@@ -867,13 +904,18 @@ html[saved-theme="dark"] body kbd {
   --light: #9096A4 !important;
   --lightgray: #9096A4 !important;
   --link-color: #5F6369 !important;
+  --link-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --link-external-color: #5F6369 !important;
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --link-unresolved-color: #5F6369 !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
+  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
+  --list-indent: 2.25em !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
   --list-marker-color-collapsed: #25252586 !important;
   --menu-background: #9096A4 !important;
   --menu-padding: 4px !important;
   --metadata-input-background-active: color-mix(in srgb, #9096A4 70%, black 30%) !important;
+  --metadata-input-height: 28px !important;
   --metadata-label-background-active: color-mix(in srgb, #9096A4 70%, black 30%) !important;
   --metadata-property-background-active: color-mix(in srgb, #9096A4 70%, black 30%) !important;
   --mobile-card-radius: 32px !important;
@@ -885,6 +927,7 @@ html[saved-theme="dark"] body kbd {
   --modal-radius: 16px !important;
   --nav-item-background-active: color-mix(in srgb, #9096A4 70%, black 30%) !important;
   --nav-item-background-hover: color-mix(in srgb, #9096A4 70%, black 30%) !important;
+  --nav-item-background-selected: hsla(258, 88%, 66%, 0.15) !important;
   --nav-item-color-highlighted: #25252586 !important;
   --nn-theme-list-bg: #A5AAB6 !important;
   --nn-theme-list-header-bg: #A5AAB6 !important;
@@ -916,10 +959,11 @@ html[saved-theme="dark"] body kbd {
   --shadow-tactile: rgba(0, 0, 0, 0.04) 0px 2px 8px -2px, rgba(0, 0, 0, 0.04) 0px 2px 4px -2px !important;
   --shadow-xxs: inset 0 6px 50px rgba(255, 255, 255, 0.08), inset 1px 1px 2px rgba(255, 255, 255, 0.5), inset -1px -1px 2px rgba(255, 255, 255, 0.5), inset 0 4px 16px rgba(255, 255, 255, 0.025) !important;
   --side-padding: 20px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --status-bar-background: #9096A4 !important;
   --status-bar-border-color: #25252586 !important;
   --suggestion-background: #9096A4 !important;
-  --tab-background-active: rgb(138, 92, 245) !important;
+  --tab-background-active: hsl(258, 88%, 66%) !important;
   --tab-container-background: #9096A4 !important;
   --tab-outline-color: #25252586 !important;
   --tab-radius: 6.4px !important;
@@ -927,23 +971,32 @@ html[saved-theme="dark"] body kbd {
   --tab-stacked-header-width: 35px !important;
   --tab-switcher-background: #9096A4 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #9096A4, transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%) !important;
   --tab-text-color-focused-highlighted: #25252586 !important;
   --table-drag-handle-background-active: #a5aab680 !important;
-  --table-header-background: rgb(138, 92, 245) !important;
+  --table-header-background: hsl(258, 88%, 66%) !important;
+  --table-header-weight: 600 !important;
+  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: #a5aab680 !important;
+  --tag-background: hsla(258, 88%, 66%, 0.1) !important;
+  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
+  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
+  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: #25252586 !important;
   --tag-color-hover: #25252586 !important;
-  --tertiary: #a5aab640 !important;
+  --tertiary: hsl(255, 89.76%, 75.9%) !important;
   --text-accent: #25252586 !important;
+  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-color: #000000 !important;
-  --text-highlight-bg: rgb(138, 92, 245) !important;
+  --text-highlight-bg: hsl(258, 88%, 66%) !important;
   --text-selection: #a5aab680 !important;
-  --textHighlight: rgb(138, 92, 245) !important;
+  --textHighlight: hsl(258, 88%, 66%) !important;
   --titlebar-background: #9096A4 !important;
   --titlebar-background-focused: #9096A4 !important;
   --toolbar-option-width: auto !important;
   --traffic-lights-offset-x: 35px !important;
   --traffic-lights-offset-y: 35px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1127,7 +1180,14 @@ html[saved-theme="light"] body .transclude-inner {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }`,
-    callouts: `html[saved-theme="light"] body .callout[data-callout="abstract"] {
+    callouts: `html[saved-theme="light"] body .callout .callout-title {
+  border-bottom-color: rgb(138, 92, 245);
+  border-left-color: rgb(138, 92, 245);
+  border-right-color: rgb(138, 92, 245);
+  border-top-color: rgb(138, 92, 245);
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1405,15 +1465,6 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(37, 37, 37, 0.525);
   text-decoration: rgba(37, 37, 37, 0.525);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgba(37, 37, 37, 0.525);
-  text-decoration: rgba(37, 37, 37, 0.525);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: color(srgb 0.395294 0.411765 0.450196);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 8px;

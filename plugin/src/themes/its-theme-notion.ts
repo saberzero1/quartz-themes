@@ -47,7 +47,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: #2F3437 !important;
   --bases-table-cell-background-active: #2F3437 !important;
   --bases-table-cell-background-disabled: #3F4447 !important;
-  --bases-table-cell-background-selected: rgba(186, 64, 64, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(0, 49%, 49%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #708dbb !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #4B5053 !important;
   --bases-table-container-border-radius: 0 !important;
@@ -133,9 +133,9 @@ export const theme: ThemeData = {
   --codeFont: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace !important;
   --collapse-icon-color: #4e5b6f !important;
   --collapse-icon-color-collapsed: #5D6265 !important;
-  --color-accent: rgb(186, 64, 64) !important;
-  --color-accent-1: rgb(199, 87, 92) !important;
-  --color-accent-2: rgb(209, 113, 121) !important;
+  --color-accent: hsl(0, 49%, 49%) !important;
+  --color-accent-1: hsl(-3, 49.98%, 56.35%) !important;
+  --color-accent-2: hsl(-5, 51.45%, 63.21%) !important;
   --color-accent-hsl: 0, 49%, 49% !important;
   --comment-font: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace !important;
   --dark: #EBEBEB !important;
@@ -483,7 +483,7 @@ export const theme: ThemeData = {
   --link-external-decoration: none !important;
   --link-transform: none !important;
   --link-unresolved-color: #5D6265 !important;
-  --link-unresolved-decoration-color: rgba(186, 64, 64, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(0, 49%, 49%, 0.3) !important;
   --link-unresolved-opacity: 1 !important;
   --list-bullet-box-shadow-color: #4C5153 !important;
   --list-bullet-radius: 0 !important;
@@ -523,6 +523,7 @@ export const theme: ThemeData = {
   --metadata-input-background-active: #0f0f0f33 !important;
   --metadata-input-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-input-font-size: .90em !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #EBEBEB !important;
   --metadata-label-background-active: #0f0f0f33 !important;
   --metadata-label-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
@@ -814,7 +815,7 @@ export const theme: ThemeData = {
   --table-row-alt-background-hover: rgb(255, 255, 255, 0.1) !important;
   --table-row-background-hover: rgb(255, 255, 255, 0.1) !important;
   --table-row-edit-font-size: .95em !important;
-  --table-selection: rgba(186, 64, 64, 0.1) !important;
+  --table-selection: hsla(0, 49%, 49%, 0.1) !important;
   --table-selection-border-color: #4B5053 !important;
   --table-selection-border-radius: 0 !important;
   --tag: #708dbb !important;
@@ -876,6 +877,7 @@ export const theme: ThemeData = {
   --vault-profile-color: #EBEBEB !important;
   --vault-profile-color-hover: #EBEBEB !important;
   --vault-profile-font-size: 14px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1337,8 +1339,22 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   text-decoration: rgb(235, 235, 235);
   text-decoration-color: rgb(235, 235, 235);
 }`,
-    callouts: `html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+    callouts: `html[saved-theme="dark"] body .callout .callout-title {
+  border-bottom-color: rgb(235, 235, 235);
+  border-left-color: rgb(235, 235, 235);
+  border-right-color: rgb(235, 235, 235);
+  border-top-color: rgb(235, 235, 235);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
   font-weight: 900;
+}
+
+html[saved-theme="dark"] body .callout > .callout-content {
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -1398,7 +1414,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
-  --callout-color: rgb(186, 64, 64);
+  --callout-color: hsl(0, 49%, 49%);
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(235, 235, 235);
   border-bottom-left-radius: 0px;
@@ -1657,26 +1673,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   font-family: "??", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   font-weight: 700;
   text-decoration: rgb(235, 235, 235);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(235, 235, 235);
-  font-family: "??", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  font-weight: 500;
-  text-decoration: rgb(235, 235, 235);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(75, 80, 83);
-  border-bottom-color: rgb(112, 141, 187);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(112, 141, 187);
-  border-right-color: rgb(112, 141, 187);
-  border-top-color: rgb(112, 141, 187);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(112, 141, 187);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
   font-weight: 700;
@@ -1919,7 +1915,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: #FFFFFF !important;
   --bases-table-cell-background-active: #FFFFFF !important;
   --bases-table-cell-background-disabled: #F1F1EF !important;
-  --bases-table-cell-background-selected: rgba(186, 64, 64, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(0, 49%, 49%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #43B3E0 !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #43B3E0 !important;
   --bases-table-container-border-radius: 0 !important;
@@ -2005,9 +2001,9 @@ html[saved-theme="dark"] body sup {
   --codeFont: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace !important;
   --collapse-icon-color: #4e5b6f !important;
   --collapse-icon-color-collapsed: #CFCECD !important;
-  --color-accent: rgb(186, 64, 64) !important;
-  --color-accent-1: rgb(194, 76, 78) !important;
-  --color-accent-2: rgb(199, 87, 92) !important;
+  --color-accent: hsl(0, 49%, 49%) !important;
+  --color-accent-1: hsl(-1, 49.49%, 52.675%) !important;
+  --color-accent-2: hsl(-3, 49.98%, 56.35%) !important;
   --color-accent-hsl: 0, 49%, 49% !important;
   --comment-font: "Fira Code", "Fira Code Medium", "Source Code Pro", monospace !important;
   --dark: #37352f !important;
@@ -2356,7 +2352,7 @@ html[saved-theme="dark"] body sup {
   --link-external-decoration: none !important;
   --link-transform: none !important;
   --link-unresolved-color: #CFCECD !important;
-  --link-unresolved-decoration-color: rgba(186, 64, 64, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(0, 49%, 49%, 0.3) !important;
   --link-unresolved-opacity: 1 !important;
   --list-bullet-box-shadow-color: #e9e9e7 !important;
   --list-bullet-radius: 0 !important;
@@ -2396,6 +2392,7 @@ html[saved-theme="dark"] body sup {
   --metadata-input-background-active: #37352F10 !important;
   --metadata-input-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-input-font-size: .90em !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #37352f !important;
   --metadata-label-background-active: #37352F10 !important;
   --metadata-label-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
@@ -2685,7 +2682,7 @@ html[saved-theme="dark"] body sup {
   --table-row-alt-background-hover: rgba(55, 53, 47, 0.078) !important;
   --table-row-background-hover: rgba(55, 53, 47, 0.078) !important;
   --table-row-edit-font-size: .95em !important;
-  --table-selection: rgba(186, 64, 64, 0.1) !important;
+  --table-selection: hsla(0, 49%, 49%, 0.1) !important;
   --table-selection-border-color: #43B3E0 !important;
   --table-selection-border-radius: 0 !important;
   --tag: #43B3E0 !important;
@@ -2747,6 +2744,7 @@ html[saved-theme="dark"] body sup {
   --vault-profile-color: #37352f !important;
   --vault-profile-color-hover: #37352f !important;
   --vault-profile-font-size: 14px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -3206,8 +3204,22 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   text-decoration: rgb(55, 53, 47);
   text-decoration-color: rgb(55, 53, 47);
 }`,
-    callouts: `html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+    callouts: `html[saved-theme="light"] body .callout .callout-title {
+  border-bottom-color: rgb(55, 53, 47);
+  border-left-color: rgb(55, 53, 47);
+  border-right-color: rgb(55, 53, 47);
+  border-top-color: rgb(55, 53, 47);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
   font-weight: 900;
+}
+
+html[saved-theme="light"] body .callout > .callout-content {
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -3267,7 +3279,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
-  --callout-color: rgb(186, 64, 64);
+  --callout-color: hsl(0, 49%, 49%);
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(55, 53, 47);
   border-bottom-left-radius: 0px;
@@ -3498,26 +3510,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   font-family: "??", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   font-weight: 700;
   text-decoration: rgb(55, 53, 47);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(55, 53, 47);
-  font-family: "??", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  font-weight: 500;
-  text-decoration: rgb(55, 53, 47);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(67, 179, 224);
-  border-bottom-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(255, 255, 255);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
   font-weight: 700;

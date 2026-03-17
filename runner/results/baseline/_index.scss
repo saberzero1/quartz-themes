@@ -904,11 +904,11 @@
   --h6-font: "??", "Instrument Serif" !important;
   --inline-title-font: "??", "Instrument Serif" !important;
   --line-width: 700px !important;
-  --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
-  --anim-speed-modifier: 1 !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
+  --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
+  --anim-speed-modifier: 1 !important;
   --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
@@ -1854,11 +1854,11 @@
   --h6-font: "??", "Instrument Serif" !important;
   --inline-title-font: "??", "Instrument Serif" !important;
   --line-width: 700px !important;
-  --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
-  --anim-speed-modifier: 1 !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
+  --anim-motion-baseline: cubic-bezier(0.1, 0, 0.1, 1.25) !important;
+  --anim-speed-modifier: 1 !important;
   --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
@@ -4024,7 +4024,6 @@ body {
     color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
     font-family:
-      Inter,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -4858,6 +4857,13 @@ body {
     }
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
+    }
+
+    &[data-callout="banner-icon"] {
+      --color: rgb(var(--callout-banner-icon)) !important;
+    }
+    &[data-callout="note-toolbar"] {
+      --color: rgb(var(--callout-note-toolbar)) !important;
     }
   }
 }

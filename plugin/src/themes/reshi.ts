@@ -55,7 +55,6 @@ export const theme: ThemeData = {
   --blockquote-color: #707070 !important;
   --bodyFont: Noto Sans, sans-serif, Noto Sans, sans-serif !important;
   --bold-color: #778e55 !important;
-  --bold-weight: 600 !important;
   --button-radius: 6px !important;
   --callout-blend-mode: normal;
   --callout-border-opacity: 100%;
@@ -77,6 +76,7 @@ export const theme: ThemeData = {
   --callout-summary: 223, 191, 116;
   --callout-tip: 155, 122, 209;
   --callout-title-size: 18px;
+  --callout-title-weight: 600;
   --callout-todo: 123, 171, 212;
   --callout-warning: 142, 70, 70;
   --canvas-background: #252525 !important;
@@ -117,9 +117,9 @@ export const theme: ThemeData = {
   --codeFont: JetBrains Mono, monospace !important;
   --collapse-icon-color: #6a6a6a !important;
   --collapse-icon-color-collapsed: #778e55 !important;
-  --color-accent: rgb(173, 190, 147) !important;
-  --color-accent-1: rgb(199, 210, 178) !important;
-  --color-accent-2: rgb(220, 227, 207) !important;
+  --color-accent: hsl(84, 25%, 66%) !important;
+  --color-accent-1: hsl(81, 25.5%, 75.9%) !important;
+  --color-accent-2: hsl(79, 26.25%, 85.14%) !important;
   --color-accent-hsl: #778e55 !important;
   --color-blue: #7babd4 !important;
   --color-blue-rgb: rgb(123, 171, 212) !important;
@@ -231,6 +231,7 @@ export const theme: ThemeData = {
   --h6-weight: 650 !important;
   --headerFont: Noto Sans, sans-serif, Noto Sans, sans-serif !important;
   --heading-formatting: #9d9d9d !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: #404040 !important;
   --hr-color: #333333 !important;
   --hr-thickness: 1px !important;
@@ -311,6 +312,7 @@ export const theme: ThemeData = {
   --metadata-input-background-hover: #1d1d1d !important;
   --metadata-input-font: Noto Sans, sans-serif !important;
   --metadata-input-font-size: 12px !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #707070 !important;
   --metadata-label-background-active: none !important;
   --metadata-label-background-hover: none !important;
@@ -406,6 +408,7 @@ export const theme: ThemeData = {
   --setting-items-background: #1f1f1f !important;
   --setting-items-border-color: #9d9d9d !important;
   --setting-items-radius: 0px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-s-thumb-size: 13px !important;
   --slider-thumb-border-color: #9d9d9d !important;
   --slider-thumb-height: 16px !important;
@@ -444,7 +447,7 @@ export const theme: ThemeData = {
   --tab-stacked-text-align: left !important;
   --tab-switcher-background: #1d1d1d !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #1d1d1d, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(173, 190, 147) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(84, 25%, 66%) !important;
   --tab-text-color: #9d9d9d !important;
   --tab-text-color-active: #9d9d9d !important;
   --tab-text-color-focused: #9d9d9d !important;
@@ -528,6 +531,7 @@ export const theme: ThemeData = {
   --vault-profile-color: #9d9d9d !important;
   --vault-profile-color-hover: #9d9d9d !important;
   --white: #a3a3a3 !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1441,25 +1445,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: rgb(157, 157, 157);
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
   text-decoration: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(157, 157, 157);
-  font-family: "??", "??", "??", "Noto Sans", sans-serif;
-  text-decoration: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(29, 29, 29);
-  border-bottom-color: rgb(119, 142, 85);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(119, 142, 85);
-  border-right-color: rgb(119, 142, 85);
-  border-top-color: rgb(119, 142, 85);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(119, 142, 85);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(119, 142, 85);
@@ -1723,7 +1708,6 @@ html[saved-theme="dark"] body sup {
   --blur-background: color-mix(in srgb, #ececec 65%, transparent) linear-gradient(#ececec, color-mix(in srgb, #ececec 65%, transparent)) !important;
   --bodyFont: Noto Sans, sans-serif, Noto Sans, sans-serif !important;
   --bold-color: #596d3a !important;
-  --bold-weight: 600 !important;
   --button-radius: 6px !important;
   --callout-blend-mode: normal;
   --callout-border-opacity: 100%;
@@ -1745,6 +1729,7 @@ html[saved-theme="dark"] body sup {
   --callout-summary: 211, 152, 12;
   --callout-tip: 69, 44, 108;
   --callout-title-size: 18px;
+  --callout-title-weight: 600;
   --callout-todo: 49, 103, 147;
   --callout-warning: 128, 32, 32;
   --canvas-background: #ececec !important;
@@ -1785,9 +1770,9 @@ html[saved-theme="dark"] body sup {
   --codeFont: JetBrains Mono, monospace !important;
   --collapse-icon-color: #6a6a6a !important;
   --collapse-icon-color-collapsed: #596d3a !important;
-  --color-accent: rgb(174, 195, 141) !important;
-  --color-accent-1: rgb(186, 204, 158) !important;
-  --color-accent-2: rgb(200, 213, 174) !important;
+  --color-accent: hsl(84, 31%, 66%) !important;
+  --color-accent-1: hsl(83, 31.31%, 70.95%) !important;
+  --color-accent-2: hsl(81, 31.62%, 75.9%) !important;
   --color-accent-hsl: #596d3a !important;
   --color-blue: #316793 !important;
   --color-blue-rgb: rgb(49, 103, 147) !important;
@@ -1902,6 +1887,7 @@ html[saved-theme="dark"] body sup {
   --h6-weight: 650 !important;
   --headerFont: Noto Sans, sans-serif, Noto Sans, sans-serif !important;
   --heading-formatting: #404040 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: #cdd3c3 !important;
   --hr-color: #c4c4c4 !important;
   --hr-thickness: 1px !important;
@@ -1984,6 +1970,7 @@ html[saved-theme="dark"] body sup {
   --metadata-input-background-hover: #e1e1e1 !important;
   --metadata-input-font: Noto Sans, sans-serif !important;
   --metadata-input-font-size: 12px !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #555555 !important;
   --metadata-label-background-active: none !important;
   --metadata-label-background-hover: none !important;
@@ -2078,6 +2065,7 @@ html[saved-theme="dark"] body sup {
   --setting-items-background: #d7d7d7 !important;
   --setting-items-border-color: #404040 !important;
   --setting-items-radius: 0px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-s-thumb-size: 13px !important;
   --slider-thumb-border-color: #404040 !important;
   --slider-thumb-height: 16px !important;
@@ -2116,7 +2104,7 @@ html[saved-theme="dark"] body sup {
   --tab-stacked-text-align: left !important;
   --tab-switcher-background: #e1e1e1 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #e1e1e1, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(174, 195, 141) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(84, 31%, 66%) !important;
   --tab-text-color: #404040 !important;
   --tab-text-color-active: #404040 !important;
   --tab-text-color-focused: #404040 !important;
@@ -2200,6 +2188,7 @@ html[saved-theme="dark"] body sup {
   --vault-profile-color: #404040 !important;
   --vault-profile-color-hover: #404040 !important;
   --white: #a3a3a3 !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -3114,25 +3103,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(64, 64, 64);
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
   text-decoration: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(64, 64, 64);
-  font-family: "??", "??", "??", "Noto Sans", sans-serif;
-  text-decoration: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(225, 225, 225);
-  border-bottom-color: rgb(89, 109, 58);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(89, 109, 58);
-  border-right-color: rgb(89, 109, 58);
-  border-top-color: rgb(89, 109, 58);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(89, 109, 58);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(89, 109, 58);
