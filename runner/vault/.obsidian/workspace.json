@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-checkboxes/upper.md",
+                "file": "general.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "upper"
+              "title": "general"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-checkboxes/upper.md",
+                "file": "general.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of upper"
+              "title": "Outline of general"
             }
           }
         ],
@@ -194,42 +194,42 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-checkboxes/lower.md",
-    "theme-checkboxes/special.md",
-    "theme-embeds/tooltips.md",
-    "theme-embeds/note-embeds.md",
-    "theme-embeds/frontmatter.md",
-    "backlinks.md",
-    "embeds.md",
-    "media.md",
-    "tables.md",
-    "integrations.md",
-    "callouts.md",
     "headings.md",
-    "general.md",
-    "theme-checkboxes/upper.md",
-    "2026-03-09.md",
-    "specimen.md",
-    "theme-extras/its-theme/callouts/statblocks.md",
+    "theme-callouts/evangelion.md",
+    "theme-callouts/willemstad.md",
+    "theme-callouts/vortex.md",
+    "theme-callouts/velocity.md",
+    "theme-callouts/vauxhall.md",
+    "theme-callouts/universitario.md",
+    "theme-callouts/underwater.md",
+    "theme-callouts/ukiyo.md",
+    "theme-callouts/terraflow.md",
+    "theme-callouts/simple-color.md",
+    "theme-callouts/shiba-inu.md",
+    "theme-callouts/serenity.md",
+    "theme-callouts/sanctum-reborn.md",
+    "theme-callouts/sanctum.md",
+    "theme-callouts/salem.md",
+    "theme-callouts/ribbons.md",
+    "theme-callouts/reshi.md",
+    "theme-callouts/prism.md",
+    "theme-callouts/playground.md",
+    "theme-callouts/pln.md",
+    "theme-callouts/origami.md",
+    "theme-callouts/notswift.md",
+    "theme-callouts/minimalists-paradise.md",
+    "theme-callouts/marathon.md",
+    "theme-callouts/magicuser.md",
+    "theme-callouts",
     "theme-checkboxes",
-    "theme-extras/its-theme/checkboxes.md",
-    "theme-extras/its-theme/callouts/infoboxes.md",
-    "theme-extras/its-theme/callouts/columns.md",
     "theme-extras/its-theme/callouts/Image.png",
     "theme-extras/its-theme/callouts",
     "theme-extras/its-theme",
     "theme-extras",
-    "extras/its-theme/checkboxes.md",
-    "extras/its-theme/callouts/callouts.md",
     "extras/its-theme/callouts",
     "extras/its-theme",
     "extras",
-    "per-theme/80s-neon.md",
-    "per-theme/zenburn.md",
-    "per-theme/zen.md",
-    "per-theme/zario.md",
     "per-theme",
-    "folder/collapsed",
-    "folder/nested"
+    "folder/collapsed"
   ]
 }

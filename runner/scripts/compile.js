@@ -42,6 +42,12 @@ import {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+const CALLOUT_MANIFEST_PATH = join(__dirname, "../../theme-callout-map.json");
+let calloutManifest = {};
+if (existsSync(CALLOUT_MANIFEST_PATH)) {
+  calloutManifest = JSON.parse(readFileSync(CALLOUT_MANIFEST_PATH, "utf-8"));
+}
+
 let themeName;
 let optionSetName = "default";
 let mode;
@@ -251,6 +257,20 @@ function buildCSSStrings(themeData) {
   const lightData = quartzMappings.light || null;
   const darkPublishData = publishMappings.dark || null;
   const lightPublishData = publishMappings.light || null;
+
+  const customCalloutTypes = calloutManifest[themeName] || [];
+  const customCalloutQuartzEntries = customCalloutTypes
+    .map(
+      (type) =>
+        `    &[data-callout="${type}"] {\n      --color: rgb(var(--callout-${type})) !important;\n    }`,
+    )
+    .join("\n");
+  const customCalloutPublishEntries = customCalloutTypes
+    .map(
+      (type) =>
+        `  .callout[data-callout="${type}"] > .callout-title > .callout-icon > svg.svg-icon {\n    stroke: rgb(var(--callout-${type}));\n  }`,
+    )
+    .join("\n");
 
   const colorTargets = [
     "color",
@@ -1006,7 +1026,7 @@ body {
     &[data-callout="quote"] {
       --color: rgb(var(--callout-quote)) !important;
     }
-  }
+${customCalloutQuartzEntries ? "\n" + customCalloutQuartzEntries + "\n" : ""}  }
 }
 
 :root[saved-theme="light"] {
@@ -1184,7 +1204,7 @@ ${
   .callout[data-callout="quote"] > .callout-title > .callout-icon > svg.svg-icon {
     stroke: rgb(var(--callout-quote));
   }
-
+${customCalloutPublishEntries ? "\n" + customCalloutPublishEntries + "\n" : ""}
   pre > code,
   .markdown-rendered pre > code {
     line-height: 1.5;

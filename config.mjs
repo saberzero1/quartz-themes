@@ -1,3 +1,5 @@
+import { existsSync, readFileSync } from "fs";
+import { resolve } from "path";
 import {
   getCurrentFolder,
   getValueFromDictionary,
@@ -166,3 +168,20 @@ export const usedRules = [
   // Borders
   ".workspace-leaf-resize-handle",
 ];
+
+// Dynamically add custom callout selectors from manifest
+try {
+  const manifestPath = resolve(getCurrentFolder(), "theme-callout-map.json");
+  if (existsSync(manifestPath)) {
+    const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
+    const allCustomTypes = new Set();
+    for (const types of Object.values(manifest)) {
+      types.forEach((t) => allCustomTypes.add(t));
+    }
+    for (const type of allCustomTypes) {
+      usedRules.push(`.callout[data-callout="${type}"]`);
+    }
+  }
+} catch {
+  // Graceful fallback: manifest missing or malformed — proceed without custom callout rules
+}
