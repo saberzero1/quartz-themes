@@ -32,6 +32,12 @@ const HASH_CACHE_FILE = join(RESULTS_DIR, ".cli-theme-hashes.json");
 const FORCE_EXTRACTION = process.env.FORCE_EXTRACTION === "true";
 const FORCE_BASELINE = process.env.FORCE_BASELINE === "true";
 
+const CALLOUT_MANIFEST_PATH = resolve("./theme-callout-map.json");
+let calloutManifest = {};
+if (existsSync(CALLOUT_MANIFEST_PATH)) {
+  calloutManifest = JSON.parse(readFileSync(CALLOUT_MANIFEST_PATH, "utf-8"));
+}
+
 const APPEARANCE_FILE = join(VAULT_PATH, ".obsidian/appearance.json");
 const STYLE_SETTINGS_FILE = join(
   VAULT_PATH,
@@ -650,6 +656,17 @@ function buildSelectors() {
   ];
 }
 
+/**
+ * @param {string[]} customTypes - Custom callout type names from the manifest.
+ * @returns {string[]} Obsidian-format selectors matching config.js callout entry pattern.
+ */
+function buildCustomCalloutSelectors(customTypes) {
+  return customTypes.map(
+    (type) =>
+      `div.callout[data-callout-fold=""][data-callout-metadata=""][data-callout="${type}"]`,
+  );
+}
+
 async function extractFull(cli, selectors, retries = 2) {
   const script = generateFullExtractionScript(selectors);
   writeFileSync(TEMP_SCRIPT_FILE, script);
@@ -833,10 +850,10 @@ async function expandFileExplorer(cli) {
   `);
 }
 
-async function extractModeStyles(cli, selectors) {
+async function extractModeStyles(cli, selectors, extraFiles = []) {
   const modeResults = {};
 
-  for (const file of EXTRACTION_FILES) {
+  for (const file of [...EXTRACTION_FILES, ...extraFiles]) {
     const fileStart = Date.now();
     let fileResults = {};
     let attempts = 0;
@@ -951,6 +968,19 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
   const results = { dark: null, light: null };
   const selectors = buildSelectors();
 
+  // Look up custom callout types for this theme from the manifest
+  const customCalloutTypes = calloutManifest[themeName] || [];
+  const extraSelectors = buildCustomCalloutSelectors(customCalloutTypes);
+  const allSelectors = [...selectors, ...extraSelectors];
+  const extraFiles =
+    customCalloutTypes.length > 0 ? [`theme-callouts/${themeName}.md`] : [];
+
+  if (customCalloutTypes.length > 0) {
+    console.log(
+      `  Custom callouts: ${customCalloutTypes.join(", ")} (${customCalloutTypes.length} types)`,
+    );
+  }
+
   const modesToExtract = [];
   if (supportsDark) modesToExtract.push("dark");
   if (supportsLight) modesToExtract.push("light");
@@ -970,7 +1000,7 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
 
     await expandFileExplorer(cli);
 
-    const rawResults = await extractModeStyles(cli, selectors);
+    const rawResults = await extractModeStyles(cli, allSelectors, extraFiles);
     const modeBaseline = baseline ? baseline[mode] : null;
     results[mode] = deduplicateAgainstBaseline(rawResults, modeBaseline);
 

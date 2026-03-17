@@ -103,4 +103,8 @@ drop:
 [group('database')]
 rebuild: drop ingest
 
-everything-and-the-kitchen-sink: cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated
+[group('cli-extract'), doc('Generate custom callout manifest and vault files')]
+generate-callout-manifest:
+  node ./extensions/generate-callout-manifest.mjs
+
+everything-and-the-kitchen-sink: generate-callout-manifest cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated
