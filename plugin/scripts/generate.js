@@ -609,6 +609,19 @@ async function clearOutputDirectory() {
 }
 
 async function main() {
+  // When installed as a Quartz plugin (via subdir), the runner/ directory
+  // doesn't exist. The pre-generated src/themes/*.ts files are already
+  // present, so tsup can build directly from them — skip generation gracefully.
+  try {
+    await fs.access(configPath);
+    await fs.access(resultsDir);
+  } catch {
+    console.log(
+      "Skipping theme generation: runner dependencies not found (installed as plugin).",
+    );
+    process.exit(0);
+  }
+
   const { config } = await import(pathToFileURL(configPath).href);
   const configSource = await fs.readFile(configPath, "utf8");
   const aspectMap = buildAspectMap(configSource, config.length);
