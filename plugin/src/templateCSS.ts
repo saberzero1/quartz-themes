@@ -483,6 +483,14 @@ blockquote.callout {
       text-decoration: none;
 
     }
+    div#quartz-root.page[data-frame="canvas"] > div#quartz-body {
+      width: 100%;
+      max-width: 100%;
+      &> .canvas-frame {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 }
 `;
