@@ -1,0 +1,95 @@
+@keyframes cute-bounce {
+  0% {
+    transform: translateY(2px) scaleX(120%) scaleY(90%);
+  }
+  60% {
+    transform: translateY(-2px) scaleX(90%) scaleY(110%);
+  }
+  100% {
+    transform: translateY(2px) scaleX(120%) scaleY(90%);
+  }
+}
+
+/* Breathing glow uses brightness filter + box-shadow cycling — not obvious from property names */
+@keyframes heading-breath-h1 {
+  50% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+@keyframes heading-breath-h2 {
+  50% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+@keyframes heading-breath-h3 {
+  50% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+/* Horizontal rule radial-gradient expansion animation */
+@keyframes hr-spread {
+  0% {
+    background-size:
+      100% 100%,
+      100% 100%,
+      100% 100%;
+    background-position: center, center, center;
+  }
+  100% {
+    background-size:
+      196% 100%,
+      196% 100%,
+      100% 100%;
+    background-position: left, right, center;
+  }
+}
+
+@keyframes hr-spread-opacity {
+  0% {
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes checkbox-holo {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Scan line moves horizontally across search input — repeating-linear-gradient creates the line */
+@keyframes search-horizontal-scan {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

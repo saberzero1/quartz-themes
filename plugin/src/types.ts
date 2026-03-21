@@ -40,6 +40,8 @@ export interface ThemeData {
   meta: ThemeMeta;
   dark: AspectCSS;
   light: AspectCSS;
+  /** Optional extra CSS to inject alongside the theme (e.g. CRT effects, snow animations). */
+  extras?: string;
 }
 
 /** Metadata about a theme (modes, variations, fonts). */
