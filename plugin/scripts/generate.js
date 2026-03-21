@@ -10,6 +10,7 @@ const configPath = path.join(repoRoot, "runner", "scripts", "config.js");
 const themesJsonPath = path.join(repoRoot, "themes.json");
 const resultsDir = path.join(repoRoot, "runner", "results");
 const outputDir = path.join(repoRoot, "plugin", "src", "themes");
+const extrasDir = path.join(repoRoot, "plugin", "extras");
 
 const ASPECT_ORDER = [
   "base",
@@ -685,10 +686,21 @@ async function main() {
     const fileBaseName = normalizedId.replace(/[^a-zA-Z0-9-_]/g, "-");
     const outputPath = path.join(outputDir, `${fileBaseName}.ts`);
 
+    let extras = null;
+    try {
+      extras = await fs.readFile(
+        path.join(extrasDir, `${themeId}.css`),
+        "utf8",
+      );
+    } catch {
+      // No extras file for this theme — that's fine
+    }
+
     const moduleContent = renderThemeModule({
       meta,
       dark: darkAspectCSS,
       light: lightAspectCSS,
+      extras,
     });
 
     await fs.writeFile(outputPath, moduleContent, "utf8");

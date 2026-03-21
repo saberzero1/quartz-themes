@@ -1,0 +1,53 @@
+/* Fade-in effect */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+/* Glow pulsation for titles */
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 10px var(--text-normal),
+      0 0 20px var(--text-normal),
+      0 0 30px var(--color-purple),
+      0 0 40px var(--color-purple);
+  }
+  to {
+    text-shadow:
+      0 0 20px var(--text-normal),
+      0 0 30px var(--color-purple),
+      0 0 40px var(--color-purple),
+      0 0 50px var(--color-purple);
+  }
+}
+
+/* Pulsating text shadow */
+@keyframes pulsate {
+  from {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #5271ff,
+      0 0 40px #5271ff;
+  }
+  to {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #5271ff,
+      0 0 20px #5271ff;
+  }
+}
+
+.view-header-title {
+  animation: fadein 2s ease-in;
+}
+
+.nav-file-title.is-active {
+  animation: glow 2s ease-in-out infinite alternate;
+}

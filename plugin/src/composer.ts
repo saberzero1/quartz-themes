@@ -76,6 +76,11 @@ export function composeCSS(options: ThemeOptions): string {
     if (lightCSS) parts.push(lightCSS);
   }
 
+  // Append extras CSS (e.g. CRT effects, snow animations) after aspect CSS
+  if (baseTheme.extras) {
+    parts.push("/* extras */\n" + baseTheme.extras);
+  }
+
   return parts.join("\n") + "\n" + TEMPLATE_CSS;
 }
 
