@@ -1087,4 +1087,29 @@ html[saved-theme="light"] body kbd {
   color: rgb(92, 92, 92);
 }`,
   },
+  extras: `/* Slow gradient animation for accent elements */
+@keyframes gradient-slow {
+  from {
+    background-position: right;
+  }
+  to {
+    background-position: left;
+  }
+}
+
+/* Contrast reduction for inactive notes */
+@keyframes contrastFx {
+  0% {
+    filter: contrast(1);
+  }
+  100% {
+    filter: contrast(0.8);
+  }
+}
+
+.mod-left-split .workspace-leaf-content,
+.mod-right-split .workspace-leaf-content {
+  animation: contrastFx 0.3s ease forwards;
+}
+`,
 };

@@ -2720,4 +2720,16 @@ html[saved-theme="light"] body sup {
   color: rgb(36, 36, 36);
 }`,
   },
+  extras: `@keyframes cosmic-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+`,
 };

@@ -508,6 +508,10 @@ function renderThemeModule(themeData) {
     lines.push("  },");
   }
 
+  if (themeData.extras) {
+    lines.push(`  extras: ${toTemplateLiteral(themeData.extras)},`);
+  }
+
   lines.push("};");
   lines.push("");
   return lines.join("\n");
