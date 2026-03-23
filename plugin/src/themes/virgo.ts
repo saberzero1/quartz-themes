@@ -652,4 +652,15 @@ html[saved-theme="light"] body kbd {
   font-family: "??", "Code New Roman", romanFont, "LXGW WenKai Mono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
 }`,
   },
+  extras: `/* Gradient rainbow top border */
+body::before {
+  content: "";
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  border-top: 4px solid;
+  border-image-source: linear-gradient(90deg, #0d6efd, #8ed6fb 50%, #d32e9d);
+  border-image-slice: 1;
+}
+`,
 };

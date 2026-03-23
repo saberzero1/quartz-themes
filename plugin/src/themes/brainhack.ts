@@ -1697,4 +1697,13 @@ html[saved-theme="light"] body sup {
   color: rgb(67, 67, 67);
 }`,
   },
+  extras: `/* Screen/multiply blending for translucent layering effect */
+.workspace-leaf-content {
+  mix-blend-mode: screen;
+}
+
+.theme-light .workspace-leaf-content {
+  mix-blend-mode: multiply;
+}
+`,
 };
