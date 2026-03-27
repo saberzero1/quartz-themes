@@ -461,6 +461,38 @@ function buildCheckboxRules(checkboxMap) {
   const escapeAttrValue = (value) =>
     value.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
 
+  const normalizeMaskImage = (value) => {
+    if (!value || typeof value !== "string") return value;
+    const match = value.match(/url\((.*)\)/i);
+    if (!match) return value;
+    let content = match[1].trim();
+    if (
+      (content.startsWith('"') && content.endsWith('"')) ||
+      (content.startsWith("'") && content.endsWith("'"))
+    ) {
+      content = content.slice(1, -1);
+    }
+    if (content.includes("<svg")) {
+      const svgStart = content.indexOf("<svg");
+      const svg = content.slice(svgStart);
+      return svgToDataUri(svg);
+    }
+    if (content.startsWith("data:image/svg+xml")) {
+      if (content.includes("%3C")) return `url(\"${content}\")`;
+      if (content.includes("<svg")) {
+        const svgStart = content.indexOf("<svg");
+        const svg = content.slice(svgStart);
+        return svgToDataUri(svg);
+      }
+      const fixed = content.replace(
+        "data:image/svg+xml utf8,",
+        "data:image/svg+xml;utf8,",
+      );
+      return `url(\"${fixed}\")`;
+    }
+    return value;
+  };
+
   const grouped = {};
   for (const [key, value] of checkboxMap.entries()) {
     const lastSep = key.lastIndexOf("::");
@@ -489,8 +521,9 @@ function buildCheckboxRules(checkboxMap) {
       if (!value || value === "none" || value === "normal") continue;
 
       if (prop === "-webkit-mask-image") {
-        declarations.push(`  mask-image: ${value};`);
-        declarations.push(`  -webkit-mask-image: ${value};`);
+        const normalized = normalizeMaskImage(value);
+        declarations.push(`  mask-image: ${normalized};`);
+        declarations.push(`  -webkit-mask-image: ${normalized};`);
         if (!isPseudo) {
           declarations.push(`  mask-size: contain;`);
           declarations.push(`  -webkit-mask-size: contain;`);

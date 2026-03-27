@@ -2716,7 +2716,7 @@ body body.theme-light div.multi-select-pill {
   font-family: Marcellus, serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border: 0px solid rgb(0, 0, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4308,7 +4308,7 @@ body body.theme-dark div.multi-select-pill {
   font-family: Marcellus, serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border: 0px solid rgb(205, 205, 205);
+  border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
