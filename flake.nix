@@ -106,7 +106,7 @@
             with pkgs;
             [
               # Node.js and npm
-              nodejs_22
+              nodejs_24
               bun
               # Just command runner
               just
