@@ -186,14 +186,33 @@ function normalizeSvgDataUriValue(value) {
   const normalizedData = hasData ? normalizeHeaders(value) : value;
   if (hasData) {
     const wrappedMatch = normalizedData.match(
-      /^(\s*)url\(\"([\s\S]*)\"\)(\s*)$/i,
+      /^(\s*)url\(\"([\s\S]*)\"\)(.*)$/i,
     );
     if (wrappedMatch) {
-      const [, leading, content, trailing] = wrappedMatch;
+      const [, leading, rawContent, trailing] = wrappedMatch;
+      let content = rawContent;
+      if (content.startsWith("%22")) content = content.slice(3);
+      if (content.endsWith("%22")) content = content.slice(0, -3);
       if (/data:image\/svg\+xml/i.test(content)) {
         if (/<svg/i.test(content)) {
           const svgStart = content.search(/<svg/i);
           return `${leading}${svgToDataUri(content.slice(svgStart))}${trailing}`;
+        }
+        const commaIdx = content.indexOf(",");
+        if (commaIdx !== -1) {
+          let svgPart = content.slice(commaIdx + 1);
+          svgPart = svgPart.replace(/\\'/g, "'").replace(/\\"/g, '"');
+          try {
+            let decoded = decodeURIComponent(svgPart);
+            if (/%[0-9A-Fa-f]{2}/.test(decoded)) {
+              try {
+                decoded = decodeURIComponent(decoded);
+              } catch (_) {}
+            }
+            if (decoded.includes("<svg")) {
+              return `${leading}${svgToDataUri(decoded)}${trailing}`;
+            }
+          } catch (_) {}
         }
         const normalizedContent = encodeDataUriQuotes(
           normalizeHeaders(content),
@@ -220,6 +239,31 @@ function normalizeSvgDataUriValue(value) {
       const svgStart = normalized.search(/<svg/i);
       if (svgStart !== -1) {
         return svgToDataUri(normalized.slice(svgStart));
+      }
+      // Try to decode percent-encoded SVG content
+      let decodable = normalized;
+      // Strip leading %22 artifact from double-quoting
+      if (decodable.startsWith("%22")) {
+        decodable = decodable.slice(3);
+      }
+      if (decodable.endsWith("%22")) {
+        decodable = decodable.slice(0, -3);
+      }
+      const commaIdx = decodable.indexOf(",");
+      if (commaIdx !== -1 && /data:image\/svg\+xml/i.test(decodable)) {
+        let svgPart = decodable.slice(commaIdx + 1);
+        svgPart = svgPart.replace(/\\'/g, "'").replace(/\\"/g, '"');
+        try {
+          let decoded = decodeURIComponent(svgPart);
+          if (/%[0-9A-Fa-f]{2}/.test(decoded)) {
+            try {
+              decoded = decodeURIComponent(decoded);
+            } catch (_) {}
+          }
+          if (decoded.includes("<svg")) {
+            return svgToDataUri(decoded);
+          }
+        } catch (_) {}
       }
       const headerNormalized = normalizeHeaders(normalized);
       const quoteSafe = encodeDataUriQuotes(headerNormalized);
@@ -583,20 +627,27 @@ function buildCheckboxRules(checkboxMap) {
     }
     if (content.includes("<svg")) {
       const svgStart = content.indexOf("<svg");
-      const svg = content.slice(svgStart);
-      return svgToDataUri(svg);
+      return svgToDataUri(content.slice(svgStart));
     }
     if (content.startsWith("data:image/svg+xml")) {
-      if (content.includes("%3C")) return `url("${content}")`;
-      if (content.includes("<svg")) {
-        const svgStart = content.indexOf("<svg");
-        const svg = content.slice(svgStart);
-        return svgToDataUri(svg);
-      }
-      const fixed = content
-        .replace("data:image/svg+xml utf8,", "data:image/svg+xml,")
-        .replace("data:image/svg+xml;utf8,", "data:image/svg+xml,");
-      return `url("${fixed}")`;
+      const commaIdx = content.indexOf(",");
+      if (commaIdx === -1) return value;
+      let svgPart = content.slice(commaIdx + 1);
+      // Strip backslash escapes (e.g. \' → ' and \" → ")
+      svgPart = svgPart.replace(/\\'/g, "'").replace(/\\"/g, '"');
+      try {
+        let decoded = decodeURIComponent(svgPart);
+        // Fix double-encoding (%2528 → %28 → decoded again)
+        if (/%[0-9A-Fa-f]{2}/.test(decoded)) {
+          try {
+            decoded = decodeURIComponent(decoded);
+          } catch (_) {}
+        }
+        if (decoded.includes("<svg")) {
+          return svgToDataUri(decoded);
+        }
+      } catch (_) {}
+      return `url("${content}")`;
     }
     return value;
   };
@@ -1516,7 +1567,11 @@ ${bodyVarsStringDarkPublish}}
       );
       if (filteredEntries.length === 0) continue;
       const values = filteredEntries
-        .map(([k, v]) => `${k}: ${v.replaceAll('"??", ', "")};`)
+        .map(([k, v]) => {
+          const cleaned = v.replaceAll('"??", ', "");
+          const normalized = normalizeSvgDataUriValue(cleaned) || cleaned;
+          return `${k}: ${normalized};`;
+        })
         .join("\n  ");
       styles += `\n  ${key} {\n    ${values}\n  }\n`;
     }
