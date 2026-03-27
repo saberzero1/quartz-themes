@@ -478,7 +478,7 @@ function buildCheckboxRules(checkboxMap) {
       return svgToDataUri(svg);
     }
     if (content.startsWith("data:image/svg+xml")) {
-      if (content.includes("%3C")) return `url(\"${content}\")`;
+      if (content.includes("%3C")) return `url("${content}")`;
       if (content.includes("<svg")) {
         const svgStart = content.indexOf("<svg");
         const svg = content.slice(svgStart);
@@ -488,7 +488,7 @@ function buildCheckboxRules(checkboxMap) {
         "data:image/svg+xml utf8,",
         "data:image/svg+xml;utf8,",
       );
-      return `url(\"${fixed}\")`;
+      return `url("${fixed}")`;
     }
     return value;
   };
