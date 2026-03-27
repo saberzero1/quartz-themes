@@ -7,7 +7,7 @@ export const theme: ThemeData = {
   --accent-h: 135 !important;
   --accent-l: 65% !important;
   --accent-s: 94% !important;
-  --background-modifier-active-hover: rgba(82, 250, 124, 0.1) !important;
+  --background-modifier-active-hover: hsla(135, 94%, 65%, 0.1) !important;
   --background-modifier-border-hover: #976262 !important;
   --background-primary: linear-gradient(45deg, rgb(36, 10, 0) 0%, rgb(121, 9, 31) 35%, rgb(3, 3, 3) 100%) !important;
   --background-primary-alt: #6e021a81 !important;
@@ -20,7 +20,7 @@ export const theme: ThemeData = {
   --bases-group-heading-property-color: #bababa !important;
   --bases-table-cell-background-active: linear-gradient(45deg, rgb(36, 10, 0) 0%, rgb(121, 9, 31) 35%, rgb(3, 3, 3) 100%) !important;
   --bases-table-cell-background-disabled: #6e021a81 !important;
-  --bases-table-cell-background-selected: rgba(82, 250, 124, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(135, 94%, 65%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #50fa7b !important;
   --bases-table-group-background: #6e021a81 !important;
   --bases-table-header-background: linear-gradient(45deg, rgb(36, 10, 0) 0%, rgb(121, 9, 31) 35%, rgb(3, 3, 3) 100%) !important;
@@ -39,17 +39,17 @@ export const theme: ThemeData = {
   --caret-color: #f8f8f2 !important;
   --checkbox-border-color-hover: #bababa !important;
   --checkbox-color: #50fa7b !important;
-  --checkbox-color-hover: rgb(62, 249, 109) !important;
+  --checkbox-color-hover: hsl(135, 94%, 61.2%) !important;
   --checkbox-marker-color: linear-gradient(45deg, rgb(36, 10, 0) 0%, rgb(121, 9, 31) 35%, rgb(3, 3, 3) 100%) !important;
   --checklist-done-color: #bababa !important;
   --code-background: #282a36 !important;
   --code-normal: #F8F8F2 !important;
   --code-punctuation: #bababa !important;
   --codeFont: Hack Nerd Font, Source Code Pro, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color-collapsed: rgb(62, 249, 109) !important;
-  --color-accent: rgb(82, 250, 124) !important;
-  --color-accent-1: rgb(62, 249, 109) !important;
-  --color-accent-2: rgb(102, 250, 139) !important;
+  --collapse-icon-color-collapsed: hsl(135, 94%, 61.2%) !important;
+  --color-accent: hsl(135, 94%, 65%) !important;
+  --color-accent-1: hsl(135, 94%, 61.2%) !important;
+  --color-accent-2: hsl(135, 94%, 68.8%) !important;
   --color-accent-hsl: 135, 94%, 65% !important;
   --color-base-35: #976262 !important;
   --color-base-70: #bababa !important;
@@ -88,14 +88,14 @@ export const theme: ThemeData = {
   --frost3: #FF9CFA !important;
   --graph-line: #976262 !important;
   --graph-node: #bababa !important;
-  --graph-node-focused: rgb(62, 249, 109) !important;
+  --graph-node-focused: hsl(135, 94%, 61.2%) !important;
   --graph-text: #f8f8f2 !important;
   --gray: #bababa !important;
   --green: #b0f078 !important;
   --headerFont: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --highlight: rgba(82, 250, 124, 0.1) !important;
+  --highlight: hsla(135, 94%, 65%, 0.1) !important;
   --icon-color: #bababa !important;
-  --icon-color-active: rgb(62, 249, 109) !important;
+  --icon-color-active: hsl(135, 94%, 61.2%) !important;
   --icon-color-focused: #f8f8f2 !important;
   --icon-color-hover: #bababa !important;
   --input-disabled-border-color: transparent !important;
@@ -106,7 +106,7 @@ export const theme: ThemeData = {
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --input-unfocused-border-color: transparent !important;
   --interactive-accent: #50fa7b !important;
-  --interactive-accent-hover: rgb(62, 249, 109) !important;
+  --interactive-accent-hover: hsl(135, 94%, 61.2%) !important;
   --interactive-accent-hsl: 135, 94%, 65% !important;
   --interactive-accent-rgb: #f1fa8c !important;
   --interactive-hover: #976262 !important;
@@ -116,13 +116,13 @@ export const theme: ThemeData = {
   --light2: #fdf8ec !important;
   --light3: #5fa57a !important;
   --lightgray: #560000 !important;
-  --link-color: rgb(62, 249, 109) !important;
-  --link-color-hover: rgb(102, 250, 139) !important;
-  --link-external-color: rgb(62, 249, 109) !important;
-  --link-external-color-hover: rgb(102, 250, 139) !important;
-  --link-unresolved-color: rgb(62, 249, 109) !important;
-  --link-unresolved-decoration-color: rgba(82, 250, 124, 0.3) !important;
-  --list-marker-color-collapsed: rgb(62, 249, 109) !important;
+  --link-color: hsl(135, 94%, 61.2%) !important;
+  --link-color-hover: hsl(135, 94%, 68.8%) !important;
+  --link-external-color: hsl(135, 94%, 61.2%) !important;
+  --link-external-color-hover: hsl(135, 94%, 68.8%) !important;
+  --link-unresolved-color: hsl(135, 94%, 61.2%) !important;
+  --link-unresolved-decoration-color: hsla(135, 94%, 65%, 0.3) !important;
+  --list-marker-color-collapsed: hsl(135, 94%, 61.2%) !important;
   --list-marker-color-hover: #bababa !important;
   --markup-code: #ffb86c !important;
   --menu-background: #560000 !important;
@@ -135,10 +135,10 @@ export const theme: ThemeData = {
   --nav-heading-color: #f8f8f2 !important;
   --nav-heading-color-collapsed-hover: #bababa !important;
   --nav-heading-color-hover: #f8f8f2 !important;
-  --nav-item-background-selected: rgba(82, 250, 124, 0.15) !important;
+  --nav-item-background-selected: hsla(135, 94%, 65%, 0.15) !important;
   --nav-item-color: #bababa !important;
   --nav-item-color-active: #f8f8f2 !important;
-  --nav-item-color-highlighted: rgb(62, 249, 109) !important;
+  --nav-item-color-highlighted: hsl(135, 94%, 61.2%) !important;
   --nav-item-color-hover: #f8f8f2 !important;
   --nav-item-color-selected: #f8f8f2 !important;
   --nav-tag-color-active: #bababa !important;
@@ -150,7 +150,7 @@ export const theme: ThemeData = {
   --pill-border-color-hover: #976262 !important;
   --pill-color: #bababa !important;
   --pill-color-hover: #f8f8f2 !important;
-  --pill-color-remove-hover: rgb(62, 249, 109) !important;
+  --pill-color-remove-hover: hsl(135, 94%, 61.2%) !important;
   --prompt-background: linear-gradient(45deg, rgb(36, 10, 0) 0%, rgb(121, 9, 31) 35%, rgb(3, 3, 3) 100%) !important;
   --purple: #f899e7 !important;
   --red: #d63f4e !important;
@@ -159,7 +159,7 @@ export const theme: ThemeData = {
   --search-clear-button-color: #bababa !important;
   --search-icon-color: #bababa !important;
   --search-result-background: linear-gradient(45deg, rgb(36, 10, 0) 0%, rgb(121, 9, 31) 35%, rgb(3, 3, 3) 100%) !important;
-  --secondary: rgb(62, 249, 109) !important;
+  --secondary: hsl(135, 94%, 61.2%) !important;
   --setting-group-heading-color: #f8f8f2 !important;
   --setting-items-background: #6e021a81 !important;
   --sideRed: #910b0bcc !important;
@@ -172,34 +172,34 @@ export const theme: ThemeData = {
   --tab-divider-color: #976262 !important;
   --tab-switcher-background: #560000 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #560000, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(82, 250, 124) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(135, 94%, 65%) !important;
   --tab-text-color-active: #bababa !important;
   --tab-text-color-focused: #bababa !important;
   --tab-text-color-focused-active: #bababa !important;
   --tab-text-color-focused-active-current: #f8f8f2 !important;
-  --tab-text-color-focused-highlighted: rgb(62, 249, 109) !important;
+  --tab-text-color-focused-highlighted: hsl(135, 94%, 61.2%) !important;
   --table-drag-handle-background-active: #50fa7b !important;
   --table-drag-handle-color-active: #282a36 !important;
   --table-header-color: #f8f8f2 !important;
-  --table-selection: rgba(82, 250, 124, 0.1) !important;
+  --table-selection: hsla(135, 94%, 65%, 0.1) !important;
   --table-selection-border-color: #50fa7b !important;
-  --tag-background: rgba(82, 250, 124, 0.1) !important;
-  --tag-background-hover: rgba(82, 250, 124, 0.2) !important;
-  --tag-border-color: rgba(82, 250, 124, 0.15) !important;
-  --tag-border-color-hover: rgba(82, 250, 124, 0.15) !important;
-  --tag-color: rgb(62, 249, 109) !important;
-  --tag-color-hover: rgb(62, 249, 109) !important;
-  --tertiary: rgb(102, 250, 139) !important;
+  --tag-background: hsla(135, 94%, 65%, 0.1) !important;
+  --tag-background-hover: hsla(135, 94%, 65%, 0.2) !important;
+  --tag-border-color: hsla(135, 94%, 65%, 0.15) !important;
+  --tag-border-color-hover: hsla(135, 94%, 65%, 0.15) !important;
+  --tag-color: hsl(135, 94%, 61.2%) !important;
+  --tag-color-hover: hsl(135, 94%, 61.2%) !important;
+  --tertiary: hsl(135, 94%, 68.8%) !important;
   --text-a: #ff79c6 !important;
   --text-a-hover: #ff79c0 !important;
-  --text-accent: rgb(62, 249, 109) !important;
-  --text-accent-hover: rgb(102, 250, 139) !important;
+  --text-accent: hsl(135, 94%, 61.2%) !important;
+  --text-accent-hover: hsl(135, 94%, 68.8%) !important;
   --text-link: #b0f078 !important;
   --text-mark: #a1ad1dcf !important;
   --text-muted: #bababa !important;
   --text-normal: #f8f8f2 !important;
   --text-on-accent: #282a36 !important;
-  --text-selection: rgba(82, 250, 124, 0.5) !important;
+  --text-selection: hsla(135, 94%, 65%, 0.5) !important;
   --text-tag: #50fa7b !important;
   --text-title-h1: #bd93f9 !important;
   --text-title-h2: #ffb86c !important;
@@ -207,7 +207,7 @@ export const theme: ThemeData = {
   --text-title-h4: #cc35da !important;
   --text-title-h5: #f1fa8c !important;
   --text-title-h6: #3ca4e0 !important;
-  --textHighlight: rgba(82, 250, 124, 0.1) !important;
+  --textHighlight: hsla(135, 94%, 65%, 0.1) !important;
   --titleFont: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #560000 !important;
   --titlebar-background-focused: #560000b7 !important;
@@ -783,20 +783,6 @@ html body ::-webkit-scrollbar-track {
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(186, 186, 186);
   text-decoration: rgb(186, 186, 186);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(186, 186, 186);
-  text-decoration: rgb(186, 186, 186);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(186, 186, 186);
-  border-left-color: rgb(186, 186, 186);
-  border-right-color: rgb(186, 186, 186);
-  border-top-color: rgb(186, 186, 186);
-  color: rgb(186, 186, 186);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(186, 186, 186);

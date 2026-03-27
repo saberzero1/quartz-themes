@@ -8,6 +8,8 @@
 import type { AspectCSS, AspectKey, ThemeData, ThemeOptions } from "./types";
 import { TEMPLATE_CSS } from "./templateCSS";
 import { resolveThemeId, loadTheme } from "./registry";
+import { generateCalloutIconCSS } from "./icons/callout-icons";
+import { generateCheckboxIconCSS } from "./icons/checkbox-icons";
 
 /** All aspect keys in the order they should appear in the CSS output. */
 const ASPECT_ORDER: AspectKey[] = [
@@ -81,7 +83,9 @@ export function composeCSS(options: ThemeOptions): string {
     parts.push("/* extras */\n" + baseTheme.extras);
   }
 
-  return parts.join("\n") + "\n" + TEMPLATE_CSS;
+  const iconCSS = generateCalloutIconCSS() + "\n\n" + generateCheckboxIconCSS();
+
+  return iconCSS + "\n\n" + parts.join("\n") + "\n" + TEMPLATE_CSS;
 }
 
 /**

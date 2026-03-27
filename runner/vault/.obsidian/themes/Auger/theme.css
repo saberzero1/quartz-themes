@@ -1,4 +1,4 @@
-/*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -248,6 +248,7 @@ body {
   --text-normal: var(--auger-light-text-normal);
   --text-muted: #8a8785;
   --text-highlight-bg: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.15);
+  --text-selection: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.35);
   --bold-color: #FF3B30;
   --italic-color: #FF9500;
   --background-modifier-border: #e5e4e3;
@@ -304,6 +305,7 @@ body {
   --text-normal: var(--color-paper);
   --text-muted: var(--color-base-100);
   --text-highlight-bg: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.2);
+  --text-selection: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.45);
   --bold-color: var(--color-red);
   --italic-color: var(--color-yellow);
   --background-modifier-border: #3a3a3c;
@@ -516,6 +518,12 @@ a:hover {
   color: var(--text-accent-hover);
   text-decoration-line: underline;
 }
+input::selection, textarea::selection {
+  background-color: var(--text-selection);
+}
+input, textarea {
+  caret-color: var(--text-accent);
+}
 .modal-close-button {
   z-index: var(--layer-modal);
   color: var(--text-muted);
@@ -531,7 +539,7 @@ a:hover {
   border-color: var(--text-accent);
 }
 .cm-s-obsidian .cm-selection, ::selection {
-  background-color: var(--text-highlight-bg);
+  background-color: var(--text-selection);
 }
 .markdown-rendered mark, .cm-s-obsidian .cm-highlight {
   border-radius: var(--radius-sm);

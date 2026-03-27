@@ -57,6 +57,16 @@ const defaults = {
     "transition-property",
     "transition-timing-function",
   ],
+  animation: [
+    "animation-name",
+    "animation-duration",
+    "animation-timing-function",
+    "animation-delay",
+    "animation-iteration-count",
+    "animation-direction",
+    "animation-fill-mode",
+    "animation-play-state",
+  ],
   whiteSpace: [
     "white-space-collapse",
     "text-wrap-mode",
@@ -77,6 +87,8 @@ const sets = {
     "color",
     "cursor",
     "filter",
+    "backdrop-filter",
+    "box-shadow",
     "font-family",
     //"font-size",
     "font-weight",
@@ -90,7 +102,9 @@ const sets = {
     "text-decoration-style",
     "text-decoration-thickness",
     "transition",
+    "transform",
     "user-select",
+    ...defaults.animation,
   ],
   // Tables
   table: [
@@ -247,7 +261,7 @@ const sets = {
   callouts: {
     container: [
       "--callout-color",
-      //"--callout-icon",
+      "--callout-icon",
       "background-color",
       //"border-style",
       //"border-color",

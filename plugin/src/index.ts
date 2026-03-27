@@ -25,3 +25,13 @@ export type {
   QuartzTransformerPlugin,
   StaticResources,
 } from "@quartz-community/types";
+
+export {
+  generateCalloutIconCSS,
+  generateCheckboxIconCSS,
+  resolveCalloutIcon,
+  resolveCheckboxIcon,
+  CALLOUT_ICON_MAP,
+  CALLOUT_ALIASES,
+  CHECKBOX_ICON_MAP,
+} from "./icons/index";

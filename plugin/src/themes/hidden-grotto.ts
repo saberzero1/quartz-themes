@@ -38,12 +38,10 @@ export const theme: ThemeData = {
   --bases-table-header-color: hsl(33, 33%, 86%) !important;
   --bases-table-summary-background: hsl(240, 18%, 24%) !important;
   --blockquote-border-color: hsl(16, 80%, 60%) !important;
-  --blockquote-color: hsl(33, 33%, 94%) !important;
   --blur-background: none !important;
-  --bold-weight: 600 !important;
+  --bodyFont: 'Quicksand' !important;
   --callout-default: hsl(33, 33%, 94%);
   --callout-radius: 0px;
-  --callout-title-weight: 600;
   --canvas-background: hsl(240, 18%, 24%) !important;
   --canvas-card-label-color: hsl(33, 33%, 86%) !important;
   --canvas-controls-radius: 0px !important;
@@ -70,6 +68,7 @@ export const theme: ThemeData = {
   --code-string: hsl(120, 30%, 50%) !important;
   --code-tag: hsl(0, 30%, 60%) !important;
   --code-value: hsl(270, 30%, 60%) !important;
+  --codeFont: 'Quicksand' !important;
   --collapse-icon-color: hsl(33, 33%, 86%) !important;
   --collapse-icon-color-collapsed: hsl(16, 80%, 60%) !important;
   --color-accent: hsl(16, 80%, 60%) !important;
@@ -84,7 +83,17 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid hsl(16, 80%, 60%) !important;
   --file-header-background: hsl(240, 18%, 24%) !important;
   --file-header-background-focused: hsl(240, 18%, 24%) !important;
+  --file-header-font: 'Quicksand' !important;
   --flair-color: hsl(33, 33%, 94%) !important;
+  --font-interface: 'Quicksand' !important;
+  --font-interface-override: 'Quicksand' !important;
+  --font-mermaid: 'Quicksand' !important;
+  --font-monospace: 'Quicksand' !important;
+  --font-monospace-override: 'Quicksand' !important;
+  --font-print: 'Quicksand' !important;
+  --font-print-override: 'Quicksand' !important;
+  --font-text: 'Quicksand' !important;
+  --font-text-override: 'Quicksand' !important;
   --footnote-id-color: hsl(33, 33%, 86%) !important;
   --footnote-id-color-no-occurrences: hsl(33, 33%, 86%) !important;
   --footnote-radius: 0px !important;
@@ -107,7 +116,6 @@ export const theme: ThemeData = {
   --grotto-bases-color: hsl(33, 33%, 94%) !important;
   --grotto-bases-header-background-color: hsl(240, 18%, 36%) !important;
   --grotto-blockquote-background-color: transparent !important;
-  --grotto-blockquote-border-color: hsl(16, 80%, 60%) !important;
   --grotto-blockquote-color: hsl(33, 33%, 94%) !important;
   --grotto-blur: 0px !important;
   --grotto-bold-color: hsl(16, 80%, 60%) !important;
@@ -115,7 +123,9 @@ export const theme: ThemeData = {
   --grotto-button-background-color: hsl(16, 80%, 60%) !important;
   --grotto-button-border-color: hsl(33, 33%, 94%) !important;
   --grotto-button-border-radius: 0rem !important;
+  --grotto-button-border-width: 1px !important;
   --grotto-button-color: hsl(33, 33%, 94%) !important;
+  --grotto-button-outline-width: 1px !important;
   --grotto-calendar-background-color: transparent !important;
   --grotto-calendar-border-color: hsl(33, 33%, 94%) !important;
   --grotto-calendar-border-radius: 0rem !important;
@@ -177,9 +187,11 @@ export const theme: ThemeData = {
   --grotto-dropdown-background-color: hsl(16, 80%, 60%) !important;
   --grotto-dropdown-border-color: hsl(33, 33%, 94%) !important;
   --grotto-dropdown-border-radius: 0rem !important;
+  --grotto-dropdown-border-width: 1px !important;
   --grotto-dropdown-color: hsl(33, 33%, 94%) !important;
   --grotto-dropdown-option-background-color: hsl(240, 18%, 24%) !important;
   --grotto-dropdown-option-color: hsl(33, 33%, 94%) !important;
+  --grotto-dropdown-outline-width: 1px !important;
   --grotto-embed-background-color: transparent !important;
   --grotto-embed-border-color: hsl(33, 33%, 94%) !important;
   --grotto-embed-border-radius: 0rem !important;
@@ -196,7 +208,10 @@ export const theme: ThemeData = {
   --grotto-filenav-color: hsl(33, 33%, 94%) !important;
   --grotto-filenav-tag-background-color: hsl(33, 33%, 94%) !important;
   --grotto-filenav-tag-color: hsl(240, 18%, 20%) !important;
+  --grotto-font-main: 'Quicksand' !important;
   --grotto-font-weight: 500 !important;
+  --grotto-global-border-radius: 0rem !important;
+  --grotto-global-border-width: 1px !important;
   --grotto-graph-controls-background-color: hsl(240, 18%, 36%) !important;
   --grotto-graph-controls-border-color: hsl(33, 33%, 94%) !important;
   --grotto-graph-controls-border-radius: 0rem !important;
@@ -271,6 +286,7 @@ export const theme: ThemeData = {
   --grotto-notice-background-color: hsl(16, 80%, 60%) !important;
   --grotto-notice-border-color: hsl(33, 33%, 94%) !important;
   --grotto-notice-border-radius: 0rem !important;
+  --grotto-notice-border-width: 1px !important;
   --grotto-notice-color: hsl(33, 33%, 94%) !important;
   --grotto-progress-background-color: hsl(33, 33%, 94%) !important;
   --grotto-progress-border-color: hsl(33, 33%, 94%) !important;
@@ -279,6 +295,7 @@ export const theme: ThemeData = {
   --grotto-prompt-background-color: hsl(240, 18%, 24%) !important;
   --grotto-prompt-border-color: hsl(33, 33%, 94%) !important;
   --grotto-prompt-border-radius: 0rem !important;
+  --grotto-prompt-border-width: 1px !important;
   --grotto-prompt-color: hsl(33, 33%, 94%) !important;
   --grotto-properties-background-color: hsl(240, 18%, 24%) !important;
   --grotto-properties-border-color: hsl(33, 33%, 94%) !important;
@@ -302,7 +319,7 @@ export const theme: ThemeData = {
   --grotto-settings-color: hsl(33, 33%, 94%) !important;
   --grotto-slider-background-color: hsl(33, 33%, 94%) !important;
   --grotto-slider-border-color: hsl(240, 18%, 24%) !important;
-  --grotto-statusbar-background-color: hsl(240, 18%, 36%) !important;
+  --grotto-statusbar-background-color: hsl(240, 18%, 20%) !important;
   --grotto-statusbar-border-color: hsl(33, 33%, 94%) !important;
   --grotto-statusbar-border-radius: 0rem !important;
   --grotto-statusbar-color: hsl(33, 33%, 94%) !important;
@@ -335,23 +352,27 @@ export const theme: ThemeData = {
   --grotto-tag-border-radius: 0rem !important;
   --grotto-tag-border-width: 1.5px !important;
   --grotto-tag-color: hsl(240, 18%, 24%) !important;
+  --grotto-tag-padding-x: 0.4rem !important;
+  --grotto-tag-padding-y: 0.1rem !important;
   --grotto-tag-pointer-events: none !important;
   --grotto-tag-size: 0.8rem !important;
   --grotto-tag-weight: 600 !important;
+  --grotto-text-color-on-accent: hsl(33, 33%, 94%) !important;
   --grotto-titlebar-border-radius: 0rem !important;
   --grotto-titlebar-color: hsl(33, 33%, 94%) !important;
-  --grotto-toggle-background-color: hsl(240, 18%, 20%) !important;
+  --grotto-toggle-background-color: hsl(240, 18%, 24%) !important;
   --grotto-toggle-border-color: hsl(33, 33%, 94%) !important;
+  --grotto-toggle-border-width: 1px !important;
+  --grotto-toggle-enabled-background-color: hsl(16, 80%, 60%) !important;
   --grotto-tooltip-background-color: hsl(240, 18%, 36%) !important;
   --grotto-tooltip-border-color: hsl(33, 33%, 94%) !important;
   --grotto-tooltip-border-radius: 0rem !important;
+  --grotto-tooltip-border-width: 1px !important;
   --grotto-tooltip-color: hsl(33, 33%, 94%) !important;
-  --grotto-ui-border-radius: 0rem !important;
-  --grotto-ui-border-width: 1px !important;
   --grotto-view-header-background-color: hsl(240, 18%, 36%) !important;
-  --grotto-view-header-border-radius: 0rem !important;
   --grotto-view-header-color: hsl(33, 33%, 94%) !important;
   --grotto-view-header-sidebar-toggle-display: none !important;
+  --headerFont: 'Quicksand' !important;
   --heading-formatting: hsl(33, 33%, 86%) !important;
   --heading-spacing: 0rem !important;
   --highlight: hsl(240, 18%, 36%) !important;
@@ -375,15 +396,15 @@ export const theme: ThemeData = {
   --link-unresolved-color: hsl(16, 80%, 60%) !important;
   --link-unresolved-decoration-color: hsla(16, 80%, 60%, 0.3) !important;
   --list-bullet-radius: 0rem !important;
-  --list-indent: 2.25em !important;
   --list-marker-color: hsl(33, 33%, 94%) !important;
   --list-marker-color-collapsed: hsl(33, 33%, 94%) !important;
   --list-marker-color-hover: hsl(33, 33%, 94%) !important;
   --menu-background: hsl(240, 18%, 20%) !important;
   --menu-radius: 0px !important;
   --menu-shadow: none !important;
-  --metadata-input-height: 28px !important;
+  --metadata-input-font: 'Quicksand' !important;
   --metadata-input-text-color: hsl(33, 33%, 94%) !important;
+  --metadata-label-font: 'Quicksand' !important;
   --metadata-label-text-color: hsl(33, 33%, 86%) !important;
   --metadata-label-text-color-hover: hsl(33, 33%, 86%) !important;
   --modal-background: hsl(240, 18%, 24%) !important;
@@ -440,7 +461,6 @@ export const theme: ThemeData = {
   --shadow-l: none !important;
   --shadow-s: none !important;
   --shadow-xs: none !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-y: -7px !important;
   --status-bar-background: hsl(240, 18%, 20%) !important;
   --status-bar-radius: 0px 0 0 0 !important;
@@ -468,20 +488,15 @@ export const theme: ThemeData = {
   --table-header-background-hover: transparent !important;
   --table-header-border-color: hsl(33, 33%, 94%) !important;
   --table-header-color: hsl(33, 33%, 94%) !important;
-  --table-header-weight: 600 !important;
   --table-selection: hsla(16, 80%, 60%, 0.1) !important;
   --table-selection-border-color: hsl(16, 80%, 60%) !important;
   --table-text-color: hsl(33, 33%, 94%) !important;
   --tag-background: hsla(16, 80%, 60%, 0.1) !important;
   --tag-background-hover: hsla(16, 80%, 60%, 0.2) !important;
-  --tag-border-color: hsl(33, 33%, 94%) !important;
+  --tag-border-color: hsla(16, 80%, 60%, 0.15) !important;
   --tag-border-color-hover: hsla(16, 80%, 60%, 0.15) !important;
-  --tag-border-width: 1.5px !important;
   --tag-color: hsl(16, 80%, 60%) !important;
   --tag-color-hover: hsl(16, 80%, 60%) !important;
-  --tag-padding-x: 0.4rem !important;
-  --tag-padding-y: 0.1rem !important;
-  --tag-radius: 0rem !important;
   --tertiary: hsl(16, 80%, 60%) !important;
   --text-accent: hsl(16, 80%, 60%) !important;
   --text-accent-hover: hsl(16, 80%, 60%) !important;
@@ -494,6 +509,7 @@ export const theme: ThemeData = {
   --text-success: hsl(100, 50%, 50%) !important;
   --text-warning: hsl(30, 50%, 50%) !important;
   --textHighlight: hsl(240, 18%, 36%) !important;
+  --titleFont: 'Quicksand' !important;
   --titlebar-background: hsl(240, 18%, 20%) !important;
   --titlebar-background-focused: hsl(240, 18%, 20%) !important;
   --titlebar-text-color: hsl(33, 33%, 86%) !important;
@@ -507,7 +523,6 @@ export const theme: ThemeData = {
   --vault-profile-color: hsl(33, 33%, 94%) !important;
   --vault-profile-color-hover: hsl(33, 33%, 94%) !important;
   --workspace-background-translucent: transparent !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -547,7 +562,7 @@ html[saved-theme="dark"] body div#quartz-root {
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 800;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: rgb(235, 115, 71);
@@ -556,7 +571,7 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: rgb(235, 115, 71);
@@ -565,7 +580,7 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
 
 html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: rgb(235, 115, 71);
@@ -574,7 +589,7 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
 
 html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 800;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: rgb(235, 115, 71);
@@ -584,7 +599,7 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
 html[saved-theme="dark"] body .text-highlight {
   background-color: rgb(75, 75, 108);
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(245, 240, 235) none 0px;
   text-decoration: rgb(245, 240, 235);
@@ -593,7 +608,7 @@ html[saved-theme="dark"] body .text-highlight {
 
 html[saved-theme="dark"] body del {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(245, 240, 235) none 0px;
   text-decoration: line-through rgb(245, 240, 235);
@@ -602,7 +617,7 @@ html[saved-theme="dark"] body del {
 
 html[saved-theme="dark"] body p {
   color: rgb(231, 220, 208);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(231, 220, 208) none 0px;
   text-decoration: rgb(231, 220, 208);
@@ -610,7 +625,7 @@ html[saved-theme="dark"] body p {
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: underline rgb(235, 115, 71);
@@ -619,7 +634,7 @@ html[saved-theme="dark"] body p {
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: underline rgb(235, 115, 71);
@@ -628,7 +643,7 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
 
 html[saved-theme="dark"] body a.internal.broken {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: underline rgba(235, 115, 71, 0.3);
@@ -670,7 +685,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
-  font-family: "??";
+  font-family: Quicksand;
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(245, 240, 235);
@@ -681,7 +696,7 @@ html[saved-theme="dark"] body blockquote {
 
 html[saved-theme="dark"] body table {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
   margin-top: 0px;
   width: 187.766px;
 }
@@ -712,7 +727,7 @@ html[saved-theme="dark"] body th {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
@@ -811,7 +826,7 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body figure {
@@ -881,11 +896,11 @@ html[saved-theme="dark"] body .transclude-inner {
   padding-bottom: 16px;
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
@@ -1241,7 +1256,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
@@ -1258,7 +1273,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(245, 240, 235) none 0px;
   text-decoration: rgb(245, 240, 235);
@@ -1365,7 +1380,7 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
 }
 
@@ -1375,37 +1390,37 @@ html[saved-theme="dark"] body a.internal.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body h2 {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body h3 {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body h4 {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body h5 {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body h6 {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1469,44 +1484,16 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   text-decoration: rgb(245, 240, 235);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   text-decoration: rgb(245, 240, 235);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(245, 240, 235);
-  font-family: "??";
-  font-weight: 500;
-  text-decoration: rgb(245, 240, 235);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(235, 115, 71);
-  border-bottom-color: rgb(245, 240, 235);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: rgb(245, 240, 235);
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-right-color: rgb(245, 240, 235);
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: rgb(245, 240, 235);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  color: rgb(245, 240, 235);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
   font-weight: 500;
@@ -1523,7 +1510,7 @@ html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(
   color: rgb(245, 240, 235);
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(75, 75, 108);
+  background-color: rgb(42, 42, 60);
   border-bottom-color: rgb(245, 240, 235);
   border-bottom-width: 1px;
   border-left-color: rgb(245, 240, 235);
@@ -1532,7 +1519,7 @@ html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(
   border-top-color: rgb(245, 240, 235);
   border-top-left-radius: 0px;
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -1541,7 +1528,7 @@ html[saved-theme="dark"] body footer ul li a {
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
 }
 
@@ -1560,7 +1547,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(245, 240, 235);
@@ -1571,7 +1558,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
@@ -1615,7 +1602,7 @@ html[saved-theme="dark"] body .darkmode svg {
 
 html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(231, 220, 208);
-  font-family: "??";
+  font-family: Quicksand;
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(245, 240, 235);
@@ -1627,7 +1614,7 @@ html[saved-theme="dark"] body .breadcrumb-element p {
 
 html[saved-theme="dark"] body .metadata {
   color: rgb(231, 220, 208);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
@@ -1636,16 +1623,16 @@ html[saved-theme="dark"] body .metadata-properties {
   border-right-color: rgb(231, 220, 208);
   border-top-color: rgb(231, 220, 208);
   color: rgb(231, 220, 208);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(75, 75, 108);
+  background-color: rgb(42, 42, 60);
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1670,7 +1657,7 @@ html[saved-theme="dark"] body input[type=text] {
   border-top-color: rgb(245, 240, 235);
   border-top-width: 1px;
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body kbd {
@@ -1684,7 +1671,7 @@ html[saved-theme="dark"] body kbd {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="dark"] body progress {
@@ -1738,12 +1725,10 @@ html[saved-theme="dark"] body sup {
   --bases-table-header-color: hsl(240, 18%, 36%) !important;
   --bases-table-summary-background: hsl(33, 33%, 94%) !important;
   --blockquote-border-color: hsl(16, 80%, 60%) !important;
-  --blockquote-color: hsl(240, 18%, 24%) !important;
   --blur-background: none !important;
-  --bold-weight: 600 !important;
+  --bodyFont: 'Quicksand' !important;
   --callout-default: hsl(240, 18%, 24%);
   --callout-radius: 0px;
-  --callout-title-weight: 600;
   --canvas-background: hsl(33, 33%, 94%) !important;
   --canvas-card-label-color: hsl(240, 18%, 36%) !important;
   --canvas-controls-radius: 0px !important;
@@ -1770,6 +1755,7 @@ html[saved-theme="dark"] body sup {
   --code-string: hsl(120, 30%, 50%) !important;
   --code-tag: hsl(0, 30%, 60%) !important;
   --code-value: hsl(270, 30%, 60%) !important;
+  --codeFont: 'Quicksand' !important;
   --collapse-icon-color: hsl(240, 18%, 36%) !important;
   --collapse-icon-color-collapsed: hsl(16, 80%, 60%) !important;
   --color-accent: hsl(16, 80%, 60%) !important;
@@ -1784,7 +1770,17 @@ html[saved-theme="dark"] body sup {
   --embed-border-start: 2px solid hsl(16, 80%, 60%) !important;
   --file-header-background: hsl(33, 33%, 94%) !important;
   --file-header-background-focused: hsl(33, 33%, 94%) !important;
+  --file-header-font: 'Quicksand' !important;
   --flair-color: hsl(240, 18%, 24%) !important;
+  --font-interface: 'Quicksand' !important;
+  --font-interface-override: 'Quicksand' !important;
+  --font-mermaid: 'Quicksand' !important;
+  --font-monospace: 'Quicksand' !important;
+  --font-monospace-override: 'Quicksand' !important;
+  --font-print: 'Quicksand' !important;
+  --font-print-override: 'Quicksand' !important;
+  --font-text: 'Quicksand' !important;
+  --font-text-override: 'Quicksand' !important;
   --footnote-id-color: hsl(240, 18%, 36%) !important;
   --footnote-id-color-no-occurrences: hsl(240, 18%, 36%) !important;
   --footnote-radius: 0px !important;
@@ -1807,7 +1803,6 @@ html[saved-theme="dark"] body sup {
   --grotto-bases-color: hsl(240, 18%, 24%) !important;
   --grotto-bases-header-background-color: hsl(33, 33%, 86%) !important;
   --grotto-blockquote-background-color: transparent !important;
-  --grotto-blockquote-border-color: hsl(16, 80%, 60%) !important;
   --grotto-blockquote-color: hsl(240, 18%, 24%) !important;
   --grotto-blur: 0px !important;
   --grotto-bold-color: hsl(16, 80%, 60%) !important;
@@ -1815,7 +1810,9 @@ html[saved-theme="dark"] body sup {
   --grotto-button-background-color: hsl(16, 80%, 60%) !important;
   --grotto-button-border-color: hsl(240, 18%, 24%) !important;
   --grotto-button-border-radius: 0rem !important;
+  --grotto-button-border-width: 1px !important;
   --grotto-button-color: hsl(33, 33%, 94%) !important;
+  --grotto-button-outline-width: 1px !important;
   --grotto-calendar-background-color: transparent !important;
   --grotto-calendar-border-color: hsl(240, 18%, 24%) !important;
   --grotto-calendar-border-radius: 0rem !important;
@@ -1877,9 +1874,11 @@ html[saved-theme="dark"] body sup {
   --grotto-dropdown-background-color: hsl(16, 80%, 60%) !important;
   --grotto-dropdown-border-color: hsl(240, 18%, 24%) !important;
   --grotto-dropdown-border-radius: 0rem !important;
+  --grotto-dropdown-border-width: 1px !important;
   --grotto-dropdown-color: hsl(33, 33%, 94%) !important;
   --grotto-dropdown-option-background-color: hsl(33, 33%, 94%) !important;
   --grotto-dropdown-option-color: hsl(240, 18%, 24%) !important;
+  --grotto-dropdown-outline-width: 1px !important;
   --grotto-embed-background-color: transparent !important;
   --grotto-embed-border-color: hsl(240, 18%, 24%) !important;
   --grotto-embed-border-radius: 0rem !important;
@@ -1896,7 +1895,10 @@ html[saved-theme="dark"] body sup {
   --grotto-filenav-color: hsl(240, 18%, 24%) !important;
   --grotto-filenav-tag-background-color: hsl(240, 18%, 24%) !important;
   --grotto-filenav-tag-color: hsl(33, 33%, 90%) !important;
+  --grotto-font-main: 'Quicksand' !important;
   --grotto-font-weight: 500 !important;
+  --grotto-global-border-radius: 0rem !important;
+  --grotto-global-border-width: 1px !important;
   --grotto-graph-controls-background-color: hsl(33, 33%, 86%) !important;
   --grotto-graph-controls-border-color: hsl(240, 18%, 24%) !important;
   --grotto-graph-controls-border-radius: 0rem !important;
@@ -1971,6 +1973,7 @@ html[saved-theme="dark"] body sup {
   --grotto-notice-background-color: hsl(16, 80%, 60%) !important;
   --grotto-notice-border-color: hsl(240, 18%, 24%) !important;
   --grotto-notice-border-radius: 0rem !important;
+  --grotto-notice-border-width: 1px !important;
   --grotto-notice-color: hsl(33, 33%, 94%) !important;
   --grotto-progress-background-color: hsl(240, 18%, 24%) !important;
   --grotto-progress-border-color: hsl(240, 18%, 24%) !important;
@@ -1979,6 +1982,7 @@ html[saved-theme="dark"] body sup {
   --grotto-prompt-background-color: hsl(33, 33%, 94%) !important;
   --grotto-prompt-border-color: hsl(240, 18%, 24%) !important;
   --grotto-prompt-border-radius: 0rem !important;
+  --grotto-prompt-border-width: 1px !important;
   --grotto-prompt-color: hsl(240, 18%, 24%) !important;
   --grotto-properties-background-color: hsl(33, 33%, 94%) !important;
   --grotto-properties-border-color: hsl(240, 18%, 24%) !important;
@@ -2002,7 +2006,7 @@ html[saved-theme="dark"] body sup {
   --grotto-settings-color: hsl(240, 18%, 24%) !important;
   --grotto-slider-background-color: hsl(240, 18%, 24%) !important;
   --grotto-slider-border-color: hsl(33, 33%, 94%) !important;
-  --grotto-statusbar-background-color: hsl(33, 33%, 86%) !important;
+  --grotto-statusbar-background-color: hsl(33, 33%, 90%) !important;
   --grotto-statusbar-border-color: hsl(240, 18%, 24%) !important;
   --grotto-statusbar-border-radius: 0rem !important;
   --grotto-statusbar-color: hsl(240, 18%, 24%) !important;
@@ -2035,23 +2039,27 @@ html[saved-theme="dark"] body sup {
   --grotto-tag-border-radius: 0rem !important;
   --grotto-tag-border-width: 1.5px !important;
   --grotto-tag-color: hsl(33, 33%, 94%) !important;
+  --grotto-tag-padding-x: 0.4rem !important;
+  --grotto-tag-padding-y: 0.1rem !important;
   --grotto-tag-pointer-events: none !important;
   --grotto-tag-size: 0.8rem !important;
   --grotto-tag-weight: 600 !important;
+  --grotto-text-color-on-accent: hsl(33, 33%, 94%) !important;
   --grotto-titlebar-border-radius: 0rem !important;
   --grotto-titlebar-color: hsl(240, 18%, 24%) !important;
-  --grotto-toggle-background-color: hsl(33, 33%, 90%) !important;
+  --grotto-toggle-background-color: hsl(33, 33%, 94%) !important;
   --grotto-toggle-border-color: hsl(240, 18%, 24%) !important;
+  --grotto-toggle-border-width: 1px !important;
+  --grotto-toggle-enabled-background-color: hsl(16, 80%, 60%) !important;
   --grotto-tooltip-background-color: hsl(33, 33%, 86%) !important;
   --grotto-tooltip-border-color: hsl(240, 18%, 24%) !important;
   --grotto-tooltip-border-radius: 0rem !important;
+  --grotto-tooltip-border-width: 1px !important;
   --grotto-tooltip-color: hsl(240, 18%, 24%) !important;
-  --grotto-ui-border-radius: 0rem !important;
-  --grotto-ui-border-width: 1px !important;
   --grotto-view-header-background-color: hsl(33, 33%, 86%) !important;
-  --grotto-view-header-border-radius: 0rem !important;
   --grotto-view-header-color: hsl(240, 18%, 24%) !important;
   --grotto-view-header-sidebar-toggle-display: none !important;
+  --headerFont: 'Quicksand' !important;
   --heading-formatting: hsl(240, 18%, 36%) !important;
   --heading-spacing: 0rem !important;
   --highlight: hsl(33, 33%, 86%) !important;
@@ -2075,15 +2083,15 @@ html[saved-theme="dark"] body sup {
   --link-unresolved-color: hsl(16, 80%, 60%) !important;
   --link-unresolved-decoration-color: hsla(16, 80%, 60%, 0.3) !important;
   --list-bullet-radius: 0rem !important;
-  --list-indent: 2.25em !important;
   --list-marker-color: hsl(240, 18%, 24%) !important;
   --list-marker-color-collapsed: hsl(240, 18%, 24%) !important;
   --list-marker-color-hover: hsl(240, 18%, 24%) !important;
   --menu-background: hsl(33, 33%, 90%) !important;
   --menu-radius: 0px !important;
   --menu-shadow: none !important;
-  --metadata-input-height: 28px !important;
+  --metadata-input-font: 'Quicksand' !important;
   --metadata-input-text-color: hsl(240, 18%, 24%) !important;
+  --metadata-label-font: 'Quicksand' !important;
   --metadata-label-text-color: hsl(240, 18%, 36%) !important;
   --metadata-label-text-color-hover: hsl(240, 18%, 36%) !important;
   --modal-background: hsl(33, 33%, 94%) !important;
@@ -2140,7 +2148,6 @@ html[saved-theme="dark"] body sup {
   --shadow-l: none !important;
   --shadow-s: none !important;
   --shadow-xs: none !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-y: -7px !important;
   --status-bar-background: hsl(33, 33%, 90%) !important;
   --status-bar-radius: 0px 0 0 0 !important;
@@ -2168,20 +2175,15 @@ html[saved-theme="dark"] body sup {
   --table-header-background-hover: transparent !important;
   --table-header-border-color: hsl(240, 18%, 24%) !important;
   --table-header-color: hsl(240, 18%, 24%) !important;
-  --table-header-weight: 600 !important;
   --table-selection: hsla(16, 80%, 60%, 0.1) !important;
   --table-selection-border-color: hsl(16, 80%, 60%) !important;
   --table-text-color: hsl(240, 18%, 24%) !important;
   --tag-background: hsla(16, 80%, 60%, 0.1) !important;
   --tag-background-hover: hsla(16, 80%, 60%, 0.2) !important;
-  --tag-border-color: hsl(240, 18%, 24%) !important;
+  --tag-border-color: hsla(16, 80%, 60%, 0.15) !important;
   --tag-border-color-hover: hsla(16, 80%, 60%, 0.15) !important;
-  --tag-border-width: 1.5px !important;
   --tag-color: hsl(16, 80%, 60%) !important;
   --tag-color-hover: hsl(16, 80%, 60%) !important;
-  --tag-padding-x: 0.4rem !important;
-  --tag-padding-y: 0.1rem !important;
-  --tag-radius: 0rem !important;
   --tertiary: hsl(16, 80%, 60%) !important;
   --text-accent: hsl(16, 80%, 60%) !important;
   --text-accent-hover: hsl(16, 80%, 60%) !important;
@@ -2194,6 +2196,7 @@ html[saved-theme="dark"] body sup {
   --text-success: hsl(100, 50%, 50%) !important;
   --text-warning: hsl(30, 50%, 50%) !important;
   --textHighlight: hsl(33, 33%, 86%) !important;
+  --titleFont: 'Quicksand' !important;
   --titlebar-background: hsl(33, 33%, 90%) !important;
   --titlebar-background-focused: hsl(33, 33%, 90%) !important;
   --titlebar-text-color: hsl(240, 18%, 36%) !important;
@@ -2207,7 +2210,6 @@ html[saved-theme="dark"] body sup {
   --vault-profile-color: hsl(240, 18%, 24%) !important;
   --vault-profile-color-hover: hsl(240, 18%, 24%) !important;
   --workspace-background-translucent: transparent !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2247,7 +2249,7 @@ html[saved-theme="light"] body div#quartz-root {
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 800;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: rgb(235, 115, 71);
@@ -2256,7 +2258,7 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: rgb(235, 115, 71);
@@ -2265,7 +2267,7 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
 
 html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: rgb(235, 115, 71);
@@ -2274,7 +2276,7 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
 
 html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 800;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: rgb(235, 115, 71);
@@ -2284,7 +2286,7 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
 html[saved-theme="light"] body .text-highlight {
   background-color: rgb(231, 220, 208);
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(50, 50, 72) none 0px;
   text-decoration: rgb(50, 50, 72);
@@ -2293,7 +2295,7 @@ html[saved-theme="light"] body .text-highlight {
 
 html[saved-theme="light"] body del {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(50, 50, 72) none 0px;
   text-decoration: line-through rgb(50, 50, 72);
@@ -2302,7 +2304,7 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body p {
   color: rgb(75, 75, 108);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(75, 75, 108) none 0px;
   text-decoration: rgb(75, 75, 108);
@@ -2310,7 +2312,7 @@ html[saved-theme="light"] body p {
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: underline rgb(235, 115, 71);
@@ -2319,7 +2321,7 @@ html[saved-theme="light"] body p {
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: underline rgb(235, 115, 71);
@@ -2328,7 +2330,7 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
 
 html[saved-theme="light"] body a.internal.broken {
   color: rgb(235, 115, 71);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(235, 115, 71) none 0px;
   text-decoration: underline rgba(235, 115, 71, 0.3);
@@ -2370,7 +2372,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
-  font-family: "??";
+  font-family: Quicksand;
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(50, 50, 72);
@@ -2381,7 +2383,7 @@ html[saved-theme="light"] body blockquote {
 
 html[saved-theme="light"] body table {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
   margin-top: 0px;
   width: 187.766px;
 }
@@ -2412,7 +2414,7 @@ html[saved-theme="light"] body th {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
@@ -2511,7 +2513,7 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body figure {
@@ -2581,11 +2583,11 @@ html[saved-theme="light"] body .transclude-inner {
   padding-bottom: 16px;
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body .katex-display > .katex > .katex-html {
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
@@ -2941,7 +2943,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
@@ -2958,7 +2960,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   outline: rgb(50, 50, 72) none 0px;
   text-decoration: rgb(50, 50, 72);
@@ -3065,7 +3067,7 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
 }
 
@@ -3075,37 +3077,37 @@ html[saved-theme="light"] body a.internal.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body h2 {
   color: rgb(245, 240, 235);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body h3 {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body h4 {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body h5 {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body h6 {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body hr {
@@ -3169,44 +3171,16 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   text-decoration: rgb(50, 50, 72);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
   text-decoration: rgb(50, 50, 72);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(50, 50, 72);
-  font-family: "??";
-  font-weight: 500;
-  text-decoration: rgb(50, 50, 72);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(235, 115, 71);
-  border-bottom-color: rgb(50, 50, 72);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: rgb(50, 50, 72);
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-right-color: rgb(50, 50, 72);
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: rgb(50, 50, 72);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  color: rgb(245, 240, 235);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
   font-weight: 500;
@@ -3223,7 +3197,7 @@ html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has
   color: rgb(50, 50, 72);
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(231, 220, 208);
+  background-color: rgb(238, 230, 221);
   border-bottom-color: rgb(50, 50, 72);
   border-bottom-width: 1px;
   border-left-color: rgb(50, 50, 72);
@@ -3232,7 +3206,7 @@ html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has
   border-top-color: rgb(50, 50, 72);
   border-top-left-radius: 0px;
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body footer ul li a {
@@ -3241,7 +3215,7 @@ html[saved-theme="light"] body footer ul li a {
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
   font-weight: 500;
 }
 
@@ -3260,7 +3234,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .des
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(50, 50, 72);
@@ -3271,7 +3245,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 
 html[saved-theme="light"] body li.section-li > .section .meta {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
@@ -3315,7 +3289,7 @@ html[saved-theme="light"] body .darkmode svg {
 
 html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(75, 75, 108);
-  font-family: "??";
+  font-family: Quicksand;
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(50, 50, 72);
@@ -3327,7 +3301,7 @@ html[saved-theme="light"] body .breadcrumb-element p {
 
 html[saved-theme="light"] body .metadata {
   color: rgb(75, 75, 108);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body .metadata-properties {
@@ -3336,16 +3310,16 @@ html[saved-theme="light"] body .metadata-properties {
   border-right-color: rgb(75, 75, 108);
   border-top-color: rgb(75, 75, 108);
   color: rgb(75, 75, 108);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(231, 220, 208);
+  background-color: rgb(238, 230, 221);
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body abbr {
@@ -3370,7 +3344,7 @@ html[saved-theme="light"] body input[type=text] {
   border-top-color: rgb(50, 50, 72);
   border-top-width: 1px;
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body kbd {
@@ -3384,7 +3358,7 @@ html[saved-theme="light"] body kbd {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(50, 50, 72);
-  font-family: "??";
+  font-family: Quicksand;
 }
 
 html[saved-theme="light"] body progress {

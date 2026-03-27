@@ -155,7 +155,240 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
+    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
+    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
+    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
+    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
+    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
+    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
+    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
+    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
+    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
+    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
+    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
+    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
+    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
+    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
+    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
+    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
+    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
+    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
+    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
+    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
+    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
+    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
+    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
+    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
+    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
+    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
+    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
+    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
+    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
+    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
+    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
+    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
+    U+1FB00-1FBFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cascadia Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Monaco";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Monaco"),
+    url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
+}
 body.theme-light {
+  --bases-embed-border-color: #33323118 !important;
+  --bases-table-border-color: #33323118 !important;
+  --bases-table-header-background: #fdfcfc !important;
+  --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
+  --focus-ring-color: #0df !important;
+  --tab-container-background: #f7f3f0 !important;
+  --table-border-color: #33323118 !important;
+  --text-accent: #ad514c !important;
+  --text-faint: #80797499 !important;
+  --text-normal: #333231 !important;
+  --titlebar-background: #f7f3f0 !important;
+  --input-height: 30px !important;
   --accent-h: 3 !important;
   --accent-l: 54 !important;
   --accent-s: 70 !important;
@@ -198,7 +431,6 @@ body.theme-light {
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #33323118 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #d4d4d4 !important;
-  --bases-embed-border-color: #33323118 !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -212,7 +444,6 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #33323118 !important;
   --bases-table-cell-background-active: #fdfcfc !important;
   --bases-table-cell-background-disabled: #fdfcfc !important;
   --bases-table-cell-background-selected: hsla(3, 70, 54, 0.1) !important;
@@ -228,8 +459,6 @@ body.theme-light {
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: #fdfcfc !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #fdfcfc !important;
-  --bases-table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --bases-table-header-color: #807974 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -417,7 +646,6 @@ body.theme-light {
   --file-margins-y: 32px !important;
   --flair-background: #f7f3f0 !important;
   --flair-color: #333231 !important;
-  --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -575,7 +803,6 @@ body.theme-light {
   --input-corner-shape: round !important;
   --input-date-separator: #80797499 !important;
   --input-font-weight: 400 !important;
-  --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #80797499 !important;
@@ -904,7 +1131,6 @@ body.theme-light {
   --sync-avatar-color-8: #bd71a4 !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: #fdfcfc !important;
-  --tab-container-background: #f7f3f0 !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #d4d4d4 !important;
   --tab-font-size: 13px !important;
@@ -942,7 +1168,6 @@ body.theme-light {
   --table-add-button-border-color: #33323118 !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #33323118 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -987,20 +1212,16 @@ body.theme-light {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: #ad514c !important;
   --text-accent-hover: #cc645e !important;
   --text-error: #ad514c !important;
-  --text-faint: #80797499 !important;
   --text-highlight-bg: #fab48588 !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #807974 !important;
-  --text-normal: #333231 !important;
   --text-on-accent: #fdfcfc !important;
   --text-on-accent-inverted: #333231 !important;
   --text-selection: #dae5e2 !important;
   --text-success: #538a8a !important;
   --text-warning: #ad514c !important;
-  --titlebar-background: #f7f3f0 !important;
   --titlebar-background-focused: #f7f3f0 !important;
   --titlebar-border-color: #33323118 !important;
   --titlebar-border-width: 0px !important;
@@ -1055,6 +1276,18 @@ body.theme-light {
 }
 
 body.theme-dark {
+  --bases-embed-border-color: #0003 !important;
+  --bases-table-border-color: #0003 !important;
+  --bases-table-header-background: #1f2122 !important;
+  --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
+  --focus-ring-color: #0df !important;
+  --tab-container-background: #1b1d1e !important;
+  --table-border-color: #0003 !important;
+  --text-accent: #ad514c !important;
+  --text-faint: #938a8099 !important;
+  --text-normal: #dbd3ca !important;
+  --titlebar-background: #1b1d1e !important;
+  --input-height: 30px !important;
   --accent-h: 0 !important;
   --accent-l: 50 !important;
   --accent-s: 77 !important;
@@ -1097,7 +1330,6 @@ body.theme-dark {
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #0003 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #3f3f3f !important;
-  --bases-embed-border-color: #0003 !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -1111,7 +1343,6 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #0003 !important;
   --bases-table-cell-background-active: #1f2122 !important;
   --bases-table-cell-background-disabled: #1f2122 !important;
   --bases-table-cell-background-selected: hsla(0, 77, 50, 0.1) !important;
@@ -1127,8 +1358,6 @@ body.theme-dark {
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: #1f2122 !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #1f2122 !important;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
   --bases-table-header-color: #938a80 !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -1315,7 +1544,6 @@ body.theme-dark {
   --file-margins-y: 32px !important;
   --flair-background: #353a42 !important;
   --flair-color: #dbd3ca !important;
-  --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -1473,7 +1701,6 @@ body.theme-dark {
   --input-corner-shape: round !important;
   --input-date-separator: #938a8099 !important;
   --input-font-weight: 400 !important;
-  --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #938a8099 !important;
@@ -1794,7 +2021,6 @@ body.theme-dark {
   --sync-avatar-color-8: #d67c7f !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: #1f2122 !important;
-  --tab-container-background: #1b1d1e !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #3f3f3f !important;
   --tab-font-size: 13px !important;
@@ -1832,7 +2058,6 @@ body.theme-dark {
   --table-add-button-border-color: #0003 !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #0003 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1877,20 +2102,16 @@ body.theme-dark {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: #ad514c !important;
   --text-accent-hover: #e07575 !important;
   --text-error: #f5a571 !important;
-  --text-faint: #938a8099 !important;
   --text-highlight-bg: #ad514c44 !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #938a80 !important;
-  --text-normal: #dbd3ca !important;
   --text-on-accent: #dbd3ca !important;
   --text-on-accent-inverted: #1f2122 !important;
   --text-selection: #353a42 !important;
   --text-success: #aac2ae !important;
   --text-warning: #f5a571 !important;
-  --titlebar-background: #1b1d1e !important;
   --titlebar-background-focused: #1b1d1e !important;
   --titlebar-border-color: #0003 !important;
   --titlebar-border-width: 0px !important;
@@ -1956,11 +2177,13 @@ body {
   --nav-collapse-icon-color: var(--text-muted);
   --nav-collapse-icon-color-collapsed: var(--text-faint);
 }
-body .markdown-rendered a.external-link {
+body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(173, 81, 76);
   cursor: pointer;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -1982,13 +2205,24 @@ body .markdown-rendered a.external-link {
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered a.internal-link {
+body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(173, 81, 76);
   cursor: pointer;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2010,13 +2244,24 @@ body .markdown-rendered a.internal-link {
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered a.internal-link.is-unresolved {
+body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(173, 81, 76);
   cursor: pointer;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2038,26 +2283,37 @@ body .markdown-rendered a.internal-link.is-unresolved {
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered a.external-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+body body.theme-light .markdown-rendered a.external-link:hover {
+  text-decoration: underline rgb(138, 92, 245);
+  text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: rgb(138, 92, 245);
 }
-body .markdown-rendered a.internal-link:hover {
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+body body.theme-light .markdown-rendered a.internal-link:hover {
+  text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: rgb(138, 92, 245);
 }
-body .markdown-rendered p {
+body body.theme-light .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(128, 121, 116);
   cursor: auto;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2073,19 +2329,30 @@ body .markdown-rendered p {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(147, 138, 128) none 0px;
-  text-decoration: rgb(147, 138, 128);
-  text-decoration-color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  outline: rgb(128, 121, 116) none 0px;
+  text-decoration: rgb(128, 121, 116);
+  text-decoration-color: rgb(128, 121, 116);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: none;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body strong {
+body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2101,19 +2368,30 @@ body strong {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: rgb(219, 211, 202) none 0px;
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  outline: rgb(51, 50, 49) none 0px;
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body b {
+body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2129,19 +2407,30 @@ body b {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: rgb(219, 211, 202) none 0px;
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  outline: rgb(51, 50, 49) none 0px;
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body em {
+body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2157,19 +2446,30 @@ body em {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(219, 211, 202) none 0px;
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  outline: rgb(51, 50, 49) none 0px;
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body i {
+body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2185,22 +2485,30 @@ body i {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(219, 211, 202) none 0px;
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  outline: rgb(51, 50, 49) none 0px;
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered mark {
-  background-color: light-dark(
-    rgba(250, 180, 133, 0.533),
-    rgba(173, 81, 76, 0.267)
-  );
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .markdown-rendered mark {
+  background-color: rgba(250, 180, 133, 0.533);
+  color: rgb(51, 50, 49);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2216,19 +2524,30 @@ body .markdown-rendered mark {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(219, 211, 202) none 0px;
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  outline: rgb(51, 50, 49) none 0px;
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body del {
+body body.theme-light del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2244,19 +2563,25 @@ body del {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(219, 211, 202) none 0px;
-  text-decoration: line-through rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  outline: rgb(51, 50, 49) none 0px;
+  text-decoration: line-through rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .suggestion-item.is-selected {
-  background-color: light-dark(
-    rgba(0, 0, 0, 0.067),
-    rgba(255, 255, 255, 0.067)
-  );
+body body.theme-light .suggestion-item.is-selected {
+  background-color: rgba(0, 0, 0, 0.067);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2265,14 +2590,11 @@ body .suggestion-item.is-selected {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
 }
-body div.suggestion-item {
-  background-color: light-dark(
-    rgba(0, 0, 0, 0.067),
-    rgba(255, 255, 255, 0.067)
-  );
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light div.suggestion-item {
+  background-color: rgba(0, 0, 0, 0.067);
+  border: 0px rgb(51, 50, 49);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2281,12 +2603,11 @@ body div.suggestion-item {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
 }
-body .markdown-rendered hr {
-  border-color: rgb(128, 128, 128)
-    light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2))
-    light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+body body.theme-light .markdown-rendered hr {
+  border-color: rgb(128, 128, 128) rgba(51, 50, 49, 0.094)
+    rgba(51, 50, 49, 0.094);
   border-style: solid solid none none;
   border-width: 0px 1px 0px 0px;
   border-top-left-radius: 0px;
@@ -2304,7 +2625,7 @@ body .markdown-rendered hr {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body div.multi-select-pill {
+body body.theme-light div.multi-select-pill {
   align-items: normal;
   background-color: rgba(0, 0, 0, 0);
   display: flex;
@@ -2334,16 +2655,16 @@ body div.multi-select-pill {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body div.multi-select-pill > div.multi-select-pill-content {
+body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
   color: rgb(173, 81, 76);
 }
-body .markdown-rendered ul > li {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .markdown-rendered ul > li {
+  color: rgb(51, 50, 49);
   text-align: start;
 }
-body .markdown-rendered ul > li::marker {
+body body.theme-light .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2352,17 +2673,17 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgb(34, 34, 34);
   pointer-events: auto;
   transform: none;
 }
-body .markdown-rendered ol > li {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .markdown-rendered ol > li {
+  color: rgb(51, 50, 49);
   text-align: start;
 }
-body .markdown-rendered ol > li::marker {
+body body.theme-light .markdown-rendered ol > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2371,13 +2692,13 @@ body .markdown-rendered ol > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgb(34, 34, 34);
   pointer-events: auto;
   transform: none;
 }
-body .markdown-rendered code {
+body body.theme-light .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px solid light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border: 0px solid rgb(51, 50, 49);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2386,16 +2707,16 @@ body .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
   padding: 0px;
 }
-body .markdown-rendered pre > code {
-  background-color: light-dark(rgb(253, 252, 252), rgb(31, 33, 34));
-  border: 0px solid light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+body body.theme-light .markdown-rendered pre > code {
+  background-color: rgb(253, 252, 252);
+  border: 0px solid rgba(51, 50, 49, 0.094);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2409,10 +2730,10 @@ body .markdown-rendered pre > code {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  background-color: light-dark(rgb(253, 252, 252), rgb(31, 33, 34));
-  border: 0px solid light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+body body.theme-light :not(pre) > code[class*="language-"],
+body body.theme-light pre[class*="language-"] {
+  background-color: rgb(253, 252, 252);
+  border: 0px solid rgba(51, 50, 49, 0.094);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2426,10 +2747,13 @@ body pre[class*="language-"] {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
+body
+  body.theme-light
+  ul.contains-task-list
+  > li.task-list-item
+  > .task-list-item-checkbox {
   appearance: auto;
-  border: 1px solid
-    light-dark(rgba(128, 121, 116, 0.6), rgba(147, 138, 128, 0.6));
+  border: 1px solid rgba(128, 121, 116, 0.6);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2449,11 +2773,12 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   position: relative;
   top: auto;
 }
-body ul.contains-task-list > li.task-list-item {
+body body.theme-light ul.contains-task-list > li.task-list-item {
   text-align: start;
   display: list-item;
 }
 body
+  body.theme-light
   ul.contains-task-list
   > li.task-list-item
   > input[type="checkbox"]:checked {
@@ -2465,12 +2790,12 @@ body
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
 }
-body ul > li.task-list-item[data-task="x"] {
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
-  text-decoration: line-through rgb(147, 138, 128);
-  text-decoration-color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+body body.theme-light ul > li.task-list-item[data-task="x"] {
+  color: rgb(128, 121, 116);
+  text-decoration: line-through rgb(128, 121, 116);
+  text-decoration-color: rgb(128, 121, 116);
 }
-body .markdown-rendered blockquote {
+body body.theme-light .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   font-family:
     ui-sans-serif,
@@ -2493,13 +2818,13 @@ body .markdown-rendered blockquote {
   margin-inline-start: 40px;
   margin-inline-end: 40px;
 }
-body .footnote-backref {
-  color: light-dark(rgba(128, 121, 116, 0.6), rgba(147, 138, 128, 0.6));
-  text-decoration: rgba(147, 138, 128, 0.6);
+body body.theme-light .footnote-backref {
+  color: rgba(128, 121, 116, 0.6);
+  text-decoration: rgba(128, 121, 116, 0.6);
 }
-body .site-body-left-column input.search-bar {
-  background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
-  border: 1px solid light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+body body.theme-light .site-body-left-column input.search-bar {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(51, 50, 49, 0.094);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -2508,7 +2833,7 @@ body .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2524,9 +2849,9 @@ body .site-body-left-column input.search-bar {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .search-results {
-  background-color: light-dark(rgb(253, 252, 252), rgb(31, 33, 34));
-  border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
+body body.theme-light .search-results {
+  background-color: rgb(253, 252, 252);
+  border: 1px solid rgb(189, 189, 189);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -2538,13 +2863,15 @@ body .search-results {
   box-shadow:
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+    rgba(0, 0, 0, 0.1) 0px 15px 30px 0px;
 }
-body .search-results > * {
+body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   cursor: auto;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2560,16 +2887,25 @@ body .search-results > * {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(219, 211, 202) none 0px;
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  outline: rgb(51, 50, 49) none 0px;
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body div.search-results {
-  border: 1px solid light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
+body body.theme-light div.search-results {
+  border: 1px solid rgb(189, 189, 189);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -2579,11 +2915,11 @@ body div.search-results {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .search-results .suggestion-item {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .search-results .suggestion-item {
+  color: rgb(51, 50, 49);
 }
-body div.search-results .suggestion-item {
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light div.search-results .suggestion-item {
+  border: 0px rgb(51, 50, 49);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2593,19 +2929,16 @@ body div.search-results .suggestion-item {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .search-results .suggestion-item.is-selected {
+  color: rgb(51, 50, 49);
   font-weight: 400;
-  background-color: light-dark(
-    rgba(0, 0, 0, 0.067),
-    rgba(255, 255, 255, 0.067)
-  );
+  background-color: rgba(0, 0, 0, 0.067);
 }
-body div.search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light div.search-results .suggestion-item.is-selected {
+  color: rgb(51, 50, 49);
 }
-body .published-container .markdown-rendered h1 {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .published-container .markdown-rendered h1 {
+  color: rgb(51, 50, 49);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2622,8 +2955,8 @@ body .published-container .markdown-rendered h1 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h2 {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .published-container .markdown-rendered h2 {
+  color: rgb(51, 50, 49);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2640,8 +2973,8 @@ body .published-container .markdown-rendered h2 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h3 {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .published-container .markdown-rendered h3 {
+  color: rgb(51, 50, 49);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2658,8 +2991,8 @@ body .published-container .markdown-rendered h3 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h4 {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .published-container .markdown-rendered h4 {
+  color: rgb(51, 50, 49);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2676,8 +3009,8 @@ body .published-container .markdown-rendered h4 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h5 {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .published-container .markdown-rendered h5 {
+  color: rgb(51, 50, 49);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2694,8 +3027,8 @@ body .published-container .markdown-rendered h5 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h6 {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .published-container .markdown-rendered h6 {
+  color: rgb(51, 50, 49);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -2712,19 +3045,27 @@ body .published-container .markdown-rendered h6 {
     sans-serif;
   text-shadow: none;
 }
-body .outline-view-outer .outline-view .tree-item > .tree-item-self {
+body
+  body.theme-light
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-self {
   font-weight: 400;
 }
-body .outline-view-outer .outline-view .tree-item > .tree-item-children {
+body
+  body.theme-light
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-children {
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.styled-scrollbars {
-  background: light-dark(
-    rgb(253, 252, 252) none repeat scroll 0% 0% / auto padding-box border-box,
-    rgb(31, 33, 34) none repeat scroll 0% 0% / auto padding-box border-box
-  );
-  background-color: light-dark(rgb(253, 252, 252), rgb(31, 33, 34));
+body body.theme-light body.styled-scrollbars {
+  background: rgb(253, 252, 252) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  background-color: rgb(253, 252, 252);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2733,15 +3074,14 @@ body body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border: 0px rgb(51, 50, 49);
   box-shadow: none;
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
-body .callout[data-callout="note"] {
-  --callout-color: 104, 160, 160;
-  border: 0px solid
-    light-dark(rgba(53, 107, 148, 0.25), rgba(104, 160, 160, 0.25));
+body body.theme-light .callout[data-callout="note"] {
+  --callout-color: 53, 107, 148;
+  border: 0px solid rgba(53, 107, 148, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2752,14 +3092,11 @@ body .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
-  background-color: light-dark(
-    rgba(53, 107, 148, 0.1),
-    rgba(104, 160, 160, 0.1)
-  );
+  background-color: rgba(53, 107, 148, 0.1);
 }
-body .callout[data-callout="note"] > .callout-title {
+body body.theme-light .callout[data-callout="note"] > .callout-title {
   gap: 4px;
-  border: 0px light-dark(rgb(53, 107, 148), rgb(104, 160, 160));
+  border: 0px rgb(53, 107, 148);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2770,14 +3107,14 @@ body .callout[data-callout="note"] > .callout-title {
   border-end-end-radius: 0px;
   padding: 0px;
 }
-body .callout > .callout-title > .callout-title-inner {
+body body.theme-light .callout > .callout-title > .callout-title-inner {
   font-weight: 600;
 }
-body .callout > .callout-content {
+body body.theme-light .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
   padding: 0px;
 }
-body .callout[data-callout="abstract"] {
+body body.theme-light .callout[data-callout="abstract"] {
   --callout-color: 120, 113, 108;
   background-color: rgba(120, 113, 108, 0.1);
   mix-blend-mode: normal;
@@ -2791,15 +3128,11 @@ body .callout[data-callout="abstract"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="info"] {
-  --callout-color: 104, 160, 160;
-  background-color: light-dark(
-    rgba(53, 107, 148, 0.1),
-    rgba(104, 160, 160, 0.1)
-  );
+body body.theme-light .callout[data-callout="info"] {
+  --callout-color: 53, 107, 148;
+  background-color: rgba(53, 107, 148, 0.1);
   mix-blend-mode: normal;
-  border: 0px solid
-    light-dark(rgba(53, 107, 148, 0.25), rgba(104, 160, 160, 0.25));
+  border: 0px solid rgba(53, 107, 148, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2809,15 +3142,11 @@ body .callout[data-callout="info"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="todo"] {
-  --callout-color: 104, 160, 160;
-  background-color: light-dark(
-    rgba(53, 107, 148, 0.1),
-    rgba(104, 160, 160, 0.1)
-  );
+body body.theme-light .callout[data-callout="todo"] {
+  --callout-color: 53, 107, 148;
+  background-color: rgba(53, 107, 148, 0.1);
   mix-blend-mode: normal;
-  border: 0px solid
-    light-dark(rgba(53, 107, 148, 0.25), rgba(104, 160, 160, 0.25));
+  border: 0px solid rgba(53, 107, 148, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2827,7 +3156,7 @@ body .callout[data-callout="todo"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="tip"] {
+body body.theme-light .callout[data-callout="tip"] {
   --callout-color: 120, 113, 108;
   background-color: rgba(120, 113, 108, 0.1);
   mix-blend-mode: normal;
@@ -2841,12 +3170,11 @@ body .callout[data-callout="tip"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="success"] {
-  --callout-color: 173, 131, 1;
-  background-color: light-dark(rgba(83, 138, 138, 0.1), rgba(173, 131, 1, 0.1));
+body body.theme-light .callout[data-callout="success"] {
+  --callout-color: 83, 138, 138;
+  background-color: rgba(83, 138, 138, 0.1);
   mix-blend-mode: normal;
-  border: 0px solid
-    light-dark(rgba(83, 138, 138, 0.25), rgba(173, 131, 1, 0.25));
+  border: 0px solid rgba(83, 138, 138, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2856,15 +3184,11 @@ body .callout[data-callout="success"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="question"] {
-  --callout-color: 235, 147, 80;
-  background-color: light-dark(
-    rgba(210, 132, 80, 0.1),
-    rgba(235, 147, 80, 0.1)
-  );
+body body.theme-light .callout[data-callout="question"] {
+  --callout-color: 210, 132, 80;
+  background-color: rgba(210, 132, 80, 0.1);
   mix-blend-mode: normal;
-  border: 0px solid
-    light-dark(rgba(210, 132, 80, 0.25), rgba(235, 147, 80, 0.25));
+  border: 0px solid rgba(210, 132, 80, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2874,15 +3198,11 @@ body .callout[data-callout="question"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="warning"] {
-  --callout-color: 235, 147, 80;
-  background-color: light-dark(
-    rgba(210, 132, 80, 0.1),
-    rgba(235, 147, 80, 0.1)
-  );
+body body.theme-light .callout[data-callout="warning"] {
+  --callout-color: 210, 132, 80;
+  background-color: rgba(210, 132, 80, 0.1);
   mix-blend-mode: normal;
-  border: 0px solid
-    light-dark(rgba(210, 132, 80, 0.25), rgba(235, 147, 80, 0.25));
+  border: 0px solid rgba(210, 132, 80, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2892,15 +3212,11 @@ body .callout[data-callout="warning"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="danger"] {
-  --callout-color: 198, 107, 103;
-  background-color: light-dark(
-    rgba(173, 81, 76, 0.1),
-    rgba(198, 107, 103, 0.1)
-  );
+body body.theme-light .callout[data-callout="danger"] {
+  --callout-color: 173, 81, 76;
+  background-color: rgba(173, 81, 76, 0.1);
   mix-blend-mode: normal;
-  border: 0px solid
-    light-dark(rgba(173, 81, 76, 0.25), rgba(198, 107, 103, 0.25));
+  border: 0px solid rgba(173, 81, 76, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2910,15 +3226,11 @@ body .callout[data-callout="danger"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="failure"] {
-  --callout-color: 198, 107, 103;
-  background-color: light-dark(
-    rgba(173, 81, 76, 0.1),
-    rgba(198, 107, 103, 0.1)
-  );
+body body.theme-light .callout[data-callout="failure"] {
+  --callout-color: 173, 81, 76;
+  background-color: rgba(173, 81, 76, 0.1);
   mix-blend-mode: normal;
-  border: 0px solid
-    light-dark(rgba(173, 81, 76, 0.25), rgba(198, 107, 103, 0.25));
+  border: 0px solid rgba(173, 81, 76, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2928,15 +3240,11 @@ body .callout[data-callout="failure"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="bug"] {
-  --callout-color: 198, 107, 103;
-  background-color: light-dark(
-    rgba(173, 81, 76, 0.1),
-    rgba(198, 107, 103, 0.1)
-  );
+body body.theme-light .callout[data-callout="bug"] {
+  --callout-color: 173, 81, 76;
+  background-color: rgba(173, 81, 76, 0.1);
   mix-blend-mode: normal;
-  border: 0px solid
-    light-dark(rgba(173, 81, 76, 0.25), rgba(198, 107, 103, 0.25));
+  border: 0px solid rgba(173, 81, 76, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2946,15 +3254,11 @@ body .callout[data-callout="bug"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="example"] {
-  --callout-color: 168, 144, 128;
-  background-color: light-dark(
-    rgba(128, 76, 110, 0.1),
-    rgba(168, 144, 128, 0.1)
-  );
+body body.theme-light .callout[data-callout="example"] {
+  --callout-color: 128, 76, 110;
+  background-color: rgba(128, 76, 110, 0.1);
   mix-blend-mode: normal;
-  border: 0px solid
-    light-dark(rgba(128, 76, 110, 0.25), rgba(168, 144, 128, 0.25));
+  border: 0px solid rgba(128, 76, 110, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2964,7 +3268,7 @@ body .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="quote"] {
+body body.theme-light .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.1);
   mix-blend-mode: normal;
@@ -2978,10 +3282,10 @@ body .callout[data-callout="quote"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered table {
+body body.theme-light .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: separate;
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3013,7 +3317,7 @@ body .markdown-rendered table {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body .markdown-rendered thead {
+body body.theme-light .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
@@ -3025,16 +3329,16 @@ body .markdown-rendered thead {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered tbody {
+body body.theme-light .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
 }
-body .markdown-rendered th {
+body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   font-weight: 600;
   text-align: start;
   vertical-align: top;
-  border: 1px solid light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+  border: 1px solid rgba(51, 50, 49, 0.094);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3045,13 +3349,13 @@ body .markdown-rendered th {
   border-end-end-radius: 0px;
   padding: 4px 8px;
 }
-body .markdown-rendered td {
+body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   font-weight: 400;
   text-align: start;
   vertical-align: top;
-  border: 1px solid light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+  border: 1px solid rgba(51, 50, 49, 0.094);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3062,7 +3366,7 @@ body .markdown-rendered td {
   border-end-end-radius: 0px;
   padding: 4px 8px;
 }
-body .markdown-rendered tr {
+body body.theme-light .markdown-rendered tr {
   background-color: rgba(0, 0, 0, 0);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
@@ -3074,19 +3378,19 @@ body .markdown-rendered tr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered tbody tr:nth-child(even) {
+body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0);
 }
-body .markdown-rendered tbody tr:nth-child(odd) {
+body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0);
 }
-body .markdown-rendered img {
+body body.theme-light .markdown-rendered img {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
   max-width: none;
   object-fit: fill;
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border: 0px rgb(51, 50, 49);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3101,10 +3405,10 @@ body .markdown-rendered img {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body .markdown-rendered figure {
+body body.theme-light .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border: 0px rgb(51, 50, 49);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3120,8 +3424,8 @@ body .markdown-rendered figure {
   margin-inline-start: 40px;
   padding: 0px;
 }
-body .markdown-rendered figcaption {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light .markdown-rendered figcaption {
+  color: rgb(51, 50, 49);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3146,13 +3450,13 @@ body .markdown-rendered figcaption {
   margin-inline-start: 0px;
   padding: 0px;
 }
-body .markdown-rendered video {
+body body.theme-light .markdown-rendered video {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
   max-width: none;
   object-fit: contain;
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border: 0px rgb(51, 50, 49);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3167,9 +3471,9 @@ body .markdown-rendered video {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body .markdown-rendered audio {
+body body.theme-light .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border: 0px rgb(51, 50, 49);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3180,10 +3484,10 @@ body .markdown-rendered audio {
   border-end-end-radius: 0px;
   padding: 0px;
 }
-body .internal-embed {
+body body.theme-light .internal-embed {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  border-left: 2px solid light-dark(rgb(83, 138, 138), rgb(49, 79, 82));
+  border-color: rgb(51, 50, 49);
+  border-left: 2px solid rgb(83, 138, 138);
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
@@ -3194,10 +3498,10 @@ body .internal-embed {
   margin: 0px;
   padding: 0px;
 }
-body .markdown-embed {
+body body.theme-light .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  border-left: 2px solid light-dark(rgb(83, 138, 138), rgb(49, 79, 82));
+  border-color: rgb(51, 50, 49);
+  border-left: 2px solid rgb(83, 138, 138);
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
@@ -3208,9 +3512,9 @@ body .markdown-embed {
   margin: 0px;
   padding: 0px;
 }
-body .file-embed {
-  background-color: light-dark(rgb(253, 252, 252), rgb(31, 33, 34));
-  border-color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+body body.theme-light .file-embed {
+  background-color: rgb(253, 252, 252);
+  border-color: rgb(128, 121, 116);
   border-width: 0px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -3219,9 +3523,9 @@ body .file-embed {
   margin: 0px;
   padding: 8px;
 }
-body .metadata-container {
+body body.theme-light .metadata-container {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(128, 121, 116);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3236,7 +3540,7 @@ body .metadata-container {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 0px solid light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+  border: 0px solid rgba(51, 50, 49, 0.094);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3244,9 +3548,9 @@ body .metadata-container {
   margin: 0px 0px 32px;
   padding: 8px 0px;
 }
-body .metadata-properties {
+body body.theme-light .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(128, 121, 116);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3261,7 +3565,7 @@ body .metadata-properties {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border-color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  border-color: rgb(128, 121, 116);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3270,11 +3574,11 @@ body .metadata-properties {
   margin: 0px;
   padding: 0px;
 }
-body progress {
+body body.theme-light progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 15px;
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border: 0px rgb(51, 50, 49);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3284,10 +3588,10 @@ body progress {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body input[type="range"] {
+body body.theme-light input[type="range"] {
   accent-color: auto;
-  background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  background-color: rgb(255, 255, 255);
+  border: 2px inset rgb(118, 118, 118);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3297,9 +3601,9 @@ body input[type="range"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body input[type="text"] {
+body body.theme-light input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(128, 121, 116);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3314,7 +3618,7 @@ body input[type="text"] {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 0px solid light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  border: 0px solid rgb(128, 121, 116);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3325,9 +3629,9 @@ body input[type="text"] {
   border-end-end-radius: 0px;
   padding: 4px 8px;
 }
-body details {
+body body.theme-light details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border: 0px rgb(51, 50, 49);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3343,16 +3647,16 @@ body details {
   margin-inline-start: 0px;
   padding: 0px;
 }
-body summary {
+body body.theme-light summary {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   cursor: auto;
   font-weight: 400;
   padding: 0px;
 }
-body details[open] {
+body body.theme-light details[open] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3368,16 +3672,16 @@ body details[open] {
   margin-inline-start: 0px;
   padding: 0px;
 }
-body kbd {
-  background-color: light-dark(rgb(253, 252, 252), rgb(31, 33, 34));
+body body.theme-light kbd {
+  background-color: rgb(253, 252, 252);
   box-shadow: none;
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(51, 50, 49);
   font-family:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
   font-size: 14px;
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border: 0px rgb(51, 50, 49);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3388,15 +3692,15 @@ body kbd {
   border-end-end-radius: 4px;
   padding: 1.4px 3.5px;
 }
-body dl {
+body body.theme-light dl {
   margin: 16px 0px;
   margin-block-end: 15px;
   margin-block-start: 15px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body dt {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light dt {
+  color: rgb(51, 50, 49);
   font-weight: 400;
   margin: 0px;
   margin-block-end: 0px;
@@ -3404,8 +3708,8 @@ body dt {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body dd {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light dd {
+  color: rgb(51, 50, 49);
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -3413,113 +3717,113 @@ body dd {
   margin-inline-start: 40px;
   padding: 0px;
 }
-body sub {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light sub {
+  color: rgb(51, 50, 49);
   font-size: 13.3333px;
   vertical-align: sub;
 }
-body sup {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light sup {
+  color: rgb(51, 50, 49);
   font-size: 13.3333px;
   vertical-align: super;
 }
-body abbr {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light abbr {
+  color: rgb(51, 50, 49);
   cursor: auto;
-  text-decoration: underline dotted rgb(219, 211, 202);
+  text-decoration: underline dotted rgb(51, 50, 49);
   text-decoration-style: dotted;
 }
-body li.task-list-item[data-task="-"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="-"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task=">"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task=">"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="/"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="/"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="?"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="?"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="!"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="!"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="*"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="*"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="l"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="l"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="b"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="b"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="i"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="i"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="S"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="S"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="I"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="I"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="p"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="p"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="c"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="c"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="f"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="f"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="k"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="k"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="u"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="u"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="d"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="d"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body li.task-list-item[data-task="w"] {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  text-decoration: rgb(219, 211, 202);
-  text-decoration-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-light li.task-list-item[data-task="w"] {
+  color: rgb(51, 50, 49);
+  text-decoration: rgb(51, 50, 49);
+  text-decoration-color: rgb(51, 50, 49);
 }
-body .math-block > mjx-container.MathJax {
+body body.theme-light .math-block > mjx-container.MathJax {
   display: block;
   text-align: center;
   white-space-collapse: collapse;
@@ -3539,7 +3843,7 @@ body .math-block > mjx-container.MathJax {
     "Segoe UI Symbol",
     sans-serif;
 }
-body div.math-block > mjx-container.MathJax {
+body body.theme-light div.math-block > mjx-container.MathJax {
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3555,12 +3859,12 @@ body div.math-block > mjx-container.MathJax {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .math-inline > mjx-container.MathJax > mjx-math {
+body body.theme-light .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
-body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
-  cursor: default;
+body body.theme-light .nav-view-outer .tree-item-self a {
+  color: rgb(34, 34, 34);
+  cursor: auto;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3576,24 +3880,21 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(147, 138, 128);
+  text-decoration: rgb(34, 34, 34);
 }
-body .nav-view-outer .tree-item-self.mod-active {
-  background-color: light-dark(
-    rgba(0, 0, 0, 0.067),
-    rgba(255, 255, 255, 0.067)
-  );
-  border: 0px light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+body body.theme-light .nav-view-outer .tree-item-self.mod-active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  cursor: default;
+  color: rgb(34, 34, 34);
+  cursor: auto;
   transition-behavior: normal;
   transition-delay: 0s;
   transition-duration: 0s;
@@ -3601,13 +3902,2043 @@ body .nav-view-outer .tree-item-self.mod-active {
   transition-timing-function: ease;
 }
 body
+  body.theme-light
   .nav-view-outer
   .nav-view
   > .tree-item.is-collapsed
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(128, 121, 116);
+  cursor: default;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: rgb(128, 121, 116);
+}
+body
+  body.theme-light
+  .nav-view-outer
+  .nav-view
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: rgb(128, 121, 116);
+  cursor: default;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: rgb(128, 121, 116);
+}
+body body.theme-light .clickable-icon {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(128, 121, 116);
+  cursor: default;
+  border-color: rgb(128, 121, 116);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body body.theme-light .site-footer {
+  background-color: rgb(247, 243, 240);
+  color: rgb(128, 121, 116);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgba(51, 50, 49, 0.094);
+  border-style: solid;
+  border-width: 1px 0px 0px 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .site-footer a {
+  color: rgb(128, 121, 116);
+  text-decoration: rgb(128, 121, 116);
+}
+body body.theme-light .nav-header {
+  color: rgb(51, 50, 49);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+}
+body body.theme-light .nav-files-container .tree-item {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(51, 50, 49);
+  border-color: rgb(51, 50, 49);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .nav-file-title {
+  color: rgb(128, 121, 116);
+  text-decoration: rgb(128, 121, 116);
+}
+body body.theme-light .nav-file-title-content {
+  color: rgb(128, 121, 116);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-light .nav-files-container {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(51, 50, 49);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .site-body-left-column-site-theme-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(128, 121, 116);
+  cursor: default;
+  border-color: rgb(128, 121, 116);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body body.theme-light .site-body-left-column-site-theme-toggle svg {
+  stroke: rgb(128, 121, 116);
+  color: rgb(128, 121, 116);
+}
+body body.theme-light .view-header-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(128, 121, 116);
+  border-color: rgb(128, 121, 116);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body body.theme-light .view-header-breadcrumb-separator {
+  color: rgba(128, 121, 116, 0.6);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-light .page-header .page-title {
+  color: rgb(51, 50, 49);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-light .math-block {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(51, 50, 49);
+  border-color: rgb(51, 50, 49);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .footnotes {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-color: rgb(51, 50, 49);
+  border-top-width: 0px;
+  color: rgb(51, 50, 49);
+}
+body body.theme-light .table-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(51, 50, 49);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .view-content {
+  border-color: rgb(51, 50, 49);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light figure[data-rehype-pretty-code-figure] {
+  background-color: rgb(253, 252, 252);
+  border: 0px solid rgba(51, 50, 49, 0.094);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body
+  body.theme-light
+  figure[data-rehype-pretty-code-figure]
+  > [data-rehype-pretty-code-title] {
+  background-color: rgb(253, 252, 252);
+  color: rgb(51, 50, 49);
+  font-family: monospace;
+  border: 0px solid rgba(51, 50, 49, 0.094);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light pre > code [data-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 0px rgb(210, 132, 80);
+}
+body body.theme-light pre > code [data-highlighted-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-color: rgb(210, 132, 80);
+}
+body body.theme-light pre > code [data-highlighted-chars] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(210, 132, 80);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light .search-highlight {
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  border: 0px rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered a.external-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(173, 81, 76);
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(173, 81, 76) none 0px;
+  text-decoration: underline rgb(173, 81, 76);
+  text-decoration-color: rgb(173, 81, 76);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered a.internal-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(173, 81, 76);
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(173, 81, 76) none 0px;
+  text-decoration: underline rgb(173, 81, 76);
+  text-decoration-color: rgb(173, 81, 76);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(173, 81, 76);
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(173, 81, 76) none 0px;
+  text-decoration: underline rgb(173, 81, 76);
+  text-decoration-color: rgb(173, 81, 76);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered a.external-link:hover {
+  text-decoration: underline rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(166, 138, 249);
+}
+body body.theme-dark .markdown-rendered a.internal-link:hover {
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(166, 138, 249);
+}
+body body.theme-dark .markdown-rendered p {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(147, 138, 128);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(147, 138, 128) none 0px;
+  text-decoration: rgb(147, 138, 128);
+  text-decoration-color: rgb(147, 138, 128);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: none;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark strong {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(219, 211, 202);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: rgb(219, 211, 202) none 0px;
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark b {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(219, 211, 202);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: rgb(219, 211, 202) none 0px;
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark em {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(219, 211, 202);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(219, 211, 202) none 0px;
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark i {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(219, 211, 202);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(219, 211, 202) none 0px;
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered mark {
+  background-color: rgba(173, 81, 76, 0.267);
+  color: rgb(219, 211, 202);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(219, 211, 202) none 0px;
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark del {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(219, 211, 202);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(219, 211, 202) none 0px;
+  text-decoration: line-through rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .suggestion-item.is-selected {
+  background-color: rgba(255, 255, 255, 0.067);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(219, 211, 202);
+}
+body body.theme-dark div.suggestion-item {
+  background-color: rgba(255, 255, 255, 0.067);
+  border: 0px rgb(219, 211, 202);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(219, 211, 202);
+}
+body body.theme-dark .markdown-rendered hr {
+  border-color: rgb(128, 128, 128) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2);
+  border-style: solid solid none none;
+  border-width: 0px 1px 0px 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  box-shadow: none;
+  margin: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark div.multi-select-pill {
+  align-items: normal;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  margin-inline-start: 0px;
+  border: 0px solid rgb(173, 81, 76);
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
+  color: rgb(173, 81, 76);
+}
+body body.theme-dark .markdown-rendered ul > li {
+  color: rgb(219, 211, 202);
+  text-align: start;
+}
+body body.theme-dark .markdown-rendered ul > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-dark .markdown-rendered ol > li {
+  color: rgb(219, 211, 202);
+  text-align: start;
+}
+body body.theme-dark .markdown-rendered ol > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-dark .markdown-rendered code {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid rgb(219, 211, 202);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+    "Source Code Pro", monospace;
+  padding: 0px;
+}
+body body.theme-dark .markdown-rendered pre > code {
+  background-color: rgb(31, 33, 34);
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 12px 16px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body body.theme-dark :not(pre) > code[class*="language-"],
+body body.theme-dark pre[class*="language-"] {
+  background-color: rgb(31, 33, 34);
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 12px 16px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body
+  body.theme-dark
+  ul.contains-task-list
+  > li.task-list-item
+  > .task-list-item-checkbox {
+  appearance: auto;
+  border: 1px solid rgba(147, 138, 128, 0.6);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  margin: 0px 8px 0px -24px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 16px;
+  transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  top: auto;
+}
+body body.theme-dark ul.contains-task-list > li.task-list-item {
+  text-align: start;
+  display: list-item;
+}
+body
+  body.theme-dark
+  ul.contains-task-list
+  > li.task-list-item
+  > input[type="checkbox"]:checked {
+  content: normal;
+  top: auto;
+  inset-inline-start: auto;
+  position: static;
+  width: auto;
+  display: list-item;
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark ul > li.task-list-item[data-task="x"] {
+  color: rgb(147, 138, 128);
+  text-decoration: line-through rgb(147, 138, 128);
+  text-decoration-color: rgb(147, 138, 128);
+}
+body body.theme-dark .markdown-rendered blockquote {
+  background-color: rgba(0, 0, 0, 0);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-style: normal;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+body body.theme-dark .footnote-backref {
+  color: rgba(147, 138, 128, 0.6);
+  text-decoration: rgba(147, 138, 128, 0.6);
+}
+body body.theme-dark .site-body-left-column input.search-bar {
+  background-color: rgb(42, 42, 42);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark .search-results {
+  background-color: rgb(31, 33, 34);
+  border: 1px solid rgb(85, 85, 85);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  box-shadow:
+    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
+    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
+    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+}
+body body.theme-dark .search-results > * {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(219, 211, 202);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(219, 211, 202) none 0px;
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark div.search-results {
+  border: 1px solid rgb(85, 85, 85);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .search-results .suggestion-item {
+  color: rgb(219, 211, 202);
+}
+body body.theme-dark div.search-results .suggestion-item {
+  border: 0px rgb(219, 211, 202);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .search-results .suggestion-item.is-selected {
+  color: rgb(219, 211, 202);
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.067);
+}
+body body.theme-dark div.search-results .suggestion-item.is-selected {
+  color: rgb(219, 211, 202);
+}
+body body.theme-dark .published-container .markdown-rendered h1 {
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h2 {
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h3 {
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h4 {
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h5 {
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h6 {
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body
+  body.theme-dark
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-self {
+  font-weight: 400;
+}
+body
+  body.theme-dark
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-children {
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-dark body.styled-scrollbars {
+  background: rgb(31, 33, 34) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  background-color: rgb(31, 33, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  border: 0px rgb(219, 211, 202);
+  box-shadow: none;
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+}
+body body.theme-dark .callout[data-callout="note"] {
+  --callout-color: 104, 160, 160;
+  border: 0px solid rgba(104, 160, 160, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  mix-blend-mode: normal;
+  padding: 12px 12px 12px 24px;
+  background-color: rgba(104, 160, 160, 0.1);
+}
+body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  gap: 4px;
+  border: 0px rgb(104, 160, 160);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  font-weight: 600;
+}
+body body.theme-dark .callout > .callout-content {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px;
+}
+body body.theme-dark .callout[data-callout="abstract"] {
+  --callout-color: 120, 113, 108;
+  background-color: rgba(120, 113, 108, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(120, 113, 108, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="info"] {
+  --callout-color: 104, 160, 160;
+  background-color: rgba(104, 160, 160, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(104, 160, 160, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="todo"] {
+  --callout-color: 104, 160, 160;
+  background-color: rgba(104, 160, 160, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(104, 160, 160, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="tip"] {
+  --callout-color: 120, 113, 108;
+  background-color: rgba(120, 113, 108, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(120, 113, 108, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="success"] {
+  --callout-color: 173, 131, 1;
+  background-color: rgba(173, 131, 1, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(173, 131, 1, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="question"] {
+  --callout-color: 235, 147, 80;
+  background-color: rgba(235, 147, 80, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(235, 147, 80, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="warning"] {
+  --callout-color: 235, 147, 80;
+  background-color: rgba(235, 147, 80, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(235, 147, 80, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="danger"] {
+  --callout-color: 198, 107, 103;
+  background-color: rgba(198, 107, 103, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(198, 107, 103, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="failure"] {
+  --callout-color: 198, 107, 103;
+  background-color: rgba(198, 107, 103, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(198, 107, 103, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="bug"] {
+  --callout-color: 198, 107, 103;
+  background-color: rgba(198, 107, 103, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(198, 107, 103, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="example"] {
+  --callout-color: 168, 144, 128;
+  background-color: rgba(168, 144, 128, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(168, 144, 128, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+  background-color: rgba(158, 158, 158, 0.1);
+  mix-blend-mode: normal;
+  border: 0px solid rgba(158, 158, 158, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered table {
+  background-color: rgba(0, 0, 0, 0);
+  border-collapse: separate;
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  table-layout: auto;
+  width: 225.219px;
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered thead {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered tbody {
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .markdown-rendered th {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(219, 211, 202);
+  font-weight: 600;
+  text-align: start;
+  vertical-align: top;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 4px 8px;
+}
+body body.theme-dark .markdown-rendered td {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(219, 211, 202);
+  font-weight: 400;
+  text-align: start;
+  vertical-align: top;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 4px 8px;
+}
+body body.theme-dark .markdown-rendered tr {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .markdown-rendered img {
+  border-radius: 0px;
+  box-shadow: none;
+  filter: none;
+  max-width: none;
+  object-fit: fill;
+  border: 0px rgb(219, 211, 202);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered figure {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  border: 0px rgb(219, 211, 202);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 40px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+  margin-inline-end: 40px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body body.theme-dark .markdown-rendered figcaption {
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  text-align: start;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body body.theme-dark .markdown-rendered video {
+  border-radius: 0px;
+  box-shadow: none;
+  filter: none;
+  max-width: none;
+  object-fit: contain;
+  border: 0px rgb(219, 211, 202);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered audio {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(219, 211, 202);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body body.theme-dark .internal-embed {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(219, 211, 202);
+  border-left: 2px solid rgb(49, 79, 82);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-dark .markdown-embed {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(219, 211, 202);
+  border-left: 2px solid rgb(49, 79, 82);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-dark .file-embed {
+  background-color: rgb(31, 33, 34);
+  border-color: rgb(147, 138, 128);
+  border-width: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px;
+  padding: 8px;
+}
+body body.theme-dark .metadata-container {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(147, 138, 128);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px 0px 32px;
+  padding: 8px 0px;
+}
+body body.theme-dark .metadata-properties {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(147, 138, 128);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgb(147, 138, 128);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-dark progress {
+  accent-color: auto;
+  background-color: rgba(0, 0, 0, 0);
+  height: 15px;
+  border: 0px rgb(219, 211, 202);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark input[type="range"] {
+  accent-color: auto;
+  background-color: rgb(59, 59, 59);
+  border: 2px inset rgb(133, 133, 133);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark input[type="text"] {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(147, 138, 128);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 0px solid rgb(147, 138, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 4px 8px;
+}
+body body.theme-dark details {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(219, 211, 202);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body body.theme-dark summary {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(219, 211, 202);
+  cursor: auto;
+  font-weight: 400;
+  padding: 0px;
+}
+body body.theme-dark details[open] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body body.theme-dark kbd {
+  background-color: rgb(31, 33, 34);
+  box-shadow: none;
+  color: rgb(219, 211, 202);
+  font-family:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+    "Source Code Pro", monospace;
+  font-size: 14px;
+  border: 0px rgb(219, 211, 202);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  padding: 1.4px 3.5px;
+}
+body body.theme-dark dl {
+  margin: 16px 0px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark dt {
+  color: rgb(219, 211, 202);
+  font-weight: 400;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark dd {
+  color: rgb(219, 211, 202);
+  margin: 0px 0px 0px 40px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body body.theme-dark sub {
+  color: rgb(219, 211, 202);
+  font-size: 13.3333px;
+  vertical-align: sub;
+}
+body body.theme-dark sup {
+  color: rgb(219, 211, 202);
+  font-size: 13.3333px;
+  vertical-align: super;
+}
+body body.theme-dark abbr {
+  color: rgb(219, 211, 202);
+  cursor: auto;
+  text-decoration: underline dotted rgb(219, 211, 202);
+  text-decoration-style: dotted;
+}
+body body.theme-dark li.task-list-item[data-task="-"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task=">"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="/"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="?"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="!"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="*"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="l"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="b"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="i"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="S"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="I"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="p"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="c"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="f"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="k"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="u"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="d"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark li.task-list-item[data-task="w"] {
+  color: rgb(219, 211, 202);
+  text-decoration: rgb(219, 211, 202);
+  text-decoration-color: rgb(219, 211, 202);
+}
+body body.theme-dark .math-block > mjx-container.MathJax {
+  display: block;
+  text-align: center;
+  white-space-collapse: collapse;
+  text-wrap-mode: wrap;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark div.math-block > mjx-container.MathJax {
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark .math-inline > mjx-container.MathJax > mjx-math {
+  font-family: MJXZERO, MJXTEX;
+}
+body body.theme-dark .nav-view-outer .tree-item-self a {
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: rgb(218, 218, 218);
+}
+body body.theme-dark .nav-view-outer .tree-item-self.mod-active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+body
+  body.theme-dark
+  .nav-view-outer
+  .nav-view
+  > .tree-item.is-collapsed
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: rgb(147, 138, 128);
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -3627,13 +5958,14 @@ body
   text-decoration: rgb(147, 138, 128);
 }
 body
+  body.theme-dark
   .nav-view-outer
   .nav-view
   > .tree-item
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(147, 138, 128);
   cursor: default;
   font-family:
     ui-sans-serif,
@@ -3652,20 +5984,20 @@ body
   font-weight: 400;
   text-decoration: rgb(147, 138, 128);
 }
-body .clickable-icon {
+body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(147, 138, 128);
   cursor: default;
-  border-color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  border-color: rgb(147, 138, 128);
   border-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-body .site-footer {
-  background-color: light-dark(rgb(247, 243, 240), rgb(27, 29, 30));
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+body body.theme-dark .site-footer {
+  background-color: rgb(27, 29, 30);
+  color: rgb(147, 138, 128);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3680,7 +6012,7 @@ body .site-footer {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border-color: light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+  border-color: rgba(0, 0, 0, 0.2);
   border-style: solid;
   border-width: 1px 0px 0px 1px;
   border-top-left-radius: 8px;
@@ -3688,12 +6020,12 @@ body .site-footer {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .site-footer a {
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+body body.theme-dark .site-footer a {
+  color: rgb(147, 138, 128);
   text-decoration: rgb(147, 138, 128);
 }
-body .nav-header {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-dark .nav-header {
+  color: rgb(219, 211, 202);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3710,22 +6042,22 @@ body .nav-header {
     sans-serif;
   font-weight: 400;
 }
-body .nav-files-container .tree-item {
+body body.theme-dark .nav-files-container .tree-item {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  border-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(219, 211, 202);
+  border-color: rgb(219, 211, 202);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .nav-file-title {
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+body body.theme-dark .nav-file-title {
+  color: rgb(147, 138, 128);
   text-decoration: rgb(147, 138, 128);
 }
-body .nav-file-title-content {
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+body body.theme-dark .nav-file-title-content {
+  color: rgb(147, 138, 128);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3741,42 +6073,42 @@ body .nav-file-title-content {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .nav-files-container {
+body body.theme-dark .nav-files-container {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border-color: rgb(219, 211, 202);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .site-body-left-column-site-theme-toggle {
+body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(147, 138, 128);
   cursor: default;
-  border-color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  border-color: rgb(147, 138, 128);
   border-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-body .site-body-left-column-site-theme-toggle svg {
+body body.theme-dark .site-body-left-column-site-theme-toggle svg {
   stroke: rgb(147, 138, 128);
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(147, 138, 128);
 }
-body .view-header-breadcrumb {
+body body.theme-dark .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
-  border-color: light-dark(rgb(128, 121, 116), rgb(147, 138, 128));
+  color: rgb(147, 138, 128);
+  border-color: rgb(147, 138, 128);
   border-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-body .view-header-breadcrumb-separator {
-  color: light-dark(rgba(128, 121, 116, 0.6), rgba(147, 138, 128, 0.6));
+body body.theme-dark .view-header-breadcrumb-separator {
+  color: rgba(147, 138, 128, 0.6);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3792,8 +6124,8 @@ body .view-header-breadcrumb-separator {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .page-header .page-title {
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-dark .page-header .page-title {
+  color: rgb(219, 211, 202);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3809,42 +6141,42 @@ body .page-header .page-title {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .math-block {
+body body.theme-dark .math-block {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
-  border-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(219, 211, 202);
+  border-color: rgb(219, 211, 202);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .footnotes {
+body body.theme-dark .footnotes {
   background-color: rgba(0, 0, 0, 0);
-  border-top-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border-top-color: rgb(219, 211, 202);
   border-top-width: 0px;
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  color: rgb(219, 211, 202);
 }
-body .table-wrapper {
+body body.theme-dark .table-wrapper {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+  border-color: rgb(219, 211, 202);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .view-content {
-  border-color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body body.theme-dark .view-content {
+  border-color: rgb(219, 211, 202);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body figure[data-rehype-pretty-code-figure] {
-  background-color: light-dark(rgb(253, 252, 252), rgb(31, 33, 34));
-  border: 0px solid light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+body body.theme-dark figure[data-rehype-pretty-code-figure] {
+  background-color: rgb(31, 33, 34);
+  border: 0px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3854,11 +6186,14 @@ body figure[data-rehype-pretty-code-figure] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: light-dark(rgb(253, 252, 252), rgb(31, 33, 34));
-  color: light-dark(rgb(51, 50, 49), rgb(219, 211, 202));
+body
+  body.theme-dark
+  figure[data-rehype-pretty-code-figure]
+  > [data-rehype-pretty-code-title] {
+  background-color: rgb(31, 33, 34);
+  color: rgb(219, 211, 202);
   font-family: monospace;
-  border: 0px solid light-dark(rgba(51, 50, 49, 0.094), rgba(0, 0, 0, 0.2));
+  border: 0px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3868,17 +6203,17 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body pre > code [data-line] {
+body body.theme-dark pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px light-dark(rgb(210, 132, 80), rgb(245, 165, 113));
+  border-left: 0px rgb(245, 165, 113);
 }
-body pre > code [data-highlighted-line] {
+body body.theme-dark pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: light-dark(rgb(210, 132, 80), rgb(245, 165, 113));
+  border-left-color: rgb(245, 165, 113);
 }
-body pre > code [data-highlighted-chars] {
+body body.theme-dark pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(210, 132, 80), rgb(245, 165, 113));
+  border: 0px rgb(245, 165, 113);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3888,7 +6223,7 @@ body pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .search-highlight {
+body body.theme-dark .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
   border: 0px rgb(0, 0, 0);

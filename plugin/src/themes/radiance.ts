@@ -24,7 +24,7 @@ export const theme: ThemeData = {
   --accent-l: 54% !important;
   --accent-s: 65% !important;
   --background-modifier-active: #303030 !important;
-  --background-modifier-active-hover: rgba(214, 61, 79, 0.1) !important;
+  --background-modifier-active-hover: hsla(353, 65%, 54%, 0.1) !important;
   --background-modifier-border: #383838 !important;
   --background-modifier-hover: #2a2a2a !important;
   --background-secondary: #252525 !important;
@@ -34,7 +34,7 @@ export const theme: ThemeData = {
   --bases-embed-border-radius: 3px !important;
   --bases-group-heading-property-color: #a0a0a0 !important;
   --bases-table-border-color: #383838 !important;
-  --bases-table-cell-background-selected: rgba(214, 61, 79, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(353, 65%, 54%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
         353,
         65%,
@@ -81,8 +81,8 @@ export const theme: ThemeData = {
         65%,
         54%
     ) !important;
-  --color-accent-1: rgb(222, 94, 115) !important;
-  --color-accent-2: rgb(231, 126, 147) !important;
+  --color-accent-1: hsl(350, 66.3%, 62.1%) !important;
+  --color-accent-2: hsl(348, 68.25%, 69.66%) !important;
   --color-accent-hover: hsl(
         353,
         65%,
@@ -177,7 +177,7 @@ export const theme: ThemeData = {
         65%,
         54%
     ) !important;
-  --link-unresolved-decoration-color: rgba(214, 61, 79, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(353, 65%, 54%, 0.3) !important;
   --list-marker-color-collapsed: hsl(
         353,
         65%,
@@ -200,7 +200,7 @@ export const theme: ThemeData = {
   --nav-heading-color-hover: #e0e0e0 !important;
   --nav-item-background-active: #2a2a2a !important;
   --nav-item-background-hover: #2a2a2a !important;
-  --nav-item-background-selected: rgba(214, 61, 79, 0.15) !important;
+  --nav-item-background-selected: hsla(353, 65%, 54%, 0.15) !important;
   --nav-item-color: #a0a0a0 !important;
   --nav-item-color-active: #e0e0e0 !important;
   --nav-item-color-highlighted: hsl(
@@ -280,16 +280,16 @@ export const theme: ThemeData = {
   --table-drag-handle-color-active: #ffffff !important;
   --table-header-border-color: #383838 !important;
   --table-header-color: #e0e0e0 !important;
-  --table-selection: rgba(214, 61, 79, 0.1) !important;
+  --table-selection: hsla(353, 65%, 54%, 0.1) !important;
   --table-selection-border-color: hsl(
         353,
         65%,
         54%
     ) !important;
-  --tag-background: rgba(214, 61, 79, 0.1) !important;
-  --tag-background-hover: rgba(214, 61, 79, 0.2) !important;
-  --tag-border-color: rgba(214, 61, 79, 0.15) !important;
-  --tag-border-color-hover: rgba(214, 61, 79, 0.15) !important;
+  --tag-background: hsla(353, 65%, 54%, 0.1) !important;
+  --tag-background-hover: hsla(353, 65%, 54%, 0.2) !important;
+  --tag-border-color: hsla(353, 65%, 54%, 0.15) !important;
+  --tag-border-color-hover: hsla(353, 65%, 54%, 0.15) !important;
   --tag-color: hsl(
         353,
         65%,
@@ -1012,25 +1012,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: rgb(160, 160, 160);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   text-decoration: rgb(160, 160, 160);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(160, 160, 160);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  text-decoration: rgb(160, 160, 160);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(48, 48, 48);
-  border-bottom-color: rgb(214, 61, 79);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: rgb(214, 61, 79);
-  border-right-color: rgb(214, 61, 79);
-  border-top-color: rgb(214, 61, 79);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  color: rgb(214, 61, 79);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(37, 37, 37);
@@ -1264,7 +1245,7 @@ html[saved-theme="dark"] body sup {
   --accent-l: 60% !important;
   --accent-s: 65% !important;
   --background-modifier-active: #e8eaed !important;
-  --background-modifier-active-hover: rgba(219, 87, 102, 0.1) !important;
+  --background-modifier-active-hover: hsla(353, 65%, 60%, 0.1) !important;
   --background-modifier-border: #dadce0 !important;
   --background-modifier-hover: #f1f3f4 !important;
   --background-secondary: #f8f9fa !important;
@@ -1274,7 +1255,7 @@ html[saved-theme="dark"] body sup {
   --bases-embed-border-radius: 3px !important;
   --bases-group-heading-property-color: #5f6368 !important;
   --bases-table-border-color: #dadce0 !important;
-  --bases-table-cell-background-selected: rgba(219, 87, 102, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(353, 65%, 60%, 0.1) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
         353,
         65%,
@@ -1321,8 +1302,8 @@ html[saved-theme="dark"] body sup {
         65%,
         60%
     ) !important;
-  --color-accent-1: rgb(225, 107, 123) !important;
-  --color-accent-2: rgb(228, 124, 141) !important;
+  --color-accent-1: hsl(352, 65.65%, 64.5%) !important;
+  --color-accent-2: hsl(350, 66.3%, 69%) !important;
   --color-accent-hover: hsl(
         353,
         65%,
@@ -1417,7 +1398,7 @@ html[saved-theme="dark"] body sup {
         65%,
         60%
     ) !important;
-  --link-unresolved-decoration-color: rgba(219, 87, 102, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(353, 65%, 60%, 0.3) !important;
   --list-marker-color-collapsed: hsl(
         353,
         65%,
@@ -1440,7 +1421,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-hover: #202124 !important;
   --nav-item-background-active: #f1f3f4 !important;
   --nav-item-background-hover: #f1f3f4 !important;
-  --nav-item-background-selected: rgba(219, 87, 102, 0.15) !important;
+  --nav-item-background-selected: hsla(353, 65%, 60%, 0.15) !important;
   --nav-item-color: #5f6368 !important;
   --nav-item-color-active: #202124 !important;
   --nav-item-color-highlighted: hsl(
@@ -1518,16 +1499,16 @@ html[saved-theme="dark"] body sup {
   --table-drag-handle-color-active: #ffffff !important;
   --table-header-border-color: #dadce0 !important;
   --table-header-color: #202124 !important;
-  --table-selection: rgba(219, 87, 102, 0.1) !important;
+  --table-selection: hsla(353, 65%, 60%, 0.1) !important;
   --table-selection-border-color: hsl(
         353,
         65%,
         60%
     ) !important;
-  --tag-background: rgba(219, 87, 102, 0.1) !important;
-  --tag-background-hover: rgba(219, 87, 102, 0.2) !important;
-  --tag-border-color: rgba(219, 87, 102, 0.15) !important;
-  --tag-border-color-hover: rgba(219, 87, 102, 0.15) !important;
+  --tag-background: hsla(353, 65%, 60%, 0.1) !important;
+  --tag-background-hover: hsla(353, 65%, 60%, 0.2) !important;
+  --tag-border-color: hsla(353, 65%, 60%, 0.15) !important;
+  --tag-border-color-hover: hsla(353, 65%, 60%, 0.15) !important;
   --tag-color: hsl(
         353,
         65%,
@@ -2249,25 +2230,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(95, 99, 104);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   text-decoration: rgb(95, 99, 104);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(95, 99, 104);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  text-decoration: rgb(95, 99, 104);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(232, 234, 237);
-  border-bottom-color: rgb(219, 87, 102);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: rgb(219, 87, 102);
-  border-right-color: rgb(219, 87, 102);
-  border-top-color: rgb(219, 87, 102);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  color: rgb(219, 87, 102);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(248, 249, 250);

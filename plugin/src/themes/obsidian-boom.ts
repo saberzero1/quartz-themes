@@ -362,12 +362,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   color: rgb(92, 112, 128);
   font-weight: 700;
   text-decoration: rgb(92, 112, 128);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(92, 112, 128);
-  font-weight: 500;
-  text-decoration: rgb(92, 112, 128);
 }`,
     toc: `html body li.depth-0 {
   font-weight: 700;

@@ -64,7 +64,6 @@ export const theme: ThemeData = {
   --blur-background: color-mix(in srgb, #3f3f3f 65%, transparent) linear-gradient(#3f3f3f, color-mix(in srgb, #3f3f3f 65%, transparent)) !important;
   --bodyFont: "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: #7fa4ca !important;
-  --bold-weight: 600 !important;
   --callout-border-opacity: 0.4;
   --callout-border-width: 0 0.05rem 0 0.1rem;
   --callout-bug: 237,166,165;
@@ -82,7 +81,6 @@ export const theme: ThemeData = {
   --callout-summary: 158,190,188;
   --callout-tip: 158,190,188;
   --callout-title-padding: 8px;
-  --callout-title-weight: 600;
   --callout-todo: 159,187,216;
   --callout-warning: 227,172,151;
   --canvas-card-label-color: #a0a0a0 !important;
@@ -357,7 +355,6 @@ export const theme: ThemeData = {
   --link-unresolved-decoration-color: #058080 !important;
   --link-unresolved-decoration-style: dotted !important;
   --link-unresolved-opacity: 0.9 !important;
-  --list-indent: 2.25em !important;
   --list-marker-color: #a0a0a0 !important;
   --list-marker-color-collapsed: #c6b2c3 !important;
   --list-marker-color-hover: #b8b8b8 !important;
@@ -371,7 +368,6 @@ export const theme: ThemeData = {
   --metadata-gap: 0 !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-input-font: "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #cdcdcd !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-label-font: "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -484,7 +480,6 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #cdcdcd !important;
   --setting-items-background: #272727 !important;
   --setting-items-border-color: #1b1b1b !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: black !important;
   --slider-track-background: #1b1b1b !important;
   --status-bar-background: #212121 !important;
@@ -521,7 +516,6 @@ export const theme: ThemeData = {
   --table-header-border-color: #1b1b1b !important;
   --table-header-color: #fafafa !important;
   --table-header-size: 0.933em !important;
-  --table-header-weight: 600 !important;
   --table-row-alt-background-hover: rgba(142, 103, 135, 0.2) !important;
   --table-row-background-hover: rgba(142, 103, 135, 0.2) !important;
   --table-selection: hsla(344, 30%, 51%, 0.1) !important;
@@ -556,7 +550,6 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: #cdcdcd !important;
   --vault-profile-color: #cdcdcd !important;
   --vault-profile-color-hover: #cdcdcd !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --yellow-0: #f1d9a9 !important;
   --yellow-1: #ecc986 !important;
   --yellow-1-rgb: 241,217,169 !important;
@@ -1005,6 +998,45 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(205, 205, 205);
   text-decoration: rgb(205, 205, 205);
   text-decoration-color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  color: rgb(115, 115, 115);
+  content: "-";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  color: rgb(167, 92, 112);
+  content: "!";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  color: rgb(196, 154, 82);
+  content: "?";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  content: " ";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  color: rgb(127, 164, 202);
+  content: ">";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  color: rgb(127, 164, 202);
+  content: "🧱";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  color: rgb(145, 166, 149);
+  content: "👀";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  color: rgb(92, 122, 98);
+  content: "✓";
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(61, 126, 123);
@@ -1625,7 +1657,6 @@ html[saved-theme="dark"] body sup {
   --blur-background: color-mix(in srgb, #f8f8f8 65%, transparent) linear-gradient(#f8f8f8, color-mix(in srgb, #f8f8f8 65%, transparent)) !important;
   --bodyFont: "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: #4575ae !important;
-  --bold-weight: 600 !important;
   --callout-border-opacity: 0.4;
   --callout-border-width: 0 0.05rem 0 0.1rem;
   --callout-bug: 194,76,74;
@@ -1643,7 +1674,6 @@ html[saved-theme="dark"] body sup {
   --callout-summary: 62,125,121;
   --callout-tip: 62,125,121;
   --callout-title-padding: 8px;
-  --callout-title-weight: 600;
   --callout-todo: 69,117,174;
   --callout-warning: 157,101,83;
   --canvas-background: #f8f8f8 !important;
@@ -1917,7 +1947,6 @@ html[saved-theme="dark"] body sup {
   --link-unresolved-decoration-color: #41b0b0 !important;
   --link-unresolved-decoration-style: dotted !important;
   --link-unresolved-opacity: 0.9 !important;
-  --list-indent: 2.25em !important;
   --list-marker-color: #a0a0a0 !important;
   --list-marker-color-collapsed: #8e6787 !important;
   --list-marker-color-hover: #5d5d5d !important;
@@ -1931,7 +1960,6 @@ html[saved-theme="dark"] body sup {
   --metadata-gap: 0 !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.075) !important;
   --metadata-input-font: "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #484848 !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.075) !important;
   --metadata-label-font: "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -2049,7 +2077,6 @@ html[saved-theme="dark"] body sup {
   --setting-items-background: #f1f1f1 !important;
   --setting-items-border-color: #cdcdcd !important;
   --show-whitespace-color: #dbdbdb !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: #dbdbdb !important;
   --slider-track-background: #cdcdcd !important;
   --status-bar-background: #ebebeb !important;
@@ -2088,6 +2115,7 @@ html[saved-theme="dark"] body sup {
   --table-header-border-color: #b399ae !important;
   --table-header-color: #2f2f2f !important;
   --table-header-size: 0.933em !important;
+  --table-header-weight: 600 !important;
   --table-row-alt-background-hover: rgba(142, 103, 135, 0.05) !important;
   --table-row-background-hover: rgba(142, 103, 135, 0.05) !important;
   --table-selection: hsla(344, 30%, 51%, 0.1) !important;
@@ -2122,7 +2150,6 @@ html[saved-theme="dark"] body sup {
   --titlebar-text-color-focused: #484848 !important;
   --vault-profile-color: #484848 !important;
   --vault-profile-color-hover: #484848 !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --yellow-0: #f1d9a9 !important;
   --yellow-1: #ecc986 !important;
   --yellow-1-rgb: 241,217,169 !important;
@@ -2573,6 +2600,357 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(72, 72, 72);
   text-decoration: rgb(72, 72, 72);
   text-decoration-color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  color: rgb(160, 160, 160);
+  content: "-";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  color: rgb(194, 76, 74);
+  content: "!";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  color: rgb(196, 154, 82);
+  content: "?";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  content: " ";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  color: rgb(127, 164, 202);
+  content: ">";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  color: rgb(127, 164, 202);
+  content: "🧱";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  color: rgb(145, 166, 149);
+  content: "👀";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  color: rgb(145, 166, 149);
+  content: "✓";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(248, 248, 248);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgb(61, 126, 123);

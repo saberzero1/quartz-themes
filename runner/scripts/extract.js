@@ -555,6 +555,19 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
         // before its descendants).
         const cssVarBaseline = {};
         let e = elements.nextNode();
+        const allowedWebkitProps = new Set([
+          "-webkit-mask-image",
+          "-webkit-mask-position",
+          "-webkit-mask-repeat",
+          "-webkit-mask-size",
+          "-webkit-backdrop-filter",
+          "-webkit-text-stroke",
+          "-webkit-text-stroke-width",
+          "-webkit-text-stroke-color",
+          "-webkit-text-fill-color",
+          "-webkit-background-clip",
+        ]);
+
         while (e) {
           if (
             !noStyleTags[e.tagName] &&
@@ -646,7 +659,8 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
                   // the browser default for this tag (unchanged logic).
                   (prop &&
                     !isCustomProp &&
-                    !prop.startsWith("-webkit-") &&
+                    (!prop.startsWith("-webkit-") ||
+                      allowedWebkitProps.has(prop)) &&
                     valStr !==
                       (defaultStyle ? defaultStyle[prop] : undefined) &&
                     ![
@@ -707,6 +721,74 @@ async function serializeWithStyles(defaultStylesByTagName, browser) {
   );
   // TODO: Fix empty return values
   // Probably not passing something correctly to the browser context
+}
+
+// Targeted extraction of checkbox icon data from input elements.
+// Captures -webkit-mask-image (filtered out by serializeWithStyles) and
+// content (used by some themes for icon font codepoints like "\ec03").
+async function extractCheckboxIcons(browser) {
+  return await browser.executeObsidian(async () => {
+    const iconMap = {};
+    const taskItems = document.querySelectorAll("li.task-list-item[data-task]");
+
+    const seenTasks = new Set();
+    for (const li of taskItems) {
+      const task = li.getAttribute("data-task");
+      if (!task || seenTasks.has(task)) continue;
+      seenTasks.add(task);
+
+      const input = li.querySelector('input[type="checkbox"]');
+      if (!input) continue;
+
+      const style = window.getComputedStyle(input);
+      const maskImage =
+        style.getPropertyValue("-webkit-mask-image") ||
+        style.getPropertyValue("mask-image");
+
+      if (maskImage && maskImage !== "none" && !maskImage.startsWith("none")) {
+        const selector = `input[data-task="${task}"]`;
+        if (!iconMap[selector]) iconMap[selector] = {};
+        iconMap[selector]["-webkit-mask-image"] = maskImage;
+      }
+
+      const afterStyle = window.getComputedStyle(input, "::after");
+      const afterMaskImage =
+        afterStyle.getPropertyValue("-webkit-mask-image") ||
+        afterStyle.getPropertyValue("mask-image");
+      const afterContent = afterStyle.getPropertyValue("content");
+      const afterColor = afterStyle.getPropertyValue("color");
+      const afterBgColor = afterStyle.getPropertyValue("background-color");
+
+      const hasAfterMask =
+        afterMaskImage &&
+        afterMaskImage !== "none" &&
+        !afterMaskImage.startsWith("none");
+      const hasAfterContent =
+        afterContent &&
+        afterContent !== "none" &&
+        afterContent !== '""' &&
+        afterContent !== "normal";
+
+      if (hasAfterMask || hasAfterContent) {
+        const afterSelector = `input[data-task="${task}"]::after`;
+        if (!iconMap[afterSelector]) iconMap[afterSelector] = {};
+        if (hasAfterMask) {
+          iconMap[afterSelector]["-webkit-mask-image"] = afterMaskImage;
+        }
+        if (hasAfterContent) {
+          iconMap[afterSelector]["content"] = afterContent;
+        }
+        if (afterColor) {
+          iconMap[afterSelector]["color"] = afterColor;
+        }
+        if (afterBgColor && afterBgColor !== "rgba(0, 0, 0, 0)") {
+          iconMap[afterSelector]["background-color"] = afterBgColor;
+        }
+      }
+    }
+
+    return iconMap;
+  });
 }
 
 function fixCalloutIconColor(results) {
@@ -869,18 +951,24 @@ async function extractBaselineStyles(
     .then(() => obsidianPage.openFile("theme-checkboxes/special.md"))
     .then(() => obsidianPage.openFile("theme-checkboxes/special.md"))
     .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkCheckboxIconsSpecial = await extractCheckboxIcons(browser);
   const darkCheckboxesLowercase = await ensureLayoutReady(browser)
     .then(() => obsidianPage.openFile("theme-checkboxes/lower.md"))
     .then(() => obsidianPage.openFile("theme-checkboxes/lower.md"))
     .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkCheckboxIconsLowercase = await extractCheckboxIcons(browser);
   const darkCheckboxesUppercase = await ensureLayoutReady(browser)
     .then(() => obsidianPage.openFile("theme-checkboxes/upper.md"))
     .then(() => obsidianPage.openFile("theme-checkboxes/upper.md"))
     .then(() => serializeWithStyles(darkDefaultStyles, browser));
+  const darkCheckboxIconsUppercase = await extractCheckboxIcons(browser);
   darkResult.checkboxes = {
     ...darkCheckboxesSpecial,
     ...darkCheckboxesLowercase,
     ...darkCheckboxesUppercase,
+    ...darkCheckboxIconsSpecial,
+    ...darkCheckboxIconsLowercase,
+    ...darkCheckboxIconsUppercase,
   };
 
   let darkResultObject = {};
@@ -984,18 +1072,24 @@ async function extractBaselineStyles(
     .then(() => obsidianPage.openFile("theme-checkboxes/special.md"))
     .then(() => obsidianPage.openFile("theme-checkboxes/special.md"))
     .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightCheckboxIconsSpecial = await extractCheckboxIcons(browser);
   const lightCheckboxesLowercase = await ensureLayoutReady(browser)
     .then(() => obsidianPage.openFile("theme-checkboxes/lower.md"))
     .then(() => obsidianPage.openFile("theme-checkboxes/lower.md"))
     .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightCheckboxIconsLowercase = await extractCheckboxIcons(browser);
   const lightCheckboxesUppercase = await ensureLayoutReady(browser)
     .then(() => obsidianPage.openFile("theme-checkboxes/upper.md"))
     .then(() => obsidianPage.openFile("theme-checkboxes/upper.md"))
     .then(() => serializeWithStyles(lightDefaultStyles, browser));
+  const lightCheckboxIconsUppercase = await extractCheckboxIcons(browser);
   lightResult.checkboxes = {
     ...lightCheckboxesSpecial,
     ...lightCheckboxesLowercase,
     ...lightCheckboxesUppercase,
+    ...lightCheckboxIconsSpecial,
+    ...lightCheckboxIconsLowercase,
+    ...lightCheckboxIconsUppercase,
   };
 
   let lightResultObject = {};
@@ -1244,18 +1338,24 @@ async function getStylesFromObsidian(
       .then(() => darkPage.openFile("theme-checkboxes/special.md"))
       .then(() => darkPage.openFile("theme-checkboxes/special.md"))
       .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    const checkboxIconsSpecial = await extractCheckboxIcons(browser);
     const checkboxesLowercase = await ensureLayoutReady(browser)
       .then(() => darkPage.openFile("theme-checkboxes/lower.md"))
       .then(() => darkPage.openFile("theme-checkboxes/lower.md"))
       .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    const checkboxIconsLowercase = await extractCheckboxIcons(browser);
     const checkboxesUppercase = await ensureLayoutReady(browser)
       .then(() => darkPage.openFile("theme-checkboxes/upper.md"))
       .then(() => darkPage.openFile("theme-checkboxes/upper.md"))
       .then(() => serializeWithStyles(darkDefaultStyles, browser));
+    const checkboxIconsUppercase = await extractCheckboxIcons(browser);
     darkResult.checkboxes = {
       ...checkboxesSpecial,
       ...checkboxesLowercase,
       ...checkboxesUppercase,
+      ...checkboxIconsSpecial,
+      ...checkboxIconsLowercase,
+      ...checkboxIconsUppercase,
     };
     for (const extra of extras) {
       // await darkPage.openFile(`theme-extras/${extra}`);
@@ -1517,18 +1617,24 @@ async function getStylesFromObsidian(
       .then(() => lightPage.openFile("theme-checkboxes/special.md"))
       .then(() => lightPage.openFile("theme-checkboxes/special.md"))
       .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    const checkboxIconsSpecial = await extractCheckboxIcons(browser);
     const checkboxesLowercase = await ensureLayoutReady(browser)
       .then(() => lightPage.openFile("theme-checkboxes/lower.md"))
       .then(() => lightPage.openFile("theme-checkboxes/lower.md"))
       .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    const checkboxIconsLowercase = await extractCheckboxIcons(browser);
     const checkboxesUppercase = await ensureLayoutReady(browser)
       .then(() => lightPage.openFile("theme-checkboxes/upper.md"))
       .then(() => lightPage.openFile("theme-checkboxes/upper.md"))
       .then(() => serializeWithStyles(lightDefaultStyles, browser));
+    const checkboxIconsUppercase = await extractCheckboxIcons(browser);
     lightResult.checkboxes = {
       ...checkboxesSpecial,
       ...checkboxesLowercase,
       ...checkboxesUppercase,
+      ...checkboxIconsSpecial,
+      ...checkboxIconsLowercase,
+      ...checkboxIconsUppercase,
     };
     for (const extra of extras) {
       // await lightPage.openFile(`theme-extras/${extra}`);

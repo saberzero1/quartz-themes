@@ -422,18 +422,6 @@ html body hr {
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   cursor: pointer;
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  cursor: pointer;
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  cursor: pointer;
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 0px;

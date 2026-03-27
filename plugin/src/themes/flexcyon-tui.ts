@@ -14,31 +14,39 @@ export const theme: ThemeData = {
   --accent-s: 77.5% !important;
   --background-modifier-active-hover: #24262C !important;
   --background-modifier-border: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --background-modifier-border-focus: color-mix(
-    in hsl,
+    in oklch,
     #24262C,
     #4D566B
   ) !important;
   --background-modifier-border-hover: transparent !important;
-  --background-modifier-error: rgba(
+  --background-modifier-error: rgb(
     rgb(192, 58, 71),
     0.85
   ) !important;
   --background-modifier-error-hover: #C03A47 !important;
   --background-modifier-error-rgb: rgb(192, 58, 71) !important;
-  --background-modifier-form-field: #24262C !important;
-  --background-modifier-form-field-hover: #24262C !important;
+  --background-modifier-form-field: color-mix(
+    in oklch,
+    #191D28,
+    #24262C
+  ) !important;
+  --background-modifier-form-field-hover: color-mix(
+    in oklch,
+    #191D28,
+    #24262C
+  ) !important;
   --background-modifier-hover: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --background-modifier-message: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
@@ -48,7 +56,7 @@ export const theme: ThemeData = {
   --background-primary-alt: #24262C !important;
   --background-secondary: #14161C !important;
   --background-secondary-alt: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
@@ -58,20 +66,20 @@ export const theme: ThemeData = {
   --bases-cards-group-padding: 16px !important;
   --bases-cards-radius: 4px !important;
   --bases-cards-shadow: 0 0 0 1px color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
   --bases-embed-border-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --bases-embed-border-radius: 2px !important;
   --bases-embed-padding: 4px !important;
   --bases-group-heading-property-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
@@ -80,44 +88,58 @@ export const theme: ThemeData = {
   --bases-table-border-color: #6F768566 !important;
   --bases-table-cell-background-active: #191D28 !important;
   --bases-table-cell-background-disabled: #24262C !important;
-  --bases-table-cell-background-selected: rgba(112, 233, 73, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(105.5, 77.5%, 59.5%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px color-mix(
-    in hsl,
+    in oklch,
     #24262C,
     #4D566B
   ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(147, 238, 109) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
   --bases-table-container-border-radius: 2px !important;
   --bases-table-group-background: #24262C !important;
   --bases-table-header-background: #191D28 !important;
   --bases-table-header-background-hover: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --bases-table-header-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
   --bases-table-row-background-hover: #191D28 !important;
   --bases-table-summary-background: #191D28 !important;
   --bases-table-summary-background-hover: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
-  --blockquote-border-color: rgb(147, 238, 109) !important;
+  --blockquote-border-color: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
   --blur-background: color-mix(in srgb, color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) 65%, transparent) linear-gradient(color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ), color-mix(in srgb, color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) 65%, transparent)) !important;
@@ -149,27 +171,27 @@ export const theme: ThemeData = {
   --canvas-color-6: rgb(164, 97, 200) !important;
   --canvas-controls-radius: 2px !important;
   --canvas-dot-pattern: color-mix(
-    in hsl,
+    in oklch,
     #24262C,
     #4D566B
   ) !important;
   --caret-color: #D3D5D3 !important;
   --checkbox-border-color: #5a8fcd !important;
   --checkbox-border-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #A461C8,
     #898C93
   ) !important;
   --checkbox-color: #A461C8 !important;
   --checkbox-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #A461C8,
     #898C93
   ) !important;
   --checkbox-marker-color: #191D28 !important;
   --checkbox-radius: 2px !important;
   --checklist-done-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
@@ -178,12 +200,12 @@ export const theme: ThemeData = {
   --cm-panel-bg: #14161C !important;
   --code-background: #14161C !important;
   --code-border-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --code-bracket-background: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
@@ -194,682 +216,686 @@ export const theme: ThemeData = {
   --code-normal: #D3D5D3 !important;
   --code-operator: #5a8fcd !important;
   --code-property: #3CB9C2 !important;
-  --code-punctuation: rgba(rgb(192, 58, 71), 0.55) !important;
+  --code-punctuation: rgb(rgb(192, 58, 71), 0.55) !important;
   --code-radius: 2px !important;
   --code-string: #A1C05C !important;
   --code-tag: #898C93 !important;
   --code-value: #C29E42 !important;
   --collapse-icon-color: #6F768599 !important;
-  --collapse-icon-color-collapsed: rgb(147, 238, 109) !important;
-  --color-accent: rgb(112, 233, 73) !important;
-  --color-accent-1: rgb(147, 238, 109) !important;
-  --color-accent-2: hsla(
-    85.5,
-    66%,
-    65%,
-    88%
+  --collapse-icon-color-collapsed: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
+  --color-accent: hsl(105.5, 77.5%, 59.5%) !important;
+  --color-accent-1: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
+  --color-accent-2: hsl(
+    85.5 65.875%
+      65.45% / 87.5%
   ) !important;
   --color-accent-hsl: 105.5, 77.5%, 59.5% !important;
   --color-base-00: #14161C !important;
   --color-base-05: color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) !important;
   --color-base-10: #191D28 !important;
   --color-base-100: #D3D5D3 !important;
   --color-base-20: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --color-base-25: #24262C !important;
   --color-base-30: color-mix(
-    in hsl,
+    in oklch,
     #24262C,
     #4D566B
   ) !important;
   --color-base-35: #4D566B !important;
   --color-base-40: color-mix(
-    in hsl,
+    in oklch,
     #4D566B,
     #6F7685
   ) !important;
   --color-base-50: #6F7685 !important;
   --color-base-60: #898C93 !important;
   --color-base-70: color-mix(
-    in hsl,
+    in oklch,
     #D3D5D3,
     #898C93
   ) !important;
   --color-blue: #5a8fcd !important;
   --color-blue-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #5a8fcd,
     #3CB9C2
   ) !important;
   --color-blue-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5a8fcd, #3CB9C2)
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #3CB9C2)
       20%,
     transparent
   ) !important;
   --color-blue-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #5a8fcd,
     #A1C05C
   ) !important;
   --color-blue-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5a8fcd, #A1C05C)
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #A1C05C)
       20%,
     transparent
   ) !important;
   --color-blue-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #5a8fcd,
     #CC8449
   ) !important;
   --color-blue-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5a8fcd, #CC8449)
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #CC8449)
       20%,
     transparent
   ) !important;
   --color-blue-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #5a8fcd,
     #D458A3
   ) !important;
   --color-blue-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5a8fcd, #D458A3)
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #D458A3)
       20%,
     transparent
   ) !important;
   --color-blue-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #5a8fcd,
     #A461C8
   ) !important;
   --color-blue-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5a8fcd, #A461C8)
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #A461C8)
       20%,
     transparent
   ) !important;
   --color-blue-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #5a8fcd,
     #C03A47
   ) !important;
   --color-blue-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5a8fcd, #C03A47)
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #C03A47)
       20%,
     transparent
   ) !important;
   --color-blue-rgb: 90, 143, 205 !important;
   --color-blue-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #5a8fcd,
     #C29E42
   ) !important;
   --color-blue-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5a8fcd, #C29E42)
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #C29E42)
       20%,
     transparent
   ) !important;
   --color-cyan: #3CB9C2 !important;
   --color-cyan-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #3CB9C2,
     #5a8fcd
   ) !important;
   --color-cyan-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3CB9C2, #5a8fcd)
+    in oklch,
+    color-mix(in oklch, #3CB9C2, #5a8fcd)
       20%,
     transparent
   ) !important;
   --color-cyan-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #3CB9C2,
     #A1C05C
   ) !important;
   --color-cyan-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3CB9C2, #A1C05C)
+    in oklch,
+    color-mix(in oklch, #3CB9C2, #A1C05C)
       20%,
     transparent
   ) !important;
   --color-cyan-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #3CB9C2,
     #CC8449
   ) !important;
   --color-cyan-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3CB9C2, #CC8449)
+    in oklch,
+    color-mix(in oklch, #3CB9C2, #CC8449)
       20%,
     transparent
   ) !important;
   --color-cyan-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #3CB9C2,
     #D458A3
   ) !important;
   --color-cyan-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3CB9C2, #D458A3)
+    in oklch,
+    color-mix(in oklch, #3CB9C2, #D458A3)
       20%,
     transparent
   ) !important;
   --color-cyan-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #3CB9C2,
     #A461C8
   ) !important;
   --color-cyan-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3CB9C2, #A461C8)
+    in oklch,
+    color-mix(in oklch, #3CB9C2, #A461C8)
       20%,
     transparent
   ) !important;
   --color-cyan-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #3CB9C2,
     #C03A47
   ) !important;
   --color-cyan-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3CB9C2, #C03A47)
+    in oklch,
+    color-mix(in oklch, #3CB9C2, #C03A47)
       20%,
     transparent
   ) !important;
   --color-cyan-rgb: rgb(60, 185, 194) !important;
   --color-cyan-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #3CB9C2,
     #C29E42
   ) !important;
   --color-cyan-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3CB9C2, #C29E42)
+    in oklch,
+    color-mix(in oklch, #3CB9C2, #C29E42)
       20%,
     transparent
   ) !important;
   --color-green: #A1C05C !important;
   --color-green-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #A1C05C,
     #5a8fcd
   ) !important;
   --color-green-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A1C05C, #5a8fcd)
+    in oklch,
+    color-mix(in oklch, #A1C05C, #5a8fcd)
       20%,
     transparent
   ) !important;
   --color-green-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #A1C05C,
     #3CB9C2
   ) !important;
   --color-green-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A1C05C, #3CB9C2)
+    in oklch,
+    color-mix(in oklch, #A1C05C, #3CB9C2)
       20%,
     transparent
   ) !important;
   --color-green-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #A1C05C,
     #CC8449
   ) !important;
   --color-green-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A1C05C, #CC8449)
+    in oklch,
+    color-mix(in oklch, #A1C05C, #CC8449)
       20%,
     transparent
   ) !important;
   --color-green-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #A1C05C,
     #D458A3
   ) !important;
   --color-green-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A1C05C, #D458A3)
+    in oklch,
+    color-mix(in oklch, #A1C05C, #D458A3)
       20%,
     transparent
   ) !important;
   --color-green-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #A1C05C,
     #A461C8
   ) !important;
   --color-green-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A1C05C, #A461C8)
+    in oklch,
+    color-mix(in oklch, #A1C05C, #A461C8)
       20%,
     transparent
   ) !important;
   --color-green-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #A1C05C,
     #C03A47
   ) !important;
   --color-green-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A1C05C, #C03A47)
+    in oklch,
+    color-mix(in oklch, #A1C05C, #C03A47)
       20%,
     transparent
   ) !important;
   --color-green-rgb: rgb(161, 192, 92) !important;
   --color-green-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #A1C05C,
     #C29E42
   ) !important;
   --color-green-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A1C05C, #C29E42)
+    in oklch,
+    color-mix(in oklch, #A1C05C, #C29E42)
       20%,
     transparent
   ) !important;
   --color-orange: #CC8449 !important;
   --color-orange-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #CC8449,
     #5a8fcd
   ) !important;
   --color-orange-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #CC8449, #5a8fcd)
+    in oklch,
+    color-mix(in oklch, #CC8449, #5a8fcd)
       20%,
     transparent
   ) !important;
   --color-orange-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #CC8449,
     #3CB9C2
   ) !important;
   --color-orange-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #CC8449, #3CB9C2)
+    in oklch,
+    color-mix(in oklch, #CC8449, #3CB9C2)
       20%,
     transparent
   ) !important;
   --color-orange-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #CC8449,
     #A1C05C
   ) !important;
   --color-orange-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #CC8449, #A1C05C)
+    in oklch,
+    color-mix(in oklch, #CC8449, #A1C05C)
       20%,
     transparent
   ) !important;
   --color-orange-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #CC8449,
     #D458A3
   ) !important;
   --color-orange-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #CC8449, #D458A3)
+    in oklch,
+    color-mix(in oklch, #CC8449, #D458A3)
       20%,
     transparent
   ) !important;
   --color-orange-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #CC8449,
     #A461C8
   ) !important;
   --color-orange-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #CC8449, #A461C8)
+    in oklch,
+    color-mix(in oklch, #CC8449, #A461C8)
       20%,
     transparent
   ) !important;
   --color-orange-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #CC8449,
     #C03A47
   ) !important;
   --color-orange-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #CC8449, #C03A47)
+    in oklch,
+    color-mix(in oklch, #CC8449, #C03A47)
       20%,
     transparent
   ) !important;
   --color-orange-rgb: rgb(204, 132, 73) !important;
   --color-orange-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #CC8449,
     #C29E42
   ) !important;
   --color-orange-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #CC8449, #C29E42)
+    in oklch,
+    color-mix(in oklch, #CC8449, #C29E42)
       20%,
     transparent
   ) !important;
   --color-pink: #D458A3 !important;
   --color-pink-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #D458A3,
     #5a8fcd
   ) !important;
   --color-pink-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #D458A3, #5a8fcd)
+    in oklch,
+    color-mix(in oklch, #D458A3, #5a8fcd)
       20%,
     transparent
   ) !important;
   --color-pink-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #D458A3,
     #3CB9C2
   ) !important;
   --color-pink-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #D458A3, #3CB9C2)
+    in oklch,
+    color-mix(in oklch, #D458A3, #3CB9C2)
       20%,
     transparent
   ) !important;
   --color-pink-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #D458A3,
     #A1C05C
   ) !important;
   --color-pink-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #D458A3, #A1C05C)
+    in oklch,
+    color-mix(in oklch, #D458A3, #A1C05C)
       20%,
     transparent
   ) !important;
   --color-pink-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #D458A3,
     #CC8449
   ) !important;
   --color-pink-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #D458A3, #CC8449)
+    in oklch,
+    color-mix(in oklch, #D458A3, #CC8449)
       20%,
     transparent
   ) !important;
   --color-pink-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #D458A3,
     #A461C8
   ) !important;
   --color-pink-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #D458A3, #A461C8)
+    in oklch,
+    color-mix(in oklch, #D458A3, #A461C8)
       20%,
     transparent
   ) !important;
   --color-pink-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #D458A3,
     #C03A47
   ) !important;
   --color-pink-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #D458A3, #C03A47)
+    in oklch,
+    color-mix(in oklch, #D458A3, #C03A47)
       20%,
     transparent
   ) !important;
   --color-pink-rgb: rgb(212, 88, 163) !important;
   --color-pink-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #D458A3,
     #C29E42
   ) !important;
   --color-pink-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #D458A3, #C29E42)
+    in oklch,
+    color-mix(in oklch, #D458A3, #C29E42)
       20%,
     transparent
   ) !important;
   --color-purple: #A461C8 !important;
   --color-purple-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #A461C8,
     #5a8fcd
   ) !important;
   --color-purple-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A461C8, #5a8fcd)
+    in oklch,
+    color-mix(in oklch, #A461C8, #5a8fcd)
       20%,
     transparent
   ) !important;
   --color-purple-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #A461C8,
     #3CB9C2
   ) !important;
   --color-purple-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A461C8, #3CB9C2)
+    in oklch,
+    color-mix(in oklch, #A461C8, #3CB9C2)
       20%,
     transparent
   ) !important;
   --color-purple-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #A461C8,
     #A1C05C
   ) !important;
   --color-purple-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A461C8, #A1C05C)
+    in oklch,
+    color-mix(in oklch, #A461C8, #A1C05C)
       20%,
     transparent
   ) !important;
   --color-purple-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #A461C8,
     #CC8449
   ) !important;
   --color-purple-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A461C8, #CC8449)
+    in oklch,
+    color-mix(in oklch, #A461C8, #CC8449)
       20%,
     transparent
   ) !important;
   --color-purple-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #A461C8,
     #D458A3
   ) !important;
   --color-purple-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A461C8, #D458A3)
+    in oklch,
+    color-mix(in oklch, #A461C8, #D458A3)
       20%,
     transparent
   ) !important;
   --color-purple-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #A461C8,
     #C03A47
   ) !important;
   --color-purple-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A461C8, #C03A47)
+    in oklch,
+    color-mix(in oklch, #A461C8, #C03A47)
       20%,
     transparent
   ) !important;
   --color-purple-rgb: rgb(164, 97, 200) !important;
   --color-purple-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #A461C8,
     #C29E42
   ) !important;
   --color-purple-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #A461C8, #C29E42)
+    in oklch,
+    color-mix(in oklch, #A461C8, #C29E42)
       20%,
     transparent
   ) !important;
   --color-red: #C03A47 !important;
   --color-red-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #C03A47,
     #5a8fcd
   ) !important;
   --color-red-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C03A47, #5a8fcd)
+    in oklch,
+    color-mix(in oklch, #C03A47, #5a8fcd)
       20%,
     transparent
   ) !important;
   --color-red-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #C03A47,
     #3CB9C2
   ) !important;
   --color-red-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C03A47, #3CB9C2)
+    in oklch,
+    color-mix(in oklch, #C03A47, #3CB9C2)
       20%,
     transparent
   ) !important;
   --color-red-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #C03A47,
     #A1C05C
   ) !important;
   --color-red-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C03A47, #A1C05C)
+    in oklch,
+    color-mix(in oklch, #C03A47, #A1C05C)
       20%,
     transparent
   ) !important;
   --color-red-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #C03A47,
     #CC8449
   ) !important;
   --color-red-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C03A47, #CC8449)
+    in oklch,
+    color-mix(in oklch, #C03A47, #CC8449)
       20%,
     transparent
   ) !important;
   --color-red-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #C03A47,
     #D458A3
   ) !important;
   --color-red-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C03A47, #D458A3)
+    in oklch,
+    color-mix(in oklch, #C03A47, #D458A3)
       20%,
     transparent
   ) !important;
   --color-red-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #C03A47,
     #A461C8
   ) !important;
   --color-red-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C03A47, #A461C8)
+    in oklch,
+    color-mix(in oklch, #C03A47, #A461C8)
       20%,
     transparent
   ) !important;
   --color-red-rgb: rgb(192, 58, 71) !important;
   --color-red-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #C03A47,
     #C29E42
   ) !important;
   --color-red-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C03A47, #C29E42)
+    in oklch,
+    color-mix(in oklch, #C03A47, #C29E42)
       20%,
     transparent
   ) !important;
   --color-yellow: #C29E42 !important;
   --color-yellow-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #C29E42,
     #5a8fcd
   ) !important;
   --color-yellow-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C29E42, #5a8fcd)
+    in oklch,
+    color-mix(in oklch, #C29E42, #5a8fcd)
       20%,
     transparent
   ) !important;
   --color-yellow-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #C29E42,
     #3CB9C2
   ) !important;
   --color-yellow-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C29E42, #3CB9C2)
+    in oklch,
+    color-mix(in oklch, #C29E42, #3CB9C2)
       20%,
     transparent
   ) !important;
   --color-yellow-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #C29E42,
     #A1C05C
   ) !important;
   --color-yellow-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C29E42, #A1C05C)
+    in oklch,
+    color-mix(in oklch, #C29E42, #A1C05C)
       20%,
     transparent
   ) !important;
   --color-yellow-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #C29E42,
     #CC8449
   ) !important;
   --color-yellow-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C29E42, #CC8449)
+    in oklch,
+    color-mix(in oklch, #C29E42, #CC8449)
       20%,
     transparent
   ) !important;
   --color-yellow-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #C29E42,
     #D458A3
   ) !important;
   --color-yellow-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C29E42, #D458A3)
+    in oklch,
+    color-mix(in oklch, #C29E42, #D458A3)
       20%,
     transparent
   ) !important;
   --color-yellow-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #C29E42,
     #A461C8
   ) !important;
   --color-yellow-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C29E42, #A461C8)
+    in oklch,
+    color-mix(in oklch, #C29E42, #A461C8)
       20%,
     transparent
   ) !important;
   --color-yellow-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #C29E42,
     #C03A47
   ) !important;
   --color-yellow-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #C29E42, #C03A47)
+    in oklch,
+    color-mix(in oklch, #C29E42, #C03A47)
       20%,
     transparent
   ) !important;
@@ -878,36 +904,57 @@ export const theme: ThemeData = {
   --darkgray: #D3D5D3 !important;
   --dimmed: 0.55 !important;
   --divider-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
-  --divider-color-hover: rgb(147, 238, 109) !important;
+  --divider-color-hover: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
   --drag-ghost-background: #24262C !important;
-  --drag-ghost-text-color: rgb(147, 238, 109) !important;
+  --drag-ghost-text-color: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
   --dropdown-background: color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) !important;
   --dropdown-background-hover: #191D28 !important;
   --embed-block-shadow-hover: 0 0 0 1px color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ), inset 0 0 0 1px color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
-  --embed-border-start: 2px solid rgb(147, 238, 109) !important;
+  --embed-border-start: 2px solid color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
   --expand: 110% !important;
   --file-header-background: #191D28 !important;
   --file-header-background-focused: #191D28 !important;
   --file-header-font-size: 14.56227px !important;
   --file-line-width: 50rem !important;
   --flair-background: color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) !important;
@@ -917,7 +964,8 @@ export const theme: ThemeData = {
   --flexcyon-accent-l: 59.5% !important;
   --flexcyon-accent-s: 77.5% !important;
   --flexcyon-active-indicator: '>> ' !important;
-  --flexcyon-anim-duration: 0.3s !important;
+  --flexcyon-alt-link-opacity: 55% !important;
+  --flexcyon-anim-duration: 0.3ms !important;
   --flexcyon-anim-easing: ease-in-out !important;
   --flexcyon-anim-rotate-amount: 50deg !important;
   --flexcyon-anim-slide-amount: 56.63105px !important;
@@ -932,25 +980,25 @@ export const theme: ThemeData = {
   --flexcyon-ascii-scaling-factor: 1 !important;
   --flexcyon-base-01: #14161C !important;
   --flexcyon-base-01-02-mix: color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) !important;
   --flexcyon-base-02: #191D28 !important;
   --flexcyon-base-02-03-mix: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --flexcyon-base-03: #24262C !important;
   --flexcyon-base-03-04-mix: color-mix(
-    in hsl,
+    in oklch,
     #24262C,
     #4D566B
   ) !important;
   --flexcyon-base-04: #4D566B !important;
   --flexcyon-base-04-05-mix: color-mix(
-    in hsl,
+    in oklch,
     #4D566B,
     #6F7685
   ) !important;
@@ -958,7 +1006,7 @@ export const theme: ThemeData = {
   --flexcyon-base-grey-dark: #898C93 !important;
   --flexcyon-base-grey-light: #D3D5D3 !important;
   --flexcyon-base-grey-mix: color-mix(
-    in hsl,
+    in oklch,
     #D3D5D3,
     #898C93
   ) !important;
@@ -967,7 +1015,6 @@ export const theme: ThemeData = {
   --flexcyon-base-grey-tab: #71777f !important;
   --flexcyon-base-grey-token: #586582 !important;
   --flexcyon-bases-card-delay-factor: 12.5 !important;
-  --flexcyon-bases-card-flex-gorw: 0.55 !important;
   --flexcyon-bases-card-flex-grow: 0.55 !important;
   --flexcyon-bases-card-padding: 8px
     0px
@@ -977,6 +1024,7 @@ export const theme: ThemeData = {
   --flexcyon-bases-card-padding-left: 2px !important;
   --flexcyon-bases-card-padding-right: 0px !important;
   --flexcyon-bases-card-padding-top: 8px !important;
+  --flexcyon-bases-cards-label-opacity: 0.85 !important;
   --flexcyon-bases-padding-horiz: 16px !important;
   --flexcyon-bases-padding-verti: 16px !important;
   --flexcyon-bases-table-content-alignment: left !important;
@@ -993,10 +1041,10 @@ export const theme: ThemeData = {
   --flexcyon-brightness-ratio: 1 !important;
   --flexcyon-callout-bg-opacity: 20% !important;
   --flexcyon-callout-first-codeblock-margin-top: 1rem !important;
-  --flexcyon-callout-flashcard-animation-duration: 0.5s !important;
+  --flexcyon-callout-flashcard-animation-duration: 0.5ms !important;
   --flexcyon-callout-horiz-padding: 24px !important;
   --flexcyon-callout-icon-right-padding: 4px !important;
-  --flexcyon-callout-pop-animation-duration: 0.2s !important;
+  --flexcyon-callout-pop-animation-duration: 0.2ms !important;
   --flexcyon-callout-radix: 16px !important;
   --flexcyon-callout-verti-padding: 12px !important;
   --flexcyon-callout-vertical-margin: 1em !important;
@@ -1016,6 +1064,7 @@ export const theme: ThemeData = {
   --flexcyon-contrast-ratio: 1 !important;
   --flexcyon-cursor-duration: 42.5ms !important;
   --flexcyon-cursor-timing-fn: ease-in !important;
+  --flexcyon-cursor-type: auto !important;
   --flexcyon-cust-hr-str: 'f' !important;
   --flexcyon-cust-hr-str-font-size: 1.11803em !important;
   --flexcyon-cust-hr-str-horiz-padding: 8px !important;
@@ -1025,14 +1074,14 @@ export const theme: ThemeData = {
   --flexcyon-editor-bg-color: color-mix(
     in oklch,
     color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) 70%,
     #191D28 30%
   ) !important;
   --flexcyon-editor-bg-color-2: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
@@ -1044,19 +1093,28 @@ export const theme: ThemeData = {
   --flexcyon-exp-dimmed-nav-size: 13.3623px !important;
   --flexcyon-external-link-color: #5A8FCD !important;
   --flexcyon-external-link-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #5A8FCD,
     #898C93
   ) !important;
   --flexcyon-fc-dimmed-items-opacity: 0.89 !important;
+  --flexcyon-h1-color: #5a8fcd !important;
+  --flexcyon-h2-color: #A461C8 !important;
+  --flexcyon-h3-color: #3CB9C2 !important;
+  --flexcyon-h4-color: #D458A3 !important;
+  --flexcyon-h5-color: #A1C05C !important;
+  --flexcyon-h6-color: #C29E42 !important;
   --flexcyon-heading-1-alignment: left !important;
   --flexcyon-heading-2-alignment: left !important;
   --flexcyon-heading-3-alignment: left !important;
   --flexcyon-heading-4-alignment: left !important;
   --flexcyon-heading-5-alignment: left !important;
   --flexcyon-heading-6-alignment: left !important;
+  --flexcyon-highlight-active-line-opacity: 7.5% !important;
   --flexcyon-highlight-border-radius: 4px !important;
+  --flexcyon-highlight-colour: #3CB9C2 !important;
   --flexcyon-highlight-horiz-padding: 2.5px !important;
+  --flexcyon-highlight-opacity: 22.5% !important;
   --flexcyon-highlight-verti-padding: 1px !important;
   --flexcyon-input-horiz-padding: 8px !important;
   --flexcyon-input-verti-padding: 8px !important;
@@ -1064,7 +1122,7 @@ export const theme: ThemeData = {
   --flexcyon-lime-green: #A1C05C !important;
   --flexcyon-link-color: #A461C8 !important;
   --flexcyon-link-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #A461C8,
     #898C93
   ) !important;
@@ -1082,20 +1140,25 @@ export const theme: ThemeData = {
   --flexcyon-mode-view-header-title-verti-padding: 4px !important;
   --flexcyon-new-tab-bg-wrapper: linear-gradient(
     to right,
-    rgb(147, 238, 109),
+    hsl(
+    102.5 79.05%
+      68.425%
+  ),
     #5a8fcd,
     #3CB9C2
   ) !important;
+  --flexcyon-new-tab-font-group: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --flexcyon-omnisearch-body-margin-left: 1.45rem !important;
   --flexcyon-orange: #CC8449 !important;
+  --flexcyon-os-detail-padding-l: 12px !important;
   --flexcyon-os-detail-padding-r: 24px !important;
   --flexcyon-palette-cyan-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #3CB9C2,
     #898C93
   ) !important;
   --flexcyon-palette-lilac-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #A461C8,
     #898C93
   ) !important;
@@ -1114,11 +1177,13 @@ export const theme: ThemeData = {
   --flexcyon-search-container-verti-padding: 8px !important;
   --flexcyon-settings-installed-tooltip-left-margin: 1rem !important;
   --flexcyon-side-toggle-button-no-ribbon: 11px 16px 7px 0px !important;
-  --flexcyon-status-hide-hover-duration: 0.35s !important;
+  --flexcyon-status-hide-hover-duration: 0.35ms !important;
   --flexcyon-status-hide-hover-function: ease-out !important;
+  --flexcyon-status-hide-trigger-translation: 50px !important;
   --flexcyon-status-hide-until-hover-text: 'Show status' !important;
   --flexcyon-status-hide-until-hover-translation: 80vw !important;
   --flexcyon-status-live-text: 'LIVE' !important;
+  --flexcyon-status-new-tab-opacity: 0.55 !important;
   --flexcyon-status-reading-text: 'READ' !important;
   --flexcyon-status-source-text: 'SOURCE' !important;
   --flexcyon-style-settings-indent-width: 4px !important;
@@ -1127,15 +1192,20 @@ export const theme: ThemeData = {
   --flexcyon-table-reading-mode-width: 100% !important;
   --flexcyon-td-horiz-padding: 10px !important;
   --flexcyon-td-live-pad-scale: 0.2 !important;
+  --flexcyon-td-table-alignment: left !important;
   --flexcyon-td-verti-padding: 5px !important;
   --flexcyon-text-muted: #6F768599 !important;
+  --flexcyon-th-horiz-padding: 10px !important;
+  --flexcyon-th-live-pad-scale: 0.2 !important;
+  --flexcyon-th-table-alignment: left !important;
+  --flexcyon-th-verti-padding: 5px !important;
   --flexcyon-top-actions-alignment: center !important;
   --flexcyon-tree-item-horiz-padding: 10px !important;
   --flexcyon-tree-item-verti-padding: 2px !important;
+  --flexcyon-typewriter-mode-opacity: 0.55 !important;
   --flexcyon-var-comps-sugg-horiz-padding: 12px !important;
   --flexcyon-var-comps-sugg-vert-padding: 7px !important;
   --flexcyon-view-header-breadcrumb-max-w: 12.5vw !important;
-  --flexcyon-vim-bottom-pos-w-status: 40px !important;
   --flexcyon-vim-bottom-positioning: -4px !important;
   --flexcyon-vim-command-text: 'COMMAND' !important;
   --flexcyon-vim-insert-text: 'INSERT' !important;
@@ -1150,18 +1220,18 @@ export const theme: ThemeData = {
   --font-ui-small: 14.56227px !important;
   --font-ui-smaller: 12.94424px !important;
   --footnote-divider-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --footnote-id-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
   --footnote-id-color-no-occurrences: #6F768599 !important;
   --footnote-input-background-active: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
@@ -1171,17 +1241,20 @@ export const theme: ThemeData = {
   --graph-control-verti-padding: 6px !important;
   --graph-line: #24262C !important;
   --graph-node: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
   --graph-node-attachment: #C29E42 !important;
-  --graph-node-focused: rgb(147, 238, 109) !important;
+  --graph-node-focused: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
   --graph-node-tag: #A461C8 !important;
   --graph-node-unresolved: #C03A47 !important;
   --graph-text: #D3D5D3 !important;
   --gray: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
@@ -1210,17 +1283,35 @@ export const theme: ThemeData = {
   --h6-size: 1.01803em !important;
   --h6-weight: 575 !important;
   --heading-formatting: #6F768599 !important;
-  --highlight: color-mix(in hsl, #3CB9C2 20%, transparent) !important;
+  --highlight: color-mix(
+    in oklch,
+    #3CB9C2 22.5%,
+    transparent
+  ) !important;
   --hr-color: #393E48 !important;
   --icon-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
-  --icon-color-active: rgb(147, 238, 109) !important;
-  --icon-color-focused: rgb(147, 238, 109) !important;
+  --icon-color-active: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
+  --icon-color-focused: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
   --icon-color-hover: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
@@ -1234,16 +1325,23 @@ export const theme: ThemeData = {
     8px !important;
   --input-placeholder-color: #6F768599 !important;
   --input-radius: 0px !important;
-  --interactive-accent: rgb(147, 238, 109) !important;
+  --interactive-accent: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
   --interactive-accent-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #92A871 75%,
     transparent
   ) !important;
   --interactive-accent-hsl: 105.5, 77.5%, 59.5% !important;
   --interactive-hover: #191D28 !important;
   --interactive-normal: color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) !important;
@@ -1255,13 +1353,13 @@ export const theme: ThemeData = {
   --line-height-tight: 1.25 !important;
   --link-color: #A461C8 !important;
   --link-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #A461C8,
     #898C93
   ) !important;
   --link-external-color: #5A8FCD !important;
   --link-external-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #5A8FCD,
     #898C93
   ) !important;
@@ -1271,7 +1369,7 @@ export const theme: ThemeData = {
   --list-marker-color: #A461C8 !important;
   --list-marker-color-collapsed: #A1C05C !important;
   --list-marker-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #A461C8,
     #898C93
   ) !important;
@@ -1279,39 +1377,39 @@ export const theme: ThemeData = {
   --menu-border-color: transparent !important;
   --menu-radius: 4px !important;
   --metadata-border-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --metadata-divider-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --metadata-input-background-active: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --metadata-input-text-color: #D3D5D3 !important;
   --metadata-label-background-active: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --metadata-label-text-color: #A461C8 !important;
   --metadata-label-text-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #A461C8,
     #898C93
   ) !important;
   --metadata-property-background-active: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(
-    in hsl,
+    in oklch,
     #24262C,
     #4D566B
   ) !important;
@@ -1326,41 +1424,51 @@ export const theme: ThemeData = {
   --nav-heading-color: #D3D5D3 !important;
   --nav-heading-color-collapsed: #6F768599 !important;
   --nav-heading-color-collapsed-hover: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
   --nav-heading-color-hover: #D3D5D3 !important;
   --nav-item-background-active: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --nav-item-background-hover: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --nav-item-background-selected: #24262C !important;
   --nav-item-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
-  --nav-item-color-active: rgb(147, 238, 109) !important;
-  --nav-item-color-highlighted: rgb(147, 238, 109) !important;
+  --nav-item-color-active: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
+  --nav-item-color-highlighted: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
   --nav-item-color-hover: #D3D5D3 !important;
   --nav-item-color-selected: #CC8449 !important;
   --nav-item-radius: 2px !important;
   --nav-item-size: 14.56227px !important;
   --nav-tag-color: #6F768599 !important;
   --nav-tag-color-active: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
   --nav-tag-color-hover: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
@@ -1374,38 +1482,41 @@ export const theme: ThemeData = {
   --pdf-background: #191D28 !important;
   --pdf-page-background: #191D28 !important;
   --pdf-shadow: 0 0 0 1px color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --pdf-sidebar-background: #191D28 !important;
   --pdf-thumbnail-shadow: 0 0 0 1px color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --pill-border-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --pill-border-color-hover: transparent !important;
   --pill-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
   --pill-color-hover: #D3D5D3 !important;
   --pill-color-remove: #6F768599 !important;
-  --pill-color-remove-hover: rgb(147, 238, 109) !important;
+  --pill-color-remove-hover: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
   --prompt-background: #191D28 !important;
   --prompt-border-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --r-background-color: color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) !important;
@@ -1417,11 +1528,9 @@ export const theme: ThemeData = {
   --r-heading2-size: 1.61803em !important;
   --r-heading3-size: 1.41803em !important;
   --r-heading4-size: 1.21803em !important;
-  --r-link-color: hsla(
-    85.5,
-    66%,
-    65%,
-    88%
+  --r-link-color: hsl(
+    85.5 65.875%
+      65.45% / 87.5%
   ) !important;
   --r-main-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-main-font-size: max-content !important;
@@ -1431,15 +1540,15 @@ export const theme: ThemeData = {
   --radius-x1: 8px !important;
   --radius-xl: 8px !important;
   --raised-background: color-mix(in srgb, color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) 65%, transparent) linear-gradient(color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ), color-mix(in srgb, color-mix(
-    in hsl,
+    in oklch,
     #14161C,
     #191D28
   ) 65%, transparent)) !important;
@@ -1451,25 +1560,32 @@ export const theme: ThemeData = {
   --search-clear-button-color: #C03A47 !important;
   --search-icon-color: #92A871 !important;
   --search-result-background: #191D28 !important;
-  --secondary: rgb(147, 238, 109) !important;
+  --secondary: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
   --setting-group-heading-color: #D3D5D3 !important;
   --setting-group-heading-size: 16.1803px !important;
-  --setting-items-background: #24262C !important;
   --setting-items-border-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
-  --setting-items-radius: 6px !important;
+  --setting-items-padding: 2px 0px !important;
+  --settings-background: color-mix(
+    in oklch,
+    #14161C,
+    #191D28
+  ) !important;
   --slider-thumb-border-color: transparent !important;
   --slider-track-background: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --status-bar-background: #14161C !important;
   --status-bar-border-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
@@ -1477,7 +1593,7 @@ export const theme: ThemeData = {
   --status-bar-position: absolute !important;
   --status-bar-radius: 4px 0 0 0 !important;
   --status-bar-text-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
@@ -1496,7 +1612,7 @@ export const theme: ThemeData = {
   --tab-divider-color: #14161C !important;
   --tab-font-size: 14.56227px !important;
   --tab-outline-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
@@ -1507,26 +1623,45 @@ export const theme: ThemeData = {
   --tab-switcher-background: #14161C !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #14161C, transparent) !important;
   --tab-switcher-preview-radius: 8px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(112, 233, 73) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(105.5, 77.5%, 59.5%) !important;
   --tab-text-color: #6F7685 !important;
-  --tab-text-color-active: rgb(147, 238, 109) !important;
+  --tab-text-color-active: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
   --tab-text-color-focused: #6F7685 !important;
-  --tab-text-color-focused-active: rgb(147, 238, 109) !important;
-  --tab-text-color-focused-active-current: rgb(147, 238, 109) !important;
-  --tab-text-color-focused-highlighted: rgb(147, 238, 109) !important;
+  --tab-text-color-focused-active: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
+  --tab-text-color-focused-active-current: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
+  --tab-text-color-focused-highlighted: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
   --table-add-button-border-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --table-background: #191D28 !important;
   --table-border-color: #6F768566 !important;
   --table-column-alt-background: #191D28 !important;
-  --table-drag-handle-background-active: rgb(147, 238, 109) !important;
+  --table-drag-handle-background-active: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
   --table-drag-handle-color: #6F768599 !important;
   --table-drag-handle-color-active: #24262C !important;
   --table-header-background: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
@@ -1537,67 +1672,89 @@ export const theme: ThemeData = {
   --table-line-height: 1.25 !important;
   --table-row-alt-background-hover: #191D28 !important;
   --table-row-background-hover: #191D28 !important;
-  --table-selection: rgba(112, 233, 73, 0.1) !important;
-  --table-selection-border-color: rgb(147, 238, 109) !important;
-  --tag-background: color-mix(
-    in hsl shorter hue,
-    #3CB9C2 25%,
-    transparent
+  --table-selection: hsla(105.5, 77.5%, 59.5%, 0.1) !important;
+  --table-selection-border-color: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
   ) !important;
+  --table-text-size: 16.1803px !important;
+  --tag-background: color-mix(in oklch, #3CB9C2 25%, transparent) !important;
   --tag-background-hover: color-mix(
-    in hsl shorter hue,
+    in oklch,
     color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #3CB9C2,
     #898C93
   ) 25%,
     transparent
   ) !important;
-  --tag-border-color: rgba(112, 233, 73, 0.15) !important;
-  --tag-border-color-hover: rgba(112, 233, 73, 0.15) !important;
+  --tag-border-color: hsla(105.5, 77.5%, 59.5%, 0.15) !important;
+  --tag-border-color-hover: hsla(105.5, 77.5%, 59.5%, 0.15) !important;
   --tag-color: #3CB9C2 !important;
   --tag-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #3CB9C2,
     #898C93
   ) !important;
   --tag-decoration-hover: underline !important;
   --tertiary: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #92A871 75%,
     transparent
   ) !important;
-  --text-accent: rgb(147, 238, 109) !important;
+  --text-accent: hsl(
+    102.5 79.05%
+      68.425%
+  ) !important;
   --text-error: #C03A47 !important;
   --text-faint: #6F768599 !important;
-  --text-highlight-bg: color-mix(in hsl, #3CB9C2 20%, transparent) !important;
+  --text-highlight-bg: color-mix(
+    in oklch,
+    #3CB9C2 22.5%,
+    transparent
+  ) !important;
   --text-muted: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
   --text-normal: #D3D5D3 !important;
   --text-on-accent: #24262C !important;
-  --text-selection: rgba(112, 233, 73, 0.33) !important;
+  --text-selection: hsla(105.5, 77.5%, 59.5%, 0.33) !important;
   --text-success: #A1C05C !important;
   --text-warning: #C03A47 !important;
-  --textHighlight: color-mix(in hsl, #3CB9C2 20%, transparent) !important;
+  --textHighlight: color-mix(
+    in oklch,
+    #3CB9C2 22.5%,
+    transparent
+  ) !important;
   --titlebar-background: #14161C !important;
   --titlebar-background-focused: #14161C !important;
   --titlebar-border-color: color-mix(
-    in hsl,
+    in oklch,
     #191D28,
     #24262C
   ) !important;
   --titlebar-text-color: #6F768599 !important;
   --titlebar-text-color-focused: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #D3D5D3
   ) !important;
   --toggle-thumb-color: #24262C !important;
   --upsize: 103% !important;
-  --vault-name-color: rgb(147, 238, 109) !important;
+  --vault-name-color: color-mix(
+    in oklch,
+    hsl(
+    102.5 79.05%
+      68.425%
+  ) 80%,
+    transparent 20%
+  ) !important;
   --vault-profile-color: #D3D5D3 !important;
   --vault-profile-color-hover: #D3D5D3 !important;
   --vault-profile-font-size: 14.56227px !important;
@@ -1626,13 +1783,13 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
   border-right-width: 0px;
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(20, 22, 28);
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
   color: rgb(211, 213, 211);
 }
 
@@ -1669,7 +1826,7 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: color(srgb 0.235294 0.72549 0.760784 / 0.2);
+  background-color: oklch(0.722344 0.107179 202.055 / 0.225);
   color: rgb(211, 213, 211);
   font-weight: 525;
   outline: rgb(211, 213, 211) none 0px;
@@ -1685,10 +1842,10 @@ html[saved-theme="dark"] body del {
 }
 
 html[saved-theme="dark"] body p {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  outline: color(srgb 0.684468 0.713571 0.708941 / 0.8) none 0px;
-  text-decoration: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  text-decoration-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  outline: oklch(0.756183 0.0113914 265.652 / 0.8) none 0px;
+  text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
+  text-decoration-color: oklch(0.756183 0.0113914 265.652 / 0.8);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(90, 143, 205);
@@ -1745,7 +1902,7 @@ html[saved-theme="dark"] body ul.overflow {
   text-decoration: rgba(111, 118, 133, 0.6);
 }`,
     tables: `html[saved-theme="dark"] body .spacer {
-  background-color: color(srgb 0.0887695 0.100144 0.132799);
+  background-color: oklch(0.216323 0.017297 269.108);
 }
 
 html[saved-theme="dark"] body .table-container {
@@ -1778,6 +1935,7 @@ html[saved-theme="dark"] body td {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+  text-align: left;
 }
 
 html[saved-theme="dark"] body th {
@@ -1791,6 +1949,7 @@ html[saved-theme="dark"] body th {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+  text-align: left;
 }
 
 html[saved-theme="dark"] body thead {
@@ -1801,7 +1960,7 @@ html[saved-theme="dark"] body thead {
 }
 
 html[saved-theme="dark"] body tr {
-  background-color: color(srgb 0.118646 0.130793 0.165667);
+  background-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-color: rgba(111, 118, 133, 0.4);
   border-left-color: rgba(111, 118, 133, 0.4);
   border-right-color: rgba(111, 118, 133, 0.4);
@@ -1821,24 +1980,24 @@ html[saved-theme="dark"] body tr {
 
 html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(20, 22, 28);
-  border-bottom-color: color(srgb 0.118646 0.130793 0.165667);
+  border-bottom-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
-  border-top-color: color(srgb 0.118646 0.130793 0.165667);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
+  border-top-color: oklch(0.250462 0.0168347 269.108);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 
 html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(20, 22, 28);
-  border-bottom-color: color(srgb 0.118646 0.130793 0.165667);
+  border-bottom-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
-  border-top-color: color(srgb 0.118646 0.130793 0.165667);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
+  border-top-color: oklch(0.250462 0.0168347 269.108);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   color: rgb(211, 213, 211);
@@ -1861,24 +2020,24 @@ html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
 
 html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
   background-color: rgb(20, 22, 28);
-  border-bottom-color: color(srgb 0.118646 0.130793 0.165667);
+  border-bottom-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
-  border-top-color: color(srgb 0.118646 0.130793 0.165667);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
+  border-top-color: oklch(0.250462 0.0168347 269.108);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(20, 22, 28);
-  border-bottom-color: color(srgb 0.118646 0.130793 0.165667);
+  border-bottom-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
-  border-top-color: color(srgb 0.118646 0.130793 0.165667);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
+  border-top-color: oklch(0.250462 0.0168347 269.108);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }`,
@@ -1919,12 +2078,12 @@ html[saved-theme="dark"] body video {
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(36, 38, 44);
-  border-bottom-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-bottom-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-left-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-right-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-top-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-left-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-right-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-top-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -1936,21 +2095,21 @@ html[saved-theme="dark"] body .footnotes {
 
 html[saved-theme="dark"] body .transclude {
   border-bottom-color: rgb(211, 213, 211);
-  border-left-color: rgb(148, 238, 111);
+  border-left-color: oklch(0.865278 0.184795 137.418 / 0.8);
   border-right-color: rgb(211, 213, 211);
   border-top-color: rgb(211, 213, 211);
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(211, 213, 211);
-  border-left-color: rgb(148, 238, 111);
+  border-left-color: oklch(0.865278 0.184795 137.418 / 0.8);
   border-right-color: rgb(211, 213, 211);
   border-top-color: rgb(211, 213, 211);
 }`,
     checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  text-decoration: line-through color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  text-decoration-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  text-decoration: line-through oklch(0.756183 0.0113914 265.652 / 0.8);
+  text-decoration-color: oklch(0.756183 0.0113914 265.652 / 0.8);
 }
 
 html[saved-theme="dark"] body input[type=checkbox] {
@@ -2070,6 +2229,367 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(211, 213, 211);
   text-decoration: rgb(211, 213, 211);
   text-decoration-color: rgb(211, 213, 211);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  color: rgb(194, 158, 66);
+  content: "--";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  color: rgb(164, 97, 200);
+  content: "!";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  color: rgb(212, 88, 163);
+  content: "?";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  color: rgb(194, 158, 66);
+  content: "...";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  color: rgb(60, 185, 194);
+  content: "‘";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  color: rgb(161, 192, 92);
+  content: "“";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  color: rgb(90, 143, 205);
+  content: "@";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  color: rgb(164, 97, 200);
+  content: "*";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  color: rgb(204, 132, 73);
+  content: "/";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  color: rgb(161, 192, 92);
+  content: "#";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  color: rgb(212, 88, 163);
+  content: "%";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  color: rgb(161, 192, 92);
+  content: "+";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  color: rgb(204, 132, 73);
+  content: "<";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  color: rgb(60, 185, 194);
+  content: ">";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  color: rgb(192, 58, 71);
+  content: "~";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  color: rgb(192, 58, 71);
+  content: "$";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  color: rgb(60, 185, 194);
+  content: "i";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(25, 29, 40);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgba(111, 118, 133, 0.6);
@@ -2257,12 +2777,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(25, 29, 40);
-  border-bottom-color: color(srgb 0.118646 0.130793 0.165667);
+  border-bottom-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
-  border-top-color: color(srgb 0.118646 0.130793 0.165667);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
+  border-top-color: oklch(0.250462 0.0168347 269.108);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(211, 213, 211);
@@ -2270,12 +2790,12 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(25, 29, 40);
-  border-bottom-color: color(srgb 0.118646 0.130793 0.165667);
+  border-bottom-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
-  border-top-color: color(srgb 0.118646 0.130793 0.165667);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
+  border-top-color: oklch(0.250462 0.0168347 269.108);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
@@ -2307,30 +2827,30 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: color(srgb 0.118646 0.130793 0.165667);
+  background-color: oklch(0.250462 0.0168347 269.108);
   color: rgb(211, 213, 211);
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
-  border-bottom-color: color(srgb 0.118646 0.130793 0.165667);
+  border-bottom-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
-  border-top-color: color(srgb 0.118646 0.130793 0.165667);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
+  border-top-color: oklch(0.250462 0.0168347 269.108);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(20, 22, 28);
-  border-left-color: rgb(148, 238, 111);
-  border-right-color: rgb(148, 238, 111);
-  border-top-color: rgb(148, 238, 111);
+  border-left-color: oklch(0.865278 0.184795 137.418 / 0.8);
+  border-right-color: oklch(0.865278 0.184795 137.418 / 0.8);
+  border-top-color: oklch(0.865278 0.184795 137.418 / 0.8);
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: color(srgb 0.118646 0.130793 0.165667);
+  background-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-color: rgb(211, 213, 211);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -2343,7 +2863,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: color(srgb 0.118646 0.130793 0.165667);
+  background-color: oklch(0.250462 0.0168347 269.108);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-top-left-radius: 2px;
@@ -2352,7 +2872,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: color(srgb 0.235294 0.72549 0.760784 / 0.25);
+  background-color: oklch(0.722344 0.107179 202.055 / 0.25);
   border-bottom-color: rgba(110, 232, 72, 0.15);
   border-left-color: rgba(110, 232, 72, 0.15);
   border-right-color: rgba(110, 232, 72, 0.15);
@@ -2392,9 +2912,9 @@ html[saved-theme="dark"] body h6 {
 }
 
 html[saved-theme="dark"] body hr {
-  border-bottom-color: color(srgb 0.118646 0.130793 0.165667);
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
+  border-bottom-color: oklch(0.250462 0.0168347 269.108);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
@@ -2447,58 +2967,40 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
   background-color: rgb(25, 29, 40);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  text-decoration: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  text-decoration: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  text-decoration: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: color(srgb 0.118646 0.130793 0.165667);
-  border-bottom-color: rgb(148, 238, 111);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgb(148, 238, 111);
-  border-right-color: rgb(148, 238, 111);
-  border-top-color: rgb(148, 238, 111);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  color: rgb(148, 238, 111);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
-  border-bottom-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-bottom-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-right-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-top-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-left-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-right-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-top-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-left-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-bottom-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-left-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-left-width: 0px;
-  border-right-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-top-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-right-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-top-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-top-left-radius: 4px;
   border-top-width: 0px;
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
 }
 
 html[saved-theme="dark"] body footer ul li a {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  text-decoration: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(211, 213, 211);
@@ -2513,12 +3015,12 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  text-decoration: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(211, 213, 211);
@@ -2528,12 +3030,12 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 }
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
 }
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  text-decoration: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -2543,32 +3045,32 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(211, 213, 211);
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
-  border-bottom-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-bottom-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-right-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-top-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-left-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-right-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-top-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
 }
 
 html[saved-theme="dark"] body .darkmode svg {
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  stroke: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  stroke: oklch(0.756183 0.0113914 265.652 / 0.8);
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-container {
-  background-color: color(srgb 0.118646 0.130793 0.165667);
-  border-bottom-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  background-color: oklch(0.250462 0.0168347 269.108);
+  border-bottom-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-right-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-top-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-bottom-right-radius: 0px;
+  border-left-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-right-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-top-color: oklch(0.756183 0.0113914 265.652 / 0.8);
   border-top-left-radius: 16px;
-  border-top-right-radius: 2px;
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-top-right-radius: 0px;
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
@@ -2583,20 +3085,20 @@ html[saved-theme="dark"] body .breadcrumb-element p {
 }
 
 html[saved-theme="dark"] body .metadata {
-  border-bottom-color: color(srgb 0.118646 0.130793 0.165667);
-  border-left-color: color(srgb 0.118646 0.130793 0.165667);
-  border-right-color: color(srgb 0.118646 0.130793 0.165667);
-  border-top-color: color(srgb 0.118646 0.130793 0.165667);
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-bottom-color: oklch(0.250462 0.0168347 269.108);
+  border-left-color: oklch(0.250462 0.0168347 269.108);
+  border-right-color: oklch(0.250462 0.0168347 269.108);
+  border-top-color: oklch(0.250462 0.0168347 269.108);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
   padding-left: 14px;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
-  border-bottom-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-left-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-right-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  border-top-color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
-  color: color(srgb 0.684468 0.713571 0.708941 / 0.8);
+  border-bottom-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-left-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-right-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  border-top-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+  color: oklch(0.756183 0.0113914 265.652 / 0.8);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2666,17 +3168,17 @@ html[saved-theme="dark"] body sup {
   --accent-s: 41% !important;
   --background-modifier-active-hover: #DDDCD6 !important;
   --background-modifier-border: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --background-modifier-border-focus: color-mix(
-    in hsl,
+    in oklch,
     #DDDCD6,
     #D3D3CE
   ) !important;
   --background-modifier-border-hover: transparent !important;
-  --background-modifier-error: rgba(
+  --background-modifier-error: rgb(
     rgb(235, 83, 37),
     0.85
   ) !important;
@@ -2686,7 +3188,7 @@ html[saved-theme="dark"] body sup {
   --background-modifier-form-field-hover: #FAF7EF !important;
   --background-modifier-hover: #EDEBE5 !important;
   --background-modifier-message: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
@@ -2695,7 +3197,7 @@ html[saved-theme="dark"] body sup {
   --background-primary: #FAF7EF !important;
   --background-primary-alt: #EDEBE5 !important;
   --background-secondary: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
@@ -2703,27 +3205,27 @@ html[saved-theme="dark"] body sup {
   --bases-border-r: 16px !important;
   --bases-cards-background: #FAF7EF !important;
   --bases-cards-cover-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --bases-cards-group-padding: 16px !important;
   --bases-cards-radius: 4px !important;
   --bases-cards-shadow: 0 0 0 1px color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
   --bases-embed-border-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --bases-embed-border-radius: 2px !important;
   --bases-embed-padding: 4px !important;
   --bases-group-heading-property-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -2732,26 +3234,34 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: #6F768566 !important;
   --bases-table-cell-background-active: #FAF7EF !important;
   --bases-table-cell-background-disabled: #EDEBE5 !important;
-  --bases-table-cell-background-selected: rgba(86, 111, 184, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(225, 41%, 53%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px color-mix(
-    in hsl,
+    in oklch,
     #DDDCD6,
     #D3D3CE
   ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px #5770B9 !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --bases-table-container-border-radius: 2px !important;
   --bases-table-group-background: #EDEBE5 !important;
   --bases-table-header-background: #FAF7EF !important;
   --bases-table-header-background-hover: #EDEBE5 !important;
   --bases-table-header-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
   --bases-table-row-background-hover: #FAF7EF !important;
   --bases-table-summary-background: #FAF7EF !important;
   --bases-table-summary-background-hover: #EDEBE5 !important;
-  --blockquote-border-color: #5770B9 !important;
+  --blockquote-border-color: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --blur-background: color-mix(in srgb, #FAF7EF 65%, transparent) linear-gradient(#FAF7EF, color-mix(in srgb, #FAF7EF 65%, transparent)) !important;
   --bold-color: #EB5325 !important;
   --button-radius: 0px !important;
@@ -2781,27 +3291,27 @@ html[saved-theme="dark"] body sup {
   --canvas-color-6: rgb(111, 73, 174) !important;
   --canvas-controls-radius: 2px !important;
   --canvas-dot-pattern: color-mix(
-    in hsl,
+    in oklch,
     #DDDCD6,
     #D3D3CE
   ) !important;
   --caret-color: #080808 !important;
   --checkbox-border-color: #5c9fe4 !important;
   --checkbox-border-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #6F49AE,
     #797876
   ) !important;
   --checkbox-color: #6F49AE !important;
   --checkbox-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #6F49AE,
     #797876
   ) !important;
   --checkbox-marker-color: #FAF7EF !important;
   --checkbox-radius: 2px !important;
   --checklist-done-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -2810,19 +3320,19 @@ html[saved-theme="dark"] body sup {
   --cm-panel-bg: color-mix(
     in srgb,
     color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) 55%,
     #EDEBE5 45%
   ) !important;
   --code-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --code-border-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
@@ -2834,682 +3344,683 @@ html[saved-theme="dark"] body sup {
   --code-normal: #080808 !important;
   --code-operator: #5c9fe4 !important;
   --code-property: #3B9BA1 !important;
-  --code-punctuation: rgba(rgb(235, 83, 37), 0.55) !important;
+  --code-punctuation: rgb(rgb(235, 83, 37), 0.55) !important;
   --code-radius: 2px !important;
   --code-string: #689523 !important;
   --code-tag: #797876 !important;
   --code-value: #E8C62A !important;
   --collapse-icon-color: #6F768599 !important;
   --collapse-icon-color-collapsed: #5770B9 !important;
-  --color-accent: rgb(86, 111, 184) !important;
-  --color-accent-1: rgb(114, 139, 197) !important;
-  --color-accent-2: hsla(
-    205,
-    35%,
-    58%,
-    88%
+  --color-accent: hsl(225, 41%, 53%) !important;
+  --color-accent-1: hsl(
+    222 41.82%
+      60.95%
+  ) !important;
+  --color-accent-2: hsl(
+    205 34.85%
+      58.3% / 87.5%
   ) !important;
   --color-accent-hsl: 225, 41%, 53% !important;
   --color-base-00: #FAF7EF !important;
   --color-base-05: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --color-base-10: #EDEBE5 !important;
   --color-base-100: #080808 !important;
   --color-base-20: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --color-base-25: #DDDCD6 !important;
   --color-base-30: color-mix(
-    in hsl,
+    in oklch,
     #DDDCD6,
     #D3D3CE
   ) !important;
   --color-base-35: #D3D3CE !important;
   --color-base-40: color-mix(
-    in hsl,
+    in oklch,
     #D3D3CE,
     #B4B3AF
   ) !important;
   --color-base-50: #B4B3AF !important;
   --color-base-60: #797876 !important;
   --color-base-70: color-mix(
-    in hsl,
+    in oklch,
     #080808,
     #797876
   ) !important;
   --color-blue: #5c9fe4 !important;
   --color-blue-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #5c9fe4,
     #3B9BA1
   ) !important;
   --color-blue-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5c9fe4, #3B9BA1)
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #3B9BA1)
       20%,
     transparent
   ) !important;
   --color-blue-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #5c9fe4,
     #689523
   ) !important;
   --color-blue-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5c9fe4, #689523)
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #689523)
       20%,
     transparent
   ) !important;
   --color-blue-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #5c9fe4,
     #ED8126
   ) !important;
   --color-blue-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5c9fe4, #ED8126)
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #ED8126)
       20%,
     transparent
   ) !important;
   --color-blue-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #5c9fe4,
     #E389CA
   ) !important;
   --color-blue-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5c9fe4, #E389CA)
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #E389CA)
       20%,
     transparent
   ) !important;
   --color-blue-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #5c9fe4,
     #6F49AE
   ) !important;
   --color-blue-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5c9fe4, #6F49AE)
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #6F49AE)
       20%,
     transparent
   ) !important;
   --color-blue-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #5c9fe4,
     #EB5325
   ) !important;
   --color-blue-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5c9fe4, #EB5325)
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #EB5325)
       20%,
     transparent
   ) !important;
   --color-blue-rgb: 92, 159, 228 !important;
   --color-blue-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #5c9fe4,
     #E8C62A
   ) !important;
   --color-blue-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #5c9fe4, #E8C62A)
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #E8C62A)
       20%,
     transparent
   ) !important;
   --color-cyan: #3B9BA1 !important;
   --color-cyan-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #3B9BA1,
     #5c9fe4
   ) !important;
   --color-cyan-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3B9BA1, #5c9fe4)
+    in oklch,
+    color-mix(in oklch, #3B9BA1, #5c9fe4)
       20%,
     transparent
   ) !important;
   --color-cyan-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #3B9BA1,
     #689523
   ) !important;
   --color-cyan-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3B9BA1, #689523)
+    in oklch,
+    color-mix(in oklch, #3B9BA1, #689523)
       20%,
     transparent
   ) !important;
   --color-cyan-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #3B9BA1,
     #ED8126
   ) !important;
   --color-cyan-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3B9BA1, #ED8126)
+    in oklch,
+    color-mix(in oklch, #3B9BA1, #ED8126)
       20%,
     transparent
   ) !important;
   --color-cyan-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #3B9BA1,
     #E389CA
   ) !important;
   --color-cyan-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3B9BA1, #E389CA)
+    in oklch,
+    color-mix(in oklch, #3B9BA1, #E389CA)
       20%,
     transparent
   ) !important;
   --color-cyan-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #3B9BA1,
     #6F49AE
   ) !important;
   --color-cyan-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3B9BA1, #6F49AE)
+    in oklch,
+    color-mix(in oklch, #3B9BA1, #6F49AE)
       20%,
     transparent
   ) !important;
   --color-cyan-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #3B9BA1,
     #EB5325
   ) !important;
   --color-cyan-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3B9BA1, #EB5325)
+    in oklch,
+    color-mix(in oklch, #3B9BA1, #EB5325)
       20%,
     transparent
   ) !important;
   --color-cyan-rgb: rgb(59, 155, 161) !important;
   --color-cyan-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #3B9BA1,
     #E8C62A
   ) !important;
   --color-cyan-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #3B9BA1, #E8C62A)
+    in oklch,
+    color-mix(in oklch, #3B9BA1, #E8C62A)
       20%,
     transparent
   ) !important;
   --color-green: #689523 !important;
   --color-green-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #689523,
     #5c9fe4
   ) !important;
   --color-green-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #689523, #5c9fe4)
+    in oklch,
+    color-mix(in oklch, #689523, #5c9fe4)
       20%,
     transparent
   ) !important;
   --color-green-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #689523,
     #3B9BA1
   ) !important;
   --color-green-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #689523, #3B9BA1)
+    in oklch,
+    color-mix(in oklch, #689523, #3B9BA1)
       20%,
     transparent
   ) !important;
   --color-green-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #689523,
     #ED8126
   ) !important;
   --color-green-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #689523, #ED8126)
+    in oklch,
+    color-mix(in oklch, #689523, #ED8126)
       20%,
     transparent
   ) !important;
   --color-green-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #689523,
     #E389CA
   ) !important;
   --color-green-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #689523, #E389CA)
+    in oklch,
+    color-mix(in oklch, #689523, #E389CA)
       20%,
     transparent
   ) !important;
   --color-green-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #689523,
     #6F49AE
   ) !important;
   --color-green-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #689523, #6F49AE)
+    in oklch,
+    color-mix(in oklch, #689523, #6F49AE)
       20%,
     transparent
   ) !important;
   --color-green-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #689523,
     #EB5325
   ) !important;
   --color-green-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #689523, #EB5325)
+    in oklch,
+    color-mix(in oklch, #689523, #EB5325)
       20%,
     transparent
   ) !important;
   --color-green-rgb: rgb(104, 149, 35) !important;
   --color-green-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #689523,
     #E8C62A
   ) !important;
   --color-green-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #689523, #E8C62A)
+    in oklch,
+    color-mix(in oklch, #689523, #E8C62A)
       20%,
     transparent
   ) !important;
   --color-orange: #ED8126 !important;
   --color-orange-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #ED8126,
     #5c9fe4
   ) !important;
   --color-orange-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #ED8126, #5c9fe4)
+    in oklch,
+    color-mix(in oklch, #ED8126, #5c9fe4)
       20%,
     transparent
   ) !important;
   --color-orange-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #ED8126,
     #3B9BA1
   ) !important;
   --color-orange-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #ED8126, #3B9BA1)
+    in oklch,
+    color-mix(in oklch, #ED8126, #3B9BA1)
       20%,
     transparent
   ) !important;
   --color-orange-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #ED8126,
     #689523
   ) !important;
   --color-orange-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #ED8126, #689523)
+    in oklch,
+    color-mix(in oklch, #ED8126, #689523)
       20%,
     transparent
   ) !important;
   --color-orange-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #ED8126,
     #E389CA
   ) !important;
   --color-orange-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #ED8126, #E389CA)
+    in oklch,
+    color-mix(in oklch, #ED8126, #E389CA)
       20%,
     transparent
   ) !important;
   --color-orange-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #ED8126,
     #6F49AE
   ) !important;
   --color-orange-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #ED8126, #6F49AE)
+    in oklch,
+    color-mix(in oklch, #ED8126, #6F49AE)
       20%,
     transparent
   ) !important;
   --color-orange-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #ED8126,
     #EB5325
   ) !important;
   --color-orange-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #ED8126, #EB5325)
+    in oklch,
+    color-mix(in oklch, #ED8126, #EB5325)
       20%,
     transparent
   ) !important;
   --color-orange-rgb: rgb(237, 129, 38) !important;
   --color-orange-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #ED8126,
     #E8C62A
   ) !important;
   --color-orange-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #ED8126, #E8C62A)
+    in oklch,
+    color-mix(in oklch, #ED8126, #E8C62A)
       20%,
     transparent
   ) !important;
   --color-pink: #E389CA !important;
   --color-pink-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #E389CA,
     #5c9fe4
   ) !important;
   --color-pink-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E389CA, #5c9fe4)
+    in oklch,
+    color-mix(in oklch, #E389CA, #5c9fe4)
       20%,
     transparent
   ) !important;
   --color-pink-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #E389CA,
     #3B9BA1
   ) !important;
   --color-pink-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E389CA, #3B9BA1)
+    in oklch,
+    color-mix(in oklch, #E389CA, #3B9BA1)
       20%,
     transparent
   ) !important;
   --color-pink-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #E389CA,
     #689523
   ) !important;
   --color-pink-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E389CA, #689523)
+    in oklch,
+    color-mix(in oklch, #E389CA, #689523)
       20%,
     transparent
   ) !important;
   --color-pink-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #E389CA,
     #ED8126
   ) !important;
   --color-pink-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E389CA, #ED8126)
+    in oklch,
+    color-mix(in oklch, #E389CA, #ED8126)
       20%,
     transparent
   ) !important;
   --color-pink-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #E389CA,
     #6F49AE
   ) !important;
   --color-pink-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E389CA, #6F49AE)
+    in oklch,
+    color-mix(in oklch, #E389CA, #6F49AE)
       20%,
     transparent
   ) !important;
   --color-pink-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #E389CA,
     #EB5325
   ) !important;
   --color-pink-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E389CA, #EB5325)
+    in oklch,
+    color-mix(in oklch, #E389CA, #EB5325)
       20%,
     transparent
   ) !important;
   --color-pink-rgb: rgb(227, 137, 202) !important;
   --color-pink-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #E389CA,
     #E8C62A
   ) !important;
   --color-pink-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E389CA, #E8C62A)
+    in oklch,
+    color-mix(in oklch, #E389CA, #E8C62A)
       20%,
     transparent
   ) !important;
   --color-purple: #6F49AE !important;
   --color-purple-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #6F49AE,
     #5c9fe4
   ) !important;
   --color-purple-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #6F49AE, #5c9fe4)
+    in oklch,
+    color-mix(in oklch, #6F49AE, #5c9fe4)
       20%,
     transparent
   ) !important;
   --color-purple-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #6F49AE,
     #3B9BA1
   ) !important;
   --color-purple-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #6F49AE, #3B9BA1)
+    in oklch,
+    color-mix(in oklch, #6F49AE, #3B9BA1)
       20%,
     transparent
   ) !important;
   --color-purple-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #6F49AE,
     #689523
   ) !important;
   --color-purple-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #6F49AE, #689523)
+    in oklch,
+    color-mix(in oklch, #6F49AE, #689523)
       20%,
     transparent
   ) !important;
   --color-purple-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #6F49AE,
     #ED8126
   ) !important;
   --color-purple-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #6F49AE, #ED8126)
+    in oklch,
+    color-mix(in oklch, #6F49AE, #ED8126)
       20%,
     transparent
   ) !important;
   --color-purple-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #6F49AE,
     #E389CA
   ) !important;
   --color-purple-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #6F49AE, #E389CA)
+    in oklch,
+    color-mix(in oklch, #6F49AE, #E389CA)
       20%,
     transparent
   ) !important;
   --color-purple-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #6F49AE,
     #EB5325
   ) !important;
   --color-purple-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #6F49AE, #EB5325)
+    in oklch,
+    color-mix(in oklch, #6F49AE, #EB5325)
       20%,
     transparent
   ) !important;
   --color-purple-rgb: rgb(111, 73, 174) !important;
   --color-purple-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #6F49AE,
     #E8C62A
   ) !important;
   --color-purple-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #6F49AE, #E8C62A)
+    in oklch,
+    color-mix(in oklch, #6F49AE, #E8C62A)
       20%,
     transparent
   ) !important;
   --color-red: #EB5325 !important;
   --color-red-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #EB5325,
     #5c9fe4
   ) !important;
   --color-red-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #EB5325, #5c9fe4)
+    in oklch,
+    color-mix(in oklch, #EB5325, #5c9fe4)
       20%,
     transparent
   ) !important;
   --color-red-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #EB5325,
     #3B9BA1
   ) !important;
   --color-red-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #EB5325, #3B9BA1)
+    in oklch,
+    color-mix(in oklch, #EB5325, #3B9BA1)
       20%,
     transparent
   ) !important;
   --color-red-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #EB5325,
     #689523
   ) !important;
   --color-red-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #EB5325, #689523)
+    in oklch,
+    color-mix(in oklch, #EB5325, #689523)
       20%,
     transparent
   ) !important;
   --color-red-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #EB5325,
     #ED8126
   ) !important;
   --color-red-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #EB5325, #ED8126)
+    in oklch,
+    color-mix(in oklch, #EB5325, #ED8126)
       20%,
     transparent
   ) !important;
   --color-red-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #EB5325,
     #E389CA
   ) !important;
   --color-red-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #EB5325, #E389CA)
+    in oklch,
+    color-mix(in oklch, #EB5325, #E389CA)
       20%,
     transparent
   ) !important;
   --color-red-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #EB5325,
     #6F49AE
   ) !important;
   --color-red-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #EB5325, #6F49AE)
+    in oklch,
+    color-mix(in oklch, #EB5325, #6F49AE)
       20%,
     transparent
   ) !important;
   --color-red-rgb: rgb(235, 83, 37) !important;
   --color-red-yellow-mix: color-mix(
-    in hsl,
+    in oklch,
     #EB5325,
     #E8C62A
   ) !important;
   --color-red-yellow-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #EB5325, #E8C62A)
+    in oklch,
+    color-mix(in oklch, #EB5325, #E8C62A)
       20%,
     transparent
   ) !important;
   --color-yellow: #E8C62A !important;
   --color-yellow-blue-mix: color-mix(
-    in hsl,
+    in oklch,
     #E8C62A,
     #5c9fe4
   ) !important;
   --color-yellow-blue-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E8C62A, #5c9fe4)
+    in oklch,
+    color-mix(in oklch, #E8C62A, #5c9fe4)
       20%,
     transparent
   ) !important;
   --color-yellow-cyan-mix: color-mix(
-    in hsl,
+    in oklch,
     #E8C62A,
     #3B9BA1
   ) !important;
   --color-yellow-cyan-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E8C62A, #3B9BA1)
+    in oklch,
+    color-mix(in oklch, #E8C62A, #3B9BA1)
       20%,
     transparent
   ) !important;
   --color-yellow-green-mix: color-mix(
-    in hsl,
+    in oklch,
     #E8C62A,
     #689523
   ) !important;
   --color-yellow-green-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E8C62A, #689523)
+    in oklch,
+    color-mix(in oklch, #E8C62A, #689523)
       20%,
     transparent
   ) !important;
   --color-yellow-orange-mix: color-mix(
-    in hsl,
+    in oklch,
     #E8C62A,
     #ED8126
   ) !important;
   --color-yellow-orange-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E8C62A, #ED8126)
+    in oklch,
+    color-mix(in oklch, #E8C62A, #ED8126)
       20%,
     transparent
   ) !important;
   --color-yellow-pink-mix: color-mix(
-    in hsl,
+    in oklch,
     #E8C62A,
     #E389CA
   ) !important;
   --color-yellow-pink-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E8C62A, #E389CA)
+    in oklch,
+    color-mix(in oklch, #E8C62A, #E389CA)
       20%,
     transparent
   ) !important;
   --color-yellow-purple-mix: color-mix(
-    in hsl,
+    in oklch,
     #E8C62A,
     #6F49AE
   ) !important;
   --color-yellow-purple-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E8C62A, #6F49AE)
+    in oklch,
+    color-mix(in oklch, #E8C62A, #6F49AE)
       20%,
     transparent
   ) !important;
   --color-yellow-red-mix: color-mix(
-    in hsl,
+    in oklch,
     #E8C62A,
     #EB5325
   ) !important;
   --color-yellow-red-mix-bg: color-mix(
-    in hsl,
-    color-mix(in hsl, #E8C62A, #EB5325)
+    in oklch,
+    color-mix(in oklch, #E8C62A, #EB5325)
       20%,
     transparent
   ) !important;
@@ -3518,36 +4029,48 @@ html[saved-theme="dark"] body sup {
   --darkgray: #080808 !important;
   --dimmed: 0.55 !important;
   --divider-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
-  --divider-color-hover: #5770B9 !important;
+  --divider-color-hover: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --drag-ghost-background: #DDDCD6 !important;
-  --drag-ghost-text-color: #5770B9 !important;
+  --drag-ghost-text-color: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --dropdown-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --dropdown-background-hover: #FAF7EF !important;
   --embed-block-shadow-hover: 0 0 0 1px color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ), inset 0 0 0 1px color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
-  --embed-border-start: 2px solid #5770B9 !important;
+  --embed-border-start: 2px solid color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --expand: 110% !important;
   --file-header-background: #FAF7EF !important;
   --file-header-background-focused: #FAF7EF !important;
   --file-header-font-size: 14.56227px !important;
   --file-line-width: 50rem !important;
   --flair-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
@@ -3557,7 +4080,8 @@ html[saved-theme="dark"] body sup {
   --flexcyon-accent-l: 53% !important;
   --flexcyon-accent-s: 41% !important;
   --flexcyon-active-indicator: '>> ' !important;
-  --flexcyon-anim-duration: 0.3s !important;
+  --flexcyon-alt-link-opacity: 55% !important;
+  --flexcyon-anim-duration: 0.3ms !important;
   --flexcyon-anim-easing: ease-in-out !important;
   --flexcyon-anim-rotate-amount: 50deg !important;
   --flexcyon-anim-slide-amount: 56.63105px !important;
@@ -3572,25 +4096,25 @@ html[saved-theme="dark"] body sup {
   --flexcyon-ascii-scaling-factor: 1 !important;
   --flexcyon-base-01: #FAF7EF !important;
   --flexcyon-base-01-02-mix: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --flexcyon-base-02: #EDEBE5 !important;
   --flexcyon-base-02-03-mix: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --flexcyon-base-03: #DDDCD6 !important;
   --flexcyon-base-03-04-mix: color-mix(
-    in hsl,
+    in oklch,
     #DDDCD6,
     #D3D3CE
   ) !important;
   --flexcyon-base-04: #D3D3CE !important;
   --flexcyon-base-04-05-mix: color-mix(
-    in hsl,
+    in oklch,
     #D3D3CE,
     #B4B3AF
   ) !important;
@@ -3598,7 +4122,7 @@ html[saved-theme="dark"] body sup {
   --flexcyon-base-grey-dark: #797876 !important;
   --flexcyon-base-grey-light: #080808 !important;
   --flexcyon-base-grey-mix: color-mix(
-    in hsl,
+    in oklch,
     #080808,
     #797876
   ) !important;
@@ -3607,7 +4131,6 @@ html[saved-theme="dark"] body sup {
   --flexcyon-base-grey-tab: #71777f !important;
   --flexcyon-base-grey-token: #586582 !important;
   --flexcyon-bases-card-delay-factor: 12.5 !important;
-  --flexcyon-bases-card-flex-gorw: 0.55 !important;
   --flexcyon-bases-card-flex-grow: 0.55 !important;
   --flexcyon-bases-card-padding: 8px
     0px
@@ -3617,6 +4140,7 @@ html[saved-theme="dark"] body sup {
   --flexcyon-bases-card-padding-left: 2px !important;
   --flexcyon-bases-card-padding-right: 0px !important;
   --flexcyon-bases-card-padding-top: 8px !important;
+  --flexcyon-bases-cards-label-opacity: 0.85 !important;
   --flexcyon-bases-padding-horiz: 16px !important;
   --flexcyon-bases-padding-verti: 16px !important;
   --flexcyon-bases-table-content-alignment: left !important;
@@ -3633,10 +4157,10 @@ html[saved-theme="dark"] body sup {
   --flexcyon-brightness-ratio: 1 !important;
   --flexcyon-callout-bg-opacity: 20% !important;
   --flexcyon-callout-first-codeblock-margin-top: 1rem !important;
-  --flexcyon-callout-flashcard-animation-duration: 0.5s !important;
+  --flexcyon-callout-flashcard-animation-duration: 0.5ms !important;
   --flexcyon-callout-horiz-padding: 24px !important;
   --flexcyon-callout-icon-right-padding: 4px !important;
-  --flexcyon-callout-pop-animation-duration: 0.2s !important;
+  --flexcyon-callout-pop-animation-duration: 0.2ms !important;
   --flexcyon-callout-radix: 16px !important;
   --flexcyon-callout-verti-padding: 12px !important;
   --flexcyon-callout-vertical-margin: 1em !important;
@@ -3656,6 +4180,7 @@ html[saved-theme="dark"] body sup {
   --flexcyon-contrast-ratio: 1 !important;
   --flexcyon-cursor-duration: 42.5ms !important;
   --flexcyon-cursor-timing-fn: ease-in !important;
+  --flexcyon-cursor-type: auto !important;
   --flexcyon-cust-hr-str: 'f' !important;
   --flexcyon-cust-hr-str-font-size: 1.11803em !important;
   --flexcyon-cust-hr-str-horiz-padding: 8px !important;
@@ -3665,14 +4190,14 @@ html[saved-theme="dark"] body sup {
   --flexcyon-editor-bg-color: color-mix(
     in oklch,
     color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ),
     #EDEBE5
   ) !important;
   --flexcyon-editor-bg-color-2: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
@@ -3684,19 +4209,28 @@ html[saved-theme="dark"] body sup {
   --flexcyon-exp-dimmed-nav-size: 13.3623px !important;
   --flexcyon-external-link-color: #5C9FE4 !important;
   --flexcyon-external-link-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #5C9FE4,
     #797876
   ) !important;
   --flexcyon-fc-dimmed-items-opacity: 0.89 !important;
+  --flexcyon-h1-color: #5c9fe4 !important;
+  --flexcyon-h2-color: #6F49AE !important;
+  --flexcyon-h3-color: #3B9BA1 !important;
+  --flexcyon-h4-color: #E389CA !important;
+  --flexcyon-h5-color: #689523 !important;
+  --flexcyon-h6-color: #E8C62A !important;
   --flexcyon-heading-1-alignment: left !important;
   --flexcyon-heading-2-alignment: left !important;
   --flexcyon-heading-3-alignment: left !important;
   --flexcyon-heading-4-alignment: left !important;
   --flexcyon-heading-5-alignment: left !important;
   --flexcyon-heading-6-alignment: left !important;
+  --flexcyon-highlight-active-line-opacity: 7.5% !important;
   --flexcyon-highlight-border-radius: 4px !important;
+  --flexcyon-highlight-colour: #3B9BA1 !important;
   --flexcyon-highlight-horiz-padding: 2.5px !important;
+  --flexcyon-highlight-opacity: 22.5% !important;
   --flexcyon-highlight-verti-padding: 1px !important;
   --flexcyon-input-horiz-padding: 8px !important;
   --flexcyon-input-verti-padding: 8px !important;
@@ -3704,7 +4238,7 @@ html[saved-theme="dark"] body sup {
   --flexcyon-lime-green: #689523 !important;
   --flexcyon-link-color: #6F49AE !important;
   --flexcyon-link-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #6F49AE,
     #797876
   ) !important;
@@ -3726,16 +4260,18 @@ html[saved-theme="dark"] body sup {
     #E389CA,
     #689523
   ) !important;
+  --flexcyon-new-tab-font-group: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --flexcyon-omnisearch-body-margin-left: 1.45rem !important;
   --flexcyon-orange: #ED8126 !important;
+  --flexcyon-os-detail-padding-l: 12px !important;
   --flexcyon-os-detail-padding-r: 24px !important;
   --flexcyon-palette-cyan-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #3B9BA1,
     #797876
   ) !important;
   --flexcyon-palette-lilac-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #6F49AE,
     #797876
   ) !important;
@@ -3754,11 +4290,13 @@ html[saved-theme="dark"] body sup {
   --flexcyon-search-container-verti-padding: 8px !important;
   --flexcyon-settings-installed-tooltip-left-margin: 1rem !important;
   --flexcyon-side-toggle-button-no-ribbon: 11px 16px 7px 0px !important;
-  --flexcyon-status-hide-hover-duration: 0.35s !important;
+  --flexcyon-status-hide-hover-duration: 0.35ms !important;
   --flexcyon-status-hide-hover-function: ease-out !important;
+  --flexcyon-status-hide-trigger-translation: 50px !important;
   --flexcyon-status-hide-until-hover-text: 'Show status' !important;
   --flexcyon-status-hide-until-hover-translation: 80vw !important;
   --flexcyon-status-live-text: 'LIVE' !important;
+  --flexcyon-status-new-tab-opacity: 0.55 !important;
   --flexcyon-status-reading-text: 'READ' !important;
   --flexcyon-status-source-text: 'SOURCE' !important;
   --flexcyon-style-settings-indent-width: 4px !important;
@@ -3767,15 +4305,20 @@ html[saved-theme="dark"] body sup {
   --flexcyon-table-reading-mode-width: 100% !important;
   --flexcyon-td-horiz-padding: 10px !important;
   --flexcyon-td-live-pad-scale: 0.2 !important;
+  --flexcyon-td-table-alignment: left !important;
   --flexcyon-td-verti-padding: 5px !important;
   --flexcyon-text-muted: #6F768599 !important;
+  --flexcyon-th-horiz-padding: 10px !important;
+  --flexcyon-th-live-pad-scale: 0.2 !important;
+  --flexcyon-th-table-alignment: left !important;
+  --flexcyon-th-verti-padding: 5px !important;
   --flexcyon-top-actions-alignment: center !important;
   --flexcyon-tree-item-horiz-padding: 10px !important;
   --flexcyon-tree-item-verti-padding: 2px !important;
+  --flexcyon-typewriter-mode-opacity: 0.55 !important;
   --flexcyon-var-comps-sugg-horiz-padding: 12px !important;
   --flexcyon-var-comps-sugg-vert-padding: 7px !important;
   --flexcyon-view-header-breadcrumb-max-w: 12.5vw !important;
-  --flexcyon-vim-bottom-pos-w-status: 40px !important;
   --flexcyon-vim-bottom-positioning: -4px !important;
   --flexcyon-vim-command-text: 'COMMAND' !important;
   --flexcyon-vim-insert-text: 'INSERT' !important;
@@ -3790,12 +4333,12 @@ html[saved-theme="dark"] body sup {
   --font-ui-small: 14.56227px !important;
   --font-ui-smaller: 12.94424px !important;
   --footnote-divider-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --footnote-id-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -3807,7 +4350,7 @@ html[saved-theme="dark"] body sup {
   --graph-control-verti-padding: 6px !important;
   --graph-line: #DDDCD6 !important;
   --graph-node: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -3817,7 +4360,7 @@ html[saved-theme="dark"] body sup {
   --graph-node-unresolved: #EB5325 !important;
   --graph-text: #080808 !important;
   --gray: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -3846,17 +4389,29 @@ html[saved-theme="dark"] body sup {
   --h6-size: 1.01803em !important;
   --h6-weight: 575 !important;
   --heading-formatting: #6F768599 !important;
-  --highlight: color-mix(in hsl, #3B9BA1 20%, transparent) !important;
+  --highlight: color-mix(
+    in oklch,
+    #3B9BA1 22.5%,
+    transparent
+  ) !important;
   --hr-color: #393E48 !important;
   --icon-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
-  --icon-color-active: #5770B9 !important;
-  --icon-color-focused: #5770B9 !important;
+  --icon-color-active: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
+  --icon-color-focused: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --icon-color-hover: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -3870,16 +4425,20 @@ html[saved-theme="dark"] body sup {
     8px !important;
   --input-placeholder-color: #6F768599 !important;
   --input-radius: 0px !important;
-  --interactive-accent: #5770B9 !important;
+  --interactive-accent: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --interactive-accent-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #5770B9 75%,
     transparent
   ) !important;
   --interactive-accent-hsl: 225, 41%, 53% !important;
   --interactive-hover: #FAF7EF !important;
   --interactive-normal: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
@@ -3887,7 +4446,7 @@ html[saved-theme="dark"] body sup {
   --less-letter-spacing: -3px !important;
   --light: #FAF7EF !important;
   --lightgray: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
@@ -3895,13 +4454,13 @@ html[saved-theme="dark"] body sup {
   --line-height-tight: 1.25 !important;
   --link-color: #6F49AE !important;
   --link-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #6F49AE,
     #797876
   ) !important;
   --link-external-color: #5C9FE4 !important;
   --link-external-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #5C9FE4,
     #797876
   ) !important;
@@ -3911,24 +4470,24 @@ html[saved-theme="dark"] body sup {
   --list-marker-color: #3B9BA1 !important;
   --list-marker-color-collapsed: #689523 !important;
   --list-marker-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #3B9BA1,
     #797876
   ) !important;
   --menu-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --menu-border-color: transparent !important;
   --menu-radius: 4px !important;
   --metadata-border-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --metadata-divider-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
@@ -3937,13 +4496,13 @@ html[saved-theme="dark"] body sup {
   --metadata-label-background-active: #EDEBE5 !important;
   --metadata-label-text-color: #6F49AE !important;
   --metadata-label-text-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #6F49AE,
     #797876
   ) !important;
   --metadata-property-background-active: #EDEBE5 !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(
-    in hsl,
+    in oklch,
     #DDDCD6,
     #D3D3CE
   ) !important;
@@ -3958,7 +4517,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color: #080808 !important;
   --nav-heading-color-collapsed: #6F768599 !important;
   --nav-heading-color-collapsed-hover: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -3967,11 +4526,15 @@ html[saved-theme="dark"] body sup {
   --nav-item-background-hover: #EDEBE5 !important;
   --nav-item-background-selected: #DDDCD6 !important;
   --nav-item-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
-  --nav-item-color-active: #5770B9 !important;
+  --nav-item-color-active: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --nav-item-color-highlighted: #5770B9 !important;
   --nav-item-color-hover: #080808 !important;
   --nav-item-color-selected: #ED8126 !important;
@@ -3979,12 +4542,12 @@ html[saved-theme="dark"] body sup {
   --nav-item-size: 14.56227px !important;
   --nav-tag-color: #6F768599 !important;
   --nav-tag-color-active: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
   --nav-tag-color-hover: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -3999,13 +4562,13 @@ html[saved-theme="dark"] body sup {
   --pdf-page-background: #FAF7EF !important;
   --pdf-sidebar-background: #FAF7EF !important;
   --pill-border-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --pill-border-color-hover: transparent !important;
   --pill-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -4014,12 +4577,12 @@ html[saved-theme="dark"] body sup {
   --pill-color-remove-hover: #5770B9 !important;
   --prompt-background: #FAF7EF !important;
   --prompt-border-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --r-background-color: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
@@ -4031,11 +4594,9 @@ html[saved-theme="dark"] body sup {
   --r-heading2-size: 1.61803em !important;
   --r-heading3-size: 1.41803em !important;
   --r-heading4-size: 1.21803em !important;
-  --r-link-color: hsla(
-    205,
-    35%,
-    58%,
-    88%
+  --r-link-color: hsl(
+    205 34.85%
+      58.3% / 87.5%
   ) !important;
   --r-main-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-main-font-size: max-content !important;
@@ -4046,12 +4607,12 @@ html[saved-theme="dark"] body sup {
   --radius-xl: 8px !important;
   --raised-background: color-mix(in srgb, #FAF7EF 65%, transparent) linear-gradient(#FAF7EF, color-mix(in srgb, #FAF7EF 65%, transparent)) !important;
   --ribbon-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --ribbon-background-collapsed: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
@@ -4064,26 +4625,30 @@ html[saved-theme="dark"] body sup {
   --secondary: #5770B9 !important;
   --setting-group-heading-color: #080808 !important;
   --setting-group-heading-size: 16.1803px !important;
-  --setting-items-background: #EDEBE5 !important;
   --setting-items-border-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
-  --setting-items-radius: 6px !important;
+  --setting-items-padding: 2px 0px !important;
+  --settings-background: color-mix(
+    in oklch,
+    #FAF7EF 70%,
+    #EDEBE5 30%
+  ) !important;
   --slider-thumb-border-color: transparent !important;
   --slider-track-background: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --status-bar-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --status-bar-border-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
@@ -4091,7 +4656,7 @@ html[saved-theme="dark"] body sup {
   --status-bar-position: absolute !important;
   --status-bar-radius: 4px 0 0 0 !important;
   --status-bar-text-color: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
@@ -4106,19 +4671,19 @@ html[saved-theme="dark"] body sup {
   --sync-avatar-color-8: #E389CA !important;
   --tab-background-active: #FAF7EF !important;
   --tab-container-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --tab-curve: 0px !important;
   --tab-divider-color: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --tab-font-size: 14.56227px !important;
   --tab-outline-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
@@ -4127,17 +4692,17 @@ html[saved-theme="dark"] body sup {
   --tab-radius-active: 0px !important;
   --tab-stacked-font-size: 14.56227px !important;
   --tab-switcher-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ), transparent) !important;
   --tab-switcher-preview-radius: 8px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(86, 111, 184) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(225, 41%, 53%) !important;
   --tab-text-color: #B4B3AF !important;
   --tab-text-color-active: #5770B9 !important;
   --tab-text-color-focused: #B4B3AF !important;
@@ -4145,18 +4710,22 @@ html[saved-theme="dark"] body sup {
   --tab-text-color-focused-active-current: #5770B9 !important;
   --tab-text-color-focused-highlighted: #5770B9 !important;
   --table-add-button-border-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --table-background: #FAF7EF !important;
   --table-border-color: #6F768566 !important;
   --table-column-alt-background: #FAF7EF !important;
-  --table-drag-handle-background-active: #5770B9 !important;
+  --table-drag-handle-background-active: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --table-drag-handle-color: #6F768599 !important;
   --table-drag-handle-color-active: #DDDCD6 !important;
   --table-header-background: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
@@ -4167,79 +4736,92 @@ html[saved-theme="dark"] body sup {
   --table-line-height: 1.25 !important;
   --table-row-alt-background-hover: #FAF7EF !important;
   --table-row-background-hover: #FAF7EF !important;
-  --table-selection: rgba(86, 111, 184, 0.1) !important;
-  --table-selection-border-color: #5770B9 !important;
-  --tag-background: color-mix(
-    in hsl shorter hue,
-    #3B9BA1 25%,
-    transparent
+  --table-selection: hsla(225, 41%, 53%, 0.1) !important;
+  --table-selection-border-color: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
   ) !important;
+  --table-text-size: 16.1803px !important;
+  --tag-background: color-mix(in oklch, #3B9BA1 25%, transparent) !important;
   --tag-background-hover: color-mix(
-    in hsl shorter hue,
+    in oklch,
     color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #3B9BA1,
     #797876
   ) 25%,
     transparent
   ) !important;
-  --tag-border-color: rgba(86, 111, 184, 0.15) !important;
-  --tag-border-color-hover: rgba(86, 111, 184, 0.15) !important;
+  --tag-border-color: hsla(225, 41%, 53%, 0.15) !important;
+  --tag-border-color-hover: hsla(225, 41%, 53%, 0.15) !important;
   --tag-color: #3B9BA1 !important;
   --tag-color-hover: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #3B9BA1,
     #797876
   ) !important;
   --tag-decoration-hover: underline !important;
   --tertiary: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #5770B9 75%,
     transparent
   ) !important;
   --text-accent: #5770B9 !important;
   --text-error: #EB5325 !important;
   --text-faint: #6F768599 !important;
-  --text-highlight-bg: color-mix(in hsl, #3B9BA1 20%, transparent) !important;
+  --text-highlight-bg: color-mix(
+    in oklch,
+    #3B9BA1 22.5%,
+    transparent
+  ) !important;
   --text-muted: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
   --text-normal: #080808 !important;
   --text-on-accent: #DDDCD6 !important;
   --text-selection: color-mix(
-    in hsl shorter hue,
+    in oklch shorter hue,
     #D3D3CE 20%,
     transparent
   ) !important;
   --text-success: #689523 !important;
   --text-warning: #EB5325 !important;
-  --textHighlight: color-mix(in hsl, #3B9BA1 20%, transparent) !important;
+  --textHighlight: color-mix(
+    in oklch,
+    #3B9BA1 22.5%,
+    transparent
+  ) !important;
   --titlebar-background: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --titlebar-background-focused: color-mix(
-    in hsl,
+    in oklch,
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
   --titlebar-border-color: color-mix(
-    in hsl,
+    in oklch,
     #EDEBE5,
     #DDDCD6
   ) !important;
   --titlebar-text-color: #6F768599 !important;
   --titlebar-text-color-focused: color-mix(
-    in hsl,
+    in oklch,
     #6F768599,
     #080808
   ) !important;
   --toggle-thumb-color: #DDDCD6 !important;
   --upsize: 103% !important;
-  --vault-name-color: #5770B9 !important;
+  --vault-name-color: color-mix(
+    in oklch,
+    #5770B9 80%,
+    transparent 20%
+  ) !important;
   --vault-profile-color: #080808 !important;
   --vault-profile-color-hover: #080808 !important;
   --vault-profile-font-size: 14.56227px !important;
@@ -4253,7 +4835,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: color(srgb 0.968337 0.956082 0.922251);
+  background-color: oklch(0.965295 0.0102493 none);
   color: rgb(8, 8, 8);
 }
 
@@ -4263,18 +4845,18 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
-  background-color: color(srgb 0.968337 0.956082 0.922251);
+  background-color: oklch(0.965295 0.0102493 none);
   color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
+  border-right-color: oklch(0.916692 0.00824529 none);
   border-right-width: 0px;
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: color(srgb 0.968337 0.956082 0.922251);
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
+  background-color: oklch(0.965295 0.0102493 none);
+  border-left-color: oklch(0.916692 0.00824529 none);
   color: rgb(8, 8, 8);
 }
 
@@ -4311,7 +4893,7 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: color(srgb 0.231373 0.607843 0.631373 / 0.2);
+  background-color: oklch(0.636063 0.0886415 200.985 / 0.225);
   color: rgb(8, 8, 8);
   font-weight: 525;
   outline: rgb(8, 8, 8) none 0px;
@@ -4327,10 +4909,10 @@ html[saved-theme="light"] body del {
 }
 
 html[saved-theme="light"] body p {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  outline: color(srgb 0.19229 0.196573 0.205749 / 0.8) none 0px;
-  text-decoration: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  text-decoration-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  outline: oklch(0.295919 0.00924012 265.652 / 0.8) none 0px;
+  text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
+  text-decoration-color: oklch(0.295919 0.00924012 265.652 / 0.8);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(92, 159, 228);
@@ -4387,7 +4969,7 @@ html[saved-theme="light"] body ul.overflow {
   text-decoration: rgba(111, 118, 133, 0.6);
 }`,
     tables: `html[saved-theme="light"] body .spacer {
-  background-color: color(srgb 0.968337 0.956082 0.922251);
+  background-color: oklch(0.965295 0.0102493 none);
 }
 
 html[saved-theme="light"] body .table-container {
@@ -4420,6 +5002,7 @@ html[saved-theme="light"] body td {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+  text-align: left;
 }
 
 html[saved-theme="light"] body th {
@@ -4433,6 +5016,7 @@ html[saved-theme="light"] body th {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+  text-align: left;
 }
 
 html[saved-theme="light"] body thead {
@@ -4443,7 +5027,7 @@ html[saved-theme="light"] body thead {
 }
 
 html[saved-theme="light"] body tr {
-  background-color: color(srgb 0.899384 0.893078 0.867283);
+  background-color: oklch(0.916692 0.00824529 none);
   border-bottom-color: rgba(111, 118, 133, 0.4);
   border-left-color: rgba(111, 118, 133, 0.4);
   border-right-color: rgba(111, 118, 133, 0.4);
@@ -4462,25 +5046,25 @@ html[saved-theme="light"] body tr {
 }
 
 html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: color(srgb 0.968337 0.956082 0.922251);
-  border-bottom-color: color(srgb 0.899384 0.893078 0.867283);
+  background-color: oklch(0.965295 0.0102493 none);
+  border-bottom-color: oklch(0.916692 0.00824529 none);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
-  border-top-color: color(srgb 0.899384 0.893078 0.867283);
+  border-left-color: oklch(0.916692 0.00824529 none);
+  border-right-color: oklch(0.916692 0.00824529 none);
+  border-top-color: oklch(0.916692 0.00824529 none);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 
 html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: color(srgb 0.968337 0.956082 0.922251);
-  border-bottom-color: color(srgb 0.899384 0.893078 0.867283);
+  background-color: oklch(0.965295 0.0102493 none);
+  border-bottom-color: oklch(0.916692 0.00824529 none);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
-  border-top-color: color(srgb 0.899384 0.893078 0.867283);
+  border-left-color: oklch(0.916692 0.00824529 none);
+  border-right-color: oklch(0.916692 0.00824529 none);
+  border-top-color: oklch(0.916692 0.00824529 none);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   color: rgb(8, 8, 8);
@@ -4502,25 +5086,25 @@ html[saved-theme="light"] body pre > code [data-highlighted-chars] {
 }
 
 html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: color(srgb 0.968337 0.956082 0.922251);
-  border-bottom-color: color(srgb 0.899384 0.893078 0.867283);
+  background-color: oklch(0.965295 0.0102493 none);
+  border-bottom-color: oklch(0.916692 0.00824529 none);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
-  border-top-color: color(srgb 0.899384 0.893078 0.867283);
+  border-left-color: oklch(0.916692 0.00824529 none);
+  border-right-color: oklch(0.916692 0.00824529 none);
+  border-top-color: oklch(0.916692 0.00824529 none);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: color(srgb 0.968337 0.956082 0.922251);
-  border-bottom-color: color(srgb 0.899384 0.893078 0.867283);
+  background-color: oklch(0.965295 0.0102493 none);
+  border-bottom-color: oklch(0.916692 0.00824529 none);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
-  border-top-color: color(srgb 0.899384 0.893078 0.867283);
+  border-left-color: oklch(0.916692 0.00824529 none);
+  border-right-color: oklch(0.916692 0.00824529 none);
+  border-top-color: oklch(0.916692 0.00824529 none);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }`,
@@ -4561,12 +5145,12 @@ html[saved-theme="light"] body video {
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: rgb(237, 235, 229);
-  border-bottom-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-bottom-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-left-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-right-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-top-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-left-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-right-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-top-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -4578,21 +5162,21 @@ html[saved-theme="light"] body .footnotes {
 
 html[saved-theme="light"] body .transclude {
   border-bottom-color: rgb(8, 8, 8);
-  border-left-color: rgb(87, 112, 185);
+  border-left-color: oklch(0.559406 0.117288 268.214 / 0.8);
   border-right-color: rgb(8, 8, 8);
   border-top-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(8, 8, 8);
-  border-left-color: rgb(87, 112, 185);
+  border-left-color: oklch(0.559406 0.117288 268.214 / 0.8);
   border-right-color: rgb(8, 8, 8);
   border-top-color: rgb(8, 8, 8);
 }`,
     checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  text-decoration: line-through color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  text-decoration-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  text-decoration: line-through oklch(0.295919 0.00924012 265.652 / 0.8);
+  text-decoration-color: oklch(0.295919 0.00924012 265.652 / 0.8);
 }
 
 html[saved-theme="light"] body input[type=checkbox] {
@@ -4712,6 +5296,367 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(8, 8, 8);
   text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  color: rgb(232, 198, 42);
+  content: "--";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  color: rgb(111, 73, 174);
+  content: "!";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  color: rgb(227, 137, 202);
+  content: "?";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  color: rgb(232, 198, 42);
+  content: "...";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  color: rgb(59, 155, 161);
+  content: "‘";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  color: rgb(104, 149, 35);
+  content: "“";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  color: rgb(92, 159, 228);
+  content: "@";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  color: rgb(111, 73, 174);
+  content: "*";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  color: rgb(237, 129, 38);
+  content: "/";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  color: rgb(104, 149, 35);
+  content: "#";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  color: rgb(227, 137, 202);
+  content: "%";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  color: rgb(104, 149, 35);
+  content: "+";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  color: rgb(237, 129, 38);
+  content: "<";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  color: rgb(59, 155, 161);
+  content: ">";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  color: rgb(235, 83, 37);
+  content: "~";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  color: rgb(235, 83, 37);
+  content: "$";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  color: rgb(59, 155, 161);
+  content: "i";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(250, 247, 239);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgba(111, 118, 133, 0.6);
@@ -4899,12 +5844,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(250, 247, 239);
-  border-bottom-color: color(srgb 0.899384 0.893078 0.867283);
+  border-bottom-color: oklch(0.916692 0.00824529 none);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
-  border-top-color: color(srgb 0.899384 0.893078 0.867283);
+  border-left-color: oklch(0.916692 0.00824529 none);
+  border-right-color: oklch(0.916692 0.00824529 none);
+  border-top-color: oklch(0.916692 0.00824529 none);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(8, 8, 8);
@@ -4912,12 +5857,12 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
   background-color: rgb(250, 247, 239);
-  border-bottom-color: color(srgb 0.899384 0.893078 0.867283);
+  border-bottom-color: oklch(0.916692 0.00824529 none);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
-  border-top-color: color(srgb 0.899384 0.893078 0.867283);
+  border-left-color: oklch(0.916692 0.00824529 none);
+  border-right-color: oklch(0.916692 0.00824529 none);
+  border-top-color: oklch(0.916692 0.00824529 none);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
@@ -4954,21 +5899,21 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
-  border-bottom-color: color(srgb 0.899384 0.893078 0.867283);
+  border-bottom-color: oklch(0.916692 0.00824529 none);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
-  border-top-color: color(srgb 0.899384 0.893078 0.867283);
+  border-left-color: oklch(0.916692 0.00824529 none);
+  border-right-color: oklch(0.916692 0.00824529 none);
+  border-top-color: oklch(0.916692 0.00824529 none);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {
-  border-bottom-color: color(srgb 0.968337 0.956082 0.922251);
-  border-left-color: rgb(87, 112, 185);
-  border-right-color: rgb(87, 112, 185);
-  border-top-color: rgb(87, 112, 185);
+  border-bottom-color: oklch(0.965295 0.0102493 none);
+  border-left-color: oklch(0.559406 0.117288 268.214 / 0.8);
+  border-right-color: oklch(0.559406 0.117288 268.214 / 0.8);
+  border-top-color: oklch(0.559406 0.117288 268.214 / 0.8);
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
@@ -4994,7 +5939,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: color(srgb 0.231373 0.607843 0.631373 / 0.25);
+  background-color: oklch(0.636063 0.0886415 200.985 / 0.25);
   border-bottom-color: rgba(86, 111, 184, 0.15);
   border-left-color: rgba(86, 111, 184, 0.15);
   border-right-color: rgba(86, 111, 184, 0.15);
@@ -5034,9 +5979,9 @@ html[saved-theme="light"] body h6 {
 }
 
 html[saved-theme="light"] body hr {
-  border-bottom-color: color(srgb 0.899384 0.893078 0.867283);
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
+  border-bottom-color: oklch(0.916692 0.00824529 none);
+  border-left-color: oklch(0.916692 0.00824529 none);
+  border-right-color: oklch(0.916692 0.00824529 none);
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
@@ -5089,58 +6034,40 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
   background-color: rgb(250, 247, 239);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  text-decoration: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  text-decoration: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  text-decoration: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(237, 235, 229);
-  border-bottom-color: rgb(87, 112, 185);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgb(87, 112, 185);
-  border-right-color: rgb(87, 112, 185);
-  border-top-color: rgb(87, 112, 185);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  color: rgb(87, 112, 185);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
-  border-bottom-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-bottom-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-right-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-top-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-left-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-right-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-top-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-left-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-bottom-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-left-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-left-width: 0px;
-  border-right-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-top-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-right-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-top-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-top-left-radius: 4px;
   border-top-width: 0px;
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
 }
 
 html[saved-theme="light"] body footer ul li a {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  text-decoration: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(8, 8, 8);
@@ -5155,12 +6082,12 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  text-decoration: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(8, 8, 8);
@@ -5170,12 +6097,12 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 }
 
 html[saved-theme="light"] body li.section-li > .section .meta {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  text-decoration: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -5185,32 +6112,32 @@ html[saved-theme="light"] body ul.section-ul {
   border-top-color: rgb(8, 8, 8);
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
-  border-bottom-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-bottom-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-right-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-top-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-left-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-right-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-top-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
 }
 
 html[saved-theme="light"] body .darkmode svg {
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  stroke: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  stroke: oklch(0.295919 0.00924012 265.652 / 0.8);
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-container {
-  background-color: color(srgb 0.899384 0.893078 0.867283);
-  border-bottom-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  background-color: oklch(0.916692 0.00824529 none);
+  border-bottom-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 2px;
-  border-left-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-right-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-top-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-bottom-right-radius: 0px;
+  border-left-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-right-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-top-color: oklch(0.295919 0.00924012 265.652 / 0.8);
   border-top-left-radius: 16px;
-  border-top-right-radius: 2px;
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-top-right-radius: 0px;
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
@@ -5225,20 +6152,20 @@ html[saved-theme="light"] body .breadcrumb-element p {
 }
 
 html[saved-theme="light"] body .metadata {
-  border-bottom-color: color(srgb 0.899384 0.893078 0.867283);
-  border-left-color: color(srgb 0.899384 0.893078 0.867283);
-  border-right-color: color(srgb 0.899384 0.893078 0.867283);
-  border-top-color: color(srgb 0.899384 0.893078 0.867283);
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-bottom-color: oklch(0.916692 0.00824529 none);
+  border-left-color: oklch(0.916692 0.00824529 none);
+  border-right-color: oklch(0.916692 0.00824529 none);
+  border-top-color: oklch(0.916692 0.00824529 none);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
   padding-left: 14px;
 }
 
 html[saved-theme="light"] body .metadata-properties {
-  border-bottom-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-left-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-right-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  border-top-color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
-  color: color(srgb 0.19229 0.196573 0.205749 / 0.8);
+  border-bottom-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-left-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-right-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  border-top-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+  color: oklch(0.295919 0.00924012 265.652 / 0.8);
 }
 
 html[saved-theme="light"] body .navigation-progress {
@@ -5270,7 +6197,7 @@ html[saved-theme="light"] body input[type=text] {
 }
 
 html[saved-theme="light"] body kbd {
-  background-color: color(srgb 0.968337 0.956082 0.922251);
+  background-color: oklch(0.965295 0.0102493 none);
   border-bottom-color: rgb(8, 8, 8);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;

@@ -9,52 +9,52 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background-modifier-border: rgb(98, 119, 188) !important;
+  --background-modifier-border: hsl(226, 40%, 56%) !important;
   --background-modifier-error: 346, 50%, 36% !important;
   --background-modifier-error-hover: 346, 50%, 36% !important;
   --background-modifier-success: 108, 40%, 42% !important;
-  --background-primary: rgb(38, 34, 38) !important;
-  --background-primary-alt: rgb(49, 43, 49) !important;
-  --background-secondary: rgb(49, 43, 49) !important;
-  --background-secondary-alt: rgb(59, 53, 59) !important;
-  --bases-cards-background: rgb(38, 34, 38) !important;
-  --bases-cards-cover-background: rgb(49, 43, 49) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(98, 119, 188) !important;
-  --bases-embed-border-color: rgb(98, 119, 188) !important;
-  --bases-group-heading-property-color: rgb(59, 176, 137) !important;
-  --bases-table-border-color: rgb(98, 119, 188) !important;
-  --bases-table-cell-background-active: rgb(38, 34, 38) !important;
-  --bases-table-cell-background-disabled: rgb(49, 43, 49) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(98, 119, 188) !important;
-  --bases-table-group-background: rgb(49, 43, 49) !important;
-  --bases-table-header-background: rgb(38, 34, 38) !important;
-  --bases-table-header-color: rgb(59, 176, 137) !important;
-  --bases-table-summary-background: rgb(38, 34, 38) !important;
-  --blockquote-border-color: rgb(98, 119, 188) !important;
+  --background-primary: hsl(300,  6%, 14%) !important;
+  --background-primary-alt: hsl(300,  6%, 18%) !important;
+  --background-secondary: hsl(300,  6%, 18%) !important;
+  --background-secondary-alt: hsl(300,  6%, 22%) !important;
+  --bases-cards-background: hsl(300,  6%, 14%) !important;
+  --bases-cards-cover-background: hsl(300,  6%, 18%) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(226, 40%, 56%) !important;
+  --bases-embed-border-color: hsl(226, 40%, 56%) !important;
+  --bases-group-heading-property-color: hsl(160, 50%, 46%) !important;
+  --bases-table-border-color: hsl(226, 40%, 56%) !important;
+  --bases-table-cell-background-active: hsl(300,  6%, 14%) !important;
+  --bases-table-cell-background-disabled: hsl(300,  6%, 18%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(226, 40%, 56%) !important;
+  --bases-table-group-background: hsl(300,  6%, 18%) !important;
+  --bases-table-header-background: hsl(300,  6%, 14%) !important;
+  --bases-table-header-color: hsl(160, 50%, 46%) !important;
+  --bases-table-summary-background: hsl(300,  6%, 14%) !important;
+  --blockquote-border-color: hsl(226, 40%, 56%) !important;
   --bodyFont: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --canvas-background: rgb(38, 34, 38) !important;
-  --canvas-card-label-color: rgb(79, 196, 173) !important;
-  --caret-color: rgb(48, 145, 113) !important;
-  --checkbox-border-color: rgb(79, 196, 173) !important;
-  --checkbox-border-color-hover: rgb(59, 176, 137) !important;
-  --checkbox-color: rgb(98, 119, 188) !important;
-  --checkbox-marker-color: rgb(38, 34, 38) !important;
-  --checklist-done-color: rgb(59, 176, 137) !important;
-  --code-background: rgb(49, 43, 49) !important;
-  --code-border-color: rgb(98, 119, 188) !important;
-  --code-comment: rgb(79, 196, 173) !important;
+  --canvas-background: hsl(300,  6%, 14%) !important;
+  --canvas-card-label-color: hsl(168, 50%, 54%) !important;
+  --caret-color: hsl(160, 50%, 38%) !important;
+  --checkbox-border-color: hsl(168, 50%, 54%) !important;
+  --checkbox-border-color-hover: hsl(160, 50%, 46%) !important;
+  --checkbox-color: hsl(226, 40%, 56%) !important;
+  --checkbox-marker-color: hsl(300,  6%, 14%) !important;
+  --checklist-done-color: hsl(160, 50%, 46%) !important;
+  --code-background: hsl(300,  6%, 18%) !important;
+  --code-border-color: hsl(226, 40%, 56%) !important;
+  --code-comment: hsl(168, 50%, 54%) !important;
   --code-function: 45, 50%, 44% !important;
   --code-important: 21, 50%, 52% !important;
   --code-keyword: 316, 50%, 80% !important;
-  --code-normal: rgb(48, 145, 113) !important;
+  --code-normal: hsl(160, 50%, 38%) !important;
   --code-operator: 346, 50%, 36% !important;
   --code-property: 189, 40%, 50% !important;
-  --code-punctuation: rgb(59, 176, 137) !important;
+  --code-punctuation: hsl(160, 50%, 46%) !important;
   --code-string: 108, 40%, 42% !important;
   --code-tag: 346, 50%, 36% !important;
   --code-value: 270, 40%, 42% !important;
   --codeFont: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: rgb(79, 196, 173) !important;
+  --collapse-icon-color: hsl(168, 50%, 54%) !important;
   --color-alternate: 316, 50%, 80% !important;
   --color-base-0: 300,  6%, 10% !important;
   --color-base-1: 300,  6%, 14% !important;
@@ -122,8 +122,8 @@ export const theme: ThemeData = {
   --crimson3: 346, 50%, 28% !important;
   --crimson4: 346, 50%, 24% !important;
   --crimson5: 346, 50%, 20% !important;
-  --dark: rgb(48, 145, 113) !important;
-  --darkgray: rgb(48, 145, 113) !important;
+  --dark: hsl(160, 50%, 38%) !important;
+  --darkgray: hsl(160, 50%, 38%) !important;
   --day0: 15, 20%, 96% !important;
   --day1: 15, 20%, 92% !important;
   --day2: 15, 20%, 88% !important;
@@ -131,32 +131,32 @@ export const theme: ThemeData = {
   --day4: 15, 20%, 80% !important;
   --day5: 15, 20%, 76% !important;
   --default-font: 'Consolas', 'Source Sans Pro', 'Segoe UI Emoji', sans-serif !important;
-  --divider-color: rgb(98, 119, 188) !important;
-  --divider-color-hover: rgb(98, 119, 188) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgb(98, 119, 188), inset 0 0 0 1px rgb(98, 119, 188) !important;
-  --embed-border-start: 2px solid rgb(98, 119, 188) !important;
-  --file-header-background: rgb(38, 34, 38) !important;
-  --file-header-background-focused: rgb(38, 34, 38) !important;
+  --divider-color: hsl(226, 40%, 56%) !important;
+  --divider-color-hover: hsl(226, 40%, 56%) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsl(226, 40%, 56%), inset 0 0 0 1px hsl(226, 40%, 56%) !important;
+  --embed-border-start: 2px solid hsl(226, 40%, 56%) !important;
+  --file-header-background: hsl(300,  6%, 14%) !important;
+  --file-header-background-focused: hsl(300,  6%, 14%) !important;
   --file-header-font: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-color: rgb(48, 145, 113) !important;
+  --flair-color: hsl(160, 50%, 38%) !important;
   --font-headings: 'Tahoma', serif !important;
   --font-interface: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-title: 'Jomhuria', 'Source Sans Pro', sans-serif !important;
-  --footnote-divider-color: rgb(98, 119, 188) !important;
-  --footnote-id-color: rgb(59, 176, 137) !important;
-  --footnote-id-color-no-occurrences: rgb(79, 196, 173) !important;
+  --footnote-divider-color: hsl(226, 40%, 56%) !important;
+  --footnote-id-color: hsl(160, 50%, 46%) !important;
+  --footnote-id-color-no-occurrences: hsl(168, 50%, 54%) !important;
   --frost0: 226, 40%, 44% !important;
   --frost1: 226, 40%, 48% !important;
   --frost2: 226, 40%, 52% !important;
   --frost3: 226, 40%, 56% !important;
   --frost4: 226, 40%, 60% !important;
   --frost5: 226, 40%, 64% !important;
-  --graph-node: rgb(59, 176, 137) !important;
+  --graph-node: hsl(160, 50%, 46%) !important;
   --graph-node-attachment: 45, 50%, 44% !important;
   --graph-node-tag: 108, 40%, 42% !important;
-  --graph-node-unresolved: rgb(79, 196, 173) !important;
-  --graph-text: rgb(48, 145, 113) !important;
-  --gray: rgb(59, 176, 137) !important;
+  --graph-node-unresolved: hsl(168, 50%, 54%) !important;
+  --graph-text: hsl(160, 50%, 38%) !important;
+  --gray: hsl(160, 50%, 46%) !important;
   --green0: 108, 40%, 34% !important;
   --green1: 108, 40%, 38% !important;
   --green2: 108, 40%, 42% !important;
@@ -164,95 +164,95 @@ export const theme: ThemeData = {
   --green4: 108, 40%, 50% !important;
   --green5: 108, 40%, 54% !important;
   --headerFont: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgb(79, 196, 173) !important;
-  --highlight: rgb(168, 140, 56) !important;
-  --hr-color: rgb(98, 119, 188) !important;
-  --icon-color: rgb(59, 176, 137) !important;
-  --icon-color-focused: rgb(48, 145, 113) !important;
-  --icon-color-hover: rgb(59, 176, 137) !important;
+  --heading-formatting: hsl(168, 50%, 54%) !important;
+  --highlight: hsl(45, 50%, 44%) !important;
+  --hr-color: hsl(226, 40%, 56%) !important;
+  --icon-color: hsl(160, 50%, 46%) !important;
+  --icon-color-focused: hsl(160, 50%, 38%) !important;
+  --icon-color-hover: hsl(160, 50%, 46%) !important;
   --indigo0: 270, 40%, 30% !important;
   --indigo1: 270, 40%, 34% !important;
   --indigo2: 270, 40%, 38% !important;
   --indigo3: 270, 40%, 42% !important;
   --indigo4: 270, 40%, 46% !important;
   --indigo5: 270, 40%, 50% !important;
-  --input-date-separator: rgb(79, 196, 173) !important;
-  --input-placeholder-color: rgb(79, 196, 173) !important;
-  --interactive-accent: rgb(98, 119, 188) !important;
+  --input-date-separator: hsl(168, 50%, 54%) !important;
+  --input-placeholder-color: hsl(168, 50%, 54%) !important;
+  --interactive-accent: hsl(226, 40%, 56%) !important;
   --letterspacing-text-headers: 1.2px !important;
   --letterspacing-text-p: 1px !important;
-  --light: rgb(38, 34, 38) !important;
-  --lightgray: rgb(49, 43, 49) !important;
-  --link-color-hover: rgb(107, 64, 150) !important;
-  --link-external-color-hover: rgb(107, 64, 150) !important;
-  --list-marker-color: rgb(79, 196, 173) !important;
-  --list-marker-color-hover: rgb(59, 176, 137) !important;
-  --menu-background: rgb(49, 43, 49) !important;
-  --metadata-border-color: rgb(98, 119, 188) !important;
-  --metadata-divider-color: rgb(98, 119, 188) !important;
+  --light: hsl(300,  6%, 14%) !important;
+  --lightgray: hsl(300,  6%, 18%) !important;
+  --link-color-hover: hsl(270, 40%, 42%) !important;
+  --link-external-color-hover: hsl(270, 40%, 42%) !important;
+  --list-marker-color: hsl(168, 50%, 54%) !important;
+  --list-marker-color-hover: hsl(160, 50%, 46%) !important;
+  --menu-background: hsl(300,  6%, 18%) !important;
+  --metadata-border-color: hsl(226, 40%, 56%) !important;
+  --metadata-divider-color: hsl(226, 40%, 56%) !important;
   --metadata-input-font: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: rgb(48, 145, 113) !important;
+  --metadata-input-text-color: hsl(160, 50%, 38%) !important;
   --metadata-label-font: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: rgb(59, 176, 137) !important;
-  --metadata-label-text-color-hover: rgb(59, 176, 137) !important;
-  --modal-background: rgb(38, 34, 38) !important;
+  --metadata-label-text-color: hsl(160, 50%, 46%) !important;
+  --metadata-label-text-color-hover: hsl(160, 50%, 46%) !important;
+  --modal-background: hsl(300,  6%, 14%) !important;
   --moonstone0: 189, 40%, 34% !important;
   --moonstone1: 189, 40%, 38% !important;
   --moonstone2: 189, 40%, 42% !important;
   --moonstone3: 189, 40%, 46% !important;
   --moonstone4: 189, 40%, 50% !important;
   --moonstone5: 189, 40%, 54% !important;
-  --nav-collapse-icon-color: rgb(79, 196, 173) !important;
-  --nav-collapse-icon-color-collapsed: rgb(79, 196, 173) !important;
-  --nav-heading-color: rgb(48, 145, 113) !important;
-  --nav-heading-color-collapsed: rgb(79, 196, 173) !important;
-  --nav-heading-color-collapsed-hover: rgb(59, 176, 137) !important;
-  --nav-heading-color-hover: rgb(48, 145, 113) !important;
-  --nav-item-color: rgb(59, 176, 137) !important;
-  --nav-item-color-active: rgb(48, 145, 113) !important;
-  --nav-item-color-hover: rgb(48, 145, 113) !important;
-  --nav-item-color-selected: rgb(48, 145, 113) !important;
-  --nav-tag-color: rgb(79, 196, 173) !important;
-  --nav-tag-color-active: rgb(59, 176, 137) !important;
-  --nav-tag-color-hover: rgb(59, 176, 137) !important;
+  --nav-collapse-icon-color: hsl(168, 50%, 54%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(168, 50%, 54%) !important;
+  --nav-heading-color: hsl(160, 50%, 38%) !important;
+  --nav-heading-color-collapsed: hsl(168, 50%, 54%) !important;
+  --nav-heading-color-collapsed-hover: hsl(160, 50%, 46%) !important;
+  --nav-heading-color-hover: hsl(160, 50%, 38%) !important;
+  --nav-item-color: hsl(160, 50%, 46%) !important;
+  --nav-item-color-active: hsl(160, 50%, 38%) !important;
+  --nav-item-color-hover: hsl(160, 50%, 38%) !important;
+  --nav-item-color-selected: hsl(160, 50%, 38%) !important;
+  --nav-tag-color: hsl(168, 50%, 54%) !important;
+  --nav-tag-color-active: hsl(160, 50%, 46%) !important;
+  --nav-tag-color-hover: hsl(160, 50%, 46%) !important;
   --night0: 300,  6%, 10% !important;
   --night1: 300,  6%, 14% !important;
   --night2: 300,  6%, 18% !important;
   --night3: 300,  6%, 22% !important;
   --night4: 300,  6%, 26% !important;
   --night5: 300,  6%, 30% !important;
-  --pdf-background: rgb(38, 34, 38) !important;
-  --pdf-page-background: rgb(38, 34, 38) !important;
-  --pdf-shadow: 0 0 0 1px rgb(98, 119, 188) !important;
-  --pdf-sidebar-background: rgb(38, 34, 38) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(98, 119, 188) !important;
+  --pdf-background: hsl(300,  6%, 14%) !important;
+  --pdf-page-background: hsl(300,  6%, 14%) !important;
+  --pdf-shadow: 0 0 0 1px hsl(226, 40%, 56%) !important;
+  --pdf-sidebar-background: hsl(300,  6%, 14%) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(226, 40%, 56%) !important;
   --peach0: 22, 50%, 40% !important;
   --peach1: 22, 50%, 44% !important;
   --peach2: 21, 50%, 48% !important;
   --peach3: 21, 50%, 52% !important;
   --peach4: 21, 50%, 56% !important;
   --peach5: 22, 50%, 60% !important;
-  --pill-border-color: rgb(98, 119, 188) !important;
-  --pill-color: rgb(59, 176, 137) !important;
-  --pill-color-hover: rgb(48, 145, 113) !important;
-  --pill-color-remove: rgb(79, 196, 173) !important;
+  --pill-border-color: hsl(226, 40%, 56%) !important;
+  --pill-color: hsl(160, 50%, 46%) !important;
+  --pill-color-hover: hsl(160, 50%, 38%) !important;
+  --pill-color-remove: hsl(168, 50%, 54%) !important;
   --pink0: 316, 50%, 60% !important;
   --pink1: 316, 50%, 64% !important;
   --pink2: 316, 50%, 68% !important;
   --pink3: 316, 50%, 72% !important;
   --pink4: 315, 50%, 76% !important;
   --pink5: 316, 50%, 80% !important;
-  --prompt-background: rgb(38, 34, 38) !important;
-  --ribbon-background: rgb(49, 43, 49) !important;
-  --ribbon-background-collapsed: rgb(38, 34, 38) !important;
-  --scrollbar-active-thumb-bg: rgb(107, 64, 150) !important;
-  --search-clear-button-color: rgb(59, 176, 137) !important;
-  --search-icon-color: rgb(59, 176, 137) !important;
-  --search-result-background: rgb(38, 34, 38) !important;
-  --secondary: rgb(98, 119, 188) !important;
-  --setting-group-heading-color: rgb(48, 145, 113) !important;
-  --setting-items-background: rgb(49, 43, 49) !important;
-  --setting-items-border-color: rgb(98, 119, 188) !important;
+  --prompt-background: hsl(300,  6%, 14%) !important;
+  --ribbon-background: hsl(300,  6%, 18%) !important;
+  --ribbon-background-collapsed: hsl(300,  6%, 14%) !important;
+  --scrollbar-active-thumb-bg: hsl(270, 40%, 42%) !important;
+  --search-clear-button-color: hsl(160, 50%, 46%) !important;
+  --search-icon-color: hsl(160, 50%, 46%) !important;
+  --search-result-background: hsl(300,  6%, 14%) !important;
+  --secondary: hsl(226, 40%, 56%) !important;
+  --setting-group-heading-color: hsl(160, 50%, 38%) !important;
+  --setting-items-background: hsl(300,  6%, 18%) !important;
+  --setting-items-border-color: hsl(226, 40%, 56%) !important;
   --size-icon: 15px !important;
   --size-text-h1: 3em !important;
   --size-text-h2: 30px !important;
@@ -262,11 +262,11 @@ export const theme: ThemeData = {
   --size-text-h6: 18px !important;
   --size-text-p: 15px !important;
   --size-text-title: 5em !important;
-  --slider-track-background: rgb(98, 119, 188) !important;
-  --status-bar-background: rgb(49, 43, 49) !important;
-  --status-bar-border-color: rgb(98, 119, 188) !important;
-  --status-bar-text-color: rgb(59, 176, 137) !important;
-  --suggestion-background: rgb(38, 34, 38) !important;
+  --slider-track-background: hsl(226, 40%, 56%) !important;
+  --status-bar-background: hsl(300,  6%, 18%) !important;
+  --status-bar-border-color: hsl(226, 40%, 56%) !important;
+  --status-bar-text-color: hsl(160, 50%, 46%) !important;
+  --suggestion-background: hsl(300,  6%, 14%) !important;
   --sync-avatar-color-1: 346, 50%, 36% !important;
   --sync-avatar-color-2: 21, 50%, 52% !important;
   --sync-avatar-color-3: 45, 50%, 44% !important;
@@ -275,49 +275,49 @@ export const theme: ThemeData = {
   --sync-avatar-color-6: 226, 40%, 56% !important;
   --sync-avatar-color-7: 270, 40%, 42% !important;
   --sync-avatar-color-8: 316, 50%, 80% !important;
-  --tab-background-active: rgb(38, 34, 38) !important;
-  --tab-container-background: rgb(49, 43, 49) !important;
-  --tab-outline-color: rgb(98, 119, 188) !important;
-  --tab-switcher-background: rgb(49, 43, 49) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(49, 43, 49), transparent) !important;
-  --tab-text-color: rgb(79, 196, 173) !important;
-  --tab-text-color-active: rgb(107, 64, 150) !important;
-  --tab-text-color-focused: rgb(59, 176, 137) !important;
-  --tab-text-color-focused-active: rgb(59, 176, 137) !important;
-  --tab-text-color-focused-active-current: rgb(194, 114, 71) !important;
-  --table-add-button-border-color: rgb(98, 119, 188) !important;
-  --table-border-color: rgb(98, 119, 188) !important;
-  --table-drag-handle-background-active: rgb(98, 119, 188) !important;
-  --table-drag-handle-color: rgb(79, 196, 173) !important;
-  --table-header-border-color: rgb(98, 119, 188) !important;
-  --table-header-color: rgb(48, 145, 113) !important;
-  --table-selection-border-color: rgb(98, 119, 188) !important;
+  --tab-background-active: hsl(300,  6%, 14%) !important;
+  --tab-container-background: hsl(300,  6%, 18%) !important;
+  --tab-outline-color: hsl(226, 40%, 56%) !important;
+  --tab-switcher-background: hsl(300,  6%, 18%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(300,  6%, 18%), transparent) !important;
+  --tab-text-color: hsl(168, 50%, 54%) !important;
+  --tab-text-color-active: hsl(270, 40%, 42%) !important;
+  --tab-text-color-focused: hsl(160, 50%, 46%) !important;
+  --tab-text-color-focused-active: hsl(160, 50%, 46%) !important;
+  --tab-text-color-focused-active-current: hsl(21, 50%, 52%) !important;
+  --table-add-button-border-color: hsl(226, 40%, 56%) !important;
+  --table-border-color: hsl(226, 40%, 56%) !important;
+  --table-drag-handle-background-active: hsl(226, 40%, 56%) !important;
+  --table-drag-handle-color: hsl(168, 50%, 54%) !important;
+  --table-header-border-color: hsl(226, 40%, 56%) !important;
+  --table-header-color: hsl(160, 50%, 38%) !important;
+  --table-selection-border-color: hsl(226, 40%, 56%) !important;
   --teal0: 160, 50%, 34% !important;
   --teal1: 160, 50%, 38% !important;
   --teal2: 160, 50%, 42% !important;
   --teal3: 160, 50%, 46% !important;
   --teal4: 160, 50%, 50% !important;
   --teal5: 168, 50%, 54% !important;
-  --tertiary: rgb(107, 64, 150) !important;
-  --text-accent-hover: rgb(107, 64, 150) !important;
+  --tertiary: hsl(270, 40%, 42%) !important;
+  --text-accent-hover: hsl(270, 40%, 42%) !important;
   --text-error: 346, 50%, 36% !important;
-  --text-faint: rgb(79, 196, 173) !important;
-  --text-highlight-bg: rgb(168, 140, 56) !important;
-  --text-highlight-bg-active: rgb(194, 114, 71) !important;
-  --text-muted: rgb(59, 176, 137) !important;
-  --text-normal: rgb(48, 145, 113) !important;
-  --text-selection: rgb(222, 210, 206) !important;
+  --text-faint: hsl(168, 50%, 54%) !important;
+  --text-highlight-bg: hsl(45, 50%, 44%) !important;
+  --text-highlight-bg-active: hsl(21, 50%, 52%) !important;
+  --text-muted: hsl(160, 50%, 46%) !important;
+  --text-normal: hsl(160, 50%, 38%) !important;
+  --text-selection: hsl(15, 20%, 84%) !important;
   --text-success: 108, 40%, 42% !important;
   --text-warning: 21, 50%, 52% !important;
-  --textHighlight: rgb(168, 140, 56) !important;
+  --textHighlight: hsl(45, 50%, 44%) !important;
   --titleFont: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: rgb(59, 53, 59) !important;
-  --titlebar-background-focused: rgb(49, 43, 49) !important;
-  --titlebar-border-color: rgb(98, 119, 188) !important;
-  --titlebar-text-color: rgb(59, 176, 137) !important;
-  --titlebar-text-color-focused: rgb(48, 145, 113) !important;
-  --vault-profile-color: rgb(48, 145, 113) !important;
-  --vault-profile-color-hover: rgb(48, 145, 113) !important;
+  --titlebar-background: hsl(300,  6%, 22%) !important;
+  --titlebar-background-focused: hsl(300,  6%, 18%) !important;
+  --titlebar-border-color: hsl(226, 40%, 56%) !important;
+  --titlebar-text-color: hsl(160, 50%, 46%) !important;
+  --titlebar-text-color-focused: hsl(160, 50%, 38%) !important;
+  --vault-profile-color: hsl(160, 50%, 38%) !important;
+  --vault-profile-color-hover: hsl(160, 50%, 38%) !important;
   --weight-bold: 700 !important;
   --weight-extrabold: 800 !important;
   --weight-extralight: 200 !important;
@@ -797,6 +797,78 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(48, 145, 113);
   text-decoration: rgb(48, 145, 113);
   text-decoration-color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4-9H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 14a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 12 14m0-1.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-2 0v3a1 1 0 0 0 1 1M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8.01 8.01 0 0 1-8 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M11.29 15.29a1.58 1.58 0 0 0-.12.15a.76.76 0 0 0-.09.18a.64.64 0 0 0-.06.18a1.36 1.36 0 0 0 0 .2a.84.84 0 0 0 .08.38a.9.9 0 0 0 .54.54a.94.94 0 0 0 .76 0a.9.9 0 0 0 .54-.54A1 1 0 0 0 13 16a1 1 0 0 0-.29-.71a1 1 0 0 0-1.42 0M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m0-13a3 3 0 0 0-2.6 1.5a1 1 0 1 0 1.73 1A1 1 0 0 1 12 9a1 1 0 0 1 0 2a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-.18A3 3 0 0 0 12 7'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M22 9.67a1 1 0 0 0-.86-.67l-5.69-.83L12.9 3a1 1 0 0 0-1.8 0L8.55 8.16L2.86 9a1 1 0 0 0-.81.68a1 1 0 0 0 .25 1l4.13 4l-1 5.68a1 1 0 0 0 1.47 1.08l5.1-2.67l5.1 2.67a.93.93 0 0 0 .46.12a1 1 0 0 0 .59-.19a1 1 0 0 0 .4-1l-1-5.68l4.13-4A1 1 0 0 0 22 9.67m-6.15 4a1 1 0 0 0-.29.88l.72 4.2l-3.76-2a1.06 1.06 0 0 0-.94 0l-3.76 2l.72-4.2a1 1 0 0 0-.29-.88l-3-3l4.21-.61a1 1 0 0 0 .76-.55L12 5.7l1.88 3.82a1 1 0 0 0 .76.55l4.21.61Z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M8 19a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3a1 1 0 0 0 0-2a5 5 0 0 0-5 5v8a5 5 0 0 0 5 5a1 1 0 0 0 0-2m7.71-3.29a1 1 0 0 0 0-1.42L13.41 12l2.3-2.29a1 1 0 0 0-1.42-1.42L12 10.59l-2.29-2.3a1 1 0 0 0-1.42 1.42l2.3 2.29l-2.3 2.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l2.29-2.3l2.29 2.3a1 1 0 0 0 1.42 0M16 3a1 1 0 0 0 0 2a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3a1 1 0 0 0 0 2a5 5 0 0 0 5-5V8a5 5 0 0 0-5-5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4-9h-3V8a1 1 0 0 0-2 0v3H8a1 1 0 0 0 0 2h3v3a1 1 0 0 0 2 0v-3h3a1 1 0 0 0 0-2'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M8.29 11.29a1 1 0 0 0-.21.33a1 1 0 0 0 0 .76a1 1 0 0 0 .21.33l3 3a1 1 0 0 0 1.42-1.42L11.41 13H15a1 1 0 0 0 0-2h-3.59l1.3-1.29a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0ZM2 12A10 10 0 1 0 12 2A10 10 0 0 0 2 12m18 0a8 8 0 1 1-8-8a8 8 0 0 1 8 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.71 12.71a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76a1 1 0 0 0-.21-.33l-3-3a1 1 0 0 0-1.42 1.42l1.3 1.29H9a1 1 0 0 0 0 2h3.59l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0ZM22 12a10 10 0 1 0-10 10a10 10 0 0 0 10-10M4 12a8 8 0 1 1 8 8a8 8 0 0 1-8-8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M16 2H8a3 3 0 0 0-3 3v16a1 1 0 0 0 .5.87a1 1 0 0 0 1 0l5.5-3.18l5.5 3.18a1 1 0 0 0 .5.13a1 1 0 0 0 .5-.13A1 1 0 0 0 19 21V5a3 3 0 0 0-3-3m1 17.27l-4.5-2.6a1 1 0 0 0-1 0L7 19.27V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1Z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M19 2H6.27a3 3 0 0 0-2.95 2.46l-1.27 7A3 3 0 0 0 5 15h4.56L9 16.43A4.13 4.13 0 0 0 12.89 22a1 1 0 0 0 .91-.59L16.65 15H19a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3m-4 11.79l-2.72 6.12a2.13 2.13 0 0 1-1.38-2.78l.53-1.43A2 2 0 0 0 9.56 13H5a1 1 0 0 1-.77-.36a1 1 0 0 1-.23-.82l1.27-7a1 1 0 0 1 1-.82H15ZM20 12a1 1 0 0 1-1 1h-2V4h2a1 1 0 0 1 1 1Z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M11.29 15.71a1 1 0 0 0 .33.21a1 1 0 0 0 .76 0a1 1 0 0 0 .33-.21l3-3a1 1 0 0 0-1.42-1.42L13 12.59V9a1 1 0 0 0-2 0v3.59l-1.29-1.3a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.42ZM12 22A10 10 0 1 0 2 12a10 10 0 0 0 10 10m0-18a8 8 0 1 1-8 8a8 8 0 0 1 8-8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m8.468 8.395l-.002.001l-.003.002Zm9.954-.187a1.237 1.237 0 0 0-.23-.175a1 1 0 0 0-1.4.411a5.782 5.782 0 0 1-1.398 1.778a8.664 8.664 0 0 0 .134-1.51a8.714 8.714 0 0 0-4.4-7.582a1 1 0 0 0-1.492.806a7.017 7.017 0 0 1-2.471 4.942l-.23.187a8.513 8.513 0 0 0-1.988 1.863a8.983 8.983 0 0 0 3.656 13.908a1 1 0 0 0 1.377-.926a1.05 1.05 0 0 0-.05-.312a6.977 6.977 0 0 1-.19-2.581a9.004 9.004 0 0 0 4.313 4.016a.997.997 0 0 0 .715.038a8.995 8.995 0 0 0 3.654-14.863m-3.905 12.831a6.964 6.964 0 0 1-3.577-4.402a8.908 8.908 0 0 1-.18-.964a1 1 0 0 0-.799-.845a.982.982 0 0 0-.191-.018a1 1 0 0 0-.867.5a8.959 8.959 0 0 0-1.205 4.718a6.985 6.985 0 0 1-1.176-9.868a6.555 6.555 0 0 1 1.562-1.458a.745.745 0 0 0 .075-.055s.296-.245.306-.25a8.968 8.968 0 0 0 2.9-4.633a6.736 6.736 0 0 1 1.385 8.088a1 1 0 0 0 1.184 1.418a7.856 7.856 0 0 0 3.862-2.688a7 7 0 0 1-3.279 10.457'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8.01 8.01 0 0 1-8 8m0-8.5a1 1 0 0 0-1 1v3a1 1 0 0 0 2 0v-3a1 1 0 0 0-1-1m0-4a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 12 7.5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m21 4.41l.71-.7a1 1 0 1 0-1.42-1.42l-1.4 1.41l-2.83 2.83l-6.31 6.3a5 5 0 1 0 1.42 1.42l5.59-5.6l2.12 2.13a1 1 0 1 0 1.41-1.42l-2.12-2.12l1.42-1.41l.7.7a1 1 0 1 0 1.42-1.41ZM7 20a3 3 0 1 1 3-3a3 3 0 0 1-3 3'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20.46 9.63A8.5 8.5 0 0 0 7.3 3.36a8.56 8.56 0 0 0-3.76 6.27A8.46 8.46 0 0 0 6 16.46l5.3 5.31a1 1 0 0 0 1.42 0L18 16.46a8.46 8.46 0 0 0 2.46-6.83m-3.86 5.42l-4.6 4.6l-4.6-4.6a6.49 6.49 0 0 1-1.87-5.22A6.57 6.57 0 0 1 8.42 5a6.47 6.47 0 0 1 7.16 0a6.57 6.57 0 0 1 2.89 4.81a6.49 6.49 0 0 1-1.87 5.24M12 6a4.5 4.5 0 1 0 4.5 4.5A4.51 4.51 0 0 0 12 6m0 7a2.5 2.5 0 1 1 2.5-2.5A2.5 2.5 0 0 1 12 13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M21.3 10.08A3 3 0 0 0 19 9h-4.56L15 7.57A4.13 4.13 0 0 0 11.11 2a1 1 0 0 0-.91.59L7.35 9H5a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h12.73a3 3 0 0 0 2.95-2.46l1.27-7a3 3 0 0 0-.65-2.46M7 20H5a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h2Zm13-7.82l-1.27 7a1 1 0 0 1-1 .82H9v-9.79l2.72-6.12a2.11 2.11 0 0 1 1.38 2.78l-.53 1.43a2 2 0 0 0 1.87 2.7H19a1 1 0 0 1 .77.36a1 1 0 0 1 .23.82'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M14.36 14.23a3.76 3.76 0 0 1-4.72 0a1 1 0 0 0-1.28 1.54a5.68 5.68 0 0 0 7.28 0a1 1 0 1 0-1.28-1.54M9 11a1 1 0 1 0-1-1a1 1 0 0 0 1 1m6-2a1 1 0 1 0 1 1a1 1 0 0 0-1-1m-3-7a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12.71 8.29a1 1 0 0 0-.33-.21a1 1 0 0 0-.76 0a1 1 0 0 0-.33.21l-3 3a1 1 0 0 0 1.42 1.42l1.29-1.3V15a1 1 0 0 0 2 0v-3.59l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(49, 43, 49);
@@ -963,29 +1035,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   font-family: "??", "??", Consolas, "Source Sans Pro", "Segoe UI Emoji", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 900;
   text-decoration: rgb(59, 176, 137);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(59, 176, 137);
-  font-family: "??", "??", Consolas, "Source Sans Pro", "Segoe UI Emoji", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(59, 176, 137);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(27, 24, 27);
-  border-bottom-color: rgb(49, 43, 49);
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: rgb(49, 43, 49);
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-right-color: rgb(49, 43, 49);
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: rgb(49, 43, 49);
-  border-top-style: solid;
-  border-top-width: 1px;
-  color: rgb(194, 114, 71);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
   font-weight: 900;
@@ -1205,55 +1254,55 @@ html[saved-theme="dark"] body sup {
   },
   light: {
     base: `:root:root {
-  --background-modifier-border: rgb(84, 106, 182) !important;
+  --background-modifier-border: hsl(226, 40%, 52%) !important;
   --background-modifier-error: 346, 50%, 32% !important;
   --background-modifier-error-hover: 346, 50%, 32% !important;
   --background-modifier-success: 108, 40%, 42% !important;
-  --background-primary: rgb(239, 233, 231) !important;
-  --background-primary-alt: rgb(231, 221, 218) !important;
-  --background-secondary: rgb(231, 221, 218) !important;
-  --background-secondary-alt: rgb(222, 210, 206) !important;
-  --bases-cards-background: rgb(239, 233, 231) !important;
-  --bases-cards-cover-background: rgb(231, 221, 218) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(84, 106, 182) !important;
-  --bases-embed-border-color: rgb(84, 106, 182) !important;
-  --bases-group-heading-property-color: rgb(59, 53, 59) !important;
-  --bases-table-border-color: rgb(84, 106, 182) !important;
-  --bases-table-cell-background-active: rgb(239, 233, 231) !important;
-  --bases-table-cell-background-disabled: rgb(231, 221, 218) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(84, 106, 182) !important;
-  --bases-table-group-background: rgb(231, 221, 218) !important;
-  --bases-table-header-background: rgb(239, 233, 231) !important;
-  --bases-table-header-color: rgb(59, 53, 59) !important;
-  --bases-table-summary-background: rgb(239, 233, 231) !important;
-  --blockquote-border-color: rgb(84, 106, 182) !important;
-  --blur-background: color-mix(in srgb, rgb(239, 233, 231) 65%, transparent) linear-gradient(rgb(239, 233, 231), color-mix(in srgb, rgb(239, 233, 231) 65%, transparent)) !important;
+  --background-primary: hsl(15, 20%, 92%) !important;
+  --background-primary-alt: hsl(15, 20%, 88%) !important;
+  --background-secondary: hsl(15, 20%, 88%) !important;
+  --background-secondary-alt: hsl(15, 20%, 84%) !important;
+  --bases-cards-background: hsl(15, 20%, 92%) !important;
+  --bases-cards-cover-background: hsl(15, 20%, 88%) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(226, 40%, 52%) !important;
+  --bases-embed-border-color: hsl(226, 40%, 52%) !important;
+  --bases-group-heading-property-color: hsl(300,  6%, 22%) !important;
+  --bases-table-border-color: hsl(226, 40%, 52%) !important;
+  --bases-table-cell-background-active: hsl(15, 20%, 92%) !important;
+  --bases-table-cell-background-disabled: hsl(15, 20%, 88%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(226, 40%, 52%) !important;
+  --bases-table-group-background: hsl(15, 20%, 88%) !important;
+  --bases-table-header-background: hsl(15, 20%, 92%) !important;
+  --bases-table-header-color: hsl(300,  6%, 22%) !important;
+  --bases-table-summary-background: hsl(15, 20%, 92%) !important;
+  --blockquote-border-color: hsl(226, 40%, 52%) !important;
+  --blur-background: color-mix(in srgb, hsl(15, 20%, 92%) 65%, transparent) linear-gradient(hsl(15, 20%, 92%), color-mix(in srgb, hsl(15, 20%, 92%) 65%, transparent)) !important;
   --bodyFont: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --canvas-background: rgb(239, 233, 231) !important;
-  --canvas-card-label-color: rgb(81, 72, 81) !important;
-  --caret-color: rgb(38, 34, 38) !important;
-  --checkbox-border-color: rgb(81, 72, 81) !important;
-  --checkbox-border-color-hover: rgb(59, 53, 59) !important;
-  --checkbox-color: rgb(84, 106, 182) !important;
-  --checkbox-color-hover: rgb(97, 58, 136) !important;
-  --checkbox-marker-color: rgb(239, 233, 231) !important;
-  --checklist-done-color: rgb(59, 53, 59) !important;
-  --code-background: rgb(231, 221, 218) !important;
-  --code-border-color: rgb(84, 106, 182) !important;
-  --code-comment: rgb(81, 72, 81) !important;
+  --canvas-background: hsl(15, 20%, 92%) !important;
+  --canvas-card-label-color: hsl(300,  6%, 30%) !important;
+  --caret-color: hsl(300,  6%, 14%) !important;
+  --checkbox-border-color: hsl(300,  6%, 30%) !important;
+  --checkbox-border-color-hover: hsl(300,  6%, 22%) !important;
+  --checkbox-color: hsl(226, 40%, 52%) !important;
+  --checkbox-color-hover: hsl(270, 40%, 38%) !important;
+  --checkbox-marker-color: hsl(15, 20%, 92%) !important;
+  --checklist-done-color: hsl(300,  6%, 22%) !important;
+  --code-background: hsl(15, 20%, 88%) !important;
+  --code-border-color: hsl(226, 40%, 52%) !important;
+  --code-comment: hsl(300,  6%, 30%) !important;
   --code-function: 45, 50%, 44% !important;
   --code-important: 22, 50%, 40% !important;
   --code-keyword: 316, 50%, 68% !important;
-  --code-normal: rgb(38, 34, 38) !important;
+  --code-normal: hsl(300,  6%, 14%) !important;
   --code-operator: 346, 50%, 32% !important;
   --code-property: 189, 40%, 42% !important;
-  --code-punctuation: rgb(59, 53, 59) !important;
+  --code-punctuation: hsl(300,  6%, 22%) !important;
   --code-string: 108, 40%, 42% !important;
   --code-tag: 346, 50%, 32% !important;
   --code-value: 270, 40%, 38% !important;
   --codeFont: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: rgb(81, 72, 81) !important;
-  --collapse-icon-color-collapsed: rgb(84, 106, 182) !important;
+  --collapse-icon-color: hsl(300,  6%, 30%) !important;
+  --collapse-icon-color-collapsed: hsl(226, 40%, 52%) !important;
   --color-alternate: 316, 50%, 68% !important;
   --color-base-0: 15, 20%, 96% !important;
   --color-base-1: 15, 20%, 92% !important;
@@ -1321,8 +1370,8 @@ html[saved-theme="dark"] body sup {
   --crimson3: 346, 50%, 28% !important;
   --crimson4: 346, 50%, 24% !important;
   --crimson5: 346, 50%, 20% !important;
-  --dark: rgb(38, 34, 38) !important;
-  --darkgray: rgb(38, 34, 38) !important;
+  --dark: hsl(300,  6%, 14%) !important;
+  --darkgray: hsl(300,  6%, 14%) !important;
   --day0: 15, 20%, 96% !important;
   --day1: 15, 20%, 92% !important;
   --day2: 15, 20%, 88% !important;
@@ -1330,36 +1379,36 @@ html[saved-theme="dark"] body sup {
   --day4: 15, 20%, 80% !important;
   --day5: 15, 20%, 76% !important;
   --default-font: 'Consolas', 'Source Sans Pro', 'Segoe UI Emoji', sans-serif !important;
-  --divider-color: rgb(84, 106, 182) !important;
-  --divider-color-hover: rgb(84, 106, 182) !important;
-  --dropdown-background: rgb(222, 210, 206) !important;
-  --dropdown-background-hover: rgb(97, 58, 136) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgb(84, 106, 182), inset 0 0 0 1px rgb(84, 106, 182) !important;
-  --embed-border-start: 2px solid rgb(84, 106, 182) !important;
-  --file-header-background: rgb(239, 233, 231) !important;
-  --file-header-background-focused: rgb(239, 233, 231) !important;
+  --divider-color: hsl(226, 40%, 52%) !important;
+  --divider-color-hover: hsl(226, 40%, 52%) !important;
+  --dropdown-background: hsl(15, 20%, 84%) !important;
+  --dropdown-background-hover: hsl(270, 40%, 38%) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsl(226, 40%, 52%), inset 0 0 0 1px hsl(226, 40%, 52%) !important;
+  --embed-border-start: 2px solid hsl(226, 40%, 52%) !important;
+  --file-header-background: hsl(15, 20%, 92%) !important;
+  --file-header-background-focused: hsl(15, 20%, 92%) !important;
   --file-header-font: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: rgb(222, 210, 206) !important;
-  --flair-color: rgb(38, 34, 38) !important;
+  --flair-background: hsl(15, 20%, 84%) !important;
+  --flair-color: hsl(300,  6%, 14%) !important;
   --font-headings: 'Tahoma', serif !important;
   --font-interface: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-title: 'Jomhuria', 'Source Sans Pro', sans-serif !important;
-  --footnote-divider-color: rgb(84, 106, 182) !important;
-  --footnote-id-color: rgb(59, 53, 59) !important;
-  --footnote-id-color-no-occurrences: rgb(81, 72, 81) !important;
+  --footnote-divider-color: hsl(226, 40%, 52%) !important;
+  --footnote-id-color: hsl(300,  6%, 22%) !important;
+  --footnote-id-color-no-occurrences: hsl(300,  6%, 30%) !important;
   --frost0: 226, 40%, 44% !important;
   --frost1: 226, 40%, 48% !important;
   --frost2: 226, 40%, 52% !important;
   --frost3: 226, 40%, 56% !important;
   --frost4: 226, 40%, 60% !important;
   --frost5: 226, 40%, 64% !important;
-  --graph-node: rgb(59, 53, 59) !important;
+  --graph-node: hsl(300,  6%, 22%) !important;
   --graph-node-attachment: 45, 50%, 44% !important;
-  --graph-node-focused: rgb(84, 106, 182) !important;
+  --graph-node-focused: hsl(226, 40%, 52%) !important;
   --graph-node-tag: 108, 40%, 42% !important;
-  --graph-node-unresolved: rgb(81, 72, 81) !important;
-  --graph-text: rgb(38, 34, 38) !important;
-  --gray: rgb(59, 53, 59) !important;
+  --graph-node-unresolved: hsl(300,  6%, 30%) !important;
+  --graph-text: hsl(300,  6%, 14%) !important;
+  --gray: hsl(300,  6%, 22%) !important;
   --green0: 108, 40%, 34% !important;
   --green1: 108, 40%, 38% !important;
   --green2: 108, 40%, 42% !important;
@@ -1367,104 +1416,104 @@ html[saved-theme="dark"] body sup {
   --green4: 108, 40%, 50% !important;
   --green5: 108, 40%, 54% !important;
   --headerFont: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgb(81, 72, 81) !important;
-  --highlight: rgb(168, 140, 56) !important;
-  --hr-color: rgb(84, 106, 182) !important;
-  --icon-color: rgb(59, 53, 59) !important;
-  --icon-color-active: rgb(84, 106, 182) !important;
-  --icon-color-focused: rgb(38, 34, 38) !important;
-  --icon-color-hover: rgb(59, 53, 59) !important;
+  --heading-formatting: hsl(300,  6%, 30%) !important;
+  --highlight: hsl(45, 50%, 44%) !important;
+  --hr-color: hsl(226, 40%, 52%) !important;
+  --icon-color: hsl(300,  6%, 22%) !important;
+  --icon-color-active: hsl(226, 40%, 52%) !important;
+  --icon-color-focused: hsl(300,  6%, 14%) !important;
+  --icon-color-hover: hsl(300,  6%, 22%) !important;
   --indigo0: 270, 40%, 30% !important;
   --indigo1: 270, 40%, 34% !important;
   --indigo2: 270, 40%, 38% !important;
   --indigo3: 270, 40%, 42% !important;
   --indigo4: 270, 40%, 46% !important;
   --indigo5: 270, 40%, 50% !important;
-  --input-date-separator: rgb(81, 72, 81) !important;
-  --input-placeholder-color: rgb(81, 72, 81) !important;
-  --interactive-accent: rgb(84, 106, 182) !important;
-  --interactive-accent-hover: rgb(97, 58, 136) !important;
-  --interactive-hover: rgb(97, 58, 136) !important;
-  --interactive-normal: rgb(222, 210, 206) !important;
+  --input-date-separator: hsl(300,  6%, 30%) !important;
+  --input-placeholder-color: hsl(300,  6%, 30%) !important;
+  --interactive-accent: hsl(226, 40%, 52%) !important;
+  --interactive-accent-hover: hsl(270, 40%, 38%) !important;
+  --interactive-hover: hsl(270, 40%, 38%) !important;
+  --interactive-normal: hsl(15, 20%, 84%) !important;
   --letterspacing-text-headers: 1.2px !important;
   --letterspacing-text-p: 1px !important;
-  --light: rgb(239, 233, 231) !important;
-  --lightgray: rgb(231, 221, 218) !important;
-  --link-color: rgb(84, 106, 182) !important;
-  --link-color-hover: rgb(97, 58, 136) !important;
-  --link-external-color: rgb(84, 106, 182) !important;
-  --link-external-color-hover: rgb(97, 58, 136) !important;
-  --link-unresolved-color: rgb(84, 106, 182) !important;
-  --list-marker-color: rgb(81, 72, 81) !important;
-  --list-marker-color-collapsed: rgb(84, 106, 182) !important;
-  --list-marker-color-hover: rgb(59, 53, 59) !important;
-  --menu-background: rgb(231, 221, 218) !important;
-  --metadata-border-color: rgb(84, 106, 182) !important;
-  --metadata-divider-color: rgb(84, 106, 182) !important;
+  --light: hsl(15, 20%, 92%) !important;
+  --lightgray: hsl(15, 20%, 88%) !important;
+  --link-color: hsl(226, 40%, 52%) !important;
+  --link-color-hover: hsl(270, 40%, 38%) !important;
+  --link-external-color: hsl(226, 40%, 52%) !important;
+  --link-external-color-hover: hsl(270, 40%, 38%) !important;
+  --link-unresolved-color: hsl(226, 40%, 52%) !important;
+  --list-marker-color: hsl(300,  6%, 30%) !important;
+  --list-marker-color-collapsed: hsl(226, 40%, 52%) !important;
+  --list-marker-color-hover: hsl(300,  6%, 22%) !important;
+  --menu-background: hsl(15, 20%, 88%) !important;
+  --metadata-border-color: hsl(226, 40%, 52%) !important;
+  --metadata-divider-color: hsl(226, 40%, 52%) !important;
   --metadata-input-font: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: rgb(38, 34, 38) !important;
+  --metadata-input-text-color: hsl(300,  6%, 14%) !important;
   --metadata-label-font: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: rgb(59, 53, 59) !important;
-  --metadata-label-text-color-hover: rgb(59, 53, 59) !important;
-  --modal-background: rgb(239, 233, 231) !important;
+  --metadata-label-text-color: hsl(300,  6%, 22%) !important;
+  --metadata-label-text-color-hover: hsl(300,  6%, 22%) !important;
+  --modal-background: hsl(15, 20%, 92%) !important;
   --moonstone0: 189, 40%, 34% !important;
   --moonstone1: 189, 40%, 38% !important;
   --moonstone2: 189, 40%, 42% !important;
   --moonstone3: 189, 40%, 46% !important;
   --moonstone4: 189, 40%, 50% !important;
   --moonstone5: 189, 40%, 54% !important;
-  --nav-collapse-icon-color: rgb(81, 72, 81) !important;
-  --nav-collapse-icon-color-collapsed: rgb(81, 72, 81) !important;
-  --nav-heading-color: rgb(38, 34, 38) !important;
-  --nav-heading-color-collapsed: rgb(81, 72, 81) !important;
-  --nav-heading-color-collapsed-hover: rgb(59, 53, 59) !important;
-  --nav-heading-color-hover: rgb(38, 34, 38) !important;
-  --nav-item-color: rgb(59, 53, 59) !important;
-  --nav-item-color-active: rgb(38, 34, 38) !important;
-  --nav-item-color-highlighted: rgb(84, 106, 182) !important;
-  --nav-item-color-hover: rgb(38, 34, 38) !important;
-  --nav-item-color-selected: rgb(38, 34, 38) !important;
-  --nav-tag-color: rgb(81, 72, 81) !important;
-  --nav-tag-color-active: rgb(59, 53, 59) !important;
-  --nav-tag-color-hover: rgb(59, 53, 59) !important;
+  --nav-collapse-icon-color: hsl(300,  6%, 30%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(300,  6%, 30%) !important;
+  --nav-heading-color: hsl(300,  6%, 14%) !important;
+  --nav-heading-color-collapsed: hsl(300,  6%, 30%) !important;
+  --nav-heading-color-collapsed-hover: hsl(300,  6%, 22%) !important;
+  --nav-heading-color-hover: hsl(300,  6%, 14%) !important;
+  --nav-item-color: hsl(300,  6%, 22%) !important;
+  --nav-item-color-active: hsl(300,  6%, 14%) !important;
+  --nav-item-color-highlighted: hsl(226, 40%, 52%) !important;
+  --nav-item-color-hover: hsl(300,  6%, 14%) !important;
+  --nav-item-color-selected: hsl(300,  6%, 14%) !important;
+  --nav-tag-color: hsl(300,  6%, 30%) !important;
+  --nav-tag-color-active: hsl(300,  6%, 22%) !important;
+  --nav-tag-color-hover: hsl(300,  6%, 22%) !important;
   --night0: 300,  6%, 10% !important;
   --night1: 300,  6%, 14% !important;
   --night2: 300,  6%, 18% !important;
   --night3: 300,  6%, 22% !important;
   --night4: 300,  6%, 26% !important;
   --night5: 300,  6%, 30% !important;
-  --pdf-background: rgb(239, 233, 231) !important;
-  --pdf-page-background: rgb(239, 233, 231) !important;
-  --pdf-sidebar-background: rgb(239, 233, 231) !important;
+  --pdf-background: hsl(15, 20%, 92%) !important;
+  --pdf-page-background: hsl(15, 20%, 92%) !important;
+  --pdf-sidebar-background: hsl(15, 20%, 92%) !important;
   --peach0: 22, 50%, 40% !important;
   --peach1: 22, 50%, 44% !important;
   --peach2: 21, 50%, 48% !important;
   --peach3: 21, 50%, 52% !important;
   --peach4: 21, 50%, 56% !important;
   --peach5: 22, 50%, 60% !important;
-  --pill-border-color: rgb(84, 106, 182) !important;
-  --pill-color: rgb(59, 53, 59) !important;
-  --pill-color-hover: rgb(38, 34, 38) !important;
-  --pill-color-remove: rgb(81, 72, 81) !important;
-  --pill-color-remove-hover: rgb(84, 106, 182) !important;
+  --pill-border-color: hsl(226, 40%, 52%) !important;
+  --pill-color: hsl(300,  6%, 22%) !important;
+  --pill-color-hover: hsl(300,  6%, 14%) !important;
+  --pill-color-remove: hsl(300,  6%, 30%) !important;
+  --pill-color-remove-hover: hsl(226, 40%, 52%) !important;
   --pink0: 316, 50%, 60% !important;
   --pink1: 316, 50%, 64% !important;
   --pink2: 316, 50%, 68% !important;
   --pink3: 316, 50%, 72% !important;
   --pink4: 315, 50%, 76% !important;
   --pink5: 316, 50%, 80% !important;
-  --prompt-background: rgb(239, 233, 231) !important;
-  --raised-background: color-mix(in srgb, rgb(239, 233, 231) 65%, transparent) linear-gradient(rgb(239, 233, 231), color-mix(in srgb, rgb(239, 233, 231) 65%, transparent)) !important;
-  --ribbon-background: rgb(231, 221, 218) !important;
-  --ribbon-background-collapsed: rgb(239, 233, 231) !important;
-  --scrollbar-active-thumb-bg: rgb(97, 58, 136) !important;
-  --search-clear-button-color: rgb(59, 53, 59) !important;
-  --search-icon-color: rgb(59, 53, 59) !important;
-  --search-result-background: rgb(239, 233, 231) !important;
-  --secondary: rgb(84, 106, 182) !important;
-  --setting-group-heading-color: rgb(38, 34, 38) !important;
-  --setting-items-background: rgb(231, 221, 218) !important;
-  --setting-items-border-color: rgb(84, 106, 182) !important;
+  --prompt-background: hsl(15, 20%, 92%) !important;
+  --raised-background: color-mix(in srgb, hsl(15, 20%, 92%) 65%, transparent) linear-gradient(hsl(15, 20%, 92%), color-mix(in srgb, hsl(15, 20%, 92%) 65%, transparent)) !important;
+  --ribbon-background: hsl(15, 20%, 88%) !important;
+  --ribbon-background-collapsed: hsl(15, 20%, 92%) !important;
+  --scrollbar-active-thumb-bg: hsl(270, 40%, 38%) !important;
+  --search-clear-button-color: hsl(300,  6%, 22%) !important;
+  --search-icon-color: hsl(300,  6%, 22%) !important;
+  --search-result-background: hsl(15, 20%, 92%) !important;
+  --secondary: hsl(226, 40%, 52%) !important;
+  --setting-group-heading-color: hsl(300,  6%, 14%) !important;
+  --setting-items-background: hsl(15, 20%, 88%) !important;
+  --setting-items-border-color: hsl(226, 40%, 52%) !important;
   --size-icon: 15px !important;
   --size-text-h1: 3em !important;
   --size-text-h2: 30px !important;
@@ -1474,11 +1523,11 @@ html[saved-theme="dark"] body sup {
   --size-text-h6: 18px !important;
   --size-text-p: 15px !important;
   --size-text-title: 5em !important;
-  --slider-track-background: rgb(84, 106, 182) !important;
-  --status-bar-background: rgb(231, 221, 218) !important;
-  --status-bar-border-color: rgb(84, 106, 182) !important;
-  --status-bar-text-color: rgb(59, 53, 59) !important;
-  --suggestion-background: rgb(239, 233, 231) !important;
+  --slider-track-background: hsl(226, 40%, 52%) !important;
+  --status-bar-background: hsl(15, 20%, 88%) !important;
+  --status-bar-border-color: hsl(226, 40%, 52%) !important;
+  --status-bar-text-color: hsl(300,  6%, 22%) !important;
+  --suggestion-background: hsl(15, 20%, 92%) !important;
   --sync-avatar-color-1: 346, 50%, 32% !important;
   --sync-avatar-color-2: 22, 50%, 40% !important;
   --sync-avatar-color-3: 45, 50%, 44% !important;
@@ -1487,53 +1536,53 @@ html[saved-theme="dark"] body sup {
   --sync-avatar-color-6: 226, 40%, 52% !important;
   --sync-avatar-color-7: 270, 40%, 38% !important;
   --sync-avatar-color-8: 316, 50%, 68% !important;
-  --tab-background-active: rgb(239, 233, 231) !important;
-  --tab-container-background: rgb(231, 221, 218) !important;
-  --tab-outline-color: rgb(84, 106, 182) !important;
-  --tab-switcher-background: rgb(231, 221, 218) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(231, 221, 218), transparent) !important;
-  --tab-text-color: rgb(81, 72, 81) !important;
-  --tab-text-color-active: rgb(97, 58, 136) !important;
-  --tab-text-color-focused: rgb(59, 53, 59) !important;
-  --tab-text-color-focused-active: rgb(59, 53, 59) !important;
-  --tab-text-color-focused-active-current: rgb(153, 88, 51) !important;
-  --tab-text-color-focused-highlighted: rgb(84, 106, 182) !important;
-  --table-add-button-border-color: rgb(84, 106, 182) !important;
-  --table-border-color: rgb(84, 106, 182) !important;
-  --table-drag-handle-background-active: rgb(84, 106, 182) !important;
-  --table-drag-handle-color: rgb(81, 72, 81) !important;
-  --table-header-border-color: rgb(84, 106, 182) !important;
-  --table-header-color: rgb(38, 34, 38) !important;
-  --table-selection-border-color: rgb(84, 106, 182) !important;
-  --tag-color: rgb(84, 106, 182) !important;
-  --tag-color-hover: rgb(84, 106, 182) !important;
+  --tab-background-active: hsl(15, 20%, 92%) !important;
+  --tab-container-background: hsl(15, 20%, 88%) !important;
+  --tab-outline-color: hsl(226, 40%, 52%) !important;
+  --tab-switcher-background: hsl(15, 20%, 88%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(15, 20%, 88%), transparent) !important;
+  --tab-text-color: hsl(300,  6%, 30%) !important;
+  --tab-text-color-active: hsl(270, 40%, 38%) !important;
+  --tab-text-color-focused: hsl(300,  6%, 22%) !important;
+  --tab-text-color-focused-active: hsl(300,  6%, 22%) !important;
+  --tab-text-color-focused-active-current: hsl(22, 50%, 40%) !important;
+  --tab-text-color-focused-highlighted: hsl(226, 40%, 52%) !important;
+  --table-add-button-border-color: hsl(226, 40%, 52%) !important;
+  --table-border-color: hsl(226, 40%, 52%) !important;
+  --table-drag-handle-background-active: hsl(226, 40%, 52%) !important;
+  --table-drag-handle-color: hsl(300,  6%, 30%) !important;
+  --table-header-border-color: hsl(226, 40%, 52%) !important;
+  --table-header-color: hsl(300,  6%, 14%) !important;
+  --table-selection-border-color: hsl(226, 40%, 52%) !important;
+  --tag-color: hsl(226, 40%, 52%) !important;
+  --tag-color-hover: hsl(226, 40%, 52%) !important;
   --teal0: 160, 50%, 34% !important;
   --teal1: 160, 50%, 38% !important;
   --teal2: 160, 50%, 42% !important;
   --teal3: 160, 50%, 46% !important;
   --teal4: 160, 50%, 50% !important;
   --teal5: 168, 50%, 54% !important;
-  --tertiary: rgb(97, 58, 136) !important;
-  --text-accent: rgb(84, 106, 182) !important;
-  --text-accent-hover: rgb(97, 58, 136) !important;
+  --tertiary: hsl(270, 40%, 38%) !important;
+  --text-accent: hsl(226, 40%, 52%) !important;
+  --text-accent-hover: hsl(270, 40%, 38%) !important;
   --text-error: 346, 50%, 32% !important;
-  --text-faint: rgb(81, 72, 81) !important;
-  --text-highlight-bg: rgb(168, 140, 56) !important;
-  --text-highlight-bg-active: rgb(153, 88, 51) !important;
-  --text-muted: rgb(59, 53, 59) !important;
-  --text-normal: rgb(38, 34, 38) !important;
-  --text-selection: rgb(168, 140, 56) !important;
+  --text-faint: hsl(300,  6%, 30%) !important;
+  --text-highlight-bg: hsl(45, 50%, 44%) !important;
+  --text-highlight-bg-active: hsl(22, 50%, 40%) !important;
+  --text-muted: hsl(300,  6%, 22%) !important;
+  --text-normal: hsl(300,  6%, 14%) !important;
+  --text-selection: hsl(45, 50%, 44%) !important;
   --text-success: 108, 40%, 42% !important;
   --text-warning: 22, 50%, 40% !important;
-  --textHighlight: rgb(168, 140, 56) !important;
+  --textHighlight: hsl(45, 50%, 44%) !important;
   --titleFont: Consolas, Source Sans Pro, Segoe UI Emoji, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: rgb(222, 210, 206) !important;
-  --titlebar-background-focused: rgb(231, 221, 218) !important;
-  --titlebar-border-color: rgb(84, 106, 182) !important;
-  --titlebar-text-color: rgb(59, 53, 59) !important;
-  --titlebar-text-color-focused: rgb(38, 34, 38) !important;
-  --vault-profile-color: rgb(38, 34, 38) !important;
-  --vault-profile-color-hover: rgb(38, 34, 38) !important;
+  --titlebar-background: hsl(15, 20%, 84%) !important;
+  --titlebar-background-focused: hsl(15, 20%, 88%) !important;
+  --titlebar-border-color: hsl(226, 40%, 52%) !important;
+  --titlebar-text-color: hsl(300,  6%, 22%) !important;
+  --titlebar-text-color-focused: hsl(300,  6%, 14%) !important;
+  --vault-profile-color: hsl(300,  6%, 14%) !important;
+  --vault-profile-color-hover: hsl(300,  6%, 14%) !important;
   --weight-bold: 700 !important;
   --weight-extrabold: 800 !important;
   --weight-extralight: 200 !important;
@@ -2013,6 +2062,78 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(38, 34, 38);
   text-decoration: rgb(38, 34, 38);
   text-decoration-color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4-9H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 14a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 12 14m0-1.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-2 0v3a1 1 0 0 0 1 1M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8.01 8.01 0 0 1-8 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M11.29 15.29a1.58 1.58 0 0 0-.12.15a.76.76 0 0 0-.09.18a.64.64 0 0 0-.06.18a1.36 1.36 0 0 0 0 .2a.84.84 0 0 0 .08.38a.9.9 0 0 0 .54.54a.94.94 0 0 0 .76 0a.9.9 0 0 0 .54-.54A1 1 0 0 0 13 16a1 1 0 0 0-.29-.71a1 1 0 0 0-1.42 0M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m0-13a3 3 0 0 0-2.6 1.5a1 1 0 1 0 1.73 1A1 1 0 0 1 12 9a1 1 0 0 1 0 2a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-.18A3 3 0 0 0 12 7'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M22 9.67a1 1 0 0 0-.86-.67l-5.69-.83L12.9 3a1 1 0 0 0-1.8 0L8.55 8.16L2.86 9a1 1 0 0 0-.81.68a1 1 0 0 0 .25 1l4.13 4l-1 5.68a1 1 0 0 0 1.47 1.08l5.1-2.67l5.1 2.67a.93.93 0 0 0 .46.12a1 1 0 0 0 .59-.19a1 1 0 0 0 .4-1l-1-5.68l4.13-4A1 1 0 0 0 22 9.67m-6.15 4a1 1 0 0 0-.29.88l.72 4.2l-3.76-2a1.06 1.06 0 0 0-.94 0l-3.76 2l.72-4.2a1 1 0 0 0-.29-.88l-3-3l4.21-.61a1 1 0 0 0 .76-.55L12 5.7l1.88 3.82a1 1 0 0 0 .76.55l4.21.61Z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M8 19a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3a1 1 0 0 0 0-2a5 5 0 0 0-5 5v8a5 5 0 0 0 5 5a1 1 0 0 0 0-2m7.71-3.29a1 1 0 0 0 0-1.42L13.41 12l2.3-2.29a1 1 0 0 0-1.42-1.42L12 10.59l-2.29-2.3a1 1 0 0 0-1.42 1.42l2.3 2.29l-2.3 2.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l2.29-2.3l2.29 2.3a1 1 0 0 0 1.42 0M16 3a1 1 0 0 0 0 2a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3a1 1 0 0 0 0 2a5 5 0 0 0 5-5V8a5 5 0 0 0-5-5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4-9h-3V8a1 1 0 0 0-2 0v3H8a1 1 0 0 0 0 2h3v3a1 1 0 0 0 2 0v-3h3a1 1 0 0 0 0-2'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M8.29 11.29a1 1 0 0 0-.21.33a1 1 0 0 0 0 .76a1 1 0 0 0 .21.33l3 3a1 1 0 0 0 1.42-1.42L11.41 13H15a1 1 0 0 0 0-2h-3.59l1.3-1.29a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0ZM2 12A10 10 0 1 0 12 2A10 10 0 0 0 2 12m18 0a8 8 0 1 1-8-8a8 8 0 0 1 8 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.71 12.71a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76a1 1 0 0 0-.21-.33l-3-3a1 1 0 0 0-1.42 1.42l1.3 1.29H9a1 1 0 0 0 0 2h3.59l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0ZM22 12a10 10 0 1 0-10 10a10 10 0 0 0 10-10M4 12a8 8 0 1 1 8 8a8 8 0 0 1-8-8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M16 2H8a3 3 0 0 0-3 3v16a1 1 0 0 0 .5.87a1 1 0 0 0 1 0l5.5-3.18l5.5 3.18a1 1 0 0 0 .5.13a1 1 0 0 0 .5-.13A1 1 0 0 0 19 21V5a3 3 0 0 0-3-3m1 17.27l-4.5-2.6a1 1 0 0 0-1 0L7 19.27V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1Z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M19 2H6.27a3 3 0 0 0-2.95 2.46l-1.27 7A3 3 0 0 0 5 15h4.56L9 16.43A4.13 4.13 0 0 0 12.89 22a1 1 0 0 0 .91-.59L16.65 15H19a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3m-4 11.79l-2.72 6.12a2.13 2.13 0 0 1-1.38-2.78l.53-1.43A2 2 0 0 0 9.56 13H5a1 1 0 0 1-.77-.36a1 1 0 0 1-.23-.82l1.27-7a1 1 0 0 1 1-.82H15ZM20 12a1 1 0 0 1-1 1h-2V4h2a1 1 0 0 1 1 1Z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M11.29 15.71a1 1 0 0 0 .33.21a1 1 0 0 0 .76 0a1 1 0 0 0 .33-.21l3-3a1 1 0 0 0-1.42-1.42L13 12.59V9a1 1 0 0 0-2 0v3.59l-1.29-1.3a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.42ZM12 22A10 10 0 1 0 2 12a10 10 0 0 0 10 10m0-18a8 8 0 1 1-8 8a8 8 0 0 1 8-8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m8.468 8.395l-.002.001l-.003.002Zm9.954-.187a1.237 1.237 0 0 0-.23-.175a1 1 0 0 0-1.4.411a5.782 5.782 0 0 1-1.398 1.778a8.664 8.664 0 0 0 .134-1.51a8.714 8.714 0 0 0-4.4-7.582a1 1 0 0 0-1.492.806a7.017 7.017 0 0 1-2.471 4.942l-.23.187a8.513 8.513 0 0 0-1.988 1.863a8.983 8.983 0 0 0 3.656 13.908a1 1 0 0 0 1.377-.926a1.05 1.05 0 0 0-.05-.312a6.977 6.977 0 0 1-.19-2.581a9.004 9.004 0 0 0 4.313 4.016a.997.997 0 0 0 .715.038a8.995 8.995 0 0 0 3.654-14.863m-3.905 12.831a6.964 6.964 0 0 1-3.577-4.402a8.908 8.908 0 0 1-.18-.964a1 1 0 0 0-.799-.845a.982.982 0 0 0-.191-.018a1 1 0 0 0-.867.5a8.959 8.959 0 0 0-1.205 4.718a6.985 6.985 0 0 1-1.176-9.868a6.555 6.555 0 0 1 1.562-1.458a.745.745 0 0 0 .075-.055s.296-.245.306-.25a8.968 8.968 0 0 0 2.9-4.633a6.736 6.736 0 0 1 1.385 8.088a1 1 0 0 0 1.184 1.418a7.856 7.856 0 0 0 3.862-2.688a7 7 0 0 1-3.279 10.457'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8.01 8.01 0 0 1-8 8m0-8.5a1 1 0 0 0-1 1v3a1 1 0 0 0 2 0v-3a1 1 0 0 0-1-1m0-4a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 12 7.5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m21 4.41l.71-.7a1 1 0 1 0-1.42-1.42l-1.4 1.41l-2.83 2.83l-6.31 6.3a5 5 0 1 0 1.42 1.42l5.59-5.6l2.12 2.13a1 1 0 1 0 1.41-1.42l-2.12-2.12l1.42-1.41l.7.7a1 1 0 1 0 1.42-1.41ZM7 20a3 3 0 1 1 3-3a3 3 0 0 1-3 3'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20.46 9.63A8.5 8.5 0 0 0 7.3 3.36a8.56 8.56 0 0 0-3.76 6.27A8.46 8.46 0 0 0 6 16.46l5.3 5.31a1 1 0 0 0 1.42 0L18 16.46a8.46 8.46 0 0 0 2.46-6.83m-3.86 5.42l-4.6 4.6l-4.6-4.6a6.49 6.49 0 0 1-1.87-5.22A6.57 6.57 0 0 1 8.42 5a6.47 6.47 0 0 1 7.16 0a6.57 6.57 0 0 1 2.89 4.81a6.49 6.49 0 0 1-1.87 5.24M12 6a4.5 4.5 0 1 0 4.5 4.5A4.51 4.51 0 0 0 12 6m0 7a2.5 2.5 0 1 1 2.5-2.5A2.5 2.5 0 0 1 12 13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M21.3 10.08A3 3 0 0 0 19 9h-4.56L15 7.57A4.13 4.13 0 0 0 11.11 2a1 1 0 0 0-.91.59L7.35 9H5a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h12.73a3 3 0 0 0 2.95-2.46l1.27-7a3 3 0 0 0-.65-2.46M7 20H5a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h2Zm13-7.82l-1.27 7a1 1 0 0 1-1 .82H9v-9.79l2.72-6.12a2.11 2.11 0 0 1 1.38 2.78l-.53 1.43a2 2 0 0 0 1.87 2.7H19a1 1 0 0 1 .77.36a1 1 0 0 1 .23.82'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M14.36 14.23a3.76 3.76 0 0 1-4.72 0a1 1 0 0 0-1.28 1.54a5.68 5.68 0 0 0 7.28 0a1 1 0 1 0-1.28-1.54M9 11a1 1 0 1 0-1-1a1 1 0 0 0 1 1m6-2a1 1 0 1 0 1 1a1 1 0 0 0-1-1m-3-7a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12.71 8.29a1 1 0 0 0-.33-.21a1 1 0 0 0-.76 0a1 1 0 0 0-.33.21l-3 3a1 1 0 0 0 1.42 1.42l1.29-1.3V15a1 1 0 0 0 2 0v-3.59l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(231, 221, 218);
@@ -2179,29 +2300,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   font-family: "??", "??", Consolas, "Source Sans Pro", "Segoe UI Emoji", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 900;
   text-decoration: rgb(59, 53, 59);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(59, 53, 59);
-  font-family: "??", "??", Consolas, "Source Sans Pro", "Segoe UI Emoji", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(59, 53, 59);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(247, 244, 243);
-  border-bottom-color: rgb(231, 221, 218);
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: rgb(231, 221, 218);
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-right-color: rgb(231, 221, 218);
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: rgb(231, 221, 218);
-  border-top-style: solid;
-  border-top-width: 1px;
-  color: rgb(153, 88, 51);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
   font-weight: 900;

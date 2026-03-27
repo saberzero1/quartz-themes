@@ -2180,8 +2180,10 @@ li.is-collapsed .list-bullet:after,
 }
 /* #endregion */
 /* #region     Embeds */
-/* Default appearance for embeds */
-.internal-embed,
+.markdown-embed .markdown-embed-content,
+.bases-embed,
+.pdf-embed,
+.media-embed,
 .internal-query {
   background-color: var(--embed-background);
   border-bottom: var(--embed-border-bottom);
@@ -2240,7 +2242,7 @@ body.theme-setting-embeddedNoteTitleVisibilityShow .embed-title {
 .markdown-source-view.mod-cm6
   .cm-content
   > .markdown-embed[contenteditable="false"]:has(.markdown-embed-link) {
-  contain: layout !important;
+  position: relative;
 }
 .markdown-embed-link {
   position: absolute;
@@ -2461,7 +2463,7 @@ audio::-webkit-media-controls-panel {
 }
 body:not(.is-mobile) {
   .cm-content .cm-embed-block[contenteditable="false"]:has(.edit-block-button) {
-    contain: layout !important;
+    position: relative;
   }
   /* Move edit controls to the sidebar outside the block */
   .cm-content .cm-embed-block .edit-block-button,
@@ -4605,9 +4607,7 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   margin: 0;
   position: relative;
 }
-/* These are set the same so we can use consistent em unites for spacing */
-.tree-item-self,
-.tree-item-children {
+.tree-item-self {
   font-size: var(--nav-item-size);
 }
 /* #endregion */
@@ -6143,29 +6143,41 @@ body.theme-setting-enableIconsInSettings {
 }
 
 
-
-
-
-
-/* TODO: QA test for this new code */
-
 .markdown-source-view.is-live-preview.mod-cm6.is-readable-line-width .cm-content {
   width: 100%;
   max-width: 100%;
 
-  > div {
-    /* TODO: need to redefine --file-line-width so it's based on root character width, not base don current font size */
-    margin: 0 auto !important;
-    max-width: var(--file-line-width);
+  > div:not(.cm-table-widget) {
+    box-sizing: border-box;
+    padding-inline: max(1rem, calc((100% - var(--file-line-width)) / 2));
+  }
+
+  > .cm-table-widget {
+    padding-inline: 0;
+
+    > .table-wrapper {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: var(--file-line-width);
+    }
   }
 }
-.markdown-preview-view .markdown-preview-sizer {
-  > div {
-    margin: 0 auto !important;
-    max-width: var(--file-line-width);
-    padding: 0 2rem;
 
+
+.markdown-preview-view .markdown-preview-sizer {
+  > div:not(.el-table) {
+    box-sizing: border-box;
+    padding-inline: max(2rem, calc((100% - var(--file-line-width)) / 2));
   }
+  > .el-table {
+    padding-inline: 0;
+
+    > table {
+      margin: 0 auto;
+      max-width: var(--file-line-width);
+    }
+  }
+
   > div.mod-header,
   > div.mod-footer {
     margin: 0;
@@ -6177,30 +6189,16 @@ body.theme-setting-enableIconsInSettings {
 /* Allow tables to extend into the left and right margins */
 .theme-setting-wideTables {
   .markdown-source-view.is-live-preview.mod-cm6.is-readable-line-width .cm-content {
-    > .cm-table-widget {
+    > .cm-table-widget > .table-wrapper {
       max-width: 100%;
-
-      > .table-wrapper {
-        margin: 0 auto;
-      }
     }
   }
   .markdown-preview-view .markdown-preview-sizer {
-    > .el-table {
+    > .el-table > table {
       max-width: 100%;
-
-      > table {
-        margin: 0 auto;
-      }
     }
   }
 }
-
-
-
-
-
-
 
 .markdown-rendered .mod-header {
   margin-bottom: 3rem;
@@ -6208,13 +6206,12 @@ body.theme-setting-enableIconsInSettings {
 .is-phone .markdown-rendered .mod-header {
   margin-bottom: 0;
 }
-/* Override inline styles */
+/* Override inline styles — Obsidian injects a large padding-bottom on these
+   as inline styles; zero it out so the page ends where content ends */
 .cm-content {
-  /* Live Preview */
   padding-bottom: 0 !important;
 }
 .markdown-preview-sizer {
-  /* Reading Mode */
   padding-bottom: 0 !important;
 }
 

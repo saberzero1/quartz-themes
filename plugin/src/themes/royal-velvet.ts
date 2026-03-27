@@ -12,74 +12,74 @@ export const theme: ThemeData = {
   --background-modifier-border: transparent !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: transparent !important;
-  --background-modifier-box-shadow: rgb(41, 42, 56) !important;
-  --background-modifier-cover: rgb(20, 20, 26) !important;
-  --background-modifier-error: rgba(255, 149, 128, 0.9) !important;
-  --background-modifier-error-hover: rgb(255, 149, 128) !important;
+  --background-modifier-box-shadow: hsl(235, 15%, 19%) !important;
+  --background-modifier-cover: hsl(235, 15%, 9%) !important;
+  --background-modifier-error: hsla(10, 100%, 75.1%, 0.9) !important;
+  --background-modifier-error-hover: hsl(10, 100%, 75.1%) !important;
   --background-modifier-error-rgb: 61, 0, 0 !important;
-  --background-modifier-form-field: rgba(255, 128, 191, 0.1) !important;
-  --background-modifier-form-field-highlighted: rgba(255, 128, 191, 0.3) !important;
-  --background-modifier-form-field-hover: rgba(255, 128, 191, 0.1) !important;
-  --background-modifier-success: rgba(138, 255, 128, 0.2) !important;
-  --background-primary: rgb(33, 33, 44) !important;
-  --background-primary-alt: rgb(28, 29, 38) !important;
-  --background-secondary: rgb(28, 29, 38) !important;
-  --background-secondary-alt: rgb(20, 20, 26) !important;
-  --bases-cards-background: rgb(33, 33, 44) !important;
-  --bases-cards-cover-background: rgb(28, 29, 38) !important;
+  --background-modifier-form-field: hsla(330, 100%, 75.1%, 0.1) !important;
+  --background-modifier-form-field-highlighted: hsla(330, 100%, 75.1%, 0.3) !important;
+  --background-modifier-form-field-hover: hsla(330, 100%, 75.1%, 0.1) !important;
+  --background-modifier-success: hsla(115, 100%, 75.1%, 0.2) !important;
+  --background-primary: hsl(235, 15%, 15%) !important;
+  --background-primary-alt: hsl(235, 15%, 13%) !important;
+  --background-secondary: hsl(235, 15%, 13%) !important;
+  --background-secondary-alt: hsl(235, 15%, 9%) !important;
+  --bases-cards-background: hsl(235, 15%, 15%) !important;
+  --bases-cards-cover-background: hsl(235, 15%, 13%) !important;
   --bases-cards-shadow: 0 0 0 1px transparent !important;
   --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
   --bases-embed-border-color: transparent !important;
-  --bases-group-heading-property-color: rgba(248, 248, 242, 0.6) !important;
+  --bases-group-heading-property-color: hsla(60, 30%, 96%, 0.6) !important;
   --bases-table-border-color: transparent !important;
-  --bases-table-cell-background-active: rgb(33, 33, 44) !important;
-  --bases-table-cell-background-disabled: rgb(28, 29, 38) !important;
+  --bases-table-cell-background-active: hsl(235, 15%, 15%) !important;
+  --bases-table-cell-background-disabled: hsl(235, 15%, 13%) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px transparent !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(255, 128, 191) !important;
-  --bases-table-group-background: rgb(28, 29, 38) !important;
-  --bases-table-header-background: rgb(33, 33, 44) !important;
-  --bases-table-header-color: rgba(248, 248, 242, 0.6) !important;
-  --bases-table-summary-background: rgb(33, 33, 44) !important;
-  --blockquote-border: rgb(255, 149, 128) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(330, 100%, 75.1%) !important;
+  --bases-table-group-background: hsl(235, 15%, 13%) !important;
+  --bases-table-header-background: hsl(235, 15%, 15%) !important;
+  --bases-table-header-color: hsla(60, 30%, 96%, 0.6) !important;
+  --bases-table-summary-background: hsl(235, 15%, 15%) !important;
+  --blockquote-border: hsl(10, 100%, 75.1%) !important;
   --blockquote-border-color: none !important;
-  --blue: rgb(128, 255, 234) !important;
-  --blue-600: rgba(128, 255, 234, 0.6) !important;
+  --blue: hsl(170, 100%, 75.1%) !important;
+  --blue-600: hsla(170, 100%, 75.1%, 0.6) !important;
   --blue-hue: 170 !important;
   --blue-secondary-tuple: 170, 100%, 90% !important;
   --blue-tuple: 170, 100%, 75.1% !important;
-  --blur-background: color-mix(in srgb, rgb(28, 29, 38) 65%, transparent) linear-gradient(rgb(28, 29, 38), color-mix(in srgb, rgb(28, 29, 38) 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, hsl(235, 15%, 13%) 65%, transparent) linear-gradient(hsl(235, 15%, 13%), color-mix(in srgb, hsl(235, 15%, 13%) 65%, transparent)) !important;
   --bodyFont: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --canvas-background: rgb(33, 33, 44) !important;
-  --canvas-card-label-color: rgba(248, 248, 242, 0.6) !important;
-  --caret-color: rgb(248, 248, 242) !important;
-  --checkbox-border-color: rgba(248, 248, 242, 0.6) !important;
-  --checkbox-border-color-hover: rgba(248, 248, 242, 0.6) !important;
-  --checkbox-color: rgb(255, 128, 191) !important;
-  --checkbox-color-hover: rgba(248, 248, 242, 0.6) !important;
-  --checkbox-marker-color: rgb(33, 33, 44) !important;
-  --checklist-done-color: rgba(248, 248, 242, 0.6) !important;
-  --code-background: rgb(28, 29, 38) !important;
+  --canvas-background: hsl(235, 15%, 15%) !important;
+  --canvas-card-label-color: hsla(60, 30%, 96%, 0.6) !important;
+  --caret-color: hsl(60, 30%, 96%) !important;
+  --checkbox-border-color: hsla(60, 30%, 96%, 0.6) !important;
+  --checkbox-border-color-hover: hsla(60, 30%, 96%, 0.6) !important;
+  --checkbox-color: hsl(330, 100%, 75.1%) !important;
+  --checkbox-color-hover: hsla(60, 30%, 96%, 0.6) !important;
+  --checkbox-marker-color: hsl(235, 15%, 15%) !important;
+  --checklist-done-color: hsla(60, 30%, 96%, 0.6) !important;
+  --code-background: hsl(235, 15%, 13%) !important;
   --code-border-color: transparent !important;
-  --code-comment: rgba(248, 248, 242, 0.6) !important;
-  --code-normal: rgb(223, 128, 255) !important;
-  --code-punctuation: rgba(248, 248, 242, 0.6) !important;
+  --code-comment: hsla(60, 30%, 96%, 0.6) !important;
+  --code-normal: hsl(285, 100%, 75.1%) !important;
+  --code-punctuation: hsla(60, 30%, 96%, 0.6) !important;
   --code-size: 1em !important;
   --codeFont: "Fira Code", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color: rgba(248, 248, 242, 0.6) !important;
-  --collapse-icon-color-collapsed: rgb(255, 128, 191) !important;
-  --dark: rgb(248, 248, 242) !important;
-  --darkgray: rgb(248, 248, 242) !important;
+  --collapse-icon-color: hsla(60, 30%, 96%, 0.6) !important;
+  --collapse-icon-color-collapsed: hsl(330, 100%, 75.1%) !important;
+  --dark: hsl(60, 30%, 96%) !important;
+  --darkgray: hsl(60, 30%, 96%) !important;
   --divider-color: transparent !important;
-  --divider-color-hover: rgb(255, 128, 191) !important;
-  --dropdown-background: rgb(28, 29, 38) !important;
-  --dropdown-background-hover: rgb(20, 20, 26) !important;
+  --divider-color-hover: hsl(330, 100%, 75.1%) !important;
+  --dropdown-background: hsl(235, 15%, 13%) !important;
+  --dropdown-background-hover: hsl(235, 15%, 9%) !important;
   --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
-  --embed-border-start: 2px solid rgb(255, 128, 191) !important;
-  --file-header-background: rgb(33, 33, 44) !important;
-  --file-header-background-focused: rgb(33, 33, 44) !important;
+  --embed-border-start: 2px solid hsl(330, 100%, 75.1%) !important;
+  --file-header-background: hsl(235, 15%, 15%) !important;
+  --file-header-background-focused: hsl(235, 15%, 15%) !important;
   --file-header-font: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: rgb(28, 29, 38) !important;
-  --flair-color: rgb(248, 248, 242) !important;
+  --flair-background: hsl(235, 15%, 13%) !important;
+  --flair-color: hsl(60, 30%, 96%) !important;
   --font-interface: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Fira Sans", sans-serif !important;
   --font-mermaid: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -89,195 +89,195 @@ export const theme: ThemeData = {
   --font-text: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Fira Sans", sans-serif !important;
   --footnote-divider-color: transparent !important;
-  --footnote-id-color: rgba(248, 248, 242, 0.6) !important;
-  --footnote-id-color-no-occurrences: rgba(248, 248, 242, 0.6) !important;
+  --footnote-id-color: hsla(60, 30%, 96%, 0.6) !important;
+  --footnote-id-color-no-occurrences: hsla(60, 30%, 96%, 0.6) !important;
   --gradientDegree: 135deg !important;
-  --graph-node: rgba(248, 248, 242, 0.6) !important;
-  --graph-node-focused: rgb(255, 128, 191) !important;
-  --graph-node-unresolved: rgba(248, 248, 242, 0.6) !important;
-  --graph-text: rgb(248, 248, 242) !important;
-  --gray: rgba(248, 248, 242, 0.6) !important;
-  --green: rgb(138, 255, 128) !important;
-  --green-200: rgba(138, 255, 128, 0.2) !important;
+  --graph-node: hsla(60, 30%, 96%, 0.6) !important;
+  --graph-node-focused: hsl(330, 100%, 75.1%) !important;
+  --graph-node-unresolved: hsla(60, 30%, 96%, 0.6) !important;
+  --graph-text: hsl(60, 30%, 96%) !important;
+  --gray: hsla(60, 30%, 96%, 0.6) !important;
+  --green: hsl(115, 100%, 75.1%) !important;
+  --green-200: hsla(115, 100%, 75.1%, 0.2) !important;
   --green-hue: 115 !important;
   --green-secondary-tuple: 115, 100%, 90% !important;
   --green-tuple: 115, 100%, 75.1% !important;
-  --greenSecondary: rgb(208, 255, 204) !important;
+  --greenSecondary: hsl(115, 100%, 90%) !important;
   --headerFont: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgba(248, 248, 242, 0.6) !important;
-  --highlight: rgba(255, 255, 128, 0.1) !important;
-  --hr-color: rgb(255, 202, 128) !important;
-  --icon-color: rgba(248, 248, 242, 0.6) !important;
-  --icon-color-active: rgb(255, 128, 191) !important;
-  --icon-color-focused: rgb(248, 248, 242) !important;
-  --icon-color-hover: rgba(248, 248, 242, 0.6) !important;
-  --indentation-guide: rgb(65, 67, 88) !important;
+  --heading-formatting: hsla(60, 30%, 96%, 0.6) !important;
+  --highlight: hsla(60, 100%, 75.1%, 0.1) !important;
+  --hr-color: hsl(35, 100%, 75.1%) !important;
+  --icon-color: hsla(60, 30%, 96%, 0.6) !important;
+  --icon-color-active: hsl(330, 100%, 75.1%) !important;
+  --icon-color-focused: hsl(60, 30%, 96%) !important;
+  --icon-color-hover: hsla(60, 30%, 96%, 0.6) !important;
+  --indentation-guide: hsl(235, 15%, 30%) !important;
   --indentation-guide-opacity: 10% !important;
-  --input-date-separator: rgba(248, 248, 242, 0.6) !important;
-  --input-placeholder-color: rgba(248, 248, 242, 0.6) !important;
+  --input-date-separator: hsla(60, 30%, 96%, 0.6) !important;
+  --input-placeholder-color: hsla(60, 30%, 96%, 0.6) !important;
   --input-shadow: none !important;
-  --interactive-accent: rgb(255, 128, 191) !important;
-  --interactive-accent-hover: rgb(255, 202, 128) !important;
-  --interactive-hover: rgb(20, 20, 26) !important;
-  --interactive-normal: rgb(28, 29, 38) !important;
-  --interactive-success: rgb(138, 255, 128) !important;
-  --layer-0: rgb(20, 20, 26) !important;
-  --layer-1: rgb(28, 29, 38) !important;
-  --layer-2: rgb(33, 33, 44) !important;
-  --layer-3: rgb(41, 42, 56) !important;
-  --layer-4: rgb(65, 67, 88) !important;
+  --interactive-accent: hsl(330, 100%, 75.1%) !important;
+  --interactive-accent-hover: hsl(35, 100%, 75.1%) !important;
+  --interactive-hover: hsl(235, 15%, 9%) !important;
+  --interactive-normal: hsl(235, 15%, 13%) !important;
+  --interactive-success: hsl(115, 100%, 75.1%) !important;
+  --layer-0: hsl(235, 15%, 9%) !important;
+  --layer-1: hsl(235, 15%, 13%) !important;
+  --layer-2: hsl(235, 15%, 15%) !important;
+  --layer-3: hsl(235, 15%, 19%) !important;
+  --layer-4: hsl(235, 15%, 30%) !important;
   --layer-hue-sat: 235, 15% !important;
-  --light: rgb(33, 33, 44) !important;
-  --lightgray: rgb(28, 29, 38) !important;
-  --link-color: rgb(255, 202, 128) !important;
-  --link-color-hover: rgb(255, 234, 204) !important;
-  --link-external-color: rgb(138, 255, 128) !important;
-  --link-external-color-hover: rgb(208, 255, 204) !important;
-  --link-unresolved-color: rgba(255, 255, 128, 0.7) !important;
-  --link-unresolved-hover: rgb(255, 255, 128) !important;
-  --list-marker-color: rgba(248, 248, 242, 0.6) !important;
-  --list-marker-color-collapsed: rgb(255, 128, 191) !important;
-  --list-marker-color-hover: rgba(248, 248, 242, 0.6) !important;
-  --menu-background: rgb(28, 29, 38) !important;
+  --light: hsl(235, 15%, 15%) !important;
+  --lightgray: hsl(235, 15%, 13%) !important;
+  --link-color: hsl(35, 100%, 75.1%) !important;
+  --link-color-hover: hsl(35, 100%, 90%) !important;
+  --link-external-color: hsl(115, 100%, 75.1%) !important;
+  --link-external-color-hover: hsl(115, 100%, 90%) !important;
+  --link-unresolved-color: hsla(60, 100%, 75.1%, 0.7) !important;
+  --link-unresolved-hover: hsl(60, 100%, 75.1%) !important;
+  --list-marker-color: hsla(60, 30%, 96%, 0.6) !important;
+  --list-marker-color-collapsed: hsl(330, 100%, 75.1%) !important;
+  --list-marker-color-hover: hsla(60, 30%, 96%, 0.6) !important;
+  --menu-background: hsl(235, 15%, 13%) !important;
   --menu-border-color: transparent !important;
   --metadata-border-color: transparent !important;
   --metadata-divider-color: transparent !important;
   --metadata-input-font: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: rgb(248, 248, 242) !important;
+  --metadata-input-text-color: hsl(60, 30%, 96%) !important;
   --metadata-label-font: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: rgba(248, 248, 242, 0.6) !important;
-  --metadata-label-text-color-hover: rgba(248, 248, 242, 0.6) !important;
+  --metadata-label-text-color: hsla(60, 30%, 96%, 0.6) !important;
+  --metadata-label-text-color-hover: hsla(60, 30%, 96%, 0.6) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px transparent !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
-  --modal-background: rgb(33, 33, 44) !important;
+  --modal-background: hsl(235, 15%, 15%) !important;
   --modal-border-color: transparent !important;
-  --nav-collapse-icon-color: rgba(248, 248, 242, 0.6) !important;
-  --nav-collapse-icon-color-collapsed: rgba(248, 248, 242, 0.6) !important;
-  --nav-heading-color: rgb(248, 248, 242) !important;
-  --nav-heading-color-collapsed: rgba(248, 248, 242, 0.6) !important;
-  --nav-heading-color-collapsed-hover: rgba(248, 248, 242, 0.6) !important;
-  --nav-heading-color-hover: rgb(248, 248, 242) !important;
-  --nav-item-color: rgba(248, 248, 242, 0.6) !important;
-  --nav-item-color-active: rgb(248, 248, 242) !important;
-  --nav-item-color-highlighted: rgb(255, 128, 191) !important;
-  --nav-item-color-hover: rgb(248, 248, 242) !important;
-  --nav-item-color-selected: rgb(248, 248, 242) !important;
-  --nav-tag-color: rgba(248, 248, 242, 0.6) !important;
-  --nav-tag-color-active: rgba(248, 248, 242, 0.6) !important;
-  --nav-tag-color-hover: rgba(248, 248, 242, 0.6) !important;
-  --on-layer: rgb(248, 248, 242) !important;
-  --on-layer-400: rgba(248, 248, 242, 0.4) !important;
-  --on-layer-600: rgba(248, 248, 242, 0.6) !important;
+  --nav-collapse-icon-color: hsla(60, 30%, 96%, 0.6) !important;
+  --nav-collapse-icon-color-collapsed: hsla(60, 30%, 96%, 0.6) !important;
+  --nav-heading-color: hsl(60, 30%, 96%) !important;
+  --nav-heading-color-collapsed: hsla(60, 30%, 96%, 0.6) !important;
+  --nav-heading-color-collapsed-hover: hsla(60, 30%, 96%, 0.6) !important;
+  --nav-heading-color-hover: hsl(60, 30%, 96%) !important;
+  --nav-item-color: hsla(60, 30%, 96%, 0.6) !important;
+  --nav-item-color-active: hsl(60, 30%, 96%) !important;
+  --nav-item-color-highlighted: hsl(330, 100%, 75.1%) !important;
+  --nav-item-color-hover: hsl(60, 30%, 96%) !important;
+  --nav-item-color-selected: hsl(60, 30%, 96%) !important;
+  --nav-tag-color: hsla(60, 30%, 96%, 0.6) !important;
+  --nav-tag-color-active: hsla(60, 30%, 96%, 0.6) !important;
+  --nav-tag-color-hover: hsla(60, 30%, 96%, 0.6) !important;
+  --on-layer: hsl(60, 30%, 96%) !important;
+  --on-layer-400: hsla(60, 30%, 96%, 0.4) !important;
+  --on-layer-600: hsla(60, 30%, 96%, 0.6) !important;
   --on-layer-tuple: 60, 30%, 96% !important;
-  --orange: rgb(255, 202, 128) !important;
-  --orange-100: rgba(255, 202, 128, 0.1) !important;
+  --orange: hsl(35, 100%, 75.1%) !important;
+  --orange-100: hsla(35, 100%, 75.1%, 0.1) !important;
   --orange-hue: 35 !important;
   --orange-secondary-tuple: 35, 100%, 90% !important;
   --orange-tuple: 35, 100%, 75.1% !important;
-  --orangeSecondary: rgb(255, 234, 204) !important;
-  --pdf-background: rgb(33, 33, 44) !important;
-  --pdf-page-background: rgb(33, 33, 44) !important;
+  --orangeSecondary: hsl(35, 100%, 90%) !important;
+  --pdf-background: hsl(235, 15%, 15%) !important;
+  --pdf-page-background: hsl(235, 15%, 15%) !important;
   --pdf-shadow: 0 0 0 1px transparent !important;
-  --pdf-sidebar-background: rgb(33, 33, 44) !important;
+  --pdf-sidebar-background: hsl(235, 15%, 15%) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px transparent !important;
   --pill-border-color: transparent !important;
   --pill-border-color-hover: transparent !important;
-  --pill-color: rgba(248, 248, 242, 0.6) !important;
-  --pill-color-hover: rgb(248, 248, 242) !important;
-  --pill-color-remove: rgba(248, 248, 242, 0.6) !important;
-  --pill-color-remove-hover: rgb(255, 128, 191) !important;
-  --pink: rgb(255, 128, 191) !important;
-  --pink-100: rgba(255, 128, 191, 0.1) !important;
-  --pink-300: rgba(255, 128, 191, 0.3) !important;
-  --pink-400: rgba(255, 128, 191, 0.4) !important;
+  --pill-color: hsla(60, 30%, 96%, 0.6) !important;
+  --pill-color-hover: hsl(60, 30%, 96%) !important;
+  --pill-color-remove: hsla(60, 30%, 96%, 0.6) !important;
+  --pill-color-remove-hover: hsl(330, 100%, 75.1%) !important;
+  --pink: hsl(330, 100%, 75.1%) !important;
+  --pink-100: hsla(330, 100%, 75.1%, 0.1) !important;
+  --pink-300: hsla(330, 100%, 75.1%, 0.3) !important;
+  --pink-400: hsla(330, 100%, 75.1%, 0.4) !important;
   --pink-hue: 330 !important;
   --pink-secondary-tuple: 330, 100%, 90% !important;
   --pink-tuple: 330, 100%, 75.1% !important;
-  --pinkSecondary: rgb(255, 204, 230) !important;
+  --pinkSecondary: hsl(330, 100%, 90%) !important;
   --primary-lit: 75.1% !important;
   --primary-sat: 100% !important;
-  --prompt-background: rgb(33, 33, 44) !important;
+  --prompt-background: hsl(235, 15%, 15%) !important;
   --prompt-border-color: transparent !important;
-  --purple: rgb(149, 128, 255) !important;
-  --purple-200: rgba(149, 128, 255, 0.2) !important;
+  --purple: hsl(250, 100%, 75.1%) !important;
+  --purple-200: hsla(250, 100%, 75.1%, 0.2) !important;
   --purple-hue: 250 !important;
-  --purple-pink: rgb(223, 128, 255) !important;
+  --purple-pink: hsl(285, 100%, 75.1%) !important;
   --purple-pink-hue: 285 !important;
   --purple-pink-secondary-tuple: 285, 100%, 90% !important;
   --purple-pink-tuple: 285, 100%, 75.1% !important;
   --purple-secondary-tuple: 250, 100%, 90% !important;
   --purple-tuple: 250, 100%, 75.1% !important;
-  --raised-background: color-mix(in srgb, rgb(28, 29, 38) 65%, transparent) linear-gradient(rgb(28, 29, 38), color-mix(in srgb, rgb(28, 29, 38) 65%, transparent)) !important;
-  --red: rgb(255, 149, 128) !important;
-  --red-900: rgba(255, 149, 128, 0.9) !important;
+  --raised-background: color-mix(in srgb, hsl(235, 15%, 13%) 65%, transparent) linear-gradient(hsl(235, 15%, 13%), color-mix(in srgb, hsl(235, 15%, 13%) 65%, transparent)) !important;
+  --red: hsl(10, 100%, 75.1%) !important;
+  --red-900: hsla(10, 100%, 75.1%, 0.9) !important;
   --red-hue: 10 !important;
   --red-secondary-tuple: 10, 100%, 90% !important;
   --red-tuple: 10, 100%, 75.1% !important;
-  --ribbon-background: rgb(20, 20, 26) !important;
-  --ribbon-background-collapsed: rgb(20, 20, 26) !important;
-  --scrollbar-active-thumb-bg: rgba(255, 128, 191, 0.3) !important;
-  --scrollbar-bg: rgb(33, 33, 44) !important;
-  --scrollbar-thumb-bg: rgba(255, 128, 191, 0.1) !important;
-  --search-clear-button-color: rgba(248, 248, 242, 0.6) !important;
-  --search-icon-color: rgba(248, 248, 242, 0.6) !important;
-  --search-result-background: rgb(33, 33, 44) !important;
-  --secondary: rgb(255, 128, 191) !important;
+  --ribbon-background: hsl(235, 15%, 9%) !important;
+  --ribbon-background-collapsed: hsl(235, 15%, 9%) !important;
+  --scrollbar-active-thumb-bg: hsla(330, 100%, 75.1%, 0.3) !important;
+  --scrollbar-bg: hsl(235, 15%, 15%) !important;
+  --scrollbar-thumb-bg: hsla(330, 100%, 75.1%, 0.1) !important;
+  --search-clear-button-color: hsla(60, 30%, 96%, 0.6) !important;
+  --search-icon-color: hsla(60, 30%, 96%, 0.6) !important;
+  --search-result-background: hsl(235, 15%, 15%) !important;
+  --secondary: hsl(330, 100%, 75.1%) !important;
   --secondary-lit: 90% !important;
   --secondary-sat: 100% !important;
-  --setting-group-heading-color: rgb(248, 248, 242) !important;
-  --setting-items-background: rgb(28, 29, 38) !important;
+  --setting-group-heading-color: hsl(60, 30%, 96%) !important;
+  --setting-items-background: hsl(235, 15%, 13%) !important;
   --setting-items-border-color: transparent !important;
   --slider-thumb-border-color: transparent !important;
   --slider-track-background: transparent !important;
-  --status-bar-background: rgb(28, 29, 38) !important;
+  --status-bar-background: hsl(235, 15%, 13%) !important;
   --status-bar-border-color: transparent !important;
-  --status-bar-text-color: rgba(248, 248, 242, 0.6) !important;
-  --suggestion-background: rgb(33, 33, 44) !important;
-  --tab-background-active: rgb(33, 33, 44) !important;
-  --tab-container-background: rgb(28, 29, 38) !important;
+  --status-bar-text-color: hsla(60, 30%, 96%, 0.6) !important;
+  --suggestion-background: hsl(235, 15%, 15%) !important;
+  --tab-background-active: hsl(235, 15%, 15%) !important;
+  --tab-container-background: hsl(235, 15%, 13%) !important;
   --tab-divider-color: transparent !important;
   --tab-outline-color: transparent !important;
-  --tab-switcher-background: rgb(28, 29, 38) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(28, 29, 38), transparent) !important;
-  --tab-text-color: rgba(248, 248, 242, 0.6) !important;
-  --tab-text-color-active: rgba(248, 248, 242, 0.6) !important;
-  --tab-text-color-focused: rgba(248, 248, 242, 0.6) !important;
-  --tab-text-color-focused-active: rgba(248, 248, 242, 0.6) !important;
-  --tab-text-color-focused-active-current: rgb(248, 248, 242) !important;
-  --tab-text-color-focused-highlighted: rgb(255, 128, 191) !important;
+  --tab-switcher-background: hsl(235, 15%, 13%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(235, 15%, 13%), transparent) !important;
+  --tab-text-color: hsla(60, 30%, 96%, 0.6) !important;
+  --tab-text-color-active: hsla(60, 30%, 96%, 0.6) !important;
+  --tab-text-color-focused: hsla(60, 30%, 96%, 0.6) !important;
+  --tab-text-color-focused-active: hsla(60, 30%, 96%, 0.6) !important;
+  --tab-text-color-focused-active-current: hsl(60, 30%, 96%) !important;
+  --tab-text-color-focused-highlighted: hsl(330, 100%, 75.1%) !important;
   --table-add-button-border-color: transparent !important;
   --table-border-color: transparent !important;
-  --table-drag-handle-background-active: rgb(255, 128, 191) !important;
-  --table-drag-handle-color: rgba(248, 248, 242, 0.6) !important;
-  --table-drag-handle-color-active: rgb(33, 33, 44) !important;
+  --table-drag-handle-background-active: hsl(330, 100%, 75.1%) !important;
+  --table-drag-handle-color: hsla(60, 30%, 96%, 0.6) !important;
+  --table-drag-handle-color-active: hsl(235, 15%, 15%) !important;
   --table-header-border-color: transparent !important;
-  --table-header-color: rgb(33, 33, 44) !important;
-  --table-selection-border-color: rgb(255, 128, 191) !important;
-  --tag-color: rgb(255, 128, 191) !important;
-  --tag-color-hover: rgb(255, 128, 191) !important;
-  --tertiary: rgb(255, 204, 230) !important;
-  --text-accent: rgb(255, 128, 191) !important;
-  --text-accent-hover: rgb(255, 204, 230) !important;
-  --text-error: rgb(255, 149, 128) !important;
-  --text-faint: rgba(248, 248, 242, 0.6) !important;
-  --text-highlight-bg: rgba(255, 255, 128, 0.1) !important;
-  --text-highlight-bg-active: rgba(255, 202, 128, 0.1) !important;
-  --text-muted: rgba(248, 248, 242, 0.6) !important;
-  --text-normal: rgb(248, 248, 242) !important;
-  --text-on-accent: rgb(33, 33, 44) !important;
-  --text-selection: rgba(149, 128, 255, 0.2) !important;
-  --textHighlight: rgba(255, 255, 128, 0.1) !important;
+  --table-header-color: hsl(235, 15%, 15%) !important;
+  --table-selection-border-color: hsl(330, 100%, 75.1%) !important;
+  --tag-color: hsl(330, 100%, 75.1%) !important;
+  --tag-color-hover: hsl(330, 100%, 75.1%) !important;
+  --tertiary: hsl(330, 100%, 90%) !important;
+  --text-accent: hsl(330, 100%, 75.1%) !important;
+  --text-accent-hover: hsl(330, 100%, 90%) !important;
+  --text-error: hsl(10, 100%, 75.1%) !important;
+  --text-faint: hsla(60, 30%, 96%, 0.6) !important;
+  --text-highlight-bg: hsla(60, 100%, 75.1%, 0.1) !important;
+  --text-highlight-bg-active: hsla(35, 100%, 75.1%, 0.1) !important;
+  --text-muted: hsla(60, 30%, 96%, 0.6) !important;
+  --text-normal: hsl(60, 30%, 96%) !important;
+  --text-on-accent: hsl(235, 15%, 15%) !important;
+  --text-selection: hsla(250, 100%, 75.1%, 0.2) !important;
+  --textHighlight: hsla(60, 100%, 75.1%, 0.1) !important;
   --titleFont: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: rgb(28, 29, 38) !important;
-  --titlebar-background-focused: rgb(20, 20, 26) !important;
+  --titlebar-background: hsl(235, 15%, 13%) !important;
+  --titlebar-background-focused: hsl(235, 15%, 9%) !important;
   --titlebar-border-color: transparent !important;
-  --titlebar-text-color: rgba(248, 248, 242, 0.6) !important;
-  --titlebar-text-color-focused: rgb(248, 248, 242) !important;
-  --vault-profile-color: rgb(248, 248, 242) !important;
-  --vault-profile-color-hover: rgb(248, 248, 242) !important;
-  --yellow: rgb(255, 255, 128) !important;
-  --yellow-100: rgba(255, 255, 128, 0.1) !important;
-  --yellow-700: rgba(255, 255, 128, 0.7) !important;
+  --titlebar-text-color: hsla(60, 30%, 96%, 0.6) !important;
+  --titlebar-text-color-focused: hsl(60, 30%, 96%) !important;
+  --vault-profile-color: hsl(60, 30%, 96%) !important;
+  --vault-profile-color-hover: hsl(60, 30%, 96%) !important;
+  --yellow: hsl(60, 100%, 75.1%) !important;
+  --yellow-100: hsla(60, 100%, 75.1%, 0.1) !important;
+  --yellow-700: hsla(60, 100%, 75.1%, 0.7) !important;
   --yellow-hue: 60 !important;
   --yellow-secondary-tuple: 60, 100%, 90% !important;
   --yellow-tuple: 60, 100%, 75.1% !important;
@@ -739,6 +739,350 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(248, 248, 242);
   text-decoration: rgb(248, 248, 242);
   text-decoration-color: rgb(248, 248, 242);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(33, 33, 44);
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(20, 20, 26);
@@ -904,21 +1248,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: rgba(248, 248, 242, 0.6);
   font-family: "??", "Fira Sans", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgba(248, 248, 242, 0.6);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgba(248, 248, 242, 0.6);
-  font-family: "??", "Fira Sans", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgba(248, 248, 242, 0.6);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(255, 255, 128, 0.1);
-  border-bottom-color: rgb(255, 255, 128);
-  border-left-color: rgb(255, 255, 128);
-  border-right-color: rgb(255, 255, 128);
-  border-top-color: rgb(255, 255, 128);
-  color: rgb(255, 255, 128);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(248, 248, 242, 0.6);
@@ -1115,74 +1444,74 @@ html[saved-theme="dark"] body sup {
   --background-modifier-border: transparent !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: transparent !important;
-  --background-modifier-box-shadow: rgb(205, 206, 218) !important;
-  --background-modifier-cover: rgb(223, 223, 231) !important;
-  --background-modifier-error: rgba(219, 0, 0, 0.9) !important;
-  --background-modifier-error-hover: rgb(219, 0, 0) !important;
+  --background-modifier-box-shadow: hsl(235, 15%, 83%) !important;
+  --background-modifier-cover: hsl(235, 15%, 89%) !important;
+  --background-modifier-error: hsla(0, 100%, 43%, 0.9) !important;
+  --background-modifier-error-hover: hsl(0, 100%, 43%) !important;
   --background-modifier-error-rgb: 61, 0, 0 !important;
-  --background-modifier-form-field: rgba(219, 0, 110, 0.1) !important;
-  --background-modifier-form-field-highlighted: rgba(219, 0, 110, 0.3) !important;
-  --background-modifier-form-field-hover: rgba(219, 0, 110, 0.1) !important;
-  --background-modifier-success: rgba(55, 219, 0, 0.2) !important;
-  --background-primary: rgb(243, 244, 246) !important;
-  --background-primary-alt: rgb(252, 252, 253) !important;
-  --background-secondary: rgb(252, 252, 253) !important;
-  --background-secondary-alt: rgb(223, 223, 231) !important;
-  --bases-cards-background: rgb(243, 244, 246) !important;
-  --bases-cards-cover-background: rgb(252, 252, 253) !important;
+  --background-modifier-form-field: hsla(330, 100%, 43%, 0.1) !important;
+  --background-modifier-form-field-highlighted: hsla(330, 100%, 43%, 0.3) !important;
+  --background-modifier-form-field-hover: hsla(330, 100%, 43%, 0.1) !important;
+  --background-modifier-success: hsla(105, 100%, 43%, 0.2) !important;
+  --background-primary: hsl(235, 15%, 96%) !important;
+  --background-primary-alt: hsl(235, 15%, 99%) !important;
+  --background-secondary: hsl(235, 15%, 99%) !important;
+  --background-secondary-alt: hsl(235, 15%, 89%) !important;
+  --bases-cards-background: hsl(235, 15%, 96%) !important;
+  --bases-cards-cover-background: hsl(235, 15%, 99%) !important;
   --bases-cards-shadow: 0 0 0 1px transparent !important;
   --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
   --bases-embed-border-color: transparent !important;
-  --bases-group-heading-property-color: rgba(33, 34, 44, 0.6) !important;
+  --bases-group-heading-property-color: hsla(234, 14%, 15%, 0.6) !important;
   --bases-table-border-color: transparent !important;
-  --bases-table-cell-background-active: rgb(243, 244, 246) !important;
-  --bases-table-cell-background-disabled: rgb(252, 252, 253) !important;
+  --bases-table-cell-background-active: hsl(235, 15%, 96%) !important;
+  --bases-table-cell-background-disabled: hsl(235, 15%, 99%) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px transparent !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(219, 0, 110) !important;
-  --bases-table-group-background: rgb(252, 252, 253) !important;
-  --bases-table-header-background: rgb(243, 244, 246) !important;
-  --bases-table-header-color: rgba(33, 34, 44, 0.6) !important;
-  --bases-table-summary-background: rgb(243, 244, 246) !important;
-  --blockquote-border: rgb(219, 0, 0) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(330, 100%, 43%) !important;
+  --bases-table-group-background: hsl(235, 15%, 99%) !important;
+  --bases-table-header-background: hsl(235, 15%, 96%) !important;
+  --bases-table-header-color: hsla(234, 14%, 15%, 0.6) !important;
+  --bases-table-summary-background: hsl(235, 15%, 96%) !important;
+  --blockquote-border: hsl(0, 100%, 43%) !important;
   --blockquote-border-color: none !important;
-  --blue: rgb(0, 146, 219) !important;
-  --blue-600: rgba(0, 146, 219, 0.6) !important;
+  --blue: hsl(200, 100%, 43%) !important;
+  --blue-600: hsla(200, 100%, 43%, 0.6) !important;
   --blue-hue: 200 !important;
   --blue-secondary-tuple: 200, 80%, 50% !important;
   --blue-tuple: 200, 100%, 43% !important;
-  --blur-background: color-mix(in srgb, rgb(243, 244, 246) 65%, transparent) linear-gradient(rgb(243, 244, 246), color-mix(in srgb, rgb(243, 244, 246) 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, hsl(235, 15%, 96%) 65%, transparent) linear-gradient(hsl(235, 15%, 96%), color-mix(in srgb, hsl(235, 15%, 96%) 65%, transparent)) !important;
   --bodyFont: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --canvas-background: rgb(243, 244, 246) !important;
-  --canvas-card-label-color: rgba(33, 34, 44, 0.6) !important;
-  --caret-color: rgb(33, 34, 44) !important;
-  --checkbox-border-color: rgba(33, 34, 44, 0.6) !important;
-  --checkbox-border-color-hover: rgba(33, 34, 44, 0.6) !important;
-  --checkbox-color: rgb(219, 0, 110) !important;
-  --checkbox-color-hover: rgba(33, 34, 44, 0.6) !important;
-  --checkbox-marker-color: rgb(243, 244, 246) !important;
-  --checklist-done-color: rgba(33, 34, 44, 0.6) !important;
-  --code-background: rgb(252, 252, 253) !important;
+  --canvas-background: hsl(235, 15%, 96%) !important;
+  --canvas-card-label-color: hsla(234, 14%, 15%, 0.6) !important;
+  --caret-color: hsl(234, 14%, 15%) !important;
+  --checkbox-border-color: hsla(234, 14%, 15%, 0.6) !important;
+  --checkbox-border-color-hover: hsla(234, 14%, 15%, 0.6) !important;
+  --checkbox-color: hsl(330, 100%, 43%) !important;
+  --checkbox-color-hover: hsla(234, 14%, 15%, 0.6) !important;
+  --checkbox-marker-color: hsl(235, 15%, 96%) !important;
+  --checklist-done-color: hsla(234, 14%, 15%, 0.6) !important;
+  --code-background: hsl(235, 15%, 99%) !important;
   --code-border-color: transparent !important;
-  --code-comment: rgba(33, 34, 44, 0.6) !important;
-  --code-normal: rgb(219, 0, 183) !important;
-  --code-punctuation: rgba(33, 34, 44, 0.6) !important;
+  --code-comment: hsla(234, 14%, 15%, 0.6) !important;
+  --code-normal: hsl(310, 100%, 43%) !important;
+  --code-punctuation: hsla(234, 14%, 15%, 0.6) !important;
   --code-size: 1em !important;
   --codeFont: "Fira Code", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color: rgba(33, 34, 44, 0.6) !important;
-  --collapse-icon-color-collapsed: rgb(219, 0, 110) !important;
-  --dark: rgb(33, 34, 44) !important;
-  --darkgray: rgb(33, 34, 44) !important;
+  --collapse-icon-color: hsla(234, 14%, 15%, 0.6) !important;
+  --collapse-icon-color-collapsed: hsl(330, 100%, 43%) !important;
+  --dark: hsl(234, 14%, 15%) !important;
+  --darkgray: hsl(234, 14%, 15%) !important;
   --divider-color: transparent !important;
-  --divider-color-hover: rgb(219, 0, 110) !important;
-  --dropdown-background: rgb(252, 252, 253) !important;
-  --dropdown-background-hover: rgb(223, 223, 231) !important;
+  --divider-color-hover: hsl(330, 100%, 43%) !important;
+  --dropdown-background: hsl(235, 15%, 99%) !important;
+  --dropdown-background-hover: hsl(235, 15%, 89%) !important;
   --embed-block-shadow-hover: 0 0 0 1px transparent, inset 0 0 0 1px transparent !important;
-  --embed-border-start: 2px solid rgb(219, 0, 110) !important;
-  --file-header-background: rgb(243, 244, 246) !important;
-  --file-header-background-focused: rgb(243, 244, 246) !important;
+  --embed-border-start: 2px solid hsl(330, 100%, 43%) !important;
+  --file-header-background: hsl(235, 15%, 96%) !important;
+  --file-header-background-focused: hsl(235, 15%, 96%) !important;
   --file-header-font: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: rgb(252, 252, 253) !important;
-  --flair-color: rgb(33, 34, 44) !important;
+  --flair-background: hsl(235, 15%, 99%) !important;
+  --flair-color: hsl(234, 14%, 15%) !important;
   --font-interface: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Fira Sans", sans-serif !important;
   --font-mermaid: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -1192,193 +1521,193 @@ html[saved-theme="dark"] body sup {
   --font-text: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Fira Sans", sans-serif !important;
   --footnote-divider-color: transparent !important;
-  --footnote-id-color: rgba(33, 34, 44, 0.6) !important;
-  --footnote-id-color-no-occurrences: rgba(33, 34, 44, 0.6) !important;
+  --footnote-id-color: hsla(234, 14%, 15%, 0.6) !important;
+  --footnote-id-color-no-occurrences: hsla(234, 14%, 15%, 0.6) !important;
   --gradientDegree: 135deg !important;
-  --graph-node: rgba(33, 34, 44, 0.6) !important;
-  --graph-node-focused: rgb(219, 0, 110) !important;
-  --graph-node-unresolved: rgba(33, 34, 44, 0.6) !important;
-  --graph-text: rgb(33, 34, 44) !important;
-  --gray: rgba(33, 34, 44, 0.6) !important;
-  --green: rgb(55, 219, 0) !important;
-  --green-200: rgba(55, 219, 0, 0.2) !important;
+  --graph-node: hsla(234, 14%, 15%, 0.6) !important;
+  --graph-node-focused: hsl(330, 100%, 43%) !important;
+  --graph-node-unresolved: hsla(234, 14%, 15%, 0.6) !important;
+  --graph-text: hsl(234, 14%, 15%) !important;
+  --gray: hsla(234, 14%, 15%, 0.6) !important;
+  --green: hsl(105, 100%, 43%) !important;
+  --green-200: hsla(105, 100%, 43%, 0.2) !important;
   --green-hue: 105 !important;
   --green-secondary-tuple: 105, 80%, 50% !important;
   --green-tuple: 105, 100%, 43% !important;
-  --greenSecondary: rgb(77, 230, 25) !important;
+  --greenSecondary: hsl(105, 80%, 50%) !important;
   --headerFont: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgba(33, 34, 44, 0.6) !important;
-  --highlight: rgba(219, 146, 0, 0.1) !important;
-  --hr-color: rgb(219, 110, 0) !important;
-  --icon-color: rgba(33, 34, 44, 0.6) !important;
-  --icon-color-active: rgb(219, 0, 110) !important;
-  --icon-color-focused: rgb(33, 34, 44) !important;
-  --icon-color-hover: rgba(33, 34, 44, 0.6) !important;
-  --indentation-guide: rgb(196, 198, 212) !important;
+  --heading-formatting: hsla(234, 14%, 15%, 0.6) !important;
+  --highlight: hsla(40, 100%, 43%, 0.1) !important;
+  --hr-color: hsl(30, 100%, 43%) !important;
+  --icon-color: hsla(234, 14%, 15%, 0.6) !important;
+  --icon-color-active: hsl(330, 100%, 43%) !important;
+  --icon-color-focused: hsl(234, 14%, 15%) !important;
+  --icon-color-hover: hsla(234, 14%, 15%, 0.6) !important;
+  --indentation-guide: hsl(235, 15%, 80%) !important;
   --indentation-guide-opacity: 10% !important;
-  --input-date-separator: rgba(33, 34, 44, 0.6) !important;
-  --input-placeholder-color: rgba(33, 34, 44, 0.6) !important;
+  --input-date-separator: hsla(234, 14%, 15%, 0.6) !important;
+  --input-placeholder-color: hsla(234, 14%, 15%, 0.6) !important;
   --input-shadow: none !important;
-  --interactive-accent: rgb(219, 0, 110) !important;
-  --interactive-accent-hover: rgb(219, 110, 0) !important;
-  --interactive-hover: rgb(223, 223, 231) !important;
-  --interactive-normal: rgb(252, 252, 253) !important;
-  --interactive-success: rgb(55, 219, 0) !important;
-  --layer-0: rgb(223, 223, 231) !important;
-  --layer-1: rgb(252, 252, 253) !important;
-  --layer-2: rgb(243, 244, 246) !important;
-  --layer-3: rgb(205, 206, 218) !important;
-  --layer-4: rgb(196, 198, 212) !important;
+  --interactive-accent: hsl(330, 100%, 43%) !important;
+  --interactive-accent-hover: hsl(30, 100%, 43%) !important;
+  --interactive-hover: hsl(235, 15%, 89%) !important;
+  --interactive-normal: hsl(235, 15%, 99%) !important;
+  --interactive-success: hsl(105, 100%, 43%) !important;
+  --layer-0: hsl(235, 15%, 89%) !important;
+  --layer-1: hsl(235, 15%, 99%) !important;
+  --layer-2: hsl(235, 15%, 96%) !important;
+  --layer-3: hsl(235, 15%, 83%) !important;
+  --layer-4: hsl(235, 15%, 80%) !important;
   --layer-hue-sat: 235, 15% !important;
-  --light: rgb(243, 244, 246) !important;
-  --lightgray: rgb(252, 252, 253) !important;
-  --link-color: rgb(219, 110, 0) !important;
-  --link-color-hover: rgb(230, 128, 25) !important;
-  --link-external-color: rgb(55, 219, 0) !important;
-  --link-external-color-hover: rgb(77, 230, 25) !important;
-  --link-unresolved-color: rgba(219, 146, 0, 0.7) !important;
-  --link-unresolved-hover: rgb(219, 146, 0) !important;
-  --list-marker-color: rgba(33, 34, 44, 0.6) !important;
-  --list-marker-color-collapsed: rgb(219, 0, 110) !important;
-  --list-marker-color-hover: rgba(33, 34, 44, 0.6) !important;
-  --menu-background: rgb(252, 252, 253) !important;
+  --light: hsl(235, 15%, 96%) !important;
+  --lightgray: hsl(235, 15%, 99%) !important;
+  --link-color: hsl(30, 100%, 43%) !important;
+  --link-color-hover: hsl(30, 80%, 50%) !important;
+  --link-external-color: hsl(105, 100%, 43%) !important;
+  --link-external-color-hover: hsl(105, 80%, 50%) !important;
+  --link-unresolved-color: hsla(40, 100%, 43%, 0.7) !important;
+  --link-unresolved-hover: hsl(40, 100%, 43%) !important;
+  --list-marker-color: hsla(234, 14%, 15%, 0.6) !important;
+  --list-marker-color-collapsed: hsl(330, 100%, 43%) !important;
+  --list-marker-color-hover: hsla(234, 14%, 15%, 0.6) !important;
+  --menu-background: hsl(235, 15%, 99%) !important;
   --menu-border-color: transparent !important;
   --metadata-border-color: transparent !important;
   --metadata-divider-color: transparent !important;
   --metadata-input-font: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: rgb(33, 34, 44) !important;
+  --metadata-input-text-color: hsl(234, 14%, 15%) !important;
   --metadata-label-font: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: rgba(33, 34, 44, 0.6) !important;
-  --metadata-label-text-color-hover: rgba(33, 34, 44, 0.6) !important;
+  --metadata-label-text-color: hsla(234, 14%, 15%, 0.6) !important;
+  --metadata-label-text-color-hover: hsla(234, 14%, 15%, 0.6) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px transparent !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
-  --modal-background: rgb(243, 244, 246) !important;
+  --modal-background: hsl(235, 15%, 96%) !important;
   --modal-border-color: transparent !important;
-  --nav-collapse-icon-color: rgba(33, 34, 44, 0.6) !important;
-  --nav-collapse-icon-color-collapsed: rgba(33, 34, 44, 0.6) !important;
-  --nav-heading-color: rgb(33, 34, 44) !important;
-  --nav-heading-color-collapsed: rgba(33, 34, 44, 0.6) !important;
-  --nav-heading-color-collapsed-hover: rgba(33, 34, 44, 0.6) !important;
-  --nav-heading-color-hover: rgb(33, 34, 44) !important;
-  --nav-item-color: rgba(33, 34, 44, 0.6) !important;
-  --nav-item-color-active: rgb(33, 34, 44) !important;
-  --nav-item-color-highlighted: rgb(219, 0, 110) !important;
-  --nav-item-color-hover: rgb(33, 34, 44) !important;
-  --nav-item-color-selected: rgb(33, 34, 44) !important;
-  --nav-tag-color: rgba(33, 34, 44, 0.6) !important;
-  --nav-tag-color-active: rgba(33, 34, 44, 0.6) !important;
-  --nav-tag-color-hover: rgba(33, 34, 44, 0.6) !important;
-  --on-layer: rgb(33, 34, 44) !important;
-  --on-layer-400: rgba(33, 34, 44, 0.4) !important;
-  --on-layer-600: rgba(33, 34, 44, 0.6) !important;
+  --nav-collapse-icon-color: hsla(234, 14%, 15%, 0.6) !important;
+  --nav-collapse-icon-color-collapsed: hsla(234, 14%, 15%, 0.6) !important;
+  --nav-heading-color: hsl(234, 14%, 15%) !important;
+  --nav-heading-color-collapsed: hsla(234, 14%, 15%, 0.6) !important;
+  --nav-heading-color-collapsed-hover: hsla(234, 14%, 15%, 0.6) !important;
+  --nav-heading-color-hover: hsl(234, 14%, 15%) !important;
+  --nav-item-color: hsla(234, 14%, 15%, 0.6) !important;
+  --nav-item-color-active: hsl(234, 14%, 15%) !important;
+  --nav-item-color-highlighted: hsl(330, 100%, 43%) !important;
+  --nav-item-color-hover: hsl(234, 14%, 15%) !important;
+  --nav-item-color-selected: hsl(234, 14%, 15%) !important;
+  --nav-tag-color: hsla(234, 14%, 15%, 0.6) !important;
+  --nav-tag-color-active: hsla(234, 14%, 15%, 0.6) !important;
+  --nav-tag-color-hover: hsla(234, 14%, 15%, 0.6) !important;
+  --on-layer: hsl(234, 14%, 15%) !important;
+  --on-layer-400: hsla(234, 14%, 15%, 0.4) !important;
+  --on-layer-600: hsla(234, 14%, 15%, 0.6) !important;
   --on-layer-tuple: 234, 14%, 15% !important;
-  --orange: rgb(219, 110, 0) !important;
-  --orange-100: rgba(219, 110, 0, 0.1) !important;
+  --orange: hsl(30, 100%, 43%) !important;
+  --orange-100: hsla(30, 100%, 43%, 0.1) !important;
   --orange-hue: 30 !important;
   --orange-secondary-tuple: 30, 80%, 50% !important;
   --orange-tuple: 30, 100%, 43% !important;
-  --orangeSecondary: rgb(230, 128, 25) !important;
-  --pdf-background: rgb(243, 244, 246) !important;
-  --pdf-page-background: rgb(243, 244, 246) !important;
-  --pdf-sidebar-background: rgb(243, 244, 246) !important;
+  --orangeSecondary: hsl(30, 80%, 50%) !important;
+  --pdf-background: hsl(235, 15%, 96%) !important;
+  --pdf-page-background: hsl(235, 15%, 96%) !important;
+  --pdf-sidebar-background: hsl(235, 15%, 96%) !important;
   --pill-border-color: transparent !important;
   --pill-border-color-hover: transparent !important;
-  --pill-color: rgba(33, 34, 44, 0.6) !important;
-  --pill-color-hover: rgb(33, 34, 44) !important;
-  --pill-color-remove: rgba(33, 34, 44, 0.6) !important;
-  --pill-color-remove-hover: rgb(219, 0, 110) !important;
-  --pink: rgb(219, 0, 110) !important;
-  --pink-100: rgba(219, 0, 110, 0.1) !important;
-  --pink-300: rgba(219, 0, 110, 0.3) !important;
-  --pink-400: rgba(219, 0, 110, 0.4) !important;
+  --pill-color: hsla(234, 14%, 15%, 0.6) !important;
+  --pill-color-hover: hsl(234, 14%, 15%) !important;
+  --pill-color-remove: hsla(234, 14%, 15%, 0.6) !important;
+  --pill-color-remove-hover: hsl(330, 100%, 43%) !important;
+  --pink: hsl(330, 100%, 43%) !important;
+  --pink-100: hsla(330, 100%, 43%, 0.1) !important;
+  --pink-300: hsla(330, 100%, 43%, 0.3) !important;
+  --pink-400: hsla(330, 100%, 43%, 0.4) !important;
   --pink-hue: 330 !important;
   --pink-secondary-tuple: 330, 80%, 50% !important;
   --pink-tuple: 330, 100%, 43% !important;
-  --pinkSecondary: rgb(230, 25, 128) !important;
+  --pinkSecondary: hsl(330, 80%, 50%) !important;
   --primary-lit: 43% !important;
   --primary-sat: 100% !important;
-  --prompt-background: rgb(243, 244, 246) !important;
+  --prompt-background: hsl(235, 15%, 96%) !important;
   --prompt-border-color: transparent !important;
-  --purple: rgb(219, 0, 219) !important;
-  --purple-200: rgba(219, 0, 219, 0.2) !important;
+  --purple: hsl(300, 100%, 43%) !important;
+  --purple-200: hsla(300, 100%, 43%, 0.2) !important;
   --purple-hue: 300 !important;
-  --purple-pink: rgb(219, 0, 183) !important;
+  --purple-pink: hsl(310, 100%, 43%) !important;
   --purple-pink-hue: 310 !important;
   --purple-pink-secondary-tuple: 310, 80%, 50% !important;
   --purple-pink-tuple: 310, 100%, 43% !important;
   --purple-secondary-tuple: 300, 80%, 50% !important;
   --purple-tuple: 300, 100%, 43% !important;
-  --raised-background: color-mix(in srgb, rgb(243, 244, 246) 65%, transparent) linear-gradient(rgb(243, 244, 246), color-mix(in srgb, rgb(243, 244, 246) 65%, transparent)) !important;
-  --red: rgb(219, 0, 0) !important;
-  --red-900: rgba(219, 0, 0, 0.9) !important;
+  --raised-background: color-mix(in srgb, hsl(235, 15%, 96%) 65%, transparent) linear-gradient(hsl(235, 15%, 96%), color-mix(in srgb, hsl(235, 15%, 96%) 65%, transparent)) !important;
+  --red: hsl(0, 100%, 43%) !important;
+  --red-900: hsla(0, 100%, 43%, 0.9) !important;
   --red-hue: 0 !important;
   --red-secondary-tuple: 0, 80%, 50% !important;
   --red-tuple: 0, 100%, 43% !important;
-  --ribbon-background: rgb(223, 223, 231) !important;
-  --ribbon-background-collapsed: rgb(223, 223, 231) !important;
-  --scrollbar-active-thumb-bg: rgba(219, 0, 110, 0.3) !important;
-  --scrollbar-bg: rgb(243, 244, 246) !important;
-  --scrollbar-thumb-bg: rgba(219, 0, 110, 0.1) !important;
-  --search-clear-button-color: rgba(33, 34, 44, 0.6) !important;
-  --search-icon-color: rgba(33, 34, 44, 0.6) !important;
-  --search-result-background: rgb(243, 244, 246) !important;
-  --secondary: rgb(219, 0, 110) !important;
+  --ribbon-background: hsl(235, 15%, 89%) !important;
+  --ribbon-background-collapsed: hsl(235, 15%, 89%) !important;
+  --scrollbar-active-thumb-bg: hsla(330, 100%, 43%, 0.3) !important;
+  --scrollbar-bg: hsl(235, 15%, 96%) !important;
+  --scrollbar-thumb-bg: hsla(330, 100%, 43%, 0.1) !important;
+  --search-clear-button-color: hsla(234, 14%, 15%, 0.6) !important;
+  --search-icon-color: hsla(234, 14%, 15%, 0.6) !important;
+  --search-result-background: hsl(235, 15%, 96%) !important;
+  --secondary: hsl(330, 100%, 43%) !important;
   --secondary-lit: 50% !important;
   --secondary-sat: 80% !important;
-  --setting-group-heading-color: rgb(33, 34, 44) !important;
-  --setting-items-background: rgb(252, 252, 253) !important;
+  --setting-group-heading-color: hsl(234, 14%, 15%) !important;
+  --setting-items-background: hsl(235, 15%, 99%) !important;
   --setting-items-border-color: transparent !important;
   --slider-thumb-border-color: transparent !important;
   --slider-track-background: transparent !important;
-  --status-bar-background: rgb(252, 252, 253) !important;
+  --status-bar-background: hsl(235, 15%, 99%) !important;
   --status-bar-border-color: transparent !important;
-  --status-bar-text-color: rgba(33, 34, 44, 0.6) !important;
-  --suggestion-background: rgb(243, 244, 246) !important;
-  --tab-background-active: rgb(243, 244, 246) !important;
-  --tab-container-background: rgb(252, 252, 253) !important;
+  --status-bar-text-color: hsla(234, 14%, 15%, 0.6) !important;
+  --suggestion-background: hsl(235, 15%, 96%) !important;
+  --tab-background-active: hsl(235, 15%, 96%) !important;
+  --tab-container-background: hsl(235, 15%, 99%) !important;
   --tab-divider-color: transparent !important;
   --tab-outline-color: transparent !important;
-  --tab-switcher-background: rgb(252, 252, 253) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(252, 252, 253), transparent) !important;
-  --tab-text-color: rgba(33, 34, 44, 0.6) !important;
-  --tab-text-color-active: rgba(33, 34, 44, 0.6) !important;
-  --tab-text-color-focused: rgba(33, 34, 44, 0.6) !important;
-  --tab-text-color-focused-active: rgba(33, 34, 44, 0.6) !important;
-  --tab-text-color-focused-active-current: rgb(33, 34, 44) !important;
-  --tab-text-color-focused-highlighted: rgb(219, 0, 110) !important;
+  --tab-switcher-background: hsl(235, 15%, 99%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(235, 15%, 99%), transparent) !important;
+  --tab-text-color: hsla(234, 14%, 15%, 0.6) !important;
+  --tab-text-color-active: hsla(234, 14%, 15%, 0.6) !important;
+  --tab-text-color-focused: hsla(234, 14%, 15%, 0.6) !important;
+  --tab-text-color-focused-active: hsla(234, 14%, 15%, 0.6) !important;
+  --tab-text-color-focused-active-current: hsl(234, 14%, 15%) !important;
+  --tab-text-color-focused-highlighted: hsl(330, 100%, 43%) !important;
   --table-add-button-border-color: transparent !important;
   --table-border-color: transparent !important;
-  --table-drag-handle-background-active: rgb(219, 0, 110) !important;
-  --table-drag-handle-color: rgba(33, 34, 44, 0.6) !important;
-  --table-drag-handle-color-active: rgb(243, 244, 246) !important;
+  --table-drag-handle-background-active: hsl(330, 100%, 43%) !important;
+  --table-drag-handle-color: hsla(234, 14%, 15%, 0.6) !important;
+  --table-drag-handle-color-active: hsl(235, 15%, 96%) !important;
   --table-header-border-color: transparent !important;
-  --table-header-color: rgb(243, 244, 246) !important;
-  --table-selection-border-color: rgb(219, 0, 110) !important;
-  --tag-color: rgb(219, 0, 110) !important;
-  --tag-color-hover: rgb(219, 0, 110) !important;
-  --tertiary: rgb(230, 25, 128) !important;
-  --text-accent: rgb(219, 0, 110) !important;
-  --text-accent-hover: rgb(230, 25, 128) !important;
-  --text-error: rgb(219, 0, 0) !important;
-  --text-faint: rgba(33, 34, 44, 0.6) !important;
-  --text-highlight-bg: rgba(219, 146, 0, 0.1) !important;
-  --text-highlight-bg-active: rgba(219, 110, 0, 0.1) !important;
-  --text-muted: rgba(33, 34, 44, 0.6) !important;
-  --text-normal: rgb(33, 34, 44) !important;
-  --text-on-accent: rgb(243, 244, 246) !important;
-  --text-selection: rgba(219, 0, 219, 0.2) !important;
-  --textHighlight: rgba(219, 146, 0, 0.1) !important;
+  --table-header-color: hsl(235, 15%, 96%) !important;
+  --table-selection-border-color: hsl(330, 100%, 43%) !important;
+  --tag-color: hsl(330, 100%, 43%) !important;
+  --tag-color-hover: hsl(330, 100%, 43%) !important;
+  --tertiary: hsl(330, 80%, 50%) !important;
+  --text-accent: hsl(330, 100%, 43%) !important;
+  --text-accent-hover: hsl(330, 80%, 50%) !important;
+  --text-error: hsl(0, 100%, 43%) !important;
+  --text-faint: hsla(234, 14%, 15%, 0.6) !important;
+  --text-highlight-bg: hsla(40, 100%, 43%, 0.1) !important;
+  --text-highlight-bg-active: hsla(30, 100%, 43%, 0.1) !important;
+  --text-muted: hsla(234, 14%, 15%, 0.6) !important;
+  --text-normal: hsl(234, 14%, 15%) !important;
+  --text-on-accent: hsl(235, 15%, 96%) !important;
+  --text-selection: hsla(300, 100%, 43%, 0.2) !important;
+  --textHighlight: hsla(40, 100%, 43%, 0.1) !important;
   --titleFont: "Fira Sans", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: rgb(252, 252, 253) !important;
-  --titlebar-background-focused: rgb(223, 223, 231) !important;
+  --titlebar-background: hsl(235, 15%, 99%) !important;
+  --titlebar-background-focused: hsl(235, 15%, 89%) !important;
   --titlebar-border-color: transparent !important;
-  --titlebar-text-color: rgba(33, 34, 44, 0.6) !important;
-  --titlebar-text-color-focused: rgb(33, 34, 44) !important;
-  --vault-profile-color: rgb(33, 34, 44) !important;
-  --vault-profile-color-hover: rgb(33, 34, 44) !important;
-  --yellow: rgb(219, 146, 0) !important;
-  --yellow-100: rgba(219, 146, 0, 0.1) !important;
-  --yellow-700: rgba(219, 146, 0, 0.7) !important;
+  --titlebar-text-color: hsla(234, 14%, 15%, 0.6) !important;
+  --titlebar-text-color-focused: hsl(234, 14%, 15%) !important;
+  --vault-profile-color: hsl(234, 14%, 15%) !important;
+  --vault-profile-color-hover: hsl(234, 14%, 15%) !important;
+  --yellow: hsl(40, 100%, 43%) !important;
+  --yellow-100: hsla(40, 100%, 43%, 0.1) !important;
+  --yellow-700: hsla(40, 100%, 43%, 0.7) !important;
   --yellow-hue: 40 !important;
   --yellow-secondary-tuple: 40, 80%, 50% !important;
   --yellow-tuple: 40, 100%, 43% !important;
@@ -1840,6 +2169,350 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(33, 34, 44);
   text-decoration: rgb(33, 34, 44);
   text-decoration-color: rgb(33, 34, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(243, 244, 246);
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(223, 223, 231);
@@ -2005,21 +2678,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgba(33, 34, 44, 0.6);
   font-family: "??", "Fira Sans", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgba(33, 34, 44, 0.6);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgba(33, 34, 44, 0.6);
-  font-family: "??", "Fira Sans", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgba(33, 34, 44, 0.6);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(219, 146, 0, 0.1);
-  border-bottom-color: rgb(219, 146, 0);
-  border-left-color: rgb(219, 146, 0);
-  border-right-color: rgb(219, 146, 0);
-  border-top-color: rgb(219, 146, 0);
-  color: rgb(219, 146, 0);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(33, 34, 44, 0.6);

@@ -21,7 +21,7 @@ export const theme: ThemeData = {
   --bases-embed-border-radius: 3px !important;
   --bases-table-cell-background-active: #202020 !important;
   --bases-table-cell-background-disabled: #000000 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(131, 107, 250) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(250, 93%, 70%) !important;
   --bases-table-container-border-radius: 3px !important;
   --bases-table-group-background: #000000 !important;
   --bases-table-header-background: #202020 !important;
@@ -61,8 +61,8 @@ export const theme: ThemeData = {
   --canvas-color-5: 0, 184, 212 !important;
   --canvas-color-6: 124, 77, 255 !important;
   --canvas-controls-radius: 3px !important;
-  --checkbox-color: rgb(131, 107, 250) !important;
-  --checkbox-color-hover: rgb(67, 42, 157) !important;
+  --checkbox-color: hsl(250, 93%, 70%) !important;
+  --checkbox-color-hover: hsl(253, 58%, 39%) !important;
   --checkbox-marker-color: #202020 !important;
   --checkbox-radius: 3px !important;
   --clickable-icon-radius: 3px !important;
@@ -78,9 +78,9 @@ export const theme: ThemeData = {
   --code-value: rgb(124, 77, 255) !important;
   --codeFont: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", Yu Gothic, "Microsoft YaHei Light", sans-serif !important;
   --collapse-icon-color-collapsed: #b3b3b3 !important;
-  --color-accent: rgb(131, 107, 250) !important;
-  --color-accent-1: rgb(67, 42, 157) !important;
-  --color-accent-2: rgb(147, 126, 252) !important;
+  --color-accent: hsl(250, 93%, 70%) !important;
+  --color-accent-1: hsl(253, 58%, 39%) !important;
+  --color-accent-2: hsl(250, 95%, 74%) !important;
   --color-base-00: #202020 !important;
   --color-base-05: #1a1a1a !important;
   --color-base-10: #000000 !important;
@@ -107,9 +107,9 @@ export const theme: ThemeData = {
   --color-red-rgb: 255, 23, 68 !important;
   --color-teal: rgb(0, 191, 165) !important;
   --color-teal-rgb: 0, 191, 165 !important;
-  --divider-color-hover: rgb(131, 107, 250) !important;
+  --divider-color-hover: hsl(250, 93%, 70%) !important;
   --dropdown-background: #0c0c0c !important;
-  --embed-border-start: 2px solid rgb(131, 107, 250) !important;
+  --embed-border-start: 2px solid hsl(250, 93%, 70%) !important;
   --file-header-background: #202020 !important;
   --file-header-background-focused: #202020 !important;
   --file-header-font: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", Yu Gothic, "Microsoft YaHei Light", sans-serif !important;
@@ -123,24 +123,24 @@ export const theme: ThemeData = {
   --footnote-padding-block: 10px !important;
   --footnote-padding-inline: 10px !important;
   --footnote-radius: 3px !important;
-  --graph-node-focused: rgb(67, 42, 157) !important;
+  --graph-node-focused: hsl(253, 58%, 39%) !important;
   --graph-node-tag: rgb(100, 221, 23) !important;
   --header-height: 30px !important;
   --headerFont: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", Yu Gothic, "Microsoft YaHei Light", sans-serif !important;
   --highlight: #161616 !important;
-  --icon-color-active: rgb(67, 42, 157) !important;
+  --icon-color-active: hsl(253, 58%, 39%) !important;
   --input-shadow: #363636 0 0 0px 1px !important;
-  --interactive-accent: rgb(131, 107, 250) !important;
-  --interactive-accent-hover: rgb(67, 42, 157) !important;
+  --interactive-accent: hsl(250, 93%, 70%) !important;
+  --interactive-accent-hover: hsl(253, 58%, 39%) !important;
   --interactive-normal: #0c0c0c !important;
   --light: #202020 !important;
   --lightgray: #161616 !important;
-  --link-color: rgb(67, 42, 157) !important;
-  --link-color-hover: rgb(147, 126, 252) !important;
-  --link-external-color: rgb(67, 42, 157) !important;
-  --link-external-color-hover: rgb(147, 126, 252) !important;
-  --link-unresolved-color: rgb(67, 42, 157) !important;
-  --list-marker-color-collapsed: rgb(67, 42, 157) !important;
+  --link-color: hsl(253, 58%, 39%) !important;
+  --link-color-hover: hsl(250, 95%, 74%) !important;
+  --link-external-color: hsl(253, 58%, 39%) !important;
+  --link-external-color-hover: hsl(250, 95%, 74%) !important;
+  --link-unresolved-color: hsl(253, 58%, 39%) !important;
+  --list-marker-color-collapsed: hsl(253, 58%, 39%) !important;
   --menu-background: #161616 !important;
   --menu-padding: 10px !important;
   --menu-radius: 5px !important;
@@ -162,14 +162,14 @@ export const theme: ThemeData = {
   --nav-item-background-hover: #000000 !important;
   --nav-item-background-selected: transparent !important;
   --nav-item-children-padding-start: 10px !important;
-  --nav-item-color-highlighted: rgb(67, 42, 157) !important;
+  --nav-item-color-highlighted: hsl(253, 58%, 39%) !important;
   --nav-item-margin-bottom: 6px !important;
   --nav-item-radius: 3px !important;
   --nav-tag-radius: 3px !important;
   --pdf-background: #202020 !important;
   --pdf-page-background: #202020 !important;
   --pdf-sidebar-background: #202020 !important;
-  --pill-color-remove-hover: rgb(67, 42, 157) !important;
+  --pill-color-remove-hover: hsl(253, 58%, 39%) !important;
   --prompt-background: #202020 !important;
   --radius-l: 6px !important;
   --radius-m: 5px !important;
@@ -181,7 +181,7 @@ export const theme: ThemeData = {
   --ribbon-width: 30px !important;
   --scrollbar-radius: 6px !important;
   --search-result-background: #202020 !important;
-  --secondary: rgb(67, 42, 157) !important;
+  --secondary: hsl(253, 58%, 39%) !important;
   --setting-items-background: #000000 !important;
   --setting-items-radius: 6px !important;
   --size-2-1: 6px !important;
@@ -207,16 +207,16 @@ export const theme: ThemeData = {
   --tab-stacked-header-width: 30px !important;
   --tab-switcher-background: #161616 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #161616, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(131, 107, 250) !important;
-  --tab-text-color-focused-highlighted: rgb(67, 42, 157) !important;
-  --table-drag-handle-background-active: rgb(131, 107, 250) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(250, 93%, 70%) !important;
+  --tab-text-color-focused-highlighted: hsl(253, 58%, 39%) !important;
+  --table-drag-handle-background-active: hsl(250, 93%, 70%) !important;
   --table-header-weight: bold !important;
-  --table-selection-border-color: rgb(131, 107, 250) !important;
-  --tag-color: rgb(67, 42, 157) !important;
-  --tag-color-hover: rgb(67, 42, 157) !important;
-  --tertiary: rgb(147, 126, 252) !important;
-  --text-accent: rgb(67, 42, 157) !important;
-  --text-accent-hover: rgb(147, 126, 252) !important;
+  --table-selection-border-color: hsl(250, 93%, 70%) !important;
+  --tag-color: hsl(253, 58%, 39%) !important;
+  --tag-color-hover: hsl(253, 58%, 39%) !important;
+  --tertiary: hsl(250, 95%, 74%) !important;
+  --text-accent: hsl(253, 58%, 39%) !important;
+  --text-accent-hover: hsl(250, 95%, 74%) !important;
   --text-error: rgb(255, 23, 68) !important;
   --text-success: rgb(100, 221, 23) !important;
   --text-warning: rgb(255, 145, 0) !important;
@@ -391,6 +391,350 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-right-radius: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(32, 32, 32);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(68, 138, 255);
@@ -736,18 +1080,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(0, 0, 0);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 3px;
@@ -837,7 +1169,7 @@ html[saved-theme="dark"] body kbd {
   --bases-group-heading-property-color: #888888 !important;
   --bases-table-border-color: #ddd !important;
   --bases-table-cell-background-disabled: #f5f6f8 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(118, 91, 215) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(253, 61%, 60%) !important;
   --bases-table-container-border-radius: 3px !important;
   --bases-table-group-background: #f5f6f8 !important;
   --bases-table-header-background-hover: #f2f3f5 !important;
@@ -879,8 +1211,8 @@ html[saved-theme="dark"] body kbd {
   --caret-color: #2e3338 !important;
   --checkbox-border-color: #999999 !important;
   --checkbox-border-color-hover: #888888 !important;
-  --checkbox-color: rgb(118, 91, 215) !important;
-  --checkbox-color-hover: rgb(123, 86, 210) !important;
+  --checkbox-color: hsl(253, 61%, 60%) !important;
+  --checkbox-color-hover: hsl(258, 58%, 58%) !important;
   --checkbox-radius: 3px !important;
   --checklist-done-color: #888888 !important;
   --clickable-icon-radius: 3px !important;
@@ -901,9 +1233,9 @@ html[saved-theme="dark"] body kbd {
   --codeFont: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", Yu Gothic, "Microsoft YaHei Light", sans-serif !important;
   --collapse-icon-color: #999999 !important;
   --collapse-icon-color-collapsed: #888888 !important;
-  --color-accent: rgb(124, 97, 219) !important;
-  --color-accent-1: rgb(118, 91, 215) !important;
-  --color-accent-2: rgb(123, 86, 210) !important;
+  --color-accent: hsl(253, 63%, 62%) !important;
+  --color-accent-1: hsl(253, 61%, 60%) !important;
+  --color-accent-2: hsl(258, 58%, 58%) !important;
   --color-base-05: #e3e5e8 !important;
   --color-base-10: #f5f6f8 !important;
   --color-base-100: #2e3338 !important;
@@ -939,10 +1271,10 @@ html[saved-theme="dark"] body kbd {
   --dark: #2e3338 !important;
   --darkgray: #2e3338 !important;
   --divider-color: #ddd !important;
-  --divider-color-hover: rgb(118, 91, 215) !important;
+  --divider-color-hover: hsl(253, 61%, 60%) !important;
   --dropdown-background-hover: #f5f6f8 !important;
   --embed-block-shadow-hover: 0 0 0 1px #ddd, inset 0 0 0 1px #ddd !important;
-  --embed-border-start: 2px solid rgb(118, 91, 215) !important;
+  --embed-border-start: 2px solid hsl(253, 61%, 60%) !important;
   --file-header-font: Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", Yu Gothic, "Microsoft YaHei Light", sans-serif !important;
   --file-header-justify: left !important;
   --flair-color: #2e3338 !important;
@@ -959,7 +1291,7 @@ html[saved-theme="dark"] body kbd {
   --footnote-radius: 3px !important;
   --graph-line: rgb(250, 250, 250) !important;
   --graph-node: #888888 !important;
-  --graph-node-focused: rgb(124, 97, 219) !important;
+  --graph-node-focused: hsl(253, 63%, 62%) !important;
   --graph-node-tag: rgb(100, 221, 23) !important;
   --graph-node-unresolved: #999999 !important;
   --graph-text: #2e3338 !important;
@@ -970,23 +1302,23 @@ html[saved-theme="dark"] body kbd {
   --highlight: #f2f3f5 !important;
   --hr-color: #ddd !important;
   --icon-color: #888888 !important;
-  --icon-color-active: rgb(124, 97, 219) !important;
+  --icon-color-active: hsl(253, 63%, 62%) !important;
   --icon-color-focused: #2e3338 !important;
   --icon-color-hover: #888888 !important;
   --input-date-separator: #999999 !important;
   --input-placeholder-color: #999999 !important;
-  --interactive-accent: rgb(118, 91, 215) !important;
-  --interactive-accent-hover: rgb(123, 86, 210) !important;
+  --interactive-accent: hsl(253, 61%, 60%) !important;
+  --interactive-accent-hover: hsl(258, 58%, 58%) !important;
   --interactive-hover: #f5f6f8 !important;
   --light: #f5f6f8 !important;
   --lightgray: #f2f3f5 !important;
-  --link-color: rgb(124, 97, 219) !important;
-  --link-color-hover: rgb(123, 86, 210) !important;
-  --link-external-color: rgb(124, 97, 219) !important;
-  --link-external-color-hover: rgb(123, 86, 210) !important;
-  --link-unresolved-color: rgb(124, 97, 219) !important;
+  --link-color: hsl(253, 63%, 62%) !important;
+  --link-color-hover: hsl(258, 58%, 58%) !important;
+  --link-external-color: hsl(253, 63%, 62%) !important;
+  --link-external-color-hover: hsl(258, 58%, 58%) !important;
+  --link-unresolved-color: hsl(253, 63%, 62%) !important;
   --list-marker-color: #999999 !important;
-  --list-marker-color-collapsed: rgb(124, 97, 219) !important;
+  --list-marker-color-collapsed: hsl(253, 63%, 62%) !important;
   --list-marker-color-hover: #888888 !important;
   --menu-background: #f2f3f5 !important;
   --menu-border-color: rgb(250, 250, 250) !important;
@@ -1022,7 +1354,7 @@ html[saved-theme="dark"] body kbd {
   --nav-item-children-padding-start: 10px !important;
   --nav-item-color: #888888 !important;
   --nav-item-color-active: #2e3338 !important;
-  --nav-item-color-highlighted: rgb(124, 97, 219) !important;
+  --nav-item-color-highlighted: hsl(253, 63%, 62%) !important;
   --nav-item-color-hover: #2e3338 !important;
   --nav-item-color-selected: #2e3338 !important;
   --nav-item-margin-bottom: 6px !important;
@@ -1036,7 +1368,7 @@ html[saved-theme="dark"] body kbd {
   --pill-color: #888888 !important;
   --pill-color-hover: #2e3338 !important;
   --pill-color-remove: #999999 !important;
-  --pill-color-remove-hover: rgb(124, 97, 219) !important;
+  --pill-color-remove-hover: hsl(253, 63%, 62%) !important;
   --radius-l: 6px !important;
   --radius-m: 5px !important;
   --radius-s: 3px !important;
@@ -1047,7 +1379,7 @@ html[saved-theme="dark"] body kbd {
   --scrollbar-radius: 6px !important;
   --search-clear-button-color: #888888 !important;
   --search-icon-color: #888888 !important;
-  --secondary: rgb(124, 97, 219) !important;
+  --secondary: hsl(253, 63%, 62%) !important;
   --setting-group-heading-color: #2e3338 !important;
   --setting-items-background: #f5f6f8 !important;
   --setting-items-border-color: #ddd !important;
@@ -1078,26 +1410,26 @@ html[saved-theme="dark"] body kbd {
   --tab-stacked-header-width: 30px !important;
   --tab-switcher-background: #f2f3f5 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #f2f3f5, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(124, 97, 219) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(253, 63%, 62%) !important;
   --tab-text-color: #999999 !important;
   --tab-text-color-active: #888888 !important;
   --tab-text-color-focused: #888888 !important;
   --tab-text-color-focused-active: #888888 !important;
   --tab-text-color-focused-active-current: #2e3338 !important;
-  --tab-text-color-focused-highlighted: rgb(124, 97, 219) !important;
+  --tab-text-color-focused-highlighted: hsl(253, 63%, 62%) !important;
   --table-add-button-border-color: #ddd !important;
   --table-border-color: #ddd !important;
-  --table-drag-handle-background-active: rgb(118, 91, 215) !important;
+  --table-drag-handle-background-active: hsl(253, 61%, 60%) !important;
   --table-drag-handle-color: #999999 !important;
   --table-header-border-color: #ddd !important;
   --table-header-color: #2e3338 !important;
   --table-header-weight: bold !important;
-  --table-selection-border-color: rgb(118, 91, 215) !important;
-  --tag-color: rgb(124, 97, 219) !important;
-  --tag-color-hover: rgb(124, 97, 219) !important;
-  --tertiary: rgb(123, 86, 210) !important;
-  --text-accent: rgb(124, 97, 219) !important;
-  --text-accent-hover: rgb(123, 86, 210) !important;
+  --table-selection-border-color: hsl(253, 61%, 60%) !important;
+  --tag-color: hsl(253, 63%, 62%) !important;
+  --tag-color-hover: hsl(253, 63%, 62%) !important;
+  --tertiary: hsl(258, 58%, 58%) !important;
+  --text-accent: hsl(253, 63%, 62%) !important;
+  --text-accent-hover: hsl(258, 58%, 58%) !important;
   --text-error: rgb(255, 23, 68) !important;
   --text-faint: #999999 !important;
   --text-muted: #888888 !important;
@@ -1921,25 +2253,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(136, 136, 136);
   font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
   text-decoration: rgb(136, 136, 136);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(136, 136, 136);
-  font-family: "??", "??", "??", Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light", sans-serif;
-  text-decoration: rgb(136, 136, 136);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(227, 229, 232);
-  border-bottom-color: rgb(46, 51, 56);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgb(46, 51, 56);
-  border-right-color: rgb(46, 51, 56);
-  border-top-color: rgb(46, 51, 56);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  color: rgb(46, 51, 56);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(136, 136, 136);

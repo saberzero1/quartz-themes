@@ -15,7 +15,7 @@ export const theme: ThemeData = {
   --accent-l-theme: 70% !important;
   --accent-s: 13% !important;
   --accent-s-theme: 13% !important;
-  --background-modifier-active-hover: rgba(169, 175, 188, 0.15) !important;
+  --background-modifier-active-hover: hsla(220, 13%, 70%, 0.15) !important;
   --background-modifier-border: #b7bdc8 !important;
   --background-modifier-border-focus: #b7bdc8 !important;
   --background-modifier-border-hover: #b7bdc8 !important;
@@ -41,7 +41,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: #b7bdc8 !important;
   --bases-table-cell-background-active: #010409 !important;
   --bases-table-cell-background-disabled: #151b23 !important;
-  --bases-table-cell-background-selected: rgba(169, 175, 188, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(220, 13%, 70%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #b7bdc8 !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #b7bdc8 !important;
   --bases-table-group-background: #151b23 !important;
@@ -227,7 +227,7 @@ export const theme: ThemeData = {
   --link-external-color-hover: #a5d6ff !important;
   --link-external-decoration: none !important;
   --link-unresolved-color: #71b7ff !important;
-  --link-unresolved-decoration-color: rgba(169, 175, 188, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(220, 13%, 70%, 0.3) !important;
   --list-bullet-size: 5px !important;
   --list-indent: 2em !important;
   --list-marker-color: #ffffff !important;
@@ -261,7 +261,7 @@ export const theme: ThemeData = {
   --nav-heading-color-hover: #ffffff !important;
   --nav-item-background-active: rgba(183, 189, 200, 0.12) !important;
   --nav-item-background-hover: rgba(183, 189, 200, 0.12) !important;
-  --nav-item-background-selected: rgba(169, 175, 188, 0.2) !important;
+  --nav-item-background-selected: hsla(220, 13%, 70%, 0.2) !important;
   --nav-item-color: #b7bdc8 !important;
   --nav-item-color-active: #ffffff !important;
   --nav-item-color-highlighted: #a5d6ff !important;
@@ -345,13 +345,13 @@ export const theme: ThemeData = {
   --table-header-color: #ffffff !important;
   --table-header-weight: 600 !important;
   --table-row-alt-background: #151b23 !important;
-  --table-selection: rgba(169, 175, 188, 0.1) !important;
+  --table-selection: hsla(220, 13%, 70%, 0.1) !important;
   --table-selection-border-color: #b7bdc8 !important;
   --table-white-space: normal !important;
-  --tag-background: rgba(169, 175, 188, 0.1) !important;
-  --tag-background-hover: rgba(169, 175, 188, 0.2) !important;
-  --tag-border-color: rgba(169, 175, 188, 0.15) !important;
-  --tag-border-color-hover: rgba(169, 175, 188, 0.15) !important;
+  --tag-background: hsla(220, 13%, 70%, 0.1) !important;
+  --tag-background-hover: hsla(220, 13%, 70%, 0.2) !important;
+  --tag-border-color: hsla(220, 13%, 70%, 0.15) !important;
+  --tag-border-color-hover: hsla(220, 13%, 70%, 0.15) !important;
   --tag-color: #71b7ff !important;
   --tag-color-hover: #71b7ff !important;
   --tertiary: #a5d6ff !important;
@@ -363,7 +363,7 @@ export const theme: ThemeData = {
   --text-muted: #b7bdc8 !important;
   --text-normal: #ffffff !important;
   --text-on-accent: black !important;
-  --text-selection: rgba(169, 175, 188, 0.4) !important;
+  --text-selection: hsla(220, 13%, 70%, 0.4) !important;
   --text-success: #2bd853 !important;
   --text-warning: #ffa657 !important;
   --textHighlight: rgba(183, 189, 200, 0.12) !important;
@@ -823,6 +823,350 @@ html body li.task-list-item[data-task='w'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
+}
+
+html body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
+}
+
+html body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(1, 4, 9);
 }`,
     callouts: `html body .callout .callout-title {
   border-bottom-color: rgb(113, 183, 255);
@@ -1203,21 +1547,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   color: rgb(183, 189, 200);
   font-family: "??", "-apple-system BlinkMacSystemFont", "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(183, 189, 200);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(183, 189, 200);
-  font-family: "??", "-apple-system BlinkMacSystemFont", "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(183, 189, 200);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(183, 189, 200, 0.12);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(183, 189, 200);

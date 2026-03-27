@@ -10,92 +10,92 @@ export const theme: ThemeData = {
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --background-primary: rgb(22, 22, 22) !important;
-  --background-primary-alt: color-mix(in srgb, rgb(138, 92, 245) 50%, #ffffff 10%) !important;
+  --background-primary-alt: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%) !important;
   --background-secondary: rgb(24, 24, 24) !important;
-  --background-secondary-alt: color-mix(in srgb, rgb(138, 92, 245) 50%, transparent 0%) !important;
+  --background-secondary-alt: color-mix(in srgb, hsl(258, 88%, 66%) 50%, transparent 0%) !important;
   --bases-cards-background: rgb(22, 22, 22) !important;
-  --bases-cards-cover-background: color-mix(in srgb, rgb(138, 92, 245) 50%, #ffffff 10%) !important;
-  --bases-group-heading-property-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --bases-table-border-color: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent 0%) !important;
+  --bases-cards-cover-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%) !important;
+  --bases-group-heading-property-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --bases-table-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%) !important;
   --bases-table-cell-background-active: rgb(22, 22, 22) !important;
-  --bases-table-cell-background-disabled: color-mix(in srgb, rgb(138, 92, 245) 50%, #ffffff 10%) !important;
-  --bases-table-group-background: color-mix(in srgb, rgb(138, 92, 245) 50%, #ffffff 10%) !important;
+  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%) !important;
+  --bases-table-group-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%) !important;
   --bases-table-header-background: rgb(22, 22, 22) !important;
-  --bases-table-header-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --bases-table-row-background-hover: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
+  --bases-table-header-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --bases-table-row-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
   --bases-table-summary-background: rgb(22, 22, 22) !important;
   --bodyFont: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-color: color-mix(in srgb, rgb(138, 92, 245) 80%, #ffffff 20%) !important;
+  --bold-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #ffffff 20%) !important;
   --callout-border-width: 5px;
   --callout-padding: 0;
   --callout-radius: 12px;
   --callout-title-weight: bold;
-  --canvas-background: color-mix(in srgb, rgb(138, 92, 245) 15%, transparent 0%) !important;
-  --canvas-card-label-color: rgb(138, 92, 245) !important;
+  --canvas-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%) !important;
+  --canvas-card-label-color: hsl(258, 88%, 66%) !important;
   --canvas-dot-pattern: rgb(102, 102, 102) !important;
-  --caret-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --checkbox-border-color: rgb(138, 92, 245) !important;
-  --checkbox-border-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --caret-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --checkbox-border-color: hsl(258, 88%, 66%) !important;
+  --checkbox-border-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --checkbox-marker-color: rgb(22, 22, 22) !important;
   --checkbox-radius: 15px !important;
-  --checklist-done-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --code-background: color-mix(in srgb, rgb(138, 92, 245) 15%, transparent 0%) !important;
-  --code-comment: rgb(138, 92, 245) !important;
-  --code-punctuation: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --checklist-done-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --code-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%) !important;
+  --code-comment: hsl(258, 88%, 66%) !important;
+  --code-punctuation: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --codeFont: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: rgb(138, 92, 245) !important;
-  --color-accent-trans: color-mix(in srgb, rgb(138, 92, 245) 15%, transparent 0%) !important;
-  --dark: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --collapse-icon-color: hsl(258, 88%, 66%) !important;
+  --color-accent-trans: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%) !important;
+  --dark: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --dark-or-white-var: #ffffff !important;
-  --darkgray: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --darkgray: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --default-font: 'JetBrains Mono', monospace !important;
   --file-header-background: rgb(22, 22, 22) !important;
   --file-header-background-focused: rgb(22, 22, 22) !important;
   --file-header-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --flair-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --font-interface: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --footnote-id-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --footnote-id-color-no-occurrences: rgb(138, 92, 245) !important;
-  --graph-node: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --graph-node-unresolved: rgb(138, 92, 245) !important;
-  --graph-text: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --gray: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --footnote-id-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%) !important;
+  --graph-node: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --graph-node-unresolved: hsl(258, 88%, 66%) !important;
+  --graph-text: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --gray: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --grid-size: 64px !important;
   --headerFont: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgb(138, 92, 245) !important;
-  --highlight: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%) !important;
-  --icon-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --icon-color-focused: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --icon-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --input-date-separator: rgb(138, 92, 245) !important;
-  --input-placeholder-color: rgb(138, 92, 245) !important;
-  --interactive-color: rgb(138, 92, 245) !important;
-  --italic-color: color-mix(in srgb, rgb(138, 92, 245) 60%, #ffffff 20%) !important;
+  --heading-formatting: hsl(258, 88%, 66%) !important;
+  --highlight: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%) !important;
+  --icon-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --icon-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --icon-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --input-date-separator: hsl(258, 88%, 66%) !important;
+  --input-placeholder-color: hsl(258, 88%, 66%) !important;
+  --interactive-color: hsl(258, 88%, 66%) !important;
+  --italic-color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #ffffff 20%) !important;
   --large-kanban-width: 400px !important;
   --light: rgb(22, 22, 22) !important;
   --lightgray: rgb(24, 24, 24) !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
-  --list-marker-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
+  --list-marker-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --menu-background: rgb(24, 24, 24) !important;
   --metadata-input-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --metadata-input-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --metadata-label-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --metadata-label-text-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --metadata-label-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --metadata-label-text-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --modal-background: rgb(22, 22, 22) !important;
-  --nav-collapse-icon-color: rgb(138, 92, 245) !important;
-  --nav-collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
-  --nav-heading-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --nav-heading-color-collapsed: rgb(138, 92, 245) !important;
-  --nav-heading-color-collapsed-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --nav-heading-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --nav-item-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --nav-item-color-active: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --nav-item-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --nav-item-color-selected: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --nav-tag-color: rgb(138, 92, 245) !important;
-  --nav-tag-color-active: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --nav-tag-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
+  --nav-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --nav-heading-color-collapsed: hsl(258, 88%, 66%) !important;
+  --nav-heading-color-collapsed-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --nav-heading-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --nav-item-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --nav-item-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --nav-item-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --nav-item-color-selected: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --nav-tag-color: hsl(258, 88%, 66%) !important;
+  --nav-tag-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --nav-tag-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --pdf-background: rgb(22, 22, 22) !important;
   --pdf-page-background: rgb(22, 22, 22) !important;
   --pdf-sidebar-background: rgb(22, 22, 22) !important;
@@ -112,51 +112,51 @@ export const theme: ThemeData = {
   --pen-purple: #9b4ff0 !important;
   --pen-red: #e14a49 !important;
   --pen-white: #edf1fc !important;
-  --pill-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --pill-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --pill-color-remove: rgb(138, 92, 245) !important;
+  --pill-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --pill-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --pill-color-remove: hsl(258, 88%, 66%) !important;
   --prompt-background: rgb(22, 22, 22) !important;
   --ribbon-background: rgb(24, 24, 24) !important;
   --ribbon-background-collapsed: rgb(22, 22, 22) !important;
-  --search-clear-button-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --search-icon-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --search-clear-button-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --search-icon-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --search-result-background: rgb(22, 22, 22) !important;
-  --setting-group-heading-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --setting-items-background: color-mix(in srgb, rgb(138, 92, 245) 50%, #ffffff 10%) !important;
+  --setting-group-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --setting-items-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%) !important;
   --status-bar-background: rgb(24, 24, 24) !important;
-  --status-bar-text-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --status-bar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --suggestion-background: rgb(22, 22, 22) !important;
   --tab-background-active: rgb(22, 22, 22) !important;
   --tab-container-background: rgb(24, 24, 24) !important;
   --tab-switcher-background: rgb(24, 24, 24) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, rgb(24, 24, 24), transparent) !important;
-  --tab-text-color: rgb(138, 92, 245) !important;
-  --tab-text-color-active: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --tab-text-color-focused: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --tab-text-color-focused-active: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --tab-text-color-focused-active-current: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --table-background: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-border-color: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent 0%) !important;
-  --table-column-alt-background: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-drag-handle-color: rgb(138, 92, 245) !important;
-  --table-header-background: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-header-border-color: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent 0%) !important;
-  --table-header-color: color-mix(in srgb, rgb(138, 92, 245) 80%, #ffffff 20%) !important;
-  --table-row-alt-background: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-row-alt-background-hover: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-row-background-hover: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --text-faint: rgb(138, 92, 245) !important;
-  --text-highlight-bg: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%) !important;
-  --text-muted: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --text-normal: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --textHighlight: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%) !important;
+  --tab-text-color: hsl(258, 88%, 66%) !important;
+  --tab-text-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --tab-text-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --tab-text-color-focused-active: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --table-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%) !important;
+  --table-column-alt-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-drag-handle-color: hsl(258, 88%, 66%) !important;
+  --table-header-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-header-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%) !important;
+  --table-header-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #ffffff 20%) !important;
+  --table-row-alt-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-row-alt-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-row-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --text-faint: hsl(258, 88%, 66%) !important;
+  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%) !important;
+  --text-muted: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --text-normal: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --textHighlight: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%) !important;
   --titleFont: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: rgb(24, 24, 24) !important;
-  --titlebar-background-focused: color-mix(in srgb, rgb(138, 92, 245) 50%, transparent 0%) !important;
-  --titlebar-text-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --titlebar-text-color-focused: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --vault-profile-color: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
-  --vault-profile-color-hover: color-mix(in srgb, rgb(138, 92, 245) 30%, #ffffff 70%) !important;
+  --titlebar-background-focused: color-mix(in srgb, hsl(258, 88%, 66%) 50%, transparent 0%) !important;
+  --titlebar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --titlebar-text-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --vault-profile-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --vault-profile-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -559,6 +559,350 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: color(srgb 0.862096 0.80824 0.98776);
   text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(22, 22, 22);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   padding-bottom: 8px;
@@ -935,20 +1279,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
   text-decoration: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
-  border-left-color: color(srgb 0.862096 0.80824 0.98776);
-  border-right-color: color(srgb 0.862096 0.80824 0.98776);
-  border-top-color: color(srgb 0.862096 0.80824 0.98776);
-  color: color(srgb 0.862096 0.80824 0.98776);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
@@ -1119,95 +1449,95 @@ html[saved-theme="dark"] body sup {
   light: {
     base: `:root:root {
   --background-primary: rgb(228, 228, 228) !important;
-  --background-primary-alt: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 10%) !important;
+  --background-primary-alt: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%) !important;
   --background-secondary: rgb(197, 197, 197) !important;
-  --background-secondary-alt: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%) !important;
+  --background-secondary-alt: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%) !important;
   --bases-cards-background: rgb(228, 228, 228) !important;
-  --bases-cards-cover-background: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 10%) !important;
-  --bases-group-heading-property-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --bases-table-border-color: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent 0%) !important;
+  --bases-cards-cover-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%) !important;
+  --bases-group-heading-property-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --bases-table-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%) !important;
   --bases-table-cell-background-active: rgb(228, 228, 228) !important;
-  --bases-table-cell-background-disabled: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 10%) !important;
-  --bases-table-group-background: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 10%) !important;
+  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%) !important;
+  --bases-table-group-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%) !important;
   --bases-table-header-background: rgb(228, 228, 228) !important;
-  --bases-table-header-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --bases-table-row-background-hover: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
+  --bases-table-header-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --bases-table-row-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
   --bases-table-summary-background: rgb(228, 228, 228) !important;
   --blur-background: color-mix(in srgb, rgb(228, 228, 228) 65%, transparent) linear-gradient(rgb(228, 228, 228), color-mix(in srgb, rgb(228, 228, 228) 65%, transparent)) !important;
   --bodyFont: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-color: color-mix(in srgb, rgb(138, 92, 245) 80%, #000000 20%) !important;
+  --bold-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #000000 20%) !important;
   --callout-border-width: 5px;
   --callout-padding: 0;
   --callout-radius: 12px;
   --callout-title-weight: bold;
-  --canvas-background: color-mix(in srgb, rgb(138, 92, 245) 15%, transparent 0%) !important;
-  --canvas-card-label-color: rgb(138, 92, 245) !important;
+  --canvas-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%) !important;
+  --canvas-card-label-color: hsl(258, 88%, 66%) !important;
   --canvas-dot-pattern: rgb(102, 102, 102) !important;
-  --caret-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --checkbox-border-color: rgb(138, 92, 245) !important;
-  --checkbox-border-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --checkbox-color: rgb(138, 92, 245) !important;
+  --caret-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --checkbox-border-color: hsl(258, 88%, 66%) !important;
+  --checkbox-border-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --checkbox-color: hsl(258, 88%, 66%) !important;
   --checkbox-marker-color: rgb(228, 228, 228) !important;
   --checkbox-radius: 15px !important;
-  --checklist-done-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --code-background: color-mix(in srgb, rgb(138, 92, 245) 15%, transparent 0%) !important;
-  --code-comment: rgb(138, 92, 245) !important;
-  --code-normal: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --code-punctuation: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --checklist-done-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --code-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%) !important;
+  --code-comment: hsl(258, 88%, 66%) !important;
+  --code-normal: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --code-punctuation: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --codeFont: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: rgb(138, 92, 245) !important;
-  --color-accent-trans: color-mix(in srgb, rgb(138, 92, 245) 15%, transparent 0%) !important;
-  --dark: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --collapse-icon-color: hsl(258, 88%, 66%) !important;
+  --color-accent-trans: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%) !important;
+  --dark: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --dark-or-white-var: #000000 !important;
-  --darkgray: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --darkgray: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --default-font: 'JetBrains Mono', monospace !important;
   --file-header-background: rgb(228, 228, 228) !important;
   --file-header-background-focused: rgb(228, 228, 228) !important;
   --file-header-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --flair-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --font-interface: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --footnote-id-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --footnote-id-color-no-occurrences: rgb(138, 92, 245) !important;
-  --graph-node: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --graph-node-unresolved: rgb(138, 92, 245) !important;
-  --graph-text: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --gray: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --footnote-id-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --footnote-id-color-no-occurrences: hsl(258, 88%, 66%) !important;
+  --graph-node: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --graph-node-unresolved: hsl(258, 88%, 66%) !important;
+  --graph-text: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --gray: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --grid-size: 64px !important;
   --headerFont: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgb(138, 92, 245) !important;
-  --highlight: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%) !important;
-  --icon-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --icon-color-focused: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --icon-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --input-date-separator: rgb(138, 92, 245) !important;
-  --input-placeholder-color: rgb(138, 92, 245) !important;
-  --interactive-color: rgb(138, 92, 245) !important;
-  --italic-color: color-mix(in srgb, rgb(138, 92, 245) 60%, #000000 20%) !important;
+  --heading-formatting: hsl(258, 88%, 66%) !important;
+  --highlight: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%) !important;
+  --icon-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --icon-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --icon-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --input-date-separator: hsl(258, 88%, 66%) !important;
+  --input-placeholder-color: hsl(258, 88%, 66%) !important;
+  --interactive-color: hsl(258, 88%, 66%) !important;
+  --italic-color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #000000 20%) !important;
   --large-kanban-width: 400px !important;
   --light: rgb(228, 228, 228) !important;
   --lightgray: rgb(197, 197, 197) !important;
-  --list-marker-color: rgb(138, 92, 245) !important;
-  --list-marker-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --list-marker-color: hsl(258, 88%, 66%) !important;
+  --list-marker-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --menu-background: rgb(197, 197, 197) !important;
   --metadata-input-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --metadata-input-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --metadata-label-font: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --metadata-label-text-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --metadata-label-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --metadata-label-text-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --modal-background: rgb(228, 228, 228) !important;
-  --nav-collapse-icon-color: rgb(138, 92, 245) !important;
-  --nav-collapse-icon-color-collapsed: rgb(138, 92, 245) !important;
-  --nav-heading-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --nav-heading-color-collapsed: rgb(138, 92, 245) !important;
-  --nav-heading-color-collapsed-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --nav-heading-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --nav-item-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --nav-item-color-active: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --nav-item-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --nav-item-color-selected: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --nav-tag-color: rgb(138, 92, 245) !important;
-  --nav-tag-color-active: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --nav-tag-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
+  --nav-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --nav-heading-color-collapsed: hsl(258, 88%, 66%) !important;
+  --nav-heading-color-collapsed-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --nav-heading-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --nav-item-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --nav-item-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --nav-item-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --nav-item-color-selected: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --nav-tag-color: hsl(258, 88%, 66%) !important;
+  --nav-tag-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --nav-tag-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --pdf-background: rgb(228, 228, 228) !important;
   --pdf-page-background: rgb(228, 228, 228) !important;
   --pdf-sidebar-background: rgb(228, 228, 228) !important;
@@ -1224,54 +1554,54 @@ html[saved-theme="dark"] body sup {
   --pen-purple: #9b4ff0 !important;
   --pen-red: #e14a49 !important;
   --pen-white: #edf1fc !important;
-  --pill-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --pill-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --pill-color-remove: rgb(138, 92, 245) !important;
+  --pill-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --pill-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --pill-color-remove: hsl(258, 88%, 66%) !important;
   --prompt-background: rgb(228, 228, 228) !important;
   --raised-background: color-mix(in srgb, rgb(228, 228, 228) 65%, transparent) linear-gradient(rgb(228, 228, 228), color-mix(in srgb, rgb(228, 228, 228) 65%, transparent)) !important;
   --ribbon-background: rgb(197, 197, 197) !important;
   --ribbon-background-collapsed: rgb(228, 228, 228) !important;
-  --search-clear-button-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --search-icon-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --search-clear-button-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --search-icon-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --search-result-background: rgb(228, 228, 228) !important;
-  --setting-group-heading-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --setting-items-background: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 10%) !important;
+  --setting-group-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --setting-items-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%) !important;
   --status-bar-background: rgb(197, 197, 197) !important;
-  --status-bar-text-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --status-bar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --suggestion-background: rgb(228, 228, 228) !important;
   --tab-background-active: rgb(228, 228, 228) !important;
   --tab-container-background: rgb(197, 197, 197) !important;
   --tab-switcher-background: rgb(197, 197, 197) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, rgb(197, 197, 197), transparent) !important;
-  --tab-text-color: rgb(138, 92, 245) !important;
-  --tab-text-color-active: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --tab-text-color-focused: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --tab-text-color-focused-active: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --tab-text-color-focused-active-current: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --table-background: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-border-color: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent 0%) !important;
-  --table-column-alt-background: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-drag-handle-color: rgb(138, 92, 245) !important;
+  --tab-text-color: hsl(258, 88%, 66%) !important;
+  --tab-text-color-active: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --tab-text-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --tab-text-color-focused-active: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --tab-text-color-focused-active-current: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --table-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%) !important;
+  --table-column-alt-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-drag-handle-color: hsl(258, 88%, 66%) !important;
   --table-drag-handle-color-active: #ffffff !important;
-  --table-header-background: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-header-border-color: color-mix(in srgb, rgb(138, 92, 245) 80%, transparent 0%) !important;
-  --table-header-color: color-mix(in srgb, rgb(138, 92, 245) 80%, #000000 20%) !important;
-  --table-row-alt-background: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-row-alt-background-hover: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --table-row-background-hover: color-mix(in srgb, rgb(138, 92, 245) 20%, transparent 90%) !important;
-  --text-faint: rgb(138, 92, 245) !important;
-  --text-highlight-bg: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%) !important;
-  --text-muted: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --text-normal: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --table-header-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-header-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, transparent 0%) !important;
+  --table-header-color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #000000 20%) !important;
+  --table-row-alt-background: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-row-alt-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --table-row-background-hover: color-mix(in srgb, hsl(258, 88%, 66%) 20%, transparent 90%) !important;
+  --text-faint: hsl(258, 88%, 66%) !important;
+  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%) !important;
+  --text-muted: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --text-normal: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --text-on-accent: #ffffff !important;
-  --textHighlight: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%) !important;
+  --textHighlight: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%) !important;
   --titleFont: JetBrains Mono, monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: rgb(197, 197, 197) !important;
-  --titlebar-background-focused: color-mix(in srgb, rgb(138, 92, 245) 30%, transparent 0%) !important;
-  --titlebar-text-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --titlebar-text-color-focused: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --vault-profile-color: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
-  --vault-profile-color-hover: color-mix(in srgb, rgb(138, 92, 245) 50%, #000000 40%) !important;
+  --titlebar-background-focused: color-mix(in srgb, hsl(258, 88%, 66%) 30%, transparent 0%) !important;
+  --titlebar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --titlebar-text-color-focused: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --vault-profile-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --vault-profile-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1674,6 +2004,350 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(228, 228, 228);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   padding-bottom: 8px;
@@ -2050,20 +2724,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
   text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);

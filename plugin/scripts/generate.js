@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import * as lucideIcons from "@lucide/icons";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -323,6 +324,185 @@ function sanitizeFontValue(value) {
   return cleaned.trim();
 }
 
+const calloutIconAliases = {
+  "quote-glyph": "quote",
+  "library-big": "library",
+  "book-open": "book-open",
+  "message-square": "message-square",
+  "check-square": "check-square",
+  "clock-12": "clock-12",
+  "clock-4": "clock-4",
+  "code-2": "code-2",
+  "code-xml": "code-xml",
+  "flag-triangle-right": "flag-triangle-right",
+  "help-circle": "help-circle",
+  "layout-dashboard": "layout-dashboard",
+  "sticky-note": "sticky-note",
+  "user-check": "user-check",
+  "user-plus": "user-plus",
+  "user-x": "user-x",
+  "thumbs-up": "thumbs-up",
+  "thumbs-down": "thumbs-down",
+  "at-sign": "at-sign",
+  "circle-check-big": "circle-check-big",
+};
+
+function renderLucideNodes(nodes) {
+  return nodes
+    .map((node) => {
+      const [tag, attrs, children] = node;
+      const attrStr = Object.entries(attrs)
+        .filter(([k]) => k !== "key")
+        .map(([k, v]) => `${k}="${v}"`)
+        .join(" ");
+      if (children && children.length > 0) {
+        return `<${tag} ${attrStr}>${renderLucideNodes(children)}</${tag}>`;
+      }
+      return `<${tag} ${attrStr}/>`;
+    })
+    .join("");
+}
+
+function buildLucideSvgString(icon) {
+  const size = icon?.size ?? icon?.width ?? 24;
+  const children = renderLucideNodes(icon.node || []);
+  return (
+    `<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" ` +
+    `viewBox="0 0 ${size} ${size}" fill="none" stroke="currentColor" ` +
+    `stroke-width="2" stroke-linecap="round" stroke-linejoin="round">` +
+    `${children}</svg>`
+  );
+}
+
+function svgToDataUri(svg) {
+  const encoded = svg
+    .replace(/"/g, "'")
+    .replace(/#/g, "%23")
+    .replace(/</g, "%3C")
+    .replace(/>/g, "%3E");
+  return `url("data:image/svg+xml;utf8,${encoded}")`;
+}
+
+function normalizeCalloutIconName(value) {
+  if (!value) return null;
+  const trimmed = value.trim();
+  if (
+    trimmed === "none" ||
+    trimmed === "unset" ||
+    trimmed === "" ||
+    trimmed === "normal"
+  ) {
+    return null;
+  }
+  if (trimmed.startsWith("url(")) return trimmed;
+  if (trimmed.startsWith("var(")) return trimmed;
+  if (trimmed.includes("<svg")) return trimmed;
+  const cleaned = trimmed.replace(/['"]/g, "");
+  if (/[{};]/.test(cleaned)) return null;
+  return cleaned.replace(/^lucide[:\-]/, "").replace(/^lucide-/, "");
+}
+
+function toPascalCase(value) {
+  return value
+    .split(/[^a-zA-Z0-9]/)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join("");
+}
+
+function resolveCalloutIconUri(value) {
+  const normalized = normalizeCalloutIconName(value);
+  if (!normalized) return { uri: null, reason: "empty" };
+  if (normalized.startsWith("url(")) return { uri: normalized };
+  if (normalized.startsWith("var(")) return { uri: normalized };
+  if (normalized.includes("<svg")) return { uri: svgToDataUri(normalized) };
+
+  if (/\p{Extended_Pictographic}/u.test(normalized)) {
+    return { uri: null, reason: "emoji" };
+  }
+
+  const alias = calloutIconAliases[normalized] || normalized;
+  const candidates = [
+    alias,
+    toPascalCase(alias),
+    alias.charAt(0).toUpperCase() + alias.slice(1),
+  ];
+
+  for (const name of candidates) {
+    const icon = lucideIcons[name];
+    if (icon && icon.node) {
+      return { uri: svgToDataUri(buildLucideSvgString(icon)) };
+    }
+  }
+  return { uri: null, reason: "unknown" };
+}
+
+function buildCalloutIconCSS(data, warnings, baseSelector, htmlSelector) {
+  const lines = [];
+  for (const [selector, props] of Object.entries(data)) {
+    if (!selector.includes("callout[data-callout=")) continue;
+    const iconValue = props["--callout-icon"];
+    const resolved = resolveCalloutIconUri(iconValue);
+    if (resolved.uri) {
+      const scoped = selector.includes("&")
+        ? selector.replaceAll("&", baseSelector)
+        : `${baseSelector} ${selector}`;
+      const htmlScoped = `${htmlSelector} ${scoped}`;
+      lines.push(`${htmlScoped} {\n  --callout-icon: ${resolved.uri};\n}`);
+    } else if (iconValue) {
+      warnings?.add(`${selector}: ${iconValue}`);
+    }
+  }
+  return lines.join("\n\n");
+}
+
+function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
+  const escapeAttrValue = (value) =>
+    value.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
+
+  const entries = Object.entries(data).filter(([selector]) =>
+    selector.startsWith('input[data-task="'),
+  );
+  if (entries.length === 0) return "";
+
+  const grouped = new Map();
+  for (const [selector, props] of entries) {
+    grouped.set(selector, props);
+  }
+
+  const blocks = [];
+  for (const [selector, props] of grouped.entries()) {
+    const taskMatch = selector.match(/data-task=\"([^\"]*)\"/);
+    if (!taskMatch) continue;
+    const taskChar = escapeAttrValue(taskMatch[1]);
+    const isPseudo = selector.includes("::after");
+    const quartzBase = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]`;
+    const quartzSelector = isPseudo ? `${quartzBase}::after` : quartzBase;
+    const lines = [];
+    for (const [prop, value] of Object.entries(props)) {
+      if (!value || value === "none" || value === "normal") continue;
+      if (prop === "-webkit-mask-image") {
+        lines.push(`  mask-image: ${value};`);
+        lines.push(`  -webkit-mask-image: ${value};`);
+        if (!isPseudo) {
+          lines.push(`  mask-size: contain;`);
+          lines.push(`  -webkit-mask-size: contain;`);
+          lines.push(`  mask-repeat: no-repeat;`);
+          lines.push(`  -webkit-mask-repeat: no-repeat;`);
+        }
+      } else {
+        lines.push(`  ${prop}: ${value};`);
+      }
+    }
+    if (lines.length > 0) {
+      const htmlScoped = `${htmlSelector} ${quartzSelector}`;
+      blocks.push(`${htmlScoped} {\n${lines.join("\n")}\n}`);
+    }
+  }
+
+  return blocks.join("\n\n");
+}
+
 function resolveThemeKey(themeId, themesMeta) {
   if (!themeId.includes(".")) return themeId;
   const [base, ...rest] = themeId.split(".");
@@ -335,7 +515,7 @@ function resolveThemeKey(themeId, themesMeta) {
   return themeId;
 }
 
-function buildModeCSS(data, mode, bothModes, config, aspectMap) {
+function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
   const aspectSelectors = new Map();
   const baseVars = {};
 
@@ -407,7 +587,8 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap) {
         value === undefined ||
         value === null ||
         value === "" ||
-        value === "inherit"
+        value === "inherit" ||
+        prop === "--callout-icon"
       ) {
         continue;
       }
@@ -438,6 +619,18 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap) {
       ? 'html[saved-theme="dark"]'
       : 'html[saved-theme="light"]'
     : "html";
+
+  const extraCalloutIconCSS = buildCalloutIconCSS(
+    data,
+    warnings,
+    baseSelector,
+    htmlSelector,
+  );
+  const extraCheckboxIconCSS = buildCheckboxIconCSS(
+    data,
+    baseSelector,
+    htmlSelector,
+  );
 
   for (const aspect of ASPECT_ORDER) {
     const selectorMap = aspectSelectors.get(aspect);
@@ -474,6 +667,13 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap) {
         return `${scopedSelector} {\n${propLines.join("\n")}\n}`;
       });
       cssParts.push(selectorBlocks.join("\n\n"));
+    }
+
+    if (aspect === "callouts" && extraCalloutIconCSS) {
+      cssParts.push(extraCalloutIconCSS);
+    }
+    if (aspect === "checkboxes" && extraCheckboxIconCSS) {
+      cssParts.push(extraCheckboxIconCSS);
     }
 
     const css = cssParts.join("\n\n").trim();
@@ -679,11 +879,12 @@ async function main() {
     };
 
     const bothModes = hasDark && hasLight;
+    const warnings = new Set();
     const darkAspectCSS = hasDark
-      ? buildModeCSS(darkData, "dark", bothModes, config, aspectMap)
+      ? buildModeCSS(darkData, "dark", bothModes, config, aspectMap, warnings)
       : {};
     const lightAspectCSS = hasLight
-      ? buildModeCSS(lightData, "light", bothModes, config, aspectMap)
+      ? buildModeCSS(lightData, "light", bothModes, config, aspectMap, warnings)
       : {};
 
     const normalizedId = resolveThemeKey(themeId, themesMeta);
@@ -698,6 +899,14 @@ async function main() {
       );
     } catch {
       // No extras file for this theme — that's fine
+    }
+
+    if (warnings.size > 0) {
+      const entries = [...warnings].slice(0, 20).join(", ");
+      const suffix = warnings.size > 20 ? "..." : "";
+      console.warn(
+        `Warning: Unresolved callout icons for theme "${themeId}": ${entries}${suffix}`,
+      );
     }
 
     const moduleContent = renderThemeModule({

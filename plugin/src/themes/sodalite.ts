@@ -191,25 +191,6 @@ html body ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgb(32, 32, 40), rgb(27, 32, 32)) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
 }`,
-    explorer: `html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-bottom-color: rgba(255, 255, 255, 0.08);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: rgba(255, 255, 255, 0.08);
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-right-color: rgba(255, 255, 255, 0.08);
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: rgba(255, 255, 255, 0.08);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-style: solid;
-  border-top-width: 1px;
-}`,
     footer: `html body footer {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(179, 179, 179);

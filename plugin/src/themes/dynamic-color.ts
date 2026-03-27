@@ -12,129 +12,301 @@ export const theme: ThemeData = {
   --background-modifier-active-hover: hsl(
 		258 calc(max(48%, 88%)) 30%
 	) !important;
-  --background-modifier-border: rgb(0, 0, 0) !important;
+  --background-modifier-border: hsl(
+		258 8% 30%
+	) !important;
   --background-modifier-border-focus: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --background-modifier-border-hover: rgb(0, 0, 0) !important;
-  --background-modifier-error: rgb(0, 0, 0) !important;
-  --background-modifier-hover: rgb(0, 0, 0) !important;
-  --background-primary: rgb(0, 0, 0) !important;
-  --background-primary-alt: rgb(0, 0, 0) !important;
-  --background-secondary: rgb(0, 0, 0) !important;
-  --background-secondary-alt: rgb(0, 0, 0) !important;
-  --bases-cards-background: rgb(0, 0, 0) !important;
-  --bases-cards-cover-background: rgb(0, 0, 0) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
-  --bases-embed-border-color: rgb(0, 0, 0) !important;
-  --bases-group-heading-property-color: rgb(0, 0, 0) !important;
-  --bases-table-border-color: rgb(0, 0, 0) !important;
-  --bases-table-cell-background-active: rgb(0, 0, 0) !important;
-  --bases-table-cell-background-disabled: rgb(0, 0, 0) !important;
+  --background-modifier-border-hover: hsl(
+		258 8% 60%
+	) !important;
+  --background-modifier-error: hsl(
+		0 84% 30%
+	) !important;
+  --background-modifier-hover: hsl(
+		258 4% 12%
+	) !important;
+  --background-primary: hsl(
+		258 4% 4%
+	) !important;
+  --background-primary-alt: hsl(
+		258 4% 10%
+	) !important;
+  --background-secondary: hsl(
+		258 4% 17%
+	) !important;
+  --background-secondary-alt: hsl(
+		258 4% 22%
+	) !important;
+  --bases-cards-background: hsl(
+		258 4% 4%
+	) !important;
+  --bases-cards-cover-background: hsl(
+		258 4% 10%
+	) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(
+		258 8% 30%
+	) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(
+		258 8% 60%
+	) !important;
+  --bases-embed-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --bases-group-heading-property-color: hsl(
+		258 8% 60%
+	) !important;
+  --bases-table-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --bases-table-cell-background-active: hsl(
+		258 4% 4%
+	) !important;
+  --bases-table-cell-background-disabled: hsl(
+		258 4% 10%
+	) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --bases-table-group-background: rgb(0, 0, 0) !important;
-  --bases-table-header-background: rgb(0, 0, 0) !important;
-  --bases-table-header-background-hover: rgb(0, 0, 0) !important;
-  --bases-table-header-color: rgb(0, 0, 0) !important;
-  --bases-table-summary-background: rgb(0, 0, 0) !important;
-  --bases-table-summary-background-hover: rgb(0, 0, 0) !important;
-  --blockquote-background-color: rgb(0, 0, 0) !important;
+  --bases-table-group-background: hsl(
+		258 4% 10%
+	) !important;
+  --bases-table-header-background: hsl(
+		258 4% 4%
+	) !important;
+  --bases-table-header-background-hover: hsl(
+		258 4% 12%
+	) !important;
+  --bases-table-header-color: hsl(
+		258 8% 60%
+	) !important;
+  --bases-table-summary-background: hsl(
+		258 4% 4%
+	) !important;
+  --bases-table-summary-background-hover: hsl(
+		258 4% 12%
+	) !important;
+  --blockquote-background-color: hsl(
+		258 4% 17%
+	) !important;
   --blockquote-border-color: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --blockquote-color: rgb(0, 0, 0) !important;
-  --blur-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
+  --blockquote-color: hsl(
+		258 4% 90%
+	) !important;
+  --blur-background: color-mix(in srgb, hsl(
+		258 4% 12%
+	) 65%, transparent) linear-gradient(hsl(
+		258 4% 12%
+	), color-mix(in srgb, hsl(
+		258 4% 12%
+	) 65%, transparent)) !important;
   --button-radius: 20px !important;
-  --canvas-background: rgb(0, 0, 0) !important;
-  --canvas-card-label-color: rgb(0, 0, 0) !important;
-  --canvas-dot-pattern: rgb(0, 0, 0) !important;
-  --caret-color: rgb(0, 0, 0) !important;
-  --checkbox-border-color: rgb(0, 0, 0) !important;
-  --checkbox-border-color-hover: rgb(0, 0, 0) !important;
+  --canvas-background: hsl(
+		258 4% 10%
+	) !important;
+  --canvas-card-label-color: hsl(
+		258 4% 90%
+	) !important;
+  --canvas-dot-pattern: hsl(
+		258 8% 30%
+	) !important;
+  --caret-color: hsl(
+		258 4% 90%
+	) !important;
+  --checkbox-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --checkbox-border-color-hover: hsl(
+		258 8% 60%
+	) !important;
   --checkbox-color: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --checkbox-marker-color: rgb(0, 0, 0) !important;
-  --checklist-done-color: rgb(0, 0, 0) !important;
-  --code-background: rgb(0, 0, 0) !important;
-  --code-border-color: rgb(0, 0, 0) !important;
-  --code-bracket-background: rgb(0, 0, 0) !important;
-  --code-comment: rgb(0, 0, 0) !important;
-  --code-normal: rgb(0, 0, 0) !important;
-  --code-punctuation: rgb(0, 0, 0) !important;
-  --collapse-icon-color: rgb(0, 0, 0) !important;
+  --checkbox-marker-color: hsl(
+		258 4% 4%
+	) !important;
+  --checklist-done-color: hsl(
+		258 8% 60%
+	) !important;
+  --code-background: hsl(
+		258 4% 6%
+	) !important;
+  --code-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --code-bracket-background: hsl(
+		258 4% 12%
+	) !important;
+  --code-comment: hsl(
+		258 8% 30%
+	) !important;
+  --code-normal: hsl(
+		258 4% 90%
+	) !important;
+  --code-punctuation: hsl(
+		258 8% 60%
+	) !important;
+  --collapse-icon-color: hsl(
+		258 8% 30%
+	) !important;
   --collapse-icon-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --dark: rgb(0, 0, 0) !important;
-  --darkgray: rgb(0, 0, 0) !important;
-  --divider-color: rgb(0, 0, 0) !important;
-  --divider-color-hover: rgb(0, 0, 0) !important;
-  --dropdown-background: rgb(0, 0, 0) !important;
+  --dark: hsl(
+		258 4% 90%
+	) !important;
+  --darkgray: hsl(
+		258 4% 90%
+	) !important;
+  --divider-color: hsl(
+		258 8% 30%
+	) !important;
+  --divider-color-hover: hsl(
+		258 8% 60%
+	) !important;
+  --dropdown-background: hsl(
+		258 4% 12%
+	) !important;
   --dropdown-background-hover: hsl(
 		258 calc(max(48%, 88%)) 30%
 	) !important;
-  --embed-background: rgb(0, 0, 0) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgb(0, 0, 0), inset 0 0 0 1px rgb(0, 0, 0) !important;
+  --embed-background: hsl(
+		258 4% 6%
+	) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsl(
+		258 8% 30%
+	), inset 0 0 0 1px hsl(
+		258 8% 30%
+	) !important;
   --embed-border-start: 2px solid hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
   --error-hue: 0 !important;
   --error-saturation: 84% !important;
-  --file-header-background: rgb(0, 0, 0) !important;
-  --file-header-background-focused: rgb(0, 0, 0) !important;
-  --flair-background: rgb(0, 0, 0) !important;
-  --flair-color: rgb(0, 0, 0) !important;
-  --footnote-divider-color: rgb(0, 0, 0) !important;
-  --footnote-id-color: rgb(0, 0, 0) !important;
-  --footnote-id-color-no-occurrences: rgb(0, 0, 0) !important;
-  --footnote-input-background-active: rgb(0, 0, 0) !important;
-  --graph-line: rgb(0, 0, 0) !important;
-  --graph-node: rgb(0, 0, 0) !important;
-  --graph-node-attachment: rgb(0, 0, 0) !important;
-  --graph-node-focused: rgb(0, 0, 0) !important;
+  --file-header-background: hsl(
+		258 4% 4%
+	) !important;
+  --file-header-background-focused: hsl(
+		258 4% 4%
+	) !important;
+  --flair-background: hsl(
+		258 4% 12%
+	) !important;
+  --flair-color: hsl(
+		258 4% 90%
+	) !important;
+  --footnote-divider-color: hsl(
+		258 8% 30%
+	) !important;
+  --footnote-id-color: hsl(
+		258 8% 60%
+	) !important;
+  --footnote-id-color-no-occurrences: hsl(
+		258 8% 30%
+	) !important;
+  --footnote-input-background-active: hsl(
+		258 4% 12%
+	) !important;
+  --graph-line: hsl(
+		258 8% 60%
+	) !important;
+  --graph-node: hsl(
+		258 4% 12%
+	) !important;
+  --graph-node-attachment: hsl(
+		318 24% 30%
+	) !important;
+  --graph-node-focused: hsl(
+		258 4% 24%
+	) !important;
   --graph-node-tag: hsl(
 		258 calc(max(48%, 88%)) 30%
 	) !important;
-  --graph-node-unresolved: rgb(0, 0, 0) !important;
-  --graph-text: rgb(0, 0, 0) !important;
-  --gray: rgb(0, 0, 0) !important;
-  --h1-color: rgb(0, 0, 0) !important;
-  --h2-color: rgb(0, 0, 0) !important;
-  --h3-color: rgb(0, 0, 0) !important;
-  --h4-color: rgb(0, 0, 0) !important;
-  --h5-color: rgb(0, 0, 0) !important;
-  --h6-color: rgb(0, 0, 0) !important;
-  --heading-formatting: rgb(0, 0, 0) !important;
-  --highlight: rgb(0, 0, 0) !important;
-  --hr-color: rgb(0, 0, 0) !important;
+  --graph-node-unresolved: hsl(
+		258 4% 10%
+	) !important;
+  --graph-text: hsl(
+		258 4% 90%
+	) !important;
+  --gray: hsl(
+		258 8% 60%
+	) !important;
+  --h1-color: hsl(
+		258 4% 90%
+	) !important;
+  --h2-color: hsl(
+		258 4% 90%
+	) !important;
+  --h3-color: hsl(
+		258 4% 90%
+	) !important;
+  --h4-color: hsl(
+		258 4% 90%
+	) !important;
+  --h5-color: hsl(
+		258 4% 90%
+	) !important;
+  --h6-color: hsl(
+		258 4% 90%
+	) !important;
+  --heading-formatting: hsl(
+		258 8% 30%
+	) !important;
+  --highlight: hsl(
+		318 24% 30%
+	) !important;
+  --hr-color: hsl(
+		258 8% 30%
+	) !important;
   --hue: 258 !important;
-  --icon-color: rgb(0, 0, 0) !important;
+  --icon-color: hsl(
+		258 8% 60%
+	) !important;
   --icon-color-active: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --icon-color-focused: rgb(0, 0, 0) !important;
-  --icon-color-hover: rgb(0, 0, 0) !important;
-  --inline-title-color: rgb(0, 0, 0) !important;
-  --input-date-separator: rgb(0, 0, 0) !important;
-  --input-placeholder-color: rgb(0, 0, 0) !important;
+  --icon-color-focused: hsl(
+		258 4% 90%
+	) !important;
+  --icon-color-hover: hsl(
+		258 8% 60%
+	) !important;
+  --inline-title-color: hsl(
+		258 4% 90%
+	) !important;
+  --input-date-separator: hsl(
+		258 8% 30%
+	) !important;
+  --input-placeholder-color: hsl(
+		258 8% 30%
+	) !important;
   --interactive-accent: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
   --interactive-hover: hsl(
 		258 calc(max(48%, 88%)) 30%
 	) !important;
-  --interactive-normal: rgb(0, 0, 0) !important;
-  --interactive-normal-accent: rgb(0, 0, 0) !important;
-  --interactive-normal-hover: rgb(0, 0, 0) !important;
-  --light: rgb(0, 0, 0) !important;
-  --lightgray: rgb(0, 0, 0) !important;
+  --interactive-normal: hsl(
+		258 4% 12%
+	) !important;
+  --interactive-normal-accent: hsl(
+		258 4% 24%
+	) !important;
+  --interactive-normal-hover: hsl(
+		258 4% 6%
+	) !important;
+  --light: hsl(
+		258 4% 4%
+	) !important;
+  --lightgray: hsl(
+		258 4% 17%
+	) !important;
   --link-color: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
@@ -150,92 +322,250 @@ export const theme: ThemeData = {
   --link-unresolved-color: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --list-marker-color: rgb(0, 0, 0) !important;
+  --list-marker-color: hsl(
+		258 8% 30%
+	) !important;
   --list-marker-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --list-marker-color-hover: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-99: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-99: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-99: rgb(0, 0, 0) !important;
+  --list-marker-color-hover: hsl(
+		258 8% 60%
+	) !important;
+  --md-ref-palette-error-0: hsl(0 84% 0%) !important;
+  --md-ref-palette-error-10: hsl(
+		0 84% 10%
+	) !important;
+  --md-ref-palette-error-100: hsl(
+		0 84% 100%
+	) !important;
+  --md-ref-palette-error-12: hsl(
+		0 84% 12%
+	) !important;
+  --md-ref-palette-error-17: hsl(
+		0 84% 17%
+	) !important;
+  --md-ref-palette-error-20: hsl(
+		0 84% 20%
+	) !important;
+  --md-ref-palette-error-22: hsl(
+		0 84% 22%
+	) !important;
+  --md-ref-palette-error-24: hsl(
+		0 84% 24%
+	) !important;
+  --md-ref-palette-error-25: hsl(
+		0 84% 25%
+	) !important;
+  --md-ref-palette-error-30: hsl(
+		0 84% 30%
+	) !important;
+  --md-ref-palette-error-35: hsl(
+		0 84% 35%
+	) !important;
+  --md-ref-palette-error-4: hsl(0 84% 4%) !important;
+  --md-ref-palette-error-40: hsl(
+		0 84% 40%
+	) !important;
+  --md-ref-palette-error-5: hsl(0 84% 5%) !important;
+  --md-ref-palette-error-50: hsl(
+		0 84% 50%
+	) !important;
+  --md-ref-palette-error-6: hsl(0 84% 6%) !important;
+  --md-ref-palette-error-60: hsl(
+		0 84% 60%
+	) !important;
+  --md-ref-palette-error-70: hsl(
+		0 84% 70%
+	) !important;
+  --md-ref-palette-error-80: hsl(
+		0 84% 80%
+	) !important;
+  --md-ref-palette-error-87: hsl(
+		0 84% 87%
+	) !important;
+  --md-ref-palette-error-90: hsl(
+		0 84% 90%
+	) !important;
+  --md-ref-palette-error-92: hsl(
+		0 84% 92%
+	) !important;
+  --md-ref-palette-error-94: hsl(
+		0 84% 94%
+	) !important;
+  --md-ref-palette-error-95: hsl(
+		0 84% 95%
+	) !important;
+  --md-ref-palette-error-96: hsl(
+		0 84% 96%
+	) !important;
+  --md-ref-palette-error-98: hsl(
+		0 84% 98%
+	) !important;
+  --md-ref-palette-error-99: hsl(
+		0 84% 99%
+	) !important;
+  --md-ref-palette-neutral-0: hsl(
+		258 4% 0%
+	) !important;
+  --md-ref-palette-neutral-10: hsl(
+		258 4% 10%
+	) !important;
+  --md-ref-palette-neutral-100: hsl(
+		258 4% 100%
+	) !important;
+  --md-ref-palette-neutral-12: hsl(
+		258 4% 12%
+	) !important;
+  --md-ref-palette-neutral-17: hsl(
+		258 4% 17%
+	) !important;
+  --md-ref-palette-neutral-20: hsl(
+		258 4% 20%
+	) !important;
+  --md-ref-palette-neutral-22: hsl(
+		258 4% 22%
+	) !important;
+  --md-ref-palette-neutral-24: hsl(
+		258 4% 24%
+	) !important;
+  --md-ref-palette-neutral-25: hsl(
+		258 4% 25%
+	) !important;
+  --md-ref-palette-neutral-30: hsl(
+		258 4% 30%
+	) !important;
+  --md-ref-palette-neutral-35: hsl(
+		258 4% 35%
+	) !important;
+  --md-ref-palette-neutral-4: hsl(
+		258 4% 4%
+	) !important;
+  --md-ref-palette-neutral-40: hsl(
+		258 4% 40%
+	) !important;
+  --md-ref-palette-neutral-5: hsl(
+		258 4% 5%
+	) !important;
+  --md-ref-palette-neutral-50: hsl(
+		258 4% 50%
+	) !important;
+  --md-ref-palette-neutral-6: hsl(
+		258 4% 6%
+	) !important;
+  --md-ref-palette-neutral-60: hsl(
+		258 4% 60%
+	) !important;
+  --md-ref-palette-neutral-70: hsl(
+		258 4% 70%
+	) !important;
+  --md-ref-palette-neutral-80: hsl(
+		258 4% 80%
+	) !important;
+  --md-ref-palette-neutral-87: hsl(
+		258 4% 87%
+	) !important;
+  --md-ref-palette-neutral-90: hsl(
+		258 4% 90%
+	) !important;
+  --md-ref-palette-neutral-92: hsl(
+		258 4% 92%
+	) !important;
+  --md-ref-palette-neutral-94: hsl(
+		258 4% 94%
+	) !important;
+  --md-ref-palette-neutral-95: hsl(
+		258 4% 95%
+	) !important;
+  --md-ref-palette-neutral-96: hsl(
+		258 4% 96%
+	) !important;
+  --md-ref-palette-neutral-98: hsl(
+		258 4% 98%
+	) !important;
+  --md-ref-palette-neutral-99: hsl(
+		258 4% 99%
+	) !important;
+  --md-ref-palette-neutral-variant-0: hsl(
+		258 8% 0%
+	) !important;
+  --md-ref-palette-neutral-variant-10: hsl(
+		258 8% 10%
+	) !important;
+  --md-ref-palette-neutral-variant-100: hsl(
+		258 8% 100%
+	) !important;
+  --md-ref-palette-neutral-variant-12: hsl(
+		258 8% 12%
+	) !important;
+  --md-ref-palette-neutral-variant-17: hsl(
+		258 8% 17%
+	) !important;
+  --md-ref-palette-neutral-variant-20: hsl(
+		258 8% 20%
+	) !important;
+  --md-ref-palette-neutral-variant-22: hsl(
+		258 8% 22%
+	) !important;
+  --md-ref-palette-neutral-variant-24: hsl(
+		258 8% 24%
+	) !important;
+  --md-ref-palette-neutral-variant-25: hsl(
+		258 8% 25%
+	) !important;
+  --md-ref-palette-neutral-variant-30: hsl(
+		258 8% 30%
+	) !important;
+  --md-ref-palette-neutral-variant-35: hsl(
+		258 8% 35%
+	) !important;
+  --md-ref-palette-neutral-variant-4: hsl(
+		258 8% 4%
+	) !important;
+  --md-ref-palette-neutral-variant-40: hsl(
+		258 8% 40%
+	) !important;
+  --md-ref-palette-neutral-variant-5: hsl(
+		258 8% 5%
+	) !important;
+  --md-ref-palette-neutral-variant-50: hsl(
+		258 8% 50%
+	) !important;
+  --md-ref-palette-neutral-variant-6: hsl(
+		258 8% 6%
+	) !important;
+  --md-ref-palette-neutral-variant-60: hsl(
+		258 8% 60%
+	) !important;
+  --md-ref-palette-neutral-variant-70: hsl(
+		258 8% 70%
+	) !important;
+  --md-ref-palette-neutral-variant-80: hsl(
+		258 8% 80%
+	) !important;
+  --md-ref-palette-neutral-variant-87: hsl(
+		258 8% 87%
+	) !important;
+  --md-ref-palette-neutral-variant-90: hsl(
+		258 8% 90%
+	) !important;
+  --md-ref-palette-neutral-variant-92: hsl(
+		258 8% 92%
+	) !important;
+  --md-ref-palette-neutral-variant-94: hsl(
+		258 8% 94%
+	) !important;
+  --md-ref-palette-neutral-variant-95: hsl(
+		258 8% 95%
+	) !important;
+  --md-ref-palette-neutral-variant-96: hsl(
+		258 8% 96%
+	) !important;
+  --md-ref-palette-neutral-variant-98: hsl(
+		258 8% 98%
+	) !important;
+  --md-ref-palette-neutral-variant-99: hsl(
+		258 8% 99%
+	) !important;
   --md-ref-palette-primary-0: hsl(
 		258 calc(max(48%, 88%)) 0%
 	) !important;
@@ -317,71 +647,195 @@ export const theme: ThemeData = {
   --md-ref-palette-primary-99: hsl(
 		258 calc(max(48%, 88%)) 99%
 	) !important;
-  --md-ref-palette-secondary-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-99: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-99: rgb(0, 0, 0) !important;
-  --md-sys-color-background: rgb(0, 0, 0) !important;
-  --md-sys-color-error: rgb(0, 0, 0) !important;
-  --md-sys-color-error-container: rgb(0, 0, 0) !important;
-  --md-sys-color-inverse-on-surface: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-0: hsl(
+		258 16% 0%
+	) !important;
+  --md-ref-palette-secondary-10: hsl(
+		258 16% 10%
+	) !important;
+  --md-ref-palette-secondary-100: hsl(
+		258 16% 100%
+	) !important;
+  --md-ref-palette-secondary-12: hsl(
+		258 16% 12%
+	) !important;
+  --md-ref-palette-secondary-17: hsl(
+		258 16% 17%
+	) !important;
+  --md-ref-palette-secondary-20: hsl(
+		258 16% 20%
+	) !important;
+  --md-ref-palette-secondary-22: hsl(
+		258 16% 22%
+	) !important;
+  --md-ref-palette-secondary-24: hsl(
+		258 16% 24%
+	) !important;
+  --md-ref-palette-secondary-25: hsl(
+		258 16% 25%
+	) !important;
+  --md-ref-palette-secondary-30: hsl(
+		258 16% 30%
+	) !important;
+  --md-ref-palette-secondary-35: hsl(
+		258 16% 35%
+	) !important;
+  --md-ref-palette-secondary-4: hsl(
+		258 16% 4%
+	) !important;
+  --md-ref-palette-secondary-40: hsl(
+		258 16% 40%
+	) !important;
+  --md-ref-palette-secondary-5: hsl(
+		258 16% 5%
+	) !important;
+  --md-ref-palette-secondary-50: hsl(
+		258 16% 50%
+	) !important;
+  --md-ref-palette-secondary-6: hsl(
+		258 16% 6%
+	) !important;
+  --md-ref-palette-secondary-60: hsl(
+		258 16% 60%
+	) !important;
+  --md-ref-palette-secondary-70: hsl(
+		258 16% 70%
+	) !important;
+  --md-ref-palette-secondary-80: hsl(
+		258 16% 80%
+	) !important;
+  --md-ref-palette-secondary-87: hsl(
+		258 16% 87%
+	) !important;
+  --md-ref-palette-secondary-90: hsl(
+		258 16% 90%
+	) !important;
+  --md-ref-palette-secondary-92: hsl(
+		258 16% 92%
+	) !important;
+  --md-ref-palette-secondary-94: hsl(
+		258 16% 94%
+	) !important;
+  --md-ref-palette-secondary-95: hsl(
+		258 16% 95%
+	) !important;
+  --md-ref-palette-secondary-96: hsl(
+		258 16% 96%
+	) !important;
+  --md-ref-palette-secondary-98: hsl(
+		258 16% 98%
+	) !important;
+  --md-ref-palette-secondary-99: hsl(
+		258 16% 99%
+	) !important;
+  --md-ref-palette-tertiary-0: hsl(
+		318 24% 0%
+	) !important;
+  --md-ref-palette-tertiary-10: hsl(
+		318 24% 10%
+	) !important;
+  --md-ref-palette-tertiary-100: hsl(
+		318 24% 100%
+	) !important;
+  --md-ref-palette-tertiary-12: hsl(
+		318 24% 12%
+	) !important;
+  --md-ref-palette-tertiary-17: hsl(
+		318 24% 17%
+	) !important;
+  --md-ref-palette-tertiary-20: hsl(
+		318 24% 20%
+	) !important;
+  --md-ref-palette-tertiary-22: hsl(
+		318 24% 22%
+	) !important;
+  --md-ref-palette-tertiary-24: hsl(
+		318 24% 24%
+	) !important;
+  --md-ref-palette-tertiary-25: hsl(
+		318 24% 25%
+	) !important;
+  --md-ref-palette-tertiary-30: hsl(
+		318 24% 30%
+	) !important;
+  --md-ref-palette-tertiary-35: hsl(
+		318 24% 35%
+	) !important;
+  --md-ref-palette-tertiary-4: hsl(
+		318 24% 4%
+	) !important;
+  --md-ref-palette-tertiary-40: hsl(
+		318 24% 40%
+	) !important;
+  --md-ref-palette-tertiary-5: hsl(
+		318 24% 5%
+	) !important;
+  --md-ref-palette-tertiary-50: hsl(
+		318 24% 50%
+	) !important;
+  --md-ref-palette-tertiary-6: hsl(
+		318 24% 6%
+	) !important;
+  --md-ref-palette-tertiary-60: hsl(
+		318 24% 60%
+	) !important;
+  --md-ref-palette-tertiary-70: hsl(
+		318 24% 70%
+	) !important;
+  --md-ref-palette-tertiary-80: hsl(
+		318 24% 80%
+	) !important;
+  --md-ref-palette-tertiary-87: hsl(
+		318 24% 87%
+	) !important;
+  --md-ref-palette-tertiary-90: hsl(
+		318 24% 90%
+	) !important;
+  --md-ref-palette-tertiary-92: hsl(
+		318 24% 92%
+	) !important;
+  --md-ref-palette-tertiary-94: hsl(
+		318 24% 94%
+	) !important;
+  --md-ref-palette-tertiary-95: hsl(
+		318 24% 95%
+	) !important;
+  --md-ref-palette-tertiary-96: hsl(
+		318 24% 96%
+	) !important;
+  --md-ref-palette-tertiary-98: hsl(
+		318 24% 98%
+	) !important;
+  --md-ref-palette-tertiary-99: hsl(
+		318 24% 99%
+	) !important;
+  --md-sys-color-background: hsl(
+		258 4% 10%
+	) !important;
+  --md-sys-color-error: hsl(
+		0 84% 80%
+	) !important;
+  --md-sys-color-error-container: hsl(
+		0 84% 30%
+	) !important;
+  --md-sys-color-inverse-on-surface: hsl(
+		258 4% 20%
+	) !important;
   --md-sys-color-inverse-primary: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --md-sys-color-inverse-surface: rgb(0, 0, 0) !important;
-  --md-sys-color-on-background: rgb(0, 0, 0) !important;
-  --md-sys-color-on-error: rgb(0, 0, 0) !important;
-  --md-sys-color-on-error-container: rgb(0, 0, 0) !important;
+  --md-sys-color-inverse-surface: hsl(
+		258 4% 90%
+	) !important;
+  --md-sys-color-on-background: hsl(
+		258 4% 90%
+	) !important;
+  --md-sys-color-on-error: hsl(
+		0 84% 20%
+	) !important;
+  --md-sys-color-on-error-container: hsl(
+		0 84% 90%
+	) !important;
   --md-sys-color-on-primary: hsl(
 		258 calc(max(48%, 88%)) 20%
 	) !important;
@@ -394,18 +848,42 @@ export const theme: ThemeData = {
   --md-sys-color-on-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 30%
 	) !important;
-  --md-sys-color-on-secondary: rgb(0, 0, 0) !important;
-  --md-sys-color-on-secondary-container: rgb(0, 0, 0) !important;
-  --md-sys-color-on-secondary-fixed: rgb(0, 0, 0) !important;
-  --md-sys-color-on-secondary-fixed-dim: rgb(0, 0, 0) !important;
-  --md-sys-color-on-surface: rgb(0, 0, 0) !important;
-  --md-sys-color-on-surface-variant: rgb(0, 0, 0) !important;
-  --md-sys-color-on-tertiary: rgb(0, 0, 0) !important;
-  --md-sys-color-on-tertiary-container: rgb(0, 0, 0) !important;
-  --md-sys-color-on-tertiary-fixed: rgb(0, 0, 0) !important;
-  --md-sys-color-on-tertiary-fixed-dim: rgb(0, 0, 0) !important;
-  --md-sys-color-outline: rgb(0, 0, 0) !important;
-  --md-sys-color-outline-variant: rgb(0, 0, 0) !important;
+  --md-sys-color-on-secondary: hsl(
+		258 16% 20%
+	) !important;
+  --md-sys-color-on-secondary-container: hsl(
+		258 16% 90%
+	) !important;
+  --md-sys-color-on-secondary-fixed: hsl(
+		258 16% 10%
+	) !important;
+  --md-sys-color-on-secondary-fixed-dim: hsl(
+		258 16% 30%
+	) !important;
+  --md-sys-color-on-surface: hsl(
+		258 4% 90%
+	) !important;
+  --md-sys-color-on-surface-variant: hsl(
+		258 8% 80%
+	) !important;
+  --md-sys-color-on-tertiary: hsl(
+		318 24% 20%
+	) !important;
+  --md-sys-color-on-tertiary-container: hsl(
+		318 24% 90%
+	) !important;
+  --md-sys-color-on-tertiary-fixed: hsl(
+		318 24% 10%
+	) !important;
+  --md-sys-color-on-tertiary-fixed-dim: hsl(
+		318 24% 30%
+	) !important;
+  --md-sys-color-outline: hsl(
+		258 8% 60%
+	) !important;
+  --md-sys-color-outline-variant: hsl(
+		258 8% 30%
+	) !important;
   --md-sys-color-primary: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
@@ -418,132 +896,314 @@ export const theme: ThemeData = {
   --md-sys-color-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --md-sys-color-scrim: rgb(0, 0, 0) !important;
-  --md-sys-color-secondary: rgb(0, 0, 0) !important;
-  --md-sys-color-secondary-container: rgb(0, 0, 0) !important;
-  --md-sys-color-secondary-fixed: rgb(0, 0, 0) !important;
-  --md-sys-color-secondary-fixed-dim: rgb(0, 0, 0) !important;
-  --md-sys-color-shadow: rgb(0, 0, 0) !important;
-  --md-sys-color-surface: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-bright: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container-high: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container-highest: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container-low: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container-lowest: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-dim: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-variant: rgb(0, 0, 0) !important;
-  --md-sys-color-tertiary: rgb(0, 0, 0) !important;
-  --md-sys-color-tertiary-container: rgb(0, 0, 0) !important;
-  --md-sys-color-tertiary-fixed: rgb(0, 0, 0) !important;
-  --md-sys-color-tertiary-fixed-dim: rgb(0, 0, 0) !important;
-  --menu-background: rgb(0, 0, 0) !important;
-  --menu-border-color: rgb(0, 0, 0) !important;
-  --metadata-border-color: rgb(0, 0, 0) !important;
-  --metadata-divider-color: rgb(0, 0, 0) !important;
-  --metadata-input-background-active: rgb(0, 0, 0) !important;
-  --metadata-input-text-color: rgb(0, 0, 0) !important;
-  --metadata-label-background-active: rgb(0, 0, 0) !important;
-  --metadata-label-text-color: rgb(0, 0, 0) !important;
-  --metadata-label-text-color-hover: rgb(0, 0, 0) !important;
-  --metadata-property-background-active: rgb(0, 0, 0) !important;
+  --md-sys-color-scrim: hsl(
+		258 4% 0%
+	) !important;
+  --md-sys-color-secondary: hsl(
+		258 16% 80%
+	) !important;
+  --md-sys-color-secondary-container: hsl(
+		258 16% 30%
+	) !important;
+  --md-sys-color-secondary-fixed: hsl(
+		258 16% 90%
+	) !important;
+  --md-sys-color-secondary-fixed-dim: hsl(
+		258 16% 80%
+	) !important;
+  --md-sys-color-shadow: hsl(
+		258 4% 0%
+	) !important;
+  --md-sys-color-surface: hsl(
+		258 4% 6%
+	) !important;
+  --md-sys-color-surface-bright: hsl(
+		258 4% 24%
+	) !important;
+  --md-sys-color-surface-container: hsl(
+		258 4% 12%
+	) !important;
+  --md-sys-color-surface-container-high: hsl(
+		258 4% 17%
+	) !important;
+  --md-sys-color-surface-container-highest: hsl(
+		258 4% 22%
+	) !important;
+  --md-sys-color-surface-container-low: hsl(
+		258 4% 10%
+	) !important;
+  --md-sys-color-surface-container-lowest: hsl(
+		258 4% 4%
+	) !important;
+  --md-sys-color-surface-dim: hsl(
+		258 4% 6%
+	) !important;
+  --md-sys-color-surface-variant: hsl(
+		258 8% 30%
+	) !important;
+  --md-sys-color-tertiary: hsl(
+		318 24% 80%
+	) !important;
+  --md-sys-color-tertiary-container: hsl(
+		318 24% 30%
+	) !important;
+  --md-sys-color-tertiary-fixed: hsl(
+		318 24% 90%
+	) !important;
+  --md-sys-color-tertiary-fixed-dim: hsl(
+		318 24% 80%
+	) !important;
+  --menu-background: hsl(
+		258 4% 17%
+	) !important;
+  --menu-border-color: hsl(
+		258 8% 60%
+	) !important;
+  --metadata-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --metadata-divider-color: hsl(
+		258 8% 30%
+	) !important;
+  --metadata-input-background-active: hsl(
+		258 4% 12%
+	) !important;
+  --metadata-input-text-color: hsl(
+		258 4% 90%
+	) !important;
+  --metadata-label-background-active: hsl(
+		258 4% 12%
+	) !important;
+  --metadata-label-text-color: hsl(
+		258 8% 60%
+	) !important;
+  --metadata-label-text-color-hover: hsl(
+		258 8% 60%
+	) !important;
+  --metadata-property-background-active: hsl(
+		258 4% 12%
+	) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
-  --modal-background: rgb(0, 0, 0) !important;
-  --nav-collapse-icon-color: rgb(0, 0, 0) !important;
-  --nav-collapse-icon-color-collapsed: rgb(0, 0, 0) !important;
-  --nav-heading-color: rgb(0, 0, 0) !important;
-  --nav-heading-color-collapsed: rgb(0, 0, 0) !important;
-  --nav-heading-color-collapsed-hover: rgb(0, 0, 0) !important;
-  --nav-heading-color-hover: rgb(0, 0, 0) !important;
-  --nav-item-background-active: rgb(0, 0, 0) !important;
-  --nav-item-background-hover: rgb(0, 0, 0) !important;
-  --nav-item-color: rgb(0, 0, 0) !important;
-  --nav-item-color-active: rgb(0, 0, 0) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(
+		258 8% 60%
+	) !important;
+  --modal-background: hsl(
+		258 4% 4%
+	) !important;
+  --nav-collapse-icon-color: hsl(
+		258 8% 30%
+	) !important;
+  --nav-collapse-icon-color-collapsed: hsl(
+		258 8% 30%
+	) !important;
+  --nav-heading-color: hsl(
+		258 4% 90%
+	) !important;
+  --nav-heading-color-collapsed: hsl(
+		258 8% 30%
+	) !important;
+  --nav-heading-color-collapsed-hover: hsl(
+		258 8% 60%
+	) !important;
+  --nav-heading-color-hover: hsl(
+		258 4% 90%
+	) !important;
+  --nav-item-background-active: hsl(
+		258 4% 12%
+	) !important;
+  --nav-item-background-hover: hsl(
+		258 4% 12%
+	) !important;
+  --nav-item-color: hsl(
+		258 8% 60%
+	) !important;
+  --nav-item-color-active: hsl(
+		258 4% 90%
+	) !important;
   --nav-item-color-highlighted: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --nav-item-color-hover: rgb(0, 0, 0) !important;
-  --nav-item-color-selected: rgb(0, 0, 0) !important;
-  --nav-tag-color: rgb(0, 0, 0) !important;
-  --nav-tag-color-active: rgb(0, 0, 0) !important;
-  --nav-tag-color-hover: rgb(0, 0, 0) !important;
+  --nav-item-color-hover: hsl(
+		258 4% 90%
+	) !important;
+  --nav-item-color-selected: hsl(
+		258 4% 90%
+	) !important;
+  --nav-tag-color: hsl(
+		258 8% 30%
+	) !important;
+  --nav-tag-color-active: hsl(
+		258 8% 60%
+	) !important;
+  --nav-tag-color-hover: hsl(
+		258 8% 60%
+	) !important;
   --neutral-hue: 258 !important;
   --neutral-saturation: 4% !important;
   --neutral-variant-hue: 258 !important;
   --neutral-variant-saturation: 8% !important;
-  --pdf-background: rgb(0, 0, 0) !important;
-  --pdf-page-background: rgb(0, 0, 0) !important;
-  --pdf-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
-  --pdf-sidebar-background: rgb(0, 0, 0) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
-  --pill-border-color: rgb(0, 0, 0) !important;
-  --pill-border-color-hover: rgb(0, 0, 0) !important;
-  --pill-color: rgb(0, 0, 0) !important;
-  --pill-color-hover: rgb(0, 0, 0) !important;
-  --pill-color-remove: rgb(0, 0, 0) !important;
+  --pdf-background: hsl(
+		258 4% 4%
+	) !important;
+  --pdf-page-background: hsl(
+		258 4% 4%
+	) !important;
+  --pdf-shadow: 0 0 0 1px hsl(
+		258 8% 30%
+	) !important;
+  --pdf-sidebar-background: hsl(
+		258 4% 4%
+	) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(
+		258 8% 30%
+	) !important;
+  --pill-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --pill-border-color-hover: hsl(
+		258 8% 60%
+	) !important;
+  --pill-color: hsl(
+		258 8% 60%
+	) !important;
+  --pill-color-hover: hsl(
+		258 4% 90%
+	) !important;
+  --pill-color-remove: hsl(
+		258 8% 30%
+	) !important;
   --pill-color-remove-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
   --primary-hue: 258 !important;
   --primary-saturation: calc(max(48%, 88%)) !important;
-  --prompt-background: rgb(0, 0, 0) !important;
-  --raised-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
-  --ribbon-background: rgb(0, 0, 0) !important;
-  --ribbon-background-collapsed: rgb(0, 0, 0) !important;
+  --prompt-background: hsl(
+		258 4% 4%
+	) !important;
+  --raised-background: color-mix(in srgb, hsl(
+		258 4% 12%
+	) 65%, transparent) linear-gradient(hsl(
+		258 4% 12%
+	), color-mix(in srgb, hsl(
+		258 4% 12%
+	) 65%, transparent)) !important;
+  --ribbon-background: hsl(
+		258 4% 12%
+	) !important;
+  --ribbon-background-collapsed: hsl(
+		258 4% 6%
+	) !important;
   --saturation: 88% !important;
-  --scrollbar-active-thumb-bg: rgb(0, 0, 0) !important;
-  --scrollbar-bg: rgb(0, 0, 0) !important;
-  --scrollbar-thumb-bg: rgb(0, 0, 0) !important;
-  --search-clear-button-color: rgb(0, 0, 0) !important;
-  --search-icon-color: rgb(0, 0, 0) !important;
-  --search-result-background: rgb(0, 0, 0) !important;
+  --scrollbar-active-thumb-bg: hsl(
+		258 4% 90%
+	) !important;
+  --scrollbar-bg: hsl(
+		258 4% 6%
+	) !important;
+  --scrollbar-thumb-bg: hsl(
+		258 8% 60%
+	) !important;
+  --search-clear-button-color: hsl(
+		258 4% 90%
+	) !important;
+  --search-icon-color: hsl(
+		258 4% 90%
+	) !important;
+  --search-result-background: hsl(
+		258 4% 12%
+	) !important;
   --secondary: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
   --secondary-hue: 258 !important;
   --secondary-saturation: 16% !important;
-  --setting-group-heading-color: rgb(0, 0, 0) !important;
-  --setting-items-background: rgb(0, 0, 0) !important;
-  --setting-items-border-color: rgb(0, 0, 0) !important;
-  --slider-thumb-border-color: rgb(0, 0, 0) !important;
+  --setting-group-heading-color: hsl(
+		258 4% 90%
+	) !important;
+  --setting-items-background: hsl(
+		258 4% 10%
+	) !important;
+  --setting-items-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --slider-thumb-border-color: hsl(
+		258 8% 60%
+	) !important;
   --slider-thumb-radius: 36px !important;
-  --slider-track-background: rgb(0, 0, 0) !important;
+  --slider-track-background: hsl(
+		258 8% 30%
+	) !important;
   --status-bar-background: hsl(
 		258 calc(max(48%, 88%)) 30%
 	) !important;
-  --status-bar-border-color: rgb(0, 0, 0) !important;
+  --status-bar-border-color: hsl(
+		258 8% 30%
+	) !important;
   --status-bar-text-color: hsl(
 		258 calc(max(48%, 88%)) 90%
 	) !important;
-  --suggestion-background: rgb(0, 0, 0) !important;
-  --tab-background-active: rgb(0, 0, 0) !important;
-  --tab-container-background: rgb(0, 0, 0) !important;
-  --tab-divider-color: rgb(0, 0, 0) !important;
-  --tab-outline-color: rgb(0, 0, 0) !important;
-  --tab-switcher-background: rgb(0, 0, 0) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 0, 0), transparent) !important;
-  --tab-text-color: rgb(0, 0, 0) !important;
-  --tab-text-color-active: rgb(0, 0, 0) !important;
-  --tab-text-color-focused: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-active: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-active-current: rgb(0, 0, 0) !important;
+  --suggestion-background: hsl(
+		258 4% 4%
+	) !important;
+  --tab-background-active: hsl(
+		258 4% 4%
+	) !important;
+  --tab-container-background: hsl(
+		258 4% 17%
+	) !important;
+  --tab-divider-color: hsl(
+		258 8% 60%
+	) !important;
+  --tab-outline-color: hsl(
+		258 8% 30%
+	) !important;
+  --tab-switcher-background: hsl(
+		258 4% 17%
+	) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(
+		258 4% 17%
+	), transparent) !important;
+  --tab-text-color: hsl(
+		258 8% 30%
+	) !important;
+  --tab-text-color-active: hsl(
+		258 8% 60%
+	) !important;
+  --tab-text-color-focused: hsl(
+		258 8% 60%
+	) !important;
+  --tab-text-color-focused-active: hsl(
+		258 8% 60%
+	) !important;
+  --tab-text-color-focused-active-current: hsl(
+		258 4% 90%
+	) !important;
   --tab-text-color-focused-highlighted: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --table-add-button-border-color: rgb(0, 0, 0) !important;
-  --table-border-color: rgb(0, 0, 0) !important;
+  --table-add-button-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --table-border-color: hsl(
+		258 8% 30%
+	) !important;
   --table-drag-handle-background-active: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --table-drag-handle-color: rgb(0, 0, 0) !important;
+  --table-drag-handle-color: hsl(
+		258 8% 30%
+	) !important;
   --table-drag-handle-color-active: hsl(
 		258 calc(max(48%, 88%)) 20%
 	) !important;
-  --table-header-border-color: rgb(0, 0, 0) !important;
-  --table-header-color: rgb(0, 0, 0) !important;
+  --table-header-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --table-header-color: hsl(
+		258 4% 90%
+	) !important;
   --table-selection-border-color: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
@@ -570,26 +1230,54 @@ export const theme: ThemeData = {
   --text-accent-hover: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --text-faint: rgb(0, 0, 0) !important;
-  --text-highlight-bg: rgb(0, 0, 0) !important;
-  --text-muted: rgb(0, 0, 0) !important;
-  --text-normal: rgb(0, 0, 0) !important;
+  --text-faint: hsl(
+		258 8% 30%
+	) !important;
+  --text-highlight-bg: hsl(
+		318 24% 30%
+	) !important;
+  --text-muted: hsl(
+		258 8% 60%
+	) !important;
+  --text-normal: hsl(
+		258 4% 90%
+	) !important;
   --text-on-accent: hsl(
 		258 calc(max(48%, 88%)) 20%
 	) !important;
   --text-on-accent-inverted: hsl(
 		258 calc(max(48%, 88%)) 20%
 	) !important;
-  --text-selection: rgb(0, 0, 0) !important;
-  --textHighlight: rgb(0, 0, 0) !important;
-  --titlebar-background: rgb(0, 0, 0) !important;
-  --titlebar-background-focused: rgb(0, 0, 0) !important;
-  --titlebar-border-color: rgb(0, 0, 0) !important;
-  --titlebar-text-color: rgb(0, 0, 0) !important;
-  --titlebar-text-color-focused: rgb(0, 0, 0) !important;
-  --vault-name-color: rgb(0, 0, 0) !important;
-  --vault-profile-color: rgb(0, 0, 0) !important;
-  --vault-profile-color-hover: rgb(0, 0, 0) !important;
+  --text-selection: hsl(
+		258 16% 30%
+	) !important;
+  --textHighlight: hsl(
+		318 24% 30%
+	) !important;
+  --titlebar-background: hsl(
+		258 4% 6%
+	) !important;
+  --titlebar-background-focused: hsl(
+		258 4% 12%
+	) !important;
+  --titlebar-border-color: hsl(
+		258 8% 30%
+	) !important;
+  --titlebar-text-color: hsl(
+		258 4% 90%
+	) !important;
+  --titlebar-text-color-focused: hsl(
+		258 4% 90%
+	) !important;
+  --vault-name-color: hsl(
+		258 4% 90%
+	) !important;
+  --vault-profile-color: hsl(
+		258 4% 90%
+	) !important;
+  --vault-profile-color-hover: hsl(
+		258 4% 90%
+	) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -975,6 +1663,350 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(229, 228, 231);
   text-decoration: rgb(229, 228, 231);
   text-decoration-color: rgb(229, 228, 231);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(10, 10, 11);
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgba(0, 0, 0, 0);
@@ -1119,20 +2151,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(150, 145, 161);
   text-decoration: rgb(150, 145, 161);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(150, 145, 161);
-  text-decoration: rgb(150, 145, 161);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(30, 29, 32);
-  border-bottom-color: rgb(229, 228, 231);
-  border-left-color: rgb(229, 228, 231);
-  border-right-color: rgb(229, 228, 231);
-  border-top-color: rgb(229, 228, 231);
-  color: rgb(229, 228, 231);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(150, 145, 161);
@@ -1304,129 +2322,301 @@ html[saved-theme="dark"] body sup {
   --background-modifier-active-hover: hsl(
 		258 calc(max(48%, 88%)) 90%
 	) !important;
-  --background-modifier-border: rgb(0, 0, 0) !important;
+  --background-modifier-border: hsl(
+		258 8% 80%
+	) !important;
   --background-modifier-border-focus: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --background-modifier-border-hover: rgb(0, 0, 0) !important;
-  --background-modifier-error: rgb(0, 0, 0) !important;
-  --background-modifier-hover: rgb(0, 0, 0) !important;
-  --background-primary: rgb(0, 0, 0) !important;
-  --background-primary-alt: rgb(0, 0, 0) !important;
-  --background-secondary: rgb(0, 0, 0) !important;
-  --background-secondary-alt: rgb(0, 0, 0) !important;
-  --bases-cards-background: rgb(0, 0, 0) !important;
-  --bases-cards-cover-background: rgb(0, 0, 0) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
-  --bases-embed-border-color: rgb(0, 0, 0) !important;
-  --bases-group-heading-property-color: rgb(0, 0, 0) !important;
-  --bases-table-border-color: rgb(0, 0, 0) !important;
-  --bases-table-cell-background-active: rgb(0, 0, 0) !important;
-  --bases-table-cell-background-disabled: rgb(0, 0, 0) !important;
+  --background-modifier-border-hover: hsl(
+		258 8% 50%
+	) !important;
+  --background-modifier-error: hsl(
+		0 84% 90%
+	) !important;
+  --background-modifier-hover: hsl(
+		258 4% 94%
+	) !important;
+  --background-primary: hsl(
+		258 4% 100%
+	) !important;
+  --background-primary-alt: hsl(
+		258 4% 96%
+	) !important;
+  --background-secondary: hsl(
+		258 4% 92%
+	) !important;
+  --background-secondary-alt: hsl(
+		258 4% 90%
+	) !important;
+  --bases-cards-background: hsl(
+		258 4% 100%
+	) !important;
+  --bases-cards-cover-background: hsl(
+		258 4% 96%
+	) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(
+		258 8% 80%
+	) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(
+		258 8% 50%
+	) !important;
+  --bases-embed-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --bases-group-heading-property-color: hsl(
+		258 8% 50%
+	) !important;
+  --bases-table-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --bases-table-cell-background-active: hsl(
+		258 4% 100%
+	) !important;
+  --bases-table-cell-background-disabled: hsl(
+		258 4% 96%
+	) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --bases-table-group-background: rgb(0, 0, 0) !important;
-  --bases-table-header-background: rgb(0, 0, 0) !important;
-  --bases-table-header-background-hover: rgb(0, 0, 0) !important;
-  --bases-table-header-color: rgb(0, 0, 0) !important;
-  --bases-table-summary-background: rgb(0, 0, 0) !important;
-  --bases-table-summary-background-hover: rgb(0, 0, 0) !important;
-  --blockquote-background-color: rgb(0, 0, 0) !important;
+  --bases-table-group-background: hsl(
+		258 4% 96%
+	) !important;
+  --bases-table-header-background: hsl(
+		258 4% 100%
+	) !important;
+  --bases-table-header-background-hover: hsl(
+		258 4% 94%
+	) !important;
+  --bases-table-header-color: hsl(
+		258 8% 50%
+	) !important;
+  --bases-table-summary-background: hsl(
+		258 4% 100%
+	) !important;
+  --bases-table-summary-background-hover: hsl(
+		258 4% 94%
+	) !important;
+  --blockquote-background-color: hsl(
+		258 4% 92%
+	) !important;
   --blockquote-border-color: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --blockquote-color: rgb(0, 0, 0) !important;
-  --blur-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
+  --blockquote-color: hsl(
+		258 4% 10%
+	) !important;
+  --blur-background: color-mix(in srgb, hsl(
+		258 4% 100%
+	) 65%, transparent) linear-gradient(hsl(
+		258 4% 100%
+	), color-mix(in srgb, hsl(
+		258 4% 100%
+	) 65%, transparent)) !important;
   --button-radius: 20px !important;
-  --canvas-background: rgb(0, 0, 0) !important;
-  --canvas-card-label-color: rgb(0, 0, 0) !important;
-  --canvas-dot-pattern: rgb(0, 0, 0) !important;
-  --caret-color: rgb(0, 0, 0) !important;
-  --checkbox-border-color: rgb(0, 0, 0) !important;
-  --checkbox-border-color-hover: rgb(0, 0, 0) !important;
+  --canvas-background: hsl(
+		258 4% 99%
+	) !important;
+  --canvas-card-label-color: hsl(
+		258 4% 10%
+	) !important;
+  --canvas-dot-pattern: hsl(
+		258 8% 80%
+	) !important;
+  --caret-color: hsl(
+		258 4% 10%
+	) !important;
+  --checkbox-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --checkbox-border-color-hover: hsl(
+		258 8% 50%
+	) !important;
   --checkbox-color: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --checkbox-marker-color: rgb(0, 0, 0) !important;
-  --checklist-done-color: rgb(0, 0, 0) !important;
-  --code-background: rgb(0, 0, 0) !important;
-  --code-border-color: rgb(0, 0, 0) !important;
-  --code-bracket-background: rgb(0, 0, 0) !important;
-  --code-comment: rgb(0, 0, 0) !important;
-  --code-normal: rgb(0, 0, 0) !important;
-  --code-punctuation: rgb(0, 0, 0) !important;
-  --collapse-icon-color: rgb(0, 0, 0) !important;
+  --checkbox-marker-color: hsl(
+		258 4% 100%
+	) !important;
+  --checklist-done-color: hsl(
+		258 8% 50%
+	) !important;
+  --code-background: hsl(
+		258 4% 98%
+	) !important;
+  --code-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --code-bracket-background: hsl(
+		258 4% 94%
+	) !important;
+  --code-comment: hsl(
+		258 8% 80%
+	) !important;
+  --code-normal: hsl(
+		258 4% 10%
+	) !important;
+  --code-punctuation: hsl(
+		258 8% 50%
+	) !important;
+  --collapse-icon-color: hsl(
+		258 8% 80%
+	) !important;
   --collapse-icon-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --dark: rgb(0, 0, 0) !important;
-  --darkgray: rgb(0, 0, 0) !important;
-  --divider-color: rgb(0, 0, 0) !important;
-  --divider-color-hover: rgb(0, 0, 0) !important;
-  --dropdown-background: rgb(0, 0, 0) !important;
+  --dark: hsl(
+		258 4% 10%
+	) !important;
+  --darkgray: hsl(
+		258 4% 10%
+	) !important;
+  --divider-color: hsl(
+		258 8% 80%
+	) !important;
+  --divider-color-hover: hsl(
+		258 8% 50%
+	) !important;
+  --dropdown-background: hsl(
+		258 4% 94%
+	) !important;
   --dropdown-background-hover: hsl(
 		258 calc(max(48%, 88%)) 90%
 	) !important;
-  --embed-background: rgb(0, 0, 0) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgb(0, 0, 0), inset 0 0 0 1px rgb(0, 0, 0) !important;
+  --embed-background: hsl(
+		258 4% 98%
+	) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsl(
+		258 8% 80%
+	), inset 0 0 0 1px hsl(
+		258 8% 80%
+	) !important;
   --embed-border-start: 2px solid hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
   --error-hue: 0 !important;
   --error-saturation: 84% !important;
-  --file-header-background: rgb(0, 0, 0) !important;
-  --file-header-background-focused: rgb(0, 0, 0) !important;
-  --flair-background: rgb(0, 0, 0) !important;
-  --flair-color: rgb(0, 0, 0) !important;
-  --footnote-divider-color: rgb(0, 0, 0) !important;
-  --footnote-id-color: rgb(0, 0, 0) !important;
-  --footnote-id-color-no-occurrences: rgb(0, 0, 0) !important;
-  --footnote-input-background-active: rgb(0, 0, 0) !important;
-  --graph-line: rgb(0, 0, 0) !important;
-  --graph-node: rgb(0, 0, 0) !important;
-  --graph-node-attachment: rgb(0, 0, 0) !important;
-  --graph-node-focused: rgb(0, 0, 0) !important;
+  --file-header-background: hsl(
+		258 4% 100%
+	) !important;
+  --file-header-background-focused: hsl(
+		258 4% 100%
+	) !important;
+  --flair-background: hsl(
+		258 4% 94%
+	) !important;
+  --flair-color: hsl(
+		258 4% 10%
+	) !important;
+  --footnote-divider-color: hsl(
+		258 8% 80%
+	) !important;
+  --footnote-id-color: hsl(
+		258 8% 50%
+	) !important;
+  --footnote-id-color-no-occurrences: hsl(
+		258 8% 80%
+	) !important;
+  --footnote-input-background-active: hsl(
+		258 4% 94%
+	) !important;
+  --graph-line: hsl(
+		258 8% 50%
+	) !important;
+  --graph-node: hsl(
+		258 4% 94%
+	) !important;
+  --graph-node-attachment: hsl(
+		318 24% 90%
+	) !important;
+  --graph-node-focused: hsl(
+		258 4% 98%
+	) !important;
   --graph-node-tag: hsl(
 		258 calc(max(48%, 88%)) 90%
 	) !important;
-  --graph-node-unresolved: rgb(0, 0, 0) !important;
-  --graph-text: rgb(0, 0, 0) !important;
-  --gray: rgb(0, 0, 0) !important;
-  --h1-color: rgb(0, 0, 0) !important;
-  --h2-color: rgb(0, 0, 0) !important;
-  --h3-color: rgb(0, 0, 0) !important;
-  --h4-color: rgb(0, 0, 0) !important;
-  --h5-color: rgb(0, 0, 0) !important;
-  --h6-color: rgb(0, 0, 0) !important;
-  --heading-formatting: rgb(0, 0, 0) !important;
-  --highlight: rgb(0, 0, 0) !important;
-  --hr-color: rgb(0, 0, 0) !important;
+  --graph-node-unresolved: hsl(
+		258 4% 96%
+	) !important;
+  --graph-text: hsl(
+		258 4% 10%
+	) !important;
+  --gray: hsl(
+		258 8% 50%
+	) !important;
+  --h1-color: hsl(
+		258 4% 10%
+	) !important;
+  --h2-color: hsl(
+		258 4% 10%
+	) !important;
+  --h3-color: hsl(
+		258 4% 10%
+	) !important;
+  --h4-color: hsl(
+		258 4% 10%
+	) !important;
+  --h5-color: hsl(
+		258 4% 10%
+	) !important;
+  --h6-color: hsl(
+		258 4% 10%
+	) !important;
+  --heading-formatting: hsl(
+		258 8% 80%
+	) !important;
+  --highlight: hsl(
+		318 24% 90%
+	) !important;
+  --hr-color: hsl(
+		258 8% 80%
+	) !important;
   --hue: 258 !important;
-  --icon-color: rgb(0, 0, 0) !important;
+  --icon-color: hsl(
+		258 8% 50%
+	) !important;
   --icon-color-active: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --icon-color-focused: rgb(0, 0, 0) !important;
-  --icon-color-hover: rgb(0, 0, 0) !important;
-  --inline-title-color: rgb(0, 0, 0) !important;
-  --input-date-separator: rgb(0, 0, 0) !important;
-  --input-placeholder-color: rgb(0, 0, 0) !important;
+  --icon-color-focused: hsl(
+		258 4% 10%
+	) !important;
+  --icon-color-hover: hsl(
+		258 8% 50%
+	) !important;
+  --inline-title-color: hsl(
+		258 4% 10%
+	) !important;
+  --input-date-separator: hsl(
+		258 8% 80%
+	) !important;
+  --input-placeholder-color: hsl(
+		258 8% 80%
+	) !important;
   --interactive-accent: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
   --interactive-hover: hsl(
 		258 calc(max(48%, 88%)) 90%
 	) !important;
-  --interactive-normal: rgb(0, 0, 0) !important;
-  --interactive-normal-accent: rgb(0, 0, 0) !important;
-  --interactive-normal-hover: rgb(0, 0, 0) !important;
-  --light: rgb(0, 0, 0) !important;
-  --lightgray: rgb(0, 0, 0) !important;
+  --interactive-normal: hsl(
+		258 4% 94%
+	) !important;
+  --interactive-normal-accent: hsl(
+		258 4% 98%
+	) !important;
+  --interactive-normal-hover: hsl(
+		258 4% 87%
+	) !important;
+  --light: hsl(
+		258 4% 100%
+	) !important;
+  --lightgray: hsl(
+		258 4% 92%
+	) !important;
   --link-color: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
@@ -1442,92 +2632,250 @@ html[saved-theme="dark"] body sup {
   --link-unresolved-color: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --list-marker-color: rgb(0, 0, 0) !important;
+  --list-marker-color: hsl(
+		258 8% 80%
+	) !important;
   --list-marker-color-collapsed: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --list-marker-color-hover: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-error-99: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-99: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-neutral-variant-99: rgb(0, 0, 0) !important;
+  --list-marker-color-hover: hsl(
+		258 8% 50%
+	) !important;
+  --md-ref-palette-error-0: hsl(0 84% 0%) !important;
+  --md-ref-palette-error-10: hsl(
+		0 84% 10%
+	) !important;
+  --md-ref-palette-error-100: hsl(
+		0 84% 100%
+	) !important;
+  --md-ref-palette-error-12: hsl(
+		0 84% 12%
+	) !important;
+  --md-ref-palette-error-17: hsl(
+		0 84% 17%
+	) !important;
+  --md-ref-palette-error-20: hsl(
+		0 84% 20%
+	) !important;
+  --md-ref-palette-error-22: hsl(
+		0 84% 22%
+	) !important;
+  --md-ref-palette-error-24: hsl(
+		0 84% 24%
+	) !important;
+  --md-ref-palette-error-25: hsl(
+		0 84% 25%
+	) !important;
+  --md-ref-palette-error-30: hsl(
+		0 84% 30%
+	) !important;
+  --md-ref-palette-error-35: hsl(
+		0 84% 35%
+	) !important;
+  --md-ref-palette-error-4: hsl(0 84% 4%) !important;
+  --md-ref-palette-error-40: hsl(
+		0 84% 40%
+	) !important;
+  --md-ref-palette-error-5: hsl(0 84% 5%) !important;
+  --md-ref-palette-error-50: hsl(
+		0 84% 50%
+	) !important;
+  --md-ref-palette-error-6: hsl(0 84% 6%) !important;
+  --md-ref-palette-error-60: hsl(
+		0 84% 60%
+	) !important;
+  --md-ref-palette-error-70: hsl(
+		0 84% 70%
+	) !important;
+  --md-ref-palette-error-80: hsl(
+		0 84% 80%
+	) !important;
+  --md-ref-palette-error-87: hsl(
+		0 84% 87%
+	) !important;
+  --md-ref-palette-error-90: hsl(
+		0 84% 90%
+	) !important;
+  --md-ref-palette-error-92: hsl(
+		0 84% 92%
+	) !important;
+  --md-ref-palette-error-94: hsl(
+		0 84% 94%
+	) !important;
+  --md-ref-palette-error-95: hsl(
+		0 84% 95%
+	) !important;
+  --md-ref-palette-error-96: hsl(
+		0 84% 96%
+	) !important;
+  --md-ref-palette-error-98: hsl(
+		0 84% 98%
+	) !important;
+  --md-ref-palette-error-99: hsl(
+		0 84% 99%
+	) !important;
+  --md-ref-palette-neutral-0: hsl(
+		258 4% 0%
+	) !important;
+  --md-ref-palette-neutral-10: hsl(
+		258 4% 10%
+	) !important;
+  --md-ref-palette-neutral-100: hsl(
+		258 4% 100%
+	) !important;
+  --md-ref-palette-neutral-12: hsl(
+		258 4% 12%
+	) !important;
+  --md-ref-palette-neutral-17: hsl(
+		258 4% 17%
+	) !important;
+  --md-ref-palette-neutral-20: hsl(
+		258 4% 20%
+	) !important;
+  --md-ref-palette-neutral-22: hsl(
+		258 4% 22%
+	) !important;
+  --md-ref-palette-neutral-24: hsl(
+		258 4% 24%
+	) !important;
+  --md-ref-palette-neutral-25: hsl(
+		258 4% 25%
+	) !important;
+  --md-ref-palette-neutral-30: hsl(
+		258 4% 30%
+	) !important;
+  --md-ref-palette-neutral-35: hsl(
+		258 4% 35%
+	) !important;
+  --md-ref-palette-neutral-4: hsl(
+		258 4% 4%
+	) !important;
+  --md-ref-palette-neutral-40: hsl(
+		258 4% 40%
+	) !important;
+  --md-ref-palette-neutral-5: hsl(
+		258 4% 5%
+	) !important;
+  --md-ref-palette-neutral-50: hsl(
+		258 4% 50%
+	) !important;
+  --md-ref-palette-neutral-6: hsl(
+		258 4% 6%
+	) !important;
+  --md-ref-palette-neutral-60: hsl(
+		258 4% 60%
+	) !important;
+  --md-ref-palette-neutral-70: hsl(
+		258 4% 70%
+	) !important;
+  --md-ref-palette-neutral-80: hsl(
+		258 4% 80%
+	) !important;
+  --md-ref-palette-neutral-87: hsl(
+		258 4% 87%
+	) !important;
+  --md-ref-palette-neutral-90: hsl(
+		258 4% 90%
+	) !important;
+  --md-ref-palette-neutral-92: hsl(
+		258 4% 92%
+	) !important;
+  --md-ref-palette-neutral-94: hsl(
+		258 4% 94%
+	) !important;
+  --md-ref-palette-neutral-95: hsl(
+		258 4% 95%
+	) !important;
+  --md-ref-palette-neutral-96: hsl(
+		258 4% 96%
+	) !important;
+  --md-ref-palette-neutral-98: hsl(
+		258 4% 98%
+	) !important;
+  --md-ref-palette-neutral-99: hsl(
+		258 4% 99%
+	) !important;
+  --md-ref-palette-neutral-variant-0: hsl(
+		258 8% 0%
+	) !important;
+  --md-ref-palette-neutral-variant-10: hsl(
+		258 8% 10%
+	) !important;
+  --md-ref-palette-neutral-variant-100: hsl(
+		258 8% 100%
+	) !important;
+  --md-ref-palette-neutral-variant-12: hsl(
+		258 8% 12%
+	) !important;
+  --md-ref-palette-neutral-variant-17: hsl(
+		258 8% 17%
+	) !important;
+  --md-ref-palette-neutral-variant-20: hsl(
+		258 8% 20%
+	) !important;
+  --md-ref-palette-neutral-variant-22: hsl(
+		258 8% 22%
+	) !important;
+  --md-ref-palette-neutral-variant-24: hsl(
+		258 8% 24%
+	) !important;
+  --md-ref-palette-neutral-variant-25: hsl(
+		258 8% 25%
+	) !important;
+  --md-ref-palette-neutral-variant-30: hsl(
+		258 8% 30%
+	) !important;
+  --md-ref-palette-neutral-variant-35: hsl(
+		258 8% 35%
+	) !important;
+  --md-ref-palette-neutral-variant-4: hsl(
+		258 8% 4%
+	) !important;
+  --md-ref-palette-neutral-variant-40: hsl(
+		258 8% 40%
+	) !important;
+  --md-ref-palette-neutral-variant-5: hsl(
+		258 8% 5%
+	) !important;
+  --md-ref-palette-neutral-variant-50: hsl(
+		258 8% 50%
+	) !important;
+  --md-ref-palette-neutral-variant-6: hsl(
+		258 8% 6%
+	) !important;
+  --md-ref-palette-neutral-variant-60: hsl(
+		258 8% 60%
+	) !important;
+  --md-ref-palette-neutral-variant-70: hsl(
+		258 8% 70%
+	) !important;
+  --md-ref-palette-neutral-variant-80: hsl(
+		258 8% 80%
+	) !important;
+  --md-ref-palette-neutral-variant-87: hsl(
+		258 8% 87%
+	) !important;
+  --md-ref-palette-neutral-variant-90: hsl(
+		258 8% 90%
+	) !important;
+  --md-ref-palette-neutral-variant-92: hsl(
+		258 8% 92%
+	) !important;
+  --md-ref-palette-neutral-variant-94: hsl(
+		258 8% 94%
+	) !important;
+  --md-ref-palette-neutral-variant-95: hsl(
+		258 8% 95%
+	) !important;
+  --md-ref-palette-neutral-variant-96: hsl(
+		258 8% 96%
+	) !important;
+  --md-ref-palette-neutral-variant-98: hsl(
+		258 8% 98%
+	) !important;
+  --md-ref-palette-neutral-variant-99: hsl(
+		258 8% 99%
+	) !important;
   --md-ref-palette-primary-0: hsl(
 		258 calc(max(48%, 88%)) 0%
 	) !important;
@@ -1609,71 +2957,195 @@ html[saved-theme="dark"] body sup {
   --md-ref-palette-primary-99: hsl(
 		258 calc(max(48%, 88%)) 99%
 	) !important;
-  --md-ref-palette-secondary-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-secondary-99: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-0: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-10: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-100: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-12: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-17: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-20: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-22: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-24: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-25: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-30: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-35: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-4: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-40: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-5: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-50: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-6: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-60: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-70: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-80: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-87: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-90: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-92: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-94: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-95: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-96: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-98: rgb(0, 0, 0) !important;
-  --md-ref-palette-tertiary-99: rgb(0, 0, 0) !important;
-  --md-sys-color-background: rgb(0, 0, 0) !important;
-  --md-sys-color-error: rgb(0, 0, 0) !important;
-  --md-sys-color-error-container: rgb(0, 0, 0) !important;
-  --md-sys-color-inverse-on-surface: rgb(0, 0, 0) !important;
+  --md-ref-palette-secondary-0: hsl(
+		258 16% 0%
+	) !important;
+  --md-ref-palette-secondary-10: hsl(
+		258 16% 10%
+	) !important;
+  --md-ref-palette-secondary-100: hsl(
+		258 16% 100%
+	) !important;
+  --md-ref-palette-secondary-12: hsl(
+		258 16% 12%
+	) !important;
+  --md-ref-palette-secondary-17: hsl(
+		258 16% 17%
+	) !important;
+  --md-ref-palette-secondary-20: hsl(
+		258 16% 20%
+	) !important;
+  --md-ref-palette-secondary-22: hsl(
+		258 16% 22%
+	) !important;
+  --md-ref-palette-secondary-24: hsl(
+		258 16% 24%
+	) !important;
+  --md-ref-palette-secondary-25: hsl(
+		258 16% 25%
+	) !important;
+  --md-ref-palette-secondary-30: hsl(
+		258 16% 30%
+	) !important;
+  --md-ref-palette-secondary-35: hsl(
+		258 16% 35%
+	) !important;
+  --md-ref-palette-secondary-4: hsl(
+		258 16% 4%
+	) !important;
+  --md-ref-palette-secondary-40: hsl(
+		258 16% 40%
+	) !important;
+  --md-ref-palette-secondary-5: hsl(
+		258 16% 5%
+	) !important;
+  --md-ref-palette-secondary-50: hsl(
+		258 16% 50%
+	) !important;
+  --md-ref-palette-secondary-6: hsl(
+		258 16% 6%
+	) !important;
+  --md-ref-palette-secondary-60: hsl(
+		258 16% 60%
+	) !important;
+  --md-ref-palette-secondary-70: hsl(
+		258 16% 70%
+	) !important;
+  --md-ref-palette-secondary-80: hsl(
+		258 16% 80%
+	) !important;
+  --md-ref-palette-secondary-87: hsl(
+		258 16% 87%
+	) !important;
+  --md-ref-palette-secondary-90: hsl(
+		258 16% 90%
+	) !important;
+  --md-ref-palette-secondary-92: hsl(
+		258 16% 92%
+	) !important;
+  --md-ref-palette-secondary-94: hsl(
+		258 16% 94%
+	) !important;
+  --md-ref-palette-secondary-95: hsl(
+		258 16% 95%
+	) !important;
+  --md-ref-palette-secondary-96: hsl(
+		258 16% 96%
+	) !important;
+  --md-ref-palette-secondary-98: hsl(
+		258 16% 98%
+	) !important;
+  --md-ref-palette-secondary-99: hsl(
+		258 16% 99%
+	) !important;
+  --md-ref-palette-tertiary-0: hsl(
+		318 24% 0%
+	) !important;
+  --md-ref-palette-tertiary-10: hsl(
+		318 24% 10%
+	) !important;
+  --md-ref-palette-tertiary-100: hsl(
+		318 24% 100%
+	) !important;
+  --md-ref-palette-tertiary-12: hsl(
+		318 24% 12%
+	) !important;
+  --md-ref-palette-tertiary-17: hsl(
+		318 24% 17%
+	) !important;
+  --md-ref-palette-tertiary-20: hsl(
+		318 24% 20%
+	) !important;
+  --md-ref-palette-tertiary-22: hsl(
+		318 24% 22%
+	) !important;
+  --md-ref-palette-tertiary-24: hsl(
+		318 24% 24%
+	) !important;
+  --md-ref-palette-tertiary-25: hsl(
+		318 24% 25%
+	) !important;
+  --md-ref-palette-tertiary-30: hsl(
+		318 24% 30%
+	) !important;
+  --md-ref-palette-tertiary-35: hsl(
+		318 24% 35%
+	) !important;
+  --md-ref-palette-tertiary-4: hsl(
+		318 24% 4%
+	) !important;
+  --md-ref-palette-tertiary-40: hsl(
+		318 24% 40%
+	) !important;
+  --md-ref-palette-tertiary-5: hsl(
+		318 24% 5%
+	) !important;
+  --md-ref-palette-tertiary-50: hsl(
+		318 24% 50%
+	) !important;
+  --md-ref-palette-tertiary-6: hsl(
+		318 24% 6%
+	) !important;
+  --md-ref-palette-tertiary-60: hsl(
+		318 24% 60%
+	) !important;
+  --md-ref-palette-tertiary-70: hsl(
+		318 24% 70%
+	) !important;
+  --md-ref-palette-tertiary-80: hsl(
+		318 24% 80%
+	) !important;
+  --md-ref-palette-tertiary-87: hsl(
+		318 24% 87%
+	) !important;
+  --md-ref-palette-tertiary-90: hsl(
+		318 24% 90%
+	) !important;
+  --md-ref-palette-tertiary-92: hsl(
+		318 24% 92%
+	) !important;
+  --md-ref-palette-tertiary-94: hsl(
+		318 24% 94%
+	) !important;
+  --md-ref-palette-tertiary-95: hsl(
+		318 24% 95%
+	) !important;
+  --md-ref-palette-tertiary-96: hsl(
+		318 24% 96%
+	) !important;
+  --md-ref-palette-tertiary-98: hsl(
+		318 24% 98%
+	) !important;
+  --md-ref-palette-tertiary-99: hsl(
+		318 24% 99%
+	) !important;
+  --md-sys-color-background: hsl(
+		258 4% 99%
+	) !important;
+  --md-sys-color-error: hsl(
+		0 84% 40%
+	) !important;
+  --md-sys-color-error-container: hsl(
+		0 84% 90%
+	) !important;
+  --md-sys-color-inverse-on-surface: hsl(
+		258 4% 95%
+	) !important;
   --md-sys-color-inverse-primary: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --md-sys-color-inverse-surface: rgb(0, 0, 0) !important;
-  --md-sys-color-on-background: rgb(0, 0, 0) !important;
-  --md-sys-color-on-error: rgb(0, 0, 0) !important;
-  --md-sys-color-on-error-container: rgb(0, 0, 0) !important;
+  --md-sys-color-inverse-surface: hsl(
+		258 4% 20%
+	) !important;
+  --md-sys-color-on-background: hsl(
+		258 4% 10%
+	) !important;
+  --md-sys-color-on-error: hsl(
+		0 84% 100%
+	) !important;
+  --md-sys-color-on-error-container: hsl(
+		0 84% 10%
+	) !important;
   --md-sys-color-on-primary: hsl(
 		258 calc(max(48%, 88%)) 100%
 	) !important;
@@ -1686,18 +3158,42 @@ html[saved-theme="dark"] body sup {
   --md-sys-color-on-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 30%
 	) !important;
-  --md-sys-color-on-secondary: rgb(0, 0, 0) !important;
-  --md-sys-color-on-secondary-container: rgb(0, 0, 0) !important;
-  --md-sys-color-on-secondary-fixed: rgb(0, 0, 0) !important;
-  --md-sys-color-on-secondary-fixed-dim: rgb(0, 0, 0) !important;
-  --md-sys-color-on-surface: rgb(0, 0, 0) !important;
-  --md-sys-color-on-surface-variant: rgb(0, 0, 0) !important;
-  --md-sys-color-on-tertiary: rgb(0, 0, 0) !important;
-  --md-sys-color-on-tertiary-container: rgb(0, 0, 0) !important;
-  --md-sys-color-on-tertiary-fixed: rgb(0, 0, 0) !important;
-  --md-sys-color-on-tertiary-fixed-dim: rgb(0, 0, 0) !important;
-  --md-sys-color-outline: rgb(0, 0, 0) !important;
-  --md-sys-color-outline-variant: rgb(0, 0, 0) !important;
+  --md-sys-color-on-secondary: hsl(
+		258 16% 100%
+	) !important;
+  --md-sys-color-on-secondary-container: hsl(
+		258 16% 10%
+	) !important;
+  --md-sys-color-on-secondary-fixed: hsl(
+		258 16% 10%
+	) !important;
+  --md-sys-color-on-secondary-fixed-dim: hsl(
+		258 16% 30%
+	) !important;
+  --md-sys-color-on-surface: hsl(
+		258 4% 10%
+	) !important;
+  --md-sys-color-on-surface-variant: hsl(
+		258 8% 30%
+	) !important;
+  --md-sys-color-on-tertiary: hsl(
+		318 24% 100%
+	) !important;
+  --md-sys-color-on-tertiary-container: hsl(
+		318 24% 10%
+	) !important;
+  --md-sys-color-on-tertiary-fixed: hsl(
+		318 24% 10%
+	) !important;
+  --md-sys-color-on-tertiary-fixed-dim: hsl(
+		318 24% 30%
+	) !important;
+  --md-sys-color-outline: hsl(
+		258 8% 50%
+	) !important;
+  --md-sys-color-outline-variant: hsl(
+		258 8% 80%
+	) !important;
   --md-sys-color-primary: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
@@ -1710,130 +3206,308 @@ html[saved-theme="dark"] body sup {
   --md-sys-color-primary-fixed-dim: hsl(
 		258 calc(max(48%, 88%)) 80%
 	) !important;
-  --md-sys-color-scrim: rgb(0, 0, 0) !important;
-  --md-sys-color-secondary: rgb(0, 0, 0) !important;
-  --md-sys-color-secondary-container: rgb(0, 0, 0) !important;
-  --md-sys-color-secondary-fixed: rgb(0, 0, 0) !important;
-  --md-sys-color-secondary-fixed-dim: rgb(0, 0, 0) !important;
-  --md-sys-color-shadow: rgb(0, 0, 0) !important;
-  --md-sys-color-surface: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-bright: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container-high: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container-highest: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container-low: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-container-lowest: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-dim: rgb(0, 0, 0) !important;
-  --md-sys-color-surface-variant: rgb(0, 0, 0) !important;
-  --md-sys-color-tertiary: rgb(0, 0, 0) !important;
-  --md-sys-color-tertiary-container: rgb(0, 0, 0) !important;
-  --md-sys-color-tertiary-fixed: rgb(0, 0, 0) !important;
-  --md-sys-color-tertiary-fixed-dim: rgb(0, 0, 0) !important;
-  --menu-background: rgb(0, 0, 0) !important;
-  --menu-border-color: rgb(0, 0, 0) !important;
-  --metadata-border-color: rgb(0, 0, 0) !important;
-  --metadata-divider-color: rgb(0, 0, 0) !important;
-  --metadata-input-background-active: rgb(0, 0, 0) !important;
-  --metadata-input-text-color: rgb(0, 0, 0) !important;
-  --metadata-label-background-active: rgb(0, 0, 0) !important;
-  --metadata-label-text-color: rgb(0, 0, 0) !important;
-  --metadata-label-text-color-hover: rgb(0, 0, 0) !important;
-  --metadata-property-background-active: rgb(0, 0, 0) !important;
+  --md-sys-color-scrim: hsl(
+		258 4% 0%
+	) !important;
+  --md-sys-color-secondary: hsl(
+		258 16% 40%
+	) !important;
+  --md-sys-color-secondary-container: hsl(
+		258 16% 90%
+	) !important;
+  --md-sys-color-secondary-fixed: hsl(
+		258 16% 90%
+	) !important;
+  --md-sys-color-secondary-fixed-dim: hsl(
+		258 16% 80%
+	) !important;
+  --md-sys-color-shadow: hsl(
+		258 4% 0%
+	) !important;
+  --md-sys-color-surface: hsl(
+		258 4% 98%
+	) !important;
+  --md-sys-color-surface-bright: hsl(
+		258 4% 98%
+	) !important;
+  --md-sys-color-surface-container: hsl(
+		258 4% 94%
+	) !important;
+  --md-sys-color-surface-container-high: hsl(
+		258 4% 92%
+	) !important;
+  --md-sys-color-surface-container-highest: hsl(
+		258 4% 90%
+	) !important;
+  --md-sys-color-surface-container-low: hsl(
+		258 4% 96%
+	) !important;
+  --md-sys-color-surface-container-lowest: hsl(
+		258 4% 100%
+	) !important;
+  --md-sys-color-surface-dim: hsl(
+		258 4% 87%
+	) !important;
+  --md-sys-color-surface-variant: hsl(
+		258 8% 90%
+	) !important;
+  --md-sys-color-tertiary: hsl(
+		318 24% 40%
+	) !important;
+  --md-sys-color-tertiary-container: hsl(
+		318 24% 90%
+	) !important;
+  --md-sys-color-tertiary-fixed: hsl(
+		318 24% 90%
+	) !important;
+  --md-sys-color-tertiary-fixed-dim: hsl(
+		318 24% 80%
+	) !important;
+  --menu-background: hsl(
+		258 4% 92%
+	) !important;
+  --menu-border-color: hsl(
+		258 8% 50%
+	) !important;
+  --metadata-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --metadata-divider-color: hsl(
+		258 8% 80%
+	) !important;
+  --metadata-input-background-active: hsl(
+		258 4% 94%
+	) !important;
+  --metadata-input-text-color: hsl(
+		258 4% 10%
+	) !important;
+  --metadata-label-background-active: hsl(
+		258 4% 94%
+	) !important;
+  --metadata-label-text-color: hsl(
+		258 8% 50%
+	) !important;
+  --metadata-label-text-color-hover: hsl(
+		258 8% 50%
+	) !important;
+  --metadata-property-background-active: hsl(
+		258 4% 94%
+	) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
-  --modal-background: rgb(0, 0, 0) !important;
-  --nav-collapse-icon-color: rgb(0, 0, 0) !important;
-  --nav-collapse-icon-color-collapsed: rgb(0, 0, 0) !important;
-  --nav-heading-color: rgb(0, 0, 0) !important;
-  --nav-heading-color-collapsed: rgb(0, 0, 0) !important;
-  --nav-heading-color-collapsed-hover: rgb(0, 0, 0) !important;
-  --nav-heading-color-hover: rgb(0, 0, 0) !important;
-  --nav-item-background-active: rgb(0, 0, 0) !important;
-  --nav-item-background-hover: rgb(0, 0, 0) !important;
-  --nav-item-color: rgb(0, 0, 0) !important;
-  --nav-item-color-active: rgb(0, 0, 0) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(
+		258 8% 50%
+	) !important;
+  --modal-background: hsl(
+		258 4% 100%
+	) !important;
+  --nav-collapse-icon-color: hsl(
+		258 8% 80%
+	) !important;
+  --nav-collapse-icon-color-collapsed: hsl(
+		258 8% 80%
+	) !important;
+  --nav-heading-color: hsl(
+		258 4% 10%
+	) !important;
+  --nav-heading-color-collapsed: hsl(
+		258 8% 80%
+	) !important;
+  --nav-heading-color-collapsed-hover: hsl(
+		258 8% 50%
+	) !important;
+  --nav-heading-color-hover: hsl(
+		258 4% 10%
+	) !important;
+  --nav-item-background-active: hsl(
+		258 4% 94%
+	) !important;
+  --nav-item-background-hover: hsl(
+		258 4% 94%
+	) !important;
+  --nav-item-color: hsl(
+		258 8% 50%
+	) !important;
+  --nav-item-color-active: hsl(
+		258 4% 10%
+	) !important;
   --nav-item-color-highlighted: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --nav-item-color-hover: rgb(0, 0, 0) !important;
-  --nav-item-color-selected: rgb(0, 0, 0) !important;
-  --nav-tag-color: rgb(0, 0, 0) !important;
-  --nav-tag-color-active: rgb(0, 0, 0) !important;
-  --nav-tag-color-hover: rgb(0, 0, 0) !important;
+  --nav-item-color-hover: hsl(
+		258 4% 10%
+	) !important;
+  --nav-item-color-selected: hsl(
+		258 4% 10%
+	) !important;
+  --nav-tag-color: hsl(
+		258 8% 80%
+	) !important;
+  --nav-tag-color-active: hsl(
+		258 8% 50%
+	) !important;
+  --nav-tag-color-hover: hsl(
+		258 8% 50%
+	) !important;
   --neutral-hue: 258 !important;
   --neutral-saturation: 4% !important;
   --neutral-variant-hue: 258 !important;
   --neutral-variant-saturation: 8% !important;
-  --pdf-background: rgb(0, 0, 0) !important;
-  --pdf-page-background: rgb(0, 0, 0) !important;
-  --pdf-sidebar-background: rgb(0, 0, 0) !important;
-  --pill-border-color: rgb(0, 0, 0) !important;
-  --pill-border-color-hover: rgb(0, 0, 0) !important;
-  --pill-color: rgb(0, 0, 0) !important;
-  --pill-color-hover: rgb(0, 0, 0) !important;
-  --pill-color-remove: rgb(0, 0, 0) !important;
+  --pdf-background: hsl(
+		258 4% 100%
+	) !important;
+  --pdf-page-background: hsl(
+		258 4% 100%
+	) !important;
+  --pdf-sidebar-background: hsl(
+		258 4% 100%
+	) !important;
+  --pill-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --pill-border-color-hover: hsl(
+		258 8% 50%
+	) !important;
+  --pill-color: hsl(
+		258 8% 50%
+	) !important;
+  --pill-color-hover: hsl(
+		258 4% 10%
+	) !important;
+  --pill-color-remove: hsl(
+		258 8% 80%
+	) !important;
   --pill-color-remove-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
   --primary-hue: 258 !important;
   --primary-saturation: calc(max(48%, 88%)) !important;
-  --prompt-background: rgb(0, 0, 0) !important;
-  --raised-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
-  --ribbon-background: rgb(0, 0, 0) !important;
-  --ribbon-background-collapsed: rgb(0, 0, 0) !important;
+  --prompt-background: hsl(
+		258 4% 100%
+	) !important;
+  --raised-background: color-mix(in srgb, hsl(
+		258 4% 100%
+	) 65%, transparent) linear-gradient(hsl(
+		258 4% 100%
+	), color-mix(in srgb, hsl(
+		258 4% 100%
+	) 65%, transparent)) !important;
+  --ribbon-background: hsl(
+		258 4% 94%
+	) !important;
+  --ribbon-background-collapsed: hsl(
+		258 4% 87%
+	) !important;
   --saturation: 88% !important;
-  --scrollbar-active-thumb-bg: rgb(0, 0, 0) !important;
-  --scrollbar-bg: rgb(0, 0, 0) !important;
-  --scrollbar-thumb-bg: rgb(0, 0, 0) !important;
-  --search-clear-button-color: rgb(0, 0, 0) !important;
-  --search-icon-color: rgb(0, 0, 0) !important;
-  --search-result-background: rgb(0, 0, 0) !important;
+  --scrollbar-active-thumb-bg: hsl(
+		258 4% 10%
+	) !important;
+  --scrollbar-bg: hsl(
+		258 4% 87%
+	) !important;
+  --scrollbar-thumb-bg: hsl(
+		258 8% 50%
+	) !important;
+  --search-clear-button-color: hsl(
+		258 4% 10%
+	) !important;
+  --search-icon-color: hsl(
+		258 4% 10%
+	) !important;
+  --search-result-background: hsl(
+		258 4% 94%
+	) !important;
   --secondary: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
   --secondary-hue: 258 !important;
   --secondary-saturation: 16% !important;
-  --setting-group-heading-color: rgb(0, 0, 0) !important;
-  --setting-items-background: rgb(0, 0, 0) !important;
-  --setting-items-border-color: rgb(0, 0, 0) !important;
-  --slider-thumb-border-color: rgb(0, 0, 0) !important;
+  --setting-group-heading-color: hsl(
+		258 4% 10%
+	) !important;
+  --setting-items-background: hsl(
+		258 4% 96%
+	) !important;
+  --setting-items-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --slider-thumb-border-color: hsl(
+		258 8% 50%
+	) !important;
   --slider-thumb-radius: 36px !important;
-  --slider-track-background: rgb(0, 0, 0) !important;
+  --slider-track-background: hsl(
+		258 8% 80%
+	) !important;
   --status-bar-background: hsl(
 		258 calc(max(48%, 88%)) 90%
 	) !important;
-  --status-bar-border-color: rgb(0, 0, 0) !important;
+  --status-bar-border-color: hsl(
+		258 8% 80%
+	) !important;
   --status-bar-text-color: hsl(
 		258 calc(max(48%, 88%)) 10%
 	) !important;
-  --suggestion-background: rgb(0, 0, 0) !important;
-  --tab-background-active: rgb(0, 0, 0) !important;
-  --tab-container-background: rgb(0, 0, 0) !important;
-  --tab-divider-color: rgb(0, 0, 0) !important;
-  --tab-outline-color: rgb(0, 0, 0) !important;
-  --tab-switcher-background: rgb(0, 0, 0) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 0, 0), transparent) !important;
-  --tab-text-color: rgb(0, 0, 0) !important;
-  --tab-text-color-active: rgb(0, 0, 0) !important;
-  --tab-text-color-focused: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-active: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-active-current: rgb(0, 0, 0) !important;
+  --suggestion-background: hsl(
+		258 4% 100%
+	) !important;
+  --tab-background-active: hsl(
+		258 4% 100%
+	) !important;
+  --tab-container-background: hsl(
+		258 4% 92%
+	) !important;
+  --tab-divider-color: hsl(
+		258 8% 50%
+	) !important;
+  --tab-outline-color: hsl(
+		258 8% 80%
+	) !important;
+  --tab-switcher-background: hsl(
+		258 4% 92%
+	) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(
+		258 4% 92%
+	), transparent) !important;
+  --tab-text-color: hsl(
+		258 8% 80%
+	) !important;
+  --tab-text-color-active: hsl(
+		258 8% 50%
+	) !important;
+  --tab-text-color-focused: hsl(
+		258 8% 50%
+	) !important;
+  --tab-text-color-focused-active: hsl(
+		258 8% 50%
+	) !important;
+  --tab-text-color-focused-active-current: hsl(
+		258 4% 10%
+	) !important;
   --tab-text-color-focused-highlighted: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --table-add-button-border-color: rgb(0, 0, 0) !important;
-  --table-border-color: rgb(0, 0, 0) !important;
+  --table-add-button-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --table-border-color: hsl(
+		258 8% 80%
+	) !important;
   --table-drag-handle-background-active: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --table-drag-handle-color: rgb(0, 0, 0) !important;
+  --table-drag-handle-color: hsl(
+		258 8% 80%
+	) !important;
   --table-drag-handle-color-active: hsl(
 		258 calc(max(48%, 88%)) 100%
 	) !important;
-  --table-header-border-color: rgb(0, 0, 0) !important;
-  --table-header-color: rgb(0, 0, 0) !important;
+  --table-header-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --table-header-color: hsl(
+		258 4% 10%
+	) !important;
   --table-selection-border-color: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
@@ -1860,26 +3534,54 @@ html[saved-theme="dark"] body sup {
   --text-accent-hover: hsl(
 		258 calc(max(48%, 88%)) 40%
 	) !important;
-  --text-faint: rgb(0, 0, 0) !important;
-  --text-highlight-bg: rgb(0, 0, 0) !important;
-  --text-muted: rgb(0, 0, 0) !important;
-  --text-normal: rgb(0, 0, 0) !important;
+  --text-faint: hsl(
+		258 8% 80%
+	) !important;
+  --text-highlight-bg: hsl(
+		318 24% 90%
+	) !important;
+  --text-muted: hsl(
+		258 8% 50%
+	) !important;
+  --text-normal: hsl(
+		258 4% 10%
+	) !important;
   --text-on-accent: hsl(
 		258 calc(max(48%, 88%)) 100%
 	) !important;
   --text-on-accent-inverted: hsl(
 		258 calc(max(48%, 88%)) 100%
 	) !important;
-  --text-selection: rgb(0, 0, 0) !important;
-  --textHighlight: rgb(0, 0, 0) !important;
-  --titlebar-background: rgb(0, 0, 0) !important;
-  --titlebar-background-focused: rgb(0, 0, 0) !important;
-  --titlebar-border-color: rgb(0, 0, 0) !important;
-  --titlebar-text-color: rgb(0, 0, 0) !important;
-  --titlebar-text-color-focused: rgb(0, 0, 0) !important;
-  --vault-name-color: rgb(0, 0, 0) !important;
-  --vault-profile-color: rgb(0, 0, 0) !important;
-  --vault-profile-color-hover: rgb(0, 0, 0) !important;
+  --text-selection: hsl(
+		258 16% 90%
+	) !important;
+  --textHighlight: hsl(
+		318 24% 90%
+	) !important;
+  --titlebar-background: hsl(
+		258 4% 87%
+	) !important;
+  --titlebar-background-focused: hsl(
+		258 4% 94%
+	) !important;
+  --titlebar-border-color: hsl(
+		258 8% 80%
+	) !important;
+  --titlebar-text-color: hsl(
+		258 4% 10%
+	) !important;
+  --titlebar-text-color-focused: hsl(
+		258 4% 10%
+	) !important;
+  --vault-name-color: hsl(
+		258 4% 10%
+	) !important;
+  --vault-profile-color: hsl(
+		258 4% 10%
+	) !important;
+  --vault-profile-color-hover: hsl(
+		258 4% 10%
+	) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2372,20 +4074,6 @@ html[saved-theme="light"] body hr {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(123, 117, 138);
   text-decoration: rgb(123, 117, 138);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(123, 117, 138);
-  text-decoration: rgb(123, 117, 138);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(239, 239, 240);
-  border-bottom-color: rgb(25, 24, 27);
-  border-left-color: rgb(25, 24, 27);
-  border-right-color: rgb(25, 24, 27);
-  border-top-color: rgb(25, 24, 27);
-  color: rgb(25, 24, 27);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(123, 117, 138);

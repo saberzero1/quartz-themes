@@ -8,230 +8,292 @@ export const theme: ThemeData = {
   --accent-h: 0deg !important;
   --accent-l: 40% !important;
   --accent-s: 0% !important;
-  --background-modifier-active-hover: rgba(102, 102, 102, 0.1) !important;
-  --background-modifier-border: rgb(0, 0, 0) !important;
-  --background-modifier-border-focus: rgb(0, 0, 0) !important;
-  --background-modifier-border-hover: rgb(0, 0, 0) !important;
-  --background-modifier-form-field: rgb(0, 0, 0) !important;
-  --background-modifier-form-field-hover: rgb(0, 0, 0) !important;
-  --background-primary: rgb(0, 0, 0) !important;
-  --background-primary-alt: rgb(0, 0, 0) !important;
-  --background-secondary: rgb(0, 0, 0) !important;
-  --background-secondary-alt: rgb(0, 0, 0) !important;
-  --bases-cards-background: rgb(0, 0, 0) !important;
-  --bases-cards-cover-background: rgb(0, 0, 0) !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(0, 0, 0) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
-  --bases-embed-border-color: rgb(0, 0, 0) !important;
-  --bases-group-heading-property-color: rgb(0, 0, 0) !important;
-  --bases-table-border-color: rgb(0, 0, 0) !important;
-  --bases-table-cell-background-active: rgb(0, 0, 0) !important;
-  --bases-table-cell-background-disabled: rgb(0, 0, 0) !important;
-  --bases-table-cell-background-selected: rgba(102, 102, 102, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(0, 0, 0) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(0, 0, 0) !important;
-  --bases-table-group-background: rgb(0, 0, 0) !important;
-  --bases-table-header-background: rgb(0, 0, 0) !important;
-  --bases-table-header-color: rgb(0, 0, 0) !important;
-  --bases-table-summary-background: rgb(0, 0, 0) !important;
-  --blockquote-border-color: rgb(0, 0, 0) !important;
-  --blur-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
-  --canvas-background: rgb(0, 0, 0) !important;
-  --canvas-card-label-color: rgb(0, 0, 0) !important;
-  --canvas-dot-pattern: rgb(0, 0, 0) !important;
-  --caret-color: rgb(0, 0, 0) !important;
-  --checkbox-border-color: rgb(102, 102, 102) !important;
-  --checkbox-border-color-hover: rgb(0, 0, 0) !important;
-  --checkbox-color: rgb(102, 102, 102) !important;
-  --checkbox-color-hover: rgb(0, 0, 0) !important;
-  --checkbox-marker-color: rgb(0, 0, 0) !important;
-  --checklist-done-color: rgb(0, 0, 0) !important;
-  --code-background: rgb(0, 0, 0) !important;
-  --code-border-color: rgb(0, 0, 0) !important;
-  --code-comment: rgb(0, 0, 0) !important;
-  --code-function: rgb(0, 0, 0) !important;
-  --code-important: rgb(0, 0, 0) !important;
-  --code-keyword: rgb(0, 0, 0) !important;
-  --code-normal: rgb(0, 0, 0) !important;
-  --code-operator: rgb(0, 0, 0) !important;
-  --code-property: rgb(0, 0, 0) !important;
-  --code-punctuation: rgb(0, 0, 0) !important;
-  --code-string: rgb(0, 0, 0) !important;
-  --code-tag: rgb(0, 0, 0) !important;
-  --code-value: rgb(0, 0, 0) !important;
-  --collapse-icon-color: rgb(0, 0, 0) !important;
-  --collapse-icon-color-collapsed: rgb(102, 102, 102) !important;
-  --color-accent: rgb(102, 102, 102) !important;
-  --color-accent-1: rgb(0, 0, 0) !important;
-  --color-accent-2: rgb(0, 0, 0) !important;
+  --background-modifier-active-hover: hsla(0deg,
+  0%,
+  40%, 0.1) !important;
+  --background-modifier-border: hsl(0deg 0% 70%) !important;
+  --background-modifier-border-focus: hsl(0deg 0% 60%) !important;
+  --background-modifier-border-hover: hsl(0deg 0% 65%) !important;
+  --background-modifier-form-field: hsl(0deg 0% 100%) !important;
+  --background-modifier-form-field-hover: hsl(0deg 0% 100%) !important;
+  --background-primary: hsl(0deg 0% 100%) !important;
+  --background-primary-alt: hsl(0deg 0% 95%) !important;
+  --background-secondary: hsl(0deg 0% 95%) !important;
+  --background-secondary-alt: hsl(0deg 0% 90%) !important;
+  --bases-cards-background: hsl(0deg 0% 100%) !important;
+  --bases-cards-cover-background: hsl(0deg 0% 95%) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(0deg 0% 70%) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(0deg 0% 65%) !important;
+  --bases-embed-border-color: hsl(0deg 0% 70%) !important;
+  --bases-group-heading-property-color: hsl(0deg 0% 30%) !important;
+  --bases-table-border-color: hsl(0deg 0% 70%) !important;
+  --bases-table-cell-background-active: hsl(0deg 0% 100%) !important;
+  --bases-table-cell-background-disabled: hsl(0deg 0% 95%) !important;
+  --bases-table-cell-background-selected: hsla(0deg,
+  0%,
+  40%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(0deg 0% 60%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(0deg 0% 30%) !important;
+  --bases-table-group-background: hsl(0deg 0% 95%) !important;
+  --bases-table-header-background: hsl(0deg 0% 100%) !important;
+  --bases-table-header-color: hsl(0deg 0% 30%) !important;
+  --bases-table-summary-background: hsl(0deg 0% 100%) !important;
+  --blockquote-border-color: hsl(0deg 0% 30%) !important;
+  --blur-background: color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent) linear-gradient(hsl(0deg 0% 100%), color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent)) !important;
+  --canvas-background: hsl(0deg 0% 100%) !important;
+  --canvas-card-label-color: hsl(0deg 0% 50%) !important;
+  --canvas-dot-pattern: hsl(0deg 0% 70%) !important;
+  --caret-color: hsl(0deg 0% 30%) !important;
+  --checkbox-border-color: hsl(0deg,
+  0%,
+  40%) !important;
+  --checkbox-border-color-hover: hsl(0deg 0% 20%) !important;
+  --checkbox-color: hsl(0deg,
+  0%,
+  40%) !important;
+  --checkbox-color-hover: hsl(0deg 0% 20%) !important;
+  --checkbox-marker-color: hsl(0deg 0% 100%) !important;
+  --checklist-done-color: hsl(0deg 0% 30%) !important;
+  --code-background: hsl(0deg 0% 95%) !important;
+  --code-border-color: hsl(0deg 0% 70%) !important;
+  --code-comment: hsl(0deg 0% 50%) !important;
+  --code-function: hsl(0deg 0% 25%) !important;
+  --code-important: hsl(0deg 0% 20%) !important;
+  --code-keyword: hsl(0deg 0% 25%) !important;
+  --code-normal: hsl(0deg 0% 30%) !important;
+  --code-operator: hsl(0deg 0% 10%) !important;
+  --code-property: hsl(0deg 0% 5%) !important;
+  --code-punctuation: hsl(0deg 0% 30%) !important;
+  --code-string: hsl(0deg 0% 40%) !important;
+  --code-tag: hsl(0deg 0% 0%) !important;
+  --code-value: hsl(0deg 0% 35%) !important;
+  --collapse-icon-color: hsl(0deg 0% 50%) !important;
+  --collapse-icon-color-collapsed: hsl(0deg,
+  0%,
+  40%) !important;
+  --color-accent: hsl(0deg,
+  0%,
+  40%) !important;
+  --color-accent-1: hsl(0deg 0% 30%) !important;
+  --color-accent-2: hsl(0deg 0% 20%) !important;
   --color-accent-hsl: 0deg,
   0%,
   40% !important;
-  --color-base-00: rgb(0, 0, 0) !important;
-  --color-base-05: rgb(0, 0, 0) !important;
-  --color-base-10: rgb(0, 0, 0) !important;
-  --color-base-100: rgb(0, 0, 0) !important;
-  --color-base-15: rgb(0, 0, 0) !important;
-  --color-base-20: rgb(0, 0, 0) !important;
-  --color-base-25: rgb(0, 0, 0) !important;
-  --color-base-30: rgb(0, 0, 0) !important;
-  --color-base-35: rgb(0, 0, 0) !important;
-  --color-base-40: rgb(0, 0, 0) !important;
-  --color-base-45: rgb(0, 0, 0) !important;
-  --color-base-50: rgb(0, 0, 0) !important;
-  --color-base-55: rgb(0, 0, 0) !important;
-  --color-base-60: rgb(0, 0, 0) !important;
-  --color-base-65: rgb(0, 0, 0) !important;
-  --color-base-70: rgb(0, 0, 0) !important;
-  --color-base-75: rgb(0, 0, 0) !important;
-  --color-base-80: rgb(0, 0, 0) !important;
-  --color-base-85: rgb(0, 0, 0) !important;
-  --color-base-90: rgb(0, 0, 0) !important;
-  --color-base-95: rgb(0, 0, 0) !important;
-  --dark: rgb(0, 0, 0) !important;
-  --darkgray: rgb(0, 0, 0) !important;
-  --divider-color: rgb(0, 0, 0) !important;
-  --divider-color-hover: rgb(0, 0, 0) !important;
-  --dropdown-background: rgb(0, 0, 0) !important;
-  --dropdown-background-hover: rgb(0, 0, 0) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgb(0, 0, 0), inset 0 0 0 1px rgb(0, 0, 0) !important;
-  --embed-border-start: 2px solid rgb(0, 0, 0) !important;
-  --file-header-background: rgb(0, 0, 0) !important;
-  --file-header-background-focused: rgb(0, 0, 0) !important;
-  --flair-background: rgb(0, 0, 0) !important;
-  --flair-color: rgb(0, 0, 0) !important;
-  --footnote-divider-color: rgb(0, 0, 0) !important;
-  --footnote-id-color: rgb(0, 0, 0) !important;
-  --footnote-id-color-no-occurrences: rgb(0, 0, 0) !important;
-  --graph-line: rgb(0, 0, 0) !important;
-  --graph-node: rgb(0, 0, 0) !important;
-  --graph-node-focused: rgb(102, 102, 102) !important;
-  --graph-node-unresolved: rgb(0, 0, 0) !important;
-  --graph-text: rgb(0, 0, 0) !important;
-  --gray: rgb(0, 0, 0) !important;
-  --heading-formatting: rgb(0, 0, 0) !important;
-  --highlight: rgba(102, 102, 102, 0.3) !important;
-  --hr-color: rgb(0, 0, 0) !important;
-  --icon-color: rgb(0, 0, 0) !important;
-  --icon-color-active: rgb(102, 102, 102) !important;
-  --icon-color-focused: rgb(0, 0, 0) !important;
-  --icon-color-hover: rgb(0, 0, 0) !important;
-  --input-date-separator: rgb(0, 0, 0) !important;
-  --input-placeholder-color: rgb(0, 0, 0) !important;
-  --interactive-accent: rgb(0, 0, 0) !important;
-  --interactive-accent-hover: rgb(0, 0, 0) !important;
+  --color-base-00: hsl(0deg 0% 100%) !important;
+  --color-base-05: hsl(0deg 0% 95%) !important;
+  --color-base-10: hsl(0deg 0% 90%) !important;
+  --color-base-100: hsl(0deg 0% 0%) !important;
+  --color-base-15: hsl(0deg 0% 85%) !important;
+  --color-base-20: hsl(0deg 0% 80%) !important;
+  --color-base-25: hsl(0deg 0% 75%) !important;
+  --color-base-30: hsl(0deg 0% 70%) !important;
+  --color-base-35: hsl(0deg 0% 65%) !important;
+  --color-base-40: hsl(0deg 0% 60%) !important;
+  --color-base-45: hsl(0deg 0% 55%) !important;
+  --color-base-50: hsl(0deg 0% 50%) !important;
+  --color-base-55: hsl(0deg 0% 45%) !important;
+  --color-base-60: hsl(0deg 0% 40%) !important;
+  --color-base-65: hsl(0deg 0% 35%) !important;
+  --color-base-70: hsl(0deg 0% 30%) !important;
+  --color-base-75: hsl(0deg 0% 25%) !important;
+  --color-base-80: hsl(0deg 0% 20%) !important;
+  --color-base-85: hsl(0deg 0% 15%) !important;
+  --color-base-90: hsl(0deg 0% 10%) !important;
+  --color-base-95: hsl(0deg 0% 5%) !important;
+  --dark: hsl(0deg 0% 0%) !important;
+  --darkgray: hsl(0deg 0% 0%) !important;
+  --divider-color: hsl(0deg 0% 70%) !important;
+  --divider-color-hover: hsl(0deg 0% 30%) !important;
+  --dropdown-background: hsl(0deg 0% 100%) !important;
+  --dropdown-background-hover: hsl(0deg 0% 90%) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsl(0deg 0% 70%), inset 0 0 0 1px hsl(0deg 0% 70%) !important;
+  --embed-border-start: 2px solid hsl(0deg 0% 30%) !important;
+  --file-header-background: hsl(0deg 0% 100%) !important;
+  --file-header-background-focused: hsl(0deg 0% 100%) !important;
+  --flair-background: hsl(0deg 0% 100%) !important;
+  --flair-color: hsl(0deg 0% 0%) !important;
+  --footnote-divider-color: hsl(0deg 0% 70%) !important;
+  --footnote-id-color: hsl(0deg 0% 30%) !important;
+  --footnote-id-color-no-occurrences: hsl(0deg 0% 50%) !important;
+  --graph-line: hsl(0deg 0% 65%) !important;
+  --graph-node: hsl(0deg 0% 30%) !important;
+  --graph-node-focused: hsl(0deg,
+  0%,
+  40%) !important;
+  --graph-node-unresolved: hsl(0deg 0% 50%) !important;
+  --graph-text: hsl(0deg 0% 0%) !important;
+  --gray: hsl(0deg 0% 30%) !important;
+  --heading-formatting: hsl(0deg 0% 50%) !important;
+  --highlight: hsla(0deg,
+  0%,
+  40%, 0.3) !important;
+  --hr-color: hsl(0deg 0% 70%) !important;
+  --icon-color: hsl(0deg 0% 30%) !important;
+  --icon-color-active: hsl(0deg,
+  0%,
+  40%) !important;
+  --icon-color-focused: hsl(0deg 0% 0%) !important;
+  --icon-color-hover: hsl(0deg 0% 30%) !important;
+  --input-date-separator: hsl(0deg 0% 50%) !important;
+  --input-placeholder-color: hsl(0deg 0% 50%) !important;
+  --interactive-accent: hsl(0deg 0% 30%) !important;
+  --interactive-accent-hover: hsl(0deg 0% 20%) !important;
   --interactive-accent-hsl: 0deg,
   0%,
   40% !important;
-  --interactive-hover: rgb(0, 0, 0) !important;
-  --interactive-normal: rgb(0, 0, 0) !important;
-  --light: rgb(0, 0, 0) !important;
-  --lightgray: rgb(0, 0, 0) !important;
-  --link-color: rgb(102, 102, 102) !important;
-  --link-color-hover: rgb(0, 0, 0) !important;
-  --link-external-color: rgb(102, 102, 102) !important;
-  --link-external-color-hover: rgb(0, 0, 0) !important;
-  --link-unresolved-color: rgb(102, 102, 102) !important;
-  --link-unresolved-decoration-color: rgba(102, 102, 102, 0.3) !important;
-  --list-marker-color: rgb(0, 0, 0) !important;
-  --list-marker-color-collapsed: rgb(102, 102, 102) !important;
-  --list-marker-color-hover: rgb(0, 0, 0) !important;
-  --menu-background: rgb(0, 0, 0) !important;
-  --menu-border-color: rgb(0, 0, 0) !important;
-  --metadata-border-color: rgb(0, 0, 0) !important;
-  --metadata-divider-color: rgb(0, 0, 0) !important;
-  --metadata-input-text-color: rgb(0, 0, 0) !important;
-  --metadata-label-text-color: rgb(0, 0, 0) !important;
-  --metadata-label-text-color-hover: rgb(0, 0, 0) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(0, 0, 0) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(0, 0, 0) !important;
-  --modal-background: rgb(0, 0, 0) !important;
-  --modal-border-color: rgb(0, 0, 0) !important;
-  --nav-collapse-icon-color: rgb(0, 0, 0) !important;
-  --nav-collapse-icon-color-collapsed: rgb(0, 0, 0) !important;
-  --nav-heading-color: rgb(0, 0, 0) !important;
-  --nav-heading-color-collapsed: rgb(0, 0, 0) !important;
-  --nav-heading-color-collapsed-hover: rgb(0, 0, 0) !important;
-  --nav-heading-color-hover: rgb(0, 0, 0) !important;
-  --nav-item-background-selected: rgba(102, 102, 102, 0.15) !important;
-  --nav-item-color: rgb(0, 0, 0) !important;
-  --nav-item-color-active: rgb(0, 0, 0) !important;
-  --nav-item-color-highlighted: rgb(102, 102, 102) !important;
-  --nav-item-color-hover: rgb(0, 0, 0) !important;
-  --nav-item-color-selected: rgb(0, 0, 0) !important;
-  --nav-tag-color: rgb(0, 0, 0) !important;
-  --nav-tag-color-active: rgb(0, 0, 0) !important;
-  --nav-tag-color-hover: rgb(0, 0, 0) !important;
-  --pdf-background: rgb(0, 0, 0) !important;
-  --pdf-page-background: rgb(0, 0, 0) !important;
-  --pdf-sidebar-background: rgb(0, 0, 0) !important;
-  --pill-border-color: rgb(0, 0, 0) !important;
-  --pill-border-color-hover: rgb(0, 0, 0) !important;
-  --pill-color: rgb(0, 0, 0) !important;
-  --pill-color-hover: rgb(0, 0, 0) !important;
-  --pill-color-remove: rgb(0, 0, 0) !important;
-  --pill-color-remove-hover: rgb(102, 102, 102) !important;
-  --prompt-background: rgb(0, 0, 0) !important;
-  --prompt-border-color: rgb(0, 0, 0) !important;
-  --raised-background: color-mix(in srgb, rgb(0, 0, 0) 65%, transparent) linear-gradient(rgb(0, 0, 0), color-mix(in srgb, rgb(0, 0, 0) 65%, transparent)) !important;
-  --ribbon-background: rgb(0, 0, 0) !important;
-  --ribbon-background-collapsed: rgb(0, 0, 0) !important;
-  --search-clear-button-color: rgb(0, 0, 0) !important;
-  --search-icon-color: rgb(0, 0, 0) !important;
-  --search-result-background: rgb(0, 0, 0) !important;
-  --secondary: rgb(102, 102, 102) !important;
-  --setting-group-heading-color: rgb(0, 0, 0) !important;
-  --setting-items-background: rgb(0, 0, 0) !important;
-  --setting-items-border-color: rgb(0, 0, 0) !important;
-  --slider-thumb-border-color: rgb(0, 0, 0) !important;
-  --slider-track-background: rgb(0, 0, 0) !important;
-  --status-bar-background: rgb(0, 0, 0) !important;
-  --status-bar-border-color: rgb(0, 0, 0) !important;
-  --status-bar-text-color: rgb(0, 0, 0) !important;
-  --suggestion-background: rgb(0, 0, 0) !important;
-  --tab-background-active: rgb(0, 0, 0) !important;
-  --tab-container-background: rgb(0, 0, 0) !important;
-  --tab-divider-color: rgb(0, 0, 0) !important;
-  --tab-outline-color: rgb(0, 0, 0) !important;
-  --tab-switcher-background: rgb(0, 0, 0) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 0, 0), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(102, 102, 102) !important;
-  --tab-text-color: rgb(0, 0, 0) !important;
-  --tab-text-color-active: rgb(0, 0, 0) !important;
-  --tab-text-color-focused: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-active: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-active-current: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-highlighted: rgb(102, 102, 102) !important;
-  --table-add-button-border-color: rgb(0, 0, 0) !important;
-  --table-border-color: rgb(0, 0, 0) !important;
-  --table-drag-handle-background-active: rgb(0, 0, 0) !important;
-  --table-drag-handle-color: rgb(0, 0, 0) !important;
-  --table-header-border-color: rgb(0, 0, 0) !important;
-  --table-header-color: rgb(0, 0, 0) !important;
-  --table-selection: rgba(102, 102, 102, 0.1) !important;
-  --table-selection-border-color: rgb(0, 0, 0) !important;
-  --tag-background: rgba(102, 102, 102, 0.1) !important;
-  --tag-background-hover: rgba(102, 102, 102, 0.2) !important;
-  --tag-border-color: rgba(102, 102, 102, 0.15) !important;
-  --tag-border-color-hover: rgba(102, 102, 102, 0.15) !important;
-  --tag-color: rgb(102, 102, 102) !important;
-  --tag-color-hover: rgb(102, 102, 102) !important;
-  --tertiary: rgb(0, 0, 0) !important;
-  --text-accent: rgb(102, 102, 102) !important;
-  --text-accent-hover: rgb(0, 0, 0) !important;
-  --text-faint: rgb(0, 0, 0) !important;
-  --text-highlight-bg: rgba(102, 102, 102, 0.3) !important;
-  --text-muted: rgb(0, 0, 0) !important;
-  --text-normal: rgb(0, 0, 0) !important;
-  --text-selection: rgba(102, 102, 102, 0.2) !important;
-  --textHighlight: rgba(102, 102, 102, 0.3) !important;
-  --titlebar-background: rgb(0, 0, 0) !important;
-  --titlebar-background-focused: rgb(0, 0, 0) !important;
-  --titlebar-border-color: rgb(0, 0, 0) !important;
-  --titlebar-text-color: rgb(0, 0, 0) !important;
-  --titlebar-text-color-focused: rgb(0, 0, 0) !important;
-  --vault-profile-color: rgb(0, 0, 0) !important;
-  --vault-profile-color-hover: rgb(0, 0, 0) !important;
+  --interactive-hover: hsl(0deg 0% 90%) !important;
+  --interactive-normal: hsl(0deg 0% 100%) !important;
+  --light: hsl(0deg 0% 100%) !important;
+  --lightgray: hsl(0deg 0% 95%) !important;
+  --link-color: hsl(0deg,
+  0%,
+  40%) !important;
+  --link-color-hover: hsl(0deg 0% 20%) !important;
+  --link-external-color: hsl(0deg,
+  0%,
+  40%) !important;
+  --link-external-color-hover: hsl(0deg 0% 20%) !important;
+  --link-unresolved-color: hsl(0deg,
+  0%,
+  40%) !important;
+  --link-unresolved-decoration-color: hsla(0deg,
+  0%,
+  40%, 0.3) !important;
+  --list-marker-color: hsl(0deg 0% 50%) !important;
+  --list-marker-color-collapsed: hsl(0deg,
+  0%,
+  40%) !important;
+  --list-marker-color-hover: hsl(0deg 0% 30%) !important;
+  --menu-background: hsl(0deg 0% 95%) !important;
+  --menu-border-color: hsl(0deg 0% 65%) !important;
+  --metadata-border-color: hsl(0deg 0% 70%) !important;
+  --metadata-divider-color: hsl(0deg 0% 70%) !important;
+  --metadata-input-text-color: hsl(0deg 0% 0%) !important;
+  --metadata-label-text-color: hsl(0deg 0% 30%) !important;
+  --metadata-label-text-color-hover: hsl(0deg 0% 30%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(0deg 0% 60%) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(0deg 0% 65%) !important;
+  --modal-background: hsl(0deg 0% 100%) !important;
+  --modal-border-color: hsl(0deg 0% 60%) !important;
+  --nav-collapse-icon-color: hsl(0deg 0% 50%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(0deg 0% 50%) !important;
+  --nav-heading-color: hsl(0deg 0% 0%) !important;
+  --nav-heading-color-collapsed: hsl(0deg 0% 50%) !important;
+  --nav-heading-color-collapsed-hover: hsl(0deg 0% 30%) !important;
+  --nav-heading-color-hover: hsl(0deg 0% 0%) !important;
+  --nav-item-background-selected: hsla(0deg,
+  0%,
+  40%, 0.15) !important;
+  --nav-item-color: hsl(0deg 0% 30%) !important;
+  --nav-item-color-active: hsl(0deg 0% 0%) !important;
+  --nav-item-color-highlighted: hsl(0deg,
+  0%,
+  40%) !important;
+  --nav-item-color-hover: hsl(0deg 0% 0%) !important;
+  --nav-item-color-selected: hsl(0deg 0% 0%) !important;
+  --nav-tag-color: hsl(0deg 0% 50%) !important;
+  --nav-tag-color-active: hsl(0deg 0% 30%) !important;
+  --nav-tag-color-hover: hsl(0deg 0% 30%) !important;
+  --pdf-background: hsl(0deg 0% 100%) !important;
+  --pdf-page-background: hsl(0deg 0% 100%) !important;
+  --pdf-sidebar-background: hsl(0deg 0% 100%) !important;
+  --pill-border-color: hsl(0deg 0% 70%) !important;
+  --pill-border-color-hover: hsl(0deg 0% 65%) !important;
+  --pill-color: hsl(0deg 0% 30%) !important;
+  --pill-color-hover: hsl(0deg 0% 0%) !important;
+  --pill-color-remove: hsl(0deg 0% 50%) !important;
+  --pill-color-remove-hover: hsl(0deg,
+  0%,
+  40%) !important;
+  --prompt-background: hsl(0deg 0% 100%) !important;
+  --prompt-border-color: hsl(0deg 0% 60%) !important;
+  --raised-background: color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent) linear-gradient(hsl(0deg 0% 100%), color-mix(in srgb, hsl(0deg 0% 100%) 65%, transparent)) !important;
+  --ribbon-background: hsl(0deg 0% 95%) !important;
+  --ribbon-background-collapsed: hsl(0deg 0% 100%) !important;
+  --search-clear-button-color: hsl(0deg 0% 30%) !important;
+  --search-icon-color: hsl(0deg 0% 30%) !important;
+  --search-result-background: hsl(0deg 0% 100%) !important;
+  --secondary: hsl(0deg,
+  0%,
+  40%) !important;
+  --setting-group-heading-color: hsl(0deg 0% 0%) !important;
+  --setting-items-background: hsl(0deg 0% 95%) !important;
+  --setting-items-border-color: hsl(0deg 0% 70%) !important;
+  --slider-thumb-border-color: hsl(0deg 0% 65%) !important;
+  --slider-track-background: hsl(0deg 0% 70%) !important;
+  --status-bar-background: hsl(0deg 0% 95%) !important;
+  --status-bar-border-color: hsl(0deg 0% 70%) !important;
+  --status-bar-text-color: hsl(0deg 0% 30%) !important;
+  --suggestion-background: hsl(0deg 0% 100%) !important;
+  --tab-background-active: hsl(0deg 0% 100%) !important;
+  --tab-container-background: hsl(0deg 0% 95%) !important;
+  --tab-divider-color: hsl(0deg 0% 65%) !important;
+  --tab-outline-color: hsl(0deg 0% 70%) !important;
+  --tab-switcher-background: hsl(0deg 0% 95%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0deg 0% 95%), transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0deg,
+  0%,
+  40%) !important;
+  --tab-text-color: hsl(0deg 0% 50%) !important;
+  --tab-text-color-active: hsl(0deg 0% 30%) !important;
+  --tab-text-color-focused: hsl(0deg 0% 30%) !important;
+  --tab-text-color-focused-active: hsl(0deg 0% 30%) !important;
+  --tab-text-color-focused-active-current: hsl(0deg 0% 0%) !important;
+  --tab-text-color-focused-highlighted: hsl(0deg,
+  0%,
+  40%) !important;
+  --table-add-button-border-color: hsl(0deg 0% 70%) !important;
+  --table-border-color: hsl(0deg 0% 70%) !important;
+  --table-drag-handle-background-active: hsl(0deg 0% 30%) !important;
+  --table-drag-handle-color: hsl(0deg 0% 50%) !important;
+  --table-header-border-color: hsl(0deg 0% 70%) !important;
+  --table-header-color: hsl(0deg 0% 0%) !important;
+  --table-selection: hsla(0deg,
+  0%,
+  40%, 0.1) !important;
+  --table-selection-border-color: hsl(0deg 0% 30%) !important;
+  --tag-background: hsla(0deg,
+  0%,
+  40%, 0.1) !important;
+  --tag-background-hover: hsla(0deg,
+  0%,
+  40%, 0.2) !important;
+  --tag-border-color: hsla(0deg,
+  0%,
+  40%, 0.15) !important;
+  --tag-border-color-hover: hsla(0deg,
+  0%,
+  40%, 0.15) !important;
+  --tag-color: hsl(0deg,
+  0%,
+  40%) !important;
+  --tag-color-hover: hsl(0deg,
+  0%,
+  40%) !important;
+  --tertiary: hsl(0deg 0% 20%) !important;
+  --text-accent: hsl(0deg,
+  0%,
+  40%) !important;
+  --text-accent-hover: hsl(0deg 0% 20%) !important;
+  --text-faint: hsl(0deg 0% 50%) !important;
+  --text-highlight-bg: hsla(0deg,
+  0%,
+  40%, 0.3) !important;
+  --text-muted: hsl(0deg 0% 30%) !important;
+  --text-normal: hsl(0deg 0% 0%) !important;
+  --text-selection: hsla(0deg,
+  0%,
+  40%, 0.2) !important;
+  --textHighlight: hsla(0deg,
+  0%,
+  40%, 0.3) !important;
+  --titlebar-background: hsl(0deg 0% 95%) !important;
+  --titlebar-background-focused: hsl(0deg 0% 90%) !important;
+  --titlebar-border-color: hsl(0deg 0% 70%) !important;
+  --titlebar-text-color: hsl(0deg 0% 30%) !important;
+  --titlebar-text-color-focused: hsl(0deg 0% 0%) !important;
+  --vault-profile-color: hsl(0deg 0% 0%) !important;
+  --vault-profile-color-hover: hsl(0deg 0% 0%) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -753,19 +815,6 @@ html body hr {
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(77, 77, 77);
   text-decoration: rgb(77, 77, 77);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(77, 77, 77);
-  text-decoration: rgb(77, 77, 77);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(77, 77, 77);

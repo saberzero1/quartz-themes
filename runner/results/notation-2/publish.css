@@ -70,6 +70,18 @@
       format("woff");
 }
 body.theme-light {
+  --bases-embed-border-color: rgba(55, 53, 47, 0.14) !important;
+  --bases-table-border-color: rgba(55, 53, 47, 0.14) !important;
+  --bases-table-header-background: hsl(203, 8%, 100%) !important;
+  --bases-table-header-background-hover: hsl(60, 3%, 0%, 4%) !important;
+  --focus-ring-color: #0df !important;
+  --tab-container-background: hsl(203, 8%, 96%) !important;
+  --table-border-color: rgba(55, 53, 47, 0.14) !important;
+  --text-accent: rgba(55, 53, 47, 0.45) !important;
+  --text-faint: rgba(55, 53, 47, 0.55) !important;
+  --text-normal: rgba(55, 53, 47, 0.9) !important;
+  --titlebar-background: hsl(203, 8%, 96%) !important;
+  --input-height: 30px !important;
   --accent-h: 210 !important;
   --accent-l: 51% !important;
   --accent-s: 77% !important;
@@ -82,7 +94,7 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(34, 130, 226, 0.1) !important;
+  --background-modifier-active-hover: hsla(210, 77%, 51%, 0.1) !important;
   --background-modifier-border: rgba(55, 53, 47, 0.14) !important;
   --background-modifier-border-focus: #afafaf !important;
   --background-modifier-border-hover: #f1f1f0 !important;
@@ -91,28 +103,27 @@ body.theme-light {
   --background-modifier-error: rgb(224, 62, 62) !important;
   --background-modifier-error-hover: rgb(224, 62, 62) !important;
   --background-modifier-error-rgb: 251, 228, 228 !important;
-  --background-modifier-form-field: rgb(255, 255, 255) !important;
-  --background-modifier-form-field-hover: rgb(255, 255, 255) !important;
-  --background-modifier-hover: rgb(0, 0, 0) !important;
+  --background-modifier-form-field: hsl(0, 0%, 100%) !important;
+  --background-modifier-form-field-hover: hsl(0, 0%, 100%) !important;
+  --background-modifier-hover: hsl(60, 3%, 0%, 4%) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: rgb(15, 123, 108) !important;
   --background-modifier-success-rgb: 221, 237, 234 !important;
-  --background-primary: rgb(255, 255, 255) !important;
-  --background-primary-alt: rgb(227, 230, 232) !important;
-  --background-secondary: rgb(244, 245, 246) !important;
-  --background-secondary-alt: rgb(227, 230, 232) !important;
-  --bases-cards-background: rgb(255, 255, 255) !important;
+  --background-primary: hsl(203, 8%, 100%) !important;
+  --background-primary-alt: hsl(203, 8%, 90%) !important;
+  --background-secondary: hsl(203, 8%, 96%) !important;
+  --background-secondary-alt: hsl(203, 8%, 90%) !important;
+  --bases-cards-background: hsl(203, 8%, 100%) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: rgb(227, 230, 232) !important;
+  --bases-cards-cover-background: hsl(203, 8%, 90%) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px rgba(55, 53, 47, 0.14) !important;
   --bases-cards-shadow-hover: 0 0 0 1px #f1f1f0 !important;
-  --bases-embed-border-color: rgba(55, 53, 47, 0.14) !important;
   --bases-embed-border-radius: 3px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -126,10 +137,9 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgba(55, 53, 47, 0.14) !important;
-  --bases-table-cell-background-active: rgb(255, 255, 255) !important;
-  --bases-table-cell-background-disabled: rgb(227, 230, 232) !important;
-  --bases-table-cell-background-selected: rgba(34, 130, 226, 0.1) !important;
+  --bases-table-cell-background-active: hsl(203, 8%, 100%) !important;
+  --bases-table-cell-background-disabled: hsl(203, 8%, 90%) !important;
+  --bases-table-cell-background-selected: hsla(210, 77%, 51%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #afafaf !important;
@@ -140,10 +150,8 @@ body.theme-light {
   --bases-table-container-border-radius: 3px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: rgb(227, 230, 232) !important;
+  --bases-table-group-background: hsl(203, 8%, 90%) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: rgb(255, 255, 255) !important;
-  --bases-table-header-background-hover: rgb(0, 0, 0) !important;
   --bases-table-header-color: rgba(55, 53, 47, 0.7) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -155,18 +163,18 @@ body.theme-light {
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: rgb(255, 255, 255) !important;
-  --bases-table-summary-background-hover: rgb(0, 0, 0) !important;
+  --bases-table-summary-background: hsl(203, 8%, 100%) !important;
+  --bases-table-summary-background-hover: hsl(60, 3%, 0%, 4%) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
   --blockquote-border-color: rgba(55, 53, 47, 0.9) !important;
   --blockquote-border-thickness: 3px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent)
+  --blur-background: color-mix(in srgb, hsl(203, 8%, 100%) 65%, transparent)
     linear-gradient(
-      rgb(255, 255, 255),
-      color-mix(in srgb, rgb(255, 255, 255) 65%, transparent)
+      hsl(203, 8%, 100%),
+      color-mix(in srgb, hsl(203, 8%, 100%) 65%, transparent)
     ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
@@ -206,7 +214,7 @@ body.theme-light {
   --callout-title-weight: 600;
   --callout-todo: 221, 235, 241;
   --callout-warning: 250, 235, 221;
-  --canvas-background: rgb(255, 255, 255) !important;
+  --canvas-background: hsl(203, 8%, 100%) !important;
   --canvas-card-label-color: rgba(55, 53, 47, 0.55) !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 251, 228, 228 !important;
@@ -225,16 +233,16 @@ body.theme-light {
   --checkbox-color: rgb(46, 170, 220) !important;
   --checkbox-color-hover: rgba(46, 170, 220, 0.8) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: rgb(255, 255, 255) !important;
+  --checkbox-marker-color: hsl(203, 8%, 100%) !important;
   --checkbox-radius: 3px !important;
   --checkbox-size: 16px !important;
   --checklist-done-color: rgba(55, 53, 47, 0.7) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 3px !important;
-  --code-background: rgb(179, 178, 178) !important;
+  --code-background: hsl(0, 1%, 70%, 14%) !important;
   --code-border-color: rgba(55, 53, 47, 0.14) !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgb(0, 0, 0) !important;
+  --code-bracket-background: hsl(60, 3%, 0%, 4%) !important;
   --code-comment: rgba(55, 53, 47, 0.55) !important;
   --code-function: rgb(223, 171, 1) !important;
   --code-important: rgb(217, 115, 13) !important;
@@ -251,11 +259,11 @@ body.theme-light {
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgba(55, 53, 47, 0.55) !important;
   --collapse-icon-color-collapsed: rgba(55, 53, 47, 0.45) !important;
-  --color-accent: rgb(34, 130, 226) !important;
-  --color-accent-1: rgb(51, 143, 230) !important;
-  --color-accent-2: rgb(68, 159, 233) !important;
+  --color-accent: hsl(210, 77%, 51%) !important;
+  --color-accent-1: hsl(209, 77.77%, 54.825%) !important;
+  --color-accent-2: hsl(207, 78.54%, 58.65%) !important;
   --color-accent-hsl: 210, 77%, 51% !important;
-  --color-base-00: rgb(255, 255, 255) !important;
+  --color-base-00: hsl(0, 0%, 100%) !important;
   --color-base-05: #fbfbfa !important;
   --color-base-10: #fbfbfa !important;
   --color-base-100: #37352f !important;
@@ -317,8 +325,8 @@ body.theme-light {
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: rgb(255, 255, 255) !important;
-  --file-header-background-focused: rgb(255, 255, 255) !important;
+  --file-header-background: hsl(203, 8%, 100%) !important;
+  --file-header-background-focused: hsl(203, 8%, 100%) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
     "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -332,7 +340,6 @@ body.theme-light {
   --file-margins-y: 32px !important;
   --flair-background: #f2f3f5 !important;
   --flair-color: rgba(55, 53, 47, 0.9) !important;
-  --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 500 !important;
@@ -384,7 +391,7 @@ body.theme-light {
   --footnote-id-color-no-occurrences: rgba(55, 53, 47, 0.55) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgb(0, 0, 0) !important;
+  --footnote-input-background-active: hsl(60, 3%, 0%, 4%) !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -481,7 +488,6 @@ body.theme-light {
   --input-corner-shape: round !important;
   --input-date-separator: rgba(55, 53, 47, 0.55) !important;
   --input-font-weight: 400 !important;
-  --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgba(55, 53, 47, 0.55) !important;
@@ -525,7 +531,7 @@ body.theme-light {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: rgba(55, 53, 47, 0.45) !important;
-  --link-unresolved-decoration-color: rgba(34, 130, 226, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(210, 77%, 51%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -545,7 +551,7 @@ body.theme-light {
   --list-spacing: 0.3em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: rgb(244, 245, 246) !important;
+  --menu-background: hsl(203, 8%, 96%) !important;
   --menu-border-color: #f1f1f0 !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
@@ -571,7 +577,7 @@ body.theme-light {
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgb(0, 0, 0) !important;
+  --metadata-input-background-active: hsl(60, 3%, 0%, 4%) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
     "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -582,7 +588,7 @@ body.theme-light {
   --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: rgba(55, 53, 47, 0.9) !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgb(0, 0, 0) !important;
+  --metadata-label-background-active: hsl(60, 3%, 0%, 4%) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
     "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -594,7 +600,7 @@ body.theme-light {
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgb(0, 0, 0) !important;
+  --metadata-property-background-active: hsl(60, 3%, 0%, 4%) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #afafaf !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #f1f1f0 !important;
@@ -607,7 +613,7 @@ body.theme-light {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 0.95em !important;
   --metadata-sidebar-label-font-size: 0.95em !important;
-  --modal-background: rgb(255, 255, 255) !important;
+  --modal-background: hsl(203, 8%, 100%) !important;
   --modal-border-color: #afafaf !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -631,9 +637,9 @@ body.theme-light {
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: transparent !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgb(0, 0, 0) !important;
-  --nav-item-background-hover: rgb(0, 0, 0) !important;
-  --nav-item-background-selected: rgba(34, 130, 226, 0.15) !important;
+  --nav-item-background-active: hsl(60, 3%, 0%, 4%) !important;
+  --nav-item-background-hover: hsl(60, 3%, 0%, 4%) !important;
+  --nav-item-background-selected: hsla(210, 77%, 51%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgba(55, 53, 47, 0.7) !important;
@@ -657,11 +663,11 @@ body.theme-light {
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: rgb(255, 255, 255) !important;
-  --pdf-page-background: rgb(255, 255, 255) !important;
+  --pdf-background: hsl(203, 8%, 100%) !important;
+  --pdf-page-background: hsl(203, 8%, 100%) !important;
   --pdf-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: rgb(255, 255, 255) !important;
+  --pdf-sidebar-background: hsl(203, 8%, 100%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
@@ -690,7 +696,7 @@ body.theme-light {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: rgb(255, 255, 255) !important;
+  --prompt-background: hsl(203, 8%, 100%) !important;
   --prompt-border-color: #afafaf !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -701,10 +707,10 @@ body.theme-light {
   --radius-m: 8px !important;
   --radius-s: 3px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent)
+  --raised-background: color-mix(in srgb, hsl(203, 8%, 100%) 65%, transparent)
     linear-gradient(
-      rgb(255, 255, 255),
-      color-mix(in srgb, rgb(255, 255, 255) 65%, transparent)
+      hsl(203, 8%, 100%),
+      color-mix(in srgb, hsl(203, 8%, 100%) 65%, transparent)
     ) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
@@ -720,8 +726,8 @@ body.theme-light {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: rgb(244, 245, 246) !important;
-  --ribbon-background-collapsed: rgb(255, 255, 255) !important;
+  --ribbon-background: hsl(203, 8%, 96%) !important;
+  --ribbon-background-collapsed: hsl(203, 8%, 100%) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -739,11 +745,11 @@ body.theme-light {
   --search-clear-button-size: 13px !important;
   --search-icon-color: rgba(55, 53, 47, 0.7) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: rgb(255, 255, 255) !important;
+  --search-result-background: hsl(203, 8%, 100%) !important;
   --setting-group-heading-color: rgba(55, 53, 47, 0.9) !important;
   --setting-group-heading-size: 0.97em !important;
   --setting-group-heading-weight: 600 !important;
-  --setting-items-background: rgb(227, 230, 232) !important;
+  --setting-items-background: hsl(203, 8%, 90%) !important;
   --setting-items-border-color: rgba(55, 53, 47, 0.14) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
@@ -786,7 +792,7 @@ body.theme-light {
   --slider-track-background: rgba(55, 53, 47, 0.14) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: rgb(244, 245, 246) !important;
+  --status-bar-background: hsl(203, 8%, 96%) !important;
   --status-bar-border-color: rgba(55, 53, 47, 0.14) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 0.9em !important;
@@ -794,7 +800,7 @@ body.theme-light {
   --status-bar-radius: 8px 0 0 0 !important;
   --status-bar-text-color: rgba(55, 53, 47, 0.7) !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: rgb(255, 255, 255) !important;
+  --suggestion-background: hsl(203, 8%, 100%) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -809,7 +815,6 @@ body.theme-light {
   --sync-avatar-color-8: rgb(173, 26, 114) !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: transparent !important;
-  --tab-container-background: rgb(244, 245, 246) !important;
   --tab-curve: 0px !important;
   --tab-divider-color: #f1f1f0 !important;
   --tab-font-size: 0.95em !important;
@@ -826,16 +831,16 @@ body.theme-light {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: rgb(244, 245, 246) !important;
+  --tab-switcher-background: hsl(203, 8%, 96%) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    rgb(244, 245, 246),
+    hsl(203, 8%, 96%),
     transparent
   ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(34, 130, 226) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(210, 77%, 51%) !important;
   --tab-text-color: rgba(55, 53, 47, 0.55) !important;
   --tab-text-color-active: rgba(55, 53, 47, 0.7) !important;
   --tab-text-color-focused: rgba(55, 53, 47, 0.7) !important;
@@ -847,7 +852,6 @@ body.theme-light {
   --table-add-button-border-color: rgba(55, 53, 47, 0.14) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgba(55, 53, 47, 0.14) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -871,17 +875,17 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(34, 130, 226, 0.1) !important;
+  --table-selection: hsla(210, 77%, 51%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: rgb(46, 170, 220) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(34, 130, 226, 0.1) !important;
-  --tag-background-hover: rgba(34, 130, 226, 0.2) !important;
-  --tag-border-color: rgba(34, 130, 226, 0.15) !important;
-  --tag-border-color-hover: rgba(34, 130, 226, 0.15) !important;
+  --tag-background: hsla(210, 77%, 51%, 0.1) !important;
+  --tag-background-hover: hsla(210, 77%, 51%, 0.2) !important;
+  --tag-border-color: hsla(210, 77%, 51%, 0.15) !important;
+  --tag-border-color-hover: hsla(210, 77%, 51%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: rgba(55, 53, 47, 0.9) !important;
   --tag-color-hover: rgba(55, 53, 47, 0.45) !important;
@@ -892,21 +896,17 @@ body.theme-light {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 3px !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgba(55, 53, 47, 0.45) !important;
   --text-accent-hover: rgba(55, 53, 47, 0.45) !important;
   --text-error: rgb(224, 62, 62) !important;
-  --text-faint: rgba(55, 53, 47, 0.55) !important;
   --text-highlight-bg: rgb(251, 243, 219) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: rgba(55, 53, 47, 0.7) !important;
-  --text-normal: rgba(55, 53, 47, 0.9) !important;
   --text-on-accent: rgba(55, 53, 47, 0.9) !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgba(0, 122, 255, 0.15) !important;
   --text-success: rgb(15, 123, 108) !important;
   --text-warning: rgb(217, 115, 13) !important;
-  --titlebar-background: rgb(244, 245, 246) !important;
-  --titlebar-background-focused: rgb(227, 230, 232) !important;
+  --titlebar-background-focused: hsl(203, 8%, 90%) !important;
   --titlebar-border-color: rgba(55, 53, 47, 0.14) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -950,7 +950,7 @@ body.theme-light {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --background-accent: rgb(0, 0, 0) !important;
+  --background-accent: hsl(203, 8%, 0%) !important;
   --interactive-accent-rgb: 46, 170, 220 !important;
   --raised-shadow:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
@@ -1008,6 +1008,18 @@ body.theme-light {
 }
 
 body.theme-dark {
+  --bases-embed-border-color: rgba(255, 255, 255, 0.14) !important;
+  --bases-table-border-color: rgba(255, 255, 255, 0.14) !important;
+  --bases-table-header-background: hsl(203, 8%, 20%) !important;
+  --bases-table-header-background-hover: rgba(255, 255, 255, 0.04) !important;
+  --focus-ring-color: #0df !important;
+  --tab-container-background: hsl(203, 8%, 23%) !important;
+  --table-border-color: rgba(255, 255, 255, 0.14) !important;
+  --text-accent: rgba(255, 255, 255, 0.45) !important;
+  --text-faint: rgba(255, 255, 255, 0.55) !important;
+  --text-normal: rgba(255, 255, 255, 0.9) !important;
+  --titlebar-background: hsl(203, 8%, 23%) !important;
+  --input-height: 30px !important;
   --accent-h: 210 !important;
   --accent-l: 51% !important;
   --accent-s: 77% !important;
@@ -1020,7 +1032,7 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(34, 130, 226, 0.1) !important;
+  --background-modifier-active-hover: hsla(210, 77%, 51%, 0.1) !important;
   --background-modifier-border: rgba(255, 255, 255, 0.14) !important;
   --background-modifier-border-focus: #535353 !important;
   --background-modifier-border-hover: #363636 !important;
@@ -1035,22 +1047,21 @@ body.theme-dark {
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: rgb(77, 171, 154) !important;
   --background-modifier-success-rgb: 53, 76, 75 !important;
-  --background-primary: rgb(47, 52, 55) !important;
-  --background-primary-alt: rgb(61, 68, 72) !important;
-  --background-secondary: rgb(54, 60, 63) !important;
-  --background-secondary-alt: rgb(61, 68, 72) !important;
-  --bases-cards-background: rgb(47, 52, 55) !important;
+  --background-primary: hsl(203, 8%, 20%) !important;
+  --background-primary-alt: hsl(203, 8%, 26%) !important;
+  --background-secondary: hsl(203, 8%, 23%) !important;
+  --background-secondary-alt: hsl(203, 8%, 26%) !important;
+  --bases-cards-background: hsl(203, 8%, 20%) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: rgb(61, 68, 72) !important;
+  --bases-cards-cover-background: hsl(203, 8%, 26%) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14) !important;
   --bases-cards-shadow-hover: 0 0 0 1px #363636 !important;
-  --bases-embed-border-color: rgba(255, 255, 255, 0.14) !important;
   --bases-embed-border-radius: 3px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -1064,10 +1075,9 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgba(255, 255, 255, 0.14) !important;
-  --bases-table-cell-background-active: rgb(47, 52, 55) !important;
-  --bases-table-cell-background-disabled: rgb(61, 68, 72) !important;
-  --bases-table-cell-background-selected: rgba(34, 130, 226, 0.1) !important;
+  --bases-table-cell-background-active: hsl(203, 8%, 20%) !important;
+  --bases-table-cell-background-disabled: hsl(203, 8%, 26%) !important;
+  --bases-table-cell-background-selected: hsla(210, 77%, 51%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #535353 !important;
@@ -1078,10 +1088,8 @@ body.theme-dark {
   --bases-table-container-border-radius: 3px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: rgb(61, 68, 72) !important;
+  --bases-table-group-background: hsl(203, 8%, 26%) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: rgb(47, 52, 55) !important;
-  --bases-table-header-background-hover: rgba(255, 255, 255, 0.04) !important;
   --bases-table-header-color: rgba(255, 255, 255, 0.7) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -1093,7 +1101,7 @@ body.theme-dark {
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: rgb(47, 52, 55) !important;
+  --bases-table-summary-background: hsl(203, 8%, 20%) !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.04) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
@@ -1141,7 +1149,7 @@ body.theme-dark {
   --callout-title-weight: 600;
   --callout-todo: 54, 73, 84;
   --callout-warning: 89, 74, 58;
-  --canvas-background: rgb(47, 52, 55) !important;
+  --canvas-background: hsl(203, 8%, 20%) !important;
   --canvas-card-label-color: rgba(255, 255, 255, 0.55) !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 89, 65, 65 !important;
@@ -1160,13 +1168,13 @@ body.theme-dark {
   --checkbox-color: rgb(46, 170, 220) !important;
   --checkbox-color-hover: rgba(46, 170, 220, 0.8) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: rgb(47, 52, 55) !important;
+  --checkbox-marker-color: hsl(203, 8%, 20%) !important;
   --checkbox-radius: 3px !important;
   --checkbox-size: 16px !important;
   --checklist-done-color: rgba(255, 255, 255, 0.7) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 3px !important;
-  --code-background: rgb(179, 178, 178) !important;
+  --code-background: hsl(0, 1%, 70%, 14%) !important;
   --code-border-color: rgba(255, 255, 255, 0.14) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: rgba(255, 255, 255, 0.04) !important;
@@ -1186,9 +1194,9 @@ body.theme-dark {
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgba(255, 255, 255, 0.55) !important;
   --collapse-icon-color-collapsed: rgba(255, 255, 255, 0.45) !important;
-  --color-accent: rgb(34, 130, 226) !important;
-  --color-accent-1: rgb(68, 159, 233) !important;
-  --color-accent-2: rgb(98, 180, 239) !important;
+  --color-accent: hsl(210, 77%, 51%) !important;
+  --color-accent-1: hsl(207, 78.54%, 58.65%) !important;
+  --color-accent-2: hsl(205, 80.85%, 65.79%) !important;
   --color-accent-hsl: 210, 77%, 51% !important;
   --color-base-00: #191919 !important;
   --color-base-05: #212121 !important;
@@ -1253,8 +1261,8 @@ body.theme-dark {
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: rgb(47, 52, 55) !important;
-  --file-header-background-focused: rgb(47, 52, 55) !important;
+  --file-header-background: hsl(203, 8%, 20%) !important;
+  --file-header-background-focused: hsl(203, 8%, 20%) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
     "??", "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -1268,7 +1276,6 @@ body.theme-dark {
   --file-margins-y: 32px !important;
   --flair-background: #2a2a2a !important;
   --flair-color: rgba(255, 255, 255, 0.9) !important;
-  --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 500 !important;
@@ -1417,7 +1424,6 @@ body.theme-dark {
   --input-corner-shape: round !important;
   --input-date-separator: rgba(255, 255, 255, 0.55) !important;
   --input-font-weight: 400 !important;
-  --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgba(255, 255, 255, 0.55) !important;
@@ -1461,7 +1467,7 @@ body.theme-dark {
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: rgba(255, 255, 255, 0.45) !important;
-  --link-unresolved-decoration-color: rgba(34, 130, 226, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(210, 77%, 51%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -1481,7 +1487,7 @@ body.theme-dark {
   --list-spacing: 0.3em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: rgb(54, 60, 63) !important;
+  --menu-background: hsl(203, 8%, 23%) !important;
   --menu-border-color: #363636 !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
@@ -1543,7 +1549,7 @@ body.theme-dark {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 0.95em !important;
   --metadata-sidebar-label-font-size: 0.95em !important;
-  --modal-background: rgb(47, 52, 55) !important;
+  --modal-background: hsl(203, 8%, 20%) !important;
   --modal-border-color: #535353 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -1569,7 +1575,7 @@ body.theme-dark {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.04) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.04) !important;
-  --nav-item-background-selected: rgba(34, 130, 226, 0.15) !important;
+  --nav-item-background-selected: hsla(210, 77%, 51%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgba(255, 255, 255, 0.7) !important;
@@ -1593,10 +1599,10 @@ body.theme-dark {
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: rgb(47, 52, 55) !important;
-  --pdf-page-background: rgb(47, 52, 55) !important;
+  --pdf-background: hsl(203, 8%, 20%) !important;
+  --pdf-page-background: hsl(203, 8%, 20%) !important;
   --pdf-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14) !important;
-  --pdf-sidebar-background: rgb(47, 52, 55) !important;
+  --pdf-sidebar-background: hsl(203, 8%, 20%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14) !important;
   --pdfViewer-padding-bottom: 0 !important;
@@ -1624,7 +1630,7 @@ body.theme-dark {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: rgb(47, 52, 55) !important;
+  --prompt-background: hsl(203, 8%, 20%) !important;
   --prompt-border-color: #535353 !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -1645,8 +1651,8 @@ body.theme-dark {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: rgb(54, 60, 63) !important;
-  --ribbon-background-collapsed: rgb(47, 52, 55) !important;
+  --ribbon-background: hsl(203, 8%, 23%) !important;
+  --ribbon-background-collapsed: hsl(203, 8%, 20%) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1664,11 +1670,11 @@ body.theme-dark {
   --search-clear-button-size: 13px !important;
   --search-icon-color: rgba(255, 255, 255, 0.7) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: rgb(47, 52, 55) !important;
+  --search-result-background: hsl(203, 8%, 20%) !important;
   --setting-group-heading-color: rgba(255, 255, 255, 0.9) !important;
   --setting-group-heading-size: 0.97em !important;
   --setting-group-heading-weight: 600 !important;
-  --setting-items-background: rgb(61, 68, 72) !important;
+  --setting-items-background: hsl(203, 8%, 26%) !important;
   --setting-items-border-color: rgba(255, 255, 255, 0.14) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
@@ -1711,7 +1717,7 @@ body.theme-dark {
   --slider-track-background: rgba(255, 255, 255, 0.14) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: rgb(54, 60, 63) !important;
+  --status-bar-background: hsl(203, 8%, 23%) !important;
   --status-bar-border-color: rgba(255, 255, 255, 0.14) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 0.9em !important;
@@ -1719,7 +1725,7 @@ body.theme-dark {
   --status-bar-radius: 8px 0 0 0 !important;
   --status-bar-text-color: rgba(255, 255, 255, 0.7) !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: rgb(47, 52, 55) !important;
+  --suggestion-background: hsl(203, 8%, 20%) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
@@ -1734,7 +1740,6 @@ body.theme-dark {
   --sync-avatar-color-8: rgb(226, 85, 161) !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: transparent !important;
-  --tab-container-background: rgb(54, 60, 63) !important;
   --tab-curve: 0px !important;
   --tab-divider-color: #363636 !important;
   --tab-font-size: 0.95em !important;
@@ -1751,16 +1756,16 @@ body.theme-dark {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: rgb(54, 60, 63) !important;
+  --tab-switcher-background: hsl(203, 8%, 23%) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    rgb(54, 60, 63),
+    hsl(203, 8%, 23%),
     transparent
   ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(34, 130, 226) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(210, 77%, 51%) !important;
   --tab-text-color: rgba(255, 255, 255, 0.55) !important;
   --tab-text-color-active: rgba(255, 255, 255, 0.7) !important;
   --tab-text-color-focused: rgba(255, 255, 255, 0.7) !important;
@@ -1772,7 +1777,6 @@ body.theme-dark {
   --table-add-button-border-color: rgba(255, 255, 255, 0.14) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgba(255, 255, 255, 0.14) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1796,17 +1800,17 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(34, 130, 226, 0.1) !important;
+  --table-selection: hsla(210, 77%, 51%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
   --table-selection-border-color: rgb(46, 170, 220) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: rgba(34, 130, 226, 0.1) !important;
-  --tag-background-hover: rgba(34, 130, 226, 0.2) !important;
-  --tag-border-color: rgba(34, 130, 226, 0.15) !important;
-  --tag-border-color-hover: rgba(34, 130, 226, 0.15) !important;
+  --tag-background: hsla(210, 77%, 51%, 0.1) !important;
+  --tag-background-hover: hsla(210, 77%, 51%, 0.2) !important;
+  --tag-border-color: hsla(210, 77%, 51%, 0.15) !important;
+  --tag-border-color-hover: hsla(210, 77%, 51%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: rgba(255, 255, 255, 0.9) !important;
   --tag-color-hover: rgba(255, 255, 255, 0.45) !important;
@@ -1817,21 +1821,17 @@ body.theme-dark {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 3px !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgba(255, 255, 255, 0.45) !important;
   --text-accent-hover: rgba(255, 255, 255, 0.45) !important;
   --text-error: rgb(255, 115, 105) !important;
-  --text-faint: rgba(255, 255, 255, 0.55) !important;
   --text-highlight-bg: rgb(89, 86, 59) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: rgba(255, 255, 255, 0.7) !important;
-  --text-normal: rgba(255, 255, 255, 0.9) !important;
   --text-on-accent: rgba(255, 255, 255, 0.9) !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(0, 123, 255, 0.2) !important;
+  --text-selection: hsla(211, 100%, 50%, 0.2) !important;
   --text-success: rgb(77, 171, 154) !important;
   --text-warning: rgb(255, 163, 68) !important;
-  --titlebar-background: rgb(54, 60, 63) !important;
-  --titlebar-background-focused: rgb(61, 68, 72) !important;
+  --titlebar-background-focused: hsl(203, 8%, 26%) !important;
   --titlebar-border-color: rgba(255, 255, 255, 0.14) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -1875,7 +1875,7 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --zoom-factor: 1 !important;
-  --background-accent: rgb(0, 0, 0) !important;
+  --background-accent: hsl(203, 8%, 0%) !important;
   --interactive-accent-rgb: 46, 170, 220 !important;
   --h1-color: rgba(255, 255, 255, 0.9) !important;
   --h2-color: rgba(255, 255, 255, 0.9) !important;
@@ -1944,223 +1944,303 @@ body {
   --nav-collapse-icon-color: var(--text-muted);
   --nav-collapse-icon-color-collapsed: var(--text-faint);
 }
-body .markdown-rendered a.external-link {
+body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   cursor: pointer;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  outline: rgba(255, 255, 255, 0.9) none 0px;
-  text-decoration: underline rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration: underline rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered a.internal-link {
+body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   cursor: pointer;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
-  outline: rgba(255, 255, 255, 0.9) none 0px;
-  text-decoration: underline 1px rgba(255, 255, 255, 0.14);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.14),
-    rgba(255, 255, 255, 0.14)
-  );
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration: underline 1px rgba(55, 53, 47, 0.14);
+  text-decoration-color: rgba(55, 53, 47, 0.14);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: 1px;
   transition: opacity 0.14s ease-in-out;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered a.internal-link.is-unresolved {
+body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(55, 53, 47, 0.7);
   cursor: pointer;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
-  outline: rgba(255, 255, 255, 0.7) none 0px;
-  text-decoration: underline 1px rgba(255, 255, 255, 0.14);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.14),
-    rgba(255, 255, 255, 0.14)
-  );
+  outline: rgba(55, 53, 47, 0.7) none 0px;
+  text-decoration: underline 1px rgba(55, 53, 47, 0.14);
+  text-decoration-color: rgba(55, 53, 47, 0.14);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-thickness: 1px;
   transition: opacity 0.14s ease-in-out;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered a.external-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+body body.theme-light .markdown-rendered a.external-link:hover {
+  text-decoration: underline rgb(138, 92, 245);
+  text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: rgb(138, 92, 245);
 }
-body .markdown-rendered a.internal-link:hover {
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+body body.theme-light .markdown-rendered a.internal-link:hover {
+  text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: rgb(138, 92, 245);
 }
-body .markdown-rendered p {
+body body.theme-light .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(55, 53, 47, 0.7);
   cursor: auto;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  outline: rgba(255, 255, 255, 0.7) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.7);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.7),
-    rgba(255, 255, 255, 0.7)
-  );
+  outline: rgba(55, 53, 47, 0.7) none 0px;
+  text-decoration: rgba(55, 53, 47, 0.7);
+  text-decoration-color: rgba(55, 53, 47, 0.7);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: none;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body strong {
+body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
-  outline: rgba(255, 255, 255, 0.9) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body b {
+body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
-  outline: rgba(255, 255, 255, 0.9) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body em {
+body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  outline: rgba(255, 255, 255, 0.9) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body i {
+body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  outline: rgba(255, 255, 255, 0.9) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered mark {
-  background-color: light-dark(rgb(251, 243, 219), rgb(89, 86, 59));
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .markdown-rendered mark {
+  background-color: rgb(251, 243, 219);
+  color: rgba(55, 53, 47, 0.9);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  outline: rgba(255, 255, 255, 0.9) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body del {
+body body.theme-light del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  outline: rgba(255, 255, 255, 0.9) none 0px;
-  text-decoration: line-through rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration: line-through rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .suggestion-item.is-selected {
-  background-color: light-dark(rgba(0, 0, 0, 0.04), rgba(255, 255, 255, 0.04));
+body body.theme-light .suggestion-item.is-selected {
+  background-color: rgba(0, 0, 0, 0.04);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2169,11 +2249,11 @@ body .suggestion-item.is-selected {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
 }
-body div.suggestion-item {
-  background-color: light-dark(rgba(0, 0, 0, 0.04), rgba(255, 255, 255, 0.04));
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light div.suggestion-item {
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2182,12 +2262,10 @@ body div.suggestion-item {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
 }
-body .markdown-rendered hr {
-  border-color: rgb(128, 128, 128)
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14))
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+body body.theme-light .markdown-rendered hr {
+  border-color: rgb(128, 128, 128) rgba(55, 53, 47, 0.14) rgba(55, 53, 47, 0.14);
   border-style: solid solid none none;
   border-width: 0px 1px 0px 0px;
   border-top-left-radius: 0px;
@@ -2205,9 +2283,9 @@ body .markdown-rendered hr {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body div.multi-select-pill {
+body body.theme-light div.multi-select-pill {
   align-items: normal;
-  background-color: light-dark(rgb(253, 236, 200), rgb(137, 99, 42));
+  background-color: rgb(253, 236, 200);
   display: flex;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -2224,16 +2302,16 @@ body div.multi-select-pill {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body div.multi-select-pill > div.multi-select-pill-content {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
+  color: rgba(55, 53, 47, 0.9);
 }
-body .markdown-rendered ul > li {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .markdown-rendered ul > li {
+  color: rgba(55, 53, 47, 0.9);
   text-align: start;
 }
-body .markdown-rendered ul > li::marker {
+body body.theme-light .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2242,17 +2320,17 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgb(34, 34, 34);
   pointer-events: auto;
   transform: none;
 }
-body .markdown-rendered ol > li {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .markdown-rendered ol > li {
+  color: rgba(55, 53, 47, 0.9);
   text-align: start;
 }
-body .markdown-rendered ol > li::marker {
+body body.theme-light .markdown-rendered ol > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2261,13 +2339,13 @@ body .markdown-rendered ol > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgb(34, 34, 34);
   pointer-events: auto;
   transform: none;
 }
-body .markdown-rendered code {
+body body.theme-light .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px solid light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px solid rgba(55, 53, 47, 0.9);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2276,14 +2354,13 @@ body .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   font-family: "iA Writer Duospace", Nitti, Menlo, Courier, monospace;
   padding: 24px 6px 24px 10px;
 }
-body .markdown-rendered pre > code {
+body body.theme-light .markdown-rendered pre > code {
   background-color: rgba(179, 178, 178, 0.14);
-  border: 0px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 0px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2297,11 +2374,10 @@ body .markdown-rendered pre > code {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
+body body.theme-light :not(pre) > code[class*="language-"],
+body body.theme-light pre[class*="language-"] {
   background-color: rgba(179, 178, 178, 0.14);
-  border: 0px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 0px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2315,9 +2391,13 @@ body pre[class*="language-"] {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
+body
+  body.theme-light
+  ul.contains-task-list
+  > li.task-list-item
+  > .task-list-item-checkbox {
   appearance: auto;
-  border: 1px solid light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 1px solid rgba(55, 53, 47, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2337,11 +2417,12 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   position: relative;
   top: auto;
 }
-body ul.contains-task-list > li.task-list-item {
+body body.theme-light ul.contains-task-list > li.task-list-item {
   text-align: start;
   display: list-item;
 }
 body
+  body.theme-light
   ul.contains-task-list
   > li.task-list-item
   > input[type="checkbox"]:checked {
@@ -2353,15 +2434,12 @@ body
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
 }
-body ul > li.task-list-item[data-task="x"] {
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
-  text-decoration: line-through rgba(255, 255, 255, 0.7);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.7),
-    rgba(255, 255, 255, 0.7)
-  );
+body body.theme-light ul > li.task-list-item[data-task="x"] {
+  color: rgba(55, 53, 47, 0.7);
+  text-decoration: line-through rgba(55, 53, 47, 0.7);
+  text-decoration-color: rgba(55, 53, 47, 0.7);
 }
-body .markdown-rendered blockquote {
+body body.theme-light .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
@@ -2373,14 +2451,13 @@ body .markdown-rendered blockquote {
   margin-inline-start: 40px;
   margin-inline-end: 40px;
 }
-body .footnote-backref {
-  color: light-dark(rgba(55, 53, 47, 0.55), rgba(255, 255, 255, 0.55));
-  text-decoration: rgba(255, 255, 255, 0.55);
+body body.theme-light .footnote-backref {
+  color: rgba(55, 53, 47, 0.55);
+  text-decoration: rgba(55, 53, 47, 0.55);
 }
-body .site-body-left-column input.search-bar {
-  background-color: light-dark(rgb(255, 255, 255), rgb(33, 32, 30));
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+body body.theme-light .site-body-left-column input.search-bar {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -2389,14 +2466,14 @@ body .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
-body .search-results {
-  background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
-  border: 1px solid light-dark(rgb(175, 175, 175), rgb(83, 83, 83));
+body body.theme-light .search-results {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(175, 175, 175);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -2408,30 +2485,38 @@ body .search-results {
   box-shadow:
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+    rgba(0, 0, 0, 0.1) 0px 15px 30px 0px;
 }
-body .search-results > * {
+body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   cursor: auto;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
-  outline: rgba(255, 255, 255, 0.9) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+  outline: rgba(55, 53, 47, 0.9) none 0px;
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body div.search-results {
-  border: 1px solid light-dark(rgb(175, 175, 175), rgb(83, 83, 83));
+body body.theme-light div.search-results {
+  border: 1px solid rgb(175, 175, 175);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -2441,11 +2526,11 @@ body div.search-results {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .search-results .suggestion-item {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .search-results .suggestion-item {
+  color: rgba(55, 53, 47, 0.9);
 }
-body div.search-results .suggestion-item {
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light div.search-results .suggestion-item {
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2455,69 +2540,77 @@ body div.search-results .suggestion-item {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .search-results .suggestion-item.is-selected {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .search-results .suggestion-item.is-selected {
+  color: rgba(55, 53, 47, 0.9);
   font-weight: 400;
-  background-color: light-dark(rgba(0, 0, 0, 0.04), rgba(255, 255, 255, 0.04));
+  background-color: rgba(0, 0, 0, 0.04);
 }
-body div.search-results .suggestion-item.is-selected {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light div.search-results .suggestion-item.is-selected {
+  color: rgba(55, 53, 47, 0.9);
 }
-body .published-container .markdown-rendered h1 {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .published-container .markdown-rendered h1 {
+  color: rgba(55, 53, 47, 0.9);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   text-shadow: none;
 }
-body .published-container .markdown-rendered h2 {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .published-container .markdown-rendered h2 {
+  color: rgba(55, 53, 47, 0.9);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   text-shadow: none;
 }
-body .published-container .markdown-rendered h3 {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .published-container .markdown-rendered h3 {
+  color: rgba(55, 53, 47, 0.9);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   text-shadow: none;
 }
-body .published-container .markdown-rendered h4 {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .published-container .markdown-rendered h4 {
+  color: rgba(55, 53, 47, 0.9);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   text-shadow: none;
 }
-body .published-container .markdown-rendered h5 {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .published-container .markdown-rendered h5 {
+  color: rgba(55, 53, 47, 0.9);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   text-shadow: none;
 }
-body .published-container .markdown-rendered h6 {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .published-container .markdown-rendered h6 {
+  color: rgba(55, 53, 47, 0.9);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   text-shadow: none;
 }
-body .outline-view-outer .outline-view .tree-item > .tree-item-self {
+body
+  body.theme-light
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-self {
   font-weight: 500;
 }
-body .outline-view-outer .outline-view .tree-item > .tree-item-children {
+body
+  body.theme-light
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-children {
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.styled-scrollbars {
-  background: light-dark(
-    rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box,
-    rgb(47, 52, 55) none repeat scroll 0% 0% / auto padding-box border-box
-  );
-  background-color: light-dark(rgb(255, 255, 255), rgb(47, 52, 55));
+body body.theme-light body.styled-scrollbars {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2526,15 +2619,14 @@ body body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px rgba(55, 53, 47, 0.9);
   box-shadow: none;
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
-body .callout[data-callout="note"] {
-  --callout-color: 54, 73, 84;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+body body.theme-light .callout[data-callout="note"] {
+  --callout-color: 221, 235, 241;
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2547,9 +2639,9 @@ body .callout[data-callout="note"] {
   padding: 16px;
   background-color: rgba(0, 0, 0, 0);
 }
-body .callout[data-callout="note"] > .callout-title {
+body body.theme-light .callout[data-callout="note"] > .callout-title {
   gap: 4px;
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2560,19 +2652,18 @@ body .callout[data-callout="note"] > .callout-title {
   border-end-end-radius: 0px;
   padding: 0px;
 }
-body .callout > .callout-title > .callout-title-inner {
+body body.theme-light .callout > .callout-title > .callout-title-inner {
   font-weight: 600;
 }
-body .callout > .callout-content {
+body body.theme-light .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
   padding: 0px 0px 0px 36.8px;
 }
-body .callout[data-callout="abstract"] {
-  --callout-color: 29, 40, 46;
+body body.theme-light .callout[data-callout="abstract"] {
+  --callout-color: 231, 243, 248;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2582,12 +2673,11 @@ body .callout[data-callout="abstract"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="info"] {
-  --callout-color: 54, 73, 84;
+body body.theme-light .callout[data-callout="info"] {
+  --callout-color: 221, 235, 241;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2597,12 +2687,11 @@ body .callout[data-callout="info"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="todo"] {
-  --callout-color: 54, 73, 84;
+body body.theme-light .callout[data-callout="todo"] {
+  --callout-color: 221, 235, 241;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2612,12 +2701,11 @@ body .callout[data-callout="todo"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="tip"] {
-  --callout-color: 29, 40, 46;
+body body.theme-light .callout[data-callout="tip"] {
+  --callout-color: 231, 243, 248;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2627,12 +2715,11 @@ body .callout[data-callout="tip"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="success"] {
-  --callout-color: 53, 76, 75;
+body body.theme-light .callout[data-callout="success"] {
+  --callout-color: 221, 237, 234;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2642,12 +2729,11 @@ body .callout[data-callout="success"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="question"] {
-  --callout-color: 89, 74, 58;
+body body.theme-light .callout[data-callout="question"] {
+  --callout-color: 250, 235, 221;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2657,12 +2743,11 @@ body .callout[data-callout="question"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="warning"] {
-  --callout-color: 89, 74, 58;
+body body.theme-light .callout[data-callout="warning"] {
+  --callout-color: 250, 235, 221;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2672,12 +2757,11 @@ body .callout[data-callout="warning"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="danger"] {
-  --callout-color: 89, 65, 65;
+body body.theme-light .callout[data-callout="danger"] {
+  --callout-color: 251, 228, 228;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2687,12 +2771,11 @@ body .callout[data-callout="danger"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="failure"] {
-  --callout-color: 89, 65, 65;
+body body.theme-light .callout[data-callout="failure"] {
+  --callout-color: 251, 228, 228;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2702,12 +2785,11 @@ body .callout[data-callout="failure"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="bug"] {
-  --callout-color: 89, 65, 65;
+body body.theme-light .callout[data-callout="bug"] {
+  --callout-color: 251, 228, 228;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2717,12 +2799,11 @@ body .callout[data-callout="bug"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="example"] {
-  --callout-color: 68, 63, 87;
+body body.theme-light .callout[data-callout="example"] {
+  --callout-color: 234, 228, 242;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2732,12 +2813,11 @@ body .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="quote"] {
+body body.theme-light .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2747,10 +2827,10 @@ body .callout[data-callout="quote"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered table {
+body body.theme-light .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: separate;
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2771,7 +2851,7 @@ body .markdown-rendered table {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body .markdown-rendered thead {
+body body.theme-light .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
@@ -2783,17 +2863,16 @@ body .markdown-rendered thead {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered tbody {
+body body.theme-light .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
 }
-body .markdown-rendered th {
+body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   font-weight: 600;
   text-align: start;
   vertical-align: top;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2804,14 +2883,13 @@ body .markdown-rendered th {
   border-end-end-radius: 0px;
   padding: 4px 8px;
 }
-body .markdown-rendered td {
+body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   font-weight: 400;
   text-align: start;
   vertical-align: top;
-  border: 1px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 1px solid rgba(55, 53, 47, 0.14);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2822,8 +2900,8 @@ body .markdown-rendered td {
   border-end-end-radius: 0px;
   padding: 4px 8px;
 }
-body .markdown-rendered tr {
-  background-color: light-dark(rgba(235, 236, 237, 0.5), rgba(69, 75, 78, 0.5));
+body body.theme-light .markdown-rendered tr {
+  background-color: rgba(235, 236, 237, 0.5);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2834,19 +2912,19 @@ body .markdown-rendered tr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered tbody tr:nth-child(even) {
+body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0);
 }
-body .markdown-rendered tbody tr:nth-child(odd) {
+body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0);
 }
-body .markdown-rendered img {
+body body.theme-light .markdown-rendered img {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
   max-width: none;
   object-fit: fill;
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2861,10 +2939,10 @@ body .markdown-rendered img {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body .markdown-rendered figure {
+body body.theme-light .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2880,8 +2958,8 @@ body .markdown-rendered figure {
   margin-inline-start: 40px;
   padding: 0px;
 }
-body .markdown-rendered figcaption {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light .markdown-rendered figcaption {
+  color: rgba(55, 53, 47, 0.9);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2895,13 +2973,13 @@ body .markdown-rendered figcaption {
   margin-inline-start: 0px;
   padding: 0px;
 }
-body .markdown-rendered video {
+body body.theme-light .markdown-rendered video {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
   max-width: none;
   object-fit: contain;
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2916,9 +2994,9 @@ body .markdown-rendered video {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body .markdown-rendered audio {
+body body.theme-light .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2929,9 +3007,9 @@ body .markdown-rendered audio {
   border-end-end-radius: 0px;
   padding: 0px;
 }
-body .internal-embed {
+body body.theme-light .internal-embed {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border-color: rgba(55, 53, 47, 0.9);
   border-left: 2px solid rgb(46, 170, 220);
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2943,9 +3021,9 @@ body .internal-embed {
   margin: 0px;
   padding: 0px;
 }
-body .markdown-embed {
+body body.theme-light .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border-color: rgba(55, 53, 47, 0.9);
   border-left: 2px solid rgb(46, 170, 220);
   border-right-width: 0px;
   border-top-width: 0px;
@@ -2957,9 +3035,9 @@ body .markdown-embed {
   margin: 0px;
   padding: 0px;
 }
-body .file-embed {
-  background-color: light-dark(rgb(227, 230, 232), rgb(61, 68, 72));
-  border-color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+body body.theme-light .file-embed {
+  background-color: rgb(227, 230, 232);
+  border-color: rgba(55, 53, 47, 0.7);
   border-width: 0px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -2968,13 +3046,13 @@ body .file-embed {
   margin: 0px;
   padding: 8px;
 }
-body .metadata-container {
+body body.theme-light .metadata-container {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(55, 53, 47, 0.7);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  border-color: light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border-color: rgba(55, 53, 47, 0.14);
   border-style: solid;
   border-width: 1px 0px;
   border-top-left-radius: 0px;
@@ -2984,13 +3062,13 @@ body .metadata-container {
   margin: 0px 0px 32px;
   padding: 8px 0px;
 }
-body .metadata-properties {
+body body.theme-light .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(55, 53, 47, 0.7);
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  border-color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  border-color: rgba(55, 53, 47, 0.7);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2999,11 +3077,11 @@ body .metadata-properties {
   margin: 0px;
   padding: 0px;
 }
-body progress {
+body body.theme-light progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 15px;
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3013,10 +3091,10 @@ body progress {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body input[type="range"] {
+body body.theme-light input[type="range"] {
   accent-color: auto;
-  background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  background-color: rgb(255, 255, 255);
+  border: 2px inset rgb(118, 118, 118);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3026,13 +3104,13 @@ body input[type="range"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body input[type="text"] {
+body body.theme-light input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(55, 53, 47, 0.7);
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  border: 0px solid light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  border: 0px solid rgba(55, 53, 47, 0.7);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3043,9 +3121,9 @@ body input[type="text"] {
   border-end-end-radius: 0px;
   padding: 4px 8px;
 }
-body details {
+body body.theme-light details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3061,16 +3139,16 @@ body details {
   margin-inline-start: 0px;
   padding: 0px;
 }
-body summary {
+body body.theme-light summary {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   cursor: auto;
   font-weight: 400;
   padding: 0px;
 }
-body details[open] {
+body body.theme-light details[open] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3086,13 +3164,13 @@ body details[open] {
   margin-inline-start: 0px;
   padding: 0px;
 }
-body kbd {
+body body.theme-light kbd {
   background-color: rgba(179, 178, 178, 0.14);
   box-shadow: none;
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(55, 53, 47, 0.9);
   font-family: "iA Writer Duospace", Nitti, Menlo, Courier, monospace;
   font-size: 14px;
-  border: 0px light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border: 0px rgba(55, 53, 47, 0.9);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -3103,15 +3181,15 @@ body kbd {
   border-end-end-radius: 4px;
   padding: 1.4px 3.5px;
 }
-body dl {
+body body.theme-light dl {
   margin: 16px 0px;
   margin-block-end: 15px;
   margin-block-start: 15px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body dt {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light dt {
+  color: rgba(55, 53, 47, 0.9);
   font-weight: 400;
   margin: 0px;
   margin-block-end: 0px;
@@ -3119,8 +3197,8 @@ body dt {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body dd {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light dd {
+  color: rgba(55, 53, 47, 0.9);
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -3128,167 +3206,113 @@ body dd {
   margin-inline-start: 40px;
   padding: 0px;
 }
-body sub {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light sub {
+  color: rgba(55, 53, 47, 0.9);
   font-size: 13.3333px;
   vertical-align: sub;
 }
-body sup {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light sup {
+  color: rgba(55, 53, 47, 0.9);
   font-size: 13.3333px;
   vertical-align: super;
 }
-body abbr {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-light abbr {
+  color: rgba(55, 53, 47, 0.9);
   cursor: auto;
-  text-decoration: underline dotted rgba(255, 255, 255, 0.9);
+  text-decoration: underline dotted rgba(55, 53, 47, 0.9);
   text-decoration-style: dotted;
 }
-body li.task-list-item[data-task="-"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="-"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task=">"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task=">"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="/"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="/"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="?"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="?"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="!"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="!"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="*"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="*"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="l"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="l"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="b"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="b"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="i"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="i"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="S"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="S"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="I"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="I"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="p"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="p"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="c"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="c"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="f"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="f"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="k"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="k"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="u"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="u"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="d"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="d"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body li.task-list-item[data-task="w"] {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  text-decoration: rgba(255, 255, 255, 0.9);
-  text-decoration-color: light-dark(
-    rgba(55, 53, 47, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
+body body.theme-light li.task-list-item[data-task="w"] {
+  color: rgba(55, 53, 47, 0.9);
+  text-decoration: rgba(55, 53, 47, 0.9);
+  text-decoration-color: rgba(55, 53, 47, 0.9);
 }
-body .math-block > mjx-container.MathJax {
+body body.theme-light .math-block > mjx-container.MathJax {
   display: block;
   text-align: center;
   white-space-collapse: collapse;
@@ -3297,39 +3321,47 @@ body .math-block > mjx-container.MathJax {
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
-body div.math-block > mjx-container.MathJax {
+body body.theme-light div.math-block > mjx-container.MathJax {
   font-family:
     system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
     Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
-body .math-inline > mjx-container.MathJax > mjx-math {
+body body.theme-light .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
-body .nav-view-outer .tree-item-self a {
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
-  cursor: default;
+body body.theme-light .nav-view-outer .tree-item-self a {
+  color: rgb(34, 34, 34);
+  cursor: auto;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 500;
-  text-decoration: rgba(255, 255, 255, 0.7);
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: rgb(34, 34, 34);
 }
-body .nav-view-outer .tree-item-self.mod-active {
-  background-color: light-dark(
-    rgba(0, 0, 0, 0.067),
-    rgba(255, 255, 255, 0.067)
-  );
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+body body.theme-light .nav-view-outer .tree-item-self.mod-active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
-  cursor: default;
+  color: rgb(34, 34, 34);
+  cursor: auto;
   transition-behavior: normal;
   transition-delay: 0s;
   transition-duration: 0s;
@@ -3337,13 +3369,1668 @@ body .nav-view-outer .tree-item-self.mod-active {
   transition-timing-function: ease;
 }
 body
+  body.theme-light
   .nav-view-outer
   .nav-view
   > .tree-item.is-collapsed
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(55, 53, 47, 0.7);
+  cursor: default;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  text-decoration: rgba(55, 53, 47, 0.7);
+}
+body
+  body.theme-light
+  .nav-view-outer
+  .nav-view
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: rgba(55, 53, 47, 0.7);
+  cursor: default;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  text-decoration: rgba(55, 53, 47, 0.7);
+}
+body body.theme-light .clickable-icon {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(55, 53, 47, 0.7);
+  cursor: default;
+  border-color: rgba(55, 53, 47, 0.7);
+  border-width: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+body body.theme-light .site-footer {
+  background-color: rgb(244, 245, 246);
+  color: rgba(55, 53, 47, 0.7);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  border-color: rgba(55, 53, 47, 0.14);
+  border-style: solid;
+  border-width: 1px 0px 0px 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .site-footer a {
+  color: rgba(55, 53, 47, 0.7);
+  text-decoration: rgba(55, 53, 47, 0.7);
+}
+body body.theme-light .nav-header {
+  color: rgba(55, 53, 47, 0.9);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+}
+body body.theme-light .nav-files-container .tree-item {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(55, 53, 47, 0.9);
+  border-color: rgba(55, 53, 47, 0.9);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .nav-file-title {
+  color: rgba(55, 53, 47, 0.7);
+  text-decoration: rgba(55, 53, 47, 0.7);
+}
+body body.theme-light .nav-file-title-content {
+  color: rgba(55, 53, 47, 0.7);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body body.theme-light .nav-files-container {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(55, 53, 47, 0.9);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .site-body-left-column-site-theme-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(55, 53, 47, 0.7);
+  cursor: default;
+  border-color: rgba(55, 53, 47, 0.7);
+  border-width: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+body body.theme-light .site-body-left-column-site-theme-toggle svg {
+  stroke: rgba(55, 53, 47, 0.7);
+  color: rgba(55, 53, 47, 0.7);
+}
+body body.theme-light .view-header-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(55, 53, 47, 0.55);
+  border-color: rgba(55, 53, 47, 0.55);
+  border-width: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+body body.theme-light .view-header-breadcrumb-separator {
+  color: rgba(55, 53, 47, 0.55);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body body.theme-light .page-header .page-title {
+  color: rgba(55, 53, 47, 0.9);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body body.theme-light .math-block {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(55, 53, 47, 0.9);
+  border-color: rgba(55, 53, 47, 0.9);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .footnotes {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(55, 53, 47, 0.9);
+  border-top-width: 0px;
+  color: rgba(55, 53, 47, 0.9);
+}
+body body.theme-light .table-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(55, 53, 47, 0.9);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .view-content {
+  border-color: rgba(55, 53, 47, 0.9);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light figure[data-rehype-pretty-code-figure] {
+  background-color: rgba(179, 178, 178, 0.14);
+  border: 0px solid rgba(55, 53, 47, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body
+  body.theme-light
+  figure[data-rehype-pretty-code-figure]
+  > [data-rehype-pretty-code-title] {
+  background-color: rgba(179, 178, 178, 0.14);
+  color: rgba(55, 53, 47, 0.9);
+  font-family: monospace;
+  border: 0px solid rgba(55, 53, 47, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light pre > code [data-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 0px rgb(223, 171, 1);
+}
+body body.theme-light pre > code [data-highlighted-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-color: rgb(223, 171, 1);
+}
+body body.theme-light pre > code [data-highlighted-chars] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(223, 171, 1);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light .search-highlight {
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  border: 0px rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered a.external-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration: underline rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered a.internal-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration: underline 1px rgba(255, 255, 255, 0.14);
+  text-decoration-color: rgba(255, 255, 255, 0.14);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.14s ease-in-out;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  outline: rgba(255, 255, 255, 0.7) none 0px;
+  text-decoration: underline 1px rgba(255, 255, 255, 0.14);
+  text-decoration-color: rgba(255, 255, 255, 0.14);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.14s ease-in-out;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered a.external-link:hover {
+  text-decoration: underline rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(166, 138, 249);
+}
+body body.theme-dark .markdown-rendered a.internal-link:hover {
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(166, 138, 249);
+}
+body body.theme-dark .markdown-rendered p {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  outline: rgba(255, 255, 255, 0.7) none 0px;
+  text-decoration: rgba(255, 255, 255, 0.7);
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: none;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark strong {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 600;
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark b {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 600;
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark em {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark i {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered mark {
+  background-color: rgb(89, 86, 59);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark del {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration: line-through rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .suggestion-item.is-selected {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark div.suggestion-item {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark .markdown-rendered hr {
+  border-color: rgb(128, 128, 128) rgba(255, 255, 255, 0.14)
+    rgba(255, 255, 255, 0.14);
+  border-style: solid solid none none;
+  border-width: 0px 1px 0px 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  box-shadow: none;
+  margin: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark div.multi-select-pill {
+  align-items: normal;
+  background-color: rgb(137, 99, 42);
+  display: flex;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  margin-inline-start: 0px;
+  border: 0px solid rgba(34, 130, 226, 0.15);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
+  color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark .markdown-rendered ul > li {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: start;
+}
+body body.theme-dark .markdown-rendered ul > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-dark .markdown-rendered ol > li {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: start;
+}
+body body.theme-dark .markdown-rendered ol > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-dark .markdown-rendered code {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "iA Writer Duospace", Nitti, Menlo, Courier, monospace;
+  padding: 24px 6px 24px 10px;
+}
+body body.theme-dark .markdown-rendered pre > code {
+  background-color: rgba(179, 178, 178, 0.14);
+  border: 0px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 12px 16px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body body.theme-dark :not(pre) > code[class*="language-"],
+body body.theme-dark pre[class*="language-"] {
+  background-color: rgba(179, 178, 178, 0.14);
+  border: 0px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 12px 16px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body
+  body.theme-dark
+  ul.contains-task-list
+  > li.task-list-item
+  > .task-list-item-checkbox {
+  appearance: auto;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  margin: 0px 8px 0px -24px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 16px;
+  transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  top: auto;
+}
+body body.theme-dark ul.contains-task-list > li.task-list-item {
+  text-align: start;
+  display: list-item;
+}
+body
+  body.theme-dark
+  ul.contains-task-list
+  > li.task-list-item
+  > input[type="checkbox"]:checked {
+  content: normal;
+  top: auto;
+  inset-inline-start: auto;
+  position: static;
+  width: auto;
+  display: list-item;
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark ul > li.task-list-item[data-task="x"] {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: line-through rgba(255, 255, 255, 0.7);
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+body body.theme-dark .markdown-rendered blockquote {
+  background-color: rgba(0, 0, 0, 0);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+body body.theme-dark .footnote-backref {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: rgba(255, 255, 255, 0.55);
+}
+body body.theme-dark .site-body-left-column input.search-bar {
+  background-color: rgb(33, 32, 30);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body body.theme-dark .search-results {
+  background-color: rgb(47, 52, 55);
+  border: 1px solid rgb(83, 83, 83);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  box-shadow:
+    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
+    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
+    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+}
+body body.theme-dark .search-results > * {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  outline: rgba(255, 255, 255, 0.9) none 0px;
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark div.search-results {
+  border: 1px solid rgb(83, 83, 83);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .search-results .suggestion-item {
+  color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark div.search-results .suggestion-item {
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .search-results .suggestion-item.is-selected {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+body body.theme-dark div.search-results .suggestion-item.is-selected {
+  color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark .published-container .markdown-rendered h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h4 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h5 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h6 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  text-shadow: none;
+}
+body
+  body.theme-dark
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-self {
+  font-weight: 500;
+}
+body
+  body.theme-dark
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-children {
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-dark body.styled-scrollbars {
+  background: rgb(47, 52, 55) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  background-color: rgb(47, 52, 55);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  border: 0px rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+}
+body body.theme-dark .callout[data-callout="note"] {
+  --callout-color: 54, 73, 84;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  mix-blend-mode: normal;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  gap: 4px;
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  font-weight: 600;
+}
+body body.theme-dark .callout > .callout-content {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px 0px 0px 36.8px;
+}
+body body.theme-dark .callout[data-callout="abstract"] {
+  --callout-color: 29, 40, 46;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="info"] {
+  --callout-color: 54, 73, 84;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="todo"] {
+  --callout-color: 54, 73, 84;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="tip"] {
+  --callout-color: 29, 40, 46;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="success"] {
+  --callout-color: 53, 76, 75;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="question"] {
+  --callout-color: 89, 74, 58;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="warning"] {
+  --callout-color: 89, 74, 58;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="danger"] {
+  --callout-color: 89, 65, 65;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="failure"] {
+  --callout-color: 89, 65, 65;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="bug"] {
+  --callout-color: 89, 65, 65;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="example"] {
+  --callout-color: 68, 63, 87;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+  background-color: rgba(0, 0, 0, 0);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered table {
+  background-color: rgba(0, 0, 0, 0);
+  border-collapse: separate;
+  color: rgba(255, 255, 255, 0.9);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  table-layout: auto;
+  width: 195.062px;
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered thead {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered tbody {
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .markdown-rendered th {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  text-align: start;
+  vertical-align: top;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 4px 8px;
+}
+body body.theme-dark .markdown-rendered td {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  text-align: start;
+  vertical-align: top;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 4px 8px;
+}
+body body.theme-dark .markdown-rendered tr {
+  background-color: rgba(69, 75, 78, 0.5);
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .markdown-rendered img {
+  border-radius: 0px;
+  box-shadow: none;
+  filter: none;
+  max-width: none;
+  object-fit: fill;
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered figure {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 40px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+  margin-inline-end: 40px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body body.theme-dark .markdown-rendered figcaption {
+  color: rgba(255, 255, 255, 0.9);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-style: normal;
+  text-align: start;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body body.theme-dark .markdown-rendered video {
+  border-radius: 0px;
+  box-shadow: none;
+  filter: none;
+  max-width: none;
+  object-fit: contain;
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered audio {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body body.theme-dark .internal-embed {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(255, 255, 255, 0.9);
+  border-left: 2px solid rgb(46, 170, 220);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-dark .markdown-embed {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(255, 255, 255, 0.9);
+  border-left: 2px solid rgb(46, 170, 220);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-dark .file-embed {
+  background-color: rgb(61, 68, 72);
+  border-color: rgba(255, 255, 255, 0.7);
+  border-width: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px;
+  padding: 8px;
+}
+body body.theme-dark .metadata-container {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.7);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  border-color: rgba(255, 255, 255, 0.14);
+  border-style: solid;
+  border-width: 1px 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px 0px 32px;
+  padding: 8px 0px;
+}
+body body.theme-dark .metadata-properties {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.7);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  border-color: rgba(255, 255, 255, 0.7);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-dark progress {
+  accent-color: auto;
+  background-color: rgba(0, 0, 0, 0);
+  height: 15px;
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark input[type="range"] {
+  accent-color: auto;
+  background-color: rgb(59, 59, 59);
+  border: 2px inset rgb(133, 133, 133);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark input[type="text"] {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.7);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  border: 0px solid rgba(255, 255, 255, 0.7);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 4px 8px;
+}
+body body.theme-dark details {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body body.theme-dark summary {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: auto;
+  font-weight: 400;
+  padding: 0px;
+}
+body body.theme-dark details[open] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body body.theme-dark kbd {
+  background-color: rgba(179, 178, 178, 0.14);
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "iA Writer Duospace", Nitti, Menlo, Courier, monospace;
+  font-size: 14px;
+  border: 0px rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  padding: 1.4px 3.5px;
+}
+body body.theme-dark dl {
+  margin: 16px 0px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark dt {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark dd {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0px 0px 0px 40px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body body.theme-dark sub {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13.3333px;
+  vertical-align: sub;
+}
+body body.theme-dark sup {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13.3333px;
+  vertical-align: super;
+}
+body body.theme-dark abbr {
+  color: rgba(255, 255, 255, 0.9);
+  cursor: auto;
+  text-decoration: underline dotted rgba(255, 255, 255, 0.9);
+  text-decoration-style: dotted;
+}
+body body.theme-dark li.task-list-item[data-task="-"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task=">"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="/"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="?"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="!"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="*"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="l"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="b"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="i"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="S"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="I"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="p"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="c"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="f"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="k"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="u"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="d"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark li.task-list-item[data-task="w"] {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.9);
+}
+body body.theme-dark .math-block > mjx-container.MathJax {
+  display: block;
+  text-align: center;
+  white-space-collapse: collapse;
+  text-wrap-mode: wrap;
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body body.theme-dark div.math-block > mjx-container.MathJax {
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+    Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body body.theme-dark .math-inline > mjx-container.MathJax > mjx-math {
+  font-family: MJXZERO, MJXTEX;
+}
+body body.theme-dark .nav-view-outer .tree-item-self a {
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: rgb(218, 218, 218);
+}
+body body.theme-dark .nav-view-outer .tree-item-self.mod-active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+body
+  body.theme-dark
+  .nav-view-outer
+  .nav-view
+  > .tree-item.is-collapsed
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: rgba(255, 255, 255, 0.7);
   cursor: default;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -3352,13 +5039,14 @@ body
   text-decoration: rgba(255, 255, 255, 0.7);
 }
 body
+  body.theme-dark
   .nav-view-outer
   .nav-view
   > .tree-item
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(255, 255, 255, 0.7);
   cursor: default;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -3366,24 +5054,24 @@ body
   font-weight: 500;
   text-decoration: rgba(255, 255, 255, 0.7);
 }
-body .clickable-icon {
+body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(255, 255, 255, 0.7);
   cursor: default;
-  border-color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  border-color: rgba(255, 255, 255, 0.7);
   border-width: 0px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-body .site-footer {
-  background-color: light-dark(rgb(244, 245, 246), rgb(54, 60, 63));
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+body body.theme-dark .site-footer {
+  background-color: rgb(54, 60, 63);
+  color: rgba(255, 255, 255, 0.7);
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  border-color: light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border-color: rgba(255, 255, 255, 0.14);
   border-style: solid;
   border-width: 1px 0px 0px 1px;
   border-top-left-radius: 8px;
@@ -3391,120 +5079,119 @@ body .site-footer {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .site-footer a {
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+body body.theme-dark .site-footer a {
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: rgba(255, 255, 255, 0.7);
 }
-body .nav-header {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-dark .nav-header {
+  color: rgba(255, 255, 255, 0.9);
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
-body .nav-files-container .tree-item {
+body body.theme-dark .nav-files-container .tree-item {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  border-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .nav-file-title {
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+body body.theme-dark .nav-file-title {
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: rgba(255, 255, 255, 0.7);
 }
-body .nav-file-title-content {
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+body body.theme-dark .nav-file-title-content {
+  color: rgba(255, 255, 255, 0.7);
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
-body .nav-files-container {
+body body.theme-dark .nav-files-container {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border-color: rgba(255, 255, 255, 0.9);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .site-body-left-column-site-theme-toggle {
+body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(255, 255, 255, 0.7);
   cursor: default;
-  border-color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  border-color: rgba(255, 255, 255, 0.7);
   border-width: 0px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-body .site-body-left-column-site-theme-toggle svg {
+body body.theme-dark .site-body-left-column-site-theme-toggle svg {
   stroke: rgba(255, 255, 255, 0.7);
-  color: light-dark(rgba(55, 53, 47, 0.7), rgba(255, 255, 255, 0.7));
+  color: rgba(255, 255, 255, 0.7);
 }
-body .view-header-breadcrumb {
+body body.theme-dark .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.55), rgba(255, 255, 255, 0.55));
-  border-color: light-dark(rgba(55, 53, 47, 0.55), rgba(255, 255, 255, 0.55));
+  color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.55);
   border-width: 0px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-body .view-header-breadcrumb-separator {
-  color: light-dark(rgba(55, 53, 47, 0.55), rgba(255, 255, 255, 0.55));
+body body.theme-dark .view-header-breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.55);
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
-body .page-header .page-title {
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-dark .page-header .page-title {
+  color: rgba(255, 255, 255, 0.9);
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
-body .math-block {
+body body.theme-dark .math-block {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
-  border-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .footnotes {
+body body.theme-dark .footnotes {
   background-color: rgba(0, 0, 0, 0);
-  border-top-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border-top-color: rgba(255, 255, 255, 0.9);
   border-top-width: 0px;
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(255, 255, 255, 0.9);
 }
-body .table-wrapper {
+body body.theme-dark .table-wrapper {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  border-color: rgba(255, 255, 255, 0.9);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .view-content {
-  border-color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+body body.theme-dark .view-content {
+  border-color: rgba(255, 255, 255, 0.9);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body figure[data-rehype-pretty-code-figure] {
+body body.theme-dark figure[data-rehype-pretty-code-figure] {
   background-color: rgba(179, 178, 178, 0.14);
-  border: 0px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 0px solid rgba(255, 255, 255, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -3514,12 +5201,14 @@ body figure[data-rehype-pretty-code-figure] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+body
+  body.theme-dark
+  figure[data-rehype-pretty-code-figure]
+  > [data-rehype-pretty-code-title] {
   background-color: rgba(179, 178, 178, 0.14);
-  color: light-dark(rgba(55, 53, 47, 0.9), rgba(255, 255, 255, 0.9));
+  color: rgba(255, 255, 255, 0.9);
   font-family: monospace;
-  border: 0px solid
-    light-dark(rgba(55, 53, 47, 0.14), rgba(255, 255, 255, 0.14));
+  border: 0px solid rgba(255, 255, 255, 0.14);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -3529,17 +5218,17 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body pre > code [data-line] {
+body body.theme-dark pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px light-dark(rgb(223, 171, 1), rgb(255, 220, 73));
+  border-left: 0px rgb(255, 220, 73);
 }
-body pre > code [data-highlighted-line] {
+body body.theme-dark pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: light-dark(rgb(223, 171, 1), rgb(255, 220, 73));
+  border-left-color: rgb(255, 220, 73);
 }
-body pre > code [data-highlighted-chars] {
+body body.theme-dark pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(223, 171, 1), rgb(255, 220, 73));
+  border: 0px rgb(255, 220, 73);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3549,7 +5238,7 @@ body pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .search-highlight {
+body body.theme-dark .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
   border: 0px rgb(0, 0, 0);

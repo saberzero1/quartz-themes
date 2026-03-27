@@ -775,25 +775,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   color: rgba(255, 255, 255, 0.6);
   font-family: system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: rgba(255, 255, 255, 0.6);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-decoration: rgba(255, 255, 255, 0.6);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(53, 53, 53, 0.38);
-  border-bottom-color: rgba(255, 255, 255, 0.87);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgba(255, 255, 255, 0.87);
-  border-right-color: rgba(255, 255, 255, 0.87);
-  border-top-color: rgba(255, 255, 255, 0.87);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgba(255, 255, 255, 0.87);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(255, 255, 255, 0.6);

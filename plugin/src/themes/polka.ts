@@ -11,67 +11,67 @@ export const theme: ThemeData = {
     base: `:root:root[saved-theme="dark"] {
   --accent-h: 189 !important;
   --accent-l: 49% !important;
-  --accent-on-selection: rgba(0, 212, 250, 0.4) !important;
+  --accent-on-selection: hsla(189, 100%, 49%, 0.4) !important;
   --accent-s: 100% !important;
-  --accent-soft-dark: rgba(210, 214, 223, 0.1) !important;
+  --accent-soft-dark: hsla(221, 16.65%, 85%, 0.1) !important;
   --accent-soft-hsl: 221, 16.65%, 85% !important;
-  --accent-soft-light: rgba(210, 214, 223, 0.05) !important;
+  --accent-soft-light: hsla(221, 16.65%, 85%, 0.05) !important;
   --background-contrast: 3.504% !important;
   --background-dark: rgb(10, 18, 30) !important;
   --background-extra-dark: #000 !important;
   --background-h: 221 !important;
   --background-l: 12.9% !important;
-  --background-modifier-active-hover: rgba(210, 214, 223, 0.05) !important;
-  --background-modifier-border: rgba(210, 214, 223, 0.1) !important;
-  --background-modifier-border-focus: rgb(15, 20, 31) !important;
-  --background-modifier-border-hover: rgba(210, 214, 223, 0.1) !important;
+  --background-modifier-active-hover: hsla(221, 16.65%, 85%, 0.05) !important;
+  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1) !important;
+  --background-modifier-border-focus: hsl(221, 33.3%, 8.9%) !important;
+  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1) !important;
   --background-modifier-error: rgb(250, 30, 0) !important;
   --background-modifier-error-hover: rgb(250, 30, 0) !important;
   --background-modifier-form-field: rgb(10, 18, 30) !important;
   --background-modifier-form-field-hover: rgb(10, 18, 30) !important;
-  --background-modifier-hover: rgba(210, 214, 223, 0.05) !important;
+  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05) !important;
   --background-modifier-success: rgb(30, 169, 67) !important;
-  --background-primary: rgb(22, 29, 44) !important;
+  --background-primary: hsl(221, 33.3%, 12.9%) !important;
   --background-primary-alt: rgb(10, 18, 30) !important;
   --background-s: 33.3% !important;
-  --background-secondary: rgb(33, 41, 59) !important;
-  --background-secondary-alt: rgb(33, 41, 59) !important;
+  --background-secondary: hsl(221, 29.1375%, 18.404%) !important;
+  --background-secondary-alt: hsl(221, 29.1375%, 18.404%) !important;
   --background-secondary-l: 18.404% !important;
   --background-secondary-s: 29.1375% !important;
-  --bases-cards-background: rgb(22, 29, 44) !important;
+  --bases-cards-background: hsl(221, 33.3%, 12.9%) !important;
   --bases-cards-cover-background: rgb(10, 18, 30) !important;
   --bases-cards-radius: 4px !important;
-  --bases-cards-shadow: 0 0 0 1px rgba(210, 214, 223, 0.1) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgba(210, 214, 223, 0.1) !important;
-  --bases-embed-border-color: rgba(210, 214, 223, 0.1) !important;
+  --bases-cards-shadow: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
+  --bases-embed-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --bases-embed-border-radius: 2px !important;
   --bases-group-heading-property-color: rgb(250, 247, 245) !important;
   --bases-group-heading-property-size: 13px !important;
   --bases-table-border-color: rgb(250, 247, 245) !important;
-  --bases-table-cell-background-active: rgb(22, 29, 44) !important;
+  --bases-table-cell-background-active: hsl(221, 33.3%, 12.9%) !important;
   --bases-table-cell-background-disabled: rgb(10, 18, 30) !important;
-  --bases-table-cell-background-selected: rgba(0, 212, 250, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(15, 20, 31) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(0, 212, 250) !important;
+  --bases-table-cell-background-selected: hsla(189, 100%, 49%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(221, 33.3%, 8.9%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(189, 100%, 49%) !important;
   --bases-table-container-border-radius: 2px !important;
   --bases-table-group-background: rgb(10, 18, 30) !important;
-  --bases-table-header-background: rgb(22, 29, 44) !important;
-  --bases-table-header-background-hover: rgba(210, 214, 223, 0.05) !important;
+  --bases-table-header-background: hsl(221, 33.3%, 12.9%) !important;
+  --bases-table-header-background-hover: hsla(221, 16.65%, 85%, 0.05) !important;
   --bases-table-header-color: rgb(250, 247, 245) !important;
-  --bases-table-summary-background: rgb(22, 29, 44) !important;
-  --bases-table-summary-background-hover: rgba(210, 214, 223, 0.05) !important;
-  --blockquote-border-color: rgb(0, 212, 250) !important;
+  --bases-table-summary-background: hsl(221, 33.3%, 12.9%) !important;
+  --bases-table-summary-background-hover: hsla(221, 16.65%, 85%, 0.05) !important;
+  --blockquote-border-color: hsl(189, 100%, 49%) !important;
   --blur-background: color-mix(in srgb, rgb(10, 18, 30) 65%, transparent) linear-gradient(rgb(10, 18, 30), color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)) !important;
   --bodyFont: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --button-radius: 2px !important;
-  --button-shadow: rgb(210, 214, 223) !important;
+  --button-shadow: hsl(221, 16.65%, 85%, 0.6) !important;
   --button-shadow-hover: rgba(255, 255, 255, 0.67) !important;
   --callout-bug: rgb(245, 0, 170);
   --callout-default: rgb(250, 247, 245);
   --callout-error: rgb(250, 30, 0);
   --callout-example: rgb(250, 247, 245);
   --callout-fail: rgb(250, 30, 0);
-  --callout-important: rgb(0, 212, 250);
+  --callout-important: hsl(189, 100%, 49%);
   --callout-info: rgb(250, 247, 245);
   --callout-question: rgb(250, 247, 245);
   --callout-quote: rgb(250, 247, 245);
@@ -81,43 +81,43 @@ export const theme: ThemeData = {
   --callout-tip: rgb(255, 220, 120);
   --callout-todo: rgb(0, 130, 255);
   --callout-warning: rgb(220, 210, 0);
-  --canvas-background: rgb(22, 29, 44) !important;
+  --canvas-background: hsl(221, 33.3%, 12.9%) !important;
   --canvas-card-label-color: rgb(250, 247, 245) !important;
   --canvas-controls-radius: 2px !important;
   --caret-color: rgb(250, 247, 245) !important;
   --checkbox-border-color: rgb(250, 247, 245) !important;
   --checkbox-border-color-hover: rgb(250, 247, 245) !important;
-  --checkbox-color: rgb(0, 212, 250) !important;
-  --checkbox-color-hover: rgb(0, 212, 250) !important;
-  --checkbox-marker-color: rgb(22, 29, 44) !important;
+  --checkbox-color: hsl(189, 100%, 49%) !important;
+  --checkbox-color-hover: hsl(189, 100%, 49%) !important;
+  --checkbox-marker-color: hsl(221, 33.3%, 12.9%) !important;
   --checkbox-radius: 2px !important;
   --checklist-done-color: rgb(250, 247, 245) !important;
   --clickable-icon-radius: 2px !important;
   --code-background: rgb(10, 18, 30) !important;
-  --code-border-color: rgba(210, 214, 223, 0.1) !important;
-  --code-bracket-background: rgba(210, 214, 223, 0.05) !important;
+  --code-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --code-bracket-background: hsla(221, 16.65%, 85%, 0.05) !important;
   --code-comment: rgba(175, 191, 255, 0.7) !important;
   --code-function: rgb(230, 205, 90) !important;
   --code-important: rgb(220, 95, 0) !important;
   --code-indentation-guide-color: rgba(175, 191, 255, 0.23) !important;
   --code-keyword: rgb(220, 100, 210) !important;
-  --code-normal: rgb(227, 227, 227) !important;
+  --code-normal: hsl(0, 0%, 89%) !important;
   --code-operator: rgb(220, 65, 65) !important;
   --code-peripheral: 175, 191, 255 !important;
   --code-property: rgb(0, 202, 235) !important;
-  --code-punctuation: rgb(227, 227, 227) !important;
+  --code-punctuation: hsl(0, 0%, 89%) !important;
   --code-radius: 2px !important;
   --code-string: rgb(30, 169, 67) !important;
   --code-tag: rgb(220, 65, 65) !important;
   --code-value: rgb(140, 110, 240) !important;
   --codeFont: iA Writer Mono S, IBM Plex Mono, Roboto Mono, Menlo, SFMono-Regular, Consolas, Source Code Pro, monospace !important;
-  --collapse-icon-color: rgb(0, 212, 250) !important;
-  --collapse-icon-color-collapsed: rgb(0, 212, 250) !important;
-  --color-accent: rgb(0, 212, 250) !important;
-  --color-accent-1: rgb(0, 212, 250) !important;
+  --collapse-icon-color: hsl(189, 100%, 49%) !important;
+  --collapse-icon-color-collapsed: hsl(189, 100%, 49%) !important;
+  --color-accent: hsl(189, 100%, 49%) !important;
+  --color-accent-1: hsl(189, 100%, 49%) !important;
   --color-accent-2: hsl(184, 105%, 63.21%) !important;
-  --color-accent-background: rgba(0, 212, 250, 0.1) !important;
-  --color-accent-background-hover: rgba(0, 212, 250, 0.2) !important;
+  --color-accent-background: hsla(189, 100%, 49%, 0.1) !important;
+  --color-accent-background-hover: hsla(189, 100%, 49%, 0.2) !important;
   --color-accent-hsl: 189, 100%, 49% !important;
   --color-cyan: rgb(0, 202, 235) !important;
   --color-green: rgb(30, 169, 67) !important;
@@ -128,17 +128,17 @@ export const theme: ThemeData = {
   --color-yellow: rgb(230, 205, 90) !important;
   --dark: rgb(250, 247, 245) !important;
   --darkgray: rgb(250, 247, 245) !important;
-  --dictionary-background-primary: rgb(33, 41, 59) !important;
-  --dictionary-background-secondary: rgb(22, 29, 44) !important;
+  --dictionary-background-primary: hsl(221, 29.1375%, 18.404%) !important;
+  --dictionary-background-secondary: hsl(221, 33.3%, 12.9%) !important;
   --divider-color: transparent !important;
-  --divider-color-hover: rgb(0, 212, 250) !important;
+  --divider-color-hover: hsl(189, 100%, 49%) !important;
   --dropdown-background: rgb(10, 18, 30) !important;
   --dropdown-background-hover: rgb(10, 18, 30) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgba(210, 214, 223, 0.1), inset 0 0 0 1px rgba(210, 214, 223, 0.1) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1), inset 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
   --embed-border-left: 2px dashed rgb(250, 247, 245) !important;
-  --embed-border-start: 2px solid rgb(0, 212, 250) !important;
-  --file-header-background: rgb(22, 29, 44) !important;
-  --file-header-background-focused: rgb(22, 29, 44) !important;
+  --embed-border-start: 2px solid hsl(189, 100%, 49%) !important;
+  --file-header-background: hsl(221, 33.3%, 12.9%) !important;
+  --file-header-background-focused: hsl(221, 33.3%, 12.9%) !important;
   --file-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --file-header-font-size: 14px !important;
   --flair-background: rgb(10, 18, 30) !important;
@@ -153,15 +153,15 @@ export const theme: ThemeData = {
   --font-ui-small: 14px !important;
   --font-ui-smaller: 13px !important;
   --font-ui-smallest: 12px !important;
-  --footnote-divider-color: rgba(210, 214, 223, 0.1) !important;
+  --footnote-divider-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --footnote-id-color: rgb(250, 247, 245) !important;
   --footnote-id-color-no-occurrences: rgb(250, 247, 245) !important;
-  --footnote-input-background-active: rgba(210, 214, 223, 0.05) !important;
+  --footnote-input-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
   --footnote-line-height: 1.25em !important;
   --footnote-radius: 2px !important;
   --graph-node: rgb(250, 247, 245) !important;
   --graph-node-attachment: rgb(230, 205, 90) !important;
-  --graph-node-focused: rgb(0, 212, 250) !important;
+  --graph-node-focused: hsl(189, 100%, 49%) !important;
   --graph-node-tag: rgb(30, 169, 67) !important;
   --graph-node-unresolved: rgb(250, 247, 245) !important;
   --graph-text: rgb(250, 247, 245) !important;
@@ -195,62 +195,62 @@ export const theme: ThemeData = {
   --input-date-separator: rgb(250, 247, 245) !important;
   --input-placeholder-color: rgb(250, 247, 245) !important;
   --input-radius: 4px !important;
-  --interactive-accent: rgb(0, 212, 250) !important;
-  --interactive-accent-hover: rgb(0, 212, 250) !important;
+  --interactive-accent: hsl(189, 100%, 49%) !important;
+  --interactive-accent-hover: hsl(189, 100%, 49%) !important;
   --interactive-accent-hsl: 189, 100%, 49% !important;
   --interactive-hover: rgb(10, 18, 30) !important;
   --interactive-normal: rgb(10, 18, 30) !important;
   --kanban-button-text: rgb(250, 247, 245) !important;
   --kanban-button-text-hover: #000 !important;
-  --kanban-checkbox-border: rgb(22, 29, 44) !important;
-  --light: rgb(22, 29, 44) !important;
-  --lightgray: rgb(33, 41, 59) !important;
+  --kanban-checkbox-border: hsl(221, 33.3%, 12.9%) !important;
+  --light: hsl(221, 33.3%, 12.9%) !important;
+  --lightgray: hsl(221, 29.1375%, 18.404%) !important;
   --line-height-normal: 1.25em !important;
-  --link-color: rgb(0, 212, 250) !important;
+  --link-color: hsl(189, 100%, 49%) !important;
   --link-color-hover: rgb(250, 247, 245) !important;
-  --link-external-color: rgb(0, 212, 250) !important;
+  --link-external-color: hsl(189, 100%, 49%) !important;
   --link-external-color-hover: rgb(250, 247, 245) !important;
-  --link-unresolved-color: rgb(0, 212, 250) !important;
-  --link-unresolved-decoration-color: rgba(0, 212, 250, 0.3) !important;
+  --link-unresolved-color: hsl(189, 100%, 49%) !important;
+  --link-unresolved-decoration-color: hsla(189, 100%, 49%, 0.3) !important;
   --list-elements: rgb(250, 247, 245) !important;
   --list-indent: 1.25em !important;
   --list-marker-color: rgb(250, 247, 245) !important;
-  --list-marker-color-collapsed: rgb(0, 212, 250) !important;
+  --list-marker-color-collapsed: hsl(189, 100%, 49%) !important;
   --list-marker-color-hover: rgb(250, 247, 245) !important;
   --list-spacing: 0.25em !important;
-  --menu-background: rgb(33, 41, 59) !important;
-  --menu-border-color: rgba(210, 214, 223, 0.1) !important;
+  --menu-background: hsl(221, 29.1375%, 18.404%) !important;
+  --menu-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --menu-radius: 4px !important;
-  --metadata-border-color: rgba(210, 214, 223, 0.1) !important;
-  --metadata-divider-color: rgba(210, 214, 223, 0.1) !important;
-  --metadata-input-background-active: rgba(210, 214, 223, 0.05) !important;
+  --metadata-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --metadata-divider-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --metadata-input-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
   --metadata-input-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --metadata-input-text-color: rgb(250, 247, 245) !important;
-  --metadata-label-background-active: rgba(210, 214, 223, 0.05) !important;
+  --metadata-label-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
   --metadata-label-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --metadata-label-text-color: rgb(250, 247, 245) !important;
   --metadata-label-text-color-hover: rgb(250, 247, 245) !important;
-  --metadata-property-background-active: rgba(210, 214, 223, 0.05) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(15, 20, 31) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgba(210, 214, 223, 0.1) !important;
+  --metadata-property-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(221, 33.3%, 8.9%) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
   --metadata-sidebar-input-font-size: 14px !important;
   --metadata-sidebar-label-font-size: 14px !important;
-  --modal-background: rgb(22, 29, 44) !important;
-  --modal-border-color: rgba(210, 214, 223, 0.1) !important;
+  --modal-background: hsl(221, 33.3%, 12.9%) !important;
+  --modal-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --modal-radius: 6px !important;
-  --nav-collapse-icon-color: rgb(0, 212, 250) !important;
-  --nav-collapse-icon-color-collapsed: rgb(0, 212, 250) !important;
+  --nav-collapse-icon-color: hsl(189, 100%, 49%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(189, 100%, 49%) !important;
   --nav-heading-color: rgb(250, 247, 245) !important;
   --nav-heading-color-collapsed: rgb(250, 247, 245) !important;
   --nav-heading-color-collapsed-hover: rgb(250, 247, 245) !important;
   --nav-heading-color-hover: rgb(250, 247, 245) !important;
-  --nav-indentation-guide-color: rgb(0, 212, 250) !important;
-  --nav-item-background-active: rgba(210, 214, 223, 0.05) !important;
-  --nav-item-background-hover: rgba(210, 214, 223, 0.05) !important;
-  --nav-item-background-selected: rgba(0, 212, 250, 0.15) !important;
+  --nav-indentation-guide-color: hsl(189, 100%, 49%) !important;
+  --nav-item-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
+  --nav-item-background-hover: hsla(221, 16.65%, 85%, 0.05) !important;
+  --nav-item-background-selected: hsla(189, 100%, 49%, 0.15) !important;
   --nav-item-color: rgb(250, 247, 245) !important;
   --nav-item-color-active: rgb(250, 247, 245) !important;
-  --nav-item-color-highlighted: rgb(0, 212, 250) !important;
+  --nav-item-color-highlighted: hsl(189, 100%, 49%) !important;
   --nav-item-color-hover: rgb(250, 247, 245) !important;
   --nav-item-color-selected: rgb(250, 247, 245) !important;
   --nav-item-radius: 2px !important;
@@ -261,43 +261,43 @@ export const theme: ThemeData = {
   --nav-tag-radius: 2px !important;
   --oz-fta-file-font-size: 14px !important;
   --oz-fta-folder-font-size: 14px !important;
-  --pdf-background: rgb(22, 29, 44) !important;
-  --pdf-page-background: rgb(22, 29, 44) !important;
-  --pdf-shadow: 0 0 0 1px rgba(210, 214, 223, 0.1) !important;
-  --pdf-sidebar-background: rgb(22, 29, 44) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(210, 214, 223, 0.1) !important;
-  --pill-border-color: rgba(210, 214, 223, 0.1) !important;
-  --pill-border-color-hover: rgba(210, 214, 223, 0.1) !important;
+  --pdf-background: hsl(221, 33.3%, 12.9%) !important;
+  --pdf-page-background: hsl(221, 33.3%, 12.9%) !important;
+  --pdf-shadow: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
+  --pdf-sidebar-background: hsl(221, 33.3%, 12.9%) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px hsla(221, 16.65%, 85%, 0.1) !important;
+  --pill-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --pill-border-color-hover: hsla(221, 16.65%, 85%, 0.1) !important;
   --pill-color: rgb(250, 247, 245) !important;
   --pill-color-hover: rgb(250, 247, 245) !important;
   --pill-color-remove: rgb(250, 247, 245) !important;
-  --pill-color-remove-hover: rgb(0, 212, 250) !important;
-  --polka-dots: radial-gradient(rgb(0, 212, 250) 15%, transparent 25%),
-  radial-gradient(rgb(0, 212, 250) 17.5%, transparent 25%) !important;
-  --prompt-background: rgb(22, 29, 44) !important;
-  --prompt-border-color: rgba(210, 214, 223, 0.1) !important;
+  --pill-color-remove-hover: hsl(189, 100%, 49%) !important;
+  --polka-dots: radial-gradient(hsl(189, 100%, 49%) 15%, transparent 25%),
+  radial-gradient(hsl(189, 100%, 49%) 17.5%, transparent 25%) !important;
+  --prompt-background: hsl(221, 33.3%, 12.9%) !important;
+  --prompt-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --radius-l: 6px !important;
   --radius-m: 4px !important;
   --radius-s: 2px !important;
   --radius-xl: 8px !important;
   --raised-background: color-mix(in srgb, rgb(10, 18, 30) 65%, transparent) linear-gradient(rgb(10, 18, 30), color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)) !important;
-  --ribbon-background: rgb(33, 41, 59) !important;
-  --ribbon-background-collapsed: rgb(22, 29, 44) !important;
+  --ribbon-background: hsl(221, 29.1375%, 18.404%) !important;
+  --ribbon-background-collapsed: hsl(221, 33.3%, 12.9%) !important;
   --ribbon-border: none !important;
-  --scrollbar-active-thumb-bg: rgba(210, 214, 223, 0.1) !important;
+  --scrollbar-active-thumb-bg: hsla(221, 16.65%, 85%, 0.1) !important;
   --scrollbar-radius: 6px !important;
-  --scrollbar-thumb-bg: rgba(210, 214, 223, 0.05) !important;
+  --scrollbar-thumb-bg: hsla(221, 16.65%, 85%, 0.05) !important;
   --search-clear-button-color: rgb(250, 247, 245) !important;
   --search-icon-color: rgb(250, 247, 245) !important;
-  --search-result-background: rgb(22, 29, 44) !important;
+  --search-result-background: hsl(221, 33.3%, 12.9%) !important;
   --search-result-bg-hover: rgb(10, 18, 30) !important;
-  --secondary: rgb(0, 212, 250) !important;
+  --secondary: hsl(189, 100%, 49%) !important;
   --setting-group-heading-color: rgb(250, 247, 245) !important;
   --setting-items-background: rgb(10, 18, 30) !important;
-  --setting-items-border-color: rgba(210, 214, 223, 0.1) !important;
+  --setting-items-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --setting-items-radius: 6px !important;
-  --slider-thumb-border-color: rgba(210, 214, 223, 0.1) !important;
-  --slider-track-background: rgba(210, 214, 223, 0.1) !important;
+  --slider-thumb-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --slider-track-background: hsla(221, 16.65%, 85%, 0.1) !important;
   --ss-border-radius: 0.1px !important;
   --ss-dark-contrast: 0.73% !important;
   --ss-dark-h: 221 !important;
@@ -306,12 +306,12 @@ export const theme: ThemeData = {
   --ss-dark-s: 3.33% !important;
   --ss-dark-text-main: 250, 247, 245 !important;
   --ss-embed-border-style: 2px dashed rgb(250, 247, 245) !important;
-  --status-bar-background: rgb(33, 41, 59) !important;
+  --status-bar-background: hsl(221, 29.1375%, 18.404%) !important;
   --status-bar-border-color: transparent !important;
   --status-bar-font-size: 13px !important;
   --status-bar-radius: 4px 0 0 0 !important;
   --status-bar-text-color: rgb(250, 247, 245) !important;
-  --suggestion-background: rgb(22, 29, 44) !important;
+  --suggestion-background: hsl(221, 33.3%, 12.9%) !important;
   --sync-avatar-color-1: rgb(220, 65, 65) !important;
   --sync-avatar-color-2: rgb(220, 95, 0) !important;
   --sync-avatar-color-3: rgb(230, 205, 90) !important;
@@ -319,44 +319,44 @@ export const theme: ThemeData = {
   --sync-avatar-color-5: rgb(0, 202, 235) !important;
   --sync-avatar-color-7: rgb(140, 110, 240) !important;
   --sync-avatar-color-8: rgb(220, 100, 210) !important;
-  --tab-background-active: rgb(22, 29, 44) !important;
-  --tab-container-background: rgb(33, 41, 59) !important;
-  --tab-divider-color: rgba(210, 214, 223, 0.1) !important;
+  --tab-background-active: hsl(221, 33.3%, 12.9%) !important;
+  --tab-container-background: hsl(221, 29.1375%, 18.404%) !important;
+  --tab-divider-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --tab-font-size: 14px !important;
-  --tab-outline-color: rgb(0, 212, 250) !important;
+  --tab-outline-color: hsl(189, 100%, 49%) !important;
   --tab-radius: 2px !important;
   --tab-stacked-font-size: 14px !important;
-  --tab-switcher-background: rgb(33, 41, 59) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(33, 41, 59), transparent) !important;
+  --tab-switcher-background: hsl(221, 29.1375%, 18.404%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(221, 29.1375%, 18.404%), transparent) !important;
   --tab-switcher-preview-radius: 8px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(0, 212, 250) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(189, 100%, 49%) !important;
   --tab-text-color: rgb(250, 247, 245) !important;
   --tab-text-color-active: rgb(250, 247, 245) !important;
   --tab-text-color-focused: rgb(250, 247, 245) !important;
   --tab-text-color-focused-active: rgb(250, 247, 245) !important;
   --tab-text-color-focused-active-current: rgb(250, 247, 245) !important;
-  --tab-text-color-focused-highlighted: rgb(0, 212, 250) !important;
-  --table-add-button-border-color: rgba(210, 214, 223, 0.1) !important;
+  --tab-text-color-focused-highlighted: hsl(189, 100%, 49%) !important;
+  --table-add-button-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --table-body-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --table-body-font-size: 1em !important;
   --table-border-color: rgb(250, 247, 245) !important;
-  --table-drag-handle-background-active: rgb(0, 212, 250) !important;
+  --table-drag-handle-background-active: hsl(189, 100%, 49%) !important;
   --table-drag-handle-color: rgb(250, 247, 245) !important;
   --table-drag-handle-color-active: #000 !important;
   --table-header-border-color: rgb(250, 247, 245) !important;
   --table-header-color: rgb(250, 247, 245) !important;
   --table-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
-  --table-selection: rgba(0, 212, 250, 0.1) !important;
-  --table-selection-border-color: rgb(0, 212, 250) !important;
-  --tag-background: rgba(0, 212, 250, 0.1) !important;
-  --tag-background-hover: rgba(0, 212, 250, 0.2) !important;
-  --tag-border-color: rgba(0, 212, 250, 0.15) !important;
-  --tag-border-color-hover: rgba(0, 212, 250, 0.15) !important;
-  --tag-color: rgb(0, 212, 250) !important;
-  --tag-color-hover: rgb(0, 212, 250) !important;
+  --table-selection: hsla(189, 100%, 49%, 0.1) !important;
+  --table-selection-border-color: hsl(189, 100%, 49%) !important;
+  --tag-background: hsla(189, 100%, 49%, 0.1) !important;
+  --tag-background-hover: hsla(189, 100%, 49%, 0.2) !important;
+  --tag-border-color: hsla(189, 100%, 49%, 0.15) !important;
+  --tag-border-color-hover: hsla(189, 100%, 49%, 0.15) !important;
+  --tag-color: hsl(189, 100%, 49%) !important;
+  --tag-color-hover: hsl(189, 100%, 49%) !important;
   --tag-radius: 4px !important;
   --tertiary: rgb(250, 247, 245) !important;
-  --text-accent: rgb(0, 212, 250) !important;
+  --text-accent: hsl(189, 100%, 49%) !important;
   --text-accent-hover: rgb(250, 247, 245) !important;
   --text-error: rgb(250, 30, 0) !important;
   --text-faint: rgb(250, 247, 245) !important;
@@ -365,15 +365,15 @@ export const theme: ThemeData = {
   --text-muted: rgb(250, 247, 245) !important;
   --text-normal: rgb(250, 247, 245) !important;
   --text-on-accent: #000 !important;
-  --text-selection: rgba(0, 212, 250, 0.4) !important;
+  --text-selection: hsla(189, 100%, 49%, 0.4) !important;
   --text-success: rgb(30, 169, 67) !important;
   --text-warning: rgb(220, 95, 0) !important;
   --text-white: rgb(250, 247, 245) !important;
   --textHighlight: hsl(189, 110%, 63.9%) !important;
   --titleFont: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
-  --titlebar-background: rgb(33, 41, 59) !important;
-  --titlebar-background-focused: rgb(33, 41, 59) !important;
-  --titlebar-border-color: rgba(210, 214, 223, 0.1) !important;
+  --titlebar-background: hsl(221, 29.1375%, 18.404%) !important;
+  --titlebar-background-focused: hsl(221, 29.1375%, 18.404%) !important;
+  --titlebar-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --titlebar-text-color: rgb(250, 247, 245) !important;
   --titlebar-text-color-focused: rgb(250, 247, 245) !important;
   --vault-name-font-weight: bold !important;
@@ -831,6 +831,350 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(250, 247, 245);
   text-decoration: rgb(250, 247, 245);
   text-decoration-color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(22, 29, 44);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(250, 247, 245);
@@ -1110,6 +1454,10 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-right-radius: 2px;
   border-top-style: dashed;
   border-top-width: 2px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(10, 18, 30);
@@ -1330,25 +1678,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: rgb(250, 247, 245);
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   text-decoration: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(250, 247, 245);
-  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  text-decoration: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(210, 214, 223, 0.05);
-  border-bottom-color: rgb(250, 247, 245);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgb(250, 247, 245);
-  border-right-color: rgb(250, 247, 245);
-  border-top-color: rgb(250, 247, 245);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  color: rgb(250, 247, 245);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(250, 247, 245);
@@ -1546,67 +1875,67 @@ html[saved-theme="dark"] body sup {
     base: `:root:root {
   --accent-h: 0 !important;
   --accent-l: 52% !important;
-  --accent-on-selection: rgba(224, 41, 41, 0.4) !important;
+  --accent-on-selection: hsla(0, 75%, 52%, 0.4) !important;
   --accent-s: 75% !important;
-  --accent-soft-dark: rgba(46, 31, 31, 0.1) !important;
+  --accent-soft-dark: hsla(0, 19.6%, 15%, 0.1) !important;
   --accent-soft-hsl: 0, 19.6%, 15% !important;
-  --accent-soft-light: rgba(46, 31, 31, 0.05) !important;
+  --accent-soft-light: hsla(0, 19.6%, 15%, 0.05) !important;
   --background-contrast: 0% !important;
   --background-dark: rgb(23, 35, 62) !important;
   --background-extra-dark: #000 !important;
   --background-h: 0 !important;
   --background-l: 99.3% !important;
-  --background-modifier-active-hover: rgba(46, 31, 31, 0.05) !important;
-  --background-modifier-border: rgba(46, 31, 31, 0.1) !important;
-  --background-modifier-border-focus: rgba(46, 31, 31, 0.1) !important;
-  --background-modifier-border-hover: rgba(46, 31, 31, 0.1) !important;
+  --background-modifier-active-hover: hsla(0, 19.6%, 15%, 0.05) !important;
+  --background-modifier-border: hsla(0, 19.6%, 15%, 0.1) !important;
+  --background-modifier-border-focus: hsla(0, 19.6%, 15%, 0.1) !important;
+  --background-modifier-border-hover: hsla(0, 19.6%, 15%, 0.1) !important;
   --background-modifier-error: rgb(250, 30, 0) !important;
   --background-modifier-error-hover: rgb(250, 30, 0) !important;
-  --background-modifier-form-field: rgba(46, 31, 31, 0.05) !important;
-  --background-modifier-form-field-hover: rgba(46, 31, 31, 0.05) !important;
-  --background-modifier-hover: rgba(46, 31, 31, 0.05) !important;
+  --background-modifier-form-field: hsla(0, 19.6%, 15%, 0.05) !important;
+  --background-modifier-form-field-hover: hsla(0, 19.6%, 15%, 0.05) !important;
+  --background-modifier-hover: hsla(0, 19.6%, 15%, 0.05) !important;
   --background-modifier-success: rgb(30, 169, 67) !important;
-  --background-primary: rgb(253, 251, 251) !important;
-  --background-primary-alt: rgb(250, 245, 245) !important;
+  --background-primary: hsl(0, 39.2%, 99.3%) !important;
+  --background-primary-alt: hsl(0, 34.3%, 97.3%) !important;
   --background-s: 39.2% !important;
-  --background-secondary: rgb(250, 245, 245) !important;
-  --background-secondary-alt: rgb(250, 245, 245) !important;
+  --background-secondary: hsl(0, 34.3%, 97.3%) !important;
+  --background-secondary-alt: hsl(0, 34.3%, 97.3%) !important;
   --background-secondary-l: 97.3% !important;
   --background-secondary-s: 34.3% !important;
-  --bases-cards-background: rgb(253, 251, 251) !important;
-  --bases-cards-cover-background: rgb(250, 245, 245) !important;
+  --bases-cards-background: hsl(0, 39.2%, 99.3%) !important;
+  --bases-cards-cover-background: hsl(0, 34.3%, 97.3%) !important;
   --bases-cards-radius: 4px !important;
-  --bases-cards-shadow: 0 0 0 1px rgba(46, 31, 31, 0.1) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgba(46, 31, 31, 0.1) !important;
-  --bases-embed-border-color: rgba(46, 31, 31, 0.1) !important;
+  --bases-cards-shadow: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1) !important;
+  --bases-embed-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --bases-embed-border-radius: 2px !important;
   --bases-group-heading-property-color: rgb(0, 0, 0) !important;
   --bases-group-heading-property-size: 13px !important;
   --bases-table-border-color: rgb(0, 0, 0) !important;
-  --bases-table-cell-background-active: rgb(253, 251, 251) !important;
-  --bases-table-cell-background-disabled: rgb(250, 245, 245) !important;
-  --bases-table-cell-background-selected: rgba(224, 41, 41, 0.1) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgba(46, 31, 31, 0.1) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(224, 41, 41) !important;
+  --bases-table-cell-background-active: hsl(0, 39.2%, 99.3%) !important;
+  --bases-table-cell-background-disabled: hsl(0, 34.3%, 97.3%) !important;
+  --bases-table-cell-background-selected: hsla(0, 75%, 52%, 0.1) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsla(0, 19.6%, 15%, 0.1) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(0, 75%, 52%) !important;
   --bases-table-container-border-radius: 2px !important;
-  --bases-table-group-background: rgb(250, 245, 245) !important;
-  --bases-table-header-background: rgb(253, 251, 251) !important;
-  --bases-table-header-background-hover: rgba(46, 31, 31, 0.05) !important;
+  --bases-table-group-background: hsl(0, 34.3%, 97.3%) !important;
+  --bases-table-header-background: hsl(0, 39.2%, 99.3%) !important;
+  --bases-table-header-background-hover: hsla(0, 19.6%, 15%, 0.05) !important;
   --bases-table-header-color: rgb(0, 0, 0) !important;
-  --bases-table-summary-background: rgb(253, 251, 251) !important;
-  --bases-table-summary-background-hover: rgba(46, 31, 31, 0.05) !important;
-  --blockquote-border-color: rgb(224, 41, 41) !important;
-  --blur-background: color-mix(in srgb, rgb(253, 251, 251) 65%, transparent) linear-gradient(rgb(253, 251, 251), color-mix(in srgb, rgb(253, 251, 251) 65%, transparent)) !important;
+  --bases-table-summary-background: hsl(0, 39.2%, 99.3%) !important;
+  --bases-table-summary-background-hover: hsla(0, 19.6%, 15%, 0.05) !important;
+  --blockquote-border-color: hsl(0, 75%, 52%) !important;
+  --blur-background: color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent) linear-gradient(hsl(0, 39.2%, 99.3%), color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)) !important;
   --bodyFont: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --button-radius: 2px !important;
-  --button-shadow: rgb(46, 31, 31) !important;
+  --button-shadow: hsl(0, 19.6%, 15%, 0.6) !important;
   --button-shadow-hover: rgba(0, 0, 0, 0.67) !important;
   --callout-bug: rgb(245, 0, 165);
   --callout-default: rgb(0, 0, 0);
   --callout-error: rgb(235, 0, 0);
   --callout-example: rgb(0, 0, 0);
   --callout-fail: rgb(235, 0, 0);
-  --callout-important: rgb(224, 41, 41);
+  --callout-important: hsl(0, 75%, 52%);
   --callout-info: rgb(0, 0, 0);
   --callout-question: rgb(0, 0, 0);
   --callout-quote: rgb(0, 0, 0);
@@ -1616,43 +1945,43 @@ html[saved-theme="dark"] body sup {
   --callout-tip: rgb(240, 195, 0);
   --callout-todo: rgb(0, 130, 235);
   --callout-warning: rgb(240, 150, 0);
-  --canvas-background: rgb(253, 251, 251) !important;
+  --canvas-background: hsl(0, 39.2%, 99.3%) !important;
   --canvas-card-label-color: rgb(0, 0, 0) !important;
   --canvas-controls-radius: 2px !important;
   --caret-color: rgb(0, 0, 0) !important;
   --checkbox-border-color: rgb(0, 0, 0) !important;
   --checkbox-border-color-hover: rgb(0, 0, 0) !important;
-  --checkbox-color: rgb(224, 41, 41) !important;
-  --checkbox-color-hover: rgb(224, 41, 41) !important;
-  --checkbox-marker-color: rgb(253, 251, 251) !important;
+  --checkbox-color: hsl(0, 75%, 52%) !important;
+  --checkbox-color-hover: hsl(0, 75%, 52%) !important;
+  --checkbox-marker-color: hsl(0, 39.2%, 99.3%) !important;
   --checkbox-radius: 2px !important;
   --checklist-done-color: rgb(0, 0, 0) !important;
   --clickable-icon-radius: 2px !important;
   --code-background: rgb(23, 35, 62) !important;
-  --code-border-color: rgba(46, 31, 31, 0.1) !important;
-  --code-bracket-background: rgba(46, 31, 31, 0.05) !important;
+  --code-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --code-bracket-background: hsla(0, 19.6%, 15%, 0.05) !important;
   --code-comment: rgba(159, 157, 190) !important;
   --code-function: rgb(230, 205, 90) !important;
   --code-important: rgb(220, 95, 0) !important;
   --code-indentation-guide-color: rgba(159, 157, 190, 0.33) !important;
   --code-keyword: rgb(220, 100, 210) !important;
-  --code-normal: rgb(227, 227, 227) !important;
+  --code-normal: hsl(0, 0%, 89%) !important;
   --code-operator: rgb(220, 65, 65) !important;
   --code-peripheral: 159, 157, 190 !important;
   --code-property: rgb(0, 202, 235) !important;
-  --code-punctuation: rgb(227, 227, 227) !important;
+  --code-punctuation: hsl(0, 0%, 89%) !important;
   --code-radius: 2px !important;
   --code-string: rgb(30, 169, 67) !important;
   --code-tag: rgb(220, 65, 65) !important;
   --code-value: rgb(140, 110, 240) !important;
   --codeFont: iA Writer Mono S, IBM Plex Mono, Roboto Mono, Menlo, SFMono-Regular, Consolas, Source Code Pro, monospace !important;
-  --collapse-icon-color: rgb(224, 41, 41) !important;
-  --collapse-icon-color-collapsed: rgb(224, 41, 41) !important;
-  --color-accent: rgb(224, 41, 41) !important;
-  --color-accent-1: rgb(224, 41, 41) !important;
-  --color-accent-2: rgb(232, 74, 82) !important;
-  --color-accent-background: rgba(224, 41, 41, 0.1) !important;
-  --color-accent-background-hover: rgba(224, 41, 41, 0.2) !important;
+  --collapse-icon-color: hsl(0, 75%, 52%) !important;
+  --collapse-icon-color-collapsed: hsl(0, 75%, 52%) !important;
+  --color-accent: hsl(0, 75%, 52%) !important;
+  --color-accent-1: hsl(0, 75%, 52%) !important;
+  --color-accent-2: hsl(-3, 76.5%, 59.8%) !important;
+  --color-accent-background: hsla(0, 75%, 52%, 0.1) !important;
+  --color-accent-background-hover: hsla(0, 75%, 52%, 0.2) !important;
   --color-accent-hsl: 0, 75%, 52% !important;
   --color-cyan: rgb(0, 202, 235) !important;
   --color-green: rgb(30, 169, 67) !important;
@@ -1663,20 +1992,20 @@ html[saved-theme="dark"] body sup {
   --color-yellow: rgb(230, 205, 90) !important;
   --dark: rgb(0, 0, 0) !important;
   --darkgray: rgb(0, 0, 0) !important;
-  --dictionary-background-primary: rgba(46, 31, 31, 0.05) !important;
-  --dictionary-background-secondary: rgb(250, 245, 245) !important;
+  --dictionary-background-primary: hsla(0, 19.6%, 15%, 0.05) !important;
+  --dictionary-background-secondary: hsl(0, 34.3%, 97.3%) !important;
   --divider-color: transparent !important;
-  --divider-color-hover: rgb(224, 41, 41) !important;
-  --dropdown-background: rgba(46, 31, 31, 0.05) !important;
-  --dropdown-background-hover: rgba(46, 31, 31, 0.1) !important;
-  --embed-block-shadow-hover: 0 0 0 1px rgba(46, 31, 31, 0.1), inset 0 0 0 1px rgba(46, 31, 31, 0.1) !important;
+  --divider-color-hover: hsl(0, 75%, 52%) !important;
+  --dropdown-background: hsla(0, 19.6%, 15%, 0.05) !important;
+  --dropdown-background-hover: hsla(0, 19.6%, 15%, 0.1) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1), inset 0 0 0 1px hsla(0, 19.6%, 15%, 0.1) !important;
   --embed-border-left: 2px dashed rgb(0, 0, 0) !important;
-  --embed-border-start: 2px solid rgb(224, 41, 41) !important;
-  --file-header-background: rgb(253, 251, 251) !important;
-  --file-header-background-focused: rgb(253, 251, 251) !important;
+  --embed-border-start: 2px solid hsl(0, 75%, 52%) !important;
+  --file-header-background: hsl(0, 39.2%, 99.3%) !important;
+  --file-header-background-focused: hsl(0, 39.2%, 99.3%) !important;
   --file-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --file-header-font-size: 14px !important;
-  --flair-background: rgba(46, 31, 31, 0.05) !important;
+  --flair-background: hsla(0, 19.6%, 15%, 0.05) !important;
   --flair-color: rgb(0, 0, 0) !important;
   --font-default: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
   --font-interface: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
@@ -1688,15 +2017,15 @@ html[saved-theme="dark"] body sup {
   --font-ui-small: 14px !important;
   --font-ui-smaller: 13px !important;
   --font-ui-smallest: 12px !important;
-  --footnote-divider-color: rgba(46, 31, 31, 0.1) !important;
+  --footnote-divider-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --footnote-id-color: rgb(0, 0, 0) !important;
   --footnote-id-color-no-occurrences: rgb(0, 0, 0) !important;
-  --footnote-input-background-active: rgba(46, 31, 31, 0.05) !important;
+  --footnote-input-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
   --footnote-line-height: 1.25em !important;
   --footnote-radius: 2px !important;
   --graph-node: rgb(0, 0, 0) !important;
   --graph-node-attachment: rgb(230, 205, 90) !important;
-  --graph-node-focused: rgb(224, 41, 41) !important;
+  --graph-node-focused: hsl(0, 75%, 52%) !important;
   --graph-node-tag: rgb(30, 169, 67) !important;
   --graph-node-unresolved: rgb(0, 0, 0) !important;
   --graph-text: rgb(0, 0, 0) !important;
@@ -1716,7 +2045,7 @@ html[saved-theme="dark"] body sup {
   --h6-line-height: 1.25em !important;
   --headerFont: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --heading-formatting: rgb(0, 0, 0) !important;
-  --highlight: rgb(241, 101, 101) !important;
+  --highlight: hsl(0, 82.5%, 67.2%) !important;
   --hr-color: rgba(0, 0, 0, 0.4) !important;
   --hr-thickness: 1px !important;
   --icon-color: rgb(0, 0, 0) !important;
@@ -1730,62 +2059,62 @@ html[saved-theme="dark"] body sup {
   --input-date-separator: rgb(0, 0, 0) !important;
   --input-placeholder-color: rgb(0, 0, 0) !important;
   --input-radius: 4px !important;
-  --interactive-accent: rgb(224, 41, 41) !important;
-  --interactive-accent-hover: rgb(224, 41, 41) !important;
+  --interactive-accent: hsl(0, 75%, 52%) !important;
+  --interactive-accent-hover: hsl(0, 75%, 52%) !important;
   --interactive-accent-hsl: 0, 75%, 52% !important;
-  --interactive-hover: rgba(46, 31, 31, 0.1) !important;
-  --interactive-normal: rgba(46, 31, 31, 0.05) !important;
+  --interactive-hover: hsla(0, 19.6%, 15%, 0.1) !important;
+  --interactive-normal: hsla(0, 19.6%, 15%, 0.05) !important;
   --kanban-button-text: rgb(0, 0, 0) !important;
   --kanban-button-text-hover: rgb(254, 252, 252) !important;
-  --kanban-checkbox-border: rgba(46, 31, 31, 0.1) !important;
-  --light: rgb(253, 251, 251) !important;
-  --lightgray: rgb(250, 245, 245) !important;
+  --kanban-checkbox-border: hsla(0, 19.6%, 15%, 0.1) !important;
+  --light: hsl(0, 39.2%, 99.3%) !important;
+  --lightgray: hsl(0, 34.3%, 97.3%) !important;
   --line-height-normal: 1.25em !important;
-  --link-color: rgb(224, 41, 41) !important;
+  --link-color: hsl(0, 75%, 52%) !important;
   --link-color-hover: #000 !important;
-  --link-external-color: rgb(224, 41, 41) !important;
+  --link-external-color: hsl(0, 75%, 52%) !important;
   --link-external-color-hover: #000 !important;
-  --link-unresolved-color: rgb(224, 41, 41) !important;
-  --link-unresolved-decoration-color: rgba(224, 41, 41, 0.3) !important;
+  --link-unresolved-color: hsl(0, 75%, 52%) !important;
+  --link-unresolved-decoration-color: hsla(0, 75%, 52%, 0.3) !important;
   --list-elements: rgb(0, 0, 0) !important;
   --list-indent: 1.25em !important;
   --list-marker-color: rgb(0, 0, 0) !important;
-  --list-marker-color-collapsed: rgb(224, 41, 41) !important;
+  --list-marker-color-collapsed: hsl(0, 75%, 52%) !important;
   --list-marker-color-hover: rgb(0, 0, 0) !important;
   --list-spacing: 0.25em !important;
-  --menu-background: rgb(250, 245, 245) !important;
-  --menu-border-color: rgba(46, 31, 31, 0.1) !important;
+  --menu-background: hsl(0, 34.3%, 97.3%) !important;
+  --menu-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --menu-radius: 4px !important;
-  --metadata-border-color: rgba(46, 31, 31, 0.1) !important;
-  --metadata-divider-color: rgba(46, 31, 31, 0.1) !important;
-  --metadata-input-background-active: rgba(46, 31, 31, 0.05) !important;
+  --metadata-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --metadata-divider-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --metadata-input-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
   --metadata-input-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --metadata-input-text-color: rgb(0, 0, 0) !important;
-  --metadata-label-background-active: rgba(46, 31, 31, 0.05) !important;
+  --metadata-label-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
   --metadata-label-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --metadata-label-text-color: rgb(0, 0, 0) !important;
   --metadata-label-text-color-hover: rgb(0, 0, 0) !important;
-  --metadata-property-background-active: rgba(46, 31, 31, 0.05) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgba(46, 31, 31, 0.1) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgba(46, 31, 31, 0.1) !important;
+  --metadata-property-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsla(0, 19.6%, 15%, 0.1) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsla(0, 19.6%, 15%, 0.1) !important;
   --metadata-sidebar-input-font-size: 14px !important;
   --metadata-sidebar-label-font-size: 14px !important;
-  --modal-background: rgb(253, 251, 251) !important;
-  --modal-border-color: rgba(46, 31, 31, 0.1) !important;
+  --modal-background: hsl(0, 39.2%, 99.3%) !important;
+  --modal-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --modal-radius: 6px !important;
-  --nav-collapse-icon-color: rgb(224, 41, 41) !important;
-  --nav-collapse-icon-color-collapsed: rgb(224, 41, 41) !important;
+  --nav-collapse-icon-color: hsl(0, 75%, 52%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(0, 75%, 52%) !important;
   --nav-heading-color: rgb(0, 0, 0) !important;
   --nav-heading-color-collapsed: rgb(0, 0, 0) !important;
   --nav-heading-color-collapsed-hover: rgb(0, 0, 0) !important;
   --nav-heading-color-hover: rgb(0, 0, 0) !important;
-  --nav-indentation-guide-color: rgb(224, 41, 41) !important;
-  --nav-item-background-active: rgba(46, 31, 31, 0.05) !important;
-  --nav-item-background-hover: rgba(46, 31, 31, 0.05) !important;
-  --nav-item-background-selected: rgba(224, 41, 41, 0.15) !important;
+  --nav-indentation-guide-color: hsl(0, 75%, 52%) !important;
+  --nav-item-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
+  --nav-item-background-hover: hsla(0, 19.6%, 15%, 0.05) !important;
+  --nav-item-background-selected: hsla(0, 75%, 52%, 0.15) !important;
   --nav-item-color: rgb(0, 0, 0) !important;
   --nav-item-color-active: rgb(0, 0, 0) !important;
-  --nav-item-color-highlighted: rgb(224, 41, 41) !important;
+  --nav-item-color-highlighted: hsl(0, 75%, 52%) !important;
   --nav-item-color-hover: rgb(0, 0, 0) !important;
   --nav-item-color-selected: rgb(0, 0, 0) !important;
   --nav-item-radius: 2px !important;
@@ -1796,55 +2125,55 @@ html[saved-theme="dark"] body sup {
   --nav-tag-radius: 2px !important;
   --oz-fta-file-font-size: 14px !important;
   --oz-fta-folder-font-size: 14px !important;
-  --pdf-background: rgb(253, 251, 251) !important;
-  --pdf-page-background: rgb(253, 251, 251) !important;
-  --pdf-sidebar-background: rgb(253, 251, 251) !important;
-  --pill-border-color: rgba(46, 31, 31, 0.1) !important;
-  --pill-border-color-hover: rgba(46, 31, 31, 0.1) !important;
+  --pdf-background: hsl(0, 39.2%, 99.3%) !important;
+  --pdf-page-background: hsl(0, 39.2%, 99.3%) !important;
+  --pdf-sidebar-background: hsl(0, 39.2%, 99.3%) !important;
+  --pill-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --pill-border-color-hover: hsla(0, 19.6%, 15%, 0.1) !important;
   --pill-color: rgb(0, 0, 0) !important;
   --pill-color-hover: rgb(0, 0, 0) !important;
   --pill-color-remove: rgb(0, 0, 0) !important;
-  --pill-color-remove-hover: rgb(224, 41, 41) !important;
-  --polka-dots: radial-gradient(rgb(224, 41, 41) 15%, transparent 25%),
-  radial-gradient(rgb(224, 41, 41) 17.5%, transparent 25%) !important;
-  --prompt-background: rgb(253, 251, 251) !important;
-  --prompt-border-color: rgba(46, 31, 31, 0.1) !important;
+  --pill-color-remove-hover: hsl(0, 75%, 52%) !important;
+  --polka-dots: radial-gradient(hsl(0, 75%, 52%) 15%, transparent 25%),
+  radial-gradient(hsl(0, 75%, 52%) 17.5%, transparent 25%) !important;
+  --prompt-background: hsl(0, 39.2%, 99.3%) !important;
+  --prompt-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --radius-l: 6px !important;
   --radius-m: 4px !important;
   --radius-s: 2px !important;
   --radius-xl: 8px !important;
-  --raised-background: color-mix(in srgb, rgb(253, 251, 251) 65%, transparent) linear-gradient(rgb(253, 251, 251), color-mix(in srgb, rgb(253, 251, 251) 65%, transparent)) !important;
-  --ribbon-background: rgb(250, 245, 245) !important;
-  --ribbon-background-collapsed: rgb(253, 251, 251) !important;
+  --raised-background: color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent) linear-gradient(hsl(0, 39.2%, 99.3%), color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)) !important;
+  --ribbon-background: hsl(0, 34.3%, 97.3%) !important;
+  --ribbon-background-collapsed: hsl(0, 39.2%, 99.3%) !important;
   --ribbon-border: none !important;
-  --scrollbar-active-thumb-bg: rgba(46, 31, 31, 0.1) !important;
+  --scrollbar-active-thumb-bg: hsla(0, 19.6%, 15%, 0.1) !important;
   --scrollbar-radius: 6px !important;
-  --scrollbar-thumb-bg: rgba(46, 31, 31, 0.05) !important;
+  --scrollbar-thumb-bg: hsla(0, 19.6%, 15%, 0.05) !important;
   --search-clear-button-color: rgb(0, 0, 0) !important;
   --search-icon-color: rgb(0, 0, 0) !important;
-  --search-result-background: rgb(253, 251, 251) !important;
-  --search-result-bg-hover: rgba(46, 31, 31, 0.1) !important;
-  --secondary: rgb(224, 41, 41) !important;
+  --search-result-background: hsl(0, 39.2%, 99.3%) !important;
+  --search-result-bg-hover: hsla(0, 19.6%, 15%, 0.1) !important;
+  --secondary: hsl(0, 75%, 52%) !important;
   --setting-group-heading-color: rgb(0, 0, 0) !important;
-  --setting-items-background: rgb(250, 245, 245) !important;
-  --setting-items-border-color: rgba(46, 31, 31, 0.1) !important;
+  --setting-items-background: hsl(0, 34.3%, 97.3%) !important;
+  --setting-items-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --setting-items-radius: 6px !important;
-  --slider-thumb-border-color: rgba(46, 31, 31, 0.1) !important;
-  --slider-track-background: rgba(46, 31, 31, 0.1) !important;
+  --slider-thumb-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --slider-track-background: hsla(0, 19.6%, 15%, 0.1) !important;
   --ss-border-radius: 0.1px !important;
   --ss-embed-border-style: 2px dashed rgb(0, 0, 0) !important;
   --ss-light-contrast: 0% !important;
   --ss-light-h: 0 !important;
-  --ss-light-highlight-bg: rgb(241, 101, 101) !important;
+  --ss-light-highlight-bg: hsl(0, 82.5%, 67.2%) !important;
   --ss-light-l: 9.86% !important;
   --ss-light-s: 3.92% !important;
   --ss-light-text-main: 0, 0, 0 !important;
-  --status-bar-background: rgb(250, 245, 245) !important;
+  --status-bar-background: hsl(0, 34.3%, 97.3%) !important;
   --status-bar-border-color: transparent !important;
   --status-bar-font-size: 13px !important;
   --status-bar-radius: 4px 0 0 0 !important;
   --status-bar-text-color: rgb(0, 0, 0) !important;
-  --suggestion-background: rgb(253, 251, 251) !important;
+  --suggestion-background: hsl(0, 39.2%, 99.3%) !important;
   --sync-avatar-color-1: rgb(220, 65, 65) !important;
   --sync-avatar-color-2: rgb(220, 95, 0) !important;
   --sync-avatar-color-3: rgb(230, 205, 90) !important;
@@ -1852,61 +2181,61 @@ html[saved-theme="dark"] body sup {
   --sync-avatar-color-5: rgb(0, 202, 235) !important;
   --sync-avatar-color-7: rgb(140, 110, 240) !important;
   --sync-avatar-color-8: rgb(220, 100, 210) !important;
-  --tab-background-active: rgb(253, 251, 251) !important;
-  --tab-container-background: rgb(250, 245, 245) !important;
-  --tab-divider-color: rgba(46, 31, 31, 0.1) !important;
+  --tab-background-active: hsl(0, 39.2%, 99.3%) !important;
+  --tab-container-background: hsl(0, 34.3%, 97.3%) !important;
+  --tab-divider-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --tab-font-size: 14px !important;
-  --tab-outline-color: rgb(224, 41, 41) !important;
+  --tab-outline-color: hsl(0, 75%, 52%) !important;
   --tab-radius: 2px !important;
   --tab-stacked-font-size: 14px !important;
-  --tab-switcher-background: rgb(250, 245, 245) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(250, 245, 245), transparent) !important;
+  --tab-switcher-background: hsl(0, 34.3%, 97.3%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 34.3%, 97.3%), transparent) !important;
   --tab-switcher-preview-radius: 8px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(224, 41, 41) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 75%, 52%) !important;
   --tab-text-color: rgb(0, 0, 0) !important;
   --tab-text-color-active: rgb(0, 0, 0) !important;
   --tab-text-color-focused: rgb(0, 0, 0) !important;
   --tab-text-color-focused-active: rgb(0, 0, 0) !important;
   --tab-text-color-focused-active-current: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-highlighted: rgb(224, 41, 41) !important;
-  --table-add-button-border-color: rgba(46, 31, 31, 0.1) !important;
+  --tab-text-color-focused-highlighted: hsl(0, 75%, 52%) !important;
+  --table-add-button-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --table-body-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --table-body-font-size: 1em !important;
   --table-border-color: rgb(0, 0, 0) !important;
-  --table-drag-handle-background-active: rgb(224, 41, 41) !important;
+  --table-drag-handle-background-active: hsl(0, 75%, 52%) !important;
   --table-drag-handle-color: rgb(0, 0, 0) !important;
   --table-drag-handle-color-active: rgb(254, 252, 252) !important;
   --table-header-border-color: rgb(0, 0, 0) !important;
   --table-header-color: rgb(0, 0, 0) !important;
   --table-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
-  --table-selection: rgba(224, 41, 41, 0.1) !important;
-  --table-selection-border-color: rgb(224, 41, 41) !important;
-  --tag-background: rgba(224, 41, 41, 0.1) !important;
-  --tag-background-hover: rgba(224, 41, 41, 0.2) !important;
-  --tag-border-color: rgba(224, 41, 41, 0.15) !important;
-  --tag-border-color-hover: rgba(224, 41, 41, 0.15) !important;
-  --tag-color: rgb(224, 41, 41) !important;
-  --tag-color-hover: rgb(224, 41, 41) !important;
+  --table-selection: hsla(0, 75%, 52%, 0.1) !important;
+  --table-selection-border-color: hsl(0, 75%, 52%) !important;
+  --tag-background: hsla(0, 75%, 52%, 0.1) !important;
+  --tag-background-hover: hsla(0, 75%, 52%, 0.2) !important;
+  --tag-border-color: hsla(0, 75%, 52%, 0.15) !important;
+  --tag-border-color-hover: hsla(0, 75%, 52%, 0.15) !important;
+  --tag-color: hsl(0, 75%, 52%) !important;
+  --tag-color-hover: hsl(0, 75%, 52%) !important;
   --tag-radius: 4px !important;
   --tertiary: #000 !important;
-  --text-accent: rgb(224, 41, 41) !important;
+  --text-accent: hsl(0, 75%, 52%) !important;
   --text-accent-hover: #000 !important;
   --text-error: rgb(250, 30, 0) !important;
   --text-faint: rgb(0, 0, 0) !important;
-  --text-highlight-bg: rgb(241, 101, 101) !important;
+  --text-highlight-bg: hsl(0, 82.5%, 67.2%) !important;
   --text-highlight-fg: #000 !important;
   --text-muted: rgb(0, 0, 0) !important;
   --text-normal: rgb(0, 0, 0) !important;
   --text-on-accent: rgb(254, 252, 252) !important;
-  --text-selection: rgba(224, 41, 41, 0.4) !important;
+  --text-selection: hsla(0, 75%, 52%, 0.4) !important;
   --text-success: rgb(30, 169, 67) !important;
   --text-warning: rgb(220, 95, 0) !important;
   --text-white: rgb(254, 252, 252) !important;
-  --textHighlight: rgb(241, 101, 101) !important;
+  --textHighlight: hsl(0, 82.5%, 67.2%) !important;
   --titleFont: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
-  --titlebar-background: rgb(250, 245, 245) !important;
-  --titlebar-background-focused: rgb(250, 245, 245) !important;
-  --titlebar-border-color: rgba(46, 31, 31, 0.1) !important;
+  --titlebar-background: hsl(0, 34.3%, 97.3%) !important;
+  --titlebar-background-focused: hsl(0, 34.3%, 97.3%) !important;
+  --titlebar-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --titlebar-text-color: rgb(0, 0, 0) !important;
   --titlebar-text-color-focused: rgb(0, 0, 0) !important;
   --vault-name-font-weight: bold !important;
@@ -2364,6 +2693,350 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(0, 0, 0);
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(254, 253, 253);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgb(0, 0, 0);
@@ -2643,6 +3316,10 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-right-radius: 2px;
   border-top-style: dashed;
   border-top-width: 2px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgba(46, 31, 31, 0.05);
@@ -2863,25 +3540,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(0, 0, 0);
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   text-decoration: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(0, 0, 0);
-  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  text-decoration: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(46, 31, 31, 0.05);
-  border-bottom-color: rgb(0, 0, 0);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  color: rgb(0, 0, 0);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(0, 0, 0);

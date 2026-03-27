@@ -7,25 +7,25 @@ export const theme: ThemeData = {
   --accent-h: 254 !important;
   --accent-l: 68% !important;
   --accent-s: 80% !important;
-  --background-modifier-active-hover: rgba(139, 108, 239, 0.15) !important;
+  --background-modifier-active-hover: hsla(254, 80%, 68%, 0.15) !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.075) !important;
-  --background-primary: rgb(34, 33, 44) !important;
-  --background-primary-alt: rgb(29, 31, 42) !important;
-  --background-secondary: rgb(34, 32, 44) !important;
-  --bases-cards-background: rgb(34, 33, 44) !important;
-  --bases-cards-cover-background: rgb(29, 31, 42) !important;
+  --background-primary: hsl(250, 15%, 15%) !important;
+  --background-primary-alt: hsl(230, 18%, 14%) !important;
+  --background-secondary: hsl(250, 16%, 15%) !important;
+  --bases-cards-background: hsl(250, 15%, 15%) !important;
+  --bases-cards-cover-background: hsl(230, 18%, 14%) !important;
   --bases-group-heading-property-color: #6e6b7e !important;
-  --bases-table-cell-background-active: rgb(34, 33, 44) !important;
-  --bases-table-cell-background-disabled: rgb(29, 31, 42) !important;
-  --bases-table-cell-background-selected: rgba(139, 108, 239, 0.1) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(139, 108, 239) !important;
-  --bases-table-group-background: rgb(29, 31, 42) !important;
-  --bases-table-header-background: rgb(34, 33, 44) !important;
+  --bases-table-cell-background-active: hsl(250, 15%, 15%) !important;
+  --bases-table-cell-background-disabled: hsl(230, 18%, 14%) !important;
+  --bases-table-cell-background-selected: hsla(254, 80%, 68%, 0.1) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(254, 80%, 68%) !important;
+  --bases-table-group-background: hsl(230, 18%, 14%) !important;
+  --bases-table-header-background: hsl(250, 15%, 15%) !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.075) !important;
   --bases-table-header-color: #6e6b7e !important;
-  --bases-table-summary-background: rgb(34, 33, 44) !important;
+  --bases-table-summary-background: hsl(250, 15%, 15%) !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075) !important;
-  --blockquote-background-color: rgb(46, 43, 59) !important;
+  --blockquote-background-color: hsl(250, 16%, 20%) !important;
   --blockquote-border-color: #6272a4 !important;
   --blockquote-border-thickness: 5px !important;
   --blue-1: rgb(72, 54, 153) !important;
@@ -34,14 +34,14 @@ export const theme: ThemeData = {
   --bold-color: #ffb86c !important;
   --bold-weight: 600 !important;
   --callout-question: 224, 222, 113;
-  --canvas-background: rgb(34, 33, 44) !important;
+  --canvas-background: hsl(250, 15%, 15%) !important;
   --canvas-card-label-color: #6c6498 !important;
   --caret-color: #f8f8f2 !important;
   --checkbox-border-color: #6c6498 !important;
   --checkbox-border-color-hover: #6e6b7e !important;
-  --checkbox-color: rgb(139, 108, 239) !important;
-  --checkbox-color-hover: rgb(170, 153, 245) !important;
-  --checkbox-marker-color: rgb(34, 33, 44) !important;
+  --checkbox-color: hsl(254, 80%, 68%) !important;
+  --checkbox-color-hover: hsl(251, 81.6%, 78.2%) !important;
+  --checkbox-marker-color: hsl(250, 15%, 15%) !important;
   --checklist-done-color: #6e6b7e !important;
   --code-background: #282a36 !important;
   --code-bracket-background: rgba(255, 255, 255, 0.075) !important;
@@ -58,29 +58,29 @@ export const theme: ThemeData = {
   --code-value: #8aff80 !important;
   --codeFont: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #6c6498 !important;
-  --collapse-icon-color-collapsed: rgb(170, 153, 245) !important;
-  --color-accent: rgb(139, 108, 239) !important;
-  --color-accent-1: rgb(170, 153, 245) !important;
-  --color-accent-2: rgb(206, 199, 250) !important;
+  --collapse-icon-color-collapsed: hsl(251, 81.6%, 78.2%) !important;
+  --color-accent: hsl(254, 80%, 68%) !important;
+  --color-accent-1: hsl(251, 81.6%, 78.2%) !important;
+  --color-accent-2: hsl(249, 84%, 87.72%) !important;
   --color-accent-hsl: 254, 80%, 68% !important;
   --color-highlight-text: #fef3ac !important;
   --cyan-1: #80ffea !important;
-  --cyan-2: rgb(134, 251, 253) !important;
-  --cyan-3: rgb(114, 195, 213) !important;
-  --cyan-4: rgb(114, 185, 203) !important;
-  --cyan-5: rgb(60, 152, 180) !important;
-  --cyan-6: rgb(76, 118, 133) !important;
+  --cyan-2: hsl(181, 97%, 76%) !important;
+  --cyan-3: hsl(191, 54%, 64%) !important;
+  --cyan-4: hsl(192, 46%, 62%) !important;
+  --cyan-5: hsl(194, 50%, 47%) !important;
+  --cyan-6: hsl(196, 27%, 41%) !important;
   --dark: #f8f8f2 !important;
   --dark-1: rgba(0, 0, 0, 0.05) !important;
   --dark-10: #2f2f2d !important;
   --dark-11: #303030 !important;
-  --dark-12: rgb(23, 24, 28) !important;
-  --dark-13: rgb(29, 31, 42) !important;
-  --dark-14: rgb(26, 25, 31) !important;
-  --dark-15: rgb(34, 33, 44) !important;
-  --dark-16: rgb(34, 32, 44) !important;
-  --dark-17: rgb(46, 43, 59) !important;
-  --dark-18: rgb(54, 56, 68) !important;
+  --dark-12: hsl(230, 8%, 10%) !important;
+  --dark-13: hsl(230, 18%, 14%) !important;
+  --dark-14: hsl(250, 10%, 11%) !important;
+  --dark-15: hsl(250, 15%, 15%) !important;
+  --dark-16: hsl(250, 16%, 15%) !important;
+  --dark-17: hsl(250, 16%, 20%) !important;
+  --dark-18: hsl(231, 11%, 24%) !important;
   --dark-19: #363948 !important;
   --dark-2: rgba(0, 0, 0, 0.15) !important;
   --dark-20: rgba(0, 0, 0, 0.85) !important;
@@ -88,7 +88,7 @@ export const theme: ThemeData = {
   --dark-22: black !important;
   --dark-3: rgba(0, 0, 0, 0.2) !important;
   --dark-4: rgba(0, 0, 0, 0.35) !important;
-  --dark-5: rgba(139, 108, 239, 0.1) !important;
+  --dark-5: hsla(254, 80%, 68%, 0.1) !important;
   --dark-6: rgba(54, 57, 72, 0.4) !important;
   --dark-7: #262626 !important;
   --dark-8: #282a36 !important;
@@ -101,10 +101,10 @@ export const theme: ThemeData = {
   --embed-border-bottom: 2px solid #6272a4 !important;
   --embed-border-left: 2px solid #6272a4 !important;
   --embed-border-right: 2px solid #6272a4 !important;
-  --embed-border-start: 2px solid rgb(139, 108, 239) !important;
+  --embed-border-start: 2px solid hsl(254, 80%, 68%) !important;
   --embed-border-top: 2px solid #6272a4 !important;
-  --file-header-background: rgb(34, 33, 44) !important;
-  --file-header-background-focused: rgb(34, 33, 44) !important;
+  --file-header-background: hsl(250, 15%, 15%) !important;
+  --file-header-background-focused: hsl(250, 15%, 15%) !important;
   --file-header-font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-margins: 32px !important;
   --flair-color: #f8f8f2 !important;
@@ -112,73 +112,73 @@ export const theme: ThemeData = {
   --footnote-id-color: #6e6b7e !important;
   --footnote-id-color-no-occurrences: #6c6498 !important;
   --footnote-input-background-active: rgba(255, 255, 255, 0.075) !important;
-  --graph-controls-settings-name: rgb(114, 185, 203) !important;
-  --graph-line: rgb(76, 118, 133) !important;
+  --graph-controls-settings-name: hsl(192, 46%, 62%) !important;
+  --graph-line: hsl(196, 27%, 41%) !important;
   --graph-node: #6e6b7e !important;
   --graph-node-attachment: #6e6b7e !important;
-  --graph-node-focused: rgb(221, 110, 190) !important;
-  --graph-node-resolved: rgb(243, 238, 94) !important;
-  --graph-node-tag: rgb(101, 230, 168) !important;
+  --graph-node-focused: hsl(317, 62%, 65%) !important;
+  --graph-node-resolved: hsl(58, 86%, 66%) !important;
+  --graph-node-tag: hsl(151, 72%, 65%) !important;
   --graph-node-unresolved: #6c6498 !important;
-  --graph-text: rgb(159, 169, 198) !important;
+  --graph-text: hsl(224, 26%, 70%) !important;
   --gray: #6e6b7e !important;
-  --gray-1: rgb(153, 153, 153) !important;
-  --gray-2: rgb(159, 169, 198) !important;
-  --gray-3: rgb(213, 214, 215) !important;
+  --gray-1: hsl(0, 0%, 60%) !important;
+  --gray-2: hsl(224, 26%, 70%) !important;
+  --gray-3: hsl(210, 2%, 84%) !important;
   --gray-4: #6e6b7e !important;
   --green-1: #8aff80 !important;
-  --green-2: rgb(91, 241, 103) !important;
-  --green-3: rgb(82, 250, 124) !important;
-  --green-4: rgb(101, 230, 168) !important;
+  --green-2: hsl(125, 84%, 65%) !important;
+  --green-3: hsl(135, 94%, 65%) !important;
+  --green-4: hsl(151, 72%, 65%) !important;
   --green-5: #50fa7b !important;
-  --green-6: rgb(108, 224, 137) !important;
+  --green-6: hsl(135, 65%, 65%) !important;
   --green-7: rgba(101, 230, 168, 0.7) !important;
-  --h1-color: rgb(255, 87, 87) !important;
+  --h1-color: hsl(0, 100%, 67%) !important;
   --h1-size: 1.802em !important;
-  --h2-color: rgb(174, 150, 248) !important;
+  --h2-color: hsl(255, 87%, 78%) !important;
   --h2-size: 1.602em !important;
   --h2-weight: 600 !important;
-  --h3-color: rgb(91, 241, 103) !important;
+  --h3-color: hsl(125, 84%, 65%) !important;
   --h3-size: 1.424em !important;
   --h3-weight: 600 !important;
-  --h4-color: rgb(255, 169, 122) !important;
+  --h4-color: hsl(21, 100%, 74%) !important;
   --h4-size: 1.266em !important;
   --h4-weight: 600 !important;
-  --h5-color: rgb(250, 241, 137) !important;
+  --h5-color: hsl(55, 92%, 76%) !important;
   --h5-size: 1.125em !important;
   --h5-weight: 600 !important;
-  --h6-color: rgb(134, 251, 253) !important;
+  --h6-color: hsl(181, 97%, 76%) !important;
   --headerFont: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #6c6498 !important;
   --highlight: rgba(255, 255, 255, 0.075) !important;
   --icon-color: #6e6b7e !important;
-  --icon-color-active: rgb(153, 153, 153) !important;
+  --icon-color-active: hsl(0, 0%, 60%) !important;
   --icon-color-focused: #f8f8f2 !important;
   --icon-color-hover: #6e6b7e !important;
-  --inline-title-color: rgb(255, 87, 87) !important;
+  --inline-title-color: hsl(0, 100%, 67%) !important;
   --inline-title-size: 1.802em !important;
   --input-date-separator: #6c6498 !important;
   --input-placeholder-color: #6c6498 !important;
-  --interactive-accent: rgb(139, 108, 239) !important;
-  --interactive-accent-hover: rgb(170, 153, 245) !important;
+  --interactive-accent: hsl(254, 80%, 68%) !important;
+  --interactive-accent-hover: hsl(251, 81.6%, 78.2%) !important;
   --interactive-accent-hsl: 254, 80%, 68% !important;
   --interactive-accent-rgb: rgb(72, 54, 153) !important;
   --italic-color: #ffff80 !important;
-  --light: rgb(34, 33, 44) !important;
-  --lightgray: rgb(34, 32, 44) !important;
+  --light: hsl(250, 15%, 15%) !important;
+  --lightgray: hsl(250, 16%, 15%) !important;
   --link-color: #ff80bf !important;
-  --link-color-hover: rgba(224, 113, 161, 0.9) !important;
+  --link-color-hover: hsla(334, 64%, 66%, 0.9) !important;
   --link-decoration: none !important;
-  --link-external-color: rgb(82, 250, 124) !important;
-  --link-external-color-hover: rgb(108, 224, 137) !important;
-  --link-unresolved-color: rgb(224, 113, 161) !important;
-  --link-unresolved-decoration-color: rgba(139, 108, 239, 0.3) !important;
+  --link-external-color: hsl(135, 94%, 65%) !important;
+  --link-external-color-hover: hsl(135, 65%, 65%) !important;
+  --link-unresolved-color: hsl(334, 64%, 66%) !important;
+  --link-unresolved-decoration-color: hsla(254, 80%, 68%, 0.3) !important;
   --link-unresolved-opacity: 0.6 !important;
   --list-indent: 2em !important;
   --list-marker-color: #6c6498 !important;
-  --list-marker-color-collapsed: rgb(170, 153, 245) !important;
+  --list-marker-color-collapsed: hsl(251, 81.6%, 78.2%) !important;
   --list-marker-color-hover: #6e6b7e !important;
-  --menu-background: rgb(34, 32, 44) !important;
+  --menu-background: hsl(250, 16%, 15%) !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-input-font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: #f8f8f2 !important;
@@ -187,16 +187,16 @@ export const theme: ThemeData = {
   --metadata-label-text-color: #6e6b7e !important;
   --metadata-label-text-color-hover: #6e6b7e !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.075) !important;
-  --modal-background: rgb(34, 33, 44) !important;
+  --modal-background: hsl(250, 15%, 15%) !important;
   --nav-collapse-icon-color: #6c6498 !important;
   --nav-collapse-icon-color-collapsed: #6c6498 !important;
   --nav-heading-color: #f8f8f2 !important;
   --nav-heading-color-collapsed: #6c6498 !important;
   --nav-heading-color-collapsed-hover: #6e6b7e !important;
   --nav-heading-color-hover: #f8f8f2 !important;
-  --nav-item-background-active: rgb(54, 56, 68) !important;
+  --nav-item-background-active: hsl(231, 11%, 24%) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.075) !important;
-  --nav-item-background-selected: rgba(139, 108, 239, 0.15) !important;
+  --nav-item-background-selected: hsla(254, 80%, 68%, 0.15) !important;
   --nav-item-children-margin-left: 12px !important;
   --nav-item-children-padding-left: 4px !important;
   --nav-item-color: #6e6b7e !important;
@@ -208,86 +208,86 @@ export const theme: ThemeData = {
   --nav-tag-color: #6c6498 !important;
   --nav-tag-color-active: #6e6b7e !important;
   --nav-tag-color-hover: #6e6b7e !important;
-  --pdf-background: rgb(34, 33, 44) !important;
-  --pdf-page-background: rgb(34, 33, 44) !important;
-  --pdf-sidebar-background: rgb(34, 33, 44) !important;
+  --pdf-background: hsl(250, 15%, 15%) !important;
+  --pdf-page-background: hsl(250, 15%, 15%) !important;
+  --pdf-sidebar-background: hsl(250, 15%, 15%) !important;
   --pill-color: #6e6b7e !important;
   --pill-color-hover: #6e6b7e !important;
   --pill-color-remove: #6c6498 !important;
-  --pill-color-remove-hover: rgb(170, 153, 245) !important;
+  --pill-color-remove-hover: hsl(251, 81.6%, 78.2%) !important;
   --pink-1: #ff80bf !important;
-  --pink-2: rgb(221, 110, 190) !important;
-  --pink-3: rgb(224, 113, 161) !important;
-  --pink-3-transparent: rgba(224, 113, 161, 0.9) !important;
+  --pink-2: hsl(317, 62%, 65%) !important;
+  --pink-3: hsl(334, 64%, 66%) !important;
+  --pink-3-transparent: hsla(334, 64%, 66%, 0.9) !important;
   --popover-max-height: 70vh !important;
   --popover-pdf-height: 800px !important;
   --popover-pdf-width: 600px !important;
-  --prompt-background: rgb(34, 33, 44) !important;
+  --prompt-background: hsl(250, 15%, 15%) !important;
   --purple-1: #bd93f9 !important;
-  --purple-2: rgb(174, 150, 248) !important;
+  --purple-2: hsl(255, 87%, 78%) !important;
   --purple-3: #9580ff !important;
   --purple-4: #6272a4 !important;
   --purple-5: #6c6498 !important;
   --red-1: red !important;
-  --red-2: rgb(255, 87, 87) !important;
+  --red-2: hsl(0, 100%, 67%) !important;
   --red-3: #ff5555 !important;
   --red-4: #FF6654 !important;
-  --ribbon-background: rgb(34, 32, 44) !important;
-  --ribbon-background-collapsed: rgb(34, 33, 44) !important;
+  --ribbon-background: hsl(250, 16%, 15%) !important;
+  --ribbon-background-collapsed: hsl(250, 15%, 15%) !important;
   --search-clear-button-color: #6e6b7e !important;
   --search-icon-color: #6e6b7e !important;
-  --search-result-background: rgb(34, 33, 44) !important;
+  --search-result-background: hsl(250, 15%, 15%) !important;
   --search-result-text-color: #262626 !important;
-  --secondary: rgb(170, 153, 245) !important;
+  --secondary: hsl(251, 81.6%, 78.2%) !important;
   --setting-group-heading-color: #f8f8f2 !important;
-  --setting-items-background: rgb(29, 31, 42) !important;
+  --setting-items-background: hsl(230, 18%, 14%) !important;
   --slider-thumb-radius: 50% !important;
-  --status-bar-background: rgb(34, 32, 44) !important;
+  --status-bar-background: hsl(250, 16%, 15%) !important;
   --status-bar-scroll-padding: 30px !important;
   --status-bar-text-color: #6e6b7e !important;
-  --suggestion-background: rgb(34, 33, 44) !important;
+  --suggestion-background: hsl(250, 15%, 15%) !important;
   --swatch-height: 24px !important;
   --swatch-width: 24px !important;
-  --tab-background-active: rgb(34, 33, 44) !important;
-  --tab-container-background: rgb(34, 32, 44) !important;
+  --tab-background-active: hsl(250, 15%, 15%) !important;
+  --tab-container-background: hsl(250, 16%, 15%) !important;
   --tab-stacked-text-align: left !important;
-  --tab-switcher-background: rgb(34, 32, 44) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(34, 32, 44), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(139, 108, 239) !important;
+  --tab-switcher-background: hsl(250, 16%, 15%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(250, 16%, 15%), transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(254, 80%, 68%) !important;
   --tab-text-color: #6c6498 !important;
   --tab-text-color-active: #f1b968 !important;
   --tab-text-color-focused: #6e6b7e !important;
   --tab-text-color-focused-active: #f1b968 !important;
   --tab-text-color-focused-active-current: #f1b968 !important;
-  --tab-text-color-focused-highlighted: rgb(170, 153, 245) !important;
-  --table-drag-handle-background-active: rgb(139, 108, 239) !important;
+  --tab-text-color-focused-highlighted: hsl(251, 81.6%, 78.2%) !important;
+  --table-drag-handle-background-active: hsl(254, 80%, 68%) !important;
   --table-drag-handle-color: #6c6498 !important;
   --table-drag-handle-color-active: #f8f8f2 !important;
   --table-header-color: #f8f8f2 !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(139, 108, 239, 0.1) !important;
-  --table-selection-border-color: rgb(139, 108, 239) !important;
+  --table-selection: hsla(254, 80%, 68%, 0.1) !important;
+  --table-selection-border-color: hsl(254, 80%, 68%) !important;
   --table-white-space: normal !important;
   --tag-background: none !important;
   --tag-background-hover: none !important;
-  --tag-border-color: rgba(139, 108, 239, 0.15) !important;
-  --tag-border-color-hover: rgba(139, 108, 239, 0.15) !important;
-  --tag-color: rgb(101, 230, 168) !important;
+  --tag-border-color: hsla(254, 80%, 68%, 0.15) !important;
+  --tag-border-color-hover: hsla(254, 80%, 68%, 0.15) !important;
+  --tag-color: hsl(151, 72%, 65%) !important;
   --tag-color-hover: rgba(101, 230, 168, 0.7) !important;
   --tag-decoration-hover: underline !important;
   --tertiary: #6e6b7e !important;
-  --text-accent: rgb(170, 153, 245) !important;
+  --text-accent: hsl(251, 81.6%, 78.2%) !important;
   --text-accent-hover: #6e6b7e !important;
   --text-faint: #6c6498 !important;
   --text-highlight-bg-active: rgba(54, 57, 72, 0.4) !important;
   --text-muted: #6e6b7e !important;
   --text-normal: #f8f8f2 !important;
   --text-on-accent: #f8f8f2 !important;
-  --text-selection: rgba(139, 108, 239, 0.33) !important;
+  --text-selection: hsla(254, 80%, 68%, 0.33) !important;
   --textHighlight: rgba(255, 255, 255, 0.075) !important;
   --titleFont: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: rgb(34, 32, 44) !important;
-  --titlebar-background-focused: rgb(34, 32, 44) !important;
+  --titlebar-background: hsl(250, 16%, 15%) !important;
+  --titlebar-background-focused: hsl(250, 16%, 15%) !important;
   --titlebar-text-color: #6e6b7e !important;
   --titlebar-text-color-focused: #f8f8f2 !important;
   --toggle-thumb-color: #f8f8f2 !important;
@@ -301,10 +301,10 @@ export const theme: ThemeData = {
   --workspace-background-translucent: rgba(0, 0, 0, 0.) !important;
   --yellow-1: #fef3ac !important;
   --yellow-2: #ffff80 !important;
-  --yellow-3: rgb(250, 241, 137) !important;
-  --yellow-4: rgb(243, 238, 94) !important;
+  --yellow-3: hsl(55, 92%, 76%) !important;
+  --yellow-4: hsl(58, 86%, 66%) !important;
   --yellow-5: #ffb86c !important;
-  --yellow-6: rgb(255, 169, 122) !important;
+  --yellow-6: hsl(21, 100%, 74%) !important;
   --yellow-7: #f1b968 !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -708,6 +708,350 @@ html body li.task-list-item[data-task='w'] {
   color: rgb(114, 195, 213);
   text-decoration: rgb(114, 195, 213);
   text-decoration-color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
+}
+
+html body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(34, 33, 44);
 }`,
     callouts: `html body .callout[data-callout="question"] {
   --callout-color: 224, 222, 113;
@@ -862,21 +1206,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   color: rgb(213, 214, 215);
   font-family: "??", "??", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(213, 214, 215);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(110, 107, 126);
-  font-family: "??", "??", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(110, 107, 126);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(54, 56, 68);
-  border-bottom-color: rgb(248, 248, 242);
-  border-left-color: rgb(248, 248, 242);
-  border-right-color: rgb(248, 248, 242);
-  border-top-color: rgb(248, 248, 242);
-  color: rgb(248, 248, 242);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(110, 107, 126);

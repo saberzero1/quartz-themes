@@ -605,17 +605,6 @@ html body ::-webkit-scrollbar-thumb {
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
 }`,
-    explorer: `html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(187, 187, 187);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(187, 187, 187);
-  border-right-color: rgb(187, 187, 187);
-  border-top-color: rgb(187, 187, 187);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(187, 187, 187);
-}`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;

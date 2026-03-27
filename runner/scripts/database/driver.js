@@ -441,10 +441,42 @@ function preloadLookupTables() {
   return { selectorIds, propertyIds };
 }
 
+function getCheckboxIconStyles(themeName, optionSetName, isDarkMode) {
+  const themeId = getThemeId(themeName);
+  const optionSetId = getOptionSetId(themeId, optionSetName);
+
+  if (themeId === null || optionSetId === null) {
+    return new Map();
+  }
+
+  const query = `
+    SELECT s.selector_text, p.property_name, sv.value
+    FROM style_values sv
+    JOIN selectors s ON sv.selector_id = s.id
+    JOIN properties p ON sv.property_id = p.id
+    WHERE sv.theme_id = ?
+      AND sv.option_set_id = ?
+      AND sv.is_dark_mode = ?
+      AND s.selector_text LIKE 'input[data-task=%'
+  `;
+
+  const stmt = db.prepare(query);
+  const results = stmt.all(themeId, optionSetId, isDarkMode ? 1 : 0);
+
+  const styleMap = new Map();
+  for (const row of results) {
+    const key = `${row.selector_text}::${row.property_name}`;
+    styleMap.set(key, row.value);
+  }
+
+  return styleMap;
+}
+
 export {
   closeDb,
   getAllStylesForThemeMode,
   getAllVariables,
+  getCheckboxIconStyles,
   getStyle,
   initializeDb,
   preloadLookupTables,

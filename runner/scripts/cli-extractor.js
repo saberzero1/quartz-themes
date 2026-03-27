@@ -73,6 +73,7 @@ const STYLE_PROPERTIES = [
   "appearance",
   "background",
   "background-color",
+  "backdrop-filter",
   "background-image",
   "border",
   "border-bottom",
@@ -127,6 +128,14 @@ const STYLE_PROPERTIES = [
   "outline-style",
   "outline-width",
   "overflow-x",
+  "animation-name",
+  "animation-duration",
+  "animation-timing-function",
+  "animation-delay",
+  "animation-iteration-count",
+  "animation-direction",
+  "animation-fill-mode",
+  "animation-play-state",
   "padding",
   "padding-bottom",
   "padding-left",
@@ -155,6 +164,12 @@ const STYLE_PROPERTIES = [
   "-webkit-mask-position",
   "-webkit-mask-repeat",
   "-webkit-mask-size",
+  "-webkit-backdrop-filter",
+  "-webkit-text-stroke",
+  "-webkit-text-stroke-width",
+  "-webkit-text-stroke-color",
+  "-webkit-text-fill-color",
+  "-webkit-background-clip",
 ];
 
 class ObsidianCLI {
@@ -575,10 +590,14 @@ function generateFullExtractionScript(selectors) {
         try {
           const pseudoStyle = window.getComputedStyle(el, pseudo);
           const content = pseudoStyle.getPropertyValue("content");
-          if (!content || content === "none" || content === "normal") continue;
+          const maskImage = pseudoStyle.getPropertyValue("-webkit-mask-image")
+            || pseudoStyle.getPropertyValue("mask-image");
+          const hasContent = content && content !== "none" && content !== "normal";
+          const hasMask = maskImage && maskImage !== "none";
+          if (!hasContent && !hasMask) continue;
 
           const extracted = { ...getAllCssVars(pseudoStyle, baseline), ...getStandardProps(pseudoStyle) };
-          extracted["content"] = content.trim();
+          if (hasContent) extracted["content"] = content.trim();
 
           if (Object.keys(extracted).length > 0) {
             const pseudoKey = selector + pseudo;
@@ -634,6 +653,59 @@ function generateFullExtractionScript(selectors) {
       } catch (e) {
         // Invalid selector, skip
       }
+    }
+
+    const taskItems = document.querySelectorAll("li.task-list-item[data-task]");
+    const seenTasks = new Set();
+    for (const li of taskItems) {
+      const task = li.getAttribute("data-task");
+      if (!task || seenTasks.has(task)) continue;
+      seenTasks.add(task);
+
+      const input = li.querySelector('input[type="checkbox"]');
+      if (!input) continue;
+
+      const inputSelector = 'input[data-task="' + task + '"]';
+      const inputStyle = window.getComputedStyle(input);
+      const inputMask = inputStyle.getPropertyValue("-webkit-mask-image")
+        || inputStyle.getPropertyValue("mask-image");
+      if (inputMask && inputMask !== "none") {
+        if (!results[inputSelector]) results[inputSelector] = {};
+        results[inputSelector]["-webkit-mask-image"] = inputMask;
+      }
+
+      const afterStyle = window.getComputedStyle(input, "::after");
+      const afterMask = afterStyle.getPropertyValue("-webkit-mask-image")
+        || afterStyle.getPropertyValue("mask-image");
+      const afterContent = afterStyle.getPropertyValue("content");
+      const afterColor = afterStyle.getPropertyValue("color");
+      const afterBgColor = afterStyle.getPropertyValue("background-color");
+
+      const hasMask = afterMask && afterMask !== "none";
+      const hasContent = afterContent && afterContent !== "none"
+        && afterContent !== '""' && afterContent !== "normal";
+
+      if (hasMask || hasContent) {
+        const afterSelector = inputSelector + "::after";
+        if (!results[afterSelector]) results[afterSelector] = {};
+        if (hasMask) results[afterSelector]["-webkit-mask-image"] = afterMask;
+        if (hasContent) results[afterSelector]["content"] = afterContent;
+        if (afterColor) results[afterSelector]["color"] = afterColor;
+        if (afterBgColor && afterBgColor !== "rgba(0, 0, 0, 0)")
+          results[afterSelector]["background-color"] = afterBgColor;
+      }
+    }
+
+    const resultCount = Object.keys(results).length;
+    const minExpected = Math.max(30, Math.floor(selectors.length * 0.1));
+    if (resultCount < minExpected) {
+      console.warn(
+        "Warning: Low extraction count (" +
+          resultCount +
+          ") vs expected minimum (" +
+          minExpected +
+          "). Theme or vault may not have loaded correctly.",
+      );
     }
 
     fs.writeFileSync(

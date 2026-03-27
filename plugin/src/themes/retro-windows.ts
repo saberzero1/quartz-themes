@@ -663,19 +663,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: rgb(169, 146, 208);
   font-weight: 700;
   text-decoration: rgb(169, 146, 208);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(176, 176, 176);
-  text-decoration: rgb(176, 176, 176);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(224, 224, 224);
-  border-left-color: rgb(224, 224, 224);
-  border-right-color: rgb(224, 224, 224);
-  border-top-color: rgb(224, 224, 224);
-  color: rgb(224, 224, 224);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
   font-weight: 700;
@@ -1549,19 +1536,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(132, 112, 166);
   font-weight: 700;
   text-decoration: rgb(132, 112, 166);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(51, 51, 51);
-  text-decoration: rgb(51, 51, 51);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
   font-weight: 700;

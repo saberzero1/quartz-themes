@@ -9,7 +9,7 @@ export const theme: ThemeData = {
   --accent-s: 57% !important;
   --auger-light-background-primary: #fbfbfa !important;
   --auger-light-text-normal: #3a3633 !important;
-  --background-modifier-active-hover: rgba(115, 217, 208, 0.1) !important;
+  --background-modifier-active-hover: hsla(175, 57%, 65%, 0.1) !important;
   --background-modifier-border: #3a3a3c !important;
   --background-modifier-border-focus: oklch(36.51% 0.0043 67.5809) !important;
   --background-modifier-border-hover: oklch(32.14% 0.0037 84.5916) !important;
@@ -34,19 +34,18 @@ export const theme: ThemeData = {
   --bases-table-border-color: #3a3a3c !important;
   --bases-table-cell-background-active: oklch(22.28% 0.0025 67.5819) !important;
   --bases-table-cell-background-disabled: oklch(22.28% 0.0025 67.5819) !important;
-  --bases-table-cell-background-selected: rgba(115, 217, 208, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(175, 57%, 65%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(36.51% 0.0043 67.5809) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(0, 0, 0) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(175 57% 65%) !important;
   --bases-table-group-background: oklch(22.28% 0.0025 67.5819) !important;
   --bases-table-header-background: oklch(22.28% 0.0025 67.5819) !important;
   --bases-table-header-background-hover: #3a3a3c !important;
   --bases-table-header-color: oklch(84.63% 0.0136 102.1557) !important;
   --bases-table-summary-background: oklch(22.28% 0.0025 67.5819) !important;
   --bases-table-summary-background-hover: #3a3a3c !important;
-  --blockquote-border-color: rgb(0, 0, 0) !important;
+  --blockquote-border-color: hsl(175 57% 65%) !important;
   --blur-background: color-mix(in srgb, oklch(27.34% 0.0023 67.5746) 65%, transparent) linear-gradient(oklch(27.34% 0.0023 67.5746), color-mix(in srgb, oklch(27.34% 0.0023 67.5746) 65%, transparent)) !important;
   --bold-color: oklch(59.71% 0.1691 28.3687) !important;
-  --bold-weight: 600 !important;
   --callout-bug: 209, 77, 65;
   --callout-default: 67, 133, 190;
   --callout-error: 209, 77, 65;
@@ -58,7 +57,6 @@ export const theme: ThemeData = {
   --callout-success: 135, 154, 57;
   --callout-summary: 58, 169, 159;
   --callout-tip: 58, 169, 159;
-  --callout-title-weight: 600;
   --callout-todo: 67, 133, 190;
   --callout-warning: 218, 112, 44;
   --canvas-background: oklch(22.28% 0.0025 67.5819) !important;
@@ -73,8 +71,8 @@ export const theme: ThemeData = {
   --caret-color: oklch(0.9901 0.0161 95.22) !important;
   --checkbox-border-color: oklch(45.31% 0.0049 91.5721) !important;
   --checkbox-border-color-hover: oklch(84.63% 0.0136 102.1557) !important;
-  --checkbox-color: rgb(0, 0, 0) !important;
-  --checkbox-color-hover: rgb(154, 228, 218) !important;
+  --checkbox-color: hsl(175 57% 65%) !important;
+  --checkbox-color-hover: hsl(172, 58.14%, 74.75%) !important;
   --checkbox-marker-color: oklch(22.28% 0.0025 67.5819) !important;
   --checklist-done-color: oklch(84.63% 0.0136 102.1557) !important;
   --code-background: oklch(22.28% 0.0025 67.5819) !important;
@@ -92,10 +90,10 @@ export const theme: ThemeData = {
   --code-tag: oklch(59.71% 0.1691 28.3687) !important;
   --code-value: oklch(63.48% 0.1099 290.9867) !important;
   --collapse-icon-color: oklch(45.31% 0.0049 91.5721) !important;
-  --collapse-icon-color-collapsed: rgb(0, 0, 0) !important;
-  --color-accent: rgb(115, 217, 208) !important;
-  --color-accent-1: rgb(154, 228, 218) !important;
-  --color-accent-2: rgb(190, 239, 231) !important;
+  --collapse-icon-color-collapsed: hsl(175 57% 65%) !important;
+  --color-accent: hsl(175, 57%, 65%) !important;
+  --color-accent-1: hsl(172, 58.14%, 74.75%) !important;
+  --color-accent-2: hsl(170, 59.85%, 83.85%) !important;
   --color-accent-hsl: 175, 57%, 65% !important;
   --color-base-00: oklch(16.96% 0.0017 16.8596) !important;
   --color-base-05: oklch(16.96% 0.0017 16.8596) !important;
@@ -138,12 +136,12 @@ export const theme: ThemeData = {
   --default-transition-duration: 150ms !important;
   --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   --divider-color: #3a3a3c !important;
-  --divider-color-hover: rgb(0, 0, 0) !important;
+  --divider-color-hover: hsl(175 57% 65%) !important;
   --dropdown-background: oklch(27.34% 0.0023 67.5746) !important;
   --dropdown-background-hover: oklch(32.14% 0.0037 84.5916) !important;
   --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1) !important;
   --embed-block-shadow-hover: 0 0 0 1px #3a3a3c, inset 0 0 0 1px #3a3a3c !important;
-  --embed-border-start: 2px solid rgb(0, 0, 0) !important;
+  --embed-border-start: 2px solid hsl(175 57% 65%) !important;
   --file-header-background: oklch(22.28% 0.0025 67.5819) !important;
   --file-header-background-focused: oklch(22.28% 0.0025 67.5819) !important;
   --flair-background: oklch(27.34% 0.0023 67.5746) !important;
@@ -158,26 +156,25 @@ export const theme: ThemeData = {
   --graph-line: oklch(32.14% 0.0037 84.5916) !important;
   --graph-node: oklch(84.63% 0.0136 102.1557) !important;
   --graph-node-attachment: oklch(73.46% 0.1461 87.4626) !important;
-  --graph-node-focused: rgb(0, 0, 0) !important;
+  --graph-node-focused: hsl(175 57% 65%) !important;
   --graph-node-tag: oklch(65.13% 0.1241 119.4018) !important;
   --graph-node-unresolved: oklch(45.31% 0.0049 91.5721) !important;
   --graph-text: oklch(0.9901 0.0161 95.22) !important;
   --gray: oklch(84.63% 0.0136 102.1557) !important;
   --header-height: 60px !important;
   --heading-formatting: oklch(45.31% 0.0049 91.5721) !important;
-  --heading-spacing: 2.5rem !important;
-  --highlight: rgb(0, 0, 0) !important;
+  --highlight: hsl(175 57% 65% / 0.2) !important;
   --hr-color: #3a3a3c !important;
   --icon-color: oklch(84.63% 0.0136 102.1557) !important;
-  --icon-color-active: rgb(0, 0, 0) !important;
+  --icon-color-active: hsl(175 57% 65%) !important;
   --icon-color-focused: oklch(0.9901 0.0161 95.22) !important;
   --icon-color-hover: oklch(84.63% 0.0136 102.1557) !important;
   --inline-title-size: 3rem !important;
   --inline-title-weight: 400 !important;
   --input-date-separator: oklch(45.31% 0.0049 91.5721) !important;
   --input-placeholder-color: oklch(45.31% 0.0049 91.5721) !important;
-  --interactive-accent: rgb(0, 0, 0) !important;
-  --interactive-accent-hover: rgb(154, 228, 218) !important;
+  --interactive-accent: hsl(175 57% 65%) !important;
+  --interactive-accent-hover: hsl(172, 58.14%, 74.75%) !important;
   --interactive-accent-hsl: 175, 57%, 65% !important;
   --interactive-hover: oklch(32.14% 0.0037 84.5916) !important;
   --interactive-normal: oklch(27.34% 0.0023 67.5746) !important;
@@ -185,24 +182,22 @@ export const theme: ThemeData = {
   --leading-relaxed: 1.625 !important;
   --light: oklch(22.28% 0.0025 67.5819) !important;
   --lightgray: oklch(27.34% 0.0023 67.5746) !important;
-  --link-color: rgb(0, 0, 0) !important;
-  --link-color-hover: rgb(0, 0, 0) !important;
+  --link-color: hsl(175 57% 65%) !important;
+  --link-color-hover: hsl(175 57% 75%) !important;
   --link-decoration: none !important;
-  --link-external-color: rgb(0, 0, 0) !important;
-  --link-external-color-hover: rgb(0, 0, 0) !important;
+  --link-external-color: hsl(175 57% 65%) !important;
+  --link-external-color-hover: hsl(175 57% 75%) !important;
   --link-external-decoration: none !important;
-  --link-unresolved-color: rgb(0, 0, 0) !important;
-  --link-unresolved-decoration-color: rgba(115, 217, 208, 0.3) !important;
-  --list-indent: 2.25em !important;
+  --link-unresolved-color: hsl(175 57% 65%) !important;
+  --link-unresolved-decoration-color: hsla(175, 57%, 65%, 0.3) !important;
   --list-marker-color: oklch(45.31% 0.0049 91.5721) !important;
-  --list-marker-color-collapsed: rgb(0, 0, 0) !important;
+  --list-marker-color-collapsed: hsl(175 57% 65%) !important;
   --list-marker-color-hover: oklch(84.63% 0.0136 102.1557) !important;
   --menu-background: oklch(27.34% 0.0023 67.5746) !important;
   --menu-border-color: oklch(32.14% 0.0037 84.5916) !important;
   --metadata-border-color: #3a3a3c !important;
   --metadata-divider-color: #3a3a3c !important;
   --metadata-input-background-active: #3a3a3c !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: oklch(0.9901 0.0161 95.22) !important;
   --metadata-label-background-active: #3a3a3c !important;
   --metadata-label-text-color: oklch(84.63% 0.0136 102.1557) !important;
@@ -220,10 +215,10 @@ export const theme: ThemeData = {
   --nav-heading-color-hover: oklch(0.9901 0.0161 95.22) !important;
   --nav-item-background-active: #3a3a3c !important;
   --nav-item-background-hover: #3a3a3c !important;
-  --nav-item-background-selected: rgba(115, 217, 208, 0.15) !important;
+  --nav-item-background-selected: hsla(175, 57%, 65%, 0.15) !important;
   --nav-item-color: oklch(84.63% 0.0136 102.1557) !important;
   --nav-item-color-active: oklch(0.9901 0.0161 95.22) !important;
-  --nav-item-color-highlighted: rgb(0, 0, 0) !important;
+  --nav-item-color-highlighted: hsl(175 57% 65%) !important;
   --nav-item-color-hover: oklch(0.9901 0.0161 95.22) !important;
   --nav-item-color-selected: oklch(0.9901 0.0161 95.22) !important;
   --nav-tag-color: oklch(45.31% 0.0049 91.5721) !important;
@@ -239,7 +234,7 @@ export const theme: ThemeData = {
   --pill-color: oklch(84.63% 0.0136 102.1557) !important;
   --pill-color-hover: oklch(0.9901 0.0161 95.22) !important;
   --pill-color-remove: oklch(45.31% 0.0049 91.5721) !important;
-  --pill-color-remove-hover: rgb(0, 0, 0) !important;
+  --pill-color-remove-hover: hsl(175 57% 65%) !important;
   --prompt-background: oklch(22.28% 0.0025 67.5819) !important;
   --prompt-border-color: oklch(36.51% 0.0043 67.5809) !important;
   --radius-md: 0.375rem !important;
@@ -250,11 +245,10 @@ export const theme: ThemeData = {
   --search-clear-button-color: oklch(84.63% 0.0136 102.1557) !important;
   --search-icon-color: oklch(84.63% 0.0136 102.1557) !important;
   --search-result-background: oklch(22.28% 0.0025 67.5819) !important;
-  --secondary: rgb(0, 0, 0) !important;
+  --secondary: hsl(175 57% 65%) !important;
   --setting-group-heading-color: oklch(0.9901 0.0161 95.22) !important;
   --setting-items-background: oklch(22.28% 0.0025 67.5819) !important;
   --setting-items-border-color: #3a3a3c !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: oklch(32.14% 0.0037 84.5916) !important;
   --slider-track-background: #3a3a3c !important;
   --spacing: 0.25rem !important;
@@ -270,60 +264,59 @@ export const theme: ThemeData = {
   --sync-avatar-color-6: oklch(59.88% 0.1105 247.0083) !important;
   --sync-avatar-color-7: oklch(63.48% 0.1099 290.9867) !important;
   --sync-avatar-color-8: oklch(63.48% 0.1565 350.4570) !important;
-  --tab-background-active: rgb(0, 0, 0) !important;
-  --tab-background-active-focused: rgb(0, 0, 0) !important;
-  --tab-background-focused-active: rgb(0, 0, 0) !important;
+  --tab-background-active: hsl(175 57% 65%) !important;
+  --tab-background-active-focused: hsl(175 57% 65%) !important;
+  --tab-background-focused-active: hsl(175 57% 65%) !important;
   --tab-container-background: oklch(27.34% 0.0023 67.5746) !important;
   --tab-divider-color: oklch(32.14% 0.0037 84.5916) !important;
   --tab-outline-color: #3a3a3c !important;
   --tab-stacked-header-width: 60px !important;
   --tab-switcher-background: oklch(27.34% 0.0023 67.5746) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, oklch(27.34% 0.0023 67.5746), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(115, 217, 208) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(175, 57%, 65%) !important;
   --tab-text-color: oklch(0.9901 0.0161 95.22) !important;
-  --tab-text-color-active: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
-  --tab-text-color-active-focused: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --tab-text-color-active: oklch(from hsl(175 57% 65%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --tab-text-color-active-focused: oklch(from hsl(175 57% 65%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
   --tab-text-color-focused: oklch(0.9901 0.0161 95.22) !important;
-  --tab-text-color-focused-active: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
-  --tab-text-color-focused-active-current: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --tab-text-color-focused-active: oklch(from hsl(175 57% 65%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --tab-text-color-focused-active-current: oklch(from hsl(175 57% 65%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
   --tab-text-color-focused-highlighted: oklch(0.9901 0.0161 95.22) !important;
   --table-add-button-border-color: #3a3a3c !important;
   --table-border-color: #3a3a3c !important;
-  --table-drag-handle-background-active: rgb(0, 0, 0) !important;
+  --table-drag-handle-background-active: hsl(175 57% 65%) !important;
   --table-drag-handle-color: oklch(45.31% 0.0049 91.5721) !important;
-  --table-drag-handle-color-active: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --table-drag-handle-color-active: oklch(from hsl(175 57% 65%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
   --table-header-background: oklch(32.14% 0.0037 84.5916) !important;
   --table-header-border-color: #3a3a3c !important;
   --table-header-color: oklch(0.9901 0.0161 95.22) !important;
-  --table-header-weight: 600 !important;
-  --table-selection: rgba(115, 217, 208, 0.1) !important;
-  --table-selection-border-color: rgb(0, 0, 0) !important;
-  --tag-background: rgba(115, 217, 208, 0.1) !important;
-  --tag-background-hover: rgba(115, 217, 208, 0.2) !important;
-  --tag-border-color: rgba(115, 217, 208, 0.15) !important;
-  --tag-border-color-hover: rgba(115, 217, 208, 0.15) !important;
-  --tag-color: rgb(0, 0, 0) !important;
-  --tag-color-hover: rgb(0, 0, 0) !important;
-  --tertiary: rgb(0, 0, 0) !important;
+  --table-selection: hsla(175, 57%, 65%, 0.1) !important;
+  --table-selection-border-color: hsl(175 57% 65%) !important;
+  --tag-background: hsla(175, 57%, 65%, 0.1) !important;
+  --tag-background-hover: hsla(175, 57%, 65%, 0.2) !important;
+  --tag-border-color: hsla(175, 57%, 65%, 0.15) !important;
+  --tag-border-color-hover: hsla(175, 57%, 65%, 0.15) !important;
+  --tag-color: hsl(175 57% 65%) !important;
+  --tag-color-hover: hsl(175 57% 65%) !important;
+  --tertiary: hsl(175 57% 75%) !important;
   --text-2xl: 2.25rem !important;
   --text-2xl--line-height: 1.33333 !important;
   --text-3xl: 3rem !important;
   --text-3xl--line-height: 1.2 !important;
   --text-4xl: 3.75rem !important;
   --text-4xl--line-height: 1.11111 !important;
-  --text-accent: rgb(0, 0, 0) !important;
-  --text-accent-hover: rgb(0, 0, 0) !important;
+  --text-accent: hsl(175 57% 65%) !important;
+  --text-accent-hover: hsl(175 57% 75%) !important;
   --text-base: 1.2rem !important;
   --text-base--line-height: 1.5 !important;
   --text-error: oklch(59.71% 0.1691 28.3687) !important;
   --text-faint: oklch(45.31% 0.0049 91.5721) !important;
-  --text-highlight-bg: rgb(0, 0, 0) !important;
+  --text-highlight-bg: hsl(175 57% 65% / 0.2) !important;
   --text-lg: 1.4rem !important;
   --text-lg--line-height: 1.55556 !important;
   --text-muted: oklch(84.63% 0.0136 102.1557) !important;
   --text-normal: oklch(0.9901 0.0161 95.22) !important;
-  --text-on-accent: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
-  --text-selection: rgba(115, 217, 208, 0.33) !important;
+  --text-on-accent: oklch(from hsl(175 57% 65%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --text-selection: hsl(175 57% 65% / 0.45) !important;
   --text-sm: 1rem !important;
   --text-sm--line-height: 1.42857 !important;
   --text-success: oklch(65.13% 0.1241 119.4018) !important;
@@ -332,7 +325,7 @@ export const theme: ThemeData = {
   --text-xl--line-height: 1.4 !important;
   --text-xs: 0.75rem !important;
   --text-xs--line-height: 1.33333 !important;
-  --textHighlight: rgb(0, 0, 0) !important;
+  --textHighlight: hsl(175 57% 65% / 0.2) !important;
   --titlebar-background: oklch(27.34% 0.0023 67.5746) !important;
   --titlebar-background-focused: oklch(32.14% 0.0037 84.5916) !important;
   --titlebar-border-color: #3a3a3c !important;
@@ -345,7 +338,6 @@ export const theme: ThemeData = {
   --tw-shadow: 0 0 #0000 !important;
   --vault-profile-color: oklch(0.9901 0.0161 95.22) !important;
   --vault-profile-color-hover: oklch(0.9901 0.0161 95.22) !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -855,6 +847,436 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: oklch(0.9901 0.0161 95.22);
   text-decoration: oklch(0.9901 0.0161 95.22);
   text-decoration-color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.8463 0.0136 102.156);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.8463 0.0136 102.156);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: oklch(0.2228 0.0025 67.5819);
+  color: oklch(0.9901 0.0161 95.22);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(67, 133, 190);
@@ -1236,29 +1658,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: oklch(0.9901 0.0161 95.22);
   font-family: "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: oklch(0.9901 0.0161 95.22);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: oklch(0.9901 0.0161 95.22);
-  font-family: "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: oklch(0.9901 0.0161 95.22);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(115, 217, 208);
-  border-bottom-color: oklch(0.15 0 0);
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-style: solid;
-  border-left-color: oklch(0.15 0 0);
-  border-left-style: solid;
-  border-right-color: oklch(0.15 0 0);
-  border-right-style: solid;
-  border-top-color: oklch(0.15 0 0);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-top-style: solid;
-  color: oklch(0.15 0 0);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: oklch(0.8463 0.0136 102.156);
@@ -1487,7 +1886,7 @@ html[saved-theme="dark"] body sup {
   --accent-s: 57% !important;
   --auger-light-background-primary: #fbfbfa !important;
   --auger-light-text-normal: #3a3633 !important;
-  --background-modifier-active-hover: rgba(36, 132, 124, 0.1) !important;
+  --background-modifier-active-hover: hsla(175, 57%, 33%, 0.1) !important;
   --background-modifier-border: #e5e4e3 !important;
   --background-modifier-border-focus: oklch(84.63% 0.0136 102.1557) !important;
   --background-modifier-border-hover: oklch(88.10% 0.0136 97.5453) !important;
@@ -1510,28 +1909,26 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: #e5e4e3 !important;
   --bases-table-cell-background-active: #fbfbfa !important;
   --bases-table-cell-background-disabled: #f7f7f6 !important;
-  --bases-table-cell-background-selected: rgba(36, 132, 124, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(175, 57%, 33%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(84.63% 0.0136 102.1557) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(0, 0, 0) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(175 57% 33%) !important;
   --bases-table-group-background: #f7f7f6 !important;
   --bases-table-header-background: #fbfbfa !important;
   --bases-table-header-background-hover: #e0e0de !important;
   --bases-table-header-color: #8a8785 !important;
   --bases-table-summary-background: #fbfbfa !important;
   --bases-table-summary-background-hover: #e0e0de !important;
-  --blockquote-border-color: rgb(0, 0, 0) !important;
+  --blockquote-border-color: hsl(175 57% 33%) !important;
   --blur-background: color-mix(in srgb, #fbfbfa 65%, transparent) linear-gradient(#fbfbfa, color-mix(in srgb, #fbfbfa 65%, transparent)) !important;
   --bold-color: #FF3B30 !important;
-  --bold-weight: 600 !important;
-  --callout-title-weight: 600;
   --canvas-background: #fbfbfa !important;
   --canvas-card-label-color: oklch(77.21% 0.0127 96.5429) !important;
   --canvas-dot-pattern: oklch(91.74% 0.0148 98.3812) !important;
   --caret-color: #3a3633 !important;
   --checkbox-border-color: oklch(77.21% 0.0127 96.5429) !important;
   --checkbox-border-color-hover: #8a8785 !important;
-  --checkbox-color: rgb(0, 0, 0) !important;
-  --checkbox-color-hover: rgb(41, 153, 138) !important;
+  --checkbox-color: hsl(175 57% 33%) !important;
+  --checkbox-color-hover: hsl(172, 58.14%, 37.95%) !important;
   --checkbox-marker-color: #fbfbfa !important;
   --checklist-done-color: #8a8785 !important;
   --code-background: #f7f7f6 !important;
@@ -1549,10 +1946,10 @@ html[saved-theme="dark"] body sup {
   --code-tag: oklch(50.43% 0.1648 27.8298) !important;
   --code-value: oklch(45.40% 0.1451 294.8244) !important;
   --collapse-icon-color: oklch(77.21% 0.0127 96.5429) !important;
-  --collapse-icon-color-collapsed: rgb(0, 0, 0) !important;
-  --color-accent: rgb(36, 132, 124) !important;
-  --color-accent-1: rgb(37, 141, 131) !important;
-  --color-accent-2: rgb(41, 153, 138) !important;
+  --collapse-icon-color-collapsed: hsl(175 57% 33%) !important;
+  --color-accent: hsl(175, 57%, 33%) !important;
+  --color-accent-1: hsl(174, 57.57%, 35.475%) !important;
+  --color-accent-2: hsl(172, 58.14%, 37.95%) !important;
   --color-accent-hsl: 175, 57%, 33% !important;
   --color-base-00: oklch(99.01% 0.0160 95.2865) !important;
   --color-base-05: oklch(99.01% 0.0160 95.2865) !important;
@@ -1597,12 +1994,12 @@ html[saved-theme="dark"] body sup {
   --default-transition-duration: 150ms !important;
   --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   --divider-color: #e5e4e3 !important;
-  --divider-color-hover: rgb(0, 0, 0) !important;
+  --divider-color-hover: hsl(175 57% 33%) !important;
   --dropdown-background: oklch(99.01% 0.0160 95.2865) !important;
   --dropdown-background-hover: oklch(95.37% 0.0147 98.3751) !important;
   --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1) !important;
   --embed-block-shadow-hover: 0 0 0 1px #e5e4e3, inset 0 0 0 1px #e5e4e3 !important;
-  --embed-border-start: 2px solid rgb(0, 0, 0) !important;
+  --embed-border-start: 2px solid hsl(175 57% 33%) !important;
   --file-header-background: #fbfbfa !important;
   --file-header-background-focused: #fbfbfa !important;
   --flair-background: oklch(99.01% 0.0160 95.2865) !important;
@@ -1617,26 +2014,25 @@ html[saved-theme="dark"] body sup {
   --graph-line: oklch(88.10% 0.0136 97.5453) !important;
   --graph-node: #8a8785 !important;
   --graph-node-attachment: oklch(63.33% 0.1294 85.8140) !important;
-  --graph-node-focused: rgb(0, 0, 0) !important;
+  --graph-node-focused: hsl(175 57% 33%) !important;
   --graph-node-tag: oklch(55.93% 0.1335 122.9402) !important;
   --graph-node-unresolved: oklch(77.21% 0.0127 96.5429) !important;
   --graph-text: #3a3633 !important;
   --gray: #8a8785 !important;
   --header-height: 60px !important;
   --heading-formatting: oklch(77.21% 0.0127 96.5429) !important;
-  --heading-spacing: 2.5rem !important;
-  --highlight: rgb(0, 0, 0) !important;
+  --highlight: hsl(175 57% 33% / 0.15) !important;
   --hr-color: #e5e4e3 !important;
   --icon-color: #8a8785 !important;
-  --icon-color-active: rgb(0, 0, 0) !important;
+  --icon-color-active: hsl(175 57% 33%) !important;
   --icon-color-focused: #3a3633 !important;
   --icon-color-hover: #8a8785 !important;
   --inline-title-size: 3rem !important;
   --inline-title-weight: 400 !important;
   --input-date-separator: oklch(77.21% 0.0127 96.5429) !important;
   --input-placeholder-color: oklch(77.21% 0.0127 96.5429) !important;
-  --interactive-accent: rgb(0, 0, 0) !important;
-  --interactive-accent-hover: rgb(41, 153, 138) !important;
+  --interactive-accent: hsl(175 57% 33%) !important;
+  --interactive-accent-hover: hsl(172, 58.14%, 37.95%) !important;
   --interactive-accent-hsl: 175, 57%, 33% !important;
   --interactive-hover: oklch(95.37% 0.0147 98.3751) !important;
   --interactive-normal: oklch(99.01% 0.0160 95.2865) !important;
@@ -1644,24 +2040,22 @@ html[saved-theme="dark"] body sup {
   --leading-relaxed: 1.625 !important;
   --light: #fbfbfa !important;
   --lightgray: #f4f4f3 !important;
-  --link-color: rgb(0, 0, 0) !important;
-  --link-color-hover: rgb(0, 0, 0) !important;
+  --link-color: hsl(175 57% 33%) !important;
+  --link-color-hover: hsl(175 57% 43%) !important;
   --link-decoration: none !important;
-  --link-external-color: rgb(0, 0, 0) !important;
-  --link-external-color-hover: rgb(0, 0, 0) !important;
+  --link-external-color: hsl(175 57% 33%) !important;
+  --link-external-color-hover: hsl(175 57% 43%) !important;
   --link-external-decoration: none !important;
-  --link-unresolved-color: rgb(0, 0, 0) !important;
-  --link-unresolved-decoration-color: rgba(36, 132, 124, 0.3) !important;
-  --list-indent: 2.25em !important;
+  --link-unresolved-color: hsl(175 57% 33%) !important;
+  --link-unresolved-decoration-color: hsla(175, 57%, 33%, 0.3) !important;
   --list-marker-color: oklch(77.21% 0.0127 96.5429) !important;
-  --list-marker-color-collapsed: rgb(0, 0, 0) !important;
+  --list-marker-color-collapsed: hsl(175 57% 33%) !important;
   --list-marker-color-hover: #8a8785 !important;
   --menu-background: #f4f4f3 !important;
   --menu-border-color: oklch(88.10% 0.0136 97.5453) !important;
   --metadata-border-color: #e5e4e3 !important;
   --metadata-divider-color: #e5e4e3 !important;
   --metadata-input-background-active: #e0e0de !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #3a3633 !important;
   --metadata-label-background-active: #e0e0de !important;
   --metadata-label-text-color: #8a8785 !important;
@@ -1679,10 +2073,10 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-hover: #3a3633 !important;
   --nav-item-background-active: #e0e0de !important;
   --nav-item-background-hover: #e0e0de !important;
-  --nav-item-background-selected: rgba(36, 132, 124, 0.15) !important;
+  --nav-item-background-selected: hsla(175, 57%, 33%, 0.15) !important;
   --nav-item-color: #8a8785 !important;
   --nav-item-color-active: #3a3633 !important;
-  --nav-item-color-highlighted: rgb(0, 0, 0) !important;
+  --nav-item-color-highlighted: hsl(175 57% 33%) !important;
   --nav-item-color-hover: #3a3633 !important;
   --nav-item-color-selected: #3a3633 !important;
   --nav-tag-color: oklch(77.21% 0.0127 96.5429) !important;
@@ -1696,7 +2090,7 @@ html[saved-theme="dark"] body sup {
   --pill-color: #8a8785 !important;
   --pill-color-hover: #3a3633 !important;
   --pill-color-remove: oklch(77.21% 0.0127 96.5429) !important;
-  --pill-color-remove-hover: rgb(0, 0, 0) !important;
+  --pill-color-remove-hover: hsl(175 57% 33%) !important;
   --prompt-background: #fbfbfa !important;
   --prompt-border-color: oklch(84.63% 0.0136 102.1557) !important;
   --radius-md: 0.375rem !important;
@@ -1707,11 +2101,10 @@ html[saved-theme="dark"] body sup {
   --search-clear-button-color: #8a8785 !important;
   --search-icon-color: #8a8785 !important;
   --search-result-background: #fbfbfa !important;
-  --secondary: rgb(0, 0, 0) !important;
+  --secondary: hsl(175 57% 33%) !important;
   --setting-group-heading-color: #3a3633 !important;
   --setting-items-background: #f7f7f6 !important;
   --setting-items-border-color: #e5e4e3 !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: oklch(88.10% 0.0136 97.5453) !important;
   --slider-track-background: #e5e4e3 !important;
   --spacing: 0.25rem !important;
@@ -1727,58 +2120,57 @@ html[saved-theme="dark"] body sup {
   --sync-avatar-color-6: oklch(48.18% 0.1315 254.7968) !important;
   --sync-avatar-color-7: oklch(45.40% 0.1451 294.8244) !important;
   --sync-avatar-color-8: oklch(49.54% 0.1614 349.7445) !important;
-  --tab-background-active: rgb(0, 0, 0) !important;
-  --tab-background-focused-active: rgb(0, 0, 0) !important;
+  --tab-background-active: hsl(175 57% 33%) !important;
+  --tab-background-focused-active: hsl(175 57% 33%) !important;
   --tab-container-background: #f4f4f3 !important;
   --tab-divider-color: oklch(88.10% 0.0136 97.5453) !important;
   --tab-outline-color: #e5e4e3 !important;
   --tab-stacked-header-width: 60px !important;
   --tab-switcher-background: #f4f4f3 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #f4f4f3, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(36, 132, 124) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(175, 57%, 33%) !important;
   --tab-text-color: oklch(77.21% 0.0127 96.5429) !important;
-  --tab-text-color-active: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --tab-text-color-active: oklch(from hsl(175 57% 33%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
   --tab-text-color-focused: #8a8785 !important;
-  --tab-text-color-focused-active: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --tab-text-color-focused-active: oklch(from hsl(175 57% 33%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
   --tab-text-color-focused-active-current: #3a3633 !important;
-  --tab-text-color-focused-highlighted: rgb(0, 0, 0) !important;
+  --tab-text-color-focused-highlighted: hsl(175 57% 33%) !important;
   --table-add-button-border-color: #e5e4e3 !important;
   --table-border-color: #e5e4e3 !important;
-  --table-drag-handle-background-active: rgb(0, 0, 0) !important;
+  --table-drag-handle-background-active: hsl(175 57% 33%) !important;
   --table-drag-handle-color: oklch(77.21% 0.0127 96.5429) !important;
-  --table-drag-handle-color-active: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --table-drag-handle-color-active: oklch(from hsl(175 57% 33%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
   --table-header-background: #efefed !important;
   --table-header-border-color: #e5e4e3 !important;
   --table-header-color: #3a3633 !important;
-  --table-header-weight: 600 !important;
-  --table-selection: rgba(36, 132, 124, 0.1) !important;
-  --table-selection-border-color: rgb(0, 0, 0) !important;
-  --tag-background: rgba(36, 132, 124, 0.1) !important;
-  --tag-background-hover: rgba(36, 132, 124, 0.2) !important;
-  --tag-border-color: rgba(36, 132, 124, 0.15) !important;
-  --tag-border-color-hover: rgba(36, 132, 124, 0.15) !important;
-  --tag-color: rgb(0, 0, 0) !important;
-  --tag-color-hover: rgb(0, 0, 0) !important;
-  --tertiary: rgb(0, 0, 0) !important;
+  --table-selection: hsla(175, 57%, 33%, 0.1) !important;
+  --table-selection-border-color: hsl(175 57% 33%) !important;
+  --tag-background: hsla(175, 57%, 33%, 0.1) !important;
+  --tag-background-hover: hsla(175, 57%, 33%, 0.2) !important;
+  --tag-border-color: hsla(175, 57%, 33%, 0.15) !important;
+  --tag-border-color-hover: hsla(175, 57%, 33%, 0.15) !important;
+  --tag-color: hsl(175 57% 33%) !important;
+  --tag-color-hover: hsl(175 57% 33%) !important;
+  --tertiary: hsl(175 57% 43%) !important;
   --text-2xl: 2.25rem !important;
   --text-2xl--line-height: 1.33333 !important;
   --text-3xl: 3rem !important;
   --text-3xl--line-height: 1.2 !important;
   --text-4xl: 3.75rem !important;
   --text-4xl--line-height: 1.11111 !important;
-  --text-accent: rgb(0, 0, 0) !important;
-  --text-accent-hover: rgb(0, 0, 0) !important;
+  --text-accent: hsl(175 57% 33%) !important;
+  --text-accent-hover: hsl(175 57% 43%) !important;
   --text-base: 1.2rem !important;
   --text-base--line-height: 1.5 !important;
   --text-error: oklch(50.43% 0.1648 27.8298) !important;
   --text-faint: oklch(77.21% 0.0127 96.5429) !important;
-  --text-highlight-bg: rgb(0, 0, 0) !important;
+  --text-highlight-bg: hsl(175 57% 33% / 0.15) !important;
   --text-lg: 1.4rem !important;
   --text-lg--line-height: 1.55556 !important;
   --text-muted: #8a8785 !important;
   --text-normal: #3a3633 !important;
-  --text-on-accent: oklch(from rgb(0, 0, 0) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
-  --text-selection: rgba(36, 132, 124, 0.2) !important;
+  --text-on-accent: oklch(from hsl(175 57% 33%) clamp(0.15, (0.5 - l) * 100, 0.98) 0 0) !important;
+  --text-selection: hsl(175 57% 33% / 0.35) !important;
   --text-sm: 1rem !important;
   --text-sm--line-height: 1.42857 !important;
   --text-success: oklch(55.93% 0.1335 122.9402) !important;
@@ -1787,7 +2179,7 @@ html[saved-theme="dark"] body sup {
   --text-xl--line-height: 1.4 !important;
   --text-xs: 0.75rem !important;
   --text-xs--line-height: 1.33333 !important;
-  --textHighlight: rgb(0, 0, 0) !important;
+  --textHighlight: hsl(175 57% 33% / 0.15) !important;
   --titlebar-background: #f4f4f3 !important;
   --titlebar-background-focused: #efefed !important;
   --titlebar-border-color: #e5e4e3 !important;
@@ -1800,7 +2192,6 @@ html[saved-theme="dark"] body sup {
   --tw-shadow: 0 0 #0000 !important;
   --vault-profile-color: #3a3633 !important;
   --vault-profile-color-hover: #3a3633 !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2310,6 +2701,436 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(58, 54, 51);
   text-decoration: rgb(58, 54, 51);
   text-decoration-color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(138, 135, 133);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(138, 135, 133);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(251, 251, 250);
+  color: rgb(58, 54, 51);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-style: solid;
@@ -2674,29 +3495,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(58, 54, 51);
   font-family: "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(58, 54, 51);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(58, 54, 51);
-  font-family: "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(58, 54, 51);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(36, 132, 124);
-  border-bottom-color: oklch(0.15 0 0);
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-style: solid;
-  border-left-color: oklch(0.15 0 0);
-  border-left-style: solid;
-  border-right-color: oklch(0.15 0 0);
-  border-right-style: solid;
-  border-top-color: oklch(0.15 0 0);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-top-style: solid;
-  color: oklch(0.15 0 0);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(138, 135, 133);

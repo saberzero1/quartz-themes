@@ -7,6 +7,18 @@
 }
 
 :root:root {
+  --bases-embed-border-color: hsl(249, 33%, 8%) !important;
+  --bases-table-border-color: hsl(249, 33%, 8%) !important;
+  --bases-table-header-background: hsl(250, 23%, 5%) !important;
+  --bases-table-header-background-hover: hsla(15, 64%, 88%, 0.5) !important;
+  --focus-ring-color: #0df !important;
+  --tab-container-background: hsl(249, 33%, 8%) !important;
+  --table-border-color: hsl(249, 33%, 8%) !important;
+  --text-accent: hsl(15, 64%, 80%) !important;
+  --text-faint: hsl(250, 23%, 43%) !important;
+  --text-normal: hsl(250, 23%, 95%) !important;
+  --titlebar-background: hsl(249, 33%, 8%) !important;
+  --input-height: 30px !important;
   --accent-h: 15 !important;
   --accent-l: 88% !important;
   --accent-s: 64% !important;
@@ -19,41 +31,40 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(244, 215, 205, 0.1) !important;
-  --background-modifier-border: rgb(16, 14, 27) !important;
-  --background-modifier-border-focus: rgb(16, 14, 27) !important;
-  --background-modifier-border-hover: rgb(43, 39, 63) !important;
+  --background-modifier-active-hover: hsla(15, 64%, 88%, 0.1) !important;
+  --background-modifier-border: hsl(249, 33%, 8%) !important;
+  --background-modifier-border-focus: hsl(249, 33%, 8%) !important;
+  --background-modifier-border-hover: hsl(250, 23%, 20%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: rgb(16, 14, 27) !important;
-  --background-modifier-form-field-hover: rgb(16, 14, 27) !important;
-  --background-modifier-hover: rgba(244, 215, 205, 0.5) !important;
+  --background-modifier-form-field: hsl(249, 33%, 8%) !important;
+  --background-modifier-form-field-hover: hsl(249, 33%, 8%) !important;
+  --background-modifier-hover: hsla(15, 64%, 88%, 0.5) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #44cf6e !important;
   --background-modifier-success-rgb: 68, 207, 110 !important;
-  --background-primary: rgb(11, 10, 16) !important;
-  --background-primary-alt: rgb(22, 20, 31) !important;
-  --background-secondary: rgb(16, 14, 27) !important;
-  --background-secondary-alt: rgb(16, 14, 27) !important;
-  --bases-cards-background: rgb(11, 10, 16) !important;
+  --background-primary: hsl(250, 23%, 5%) !important;
+  --background-primary-alt: hsl(250, 23%, 10%) !important;
+  --background-secondary: hsl(249, 33%, 8%) !important;
+  --background-secondary-alt: hsl(249, 33%, 8%) !important;
+  --bases-cards-background: hsl(250, 23%, 5%) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: rgb(22, 20, 31) !important;
+  --bases-cards-cover-background: hsl(250, 23%, 10%) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
-  --bases-cards-shadow: 0 0 0 1px rgb(16, 14, 27) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px rgb(43, 39, 63) !important;
-  --bases-embed-border-color: rgb(16, 14, 27) !important;
+  --bases-cards-shadow: 0 0 0 1px hsl(249, 33%, 8%) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px hsl(250, 23%, 20%) !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: rgb(190, 186, 212) !important;
+  --bases-group-heading-property-color: hsl(250, 23%, 78%) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -63,25 +74,22 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: rgb(16, 14, 27) !important;
-  --bases-table-cell-background-active: rgb(11, 10, 16) !important;
-  --bases-table-cell-background-disabled: rgb(22, 20, 31) !important;
-  --bases-table-cell-background-selected: rgba(244, 215, 205, 0.1) !important;
+  --bases-table-cell-background-active: hsl(250, 23%, 5%) !important;
+  --bases-table-cell-background-disabled: hsl(250, 23%, 10%) !important;
+  --bases-table-cell-background-selected: hsla(15, 64%, 88%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(16, 14, 27) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(244, 215, 205) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(249, 33%, 8%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(15, 64%, 88%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: 0.875em !important;
-  --bases-table-group-background: rgb(22, 20, 31) !important;
+  --bases-table-group-background: hsl(250, 23%, 10%) !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: rgb(11, 10, 16) !important;
-  --bases-table-header-background-hover: rgba(244, 215, 205, 0.5) !important;
-  --bases-table-header-color: rgb(190, 186, 212) !important;
+  --bases-table-header-color: hsl(250, 23%, 78%) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -92,18 +100,18 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: rgb(11, 10, 16) !important;
-  --bases-table-summary-background-hover: rgba(244, 215, 205, 0.5) !important;
+  --bases-table-summary-background: hsl(250, 23%, 5%) !important;
+  --bases-table-summary-background-hover: hsla(15, 64%, 88%, 0.5) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: rgb(244, 215, 205) !important;
+  --blockquote-border-color: hsl(15, 64%, 88%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, rgb(16, 14, 27) 65%, transparent)
+  --blur-background: color-mix(in srgb, hsl(249, 33%, 8%) 65%, transparent)
     linear-gradient(
-      rgb(16, 14, 27),
-      color-mix(in srgb, rgb(16, 14, 27) 65%, transparent)
+      hsl(249, 33%, 8%),
+      color-mix(in srgb, hsl(249, 33%, 8%) 65%, transparent)
     ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
@@ -143,8 +151,8 @@
   --callout-title-weight: 600;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
-  --canvas-background: rgb(11, 10, 16) !important;
-  --canvas-card-label-color: rgb(93, 84, 135) !important;
+  --canvas-background: hsl(250, 23%, 5%) !important;
+  --canvas-card-label-color: hsl(250, 23%, 43%) !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 251, 70, 76 !important;
   --canvas-color-2: 233, 151, 63 !important;
@@ -155,55 +163,55 @@
   --canvas-controls-icon-size: 16px !important;
   --canvas-controls-icon-stroke: 2px !important;
   --canvas-controls-radius: 4px !important;
-  --canvas-dot-pattern: rgb(16, 14, 27) !important;
-  --caret-color: rgb(240, 239, 245) !important;
-  --checkbox-border-color: rgb(93, 84, 135) !important;
-  --checkbox-border-color-hover: rgb(190, 186, 212) !important;
-  --checkbox-color: rgb(244, 215, 205) !important;
-  --checkbox-color-hover: rgb(240, 201, 188) !important;
+  --canvas-dot-pattern: hsl(249, 33%, 8%) !important;
+  --caret-color: hsl(250, 23%, 95%) !important;
+  --checkbox-border-color: hsl(250, 23%, 43%) !important;
+  --checkbox-border-color-hover: hsl(250, 23%, 78%) !important;
+  --checkbox-color: hsl(15, 64%, 88%) !important;
+  --checkbox-color-hover: hsl(15, 64%, 84.2%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
-  --checkbox-marker-color: rgb(11, 10, 16) !important;
+  --checkbox-marker-color: hsl(250, 23%, 5%) !important;
   --checkbox-radius: 30% !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: rgb(190, 186, 212) !important;
+  --checklist-done-color: hsl(250, 23%, 78%) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 4px !important;
-  --code-background: rgb(22, 20, 31) !important;
-  --code-border-color: rgb(16, 14, 27) !important;
+  --code-background: hsl(250, 23%, 10%) !important;
+  --code-border-color: hsl(249, 33%, 8%) !important;
   --code-border-width: 0px !important;
-  --code-bracket-background: rgba(244, 215, 205, 0.5) !important;
-  --code-comment: rgb(93, 84, 135) !important;
+  --code-bracket-background: hsla(15, 64%, 88%, 0.5) !important;
+  --code-comment: hsl(250, 23%, 43%) !important;
   --code-function: #e0de71 !important;
   --code-important: #e9973f !important;
   --code-keyword: #fa99cd !important;
-  --code-normal: rgb(240, 239, 245) !important;
+  --code-normal: hsl(250, 23%, 95%) !important;
   --code-operator: #fb464c !important;
   --code-property: #53dfdd !important;
-  --code-punctuation: rgb(190, 186, 212) !important;
+  --code-punctuation: hsl(250, 23%, 78%) !important;
   --code-radius: 4px !important;
   --code-size: 0.875em !important;
   --code-string: #44cf6e !important;
   --code-tag: #fb464c !important;
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
-  --collapse-icon-color: rgb(93, 84, 135) !important;
-  --collapse-icon-color-collapsed: rgb(237, 188, 171) !important;
-  --color-accent: rgb(244, 215, 205) !important;
-  --color-accent-1: rgb(240, 201, 188) !important;
-  --color-accent-2: rgb(248, 228, 222) !important;
+  --collapse-icon-color: hsl(250, 23%, 43%) !important;
+  --collapse-icon-color-collapsed: hsl(15, 64%, 80%) !important;
+  --color-accent: hsl(15, 64%, 88%) !important;
+  --color-accent-1: hsl(15, 64%, 84.2%) !important;
+  --color-accent-2: hsl(15, 64%, 91.8%) !important;
   --color-accent-hsl: 15, 64%, 88% !important;
-  --color-base-00: rgb(11, 10, 16) !important;
+  --color-base-00: hsl(250, 23%, 5%) !important;
   --color-base-05: #212121 !important;
-  --color-base-10: rgb(22, 20, 31) !important;
-  --color-base-100: rgb(240, 239, 245) !important;
-  --color-base-20: rgb(16, 14, 27) !important;
-  --color-base-25: rgb(16, 14, 27) !important;
-  --color-base-30: rgb(16, 14, 27) !important;
-  --color-base-35: rgb(43, 39, 63) !important;
-  --color-base-40: rgb(16, 14, 27) !important;
-  --color-base-50: rgb(123, 114, 167) !important;
-  --color-base-60: rgb(152, 145, 186) !important;
-  --color-base-70: rgb(226, 224, 235) !important;
+  --color-base-10: hsl(250, 23%, 10%) !important;
+  --color-base-100: hsl(250, 23%, 95%) !important;
+  --color-base-20: hsl(249, 33%, 8%) !important;
+  --color-base-25: hsl(249, 33%, 8%) !important;
+  --color-base-30: hsl(249, 33%, 8%) !important;
+  --color-base-35: hsl(250, 23%, 20%) !important;
+  --color-base-40: hsl(249, 33%, 8%) !important;
+  --color-base-50: hsl(250, 23%, 55%) !important;
+  --color-base-60: hsl(250, 23%, 65%) !important;
+  --color-base-70: hsl(250, 23%, 90%) !important;
   --color-blue: #027aff !important;
   --color-blue-rgb: 2, 122, 255 !important;
   --color-cyan: #53dfdd !important;
@@ -227,16 +235,16 @@
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: rgb(16, 14, 27) !important;
-  --divider-color-hover: rgb(244, 215, 205) !important;
+  --divider-color: hsl(249, 33%, 8%) !important;
+  --divider-color-hover: hsl(15, 64%, 88%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: rgb(16, 14, 27) !important;
+  --dropdown-background: hsl(249, 33%, 8%) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: rgb(43, 39, 63) !important;
+  --dropdown-background-hover: hsl(250, 23%, 20%) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
@@ -245,17 +253,17 @@
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
   --embed-block-shadow-hover:
-    0 0 0 1px rgb(16, 14, 27), inset 0 0 0 1px rgb(16, 14, 27) !important;
+    0 0 0 1px hsl(249, 33%, 8%), inset 0 0 0 1px hsl(249, 33%, 8%) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid rgb(244, 215, 205) !important;
+  --embed-border-start: 2px solid hsl(15, 64%, 88%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 24px !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: rgb(11, 10, 16) !important;
-  --file-header-background-focused: rgb(11, 10, 16) !important;
+  --file-header-background: hsl(250, 23%, 5%) !important;
+  --file-header-background-focused: hsl(250, 23%, 5%) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font:
     "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
@@ -270,9 +278,8 @@
   --file-margins: 32px 32px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
-  --flair-background: rgb(16, 14, 27) !important;
-  --flair-color: rgb(240, 239, 245) !important;
-  --focus-ring-color: #0df !important;
+  --flair-background: hsl(249, 33%, 8%) !important;
+  --flair-color: hsl(250, 23%, 95%) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -334,15 +341,15 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: rgb(16, 14, 27) !important;
+  --footnote-divider-color: hsl(249, 33%, 8%) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
-  --footnote-id-color: rgb(190, 186, 212) !important;
-  --footnote-id-color-no-occurrences: rgb(93, 84, 135) !important;
+  --footnote-id-color: hsl(250, 23%, 78%) !important;
+  --footnote-id-color-no-occurrences: hsl(250, 23%, 43%) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: rgba(244, 215, 205, 0.5) !important;
+  --footnote-input-background-active: hsla(15, 64%, 88%, 0.5) !important;
   --footnote-line-height: 1.5 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -351,13 +358,13 @@
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: rgb(43, 39, 63) !important;
-  --graph-node: rgb(190, 186, 212) !important;
+  --graph-line: hsl(250, 23%, 20%) !important;
+  --graph-node: hsl(250, 23%, 78%) !important;
   --graph-node-attachment: #e0de71 !important;
-  --graph-node-focused: rgb(237, 188, 171) !important;
-  --graph-node-tag: rgb(114, 182, 156) !important;
-  --graph-node-unresolved: rgb(93, 84, 135) !important;
-  --graph-text: rgb(240, 239, 245) !important;
+  --graph-node-focused: hsl(15, 64%, 80%) !important;
+  --graph-node-tag: hsl(157, 32%, 58%) !important;
+  --graph-node-unresolved: hsl(250, 23%, 43%) !important;
+  --graph-text: hsl(250, 23%, 95%) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -395,15 +402,15 @@
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
-  --heading-formatting: rgb(93, 84, 135) !important;
+  --heading-formatting: hsl(250, 23%, 43%) !important;
   --heading-spacing: 2.5rem !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: rgb(16, 14, 27) !important;
+  --hr-color: hsl(249, 33%, 8%) !important;
   --hr-thickness: 2px !important;
-  --icon-color: rgb(190, 186, 212) !important;
-  --icon-color-active: rgb(237, 188, 171) !important;
-  --icon-color-focused: rgb(244, 215, 205) !important;
-  --icon-color-hover: rgb(190, 186, 212) !important;
+  --icon-color: hsl(250, 23%, 78%) !important;
+  --icon-color-active: hsl(15, 64%, 80%) !important;
+  --icon-color-focused: hsl(15, 64%, 88%) !important;
+  --icon-color-hover: hsl(250, 23%, 78%) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -437,12 +444,11 @@
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
-  --input-date-separator: rgb(93, 84, 135) !important;
+  --input-date-separator: hsl(250, 23%, 43%) !important;
   --input-font-weight: 400 !important;
-  --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
-  --input-placeholder-color: rgb(93, 84, 135) !important;
+  --input-placeholder-color: hsl(250, 23%, 43%) !important;
   --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -454,11 +460,11 @@
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(244, 215, 205) !important;
-  --interactive-accent-hover: rgb(240, 201, 188) !important;
+  --interactive-accent: hsl(15, 64%, 88%) !important;
+  --interactive-accent-hover: hsl(15, 64%, 84.2%) !important;
   --interactive-accent-hsl: 15, 64%, 88% !important;
-  --interactive-hover: rgb(43, 39, 63) !important;
-  --interactive-normal: rgb(16, 14, 27) !important;
+  --interactive-hover: hsl(250, 23%, 20%) !important;
+  --interactive-normal: hsl(249, 33%, 8%) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -472,18 +478,18 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: rgb(237, 188, 171) !important;
-  --link-color-hover: rgb(248, 228, 222) !important;
+  --link-color: hsl(15, 64%, 80%) !important;
+  --link-color-hover: hsl(15, 64%, 92%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: rgb(237, 188, 171) !important;
-  --link-external-color-hover: rgb(248, 228, 222) !important;
+  --link-external-color: hsl(15, 64%, 80%) !important;
+  --link-external-color-hover: hsl(15, 64%, 92%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: rgb(237, 188, 171) !important;
-  --link-unresolved-decoration-color: rgba(244, 215, 205, 0.3) !important;
+  --link-unresolved-color: hsl(15, 64%, 80%) !important;
+  --link-unresolved-decoration-color: hsla(15, 64%, 88%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -496,15 +502,15 @@
   --list-indent: 2.25em !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
-  --list-marker-color: rgb(93, 84, 135) !important;
-  --list-marker-color-collapsed: rgb(237, 188, 171) !important;
-  --list-marker-color-hover: rgb(190, 186, 212) !important;
+  --list-marker-color: hsl(250, 23%, 43%) !important;
+  --list-marker-color-collapsed: hsl(15, 64%, 80%) !important;
+  --list-marker-color-hover: hsl(250, 23%, 78%) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: rgb(16, 14, 27) !important;
-  --menu-border-color: rgb(43, 39, 63) !important;
+  --menu-background: hsl(249, 33%, 8%) !important;
+  --menu-border-color: hsl(250, 23%, 20%) !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
@@ -518,18 +524,18 @@
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: rgb(16, 14, 27) !important;
+  --metadata-border-color: hsl(249, 33%, 8%) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: rgb(16, 14, 27) !important;
+  --metadata-divider-color: hsl(249, 33%, 8%) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: rgba(244, 215, 205, 0.5) !important;
+  --metadata-input-background-active: hsla(15, 64%, 88%, 0.5) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font:
     "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
@@ -541,9 +547,9 @@
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: 4px 8px !important;
-  --metadata-input-text-color: rgb(240, 239, 245) !important;
+  --metadata-input-text-color: hsl(250, 23%, 95%) !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: rgba(244, 215, 205, 0.5) !important;
+  --metadata-label-background-active: hsla(15, 64%, 88%, 0.5) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font:
     "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
@@ -552,16 +558,16 @@
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
-  --metadata-label-text-color: rgb(190, 186, 212) !important;
-  --metadata-label-text-color-hover: rgb(190, 186, 212) !important;
+  --metadata-label-text-color: hsl(250, 23%, 78%) !important;
+  --metadata-label-text-color-hover: hsl(250, 23%, 78%) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: rgba(244, 215, 205, 0.5) !important;
+  --metadata-property-background-active: hsla(15, 64%, 88%, 0.5) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(16, 14, 27) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(43, 39, 63) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(249, 33%, 8%) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px hsl(250, 23%, 20%) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
   --metadata-property-corner-shape-hover: round !important;
@@ -571,8 +577,8 @@
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
-  --modal-background: rgb(11, 10, 16) !important;
-  --modal-border-color: rgb(16, 14, 27) !important;
+  --modal-background: hsl(250, 23%, 5%) !important;
+  --modal-border-color: hsl(249, 33%, 8%) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
@@ -585,26 +591,26 @@
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
-  --nav-collapse-icon-color: rgb(93, 84, 135) !important;
-  --nav-collapse-icon-color-collapsed: rgb(93, 84, 135) !important;
-  --nav-heading-color: rgb(240, 239, 245) !important;
-  --nav-heading-color-collapsed: rgb(93, 84, 135) !important;
-  --nav-heading-color-collapsed-hover: rgb(190, 186, 212) !important;
-  --nav-heading-color-hover: rgb(240, 239, 245) !important;
+  --nav-collapse-icon-color: hsl(250, 23%, 43%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(250, 23%, 43%) !important;
+  --nav-heading-color: hsl(250, 23%, 95%) !important;
+  --nav-heading-color-collapsed: hsl(250, 23%, 43%) !important;
+  --nav-heading-color-collapsed-hover: hsl(250, 23%, 78%) !important;
+  --nav-heading-color-hover: hsl(250, 23%, 95%) !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: rgba(244, 215, 205, 0.5) !important;
-  --nav-item-background-hover: rgba(244, 215, 205, 0.5) !important;
-  --nav-item-background-selected: rgba(244, 215, 205, 0.15) !important;
+  --nav-item-background-active: hsla(15, 64%, 88%, 0.5) !important;
+  --nav-item-background-hover: hsla(15, 64%, 88%, 0.5) !important;
+  --nav-item-background-selected: hsla(15, 64%, 88%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
-  --nav-item-color: rgb(190, 186, 212) !important;
-  --nav-item-color-active: rgb(240, 239, 245) !important;
-  --nav-item-color-highlighted: rgb(237, 188, 171) !important;
-  --nav-item-color-hover: rgb(240, 239, 245) !important;
-  --nav-item-color-selected: rgb(240, 239, 245) !important;
+  --nav-item-color: hsl(250, 23%, 78%) !important;
+  --nav-item-color-active: hsl(250, 23%, 95%) !important;
+  --nav-item-color-highlighted: hsl(15, 64%, 80%) !important;
+  --nav-item-color-hover: hsl(250, 23%, 95%) !important;
+  --nav-item-color-selected: hsl(250, 23%, 95%) !important;
   --nav-item-margin-bottom: 2px !important;
   --nav-item-padding: 4px 8px 4px 24px !important;
   --nav-item-parent-padding: 4px 8px 4px 24px !important;
@@ -612,31 +618,31 @@
   --nav-item-size: 13px !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
-  --nav-tag-color: rgb(93, 84, 135) !important;
-  --nav-tag-color-active: rgb(190, 186, 212) !important;
-  --nav-tag-color-hover: rgb(190, 186, 212) !important;
+  --nav-tag-color: hsl(250, 23%, 43%) !important;
+  --nav-tag-color-active: hsl(250, 23%, 78%) !important;
+  --nav-tag-color-hover: hsl(250, 23%, 78%) !important;
   --nav-tag-radius: 4px !important;
   --nav-tag-weight: 600 !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
-  --pdf-background: rgb(11, 10, 16) !important;
-  --pdf-page-background: rgb(11, 10, 16) !important;
-  --pdf-shadow: 0 0 0 1px rgb(16, 14, 27) !important;
-  --pdf-sidebar-background: rgb(11, 10, 16) !important;
+  --pdf-background: hsl(250, 23%, 5%) !important;
+  --pdf-page-background: hsl(250, 23%, 5%) !important;
+  --pdf-shadow: 0 0 0 1px hsl(249, 33%, 8%) !important;
+  --pdf-sidebar-background: hsl(250, 23%, 5%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgb(16, 14, 27) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px hsl(249, 33%, 8%) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(16, 14, 27) !important;
-  --pill-border-color-hover: rgb(43, 39, 63) !important;
+  --pill-border-color: hsl(249, 33%, 8%) !important;
+  --pill-border-color-hover: hsl(250, 23%, 20%) !important;
   --pill-border-width: 1px !important;
-  --pill-color: rgb(190, 186, 212) !important;
-  --pill-color-hover: rgb(240, 239, 245) !important;
-  --pill-color-remove: rgb(93, 84, 135) !important;
-  --pill-color-remove-hover: rgb(237, 188, 171) !important;
+  --pill-color: hsl(250, 23%, 78%) !important;
+  --pill-color-hover: hsl(250, 23%, 95%) !important;
+  --pill-color-remove: hsl(250, 23%, 43%) !important;
+  --pill-color-remove-hover: hsl(15, 64%, 80%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -652,8 +658,8 @@
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: rgb(11, 10, 16) !important;
-  --prompt-border-color: rgb(16, 14, 27) !important;
+  --prompt-background: hsl(250, 23%, 5%) !important;
+  --prompt-border-color: hsl(249, 33%, 8%) !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
   --prompt-max-height: 70vh !important;
@@ -663,10 +669,10 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, rgb(16, 14, 27) 65%, transparent)
+  --raised-background: color-mix(in srgb, hsl(249, 33%, 8%) 65%, transparent)
     linear-gradient(
-      rgb(16, 14, 27),
-      color-mix(in srgb, rgb(16, 14, 27) 65%, transparent)
+      hsl(249, 33%, 8%),
+      color-mix(in srgb, hsl(249, 33%, 8%) 65%, transparent)
     ) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask:
@@ -676,31 +682,31 @@
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: rgb(16, 14, 27) !important;
-  --ribbon-background-collapsed: rgb(11, 10, 16) !important;
+  --ribbon-background: hsl(249, 33%, 8%) !important;
+  --ribbon-background-collapsed: hsl(250, 23%, 5%) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
   --safe-area-inset-left: 0px !important;
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
-  --scrollbar-active-thumb-bg: rgba(244, 215, 205, 0.4) !important;
-  --scrollbar-bg: rgb(43, 39, 63) !important;
+  --scrollbar-active-thumb-bg: hsla(15, 64%, 88%, 0.4) !important;
+  --scrollbar-bg: hsla(250, 23%, 20%, 1) !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: 10px !important;
-  --scrollbar-thumb-bg: rgb(43, 39, 63) !important;
+  --scrollbar-thumb-bg: hsla(250, 23%, 20%, 1) !important;
   --scrollbar-width: 12px !important;
-  --search-clear-button-color: rgb(190, 186, 212) !important;
+  --search-clear-button-color: hsl(250, 23%, 78%) !important;
   --search-clear-button-size: 13px !important;
-  --search-icon-color: rgb(190, 186, 212) !important;
+  --search-icon-color: hsl(250, 23%, 78%) !important;
   --search-icon-size: 18px !important;
-  --search-result-background: rgb(11, 10, 16) !important;
-  --setting-group-heading-color: rgb(240, 239, 245) !important;
+  --search-result-background: hsl(250, 23%, 5%) !important;
+  --setting-group-heading-color: hsl(250, 23%, 95%) !important;
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
-  --setting-items-background: rgb(22, 20, 31) !important;
-  --setting-items-border-color: rgb(16, 14, 27) !important;
+  --setting-items-background: hsl(250, 23%, 10%) !important;
+  --setting-items-border-color: hsl(249, 33%, 8%) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 10px !important;
@@ -733,24 +739,24 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: rgb(43, 39, 63) !important;
+  --slider-thumb-border-color: hsl(250, 23%, 20%) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 18px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: rgb(16, 14, 27) !important;
+  --slider-track-background: hsl(249, 33%, 8%) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: rgb(16, 14, 27) !important;
-  --status-bar-border-color: rgb(16, 14, 27) !important;
+  --status-bar-background: hsl(249, 33%, 8%) !important;
+  --status-bar-border-color: hsl(249, 33%, 8%) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 8px 0 0 0 !important;
-  --status-bar-text-color: rgb(190, 186, 212) !important;
+  --status-bar-text-color: hsl(250, 23%, 78%) !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: rgb(11, 10, 16) !important;
+  --suggestion-background: hsl(250, 23%, 5%) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
@@ -764,13 +770,12 @@
   --sync-avatar-color-7: #a882ff !important;
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: rgb(11, 10, 16) !important;
-  --tab-container-background: rgb(16, 14, 27) !important;
+  --tab-background-active: hsl(250, 23%, 5%) !important;
   --tab-curve: 6px !important;
-  --tab-divider-color: rgb(22, 20, 31) !important;
+  --tab-divider-color: hsl(250, 23%, 10%) !important;
   --tab-font-size: 13px !important;
   --tab-max-width: 320px !important;
-  --tab-outline-color: rgb(16, 14, 27) !important;
+  --tab-outline-color: hsl(249, 33%, 8%) !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 4px !important;
   --tab-radius-active: 6px 6px 0 0 !important;
@@ -782,28 +787,27 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: rgb(16, 14, 27) !important;
+  --tab-switcher-background: hsl(249, 33%, 8%) !important;
   --tab-switcher-menubar-background: linear-gradient(
     to top,
-    rgb(16, 14, 27),
+    hsl(249, 33%, 8%),
     transparent
   ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(244, 215, 205) !important;
-  --tab-text-color: rgb(226, 224, 235) !important;
-  --tab-text-color-active: rgb(190, 186, 212) !important;
-  --tab-text-color-focused: rgb(190, 186, 212) !important;
-  --tab-text-color-focused-active: rgb(190, 186, 212) !important;
-  --tab-text-color-focused-active-current: rgb(240, 239, 245) !important;
-  --tab-text-color-focused-highlighted: rgb(237, 188, 171) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(15, 64%, 88%) !important;
+  --tab-text-color: hsl(250, 23%, 90%) !important;
+  --tab-text-color-active: hsl(250, 23%, 78%) !important;
+  --tab-text-color-focused: hsl(250, 23%, 78%) !important;
+  --tab-text-color-focused-active: hsl(250, 23%, 78%) !important;
+  --tab-text-color-focused-active-current: hsl(250, 23%, 95%) !important;
+  --tab-text-color-focused-highlighted: hsl(15, 64%, 80%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: rgb(16, 14, 27) !important;
+  --table-add-button-border-color: hsl(249, 33%, 8%) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: rgb(16, 14, 27) !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -812,14 +816,14 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(244, 215, 205) !important;
-  --table-drag-handle-color: rgb(93, 84, 135) !important;
+  --table-drag-handle-background-active: hsl(15, 64%, 88%) !important;
+  --table-drag-handle-color: hsl(250, 23%, 43%) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: transparent !important;
-  --table-header-border-color: rgb(16, 14, 27) !important;
+  --table-header-border-color: hsl(249, 33%, 8%) !important;
   --table-header-border-width: 1px !important;
-  --table-header-color: rgb(240, 239, 245) !important;
+  --table-header-color: hsl(250, 23%, 95%) !important;
   --table-header-size: 16px !important;
   --table-header-weight: 600 !important;
   --table-line-height: 1.3 !important;
@@ -827,20 +831,20 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(244, 215, 205, 0.1) !important;
+  --table-selection: hsla(15, 64%, 88%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(244, 215, 205) !important;
+  --table-selection-border-color: hsl(15, 64%, 88%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
   --tag-background: #2c2537 !important;
-  --tag-background-hover: rgba(244, 215, 205, 0.2) !important;
-  --tag-border-color: rgba(244, 215, 205, 0.15) !important;
-  --tag-border-color-hover: rgba(244, 215, 205, 0.15) !important;
+  --tag-background-hover: hsla(15, 64%, 88%, 0.2) !important;
+  --tag-border-color: hsla(15, 64%, 88%, 0.15) !important;
+  --tag-border-color-hover: hsla(15, 64%, 88%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: #eeeeee !important;
-  --tag-color-hover: rgb(237, 188, 171) !important;
+  --tag-color-hover: hsl(15, 64%, 80%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -848,26 +852,22 @@
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(237, 188, 171) !important;
-  --text-accent-hover: rgb(248, 228, 222) !important;
+  --text-accent-hover: hsl(15, 64%, 92%) !important;
   --text-error: #fb464c !important;
-  --text-faint: rgb(93, 84, 135) !important;
   --text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: rgb(190, 186, 212) !important;
-  --text-normal: rgb(240, 239, 245) !important;
+  --text-muted: hsl(250, 23%, 78%) !important;
   --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: rgba(244, 215, 205, 0.25) !important;
+  --text-selection: hsla(15, 64%, 88%, 0.25) !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
-  --titlebar-background: rgb(16, 14, 27) !important;
-  --titlebar-background-focused: rgb(16, 14, 27) !important;
-  --titlebar-border-color: rgb(16, 14, 27) !important;
+  --titlebar-background-focused: hsl(249, 33%, 8%) !important;
+  --titlebar-border-color: hsl(249, 33%, 8%) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
-  --titlebar-text-color: rgb(190, 186, 212) !important;
-  --titlebar-text-color-focused: rgb(240, 239, 245) !important;
+  --titlebar-text-color: hsl(250, 23%, 78%) !important;
+  --titlebar-text-color-focused: hsl(250, 23%, 95%) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -895,8 +895,8 @@
   --traffic-lights-offset-x: 40px !important;
   --traffic-lights-offset-y: 40px !important;
   --vault-profile-actions-display: flex !important;
-  --vault-profile-color: rgb(240, 239, 245) !important;
-  --vault-profile-color-hover: rgb(240, 239, 245) !important;
+  --vault-profile-color: hsl(250, 23%, 95%) !important;
+  --vault-profile-color-hover: hsl(250, 23%, 95%) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: 13px !important;
   --vault-profile-font-weight: 500 !important;
@@ -921,12 +921,12 @@
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --accent-d: 80% !important;
   --ap-aqua: #a8e5e6 !important;
-  --ap-base0: rgb(11, 10, 16) !important;
+  --ap-base0: hsl(250, 23%, 5%) !important;
   --ap-base0-d: 13% !important;
   --ap-base0-h: 250 !important;
   --ap-base0-l: 5% !important;
   --ap-base0-s: 23% !important;
-  --ap-base1: rgb(16, 14, 27) !important;
+  --ap-base1: hsl(249, 33%, 8%) !important;
   --ap-base1-d: 10% !important;
   --ap-base1-h: 249 !important;
   --ap-base1-l: 8% !important;
@@ -941,18 +941,18 @@
   --ap-code-purple: #dfa7e7 !important;
   --ap-code-red: #e97193 !important;
   --ap-code-yellow: #ece0a8 !important;
-  --ap-color-dp0: rgb(16, 14, 27) !important;
-  --ap-color-dp1: rgb(11, 10, 16) !important;
-  --ap-color-dp10: rgb(226, 224, 235) !important;
-  --ap-color-dp11: rgb(240, 239, 245) !important;
-  --ap-color-dp2: rgb(22, 20, 31) !important;
-  --ap-color-dp3: rgb(32, 29, 47) !important;
-  --ap-color-dp4: rgb(43, 39, 63) !important;
-  --ap-color-dp5: rgb(97, 88, 141) !important;
-  --ap-color-dp6: rgb(123, 114, 167) !important;
-  --ap-color-dp7: rgb(152, 145, 186) !important;
-  --ap-color-dp8: rgb(181, 177, 206) !important;
-  --ap-color-dp9: rgb(211, 208, 226) !important;
+  --ap-color-dp0: hsl(249, 33%, 8%) !important;
+  --ap-color-dp1: hsl(250, 23%, 5%) !important;
+  --ap-color-dp10: hsl(250, 23%, 90%) !important;
+  --ap-color-dp11: hsl(250, 23%, 95%) !important;
+  --ap-color-dp2: hsl(250, 23%, 10%) !important;
+  --ap-color-dp3: hsl(250, 23%, 15%) !important;
+  --ap-color-dp4: hsl(250, 23%, 20%) !important;
+  --ap-color-dp5: hsl(250, 23%, 45%) !important;
+  --ap-color-dp6: hsl(250, 23%, 55%) !important;
+  --ap-color-dp7: hsl(250, 23%, 65%) !important;
+  --ap-color-dp8: hsl(250, 23%, 75%) !important;
+  --ap-color-dp9: hsl(250, 23%, 85%) !important;
   --ap-color-italic: #e97193 !important;
   --ap-color-quote: #e97193 !important;
   --ap-color-strong: #e97193 !important;
@@ -986,7 +986,7 @@
   --ap-h6: #ece0a8 !important;
   --ap-h6-size: 0.7953em !important;
   --ap-orange: #d1a999 !important;
-  --ap-primary: rgb(244, 215, 205) !important;
+  --ap-primary: hsl(15, 64%, 88%) !important;
   --ap-primary-d: 80% !important;
   --ap-primary-h: 15 !important;
   --ap-primary-l: 88% !important;
@@ -997,7 +997,7 @@
   --ap-radius-s: 4px !important;
   --ap-radius-xl: 16px !important;
   --ap-red: #e97193 !important;
-  --ap-secondary: rgb(114, 182, 156) !important;
+  --ap-secondary: hsl(157, 32%, 58%) !important;
   --ap-secondary-d: 70% !important;
   --ap-secondary-h: 157 !important;
   --ap-secondary-l: 58% !important;
@@ -1173,6 +1173,239 @@ html {
     U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cascadia Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Monaco";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Monaco"),
+    url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
 body {
   div#quartz-root {
     background-color: rgb(11, 10, 16);
@@ -1216,6 +1449,8 @@ body {
     color: rgb(237, 188, 171);
     cursor: pointer;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1244,7 +1479,16 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   a.internal,
@@ -1253,6 +1497,8 @@ body {
     color: rgb(237, 188, 171);
     cursor: pointer;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1281,7 +1527,16 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   a.internal.broken {
@@ -1289,6 +1544,8 @@ body {
     color: rgb(237, 188, 171);
     cursor: pointer;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1317,7 +1574,16 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   a.external:hover,
@@ -1342,6 +1608,8 @@ body {
     color: rgb(190, 186, 212);
     cursor: auto;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1370,7 +1638,16 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
+    transform: none;
     user-select: none;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .page article p > strong,
@@ -1379,6 +1656,8 @@ body {
     color: rgb(233, 113, 147);
     cursor: text;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1407,7 +1686,16 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .page article p > b,
@@ -1416,6 +1704,8 @@ body {
     color: rgb(233, 113, 147);
     cursor: text;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1444,7 +1734,16 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .page article p > em,
@@ -1453,6 +1752,8 @@ body {
     color: rgb(240, 239, 245);
     cursor: text;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1481,7 +1782,16 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .page article p > i,
@@ -1490,6 +1800,8 @@ body {
     color: rgb(240, 239, 245);
     cursor: text;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1518,7 +1830,16 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .text-highlight {
@@ -1526,6 +1847,8 @@ body {
     color: rgb(0, 0, 0);
     cursor: text;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1554,7 +1877,16 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
     border: 0px rgb(0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1571,6 +1903,8 @@ body {
     color: rgb(240, 239, 245);
     cursor: text;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -1599,7 +1933,16 @@ body {
     text-decoration-line: line-through;
     text-decoration-style: solid;
     transition: all;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .search
@@ -1977,6 +2320,8 @@ body {
     color: rgb(240, 239, 245);
     cursor: auto;
     filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
     font-family:
       -apple-system,
       BlinkMacSystemFont,
@@ -2005,7 +2350,16 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
+    transform: none;
     user-select: text;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
   }
 
   .search > .search-container > .search-space > .search-layout,
@@ -3164,16 +3518,9 @@ body {
   }
 
   .explorer .explorer-content ul.explorer-ul li a {
-    color: rgb(190, 186, 212);
-    cursor: default;
+    color: rgb(218, 218, 218);
+    cursor: auto;
     font-family:
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Inter,
-      Ubuntu,
-      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3188,22 +3535,22 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(190, 186, 212);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(244, 215, 205, 0.5);
-    border: 0px rgb(240, 239, 245);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: rgb(240, 239, 245);
-    cursor: default;
+    color: rgb(218, 218, 218);
+    cursor: auto;
     transition-behavior: normal;
     transition-delay: 0s;
     transition-duration: 0s;
@@ -3621,440 +3968,996 @@ body {
   }
 
   --current-page-slug: attr(data-slug raw-string);
+}
 
-  .search {
-    & > .search-button {
-      font-size: 1rem;
-      svg {
-        color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
-        stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
-      }
+li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="`"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(11, 10, 16);
+  color: rgb(255, 255, 255);
+  mask-image: url('data:image/svg+xml utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate%28-4.000000, -6.000000%29" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+.callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+.callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
+}
+.callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+.callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+}
+.callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+.callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+.callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+.callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+.callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+.callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+.callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+.callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+.callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+.search {
+  & > .search-button {
+    font-size: 1rem;
+    svg {
+      color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
+      stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
     }
-    & > .search-container {
-      & > .search-space {
-        margin: 12vh auto;
-        & > input {
-          margin-bottom: 0;
-          border-bottom: none;
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-          font-size: 1.1rem;
-          &:has(+ :not(.display-results)) {
-            border-radius: inherit;
-          }
+  }
+  & > .search-container {
+    & > .search-space {
+      margin: 12vh auto;
+      & > input {
+        margin-bottom: 0;
+        border-bottom: none;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        font-size: 1.1rem;
+        &:has(+ :not(.display-results)) {
+          border-radius: inherit;
         }
-        & > * {
-          background: transparent;
-          margin-bottom: 0;
-          box-shadow: none;
+      }
+      & > * {
+        background: transparent;
+        margin-bottom: 0;
+        box-shadow: none;
+      }
+      & > .search-layout {
+        &.display-results {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
         }
-        & > .search-layout {
-          &.display-results {
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-          }
-          & .highlight {
-            background-color: var(--quartz-text-highlight);
-          }
-          & > .results-container {
-            & .result-card {
-              @media all and not ($mobile) {
-                display: flex;
-                &.no-match {
-                  display: block;
-                }
+        & .highlight {
+          background-color: var(--quartz-text-highlight);
+        }
+        & > .results-container {
+          & .result-card {
+            @media all and not ($mobile) {
+              display: flex;
+              &.no-match {
+                display: block;
               }
-              &:has(~ .result-card:hover),
-              &:has(~ .result-card:focus),
-              &:has(~ .result-card.focus) {
-                background-color: unset;
-              }
-              & > ul > li > p {
-                background-color: transparent;
-              }
+            }
+            &:has(~ .result-card:hover),
+            &:has(~ .result-card:focus),
+            &:has(~ .result-card.focus) {
+              background-color: unset;
+            }
+            & > ul > li > p {
+              background-color: transparent;
             }
           }
         }
       }
     }
   }
+}
 
-  .explorer {
-    @media all and ($mobile) {
-      &:not(.collapsed) > .explorer-content {
-        -webkit-backdrop-filter: blur(8px);
-        backdrop-filter: blur(8px);
+.explorer {
+  @media all and ($mobile) {
+    &:not(.collapsed) > .explorer-content {
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+    }
+  }
+  .explorer-content {
+    .folder-container {
+      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
+      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+
+      text-overflow: ellipsis;
+      position: relative;
+
+      @media all and ($mobile) {
+        padding-inline-start: 0.5rem;
+        padding-inline-end: 0rem;
+        border-radius: 0.25rem;
+      }
+      & > svg {
+        opacity: 0.001;
+        position: absolute;
+      }
+      &:before {
+        width: 1rem;
+        height: 1rem;
+        min-width: 1rem;
+        min-height: 1rem;
+        display: flex;
+        align-self: baseline;
+        background: var(--quartz-icon-color);
+        content: "";
+        margin-inline-end: 0.5rem;
+        margin-block-start: 0.2rem;
+      }
+      & > div {
+        width: 100%;
+      }
+      &:hover {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        background-color: var(--nav-item-background-hover);
+        border-radius: 0.25rem;
       }
     }
-    .explorer-content {
-      .folder-container {
-        --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-        --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+    li:has(> .folder-outer:not(.open)) > .folder-container:before {
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
+      mask-image: var(--folder-closed-icon);
+      -webkit-mask-image: var(--folder-closed-icon);
+    }
+    li:has(> .folder-outer.open) > .folder-container:before {
+      background: var(--collapse-icon-color, var(--quartz-icon-color));
+      mask-image: var(--folder-open-icon);
+      -webkit-mask-image: var(--folder-open-icon);
+    }
+    ul.explorer-ul li {
+      text-overflow: ellipsis;
+      position: relative;
 
-        text-overflow: ellipsis;
-        position: relative;
+      a {
+        display: flex;
+        color: inherit;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: inherit;
 
-        @media all and ($mobile) {
-          padding-inline-start: 0.5rem;
-          padding-inline-end: 0rem;
-          border-radius: 0.25rem;
-        }
-        & > svg {
-          opacity: 0.001;
-          position: absolute;
-        }
-        &:before {
-          width: 1rem;
-          height: 1rem;
-          min-width: 1rem;
-          min-height: 1rem;
-          display: flex;
-          align-self: baseline;
-          background: var(--quartz-icon-color);
-          content: "";
-          margin-inline-end: 0.5rem;
-          margin-block-start: 0.2rem;
-        }
-        & > div {
-          width: 100%;
-        }
-        &:hover {
+        &.active,
+        &:not(.folder-title):hover {
           font-size: 1rem;
           line-height: 1.5rem;
           background-color: var(--nav-item-background-hover);
           border-radius: 0.25rem;
         }
-      }
-      li:has(> .folder-outer:not(.open)) > .folder-container:before {
-        background: var(
-          --collapse-icon-color-collapsed,
-          var(--quartz-icon-color)
-        );
-        mask-image: var(--folder-closed-icon);
-        -webkit-mask-image: var(--folder-closed-icon);
-      }
-      li:has(> .folder-outer.open) > .folder-container:before {
-        background: var(--collapse-icon-color, var(--quartz-icon-color));
-        mask-image: var(--folder-open-icon);
-        -webkit-mask-image: var(--folder-open-icon);
-      }
-      ul.explorer-ul li {
-        text-overflow: ellipsis;
-        position: relative;
+        &[data-for$="/index"] {
+          padding-inline-start: 0.5rem;
+          padding-inline-end: 0;
+        }
+        padding-inline-start: 0;
 
-        a {
-          display: flex;
-          color: inherit;
-          font-size: 1rem;
-          line-height: 1.5rem;
-          padding: inherit;
-
-          &.active,
-          &:not(.folder-title):hover {
-            font-size: 1rem;
-            line-height: 1.5rem;
-            background-color: var(--nav-item-background-hover);
-            border-radius: 0.25rem;
-          }
+        @media all and ($mobile) {
+          padding-inline-start: 0.5rem;
+          padding-inline-end: 0.5rem;
           &[data-for$="/index"] {
-            padding-inline-start: 0.5rem;
-            padding-inline-end: 0;
-          }
-          padding-inline-start: 0;
-
-          @media all and ($mobile) {
-            padding-inline-start: 0.5rem;
             padding-inline-end: 0.5rem;
-            &[data-for$="/index"] {
-              padding-inline-end: 0.5rem;
-            }
-          }
-        }
-        > a:before {
-          --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
-          width: 1rem;
-          height: 1rem;
-          min-width: 1rem;
-          min-height: 1rem;
-          content: "";
-          display: flex;
-          align-self: baseline;
-          background: var(--quartz-icon-color);
-          mask-image: var(--file-icon);
-          -webkit-mask-image: var(--file-icon);
-          margin-inline-end: 0.5rem;
-          margin-block-start: 0.2rem;
-        }
-      }
-    }
-  }
-
-  button.readermode {
-    & > svg {
-      display: none;
-    }
-
-    --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
-    background: var(--quartz-icon-color) !important;
-    mask-image: var(--readermode-icon);
-    -webkit-mask-image: var(--readermode-icon);
-    width: 24px;
-    height: 24px;
-  }
-
-  button.global-graph-icon {
-    & > svg {
-      display: none;
-    }
-
-    --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
-    background: var(--quartz-icon-color) !important;
-    mask-image: var(--graph-icon);
-    -webkit-mask-image: var(--graph-icon);
-    width: 24px;
-    height: 24px;
-  }
-
-  button.darkmode {
-    & > svg {
-      display: none !important;
-    }
-
-    --moon-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==");
-
-    --sun-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=");
-    background: var(--quartz-icon-color) !important;
-    width: 24px;
-    height: 24px;
-  }
-
-  .explorer svg,
-  button.toc-header .fold,
-  .global-graph-icon,
-  .readermode,
-  .darkmode {
-    color: var(--quartz-icon-color);
-    stroke: var(--quartz-icon-color);
-  }
-
-  @media all and not ($desktop) {
-    .page > div#quartz-body div.sidebar.right {
-      background-color: transparent;
-      border-left: none;
-    }
-  }
-
-  @media all and ($desktop) {
-    div#quartz-root.page {
-      display: grid;
-      place-items: center;
-      width: 100%;
-      min-width: 100%;
-      max-width: 100%;
-      padding: 0;
-      margin: 0;
-      div#quartz-body {
-        width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
-        max-width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
-        padding: 0 auto;
-      }
-    }
-    .page > #quartz-body {
-      div.center,
-      footer {
-        min-width: calc(100% - 3rem);
-        max-width: calc(100% - 3rem);
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-      }
-
-      footer {
-        padding: 0 1.5rem;
-      }
-    }
-  }
-
-  @media all and ($tablet) {
-    .page > #quartz-body {
-      padding-left: 0;
-      padding-right: 0;
-
-      div.center,
-      footer {
-        min-width: calc(100% - 3rem);
-        max-width: calc(100% - 3rem);
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-      }
-
-      div.sidebar.left {
-        padding-left: 2rem;
-      }
-
-      div.sidebar.right,
-      footer {
-        padding: 0 1.5rem;
-      }
-    }
-  }
-
-  @media all and ($mobile) {
-    .page > div#quartz-body div.sidebar.left {
-      background-color: transparent;
-      border-right: none;
-    }
-    .page > #quartz-body {
-      padding: 0;
-
-      div.center,
-      footer {
-        min-width: calc(100% - 3rem);
-        max-width: calc(100% - 3rem);
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-      }
-
-      div.sidebar.left,
-      div.sidebar.left:has(.explorer) {
-        padding: 1rem 1.5rem 1rem 1rem;
-      }
-
-      div.sidebar.right,
-      footer {
-        padding: 0 1.5rem;
-      }
-      footer {
-        min-width: auto;
-      }
-
-      // overflow fix for explorer on mobile
-      .explorer {
-        .explorer-content {
-          padding-left: 1rem;
-          padding-right: 1rem;
-          overflow-y: auto;
-          max-height: 100vh;
-          & > .explorer-ul {
-            min-height: 0;
-            overscroll-behavior: contain;
-          }
-          ul {
-            overscroll-behavior: auto;
           }
         }
       }
-    }
-    .page-title {
-      display: none;
+      > a:before {
+        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        width: 1rem;
+        height: 1rem;
+        min-width: 1rem;
+        min-height: 1rem;
+        content: "";
+        display: flex;
+        align-self: baseline;
+        background: var(--quartz-icon-color);
+        mask-image: var(--file-icon);
+        -webkit-mask-image: var(--file-icon);
+        margin-inline-end: 0.5rem;
+        margin-block-start: 0.2rem;
+      }
     }
   }
+}
 
-  .callout.is-collapsed .callout-content > :first-child {
-    margin-top: -4rem;
+button.readermode {
+  & > svg {
+    display: none;
   }
 
-  figure[data-rehype-pretty-code-figure] pre,
-  pre {
-    background-color: var(--code-background);
-    white-space: pre;
+  --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
+  background: var(--quartz-icon-color) !important;
+  mask-image: var(--readermode-icon);
+  -webkit-mask-image: var(--readermode-icon);
+  width: 24px;
+  height: 24px;
+}
 
-    & > code {
-      overflow-x: auto;
-
-      span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-        color: var(--code-value) !important;
-      }
-      span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-        color: var(--code-function) !important;
-      }
-      span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-        color: var(--code-string) !important;
-      }
-      span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-        color: var(--code-property) !important;
-      }
-      span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-        color: var(--code-normal) !important;
-      }
-      span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-        color: var(--code-punctuation) !important;
-      }
-      span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-        color: var(--code-comment) !important;
-      }
-      span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-        color: var(--code-comment) !important;
-      }
-      span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-        color: var(--code-tag) !important;
-      }
-      span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-        color: var(--code-important) !important;
-      }
-      span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-        color: var(--text-operator) !important;
-      }
-      span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-        color: var(--code-keyword) !important;
-      }
-
-      background-color: transparent;
-      color: var(--code-normal);
-    }
+button.global-graph-icon {
+  & > svg {
+    display: none;
   }
 
-  blockquote.callout {
-    .callout-title {
-      color: var(--color);
-      .callout-icon {
-        background-color: var(--color);
+  --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
+  background: var(--quartz-icon-color) !important;
+  mask-image: var(--graph-icon);
+  -webkit-mask-image: var(--graph-icon);
+  width: 24px;
+  height: 24px;
+}
+
+button.darkmode {
+  & > svg {
+    display: none !important;
+  }
+
+  --moon-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==");
+
+  --sun-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=");
+  background: var(--quartz-icon-color) !important;
+  width: 24px;
+  height: 24px;
+}
+
+.explorer svg,
+button.toc-header .fold,
+.global-graph-icon,
+.readermode,
+.darkmode {
+  color: var(--quartz-icon-color);
+  stroke: var(--quartz-icon-color);
+}
+
+@media all and not ($desktop) {
+  .page > div#quartz-body div.sidebar.right {
+    background-color: transparent;
+    border-left: none;
+  }
+}
+
+@media all and ($desktop) {
+  div#quartz-root.page {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    div#quartz-body {
+      width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
+      max-width: min(100%, calc(#{map.get($breakpoints, desktop)} + 300px));
+      padding: 0 auto;
+    }
+  }
+  .page > #quartz-body {
+    div.center,
+    footer {
+      min-width: calc(100% - 3rem);
+      max-width: calc(100% - 3rem);
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    footer {
+      padding: 0 1.5rem;
+    }
+  }
+}
+
+@media all and ($tablet) {
+  .page > #quartz-body {
+    padding-left: 0;
+    padding-right: 0;
+
+    div.center,
+    footer {
+      min-width: calc(100% - 3rem);
+      max-width: calc(100% - 3rem);
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    div.sidebar.left {
+      padding-left: 2rem;
+    }
+
+    div.sidebar.right,
+    footer {
+      padding: 0 1.5rem;
+    }
+  }
+}
+
+@media all and ($mobile) {
+  .page > div#quartz-body div.sidebar.left {
+    background-color: transparent;
+    border-right: none;
+  }
+  .page > #quartz-body {
+    padding: 0;
+
+    div.center,
+    footer {
+      min-width: calc(100% - 3rem);
+      max-width: calc(100% - 3rem);
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    div.sidebar.left,
+    div.sidebar.left:has(.explorer) {
+      padding: 1rem 1.5rem 1rem 1rem;
+    }
+
+    div.sidebar.right,
+    footer {
+      padding: 0 1.5rem;
+    }
+    footer {
+      min-width: auto;
+    }
+
+    // overflow fix for explorer on mobile
+    .explorer {
+      .explorer-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        overflow-y: auto;
+        max-height: 100vh;
+        & > .explorer-ul {
+          min-height: 0;
+          overscroll-behavior: contain;
+        }
+        ul {
+          overscroll-behavior: auto;
+        }
       }
     }
-    .callout-title > .callout-title-inner > p {
-      color: var(--color);
+  }
+  .page-title {
+    display: none;
+  }
+}
+
+.callout.is-collapsed .callout-content > :first-child {
+  margin-top: -4rem;
+}
+
+figure[data-rehype-pretty-code-figure] pre,
+pre {
+  background-color: var(--code-background);
+  white-space: pre;
+
+  & > code {
+    overflow-x: auto;
+
+    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
+      color: var(--code-value) !important;
     }
-    &[data-callout] {
-      --color: rgb(var(--callout-info)) !important;
+    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
+      color: var(--code-function) !important;
     }
-    &[data-callout="note"] {
-      --color: rgb(var(--callout-default)) !important;
+    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
+      color: var(--code-string) !important;
     }
-    &[data-callout="abstract"] {
-      --color: rgb(var(--callout-summary)) !important;
+    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
+      color: var(--code-property) !important;
     }
-    &[data-callout="info"] {
-      --color: rgb(var(--callout-info)) !important;
+    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
+      color: var(--code-normal) !important;
     }
-    &[data-callout="todo"] {
-      --color: rgb(var(--callout-todo)) !important;
+    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
+      color: var(--code-punctuation) !important;
     }
-    &[data-callout="tip"] {
-      --color: rgb(var(--callout-tip)) !important;
+    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
+      color: var(--code-comment) !important;
     }
-    &[data-callout="success"] {
-      --color: rgb(var(--callout-success)) !important;
+    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
+      color: var(--code-comment) !important;
     }
-    &[data-callout="question"] {
-      --color: rgb(var(--callout-question)) !important;
+    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
+      color: var(--code-tag) !important;
     }
-    &[data-callout="warning"] {
-      --color: rgb(var(--callout-warning)) !important;
+    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
+      color: var(--code-important) !important;
     }
-    &[data-callout="failure"] {
-      --color: rgb(var(--callout-fail)) !important;
+    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
+      color: var(--text-operator) !important;
     }
-    &[data-callout="danger"] {
-      --color: rgb(var(--callout-bug)) !important;
+    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
+      color: var(--code-keyword) !important;
     }
-    &[data-callout="bug"] {
-      --color: rgb(var(--callout-bug)) !important;
+
+    background-color: transparent;
+    color: var(--code-normal);
+  }
+}
+
+blockquote.callout {
+  .callout-title {
+    color: var(--color);
+    .callout-icon {
+      background-color: var(--color);
     }
-    &[data-callout="example"] {
-      --color: rgb(var(--callout-example)) !important;
-    }
-    &[data-callout="quote"] {
-      --color: rgb(var(--callout-quote)) !important;
-    }
+  }
+  .callout-title > .callout-title-inner > p {
+    color: var(--color);
+  }
+  &[data-callout] {
+    --color: rgb(var(--callout-info)) !important;
+  }
+  &[data-callout="note"] {
+    --color: rgb(var(--callout-default)) !important;
+  }
+  &[data-callout="abstract"] {
+    --color: rgb(var(--callout-summary)) !important;
+  }
+  &[data-callout="info"] {
+    --color: rgb(var(--callout-info)) !important;
+  }
+  &[data-callout="todo"] {
+    --color: rgb(var(--callout-todo)) !important;
+  }
+  &[data-callout="tip"] {
+    --color: rgb(var(--callout-tip)) !important;
+  }
+  &[data-callout="success"] {
+    --color: rgb(var(--callout-success)) !important;
+  }
+  &[data-callout="question"] {
+    --color: rgb(var(--callout-question)) !important;
+  }
+  &[data-callout="warning"] {
+    --color: rgb(var(--callout-warning)) !important;
+  }
+  &[data-callout="failure"] {
+    --color: rgb(var(--callout-fail)) !important;
+  }
+  &[data-callout="danger"] {
+    --color: rgb(var(--callout-bug)) !important;
+  }
+  &[data-callout="bug"] {
+    --color: rgb(var(--callout-bug)) !important;
+  }
+  &[data-callout="example"] {
+    --color: rgb(var(--callout-example)) !important;
+  }
+  &[data-callout="quote"] {
+    --color: rgb(var(--callout-quote)) !important;
   }
 }
 

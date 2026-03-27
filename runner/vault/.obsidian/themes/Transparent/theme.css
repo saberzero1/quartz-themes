@@ -76,14 +76,8 @@ settings:
     #             label: "Pure White (Light Mode Only)"
     #             value: '#ffffff'
     -
-        id: bg-type-section
-        title: "Image Background"
-        type: heading
-        level: 2
-        collapsed: false
-    -
         id: bg-type
-        title: "Background Type"
+        title: "Background Image"
         description: "Choose between default green background and custom URL."
         type: class-select
         allowEmpty: false
@@ -102,19 +96,13 @@ settings:
         type: variable-text
         default: url('')
     -
-        id: bg-tint-section
-        title: "Background Color Tint"
-        type: heading
-        level: 2
-        collapsed: false
-    -
         id: bg-tint-color
         title: "Tint Color"
         description: "Pick the color you want to overlay on the background."
         type: variable-color
         opacity: false
         format: hsl-split
-        default: '#898625'
+        default: '#B13D00'
     -
         id: bg-tint-opacity
         title: "Tint Intensity"
@@ -127,19 +115,25 @@ settings:
     -
         id: animation-settings-section
         title: "⚛️ Animation settings"
-        description: "work in progress, through you can use some of the animations"
+        description: "work in progress, though you can use some of the animations"
         type: heading
         level: 1
-        collapsed: true
+        collapsed: false
+    -
+        id: animate-modal-open
+        title: "Animate Settings / Modal Opening"
+        description: "Smooth scale + fade animation when opening Settings or any modal window."
+        type: class-toggle
+        default: true
     -
         id: animate-note-open
         title: "(beta) Animate Note Opening"
         description: "Adds a smooth fade-in + slide-up animation when opening or switching notes."
         type: class-toggle
     -
-        id: animate-modal-open
-        title: "Animate Settings / Modal Opening"
-        description: "Smooth scale + fade animation when opening Settings or any modal window."
+        id: no-animation
+        title: "Disable All Animations"
+        description: "Turn off every animation possbile in obsidian"
         type: class-toggle
         default: false
     -
@@ -147,7 +141,6 @@ settings:
         title: "🧩 Snippets / Addons"
         type: heading
         level: 1
-        collapsed: false
     -
         id: hide-canvas-dots
         title: "Hide Canvas Dots"
@@ -166,11 +159,11 @@ settings:
     -
         id: border-opacity
         title: "Border Opacity"
-        description: "Controls the visibility of subtle borders on tables, bases, and horizontal rules. 0 = invisible, 0.25 = clearly visible."
+        description: "Controls the visibility of subtle borders on tables, bases, and horizontal rules. 0 = invisible, 0.25 = clearly visible. not recommend above 0.50"
         type: variable-number-slider
         default: 0.063
         min: 0
-        max: 0.25
+        max: 1
         step: 0.001
     -
         id: accent-everywhere
@@ -178,6 +171,19 @@ settings:
         description: "Applies accent color to more UI elements (headings, sliders, icons)."
         type: class-toggle
 */
+/* style settings stylizacja */
+div.setting-item[data-id="info-section"] {
+  background-color: #00000060;
+}
+
+[data-id="main-section"]+.style-settings-container {
+  background-color: #00000030;
+  border-radius: var(--radius-l);
+}
+
+.style-settings-container {
+  padding-bottom: 0px;
+}
 
 /* ===================== vars ===================== */
 :root {
@@ -329,6 +335,7 @@ body .h-scroll-handle {
   background-image: var(--background-image-base64);
   background-size: cover;
   background-position: center;
+  contain: strict;
   z-index: -1;
   pointer-events: none;
 }
@@ -437,6 +444,7 @@ body.is-focused .workspace-ribbon.mod-left {
 
 .modal {
   backdrop-filter: blur(var(--set-blur));
+  contain: layout style paint;
   border: 1px solid var(--tr);
   background-color: var(--overlay-color);
   --settings-background: var(--overlay-color);
@@ -501,6 +509,13 @@ body:not(.is-phone) .prompt {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* so much specified because it was not possbile to apply in any different way */
+body.theme-dark .modal-container .modal.mod-settings .vertical-tab-content,
+body.theme-light .modal-container .modal.mod-settings .vertical-tab-content {
+  background-color: var(--tr);
+  background: var(--tr);
 }
 
 /* dont add blur in small places because its useless */
@@ -595,10 +610,27 @@ input[type="checkbox"]:checked:after {
   background-color: var(--tr);
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   color: var(--kolorboku);
-  animation: tr-notice-in var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: tr-notice-in-desktop var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@keyframes tr-notice-in {
+/* ==================== Notice animation ==================== */
+.is-phone .notice {
+  animation: tr-notice-in-mobile 1000ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes tr-notice-in-desktop {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes tr-notice-in-mobile {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -610,7 +642,9 @@ input[type="checkbox"]:checked:after {
   }
 }
 
-/* spojnosc */
+/* ==================== Notice animation ==================== */
+
+/* consistency */
 .canvas-control-item:hover {
   background-color: var(--background-modifier-hover);
 }
@@ -999,7 +1033,7 @@ hr {
 /* blur + dimming when sliding sidebars is disabled */
 .workspace-drawer-inner {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
-  transition: width cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow) !important;
+  transition: width cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
 }
 
 /* when sliding sidebars is enabled - no blur or dimming */
@@ -1010,7 +1044,7 @@ hr {
 /* background dimming behind drawer when sliding sidebars is disabled */
 .workspace-drawer-backdrop {
   background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow) !important;
+  transition: opacity cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
 }
 
 .is-sliding .workspace-drawer-backdrop {
@@ -1052,13 +1086,37 @@ hr {
 .canvas-controls {
   backdrop-filter: blur(20px);
   border-radius: 24px;
-  /* fixed because of roznica w mobile and desktop */
+  /* fixed because of difference between mobile and desktop */
   gap: 4px;
 
 }
 
-.dropdown option {
-  background-color: #00000061;
+/* Force slow animation for background and menu container */
+.suggestion-bg,
+.suggestion-container,
+.menu {
+  /* 'all' instead of just opacity, to catch transformation as well */
+  transition: all 3s ease-in-out;
+
+  /* This is crucial: we force the browser to remember the animation 
+       even when Obsidian tries to remove it on close */
+  transition-property: opacity, transform, visibility;
+  transition-duration: 3s;
+}
+
+/* If Obsidian uses a class to hide it, let's slow it down */
+.suggestion-bg[style*="display: none"],
+.suggestion-container[style*="display: none"] {
+  display: block;
+  /* Attempt to block immediate disappearance */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 3s ease-in-out, visibility 3s;
+}
+
+/* Specifically for the image background */
+div.suggestion-bg {
+  transition: opacity 3s ease-in-out;
 }
 
 /* ===================== settings open animation ===================== */
@@ -1113,10 +1171,6 @@ body.animate-modal-open .modal-bg {
 /* mobile settings improvements */
 .is-phone .modal .vertical-tab-header-group-title {
   color: var(--color-accent);
-}
-
-.is-phone .modal-header {
-  position: absolute;
 }
 
 /* ===================== Accent Everywhere Snippet ===================== */
@@ -1194,3 +1248,13 @@ body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-t
 }
 
 /* ===================== Animate Note Opening ===================== */
+
+/* ===================== No animations ===================== */
+body.no-animation *,
+body.no-animation *::before,
+body.no-animation *::after {
+  transition-duration: 0s;
+  animation-duration: 0s;
+}
+
+/* ===================== No animations ===================== */

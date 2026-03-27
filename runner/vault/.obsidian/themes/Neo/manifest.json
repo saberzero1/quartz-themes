@@ -1,7 +1,7 @@
 {
   "name": "Neo",
-  "version": "0.4.1",
-  "minAppVersion": "1.1.9",
+  "version": "0.4.2",
+  "minAppVersion": "1.9.0",
   "author": "ABDO",
   "authorUrl": "https://github.com/x0aa7i"
 }
