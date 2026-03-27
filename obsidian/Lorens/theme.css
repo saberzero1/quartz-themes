@@ -5457,7 +5457,7 @@ body:not(.is-mobile):not(.mod-macos):not(.mod-windows):not(.mod-linux) .app-cont
 /* loren  */
 .callout[data-callout="bug"] {
     --callout-color: 10, 100, 250;
-    --callout-icon: lucide-bu !important;
+    --callout-icon: lucide-bug !important;
 }
 
 

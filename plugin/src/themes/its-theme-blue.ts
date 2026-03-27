@@ -522,6 +522,7 @@ export const theme: ThemeData = {
   --metadata-input-background-active: #030a1495 !important;
   --metadata-input-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-input-font-size: .90em !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #AAB3CA !important;
   --metadata-label-background-active: #030a1495 !important;
   --metadata-label-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
@@ -877,6 +878,7 @@ export const theme: ThemeData = {
   --vault-profile-color: #AAB3CA !important;
   --vault-profile-color-hover: #AAB3CA !important;
   --vault-profile-font-size: 14px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1340,6 +1342,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1349,14 +1352,17 @@ html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1371,14 +1377,17 @@ html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1388,6 +1397,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1402,14 +1412,17 @@ html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1424,6 +1437,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1433,6 +1447,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1442,46 +1457,57 @@ html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1521,6 +1547,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1540,14 +1567,17 @@ html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1567,22 +1597,27 @@ html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1592,14 +1627,17 @@ html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1629,6 +1667,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1653,6 +1692,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1667,22 +1707,27 @@ html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1692,6 +1737,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
@@ -1701,18 +1747,22 @@ html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="check
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(26, 30, 36);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
@@ -2767,6 +2817,7 @@ html[saved-theme="dark"] body sup {
   --metadata-input-background-active: #d0ddef62 !important;
   --metadata-input-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --metadata-input-font-size: .90em !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #283a67 !important;
   --metadata-label-background-active: #d0ddef62 !important;
   --metadata-label-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
@@ -3120,6 +3171,7 @@ html[saved-theme="dark"] body sup {
   --vault-profile-color: #283a67 !important;
   --vault-profile-color-hover: #283a67 !important;
   --vault-profile-font-size: 14px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -3583,6 +3635,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3592,14 +3645,17 @@ html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3614,14 +3670,17 @@ html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3631,6 +3690,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3645,14 +3705,17 @@ html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3667,6 +3730,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3676,6 +3740,7 @@ html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3685,46 +3750,57 @@ html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3764,6 +3840,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3783,14 +3860,17 @@ html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3810,22 +3890,27 @@ html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3835,14 +3920,17 @@ html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3872,6 +3960,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3896,6 +3985,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3910,22 +4000,27 @@ html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3935,6 +4030,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
@@ -3944,18 +4040,22 @@ html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="chec
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate%28-4.000000, -6.000000%29\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
   background-color: rgb(248, 251, 255);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {

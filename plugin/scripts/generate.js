@@ -460,6 +460,38 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
   const escapeAttrValue = (value) =>
     value.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
 
+  const normalizeMaskImage = (value) => {
+    if (!value || typeof value !== "string") return value;
+    const match = value.match(/url\((.*)\)/i);
+    if (!match) return value;
+    let content = match[1].trim();
+    if (
+      (content.startsWith('"') && content.endsWith('"')) ||
+      (content.startsWith("'") && content.endsWith("'"))
+    ) {
+      content = content.slice(1, -1);
+    }
+    if (content.includes("<svg")) {
+      const svgStart = content.indexOf("<svg");
+      const svg = content.slice(svgStart);
+      return svgToDataUri(svg);
+    }
+    if (content.startsWith("data:image/svg+xml")) {
+      if (content.includes("%3C")) return `url(\"${content}\")`;
+      if (content.includes("<svg")) {
+        const svgStart = content.indexOf("<svg");
+        const svg = content.slice(svgStart);
+        return svgToDataUri(svg);
+      }
+      const fixed = content.replace(
+        "data:image/svg+xml utf8,",
+        "data:image/svg+xml;utf8,",
+      );
+      return `url(\"${fixed}\")`;
+    }
+    return value;
+  };
+
   const entries = Object.entries(data).filter(([selector]) =>
     selector.startsWith('input[data-task="'),
   );
@@ -482,8 +514,9 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
     for (const [prop, value] of Object.entries(props)) {
       if (!value || value === "none" || value === "normal") continue;
       if (prop === "-webkit-mask-image") {
-        lines.push(`  mask-image: ${value};`);
-        lines.push(`  -webkit-mask-image: ${value};`);
+        const normalized = normalizeMaskImage(value);
+        lines.push(`  mask-image: ${normalized};`);
+        lines.push(`  -webkit-mask-image: ${normalized};`);
         if (!isPseudo) {
           lines.push(`  mask-size: contain;`);
           lines.push(`  -webkit-mask-size: contain;`);
