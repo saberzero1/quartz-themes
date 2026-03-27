@@ -194,7 +194,6 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-callouts/its-theme.ttrpg-wotc.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
@@ -209,6 +208,7 @@
     "callouts.md",
     "headings.md",
     "general.md",
+    "theme-callouts/its-theme.ttrpg-wotc.md",
     "theme-callouts/its-theme.ttrpg-pathfinder-remastered.md",
     "theme-callouts/its-theme.ttrpg-pathfinder.md",
     "theme-callouts/its-theme.ttrpg-dnd.md",
